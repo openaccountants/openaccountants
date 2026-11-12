@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "RILIA PUTRI"
 ---
 
 # ID Einvoice Coretax
@@ -19,7 +18,6 @@ This skill is the **platform manual** for the Indonesian tax administration syst
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

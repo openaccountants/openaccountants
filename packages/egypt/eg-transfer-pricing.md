@@ -9,9 +9,7 @@ depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ahmed Hassan"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: transfer-pricing
 ---
 

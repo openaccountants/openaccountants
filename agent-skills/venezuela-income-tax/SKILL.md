@@ -1,693 +1,387 @@
 ---
 name: venezuela-income-tax
-description: "Use this skill whenever asked about Venezuela personal income tax (ISLR — Impuesto Sobre la Renta) for resident or non-resident individuals, self-employed professionals, and contractors. Trigger on phrases like \"how much ISLR do I pay\", \"Venezuela income tax\", \"declaración definitiva de rentas\", \"Unidad Tributaria\", \"UT\", \"tarifa 1\", \"sustraendo\", \"desgravamen único\", \"rebajas personales\", \"RIF\", \"SENIAT\", \"estimated return\", \"declaración estimada\", \"retención ISLR\", \"self-employed tax Venezuela\", \"bonos vs salario\", or any question about filing or computing ISLR for an individual in Venezuela. Also trigger when preparing or reviewing a Venezuelan annual income tax return, computing deductions in Tax Units, or advising on withholding and social-security parafiscal contributions. This skill covers the UT mechanism, the Tarifa Nº 1 graduated schedule, sustraendos, standard vs itemized deductions, personal credits, the 31 March deadline, social-security/parafiscal regimes, and the hyperin"
+description: "Compute Venezuela individual income tax for tax year 2026 from documented, legally classified income. Covers resident Tarifa 1 marginal bands in tax units, the 774 UT standard versus supported itemized personal deductions, personal/family tax reductions, residence and source, ordinary self-employed costs, source-separated losses, nonresident salary and professional bases, foreign-tax credits, annual/estimated-return statutory duties, withholding credits and an auditable bank-to-return workpaper. Use for ISLR persona natural, tarifa 1, desgravamen único, rebajas, sustraendo, RIF and declaración definitiva or estimada. Current UT currency value, administrative filing and withholding instructions, employment-bonus judicial interpretation and separate payroll-contribution amounts remain explicitly unconfirmed where no accessible primary text establishes them."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/venezuela-income-tax"
   jurisdiction: "VE"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  reviewed_by: "Jose Padilla"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Venezuela Income Tax (ISLR) — Individual
-
-## Venezuela Income Tax (ISLR) — Individual Skill v0.1
-
-## Rates and thresholds
-
-> Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### venezuela-income-tax
-
-- **Valor de la Unidad Tributaria (UT) — vigente** — VES 43.00 por UT  _(SNAT/2025/000048, Gaceta Oficial 2 June 2025)_
-- **Valor de la Unidad Tributaria (UT) — anterior** — VES 9.00 por UT  _(SNAT (providencia anterior))_
-- **Incremento del valor de la UT (VES 9.00 → VES 43.00)** — ~377.8%  _(SNAT/2025/000048)_
-- **Tasa marginal máxima — residentes (Tarifa Nº 1)** — 34%  _(LISLR Tarifa Nº 1)_
-- **Tasa fija para no residentes sobre rentas de fuente venezolana** — 34%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 1: 0–1,000 UT — alícuota** — 6%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 1: 0–1,000 UT — sustraendo** — 0 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 1: 0–1,000 UT — impuesto acumulado al tope del tramo** — 60 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 2: 1,000–1,500 UT — tasa** — 9%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 2: 1,000–1,500 UT — sustraendo** — 30 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 2: 1,000–1,500 UT — impuesto acumulado al tope del tramo** — 105 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 3: 1,500–2,000 UT — tasa** — 12%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 3: 1,500–2,000 UT — sustraendo** — 75 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 3: 1,500–2,000 UT — impuesto acumulado al tope del tramo** — 165 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 4: 2,000–2,500 UT — tasa** — 16%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Tramo 4: 2,000–2,500 UT — sustraendo** — 155 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 4: 2,000–2,500 UT — impuesto acumulado al tope de la banda** — 245 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 5: 2,500–3,000 UT — tasa** — 20%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 5: 2,500–3,000 UT — sustraendo** — 255 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 5: 2,500–3,000 UT — impuesto acumulado al tope de la banda** — 345 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 6: 3,000–4,000 UT — tasa** — 24%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 6: 3,000–4,000 UT — sustraendo** — 375 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 6: 3,000–4,000 UT — impuesto acumulado al tope de la banda** — 585 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 7: 4,000–6,000 UT — tasa** — 29%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 7: 4,000–6,000 UT — sustraendo** — 575 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 7: 4,000–6,000 UT — impuesto acumulado al tope de la banda** — 1,165 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 8: Más de 6,000 UT — tasa** — 34%  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Tarifa Nº 1 — Banda 8: Más de 6,000 UT — sustraendo** — 875 UT  _(LISLR Tarifa Nº 1; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Fórmula del impuesto — Tarifa Nº 1** — Impuesto (UT) = (tasa × renta gravable en UT) − sustraendo  _(LISLR Tarifa Nº 1)_
-- **No residente — sueldos/servicios en Venezuela — tasa fija** — 34% del ingreso bruto  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **No residente — actividades profesionales no empresariales — tasa legal** — 34% sobre el 90% del ingreso bruto  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **No residente — actividades profesionales no empresariales — tasa efectiva** — ~30.6% del ingreso bruto  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desgravamen único** — 774 UT/año  _(LISLR; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desgravamen único — equivalente en VES a la UT 2025** — VES 33,282.00  _(SNAT/2025/000048)_
-- **Desgravamen detallado — intereses hipotecarios sobre vivienda principal — límite anual** — 1,000 UT/año  _(LISLR; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desgravamen detallado — límite de intereses hipotecarios — equivalente en VES a la UT 2025** — VES 43,000.00  _(SNAT/2025/000048)_
-- **Desgravamen detallado — alquiler de vivienda principal/permanente — límite anual** — 800 UT/año  _(LISLR; PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desgravamen detallado — límite de alquiler — equivalente en VES a la UT 2025** — VES 34,400.00  _(SNAT/2025/000048)_
-- **Desgravamen detallado — educación (contribuyente e hijos menores de 26 años) — límite anual** — Sin límite establecido  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Arrastre de pérdidas — período máximo** — 3 años  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Arrastre de pérdidas — límite anual de compensación como % de la renta gravable del año en curso** — 25%  _(PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Crédito personal del contribuyente** — 10 UT  _(LISLR; PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Crédito personal del cónyuge** — 10 UT  _(LISLR; PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Crédito por carga familiar (menor de edad; incapacitado; o estudiante menor de 25 años)** — 10 UT por cada uno  _(LISLR; PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Valor de cada crédito de 10 UT en VES a la tasa de UT 2025** — VES 430.00  _(SNAT/2025/000048)_
-- **Fecha límite de la declaración definitiva de rentas** — 31 de marzo del año siguiente — SIN prórroga  _(LISLR; PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Umbral de la declaración estimada — ingresos del año anterior provenientes de actividad comercial/profesional/arrendamiento** — 1,500 UT  _(LISLR; PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Umbral de la declaración estimada — equivalente en VES a la UT 2025** — VES 64,500.00  _(SNAT/2025/000048)_
-- **Opciones de pago del anticipo de impuesto** — Pago único o 6 cuotas iguales; anticipos quincenales para contribuyentes especiales no asalariados  _(PwC Worldwide Tax Summaries, revisado 12 Jan 2026)_
-- **Retención del ISLR sobre servicios profesionales/técnicos prestados por residentes (Decreto 1.808) — [BRECHA DE INVESTIGACIÓN]** — ~10% en la fuente  _(Decreto 1.808 / SENIAT [RESEARCH GAP — secondary source only])_
-- **IVA (VAT) standard rate** — 16%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **IVSS (Social Security) — employee contribution rate** — 4%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **IVSS (Social Security) — employer contribution rate (by risk class)** — 9% / 10% / 11%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **IVSS — base de cotización** — Salario normal/regular  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **IVSS — tope de cotización** — Hasta 5 salarios mínimos (urbanos)  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución del empleado** — 0.5%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución patronal** — 2%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desempleo — tope de cotización** — Hasta 10 salarios mínimos (urbanos)  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **FAOV (Housing / Ley de Vivienda y Hábitat) — employee contribution rate** — 1%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **FAOV (Housing) — employer contribution rate** — 2%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **FAOV — base de cotización** — Salario mensual total (integral)  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **FAOV — tope de cotización** — Maximo 10 salarios minimos  _(El artículo 172 de la Ley de Régimen Prestacional de Vivienda y Hábitat,)_
-- **INCES (Worker training) — employee contribution rate** — 0.5% (from year-end utilidades)  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **INCES — employer contribution rate** — 2% of total wages  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Base de la contribución del empleado al INCES** — Utilidades anuales — NO el salario mensual; sin tope  _(PwC)_
-- **LOPCYMAT (Workplace risk) — employer contribution rate** — 0.75% – 10% (risk-dependent)  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tasa parafiscal total a cargo del empleado (aportes del trabajador al IVSS + desempleo + FAOV + INCES sobre el salario normal)** — 6.0%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Salario mínimo legal (congelado)** — VES 130/mes  _(Decreto 4.653, vigente desde el 15 March 2022)_
-- **Ingreso mínimo integral indexado (piso de ingresos no salariales en bonos)** — ~USD 160/mes  _(Anuncio del Ejecutivo del 30 April 2025)_
-- **Mecanismo de sanciones del COT — base de cálculo de multas pecuniarias** — Múltiplos del tipo de cambio oficial de la moneda de mayor valor publicado por el BCV (efectivamente USD) a la fecha de pago  _(COT Art. 91, reforma 2020)_
-- **Presentación tardía de una declaración / declaración de retenciones — orden de magnitud** — ~100–150× la tasa de la moneda de mayor valor (declaraciones de retenciones citadas en 150×)  _(Tabla del COT de Grant Thornton; jurisprudencia del TSJ [RESEARCH GAP — full table])_
-- **Omisión de presentación de declaraciones (deber formal, COT Art. 103/155) — orden de magnitud** — 150–300× la tasa de la moneda de mayor valor  _(COT Art. 103/155; decisiones del TSJ [RESEARCH GAP — full table])_
-- **Tasa de interés por pago tardío** — Tasa activa de mercado × 1.2  _(COT)_
-
-## Critical Structural Warning — Read First
-
-Venezuela is a **hyperinflationary economy with a dual-track measurement system**. Three caveats govern everything below:
-
-1. **ISLR brackets, deductions and credits are denominated in Tax Units (Unidad Tributaria / UT)**, not in bolívares directly. You must convert UT → VES using the current UT value before quoting any bolívar figure. (PwC Worldwide Tax Summaries, reviewed 12 Jan 2026.)
-2. **Penalties are NO LONGER in UT.** Since the 2020 reform of the Código Orgánico Tributario (COT Art. 91), pecuniary fines stated as a multiple are calculated using the **official exchange rate of the highest-value currency published by the BCV** (effectively the USD rate) on the **date of payment**. (COT Art. 91, 2020 reform.)
-3. **The legal minimum wage (Bs. 130/month, frozen since 15 March 2022, Decreto 4.653) is economically negligible** (~USD 0.50/month by Dec 2025). The real income floor is delivered via **non-salary "bonos"** (the "ingreso mínimo integral indexado" of ~USD 160/month, announced 30 April 2025). Do NOT treat the legal minimum wage as the economic minimum, and note that bonos are excluded from the salary base for social security and largely from the ISLR salary base. (Decreto 4.653; executive announcement 30 April 2025.)
-
-## Section 1 — Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Venezuela (Bolivarian Republic of Venezuela) |
-| Tax | ISLR — Impuesto Sobre la Renta (personal income tax) |
-| Currency | Bolívar (VES / Bs.) — brackets denominated in Tax Units (UT) |
-| Tax year | Calendar year (1 January – 31 December) for wage earners; business-engaged individuals may elect an alternative 12-month period (PwC, reviewed 12 Jan 2026) |
-| Primary legislation | Ley de Impuesto Sobre la Renta (LISLR) |
-| Supporting legislation | Código Orgánico Tributario (COT); Decreto 1.808 (ISLR withholdings); SNAT/2025/000048 (UT value) |
-| Tax authority | SENIAT — Servicio Nacional Integrado de Administración Aduanera y Tributaria |
-| Social security authority | IVSS — Instituto Venezolano de los Seguros Sociales (plus parafiscal regimes) |
-| Tax ID | RIF — Registro Único de Información Fiscal (issued by SENIAT, no fee) |
-| Filing deadline | 31 March of the following year — NO extensions (PwC, reviewed 12 Jan 2026) |
-| Tax Unit (UT) value | VES 43.00 per UT (SNAT/2025/000048, Official Gazette 2 June 2025) |
-| Top marginal rate (residents) | 34% (Tarifa Nº 1, LISLR) |
-| Non-resident flat rate | 34% on Venezuelan-source income (PwC, reviewed 12 Jan 2026) |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Validation date | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Skill version | 0.1 |
+# Venezuela: individual income tax (ISLR), 2026 v0.2
 
-### Tax Unit (UT) — the master variable
-
-**Tax Unit (UT) — the master variable**
-
-| Field | Value | Source |
-| --- | --- | --- |
-| Current UT value | VES 43.00 | SNAT/2025/000048, Official Gazette 2 June 2025, effective same date |
-| Previous UT value | VES 9.00 | SNAT (prior ruling) |
-| Increase | ~377.8% | Derived from VES 9.00 → VES 43.00 |
-
-- **UT setting mechanism and conversion** — The UT is set by SENIAT administrative ruling on no fixed schedule. ISLR brackets, deductions, credits and filing thresholds are all expressed in UT. Convert UT → VES at VES 43.00/UT for the 2025 reporting cycle.
-
-### Resident Graduated Rate Schedule (Tarifa Nº 1)
-
-**Resident Graduated Rate Schedule (Tarifa Nº 1)**  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026 (LISLR Tarifa Nº 1))_
-
-| Taxable income (UT) | Rate | Sustraendo (UT) | Cumulative tax at top of band (UT) |
-| --- | --- | --- | --- |
-| 0 – 1,000 | 6% | 0 | 60 |
-| 1,000 – 1,500 | 9% | 30 | 105 |
-| 1,500 – 2,000 | 12% | 75 | 165 |
-| 2,000 – 2,500 | 16% | 155 | 245 |
-| 2,500 – 3,000 | 20% | 255 | 345 |
-| 3,000 – 4,000 | 24% | 375 | 585 |
-| 4,000 – 6,000 | 29% | 575 | 1,165 |
-| Over 6,000 | 34% | 875 | — |
-
-- **Tax formula and continuity note** — Tax = (rate × taxable income in UT) − sustraendo, then × UT value for the VES figure. The sustraendos make the schedule continuous (each band's cumulative tax at its ceiling equals the next band's value at the same point — verified).  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026 (LISLR Tarifa Nº 1))_
-
-### Non-Resident Rates (flat, withheld at source)
-
-**Non-Resident Rates (flat, withheld at source)**  _(PwC, reviewed 12 Jan 2026)_
-
-| Income type | Rate | Effective rate | Source |
-| --- | --- | --- | --- |
-| Salary / services performed in Venezuela | 34% flat | 34% of gross | PwC, reviewed 12 Jan 2026 |
-| Professional non-business activities | 34% on 90% of gross | ~30.6% of gross | PwC, reviewed 12 Jan 2026 |
-
-### Conservative Defaults
-
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency status | STOP — do not apply a rate basis without residency (worldwide vs Venezuelan-source) |
-| Unknown deduction method | Standard deduction (desgravamen único 774 UT) — blocks itemized |
-| Unknown whether income is salary or non-salary bono | Treat as bono (excluded from salary base) only if explicitly confirmed; otherwise treat as salary |
-| Unknown UT value for a prior year | STOP — confirm the UT ruling in force for that tax year |
-| Unknown business-use % | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown taxpayer marital/dependant status | Apply taxpayer credit (10 UT) only; do not assume spouse/dependant credits |
-| Unknown VES amount where only UT is given | Convert at VES 43.00/UT (2025) and flag the UT value used |
-
-## Section 2 — Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-- **Minimum viable / Recommended / Ideal inputs and refusal** — **Minimum viable** — bank statement(s) for the full tax year (PDF, CSV, or pasted text), confirmation of residency status (resident worldwide / non-resident Venezuelan-source), and the RIF status of the individual. **Recommended** — invoices issued and received, ISLR withholding certificates (comprobantes de retención), prior-year declaración definitiva de rentas, confirmation of marital/dependant status for credits, and the UT value in force for the year. **Ideal** — complete income and expenditure record, documentation for any itemized desgravámenes (education, insurance, medical, mortgage interest, rent), social-security/parafiscal payment records, and any estimated-return (declaración estimada) filings. **Refusal if minimum is missing — SOFT WARN.** No bank statement at all = hard stop. Bank statement without supporting documents = proceed with reviewer warning: "This ISLR computation was produced from bank statement alone. The reviewer must verify residency basis, that any itemized desgravámenes are documented and paid to Venezuelan entities where required, and that bonos vs salary classification is correct."
-
-### Refusal Catalogue
-
-- **R-VE-1 — Residency unknown** — Residency determines whether worldwide or only Venezuelan-source income is taxed. This skill cannot compute ISLR without it. Please confirm resident vs non-resident status before proceeding.
-- **R-VE-2 — Companies / partnerships / group structures** — This skill covers individuals (including self-employed professionals and contractors) only. Companies and other entities follow corporate ISLR rules. Escalate to a Venezuelan licensed tax professional.
-- **R-VE-3 — Prior-year or future-year UT value not confirmed** — ISLR brackets are denominated in Tax Units. Without the UT value in force for the relevant tax year, no bolívar figure can be produced. Confirm the SENIAT UT ruling for that year before proceeding.
-- **R-VE-4 — Penalties / SENIAT enforcement** — COT penalties are calculated in multiples of the BCV highest-value-currency exchange rate at the date of payment and can be severe (150–300×). Do not advise on penalty exposure. Escalate to a Venezuelan licensed tax professional immediately.
-- **R-VE-5 — Hyperinflation / inflationary-adjustment accounting** — Inflationary adjustment (ajuste por inflación) and multi-currency measurement issues require specialised analysis. Out of scope for individual salary/professional ISLR. Escalate.
-- **R-VE-6 — VAT (IVA) return requested** — This skill covers ISLR (income tax) only. Venezuelan IVA is a separate 16% regime; use a dedicated VAT skill or escalate.
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 3 — Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5. Match by case-insensitive substring on the counterparty name or description as it appears in the statement. If multiple patterns match, use the most specific.
+**Answer layer.** A Venezuelan resident/domiciliary generally computes tax on worldwide income, while a nonresident without a PE/fixed base is taxed on Venezuelan-source enrichment. Ordinary resident individuals use the eight marginal Tarifa 1 bands below, ending at 34%, after legally permitted costs and either supported personal deductions or the alternative 774 U.T. standard deduction. Apply eligible 10-U.T. personal/family tax reductions after the tariff computation, then supported withholding/advances and any properly limited foreign-tax credit. Nonresident individuals generally use 34% on their applicable statutory net base; a professional fee's 90% presumed base is not the rule for every payment. [LISLR arts. 1-4, 8, 39, 50-60, 83](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-Note: Venezuelan bank statements are typically in **bolívares (VES / Bs.)**; some accounts and payments operate in **USD**. Always record the currency and convert USD lines to VES at the applicable BCV rate before aggregating.
+**Essential limits.** The current bolívar value of the tax unit (U.T.) has not been confirmed from accessible primary material. Produce a sourced U.T. computation and a conditional currency formula, not a guessed bolívar balance. Employment/bonus classification also needs the legal documents and current controlling interpretation: the 2015 gazette's art. 31 is quoted as printed, but inaccessible judicial/administrative material prevents this Guide from certifying every bonus's treatment. A description containing BONO is not an exemption. This is a tier-2 source-based rewrite, without accountant approval.
 
-### 3.1 Income Patterns (Credits / Abonos)
+The primary texts opened/read on 11 November 2026 are the **Ley de Impuesto sobre la Renta** (LISLR), consolidated in official Gaceta 6.210 Extraordinario of 30 December 2015, and the **Código Orgánico Tributario** (COT), official Gaceta 6.507 Extraordinario of 29 January 2020. Government hosts provide these gazette facsimiles; the filenames refer to other laws in the same multi-law publications. Exact statutory conditions, visual table transcription and old-topic destinations are retained in the review evidence. Later unconfirmed administrative measures are not represented as absent.
 
-**3.1 Income Patterns (Credits / Abonos)**
+## Who this applies to
 
-| Pattern | ISLR Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + TRANSFERENCIA, ABONO, PAGO RECIBIDO, DEPÓSITO | Gross income (ingreso bruto) | Business/professional income | If IVA charged, extract net of 16% IVA |
-| HONORARIOS, HONORARIOS PROFESIONALES, SERVICIOS | Gross income | Professional fees | Typical self-employed income |
-| FACTURA, COBRO FACTURA | Gross income | Business income | Match to issued invoice |
-| STRIPE, PAYPAL, WISE, BINANCE PAYOUT | Gross income | Platform/remittance payout | Verify USD vs VES; convert at BCV rate |
-| SALARIO, NÓMINA, SUELDO, [employer name] | Salary income | Employment income | Resident salary base; subject to withholding |
-| CESTATICKET, BONO, BONO CONTRA LA GUERRA ECONÓMICA | Review — likely EXCLUDE from salary base | Non-salary bono | Excluded from SS base and largely from ISLR salary base — flag for reviewer |
-| ALQUILER, CANON DE ARRENDAMIENTO (received) | Other income | Rental income | Subject to estimated-return threshold test |
-| INTERESES, RENDIMIENTOS (received) | Other income | Investment income | Investment income |
-| DIVIDENDOS | Other income | Investment income | Dividend income |
-| DEVOLUCIÓN ISLR, REINTEGRO SENIAT | EXCLUDE | Not income | Tax refund from prior year |
+Use this Guide for individuals, including ordinary self-employed professionals, contractors, employees and landlords. Establish the income's legal category before a computation. Companies/assimilated entities, a consortium or partnership/member allocation, and a deceased estate require the applicable distinct rules in arts. 7-10; this Guide does not turn them into the same taxpayer because a bank account is in an individual's name. The annual job here is individual ISLR, not an IVA return or payroll-contribution assessment. [LISLR arts. 7-10](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=6).
 
-### 3.2 Expense Patterns (Debits / Cargos) — Self-Employed Business Expenses
+### Residence, domicile and source
 
-Self-employed business expenses are deductible **following corporate-tax rules** and only against business/professional income, NOT against salary income (PwC, reviewed 12 Jan 2026).
+LISLR art. 1 taxes a resident/domiciliary's income regardless of domestic or foreign source; a nonresident/non-domiciliary's income must have its source/cause in Venezuela. A foreign taxpayer with a Venezuelan PE/fixed base is taxed on domestic and foreign income attributable to it, not automatically the entire foreign enterprise's income. Art. 6 identifies Venezuelan-source causes, including domestic economic activity, work/capital used in Venezuela, domestic property and locally exploited rights. A foreign currency, payer bank or Zelle account does not alone make income foreign-source. [LISLR arts. 1, 6-7](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-**3.2 Expense Patterns (Debits / Cargos) — Self-Employed Business Expenses**
+Under COT art. 30, domicile includes more than 183 days, continuous or discontinuous, in the calendar year **or the immediately preceding year**. A home/residence in Venezuela is a separate ground unless the person spends more than 183 days in another country that year and proves fiscal residence there. Its official-duty ground, foreign residence certificate rule and rebuttable Venezuelan-nationality presumption also matter. LISLR art. 51 requires both no more than 183 current-calendar-year days **and no COT domicile** for nonresident status; its prior-year continuous-presence sentence does not displace the current COT's wider tests. Exactly 183 days does not defeat another domicile ground. [COT art. 30](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=5); [LISLR art. 51](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| ALQUILER OFICINA, ARRENDAMIENTO LOCAL | Office rent | Deductible (business) | Dedicated business premises |
-| HONORARIOS CONTADOR, ASESORÍA, AUDITORÍA | Professional fees paid | Deductible (business) |  |
-| HONORARIOS ABOGADO, LEGAL (business) | Legal fees | Deductible (business) | Must be business-related |
-| PAPELERÍA, MATERIALES DE OFICINA | Office supplies | Deductible (business) |  |
-| PUBLICIDAD, MARKETING, GOOGLE ADS, META | Advertising | Deductible (business) |  |
-| COMISIÓN BANCARIA, MANTENIMIENTO CUENTA | Bank charges | Deductible (business) | Business account only |
-| SOFTWARE, SUSCRIPCIÓN, HOSTING, DOMINIO | Software / IT | Deductible (business) | Recurring = expense; capitalise large perpetual items per corporate rules |
-| INTERNET, TELÉFONO (business %) | Telecoms | T2 — business % only | Default 0% if mixed |
+A domestic construction/installation/assembly PE duration limb over six months is not a six-month exemption for every agency/fixed-place/service case. An individual performing independent services through a fixed base must analyze art. 7's actual conditions. Any treaty claim requires the actual in-force treaty, entitled residence and the evidence required by art. 3, including official translation/legalization of foreign residence certificates. No treaty rate or tie-breaker is assumed here. [LISLR arts. 3, 7](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
 
-### 3.3 Itemized Personal Desgravámenes (only if NOT using the 774 UT standard)
+### Classify investment and exempt receipts before aggregation
 
-**3.3 Itemized Personal Desgravámenes (only if NOT using the 774 UT standard)**
+Art. 14(9) exempts the specified natural-person interest from term deposits, mortgage certificates, savings certificates and other savings instruments governed by the identified banking/special laws, and returns from public-offer mutual/investment funds. It does not exempt every loan, foreign instrument or receipt labeled INTERESES. Art. 14(6) separately exempts the identified retirement/pension/disability payments, including the stipulated heir transfers. Insurance indemnities in art. 14(5) have an exception for compensation of losses already included in costs/deductions; national-public-debt bonds and other Republic-issued titles have the art. 14(12) rule. Identify instrument, issuer, recipient and actual statutory conditions; a current sector exoneration or BCV-instrument measure not established here remains unconfirmed. Dividends require their separate chapter analysis rather than automatic ordinary-rate treatment. [LISLR arts. 14, 64-76](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=7).
 
-| Pattern | Category | Treatment | Cap | Source |
-| --- | --- | --- | --- | --- |
-| COLEGIO, UNIVERSIDAD, MATRÍCULA (taxpayer/children <26) | Education | Itemized desgravamen | No stated cap | PwC, reviewed 12 Jan 2026 |
-| SEGURO HCM, SEGURO DE VIDA, HOSPITALIZACIÓN | Insurance premiums | Itemized desgravamen | No stated cap; Venezuelan entities | PwC, reviewed 12 Jan 2026 |
-| MÉDICO, ODONTÓLOGO, CLÍNICA, HOSPITAL | Medical/dental | Itemized desgravamen | No stated cap; Venezuelan entities | PwC, reviewed 12 Jan 2026 |
-| HIPOTECA, INTERESES HIPOTECARIOS (primary home) | Mortgage interest | Itemized desgravamen | 1,000 UT/year | PwC, reviewed 12 Jan 2026 |
-| ALQUILER VIVIENDA (primary/permanent home) | Rent | Itemized desgravamen | 800 UT/year | PwC, reviewed 12 Jan 2026 |
+### Employment and bonus classification limit
 
-### 3.4 Expense Patterns — NOT Deductible
+The printed art. 31 treats regular or incidental consideration/utility from dependent personal services as net enrichment, regardless of salary character, except travel allowances and food bonus. Art. 16 separately sets documentary normal/necessary conditions for its representation/travel exclusions; art. 14 has specified employment indemnity, pension and insurance exemptions with their own conditions. Do not turn a general payroll label into proof of any of those categories. [LISLR arts. 14, 16, 31](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=7).
 
-**3.4 Expense Patterns — NOT Deductible**
+The printed statute is not, by itself, a completed current payroll interpretation. Official TSJ decision text concerning the employment-base interpretation could not be read through direct access, the ordinary browser route or the dated archive attempt. **The controlling employment/bonus interpretation, and the treatment of Guerra Económica or another named bonus beyond the statutory text, remain not yet confirmed.** Obtain current primary legal corroboration and professional classification before finalizing the employment base. Record salary, recurring/extraordinary benefits, food benefit, travel allowance and any other claimed exemption separately; do not include all bonuses automatically or exclude all nonsalary bonuses automatically. The tax-on-income method below can then run on the properly established net amount.
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANTE, COMIDA, ENTRETENIMIENTO (personal) | Personal | NOT deductible | Private living costs |
-| MERCADO, SUPERMERCADO, FARMACIA (personal) | Personal | NOT deductible | Private living costs |
-| MULTA, SANCIÓN, INTERESES MORATORIOS | Fines/penalties | NOT deductible | Public policy |
-| PAGO ISLR, IMPUESTO SOBRE LA RENTA | Tax payments | NOT deductible | Income tax cannot reduce income |
-| RETIRO PERSONAL, CONSUMO PROPIO | Drawings | NOT deductible | Not an expense |
-| GASTOS DE EMPLEO (salaried) | Employment expenses | NOT deductible | No employment expenses recognised (PwC, reviewed 12 Jan 2026) |
+## Rates, bands and thresholds
 
-### 3.5 Exclusions / Tax-Account Movements
+### Resident Tarifa 1
 
-**3.5 Exclusions / Tax-Account Movements**
+All band endpoints are annual taxable net enrichment in U.T., after the applicable personal deduction. The rate applies only to the fraction in its band. The subtraction column and cumulative tax are derived arithmetic from the enacted bands, not additional legal allowances. For the active band, `tariff_tax_UT = taxable_UT × rate - derived_subtraction_UT`. At a boundary, either adjacent formula agrees. [LISLR art. 50, Tarifa 1](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA PROPIA, ENTRE CUENTAS | EXCLUDE | Own-account transfer |
-| PRÉSTAMO, ABONO A PRÉSTAMO, CAPITAL | EXCLUDE | Loan principal movement |
-| RETENCIÓN ISLR, COMPROBANTE DE RETENCIÓN | Credit against liability | Withholding suffered — offsets final tax, not an expense |
-| PAGO IVA, SENIAT IVA | EXCLUDE | VAT liability payment, not an expense |
-| IVSS, SEGURO SOCIAL, FAOV, INCES (employee share) | Parafiscal contribution | Withheld from salary — see Section 5 |
-| DECLARACIÓN ESTIMADA, ANTICIPO ISLR | Credit against liability | Estimated-tax advance, not an expense |
+| Taxable enrichment in U.T. | Marginal rate | Derived subtraction U.T. | Cumulative tariff tax at upper endpoint U.T. | Official source |
+|---|---|---|---|---|
+| Through 1,000 | 6% | 0 | 60 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50; visually read first row) |
+| Over 1,000 through 1,500 | 9% | 30 | 105 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 1,500 through 2,000 | 12% | 75 | 165 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 2,000 through 2,500 | 16% | 155 | 245 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 2,500 through 3,000 | 20% | 255 | 345 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 3,000 through 4,000 | 24% | 375 | 585 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 4,000 through 6,000 | 29% | 575 | 1,165 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
+| Over 6,000 | 34% | 875 | No upper endpoint | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50) |
 
-### 3.6 Venezuelan Banks — Statement Format Reference
+### Other statutory amounts and conditions
 
-**3.6 Venezuelan Banks — Statement Format Reference**
+| Item | Amount or test, with conditions | Official source |
+|---|---|---|
+| Annual-tax unit | Use the UT value in force at fiscal close; for a nonannual tax period COT uses the value effective at the start. Current bolívar amount unconfirmed | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3 (COT art. 3, third paragraph) |
+| Resident standard personal deduction | Optional 774 U.T.; if used, art. 57's itemized personal deductions are unavailable | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 58) |
+| Mortgage-interest personal deduction | Paid qualifying principal-home acquisition-loan interest, not principal; at most 1,000 U.T. per tax year, with art. 57 evidence/non-reimbursement conditions | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 57(4)) |
+| Principal/permanent-home rent personal deduction | Paid qualifying home rent, at most 800 U.T. per tax year, with art. 57 evidence/non-reimbursement conditions | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 57(4)) |
+| Education personal deduction | Paid domestic educational institution costs for taxpayer/descendants not older than 25; no age limit for special education; art. 57 gives no separate numeric monetary cap for this item | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 57(1)) |
+| Taxpayer reduction | 10 U.T. annually for a resident individual | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 59) |
+| Spouse reduction | 10 U.T. for spouse not separated as to property; unavailable when spouses declare separately | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 59(1), first paragraph) |
+| Qualifying direct ascendant/descendant reduction | 10 U.T. each, supported by taxpayer and resident in Venezuela; adult descendants must be unable to work, or studying and younger than 25; shared support divides the reduction; official-duty exception below | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 59(2), second/third paragraphs) |
+| Resident annual-return tests | Annual global net enrichment over 1,000 U.T. **or** gross income over 1,500 U.T.; statutory primary agricultural/stockbreeding/fishing/pisciculture gross threshold over 2,625 U.T. under its conditions | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16 (LISLR art. 77) |
+| Nonresident annual return | Venezuelan enrichment/loss declared whatever its amount, under the Regulation; withholding does not itself prove no return is needed | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17 (LISLR art. 79) |
+| Estimated-return enabling threshold | Prior-year net enrichment over 1,500 U.T. permits the executive to require specified categories/arrangements; not proof of one universal present calendar or instalment rule | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17 (LISLR art. 80) |
+| Operating losses | Matching-source income within the next three tax periods; use in each period at most 25% of that current enrichment; no foreign loss offset against territorial enrichment | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 (LISLR art. 55), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5 (art. 4) |
+| Nonresident individual general rate | 34% on the legally applicable net base, subject to special regimes and actual treaty entitlement | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (LISLR art. 50, sole paragraph) |
+| Nonresident noncommercial professional base | 90% of gross, without prejudice to technical-service art. 41; combined with art. 50, ordinary 34% tax equals 30.6% of gross by multiplication | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=12 (LISLR art. 39), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
 
-| Bank | Common patterns | Notes |
-| --- | --- | --- |
-| Banesco | TRANSFERENCIA, PAGO MÓVIL, COMPRA, CARGO | PDF/CSV; description holds counterparty + reference |
-| Banco de Venezuela (BDV) | ABONO, CARGO, PAGO MÓVIL, COMISIÓN | PDF; date format DD/MM/AAAA |
-| Mercantil | TRANSF, DÉBITO, CRÉDITO, COMISIÓN | PDF/CSV |
-| BBVA Provincial | MOVIMIENTO, CARGO, ABONO | PDF |
-| Zelle / USD accounts | RECEIVED, SENT | USD — convert at BCV rate before aggregating |
+The old Guide's historical bolívar UT values, percentage increase and resulting bolívar lookup table are not established here as current official inputs. Retain the conversion **method**: if confirmed fiscal-close UT is `U` bolívares, 10 U.T. is `10 × U`, 774 U.T. is `774 × U`, and the 800/1,000/1,500-U.T. limits are `800 × U`, `1000 × U`, `1500 × U`. Keep the providencia, its effective date and the relevant fiscal close with every real currency figure. [COT art. 3](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3).
 
-## Section 4 — Worked Examples
+## The base
 
-All examples use **UT value = VES 43.00** (SNAT/2025/000048).
+### The method, step by step
 
-### Example 1 — Professional fee received (resident self-employed)
+**Income timing (art. 5).** Recognize income when the producing operation occurs. For multi-year credit assignments/discounts, recognize the assignee's proportionate benefit. Rents/subrents and the specified bank, insurance, credit-institution and art. 7(b-e) lending income follow accrual. Dependent employment and fortuitous gains follow payment. Reconcile opening/closing receivables and accruals to payments; bank receipts alone do not establish the year. Ordinary services performed in December and collected in January remain in the operation year. [LISLR art. 5](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
 
-**Input line:**
-`15/03/2025 ; BANESCO ; ABONO TRANSFERENCIA ; CLIENTE ACME C.A. ; HONORARIOS FACTURA 0012 ; +860.000,00 ; VES`
+**Expense timing (art. 32).** Match permitted expenses accrued during the tax year to operation-available income. For payment-available income, use expenses actually paid that year, retaining applicable art. 27(5)-(6) depreciation/fixed-asset-loss allowances. Preserve art. 27(3), (11), (20) and its twelfth/thirteenth paragraphs: paid taxes, paid rental-property administration/conservation, paid R&D and qualifying donation conditions remain controlling. This timing step does not resolve the employment-base interpretation caveat above. [LISLR arts. 27 and 32](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
 
-**Reasoning:**
-Professional fee for services rendered in Venezuela. If IVA was charged, the gross includes 16% IVA which is a liability to SENIAT, not income. Assuming no IVA charged here (e.g. below threshold / exempt), the full VES 860,000 is gross professional income. Convert to UT for the bracket computation: 860,000 ÷ 43 = 20,000.00 UT.
+1. **Establish taxpayer and period.** Determine residence/domicile, source and any fixed base, spouse/property regime and applicable ordinary/special income category. The current calendar/alternative-fiscal-year procedures must be evidenced; a business individual does not acquire an unverified alternative year by changing a spreadsheet. [LISLR arts. 1, 7-8, 51, 54, 77-81](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+2. **Reconcile records to gross income.** Match invoices, contracts, employer statements, platforms and bank receipts. Separate transfers, loans, refunds, tax-account movements and exempt receipts. Art. 16's gross income covers sales/services, rents and other regular/incidental receipts, with statutory exclusions; source depends on arts. 1/6, not account location. Retain both original currency and properly supported conversion. [LISLR arts. 1, 6, 14, 16](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+3. **Compute each business/source net amount before personal deductions.** Deduct permitted corresponding costs and art. 27 expenses under their evidence/timing tests; a bank debit is not automatically a deduction. Keep dependent-service net enrichment and specialist proportional bases separate. Do not treat wage net cash after payroll deductions as the legal employment-tax base. [LISLR arts. 4-5, 21, 23, 27, 31-32](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
+4. **Apply eligible source-separated operating losses.** Track each vintage, prior use and next-three-period expiry. Use at most 25% of the matching-source current enrichment. Do not net foreign losses against territorial income or treat an uncompensated inflation loss as an ordinary carryforward. Keep an applicable inflation analysis separate from this ordinary personal-deduction calculation. [LISLR arts. 4, 55, 181](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
+5. **Choose one resident personal-deduction method.** Compare art. 58's 774 U.T. standard with the documented amount actually permitted by art. 57, including caps, eligible persons, domestic-provider conditions, paid-year proof and reimbursements. No standard-plus-itemized combination. Deduction selection never excuses evidence for business expenses, income classification or residence. [LISLR arts. 57-58](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
+6. **Apply the appropriate tariff/base.** Compute ordinary resident taxable net enrichment and each Tarifa 1 band. Keep separately proportional items outside the ordinary band calculation. For a nonresident, use the established statutory net base and applicable 34% rule or specific exception, not the resident 774-U.T. election or personal reductions. [LISLR arts. 31, 39, 50, 57-60, 76](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
+7. **Compute personal/family reductions and foreign-tax credit.** Establish each art. 59 entitlement and allocation; subtract these tax reductions after tariff, not from taxable income. Apply art. 2's foreign-tax credit only to qualifying tax actually paid within the proper cap. If requested reductions/credits exceed assessed tax, record the issue; no automatic refundable excess is established here. [LISLR arts. 2, 59-60](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+8. **Reconcile advances to annual liability.** Withholding and qualifying estimated payments are tax on account under art. 83. Match certificates and actual credit/payment records, then compute a payable balance or supported excess-payment claim under art. 56; a negative spreadsheet number is not proof of a cash refund. [LISLR arts. 56, 83-85](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
+9. **Close an auditable return workpaper.** Keep gross-to-net schedules, source/year/loss allocations, personal election and family evidence, the actual UT ruling/FX rates, statutory computation and current authorized filing/payment instructions. Reconcile to the live return only after its fields, deadline and acknowledgement process have been read. [LISLR arts. 77-89, 96](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
 
-**Classification:** Gross income = VES 860,000 (20,000 UT).
+For positive ordinary resident taxable income `B` in U.T., recompute directly:
 
-### Example 2 — Standard deduction and full ISLR computation (resident)
+`tax_UT = .06 × min(B,1000) + .09 × min(max(B-1000,0),500) + .12 × min(max(B-1500,0),500) + .16 × min(max(B-2000,0),500) + .20 × min(max(B-2500,0),500) + .24 × min(max(B-3000,0),1000) + .29 × min(max(B-4000,0),2000) + .34 × max(B-6000,0)`.
 
-**Input:** Resident individual, gross income 20,000 UT (VES 860,000), elects the standard deduction (desgravamen único 774 UT), married with two qualifying children.
+The eight subtraction amounts are derived by continuity from this formula. Do not apply 34% to all resident income just because it exceeds the top threshold. A negative current net result requires the source/vintage loss workpaper, not a negative Tarifa 1 charge. [LISLR arts. 50, 55](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-**Reasoning (recomputed end-to-end):**
-- Gross income: 20,000 UT
-- Less desgravamen único: 774 UT
-- Taxable income: 20,000 − 774 = 19,226 UT
-- Taxable income is in the "Over 6,000" band → rate 34%, sustraendo 875 UT
-- Tax = (0.34 × 19,226) − 875 = 6,536.84 − 875 = **5,661.84 UT**
-- In VES: 5,661.84 × 43 = **VES 243,459.12**
-- Credits (rebajas): taxpayer 10 UT + spouse 10 UT + 2 children × 10 UT = 40 UT = 40 × 43 = VES 1,720
-- Tax after credits: 243,459.12 − 1,720 = **VES 241,739.12**
-- Less withholdings suffered during the year: VES 5,300
-- **Amount due: 241,739.12 − 5,300 = VES 236,439.12**
+### Personal deductions: standard versus supported itemized amounts
 
-**Classification:** Tax due = VES 236,439.12. (Matches PwC sample calculation, reviewed 12 Jan 2026.)
+Art. 58 offers resident individuals a single 774-U.T. alternative to **all art. 57 deductions**. It does not remove the need to prove an income-producing cost, a withholding credit or an exemption. Compare documented itemized deductions with the standard before choosing; do not assume an expense category or a reimbursement that was not established. [LISLR arts. 57-58](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-### Example 3 — Itemized desgravámenes with rent cap
+Art. 57 permits:
 
-**Input:** Resident, gross 8,000 UT. Documented rent on primary home VES 50,000/month × 12 = VES 600,000 = 13,953.49 UT. Education VES 86,000 = 2,000 UT. Elects itemized.
-
-**Reasoning:**
-- Rent desgravamen is **capped at 800 UT/year** (PwC, reviewed 12 Jan 2026). Documented rent of 13,953.49 UT exceeds the cap → allow **800 UT only**.
-- Education: no stated cap → allow 2,000 UT.
-- Total itemized desgravámenes: 800 + 2,000 = 2,800 UT.
-- Taxable income: 8,000 − 2,800 = 5,200 UT.
-- Band 4,000–6,000 → rate 29%, sustraendo 575 UT.
-- Tax = (0.29 × 5,200) − 575 = 1,508 − 575 = **933 UT** = 933 × 43 = **VES 40,119.00** (before credits).
-
-**Classification:** Rent capped at 800 UT; taxable 5,200 UT; tax 933 UT (VES 40,119.00) before rebajas.
-
-### Example 4 — Non-resident professional fee (flat rate, withheld)
-
-**Input line:**
-`10/05/2025 ; MERCANTIL ; PAGO HONORARIOS ; CONSULTOR NO RESIDENTE ; SERVICIOS PROFESIONALES ; +200.000,00 ; VES`
-
-**Reasoning:**
-Non-resident performing professional non-business activity. Rate is 34% applied to **90% of gross** (PwC, reviewed 12 Jan 2026), withheld at source.
-- Base: 90% × 200,000 = VES 180,000
-- Withholding: 34% × 180,000 = **VES 61,200** (effective 30.6% of gross)
-
-**Classification:** Withholding tax = VES 61,200 (34% on 90% of gross).
-
-### Example 5 — Cestaticket / bono received (non-salary)
-
-**Input line:**
-`28/04/2025 ; BDV ; ABONO ; CESTATICKET SOCIALISTA ; ABRIL 2025 ; +XXX,XX ; VES`
-
-**Reasoning:**
-Cestaticket and the "Bono contra la Guerra Económica" are **non-salary bonos** (ingreso mínimo integral indexado, ~USD 160/month, executive announcement 30 April 2025). They are excluded from the social-security base and largely from the ISLR salary base. Flag for reviewer — do not include in the salary base without confirmation.
-
-**Classification:** EXCLUDE from salary base (reviewer to confirm). Not severance/aguinaldo/pension base.
-
-### Example 6 — ISLR withholding suffered (credit, not expense)
-
-**Input line:**
-`30/06/2025 ; BANESCO ; RETENCIÓN ISLR ; CLIENTE BETA C.A. ; COMPROBANTE 2025-44 ; -X.XXX,XX ; VES`
-
-**Reasoning:**
-ISLR withheld by a client on professional fees is **not an expense** — it is a prepayment of the individual's final tax. It offsets the final liability (as in Example 2's "withholdings suffered" line). Retain the comprobante de retención.
-
-**Classification:** Credit against final ISLR liability. NOT a deductible expense.
-
-## Section 5 — Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Residency basis
-
-**5.1 Residency basis**
-
-| Status | Tax base | Source |
-| --- | --- | --- |
-| Resident individual | Worldwide income | PwC, reviewed 12 Jan 2026 |
-| Non-resident individual | Venezuelan-source income only | PwC, reviewed 12 Jan 2026 |
-| Foreign resident with a fixed base in Venezuela | National- and foreign-source income attributable to that base | PwC, reviewed 12 Jan 2026 |
-
-### 5.2 The graduated computation (residents)
-
-- **Computation steps** — 1. Aggregate worldwide taxable income; convert to UT at the year's UT value (VES 43.00 for 2025). 2. Subtract deductions (standard 774 UT **or** itemized desgravámenes — not both). 3. Apply the Tarifa Nº 1 band: tax (UT) = (rate × taxable UT) − sustraendo. 4. Convert tax to VES (× 43.00). 5. Subtract personal credits (rebajas) in VES. 6. Subtract ISLR withheld and estimated-tax advances paid. 7. Result = amount due (or refund).
-
-### 5.3 Deductions — standard vs itemized
-
-- **Standard deduction** — Standard (desgravamen único): 774 UT/year, no documentation required. Electing it blocks itemized deductions.  _(PwC, reviewed 12 Jan 2026)_
-- **Itemized desgravámenes** — Itemized desgravámenes (Section 3.3): education (taxpayer + children under 26, no age limit for special education); insurance premiums and medical/dental paid to Venezuelan entities; mortgage interest on primary home capped at 1,000 UT/year; rent on primary/permanent home capped at 800 UT/year.  _(PwC, reviewed 12 Jan 2026)_
-- **Employment expenses and business expenses** — Employment expenses: none recognised. Self-employed business expenses follow corporate-tax rules and offset only business income, not salary.  _(PwC, reviewed 12 Jan 2026)_
-- **Loss carryforward** — Up to 3 years; annual offset limited to 25% of current-year taxable income; foreign losses offset only foreign-source income.  _(PwC, reviewed 12 Jan 2026)_
-
-### 5.4 Personal credits (rebajas) — applied after tax is computed
-
-**5.4 Personal credits (rebajas) — applied after tax is computed**
-
-| Credit | Amount | Source |
-| --- | --- | --- |
-| Taxpayer | 10 UT | PwC, reviewed 12 Jan 2026 |
-| Spouse | 10 UT | PwC, reviewed 12 Jan 2026 |
-| Per dependant (minor; incapacitated; or student under 25) | 10 UT each | PwC, reviewed 12 Jan 2026 |
-
-- **VES value of each credit** — At UT = VES 43.00, each 10 UT credit = VES 430.
-
-### 5.5 Non-resident flat rates
-
-- **Non-resident flat rates** — Salary/services performed in Venezuela: 34% flat, withheld at source. Professional non-business activities: 34% on 90% of gross (effective ~30.6%).  _(PwC, reviewed 12 Jan 2026)_
-
-### 5.6 Filing and administration
-
-**5.6 Filing and administration**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Tax year | Calendar year (wage earners); alternative 12-month period for business-engaged individuals | PwC, reviewed 12 Jan 2026 |
-| Annual return | Declaración definitiva de rentas | PwC, reviewed 12 Jan 2026 |
-| Deadline | **31 March** of the following year — NO extensions; special calendar for contribuyentes especiales | PwC, reviewed 12 Jan 2026 |
-| Spouses | Generally file jointly unless separation criteria met | PwC, reviewed 12 Jan 2026 |
-| Estimated-return threshold (non-employees) | Required only if prior-year income from commercial/professional/leasing activity exceeded **1,500 UT** | PwC, reviewed 12 Jan 2026 |
-| Estimated tax payment | Single payment or 6 equal instalments; bi-weekly advances for non-wage special taxpayers | PwC, reviewed 12 Jan 2026 |
-| Tax ID | RIF — issued by SENIAT, no fee, available online; required to invoice/receive payment | PwC corporate "other taxes", reviewed 12 Jan 2026 |
-
-### 5.7 Withholding on self-employed / professional income (Decreto 1.808)
-
-**5.7 Withholding on self-employed / professional income (Decreto 1.808)**
-
-| Item | Rate | Source |
-| --- | --- | --- |
-| Professional/technical services (resident) | ~10% at source | [RESEARCH GAP — reviewer to confirm] secondary payroll/contractor source; confirm against Decreto 1.808 / SENIAT |
-| Invalid/missing RIF | Increased withholding rate | PwC / Decreto 1.808 (mechanism) |
-| IVA (VAT) on services | 16% standard | PwC, reviewed 12 Jan 2026 |
-
-**[RESEARCH GAP — reviewer to confirm]** The full itemised Decreto 1.808 ISLR withholding percentage table was not retrieved from a primary source this session. The 10% professional-services figure is from a secondary source and must be confirmed against Decreto 1.808 / SENIAT before relying on it.
-
-### 5.8 Social security and parafiscal contributions
-
-Source for the whole table: PwC Worldwide Tax Summaries, reviewed 12 Jan 2026.
-
-**5.8 Social security and parafiscal contributions**  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-
-| Regime | Employee | Employer | Base | Cap |
-| --- | --- | --- | --- | --- |
-| Social Security (IVSS / Seguro Social Obligatorio) | 4% | 9% / 10% / 11% (by risk class) | Normal/regular wages | Up to 5 minimum salaries (urban) |
-| Unemployment (Régimen Prestacional de Empleo) | 0.5% | 2% | Normal/regular wages | Up to 10 minimum salaries (urban) |
-| Housing (FAOV / Ley de Vivienda y Hábitat) | 1% | 2% | Total monthly (integral) salary | Máximo 10 salarios mínimos |
-| Worker training (INCES) | 0.5% (from year-end utilidades) | 2% of total wages | Employee: utilidades; employer: payroll | None |
-| LOPCYMAT (workplace risk) | — (employer only) | 0.75% – 10% (risk-dependent) | Total salaries paid | Regulations disputed |
-
-- **Employee-side total on normal wages** — Employee-side total (on normal wages): 4% + 0.5% + 1% + 0.5% = 6.0% (IVSS + unemployment + FAOV + INCES employee shares; note INCES employee share is on utilidades, not normal wages). Verify each base separately before summing — bases differ.
-
-**Minimum-salary reference for caps:** VES 130/month (since 15 March 2022, Decreto 4.653), still cited by PwC. **[RESEARCH GAP — reviewer to confirm]** whether caps are administratively indexed to the USD-160 integral income in practice.
-
-### 5.9 Penalties (COT)
-
-- **Mechanism (confirmed)** — Pecuniary fines stated as a multiple are calculated using the official exchange rate of the highest-value currency published by the BCV (effectively USD) at the date of payment (COT Art. 91, 2020 reform). Late payment accrues interest at the active market rate × 1.2.  _(COT Art. 91, 2020 reform)_
-
-**Penalties (COT) table**
-
-| Infraction | Order of magnitude | Source |
-| --- | --- | --- |
-| Late filing of a return / withholding declaration | ~100–150× the highest-value-currency rate (ISLR withholding declarations cited at 150×) | Grant Thornton COT schedule; TSJ case law |
-| Failure to file declarations (formal duty, COT Art. 103/155) | 150–300× the rate | TSJ decisions |
-| Underpayment (material) + interest | Applies in addition | COT |
-
-**[RESEARCH GAP — reviewer to confirm]** The full line-by-line COT penalty table was not extracted from a single primary source this session; mechanism and order of magnitude are confirmed. Parse the Grant Thornton COT PDF in full before quoting exact per-infraction multiples.
-
-## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Bono vs salary classification
-
-- **Bono vs salary classification** — - Non-salary bonos (Cestaticket, Bono contra la Guerra Económica) are excluded from the SS base, severance, aguinaldos, vacations, pensions and largely from the ISLR salary base. - **Flag for reviewer:** confirm each credit's legal character before including/excluding from the salary base. - **Conservative default:** treat ambiguous amounts as salary unless documented as a bono.
-
-### 6.2 Standard vs itemized deduction election
-
-- **Standard vs itemized deduction election** — - 774 UT standard requires no documents; itemized may exceed it but needs documentation and (for insurance/medical) payment to Venezuelan entities. - **Flag for reviewer:** confirm which election minimises tax and that itemized support exists.
-
-### 6.3 Home/office and mixed-use apportionment
-
-- **Home/office and mixed-use apportionment** — - Only the business-use portion of telecoms, internet and similar mixed costs is deductible against business income. - **Conservative default:** 0% until a documented business percentage is provided.
-
-### 6.4 Currency and BCV conversion
-
-- **Currency and BCV conversion** — - USD-denominated income/expenses must be converted at the applicable BCV rate; the rate and date drive both the ISLR figure and any penalty exposure. - **Flag for reviewer:** confirm the conversion rate and date applied to each foreign-currency line.
-
-### 6.5 Estimated-return obligation
-
-- **Estimated-return obligation** — - Required only if prior-year commercial/professional/leasing income exceeded 1,500 UT. - **Flag for reviewer:** confirm prior-year activity income against the 1,500 UT threshold.
-
-### 6.6 Self-employed expense deductibility (corporate rules)
-
-- **Self-employed expense deductibility (corporate rules)** — - Business expenses follow corporate-tax rules and offset only business income, not salary. - **Flag for reviewer:** confirm each expense meets the corporate-deduction test and is matched to business income.
-
-### 6.7 Loss carryforward limits
-
-- **Loss carryforward limits** — - 3-year carryforward; annual offset capped at 25% of current-year taxable income; foreign losses offset only foreign income. - **Flag for reviewer:** confirm prior-year losses and the 25% annual cap.
-
-## Section 7 — Excel Working Paper Template
-
-```
-VENEZUELA ISLR — INDIVIDUAL WORKING PAPER
-Tax Year: 2025          UT value used: VES 43.00 (SNAT/2025/000048)
-Client: ___________________________   RIF: __________________
-Residency: Resident (worldwide) / Non-resident (VE-source) / Fixed base
-Deduction method: Standard (774 UT) / Itemized
-
-A. GROSS INCOME (convert all to UT)
-  A1. Professional / business income (net of 16% IVA)   ______ VES  ______ UT
-  A2. Salary income (excl. non-salary bonos)            ______ VES  ______ UT
-  A3. Rental income                                     ______ VES  ______ UT
-  A4. Investment income (interest, dividends)           ______ VES  ______ UT
-  A5. TOTAL GROSS (UT)                                              ______ UT
-
-B. DEDUCTIONS (choose ONE method)
-  B1. Standard desgravamen único                                   774 UT
-   -- OR itemized --
-  B2. Education                                                    ______ UT
-  B3. Insurance premiums (VE entities)                             ______ UT
-  B4. Medical / dental (VE entities)                                ______ UT
-  B5. Mortgage interest (cap 1,000 UT)                             ______ UT
-  B6. Rent — primary home (cap 800 UT)                             ______ UT
-  B7. TOTAL DEDUCTIONS                                             ______ UT
-
-C. TAXABLE INCOME (A5 - B)                                         ______ UT
-
-D. TAX (Tarifa Nº 1)
-  D1. Band rate ____%   Sustraendo ______ UT
-  D2. Tax (UT) = (rate x C) - sustraendo                           ______ UT
-  D3. Tax (VES) = D2 x 43.00                                       ______ VES
-
-E. CREDITS (rebajas)
-  E1. Taxpayer                                                     10 UT
-  E2. Spouse                                                       ______ UT
-  E3. Dependants ( __ x 10 UT )                                    ______ UT
-  E4. TOTAL credits (UT)                            ______ UT  =  ______ VES
-
-F. FINAL
-  F1. Tax after credits (D3 - E4 in VES)                           ______ VES
-  F2. Less ISLR withheld (comprobantes)                            ______ VES
-  F3. Less estimated-tax advances                                  ______ VES
-  F4. AMOUNT DUE / (REFUND)                                        ______ VES
-
-REVIEWER FLAGS:
-  [ ] Residency basis confirmed?
-  [ ] UT value for the year confirmed (VES 43.00 for 2025)?
-  [ ] Bonos vs salary classification confirmed?
-  [ ] Standard vs itemized election optimal and documented?
-  [ ] Itemized caps applied (mortgage 1,000 UT / rent 800 UT)?
-  [ ] USD lines converted at correct BCV rate/date?
-  [ ] Estimated-return threshold (1,500 UT) tested?
-  [ ] Withholding (Decreto 1.808) rate confirmed [RESEARCH GAP]?
+- Education paid to domestic teaching institutions for the taxpayer or descendants not older than 25; the age ceiling does not apply to special education. The article supplies no separate monetary limit, but the actual eligible payment remains necessary.
+- Hospitalization, surgery and maternity insurance premiums paid to companies domiciled in Venezuela. A life-insurance description alone does not establish this category; the old pattern SEGURO DE VIDA is not an automatic deduction.
+- Domestic medical, dental and hospitalization services for the taxpayer and persons within art. 59. This is not a rule that any purchase at a pharmacy qualifies as a medical-service payment.
+- Paid interest on a qualifying principal-home acquisition loan, capped at 1,000 U.T. per tax year, or paid rent for the permanent home, capped at 800 U.T. The loan principal is not qualifying interest, and a business-property payment is not automatically a personal-home deduction.
+
+Art. 57 states no separate numerical monetary cap for its education, qualifying insurance or medical-service items; actual eligible payments and the remaining conditions still control. No amount may be deducted again if it was deductible as a business cost/expense. Payments must fall within the tax year, with vouchers required by art. 57; no reimbursement from employer, contractor, insurer or substitute entity may be claimed. Shared education/insurance payments are divided among the paying taxpayers; the receipt must bear the payee's RIF. The third paragraph deems its specified expenses abroad domestic for the listed Venezuelan diplomatic/consular/public officials and official-entity representatives abroad in official functions; do not silently deny that exception or extend it to every expatriate. [LISLR art. 57, all paragraphs](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
+
+### Credits, spouses and dependants
+
+Art. 59 gives a resident individual a 10-U.T. tax reduction, plus 10 U.T. for a spouse not separated as to property and 10 U.T. for each qualifying supported direct ascendant/descendant resident in Venezuela. Adult descendants qualify only if unable to work or studying and younger than 25. The education-deduction age test (not older than 25) and student-descendant credit test (younger than 25) differ; preserve that boundary. The specified official-duty group in art. 57's third paragraph may receive the art. 59(2) reduction even for supported ascendants/descendants abroad. [LISLR art. 59](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
+
+Spouses not separated as to property are ordinarily one taxpayer under art. 54 and declare jointly under art. 78, including separately administered own-property income. Art. 54's printed exception expressly allows the married woman to declare the listed employment or noncommercial-professional enrichment separately; a current interpretation permitting any different election is not assumed here. Spouses separated by marriage contract, judgment or judicial declaration declare all enrichment separately under art. 78. In separate declarations there is no spouse reduction, and only one spouse claims family-charge reductions under art. 59's first paragraph; where several taxpayers support the same qualifying person, divide that person's reduction under its second paragraph. Record family, property-regime and support documents before counting persons. [LISLR arts. 54, 59, 78](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
+
+### Documented business costs and expenses
+
+Art. 21 computes corresponding gross profit by deducting permitted costs of goods/services. Art. 23 accepts direct-seller invoice cost only where prices do not exceed normal market prices, with required seller RIF and the foreign-purchase invoice exception; an unsupported affiliate debit note is insufficient. Common taxable/exempt costs are apportioned under art. 15 and territorial/foreign common costs under art. 23's seventh paragraph. [LISLR arts. 15, 21, 23](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=8).
+
+Art. 27's ordinary expense rule requires normal/necessary income-producing expenditure, not already costed, with domestic and timing conditions unless a stated exception applies. Rent of dedicated income-producing premises, business professional/legal/accounting services, office materials, publicity, business-bank charges, software/hosting and telecoms are **candidates to test**, not automatic deductions from bank labels. Keep actual business purpose, invoice, allocation and payment/accrual evidence. Mixed home/office, internet or telephone expense needs supported business use; no arbitrary percentage is supplied. Capital acquisition is not a recurring subscription merely because its description says SOFTWARE. Depreciation/amortization must satisfy art. 27(5), without duplicate cost and with the location/use and reasonable-life conditions; a current regulatory rate table was not confirmed. [LISLR arts. 23, 27-28, 32](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=8).
+
+The first paragraph of art. 27 prohibits the specified taxpayer/spouse/minor-descendant remuneration and participating-partner/manager arrangements; a sole proprietor cannot deduct a wage paid to themselves merely by moving money between accounts. Interest requires income-producing borrowed capital and applicable related-party restrictions. Bad debts need the specific business-origin, prior-inclusion and writeoff/insolvency-or-uneconomic-collection conditions in art. 27(8); an expected-loss reserve is insufficient. R&D has its actual-payment condition, rented-property administration its 10%-of-gross-rent ceiling, and ISLR itself is excluded under the fifth paragraph. Personal living costs and drawings do not meet the income-producing test; fines/late-payment charges are not assumed deductible without specific legal support. [LISLR art. 27, including (2), (8), (11), (20), first, fourth and fifth paragraphs](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
+
+Employment consideration is treated as net enrichment by printed art. 31; do not deduct ordinary business costs from salary simply because both appear in the same bank account. Build and evidence the business/professional net-income schedule separately. The exact current employment/bonus interpretation remains subject to the limit above. Personal art. 57 deductions or the art. 58 election are a separate step. [LISLR arts. 27, 31, 57-58](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
+
+### Operating losses and inflation referral
+
+Maintain territorial and foreign loss schedules separately. Art. 55 permits same-source operating-loss use in the next three tax periods, no more than 25% of the relevant current enrichment in any period. Art. 4 prevents a foreign loss from offsetting territorial enrichment or loss. Keep actual loss returns, vintage, earlier utilization and expiry. The rule is not an unrestricted three-calendar-year deduction from any income. [LISLR arts. 4, 55](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
+
+An included commercial self-employed taxpayer can raise separate art. 171 inflation-adjustment questions. Its exclusions include designated special taxpayers and the listed financial businesses; art. 181 denies carryforward of uncompensated net inflation losses. Do not insert an accounting inflation adjustment into the personal-deduction line or treat an inflation loss as an ordinary operating loss. The full specialized inflation method, actual INPC and implementation measures require separately sourced work; art. 186's printed FX/indexed-adjustment sentence is incomplete and its full interpretation is not established here. [LISLR arts. 171, 181, 186, 193](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=26).
+
+### Separate tax units, currencies and contribution bases
+
+Keep **income-tax units**, **currency translation**, **penalty exchange multiples** and **payroll-contribution wage bases** separate. The annual UT comes from COT art. 3 at fiscal close. Foreign-source gross income uses the BCV fiscal-year-average methodology in art. 16; foreign tax credited uses its actual payment-date exchange rate under art. 2. A blanket rule using one transaction spot rate for every annual income/credit line is not supported by these provisions. The current authoritative rule/rate for other domestic foreign-currency expense/income situations remains a documented input, not a guessed default. [COT art. 3](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3); [LISLR arts. 2, 16](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+
+No current minimum wage, economic income-floor dollar amount or payroll base is inferred from an old UT or a bonus announcement. Those figures do not automatically set the taxable employment base, an IVSS/FAOV cap, or the penalty currency. The old statutory/economic wage comparison is retained as a **measurement warning**, with current amounts/bases unresolved below.
+
+### Bank-statement triage and terms
+
+Treat the following labels as discovery cues only. Match the actual payer, invoice, service, legal character, currency and underlying documents before deciding the tax line. A bank statement alone supports a provisional reconciliation; it does not establish a deductible expense, exemption, tax-paid credit, residence or source. Where no complete bank statement exists, reconcile the alternative books/payroll/invoice evidence; do not manufacture completeness. Books and entries require supporting documents under art. 88, and local expense invoices must meet art. 89's issuer-RIF/format requirements. [LISLR arts. 16, 88-89](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=8).
+
+| Pattern or term | Provisional destination | Evidence and condition before final treatment |
+|---|---|---|
+| ABONO, TRANSFERENCIA, PAGO RECIBIDO, DEPÓSITO, client name | Receipt reconciliation | Determine whether income, loan, capital or own transfer; match counterparty and contract |
+| HONORARIOS, SERVICIOS, FACTURA, COBRO FACTURA | Professional/business receipt candidate | Match invoice and performance; separate any actual IVA charged without inventing its rate |
+| STRIPE, PAYPAL, WISE, BINANCE payout; Zelle RECEIVED/SENT | Platform/account reconciliation | Gross sales/fees, own transfers and currency require platform/contract evidence; payout is not automatically net taxable profit |
+| SALARIO, NÓMINA, SUELDO, employer name | Employment schedule | Employer statement, gross benefits and withholding; apply established employment classification |
+| CESTATICKET, BONO, GUERRA ECONÓMICA | Separate classification register | Food benefit/other bonus documents and current governing interpretation; label is not an exemption |
+| ALQUILER, CANON DE ARRENDAMIENTO received | Rental-income schedule | Property, lease, source and actual availability; distinguish home expense from rent received |
+| INTERESES, RENDIMIENTOS | Investment schedule | Debtor/instrument/source and actual exemption/proportional-regime evidence |
+| DIVIDENDOS | Separate dividend analysis | Do not place every dividend into ordinary Tarifa 1; arts. 64-76 require distinct base/rate analysis |
+| DEVOLUCIÓN ISLR, REINTEGRO SENIAT | Tax-credit/refund reconciliation | Match prior tax/payment/refund; not automatically a new service receipt |
+| TRANSFERENCIA PROPIA, ENTRE CUENTAS, loan/capital repayment | Nonincome movement candidate | Match both accounts or loan principal; unexplained deposits remain unresolved |
+| Office rent, accountant/legal services, materials, publicity, bank charges, software, telecoms | Business expense candidates | Apply the separate normal/necessary, evidence, timing, allocation and capital tests above |
+| COLEGIO, UNIVERSIDAD, MATRÍCULA | Itemized education candidate | Eligible institution/person/age, paid-year receipt/RIF, no reimbursement; only without standard election |
+| SEGURO HCM, insurance, HOSPITALIZACIÓN | Itemized insurance candidate | Actual hospitalization/surgery/maternity cover with domiciled provider; not any life-insurance premium |
+| MÉDICO, ODONTÓLOGO, CLÍNICA, HOSPITAL | Itemized medical candidate | Domestic services to eligible person; paid-year evidence, no reimbursement |
+| HIPOTECA, INTERESES HIPOTECARIOS | Personal-home interest candidate | Separate principal, establish qualifying acquisition loan and apply 1,000-U.T. cap |
+| ALQUILER VIVIENDA paid | Personal-home rent candidate | Actual permanent-home rent, 800-U.T. cap; not ordinary business rent |
+| RESTAURANTE, COMIDA, ENTRETENIMIENTO, MERCADO, SUPERMERCADO, FARMACIA | Personal/unresolved debit | No automatic business or medical-service deduction from a label |
+| MULTA, SANCIÓN, INTERÉS MORATORIO, RETIRO PERSONAL | Separate nonclaimed/unresolved debit | Do not assume an income-producing deductible expense; personal drawings excluded from cost schedule |
+| PAGO ISLR, RETENCIÓN, COMPROBANTE, ANTICIPO, DECLARACIÓN ESTIMADA | Tax-payment/credit schedule | Match tax period, certificate and actual entitlement; not both expense and credit |
+| IVA, SENIAT IVA | IVA reconciliation | Establish actual collected/input/remitted amounts and legal treatment separately; no universal deduction or ordinary-income assumption |
+| IVSS, SEGURO SOCIAL, FAOV, INCES, unemployment or workplace risk | Payroll/parafiscal register | Distinct employee/employer bases, caps and law; no combined normal-salary percentage |
+| RIF | Identification evidence | Verify taxpayer/payee registration and invoice details, not an amount or tax base |
+
+This table operationalizes the evidence and classification tests already cited; it does not introduce a tax exemption by substring. “Credit/abono” can mean a bank deposit or an accounting recognition event; determine which. “Cargo/débito” is a debit, not necessarily a tax deduction. “Pago móvil” describes a payment method, not a tax category.
+
+For Banesco, Banco de Venezuela (BDV), Mercantil and BBVA Provincial, read the **actual supplied export** rather than assuming a fixed PDF/CSV schema. Normalize date/value date, description, counterparty/reference, debit, credit, balance and currency; reconcile opening plus movements to closing. Preserve the original DD/MM/YYYY or other format until parsed unambiguously. Bank names and platform labels are practical intake examples; current export availability/format is unconfirmed. USD/Zelle records remain in original currency with separately evidenced conversion. This preserves the prior bank-format topic without claiming an unchanged live product specification.
+
+### Working-paper output
+
+Produce one reconciled schedule, not a return-ready assurance:
+
+```text
+VENEZUELA INDIVIDUAL ISLR WORKPAPER
+Fiscal period: ____   Residence/domicile/source conclusion: ____
+RIF / spouse property regime / dependent-person evidence: ____
+Applicable UT (bolívares per unit), official ruling and close-date test: ____
+Original records, completeness gaps and currency/FX method: ____
+A. Gross receipts by legal category and source; nonincome transfers reconciled
+B. Permitted business costs/expenses and timing, with invoice/market-price proof
+C. Established employment net enrichment and bonus/exemption classification
+D. Territorial/foreign operating-loss vintages, eligible use and expiry
+E. Ordinary net enrichment before personal deductions; separate proportional items
+F. Personal election: 774 UT OR permitted itemized education/insurance/medical/
+   principal-home interest (cap1000)/home rent (cap800); paid proof and reimbursements
+G. Taxable ordinary UT base; all eight marginal bands or active-band subtraction
+H. Personal/family reductions: eligible persons, shared support, separate returns
+I. Foreign-tax credit: income inclusion, actual paid tax, FX date and cap
+J. Annual tax after valid reductions/credit, separately taxed items reconciled
+K. Valid withholding and estimated advances; prior excess-payment claims
+L. Payable balance or supported excess-payment claim; no automatic refund assumed
+Current official return fields/calendar/payment/acknowledgement evidence: ____
+Professional-review issues: classification, unit, source, election, credits, timing
 ```
 
-## Section 8 — Bank Statement Reading Guide
+## Deadlines and filing
 
-### Venezuelan Bank Statement Formats
+LISLR art. 77 sets resident-individual annual-return tests of net enrichment over 1,000 U.T. or gross income over 1,500 U.T.; retain its separate qualifying primary-sector test over 2,625 U.T. The statutory primary-activity definition concerns direct exploitation/breeding and the permitted on-farm complementary processing, with its alcohol/pesca exclusions. Nonresident individuals declare Venezuelan enrichment/loss regardless of amount under art. 79 and the Regulation. A source withholding does not establish a general return exemption. [LISLR arts. 77, 79](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
 
-**Venezuelan Bank Statement Formats**
+Art. 80 permits estimated-return requirements for specified categories whose prior-year **net enrichment** exceeded 1,500 U.T., under implementing forms/conditions/dates; it also permits alternative prior-return-based advances and special estimates for relevant extraordinary income. It does not say that every nonemployee's gross fees over that figure automatically trigger the same estimate, six instalments or biweekly calendar. Art. 85 permits specified advance arrangements up to twelve portions within a year and a possible 75% amount under executive rules. Current implementing requirements must be obtained before deciding an actual advance. At 1,490 U.T. prior net enrichment, the art. 80 **over-1,500 enabling limb** is not met; do not convert that limited result into a universal no-advance conclusion. [LISLR arts. 80, 85, 193](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17).
 
-| Bank | Format | Key fields | Notes |
-| --- | --- | --- | --- |
-| Banesco | PDF, CSV | Fecha, Descripción, Débito, Crédito, Saldo | Most common; description holds counterparty + reference |
-| Banco de Venezuela (BDV) | PDF | Fecha, Concepto, Monto, Saldo | State bank; pago móvil common |
-| Mercantil | PDF, CSV | Fecha valor, Descripción, Débito, Crédito |  |
-| BBVA Provincial | PDF | Fecha, Movimiento, Monto, Saldo |  |
-| USD / Zelle accounts | varies | Date, Counterparty, Amount (USD) | Convert at BCV rate before aggregating |
+Arts. 77/81/82/85 send filing/self-assessment periods and procedures to the Regulation or authorized administrative rules. The old universal deadline/no-extension assertion, alternative business-year election, fixed instalment arrangement and special biweekly advances are **not confirmed** here. In particular, a 2026 close can require a later calendar; a prior-year due date is not proof of the current filing date. Obtain the actual taxpayer-specific ordinary/special-taxpayer calendar, relevant extensions and short-period instructions before quoting a date. COT art. 10 supplies working-day/continuous-month rules and nonworking-expiry extensions; it does not supply the missing calendar. [LISLR arts. 77, 80-85](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16); [COT art. 10](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3).
 
-### Key Venezuelan Banking / Tax Terms
+### Withholding, registration and submission sequence
 
-**Key Venezuelan Banking / Tax Terms**
+LISLR art. 84 requires withholding where designated at payment or accounting credit, whichever first; credit means the payer's books/records recognition. Art. 196 continues Decree 1.808 pending the envisaged providencias, but does not establish the current percentage/code for a particular payment. No single professional/technical withholding rate, missing-RIF uplift, current resident payroll percentage or remittance day is adopted from the old secondary-source table. Nonresident net-liability examples below are not proof of a particular current withholding instruction. [LISLR arts. 83-85, 196](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17).
 
-| Term | English | Classification hint |
-| --- | --- | --- |
-| ABONO | Credit / deposit | Potential income |
-| CARGO / DÉBITO | Debit | Expense — check counterparty |
-| TRANSFERENCIA | Transfer | Check direction and whether own-account |
-| PAGO MÓVIL | Mobile payment | Common in VE; income or expense by direction |
-| HONORARIOS | Professional fees | Income (received) or expense (paid) |
-| RETENCIÓN | Withholding | ISLR withheld — credit against liability |
-| COMISIÓN / MANTENIMIENTO | Bank charge | Deductible (business account) |
-| CESTATICKET / BONO | Food ticket / bonus | Non-salary bono — flag for reviewer |
-| SALARIO / NÓMINA / SUELDO | Salary / payroll | Salary income |
-| IVA | VAT | Liability movement — exclude from income |
-| RIF | Tax ID | Registration reference |
+COT art. 27 makes the agent solely liable for withheld amounts and jointly liable with the taxpayer for a withholding failure; unauthorized withholding and supporting-proof conditions also apply. Reconcile the individual's actual certificates to receipts, tax period and credit; do not deduct withheld ISLR from income and again credit it against tax. An excessive advance can be requested against subsequent tax under art. 56, without prejudice to the refund right; establish the real request process rather than promising cash recovery. [COT art. 27](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=4); [LISLR arts. 56, 83](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-## Section 9 — Onboarding Fallback
+Before submitting:
 
-If the client provides a bank statement but cannot answer onboarding questions immediately:
+1. Confirm RIF, residence, spouse/family facts and actual fiscal period; art. 96 requires the relevant taxpayer/withholding-agent registration. Current online registration steps, cost/free-status and validity/renewal rules were not confirmed.
+2. Complete the income/source/cost and personal-deduction/credit workpaper. Match each original statement, invoice, certificate and period; identify unresolved employment interpretation and other evidence gaps.
+3. Open the current authorized SENIAT return and official instructions; match its actual fields for gross/net income, deductions, family reductions, foreign credit, withholding/advances and balance. **Form names, box numbers, attachments and menu paths remain unconfirmed**; do not invent them from an old screen.
+4. Establish the actual calendar and payment reference, submit through the permitted medium and preserve the return, acknowledgement and payment evidence. A prepared spreadsheet does not prove submission or settlement.
 
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING — reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
+These workpaper/record instructions implement LISLR arts. 77-89/96; live portal details are not asserted as law. Direct SENIAT access and the earlier ordinary-browser visit failed on 11 November 2026; no usable dated archive instruction set was obtained. This Guide supplies an ordinary statutory calculation, not an executable current filing walkthrough. [LISLR arts. 77-89, 96](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
 
+LISLR art. 97 requires notice of the specified residence/domicile/company-seat changes within 20 days; COT art. 35 separately gives a maximum month for its listed changes. Track both where applicable under COT art. 10 instead of replacing one with the other. Departure, retained Venezuelan property and fixed-base/short-period duties remain separate questions; a flight does not establish no return or an exit-tax exemption. [LISLR art. 97](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=18); [COT arts. 10, 35](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3).
+
+## Penalties and interest
+
+Use the actual statutory offence, not the old approximate 100-300-times range. COT art. 103 imposes 150 highest-valued-currency exchange-rate multiples and, where premises exist, ten continuous days' closure for nonfiling or delay over one year; an incomplete or up-to-one-year late return attracts 100 multiples. Its listed missing/incomplete/late communications, substitute-return and unauthorized-medium offences attract 50 multiples. A missing low-tax information return has its separate 2,000-multiple/closure sanction and a late return 1,000 multiples. Closure applies to all establishments/branches. Art. 108 increases relevant chapter **formal pecuniary sanctions by 200%**, resulting in three times the ordinary fine for designated special taxpayers; it is not a general multiplier for material offences. [COT arts. 103, 108](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=13).
+
+COT art. 110's ordinary no-extension/no-stated-audit late payment is 0.28% per day up to 100% within the first year, with an additional 50% after one year and additional 150% after two years. Payment in audit/determination is routed as applicable to art. 112, and an obtained extension excludes these art. 110 sanctions. Art. 112 generally gives 100%-300% of omitted tax for illegitimate tax-revenue reduction, without prejudice to art. 119; its limited property-valuation exception and conditional 30% accepted-and-paid-assessment route under arts. 195-196 are not universal discounts. The latter route requires filing/rectification/payment within art. 195's fifteen working days after notice; interest and other applicable fines remain, and a partial acceptance/payment limits that treatment to the accepted/paid portion. [COT arts. 110, 112, 195-196](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=14).
+
+Withholding failures are separate under art. 115: ordinary nonpublic-agent nonwithholding 500% of unwithheld tax, short withholding 100% of shortfall, late remittance 5% per day for at most 100 days, then the specified 1,000% nonremittance/criminal-consequence route. Verification/audit and express public-agent exceptions matter; accepting an assessment does not remove art. 115's sanctions. Do not substitute these rates for an individual's ordinary late annual payment. [COT art. 115](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=15).
+
+COT art. 66 charges automatic late-payment interest from the payment deadline to discharge at **1.2 times the applicable active bank rate**, with the BCV prior-month six-largest-bank average, excluded preferential portfolios and publication/fallback conditions. Actual period rates are needed. Arts. 91-92 use the highest-valued officially quoted currency, not an assumed USD or UT: fixed multiples use payment-date exchange value, while percentage fines translate at the offence date then settle at payment-date value. Actual rates/dates remain inputs. Live enforcement should receive professional legal review. [COT arts. 66, 91-92](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=9).
+
+## Cross-border points
+
+Foreign income remains subject to the residence/source tests, not automatic exclusion. Art. 2 credits qualifying foreign income tax **actually paid** on included foreign-source income up to Venezuelan global tax multiplied by foreign net enrichment divided by global net enrichment; separately proportional items have their own Venezuelan-item cap. Use payment-date FX for the tax paid, distinct from art. 16's average-year foreign-gross-income conversion. Keep assessment, payment receipt, income inclusion and source mapping; no excess-credit carryforward/refund is invented. Treaty relief requires art. 3 evidence and the actual treaty. [LISLR arts. 1-4, 16](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+
+A nonresident individual's ordinary 34% applies to the legal net base. Art. 39 gives noncommercial professional enrichment a 90%-of-gross base without prejudice to art. 41; the printed art. 31 treats dependent-service consideration as net enrichment, subject to the unresolved current employment interpretation above. A technical-assistance/technological/royalty classification, PE/fixed base, separately taxed dividend or other specialist case can change the base/regime and needs its actual law. Do not assign a resident standard deduction, ordinary company tariff, automatic treaty exemption or a guessed administrative withholding percentage. The separate cross-border Guide is tracked through [PR #1452](https://github.com/openaccountants/openaccountants/pull/1452); it is not treated as main coverage until merged. [LISLR arts. 31, 39-50, 64-76](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=12).
+
+### Separate payroll and parafiscal register
+
+Preserve separate questions for **IVSS**, **employment/unemployment insurance**, **FAOV housing**, **INCES training** and **LOPCYMAT workplace risk**. For each, establish employee/employer obligation, covered person, applicable wage/benefit base, cap, period and actual current primary rate before calculation. INCES profit-sharing/benefit questions are distinct from monthly payroll. The old combined percentage on normal wages is not a valid computation where component bases differ. This income-tax Guide does not establish the contribution figures or a deduction from employment net enrichment by listing these regimes.
+
+The existing [social-contributions](venezuela-social-contributions.md) and [payroll](venezuela-payroll.md) Guides are still on 2025 at this baseline and need separate source-based updates; do not use their historical figures as 2026 evidence. Current IVSS risk-class rates/normal-wage cap, employment-insurance rates/cap, FAOV integral-wage base/cap, INCES employee profit-sharing/employer-payroll bases and LOPCYMAT risk rates/implementation remain **not yet confirmed** here. The same applies to statutory minimum wage and any indexed economic income floor; neither a historical wage amount nor an executive bonus label establishes a current contribution cap. IVA is a separate tax: [the IVA Guide](venezuela-iva.md) is also being updated independently, and no current rate or small-taxpayer exemption is supplied from the old personal-income example.
+
+## Two worked examples that recompute
+
+### Example 1: resident standard deduction and family reductions
+
+Assume legally established ordinary net enrichment before personal deductions of 20,000 U.T., no additional business costs/losses, resident status, a valid 774-U.T. standard election, and a spouse not separated as to property plus two qualifying supported resident minor children. There are no separate declarations, shared-support adjustments, foreign credit or proportional items. Taxable enrichment is 19,226 U.T.; tariff tax is 5,661.84 U.T.; the four 10-U.T. reductions total 40 U.T., leaving 5,621.84 U.T. before advances. For an illustrative validated advance of 100 U.T., payable tax is 5,521.84 U.T. The former 5,300-bolívar withholding scenario can instead be reconciled as `5621.84 × confirmed U - 5300` only once the actual UT and the certificate are established; no current UT amount is assumed. [LISLR arts. 50, 58-59, 83](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
+
+```oa-check
+name: Resident standard deduction family reductions and advances in tax units
+inputs:
+  net_enrichment_ut: 20000
+  standard_ut: 774
+  eligible_persons: 4
+  validated_advance_ut: 100
+steps:
+  - taxable_ut: net_enrichment_ut - standard_ut
+  - tariff_tax_ut: taxable_ut * 0.34 - 875
+  - reductions_ut: eligible_persons * 10
+  - annual_after_reductions_ut: tariff_tax_ut - reductions_ut
+  - payable_ut: annual_after_reductions_ut - validated_advance_ut
+expected:
+  taxable_ut: 19226
+  tariff_tax_ut: 5661.84
+  reductions_ut: 40
+  annual_after_reductions_ut: 5621.84
+  payable_ut: 5521.84
 ```
-ONBOARDING QUESTIONS — VENEZUELA ISLR
-1. Residency: resident (taxed on worldwide income), non-resident (VE-source only),
-   or foreign resident with a fixed base in Venezuela?
-2. Do you have an active RIF? (Required to invoice/receive payment.)
-3. Deduction method: standard 774 UT, or do you want to itemize?
-4. If itemizing: education, insurance, medical, mortgage interest, rent paid?
-   (Insurance/medical must be paid to Venezuelan entities.)
-5. Marital/dependant status: spouse? how many qualifying dependants?
-6. Any non-salary bonos received (Cestaticket, Bono contra la Guerra Económica)?
-7. ISLR withheld during the year (do you have comprobantes de retención)?
-8. Did prior-year commercial/professional/leasing income exceed 1,500 UT?
-   (Determines estimated-return obligation.)
-9. Any foreign-currency (USD) income or expenses to convert at the BCV rate?
-10. Are you classified by SENIAT as a contribuyente especial (special calendar)?
+
+### Example 2: itemized rent cap and the election decision
+
+Assume resident ordinary net enrichment of 8,000 U.T., documented qualifying permanent-home rent of 13,953.49 U.T. and eligible education of 2,000 U.T. paid domestically in the year, with proper receipts/RIF, no reimbursements or business double deduction. Rent is capped at 800 U.T.; itemized deductions are 2,800 U.T.; taxable income is 5,200 U.T. and tariff tax 933 U.T. The 774-U.T. alternative gives taxable income 7,226 U.T. and tariff tax 1,581.84 U.T., so valid itemization saves 648.84 U.T. before equal personal reductions. If the education/rent evidence fails, do not choose this itemized result merely because it is lower. [LISLR arts. 50, 57-58](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
+
+```oa-check
+name: Valid itemized rent and education compared with the standard election
+inputs:
+  net_enrichment_ut: 8000
+  paid_rent_ut: 13953.49
+  eligible_education_ut: 2000
+steps:
+  - rent_allowed_ut: min(paid_rent_ut, 800)
+  - itemized_ut: rent_allowed_ut + eligible_education_ut
+  - itemized_base_ut: net_enrichment_ut - itemized_ut
+  - itemized_tax_ut: itemized_base_ut * 0.29 - 575
+  - standard_base_ut: net_enrichment_ut - 774
+  - standard_tax_ut: standard_base_ut * 0.34 - 875
+  - itemization_saving_ut: standard_tax_ut - itemized_tax_ut
+expected:
+  rent_allowed_ut: 800
+  itemized_ut: 2800
+  itemized_base_ut: 5200
+  itemized_tax_ut: 933
+  standard_base_ut: 7226
+  standard_tax_ut: 1581.84
+  itemization_saving_ut: 648.84
 ```
 
-## Section 10 — Reference Material
+### Preserved scenario checks
 
-### Key References
+The prior Guide's remaining tests are retained with their legal limits. These are hypothetical arithmetic, not current administrative withholding instructions or currency-unit assertions.
 
-**Key References**
+```oa-check
+name: Bottom band and taxpayer reduction
+inputs:
+  net_enrichment_ut: 1500
+steps:
+  - taxable_ut: net_enrichment_ut - 774
+  - tariff_tax_ut: taxable_ut * 0.06
+  - after_taxpayer_reduction_ut: tariff_tax_ut - 10
+expected:
+  taxable_ut: 726
+  tariff_tax_ut: 43.56
+  after_taxpayer_reduction_ut: 33.56
+```
 
-| Topic | Reference |
-| --- | --- |
-| Tax Unit (UT) value | SNAT/2025/000048, Official Gazette 2 June 2025 — VES 43.00/UT |
-| Graduated rates (Tarifa Nº 1) | Ley de Impuesto Sobre la Renta (LISLR) |
-| Deductions / desgravámenes | LISLR; PwC Worldwide Tax Summaries (reviewed 12 Jan 2026) |
-| Personal credits (rebajas) | LISLR; PwC (reviewed 12 Jan 2026) |
-| Filing / administration | LISLR; PwC (reviewed 12 Jan 2026) — 31 March deadline, 1,500 UT estimated threshold |
-| ISLR withholdings | Decreto 1.808 — **[RESEARCH GAP — reviewer to confirm full table]** |
-| Social security / parafiscal | IVSS; FAOV; INCES; LOPCYMAT; PwC (reviewed 12 Jan 2026) |
-| Penalties | Código Orgánico Tributario (COT), Art. 91 (2020 reform); Grant Thornton COT schedule — **[RESEARCH GAP — full table]** |
-| Minimum wage | Decreto 4.653 (15 March 2022) — VES 130/month |
-| Income floor (bonos) | Executive announcement 30 April 2025 — "ingreso mínimo integral indexado" ~USD 160/month |
-| VAT (IVA) | 16% standard (PwC, reviewed 12 Jan 2026) |
+For a nonresident noncommercial professional without PE/fixed base, established technical-service classification or treaty relief, the old hypothetical 200,000-unit fee gives the art. 39/50 liability below. For a legally established ordinary taxable employment amount of 500,000 currency units, the 34% arithmetic is also retained, but it does not resolve the bonus/employment-base interpretation or the current withholding instruction. [LISLR arts. 31, 39, 50](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=12).
 
-### UT → VES Conversion Reference (2025)
+```oa-check
+name: Nonresident professional base and separately established employment base
+inputs:
+  professional_gross: 200000
+  established_employment_net: 500000
+steps:
+  - professional_base: professional_gross * 0.90
+  - professional_liability: professional_base * 0.34
+  - employment_liability: established_employment_net * 0.34
+expected:
+  professional_base: 180000
+  professional_liability: 61200
+  employment_liability: 170000
+```
 
-**UT → VES Conversion Reference (2025)**
+```oa-check
+name: Exact 6000 tax-unit boundary with taxpayer reduction
+inputs:
+  taxable_ut: 6000
+steps:
+  - lower_band_tax_ut: taxable_ut * 0.29 - 575
+  - upper_band_tax_ut: taxable_ut * 0.34 - 875
+  - after_taxpayer_reduction_ut: lower_band_tax_ut - 10
+expected:
+  lower_band_tax_ut: 1165
+  upper_band_tax_ut: 1165
+  after_taxpayer_reduction_ut: 1155
+```
 
-| UT figure | VES at 43.00/UT |
-| --- | --- |
-| 1 UT | VES 43.00 |
-| 10 UT (one credit) | VES 430.00 |
-| 774 UT (standard deduction) | VES 33,282.00 |
-| 800 UT (rent cap) | VES 34,400.00 |
-| 1,000 UT (mortgage cap) | VES 43,000.00 |
-| 1,500 UT (estimated threshold) | VES 64,500.00 |
+At 1,490 U.T. prior net enrichment, the art. 80 over-1,500 enabling test is not met; current category/other-advance rules remain separate as explained under filing. The old receipt-only professional example remains: a documented 860,000-currency-unit service receipt is reconciled to the invoice and actual IVA first, then divided by the **confirmed** UT; no assumption that “no IVA charged” means an exemption. The old food-bonus receipt example is retained as a classification register item, not an automatic exempt-income result. The old withholding certificate example remains a tax-on-account credit subject to actual evidence, not an expense. [LISLR arts. 16, 31, 80, 83](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=8).
 
-### Test Suite
+## Ask the client first
 
-**Test 1 — Standard deduction, top band (PwC sample).**
-Input: Resident, gross 20,000 UT, standard 774 UT, married + 2 children, withholding VES 5,300.
-Expected: taxable 19,226 UT; tax = (0.34 × 19,226) − 875 = 5,661.84 UT = VES 243,459.12; credits 40 UT = VES 1,720; after credits VES 241,739.12; less VES 5,300 → **due VES 236,439.12**.
+1. What is the actual tax period, RIF and residence/domicile conclusion, including current/prior-calendar-year presence, home, citizenship and foreign residence evidence? Is there a Venezuelan fixed base or a treaty claim?
+2. Provide all bank/platform statements, invoices/contracts, employer gross-benefit and withholding statements, other income/asset records and source/currency details. Which receipts are own transfers, loans, capital, refunds or separately taxed income?
+3. For employment, identify food/travel benefits, ordinary/extraordinary bonuses, indemnities/pensions and the actual primary legal interpretation supporting each inclusion/exclusion. A name in the bank memo is insufficient.
+4. Provide documented business costs/expenses, mixed-use allocation, prior source-specific loss vintages and inflation issues; then identify standard versus eligible itemized personal deductions, paid-year receipts/RIF and any reimbursement.
+5. What are the spouse/property/separate-declaration facts, eligible supported ascendants/descendants, their age/residence/study/disability status and shared support? Provide actual withholding/advance and foreign-tax-paid evidence.
+6. Provide the fiscal-close UT ruling, applicable FX evidence, current return/calendar and special-taxpayer notice, plus prior definitive/estimated returns, residence/domicile changes and any late filing/payment. Which final filing/credit/refund steps remain unsupported?
 
-**Test 2 — Itemized with rent cap.**
-Input: Resident, gross 8,000 UT, documented rent 13,953.49 UT, education 2,000 UT, itemized.
-Expected: rent capped at 800 UT; deductions 2,800 UT; taxable 5,200 UT; band 4,000–6,000 (29%, sustraendo 575); tax = (0.29 × 5,200) − 575 = **933 UT = VES 40,119.00** before credits.
+### Onboarding fallback and when to refuse or refer
 
-**Test 3 — Bottom band.**
-Input: Resident, gross 1,500 UT, standard 774 UT.
-Expected: taxable 726 UT; band 0–1,000 (6%, sustraendo 0); tax = 0.06 × 726 = **43.56 UT = VES 1,873.08** before credits.
+With incomplete answers, prepare a **provisional** record reconciliation and a specific missing-evidence list; do not invent residence, a zero business-use allocation, a deductible category, spouse/dependent entitlements, an exemption or a current UT. Do not silently elect a personal method without the required facts. The standard alternative does not justify a final return based on bank records alone.
 
-**Test 4 — Non-resident professional fee.**
-Input: Non-resident professional fee VES 200,000.
-Expected: base 90% = VES 180,000; tax 34% = **VES 61,200** withheld (effective 30.6%).
+Stop a final amount where residence/source, current unit, legally established employment base, expense/credit evidence or current required procedure is missing. Refer companies/member allocations, live enforcement, disputed salary/bonus interpretation, treaty/PE questions, complex inflation or multicurrency issues and IVA/payroll calculations to their separately sourced work. Preserve a supported U.T. calculation where possible and identify precisely what prevents conversion or filing. This retains the old refusal/prohibition topics without unsupported automatic defaults.
 
-**Test 5 — Non-resident salary.**
-Input: Non-resident, salary for services in Venezuela VES 500,000.
-Expected: flat 34% = **VES 170,000** withheld at source.
+## Sources
 
-**Test 6 — Credits at exact band boundary.**
-Input: Resident, taxable income exactly 6,000 UT, taxpayer-only credit.
-Expected: use 29% band (4,000–6,000): tax = (0.29 × 6,000) − 575 = 1,165 UT; less taxpayer credit 10 UT = 1,155 UT = **VES 49,665.00**. (Confirms band continuity: the 34% band at 6,000 gives (0.34 × 6,000) − 875 = 1,165 UT — identical.)
+| Primary source | Official URL | Read on | Exact native wording and extent read |
+|---|---|---|---|
+| LISLR, official Gaceta 6.210 Extraordinario, 30 December 2015 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf | 2026-11-11 | Consolidated personal provisions and neighbors: arts. 1-32, 39-60, 64-89, 96-97, 171, 181, 186, 193, 196. Tarifa 1 visually read on PDF page 13, including the 6%/9% cells missing from text extraction; its eight rows are explicitly transcribed in review evidence. Art. 58: “setecientas setenta y cuatro unidades tributarias (774 U.T.)”; art. 59: “diez (10) unidades tributarias”; art. 31: “independientemente de su carácter salarial, distintas de viáticos y bono de alimentación”. Current judicial interpretation is not established from this printed sentence alone. |
+| COT, official Gaceta 6.507 Extraordinario, 29 January 2020 | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf | 2026-11-11 | Arts. 3, 10, 27, 30, 35, 66, 91-92, 103, 108, 110, 112, 115, 195-196 and relevant neighbors read. Art. 3: “la unidad tributaria aplicable será la que esté vigente al cierre del ejercicio fiscal respectivo”; art. 103: “por un plazo de diez (10) días continuos”. Native extraction headers/duplicates are excluded from quotation evidence only after printed-source checks. |
 
-**Test 7 — Estimated-return threshold.**
-Input: Prior-year professional income 1,490 UT.
-Expected: below 1,500 UT → **no estimated return required**.
-
-## PROHIBITIONS
-
-- NEVER quote a bolívar figure without stating the UT value used (VES 43.00 for 2025) and its source
-- NEVER apply a rate basis without confirming residency (worldwide vs Venezuelan-source)
-- NEVER combine the standard desgravamen (774 UT) with itemized deductions — they are mutually exclusive
-- NEVER exceed the itemized caps: mortgage interest 1,000 UT, rent 800 UT
-- NEVER treat the legal minimum wage (VES 130/month) as the economic income floor
-- NEVER include non-salary bonos in the salary base without reviewer confirmation
-- NEVER treat ISLR withheld (retención) or estimated-tax advances as deductible expenses — they are credits
-- NEVER allow employment expenses as a deduction — none are recognised
-- NEVER allow self-employed business expenses against salary income — only against business income
-- NEVER express COT penalties in UT — they are multiples of the BCV highest-value-currency rate at the date of payment
-- NEVER quote the Decreto 1.808 withholding rate or the full COT penalty table as authoritative — both are flagged [RESEARCH GAP]
-- NEVER present tax calculations as definitive — always label as estimated and route to a licensed reviewer
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+**Not yet confirmed:** current fiscal-close UT bolívar value/effective-date evidence and historical UT currency/increase claims; current controlling judicial/administrative interpretation of employment, bonuses and named benefits under art. 31, including the inaccessible official TSJ text; domestic foreign-currency conversion rules/rates not established by arts. 2/16; specific 2026 sector/personal exonerations; current annual/short-period/alternative-year calendars, extensions, estimated/special-taxpayer advances and instalments; actual SENIAT return/registration fields, fees, acknowledgements, attachments and payment/credit/refund procedures; current withholding tables/codes, missing-RIF effects and remittance schedules; current depreciation tables, INPC/implementation and art. 186 interpretation; actual IVSS, employment-insurance, FAOV, INCES and LOPCYMAT rates/bases/caps and current wage/economic-floor inputs; current IVA rate/exemption for a specific invoice; bank-specific export formats; treaty-specific status/rates and other specialist bases; actual BCV penalty/interest rates and treatment of personal reductions exceeding tax. These topics remain in this Guide or its explicit referrals rather than being silently dropped. No missing figure is filled from memory or a secondary summary.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `venezuela-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/venezuela-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `venezuela-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/venezuela-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

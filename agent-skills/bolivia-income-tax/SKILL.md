@@ -1,620 +1,245 @@
 ---
 name: bolivia-income-tax
-description: "Use this skill whenever asked about Bolivia personal income tax for self-employed individuals, independent professionals, or employees. Trigger on phrases like \"how much tax do I pay in Bolivia\", \"RC-IVA\", \"Regimen Complementario al IVA\", \"Formulario 610\", \"Formulario 110\", \"impuesto a la renta Bolivia\", \"retencion RC-IVA\", \"aportes a la Gestora\", \"independent professional tax Bolivia\", \"aguinaldo\", \"salario minimo nacional\", \"IUE-BE\", \"beneficiarios del exterior\", \"impuesto a las grandes fortunas\", \"IGF\", or any question about computing or filing personal income tax for a Bolivian individual, self-employed person, or independent professional. Also trigger when classifying a Bolivian bank statement, computing the 13% RC-IVA, the VAT-credit offset on Form 110, social security contributions (Gestora/Caja de Salud), or non-resident withholding. This skill covers RC-IVA (13% flat), the VAT-credit invoice mechanism, social security contributions, the IUE-BE non-resident withholding, the IGF"
+description: "Bolivia personal income tax for 2026: the RC-IVA (Régimen Complementario al Impuesto al Valor Agregado, 13%) for employees, independent professionals, landlords and investors, under Ley 843 Título II and DS 21531 as consolidated by the Servicio de Impuestos Nacionales (SIN) to 30 September 2026, with the 2026 minimum wage of Bs 3,300 (DS 5516). Covers who pays and what income is taxed, the exclusions (aguinaldo, dividends, severance, pensions), the two-minimum-wage non-taxable amount for employees, the credit for invoices on Form 110, the presumed credits, quarterly Form 610 for independents, employer Form 608, withholding on Form 604, non-domiciled individuals, why independent professionals no longer pay IUE (Ley 1448), the Re-IVA refund, the IGF wealth tax and penalties. Trigger on: RC-IVA, Formulario 610, Formulario 110, Formulario 608, retencion RC-IVA, impuesto a la renta Bolivia, salario minimo 2026, profesional independiente Bolivia, impuesto a las grandes fortunas, IGF, Re-IVA."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bolivia-income-tax"
   jurisdiction: "BO"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Bolivia Income Tax (RC-IVA) -- Self-Employed and Individuals
+# Bolivia personal income tax (RC-IVA) for 2026: employees, professionals, landlords v0.2
 
-## Bolivia Income Tax (RC-IVA) -- Self-Employed and Individuals Skill v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Tier 2 (research-verified). Figures below are drawn from PwC Worldwide Tax Summaries, the official SIN/SIAT site, the LexiVox text of DS 5383, and Bolivian professional sources. They have NOT yet been signed off by a Bolivian-licensed accountant (Contador Público Autorizado / auditor). Treat every output as a draft for professional review. Items marked **[RESEARCH GAP -- reviewer to confirm]** require verification against primary statute before filing.
+The law is Ley N° 843 (Texto Ordenado), Título II "Régimen Complementario al Impuesto al Valor Agregado" (arts. 19 to 35), and its regulation DS 21531. This skill reads both in the SIN's consolidated edition "Ley N° 843 y Decretos Reglamentarios, Texto Ordenado, Complementado, actualizado al 30/09/2026", which includes Ley 1448 of 25 July 2022 and DS 4850 (independent professionals moved into the RC-IVA from 2023), DS 5383 (employees' presumed credit cut to one minimum wage) and DS 5563 of 2 March 2026. The SIN edition is for information; the Gaceta Oficial governs. The 2026 national minimum wage (Salario Mínimo Nacional, SMN) is from DS 5516 of 13 January 2026, read in the Gaceta Oficial. Penalties come from the Código Tributario, Ley N° 2492. The RC-IVA period is the month (art. 28); independents file by quarter. Amounts are in bolivianos (Bs).
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
-**Quick Reference table**
+- **Individuals and undivided estates** (art. 22) with Bolivian-source income, whatever their nationality, domicile or residence (arts. 20 and 21). Bolivia taxes by source: income from goods located or used in Bolivia, or from acts done in Bolivia. Diplomats of foreign missions and foreign officials of international bodies are outside, on reciprocity (art. 20).
+- **Income taxed** (art. 19): rent of real estate and of movables, rights and concessions (unless the owner is an IUE payer); interest and other returns on capital not subject to IUE; salaries, wages, overtime, bonuses, commissions, allowances, per diems, representation expenses and every other pay in cash or kind; directors' and auditors' fees and the salaries of partners and of a sole owner; any other habitual income not subject to IUE; income from a profession or trade exercised independently (inciso g, added by Ley 1448); and fees of non-domiciled persons for work done in Bolivia (inciso h, also from Ley 1448).
+- **Independent professionals are in the RC-IVA, not the IUE.** Ley 1448 added art. 19 g) and struck "the exercise of liberal professions and trades" from the IUE definition of a business (art. 39). DS 4850 removed them from the IUE filing rules. A sole-owner business (empresa unipersonal) remains an IUE payer: see [bolivia-corporate-income-tax](bolivia-corporate-income-tax.md).
+- **Not taxed** (art. 19 c; DS 21531 art. 1):
+  - dividends and profit distributions from companies and sole-owner businesses that pay IUE, and bonus shares from reinvested profits;
+  - interest on fixed-term deposits in bolivianos or UFV for more than 30 days, or in foreign currency or dollar-indexed bolivianos for 3 years or more, and returns on debt securities issued for 3 years or more. Early redemption makes the interest taxable;
+  - the Christmas bonus (aguinaldo de navidad);
+  - severance and voluntary-retirement benefits paid under labour law. Extra gratuities on leaving are taxed;
+  - family, marriage, birth, nursing and funeral subsidies, and social-security pensions and annuities;
+  - per diems and representation expenses accounted for with invoices, with any surplus returned;
+  - social-security contributions and benefits of the pension system (Ley 065 art. 66, reproduced under art. 19).
 
-| Field | Value |
-| --- | --- |
-| Country | Bolivia (Estado Plurinacional de Bolivia) |
-| Tax | RC-IVA -- Regimen Complementario al Impuesto al Valor Agregado (personal income tax) |
-| Currency | BOB only (Boliviano, Bs) |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Ley 843 (Texto Ordenado), Titulo II, arts. 19-36 (RC-IVA); reglamento DS 21531 |
-| Supporting legislation | Ley 1448 (2021) + DS 4850 -- independent professionals moved to RC-IVA from 1 Jan 2023; Ley 065 de Pensiones (2010), modified by Ley 1582 (2024); Ley 1357 (IGF wealth tax, 2020); Ley 843 art. 51 (IUE-BE non-resident WHT); DS 5383 (1 May 2025, minimum wage); Codigo Tributario Ley 2492 (penalties) |
-| Tax authority | Servicio de Impuestos Nacionales (SIN) -- siat.impuestos.gob.bo / impuestos.gob.bo |
-| Social security | Gestora Publica de la Seguridad Social de Largo Plazo (gestora.bo); APS (regulator) |
-| Labor / minimum wage | Ministerio de Trabajo, Empleo y Prevision Social (mintrabajo.gob.bo) |
-| Filing portal | SIAT (Oficina Virtual) |
-| Filing deadline (self-employed / direct) | Quarterly, within 20 days after quarter-end (20 Apr / 20 Jul / 20 Oct / 20 Jan) -- Form 610 |
-| Filing deadline (employees) | None -- employer withholds and files a monthly consolidated return |
-| Validation date | Pending |
-| Skill version | 0.1 |
+**When to refer.** Refer for: transport cooperatives' members (DS 5196), mining-sector withholding, Bolivian diplomatic staff abroad (extra 50% deduction, art. 26 II), heirs and undivided estates in partition, and any IGF case. VAT and the transactions tax that independents also pay on their fees: [bolivia-iva](bolivia-iva.md). Contribution rates to the Gestora and the health funds: [bolivia-social-contributions](bolivia-social-contributions.md) and [bolivia-payroll](bolivia-payroll.md).
 
-### The Headline: Bolivia Has a FLAT 13% Personal Income Tax
+## Rates, bands and thresholds
 
-- **RC-IVA flat rate** — RC-IVA is Bolivia's personal income tax: a flat 13% on Bolivian-source income from labour and capital under Ley 843, Titulo II. There are no progressive brackets.  _(PwC, https://taxsummaries.pwc.com/bolivia/individual/taxes-on-personal-income)_
-- **Territorial taxation** — Individuals are taxed only on Bolivian-source income regardless of residency or citizenship; foreign-source income is not taxed. The only exception is the IGF wealth tax, which reaches residents' worldwide assets.  _(PwC, taxes-on-personal-income)_
+Quick answer: **one rate, 13%**, on monthly taxable income, less credits for the IVA in the person's purchase invoices (Form 110) and a presumed credit. There are no brackets. The figures in bolivianos use the 2026 SMN of Bs 3,300, in force from 1 January 2026.
 
-### Personal Income Tax Rate
-
-**Personal Income Tax Rate table**  _(PwC, taxes-on-personal-income)_
-
-| Tax | Type | Rate | Base | Source |
-| --- | --- | --- | --- | --- |
-| RC-IVA (personal income tax) | Flat | **13%** | Bolivian-source net income (gross less social security contributions and statutory deductions); offset by VAT credits | PwC, taxes-on-personal-income |
-
-### IGF -- Impuesto a las Grandes Fortunas (Wealth Tax) -- STATUS UNCERTAIN
-
-[RESEARCH GAP -- reviewer to confirm status.] Ley 1357 (2020) and PwC confirm the IGF was in force with the brackets below. However Bolivian press (El Pais, 25 Nov 2025) reports the new Rodrigo Paz government eliminated the IGF as one of its first measures. The exact repeal instrument, its effective date, and whether it still applies for fiscal year 2025 (assessed at 31 Dec 2025) could not be confirmed from an authoritative source. Verify the current legal status before computing. Do NOT compute IGF unless net wealth clearly exceeds Bs 30,000,000 AND you have confirmed the law is still in force.
-
-**IGF net wealth band table**  _(https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/)_
-
-| Net wealth band (Bs) | Rate | Source |
-| --- | --- | --- |
-| 30,000,000 -- 40,000,000 | 1.4% | https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/ |
-| 40,000,000 -- 50,000,000 | 1.9% | https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/ |
-| over 50,000,000 | 2.4% | https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/ |
-
-- **IGF threshold and residency test** — net wealth exceeding Bs 30,000,000 at 31 December; residency test = 183 days in any 12-month period  _(impuestos.com.bo / Ley 1357)_
-
-### Key Thresholds (2025)
-
-**Key Thresholds (2025) table**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| National minimum wage (Salario Minimo Nacional, SMN) 2025 | **Bs 2,750/month** (+10% over 2024's Bs 2,500), retroactive to 1 Jan 2025 | DS 5383 art. 7, https://www.lexivox.org/norms/BO-DS-N5383.html |
-| RC-IVA non-taxable minimum (employees) | **2 x SMN = 2 x Bs 2,750 = Bs 5,500/month** deducted from net taxable base | https://www.rigobertoparedes.com/en/bolivia-2025-salary-increase/ |
-| RC-IVA presumed VAT credit (employees, 2025 onward) | **13% of 1 SMN = Bs 357.50/month** (cut in 2025 from 13% of 2 SMN = Bs 715 under DS 5383) | https://www.rigobertoparedes.com/en/bolivia-2025-salary-increase/ |
-| Practical RC-IVA withholding bite (employees, 2025) | approx **Bs 9,451/month gross** -- above this, employees generally owe RC-IVA unless they present sufficient VAT-credit invoices on Form 110 | https://www.rigobertoparedes.com/en/bolivia-2025-salary-increase/ |
-| RE-IVA VAT refund program (Ley 1355) | individuals earning up to **Bs 9,000/month** can claim a refund of 5% of invoiced purchases | https://taxsummaries.pwc.com/bolivia/individual/significant-developments |
-| IGF wealth tax threshold | net wealth exceeding **Bs 30,000,000** at 31 Dec (status uncertain -- see above) | https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/ |
-| IUE-BE non-resident WHT | effective **12.5%** of gross remitted (50% presumed profit x 25%) | https://impuestos.com.bo/iue-be-impuestos-sobre-las-utilidades-beneficiarios-del-exterior/ |
-
-### Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown employment status | STOP -- do not compute without knowing employee vs self-employed/independent professional |
-| Employee with no VAT-credit invoices | Apply RC-IVA 13% on (gross - 12.71% SS - 2 SMN), minus only the presumed credit (Bs 357.50/month for 2025) |
-| Self-employed / independent professional | Treat under RC-IVA (13%, quarterly Form 610), NOT IUE -- independents moved out of IUE from 1 Jan 2023; also liable to IVA 13% and IT 3% on services billed |
-| Unknown whether VAT invoices exist | Assume none -- compute full 13% net of presumed credit only |
-| Unknown net wealth (IGF) | Assume NOT applicable (threshold Bs 30M) AND flag uncertain legal status for 2025/2026 |
-| Payment to a non-resident | Apply IUE-BE 12.5% withholding unless a treaty rate is confirmed |
-| Unknown social security band | Apply standard 12.71% employee total; flag Aporte Nacional Solidario only if gross > Bs 13,000 |
-| Aguinaldo (Christmas bonus) | Exclude from RC-IVA taxable income |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-Minimum viable -- bank statement for the full tax year (or quarter) in CSV, PDF, or pasted text, PLUS confirmation of employment status (dependent employee vs self-employed / independent professional / direct contributor) and gross monthly income.
-
-Recommended -- all purchase invoices (facturas) supporting the 13% VAT credit, social security contribution records (Gestora / Caja de Salud), prior-period RC-IVA filings (Form 610 / Form 110), and details of any non-resident payments.
-
-Ideal -- complete income and expenditure records, NIT (tax ID) and its last digit (for the filing calendar), payroll register if an employer, and a statement of net wealth if IGF may apply.
-
-Refusal if minimum is missing -- SOFT WARN. No bank statement at all = hard stop. Bank statement without facturas = proceed with reviewer warning: "This RC-IVA computation was produced from bank statement alone. Without valid facturas on Form 110 the full 13% liability stands (less only the presumed credit). The reviewer must verify VAT-credit invoices before reducing the liability."
-
-### Refusal Catalogue
-
-- **R-BO-1 -- Employment status unknown** — RC-IVA is computed differently for dependent employees (employer withholds monthly, no annual return) versus self-employed / independent professionals (quarterly Form 610). This skill cannot proceed without knowing the client's status. Please confirm.
-- **R-BO-2 -- Corporate income tax (IUE) requested** — This skill covers personal income tax (RC-IVA) for individuals and independent professionals only. Corporate profits tax (IUE, 25%) for companies is a separate regime. Escalate to a Bolivian-licensed accountant.
-- **R-BO-3 -- VAT (IVA) or transactions tax (IT) return requested** — This skill covers RC-IVA only. The 13% IVA and 3% IT on services are separate returns. Independent professionals owe all three -- flag for a Bolivian accountant to handle IVA and IT.
-- **R-BO-4 -- IGF wealth tax with uncertain status** — The Impuesto a las Grandes Fortunas (Ley 1357) is reported to have been eliminated by the new government in late 2025, but no authoritative repeal instrument could be confirmed. Do not compute or advise on IGF. Escalate to a Bolivian-licensed accountant to confirm current law. [RESEARCH GAP]
-- **R-BO-5 -- Mining / hydrocarbons / special regimes** — Sector-specific surtaxes (mining royalties, hydrocarbons, regimen agropecuario, regimen simplificado) are out of scope. Escalate to a Bolivian-licensed accountant.
-- **R-BO-6 -- Tax arrears / SIN enforcement** — Client has outstanding RC-IVA arrears or is subject to SIN enforcement. Value-maintenance (UFV) updates, interest, and omission penalties (up to 100% of omitted tax) under Codigo Tributario Ley 2492 are severe. Do not advise. Escalate to a Bolivian-licensed accountant immediately.
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-How to read this table. Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Descriptions are commonly in Spanish. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits / Abonos on Bank Statement)
-
-**Income Patterns table**
-
-| Pattern | RC-IVA Treatment | Notes |
-| --- | --- | --- |
-| HONORARIOS, FACTURA, PAGO SERVICIOS, CONSULTORIA | Bolivian-source income | Professional fees -- independent professional income (Form 610 base) |
-| TRANSFERENCIA, ABONO, DEPOSITO + client name | Bolivian-source income | Business income -- match to facturas issued |
-| SUELDO, SALARIO, HABER, PLANILLA, REMUNERACION | Employment income | Employer withholds RC-IVA -- NOT self-employed base |
-| AGUINALDO, DOBLE AGUINALDO | EXCLUDE from RC-IVA | Christmas bonus -- statutorily excluded from RC-IVA income |
-| ALQUILER COBRADO, RENTA INMUEBLE | Bolivian-source income (capital) | Rental income -- RC-IVA applies to capital income too |
-| INTERESES GANADOS, RENDIMIENTO | Bolivian-source income (capital) | Interest income -- Bolivian-source only |
-| DIVIDENDOS, REPARTO UTILIDADES (from BO company) | EXCLUDE | Dividends from Bolivian companies to residents are NOT subject to RC-IVA |
-| DEVOLUCION IMPUESTOS, REINTEGRO SIN, RE-IVA | EXCLUDE | Tax refund / RE-IVA refund -- not income |
-| BONO GOBIERNO, SUBSIDIO | Check nature | Capital grants EXCLUDE; revenue subsidies may be income -- flag |
-| STRIPE PAYOUT, PAYPAL, WISE, MERCADO PAGO | Bolivian-source income if BO services | Platform payout -- match to underlying facturas; confirm source |
-
-### 3.2 Statutory Deductions (Debits) -- Reduce RC-IVA Base / Liability
-
-**Statutory Deductions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GESTORA, APORTE AFP, JUBILACION, PENSIONES | Deduct from gross before RC-IVA base | Part of the 12.71% employee social security |
-| CAJA DE SALUD, SEGURO SALUD | Employer cost (10%) | NOT an employee deduction from RC-IVA base |
-| RIESGO COMUN, COMISION GESTORA, APORTE SOLIDARIO | Deduct from gross before RC-IVA base | Components of the 12.71% employee total |
-| FACTURA COMPRA, NOTA FISCAL (with NIT) | 13% VAT credit -> Form 110 | Offsets RC-IVA liability; 13% of invoice value is the credit |
-
-### 3.3 Expense Patterns (Debits / Cargos) -- Business Costs for Independent Professionals
-
-For independent professionals, RC-IVA is charged on income; business costs are NOT a direct RC-IVA deduction the way they are in an income-tax-on-profit system. The principal offset is the 13% VAT credit from facturas (Form 110). Treat the patterns below as VAT-credit-bearing purchases, not profit deductions.
-
-**Expense Patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| ALQUILER OFICINA, RENTA LOCAL | Office rent | Factura -> 13% VAT credit (Form 110) | Must have valid nota fiscal |
-| SERVICIOS PROFESIONALES, CONTADOR, ABOGADO | Professional services | Factura -> 13% VAT credit | Business-related only |
-| UTILES, PAPELERIA, LIBRERIA | Office supplies | Factura -> 13% VAT credit |  |
-| PUBLICIDAD, GOOGLE ADS, META ADS, MARKETING | Marketing | Factura -> 13% VAT credit | Foreign invoices may not bear Bolivian VAT -- no credit |
-| SOFTWARE, SUSCRIPCION, LICENCIA | Software | Factura -> 13% VAT credit if Bolivian nota fiscal | Foreign SaaS -- usually no Bolivian VAT credit |
-
-### 3.4 Utilities (Debits)
-
-**Utilities table**
-
-| Pattern | Category | Notes |
-| --- | --- | --- |
-| ELECTRICIDAD, LUZ, CRE, ELECTROPAZ, ENDE | Electricity | Factura -> 13% VAT credit if business use; apportion if home |
-| AGUA, SAGUAPAC, EPSAS | Water | Factura -> 13% VAT credit if business use |
-| ENTEL, TIGO, VIVA, INTERNET | Telecoms | Business-use portion; default 0% if mixed |
-
-### 3.5 NOT Deductible / No Credit
-
-**Not Deductible table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MULTA, SANCION, INFRACCION | NOT deductible / no credit | Fines and penalties |
-| GASTO PERSONAL, SUPERMERCADO, HIPERMAXI, FIDALGA | Personal -- no business credit | Private living costs (unless RE-IVA refund applies for low earners) |
-| PAGO IMPUESTOS, SIN, RC-IVA, IVA, IT | EXCLUDE | Tax payments are not expenses |
-| RETIRO, CAJERO, ATM (personal) | EXCLUDE | Drawings / cash withdrawal |
-
-### 3.6 Exclusions (Neither Income nor Expense)
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA PROPIA, CUENTA PROPIA, ENTRE CUENTAS | EXCLUDE | Own-account transfer |
-| PRESTAMO, CREDITO, AMORTIZACION CAPITAL | EXCLUDE | Loan principal movement |
-| PAGO BENEFICIARIO EXTERIOR, REMESA EXTERIOR | IUE-BE withholding (12.5%) | Payment to non-resident -- withholding obligation (Form 530) |
-| AGUINALDO | EXCLUDE from RC-IVA | Statutorily excluded |
-
-### 3.7 Bolivian Banks -- Statement Format Reference
-
-**Bolivian Banks table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Banco Nacional de Bolivia (BNB) | TRANSFERENCIA, ABONO, CARGO, COMISION | PDF/CSV; date format DD/MM/YYYY |
-| Banco Mercantil Santa Cruz (BMSC) | DEPOSITO, DEBITO, PAGO | PDF; counterparty in glosa field |
-| Banco Union | TRANSFERENCIA, ABONO, CARGO | State bank; PDF common |
-| Banco BISA | TRANSFERENCIA, PAGO QR, COMISION | CSV available |
-| Banco de Credito (BCP) | ABONO, CARGO, COMISION | PDF/CSV |
-
-## Section 4 -- Worked Examples
-
-All examples use the 2025 figures: SMN = Bs 2,750; non-taxable minimum 2 SMN = Bs 5,500/month; presumed credit Bs 357.50/month; employee social security 12.71%. RC-IVA flat rate 13%.
-
-### Example 1 -- Employee, mid income, NO facturas
-
-Input line:
-`30/04/2025 ; BNB ; PLANILLA SUELDO ABRIL ; EMPRESA XYZ SRL ; +12,000.00 ; Bs`
-
-Reasoning:
-Gross monthly Bs 12,000. Deduct employee social security 12.71% = Bs 1,525.20. Net = Bs 10,474.80. Deduct non-taxable minimum 2 SMN = Bs 5,500. RC-IVA base = Bs 4,974.80. Gross 13% liability = Bs 646.72. Offset by presumed credit Bs 357.50 (no facturas presented). RC-IVA payable = Bs 289.22. (Source: rigobertoparedes.com/en/bolivia-2025-salary-increase.)
-
-Classification: RC-IVA withheld by employer = Bs 289.22. Net pay = 12,000 - 1,525.20 - 289.22 = Bs 10,185.58. No annual return required from employee.
-
-### Example 2 -- Employee, same income, WITH facturas on Form 110
-
-Input line:
-`Same Bs 12,000 salary, plus Bs 3,000 of valid facturas presented on Form 110`
-
-Reasoning:
-Liability before credits = Bs 646.72 (as Example 1). Presumed credit Bs 357.50 + invoice credit (13% x 3,000 = Bs 390.00) = total credit Bs 747.50. Credit exceeds the Bs 646.72 liability, so RC-IVA payable = Bs 0. Excess credit (Bs 100.78) carries forward to future periods; it is NOT refunded in cash. (Source: SIN, siatinfo.impuestos.gob.bo/.../rc-iva.)
-
-Classification: RC-IVA withheld = Bs 0. Surplus credit Bs 100.78 carried forward.
-
-### Example 3 -- Employee below the bite threshold
-
-Input line:
-`30/04/2025 ; BMSC ; SUELDO ; +6,000.00 ; Bs`
-
-Reasoning:
-Gross Bs 6,000. Less 12.71% SS = Bs 762.60. Net = Bs 5,237.40. Less 2 SMN (Bs 5,500) = negative (Bs -262.60). RC-IVA base is nil. No RC-IVA due. This is consistent with the practical bite at approx Bs 9,451 gross. (Source: rigobertoparedes.com/en/bolivia-2025-salary-increase.)
-
-Classification: RC-IVA = Bs 0.
-
-### Example 4 -- Independent professional, quarterly Form 610
-
-Input line:
-`Quarter Q2 2025 (Apr-Jun): total honorarios billed Bs 60,000; no facturas presented`
-
-Reasoning:
-Direct contributors deduct 2 SMN per month over the quarter = 2 x 2,750 x 3 = Bs 16,500. RC-IVA base = 60,000 - 16,500 = Bs 43,500. Gross 13% = Bs 5,655.00. Presumed credit = 13% of 1 SMN x 3 months = 357.50 x 3 = Bs 1,072.50. RC-IVA payable before facturas = Bs 4,582.50, due on Form 610 by 20 July 2025. (Source: SIN Form 610, siatinfo.impuestos.gob.bo.) Note: the independent professional ALSO owes IVA 13% and IT 3% on the services billed -- out of scope here, flag for the IVA/IT skill. (Source: Ferrere, ferrere.com.)
-
-Classification: Form 610 RC-IVA payable = Bs 4,582.50 (before any factura credits).
-
-[RESEARCH GAP -- reviewer to confirm.] The exact statutory deduction allowed to direct contributors (whether 2 SMN per month, a single 2 SMN, or another figure) for the Form 610 base should be confirmed against the DS 21531 reglamento and current SIN guidance. The figure used here mirrors the employee monthly mechanism.
-
-### Example 5 -- Payment to a non-resident (IUE-BE)
-
-Input line:
-`15/05/2025 ; BCP ; REMESA EXTERIOR ; CONSULTOR USA ; -10,000.00 ; Bs`
-
-Reasoning:
-Payment to a non-domiciled beneficiary for services. IUE-BE under Ley 843 art. 51 presumes 50% net taxable profit, taxed at 25% = effective 12.5% of the gross remitted. 10,000 x 12.5% = Bs 1,250 withholding, declared on Form 530 in the month following remittance (per NIT calendar). (Source: impuestos.com.bo/iue-be.)
-
-Classification: IUE-BE withholding = Bs 1,250.00 (Form 530). Confirm whether a tax treaty reduces this.
-
-### Example 6 -- Aguinaldo (excluded)
-
-Input line:
-`20/12/2025 ; BNB ; AGUINALDO NAVIDAD ; +12,000.00 ; Bs`
-
-Reasoning:
-The Christmas bonus (aguinaldo) is mandatory (one month's salary) and is statutorily excluded from RC-IVA taxable income. (Source: PwC, income-determination.)
-
-Classification: EXCLUDE from RC-IVA. No 13% applies.
-
-### Example 7 -- Dividend from a Bolivian company (excluded)
-
-Input line:
-`28/03/2025 ; BISA ; DIVIDENDOS SA BOLIVIANA ; +20,000.00 ; Bs`
-
-Reasoning:
-Dividends paid by a Bolivian company to a resident individual are NOT subject to RC-IVA. (Source: PwC, income-determination.)
-
-Classification: EXCLUDE from RC-IVA.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 RC-IVA Is a Flat 13%
-
-- **RC-IVA flat 13% rule** — RC-IVA is a flat 13% on Bolivian-source income from labour and capital. There are no progressive brackets.  _(Ley 843, Titulo II, arts. 19-36; PwC, taxes-on-personal-income)_
-
-### 5.2 Territorial Taxation
-
-- **Territorial taxation rule** — Individuals are taxed only on Bolivian-source income, regardless of residency or citizenship. Foreign-source income is not subject to RC-IVA.  _(PwC, taxes-on-personal-income)_
-
-### 5.3 Employee RC-IVA Mechanism
-
-- **Monthly computation steps** — 1. Start with gross monthly remuneration (excluding aguinaldo). 2. Deduct employee social security contributions (standard 12.71%). 3. Deduct the non-taxable minimum: 2 SMN = Bs 5,500/month (2025). 4. Apply 13% to the resulting base. 5. Offset against (a) the presumed VAT credit Bs 357.50/month (13% of 1 SMN, 2025) and (b) 13% of valid facturas presented on Form 110. 6. Any residual is RC-IVA withheld by the employer. Excess credit carries forward; it is not refunded.  _(rigobertoparedes.com/en/bolivia-2025-salary-increase; SIN RC-IVA page)_
-- **No annual return for employees** — Employees do NOT file an annual RC-IVA return. The employer (withholding agent) files a monthly consolidated return; the employee only interacts via Form 110 (invoice detail) given to the employer.  _(PwC, tax-administration)_
-
-### 5.4 The 2025 Change (DS 5383)
-
-- **Presumed credit cut 2025** — The presumed VAT credit was cut from 13% of 2 SMN (Bs 715) to 13% of 1 SMN (Bs 357.50/month), raising effective RC-IVA for employees who do not submit facturas; the practical withholding now bites at approx Bs 9,451/month gross.  _(rigobertoparedes.com/en/bolivia-2025-salary-increase)_
-
-### 5.5 Independent Professionals -> RC-IVA (not IUE)
-
-- **Independent professionals moved to RC-IVA** — Independent professionals were moved from IUE (25%) to RC-IVA (13%). They file RC-IVA quarterly on Form 610 and also pay IVA 13% and IT 3% on services.  _(Ferrere, ferrere.com; Ley 1448 (2021) + DS 4850, effective 1 Jan 2023)_
-
-### 5.6 Self-Employed / Direct Contributor Filing
-
-- **Quarterly filing deadlines** — Direct contributors (contribuyentes directos) file RC-IVA quarterly on Form 610 within 20 days after quarter-end: Q1 by 20 Apr, Q2 by 20 Jul, Q3 by 20 Oct, Q4 by 20 Jan. Form 110 (factura detail) is attached to claim the 13% credit.  _(SIN Form 610, siatinfo.impuestos.gob.bo)_
-
-### 5.7 Social Security Contributions (2025)
-
-**Standard employee contribution table**  _(planifica.com.bo)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Cuenta individual de vejez (pension) | 10% | planifica.com.bo |
-| Prima por Riesgo Comun | 1.71% | rigobertoparedes.com/es |
-| Comision Gestora Publica | 0.5% | rigobertoparedes.com/es |
-| Aporte Solidario del Asegurado | 0.5% | planifica.com.bo |
-| **Total employee (standard)** | **12.71%** | planifica.com.bo |
-
-Arithmetic check: 10 + 1.71 + 0.5 + 0.5 = 12.71%. ✓
-
-**Aporte Nacional Solidario table**  _(rigobertoparedes.com/es)_
-
-| Income band (Bs) | Additional rate on the excess in band | Source |
-| --- | --- | --- |
-| portion above 13,000 | +1% | rigobertoparedes.com/es |
-| portion above 25,000 | +5% | rigobertoparedes.com/es |
-| portion above 35,000 | +10% | rigobertoparedes.com/es |
-
-- **Solidarity bands applied to excess** — These are applied to the excess in each band, in addition to the 12.71%.  _(rigobertoparedes.com/es; brackets per Ley 065)_
-
-[RESEARCH GAP -- reviewer to confirm.] Ley 1582 (2024) revised the solidarity-fund parameters; one source cites an effective recalculated burden of ~1.15% / 5.74% / 11.48%. The precise current statutory percentages should be confirmed against the consolidated Ley 065 text. A pension-contribution salary ceiling (commonly cited as 60 SMN) could not be confirmed from an authoritative source -- confirm whether a ceiling applies.
-
-**Employer social security table**  _(planifica.com.bo)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Caja de Salud (health insurance) | 10% | planifica.com.bo |
-| Riesgo Profesional | 1.71% | planifica.com.bo |
-| Pro-Vivienda (housing fund) | 2% | planifica.com.bo |
-| Aporte Patronal Solidario | 3% (raised to 3.5% under Ley 1582 per some sources) | economiayfinanzas.gob.bo |
-| **Total employer (at 3%)** | **16.71%** | planifica.com.bo |
-| **Total employer (at 3.5%)** | **17.21%** | economiayfinanzas.gob.bo |
-
-Arithmetic check: 10 + 1.71 + 2 + 3 = 16.71%; with 3.5% solidarity = 17.21%. ✓
-
-[RESEARCH GAP -- reviewer to confirm.] The Aporte Patronal Solidario rate (3% vs 3.5% under Ley 1582; mining employer solidarity 2% vs 2.3%) should be confirmed against the consolidated statute.
-
-### 5.8 Minimum Wage and Salary Increase (2025)
-
-- **Minimum wage 2025** — National minimum wage (SMN) for 2025 = Bs 2,750/month, +10% over 2024's Bs 2,500, retroactive to 1 Jan 2025 (art. 7). General private-sector salary increase up to 5% on the basico.  _(DS 5383 (1 May 2025); lexivox.org/norms/BO-DS-N5383)_
-
-### 5.9 Capital Gains and Dividends
-
-- **Capital gains and dividends treatment** — Capital gains are not subject to a separate capital gains tax for individuals. Dividends paid by Bolivian companies to resident individuals are NOT subject to RC-IVA.  _(PwC, income-determination)_
-
-### 5.10 Non-Resident Withholding (IUE-BE)
-
-- **IUE-BE effective rate** — 12.5% of the gross remitted (50% presumed net profit x 25%), declared on Form 530 in the month following the remittance per the NIT calendar  _(Ley 843, art. 51; impuestos.com.bo/iue-be)_
-
-### 5.11 Non-Resident Employees of Foreign Employers
-
-- **Non-resident employee filing obligation** — Non-resident employees with foreign employers must declare and pay RC-IVA monthly or on departure from Bolivia, whichever is first.  _(PwC, taxes-on-personal-income)_
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 IGF Wealth Tax Applicability and Status
-
-- **IGF applicability and status** — Threshold: net wealth over Bs 30,000,000 at 31 Dec; 1.4% / 1.9% / 2.4% bands; reaches residents' worldwide assets and non-residents' Bolivian assets. Status uncertain -- reportedly eliminated by the Paz government in late 2025 (El Pais, 25 Nov 2025), but no authoritative repeal instrument confirmed. Conservative default: do NOT compute. Flag for reviewer to confirm both applicability (net wealth > Bs 30M) and current legal status. [RESEARCH GAP]  _(impuestos.com.bo/igf; Ley 1357)_
-
-### 6.2 Source of Income (Bolivian vs Foreign)
-
-- **Source of income determination** — RC-IVA reaches only Bolivian-source income. Platform payouts (Stripe, PayPal, Wise) and cross-border fees require a source determination. Conservative default: treat ambiguous income as Bolivian-source until reviewer confirms; flag foreign-source items for exclusion.
-
-### 6.3 Factura Validity for VAT Credit
-
-- **Factura validity requirements** — The 13% VAT credit requires a valid nota fiscal (factura) with the correct NIT, date within the period, and a business purpose. Foreign invoices generally bear no Bolivian VAT and yield no credit. Conservative default: exclude any invoice lacking a valid Bolivian nota fiscal. Flag for reviewer.
-
-### 6.4 Mixed-Use Utilities (Home Office)
-
-- **Mixed-use utilities apportionment** — Electricity, water, telecoms used partly for business: only the business-use portion bears a credit. Conservative default: 0% until reviewer confirms apportionment basis.
-
-### 6.5 Aporte Nacional Solidario Bands
-
-- **Solidario bands default** — For gross above Bs 13,000, the progressive solidarity contributions apply. Conservative default: apply only standard 12.71% unless gross clearly exceeds Bs 13,000; flag the solidarity computation for reviewer given the [RESEARCH GAP] on current rates.
-
-### 6.6 Treaty Relief on IUE-BE
-
-- **Treaty relief default** — A tax treaty may reduce the 12.5% non-resident withholding. Conservative default: apply 12.5%; flag for reviewer to check treaty eligibility.
-
-### 6.7 RE-IVA Refund Eligibility (Low Earners)
-
-- **RE-IVA refund eligibility** — Individuals earning up to Bs 9,000/month may claim a 5%-of-invoices refund under Ley 1355. Conservative default: flag eligibility for reviewer; do not auto-claim.  _(PwC, significant-developments)_
-
-## Section 7 -- Excel Working Paper Template
-
-BOLIVIA RC-IVA -- WORKING PAPER
-Tax Year: 2025   (SMN = Bs 2,750; 2 SMN = Bs 5,500; presumed credit = Bs 357.50)
-Client: ___________________________
-Status: Employee / Independent professional / Direct contributor
-NIT: ___________   NIT last digit (filing calendar): ____
-
-A. EMPLOYEE MONTHLY RC-IVA (repeat per month)
-  A1. Gross remuneration (excl. aguinaldo)        ___________
-  A2. Less employee social security (12.71%)      ___________
-  A3. Net after SS (A1 - A2)                       ___________
-  A4. Less non-taxable minimum (2 SMN = 5,500)    ___________
-  A5. RC-IVA base (A3 - A4, floor at 0)            ___________
-  A6. Gross 13% liability (A5 x 13%)               ___________
-  A7. Less presumed credit (357.50)                ___________
-  A8. Less 13% of facturas (Form 110)              ___________
-  A9. RC-IVA withheld (A6 - A7 - A8, floor 0)      ___________
-  A10. Credit carried forward (if negative A9)     ___________
-
-B. INDEPENDENT / DIRECT CONTRIBUTOR QUARTERLY (Form 610)
-  B1. Total honorarios billed (quarter)            ___________
-  B2. Less 2 SMN x 3 months (16,500)  [GAP]        ___________
-  B3. RC-IVA base (B1 - B2)                         ___________
-  B4. Gross 13% liability (B3 x 13%)               ___________
-  B5. Less presumed credit (357.50 x 3 = 1,072.50) ___________
-  B6. Less 13% of facturas (Form 110)              ___________
-  B7. RC-IVA payable on Form 610 (B4-B5-B6, floor 0)__________
-
-C. NON-RESIDENT PAYMENTS (Form 530)
-  C1. Gross remitted to non-resident               ___________
-  C2. IUE-BE withholding (12.5%)                   ___________
-
-D. IGF WEALTH TAX -- DO NOT COMPUTE unless > Bs 30M AND status confirmed [GAP]
-  D1. Net wealth at 31 Dec                          ___________
-  D2. IGF (1.4% / 1.9% / 2.4%)  [REVIEWER ONLY]    ___________
-
-REVIEWER FLAGS:
-  [ ] Employment status confirmed?
-  [ ] Facturas (Form 110) validity checked?
-  [ ] Aguinaldo excluded from base?
-  [ ] Source of income (Bolivian vs foreign) confirmed?
-  [ ] Aporte Nacional Solidario rates confirmed? [GAP]
-  [ ] Form 610 direct-contributor deduction confirmed? [GAP]
-  [ ] IGF status confirmed (Ley 1357 repeal)? [GAP]
-  [ ] IUE-BE treaty relief checked?
-  [ ] IVA 13% and IT 3% handled separately (independents)?
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Bolivian Bank Statement Formats
-
-**Bank statement formats table**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Banco Nacional de Bolivia (BNB) | PDF, CSV | Fecha, Glosa/Descripcion, Debito, Credito, Saldo | Glosa contains counterparty + reference |
-| Banco Mercantil Santa Cruz (BMSC) | PDF | Fecha, Concepto, Cargo, Abono, Saldo | Shorter descriptions |
-| Banco Union | PDF | Fecha, Detalle, Debito, Credito | State bank |
-| Banco BISA | PDF, CSV | Fecha, Glosa, Monto, Saldo | QR payments common |
-| Banco de Credito (BCP) | PDF, CSV | Fecha, Descripcion, Cargo, Abono |  |
-
-### Key Bolivian Banking / Tax Terms
-
-**Key terms table**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| ABONO / DEPOSITO | Credit / deposit | Potential income |
-| CARGO / DEBITO | Debit | Expense -- check counterparty |
-| TRANSFERENCIA | Transfer | Check direction and own-account |
-| GLOSA / CONCEPTO | Description / memo | Counterparty detail |
-| HONORARIOS | Professional fees | RC-IVA income (independents) |
-| SUELDO / HABER / PLANILLA | Salary / payroll | Employment -- employer withholds |
-| AGUINALDO | Christmas bonus | EXCLUDE from RC-IVA |
-| FACTURA / NOTA FISCAL | Tax invoice | 13% VAT credit (Form 110) |
-| NIT | Tax ID number | Needed for filing calendar |
-| GESTORA / AFP | Pension fund | Social security deduction |
-| CAJA DE SALUD | Health insurance fund | Employer cost (10%) |
-| RETENCION | Withholding | RC-IVA / IUE-BE withheld |
-| REMESA / BENEFICIARIO EXTERIOR | Remittance abroad / non-resident | IUE-BE 12.5% (Form 530) |
-| COMISION | Commission / bank charge | Bank charge |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDIENTE -- reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
-
-ONBOARDING QUESTIONS -- BOLIVIA RC-IVA
-1. Status: dependent employee, independent professional, or direct contributor?
-2. If employee: gross monthly salary, and does the employer withhold RC-IVA?
-3. Do you present facturas (notas fiscales) on Form 110 to offset RC-IVA? Roughly how much per month?
-4. Do you have your NIT and know its last digit (for the filing calendar)?
-5. Any income from rent, interest, or Bolivian-source capital?
-6. Any payments to non-residents (consultants, suppliers abroad)?
-7. Is any of your income foreign-source (paid for services performed outside Bolivia)?
-8. Is your gross monthly income above Bs 13,000 (for the solidarity contribution)?
-9. Net wealth above Bs 30,000,000? (IGF -- status uncertain, reviewer to confirm)
-10. Do you also need IVA (13%) and IT (3%) returns handled (independents)?
-
-## Section 10 -- Reference Material
-
-### Key Legislation References
-
-**Legislation references table**
-
-| Topic | Reference |
-| --- | --- |
-| RC-IVA (personal income tax) | Ley 843, Titulo II, arts. 19-36; reglamento DS 21531 |
-| Independent professionals -> RC-IVA | Ley 1448 (2021) + DS 4850 (from 1 Jan 2023) |
-| Social security / pensions | Ley 065 de Pensiones (2010), modified by Ley 1582 (2024) |
-| Minimum wage 2025 | DS 5383 (1 May 2025), art. 7 |
-| Non-resident withholding (IUE-BE) | Ley 843, art. 51 |
-| Wealth tax (IGF) | Ley 1357 (2020) -- status uncertain [GAP] |
-| Penalties | Codigo Tributario, Ley 2492 |
-
-### Forms
-
-**Forms table**
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| Formulario 610 (RC-IVA Contribuyentes Directos) | Quarterly RC-IVA for self-employed / independent professionals / rental & investment income | Within 20 days after quarter-end: 20 Apr / 20 Jul / 20 Oct / 20 Jan | siatinfo.impuestos.gob.bo (610) |
-| Formulario 110 | Detail of purchase facturas supporting the 13% VAT credit; attached to Form 610 (direct) or given to employer (dependents) | With the corresponding RC-IVA period | siatinfo.impuestos.gob.bo (rc-iva) |
-| Formulario 608 / consolidado RC-IVA (Agentes de Retencion) | Monthly consolidated RC-IVA filed by employers (withholding agents) | Monthly, per NIT last-digit calendar | PwC, tax-administration |
-| Formulario 530 (IUE-BE) | Withholding on payments/remittances to non-domiciled beneficiaries | Per NIT last-digit monthly calendar of the month following remittance | siatinfo.impuestos.gob.bo (530) |
-
-[RESEARCH GAP -- reviewer to confirm.] The monthly employer RC-IVA consolidated return form number (cited as ~608/consolidado) should be confirmed against the current SIAT form catalog.
-
-### Penalties
-
-**Penalties table**
-
-| Type | Detail | Source |
-| --- | --- | --- |
-| Late RC-IVA payment | Tax updated for inflation (mantenimiento de valor / UFV), plus interest and a penalty surcharge (multa por incumplimiento) per Codigo Tributario Ley 2492; omission penalty generally 100% of the omitted tax | siatinfo.impuestos.gob.bo (rc-iva) |
-
-Penalty figures are general (Codigo Tributario Ley 2492) and not RC-IVA-specific. [RESEARCH GAP -- reviewer to confirm specific RC-IVA penalty schedule.]
-
-### Primary Sources
-
-**Primary Sources table**
-
-| Title | URL | Publisher |
-| --- | --- | --- |
-| Bolivia - Individual - Taxes on personal income | https://taxsummaries.pwc.com/bolivia/individual/taxes-on-personal-income | PwC Worldwide Tax Summaries (reviewed 26 Mar 2026) |
-| Bolivia - Individual - Deductions | https://taxsummaries.pwc.com/bolivia/individual/deductions | PwC |
-| Bolivia - Individual - Tax administration | https://taxsummaries.pwc.com/bolivia/individual/tax-administration | PwC |
-| Bolivia - Individual - Income determination | https://taxsummaries.pwc.com/bolivia/individual/income-determination | PwC |
-| Bolivia - Individual - Significant developments (wealth tax, RE-IVA) | https://taxsummaries.pwc.com/bolivia/individual/significant-developments | PwC |
-| RC-IVA -- SIAT (official tax authority) | https://siatinfo.impuestos.gob.bo/index.php/impuesto-asunto/rc-iva | Servicio de Impuestos Nacionales (SIN) |
-| 610 - RC-IVA - Contribuyente Directo | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/regimen-complementario-al-iva/610-regimen-complementario-del-iva-contribuyente-directo | SIN |
-| Decreto Supremo N 5383 (1 May 2025) | https://www.lexivox.org/norms/BO-DS-N5383.html | Gaceta Oficial / LexiVox |
-| Bolivia 2025 salary increase: impact on RC-IVA | https://www.rigobertoparedes.com/en/bolivia-2025-salary-increase/ | Rigoberto Paredes & Asociados |
-| Aportes a la Gestora y Caja de Salud | https://www.planifica.com.bo/aportes-afp-caja-salud-bolivia-guia-empleado-empleador/ | Planifica Consultores |
-| Aportes e impuestos al trabajador en Bolivia | https://www.rigobertoparedes.com/es/aportes-e-impuestos-al-trabajador-en-bolivia/ | Rigoberto Paredes & Asociados |
-| Profesionales independientes incluidos en RC-IVA (Ley 1448 / DS 4850) | https://www.ferrere.com/es/novedades/profesionales-independientes-son-incluidos-en-el-regimen-rc-iva/ | Ferrere Abogados |
-| IUE-BE -- Beneficiarios del exterior | https://impuestos.com.bo/iue-be-impuestos-sobre-las-utilidades-beneficiarios-del-exterior/ | Impuestos de Bolivia |
-| Impuesto a las Grandes Fortunas (Ley 1357) | https://impuestos.com.bo/impuesto-a-las-grandes-fortunas-ley-1357/ | Impuestos de Bolivia |
-| Que es el IGF y quien lo paga(ba) -- IGF elimination | https://elpais.bo/nacional/20251125_que-es-el-impuesto-a-las-grandes-fortunas-y-quien-lo-paga-ba.html | El Pais (Bolivia) |
-| Ley 1582 incrementa limites solidarios | https://www.economiayfinanzas.gob.bo/node/11448 | Ministerio de Economia y Finanzas Publicas (MEFP) |
-
-### Test Suite
-
-Test 1 -- Employee, mid income, no facturas.
-Input: gross Bs 12,000/month, 12.71% SS, no facturas.
-Expected: SS = Bs 1,525.20; net = Bs 10,474.80; less 2 SMN (5,500) = base Bs 4,974.80; 13% = Bs 646.72; less presumed credit Bs 357.50; RC-IVA = Bs 289.22; net pay = Bs 10,185.58.
-
-Test 2 -- Employee with facturas.
-Input: same Bs 12,000 plus Bs 3,000 facturas on Form 110.
-Expected: liability Bs 646.72; credit = 357.50 + (13% x 3,000 = 390.00) = Bs 747.50; RC-IVA = Bs 0; carry-forward credit Bs 100.78 (not refunded).
-
-Test 3 -- Employee below bite threshold.
-Input: gross Bs 6,000.
-Expected: SS Bs 762.60; net Bs 5,237.40; less 2 SMN (5,500) = negative; base nil; RC-IVA = Bs 0.
-
-Test 4 -- Independent professional quarterly.
-Input: Q2 honorarios Bs 60,000, no facturas.
-Expected: less 2 SMN x 3 (16,500) = base Bs 43,500; 13% = Bs 5,655.00; less presumed credit 357.50 x 3 = Bs 1,072.50; Form 610 payable = Bs 4,582.50 by 20 Jul 2025. (Form 610 direct-contributor deduction flagged [GAP].)
-
-Test 5 -- Non-resident payment (IUE-BE).
-Input: Bs 10,000 remitted to a non-resident consultant.
-Expected: IUE-BE = 12.5% x 10,000 = Bs 1,250.00 (Form 530).
-
-Test 6 -- Aguinaldo excluded.
-Input: aguinaldo Bs 12,000 received.
-Expected: EXCLUDE from RC-IVA. Bs 0 tax.
-
-Test 7 -- IGF (high net wealth, status caveat).
-Input: net wealth Bs 45,000,000 at 31 Dec.
-Expected (IF Ley 1357 still in force -- [GAP]): band 30-40M (Bs 10M x 1.4% = Bs 140,000) + band 40-45M (Bs 5M x 1.9% = Bs 95,000) = Bs 235,000. Do NOT file until repeal status confirmed.
-
-Test 8 -- Dividend from Bolivian company.
-Input: Bs 20,000 dividend from a Bolivian SA.
-Expected: NOT subject to RC-IVA. Bs 0 tax.
-
-## PROHIBITIONS
-
-- NEVER apply RC-IVA without confirming employment status (employee vs independent/direct contributor)
-- NEVER treat independent professionals under IUE (25%) -- they are under RC-IVA (13%) from 1 Jan 2023
-- NEVER compute IGF wealth tax without confirming both net wealth > Bs 30M AND that Ley 1357 is still in force [GAP]
-- NEVER include aguinaldo in the RC-IVA base
-- NEVER treat dividends from Bolivian companies to residents as RC-IVA income
-- NEVER tax foreign-source income under RC-IVA -- Bolivia is territorial
-- NEVER reduce RC-IVA below zero into a cash refund -- excess factura credit carries forward
-- NEVER use the old presumed credit of Bs 715 for 2025 -- it was cut to Bs 357.50 by DS 5383
-- NEVER omit the IUE-BE 12.5% withholding on payments to non-residents
-- NEVER present tax calculations as definitive -- always label as estimated and pending professional review
-- NEVER rely on a [RESEARCH GAP] figure for filing without a Bolivian-licensed accountant's confirmation
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| RC-IVA rate on taxable income (Ley 843 art. 30) | 13% | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
+| National minimum wage, public and private sectors, retroactive to 1 January 2026 (DS 5516 art. 23) | Bs 3,300 a month | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281033 |
+| Employees: non-taxable minimum, two SMN a month (art. 26 I; DS 21531 art. 8 a), only for employment income (DS 21531 art. 6) | Bs 6,600 a month | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
+| Employees: presumed credit, 13% of one SMN (DS 21531 art. 8 c 2, text of DS 5383) | Bs 429 a month | 2026 | same |
+| Independents and landlords: presumed credit, 13% of two SMN for each month (DS 21531 art. 9 c 2) | Bs 858 a month; Bs 2,574 a quarter | 2026 | same |
+| Credit for purchase invoices (DS 21531 arts. 8 and 9): 13% of invoices in the person's name, no more than 120 days old (before delivery to the employer, or before the quarter's end for independents) | 13% of the invoice amount | 2026 | same |
+| Independents: income from IVA-taxed operations is the month's total sales less the 13% IVA in them (DS 21531 art. 9 a) | Sales less 13% | 2026 | same |
+| Anticresis (antichretic) contracts: presumed income (art. 27; DS 21531 art. 7) | 10% a year of the contract amount, one twelfth a month | 2026 | same |
+| Withholding on payments by legal persons to individuals without an invoice, for rent, directors' fees, habitual income, independent work or non-domiciled work (DS 21531 art. 11) | 13% of the full amount, final | 2026 | same |
+| Withholding on interest paid to individuals who do not show a NIT (DS 21531 art. 12) | 13% of the full amount | 2026 | same |
+| Re-IVA cash refund for individuals with average monthly income up to Bs 9,000, on electronically issued purchase invoices (Ley 1355 arts. 2 and 3) | Up to 5% of the price | 2026 | same |
+| IGF wealth tax threshold: net fortune at 31 December (Ley 1357 art. 5) | Above Bs 30,000,000 | 2026 | same |
+| IGF rates on the whole base, less a fixed discount (Ley 1357 art. 9) | Bs 30,000,001 to 40,000,000: 1.4% less Bs 150,000; Bs 40,000,001 to 50,000,000: 1.9% less Bs 350,000; above Bs 50,000,000: 2.4% less Bs 600,000 | 2026 | same |
+| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| IGF omission of payment (Ley 1357 art. 15) | 200% of the omitted tax | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
+| Late interest, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
+
+## The base
+
+**Employees** (art. 25; DS 21531 arts. 5 and 8). The employer computes the tax for each employee every month:
+
+1. Start from all pay of the month (art. 19 d), excluding the items listed as not taxed (aguinaldo, severance, subsidies).
+2. Deduct the employee's social-security contributions and other contributions required by social laws (art. 25; DS 21531 art. 5). The rates are in [bolivia-social-contributions](bolivia-social-contributions.md); take the amount from the payslip.
+3. Deduct the non-taxable minimum of two SMN, Bs 6,600 in 2026. If the deductions exceed the pay, the base is zero.
+4. Apply 13%.
+5. Credit, in this order: 13% of the invoices the employee hands to the employer on Form 110 by the 20th of the month (in the employee's name, signed, at most 120 days old, ICE excluded); the presumed credit of 13% of one SMN, Bs 429; then the employee's updated balance from earlier months.
+6. Anything left is withheld by the employer. A balance in the employee's favour carries forward with UFV maintenance of value (DS 21531 art. 19) and moves with the employee to a new job (DS 21531 art. 8). One employee's balance cannot be set against another's.
+
+**AUDIT FLASH POINT: Form 608 label.** The SIAT page for employer Form 608 still names box 215 "13% de dos (2) Salarios Mínimos Nacionales". The regulation, DS 21531 art. 8 c) 2 as amended by DS 5383, gives employees one SMN. Follow the decree, check what the Planillas Tributarias application actually fills in, and refer if it differs.
+
+**Independent professionals, trades, landlords and other direct contributors** (DS 21531 art. 9, text of DS 4850). They declare by quarter, month by month:
+
+1. Income of each month (Form 610 box 13), plus income in kind (box 26). Where the income is from IVA-taxed operations, deduct the 13% IVA contained in the invoices issued (box 707). Add presumed antichretic income (box 42).
+2. Deduct social-security contributions actually paid on time for that month (box 23).
+3. Apply 13% (box 909). There is **no** two-SMN deduction: that is only for employment income (DS 21531 art. 6).
+4. Credit: 13% of the invoices listed on Form 110 (box 781); the presumed credit of 13% of two SMN for each month (box 794, Bs 2,574 a quarter in 2026); and the updated balance from the previous quarter (box 635).
+5. The balance due is box 1002, less payments on account (boxes 622 and 640). A balance in favour carries forward with maintenance of value.
+
+**Invoices used for IVA.** A person who is also an IVA taxpayer may use an invoice against the RC-IVA only if it is not taken as an IVA credit (art. 31). Since DS 5563 (2 March 2026), an independent professional's IVA credit expressly includes personal food, clothing, training, transport, health, insurance, personal-vehicle fuel and utilities. Decide for each invoice which return it goes to; it cannot go to both. See [bolivia-iva](bolivia-iva.md).
+
+**Investment and other income.** Taxable interest and rent are declared by the individual as a direct contributor (art. 9). The payer withholds 13% on interest if the recipient shows no NIT (DS 21531 art. 12), and on rent and the other art. 11 items if no invoice backs the payment. Those withholdings are final (DS 21531 art. 13). A person with both employment and independent income files each way separately and splits the invoices between the employer and Form 610 (DS 21531 art. 16).
+
+**Non-domiciled individuals** (art. 19 h; DS 21531 art. 9 bis). An individual not domiciled in Bolivia who earns income for work done in Bolivia under a contract with a foreign entity declares and pays 13% of the total, with no deductions. The deadline is 3 days after the end of each month, or before leaving the country if sooner (Forms 613 and 614). They may pay in US dollars into the SIN account (DS 21531 art. 20). An individual who pays a non-domiciled person for services in Bolivia withholds 13% of the total within 5 days of payment or of the end of the service (DS 21531 art. 11). Payments abroad for services from abroad are IUE-BE at 12.5%, in [bolivia-corporate-income-tax](bolivia-corporate-income-tax.md).
+
+**Re-IVA** (Ley 1355). An individual with average monthly income up to Bs 9,000 who registers with the SIN as a beneficiary can get back in cash up to 5% of the price in purchase invoices issued electronically in their name and ID number. IVA already used against the RC-IVA, and purchases of State-subsidised goods, are excluded (art. 7).
+
+**IGF, the wealth tax** (Ley 1357). The SIN consolidated text to 30 September 2026 carries Ley 1357 with no note of repeal, and the SIAT still lists Forms 22 (residents) and 23 (non-residents).
+- **Who:** residents (more than 183 days in Bolivia in any 12 months) on their worldwide fortune, and non-residents on fortune in Bolivia, when net fortune at 31 December exceeds Bs 30,000,000.
+- **Base:** fortune less outstanding capital of loans from ASFI-regulated lenders, excluding household goods. Spouses under community property each count their own fortune plus 50% of the fortune built up during the marriage.
+- **Tax:** the rate applies to the whole base, less a fixed discount (art. 9). Property tax and IUE paid as a professional count as payments on account (art. 10).
+
+Refer every IGF case.
+
+## Deadlines and filing
+
+| Who | Form | Deadline | Source |
+|---|---|---|---|
+| Employee | Form 110 with the invoices, to the employer | By the 20th of the month (DS 21531 art. 8 c 1) | SIN consolidated Ley 843 |
+| Employer (withholding agent) | Form 608, monthly, from the Planillas Tributarias application | NIT-digit day 13 to 22 of the next month (digit 0 by the 13th, up to digit 9 by the 22nd) (DS 21531 art. 8) | same |
+| Independent, landlord, other direct contributor | Form 610 with Form 110, quarterly | Within 20 days after the quarter: 20 April, 20 July, 20 October, 20 January (DS 21531 art. 9) | same |
+| Payer withholding 13% on payments without invoice | Form 604 (box 415 national services, 416 foreign individuals, 434 rent, financial interest and others; box 909 tax) | NIT-digit day of the next month (DS 21531 art. 11) | SIAT Form 604 page |
+| Non-domiciled individual | Forms 613 and 614 | 3 days after each month, or before leaving (DS 21531 art. 9 bis) | SIN consolidated Ley 843 |
+
+A quarterly return is due even with no income or with a balance in the taxpayer's favour (DS 21531 art. 9).
+
+## Penalties and interest
+
+- **Late payment** (Ley 2492 art. 47): the omitted tax in UFV at the due date, plus interest of 4% a year for years 1 to 4, 6% for years 5 to 7 and 10% from year 8.
+- **Omission of payment** (art. 165): 60% of the updated omitted tax. The same applies to an employer or payer who fails to withhold. A withholding agent who does not withhold or pay over in time is liable for the tax (DS 21531 art. 13). The fine is extinguished if the debt is paid by the twentieth day after notification of the Vista de Cargo (art. 157). It is reduced by 80%, 60% or 40% at the later stages in art. 156.
+- **Formal duties** (art. 162): 50 to 5,000 UFV per breach; a late return is fined directly.
+- **IGF omission**: 200% of the omitted tax, and the taxpayer loses confidentiality in enforcement (Ley 1357 art. 15).
+- **Limitation** (art. 59, text of Ley 1733 of 27 May 2026): 4 years from 1 January after the due date; 6 years if the person never registered or chose the wrong regime.
+
+## Cross-border points
+
+- **Source only.** The RC-IVA reaches Bolivian-source income only (arts. 20 and 21). Pay for work done abroad for a foreign employer is not Bolivian-source. Directors' fees for work abroad for a Bolivian company are Bolivian-source under the IUE source rule (art. 44 a); treat them the same and refer if in doubt.
+- **Non-domiciled workers** pay on the gross with no deductions, within 3 days after each month (above).
+- **Paying a non-resident.** Individuals withhold 13% for services performed in Bolivia. Companies withhold IUE-BE at 12.5% on Bolivian-source amounts sent abroad ([bolivia-corporate-income-tax](bolivia-corporate-income-tax.md)).
+- **IGF** reaches residents' worldwide fortune.
+
+## Two worked examples that recompute
+
+### Example 1: employee, March 2026, with and without invoices
+
+Ana earns Bs 12,000 gross in March 2026. Her payslip shows Bs 1,525.20 of employee social-security contributions. She has no earlier balance.
+
+- Pay less contributions: 12,000 - 1,525.20 = Bs 10,474.80.
+- Less two SMN (2 x 3,300 = 6,600): base Bs 3,874.80.
+- 13%: Bs 503.72.
+- No invoices: less the presumed credit Bs 429 (13% of one SMN). The employer withholds Bs 74.72 and declares it on Form 608.
+- With Bs 1,000 of valid invoices on Form 110 by 20 March: credit 130 + 429 = Bs 559. Nothing is withheld. Her balance of Bs 55.28 carries to April, updated by the UFV.
+- The edge: at Bs 7,000 gross with Bs 889.70 of contributions, pay less contributions is Bs 6,110.30, below Bs 6,600. The base is zero and no RC-IVA is due.
+
+```oa-check
+name: Employee Ana, March 2026, SMN Bs 3,300
+inputs:
+  gross: 12000
+  contributions: 1525.20
+  smn: 3300
+  invoices: 1000
+  gross_low: 7000
+  contributions_low: 889.70
+steps:
+  - net: gross - contributions
+  - base: max(net - 2 * smn, 0)
+  - tax: base * 0.13
+  - presumed: smn * 0.13
+  - withheld_no_invoices: max(tax - presumed, 0)
+  - credit_with_invoices: invoices * 0.13 + presumed
+  - withheld_with_invoices: max(tax - credit_with_invoices, 0)
+  - balance_carried: credit_with_invoices - tax
+  - base_low: max(gross_low - contributions_low - 2 * smn, 0)
+expected:
+  net: 10474.80
+  base: 3874.80
+  tax: 503.72
+  presumed: 429
+  withheld_no_invoices: 74.72
+  credit_with_invoices: 559
+  withheld_with_invoices: 0
+  balance_carried: 55.28
+  base_low: 0
+```
+
+### Example 2: independent consultant, second quarter 2026, Form 610
+
+Carlos is an independent engineer registered in the general regime. From April to June 2026 he invoiced Bs 60,000 in fees, all IVA-taxed. He paid Bs 3,000 of social-security contributions on time for those months. He lists Bs 20,000 of purchase invoices on Form 110 that he has not used as IVA credit, all dated within 120 days before 30 June. There is no balance from the first quarter.
+
+- Box 13: Bs 60,000. Box 707, the 13% IVA in the invoices issued: Bs 7,800. Box 23: Bs 3,000.
+- Box 909: (60,000 - 7,800 - 3,000) x 13% = 49,200 x 13% = Bs 6,396. No two-SMN deduction: Carlos is not an employee.
+- Box 781: 20,000 x 13% = Bs 2,600. Box 794: 13% x 2 x 3,300 x 3 months = Bs 2,574.
+- Due (box 1002): 6,396 - 2,600 - 2,574 = Bs 1,222, filed and paid with Form 610 by 20 July 2026.
+- The edge: with fees of only Bs 15,000 in the quarter, box 909 is (15,000 - 1,950 - 3,000) x 13% = Bs 1,306.50. That is below the presumed credit alone (Bs 2,574). Nothing is due, and a balance of Bs 1,267.50 carries forward before counting any invoices. Extra invoices on Form 110 would only grow the balance. They may be worth more in his IVA return, where DS 5563 now lets a professional credit personal purchases.
+- Carlos also owes IVA and IT on his fees every month: see [bolivia-iva](bolivia-iva.md).
+
+```oa-check
+name: Independent engineer Carlos, Q2 2026, Form 610
+inputs:
+  fees: 60000
+  contributions: 3000
+  invoices_110: 20000
+  smn: 3300
+  months: 3
+  fees_low: 15000
+steps:
+  - iva_in_fees: fees * 0.13
+  - determined: (fees - iva_in_fees - contributions) * 0.13
+  - invoice_credit: invoices_110 * 0.13
+  - presumed: smn * 2 * 0.13 * months
+  - due: max(determined - invoice_credit - presumed, 0)
+  - determined_low: (fees_low - fees_low * 0.13 - contributions) * 0.13
+  - balance_low: presumed - determined_low
+expected:
+  iva_in_fees: 7800
+  determined: 6396
+  invoice_credit: 2600
+  presumed: 2574
+  due: 1222
+  determined_low: 1306.50
+  balance_low: 1267.50
+```
+
+## Ask the client first
+
+1. Employee, independent (profession or trade), landlord or investor, or several at once; and whether domiciled in Bolivia.
+2. For an employee: gross monthly pay, the contributions on the payslip, any aguinaldo or severance (not taxed), and the invoices they can hand in on Form 110.
+3. For an independent: monthly fees invoiced, contributions paid on time, invoices not used as IVA credit, the balance from last quarter, and the NIT. They also file IVA and IT.
+4. Rent (including anticresis contracts), interest by type and term of deposit, and dividends (not taxed).
+5. Payments they make to individuals without invoices, or to non-domiciled persons (withholding).
+6. Average monthly income (Re-IVA up to Bs 9,000) and, for wealthy clients, net fortune at 31 December (IGF above Bs 30,000,000).
+
+Bank statement pointers:
+
+| Pattern | Treatment |
+|---|---|
+| SUELDO, SALARIO, HABER, PLANILLA | Employment pay: employer withholds, nothing to file personally |
+| AGUINALDO | Not taxed (DS 21531 art. 1) |
+| HONORARIOS, PAGO SERVICIOS, CONSULTORIA | Independent income: Form 610 base, and IVA and IT |
+| ALQUILER COBRADO, ANTICRETICO | Rent or anticresis: Form 610 base |
+| DIVIDENDOS, REPARTO UTILIDADES from a Bolivian IUE payer | Not taxed (art. 19 c) |
+| INTERESES DPF over the term limits | Not taxed; early redemption makes them taxable |
+| GESTORA, APORTES | Contributions: deductible (employees via payslip, independents box 23) |
+| RE-IVA, DEVOLUCION SIN | Refund, not income |
+| Own-account transfers, loans, ATM | Not income; ask |
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| SIN, Ley N° 843 y Decretos Reglamentarios, Texto Ordenado, Complementado, actualizado al 30/09/2026: read Título II arts. 19 to 35 with notes (Leyes 1448, 1606, 2382, 1718), DS 21531 arts. 1 to 24 (with DS 3890, 4850, 5383 notes), DS 21530 art. 8 last paragraph (DS 5563), Ley 1355 (Re-IVA) arts. 1 to 7, and Ley 1357 (IGF) arts. 1 to 15 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 5516 of 13 January 2026: art. 23, national minimum wage Bs 3,300 from 1 January 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281033 | 2026-11-11 |
+| SIN, Ley N° 2492 Código Tributario Boliviano, Texto Ordenado, Complementado, actualizado al 30/09/2026: read arts. 47, 59, 156, 157, 162 and 165 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf | 2026-11-11 |
+| SIN SIAT, Form 610: box codes 13, 26, 707, 42, 23, 909, 781, 794, 693, 1001, 635, 1002, 622, 640 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/regimen-complementario-al-iva/610-regimen-complementario-del-iva-contribuyente-directo | 2026-11-11 |
+| SIN SIAT, Form 608: box codes 13 to 450, including the box 215 label | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/regimen-complementario-al-iva/608-regimen-complementario-del-iva-agentes-de-retencion | 2026-11-11 |
+| SIN SIAT, Form 604: box codes 415, 416, 434, 404 to 406, 909 and the annex categories | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/regimen-complementario-al-iva/604-regimen-complementario-del-iva-retenciones | 2026-11-11 |
+| SIN SIAT, list of electronic forms: names of Forms 613, 614, 22 and 23 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico | 2026-11-11 |
+| Ministerio de Trabajo, Comunicado DGTHSO-014/2026 of 2 April 2026: applies DS 5516 and the Bs 3,300 SMN | https://mintrabajo.gob.bo/wp-content/uploads/2026/04/COMUNICADO-DGTHSO-0014-26.pdf | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1448 of 25 July 2022 (HTML text): new incisos g) and h) of Ley 843 art. 19 and new art. 165 of Ley 2492 (60%) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1733 of 27 May 2026 (HTML text): new art. 59 of Ley 2492, 4-year limitation | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281228 | 2026-11-11 |
+
+Not yet confirmed: the employee social-security contribution rates (left to [bolivia-social-contributions](bolivia-social-contributions.md), not re-read here); which presumed-credit figure the Planillas Tributarias application uses for employees (Form 608 box 215 still says two SMN); the IGF filing deadline and valuation rules in DS 4436, and whether any 2026 law repealed Ley 1357 after the SIN consolidation date; the Re-IVA procedure and payment dates (its regulating decree, not read); how individuals' capital gains are taxed outside the stock exchange (DS 5301 art. 49, reproduced in the consolidated text, makes brokers withhold RC-IVA on gains from securities sold on an exchange; the wider rule was not read); treaty relief for non-domiciled individuals; the UFV values in bolivianos for updating balances (Banco Central de Bolivia, not read).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bolivia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bolivia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bolivia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bolivia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

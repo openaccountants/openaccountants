@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NP"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Ashish Bista"
 ---
 
 # Nepal Income Tax
@@ -19,7 +18,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Ashish Bista** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -69,7 +67,6 @@ metadata:
 | Filing portal | taxpayerportal.ird.gov.np |
 | Individual return form | D-01 (natural persons; also presumptive) |
 | Filing deadline | Within 3 months of FY end → end of Ashoj (~mid-October); extendable +3 months to end of Poush (~mid-January) |
-| Validation date | Verified by Ashish Bista (ICAN: 1765) on 2026-06-06 |
 | Skill version | 0.1 |
 
 ### Tax Rate Slabs -- Natural Persons, FY 2082/83 (2025/26)

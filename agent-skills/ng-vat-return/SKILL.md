@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG VAT Return
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -73,7 +71,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Filing frequency | Monthly |
 | Filing deadline | 21st of the following month |
 | Contributor | Open Accountants Community |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 | Skill version | 2.0 |
 
 ### Rate Table

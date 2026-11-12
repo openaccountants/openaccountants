@@ -9,9 +9,7 @@ depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ibrar Ali"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: formation
 ---
 
@@ -21,7 +19,6 @@ domain: formation
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

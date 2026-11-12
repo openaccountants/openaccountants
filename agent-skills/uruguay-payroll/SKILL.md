@@ -1,681 +1,283 @@
 ---
 name: uruguay-payroll
-description: "Use this skill whenever asked about Uruguay payroll processing for employed persons. Trigger on phrases like \"Uruguay payroll\", \"Uruguayan payroll\", \"nómina Uruguay\", \"planilla de trabajo\", \"BPS Uruguay\", \"Banco de Previsión Social\", \"aporte jubilatorio\", \"montepío\", \"15% BPS\", \"7.5% patronal\", \"FONASA Uruguay\", \"FRL Uruguay\", \"Fondo de Reconversión Laboral\", \"IRPF Uruguay\", \"IRPF Categoría II\", \"rentas de trabajo\", \"retención IRPF\", \"BPC Uruguay\", \"Base de Prestaciones y Contribuciones\", \"mínimo no imponible\", \"MNIG\", \"salario mínimo nacional Uruguay\", \"minimum wage Uruguay\", \"aguinaldo Uruguay\", \"ajuste anual IRPF\", \"DGI Uruguay\", \"net salary Uruguay\", \"salario líquido\", \"salario nominal\", \"gross to net Uruguay\", \"employer contribution Uruguay\", \"tope de cotización\", \"Formulario 1102\", or any question about computing employee pay, IRPF withholding, or social-security (BPS) contributions for Uruguay-based employees. CRITICAL STRUCTURAL FACT: unlike many Latin-American jurisdictions, i"
+description: "Uruguay payroll for employers, tax year 2026: the monthly gross-to-net for a private-sector employee and the employer's cost. Covers BPS contributions (jubilatorio 15% employee and 7.5% employer, FONASA 3% to 8% employee by income and family and 5% employer, FRL 0.10% each side, FGCL 0.025% employer), the 2026 contribution ceilings (UYU 288,836 from February 2026) under Ley 16.713 and the Ley 20.130 pension reform, the employer's monthly IRPF withholding under Decreto 148/007 (monthly scale in BPC at UYU 6,864, the 6% gross-up above 10 BPC, the 14% or 8% deduction credit, form 3100), aguinaldo and salario vacacional, the year-end ajuste anual, the BPS nómina calendar, the 2026 minimum wage and BPS late-payment fines. Trigger on: nómina Uruguay, sueldo líquido, aportes BPS, montepío, FONASA, FRL, retención IRPF, formulario 3100, ajuste anual, aguinaldo, tope de cotización, Uruguay payroll 2026. Out of scope: domestic, rural and construction workers, public bodies, the employee's own IRP"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/uruguay-payroll"
   jurisdiction: "UY"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Uruguay Payroll Skill v0.1 (Tier 2 — research-verified, reviewer sign-off pending)
-
-## Uruguay Payroll Skill v0.1 (Tier 2 — research-verified, reviewer sign-off pending)
-
-> **Tier 2 status.** Every rate, threshold, and deadline below is sourced to a named authority (BPS, DGI, IMPO) or a Big-4 summary (PwC Worldwide Tax Summaries) or a named advisory (EY Uruguay) and cited inline. It has **not** yet been section-by-section verified by a licensed Uruguayan accountant (contador público). Items marked **[RESEARCH GAP — reviewer to confirm]** carry residual uncertainty and must be confirmed against primary sources before reliance.
-
-> **READ THIS FIRST — the single most important structural fact.** Uruguay **does** levy a personal income tax on labour income (**IRPF — Impuesto a la Renta de las Personas Físicas, Categoría II / rentas de trabajo**), and — unlike Paraguay or many other LATAM jurisdictions — **the employer IS the withholding agent.** IRPF is **withheld monthly** on a progressive 0%–36% scale and reconciled at year end via the **ajuste anual** performed through BPS. On top of IRPF the employer also withholds and pays **BPS** social-security contributions (retirement/montepío, FONASA, FRL). Almost every IRPF threshold is expressed in units of the **BPC** (Base de Prestaciones y Contribuciones); for 2025 **BPC = UYU 6,576/month**. See Section 2.
-
-## Section 1 -- Quick Reference
-
-**Section 1 Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Uruguay (Oriental Republic of Uruguay) |
-| Currency | UYU (Uruguayan peso, "$") only |
-| Standard pay frequency | Monthly |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Income-tax withholding on salaries | **Yes — employer withholds IRPF Categoría II monthly** on a progressive scale, with a year-end ajuste anual (BPS Comunicado R 2/2025; DGI) |
-| Reference unit | **BPC = UYU 6,576/month** for 2025 (+4.38% over 2024) (BPS Comunicado R 2/2025) |
-| IRPF non-taxable minimum (MNIG) | **UYU 46,032/month** (= 7 BPC); first peso above this is taxed (BPS Comunicado R 2/2025) |
-| IRPF scale | Progressive **0% – 36%** across 8 monthly brackets (BPS Comunicado R 2/2025) |
-| Employee retirement (jubilatorio/montepío) | **15%** of nominal salary, withheld by employer (BPS Tasas; PwC) |
-| Employer retirement (patronal) | **7.5%** of nominal salary (general private-sector rate) (BPS Tasas; PwC) |
-| FONASA (health) | Employer **5%** flat; employee **3%–8%** by income & family situation (BPS Tasas Fonasa; PwC) |
-| FRL (Fondo de Reconversión Laboral) | **0.1%** employee + **0.1%** employer (BPS Tasas; PwC) |
-| FGCL (labour-credit guarantee) | **0.025%** employer only (BPS Tasas; PwC) |
-| Retirement contribution ceiling | Retirement contributions apply only up to **UYU 272,564/month** (until 31 Dec 2025) (PwC Other taxes; BPS Topes de cotización) |
-| Minimum wage (from 1 Jan 2025) | **UYU 23,604/month** (+6%) (Decreto N° 369/024, IMPO) |
-| Tax authority (IRPF) | **DGI** — Dirección General Impositiva |
-| Social-security authority | **BPS** — Banco de Previsión Social (also IRPF withholding calculator/agent for employees) |
-| IRPF annual sworn declaration | **Form 1102** (individual) / **Form 1103** (family unit) — most single-employer employees do NOT file (employer ajuste anual instead) (EY Uruguay) |
-| Filing portals | DGI (servicios en línea); BPS (nómina / GAFI) |
-| Skill version | 0.1 (Tier 2) |
-
-## Section 2 -- Income Tax Withholding (IRPF Categoría II — employer-withheld)
-
-Uruguay levies **IRPF (Impuesto a la Renta de las Personas Físicas), Categoría II — rentas de trabajo**, on labour income. The employer **IS** the withholding agent and withholds IRPF **monthly** on the progressive scale below, reconciling over the year via the **ajuste anual** through BPS. (Source: BPS Comunicado R 2/2025 "IRPF Ejercicio 2025: Valores Mensuales", official, vigencia 1/2025.)
-
-### 2.1 Monthly progressive income scale (escala mensual progresional de rentas), 2025
-
-**Monthly progressive IRPF scale 2025**  _(BPS Comunicado R 2/2025; DGI IRPF Cat. II escalas)_
-
-| Bracket (BPC) | Desde (UYU/month) | Hasta (UYU/month) | Rate | Cumulative tax at top of bracket (UYU) |
-| --- | --- | --- | --- | --- |
-| Up to 7 BPC | 0 | 46,032 | 0% | 0.00 |
-| Over 7–10 BPC | 46,033 | 65,760 | 10% | 1,972.80 |
-| Over 10–15 BPC | 65,761 | 98,640 | 15% | 6,904.80 |
-| Over 15–30 BPC | 98,641 | 197,280 | 24% | 30,578.40 |
-| Over 30–50 BPC | 197,281 | 328,800 | 25% | 63,458.40 |
-| Over 50–75 BPC | 328,801 | 493,200 | 27% | 107,846.40 |
-| Over 75–115 BPC | 493,201 | 756,240 | 31% | 189,388.80 |
-| Over 115 BPC | 756,241 | — | 36% | — |
-
-- **Tax computed bracket-by-bracket** — Tax is computed bracket-by-bracket (progressive marginal), NOT flat. BPC = UYU 6,576.  _(BPS Comunicado R 2/2025; DGI IRPF Cat. II escalas)_
-- **General non-taxable minimum (MNIG)** — UYU 46,032/month (= 7 BPC). Below this, no IRPF.  _(BPS Comunicado R 2/2025)_
-
-**Cumulative-tax check (recomputed bracket by bracket):**
-- 10% × (65,760 − 46,032) = 10% × 19,728 = **1,972.80** ✓
-- + 15% × (98,640 − 65,760) = 15% × 32,880 = 4,932.00 → **6,904.80** ✓
-- + 24% × (197,280 − 98,640) = 24% × 98,640 = 23,673.60 → **30,578.40** ✓
-- + 25% × (328,800 − 197,280) = 25% × 131,520 = 32,880.00 → **63,458.40** ✓
-- + 27% × (493,200 − 328,800) = 27% × 164,400 = 44,388.00 → **107,846.40** ✓
-- + 31% × (756,240 − 493,200) = 31% × 263,040 = 81,542.40 → **189,388.80** ✓ (Self-verified.)
-
-- **Annual scale figures (PwC)** — Annual figures (PwC, tax year 2025) are the same scale at 12× monthly: 0% to 552,384; 10% 552,384–789,120; 15% 789,120–1,183,680; 24% 1,183,680–2,367,360; 25% 2,367,360–3,945,600; 27% 3,945,600–5,918,400; 31% 5,918,400–9,074,880; 36% above 9,074,880.  _(PwC — Taxes on personal income)_
-
-Note on the BPC value: PwC's worldwide summary mislabels BPC as "165.50" — that is a currency-conversion artifact, not the BPC. The authoritative value is **UYU 6,576** (BPS Comunicado R 2/2025). This skill uses UYU 6,576.
-
-### 2.2 Deductions mechanism (escala de deducciones), 2025
-
-- **Deductions mechanism overview** — IRPF allows specified deductions, but the tax benefit of deductions is computed on a separate progressive deductions scale and then subtracted from the gross IRPF on income.  _(BPS Comunicado R 2/2025)_
-
-**Fixed monthly deduction-credit rate table**  _(BPS Comunicado R 2/2025)_
-
-| Nominal IRPF income | Deduction credit rate | Source |
-| --- | --- | --- |
-| ≤ UYU 98,640 (≤ 15 BPC) | **14%** | BPS Comunicado R 2/2025 |
-| > UYU 98,640 (> 15 BPC) | **8%** | BPS Comunicado R 2/2025 |
-
-**Deductible items (monthly values, 2025) table**  _(BPS Comunicado R 2/2025)_
-
-| Item | Monthly value (UYU) | Source |
-| --- | --- | --- |
-| Personal social-security contributions (montepío 15% + FONASA + FRL employee shares) | actual amounts withheld | BPS Comunicado R 2/2025 |
-| Dependent minor child | **10,960** per child (= 20 BPC annual / 12) | BPS Comunicado R 2/2025 |
-| Dependent child with disability | **21,920** per child (= 40 BPC annual / 12) | BPS Comunicado R 2/2025 |
-| Fondo de Solidaridad — Cat.1 / Cat.2 / Cat.3 / Cat.4 / Cat.5 | 274 / 548 / 1,096 / 1,005 / 1,553 | BPS Comunicado R 2/2025 |
-| Caja de Profesionales Universitarios (categories 1st–11th) | range 6,447 to 33,855 (11th/special = 3,241) | BPS Comunicado R 2/2025 |
-| Option to exclude from withholding regime — importe límite | **65,400** | BPS Comunicado R 2/2025 |
-
-- **IRPF due formula** — The deduction credit is computed as `credit rate × (sum of deductible items)`, then `IRPF due = max(0, gross IRPF on income − deduction credit)`. If the credit exceeds the gross IRPF, IRPF due is zero (it does not create a negative/refundable amount within the monthly withholding).  _(BPS Comunicado R 2/2025)_
-
-### 2.3 IRPF annual sworn declaration (declaración jurada) and the ajuste anual
-
-**Annual sworn declaration / ajuste anual table**  _(EY Uruguay)_
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Year-end mechanism for single-employer employees | Employer performs an automatic **ajuste anual** via BPS; refunds typically issued from mid-June | BPS; EY Uruguay |
-| Annual filing window (FY2025, filed 2026) | **29 June – 31 August 2026** | Uruguayan tax-advisory sources — **[RESEARCH GAP — reviewer to confirm exact 2026 dates]** |
-| Annual filing window (FY2024, for reference) | 7 July – 28 August 2025 | EY Uruguay |
-| Forms | **Form 1102** (individual) / **Form 1103** (family unit / núcleo familiar) | EY Uruguay |
-| Mandatory filers | Independent workers; employees with multiple employers exceeding 150,000 UI; those electing the family-unit 5% withholding reduction; employees not employed on 31 December | EY Uruguay |
-| Payment (if owed) | Up to 5 equal installments (FY2024: first 29 Aug 2025, last 30 Dec 2025) | EY Uruguay |
-
-Most single-employer employees are **NOT** required to file — the employer's ajuste anual settles the year (EY Uruguay).
-
-### 2.4 IRNR (non-resident income tax) — out of scope but flagged
-
-- **IRNR regime for non-residents** — Non-residents are taxed under IRNR on Uruguayan-source gross income at 7%–25% (12% or 25% typical for services; 25% for low/no-tax jurisdictions). IRNR is a distinct regime from the employer IRPF withholding covered here; route IRNR questions to a specialist.  _(PwC — Taxes on personal income)_
-
-## Section 3 -- Social Security (BPS) -- Employee Deductions
-
-Uruguay's mandatory social-security scheme is BPS (Banco de Previsión Social). The employer withholds the employee shares and remits them with the employer shares via the monthly BPS nómina. (Source: BPS Tasas; BPS Tasas Fonasa; PwC — Other taxes, tax year 2025.)
-
-### 3.1 Retirement / pension (Jubilatorio — "montepío")
-
-**Retirement employee rate table**  _(BPS Tasas; PwC)_
-
-| Item | Employee rate | Base | Source |
-| --- | --- | --- | --- |
-| Retirement (montepío) | **15%** of nominal salary | Nominal salary up to the retirement ceiling (Section 4.4) | BPS Tasas; PwC |
-
-### 3.2 FONASA (national health fund) — variable employee rate
-
-- **FONASA employee variability** — Employee FONASA is 3%–8% by income level and family situation. 2.5 BPC = UYU 16,440 in 2025.  _(BPS Tasas Fonasa; PwC)_
-
-**FONASA employee rate by income and family situation**  _(BPS Tasas Fonasa; PwC)_
-
-| Monthly income | No dependents (single) | Single, with children | With spouse/partner, no children | With spouse/partner + children |
-| --- | --- | --- | --- | --- |
-| ≤ 2.5 BPC (≤ UYU 16,440) | 3% | 3% | 5% | 5% |
-| > 2.5 BPC (> UYU 16,440) | 4.5% | 6% | 6.5% | 8% |
-
-- **Spouse surcharge condition** — The spouse/partner surcharge applies only if the spouse lacks own SNIS coverage.  _(BPS Tasas Fonasa)_
-- **FONASA not subject to retirement ceiling** — FONASA is NOT subject to the retirement ceiling — it applies to the full nominal salary.  _(PwC; BPS)_
-
-### 3.3 FRL — Fondo de Reconversión Laboral
-
-**FRL employee rate table**  _(BPS Tasas; PwC)_
-
-| Item | Employee rate | Source |
-| --- | --- | --- |
-| FRL | **0.1%** of nominal salary | BPS Tasas; PwC |
-
-- **FRL not subject to retirement ceiling** — FRL is NOT subject to the retirement ceiling — it applies to the full nominal salary.  _(PwC; BPS)_
-
-### 3.4 Employee total (illustrative, single, no dependents, > 2.5 BPC, below ceiling)
-
-**Employee total illustrative table**  _(sum of the three rows)_
-
-| Component | Rate | Source |
-| --- | --- | --- |
-| Retirement (montepío) | 15% | BPS Tasas; PwC |
-| FONASA | 4.5% | BPS Tasas Fonasa; PwC |
-| FRL | 0.1% | BPS Tasas; PwC |
-| **Employee BPS total (this case)** | **19.6%** | sum of the three rows |
-
-**Total-row check (recomputed):** 15 + 4.5 + 0.1 = **19.6** ✓ (Self-verified.) Note the FONASA rate (and hence this total) changes with income band and family situation (Section 3.2).
-
-## Section 4 -- Social Security (BPS) -- Employer Contributions
-
-(Source: BPS Tasas; BPS Tasas Fonasa; PwC — Other taxes, tax year 2025.)
-
-### 4.1 Employer contribution rates (general private sector)
-
-**Employer contribution rates table**  _(BPS Tasas; BPS Tasas Fonasa; PwC)_
-
-| Component | Employer rate | Base | Source |
-| --- | --- | --- | --- |
-| Retirement (patronal/jubilatorio) | **7.5%** | Nominal salary up to the retirement ceiling (Section 4.4) | BPS Tasas; PwC |
-| FONASA | **5%** flat (+ CCM where applicable) | Full nominal salary | BPS Tasas Fonasa; PwC |
-| FRL | **0.1%** | Full nominal salary | BPS Tasas; PwC |
-| FGCL (Fondo de Garantía de Créditos Laborales) | **0.025%** | Full nominal salary | BPS Tasas; PwC |
-
-- **Civil/public organism note** — Civil/public organisms use different patronal rates; this skill applies the general private-sector 7.5% unless told otherwise.
-
-### 4.2 Employer total (PwC headline)
-
-- **Employer total headline** — PwC states the employer total ≈ 12.625% = 7.5% jubilatorio + 5% FONASA + 0.1% FRL + 0.025% FGCL, before BSE accident insurance and CCM.  _(PwC — Other taxes)_
-
-**Total-row check (recomputed):** 7.5 + 5 + 0.1 + 0.025 = **12.625** ✓ (Self-verified.)
-
-> This 12.625% bundles FONASA at the base 5%. Effective employer cost rises with the Complemento de Cuota Mutual (CCM) and the activity-specific BSE (Banco de Seguros del Estado) workplace-accident premium (mandatory, rate varies by risk class — **[RESEARCH GAP — reviewer to confirm]**, no single national rate).
-
-### 4.3 Combined headline burden (employee illustrative + employer)
-
-**Combined headline burden table**
-
-| Side | Components | Total |
-| --- | --- | --- |
-| Employee (single, >2.5 BPC, below ceiling) | 15% + 4.5% + 0.1% | **19.6%** |
-| Employer (general private sector) | 7.5% + 5% + 0.1% + 0.025% | **12.625%** |
-
-**Total-row check:** employee 15 + 4.5 + 0.1 = 19.6 ✓; employer 7.5 + 5 + 0.1 + 0.025 = 12.625 ✓ (Self-verified.) (Employee total varies with the FONASA band/family situation; this row shows the single, >2.5 BPC, no-dependents case.)
-
-### 4.4 Retirement contribution ceiling (tope de cotización)
-
-**Retirement contribution ceiling table**  _(PwC — Other taxes; BPS Topes de cotización)_
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Retirement ceiling | Retirement contributions (employee 15% **and** employer 7.5%) apply **only up to UYU 272,564/month** (until 31 December 2025); salary above this cap is exempt from retirement contribution | PwC — Other taxes; BPS Topes de cotización |
-| FONASA / FRL / FGCL | **NOT** subject to the retirement cap — apply to the full nominal salary | PwC; BPS |
-
-### 4.5 AFAP (private pension pillar)
-
-- **AFAP mixed regime description** — Part of the 15% employee retirement contribution is channelled to a private AFAP for workers in the mixed regime, based on income franjas updated annually.
-
-> **[RESEARCH GAP — reviewer to confirm]** The 2025 AFAP income-franja thresholds (allocation between BPS and the private AFAP) were **not** confirmed from a primary BPS "Valores" page in this research. Do **not** publish AFAP allocation thresholds until verified against BPS "Topes de cotización → Valores". This does not affect the **total** 15% employee retirement withholding — only its split.
-
-### 4.6 Payment / filing
-
-**Payment/filing table**  _(BPS)_
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Monthly | BPS **nómina** (payroll declaration): employee + employer BPS shares + IRPF withheld | BPS |
-| Registration | Any dependent worker triggers mandatory BPS employer registration; no income floor exempts the employer | BPS |
-
-## Section 5 -- Minimum Wage (Salario Mínimo Nacional)
-
-- **Minimum wage authority** — Authority: Executive (Decreto). Current: Decreto N° 369/024, effective 1 January 2025 (+6%).  _(Decreto N° 369/024 (IMPO))_
-
-**Minimum wage 2025 table**  _(Decreto N° 369/024 (IMPO))_
-
-| Item | 2025 value | Source |
-| --- | --- | --- |
-| Monthly national minimum wage | **UYU 23,604** | Decreto N° 369/024 (IMPO) |
-
-- **Minimum wage below IRPF threshold** — UYU 23,604 is below the IRPF non-taxable minimum of UYU 46,032, so a minimum-wage earner pays no IRPF but still pays BPS contributions (Section 3).
-
-> **[RESEARCH GAP — reviewer to confirm]** Any 2026 minimum-wage adjustment would supersede this from 1/1/2026; use UYU 23,604 as the current authoritative figure until a 2026 decree is published.
-
-## Section 6 -- Conservative Defaults
-
-When inputs are ambiguous, apply these defaults and flag the assumption to the user:
-
-1. **Employer withholds IRPF.** Uruguay's employer IS an IRPF withholding agent — compute monthly IRPF on the progressive scale (Section 2) AND BPS contributions (Sections 3–4). Do not skip IRPF as if it were self-assessed.
-2. **Family/FONASA situation = single, no dependents.** Apply FONASA at 3% (≤ 2.5 BPC) or 4.5% (> 2.5 BPC) unless the user states children/spouse (which change the FONASA band and add child deductions). Flag the assumption.
-3. **Sector = general private sector.** Employer retirement 7.5%; do not apply civil/public-organism rates without confirmation.
-4. **Retirement ceiling applied** at UYU 272,564/month to the 15% employee and 7.5% employer retirement only; FONASA/FRL/FGCL on full nominal salary (Section 4.4).
-5. **No deductions beyond personal BPS contributions** unless the user provides them. Apply the deduction-credit rate (14% if nominal income ≤ 98,640, else 8%) to the sum of deductible items (Section 2.2). Do not invent Fondo de Solidaridad / Caja Profesional / mortgage figures.
-6. **Currency:** all amounts in **UYU**. Never assume USD or any other currency.
-7. **Pay period:** assume **FY2025** figures (BPC 6,576; MNIG 46,032; minimum wage 23,604; retirement ceiling 272,564 until 31 Dec 2025). Do not apply unconfirmed 2026 figures.
-8. **AFAP split:** do not state AFAP allocation thresholds — research gap (Section 4.5). The total 15% employee retirement withholding is unaffected.
-
-### 7.1 Required inputs (must have before computing payroll)
-
-**Required inputs table**
-
-| Input | Why needed |
-| --- | --- |
-| Monthly **nominal** salary in UYU | Drives the IRPF scale, BPS bases, and both contribution sides |
-| Family / FONASA situation (single / with children / with spouse w/o SNIS cover) | Selects the FONASA employee band (3%–8%) and child deductions |
-| Number of dependent minor children (and any with disability) | Each adds a monthly IRPF deduction (10,960 / 21,920) |
-| Employer sector (general private vs civil/public organism) | Confirms the 7.5% patronal rate |
-| Pay period (month/year) | Confirms FY2025 BPC, MNIG, minimum wage, and retirement ceiling |
-| Whether the employee has multiple employers / elects family-unit regime | Affects annual filing obligation and withholding option |
-| Employer registration with BPS | Must be registered before running payroll |
-
-### 7.2 Refusal catalogue — STOP and ask rather than guess
-
-**Refusal catalogue table**
-
-| Situation | Action |
-| --- | --- |
-| Salary stated in USD or another currency | **Refuse to compute.** Ask for the UYU nominal amount (or the FX basis used). |
-| User asks to skip IRPF withholding ("they self-assess") | Do **not** skip. Explain Uruguay's employer IS an IRPF withholding agent (Section 2); compute monthly IRPF and the year-end ajuste anual. |
-| FONASA family situation not stated | Default to single/no-dependents and **flag it** — do not silently apply a spouse/children band. |
-| Pay period in 2026 or later | Flag that FY2025 figures (BPC 6,576, ceiling 272,564 to 31 Dec 2025) apply until 2026 values are published; do not invent 2026 figures. |
-| Civil/public-organism employer | Confirm the patronal rate; do not apply 7.5% blindly. |
-| Request for the AFAP split of the 15% retirement | State the total 15% withholding and flag the AFAP franja thresholds as a research gap (Section 4.5). |
-| Request for exact DGI/BPS penalty amounts | Flag as a research gap (Section 13) — do not present a precise figure as confirmed. |
-| Non-resident employee | IRNR regime (7%–25%, Section 2.4) — out of scope for this employer-withholding skill; route to a specialist. |
-| Salary above UYU 272,564 | Apply the retirement ceiling to the 15%/7.5% retirement only; keep FONASA/FRL/FGCL on the full nominal. |
-
-## Section 8 -- Transaction / Payment Pattern Library (deterministic)
-
-**Transaction/payment pattern library table**
-
-| Trigger | Deterministic action |
-| --- | --- |
-| Nominal salary ≤ 46,032 (7 BPC) | IRPF = 0. Still compute BPS (retirement 15%, FONASA per band, FRL 0.1%). |
-| Nominal salary > 46,032 | Compute gross IRPF bracket-by-bracket (Section 2.1), then subtract the deduction credit (Section 2.2); IRPF due = max(0, gross IRPF − credit). |
-| Nominal income ≤ 98,640 | Deduction credit rate = 14%. |
-| Nominal income > 98,640 | Deduction credit rate = 8%. |
-| Nominal income ≤ 16,440 (2.5 BPC) | FONASA employee = 3% (single) / 5% (with spouse w/o SNIS). |
-| Nominal income > 16,440 | FONASA employee = 4.5% / 6% / 6.5% / 8% per family situation (Section 3.2). |
-| Nominal salary ≤ 272,564 | Retirement base = full nominal (15% employee, 7.5% employer). |
-| Nominal salary > 272,564 | Retirement base = 272,564 (cap); FONASA/FRL/FGCL still on full nominal. |
-| Each dependent minor child | Add 10,960 to the deductible-items sum (21,920 if disabled). |
-| Aguinaldo / sueldo anual complementario | Treat per its own rules — **[RESEARCH GAP — reviewer to confirm]** aguinaldo BPS/IRPF treatment not separately sourced in this pass; do not assume exemption. |
-| Bank credit `SUELDO`/`SALARIO` to an employee | Net salary payment. |
-| Bank debit to `BPS`/`DGI` | BPS contribution remittance / IRPF remittance. |
-
-## Section 9 -- Worked Examples
-
-All figures in UYU, tax year 2025, **general private sector**. BPC = 6,576; MNIG = 46,032; retirement ceiling = 272,564. Employer withholds IRPF and BPS. Unless stated, the employee is **single, no dependents**. Each line is recomputed end-to-end.
-
-### Example A — Minimum wage, nominal UYU 23,604/month (below MNIG)
-
-23,604 < 46,032 → IRPF = 0. 23,604 > 16,440 → FONASA 4.5% (single).
-
-**Example A table**  _(23,604.00)_
-
-| Line | Computation | Amount (UYU) |
-| --- | --- | --- |
-| Nominal salary | — | 23,604.00 |
-| Employee retirement | 15% × 23,604 | 3,540.60 |
-| Employee FONASA | 4.5% × 23,604 | 1,062.18 |
-| Employee FRL | 0.1% × 23,604 | 23.60 |
-| Employee BPS total | 3,540.60 + 1,062.18 + 23.60 | 4,626.38 |
-| IRPF withheld | nominal < MNIG | 0.00 |
-| **Net pay** | 23,604 − 4,626.38 − 0 | **18,977.62** |
-| Employer retirement | 7.5% × 23,604 | 1,770.30 |
-| Employer FONASA | 5% × 23,604 | 1,180.20 |
-| Employer FRL | 0.1% × 23,604 | 23.60 |
-| Employer FGCL | 0.025% × 23,604 | 5.90 |
-| Employer BPS total | 1,770.30 + 1,180.20 + 23.60 + 5.90 | 2,980.00 |
-| **Total employer cost** | 23,604 + 2,980.00 | **26,584.00** |
-
-### Example B — Nominal UYU 60,000/month (just into the 10% IRPF band)
-
-60,000 in 10% band; nominal ≤ 98,640 → deduction credit rate 14%. FONASA 4.5%.
-
-**Example B table**  _(60,000.00)_
-
-| Line | Computation | Amount (UYU) |
-| --- | --- | --- |
-| Nominal salary | — | 60,000.00 |
-| Employee retirement | 15% × 60,000 | 9,000.00 |
-| Employee FONASA | 4.5% × 60,000 | 2,700.00 |
-| Employee FRL | 0.1% × 60,000 | 60.00 |
-| Employee BPS total (deductible) | 9,000 + 2,700 + 60 | 11,760.00 |
-| Gross IRPF on income | 10% × (60,000 − 46,032) = 10% × 13,968 | 1,396.80 |
-| Deduction credit | 14% × 11,760 | 1,646.40 |
-| IRPF due | max(0, 1,396.80 − 1,646.40) | 0.00 |
-| **Net pay** | 60,000 − 11,760 − 0 | **48,240.00** |
-| Employer BPS | 12.625% × 60,000 | 7,575.00 |
-| **Total employer cost** | 60,000 + 7,575.00 | **67,575.00** |
-
-The deduction credit (1,646.40) exceeds the gross IRPF (1,396.80), so IRPF due is 0 (no negative/refund within monthly withholding).
-
-### Example C — Nominal UYU 120,000/month (24% band, non-zero IRPF)
-
-120,000 in 24% band; nominal > 98,640 → deduction credit rate 8%. FONASA 4.5%.
-
-**Example C table**  _(120,000.00)_
-
-| Line | Computation | Amount (UYU) |
-| --- | --- | --- |
-| Nominal salary | — | 120,000.00 |
-| Employee retirement | 15% × 120,000 | 18,000.00 |
-| Employee FONASA | 4.5% × 120,000 | 5,400.00 |
-| Employee FRL | 0.1% × 120,000 | 120.00 |
-| Employee BPS total (deductible) | 18,000 + 5,400 + 120 | 23,520.00 |
-| Gross IRPF on income | 6,904.80 + 24% × (120,000 − 98,640) = 6,904.80 + 24% × 21,360 | 12,031.20 |
-| Deduction credit | 8% × 23,520 | 1,881.60 |
-| IRPF due | 12,031.20 − 1,881.60 | 10,149.60 |
-| **Net pay** | 120,000 − 23,520 − 10,149.60 | **86,330.40** |
-| Employer BPS | 12.625% × 120,000 | 15,150.00 |
-| **Total employer cost** | 120,000 + 15,150.00 | **135,150.00** |
-
-### Example D — Nominal UYU 300,000/month (retirement ceiling bites; 25% band)
-
-300,000 > 272,564 → retirement on 272,564; FONASA/FRL/FGCL on full 300,000. 25% IRPF band; credit rate 8%.
-
-**Example D table**  _(300,000.00)_
-
-| Line | Computation | Amount (UYU) |
-| --- | --- | --- |
-| Nominal salary | — | 300,000.00 |
-| Retirement base (capped) | min(300,000, 272,564) | 272,564.00 |
-| Employee retirement | 15% × 272,564 | 40,884.60 |
-| Employee FONASA | 4.5% × 300,000 | 13,500.00 |
-| Employee FRL | 0.1% × 300,000 | 300.00 |
-| Employee BPS total (deductible) | 40,884.60 + 13,500 + 300 | 54,684.60 |
-| Gross IRPF on income | 30,578.40 + 25% × (300,000 − 197,280) = 30,578.40 + 25% × 102,720 | 56,258.40 |
-| Deduction credit | 8% × 54,684.60 | 4,374.77 |
-| IRPF due | 56,258.40 − 4,374.77 | 51,883.63 |
-| **Net pay** | 300,000 − 54,684.60 − 51,883.63 | **193,431.77** |
-| Employer retirement | 7.5% × 272,564 | 20,442.30 |
-| Employer FONASA | 5% × 300,000 | 15,000.00 |
-| Employer FRL | 0.1% × 300,000 | 300.00 |
-| Employer FGCL | 0.025% × 300,000 | 75.00 |
-| Employer BPS total | 20,442.30 + 15,000 + 300 + 75 | 35,817.30 |
-| **Total employer cost** | 300,000 + 35,817.30 | **335,817.30** |
-
-### Example E — Nominal UYU 120,000/month, single with 1 minor child
-
-Single with children, > 2.5 BPC → FONASA 6%. One child deduction = 10,960. Credit rate 8% (income > 98,640).
-
-**Example E table**  _(120,000.00)_
-
-| Line | Computation | Amount (UYU) |
-| --- | --- | --- |
-| Nominal salary | — | 120,000.00 |
-| Employee retirement | 15% × 120,000 | 18,000.00 |
-| Employee FONASA | 6% × 120,000 | 7,200.00 |
-| Employee FRL | 0.1% × 120,000 | 120.00 |
-| Employee BPS total | 18,000 + 7,200 + 120 | 25,320.00 |
-| Deductible-items sum | 25,320 (BPS) + 10,960 (1 child) | 36,280.00 |
-| Gross IRPF on income | 6,904.80 + 24% × (120,000 − 98,640) | 12,031.20 |
-| Deduction credit | 8% × 36,280 | 2,902.40 |
-| IRPF due | 12,031.20 − 2,902.40 | 9,128.80 |
-| **Net pay** | 120,000 − 25,320 − 9,128.80 | **85,551.20** |
-| Employer BPS | 12.625% × 120,000 | 15,150.00 |
-| **Total employer cost** | 120,000 + 15,150.00 | **135,150.00** |
-
-Versus Example C (same salary, no child, FONASA 4.5%): the child deduction and FONASA band change net pay from 86,330.40 to 85,551.20 — the higher FONASA (6% vs 4.5%) outweighs the extra child deduction at this income.
-
-### Example F — IRPF scale verification (reference)
-
-Gross IRPF on income only (before deduction credit), at each bracket top, must match Section 2.1:
-
-**Example F table**
-
-| Nominal income | Gross IRPF | Recomputation |
-| --- | --- | --- |
-| 65,760 | 1,972.80 | 10% × (65,760 − 46,032) |
-| 98,640 | 6,904.80 | 1,972.80 + 15% × 32,880 |
-| 197,280 | 30,578.40 | 6,904.80 + 24% × 98,640 |
-| 328,800 | 63,458.40 | 30,578.40 + 25% × 131,520 |
-| 493,200 | 107,846.40 | 63,458.40 + 27% × 164,400 |
-| 756,240 | 189,388.80 | 107,846.40 + 31% × 263,040 |
-
-(Self-verified — matches the cumulative column in Section 2.1.)
-
-## Section 10 -- Tier 1 Rules (deterministic — apply mechanically)
-
-- **Employer as IRPF withholding agent** — The employer IS an IRPF withholding agent on dependent salaries — withhold IRPF monthly on the progressive scale and reconcile via the ajuste anual  _(BPS Comunicado R 2/2025; DGI)_
-- **BPC (2025)** — UYU 6,576/month  _(BPS Comunicado R 2/2025)_
-- **MNIG (2025)** — UYU 46,032/month (7 BPC); first peso above MNIG is taxed  _(BPS Comunicado R 2/2025)_
-
-**IRPF scale (monthly)**  _(BPS Comunicado R 2/2025)_
-
-| Band | Rate |
-| --- | --- |
-| 0 to 46,032 | 0% |
-| to 65,760 | 10% |
-| to 98,640 | 15% |
-| to 197,280 | 24% |
-| to 328,800 | 25% |
-| to 493,200 | 27% |
-| to 756,240 | 31% |
-| above 756,240 | 36% |
-
-- **IRPF due formula** — IRPF due = max(0, gross IRPF on income − deduction credit). Credit rate = 14% if nominal income ≤ 98,640, else 8%  _(BPS Comunicado R 2/2025)_
-- **Deductible items** — Deductible items include personal BPS contributions plus 10,960/child (21,920 if disabled) and other listed items (Section 2.2)  _(BPS Comunicado R 2/2025)_
-- **Employee BPS rates** — retirement 15% + FONASA 3%–8% (by income band & family) + FRL 0.1%  _(BPS Tasas; BPS Tasas Fonasa; PwC)_
-- **Employer BPS rates (general private)** — retirement 7.5% + FONASA 5% + FRL 0.1% + FGCL 0.025% = 12.625% before BSE/CCM  _(BPS Tasas; PwC)_
-- **Retirement contribution ceiling** — Retirement contributions (15% + 7.5%) apply only up to UYU 272,564/month (until 31 Dec 2025); FONASA/FRL/FGCL on full nominal  _(PwC; BPS Topes de cotización)_
-- **Minimum wage** — UYU 23,604/month from 1 Jan 2025. A min-wage earner pays no IRPF but pays BPS.  _(Decreto N° 369/024)_
-- **Year-end ajuste anual** — Year-end: employer ajuste anual settles most single-employer employees; Form 1102/1103 filed only by mandatory filers  _(EY Uruguay)_
-- **Currency requirement** — All payroll amounts in UYU — never another currency.
-- **Total employee retirement withholding** — The total employee retirement withholding is 15% regardless of the (unconfirmed) AFAP split (Section 4.5).
-
-## Section 11 -- Tier 2 Catalogue (reviewer judgement required)
-
-These items require a licensed Uruguayan accountant's judgement and/or confirmation against primary sources before reliance.
-1. **AFAP income-franja thresholds (2025)** (Section 4.5) — the split of the 15% retirement between BPS and the private AFAP was not confirmed from a primary BPS "Valores" page.
-2. **Exact 2026 IRPF annual-filing dates** (Section 2.3) — the 29 Jun–31 Aug 2026 window is from advisory sources, not yet a primary DGI calendar.
-3. **BSE workplace-accident insurance premium** (Section 4.2) — varies by activity/risk class; no single national rate.
-4. **CCM (Complemento de Cuota Mutual)** — when and how it adds to employer FONASA cost.
-5. **Aguinaldo (sueldo anual complementario) treatment** for BPS/IRPF (Section 8) — not separately sourced in this pass.
-6. **Exact DGI/BPS penalty percentages and minimum fines for 2025** (Section 13).
-7. **Civil/public-organism patronal rates** — differ from the 7.5% general private-sector rate used here.
-
-## Section 12 -- Filing Obligations
-
-### 12.1 Monthly — BPS nómina + IRPF remittance
-
-**BPS nómina table**  _(BPS)_
-
-| Item | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| BPS **nómina** (payroll declaration) | Declare and pay employee + employer BPS shares and IRPF withheld | Per BPS monthly calendar — **[RESEARCH GAP — reviewer to confirm exact monthly due date]** | BPS |
-
-### 12.2 Annual — IRPF declaración jurada (employee's own filing, where required)
-
-**Annual IRPF declaración jurada table**  _(EY Uruguay)_
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| **Form 1102** (individual) / **Form 1103** (family unit) | Annual IRPF sworn declaration for mandatory filers | FY2025: **29 Jun – 31 Aug 2026** — **[RESEARCH GAP — reviewer to confirm exact dates]** | EY Uruguay |
-
-Most single-employer employees do NOT file — the employer's ajuste anual settles the year, with refunds typically from mid-June (EY Uruguay).
-Mandatory filers: independent workers; employees with multiple employers > 150,000 UI; family-unit electors; employees not employed on 31 December (EY Uruguay).
-
-## Section 13 -- Penalties
-
-Specific 2025 penalty amounts were **not** retrieved from a primary DGI source in this research pass.
-
-**Penalties table**  _(DGI; Código Tributario (IMPO); BPS)_
-
-| Penalty | Detail | Source |
-| --- | --- | --- |
-| Mora (late payment) | Recargos plus interest under the general regime (Código Tributario / Título 1) — **[RESEARCH GAP — reviewer to confirm exact percentages]** | DGI; Código Tributario (IMPO) |
-| Multa por mora | Typically 5% / 10% / 20% of the tax depending on lateness — **[RESEARCH GAP — reviewer to confirm]** | DGI; Código Tributario (IMPO) |
-| Contravención / defraudación | Fines under the general regime — **[RESEARCH GAP — reviewer to confirm exact amounts]** | DGI; Código Tributario (IMPO) |
-| BPS Mora Patronal | Employer default surcharges under BPS rules — **[RESEARCH GAP — reviewer to confirm]** | BPS |
-
-Authoritative starting point: DGI (gub.uy/direccion-general-impositiva) and the Código Tributario via IMPO. Do not state exact penalty figures as confirmed.
-
-## Section 14 -- Excel Working Paper Template
-
-Reproduce this layout in a single worksheet (one column per employee, or one row per employee for a register). All cells in UYU. FY2025 constants: BPC 6,576; MNIG 46,032; retirement ceiling 272,564.
-
-**Excel working paper template table**
-
-| Row | Label | Formula / source |
-| --- | --- | --- |
-| 1 | Employee name | input |
-| 2 | Pay period (month/year) | input |
-| 3 | Nominal salary | input |
-| 4 | FONASA employee rate (decimal) | input (0.03 / 0.045 / 0.05 / 0.06 / 0.065 / 0.08 per Section 3.2) |
-| 5 | Dependent minor children (count) | input |
-| 6 | Children with disability (count) | input |
-| 7 | Retirement base (capped) | `=MIN(B3,272564)` |
-| 8 | Employee retirement | `=B7*0.15` |
-| 9 | Employee FONASA | `=B3*B4` |
-| 10 | Employee FRL | `=B3*0.001` |
-| 11 | **Employee BPS total (deductible)** | `=B8+B9+B10` |
-| 12 | Gross IRPF on income | progressive on B3 per Section 2.1 (see note) |
-| 13 | Deductible-items sum | `=B11 + B5*10960 + B6*21920` |
-| 14 | Deduction credit rate | `=IF(B3<=98640,0.14,0.08)` |
-| 15 | Deduction credit | `=B13*B14` |
-| 16 | **IRPF due** | `=MAX(0,B12-B15)` |
-| 17 | **Net pay** | `=B3-B11-B16` |
-| 18 | Employer retirement | `=B7*0.075` |
-| 19 | Employer FONASA | `=B3*0.05` |
-| 20 | Employer FRL | `=B3*0.001` |
-| 21 | Employer FGCL | `=B3*0.00025` |
-| 22 | **Employer BPS total** | `=B18+B19+B20+B21` |
-| 23 | **Total employer cost** | `=B3+B22` |
-| 24 | Monthly BPS remittance | `=B11+B22` (employee + employer BPS) |
-
-- **Row 12 gross IRPF helper formula** — =IF(B3<=46032,0, IF(B3<=65760,(B3-46032)*0.1, IF(B3<=98640,1972.8+(B3-65760)*0.15, IF(B3<=197280,6904.8+(B3-98640)*0.24, IF(B3<=328800,30578.4+(B3-197280)*0.25, IF(B3<=493200,63458.4+(B3-328800)*0.27, IF(B3<=756240,107846.4+(B3-493200)*0.31, 189388.8+(B3-756240)*0.36)))))))
-
-Cross-check against Example C (nominal 120,000, FONASA 4.5%, no children): row 7 = 120,000; row 8 = 18,000; row 9 = 5,400; row 10 = 120; row 11 = 23,520; row 12 = 12,031.20; row 13 = 23,520; row 14 = 0.08; row 15 = 1,881.60; row 16 = 10,149.60; row 17 = 86,330.40; row 22 = 15,150; row 23 = 135,150. ✓ Matches Example C exactly.
-
-## Section 15 -- Bank Statement / Terminology Reading Guide
-
-Common Uruguayan payroll terms (Spanish → English) and typical bank-statement patterns. Match on the **uppercased** description.
-
-### 15.1 Salary credits (to employees)
-
-**Salary credits table**
-
-| Pattern (UYU bank statement) | Classification |
-| --- | --- |
-| `SUELDO`, `SALARIO`, `HABERES`, `LIQUIDO` | Net salary payment (salario líquido) |
-| `PAGO NOMINA`, `TRANSFERENCIA SUELDO`, `ACREDITACION SUELDO` | Net salary payment |
-| `AGUINALDO`, `SUELDO ANUAL COMPLEMENTARIO`, `SAC` | Aguinaldo / 13th salary (treatment flagged — Section 8) |
-| `ADELANTO`, `ANTICIPO DE SUELDO` | Salary advance — reconcile against month-end net |
-| `PARTIDA`, `PRIMA`, `INCENTIVO` | Bonus / allowance — review IRPF & BPS-base inclusion |
-| `DEVOLUCION IRPF`, `AJUSTE ANUAL` | IRPF year-end refund/adjustment — not new income |
-
-### 15.2 Employer debits to the State (BPS / DGI)
-
-**Employer debits to the state table**
-
-| Pattern | Classification |
-| --- | --- |
-| `BPS`, `BANCO DE PREVISION SOCIAL`, `APORTES BPS` | BPS contribution remittance (employee + employer shares) |
-| `MONTEPIO`, `JUBILATORIO`, `APORTE PERSONAL` | Retirement contribution share |
-| `FONASA` | Health-fund contribution |
-| `FRL`, `FONDO DE RECONVERSION` | FRL contribution |
-| `DGI`, `IRPF`, `RETENCION IRPF` | DGI / IRPF remittance |
-| `BSE`, `SEGURO DE ACCIDENTES` | BSE workplace-accident premium (varies by risk class — research gap) |
-
-### 15.3 Non-payroll / not income
-
-**Non-payroll table**
-
-| Pattern | Classification |
-| --- | --- |
-| `REINTEGRO`, `REEMBOLSO` | Reimbursement / refund — not salary |
-| `VIATICOS`, `GASTOS DE VIAJE` | Travel allowance/expense — review for treatment |
-| `CUOTA PRESTAMO`, `DESCUENTO PRESTAMO` | Loan deduction — not an employer cost |
-
-## Section 16 -- Onboarding Fallback
-
-If the user has not provided enough to run payroll, collect in this order:
-1. Monthly **nominal** salary in UYU — refuse if given in USD or another currency (Section 7.2).
-2. **Family / FONASA situation** — single / single with children / with spouse (own SNIS cover or not) — selects the FONASA band.
-3. Number of dependent **minor children** (and any with disability) — for the IRPF deduction.
-4. Employer **sector** — general private (7.5% patronal) or civil/public organism.
-5. **Pay period** (month + year) — confirm FY2025 constants (BPC 6,576; MNIG 46,032; ceiling 272,564).
-6. Whether the employee has **multiple employers** or elects the family-unit regime — affects annual filing.
-7. Confirm the employer is **registered with BPS**.
-
-If any required input is missing, state what is missing and **do not** fabricate a figure.
-
-## Section 17 -- Interaction with Other Skills
-
-**Interaction with other skills table**
-
-| Scenario | Skill to Use |
-| --- | --- |
-| Employee payroll (IRPF + BPS) | **This skill (uruguay-payroll.md)** |
-| Uruguay VAT (IVA) returns | uruguay-iva.md |
-| Individual IRPF annual return (Form 1102/1103) | uruguay-income-tax.md (employee's own filing, where required) |
-| Uruguay corporate income tax (IRAE) | uruguay-corporate-tax.md |
-| Uruguay bookkeeping | uruguay-bookkeeping.md |
-
-### Key handoff points
-
-**Payroll → Bookkeeping:** nominal wages and the 12.625% employer BPS are expenses; the employee BPS (~19.6%) and IRPF withheld are liabilities until remitted to BPS/DGI.
-**Payroll → IRPF return:** the employer's ajuste anual settles most single-employer employees; the employee files Form 1102/1103 only if a mandatory filer (Section 2.3).
-
-### 18.1 Sources
-
-**Sources**  _(see individual rows)_
-
-| # | Title | Publisher | URL |
-| --- | --- | --- | --- |
-| 1 | BPS Comunicado R 2/2025 — IRPF 2025 monthly values (escalas) | Banco de Previsión Social (BPS) | https://www.bps.gub.uy/bps/file/22584/2/2025---comunicado-r-2---valores-escalas-irpf-2025.pdf |
-| 2 | BPS — Tasas (contribution rates) | BPS | https://www.bps.gub.uy/835/tasas.html |
-| 3 | BPS — Tasas Fonasa | BPS | https://www.bps.gub.uy/10314/tasas-fonasa.html |
-| 4 | BPS — Topes de cotización (contribution ceiling) | BPS | https://www.bps.gub.uy/10306/topes-de-cotizacion.html |
-| 5 | DGI — IRPF Categoría 2 escalas y alícuotas | DGI (gub.uy) | https://www.gub.uy/direccion-general-impositiva/politicas-y-gestion/irpf-categoria-2-escalas-alicuotas |
-| 6 | Uruguay — Individual — Taxes on personal income | PwC Worldwide Tax Summaries | https://taxsummaries.pwc.com/uruguay/individual/taxes-on-personal-income |
-| 7 | Uruguay — Individual — Other taxes (social security) | PwC Worldwide Tax Summaries | https://taxsummaries.pwc.com/uruguay/individual/other-taxes |
-| 8 | IRPF — vencimiento declaración jurada 2025 | EY Uruguay | https://www.ey.com/es_uy/newsroom/2025/05/irpf-vencimiento-para-la-presentacion-de-la-declaracion-jurada-en-2025 |
-| 9 | Decreto N° 369/024 — salario mínimo nacional (1 Jan 2025) | IMPO | https://www.impo.com.uy/bases/decretos/369-2024/1 |
-
-### 18.2 Test Suite (numbered — recompute to confirm any change)
-
-**Test Suite**  _(see individual rows)_
-
-| # | Input | Expected output | Recomputation |
-| --- | --- | --- | --- |
-| 1 | Min wage, nominal 23,604, single | IRPF 0; net 18,977.62; employer cost 26,584.00 | Ex. A — employee BPS 4,626.38; employer BPS 2,980.00 |
-| 2 | Nominal 60,000, single | IRPF 0 (credit > gross); net 48,240.00; employer cost 67,575.00 | Ex. B — gross IRPF 1,396.80 < credit 1,646.40 |
-| 3 | Nominal 120,000, single | IRPF 10,149.60; net 86,330.40; employer cost 135,150.00 | Ex. C — gross IRPF 12,031.20; credit 1,881.60 |
-| 4 | Nominal 300,000, single (ceiling) | IRPF 51,883.63; net 193,431.77; employer cost 335,817.30 | Ex. D — retirement on 272,564; gross IRPF 56,258.40 |
-| 5 | Nominal 120,000, single + 1 child | IRPF 9,128.80; net 85,551.20; employer cost 135,150.00 | Ex. E — FONASA 6%; child deduction 10,960 |
-| 6 | IRPF scale cumulative | 1,972.80 / 6,904.80 / 30,578.40 / 63,458.40 / 107,846.40 / 189,388.80 | Ex. F — bracket tops match Section 2.1 |
-| 7 | Employer total rate | 12.625% (7.5 + 5 + 0.1 + 0.025) | Section 4.2 |
-| 8 | Employee total rate (single, >2.5 BPC, below ceiling) | 19.6% (15 + 4.5 + 0.1) | Section 3.4 |
-| 9 | Monthly BPS remittance, nominal 120,000 (Ex. C) | 23,520 + 15,150 = 38,670 | Template row 24 |
-| 10 | Deadlines | BPS nómina monthly; IRPF DJ 1102/1103 Jun–Aug (mandatory filers only) | Section 12 |
-| 11 | Below MNIG (≤ 46,032) | IRPF = 0, BPS still due | Tier 1 rule 2; Ex. A |
-| 12 | Above retirement ceiling (> 272,564) | Retirement capped; FONASA/FRL/FGCL on full nominal | Tier 1 rule 8; Ex. D |
-
-## PROHIBITIONS
-
-- **Never skip IRPF withholding** — NEVER skip IRPF withholding — Uruguay's employer IS an IRPF withholding agent on dependent salaries; compute monthly IRPF and the year-end ajuste anual.  _(PROHIBITIONS section)_
-- **Never compute payroll in non-UYU currency** — NEVER compute Uruguayan payroll in USD or any non-UYU currency — refuse and ask for the UYU nominal salary.  _(PROHIBITIONS section)_
-- **Never apply IRPF as flat rate** — NEVER apply IRPF as a flat rate — it is progressive bracket-by-bracket (Section 2.1).  _(PROHIBITIONS section)_
-- **Never forget deduction credit** — NEVER forget the deduction credit (14% / 8%) — IRPF due = max(0, gross IRPF − credit), and it can drive IRPF to zero.  _(PROHIBITIONS section)_
-- **Never apply retirement contributions above ceiling** — NEVER apply retirement contributions (15% / 7.5%) above the UYU 272,564 ceiling, and never cap FONASA/FRL/FGCL — those apply to the full nominal salary.  _(PROHIBITIONS section)_
-- **Never assume FONASA employee rate** — NEVER assume the FONASA employee rate — it varies 3%–8% by income band and family situation; ask if unknown.  _(PROHIBITIONS section)_
-- **Never tax minimum-wage earner under IRPF** — NEVER tax a minimum-wage earner under IRPF (UYU 23,604 < MNIG 46,032), but always still compute BPS.  _(PROHIBITIONS section)_
-- **Never state AFAP allocation thresholds as confirmed** — NEVER state AFAP allocation thresholds as confirmed — they are a research gap (the total 15% employee retirement is unaffected).  _(PROHIBITIONS section)_
-- **Never state exact penalty amounts as confirmed** — NEVER state exact DGI/BPS penalty amounts, BSE accident premiums, or aguinaldo treatment as confirmed — they are research gaps.  _(PROHIBITIONS section)_
-- **Never apply unconfirmed 2026 figures** — NEVER apply unconfirmed 2026 figures (BPC, MNIG, minimum wage, retirement ceiling) — use FY2025 values until 2026 values are published.  _(PROHIBITIONS section)_
-- **Never present computations as definitive** — NEVER present payroll computations as definitive — label them estimated and direct the user to a licensed Uruguayan accountant (contador público).  _(PROHIBITIONS section)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant in Uruguay) before implementation. This is a Tier 2 (research-verified) skill: figures are sourced to named authorities (BPS, DGI, IMPO), Big-4 summaries (PwC), and named advisories (EY Uruguay) but have not yet been verified section-by-section by a licensed Uruguayan accountant, and items marked "[RESEARCH GAP — reviewer to confirm]" carry residual uncertainty.
+# Uruguay payroll for 2026 v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+This skill runs a monthly payroll for an employee of a private-sector employer in Uruguay ("Industria y Comercio" affiliation at BPS) in 2026: the employee's BPS contributions, the IRPF the employer withholds, net pay, and the employer's own contributions. It links to the other Uruguay skills and does not repeat them:
+
+- [uruguay-income-tax](uruguay-income-tax.md): the employee's annual IRPF, the annual scale, who must file forms 1102 and 1103, DGI penalties.
+- [uruguay-social-contributions](uruguay-social-contributions.md): the BPS contribution rules beyond the private-sector employee, including the self-employed (unipersonales) and partners.
+- [uy-cross-border](uy-cross-border.md): non-resident employees (IRNR) and the IRNR option for foreign staff.
+
+**Which text of the law.** Ley 16.713 (pension system, 1995), Ley 20.130 (pension reform, Sistema Previsional Común, 2023), Ley 18.211 (FONASA rates), Decreto 148/007 (IRPF regulation, withholding on wages in arts. 60 to 65), as consolidated on IMPO; the 2026 values as published by BPS, which sets and collects them, and by DGI.
+
+**Quick reference, 2026**
+
+| Item | Figure |
+|---|---|
+| Tax year | Calendar year 2026; pay is declared and paid to BPS the month after the work month |
+| BPC 2026 | UYU 6,864 a month from 1 January 2026 (Decreto 11/026) |
+| Employee BPS | Jubilatorio 15% + FONASA 3% to 8% + FRL 0.10% |
+| Employer BPS | Jubilatorio 7.5% + FONASA 5% (plus the cuota mutual top-up where due) + FRL 0.10% + FGCL 0.025% |
+| Jubilatorio ceiling, mixed (AFAP) regime | UYU 288,836 a month from February 2026 (UYU 272,564 for January 2026) |
+| IRPF withholding | Monthly scale 0% up to 7 BPC (UYU 48,048), then 10% to 36%; pay over 10 BPC is grossed up by 6%; credit of 14% (pay up to 15 BPC, UYU 102,960) or 8% of deductions |
+| Minimum wage | UYU 24,572 a month from 1 January 2026; UYU 25,383 from 1 July 2026 |
+
+## Who this applies to
+
+- **Employers.** Any employer of dependent workers must register each worker with BPS (alta), report changes and leavers (baja) through the GAFI service, and send the monthly nómina of all staff through the declaración nominada ([BPS, declarar al personal](https://www.bps.gub.uy/818/declarar-al-personal.html)). All persons doing paid work in Uruguay, dependent or not, fall under BPS unless another fund covers the activity (Ley 20.130 art. 3(1)).
+- **Employer as IRPF withholder.** Employers of active BPS affiliates are responsables sustitutos and withhold IRPF on wages every month (Decreto 148/007 arts. 61 to 63). BPS receives the withholding data with the nómina, calculates the amount and bills it (art. 65).
+- **Employees covered here.** Private-sector employees affiliated to BPS under "Industria y Comercio". Employees affiliated to the bank, notarial, professional, military and police funds are withheld under DGI rules instead (arts. 67 and 68).
+- **Which pension regime.** Three groups pay the same 15% and 7.5% but split them differently and meet the ceiling differently:
+  1. Workers whose first job began on or after the start of the Sistema Previsional Común (1 December 2023, per [BPS values note 5](https://www.bps.gub.uy/5478/valores-actuales.html)): Ley 20.130 arts. 21 and 22.
+  2. Workers already in the mixed regime of Ley 16.713 (BPS plus an AFAP) before that date: Ley 16.713 arts. 7 and 8, kept for them by Ley 20.130 art. 22.
+  3. Workers outside the mixed regime: BPS states the contribution ceiling only for workers "incorporados al nuevo régimen jubilatorio (AFAP)" ([BPS, topes](https://www.bps.gub.uy/10306/topes-de-cotizacion.html)); confirm their position with BPS.
+- **Out of scope.** Domestic work, rural employers (they pay every four months), construction under the aporte unificado, public bodies (their employer rate differs, per [BPS, tasas](https://www.bps.gub.uy/835/tasas.html)), servicios bonificados, the self-employed, and the employee's own annual return.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| BPC from 1 January 2026 | UYU 6,864 a month | 2026 | https://www.impo.com.uy/bases/decretos/11-2026 (art. 1) |
+| Jubilatorio, employee (montepío), on all pay subject to contributions | 15% | 2026 | https://www.bps.gub.uy/835/tasas.html; Ley 16.713 art. 181, https://www.impo.com.uy/bases/leyes/16713-1995; for new entrants Ley 20.130 art. 21(1), https://www.impo.com.uy/bases/leyes/20130-2023 |
+| Jubilatorio, employer (patronal), Industria y Comercio, since 1 July 2007 | 7.5% | 2026 | https://www.bps.gub.uy/835/tasas.html |
+| Mixed regime (Ley 16.713) levels: tope A, B and C | UYU 96,279 / 144,418 / 288,836 a month (values for October and November 2026; A and B shown in force from January 2026, C from February 2026) | 2026 | https://www.bps.gub.uy/5478/valores-actuales.html; history at https://www.bps.gub.uy/5479/valores-historicos.html |
+| Tope C in January 2026 (value in force from February 2025 until the February 2026 change) | UYU 272,564 | 2026 | https://www.bps.gub.uy/5479/valores-historicos.html |
+| Ley 20.130 levels for the Sistema Previsional Común: nivel A and nivel B | UYU 144,418 (from January 2026) and UYU 288,836 (from February 2026) | 2026 | https://www.bps.gub.uy/5478/valores-actuales.html; Ley 20.130 arts. 22 and 25 |
+| FONASA employee, pay up to 2.5 BPC (UYU 17,160), no spouse, with or without children | 3% | 2026 | https://www.bps.gub.uy/10314/tasas-fonasa.html |
+| FONASA employee, pay up to 2.5 BPC, spouse or partner without SNIS cover of their own | 5% (3% + 2%) | 2026 | same |
+| FONASA employee, pay over 2.5 BPC, no spouse, no children | 4.5% | 2026 | same; Ley 18.211 art. 61 B), https://www.impo.com.uy/bases/leyes/18211-2007 |
+| FONASA employee, pay over 2.5 BPC, no spouse, with children | 6% | 2026 | same; Ley 18.211 art. 61 A) |
+| FONASA employee, pay over 2.5 BPC, spouse without own SNIS cover, no children | 6.5% | 2026 | https://www.bps.gub.uy/10314/tasas-fonasa.html |
+| FONASA employee, pay over 2.5 BPC, spouse without own SNIS cover, with children | 8% | 2026 | same |
+| FONASA employer | 5% of pay subject to montepío, plus the Complemento de Cuota Mutual (CCM) where due | 2026 | same; Ley 18.211 art. 61 |
+| Cuota mutual (value used for the CCM) | UYU 1,820 (January to June 2026); UYU 1,880 from July 2026 | 2026 | https://www.bps.gub.uy/5479/valores-historicos.html |
+| FRL (Fondo de Reconversión Laboral), employee and employer, since 1 January 2019 | 0.10% each (0.125% until 31 December 2018) | 2026 | https://www.bps.gub.uy/10322/fondo-reconversion-laboral-frl.html |
+| FGCL (Fondo de Garantía de Créditos Laborales), employer, private-sector dependants | 0.025% | 2026 | https://www.bps.gub.uy/15668/fondo-de-garantia-de-creditos-laborales.html (Ley 19.690) |
+| IRPF monthly scale, up to 7 BPC (UYU 48,048) | 0% | 2026 | https://www.bps.gub.uy/23860/2026---comunicado-r-5---valores-escalas-irpf-2026.html (part 1); Decreto 148/007 art. 63, https://www.impo.com.uy/bases/decretos/148-2007 |
+| Over 7 to 10 BPC (to UYU 68,640) | 10% | 2026 | same |
+| Over 10 to 15 BPC (to UYU 102,960) | 15% | 2026 | same |
+| Over 15 to 30 BPC (to UYU 205,920) | 24% | 2026 | same |
+| Over 30 to 50 BPC (to UYU 343,200) | 25% | 2026 | same |
+| Over 50 to 75 BPC (to UYU 514,800) | 27% | 2026 | same |
+| Over 75 to 115 BPC (to UYU 789,360) | 31% | 2026 | same |
+| Over 115 BPC | 36% | 2026 | same |
+| Gross-up of monthly computable pay over 10 BPC (UYU 68,640), on the part subject to personal contributions, ignoring the AFAP ceiling | +6% | 2026 | https://www.impo.com.uy/bases/decretos/148-2007 (arts. 60 and 63(1)) |
+| Deduction credit rate, monthly nominal pay (without aguinaldo and salario vacacional) up to 15 BPC (UYU 102,960) | 14% | 2026 | https://www.bps.gub.uy/23860/2026---comunicado-r-5---valores-escalas-irpf-2026.html (part 3); Decreto 148/007 art. 63(2) |
+| Deduction credit rate, monthly nominal pay over 15 BPC | 8% | 2026 | same |
+| Monthly deduction per minor child (20 BPC a year) | UYU 11,440 | 2026 | https://www.bps.gub.uy/23860/2026---comunicado-r-5---valores-escalas-irpf-2026.html (part 4) |
+| Monthly deduction per dependant with a disability (40 BPC a year) | UYU 22,880 | 2026 | same |
+| Fondo de Solidaridad, monthly deduction by category 1 to 5 | UYU 286 / 572 / 1,144 / 1,049 / 1,621 | 2026 | same |
+| Monthly limit for exclusion from withholding (art. 64 bis) | UYU 68,300 | 2026 | same (part 2) |
+| Reduction of withholding for an employee who meets DGI's conditions and asks for it | 5% of the computed withholding; the December ajuste is then capped at 20% of December pay | 2026 | https://www.impo.com.uy/bases/decretos/148-2007 (arts. 63 and 64) |
+| Salario mínimo nacional | UYU 24,572 a month from 1 January 2026; UYU 25,383 from 1 July 2026 (divide by 25 for a day, by 200 for an hour) | 2026 | https://www.impo.com.uy/bases/decretos/319-2025 (arts. 1 and 2) |
+| FONASA user threshold: a worker is a Seguro Nacional de Salud user from 13 days worked in the month or pay of 1.25 BPC | 1.25 BPC (UYU 8,580) | 2026 | https://www.impo.com.uy/bases/leyes/18211-2007 (art. 62) |
+| FONASA year-end refund: personal contributions above 1.25 times the Costo Promedio Equivalente (CPE) of the worker and covered family are refunded | CPE UYU 6,858 a month (October and November 2026 value) | 2026 | Ley 18.211 art. 61; https://www.bps.gub.uy/5478/valores-actuales.html |
+
+## The base
+
+**What is pay.** Labour income from employment: regular or extraordinary pay, in money or in kind, including allowances and per diems paid without accounting; dismissal pay is taxed only above the legal minimum (Decreto 148/007 art. 48). The IRPF base cannot be lower than the pay subject to BPS contributions (art. 63).
+
+**Step by step, one employee, one month.**
+
+1. **Pay subject to contributions** for the month. Aguinaldo is subject to the same legal regime as salary (Ley 12.840 art. 4) and pays contributions; it is left out when choosing the FONASA band ([BPS, tasas FONASA](https://www.bps.gub.uy/10314/tasas-fonasa.html)), and under Ley 20.130 it counts as a separate income for the pillar split (art. 24). The salario vacacional (suma para el mejor goce de la licencia, Ley 16.101 art. 4) is free of social charges (Ley 12.590 art. 27) but is taxed in IRPF (Decreto 148/007 art. 48).
+2. **Jubilatorio.** 15% employee and 7.5% employer, on pay up to the ceiling that fits the worker's regime:
+   - Sistema Previsional Común (first job from 1 December 2023): of the 15%, 10% on pay up to nivel A goes to BPS, and 5% up to nivel A plus 15% between nivel A and nivel B goes to the AFAP; above nivel B the personal contribution is voluntary (Ley 20.130 art. 22). Art. 28 A counts the employer's contribution on pay up to the same amount (UYU 215,179 at 2022 values, adjusted under art. 25).
+   - Ley 16.713 mixed regime: pay up to tope A is in the solidarity pillar (BPS), between A and C in the individual savings pillar (AFAP); above C saving is voluntary (Ley 16.713 art. 7). A worker who opted under art. 8 sends 50% of the first-level pay to the AFAP.
+   - The ceiling bites the jubilatorio only. FONASA is on the total pay subject to montepío (Ley 18.211 art. 61), and FRL and FGCL are on full pay.
+3. **FONASA employee** at 3% to 8%: choose the band by all pay subject to contributions in the month without aguinaldo (above or below 2.5 BPC, UYU 17,160), then the family line. The spouse lines apply only when the spouse or partner has no SNIS cover of their own. A child counts if under 18, or of any age with a disability, including the spouse's or partner's children (Ley 18.211 art. 61).
+4. **FRL** 0.10% employee.
+5. **IRPF to withhold** (Decreto 148/007 art. 63):
+   - a. Take the month's computable pay without aguinaldo. If it exceeds 10 BPC (UYU 68,640), increase the part subject to personal contributions by 6%, measured before any AFAP ceiling.
+   - b. Run that figure through the monthly scale.
+   - c. Add the deductions: the employee's own jubilatorio, FONASA and FRL for the month, the Fondo de Solidaridad if any, UYU 11,440 per minor child or UYU 22,880 per dependant with a disability, and the other items of Título 7 art. 49 declared on form 3100. Deductions tied to the aguinaldo are left out of this step.
+   - d. Multiply the deductions by 14% if monthly nominal pay (without aguinaldo and salario vacacional) is up to 15 BPC (UYU 102,960), otherwise by 8%.
+   - e. Withholding = b minus d. Where the credit exceeds the tax, nothing is withheld that month.
+   - f. If the employee meets DGI's conditions and asked for the 5% reduction, reduce the result by 5%.
+6. **Aguinaldo and salario vacacional.** Taxed apart from the scale, at the highest marginal rate the employee's other labour income reaches; if that income and its deductions give no tax, the rate is zero (Decreto 148/007 art. 55 bis; Título 7 arts. 47 and 48). Only the legally required amounts get this treatment; amounts owed under collective agreements do not.
+7. **Net pay** = gross pay minus employee jubilatorio, FONASA, FRL and IRPF.
+8. **Employer cost** = gross pay plus 7.5% jubilatorio (to the ceiling), 5% FONASA plus any CCM, 0.10% FRL and 0.025% FGCL.
+
+**Form 3100 and deductions.** The employee declares family circumstances and deductions to the employer on form 3100; the employer loads them into the BPS declaration. Without a form, the employer withholds with no deductions and the employee can claim them in the annual return. A new or changed form counts from the month after it is handed in; for the ajuste anual the date the deduction started counts ([BPS, IRPF](https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html); Decreto 148/007 art. 63).
+
+**Exclusion from withholding.** An employee whose total employment income stays within the monthly limit set by the Executive (UYU 68,300 for 2026) can give the employer a sworn statement and be excluded from monthly withholding and from the ajuste anual, from the following month (or from the start of employment). If pay in a month exceeds the limit, the employer withholds anyway (Decreto 148/007 arts. 64 bis and 78 ter). The option is barred for a family-unit filer and for anyone with independent income (art. 78 ter).
+
+**Ajuste anual.** At 31 December the employer recomputes the year with the information in force at that date, compares it with the withholdings made and withholds any balance due. A balance in the employee's favour is refunded by DGI. If the employee had only this employer all year, the withholding is final and the employee need not file; a family-unit filer, or one who took the 5% reduction, must file (Decreto 148/007 art. 64). BPS closes the year's IRPF information on 30 April of the next year; after that, corrections go to DGI ([BPS, IRPF](https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html)).
+
+## Deadlines and filing
+
+| Step | What | When | Where |
+|---|---|---|---|
+| Before the first hire | Register the company's wage-council group and subgroup; register each worker (alta) | Alta from 10 days before the start date up to the start date itself ([BPS guide, Industria y Comercio](https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf)) | BPS online services, GAFI, or the BPS Empresas app ([BPS](https://www.bps.gub.uy/818/declarar-al-personal.html)) |
+| Monthly | Nómina (declaración nominada) of all staff and pay for the work month, with the IRPF data from form 3100 | Month after the work month, by the BPS calendar date | BPS online services, declaración nominada |
+| Monthly | Pay the BPS bill (jubilatorio, FONASA, FRL, FGCL) and the IRPF bill | Same calendar; the IRPF bill carries the DGI due date ([BPS, pago](https://www.bps.gub.uy/10357/pago-de-aportes.html)) | BPS service "Emitir facturas, declaración jurada de no pago y pagar aportes", or the collection network |
+| If you cannot pay | File the nómina with a declaración jurada de no pago (DJNP) and pay at least the personal contributions withheld | By the due date | Same service |
+| Leavers and changes | Register the baja or the change; a worker returning early from unemployment benefit within 5 working days | When it happens | GAFI |
+| Year end | Ajuste anual of IRPF | December 2026 pay | December nómina |
+
+**2026 calendar for most private employers** ("todos los demás contribuyentes", by the last digit of the BPS company number), [Resolución de Directorio 37-15/2025](https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf): in the month of payment, digits 0 to 4 / 5 to 9 are due on January 19 / 20, February 18 / 19, March 16 / 17, April 20 / 21, May 19 / 20, June 15 / 16, July 15 / 16, August 17 / 18, September 15 / 16, October 16 / 19, November 17 / 18, December 15 / 16. Paying by internet extends the payment date (not the nómina date) to January 23, February 24, March 20, April 24, May 25, June 22, July 21, August 21, September 21, October 22, November 23 and December 21. Seasonal companies are due on the fifth working day of the month. Large taxpayers ("mayores contribuyentes") and public bodies have earlier dates in the same calendar (for example November 12 for large taxpayers).
+
+## Penalties and interest
+
+| Item | Figure | Source |
+|---|---|---|
+| BPS late-payment fine, nómina filed on time with the DJNP | 2.5% if paid within 5 working days after the due date; 5% up to 90 calendar days; 10% after that | [BPS, multas y recargos](https://www.bps.gub.uy/18132/multas-y-recargos-por-mora.html) |
+| BPS late-payment fine, nómina not filed on time with the DJNP | 5% / 10% / 20% for the same periods | same |
+| BPS recargo (monthly surcharge on the unpaid amount, capitalised every four months) | 0.90% a month from January 2026; 0.80% a month from May 2026 | [BPS, valores históricos](https://www.bps.gub.uy/5479/valores-historicos.html) |
+| Late or missing nómina | First time in the calendar year: 0.1 UR per worker not declared if paid or DJNP filed within the due month, 0.25 UR after; repeat: 0.2 UR and 0.5 UR; capped at 5 UR when the nómina was on time and only the payment or DJNP was late (UR UYU 1,948.97 in November 2026) | [BPS, multa por nómina](https://www.bps.gub.uy/10366/multa-por-nomina.html) (Ley 18.834 art. 281); UR at [BPS, valores actuales](https://www.bps.gub.uy/5478/valores-actuales.html) |
+| Withheld contributions not paid over | Exposure to a criminal complaint for apropiación indebida | [BPS, pago de aportes](https://www.bps.gub.uy/10357/pago-de-aportes.html) |
+| Good payer | Pay without fine or surcharge from the day after the due date to the end of that month (Código Tributario art. 94, RD 1-13/2008); December discount on employer contributions for micro (up to 4 people) and small (up to 19) firms with 12 regular payments (Ley 17.963) | [BPS, buenos pagadores](https://www.bps.gub.uy/10362/beneficios-buenos-pagadores.html) |
+| IRPF withholding paid late | DGI fines and surcharges under Código Tributario art. 94 (see [uruguay-income-tax](uruguay-income-tax.md)); BPS bills it with the DGI due date and DGI's fine procedure applies | [BPS, IRPF](https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html) |
+
+## Cross-border points
+
+- **Posted abroad.** A dependent worker sent abroad for less than 183 days keeps Uruguayan affiliation, unless a social security agreement's posting rule applies; for longer periods worker and employer may agree to keep it for up to five years (Ley 20.130 art. 3(6)).
+- **Working in Uruguay for a foreign employer with no permanent establishment.** The worker is covered by BPS as non-dependent, on the pay actually received, unless a dependent worker proves cover in the employer's country under an agreement in force (Ley 20.130 art. 3(7)).
+- **Free-zone staff and foreign specialists.** Foreign staff in a free zone who are outside BPS can opt for IRNR on their wages; foreign IT specialists under contracts started up to 28 February 2025 could opt for IRNR for five years. Their employer withholds IRNR instead of IRPF. See [uy-cross-border](uy-cross-border.md).
+- **Non-resident employees** are not in IRPF; their wages are IRNR income, withheld by the employer. See [uy-cross-border](uy-cross-border.md).
+
+## Two worked examples that recompute
+
+### Example 1: employee on UYU 120,000 a month, single, no children
+
+Martina works full time for a Montevideo software firm in March 2026. Her monthly salary is UYU 120,000. She has no spouse or partner and no children, handed in form 3100 with no deductions, and is in the AFAP mixed regime. She pays no Fondo de Solidaridad.
+
+BPS. Her pay is below the UYU 288,836 ceiling, so the jubilatorio is on all of it: 15% = UYU 18,000. Pay is above 2.5 BPC, single without children: FONASA 4.5% = UYU 5,400. FRL 0.10% = UYU 120. Employee contributions total UYU 23,520.
+
+IRPF. Pay exceeds 10 BPC (UYU 68,640), so it is grossed up by 6% to UYU 127,200. On the scale: 10% of (68,640 - 48,048) = 2,059.20; 15% of (102,960 - 68,640) = 5,148.00; 24% of (127,200 - 102,960) = 5,817.60; tax UYU 13,024.80. Her nominal pay exceeds 15 BPC (UYU 102,960), so the credit is 8% of her deductions of UYU 23,520 = UYU 1,881.60. Withholding: UYU 11,143.20.
+
+Net pay: 120,000 - 23,520 - 11,143.20 = UYU 85,336.80. The employer adds 7.5% jubilatorio (9,000), 5% FONASA (6,000), 0.10% FRL (120) and 0.025% FGCL (30): UYU 15,150, so the cost is UYU 135,150. The April BPS bill for March carries UYU 38,670 of contributions plus the IRPF of UYU 11,143.20.
+
+```oa-check
+name: Martina, UYU 120,000 a month, single, no children, March 2026
+inputs:
+  gross: 120000
+  bpc: 6864
+  ceiling: 288836
+  fonasa_rate: 0.045
+steps:
+  - jub_ee: min(gross, ceiling) * 0.15
+  - fonasa_ee: gross * fonasa_rate
+  - frl_ee: gross * 0.001
+  - ee_total: jub_ee + fonasa_ee + frl_ee
+  - irpf_base: gross * 1.06
+  - tax: (10 * bpc - 7 * bpc) * 0.10 + (15 * bpc - 10 * bpc) * 0.15 + (irpf_base - 15 * bpc) * 0.24
+  - credit: ee_total * 0.08
+  - irpf: tax - credit
+  - net_pay: gross - ee_total - irpf
+  - er_total: min(gross, ceiling) * 0.075 + gross * 0.05 + gross * 0.001 + gross * 0.00025
+  - employer_cost: gross + er_total
+  - to_bps: ee_total + er_total
+expected:
+  ee_total: 23520.00
+  irpf_base: 127200.00
+  tax: 13024.80
+  credit: 1881.60
+  irpf: 11143.20
+  net_pay: 85336.80
+  er_total: 15150.00
+  employer_cost: 135150.00
+  to_bps: 38670.00
+```
+
+### Example 2: pay above the ceiling, one child, and whether to declare the child on form 3100
+
+Diego earns UYU 350,000 a month in March 2026 in the mixed regime. He has a son aged 9 and no spouse. Should he hand in a new form 3100 declaring the child, or leave the deduction to an annual return?
+
+BPS. The jubilatorio stops at the ceiling: 15% of 288,836 = UYU 43,325.40. FONASA, above 2.5 BPC with a child: 6% of the full 350,000 = UYU 21,000. FRL 0.10% = UYU 350. Employee contributions: UYU 64,675.40.
+
+IRPF. The 6% gross-up is on the full pay, ignoring the AFAP ceiling: UYU 371,000. On the scale: 2,059.20 + 5,148.00 + 24% of (205,920 - 102,960) = 24,710.40 + 25% of (343,200 - 205,920) = 34,320.00 + 27% of (371,000 - 343,200) = 7,506.00; tax UYU 73,743.60. Nominal pay is over 15 BPC, so the credit rate is 8%.
+
+- **Child declared on form 3100:** deductions 64,675.40 + 11,440 = UYU 76,115.40; credit UYU 6,089.23; withholding UYU 67,654.37; net pay UYU 217,670.23.
+- **Child not declared:** credit 8% of 64,675.40 = UYU 5,174.03; withholding UYU 68,569.57.
+
+The decision: declaring the child cuts each month's withholding by UYU 915.20 (8% of UYU 11,440), from the month after he hands in the form. Not declaring it does not lose the deduction, but the excess comes back only through an annual return; with one employer settling his year in the ajuste anual, declaring it on form 3100 is the better route unless the other parent claims the child.
+
+The employer pays 7.5% of 288,836 = 21,662.70, plus 5% FONASA (17,500), FRL (350) and FGCL (87.50) on full pay: UYU 39,600.20.
+
+```oa-check
+name: Diego, UYU 350,000 above the ceiling, one child, form 3100 both ways
+inputs:
+  gross: 350000
+  bpc: 6864
+  ceiling: 288836
+  child: 11440
+steps:
+  - ee_total: min(gross, ceiling) * 0.15 + gross * 0.06 + gross * 0.001
+  - irpf_base: gross * 1.06
+  - tax: (10 * bpc - 7 * bpc) * 0.10 + (15 * bpc - 10 * bpc) * 0.15 + (30 * bpc - 15 * bpc) * 0.24 + (50 * bpc - 30 * bpc) * 0.25 + (irpf_base - 50 * bpc) * 0.27
+  - credit_declared: round((ee_total + child) * 0.08, 2)
+  - irpf_declared: tax - credit_declared
+  - credit_not_declared: round(ee_total * 0.08, 2)
+  - irpf_not_declared: tax - credit_not_declared
+  - monthly_saving: irpf_not_declared - irpf_declared
+  - net_pay_declared: gross - ee_total - irpf_declared
+  - er_total: min(gross, ceiling) * 0.075 + gross * 0.05 + gross * 0.001 + gross * 0.00025
+expected:
+  ee_total: 64675.40
+  tax: 73743.60
+  irpf_declared: 67654.37
+  irpf_not_declared: 68569.57
+  monthly_saving: 915.20
+  net_pay_declared: 217670.23
+  er_total: 39600.20
+```
+
+## Ask the client first
+
+1. Which month: the ceiling (January 2026 against February onward) and the minimum wage (before or from 1 July 2026) change within the year.
+2. The employee's pension regime: first job before or after 1 December 2023, AFAP mixed regime or not, and any art. 8 option.
+3. Family situation for FONASA: spouse or partner and whether they have their own SNIS cover; children under 18 or with a disability.
+4. Form 3100: what the employee declared and when, other employers, Fondo de Solidaridad or Caja Profesional payments, and any request for the 5% reduction or for exclusion from withholding.
+5. Gross pay for the month split into salary, aguinaldo, salario vacacional, benefits in kind, dismissal pay and amounts under collective agreements.
+6. The employer's BPS affiliation (Industria y Comercio or another), company number (its last digit fixes the due date) and wage-council group.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Ley 16.713, IMPO consolidated text: arts. 7, 8 (levels and option) and 181 to 183 (15% personal rate, employer rate cut) read | https://www.impo.com.uy/bases/leyes/16713-1995 | 2026-11-11 |
+| Ley 20.130, IMPO consolidated text: arts. 1 to 9 and 18 to 28 read (inclusion, posting, new entrants' rate, pillar split, adjustment, solidarity resources) | https://www.impo.com.uy/bases/leyes/20130-2023 | 2026-11-11 |
+| Ley 18.211, IMPO consolidated text: arts. 61 to 63 read (FONASA employer 5%, employee rates, user threshold, year-end refund) | https://www.impo.com.uy/bases/leyes/18211-2007 | 2026-11-11 |
+| Ley 12.840, arts. 1 to 4 read (aguinaldo) | https://www.impo.com.uy/bases/leyes/12840-1960 | 2026-11-11 |
+| Ley 16.101 art. 4 read (salario vacacional) | https://www.impo.com.uy/bases/leyes/16101-1989/4 | 2026-11-11 |
+| Ley 12.590 art. 27 read (vacation sums free of social charges) | https://www.impo.com.uy/bases/leyes/12590-1958/27 | 2026-11-11 |
+| Decreto 148/007, IMPO consolidated text: arts. 47, 48, 55, 55 bis, 56, 60 to 68 and 78 ter read (withholding on wages, gross-up, deductions, ajuste anual, exclusion) | https://www.impo.com.uy/bases/decretos/148-2007 | 2026-11-11 |
+| Decreto 11/026, art. 1 read: BPC UYU 6,864 from 1 January 2026 | https://www.impo.com.uy/bases/decretos/11-2026 | 2026-11-11 |
+| Decreto 319/025, arts. 1 and 2 read: minimum wage from 1 January and 1 July 2026 | https://www.impo.com.uy/bases/decretos/319-2025 | 2026-11-11 |
+| BPS ATYR, Comunicado R 5/2026 (February 2026), both pages read: monthly scale, exclusion limit, deduction rates, child and Fondo de Solidaridad values | https://www.bps.gub.uy/23860/2026---comunicado-r-5---valores-escalas-irpf-2026.html | 2026-11-11 |
+| DGI, IRPF categoría 2 escalas y alícuotas (page of 2 February 2026 and its workbook, monthly 2026 sheet read) | https://www.gub.uy/direccion-general-impositiva/politicas-y-gestion/irpf-categoria-2-escalas-alicuotas | 2026-11-11 |
+| BPS, tasas de aporte jubilatorio (15% and 7.5%), page updated 6 July 2023, read in full | https://www.bps.gub.uy/835/tasas.html | 2026-11-11 |
+| BPS, tasas FONASA (employee bands, socio vitalicio, employer 5% and CCM), page updated 23 October 2026, read in full | https://www.bps.gub.uy/10314/tasas-fonasa.html | 2026-11-11 |
+| BPS, FRL page (0.10% since 2019), updated 21 October 2026, read in full | https://www.bps.gub.uy/10322/fondo-reconversion-laboral-frl.html | 2026-11-11 |
+| BPS, FGCL page (0.025% employer), read in full | https://www.bps.gub.uy/15668/fondo-de-garantia-de-creditos-laborales.html | 2026-11-11 |
+| BPS, topes de cotización page (who the ceiling applies to), read in full | https://www.bps.gub.uy/10306/topes-de-cotizacion.html | 2026-11-11 |
+| BPS, valores actuales (October and November 2026 columns: BPC, minimum wage, cuota mutual, CPE, topes A to C, niveles A and B, UR, recargo) | https://www.bps.gub.uy/5478/valores-actuales.html | 2026-11-11 |
+| BPS, valores históricos, 2025 and 2026 entries read for tope C, nivel B, minimum wage, cuota mutual and recargo | https://www.bps.gub.uy/5479/valores-historicos.html | 2026-11-11 |
+| BPS, IRPF page read (form 3100 timing, BPS collection, 30 April closing) | https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html | 2026-11-11 |
+| BPS, declarar al personal page read (GAFI, nómina) | https://www.bps.gub.uy/818/declarar-al-personal.html | 2026-11-11 |
+| BPS, Guía de obligaciones Industria y Comercio (January 2025 edition, page updated 21 May 2026), all pages read: alta deadline, nómina, payment | https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf | 2026-11-11 |
+| BPS, pago de aportes page read (monthly payment, DJNP, minimum payment, IRPF bills) | https://www.bps.gub.uy/10357/pago-de-aportes.html | 2026-11-11 |
+| BPS, calendario de vencimientos 2026 (Resolución de Directorio 37-15/2025), full table read | https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf | 2026-11-11 |
+| BPS, multas y recargos por mora page read (fine percentages) | https://www.bps.gub.uy/18132/multas-y-recargos-por-mora.html | 2026-11-11 |
+| BPS, multa por nómina page read (UR amounts) | https://www.bps.gub.uy/10366/multa-por-nomina.html | 2026-11-11 |
+| BPS, beneficios buenos pagadores page read | https://www.bps.gub.uy/10362/beneficios-buenos-pagadores.html | 2026-11-11 |
+
+Not yet confirmed: the two-instalment payment dates of the aguinaldo (June and December), which sit in a later law not read; whether the 6% gross-up also applies in the December ajuste anual; how deductions attached to the aguinaldo are credited; the CCM amount per worker; the BSE work-accident insurance premium, which BPS does not collect and which varies by activity; the employer rates of public bodies and of servicios bonificados; whether a worker outside the AFAP regime has any contribution ceiling; the socio vitalicio FONASA rates (the BPS table shows an inconsistent row for "sin cónyuge con hijos"); the annual limit for the art. 64 bis exclusion; the DGI form used by employers outside BPS (art. 68); the 2027 BPS calendar.
+
+> Contributed by Michael Cutajar.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
