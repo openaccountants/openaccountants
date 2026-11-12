@@ -36,6 +36,8 @@ depends_on:
 5. Follow the country skill's computation and reconcile contributions already paid, deductions and any income-tax interaction. Use another country or cross-border content skill where the work requires it; a domestic method alone does not settle competing systems.
 6. Hand off a working paper and reviewer brief under `workflow-base`, naming the exact skills and versions, scheme and role for each line, source inputs, calculations, amounts already paid and unresolved coverage or relief questions.
 
+For authoring or reviewing a companion skill, `docs/skill-template.md` is the controlling repository standard. Its declared-shape example requirements take precedence over the legacy universal base's five-example slot. Loading that older base is not evidence that its tax year or legal examples have been checked for the requested period.
+
 ## When to refuse or refer
 
 - A required country skill cannot be loaded, or its name is ambiguous: stop the affected work and identify the missing content. Do not compute from remembered national rates.
@@ -50,6 +52,7 @@ These are repository workflow contracts, not legal authority. Country content su
 | Repository contract | URL | Read on |
 |---|---|---|
 | Universal workflow and companion-content contract, version 0.1 | https://github.com/openaccountants/openaccountants/blob/a92b2c4365f48772530d14b7709f5184f538c3bb/skills/global/methods/workflow-base.md | 2026-11-12 |
+| Controlling authoring standard, fixed core and declared-shape example requirements | https://github.com/openaccountants/openaccountants/blob/8cdabe2dd4bb575fb6817464ebd971a2b5903f5b/docs/skill-template.md | 2026-11-12 |
 | Payroll workflow scope, version 1.0 | https://github.com/openaccountants/openaccountants/blob/a92b2c4365f48772530d14b7709f5184f538c3bb/skills/global/methods/payroll-workflow-base.md | 2026-11-12 |
 
 Not yet confirmed: no country-specific legal rules are asserted by this router.

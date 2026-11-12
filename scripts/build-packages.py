@@ -92,8 +92,8 @@ def include_unshipped_sources():
     for name, target in sorted(targets.items()):
         copies = present.get(name, [])
         if copies:
-            if not any((s.body, s.jurisdiction) == (target.body, target.jurisdiction) for s in copies):
-                raise ValueError(f"No generated copy matches source guidance and jurisdiction for `{name}`")
+            if not any((s.body, s.context) == (target.body, target.context) for s in copies):
+                raise ValueError(f"No generated copy matches source guidance and metadata for `{name}`")
             continue
         if not target.jurisdiction:
             raise ValueError(f"{target.path}: declare jurisdiction before shipping in a mixed supplemental bundle")

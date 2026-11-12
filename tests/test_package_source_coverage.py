@@ -54,6 +54,7 @@ class PackageSourceCoverageTests(unittest.TestCase):
             corridor_b = write("skills/global/cross-border/eg-sa/dtt-summary.md", document("eg-sa-corridor", "EG-SA"))
             write("skills/global/cross-border/_templates/dtt-template.md", document("dtt-template"))
             write("skills/global/reporting/references.md", document("references"))
+            write("evidence/quarantine/held.md", document("held-treaty", "EG-AE"))
             manual = write("packages/us-federal/manual.md", document("manual", "US"))
             manual_before = manual.read_bytes()
             _skills, targets, errors = catalogue(root)
@@ -70,6 +71,7 @@ class PackageSourceCoverageTests(unittest.TestCase):
             self.assertEqual(manual.read_bytes(), manual_before)
             self.assertNotIn("dtt-template", packaged)
             self.assertNotIn("references", packaged)
+            self.assertNotIn("held-treaty", packaged)
 
     def test_existing_wrong_copy_fails_instead_of_silently_claiming_coverage(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -82,7 +84,22 @@ class PackageSourceCoverageTests(unittest.TestCase):
             package.write_text(document("tax", "US-GA"))
             with patch.object(builder, "PACKAGES_DIR", str(root / "packages")), \
                  patch.object(builder, "dependency_targets", return_value=catalogue(root)[1]):
-                with self.assertRaisesRegex(ValueError, "source guidance and jurisdiction"):
+                with self.assertRaisesRegex(ValueError, "source guidance and metadata"):
+                    builder.include_unshipped_sources()
+
+    def test_same_body_with_different_prerequisites_does_not_claim_coverage(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "skills/example/tax.md"
+            source.parent.mkdir(parents=True)
+            source.write_text(document("tax", dependencies=["method"]))
+            (source.parent / "method.md").write_text(document("method"))
+            package = root / "packages/example/tax.md"
+            package.parent.mkdir(parents=True)
+            package.write_text(document("tax"))
+            with patch.object(builder, "PACKAGES_DIR", str(root / "packages")), \
+                 patch.object(builder, "dependency_targets", return_value=catalogue(root)[1]):
+                with self.assertRaisesRegex(ValueError, "source guidance and metadata"):
                     builder.include_unshipped_sources()
 
 

@@ -28,13 +28,26 @@ Source skills outside the historical bundle list are copied byte for byte into
 `packages/_supplemental/`, with their own jurisdictions, scopes and approval
 states. This includes global standards and methods and deeper treaty corridors.
 The build fails if a named packaged copy does not match its source guidance and
-jurisdiction. A reference to a consolidated Act is not a redirect instruction.
+parsed metadata. A reference to a consolidated Act is not a redirect instruction.
+
+The index retains `slug` as the legacy filename identifier and `path` as the
+source location. Its `mcp_slug` is the exact loadable frontmatter name; it is null
+for repository documents and templates. Two nested `dtt-summary.md` files may
+have different MCP names. Use `mcp_slug`, never a basename guess, for `get_skill`.
+`counts.loadable_skill_names` counts distinct MCP names rather than source rows.
+The expanded LLM inventory uses these loadable names too.
 
 The income-tax and social-contributions method names are routing contracts.
 They were once empty stubs removed in April 2026, while many country files kept
 their dependencies. The restored routers load the universal method and require
 the applicable country content. They contain no national tax values and claim
 no professional approval.
+
+The older `workflow-base` still needs a substantive source review: its 2025
+period, unconfirmed defaults and unsourced legal example cannot be certified
+current by a dependency repair. The restored routers explicitly defer authoring
+requirements to `docs/skill-template.md` and require current country content;
+they do not renew that base's legal or professional approval.
 
 Dependencies are prerequisites and cannot form a cycle. Intake comes before
 return assembly; an intake's later handoff to assembly belongs in its body,

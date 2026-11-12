@@ -35,6 +35,8 @@ depends_on:
 5. Follow the universal working-paper and reviewer-brief contract. Take every rate, threshold, exception, filing step and deadline from the loaded country content and its official sources for the requested period. This router supplies none of those values. A general conservative default must never override the country rules or fill a required missing fact; stop and resolve the gap instead.
 6. Before handoff, list the exact skills and versions used, the taxpayer and period, source documents, computations, unresolved questions and the matters needing the professional reviewer's decision.
 
+For authoring or reviewing a companion skill, `docs/skill-template.md` is the controlling repository standard. Its declared-shape example requirements take precedence over the legacy universal base's five-example slot. Loading that older base is not evidence that its tax year or legal examples have been checked for the requested period.
+
 ## When to refuse or refer
 
 - A required skill cannot be loaded, two skills have the same name but different guidance, or the country rules are missing: stop the affected work and name what is missing. Do not continue from model memory.
@@ -49,6 +51,7 @@ These are repository workflow contracts, not legal authority. Country content mu
 | Repository contract | URL | Read on |
 |---|---|---|
 | Universal workflow and companion-content contract, version 0.1 | https://github.com/openaccountants/openaccountants/blob/a92b2c4365f48772530d14b7709f5184f538c3bb/skills/global/methods/workflow-base.md | 2026-11-12 |
+| Controlling authoring standard, fixed core and declared-shape example requirements | https://github.com/openaccountants/openaccountants/blob/8cdabe2dd4bb575fb6817464ebd971a2b5903f5b/docs/skill-template.md | 2026-11-12 |
 | Corporate taxpayer scope, version 0.1 | https://github.com/openaccountants/openaccountants/blob/a92b2c4365f48772530d14b7709f5184f538c3bb/skills/global/methods/corporate-income-tax-workflow-base.md | 2026-11-12 |
 
 Not yet confirmed: no country-specific legal rules are asserted by this router.
