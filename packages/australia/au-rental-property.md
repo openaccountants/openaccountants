@@ -1,7 +1,7 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.6"
+version: "1.7"
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-11-12
@@ -17,9 +17,9 @@ domain: income-tax
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.6
+## Australia Rental Property -- Income & Deductions Skill v1.7
 
-Australia Rental Property -- Income & Deductions Skill v1.6
+Australia Rental Property -- Income & Deductions Skill v1.7
 
 ## Section 1 -- Quick Reference
 
@@ -36,7 +36,7 @@ Australia Rental Property -- Income & Deductions Skill v1.6
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.6 |
+| Skill version | 1.7 |
 
 ### Select the income year before calculating
 
@@ -61,7 +61,7 @@ Section 2.8 covers events in 2026-27; use `au-capital-gains.md` for later events
 | CGT discount (eligible resident individuals, 12+ months) | 50% for CGT events before 1 July 2027; residency and other conditions apply. See Section 2.8 and [ITAA 1997, s 115-100](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
 | Div 43 rate (post-Sep 1987 residential) | 2.5% of construction cost |
 | Div 43 rate (post-Feb 1992 short-term traveller) | 4% |
-| Low-value asset pool threshold | $1,000 (Div 40) |
+| Low-value asset pool threshold | Strictly less than $1,000; low-cost and low-value tests differ. [ITAA 1997, s 40-425](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) |
 | Immediate deduction threshold (Div 40) | $300 |
 
 ### Individual Marginal Tax Rates (2026-27)
@@ -250,23 +250,74 @@ expected:
 
 | Asset | Effective Life (ATO) | Decline Method |
 | --- | --- | --- |
-| Hot water system (gas or electric) | 12 years | Diminishing value or prime cost |
-| Hot water system (solar) | 15 years | Either |
+| Hot water system, gas or electric (excluding piping) | 12 years | Diminishing value or prime cost |
+| Hot water system, solar (excluding piping) | 15 years | Either |
 | Carpet | 8 years | Either |
 | Internal blinds | 10 years | Either |
 | Curtains | 6 years | Either |
-| Oven / cooktop | 12 years | Either |
-| Air conditioning (split system) | 10 years | Either |
+| Oven (not microwave) / cooktop | 12 years | Either |
+| Air conditioning, mini split system up to 20 kW (excluding ducting, pipes and vents) | 10 years | Either |
 | Dishwasher | 8 years | Either |
 | Smoke alarm | 6 years | Either |
 | Ceiling fan | 5 years | Either |
 
 The table follows Table A, Residential property operators (67110), in the *Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025*. Choose the applicable determination under section 40-95, including its contract-date and start-time rules, or a valid self-assessed life; do not automatically reset an existing asset register. See [2025 determination, Schedule 2 Table A](https://www.legislation.gov.au/F2025L01097/asmade).
 
-- **Diminishing value rate** -- 200% ÷ effective life
-- **Prime cost rate** -- 100% ÷ effective life
+- **Diminishing value** -- Generally base value × (qualifying days / 365) × (150% / effective life) for assets held before 10 May 2006, or 200% instead of 150% for assets first held on or after that date. Check reacquisition, rollover and other special rules. Base value is cost in the start year, then opening adjustable value plus eligible second-element costs. Apply the statutory limit on decline and reduce the deduction for non-taxable use. [ITAA 1997, ss 40-25, 40-70 and 40-72](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+- **Prime cost** -- Generally cost × (qualifying days / 365) × (100% / effective life), with the statutory adjustments where cost, effective life or adjustable value changes. Apply non-taxable-use reductions and deduction limits. Do not apply either general formula to a pooled asset. [ITAA 1997, ss 40-25 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+#### Worked acquisition-date check
+
+Assume 2 eligible, unpooled assets have a correctly established base value of $1,000, effective life of 25 years and 365 qualifying days in 2026-27. One was held before 10 May 2006; the other was first held after that date and qualifies for the 200% factor. No special rule or cap changes these calculations. At 80% taxable use, estimated deductions are $48 and $64 respectively. Applying 200% to both would overstate the older asset's deduction by $16. [ITAA 1997, ss 40-25, 40-70 and 40-72](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+```oa-check
+name: General depreciation uses the acquisition-date factor
+inputs:
+  base_value: 1000
+  effective_life: 25
+  qualifying_days: 365
+  legacy_factor_percent: 150
+  later_factor_percent: 200
+  taxable_use_percent: 80
+steps:
+  - legacy_decline: pct(base_value, legacy_factor_percent) / effective_life * qualifying_days / 365
+  - later_decline: pct(base_value, later_factor_percent) / effective_life * qualifying_days / 365
+  - legacy_deduction: pct(legacy_decline, taxable_use_percent)
+  - later_deduction: pct(later_decline, taxable_use_percent)
+expected:
+  legacy_decline: 60
+  later_decline: 80
+  legacy_deduction: 48
+  later_deduction: 64
+```
 - **Second-hand and prior-private-use restriction** -- Subject to commencement/transitional rules, s 40-27 reduces the deduction for decline attributable to residential-accommodation income outside a business where the taxpayer did not hold the asset at its first use/installation, or the specified prior residential/private-use tests apply. Prior private use can matter even for the first owner. This can reduce the relevant deduction to nil; it does not reset the asset's tax value to zero. Establish contract/acquisition dates, first use, prior residence/non-taxable use and the relevant application rules. [ITAA 1997, s 40-27(1)-(2)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) and [ATO, second-hand asset limits](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses).
 - **Exceptions to test** -- The business-purpose boundary and specified entity exception in s 40-27(3) can change the result. The entity categories are corporate tax entities, non-SMSF superannuation plans, managed investment trusts, public unit trusts within s 102P and qualifying all-member unit trusts/partnerships. For assets supplied with new residential premises, apply all conditions in (4)-(5), including the asset's location, prior residence and prior-holder deduction conditions and the limited 6-month rule. Ordinary refurbishment alone does not establish this exception. Subsection (6) addresses assets allocated to a low-value pool; check the separate pool-allocation rules. A newly acquired appliance can qualify in an older building if its own facts meet the deduction rules. [ITAA 1997, s 40-27(2)-(6)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) and [ATO, new and second-hand assets](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses).
+
+- **Low-value pool** -- A low-cost asset must cost less than $1,000 at the relevant year end. A low-value asset instead meets the opening adjustable-value and prior diminishing-value tests. Check all allocation exclusions, including the qualifying $300 immediate-deduction rule. Choosing to pool a low-cost asset generally commits later low-cost assets to that pool, and an allocated asset stays there. Apply the estimated lifetime taxable-use percentage: 18.75% applies to new low-cost additions and relevant second-element costs; 37.5% applies to the opening pool balance and qualifying low-value assets newly allocated at their opening adjustable values. Section 40-435(2) excludes residential rental use that would otherwise be denied by s 40-27, so pooling does not restore deductions for disallowed second-hand/private-use assets. [ITAA 1997, ss 40-425 to 40-445](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+#### Worked pool-entry check
+
+Assume valid pool choices and no allocation exclusion or s 40-435(2) restriction. A new low-cost asset costs $800, and a separate eligible low-value asset has an opening adjustable value of $800. Each has an 80% estimated lifetime taxable-use percentage. Ignoring any opening pool balance or second-element costs, their first allocation-year deductions are $120 and $240 respectively. Both are new to the pool; the asset category determines which rate applies. [ITAA 1997, ss 40-425, 40-435 and 40-440](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+```oa-check
+name: Pool entry distinguishes low-cost from low-value assets
+inputs:
+  low_cost_asset_cost: 800
+  low_value_opening_adjustable_value: 800
+  lifetime_taxable_use_percent: 80
+  low_cost_rate_percent: 18.75
+  low_value_rate_percent: 37.5
+steps:
+  - low_cost_taxable_amount: pct(low_cost_asset_cost, lifetime_taxable_use_percent)
+  - low_value_taxable_amount: pct(low_value_opening_adjustable_value, lifetime_taxable_use_percent)
+  - low_cost_deduction: pct(low_cost_taxable_amount, low_cost_rate_percent)
+  - low_value_deduction: pct(low_value_taxable_amount, low_value_rate_percent)
+expected:
+  low_cost_taxable_amount: 640
+  low_value_taxable_amount: 640
+  low_cost_deduction: 120
+  low_value_deduction: 240
+```
 
 ### 2.6 Division 43 -- Capital Works Deduction
 
@@ -581,7 +632,9 @@ expected:
 
 ### 6.5 Deceased Estates
 
-- **Deceased estate rental treatment** -- Rental property passing through an estate: the legal personal representative (LPR) reports rental income in the estate return until the property is transferred to a beneficiary. CGT is deferred until the beneficiary disposes.
+- **Income and administration** -- Report estate rental income as required, then establish who is assessed on the estate's net income under Division 6. Present entitlement depends on administration, the will and any actual intermediate payments; legal-title transfer alone is not the boundary. A beneficiary may become presently entitled before all property transfers are completed. Apply the relevant beneficiary/trustee assessment rules, including legal disability and non-residence, and the ruling's evidence requirements for any final-administration-year apportionment. Do not simply allocate gross rent by the transfer date. [IT 2622, paragraphs 7-8 and 14-23](https://www.ato.gov.au/law/view/document?docid=ITR/IT2622/NAT/ATO/00001).
+- **CGT on death, passing or sale** -- Division 128 generally disregards a gain or loss arising on death and a gain or loss the LPR makes when an estate asset passes to a beneficiary. A sale by the LPR can instead produce an estate capital gain or loss before any beneficiary receives the property; check available exemptions separately. Do not defer every estate disposal until a beneficiary sells. [ITAA 1997, ss 128-10, 128-15(3) and 128-20(2)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html).
+- **Exceptions and survivorship** -- Check CGT event K3 and its exceptions for assets passing to specified tax-advantaged beneficiaries. For the foreign-resident limb, K3 requires that the deceased was Australian resident and the asset in the beneficiary's hands is not taxable Australian property; a foreign beneficiary alone does not trigger it for Australian rental land. Joint-tenant survivorship ordinarily falls outside the estate and has its own acquisition/cost-base rules. [ITAA 1997, s 104-215](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) and [s 128-50](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html).
 
 ## Section 7 -- Prohibitions
 
@@ -671,6 +724,12 @@ This skill and its outputs are provided for informational and computational purp
 > Contributed by Ryan Duguid.
 
 ## Sources
+
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-425 to 40-445](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): selected sections of retained current compilation 268 read 2026-11-12 for factors, formulas and low-value pools.
+- [IT 2622, paragraphs 7-8 and 14-23](https://www.ato.gov.au/law/view/pdf/pbr/it2622.pdf): authorised PDF read 2026-11-12 for estate administration and present entitlement.
+- [ITAA 1997, Division 128](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html): selected death, passing, sale and joint-tenant provisions in retained current compilation 268 read 2026-11-12.
+- [ITAA 1997, s 104-215](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html): K3 categories and exceptions read 2026-11-12.
+- [2025 effective-life determination, Schedule 2 Table A, Residential property operators 67110](https://www.legislation.gov.au/F2025L01097/asmade/text): selected asset classes and lives read 2026-11-12.
 
 These sources support selected receipt-year, borrowing expense, repair, travel, asset, interest, capital works, 2027 restriction, disposal/foreign-resident and private/holiday-use boundaries in Sections 2.1-2.9 and 6.1-6.3 and their cross-references. They do not establish the currency of every other rule or return field in this guide.
 
