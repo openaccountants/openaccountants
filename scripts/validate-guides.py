@@ -664,6 +664,10 @@ def is_pr_error(name, scope, dated_by_tax_year, content_untouched):
 
     The fixed core is the same in tax and non-tax domains. Body checks apply
     only when the text changes; label checks always apply."""
+    # Identity applies to every skill type, including metadata-only edits. Do
+    # not let a country code such as ID (Indonesia) masquerade as US-ID (Idaho).
+    if name == "jurisdiction_path":
+        return True
     label_check = name in ("tier_honest", "reviewed_on")
     return name in PR_ERROR_CHECKS and (label_check or not content_untouched)
 
