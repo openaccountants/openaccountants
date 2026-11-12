@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2264,
+ "count": 2268,
  "jurisdictions": [
   "AD",
   "AE",
@@ -2847,6 +2847,33 @@
    "tax_year": 2026
   },
   {
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-regional-incentives",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-regional-incentives.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-regional-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "br-return-assembly",
    "jurisdiction": "BR",
    "path": "skills/brazil/br-return-assembly.md",
@@ -2859,6 +2886,15 @@
    "name": "br-simples-nacional",
    "jurisdiction": "BR",
    "path": "skills/brazil/br-simples-nacional.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-state-tax-profiles",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-state-tax-profiles.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -2907,7 +2943,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "brazil-transfer-pricing",
