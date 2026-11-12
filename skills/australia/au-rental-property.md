@@ -725,6 +725,12 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Sources
 
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-425 to 40-445](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): selected sections of retained current compilation 268 read 2026-11-12 for factors, formulas and low-value pools.
+- [IT 2622, paragraphs 7-8 and 14-23](https://www.ato.gov.au/law/view/pdf/pbr/it2622.pdf): authorised PDF read 2026-11-12 for estate administration and present entitlement.
+- [ITAA 1997, Division 128](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html): selected death, passing, sale and joint-tenant provisions in retained current compilation 268 read 2026-11-12.
+- [ITAA 1997, s 104-215](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html): K3 categories and exceptions read 2026-11-12.
+- [2025 effective-life determination, Schedule 2 Table A, Residential property operators 67110](https://www.legislation.gov.au/F2025L01097/asmade/text): selected asset classes and lives read 2026-11-12.
+
 These sources support selected receipt-year, borrowing expense, repair, travel, asset, interest, capital works, 2027 restriction, disposal/foreign-resident and private/holiday-use boundaries in Sections 2.1-2.9 and 6.1-6.3 and their cross-references. They do not establish the currency of every other rule or return field in this guide.
 
 | Source and reading scope | URL | Read on |

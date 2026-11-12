@@ -643,3 +643,10 @@ This skill and its outputs are provided for informational and computational purp
 > Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
+
+## Sources
+
+Read 2026-11-12 for the depreciation correction:
+
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): eligibility, date-specific factors, formulas and effective-life selection. Selected sections of retained current compilation 268 read 2026-11-12.
+- [Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text): asset-specific Table A and Table B lives; select the applicable dated determination. Selected Table A/Table B categories read 2026-11-12.

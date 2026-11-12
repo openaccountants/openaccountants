@@ -4,6 +4,7 @@ description: Use this skill whenever asked about Australian individual income ta
 version: 2.3
 jurisdiction: AU
 tax_year: 2025
+tax_year_notes: "Retained for 2025-26 returns; use 2026-27 values only where expressly labelled and relevant to the requested year."
 last_updated: 2026-11-12
 depends_on:
   - income-tax-workflow-base
@@ -21,7 +22,7 @@ domain: income-tax
 
 ## Asset-threshold currency
 
-- **Asset-threshold currency** — For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. The acquisition date alone does not establish the first-use year or a second deduction. Check prior claims and business use.  _([Tax Reform No. 2 Act 2026, schedules 1–2](https://www.legislation.gov.au/C2026A00071/asmade/text))_
+- **Asset-threshold currency** -- For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. The acquisition date alone does not establish the first-use year or a second deduction. Check prior claims and business use.  _([Tax Reform No. 2 Act 2026, schedules 1–2](https://www.legislation.gov.au/C2026A00071/asmade/text))_
 
 ## Section 1 -- Quick Reference
 
@@ -123,11 +124,11 @@ domain: income-tax
 
 ### Refusal Catalogue
 
-- **R-AU-1 -- Companies and trusts** — Companies lodge company tax returns. Trusts lodge trust returns. This skill covers individual sole traders only.  _(R-AU-1)_
-- **R-AU-2 -- Non-residents** — Non-resident tax rates and rules differ significantly. Out of scope.  _(R-AU-2)_
-- **R-AU-3 -- Capital gains tax events** — CGT events require specialised computation (cost base, discounts, exemptions). Out of scope.  _(R-AU-3)_
-- **R-AU-4 -- Complex depreciation (effective life disputes)** — Where the ATO effective life is contested or the asset has no published rate, escalate.  _(R-AU-4)_
-- **R-AU-5 -- Partnership or PSI (Personal Services Income)** — PSI rules and partnership allocations require separate analysis. Escalate.  _(R-AU-5)_
+- **R-AU-1 -- Companies and trusts** -- Companies lodge company tax returns. Trusts lodge trust returns. This skill covers individual sole traders only.  _(R-AU-1)_
+- **R-AU-2 -- Non-residents** -- Non-resident tax rates and rules differ significantly. Out of scope.  _(R-AU-2)_
+- **R-AU-3 -- Capital gains tax events** -- CGT events require specialised computation (cost base, discounts, exemptions). Out of scope.  _(R-AU-3)_
+- **R-AU-4 -- Complex depreciation (effective life disputes)** -- Where the ATO effective life is contested or the asset has no published rate, escalate.  _(R-AU-4)_
+- **R-AU-5 -- Partnership or PSI (Personal Services Income)** -- PSI rules and partnership allocations require separate analysis. Escalate.  _(R-AU-5)_
 
 ## Section 3 -- Transaction Pattern Library
 
@@ -257,22 +258,66 @@ domain: income-tax
 
 ### 5.1 Business Income [T1]
 
-- **Business income treatment** — All amounts derived from carrying on a business. If GST-registered, report net of GST. If not registered, report gross.  _(ITAA 1997 Div 6)_
+- **Business income treatment** -- All amounts derived from carrying on a business. If GST-registered, report net of GST. If not registered, report gross.  _(ITAA 1997 Div 6)_
 
 ### 5.2 General Deduction [T1]
 
-- **General deduction** — A deduction for any loss or outgoing to the extent it is incurred in gaining or producing assessable income, or necessarily incurred in carrying on a business. Must not be private, domestic, or capital in nature.  _(ITAA 1997 s8-1)_
+- **General deduction** -- A deduction for any loss or outgoing to the extent it is incurred in gaining or producing assessable income, or necessarily incurred in carrying on a business. Must not be private, domestic, or capital in nature.  _(ITAA 1997 s8-1)_
 
 ### 5.3 Depreciation [T1]
 
 - **Diminishing value** -- Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life). For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
-- **Prime cost (straight line)** — Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
-- **Small business entity simplified depreciation** — Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
-- **Instant asset write-off** — Assets costing less than $20,000 (assets first used or installed ready for use 1 July 2023 to 30 June 2026; extension made law by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) can be immediately deducted by small business entities. For later first use, apply the enacted permanent threshold and commencement details in Asset-threshold currency above.  _(ITAA 1997 s 328-180)_
+- **Prime cost (straight line)** -- Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
+- **Small business entity simplified depreciation** -- Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
+- **Instant asset write-off** -- Assets costing less than $20,000 (assets first used or installed ready for use 1 July 2023 to 30 June 2026; extension made law by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) can be immediately deducted by small business entities. For later first use, apply the enacted permanent threshold and commencement details in Asset-threshold currency above.  _(ITAA 1997 s 328-180)_
+
+#### Worked general depreciation checks
+
+Assume eligible, unpooled assets, correctly established costs/base values and effective lives, valid method choices and no special rule or cap changing the results.
+
+For 2 assets with a $1,000 base value, a 25-year effective life and 365 qualifying days, the pre-10 May 2006 factor gives $60 decline and the ordinary later-acquisition factor gives $80. At 80% taxable use, estimated deductions are $48 and $64.
+
+```oa-check
+name: Acquisition date changes the general diminishing-value factor
+inputs:
+  base_value: 1000
+  effective_life: 25
+  qualifying_days: 365
+  legacy_factor_percent: 150
+  later_factor_percent: 200
+  taxable_use_percent: 80
+steps:
+  - legacy_decline: pct(base_value, legacy_factor_percent) / effective_life * qualifying_days / 365
+  - later_decline: pct(base_value, later_factor_percent) / effective_life * qualifying_days / 365
+  - legacy_deduction: pct(legacy_decline, taxable_use_percent)
+  - later_deduction: pct(later_decline, taxable_use_percent)
+expected:
+  legacy_decline: 60
+  later_decline: 80
+  legacy_deduction: 48
+  later_deduction: 64
+```
+
+As a separate first-year prime-cost example, cost is $1,825, effective life is 5 years and there are 100 qualifying days. Decline is $100; at 80% taxable use the estimated deduction is $80. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+```oa-check
+name: Prime cost uses cost and qualifying days before taxable-use apportionment
+inputs:
+  cost: 1825
+  effective_life: 5
+  qualifying_days: 100
+  taxable_use_percent: 80
+steps:
+  - decline: cost / effective_life * qualifying_days / 365
+  - deduction: pct(decline, taxable_use_percent)
+expected:
+  decline: 100
+  deduction: 80
+```
 
 ### 5.4 Superannuation [T1]
 
-- **Personal deductible super contributions** — Personal deductible contributions up to the concessional cap (combined with employer contributions if also employed): $30,000 in 2025-26, **$32,500 in 2026-27**. Must lodge a valid "Notice of intent to claim" with the super fund AND receive acknowledgment BEFORE lodging the tax return or rolling over.  _(ATO contributions caps QC 18123; au-rates-2026-27)_
+- **Personal deductible super contributions** -- Personal deductible contributions up to the concessional cap (combined with employer contributions if also employed): $30,000 in 2025-26, **$32,500 in 2026-27**. Must lodge a valid "Notice of intent to claim" with the super fund AND receive acknowledgment BEFORE lodging the tax return or rolling over.  _(ATO contributions caps QC 18123; au-rates-2026-27)_
 
 ### 5.5 HELP/HECS Repayment [T1]
 
@@ -289,9 +334,9 @@ Use the 2025–26 thresholds below for this return workflow. Use the separately 
 | $129,718 -- $186,050 | $9,028 + 17c for each $1 over $129,717 |
 | $186,051+ | 10% of total repayment income |
 
-- **2025-26 HELP repayment bands** — 2025-26: nil to $67,000; 15c over $67,000 to $125,000; $8,700 + 17c over $125,000 to $179,285; 10% of total repayment income from $179,286.  _(ATO QC 16176)_
-- **Marginal basis (from 2025-26)** — From 2025-26 compulsory repayments are calculated on a marginal basis (only the income above the minimum repayment threshold), substituted by the Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025.  _(Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025)_
-- **Repayment income** — Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
+- **2025-26 HELP repayment bands** -- 2025-26: nil to $67,000; 15c over $67,000 to $125,000; $8,700 + 17c over $125,000 to $179,285; 10% of total repayment income from $179,286.  _(ATO QC 16176)_
+- **Marginal basis (from 2025-26)** -- From 2025-26 compulsory repayments are calculated on a marginal basis (only the income above the minimum repayment threshold), substituted by the Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025.  _(Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025)_
+- **Repayment income** -- Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
 
 ### 5.6 Filing and Penalties [T1]
 
@@ -317,7 +362,7 @@ Use the 2025–26 thresholds below for this return workflow. Use the separately 
 | Fixed rate (70c/hr, 2024-25 and 2025-26) | Electricity, gas, phone, internet, stationery, computer consumables | Separately claim: technology depreciation (computer, monitor), occupancy costs (if dedicated room), cleaning |
 | Actual cost | Each expense claimed individually at actual business % | No fixed rate component |
 
-- **Home office record keeping and occupancy expenses** — Under either method: must have records of hours worked from home. Fixed rate: can use any reasonable record. Actual: need receipts and usage records. Occupancy expenses (rent, mortgage interest, rates, home insurance, land tax) are ONLY deductible if you have a dedicated area set aside exclusively as a place of business. These are separate from running expenses. Confirm method, hours, and whether occupancy expenses apply.
+- **Home office record keeping and occupancy expenses** -- Under either method: must have records of hours worked from home. Fixed rate: can use any reasonable record. Actual: need receipts and usage records. Occupancy expenses (rent, mortgage interest, rates, home insurance, land tax) are ONLY deductible if you have a dedicated area set aside exclusively as a place of business. These are separate from running expenses. Confirm method, hours, and whether occupancy expenses apply.
 
 ### 6.2 Motor Vehicle [T2]
 
@@ -328,11 +373,11 @@ Use the 2025–26 thresholds below for this return workflow. Use the separately 
 | Cents per km (88c) | Max 5,000 business km. No receipts needed. | Reasonable estimate of business km |
 | Logbook | Business % of actual costs including depreciation | 12-week continuous logbook, valid for 5 years |
 
-- **Cannot claim both methods** — Cannot claim both. Eligible business parking and tolls can be separate deductions. Roadside assistance is a car operating expense covered by the cents-per-kilometre rate; do not claim it again under that method. Confirm method and km/logbook records.
+- **Cannot claim both methods** -- Cannot claim both. Eligible business parking and tolls can be separate deductions. Roadside assistance is a car operating expense covered by the cents-per-kilometre rate; do not claim it again under that method. Confirm method and km/logbook records.
 
 ### 6.3 Private Health Insurance (Medicare Levy Surcharge) [T2]
 
-- **MLS applicability** — If income over $101,000 (single, 2025-26) and no appropriate private hospital cover, Medicare levy surcharge applies:
+- **MLS applicability** -- If income over $101,000 (single, 2025-26) and no appropriate private hospital cover, Medicare levy surcharge applies:
 
 **MLS Rate table**
 
@@ -342,11 +387,11 @@ Use the 2025–26 thresholds below for this return workflow. Use the separately 
 | $118,001 -- $158,000 | 1.25% |
 | $158,001+ | 1.5% |
 
-- **PHI rebate** — PHI rebate: income-tested offset that reduces PHI premiums. Claimed via reduced premiums or tax offset. Confirm PHI status and income level.
+- **PHI rebate** -- PHI rebate: income-tested offset that reduces PHI premiums. Claimed via reduced premiums or tax offset. Confirm PHI status and income level.
 
 ### 6.4 Personal Services Income (PSI) [T2]
 
-- **PSI rules** — If income is mainly a reward for personal efforts/skills and not from conducting a personal services business, PSI rules limit deductions. Cannot claim rent, mortgage interest, certain home office costs against PSI. Confirm whether PSI rules apply (results test, unrelated clients test, employment test, business premises test).
+- **PSI rules** -- If income is mainly a reward for personal efforts/skills and not from conducting a personal services business, PSI rules limit deductions. Cannot claim rent, mortgage interest, certain home office costs against PSI. Confirm whether PSI rules apply (results test, unrelated clients test, employment test, business premises test).
 
 ## Section 7 -- Excel Working Paper Template
 
@@ -508,3 +553,10 @@ This skill and its outputs are provided for informational and computational purp
 > Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
+
+## Sources
+
+Read 2026-11-12 for the depreciation correction:
+
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): eligibility, date-specific factors, formulas and effective-life selection. Selected sections of retained current compilation 268 read 2026-11-12.
+- [Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text): asset-specific Table A and Table B lives; select the applicable dated determination. Selected Table A/Table B categories read 2026-11-12.
