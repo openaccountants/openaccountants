@@ -29,23 +29,15 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      packages/manifest.json). index.json is the single canonical inventory;
      the old manifests had no consumers and were removed so they can't drift.
   7. The mechanical lines of docs/skill-template.md (scripts/skill_checks.py):
-     current tax_year, read dates in `## Sources`, two oa-check blocks, a
-     numeric version, honest tier/reviewer keys, no em dash. ERROR on a PR
-     (--changed-only) for a tax skill; WARN on the full tree and for
-     accounting-pack and router files. Rates-row URLs, the nine canonical
-     headings and the "Not yet confirmed" line WARN in both modes until the
-     backlog is cleared. The full run prints a count of failures per check.
-     The reviewer-lesson checks (k to r: read-date evidence, Sources columns,
-     source hosts, jurisdiction against body, row year against linked page,
-     shape, library figures, a known `domain:`) WARN in both modes, so old
-     content never fails on them.
-     Domains (docs/domains.yml): a skill's `domain:` picks the date rule of
-     check (a) and the official hosts of check (m). Tax, no domain, and the
-     values the website writes keep the tax rules exactly as before; an
-     active non-tax domain is dated by its own keys (an IFRS skill by
-     `standard` and `effective_date`, not `tax_year`; a `checked_on` domain by
-     a date within its max_age_days). On a PR that changes a skill's text,
-     that date rule is an ERROR in every domain. An unknown domain warns.
+     fixed core (domain dates, source read dates, shape examples, numeric version,
+     honest approval) ERROR on changed content in every domain, WARN on backlog.
+     New files must meet their declared shape. Existing shape failures remain
+     warnings, but a check that passed on main may not regress. New or changed
+     unsourced/unverified rate rows and barred citations ERROR in every domain.
+     Metadata-only relabels do not inherit old body defects; honest tier checks
+     still apply. Typography and inferred-source heuristics stay advisory.
+     docs/domains.yml supplies each active domain's dates and official hosts;
+     tax-looking filenames always retain tax dating. Unknown domains warn.
   8. PR mode only: one job in one jurisdiction has one skill
      (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
      renamed skill has the job or stripped name of another skill there, unless
@@ -66,8 +58,8 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      over PLATFORM_MAX_SKILL_BYTES. Both used to fail silently after the
      merge. PR mode: ERROR for an added or edited file under skills/ that is
      not a `.md` file (or the generated skills/REGISTER.csv), for a skill file
-     whose name is not lowercase letters, digits and hyphens, and for a skill
-     file over the size limit; each message says what to rename or split. The
+     whose name is not lowercase letters, digits and hyphens, a description below
+     the website's 40-character minimum, and a skill file over the size limit; each message says what to rename or split. The
      full run WARNs for the same files, so old content never fails on them.
 
 Install scripts/requirements-validation.txt, then run:
@@ -92,19 +84,19 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
 COVERAGE_REPORT = os.path.join(REPO_ROOT, "scripts", "coverage-report.py")
 
-#: scripts/skill_checks.py checks that fail a PR (changed-only mode) when a tax
-#: skill breaks them. On the full tree they are warnings, so the backlog shows
-#: without blocking the nightly run. Accounting-pack and router files only warn.
+#: Fixed-core checks apply to every domain. On the full tree they stay warnings;
+#: metadata-only relabels do not inherit old body defects.
 PR_ERROR_CHECKS = {
     "tax_year_current",    # (a)
     "sources_read_dates",  # (b)
     "two_oa_checks",       # (e)
     "version_numeric",     # (f)
     "tier_honest",         # (g)
+    "reviewed_on",         # (j): approval must have a real, non-future date
 }
-#: Warnings in both modes: typography, rates_rows_sourced (c), canonical_headings (d),
-#: not_yet_confirmed (i) and reviewed_on (j). They become errors once the backlog is cleared
-#: (pass rates are in skills/REGISTER.md).
+#: New skills must meet their declared shape. Existing files may improve legacy
+#: shape defects incrementally, but may not break a check they previously passed.
+PR_SHAPE_CHECKS = {"rates_rows_sourced", "canonical_headings", "not_yet_confirmed", "type_declared"}
 
 # Legacy guides that predate the description requirement. Grandfathered so CI
 # can be strict for everything new. Never add to this list — remove entries as
@@ -242,7 +234,7 @@ def body_unchanged_vs_main(rel, text):
         ).stdout
     except Exception:  # new file, or no git: treat as changed
         return False
-    return label_boilerplate.same_content(old, text)
+    return skill_checks.admission_content_unchanged(old, text)
 
 
 def check_approval_resets(rel, text, errors):
@@ -260,14 +252,14 @@ def check_approval_resets(rel, text, errors):
         ).stdout
     except Exception:
         return  # new file: nothing approved yet
-    if label_boilerplate.same_content(old, text):
+    if skill_checks.approved_source_unchanged(old, text):
         return
     key = lambda t, k: (re.search(rf"^{k}:[ \t]*\"?([^\"\n]*)", t, re.M) or [None, ""])[1].strip()
     if not real_reviewer(key(old, "reviewed_by")) or not real_reviewer(key(text, "reviewed_by")):
         return
     if key(text, "reviewed_on") == key(old, "reviewed_on"):
         errors.append(
-            f"{rel}: the text of an approved skill changed, so the approval no longer covers it. "
+            f"{rel}: the text or source-owned metadata of an approved skill changed, so the approval no longer covers it. "
             "Either remove `reviewed_by` and `reviewed_on` and set `tier: 2`, or have the approver "
             "re-approve by setting a new `reviewed_on`."
         )
@@ -354,10 +346,10 @@ def check_sanctioned(errors, paths=None, read=_read_or_none):
 #: The website refuses a skill file larger than this, after the merge
 #: (the limit in its ingest lint). Mirror of the platform's value: change both
 #: together. Checked here so the contributor hears it on the PR instead.
-#: 110 KB since 11 Nov 2026 (was 100 KB): carefully sourced tax skills were being
-#: refused by a few KB, and a tax skill cannot be split into a child file here
-#: (every tax skill needs its own two worked examples, and one job has one skill).
+#: 110 KB since 11 Nov 2026 (was 100 KB). A split preserves content in distinct
+#: linked base/companion jobs, with independent no-loss review; never truncate.
 PLATFORM_MAX_SKILL_BYTES = 112_640
+PLATFORM_MIN_DESCRIPTION_CHARS = 40
 
 #: Files under skills/ that are not skills and not Markdown. Generated.
 NON_MARKDOWN_ALLOWED = {"skills/REGISTER.csv"}
@@ -413,6 +405,14 @@ def deliverable_problems(paths, read=_read_or_none, size=_size_or_none):
             continue
         if not is_delivered_skill(rel):
             continue  # READMEs, references, templates and the generated lists
+        text = read(rel)
+        if text is not None:
+            description = str(skill_checks.read_frontmatter(text).get("description") or "").strip()
+            if len(description) < PLATFORM_MIN_DESCRIPTION_CHARS:
+                problems.append(
+                    f"{rel}: description has {len(description)} characters; the website team-revision path requires "
+                    f"at least {PLATFORM_MIN_DESCRIPTION_CHARS}. Describe the actual job before merging"
+                )
         if not SKILL_FILENAME_RE.fullmatch(basename):
             target = f"{folder}/{suggested_skill_filename(rel, read(rel))}"
             problems.append(
@@ -662,17 +662,14 @@ def check_packages_frontmatter(bi, errors, only_files=None):
 def is_pr_error(name, scope, dated_by_tax_year, content_untouched):
     """In PR mode, whether a failed skill_checks check is an ERROR rather than a warning.
 
-    A tax skill fails the PR on PR_ERROR_CHECKS. An active non-tax domain's date rule
-    (check a, docs/domains.yml) fails the PR too, as the tax year does for a tax skill.
-    Both only when the PR changes the skill's text; the label checks always."""
+    The fixed core is the same in tax and non-tax domains. Body checks apply
+    only when the text changes; label checks always apply."""
     # Identity applies to every skill type, including metadata-only edits. Do
     # not let a country code such as ID (Indonesia) masquerade as US-ID (Idaho).
     if name == "jurisdiction_path":
         return True
     label_check = name in ("tier_honest", "reviewed_on")
-    domain_date = name == "tax_year_current" and not dated_by_tax_year
-    return ((scope == "tax" or domain_date) and name in PR_ERROR_CHECKS
-            and (label_check or not content_untouched))
+    return name in PR_ERROR_CHECKS and (label_check or not content_untouched)
 
 
 def check_guides(bi, errors, warnings, only_files=None):
@@ -754,16 +751,17 @@ def check_guides(bi, errors, warnings, only_files=None):
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
         content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)
+        previous_results = None
         if only_files is not None and not content_untouched:
             check_approval_resets(rel, text, errors)
-            if scope == "tax":
-                try:
-                    old_text = subprocess.run(["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT,
-                                              capture_output=True, text=True, check=True).stdout
-                except subprocess.CalledProcessError:
-                    old_text = ""  # A new file has no legacy source defects.
-                for defect in skill_checks.source_evidence_regressions(old_text, text):
-                    errors.append(f"{rel}: source evidence regression: {defect}")
+            try:
+                old_text = subprocess.run(["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT,
+                                          capture_output=True, text=True, check=True).stdout
+            except subprocess.CalledProcessError:
+                old_text = ""  # A new file has no legacy source defects.
+            previous_results = skill_checks.run_checks(rel, old_text, skill_checks.read_frontmatter(old_text)) if old_text else {}
+            for defect in skill_checks.source_evidence_regressions(old_text, text, rel, frontmatter):
+                errors.append(f"{rel}: source evidence regression: {defect}")
             # A tax skill with figures and no source link must say so (status: needs_sources).
             # The site keeps a flagged skill off the site and out of the AI plugin.
             if scope == "tax" and not has_source_link(text) and not needs_sources(text):
@@ -776,7 +774,9 @@ def check_guides(bi, errors, warnings, only_files=None):
             if not problems:
                 continue
             message = f"{rel}: ({letter}) {name}: {'; '.join(problems)}"
-            if only_files is not None and is_pr_error(name, scope, dated_by_tax_year, content_untouched):
+            shape_regression = (name in PR_SHAPE_CHECKS and previous_results is not None
+                                and not previous_results.get(name))
+            if only_files is not None and (is_pr_error(name, scope, dated_by_tax_year, content_untouched) or shape_regression):
                 errors.append(message)
             else:
                 check_counts[f"({letter}) {name}"] += 1
