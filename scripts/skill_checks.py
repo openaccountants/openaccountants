@@ -15,6 +15,7 @@ no network: text and regex only, so a result is the same on every machine.
 """
 
 import datetime
+from collections import Counter
 import importlib.util
 import os
 import re
@@ -740,6 +741,28 @@ def check_source_hosts(path, text, fm):
                 f"not an official source for domain {domain['id']} (docs/domains.yml): {', '.join(unofficial[:3])}"
             )
     return problems
+
+
+def source_evidence_regressions(old_text, new_text):
+    """Objective new source defects only; unchanged legacy defects stay advisory.
+
+    Inherited ``same`` rows retain the source status above them. Unknown official
+    hosts and inferred library matches remain advisory, not automatic vetoes.
+    """
+    def defects(text):
+        found = Counter()
+        previous = None
+        for header, cells in _rates_rows(text)[1]:
+            status = _row_status(header, cells, previous)
+            if status == "missing":
+                found["rate row without a source URL or unverified mark: " + " | ".join(cells)] += 1
+            previous = (header, status)
+        for line, urls in _source_entries(text):
+            barred = sorted({_host(url) for url in urls if any(_host_is(_host(url), host) for host in SECONDARY_HOSTS)})
+            if barred:
+                found["secondary source citation: " + line.strip()] += 1
+        return found
+    return list((defects(new_text) - defects(old_text)).elements())
 
 
 def _jurisdiction_dir_codes():

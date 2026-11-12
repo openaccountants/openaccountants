@@ -101,9 +101,8 @@ PR_ERROR_CHECKS = {
     "two_oa_checks",       # (e)
     "version_numeric",     # (f)
     "tier_honest",         # (g)
-    "no_em_dash",          # (h)
 }
-#: Warnings in both modes for now: rates_rows_sourced (c), canonical_headings (d),
+#: Warnings in both modes: typography, rates_rows_sourced (c), canonical_headings (d),
 #: not_yet_confirmed (i) and reviewed_on (j). They become errors once the backlog is cleared
 #: (pass rates are in skills/REGISTER.md).
 
@@ -753,6 +752,14 @@ def check_guides(bi, errors, warnings, only_files=None):
         content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)
         if only_files is not None and not content_untouched:
             check_approval_resets(rel, text, errors)
+            if scope == "tax":
+                try:
+                    old_text = subprocess.run(["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT,
+                                              capture_output=True, text=True, check=True).stdout
+                except subprocess.CalledProcessError:
+                    old_text = ""  # A new file has no legacy source defects.
+                for defect in skill_checks.source_evidence_regressions(old_text, text):
+                    errors.append(f"{rel}: source evidence regression: {defect}")
             # A tax skill with figures and no source link must say so (status: needs_sources).
             # The site keeps a flagged skill off the site and out of the AI plugin.
             if scope == "tax" and not has_source_link(text) and not needs_sources(text):

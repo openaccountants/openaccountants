@@ -272,10 +272,10 @@ class TaxUnchanged(unittest.TestCase):
             if fm and skill_checks.applied_domain(path, fm)[0] is None:
                 self.assertEqual(skill_checks.check_tax_year_current(path, text, fm), legacy_tax_year_current(fm), path)
 
-    def test_pr_error_checks_unchanged(self):
+    def test_pr_error_checks_keep_date_and_approval_rules_but_style_warns(self):
         self.assertEqual(validate_guides.PR_ERROR_CHECKS, {
             "tax_year_current", "sources_read_dates", "two_oa_checks", "version_numeric",
-            "tier_honest", "no_em_dash",
+            "tier_honest",
         })
 
     def test_staleness_unchanged_for_tax(self):
