@@ -243,7 +243,7 @@ class SkillReviewWorkflowTests(unittest.TestCase):
             (tmp / "out").write_text("", encoding="utf-8")
             env = dict(os.environ, PATH=f"{tmp}:{os.environ.get('PATH', '')}", GH_LOG=str(tmp / "log"),
                        PRT_FILE=str(tmp / "prt"), WD_FILE=str(tmp / "wd"), JOB_N=str(job_n),
-                       GITHUB_OUTPUT=str(tmp / "out"), EVENT=event, TRIGGER=trigger, RUN_ID="100000",
+                       GITHUB_OUTPUT=str(tmp / "out"), GITHUB_STEP_SUMMARY=str(tmp / "summary"), EVENT=event, TRIGGER=trigger, RUN_ID="100000",
                        REPO="o/r", **{k: str(v) for k, v in self.doc["env"].items()})
             proc = subprocess.run([bash, "-c", helpers + caps], env=env, capture_output=True, text=True, timeout=60)
             self.assertEqual(proc.returncode, 0, proc.stderr)
@@ -363,9 +363,26 @@ class SkillReviewWorkflowTests(unittest.TestCase):
         self.assertIn('base_tree: $base', push)
         self.assertNotIn('refs/heads/$branch" -f sha="$HEAD_SHA"', push)
 
-    def test_only_push_fix_can_write_contents(self) -> None:
+    def test_models_never_receive_the_scoped_fix_writer(self) -> None:
         writers = [n for n, j in self.doc["jobs"].items() if (j.get("permissions") or {}).get("contents") == "write"]
-        self.assertEqual(writers, ["push-fix"])
+        self.assertEqual(writers, [])
+        holders = [(name, index) for name, job in self.doc["jobs"].items()
+                   for index, step in enumerate(job.get("steps", [])) if "DERIVED_BUILD_TOKEN" in str(step)]
+        push = self.doc["jobs"]["push-fix"]
+        self.assertEqual(holders, [("push-fix", len(push["steps"]) - 1)])
+        self.assertEqual(push["environment"], "production")
+        self.assertEqual(push["steps"][-1]["env"]["GH_TOKEN"], "${{ secrets.DERIVED_BUILD_TOKEN }}")
+        self.assertIn('if [ -z "$GH_TOKEN" ]', push["steps"][-1]["run"])
+        self.assertNotIn("gh workflow run", push["steps"][-1]["run"])
+        self.assertFalse(self.doc["concurrency"]["cancel-in-progress"])
+
+    def test_summary_separates_a_skipped_review_from_a_verdict(self) -> None:
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        publish = self.doc["jobs"]["publish"]["steps"][0]["run"]
+        self.assertIn("AI review: SKIPPED", gate)
+        self.assertIn("GITHUB_STEP_SUMMARY", gate)
+        self.assertIn("AI review: $verdict", publish)
+        self.assertIn('"$HEAD_SHA"; } >> "$GITHUB_STEP_SUMMARY"', publish)
 
     def test_oauth_secret_reaches_only_the_gate_check_and_claude(self) -> None:
         for name, job in self.doc["jobs"].items():

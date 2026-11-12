@@ -19,7 +19,7 @@ A GitHub workflow reviews every PR that changes `skills/**` or `library/**`, pos
    The verdict judges only what the PR changes (its added, changed and removed lines and what they directly feed). Faults in lines the PR does not touch go under "Found on main (not caused by this PR)" and never change the verdict.
 3. **Publish** (no AI). Posts the comment, starting `VERDICT: MERGE`, `FIX` or `HOLD`, with a figures table and, for FIX, a numbered list of exact changes. Each file listed under "Found on main" gets one open issue, "Found by review: <path>", labelled `found-by-review`: a new issue the first time, a comment on the same issue after that.
 4. **Fix** (Claude, only on FIX). Applies exactly the numbered `[auto]` items to a copy of the PR's files. Nothing else.
-5. **Push-fix** (no AI). Checks the edits, commits them as Michael Cutajar (no AI trailer) with each fix named (item, old value, new value, source), and starts a new review.
+5. **Push-fix** (no AI). Checks the edits and commits them as Michael Cutajar (no AI trailer) with each fix named (item, old value, new value, source). Only its final shell step receives the production environment's existing `DERIVED_BUILD_TOKEN`, a repository-scoped writer. The push starts normal required validation and the next review on the resulting commit. The per-PR queue lets the writer finish before the next review starts. No model receives this writer, and it never merges the skill PR.
 
 | Label | Meaning |
 |---|---|
@@ -77,12 +77,12 @@ gh secret set CLAUDE_CODE_OAUTH_TOKEN -R openaccountants/openaccountants
 
 and paste the token when asked. Until the secret exists the workflow does nothing.
 
-**The Claude GitHub App does not need to be installed.** The action's docs say the app is used only when no `github_token` is given (it is reached through an OIDC token exchange); this workflow passes each job's own short-lived `GITHUB_TOKEN`, so comments appear as `github-actions[bot]`.
+**The Claude GitHub App does not need to be installed.** The action's docs say the app is used only when no `github_token` is given (it is reached through an OIDC token exchange); each model action receives its job's short-lived, read-only `GITHUB_TOKEN`. The final shell writer uses the separate scoped credential, so its comments identify that credential's account.
 
 ## Known limits
 
-- **CI does not start on a bot commit.** GitHub does not run workflows for commits made with `GITHUB_TOKEN`, so after an automatic fix the required checks (validate, unit-tests, guard-derived-trees, cla) wait. Close and reopen the PR to run them. The re-review itself is started by the bot.
-- **Fork PRs get a link, not a PR, by default.** The repository setting "Allow GitHub Actions to create and approve pull requests" is off, so the bot cannot open "Fixes for #<n>". It comments a ready-made link instead; whoever opens that PR starts its review, and the fix rounds carry over. Turning the setting on lets the bot open the PR itself, but it also lets any workflow approve PRs, so it is left off.
+- **The writer credential is required.** If `DERIVED_BUILD_TOKEN` is missing, no fix is published. A credential whose permissions have lapsed can also prevent publication; repair it rather than substituting `GITHUB_TOKEN` and losing the validation hand-off.
+- **Fork fixes stay in this repository.** The scoped writer opens a normal PR for the checked copy when its pull-request permission is available; otherwise it leaves the ready-made link. No write reaches the fork. Repository-wide permission for `GITHUB_TOKEN` to approve PRs is not needed or enabled.
 - **The daily cap counts every review and fix run from automatic runs**, including the re-review after a fix; runs a maintainer starts are not limited.
 - **The guard reads frontmatter, not body text.** An "Approved by" sentence written into a skill's body is not caught by the push-fix guard; the reviewer playbook catches it (honest labels). Look-alike letters (for example Cyrillic) in a `jurisdiction:` value only matter on a new file, which the reviewer reads; an existing Malta or Australia file is caught through main's copy.
 - **Follow-up: network egress.** `step-security/harden-runner` with an egress allow-list was considered for the review and fix jobs. Block mode cannot work for the reviewer, which must open official pages on hundreds of government hosts, and audit mode sends runner telemetry to a third party. It is not added; revisit if a fixed list of official hosts becomes practical (for example from `library/` source hosts).
