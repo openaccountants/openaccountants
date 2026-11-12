@@ -11392,3 +11392,20 @@ Removed with `git rm`, not moved: Afghanistan, Central African Republic, DR Cong
 | skills/sudan/sd-payroll-social.md | removed (sanctioned) |
 | skills/sudan/sd-tax-overview.md | removed (sanctioned) |
 | skills/sudan/sd-vat-gst.md | removed (sanctioned) |
+
+
+## 2026-11-12: Venezuela withdrawn from coverage
+
+Michael instructed removal of the complete Venezuela pack. The source files are withdrawn, not moved to another published jurisdiction. Their full text, source research references and earlier approval attribution remain in immutable Git history at d7605584acfc427f4c6d54fe96d7c53db84b13b0. The exclusion guard refuses future Venezuela files. Derived packages and indexes follow through the rebuild workflow.
+
+| Old path | New path |
+|---|---|
+| skills/venezuela/README.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-corporate-tax.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-cross-border-tax.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-income-tax.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-iva.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-payroll.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-social-contributions.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-tax-optimization.md | removed (coverage exclusion; history preserved) |
+| skills/venezuela/venezuela-transfer-pricing.md | removed (coverage exclusion; history preserved) |
