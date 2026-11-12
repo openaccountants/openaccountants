@@ -130,6 +130,13 @@ class Admission(unittest.TestCase):
         self.assertTrue(any("not an official source" in e for e in self.check(text, rel=path)[0]))
         self.assertEqual(sc.source_evidence_regressions(unofficial, unofficial + "\nOther prose.", path, {"domain": "financial-reporting"}), [])
 
+    def test_relabelling_domain_cannot_grandfather_a_newly_unofficial_host(self):
+        path = "skills/global/financial-reporting/fictional-standard.md"
+        body = ROUTER.replace("www.revenue.ie", "example.com")
+        old = document(body, "domain: tax\ntype: router\n")
+        new = old.replace("domain: tax", "domain: financial-reporting\nstandard: Fictional standard\neffective_date: 2026-01-01")
+        self.assertTrue(sc.source_evidence_regressions(old, new, path, sc.read_frontmatter(new)))
+
     def test_unverified_figures_are_not_an_escape_from_source_gating(self):
         row = "## Rates, bands and thresholds\n\n| Item | Rate | Source |\n|---|---|---|\n| Fictional rate | 1 | Unverified: unavailable |\n"
         self.assertTrue(sc.source_evidence_regressions("", row))
