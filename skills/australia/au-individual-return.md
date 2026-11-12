@@ -1,7 +1,7 @@
 ---
 name: au-individual-return
 description: Use this skill whenever asked about Australian individual income tax for sole traders. Trigger on phrases like "how much tax do I pay in Australia", "Australian tax return", "sole trader tax", "ABN tax", "Medicare levy", "LITO", "PAYG", "tax brackets Australia", "BAS", "instant asset write-off", "home office deduction", "HELP repayment", "HECS debt", "small business income tax offset", "motor vehicle deduction", or any question about filing or computing income tax for an Australian sole trader. Covers 2025–26 Stage 3 tax rates, Medicare levy and surcharge, LITO, business income computation, allowable deductions, depreciation, instant asset write-off, small business income tax offset, HELP/HECS repayments, and final tax computation. ALWAYS read this skill before touching any Australian income tax work.
-version: 2.3
+version: 2.4
 jurisdiction: AU
 tax_year: 2025
 tax_year_notes: "Retained for 2025-26 returns; use 2026-27 values only where expressly labelled and relevant to the requested year."
@@ -22,7 +22,7 @@ domain: income-tax
 
 ## Asset-threshold currency
 
-- **Asset-threshold currency** -- For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. The acquisition date alone does not establish the first-use year or a second deduction. Check prior claims and business use.  _([Tax Reform No. 2 Act 2026, schedules 1–2](https://www.legislation.gov.au/C2026A00071/asmade/text))_
+- **Asset-threshold currency** -- For 2025–26, eligible small business entities using simplified depreciation can deduct assets costing less than $20,000 when first used or installed ready for taxable use. The permanent threshold was enacted on 26 August 2026; schedule 2 commences on 1 October 2026 and applies to specified first use or installation from 1 July 2026. The acquisition date alone does not establish the first-use year or a second deduction. Check prior claims and business use.  _([Tax Reform No. 2 Act 2026, schedule 2](https://www.legislation.gov.au/C2026A00071/asmade/text))_
 
 ## Section 1 -- Quick Reference
 
@@ -40,7 +40,7 @@ domain: income-tax
 | Filing portal | myTax (via myGov) or registered tax agent |
 | Filing deadline | 2 November 2026 for standard self-lodgement (31 October is Saturday); tax-agent dates depend on the applicable programme |
 | Contributor | Open Accountants Community |
-| Skill version | 2.3 |
+| Skill version | 2.4 |
 
 ### Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]
 
@@ -94,7 +94,7 @@ domain: income-tax
 | --- | --- | --- |
 | Home office -- fixed rate method | 70 cents per hour (2024-25 and 2025-26) | T2 -- method choice, hours, and records/substantiation required |
 | Motor vehicle -- cents per km method | 88 cents per km (max 5,000 km) | T2 -- method choice and business-km support required |
-| Instant asset write-off (small business) | $20,000 threshold (assets under $20,000 immediately deductible) | T1 if small-business eligibility and asset cost are clear; otherwise escalate |
+| Instant asset write-off (small business) | Eligible asset cost strictly less than $20,000; taxable-use deduction only | T1 only after eligibility, simplified-depreciation choices, first-use dates and cost are confirmed; otherwise escalate |
 | Superannuation (deductible personal contribution) | Up to concessional cap ($30,000 in 2025-26; $32,500 in 2026-27) | T1 rate-cap lookup; notice of intent must be lodged before claiming |
 
 ### Conservative Defaults [T1]
@@ -175,8 +175,8 @@ domain: income-tax
 | PHONE, TELSTRA, OPTUS, VODAFONE | Business expense -- telecom | T2 | Business portion only |
 | INTERNET, NBN | Business expense -- telecom | T2 | Business portion only (or included in home office fixed-rate method) |
 | TRAINING, COURSE, SELF-EDUCATION | Self-education (D4) | T1 | Deductible if directly related to current income-producing activity. NOT deductible if for new career. |
-| COMPUTER, LAPTOP, EQUIPMENT (under $20,000) | Instant asset write-off | T1 | Immediately deductible if small business entity and cost < $20,000 |
-| COMPUTER, LAPTOP, EQUIPMENT (over $20,000) | Depreciation (D2 business) | T1 | Depreciate over effective life per ATO table |
+| COMPUTER, LAPTOP, EQUIPMENT (under $20,000) | Potential instant asset write-off | T1 | Confirm eligibility, required simplified-depreciation choices and first taxable use; test full statutory cost, then deduct only the taxable-purpose amount |
+| COMPUTER, LAPTOP, EQUIPMENT ($20,000 or more) | Small business pool or applicable depreciation regime | T1 | If simplified depreciation applies, allocate covered assets to its pool and check the low-pool-value rule; otherwise apply the relevant Division 40 rules |
 | SUPER CONTRIBUTION, SUNSUPER, AUSTRALIAN SUPER | Deduction (Item D12) | T1 | Personal deductible super contribution up to the concessional cap ($30,000 in 2025-26; $32,500 in 2026-27). Must lodge notice of intent. |
 | ATO TAX, INCOME TAX, PAYG INSTALMENT | EXCLUDE | Not deductible | Tax payments are not deductions |
 | GST PAYMENT, BAS PAYMENT | EXCLUDE from income tax | T1 | GST is separate. Report net of GST if registered. |
@@ -268,8 +268,66 @@ domain: income-tax
 
 - **Diminishing value** -- Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life). For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 - **Prime cost (straight line)** -- Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
-- **Small business entity simplified depreciation** -- Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
+- **Small business entity simplified depreciation** -- Eligible entities choosing Subdivision 328-D generally pool covered assets not individually deductible under s 328-180, including assets costing exactly $20,000. Apply the taxable-use, ordinary pool-rate and low-pool-value rules below.
 - **Instant asset write-off** -- Assets costing less than $20,000 (assets first used or installed ready for use 1 July 2023 to 30 June 2026; extension made law by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) can be immediately deducted by small business entities. For later first use, apply the enacted permanent threshold and commencement details in Asset-threshold currency above.  _(ITAA 1997 s 328-180)_
+
+#### Simplified depreciation rules
+
+Only eligible entities choosing Subdivision 328-D use these simplified rules. Check aggregated-turnover eligibility, the required choices for the holding and first taxable-use years, first use or installation ready for taxable use, prior claims and statutory exclusions. Test the asset's full statutory cost, after applicable GST adjustments but before private-use apportionment, against the strict less-than-$20,000 threshold. The deduction is limited to taxable use. Covered assets not individually deductible under s 328-180 generally enter the small business pool; exactly $20,000 is included. General Division 40 rules apply when simplified depreciation does not apply or an exception requires them.
+
+For ordinary pool depreciation, use 30% of the opening pool balance and 15% of the taxable-purpose adjustable value of assets first used or installed ready for taxable use during the year; relevant later cost additions have their own 15% rule. Do not assign 15% merely because a previously used asset enters the opening pool. First check s 328-210: opening pool balance plus taxable-purpose new-asset amounts and cost additions, less relevant taxable-purpose termination values, with the statutory adjustments. If that amount is more than zero and less than $20,000, deduct it instead of ordinary pool depreciation and close the pool at zero. Test before ordinary depreciation, not against the smaller closing balance after it. Check exclusions and special rules, including assets outside Division 40, relevant primary-production assets, leases and existing pools. [ITAA 1997, ss 328-175 to 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html).
+
+For 2025-26, the temporary asset threshold and pool threshold are supported by [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); check the acquisition and first-use conditions. For later first use and pool assessments, apply the permanent threshold's specific application rules in [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text).
+
+#### Small business pool boundary checks
+
+Assume an eligible entity chose simplified depreciation for 2025-26 and the required holding year. Costs are correctly adjusted for GST, new assets were acquired and first used for taxable purposes in 2025-26, cost equals initial adjustable value and no exclusion, cap or other special rule changes the result.
+
+With no other pool amounts, a wholly business-use asset costing $19,999 can qualify for the individual write-off. A wholly business-use asset costing exactly $20,000 enters the pool: the pre-depreciation pool amount is $20,000, which is not less than the threshold. Its 15% deduction is $3,000 and closing balance is $17,000. Do not then write off that closing balance in the same year.
+
+```oa-check
+name: Exactly 20000 remains in the ordinary small business pool
+inputs:
+  below_cost: 19999
+  exact_cost: 20000
+  taxable_use_percent: 100
+  first_year_rate: 15
+steps:
+  - below_asset_deduction: pct(below_cost, taxable_use_percent)
+  - pre_depreciation_pool: pct(exact_cost, taxable_use_percent)
+  - pool_deduction: pct(pre_depreciation_pool, first_year_rate)
+  - closing_pool: pre_depreciation_pool - pool_deduction
+expected:
+  below_asset_deduction: 19999
+  pre_depreciation_pool: 20000
+  pool_deduction: 3000
+  closing_pool: 17000
+```
+
+For the statutory pool example, opening balance $28,500 plus 80% of a new $21,000 asset, less $29,600 taxable-purpose termination value, gives $15,700 before ordinary depreciation. It is positive and below $20,000, so the pool deduction is $15,700 and closing balance is zero. Separately, a $30,000 asset with 60% taxable use fails the individual cost test even though its taxable amount is $18,000; with no other pool amounts, that $18,000 can instead qualify for the low-pool-value deduction.
+
+```oa-check
+name: Low pool value uses the statutory amount before depreciation
+inputs:
+  opening_pool: 28500
+  new_asset_cost: 21000
+  new_asset_taxable_percent: 80
+  taxable_termination_value: 29600
+  mixed_asset_cost: 30000
+  mixed_asset_taxable_percent: 60
+steps:
+  - new_taxable_amount: pct(new_asset_cost, new_asset_taxable_percent)
+  - low_pool_amount: opening_pool + new_taxable_amount - taxable_termination_value
+  - pool_deduction: low_pool_amount
+  - closing_pool: low_pool_amount - pool_deduction
+  - mixed_asset_pool_amount: pct(mixed_asset_cost, mixed_asset_taxable_percent)
+expected:
+  new_taxable_amount: 16800
+  low_pool_amount: 15700
+  pool_deduction: 15700
+  closing_pool: 0
+  mixed_asset_pool_amount: 18000
+```
 
 #### Worked general depreciation checks
 
@@ -560,3 +618,7 @@ Read 2026-11-12 for the depreciation correction:
 
 - [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): eligibility, date-specific factors, formulas and effective-life selection. Selected sections of retained current compilation 268 read 2026-11-12.
 - [Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text): asset-specific Table A and Table B lives; select the applicable dated determination. Selected Table A/Table B categories read 2026-11-12.
+
+- [ITAA 1997, ss 328-175, 328-180, 328-185, 328-190 and 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) -- read 2026-11-12 for selected simplified-depreciation eligibility, cost, allocation, rates and low-pool-value rules.
+- [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) -- read 2026-11-12 for the temporary 2025-26 asset and pool thresholds.
+- [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) -- read 2026-11-12 for the permanent threshold application from July 2026.
