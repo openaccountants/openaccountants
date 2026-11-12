@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/za-assessed-loss-ring-fencing"
   jurisdiction: "ZA"
   last_updated: "2026-09-03"
-  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Ring-fencing of Assessed Losses, s 20A

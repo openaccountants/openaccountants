@@ -22,13 +22,17 @@
 15. `belgium-einvoice.md`
 16. `belgium-financial-statements.md`
 17. `belgium-payroll.md`
-18. `eu-vat-directive.md`
-19. `bookkeeping-workflow-base.md`
-20. `einvoice-workflow-base.md`
-21. `payroll-workflow-base.md`
-22. `financial-statements-workflow-base.md`
-23. `transfer-pricing-workflow-base.md`
-24. `crypto-tax-workflow-base.md`
+18. `eu-vat-base.md`
+19. `eu-vat-directive.md`
+20. `bookkeeping-workflow-base.md`
+21. `einvoice-workflow-base.md`
+22. `payroll-workflow-base.md`
+23. `financial-statements-workflow-base.md`
+24. `transfer-pricing-workflow-base.md`
+25. `crypto-tax-workflow-base.md`
+26. `income-tax-workflow-base.md`
+27. `vat-workflow-base.md`
+28. `workflow-base.md`
 
 ## Also known as
 

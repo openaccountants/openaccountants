@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2264,
+ "count": 2277,
  "jurisdictions": [
   "AD",
   "AE",
@@ -54,7 +54,6 @@
   "EC",
   "EE",
   "EG",
-  "EG-AE",
   "EG-SA",
   "ER",
   "ES",
@@ -229,6 +228,7 @@
   "US-NM",
   "US-NV",
   "US-NY",
+  "US-NY-NYC",
   "US-OH",
   "US-OK",
   "US-OR",
@@ -800,8 +800,8 @@
    "path": "skills/argentina/ar-social-contributions.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Maria Valeria Benvenuti",
-   "tax_year": 2025
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ar-tax-overview",
@@ -2847,6 +2847,42 @@
    "tax_year": 2026
   },
   {
+   "name": "br-jurisdiction-router",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-jurisdiction-router.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-regional-incentives",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-regional-incentives.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-regional-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "br-return-assembly",
    "jurisdiction": "BR",
    "path": "skills/brazil/br-return-assembly.md",
@@ -2859,6 +2895,15 @@
    "name": "br-simples-nacional",
    "jurisdiction": "BR",
    "path": "skills/brazil/br-simples-nacional.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-state-tax-profiles",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-state-tax-profiles.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -2907,7 +2952,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "brazil-transfer-pricing",
@@ -3216,6 +3261,15 @@
    "tax_year": 2025
   },
   {
+   "name": "ca-540-es-estimated-tax",
+   "jurisdiction": "US-CA",
+   "path": "skills/us/states/ca/ca-540-es-estimated-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": null
+  },
+  {
    "name": "ca-540-individual-return",
    "jurisdiction": "US-CA",
    "path": "skills/us/states/ca/ca-540-individual-return.md",
@@ -3272,11 +3326,11 @@
   {
    "name": "ca-estimated-tax-540es",
    "jurisdiction": "US-CA",
-   "path": "skills/us/states/ca/ca-540-es-estimated-tax.md",
+   "path": "skills/us/states/ca/ca-estimated-tax-540es.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": null
+   "tax_year": 2025
   },
   {
    "name": "ca-fed-cpp-ei",
@@ -3351,6 +3405,15 @@
    "tax_year": 2025
   },
   {
+   "name": "ca-income-tax",
+   "jurisdiction": "US-CA",
+   "path": "skills/us/states/ca/ca-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": null
+  },
+  {
    "name": "ca-llc-fee-and-tax",
    "jurisdiction": "US-CA",
    "path": "skills/us/states/ca/ca-llc-fee-and-tax.md",
@@ -3414,6 +3477,15 @@
    "tax_year": 2025
   },
   {
+   "name": "ca-sales-use-tax",
+   "jurisdiction": "US-CA",
+   "path": "skills/us/states/ca/ca-sales-use-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": null
+  },
+  {
    "name": "ca-smllc-form-568",
    "jurisdiction": "US-CA",
    "path": "skills/us/states/ca/ca-smllc-form-568.md",
@@ -3434,11 +3506,11 @@
   {
    "name": "california-sales-tax",
    "jurisdiction": "US-CA",
-   "path": "skills/us/states/ca/ca-sales-use-tax.md",
+   "path": "skills/us/states/ca/california-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": null
+   "tax_year": 2026
   },
   {
    "name": "cambodia-vat",
@@ -5430,15 +5502,6 @@
    "tax_year": 2026
   },
   {
-   "name": "eg-ae-dtt-corridor",
-   "jurisdiction": "EG-AE",
-   "path": "skills/global/cross-border/treaty-corridors/eg-ae/dtt-summary.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "eg-bookkeeping",
    "jurisdiction": "EG",
    "path": "skills/egypt/eg-bookkeeping.md",
@@ -6609,12 +6672,21 @@
    "tax_year": 2026
   },
   {
-   "name": "fl-sales-use-tax",
+   "name": "fl-sales-tax",
    "jurisdiction": "US-FL",
    "path": "skills/us/states/fl/fl-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
+   "name": "fl-sales-use-tax",
+   "jurisdiction": "US-FL",
+   "path": "skills/us/states/fl/fl-sales-use-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": "Rob Hoffman",
    "tax_year": 2025
   },
   {
@@ -7051,8 +7123,8 @@
   },
   {
    "name": "ga-income-tax",
-   "jurisdiction": "GA",
-   "path": "skills/gabon/ga-income-tax.md",
+   "jurisdiction": "US-GA",
+   "path": "skills/us/states/ga/ga-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -7116,6 +7188,15 @@
    "name": "ga-vat-gst",
    "jurisdiction": "GA",
    "path": "skills/gabon/ga-vat-gst.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "gabon-income-tax",
+   "jurisdiction": "GA",
+   "path": "skills/gabon/gabon-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -8677,15 +8758,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "id-income-tax",
-   "jurisdiction": "ID",
-   "path": "skills/us/states/id/id-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "id-payroll-pph21",
@@ -14376,6 +14448,15 @@
    "tax_year": 2026
   },
   {
+   "name": "ny-llc-filing-fee",
+   "jurisdiction": "US-NY",
+   "path": "skills/us/states/ny/ny-llc-filing-fee.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": null
+  },
+  {
    "name": "ny-llc-filing-fee-it-204-ll",
    "jurisdiction": "US-NY",
    "path": "skills/us/states/ny/ny-llc-filing-fee-it-204-ll.md",
@@ -14421,9 +14502,27 @@
    "tax_year": 2026
   },
   {
-   "name": "nyc-unincorporated-business-tax",
+   "name": "ny-sales-tax",
+   "jurisdiction": "US-NY",
+   "path": "skills/us/states/ny/ny-sales-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": null
+  },
+  {
+   "name": "nyc-ubt",
    "jurisdiction": "US-NY",
    "path": "skills/us/states/ny/nyc-ubt.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
+   "name": "nyc-unincorporated-business-tax",
+   "jurisdiction": "US-NY-NYC",
+   "path": "skills/us/states/ny-nyc/nyc-unincorporated-business-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -18390,9 +18489,18 @@
    "tax_year": 2025
   },
   {
-   "name": "tx-sales-use-tax",
+   "name": "tx-sales-tax",
    "jurisdiction": "US-TX",
    "path": "skills/us/states/tx/tx-sales-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
+   "name": "tx-sales-use-tax",
+   "jurisdiction": "US-TX",
+   "path": "skills/us/states/tx/tx-sales-use-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -20136,6 +20244,15 @@
    "tax_year": 2025
   },
   {
+   "name": "wa-b-and-o-tax",
+   "jurisdiction": "US-WA",
+   "path": "skills/us/states/wa/wa-b-and-o-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "wa-bo-tax",
    "jurisdiction": "US-WA",
    "path": "skills/us/states/wa/wa-bo-tax.md",
@@ -20147,11 +20264,11 @@
   {
    "name": "wa-business-occupation-tax",
    "jurisdiction": "US-WA",
-   "path": "skills/us/states/wa/wa-b-and-o-tax.md",
+   "path": "skills/us/states/wa/wa-business-occupation-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "wa-sales-tax",
@@ -20420,7 +20537,7 @@
    "path": "skills/south-africa/za-assessed-loss-ring-fencing.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Brandon Iverach",
+   "reviewed_by": null,
    "tax_year": null
   },
   {
@@ -20438,7 +20555,7 @@
    "path": "skills/south-africa/za-capital-gains-tables.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Brandon Iverach",
+   "reviewed_by": null,
    "tax_year": null
   },
   {
@@ -20465,7 +20582,7 @@
    "path": "skills/south-africa/za-foreign-employment-exemption.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Brandon Iverach",
+   "reviewed_by": null,
    "tax_year": null
   },
   {
@@ -20483,7 +20600,7 @@
    "path": "skills/south-africa/za-income-tax-tables.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Brandon Iverach",
+   "reviewed_by": null,
    "tax_year": null
   },
   {
@@ -20519,7 +20636,7 @@
    "path": "skills/south-africa/za-travel-allowance-tables.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Brandon Iverach",
+   "reviewed_by": null,
    "tax_year": null
   },
   {

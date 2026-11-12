@@ -80,6 +80,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 70. `mn-income-tax.md`
 71. `mn-payroll.md`
 72. `mn-sales-tax.md`
+73. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

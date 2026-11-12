@@ -84,6 +84,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 74. `mi-pension-retirement-subtraction.md`
 75. `mi-return-assembly.md`
 76. `mi-sales-tax.md`
+77. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

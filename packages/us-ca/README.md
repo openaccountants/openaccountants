@@ -91,6 +91,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 81. `ca-sales-use-tax.md`
 82. `ca-smllc-form-568.md`
 83. `california-sales-tax.md`
+84. `cross-border-tax-workflow-base.md`
+85. `bookkeeping-workflow-base.md`
 
 ## How to use
 

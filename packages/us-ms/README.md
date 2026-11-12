@@ -78,6 +78,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `mississippi-sales-tax.md`
 69. `ms-income-tax.md`
 70. `ms-sales-tax.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

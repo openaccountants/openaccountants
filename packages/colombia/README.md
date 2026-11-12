@@ -22,6 +22,7 @@
 15. `payroll-workflow-base.md`
 16. `company-formation-workflow-base.md`
 17. `transfer-pricing-workflow-base.md`
+18. `vat-workflow-base.md`
 
 ## Also known as
 

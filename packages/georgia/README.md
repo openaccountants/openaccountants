@@ -7,18 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ge-company-formation.md`
-4. `ge-corporate-income-tax.md`
-5. `ge-cross-border.md`
-6. `ge-transfer-pricing.md`
-7. `georgia-income-tax.md`
-8. `georgia-payroll.md`
-9. `georgia-social-contributions.md`
-10. `georgia-tax-optimization.md`
-11. `georgia-vat.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
-14. `transfer-pricing-workflow-base.md`
+3. `README.md`
+4. `ge-company-formation.md`
+5. `ge-corporate-income-tax.md`
+6. `ge-cross-border.md`
+7. `ge-tax-overview.md`
+8. `ge-transfer-pricing.md`
+9. `georgia-income-tax.md`
+10. `georgia-payroll.md`
+11. `georgia-social-contributions.md`
+12. `georgia-tax-optimization.md`
+13. `georgia-vat.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -33,15 +33,18 @@
 26. `nl-vat-return.md`
 27. `nl-zzp-deductions.md`
 28. `references.md`
-29. `eu-vat-directive.md`
-30. `bookkeeping-workflow-base.md`
-31. `payroll-workflow-base.md`
-32. `company-formation-workflow-base.md`
-33. `financial-statements-workflow-base.md`
-34. `transfer-pricing-workflow-base.md`
-35. `crypto-tax-workflow-base.md`
-36. `netherlands-guided-intake.md`
-37. `netherlands-return-assembly.md`
+29. `eu-vat-base.md`
+30. `eu-vat-directive.md`
+31. `bookkeeping-workflow-base.md`
+32. `payroll-workflow-base.md`
+33. `company-formation-workflow-base.md`
+34. `financial-statements-workflow-base.md`
+35. `transfer-pricing-workflow-base.md`
+36. `crypto-tax-workflow-base.md`
+37. `netherlands-guided-intake.md`
+38. `netherlands-return-assembly.md`
+39. `income-tax-workflow-base.md`
+40. `workflow-base.md`
 
 ## Also known as
 

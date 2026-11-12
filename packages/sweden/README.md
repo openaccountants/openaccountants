@@ -22,11 +22,12 @@
 15. `sweden-crypto-tax.md`
 16. `sweden-payroll.md`
 17. `sweden-vat-return.md`
-18. `eu-vat-directive.md`
-19. `bookkeeping-workflow-base.md`
-20. `payroll-workflow-base.md`
-21. `transfer-pricing-workflow-base.md`
-22. `crypto-tax-workflow-base.md`
+18. `eu-vat-base.md`
+19. `eu-vat-directive.md`
+20. `bookkeeping-workflow-base.md`
+21. `payroll-workflow-base.md`
+22. `transfer-pricing-workflow-base.md`
+23. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

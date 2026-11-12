@@ -22,10 +22,13 @@
 15. `fi-transfer-pricing.md`
 16. `fi-yel-social.md`
 17. `finland-vat-return.md`
-18. `eu-vat-directive.md`
-19. `payroll-workflow-base.md`
-20. `company-formation-workflow-base.md`
-21. `transfer-pricing-workflow-base.md`
+18. `eu-vat-base.md`
+19. `eu-vat-directive.md`
+20. `payroll-workflow-base.md`
+21. `company-formation-workflow-base.md`
+22. `transfer-pricing-workflow-base.md`
+23. `income-tax-workflow-base.md`
+24. `workflow-base.md`
 
 ## Also known as
 

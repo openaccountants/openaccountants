@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ga-tax-overview"
   jurisdiction: "GA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-12"
 ---
 
 # Gabon tax overview and intake v0.1
@@ -35,7 +35,7 @@ Individuals, businesses and advisers starting a Gabon working paper. This overvi
 
 Identify the legal person, actual activity, period, residence and source before choosing a computation. Create separate workpapers for income tax, turnover taxes, salary withholding and social contributions. The country's source text expresses monetary amounts in francs CFA; this pack uses the label XAF for its working examples. Do not mix that currency with a neighbouring country's tax rules.
 
-Route ordinary companies, sector rates, minimum-tax comparison and returns to [corporate income tax](ga-corporate-income-tax.md). Route family shares, annual bands and foreign personal income to [individual income tax](ga-income-tax.md). Route turnover, exemptions, rate lists, input deductions, CSS and imported services to [VAT](ga-vat-gst.md). Route pension/health ceilings and wage deductions to [payroll](ga-payroll-social.md). None of these Guides is a source-completeness certificate.
+Route ordinary companies, sector rates, minimum-tax comparison and returns to [corporate income tax](ga-corporate-income-tax.md). Route family shares, annual bands and foreign personal income to [individual income tax](gabon-income-tax.md). Route turnover, exemptions, rate lists, input deductions, CSS and imported services to [VAT](ga-vat-gst.md). Route pension/health ceilings and wage deductions to [payroll](ga-payroll-social.md). None of these Guides is a source-completeness certificate.
 
 ## Deadlines and filing
 
@@ -103,4 +103,4 @@ Not yet confirmed: The precise current DGI ministry hierarchy and CEMAC institut
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

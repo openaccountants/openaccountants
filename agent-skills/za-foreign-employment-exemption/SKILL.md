@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/za-foreign-employment-exemption"
   jurisdiction: "ZA"
   last_updated: "2026-09-03"
-  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Foreign Employment Income Exemption, s 10(1)(o)(ii)
