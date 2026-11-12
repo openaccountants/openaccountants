@@ -665,6 +665,10 @@ def is_pr_error(name, scope, dated_by_tax_year, content_untouched):
     A tax skill fails the PR on PR_ERROR_CHECKS. An active non-tax domain's date rule
     (check a, docs/domains.yml) fails the PR too, as the tax year does for a tax skill.
     Both only when the PR changes the skill's text; the label checks always."""
+    # Identity applies to every skill type, including metadata-only edits. Do
+    # not let a country code such as ID (Indonesia) masquerade as US-ID (Idaho).
+    if name == "jurisdiction_path":
+        return True
     label_check = name in ("tier_honest", "reviewed_on")
     domain_date = name == "tax_year_current" and not dated_by_tax_year
     return ((scope == "tax" or domain_date) and name in PR_ERROR_CHECKS
