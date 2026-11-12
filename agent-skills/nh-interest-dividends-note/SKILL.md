@@ -1,13 +1,13 @@
 ---
 name: nh-interest-dividends-note
-description: "Use when asked about NH Interest Dividends Note. Last updated: May 22, 2026"
+description: "New Hampshire interest and dividends tax repeal note, with historical phase-out and return-filing context."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nh-interest-dividends-note"
   jurisdiction: "US-NH"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-12"
 ---
 
 # NH Interest Dividends Note
@@ -61,4 +61,4 @@ New Hampshire's Interest & Dividends (I&D) Tax has been **fully repealed** effec
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nh-interest-dividends-note` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nh-interest-dividends-note. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nh-interest-dividends-note` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nh-interest-dividends-note. If neither is available, confirm every figure against the official source pages cited above before relying on it.

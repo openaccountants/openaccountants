@@ -1,9 +1,9 @@
 ---
 name: nh-interest-dividends-note
-description: "jurisdiction: US-NH"
+description: New Hampshire interest and dividends tax repeal note, with historical phase-out and return-filing context.
 jurisdiction: US-NH
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-12
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax

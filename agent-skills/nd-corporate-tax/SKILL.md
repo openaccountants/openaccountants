@@ -1,13 +1,13 @@
 ---
 name: nd-corporate-tax
-description: "Use when asked about ND Corporate Tax. North Dakota imposes a graduated corporate income tax under N.D.C.C. Chapter 57-38 (the Income Tax Act of 1981) at three statutory brackets: 1.41% on the first $25,000, 3.55% on the next $25,000 (to $50,000), and 4.31% on income above $50,000 [VERIFY: NDCC § 57-38-30 for TY 2025 thresholds]. ND does not impose a separate corporate franchise tax (contrast NC, TX, DE) and does not currently offer a pass-through entity tax (PTET) election — leaving ND S-corp and partnership owners without a federal SALT-cap workaround. The corporation return is Form 40, due the 15th day of the 4th month after year-end. ND apportions corporate income using a three-factor formula (property, payroll, sales) with the sales factor double-weighted by default and an optional single-sales-factor election for qualifying taxpayers [VERIFY: NDCC § 57-38.1-09 / Form 40 instructions]. The Oil Extraction Tax (NDCC § 57-51.1) and Oil & Gas Gross Production Tax (NDCC § 57-51) are se"
+description: "North Dakota corporate income-tax computation, apportionment, returns and estimated payments for tax year 2025."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nd-corporate-tax"
   jurisdiction: "US-ND"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-12"
 ---
 
 # ND Corporate Tax
@@ -642,4 +642,4 @@ For the reviewer's quick scan:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nd-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nd-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nd-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nd-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,13 +1,13 @@
 ---
 name: netherlands-owner-occupied-home-tax-scheme
-description: "Use when asked about Netherlands: Owner-Occupied Home Tax Scheme. Use this method for Dutch income-tax classification of a private main home, qualifying home debt and legacy home-saving products in 2026. Establish the applicable year before calculating: a return filed during 2026 may concern 2025. Use the separate 2025 home instructions for that return; the figures below are 2026 figures. This is a calculation and evidence workflow, not authority to file or change a mortgage contract."
+description: "Dutch income-tax treatment of an owner-occupied home, qualifying home debt and legacy home-saving products."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-12"
 ---
 
 # Netherlands: Owner-Occupied Home Tax Scheme
@@ -125,4 +125,4 @@ Not yet confirmed: nothing outstanding from this pass.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-owner-occupied-home-tax-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-owner-occupied-home-tax-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.
