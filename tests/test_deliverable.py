@@ -81,7 +81,7 @@ class SizeTest(unittest.TestCase):
         found = problems({rel: SKILL}, sizes={rel: 130_577})
         self.assertEqual(len(found), 1)
         self.assertIn("130,577 bytes", found[0])
-        self.assertIn("102,400 bytes", found[0])
+        self.assertIn("112,640 bytes", found[0])
         self.assertIn("Split it into a base skill and a child skill that depends on it", found[0])
 
     def test_the_limit_itself_passes(self):
