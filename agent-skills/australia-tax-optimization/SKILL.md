@@ -94,7 +94,7 @@ Discretionary (family) trusts allow income distribution to adult family members 
 | Tools and equipment (≤$300) | s 8-1 | Immediately deductible if cost ≤$300 and used for income |
 | Travel between workplaces | s 8-1 | Deductible (but NOT home-to-work commuting) |
 | Donations to DGRs | Div 30 | Deductible gifts to Deductible Gift Recipients |
-| Prepaid expenses ≤12 months | s 82KZM ITAA 1936 | Non-business individuals can prepay deductible expenses before 30 June for immediate deduction |
+| Prepaid deductible expenses | [ITAA 1936 ss 82KZL and 82KZM](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) | For an individual's non-business expenditure, the eligible service period must be no more than 12 months and end by the end of the following income year. Check the exceptions and separate agreement rules below |
 
 - **Self-education $250 reduction removed** — The $250 reduction no longer applies to self-education expenses incurred from 1 July 2022; the expense must still connect with current income-earning activities.  _([ATO, Self-education expenses](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/education-training-and-seminars/self-education-expenses))_
 
@@ -204,12 +204,18 @@ For general Division 40 depreciation, use 150% for assets held before 10 May 200
 | Strategy | Detail |
 | --- | --- |
 | Defer income to next FY | Delay invoicing until after 30 June if cash-basis taxpayer. For accrual-basis, delay delivery/completion |
-| Accelerate deductions before 30 June | Prepay up to 12 months of deductible expenses (rent, insurance, subscriptions) — s 82KZM ITAA 1936 |
+| Eligible prepayments before year end | Test the taxpayer, service period, choices and agreement rules below before bringing forward a deduction. Paying before 30 June alone does not qualify |
 | Bring forward asset purchases | Use instant asset write-off before 30 June deadline. Asset must be first used or installed ready for use |
 | Concessional super contribution | Maximise contributions before 30 June — $30,000 cap (2025–26). Carry-forward unused cap available if total super balance <$500,000 |
 | Capital gains harvest | Realise capital losses before 30 June to offset gains. Wash sale rules: ATO will scrutinise buybacks of substantially similar assets |
 | Defer capital gains | Hold assets >12 months to access 50% CGT discount (individuals and trusts) |
 | Small business CGT concessions | Div 152: 15-year exemption, 50% active asset reduction, retirement exemption ($500k lifetime cap), rollover. Net assets <$6m or aggregated turnover <$2m |
+
+The ordinary 12 month rule applies to otherwise deductible non-business expenditure of individuals and to qualifying small or medium business entities that have not chosen section 82KZMD. The eligible service period must be no more than 12 months and end by the last day of the income year following the year the expenditure is incurred. Otherwise, non-excluded expenditure is spread over the eligible service period under section 82KZM. Use the statutory service period, which starts no earlier than incurrence and is capped at 10 years; the payment date alone does not establish it. [ITAA 1936 ss 82KZL, 82KZM and 82KZMA](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
+
+First establish that the expense is deductible. Excluded expenditure includes amounts strictly less than $1,000; its exclusion from these timing rules does not create a deduction for private or capital costs. The separate agreement rules in sections 82KZME and 82KZMF can require spreading even where the ordinary 12 month test is met. Check their conditions and exceptions, including the specified rental insurance and acquisition-loan interest exception in section 82KZME(5); it does not cover every rental expense or borrowing purpose. [ITAA 1936 ss 82KZL and 82KZME-82KZMF](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
+
+For example, assume an individual's otherwise deductible non-business expense incurred on 25 June 2026 is not excluded expenditure and no separate agreement rule or other exception applies. Services run from 1 September 2026 to 31 August 2027. Although that is 12 months, it ends after 30 June 2027. Section 82KZM spreads the deduction over that service period; none falls in 2025-26.
 
 ## Section 7 — GST Optimization
 
@@ -336,6 +342,10 @@ This skill and its outputs are provided for informational and computational purp
 > Contributed by Ryan Duguid.
 
 ## Sources
+
+- [ITAA 1936 ss 82KZL-82KZMF](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html): eligible service period, taxpayer/choice conditions, excluded expenditure, following-income-year limit and separate agreement rules and exceptions. Selected sections of current compilation 193 read 2026-11-12.
+
+- [ITAA 1936 ss 82KZL-82KZMF, compilation 191](https://www.legislation.gov.au/C1936A00027/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_2/document_2.html): provisions applying to the June 2026 example, read 2026-11-12. The selected provisions agree with current compilation 193.
 
 Read 2026-11-12 for the depreciation correction:
 
