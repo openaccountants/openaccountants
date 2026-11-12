@@ -1,10 +1,10 @@
 ---
 name: australia-tax-optimization
 description: Use this skill when advising on LEGAL tax minimization strategies for Australian taxpayers — individuals, sole traders, and small business owners. Trigger on phrases like "reduce my tax", "tax planning Australia", "salary vs dividends", "negative gearing", "instant asset write-off", "superannuation strategy", "CGT discount", "trust distribution", "income splitting", "GAAR", "Part IVA", or any question about structuring affairs to legally minimize Australian tax. Covers entity selection, deduction optimization, capital allowances, loss utilization, timing strategies, GST planning, superannuation, and red lines. ALWAYS read this skill before giving Australian tax optimization advice.
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-27
+last_updated: 2026-11-12
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
@@ -115,10 +115,12 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 | Method | How It Works |
 | --- | --- |
-| Diminishing value | Base value × (days held / 365) × (200% / effective life) |
-| Prime cost (straight-line) | Cost × (days held / 365) × (100% / effective life) |
+| Diminishing value | Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life) |
+| Prime cost (straight-line) | Generally cost × (qualifying days / 365) × (100% / effective life), with statutory adjustments |
 
-- **Effective life determination** — Effective life determined by ATO schedule (TR 2024/3) or taxpayer's own reasonable estimate. Self-assessed life must be supportable if audited.  _(TR 2024/3)_
+For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+- **Effective life determination** -- Choose the applicable Commissioner determination under s 40-95, including its contract-date/start-time rules, or a valid self-assessed life. The [2025 determination, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text) is the current instrument at 12 November 2026, but the latest instrument does not automatically replace the life for an existing asset. [ITAA 1997, s 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 
 ### Motor Vehicles
 

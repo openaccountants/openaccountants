@@ -1,17 +1,15 @@
 ---
 name: au-sole-trader-schedule
 description: Australian sole trader business schedule (Business and Professional Items Schedule for Individuals). Covers assessable business income, allowable deductions, home office (fixed rate 70c/hour or actual), motor vehicle (logbook or cents per km at 88c/km), depreciation (instant asset write-off, simplified pooling, general pooling), prepaid expenses, and trading stock.
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-11-12
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
@@ -19,7 +17,7 @@ domain: income-tax
 
 ## AU Sole Trader Schedule
 
-## Australia Sole Trader Business Schedule v1.2
+## Australia Sole Trader Business Schedule v1.3
 
 ## What this file is
 
@@ -136,7 +134,7 @@ Two methods available for sole traders:
 
 #### General depreciation (non-SBE or election out of simplified)
 
-- **General depreciation**: Use the effective life determined by the ATO (Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025) or a self-assessed effective life. Choose diminishing value (rate = 200% / effective life) or prime cost (rate = 100% / effective life). Apply from the date the asset is first used or installed ready for use.  _(ATO Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025)_
+- **General depreciation** -- Choose the applicable Commissioner-determined effective life under s 40-95 or a valid self-assessed life. Start at first use or installation ready for use, rather than automatically at purchase. For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html). [2025 effective-life determination, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text).
 
 ### 4.6 Home office expenses
 

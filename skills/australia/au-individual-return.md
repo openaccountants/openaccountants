@@ -1,17 +1,15 @@
 ---
 name: au-individual-return
 description: Use this skill whenever asked about Australian individual income tax for sole traders. Trigger on phrases like "how much tax do I pay in Australia", "Australian tax return", "sole trader tax", "ABN tax", "Medicare levy", "LITO", "PAYG", "tax brackets Australia", "BAS", "instant asset write-off", "home office deduction", "HELP repayment", "HECS debt", "small business income tax offset", "motor vehicle deduction", or any question about filing or computing income tax for an Australian sole trader. Covers 2025–26 Stage 3 tax rates, Medicare levy and surcharge, LITO, business income computation, allowable deductions, depreciation, instant asset write-off, small business income tax offset, HELP/HECS repayments, and final tax computation. ALWAYS read this skill before touching any Australian income tax work.
-version: 2.2
+version: 2.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-10-12
+last_updated: 2026-11-12
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
@@ -41,7 +39,7 @@ domain: income-tax
 | Filing portal | myTax (via myGov) or registered tax agent |
 | Filing deadline | 2 November 2026 for standard self-lodgement (31 October is Saturday); tax-agent dates depend on the applicable programme |
 | Contributor | Open Accountants Community |
-| Skill version | 2.2 |
+| Skill version | 2.3 |
 
 ### Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]
 
@@ -267,7 +265,7 @@ domain: income-tax
 
 ### 5.3 Depreciation [T1]
 
-- **Diminishing value** — Base value x (days held / 365) x (200% / effective life)  _(ITAA 1997 Div 40)_
+- **Diminishing value** -- Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life). For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 - **Prime cost (straight line)** — Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
 - **Small business entity simplified depreciation** — Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
 - **Instant asset write-off** — Assets costing less than $20,000 (assets first used or installed ready for use 1 July 2023 to 30 June 2026; extension made law by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) can be immediately deducted by small business entities. For later first use, apply the enacted permanent threshold and commencement details in Asset-threshold currency above.  _(ITAA 1997 s 328-180)_

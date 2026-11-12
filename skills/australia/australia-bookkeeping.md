@@ -1,17 +1,15 @@
 ---
 name: australia-bookkeeping
 description: Use this skill whenever asked about Australian bookkeeping for sole traders, partnerships, or small companies. Trigger on phrases like "chart of accounts", "BAS", "GST codes", "bookkeeping", "profit and loss", "balance sheet", "AASB", "simplified disclosures", "Tier 2", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "instant asset write-off", "small business pool", "ABN", "ATO reporting", "activity statement", "accrual basis", "cash basis", "general ledger", "how do I classify this transaction", "what evidence do I need", "capital or revenue", "private use apportionment", "fix a bookkeeping error", "accounting versus tax treatment", or any question about day-to-day transaction recording, financial statement preparation, or account coding for an Australian business.
-version: 1.3
+version: 1.4
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-20
+last_updated: 2026-11-12
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: bookkeeping
 ---
 
@@ -294,12 +292,16 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 | Method | Application |
 | --- | --- |
-| Diminishing value | rate = days held ÷ 365 × (200% ÷ effective life) |
-| Prime cost (straight-line) | rate = days held ÷ 365 × (100% ÷ effective life) |
+| Diminishing value | Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life) |
+| Prime cost (straight-line) | Generally cost × (qualifying days / 365) × (100% / effective life), with statutory adjustments |
+
+For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 
 ### Common effective lives (2025 determination, asset-specific)
 
 **Common effective lives (2025 determination, asset-specific)**  _([Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Table B](https://www.legislation.gov.au/F2025L01097/asmade/text))_
+
+The DV rates below assume the ordinary post-9 May 2006 factor. Match the asset to an applicable industry-specific Table A entry before using general Table B, and select the dated determination under s 40-95; do not reset an existing register to the latest table.
 
 | Asset | Effective Life | DV Rate | PC Rate |
 | --- | --- | --- | --- |
@@ -308,8 +310,8 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 | Printers/Scanners | 5 years | 40% | 20% |
 | Office chairs | 10 years | 20% | 10% |
 | Office desks | 20 years | 10% | 5% |
-| Motor vehicles | 8 years | 25% | 12.5% |
-| Air conditioning | 10 years | 20% | 10% |
+| Cars, general Table B category (hire/rental/taxi categories differ) | 8 years | 25% | 12.5% |
+| Air conditioning, mini split systems up to 20 kW (excluding pipes, duct work and vents) | 10 years | 20% | 10% |
 | Eligible building capital works | Division 43, subject to use and construction dates | No generic diminishing-value deduction | Commonly 2.5%; verify eligibility and applicable statutory rate |
 
 ### Car Limit
