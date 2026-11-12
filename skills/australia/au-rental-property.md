@@ -1,7 +1,7 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.5"
+version: "1.6"
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-11-12
@@ -17,9 +17,9 @@ domain: income-tax
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.5
+## Australia Rental Property -- Income & Deductions Skill v1.6
 
-Australia Rental Property -- Income & Deductions Skill v1.5
+Australia Rental Property -- Income & Deductions Skill v1.6
 
 ## Section 1 -- Quick Reference
 
@@ -36,7 +36,7 @@ Australia Rental Property -- Income & Deductions Skill v1.5
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.5 |
+| Skill version | 1.6 |
 
 ### Select the income year before calculating
 
