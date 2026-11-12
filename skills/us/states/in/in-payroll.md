@@ -1,9 +1,9 @@
 ---
 name: in-payroll
-description: Indiana Payroll Skill
+description: Indiana employer payroll obligations for tax year 2025, including state withholding, unemployment insurance and reporting.
 jurisdiction: US-IN
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-12
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
