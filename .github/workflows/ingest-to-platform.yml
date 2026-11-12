@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: read
+  issues: write # only the persistent delivery work list; source remains read-only
 
 # Keep pending events instead of replacing earlier pushes. Read main only after
 # this lock is acquired: an older queued event must not replay an older head.
@@ -43,10 +44,12 @@ jobs:
           PLATFORM_INGEST_SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
           SINCE_SHA: ${{ github.event.before || inputs.since_sha }}
           DELIVERY_EVENT: ${{ github.event_name }}
+          GH_TOKEN: ${{ github.token }}
+          DELIVERY_WORK_LIST_ISSUE: "1506"
         run: |
           HEAD_SHA="$(git rev-parse HEAD)"
           if [ "${DELIVERY_EVENT:-}" = "schedule" ]; then
-            python3 scripts/deliver-to-platform.py --lookback-days 7 --head "$HEAD_SHA" --batch-size 20 --send
+            python3 scripts/deliver-to-platform.py --lookback-days 7 --head "$HEAD_SHA" --batch-size 20 --work-list --send
           else
-            python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --batch-size 20 --send
+            python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --batch-size 20 --work-list --send
           fi

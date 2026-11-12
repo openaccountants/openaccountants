@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 from datetime import datetime, timedelta, timezone
 import json
 import os
@@ -13,10 +14,76 @@ import subprocess
 import time
 import urllib.error
 import urllib.request
+import zlib
 
 PLATFORM = "https://www.openaccountants.com/api/cron/github-ingest"
 SYNC_BOT = "sync@openaccountants.com"
 BATCH_SIZE = 200
+WORK_LIST_MARKER = r"<!-- oa-delivery-work-list-v1:([A-Za-z0-9+/=]+) -->"
+WORK_LIST_STATES = {"pending", "held", "mismatch", "failed", "superseded"}
+
+
+def work_list_body(pending: dict[str, str], head: str) -> str:
+    # Compression keeps a full-library write-ahead record below GitHub's issue limit.
+    payload = base64.b64encode(zlib.compress(json.dumps(pending, sort_keys=True).encode())).decode()
+    counts = {state: list(pending.values()).count(state) for state in sorted(set(pending.values()))}
+    lines = ["Persistent platform delivery work list. The workflow owns this record.",
+             "Paths stay here until the platform verifies a match against current source.",
+             f"\nOutstanding: **{len(pending)}**. Last planned source: `{head}`.",
+             f"States: `{json.dumps(counts, sort_keys=True)}`.",
+             "\nHeld = needs review; failed/mismatch/pending = needs recovery. See the latest ingest run for details.",
+             "\n```json", json.dumps(dict(sorted(pending.items())[:50]), indent=2), "```",
+             "\nThe machine record below contains every outstanding path, including any beyond the first 50.",
+             f"<!-- oa-delivery-work-list-v1:{payload} -->"]
+    body = "\n".join(lines)
+    if len(body.encode()) > 65_000:
+        raise ValueError("Delivery work list exceeds GitHub's issue limit; no delivery was started")
+    return body
+
+
+def parse_work_list(body: str) -> dict[str, str]:
+    markers = re.findall(WORK_LIST_MARKER, body)
+    if len(markers) != 1:
+        raise ValueError("Delivery work list has no unambiguous machine record")
+    try:
+        pending = json.loads(zlib.decompress(base64.b64decode(markers[0], validate=True)))
+    except (ValueError, zlib.error) as error:
+        raise ValueError("Delivery work list is unreadable") from error
+    if not isinstance(pending, dict) or any(
+        not isinstance(path, str) or not is_skill(path)
+        or any(part in {"", ".", ".."} for part in path.split("/"))
+        or not isinstance(state, str) or state not in WORK_LIST_STATES
+        for path, state in pending.items()
+    ):
+        raise ValueError("Delivery work list contains an invalid path or state")
+    return pending
+
+
+def issue_api(method: str, payload: dict | None = None) -> dict:
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    issue = os.environ.get("DELIVERY_WORK_LIST_ISSUE", "")
+    if repo != "openaccountants/openaccountants" or not issue.isdecimal():
+        raise ValueError("Delivery work list repository/issue is not configured")
+    command = ["gh", "api", "--method", method, f"repos/{repo}/issues/{issue}"]
+    if payload is not None:
+        command += ["--input", "-"]
+    result = subprocess.run(command, input=json.dumps(payload) if payload is not None else None,
+                            text=True, capture_output=True, check=True)
+    response = json.loads(result.stdout)
+    if not isinstance(response, dict) or response.get("number") != int(issue) or "pull_request" in response:
+        raise ValueError("GitHub did not confirm the delivery work list issue")
+    return response
+
+
+def read_work_list() -> dict[str, str]:
+    return parse_work_list(issue_api("GET").get("body") or "")
+
+
+def save_work_list(pending: dict[str, str], head: str) -> None:
+    body = work_list_body(pending, head)
+    saved = issue_api("PATCH", {"body": body})
+    if saved.get("body") != body:
+        raise ValueError("GitHub did not confirm the saved delivery work list")
 
 
 def git(repo: Path, *args: str) -> str:
@@ -55,7 +122,8 @@ def lookback_since(repo: Path, head: str, days: int) -> str:
     return git(repo, "rev-list", "--first-parent", "--max-count=1", f"--before={cutoff}", sha, "--").strip() or "0" * 40
 
 
-def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int = BATCH_SIZE) -> list[dict]:
+def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int = BATCH_SIZE,
+                    retry_paths: list[str] | None = None) -> list[dict]:
     if not 1 <= batch_size <= BATCH_SIZE:
         raise ValueError("Batch size must be between 1 and 200")
     require_full_history(repo)
@@ -90,6 +158,26 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
         for path in paths:
             if is_skill(path):
                 destination.setdefault(path, person)
+
+    for path in retry_paths or []:
+        if path in owners or path in merge_owners:
+            continue
+        # A retry may predate the lookback. Recover today's last human writer
+        # from full history; never replay the old body or guess its attribution.
+        found = None
+        for kind in ("--no-merges", "--merges"):
+            records = git(repo, "log", "-z", "--format=%an%x00%ae%x00%ce", kind,
+                          "--no-renames", "--diff-filter=ACDMRT", head_sha, "--", path).split("\0")
+            for offset in range(0, len(records) - 2, 3):
+                name, email, committer = records[offset:offset + 3]
+                if SYNC_BOT not in (email.lower(), committer.lower()):
+                    found = author(name, email)
+                    break
+            if found:
+                break
+        if not found:
+            raise ValueError(f"Outstanding path has no confirmed human writer: {path}")
+        owners[path] = found
 
     groups: dict[tuple, dict] = {}
     for path in sorted(owners.keys() | merge_owners.keys()):
@@ -128,7 +216,7 @@ def report(message: str, **fields) -> None:
     print(json.dumps({"message": message, **fields}), flush=True)
 
 
-def deliver(batch: dict, secret: str, attempts: int = 20) -> bool:
+def deliver(batch: dict, secret: str, attempts: int = 20, observed: dict | None = None) -> bool:
     acknowledgement = post(PLATFORM, batch, secret)
     accepted = acknowledgement.get("accepted")
     if acknowledgement.get("ok") is not True or type(accepted) is not int or accepted != len(batch["paths"]):
@@ -150,6 +238,8 @@ def deliver(batch: dict, secret: str, attempts: int = 20) -> bool:
             states = [row.get("status") for row in outcomes]
             if any(not isinstance(state, str) or state not in {"match", "superseded", "pending", "held", "mismatch", "failed"} for state in states):
                 raise ValueError("Verification returned an unknown state")
+            if observed is not None:
+                observed.update({row["path"]: row["status"] for row in outcomes})
             if "pending" not in states:
                 for row in outcomes:
                     report("Verified path", path=row["path"], status=row["status"])
@@ -171,12 +261,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--head", default="HEAD", help="Commit to deliver, default HEAD")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help="Paths per writer batch, at most 200")
     parser.add_argument("--send", action="store_true", help="Send the complete plan and verify each batch")
+    parser.add_argument("--work-list", action="store_true", help="Retain every unresolved path in the configured GitHub issue")
     args = parser.parse_args(argv)
     # Finish all Git reads before sending anything. An unreadable commit must
     # never cause partial delivery, and event payload file arrays are not needed.
     repo = Path.cwd()
     since = args.since if args.since is not None else lookback_since(repo, args.head, args.lookback_days)
-    batches = collect_batches(repo, since, args.head, args.batch_size)
+    pending = read_work_list() if args.work_list else {}
+    batches = collect_batches(repo, since, args.head, args.batch_size, list(pending))
     if not args.send:
         print(json.dumps({"dry_run": True, "batches": batches}, indent=2))
         return 0
@@ -186,15 +278,30 @@ def main(argv: list[str] | None = None) -> int:
     secret = os.environ.get("PLATFORM_INGEST_SECRET", "")
     if not secret:
         raise ValueError("PLATFORM_INGEST_SECRET is not configured")
+    if args.work_list:
+        # Write ahead: a timeout/crash must not erase either new work or retries.
+        for batch in batches:
+            for path in batch["paths"]:
+                pending.setdefault(path, "pending")
+        save_work_list(pending, batches[0]["headSha"])
     failed = 0
     for number, batch in enumerate(batches, 1):
         report("Delivering batch", number=number, total=len(batches), paths=len(batch["paths"]))
+        observed: dict[str, str] = {}
         try:
-            if not deliver(batch, secret):
+            if not deliver(batch, secret, observed=observed):
                 failed += 1
         except (urllib.error.URLError, TimeoutError, ValueError) as error:
             report("Batch failed", number=number, error=str(error))
             failed += 1
+        if args.work_list:
+            for path in batch["paths"]:
+                state = observed.get(path, "failed")
+                if state == "match":
+                    pending.pop(path, None)
+                else:
+                    pending[path] = state
+            save_work_list(pending, batch["headSha"])
     report("Delivery finished", batches=len(batches), failed=failed)
     return 1 if failed else 0
 

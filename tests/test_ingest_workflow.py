@@ -90,6 +90,8 @@ def post(url,body,secret):
         return {"outcomes":[{"path":path,"status":"match"} for path in body["paths"]]}
     raise AssertionError("Unexpected network destination")
 module.post=post
+module.read_work_list=lambda: {}
+module.save_work_list=lambda pending,head: None
 raise SystemExit(module.main(sys.argv[2:]))
 ''')
         # Execute the YAML Bash unchanged. Replace only the Python HTTP boundary;
@@ -138,7 +140,7 @@ raise SystemExit(module.main(sys.argv[2:]))
 
     def test_workflow_keeps_secret_scope_and_uses_one_shared_verified_entry(self):
         doc = yaml.safe_load((ROOT / ".github/workflows/ingest-to-platform.yml").read_text())
-        self.assertEqual(doc["permissions"], {"contents": "read"})
+        self.assertEqual(doc["permissions"], {"contents": "read", "issues": "write"})
         self.assertEqual(list(doc["jobs"]), ["ring"])
         job = doc["jobs"]["ring"]
         self.assertEqual(job["environment"], "production")
@@ -151,6 +153,8 @@ raise SystemExit(module.main(sys.argv[2:]))
         self.assertEqual(events["schedule"], [{"cron": "17 6 * * *"}])
         self.assertIn('--batch-size 20', job["steps"][-1]["run"])
         self.assertIn("--send", job["steps"][-1]["run"])
+        self.assertIn("--work-list", job["steps"][-1]["run"])
+        self.assertEqual(job["steps"][-1]["env"]["DELIVERY_WORK_LIST_ISSUE"], "1506")
         self.assertEqual(job["steps"][-1]["env"]["SINCE_SHA"], "${{ github.event.before || inputs.since_sha }}")
 
 
@@ -176,6 +180,27 @@ class DeliveryPlanTests(GitFixture, unittest.TestCase):
         self.assertEqual(delivery.lookback_since(self.repo, "HEAD", 7), "0" * 40)
         with self.assertRaises(ValueError):
             delivery.lookback_since(self.repo, "HEAD", 0)
+
+    def test_outstanding_paths_outlive_lookback_and_use_current_source_and_writer(self):
+        self.old_base()
+        old = (datetime.now(timezone.utc) - timedelta(days=20)).isoformat()
+        path = "skills/mt/old-failure.md"
+        self.commit({path: "first"}, date=old)
+        self.commit({path: "latest"}, "Latest Writer", "latest@example.test", date=old)
+        self.commit({"README.md": "later unrelated work"})
+        head = self.git("rev-parse", "HEAD")
+        self.assertEqual(delivery.collect_batches(self.repo, head, head), [])
+        batches = delivery.collect_batches(self.repo, head, head, retry_paths=[path])
+        self.assertEqual(batches[0]["paths"], [path])
+        self.assertEqual(batches[0]["headSha"], head)
+        self.assertEqual(batches[0]["authors"][0]["email"], "latest@example.test")
+
+    def test_outstanding_deleted_path_becomes_a_current_withdrawal(self):
+        path = "skills/mt/retired-failure.md"
+        self.commit({path: "old"})
+        head = self.commit({path: None})
+        batches = delivery.collect_batches(self.repo, head, head, retry_paths=[path])
+        self.assertEqual(batches[0]["deletedPaths"], [path])
 
     def test_a_shallow_history_cannot_claim_a_complete_sweep(self):
         self.commit({"skills/mt/recent.md": "fixture"})
@@ -380,6 +405,46 @@ class DeliveryVerificationTests(unittest.TestCase):
             delivery.main(["--since", "base", "--send"])
         send.assert_not_called()
 
+    def test_work_list_records_work_before_sending_and_clears_only_confirmed_paths(self):
+        second = "skills/mt/b.md"
+        batch = {**self.batch, "paths": [self.batch["paths"][0], second]}
+        snapshots = []
+        def save(pending, head):
+            snapshots.append(dict(pending))
+        def send(batch, secret, observed):
+            self.assertEqual(snapshots[0], {p: "pending" for p in batch["paths"]})
+            observed.update({batch["paths"][0]: "match", second: "held"})
+            return False
+        with mock.patch.object(delivery, "read_work_list", return_value={}), \
+             mock.patch.object(delivery, "save_work_list", side_effect=save), \
+             mock.patch.object(delivery, "collect_batches", return_value=[batch]), \
+             mock.patch.object(delivery, "deliver", side_effect=send), \
+             mock.patch.dict(os.environ, {"PLATFORM_INGEST_SECRET": "synthetic-secret"}), redirect_stdout(io.StringIO()):
+            result = delivery.main(["--since", "base", "--work-list", "--send"])
+        self.assertEqual(result, 1)
+        self.assertEqual(snapshots[-1], {second: "held"})
+
+    def test_a_failed_work_list_write_stops_before_delivery(self):
+        with mock.patch.object(delivery, "read_work_list", return_value={}), \
+             mock.patch.object(delivery, "save_work_list", side_effect=ValueError("cannot save")), \
+             mock.patch.object(delivery, "collect_batches", return_value=[self.batch]), \
+             mock.patch.object(delivery, "deliver") as send, \
+             mock.patch.dict(os.environ, {"PLATFORM_INGEST_SECRET": "synthetic-secret"}), self.assertRaises(ValueError):
+            delivery.main(["--since", "base", "--work-list", "--send"])
+        send.assert_not_called()
+
+    def test_a_transport_failure_stays_on_the_work_list(self):
+        snapshots = []
+        path = self.batch["paths"][0]
+        with mock.patch.object(delivery, "read_work_list", return_value={path: "failed"}), \
+             mock.patch.object(delivery, "save_work_list", side_effect=lambda pending, head: snapshots.append(dict(pending))), \
+             mock.patch.object(delivery, "collect_batches", return_value=[self.batch]) as collect, \
+             mock.patch.object(delivery, "deliver", side_effect=urllib.error.URLError("offline")), \
+             mock.patch.dict(os.environ, {"PLATFORM_INGEST_SECRET": "synthetic-secret"}), redirect_stdout(io.StringIO()):
+            self.assertEqual(delivery.main(["--since", "base", "--work-list", "--send"]), 1)
+        self.assertEqual(collect.call_args.args[-1], [path])
+        self.assertEqual(snapshots[-1], {path: "failed"})
+
     def test_http_json_must_be_an_object_and_redirects_are_not_followed(self):
         self.assertIsNone(delivery.NoRedirect().redirect_request(None, None, 302, "redirect", {}, "https://elsewhere.example"))
         with mock.patch.object(delivery.urllib.request, "build_opener") as opener:
@@ -389,6 +454,22 @@ class DeliveryVerificationTests(unittest.TestCase):
             request = opener.return_value.open.call_args.args[0]
             self.assertEqual(request.full_url, delivery.PLATFORM)
             self.assertEqual(request.get_header("Authorization"), "Bearer synthetic-secret")
+
+
+class WorkListRecordTests(unittest.TestCase):
+    def test_full_library_record_round_trips_within_issue_limit(self):
+        pending = {f"skills/example/fictional-topic-{i:04}.md": "failed" for i in range(2210)}
+        body = delivery.work_list_body(pending, "a" * 40)
+        self.assertLess(len(body.encode()), 65_000)
+        self.assertEqual(delivery.parse_work_list(body), pending)
+
+    def test_a_missing_or_tampered_record_is_never_an_empty_queue(self):
+        for body in ("", "<!-- oa-delivery-work-list-v1:broken= -->"):
+            with self.subTest(body=body), self.assertRaises(ValueError):
+                delivery.parse_work_list(body)
+        for pending in ({"skills/../escape.md": "failed"}, {"skills/mt/a.md": "match"}):
+            with self.subTest(pending=pending), self.assertRaises(ValueError):
+                delivery.parse_work_list(delivery.work_list_body(pending, "a" * 40))
 
 
 if __name__ == "__main__":
