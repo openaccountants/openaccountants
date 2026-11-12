@@ -12,8 +12,9 @@ Documentation such as `README.md` and `references.md`, and authoring files in
 `templates/` or `_templates/`, are not dependency targets or downloadable MCP
 skill entries. They remain available as repository documents.
 
-Two different documents cannot claim one name. Identical guidance for the same
-jurisdiction may be copied. The documented federal exception remains: a
+Two different documents cannot claim one name. Aliases must match both guidance
+and parsed source metadata, including prerequisites, period, shape and approval.
+The documented federal exception remains: a
 hand-authored `packages/us-federal/` skill takes precedence over its matching
 `skills/us/federal/` copy. Another country's skill cannot use that exception.
 
@@ -34,6 +35,11 @@ They were once empty stubs removed in April 2026, while many country files kept
 their dependencies. The restored routers load the universal method and require
 the applicable country content. They contain no national tax values and claim
 no professional approval.
+
+Dependencies are prerequisites and cannot form a cycle. Intake comes before
+return assembly; an intake's later handoff to assembly belongs in its body,
+not as a backwards prerequisite. Validation rejects both self-dependencies and
+loops through several skills.
 
 Gabon income tax is `gabon-income-tax`; `ga-income-tax` remains US Georgia.
 There is no global redirect between those names: an old Gabon request must be

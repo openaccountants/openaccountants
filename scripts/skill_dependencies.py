@@ -10,6 +10,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+import json
 import re
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
@@ -25,6 +26,7 @@ class Skill:
     jurisdiction: str
     body: str
     dependencies: tuple[str, ...]
+    context: str
 
 
 def read_skill(path: Path) -> Skill | None:
@@ -45,7 +47,8 @@ def read_skill(path: Path) -> Skill | None:
     deps = fm.get("depends_on") or []
     if not isinstance(deps, list) or any(not isinstance(d, str) or not SLUG.fullmatch(d) for d in deps):
         raise ValueError(f"{path}: depends_on must be a list of skill slugs")
-    return Skill(path, name, str(fm.get("jurisdiction") or "").upper(), match[2], tuple(deps))
+    return Skill(path, name, str(fm.get("jurisdiction") or "").upper(), match[2], tuple(deps),
+                 json.dumps(fm, sort_keys=True, default=str))
 
 
 def select_target(name: str, candidates: list[Skill], root: Path) -> Skill:
@@ -60,10 +63,37 @@ def select_target(name: str, candidates: list[Skill], root: Path) -> Skill:
         s is federal[0] or s.path.is_relative_to(root / "skills/us/federal") for s in group
     ):
         return federal[0]
-    if len({(s.body, s.jurisdiction) for s in group}) == 1:
+    if len({(s.body, s.context) for s in group}) == 1:
         return min(group, key=lambda s: s.path.as_posix())
     paths = ", ".join(str(s.path.relative_to(root)) for s in group)
-    raise ValueError(f"ambiguous skill name `{name}`: different guidance or jurisdictions in {paths}")
+    raise ValueError(f"ambiguous skill name `{name}`: different guidance or source metadata in {paths}")
+
+
+def dependency_cycles(skills: list[Skill]) -> list[str]:
+    """Report prerequisite loops. A forward handoff belongs in the body."""
+    graph: dict[str, set[str]] = defaultdict(set)
+    for skill in skills:
+        graph[skill.name].update(skill.dependencies)
+    finished, active, stack, errors = set(), set(), [], []
+
+    def visit(name):
+        if name in active:
+            cycle = stack[stack.index(name):] + [name]
+            errors.append("skill dependency cycle: " + " -> ".join(cycle))
+            return
+        if name in finished:
+            return
+        active.add(name)
+        stack.append(name)
+        for dependency in sorted(graph.get(name, ())):
+            visit(dependency)
+        stack.pop()
+        active.remove(name)
+        finished.add(name)
+
+    for name in sorted(graph):
+        visit(name)
+    return errors
 
 
 def catalogue(root: Path) -> tuple[list[Skill], dict[str, Skill], list[str]]:
@@ -90,6 +120,7 @@ def catalogue(root: Path) -> tuple[list[Skill], dict[str, Skill], list[str]]:
         for dependency in skill.dependencies:
             if dependency not in resolved:
                 errors.append(f"{skill.path.relative_to(root)}: missing or ambiguous dependency `{dependency}`")
+    errors.extend(dependency_cycles(skills))
     return skills, resolved, errors
 
 
@@ -104,7 +135,7 @@ def add_package_dependencies(package: Path, files: list[str], targets: dict[str,
     for filename in files:
         if skill := read_skill(package / filename):
             previous = present.get(skill.name)
-            if previous and (previous.body, previous.jurisdiction) != (skill.body, skill.jurisdiction):
+            if previous and (previous.body, previous.context) != (skill.body, skill.context):
                 raise ValueError(f"{package}: ambiguous skill name `{skill.name}`")
             present[skill.name] = skill
     visited = set()

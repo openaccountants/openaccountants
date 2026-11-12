@@ -56,6 +56,40 @@ class SkillDependenciesTests(unittest.TestCase):
         self.write("skills/a/child.md", content("child", dependencies=["parent"]))
         self.assertEqual(catalogue(self.root)[2], [])
 
+    def test_same_body_with_different_prerequisites_is_ambiguous(self):
+        self.write("skills/a/parent.md", content("parent"))
+        self.write("skills/a/alias.md", content("alias"))
+        self.write("skills/b/alias.md", content("alias", dependencies=["parent"]))
+        self.assertTrue(any("ambiguous skill name `alias`" in e for e in catalogue(self.root)[2]))
+
+    def test_same_body_with_different_period_is_ambiguous(self):
+        text = content("alias")
+        self.write("skills/a/alias.md", text.replace("jurisdiction: XX", "jurisdiction: XX\ntax_year: 2025"))
+        self.write("skills/b/alias.md", text.replace("jurisdiction: XX", "jurisdiction: XX\ntax_year: 2026"))
+        self.assertTrue(any("ambiguous skill name `alias`" in e for e in catalogue(self.root)[2]))
+
+    def test_same_body_with_different_approval_is_ambiguous(self):
+        text = content("alias")
+        self.write("skills/a/alias.md", text.replace("jurisdiction: XX", "jurisdiction: XX\ntier: 2"))
+        self.write("skills/b/alias.md", text.replace("jurisdiction: XX", "jurisdiction: XX\ntier: 1\nreviewed_by: Test Person"))
+        self.assertTrue(any("ambiguous skill name `alias`" in e for e in catalogue(self.root)[2]))
+
+    def test_self_dependency_is_rejected(self):
+        self.write("skills/a/intake.md", content("intake", dependencies=["intake"]))
+        self.assertIn("skill dependency cycle: intake -> intake", catalogue(self.root)[2])
+
+    def test_multiple_skill_cycle_is_rejected(self):
+        self.write("skills/a/intake.md", content("intake", dependencies=["assembly"]))
+        self.write("skills/a/assembly.md", content("assembly", dependencies=["intake"]))
+        self.assertTrue(any("cycle:" in e and "assembly" in e and "intake" in e for e in catalogue(self.root)[2]))
+
+    def test_diamond_dependency_is_valid(self):
+        self.write("skills/a/start.md", content("start", dependencies=["left", "right"]))
+        self.write("skills/a/left.md", content("left", dependencies=["base"]))
+        self.write("skills/a/right.md", content("right", dependencies=["base"]))
+        self.write("skills/a/base.md", content("base"))
+        self.assertEqual(catalogue(self.root)[2], [])
+
     def test_hand_authored_federal_precedence_matches_the_mcp(self):
         self.write("skills/us/federal/federal.md", content("federal", "Generated", "US"))
         manual = self.write("packages/us-federal/federal.md", content("federal", "Manual", "US"))
