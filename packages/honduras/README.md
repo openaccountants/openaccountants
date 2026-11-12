@@ -9,18 +9,14 @@
 2. `intake.md`
 3. `README.md`
 4. `hn-company-formation.md`
-5. `hn-corporate-income-tax.md`
-6. `hn-tax-overview.md`
-7. `honduras-income-tax.md`
-8. `honduras-isv.md`
-9. `honduras-payroll.md`
-10. `honduras-social-contributions.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
-13. `income-tax-workflow-base.md`
-14. `vat-workflow-base.md`
-15. `social-contributions-workflow-base.md`
-16. `workflow-base.md`
+5. `hn-tax-overview.md`
+6. `honduras-isv.md`
+7. `honduras-social-contributions.md`
+8. `payroll-workflow-base.md`
+9. `company-formation-workflow-base.md`
+10. `vat-workflow-base.md`
+11. `social-contributions-workflow-base.md`
+12. `workflow-base.md`
 
 ## How to use
 

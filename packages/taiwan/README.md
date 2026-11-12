@@ -10,14 +10,9 @@
 3. `README.md`
 4. `taiwan-vat.md`
 5. `tw-company-formation.md`
-6. `tw-corporate-income-tax.md`
-7. `tw-income-tax.md`
-8. `tw-nhi.md`
-9. `tw-tax-overview.md`
-10. `company-formation-workflow-base.md`
-11. `vat-workflow-base.md`
-12. `income-tax-workflow-base.md`
-13. `workflow-base.md`
+6. `tw-tax-overview.md`
+7. `company-formation-workflow-base.md`
+8. `vat-workflow-base.md`
 
 ## Also known as
 

@@ -17,13 +17,12 @@
 10. `singapore-formation.md`
 11. `singapore-gst.md`
 12. `singapore-tax-optimization.md`
-13. `singapore-transfer-pricing.md`
-14. `company-formation-workflow-base.md`
-15. `transfer-pricing-workflow-base.md`
-16. `crypto-tax-workflow-base.md`
-17. `income-tax-workflow-base.md`
-18. `bookkeeping-workflow-base.md`
-19. `workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
+15. `crypto-tax-workflow-base.md`
+16. `income-tax-workflow-base.md`
+17. `bookkeeping-workflow-base.md`
+18. `workflow-base.md`
 
 ## Also known as
 

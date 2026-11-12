@@ -12,9 +12,8 @@
 5. `mo-corporate-income-tax.md`
 6. `mo-payroll-social.md`
 7. `mo-tax-overview.md`
-8. `mo-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+8. `payroll-workflow-base.md`
+9. `company-formation-workflow-base.md`
 
 ## How to use
 

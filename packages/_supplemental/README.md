@@ -27,7 +27,6 @@ README/reference documents and authoring templates are not skill entries.
 - `ifrs18-presentation.md`
 - `ifrs18-presentation-worked-examples.md`
 - `ifrs3-business-combinations.md`
-- `nyc-unincorporated-business-tax.md`
 - `optimisation-advisor.md`
 - `statutory-audit-workflow-base.md`
 - `threshold-alerts.md`

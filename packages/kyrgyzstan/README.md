@@ -10,12 +10,11 @@
 3. `README.md`
 4. `kg-company-formation.md`
 5. `kg-corporate-income-tax.md`
-6. `kg-income-tax.md`
-7. `kg-payroll-social.md`
-8. `kg-tax-overview.md`
-9. `kg-vat-gst.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `kg-payroll-social.md`
+7. `kg-tax-overview.md`
+8. `kg-vat-gst.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
 
 ## How to use
 

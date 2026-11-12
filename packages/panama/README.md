@@ -11,11 +11,9 @@
 4. `panama-income-tax.md`
 5. `panama-itbms.md`
 6. `panama-payroll.md`
-7. `panama-social-contributions.md`
-8. `payroll-workflow-base.md`
-9. `income-tax-workflow-base.md`
-10. `social-contributions-workflow-base.md`
-11. `workflow-base.md`
+7. `payroll-workflow-base.md`
+8. `income-tax-workflow-base.md`
+9. `workflow-base.md`
 
 ## How to use
 

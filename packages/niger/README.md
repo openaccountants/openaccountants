@@ -12,11 +12,9 @@
 5. `ne-company-formation.md`
 6. `ne-corporate-income-tax.md`
 7. `ne-money-transfer-tax-repeal.md`
-8. `ne-payroll-social.md`
-9. `ne-tax-overview.md`
-10. `ne-vat-gst.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+8. `ne-tax-overview.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
 
 ## How to use
 

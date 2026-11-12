@@ -17,25 +17,24 @@
 10. `ma-financial-statements.md`
 11. `ma-formation.md`
 12. `ma-freelance-intake.md`
-13. `ma-payroll.md`
-14. `ma-return-assembly.md`
-15. `ma-social-contributions.md`
-16. `ma-tax-optimization.md`
-17. `ma-transfer-pricing.md`
-18. `morocco-corporate-income-tax.md`
-19. `morocco-payroll.md`
-20. `morocco-professional-income-tax.md`
-21. `morocco-vat.md`
-22. `bookkeeping-workflow-base.md`
-23. `einvoice-workflow-base.md`
-24. `payroll-workflow-base.md`
-25. `company-formation-workflow-base.md`
-26. `financial-statements-workflow-base.md`
-27. `transfer-pricing-workflow-base.md`
-28. `crypto-tax-workflow-base.md`
-29. `income-tax-workflow-base.md`
-30. `social-contributions-workflow-base.md`
-31. `workflow-base.md`
+13. `ma-return-assembly.md`
+14. `ma-social-contributions.md`
+15. `ma-tax-optimization.md`
+16. `ma-transfer-pricing.md`
+17. `morocco-corporate-income-tax.md`
+18. `morocco-payroll.md`
+19. `morocco-professional-income-tax.md`
+20. `morocco-vat.md`
+21. `bookkeeping-workflow-base.md`
+22. `einvoice-workflow-base.md`
+23. `payroll-workflow-base.md`
+24. `company-formation-workflow-base.md`
+25. `financial-statements-workflow-base.md`
+26. `transfer-pricing-workflow-base.md`
+27. `crypto-tax-workflow-base.md`
+28. `income-tax-workflow-base.md`
+29. `social-contributions-workflow-base.md`
+30. `workflow-base.md`
 
 ## How to use
 
