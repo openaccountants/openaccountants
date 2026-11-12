@@ -1,479 +1,301 @@
 ---
 name: brazil-payroll
-description: "Use esta skill sempre que perguntarem sobre processamento de folha de pagamento brasileira, cálculo de salários, IRRF (Imposto de Renda Retido na Fonte), contribuições ao INSS, depósitos de FGTS, 13º salário (décimo terceiro), custo do empregador, conversões de líquido para bruto ou de bruto para líquido, estrutura de holerite/contracheque, eventos do eSocial, ou qualquer questão sobre cálculo de remuneração, deduções ou obrigações do empregador no Brasil. Acione com frases como \"folha de pagamento brasileira\", \"folha de pagamento\", \"INSS\", \"IRRF\", \"FGTS\", \"13º salário\", \"décimo terceiro\", \"férias\", \"salário líquido\", \"holerite\", \"eSocial\", \"DCTF Web\", \"custo do empregador Brasil\", \"CLT\", \"rescisão\", \"aviso prévio\", ou \"salário mínimo Brasil\". / Use this skill whenever asked about Brazilian payroll processing, employee salary calculations, IRRF, INSS contributions, FGTS deposits, 13th salary, employer cost, gross-to-net or net-to-gross conversions, Brazilian payslip structure, eSocial "
+description: "Brazil calendar-year 2026 ordinary private-sector employee payroll: gross to net, INSS/IRRF owner handoffs, employer contributions, FGTS, employer cost, 13th salary, vacation, transport and family benefits, payslip records and current eSocial/DCTFWeb event sequence. Trigger on folha de pagamento, salário líquido/bruto, holerite, contracheque, FGTS, IRRF, 13º, férias, eSocial, DCTFWeb, CLT and rescisão. Includes the enacted EC 141/2026 working-time/rest transition and future paternity commencement. Specialist entitlement, hazard classifications, collective agreements, complex termination and legacy court-process calculations remain explicitly partial."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/brazil-payroll"
   jurisdiction: "BR"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-12"
 ---
 
-# Brazil Payroll
-
-## Brasil — Folha de Pagamento (INSS, FGTS, IRRF) — Skill v1.1
-
-## Rates and thresholds
-
-Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### Folha de Pagamento
-
-- **Salário mínimo 2025** — R$ 1.518,00/mês  _(Decreto nº 12.342/2024)_
-- **Salário mínimo 2026** — R$ 1.630,00/mês  _(Decreto Federal do Salário Mínimo 2026)_
-- **IRRF isenção** — R$ 2.428,80 — Isento  _(Lei nº 11.482/2007)_
-- **IRRF faixa de R$ 2.428,81 a R$ 2.826,65** — 7,5% - parcela R$ 182,16  _(Lei nº 11.482/2007)_
-- **IRRF faixa R$ 2.826,66 – R$ 3.751,05** — 15% - parcela R$ 394,16  _(Lei nº 11.482/2007)_
-- **IRRF faixa R$ 3.751,06 – R$ 4.664,68** — 22,5% - parcela R$ 675,49  _(Lei nº 11.482/2007)_
-- **IRRF Acima de R$ 4.664,68** — 27,5% - parcela R$ 908,73  _(Lei nº 11.482/2007)_
-- **Dedução por dependente** — R$ 189,59/mês  _(Lei nº 9.250/1995)_
-- **INSS faixa Até R$ 1.621,00** — Até R$ 1.630,00  _(Lei nº 8.212/1991 Portaria Interministerial MPS/MF nº 13/2026)_
-- **INSS faixa R$ 1.621,01 – R$ 2.902,84** — R$ 1.630,01 – R$ 2.902,84  _(Lei nº 8.212/1991 Portaria Interministerial MPS/MF nº 13/2026)_
-- **INSS faixa R$ 2.902,85 – R$ 4.354,27** — 12%  _(Lei nº 8.212/1991 Portaria Interministerial MPS/MF nº 13/2026)_
-- **INSS faixa R$ 4.354,28 – R$ 8.475,55 (teto)** — 14%  _(Lei nº 8.212/1991 Portaria Interministerial MPS/MF nº 13/2026)_
-- **INSS patronal básico** — 20% da folha total (sem teto)  _(Lei 8.212/1991)_
-- **RAT/SAT** — 1%, 2% ou 3% (conforme CNAE)  _(Lei 8.212/1991)_
-- **Ajuste FAP** — 0,5× a 2,0× sobre o RAT  _(Lei 10.666/2003)_
-- **Terceiros** — ~5,8% (SENAI, SESI, SEBRAE, etc.)  _(Leis específicas)_
-- **Total típico INSS patronal** — ~26,8% – 28,8%  _(Lei 8.212/1991)_
-- **Alíquota FGTS** — 8% do bruto mensal (empregador)  _(Lei 8.036/1990)_
-- **Prazo depósito FGTS** — Até dia 20 do mês seguinte (FGTS Digital)  _(Lei 8.036/1990)_
-- **Multa rescisória (sem justa causa)** — 40% do saldo total do FGTS  _(Lei 8.036/1990)_
-- **Estimativa acima do bruto** — ~60-70% (INSS+FGTS+13º+férias+encargos)  _(Consolidado)_
-- **Jornada semanal padrão** — 44 horas  _(CLT Art. 58)_
-- **Hora extra (dias úteis)** — Mínimo 50%  _(CF/88 Art. 7º XVI)_
-- **Hora extra (domingos/feriados)** — Geralmente 100%, conforme legislação e convenção coletiva  _(Lei 605/1949)_
-- **Adicional noturno (22h-5h)** — Mínimo 20%  _(CLT Art. 73)_
-- **Insalubridade** — 10%, 20% ou 40% do salário mínimo  _(CLT Art. 192)_
-- **Periculosidade** — 30% do salário-base  _(CLT Art. 193)_
-- **13º salário** — 1 salário integral (duas parcelas)  _(Lei 4.090/1962)_
-- **Férias** — 30 dias + 1/3 constitucional  _(CF Art. 7º XVII; CLT)_
-- **Vale-transporte** — Empregado contribui com até 6% do salário básico; empregador paga o excedente.  _(Lei 7.418/1985)_
-- **Licença-maternidade** — 120 dias (180 dias no Programa Empresa Cidadã)  _(CF Art. 7º XVIII)_
-- **Licença-paternidade** — 5 dias (20 dias no Programa Empresa Cidadã)  _(ADCT Art. 10 §1º)_
-
-## Seção 1 — Referência Rápida
-
-**Referência Rápida**
-
-| Campo | Valor |
-| --- | --- |
-| País | Brasil (República Federativa do Brasil) |
-| Moeda | BRL (Real Brasileiro) |
-| Periodicidade da folha | Mensal (pagamento até o 5º dia útil do mês seguinte) |
-| Ano-calendário fiscal | Ano civil (1º de janeiro — 31 de dezembro) |
-| Legislação principal | CLT (Consolidação das Leis do Trabalho, Decreto-Lei 5.452/1943); Lei 8.212/1991 (INSS); Lei 8.036/1990 (FGTS); Regulamento do IR (Decreto 9.580/2018) |
-| Autoridade tributária | Receita Federal do Brasil (RFB) |
-| Autoridade trabalhista | Ministério do Trabalho e Emprego (MTE) |
-| Autoridade do FGTS | Caixa Econômica Federal (CEF) |
-| INSS do empregado | Progressivo: 7,5% — 14% (teto BRL 8.475,55/mês) |
-| INSS patronal | 20% + RAT (1-3%) + Terceiros (~5,8%) |
-| FGTS | 8% do salário bruto (depósito exclusivo do empregador) |
-| IRRF | Progressivo: 0% — 27,5% |
-| Salário mínimo | BRL 1.621/mês (2026) |
-| Eventos do eSocial | Mensais, até o dia 15 do mês seguinte |
-| FGTS Digital | Depósito mensal até o dia 20 do mês seguinte |
-| Versão da skill | 1.1 |
-
-- **Reforma Tributária 2026 e folha** — A Reforma Tributária 2026 (EC 132/2023, LC 214/2025) é sobre tributos sobre consumo (CBS/IBS substituindo PIS/Cofins/ICMS/ISS/IPI). Folha de pagamento — INSS, FGTS, IRRF, salário-família, salário-maternidade — não é afetada.
-
-## Seção 2 — Retenção de Imposto de Renda (IRRF)
-
-### Tabela Mensal do IRRF (2026)
-
-**Tabela Mensal do IRRF (2026)**
-
-| Base de Cálculo Mensal (BRL) | Alíquota | Parcela a deduzir (BRL) |
-| --- | --- | --- |
-| Até 2.259,20 | 0% (isento) | — |
-| 2.259,21 — 2.826,65 | 7,5% | 169,44 |
-| 2.826,66 — 3.751,05 | 15% | 381,44 |
-| 3.751,06 — 4.664,68 | 22,5% | 662,77 |
-| Acima de 4.664,68 | 27,5% | 896,00 |
-
-### Método de Cálculo do IRRF
-
-**Método de Cálculo do IRRF**
-
-| Etapa | Detalhe |
-| --- | --- |
-| 1. Partir do salário bruto | Toda remuneração tributável do mês |
-| 2. Deduzir INSS (empregado) | Contribuição previdenciária progressiva |
-| 3. Deduzir dependentes | BRL 189,59 por dependente (2026) |
-| 4. Deduzir pensão alimentícia | Pagamentos determinados judicialmente |
-| 5. Deduzir previdência privada (PGBL) | Até 12% da renda bruta anual |
-| 6. Aplicar tabela do IRRF | Alíquota × base tributável − parcela a deduzir = IRRF |
-
-### Regras Especiais do IRRF
-
-**Regras Especiais do IRRF**
-
-| Situação | Tratamento |
-| --- | --- |
-| 13º salário | IRRF calculado separadamente (não agregado ao salário mensal) |
-| Férias | IRRF calculado sobre férias + 1/3 constitucional separadamente |
-| Participação nos lucros (PLR) | Tabela progressiva específica (anual) |
-| Verbas indenizatórias na rescisão | Geralmente isentas de IRRF |
-| Horas extras, bônus, comissões | Somados ao bruto mensal para cálculo do IRRF |
+# Brazil payroll: ordinary salary, benefits and employer obligations, 2026 v1.1
 
-## Seção 3 — Previdência Social: Deduções do Empregado (INSS)
-
-### Tabela Progressiva do INSS (2026)
-
-**Tabela Progressiva do INSS (2026)**
-
-| Salário Mensal (BRL) | Alíquota |
-| --- | --- |
-| Até 1.621,00 | 7,5% |
-| 1.621,01 — 2.902,84 | 9% |
-| 2.902,85 — 4.354,27 | 12% |
-| 4.354,28 — 8.475,55 (teto) | 14% |
-
-### Regras Principais do INSS
-
-- Progressiva (fatiada): cada faixa aplica-se somente à parcela contida no respectivo intervalo
-- Contribuição mensal máxima: ~BRL 951,64 (no teto)
-- Teto: BRL 8.475,55/mês (2026)
-- INSS sobre 13º salário calculado separadamente (não somado ao salário mensal)
-- Múltiplos vínculos: os salários são somados para determinação da faixa; contribuições alocadas proporcionalmente
-- O INSS é dedutível na base de cálculo do IRRF
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-### Exemplo de Cálculo do INSS (Salário BRL 5.000)
+**Quick answer.** Establish the worker, remuneration rubrics, competence and payment month. Calculate employee INSS under its category/combined ceiling, compare the complete permissible IRRF deductions with the alternative simplified deduction, then apply the shared monthly table and separate income reduction. Subtract employee deductions to obtain net pay. Add employer contributions and FGTS separately to budget cost; those deposits are not deductions from the employee. The working-time transition enacted in October 2026 changes the general weekly limit later in 2026: do not use an undated 44-hour/220-divisor assumption.
 
-```
-Faixa 1: 1.621,00 × 7,5%             =  121,58
-Faixa 2: (2.902,84 − 1.621,00) × 9%  =  115,37
-Faixa 3: (4.354,27 − 2.902,84) × 12% =  174,17
-Faixa 4: (5.000,00 − 4.354,27) × 14% =   90,40
-Total INSS:                          =  501,52
-```
-
-## Seção 4 — Previdência Social: Contribuições do Empregador
-
-### INSS Patronal (Contribuição Patronal)
+## Who this applies to
 
-**INSS Patronal (Contribuição Patronal)**
-
-| Componente | Alíquota | Base |
-| --- | --- | --- |
-| INSS patronal básico | 20% | Folha total (sem teto) |
-| RAT/SAT (acidente de trabalho) | 1%, 2% ou 3% | Conforme classificação de risco do CNAE |
-| Ajuste FAP | 0,5× a 2,0× | Multiplicador aplicado ao RAT (específico por empresa) |
-| Terceiros (entidades terceiras) | ~5,8% | SENAI, SESI, SEBRAE, INCRA, Salário-Educação, FNDE |
-| **Total típico do INSS patronal** | **~26,8% — 28,8%** | Sobre o total da folha |
-
-### FGTS (Fundo de Garantia do Tempo de Serviço)
+Ordinary private-sector CLT employees in Brazil, amounts in BRL, calendar 2026. This is a computation and operational reconciliation Guide, not a complete entitlement opinion for every worker. Rural, domestic, temporary, apprentice, intermittent, executive/excluded-hours, public, expatriate and judicial settlements require their particular category before using ordinary inputs. MEI, autônomo and PJ are legal classifications requiring facts; they are not synonymous with undeclared work. [CLT arts.2–3, 57–62](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [Lei 8.212 arts.12, 22, 28](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html).
 
-**FGTS (Fundo de Garantia do Tempo de Serviço)**
-
-| Parâmetro | Detalhe |
-| --- | --- |
-| Alíquota | 8% da remuneração mensal bruta |
-| Pago por | Apenas pelo empregador (NÃO deduzido do empregado) |
-| Base | Toda remuneração: salário, horas extras, bônus, 13º, férias |
-| Teto | Nenhum (aplica-se ao salário integral) |
-| Prazo de depósito | Até o dia 20 do mês seguinte (FGTS Digital) |
-| Plataforma | FGTS Digital (via integração com eSocial) |
-| Rescisão sem justa causa | Empregador paga multa de 40% sobre o saldo total do FGTS |
-
-### Encargo Total do Empregador (Aproximado)
-
-**Encargo Total do Empregador (Aproximado)**
-
-| Componente | Alíquota |
-| --- | --- |
-| INSS patronal + RAT + Terceiros | ~28,8% |
-| FGTS | 8% |
-| Provisão de 13º salário (1/12) | 8,33% |
-| Provisão de férias + 1/3 (1/12) | 11,11% |
-| Subtotal das provisões | 19,44% |
-| FGTS/INSS sobre provisões | ~7% |
-| **Custo total aproximado do empregador acima do bruto** | **~60-70%** |
-
-## Seção 5 — Salário Mínimo e Horas Extras
+This Guide owns the employee progressive table and employer payroll. Load [br-inss](br-inss.md) for individual/facultative contribution categories, plans and the nonemployee side of concurrent remuneration, and [br-estimated-tax](br-estimated-tax.md) for the shared current monthly IRPF table, deduction amounts and separate 2026 reduction. This Guide applies those shared figures to employer withholding without maintaining a second rates card. [RFB 2026 tables](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026); [Lei 15.270 art.2 adding Lei 9.250 art.3-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm). Salary is not a Carnê-Leão receipt merely because the same monthly progressive table is used. Annual employment/other income reconciliation belongs to [br-income-tax](br-income-tax.md), and the actual year's individual return to [br-return-assembly](br-return-assembly.md).
 
-### Salário Mínimo Nacional
-
-**Salário Mínimo Nacional**
-
-| Ano | Mensal (BRL) | Diário (BRL) | Hora (BRL) |
-| --- | --- | --- | --- |
-| 2026 | 1.621,00 | 54,04 | 7,37 |
-| 2025 | 1.518,00 | 50,60 | 6,91 |
-
-- Definido pelo Decreto nº 12.797/2025 (vigência a partir de 1º de janeiro de 2026)
-- Baseado em 220 horas/mês (44 horas/semana × 5 semanas)
-- Pisos estaduais/regionais podem ser superiores (ex.: São Paulo, Rio de Janeiro, Paraná)
-- Pisos salariais (categorias profissionais) por convenções podem superar o mínimo nacional
-
-### Jornada de Trabalho e Horas Extras
-
-**Jornada de Trabalho e Horas Extras**
-
-| Parâmetro | Padrão |
-| --- | --- |
-| Jornada semanal padrão | 44 horas (8h/dia seg-sex + 4h sábado) |
-| Alternativa comum | 40 horas (acordo coletivo) |
-| Jornada diária máxima | 10 horas (8 + 2 de hora extra) |
-| Adicional de hora extra (dias úteis) | Mínimo de 50% |
-| Adicional de hora extra (domingos/feriados) | 100% |
-| Adicional noturno (22h-5h) | Mínimo de 20% |
-| Duração da hora noturna | 52 minutos e 30 segundos (hora reduzida) |
-| Banco de horas | Permitido via acordo coletivo (compensação em 6-12 meses) |
-
-### Insalubridade / Periculosidade
-
-**Insalubridade / Periculosidade**
-
-| Tipo | Adicional |
-| --- | --- |
-| Insalubridade (condições insalubres) | 10%, 20% ou 40% do salário mínimo |
-| Periculosidade (condições perigosas) | 30% do salário-base |
-| Não acumuláveis | Empregado escolhe a opção mais vantajosa |
-
-## Seção 6 — Benefícios Obrigatórios
-
-**Benefícios Obrigatórios**
-
-| Benefício | Detalhe |
-| --- | --- |
-| 13º salário (gratificação natalina) | Um salário mensal integral, pago em duas parcelas |
-| Férias | 30 dias corridos + 1/3 constitucional |
-| Vale-transporte | Obrigatório; empregador arca com o custo que exceder 6% do salário-base |
-| FGTS | Depósito mensal de 8% (custeado pelo empregador) |
-| Seguro-desemprego | 3 a 5 meses (pago pelo governo na rescisão sem justa causa) |
-| Salário-família | Para empregados de baixa renda com filhos menores de 14 anos |
-| Licença-maternidade | 120 dias (180 dias para participantes do Empresa Cidadã) |
-| Licença-paternidade | 5 dias (20 para Empresa Cidadã) |
-| Seguro de acidentes de trabalho (SAT/RAT) | Coberto via contribuição patronal ao INSS |
-
-### 13º Salário (Décimo Terceiro)
-
-**13º Salário (Décimo Terceiro)**
-
-| Parcela | Valor | Prazo | Deduções |
-| --- | --- | --- | --- |
-| 1ª parcela | 50% do salário do mês anterior | Até 30 de novembro | Sem desconto de INSS/IRRF |
-| 2ª parcela | 50% restantes | Até 20 de dezembro | INSS + IRRF sobre o 13º integral |
-| FGTS | 8% sobre cada parcela | Junto ao depósito mensal de FGTS | N/A |
-| Proporcional | 1/12 por mês trabalhado (se < 12 meses) | Proporcional | Mesmas regras |
-
-### Férias
-
-**Férias**
-
-| Parâmetro | Detalhe |
-| --- | --- |
-| Direito | 30 dias corridos após 12 meses (período aquisitivo) |
-| Pagamento | Salário + 1/3 constitucional (terço de férias) |
-| Prazo de pagamento | Até 2 dias úteis antes do início das férias |
-| Abono pecuniário | Empregado pode vender até 10 dias (1/3 das férias) |
-| INSS | Incide sobre o pagamento de férias |
-| IRRF | Calculado separadamente sobre as férias |
-| FGTS | 8% sobre as férias (incluindo 1/3) |
-| Férias coletivas | Empregador pode conceder (mínimo de 10 dias consecutivos) |
-
-### Vale-Transporte
-
-**Vale-Transporte**
-
-| Parâmetro | Detalhe |
-| --- | --- |
-| Obrigatório | Sim, para todos os empregados CLT que solicitarem |
-| Contribuição do empregado | Até 6% do salário-base |
-| Empregador arca com | Custo total menos a dedução de 6% do empregado |
-| Isento de | INSS, FGTS, IRRF (não considerado salário) |
-| Forma | Cartão de transporte pré-pago ou equivalente |
-
-## Seção 7 — Requisitos do Holerite
-
-Os empregadores brasileiros DEVEM emitir holerite/contracheque a cada pagamento de salário. Elementos exigidos pelo art. 464 da CLT:
-
-**Elementos do Holerite**  _(art. 464 da CLT)_
-
-| Elemento | Obrigatório |
-| --- | --- |
-| Nome do empregador, CNPJ, endereço | Sim |
-| Nome do empregado, CPF, registro em CTPS | Sim |
-| Cargo e departamento | Sim |
-| Período de competência | Sim |
-| Salário-base | Sim |
-| Horas extras e respectivo valor | Sim (se aplicável) |
-| Adicional noturno | Sim (se aplicável) |
-| Insalubridade/periculosidade | Sim (se aplicável) |
-| Comissões, bônus, gratificações | Sim |
-| Remuneração bruta | Sim |
-| Dedução de INSS do empregado | Sim |
-| Dedução de IRRF | Sim |
-| Dedução de vale-transporte (6%) | Sim (se aplicável) |
-| Outras deduções (adiantamentos, benefícios, sindical) | Sim |
-| Salário líquido | Sim |
-| Depósito de FGTS (empregador, informativo) | Sim |
-| Base de FGTS e INSS | Recomendado |
-
-### Guarda de Documentos
-
-- **Registros de folha de pagamento** — mínimo de 5 anos  _(CLT)_
-- **Registros de FGTS** — 30 anos
-- **Registros fiscais (IRRF)** — 5 anos a partir da entrega da declaração
-
-## Seção 8 — Obrigações Acessórias
-
-**Obrigações Acessórias**
-
-| Declaração | Periodicidade | Prazo | Autoridade |
-| --- | --- | --- | --- |
-| Eventos periódicos do eSocial (S-1200 remuneração) | Mensal | Dia 15 do mês seguinte | RFB/MTE |
-| Fechamento do eSocial (S-1299) | Mensal | Dia 15 do mês seguinte | RFB/MTE |
-| DCTFWeb (declaração tributária) | Mensal | Dia 15 do mês seguinte (após fechamento do eSocial) | Receita Federal |
-| Depósito do FGTS Digital | Mensal | Dia 20 do mês seguinte | Caixa Econômica Federal |
-| Pagamento de IRRF (DARF) | Mensal | Dia 20 do mês seguinte | Receita Federal |
-| 13º salário — 1ª parcela | Anual | 30 de novembro | Ao empregado |
-| 13º salário — 2ª parcela | Anual | 20 de dezembro | Ao empregado |
-| DIRF (Declaração anual de retenção) | Anual | Último dia útil de fevereiro | Receita Federal |
-| RAIS (Relação Anual de Informações Sociais) | Anual | Março (em substituição pelos dados do eSocial) | MTE |
-
-### Eventos do eSocial (Principais Eventos de Folha)
-
-**Eventos do eSocial (Principais Eventos de Folha)**
-
-| Evento | Descrição | Prazo |
-| --- | --- | --- |
-| S-1200 | Remuneração do trabalhador (mensal) | Dia 15 do mês seguinte |
-| S-1210 | Pagamentos realizados (datas e valores) | Dia 15 do mês seguinte |
-| S-1299 | Fechamento dos eventos periódicos | Dia 15 do mês seguinte |
-| S-2200 | Cadastramento de empregado (admissão) | Véspera da data de início |
-| S-2206 | Alteração contratual (mudança salarial) | Até o processamento da folha |
-| S-2299 | Desligamento | 10 dias a contar da rescisão |
-| S-2500 | Processo trabalhista | Por evento |
-| S-1200 (13º) | Evento anual do 13º salário | 20 de dezembro |
-
-### FGTS Digital
-
-**FGTS Digital**
-
-| Parâmetro | Detalhe |
-| --- | --- |
-| Substituiu | SEFIP/GFIP (sistema legado) |
-| Integração | Automática a partir dos eventos do eSocial |
-| Pagamento | Via portal do FGTS Digital (gera guia) |
-| Prazo | Dia 20 do mês seguinte |
-| Processos trabalhistas | Via FGTS Digital a partir de 1º de maio de 2026 (para novas sentenças) |
-
-### Penalidades
-
-**Penalidades**
-
-| Infração | Penalidade |
-| --- | --- |
-| FGTS em atraso | Juros (TR + 3% ao ano) + multa (5% no primeiro mês, 10% a partir do segundo) |
-| INSS em atraso | Multa de 20% + juros SELIC |
-| IRRF em atraso | Multa de 0,33%/dia (máx. 20%) + juros SELIC |
-| Falta de eventos do eSocial | Multa variável; pode gerar fiscalização/autuação |
-| Não pagamento do 13º | Multa por empregado + possível reclamação trabalhista |
-| Pagamento atrasado de férias | Pagamento em dobro (jurisprudência do TST) |
-
-## Seção 9 — Padrões Comuns de Folha de Pagamento
-
-### Padrão 1: Salário Mensal Padrão (BRL 5.000, Solteiro, Sem Dependentes)
-
-```
-Salário bruto:                        BRL 5.000,00
-− INSS (progressivo):              − BRL    501,52
-= Base de cálculo do IRRF:            BRL 4.498,48
-− IRRF (22,5% − 662,77):           − BRL    349,39
-− Vale-transporte (6% da base):    − BRL    300,00
-= Salário líquido:                    BRL 3.849,09
-
-Custo do empregador:
-  Salário bruto:                      BRL 5.000,00
-+ INSS patronal (20%):              + BRL 1.000,00
-+ RAT (2%):                         + BRL   100,00
-+ Terceiros (5,8%):                 + BRL   290,00
-+ FGTS (8%):                        + BRL   400,00
-= Custo mensal do empregador (excl. provisões): BRL 6.790,00
-
-Provisões anuais:
-+ 13º salário + encargos:           ~BRL 6.500/ano
-+ Férias + 1/3 + encargos:          ~BRL 8.700/ano
+**Historical baseline approval record, preserved verbatim:**
+
+> Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
+
+That statement belongs to the [earlier approved version](https://github.com/openaccountants/openaccountants/blob/157f7d8be741c4c7347a88c8a2970b529d175741/skills/brazil/brazil-payroll.md), preserved with its original attribution. This revision is **Not yet approved** and is published as a source-cited draft. The earlier approval does not cover this text.
+
+## Rates, bands and thresholds
+
+| Payroll item | 2026 amount/rule and conditions | Official source |
+|---|---|---|
+| National minimum, effective 1 January 2026 | Monthly 1,621; daily 54.04; hourly 7.37. Category/state/CCT floor or a higher contractual salary can control; do not substitute the daily/hourly values for an arbitrary divisor | Decree 12.797 art.1 [original](https://www.presidencia.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm) |
+| Employee INSS and shared monthly IRRF | Employee progression is below. The monthly IRPF table, dependent/simplified deduction amounts and separate 2026 reduction are owned by br-estimated-tax. Legal and simplified deductions are alternatives | Portaria 13 art.7/AnnexII [officialPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf); RFB [2026](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026) |
+| General employer CPP |20% of eligible employee/avulso remuneration, without the employee contribution ceiling. Statutory exclusions, immune/exempt employers, financial-sector additions, Simples and CPRB require classification first | Lei 8.212 art.22 I/§§1–2 [text](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html) |
+| Occupational contribution | RAT 1%, 2%or 3% with the actual applicable establishment/activity classification; FAP establishment multiplier 0.5000–2.0000, varying annually. Do not infer the actual factor from a trade name | Lei 8.212 art.22 II [text](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); MPS [FAP](https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/saude-e-seguranca-do-trabalhador/fap) |
+| Third parties | Actual FPAS/third-party code and legal exemptions determine charges. The former 5.8% is only an explicitly assumed example input; 26.8–28.8% is not a universal employer range | Lei 8.212 art.22 [ordinary CPP/RAT only](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); actual third-party classification remains partial |
+| Simples Annex IV | CPP outside DAS; distinguish workforce exclusive to Annex IV, exclusive to other annexes, and simultaneous workers. The latter's ordinary outside CPP is proportionate to Annex IV revenue/total revenue; zero Annex IV monthly revenue can make that portion zero, not exclusive-Annex IV employees' CPP | COSIT 169/2024, IN 2110 arts.168–171 quoted therein [fullscope](https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=74473) |
+| CPRB 2026, only eligible/elected activities |60% of the normal CPRB rate **plus**50% of the normal art.22 I/III payroll rate (ordinary 20% becomes 10%). During 2025–27 the latter payroll portion excludes 13th remuneration. Eligibility/election and revenue allocation must be established. The signed undertaking requires annual average headcount at least 75% of the immediately previous calendar-year average; breach removes CPRB from the following calendar year and restores ordinary art.22 I/III contributions at 20%. No universal payroll exemption | Lei 14.973 art.1 adding 9-AII/§1 and art.4 [law](https://www2.camara.leg.br/legin/fed/lei/2024/lei-14973-16-setembro-2024-796242-normaatualizada-pl.html) |
+| FGTS ordinary employee |8% of eligible remuneration, including 13th; employer deposit, not employee deduction. Apprenticeship contracts 2%. Excluded rubrics still excluded | Lei 8.036 art.15 caput/§§6–7 [law](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html) |
+| FGTS dismissal without just cause |40% of all employment-period deposits updated plus interest, with proper historic reconstruction. Do not multiply arbitrary current balance including profit distributions or omitting withdrawn deposits | Lei 8.036 arts.13§7, 18§1 [law](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html); MTE FAQ 02.06/04.02 [history](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes) |
+| Salary-family |67.54 per eligible child/equivalent through 14 or invalid at any age, total remuneration at most 1,980.38. Concurrent remuneration aggregates; eligibility remuneration excludes 13th and vacation third; admission/departure is prorated | Portaria 13 art.4/§§1–4 [originalPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf) |
+| Transport benefit | Employee's eligible share up to 6% of basic salary, bounded by actual benefit cost and the regulatory proportionality; employer bears excess. Actual route/use/request required, not automatic 6% every payslip | Decree 10.854 arts.106–116 [current](https://www2.camara.leg.br/legin/fed/decret/2021/decreto-10854-10-novembro-2021-791950-normaatualizada-pe.html) |
+
+### Employee INSS: this Guide owns the progressive computation
+
+For RGPS employees, domestic employees and avulsos, apply each rate only to the portion in its range, from competence January 2026. Ordinary employee salary-of-contribution is capped at 8,475.55; actual legal minimum/floor and shortfall issues need the applicable worker facts. This employee table is distinct from br-inss's individual/facultative percentage regimes.
+
+| Employee salary-of-contribution slice, BRL | Progressive rate, not a flat rate on all pay | Official source |
+|---|---|---|
+| Up to 1,621.00 |7.5% | Portaria 13 art.7/AnnexII [originalPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf) |
+|1,621.01–2,902.84 |9% | Portaria 13 art.7/AnnexII [originalPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf) |
+|2,902.85–4,354.27 |12% | Portaria 13 art.7/AnnexII [originalPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf) |
+|4,354.28–8,475.55 |14% | Portaria 13 art.7/AnnexII [originalPDF](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf) |
+
+**Truncate each band separately to two decimals; do not round it.** MOS S-1200 item 5.2 and S-5001 item 2.13 expressly require truncation in each progressive band. Let `t(x)=floor(100*x)/100` for nonnegative amounts and `b=min(actual eligible employee base,8475.55)`. For a single ordinary job, the contribution is:
+
+`t(min(b,1621)*.075) + t(max(min(b,2902.84)-1621,0)*.09) + t(max(min(b,4354.27)-2902.84,0)*.12) + t(max(b-4354.27,0)*.14)`.
+
+At 5,000 this is 121.57+115.36+174.17+90.40=501.50. At the ceiling it is 121.57+115.36+174.17+576.97=988.07. At 1,621 it is 121.57. These are derived eSocial totals, not a new flat contribution rate. Reconcile actual accepted totalisers and withheld cash; do not quietly replace their method with rounding of the whole unrounded sum. [MOS S-1200 item 5.2/S-5001 item 2.13](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf).
+
+**Multiple jobs:** obtain each payer's identification, RGPS category, remuneration and calculation order. For employee jobs, later payers apply rates to the bands remaining after prior employee remuneration, subject to the combined ceiling; report prior ordered payers in S-1200`infoMV`/`remunOutEmpr`. The first payer in that order does not fill `infoMV`. Do not charge the full four bands and full ceiling independently at each employer. Mixed individual-contributor remuneration uses its own rate and counts toward the common ceiling; it does not become employee remuneration consuming lower progressive bands. Refer that nonemployee component and any residual own-account base to br-inss. RGPS and RPPS remuneration are not combined for this multiple-link calculation. [MOS S-1200 items 5.1–5.3](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf).
+
+### Working time: enacted phase matters
+
+The general pre-transition ceiling is 44 hours weekly and ordinary eight daily; a shorter contract/CCT can apply. [CF art.7 XIII, official pre-amendment compilation](https://www2.senado.leg.br/bdsf/bitstream/handle/id/685819/CF88_EC135_2025.pdf?isAllowed=y&sequence=1#page=1). EC 141/2026 was published 16 October 2026. Its art.6 phases the ordinary weekly ceiling to 42 hours **two months after publication, 16 December 2026**, then 40 hours **one year later, 16 December 2027**. The two-day paid weekly rest amendment also begins two months after publication; one day is preferably Sunday. The change applies to existing contracts with no nominal, proportional or other salary reduction, including floors. Existing schedules already at or below 40 hours do not automatically shrink proportionately. [EC 141 arts.1–4, 6, 10](https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html); [CLT 58](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+
+Read the scope before applying that timetable. EC 141 art.8 excludes hours/control rules for a degree-holding employee paid monthly at least 2.5 times the RGPS benefit ceiling, except employer liberality or an agreement/CCT provision; it preserves the new rest safeguards and excludes public employees from that particular exception. Art.9 separately transitions public administration contracts already existing at publication and involving direct labour: employees become covered on formalisation of the rebalancing amendment or, regardless of amendment, at the one-year backstop counted from publication. For amendments made within the first two months, the reductions and increased rest apply only from their regular statutory stage commencement dates under §§2–3; an early amendment does not itself start 42 hours before that stage. Collective compensatory rest under art.7§2 must average two days within the month and assure at least one within each maximum one-week work period. Full sector implementation, actual rebalancing contracts and hour-divisor treatment are partial: do not keep 220 automatically after a schedule changes. [EC 141 arts.1, 8–9](https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html).
+
+Ordinary CLT overtime is at most two additional hours daily under the permitted agreement, with at least 50% premium; qualifying banked hours can replace the premium within their lawful arrangement. Collective bank: maximum one year; written individual bank: six months; tacit/written same-month compensation is another route.12 × 36, excluded-hours workers and exceptional work prevent a universal ten-hour maximum. The temporary collective daily-extension route during EC 141's 42-hour transition also requires its art.7 conditions. [CLT 59/§§1–6, 59-A, 61–62](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [EC 141 art.7](https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html).
+
+Sunday/holiday work is not automatically every hour at a universal 100% premium: establish compensatory rest, the applicable schedule and CCT first. Complete holiday/rest entitlement and any higher category premium remain partial. For urban night work, CLT 73 provides at least 20%, 22:00–05:00 and the 52 minute 30 second night hour; mixed hours/extensions and relevant jurisprudence need the actual schedule. Do not extend urban values to rural work. [CLT 73](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+
+Hazard topics are retained with a bounded statutory reference. CLT 192 states 10/20/40% for minimum/medium/maximum insalubridade; applying its minimum-wage base requires the actual technical classification and applicable judicial/CCT rule, not a payroll label. CLT 193§1 states 30% periculosidade on salary excluding gratifications, prizes and profit shares;§2 gives the option for an insalubridade addition otherwise due. Full NR/perícia entitlement, judicial base effects and simultaneous-premium disputes are not resolved here. [CLT 189–195](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+
+## The base
+
+Maintain separate **salary/remuneration**, employee INSS base, IRRF taxable receipts by actual payment month, FGTS base and employer contribution bases. An identically named gross total does not establish all five. Lei 8.212 art.28 includes 13th but excludes specified indemnities; Lei 8.036 art.15§6 imports the relevant exclusions. Indemnified vacation plus its constitutional third is not indiscriminately charged like ordinary vacation remuneration. [Lei 8.212 art.28§§7, 9 d](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [Lei 8.036 art.15](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html).
+
+For an ordinary monthly employee calculation:
+
+1. Validate salary/CCT, worked days, variable pay, overtime/night additions, reimbursements, benefits and each eSocial rubrica's INSS/IRRF/FGTS incidence. Keep the competence, when remuneration became due, and payment date separate.
+2. Compute employee INSS using this Guide’s employee table and per-band truncation. Multiple jobs and combined employee/individual categories require actual other-source evidence and correct sequencing; do not apply the full ceiling independently to each job or use a flat top marginal percentage on the whole salary.
+3. Aggregate taxable employment payments by the same payer during the month. Compare all lawful monthly legal IRRF deductions with the alternative simplified deduction in [br-estimated-tax](br-estimated-tax.md). Eligible employee INSS, actual qualified dependents and family-law alimony are not automatically all the available legal categories. Do not stack simplified with INSS/dependents/alimony. Private pension's annual 12% discussion is not a blanket monthly payroll allowance; establish actual eligibility before using a monthly pension deduction. [RIRarts.67, 71–76,677](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html).
+4. Apply the shared current monthly table to the selected base, then apply the separate 2026 reduction using taxable earnings **before deductions**, capped at the computed tax and never below zero. Distinct payers can produce an annual balance even if each withholds zero. [Lei 15.270 art.3-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm); [RFB 2026](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026).
+5. Net pay = cash earnings payable − employee INSS − IRRF − lawful employee VT/other deductions + cash benefits/reimbursements actually payable. Do not deduct employer CPP, RAT, third parties or FGTS from the employee. CLT 462 limits salary deductions; do not invent an employee deduction merely to balance the bank payment. [CLT 462](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+6. Compute employer charges on each actual statutory base and regime separately; reconcile the payslip to bank payment, eSocial totals, DCTFWeb and FGTS guide. For net-to-gross, solve this same stepped computation with explicit benefits/deductions and confirm the result forward; there is no universal percentage gross-up.
+
+### 13th salary, vacation and other separate treatments
+
+**13th.** One twelfth of December remuneration per qualifying month; a fraction at least 15 working days counts as a complete month. Qualifying justified absences are not simply deducted; variable pay, admission, departure and adjustments require the actual record. Advance: one payment between February and November, equal to half the salary received in the preceding month; if the employee requests it in January, pay the advance with vacation. Final settlement by 20 December offsets the advance. This does not mean every first instalment is exactly half the eventual December entitlement. Use the actual banking/payment calendar; this Guide does not invent a single universal weekend rule for both wage instalments and tax filings. [Lei 4.090 arts.1–3](https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4090-13-julho-1962-353863-normaatualizada-pl.html); [Lei 4.749 arts.1–4](https://www.presidencia.gov.br/ccivil_03/leis/l4749.htm).
+
+Calculate 13th INSS separately from ordinary monthly remuneration, and IRRF exclusively/separately at final settlement, with no IRRF on the advance. The 2026 reduction expressly applies to exclusive 13th tax; choose the applicable legal versus simplified deduction for that separate calculation. FGTS on ordinary 13th remuneration arises with the respective instalments. CPRB's statutory employer-payroll 13th exception must not be confused with employee INSS or FGTS exemption. [RIR 700](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html); [Lei 15.270 art.3-A§3](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm); [Lei 8.212 art.28§7](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [Lei 8.036 art.15](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html); [Lei 14.973 art.9-A§1](https://www2.camara.leg.br/legin/fed/lei/2024/lei-14973-16-setembro-2024-796242-normaatualizada-pl.html).
+
+**Vacation.** Ordinarily acquire rights over 12 months and grant in the following 12. CLT 130's days depend on unjustified absences:30 up to 5; 24 for 6–14; 18 for 15–23; 12 for 24–32. Justified absences and CLT 133 loss-of-right events require separate testing before assigning entitlement. With employee agreement there can be up to three periods, one at least 14 consecutive days and each other at least 5. Do not start within two days before a holiday or weekly paid rest; ordinary notice is at least 30 days. Collective vacation may use two annual periods, each at least 10 days, with its own communications and proportional/new-acquisition treatment for shorter-service employees. [CLT 130–140](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+
+Vacation remuneration uses the applicable current remuneration/variable-pay averages and additions under CLT 142, plus at least one constitutional third. Abono is one third of the **entitlement**, not invariably ten days; ordinarily request it up to 15 days before the acquisition period ends, with the collective-vacation agreement exception. Pay remuneration and applicable abono up to **two calendar days** before leave, not two business days. CLT 137 late granting and STFADPF 501's rejection of automatic doubling merely for late payment are distinct. [CF art.7 XVII](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html); [CLT 142–147](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [STFADPF 501](https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=492245&ori=1).
+
+Ordinary vacation IRRF is calculated separately from other monthly earnings; determine the actual vacation, indemnified vacation, abono and third rubrics before charging INSS/FGTS/IRRF. Do not read every historical RIRabono reference as proof of current taxable incidence. PLR has its own exclusive/separate rule rather than automatic ordinary-salary aggregation; the current PLR table/eligibility and complex vacation/termination incidence are partial here. [RIR 682–683,700](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html); [Lei 8.212 art.28§9](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html).
+
+### Benefits and employer cost
+
+A compliant vale-transporte benefit depends on actual qualifying collective transport between residence/work, written/electronic route information and actual use. Employer transport can remove or reduce the remaining need. Cash substitution is generally prohibited for ordinary employers subject to the regulatory reimbursement exception; domestic employers have a different cash exception. The employer's compliant contribution is not salary or an INSS/FGTS/13th/IRRF base. Bound any employee deduction to the furnished benefit and relevant period, not simply 6% where the cost is smaller. [Decree 10.854 arts.106–117](https://www2.camara.leg.br/legin/fed/decret/2021/decreto-10854-10-novembro-2021-791950-normaatualizada-pe.html).
+
+Ordinary maternity leave is 120 days, not an absolute maximum. CLT 392§6 adds 60 days for specified permanent Zika-associated congenital disability birth/adoption. Under§7 hospitalisation beyond two weeks with a proven childbirth link can extend leave up to 120 days after mother/newborn discharge, less prenatal rest. Adoption, custody and other special cases require their own facts. In the Empresa Cidadã programme, the maternal 60-day extension requires participating employer, timely request by the end of the first month after childbirth and immediate extension after ordinary leave. Other statutory programme conditions and adoption rules also apply. [CLT 392–392 C](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [Lei 11.770 arts.1, 3–4](https://www2.camara.leg.br/legin/fed/lei/2008/lei-11770-9-setembro-2008-580284-normaatualizada-pl.html).
+
+For 2026 ordinary paternity leave is five consecutive days for birth/adoption/shared custody; Empresa Cidadã can add 15 days subject to participating employer, request within two business days after birth and proof of the prescribed responsible-paternity orientation. It is not an unconditional 20 days. The programme bars remunerated activity and requires keeping the child under care during the extension. [CLT 473 III](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [Lei 11.770 arts.1, 3–4](https://www2.camara.leg.br/legin/fed/lei/2008/lei-11770-9-setembro-2008-580284-normaatualizada-pl.html). **Enacted future rule:** Lei 15.371 only commences 1 January 2027; art.11 stages 10 days in 2027, 15 in 2028, and 20 from 2029 subject to its fiscal-target/deferred-commencement conditions. Art.12 adds one third for the specified disability cases. Do not apply those future periods to 2026; full post 2026 administration is partial. [Lei 15.371 arts.11–14](https://www2.camara.leg.br/legin/fed/lei/2026/lei-15371-31-marco-2026-798908-publicacaooriginal-178711-pl.html).
+
+Salary-family needs the child's/equivalent's eligibility and supporting benefit records, concurrent total remuneration, and the Portaria's pro-rata rules. Do not assume entitlement just because a wage equals the minimum. Other proof/benefit administration stays with [br-inss](br-inss.md). Unemployment insurance is a separate eligible-worker benefit, not a deduction or an employer salary. The earlier ordinary 3–5 instalment topic remains conditional on dismissal without just cause, unemployment, own-income/benefit exclusions, application history and work months: first claim 12 salary months in 18, second 9 in 12, later each preceding 6; actual count and exceptions must be established through the current MTE process. The 2024 benefit-value table on the older MTE formal page is not adopted for 2026. [MTE service](https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego); [MTE count conditions](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego/seguro-desemprego-formal).
+
+Budget employer costs from the actual regime and rubrics. Separate salary, CPP/RAT/third parties, FGTS, 13th, vacation third, actual benefits, recruitment/administration and contingent termination. The former 60–70% uplift, 19.44%provisions subtotal and 7%provision-on-charges were not universal law. A full-year monthly salary budget already includes ordinary salary paid during vacation; adding a second whole vacation salary can double-count it. For a stipulated constant 5,000 salary with full 13th and 30-day vacation, annual salary cash is 60,000+5,000+1,666.67 third=66,666.67 **before charges/benefits**. Economic cost per productive month is a different denominator. Treat 13th 1/12 and vacation-third 1/36 monthly budgeting fractions as arithmetic assumptions about full entitlement, not a fixed employer markup. [Lei 4.090 art.1](https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4090-13-julho-1962-353863-normaatualizada-pl.html); [CF art.7 XVII](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html).
+
+## Deadlines and filing
+
+| Obligation | Actual ordinary deadline/scope | Official source |
+|---|---|---|
+| Monthly wages | By fifth business day of the following month for monthly salary; applicable CCT/earlier contract can require sooner. Do not equate this automatically with fiscal or banking calendars | CLT 459§1 [law](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html) |
+| Ordinary monthly FGTS | By 20 nextmonth, advance to immediately previous business day for national/banking nonbusiness. Departure can accelerate prior-month/current deposits; use actual type | Lei 8.036 art.15 [law](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html); MTE FAQ 03.14 [calendar](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes) |
+| Ordinary employer/employee social contributions | General 20 nextmonth with banking nonbusiness advance; 13th and special categories have separate maturity. Use br-inss for the applicable contribution obligation, not the declaration date | Lei 8.212 art.30 I/§2 [law](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html) |
+| Payroll IRRF | Ordinary domestic employee withholding is due by the last business day of the second ten-day period of the following month, generally day 20 or the preceding business day. Actual generated DARF, payment month and employment category must match; foreign/financial and domestic-worker routes differ | Lei 11.196 art.70 I, e [currenttext](https://www2.camara.leg.br/legin/fed/lei/2005/lei-11196-21-novembro-2005-539221-normaatualizada-pl.html) |
+| Monthly DCTFWeb | Last business day of the month following facts; signature/transmission and receipt required. Do not wait until then to pay a liability whose maturity is earlier | RFB currentservice [deadline](https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais) |
+| Annual 13th DCTFWeb |20 December, advanced to immediately preceding business day when nonbusiness; only when values to declare. Distinct from S-1210 payment-month reporting and 13th payment itself | IN 2237 art.7 I/§2 [ANTT government republication](https://anttlegis.antt.gov.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&cod_menu=7145&cod_modulo=420&num_ato=00002237&seq_ato=000&sgl_orgao=RFB%2FMF&sgl_tipo=INM&vlr_ano=2024); RFB manual [annual operations](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-dctfweb/manual-dctfweb-atualizacao-janeiro2025_versao_final.pdf/@@download/file) |
+
+### eSocial event sequence and exceptions
+
+Use the current official **MOS S 1.3 consolidated through NO 12/2026**, not an earlier generic event list. Its actual event deadlines below are read separately; one event's extension rule does not govern all events. [CurrentMOS](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf).
+
+| Event | What/when for the covered ordinary route, with switches | Official source |
+|---|---|---|
+| S-2200 admission; optionalS-2190 preliminary | Ordinary employee S-2200 by day before service starts. If timelyS-2190 preliminary route or admission by transfer, completeS-2200 by 15 nextmonth or before another nonperiodic event for that employee, whichever first; 15 non-fiscal-business postpones. Temporary worker basic deadline 5 businessdays; own route/readconditions apply. S-2190 needs later completion; it is not a permanent substitute | MOS S-2190/S-2200, pp 210–213 [sections](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| S-2206 contract changes | By 15 nextmonth or by the affected month's payroll events where the change affects totalisers; changes before next remuneration. Fiscal nonbusiness postpones. Fixed-term extension in days: next business day. Correct erroneous admission data by rectifying admission, not disguising a correction as a new contract change | MOS S-2206 pp 233–234 [section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| S-1200 remuneration | Normally 15 nextmonth, postpone fiscal nonbusiness. Annual 13th event by 20 December with advance for fiscal nonbusiness. If qualifying employee/temporary/director-FGTS departure occurs on monthdays 1–4, prior-month remuneration event is due by 10 days after departure, advancing fiscal nonbusiness. Before corresponding closure | MOS S-1200 pp 121–122 [section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| S-1210 payments | Actual payment-month event, by 15 followingmonth, postpone fiscal nonbusiness. Reference the earlier remuneration demonstration and actual payment date/net; several payments to one beneficiary are generally in one event. No annual 13th payment event replaces the payment-month report | MOS S-1210 pp 183–185 [section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| S-1299 closure; S-1298 reopening | Normally 15 nextmonth, postpone fiscal nonbusiness; annual 13th 20 December, advance fiscal nonbusiness. Close to integrate debts with DCTFWeb. Correct a closed period by reopening, correcting original events, and reclosing; merely changing a rubrica table is insufficient for already-processed remuneration | MOS S-1299 pp 207–209 [section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf); MTE FAQ 02.03 [effect](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes) |
+| S-2299 departure | Ordinary route within 10 days after departure, excluding departure day; advance fiscal nonbusiness. Transfer/changeCPF and statutory public-worker routes 15 nextmonth, postpone fiscal nonbusiness. Report remuneration here and actual payment inS-1210; do not treat all judicial amounts as routine departure | MOS S-2299 pp 278–279 [section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| S-2500 labour proceedings | Current Justiça do Trabalho route: deadline set by court; if silent, 15 nextmonth from **legal notice (ciência) of** the specified liquidated/anticipated/exclusive-obligation compliance determination or court-agreement homologation. Fiscal nonbusiness postpones. CCP/Ninter uses agreement-celebration date under its own rule. Justiça Comum has a separate MOSsection. Do not use a blanket“15 after final judgment”rule or confuse S-2500 deadline with FGTS maturity | MOS S-2500 p 323 onwards [actual current section](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+
+For S-2500's ordinary Justiça do Trabalho section, the manual's reporting scope includes specified decisions/agreements from 1 October 2023 onward; the event may be required for IR information even with no FGTS/social bases so S-2501 can be sent. This Guide does not certify all Justiça Comum/CCP/Ninter, court-order or historic tax calculations. [MOS S-2500 scope/preconditions](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf). Use the legally operative notice date, not the date the accountant first reads an old judgment.
+
+In the general eSocial web or compliant payroll software, establish employer S-1000, establishments S-1005, rubricas S-1010, tax allocations S-1020 and relevant S-1070 process records; validate each event's actual prerequisites. Send remuneration and payment events, inspect returned acceptance/totalisers (including S-5001/S-5002/S-5003), reconcile beforeS-1299, then inspect DCTFWeb, apply legitimate linked credits, **sign and transmit** and keep its receipt. Issue the actual DARF, pay by its own maturity and reconcile payment/credit status. eSocial acceptance or calculated debt alone is not a paid DARF or transmitted DCTFWeb. The exact account authorisation/screens for a particular employer remain partial. [MOS S-1200/S-1210/S-1299 and totalisers](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf); [RFB DCTFWebservice](https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais).
+
+For FGTSDigital, sign in using the authorised gov.br/certificate/procurator route, inspect remuneration sent from eSocial, open **Gestão de Guias → Guia Rápida** and select competence, or use **Emissão de Guia Parametrizada** for the actual selected debts. Correct remuneration/incidence errors in eSocial and retransmit affected remuneration; bases are not freely edited in FGTSDigital. Reconstruct the dismissal-history base where needed, generate/verify the actual guide and keep payment proof. Caixa remains the linked-account/saldo/withdrawal operator; FGTSDigital handles these declaration/guide functions. [MTE FAQ 00.02, 01.02–04, 02.02–06, 03.02–03, 04.02](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes).
+
+Ordinary FGTSfacts from 1 March 2024 use FGTSDigital; earlier periods remain Caixa/SEFIP/GRRF. Domestic monthly and termination FGTS remain eSocialDAE; MEI/segurado especial ordinary monthlyDAE and termination routes differ. Labour-process collection migrated for specified sentence/agreement dates from 1 May 2026; the current FAQ's date/scope rules, outstanding historic fines and duplication safeguards must be applied individually. Process reference periods before July 1994 still use CaixaSEFIP 660; do not label allGFIP/SEFIPobsolete. MTE FAQ 03.32 specifically distinguishes MEI/segurado especial processFGTS from ordinary monthlyDAE. [MTE FAQ 00.06–08, 03.01, 03.24, 03.29–32](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes).
+
+Routine DIRF is replaced from calendar 2025 by eSocial/EFD-Reinf. RAIS for currently covered groups is fulfilled through eSocial, with the last group's year-base 2023 route; retain historical correction and income-certificate work rather than recreating a generic separate MarchRAIS/FebruaryDIRF obligation. Reconcile actual accepted events and certificates to avoid missing or duplicated withholding. [RFB DIRFcurrent](https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/suporte-a-dirf/leiame); [eSocial substitution matrix](https://www.gov.br/esocial/pt-br/empresas/perguntas-frequentes/perguntas-frequentes-producao-empresas-e-ambiente-de-testes/).
+
+## Penalties and interest
+
+FGTS lateness under Lei 8.036 art.22 uses TR update, 0.5%interest per month or fraction, and 5%fine in the maturity month or 10%from the following month; it is not 3%annual late interest. The 3%annual linked-account yield is a different item. Generate the actual due-date calculation in the applicable system; judicial indices/assessment consequences are separate. [Lei 8.036 art.22](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html); [MTE FAQ 02.22](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes). Shared federal INSS/IRRF daily-fine, cap and SELIC mechanics are owned by [br-estimated-tax](br-estimated-tax.md); keep overdue principal and charges separate, use actual Sicalc/DARF, and do not call late payment a declaration or assessment penalty. Specific penalties for omitted eSocial events and failure to pay the13th salary are also retained topics: their applicable offence, employer/worker category, conditions and amounts require the actual governing provisions; no amount is certified here. Full administrative/assessment fines remain partial.
+
+CLT 464 requires a salary payment receipt or the qualifying bank-deposit evidence; it does not itself legislate the old“18 mandatory payslip fields”list. Preserve this practical payslip/control checklist: employer name/CNPJ/address; employee name/CPF, CTPS record and internal identifier; work function and department; competence; payment date; salary basis; worked days/hours; overtime; night/hazard additions, commissions, bonuses, gratifications and other earnings; 13th/vacation where relevant; gross total; employee INSS; IRRF; VT; each other lawful deduction; net; and separately employer FGTS/base and relevant tax bases. These are useful evidence controls, not a claim every field comes from one article. Bank proof, event receipts, guides and reconciliation belong together. [CLT 462–465](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html).
+
+Document retention is not a universal delete-after-five-years or 30-years rule. Lei 8.212 art.32§11 requires supporting records until the corresponding credits prescribe; interruption, disputes, labour and other record duties can change the actual horizon. Determine the applicable retention schedule before deletion. [Lei 8.212 art.32§11](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html). For **contribuição sindical**, CLT 578–579 require prior express authorisation; assistential/CCT contributions have distinct rules and opposition questions not resolved here. Do not assume all union charges are compulsory or all prohibited. Nominal salary reductions have the constitutional collective-agreement qualification, while EC 141's specific transition forbids reductions for implementing that change. [CLT 578–579](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [CF 7 VI](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html); [EC 141 art.2](https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html).
+
+For the preserved question about **CBS/IBS consumption reform and payroll**, separate the employer’s consumption-tax classification from the wage and contribution computation. Route the CBS/IBS question to [brazil-vat](brazil-vat.md) and product/local indirect-tax questions to [br-indirect-tax](br-indirect-tax.md); establish the employer's actual transactions and transition before concluding its effect. This Guide does not certify the old blanket claim that consumption reform cannot affect any payroll-related decision. This is an ownership referral, with no consumption-tax rate or credit computed here.
+
+## Cross-border points
+
+Foreign, nonresident and expatriate payroll remains outside this ordinary calculation until residence, source, treaty, social-security agreement and actual employer obligations are established. Hand those unresolved facts to [brazil-cross-border-tax](brazil-cross-border-tax.md) and the contribution owner; continue the supported domestic computation without inventing an exemption or foreign credit. This is a scope referral, not a cross-border tax calculation.
+
+## Worked examples
+
+### Example 1:5,000 ordinary monthly salary, correct deduction choice
+
+Assume a full month, one ordinary employee job, no dependents/alimony/other legal deduction, no variable pay, eligible transport cost at least 300 and no other deduction. Employee INSS under this Guide’s 2026 progressive table and per-band truncation is 501.50. The shared monthly simplified 607.20 is better than 501.50 legal; base=5,000−607.20=4,392.80. Shared monthly table gives 4,392.80 × 22.5%−675.49=312.89. Reduction uses taxable earnings 5,000 before deductions and is capped at 312.89, leaving IRRF 0. Net before VT=5,000−501.50=4,498.50; actual eligible VT 300 leaves 4,198.50. Using simplified does **not** remove the employee's actual INSS deduction from net cash; it replaces it only in the tax-base deduction choice. [Portaria 13 Annex II](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf); [RFB table](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026); [Lei 15.270 art.3-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm); [Decree 10.854 art.114](https://www2.camara.leg.br/legin/fed/decret/2021/decreto-10854-10-novembro-2021-791950-normaatualizada-pe.html).
+
+```oa-check
+name: Payroll 2026 example 1
+inputs:
+  gross: 5000
+  simplified: 607.2
+  rate: 0.225
+  band_deduction: 675.49
+  reduction: 312.89
+  vt: 300
+steps:
+  - inss: floor(min(gross, 1621) * 0.075 * 100) / 100 + floor(max(min(gross, 2902.84) - 1621, 0) * 0.09 * 100) / 100 + floor(max(min(gross, 4354.27) - 2902.84, 0) * 0.12 * 100) / 100 + floor(max(min(gross, 8475.55) - 4354.27, 0) * 0.14 * 100) / 100
+  - base: gross - simplified
+  - pre_irrf: base * rate - band_deduction
+  - irrf: pre_irrf - reduction
+  - net: gross - inss - irrf - vt
+expected:
+  inss: 501.50
+  base: 4392.8
+  pre_irrf: 312.89
+  irrf: 0
+  net: 4198.50
+tolerance: 0.01
 ```
 
-### Padrão 2: Trabalhador com Salário Mínimo (BRL 1.621)
+Employer illustration only: stipulated ordinary CPP 20%, RAT 2%×FAP 1, a hypothetical third-party 5.8%classification assumed solely for this example, FGTS 8%, all on this 5,000 base. Charges=1,000+100+290+400=1,790; salary plus charges=6,790 before benefits/provisions. The old 6,500/8,700 annualised estimates and“60–70%all-in”are not a supported result of this model. Real employer charges require actual classification and the applicable totaliser truncation; the budget aggregate here does not certify a DARF cent total from an assumed 5.8%.
 
-```
-Salário bruto:                        BRL 1.621,00
-− INSS (7,5%):                     − BRL    121,58
-= Base de cálculo do IRRF:            BRL 1.499,42
-− IRRF:                            − BRL      0,00 (abaixo do limite de isenção)
-= Salário líquido (antes do VT):      BRL 1.499,42
-− Vale-transporte (6%):            − BRL     97,26
-= Líquido recebido:                   BRL 1.402,16
+### Example 2:minimum salary and salary-family screen
 
-Custo mensal do empregador:
-  Salário + INSS patronal + RAT + Terceiros + FGTS ≈ BRL 2.200
-  Total anual (com 13º, férias, encargos) ≈ BRL 31.000
-```
+At 1,621 for a full month, ordinary employee INSS is 121.57 after per-band truncation. Before VT net=1,499.43; actual eligible VT at 97.26 gives 1,402.17. That is **before** any established salary-family amount or other actual cash benefit. A child/eligible equivalent and actual total remuneration must be established before adding 67.54; concurrent earnings may remove eligibility even when this job pays the minimum. Under Example 1's explicit employer assumptions, 1,621 × 1.358=2,201.318→2,201.32 monthly salary plus charges. Twelve such unrounded months=26,415.816→26,415.82, excluding 13th, holiday third and benefits; actual monthly rounded ledger totals may differ by cents. The old 31,000 estimate is not certified as complete annual cost. [Portaria 13 arts.4, 7/Annex II](https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf); [Decree 10.854 art.114](https://www2.camara.leg.br/legin/fed/decret/2021/decreto-10854-10-novembro-2021-791950-normaatualizada-pe.html).
 
-### Padrão 3: Cálculo do 13º Salário (Ano Completo, Salário BRL 5.000)
+### Example 3:5,000 full 13th, separate settlement
 
-```
-1ª parcela (até 30 de novembro):
-  50% × 5.000 = BRL 2.500,00
-  Sem desconto de INSS ou IRRF
-  FGTS: 8% × 2.500 = BRL 200,00 (depósito do empregador)
+Assume full qualifying entitlement, unchanged preceding-month/December salary 5,000 and no other legal deductions. Advance 2,500. Separate 13th employee INSS 501.50; compare the separate applicable 607.20 simplified option, giving the same 4,392.80 base and 312.89 table tax, capped 2026 reduction→IRRF 0. Second net=5,000−2,500−501.50=1,998.50. Ordinary 8%FGTS on each 2,500 instalment=200, employer-funded. No employee INSS or IRRF is taken from the first 2,500 in this stipulated ordinary schedule; deductions settle on the total with the final instalment. Do not add ordinary monthly salary to this separate 13th base. [Lei 4.749](https://www.presidencia.gov.br/ccivil_03/leis/l4749.htm); [RIR 700](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html); [Lei 15.270 art.3-A§3](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm); [Lei 8.036 art.15](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html).
 
-2ª parcela (até 20 de dezembro):
-  Restante: BRL 2.500,00
-  INSS sobre o 13º integral (5.000): − BRL 501,52
-  IRRF sobre (5.000 − 501,52) = 4.498,48: − BRL 349,39
-  Líquido da 2ª parcela: BRL 2.500 − 501,52 − 349,39 = BRL 1.649,09
-  FGTS: 8% × 2.500 = BRL 200,00
+```oa-check
+name: Payroll 2026 example 2
+inputs:
+  thirteenth: 5000
+  advance: 2500
+  employee_inss: 501.50
+  irrf: 0
+  fgts_rate: 0.08
+steps:
+  - second_net: thirteenth - advance - employee_inss - irrf
+  - first_fgts: advance * fgts_rate
+  - second_fgts: (thirteenth - advance) * fgts_rate
+expected:
+  second_net: 1998.50
+  first_fgts: 200
+  second_fgts: 200
+tolerance: 0.01
 ```
 
-### Padrão 4: Rescisão Sem Justa Causa
+### Preserved termination pattern:classify before summing
 
-**Padrão 4: Rescisão Sem Justa Causa**
+The earlier termination example provided no complete dates/amounts; it remains a conditional worksheet, not a certified net settlement. Establish reason, service/admission/departure/notice projection, paid/vacation history, qualifying 13th months, variable pay and lawful deductions first. Keep salary balance(day fraction under applicable contract), actual notice entitlement, earned/eligible proportional vacation plus constitutional third, proportional 13th and actual historic FGTS fine in distinct rows. Statutory ordinary notice starts 30 days with 3 per service year up to 90 total, subject to the actual applicable termination category; do not impose the employer's proportional notice automatically on every employee resignation. [Official eSocial notice instructions](https://www.gov.br/esocial/pt-br/microempreendedor-individual/manual-web-mei). CLT 146–147 fractional vacation and Lei 4.090 qualifying-month rules have their own conditions; dismissal type and notice projection may change them. [CLT 146–147](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html); [Lei 4.090 arts.1–3](https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4090-13-julho-1962-353863-normaatualizada-pl.html).
 
-| Componente | Cálculo |
-| --- | --- |
-| Saldo de salário | Dias trabalhados / 30 × salário mensal |
-| 13º proporcional | Meses trabalhados / 12 × salário |
-| Férias proporcionais + 1/3 | Meses desde o último período aquisitivo / 12 × salário × 4/3 |
-| Férias vencidas + 1/3 (se houver) | Salário integral × 4/3 |
-| Aviso prévio | 30 dias + 3 por ano de serviço (máx. 90 dias) |
-| Multa de 40% do FGTS | 40% do saldo total do FGTS (empregador deposita na conta de FGTS do empregado) |
-| FGTS sobre verbas rescisórias | 8% sobre todos os valores rescisórios |
+For dismissal without just cause, recompute 40%from the proper updated deposit history, not current cash balance. Calculate FGTS only on eligible termination rubrics; indemnified vacation is not automatically an 8%base. Account separately for any notice contribution/tax treatment and court decision. The actual full settlement/IRRF treatment and payment-document/legal deadline determination remain partial until those facts/rules are resolved; do not infer a full termination invoice or net from this worksheet. [Lei 8.036 arts.15, 18](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html); [Lei 8.212 art.28§9](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [MTE FAQ 02.06](https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes).
 
-## Seção 10 — Interação com Outras Skills
+## Edge cases and exceptions
 
-**Interação com Outras Skills**
+| Case | Required treatment | Source |
+|---|---|---|
+| EC 1:two employers or mixed contribution categories | Gather both remuneration/contribution records and use this Guide’s ordered employee progression and br-inss for the nonemployee component; independent full-ceiling deductions can be wrong; withholdings may still leave annual IRPF | Lei 8.212 art.28 [base](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [Lei 15.270](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm) |
+| EC 2:legal deductions exceed simplified | Compare the **whole** eligible legal package, not INSSalone; do not take both. A lower tax base does not lower the earnings input for 2026 reduction | [RIR 67, 71–76](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html); [Lei 15.2703-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm) |
+| EC 3:Annex IV/no monthlyinvoice | Classify exclusive versus simultaneous workers. Zero Annex IVrevenue does not extinguish exclusive Annex IV payroll CPP; simultaneous zero-revenue fraction has the actual source condition | [COSIT 169](https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=74473) |
+| EC 4:leave/termination changes rubrics | Separate 13th/férias/indemnities/PLR; noflat 8%FGTS or ordinary monthly IRRF on all settlement lines. Compute established lines while isolating the unresolved rubric | [RIR 682–683,700](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html); [Lei 8.21228§9](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [Lei 8.03615](https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html) |
+| EC 5:departure on 1 st–4th or judicialcase | S-1200 prior-month deadline can accelerate; S-2299 andS-2500 haveown triggers/nonbusiness rules. Keep reporting notice/judicial deadline apart from FGTS maturity | [MOS actual event sections](https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf) |
+| EC 6:late 2026 workingtime/future paternity | ApplyEC 141 phase/scope, not undated 44/220. Lei 15.371 does not start until 2027; 2026 paternity and Empresa Cidadãconditions remain separate | [EC 1416–10](https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html); [Lei 15.37111–14](https://www2.camara.leg.br/legin/fed/lei/2026/lei-15371-31-marco-2026-798908-publicacaooriginal-178711-pl.html); [CLT 473](https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html) |
 
-| Skill | Interação |
-| --- | --- |
-| brazil-einvoice | Sem interação direta (NF-e é para mercadorias/serviços; folha utiliza eSocial) |
-| payroll-workflow-base | Fluxo geral de processamento de folha; especificidades do Brasil tratadas nesta skill |
+## Test cases
 
-### Particularidades da Folha no Brasil
+1. **5,000 salary/no legal extras:** use 607.20 simplified for the tax base, actual INSS 501.50 still cash deduction; IRRF 0; net 4,198.50 with actual 300 VT.
+2. **Minimum/nochildproof:** net 1,402.17 with actual 97.26 VT; do notaddsalary-family solely because the wage is 1,621.
+3. **Full 5,000 13th/advance 2,500:** secondnet 1,998.50 and separate ordinary FGTS 200 eachinstalment; do not combine with monthly salary.
+4. **Simples exclusive Annex IV worker and zero revenue:** do not return zero CPP solely because there is no invoice; actual worker activity controls.
+5. **S-1200 late ordinary deadline versus S-2299:** ordinary 15 next month can postpone, but ordinary departure 10 days advances for a nonbusiness day; test the actual event, not one blanket rule.
+6. **16 December 2026 ordinary work change:** general time phase 42 weekly/two-day rest subject to scope, retainsalary; donotapply 40 early or treat all workers as covered without art 8/9 check.
 
-- **Regime CLT**: Todos os empregados formais (celetistas) são regidos pela CLT. Trabalhadores informais (MEI, autônomos, PJ) têm regras de contribuição inteiramente distintas.
-- **eSocial é obrigatório**: TODOS os eventos da folha devem fluir pelo eSocial. Não há método alternativo de transmissão para empregadores CLT.
-- **Transição para o FGTS Digital**: Entre 2024-2025, os depósitos de FGTS migraram para o FGTS Digital (integrado ao eSocial). SEFIP/GFIP somente para acertos de períodos anteriores.
-- **Irredutibilidade salarial**: Pela CLT, o salário nominal não pode ser reduzido (princípio da irredutibilidade salarial), nem mesmo por acordo individual, salvo via negociação coletiva.
-- **Contribuição sindical**: Desde a Reforma Trabalhista de 2017, a contribuição sindical é facultativa. O empregado deve autorizar expressamente.
-- **Convenções e acordos coletivos**: Convenções coletivas e acordos coletivos podem estabelecer pisos, benefícios adicionais e banco de horas. SEMPRE verifique a convenção aplicável por CNAE/sindicato.
-- **Férias fracionadas**: Após a Reforma Trabalhista de 2017, as férias podem ser fracionadas em até 3 períodos (mínimo de 14 dias para um deles, 5 dias para os demais).
-- **Simples Nacional**: Microempresas e empresas de pequeno porte no Simples Nacional possuem regras distintas de INSS patronal (incluído no DAS unificado).
-- **RAT/FAP**: A alíquota efetiva de acidente de trabalho depende do histórico de acidentes da própria empresa (multiplicador FAP publicado anualmente pelo governo). Sempre verifique o FAP vigente antes de calcular o INSS patronal.
+## Ask the client first
 
-## Aviso Legal
+Obtain the employer CNPJ, establishment, regime, actual activities, FPAS/third-party classification, FAP year/factor and CPP/CPRB/exemption evidence. Obtain the worker CPF/category/admission, contract/CCT/floor/hours and EC 141 scope; competence and actual payment dates; salary, variable pay, rubricas and incidence; other-job INSS and other-payer income; qualified dependents, alimony and deductions; actual VT route/days/cost; benefit, leave, vacation and 13th advance records; and termination/judicial dates and documents. Operational work also needs authorised access, accepted events and totalisers, DCTFWeb receipt, DARF/FGTS guides and payment proof. These inputs do not authorise filing, payment or sending messages.
 
-Esta skill e seus resultados são fornecidos exclusivamente para fins informativos e de cálculo e não constituem assessoria tributária, jurídica ou financeira. A Open Accountants e seus colaboradores não se responsabilizam por erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e validados por um profissional habilitado antes de qualquer entrega ou tomada de decisão.
+## When to refuse or refer
 
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
+Continue established salary calculations while isolating an unresolved rubric. Do not guess worker status, CCT, floor, other-job INSS, FPAS/FAP, eligible benefit, withholding credit or historic FGTS base. Rural, domestic, public, executive, intermittent and special-sector cases, court settlements, NR hazards, disputed contributions, termination notice/indemnity taxation and EC 141 special-contract implementation need the actual specialist rules. Refer annual IRPF to br-income-tax, individual contributions to br-inss, shared monthly IRPF to br-estimated-tax, Simples eligibility to br-simples-nacional and company tax to brazil-corporate-tax. A payroll calculation does not create NF-e/NFS-e authority: invoice formats belong to [brazil-einvoice](brazil-einvoice.md); employment is reported through the proper payroll channels.
+
+The [OpenAccountants library](https://www.openaccountants.com) provides Guide versions and a route to request professional review. Check the displayed tax year, version and review state; this rewritten version does not claim current accountant approval.
+
+## Sources
+
+The following named portions were actually read on 2026-11-11, including exact cached official originals from the research packet. This is not a claim of whole-law or whole-manual reading. Portaria 13 is scanned: all four pages were visually read; blank extracted text was not treated as evidence. The current MOS and DCTFWeb PDFs were genuine official downloads, and only the named operative portions are certified as read here. The older official Senate constitutional compilation is used only for the pre-EC 141 wording, with the current amendment controlling its transition.
+
+| Actual portions read / purpose | Official URL | Read date |
+|---|---|---|
+| Decree 12.797 arts.1–2: minimum monthly/day/hour and commencement | https://www.presidencia.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm | 2026-11-11 |
+| Portaria 13 arts.2, 4, 7 and Annex II; four pages visually read: family benefit and employee progression | https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf | 2026-11-11 |
+| RFB 2026 monthly table/reduction/deductions and 13th: shared owner and example coefficients | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026 | 2026-11-11 |
+| Lei 15.270 adding art.3-A, §§1–4: gross-earnings input, cap and 13th reduction | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm | 2026-11-11 |
+| Lei 8.212 arts.12, 22, 28, 30, 32§11: category, bases/exclusions, collection and retention | https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html | 2026-11-11 |
+| Current CF art.7 VI, VIII, XIII, XVI, XVII and EC 141 cross-reference; exact Câmara original cache | https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html | 2026-11-11 |
+| EC 141 all arts.1–10: hours/rest phase, salary protection, executive and public-contract exceptions | https://www2.camara.leg.br/legin/fed/emecon/2026/emendaconstitucional-141-16-outubro-2026-800062-publicacaooriginal-181622-pl.html | 2026-11-11 |
+| CLT arts.2–3, 57–62, 73,130–147,189–195,392–392 C, 459,462–465,473 III, 578–579: named ordinary rules and limits | https://www2.camara.leg.br/legin/fed/declei/1940-1949/decreto-lei-5452-1-maio-1943-415500-normaatualizada-pe.html | 2026-11-11 |
+| Lei 8.036 arts.13§7, 15, 18, 22: deposits, bases, dismissal fine and mora | https://www2.camara.leg.br/legin/fed/lei/1990/lei-8036-11-maio-1990-365155-normaatualizada-pl.html | 2026-11-11 |
+| MPS FAP definition, range, annual establishment factor and gov.br access portion | https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/saude-e-seguranca-do-trabalhador/fap | 2026-11-11 |
+| COSIT 169/2024 full operative reasoning and IN 2110 arts.168–171 quoted there: exclusive and simultaneous workers | https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=74473 | 2026-11-11 |
+| Lei 14.973 art.1 adding 9-A/9-B and art.4: CPRB phase, 13th exception and workforce undertaking, not full sector eligibility | https://www2.camara.leg.br/legin/fed/lei/2024/lei-14973-16-setembro-2024-796242-normaatualizada-pl.html | 2026-11-11 |
+| RIR arts.67, 71–76,677,682–683,700: deductions, aggregation and separate withholding; old tables not adopted | https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html | 2026-11-11 |
+| Lei 4.090 arts.1–3: 13th entitlement and qualifying months | https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4090-13-julho-1962-353863-normaatualizada-pl.html | 2026-11-11 |
+| Lei 4.749 arts.1–4: 13th advance and final payment | https://www.presidencia.gov.br/ccivil_03/leis/l4749.htm | 2026-11-11 |
+| Decree 10.854 arts.106–117: actual VT scope, cash restrictions/exceptions, proof and cost share | https://www2.camara.leg.br/legin/fed/decret/2021/decreto-10854-10-novembro-2021-791950-normaatualizada-pe.html | 2026-11-11 |
+| Lei 11.770 arts.1, 3–4: Empresa Cidadã extension conditions; CLT 392 separately read | https://www2.camara.leg.br/legin/fed/lei/2008/lei-11770-9-setembro-2008-580284-normaatualizada-pl.html | 2026-11-11 |
+| STF ADPF 501 official account of its decision: late payment versus late granting | https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=492245&ori=1 | 2026-11-11 |
+| MOS S 1.3 NO 12/2026: named S 2190/2200/2206/1200/1210/1299/2299/S 2500 Justiça do Trabalho, 10.3.4 and referenced totaliser concepts; not the entire manual | https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-12-2026.pdf | 2026-11-11 |
+| Current DCTFWeb service: monthly deadline, signature/transmission and payment distinction | https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais | 2026-11-11 |
+| DCTFWeb manual Jan 2025 pp 15–16,103–104: annual 13th creation, values-only transmission and DARF; no claim it states nonbusiness advance | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-dctfweb/manual-dctfweb-atualizacao-janeiro2025_versao_final.pdf/@@download/file | 2026-11-11 |
+| MTE FGTS FAQ 00.02, 00.06–08, 01.02–04, 02.02–06, 02.22, 03.01–03, 03.14, 03.24, 03.29–32, 04.02: selected current answers on access, guides, history and migration | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes | 2026-11-11 |
+| Current DIRF replacement statement; historical corrections remain distinct | https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/suporte-a-dirf/leiame | 2026-11-11 |
+| eSocial FAQ 1.12 substitution matrix: RAIS covered groups and last year-base 2023; FAQ 14.2: separate simplified-versus-legal comparison for monthly pay, vacation and 13th, with PLR/RRA exclusions | https://www.gov.br/esocial/pt-br/empresas/perguntas-frequentes/perguntas-frequentes-producao-empresas-e-ambiente-de-testes/ | 2026-11-11 |
+| Official eSocial notice chapter 7 and 13th 10.3.4-related evidence: employer notice proportion only; old GRRF procedures not adopted | https://www.gov.br/esocial/pt-br/microempreendedor-individual/manual-web-mei | 2026-11-11 |
+| MTE current unemployment service eligibility and application/monitoring route | https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego | 2026-11-11 |
+| Older MTE formal page: work-month and instalment count conditions only; its 2024 amounts not adopted | https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego/seguro-desemprego-formal | 2026-11-11 |
+| Lei 15.371 arts.11–14: future paternity phases, fiscal condition, disability addition and commencement only | https://www2.camara.leg.br/legin/fed/lei/2026/lei-15371-31-marco-2026-798908-publicacaooriginal-178711-pl.html | 2026-11-11 |
+| IN 2237 current arts.5–7, ANTT government republication of RFB text: annual fiscal nonbusiness advance and values-only condition | https://anttlegis.antt.gov.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&cod_menu=7145&cod_modulo=420&num_ato=00002237&seq_ato=000&sgl_orgao=RFB%2FMF&sgl_tipo=INM&vlr_ano=2024 | 2026-11-11 |
+| Lei 11.196 art.70 I, e and neighbouring special categories: ordinary domestic employment IRRF maturity | https://www2.camara.leg.br/legin/fed/lei/2005/lei-11196-21-novembro-2005-539221-normaatualizada-pl.html | 2026-11-11 |
+| Official Senate CF 2025 compilation art.7 XIII, historical pre-amendment 44-hour wording only; current EC 141 read separately | https://www2.senado.leg.br/bdsf/bitstream/handle/id/685819/CF88_EC135_2025.pdf?isAllowed=y&sequence=1#page=1 | 2026-11-11 |
+
+Not yet confirmed: actual CCT, state/category floors, FPAS/third-party code and exemptions, FAP value and CPRB sector/election/revenue facts; EC 141 actual divisors, sector rules and public-contract rebalancing; full NR/perícia and judicial hazard bases; full private-pension/alimony/disputed IRRF deductions, PLR table and special incidence; all benefit proof/administration and current unemployment value calculations; complex termination, notice projection, rubric incidence and complete settlement payment procedure; all Justiça Comum/CCP/Ninter and historic judicial calculations; actual employer account authorisation, screens, revenue codes, calendar, credit and payment status; specific penalties for omitted eSocial events or failure to pay the13th salary, other complete assessment fines and the document-retention schedule. These are explicit partial topics, not assumed zero or current accountant approval.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `brazil-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/brazil-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `brazil-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/brazil-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
