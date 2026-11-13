@@ -14,7 +14,7 @@ not_applicable:
     interstate sourcing remains partial.
 covered_by:
   IT-IND: mt-income-tax
-  IT-CORP: mt-corporate-tax
+  IT-CORP: mt-corporate-income-tax
   SC: mt-payroll
   PR: mt-payroll
 partial:
@@ -35,7 +35,7 @@ Montana taxes personal and corporate income but has no general sales tax. The re
 | Job | Skill | Status |
 | --- | --- | --- |
 | IT-IND | `mt-income-tax` | checked against the law; not accountant-reviewed |
-| IT-CORP | `mt-corporate-tax` | checked against the law; not accountant-reviewed |
+| IT-CORP | `mt-corporate-income-tax` | checked against the law; not accountant-reviewed |
 | SC | `mt-payroll` | checked against the law; not accountant-reviewed |
 | PR | `mt-payroll` | checked against the law; not accountant-reviewed |
 

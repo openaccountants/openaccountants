@@ -1,12 +1,12 @@
 ---
-name: mt-corporate-tax
+name: mt-corporate-income-tax
 description: Prepare the Montana 2026 C-corporation income tax working paper and Form CIT filing. Covers ordinary tax, the minimum, single receipts factor, alternative gross sales eligibility and water's edge election boundaries. Trigger on Montana CIT or Montana corporate tax.
 jurisdiction: US-MT
 category: state-tax
 tax_year: 2026
 last_updated: 2026-11-13
 tier: 2
-version: "1.1"
+version: "1.0"
 type: situation-rules
 ---
 
@@ -129,5 +129,3 @@ Late filing: minimum $50 or 5% per month up to 25%. Ordinary late payment: 0.5% 
 | DOR penalties and interest. Read for corporate late filing/payment rules and the 2026 all-other-taxes interest rate. | https://revenue.mt.gov/taxes/penalty-and-interest | 2026-11-13 |
 
 Not yet confirmed: 2026 Form CIT and instructions, including changes to individual line numbers, were not confirmed. Detailed receipts sourcing, unitary-group computations, specialized industry formulae, credit computations and Montana NOL vintage/carryback calculations require their own primary-source working papers.
-
-> **Source-cited draft.** Written by Codex. Not reviewed by an accountant. This skill supports a professional working paper; review the taxpayer facts and current forms before filing. Circular 230 section 10.37: this material is not a legal opinion or a substitute for reasonable factual and legal inquiry.

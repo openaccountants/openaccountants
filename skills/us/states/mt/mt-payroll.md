@@ -6,7 +6,7 @@ category: state-tax
 tax_year: 2026
 last_updated: 2026-11-13
 tier: 2
-version: "1.1"
+version: "1.2"
 type: situation-rules
 ---
 
@@ -148,4 +148,5 @@ UI: electronic quarterly reports and payment are due the last day of the next mo
 
 Not yet confirmed: UI monetary late-report/late-payment penalty calculations and coverage thresholds for domestic, farm, nonprofit and public employers are not confirmed here. The UI rate notice is needed for each employer; this skill does not compute experience-rating assignments.
 
+> **Source-cited draft.** Written by Codex. Not reviewed by an accountant. This skill supports a professional working paper; review the taxpayer facts and current forms before filing. Circular 230 section 10.37: this material is not a legal opinion or a substitute for reasonable factual and legal inquiry.
 > **Source-cited draft.** Written by Codex. Not reviewed by an accountant. This skill supports a professional working paper; review the taxpayer facts and current forms before filing. Circular 230 section 10.37: this material is not a legal opinion or a substitute for reasonable factual and legal inquiry.
