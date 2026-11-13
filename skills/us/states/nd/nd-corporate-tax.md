@@ -6,7 +6,6 @@ tax_year: 2025
 last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
 tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. The corporate rates are statutory and unchanged in N.D.C.C. 57-38-30 as read on 2026-11-13; the worked examples are calendar 2025.
 version: "0.2"
