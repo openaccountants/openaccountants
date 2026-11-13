@@ -48,9 +48,11 @@ Approval puts your name on the skill: **Approved by [your name]**, on the websit
 **Start with one skill.** Our way of working is new, so every accountant begins with one task, one country, one tax year, agreed with us. When it is live, you can take more.
 
 1. **Create your free account** at [openaccountants.com/onboarding/accountant](https://www.openaccountants.com/onboarding/accountant) with your licence or membership number. We check it privately. It is never shown.
-2. **Open a separate pull request adding your GitHub account to [accountants.yml](accountants.yml).** Add one line, `your-github-username: Your Name`, using the same name as your account. Wait for it to merge before submitting a skill approval. The new roster entry cannot prove your identity for an approval in that same PR.
+2. **[Connect your GitHub account in OA](https://www.openaccountants.com/accountant/github).** If you do not have a GitHub account, choose **I need a GitHub account** and follow the setup steps. Return to OA and press **Connect GitHub**. Once OA shows **GitHub connected**, you can submit your first skill approval without a separate `accountants.yml` pull request. Connecting alone does not approve a skill: your own GitHub account must open the merged change or approve its exact file.
 3. **Write your skill, or take one that has no accountant yet**, and review all of it.
 4. **Approve it in the skill pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
+
+**Existing contributors using the manual roster route:** you can keep using your saved GitHub identity or a matching entry already in [accountants.yml](accountants.yml). To add a roster entry, open a separate pull request with `your-github-username: Your Name`, using the same name as your OA account, and wait for it to merge before submitting a skill approval. An entry added inside the approval PR cannot prove your identity for that same PR. A confirmed OA connection is the simpler route for new contributors.
 
 The skill stays yours. When the next tax year comes, you update it and approve it again. If the text of an approved skill changes, its approval clears until you approve the new version. If an accountant does not respond for 30 days, another accountant can ask us to take the skill over.
 
