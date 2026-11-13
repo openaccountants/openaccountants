@@ -37,5 +37,6 @@ Tracked in [\[PR\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Other skills
 
+- [Act 60 incentives](pr-act-60-incentives.md) (2026)
 - [Federal residence and filing](pr-federal-residence-and-filing.md) (2025)
 - [Self employment tax 2025](pr-self-employment-tax-2025.md) (2025)
