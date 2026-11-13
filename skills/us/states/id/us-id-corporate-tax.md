@@ -1,5 +1,5 @@
 ---
-name: id-corporate-tax
+name: us-id-corporate-tax
 description: Idaho corporate income and alternative franchise tax, Form 41 base and minimum tax, Permanent Building Fund tax, estimated-payment trigger and filing route. Uses verified 2025-2026 filing-cycle figures while final 2026 annual forms remain unconfirmed. Does not compute S corporation or partnership elections.
 version: 1.0
 jurisdiction: US-ID

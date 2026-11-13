@@ -3,7 +3,7 @@ jurisdiction: US-ID
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 covered_by:
   IT-IND: id-income-tax
-  IT-CORP: id-corporate-tax
+  IT-CORP: us-id-corporate-tax
   VAT: id-sales-tax
   SC: id-payroll
   PR: id-payroll
@@ -26,7 +26,7 @@ Idaho has individual and corporate income taxes, corporate franchise tax as an a
 | Job | Skill | Coverage and status |
 |---|---|---|
 | Individual income | [id-income-tax](id-income-tax.md) | Form 40 basics for the 2025-2026 filing cycle; partial annual 2026 coverage |
-| Corporate income/franchise | [id-corporate-tax](id-corporate-tax.md) | Form 41 basics, minimum and PBF; partial annual 2026 coverage |
+| Corporate income/franchise | [us-id-corporate-tax](us-id-corporate-tax.md) | Form 41 basics, minimum and PBF; partial annual 2026 coverage |
 | Sales/use | [id-sales-tax](id-sales-tax.md) | 2026 state collection, transactions and filing; local and specialist gaps explicit |
 | Payroll withholding and unemployment | [id-payroll](id-payroll.md) | Published 2026 payroll tables, UI rates/base and account filing; confirmation gaps explicit |
 
