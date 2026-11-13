@@ -7,16 +7,16 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nd-income-tax"
   jurisdiction: "US-ND"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-13"
 ---
 
 # ND Income Tax
 
-## North Dakota Individual Income Tax Skill — Self-Employed / Sole Proprietor
+## North Dakota Individual Income Tax Skill -- Self-Employed / Sole Proprietor
 
 > **Scope.** This skill covers North Dakota Form ND-1 (Individual Income Tax Return) for full-year ND residents who are sole proprietors or single-member LLC owners. Tax year 2025 (returns filed in 2026). North Dakota uses a three-bracket graduated rate structure with a 0% first bracket, making it one of the lowest-tax states.
 >
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
+> **Quality tier.** Q3 -- AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
 
 ## Section 1: Metadata
 
@@ -42,63 +42,63 @@ metadata:
 - ND Office of State Tax Commissioner, 2025 Individual Income Tax Booklet: https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf
 - N.D.C.C. §57-38-30.3 (tax rates)
 
-## Section 2: Quick reference — rates and thresholds
+## Section 2: Quick reference -- rates and thresholds
 
-### Tax brackets — Single (TY 2025)
+### Tax brackets -- Single (TY 2025)
 
-**Tax brackets — Single (TY 2025)**
+**Tax brackets -- Single (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $48,475 | 0.00% | $0 |
-| $48,475 | $244,825 | 1.95% | $0 |
-| $244,825 | — | 2.50% | $3,828.83 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $48,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $48,475 | $244,825 | 1.95% | $0 | same |
+| $244,825 | -- | 2.50% | $3,828.83 | same |
 
-### Tax brackets — Married filing jointly / Qualifying surviving spouse (TY 2025)
+### Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)
 
-**Tax brackets — Married filing jointly / Qualifying surviving spouse (TY 2025)**
+**Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $80,975 | 0.00% | $0 |
-| $80,975 | $298,075 | 1.95% | $0 |
-| $298,075 | — | 2.50% | $4,233.45 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $80,975 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $80,975 | $298,075 | 1.95% | $0 | same |
+| $298,075 | -- | 2.50% | $4,233.45 | same |
 
-### Tax brackets — Married filing separately (TY 2025)
+### Tax brackets -- Married filing separately (TY 2025)
 
-**Tax brackets — Married filing separately (TY 2025)**
+**Tax brackets -- Married filing separately (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $40,475 | 0.00% | $0 |
-| $40,475 | $149,025 | 1.95% | $0 |
-| $149,025 | — | 2.50% | $2,116.73 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $40,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $40,475 | $149,025 | 1.95% | $0 | same |
+| $149,025 | -- | 2.50% | $2,116.73 | same |
 
-### Tax brackets — Head of household (TY 2025)
+### Tax brackets -- Head of household (TY 2025)
 
-**Tax brackets — Head of household (TY 2025)**
+**Tax brackets -- Head of household (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $64,950 | 0.00% | $0 |
-| $64,950 | $271,450 | 1.95% | $0 |
-| $271,450 | — | 2.50% | $4,026.75 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $64,950 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $64,950 | $271,450 | 1.95% | $0 | same |
+| $271,450 | -- | 2.50% | $4,026.75 | same |
 
 ### Standard deduction
 
-- **ND standard deduction** — North Dakota does not have its own standard deduction. It uses the federal standard deduction as the starting point is federal taxable income (not federal AGI).
+- **ND standard deduction** -- North Dakota does not have its own standard deduction. It uses the federal standard deduction as the starting point is federal taxable income (not federal AGI).
 
 ### Local income tax
 
-- **Local income tax permitted** — North Dakota does not permit local income taxes.
+- **Local income tax permitted** -- North Dakota does not permit local income taxes.
 
 ## Section 3: How this skill works with the federal return
 
-North Dakota taxable income starts with **federal taxable income** from federal Form 1040, Line 15 (not federal AGI — this is different from many other states).
+North Dakota taxable income starts with **federal taxable income** from federal Form 1040, Line 15 (not federal AGI -- this is different from many other states).
 
 1. **Start with federal taxable income** → ND-1, Line 1
-2. **Add ND additions** (Schedule ND-1SA) — items ND adds back
-3. **Subtract ND subtractions** (Schedule ND-1SA) — items ND excludes
+2. **Add ND additions** (Schedule ND-1SA) -- items ND adds back
+3. **Subtract ND subtractions** (Schedule ND-1SA) -- items ND excludes
 4. **Result = ND taxable income**
 5. **Apply the graduated rate schedule** → ND tax
 6. **Subtract credits** (Schedule ND-1TC) → final tax due or refund
@@ -126,11 +126,11 @@ North Dakota taxable income starts with **federal taxable income** from federal 
 
 ### Self-employment income flow
 
-- **Schedule C flow to ND** — Schedule C net profit flows into federal taxable income, which is the starting point for ND. Because ND starts from federal taxable income (after the standard/itemized deduction and QBI deduction), the federal deductions are already incorporated.
+- **Schedule C flow to ND** -- Schedule C net profit flows into federal taxable income, which is the starting point for ND. Because ND starts from federal taxable income (after the standard/itemized deduction and QBI deduction), the federal deductions are already incorporated.
 
 ### Estimated tax
 
-- **Estimated tax requirement threshold** — $1,000 USD (ND net tax liability expected)
+- **Estimated tax requirement threshold** -- Not required if the prior-year ND net tax liability was less than $1,000 (N.D.C.C. 57-38-62(1)); the 2025 booklet asks for estimates when the 2025 net tax liability was $1,000 or more and the taxpayer expects to owe at least $1,000 after withholding.
 
 **Estimated tax installment due dates**
 
@@ -145,13 +145,13 @@ Form ND-1ES is used for estimated tax payments. Payments can be made via the Nor
 
 ### Depreciation
 
-- **ND conformity to federal depreciation** — ND generally conforms to federal depreciation rules, including IRC §168(k) bonus depreciation. No state-level add-back is required for bonus depreciation.
+- **ND conformity to federal depreciation** -- ND generally conforms to federal depreciation rules, including IRC §168(k) bonus depreciation. No state-level add-back is required for bonus depreciation.
 
 ### 0% bracket benefit
 
-- **Zero bracket threshold benefit** — The 0% first bracket means that a single filer with ND taxable income of $48,475 or less (or MFJ of $80,975 or less) owes zero ND income tax. This is particularly beneficial for self-employed taxpayers with moderate income.
+- **Zero bracket threshold benefit** -- The 0% first bracket means that a single filer with ND taxable income of $48,475 or less (or MFJ of $80,975 or less) owes zero ND income tax. This is particularly beneficial for self-employed taxpayers with moderate income.
 
-## Section 5: Tier 1 rules — deterministic
+## Section 5: Tier 1 rules -- deterministic
 
 **Tier 1 rules table**
 
@@ -161,10 +161,10 @@ Form ND-1ES is used for estimated tax payments. Payments can be made via the Nor
 | ND-T1-02 | Tax computed using 3-bracket schedule: 0%, 1.95%, 2.50% (TY 2025) | N.D.C.C. §57-38-30.3 |
 | ND-T1-03 | Starting point is federal taxable income (Form 1040, Line 15), not federal AGI | N.D.C.C. §57-38-01(7) |
 | ND-T1-04 | ND generally conforms to federal depreciation including §168(k) | N.D.C.C. §57-38 |
-| ND-T1-05 | Estimated tax required if expected liability ≥ $1,000 | N.D.C.C. §57-38-62 |
+| ND-T1-05 | Estimated tax required if prior-year ND net tax liability was $1,000 or more and the taxpayer expects to owe at least $1,000; pay the lesser of 90% of current-year or 100% of prior-year liability | https://ndlegis.gov/cencode/t57c38.pdf (57-38-62) |
 | ND-T1-06 | Extension: automatic 6-month extension with valid federal extension | ND Tax Commissioner guidelines |
 
-## Section 6: Tier 2 rules — requires judgment
+## Section 6: Tier 2 rules -- requires judgment
 
 **Tier 2 rules table**
 
@@ -221,6 +221,39 @@ Form ND-1ES is used for estimated tax payments. Payments can be made via the Nor
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
+## Worked examples (oa-check)
+
+From the 2025 rate schedules (source 1). Example A: single, ND taxable income $100,000. Tax = 1.95% x (100,000 - 48,475) = 1,004.74. Example B: married filing jointly, ND taxable income $350,000. Tax = 4,233.45 + 2.50% x (350,000 - 298,075) = 5,531.58.
+
+```oa-check
+name: ND 2025 single, taxable income 100,000
+inputs:
+  ti: 100000
+steps:
+  - tax: round((min(ti, 244825) - 48475) * 0.0195, 2)
+expected:
+  tax: 1004.74
+```
+
+```oa-check
+name: ND 2025 MFJ, taxable income 350,000
+inputs:
+  ti: 350000
+steps:
+  - tax: round(4233.45 + (ti - 298075) * 0.025, 2)
+expected:
+  tax: 5531.58
+```
+
+
+## Sources
+
+| # | Source | URL | Read on |
+| --- | --- | --- | --- |
+| 1 | ND Tax Commissioner -- 2025 Individual Income Tax Booklet (rate schedules, ND-1 Line 1, estimated tax) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-13 |
+| 2 | ND Tax Commissioner -- Individual income tax page (2025 rates) | https://www.tax.nd.gov/individual-income-tax | 2026-11-13 |
+| 3 | N.D.C.C. chapter 57-38 (57-38-30.3 rates, 57-38-62 estimated tax) | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-13 |
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nd-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nd-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nd-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nd-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
