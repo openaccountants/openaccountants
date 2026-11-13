@@ -198,14 +198,16 @@ Schedule C, Schedule SE, Form 8829 (actual method) and Form 8959 (if owed) are a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Schedule SE (Form 1040) 2026. Read lines 4a, 4c, 7 ($184,500), 8a to 13 and Part II optional-method amounts ($7,560, $8,186, 72.189%). | https://www.irs.gov/pub/irs-pdf/f1040sse.pdf | 2026-11-13 |
-| Instructions for Schedule SE (Form 1040) 2026. Read What's New (2026 maximum $184,500) and the optional-method conditions. | https://www.irs.gov/pub/irs-pdf/i1040sse.pdf | 2026-11-13 |
-| Schedule C (Form 1040) 2026. Read lines 1 to 32, line 27a (Form 7205) and Part V to line 27b. | https://www.irs.gov/pub/irs-pdf/f1040sc.pdf | 2026-11-13 |
-| IRS Pub. 15 (2026). Read the social security wage base ($184,500) and the 6.2% and 1.45% employee rates. | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-13 |
-| 26 U.S.C. 1401 (govinfo). Read (a) 12.4%, (b)(1) 2.9%, (b)(2) 0.9%, the thresholds and (b)(2)(B) reduction by wages. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm | 2026-11-13 |
-| 26 U.S.C. 1402 (govinfo). Read (a)(12) deduction in computing net earnings and (b) the $400 floor. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm | 2026-11-13 |
-| 26 U.S.C. 164(f) (govinfo). Read the one-half deduction, excluding the 1401(b)(2) tax. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec164.htm | 2026-11-13 |
-| 26 U.S.C. 280A(c)(5) (govinfo). Read the gross income limit and carryforward. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm | 2026-11-13 |
-| Rev. Proc. 2013-13. Read section 4.01: $5 rate, 300 square feet. | https://www.irs.gov/pub/irs-drop/rp-13-13.pdf | 2026-11-13 |
-| IRS standard mileage rates page. Read 2026 business rates: 72.5 cents (1 Jan to 30 Jun, IR-2025-128) and 76 cents (1 Jul to 31 Dec, IR-2026-29). | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-13 |
-| Form 1040-ES (2026). Read the four 2026 payment due dates. | https://www.irs.gov/pub/irs-pdf/f1040es.pdf | 2026-11-13 |
+| Schedule SE (Form 1040) 2026. Read for lines 4a, 4c, 7 ($184,500), 8a to 13 and Part II optional-method amounts ($7,560, $8,186, 72.189%). | https://www.irs.gov/pub/irs-pdf/f1040sse.pdf | 2026-11-13 |
+| Instructions for Schedule SE (Form 1040) 2026. Read for What's New (2026 maximum $184,500) and the optional-method conditions. | https://www.irs.gov/pub/irs-pdf/i1040sse.pdf | 2026-11-13 |
+| Schedule C (Form 1040) 2026. Read for lines 1 to 32, line 27a (Form 7205) and Part V to line 27b. | https://www.irs.gov/pub/irs-pdf/f1040sc.pdf | 2026-11-13 |
+| IRS Pub. 15 (2026). Read for the social security wage base ($184,500) and the 6.2% and 1.45% employee rates. | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-13 |
+| 26 U.S.C. 1401 (govinfo). Read for (a) 12.4%, (b)(1) 2.9%, (b)(2) 0.9%, the thresholds and (b)(2)(B) reduction by wages. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm | 2026-11-13 |
+| 26 U.S.C. 1402 (govinfo). Read for (a)(12) deduction in computing net earnings and (b) the $400 floor. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm | 2026-11-13 |
+| 26 U.S.C. 164(f) (govinfo). Read for the one-half deduction, excluding the 1401(b)(2) tax. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec164.htm | 2026-11-13 |
+| 26 U.S.C. 280A(c)(5) (govinfo). Read for the gross income limit and carryforward. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm | 2026-11-13 |
+| Rev. Proc. 2013-13. Read for section 4.01: $5 rate, 300 square feet. | https://www.irs.gov/pub/irs-drop/rp-13-13.pdf | 2026-11-13 |
+| IRS standard mileage rates page. Read for 2026 business rates: 72.5 cents (1 Jan to 30 Jun, IR-2025-128) and 76 cents (1 Jul to 31 Dec, IR-2026-29). | https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-13 |
+| Form 1040-ES (2026). Read for the four 2026 payment due dates. | https://www.irs.gov/pub/irs-pdf/f1040es.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 instructions for Form 8829 and Form 8959 were not yet published when read; the Form 8959 method above is taken from 26 U.S.C. 1401(b)(2)(B), and Form 8959 line numbers are not quoted for that reason.
