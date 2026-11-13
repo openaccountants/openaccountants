@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2163,
+ "count": 2157,
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
@@ -276,10 +276,6 @@
   },
   {
    "name": "nc-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nd-corporate-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -930,15 +926,6 @@
    "tax_year": 2026
   },
   {
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "al-payroll-withholding",
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/al-payroll-withholding.md",
@@ -991,15 +978,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
-  },
-  {
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
   },
   {
    "name": "alabama-transfer-pricing",
@@ -1360,24 +1338,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "arizona-sales-tax",
-   "jurisdiction": "US-AR",
-   "path": "skills/us/states/ar/arizona-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "arkansas-sales-tax",
-   "jurisdiction": "US-AR",
-   "path": "skills/us/states/ar/arkansas-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "armenia-income-tax",
@@ -4618,24 +4578,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "colorado-sales-tax",
-   "jurisdiction": "US-CO",
-   "path": "skills/us/states/co/colorado-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "connecticut-sales-tax",
-   "jurisdiction": "US-CO",
-   "path": "skills/us/states/co/connecticut-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "construction-sector",
@@ -9021,15 +8963,6 @@
    "tax_year": 2025
   },
   {
-   "name": "idaho-sales-tax",
-   "jurisdiction": "US-ID",
-   "path": "skills/us/states/id/idaho-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "ie-cat",
    "jurisdiction": "IE",
    "path": "skills/ireland/ie-cat.md",
@@ -9586,15 +9519,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "indiana-sales-tax",
-   "jurisdiction": "US-IN",
-   "path": "skills/us/states/in/indiana-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "indonesia-vat",
@@ -11541,15 +11465,6 @@
    "tax_year": 2026
   },
   {
-   "name": "massachusetts-sales-tax",
-   "jurisdiction": "US-MA",
-   "path": "skills/us/states/ma/massachusetts-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "mauritius-vat",
    "jurisdiction": "MU",
    "path": "skills/mauritius/mauritius-vat.md",
@@ -12012,33 +11927,6 @@
    "name": "mi-sales-tax",
    "jurisdiction": "US-MI",
    "path": "skills/us/states/mi/mi-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "minnesota-sales-tax",
-   "jurisdiction": "US-MN",
-   "path": "skills/us/states/mn/minnesota-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "mississippi-sales-tax",
-   "jurisdiction": "US-MS",
-   "path": "skills/us/states/ms/mississippi-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "missouri-sales-tax",
-   "jurisdiction": "US-MO",
-   "path": "skills/us/states/mo/missouri-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13287,6 +13175,15 @@
    "tax_year": 2025
   },
   {
+   "name": "nd-corporate-tax",
+   "jurisdiction": "US-ND",
+   "path": "skills/us/states/nd/nd-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "nd-cross-border-tax",
    "jurisdiction": "US-ND",
    "path": "skills/us/states/nd/nd-cross-border-tax.md",
@@ -13530,15 +13427,6 @@
    "tax_year": 2026
   },
   {
-   "name": "nevada-sales-tax",
-   "jurisdiction": "US-NV",
-   "path": "skills/us/states/nv/nevada-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "new-jersey-sales-tax",
    "jurisdiction": "US-NJ",
    "path": "skills/us/states/nj/new-jersey-sales-tax.md",
@@ -13546,15 +13434,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "new-mexico-sales-tax",
-   "jurisdiction": "US-NM",
-   "path": "skills/us/states/nm/new-mexico-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "new-york-sales-tax",
@@ -14538,15 +14417,6 @@
    "tax_year": 2025
   },
   {
-   "name": "oklahoma-sales-tax",
-   "jurisdiction": "US-OK",
-   "path": "skills/us/states/ok/oklahoma-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "om-company-formation",
    "jurisdiction": "OM",
    "path": "skills/oman/om-company-formation.md",
@@ -15346,6 +15216,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "pr-individual-income-tax",
+   "jurisdiction": "PR",
+   "path": "skills/puerto-rico/pr-individual-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "pr-self-employment-tax-2025",
@@ -18696,6 +18575,15 @@
    "tax_year": 2026
   },
   {
+   "name": "us-529-and-trump-accounts",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-529-and-trump-accounts.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-amended-return-form-1040-including-capital",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-amended-return-form-1040-including-capital.md",
@@ -18930,6 +18818,15 @@
    "tax_year": 2025
   },
   {
+   "name": "us-form-1040-nr-nonresident-return",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-1040-nr-nonresident-return.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-form-1041-trust-and-estate-income",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-form-1041-trust-and-estate-income.md",
@@ -18945,7 +18842,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-1120-c-corp",
@@ -18954,7 +18851,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-form-1120-s-s-corporation-return",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-1120-s-s-corporation-return.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-form-5471-cfc-information",
@@ -18963,7 +18869,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-5472-foreign-owned-us",
@@ -18972,7 +18878,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-941-940-payroll",
@@ -18981,7 +18887,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-gaap-asc606-revenue",
@@ -19038,9 +18944,27 @@
    "tax_year": 2026
   },
   {
+   "name": "us-installment-sale-6252",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-installment-sale-6252.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-irs-collections-and-controversy",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-irs-collections-and-controversy.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-itin-form-w-7",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-itin-form-w-7.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19059,6 +18983,24 @@
    "name": "us-multi-state-residency-and-allocation",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-multi-state-residency-and-allocation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-net-operating-loss-172",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-net-operating-loss-172.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-new-deductions-tips-overtime-senior-car-loan",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-new-deductions-tips-overtime-senior-car-loan.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19134,7 +19076,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-quarterly-estimated-tax",
@@ -19143,7 +19085,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-r-and-d-section-174-and-41",
@@ -19170,7 +19112,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-sales-tax",
@@ -19197,7 +19139,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-schedule-e-rental-income",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-schedule-e-rental-income.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-section-1031-like-kind-exchange",
@@ -19266,6 +19217,15 @@
    "name": "us-state-bonus-depreciation-conformity-matrix",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-state-bonus-depreciation-conformity-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-state-estate-and-inheritance-tax-matrix",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-state-estate-and-inheritance-tax-matrix.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19356,15 +19316,6 @@
    "name": "ut-sales-tax",
    "jurisdiction": "US-UT",
    "path": "skills/us/states/ut/ut-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "utah-sales-tax",
-   "jurisdiction": "US-UT",
-   "path": "skills/us/states/ut/utah-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19878,15 +19829,6 @@
    "name": "wy-sales-tax",
    "jurisdiction": "US-WY",
    "path": "skills/us/states/wy/wy-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "wyoming-sales-tax",
-   "jurisdiction": "US-WY",
-   "path": "skills/us/states/wy/wyoming-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
