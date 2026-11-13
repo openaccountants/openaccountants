@@ -1,6 +1,8 @@
 """Safety withdrawal is not permission to publish oversized changed guidance."""
 import builtins
 import contextlib
+import gzip
+import hashlib
 import importlib.util
 import io
 import subprocess
@@ -96,12 +98,21 @@ class ProtectiveHold(unittest.TestCase):
 
     def test_exact_historical_za_flag_passes_actual_validator_main_with_legacy_warnings(self):
         rel = "skills/south-africa/za-vat-return.md"
-        try:
-            old = subprocess.check_output(["git", "show", "b565a49a68d4761bb2cc6b410922bfd2221e214b:" + rel], cwd=ROOT).decode()
-        except subprocess.CalledProcessError:
-            self.skipTest("The historical ZA regression needs full Git history, as CI checks out")
+        # Preserve the real pre-hold bytes without depending on clone depth or
+        # today's main, which now correctly contains the protective flag.
+        old_bytes = gzip.decompress((Path(__file__).parent / "fixtures" / "za-vat-return-before-source-hold.md.gz").read_bytes())
+        self.assertEqual(hashlib.sha256(old_bytes).hexdigest(),
+                         "2bc2ed41aebf88283c5ce284420e4452a9dd251c397a3d65b5a4622b6c998fce")
+        old = old_bytes.decode("utf-8")
         new = old.replace("name: za-vat-return\n", "name: za-vat-return\nstatus: needs_sources\n", 1)
         original_open, original_size, original_bytes = builtins.open, vg.os.path.getsize, Path.read_bytes
+        original_run = vg.subprocess.run
+
+        def historical_base(args, *positional, **kwargs):
+            if list(args) == ["git", "show", f"origin/main:{rel}"]:
+                return SimpleNamespace(stdout=old if kwargs.get("text") else old_bytes,
+                                       stderr="" if kwargs.get("text") else b"", returncode=0)
+            return original_run(args, *positional, **kwargs)
 
         def read(file, *args, **kwargs):
             if str(file) == str(ROOT / rel):
@@ -117,6 +128,7 @@ class ProtectiveHold(unittest.TestCase):
         log = io.StringIO()
         with patch.object(vg, "added_or_edited_vs_main", return_value=[rel]), \
              patch.object(vg, "changed_files_vs_main", return_value=[rel]), \
+             patch.object(vg.subprocess, "run", side_effect=historical_base), \
              patch.object(builtins, "open", side_effect=read), patch.object(vg.os.path, "getsize", side_effect=size), \
              patch.object(Path, "read_bytes", raw), \
              patch.object(sys, "argv", ["validate-guides.py", "--changed-only", "--no-index-check"]), \
