@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,259 AI skills across 256 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,265 AI skills across 256 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2196 distinct MCP names)
+## Skill inventory (2202 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -1634,8 +1634,11 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - pt-return-assembly | PT | tier 2 | reviewed_by -
 - pt-social-contributions | PT | tier 2 | reviewed_by -
 - pt-transfer-pricing | PT | tier 2 | reviewed_by -
+- pr-act-60-incentives | PR | tier 2 | reviewed_by -
 - pr-company-income-tax | PR | tier 2 | reviewed_by -
 - pr-federal-residence-and-filing | PR | tier 2 | reviewed_by -
+- pr-individual-income-tax | PR | tier 2 | reviewed_by -
+- pr-ivu-sales-and-use-tax | PR | tier 2 | reviewed_by -
 - pr-self-employment-tax-2025 | PR | tier 2 | reviewed_by -
 - qa-company-formation | QA | tier 2 | reviewed_by -
 - qa-corporate-income-tax | QA | tier 2 | reviewed_by -
@@ -2078,10 +2081,12 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-1099-nec-issuance | US | tier 2 | reviewed_by -
 - us-1120-corporation-return-schedule-ordinary-business | US | tier 2 | reviewed_by -
 - us-2026-federal-tax-changes | US | tier 2 | reviewed_by -
+- us-529-and-trump-accounts | US | tier 2 | reviewed_by -
 - us-amended-return-form-1040-including-capital | US | tier 2 | reviewed_by -
 - us-augusta-rule-home-rental-to-your-business | US | tier 2 | reviewed_by -
 - us-cfc-gilti | US | tier 2 | reviewed_by -
 - us-charitable-giving-strategies | US | tier 2 | reviewed_by -
+- us-child-tax-credit-and-eitc | US | tier 2 | reviewed_by -
 - us-corporate-extension-form-7004-and-the | US | tier 2 | reviewed_by -
 - us-crypto-income-events | US | tier 2 | reviewed_by -
 - us-crypto-reporting | US | tier 2 | reviewed_by -
@@ -2101,19 +2106,29 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-foreign-tax-credit-1116 | US | tier 2 | reviewed_by -
 - us-foreign-trust-reporting | US | tier 2 | reviewed_by -
 - us-form-1040-individual-return | US | tier 1 | reviewed_by Christopher Aryee
+- us-form-1040-nr-nonresident-return | US | tier 2 | reviewed_by -
 - us-form-1041-trust-and-estate-income | US | tier 2 | reviewed_by -
 - us-form-1065-partnership | US | tier 2 | reviewed_by -
 - us-form-1120-c-corp | US | tier 2 | reviewed_by -
+- us-form-1120-s-s-corporation-return | US | tier 2 | reviewed_by -
 - us-form-5471-cfc-information | US | tier 2 | reviewed_by -
 - us-form-5472-foreign-owned-us | US | tier 2 | reviewed_by -
+- us-form-8832-entity-classification | US | tier 2 | reviewed_by -
+- us-form-8865-foreign-partnership | US | tier 2 | reviewed_by -
 - us-form-941-940-payroll | US | tier 2 | reviewed_by -
 - us-gilti-fdii-beat | US | tier 2 | reviewed_by -
 - us-hiring-your-children-and-accountable-plans | US | tier 2 | reviewed_by -
+- us-installment-sale-6252 | US | tier 2 | reviewed_by -
 - us-irs-collections-and-controversy | US | tier 2 | reviewed_by -
+- us-itin-form-w-7 | US | tier 2 | reviewed_by -
+- us-local-income-tax-matrix | US | tier 2 | reviewed_by -
 - us-multi-state-residency-and-allocation | US | tier 2 | reviewed_by -
+- us-net-operating-loss-172 | US | tier 2 | reviewed_by -
+- us-new-deductions-tips-overtime-senior-car-loan | US | tier 2 | reviewed_by -
 - us-nft-tax | US | tier 2 | reviewed_by -
 - us-opportunity-zones | US | tier 2 | reviewed_by -
 - us-pl-86-272-income-tax-nexus | US | tier 2 | reviewed_by -
+- us-premium-tax-credit-8962 | US | tier 2 | reviewed_by -
 - us-pte-state-matrix | US | tier 2 | reviewed_by -
 - us-qbi-deduction | US | tier 2 | reviewed_by -
 - us-quarterly-estimated-tax | US | tier 2 | reviewed_by -
@@ -2123,6 +2138,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-sales-tax-nexus-50-state-matrix | US | tier 2 | reviewed_by -
 - us-sales-tax | US | tier 2 | reviewed_by -
 - us-schedule-c-and-se-computation | US | tier 2 | reviewed_by -
+- us-schedule-e-rental-income | US | tier 2 | reviewed_by -
 - us-section-1031-like-kind-exchange | US | tier 2 | reviewed_by -
 - us-section-1202-qsbs | US | tier 2 | reviewed_by -
 - us-section-179-and-bonus-depreciation | US | tier 2 | reviewed_by -
@@ -2131,25 +2147,24 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-self-employed-retirement | US | tier 2 | reviewed_by -
 - us-sole-prop-bookkeeping | US | tier 2 | reviewed_by -
 - us-state-bonus-depreciation-conformity-matrix | US | tier 2 | reviewed_by -
+- us-state-estate-and-inheritance-tax-matrix | US | tier 2 | reviewed_by -
 - us-state-estimated-tax-safe-harbors-matrix | US | tier 2 | reviewed_by -
 - us-state-formation-matrix | US | tier 2 | reviewed_by -
 - us-state-new-hire-reporting-matrix | US | tier 2 | reviewed_by -
 - us-state-payroll-matrix | US | tier 2 | reviewed_by -
 - us-tax-return-review-supporting-documents-findings | US | tier 2 | reviewed_by -
+- ak-corporate-tax | US-AK | tier 2 | reviewed_by -
+- ak-payroll | US-AK | tier 2 | reviewed_by -
 - ak-sales-tax | US-AK | tier 2 | reviewed_by -
 - al-corporate-income-tax | US-AL | tier 2 | reviewed_by -
-- al-income-tax | US-AL | tier 2 | reviewed_by -
 - al-payroll-withholding | US-AL | tier 2 | reviewed_by -
 - al-sales-tax | US-AL | tier 2 | reviewed_by -
 - al-unemployment-contributions | US-AL | tier 2 | reviewed_by -
 - alabama-cross-border | US-AL | tier 2 | reviewed_by -
 - alabama-income-tax | US-AL | tier 2 | reviewed_by -
-- alabama-sales-tax | US-AL | tier 2 | reviewed_by -
 - alabama-transfer-pricing | US-AL | tier 2 | reviewed_by -
 - ar-income-tax | US-AR | tier 2 | reviewed_by -
 - ar-sales-tax | US-AR | tier 2 | reviewed_by -
-- arizona-sales-tax | US-AR | tier 2 | reviewed_by -
-- arkansas-sales-tax | US-AR | tier 2 | reviewed_by -
 - az-income-tax | US-AZ | tier 2 | reviewed_by -
 - az-sales-tax | US-AZ | tier 2 | reviewed_by -
 - az-transaction-privilege-tax | US-AZ | tier 2 | reviewed_by -
@@ -2171,8 +2186,6 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - co-income-tax | US-CO | tier 2 | reviewed_by -
 - co-retail-delivery-and-suts | US-CO | tier 2 | reviewed_by -
 - co-sales-tax | US-CO | tier 2 | reviewed_by -
-- colorado-sales-tax | US-CO | tier 2 | reviewed_by -
-- connecticut-sales-tax | US-CO | tier 2 | reviewed_by -
 - ct-income-tax | US-CT | tier 2 | reviewed_by -
 - ct-sales-tax | US-CT | tier 2 | reviewed_by -
 - dc-income-tax | US-DC | tier 2 | reviewed_by -
@@ -2202,12 +2215,10 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - ia-income-tax | US-IA | tier 2 | reviewed_by -
 - ia-sales-tax | US-IA | tier 2 | reviewed_by -
 - id-sales-tax | US-ID | tier 2 | reviewed_by -
-- idaho-sales-tax | US-ID | tier 2 | reviewed_by -
 - il-estimated-tax | US-IL | tier 2 | reviewed_by -
 - il-pprt | US-IL | tier 2 | reviewed_by -
 - illinois-sales-tax | US-IL | tier 2 | reviewed_by -
 - in-sales-tax | US-IN | tier 2 | reviewed_by -
-- indiana-sales-tax | US-IN | tier 2 | reviewed_by -
 - ks-corporate-income-tax | US-KS | tier 2 | reviewed_by -
 - ks-cross-border | US-KS | tier 2 | reviewed_by -
 - ks-income-tax | US-KS | tier 2 | reviewed_by -
@@ -2221,7 +2232,6 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - la-sales-tax | US-LA | tier 2 | reviewed_by -
 - ma-income-tax | US-MA | tier 2 | reviewed_by -
 - ma-sales-tax | US-MA | tier 2 | reviewed_by -
-- massachusetts-sales-tax | US-MA | tier 2 | reviewed_by -
 - md-income-tax | US-MD | tier 2 | reviewed_by -
 - md-sales-tax | US-MD | tier 2 | reviewed_by -
 - me-income-tax | US-ME | tier 2 | reviewed_by -
@@ -2233,13 +2243,10 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - mi-pension-retirement-subtraction | US-MI | tier 2 | reviewed_by -
 - mi-return-assembly | US-MI | tier 2 | reviewed_by -
 - mi-sales-tax | US-MI | tier 2 | reviewed_by -
-- minnesota-sales-tax | US-MN | tier 2 | reviewed_by -
 - mn-income-tax | US-MN | tier 2 | reviewed_by -
 - mn-sales-tax | US-MN | tier 2 | reviewed_by -
-- missouri-sales-tax | US-MO | tier 2 | reviewed_by -
 - mo-income-tax | US-MO | tier 2 | reviewed_by -
 - mo-sales-tax | US-MO | tier 2 | reviewed_by -
-- mississippi-sales-tax | US-MS | tier 2 | reviewed_by -
 - ms-income-tax | US-MS | tier 2 | reviewed_by -
 - ms-sales-tax | US-MS | tier 2 | reviewed_by -
 - mt-income-tax | US-MT | tier 2 | reviewed_by -
@@ -2249,6 +2256,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - nc-payroll | US-NC | tier 2 | reviewed_by -
 - nc-return-assembly | US-NC | tier 2 | reviewed_by -
 - nc-sales-tax | US-NC | tier 2 | reviewed_by -
+- nd-corporate-tax | US-ND | tier 2 | reviewed_by -
 - nd-cross-border-tax | US-ND | tier 2 | reviewed_by -
 - nd-estimated-tax | US-ND | tier 2 | reviewed_by -
 - nd-income-tax | US-ND | tier 2 | reviewed_by -
@@ -2266,10 +2274,8 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - nj-income-tax | US-NJ | tier 2 | reviewed_by -
 - nj-payroll | US-NJ | tier 2 | reviewed_by -
 - nj-sales-tax | US-NJ | tier 2 | reviewed_by -
-- new-mexico-sales-tax | US-NM | tier 2 | reviewed_by -
 - nm-income-tax | US-NM | tier 2 | reviewed_by -
 - nm-sales-tax | US-NM | tier 2 | reviewed_by -
-- nevada-sales-tax | US-NV | tier 2 | reviewed_by -
 - nv-commerce-and-mbt | US-NV | tier 2 | reviewed_by -
 - nv-commerce-tax | US-NV | tier 2 | reviewed_by -
 - nv-formation | US-NV | tier 2 | reviewed_by -
@@ -2292,11 +2298,11 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - oh-cat-tax | US-OH | tier 2 | reviewed_by -
 - oh-cat | US-OH | tier 2 | reviewed_by -
 - oh-income-tax | US-OH | tier 2 | reviewed_by -
+- oh-payroll | US-OH | tier 2 | reviewed_by -
 - oh-sales-tax | US-OH | tier 2 | reviewed_by -
 - ohio-sales-tax | US-OH | tier 2 | reviewed_by -
 - ok-income-tax | US-OK | tier 2 | reviewed_by -
 - ok-sales-tax | US-OK | tier 2 | reviewed_by -
-- oklahoma-sales-tax | US-OK | tier 2 | reviewed_by -
 - or-cat | US-OR | tier 2 | reviewed_by -
 - or-income-tax | US-OR | tier 2 | reviewed_by -
 - pa-income-tax | US-PA | tier 2 | reviewed_by -
@@ -2319,10 +2325,11 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-tx-return-assembly | US-TX | tier 2 | reviewed_by -
 - ut-income-tax | US-UT | tier 2 | reviewed_by -
 - ut-sales-tax | US-UT | tier 2 | reviewed_by -
-- utah-sales-tax | US-UT | tier 2 | reviewed_by -
 - va-income-tax | US-VA | tier 2 | reviewed_by -
 - va-sales-tax | US-VA | tier 2 | reviewed_by -
+- vt-corporate-tax | US-VT | tier 2 | reviewed_by -
 - vt-income-tax | US-VT | tier 2 | reviewed_by -
+- vt-payroll | US-VT | tier 2 | reviewed_by -
 - vt-sales-tax | US-VT | tier 2 | reviewed_by -
 - wa-b-and-o-tax | US-WA | tier 2 | reviewed_by -
 - wa-bo-tax | US-WA | tier 2 | reviewed_by -
@@ -2336,7 +2343,6 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - wv-sales-tax | US-WV | tier 2 | reviewed_by -
 - wy-formation | US-WY | tier 2 | reviewed_by -
 - wy-sales-tax | US-WY | tier 2 | reviewed_by -
-- wyoming-sales-tax | US-WY | tier 2 | reviewed_by -
 - us-capital-gains | US | tier 2 | reviewed_by -
 - us-nonresident-cgt | US | tier 2 | reviewed_by -
 - us-tax-residency | US | tier 2 | reviewed_by -
