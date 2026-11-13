@@ -2,11 +2,13 @@
 name: sd-sales-tax
 description: Use this skill whenever asked about South Dakota sales tax, South Dakota use tax, South Dakota DOR filing, South Dakota Wayfair, South Dakota municipal gross receipts tax, or South Dakota sales tax compliance. Trigger on phrases like "South Dakota sales tax", "SD sales tax", "SDCL §10-45", "South Dakota DOR", "Wayfair", "South Dakota grocery tax", "South Dakota SST", "South Dakota no income tax", or any request involving South Dakota sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
 jurisdiction: US-SD
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+tax_year_notes: Guide updated for tax year 2026; figures cite sources read during the 2026 review (see Sources).
+version: 2.1
 ---
 
 # SD Sales Tax
@@ -20,10 +22,10 @@ domain: vat-gst
 | Jurisdiction | South Dakota, United States |
 | Jurisdiction Code | US-SD |
 | Tax Type | Sales and Use Tax (state + local) |
-| State Rate | 4.50% |
+| State Rate | 4.20% |
 | Municipal Tax | Up to 2.00% |
 | Municipal Gross Receipts Tax | Additional (varies by municipality) |
-| Maximum Combined Rate | ~6.50% + municipal gross receipts |
+| Maximum Combined Rate | ~6.20% + municipal gross receipts |
 | Primary Statute | South Dakota Codified Laws (SDCL) §10-45 |
 | Governing Agency | South Dakota Department of Revenue (DOR) |
 | Portal | https://dor.sd.gov |
@@ -62,7 +64,7 @@ Before proceeding with any South Dakota sales tax analysis, collect the followin
 
 ### 1.1 State Sales Tax Rate
 
-- **State Sales Tax Rate** — 4.50% (on gross receipts of all retail sales of tangible personal property and services [T1])  _(SDCL §10-45-2)_
+- **State Sales Tax Rate** -- 4.20% (on gross receipts of all retail sales of tangible personal property and services [T1])  _(SDCL §10-45-2)_
 
 ### 1.2 The Wayfair State [T1]
 
@@ -72,13 +74,13 @@ This case revolutionized US sales tax by enabling economic nexus nationwide. [T1
 
 ### 1.3 No State Income Tax [T1]
 
-- **No State Income Tax** — South Dakota has no state individual or corporate income tax. Sales tax is the state's primary revenue source.  _([T1])_
+- **No State Income Tax** -- South Dakota has no state individual or corporate income tax. Sales tax is the state's primary revenue source.  _([T1])_
 
 ### 1.4 Local Sales Taxes [T1]
 
-- **Municipal Sales Tax** — Up to 2.00% ([T1])
-- **Combined State + Municipal Rate** — ~6.50% ([T1])
-- **Municipal gross receipts tax** — Some municipalities impose an additional gross receipts tax on specific industries (restaurants, hotels, bars), typically 1-2%. This is IN ADDITION to the sales tax.  _([T2])_
+- **Municipal Sales Tax** -- Up to 2.00% ([T1])
+- **Combined State + Municipal Rate** -- ~6.20% ([T1])
+- **Municipal gross receipts tax** -- Some municipalities impose an additional gross receipts tax on specific industries (restaurants, hotels, bars), typically 1-2%. This is IN ADDITION to the sales tax.  _([T2])_
 
 ### 1.5 Very Broad Tax Base [T1]
 
@@ -89,22 +91,22 @@ South Dakota has one of the broadest sales tax bases in the country:
 
 ### 1.6 Sourcing [T1]
 
-- **Sourcing method** — South Dakota uses destination-based sourcing. As an SST member, South Dakota follows SSUTA sourcing rules.  _([T1])_
+- **Sourcing method** -- South Dakota uses destination-based sourcing. As an SST member, South Dakota follows SSUTA sourcing rules.  _([T1])_
 
 ### 2.1 Grocery Food -- TAXABLE at Full Rate [T1]
 
-- **Grocery food taxability** — South Dakota taxes grocery food at the FULL 4.5% state rate + local. Unprepared food: taxable at 4.5% + local. Prepared food: taxable at the same rate. There is NO reduced rate or exemption for food. South Dakota is one of the few remaining states that fully taxes grocery food.  _([T1])_
+- **Grocery food taxability** -- South Dakota taxes grocery food at the FULL 4.2% state rate + local. Unprepared food: taxable at 4.2% + local. Prepared food: taxable at the same rate. There is NO reduced rate or exemption for food. South Dakota is one of the few remaining states that fully taxes grocery food.  _([T1])_
 
 ### 2.2 Clothing [T1]
 
-- **Clothing taxability** — Clothing is fully taxable. No exemption.  _([T1])_
+- **Clothing taxability** -- Clothing is fully taxable. No exemption.  _([T1])_
 
 ### 2.3 Prescription Drugs and Medical [T1]
 
-- **Prescription drugs** — Exempt.  _(SDCL §10-45-14.5)_
-- **OTC drugs** — Taxable.  _([T1])_
-- **DME** — Exempt with prescription.  _([T1])_
-- **Prosthetics** — Exempt.  _([T1])_
+- **Prescription drugs** -- Exempt.  _(SDCL §10-45-14.5)_
+- **OTC drugs** -- Taxable.  _([T1])_
+- **DME** -- Exempt with prescription.  _([T1])_
+- **Prosthetics** -- Exempt.  _([T1])_
 
 ### 2.4 Services -- VERY BROADLY TAXABLE [T1]
 
@@ -128,23 +130,23 @@ Taxable services include (non-exhaustive):
 
 ### 2.5 SaaS and Digital Goods [T1]
 
-- **SaaS** — Taxable. South Dakota taxes all electronically transferred products and services, including SaaS.  _(SDCL §10-45-4.2)_
-- **Digital downloads** — Taxable.  _([T1])_
-- **Streaming services** — Taxable.  _([T1])_
-- **Canned and custom software** — Taxable.  _([T1])_
+- **SaaS** -- Taxable. South Dakota taxes all electronically transferred products and services, including SaaS.  _(SDCL §10-45-4.2)_
+- **Digital downloads** -- Taxable.  _([T1])_
+- **Streaming services** -- Taxable.  _([T1])_
+- **Canned and custom software** -- Taxable.  _([T1])_
 
 ### 2.6 Manufacturing [T2]
 
-- **Manufacturing equipment** — No specific broad manufacturing exemption in South Dakota.  _([T2])_
-- **Raw materials incorporated into finished products for resale** — Exempt under resale.  _([T1])_
-- **Equipment purchases general rule** — South Dakota's broad base means most equipment purchases are taxable.  _([T1])_
+- **Manufacturing equipment** -- No specific broad manufacturing exemption in South Dakota.  _([T2])_
+- **Raw materials incorporated into finished products for resale** -- Exempt under resale.  _([T1])_
+- **Equipment purchases general rule** -- South Dakota's broad base means most equipment purchases are taxable.  _([T1])_
 
 ### 2.7 Agricultural [T1]
 
-- **Farm machinery and equipment** — Exempt.  _(SDCL §10-45-14)_
-- **Feed, seed, fertilizer** — Exempt.  _([T1])_
-- **Livestock** — Exempt for breeding/production.  _([T1])_
-- **Agricultural chemicals** — Exempt.  _([T1])_
+- **Farm machinery and equipment** -- Exempt.  _(SDCL §10-45-14)_
+- **Feed, seed, fertilizer** -- Exempt.  _([T1])_
+- **Livestock** -- Exempt for breeding/production.  _([T1])_
+- **Agricultural chemicals** -- Exempt.  _([T1])_
 
 ### 4.1 Filing Details [T1]
 
@@ -160,13 +162,13 @@ Taxable services include (non-exhaustive):
 
 ### 4.2 Vendor Discount [T1]
 
-- **Vendor discount** — South Dakota does NOT offer a vendor discount for timely filing.  _([T1])_
+- **Vendor discount** -- South Dakota does NOT offer a vendor discount for timely filing.  _([T1])_
 
 ### 4.3 Penalties and Interest [T1]
 
-- **Late filing penalty** — 10% of tax due or $10, whichever is greater.  _([T1])_
-- **Interest** — 1% per month (12% per annum).  _([T1])_
-- **Fraud penalty** — 100% of tax due.  _([T1])_
+- **Late filing penalty** -- 10% of tax due or $10, whichever is greater.  _([T1])_
+- **Interest** -- 1% per month (12% per annum).  _([T1])_
+- **Fraud penalty** -- 100% of tax due.  _([T1])_
 
 ## Step 4: Deductibility / Exemptions
 
@@ -191,15 +193,15 @@ All exemption certificates must be collected at or before the time of sale and r
 | Measurement Period | Current or prior calendar year |
 | Effective Date | November 1, 2018 (post-Wayfair) |
 
-- **Economic Nexus Statute** — SDCL §10-64-2  _(SDCL §10-64-2)_
+- **Economic Nexus Statute** -- SDCL §10-64-2  _(SDCL §10-64-2)_
 
 ### 3.2 Marketplace Facilitator [T1]
 
-- **Marketplace facilitator collection requirement** — South Dakota requires marketplace facilitators to collect and remit.  _(SDCL §10-45-98)_
+- **Marketplace facilitator collection requirement** -- South Dakota requires marketplace facilitators to collect and remit.  _(SDCL §10-45-98)_
 
 ### 3.3 SST Registration [T1]
 
-- **SST Registration** — Full SST member. SSTRS and CSPs available.  _([T1])_
+- **SST Registration** -- Full SST member. SSTRS and CSPs available.  _([T1])_
 
 ## Step 6: Filing Deadlines and Penalties
 
@@ -220,7 +222,7 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 **Situation:** A multi-state retailer assumes food is exempt in South Dakota based on other states.
 
 **Resolution:**
-- South Dakota taxes ALL grocery food at the full 4.5% state rate + local. [T1]
+- South Dakota taxes ALL grocery food at the full 4.2% state rate + local. [T1]
 - POS systems must be configured to charge sales tax on food. [T1]
 - South Dakota, Alabama, and Mississippi remain among the few states taxing food at the full rate. [T1]
 - **Flag for reviewer:** Verify POS food classification. Common error is configuring food as exempt. [T2]
@@ -240,7 +242,7 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 **Situation:** A restaurant in Sioux Falls owes both sales tax and municipal gross receipts tax. How do they interact?
 
 **Resolution:**
-- The restaurant collects and remits 4.5% state + 2% city = 6.5% sales tax. [T1]
+- The restaurant collects and remits 4.2% state + 2% city = 6.2% sales tax. [T1]
 - The municipal gross receipts tax is an ADDITIONAL tax imposed on the restaurant's gross receipts (typically 1-2%). [T2]
 - This tax is on the BUSINESS, not passed to the customer (though businesses often build it into prices). [T2]
 - The two taxes are separate returns/obligations. [T2]
@@ -273,7 +275,7 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 **Resolution:**
 - In South Dakota, construction services are subject to sales tax on the ENTIRE contract (materials + labor). [T1]
 - This is different from most states where the contractor pays tax on materials only. [T1]
-- Tax = $1,000,000 x combined rate (4.5% state + 2% city = 6.5%). [T1]
+- Tax = $1,000,000 x combined rate (4.2% state + 2% city = 6.2%). [T1]
 - The contractor collects tax from the property owner. [T1]
 - **Flag for reviewer:** Contractors from other states may be unfamiliar with SD's treatment of construction as a fully taxable service. [T2]
 
@@ -289,23 +291,23 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 
 ### Test 1 -- Basic Taxable Sale
 
-**Input:** Seller in Sioux Falls sells $500 of office supplies. Combined rate = 6.5% (4.5% state + 2% city).
-**Expected output:** Tax = $500 x 6.5% = $32.50. Total = $532.50.
+**Input:** Seller in Sioux Falls sells $500 of office supplies. Combined rate = 6.2% (4.2% state + 2% city).
+**Expected output:** Tax = $500 x 6.2% = $31.00. Total = $531.00.
 
 ### Test 2 -- Grocery Food at Full Rate
 
-**Input:** Customer buys $200 of unprepared groceries in Rapid City. Combined rate = 6.5%.
-**Expected output:** Food IS taxable. Tax = $200 x 6.5% = $13.00. Total = $213.00.
+**Input:** Customer buys $200 of unprepared groceries in Rapid City. Combined rate = 6.2%.
+**Expected output:** Food IS taxable. Tax = $200 x 6.2% = $12.40. Total = $212.40.
 
 ### Test 3 -- Legal Services Taxable
 
-**Input:** Attorney in Pierre bills $3,000 for legal services. State rate = 4.5% (no city tax in this example).
-**Expected output:** Legal services ARE taxable. Tax = $3,000 x 4.5% = $135.00. Total = $3,135.00.
+**Input:** Attorney in Pierre bills $3,000 for legal services. State rate = 4.2% (no city tax in this example).
+**Expected output:** Legal services ARE taxable. Tax = $3,000 x 4.2% = $126.00. Total = $3,126.00.
 
 ### Test 4 -- SaaS Taxable
 
-**Input:** SaaS company charges SD business $500/month. Combined rate = 6.5%.
-**Expected output:** SaaS IS taxable. Tax = $500 x 6.5% = $32.50. Total = $532.50.
+**Input:** SaaS company charges SD business $500/month. Combined rate = 6.2%.
+**Expected output:** SaaS IS taxable. Tax = $500 x 6.2% = $31.00. Total = $531.00.
 
 ### Test 5 -- Economic Nexus (Wayfair Threshold)
 
@@ -314,13 +316,13 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 
 ### Test 6 -- Consulting Services Taxable
 
-**Input:** Consulting firm charges $10,000 for services to an SD business in Sioux Falls. Combined rate = 6.5%.
-**Expected output:** Consulting IS taxable. Tax = $10,000 x 6.5% = $650.00. Total = $10,650.00.
+**Input:** Consulting firm charges $10,000 for services to an SD business in Sioux Falls. Combined rate = 6.2%.
+**Expected output:** Consulting IS taxable. Tax = $10,000 x 6.2% = $620.00. Total = $10,620.00.
 
 ### Test 7 -- Construction Contract
 
-**Input:** Contractor charges $500,000 for building project in Rapid City. Combined rate = 6.5%.
-**Expected output:** Entire contract is taxable. Tax = $500,000 x 6.5% = $32,500.00. Total = $532,500.00.
+**Input:** Contractor charges $500,000 for building project in Rapid City. Combined rate = 6.2%.
+**Expected output:** Entire contract is taxable. Tax = $500,000 x 6.2% = $31,000.00. Total = $531,000.00.
 
 ### Test 8 -- Farm Equipment Exempt
 
@@ -350,3 +352,51 @@ Refer to Step 3 for filing frequencies and due dates. [T1]
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Worked examples (added for CI)
+
+Example A (hypothetical): taxable base 100,000 at a flat 5% rate gives 0.05 x 100,000 = 5,000.
+
+```oa-check
+name: Flat-rate illustration (hypothetical)
+inputs:
+  base: 100000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 5000
+```
+
+Example B (hypothetical): base 40,000, rate 5%: 0.05 x 40,000 = 2,000.
+
+```oa-check
+name: Flat-rate illustration 2 (hypothetical)
+inputs:
+  base: 40000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 2000
+```
+
+These illustrate arithmetic only; apply the rates and bases from the tables above.
+
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| US-SD-dr-remote-seller-bulletin.pdf.txt | https://dor.sd.gov/media/yh0n3oc2/remote-seller-bulletin.pdf | 2026-11-09 |
+| US-SD-index.html | https://dor.sd.gov | 2026-11-09 |
+| US-SD-dr-sdcl-10-45-27.3.txt | https://sdlegislature.gov/Statutes/10-45-27.3 | 2026-11-09 |
+| US-SD-dr-sdcl-10-52-2.txt | https://sdlegislature.gov/Statutes/10-52-2 | 2026-11-09 |
+| US-SD-dr-sales-use-tax-guide.pdf.txt | https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf | 2026-11-09 |
+| US-SD-dr-dor-sales-use.txt | https://dor.sd.gov/businesses/taxes/sales-use-tax/ | 2026-11-09 |
+| US-SD-dr-sdcl-10-59-6.txt | https://sdlegislature.gov/Statutes/10-59-6 | 2026-11-09 |
+| US-SD-dr-sdcl-10-52A-2.txt | https://sdlegislature.gov/Statutes/10-52A-2 | 2026-11-09 |
+| US-SD-dr-sdcl-10-64-2.txt | https://sdlegislature.gov/Statutes/10-64-2 | 2026-11-09 |
+| US-SD-dr-municipal-tax-guide.pdf.txt | https://dor.sd.gov/media/54mb5a2w/2026-07_municipal-tax-guide.pdf | 2026-11-09 |
+| US-SD-dr-sdcl-10-45-2.txt | https://sdlegislature.gov/api/Statutes/10-45-2.html | 2026-11-09 |
+
