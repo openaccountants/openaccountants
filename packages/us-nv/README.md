@@ -74,13 +74,12 @@ This package contains **federal** tax skills (which apply to all US states) plus
 64. `us-tax-return-review-supporting-documents-findings.md`
 65. `us-federal-return-assembly.md`
 66. `global-router.md`
-67. `nevada-sales-tax.md`
-68. `nv-commerce-and-mbt.md`
-69. `nv-commerce-tax.md`
-70. `nv-formation.md`
-71. `nv-sales-tax.md`
-72. `workflow-base.md`
-73. `cross-border-tax-workflow-base.md`
+67. `nv-commerce-and-mbt.md`
+68. `nv-commerce-tax.md`
+69. `nv-formation.md`
+70. `nv-sales-tax.md`
+71. `workflow-base.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
