@@ -1,19 +1,21 @@
 ---
 name: us-pl-86-272-income-tax-nexus
-description: Tier 2 US federal content skill for Public Law 86-272 (15 USC §§381-384) — the federal statute that prevents states from imposing income tax on out-of-state sellers whose only activity is solicitation of tangible personal property orders shipped from out of state. Covers the 2021/2024 MTC revised statement that erodes P.L. 86-272 protection for nearly all internet-era activities (customer accounts, live chat, online reviews, post-sale service), California's FTB Legal Rulings 2022-01/02, New York's 2023 adoption, the Wisconsin v. Wrigley solicitation safe harbor, the factor-presence economic nexus model ($50k payroll, $500k receipts), and voluntary disclosure agreement processes. Tax year 2025.
+description: Public Law 86-272 (15 U.S.C. 381 to 384) for tax year 2026, the federal limit on state net income taxes for out-of-state sellers whose only in-state activity is soliciting orders for tangible goods approved and shipped from outside the state. Gives the step-by-step test (net income tax, goods only, order approval, Wrigley de minimis, independent contractors, internet activity under the 2021 MTC statement as followed by California, New York and New Jersey), then state economic nexus for income and franchise tax (California doing-business amounts, New York $1,283,000, New Jersey), throwback and throwout, and the Ohio CAT that P.L. 86-272 does not reach. Trigger on "P.L. 86-272", "Public Law 86-272", "solicitation of orders", "income tax nexus", "doing business in California", "throwback". Sales tax nexus is in us-sales-tax-nexus-50-state-matrix.
+version: "3.0"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: cross-country-method
 ---
 
 # P.L. 86-272 and state income tax nexus for out-of-state sellers
 
 ## Scope and who this is for
 
-This skill covers the federal limit on state net income taxes in Public Law 86-272, codified at [15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381), and how it interacts with state economic nexus rules for income and franchise taxes. It is for accountants deciding whether an out-of-state business must file a state income or franchise tax return.
+This skill covers the federal limit on state net income taxes in Public Law 86-272, codified at [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm), and how it interacts with state economic nexus rules for income and franchise taxes. It is for accountants deciding whether an out-of-state business must file a state income or franchise tax return.
 
 It covers:
 
@@ -41,27 +43,27 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 
 ## The method, step by step
 
-### Step 1: is the tax a net income tax? ([15 U.S.C. § 383](https://www.law.cornell.edu/uscode/text/15/383); [15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381))
+### Step 1: is the tax a net income tax? ([15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm); [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
 
 1. P.L. 86-272 applies only to a "net income tax", which the statute defines as "any tax imposed on, or measured by, net income". It binds "any State, or political subdivision thereof", so a city or county net income tax is covered too. It does not stop gross receipts taxes (for example the Ohio CAT, below), sales and use taxes, or a state's fixed minimum tax or filing requirement.
 2. It bars the tax "for any taxable year" in which the only in-state business activities are protected ones. So test each year separately.
 3. It never protects a corporation incorporated in the taxing state, or an individual domiciled in or resident in it (§ 381(b)).
 
-### Step 2: is everything sold into the state tangible personal property? ([15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381); [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf))
+### Step 2: is everything sold into the state tangible personal property? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm); [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf))
 
 4. The protection covers only "the solicitation of orders ... for sales of tangible personal property". Services, intangibles, licences, leases and rentals are outside it.
    - New York: the exemption "does not include the solicitation of orders for the sale of services or intangible property" (20 NYCRR 1-2.10(e)).
    - California: "the leasing, renting, licensing or other disposition of tangible personal property, or transactions involving intangible property ... are not protected activities" (Pub. 1050, Article I).
 5. Selling services into the state as well as goods can end the protection for the whole business in that state. In New York's Example 4, a corporation with $950,000 of protected goods receipts and $100,000 of services receipts "is subject to tax".
 
-### Step 3: are orders sent out of state for approval and filled from outside the state? ([15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381))
+### Step 3: are orders sent out of state for approval and filled from outside the state? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
 
 6. Both conditions must hold: the orders "are sent outside the State for approval or rejection, and, if approved, are filled by shipment or delivery from a point outside the State".
    - Missionary solicitation is also protected. § 381(a)(2) covers soliciting orders "in the name of or for the benefit of a prospective customer" of the seller, for example a manufacturer asking retailers to buy its goods from its wholesaler. This holds only if the customer's own orders to the seller meet the (a)(1) conditions (FTB Pub. 1050, Article IV, Section B, item 7; 20 NYCRR 1-2.10(a)(2)).
 7. Approving or accepting orders in the state is unprotected (FTB Pub. 1050, Article IV, Section A, item 8).
 8. Stock in the state ends the protection, except a supply used only as free samples in soliciting orders (20 NYCRR 1-2.10(g); Pub. 1050, Article IV, Section A, item 16(f)). This includes stock held by a marketplace at an in-state fulfilment centre (Pub. 1050, Section C(a), example 7; 20 NYCRR 1-2.10, Example 14), or a stock of goods held by an independent contractor on consignment, except goods held for display and solicitation.
 
-### Step 4: is every in-state activity solicitation, entirely ancillary to it, or de minimis? ([Wrigley, 505 U.S. 214](https://www.law.cornell.edu/supremecourt/text/505/214))
+### Step 4: is every in-state activity solicitation, entirely ancillary to it, or de minimis? ([Wrigley, 505 U.S. 214](https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf))
 
 9. The Supreme Court held that "solicitation of orders" covers, besides "any speech or conduct that explicitly or implicitly proposes a sale", "those activities that are entirely ancillary to requests for purchases—those that serve no independent business function apart from their connection to the soliciting of orders".
 10. Activities "that the company would have reason to engage in anyway but chooses to allocate to its in-state sales force are not covered".
@@ -74,7 +76,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 13. California's reading of de minimis: "An activity conducted within a taxing state on a regular or systematic basis or pursuant to a company policy (whether the policy is in writing or not) normally will not be considered trivial" ([FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article III).
 14. **Do not quote any de minimis dollar or percentage safe harbour.** Neither the statute nor Wrigley sets one.
 
-### Step 5: are the people acting in the state employees, representatives or independent contractors? ([15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381))
+### Step 5: are the people acting in the state employees, representatives or independent contractors? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
 
 15. Sales of, or soliciting orders for, tangible personal property by **independent contractors**, and an office they maintain, do not count as the seller's business activities. The office rule applies only where the contractors' activities for the seller in the state "consist solely of making sales, or soliciting orders for sales" of tangible personal property (§ 381(c)). But an "independent contractor" must sell or solicit "for more than one principal" and hold itself out as such (§ 381(d)(1)). A rep working for one principal is a "representative", not an independent contractor.
 16. An independent contractor who does unprotected work for the seller, such as warranty work or accepting returns, ends the protection (FTB Pub. 1050, Article V).
@@ -133,7 +135,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 | California franchise/income tax: sales | 2025 | CA sales **exceed** $757,070 or 25% of total sales | [FTB](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
 | California: property; payroll | 2025 | Each **exceeds** $75,707 or 25% of the total | same |
 | California: sales; property and payroll | 2024 | $735,019; $73,502 | same |
-| California | 2026 | Not yet posted on the FTB page (last updated 7 November 2025). **Check.** | same |
+| California | 2026 | Not yet posted on the FTB page when read on 13 November 2026 (the `ca-llc-fee-and-tax` and `ca-formation` skills read the same). **Check.** | same |
 | California statute | from 2011 | Sales "exceed the lesser of" $500,000 or 25% of total sales; property or payroll "exceed the lesser of" $50,000 or 25% of the total; amounts indexed every year; include distributive shares of partnerships and S corporations | [R&TC § 23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101) |
 | New York Article 9-A | tax years beginning 2024 to 2026 | NY receipts of $1,283,000 **or more** | [NY](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
 | New York unitary group | tax years beginning 2024 to 2026 | only members with $12,000 **or more** of NY receipts count toward the group total | same |
@@ -157,7 +159,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 
 | Situation | Result | Source |
 |---|---|---|
-| Foreign corporation, only activity is reps asking for orders for goods, approved and shipped from outside | Protected from net income tax | [15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381) |
+| Foreign corporation, only activity is reps asking for orders for goods, approved and shipped from outside | Protected from net income tax | [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm) |
 | Corporation incorporated in the taxing state, or an individual resident or domiciled there | Never protected | same, § 381(b) |
 | Any services, SaaS, licences or intangibles sold into the state | Not protected; in NY, $100,000 of services beside $950,000 of goods ended the exemption (Example 4) | [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | Unprotected activity at any time in the year | California: not protected "for the entirety of that year" | [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article VII.D |
@@ -167,7 +169,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 | Rep's home office held out to the public | NY and CA: treated as an office; protection lost | same; [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf) |
 | Employee telecommuting from the state doing non-solicitation work | California: unprotected | [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article IV.A item 20 |
 | Sales into foreign countries | California: P.L. 86-272 "does not directly apply to foreign commerce" | same, Article VII.A |
-| Gross receipts tax (e.g. Ohio CAT) | Not a net income tax; P.L. 86-272 does not apply | [15 U.S.C. § 383](https://www.law.cornell.edu/uscode/text/15/383) |
+| Gross receipts tax (e.g. Ohio CAT) | Not a net income tax; P.L. 86-272 does not apply | [15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm) |
 | Protected but registered or with nexus in NJ | NJ minimum tax and return still due | [NJ TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf) |
 
 ## Worked cases
@@ -212,6 +214,40 @@ These cases use hypothetical amounts. Each is for tax year 2026 unless it says o
 - A Michigan seller of goods, protected by P.L. 86-272 in Ohio, has $7,000,000 of Ohio taxable gross receipts in 2026.
 - It has bright-line presence ($500,000 or more of Ohio sales), and its receipts are over the $6 million exclusion, so it owes the CAT. P.L. 86-272 does not help, because the CAT is not a net income tax.
 
+Cases 3 and 6 recomputed:
+
+```oa-check
+name: California lesser-of doing-business test, SaaS seller (2025 amounts)
+inputs:
+  total_sales: 2400000
+  ca_sales: 700000
+  ca_dollar_amount: 757070
+steps:
+  - pct_amount: total_sales * 0.25
+  - lesser: min(ca_dollar_amount, pct_amount)
+  - margin: ca_sales - lesser
+expected:
+  pct_amount: 600000
+  lesser: 600000
+  margin: 100000
+```
+
+A positive margin means California sales exceed the lesser amount: doing business in California.
+
+```oa-check
+name: Ohio CAT exclusion, protected goods seller (2026)
+inputs:
+  ohio_receipts: 7000000
+  exclusion: 6000000
+  bright_line_sales: 500000
+steps:
+  - presence_margin: ohio_receipts - bright_line_sales
+  - over_exclusion: max(ohio_receipts - exclusion, 0)
+expected:
+  presence_margin: 6500000
+  over_exclusion: 1000000
+```
+
 ## 2025 returns ([FTB doing business](https://www.ftb.ca.gov/file/business/doing-business-in-california.html); [NY deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm); [Ohio CAT](https://tax.ohio.gov/business/commercial-activity-tax))
 
 - California 2025: sales $757,070, property and payroll $75,707 each (or 25% of the total).
@@ -237,7 +273,7 @@ These cases use hypothetical amounts. Each is for tax year 2026 unless it says o
 - **California:** a protected business may still be doing business in California and liable for filing and paying the applicable amounts. **Check the return and minimum tax with the FTB.**
 - **Penalties and interest** for late or missed returns are set by each state. Where nexus existed in earlier open years, quantify tax, interest and penalties year by year before choosing between voluntary disclosure and filing.
 
-## Completion checklist ([15 U.S.C. § 381](https://www.law.cornell.edu/uscode/text/15/381); [Wrigley](https://www.law.cornell.edu/supremecourt/text/505/214))
+## Completion checklist ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm); [Wrigley](https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf))
 
 - [ ] Year-by-year list of every in-state activity, including website and app features and marketplace stock.
 - [ ] Each tax confirmed as a net income tax, or not.
@@ -250,3 +286,22 @@ These cases use hypothetical amounts. Each is for tax year 2026 unless it says o
 - [ ] Throwback, throwout and combined-group effects checked in the origin state and the group's states.
 - [ ] Minimum tax and filing duties checked even where protected.
 - [ ] Items marked **check** resolved or disclosed to the client in writing.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| 15 U.S.C. 381 (govinfo). Read for the solicitation-of-orders limit, (b) the domestic corporation and resident exclusions, and (d) independent contractors. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm | 2026-11-13 |
+| 15 U.S.C. 383 (govinfo). Read for "net income tax" as the only tax limited. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm | 2026-11-13 |
+| Wisconsin Department of Revenue v. William Wrigley, Jr., Co., 505 U.S. 214 (1992), U.S. Reports (Library of Congress). Read for "entirely ancillary" and the de minimis standard. | https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf | 2026-11-13 |
+| FTB, Doing business in California (also read by `ca-llc-fee-and-tax`). Read for the 2025 amounts $757,070 and $75,707 and that no 2026 row is posted. | https://www.ftb.ca.gov/file/business/doing-business-in-california.html | 2026-11-13 |
+| Cal. R&TC 23101. Read for the "lesser of" test and indexing. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101 | 2026-10-16 |
+| FTB Publication 1050. Read for protected and unprotected activities, the 14-day display rule, telecommuting and foreign commerce. | https://www.ftb.ca.gov/forms/misc/1050.pdf | 2026-10-16 |
+| Cal. R&TC 25135 and 25122. Read for throwback and "taxable in another state". | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135 | 2026-10-16 |
+| NY Tax Department, Article 9-A deriving receipts. Read for $1,283,000 and $12,000 for tax years beginning 2024 to 2026. | https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm | 2026-10-16 |
+| 20 NYCRR 1-2.10 (adopted text). Read for the internet activity rules and examples. | https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf | 2026-10-16 |
+| NY Form CT-3 instructions. Read for box C and the P.L. 86-272 disclaimer. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf | 2026-10-16 |
+| NJ TB-108(R). Read for the $100,000 or 200 transactions test, internet activity and the minimum tax. | https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf | 2026-10-16 |
+| Ohio DOT, Commercial Activity Tax. Read for the bright-line presence tests and the $6 million exclusion from 2025. | https://tax.ohio.gov/business/commercial-activity-tax | 2026-10-16 |
+
+Not yet confirmed: California's 2026 doing-business amounts (not posted when read); New York's threshold for tax years beginning in 2027; the status of the California ACMA judgment on FTB's internet guidance after 2025; New Jersey and Ohio figures were not re-read on 13 November (read 16 October 2026); due dates for extended 2025 corporate returns in each state.
