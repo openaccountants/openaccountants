@@ -152,7 +152,7 @@ FinCEN's final rule of 11 August 2026 made permanent the exemptions in the March
 | Florida annual report filed after 1 May | Higher fee (LLC USD 538.75, profit corporation USD 550) |
 | Texas entity with revenue below USD 2,650,000 | No franchise tax due, but the Public Information Report is still filed |
 | New York LLC that never published | Authority to carry on business suspended until it publishes |
-| Foreign-owned US LLC | Separate federal reporting (Form 5472): see `us-form-5472` |
+| Foreign-owned US LLC | Separate federal reporting (Form 5472): see `us-form-5472-foreign-owned-us` |
 
 ## Worked cases
 
