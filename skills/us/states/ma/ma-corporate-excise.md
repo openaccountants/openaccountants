@@ -24,7 +24,7 @@ type: computation
 | Jurisdiction | Massachusetts (US-MA), [DOR](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
 | Law | M.G.L. c. 63 (corporate excise), c. 63D and c. 63E (elective PTE excises), [DOR Corporate Excise Tax Guide](https://www.mass.gov/info-details/corporate-excise-tax-guide) |
 | Portal | [MassTaxConnect](https://mtc.dor.state.ma.us/mtc/_/); corporations file and pay electronically |
-| Forms | Form 355 (C corporation), 355S (S corporation), 355U (combined group), 63-ELT (PTE excise election), 355-ES (estimates) |
+| Forms | Form 355 (C corporation), 355S (S corporation), 355U (combined group), 63-ELT (PTE excise election), 355-ES (estimates), [DOR guide](https://www.mass.gov/info-details/corporate-excise-tax-guide) |
 
 Covers: C corporations and S corporations doing business in Massachusetts; LLCs classified as corporations; the entity-level PTE excise for partnerships, S corporations and trusts. LLCs disregarded for federal tax flow to the owner (`ma-income-tax`); multi-member LLCs taxed as partnerships are not subject to the corporate excise.
 
