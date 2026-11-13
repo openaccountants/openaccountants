@@ -2,6 +2,8 @@
 jurisdiction: US-AL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 covered_by:
+  IT-IND: alabama-income-tax
+  VAT: al-sales-tax
   SC: al-unemployment-contributions
   PR: al-payroll-withholding
 ---
@@ -15,13 +17,13 @@ tax paid or accrued, on single-sales-factor apportionment for tax years beginnin
 2021-01-01, plus a business privilege tax on net worth. The Department of Revenue (ALDOR)
 administers income tax, withholding (Forms A-1, A-6, A-3) and sales tax; unemployment
 compensation tax runs through the Department of Labor (adol.alabama.gov). Individuals pay a
-graduated income tax of 2%, 4% and 5% (see `al-income-tax`).
+graduated income tax of 2%, 4% and 5% (see `alabama-income-tax`).
 
 ## applicable
 
-- `IT-IND`: individual income tax. Present: `al-income-tax.md`, `alabama-income-tax.md`
+- `IT-IND`: individual income tax. Present: `alabama-income-tax.md`
 - `IT-CORP`: corporate income tax and business privilege tax. Present: `al-corporate-income-tax.md`
-- `VAT`: sales and use tax. Present: `al-sales-tax.md`, `alabama-sales-tax.md`
+- `VAT`: sales and use tax. Present: `al-sales-tax.md`
 - `SC`: social contributions (employer UC tax, Department of Labor). Present: `al-unemployment-contributions.md`
 - `PR`: payroll withholding (A-4, A-1, A-6, A-3, bulk filing). Present: `al-payroll-withholding.md`
 - `TP`: transfer pricing and related-party arrangements. Present: `alabama-transfer-pricing.md`
@@ -39,9 +41,9 @@ and `al-transfer-pricing` are already Albania skill names (skills/albania/).
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | al-income-tax, alabama-income-tax | 2025 Form 40 figures and 2026 estimated-tax dates tied to ALDOR sources |
+| IT-IND, individual income tax | alabama-income-tax | 2025 Form 40 figures and 2026 estimated-tax dates tied to ALDOR sources |
 | IT-CORP, corporate income tax | al-corporate-income-tax | rate, apportionment, due dates and business privilege tax range tied to ALDOR sources |
-| VAT / sales tax | al-sales-tax, alabama-sales-tax | 2026 state rates, food rate history and 2026 suspension tied to ALDOR sources |
+| VAT / sales tax | al-sales-tax | 2026 state rates, food rate history and 2026 suspension tied to ALDOR sources |
 | SC, social contributions | al-unemployment-contributions | wage base, new-employer rate, rate range and due dates tied to ADOL FAQs |
 | PR, payroll withholding | al-payroll-withholding | forms, due dates, triggers and penalties tied to the January 2026 ALDOR booklet |
 | TP, transfer pricing | alabama-transfer-pricing | rate and apportionment tied; addback and consolidation rules not yet confirmed |
