@@ -225,14 +225,14 @@ Common causes of a difference: a 31 December payroll with a January check date (
 
 Failure to deposit (section 6656), measured in calendar days from the due date:
 
-| Late | Penalty on the amount |
-| --- | --- |
-| 1 to 5 days | 2% |
-| 6 to 15 days | 5% |
-| 16 or more days, or paid directly to the IRS or with the return instead of deposited (outside the exceptions) | 10% |
-| Still unpaid more than 10 days after the first IRS notice, or the day notice and demand for immediate payment is received, whichever is earlier | 15% |
+| Late | Penalty on the amount | Source |
+| --- | --- | --- |
+| 1 to 5 days | 2% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| 6 to 15 days | 5% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| 16 or more days, or paid directly to the IRS or with the return instead of deposited (outside the exceptions) | 10% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Still unpaid more than 10 days after the first IRS notice, or the day notice and demand for immediate payment is received, whichever is earlier | 15% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
 
-Source: [Pub. 15 (2026), section 11, Deposit Penalties](https://www.irs.gov/pub/irs-pdf/p15.pdf). The penalty is figured deposit by deposit, not on the quarter's net shortfall, so one quarter can carry a 10% and a 2% penalty on different deposits; a late deposit is generally applied to the most recent liability first. Penalties do not apply with reasonable cause and no willful neglect. The IRS may also waive the penalty for an inadvertent failure in the first quarter a deposit was required, or the first deposit after the deposit frequency changed, if the return was timely and the employer meets the section 7430 net worth and size limits (businesses: net worth up to USD 7 million and up to 500 employees; individuals: net worth up to USD 2 million).
+The penalty is figured deposit by deposit, not on the quarter's net shortfall, so one quarter can carry a 10% and a 2% penalty on different deposits; a late deposit is generally applied to the most recent liability first. Penalties do not apply with reasonable cause and no willful neglect. The IRS may also waive the penalty for an inadvertent failure in the first quarter a deposit was required, or the first deposit after the deposit frequency changed, if the return was timely and the employer meets the section 7430 net worth and size limits (businesses: net worth up to USD 7 million and up to 500 employees; individuals: net worth up to USD 2 million).
 
 Other penalties:
 
