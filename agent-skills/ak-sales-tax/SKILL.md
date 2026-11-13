@@ -6,8 +6,8 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ak-sales-tax"
   jurisdiction: "US-AK"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
 # AK Sales Tax
@@ -16,21 +16,20 @@ metadata:
 
 **Quick reference**
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Alaska |
-| State sales tax rate | 0% (no statewide sales tax) |
-| State individual income tax | None |
-| Local sales tax | Yes -- levied by boroughs and cities only |
-| Local rate range | ~1% -- 7.5% (varies by municipality) |
-| Sourcing | Destination-based for remote sellers (ARSSTC Uniform Code) |
-| Remote-seller administrator | Alaska Remote Seller Sales Tax Commission (ARSSTC) |
-| Economic nexus | $100,000 statewide gross sales (current or prior calendar year) |
-| 200-transaction threshold | Removed effective January 1, 2025 |
-| Marketplace facilitators | Must collect/remit on behalf of third-party sellers |
-| State tax authority (income/corporate) | https://www.tax.alaska.gov |
-| Remote-seller portal | https://arsstc.org |
-| Skill version | 1.0 |
+| Field | Value | Source |
+| --- | --- | --- |
+| Jurisdiction | Alaska | https://arsstc.org/wp-content/uploads/2025/11/ARSSTC-Sales-Tax-Rate-Sheet-12-1-25.xlsx |
+| State sales tax rate | 0% (no statewide sales tax) | https://arsstc.org/wp-content/uploads/2025/11/ARSSTC-Sales-Tax-Rate-Sheet-12-1-25.xlsx |
+| Local sales tax | Yes -- levied by boroughs and cities only | https://arsstc.org/wp-content/uploads/2025/11/ARSSTC-Sales-Tax-Rate-Sheet-12-1-25.xlsx |
+| Local rate range | 2% to 7.85% combined among ARSSTC member jurisdictions (ARSSTC rate sheet as of 12/1/2025; Homer City plus Kenai Peninsula Borough is the highest); several members use higher seasonal rates | https://arsstc.org/wp-content/uploads/2025/11/ARSSTC-Sales-Tax-Rate-Sheet-12-1-25.xlsx |
+| Sourcing | Destination-based for remote sellers (ARSSTC Uniform Code) | https://arsstc.org/business-sellers/ |
+| Remote-seller administrator | Alaska Remote Seller Sales Tax Commission (ARSSTC) | https://arsstc.org/business-sellers/ |
+| Economic nexus | $100,000 statewide gross sales, including sales through a marketplace facilitator (current or prior calendar year) | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf |
+| 200-transaction threshold | Removed effective January 1, 2025 (Uniform Code section 040(A)) | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf |
+| Reduced filing frequency | Available to sellers with less than $100,000 taxable sales or 12 transactions a year statewide | https://arsstc.org/business-sellers/ |
+| Marketplace facilitators | Must collect/remit on behalf of third-party sellers | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf |
+| Remote-seller portal | https://arsstc.org | https://arsstc.org/business-sellers/ |
+| Skill version | 1.1 | same |
 
 ## Section 2 -- How Alaska sales tax actually works
 
@@ -43,15 +42,15 @@ There is therefore no single "Alaska rate." The rate, base, exemptions, and fili
 
 ## Section 3 -- Two collection regimes
 
-- **In-state sellers (physical presence in a municipality)** — Register directly with the local municipality where you have a physical location and collect that municipality's tax under its local code.
-- **Remote sellers (no physical presence)** — Register once with the Alaska Remote Seller Sales Tax Commission (ARSSTC), which administers a single Uniform Code on behalf of participating municipalities. File one consolidated return through the ARSSTC portal; tax is sourced to the buyer's delivery location (destination-based) using each member jurisdiction's rate and exemptions.
+- **In-state sellers (physical presence in a municipality)** -- Register directly with the local municipality where you have a physical location and collect that municipality's tax under its local code.
+- **Remote sellers (no physical presence)** -- Register once with the Alaska Remote Seller Sales Tax Commission (ARSSTC), which administers a single Uniform Code on behalf of participating municipalities. File one consolidated return through the ARSSTC portal; tax is sourced to the buyer's delivery location (destination-based) using each member jurisdiction's rate and exemptions.
 
 ## Section 4 -- Economic nexus (remote sellers)
 
-- **Economic nexus threshold for remote sellers** — $100,000 USD statewide gross sales (In the current or previous calendar year, delivered into Alaska)
-- **200-transaction threshold elimination** — The former 200-transaction prong was eliminated effective January 1, 2025 -- the dollar threshold is now the only test.
-- **Statewide measurement** — The threshold is measured against statewide sales into all Alaska jurisdictions combined, not per-municipality.
-- **Marketplace facilitators** — Marketplace facilitators (Amazon, Etsy, etc.) collect and remit for their third-party sellers; sales made through a registered marketplace generally do not create a separate registration duty for the seller, but still count toward the seller's threshold measurement.
+- **Economic nexus threshold for remote sellers** -- $100,000 USD statewide gross sales (In the current or previous calendar year, delivered into Alaska)
+- **200-transaction threshold elimination** -- The former 200-transaction prong was eliminated effective January 1, 2025 -- the dollar threshold is now the only test.
+- **Statewide measurement** -- The threshold is measured against statewide sales into all Alaska jurisdictions combined, not per-municipality.
+- **Marketplace facilitators** -- Marketplace facilitators (Amazon, Etsy, etc.) collect and remit for their third-party sellers; sales made through a registered marketplace generally do not create a separate registration duty for the seller, but still count toward the seller's threshold measurement.
 
 ## Section 5 -- Transaction pattern library
 
@@ -66,19 +65,68 @@ Because the base is set locally, treat the following as **defaults to verify aga
 | Professional services | Often TAXABLE | Several Alaska municipalities tax services |
 | SaaS / digital goods | Verify locally | Treatment varies by municipality |
 | Resale | EXEMPT with certificate | Per local code |
-| Sales above a price cap | Partially exempt | Some municipalities cap taxable amount per sale |
+| Sales above a price cap | Partially exempt | Many members cap the taxable amount per item, transaction or service (for example Juneau $14,300, Kenai Peninsula Borough $500, Homer $500); see the ARSSTC rate sheet cap tab |
 
 ## Section 10 -- Prohibitions
 
-- **Prohibition: single statewide rate assumption** — NEVER assume a single statewide Alaska sales-tax rate -- there is none.
-- **Prohibition: assuming no sales tax for remote sellers** — NEVER assume "no sales tax in Alaska" for a remote seller -- local tax applies via ARSSTC once the $100,000 threshold is met.
-- **Prohibition: 200-transaction test after 2025** — NEVER apply the 200-transaction test for periods on or after January 1, 2025.
-- **Prohibition: computing numbers** — NEVER compute any number; confirm the rate and base with the specific municipality or the ARSSTC member-rate table.
+- **Prohibition: single statewide rate assumption** -- NEVER assume a single statewide Alaska sales-tax rate -- there is none.
+- **Prohibition: assuming no sales tax for remote sellers** -- NEVER assume "no sales tax in Alaska" for a remote seller -- local tax applies via ARSSTC once the $100,000 threshold is met.
+- **Prohibition: 200-transaction test after 2025** -- NEVER apply the 200-transaction test for periods on or after January 1, 2025.
+- **Prohibition: unsourced rates** -- NEVER compute tax with a rate or cap that was not read from the current ARSSTC rate sheet or the municipality's own code for the period of sale. Check seasonal rates.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Local Alaska sales-tax rules are set by individual municipalities and change frequently; always confirm the current rate, base, and filing rules with the relevant borough or city, or with ARSSTC for remote sellers. All outputs must be reviewed and signed off by a qualified professional before filing.
 
+## Worked examples
+
+Rates and caps below are from the ARSSTC rate sheet as of 12/1/2025 (rate tab and cap tab). Check the sheet in force for the period of sale before relying on them.
+
+Example A: a remote seller over the $100,000 threshold ships a $20,000 single item to a buyer in the City and Borough of Juneau (5%). Juneau caps a single item at $14,300 (maximum tax $715), so tax = 5% x 14,300 = $715.00, not $1,000.
+
+```oa-check
+name: AK Juneau 5% with the 14,300 single-item cap
+inputs:
+  price: 20000
+  cap: 14300
+steps:
+  - taxable: min(price, cap)
+  - tax: pct(taxable, 5)
+expected:
+  taxable: 14300
+  tax: 715.00
+```
+
+Example B: an $800 single item shipped to the City of Kenai. Both the Kenai Peninsula Borough (3%) and Kenai City (3%) apply, each on the first $500 of the item (maximum $15 borough and $30 combined under the cap tab). Tax = 3% x 500 + 3% x 500 = $30.00.
+
+```oa-check
+name: AK Kenai City plus Kenai Peninsula Borough, 500 cap
+inputs:
+  price: 800
+  cap: 500
+steps:
+  - taxable: min(price, cap)
+  - borough_tax: pct(taxable, 3)
+  - city_tax: pct(taxable, 3)
+  - total_tax: borough_tax + city_tax
+expected:
+  borough_tax: 15.00
+  city_tax: 15.00
+  total_tax: 30.00
+```
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| ARSSTC -- Business sellers (threshold, filing, reduced frequency) | https://arsstc.org/business-sellers/ | 2026-11-13 |
+| ARSSTC -- FAQs for sellers ($100,000 statewide threshold) | https://arsstc.org/faqs-for-sellers/ | 2026-11-13 |
+| ARSSTC -- Remote Sales: Repeal of Transaction Thresholds (effective 1 Jan 2025) | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf | 2026-11-13 |
+| ARSSTC -- Sales tax rate sheet as of 12/1/2025 (rates, seasonal rates, caps) | https://arsstc.org/wp-content/uploads/2025/11/ARSSTC-Sales-Tax-Rate-Sheet-12-1-25.xlsx | 2026-11-13 |
+| Alaska DCRA -- Alaska Taxable (Office of the State Assessor) | https://www.commerce.alaska.gov/web/dcra/officeofthestateassessor/alaskataxfacts.aspx | 2026-11-09 (returned 403 on 2026-11-13; not re-read) |
+
+Not yet confirmed (not re-read on 2026-11-13): that Alaska has no individual income tax (Section 2), and the Section 5 pattern defaults, which depend on each municipality's code.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ak-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ak-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ak-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ak-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
