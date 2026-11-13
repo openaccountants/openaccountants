@@ -23,7 +23,7 @@ version: "0.2"
 
 **Metadata table**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Tax type | Employer payroll (state withholding + SUTA + workers' comp) |
 | Jurisdiction | North Dakota (US-ND) |
@@ -70,14 +70,13 @@ version: "0.2"
 | Form 306 due dates | April 30, July 31, October 31, January 31 |
 | Form 306 mandatory e-filing threshold | Prior-year withholding ≥ $1,000 → must e-file via TAP |
 | Form 307 annual reconciliation | January 31 |
-| NDW-R (MN/MT reciprocity) renewal | Annual -- by Feb 28 each year |
+| NDW-R (MN/MT reciprocity) renewal | Annual -- by Feb 28 each year (Form NDW-R, SFN 28729: https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf) |
 | NDW-R employer copy filing | Mail to Tax Commissioner by March 31 |
 | SUTA wage base 2025 | $45,100 |
 | SUTA wage base 2024 (reference) | $43,800 |
 | SUTA experience-rated range | ~0.08% to ~9.97% [VERIFY: 2025 schedule] |
 | SUTA new-employer rate | 1.02% non-construction; up to ~6.09% construction industry [VERIFY: 2025 schedule] |
 | New-hire deadline | Within 20 days of hire |
-| Workers' comp insurer | WSI -- monopolistic. Private comp insurance is unlawful |
 | Final paycheck (involuntary) | Next regular payday, per N.D.C.C. § 34-14-03 |
 | Final paycheck (voluntary quit) | Next regular payday |
 | State-mandated paid sick leave | None |
@@ -186,10 +185,10 @@ The bracket thresholds are indexed annually. Practitioners must re-verify the br
 
 | Quarter | Period | Due date |
 | --- | --- | --- |
-| Q1 | January 1 - March 31 | April 30 |
-| Q2 | April 1 - June 30 | July 31 |
-| Q3 | July 1 - September 30 | October 31 |
-| Q4 | October 1 - December 31 | January 31 |
+| Q1 | January 1 – March 31 | April 30 |
+| Q2 | April 1 – June 30 | July 31 |
+| Q3 | July 1 – September 30 | October 31 |
+| Q4 | October 1 – December 31 | January 31 |
 
 ### 7.1 Form and due dates
 
@@ -479,7 +478,7 @@ The 1.5% supplemental rate is below Carla's marginal rate of 2.50%, so she will 
 
 **Provenance table**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Author | OpenAccountants AI draft |
 | Verifier | pending -- ND CPA or EA with ND payroll specialty |
@@ -539,10 +538,10 @@ expected:
   bonus_withholding: 750
 ```
 
-Not yet confirmed: the 2025 SUTA wage base ($45,100), the 2024 base ($43,800), the experience-rated range and the new-employer rates. Job Service North Dakota pages returned 403 to an automated read on 2026-11-13, so these were not re-read.
+Not yet confirmed: that WSI is the only lawful workers' compensation insurer for ND employers (row removed from the quick-reference table until N.D.C.C. title 65 is re-read); the 2025 SUTA wage base ($45,100), the 2024 base ($43,800), the experience-rated range and the new-employer rates. Job Service North Dakota pages returned 403 to an automated read on 2026-11-13, so these were not re-read.
 
 
-## Official sources read 2026-11-13
+## Sources
 
 | # | Source | URL | Read on |
 | --- | --- | --- | --- |

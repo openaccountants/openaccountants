@@ -12,6 +12,7 @@ description: >-
   SUTA, new employer rate, Job Service ND, SFN 41263, UI EASY.
   Source-cited draft; 2026 wage base and rates need confirmation.
 jurisdiction: US-ND
+type: decision
 category: payroll
 tax_year: 2025
 tax_year_notes: Covers the 2025-2026 period using the 2025 unemployment wage base and rates; the 2026 wage base and rate schedule were not confirmed on 2026-11-13 (Job Service North Dakota pages returned 403 to an automated read).

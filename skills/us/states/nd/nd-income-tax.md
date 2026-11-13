@@ -31,7 +31,7 @@ version: "0.2"
 | Primary form | Form ND-1 |
 | Supporting schedules | Schedule ND-1SA (Modifications), Schedule ND-1TC (Credits), Schedule ND-1NR (Nonresidents/Part-year) |
 | Tax structure | Graduated (3 brackets) |
-| Rate range | 0% - 2.50% |
+| Rate range | 0% – 2.50% |
 | Filing deadline | April 15, 2026 |
 | Extension deadline | October 15, 2026 |
 | Tax authority | North Dakota Office of State Tax Commissioner |
@@ -49,41 +49,41 @@ version: "0.2"
 
 **Tax brackets -- Single (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $48,475 | 0.00% | $0 |
-| $48,475 | $244,825 | 1.95% | $0 |
-| $244,825 | -- | 2.50% | $3,828.83 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $48,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $48,475 | $244,825 | 1.95% | $0 | same |
+| $244,825 | -- | 2.50% | $3,828.83 | same |
 
 ### Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)
 
 **Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $80,975 | 0.00% | $0 |
-| $80,975 | $298,075 | 1.95% | $0 |
-| $298,075 | -- | 2.50% | $4,233.45 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $80,975 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $80,975 | $298,075 | 1.95% | $0 | same |
+| $298,075 | -- | 2.50% | $4,233.45 | same |
 
 ### Tax brackets -- Married filing separately (TY 2025)
 
 **Tax brackets -- Married filing separately (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $40,475 | 0.00% | $0 |
-| $40,475 | $149,025 | 1.95% | $0 |
-| $149,025 | -- | 2.50% | $2,116.73 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $40,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $40,475 | $149,025 | 1.95% | $0 | same |
+| $149,025 | -- | 2.50% | $2,116.73 | same |
 
 ### Tax brackets -- Head of household (TY 2025)
 
 **Tax brackets -- Head of household (TY 2025)**
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $64,950 | 0.00% | $0 |
-| $64,950 | $271,450 | 1.95% | $0 |
-| $271,450 | -- | 2.50% | $4,026.75 |
+| Taxable income over | But not over | Rate | Tax on lower amount | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $64,950 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
+| $64,950 | $271,450 | 1.95% | $0 | same |
+| $271,450 | -- | 2.50% | $4,026.75 | same |
 
 ### Standard deduction
 
@@ -247,7 +247,7 @@ expected:
 ```
 
 
-## Official sources read 2026-11-13
+## Sources
 
 | # | Source | URL | Read on |
 | --- | --- | --- | --- |

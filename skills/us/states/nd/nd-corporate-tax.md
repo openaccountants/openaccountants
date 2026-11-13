@@ -93,7 +93,6 @@ This skill covers North Dakota state-level entity-level income tax:
 | Estimated-tax threshold | Required if both **prior-year and current-year liability exceed $5,000** | NDCC § 57-38-62 [VERIFY threshold] |
 | Estimated-tax form | Form 40-ES | ND Tax Commissioner |
 | Underpayment form | Form 40-UT | ND Tax Commissioner |
-| PTE election | **None -- ND has NOT enacted a PTET** [VERIFY through 2025 legislative session] | n/a |
 | Separate franchise tax? | **No.** ND has no general corporate franchise tax. | n/a |
 | Minimum tax? | **None.** No statutory minimum CIT (unlike NC's $200 franchise floor). | n/a |
 | S-corp at entity level? | No CIT; files informational Form 60 | NDCC § 57-38-01.4 (federal conformity) |
@@ -135,8 +134,8 @@ This skill covers North Dakota state-level entity-level income tax:
 
 | ND Taxable Income | Marginal Rate | Cumulative Tax at Top of Bracket |
 | --- | --- | --- |
-| $0 - $25,000 | **1.41%** | $352.50 |
-| $25,001 - $50,000 | **3.55%** | $352.50 + 3.55% × (income − $25,000); $1,240 at $50,000 |
+| $0 – $25,000 | **1.41%** | $352.50 |
+| $25,001 – $50,000 | **3.55%** | $352.50 + 3.55% × (income − $25,000); $1,240 at $50,000 |
 | Above $50,000 | **4.31%** | $1,240 + 4.31% × (income − $50,000) |
 
 **Effective-rate examples table**  _(N.D.C.C. § 57-38-30)_
@@ -513,7 +512,7 @@ Total entity-level ND tax              ~$5M+
 | Item | 2024 | 2025 | 2026 (planning) |
 | --- | --- | --- | --- |
 | ND CIT bracket 1 (up to $25,000) | 1.41% | 1.41% | 1.41% [VERIFY] |
-| ND CIT bracket 2 ($25K-$50K) | 3.55% | 3.55% | 3.55% [VERIFY] |
+| ND CIT bracket 2 ($25K–$50K) | 3.55% | 3.55% | 3.55% [VERIFY] |
 | ND CIT bracket 3 (above $50K) | 4.31% | 4.31% | 4.31% [VERIFY] |
 | Water's-edge surtax | 3.5% | 3.5% | 3.5% [VERIFY] |
 | Minimum tax | $0 | $0 | $0 |
@@ -677,10 +676,12 @@ expected:
 ```
 
 
-## Official sources read 2026-11-13
+## Sources
 
 | # | Source | URL | Read on |
 | --- | --- | --- | --- |
 | 1 | N.D.C.C. chapter 57-38 (57-38-30 rates, 57-38-62(2) $5,000 estimated tax test) | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-13 |
 | 2 | N.D.C.C. chapter 57-38.1 (57-38.1-09 apportionment and elections) | https://ndlegis.gov/cencode/t57c38-1.pdf | 2026-11-13 |
 | 3 | N.D.C.C. chapter 57-38.4 (57-38.4-02(3) water's edge 3.5% additional tax) | https://ndlegis.gov/cencode/t57c38-4.pdf | 2026-11-13 |
+
+Not yet confirmed: that North Dakota has not enacted a pass-through entity tax election (the PTE election row was moved here because it was not re-read on 2026-11-13); the alternative apportionment and combined reporting cites marked [VERIFY] in the text.

@@ -86,7 +86,7 @@ expected:
 ```
 
 
-## Official sources read 2026-11-13
+## Sources
 
 | # | Source | URL | Read on |
 | --- | --- | --- | --- |

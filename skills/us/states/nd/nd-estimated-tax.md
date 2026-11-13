@@ -37,7 +37,7 @@ version: "0.2"
 
 **Metadata table**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Tax type | Individual income tax -- quarterly estimated payments |
 | Jurisdiction | North Dakota (US-ND) |
@@ -365,8 +365,8 @@ The ND quarterly calendar aligns exactly with the federal Form 1040-ES calendar:
 
 | Bracket | Amount | Rate | Tax |
 | --- | --- | --- | --- |
-| $0 - $48,475 | $48,475 | 0% | $0 |
-| $48,475 - $97,500 | $49,025 | 1.95% | $956 |
+| $0 – $48,475 | $48,475 | 0% | $0 |
+| $48,475 – $97,500 | $49,025 | 1.95% | $956 |
 | **TY 2025 ND tax** |  |  | **$956** |
 
 **Safe harbor:**
@@ -408,7 +408,7 @@ Pay via ND TAP scheduled debits.
 
 | Bracket | Tax |
 | --- | --- |
-| $48,475 - $185,000 → $136,525 × 1.95% = $2,662 |  |
+| $48,475 – $185,000 → $136,525 × 1.95% = $2,662 |  |
 | **TY 2025 ND tax** | **$2,662** |
 
 **Safe harbor:**
@@ -567,7 +567,7 @@ expected:
 ```
 
 
-## Official sources read 2026-11-13
+## Sources
 
 | # | Source | URL | Read on |
 | --- | --- | --- | --- |

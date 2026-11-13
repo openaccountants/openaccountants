@@ -13,6 +13,7 @@ description: >-
   Source-cited draft; ndlegis.nd.gov unreachable 2026-10-25, statute text
   carried from the existing nd-corporate-tax skill with VERIFY flags.
 jurisdiction: US-ND
+type: decision
 category: transfer-pricing
 tax_year: 2026
 tier: 2

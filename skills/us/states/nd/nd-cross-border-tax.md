@@ -12,6 +12,7 @@ description: >-
   Source-cited draft; reciprocity and military cites need statute
   confirmation (ndlegis.nd.gov unreachable 2026-10-25).
 jurisdiction: US-ND
+type: decision
 category: cross-border
 tax_year: 2025
 tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. North Dakota indexes its brackets and the 2026 amounts were not published when checked on 2026-11-13.
