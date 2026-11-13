@@ -75,9 +75,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 65. `us-federal-return-assembly.md`
 66. `global-router.md`
 67. `in-sales-tax.md`
-68. `indiana-sales-tax.md`
-69. `workflow-base.md`
-70. `cross-border-tax-workflow-base.md`
+68. `workflow-base.md`
+69. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
