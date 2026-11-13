@@ -1,19 +1,15 @@
 {
- "generated_at": "2026-11-13T08:48:07+00:00",
+ "generated_at": "2026-11-13T21:12:53+00:00",
  "counts": {
-  "guides": 2259,
-  "loadable_skill_names": 2196,
+  "guides": 2317,
+  "loadable_skill_names": 2254,
   "jurisdictions": 256,
   "accountant_reviewed": 126,
-  "held_skill_names": 115
+  "held_skill_names": 97
  },
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "az-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -46,10 +42,6 @@
   },
   {
    "name": "bz-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "ca-income-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -145,22 +137,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "il-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "il-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "il-sales-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "in-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "inheritance-estate-gift-matrix",
    "reason": "required companion unavailable: cross-border-workflow-base"
   },
@@ -197,10 +173,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "ky-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "ky-vat-gst",
    "reason": "status: needs_sources"
   },
@@ -229,23 +201,11 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "ma-corporate-excise",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "ma-payroll",
    "reason": "status: needs_sources"
   },
   {
    "name": "md-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mi-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mi-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -281,14 +241,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "nc-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nd-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "ne-payroll-social",
    "reason": "status: needs_sources"
   },
@@ -306,14 +258,6 @@
   },
   {
    "name": "nt-payroll-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nyc-unincorporated-business-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "oh-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -417,27 +361,11 @@
    "reason": "required companion unavailable: tw-income-tax"
   },
   {
-   "name": "tx-sales-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "us-citizen-moving-abroad-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "uz-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
    "name": "uzbekistan-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "va-corporate-tax-and-bpol",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "va-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -18382,7 +18310,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "nz-motor-vehicle-expenses-logbook-business-use",
@@ -20140,6 +20068,19 @@
    "last_updated": "2026-11-01"
   },
   {
+   "slug": "pr-act-60-incentives",
+   "mcp_slug": "pr-act-60-incentives",
+   "path": "skills/puerto-rico/pr-act-60-incentives.md",
+   "name": "pr-act-60-incentives",
+   "jurisdiction": "PR",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "pr-company-income-tax",
    "mcp_slug": "pr-company-income-tax",
    "path": "skills/puerto-rico/pr-company-income-tax.md",
@@ -20164,6 +20105,32 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-11-01"
+  },
+  {
+   "slug": "pr-individual-income-tax",
+   "mcp_slug": "pr-individual-income-tax",
+   "path": "skills/puerto-rico/pr-individual-income-tax.md",
+   "name": "pr-individual-income-tax",
+   "jurisdiction": "PR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "pr-ivu-sales-and-use-tax",
+   "mcp_slug": "pr-ivu-sales-and-use-tax",
+   "path": "skills/puerto-rico/pr-ivu-sales-and-use-tax.md",
+   "name": "pr-ivu-sales-and-use-tax",
+   "jurisdiction": "PR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "pr-self-employment-tax-2025",
@@ -25922,7 +25889,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "vi-gross-receipts-tax",
@@ -25935,7 +25902,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "vi-individual-income-tax-filing",
@@ -25948,7 +25915,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "990-returns",
@@ -25973,8 +25940,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-1099-k-and-payment-processors",
@@ -26026,7 +25993,46 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-529-and-trump-accounts",
+   "mcp_slug": "us-529-and-trump-accounts",
+   "path": "skills/us/federal/us-529-and-trump-accounts.md",
+   "name": "us-529-and-trump-accounts",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-adoption-credit-8839",
+   "mcp_slug": "us-adoption-credit-8839",
+   "path": "skills/us/federal/us-adoption-credit-8839.md",
+   "name": "us-adoption-credit-8839",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-alternative-minimum-tax-6251",
+   "mcp_slug": "us-alternative-minimum-tax-6251",
+   "path": "skills/us/federal/us-alternative-minimum-tax-6251.md",
+   "name": "us-alternative-minimum-tax-6251",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-amended-return-form-1040-including-capital",
@@ -26039,7 +26045,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-19"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-augusta-rule-home-rental-to-your-business",
@@ -26052,20 +26058,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
-  },
-  {
-   "slug": "us-cfc-gilti",
-   "mcp_slug": "us-cfc-gilti",
-   "path": "skills/us/federal/us-cfc-gilti.md",
-   "name": "us-cfc-gilti",
-   "jurisdiction": "US",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-charitable-giving-strategies",
@@ -26078,7 +26071,33 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-child-tax-credit-and-eitc",
+   "mcp_slug": "us-child-tax-credit-and-eitc",
+   "path": "skills/us/federal/us-child-tax-credit-and-eitc.md",
+   "name": "us-child-tax-credit-and-eitc",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-citizen-moving-abroad-tax",
+   "mcp_slug": "us-citizen-moving-abroad-tax",
+   "path": "skills/us/federal/us-citizen-moving-abroad-tax.md",
+   "name": "us-citizen-moving-abroad-tax",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-corporate-extension-form-7004-and-the",
@@ -26094,43 +26113,43 @@
    "last_updated": "2026-09-03"
   },
   {
-   "slug": "us-crypto-income-events",
-   "mcp_slug": "us-crypto-income-events",
-   "path": "skills/us/federal/us-crypto-income-events.md",
-   "name": "us-crypto-income-events",
-   "jurisdiction": "US",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "us-crypto-reporting",
-   "mcp_slug": "us-crypto-reporting",
-   "path": "skills/us/federal/us-crypto-reporting.md",
-   "name": "us-crypto-reporting",
-   "jurisdiction": "US",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "us-crypto-tax",
    "mcp_slug": "us-crypto-tax",
    "path": "skills/us/federal/us-crypto-tax.md",
    "name": "us-crypto-tax",
    "jurisdiction": "US",
-   "category": "federal",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-dependent-care-credit-2441",
+   "mcp_slug": "us-dependent-care-credit-2441",
+   "path": "skills/us/federal/us-dependent-care-credit-2441.md",
+   "name": "us-dependent-care-credit-2441",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-divorce-alimony-and-property",
+   "mcp_slug": "us-divorce-alimony-and-property",
+   "path": "skills/us/federal/us-divorce-alimony-and-property.md",
+   "name": "us-divorce-alimony-and-property",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-education-credits-8863",
@@ -26143,7 +26162,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-25"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-energy-and-clean-vehicle-credits-2026",
+   "mcp_slug": "us-energy-and-clean-vehicle-credits-2026",
+   "path": "skills/us/federal/us-energy-and-clean-vehicle-credits-2026.md",
+   "name": "us-energy-and-clean-vehicle-credits-2026",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-equity-compensation-restricted-stock-units-and",
@@ -26156,7 +26188,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-estate-gift-706-709",
@@ -26168,8 +26200,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-expatriation-exit-tax",
@@ -26182,7 +26214,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-fbar-and-fatca-8938",
@@ -26234,7 +26266,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-federal-return-assembly",
@@ -26247,7 +26279,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-federal-section-1031-like-kind-exchange",
@@ -26263,17 +26295,30 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "us-feie-ftc",
-   "mcp_slug": "us-feie-ftc",
-   "path": "skills/us/federal/us-feie-ftc.md",
-   "name": "us-feie-ftc",
+   "slug": "us-filing-status-and-dependents",
+   "mcp_slug": "us-filing-status-and-dependents",
+   "path": "skills/us/federal/us-filing-status-and-dependents.md",
+   "name": "us-filing-status-and-dependents",
    "jurisdiction": "US",
-   "category": "international",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-firpta-withholding-8288",
+   "mcp_slug": "us-firpta-withholding-8288",
+   "path": "skills/us/federal/us-firpta-withholding-8288.md",
+   "name": "us-firpta-withholding-8288",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-foreign-earned-income-2555",
@@ -26285,8 +26330,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-foreign-tax-credit-1116",
@@ -26299,7 +26344,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-foreign-trust-reporting",
@@ -26312,7 +26357,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-1040-individual-return",
@@ -26328,6 +26373,19 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "us-form-1040-nr-nonresident-return",
+   "mcp_slug": "us-form-1040-nr-nonresident-return",
+   "path": "skills/us/federal/us-form-1040-nr-nonresident-return.md",
+   "name": "us-form-1040-nr-nonresident-return",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "us-form-1041-trust-and-estate-income",
    "mcp_slug": "us-form-1041-trust-and-estate-income",
    "path": "skills/us/federal/us-form-1041-trust-and-estate-income.md",
@@ -26337,8 +26395,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-1065-partnership",
@@ -26350,8 +26408,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-1120-c-corp",
@@ -26363,8 +26421,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-form-1120-s-s-corporation-return",
+   "mcp_slug": "us-form-1120-s-s-corporation-return",
+   "path": "skills/us/federal/us-form-1120-s-s-corporation-return.md",
+   "name": "us-form-1120-s-s-corporation-return",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-5471-cfc-information",
@@ -26376,8 +26447,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-5472-foreign-owned-us",
@@ -26389,8 +26460,34 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-form-8832-entity-classification",
+   "mcp_slug": "us-form-8832-entity-classification",
+   "path": "skills/us/federal/us-form-8832-entity-classification.md",
+   "name": "us-form-8832-entity-classification",
+   "jurisdiction": "US",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-form-8865-foreign-partnership",
+   "mcp_slug": "us-form-8865-foreign-partnership",
+   "path": "skills/us/federal/us-form-8865-foreign-partnership.md",
+   "name": "us-form-8865-foreign-partnership",
+   "jurisdiction": "US",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-form-941-940-payroll",
@@ -26402,8 +26499,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-gambling-winnings-and-losses",
+   "mcp_slug": "us-gambling-winnings-and-losses",
+   "path": "skills/us/federal/us-gambling-winnings-and-losses.md",
+   "name": "us-gambling-winnings-and-losses",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-gilti-fdii-beat",
@@ -26415,8 +26525,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-hiring-your-children-and-accountable-plans",
@@ -26429,7 +26539,72 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-home-sale-exclusion-121",
+   "mcp_slug": "us-home-sale-exclusion-121",
+   "path": "skills/us/federal/us-home-sale-exclusion-121.md",
+   "name": "us-home-sale-exclusion-121",
+   "jurisdiction": "US",
+   "category": "federal-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-household-employment-schedule-h",
+   "mcp_slug": "us-household-employment-schedule-h",
+   "path": "skills/us/federal/us-household-employment-schedule-h.md",
+   "name": "us-household-employment-schedule-h",
+   "jurisdiction": "US",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-hsa-form-8889",
+   "mcp_slug": "us-hsa-form-8889",
+   "path": "skills/us/federal/us-hsa-form-8889.md",
+   "name": "us-hsa-form-8889",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-installment-sale-6252",
+   "mcp_slug": "us-installment-sale-6252",
+   "path": "skills/us/federal/us-installment-sale-6252.md",
+   "name": "us-installment-sale-6252",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-ira-and-roth-conversions-8606",
+   "mcp_slug": "us-ira-and-roth-conversions-8606",
+   "path": "skills/us/federal/us-ira-and-roth-conversions-8606.md",
+   "name": "us-ira-and-roth-conversions-8606",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-irs-collections-and-controversy",
@@ -26445,6 +26620,58 @@
    "last_updated": "2026-10-16"
   },
   {
+   "slug": "us-irs-notices-cp2000-and-letters",
+   "mcp_slug": "us-irs-notices-cp2000-and-letters",
+   "path": "skills/us/federal/us-irs-notices-cp2000-and-letters.md",
+   "name": "us-irs-notices-cp2000-and-letters",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-itin-form-w-7",
+   "mcp_slug": "us-itin-form-w-7",
+   "path": "skills/us/federal/us-itin-form-w-7.md",
+   "name": "us-itin-form-w-7",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-kiddie-tax-8615",
+   "mcp_slug": "us-kiddie-tax-8615",
+   "path": "skills/us/federal/us-kiddie-tax-8615.md",
+   "name": "us-kiddie-tax-8615",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-local-income-tax-matrix",
+   "mcp_slug": "us-local-income-tax-matrix",
+   "path": "skills/us/federal/us-local-income-tax-matrix.md",
+   "name": "us-local-income-tax-matrix",
+   "jurisdiction": "US",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "us-multi-state-residency-and-allocation",
    "mcp_slug": "us-multi-state-residency-and-allocation",
    "path": "skills/us/federal/us-multi-state-residency-and-allocation.md",
@@ -26455,7 +26682,33 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-net-operating-loss-172",
+   "mcp_slug": "us-net-operating-loss-172",
+   "path": "skills/us/federal/us-net-operating-loss-172.md",
+   "name": "us-net-operating-loss-172",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-new-deductions-tips-overtime-senior-car-loan",
+   "mcp_slug": "us-new-deductions-tips-overtime-senior-car-loan",
+   "path": "skills/us/federal/us-new-deductions-tips-overtime-senior-car-loan.md",
+   "name": "us-new-deductions-tips-overtime-senior-car-loan",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-nft-tax",
@@ -26467,8 +26720,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-nonresident-withholding-1042-w-8",
+   "mcp_slug": "us-nonresident-withholding-1042-w-8",
+   "path": "skills/us/federal/us-nonresident-withholding-1042-w-8.md",
+   "name": "us-nonresident-withholding-1042-w-8",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-opportunity-zones",
@@ -26494,7 +26760,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-premium-tax-credit-8962",
+   "mcp_slug": "us-premium-tax-credit-8962",
+   "path": "skills/us/federal/us-premium-tax-credit-8962.md",
+   "name": "us-premium-tax-credit-8962",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-pte-state-matrix",
@@ -26507,7 +26786,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-qbi-deduction",
@@ -26519,8 +26798,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-quarterly-estimated-tax",
@@ -26528,12 +26807,12 @@
    "path": "skills/us/federal/us-quarterly-estimated-tax.md",
    "name": "us-quarterly-estimated-tax",
    "jurisdiction": "US",
-   "category": "federal",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-r-and-d-section-174-and-41",
@@ -26559,7 +26838,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-s-corp-election-decision",
@@ -26571,8 +26850,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-sales-tax-nexus-50-state-matrix",
@@ -26585,7 +26864,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-sales-tax",
@@ -26597,8 +26876,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-schedule-a-itemized-deductions",
+   "mcp_slug": "us-schedule-a-itemized-deductions",
+   "path": "skills/us/federal/us-schedule-a-itemized-deductions.md",
+   "name": "us-schedule-a-itemized-deductions",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-schedule-c-and-se-computation",
@@ -26610,8 +26902,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-schedule-e-rental-income",
+   "mcp_slug": "us-schedule-e-rental-income",
+   "path": "skills/us/federal/us-schedule-e-rental-income.md",
+   "name": "us-schedule-e-rental-income",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-section-1031-like-kind-exchange",
@@ -26663,7 +26968,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-self-employed-health-insurance",
@@ -26675,8 +26980,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-self-employed-retirement",
@@ -26688,8 +26993,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-social-security-benefits-taxation",
+   "mcp_slug": "us-social-security-benefits-taxation",
+   "path": "skills/us/federal/us-social-security-benefits-taxation.md",
+   "name": "us-social-security-benefits-taxation",
+   "jurisdiction": "US",
+   "category": "federal",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-sole-prop-bookkeeping",
@@ -26701,8 +27019,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-state-bonus-depreciation-conformity-matrix",
@@ -26715,7 +27033,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-state-estate-and-inheritance-tax-matrix",
+   "mcp_slug": "us-state-estate-and-inheritance-tax-matrix",
+   "path": "skills/us/federal/us-state-estate-and-inheritance-tax-matrix.md",
+   "name": "us-state-estate-and-inheritance-tax-matrix",
+   "jurisdiction": "US",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-state-estimated-tax-safe-harbors-matrix",
@@ -26728,7 +27059,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-state-formation-matrix",
@@ -26740,8 +27071,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-state-new-hire-reporting-matrix",
@@ -26753,8 +27084,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-state-payroll-matrix",
@@ -26766,8 +27097,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-tax-return-review-supporting-documents-findings",
@@ -26780,7 +27111,59 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-tax-treaty-claims-8833",
+   "mcp_slug": "us-tax-treaty-claims-8833",
+   "path": "skills/us/federal/us-tax-treaty-claims-8833.md",
+   "name": "us-tax-treaty-claims-8833",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "us-worker-classification-w2-vs-1099",
+   "mcp_slug": "us-worker-classification-w2-vs-1099",
+   "path": "skills/us/federal/us-worker-classification-w2-vs-1099.md",
+   "name": "us-worker-classification-w2-vs-1099",
+   "jurisdiction": "US",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ak-corporate-tax",
+   "mcp_slug": "ak-corporate-tax",
+   "path": "skills/us/states/ak/ak-corporate-tax.md",
+   "name": "ak-corporate-tax",
+   "jurisdiction": "US-AK",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ak-payroll",
+   "mcp_slug": "ak-payroll",
+   "path": "skills/us/states/ak/ak-payroll.md",
+   "name": "ak-payroll",
+   "jurisdiction": "US-AK",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ak-sales-tax",
@@ -26806,19 +27189,6 @@
    "verified_by": "pending",
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-13"
-  },
-  {
-   "slug": "al-income-tax",
-   "mcp_slug": "al-income-tax",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
    "last_updated": "2026-11-13"
   },
   {
@@ -26887,19 +27257,6 @@
    "last_updated": "2026-11-13"
   },
   {
-   "slug": "alabama-sales-tax",
-   "mcp_slug": "alabama-sales-tax",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-13"
-  },
-  {
    "slug": "alabama-transfer-pricing",
    "mcp_slug": "alabama-transfer-pricing",
    "path": "skills/us/states/al/alabama-transfer-pricing.md",
@@ -26913,17 +27270,43 @@
    "last_updated": "2026-11-13"
   },
   {
+   "slug": "ar-corporate-tax",
+   "mcp_slug": "ar-corporate-tax",
+   "path": "skills/us/states/ar/ar-corporate-tax.md",
+   "name": "ar-corporate-tax",
+   "jurisdiction": "US-AR",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "ar-income-tax",
    "mcp_slug": "ar-income-tax",
    "path": "skills/us/states/ar/ar-income-tax.md",
    "name": "ar-income-tax",
    "jurisdiction": "US-AR",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-25"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ar-payroll",
+   "mcp_slug": "ar-payroll",
+   "path": "skills/us/states/ar/ar-payroll.md",
+   "name": "ar-payroll",
+   "jurisdiction": "US-AR",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ar-sales-tax",
@@ -26931,38 +27314,25 @@
    "path": "skills/us/states/ar/ar-sales-tax.md",
    "name": "ar-sales-tax",
    "jurisdiction": "US-AR",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
-   "slug": "arizona-sales-tax",
-   "mcp_slug": "arizona-sales-tax",
-   "path": "skills/us/states/ar/arizona-sales-tax.md",
-   "name": "arizona-sales-tax",
-   "jurisdiction": "US-AR",
+   "slug": "az-corporate-tax",
+   "mcp_slug": "az-corporate-tax",
+   "path": "skills/us/states/az/az-corporate-tax.md",
+   "name": "az-corporate-tax",
+   "jurisdiction": "US-AZ",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "arkansas-sales-tax",
-   "mcp_slug": "arkansas-sales-tax",
-   "path": "skills/us/states/ar/arkansas-sales-tax.md",
-   "name": "arkansas-sales-tax",
-   "jurisdiction": "US-AR",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "az-income-tax",
@@ -26974,8 +27344,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "az-payroll",
+   "mcp_slug": "az-payroll",
+   "path": "skills/us/states/az/az-payroll.md",
+   "name": "az-payroll",
+   "jurisdiction": "US-AZ",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "az-sales-tax",
@@ -26987,34 +27370,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "az-transaction-privilege-tax",
-   "mcp_slug": "az-transaction-privilege-tax",
-   "path": "skills/us/states/az/az-transaction-privilege-tax.md",
-   "name": "az-transaction-privilege-tax",
-   "jurisdiction": "US-AZ",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "ca-540-es-estimated-tax",
-   "mcp_slug": "ca-540-es-estimated-tax",
-   "path": "skills/us/states/ca/ca-540-es-estimated-tax.md",
-   "name": "ca-540-es-estimated-tax",
-   "jurisdiction": "US-CA",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-540-individual-return",
@@ -27027,7 +27384,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-bookkeeping-monthly-close",
@@ -27052,8 +27409,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-form-3853-coverage",
@@ -27065,8 +27422,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-formation",
@@ -27079,7 +27436,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ca-income-tax",
+   "mcp_slug": "ca-income-tax",
+   "path": "skills/us/states/ca/ca-income-tax.md",
+   "name": "ca-income-tax",
+   "jurisdiction": "US-CA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-llc-fee-and-tax",
@@ -27092,7 +27462,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-payroll",
@@ -27105,7 +27475,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-pte-elective-tax",
@@ -27118,7 +27488,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-19"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-residency-leaving-california",
@@ -27131,20 +27501,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
-  },
-  {
-   "slug": "ca-sales-use-tax",
-   "mcp_slug": "ca-sales-use-tax",
-   "path": "skills/us/states/ca/ca-sales-use-tax.md",
-   "name": "ca-sales-use-tax",
-   "jurisdiction": "US-CA",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ca-smllc-form-568",
@@ -27157,7 +27514,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "california-sales-tax",
@@ -27170,7 +27527,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-25"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-ca-freelance-intake",
@@ -27183,7 +27540,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-ca-return-assembly",
@@ -27195,8 +27552,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "co-income-tax",
@@ -27238,32 +27595,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "colorado-sales-tax",
-   "mcp_slug": "colorado-sales-tax",
-   "path": "skills/us/states/co/colorado-sales-tax.md",
-   "name": "colorado-sales-tax",
-   "jurisdiction": "US-CO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "connecticut-sales-tax",
-   "mcp_slug": "connecticut-sales-tax",
-   "path": "skills/us/states/co/connecticut-sales-tax.md",
-   "name": "connecticut-sales-tax",
-   "jurisdiction": "US-CO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "ct-income-tax",
    "mcp_slug": "ct-income-tax",
    "path": "skills/us/states/ct/ct-income-tax.md",
@@ -27290,17 +27621,43 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "dc-corporate-tax",
+   "mcp_slug": "dc-corporate-tax",
+   "path": "skills/us/states/dc/dc-corporate-tax.md",
+   "name": "dc-corporate-tax",
+   "jurisdiction": "US-DC",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "dc-income-tax",
    "mcp_slug": "dc-income-tax",
    "path": "skills/us/states/dc/dc-income-tax.md",
    "name": "dc-income-tax",
    "jurisdiction": "US-DC",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "dc-payroll",
+   "mcp_slug": "dc-payroll",
+   "path": "skills/us/states/dc/dc-payroll.md",
+   "name": "dc-payroll",
+   "jurisdiction": "US-DC",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "dc-sales-tax",
@@ -27308,12 +27665,12 @@
    "path": "skills/us/states/dc/dc-sales-tax.md",
    "name": "dc-sales-tax",
    "jurisdiction": "US-DC",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "de-formation",
@@ -27404,7 +27761,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "fl-payroll",
+   "mcp_slug": "fl-payroll",
+   "path": "skills/us/states/fl/fl-payroll.md",
+   "name": "fl-payroll",
+   "jurisdiction": "US-FL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "fl-sales-use-tax-surtax",
@@ -27456,7 +27826,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-estimated-tax-depth",
@@ -27468,8 +27838,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-formation",
@@ -27481,8 +27851,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-income-tax",
@@ -27495,7 +27865,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-net-worth-tax",
@@ -27507,8 +27877,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-payroll",
@@ -27520,8 +27890,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ga-sales-tax",
@@ -27534,7 +27904,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "georgia-corporate-income-tax-returns-form-600",
@@ -27576,17 +27946,43 @@
    "last_updated": "2026-08-10"
   },
   {
+   "slug": "hi-corporate-tax",
+   "mcp_slug": "hi-corporate-tax",
+   "path": "skills/us/states/hi/hi-corporate-tax.md",
+   "name": "hi-corporate-tax",
+   "jurisdiction": "US-HI",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "hi-income-tax",
    "mcp_slug": "hi-income-tax",
    "path": "skills/us/states/hi/hi-income-tax.md",
    "name": "hi-income-tax",
    "jurisdiction": "US-HI",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "hi-payroll",
+   "mcp_slug": "hi-payroll",
+   "path": "skills/us/states/hi/hi-payroll.md",
+   "name": "hi-payroll",
+   "jurisdiction": "US-HI",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "hi-sales-tax",
@@ -27594,12 +27990,25 @@
    "path": "skills/us/states/hi/hi-sales-tax.md",
    "name": "hi-sales-tax",
    "jurisdiction": "US-HI",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ia-corporate-tax",
+   "mcp_slug": "ia-corporate-tax",
+   "path": "skills/us/states/ia/ia-corporate-tax.md",
+   "name": "ia-corporate-tax",
+   "jurisdiction": "US-IA",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ia-income-tax",
@@ -27607,12 +28016,25 @@
    "path": "skills/us/states/ia/ia-income-tax.md",
    "name": "ia-income-tax",
    "jurisdiction": "US-IA",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ia-payroll",
+   "mcp_slug": "ia-payroll",
+   "path": "skills/us/states/ia/ia-payroll.md",
+   "name": "ia-payroll",
+   "jurisdiction": "US-IA",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ia-sales-tax",
@@ -27620,12 +28042,12 @@
    "path": "skills/us/states/ia/ia-sales-tax.md",
    "name": "ia-sales-tax",
    "jurisdiction": "US-IA",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "id-sales-tax",
@@ -27641,30 +28063,43 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "idaho-sales-tax",
-   "mcp_slug": "idaho-sales-tax",
-   "path": "skills/us/states/id/idaho-sales-tax.md",
-   "name": "idaho-sales-tax",
-   "jurisdiction": "US-ID",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "il-estimated-tax",
    "mcp_slug": "il-estimated-tax",
    "path": "skills/us/states/il/il-estimated-tax.md",
    "name": "il-estimated-tax",
    "jurisdiction": "US-IL",
-   "category": "state",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "il-income-tax",
+   "mcp_slug": "il-income-tax",
+   "path": "skills/us/states/il/il-income-tax.md",
+   "name": "il-income-tax",
+   "jurisdiction": "US-IL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "il-payroll",
+   "mcp_slug": "il-payroll",
+   "path": "skills/us/states/il/il-payroll.md",
+   "name": "il-payroll",
+   "jurisdiction": "US-IL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "il-pprt",
@@ -27676,8 +28111,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "illinois-sales-tax",
@@ -27690,7 +28125,46 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "in-corporate-tax",
+   "mcp_slug": "in-corporate-tax",
+   "path": "skills/us/states/in/in-corporate-tax.md",
+   "name": "in-corporate-tax",
+   "jurisdiction": "US-IN",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "in-income-tax",
+   "mcp_slug": "in-income-tax",
+   "path": "skills/us/states/in/in-income-tax.md",
+   "name": "in-income-tax",
+   "jurisdiction": "US-IN",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "in-payroll",
+   "mcp_slug": "in-payroll",
+   "path": "skills/us/states/in/in-payroll.md",
+   "name": "in-payroll",
+   "jurisdiction": "US-IN",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "in-sales-tax",
@@ -27698,25 +28172,12 @@
    "path": "skills/us/states/in/in-sales-tax.md",
    "name": "in-sales-tax",
    "jurisdiction": "US-IN",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "indiana-sales-tax",
-   "mcp_slug": "indiana-sales-tax",
-   "path": "skills/us/states/in/indiana-sales-tax.md",
-   "name": "indiana-sales-tax",
-   "jurisdiction": "US-IN",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ks-corporate-income-tax",
@@ -27810,17 +28271,43 @@
    "last_updated": "2026-11-13"
   },
   {
+   "slug": "ky-corporate-tax",
+   "mcp_slug": "ky-corporate-tax",
+   "path": "skills/us/states/ky/ky-corporate-tax.md",
+   "name": "ky-corporate-tax",
+   "jurisdiction": "US-KY",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "ky-income-tax",
    "mcp_slug": "ky-income-tax",
    "path": "skills/us/states/ky/ky-income-tax.md",
    "name": "ky-income-tax",
    "jurisdiction": "US-KY",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ky-payroll",
+   "mcp_slug": "ky-payroll",
+   "path": "skills/us/states/ky/ky-payroll.md",
+   "name": "ky-payroll",
+   "jurisdiction": "US-KY",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ky-sales-tax",
@@ -27828,12 +28315,25 @@
    "path": "skills/us/states/ky/ky-sales-tax.md",
    "name": "ky-sales-tax",
    "jurisdiction": "US-KY",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "la-corporate-tax",
+   "mcp_slug": "la-corporate-tax",
+   "path": "skills/us/states/la/la-corporate-tax.md",
+   "name": "la-corporate-tax",
+   "jurisdiction": "US-LA",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "la-income-tax",
@@ -27841,12 +28341,25 @@
    "path": "skills/us/states/la/la-income-tax.md",
    "name": "la-income-tax",
    "jurisdiction": "US-LA",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "la-payroll",
+   "mcp_slug": "la-payroll",
+   "path": "skills/us/states/la/la-payroll.md",
+   "name": "la-payroll",
+   "jurisdiction": "US-LA",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "la-sales-tax",
@@ -27854,12 +28367,25 @@
    "path": "skills/us/states/la/la-sales-tax.md",
    "name": "la-sales-tax",
    "jurisdiction": "US-LA",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ma-corporate-excise",
+   "mcp_slug": "ma-corporate-excise",
+   "path": "skills/us/states/ma/ma-corporate-excise.md",
+   "name": "ma-corporate-excise",
+   "jurisdiction": "US-MA",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ma-income-tax",
@@ -27871,8 +28397,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ma-sales-tax",
@@ -27884,21 +28410,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
-   "slug": "massachusetts-sales-tax",
-   "mcp_slug": "massachusetts-sales-tax",
-   "path": "skills/us/states/ma/massachusetts-sales-tax.md",
-   "name": "massachusetts-sales-tax",
+   "slug": "us-ma-payroll",
+   "mcp_slug": "us-ma-payroll",
+   "path": "skills/us/states/ma/us-ma-payroll.md",
+   "name": "us-ma-payroll",
    "jurisdiction": "US-MA",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "md-income-tax",
@@ -27927,17 +28453,43 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "me-corporate-tax",
+   "mcp_slug": "me-corporate-tax",
+   "path": "skills/us/states/me/me-corporate-tax.md",
+   "name": "me-corporate-tax",
+   "jurisdiction": "US-ME",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "me-income-tax",
    "mcp_slug": "me-income-tax",
    "path": "skills/us/states/me/me-income-tax.md",
    "name": "me-income-tax",
    "jurisdiction": "US-ME",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "me-payroll",
+   "mcp_slug": "me-payroll",
+   "path": "skills/us/states/me/me-payroll.md",
+   "name": "me-payroll",
+   "jurisdiction": "US-ME",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "me-sales-tax",
@@ -27945,12 +28497,25 @@
    "path": "skills/us/states/me/me-sales-tax.md",
    "name": "me-sales-tax",
    "jurisdiction": "US-ME",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "mi-corporate-income-tax",
+   "mcp_slug": "mi-corporate-income-tax",
+   "path": "skills/us/states/mi/mi-corporate-income-tax.md",
+   "name": "mi-corporate-income-tax",
+   "jurisdiction": "US-MI",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-11-03"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-detroit-individual-return",
@@ -27962,8 +28527,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-estimated-tax",
@@ -27975,8 +28540,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-homestead-credit",
@@ -27988,8 +28553,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-income-tax",
@@ -28001,8 +28566,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "mi-payroll",
+   "mcp_slug": "mi-payroll",
+   "path": "skills/us/states/mi/mi-payroll.md",
+   "name": "mi-payroll",
+   "jurisdiction": "US-MI",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-pension-retirement-subtraction",
@@ -28014,8 +28592,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-return-assembly",
@@ -28027,8 +28605,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mi-sales-tax",
@@ -28040,21 +28618,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "minnesota-sales-tax",
-   "mcp_slug": "minnesota-sales-tax",
-   "path": "skills/us/states/mn/minnesota-sales-tax.md",
-   "name": "minnesota-sales-tax",
-   "jurisdiction": "US-MN",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mn-income-tax",
@@ -28075,19 +28640,6 @@
    "path": "skills/us/states/mn/mn-sales-tax.md",
    "name": "mn-sales-tax",
    "jurisdiction": "US-MN",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "missouri-sales-tax",
-   "mcp_slug": "missouri-sales-tax",
-   "path": "skills/us/states/mo/missouri-sales-tax.md",
-   "name": "missouri-sales-tax",
-   "jurisdiction": "US-MO",
    "category": null,
    "tier": 2,
    "verified_by": null,
@@ -28122,17 +28674,17 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "mississippi-sales-tax",
-   "mcp_slug": "mississippi-sales-tax",
-   "path": "skills/us/states/ms/mississippi-sales-tax.md",
-   "name": "mississippi-sales-tax",
+   "slug": "ms-corporate-tax",
+   "mcp_slug": "ms-corporate-tax",
+   "path": "skills/us/states/ms/ms-corporate-tax.md",
+   "name": "ms-corporate-tax",
    "jurisdiction": "US-MS",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ms-income-tax",
@@ -28140,12 +28692,25 @@
    "path": "skills/us/states/ms/ms-income-tax.md",
    "name": "ms-income-tax",
    "jurisdiction": "US-MS",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ms-payroll",
+   "mcp_slug": "ms-payroll",
+   "path": "skills/us/states/ms/ms-payroll.md",
+   "name": "ms-payroll",
+   "jurisdiction": "US-MS",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ms-sales-tax",
@@ -28153,12 +28718,25 @@
    "path": "skills/us/states/ms/ms-sales-tax.md",
    "name": "ms-sales-tax",
    "jurisdiction": "US-MS",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "mt-corporate-income-tax",
+   "mcp_slug": "mt-corporate-income-tax",
+   "path": "skills/us/states/mt/mt-corporate-income-tax.md",
+   "name": "mt-corporate-income-tax",
+   "jurisdiction": "US-MT",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "mt-income-tax",
@@ -28174,6 +28752,19 @@
    "last_updated": "2026-10-16"
   },
   {
+   "slug": "mt-payroll",
+   "mcp_slug": "mt-payroll",
+   "path": "skills/us/states/mt/mt-payroll.md",
+   "name": "mt-payroll",
+   "jurisdiction": "US-MT",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "nc-bailey-settlement-retirement",
    "mcp_slug": "nc-bailey-settlement-retirement",
    "path": "skills/us/states/nc/nc-bailey-settlement-retirement.md",
@@ -28183,8 +28774,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nc-corporate-tax",
+   "mcp_slug": "nc-corporate-tax",
+   "path": "skills/us/states/nc/nc-corporate-tax.md",
+   "name": "nc-corporate-tax",
+   "jurisdiction": "US-NC",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nc-estimated-tax",
@@ -28196,8 +28800,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nc-income-tax",
@@ -28209,8 +28813,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nc-payroll",
@@ -28222,8 +28826,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nc-return-assembly",
@@ -28235,8 +28839,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nc-sales-tax",
@@ -28248,8 +28852,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nd-corporate-tax",
+   "mcp_slug": "nd-corporate-tax",
+   "path": "skills/us/states/nd/nd-corporate-tax.md",
+   "name": "nd-corporate-tax",
+   "jurisdiction": "US-ND",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-cross-border-tax",
@@ -28387,12 +29004,12 @@
    "path": "skills/us/states/nh/nh-bpt-bet.md",
    "name": "nh-bpt-bet",
    "jurisdiction": "US-NH",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nh-interest-dividends-note",
@@ -28400,12 +29017,25 @@
    "path": "skills/us/states/nh/nh-interest-dividends-note.md",
    "name": "nh-interest-dividends-note",
    "jurisdiction": "US-NH",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-11-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nh-payroll",
+   "mcp_slug": "nh-payroll",
+   "path": "skills/us/states/nh/nh-payroll.md",
+   "name": "nh-payroll",
+   "jurisdiction": "US-NH",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "new-jersey-sales-tax",
@@ -28473,17 +29103,17 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "new-mexico-sales-tax",
-   "mcp_slug": "new-mexico-sales-tax",
-   "path": "skills/us/states/nm/new-mexico-sales-tax.md",
-   "name": "new-mexico-sales-tax",
+   "slug": "nm-corporate-tax",
+   "mcp_slug": "nm-corporate-tax",
+   "path": "skills/us/states/nm/nm-corporate-tax.md",
+   "name": "nm-corporate-tax",
    "jurisdiction": "US-NM",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nm-income-tax",
@@ -28491,12 +29121,25 @@
    "path": "skills/us/states/nm/nm-income-tax.md",
    "name": "nm-income-tax",
    "jurisdiction": "US-NM",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nm-payroll",
+   "mcp_slug": "nm-payroll",
+   "path": "skills/us/states/nm/nm-payroll.md",
+   "name": "nm-payroll",
+   "jurisdiction": "US-NM",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nm-sales-tax",
@@ -28504,25 +29147,12 @@
    "path": "skills/us/states/nm/nm-sales-tax.md",
    "name": "nm-sales-tax",
    "jurisdiction": "US-NM",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "nevada-sales-tax",
-   "mcp_slug": "nevada-sales-tax",
-   "path": "skills/us/states/nv/nevada-sales-tax.md",
-   "name": "nevada-sales-tax",
-   "jurisdiction": "US-NV",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nv-commerce-and-mbt",
@@ -28577,19 +29207,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "new-york-sales-tax",
-   "mcp_slug": "new-york-sales-tax",
-   "path": "skills/us/states/ny/new-york-sales-tax.md",
-   "name": "new-york-sales-tax",
-   "jurisdiction": "US-NY",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-16"
-  },
-  {
    "slug": "ny-corporate-franchise-article-9a",
    "mcp_slug": "ny-corporate-franchise-article-9a",
    "path": "skills/us/states/ny/ny-corporate-franchise-article-9a.md",
@@ -28600,7 +29217,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-estimated-tax",
@@ -28608,12 +29225,12 @@
    "path": "skills/us/states/ny/ny-estimated-tax.md",
    "name": "ny-estimated-tax",
    "jurisdiction": "US-NY",
-   "category": "state",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-formation",
@@ -28625,8 +29242,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-it-201-resident-return",
@@ -28639,7 +29256,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-06"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-llc-filing-fee-it-204-ll",
@@ -28651,21 +29268,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "ny-llc-filing-fee",
-   "mcp_slug": "ny-llc-filing-fee",
-   "path": "skills/us/states/ny/ny-llc-filing-fee.md",
-   "name": "ny-llc-filing-fee",
-   "jurisdiction": "US-NY",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-mctmt",
@@ -28677,8 +29281,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-payroll",
@@ -28691,7 +29295,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-pte-tax-ptet",
@@ -28704,7 +29308,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-residency-leaving-new-york",
@@ -28717,7 +29321,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-03"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ny-sales-tax",
@@ -28729,8 +29333,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nyc-ubt",
@@ -28738,12 +29342,12 @@
    "path": "skills/us/states/ny/nyc-ubt.md",
    "name": "nyc-ubt",
    "jurisdiction": "US-NY",
-   "category": "state",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-ny-freelance-intake",
@@ -28751,12 +29355,12 @@
    "path": "skills/us/states/ny/us-ny-freelance-intake.md",
    "name": "us-ny-freelance-intake",
    "jurisdiction": "US-NY",
-   "category": "orchestrator",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-ny-return-assembly",
@@ -28764,12 +29368,12 @@
    "path": "skills/us/states/ny/us-ny-return-assembly.md",
    "name": "us-ny-return-assembly",
    "jurisdiction": "US-NY",
-   "category": "orchestrator",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "oh-cat-tax",
@@ -28782,20 +29386,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
-  },
-  {
-   "slug": "oh-cat",
-   "mcp_slug": "oh-cat",
-   "path": "skills/us/states/oh/oh-cat.md",
-   "name": "oh-cat",
-   "jurisdiction": "US-OH",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "oh-income-tax",
@@ -28808,7 +29399,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "oh-payroll",
+   "mcp_slug": "oh-payroll",
+   "path": "skills/us/states/oh/oh-payroll.md",
+   "name": "oh-payroll",
+   "jurisdiction": "US-OH",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "oh-sales-tax",
@@ -28816,25 +29420,12 @@
    "path": "skills/us/states/oh/oh-sales-tax.md",
    "name": "oh-sales-tax",
    "jurisdiction": "US-OH",
-   "category": "us-states",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "ohio-sales-tax",
-   "mcp_slug": "ohio-sales-tax",
-   "path": "skills/us/states/oh/ohio-sales-tax.md",
-   "name": "ohio-sales-tax",
-   "jurisdiction": "US-OH",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ok-income-tax",
@@ -28854,19 +29445,6 @@
    "mcp_slug": "ok-sales-tax",
    "path": "skills/us/states/ok/ok-sales-tax.md",
    "name": "ok-sales-tax",
-   "jurisdiction": "US-OK",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "oklahoma-sales-tax",
-   "mcp_slug": "oklahoma-sales-tax",
-   "path": "skills/us/states/ok/oklahoma-sales-tax.md",
-   "name": "oklahoma-sales-tax",
    "jurisdiction": "US-OK",
    "category": null,
    "tier": 2,
@@ -28902,6 +29480,19 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "pa-corporate-tax",
+   "mcp_slug": "pa-corporate-tax",
+   "path": "skills/us/states/pa/pa-corporate-tax.md",
+   "name": "pa-corporate-tax",
+   "jurisdiction": "US-PA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "pa-income-tax",
    "mcp_slug": "pa-income-tax",
    "path": "skills/us/states/pa/pa-income-tax.md",
@@ -28912,7 +29503,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "pa-local-eit",
@@ -28924,8 +29515,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "pa-payroll",
@@ -28938,7 +29529,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "pa-sales-tax",
@@ -28951,20 +29542,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-25"
-  },
-  {
-   "slug": "pennsylvania-sales-tax",
-   "mcp_slug": "pennsylvania-sales-tax",
-   "path": "skills/us/states/pa/pennsylvania-sales-tax.md",
-   "name": "pennsylvania-sales-tax",
-   "jurisdiction": "US-PA",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "references",
@@ -28980,17 +29558,43 @@
    "last_updated": "2026-06-12"
   },
   {
+   "slug": "ri-corporate-tax",
+   "mcp_slug": "ri-corporate-tax",
+   "path": "skills/us/states/ri/ri-corporate-tax.md",
+   "name": "ri-corporate-tax",
+   "jurisdiction": "US-RI",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "ri-income-tax",
    "mcp_slug": "ri-income-tax",
    "path": "skills/us/states/ri/ri-income-tax.md",
    "name": "ri-income-tax",
    "jurisdiction": "US-RI",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "ri-payroll",
+   "mcp_slug": "ri-payroll",
+   "path": "skills/us/states/ri/ri-payroll.md",
+   "name": "ri-payroll",
+   "jurisdiction": "US-RI",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ri-sales-tax",
@@ -28998,12 +29602,25 @@
    "path": "skills/us/states/ri/ri-sales-tax.md",
    "name": "ri-sales-tax",
    "jurisdiction": "US-RI",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "sc-corporate-tax",
+   "mcp_slug": "sc-corporate-tax",
+   "path": "skills/us/states/sc/sc-corporate-tax.md",
+   "name": "sc-corporate-tax",
+   "jurisdiction": "US-SC",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "sc-income-tax",
@@ -29011,12 +29628,25 @@
    "path": "skills/us/states/sc/sc-income-tax.md",
    "name": "sc-income-tax",
    "jurisdiction": "US-SC",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "sc-payroll",
+   "mcp_slug": "sc-payroll",
+   "path": "skills/us/states/sc/sc-payroll.md",
+   "name": "sc-payroll",
+   "jurisdiction": "US-SC",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "sc-sales-tax",
@@ -29024,12 +29654,38 @@
    "path": "skills/us/states/sc/sc-sales-tax.md",
    "name": "sc-sales-tax",
    "jurisdiction": "US-SC",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "sd-bank-franchise-tax",
+   "mcp_slug": "sd-bank-franchise-tax",
+   "path": "skills/us/states/sd/sd-bank-franchise-tax.md",
+   "name": "sd-bank-franchise-tax",
+   "jurisdiction": "US-SD",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "sd-payroll",
+   "mcp_slug": "sd-payroll",
+   "path": "skills/us/states/sd/sd-payroll.md",
+   "name": "sd-payroll",
+   "jurisdiction": "US-SD",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "sd-sales-tax",
@@ -29037,7 +29693,7 @@
    "path": "skills/us/states/sd/sd-sales-tax.md",
    "name": "sd-sales-tax",
    "jurisdiction": "US-SD",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
@@ -29068,7 +29724,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "tx-formation",
@@ -29080,8 +29736,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "tx-franchise-tax",
@@ -29093,34 +29749,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
-   "slug": "tx-margin-tax",
-   "mcp_slug": "tx-margin-tax",
-   "path": "skills/us/states/tx/tx-margin-tax.md",
-   "name": "tx-margin-tax",
+   "slug": "tx-payroll",
+   "mcp_slug": "tx-payroll",
+   "path": "skills/us/states/tx/tx-payroll.md",
+   "name": "tx-payroll",
    "jurisdiction": "US-TX",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "tx-sales-use-tax",
-   "mcp_slug": "tx-sales-use-tax",
-   "path": "skills/us/states/tx/tx-sales-use-tax.md",
-   "name": "tx-sales-use-tax",
-   "jurisdiction": "US-TX",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-tx-freelance-intake",
@@ -29132,8 +29775,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-tx-return-assembly",
@@ -29145,8 +29788,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ut-income-tax",
@@ -29175,17 +29818,17 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "utah-sales-tax",
-   "mcp_slug": "utah-sales-tax",
-   "path": "skills/us/states/ut/utah-sales-tax.md",
-   "name": "utah-sales-tax",
-   "jurisdiction": "US-UT",
+   "slug": "va-corporate-tax-and-bpol",
+   "mcp_slug": "va-corporate-tax-and-bpol",
+   "path": "skills/us/states/va/va-corporate-tax-and-bpol.md",
+   "name": "va-corporate-tax-and-bpol",
+   "jurisdiction": "US-VA",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "va-income-tax",
@@ -29198,7 +29841,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "va-payroll",
+   "mcp_slug": "va-payroll",
+   "path": "skills/us/states/va/va-payroll.md",
+   "name": "va-payroll",
+   "jurisdiction": "US-VA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "va-sales-tax",
@@ -29210,8 +29866,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "vt-corporate-tax",
+   "mcp_slug": "vt-corporate-tax",
+   "path": "skills/us/states/vt/vt-corporate-tax.md",
+   "name": "vt-corporate-tax",
+   "jurisdiction": "US-VT",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "vt-income-tax",
@@ -29219,11 +29888,24 @@
    "path": "skills/us/states/vt/vt-income-tax.md",
    "name": "vt-income-tax",
    "jurisdiction": "US-VT",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "vt-payroll",
+   "mcp_slug": "vt-payroll",
+   "path": "skills/us/states/vt/vt-payroll.md",
+   "name": "vt-payroll",
+   "jurisdiction": "US-VT",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
    "last_updated": "2026-11-13"
   },
   {
@@ -29232,25 +29914,12 @@
    "path": "skills/us/states/vt/vt-sales-tax.md",
    "name": "vt-sales-tax",
    "jurisdiction": "US-VT",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-13"
-  },
-  {
-   "slug": "wa-b-and-o-tax",
-   "mcp_slug": "wa-b-and-o-tax",
-   "path": "skills/us/states/wa/wa-b-and-o-tax.md",
-   "name": "wa-b-and-o-tax",
-   "jurisdiction": "US-WA",
-   "category": "state",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-06-12"
   },
   {
    "slug": "wa-bo-tax",
@@ -29263,20 +29932,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
-   "slug": "wa-business-occupation-tax",
-   "mcp_slug": "wa-business-occupation-tax",
-   "path": "skills/us/states/wa/wa-business-occupation-tax.md",
-   "name": "wa-business-occupation-tax",
+   "slug": "wa-payroll",
+   "mcp_slug": "wa-payroll",
+   "path": "skills/us/states/wa/wa-payroll.md",
+   "name": "wa-payroll",
    "jurisdiction": "US-WA",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wa-sales-tax",
@@ -29289,20 +29958,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
-  },
-  {
-   "slug": "washington-sales-tax",
-   "mcp_slug": "washington-sales-tax",
-   "path": "skills/us/states/wa/washington-sales-tax.md",
-   "name": "washington-sales-tax",
-   "jurisdiction": "US-WA",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wi-income-tax",
@@ -29344,17 +30000,43 @@
    "last_updated": "2026-10-16"
   },
   {
+   "slug": "wv-corporate-tax",
+   "mcp_slug": "wv-corporate-tax",
+   "path": "skills/us/states/wv/wv-corporate-tax.md",
+   "name": "wv-corporate-tax",
+   "jurisdiction": "US-WV",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "wv-income-tax",
    "mcp_slug": "wv-income-tax",
    "path": "skills/us/states/wv/wv-income-tax.md",
    "name": "wv-income-tax",
    "jurisdiction": "US-WV",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "wv-payroll",
+   "mcp_slug": "wv-payroll",
+   "path": "skills/us/states/wv/wv-payroll.md",
+   "name": "wv-payroll",
+   "jurisdiction": "US-WV",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wv-sales-tax",
@@ -29362,12 +30044,12 @@
    "path": "skills/us/states/wv/wv-sales-tax.md",
    "name": "wv-sales-tax",
    "jurisdiction": "US-WV",
-   "category": null,
+   "category": "state-tax",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wy-formation",
@@ -29383,6 +30065,19 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "wy-payroll",
+   "mcp_slug": "wy-payroll",
+   "path": "skills/us/states/wy/wy-payroll.md",
+   "name": "wy-payroll",
+   "jurisdiction": "US-WY",
+   "category": "state-tax",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "wy-sales-tax",
    "mcp_slug": "wy-sales-tax",
    "path": "skills/us/states/wy/wy-sales-tax.md",
@@ -29392,21 +30087,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "wyoming-sales-tax",
-   "mcp_slug": "wyoming-sales-tax",
-   "path": "skills/us/states/wy/wyoming-sales-tax.md",
-   "name": "wyoming-sales-tax",
-   "jurisdiction": "US-WY",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-capital-gains",
@@ -29419,7 +30101,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-nonresident-cgt",
@@ -29427,12 +30109,12 @@
    "path": "skills/us/us-nonresident-cgt.md",
    "name": "us-nonresident-cgt",
    "jurisdiction": "US",
-   "category": "international",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-tax-residency",
@@ -29445,7 +30127,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "uz-company-formation",
