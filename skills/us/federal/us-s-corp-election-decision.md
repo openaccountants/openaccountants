@@ -52,8 +52,8 @@ Out of scope, and where it goes:
 
 | Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| Social Security part of self-employment tax | 12.4% | [26 U.S.C. 1401(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
-| Medicare part of self-employment tax | 2.9% | [26 U.S.C. 1401(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Social Security part of self-employment tax | 12.4 percent | [26 U.S.C. 1401(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Medicare part of self-employment tax | 2.9 percent | [26 U.S.C. 1401(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
 | Self-employment tax rate in total | 15.3% | [IRS, self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) |
 | Net earnings factor (Schedule SE line 4a) | 92.35% | [Schedule SE (Form 1040) 2026](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) |
 | Social Security wage base (wages plus net self-employment earnings) | USD 184,500 | [IRS Pub. 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
