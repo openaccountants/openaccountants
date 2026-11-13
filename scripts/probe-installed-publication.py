@@ -1,6 +1,7 @@
 """Prove installed-wheel eligibility against the complete source graph."""
 
 import argparse
+from hashlib import sha256
 import json
 from pathlib import Path
 import sys
@@ -26,6 +27,7 @@ if args.write_expected:
     args.write_expected.write_text(json.dumps({
         "usable": sorted(targets), "held": held,
         "positive_reads": ["workflow-base", sorted(standards)[0]],
+        "workflow_sha256": sha256(targets["workflow-base"].path.read_bytes()).hexdigest(),
     }, indent=2) + "\n")
 else:
     from openaccountants_mcp import server
@@ -46,6 +48,10 @@ else:
             else:
                 raise AssertionError(f"Installed wheel served held guidance: {name}")
     for name in expected["positive_reads"]:
-        assert server.get_skill(name)["markdown"]
+        result = server.get_skill(name)
+        assert result["markdown"]
+        assert result["application_status"] == "available", result["workflow"]
+    workflow, _ = server._read_skill("workflow-base")
+    assert sha256((server.PACKAGES_DIR / workflow["relpath"]).read_bytes()).hexdigest() == expected["workflow_sha256"]
     print(f"Installed wheel: {len(actual)} usable names; {len(expected['held'])} holds enforced; "
           "workflow and non-tax standard remain readable")

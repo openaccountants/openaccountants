@@ -570,10 +570,10 @@ def _provenance_footer(rec: dict[str, Any]) -> str:
     tier = rec["quality_tier"]
     verifier = rec.get("verified_by")
     attribution = (
-        f'> Computed using the OpenAccountants "{rec["title"]}" skill, '
+        f'> Source: the OpenAccountants "{rec["title"]}" skill, '
         f"verified by {verifier}. Have a qualified professional review before filing."
         if tier == "accountant-verified" and verifier
-        else f'> Computed using the OpenAccountants "{rec["title"]}" skill '
+        else f'> Source: the OpenAccountants "{rec["title"]}" skill '
         "(research-verified — not yet signed off by a credentialed accountant). "
         "Have a qualified professional review before filing."
     )
@@ -591,11 +591,80 @@ def _provenance_footer(rec: dict[str, Any]) -> str:
     lines += [
         f"- **Source:** OpenAccountants — {SOURCE_BASE}/{rec['slug']}",
         "",
-        "**When you present this computation to the user, attribute it:**",
+        "**When you use this source, retain its attribution and actual review status:**",
         attribution,
         "",
     ]
     return "\n".join(lines)
+
+
+def _workflow_context(loaded: tuple[dict[str, Any], str] | None = None) -> dict[str, Any]:
+    """Fresh method proof, not a claim that the client has loaded/read its body."""
+    try:
+        rec, body = loaded if loaded is not None else _read_skill("workflow-base")
+    except (OSError, ValueError) as exc:
+        return {"status": "unavailable", "slug": "workflow-base", "reason": str(exc)}
+    return {
+        "status": "available", "slug": "workflow-base",
+        "body_sha256": sha256(body.encode("utf-8")).hexdigest(),
+        "load_required": loaded is None,
+        "load_instruction": (
+            "Read the full method in this result's markdown before applying rules."
+            if loaded is not None else
+            "Before preparation, call get_skill('workflow-base') and read its full method. "
+            "Reuse it only within this task while body_sha256 is unchanged. "
+            "This availability check does not mean the client has loaded or read it."
+        ),
+    }
+
+
+def _with_workflow(result: dict[str, Any], loaded: tuple[dict[str, Any], str] | None = None) -> dict[str, Any]:
+    """Keep inspection available; never present a plan without its current method."""
+    method = _workflow_context(loaded)
+    result["workflow"] = method
+    result["guardrails"] = _GUARDRAILS
+    result["application_status"] = method["status"]
+    if loaded is not None:
+        result["next_action"] = (
+            "This result contains the full current workflow-base. Read it, then load "
+            "applicable country/domain skills and establish their conditions before "
+            "preparation. The method alone supplies no country coverage or professional approval."
+        )
+    if method["status"] != "available":
+        result["application_status"] = "blocked"
+        result["next_action"] = (
+            "Do not apply these skills or prepare case-specific positions: the current "
+            "workflow-base is unavailable. Source inspection is still possible. "
+            "Obtain the usable method, resolve the reported issue, then retry."
+        )
+        if "status" in result:  # start() cannot advertise a ready execution plan
+            result["status"] = "blocked"
+            result["skills_to_load"] = []
+    elif result.get("status") == "ready":
+        result["skills_to_load"].insert(0, {
+            "slug": "workflow-base", "title": "Preparation method", "category": "foundation",
+            "purpose": "read before applying country/domain rules",
+        })
+    elif result.get("status") == "uncovered":
+        result["application_status"] = "blocked"
+    return result
+
+
+def _start_result(result: dict[str, Any]) -> dict[str, Any]:
+    return _with_catalogue_warning(_with_workflow(result))
+
+
+def _preparation_prompt(task: str) -> str:
+    """Prompts require the current method load without repeating its full body."""
+    method = _workflow_context()
+    if method["status"] != "available":
+        raise ToolInputError(f"workflow-base is unavailable; preparation is blocked: {method['reason']}")
+    return (
+        method["load_instruction"]
+        + f"\nCurrent workflow-base body_sha256: {method['body_sha256']}.\n\n"
+        + task
+        + "\n\n" + "\n".join(f"- {rule}" for rule in _GUARDRAILS)
+    )
 
 
 def _extract_match(body: str, query: str) -> tuple[str, str]:
@@ -722,7 +791,7 @@ def get_skill(slug: str) -> dict[str, Any]:
         slug: Skill slug exactly as returned by list_skills (e.g. "malta-income-tax").
     """
     rec, body = _read_skill(slug)
-    return {
+    return _with_workflow({
         "slug": rec["slug"],
         "title": rec["title"],
         "jurisdiction": rec["jurisdiction"],
@@ -731,14 +800,15 @@ def get_skill(slug: str) -> dict[str, Any]:
         "markdown": body + "\n" + _provenance_footer(rec),
         "last_updated": rec["last_updated"],
         "next_action": (
-            "Apply this skill's rules to the user's scenario. If this is an "
+            "Load and read get_skill('workflow-base') before preparation (or reuse "
+            "the exact current body hash already read in this task), then apply only "
+            "supported rules to established facts. If this is an "
             "intake/scope-check skill, run it BEFORE classifying anything. "
             "Compute using ONLY the rates and thresholds in this skill — never "
             "from general knowledge — and attribute the result per the "
             "provenance footer above."
         ),
-        "guardrails": _GUARDRAILS,
-    }
+    }, (rec, body) if slug == "workflow-base" else None)
 
 
 @mcp.tool(annotations=_READONLY)
@@ -749,16 +819,16 @@ def get_skill_sections(slug: str) -> dict[str, Any]:
         slug: Skill slug (e.g. "malta-income-tax").
     """
     _, body = _read_skill(slug)
-    return {
+    return _with_workflow({
         "slug": slug,
         "sections": _split_sections(body),
         "next_action": (
-            "Apply each section's rules to the user's scenario in order. "
-            "Compute using ONLY the rates and thresholds in these sections, and "
-            "tag every transaction as Classified, Assumed, or Needs Input."
+            "Load and read get_skill('workflow-base') before preparation (or reuse "
+            "the exact current body hash already read in this task). Apply relevant sections "
+            "only where facts, rules and conditions are supported. Keep other positions "
+            "unresolved; label conditional scenarios and reconcile source items."
         ),
-        "guardrails": _GUARDRAILS,
-    }
+    })
 
 
 @mcp.tool(annotations=_READONLY)
@@ -952,13 +1022,13 @@ _INTENT_SYNONYMS: dict[str, str] = {
     "pillar two": "cross-border",
 }
 
-# Guardrails inlined here so callers get them even though intake.md / foundation.md
-# in the packages tree aren't indexed (they carry no `name:` field by design).
+# Short operational reminders; the actual method is loaded from workflow-base.
 _GUARDRAILS: list[str] = [
-    "Use ONLY rates, thresholds, and rules from the loaded skills — do not compute from general knowledge.",
-    "When uncertain, default to the more conservative treatment (higher tax / stricter compliance). An over-conservative position can be softened by a reviewer; an aggressive one is harder to recover from.",
-    "Distinguish three transaction outcomes: Classified (rule applies clearly), Assumed (conservative default applied — flag for reviewer), Needs Input (ask the user).",
-    "Output is a working paper, not a return. Always advise the user to have a qualified professional review before filing.",
+    "Follow the loaded workflow-base; use current sourced country/domain rules only with confirmed applicability.",
+    "Keep missing facts and unsupported positions unresolved; do not turn a guess from any loaded document into evidence. Label conditional scenarios.",
+    "A genuine legal default applies only when its rule and trigger conditions are confirmed and cited for this case and period.",
+    "Choose outputs and tools for the task; disclose progress, gaps, unavailable capabilities and checks actually run. Preserve source mappings and reconcile totals.",
+    "Retain OpenAccountants/source attribution and actual approval status. Obtain qualified professional review before filing or acting; never imply it has already happened.",
 ]
 
 
@@ -998,6 +1068,8 @@ def _skills_for_intent(jurisdiction: str, intent_key: str) -> list[dict[str, Any
     for rec in _index().values():
         if rec["jurisdiction"].upper() != jx:
             continue
+        if rec["slug"] == "workflow-base":
+            continue  # the shared method alone is not jurisdiction/topic coverage
         slug_lo = rec["slug"].lower()
         score = 0
         if any(k in slug_lo for k in entry["slug_keywords"]):
@@ -1047,7 +1119,7 @@ def _purpose_hint(slug: str) -> str:
         ("capital-gains",        "capital gains tax computation"),
         ("self-employment",      "self-employment income rules"),
         ("student-loan",         "student-loan repayment via the tax return"),
-        ("workflow-base",        "cross-country base workflow (defaults, assumptions)"),
+        ("workflow-base",        "preparation method, evidence, unresolved items and review"),
         ("cross-border",         "multi-jurisdiction coordination rules"),
         ("corridor",             "country-pair treaty / withholding details"),
     ]
@@ -1101,12 +1173,14 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
         jurisdiction: ISO-style jurisdiction code (e.g. ``"MT"``, ``"GB"``, ``"US-CA"``).
 
     Returns:
-        One of three shapes keyed by ``status``:
+        A response keyed by ``status``:
 
         - ``"needs_input"``    — missing one or both inputs; ``needs`` lists which.
         - ``"needs_clarification"`` — intent provided but ambiguous; pick from ``candidates``.
-        - ``"ready"``          — plan ready: ``skills_to_load``, ``expectations``,
+        - ``"ready"``          — covered plan: ``skills_to_load``, ``expectations``,
                                  ``next_action``, ``guardrails``.
+        - ``"blocked"`` / ``"uncovered"`` — method unavailable / no applicable content;
+                                 no execution plan is supplied.
     """
     intent_key, candidates = _normalize_intent(intent)
     jx = jurisdiction.upper() if jurisdiction else None
@@ -1116,7 +1190,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
     #    is more important than picking a country first.
     if intent and not intent_key:
         suggest = candidates if candidates else list(_INTENT_CATALOGUE)[:5]
-        return _with_catalogue_warning({
+        return _start_result({
             "status": "needs_clarification",
             "intent_raw": intent,
             "candidates": _catalogue_entries(suggest),
@@ -1128,7 +1202,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
 
     # 2) Nothing provided.
     if not intent_key and not jx:
-        return _with_catalogue_warning({
+        return _start_result({
             "status": "needs_input",
             "needs": ["intent", "jurisdiction"],
             "message": (
@@ -1142,12 +1216,11 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 "ES (Spain), NL (Netherlands), US-CA (California), CA-ON (Ontario). "
                 "Call list_skills() to enumerate every jurisdiction."
             ),
-            "guardrails": _GUARDRAILS,
         })
 
     # 3) Intent only.
     if intent_key and not jx:
-        return _with_catalogue_warning({
+        return _start_result({
             "status": "needs_input",
             "needs": ["jurisdiction"],
             "intent": intent_key,
@@ -1163,7 +1236,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
     if jx and not intent_key:
         avail = _intents_for_jurisdiction(jx)
         if not avail:
-            return _with_catalogue_warning({
+            return _start_result({
                 "status": "needs_input",
                 "needs": ["intent"],
                 "jurisdiction": jx,
@@ -1173,7 +1246,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 ),
                 "available_intents": _catalogue_entries(),
             })
-        return _with_catalogue_warning({
+        return _start_result({
             "status": "needs_input",
             "needs": ["intent"],
             "jurisdiction": jx,
@@ -1188,39 +1261,46 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
     assert intent_key and jx
     skills = _skills_for_intent(jx, intent_key)
     label = _INTENT_CATALOGUE[intent_key]["label"]
-    if not skills:
-        return _with_catalogue_warning({
-            "status": "ready",
+    if not skills or jx in {"GLOBAL", "INTL"}:
+        return _start_result({
+            "status": "uncovered",
             "intent": intent_key,
             "intent_label": label,
             "jurisdiction": jx,
             "warning": (
+                "A shared reference jurisdiction does not establish the case's actual "
+                "countries or their applicable rules. Identify the real case jurisdiction(s)."
+                if jx in {"GLOBAL", "INTL"} else
                 f"No skills found for intent={intent_key!r} in jurisdiction {jx!r}. "
                 "The corpus may not cover this combination yet. Call "
                 "list_skills(jurisdiction=…) or search_skills(...) to confirm."
             ),
             "skills_to_load": [],
-            "guardrails": _GUARDRAILS,
+            "next_action": (
+                "This plan does not establish applicable country/domain coverage. Do not prepare case-specific "
+                "positions from the shared method alone. Confirm coverage with list_skills or "
+                "search_skills; request qualified professional help if coverage is absent. "
+                "The general method remains available for reference inspection."
+            ),
         })
-    return _with_catalogue_warning({
+    return _start_result({
         "status": "ready",
         "intent": intent_key,
         "intent_label": label,
         "jurisdiction": jx,
         "expectations": (
-            f"I'll help the user with {label} for {jx} as a working paper for their "
-            "qualified accountant to review. I won't file anything. Flow: intake "
-            "(scope check) → load skills → classify transactions → produce a "
-            "working paper with assumptions disclosed and items flagged for review."
+            f"Help with {label} for {jx} using the current preparation method and "
+            "applicable country/domain skills. Establish scope and evidence, reconcile "
+            "covered items, report unresolved gaps and choose appropriate supported outputs. "
+            "This read-only server does not file or arrange professional review."
         ),
         "skills_to_load": skills,
         "next_action": (
-            "Call get_skill on each slug above in order.  Run any *-intake skill "
+            "Read workflow-base first, then call get_skill on each slug above in order. Run any *-intake skill "
             "first to scope-check the user before classification.  If the user's "
             "scenario falls outside the skill's scope (non-resident, unsupported "
             "entity type, etc.), say so and stop instead of guessing."
         ),
-        "guardrails": _GUARDRAILS,
     })
 
 
@@ -1342,10 +1422,11 @@ def submit_feedback(
 
 @mcp.prompt(name="skill-review", description="Load a skill's sections and apply its rules to a scenario.")
 def skill_review(skillSlug: str, scenario: str) -> str:
-    return (
+    return _preparation_prompt(
         f'Load the accounting skill "{skillSlug}" using get_skill_sections.\n\n'
-        f"Then apply every rule to this scenario:\n\n{scenario}\n\n"
-        "For each section: state the rule, apply it, show computation, flag what needs review."
+        f"Assess which rules apply to this scenario:\n\n{scenario}\n\n"
+        "For each relevant section, confirm its conditions and evidence before applying it. "
+        "Show supported computations and unresolved questions; do not imply this is professional approval."
     )
 
 
@@ -1354,21 +1435,15 @@ def skill_review(skillSlug: str, scenario: str) -> str:
     description="Complete tax return workflow — intake, classification, working paper.",
 )
 def tax_return(country: str, tax_year: str = "2025", entity_type: str = "self-employed") -> str:
-    return f"""You are preparing a {tax_year} tax return for a {entity_type} taxpayer in {country}.
+    return _preparation_prompt(f"""You are assisting with a {tax_year} tax return for a {entity_type} taxpayer in {country}.
 
-Step 1: Load all available skills for {country} using list_skills, then fetch each one using get_skill.
-Step 2: Run the intake interview from the intake skill. Ask only questions the documents don't answer.
-Step 3: When the user provides their bank statement or transaction list, classify every transaction using the rules in the skills. Use the three-outcome system: Classified (clear), Assumed (conservative default applied, flag for reviewer), Needs Input (ask the user).
-Step 4: Produce a working paper with:
-  - Classified transactions grouped by tax category
-  - Computed totals for each return line item
-  - All assumptions disclosed
-  - Items flagged for accountant review
-  - Filing deadlines and payment dates
-Step 5: End with: "This working paper was prepared using skills verified by [verifier name] at openaccountants.com. Have your accountant review before filing."
+Step 1: Confirm the case, entity, jurisdiction and requested period; a prompt default is not evidence. Use list_skills to find relevant country/domain skills, then get_skill to load those that cover the task. No applicable content means preparation is blocked, not permission to use general knowledge.
+Step 2: Follow the method's evidence-first intake and any relevant scope checks. Ask only questions the documents do not answer.
+Step 3: Reconcile all source items into supported positions, unresolved items or documented exclusions. Do not substitute guessed treatment for missing facts. Label conditional scenarios and identify evidence needed to resolve them.
+Step 4: Choose appropriate supported outputs, such as a working paper with sourced classifications, return mappings, supported totals, known deadlines/payment dates and a reviewer brief/action list/checklist. Keep unresolved source amounts separate from final liability. Clearly label progress and partial work.
+Step 5: Retain OpenAccountants/source attribution and the skills' actual approval metadata. State actual review status and obtain qualified professional review before filing; do not invent a verifier or claim sign-off.
 
-Conservative defaults: when uncertain, assume MORE tax, never less.
-No LLM computes tax amounts — use only the rates and thresholds from the skills."""
+Use only supported rules, conditions, rates and thresholds. Use available calculation tools where appropriate, disclose unavailable capabilities and checks actually run, and never claim a computation or file was produced when it was not.""")
 
 
 @mcp.prompt(
@@ -1376,19 +1451,15 @@ No LLM computes tax amounts — use only the rates and thresholds from the skill
     description="Classify transactions for VAT/GST and produce a VAT return working paper.",
 )
 def vat_check(country: str, period: str = "the current period") -> str:
-    return f"""You are preparing a VAT/GST return for {country} for the period {period}.
+    return _preparation_prompt(f"""You are assisting with a VAT/GST return for {country} for the period {period}.
 
-Step 1: Fetch the VAT/GST skill for {country} using get_skill.
-Step 2: When the user provides transactions, classify each one using the skill's rate categories and supplier pattern library.
-Step 3: For each transaction, determine: taxable supply (standard/reduced/zero-rated), exempt supply, out of scope, reverse charge, or input VAT recoverable.
-Step 4: Produce a return working paper showing:
-  - Output VAT by rate
-  - Input VAT recoverable
-  - Net VAT payable/refundable
-  - Any items flagged as Assumed or Needs Input
-Step 5: Map totals to the country's return form boxes (e.g. UK VAT100 Box 1-9, Malta VAT3, Germany UStVA Kennzahlen).
+Step 1: Confirm the actual period, jurisdiction, entity and relevant registration facts. Find and load the applicable VAT/GST skill using list_skills and get_skill; stop preparation if coverage is unavailable.
+Step 2: Test each transaction against the sourced rule's conditions. Supplier patterns and transaction descriptions are clues, not evidence of absent facts. Keep unsupported classifications unresolved and ask for the missing evidence.
+Step 3: Determine taxable supply (standard/reduced/zero-rated), exempt supply, out of scope, reverse charge or input recovery only where the case facts and current rule support that treatment.
+Step 4: Reconcile the source items. Where supported, show output VAT by rate, input VAT recoverable and net VAT payable/refundable. Separate unresolved amounts and explicitly conditional scenarios; do not label a resolved subtotal as the final liability while open items can change it.
+Step 5: Use only confirmed applicable country return-form boxes and supported codes. Retain source attribution and actual approval status, and obtain qualified professional review before filing.
 
-Use the supplier pattern library from the skill. If a vendor matches, apply the known classification. If no match, classify from the transaction description and flag as Assumed."""
+Apply any genuine legal default only when its sourced rule and trigger conditions are confirmed for this case and period.""")
 
 
 @mcp.prompt(
@@ -1396,21 +1467,13 @@ Use the supplier pattern library from the skill. If a vendor matches, apply the 
     description="Review expenses and identify deductions the taxpayer might be missing.",
 )
 def find_deductions(country: str, entity_type: str = "self-employed") -> str:
-    return f"""You are a tax deduction finder for a {entity_type} taxpayer in {country}.
+    return _preparation_prompt(f"""You are reviewing possible deductions for a {entity_type} taxpayer in {country}.
 
-Step 1: Fetch the income tax skill for {country} using get_skill.
-Step 2: Extract the full list of allowable deductions, capital allowances, and tax credits from the skill.
-Step 3: When the user provides their expenses or bank statement, check each expense against the deduction list.
-Step 4: Identify:
-  - Deductions already claimed (matched to transactions)
-  - Deductions the user COULD claim but hasn't (no matching transaction found — prompt them to check)
-  - Common deductions for {entity_type} in {country} that most people miss
-Step 5: Produce a summary:
-  - "You're claiming: [list]"
-  - "You might be missing: [list with explanation]"
-  - "Check with your accountant: [any items needing professional judgment]"
+Confirm the period, taxpayer scope and evidence. Find and load the applicable income-tax skill, then identify sourced deductions, capital allowances and credits with their conditions. No applicable coverage means preparation is blocked.
+Match available records to those conditions. Separate supported eligible items, documented claims, possible items requiring evidence, and professional-judgment questions. A missing bank match does not establish eligibility or prove an item was not claimed. Ask targeted questions before presenting a claim as supported.
+Show a proportionate summary and source mappings with unresolved items clearly labelled. Obtain qualified professional review before filing.
 
-Only include deductions explicitly listed in the skill. Never invent deductions not in the source material."""
+Only include deductions explicitly supported by the loaded source material. Never invent deductions or claim that a hypothetical scenario is the user's established position.""")
 
 
 @mcp.prompt(
@@ -1455,20 +1518,20 @@ def compare_jurisdictions(countries: str, income: str = "", entity_type: str = "
         if income
         else "Effective income tax rate (show brackets if no income specified)"
     )
-    return f"""You are comparing tax treatment for a {entity_type} across these jurisdictions: {countries}.
+    return _preparation_prompt(f"""You are comparing tax treatment for a {entity_type} across these jurisdictions: {countries}.
 
-Step 1: Fetch the income tax, VAT, and SSC skills for each country using get_skill.
-Step 2: For each country, extract:
+Step 1: Confirm the period and scenario conditions. Find and fetch applicable income tax, VAT and SSC skills for each country using list_skills/get_skill. Mark unavailable coverage explicitly; do not fill it from general knowledge.
+Step 2: For each country, extract supported items with their conditions and source references:
   - {income_line}
   - VAT/GST standard rate
   - Social security contribution rate and caps
   - Key deductions available
   - Filing frequency and deadlines
-Step 3: Produce a comparison table showing side-by-side treatment.
-Step 4: Highlight key differences that would affect a taxpayer choosing between jurisdictions.
+Step 3: Produce a comparison table of supported items; label scenarios as conditional and leave missing facts/rules unresolved.
+Step 4: Highlight supported differences relevant to this scenario, without implying residence, eligibility or treaty access is established.
 Step 5: End with: "This comparison uses rules from openaccountants.com. Cross-border tax planning requires professional advice — treaty implications, PE risk, and tie-breaker rules are beyond the scope of this comparison."
 
-Use only data from the skills. Do not supplement with general knowledge."""
+Use only supported data from the skills. Do not supplement missing rules or facts with general knowledge.""")
 
 
 # ---------------------------------------------------------------------------
