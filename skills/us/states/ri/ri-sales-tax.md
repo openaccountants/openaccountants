@@ -1,335 +1,157 @@
 ---
 name: ri-sales-tax
-description: Use this skill whenever asked about Rhode Island sales tax, RI use tax, Rhode Island Tax Division filing, Rhode Island SaaS tax, or Rhode Island sales tax compliance. Trigger on phrases like "Rhode Island sales tax", "RI sales tax", "R.I.G.L. §44-18", "RI Tax Division", "Rhode Island clothing exemption", "Rhode Island SaaS", or any request involving Rhode Island sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
+description: "Rhode Island 7% sales/use tax, first-250-dollar clothing exemption, digital and software supplies, meals, 2026 lodging change, registration, RI-STR filing and explicit unresolved service/nexus details."
+version: "1.1"
 jurisdiction: US-RI
-tax_year: 2025
-last_updated: 2026-07-13
+category: state-tax
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: computation
 ---
 
-# RI Sales Tax
+# Rhode Island sales and use tax, tax year 2026
+
+> **General reference only.** Written by Codex. Not reviewed by an accountant. Apply the official sources to the taxpayer's facts and obtain qualified professional review before filing, paying or taking a tax position.
+
+> **Circular 230 section 10.37:** Consider relevant facts, reasonable assumptions and applicable law. Evaluate federal tax implications using the federal owner skills and obtain professional review where needed.
+
+**Answer first.** Rhode Island's general sales/use rate is 7%. Qualifying clothing and footwear receive an exemption for the **first USD 250 per item**, so only the excess is taxable. Meals and lodging have separate levies: prepared meals from qualifying establishments add 1%; ordinary short-term room or whole-home rentals generally total **14% from 1 January 2026**. Sources: [sales/use FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax); [active clothing rule 6.4](https://rules.sos.ri.gov/Regulations/part/280-20-70-6); [section 44-18-36.1, effective 2026 text](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm); [meals FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/meals-beverage-tax).
+
+## Scope
+
+RI sellers, remote sellers with nexus, marketplace transactions, and purchasers owing use tax on taxable RI use without collected tax. Statewide general sales/use is separate from the local meals tax and hotel/whole-home rental taxes. Income and employer taxes belong to `ri-income-tax`, `ri-corporate-tax` and `ri-payroll`; multistate sales principles route to `us-sales-tax`. Preserve the existing `ri-sales-tax` slug. Original contributor attribution retained: **Open Accounting Skills Registry**.
+
+## Ask the client first
+
+1. Physical presence, employees, inventory, channels, marketplace collection and prior/current RI receipts/transaction counts.
+2. Itemized product/service description, delivery/use location and date, including software access and digital subscriptions.
+3. Per-item clothing price, accessories/protective use, alterations, shipping and bundled charges.
+4. Exemption/resale certificates, manufacturing use and other-state tax paid on purchases.
+5. Meals establishment status, lodging type/location/length, platform receipts and separate tax accounts.
+6. Permit, assigned filing frequency, gross/taxable sales, deductions, collections and outstanding periods.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Rate, amount and effective period | Official source |
+|---|---|---|
+| General retail sales/use | 7% statewide, no additional general municipal sales rate used in this computation | [sales/use FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax) |
+| Qualifying clothing/footwear | First USD 250 of each item's sales price exempt; excess at 7%; accessories, athletic/protective exceptions apply | [active rule 6.3 to 6.4](https://rules.sos.ri.gov/Regulations/part/280-20-70-6) |
+| Local meals/beverage | 1% of qualifying eating/drinking establishment taxable food receipts, in addition to general 7% | [rate and coverage](https://tax.ri.gov/tax-sections/sales-excise-taxes/meals-beverage-tax) |
+| Short-term room lodging, 2026 | 5% hotel + 2% local hotel + 7% sales = 14%, subject to coverage/special rules | [2026 subsections a/b](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm) |
+| Whole dwelling short-term rental, 2026 | New 5% whole-home + 2% local hotel + 7% sales = 14%, subject to coverage/special rules | [2026 subsections b/d](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm); [January 2026 advisory](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf) |
+| Quarterly sales filing permission | Average monthly liability below USD 200 for six consecutive months plus written approval; not automatic | [filing frequency FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax) |
+
+1. Determine nexus and account registration before collecting. The current remote-seller webpage still frames USD 100,000 receipts or 200 transactions using **calendar 2018**. That is a historical implementation paragraph, not sufficient evidence of the recurring **2026** measurement period or every marketplace exclusion. The old current/prior-year claim and exact 2026 remote thresholds are **Not yet confirmed** from a current operative statute; physically present sellers cannot treat the remote threshold as a general exemption. Source: [remote sellers page, historical 2018 wording](https://tax.ri.gov/tax-sections/sales-excise-taxes/remote-sellers).
+2. Register through the Division's Business Application and Registration (BAR)/online route, select the correct sales account and location, and retain permit/account confirmation. Streamlined Sales Tax registration is another registration route identified by the Division; it does not itself determine product taxability. Keep resale/exemption certificates and match the purchaser/use/transaction to their conditions. Source: [registration, resale and exemption FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax).
+3. Classify goods and taxable services, calculate taxable receipts after supported exemptions/returns, and collect 7%. A retail resale purchase can qualify under the certificate process, while consumption by the business can create use tax. Accrual reporting generally follows sales, rather than waiting for customer cash. Zero returns remain required while the account is open. Source: [retail sale, use tax, accrual and zero-return FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax).
+4. For qualifying clothing/footwear, compute max(item sales price less USD 250, zero) **per item**, rather than taxing an entire USD 260 item. Clothing accessories such as jewelry, handbags and watches, and special athletic/protective items, do not automatically qualify. Count normally sold single units together; include taxable alterations/delivery in item sales price and allocate mixed-shipment delivery under the active rule. Source: [definitions and worked allocation examples](https://rules.sos.ri.gov/Regulations/part/280-20-70-6).
+5. Food/food ingredients can be exempt, but candy, soft drinks, supplements, alcohol, vending and prepared-food exclusions require the statutory definitions and exceptions. Prescription drugs, insulin/medical oxygen, home-use DME, prescription prosthetics and hearing/mobility equipment have specific statutory conditions; the old blanket medical-device exemption is too broad. Qualifying manufacturing components and machinery require the statutory manufacturing/use conditions, not merely a manufacturer's purchase. Source: [section 44-18-30, paragraphs 7, 9 to 11 and 27](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-30.HTM).
+6. RI taxes vendor-hosted **prewritten** software; the 2020-03 ruling confirms that result for its stated facts. Do not classify all cloud services as taxable merely because delivered online. Specified digital books, movies, music and streaming subscriptions fall within the digital-products levy. The old claim that all custom programming is exempt is **Not yet confirmed** for a transaction without reading its contract and applicable rule. Sources: [ruling 2020-03, facts and conclusion](https://tax.ri.gov/guidance/declaratory-rulings/ruling-request-no-2020-03); [ADV 2019-22, definitions and 7% rate](https://tax.ri.gov/sites/g/files/xkgbur541/files/Advisory/ADV_2019_22.pdf).
+7. Keep separate meals and lodging workpapers and accounts. Qualifying meals add 1% to 7%. For 2026 lodging, replace the old 13% room example: enacted law increases local hotel tax to 2% and imposes a new 5% whole-home tax. An undated hotel FAQ still says whole-home 1%; the dated statute and January 2026 advisory control this skill's 2026 computation. Newport collection and longer stays require the applicable route/definitions. Source: [current effective statutory text](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm); [dated 2026 change advisory](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf).
+8. Calculate use tax for taxable in-state use where seller did not collect the correct RI tax; assess allowable credit for tax properly paid elsewhere under the applicable rule. Individuals may report personal use tax on RI-1040 as described by the FAQ. Retain invoices, tax evidence and business/personal allocation. Source: [use-tax FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax).
+
+## Boundary and exception table
+
+| Legacy topic retained | Confirmed treatment or explicit limit |
+|---|---|
+| SaaS, downloaded prewritten software, custom software, mixed digital bundle | Prewritten vendor-hosted software and specified digital products supported above; custom and mixed-service allocation need transaction-specific confirmation |
+| Groceries versus prepared food | Statutory food exemptions have exclusions; restaurant qualifying food generally 7% +1% |
+| Professional services: legal, accounting, medical, engineering; haircuts, education, financial advice | **Not yet confirmed** as blanket exemptions; distinguish service from taxable goods/software/bundles |
+| Telecommunications/cable, storage, pet grooming, commercial cleaning, laundry/dry cleaning, pest control, security, printing | **Not yet confirmed** individually from current rules; old blanket 7% list must not decide a return |
+| Manufacturing machinery, raw materials, components, resale | Preserve topic; apply statutory use conditions and certificate evidence; do not exempt all operating purchases |
+| Marketplace collection | Reconcile platform statements and direct sales; seller nexus/reporting exclusions require current confirmation |
+| VDA and old three-year lookback/interest nonwaiver | **Not yet confirmed**; obtain current Division terms before assuming relief or period limitation |
+| Old penalty 10% or USD 50; fraud 50% | **Not yet confirmed**; not usable as an automatic penalty calculation |
+| Interest | Calendar 2026 published delinquency rate is 18% for trust-fund taxes and 12% for nontrust taxes; use actual tax classification and accrual period, not 2027 assumptions |
+
+Interest source: [calendar-year interest table](https://tax.ri.gov/guidance/information-and-faqs/interest-rates).
+
+## Worked cases
+
+**Case 1, ordinary mixed retail sale.** Invented sale has USD 1,000 taxable electronics plus one USD 200 qualifying jacket. Taxable receipts are USD 1,000; 7% tax USD 70 and invoice USD 1,270. With no seller collection, the same taxable electronics could create USD 70 use tax before allowable credits.
+
+```oa-check
+name: Rhode Island ordinary retail and clothing exemption
+inputs:
+  electronics: 1000
+  jacket: 200
+steps:
+  - tax: electronics * 0.07
+  - invoice: electronics + jacket + tax
+expected:
+  tax: 70
+  invoice: 1270
+```
+
+**Case 2, clothing boundary decision.** Compare otherwise qualifying everyday footwear USD 249 and USD 260. First pair is exempt, second has only USD 10 taxable, tax **USD 0.70**, not USD 18.20. A USD 300 qualifying pair has USD 50 taxable, tax USD 3.50, not the old USD 21. Accessories/protective footwear can change the eligibility decision entirely.
+
+```oa-check
+name: Rhode Island first 250 dollars exempt per clothing item
+inputs:
+  below: 249
+  above: 260
+  higher: 300
+steps:
+  - below_tax: max(below - 250, 0) * 0.07
+  - above_tax: max(above - 250, 0) * 0.07
+  - higher_tax: max(higher - 250, 0) * 0.07
+expected:
+  below_tax: 0
+  above_tax: 0.7
+  higher_tax: 3.5
+```
+
+### Other old examples, corrected or bounded
+
+| Invented transaction | Result and limit |
+|---|---|
+| Qualifying coat USD 240 and dress USD 260 | Only USD 10 taxable; USD 0.70 tax |
+| Qualifying clothing USD 50 +100 +260 +249 | Only USD 10 taxable; USD 0.70 tax, item-by-item |
+| Vendor-hosted prewritten taxable SaaS USD 500 | USD 35 tax, subject to RI sourcing and contract classification |
+| Qualifying meal USD 80 | Sales USD 5.60 + meals USD 0.80 = USD 6.40; total USD 86.40 |
+| Three short-term hotel nights USD 200 each in 2026 | USD 600 x14% = USD 84; total USD 684, replacing old USD 78/678 |
+| Taxable digital book USD 25 | USD 1.75 tax; total USD 26.75 |
+| Taxable prewritten SaaS USD 200 + streaming USD 50 + taxable goods USD 100 | If each is separately confirmed taxable and RI sourced, USD 350 x7% = USD 24.50 |
+| VDA hypothetical | No automatic three-year lookback or penalty waiver assumed; refer with actual facts |
 
-## Skill Metadata
+## When to refuse or refer
 
-**Skill Metadata**
+Refer unresolved remote nexus, marketplace exclusions, service/custom-software classification, bundled transactions, special certificates, hotel/platform/Newport exceptions, VDA and penalty disputes. Do not use an unsupported historical FAQ as confirmation of 2026 nexus measurement. Ordinary retail and qualifying clothing calculations above have current primary support.
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Rhode Island, United States |
-| Jurisdiction Code | US-RI |
-| Tax Type | Sales and Use Tax (state only -- no local sales tax) |
-| State Rate | 7.00% (flat, uniform statewide) |
-| Local Rates | None |
-| Primary Statute | Rhode Island General Laws (R.I.G.L.) §44-18 et seq. |
-| Governing Agency | Rhode Island Division of Taxation |
-| Portal | https://www.tax.ri.gov |
-| SST Member | Yes -- Full Member |
-| Contributor | Open Accounting Skills Registry |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | T1: state rate, basic taxability, filing mechanics. T2: SaaS taxability, clothing exemption threshold, service taxability. T3: audit defense, complex transactions, penalty abatement. |
-| Format | Restructured to Q1 execution format, April 2026 |
+## Filing and payment
 
-## Confidence Tier Definitions
+Use https://taxportal.ri.gov, choose sales/use and period, reconcile gross sales, exempt/deductible sales, taxable sales, use-tax purchases and tax, submit **RI-STR** and retain acceptance. Pay the correct account/period and retain separate payment confirmation. General monthly sales returns/payment are due by the **20th** following month; approved quarterly sales returns/payment by the **last day** of April, July, October and January. Quarterly permission requires written approval after the below-USD-200 six-month test; the old assumption of annual filing for small taxpayers is **Not yet confirmed**. Source: [filing and payment FAQ](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax).
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to a licensed tax professional.
+Form **T-204R-Annual** is discontinued from tax year 2023 onward; RI-STR includes periodic reconciliation. Do not follow the old annual-reconciliation instruction for current general sales. Alcohol/writer special reconciliations have their own later changes, outside the ordinary retailer computation. Source: [official form discontinuance](https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-01/T-204R%20Discontinuance%20Effective%20TY2023.pdf).
 
-## Step 0: Client Onboarding Questions
+Meals follow sales-account frequency, but their page specifies monthly due 20th and quarterly due **30th**, so do not substitute the general-sales quarter-end rule. Hotel returns are monthly, generally 20th following month, with HOM/RI-8478 by lodging type; exact 2026 whole-home forms and Newport route require final-period confirmation. Source: [meals due dates](https://tax.ri.gov/tax-sections/sales-excise-taxes/meals-beverage-tax); [collection law](https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm).
 
-**Client Onboarding Questions**
+## Completion checklist
 
-| # | Question | Why It Matters |
-| --- | --- | --- |
-| 1 | Do you have a Rhode Island sales tax registration / tax ID? | Determines whether registration is needed before filing. |
-| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
-| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
-| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
-| 5 | What types of products or services do you sell in Rhode Island? | Drives taxability classification under Rhode Island law. |
-| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
-| 7 | Do you have locations, employees, or inventory in Rhode Island? | Physical presence creates nexus independent of economic thresholds. |
-| 8 | Do you sell into multiple Rhode Island local jurisdictions? | Local tax rates vary; determines compliance complexity. |
+- Nexus/registration and product-specific taxability documented; unresolved classifications referred.
+- Clothing exemption applied per item; food, medical, manufacturing and resale conditions evidenced.
+- 2026 meals/lodging levies separated; old 13% lodging and entire-item clothing errors removed.
+- RI-STR sales/use workpaper reconciled, assigned frequency followed, acceptance/payment retained.
 
-- **Onboarding gate** — If the client cannot answer questions 1-4, STOP and gather this information before proceeding. ([T1])
+## Sources
 
-## Step 1: Tax Rate Structure
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read Sales/use FAQ: general rate, registration, retail/resale/use, accrual, monthly/approved quarterly and zero returns. | https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax | 2026-11-13 |
+| Read Active 280-RICR-20-70-6: definitions, USD 250 excess-only rule, alterations/delivery and examples; inactive archived version not used as current authority. | https://rules.sos.ri.gov/Regulations/part/280-20-70-6 | 2026-11-13 |
+| Read Section 44-18-30: manufacturing paragraph 7, food paragraph 9, medical paragraphs 10/11 and clothing paragraph 27, neighboring exceptions read. | https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-30.HTM | 2026-11-13 |
+| Read Section 44-18-36.1: both pre-2026 and effective-2026 texts, hotel/local/whole-home levies and Newport exceptions. | https://webserver.rilegislature.gov/Statutes/TITLE44/44-18/44-18-36.1_44-18-36.1.htm | 2026-11-13 |
+| Read ADV 2026-02: January 2026 hotel/local/whole-home changes and neighboring credit changes; dated primary source overrides stale FAQ. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf | 2026-11-13 |
+| Read Meals FAQ: coverage, 1%, registration, frequency, separate monthly 20th/quarterly 30th rules. | https://tax.ri.gov/tax-sections/sales-excise-taxes/meals-beverage-tax | 2026-11-13 |
+| Read ADV 2019-22: specified digital definitions, subscriptions, rate and nexus/registration paragraphs; historical filing/payment wording not treated as current. | https://tax.ri.gov/sites/g/files/xkgbur541/files/Advisory/ADV_2019_22.pdf | 2026-11-13 |
+| Read Ruling 2020-03: taxpayer facts, vendor-hosted prewritten software classification, RI sourcing, conclusion and reliance limitation. | https://tax.ri.gov/guidance/declaratory-rulings/ruling-request-no-2020-03 | 2026-11-13 |
+| Read T-204R official discontinuance: 2023-onward general annual reconciliation replaced by periodic RI-STR. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-01/T-204R%20Discontinuance%20Effective%20TY2023.pdf | 2026-11-13 |
+| Read Remote sellers page: USD 100,000 /200 tests expressly tied to calendar 2018; current 2026 measurement not established. | https://tax.ri.gov/tax-sections/sales-excise-taxes/remote-sellers | 2026-11-13 |
+| Read Interest-rates table: calendar 2026 trust/nontrust delinquency and refund rates, neighboring years distinguished. | https://tax.ri.gov/guidance/information-and-faqs/interest-rates | 2026-11-13 |
 
-- **Step 1 heading** — 
-
-### 1.1 State Sales Tax Rate
-
-- **State Sales Tax Rate** — 7.00% percent (flat, uniform statewide; one of the higher state rates in the country [T1])  _(R.I.G.L. §44-18-18)_
-
-### 1.2 No Local Sales Taxes [T1]
-
-- **No local sales taxes** — Rhode Island does NOT permit local sales taxes. The 7% rate is the total rate statewide. ([T1])
-
-### 1.3 Sourcing [T1]
-
-- **Sourcing method** — Rhode Island uses destination-based sourcing. As an SST member, Rhode Island follows SSUTA sourcing rules. ([T1])
-
-## Step 2: Transaction Classification Rules
-
-- **Step 2 heading** — 
-
-### 2.1 Grocery Food -- EXEMPT [T1]
-
-- **Unprepared grocery food** — Exempt ([T1])  _(R.I.G.L. §44-18-30(7))_
-- **Prepared food (restaurant meals)** — Taxable at 8% (1% meals/beverage tax + 7% sales tax, but the meals tax is structured as a separate 1% additional tax) ([T2])
-- **Candy** — Taxable ([T1])
-- **Soft drinks** — Taxable ([T1])
-
-### 2.2 Clothing -- Exempt Under $250 [T1]
-
-- **Clothing and footwear exemption threshold** — $250 per item USD (Items priced under $250 exempt; items priced $250 or more entirely taxable (all-or-nothing). [T1])  _(R.I.G.L. §44-18-30(27))_
-
-Note: This is similar to New York's clothing exemption structure (all-or-nothing) but with a higher threshold ($250 vs. $110). [T1]
-
-### 2.3 Prescription Drugs and Medical [T1]
-
-- **Prescription drugs** — Exempt ([T1])  _(R.I.G.L. §44-18-30(8))_
-- **OTC drugs** — Taxable ([T1])
-- **DME** — Exempt ([T1])
-- **Prosthetics** — Exempt ([T1])
-
-### 2.4 Services [T2]
-
-- **Taxable services** — Telecommunications, cable/satellite TV, storage, pet grooming, cleaning (commercial), laundry/dry cleaning, pest control, security/alarm, printing. ([T2])
-- **Exempt services** — Professional services (legal, accounting, medical, engineering), personal care (haircuts), education, financial services. ([T2])
-
-### 2.5 SaaS and Digital Goods -- TAXABLE [T1/T2]
-
-- **SaaS** — Taxable at the full 7% rate. Rhode Island specifically taxes prewritten computer software regardless of the method of delivery or access, including SaaS. ([T1])  _(R.I.G.L. §44-18-7(8))_
-- **Canned software (physical and electronic)** — Taxable ([T1])
-- **Custom software** — Exempt ([T2])
-- **Digital downloads** — Taxable ([T1])
-- **Streaming services** — Taxable ([T2])
-
-### 2.6 Manufacturing [T1]
-
-- **Machinery/equipment used directly in manufacturing** — Exempt ([T1])  _(R.I.G.L. §44-18-30(22))_
-- **Raw materials for resale** — Exempt under resale ([T1])
-
-### 2.7 Lodging [T1]
-
-- **Hotel rooms and transient accommodations combined rate** — 13% percent (7% sales tax + 1% local hotel tax + 5% state hotel tax = 13% total. [T1])
-- **Short-term rentals (Airbnb)** — Same combined rate applies ([T1])
-
-### 2.8 Meals and Beverages [T1]
-
-- **Meals (prepared food from restaurants) combined rate** — 8% percent ([T1] 7% sales tax + 1% local meals/beverage tax = 8% total)
-
-### 4.1 Filing Details [T1]
-
-**Filing Details**
-
-| Field | Detail |
-| --- | --- |
-| Return Form | T-204R (Sales and Use Tax Return) |
-| Filing Frequencies | Monthly (>$200/month avg liability); Quarterly (most others); Annually (very small) |
-| Due Date | 20th of the month following the reporting period |
-| Portal | https://www.tax.ri.gov |
-| E-filing | Required for most filers |
-
-### 4.2 Vendor Discount [T1]
-
-- **Vendor discount** — Rhode Island does NOT offer a vendor discount for timely filing. ([T1])
-
-### 4.3 Penalties and Interest [T1]
-
-- **Late filing penalty** — 10% of tax due or $50, whichever is greater ([T1])
-- **Interest rate on unpaid tax** — 18% per annum (1.5% per month) percent ([T1])
-- **Fraud penalty** — 50% of tax due ([T1])
-
-Note: Rhode Island's interest rate of 18% per annum is one of the highest in the nation. [T1]
-
-## Step 4: Deductibility / Exemptions
-
-- **General deductibility framework** — Exemptions identified in Step 2 above are the primary deductibility rules for Rhode Island. Key categories: ([T1])
-- **Resale exemption** — Valid resale certificate required. Retain for the statutory period. ([T1])
-- **Exempt organizations** — Government entities and qualifying nonprofits -- require exemption certificate on file. ([T1])
-- **Agricultural exemptions** — Where applicable per Step 2. ([T1])
-- **Manufacturing exemptions** — Where applicable per Step 2. ([T2])
-- **Exemption certificate retention** — All exemption certificates must be collected at or before the time of sale and retained per the state's statute of limitations. ([T1])
-
-## Step 5: Key Thresholds
-
-- **Step 5 heading** — 
-
-### 3.1 Economic Nexus Threshold [T1]
-
-**Economic Nexus Threshold**  _(R.I.G.L. §44-18.2-2)_
-
-| Field | Detail |
-| --- | --- |
-| Revenue Threshold | $100,000 in Rhode Island sales |
-| Transaction Threshold | 200 transactions |
-| Test | OR (either threshold triggers nexus) |
-| Measurement Period | Current or prior calendar year |
-| Effective Date | July 1, 2019 |
-
-### 3.2 Marketplace Facilitator [T1]
-
-- **Marketplace facilitator collection requirement** — Rhode Island requires marketplace facilitators to collect and remit. ([T1])  _(R.I.G.L. §44-18.2-3)_
-
-### 3.3 SST Registration [T1]
-
-- **SST registration status** — Full SST member. SSTRS and CSPs available. ([T1])
-
-## Step 6: Filing Deadlines and Penalties
-
-Refer to Step 3 for filing frequencies and due dates. [T1]
-
-## PROHIBITIONS
-
-- **No local tax add-ons** — NEVER apply local tax add-ons in Rhode Island. There are NO local sales taxes. 7% is the total rate. ([T1])
-- **SaaS not exempt** — NEVER assume SaaS is exempt in Rhode Island. It is explicitly taxable at 7%. ([T1])
-- **Clothing exemption not a deduction** — NEVER apply the clothing exemption as a deduction. It is all-or-nothing at the $250 threshold. ([T1])
-- **Meals/beverage tax not to be forgotten** — NEVER forget the separate 1% meals/beverage tax on prepared food. Total on meals = 8%. ([T1])
-- **Late payment penalty not underestimated** — NEVER underestimate the penalty for late payment. RI charges 18% per annum interest. ([T1])
-- **Grocery food not taxed** — NEVER tax grocery food in Rhode Island. Unprepared food is exempt. ([T1])
-- **No manual computation** — NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude. ([T1])
-
-### EC1 -- Clothing Exemption Threshold ($250) [T2]
-
-**Situation:** A retailer sells a jacket for $249 and a pair of boots for $260.
-
-**Resolution:**
-- Jacket ($249): EXEMPT (under $250 threshold). Tax = $0. [T1]
-- Boots ($260): FULLY TAXABLE (at or above $250). Tax = $260 x 7% = $18.20. [T1]
-- This is an all-or-nothing threshold -- the exemption does not apply as a deduction. [T1]
-- **Flag for reviewer:** Train retail staff that the $250 threshold is per-item, all-or-nothing. A $251 item is fully taxable. [T2]
-
-### EC2 -- SaaS Taxable in Rhode Island [T2]
-
-**Situation:** A SaaS company from California sells subscriptions to RI businesses. The company assumes SaaS is not taxable based on their experience in CA.
-
-**Resolution:**
-- Rhode Island taxes SaaS at the full 7% rate. [T1]
-- The SaaS company must register (if economic nexus is met), collect 7%, and remit. [T1]
-- R.I.G.L. §44-18-7(8) specifically includes prewritten software accessed remotely. [T1]
-- **Flag for reviewer:** SaaS companies with multi-state customers must check RI's position. Rhode Island is one of the states that clearly taxes SaaS. [T2]
-
-### EC3 -- High Interest Rate on Late Payments [T1]
-
-**Situation:** A seller discovers they failed to remit RI sales tax for 12 months.
-
-**Resolution:**
-- RI charges 18% per annum (1.5% per month) interest on unpaid tax. [T1]
-- Plus a 10% penalty. [T1]
-- Combined penalty and interest can be substantial. [T1]
-- Consider a Voluntary Disclosure Agreement (VDA) if the seller has multi-year exposure. [T2]
-- **Flag for reviewer:** RI's 18% interest rate makes timely compliance critical. VDA should be considered for historical exposure. [T2]
-
-### EC4 -- Meals Tax vs. Sales Tax on Prepared Food [T2]
-
-**Situation:** A restaurant charges $50 for a meal. What is the total tax?
-
-**Resolution:**
-- Sales tax: 7%. [T1]
-- Meals/beverage tax: additional 1%. [T1]
-- Total tax rate on prepared food: **8%** ($4.00 on a $50 meal). [T1]
-- The 1% meals/beverage tax is reported separately on the return. [T2]
-- **Flag for reviewer:** Ensure restaurants are collecting and reporting both the 7% sales tax and the 1% meals tax. [T2]
-
-### EC5 -- Multiple Clothing Items at Different Price Points [T2]
-
-**Situation:** Customer buys: shirt ($50), pants ($100), jacket ($260), shoes ($249).
-
-**Resolution:**
-- Shirt ($50): EXEMPT (under $250). [T1]
-- Pants ($100): EXEMPT (under $250). [T1]
-- Jacket ($260): FULLY TAXABLE at 7% ($18.20 tax). [T1]
-- Shoes ($249): EXEMPT (under $250). [T1]
-- Total tax = $18.20. [T1]
-- **Flag for reviewer:** Each item is evaluated independently. A $260 item is fully taxable even if other items in the same transaction are exempt. [T1]
-
-### EC6 -- Digital Subscription Bundle [T2]
-
-**Situation:** A company sells a bundle including SaaS access ($200), digital music streaming ($50), and a physical product ($100) to an RI customer. Single invoice.
-
-**Resolution:**
-- SaaS: taxable at 7%. [T1]
-- Digital music streaming: taxable at 7%. [T1]
-- Physical product: taxable at 7%. [T1]
-- All three components are taxable, so bundling does not create a mixed-taxability issue. [T1]
-- Total taxable = $350. Tax = $350 x 7% = $24.50. [T1]
-- **Flag for reviewer:** If any component were exempt, bundled transaction rules would apply. [T2]
-
-### EC7 -- Voluntary Disclosure Agreement (High Interest) [T2]
-
-**Situation:** A company discovers 3 years of uncollected RI sales tax. The potential interest at 18% per annum is substantial.
-
-**Resolution:**
-- RI's 18% interest rate creates urgency for voluntary disclosure. [T1]
-- The company should consider a VDA through the MTC National Nexus Program or directly with RI. [T2]
-- A VDA may limit the look-back period and reduce or waive penalties. [T2]
-- Interest is generally NOT waivable even under a VDA. [T2]
-- **Flag for reviewer:** Given RI's high interest rate, speed is essential. Every month of delay adds 1.5% interest. [T2]
-
-### Test 1 -- Basic Taxable Sale
-
-**Input:** Seller in Providence sells $1,000 of electronics. RI rate = 7%.
-**Expected output:** Tax = $1,000 x 7% = $70.00. Total = $1,070.00.
-
-### Test 2 -- Clothing Under $250 (Exempt)
-
-**Input:** Customer buys a $200 jacket in Warwick. RI rate = 7%.
-**Expected output:** Clothing under $250 is EXEMPT. Tax = $0. Total = $200.00.
-
-### Test 3 -- Clothing At/Over $250 (Taxable)
-
-**Input:** Customer buys $300 boots in Newport. RI rate = 7%.
-**Expected output:** Clothing $250+ is FULLY taxable. Tax = $300 x 7% = $21.00. Total = $321.00.
-
-### Test 4 -- SaaS Subscription
-
-**Input:** SaaS company charges RI business $500/month. RI rate = 7%.
-**Expected output:** SaaS IS taxable in RI. Tax = $500 x 7% = $35.00. Total = $535.00.
-
-### Test 5 -- Restaurant Meal
-
-**Input:** Customer has $80 dinner in Providence. Sales tax = 7%, meals tax = 1%. Total = 8%.
-**Expected output:** Tax = $80 x 8% = $6.40. Total = $86.40.
-
-### Test 6 -- Hotel Stay
-
-**Input:** Guest stays 3 nights at a Providence hotel at $200/night. Total lodging rate = 13%.
-**Expected output:** Room = $600. Tax = $600 x 13% = $78.00. Total = $678.00.
-
-### Test 7 -- Mixed Clothing Purchase
-
-**Input:** Customer buys a $240 coat (exempt) and a $260 dress (taxable). RI rate = 7%.
-**Expected output:** Coat ($240 < $250): exempt. Dress ($260 >= $250): fully taxable. Tax = $260 x 7% = $18.20. Total = $518.20.
-
-### Test 8 -- Digital Download
-
-**Input:** Customer downloads $25 e-book. RI rate = 7%.
-**Expected output:** Digital downloads are taxable. Tax = $25 x 7% = $1.75. Total = $26.75.
-
-## Reviewer Escalation Protocol
-
-**Reviewer Escalation Protocol**
-
-| Trigger | Action |
-| --- | --- |
-| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
-| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
-| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
-| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
-| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
-
-## Contribution Notes
-
-- This skill follows the Q1 execution format (Step 0 through Step 7).
-- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
-- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
-- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
-- All changes require validation by a US CPA or EA before merging.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: final 2026 RI-STR and lodging form line mapping; operative 2026 remote nexus measurement/marketplace exclusions; custom software and each service classification in the exception table; exact general-sales penalties/fraud/VDA relief; current resale/manufacturing certificate variants; special lodging duration/platform/Newport mechanics. Old annual small-filer assertion and broad exempt-service list remain unconfirmed. Old TaxJar and SalesTaxHandbook vendor sources are replaced by primary state materials; their claims are retained only where supported or explicitly limited above.
