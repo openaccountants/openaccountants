@@ -21,7 +21,7 @@ type: computation
 
 | Field | Value |
 | --- | --- |
-| Jurisdiction | Massachusetts (US-MA) |
+| Jurisdiction | Massachusetts (US-MA), [DOR](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
 | Tax authority | [Massachusetts Department of Revenue](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
 | Portal | [MassTaxConnect](https://mtc.dor.state.ma.us/mtc/_/) |
 | Law | [M.G.L. c. 62](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section4) (taxation of incomes), c. 62B (withholding and estimates), c. 62C (administration) |
@@ -190,7 +190,7 @@ expected:
 | REF-MA-03 | Income near the surtax threshold with timing or entity planning | Flag for reviewer: surtax planning and chapter 63E election |
 | REF-MA-04 | Complex credits (brownfields, life sciences, film) | Flag for reviewer |
 | REF-MA-05 | Schedule HC penalty (gaps in health coverage) | Flag for reviewer |
-| REF-MA-06 | Married couple with different residency status, filing jointly because of the 2024 rule | Refer: DOR joint-filing guidance for that case |
+| REF-MA-06 | Married couple with different residency status, filing jointly under the joint-filing rule | Refer: DOR joint-filing guidance for that case |
 
 ## Filing and payment
 
