@@ -53,7 +53,7 @@ Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Pub
 | State sales and use tax | 6.25% | On retail sales, leases and rentals of most goods and on taxable services ([source](https://comptroller.texas.gov/taxes/sales/)) |
 | Local sales and use tax | Up to 2% in total | Cities, counties, special purpose districts and transit authorities combined ([source](https://comptroller.texas.gov/taxes/sales/)) |
 | Maximum combined rate | 8.25% | "The local tax due cannot be more than 2 percent, so the most tax you can collect is 8.25 percent" ([source](https://comptroller.texas.gov/taxes/sales/)) |
-| Use tax | Same rates as sales tax | State use tax plus local use tax at the ship-to location |
+| Use tax | Same rates as sales tax | State use tax plus local use tax at the ship-to location ([source](https://comptroller.texas.gov/taxes/sales/)) |
 | Single local use tax rate (remote sellers only, by election) | 1.75% | Replaces destination local tax; not available to Texas-based sellers or marketplace providers ([remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 
 Local jurisdiction boundaries do not follow ZIP codes. Use the Comptroller's Sales Tax Rate Locator for the rate at a specific address.
