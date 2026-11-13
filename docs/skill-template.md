@@ -175,6 +175,8 @@ A figure that belongs to another skill in the pack is linked, not restated. If a
 
 One simple case, one with an edge case. The number follows the shape: two for `situation-rules`, `computation` and `decision`, one for `filing-howto`, `cross-country-method` and `rates-card`, none for `router` unless it carries rates, deadlines or worked cases. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`. Where the topic invites a "which should I" question (sole trader or company, cash or accrual, register for OSS or not, monthly or quarterly), one of the two cases is that decision, worked both ways to the figure that decides it.
 
+**Each example is one named taxpayer with real-looking figures.** Give the case a person (a given name and a surname, invented, never a real client) and use that name in the walk-through and in the block's `name:` line. At least one input amount is not round: EUR 41,237.50, not EUR 40,000. A reader follows a person more easily than "Example 1", and a round-number case is the one every other source already carries. Rates, bands, thresholds and dates are always the real ones. **Check:** `check_example_taxpayer` (a warning). The block below predates this rule.
+
 ```oa-check
 name: Sole trader, profit EUR 40,000 (2026 bands)
 inputs:

@@ -1186,6 +1186,45 @@ def check_domain_known(path, text, fm):
     return []
 
 
+_PERSON_NAME_RE = re.compile(r"\b[A-Z][a-zà-ÿ'-]+ [A-Z][a-zà-ÿ'-]+\b")
+_INPUT_LINE_RE = re.compile(r"^\s+[A-Za-z_][A-Za-z0-9_]*:\s*(-?\d[\d_]*(?:\.\d+)?)\s*$", re.MULTILINE)
+
+
+def _has_odd_amount(block):
+    """True when an input amount is not a round figure: cents that are not zero, or a
+    whole amount of 100 or more that is not a multiple of 100. Rates are ignored."""
+    inputs = block.split("steps:")[0]
+    for raw in _INPUT_LINE_RE.findall(inputs):
+        value = float(raw.replace("_", ""))
+        if abs(value) < 100:
+            continue
+        if round(value * 100) % 100 or round(value) % 100:
+            return True
+    return False
+
+
+def check_example_taxpayer(path, text, fm):
+    """(t) each worked example is one named, invented taxpayer with at least one amount
+    that is not round, and the walk-through above the block uses the same name. A reader
+    follows a person more easily than "Example 1", and a round-number case is the one
+    every other source already carries. Warns; it never changes a rate, band or date."""
+    blocks = OA_CHECK_BLOCK_RE.findall(text)
+    if not blocks:
+        return []
+    prose = OA_CHECK_BLOCK_RE.sub("", text)
+    problems = []
+    for number, block in enumerate(blocks, start=1):
+        title = re.search(r"^name:\s*(.+)$", block, re.MULTILINE)
+        names = _PERSON_NAME_RE.findall(title.group(1)) if title else []
+        if not names:
+            problems.append(f"example {number}: `name:` does not name a taxpayer (a given name and a surname)")
+        elif not any(name in prose for name in names):
+            problems.append(f"example {number}: the walk-through above the block does not use the taxpayer's name")
+        if not _has_odd_amount(block):
+            problems.append(f"example {number}: every input amount is round; use at least one that is not")
+    return problems
+
+
 #: Outside the register. Heuristics warn in both modes; explicit path identity
 #: is blocking on changed skills. Letters follow CHECKS.
 LESSON_CHECKS = [
@@ -1198,6 +1237,7 @@ LESSON_CHECKS = [
     ("q", "figure_in_library", check_figure_in_library),
     ("r", "domain_known", check_domain_known),
     ("s", "jurisdiction_path", check_jurisdiction_path),
+    ("t", "example_taxpayer", check_example_taxpayer),
 ]
 
 #: (letter in the standard's list, column name, function). Order is the report order.

@@ -145,6 +145,37 @@ class Years(unittest.TestCase):
         self.assertEqual(sc.check_year_matches_link("x.md", text, {"tax_year": 2026}), [])
 
 
+class ExampleTaxpayer(unittest.TestCase):
+    GOOD = (
+        "Ilaria Vrenko, a designer, invoices 41,237.50.\n\n"
+        "```oa-check\nname: Ilaria Vrenko, designer, EUR 41,237.50\ninputs:\n  income: 41237.50\n  rate: 0.2\n"
+        "steps:\n  - tax: income * rate\nexpected:\n  tax: 8247.50\n```\n"
+    )
+
+    def test_named_taxpayer_with_an_odd_amount_passes(self):
+        self.assertEqual(sc.check_example_taxpayer("x.md", self.GOOD, {}), [])
+
+    def test_label_and_round_amount_warn(self):
+        bad = (self.GOOD.replace("Ilaria Vrenko, designer, EUR 41,237.50", "Example 1, EUR 40,000")
+               .replace("41237.50", "40000").replace("Ilaria Vrenko, a designer", "A sole trader"))
+        problems = sc.check_example_taxpayer("x.md", bad, {})
+        self.assertEqual(len(problems), 2)
+        self.assertIn("does not name a taxpayer", problems[0])
+        self.assertIn("round", problems[1])
+
+    def test_name_must_appear_in_the_walk_through(self):
+        text = self.GOOD.replace("Ilaria Vrenko, a designer", "A designer")
+        self.assertIn("walk-through", sc.check_example_taxpayer("x.md", text, {})[0])
+
+    def test_rates_alone_do_not_count_as_an_odd_amount(self):
+        text = self.GOOD.replace("41237.50", "40000").replace("rate: 0.2", "rate: 0.1875")
+        self.assertTrue(any("round" in p for p in sc.check_example_taxpayer("x.md", text, {})))
+
+    def test_no_examples_no_warning_and_it_never_blocks(self):
+        self.assertEqual(sc.check_example_taxpayer("x.md", "no blocks here", {}), [])
+        self.assertNotIn("example_taxpayer", validate.PR_ERROR_CHECKS)
+
+
 class MergeRecord(unittest.TestCase):
     LOSER = "---\nname: l\n---\n## Rates\n\n## Penalties\n"
     BODY = "Folds loser-x.\n\n## Moved\n\n| Item | From |\n|---|---|\n| Rates | body |\n\n## Not moved\n\n| Item | Why |\n|---|---|\n| Penalties | duplicate |\n"
