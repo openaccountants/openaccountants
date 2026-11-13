@@ -12,8 +12,8 @@
 5. `panama-itbms.md`
 6. `panama-payroll.md`
 7. `payroll-workflow-base.md`
-8. `income-tax-workflow-base.md`
-9. `workflow-base.md`
+8. `workflow-base.md`
+9. `income-tax-workflow-base.md`
 
 ## How to use
 

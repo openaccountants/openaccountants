@@ -76,7 +76,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 66. `global-router.md`
 67. `nh-bpt-bet.md`
 68. `nh-interest-dividends-note.md`
-69. `cross-border-tax-workflow-base.md`
+69. `workflow-base.md`
+70. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

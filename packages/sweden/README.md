@@ -28,6 +28,7 @@
 21. `payroll-workflow-base.md`
 22. `transfer-pricing-workflow-base.md`
 23. `crypto-tax-workflow-base.md`
+24. `workflow-base.md`
 
 ## Also known as
 

@@ -11,6 +11,7 @@
 4. `el-salvador-iva.md`
 5. `el-salvador-tax-optimization.md`
 6. `payroll-workflow-base.md`
+7. `workflow-base.md`
 
 ## How to use
 

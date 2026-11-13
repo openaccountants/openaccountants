@@ -12,9 +12,9 @@
 5. `costa-rica-social-contributions.md`
 6. `costa-rica-tax-optimization.md`
 7. `payroll-workflow-base.md`
-8. `vat-workflow-base.md`
-9. `social-contributions-workflow-base.md`
-10. `workflow-base.md`
+8. `workflow-base.md`
+9. `vat-workflow-base.md`
+10. `social-contributions-workflow-base.md`
 
 ## How to use
 

@@ -11,6 +11,7 @@
 4. `gd-annual-stamp-tax.md`
 5. `gd-social-contributions.md`
 6. `gd-vat-registration.md`
+7. `workflow-base.md`
 
 ## How to use
 

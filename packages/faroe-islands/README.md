@@ -22,6 +22,7 @@
 15. `fo-vat.md`
 16. `payroll-workflow-base.md`
 17. `transfer-pricing-workflow-base.md`
+18. `workflow-base.md`
 
 ## How to use
 

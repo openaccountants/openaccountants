@@ -12,7 +12,8 @@
 5. `tw-company-formation.md`
 6. `tw-tax-overview.md`
 7. `company-formation-workflow-base.md`
-8. `vat-workflow-base.md`
+8. `workflow-base.md`
+9. `vat-workflow-base.md`
 
 ## Also known as
 

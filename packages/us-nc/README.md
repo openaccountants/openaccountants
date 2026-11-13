@@ -80,7 +80,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 70. `nc-payroll.md`
 71. `nc-return-assembly.md`
 72. `nc-sales-tax.md`
-73. `cross-border-tax-workflow-base.md`
+73. `workflow-base.md`
+74. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

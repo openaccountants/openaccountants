@@ -89,7 +89,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 79. `ny-residency-leaving-new-york.md`
 80. `ny-sales-tax.md`
 81. `nyc-ubt.md`
-82. `cross-border-tax-workflow-base.md`
+82. `workflow-base.md`
+83. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

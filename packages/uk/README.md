@@ -49,9 +49,9 @@
 42. `crypto-tax-workflow-base.md`
 43. `uk-guided-intake.md`
 44. `uk-return-assembly.md`
-45. `income-tax-workflow-base.md`
-46. `social-contributions-workflow-base.md`
-47. `workflow-base.md`
+45. `workflow-base.md`
+46. `income-tax-workflow-base.md`
+47. `social-contributions-workflow-base.md`
 
 ## Also known as
 

@@ -16,8 +16,8 @@
 9. `cameroon-vat.md`
 10. `payroll-workflow-base.md`
 11. `transfer-pricing-workflow-base.md`
-12. `income-tax-workflow-base.md`
-13. `workflow-base.md`
+12. `workflow-base.md`
+13. `income-tax-workflow-base.md`
 
 ## How to use
 

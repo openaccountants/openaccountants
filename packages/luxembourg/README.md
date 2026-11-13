@@ -20,9 +20,9 @@
 13. `eu-vat-directive.md`
 14. `payroll-workflow-base.md`
 15. `transfer-pricing-workflow-base.md`
-16. `income-tax-workflow-base.md`
-17. `social-contributions-workflow-base.md`
-18. `workflow-base.md`
+16. `workflow-base.md`
+17. `income-tax-workflow-base.md`
+18. `social-contributions-workflow-base.md`
 
 ## How to use
 

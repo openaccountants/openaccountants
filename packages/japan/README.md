@@ -29,9 +29,9 @@
 22. `crypto-tax-workflow-base.md`
 23. `japan-guided-intake.md`
 24. `japan-return-assembly.md`
-25. `vat-workflow-base.md`
-26. `income-tax-workflow-base.md`
-27. `workflow-base.md`
+25. `workflow-base.md`
+26. `vat-workflow-base.md`
+27. `income-tax-workflow-base.md`
 
 ## Also known as
 

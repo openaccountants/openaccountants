@@ -79,7 +79,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 69. `nj-income-tax.md`
 70. `nj-payroll.md`
 71. `nj-sales-tax.md`
-72. `cross-border-tax-workflow-base.md`
+72. `workflow-base.md`
+73. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

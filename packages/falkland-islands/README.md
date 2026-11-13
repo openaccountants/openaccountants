@@ -15,6 +15,7 @@
 8. `fk-transfer-pricing.md`
 9. `payroll-workflow-base.md`
 10. `transfer-pricing-workflow-base.md`
+11. `workflow-base.md`
 
 ## How to use
 

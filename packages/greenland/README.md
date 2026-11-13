@@ -11,6 +11,7 @@
 4. `gl-mandatory-pension.md`
 5. `gl-payroll-ama.md`
 6. `payroll-workflow-base.md`
+7. `workflow-base.md`
 
 ## How to use
 

@@ -16,9 +16,9 @@
 9. `guatemala-social-contributions.md`
 10. `payroll-workflow-base.md`
 11. `company-formation-workflow-base.md`
-12. `income-tax-workflow-base.md`
-13. `social-contributions-workflow-base.md`
-14. `workflow-base.md`
+12. `workflow-base.md`
+13. `income-tax-workflow-base.md`
+14. `social-contributions-workflow-base.md`
 
 ## How to use
 

@@ -9,6 +9,7 @@
 2. `intake.md`
 3. `README.md`
 4. `gp-producer-octroi-compliance.md`
+5. `workflow-base.md`
 
 ## How to use
 

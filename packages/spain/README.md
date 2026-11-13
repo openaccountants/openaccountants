@@ -70,9 +70,9 @@
 63. `crypto-tax-workflow-base.md`
 64. `spain-guided-intake.md`
 65. `spain-return-assembly.md`
-66. `income-tax-workflow-base.md`
-67. `social-contributions-workflow-base.md`
-68. `workflow-base.md`
+66. `workflow-base.md`
+67. `income-tax-workflow-base.md`
+68. `social-contributions-workflow-base.md`
 
 ## Also known as
 

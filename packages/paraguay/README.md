@@ -17,8 +17,8 @@
 10. `paraguay-transfer-pricing.md`
 11. `payroll-workflow-base.md`
 12. `transfer-pricing-workflow-base.md`
-13. `income-tax-workflow-base.md`
-14. `workflow-base.md`
+13. `workflow-base.md`
+14. `income-tax-workflow-base.md`
 
 ## How to use
 
