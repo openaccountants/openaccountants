@@ -3,14 +3,24 @@ jurisdiction: US-AL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 covered_by:
   IT-IND: alabama-income-tax
+  IT-CORP: al-corporate-income-tax
   VAT: al-sales-tax
   SC: al-unemployment-contributions
   PR: al-payroll-withholding
+  TP: alabama-transfer-pricing
+  XB: alabama-cross-border
+partial:
+  IT-IND: "2026 snapshot retains the verified 2025-2026 filing-cycle Form 40 amounts; 2026 final-return charts and complex nonresident/credit/NOL computations are unconfirmed."
+  IT-CORP: "2026 privilege-tax computation covered; Form 20C workflow is the 2025-2026 filing cycle and consolidated/pass-through/state-modification details remain incomplete."
+  VAT: "Ordinary rates, returns and payment covered; software/SaaS/digital and several service/product classifications remain unconfirmed."
+  PR: "Regular 2026 withholding formula and UI covered through two distinct owner skills; nonresident/non-wage withholding exceptions and all wage-table cells are not fully tied out."
+  TP: "Related-party addback and consolidated-return eligibility are not yet confirmed."
+  XB: "Separate cross-border job retained from its prior repair; nonresident real-property withholding category details remain unconfirmed."
 ---
 
 # Alabama (US-AL) pack
 
-Jurisdiction: Alabama, United States. Pack drafted 2026-10-27; figures re-checked against official sources on 2026-11-13 (tier 2, no accountant review). Individual income tax files carry tax year 2025 figures (the 2025 Form 40 booklet is the latest published) for the 2025-2026 filing cycle; the other files carry 2026 figures.
+Jurisdiction: Alabama, United States. Pack drafted 2026-10-27; figures re-checked against official sources on 2026-11-13 (tier 2, no accountant review). The core income skill now carries tax_year 2026 as a coverage snapshot, while expressly retaining the published 2025-2026 filing-cycle Form 40 figures and line mappings. It does not relabel those as 2026 final-return charts. The distinct cross-border job is unchanged in this gap-only pass.
 
 Alabama taxes corporations at a flat 6.5% of net income with a deduction for federal income
 tax paid or accrued, on single-sales-factor apportionment for tax years beginning on or after
@@ -18,6 +28,8 @@ tax paid or accrued, on single-sales-factor apportionment for tax years beginnin
 administers income tax, withholding (Forms A-1, A-6, A-3) and sales tax; unemployment
 compensation tax runs through the Department of Labor (adol.alabama.gov). Individuals pay a
 graduated income tax of 2%, 4% and 5% (see `alabama-income-tax`).
+
+The payroll job uses `al-payroll-withholding` for ALDOR income-tax withholding and `al-unemployment-contributions` for the distinct workforce UI computation, registration and returns. Load both for an employer with staff; keeping their existing slugs preserves their separate jobs. Federal payroll/corporate figures remain in `us-form-941-940-payroll` and `us-form-1120-c-corp`.
 
 ## applicable
 
@@ -53,8 +65,8 @@ and `al-transfer-pricing` are already Albania skill names (skills/albania/).
 
 | # | Source | URL | Read on |
 |---|---|---|---|
-| 1 | ALDOR Corporate Income Tax, read for the page as a whole | https://revenue.alabama.gov/taxes-fees/corporate-income-tax/ | 2026-11-13 |
-| 2 | ALDOR Individual Income Tax, read for the page as a whole | https://revenue.alabama.gov/taxes-fees/individual-income-tax/ | 2026-11-13 |
+| 1 | ALDOR Corporate Income Tax, read for the page as a whole | https://www.revenue.alabama.gov/tax-types/corporate-income-tax/ | 2026-11-13 |
+| 2 | ALDOR Individual Income Tax, read for the page as a whole | https://www.revenue.alabama.gov/tax-types/individual-income-tax/ | 2026-11-13 |
 | 3 | ALDOR individual income tax rate FAQ, read for the page as a whole | https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/ | 2026-11-13 |
 | 4 | 2025 Form 40 booklet, read for 25f40bk | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf | 2026-11-13 |
 | 5 | 2026 Form 40ES instructions, read for the page as a whole | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf | 2026-11-13 |
@@ -66,6 +78,6 @@ and `al-transfer-pricing` are already Albania skill names (skills/albania/).
 | 11 | ADOL Unemployment Compensation Division and FAQs, read for the page as a whole | https://adol.alabama.gov/divisions/unemployment-compensation/ | 2026-11-13 |
 
 Not yet confirmed (carried on each skill's Not yet confirmed line): the 2026 Form 40 booklet
-figures; sales tax penalties and filing frequencies; the related-party addback and consolidated
-return rules; the 2026 UC rate schedule and shared cost; which nonresident real property sellers
+figures; the sales-tax alternative-frequency averaging interpretation, fraud penalty and current form/screen IDs; the related-party addback and consolidated
+return rules; detailed current UI localization and late-payment interest; which nonresident real property sellers
 withhold at 3 percent and which at 4 percent.
