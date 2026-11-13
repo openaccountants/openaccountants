@@ -1,494 +1,401 @@
 ---
 name: workflow-base
-description: Universal workflow base for all accounting and compliance skills worldwide — tax, bookkeeping, payroll, e-invoicing, company formation, financial statements, transfer pricing, and tax optimization. Contains jurisdiction-agnostic workflow architecture — conservative defaults principle, reviewer assumption, output specification (Excel working paper + reviewer brief + action list), self-check framework, confidence tier definitions, execution pacing, citation discipline, and prohibition framework. No rates, no thresholds, no form references, no country-specific rules. MUST be loaded alongside at least one content skill that provides the actual rules for the relevant obligation and jurisdiction. Domain-specific workflow bases (bookkeeping-workflow-base, payroll-workflow-base, etc.) extend this base with domain-specific steps. Every output is reviewed by a credentialed professional before filing.
-version: 0.1
+description: >
+  Shared preparation and review method for accounting work across jurisdictions.
+  Read the records, establish the job and period, load the applicable content,
+  keep missing facts unresolved, trace positions to evidence and reconcile the
+  outputs. Includes working-paper, reviewer-brief, action-list and review-checklist
+  templates to use when the engagement needs them. This base supplies no national
+  tax rules, rates, deadlines or filing authority. It cannot select a legal
+  treatment from an unknown fact. Use with the relevant country and topic skills
+  for case-specific work; use the method alone to explain the preparation process.
+  Tool execution and professional approval must be recorded as actual events,
+  never inferred from loading this skill.
+version: 0.2
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+category: foundation
+type: cross-country-method
+domain: practice-management
+checked_on: 2026-11-13
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: income-tax
 ---
 
-# Workflow Base
+# Universal Workflow Base v0.2
 
-## Universal Workflow Base v0.1
+> **General reference only.** This is a preparation method, not a filing, payment instruction or professional approval. Review the applicable facts, documents, elections, period and local rules with a qualified professional in the relevant jurisdiction before filing or acting on a case-specific position.
 
-## What this file is, and what it is not
+## Scope and required inputs
 
-**This file contains workflow architecture only.** It defines how Claude should approach any tax or compliance obligation in any jurisdiction: the order of operations, how to handle ambiguity, what to produce as output, what to check before delivering, and what situations to refuse. It contains no tax rates, no dollar or euro thresholds, no form references, no deduction rules, no country-specific figures of any kind.
+| What to establish | Instruction |
+|---|---|
+| Job and output | Identify an explanation, lookup, working paper, review or filing-preparation request. Produce the outputs needed for that job. |
+| Place, person and period | Establish the relevant jurisdictions, taxpayer/entity or other subject, currency and exact period before applying rules that depend on them. Record facts not yet established. |
+| Evidence and content | Read supplied records and exact applicable skills, versions and primary sources. A filename, bank name or currency alone does not establish residence, entity status or legal treatment. |
+| Missing fact or rule | Keep the affected position unresolved. Obtain the fact or authoritative rule; do not replace it with an unsupported treatment. |
+| Completion and review | State what was prepared, what was checked, what remains open and whether actual professional review occurred. Loading this base proves none of those events. |
 
-**This file must always be loaded with at least one content skill.** Content skills provide the actual rules for the relevant obligation and jurisdiction. This file alone cannot produce any tax or compliance output. Loading it without at least one content skill is a configuration error and Claude must refuse to proceed.
+This base coordinates tax, bookkeeping, payroll, e-invoicing, formation, financial-statement, transfer-pricing and other accounting preparation. Country/topic content owns substantive rules. This method does not extend a companion's scope, certify a tax year, create a legal obligation or establish who is legally the preparer of record.
 
-**This file is the contract.** When a content skill says it conforms to this base, what it means is: it fills the slots specified in the companion skill contract, it produces outputs in the format specified in this base, its computations and classifications can be validated by the self-checks in this base, it respects the prohibition framework, and it participates in the workflow defined here.
+`checked_on` dates this method and its listed source reading, not every dependent country's law. This version remains **Not yet approved** and names no approving accountant.
 
-**The reviewer assumption.** This base is built for a product where every output is reviewed and signed off by a human professional credentialed in the relevant jurisdiction -- a CPA, Enrolled Agent, tax attorney, chartered accountant, warranted auditor, or equivalent licensed practitioner. The reviewer is the immediate consumer of the skill output, not the taxpayer or business owner. The reviewer is responsible for the final filing. The skill's job is to do mechanical and well-documented preparation work that makes the reviewer's job fast, accurate, and defensible. The skill is not the preparer of record. The reviewer is.
+For case-specific treatment or computation, load relevant content and its required dependencies. If none covers the job, identify the gap and stop that part of the work. General explanations of this workflow need no country skill. Keep safe, clearly separated work moving when an unrelated part is blocked.
 
-## Section 1 -- Core principles (read first, apply everywhere)
+## Section 1: Core principles
 
-### 1.1 -- Conservative defaults principle
+### 1.1 Evidence before treatment
 
-- **Conservative defaults principle** — When uncertain about any tax or compliance position, choose the treatment that costs the taxpayer or business more tax, never less. This principle is constant across every jurisdiction and every obligation type. The reviewer can correct an over-conservative position after the fact. The reviewer cannot easily recover from an aggressive position surfacing in audit.  _(unsure)_
-- **Data states framing** — Every item falls into one of three data states. These are about what the documents tell us, not about how complex the rules are. The rules are in statutes — they are what they are. What varies is whether we have enough information to apply them.  _(unsure)_
-- **Classified** — The source documents (bank statements, invoices, prior returns, uploaded files) carry every fact needed to apply the rule. We applied it. The result is in the working paper with the citation. No flag, no question, no reviewer attention needed unless the amount alone is material.  _(unsure)_
-- **Assumed** — The source documents do not carry a fact needed to apply the rule (business-use percentage, counterparty status, whether an asset is for personal or business use, whether an election was made). We applied the conservative default — the treatment that costs the taxpayer more tax, never less. You MUST do all three: 1. Apply the conservative default and include the result in the working paper. 2. Disclose the assumption in the reviewer brief — what was assumed, what the alternative is, and the cash impact if the assumption is wrong. 3. Ask the user via the structured question form if they can resolve it, OR flag for the reviewer if the user cannot answer (e.g., "did you make this election?" is for the user; "is this expense substantiated?" is for the reviewer). You may not silently assume. Every assumption must be disclosed.  _(unsure)_
-- **Needs input** — The situation cannot proceed without information that neither the documents nor conservative defaults can resolve. Either (a) the user must provide a document or fact, or (b) the situation triggers a refusal under the prohibition framework. If it's a missing document/fact — ask once, clearly. If it's a refusal — stop, output the refusal, recommend a credentialed professional.  _(unsure)_
+Use these work-item states. They describe this task's evidence, not public trust labels or professional approval:
 
-The old tier labels implied the rules themselves had different confidence levels. They don't. The Malta VAT rate is 18%. That's not "T1 deterministic" — it's just a fact. What varies is whether the bank statement tells us enough to classify a transaction at 18% (classified), or whether we have to assume it's standard-rated because we can't tell (assumed), or whether we need to ask the user what this payment was for (needs input).
+| State | When it applies | What to record |
+|---|---|---|
+| Resolved | Required facts are supported and an applicable, period-appropriate rule is confirmed. | Source item, established facts, rule/conditions, calculation, result and any judgement needing review. |
+| Unresolved | An essential fact, document, source, election, scope condition or interpretation is missing or conflicting. | Exact gap, affected items, how to resolve it and separately labelled conditional scenarios if useful. Keep it out of a completed position or liability. |
+| Excluded or outside scope | A duplicate, demonstrated exclusion or work requiring another skill/professional decision. | Original item, reason, exclusion evidence and handoff. No silent drops. |
 
-- **Ordering principle** — Conservatism means: more income or output tax recognized, fewer deductions or input credits taken, fewer reliefs claimed, longer recovery periods, higher rates assumed. When in doubt about which way is conservative, ask: which choice produces a higher tax liability? That is the conservative choice.  _(unsure)_
-- **Jurisdiction-specific conservative default examples** — The content skill specifies the concrete defaults for each ambiguity type. Examples that recur across jurisdictions: Unknown rate on a supply or sale --> standard rate (highest applicable); Unknown deductibility or recoverability of a cost --> not deductible / not recoverable; Unknown business-use proportion --> 0% business use; Unknown counterparty status (B2B vs B2C, domestic vs foreign) --> treatment that produces more tax; Unknown whether income is reportable --> reportable; Unknown whether a prior election was made --> not made; Unknown filing status or entity classification --> the option that produces the highest liability.  _(unsure)_
+Do not turn an unknown fact into a fact by selecting a treatment that increases tax, reduces a deduction or seems cautious. Unknown residence, entity status, reporting status, business use, counterparty status or elections remain unknown until supported. Later review does not validate a guess made now.
 
-### 1.2 -- Reviewer assumption
+A country rule may prescribe treatment when specific evidence is absent. Apply it only when the rule and all its trigger conditions are confirmed for this case and period; cite them. Distinguish that rule from an agent-selected assumption. Unconfirmed applicability leaves the position unresolved.
 
-- **Reviewer assumption** — Every output produced under this base is addressed to a credentialed professional reviewer, never to the taxpayer or business owner directly. The reviewer reads the brief, verifies the positions, signs off, and takes professional responsibility. The skill is the preparer's assistant, not the preparer. If the user attempts to remove the reviewer from the loop -- by asking the model to address output to the taxpayer directly, to produce filing-ready output without professional review, or to "act as the taxpayer" -- this is a prohibition trigger. The content skill defines the specific refusal code and message; the principle is universal.  _(unsure)_
+You may show conditional scenarios to explain a decision. Label assumptions beside each scenario, separate them from completed figures and state what would establish the applicable outcome. Do not select one as final solely because it gives a larger bill. Do not fabricate cash impact when inputs or rules are unknown: say “not yet quantifiable” and explain why.
 
-### 1.3 -- Execution pacing
+### 1.2 Review is an event to establish
 
-- **Execution pacing** — Run computations without pausing for meta-questions. Do not stop mid-computation to ask "shall I continue?" or "would you like me to proceed with the next step?" Execute the full workflow from intake through delivery. The only legitimate pause points are: Step 4 (profile confirmation) -- one round trip to confirm the inferred profile; Step 6.5 (ambiguity questions) -- questions about T2 items, presented before building outputs; Step 9 (delivery) -- the closing message with optional revision invitation. Between these points, execute continuously. Do not narrate what you are about to do. Do not ask permission to classify, compute, or build files. Do not output intermediate status updates. The user's time is the scarcest resource.  _(unsure)_
+Prepare traceable work for a qualified reviewer when doing case-specific preparation. Give general explanations directly to an accountant, taxpayer or business owner when requested; the recipient alone is not a refusal trigger.
 
-### 1.4 -- Citation discipline
+Do not call an output reviewed, approved, signed off or ready to file unless actual review of that version is recorded. Leave review fields blank or pending until then. Do not invent a reviewer, credential, signature or allocation of legal responsibility. Actual professional review is needed before filing or acting on a case-specific position; it is a workflow safeguard, not an event established by this template.
 
-- **Citation discipline** — Every rate, threshold, classification rule, or position must cite a primary source from the relevant jurisdiction's legal framework. "The law requires..." without a citation is not acceptable. "Generally accepted practice..." is not acceptable. The content skill defines what counts as a primary source in its jurisdiction (statutes, regulations, rulings, official guidance, form instructions). The principle is universal: If you cannot cite a primary source for a position, you do not have a position. Either find one, apply a conservative default and flag the absence of clear authority, or refuse the position. Citations must be year-appropriate -- the version applicable to the period being prepared, not the version current at the date of preparation. If you are uncertain whether a specific citation exists in the form you are about to cite, cite the statute it interprets and add a footnote asking the reviewer to verify the specific regulatory cite. The point of the discipline: the reviewer signs the filing. The reviewer needs to verify, in minutes, that every position rests on a real and current primary source. Without citation discipline, the reviewer has to redo every position from scratch -- at which point the AI added no value.  _(unsure)_
+### 1.3 Pacing
 
-## Section 2 -- The workflow (follow exactly)
+Continue authorized reading, reconciliation, supported calculations and preparation without repeatedly asking whether to continue. Search supplied material before asking. Group related questions, but ask for essential facts when needed. A question count or desire for one round trip must not cause an unsupported answer.
 
-You are helping prepare a tax or compliance filing. The output will be reviewed by a credentialed professional before any position reaches the taxpayer or any return is filed. Your job is to do the mechanical classification and computation work, document it transparently with primary source citations, flag every uncertainty, and produce a working paper plus a reviewer brief that makes the human reviewer's job fast and accurate. Execute these steps in order. Do not skip. Do not reorder. Do not start classifying or computing before step 4.
+Give brief progress or failure messages when useful. If a tool, source or critical input fails, explain the actual limit. Written instructions do not prove their execution.
 
-### Step 1 -- Confirm the companion content skills are loaded
+### 1.4 Sources and precedence
 
-0. **Confirm companion content skills loaded** — This workflow base requires at least one content skill loaded alongside it. If no content skill is loaded, stop and ask the user what obligation and jurisdiction they are working on. Do not proceed without at least one content skill. If the user's request crosses content skill boundaries, confirm which content skills are loaded and proceed with the ones available. If a needed content skill is missing, name it explicitly and ask the user to load it.
+For each substantive position, identify both evidence for the facts and the applicable primary rule. Use the source version for the requested period, including effective dates and exceptions. Read the provision and neighbouring conditions; a working link alone does not confirm its contents.
 
-### Step 2 -- Read the data
+Never invent a citation, substitute an unchecked statute for a missing rule, or use an unsupported fallback. If relevant authority cannot be obtained, leave that position unresolved and identify what is missing. The [controlling authoring standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md) defines source requirements; this base does not weaken them.
 
-0. **Read the data** — The user will provide source data (bank statements, transaction records, invoices, prior-period filings, or verbal descriptions). Read every line. Do not skim. Identify: The period being prepared (the single most important fact -- every threshold, rate, and figure depends on it); The currency (must match the jurisdiction's requirements or be flagged); The number of transactions or items; Any obvious format problems (missing columns, truncated data, unreadable encoding); Any documents the user referenced but did not actually attach. If the data is unreadable, in the wrong currency without conversion documentation, or covers a different jurisdiction than the loaded skills, stop and tell the user before proceeding.
+Applicable law and confirmed facts control the case. The repository standard controls authoring. This generic method cannot override either. Resolve content conflicts by checking scope, period, legal hierarchy and original authority. Do not automatically choose a skill because it is closer to a form line, more specific in its title or produces a larger amount. Stop the affected position until the conflict is resolved.
 
-### Step 3 -- Infer the profile from the data
+## The method, step by step
 
-0. **Infer the profile from the data** — Before asking the user any onboarding questions, attempt to infer the client/taxpayer profile from whatever data was provided. Look for: Entity type signals. Owner withdrawals, personal-name accounts, LLC or company indicators, multiple owners. Location signals. Bank names, tax authority references, addresses, currency, country codes. Period and frequency. First and last transaction dates. Business activity. Customer mix, supplier patterns, software stack, travel patterns. Cross-border activity. Foreign counterparties, foreign currency, foreign addresses. Maturity signals. Recurring vs sparse activity, stable vs ramp-up patterns. Description-level signals. Words in transaction descriptions that map to categories in the content skill's rules. If a description contains a keyword that maps to a deterministic classification, treat the description as answering the question -- do not escalate to the user. The content skill specifies additional jurisdiction-specific inference categories. Produce a one-paragraph inferred profile. State it as a hypothesis, not a fact. Include the period explicitly.
+### Step 1: Establish the job and load its content
 
-### Step 4 -- Confirm the inferred profile (one round trip)
+Name the requested obligation/topic, output and jurisdictions. Read the applicable content's scope, period, inputs, required dependencies, sources and referral rules. Load exact dependencies; do not substitute similar names or omit required companions. Held, missing, ambiguous or out-of-period content cannot supply usable rules. Record the gap and perform only clearly separable supported work.
 
-0. **Confirm the inferred profile** — Output the inferred profile to the user. Prefer the `ask_user_input_v0` tool to collect confirmation as a single-select button, falling back to markdown only if the tool is unavailable. Present the profile paragraph followed by: "Is this correct?" Options: ["Confirmed, proceed", "Something is wrong, let me correct"]. If confirmed, advance immediately. If corrected, update and re-confirm in one sentence, then advance. If the data inference was unable to determine essential fields (period, entity type, jurisdiction), ask the missing items as part of this same round trip.
+For an explanation or lookup, answer to the level the evidence supports. Do not create an engagement pack merely because this base was loaded. For preparation, follow the remaining steps and the applicable task requirements.
 
-### Step 5 -- Run refusal checks
+### Step 2: Read and inventory the data
 
-0. **Run refusal checks** — Before classifying or computing anything, check the confirmed profile against the prohibition framework (Section 6) AND the loaded content skill's topical refusal catalogue. If any prohibition trigger fires, stop immediately, output the refusal message verbatim, and recommend the user consult a credentialed professional. Do not attempt partial work.
+Read all supplied records relevant to the job, not a sample. Record filenames/versions, page/sheet ranges, item counts and unreadable or unavailable parts. Identify the period, currencies, missing columns, duplicates, truncated exports and referenced documents not supplied. Distinguish opening balances, totals and non-transaction rows from transactions before comparing counts.
 
-### Step 6 -- Do the work the content skill specifies
+Do not claim to have read an unavailable document or source. If conversion is needed, obtain the applicable conversion rule, rate/date and evidence from relevant content; do not invent them. Resolve defects affecting a position before computing it.
 
-0. **Do the work the content skill specifies** — Hand control to the content skill. The content skill defines the actual work -- what gets classified, what gets computed, what rules apply. This base does not know any of that. For every position the content skill takes, it must: 1. State the position (the classification, the amount, the computed figure) 2. Show the source data (which transactions, which prior-period line, which user-provided fact) 3. Cite the primary source (statute, regulation, official guidance, form instructions -- per Section 1.4) 4. Note any uncertainty (if the position required judgment, say so explicitly and flag for reviewer attention) 5. Apply conservative defaults where data is missing (per Section 1.1). Every transaction, every computation, every position MUST end up in exactly one of these states: cleanly resolved with a citation (T1), resolved with a conservative default and a flag (T2), or marked as out-of-scope and refused (T3). No position may be silently asserted without a source. No transaction may be silently dropped.
+### Step 3: Build an evidence-based profile
 
-### Step 6.5 -- Ask the user about T2 ambiguities
+Read entity/ownership indicators; location/currency; first and last dates and frequency; business activity; customer/supplier patterns; software; foreign counterparties/currencies; recurring and unusual items. These can guide investigation. A description can supply evidence, but a keyword alone does not prove legal meaning.
 
-0. **Ask the user about T2 ambiguities** — Before building any output files, present T2 ambiguities to the user via the `ask_user_input_v0` tool. Apply the content skill's filtering rules: 1. Below the cash floor. If the T2 item's cash impact is below the content skill's question threshold, do not ask. Apply the conservative default and disclose in the brief. 2. No-effect rule. If the outcome is the same regardless of how the user answers, do not ask. 3. Description-answered rule. If the description carries the answer, reclassify silently. Group items that share the same question. Order by cash impact descending. Include a "don't know / apply default" option on every question. Hard ceiling: 10 questions total across all tool calls. Above 10, fire the excessive-ambiguity refusal from the content skill. Wait for answers. Capture the answer set and proceed to Step 7.
+Summarize the profile with the period. Separate established facts from hypotheses and cite record locations. Do not silently promote inferred residence, legal status, elections or business purpose to confirmed inputs.
 
-### Step 7 -- Build the outputs
+### Step 4: Confirm what needs confirmation
 
-0. **Build the outputs** — By the time you reach Step 7, you have a complete classification/computation for every item. Build the three mandatory outputs: 1. The Excel working paper (per Section 3, Output 1). Write the file, run the recalc script, verify zero formula errors. Loop until clean. 2. The reviewer brief (per Section 3, Output 2). The brief cites bottom-line figures from the recalculated workbook, not from the model's own arithmetic. 3. The action list (per Section 3, Output 3). Items requiring reviewer or client action before filing. 4. The review checklist (per Section 3, Output 4). Structured sign-off document for the reviewing practitioner. Pre-populated from the working paper: every flag, every conservative default, every T2 position, every cross-check result becomes a checklist item the reviewer must explicitly accept or reject. Step 7 is not complete until all four are built and the recalc has reported success.
+Check what the records already establish. Ask targeted questions only for remaining essential facts, naming why each matters. A short confirmation of a genuinely inferred profile can help; a mandatory confirmation button is unnecessary when the facts are already established.
 
-### Step 7.5 -- Review pass (where the content skill requires it)
+Use an available structured-input tool if suitable; otherwise ask in chat. Read its actual schema, rather than assuming a tool name or option count. Record corrections and answer sources. User confirmation cannot replace documentary evidence or judgement required by the applicable rule.
 
-0. **Review pass** — If the content skill specifies a line-by-line review protocol, execute it here. Walk every item with adversarial intent -- look for what is wrong, not what is right. Fix any errors found, rebuild affected outputs, and re-verify before proceeding.
+### Step 5: Check scope and referral conditions
 
-### Step 8 -- Self-check before delivering
+Apply Section 6 and the content's actual conditions before affected classification/computation. Check required facts and dependencies. State the trigger, supporting evidence and next step. Do not clear a condition merely because a catalogue lacks a code or an AI says it passed. Separate supported work from blocked positions where safe; do not call partial work complete.
 
-0. **Self-check before delivering** — Run the self-checks in Section 5 against the outputs. If any check fails, fix the output and re-run. Only proceed to Step 9 when all checks pass.
+### Step 6: Apply content and trace each item
 
-### Step 9 -- Present the files and write the closing message
+Record each position's source item/evidence, established facts, primary rule and conditions, calculation, result and any judgement or limitation. Use the content's calculation order, rounding and form/account mapping where applicable. Assign the evidence state from Section 1.1.
 
-0. **Present the files and write the closing message** — Call `present_files` with all output files. Write a short closing chat response covering: The bottom-line figure, read from the workbook; A one-sentence summary of what is in each file; The highest-priority reviewer flag; An optional one-line revision invitation. Do NOT re-ask questions that were already answered in Step 6.5. The closing message is a delivery message, not an interactive prompt.
+Retain source identifiers. Trace legitimate splits back to their original item and reconcile the allocated total. Keep constituent mappings for aggregates. Do not double-count, silently exclude, or put unresolved items into completed categories as zero or guessed treatments.
 
-## Section 3 -- Output specification
+### Step 6.5: Resolve questions and retain open items
 
-Four outputs per engagement. All four are mandatory. Never produce one without the others.
+Use Section 4 to group questions and request documents before finalizing affected outputs. Missing answers stay unresolved. If the user cannot answer, name the document or professional decision needed. Clearly labelled partial working papers and scenarios are possible; silence or “don't know” does not authorize a treatment.
 
-### Output 1 -- Excel working paper
+### Step 7: Build appropriate outputs
 
-**Transactions sheet column structure**
+For preparation, use Section 3's working paper, brief, action list and checklist as applicable. They may be sections of one document rather than four files. State why an output is not needed when omitted. An explanation or lookup normally needs a cited answer and its limits, not a workbook and signoff pack.
 
-**Sheet "Transactions" column structure and color convention**  _(Content skill provides the sheet structure template; base minimum table)_
+Check available file, spreadsheet, calculation and presentation tools. Use their actual supported commands and locations. For a required workbook, use a real compatible engine to recalculate formulas; record the engine/result and resolve errors. An unavailable engine means “not recalculated”, not success.
 
-| Column | Content | Color convention |
-| --- | --- | --- |
-| A | Date | Black |
-| B | Counterparty / payee | Black |
-| C | Description | Black |
-| D | Amount (gross) | Blue (hardcoded input from source data) |
-| E | Classification code (form line, box code, account code) | Black |
-| F | Treatment label | Black |
-| G | Citation (statute, regulation, guidance) | Black |
-| H | Default applied? (Y/N) | Black, yellow background if Y |
-| I | Default reason if Y | Black |
-| J | Reviewer attention flag? (Y/N) | Black, yellow background if Y |
-| K | Reviewer attention reason if Y | Black |
-| L | Excluded? Reason if yes | Black |
+Without workbook/file tools, offer a Markdown/CSV working-paper draft where useful, with supported calculations and explicit limits. Do not call it a completed recalculated workbook. If the engagement requires an unavailable workbook/validation, stop that deliverable until available; independent safe reference work may continue.
 
-- **Row completeness and flag rules** — Every item in the source data appears as one row. Excluded items have a reason in column L. Default-applied items have "Y" in column H. Reviewer attention items have "Y" in column J.  _(unsure)_
-- **Summary sheet(s)** — Summary sheet(s) -- one row per classification code, with totals computed via `=SUMIFS()` formulas referencing the Transactions sheet. Formulas, not hardcoded values.  _(unsure)_
-- **Filing form sheet** — Filing form sheet (where applicable) -- final filing-ready figures structured to match the jurisdiction's actual form layout. Cross-sheet references in green text.  _(unsure)_
-- **Color conventions** — Color conventions (from the xlsx skill): Blue text: hardcoded inputs from source data; Black text: formulas; Green text: cross-sheet references; Yellow background: cells requiring reviewer attention.  _(xlsx skill)_
-- **Recalc requirement** — After building the workbook, run `python /mnt/skills/public/xlsx/scripts/recalc.py <filename>` to recalculate all formulas. Verify `status: success` and `total_errors: 0` in the JSON output. If errors exist, fix and re-run until clean. The workbook is not built until recalc has passed.  _(unsure)_
-- **File location** — Save to `/mnt/user-data/outputs/` with a descriptive filename and present via the `present_files` tool.  _(unsure)_
+### Step 7.5: Perform required review checks
 
-### Output 2 -- Reviewer brief (markdown)
+Run any review protocol required by the content. Re-read mappings, rule conditions and calculations for errors/omissions. Record what actually ran and what was found. Correct affected outputs and repeat relevant checks. AI self-checks are not accountant approval or substitutes for professional judgement.
 
-A narrative document that gives the human reviewer the context they need to verify the working paper efficiently. Follow this template:
+### Step 8: Check and reconcile
+
+Use Section 5. Distinguish mechanical tool checks, source/logic review and unperformed checks. Fix failures where possible. If a required check cannot pass, mark that output incomplete and explain the blocker. A partial/progress report is allowed; a failed result cannot be labelled completed.
+
+### Step 9: Present work and next actions
+
+Present real files through available tools or accessible attachments/links; never claim to attach an uncreated/unshared file. Give the supported result or clearly labelled resolved subtotal, unresolved items preventing a final total, deliverable contents, highest-priority action and actual review status. Repeated figures must match the reconciled paper. Do not re-ask answered questions unless a new inconsistency requires it.
+
+## Section 3: Output specification
+
+These templates are preparation aids for the requested job, not a second skill-admission standard.
+
+### Output 1: Working paper
+
+Use these columns for transaction work or a content-specific structure retaining the same traceability. For other tasks, identify equivalent inputs, rules and outputs; do not invent transactions.
+
+| Field | Content | Optional display convention |
+|---|---|---|
+| Source ID/location | File, page/sheet and original item ID, retained through splits | Traceable identifier |
+| Date | Source transaction/evidence date | Black |
+| Counterparty/payee | As recorded; note unresolved identity | Black |
+| Description | Original description and relevant document | Black |
+| Amount/currency | Source amount and gross/net basis | Blue for hardcoded inputs |
+| Classification/form/account code | Supported code, or explicitly unresolved | Black |
+| Treatment/state | Resolved, unresolved or excluded; apply rules only where supported | Black |
+| Citation | Confirmed primary rule, provision and conditions | Black |
+| Open fact/scenario | Gap, assumptions and exclusion from completed figures | Yellow attention flag |
+| Reviewer flag/reason | Yes/no and precise reason | Yellow attention flag |
+| Exclusion | Reason, evidence and handoff | Black |
+
+The old “default applied” fields become open-fact/scenario fields, not permission to assume a treatment. If content has a real rule for absent evidence, identify that rule and confirmed conditions.
+
+Account for every source item once in the inventory, including excluded and unresolved items. Show split/aggregate mappings. Zero is a real numeric value, not unknown. Keep unknown values blank or explicit and separately reconciled.
+
+Use summary formulas such as SUMIFS where appropriate, linked to detail rather than disconnected hardcoded totals. Separate resolved subtotals, unresolved source amounts and exclusions. A resolved subtotal is not a final liability while open items can change it. Reconcile back to original records.
+
+For filing preparation, a form-layout sheet may map supported figures to confirmed form boxes. Mark it draft pending actual review. Optional colours distinguish hardcoded inputs, formulas, cross-sheet references and attention flags; colour proves no control or review occurred.
+
+Record the actual workbook calculation engine, outcome, formula errors and limits. For an independently calculated Markdown/CSV draft, name its calculation method without claiming spreadsheet recalculation. Save descriptive filenames in the environment's actual supported output directory.
+
+### Output 2: Reviewer brief
+
+Use these sections for a case being prepared for review. Keep small cases concise while retaining evidence links and detail.
 
 ```markdown
-# [Obligation Type] -- Reviewer Brief
+# [Job] Reviewer Brief
 
-**Period:** [period]
-**Entity type:** [type]
-**Jurisdiction:** [jurisdiction]
-**Generated:** [date]
-**Content skill(s) invoked:** [list]
-**Source data referenced:** [list of files / documents]
-**Underlying records seen:** [yes / no / partial]
+Period: [exact period or unresolved]
+Subject/entity: [supported type/identity; open facts]
+Jurisdiction(s): [established places; open facts]
+Prepared on: [actual date]
+Skills and versions used: [exact list]
+Source records: [files/versions and locations]
+Underlying records seen: [complete/partial/unavailable; exact limits]
+Preparation and professional-review status: [actual events; pending if not done]
 
-## Scope of this work product
+## Scope
+[Job, exclusions, boundaries and separately blocked work.]
 
-[One paragraph describing what this brief covers and what it does not. Be explicit about boundaries.]
+## Result and completeness
+[Supported result or resolved subtotal, currency/units and confirmed form/account
+mapping. List unresolved source amounts and why no final figure exists where
+applicable. Link the reconciled working paper.]
 
-## Bottom line
-
-[The headline number(s) the reviewer needs to see first. State in the units the reviewer expects to see on the filing form. Reference the form line or box where it will appear.]
-
-## High flags (review first)
-
-[Items where the work required judgment AND has high cash magnitude. Each flag:
-- What was flagged
-- Why it requires judgment
-- The conservative default applied (if any)
-- The cash effect
-- What the user said when asked (if anything)
-
-Order by cash effect descending.]
+## High flags
+[Most consequential gaps/judgements first: item, reason, evidence/rule, known
+effect or 'not yet quantifiable', information needed and action owner.]
 
 ## Medium flags
+[Other boundaries, concentrations and repeated evidence gaps.]
 
-[Secondary items: concentration above threshold, multiple conservative defaults in one category, items at classification boundaries.]
+## Low or informational flags
+[Supported patterns, proximity to sourced thresholds and related work.]
 
-## Low / informational flags
+## Computation and evidence trail
+[Each position: conclusion, source ID, established facts, primary rule/conditions,
+calculation, mapping and effect. Retain full detail in the paper.]
 
-[Period totals approaching thresholds, related filings triggered, unusual but not high-impact patterns.]
+## Unresolved items and conditional scenarios
+[Every gap, assumptions beside any scenario, evidence that establishes the answer,
+and confirmation that scenarios were not silently included in completed figures.
+Reconcile this list to working-paper IDs, amounts and status.]
 
-## Computation trail
+## Documents and decisions needed
+[Specific records, who can supply them, professional decisions and next steps.]
 
-[Show the work. Every line item, every computation. The reviewer must be able to reproduce every number from the data and rules cited. For every position:
-- The position (what was concluded)
-- The source data
-- The rule applied (cite primary source)
-- The cash effect]
+## Scope and referral trace
+[Relevant checks/codes, trigger evidence, actual result or unresolved status and
+referral. Do not invent a catalogue or imply all checks were performed.]
 
-## Conservative defaults applied
+## Actions
+[Client/preparer/reviewer action, owner, supported deadline if any, known impact
+or not yet quantifiable, and item reference.]
 
-[Complete list of every T2 default, in cash-impact order. For each:
-- The ambiguity in one sentence
-- The default applied
-- The cash impact vs the alternative
-- The source citation]
-
-## Items requiring documentation
-
-[Specific documents the reviewer needs to see before sign-off. Not generic -- specific items identifying who has them and what is needed.]
-
-## Refusal trace
-
-[Explicit line-by-line trace of every refusal code from the prohibition framework AND the content skill's catalogue, with a one-sentence note on why each was cleared or fired. The trace makes refusal handling auditable.]
-
-## Scope limitations and disclaimers
-
-[Standard boilerplate, customized to the obligation:
-- This work product is a computation and classification aid prepared by an AI system under the supervision of the reviewing professional.
-- The reviewing professional is responsible for the final positions and all communications with the taxing authority.
-- This work product is based on the source data provided and accepts it as accurate.
-- Law is current as of [content skill version date].
-- Any position requiring judgment is flagged above with conservative defaults applied.]
+## Limitations and review status
+[Actual source versions/periods checked, unseen records, tool limits, outstanding
+work and review required before filing/action. Do not assert supervision, current
+law, source accuracy or approval unless established.]
 ```
 
-**File location.** Save to `/mnt/user-data/outputs/` and present via `present_files`.
+### Output 3: Action list
 
-### Output 3 -- Action list
+Separate client factual/document requests, preparer work and reviewer decisions. Give each action an item reference, owner, reason, known impact or “not yet quantifiable”, and confirmed deadline with its source if any. Do not invent deadlines or elections. The brief and delivery message must agree on next actions.
 
-- **Action list structure** — A short, structured list of items requiring action before the filing can proceed. Two categories: Reviewer actions -- positions the reviewer must verify, documents they must pull, elections they must confirm. Client actions -- documents the client must provide, facts they must confirm, elections they must make. Each item has: the item description, the deadline (if any), the cash impact if the item changes the position, and a reference to the relevant section of the reviewer brief. The action list is presented in the chat response and also saved as a section of the reviewer brief. It is the "what happens next" document.  _(unsure)_
+### Output 4: Review checklist and signoff
 
-### Output 4 -- Review checklist
+Populate from actual working paper/brief. Group related items without losing source IDs. This template is not a measured promise about review duration or proof a review service occurred.
 
-The review checklist is the structured sign-off document that the reviewing practitioner uses to verify the output. It is auto-generated from the working paper and reviewer brief — every flag, default, T2 position, and cross-check becomes a line item the reviewer must explicitly accept or reject.
+```text
+REVIEW CHECKLIST: [Job] [Period]
+Subject: [identifier] | Prepared by: [actual preparer/system and versions]
+Reviewer/credential/jurisdiction/date: [blank or pending until recorded]
 
-**The checklist is not optional.** It is what makes a 20-minute structured review possible instead of a 3-hour unstructured read. It is the basis for the review service on openaccountants.com.
+A. HIGH FLAGS
+For each flag: IDs; supported position or unresolved question; amount/currency
+if known; evidence/citation; requested decision; actual reviewer response.
 
-**Structure (in this exact order):**
+B. OPEN FACTS AND CONDITIONAL SCENARIOS
+For each gap/group: missing fact/source; any scenarios and assumptions; known
+impact or not yet quantifiable; needed evidence; actual resolution/status.
 
-```
-REVIEW CHECKLIST — [Obligation] [Period]
-Client: [name]  |  Prepared by: Claude + [skill name] [version]
-Reviewer: ____________  |  Credential: ____________  |  Date: ____________
+C. JUDGEMENT AND RULE APPLICABILITY
+For each judgement: facts, primary rule/conditions, alternatives, actual reviewer
+conclusion and evidence. An open fact stays open until established.
 
-═══════════════════════════════════════════════════════════════
-SECTION A: HIGH FLAGS (review these first)
-═══════════════════════════════════════════════════════════════
+D. STANDARD AND TOPICAL CHECKS
+[ ] Period, place and subject supported and correct?
+[ ] All source items accounted for; splits/duplicates/exclusions reconciled?
+[ ] Every used rule and condition supported for the requested period?
+[ ] Arithmetic/formulas checked by the recorded method?
+[ ] Totals agree; unresolved items excluded from final positions?
+[ ] Documents, elections and form/account mappings established?
+[ ] Applicable content-specific checks completed with results recorded?
+[ ] Failed, unavailable and not-applicable checks shown honestly?
 
-For each high flag from the reviewer brief:
+Add actual content-specific Review Checklist Items here. For example, reconcile
+supported sales/purchases to their listings, reconcile an income bridge after
+distinguishing receipts from classified income, or reconcile contributions to
+the confirmed base. These are tasks, not asserted completed ties.
 
-□ FLAG-[N]: [One-line description]
-  Position taken: [what Claude did]
-  Amount: [currency + figure]
-  Citation: [statute/regulation]
-  Reviewer action: [Agree] [Disagree — reason: ___________]
-
-═══════════════════════════════════════════════════════════════
-SECTION B: CONSERVATIVE DEFAULTS APPLIED
-═══════════════════════════════════════════════════════════════
-
-For each conservative default from the working paper (column H = Y):
-
-□ DEFAULT-[N]: [Item description] — [amount]
-  Default applied: [what was assumed]
-  Alternative: [what the reviewer could change]
-  Cash impact if changed: [amount]
-  Reviewer action: [Accept default] [Override — new treatment: ___________]
-
-═══════════════════════════════════════════════════════════════
-SECTION C: T2 POSITIONS (reviewer judgment required)
-═══════════════════════════════════════════════════════════════
-
-For each T2 item from the reviewer brief:
-
-□ T2-[N]: [Item description]
-  Ambiguity: [what is uncertain]
-  Position taken: [conservative treatment applied]
-  Alternative position: [what else could apply]
-  Cash impact: [difference between positions]
-  Reviewer decision: [Confirm position] [Change to: ___________]
-
-═══════════════════════════════════════════════════════════════
-SECTION D: STANDARD VERIFICATION
-═══════════════════════════════════════════════════════════════
-
-□ Bottom-line figure: [amount] — arithmetic verified?
-□ Filing period correct?
-□ Entity/taxpayer details correct?
-□ All source documents accounted for?
-□ No blocked/non-deductible categories incorrectly claimed?
-□ Cross-checks all pass? (list any that failed)
-
-Content skills add obligation-specific items here. Examples:
-- VAT: "Output VAT ties to sales listing? Input VAT ties to purchase listing?"
-- Income tax: "Gross income matches bank deposits? Deductions substantiated?"
-- Social contributions: "Contribution base matches net income from IT return?"
-
-═══════════════════════════════════════════════════════════════
-SECTION E: SIGN-OFF
-═══════════════════════════════════════════════════════════════
-
-I have reviewed this working paper and reviewer brief against the
-source documents provided. I have checked every item in Sections A-D
-above.
-
-Overall assessment:
-  □ Approved — positions are reasonable, ready to file
-  □ Approved with amendments — amendments noted above, re-run required
-  □ Rejected — material issues found, requires rework
-
-Reviewer: _________________
-Credential: _________________
-Jurisdiction: _________________
-Date: _________________
+E. ACTUAL REVIEW RECORD
+Do not pre-tick or pre-sign. Record actual reviewer and version reviewed.
+Possible outcomes: approved for stated purpose; amendments and rerun needed;
+rejected/rework required; pending. Retain actual decision and scope.
+A template establishes no approval, filing authority or credentials.
 ```
 
-**Population rules:**
+## Section 4: Questions and missing evidence
 
-1. Section A pulls from the reviewer brief's "High flags" section. One checklist item per flag.
-2. Section B pulls from the working paper — every row where column H = "Y". Group related defaults (e.g., "5 entertainment expenses blocked, total €340" instead of 5 separate items).
-3. Section C pulls from the reviewer brief's T2 disclosures. One item per T2 position.
-4. Section D uses the standard checks above PLUS any obligation-specific checks defined in the content skill's `## Review Checklist Items` section.
-5. Section E is always present, always last.
+Search supplied records and authorized connected material before asking. Do not repeat onboarding questions. Evidence genuinely establishing a fact removes the question; suggestive keywords alone do not.
 
-**If a content skill defines a `## Review Checklist Items` section**, those items are added to Section D. This is how each skill adds obligation-specific checks (e.g., a VAT skill adds "reverse charge correctly applied?" while an income tax skill adds "capital allowances within statutory limits?").
+Group shared questions, name items and explain consequences. Ask factual questions the user can answer; request documents when an answer is insufficient. Refer professional judgements to the reviewer rather than inviting the client to choose a legal conclusion.
 
-### Output 1 -- Excel working paper
+Do not ask an irrelevant question whose answer cannot affect this task. A small cash effect or arbitrary threshold does not establish a missing fact or authorize unsupported treatment. Follow real scoped materiality instructions only where applicable and confirmed; retain the gap/disposition.
 
-**Transactions sheet column list (seed detail)**  _(Seed deterministic facts)_
+Use structured input only if available and suitable; otherwise ordinary text works. Offer mutually exclusive factual options where useful, including “don't know / need to check”, without applying a default. Do not preselect an unconfirmed answer. Quantify an effect only when inputs and rules support it.
 
-| Item | Value | Reference |
-| --- | --- | --- |
-| A | Date | Black |
-| B | Counterparty / payee | Black |
-| C | Description | Black |
-| D | Amount (gross) | Blue (hardcoded input from source data) |
-| E | Classification code (form line, box code, account code) | Black |
-| F | Treatment label | Black |
-| G | Citation (statute, regulation, guidance) | Black |
-| H | Default applied? (Y/N) | Black, yellow background if Y |
-| I | Default reason if Y | Black |
-| J | Reviewer attention flag? (Y/N) | Black, yellow background if Y |
-| K | Reviewer attention reason if Y | Black |
-| L | Excluded? Reason if yes | Black |
+Ask manageable batches, prioritizing facts that unlock work. There is no universal ten-question ceiling, fixed tool schema or one-round-trip limit. If many essential facts remain, offer a document checklist or staged intake. Pause affected work rather than guessing or refusing merely because the list is long. Record answers/evidence with item IDs.
 
-## Section 4 -- Structured question form
+## Section 5: Checks and failure handling
 
-T2 ambiguities are presented to the user via the `ask_user_input_v0` tool, not as free-text questions in the chat response. Tappable questions have substantially lower friction than typed answers.
+Record each applicable check as **passed, failed, not run, or not applicable**, with evidence. Not-applicable needs a reason; it cannot replace a missing required test. Mechanical checks require actual execution. Source selection, legal applicability and judgement need reasoned review too. Arithmetic alone cannot prove them. No sample establishes all citations/items as checked.
 
-### Filtering rules -- which T2 items become questions
+| Check | What to establish |
+|---|---|
+| 1. Period | Exact period stated; applied rule/figure covers it. |
+| 2. Subject and scope | Person/entity, place and task supported and in scope. |
+| 3. Completeness | All source items mapped to resolved, unresolved or excluded states; splits/aggregates reconciled; no silent drops. |
+| 4. Calculation execution | Actual method/engine, result and errors recorded; unavailable/skipped tools never reported successful. |
+| 5. Exclusions | Reasons given; no contribution to completed classified totals; original source amounts retained in reconciliation. |
+| 6. No double-counting | Each source amount allocated once; legitimate splits sum to original; duplicates identified. |
+| 7. Source support | Every used substantive rule checked against its primary source/conditions; unverified positions unresolved. |
+| 8. Source period | Versions/effective dates match requested period. |
+| 9. Citation existence | Every cited provision exists and supports the statement; no unchecked substitute. |
+| 10. Open-item agreement | Paper/brief lists match by ID, known amount and status. |
+| 11. Question coverage | Each essential gap has a fact/document request, professional decision or explicit blocker; grouping hides none. |
+| 12. Totals agree | Repeated figures match the paper with the same completeness limits. |
+| 13. No invented treatment | No unresolved fact/source becomes a final treatment, zero, denial or assumed status. Absent-evidence rules require confirmed conditions. |
+| 14. Scope respected | No extension to another person, period, place or job. |
+| 15. Referral trace | Relevant checks show actual trigger evidence/result, including unresolved checks. |
+| 16. Usable handoff | Precise rule/form references when relevant; clear IDs, decisions and actions; language appropriate to recipient. |
+| 17. Catalogue fidelity | Used code/message matches actual trigger/source. Preserve a required message where applicable; explain context. |
+| 18. Honest labels | No invented code, reviewer, completed check, approval, attachment or filing-ready status. Explain novel blockers plainly. |
 
-- **Filtering rules** — 1. Description-answered rule. If the description carries the answer, reclassify silently. The item should never have been T2. 2. Cash floor. If the cash impact is below the content skill's question threshold, do not ask. Apply the default and disclose in the brief. 3. No-effect rule. If both possible answers lead to the same outcome, do not ask. 4. Grouping. Multiple items sharing the same question become one question, not separate questions. 5. Hard ceiling -- 10 questions total. Above 10, fire the excessive-ambiguity refusal.  _(unsure)_
+Fix failures and repeat affected checks/reconciliations. If a required check stays failed/unavailable, stop finalizing that output and report the next action. Avoid unproductive retries; a second failure may need different input, authority, tool or reviewer. A partial report can describe the blocker but cannot claim successful completion.
 
-### Tool call format
+## Section 6: When to refuse or refer
 
-The `ask_user_input_v0` tool takes 1-3 questions per call, each with 2-4 mutually exclusive options.
+Stop the affected position when required facts, content, sources, capabilities or review are missing, out of scope or conflicting. Explain the reason and next step. Refuse requests to invent evidence, conceal open items or falsely claim review/completion. Do not block a supported general explanation because its reader is a taxpayer.
 
-```yaml
-question: "[Plain language question naming the item(s) and the cash impact]"
-options:
-  - "[Most likely answer -- typically the conservative default]"
-  - "[Alternative answer -- with cash impact stated]"
-  - "[Third option if applicable]"
-  - "[Don't know / apply default -- the safety option]"
-type: "single_select"
+For a relevant loaded catalogue, confirm its exact trigger; use its existing code/required message where applicable. Do not borrow nearby codes for different conditions or imply unmet conditions were cleared. Explain what happened and how to resolve it. Where no code applies, state the blocker plainly without inventing one.
+
+Retain the two existing base codes with corrected scope:
+
+| Code | Actual trigger | Message |
+|---|---|---|
+| R-REVIEWER-MISSING | Request to call case-specific output approved or ready to file without actual required review. | “This work has not received the required professional review. I can provide the documented draft and open items, but cannot label it approved or ready to file.” |
+| R-CONTENT-MISMATCH | Required content/dependencies unavailable or not covering the facts, place, period or job. | “The loaded content does not cover this part of the request. I need the applicable content or a qualified professional's resolution before completing that position.” |
+
+Record applicable regional and country constraints rather than automatically choosing a more specific-looking code. Resolve legal hierarchy/applicability under Section 1.4; otherwise preserve the conflict for resolution. This workflow creates no jurisdiction-specific prohibition or legal-compliance opinion.
+
+## Section 7: Companion skill contract
+
+The [current skill-writing standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md) controls required metadata, headings, evidence, shapes, examples and independent review. This base adds no second admission checklist. Its seven shapes require zero, one or two examples as specified there; a valid routing-only skill needs no dummy example. Do not reject a companion for lacking five examples, thirteen slots, a bespoke refusal catalogue, defaults table, cash threshold or template its job does not need.
+
+For preparation, establish the relevant scope/period, supported rules/conditions and primary sources, required inputs, calculation/mapping steps, exceptions/referral conditions and version/currency information. If a required part for this position is missing, name it and leave the position unresolved. An unused optional section is not a missing legal input.
+
+Useful task extensions include working-paper specifications, output/brief fields, intake additions, self-checks, Review Checklist Items, cross-skill sequencing and sector notes. Use them where needed. A sourced legal condition is substantive content; an arbitrary template is not law.
+
+## Section 8: Responsibilities and conflicts
+
+This base owns the preparation sequence, evidence states, traceability, output aids, question handling, checks and truthful handoff. Companions own actual scope/period, rules/conditions, primary sources, figures, exceptions, forms, calculations, dependencies and referral instructions.
+
+Domain bases may provide necessary task steps and structures. Follow them when applicable while retaining these evidence/honesty safeguards. Do not replace a working country method with a generic template merely because this base was loaded.
+
+Applicable law and confirmed facts cannot be overridden by this workflow. The repository standard controls authoring. Resolve substantive conflicts from original authority, period and conditions; otherwise stop the position and disclose the conflict. Neither this base nor form-line proximity is an automatic legal tie-breaker.
+
+## Worked case: fictional receipt reconciliation
+
+The amounts below are invented currency units, not a national tax rate, threshold, deduction or liability. No legal classification is asserted.
+
+An export shows receipts of 600 and 400. A document explains the 600 item; the 400 item's purpose is unclear. Reconcile both: 600 + 400 = 1,000. Keep the second unresolved and request evidence. Do not label it income, loan, transfer or taxable merely from its direction/description. Even the explained receipt needs an applicable rule before a tax position can be completed.
+
+```oa-check
+name: Fictional receipt inventory, not a tax computation
+inputs:
+  explained_receipt: 600
+  unexplained_receipt: 400
+steps:
+  total_receipts: explained_receipt + unexplained_receipt
+  unresolved_source_amount: unexplained_receipt
+  inventory_difference: total_receipts - explained_receipt - unresolved_source_amount
+expected:
+  total_receipts: 1000
+  unresolved_source_amount: 400
+  inventory_difference: 0
 ```
 
-Mandatory features:
-- Name the item(s) explicitly (date, counterparty, amount)
-- Quantify the cash swing of the most consequential alternative
-- A "don't know / apply default" option on every question
-- Options are mutually exclusive
+The output says: “Source receipts reconcile to 1,000. The 400 item remains unresolved. These are source amounts, not computed income or tax. Please provide that item's supporting record. No professional review or spreadsheet recalculation is claimed.” A supported resolution later updates the item, applicable computation and affected summaries; retain original mappings and the review trail.
 
-### Tool call sequencing
+## Section 9: Lineage, limits and revision history
 
-- **Tool call sequencing** — 1-3 questions: one tool call; 4-6 questions: two tool calls, highest-impact first; 7-10 questions: three or four tool calls; Above 10: fire the excessive-ambiguity refusal.  _(unsure)_
+The April 2026 v0.1 log described extraction from `us-tax-workflow-base` v0.2 and `vat-workflow-base` v0.2.0, whose shared method began in the Malta VAT engine. This is architectural lineage, not current legal verification or proof those versions are used in production. Existing Git history/contributor credit remains attached to the same identity.
 
-### Rules
+The old intake, sequencing, working-paper conventions, brief, action list, questions, checks, referral trace and companion guidance remain. Tax-maximising assumptions, the unsupported national-rate illustration, fixed five-example/thirteen-slot contract, app-specific commands and assumed review are superseded. No old guessing instruction remains an active fallback.
 
-- **Structured question form rules** — 1. One round trip per conversation. Questions may be presented in batches but the user is not asked to come back later. 2. Pre-fill with the model's best guess. Every question states the current default and the alternative. 3. Quantify the swing. Every question includes a cash-impact estimate. 4. Separate user-answerable from documentation-required. Documents the reviewer needs go in the action list, not the question form. 5. Maximum 10 questions. If more than 10 defaults were applied, group by category. 6. No questions about things the data already answered. 7. Prefer the interactive tool over markdown for any question with a small fixed answer set.  _(unsure)_
+Known limits: instructions cannot establish document completeness/truth, source reading, code execution or approval. Record evidence for those events. Mechanical tests cannot establish legal applicability. Templates are preparation aids, not a measured review-time promise or assurance standard. Confirm the engagement's actual needs.
 
-## Section 5 -- Self-check framework
+**v0.1 (April 2026; later last_updated 2026-07-13):** initial universal base, labelled tax_year 2025. That old label is historical metadata, not proof of current legal currency.
 
-Run these checks against the draft output before delivering. If any fails, fix the output and re-run. Do not deliver work product that fails any check. These checks are deterministic -- they catch errors of execution and integrity. They are necessary but not sufficient. Content skills may add topical checks on top of these.
+**v0.2 (2026-11-13):** repair in place, retaining preparation/review controls. Replace unsupported assumptions with unresolved-item handling; make tools/outputs task-appropriate; follow the current authoring standard; distinguish executed checks and actual approval. Practice-management describes the actual non-national preparation method. Cross-country-method describes a reusable working method, not just a router. The date checks this method, not every country's law. No accountant approval is claimed.
 
-### Structural integrity checks
+## Limits before filing or action
 
-Check 1 -- Period is stated. The reviewer brief states the period explicitly in the header. Every figure is for that period.
-Check 2 -- Entity type / taxpayer type is stated and in scope. The brief states the entity type. If it is out of scope, the refusal should have fired in Step 5.
-Check 3 -- Completeness. Every item in the source data appears exactly once in the working paper, either classified or excluded with a reason. Count the rows in the input; count the rows in the workbook; they must match. No silent drops.
-Check 4 -- Recalc ran successfully. The recalc script reported `status: success` with `total_errors: 0`. If skipped or errored, the working paper is not deliverable.
-Check 5 -- Exclusion consistency. Every excluded item has zero in classification columns. An item cannot be both excluded and classified.
-Check 6 -- No double-counting. Each item has exactly one classification code or is excluded. The sum of classified items plus excluded items equals the total item count.
+This skill is informational and computational preparation guidance, not a case-specific tax, legal or financial opinion. Templates/examples confer no filing authority, credential or approval. Obtain actual professional review in the relevant jurisdiction before filing or acting on case-specific positions. Keep unresolved facts, unsupported rules, unavailable checks and source limits visible.
 
-### Citation discipline checks
+## Sources
 
-Check 7 -- Every position has a primary source citation. Spot-check at least five citations -- they must point to identifiable primary sources in the relevant jurisdiction.
-Check 8 -- Citations are period-appropriate. Citations reference the version applicable to the period being prepared.
-Check 9 -- No invented citations. Every citation refers to a source that actually exists. If uncertain, cite the statute and flag for reviewer verification.
+Preparation sequence, templates and refusal messages are OA workflow design, not statutory or professional-standard mandates. Repository contracts read in full on 2026-11-13: [skill-writing standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md), [domain rules](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/domains.yml), [agent instructions](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/AGENTS.md) and [contribution/approval rules](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/CONTRIBUTING.md), at source commit `b565a49a68d4761bb2cc6b410922bfd2221e214b`. These links identify repository contracts, not legal citations.
 
-### Cross-document consistency checks
+The professional principles below are context for honest evidence handling and reporting limits, not authority that this exact workflow is required or one code has legal force everywhere. The IESBA overview explains that adoption/enforcement depend on jurisdiction. No entire handbook or professional-compliance review is claimed.
 
-Check 10 -- Default disclosure matches working paper. Every item flagged as default-applied in the workbook has a corresponding entry in the brief's "Conservative defaults applied" section. Counts must match exactly.
-Check 11 -- Question coverage. Every ambiguity that drove a default has a corresponding question in the form, OR is disclosed in the brief, OR is grouped with other items. No ambiguity is silently absent.
-Check 12 -- Bottom line is consistent across documents. The bottom-line figure in the chat response matches the brief, which matches the working paper. If they differ, fix before delivering. The working paper is the source of truth.
+| Source and part actually read | URL | Read on |
+|---|---|---|
+| IESBA Code overview: fundamental principles, adoption/enforcement sections. Integrity, objectivity and competence/due care; local adoption varies. Context only, not a filing rule. | https://www.ethicsboard.org/iesba-code | 2026-11-13 |
 
-### Conservatism, scope, and refusal checks
-
-Check 13 -- Conservative defaults are actually conservative. For every default applied, the chosen treatment costs the taxpayer more tax than the alternative. If a default would reduce liability, it is misclassified -- fix it.
-Check 14 -- Scope is respected. No position in the brief addresses anything outside the loaded content skill's scope. Out-of-scope output is stripped and noted.
-Check 15 -- Refusal sweep with named codes. The brief contains an explicit refusal trace listing every R-code from the prohibition framework AND the content skill's catalogue, with a one-sentence note on why each was cleared or fired.
-Check 16 -- Reviewer-actionable language. The brief is written for a credentialed professional. Form references are present. Technical terms are precise. Layperson softening is absent.
-
-### Refusal discipline checks
-
-Check 17 -- Refusal output is verbatim from the catalogue. If any refusal fired, the catalogue text appears unchanged in the output. The model may add explanation around it but the catalogue text itself is verbatim.
-Check 18 -- No invented refusal codes. Every refusal code in the output exists in the prohibition framework or in a loaded content skill's catalogue. If the model encountered a novel fact pattern, it used the content-mismatch fallback, not a fabricated code.
-
-### Failure handling
-
-- **Failure handling** — If any check fails, fix the output and re-run all checks. Do not deliver until all pass. If a check fails twice in a row on the same item, stop and report the failure to the user explicitly -- repeated failure usually indicates a deeper issue the model cannot fix on its own.  _(unsure)_
-
-## Section 6 -- Prohibition framework
-
-This section defines how hard stops (refusals) are structured across the system. The universal base does not contain jurisdiction-specific refusals -- those live in the content skills and regional layers. This section defines the rules that govern all refusals everywhere.
-
-### The verbatim rule
-
-- **Verbatim rule** — When a refusal fires, output the refusal message text from the relevant catalogue verbatim. The model may add explanation, context, or recommendations around the verbatim text -- identifying which facts triggered the refusal, recommending next steps -- but the catalogue text itself must appear unchanged. Paraphrasing, softening, or recombining catalogue text is a workflow violation. Self-check 17 verifies this. The verbatim rule exists because catalogue language has been deliberately chosen to be precise and defensible. A reviewer reading the refusal output should see the same words every time, so they can recognize the refusal pattern at a glance.  _(unsure)_
-
-### The "no invented codes" meta-rule
-
-- **No invented codes meta-rule** — If a fact pattern looks like it should trigger a refusal but no code in the loaded catalogues matches, do NOT invent a new code. Instead: 1. If the situation is similar to an existing refusal, use the closest existing code and note in the explanation that the fact pattern is adjacent but not identical. 2. If the situation is genuinely novel, use the content-mismatch fallback code with an explanation naming what facts the loaded skills cannot handle, and recommend the user consult a credentialed professional. 3. If uncertain whether the fact pattern requires a refusal at all, ask the user a clarifying question rather than refusing prematurely. The model may NOT invent a refusal code that does not appear in a loaded catalogue. Self-check 18 verifies this.  _(unsure)_
-
-### The catalogue is the floor
-
-- **Catalogue is the floor** — Content skills and regional layers add to the refusal system with their own catalogues. The refusal trace in the reviewer brief lists all codes from all loaded catalogues.  _(unsure)_
-
-### Conflict resolution
-
-- **Conflict resolution (refusals)** — If both a regional/directive layer refusal and a country/content skill refusal fire for the same situation, fire the more specific one (typically the country/content skill's). Both appear in the refusal trace regardless of which was fired.  _(unsure)_
-
-### Universal refusal triggers
-
-The following triggers apply regardless of jurisdiction. Content skills define jurisdiction-specific triggers on top of these.
-
-- **R-REVIEWER-MISSING** — Trigger: The user asks the model to address output to the taxpayer/business owner directly, to produce filing-ready output without professional review, or to remove the reviewer from the workflow. Output: "This product is built on a load-bearing assumption: every output is reviewed and signed off by a credentialed professional in the relevant jurisdiction. The reviewer is the immediate consumer of the output, not the taxpayer. I cannot produce output without the reviewer-in-the-loop assumption being satisfied. If you are working with a credentialed reviewer, I am happy to continue with the brief addressed to them. If you need a licensed professional, visit openaccountants.com."  _(unsure)_
-- **R-CONTENT-MISMATCH** — Trigger: The user's request requires a content skill that is not loaded, OR a fact pattern is refusable but no specific code in the loaded catalogues covers it. Output: "I need a different content skill loaded to handle this request, OR the fact pattern involves [specify what] which is outside the scope of the currently loaded skills. The loaded skills are [list]. Please [load the appropriate skill OR consult a credentialed professional]."  _(unsure)_
-
-## Section 7 -- Companion skill contract
-
-Every content skill loaded alongside this workflow base MUST provide the following. The content skill is incomplete without all mandatory slots. This base is incomplete without at least one content skill.
-
-### Mandatory slots
-
-- **Mandatory slots list** — 1. Scope statement. What the skill covers and what it does not. 2. Period coverage. The period(s) the skill is current for, with currency date and applicable legislation. 3. Period-specific figures. All rates, thresholds, limits, and indexed figures in one place with primary source citations. 4. Primary source library. Every statute, regulation, ruling, and guidance document the skill cites. 5. Position rules. The actual classification, computation, or treatment rules with trigger conditions, conservative defaults, citations, and worked examples. 6. Topical refusal catalogue. Refusals specific to this skill, with code, trigger, and verbatim output message. 7. Conservative defaults table. The skill's concrete defaults for each ambiguity type. 8. Reviewer attention thresholds. Cash thresholds at which a position becomes a reviewer flag regardless of certainty. 9. Worked examples. Minimum 5 fully worked positions from hypothetical (not real test) data. 10. Output format extension. Any additions to the standard reviewer brief template. 11. Intake form additions. Skill-specific questions for the structured question form. 12. Self-check additions. Topical checks on top of the base checks. 13. Currency and revision metadata. Version number, currency date, change log.  _(unsure)_
-
-### Optional slots
-
-- **Optional slots list** — 14. Supporting working paper specification. Structure of any skill-specific working paper. 15. Cross-skill references. How this skill's outputs feed other skills. 16. Sectoral notes. Patterns specific to common business types in the jurisdiction. If any mandatory slot is missing, refuse to proceed and tell the user the content skill is incomplete.  _(unsure)_
-
-## Section 8 -- How this base interacts with companion skills
-
-This base defines workflow architecture. Content skills define substantive rules. The division is strict:
-
-## How this base interacts with companion skills
-
-- **This file owns** — The workflow runbook (Section 2); The conservative defaults principle (Section 1.1); The execution pacing rule (Section 1.3); The citation discipline principle (Section 1.4); The output specification (Section 3); The structured question form rules (Section 4); The self-check framework (Section 5); The prohibition framework (Section 6); The companion skill contract (Section 7).  _(unsure)_
-
-## How this base interacts with companion skills
-
-- **Each content skill owns** — Its scope statement and period coverage; Its rates, thresholds, and period-specific figures; Its position rules and classification logic; Its primary source library; Its topical refusal catalogue; Its conservative defaults table; Its worked examples; Its intake additions and self-check additions; Its version and change log.  _(unsure)_
-
-## How this base interacts with companion skills
-
-- **Conflict resolution** — If a content skill and this base disagree on procedure, this base wins. If a content skill states a substantive rule and this base is silent, the content skill wins. If two content skills conflict on a position, the skill closer to the actual filing form line wins. A content skill should not redefine the workflow, output specification, question form, self-checks, or prohibition framework. If it does, fall back to the base versions.  _(unsure)_
-
-## Section 9 -- Reference material
-
-### Validation status
-
-This file is v0.1 of `workflow-base`, created April 2026 as a consolidation of the shared architectural principles from `us-tax-workflow-base` v0.2 and `vat-workflow-base` v0.2.0. Both of those files remain in production for their respective skill stacks (US federal income tax and EU/international VAT). This universal base is for all new skills going forward.
-
-### Architectural lineage
-
-The workflow runbook, conservative defaults principle, three-output specification, structured question form, self-check methodology, reviewer brief template, Excel working paper conventions, refusal trace mechanism, and companion skill contract were originally developed in `vat-workflow-base` v0.1 (April 2026) for the OpenAccountants Malta VAT engine, then lifted into `us-tax-workflow-base` v0.1 with US adaptations. This universal base extracts the jurisdiction-agnostic core that both share.
-
-### What this base does NOT contain (stays in content skills)
-
-Jurisdiction-specific refusals (e.g., R-US-PARTNERSHIP, R-US-CRYPTO) -- those stay in the US intake and content skills; VAT-specific classification pipeline (two-tier supplier pattern lookup) -- stays in VAT content skills; Country-specific forms, rates, thresholds -- stays in content skills; Dependency chains and skill sequencing -- stays in country assembly orchestrators; US-specific citation hierarchy (IRC, Treasury Reg, Rev. Rul., etc.) -- stays in `us-tax-workflow-base`.
-
-### Known gaps
-
-1. The self-checks are deterministic but not exhaustive. They catch execution errors, not conceptual misunderstandings. 2. The 10-question maximum is a heuristic, not a measured optimum. 3. The reviewer attention threshold mechanism is delegated to content skills without a base-level minimum. 4. Citation discipline assumes the model can produce accurate primary source citations. The fallback instruction to flag uncertain cites is the mitigation. 5. The Excel template structure has not yet been validated against real practitioner feedback across all jurisdictions.
-
-### Change log
-
-v0.1 (April 2026): Initial creation. Extracted jurisdiction-agnostic principles from `us-tax-workflow-base` v0.2 and `vat-workflow-base` v0.2.0. Establishes the universal contract for all new skills.
-
-### Self-check (of this document)
-
-1. Workflow at top of file after principles: yes (Section 2). 2. Imperatives not descriptions: yes throughout. 3. Output specification mandates Excel + brief + action list + review checklist: yes (Section 3). 4. Structured question form rules present: yes (Section 4). 5. Self-check framework present: yes (Section 5, eighteen checks). 6. No tax content, no rates, no thresholds, no form references, no jurisdiction-specific figures: verified. 7. Companion skill contract present: yes (Section 7, 13 mandatory + 3 optional). 8. Inferred-profile-first ordering: yes (Step 3 before Step 4). 9. Prohibition framework present: yes (Section 6). 10. Citation discipline as a first-class principle: yes (Section 1.4). 11. Reviewer assumed throughout: yes. 12. Reference material at bottom: yes (Section 9).
-
-## End of Universal Workflow Base v0.1
-
-This base is incomplete without at least one content skill loaded alongside it. If you are reading this without any content skill loaded, ask the user what obligation and jurisdiction they are working on and refuse to proceed until the appropriate content skill is loaded.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: this base asserts no national legal rules, rates, procedures or country-year coverage. Confirm them in applicable content and primary sources before completing an affected position.
