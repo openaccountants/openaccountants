@@ -178,7 +178,7 @@ Taxable entities under more than 50% common ownership in a unitary business must
 
 **Case 1, a decision: E-Z or Long Form?** A Texas single-member LLC providing consulting files its 2027 report for calendar year 2026. Total revenue USD 3,400,000; Texas receipts USD 2,720,000 of USD 3,400,000 (factor 0.8). No goods, so no cost of goods sold. The owner's net distributive income is USD 900,000, capped at USD 480,000; employees' W-2 Medicare wages USD 600,000; benefits USD 60,000. Compensation = USD 1,140,000.
 
-Bases: 70% = USD 2,380,000; revenue minus compensation = USD 2,260,000; revenue minus USD 1 million = USD 2,400,000. The lowest is USD 2,260,000. Long Form tax at 0.75%: USD 2,260,000 x 0.8 x 0.75% = USD 13,560.00. E-Z: USD 3,400,000 x 0.8 x 0.331% = USD 9,003.20. Margin is 66% of revenue, above 44.1%, so E-Z wins by USD 4,556.80. File Form 05-169 and Form 05-102; pay by 15 May 2027.
+Bases: 70% = USD 2,380,000; revenue minus compensation = USD 2,260,000; revenue minus USD 1 million = USD 2,400,000. The lowest is USD 2,260,000. Long Form tax at 0.75%: USD 2,260,000 x 0.8 x 0.75% = USD 13,560.00. E-Z: USD 3,400,000 x 0.8 x 0.331% = USD 9,003.20. Margin is 66% of revenue, above 44.1%, so E-Z wins by USD 4,556.80. File Form 05-169 and Form 05-102; pay by 17 May 2027 (15 May 2027 is a Saturday).
 
 ```oa-check
 name: E-Z against Long Form, consulting LLC (2027 report)
@@ -208,7 +208,7 @@ expected:
 
 **Case 2, a retailer under the USD 1,000 rule.** A Texas LLC that resells furniture it buys from unrelated makers has 2026 total revenue of USD 2,900,000 (above the threshold), Texas cost of goods sold of USD 2,300,000, and Texas receipts of 40% of the total. It passes the three retail tests, so the rate is 0.375%.
 
-Bases: 70% = USD 2,030,000; revenue minus cost of goods sold = USD 600,000; revenue minus USD 1 million = USD 1,900,000. Margin is USD 600,000. Long Form tax: USD 600,000 x 0.4 x 0.375% = USD 900.00. E-Z would be USD 2,900,000 x 0.4 x 0.331% = USD 3,839.60. The Long Form result is under USD 1,000, so no tax is owed (171.002(d)(1)); the entity still files Forms 05-158-A and 05-158-B and its PIR by 15 May 2027.
+Bases: 70% = USD 2,030,000; revenue minus cost of goods sold = USD 600,000; revenue minus USD 1 million = USD 1,900,000. Margin is USD 600,000. Long Form tax: USD 600,000 x 0.4 x 0.375% = USD 900.00. E-Z would be USD 2,900,000 x 0.4 x 0.331% = USD 3,839.60. The Long Form result is under USD 1,000, so no tax is owed (171.002(d)(1)); the entity still files Forms 05-158-A and 05-158-B and its PIR by 17 May 2027.
 
 ```oa-check
 name: Retailer, cost of goods sold base and the USD 1,000 rule (2027 report)
@@ -248,7 +248,7 @@ expected:
 
 ## Filing and payment
 
-- **Due date:** 15 May of the report year (15 May 2027 for an accounting year ending in 2026); a weekend or holiday moves it to the next business day (Tax Code 171.202(b); Comptroller franchise tax page).
+- **Due date:** 15 May of the report year; a weekend or holiday moves it to the next business day, so the 2027 report (accounting year ending in 2026) is due Monday 17 May 2027, because 15 May 2027 is a Saturday (Tax Code 171.202(b); Comptroller franchise tax page).
 - **Extension, non-EFT payors:** request on or before 15 May through Webfile or Form 05-164 and pay at least 90% of the tax due with the report, or 100% of the tax on the prior report if that report was filed by 14 May of the current year; the extension runs to 15 November (for 2026 it ran to 16 November 2026 because 15 November was a Sunday). A below-threshold entity may file a zero-money extension for its PIR or OIR. An entity that became subject in the prior year cannot use the 100% option. If the payment rule is not met, the due date reverts to 15 May with penalty and interest (Form 05-915, Extension of Time to File (Non-EFT)). An online extension payment replaces Form 05-164; do not file both.
 - **Extension, mandatory EFT payors:** extend first to 15 August (17 August 2026 for 2026) by paying electronically 90% of current tax or 100% of prior-year tax, then to 15 November by paying the balance electronically by the August date (Form 05-915, Extension of Time to File (EFT)).
 - **Payment:** Webfile (credit card or electronic check), TEXNET for EFT payors, or a check with Form 05-170 to Texas Comptroller of Public Accounts, P.O. Box 149348, Austin, TX 78714-9348.
