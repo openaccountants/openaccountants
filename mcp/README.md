@@ -134,7 +134,7 @@ That's it. The hosted server is the full product surface: the live database, rev
 Requires **Python 3.10+** and **Git**. The current [PyPI release, 0.1.1](https://pypi.org/project/openaccountants-mcp/0.1.1/), is older and contains no bundled skills. Use this tested GitHub revision instead. Run inside your Python virtual environment:
 
 ```bash
-python -m pip install --force-reinstall "openaccountants-mcp @ git+https://github.com/openaccountants/openaccountants-mcp.git@2a85bbb19e3623aa1e903dee4215b96f70e504d9"
+python -m pip install --force-reinstall "openaccountants-mcp @ git+https://github.com/openaccountants/openaccountants-mcp.git@6fc1b5172ea299a3341649527d038678a31b7d06"
 ```
 
 This builds the pinned revision with its bundled skill packages. Connect your AI client using the installed `openaccountants-mcp` executable; for a virtual environment, use its absolute path as shown below.
