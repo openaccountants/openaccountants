@@ -1,12 +1,14 @@
 ---
 name: us-pte-state-matrix
-description: Tier 2 US federal-level reference skill providing the comprehensive state-by-state matrix of Pass-Through Entity Tax (PTET) elections under the SALT-cap workaround blessed by IRS Notice 2020-75 and codified state-by-state from 2021 onward. Covers election deadlines, rates, eligibility, owner-credit refundability, estimated-tax requirements, and resident-credit interactions for the 35+ states that have enacted PTET regimes. Includes a 5-step decision framework for electing PTET and common-trap callouts for CA, NY, GA, NC, IL, MN, VA. Tax year 2025 under OBBBA.
+description: State pass-through entity elective taxes (PTET) for tax year 2026, with 2025 return notes. One row per state that has one, each linked to that state's own law or guidance, giving status, rate, how and when to elect, who may elect, the owner credit, exclusion or deduction, and nonresident filing relief. Starts from the federal SALT cap under Public Law 119-21 (USD 40,400 for 2026, cut by 30 percent of MAGI over USD 505,000 to a USD 10,000 floor) and IRS Notice 2020-75. Trigger on "PTET", "pass-through entity tax", "SALT cap workaround", "BAIT", "elective entity tax", "Form 3804", "IT-204-PTET". State depth is in each state's PTE skill (ca-pte-elective-tax, ny-pte-tax-ptet, ga-corporate-and-ptet).
+version: "3.0"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: cross-country-method
 ---
 
 # State pass-through entity elective taxes (PTET): a state-by-state table for tax year 2026, with 2025 return notes
@@ -16,7 +18,7 @@ Figures are for tax year 2026 unless a line says 2025. The federal figures come 
 ## Scope and who this is for
 
 - **Covers:** partnerships (including LLCs taxed as partnerships) and S corporations that are deciding whether to elect a state's pass-through entity tax, and the owners who receive the credit, exclusion or deduction. It gives, for each state that has one, how and when to elect, the rate, who may elect, what the owner gets, what nonresident owners must still file, and whether the tax is available for 2026.
-- **Federal side:** the SALT deduction cap for individuals and why an entity-level state tax falls outside it ([IRS Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf); [26 U.S.C. §164](https://www.law.cornell.edu/uscode/text/26/164)).
+- **Federal side:** the SALT deduction cap for individuals and why an entity-level state tax falls outside it ([IRS Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf); [26 U.S.C. §164](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
 - **Does not cover:** preparing the entity's PTET return line by line, a C corporation's own state tax, composite returns where no PTET exists, trusts and estates as electing entities, and the US territories.
 - **State detail lives elsewhere.** For one state in depth, use that state's own Guide (for example `ca-540-individual-return`, `ga-corporate-and-ptet`, `nj-cbt-and-bait`) and the state's instructions linked in the table. State rules change most years; read the current-year instructions before filing.
 
@@ -33,7 +35,7 @@ Figures are for tax year 2026 unless a line says 2025. The federal figures come 
 
 ## The method, step by step
 
-1. **Check the federal cap first.** For 2026 an individual's deduction for state and local taxes is capped at $40,400 ($20,200 married filing separately). The cap is cut by 30% of MAGI above $505,000 ($252,500 separate), but never below $10,000 ($5,000 separate) ([26 U.S.C. §164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)). If the owner's state and local taxes already fit under their cap, the election saves little federally.
+1. **Check the federal cap first.** For 2026 an individual's deduction for state and local taxes is capped at $40,400 ($20,200 married filing separately). The cap is cut by 30% of MAGI above $505,000 ($252,500 separate), but never below $10,000 ($5,000 separate) ([26 U.S.C. §164(b)(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). If the owner's state and local taxes already fit under their cap, the election saves little federally.
 2. **Confirm the tax falls outside the cap.** A state income tax imposed on and paid by the partnership or S corporation is deducted by the entity in computing non-separately stated income. It is not counted against any owner's SALT cap. This holds whether the tax is elective and whatever credit, exclusion or deduction the owner gets ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
 3. **Find the state row in the table below.** Confirm the state has a PTET for the year and that it has not expired. Then check the election method and deadline, and whether the entity and every owner are allowed.
 4. **Test each owner.** Work out what each owner gets: a credit, an exclusion or a deduction. Check whether it is refundable, and whether the owner's home state gives a credit for another state's PTET. Owners who get no credit, often corporate or partnership partners, may just bear the cost.
@@ -45,16 +47,16 @@ Figures are for tax year 2026 unless a line says 2025. The federal figures come 
 
 | Item | 2025 | 2026 | Source |
 | --- | --- | --- | --- |
-| SALT cap (single, joint, head of household) | $40,000 | $40,400 | [§164(b)(7)(A)](https://www.law.cornell.edu/uscode/text/26/164) |
-| SALT cap, married filing separately (half) | $20,000 | $20,200 | [§164(b)(6)](https://www.law.cornell.edu/uscode/text/26/164) |
-| MAGI threshold for the phase-down (half if filing separately: $250,000 / $252,500) | $500,000 | $505,000 | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
-| Phase-down rate | 30% of MAGI over the threshold | 30% of MAGI over the threshold | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
-| Floor after the phase-down (half if filing separately: $5,000) | $10,000 | $10,000 | [§164(b)(7)(B)(iii)](https://www.law.cornell.edu/uscode/text/26/164) |
+| SALT cap (single, joint, head of household) | USD 40,000 | USD 40,400 | [§164(b)(7)(A)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| SALT cap, married filing separately (half) | $20,000 | $20,200 | [§164(b)(6)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| MAGI threshold for the phase-down (half if filing separately: $250,000 / $252,500) | USD 500,000 | USD 505,000 | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Phase-down rate | 30 percent of MAGI over the threshold | 30 percent of MAGI over the threshold | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Floor after the phase-down (half if filing separately: $5,000) | USD 10,000 | USD 10,000 | [§164(b)(7)(B)(iii)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 
-- **2027 to 2029:** the cap and the threshold each rise to 101 percent of the prior year's figure. The phase-down applies only to tax years beginning before 1 January 2030 ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)).
-- **From 2030:** the cap reverts to $10,000 for tax years beginning after 2029 ([§164(b)(7)(A)(iv)](https://www.law.cornell.edu/uscode/text/26/164)).
-- **Married filing separately:** the cap and the threshold are both halved ([§164(b)(6)–(7)](https://www.law.cornell.edu/uscode/text/26/164)).
-- **The PTET route was not restricted by P.L. 119-21.** The Act changed the cap in §164(b) and added paragraph (7). The enacted text contains no limit on entity-level state taxes ([§164, amendments note](https://www.law.cornell.edu/uscode/text/26/164)).
+- **2027 to 2029:** the cap and the threshold each rise to 101 percent of the prior year's figure. The phase-down applies only to tax years beginning before 1 January 2030 ([§164(b)(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
+- **From 2030:** the cap reverts to $10,000 for tax years beginning after 2029 ([§164(b)(7)(A)(iv)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
+- **Married filing separately:** the cap and the threshold are both halved ([§164(b)(6)–(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
+- **The PTET route was not restricted by P.L. 119-21.** The Act changed the cap in §164(b) and added paragraph (7). The enacted text contains no limit on entity-level state taxes ([§164, amendments note](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
 - **Notice 2020-75 is still guidance, not a regulation.** It announced proposed regulations and says taxpayers may rely on it until they are issued ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)). Check irs.gov for any later guidance before filing.
 
 ## The state table (tax year 2026)
@@ -68,7 +70,7 @@ How to read it:
 | State | 2026 status | Rate | How and when to elect | Who may elect, and exclusions | Owner gets | Nonresident owners | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Alabama** | In force; no end date found | 5% | Tick the Electing PTE box on the timely filed Form 65 or 20S (including extensions), every year the election applies. Needs consent of the governing body and owners holding more than 50% of voting control. | S corporations and Subchapter K entities. The tax covers all owners' shares; tax-exempt owners' income cannot be excluded. No NOLs. | Refundable credit | Not relieved if they want the credit: they must file to claim it. No composite return needed. | [ALDOR](https://www.revenue.alabama.gov/individual-corporate/electing-pass-through-entities/); [rate FAQ](https://www.revenue.alabama.gov/faq-categories/electing-pass-through-entity-2/) |
-| **Arizona** | In force; no end date in the statute | Top individual rate: 2.5% (2023 onward). 2026: **check** | Made by filing the entity's return. First, notify every individual, estate and trust owner of the right to opt out and allow at least sixty days. | Partnerships and S corporations. Excluded: owners that are not individuals, estates or trusts, and owners who opt out. | Credit, nonrefundable; carry forward up to 5 years | Not stated | [A.R.S. 43-1014](https://www.azleg.gov/ars/43/01014.htm); [43-1077](https://www.azleg.gov/ars/43/01077.htm); [2.5% rate](https://www.azleg.gov/legtext/57leg/1R/summary/S.1318FIN_REVISED.DOCX.htm) |
+| **Arizona** | In force; no end date in the statute | Highest individual rate under A.R.S. 43-1011: 2.5% (2023 onward, confirmed for 2026 in `az-corporate-tax`) | Made by filing the entity's return. First, notify every individual, estate and trust owner of the right to opt out and allow at least sixty days. | Partnerships and S corporations. Excluded: owners that are not individuals, estates or trusts, and owners who opt out. | Credit, nonrefundable; carry forward up to 5 years | Not stated | [A.R.S. 43-1014](https://www.azleg.gov/ars/43/01014.htm); [43-1077](https://www.azleg.gov/ars/43/01077.htm); [2.5% rate](https://www.azleg.gov/legtext/57leg/1R/summary/S.1318FIN_REVISED.DOCX.htm) |
 | **Arkansas** | In force | Top individual rate. 2025: 3.9% (capital gains 1.95%). 2026: the top individual rate is 3.7% from 1 Jan 2026; confirm that the tax follows it in DFA's 2026 instructions | Owners holding more than 50% of the voting power elect on Form AR362-E, in ATAP or on the return, before the extended due date. | Partnerships, S corporations and LLCs. Not C corporations, QSubs, trusts or sole proprietors. Owners cannot opt out. | Exclusion | Relieved if all their Arkansas income comes from entities paying the tax | [DFA instructions (2025)](https://www.dfa.arkansas.gov/wp-content/uploads/AR1100PET_Instructions_2025_1.pdf); [Act 2 of 2026](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf) |
 | **California** | In force; extended by SB 132 to tax years beginning before 1 Jan 2031 | 9.3% | Annual, on a timely filed **original** return, never an amended one. Irrevocable. Payment 1 is due 15 June of the election year: $1,000 or 50% of the prior year's PTE tax, whichever is greater. The balance is due by the original due date, without extensions. For 2026 to 2030, a short June payment no longer voids the election. Instead, each owner's credit is cut by 12.5% of their share of the unpaid amount. | Partnerships and S corporations. Not publicly traded partnerships or entities in a combined reporting group. Only consenting individual, fiduciary, estate and trust owners (and SMLLCs they own) are included. | Credit, nonrefundable; carry over up to 5 years; entity adds the deduction back | Not relieved: the credit can only be claimed on the owner's own return, not on a group return. 7% withholding still applies. | [FTB](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html); [FTB help](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/help.html) |
 | **Colorado** | In force; DOR has issued a 2026 election form | Individual rate: 4.4% (2025). 2026: **check** | Annual and irrevocable. Tick the box on the DR 0106, or file DR 1705 in advance. | Partnerships and S corporations. A C corporation partner unitary with the partnership is left out. Guaranteed payments are excluded. | Credit, excess refunded. Owners add back the state tax deduction **and** any federal QBI deduction. | Relieved if all their Colorado income is in the entity's return. No composite return allowed. | [DOR SALT Parity Act](https://tax.colorado.gov/income-tax-topics-salt-parity-act); [DR 1705 (2026)](https://tax.colorado.gov/sites/tax/files/documents/DR1705_2026.pdf); [DR 0106K instructions (2025)](https://tax.colorado.gov/sites/tax/files/documents/DR0106K-I_2025.pdf) |
@@ -84,7 +86,7 @@ How to read it:
 | **Louisiana** | In force; no end date found | 3% flat, for periods beginning on or after 1 Jan 2025 | Form R-6980, which needs LDR acceptance. Due by the 15th day of the 4th month after the first year it applies. **Not annual:** it continues until terminated on R-6983. | S corporations and entities taxed as partnerships | **Exclusion** | Not stated | [LDR FAQ](https://revenue.louisiana.gov/tax-education-and-faqs/faqs/corporation-income-franchise-taxes/does-a-corporation-taxed-as-an-s-corporation-federally-have-to-make-the-pass-through-entity-tax-election/); [3% rate](https://revenue.louisiana.gov/tax-education-and-faqs/faqs/income-tax-reform/what-are-the-income-tax-rates-for-s-corps-and-other-pass-through-entities-making-the-pte-election/) |
 | **Maine** | **New for 2026**: tax years beginning on or after 1 Jan 2026 | Top individual rate, currently 7.15% | Annual election. Form and deadline: **check** Maine Revenue Services guidance | Qualified members only; **check** the definition | Refundable credit of **90%** of the member's share | **Check** | [Maine Revenue law changes for 2026](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/legischange26.pdf) |
 | **Maryland** | In force; no end date in the statute | 8.75% on individual and fiduciary members' shares, 8.25% on entity members' shares (periods beginning after 31 Dec 2024) | Annual and irrevocable. Made with the **first** filing or payment of the year. A first payment sent without the form locks in a *non*-election. Cannot be changed on an amended return. | S corporations, partnerships, and LLCs not taxed as corporations. Tax-exempt members' shares are left out. | Credit, excess refunded. Members add the credit back to federal AGI. | **Not relieved**: file Form 505. No composite return allowed. | [Tax alert](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-changes-to-standard-and-itemized-deductions-and-to-state-and-local-income-tax-rates-from-the-2025-legislative-session.pdf); [TB IT-6](https://www.marylandtaxes.gov/legal-pubs/tech-bulletins/income-estate-tax/tb-it6.pdf); [nonelection alert](https://www.marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/Income-Tax-Alert-Process-Change-Instructions-for-Electing-and-Nonelecting-PTEs.pdf) |
-| **Massachusetts** | In force while the federal cap is in effect | 5% | Annual. Irrevocable. Binds all members. The excise is due with the original, timely filed return. | S corporations, partnerships and LLCs taxed as either. Only natural persons, and trusts and estates taxed under ch. 62, are counted. | Refundable credit of **90%** of the excise (the 2021 text). **Check** current law and any 2026 change. | **Not relieved**: filing requirements are unchanged | [Ch. 63D as enacted](https://budget.digital.mass.gov/summary/fy22/outside-section/section-39-taxation-of-pass-through-entities) |
+| **Massachusetts** | In force; both excises expire if the federal SALT limitation expires or is repealed | Chapter 63D: 5% of income attributable to qualified members. **New for 2026**, chapter 63E (St. 2026, c. 101): 4% of each qualified member's distributive income above the surtax threshold. An entity may elect either or both | Annual, on Form 63-ELT filed electronically with the timely filed return (Form 3, 355S or 2). Out-of-state entities may elect | S corporations, partnerships and LLCs taxed as either, and certain trusts; not disregarded entities | Credit of **90%** of the member's share of each excise paid; the member must file a return to claim it | **Not relieved**: filing requirements are unchanged | [Mass. DOR, elective PTE excise (updated 31 July 2026)](https://www.mass.gov/info-details/elective-pass-through-entity-excise) |
 | **Michigan** | In force while the federal cap is in effect | Individual rate: 4.25% (2024) | Made by an electronic payment. **Binding for 3 years** (the year of payment and the next two). Deadline: **check** Treasury's current rule. | S corporations and partnerships with Michigan business activity. Not publicly traded partnerships or disregarded entities. C corporation members' shares are excluded. | Credit against the member's income tax (**check** whether refundable) | Not stated | [Senate Fiscal Agency](https://sfa.senate.michigan.gov/Publications/Notes/2023Notes/NotesFal23dzel.pdf); [rate table](https://sfa.senate.michigan.gov/publications/budupdates/statebudgetoverview_mostrecent.pdf) |
 | **Minnesota** | Re-enacted by the 2026 tax bill (Laws 2026, ch. 128), with the end date moved to the end of tax year 2027 | 9.85% | Annual, by the due date or extended due date of the PTE return. Made by qualifying owners holding more than 50% of the qualifying owners' interests; binds all qualifying owners; irrevocable for the year. | Partnerships, S corporations and LLCs with at least one qualifying owner; not publicly traded partnerships. Qualifying owners: individuals and estates, trusts only as S corporation shareholders, and disregarded entities owned by them. Other owners are left out. | Refundable credit of 100% of the owner's share | Certain nonresidents can have their filing requirement met by the entity's return | [2026 bill analysis](https://www.revenue.state.mn.us/sites/default/files/2026-05/hf2438sf2082-enacted-otb.pdf); [Minn. Stat. 289A.08](https://www.revisor.mn.gov/statutes/cite/289A.08) |
 | **Mississippi** | **Check** (no end date found) | 2025: 0% on the first $5,000, 4% on the next $5,000, 5% above. 2026: **check** | Separate Form 84-381, filed during the year or by the (extended) due date. It cannot be made by filing or amending a return. **Continues until revoked.** | Partnerships and S corporations; not fiduciaries | Credit; excess refunded or carried forward | Relieved if they have no other Mississippi income | [DOR FAQ](https://www.dor.ms.gov/sites/default/files/business/Updated%20EPTE%20FAQ.pdf); [2025 instructions](https://www.dor.ms.gov/sites/default/files/tax-forms/business/2025%20PTE%20INSTRUCTIONS%2084-100%20-%20Final%20%2001.14.2026.pdf) |
@@ -112,21 +114,21 @@ How to read it:
 
 | Situation | Rule | Source |
 | --- | --- | --- |
-| Owner's own state and local taxes are already under the federal cap | The election still moves the state tax to the entity, but the federal saving is small. Model it before electing. | [§164(b)](https://www.law.cornell.edu/uscode/text/26/164) |
-| Owner's MAGI is above the threshold | The cap shrinks by 30% of the excess, down to $10,000. At that point the entity-level deduction is worth the most. | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
+| Owner's own state and local taxes are already under the federal cap | The election still moves the state tax to the entity, but the federal saving is small. Model it before electing. | [§164(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Owner's MAGI is above the threshold | The cap shrinks by 30% of the excess, down to $10,000. At that point the entity-level deduction is worth the most. | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Corporate, partnership or tax-exempt owners | Many states leave their shares out of the base or give them no credit (NY, MN, VA, HI, MT). In North Carolina and South Carolina, one such owner can block the election for everyone. | State rows above |
 | Disregarded single-member LLC | It cannot elect in most states (NY unless it is an S corporation, OH, IN, IA, NE, WV, VA). | State rows above |
 | Election method is not "on the return" | NY, NJ and MS need a separate election. Maryland treats the first payment or filing of the year as the election. Michigan's is made by payment. | State rows above |
 | Election carries over to later years | Louisiana, Oklahoma and Mississippi elections run until revoked. Michigan's binds for 3 years. Everywhere else it is year by year. | State rows above |
 | Owner's home state and a second state's PTET | Whether the home state gives a credit for another state's PTET depends on the home state. For example, Connecticut and Maine give residents a credit for a substantially similar tax paid to another state. When a South Carolina entity makes the SC election, its owners are generally not entitled to South Carolina's credit for tax paid to other states. Check the home state's credit form. | [Ch. 228z](https://www.cga.ct.gov/current/pub/chap_228z.htm); [Maine Revenue law changes for 2026](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/legischange26.pdf); [SC policy manual ch. 3](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/SCTIED-2025-Chapter%203.pdf) |
-| Credit worth less than the tax paid | Connecticut gives 87.5%, Massachusetts 90% (2021 text) and Maine 90%. Iowa's credit is cut by the tax rate. The owner bears the difference. | State rows above |
+| Credit worth less than the tax paid | Connecticut gives 87.5%, Massachusetts 90% (both excises) and Maine 90%. Iowa's credit is cut by the tax rate. The owner bears the difference. | State rows above |
 | Nonrefundable credit | Arizona, California, Hawaii, Missouri, Utah and West Virginia credits are not refunded. Excess credit only carries forward. | State rows above |
 
 ## Worked cases
 
-**Case 1: 2026 federal cap with the phase-down.** A married couple filing jointly has 2026 MAGI of $555,000. The excess over $505,000 is $50,000. The reduction is 30% × $50,000 = $15,000, so their 2026 cap is $40,400 − $15,000 = $25,400. That is still above the $10,000 floor ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)).
+**Case 1: 2026 federal cap with the phase-down.** A married couple filing jointly has 2026 MAGI of $555,000. The excess over $505,000 is $50,000. The reduction is 30% × $50,000 = $15,000, so their 2026 cap is $40,400 − $15,000 = $25,400. That is still above the $10,000 floor ([§164(b)(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
 
-**Case 2: the floor.** The same couple with 2026 MAGI of $650,000. The excess is $145,000, and 30% of that is $43,500. That is more than the $30,400 that sits above the floor ($40,400 − $10,000), so the cap is $10,000 ([§164(b)(7)(B)(iii)](https://www.law.cornell.edu/uscode/text/26/164)). State tax moved into the entity is then worth the most federally, because the entity deducts it and it is outside the cap ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
+**Case 2: the floor.** The same couple with 2026 MAGI of $650,000. The excess is $145,000, and 30% of that is $43,500. That is more than the $30,400 that sits above the floor ($40,400 − $10,000), so the cap is $10,000 ([§164(b)(7)(B)(iii)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). State tax moved into the entity is then worth the most federally, because the entity deducts it and it is outside the cap ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
 
 **Case 3: Oregon 2026.** An electing S corporation has $400,000 of distributive proceeds. The tax is 9% × $250,000 = $22,500, plus 9.9% × $150,000 = $14,850, a total of $37,350. The election needs an OR-21 filed by the due date including extensions. For 2026 only, the first two estimates are both due 15 June ([ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
 
@@ -135,6 +137,33 @@ How to read it:
 **Case 5: California 2026 short June payment.** The prior year's PTE tax was $60,000, so the 15 June 2026 payment must be the greater of $1,000 or 50% × $60,000 = $30,000. The entity pays only $20,000, leaving $10,000 unpaid. An owner with a 50% share has a $5,000 share of the unpaid amount. That owner's credit is reduced by 12.5% × $5,000 = $625. The election itself survives for 2026 ([FTB](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html)).
 
 **Case 6: North Carolina 2026 exclusion.** A taxed partnership with $500,000 of NC income owes 3.99% × $500,000 = $19,950. Each owner deducts their share of that income on their NC return; there is no credit. The partnership cannot elect at all if any partner is, for example, a corporation ([NCDOR notice](https://www.ncdor.gov/taxes-forms/information-tax-professionals/tax-bulletins-directives-and-other-important-notices/important-notices-and-frequently-asked-questions-personal-taxes/important-notice-regarding-north-carolinas-recently-enacted-pass-through-entity-tax); [rates](https://www.ncdor.gov/taxes-forms/individual-income-tax/tax-rate-schedules)).
+
+Cases 1 and 4 recomputed:
+
+```oa-check
+name: 2026 SALT cap with the phase-down, joint MAGI 555,000
+inputs:
+  magi: 555000
+  cap: 40400
+  threshold: 505000
+  floor: 10000
+steps:
+  - reduction: max(magi - threshold, 0) * 0.30
+  - limited_cap: max(cap - reduction, floor)
+expected:
+  reduction: 15000
+  limited_cap: 25400
+```
+
+```oa-check
+name: New York State PTET on 3,000,000 (2026)
+inputs:
+  income: 3000000
+steps:
+  - tax: 137000 + (income - 2000000) * 0.0965
+expected:
+  tax: 233500
+```
 
 ## When to refuse or refer
 
@@ -160,7 +189,7 @@ How to read it:
 
 ## 2025 returns (dated section)
 
-- **2025 federal cap:** $40,000 ($20,000 married filing separately), reduced by 30% of MAGI over $500,000 ($250,000 separate), but not below $10,000 ($5,000 separate) ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)). Extended 2025 individual returns are due 15 October 2026.
+- **2025 federal cap:** $40,000 ($20,000 married filing separately), reduced by 30% of MAGI over $500,000 ($250,000 separate), but not below $10,000 ($5,000 separate) ([§164(b)(7)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). Extended 2025 individual returns are due 15 October 2026.
 - **Late 2025 elections that may still be open on 25 September 2026:** only where the state ties the election to an extended due date that has not yet passed. For example:
   - Oregon's OR-21 is due 15 October with an extension ([ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
   - Hawaii's N-362E is due by the 20th day of the 10th month if extended ([DOTAX](https://tax.hawaii.gov/pte/)).
@@ -181,3 +210,18 @@ How to read it:
 - [ ] Nonresident owners told whether they must still file.
 - [ ] Estimated payments scheduled and funded.
 - [ ] Owner statements issued after the entity return (Oregon) and add-backs flagged on owner returns.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Public Law 119-21 (govinfo), amending 26 U.S.C. 164(b). Read for "in the case of any taxable year beginning in calendar year 2026, $40,400", the $505,000 threshold, the 30 percent reduction, the $10,000 floor and the 101 percent indexing. Library figures `us.obbba.salt.*`. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| IRS Notice 2020-75. Read for the entity-level deduction and reliance. | https://www.irs.gov/pub/irs-drop/n-20-75.pdf | 2026-11-13 |
+| Each state's PTET law or guidance, as linked in its row. Rows not named below were read on 25 September 2026 and their links checked on 13 November 2026. | https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html | 2026-09-25 |
+| FTB, PTE elective tax (via `ca-pte-elective-tax`). Read for 9.3%, the 15 June payment and the 12.5% credit reduction from 2026. | https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html | 2026-11-13 |
+| NY Tax Department, calculating the PTET (via `ny-pte-tax-ptet`). Read for 6.85% to 10.90% and the NYC 3.876%. | https://www.tax.ny.gov/e-services/ptet/calculations.htm | 2026-11-13 |
+| Georgia HB 1023 (via `ga-corporate-and-ptet`). Read for the electing-entity rate tied to the 4.99% individual rate for 2026. | https://gov.georgia.gov/document/2024-signed-legislation/hb-1023/download | 2026-11-13 |
+| A.R.S. 43-1014 (via `az-corporate-tax`). Read for the entity-level election at the highest individual rate, 2.5%. | https://www.azleg.gov/ars/43/01014.htm | 2026-11-13 |
+| Mass. DOR, elective pass-through entity excise (updated 31 July 2026). Read for chapter 63D at 5%, the new chapter 63E at 4% from 2026, Form 63-ELT and the 90% credit. | https://www.mass.gov/info-details/elective-pass-through-entity-excise | 2026-11-13 |
+
+Not yet confirmed: Idaho and Rhode Island (every cell); Utah's election for 2026; Maine's election form and deadline; 2026 rates for Colorado, Iowa, Kansas, Mississippi, Oklahoma, West Virginia and the Arkansas and Montana top rates; Kentucky, Mississippi and Missouri statute text; Michigan's election deadline.
