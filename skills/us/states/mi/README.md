@@ -1,31 +1,50 @@
-# Michigan — OpenAccountants Tax Skills
+---
+jurisdiction: US-MI
+applicable: [IT-IND, IT-CORP, VAT, SC, PR]
+not_applicable:
+  TP: no Michigan transfer pricing documentation regime; related-party rules sit in the corporate skill and the federal skills
+  XB: reciprocity states and residency are in mi-income-tax; part-year and nonresident returns are out of scope
+covered_by:
+  SC: mi-payroll
+  PR: mi-payroll
+partial:
+  IT-IND: "2026 MI-1040, Schedule 1, Form 4884 and MI-1040CR not yet published; homestead credit limits and some exemptions are 2025 figures; part-year and nonresident returns not covered"
+  IT-CORP: "corporate income tax skill is being rewritten for 2026 in a separate change"
+  VAT: "sales and use tax skill is being rewritten for 2026 in a separate change"
+  SC: "payroll and unemployment insurance skill is being rewritten for 2026 in a separate change"
+---
 
-| Field | Value |
-|---|---|
-| State | Michigan |
-| Code | US-MI |
-| Income tax | Yes |
-| Sales tax | Yes |
-| Franchise / gross receipts tax | No |
-| Tax authority | [Michigan Department of Treasury](https://www.michigan.gov/treasury) |
-| Quality tier | Q3 — AI-drafted, not independently verified |
+# Michigan (US-MI): tax pack
 
-## Files in this folder
+Calendar tax year for individuals. Authority: the Michigan Department of Treasury (michigan.gov/treasury and michigan.gov/taxes), which also administers the City of Detroit income tax. Currency: US dollars. Michigan taxes individuals at a flat 4.25% for 2026 (Treasury notice of 15 April 2026; MCL 206.51), after a $5,900 personal exemption per person (2026 Withholding Guide). From 2026 every retiree may subtract retirement benefits up to $67,610 single or $135,220 joint (Public Act 4 of 2023, fully phased in). 2025 PA 24 decoupled Michigan from the federal 2025 changes to bonus depreciation, section 179, research expensing and the business interest limit, and added Michigan deductions for federally claimed qualified tips and overtime for 2026 to 2028. Michigan has reciprocity with Illinois, Indiana, Kentucky, Minnesota, Ohio and Wisconsin. A US state: federal income tax, FICA and FUTA sit on top of every domain here.
 
-| File | What it covers |
-|---|---|
-| `mi-income-tax.md` | Individual income tax for self-employed / sole proprietors (Form MI-1040) |
-| `mi-sales-tax.md` | Sales and use tax obligations and rates |
+**City income taxes.** Michigan cities may levy an income tax under the City Income Tax Act. Detroit (2.4% resident, 1.2% nonresident, $600 exemption) is covered by `mi-detroit-individual-return`; other cities are out of scope.
 
-## What's NOT covered
+## Domains
 
-- Corporate income tax (CIT)
-- Michigan Business Tax (MBT) — repealed, replaced by CIT
-- Estate tax (Michigan has no estate tax)
-- Part-year and non-resident returns (Schedule NR)
-- City income taxes (Detroit, Grand Rapids, etc.) — separate filing
-- Property tax (administered at local level)
+| Domain | Skill | Status |
+|---|---|---|
+| IT-IND, individual income tax | mi-income-tax | checked against the law (partial) |
+| IT-IND, retirement and pension subtraction | mi-pension-retirement-subtraction | checked against the law |
+| IT-IND, homestead property tax credit | mi-homestead-credit | checked against the law (2025 limits) |
+| IT-IND, estimated tax | mi-estimated-tax | checked against the law |
+| IT-IND, City of Detroit individual return | mi-detroit-individual-return | checked against the law (2025 forms) |
+| IT-IND, return assembly (router) | mi-return-assembly | checked against the law |
+| IT-CORP, corporate income tax | mi-corporate-income-tax | being rewritten in a separate change |
+| VAT / sales and use tax | mi-sales-tax | being rewritten in a separate change |
+| SC, unemployment insurance | mi-payroll | being rewritten in a separate change |
+| PR, payroll withholding | mi-payroll | being rewritten in a separate change |
+| TP, transfer pricing | not applicable, see above | |
+| XB, cross-border | not applicable as a separate skill, see above | |
 
-## How to use
+Out of scope for this pack: part-year and nonresident returns (Schedule NR); city income taxes other than Detroit; the home heating credit (MI-1040CR-7) and the veterans and blind credit (MI-1040CR-2); property tax and the principal residence exemption (local assessors); estates and trusts (MI-1041). Michigan has no estate tax. The Michigan Business Tax was replaced by the corporate income tax.
 
-Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM.
+## Official sources
+
+- Treasury notice, 4.25% rate for 2026: https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year (read 2026-11-13)
+- 2026 Michigan Income Tax Withholding Guide (Form 446): https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/SUW/TY2026/446_Withholding-Guide_2026.pdf (read 2026-11-13)
+- Treasury notice, decoupling from certain IRC provisions: https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions (read 2026-11-13)
+- Revenue Administrative Bulletin 2026-1 (retirement income): https://www.michigan.gov/taxes/rep-legal/rab/2026-revenue-administrative-bulletins/revenue-administrative-bulletin-2026-1 (read 2026-11-13)
+- 2026 MI-1040ES: https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf (read 2026-11-13)
+- 2025 Homestead Property Tax Credit Information: https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025 (read 2026-11-13)
+- City of Detroit Income Tax Information: https://detroitmi.gov/departments/office-chief-financial-officer/ocfo-divisions/office-treasury/income-tax/income-tax-information (read 2026-11-13)
