@@ -27,7 +27,7 @@ Out of scope, and where it goes:
 | --- | --- |
 | Section 179 and bonus depreciation figures and rules | `us-section-179-and-bonus-depreciation` |
 | Research credit (Form 6765) and section 174 / 174A mechanics in detail | `us-r-and-d-section-174-and-41` |
-| GILTI (net CFC tested income), FDII and BEAT computations, including the 2026 section 250 percentages | `us-gilti-fdii-beat`, `us-cfc-gilti` |
+| GILTI (net CFC tested income), FDII and BEAT computations, including the 2026 section 250 percentages | `us-gilti-fdii-beat` |
 | Form 5471 (US shareholder of a CFC) | `us-form-5471-cfc-information` |
 | Form 5472 (25% foreign-owned US corporation) | `us-form-5472-foreign-owned-us` |
 | Extension mechanics and the timely-mailing rule for Form 7004 | `us-corporate-extension-form-7004-and-the` |
@@ -305,7 +305,7 @@ expected:
 | R-1120-PHC | Possible personal holding company (Schedule PH) | Refer |
 | R-1120-SPECIAL | REIT, RIC, cooperative, insurance company, FSC, REMIC, tax-exempt organization, foreign corporation | Wrong form: 1120-REIT, 1120-RIC, 1120-C, 1120-L, 1120-PC, 1120-FSC, 1066, 990-T or 1120-F |
 | R-1120-CAMT | Possible applicable corporation under section 59(k) | Refer the Form 4626 computation (proposed regulations REG-112129-23 run to several hundred pages) |
-| R-1120-INTL | CFCs, GILTI or FDII, BEAT, foreign tax credit (Form 1118, including the 10% haircut on PTEP-related foreign taxes for distributions after 28 June 2025), country-by-country report (Form 8975) | Use `us-gilti-fdii-beat`, `us-cfc-gilti`, `us-form-5471-cfc-information`; refer Form 1118 and Form 8975 |
+| R-1120-INTL | CFCs, GILTI or FDII, BEAT, foreign tax credit (Form 1118, including the 10% haircut on PTEP-related foreign taxes for distributions after 28 June 2025), country-by-country report (Form 8975) | Use `us-gilti-fdii-beat`, `us-form-5471-cfc-information`; refer Form 1118 and Form 8975 |
 | R-1120-382 | Ownership change of more than 50 percentage points in 3 years with NOLs or built-in gains | Refer: section 382 limitation |
 | R-1120-BUYBACK | Public company stock repurchases (section 4501, Form 7208) | Refer: separate excise tax return, not part of Form 1120 |
 | R-1120-UTP | Schedule UTP positions to rank and describe | Prepare the schedule only with the tax provision team; this skill flags the duty |

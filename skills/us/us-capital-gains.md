@@ -32,7 +32,7 @@ Out of scope, and where it goes:
 | Qualified small business stock (section 1202), including the tiered exclusion for stock acquired after 4 July 2025 | `us-section-1202-qsbs` |
 | Like-kind exchanges of real property (section 1031): deadlines, identification, boot, Form 8824 | `us-section-1031-like-kind-exchange` |
 | The ordinary income tax rate schedule, standard deduction, the 2026 return due date and the full Form 1040 | `us-federal-income-tax-return-1040` |
-| Digital asset events and Form 1099-DA detail | `us-crypto-tax`, `us-crypto-reporting` |
+| Digital asset events and Form 1099-DA detail | `us-crypto-tax` |
 | NFT collectible status | `us-nft-tax` |
 | Paying tax on a large gain during the year | `us-quarterly-estimated-tax` |
 | Estates and trusts | `us-form-1041-trust-and-estate-income` |

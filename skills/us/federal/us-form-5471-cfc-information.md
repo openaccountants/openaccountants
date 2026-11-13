@@ -26,7 +26,7 @@ Out of scope, and where it goes:
 | Topic | Skill |
 | --- | --- |
 | Computing net CFC tested income (formerly GILTI), the section 250 deduction, the section 962 election and the section 960 deemed-paid credit | `us-gilti-fdii-beat` |
-| Subpart F income categories (foreign personal holding company income, base company sales and services income, insurance income) and the CFC working paper | `us-cfc-gilti` |
+| Subpart F income categories (foreign personal holding company income, base company sales and services income, insurance income) and the CFC working paper | `us-gilti-fdii-beat` |
 | Foreign tax credit on Form 1116 for an individual | `us-foreign-tax-credit-1116` |
 | Form 5472, foreign-owned US corporations and disregarded entities | `us-form-5472-foreign-owned-us` |
 | FBAR (FinCEN 114) and Form 8938 | `us-fbar-and-fatca-8938` |
@@ -232,7 +232,7 @@ Streamlined procedures are for failures to report income from foreign financial 
 | A US board member with no shares, and a relative or investor crossed 10% | Category 2 filing the board member rarely knows about |
 | "Dormant" company with no Form 5471 at all | Still required; at least the Rev. Proc. 92-70 summary filing |
 | Partnership files and the partners assume they are covered | Partners who are US shareholders through it file unless an exception is met and documented |
-| Schedule I inclusion with no supporting working paper (subpart F categories, E&P limit, pro rata share) | Weak support at exam; keep the working paper from `us-cfc-gilti` |
+| Schedule I inclusion with no supporting working paper (subpart F categories, E&P limit, pro rata share) | Weak support at exam; keep the working paper from `us-gilti-fdii-beat` |
 | Schedule P with PTEP lumped in one column, no basket or year | Credit and exclusion on later distributions can be lost; reconcile every year |
 | Average and spot rates mixed between Schedules C and F | Reconciliation failure that draws attention |
 | First year over 10% filed with Category 5 schedules only | Schedule O Part II missing: incomplete form |

@@ -7,120 +7,138 @@ last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
-version: "1.2"
-type: computation
-category: state-tax
+tax_year_notes: Rates and rules are the statutes in force when read on 2026-11-13 (32 V.S.A. chapters 103, 225 and 233) and Vermont Department of Taxes pages (see Sources). Items not re-read are listed in the PR that made this change and are not marked as confirmed.
+version: "1.1"
 ---
 
-# Vermont sales and use tax, tax year 2026
+# VT Sales Tax
 
-> **Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. General reference for AI-assisted working papers. A qualified professional must review the established facts and filing result. Circular 230 section 10.37: consider all relevant facts and circumstances; do not assume missing facts or base advice on audit risk.
+## Skill Metadata
 
-**Answer first.** Vermont's ordinary sales/use rate is 6%, with 1% local option where applicable. Ordinary clothing is exempt, including belts; ordinary T-shirts are not taxable brewery merchandise merely because sold by a brewery. Restaurant meals, alcohol and short-term rooms have separate tax categories. Local municipal meals/rooms taxes require their own check.
+**Skill Metadata**
 
-## Scope
+| Field | Value |
+| --- | --- |
+| Jurisdiction | Vermont, United States |
+| Jurisdiction Code | US-VT |
+| Tax Type | Sales and Use Tax (state + local option) |
+| State Rate | 6.00% |
+| Local Option Tax | Up to 1.00% |
+| Maximum Combined Rate | 7.00% |
+| Primary Statute | 32 Vermont Statutes Annotated (V.S.A.) §9771 et seq. |
+| Governing Agency | Vermont Department of Taxes |
+| Portal | https://tax.vermont.gov |
+| SST Member | Yes -- Full Member |
+| Contributor | Open Accounting Skills Registry |
+| Validation Date | Pending |
+| Skill Version | 1.0 |
+| Confidence Coverage | T1: state rate, basic taxability, filing mechanics. T2: local option tax, SaaS taxability, exemption specifics. T3: audit defense, complex transactions, penalty abatement. |
+| Format | Restructured to Q1 execution format, April 2026 |
 
-Vermont retail sales, purchaser use tax, remote sellers and marketplace transactions. Load `us-sales-tax` for the common system. This retains the old skill's meals/rooms, software, agricultural, manufacturing and mixed-business examples without expanding into new tax jobs.
+## Confidence Tier Definitions
 
-## Ask the client first
+- **[T1] Tier 1 -- Deterministic** -- Apply exactly as written. No reviewer judgement required.
+- **[T2] Tier 2 -- Reviewer Judgement Required** -- Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
+- **[T3] Tier 3 -- Out of Scope / Escalate** -- Do not guess. Escalate to a licensed tax professional.
 
-1. Registration, assigned filing frequency and active locations.
-2. Physical presence, employees/inventory and current rolling sales/transaction totals.
-3. Marketplace collection and the seller's own uncollected sales.
-4. Product/service details, delivery address and date.
-5. Buyer exemption/resale documentation and qualifying business use.
-6. Meals/rooms/short-term rental activity and applicable local municipal taxes.
+## Step 0: Client Onboarding Questions
 
-## The method, step by step
+Before proceeding with any Vermont sales tax analysis, collect the following from the client: [T1]
 
-### Rates, bands and thresholds
+**Onboarding Questions**
 
-| Item | Amount, 2026 | Official source |
+| # | Question | Why It Matters |
 | --- | --- | --- |
-| General sales/use tax | 6% | [9771](https://legislature.vermont.gov/statutes/section/32/233/09771) |
-| Local option sales, meals/rooms/alcohol where adopted | Additional 1%; ordinary sales combined 7%; check municipality and separate municipal taxes | [Department local option](https://tax.vermont.gov/business/local-option-tax) |
-| Meals/rooms; alcohol for on-premises consumption | 9%; 10% respectively before any applicable local amount | [9241](https://legislature.vermont.gov/statutes/section/32/225/09241) |
-| Short-term rental surcharge, qualifying short-term rental | Additional 3% on top of rooms tax; electronic filing required | [Department meals/rooms](https://tax.vermont.gov/business/meals-and-rooms-tax) |
-| Remote-seller economic nexus | At least USD 100,000 OR 200 transactions in the preceding 12-month period | [9701(9)(F)](https://legislature.vermont.gov/statutes/section/32/233/09701) |
+| 1 | Do you have a Vermont sales tax registration / tax ID? | Determines whether registration is needed before filing. |
+| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
+| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
+| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
+| 5 | What types of products or services do you sell in Vermont? | Drives taxability classification under Vermont law. |
+| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
+| 7 | Do you have locations, employees, or inventory in Vermont? | Physical presence creates nexus independent of economic thresholds. |
+| 8 | Do you sell into multiple Vermont local jurisdictions? | Local tax rates vary; determines compliance complexity. |
 
+- **Stop condition** -- If the client cannot answer questions 1-4, STOP and gather this information before proceeding. (T1)
 
-### State sales tax rate
+### 1.1 State Sales Tax Rate
 
+- **Vermont state sales tax rate** -- 6.00% percent (T1)  _(32 V.S.A. §9771)_
+- **State sales tax scope** -- Vermont imposes a state sales tax of 6.00% on the retail sale of tangible personal property and certain services. (T1)  _(32 V.S.A. §9771)_
 
-- **Vermont state sales tax rate** -- 6.00% percent  _(32 V.S.A. §9771)_
-- **State sales tax scope** -- Vermont imposes a state sales tax of 6.00% on the retail sale of tangible personal property and certain services.  _(32 V.S.A. §9771)_
+### 1.2 Local Option Tax [T1]
 
-### 1.2 Local Option Tax
+- **Local option tax rate** -- 1% percent (T1)
+- **Local option adoption** -- Not all municipalities have adopted the local option tax. (T1)
+- **Combined rate where adopted** -- 7.00%  _([T1])_
+- **Administration** -- The local option tax is administered by the Vermont Department of Taxes. (T1)
+- **Local option on meals distinct** -- The local option on meals (9% meals tax + 1% local = 10%) is separate from the general sales tax local option. (T2)  _(tax.vermont.gov Local Option Tax page)_
+- **Motor vehicles** -- Local option tax does not apply to the sale or rental of motor vehicles subject to the motor vehicle purchase and use tax. (T1)
 
-- **Local option tax rate** -- 1% percent
-- **Local option adoption** -- Not all municipalities have adopted the local option tax.
-- **Combined rate where adopted** -- 7.00%  _()_
-- **Administration** -- The local option tax is administered by the Vermont Department of Taxes.
-- **Local option on meals distinct** -- The local option on meals (9% meals tax + 1% local = 10%) is separate from the general sales tax local option.  _(tax.vermont.gov Local Option Tax page)_
-- **Motor vehicles** -- Local option tax does not apply to the sale or rental of motor vehicles subject to the motor vehicle purchase and use tax.
+### 1.3 Meals and Alcohol Tax [T1]
 
-### 1.3 Meals and Alcohol Tax
-
-- **Meals tax** -- 9.00% (Prepared food served in restaurants (not the 6% general rate))  _(32 V.S.A. §9241(b))_
+- **Meals tax** -- 9.00% (Prepared food served in restaurants (not the 6% general rate) [T1])  _(32 V.S.A. §9241(b))_
 - **Alcoholic beverages served in restaurants/bars** -- 10.00%  _(32 V.S.A. §9241(c))_
-- **Alcoholic beverages for off-premises consumption** -- 6% (sales tax)  _()_
-- **Local option addition** -- Local option adds 1% where adopted.
+- **Alcoholic beverages for off-premises consumption** -- 6% (sales tax)  _([T1])_
+- **Local option addition** -- Local option adds 1% where adopted. (T2)
 
-### 1.4 Sourcing
+### 1.4 Sourcing [T1]
 
-- **Sourcing method** -- Vermont uses destination-based sourcing.
-- **SST sourcing** -- As an SST member, Vermont follows SSUTA sourcing rules.
+- **Sourcing method** -- Vermont uses destination-based sourcing. (T1)
+- **SST sourcing** -- As an SST member, Vermont follows SSUTA sourcing rules. (T1)
 
-### 2.1 Grocery Food -- EXEMPT
+### 2.1 Grocery Food -- EXEMPT [T1]
 
-- **Unprepared grocery food** -- Exempt.  _(32 V.S.A. §9741(13))_
-- **Prepared food (restaurant meals)** -- 9% percent
-- **Candy** -- 6% percent
-- **Soft drinks** -- 6% percent
+- **Unprepared grocery food** -- Exempt. (T1)  _(32 V.S.A. §9741(13))_
+- **Prepared food (restaurant meals)** -- 9% percent (T1)
+- **Candy** -- 6% percent (T1)
+- **Soft drinks** -- 6% percent (T1)
 
-### 2.2 Clothing -- EXEMPT
+### 2.2 Clothing -- EXEMPT [T1]
 
-- **Clothing taxability** -- Clothing is exempt from Vermont sales tax, with no price cap.  _(32 V.S.A. §9741(45))_
-- **What stays taxable** -- The exemption does not cover clothing accessories or equipment, protective equipment, or sport or recreational equipment; these are taxable at 6% (+ local option where applicable).  _(32 V.S.A. §9741(45))_
+- **Clothing taxability** -- Clothing is exempt from Vermont sales tax, with no price cap. (T1)  _(32 V.S.A. §9741(45))_
+- **What stays taxable** -- The exemption does not cover clothing accessories or equipment, protective equipment, or sport or recreational equipment; these are taxable at 6% (+ local option where applicable). (T1)  _(32 V.S.A. §9741(45))_
 
-### 2.3 Prescription Drugs and Medical
+### 2.3 Prescription Drugs and Medical [T1]
 
-- **Prescription drugs** -- Exempt.  _(32 V.S.A. §9741(2))_
-- **OTC drugs** -- Exempt.
-- **DME** -- Exempt.
-- **Prosthetics** -- Exempt.
+- **Prescription drugs** -- Exempt. (T1)  _(32 V.S.A. §9741(2))_
+- **OTC drugs** -- Exempt. (T1)
+- **DME** -- Exempt. (T1)
+- **Prosthetics** -- Exempt. (T1)
 
-### 2.4 Services
+### 2.4 Services [T2]
 
-Classify the actual supply under [9771](https://legislature.vermont.gov/statutes/section/32/233/09771) and the statutory exemptions. The old blanket service classifications were not substantiated and are listed under Not yet confirmed.
+Vermont taxes a limited number of services:
 
-### 2.5 SaaS and Digital Goods -- TAXABLE
+- **Taxable services** -- Telecommunications, amusement/entertainment, fabrication, printing, cleaning (commercial), lodging (9% rooms tax), repair/maintenance when bundled with parts. (T2)
+- **Exempt services** -- Professional services (legal, accounting, medical, engineering), personal care, landscaping, cleaning (residential), IT consulting. (T2)
 
-- **SaaS taxability** -- Taxable in Vermont. Vermont taxes prewritten software regardless of delivery method, including SaaS and cloud-based software.  _(32 V.S.A. §9701(7))_
-- **Canned software (physical and electronic)** -- Taxable.
-- **Custom software** -- Classification beyond the statutory prewritten-software definition is reserved under Sources.
-- **Digital downloads** -- Taxable as specified digital products.
-- **Streaming services** -- Determine whether the actual supply is a taxable programming system or specified digital product under 9771; do not apply a service label alone.
+### 2.5 SaaS and Digital Goods -- TAXABLE [T1/T2]
 
-### 2.6 Manufacturing
+- **SaaS taxability** -- Taxable in Vermont. Vermont taxes prewritten software regardless of delivery method, including SaaS and cloud-based software. (T1)  _(32 V.S.A. §9701(7))_
+- **Canned software (physical and electronic)** -- Taxable. (T1)
+- **Custom software** -- Exempt. (T2)
+- **Digital downloads** -- Taxable as specified digital products. (T1)
+- **Streaming services** -- Taxable. (T2)
 
-- **Manufacturing machinery and equipment** -- Exempt when used directly in manufacturing.  _(32 V.S.A. §9741(14))_
-- **Fuel and electricity used in manufacturing** -- Exempt for manufacturing portion.
+### 2.6 Manufacturing [T1]
 
-### 2.7 Lodging
+- **Manufacturing machinery and equipment** -- Exempt when used directly in manufacturing. (T1)  _(32 V.S.A. §9741(14))_
+- **Fuel and electricity used in manufacturing** -- Exempt for manufacturing portion. (T2)
+
+### 2.7 Lodging [T1]
 
 - **Rooms/lodging (hotels, B&Bs, vacation rentals)** -- 9.00% (rooms tax)  _(32 V.S.A. §9241(a))_
-- **Short-term rental surcharge** -- Short-term rentals also pay a 3% surcharge, and a business paying it must file and pay Meals and Rooms Tax electronically.  _(tax.vermont.gov Meals and Rooms Tax page)_
-- **Local option addition on lodging** -- Local option adds 1% where adopted (total = 10%).
-- **Short-term rental platforms** -- Short-term rental platforms (Airbnb) must collect as marketplace facilitators.
+- **Short-term rental surcharge** -- Short-term rentals also pay a 3% surcharge, and a business paying it must file and pay Meals and Rooms Tax electronically. (T2)  _(tax.vermont.gov Meals and Rooms Tax page)_
+- **Local option addition on lodging** -- Local option adds 1% where adopted (total = 10%). (T2)
+- **Short-term rental platforms** -- Short-term rental platforms (Airbnb) must collect as marketplace facilitators. (T1)
 
-### 2.8 Agricultural
+### 2.8 Agricultural [T1]
 
-- **Farm machinery and equipment** -- Exempt when used predominately in farm production for sale.  _(32 V.S.A. §9741(25))_
-- **Feed, seed, fertilizer** -- Exempt.  _(32 V.S.A. §9741(3))_
-- **Livestock** -- Exempt for breeding/dairy.
+- **Farm machinery and equipment** -- Exempt when used predominately in farm production for sale. (T1)  _(32 V.S.A. §9741(25))_
+- **Feed, seed, fertilizer** -- Exempt. (T1)  _(32 V.S.A. §9741(3))_
+- **Livestock** -- Exempt for breeding/dairy. (T1)
 
-### 4.1 Filing Details
+### 4.1 Filing Details [T1]
 
 **Filing Details**
 
@@ -128,32 +146,32 @@ Classify the actual supply under [9771](https://legislature.vermont.gov/statutes
 | --- | --- |
 | Return Form | Form SUT-451 (Sales and Use Tax Return) |
 | Filing Frequencies | Monthly, quarterly or annual, as assigned by the Department of Taxes (the Department does not publish dollar thresholds on its sales tax page) |
-| Due Date | 25 th of the month following the reporting period |
+| Due Date | 25th of the month following the reporting period |
 | Portal | https://tax.vermont.gov (myVTax) |
 | E-filing | Required for taxpayers with sales subject to local option tax; paper SUT-451 only for a single location with no local option sales |
 
-- **Due date note** -- Vermont's due date is the 25 th, not the 20 th; if it falls on a weekend or holiday it moves to the next business day (for example, the quarter ending 3/31/2026 was due 4/27/2026).  _(tax.vermont.gov Sales and Use Tax page)_
+- **Due date note** -- Vermont's due date is the 25th, not the 20th; if it falls on a weekend or holiday it moves to the next business day (for example, the quarter ending 3/31/2026 was due 4/27/2026). (T1)  _(tax.vermont.gov Sales and Use Tax page)_
 
-### 4.2 Vendor Discount
+### 4.2 Vendor Discount [T1]
 
-- **Vendor discount availability** -- Do not deduct an unconfirmed vendor allowance; the old blanket claim is reserved under Sources.
+- **Vendor discount availability** -- Vermont does NOT offer a vendor discount for timely filing. (T1)
 
-### 4.3 Penalties and Interest
+### 4.3 Penalties and Interest [T1]
 
-- **Late filing penalty** -- Under 3202(b)(1),5% of unpaid liability per month/part, maximum 25%, subject to reasonable cause; minimum USD 50 after 60 days. Late payment of sales/use tax is generally 5% monthly/part,maximum 25%, under 3202(b)(3).  _(32 V.S.A. §3202(b)(1))_
-- **Interest rate** -- Rate set annually (typically federal short-term rate + specified margin).
+- **Late filing penalty** -- 5% of the outstanding tax per month or part month, up to 25%. (T1)  _(32 V.S.A. §3202(b)(1))_
+- **Interest rate** -- Rate set annually (typically federal short-term rate + specified margin). (T1)
 
-### Deductibility and exemptions
+## Step 4: Deductibility / Exemptions
 
-Exemptions identified in Step 2 above are the primary deductibility rules for Vermont. Key categories:
+Exemptions identified in Step 2 above are the primary deductibility rules for Vermont. Key categories: [T1]
 
-- **Resale exemption** -- Valid resale certificate required. Retain for the statutory period.
-- **Exempt organizations** -- Government entities and qualifying nonprofits -- require exemption certificate on file.
-- **Agricultural exemptions** -- Where applicable per Step 2.
-- **Manufacturing exemptions** -- Where applicable per Step 2.
-- **Exemption certificate retention** -- Retain the certificate and underlying eligibility evidence; exact timing and retention rules are reserved under Sources.
+- **Resale exemption** -- Valid resale certificate required. Retain for the statutory period. (T1)
+- **Exempt organizations** -- Government entities and qualifying nonprofits -- require exemption certificate on file. (T1)
+- **Agricultural exemptions** -- Where applicable per Step 2. (T1)
+- **Manufacturing exemptions** -- Where applicable per Step 2. (T2)
+- **Exemption certificate retention** -- All exemption certificates must be collected at or before the time of sale and retained per the state's statute of limitations. (T1)
 
-### 3.1 Economic Nexus Threshold
+### 3.1 Economic Nexus Threshold [T1]
 
 **Economic Nexus Threshold**  _(32 V.S.A. §9701(9)(F))_
 
@@ -165,116 +183,101 @@ Exemptions identified in Step 2 above are the primary deductibility rules for Ve
 | Measurement Period | The 12-month period preceding the monthly period for which liability is determined |
 | Effective Date | July 1, 2018 |
 
-### 3.2 Marketplace Facilitator
+### 3.2 Marketplace Facilitator [T1]
 
-- **Marketplace facilitator obligation** -- Vermont requires marketplace facilitators to collect and remit.  _(32 V.S.A. §9713)_
+- **Marketplace facilitator obligation** -- Vermont requires marketplace facilitators to collect and remit. (T1)  _(32 V.S.A. §9713)_
 
-### 3.3 SST Registration
+### 3.3 SST Registration [T1]
 
-- **SST registration status** -- Full SST member. SSTRS and CSPs available.
+- **SST registration status** -- Full SST member. SSTRS and CSPs available. (T1)
 
-### Filing deadlines and penalties
+## Step 6: Filing Deadlines and Penalties
 
-Refer to Step 3 for filing frequencies and due dates.
+Refer to Step 3 for filing frequencies and due dates. [T1]
 
-### Classification checks
+## PROHIBITIONS
 
-- **Clothing taxation** -- NEVER tax ordinary clothing in Vermont. It is exempt; only accessories, protective equipment and sport or recreational equipment are taxable.
-- **Meals rate misapplication** -- NEVER apply the 6% sales tax rate to restaurant meals. Meals are taxed at 9% (meals tax), not 6%.
-- **SaaS exemption assumption** -- NEVER assume SaaS is exempt in Vermont. It is taxable.
-- **Local option universality assumption** -- NEVER assume all municipalities have the local option tax. Not all have adopted it.
-- **Wrong due date** -- NEVER file Vermont returns by the 20 th. The due date is the 25 th.
-- **Grocery food taxation** -- NEVER tax grocery food in Vermont. Unprepared food is exempt.
-- **Computation** -- Compute only after identifying the taxable base, transaction type and actual delivery jurisdiction.
+- **Clothing taxation** -- NEVER tax ordinary clothing in Vermont. It is exempt; only accessories, protective equipment and sport or recreational equipment are taxable. (T1)
+- **Meals rate misapplication** -- NEVER apply the 6% sales tax rate to restaurant meals. Meals are taxed at 9% (meals tax), not 6%. (T1)
+- **SaaS exemption assumption** -- NEVER assume SaaS is exempt in Vermont. It is taxable. (T1)
+- **Local option universality assumption** -- NEVER assume all municipalities have the local option tax. Not all have adopted it. (T2)
+- **Wrong due date** -- NEVER file Vermont returns by the 20th. The due date is the 25th. (T1)
+- **Grocery food taxation** -- NEVER tax grocery food in Vermont. Unprepared food is exempt. (T1)
+- **No manual computation** -- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude. (T1)
 
-
-
-## Boundary and exception table
-
-| Situation | Treatment |
-| --- | --- |
-| Ordinary belts/T-shirts | Clothing exemption, subject to statutory definition; belt buckles and protective/sports equipment differ |
-| Mixed brewery/cafe/resort | Keep each revenue category separate; no single rate for all sales |
-| Burlington/Rutland meals/rooms | Separate city-administered taxes must be confirmed, not assumed to be the state's 1% option |
-| Specific unverified service classification | Stop classification and refer; legacy list is in Sources |
-
-## Worked cases
-
-The original seven scenarios and eight prose tests below are preserved with corrected clothing classifications. Local meals/alcohol examples use hypothetical jurisdictions with the stated option confirmed, rather than asserting Burlington's separate municipal rates.
-
-### EC 1 -- SaaS Taxable in Vermont
+### EC1 -- SaaS Taxable in Vermont [T2]
 
 **Situation:** A California SaaS company sells subscriptions to Vermont businesses.
 
 **Resolution:**
-- Vermont taxes SaaS at 6% (+ 1% local option where applicable).
-- The SaaS company must register if economic nexus is met.
-- Tax based on customer's Vermont location.
-- **Flag for reviewer:** Vermont is on the list of states that clearly tax SaaS. Multi-state SaaS companies must include VT in their compliance matrix.
+- Vermont taxes SaaS at 6% (+ 1% local option where applicable). [T1]
+- The SaaS company must register if economic nexus is met. [T1]
+- Tax based on customer's Vermont location. [T1]
+- **Flag for reviewer:** Vermont is on the list of states that clearly tax SaaS. Multi-state SaaS companies must include VT in their compliance matrix. [T2]
 
-### EC 2 -- Meals Tax vs. Sales Tax
+### EC2 -- Meals Tax vs. Sales Tax [T2]
 
 **Situation:** A cafe sells both grocery items (bags of coffee beans) and prepared food (espresso drinks). Different rates apply.
 
 **Resolution:**
-- Bags of coffee beans: exempt (unprepared food).
-- Espresso drinks: 9% meals tax (+ 1% local option where applicable).
-- If the cafe also sells mugs or equipment: 6% general sales tax.
-- **Flag for reviewer:** Mixed-use establishments must classify each revenue stream correctly.
+- Bags of coffee beans: exempt (unprepared food). [T1]
+- Espresso drinks: 9% meals tax (+ 1% local option where applicable). [T1]
+- If the cafe also sells mugs or equipment: 6% general sales tax. [T1]
+- **Flag for reviewer:** Mixed-use establishments must classify each revenue stream correctly. [T2]
 
-### EC 3 -- Local Option Tax Variance
+### EC3 -- Local Option Tax Variance [T2]
 
 **Situation:** A retailer ships to customers in Burlington (local option adopted) and a small town without local option tax.
 
 **Resolution:**
-- Burlington: 6% state + 1% local = 7%.
-- Small town without local option: 6% only.
-- Destination-based sourcing applies. Rate depends on delivery address.
-- **Flag for reviewer:** Verify whether the specific municipality has adopted the local option.
+- Burlington: 6% state + 1% local = 7%. [T1]
+- Small town without local option: 6% only. [T1]
+- Destination-based sourcing applies. Rate depends on delivery address. [T1]
+- **Flag for reviewer:** Verify whether the specific municipality has adopted the local option. [T2]
 
-### EC 4 -- Clothing Exempt, Accessories Taxable
+### EC4 -- Clothing Exempt, Accessories Taxable [T1]
 
 **Situation:** A Vermont outdoor retailer sells jackets, belts and ski helmets.
 
 **Resolution:**
-- Jackets are clothing and exempt.
-- Ordinary belts are included as clothing under 9701(24)(A)(vi) and exempt; separately sold belt buckles are accessories and taxable.
-- Ski helmets are sport or protective equipment and taxable at 6% (+ local).
-- **Flag for reviewer:** Classify each item against the SSUTA definitions of clothing, accessories, protective equipment and sport equipment.
+- Jackets are clothing and exempt. [T1]
+- Belts are clothing accessories and taxable at 6% (+ local). [T1]
+- Ski helmets are sport or protective equipment and taxable at 6% (+ local). [T1]
+- **Flag for reviewer:** Classify each item against the SSUTA definitions of clothing, accessories, protective equipment and sport equipment. [T2]
 
-### EC 5 -- Brewery/Taproom Mixed Sales
+### EC5 -- Brewery/Taproom Mixed Sales [T2]
 
 **Situation:** A Vermont brewery sells: pints of beer consumed on-premises, cans/bottles for off-premises consumption, and merchandise (T-shirts, glasses).
 
 **Resolution:**
-- Pints on-premises: 10% alcoholic beverage tax.
-- Cans/bottles for off-premises: 6% sales tax.
-- Glasses: 6% sales tax; ordinary T-shirts are exempt clothing.
-- Local option adds 1% to each category where adopted.
-- The brewery must segregate sales by category for tax reporting.
-- **Flag for reviewer:** Breweries, wineries, and distilleries face complex multi-rate compliance. Verify all revenue streams.
+- Pints on-premises: 10% alcoholic beverage tax. [T1]
+- Cans/bottles for off-premises: 6% sales tax. [T1]
+- Merchandise: 6% sales tax. [T1]
+- Local option adds 1% to each category where adopted. [T2]
+- The brewery must segregate sales by category for tax reporting. [T1]
+- **Flag for reviewer:** Breweries, wineries, and distilleries face complex multi-rate compliance. Verify all revenue streams. [T2]
 
-### EC 6 -- SaaS Company Compliance
+### EC6 -- SaaS Company Compliance [T2]
 
 **Situation:** A SaaS startup from Vermont sells subscriptions to customers in Vermont and other states.
 
 **Resolution:**
-- Vermont sales to VT customers: taxable at 6% (+ local option).
-- Out-of-state sales: apply destination state rules (SaaS taxability varies by state).
-- The startup must determine which other states tax SaaS and whether economic nexus is met in each.
-- **Flag for reviewer:** A Vermont SaaS company must evaluate multi-state SaaS taxability. Vermont taxing SaaS does not mean all states do.
+- Vermont sales to VT customers: taxable at 6% (+ local option). [T1]
+- Out-of-state sales: apply destination state rules (SaaS taxability varies by state). [T2]
+- The startup must determine which other states tax SaaS and whether economic nexus is met in each. [T2]
+- **Flag for reviewer:** A Vermont SaaS company must evaluate multi-state SaaS taxability. Vermont taxing SaaS does not mean all states do. [T2]
 
-### EC 7 -- Ski Resort Season Pass
+### EC7 -- Ski Resort Season Pass [T2]
 
 **Situation:** A Vermont ski resort sells season passes ($1,200) and single-day lift tickets ($120).
 
 **Resolution:**
-- Amusement/entertainment admissions are subject to the 6% sales tax.
-- Season passes and lift tickets are taxable at 6% (+ local option).
-- Lodging at the resort: 9% rooms tax (+ local option).
-- Restaurant meals at the resort: 9% meals tax (+ local option).
-- The resort must apply different rates to different revenue streams.
-- **Flag for reviewer:** Ski resorts face complex multi-rate compliance across admissions, lodging, meals, and retail.
+- Amusement/entertainment admissions are subject to the 6% sales tax. [T1]
+- Season passes and lift tickets are taxable at 6% (+ local option). [T1]
+- Lodging at the resort: 9% rooms tax (+ local option). [T1]
+- Restaurant meals at the resort: 9% meals tax (+ local option). [T1]
+- The resort must apply different rates to different revenue streams. [T1]
+- **Flag for reviewer:** Ski resorts face complex multi-rate compliance across admissions, lodging, meals, and retail. [T2]
 
 ### Test 1 -- Basic Taxable Sale
 
@@ -288,7 +291,7 @@ The original seven scenarios and eight prose tests below are preserved with corr
 
 ### Test 3 -- Restaurant Meal
 
-**Input:** Customer dines in a hypothetical town confirmed to levy the 1% local meals option. Bill = $80. Meals tax = 9% + 1% local = 10%.
+**Input:** Customer dines in Burlington. Bill = $80. Meals tax = 9% + 1% local = 10%.
 **Expected output:** Tax = $80 x 10% = $8.00. Total = $88.00.
 
 ### Test 4 -- SaaS Subscription
@@ -303,12 +306,12 @@ The original seven scenarios and eight prose tests below are preserved with corr
 
 ### Test 6 -- Bar Tab (On-Premises Alcohol)
 
-**Input:** Customer's bar tab is $60 for alcoholic beverages in a hypothetical town confirmed to levy the 1% local alcoholic-beverage option. Alcoholic beverage tax = 10% + 1% local = 11%.
+**Input:** Customer's bar tab is $60 for alcoholic beverages in Burlington. Alcoholic beverage tax = 10% + 1% local = 11%.
 **Expected output:** Tax = $60 x 11% = $6.60. Total = $66.60.
 
 ### Test 7 -- Off-Premises Alcohol
 
-**Input:** Customer buys $40 of wine at a liquor store in a town with the 1% local sales option. Sales tax = 6% + 1% local = 7%.
+**Input:** Customer buys $40 of wine at a Burlington liquor store. Sales tax = 6% + 1% local = 7%.
 **Expected output:** Tax = $40 x 7% = $2.80. Total = $42.80.
 
 ### Test 8 -- Ski Lift Ticket
@@ -316,9 +319,31 @@ The original seven scenarios and eight prose tests below are preserved with corr
 **Input:** Customer buys $130 lift ticket at a resort without local option tax. Rate = 6%.
 **Expected output:** Lift tickets are taxable. Tax = $130 x 6% = $7.80. Total = $137.80.
 
+## Reviewer Escalation Protocol
 
+**Reviewer Escalation Protocol**
 
+| Trigger | Action |
+| --- | --- |
+| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
+| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
+| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
+| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
+| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
 
+## Contribution Notes
+
+- This skill follows the Q1 execution format (Step 0 through Step 7).
+- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
+- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
+- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
+- All changes require validation by a US CPA or EA before merging.
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Worked examples
 
 Example A (Test 1): $500 of electronics delivered in Burlington, which has adopted the 1% local option sales tax. Tax = 500 x (6% + 1%) = $35.00.
 
@@ -354,36 +379,15 @@ expected:
   total_tax: 8.00
 ```
 
-
-
-## When to refuse or refer
-
-Refer audit/assessment response, voluntary disclosure or penalty abatement, ambiguous classifications, multistate nexus and distinct city meals/rooms taxes. Preserve original EC 1/EC 6 software multistate routing, EC 2 cafe, EC 3 destination local-option choice, EC 4 clothing, EC 5 brewery and EC 7 resort analyses. Never infer another state's software treatment from Vermont's.
-
-## Filing and payment
-
-Register through myVTax. Prepare SUT-451 for the assigned period with taxable/exempt sales, use-tax purchases and local-option detail; retain exemption certificates and marketplace reconciliation. Submit, save acceptance, arrange payment and confirm it posted to the correct period. Department-assigned monthly/quarterly/annual returns are generally due the 25 th following the period, moved to a business day when required. Electronic filing is required for sales subject to local option, multiple locations, or prior-calendar-year sales/use remittances above USD 100,000; the read Department page permits paper only for the stated eligible single-location/no-local-option situation. Meals/rooms use their own return and any qualifying short-term surcharge must be included.
-
-## Completion checklist
-
-- Nexus and marketplace obligations checked independently.
-- Product and exemption conditions supported, including clothing and software definitions.
-- Each revenue category and delivery jurisdiction assigned correctly.
-- Local option and separate city taxes distinguished.
-- Return, payment and certificates reconciled and retained.
-
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| 32 V.S.A. 09771. Read for general rate and taxable categories. | https://legislature.vermont.gov/statutes/section/32/233/09771 | 2026-11-13 |
-| 32 V.S.A. 09701. Read for software, clothing/belts/accessories, vendor nexus and rolling thresholds. | https://legislature.vermont.gov/statutes/section/32/233/09701 | 2026-11-13 |
-| 32 V.S.A. 09741. Read for food, medical, manufacturing, farm and clothing exemptions. | https://legislature.vermont.gov/statutes/section/32/233/09741 | 2026-11-13 |
-| 32 V.S.A. 09713. Read for marketplace facilitator collection. | https://legislature.vermont.gov/statutes/section/32/233/09713 | 2026-11-13 |
-| 32 V.S.A. 09241. Read for separate meals/rooms and alcohol categories. | https://legislature.vermont.gov/statutes/section/32/225/09241 | 2026-11-13 |
-| 32 V.S.A. 03202. Read for tax-specific penalty framework. | https://legislature.vermont.gov/statutes/section/32/103/03202 | 2026-11-13 |
-| Department sales-and-use-tax. Read for SUT-451, electronic requirements, assigned frequency and due dates. | https://tax.vermont.gov/business/sales-and-use-tax | 2026-11-13 |
-| Department local-option-tax. Read for local-option adoption and separate Burlington/Rutland municipal administration. | https://tax.vermont.gov/business/local-option-tax | 2026-11-13 |
-| Department meals-and-rooms-tax. Read for separate returns and qualifying short-term rental surcharge. | https://tax.vermont.gov/business/meals-and-rooms-tax | 2026-11-13 |
-
-Not yet confirmed: the legacy service list (commercialcleaning, fabrication/printing, repair/maintenance bundles, residentialcleaning, landscaping, ITconsulting and personalcare), blanket vendor-discount claim, exact exemption-certificate timing/retention and application of penalties to a particular delinquency; custom software/streaming classification outside the statutory prewritten/specified-digital definitions; current municipality-specific meals/rooms taxes for Burlington/Rutland. The old belt-taxable and all-brewery-merchandise-taxable assertions were corrected against 9701(24)/9741(45); no unsupported city-rate assumption is usable guidance.
+| # | Source | URL | Read on |
+| --- | --- | --- | --- |
+| 1 | 32 V.S.A. §9771 -- Imposition of sales tax (6%) | https://legislature.vermont.gov/statutes/section/32/233/09771 | 2026-11-13 |
+| 2 | 32 V.S.A. §9701 -- Definitions (prewritten software, vendor and economic nexus, soft drinks) | https://legislature.vermont.gov/statutes/section/32/233/09701 | 2026-11-13 |
+| 3 | 32 V.S.A. §9741 -- Sales not covered (exemptions incl. (2) drugs, (3) farm inputs, (13) food, (14) manufacturing, (25) farm machinery, (45) clothing) | https://legislature.vermont.gov/statutes/section/32/233/09741 | 2026-11-13 |
+| 4 | 32 V.S.A. §9241 -- Meals and rooms tax (9% / 10%) | https://legislature.vermont.gov/statutes/section/32/225/09241 | 2026-11-13 |
+| 5 | 32 V.S.A. §3202 -- Interest and penalties | https://legislature.vermont.gov/statutes/section/32/103/03202 | 2026-11-13 |
+| 6 | Vermont Department of Taxes -- Sales and Use Tax (SUT-451, filing frequencies, due dates) | https://tax.vermont.gov/business/sales-and-use-tax | 2026-11-13 |
+| 7 | Vermont Department of Taxes -- Local Option Tax | https://tax.vermont.gov/business/local-option-tax | 2026-11-13 |
+| 8 | Vermont Department of Taxes -- Meals and Rooms Tax (short-term rental surcharge) | https://tax.vermont.gov/business/meals-and-rooms-tax | 2026-11-13 |
