@@ -1,0 +1,56 @@
+name: Publish approved MCP Registry entry
+
+# Publication is manual, after Michael approves the exact manifest and its hash.
+on:
+  workflow_dispatch:
+    inputs:
+      manifest_json:
+        description: Approved hosted server.json from the website repository
+        required: true
+        type: string
+      approved_sha256:
+        description: SHA256 of the exact file Michael approved
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mcp-registry-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'openaccountants/openaccountants' && github.ref == 'refs/heads/main' && github.actor == 'michaelcutajar1995'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check the approved file and live version
+        env:
+          MCP_MANIFEST_JSON: ${{ inputs.manifest_json }}
+          MCP_APPROVED_SHA256: ${{ inputs.approved_sha256 }}
+        run: python3 scripts/prepare-registry-publish.py "$RUNNER_TEMP/hosted-server.json"
+      - name: Download the pinned official publisher
+        env:
+          MCP_PUBLISHER_SHA256: 4d527ca8f1ced0394c962dc925c2a4a4addef441cbefd62501c875e9481823a8
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/mcp-publisher.tar.gz"
+          curl --fail --location --silent --show-error --max-time 60 \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.8.9/mcp-publisher_linux_amd64.tar.gz \
+            --output "$archive"
+          printf '%s  %s\n' "$MCP_PUBLISHER_SHA256" "$archive" | sha256sum --check -
+          tar xzf "$archive" -C "$RUNNER_TEMP" mcp-publisher
+      - name: Validate the Registry schema
+        run: '"$RUNNER_TEMP/mcp-publisher" validate "$RUNNER_TEMP/hosted-server.json"'
+      - name: Authenticate with this repository's GitHub identity
+        run: '"$RUNNER_TEMP/mcp-publisher" login github-oidc'
+      - name: Publish the approved entry
+        run: '"$RUNNER_TEMP/mcp-publisher" publish "$RUNNER_TEMP/hosted-server.json"'
