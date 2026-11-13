@@ -8,7 +8,6 @@ last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-category: federal-tax
 type: situation-rules
 ---
 
