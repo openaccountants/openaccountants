@@ -165,6 +165,17 @@ If any test fails, stop: the S election is not available (see the refusal table)
 | Existing S election, income has dropped | Revocation needs consent of shareholders holding more than half the shares; made by the 15th day of the 3rd month it is effective from the 1st day of that year, otherwise from the next year, unless a later date is specified (1362(d)(1)); then no new election for five years (1362(g)) |
 | Additional Medicare Tax as the only reason | Not a reason on its own: the 0.9% still applies to salary above the threshold; it saves only on the distribution part |
 
+### Defaults when a fact is missing
+
+| Missing fact | Default | Why |
+| --- | --- | --- |
+| No evidence for the salary | Assume a salary close to profit and show the saving as near zero; ask for duties, hours and market pay data | The IRS can reclassify distributions as wages; no percentage rule exists |
+| State entity-level tax unknown | Flag it for the reviewer; never assume zero | Several states tax S corporations at entity level (state table) |
+| QBI effect unclear | Run both structures in `us-qbi-deduction` and show both | The effect can go either way (Step 5) |
+| Added costs not quoted | Ask for quotes; do not recommend on an estimate | This skill holds no official cost figures |
+| Late-election facts uncertain | Test every Rev. Proc. 2013-30 condition; if one is unproven, recommend the next timely year | Relief needs intent, reasonable cause and shareholder statements |
+| Social Security benefit effect | Flag, do not compute | Benefit projections are outside this skill |
+
 ## Worked cases
 
 **Case 1, a decision: a single consultant with USD 120,000 profit and a USD 70,000 salary.** A single filer, no other income, standard deduction, a non-SSTB business in a state with no entity-level tax on S corporations. 2026 profit before any owner pay is USD 120,000. Market data supports a salary of USD 70,000. Quotes for the added costs (payroll service, Form 1120-S, FUTA and state unemployment) total USD 3,000.
