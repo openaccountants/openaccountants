@@ -95,10 +95,13 @@ class BuilderHoldTests(unittest.TestCase):
     def test_actual_held_source_files_are_held_without_dependents(self):
         _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])
-        names = {"fl-sales-tax", "wi-payroll"}
+        names = {"fl-sales-tax"}
         for name in names:
             self.assertEqual(held[name], "status: needs_sources")
             self.assertNotIn(name, targets)
+        # Wisconsin payroll now carries dated official sources in its 2026 rebuild.
+        self.assertNotIn("wi-payroll", held)
+        self.assertIn("wi-payroll", targets)
         self.assertIn("workflow-base", targets)
         self.assertTrue(any(json.loads(s.context).get("domain") == "financial-reporting" for s in targets.values()))
 
