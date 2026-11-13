@@ -1,802 +1,572 @@
 ---
 name: us-form-1120-c-corp
-description: Tier 2 US federal content skill for preparing Form 1120 — the US C-corporation income tax return. Covers tax year 2025 under OBBBA including the 21% flat rate, DRD tiers (50/65/100%), §163(j) interest limit, §174 R&D capitalization, §250 GILTI/FDII deduction at 50%/37.5%, the 15% Corporate AMT on AFSI > $1B (IRA 2022), required schedules (B, C, J, K, L, M-1/M-3, O, UTP), and common attached forms (4562, 4626, 5471/5472 refer-out, 6765, 8993, 1125-A, 1125-E). Filing due 15th day of 4th month; Form 7004 6-month extension; quarterly estimated 25/25/25/25 with no 110% safe harbor for corps.
+description: >
+  Prepare the working papers for a domestic C corporation's 2026 Form 1120.
+  Covers the regular corporate tax computation, dividends-received deductions,
+  losses, interest, domestic and foreign research costs, section 250, CAMT,
+  BEAT screening, estimated tax, filing schedules, officer compensation and
+  LLC classification elections. Includes recomputing domestic, research-election,
+  multinational, loss, interest and CAMT examples. Use with the US tax workflow
+  base and route consolidated returns and specialized corporate regimes
+  separately.
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: federal
+domain: tax
+type: computation
+tax_year: 2026
 tier: 2
-domain: corporate-tax
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+last_updated: 2026-11-13
+version: 1.0
 ---
 
-# US Form 1120 C Corp
+# US Form 1120 C corporation v1.0
 
-## US Form 1120 — C-Corporation Income Tax Return (Tax Year 2025)
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> Tier 2 federal content skill. MUST be loaded alongside `us-tax-workflow-base` v0.2 or later. Federal only — state corporate income tax is out of scope; route to the relevant state skill when needed.
+**Circular 230 disclosure:** Written tax advice must use reasonable factual and legal assumptions, establish the relevant facts, consider all relevant circumstances and apply the law to those facts. It cannot rely on the chance that a return escapes audit or that an issue will not be raised. [31 CFR 10.37(a)](https://www.ecfr.gov/current/title-31/section-10.37).
 
-## 1. Scope
+**Coverage:** tax years beginning in 2026, with transition rules explicitly identified. Built from the law; no professional approval is asserted for this version. Load with `us-tax-workflow-base`. The output is a reconciled computation and filing checklist for professional review.
 
-This skill covers the preparation of **Form 1120, U.S. Corporation Income Tax Return**, for tax year 2025 for a domestic C-corporation operating in the United States. It walks through the income computation, the tax computation on Schedule J, the required schedules (B, C, J, K, L, M-1/M-3, O, UTP where applicable), the most common attached forms, and the corporate-specific provisions that differ from individual taxation (DRD, NOL post-TCJA, §163(j), §174 capitalization, §250 GILTI/FDII deduction, and the 15% Corporate Alternative Minimum Tax).
+**Form-version control:** the IRS Form 1120 instructions available and read on 2026-11-13 are the **2025** instructions. References to their page-one lines and schedules below identify that published layout, not an assertion that the final 2026 form is identical. Apply the current statutes and 2026 inflation figures here; before filing, obtain the final form and instructions for the actual return year and remap every line and attachment. [IRS Form 1120](https://www.irs.gov/forms-pubs/about-form-1120).
 
-**In scope:**
-- Calendar-year and fiscal-year domestic C-corporations chartered in any US state or DC
-- LLCs that have elected C-corp treatment via Form 8832
-- Single-entity returns (no consolidated returns — see §1.1)
-- The 21% flat federal rate computation under IRC §11
-- Schedule C dividends-received deduction (DRD)
-- Net operating loss (NOL) treatment under the post-TCJA regime (80% limitation, indefinite carryforward, no carryback)
-- §163(j) business interest expense limitation
-- §174 specified research and experimental (SRE) capitalization
-- §250 GILTI/FDII deduction (at the post-TCJA, pre-sunset 2025 rates of 50% / 37.5%)
-- Corporate Alternative Minimum Tax (CAMT) under IRC §55(b)(2) and §59(k) for applicable corporations
-- Estimated tax requirements under IRC §6655 with the corporate safe-harbor rules
-- Late filing (§6651) and late payment (§6651(a)(2)) penalties
-- E-file mandate under Reg. §301.6011-5
+## Who this applies to
 
-**Out of scope — refer out:**
-- **Consolidated returns** (parent + 80%-affiliated subsidiaries filing a single 1120) — refer to `us-form-1120-consolidated` (separate skill).
-- **S-corporations** — use `us-form-1120-s`. If the client is considering the S election, route to `us-s-corp-election-decision` first.
-- **Personal Service Corporations (PSCs)** — they file Form 1120 but with special rules; flag for reviewer rather than handling here.
-- **Personal Holding Companies (§541)** — refer out; Schedule PH attachment is specialized.
-- **Tax-exempt corporations** (§501(c) entities filing Form 990) — out of scope.
-- **REITs, RICs, cooperatives, life and non-life insurance companies, FSCs, real estate mortgage investment conduits** — each has a dedicated form (1120-REIT, 1120-RIC, 1120-C, 1120-L, 1120-PC, 1120-FSC, 1066) — refer out.
-- **Foreign corporations** with US-source income — use Form 1120-F; refer out.
-- **Forms 5471 (CFC reporting)** — refer to `us-form-5471-cfc`.
-- **Forms 5472 (25%+ foreign-owned US corp reporting)** — refer to `us-form-5472`.
-- **Forms 8990/8991 BEAT** — complex; refer to `us-base-erosion-tax`.
-- **Form 6765 R&D credit and §174 capitalization mechanics** — refer to `us-r-and-d-credit-and-174`.
-- **Stock buyback excise tax (IRC §4501) and Form 7208** — refer to `us-stock-buyback-excise`.
-- **State and local corporate income, franchise, gross receipts, and minimum taxes** — route to state skills (e.g., `us-ca-form-100`, `us-tx-franchise-tax`, `us-de-franchise`, `us-ny-form-ct-3`).
+A domestic C corporation generally files Form 1120 even if it has no taxable income, is inactive, or is in bankruptcy. This includes an eligible **domestic** LLC classified as an association taxable as a corporation, unless a valid S election or another specialized filing regime applies. Domestic status ordinarily follows creation or organization in the United States or under US or state law. A foreign-organized entity's Form 8832 election changes its federal entity classification; it does not by itself make the entity domestic. [Form 1120 instructions, Who Must File](https://www.irs.gov/instructions/i1120); [IRC 7701(a)(4)-(5)](https://uscode.house.gov/us/usc/t26/s7701/).
 
-### 1.1 Consolidated returns — quick refusal note
+| Facts | Treatment and boundary |
+|---|---|
+| Ordinary standalone domestic C corporation, calendar or fiscal year | Apply this computation; obtain prior returns, accounting method, opening tax attributes and a complete trial balance. |
+| Parent and subsidiaries considering or filing a consolidated return | Route for consolidated-return analysis. The affiliated-group ownership test generally requires at least 80% voting power **and** value, with excluded entities and stock rules. Do not consolidate merely because the accounts are consolidated. [IRC 1504(a)-(b)](https://uscode.house.gov/us/usc/t26/s1504/). |
+| S corporation or proposed S election | Use the S corporation and election-decision guides. Do not put an S corporation's ordinary income through the C corporation tax calculation. |
+| Personal service corporation | Form 1120 may apply, but required tax-year and special compensation/distribution rules need separate review. |
+| Personal holding company | Evaluate Schedule PH and the separate personal holding company tax. Ordinary income tax alone is incomplete. |
+| Exempt organization, REIT, RIC, cooperative, insurer, FSC or REMIC | Establish the applicable specialized return, including Form 990/990-T, 1120-REIT, 1120-RIC, 1120-C, 1120-L, 1120-PC, 1120-FSC or 1066. |
+| Foreign corporation with US activity or income | Evaluate Form 1120-F, effectively connected income, treaty protection and any protective return. |
+| Foreign-owned US disregarded entity | Consider a **pro forma** Form 1120 with Form 5472 under its special rules; this does not convert the entity into a C corporation for general income-tax purposes. |
+| Foreign ownership, subsidiaries, branches or related-party payments | Complete the cross-border screen below; information reporting can be required even when income tax is zero. |
+| State or local corporation tax | Use the relevant state guide. Federal elections, research deductions, losses and depreciation do not establish state conformity. |
 
-- **Consolidated returns out of scope** — If the corporation is part of an affiliated group filing a consolidated return under IRC §1501 and Reg. §1.1502, this skill does not apply. The consolidated return introduces SRLY (separate return limitation year) rules for NOLs, intercompany transaction deferrals under Reg. §1.1502-13, excess loss accounts, investment-basis adjustments, the consolidated §163(j) computation, the consolidated CAMT computation, and Forms 851 and 1122. These are out of scope here. If the corporation has an 80%-or-more parent or 80%-or-more subsidiaries, ask the client whether a consolidated election (Form 1122) is in effect. If yes, refer out. If no, the entities file separate 1120s and this skill applies to each.  _(IRC §1501, Reg. §1.1502, Reg. §1.1502-13)_
+The specialized-return boundaries above follow [Form 1120 instructions, Who Must File and Other Forms and Statements](https://www.irs.gov/instructions/i1120).
 
-## 2. Who must file
+### Tax year and first corporate year
 
-- **Filing requirement for domestic corporations** — Under IRC §6012(a)(2) and Reg. §1.6012-2(a), every domestic corporation in existence during any portion of the taxable year must file Form 1120, regardless of whether it had taxable income or any activity, unless it falls under one of the special categories listed in §1 above (S-corp, REIT, RIC, exempt org, etc.). This includes: 1. Corporations chartered as such under state law (Inc., Corp., Co., Ltd.) that have not made an S election. 2. LLCs that have affirmatively elected C-corporation treatment by filing Form 8832 (Entity Classification Election). The election is effective on the date specified on Form 8832 (which can be up to 75 days before or 12 months after the filing date). From that effective date forward, the LLC files Form 1120, not Schedule C, Form 1065, or Form 1120-S. 3. Foreign-incorporated entities that have elected to be treated as a US corporation via Form 8832 (rare but possible for certain hybrid structures). 4. Inactive corporations — even a corporation with no income and no activity must file if it remains in existence under state law. The only way out of the filing requirement is formal dissolution under state law (a final return is then required, with the "Final return" box at the top of Form 1120 checked). 5. First-year and short-year corporations — a corporation formed mid-year files a short-year 1120 from the date of incorporation through its first chosen year-end. The first return also must include any Form 1128 (change of accounting period) and any §351 transferor disclosures.  _(IRC §6012(a)(2), Reg. §1.6012-2(a))_
+Establish the actual start and end dates, including short years, before computing deductions or due dates. A corporation may generally use an allowable calendar, fiscal or 52-53-week year. Personal service corporations have a required year unless an exception applies; review Forms 1128 and 8716 and any section 280H consequences instead of assuming a free fiscal-year choice. [Form 1120 instructions, Accounting Period](https://www.irs.gov/instructions/i1120).
 
-### 2.1 Tax year selection
+For an eligible LLC's Form 8832 election:
 
-- **Tax year options for C-corporations** — A C-corporation may adopt a calendar year (January 1 – December 31) or any fiscal year ending on the last day of a month other than December, except: Personal Service Corporations (PSCs) are generally required to use a calendar year under IRC §441(i) unless they make a §444 election (with required-payment offset on Form 8716 and Form 8752). PSCs are out of scope here — flag for reviewer. A 52/53-week year is permitted under IRC §441(f). The tax year is established by the timing of the first return; changes require Form 1128 and IRS consent (Rev. Proc. 2006-45 automatic procedures for most domestic corps).  _(IRC §441(i), IRC §441(f), Rev. Proc. 2006-45)_
+- The specified effective date ordinarily may be no more than **75 days before filing** or **12 months after filing**. Evaluate late-election relief separately; it is not automatic.
+- A classification change generally prevents another elective classification change for **60 months**. The regulation contains exceptions, including an initial election effective on formation and specified permission cases.
+- A disregarded entity electing association status is deemed to contribute its assets and liabilities to the corporation for stock. A partnership electing association status is deemed to contribute its assets and liabilities for stock and then liquidate by distributing that stock to its partners. These are not interchangeable descriptions.
+- Test the deemed transactions under the applicable Code provisions, including sections 351 and 357; liabilities, built-in gains, ownership and basis can prevent a wholly tax-free result. Reconcile the closing pre-election books and opening corporate tax basis.
+- Attach the required copy of Form 8832 to the applicable return and retain the IRS election evidence. Determine the EIN requirement from the entity's actual continuity and formation facts rather than assuming every election needs a new EIN.
 
-## 3. Rate
+[26 CFR 301.7701-3(c)(1), (g)(1)-(3)](https://www.ecfr.gov/current/title-26/section-301.7701-3).
 
-### 3.1 The 21% flat rate
+For a qualifying deemed section 351 transfer, corporate basis generally carries over with recognized-gain adjustments, and holding-period tacking follows section 1223. The individual's pre-election losses remain the individual's and do not become corporate NOLs. [IRC 362(a)](https://uscode.house.gov/us/usc/t26/s362/); [IRC 1223(1)-(2)](https://uscode.house.gov/us/usc/t26/s1223/); [IRS single-member LLC treatment](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies).
 
-- **C-corporation flat federal income tax rate (tax years beginning after Dec 31, 2017, including 2025)** — 21%  _(IRC §11(b); Tax Cuts and Jobs Act of 2017 (P.L. 115-97))_
-- **2025 confirmation of 21% rate** — Confirmed for 2025: The 21% rate continues to apply for tax years beginning in calendar year 2025. The One Big Beautiful Bill Act (P.L. 119-21, July 4 2025) did not change the corporate rate. Some legislative proposals during 2024-2025 had floated rate changes (a 15% rate for domestic manufacturers, a 28% rate generally), but none were enacted. For any return with a tax year beginning in 2025, use 21%. It replaced the prior graduated corporate rate schedule (15%, 25%, 34%, 39%, 34%, 35%, 38%, 35%) and the personal service corporation flat 35% rate.  _(P.L. 119-21 (OBBBA, July 4 2025); P.L. 115-97 (TCJA))_
+An existing entity keeps its EIN after classification changes: "Any entity that has an EIN will retain that EIN". If it never had its own EIN, obtain one instead of using the owner's identifier. The IRS may permit another classification election within 60 months if "more than 50%" of interests are held by persons with no interest at the prior election's effective or filing date; initial elections effective on formation are excepted. [Form 8832 instructions, page 6](https://www.irs.gov/pub/irs-pdf/f8832.pdf); [26 CFR 301.7701-3(c)(1)(iv)](https://www.ecfr.gov/current/title-26/section-301.7701-3).
 
-### 3.2 Computation
+## Rates, bands and thresholds
 
-- **Corporate tax computation** — Tax = Taxable income (line 30 of Form 1120) × 21%, computed on Schedule J, Part I, line 1a. There is no "small corporation" rate, no graduated bracket, and no first-dollar exclusion. Even a corporation with $1,000 of taxable income pays $210 of federal income tax.  _([Schedule J, Part I, line 2](https://www.irs.gov/instructions/i1120))_
+These are federal rules for the stated period. A threshold is usable only with its adjacent conditions.
 
-### 3.3 Effect on planning
+| Item | Amount and period | Conditions and official source |
+|---|---|---|
+| Regular corporate income tax | **21%**, 2026 | Applies to taxable income under section 11; credits, CAMT and other taxes are separate. [IRC 11(b)](https://uscode.house.gov/us/usc/t26/s11/). |
+| Domestic dividends-received deduction (DRD) | Generally **50%**, **65%**, or qualifying **100%**, 2026 | 65% requires at least 20% vote and value; 100% requires the qualifying affiliated-dividend or other statutory category, not ownership alone. Holding periods and limitations apply. [IRC 243(a)-(c)](https://uscode.house.gov/us/usc/t26/s243/). |
+| Post-2017 NOL deduction | Generally **80%** of the applicable modified taxable-income base; indefinite carryforward | Use pre-2018 NOLs first; special farming and insurance rules remain. [IRC 172(a)-(b)](https://uscode.house.gov/us/usc/t26/s172/). |
+| Business interest limitation | Business interest income + **30%** of adjusted taxable income (ATI) + floor-plan financing interest | Exempt trades/businesses, aggregation, carryforwards and 2026 changes require the analysis below. [IRC 163(j)](https://uscode.house.gov/us/usc/t26/s163/); [Form 8990 instructions](https://www.irs.gov/instructions/i8990). |
+| Small-business gross-receipts test | Prior **3-year** average annual gross receipts **not over $32 million**, years beginning in 2026 | Apply section 448(c) aggregation and special-period rules. A tax shelter does not qualify for the section 163(j) small-business exception merely because receipts are small. [Rev. Proc. 2025-32, section 4.30](https://www.irs.gov/irb/2025-45_IRB); [Form 8990 instructions](https://www.irs.gov/instructions/i8990). |
+| Section 179 election | Maximum **$2,560,000**; phaseout begins when qualifying property cost exceeds **$4,090,000**, years beginning in 2026 | Eligible property, investment phaseout, business-income limit, aggregation and carryforward rules apply; separate vehicle restrictions remain. [Rev. Proc. 2025-32, section 4.24](https://www.irs.gov/irb/2025-45_IRB). |
+| Domestic research | Current deduction by default; elective amortization over **at least 60 months** | Section 174A applies for years beginning after 2024; elective amortization begins with the first month benefits are realized. [IRC 174A(a)-(c) and effective-date notes](https://uscode.house.gov/us/usc/t26/s174A/). |
+| Foreign research | Capitalize and amortize over **15 years**, beginning at the year's midpoint | Research location controls; software development is included. [IRC 174(a)-(c)](https://uscode.house.gov/us/usc/t26/s174/). |
+| Section 250 deduction | **33.34%** of FDDEI; **40%** of NCTI plus its related section 78 gross-up, years beginning in 2026 | Apply eligibility, expense-allocation and taxable-income limitation rules. The old 37.5%/50% rates do not govern a 2026-start year. [IRC 250(a)-(b) and 2025 amendment notes](https://uscode.house.gov/us/usc/t26/s250/). |
+| Corporate charitable gifts | **1% floor** and **10% ceiling** of statutory modified taxable income, years beginning after 2025 | Below-floor amounts do not automatically carry forward. Apply section 170(d)(2) and special contribution categories. [IRC 170(b)(2), (d)(2)](https://uscode.house.gov/us/usc/t26/s170/). |
+| CAMT | **15%** of AFSI less the corporate AMT foreign tax credit, before comparison with regular tax plus BEAT | Applicable-corporation test generally uses prior **3-year** average AFSI **over $1 billion**; a foreign-parented multinational has the additional **$100 million or more** corporation-side test. [IRC 55(b)(2)](https://uscode.house.gov/us/usc/t26/s55/); [IRC 59(k)](https://uscode.house.gov/us/usc/t26/s59/). |
+| CAMT financial statement NOL deduction | Lesser of available FSNOL carryovers or **80%** of pre-FSNOL AFSI | Only qualifying financial statement losses, with the statutory adjustments, enter this separate attribute ledger. [IRC 56A(d)](https://uscode.house.gov/us/usc/t26/s56A/). |
+| BEAT | **10.5%**, years beginning after 2025; specified bank/securities groups add **1 percentage point** | Screen average annual gross receipts of at least **$500 million** over the prior **3 years** and base-erosion percentage at least **3%**, or **2%** for specified bank/securities groups. Aggregation, exclusions and credit adjustments apply. [IRC 59A(b), (e)](https://uscode.house.gov/us/usc/t26/s59A/). |
+| Estimated-tax trigger and ordinary installments | Expected tax **$500 or more**; ordinarily **25%** of required annual payment per installment | Apply corporate prior-year and large-corporation restrictions below. [Form 2220 instructions, Who Must File and Required Annual Payment](https://www.irs.gov/instructions/i2220). |
+| Form 1125-E | Total receipts **$500,000 or more**, **and** an officer-compensation deduction | Attach when both conditions apply; use the form's definition of receipts. [Form 1125-E instructions](https://www.irs.gov/instructions/i1125e). |
+| Schedules L, M-1 and M-2 small-return exception | Both total receipts and year-end assets **less than $250,000** | Complete the corresponding Schedule K answer; equality at the threshold fails the exception. [Form 1120 instructions, Schedules L and M-1](https://www.irs.gov/instructions/i1120). |
+| Schedule M-3 | Year-end assets **$10 million or more** | Required filers below **$50 million**, and voluntary filers, may use Part I plus M-1 instead of M-3 Parts II and III. These categories also have the Schedule B exception. [Schedule M-3 instructions, Who Must File and Schedule B](https://www.irs.gov/instructions/i1120sm3). |
+| Schedule UTP | Assets **$10 million or more**, plus audited statements and reportable tax positions | Apply all conditions, including the related-party statement rules; size alone is insufficient. [Form 1120 instructions, Schedule K question 14](https://www.irs.gov/instructions/i1120). |
+| Electronic filing | Generally **10 or more** returns of any type during the calendar year | Aggregate relevant income, employment, excise and information returns. Hardship waivers and religious exemptions have their own procedures; there is no additional asset minimum. [Form 1120 instructions, Electronic Filing](https://www.irs.gov/instructions/i1120). |
 
-Because the rate is flat, the long-standing income-shifting strategies (paying bonuses to bring taxable income down to a lower bracket; timing income to land in the 15% bracket) no longer have any first-order effect. The remaining levers are:
-- Defer recognition into a year when an NOL exists (post-TCJA NOLs are still subject to the 80% limit, so this is partial).
-- Accelerate deductions to reduce taxable income year-on-year (still beneficial because of the time value of money and the §163(j) ATI floor).
-- Choose between deductible compensation and dividend distribution (deductible compensation is still preferred at the entity level — dividends are not deductible and create double taxation).
+Source wording checks: section 11(b) says “21 percent”; section 250(a)(1)(A) says “33.34 percent”; section 250(a)(1)(B) says “40 percent”; section 59A(b)(1)(A) says “10.5 percent”; and Rev. Proc. 2025-32 section 4.30 states “$32,000,000.” Each amount above is applied with its statutory base and effective period.
 
-## 4. Due dates and extension
+## The base
 
-### 4.1 Original due date
+### Build the return from the books
 
-- **General due date rule** — Under IRC §6072(b) (as amended by the Surface Transportation and Veterans Health Care Choice Improvement Act of 2015, P.L. 114-41), Form 1120 is due on or before the 15th day of the 4th month following the close of the tax year.  _(IRC §6072(b); P.L. 114-41)_
+Do not multiply net book income by the tax rate. Start with a reconciled trial balance, separate permanent and timing differences, and retain schedules that reproduce each tax adjustment. The published 2025 Form 1120 uses page-one line 11 for total income, line 27 for deductions before NOL and special deductions, line 28 for the resulting subtotal, lines 29a/29b for NOL/special deductions and line 30 for taxable income. Use those labels to map the finalized 2026 form. [Form 1120 instructions, Income and Deductions](https://www.irs.gov/instructions/i1120).
 
-**Original due date table by tax year-end**  _([IRC §6072(b)](https://www.irs.gov/instructions/i1120))_
+1. Reconcile gross receipts, returns and allowances to the sales ledger. Compute inventory and cost of goods sold on Form 1125-A where applicable, applying inventory-method and capitalization rules. Gross profit is net sales less tax COGS, not total cash receipts.
+2. Bring dividends and inclusions through Schedule C; separately identify interest, rents, royalties, capital gains, Form 4797 business-property gains and other taxable income. Identify tax-exempt interest for the book reconciliation instead of including it as ordinary taxable interest.
+3. Classify recoveries. A refund of previously deducted state tax may produce taxable income under the tax-benefit rule; a federal income-tax refund is not automatically taxable income when the tax was nondeductible. Refund interest is separately considered.
+4. Deduct ordinary and necessary costs only when allowable under the accounting method and substantive rule. Check salaries/officer compensation, repairs, rents, taxes, interest, bad debts, depreciation, depletion, retirement plans and benefits. Capital expenditures and section 263A costs belong in the proper basis or inventory account.
+5. Reconcile related-party accruals under section 267, reserve-based book bad debts versus tax write-offs, federal income-tax expense, penalties, lobbying, entertainment, meals and other nondeductible items. Ordinary qualifying non-entertainment business meals are generally **50%** deductible; an employee must be present and the expense must not be lavish. Other categories and post-2025 employer-provided meal restrictions need their own section 274 analysis. [Form 1120 instructions, Other Deductions](https://www.irs.gov/instructions/i1120); [IRC 274](https://uscode.house.gov/us/usc/t26/s274/).
+6. Compute the separate interest, research, charitable-gift, NOL and special-deduction limitations below in their prescribed order. A single generic “taxable income” figure is not the base for every limitation.
+7. Compute regular tax, then applicable credits, CAMT, BEAT and other taxes through Schedule J. Reconcile estimated payments, credits carried forward, extension payments and withholding to payment records. Determine balance due, refund or election to apply an overpayment to the next year. Do not reuse old page-one payment line numbers without checking the final form.
 
-| Tax year-end | Due date |
-| --- | --- |
-| December 31, 2025 (calendar year) | **April 15, 2026** |
-| January 31, 2026 (fiscal) | May 15, 2026 |
-| June 30, 2026 (fiscal) | September 15, 2026 |
+Coordinate section 280C(a) wage/salary deduction reductions for applicable employment credits, including section 51. [IRC 280C(a)](https://uscode.house.gov/us/usc/t26/s280C/).
 
-- **Special rule for fiscal years ending June 30** — For tax years beginning before January 1, 2026, a fiscal-year C-corporation with a June 30 year-end has historically used a September 15 due date (15th day of 3rd month). This special rule for June 30 year-ends was scheduled to phase in to the new 4th-month rule for years beginning after December 31, 2025. A June 30, 2026 year-end (i.e., tax year beginning July 1, 2025) still uses the September 15 due date and an automatic 7-month extension; the 4th-month rule and 6-month extension apply from tax years beginning in 2026. Confirm against current IRS instructions for the year of filing.  _([IRC §6072(b)](https://www.irs.gov/instructions/i7004))_
-- **Weekend/holiday rule** — If the due date falls on a Saturday, Sunday, or legal holiday, the return is timely if filed on the next business day.  _(IRC §7503)_
+File Form 7205 when claiming section 179D: the instructions say "must file Form 7205 to claim the deduction". [Form 7205 instructions, Who Must File](https://www.irs.gov/instructions/i7205).
 
-### 4.2 Extension — Form 7004
+Use Form 4562 for applicable depreciation, section 179 and amortization. Determine acquisition, binding-contract, placed-in-service, business-use and election facts before choosing bonus depreciation; transition property can differ from newly acquired property. Section 179D also needs construction-start evidence: the deduction terminates for property whose construction begins **after June 30, 2026**. [Form 1120 instructions, Depreciation and Other Deductions](https://www.irs.gov/instructions/i1120); [Rev. Proc. 2025-32, section 2.11](https://www.irs.gov/irb/2025-45_IRB).
 
-- **Automatic 6-month extension** — A corporation may obtain an automatic 6-month extension to file Form 1120 by filing Form 7004 (Application for Automatic Extension of Time To File Certain Business Income Tax, Information, and Other Returns) on or before the original due date.  _(Form 7004)_
+### Dividends-received deduction
 
-**Extended due date table**  _([Form 7004](https://www.irs.gov/instructions/i7004))_
+Keep the gross dividend, payor classification, ownership percentage, holding-period evidence and deduction category together.
 
-| Tax year-end | Original due | Extended due |
-| --- | --- | --- |
-| December 31, 2025 | April 15, 2026 | **October 15, 2026** |
-| June 30, 2026 | September 15, 2026 | **April 15, 2027** (7-month extension) |
+- For an eligible domestic dividend, use the applicable section 243 rate from the table. Qualifying affiliated dividends require the statutory group, earnings-and-profits and election conditions; an 80%-owned investment alone does not establish the full deduction.
+- Section 246(c) generally requires holding the shares for **more than 45 days** during the **91-day** period beginning **45 days before** the ex-dividend date. For specified preferred dividends attributable to periods totaling more than **366 days**, substitute **90** and **181 days**, with the window beginning **90 days before** the ex-dividend date. Count only qualifying risk-bearing holding days. [IRC 246(c)](https://uscode.house.gov/us/usc/t26/s246/).
+- Debt-financed portfolio stock can reduce the deduction under section 246A. Certain public-utility preferred dividends use special Schedule C percentages rather than the ordinary tiers. Foreign dividends require section 245 or 245A analysis; neither a CFC inclusion nor every foreign dividend is an ordinary domestic DRD. [Form 1120 instructions, Schedule C](https://www.irs.gov/instructions/i1120).
+- Apply section 246(b)'s ordered, aggregate taxable-income limitations using the Schedule C worksheet. Do not independently multiply the same taxable-income figure by each DRD percentage and add the results. The higher-percentage tier is evaluated first, with the statutory adjustment for the lower tier. Check the NOL exception to the income limitation. [IRC 246(b)](https://uscode.house.gov/us/usc/t26/s246/).
 
-- **Extension extends filing time only, not payment time** — Critical caveat: Form 7004 extends the time to FILE, not the time to PAY. The corporation must pay the full estimated balance due by the original due date to avoid the §6651(a)(2) late-payment penalty (0.5% per month, max 25%) and §6601 interest. If Form 7004 is filed but no payment is made and a balance is owed, the extension is still valid for filing-penalty purposes, but late-payment penalty and interest accrue from the original due date. Form 7004 requires: Estimated total tax liability for the year (Line 6); Total payments and credits already made (Line 7); Balance due to be paid with the extension (Line 8). The IRS does not require a reason; the extension is automatic if Form 7004 is properly completed and filed timely.  _(IRC §6651(a)(2); IRC §6601)_
+A simple unlimited case: eligible dividends of $100,000 in the ordinary lower tier, $200,000 in the qualifying higher tier and $500,000 of fully qualifying affiliated dividends produce $50,000 + $130,000 + $500,000 = **$680,000** of DRD, assuming sufficient modified taxable income and all holding-period and other requirements. These are illustrative facts, not alternative ownership tests.
 
-## 5. Estimated tax — IRC §6655 (no 110% safe harbor for corps)
+Eligible public-utility preferred dividends use the special "23.3% deduction" for the less-than-20%-owned category or "26.7% deduction" for the 20%-or-more-owned category; apply their conditions separately. [Form 1120 instructions, Schedule C lines 4-5](https://www.irs.gov/instructions/i1120).
 
-### 5.1 Who must pay
+Section 245A can deduct 100% of the foreign-source portion of a dividend from a specified 10%-owned foreign corporation to a domestic corporate US shareholder: "an amount equal to the foreign-source portion of such dividend". Exclusions, hybrid-dividend restrictions and section 246(c)(5) holding/status/risk conditions apply. The holding requirement is more than "365 days" in a "731-day period" beginning 365 days before the ex-dividend date. [IRC 245A(a)-(e)](https://uscode.house.gov/us/usc/t26/s245A/); [IRC 246(c)(5)](https://uscode.house.gov/us/usc/t26/s246/).
 
-- **Minimum expected tax liability requiring estimated payments** — $500 or more USD  _(IRC §6655(a) and (f))_
-- **Estimated payment requirement** — A corporation that expects its tax liability to be $500 or more for the year must pay estimated tax in four equal installments. Below $500, no estimated payments are required and no penalty applies.  _(IRC §6655(a) and (f))_
+### Capital losses, NOLs and ownership changes
 
-### 5.2 Installment due dates
+Corporate net capital loss does not offset ordinary income. Ordinary corporate capital-loss carrybacks run **3 years** and carryforwards **5 years**, generally as short-term losses, using the earliest available year first. Carrybacks cannot create or increase an NOL. Foreign expropriation losses have special treatment. [IRC 1211(a)](https://uscode.house.gov/us/usc/t26/s1211/); [IRC 1212(a)](https://uscode.house.gov/us/usc/t26/s1212/).
 
-**Calendar-year installment due dates**
+Maintain NOL ledgers by origin year, ownership-change limitation and expiry. Pre-2018 NOLs generally have a **20-year** carryforward and are not subject to the post-2017 percentage limit. Post-2017 NOLs generally carry forward indefinitely; their deduction is limited to the amount in the rates table after the statutory adjustments, including the prior-year bucket ordering. Current ordinary corporate losses generally do not carry back, but farming losses and nonlife insurers have special rules; the **2018-2020** losses had special **5-year** carryback rules. [IRC 172(a)-(b)](https://uscode.house.gov/us/usc/t26/s172/).
 
-| Installment | Calendar-year due date |
-| --- | --- |
-| 1st (April installment) | **April 15, 2025** |
-| 2nd (June installment) | **June 16, 2025** (the 15th is a Sunday) |
-| 3rd (September installment) | **September 15, 2025** |
-| 4th (December installment) | **December 15, 2025** |
+Screen every financing, stock issuance, redemption, acquisition and restructuring for section 382. A shift of more than **50 percentage points** among relevant **5% shareholders** over the testing period can cause an ownership change. The ordinary testing period is **3 years**, subject to statutory adjustments. The basic annual limitation is the old loss corporation's value multiplied by the applicable long-term tax-exempt rate; use the rate for the actual change date, not a fixed historical rate. Built-in items, continuity, bankruptcy, short years and unused-limit carryforwards need separate analysis. [IRC 382(a)-(b), (f)-(i)](https://uscode.house.gov/us/usc/t26/s382/).
 
-- **Fiscal-year installment timing and installment percentage** — For fiscal-year corporations, the installments are due on the 15th day of the 4th, 6th, 9th, and 12th months of the tax year. Each installment is generally 25% of the required annual payment.
+For eligible recognized built-in gains/losses, the section 382 recognition period is "the 5-year period beginning on the change date"; apply section 382(h), including its limitations. [IRC 382(h)(7)](https://uscode.house.gov/us/usc/t26/s382/).
 
-### 5.3 Required annual payment — the safe harbors
+### Business interest: section 163(j)
 
-- **Required annual payment definition** — Under IRC §6655(d)(1), the required annual payment is the lesser of: (a) 100% of the tax shown on the current-year return, OR (b) 100% of the tax shown on the preceding year's return, provided that: The preceding year was a 12-month tax year, AND The corporation filed a return for the preceding year showing a liability, AND The corporation is not a "large corporation."  _(IRC §6655(d)(1))_
-- **Large corporation** — A corporation with taxable income of $1 million or more in any of the three preceding tax years (whether or not consecutive). For large corporations, the prior-year safe harbor is disallowed for the 2nd, 3rd, and 4th installments — the entire year must be funded based on current-year tax. (The first installment may use the prior-year safe harbor; any shortfall must be made up by the second installment.)  _(IRC §6655(g)(2); IRC §6655(d)(2)(B))_
-- **Corporate vs individual safe harbor contrast** — Key contrast with individual taxation: Individuals have a 110% prior-year safe harbor when AGI exceeds $150,000. Corporations do not. The corporate prior-year safe harbor is always 100% (not 110%), and it is unavailable at all to large corporations after the first installment. Do not confuse the two regimes.  _(IRC §6655)_
+First identify the trades or businesses, tax-shelter status, gross-receipts aggregation, prior elections and interest carryforwards. If the small-business exception applies, document the test instead of assuming all small corporations are exempt. Electing real-property and farming businesses generally incur ADS depreciation consequences; the election is a substantive choice. Certain regulated utilities have a statutory exception. [Form 8990 instructions, Who Must File, Exceptions and Definitions](https://www.irs.gov/instructions/i8990).
 
-### 5.4 Annualized income installment method
+For an in-scope corporation:
 
-- **Annualized income installment method availability** — A corporation with uneven income may use the annualized income installment method under §6655(e)(2) to reduce installments in lighter quarters.  _(IRC §6655(e)(2))_
+1. Reconcile business interest income, current business interest expense, carryforwards and eligible floor-plan financing interest. Do not treat all book interest as the same category.
+2. Compute ATI under section 163(j), excluding the items the statute specifies. Depreciation, amortization and depletion deductions are added back for years beginning after 2024. For years beginning after 2025, applicable US-shareholder CFC inclusions are excluded from ATI; an old EBITDA worksheet that leaves them in can overstate capacity.
+3. For years beginning after 2025, include interest otherwise capitalized in the limitation analysis, except interest capitalized under sections 263(g) and 263A(f). Reconcile the capitalization sequence to Form 8990.
+4. Apply the limit from the table; deduct allowable interest and maintain disallowed carryforwards. Coordinate section 382 and other restrictions rather than assuming every carryforward is freely usable.
 
-**Annualization periods and factors for calendar-year corp**  _(IRC §6655(e)(2))_
+[IRC 163(j), including 2025 amendment notes](https://uscode.house.gov/us/usc/t26/s163/); [Form 8990 instructions, What's New and ATI](https://www.irs.gov/instructions/i8990).
 
-| Installment | Months annualized | Annualization factor |
-| --- | --- | --- |
-| 1st | First 3 months | 4 |
-| 2nd | First 3 months | 4 |
-| 3rd | First 6 months | 2 |
-| 4th | First 9 months | 1.33333 |
+The real-property/farming section 163(j) election is generally irrevocable: "This is an irrevocable election". ADS applies to affected property, including nonresidential real property, residential rental property and qualified improvement property for the real-property election. [Form 8990 instructions, Elections](https://www.irs.gov/instructions/i8990).
 
-- **Alternative seasonal annualization option** — The IRS provides an alternative option of 2/4/7/10 months under §6655(e)(2)(C) if elected on Form 8842 — this is the "adjusted seasonal" or "seasonal" option for businesses with predictable seasonal patterns. This is computed on Schedule A of Form 2220 and attached to Form 1120 if an underpayment penalty is computed.  _(IRC §6655(e)(2)(C); Form 8842; Form 2220 Schedule A)_
+### Domestic and foreign research
 
-### 5.5 Form 2220 — underpayment penalty
+Identify where the research is conducted, not merely where the corporation is organized or where an invoice is paid. Research and experimental costs include qualifying software development, but do not include every cost labeled “R&D” in the accounts. Equipment acquisition, depreciable property and mineral exploration have separate treatment. Record direct costs, allocations, contractor location and project evidence.
 
-- **Form 2220 required attachment** — If installments are missed or underpaid, the corporation computes the §6655 underpayment penalty on Form 2220, Underpayment of Estimated Tax by Corporations, and attaches it to Form 1120. Unlike individuals (who can let the IRS bill them), the IRS instructions direct that corporations must compute and attach Form 2220 if the penalty applies — failing to attach can trigger a follow-up notice.  _(IRC §6655; Form 2220)_
+For domestic costs in a 2026-start year, section 174A generally permits a current deduction. Alternatively, elect capitalization and amortization using the table's minimum period, starting with the month benefits are first realized. The election must meet the statutory timing and consistency rules. Foreign research remains subject to section 174 capitalization and midpoint amortization. Disposition, retirement or abandonment of foreign-research property does not itself produce an immediate deduction of the unamortized amount. [IRC 174A(a)-(d)](https://uscode.house.gov/us/usc/t26/s174A/); [IRC 174(a)-(d)](https://uscode.house.gov/us/usc/t26/s174/).
 
-### 5.6 Payment mechanics
+For domestic costs capitalized in years beginning **2022-2024**, inspect the transition choice already made: remaining unamortized costs could be recovered in the first year beginning after 2024 or ratably over that year and the following year. Thus a 2026 computation may include the second transition deduction. The separate retroactive small-business election has its own eligibility, procedural and timing rules; do not present it as an indefinitely available 2026 election. [IRC 174A statutory notes, Transition Rules](https://uscode.house.gov/us/usc/t26/s174A/).
 
-- **Electronic payment requirement** — Corporate estimated tax payments must be made by electronic funds transfer (EFT) through the Electronic Federal Tax Payment System (EFTPS). Paper checks are not permitted for corporate deposits per Reg. §31.6302-1. The Form 1120-W worksheet, while no longer filed, is used internally to compute installments.  _(Reg. §31.6302-1)_
+The section 41 research credit and research-cost recovery are different analyses. Form 6765 is used when claiming the credit, not automatically whenever research costs exist. Under section 280C(c), reduce the relevant domestic research deduction or capital account by the credit unless a valid reduced-credit election is made. Reconcile Form 6765, section 174A, tax basis and any method-change statements to prevent double benefit. [IRC 280C(c)](https://uscode.house.gov/us/usc/t26/s280C/).
 
-## 6. Income computation walkthrough
+Without a valid retroactive or transition election, domestic costs capitalized for 2022-2024 continue their original 5-year midpoint amortization schedules. The prior rule required recovery "over a 5-year" period "beginning with the midpoint of the taxable year". [Rev. Proc. 2025-28, section 2.02](https://www.irs.gov/pub/irs-drop/rp-25-28.pdf); [section 174A transition notes](https://uscode.house.gov/us/usc/t26/s174A/).
 
-Form 1120 income flows in this order: gross income → total income (line 11) → deductions (lines 12–29) → taxable income before NOL/special deductions (line 28) → less NOL deduction and special deductions (lines 29a and 29b) → taxable income (line 30) → tax (line 31).
+### Corporate charitable contributions
 
-### 6.1 Gross income (lines 1–11)
+Compute the section 170 modified taxable-income base separately, using its prescribed exclusions for the charitable deduction, relevant special deductions and carrybacks. For years beginning after 2025, ordinary corporate contributions are deductible only subject to both the floor and ceiling in the table. Do not deduct all gifts below the ceiling without applying the floor.
 
-- **Line 1a Gross receipts or sales** — Total revenue from the sale of goods or services before any returns, allowances, or discounts.
-- **Line 1b Returns and allowances** — Sales returns, allowances, and discounts. Note: cash discounts to customers may be netted here or treated as a deduction; be consistent year-over-year.
-- **Line 1c Net** — 1c = 1a − 1b
-- **Line 2 Cost of goods sold** — From Form 1125-A (mandatory if there is COGS). See §11.4.  _(Form 1125-A)_
-- **Line 3 Gross profit** — Line 3 = Line 1c − Line 2
-- **Line 4 Dividends and inclusions** — From Schedule C, Line 23, Column (a). Gross dividend income, before the DRD (the DRD is taken later as a special deduction on Line 29b).  _(Schedule C, Line 23, Column (a))_
-- **Line 5 Interest** — Taxable interest from bank deposits, taxable bonds, etc. Tax-exempt interest is reported on Schedule K, Line 9, not Line 5.
-- **Line 6 Gross rents** — Line 6 Gross rents.
-- **Line 7 Gross royalties** — Line 7 Gross royalties.
-- **Line 8 Capital gain net income** — From Schedule D (Form 1120). Net of long-term and short-term gains and losses. Corporate capital losses are deductible only against capital gains (not ordinary income); excess losses carry back 3 years and forward 5 years (IRC §1212(a)) — this differs from the individual rule.  _(Schedule D (Form 1120); IRC §1212(a))_
-- **Line 9 Net gain or (loss) from Form 4797** — Part II — §1231 gains and ordinary recapture (§1245, §1250). Net §1231 gain is treated as long-term capital gain and flows to Schedule D; a net §1231 loss is ordinary and flows to Line 9.  _(Form 4797; IRC §1245; IRC §1250)_
-- **Line 10 Other income** — Recovery of bad debts, federal tax refund of taxes previously deducted, life insurance proceeds where deducted, gross income from §481(a) adjustments, etc. Attach a statement detailing the components.  _(IRC §481(a))_
-- **Line 11 Total income** — Line 11 Total income.
+Track contribution category, payment timing, substantiation, property valuation and carryovers by year. Excess-ceiling amounts generally have a **5-year** carryforward; amounts denied solely by the floor are carried forward only under the statutory rule for a year in which the ceiling is also exceeded. Apply current contributions and carryovers in the required order and coordinate the NOL rule. Special contribution categories can have different treatment. [IRC 170(b)(2), (d)(2)](https://uscode.house.gov/us/usc/t26/s170/); [IRS business-provisions explanation, Corporate Charitable Contributions](https://www.irs.gov/newsroom/understanding-the-working-families-tax-cuts-business-tax-provisions-youtube-video-text-script).
 
-### 6.2 Deductions (lines 12–29)
+### Officer compensation and distributions
 
-**Deductions table lines 12–31**  _(https://www.irs.gov/instructions/i1120)_
+Reasonable compensation for services actually rendered can be deductible; a distribution to shareholders is not transformed into deductible compensation by its label. Document duties, time, comparable pay, company results, approvals, related-party timing and payroll reporting. Conversely, excess compensation can be recharacterized as a distribution. Evaluate shareholder-level tax and employment-tax consequences separately from the corporate rate. [IRC 162(a)(1)](https://uscode.house.gov/us/usc/t26/s162/).
 
-| Line | Item | Notes |
-| --- | --- | --- |
-| 12 | Compensation of officers | From **Form 1125-E** if receipts ≥ $500,000. See §13. |
-| 13 | Salaries and wages | Less §41 credit and §51 work opportunity credit reductions. |
-| 14 | Repairs and maintenance | Distinguish from capitalized improvements under §263(a) and the tangible property regulations (Reg. §1.263(a)-3). |
-| 15 | Bad debts | Specific charge-off method only for corporations (§166); no reserve method. |
-| 16 | Rents | Real and personal property rentals; flag related-party rents under §267. |
-| 17 | Taxes and licenses | State and local income, real and personal property, payroll (employer share), excise. **Federal income tax is NOT deductible.** State income tax is deductible (no $10k SALT cap — that applies only to individuals). |
-| 18 | Interest | Subject to **§163(j) limitation** — see §8. Compute on Form 8990 if not exempt. |
-| 19 | Charitable contributions | Limited to **10% of taxable income** before the contribution itself, the DRD, and any NOL or capital loss carryback (§170(b)(2)(A)). Excess carries forward 5 years. |
-| 20 | Depreciation | From **Form 4562**; carry to Line 20 after subtracting any included in COGS on Form 1125-A. |
-| 21 | Depletion | Cost or percentage; not on oil and gas if integrated producer over thresholds. |
-| 22 | Advertising | Includes website production costs that are not capitalized. |
-| 23 | Pension, profit-sharing, etc. | Employer contributions; see §404 timing rules. |
-| 24 | Employee benefit programs | Health, group term life, dependent care, etc., not deducted elsewhere. |
-| 25 | Energy efficient commercial buildings deduction | Attach Form 7205 (§179D). |
-| 26 | Other deductions | Attach statement. Common items: insurance, utilities, professional fees, office expense, travel and meals (50% limit per §274(n)), software subscriptions, bank fees, domestic R&E expenses currently deductible under §174A, foreign R&E subject to §174 capitalization (see §9). |
-| 27 | Total deductions. |  |
-| 28 | Taxable income before NOL deduction and special deductions = Line 11 − Line 27. |  |
-| 29a | Net operating loss deduction. | See §7. |
-| 29b | Special deductions — from **Schedule C, Line 24**. | Primarily DRD; also §250 GILTI/FDII deduction. |
-| 29c | Total = 29a + 29b. |  |
-| 30 | Taxable income = Line 28 − Line 29c (not less than zero except in the year a loss is generated). |  |
-| 31 | Total tax — from **Schedule J, Part I, Line 12**. |  |
+Prepare Form 1125-E when the dual conditions in the table are met, including officer identities, ownership, time devoted, compensation and amounts included elsewhere to avoid double deduction. For a publicly held corporation, section 162(m) generally limits the deduction for remuneration to a covered employee to **$1 million**. For 2026, covered employees include the principal executive and financial officers, the other "3 highest compensated officers" under the statutory reporting test, and prior covered employees of the corporation or predecessor from years beginning "after December 31, 2016". New controlled-group remuneration aggregation applies for years beginning after 2025; do not give each payer an independent full limit. The expansion to the next **5** highest-compensated employees starts with years beginning after 2026, not the ordinary 2026 year. [Form 1125-E instructions](https://www.irs.gov/instructions/i1125e); [IRC 162(m)(1)-(3), (7) and effective-date notes](https://uscode.house.gov/us/usc/t26/s162/).
 
-### 6.3 Lines 32–37 — Payments, credits, and balance
+For change-in-control payments, route section 280G excess-parachute deductibility and section 4999 recipient excise-tax analysis separately. A compensation deduction on the trial balance does not resolve either rule. [Form 1120 instructions, Limitations on Deductions](https://www.irs.gov/instructions/i1120).
 
-- **Payments, credits, and balance lines** — - Line 33 (formerly 33a-g): Estimated tax payments, prior year overpayment credit, Form 7004 extension payment, refundable credits. - Line 34: Estimated tax penalty (Form 2220). - Line 35: Amount owed. - Line 36: Overpayment. - Line 37: Refund vs. credit forward.
+The recipient generally owes a separate 20% excise tax on an excess parachute payment: "a tax equal to 20 percent of the amount of such payment". [IRC 4999(a)](https://uscode.house.gov/us/usc/t26/s4999/).
 
-## 7. Dividends-Received Deduction (DRD) — Schedule C
+### Schedules, attachments and reconciliation
 
-### 7.1 Purpose and structure
+Apply the return-year instructions to each trigger; do not attach every form merely because it appears in this table.
 
-- **Dividends-received deduction purpose** — The DRD under IRC §243 mitigates the triple taxation that would otherwise occur when a corporation receives a dividend from another corporation (the dividend was paid out of earnings already taxed at the payor's level; without the DRD, the recipient corp would pay 21% on it and then its shareholder would pay tax again on distribution). The deduction is computed on Schedule C of Form 1120 and flows to Line 29b via Schedule C Line 24.  _(IRC §243)_
+| Schedule/form | Work to complete |
+|---|---|
+| Schedule C | Reconcile gross dividends and inclusions, DRD categories, section 250 and other special deductions. Carry the gross and deduction totals separately to page one. |
+| Schedule J | Compute regular income tax, applicable credits, CAMT, BEAT and other tax; reconcile payments and refundable credits. Keep tax liability separate from payment credits. |
+| Schedule K | Answer ownership, accounting method, related-party, foreign activity, reporting, size and other questions from evidence. These answers drive additional schedules. |
+| Schedules L and M-2 | Balance sheet and retained-earnings reconciliation per books unless the stated small-return exception applies. Assets must equal liabilities plus equity; explain distributions, capital contributions and prior-period adjustments. |
+| Schedule M-1 | Reconcile book income to the return subtotal **before** the NOL and special deductions. Add back federal income-tax expense once, handle timing/permanent differences, and reconcile the endpoint. Do not deduct section 250 or the DRD here if it is already a later special deduction. |
+| Schedule M-3 | Apply the asset test and permitted Part I/M-1 alternative above. Distinguish permanent and temporary differences and document the financial statements used. |
+| Schedule B (Form 1120) | Additional information for required M-3 filers, with the below-$50-million and voluntary-filer exceptions stated above. It is not a universal 1120 schedule. |
+| Schedule O | Controlled-group consent/apportionment when required. A group may need allocation analysis even though its members file separately. |
+| Schedule UTP | Evaluate the full reporting conditions and reportable positions, including positions for which no reserve was recorded because the corporation expects to litigate. Do not equate “no reserve” with “no reporting.” |
+| Form 1125-A; Form 1125-E | Tax COGS/inventory where required; officer compensation under its dual trigger. |
+| Form 4562; Form 4797; Schedule D and Form 8949 | Depreciation/amortization; business-property dispositions; capital transactions. Reconcile basis, recapture and capital-loss limitations. |
+| Form 8990 | Section 163(j) computation or reporting when required, including relevant carryforwards and pass-through interests. |
+| Forms 8992, 8993, 5471 and 1118 | Applicable CFC inclusion, section 250, CFC information and foreign-tax-credit computations. Use the correct year and effective rules. |
+| Form 5472 | Foreign-owned reporting corporations and other specified filers with reportable transactions; the ownership screen alone is not the complete filing test. |
+| Form 4626; Form 8827 | CAMT computation/status reporting as required; minimum-tax-credit carryforward and permitted utilization. |
+| Form 8991 | BEAT. This is not the business-interest limitation form. |
+| Forms 6765 and 3800 | Research credit and general-business-credit computation when applicable, with deduction/basis coordination. |
+| Form 7004; Form 2220 | Timely filing extension; estimated-tax penalty computation when required or useful. Form 2220 is not mandatory on every 1120. |
+| Forms 8832, 1128 and 8716 | Classification election evidence or accounting-period applications/elections where applicable. |
+| Form 7208 with Form 720 | Stock-repurchase excise tax is reported through the separate excise-tax filing process, not as a routine quarterly 1120 attachment. |
+| Form 8975 and Schedule A | Country-by-country report for a qualifying US ultimate parent, not every corporation with foreign operations. |
 
-### 7.2 The three tiers
+Authorities: [Form 1120 instructions, Other Forms and Statements; Schedules C/J/K/L/M-1/M-2](https://www.irs.gov/instructions/i1120); [Schedule M-3 instructions](https://www.irs.gov/instructions/i1120sm3); [Form 7208 instructions](https://www.irs.gov/instructions/i7208); [Form 8975 instructions](https://www.irs.gov/instructions/i8975).
 
-**DRD tiers by ownership**  _(IRC §243(a)(1), §243(c), §243(a)(3), §243(b))_
+## Deadlines and filing
 
-| Ownership of payor by recipient corp | Deduction % | IRC section |
-| --- | --- | --- |
-| **Less than 20%** | **50%** | §243(a)(1) |
-| **20% to less than 80%** | **65%** | §243(c) |
-| **80% or more (affiliated group, no consolidated return)** | **100%** | §243(a)(3) and §243(b) — "qualifying dividends" |
+| Obligation | Timing, conditions and source |
+|---|---|
+| Form 1120 | Generally the **15th day of the 4th month** after year-end. For a calendar 2026 year, the ordinary date is **April 15, 2027**, subject to holidays and applicable relief. [IRC 6072(a)](https://uscode.house.gov/us/usc/t26/s6072/); [Form 1120 instructions, When To File](https://www.irs.gov/instructions/i1120). |
+| June 30 fiscal-year transition | For years beginning **before January 1, 2026**, the special third-month original deadline still applies; years beginning after 2025 move to the fourth-month rule. Do not select the rule from the return's ending year alone. [IRC 6072 effective-date notes](https://uscode.house.gov/us/usc/t26/s6072/); [Form 7004 instructions](https://www.irs.gov/instructions/i7004). |
+| Form 7004 | File by the original deadline with a proper tax estimate. Ordinarily extends filing **6 months**; the specified pre-2026 June 30 year has a **7-month** extension. Payment is still due by the original payment deadline. [Form 7004 instructions, General Instructions and Part II](https://www.irs.gov/instructions/i7004). |
+| Estimated installments | **15th day of months 4, 6, 9 and 12** of the tax year. Calendar 2026 ordinary dates are **April 15, June 15, September 15 and December 15, 2026**, subject to relief. Short-year rules require a separate schedule. [Form 2220 instructions](https://www.irs.gov/instructions/i2220). |
+| Stock-repurchase excise return | Form 7208 is filed annually with Form 720 for the **first full calendar quarter after the corporation's tax year ends**. Determine the corresponding Form 720 due date and payment separately. [Form 7208 instructions, When To File](https://www.irs.gov/instructions/i7208). |
+| Country-by-country report | A qualifying US ultimate parent generally attaches Form 8975 and its Schedules A to its timely income-tax return, including extensions. Prior reporting-period annual group revenue must meet the **$850 million** threshold, with the form's definitions. [Form 8975 instructions](https://www.irs.gov/instructions/i8975). |
 
-- **TCJA DRD rate change and ownership measurement** — The TCJA reduced the DRD from 70%/80%/100% to 50%/65%/100% effective 2018; this remains in effect for 2025. Ownership is measured by vote and value (§243(c)(2)). For the 80% tier, the affiliated group must meet the §1504(a) definition (80% of vote and value, with attribution rules in §1563), and the dividend must be a "qualifying dividend" under §243(b) — generally, a dividend from a domestic corporation that is a member of the same affiliated group (whether or not consolidated). If consolidated, intercompany dividends are eliminated and the DRD is moot.  _(IRC §243(c)(2); §1504(a); §1563; §243(b))_
+The ERO retains signed Form 8879-CORP; do not routinely send it to the IRS. Retain it for 3 years from the return due date or IRS received date, whichever is later: "The ERO must retain Form 8879-CORP". [Form 8879-CORP, page 2](https://www.irs.gov/pub/irs-pdf/f8879crp.pdf).
 
-### 7.3 Special categories on Schedule C
+### Estimated-tax decision and Form 2220
 
-- **Schedule C key lines** — Schedule C has many specific lines for distinct categories. Key lines: - **Lines 1, 2 Dividends from less-than-20% / 20%-or-more domestic corps** — the bread-and-butter 50% / 65% DRD. - **Line 3 Dividends on certain debt-financed stock** — DRD reduced under §246A if the stock was acquired with debt; reduction is in proportion to debt-financing percentage. - **Line 4 Dividends on certain preferred stock of public utilities** — special 23.3% / 26.7% rate. - **Line 6/7 Dividends from foreign corps that are 20%-or-more US-owned** — eligible for partial DRD. - **Line 8 Dividends from wholly-owned foreign subsidiaries** — fully deductible under §245(b), but only if certain conditions met. - **Line 11 Dividends received from a domestic corp that is a member of the same affiliated group (other than debt-financed)** — 100% DRD. - **Lines 16a–16c and 17** — subpart F inclusions (lines 16a–16c) and the §951A GILTI inclusion (line 17). **Subpart F and GILTI inclusions are not eligible for the DRD** (separately, GILTI is partially offset by the §250 deduction — see §10). - **Line 13 §245A 100% participation exemption** — for dividends from 10%-owned specified foreign corporations meeting holding period requirements. This is a 100% deduction, not a true DRD; it implements the post-TCJA territorial system.  _([IRC §246A; §245(b); §965; §245A](https://www.irs.gov/instructions/i1120))_
+For an ordinary corporation, required annual payment is generally the smaller of **100% of current-year tax** or **100% of prior-year tax**. The prior-year alternative requires a return for a full **12-month** preceding year showing a tax liability. A loss year with no tax does not supply a zero prior-year safe harbor. There is no general individual-style 110% corporate safe harbor. [Form 2220 instructions, Required Annual Payment](https://www.irs.gov/instructions/i2220).
 
-### 7.4 Holding period rule — §246(c)
+A “large corporation” generally had modified taxable income of at least **$1 million** in any of the **3 preceding tax years**, with predecessor and controlled-group rules. It may use the prior-year alternative only for the first installment, then catches up the shortfall in the second installment. Recompute the later installments from current-year tax. [Form 2220 instructions, Large corporations](https://www.irs.gov/instructions/i2220).
 
-- **DRD holding period requirement** — The DRD is disallowed if the recipient corp does not hold the stock for more than 45 days during the 91-day period beginning 45 days before the ex-dividend date (for common stock; 90/181 days for preferred). The holding period is reduced by periods during which the corp has substantially diminished its risk of loss (hedges, options, short positions). Verify with the client that the stock was held throughout — this is a common audit issue with portfolio dividend recipients.  _(IRC §246(c))_
+Compare ordinary equal installments with the annualized-income or adjusted-seasonal method when supported by the actual income pattern. The standard annualized periods are the first **3, 3, 6 and 9 months**; alternative periods **2, 4, 7 and 10** or **3, 5, 8 and 11 months** require the prescribed Form 8842 election timing. The adjusted-seasonal method is a separate eligibility/computation rule, not another name for those alternative annualization periods. Preserve interim income and deduction workpapers. [Form 2220 instructions, Schedule A Parts I-II](https://www.irs.gov/instructions/i2220).
 
-### 7.5 Taxable-income limitation — §246(b)
+Generally the IRS can compute the estimated-tax penalty without Form 2220. Attach it when the instructions require it, including use of annualized/seasonal installments or the large-corporation first-installment prior-year rule, even when those calculations produce no penalty. Do not import CAMT estimated-tax relief for a prior year into 2026 without an applicable current-year authority.
 
-- **DRD taxable income limitation** — The aggregate DRD (excluding the 100% DRD from affiliated-group dividends and the §245A participation exemption) is limited to a percentage of taxable income computed without regard to the DRD, NOL deduction, §250 deduction, and §1202 deduction. The percentage matches the DRD tier — 50% or 65%. Exception: the limitation does not apply if the DRD creates or increases an NOL (the "NOL exception"). This is computed on Schedule C, line 9 (and line 22 for §250) with the Worksheet for Schedule C, Lines 9 and 22 in the Form 1120 instructions. §1202 note (OBBBA): for QSBS issued after July 4, 2025, OBBBA adds a phased exclusion for stock held less than five years (50% for stock held at least three years; 75% for stock held at least four years; 100% at five years), raises the per-issuer gain exclusion limit to $15 million, and raises the issuing corporation's aggregate gross asset test to $75 million. (OBBBA § 70431; IRC § 1202(a))  _([IRC §246(b)](https://www.irs.gov/instructions/i1120))_
+Use the IRS-approved electronic tax-payment method for the corporation and payment type, with the correct EIN, tax period and payment designation. EFTPS is an available method, not a reason to ignore other methods the current IRS instructions permit. Save confirmations and reconcile the taxpayer account. Obtain the authorized corporate signature and, where applicable, Form 8879-CORP authorization through the electronic return originator. [Form 1120 instructions, Electronic Deposit Requirement, Tax Payments and Who Must Sign](https://www.irs.gov/instructions/i1120).
 
-### 7.6 Worked DRD computation
+## Penalties and interest
 
-**Facts:**
-- Corp A holds 5% of Corp B (publicly traded). Receives $100,000 dividend.
-- Corp A holds 30% of Corp C (private). Receives $200,000 dividend.
-- Corp A holds 100% of Corp D (member of same affiliated group). Receives $500,000 dividend.
+| Failure | General rule and limiting conditions | Official source |
+|---|---|---|
+| Late filing | **5%** of the relevant unpaid tax per month or part, up to **25%**, absent reasonable cause. A valid extension changes the filing due date. | [IRC 6651(a)(1), (b)](https://uscode.house.gov/us/usc/t26/s6651/). |
+| Return more than **60 days** late | For returns required to be filed in **2027**, minimum is the lesser of **$535** or **100%** of the tax required to be shown. This filing-year figure is not selected simply from the income-tax year printed on the return. | [Rev. Proc. 2025-32, section 4.52](https://www.irs.gov/irb/2025-45_IRB). |
+| Late payment | Generally **0.5%** per month or part of unpaid tax, up to **25%**; statutory rate changes and reasonable-cause relief may apply. A filing extension does not itself extend payment. | [IRC 6651(a)(2), (c)-(d)](https://uscode.house.gov/us/usc/t26/s6651/). |
+| Concurrent late filing and late payment | Reduce the filing penalty by the payment penalty for an overlapping month; do not charge both full rates on the same base. Under the ordinary unchanged rates, the combined maximum can reach **47.5%**, not 50%. | [IRC 6651(c)(1)](https://uscode.house.gov/us/usc/t26/s6651/). |
+| Estimated-tax underpayment | Compute separately by installment and period using Form 2220; a large payment at year-end does not erase an earlier underpayment period. | [Form 2220 instructions](https://www.irs.gov/instructions/i2220). |
+| Underpayment of reported tax | Interest runs from the applicable original payment due date and uses the rate for each period, with daily compounding and a special large-corporate-underpayment rule. Do not hard-code one annual rate. | [IRS Interest](https://www.irs.gov/payments/interest). |
+| Accuracy-related or information-return failures | Assess the actual penalty provision, documentation and defenses. Forms 5471/5472 and other information returns can have separate consequences despite no income-tax balance. | [Form 1120 instructions, Interest and Penalties; Other Forms](https://www.irs.gov/instructions/i1120). |
 
-**DRD:**
-- B: $100,000 × 50% = $50,000
-- C: $200,000 × 65% = $130,000
-- D: $500,000 × 100% = $500,000 (no §246(b) limit applies)
-- **Total DRD on Schedule C, Line 24 = $680,000** flowing to Form 1120, Line 29b.
+Reasonable cause requires documented facts and the applicable standard; an adviser relationship is not automatic relief. Form 7004 instructions describe conditional late-payment relief for a timely extended return with the required timely payment and balance paid by the extended deadline; interest remains a separate charge. Section 6699 is the S corporation return penalty and is not the ordinary C corporation late-filing provision. [Form 7004 instructions, Interest and Penalties](https://www.irs.gov/instructions/i7004); [IRC 6699](https://uscode.house.gov/us/usc/t26/s6699/).
 
-If the §246(b) limit applies (assume taxable income before DRD is $260,000), then:
-- 50% × $260,000 = $130,000 cap on the 50% DRD ($50,000 is under cap — OK)
-- 65% × $260,000 = $169,000 cap on the 65% DRD ($130,000 is under cap — OK)
-- 100% DRD is not subject to limit.
+The 0.25% installment-agreement late-payment rate under section 6651(h) applies only to qualifying individuals, not corporations (statutory wording: "individual" and "0.25"). [IRC 6651(h)](https://uscode.house.gov/us/usc/t26/s6651/).
 
-If instead taxable income before DRD were $50,000, the 50% DRD would be capped at $25,000 unless the NOL exception applied. Apply the NOL exception test on the Schedule C worksheet.
+Ordinary underpayment interest is the federal short-term rate plus "3 percentage points". Large-corporate underpayments that exceed $100,000 (statutory wording: "exceeds $100,000") use plus "5 percentage points" after the statutory applicable date, generally the "30th day" after the relevant letter or notice, with payment and small-notice exceptions. Determine the applicable base, start date and quarterly rate; the higher rate does not merely apply immediately to the slice above the threshold. [IRC 6621(a)(2), (c)](https://uscode.house.gov/us/usc/t26/s6621/).
 
-## 8. Net Operating Loss (NOL) — post-TCJA rules
+## Cross-border points
 
-### 8.1 Post-2017 NOLs
+### Section 250, CFC inclusions and foreign tax credits
 
-- **Post-TCJA NOL treatment** — For NOLs generated in tax years beginning after December 31, 2017 (i.e., 2018 forward, including 2025): No carryback. (The CARES Act temporarily restored a 5-year carryback for 2018, 2019, 2020 losses only — that window is now closed.) Indefinite carryforward under IRC §172(b)(1)(A). 80% limitation under §172(a) — the NOL deduction in any year is limited to 80% of taxable income computed without regard to the NOL deduction itself (and without regard to the §199A and §250 deductions — those are computed after). The 80% limit applies only to post-2017 NOLs; it does not stack on pre-2018 NOLs in the same year (the pre-2018 NOL is taken first under the old rules, then the post-2017 NOL is taken subject to the 80% cap on remaining taxable income).  _(IRC §172(b)(1)(A); IRC §172(a))_
+For a domestic C corporation's 2026-start year, determine foreign-derived deduction eligible income (FDDEI), net CFC tested income (NCTI) and the related section 78 gross-up before applying section 250. The 2026 section 951A computation removes the former QBAI-based deemed tangible return; do not subtract an old QBAI amount from the 2026 NCTI example or carry forward a GILTI/FDII worksheet unchanged. Match the CFC's applicable year and statutory effective dates for fiscal-year structures. [IRC 951A(a)-(c) and effective-date notes](https://uscode.house.gov/us/usc/t26/s951A/); [IRC 250(a)-(b)](https://uscode.house.gov/us/usc/t26/s250/).
 
-### 8.2 Pre-2018 NOLs
+FDDEI requires qualifying foreign sales, licenses or services and evidence of foreign use, customer status and related-party conditions. It is not all foreign revenue. Section 250 excludes specified income categories from deduction eligible income, including CFC inclusions, specified dividends, foreign branch income and other statutory categories. The 2025 amendments exclude gain from specified intangible and depreciable/amortizable/depletable property dispositions after **June 16, 2025**. For years beginning after 2025, the statutory expense-allocation rule excludes interest and research/experimental expenditures from the deductions allocated for this calculation. [IRC 250(b), amendment and effective-date notes](https://uscode.house.gov/us/usc/t26/s250/).
 
-- **Pre-TCJA NOL treatment** — NOLs generated in tax years beginning before January 1, 2018 retain their original-rule treatment: 2-year carryback, 20-year carryforward (§172(b)(1)(A) as in effect pre-TCJA). No 80% limit — can offset 100% of taxable income. Most pre-2018 NOLs have either been used or are nearing the end of their 20-year window. A 2005 NOL expires in 2025; a 2017 NOL expires in 2037. If both pre-2018 and post-2017 NOLs exist, apply them in this order: (1) pre-2018 NOLs first, without the 80% limit; (2) post-2017 NOLs second, subject to the 80% limit on remaining taxable income.  _(IRC §172(b)(1)(A) (pre-TCJA))_
+Apply the taxable-income limit **to the bases**: if FDDEI plus NCTI exceeds taxable income computed without section 250, reduce those bases proportionately as section 250(a)(2) directs, then apply their respective deduction percentages. Do not simply cap the initially computed deduction at taxable income. Handle the associated section 78 amount under the statutory computation and Form 8993 instructions. Reconcile the deduction through Schedule C to the special-deduction line; do not subtract it again in M-1.
 
-### 8.3 §382 limitation on NOL after ownership change
+Foreign tax credits require Form 1118 basket, sourcing, expense-allocation and limitation analysis. The 2026 NCTI deemed-paid rule generally uses **90%** of the qualifying tested foreign income taxes times the inclusion percentage; it does not guarantee a credit of that amount after all limitations. Section 960(d)(4) separately disallows **10%** of specified taxes on distributions excluded under section 959(a) because of section 951A inclusions; the 10% PTEP-tax credit disallowance applies to PTEP resulting from a section 951A inclusion in a US shareholder tax year ending after June 28, 2025. The distribution date alone does not determine applicability. Notice 2025-77 uses "a taxable year ending after June 28, 2025". [Notice 2025-77, section 3.01(2)](https://www.irs.gov/irb/2025-52_IRB#NOT-2025-77); [Form 1118 instructions, What's New](https://www.irs.gov/instructions/i1118). Do not turn either percentage into a universal effective tax rate. Route the CFC/PTEP ledgers, foreign branch, hybrid, treaty and section 245A issues for the corresponding international computation. [IRC 960(d) and effective-date notes](https://uscode.house.gov/us/usc/t26/s960/); [Form 1120 instructions, Schedule C and Form 1118](https://www.irs.gov/instructions/i1120).
 
-- **§382 limitation formula** — If the corporation underwent an ownership change (more than 50 percentage point shift in 5%-shareholder ownership over a 3-year testing period) under IRC §382(g), the use of pre-change NOLs is limited annually to: §382 limitation = FMV of equity immediately before the ownership change × long-term tax-exempt rate (published monthly by the IRS — for ownership changes in July 2025, 3.71% (Rev. Rul. 2025-13); check the AFR table for the change date). Plus a NUBIG (net unrealized built-in gain) adjustment in years where built-in gains are recognized within 5 years of the change. Flag any §382 event for reviewer — the computation is technical and commonly missed.  _([IRC §382(g)](https://www.irs.gov/pub/irs-drop/rr-25-13.pdf))_
+### CAMT and BEAT
 
-### 8.4 Worked NOL example
+For CAMT, test applicable-corporation status using the prior-year statutory lookback, aggregation and foreign-parented group rules. This is an **AFSI** test, not a gross-revenue test. An applicable corporation does not automatically cease to be applicable merely because a later year's income falls. Determine whether an authorized simplified method applies under the current instructions and its reliance conditions. The Form 4626 instructions read for this version include interim guidance and proposed-rule methods; do not describe all of those rules as final regulations. [IRC 59(k)](https://uscode.house.gov/us/usc/t26/s59/); [Form 4626 instructions, Applicable Corporation and Simplified Methods](https://www.irs.gov/instructions/i4626).
 
-**Facts:**
-- 2024: NOL of $1,000,000 (post-TCJA NOL).
-- 2025: Taxable income before NOL = $800,000.
+Build AFSI from the applicable financial statements, applying statutory and applicable guidance adjustments for tax versus financial-statement depreciation, consolidation, partnerships, CFCs, foreign taxes, pensions and other items. Reconcile the FSNOL ledger separately from regular-tax NOLs. Compute:
 
-**Computation:**
-- 80% × $800,000 = $640,000 (the 80% cap)
-- 2024 NOL available = $1,000,000
-- NOL used in 2025 = lesser of $640,000 (cap) or $1,000,000 (available) = $640,000
-- Taxable income after NOL = $800,000 − $640,000 = $160,000
-- Tax = $160,000 × 21% = $33,600
-- Remaining NOL carryforward to 2026 = $1,000,000 − $640,000 = $360,000
+```text
+tentative minimum tax = 15% × AFSI after permitted FSNOL deduction − corporate AMT FTC
+CAMT = max(0, tentative minimum tax − (regular tax for section 55 purposes + BEAT))
+```
 
-Even though there was a $1M NOL fully covering the $800k income, only $640k could be used because of the 80% limit. The corporation still owes $33,600 of federal tax for 2025.
+BEAT is **subtracted together with regular tax** in that comparison. Adding BEAT after subtracting regular tax would overstate CAMT. Use the statutory regular-tax definition and the Form 4626 regular-tax/FTC mapping, not an arbitrary pre-credit tax figure. A CAMT minimum-tax-credit carryforward is governed by section 53 and Form 8827; it is not automatically refundable. [IRC 55(a)-(c)](https://uscode.house.gov/us/usc/t26/s55/); [Form 4626 instructions, Tax Computation](https://www.irs.gov/instructions/i4626).
 
-## 9. §163(j) business interest expense limitation
+Screen BEAT under the thresholds in the table, group aggregation, related-foreign-person payments, exclusions and base-erosion-percentage rules. Form 8991 computes modified taxable income, tax benefits and the regular-tax/credit comparison; multiplying ordinary taxable income by the BEAT rate is insufficient. Transfer-pricing support does not by itself eliminate BEAT, and BEAT does not replace section 482. [IRC 59A](https://uscode.house.gov/us/usc/t26/s59A/).
 
-### 9.1 The limit
+Unused section 53 minimum-tax credit carries forward without a fixed expiry ("all prior taxable years"); annual use is limited to regular tax after the specified credits exceeding "the tentative minimum tax for the taxable year". [IRC 53(b)-(c)](https://uscode.house.gov/us/usc/t26/s53/).
 
-- **Business interest expense limitation formula** — For tax years beginning after December 31, 2017, IRC §163(j) limits the deduction for business interest expense to the sum of: 1. Business interest income for the year, plus 2. 30% of "adjusted taxable income" (ATI), plus 3. Floor plan financing interest (specific to vehicle dealers). Disallowed business interest carries forward indefinitely and is deducted in future years subject to the same limit.  _(IRC §163(j))_
+### Reporting, withholding and shareholder planning
 
-### 9.2 ATI definition (post-2022)
+Obtain the ownership chain and transactions for Forms 5471 and 5472, foreign accounts and operations, Forms 8992/8993/1118 and any Form 8975 filing. Review outbound dividends, interest, royalties and service payments for withholding, documentation and information returns under the relevant cross-border guide. A treaty claim needs the actual treaty, residence, beneficial ownership, limitation-on-benefits and filing facts; the domestic corporation rate does not answer the payee's withholding treatment. Use `us-transfer-pricing` for controlled-transaction pricing and documentation.
 
-- **ATI computation change post-2022** — For tax years beginning before January 1, 2022, ATI was computed by adding back depreciation, amortization, and depletion to taxable income — effectively an EBITDA base. For tax years beginning on or after January 1, 2022 and before January 1, 2025 (a TCJA-driven change), ATI was computed without that add-back, making it effectively an EBIT base and substantially tightening the §163(j) limit for capital-intensive businesses. OBBBA permanently restored the EBITDA add-back for tax years beginning after December 31, 2024 (OBBBA § 70303; IRC § 163(j)). For 2025: ATI is EBITDA-based. Add back deductions for depreciation, amortization, and depletion (along with business interest expense and any NOL and §250 deductions) to taxable income when computing ATI. Confirm against the Form 8990 instructions current for 2025.  _(IRC §163(j); Form 8990 instructions)_
+For Form 5472, screen a US corporation with at least one direct or indirect 25% foreign shareholder at any time in the year, by vote or value ("at least 25% of either"); then apply reportable-related-party-transaction rules and exceptions. [Form 5472 instructions, Definitions and Who Must File](https://www.irs.gov/instructions/i5472).
 
-### 9.3 Small-business exemption
+A C corporation may issue stock whose **noncorporate shareholder** later qualifies for section 1202; the corporation itself does not claim that gain exclusion on Form 1120. For qualifying stock acquired after **July 4, 2025**, the exclusion schedule is **50% after at least 3 years**, **75% after at least 4 years**, and **100% after at least 5 years**. The new dollar limb is **$15 million**, adjusted for prior and specified same-year eligible gains, compared with the alternative **10-times-basis** limit. Stock acquired earlier has its own date-dependent percentages, holding period and dollar limit. For stock issued after July 4, 2025, the issuer gross-asset ceiling is **$75 million**, tested before and immediately after issuance with statutory aggregation and contributed-property valuation. Do not confuse the acquisition-date transition with the issuance-date transition. Inflation indexing of the new amounts begins after 2026. [IRC 1202(a)-(d) and effective-date notes](https://uscode.house.gov/us/usc/t26/s1202/).
 
-- **§448(c) gross receipts threshold for §163(j) exemption, 2025** — $31 million USD (average annual gross receipts for prior 3 years; was $30M in 2024)  _(IRC §448(c))_
-- **Small business exemption from §163(j)** — A taxpayer is exempt from §163(j) if its average annual gross receipts for the prior 3 years are at or below the §448(c) threshold — $31 million for tax years beginning in 2025 (inflation-adjusted; was $30M in 2024). A corporation that satisfies this test does not need to file Form 8990 (except in limited circumstances such as passing through interest to a partner).  _(IRC §448(c))_
+Maintain original-issue, capitalization, redemption, asset and active-business records. Substantially all of the holding period must satisfy the relevant C corporation/active-business conditions, and excluded businesses and other restrictions remain. An issuance meeting the size threshold alone does not establish QSBS.
 
-### 9.4 Other exemptions
+## Two worked examples that recompute
 
-- **Other §163(j) exemptions** — - Electing real property trades or businesses (irrevocable election under §163(j)(7)(B)) — must use ADS for nonresidential real, residential rental, and qualified improvement property; trades off the §163(j) limit for slower depreciation. - Electing farming businesses (similar trade-off). - Regulated utilities (§163(j)(7)(A)(iv)) — automatically excluded.  _(IRC §163(j)(7)(B); §163(j)(7)(A)(iv))_
+All amounts below are fictional US-dollar facts for tax years beginning in 2026. The first two give a normal return and an election decision; the additional cases preserve the separate loss, interest, multinational and CAMT checks. They do not establish a client's elections or entitlement.
 
-### 9.5 Mechanics
+### Example 1: ordinary domestic corporation with the charitable floor
 
-- **Form 8990 mechanics** — Computed on Form 8990, Limitation on Business Interest Expense Under Section 163(j), attached to Form 1120 if applicable. The disallowed interest carryforward is tracked on Form 8990 Schedule A.  _(Form 8990)_
+Acme has sales of $4,200,000, COGS of $2,300,000 and taxable interest of $5,000. Allowable noncharitable deductions are officer pay $400,000, salaries $800,000, rent $120,000, depreciation $90,000, other expenses $180,000 and state tax $35,000. All costs are assumed substantiated and otherwise allowable. There are no NOLs, special deductions, credits, CAMT or other taxes.
 
-### 9.6 Worked §163(j) example
+Total income is **$1,905,000** and the noncharitable subtotal is **$280,000**. A current $20,000 qualifying cash gift is below the ceiling; the $2,800 floor leaves **$17,200** deductible. Taxable income is **$262,800** and regular tax **$55,188**. The floor-denied amount does not acquire a carryforward merely because it was disallowed in this below-ceiling case. With $130,000 of verified estimated payments, the overpayment is **$74,812**. Payment timeliness still needs the separate installment test.
 
-**Facts (corp not subject to small-business exemption):**
-- Taxable income (before interest deduction) = $5,000,000
-- Depreciation = $1,500,000 (already in deductions)
-- Business interest expense = $1,800,000
-- Business interest income = $50,000
-- Floor plan financing = $0
+For the book reconciliation, assume book income after a $130,000 federal tax provision is $130,000. Adding back that provision once and the $2,800 nondeductible gift reaches the $262,800 return subtotal. [IRC 170(b)(2), (d)(2)](https://uscode.house.gov/us/usc/t26/s170/); [IRC 11(b)](https://uscode.house.gov/us/usc/t26/s11/).
 
-**ATI computation (EBITDA-based, 2025):**
-- Start with taxable income before interest = $5,000,000
-- Add back: business interest expense ($1,800,000) — yes
-- Add back: NOL deduction — yes
-- Add back: §250 deduction — yes
-- Add back depreciation, amortization, and depletion (restored for taxable years beginning after December 31, 2024); the ATI and limit figures below still need recomputing with this add-back.
-- ATI = $5,000,000 + $1,800,000 = $6,800,000 (assume no NOL or §250)
+```oa-check
+name: Domestic C corporation charitable floor and return reconciliation
+inputs:
+  sales: 4200000
+  cogs: 2300000
+  interest_income: 5000
+  officer_pay: 400000
+  salaries: 800000
+  rent: 120000
+  depreciation: 90000
+  other_expenses: 180000
+  state_tax: 35000
+  gift: 20000
+  estimated_payments: 130000
+  book_income: 130000
+  federal_tax_provision: 130000
+steps:
+  - total_income: sales - cogs + interest_income
+  - noncharitable_deductions: officer_pay + salaries + rent + depreciation + other_expenses + state_tax
+  - contribution_base: total_income - noncharitable_deductions
+  - contribution_floor: contribution_base * 0.01
+  - deductible_gift: gift - contribution_floor
+  - taxable_income: contribution_base - deductible_gift
+  - regular_tax: taxable_income * 0.21
+  - overpayment: estimated_payments - regular_tax
+  - m1_subtotal: book_income + federal_tax_provision + contribution_floor
+expected:
+  total_income: 1905000
+  contribution_base: 280000
+  deductible_gift: 17200
+  taxable_income: 262800
+  regular_tax: 55188
+  overpayment: 74812
+  m1_subtotal: 262800
+```
 
-**Limit:**
-- 30% × $6,800,000 = $2,040,000
-- Plus business interest income $50,000 = $2,090,000
+### Example 2: current domestic research deduction or elective amortization
 
-**Result:**
-- Business interest of $1,800,000 ≤ $2,090,000 limit → fully deductible.
+A calendar-year corporation has $2,000,000 of taxable income before $1,200,000 of qualifying domestic research costs. It has no other limitations, losses, credits, section 250 deduction or CAMT. All research costs are eligible for section 174A, and benefits begin in January.
 
-**Alternative (tight scenario):**
-- If business interest = $2,500,000:
-- Deductible = $50,000 (interest income) + $2,040,000 (30% × ATI) = $2,090,000
-- Disallowed and carried forward = $2,500,000 − $2,090,000 = $410,000
+The default current deduction produces **$800,000** taxable income and **$168,000** regular tax. A valid election to amortize over 60 months produces 12 months of deduction, **$240,000**, taxable income **$1,760,000**, tax **$369,600** and an unamortized balance of **$960,000**. Current expensing reduces this year's regular tax by **$201,600** in these facts. The election choice may differ when credits, other deduction limitations, future taxable income or state treatment change; the comparison is not a universal recommendation. [IRC 174A(a), (c)](https://uscode.house.gov/us/usc/t26/s174A/).
 
-## 10. §174 R&D capitalization
+```oa-check
+name: Domestic research current deduction versus 60 month election
+inputs:
+  income_before_research: 2000000
+  research_cost: 1200000
+  amortization_months: 60
+  benefit_months_this_year: 12
+steps:
+  - immediate_taxable_income: income_before_research - research_cost
+  - immediate_tax: immediate_taxable_income * 0.21
+  - elected_deduction: research_cost / amortization_months * benefit_months_this_year
+  - elected_taxable_income: income_before_research - elected_deduction
+  - elected_tax: elected_taxable_income * 0.21
+  - remaining_basis: research_cost - elected_deduction
+  - current_year_tax_difference: elected_tax - immediate_tax
+expected:
+  immediate_taxable_income: 800000
+  immediate_tax: 168000
+  elected_deduction: 240000
+  elected_taxable_income: 1760000
+  elected_tax: 369600
+  remaining_basis: 960000
+  current_year_tax_difference: 201600
+```
 
-### 10.1 The post-TCJA rule
+### Additional check: NOL ordering without a pre-2018 bucket
 
-- **§174 capitalization requirement** — Effective for tax years beginning after December 31, 2021, TCJA's §174 amendment required capitalization and amortization of "specified research and experimental expenditures" (SREs). OBBBA then restored immediate expensing for domestic SREs for tax years beginning after December 31, 2024 (OBBBA § 70302; new IRC § 174A): Domestic SREs (tax years beginning after December 31, 2021 and before January 1, 2025): capitalize and amortize over 5 years (60 months), straight-line, beginning with the midpoint of the year incurred (half-year convention). Domestic SREs (tax years beginning after December 31, 2024): fully deductible in the year paid or incurred under new IRC §174A, reduced by any §41 research credit allowed for the year. Foreign SREs (R&E performed outside the US): capitalize and amortize over 15 years (180 months), beginning at the midpoint of the year incurred. Prior to 2022, taxpayers could elect to deduct R&E currently under §174(a); that option was unavailable for 2022-2024, and for tax years beginning after December 31, 2024 current deduction of domestic R&E is again available under §174A.  _(IRC §174; §174(a))_
+The corporation has $800,000 of modified taxable income before its NOL and $1,000,000 of qualifying post-2017 NOL carryforwards, no pre-2018 NOL, no section 382 restriction and no other adjustments. The deduction is **$640,000**, leaving taxable income **$160,000**, tax **$33,600** and NOL carryforward **$360,000**. [IRC 172(a)](https://uscode.house.gov/us/usc/t26/s172/).
+
+```oa-check
+name: Post 2017 NOL deduction without ownership change
+inputs:
+  modified_income: 800000
+  available_nol: 1000000
+steps:
+  - allowed_nol: min(available_nol, modified_income * 0.80)
+  - taxable_income: modified_income - allowed_nol
+  - regular_tax: taxable_income * 0.21
+  - remaining_nol: available_nol - allowed_nol
+expected:
+  allowed_nol: 640000
+  taxable_income: 160000
+  regular_tax: 33600
+  remaining_nol: 360000
+```
 
-### 10.2 Status as of 2025
+### Additional check: ATI and interest income are not double counted
 
-- **§174 status under OBBBA** — OBBBA changed the rule for domestic R&E starting in 2025. For domestic research or experimental expenditures paid or incurred in taxable years beginning after December 31, 2024, OBBBA restores full immediate expensing under new IRC §174A (OBBBA § 70302). Mandatory five-year capitalization applied only to tax years beginning in 2022 through 2024; amounts capitalized in those years continue amortizing under prior law unless a transition election is made. Foreign R&E remains subject to capitalization and 15-year amortization. Any domestic R&E deducted under §174A must be reduced by the §41 research credit allowed for the year. If a 2025 return was prepared assuming mandatory domestic capitalization, revisit it: immediate expensing is the treatment for domestic SREs in 2025.  _(P.L. 119-21 (OBBBA))_
-
-### 10.3 What counts as SRE
-
-- **Specified research or experimental expenditures (SRE)** — "Specified research or experimental expenditures" under §174(b) include: Direct labor and materials for R&D. Software development costs (explicitly included under §174(c)(3)). Allocated overhead reasonably attributable to R&D. Patent costs (legal and filing fees in obtaining a patent, but not litigation). Costs that would have been §41 qualified research expenses under prior law. What does NOT count: market research, quality control, advertising, management studies, routine data collection, efficiency surveys, social science research (in some cases — see §174(d)).  _(IRC §174(b); §174(c)(3); §174(d))_
-
-### 10.4 Mechanics on Form 1120
-
-- **§174 mechanics on Form 1120** — Domestic SREs incurred in 2025 are deductible in the year incurred under §174A (OBBBA § 70302); report them with other deductions (Line 26 with a supporting statement), reduced by any §41 credit. Foreign SREs are not directly deductible on Lines 13, 22, 26, etc. Capitalize foreign SREs (and domestic SREs from 2022-2024 still amortizing) on Form 4562 (intangibles section); foreign SREs amortize over 15 years. For domestic SREs capitalized in 2022-2024, the continuing amortization deduction (1/10 of domestic SREs in year 1 under half-year convention, then 1/5 per year for 4 years, then 1/10 in year 6 — actually: 10% / 20% / 20% / 20% / 20% / 10% over 6 calendar years for 5-year period under half-year, OR 1/2 month start of midpoint convention depending on interpretation; the IRS in Rev. Proc. 2023-8 / Rev. Proc. 2023-11 has clarified mechanics) flows to Form 1120 Line 26 (or appropriate line) as "amortization of §174 costs." Refer R&D mechanics to `us-r-and-d-credit-and-174` for detail. This skill notes the existence of the rule and flags it for the preparer; for any return with material R&E spend (defined here as >$50k of arguable SRE), the R&D skill should be loaded alongside.  _(Form 4562; Rev. Proc. 2023-8; Rev. Proc. 2023-11)_
-
-### 10.5 Interaction with §41 R&D credit
-
-- **§174/§41 credit interaction** — The §41 R&D credit is still available in 2025, computed on Form 6765. There is no incompatibility between deducting domestic R&E under §174A and claiming the §41 credit. However, domestic research expenditures deducted under §174A must be reduced by the §41 credit allowed for the year, unless the taxpayer makes the §280C(c)(2) reduced-credit election (OBBBA § 70302; IRC § 174A). This interaction is computed on Form 6765 Section A or B.  _(IRC §41; §280C(c)(1); §280C(c)(2); Form 6765)_
-
-### 11.1 What §250 does
-
-For tax years beginning after December 31, 2017, IRC §250 (added by TCJA §14202) provides domestic C-corporations a deduction for two categories of income:
-
-1. **GILTI** (Global Intangible Low-Taxed Income inclusion under §951A) — a **50% deduction**, effectively bringing the GILTI tax rate to 10.5% (50% × 21%).
-2. **FDII** (Foreign-Derived Intangible Income, generally income from US-based serving of foreign markets) — a **37.5% deduction**, effectively bringing the FDII rate to 13.125% (62.5% × 21%).
-
-- **GILTI §250 deduction rate (post-2017, pre-2026)** — 50% percent (effective GILTI rate 10.5% (50% × 21%))  _(IRC §250, TCJA §14202)_
-- **FDII §250 deduction rate (post-2017, pre-2026)** — 37.5% percent (effective FDII rate 13.125% (62.5% × 21%))  _(IRC §250, TCJA §14202)_
-
-### 11.2 The 2025 rates and the 2026 sunset
-
-- **§250 rate sunset schedule** — Under pre-OBBBA §250(a)(3), the percentages were scheduled to drop to 37.5% (GILTI) / 21.875% (FDII) for tax years beginning after December 31, 2025. OBBBA replaced that sunset with new permanent rates for tax years beginning after December 31, 2025 (OBBBA § 70321; IRC § 250(a)(1)): GILTI (renamed "net CFC tested income" by OBBBA) 50% → 40% (effective rate 12.6%); FDII 37.5% → 33.34% (effective rate ~14.0%).  _(§250(a)(3))_
-- **OBBBA status on §250 rates** — For tax years beginning in 2025, the 50% / 37.5% rates still apply. For tax years beginning after December 31, 2025, OBBBA sets permanent rates of 40% for net CFC tested income (formerly GILTI) and 33.34% for FDII (OBBBA § 70321; IRC § 250(a)(1)). Flag this on multi-year planning for clients with material GILTI/FDII.  _(§250(a)(3))_
-
-### 11.3 The taxable-income limitation — §250(a)(2)
-
-- **§250 taxable income limitation** — The aggregate §250 deduction is limited to taxable income (computed without regard to the §250 deduction). If the limit binds, the deduction is allocated proportionally between FDII and GILTI categories under §250(a)(2)(B). OBBBA also narrowed deduction-eligible income (DEI): for sales or other dispositions occurring after June 16, 2025, DEI excludes income or gain from the sale or other disposition of intangible property or of any other property of a type subject to depreciation, amortization, or depletion in the hands of the seller. In addition, interest expense and R&D expenses are no longer subtracted in determining DEI. (OBBBA § 70322; IRC § 250(b))  _(§250(a)(2), §250(a)(2)(B))_
-
-### 11.4 Mechanics
-
-- **§250 deduction mechanics** — Computed on Form 8993, Section 250 Deduction for Foreign-Derived Intangible Income (FDII) and Global Intangible Low-Taxed Income (GILTI). The deduction flows to Schedule C, Line 22, which then flows to Form 1120 Line 29b via Schedule C Line 24. GILTI inclusion itself flows to Schedule C Line 17 (as a §951A inclusion — historically a misleading classification, since GILTI is not actually a dividend; it's a deemed inclusion under §951A). The Form 5471 Schedule I-1 supports the GILTI computation.  _([Form 8993; Schedule C Line 22, 24; Form 1120 Line 29b; §951A](https://www.irs.gov/instructions/i1120))_
-
-### 11.5 Refer-out for complex computations
-
-- **Refer out for GILTI/FDII computation** — The actual GILTI computation (tested income, QBAI return, allocated deductions, high-tax exclusion election under §951A(c)(2)(B)(ii) Reg. §1.951A-2(c)(7)) is highly technical. Similarly, the FDII computation (deduction-eligible income, foreign-derived deduction-eligible income, deemed intangible income) involves multi-step allocations under Reg. §1.250(b)-1 through -6. For any return with material GILTI or FDII, refer to `us-gilti-fdii-computation` (separate skill). This skill notes the existence of the deduction, the 2025 rates, and the form (8993), and ensures the line items flow correctly on Form 1120 and Schedule C.  _(§951A(c)(2)(B)(ii); Reg. §1.951A-2(c)(7); Reg. §1.250(b)-1 through -6)_
-
-### 12.1 Origin and rate
-
-- **CAMT origin and rate** — The Inflation Reduction Act of 2022 (P.L. 117-169, §10101) added IRC §55(b)(2) and §59(k), imposing a 15% Corporate Alternative Minimum Tax on the Adjusted Financial Statement Income (AFSI) of "applicable corporations" for tax years beginning after December 31, 2022. This is NOT the same as the corporate AMT that existed under prior law (repealed by TCJA in 2018). The new CAMT is book-income-based, not tax-base-based, and applies only to very large corporations.  _(P.L. 117-169 §10101; IRC §55(b)(2); §59(k))_
-- **CAMT rate** — 15% percent (on Adjusted Financial Statement Income (AFSI) of applicable corporations, tax years beginning after Dec 31, 2022)  _(IRC §55(b)(2); §59(k))_
-
-### 12.2 Who is an "applicable corporation"
-
-- **Applicable corporation** — Under §59(k)(1)(B), a corporation is an "applicable corporation" if its average annual AFSI exceeds $1 billion over the 3 prior tax years (or such shorter period as the corporation has existed). For a corporation that is a member of a foreign-parented multinational group, a separate $100M test applies under §59(k)(2). Once a corporation becomes an applicable corporation, it generally remains one in future years (with limited exceptions for sustained drops in AFSI).  _(§59(k)(1)(B); §59(k)(2))_
-- **Applicable corporation AFSI threshold** — $1 billion USD (average annual AFSI over 3 prior tax years)  _(§59(k)(1)(B))_
-- **Foreign-parented multinational group AFSI threshold** — $100 million USD (separate test under §59(k)(2))  _(§59(k)(2))_
-
-Practical effect: CAMT applies only to a few thousand of the largest US corporations. If the corporation's revenue is under $500M, CAMT essentially never applies; if AFSI is under $700M-ish on a 3-year average, the test is unlikely to be met. For mid-size and small corps, the answer is "no CAMT" and the corp does not need to compute it.
-
-### 12.3 AFSI definition — book income, adjusted
-
-- **AFSI (Adjusted Financial Statement Income)** — AFSI starts with net income or loss reported on the applicable financial statement (generally the GAAP consolidated income statement, or IFRS if no GAAP — order of priority is in §451(b)(3)) and applies adjustments specified in §56A: - Add back: federal income tax expense. - Adjust for: depreciation differences between book and tax (§56A(c)(13) — added by IRA, allowing tax depreciation in lieu of book depreciation in AFSI to avoid penalizing capital investment). - Adjust for: tax-credit-related items, certain employee benefit items, partnership and CFC pass-throughs. - Adjust for: §168(k) bonus depreciation (allowed as a deduction against AFSI under §56A(c)(13)). - Reduce by: financial statement NOL (FSNOL), limited to 80% of pre-FSNOL AFSI.  _(§451(b)(3); §56A; §56A(c)(13))_
-- **FSNOL limitation** — 80% percent (of pre-FSNOL AFSI)  _(§56A)_
-
-### 12.4 The 15% computation
-
-- **Tentative minimum tax (TMT)** — TMT = 15% × AFSI (after FSNOL)  _(§55(b)(2); §59(k))_
-- **CAMT computation** — CAMT = max(0, TMT − Regular tax + BEAT) — i.e., the corp pays CAMT only to the extent it exceeds regular tax. The regular tax for this purpose includes the §11 21% tax plus BEAT, but excludes the corporate AMT itself.  _(§55(b)(2); §59(k))_
-
-### 12.5 Foreign tax credit
-
-- **CAMT foreign tax credit** — A CAMT foreign tax credit is available under §59(l) — limited to AFSI-equivalent foreign taxes; mechanics are intricate.  _(§59(l))_
-
-### 12.6 Refundable nature
-
-- **CAMT credit carryforward** — CAMT paid creates a CAMT credit (§53) carried forward indefinitely, usable in future years to reduce regular tax (but not below TMT). It is not refundable in cash; it offsets future regular tax.  _(§53)_
-
-### 12.7 Mechanics
-
-- **CAMT mechanics — Form 4626** — CAMT is computed on Form 4626, Alternative Minimum Tax — Corporations (revised for 2023 and forward to reflect the IRA changes). For 2025, the form requires: AFSI computation worksheet; Adjustments under §56A; FSNOL computation; TMT computation; Comparison with regular tax; CAMT credit carryforward tracking. For any corp with revenue ≥ $500M or with international operations and a parent group ≥ $1B in revenue, run the §59(k) test. For everyone else, document the conclusion that CAMT does not apply (the corp is not an applicable corporation) and skip Form 4626.  _(Form 4626; §59(k); §56A)_
-
-### 12.8 Provisional and final regulations
-
-Treasury issued proposed regulations (REG-112129-23, September 2024) that run several hundred pages. Final regs may differ. For any actual CAMT computation, refer to `us-corporate-amt-computation` (separate skill) — this is too specialized for first-line preparation under this skill.
-
-### 13.1 Schedule B — Additional Information for Schedule M-3 Filers
-
-- **Schedule B questions** — Schedule B asks 13 yes/no questions, primarily directed at consolidated group, ownership, and accounting-method disclosures. Required of all 1120 filers. Key questions: - 1: Is the corporation a subsidiary in an affiliated group or parent-subsidiary controlled group? - 4a, 4b: At end of year, did any individual or estate own (directly or indirectly under §267(c)) 50% or more of total voting stock? - 5a, 5b: At year-end, did the corp own 20% or more of voting stock of any other corporation, or 50% or more in any partnership? - 6: During the year, did the corporation pay dividends in excess of E&P? - 12: Does the corporation have a financial accounting method that materially differs from the tax accounting method? (Drives M-3 requirement.) - 13: During the tax year, did the corp dispose of any tangible property by like-kind exchange? (§1031 is now real-property-only post-TCJA.)  _(§267(c); §1031)_
-
-### 13.2 Schedule C — Dividends, Inclusions, and Special Deductions
-
-See §7. The DRD lines, the §245A participation exemption, the §250 deduction (Line 22), and various subpart F / GILTI inclusions all flow through Schedule C.
-
-### 13.3 Schedule J — Tax Computation and Payment
-
-- **Schedule J Part I — Tax computation** — - Line 1: Check if a "personal holding company" — flag and refer if yes. - Line 1a: Income tax = Line 30 × 21%. - Line 3: Base erosion minimum tax (Form 8991) — refer to BEAT skill. - Line 5: Add §59A BEAT, §965 transition tax installments if any. - Line 6 onwards: nonrefundable credits, foreign tax credit (Form 1118), general business credit (Form 3800), §53 prior-year minimum tax credit, etc. - Line 9: Personal holding company tax (Schedule PH). - Line 3: CAMT (Form 4626). Line 9: Other taxes — §1374 built-in gains tax (former S that converted — out of scope here), §1375 excess passive investment income tax (S-corps — out of scope), §1291 excess distribution tax from PFIC. - Line 10: Total tax = sum of regular + AMT + other taxes. - Line 12: Total tax flowing to Form 1120 Line 31. FTC haircut on PTEP distributions (OBBBA): for foreign income taxes paid or accrued with respect to amounts excluded from gross income as previously taxed earnings and profits under §959(a), 10% of the foreign taxes paid, accrued, or deemed paid with respect to the distribution is disallowed where the PTEP was excluded by reason of a §951A inclusion, effective for distributions after June 28, 2025. Report the reduction on Schedule G of Form 1118. (OBBBA § 70312(b); IRC § 960(d)(4))  _([§59A; §965; Form 1118; Form 3800; §53; Form 4626; §1374; §1375; §1291](https://www.irs.gov/instructions/i1120))_
-
-**Part II — Payments and refundable credits:**
-Prior year overpayment, current-year estimated tax, Form 7004 extension payment, refundable credits.
-
-**Part III — Payments and refundable credits (continued).**
-
-### 13.4 Schedule K — Other Information
-
-- **Schedule K disclosure items** — A miscellany of yes/no and dollar items used by IRS examiners to identify audit issues: - Accounting method (cash, accrual, hybrid). - Business activity code (NAICS). - Direct ownership by foreign person of 25% or more (triggers Form 5472). - Whether the corp had any §351 transferor or §1244 stock issuance. - Tax-exempt interest (§103 — not on Line 5). - Schedule UTP filing (Question 14). - §163(j) status (Line 23, asking whether the corp is subject to and required to file Form 8990). - §59A BEAT status (Question 22, asking whether the corporation had gross receipts of at least $500 million and must attach Form 8991). - §267A hybrid disallowance. - §59(k) CAMT applicability (Line 29 — added in 2023 for the IRA CAMT).  _([§351; §1244; §103; §163(j); §59A; §267A; §59(k)](https://www.irs.gov/instructions/i1120))_
-
-### 13.5 Schedule L — Balance Sheets per Books
-
-- **Schedule L filing threshold** — $250,000 USD (required if total receipts AND total assets are both $250,000 or more at year-end)
-- **Schedule L contents** — Even if the threshold is not met, Schedule L is often prepared internally for the M-1 reconciliation. Year-beginning and year-end columns for: - Assets: cash, receivables, inventory, federal/state tax securities, other current assets, loans to shareholders, mortgage and real estate loans, other investments, buildings (with accumulated depreciation), depletable assets, intangibles (less amortization), other. - Liabilities and equity: accounts payable, short-term notes, current portion of mortgages, other current liabilities, loans from shareholders, long-term mortgages, other liabilities, capital stock, additional paid-in capital, retained earnings — appropriated and unappropriated, adjustments to shareholders' equity, treasury stock, less cost of treasury stock. The end-of-year balance sheet must tie to the books and to Schedule M-1/M-3.
-
-### 13.6 Schedule M-1 — Reconciliation of Book Income to Tax Income
-
-- **Schedule M-1 reconciliation** — Required if Schedule M-3 is not required. Reconciles: - Net income per books (Line 1) + federal income tax (Line 2) + excess of capital losses over gains (Line 3) + income subject to tax not on books (Line 4) + expenses on books not deducted (Line 5) − income on books not on return (Line 7) − deductions on return not charged against book income (Line 8) = taxable income before NOL and special deductions (must equal Form 1120 Line 28). Common Line 5 items: 50% of meals, fines and penalties, federal tax expense (also on Line 2), political contributions, lobbying (§162(e)), club dues, executive comp over §162(m) $1M limit, certain disallowed fringe benefits. Common Line 7 items: tax-exempt interest, life insurance proceeds, federal income tax refund of prior-year taxes if not previously deducted. Common Line 8 items: tax depreciation in excess of book, §199A — N/A (corp), §250 deduction (if not in book), §168(k) bonus deduction.  _(§162(e); §162(m); §250; §168(k))_
-
-### 13.7 Schedule M-3 — Net Income (Loss) Reconciliation
-
-- **Schedule M-3 filing threshold** — $10 million USD (total assets at year-end triggers Schedule M-3 requirement)  _(Reg. §1.6011-4(c)(1))_
-- **Schedule M-3 structure** — For total assets under $10M, M-1 is used instead; corps with assets between $10M and $50M may file Schedule M-1 in lieu of M-3 only in limited circumstances. Schedule M-3 has three parts: - Part I: Financial Statement Information — identifies the source of book income (Form 10-K, certified audit report, internal financials). - Part II: Reconciliation of net income per income statement to taxable income — line by line on income items. - Part III: Reconciliation on expense and deduction items. Schedule M-3 is far more detailed than M-1 and is used by IRS LB&I examiners to identify large book-tax differences for audit selection. Misclassifications between permanent and temporary differences (Columns A through D) commonly cause IRS notices.  _(Reg. §1.6011-4(c)(1))_
-
-### 13.8 Schedule O — Consent Plan and Apportionment for a Controlled Group
-
-- **Schedule O requirement** — Required if the corporation is a member of a controlled group under §1561 that elects to apportion the §11 rate brackets (now irrelevant under the flat 21% rate — but Schedule O is still used to apportion certain other items, particularly the AMT exemption pre-2018 and the §535 accumulated earnings credit). For 2025, the practical use of Schedule O has narrowed. Still required if the corp is a member of a controlled group and certain elections are made.  _(§1561; §535)_
-
-### 13.9 Schedule UTP — Uncertain Tax Positions
-
-- **Schedule UTP filing threshold** — $10 million USD (total assets $10 million or more AND at least one uncertain tax position reserved for in audited financial statements (GAAP ASC 740-10, formerly FIN 48))
-- **Schedule UTP disclosures and penalty** — Discloses: - Each UTP, by IRC section. - Ranking by size of reserve. - Description of the position (concise — the IRS provides examples in the Schedule UTP instructions). Failure to file Schedule UTP when required does not have a stand-alone penalty (per IRS internal practice), but it draws scrutiny. Refer technical UTP analysis to the tax provision team or specialist — this skill flags the obligation but does not analyze the positions.
-
-## 14. Common attached forms
-
-**Common attached forms**
-
-| Form | When attached |
-| --- | --- |
-| **Form 1125-A — Cost of Goods Sold** | Mandatory if there is any COGS on Form 1120 Line 2. |
-| **Form 1125-E — Compensation of Officers** | Mandatory if total receipts are **$500,000 or more**. See §15. |
-| **Form 4562 — Depreciation and Amortization** | Attach if any §168(k) bonus, §179, MACRS placed in service this year, or any amortization (§174, §195, §197). |
-| **Form 4626 — CAMT** | Attach if the corp is an "applicable corporation" under §59(k); see §12. |
-| **Form 4797 — Sales of Business Property** | §1231 gains/losses, §1245/§1250 recapture, §1252/§1254/§1255 recapture, ordinary income from §1239 related-party gain. |
-| **Schedule D (Form 1120)** | Capital gain net income on Line 8; net of short-term and long-term. |
-| **Form 5471 — Information Return for CFCs** | Required if the corp is a US shareholder of a controlled foreign corporation. **Refer to `us-form-5471-cfc`.** |
-| **Form 5472 — Information Return of 25% Foreign-Owned US Corp** | Required if 25% or more of the corp is owned by a foreign person at any time during the year. **Refer to `us-form-5472`.** |
-| **Form 6765 — Credit for Increasing Research Activities (R&D credit)** | §41 credit; mandatory for §174 SRE coordination. **Refer to `us-r-and-d-credit-and-174`.** |
-| **Form 8990 — §163(j) Limitation on Business Interest** | If subject to §163(j) and not exempt under §448(c). |
-| **Form 8991 — BEAT (§59A)** | If the corp meets the BEAT thresholds (3-year avg gross receipts ≥ $500M and base erosion %≥ 3%). **Refer to BEAT skill.** |
-| **Form 8993 — §250 Deduction** | If any GILTI inclusion or FDII; see §11. |
-| **Form 7004 — Extension** | Filed by original due date for 6-month extension. |
-| **Form 2220 — Underpayment of Estimated Tax** | If any installment underpaid; attach to 1120 (do not let the IRS bill). |
-| **Form 3800 — General Business Credit** | If claiming any §38 credit; aggregates §41, §47, §45, §45L, §45Q, etc. |
-| **Form 1118 — Foreign Tax Credit (Corps)** | If claiming FTC. **Refer to FTC skill.** |
-| **Form 8832 — Entity Classification Election** | Attach to first 1120 if an LLC elected C-corp treatment in the first year. |
-| **Form 8716 — §444 Election** (PSCs only) | Out of scope. |
-| **Form 1128 — Application to Adopt/Change Tax Year** | If changing year. |
-| **Form 7208 — Excise Tax on Stock Buybacks** | Filed quarterly, not with 1120. **Refer to buyback excise skill.** |
-| **Form 8975 — Country-by-Country Report** | If parent of multinational group with revenue ≥ $850M. **Refer out.** |
-| **Schedule UTP** | If applicable; see §13.9. |
-
-## 15. Officer compensation — Form 1125-E
-
-- **Form 1125-E filing threshold** — $500,000 USD (total receipts (Form 1120 Line 1a + Line 4 + Lines 5–10))  _(IRC §6651; Form 1120 instructions)_
-- **Form 1125-E contents and flow** — Form 1125-E discloses: - Name and SSN of each officer (or top-paid officers if many). - Percent of time devoted to the business. - Percent of voting stock owned. - Amount of compensation paid (cash + non-cash). The total from Form 1125-E flows to Form 1120 Line 12.  _(Form 1120 instructions)_
-
-### 15.1 Reasonable compensation issue
-
-- **Reasonable compensation — overpayment issue** — Unlike S-corps (where reasonable compensation is an issue about underpayment — owners trying to recharacterize wages as distributions to avoid payroll tax), C-corps face a reasonable compensation issue under §162(a) about overpayment — owner-employees paying themselves excessive salary to convert nondeductible dividends into deductible wages. The IRS may recharacterize "excessive" compensation as a constructive dividend, disallowing the corporation's deduction (creating taxable income at 21%) and treating it as a dividend to the shareholder (taxed again at qualified dividend rates of 0/15/20% plus 3.8% NIIT). The classic case law factors (Mayson Mfg., Charles Schneider, Exacto Spring, Menard) examine: - Role and responsibility. - Time and effort. - Comparison with industry comp data. - Internal pay consistency. - Whether unrelated executives would accept the same comp. - The "independent investor test" — would a hypothetical outside investor accept the salary level given the return on equity? (Exacto Spring, 7th Cir. 1999.) For closely-held C-corps with material owner-employee comp, flag this for reviewer if comp exceeds industry norms.  _(§162(a); Mayson Mfg.; Charles Schneider; Exacto Spring (7th Cir. 1999); Menard)_
-
-### 15.2 §162(m) $1M deduction cap
-
-- **§162(m) covered employee compensation cap** — $1,000,000 USD (per individual per year, for publicly held corporations, covered employees (CEO, CFO, top 3 highest-paid, plus anyone who was a covered employee in a prior year post-2017))  _(IRC §162(m))_
-- **§162(m) cap scope and ARPA expansion** — The cap applies whether comp is base salary, bonus, equity, or any other form (TCJA repealed the performance-based-comp exception). For private companies, no §162(m) cap applies. ARPA expanded covered employees to include the next 5 highest-paid effective 2027.  _(IRC §162(m); TCJA; ARPA)_
-
-### 15.3 §280G golden parachute
-
-- **§280G golden parachute rule** — For change-in-control payments, §280G may disallow the deduction for "excess parachute payments" and impose a 20% excise tax on the recipient (§4999). Out of scope for routine prep; flag any M&A-year return for reviewer.  _(§280G; §4999)_
-
-### 16.1 §6651(a)(1) Late filing
-
-- **Late filing penalty rate and cap** — If Form 1120 is filed after the original due date (or extended due date, if Form 7004 was timely filed), penalty is: 5% of unpaid tax per month or fraction thereof, capped at 25% of unpaid tax.  _(§6651(a)(1))_
-- **Late filing minimum penalty (60+ days late)** — If more than 60 days late, the minimum penalty is the lesser of $525 (tax returns required to be filed in 2026) or 100% of unpaid tax. If no tax is due (refund or zero balance), the late filing penalty is $0 — there's nothing to multiply 5% against.  _([§6651(a)](https://www.irs.gov/instructions/i1120))_
-
-### 16.2 §6651(a)(2) Late payment
-
-- **Late payment penalty rate and cap** — If tax is unpaid after the original due date (even with a valid extension to file), penalty is: 0.5% of unpaid tax per month, capped at 25%. The reduction to 0.25%/month during an installment agreement applies only to individuals, not to corporations.  _([§6651(a)(2)](https://www.law.cornell.edu/uscode/text/26/6651))_
-
-### 16.3 Combined cap
-
-- **Combined late filing/payment penalty cap** — When both §6651(a)(1) and §6651(a)(2) apply in the same month, the late-filing penalty is reduced by the late-payment penalty for that month, so the combined monthly rate is 5% (not 5.5%). Total combined cap = 47.5% (25% LF − 25% × 0.5% × 5 months reduction + 25% LP). In practice, the §6651(a)(1) penalty is 4.5%/month after the §6651(a)(2) offset.  _(§6651(a)(1); §6651(a)(2))_
-
-### 16.4 §6651(c)(1) reasonable cause
-
-- **Reasonable cause abatement** — Penalty abated for reasonable cause (e.g., reliance on professional advice, natural disaster, death of preparer or officer). Document the facts contemporaneously; the IRS applies §6651(c)(1) restrictively.  _(§6651(c)(1))_
-
-### 16.5 §6601 Interest
-
-- **Interest on unpaid tax** — Interest on unpaid tax accrues from the original due date at the applicable federal underpayment rate (announced quarterly by the IRS). For Q1 2026, the corporate underpayment rate for amounts up to $100k is 3 percentage points above the federal short-term rate; for large corporate underpayments above $100k, the rate is 5 percentage points above (the "hot interest" under §6621(c)). Verify against the current quarterly rate notice.  _([§6601; §6621(c)](https://www.law.cornell.edu/uscode/text/26/6621))_
-
-### 16.6 §6699 — N/A for C-corps
-
-- **§6699 inapplicability to C-corps** — Note: §6699 (per-shareholder per-month late filing penalty for S-corps and partnerships) does not apply to C-corps. The C-corp penalty is tax-based under §6651, not headcount-based.  _(§6699; §6651)_
-
-## 17. E-file mandate
-
-- **E-file mandate conditions** — Under Reg. §301.6011-5 (as amended by T.D. 9972, effective for filings due in 2024 and later), electronic filing is mandatory for any corporation that files 10 or more returns of any type during the calendar year (aggregating Forms W-2, 1099, 1042-S, 5471, 5472, etc.). This is a substantial expansion of the prior rules and now captures most small and mid-size corps that issue payroll W-2s and 1099s.  _([Reg. §301.6011-5; T.D. 9972](https://www.irs.gov/instructions/i1120))_
-- **E-file mandate — total assets threshold** — $10 million USD (total assets at year-end triggers mandatory e-filing)  _(Reg. §301.6011-5; T.D. 9972)_
-- **E-file mandate — number of returns threshold** — 10 returns (10 or more returns of any kind filed during the calendar year (aggregating W-2, 1099, 1042-S, 5471, 5472, etc.) triggers mandatory e-filing)  _(Reg. §301.6011-5; T.D. 9972)_
-
-Paper filing remains permitted for corporations under both thresholds — primarily very small inactive or holding companies. Even then, e-filing is recommended; it reduces processing time and avoids transcription errors.
-
-E-file is via IRS Modernized e-File (MeF) through an authorized e-file provider (Drake, Lacerte, ProConnect, UltraTax, CCH Axcess, etc.) or direct via the IRS-provided software for very small filers.
-
-### 17.1 Signature
-
-- **E-file signature authorization** — For e-filed returns, the corporate officer (typically the CFO, CEO, treasurer, or other person authorized to sign Form 1120) signs Form 8879-CORP, IRS e-file Signature Authorization for Form 1120, which authorizes the ERO (electronic return originator) to submit the return with a PIN. The original signed 8879-CORP must be retained by the ERO and made available on IRS request; it is not filed with the return.  _(Form 8879-CORP)_
-
-### 18.1 Form 8832 effective date
-
-- **Form 8832 effective date rules** — An LLC that elects C-corp treatment files Form 8832 (Entity Classification Election) and specifies an effective date (up to 75 days back, up to 12 months forward, from filing). The first 1120 covers the period beginning on the effective date.  _(Form 8832)_
-- **Disregarded entity to C-corp conversion** — If the LLC was previously a disregarded entity (single member), the conversion is a deemed §351 transfer — the member is deemed to contribute the LLC's assets and liabilities to a newly-formed corporation in exchange for stock. Recognize: - Built-in gain on the contributed assets (rare unless boot or excess liabilities). - Carryover basis for the C-corp under §362. - Holding period tacks under §1223. - Pre-conversion losses of the disregarded entity (which were Schedule C) do NOT carry into the C-corp (they were the owner's losses, not the entity's).  _(§351; §362; §1223)_
-- **Partnership to C-corp conversion** — If the LLC was previously a partnership (multi-member), the conversion is a deemed contribution by each partner of their partnership interest to the corporation under §351, or alternatively can be structured as a deemed asset contribution. The form of the deemed transaction matters for basis and gain — see Rev. Rul. 84-111 for the three permissible forms of partnership-to-corp conversion.  _(§351; Rev. Rul. 84-111)_
-
-### 18.2 Short year
-
-- **Short-year first 1120 due date** — If Form 8832 is effective mid-year, the C-corp files a short-year 1120 for the period from effective date to year-end. The first-year due date is the 15th day of the 4th month after that short year-end.
-
-### 18.3 New EIN?
-
-- **EIN retention on classification election** — The LLC retains its existing EIN — no new EIN is needed solely because of the entity classification election (per IRS practice and the EIN instructions, Form SS-4).  _(Form SS-4)_
-
-### 18.4 Five-year rule on revocation
-
-- **60-month classification lock-in** — Once a Form 8832 election is made, the entity generally cannot change classification again for 60 months (5 years) — IRC §7701 default rules and Reg. §301.7701-3(c)(1)(iv). Limited exceptions exist for ownership changes exceeding 50%.  _(IRC §7701; Reg. §301.7701-3(c)(1)(iv))_
-
-### 18.5 Disclosure
-
-- **First-year 1120 disclosure statement** — The first 1120 should include a statement noting the election, attaching a copy of Form 8832, and noting the effective date.  _(Form 8832)_
-
-## 19. Worked examples
-
-### 19.1 Example A — Simple domestic C-corp
-
-"Acme Widgets, Inc.", a Delaware C-corp, calendar year, single-state operations (Delaware only).
-- 2025 sales: $4,200,000.
-- COGS: $2,300,000.
-- Officer compensation: $400,000 (one shareholder-CEO).
-- Salaries: $800,000.
-- Rent: $120,000.
-- Depreciation: $90,000 (Form 4562).
-- Other operating expenses: $180,000.
-- State income tax expense: $35,000.
-- Federal income tax expense (book): $130,000.
-- Interest income: $5,000.
-- Charitable contributions: $30,000.
-- No dividends received, no foreign operations.
-- Total assets at year-end: $1.2 million.
-- Estimated taxes paid: $130,000.
-
-**Form 1120 income**  _(Form 1120)_
-
-| Line | Description | Amount |
-| --- | --- | --- |
-| 1a | Gross receipts | $4,200,000 |
-| 2 | COGS (Form 1125-A) | $2,300,000 |
-| 3 | Gross profit | $1,900,000 |
-| 5 | Interest | $5,000 |
-| 11 | Total income | $1,905,000 |
-
-**Deductions**  _(Form 1120)_
-
-| Line | Description | Amount |
-| --- | --- | --- |
-| 12 | Officer comp (Form 1125-E, receipts ≥ $500k) | $400,000 |
-| 13 | Other salaries | $800,000 |
-| 16 | Rent | $120,000 |
-| 17 | State income tax | $35,000 |
-| 19 | Charitable (≤ 10% of TI before contribution) | $30,000* |
-| 20 | Depreciation | $90,000 |
-| 26 | Other | $180,000 |
-| 27 | Total deductions | $1,655,000 |
-| 28 | TI before NOL/special deductions | $250,000 |
-
-*Check 10% charitable limit: TI before contribution = $250,000 + $30,000 = $280,000. 10% = $28,000. **The $30,000 contribution exceeds the limit by $2,000.** Allowable in 2025: $28,000. Carry $2,000 to 2026 (5-year carryforward). Restate Line 19 to $28,000 and Line 28 to $252,000.
-
-**Corrected TI and tax**  _(Schedule J)_
-
-| Line | Description | Amount |
-| --- | --- | --- |
-| 28 | TI (corrected) | $252,000 |
-| 29a | NOL deduction | $0 |
-| 29b | Special deductions (DRD/§250) | $0 |
-| 30 | Taxable income | $252,000 |
-| 31 | Tax (Schedule J) = 21% × $252,000 | **$52,920** |
-
-- Prior-year tax (2024): assume $115,000.
-- Current-year tax (2025): $52,920.
-- Required annual payment = lesser of 100% × $115,000 = $115,000 OR 100% × $52,920 = $52,920 → $52,920 (this is the lesser).
-- Acme is NOT a large corp (taxable income never $1M+ in prior 3 years, presumably).
-- Quarterly installments: $52,920 / 4 = $13,230 each.
-- Estimated taxes paid: $130,000. Massive overpayment.
-- Refund or credit forward = $130,000 − $52,920 = $77,080.
-
-**Schedule M-1**  _(Schedule M-1)_
-
-| Line | Item | Amount |
-| --- | --- | --- |
-| 1 | Net income per books | (Compute backward) |
-| 2 | Federal income tax expense per books | $130,000 |
-| 5 | Expenses on books not deducted: $2k charitable carryforward + meals 50% etc. | $2,000 |
-| 8 | Tax depreciation in excess of book | (Assume 0 for simplicity) |
-| 10 | TI per Form 1120 Line 28 | $252,000 |
-
-If book NI = $120,000, M-1 reconciles: $120,000 + $130,000 + $2,000 = $252,000. ✓
-
-- Schedule B: yes.
-- Schedule C: no (no dividends).
-- Schedule J: yes (every return).
-- Schedule K: yes.
-- Schedule L: yes (assets ≥ $250k).
-- Schedule M-1: yes (assets under $10M so M-3 not required).
-- Schedule O: no (not in controlled group).
-- Schedule UTP: no (under $10M).
-- Form 1125-A: yes (COGS).
-- Form 1125-E: yes (receipts ≥ $500k).
-- Form 4562: yes (depreciation).
-
-Due April 15, 2026. E-file (over 10 W-2s/1099s issued).
-
-### 19.2 Example B — Multinational with GILTI and FDII
-
-"GlobalTech Inc.", a Delaware C-corp, calendar year.
-- 100% owner of a wholly-owned Irish CFC, "GlobalTech Ireland Ltd."
-- 2025 US revenue: $80M (of which $30M is FDDEI — Foreign-Derived Deduction-Eligible Income, sales to foreign customers).
-- 2025 GlobalTech Inc. taxable income before §250 deduction = $20,000,000.
-- GlobalTech Ireland Ltd. tested income = $5,000,000 (passes through as a GILTI inclusion).
-- QBAI return on Ireland tangible assets = $800,000.
-- Foreign tax credits available for GILTI (after 80% haircut and §904 sourcing) — assume usable to reduce GILTI tax.
-
-- Tested income: $5,000,000
-- Less: 10% × QBAI return × QBAI ($8M, so 10% × $8M = $800k, but assume this is already netted in tested income terms — net GILTI = $5,000,000 − $800,000 = $4,200,000.
-- GILTI inclusion on Schedule C Line 14 = $4,200,000.
-
-GILTI portion:
-- GILTI included = $4,200,000.
-- §250 deduction on GILTI = 50% × $4,200,000 = $2,100,000.
-- §78 gross-up for foreign taxes paid by CFC ≅ assume $500,000 → additional Schedule C line 18 inclusion (also eligible for §250).
-
-FDII portion:
-- Deduction-eligible income = ... (computed under §250(b) regulations) — assume FDII = $4,000,000 after the allocation steps.
-- §250 deduction on FDII = 37.5% × $4,000,000 = $1,500,000.
-
-Total §250 deduction = $2,100,000 + $1,500,000 = $3,600,000.
-
-- **§250(a)(2) limitation** — Aggregate §250 deduction limited to taxable income before §250. Taxable income before §250 = $20,000,000 (assumed; this already includes the GILTI inclusion). $3,600,000 ≤ $20,000,000 → no proration needed.  _(§250(a)(2))_
-
-- Line 28 TI before NOL and special deductions = $20,000,000.
-- Line 29b Special deductions (§250 from Schedule C Line 22) = $3,600,000.
-- Line 30 TI = $16,400,000.
-- Line 31 Tax (Schedule J) = 21% × $16,400,000 = $3,444,000.
-
-Reduces the line 31 tax via Schedule J, computed on Form 1118. (Refer to FTC skill.)
-
-- Plus Forms 5471 (Ireland), 8993, 1118 (FTC), Schedule UTP if applicable (assets ≥ $10M likely).
-- Schedule M-3 likely required (assets ≥ $10M).
-
-For 2026, the §250 deduction percentages drop to 40% (GILTI, now net CFC tested income) / 33.34% (FDII) (see §11). If GlobalTech's GILTI inclusion were the same in 2026, the §250 deduction on GILTI alone would drop from $2.1M to $1.68M, increasing 2026 tax by $88,200. Flag for tax planning.
-
-### 19.3 Example C — CAMT-triggered large corp
-
-"MegaCorp, Inc.", a Delaware C-corp, calendar year.
-- 3-year average AFSI (2022, 2023, 2024): $1.2 billion → **MegaCorp is an applicable corporation** under §59(k).
-- 2025 AFSI before FSNOL = $1,100,000,000.
-- 2025 FSNOL available = $200,000,000 (limited to 80% × $1.1B = $880M, so all $200M usable).
-- 2025 regular taxable income (Form 1120 Line 30) = $300,000,000 (heavily reduced by §168(k), §174 amortization, FDII deduction).
-- Regular tax (Schedule J Line 2) = 21% × $300,000,000 = $63,000,000.
-- BEAT: assume $0 for simplicity.
-
-- **CAMT computation (Form 4626)** — AFSI after FSNOL = $1,100,000,000 − $200,000,000 = $900,000,000. TMT = 15% × $900,000,000 = $135,000,000. Regular tax (+ BEAT) = $63,000,000. CAMT = max(0, $135,000,000 − $63,000,000) = $72,000,000.  _(Form 4626)_
-
-- Regular tax: $63,000,000
-- + CAMT: $72,000,000
-- = **Total: $135,000,000**
-
-Effective rate = $135M / $300M = 45% on regular taxable income, but actually 15% on AFSI, which is the policy outcome of CAMT.
-
-- **CAMT credit carryforward** — The $72M CAMT generates a §53 CAMT credit of $72M carried forward indefinitely, usable in years when regular tax exceeds TMT.  _(§53)_
-
-- All of Schedule J including CAMT lines.
-- Form 4626.
-- Schedule UTP (assets ≥ $10M almost certainly).
-- Schedule M-3 (assets ≥ $10M).
-- Likely Forms 5471, 5472, 8990, 8991/8993, 8975 (CbC) — refer out for each.
-- E-file mandatory (large corp).
-
-- **Estimated tax** — MegaCorp is a large corporation (TI well over $1M in each prior year). No prior-year safe harbor allowed for installments 2–4. Must use 100% of current-year tax. Quarterly installments = $135M / 4 = $33,750,000 each. Failure to fully fund triggers §6655 penalty on Form 2220.  _(§6655)_
-
-## 20. Provenance and disclaimer
-
-### 20.1 Statutory citations relied on
-
-- IRC §11 (corporate rate, 21%)
-- IRC §55(b)(2), §59(k), §56A (CAMT, IRA 2022)
-- IRC §163(j) (interest limitation)
-- IRC §172 (NOL, post-TCJA rules)
-- IRC §174 (R&E capitalization, TCJA)
-- IRC §243, §245, §245A, §246, §246A (DRD)
-- IRC §250 (GILTI/FDII deduction)
-- IRC §382 (NOL after ownership change)
-- IRC §448(c) (small-business threshold $31M for 2025)
-- IRC §6012(a)(2) (filing requirement)
-- IRC §6651 (late filing/payment penalty)
-- IRC §6655 (corporate estimated tax)
-- IRC §6072(b) (due date)
-- IRC §7503 (weekend/holiday)
-- Reg. §301.6011-5 (e-file mandate)
-- Reg. §1.6012-2 (filing requirement)
-- Reg. §1.250(b)-1 through -6 (FDII)
-- Reg. §1.951A (GILTI)
-- Reg. §1.6011-4 (Schedule M-3 threshold)
-
-- **Small-business threshold (IRC §448(c))** — $31,000,000 USD (for 2025)  _(IRC §448(c))_
-
-### 20.2 Legislative provenance
-
-- **Tax Cuts and Jobs Act (TCJA), P.L. 115-97 (December 22, 2017)** — 21% rate, §163(j), §174 capitalization (delayed effective date), DRD reduction, NOL 80%/no-carryback, §250 enactment, FDII/GILTI.
-- **Inflation Reduction Act (IRA), P.L. 117-169 (August 16, 2022)** — CAMT under §55(b)(2) and §59(k), stock buyback excise tax under §4501.
-- **One Big Beautiful Bill Act (OBBBA), P.L. 119-21 (July 4, 2025)** — did NOT modify the corporate rate, the CAMT, or DRD. It did amend §250 (40% / 33.34% for taxable years beginning after December 31, 2025, OBBBA § 70321), §163(j) (depreciation add-back restored) and §174 (domestic research costs moved to new §174A). Made certain individual TCJA provisions permanent but did not extend the §250 elevated deduction (50%/37.5%) past 2025.
-
-### 20.3 IRS guidance
-
-- Form 1120 Instructions for 2024 (used as template for 2025 — verify against released 2025 instructions before filing).
-- Form 4626 Instructions (2023 revision for IRA CAMT).
-- Form 8993 Instructions.
-- Form 8990 Instructions.
-- Rev. Proc. 2024-40 (inflation adjustments for 2025; $525 minimum late filing penalty for returns required to be filed in 2026).
-- Rev. Proc. 2023-8, Rev. Proc. 2023-11 (§174 SRE method change).
-- Notice 2023-7 and subsequent CAMT notices (Notice 2023-20, 2023-64, 2024-10, 2024-66, 2025 updates).
-- REG-112129-23 (CAMT proposed regs, September 2024).
-
-### 20.4 Disclaimer
-
-This skill provides a structured walkthrough for preparing Form 1120 for tax year 2025 under federal law. It is intended for use by a Circular 230 practitioner (CPA, EA, or attorney) and must be reviewed and signed by such a practitioner before the return is filed. The skill does not constitute tax advice to any specific taxpayer.
-
-**Specific verification required before filing any return:**
-
-1. Confirm the 2025 Form 1120 and instructions as released by the IRS in late 2025 / early 2026 (changes from the 2024 form possible).
-2. Confirm the 2025 Rev. Proc. inflation adjustments (small-business threshold, §6651 minimum penalty, §6655 large-corp threshold).
-3. Confirm no late-2025 or early-2026 legislation altered §174, §163(j), §250 sunset, or CAMT thresholds. Watch for the routinely-proposed (and routinely-stalled) R&D restoration / EBITDA restoration / bonus depreciation extension package.
-4. Confirm the corporation's state filings — this skill addresses federal only.
-5. For any item flagged "refer out" (consolidated returns, foreign subsidiaries, BEAT, R&D, FTC, CAMT mechanics, stock buyback excise), engage the specialized skill or specialist.
-
-**State tax warning:** Federal taxable income is the starting point for most state corporate income tax computations, but virtually every state adjusts away from federal in specific areas (state-specific decoupling from bonus depreciation, §163(j), §168(k), §250, §174). Always run the state return alongside the federal, not after.
-
-**End of skill.**
+An in-scope corporation's income **before business interest expense** is $5,000,000, already including $50,000 of business interest income and after $1,500,000 of depreciation/amortization. Assume no other ATI adjustments, foreign inclusions, capitalized-interest complications, floor-plan interest or carryforwards. ATI is $5,000,000 + $1,500,000 - $50,000 = **$6,450,000**. The limit is **$1,985,000**, including business interest income. With $3,000,000 of current business interest expense, **$1,015,000** carries forward. If the expense were only $1,800,000, all would fit within the same limit. [IRC 163(j)](https://uscode.house.gov/us/usc/t26/s163/); [Form 8990 instructions](https://www.irs.gov/instructions/i8990).
+
+```oa-check
+name: 2026 ATI with depreciation addback and business interest income
+inputs:
+  income_before_interest_expense: 5000000
+  depreciation_amortization: 1500000
+  business_interest_income: 50000
+  business_interest_expense: 3000000
+  alternative_interest_expense: 1800000
+steps:
+  - ati: income_before_interest_expense + depreciation_amortization - business_interest_income
+  - interest_limit: business_interest_income + ati * 0.30
+  - allowed_interest: min(business_interest_expense, interest_limit)
+  - disallowed_interest: business_interest_expense - allowed_interest
+  - alternative_allowed: min(alternative_interest_expense, interest_limit)
+expected:
+  ati: 6450000
+  interest_limit: 1985000
+  allowed_interest: 1985000
+  disallowed_interest: 1015000
+  alternative_allowed: 1800000
+```
+
+### Additional check: 2026 section 250
+
+A domestic corporation has $20,000,000 of taxable income before section 250, including $5,000,000 of NCTI and a related $500,000 section 78 gross-up. Properly substantiated FDDEI is $4,000,000. Assume both relevant years begin in 2026, no taxable-income limitation or other adjustment and no credits in this illustrative regular-tax subtotal. Do not subtract a former QBAI return.
+
+The FDDEI deduction is **$1,333,600** and the NCTI/gross-up deduction **$2,200,000**, total **$3,533,600**. Taxable income is **$16,466,400** and regular tax **$3,457,944 before foreign tax credits**. The $20,000,000 input already includes the gross-up; it is not added to income a second time. [IRC 250(a)](https://uscode.house.gov/us/usc/t26/s250/); [IRC 951A](https://uscode.house.gov/us/usc/t26/s951A/).
+
+```oa-check
+name: 2026 FDDEI and NCTI deductions including section 78 grossup
+inputs:
+  income_before_250: 20000000
+  fddei: 4000000
+  ncti: 5000000
+  related_grossup: 500000
+steps:
+  - fddei_deduction: fddei * 0.3334
+  - ncti_deduction: (ncti + related_grossup) * 0.40
+  - total_deduction: fddei_deduction + ncti_deduction
+  - taxable_income: income_before_250 - total_deduction
+  - tax_before_credits: taxable_income * 0.21
+expected:
+  fddei_deduction: 1333600
+  ncti_deduction: 2200000
+  total_deduction: 3533600
+  taxable_income: 16466400
+  tax_before_credits: 3457944
+```
+
+### Additional check: CAMT interaction with BEAT
+
+Assume applicable-corporation status was established under the prior-year tests. Current AFSI before FSNOL is $1,100,000,000, available FSNOL is $200,000,000, corporate AMT FTC is zero, regular tax for section 55 purposes is $63,000,000 and BEAT is $10,000,000. No other credits or taxes alter this example.
+
+Permitted FSNOL is **$200,000,000**, leaving AFSI **$900,000,000** and tentative minimum tax **$135,000,000**. CAMT is $135,000,000 - ($63,000,000 + $10,000,000) = **$62,000,000**; combined regular tax, BEAT and CAMT is **$135,000,000**. With zero BEAT, CAMT would be **$72,000,000** and the same combined amount in these facts. [IRC 55(a)-(b)](https://uscode.house.gov/us/usc/t26/s55/); [IRC 56A(d)](https://uscode.house.gov/us/usc/t26/s56A/).
+
+```oa-check
+name: CAMT subtracts regular tax and BEAT in the same comparison
+inputs:
+  afsi_before_fsnol: 1100000000
+  available_fsnol: 200000000
+  camt_foreign_tax_credit: 0
+  regular_tax: 63000000
+  beat: 10000000
+steps:
+  - fsnol_deduction: min(available_fsnol, afsi_before_fsnol * 0.80)
+  - afsi: afsi_before_fsnol - fsnol_deduction
+  - tentative_minimum_tax: afsi * 0.15 - camt_foreign_tax_credit
+  - camt: max(0, tentative_minimum_tax - regular_tax - beat)
+  - combined_tax: regular_tax + beat + camt
+  - camt_without_beat: max(0, tentative_minimum_tax - regular_tax)
+expected:
+  fsnol_deduction: 200000000
+  afsi: 900000000
+  tentative_minimum_tax: 135000000
+  camt: 62000000
+  combined_tax: 135000000
+  camt_without_beat: 72000000
+```
+
+## Ask the client first
+
+1. What is the entity's place of organization, federal classification, election history, exact tax year and group/ownership structure, including foreign owners and any ownership changes?
+2. Can the client provide the trial balance, financial statements, prior returns, payment confirmations, tax-basis schedules, NOL/credit/interest/charitable carryovers and prior elections?
+3. What are current and prior-period receipts, year-end assets and AFSI, after applicable aggregation, and does tax-shelter or specialized-corporation status apply?
+4. Which research, software, asset, interest and charitable expenditures occurred, where was research conducted, and what are the acquisition, construction, payment and benefit-start dates?
+5. What foreign operations, CFC/branch income, related-party payments, distributions, stock repurchases and uncertain tax positions exist, and what supporting information returns and withholding records are available?
+6. What officer/shareholder compensation, stock issuances/redemptions, accounting-method changes, filing extensions, instalment choices and known notices need review before the return is finalized?
+
+## Sources
+
+All sources below were read on **2026-11-13**. Read scope is stated so a reviewer can reproduce the checks. Statutory figures take precedence over superseded figures in prior-year form instructions. Final 2026 Form 1120 and related annual instruction layouts remain unconfirmed as noted above; do not treat that outstanding form-version check as a verified filing layout.
+
+| Official source | Provisions or instruction sections read and used | Read on |
+|---|---|---|
+| [IRS Form 1120 instructions](https://www.irs.gov/instructions/i1120) | Read for Published 2025 instructions: What's New; Who Must File; entity elections; electronic filing; accounting periods; filing/payment; interest and penalties; income and deductions; Schedule C and DRD worksheet; Schedules J/K/L/M-1/M-2; attached forms. | 2026-11-13 |
+| [IRS Form 2220 instructions](https://www.irs.gov/instructions/i2220) | Read for Who Must File; required annual payment; large corporations; installment dates; annualized and seasonal methods; Form 8842 election periods. | 2026-11-13 |
+| [IRS Form 7004 instructions](https://www.irs.gov/instructions/i7004) | Read for Filing/extension conditions; June 30 transition; payment and penalty rules. | 2026-11-13 |
+| [Rev. Proc. 2025-32, IRB 2025-45](https://www.irs.gov/irb/2025-45_IRB) | Read for Sections 2.11, 4.24, 4.30 and 4.52: 179D termination, 2026 section 179 and gross-receipts figures, 2027 filing-penalty minimum. | 2026-11-13 |
+| [IRC 11](https://uscode.house.gov/us/usc/t26/s11/), [7701](https://uscode.house.gov/us/usc/t26/s7701/), [6072](https://uscode.house.gov/us/usc/t26/s6072/) | Read for Corporate rate; domestic/foreign definitions; corporate filing deadline and effective-date notes. | 2026-11-13 |
+| [26 CFR 301.7701-3](https://www.ecfr.gov/current/title-26/section-301.7701-3) | Read for Paragraphs (b), (c)(1) and (g): eligible-entity classification, election timing, repeated elections, return copy and deemed transactions. | 2026-11-13 |
+| [IRC 243](https://uscode.house.gov/us/usc/t26/s243/), [246](https://uscode.house.gov/us/usc/t26/s246/) | Read for DRD tiers, qualifying affiliated dividends, aggregate income limits, NOL exception and holding periods. | 2026-11-13 |
+| [IRC 172](https://uscode.house.gov/us/usc/t26/s172/), [1212](https://uscode.house.gov/us/usc/t26/s1212/), [382](https://uscode.house.gov/us/usc/t26/s382/) | Read for NOL buckets and exceptions; corporate capital-loss carry periods; ownership-change definition, basic limitation and testing period. | 2026-11-13 |
+| [Form 8990 instructions](https://www.irs.gov/instructions/i8990), [IRC 163](https://uscode.house.gov/us/usc/t26/s163/) | Read for Section 163(j), exclusions/exemptions, ATI, carryforwards and 2025/2026 statutory changes. | 2026-11-13 |
+| [IRC 174A](https://uscode.house.gov/us/usc/t26/s174A/), [174](https://uscode.house.gov/us/usc/t26/s174/), [280C](https://uscode.house.gov/us/usc/t26/s280C/) | Read for Domestic/foreign research; elective amortization and transition notes; research-credit deduction coordination. | 2026-11-13 |
+| [IRC 170](https://uscode.house.gov/us/usc/t26/s170/), [IRS business-provisions explanation](https://www.irs.gov/newsroom/understanding-the-working-families-tax-cuts-business-tax-provisions-youtube-video-text-script) | Read for Corporate floor/ceiling and carryover rules in sections 170(b)(2), (d)(2); IRS explanation of floor-only disallowance. | 2026-11-13 |
+| [IRC 162](https://uscode.house.gov/us/usc/t26/s162/), [Form 1125-E instructions](https://www.irs.gov/instructions/i1125e) | Read for Reasonable compensation; section 162(m) covered employees, new controlled-group rule and effective dates; officer form filing trigger. | 2026-11-13 |
+| [Schedule M-3 instructions](https://www.irs.gov/instructions/i1120sm3) | Read for Who Must File; permitted M-1 alternative; Schedule B exception; financial-statement and balance-sheet alignment. | 2026-11-13 |
+| [IRC 250](https://uscode.house.gov/us/usc/t26/s250/), [951A](https://uscode.house.gov/us/usc/t26/s951A/), [960](https://uscode.house.gov/us/usc/t26/s960/) | Read for Current section 250 rates/base limit and DEI changes; NCTI without QBAI; deemed-paid credit and PTEP haircut, with effective-date notes. | 2026-11-13 |
+| [IRC 55](https://uscode.house.gov/us/usc/t26/s55/), [56A](https://uscode.house.gov/us/usc/t26/s56A/), [59](https://uscode.house.gov/us/usc/t26/s59/), [Form 4626 instructions](https://www.irs.gov/instructions/i4626) | Read for Corporate tentative minimum tax and regular-tax/BEAT comparison; AFSI/FSNOL; section 59(k) status tests; interim simplified methods and return computation. | 2026-11-13 |
+| [IRC 59A](https://uscode.house.gov/us/usc/t26/s59A/) | Read for BEAT rate, bank/securities increment, modified base, applicable-taxpayer thresholds and aggregation. | 2026-11-13 |
+| [Forms 7208](https://www.irs.gov/instructions/i7208) and [8975](https://www.irs.gov/instructions/i8975) instructions | Read for Annual stock-repurchase excise filing through Form 720; US ultimate-parent CbC revenue threshold and filing deadline. | 2026-11-13 |
+| [IRC 1202](https://uscode.house.gov/us/usc/t26/s1202/) | Read for Noncorporate exclusion; new holding-period percentages, dollar/basis limits, gross assets, issuance/acquisition transitions and active-business conditions. | 2026-11-13 |
+| [IRC 6651](https://uscode.house.gov/us/usc/t26/s6651/), [IRS Interest](https://www.irs.gov/payments/interest) | Read for Filing/payment penalties, overlap rule, reasonable cause and interest framework. | 2026-11-13 |
+| [31 CFR 10.37](https://www.ecfr.gov/current/title-31/section-10.37) | Read for Written-advice factual/legal standards and prohibition on audit-lottery reasoning. | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s245A/) | Read for participation exemption, specified foreign corporation and exclusions | 2026-11-13 |
+| [Official source](https://www.irs.gov/pub/irs-drop/rp-25-28.pdf) | Read for section2.02 prior research amortization and transition procedures | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s4999/) | Read for recipient excess-parachute excise rate | 2026-11-13 |
+| [Official source](https://www.irs.gov/instructions/i5472) | Read for 25% ownership, related-party transaction reporting and exceptions | 2026-11-13 |
+| [Official source](https://www.irs.gov/irb/2025-52_IRB#NOT-2025-77) | Read for section3.01(2) PTEP inclusion-tax-year cutoff | 2026-11-13 |
+| [Official source](https://www.irs.gov/instructions/i1118) | Read for PTEP deemed-paid credit changes in What's New | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s53/) | Read for minimum-tax credit carryforward and annual ceiling | 2026-11-13 |
+| [Official source](https://www.irs.gov/pub/irs-pdf/f8879crp.pdf) | Read for page2 ERO retention period and no-routine-submission rule | 2026-11-13 |
+| [Official source](https://www.irs.gov/instructions/i7205) | Read for Who Must File and section179D form requirement | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s6621/) | Read for ordinary and large-corporate interest, thresholds and applicable dates | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s362/) | Read for section362(a) corporate carryover basis | 2026-11-13 |
+| [Official source](https://uscode.house.gov/us/usc/t26/s1223/) | Read for paragraphs1-2 holding-period tacking | 2026-11-13 |
+| [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies) | Read for owner taxation of disregarded activity | 2026-11-13 |
+| [Official source](https://www.irs.gov/pub/irs-pdf/f8832.pdf) | Read for page6 EIN retention and repeat-election exceptions | 2026-11-13 |
+
+### Exact source evidence
+
+The following short verbatim fragments support the figures; conditions and effective periods remain in the operative sections.
+
+| Source scope | Exact source fragments | Official source | Read on |
+|---|---|---|---|
+| Read for Affiliation | “80-percent voting and value test” | [IRC 1504](https://uscode.house.gov/us/usc/t26/s1504/) | 2026-11-13 |
+| Read for Tax year | “varying from 52 to 53 weeks” | [IRC 441](https://uscode.house.gov/us/usc/t26/s441/) | 2026-11-13 |
+| Read for Classification timing | “75 days”; “12 months”; “60 months” | [26 CFR 301.7701-3](https://www.ecfr.gov/current/title-26/section-301.7701-3) | 2026-11-13 |
+| Read for Corporate rate | “21 percent” | [IRC 11](https://uscode.house.gov/us/usc/t26/s11/) | 2026-11-13 |
+| Read for DRD tiers | “50 percent”; “100 percent”; “65 percent”; “20-percent owned corporation” | [IRC 243](https://uscode.house.gov/us/usc/t26/s243/) | 2026-11-13 |
+| Read for NOL deduction and carry periods | “80 percent”; “20 taxable years”; “each taxable year following”; “5 taxable years preceding” | [IRC 172](https://uscode.house.gov/us/usc/t26/s172/) | 2026-11-13 |
+| Read for Capital losses | “3 taxable years preceding”; “5 taxable years succeeding” | [IRC 1212](https://uscode.house.gov/us/usc/t26/s1212/) | 2026-11-13 |
+| Read for Interest limitation | “30 percent” | [IRC 163](https://uscode.house.gov/us/usc/t26/s163/) | 2026-11-13 |
+| Read for Domestic research election | “not less than 60 months” | [IRC 174A](https://uscode.house.gov/us/usc/t26/s174A/) | 2026-11-13 |
+| Read for Foreign research | “15-year period”; “midpoint” | [IRC 174](https://uscode.house.gov/us/usc/t26/s174/) | 2026-11-13 |
+| Read for Corporate gifts | “1 percent”; “10 percent”; “5-year carryforward” | [IRC 170](https://uscode.house.gov/us/usc/t26/s170/) | 2026-11-13 |
+| Read for Inflation amounts | “$2,560,000”; “$4,090,000”; “$32,000,000”; “$535” | [Rev. Proc. 2025-32 §§4.24, 4.30, 4.52](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) | 2026-11-13 |
+| Read for Section 250 | “33.34 percent”; “40 percent” | [IRC 250](https://uscode.house.gov/us/usc/t26/s250/) | 2026-11-13 |
+| Read for CAMT | “15 percent” | [IRC 55](https://uscode.house.gov/us/usc/t26/s55/) | 2026-11-13 |
+| Read for CAMT status thresholds | “3-taxable-year period”; “exceeds $1,000,000,000”; “$100,000,000 or more” | [IRC 59](https://uscode.house.gov/us/usc/t26/s59/) | 2026-11-13 |
+| Read for FSNOL limit | “80 percent” | [IRC 56A](https://uscode.house.gov/us/usc/t26/s56A/) | 2026-11-13 |
+| Read for BEAT | “10.5 percent”; “one percentage point”; “$500,000,000”; “3 percent”; “2 percent” | [IRC 59A](https://uscode.house.gov/us/usc/t26/s59A/) | 2026-11-13 |
+| Read for Officer-compensation attachment | “$500,000 or more, and deducts compensation for officers” | [Form 1125-E instructions](https://www.irs.gov/instructions/i1125e) | 2026-11-13 |
+| Read for Small-return exception and e-file | “$250,000”; “10 or more returns” | [Form 1120 instructions](https://www.irs.gov/instructions/i1120) | 2026-11-13 |
+| Read for Schedule M-3 | “$10 million or more”; “less than $50 million” | [Schedule M-3 instructions](https://www.irs.gov/instructions/i1120sm3) | 2026-11-13 |
+| Read for Schedule UTP | “assets that equal or exceed $10 million” | [Schedule UTP instructions](https://www.irs.gov/instructions/i1120utp) | 2026-11-13 |
+| Read for Country-by-country reporting | “$850 million or more” | [Form 8975 instructions](https://www.irs.gov/instructions/i8975) | 2026-11-13 |
+| Read for Annual buyback filing | “first full quarter after the close of your tax year” | [Form 7208 instructions](https://www.irs.gov/instructions/i7208) | 2026-11-13 |
+| Read for Income-tax return deadline | “15th day of April”; “15th day of the fourth month” | [IRC 6072](https://uscode.house.gov/us/usc/t26/s6072/) | 2026-11-13 |
+| Read for Extension | “generally 6 months”; “automatic 7-month extension”; “before January 1, 2026” | [Form 7004 instructions](https://www.irs.gov/instructions/i7004) | 2026-11-13 |
+| Read for Estimated-tax rules | “less than $500”; “25 percent”; “100 percent”; “12 months”; “$1,000,000 or more”; “3 taxable years” | [IRC 6655](https://uscode.house.gov/us/usc/t26/s6655/) | 2026-11-13 |
+| Read for Calendar installments | “April 15”; “June 15”; “September 15”; “December 15” | [IRC 6655(c)(2)](https://uscode.house.gov/us/usc/t26/s6655/) | 2026-11-13 |
+| Read for Annualization periods | “3 months”; “6 months”; “9 months”; “2 months”; “4 months”; “7 months”; “10 months”; “5 months”; “8 months”; “11 months” | [IRC 6655(e)(2)(A), (C)](https://uscode.house.gov/us/usc/t26/s6655/) | 2026-11-13 |
+| Read for Penalties | “5 percent”; “25 percent”; “0.5 percent”; “60 days” | [IRC 6651](https://uscode.house.gov/us/usc/t26/s6651/) | 2026-11-13 |
+| Read for Ordinary qualifying meals | “50 percent” | [IRC 274](https://uscode.house.gov/us/usc/t26/s274/) | 2026-11-13 |
+| Read for NCTI credit and PTEP haircut | “90 percent”; “10 percent” | [IRC 960](https://uscode.house.gov/us/usc/t26/s960/) | 2026-11-13 |
+| Read for QSBS | “3 years”; “50%”; “4 years”; “75%”; “5 years or more”; “100%”; “$15,000,000”; “10 times”; “$75,000,000” | [IRC 1202](https://uscode.house.gov/us/usc/t26/s1202/) | 2026-11-13 |
+
+Not yet confirmed: final 2026 Form 1120 and related annual instruction field layouts. The guide labels known 2025 layout references and provides current 2026 substantive law; verify the final forms before filing. Taxpayer-specific elections, treaties, credits and special-regime eligibility require the actual records.
+
+Refresh the actual return-year forms, inflation amounts, enacted-law effective dates and applicable relief before preparing a filing. Retain the source version, computations, unresolved facts and professional review record with the workpapers.
