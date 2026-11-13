@@ -15,7 +15,7 @@ type: cross-country-method
 
 ## Scope and who this is for
 
-This skill covers the federal limit on state net income taxes in Public Law 86-272, codified at [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm), and how it interacts with state economic nexus rules for income and franchise taxes. It is for accountants deciding whether an out-of-state business must file a state income or franchise tax return.
+This skill covers the federal limit on state net income taxes in Public Law 86-272, codified at [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm), and how it interacts with state economic nexus rules for income and franchise taxes. It is for accountants deciding whether an out-of-state business must file a state income or franchise tax return.
 
 It covers:
 
@@ -43,20 +43,20 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 
 ## The method, step by step
 
-### Step 1: is the tax a net income tax? ([15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm); [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
+### Step 1: is the tax a net income tax? ([15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec383.htm); [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm))
 
 1. P.L. 86-272 applies only to a "net income tax", which the statute defines as "any tax imposed on, or measured by, net income". It binds "any State, or political subdivision thereof", so a city or county net income tax is covered too. It does not stop gross receipts taxes (for example the Ohio CAT, below), sales and use taxes, or a state's fixed minimum tax or filing requirement.
 2. It bars the tax "for any taxable year" in which the only in-state business activities are protected ones. So test each year separately.
 3. It never protects a corporation incorporated in the taxing state, or an individual domiciled in or resident in it (§ 381(b)).
 
-### Step 2: is everything sold into the state tangible personal property? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm); [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf))
+### Step 2: is everything sold into the state tangible personal property? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm); [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf))
 
 4. The protection covers only "the solicitation of orders ... for sales of tangible personal property". Services, intangibles, licences, leases and rentals are outside it.
    - New York: the exemption "does not include the solicitation of orders for the sale of services or intangible property" (20 NYCRR 1-2.10(e)).
    - California: "the leasing, renting, licensing or other disposition of tangible personal property, or transactions involving intangible property ... are not protected activities" (Pub. 1050, Article I).
 5. Selling services into the state as well as goods can end the protection for the whole business in that state. In New York's Example 4, a corporation with $950,000 of protected goods receipts and $100,000 of services receipts "is subject to tax".
 
-### Step 3: are orders sent out of state for approval and filled from outside the state? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
+### Step 3: are orders sent out of state for approval and filled from outside the state? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm))
 
 6. Both conditions must hold: the orders "are sent outside the State for approval or rejection, and, if approved, are filled by shipment or delivery from a point outside the State".
    - Missionary solicitation is also protected. § 381(a)(2) covers soliciting orders "in the name of or for the benefit of a prospective customer" of the seller, for example a manufacturer asking retailers to buy its goods from its wholesaler. This holds only if the customer's own orders to the seller meet the (a)(1) conditions (FTB Pub. 1050, Article IV, Section B, item 7; 20 NYCRR 1-2.10(a)(2)).
@@ -76,7 +76,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 13. California's reading of de minimis: "An activity conducted within a taxing state on a regular or systematic basis or pursuant to a company policy (whether the policy is in writing or not) normally will not be considered trivial" ([FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article III).
 14. **Do not quote any de minimis dollar or percentage safe harbour.** Neither the statute nor Wrigley sets one.
 
-### Step 5: are the people acting in the state employees, representatives or independent contractors? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm))
+### Step 5: are the people acting in the state employees, representatives or independent contractors? ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm))
 
 15. Sales of, or soliciting orders for, tangible personal property by **independent contractors**, and an office they maintain, do not count as the seller's business activities. The office rule applies only where the contractors' activities for the seller in the state "consist solely of making sales, or soliciting orders for sales" of tangible personal property (§ 381(c)). But an "independent contractor" must sell or solicit "for more than one principal" and hold itself out as such (§ 381(d)(1)). A rep working for one principal is a "representative", not an independent contractor.
 16. An independent contractor who does unprotected work for the seller, such as warranty work or accepting returns, ends the protection (FTB Pub. 1050, Article V).
@@ -159,7 +159,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 
 | Situation | Result | Source |
 |---|---|---|
-| Foreign corporation, only activity is reps asking for orders for goods, approved and shipped from outside | Protected from net income tax | [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm) |
+| Foreign corporation, only activity is reps asking for orders for goods, approved and shipped from outside | Protected from net income tax | [15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm) |
 | Corporation incorporated in the taxing state, or an individual resident or domiciled there | Never protected | same, § 381(b) |
 | Any services, SaaS, licences or intangibles sold into the state | Not protected; in NY, $100,000 of services beside $950,000 of goods ended the exemption (Example 4) | [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | Unprotected activity at any time in the year | California: not protected "for the entirety of that year" | [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article VII.D |
@@ -169,7 +169,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 | Rep's home office held out to the public | NY and CA: treated as an office; protection lost | same; [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf) |
 | Employee telecommuting from the state doing non-solicitation work | California: unprotected | [FTB Pub. 1050](https://www.ftb.ca.gov/forms/misc/1050.pdf), Article IV.A item 20 |
 | Sales into foreign countries | California: P.L. 86-272 "does not directly apply to foreign commerce" | same, Article VII.A |
-| Gross receipts tax (e.g. Ohio CAT) | Not a net income tax; P.L. 86-272 does not apply | [15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm) |
+| Gross receipts tax (e.g. Ohio CAT) | Not a net income tax; P.L. 86-272 does not apply | [15 U.S.C. § 383](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec383.htm) |
 | Protected but registered or with nexus in NJ | NJ minimum tax and return still due | [NJ TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf) |
 
 ## Worked cases
@@ -273,7 +273,7 @@ expected:
 - **California:** a protected business may still be doing business in California and liable for filing and paying the applicable amounts. **Check the return and minimum tax with the FTB.**
 - **Penalties and interest** for late or missed returns are set by each state. Where nexus existed in earlier open years, quantify tax, interest and penalties year by year before choosing between voluntary disclosure and filing.
 
-## Completion checklist ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm); [Wrigley](https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf))
+## Completion checklist ([15 U.S.C. § 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm); [Wrigley](https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf))
 
 - [ ] Year-by-year list of every in-state activity, including website and app features and marketplace stock.
 - [ ] Each tax confirmed as a net income tax, or not.
@@ -291,8 +291,8 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| 15 U.S.C. 381 (govinfo). Read for the solicitation-of-orders limit, (b) the domestic corporation and resident exclusions, and (d) independent contractors. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm | 2026-11-13 |
-| 15 U.S.C. 383 (govinfo). Read for "net income tax" as the only tax limited. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec383.htm | 2026-11-13 |
+| 15 U.S.C. 381 (govinfo). Read for the solicitation-of-orders limit, (b) the domestic corporation and resident exclusions, and (d) independent contractors. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm | 2026-11-13 |
+| 15 U.S.C. 383 (govinfo). Read for "net income tax" as the only tax limited. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec383.htm | 2026-11-13 |
 | Wisconsin Department of Revenue v. William Wrigley, Jr., Co., 505 U.S. 214 (1992), U.S. Reports (Library of Congress). Read for "entirely ancillary" and the de minimis standard. | https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf | 2026-11-13 |
 | FTB, Doing business in California (also read by `ca-llc-fee-and-tax`). Read for the 2025 amounts $757,070 and $75,707 and that no 2026 row is posted. | https://www.ftb.ca.gov/file/business/doing-business-in-california.html | 2026-11-13 |
 | Cal. R&TC 23101. Read for the "lesser of" test and indexing. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101 | 2026-10-16 |

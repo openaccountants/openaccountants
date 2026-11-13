@@ -50,7 +50,7 @@ The Washington and Pennsylvania rows match the separate Washington and Pennsylva
 ## Background
 
 - **Wayfair.** In *South Dakota v. Wayfair* (2018) the Supreme Court overruled the physical-presence rule of *Quill*. It upheld a law covering sellers that "deliver more than $100,000 of goods or services into the State or engage in 200 or more separate transactions" ([Wayfair opinion](https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf)). Every state with a sales tax now has an economic nexus rule, but most have since changed the details. Many have dropped the 200-transaction test.
-- **P.L. 86-272 does not protect you from sales tax.** It limits state **income** taxes where your only in-state activity is "the solicitation of orders" for tangible personal property filled from outside the state ([15 U.S.C. 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm)). It says nothing about sales tax collection.
+- **P.L. 86-272 does not protect you from sales tax.** It limits state **income** taxes where your only in-state activity is "the solicitation of orders" for tangible personal property filled from outside the state ([15 U.S.C. 381](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm)). It says nothing about sales tax collection.
 
 ## State threshold table for 2026
 
@@ -257,7 +257,7 @@ For other states, read the start rule on the row's source. Filing frequencies an
 | Arkansas Act 822 of 2019, section 19 (via `ar-sales-tax`). Read for exceeding $100,000 or exceeding 200 transactions. | https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2019R%2FPublic%2FACT822.pdf | 2026-11-13 |
 | ARSSTC threshold notice (via `ak-sales-tax`). Read for the $100,000 statewide test and the end of the 200-transaction test. | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf | 2026-11-13 |
 | South Dakota v. Wayfair, 585 U.S. 162 (2018), slip opinion. Read for the upheld $100,000 or 200 transactions law. | https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf | 2026-11-13 |
-| 15 U.S.C. 381 (govinfo). Read for the income tax limit on solicitation of orders. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-sec381.htm | 2026-11-13 |
+| 15 U.S.C. 381 (govinfo). Read for the income tax limit on solicitation of orders. | https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap10B-subchapI-sec381.htm | 2026-11-13 |
 
 Not yet confirmed: Rhode Island's current economic nexus test; the marketplace facilitator start dates marked check (Arizona, Colorado, Idaho, Illinois, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts, Michigan, Missouri, North Carolina, North Dakota, Oklahoma, South Carolina, Texas, Utah, Virginia, Washington, Wisconsin, Wyoming); exactly-at-threshold wording in Colorado, Iowa, Missouri, Pennsylvania, Tennessee and Texas and the transaction count wording in Nevada; Oklahoma's current small-seller wording.
 
