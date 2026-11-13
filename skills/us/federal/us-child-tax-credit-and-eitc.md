@@ -28,7 +28,7 @@ Out of scope, and where it goes:
 | Topic | Skill |
 | --- | --- |
 | A nonresident alien's return, including the limited child tax credit for residents of Canada, Mexico, India, and South Korea | `us-form-1040-nr-nonresident-return` |
-| The foreign earned income exclusion, which blocks the additional child tax credit and the earned income credit | `us-feie-ftc` |
+| The foreign earned income exclusion, which blocks the additional child tax credit and the earned income credit | `us-foreign-earned-income-2555` |
 | The rest of Form 1040 | `us-federal-income-tax-return-1040` |
 
 ## Ask the client first
@@ -168,7 +168,7 @@ expected:
 | --- | --- | --- |
 | R-CTC-TIE | Two taxpayers could claim the same child | Apply section 152(c)(4) before either credit |
 | R-CTC-NR | The client was a nonresident alien for any part of 2026 and did not elect resident treatment | Earned income credit is off. Child tax credit limits for nonresidents are in `us-form-1040-nr-nonresident-return` |
-| R-CTC-911 | The client claims the foreign earned income exclusion | No additional child tax credit and no earned income credit. See `us-feie-ftc` |
+| R-CTC-911 | The client claims the foreign earned income exclusion | No additional child tax credit and no earned income credit. See `us-foreign-earned-income-2555` |
 | R-CTC-PRIOR | The credit was denied in a deficiency proceeding, or a fraud or reckless finding is in the disallowance window | Do not compute a current credit until eligibility is re-established |
 | R-EITC-TABLE | The client needs the IRS dollar table rather than the formula | The 2026 Form 1040 instructions' table was not published when this skill was written. The formula above is the statute |
 

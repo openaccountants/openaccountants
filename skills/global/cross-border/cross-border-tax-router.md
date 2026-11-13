@@ -50,7 +50,7 @@ Why a router exists. Within one country the rules fit together. Across borders t
 
 | Basis a country may tax on | Typical trigger | Where to route |
 | --- | --- | --- |
-| Citizenship (worldwide, wherever the person lives) | Being a citizen of that country (a passport is not the test) | The United States: `us-citizen-moving-abroad-tax`, `us-feie-ftc` |
+| Citizenship (worldwide, wherever the person lives) | Being a citizen of that country (a passport is not the test) | The United States: `us-citizen-moving-abroad-tax`, `us-foreign-earned-income-2555` |
 | Tax residence (worldwide while resident) | Days present, a home, ties, centre of interests, each under that country's own test | `us-tax-residency`, `uk-statutory-residence-test`, `ca-tax-residency`, `in-tax-residency`, `sg-tax-residency`, `za-tax-residency`, `nz-tax-residency`, `au-tax-residency-2`, `ae-tax-residency` |
 | Domicile or a special regime for newcomers | Domicile, or a time-limited regime for new arrivals | `mt-non-dom`, `ie-non-dom`, `cy-non-dom`; for the UK from 6 April 2025, `uk-non-dom` |
 | Source (that country's income only) | Income arising there, property there, a business presence there | The country Guide for the source country; `us-nonresident-cgt`; `permanent-establishment-risk` |
@@ -77,7 +77,7 @@ Do not go past Step 0 until citizenship, current residence in each country, and 
 
 | Signal in the facts | Topic Skill |
 | --- | --- |
-| US citizen or green card holder living or working abroad; foreign salary; foreign taxes paid | `us-feie-ftc`, then `us-foreign-earned-income-2555` or `us-foreign-tax-credit-1116` |
+| US citizen or green card holder living or working abroad; foreign salary; foreign taxes paid | `us-foreign-earned-income-2555` (which also holds the choice between exclusion and credit), then `us-foreign-tax-credit-1116` |
 | US person with foreign bank, brokerage or pension accounts | `us-fbar-fatca-reporting`, `us-fbar-and-fatca-8938` |
 | US person owning a large stake in a foreign company; a foreign company with US owners | `us-cfc-gilti`, `us-form-5471-cfc-information` |
 | US person who is a grantor, owner or beneficiary of a foreign trust; gifts or inheritances from non-US persons | `us-foreign-trust-reporting` |
