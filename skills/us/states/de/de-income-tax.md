@@ -291,15 +291,15 @@ Everyone who is not a resident is a **nonresident** (§ 1104).
 
 | Item | 2026 | 2025 | Source | Official source |
 |---|---|---|--- | --- |
-| Top rate | 6.6% over $60,000 | same | § 1102(a)(14) | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Top rate | 6.6% over $60,000 | same | § 1102(a)(14) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 | Standard deduction (single / joint) | $3,250 / $6,500 | same | § 1108 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Additional standard deduction (65+ or blind) | $2,500 each | same | § 1108(b) | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Personal credit | $110 per exemption, plus $110 for 60+ | same | § 1110 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Pension exclusion, under 60 | $2,000 (US military pension: $12,500) | same | § 1106(b)(3)b | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Pension exclusion, 60+ | $12,500 (domicile condition, see step 5) | $12,500 | § 1106(b)(3)b, f.4 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
-| Bonus depreciation, individuals | 20% (TCJA schedule), not OBBBA 100% | follows federal | HB 255; Technical Information Memorandum 2025-2 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
-| Estimated tax required if tax less credits exceeds | $800 | same | § 1169 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
-| Interest on late payment | 0.5% per month | same | § 533 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Bonus depreciation, individuals | 20% (TCJA schedule), not OBBBA 100% | follows federal | HB 255; Technical Information Memorandum 2025-2 | [State source](https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf) |
+| Estimated tax required if tax less credits exceeds | $800 | same | § 1169 | [State source](https://delcode.delaware.gov/title30/c011/sc08/index.html) |
+| Interest on late payment | 0.5% per month | same | § 533 | [State source](https://delcode.delaware.gov/title30/c005/sc03/index.html) |
 
 
 ### Tax year 2025 returns (2025-2026 filing cycle, historical extension ended 15 October 2026; [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))

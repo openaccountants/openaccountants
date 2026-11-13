@@ -68,9 +68,9 @@ Further sources: [Division: how to calculate](https://corp.delaware.gov/frtaxcal
 | Annual report filing fee, exempt corporation | $25 | No tax | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Estimated payments required if tax is | $5,000 or more | 40% by 1 June, 20% by 1 September, 20% by 1 December, remainder by 1 March | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Late report penalty, corporation | $200 | Plus interest | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| LLC, LP and GP annual tax | $400 | Statutory amount from 1 January 2026 (was $300) | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| Each registered series of an LLC or LP | $100 | From 1 January 2026 (was $75) | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| Late payment penalty, LLC, LP or GP | $200 | $50 for a registered series | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| LLC, LP and GP annual tax | $400 | Statutory amount from 1 January 2026 (was $300) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
+| Each registered series of an LLC or LP | $100 | From 1 January 2026 (was $75) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
+| Late payment penalty, LLC, LP or GP | $200 | $50 for a registered series | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
 | Interest on late tax, all entities | 1.5% per month or part of a month | On tax and penalty | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Electronic payment (ACH debit) required | over $5,000 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 
