@@ -21,7 +21,7 @@ type: computation
 
 ## Scope
 
-Ordinary C corporation with Utah franchise/income-tax liability and a supported Utah taxable-income base. The worked method is for a single corporation with all business income in Utah. Multistate apportionment, unitary groups, financial institutions, insurers, REITs/nonprofits and pass-through entity tax need specialist work. TC-20 is ordinary C corporation return; TC-20S and TC-20MC are separate forms, not automatic substitutions. Federal corporate work belongs to `us-1120-corporation-return-schedule-ordinary-business`; owner individuals to `ut-income-tax`; sales/use to `ut-sales-tax`; employer WH/SUI to `ut-payroll`. Source: [File the Right Corporate Forms and general instructions,2025-2026 filing cycle](https://files.tax.utah.gov/tax/forms/current/tc-20inst.pdf).
+Ordinary C corporation with Utah franchise/income-tax liability and a supported Utah taxable-income base. The worked method is for a single corporation with all business income in Utah. Multistate apportionment, unitary groups, financial institutions, insurers, REITs/nonprofits and pass-through entity tax need specialist work. TC-20 is ordinary C corporation return; TC-20S and TC-20MC are separate forms, not automatic substitutions. Federal corporate work belongs to `us-form-1120-c-corp`; owner individuals to `ut-income-tax`; sales/use to `ut-sales-tax`; employer WH/SUI to `ut-payroll`. Source: [File the Right Corporate Forms and general instructions,2025-2026 filing cycle](https://files.tax.utah.gov/tax/forms/current/tc-20inst.pdf).
 
 ## Ask the client first
 
