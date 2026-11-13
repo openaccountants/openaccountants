@@ -7,7 +7,7 @@ Written by Codex. Not reviewed by an accountant. Source-cited drafts; accountant
 | Individual wage income tax | `ri-income-tax` | Ordinary full-year resident wages and sole-proprietor flow-through, fetched 2026 brackets/deductions/exemptions and phase-out. Partial: final 2026 forms, retirement/credits and HR1 conformity not confirmed. |
 | Sales and use tax | `ri-sales-tax` | Ordinary 7% retail/use, excess-only clothing exemption and 2026 meals/lodging changes. Partial: current remote-nexus measurement, many service classifications and special filing details not confirmed. |
 | Corporate/entity minimum tax | `ri-corporate-tax` | Ordinary 7% C corporation and USD 400 minimum plus entity classification/return path, dated 2026 notice. Partial: final 2026 apportionment/HR1/combined/PTE schedules not confirmed. |
-| Payroll withholding and SUI | `ri-payroll` | Both jobs owned here, with final 2026 UI/JDF/TDI values and TX-17 method. Partial: posted 2026 withholding booklet is watermarked DRAFT; final replacement and complete UI due-date calendar not confirmed. |
+| Payroll withholding and SUI | `ri-payroll` | Both jobs owned here, with final 2026 withholding method, UI/JDF/TDI values, TX-17 and active quarterly due-date rule. Partial for special coverage, UI Saturday relief and annual bulk filing specifications. |
 
 ## Files
 
