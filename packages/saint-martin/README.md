@@ -11,6 +11,7 @@
 4. `mf-business-licence-and-patente-filing.md`
 5. `mf-company-tax-rates-and-returns.md`
 6. `mf-tgca-scope-and-compliance.md`
+7. `workflow-base.md`
 
 ## How to use
 

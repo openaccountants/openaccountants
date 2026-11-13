@@ -19,10 +19,13 @@
 12. `hu-vat-return.md`
 13. `hungary-einvoice.md`
 14. `hungary-vat-return.md`
-15. `eu-vat-directive.md`
-16. `einvoice-workflow-base.md`
-17. `payroll-workflow-base.md`
-18. `transfer-pricing-workflow-base.md`
+15. `eu-vat-base.md`
+16. `eu-vat-directive.md`
+17. `einvoice-workflow-base.md`
+18. `payroll-workflow-base.md`
+19. `transfer-pricing-workflow-base.md`
+20. `workflow-base.md`
+21. `vat-workflow-base.md`
 
 ## Also known as
 

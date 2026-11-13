@@ -91,7 +91,9 @@ def load_frontmatter(block: str) -> dict[str, Any]:
 
     try:
         metadata = yaml.load(block, Loader=_UniqueKeyLoader)
-    except yaml.YAMLError as exc:
+    except (yaml.YAMLError, ValueError) as exc:
+        # PyYAML's timestamp constructor raises ValueError for an impossible
+        # bare ISO date, bypassing its normal YAMLError hierarchy.
         raise FrontmatterError(_problem_text(exc)) from exc
 
     if not isinstance(metadata, dict):

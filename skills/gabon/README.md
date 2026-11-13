@@ -3,7 +3,7 @@ jurisdiction: GA
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: ga-income-tax
+  IT-IND: gabon-income-tax
   IT-CORP: ga-corporate-income-tax
   VAT: ga-vat-gst
   SC: ga-payroll-social
@@ -26,7 +26,7 @@ Eight source-ledger research drafts for 2026. The historical DGI-hosted CGI2025 
 
 | Domain | Guide | Status |
 |---|---|---|
-| Individual income tax | [Individual income tax](ga-income-tax.md) | Research draft, partial |
+| Individual income tax | [Individual income tax](gabon-income-tax.md) | Research draft, partial |
 | Company tax | [Corporate income tax](ga-corporate-income-tax.md) | Research draft, partial |
 | VAT and CSS | [VAT](ga-vat-gst.md) | Research draft, partial |
 | Social contributions | [Payroll and social](ga-payroll-social.md) | Research draft, partial |

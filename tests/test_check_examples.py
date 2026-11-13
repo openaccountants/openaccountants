@@ -1,10 +1,14 @@
 """scripts/check-examples.py recomputes oa-check blocks and fails on a wrong expected value."""
 
 import importlib.util
+import contextlib
+import io
 import os
 import tempfile
 import unittest
 from decimal import Decimal
+from pathlib import Path
+from unittest.mock import patch
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 spec = importlib.util.spec_from_file_location("check_examples", os.path.join(REPO_ROOT, "scripts", "check-examples.py"))
@@ -73,6 +77,41 @@ class CheckExamplesTest(unittest.TestCase):
         _found, failures = ce.check_file(self._write(text))
         self.assertEqual(len(failures), 1)
         self.assertIn("unknown name 'bandX'", failures[0])
+
+    def test_generated_copies_do_not_repeat_source_admission(self):
+        text = "---\nname: fictional-only\ntype: computation\n---\nFictional inherited text.\n"
+        with tempfile.TemporaryDirectory() as temp, patch.object(ce, "REPO_ROOT", temp):
+            for rel in ("packages/_supplemental/fictional.md", "agent-skills/fictional/SKILL.md",
+                        "plugins/openaccountants/skills/fictional/SKILL.md"):
+                with self.subTest(rel=rel):
+                    path = Path(temp) / rel
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(text)
+                    with contextlib.redirect_stdout(io.StringIO()):
+                        self.assertEqual(ce.main([str(path), "--require"]), 0)
+
+    def test_authored_source_and_federal_source_still_require_examples(self):
+        text = "---\nname: fictional-only\ntype: computation\n---\nFictional new text.\n"
+        with tempfile.TemporaryDirectory() as temp, patch.object(ce, "REPO_ROOT", temp):
+            for rel in ("skills/global/financial-reporting/fictional.md", "packages/us-federal/fictional.md"):
+                with self.subTest(rel=rel):
+                    path = Path(temp) / rel
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(text)
+                    output = io.StringIO()
+                    with contextlib.redirect_stdout(output):
+                        self.assertEqual(ce.main([str(path), "--require"]), 1)
+                    self.assertIn("need 2", output.getvalue())
+
+    def test_wrong_calculation_in_generated_copy_still_fails(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(ce, "REPO_ROOT", temp):
+            path = Path(temp) / "packages/_supplemental/fictional.md"
+            path.parent.mkdir(parents=True)
+            path.write_text(GOOD.replace("9235.00", "9000.00"))
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                self.assertEqual(ce.main([str(path), "--require"]), 1)
+            self.assertIn("expected 9000.00 got 9235.00", output.getvalue())
 
 
 if __name__ == "__main__":

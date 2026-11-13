@@ -15,7 +15,7 @@
 #  2. Claude never holds a token that can write, and never has a shell. The
 #     two jobs that run Claude (review, fix) get contents: read and
 #     pull-requests: read only, and no Bash tool at all. Posting the comment,
-#     labels, commits and the re-review dispatch happen in separate jobs that
+#     labels and commits happen in separate jobs that
 #     run no AI and only plain shell written here.
 #  3. Claude's tools are an allow-list. Reviewer: Read inside the main checkout
 #     and the staged PR folder, and WebFetch (official sources). Fixer: the
@@ -68,13 +68,13 @@ on:
 # Nothing by default. Each job asks for exactly what it needs.
 permissions: {}
 
-# One loop per PR. A new push cancels the review in flight (it is stale). A
-# dispatched re-review (from push-fix, or by hand) waits for the current run
-# instead, so it never cancels the fix that started it. Every comment, /review
+# One loop per PR. Queue the next review so a normal synchronize event from the
+# final fix push cannot cancel its own writer before it records the result.
+# The gate re-reads the current head when it starts. Every comment, /review
 # included, gets its own group (the run id), so no comment can cancel anything.
 concurrency:
   group: skill-review-${{ github.event.pull_request.number || github.event.inputs.pr || github.run_id }}
-  cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
+  cancel-in-progress: false
 
 env:
   DAILY_CAP: "25" # review and fix jobs per UTC day, from automatic (pull_request_target) runs
@@ -126,6 +126,7 @@ jobs:
           out() { echo "$1=$2" >> "$GITHUB_OUTPUT"; }
           skip() {
             echo "Skipping: $1"
+            { echo "### AI review: SKIPPED"; echo; printf 'Reason: %s\n' "$1"; } >> "$GITHUB_STEP_SUMMARY"
             out run false
             if [ -n "${2:-}" ]; then
               { echo "notice<<EOF_NOTICE"; echo "$2"; echo "EOF_NOTICE"; } >> "$GITHUB_OUTPUT"
@@ -347,6 +348,7 @@ jobs:
             .claude
             docs
             library
+            mcp
             scripts
             skills
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
@@ -378,7 +380,7 @@ jobs:
           # tree/ = main's skills, library, docs and scripts, with the PR's
           # files laid over it. base/ = main's version of every file the PR
           # touches. Both are plain files, read only as data.
-          cp -R skills library docs scripts "$D/tree/"
+          cp -R skills library docs scripts mcp "$D/tree/"
           SAFE='^(skills|library)/[A-Za-z0-9._/+-]+$'
           : > "$D/changed.txt"
           keep_base() { if [ -f "$1" ]; then mkdir -p "$D/base/$(dirname "$1")"; cp "$1" "$D/base/$1"; fi; }
@@ -422,12 +424,15 @@ jobs:
           set -uo pipefail
           D="$RUNNER_TEMP/oa-review"
           cd "$D/tree"
+          # -E ignores Python environment overrides and -s excludes user packages.
+          # Unlike -I, these retain the trusted scripts/ import path. The staged
+          # mcp/ policy modules also come from main, never from PR code.
           while read -r p; do
             case "$p" in
               skills/*.md)
                 echo "### $p"
-                python3 -I scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"
-                python3 -I scripts/check-examples.py --require "$p" || echo "(check-examples exit $? : findings above)"
+                python3 -E -s scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"
+                python3 -E -s scripts/check-examples.py --require "$p" || echo "(check-examples exit $? : findings above)"
                 ;;
             esac
           done < "$D/changed.txt" > "$D/checks.txt" 2>&1
@@ -436,14 +441,23 @@ jobs:
           while read -r p; do
             case "$p" in
               skills/*.md)
-                if [ -f "$p" ]; then echo "### $p (main)"; python3 -I scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"; fi
+                if [ -f "$p" ]; then echo "### $p (main)"; python3 -E -s scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"; fi
                 ;;
             esac
           done < "$D/changed.txt" > "$D/checks-main.txt" 2>&1
           echo "Mechanical checks written ($(wc -l < "$D/checks.txt") lines for the PR)"
+      - name: Save mechanical check evidence
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: skill-review-checks-${{ needs.gate.outputs.pr }}-${{ needs.gate.outputs.head_sha }}
+          path: |
+            ${{ runner.temp }}/oa-review/checks.txt
+            ${{ runner.temp }}/oa-review/checks-main.txt
+          if-no-files-found: error
+          retention-days: 14
       - name: Review
         id: claude
-        uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1.0.268
+        uses: anthropics/claude-code-action@4fa93a88de49bbef68b10eb15aabedf28ca0e1ed # v1.0.271
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ github.token }}
@@ -565,6 +579,7 @@ jobs:
             echo "<sub>Reviewed head: \`$HEAD_SHA\`</sub>"
           } > comment.md
           gh api -X POST "repos/$REPO/issues/$PR/comments" -F body=@comment.md >/dev/null
+          { echo "### AI review: $verdict"; echo; printf 'Reviewed commit: `%s`\n' "$HEAD_SHA"; } >> "$GITHUB_STEP_SUMMARY"
           echo "fix=$fix" >> "$GITHUB_OUTPUT"
           echo "round=$next_round" >> "$GITHUB_OUTPUT"
 
@@ -703,7 +718,7 @@ jobs:
           date -u +%F > "$D/today.txt"
       - name: Fix
         id: claude
-        uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1.0.268
+        uses: anthropics/claude-code-action@4fa93a88de49bbef68b10eb15aabedf28ca0e1ed # v1.0.271
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ github.token }}
@@ -749,19 +764,17 @@ jobs:
           path: ${{ runner.temp }}/fix.patch
           retention-days: 7
 
-  # Check the patch and commit it. No AI. The only job with contents: write.
+  # Check the patch and commit it. No AI; the scoped writer reaches its final step only.
   push-fix:
     name: push-fix
     needs: [gate, publish, fix]
     # Also when the fixer failed: report it instead of leaving the round open.
     if: ${{ !cancelled() && needs.publish.outputs.fix == 'true' && (needs.fix.result == 'success' || needs.fix.result == 'failure') }}
     runs-on: ubuntu-24.04
+    environment: production # main-only credential used solely by the final shell step
     timeout-minutes: 15
     permissions:
-      contents: write # create the fix commit and branch ref
-      pull-requests: write # comment; open the fixes PR for a fork
-      issues: write # labels
-      actions: write # dispatch the re-review (a GITHUB_TOKEN push triggers no workflow)
+      contents: read
     steps:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
@@ -773,9 +786,12 @@ jobs:
         with:
           name: fix-patch
           path: ${{ runner.temp }}/fix
-      - name: Check the patch, commit, push and re-review
+      - name: Check the patch and publish a normally validated fix
         env:
-          GH_TOKEN: ${{ github.token }}
+          # Reuse the repository-scoped writer used by derived-file PRs. Its
+          # push starts normal required checks; GITHUB_TOKEN does not do that
+          # reliably without an extra approval. No model receives this token.
+          GH_TOKEN: ${{ secrets.DERIVED_BUILD_TOKEN }}
           REPO: ${{ github.repository }}
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           PR: ${{ needs.gate.outputs.pr }}
@@ -786,6 +802,10 @@ jobs:
           RESULT: ${{ needs.fix.outputs.result }}
         run: |
           set -euo pipefail
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::DERIVED_BUILD_TOKEN is missing; no fix will be published without normal CI."
+            exit 1
+          fi
           PATCH="$RUNNER_TEMP/fix/fix.patch"
           refuse() {
             printf 'Automatic fix (round %s) not committed: %s\n\nOver to Michael.\n' "$ROUND" "$1" > "$RUNNER_TEMP/refuse.md"
@@ -1027,7 +1047,7 @@ jobs:
             gh api -X PATCH "repos/$REPO/git/refs/heads/$HEAD_REF" -f sha="$sha" -F force=false >/dev/null \
               || refuse "the branch moved; nothing was overwritten."
             target="$PR"
-            { echo "Automatic fix round $ROUND committed as $sha:"; echo; cat list.md; echo; echo "The PR is being reviewed again. CI does not start on a bot commit: close and reopen the PR to run it."; } > done.md
+            { echo "Automatic fix round $ROUND committed as $sha:"; echo; cat list.md; echo; echo "Fresh required checks and a review are triggered for this commit. Wait for their results before merging."; } > done.md
             gh api -X POST "repos/$REPO/issues/$PR/comments" -F body=@done.md >/dev/null
           else
             # Fork PR: never push to the fork, and never bring a fork commit into
@@ -1123,7 +1143,5 @@ jobs:
             fi
           fi
 
-          # A GITHUB_TOKEN commit starts no workflow, so ask for the re-review.
-          if [ -n "$target" ]; then
-            gh workflow run skill-review.yml --repo "$REPO" --ref "$DEFAULT_BRANCH" -f pr="$target"
-          fi
+          # The scoped writer's push/PR event starts both required validation and
+          # the next review. No second dispatch that could duplicate the review.

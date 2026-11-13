@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "BH"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Mehran Habib"
 ---
 
 # Bahrain VAT

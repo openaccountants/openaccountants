@@ -1,460 +1,319 @@
 ---
 name: br-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing their Brazil tax returns AND mentions freelancing, self-employment, autônomo, MEI, microempreendedor individual, or Simples Nacional. Trigger on phrases like "help me do my taxes", "prepare my IRPF", "I'm a freelancer in Brazil", "I'm MEI", "I'm autônomo", "do my taxes as a contractor", "prepare my declaração de ajuste anual", or any similar phrasing where the user is a Brazil-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Brazil self-employed tax workflow -- every other skill in the stack (br-irpf, br-simples, br-inss, br-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Brazil full-year residents only; self-employed individuals, MEI, and Simples Nacional sole proprietors.
-version: 1.0
+description: >
+  Prepare a documented intake and handoff for Brazilian self-employed tax work
+  covering calendar year 2026, with a separate historical-year path. Trigger on
+  preparing IRPF, freelancer, autônomo, MEI, Simples Nacional, missing tax documents
+  or assembling a self-employed return package. Read existing records first,
+  extract uploaded evidence, reconcile payer and taxpayer identities, then ask
+  only for facts still missing. Covers mixed employment, business receipts,
+  contributions, deductions, assets, debts and invoice reform routing. Produces
+  a structured package for br-return-assembly without inventing tax paid or
+  treating bank deposits as income. Tax computations stay with their owning
+  Guides. Residence changes, other company regimes and special activities receive
+  component referrals while supported preparation continues. This is an intake
+  method, not permission to file, pay or make an election.
+version: 1.2
 jurisdiction: BR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-11
 category: orchestrator
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: router
 tier: 2
-domain: income-tax
+domain: tax
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# BR Freelance Intake
+# Brazil freelance intake v1.2
 
-## O que é este arquivo
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-O orquestrador de intake para autônomos residentes no Brasil. Toda skill de conteúdo brasileiro downstream (`br-irpf`, `br-simples-nacional`, `br-inss`, `br-iss`, `brazil-einvoice`) e o orquestrador de montagem (`br-return-assembly`) depende desta skill rodar primeiro para produzir um pacote de intake estruturado.
+## Scope
 
-Esta skill não calcula nenhum valor fiscal. Sua função é coletar todos os fatos, processar todos os documentos, confirmar tudo com o usuário e entregar um pacote de intake limpo para `br-return-assembly`.
+Use this preparation workflow when the task is to collect and organise facts for a Brazilian self-employed return package. It covers PF/autônomo, MEI and Simples small-business owners, including employment alongside their business. It is not a prerequisite for answering an unrelated Brazil tax or invoice question. A structured existing record can replace a fresh intake.
 
-## Princípios de design
+The current coverage year is calendar 2026. Record filing exercise separately: a historical calendar 2025 return belongs to exercise 2026; calendar 2026 annual adjustment belongs to exercise 2027. Do not apply the published exercise 2026 software or calendar to an unissued exercise 2027 filing procedure. The official 2026 questions document explicitly identifies calendar 2025. [RFB IRPF 2026 questions, cover](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
 
-A v1.1 segue o padrão upload-first, inferir-depois-confirmar:
+Tax amounts, eligibility limits, rates, deadlines, deductible amounts and software fields are owned by the linked tax Guides below. This router collects their inputs and preserves unresolved ordinary subtopics as partial components. It does not calculate a complete IRPF return, resolve every municipal rule, or certify a particular contribution plan.
 
-1. **Varredura compacta de recusas** usando `ask_user_input_v0` — 3 perguntas interativas, ~30 segundos.
-2. **Fluxo upload-first** — após a verificação de recusas, o usuário envia tudo que tem.
-3. **Pass de inferência** — Claude processa cada documento e extrai o máximo possível.
-4. **Apenas preenchimento de lacunas** — Claude pergunta ao usuário SOMENTE sobre o que está faltando, é ambíguo, ou precisa de confirmação.
-5. **Passagem única de confirmação** no final — mostra o quadro completo, deixa o usuário corrigir o que estiver errado, faz handoff para skills downstream.
+## Ask the client first
 
-Meta: intake completo em 5 minutos para um usuário preparado, 15 minutos para um usuário que precisa buscar documentos.
+Read the whole existing client record, timeline, notes, drafts and available correspondence before asking. Reconcile conflicting documents and identify their source. Ask only for missing facts from these six groups, using available tools or concise grouped questions rather than requiring a particular tool name:
 
-## Princípios operacionais críticos
+1. Calendar year/exercise, tax residence and changes, owner/entity, municipality/UF and work requested.
+2. Actual activity, CNPJ/start date, registration and option/election history, other businesses, employees and concurrent employment.
+3. Receipts by payer and CPF/CNPJ owner, foreign/crypto/other income, gross versus net, dates and withholding evidence.
+4. Business expenses, mixed use, contribution category/payments and personal deduction facts, including dependants and family/property arrangements.
+5. Opening and closing assets/debts, acquisitions/disposals, owner withdrawals/profit distributions and prior returns/payments/notices.
+6. Documents available, missing evidence, invoice model/technical history and any actual election or filing already made.
 
-**Não narre o fluxo de trabalho.** Não diga "Fase 1," "Fase 2," "Agora vou perguntar sobre deduções." Apenas faça o trabalho.
+## The method, step by step
 
-**Não faça perguntas que já foram respondidas.** Se a verificação de recusas estabeleceu que o usuário é MEI, não pergunte depois sobre tipo de negócio. Rastreie o que já é conhecido.
+### Read existing records, then obtain documents
 
-**Não pergunte sobre coisas visíveis em documentos enviados.** Se o extrato bancário mostra pagamentos mensais de DAS, não pergunte "você pagou o DAS". Confirme o que você vê, não pergunte de novo.
+Start with a short explanation that the work will produce a documented draft for professional review. Do the preparation already authorised; do not ask whether to begin each routine stage. Do not promise a fixed completion time or number of user turns.
 
-**Use `ask_user_input_v0` para qualquer pergunta de múltipla escolha.** Entrada de texto é apenas para dados genuinamente abertos (nomes, endereços, valores específicos quando não puderem ser inferidos).
+Use documents already supplied before requesting more. For an existing firm client, search the established case record and connected correspondence/document stores within the authorised scope before asking. Ask for originals or usable exports in one grouped request. Partial uploads are enough to begin extracting and reconciling supported pieces; identify the exact remaining items later. Do not ask a client to research tax law.
 
-**Prefira agrupar.** Faça 3 perguntas relacionadas em uma única mensagem quando não dependerem das respostas umas das outras.
+| Evidence group | Documents and facts to preserve |
+|---|---|
+| Identity and regime | Existing identity/residence facts, CNPJ registration, commencement/closure dates, actual Simples/SIMEI option history, prior declarations and payment history. A registration card alone is not proof of every tax election |
+| Bank and payment accounts | PDF/CSV statements for relevant PF/PJ accounts, card/payment-platform settlements, cash records and foreign-currency records; preserve account owner and dates |
+| Sales and service evidence | Issued/received invoices and original XML, cancellation/correction/authorisation events, contracts, client CPF/CNPJ and payer country; gross amounts, fees, withholding and receipt dates |
+| PF income and monthly tax | Monthly receipt records, Carnê-Leão calculations/exports, DARFs and payment confirmations, corrections and prior unpaid balances |
+| Employment and other income | Employer/payer income statements, withholding/contribution certificates, employment plus side activity, year-end/holiday pay classification, bank/broker statements, exempt/exclusive-source and foreign receipts |
+| Business costs and payroll | Livro-caixa, invoices/receipts, professional purpose, employees/contractors and payroll, rent, supplies, software and telephone/internet evidence; equipment purchases and travel/commuting kept distinct |
+| Social contributions | GPS/DARF/DAS and actual contribution statements, competence month, category/code, payer withholding, pro-labore and concurrent jobs; separate assessment from payment |
+| Personal deductions and family | Dependants' identity/relationship/income, medical and education receipts/reimbursements, PGBL and other pension statements, alimony instrument/payment and applicable marital/property arrangement |
+| Assets, debts and prior year | Prior return, acquisition/disposal contracts, year-end balances, investments, crypto, property, vehicles, loans, security and ownership; distinguish cost, balance and valuation |
+| MEI/Simples | Monthly revenue reports, DAS/DASN-SIMEI/PGDAS-D outputs and payments, activity breakdown, commencement, trailing revenue/payroll, pro-labore, accounts and profit approvals/distributions |
+| Notices and reform | Official correspondence and response dates; invoice model, actual dates, regime/CRT, classifications, supplier/acquisition evidence, CBS/IBS election history and existing integrations |
 
-**Seja conciso mas completo.** Sem hesitação, sem "me avise se tiver dúvidas," sem "espero ter ajudado."
+If the person does not know where records are, suggest bank/broker exports, their previous accountant, existing email documents, the official tax account and contribution records. Do not request passwords or signing keys or fabricate portal menu steps. Explain which missing record matters and continue independent preparation while it is obtained.
 
-**Exceção para decisões bloqueantes.** Se uma única pergunta determinar se o usuário está dentro ou fora do escopo, faça-a isoladamente.
+### Extract facts without inventing tax classifications
 
-## Seção 1 — A abertura
+For every document record evidence ID, filename/source, owner, covered dates, extraction location and reliability. Preserve originals separately from edited extracts. Distinguish **documented**, **inferred**, **client-confirmed**, **assumed**, **missing** and **disputed**. Confirmation is not proof a payment reached the authority; keep both evidence types.
 
-Quando acionada, responda com UMA mensagem que:
+Bank patterns support investigation, not automatic tax assessment. Repeated credits with a customer name are candidate receipts. Match them to invoices/contracts and payer records. Identify transfers between the person's own accounts, loans, capital introductions, refunds and reversals. For card/platform settlements, bridge gross sales, fees, withholding and net deposits. Match both legs of PF/PJ transfers and distinguish pro-labore, loans, reimbursements, capital and distributions. Unknown credits remain unclassified, not zero and not automatically taxable.
 
-1. Saudação em uma linha (sem parágrafo de definição de expectativas)
-2. Resumo em uma linha do fluxo (verificação de escopo -> upload -> lacunas -> handoff para montagem da declaração)
-3. Lembrete do revisor em uma linha (deve ser revisado por contador habilitado antes do envio)
-4. Inicie a varredura de recusas imediatamente usando `ask_user_input_v0`
+For each receipt preserve CPF/CNPJ owner, payer type/country, activity, currency, invoice and receipt dates, gross amount, deductions/fees, withholding and bank match. A company's gross revenue is not the owner's individual income. Separate PF receipts from PJ invoices and the amounts the entity actually pays or distributes to the owner. LC 123 treats owner distributions separately, and the 2026 dividend qualification must be applied by the annual tax owner. [LC 123 art 14](https://legis.senado.gov.br/norma/572878/publicacao/34621013), [Lei 15270 amendments to dividend and annual rules](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm).
 
-**Exemplo de primeira mensagem:**
+Do not infer a fixed PF withholding percentage from an invoice to a company. RIR art 685 addresses nonemployee income paid by PJ to PF using progressive tables; art 714's professional-services withholding concerns PJ payments to another PJ. Capture the actual payer certificate and payment date, then let the owner apply the right rule. [RIR 2018 arts 685,714](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm).
 
-> Vamos preparar suas declarações de 2025. Checagem rápida de escopo, depois você envia seus documentos, e eu preencho as lacunas. Tempo estimado: 10 minutos.
->
-> Lembrete: tudo que eu produzir precisa ser revisado e assinado por um contador habilitado antes de protocolar qualquer coisa na Receita Federal. Não sou substituto de revisão profissional.
->
-> Verificação de escopo:
+For costs, extract amounts and purpose before classifying deductions. Necessary documented professional costs, monthly limits and within-year excess treatment require the annual/monthly tax owner. Keep equipment/capital expenditure, commuting/transport and employee costs separate; do not import the old blanket transport allowance or a domestic-employee count rule. RIR arts 68–69 distinguish necessary costs and restrict transport, depreciation and excess treatment. Do not turn a capital purchase into a depreciation deduction without a supported rule. [RIR 2018 arts 68–69](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm), [RFB Q427–434](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
 
-Em seguida chame imediatamente `ask_user_input_v0` com as perguntas de recusa.
+Capture actual mixed professional/private use with allocation evidence, period and method. Do not offer the old home-office percentage bands as legal allowances. Personal deduction receipts, reimbursements, dependants' other returns/income, pension eligibility and alimony facts need their own validation. Store gross expense, claimed allocation and owner-accepted deductible amount separately.
 
-**NÃO faça:**
-- Escrever um parágrafo de boas-vindas
-- Explicar as fases
-- Perguntar "está pronto para começar"
-- Listar quais documentos serão eventualmente necessários
-- Dar disclaimers além da única linha sobre o revisor
+### Choose the owner route from actual facts
 
-## Seção 2 — Varredura de recusas (compacta)
+Check the actual file/Guide and its current coverage before using its output. These are repository slugs, not automatic assertions that every ordinary subtopic in a sibling is complete.
 
-Apresente a varredura de recusas como uma única chamada `ask_user_input_v0` com 3 perguntas, todas de seleção única.
+| Component | Owner and required handoff |
+|---|---|
+| Complete annual individual tax | `br-income-tax`: filing obligation, full income classification, deductions, complete-versus-simplified comparison, annual tax/reductions/minimum-tax/dividend interactions, assets/debts and actual annual procedure |
+| Self-employed PF monthly receipts | `br-estimated-tax`: ordinary monthly computation, payments and annual bridge. Use `br-carn-monthly-income-tax-rental-income` for its actual rental/receipt scope; resolve overlap before invoking two calculations |
+| MEI and Simples | `br-simples-nacional`: actual eligibility/activity, start-year limits, excess consequences, Annex/factor-R inputs, DAS/DASN/PGDAS, owner-profit bridge and dated regular-regime election. Do not assign an Annex solely from profession/CNAE |
+| Contributions and employees | `br-inss`: category, competence, concurrent earnings, withholding and payments; `brazil-payroll` for staff/employer/pro-labore obligations within its verified scope |
+| Municipal/consumption tax | `br-indirect-tax` or `brazil-vat`, according to the pack's designated owner and scope; actual municipality/activity, ISS retention and ordinary/special regime inputs. Avoid a second inconsistent assessment |
+| Invoice issuance and reform fields | `brazil-einvoice`: model, date, UF/municipality, regime/CRT, XML, protocols and technical/deployment history. An invoice question does not need this full intake |
+| Crypto/foreign/other entity | `brazil-crypto-tax`, `brazil-cross-border-tax`, `brazil-corporate-tax` and, when relevant, `brazil-transfer-pricing`; hand off only the affected facts and preserve the resulting annual reconciliation |
+| Final package | `br-return-assembly`: documented intake, reconciliations, owner outputs, unresolved components and authorised actions |
 
-- **As 3 perguntas iniciais** — Q1: "Residência no Brasil em 2025?" Opções: ["Ano inteiro", "Parte do ano (imigrou/emigrou)", "Não morou no Brasil"] Q2: "Tipo de negócio?" Opções: ["MEI (microempreendedor individual)", "Simples Nacional (ME/EPP, não MEI)", "Autônomo / pessoa física (CPF, sem CNPJ)", "Lucro Presumido", "Lucro Real", "Não sei"] Q3: "Situação de emprego em 2025?" Opções: ["Totalmente autônomo (sem empregador)", "CLT + autônomo paralelo", "Apenas CLT (sem renda autônoma)"]
-- **Avaliação Q1** — Q1 = Ano inteiro -> continue. Q1 = Parte do ano -> pare: "Sou configurado apenas para residentes de ano inteiro no Brasil. Residentes parciais têm regras diferentes sobre renda de fonte mundial vs. fonte brasileira na Declaração de Saída Definitiva. Você precisa de um contador especializado em declarações de não-residente." Q1 = Não morou no Brasil -> pare: "Não-residentes têm obrigações de declaração diferentes. Você precisa de um contador que lide com declarações de não-residente e Declaração de Saída Definitiva."
-- **Avaliação Q2** — Q2 = MEI -> continue. Caminho simplificado: DASN-SIMEI declaração anual + IRPF se obrigado. Q2 = Simples Nacional -> continue. Caminho de cálculo do DAS + IRPF declaração de ajuste anual. Q2 = Autônomo / pessoa física -> continue. Caminho carnê-leão mensal + IRPF ajuste anual. Q2 = Lucro Presumido -> pare: "Lucro Presumido envolve IRPJ, CSLL, PIS/COFINS cumulativo com regras corporativas separadas. Você precisa de um contador familiarizado com apuração de Lucro Presumido." Q2 = Lucro Real -> pare: "Lucro Real é o regime tributário mais complexo do Brasil, com escrituração contábil completa, LALUR, e obrigações acessórias extensas. Você precisa de um contador especializado em Lucro Real." Q2 = Não sei -> árvore de decisão de follow-up: "Você tem CNPJ? Se sim, qual o regime tributário no cartão CNPJ (Receita Federal)? - CNPJ com 'MEI' → MEI - CNPJ com 'Simples Nacional' → Simples - CNPJ com 'Lucro Presumido' ou 'Lucro Real' → fora do escopo - Sem CNPJ, recebe como pessoa física → Autônomo/PF"
-- **Avaliação Q3** — Q3 = Totalmente autônomo -> continue. Q3 = CLT + autônomo paralelo -> continue com flag: precisa consolidar rendimentos tributáveis de ambas as fontes no IRPF. Informe de rendimentos do empregador é necessário. Q3 = Apenas CLT -> pare: "Você não tem renda de trabalho autônomo. Este workflow é para autônomos e MEI. Seu empregador cuida da retenção de IRRF. Se você tem outras rendas (aluguel, investimentos), precisa de um contador para sua declaração completa de IRPF."
-- **Segundo lote — MEI** — Q4: "Faturamento MEI em 2025?" Opções: ["Abaixo de R$81.000", "Acima de R$81.000 (excedeu limite MEI)", "Não sei"] Q5: "Teve outras rendas além do MEI em 2025?" Opções: ["Não, só MEI", "Sim, renda CLT", "Sim, aluguel", "Sim, investimentos", "Sim, várias outras fontes"] Q6: "Estado civil?" Opções: ["Solteiro(a)", "Casado(a) (comunhão parcial)", "Casado(a) (comunhão universal)", "Casado(a) (separação total)", "União estável"]
-- **Segundo lote — Simples Nacional** — Q4: "Faturamento Simples Nacional em 2025?" Opções: ["Abaixo de R$360.000 (ME)", "R$360.000 a R$4.800.000 (EPP)", "Acima de R$4.800.000 (excedeu limite do Simples)", "Não sei"] Q5: "Tipo de atividade principal?" Opções: ["Serviços (Anexo III — contabilidade, engenharia, etc.)", "Serviços (Anexo IV — advocacia, limpeza, vigilância)", "Serviços (Anexo V — TI, consultoria, publicidade)", "Comércio (Anexo I)", "Indústria (Anexo II)"] Q6: "Estado civil?" Opções: ["Solteiro(a)", "Casado(a) (comunhão parcial)", "Casado(a) (comunhão universal)", "Casado(a) (separação total)", "União estável"]
-- **Segundo lote — Autônomo/PF** — Q4: "Como você recebe os pagamentos?" Opções: ["Direto de pessoas físicas (PF) — carnê-leão obrigatório", "De empresas (PJ) — IRRF na fonte", "Tanto PF quanto PJ", "Via plataformas (Uber, iFood, 99, etc.)"] Q5: "Você paga INSS?" Opções: ["Sim, contribuinte individual (20% sobre remuneração)", "Sim, plano simplificado (11% sobre salário mínimo)", "Sim, MEI (via DAS)", "Não / não sei"] Q6: "Estado civil?" Opções: ["Solteiro(a)", "Casado(a) (comunhão parcial)", "Casado(a) (comunhão universal)", "Casado(a) (separação total)", "União estável"]
-- **Avaliação Q4 (MEI)** — Abaixo de R$81.000 -> continue. DASN-SIMEI padrão + IRPF se outras rendas ou patrimônio acionarem obrigação. Acima de R$81.000 -> flag: desenquadramento do MEI. Se até R$97.200 (excesso de 20%), pagar DAS complementar sobre o excesso. Se acima de R$97.200, Simples Nacional retroativo a janeiro. T2 para revisor. Não sei -> "Verifique seu faturamento bruto total em 2025. Some todas as notas fiscais emitidas. O limite anual MEI é R$81.000 (ou proporcional se você abriu durante o ano)."
-- **Avaliação Q4 (Simples Nacional)** — Abaixo de R$360.000 -> classificação ME. DAS padrão. R$360.000–R$4.800.000 -> classificação EPP. DAS padrão, sublimite maior pode aplicar para ISS/ICMS. Acima de R$4.800.000 -> pare: "Faturamento acima de R$4,8 milhões exclui do Simples Nacional. Você precisa migrar para Lucro Presumido ou Real. Consulte um contador."
+MEI and Simples eligibility needs actual start date, type of activity and relevant revenue history. MEI cargo and other exceptions cannot use a blanket ordinary limit. Factor-R-sensitive activities require the relevant payroll/revenue history, not just a job title. Annex IV is not a blanket exclusion of ISS from DAS: the employer CPP exception and any separate ISS exceptions must be handled by their owners. [LC 123 arts 3,13 VI/VIII,18,18-A,18-F](https://legis.senado.gov.br/norma/572878/publicacao/34621013).
 
-Tempo total: ~45 segundos se o usuário responder rapidamente.
+Retain all five former reform topics as dated inputs: issued document model; Simples/SIMEI status; any MEI transition; actual reduced/special classification; and supplier/acquisition profile. Add actual election date, evidence, result and effective period. The governing regular-regime option is not established by the old art 21-A label. Use the Simples owner for current option windows and LC 123 art 13 conditions as amended. Invoices and consumption-tax credit decisions then go to their owners. [LC 214, amendments to LC 123 and arts 343–348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-## Seção 2-A — Reforma Tributária 2026: o que perguntar
+Do not presume that 2026 test tax applies to Simples transactions, that buying from a regular supplier creates an automatic credit, or that MEI has no existing invoice duties. Legal duty, elected regime, current technical deployment and tax payment/waiver are separate facts. [LC 214 art 348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm), [official MEI NFS-e guidance](https://www.gov.br/nfse/pt-br/noticias/resolucao-cgsn-no-169-traz-novos-beneficios-ao-mei).
 
-A Emenda Constitucional 132/2023 e a Lei Complementar 214/2025 instituíram o IVA dual brasileiro composto por **CBS** (Contribuição sobre Bens e Serviços, federal, substituindo PIS/COFINS) e **IBS** (Imposto sobre Bens e Serviços, estadual/municipal, substituindo ICMS/ISS). A transição começa em **2026** com testes operacionais, com plena vigência até 2033.
+### Confirm the summary and resolve only consequential gaps
 
-Mesmo que o tax_year deste intake seja **2025**, é necessário coletar informações que impactam o roteamento das skills downstream e a preparação para 2026.
+Show a compact summary of identity/residence/year, activities/regimes, income by owner/payer, expenses/contributions, deductions, assets/debts and outstanding documents. Mask identifiers where full values are unnecessary. State which amounts are documented, which inferred and which missing. Invite correction once; do not re-ask facts already supported in records.
 
-- **Os 5 gates de classificação CBS/IBS** — G1: "Você emite notas fiscais (NF-e, NFS-e, NFC-e) atualmente?" Opções: ["Sim — NF-e (produto)", "Sim — NFS-e (serviço)", "Sim — NFC-e (consumidor final)", "Sim — múltiplos modelos", "Não emito notas fiscais"]. Se SIM -> orientar para `brazil-einvoice` (campos de CBS/IBS obrigatórios a partir de 2026; layouts NF-e versão 4.00 com novos grupos de tributos). G2: "É optante do Simples Nacional?" Opções: ["Sim, Simples ME/EPP", "Sim, MEI", "Não"]. Se SIM (ME/EPP) -> orientar para `br-simples-nacional` (discutir opção do regime híbrido CBS/IBS sob art. 21-A da LC 123/06 introduzido pela LC 214/2025, permitindo que o optante recolha CBS/IBS fora do DAS para preservar crédito do adquirente). Se SIM (MEI) -> MEI continua isento de CBS/IBS conforme art. 18-A §3º LC 123/06; orientar para DAS-MEI no `br-simples-nacional` ou skill MEI específica. G3: "É MEI atualmente?" Opções: ["Sim", "Não", "Em transição (saiu do MEI em 2025)"]. Se SIM -> MEI continua isento de CBS/IBS; orientar para DAS-MEI no `br-simples-nacional` ou skill MEI. Não há mudança operacional em 2026 para o MEI. Se "Em transição" -> flag T2: verificar enquadramento pós-desenquadramento e exposição a CBS/IBS no novo regime. G4: "Sua atividade tem alíquota reduzida ou tratamento diferenciado previsto na LC 214/2025?" Opções: ["Sim — saúde", "Sim — educação", "Sim — alimentos da cesta básica", "Sim — transporte coletivo urbano", "Sim — outros (especificar)", "Não / Não sei", "Atividade comum (alíquota padrão)"]. Se SIM -> flag T2: orientar para `brazil-einvoice` e revisor confirmar alíquota reduzida (60%, 100% ou alíquota zero conforme anexos da LC 214/2025). G5: "Você adquire bens/serviços de fornecedores fora do Simples Nacional (ou seja, contribuintes do regime regular de CBS/IBS)?" Opções: ["Sim, regularmente", "Sim, esporadicamente", "Não", "Não sei"]. Se SIM -> a partir de 2026, o crédito de CBS/IBS sobre aquisições pode ser aproveitado (sistema de não-cumulatividade plena). Orientar para `brazil-einvoice` para captura dos créditos via XML da NF-e/NFS-e.  _(Emenda Constitucional 132/2023; Lei Complementar 214/2025)_
-- **Roteamento resultante dos gates** — Qualquer SIM em G1 → `brazil-einvoice` é skill obrigatória downstream (incluir no pacote). G2 (Simples ME/EPP) com G5 (compra de fornecedores regulares) → flag T2 para o revisor avaliar adesão ao regime híbrido sob art. 21-A LC 123/06. G3 (MEI) → confirmar isenção e excluir `brazil-einvoice` do pacote (a menos que G1 indique emissão de NF-e como produtor rural ou similar). G4 (alíquota reduzida) → revisor obrigatório confirmar enquadramento legal. Adicione os resultados desses gates ao pacote de intake estruturado (Seção 8) sob a chave `reforma_tributaria_2026`.  _(art. 21-A LC 123/06; LC 214/2025)_
+Then ask only unresolved facts that change a calculation, route or filing. A user preference for complete/simplified is not a substitute for the annual owner's lawful comparison. Preserve marital status and applicable property arrangement, dependant identity/relationship/income, mixed-use allocation, alimony basis, home-office facts, asset/debt movements, foreign income and exempt/exclusive receipts. Do not supply default percentages, ages, thresholds or deduction caps here.
 
-## Seção 3 — O envio de documentos
+Build a gap register with item, source searched, reason needed, owner, dependent output and next action. Missing legally decisive facts block the dependent result; they do not stop unrelated work. An unsupported question in an ordinary component remains labelled partial rather than being silently removed from the package.
 
-Assim que a varredura de recusas passar, peça imediatamente o envio dos documentos. Mensagem única. Sem preâmbulo.
+### Structured handoff
 
-Escopo confirmado. Agora envie tudo que você tem de 2025 — tudo de uma vez:
-
-- Extratos bancários de 2025 (conta PF e/ou PJ) — CSV ou PDF
-- Recibos de pagamento / notas fiscais emitidas em 2025
-- Recibos de despesas dedutíveis (livro-caixa)
-- Comprovantes de pagamento do carnê-leão (DARFs código 0190)
-- Informe de rendimentos de pessoa jurídica (se recebeu de empresas)
-- Informe de rendimentos de instituição financeira (bancos, corretoras)
-- Comprovante de INSS recolhido (GPS ou DAS)
-- Declaração de IRPF do ano anterior (2024)
-- Notas fiscais de aquisição de bens (computador, equipamento, veículo)
-- Comprovantes de despesas médicas e educação (para deduções legais)
-- Comprovantes de previdência privada (PGBL)
-- Qualquer correspondência da Receita Federal
-- Qualquer outro documento fiscal que você tenha
-
-Não se preocupe em organizar — eu descubro o que cada arquivo é. Arraste e solte quando estiver pronto.
-
-Escopo confirmado. Envie tudo que você tem de 2025:
-
-- Relatório mensal de faturamento (ou notas fiscais emitidas)
-- Comprovantes de pagamento do DAS mensal
-- Extratos bancários (conta PJ e PF)
-- DASN-SIMEI do ano anterior (se tiver)
-- Informe de rendimentos de outras fontes (emprego CLT, investimentos)
-- Comprovante de despesas médicas e educação
-- Comprovantes de previdência privada (PGBL)
-- Qualquer correspondência da Receita Federal
-
-Depois aguarde. Não faça outras perguntas enquanto espera.
-
-Se o usuário enviar parcialmente e disser "é o que tenho": vá para inferência. Não exija mais. Solicite itens específicos faltantes durante o preenchimento de lacunas.
-
-Se o usuário disser "não sei o que tenho": mude para modo guiado:
-> Verifique estes lugares:
-> - App do banco: baixe extratos de 2025 como PDF ou CSV
-> - Portal e-CAC da Receita Federal: baixe declarações anteriores, informes de rendimentos
-> - Email: pesquise por "nota fiscal", "DARF", "DAS", "informe de rendimentos"
-> - Seu contador do ano passado, se teve um
-> - App da previdência (Meu INSS): extrato de contribuições
-> - Corretora de investimentos: informe de rendimentos
->
-> Volte quando tiver algo para enviar. Trabalho com o que você trouxer.
-
-## Seção 4 — O pass de inferência
-
-Quando os documentos chegarem, processe cada um. Para cada documento, extraia:
-
-- **Extrato bancário** — Total de depósitos (candidato a receita bruta); Entradas recorrentes (pagamentos de clientes com nomes/CPF/CNPJ); Saídas para a Receita Federal (DARFs — carnê-leão código 0190, IRPF código 0211, IRPJ); Saídas para DAS (MEI ou Simples); Pagamentos de INSS (GPS ou via DAS); Pagamentos de ISS (se aplicável); Saídas para fornecedores (despesas operacionais); Compras de equipamento; Transferências entre contas PJ e PF; Despesas médicas (dedução potencial); Despesas com educação (dedução potencial); Contribuições PGBL (previdência privada).
-- **Notas fiscais emitidas** — Nomes/CNPJ de clientes e valores; Códigos de serviço (CNAE / código de serviço municipal); ISS retido ou pago; IRRF retido (1,5% para serviços para PJ); Reconciliação do faturamento total com depósitos bancários; Qualquer nota fiscal de produto (implicações de ICMS/IPI); A partir de 2026: campos de CBS e IBS no XML.
-- **Informes de rendimentos (de empresas)** — Rendimentos tributáveis; IRRF retido na fonte; Contribuição previdenciária retida; 13º salário, férias (se CLT).
-- **Informe de rendimentos de instituição financeira** — Rendimentos de aplicações financeiras (renda fixa, renda variável); IR retido na fonte sobre aplicações; Saldo em conta corrente e poupança em 31/12/2025.
-- **Livro-caixa** — Despesas dedutíveis: aluguel de escritório, material de escritório, conta de telefone/internet (parcela profissional), transporte, despesas com empregados (se autônomo com até 1 empregado doméstico); Receitas mensais; Saldo mensal (receitas menos despesas).
-- **IRPF do ano anterior** — Rendimentos tributáveis do ano anterior; Deduções legais do ano anterior; Imposto devido e pago do ano anterior; Bens e direitos (transportados para o ano seguinte); Dívidas e ônus reais.
-- **Comprovantes de pagamento DAS/GPS** — Pagamentos mensais DAS (MEI: R$75,90 base 2025; Simples: variável por faturamento e anexo); Pagamentos GPS (autônomo: 20% sobre remuneração ou 11% plano simplificado) BRL
-
-Após processar tudo, construa um objeto interno de inferência. Não mostre a inferência crua ainda — transforme em um resumo compacto para o usuário na Seção 5.
-
-## Seção 5 — A confirmação
-
-Após inferência, apresente uma única mensagem-resumo compacta. Use um formato estruturado, rápido de escanear. Convide o usuário a corrigir o que estiver errado.
-
-Aqui está o que extraí dos seus documentos. Confira e me diga o que está errado.
-
-**Identidade**
-- Maria Silva, solteira
-- Residente no Brasil ano inteiro (São Paulo - SP)
-- Autônoma / pessoa física, CPF 123.456.789-00
-- Atividade: consultoria em tecnologia
-
-**Receita (do extrato bancário + notas fiscais)**
-- Rendimentos tributáveis recebidos de PJ: ~R$120.000
-  - TechCorp Ltda: R$72.000 (mensal)
-  - ConsultBR SA: R$36.000 (projetos)
-  - Diversos PF: R$12.000
-- IRRF retido na fonte (PJ): ~R$1.800
-
-**Carnê-leão (rendimentos de PF)**
-- Rendimentos de PF: R$12.000 (R$1.000/mês)
-- Carnê-leão pago (DARFs 0190): R$0 (mensal abaixo da faixa de isenção individual)
-- Verificar: carnê-leão deveria ter sido calculado mensalmente sobre total de rendimentos PF
-
-**Despesas dedutíveis — Livro-caixa**
-- Aluguel de escritório: R$14.400
-- Internet/telefone: R$3.600 (a confirmar — percentual profissional)
-- Software/SaaS: R$4.800
-- Material de escritório: R$1.200
-- Total livro-caixa: ~R$24.000
-
-**INSS**
-- Contribuinte individual (20%): R$1.412,00/mês x 12 = R$16.944 (teto)
-- Verificar: contribuição sobre teto do INSS (R$7.786,02 em 2025 x 20% = R$1.557,20/mês)
-
-**Deduções legais (IRPF)**
-- Despesas médicas: R$8.400 (sem limite)
-- Despesas de educação: R$3.561,50 (limite 2025)
-- PGBL: R$9.600 (verificar limite 12% da renda bruta tributável)
-- Dependentes: nenhum
-
-**Bens e direitos (do IRPF anterior)**
-- Apartamento: R$450.000 (custo de aquisição)
-- Veículo: R$85.000
-- Conta corrente + poupança 31/12/2025: R$42.000
-- Investimentos (CDB, fundos): R$120.000
-
-**Flags já identificados:**
-1. Telefone/internet — precisa do percentual profissional
-2. Carnê-leão sobre rendimentos de PF — verificar se foi calculado e pago mensalmente
-3. PGBL — verificar se não excede 12% da renda bruta tributável
-4. IRRF retido na fonte — confirmar valores com informes de rendimentos oficiais
-5. Livro-caixa não pode exceder a receita (despesas limitadas à receita mensal)
-6. Reforma 2026: NF-e/NFS-e devem incluir campos CBS/IBS a partir de janeiro/2026 — roteamento para `brazil-einvoice` agendado
-
-**Está correto? Responda "ok" ou me diga o que corrigir.**
-
-## Seção 6 — Preenchimento de lacunas
-
-Depois que o usuário confirmar o resumo (ou corrigi-lo), pergunte sobre coisas que não podem ser inferidas dos documentos. Use `ask_user_input_v0` onde possível.
-
-- **Coisas que geralmente não podem ser inferidas** — 1. Modelo de declaração — Completa (deduções legais) vs simplificada (desconto de 20%, limite R$16.754,34 em 2025). 2. Dependentes — Nem sempre é possível identificar dos documentos. 3. Pensão alimentícia — Judicial ou por escritura pública. 4. Home office — Percentual da residência usado profissionalmente para livro-caixa. 5. Percentual de uso pessoal — Telefone, internet, veículo. 6. Atualizações de bens e direitos — Novas aquisições ou vendas em 2025. 7. Dívidas e ônus reais — Dívidas acima de R$5.000 em 31/12/2025. 8. Rendimentos isentos — Poupança, dividendos de PJ (até novas regras), FGTS, seguro-desemprego. 9. Rendimentos do exterior — Se houver renda de fonte estrangeira.
-- **Modelo de declaração** — Chame `ask_user_input_v0` com: P: "Qual modelo de IRPF?" Opções: ["Completa (deduções legais — tenho despesas médicas, educação, PGBL, dependentes)", "Simplificada (desconto de 20%, máx R$16.754,34)", "Calcular ambos e escolher o melhor"]. Se opção 3 -> calcule ambos os modelos e selecione o de menor imposto devido. Marque como T2 para confirmar. BRL
-- **Dependentes** — Chame `ask_user_input_v0` com: P: "Dependentes para IRPF 2025?" Opções: ["Nenhum", "1 dependente", "2 dependentes", "3+ dependentes (informe detalhes)"]. Se houver dependentes -> peça nome, CPF, data de nascimento, parentesco (filho, cônjuge, companheiro, pai/mãe). Dedução: R$2.275,08 por dependente (2025). BRL
-- **Percentuais do livro-caixa** — Chame `ask_user_input_v0` com: P: "Home office — percentual de uso profissional?" Opções: ["100% — escritório dedicado separado da residência", "75-100% — cômodo exclusivo para trabalho", "50-75% — cômodo compartilhado", "Abaixo de 50%", "Sem home office (instalação comercial separada)"]. Marque todos os percentuais de uso particular como T2 — o contador deve confirmar.
-
-## Seção 7 — O handoff final
-
-Quando o preenchimento de lacunas estiver pronto, produza uma mensagem de handoff final e passe para `br-return-assembly`.
-
-- **Árvore de decisão para roteamento** — MEI -> DASN-SIMEI (declaração anual simplificada) + IRPF (se obrigado: outra renda > isenção, bens > R$800.000, rendimentos isentos > R$200.000, etc.). MEI permanece isento de CBS/IBS em 2026. Simples Nacional -> DAS reconciliação + IRPF declaração de ajuste anual (pró-labore como rendimentos tributáveis, distribuição de lucros como isenta). Considerar regime híbrido CBS/IBS sob art. 21-A LC 123/06 se G5 indicar fornecedores regulares. Autônomo/PF -> Carnê-leão reconciliação + IRPF declaração de ajuste anual (deduções de livro-caixa). Qualquer SIM em G1 (emite NF) -> incluir `brazil-einvoice` no pacote downstream para preparação dos campos CBS/IBS de 2026.  _(art. 21-A LC 123/06)_
-
-Intake completo. Seguindo para a montagem das declarações:
-
-Autônoma/PF, solteira, CPF, residente ano inteiro. Rendimentos tributáveis R$120.000, despesas livro-caixa R$24.000, renda líquida estimada ~R$96.000. Emite NFS-e — roteamento para brazil-einvoice incluído para preparação 2026 (CBS/IBS).
-
-Vou preparar o pacote completo:
-1. Reconciliação do carnê-leão mensal (DARFs código 0190)
-2. IRPF — Declaração de Ajuste Anual (modelo completa ou simplificada)
-3. Reconciliação INSS
-4. ISS (se aplicável)
-5. Preparação NF-e/NFS-e para campos CBS/IBS (via brazil-einvoice)
-
-Você receberá:
-1. Uma planilha Excel com todos os cálculos e fórmulas
-2. Um resumo para o revisor com posições, citações legais, e alertas
-3. Um calendário de obrigações com prazos e valores
-
-Começando agora.
-
-Em seguida, invoque internamente `br-return-assembly` com o pacote de intake estruturado.
-
-## Seção 8 — Pacote de intake estruturado (formato interno)
-
-A skill downstream (`br-return-assembly`) consome uma estrutura JSON. É interna e não é mostrada ao usuário a menos que ele peça. Campos principais:
+The following is a preparation contract, not an official filing schema. `null` means unknown; verified zero needs its own evidence. For each amount/choice, attach provenance through `fact_register`, using a JSON pointer as the field identifier. Arrays keep source records and periods, not merely totals. No tax constants are embedded as facts.
 
 ```json
 {
+  "contract_version": "1.1",
   "jurisdiction": "BR",
-  "tax_year": 2025,
+  "tax_year": 2026,
+  "filing_exercise": 2027,
+  "preparation_status": "draft",
   "taxpayer": {
-    "name": "",
-    "cpf": "",
-    "cnpj": "",
-    "birth_year": 0,
-    "marital_status": "single | married_comunhao_parcial | married_comunhao_universal | married_separacao | uniao_estavel",
-    "residency": "full_year",
-    "business_type": "mei | simples_nacional | autonomo_pf",
-    "cnae_principal": "",
-    "employment_status": "self_employed | employed_plus_side",
-    "municipality": "",
-    "state": ""
+    "name": null,
+    "cpf": null,
+    "cnpj": null,
+    "birth_year": null,
+    "marital_status": null,
+    "property_regime": null,
+    "residency": null,
+    "residency_dates": [],
+    "business_type": null,
+    "cnae_principal": null,
+    "actual_activities": [],
+    "start_date": null,
+    "option_history": [],
+    "employment_status": null,
+    "municipality": null,
+    "state": null
   },
   "income": {
-    "rendimentos_tributaveis_pj": 0,
-    "rendimentos_tributaveis_pf": 0,
-    "irrf_retido": 0,
-    "rendimentos_isentos": 0,
-    "rendimentos_sujeitos_tributacao_exclusiva": 0,
-    "faturamento_bruto_mei_simples": 0,
-    "client_breakdown": []
+    "rendimentos_tributaveis_pj": null,
+    "rendimentos_tributaveis_pf": null,
+    "irrf_retido": null,
+    "rendimentos_isentos": null,
+    "rendimentos_sujeitos_tributacao_exclusiva": null,
+    "faturamento_bruto_mei_simples": null,
+    "client_breakdown": [],
+    "receipts_by_month_owner_payer": [],
+    "foreign_and_crypto": [],
+    "unclassified_credits": []
   },
   "expenses": {
     "livro_caixa": [],
-    "total_livro_caixa": 0,
+    "total_livro_caixa": null,
     "mixed_use": [],
-    "despesas_medicas": 0,
-    "despesas_educacao": 0,
-    "pgbl": 0,
-    "pensao_alimenticia": 0
+    "capital_purchases": [],
+    "despesas_medicas": null,
+    "despesas_educacao": null,
+    "pgbl": null,
+    "pensao_alimenticia": null
   },
   "carne_leao": {
     "monthly_receipts_pf": [],
     "monthly_darfs_paid": [],
-    "total_paid": 0
+    "total_paid": null
   },
   "inss": {
-    "contribution_type": "contribuinte_individual_20 | plano_simplificado_11 | mei_das",
+    "contribution_type": null,
+    "concurrent_employment": [],
     "monthly_payments": [],
-    "total_paid": 0
+    "total_paid": null
   },
   "mei": {
-    "faturamento_bruto": 0,
+    "faturamento_bruto": null,
     "das_payments": [],
-    "das_total": 0,
-    "parcela_isenta_servicos": 0.32,
-    "parcela_isenta_comercio": 0.08,
-    "parcela_isenta_industria": 0.08,
-    "parcela_isenta_transporte": 0.16
+    "das_total": null,
+    "parcela_isenta_servicos": null,
+    "parcela_isenta_comercio": null,
+    "parcela_isenta_industria": null,
+    "parcela_isenta_transporte": null,
+    "profit_calculation_owner_output": null
   },
   "simples_nacional": {
-    "faturamento_bruto_12m": 0,
-    "anexo": "I | II | III | IV | V",
-    "fator_r": 0,
+    "faturamento_bruto_12m": null,
+    "anexo": null,
+    "fator_r": null,
     "das_payments": [],
-    "das_total": 0,
-    "pro_labore": 0,
-    "distribuicao_lucros_isenta": 0
+    "das_total": null,
+    "pro_labore": null,
+    "distribuicao_lucros_isenta": null,
+    "profit_payment_approval_period_records": []
   },
   "deducoes_legais": {
     "dependentes": [],
-    "despesas_medicas": 0,
-    "despesas_educacao": 0,
-    "pgbl": 0,
-    "pensao_alimenticia": 0,
-    "inss": 0
+    "despesas_medicas": null,
+    "despesas_educacao": null,
+    "pgbl": null,
+    "pensao_alimenticia": null,
+    "inss": null
   },
   "bens_e_direitos": [],
   "dividas_e_onus": [],
   "prior_year": {
-    "imposto_devido": 0,
-    "rendimentos_tributaveis": 0,
-    "bens_e_direitos": []
+    "imposto_devido": null,
+    "rendimentos_tributaveis": null,
+    "bens_e_direitos": [],
+    "dividas_e_onus": [],
+    "return_and_payment_evidence": []
   },
-  "modelo_declaracao": "completa | simplificada | calculate_both",
+  "modelo_declaracao": "calculate_both_if_available_and_applicable",
   "reforma_tributaria_2026": {
-    "g1_emite_nf": "nfe | nfse | nfce | multiplo | nao",
-    "g2_simples_nacional": "me_epp | mei | nao",
-    "g3_mei_status": "sim | nao | em_transicao",
-    "g4_aliquota_reduzida": "saude | educacao | cesta_basica | transporte | outros | nao | padrao",
-    "g5_fornecedores_regulares": "regular | esporadico | nao | nao_sei",
-    "regime_hibrido_art21a_lc123": "avaliar | nao_aplicavel | optar | nao_optar",
+    "g1_emite_nf": null,
+    "g2_simples_nacional": null,
+    "g3_mei_status": null,
+    "g4_aliquota_reduzida": null,
+    "g5_fornecedores_regulares": null,
+    "regular_regime_election_history": [],
     "skills_downstream_acionadas": []
   },
+  "owner_calculations": [],
+  "fact_register": [],
+  "reconciliations": [],
   "open_flags": [],
-  "refusals_triggered": [],
-  "documents_received": []
+  "referrals": [],
+  "documents_received": [],
+  "authorised_actions": []
 }
 ```
 
-## Seção 9 — Tratamento de recusas
+The legacy `parcela_isenta_*` fields above are **owner-computed monetary results**, not automatic statutory percentage constants. The field name `distribuicao_lucros_isenta` is a proposed classification pending the annual owner's review; keep total distributions separately in underlying records. The former `regime_hibrido_art21a_lc123` field is replaced by dated `regular_regime_election_history`; old `refusals_triggered` becomes component-level `referrals`. Marital-status categories (single, married under the applicable property regime, stable union and other actual status) are facts, not a legal conclusion about joint filing. No meaningful old input topic is discarded by these changes.
 
-Recusas são acionadas pela varredura de recusas (Seção 2) ou durante inferência (ex: estrutura de Lucro Presumido descoberta nos documentos).
+Hand `br-return-assembly` the document index, source-linked fact register, monthly reconciliations, owner-output versions, confirmation/correction record and gap register. State what is ready and which result remains dependent. Do not describe the intake as complete if required evidence is still missing.
 
-Quando uma recusa for acionada:
-1. Pare o fluxo
-2. Indique o motivo específico em uma frase
-3. Recomende o caminho a seguir (tipo específico de profissional)
-4. Ofereça continuar com ajuda parcial APENAS se o item fora de escopo for claramente separável (raro)
+## Worked cases
 
-**Não faça:**
-- Pedir desculpas excessivamente
-- Tentar contornar a recusa
-- Sugerir que o usuário "poderia" se enquadrar respondendo diferente
-- Continuar silenciosamente
+**Payer classification decision.** Fictional PF service receipts are R$ 72,000 from Company A, R$ 36,000 from Company B and R$ 12,000 from individual customers. The PJ-payer subtotal is R$ 108,000, PF-payer subtotal R$ 12,000 and total R$ 120,000. Classifying the entire R$ 120,000 as PJ-paid and then adding PF receipts would wrongly produce R$ 132,000. No withholding amount is inferred. A missing contribution receipt or expense-allocation fact blocks the dependent deduction, not the receipt reconciliation.
 
-- **R-BR-1 — Lucro Real** — Pare — Lucro Real é o regime tributário mais complexo do Brasil, com escrituração contábil completa, LALUR (Livro de Apuração do Lucro Real), ECF, ECD, e obrigações acessórias extensas (SPED). Você precisa de um contador especializado em Lucro Real.
-- **R-BR-2 — Empresas de importação/exportação** — Pare — empresas de importação/exportação envolvem regimes aduaneiros especiais, Siscomex, drawback, e tributação complexa de ICMS/IPI/PIS/COFINS (e CBS/IBS a partir de 2026). Você precisa de um contador com expertise em comércio exterior.
-- **R-BR-3 — Estruturas S.A.** — Pare — sociedades anônimas (S.A.) têm obrigações específicas com a CVM, publicação de balanços, e regras distintas de tributação. Você precisa de um contador especializado em S.A.
+```oa-check
+name: Intake payer split, not a tax calculation
+inputs:
+  company_a: 72000
+  company_b: 36000
+  individual_customers: 12000
+steps:
+  pj_payer_total: company_a + company_b
+  pf_payer_total: individual_customers
+  total_receipts: pj_payer_total + pf_payer_total
+  erroneous_double_count: total_receipts + pf_payer_total
+  overstatement: erroneous_double_count - total_receipts
+expected:
+  pj_payer_total: 108000
+  pf_payer_total: 12000
+  total_receipts: 120000
+  erroneous_double_count: 132000
+  overstatement: 12000
+```
 
-Pare — você tem apuração por Lucro Real. Sou configurado para MEI, Simples Nacional, e autônomos pessoa física apenas. Lucro Real requer escrituração contábil completa, LALUR, e apuração trimestral/anual de IRPJ e CSLL. Você precisa de um contador especializado.
+**Maria's retained fictional confirmation scenario.** Assume a full-year Brazilian-resident PF technology consultant in São Paulo, single, with no claimed dependants. Use the payer split above: company-paid receipts R$ 108,000 and PF-paid receipts R$ 12,000. The record lists claimed office rent R$ 14,400, mixed telephone/internet R$ 3,600, software R$ 4,800 and supplies R$ 1,200, totalling R$ 24,000 **candidate** costs. Actual payment, professional purpose, allocation, monthly limits and deductible treatment remain for evidence and the tax owner; the candidate total is not an accepted deduction. Claimed medical spending R$ 8,400 and PGBL R$ 9,600 likewise need beneficiary, reimbursement, payment and eligibility evidence. Do not infer their deductible amounts from the scenario.
 
-Não posso ajudar com esse caso.
+The prior record lists an apartment at R$ 450,000, vehicle R$ 85,000, bank/savings balance R$ 42,000 and investments R$ 120,000, totalling R$ 697,000. Preserve cost versus closing balance, ownership and current-year movements for the annual owner; this sum is not income or a filing-obligation test. Education evidence and contribution/payment records remain missing. No withholding is manufactured and no contribution ceiling, education cap or universal mixed-use percentage is assumed. Present these known, claimed and missing items together for correction before the structured handoff.
 
-## Seção 10 — Verificações automáticas
+```oa-check
+name: Retained fictional confirmation totals, no deduction eligibility assumed
+inputs:
+  candidate_rent: 14400
+  candidate_mixed_phone_internet: 3600
+  candidate_software: 4800
+  candidate_supplies: 1200
+  apartment_record_value: 450000
+  vehicle_record_value: 85000
+  bank_savings_record_balance: 42000
+  investments_record_balance: 120000
+steps:
+  candidate_cost_total: candidate_rent + candidate_mixed_phone_internet + candidate_software + candidate_supplies
+  recorded_asset_total: apartment_record_value + vehicle_record_value + bank_savings_record_balance + investments_record_balance
+expected:
+  candidate_cost_total: 24000
+  recorded_asset_total: 697000
+```
 
-- **Check IN1** — Sem prosa de uma-pergunta-por-vez na varredura de recusas. Se a skill perguntou "Pergunta 1 de 10" ou apresentou as perguntas como mensagens separadas, check falha.
-- **Check IN2** — Varredura de recusas usou ask_user_input_v0. A primeira interação substantiva usou a ferramenta interativa, não perguntas em prosa.
-- **Check IN3** — Fluxo upload-first respeitado. Após a varredura de recusas, a skill pediu o envio de documentos antes de fazer perguntas de conteúdo.
-- **Check IN4** — Documentos foram processados e inferidos antes das perguntas. O resumo de inferência (Seção 5) foi mostrado antes das perguntas de preenchimento de lacunas (Seção 6).
-- **Check IN5** — Preenchimento de lacunas só perguntou sobre coisas NÃO visíveis nos documentos. Se a skill perguntou "você pagou INSS" depois do extrato bancário mostrar pagamentos GPS, check falha.
-- **Check IN6** — Open flags capturados. Qualquer coisa ambígua, arriscada ou que mereça atenção durante inferência está na lista `open_flags` do pacote de handoff.
-- **Check IN7** — Handoff para `br-return-assembly` é explícito. O usuário foi informado "vou rodar a preparação da declaração agora," e o orquestrador downstream foi invocado explicitamente com o pacote de intake.
-- **Check IN8** — Etapa do revisor foi indicada na abertura e reiterada antes do handoff. A mensagem de abertura mencionou assinatura de contador.
-- **Check IN9** — Recusas foram claras. Sem hesitação. Pare significa pare.
-- **Check IN10** — Sem meta-comentários sobre fases do fluxo. A skill não disse "Fase 1," "Fase 2," etc.
-- **Check IN11** — Contagem total de turnos do usuário é baixa. Meta: 8 turnos ou menos do início ao handoff para um usuário preparado. Mais de 12 turnos para um intake normal é falha.
-- **Check IN12** — Tipo de negócio foi estabelecido e roteamento aplicado. MEI vs Simples vs Autônomo foi confirmado antes da inferência, pois muda todo o caminho downstream.
-- **Check IN13** — Gates de Reforma Tributária 2026 (G1-G5) foram coletados. Os 5 gates da Seção 2-A foram aplicados e os resultados estão em `reforma_tributaria_2026` no pacote.
+**Mixed-work route.** An employee also has a service business and foreign investments. Preserve the employment statement and PF/PJ distinction. Route contribution concurrency to `br-inss`, business regime to `br-simples-nacional` or the corporate owner, and foreign income to the foreign/annual owners. Do not refuse the whole intake because one component requires additional source work.
 
-## Seção 11 — Metas de desempenho
+## When to refuse or refer
 
-Para um usuário preparado (documentos em pasta, prontos para upload):
-- Varredura de recusas: 45 segundos (1-2 turnos interativos)
-- Upload de documentos: 2 minutos (1 turno de upload)
-- Inferência e exibição de confirmação: 1 minuto de processamento Claude + 1 turno para confirmação do usuário
-- Preenchimento de lacunas: 2 minutos (2-3 turnos interativos)
-- Handoff: imediato
-- Total: ~6 minutos
+Refer the affected calculation where current sources or necessary facts are unavailable. Residence changes/nonresident/part-year issues go to cross-border and annual owners; someone never resident is not automatically a departure-return case. Lucro Real/Presumido, S.A. entities, import/export, special MEI/cargo activities, estates or foreign structures require the appropriate corporate/customs/specialist component. Do not infer that every S.A. is CVM-regulated. CLT-only facts go directly to the annual owner when this self-employment intake is unnecessary.
 
-Para um usuário não preparado (precisa buscar documentos):
-- Varredura de recusas: igual
-- Descoberta de documentos: 10-20 minutos offline
-- Restante: igual
-- Total: 15-25 minutos
+Continue clearly separable authorised preparation and document the boundary. Refuse to fabricate facts, treat unknown as paid, certify an unsupported deduction or make an unauthorised submission. A mere referral does not erase the affected topic from the package.
 
-## Seção 12 — Referências cruzadas entre skills
+## Completion checklist
 
-Entradas: Documentos e respostas fornecidos pelo usuário.
+- Existing records and documents read before gap questions; no repeated questions or unavailable-tool dependency.
+- Year/exercise, owner, residence dates, activity/regime/elections and applicable municipality identified or explicitly missing.
+- PF/PJ payer and taxpayer-owner distinctions preserved; gross/net and transfer bridges reconcile without a universal monetary tolerance.
+- Contributions, deductions, assets/debts and all former reform inputs retained with evidence and actual owner routes.
+- Unknowns are not zero; unsupported percentages/constants and tax paid are not invented.
+- Structured package, client corrections, partial components and next actions passed to assembly; required professional review is identified honestly.
 
-Saídas: Pacote de intake estruturado consumido por `br-return-assembly`.
+## Sources
 
-- **Skills downstream acionadas (via br-return-assembly)** — `br-irpf` — Declaração de Ajuste Anual (IRPF); `br-simples-nacional` — Cálculo e reconciliação do DAS (MEI/Simples); avaliação do regime híbrido art. 21-A LC 123/06; `br-inss` — Reconciliação de contribuição INSS; `br-iss` — ISS municipal (se aplicável; absorvido no IBS a partir de 2033); `brazil-einvoice` — NF-e/NFS-e com campos CBS/IBS a partir de 2026 (acionada se G1 = sim)
+| Source and portion read | URL | Read on |
+|---|---|---|
+| RIR 2018 arts 68–69,685,714: necessary costs, restrictions, excess and PF/PJ withholding distinctions | https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm |2026-11-11 |
+| LC 123 arts 3,13–14,18,18-A/18-F: eligibility/start-year, employer CPP/ISS, activity/payroll, owner distributions and special MEI route | https://legis.senado.gov.br/norma/572878/publicacao/34621013 |2026-11-11 |
+| Lei 15270 amendments to Lei 9249 art 10 and Lei 9250 annual/dividend rules; read for dated owner handoff, not duplicated computation | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm |2026-11-11 |
+| RFB IRPF 2026 QA cover and Q427–434; published exercise 2026/calendar 2025, not a complete 2027 calendar | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf |2026-11-11 |
+| LC 214 arts 343–348 and amendments to LC 123 art 13; reform duty/rate/election conditions, read in part | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm |2026-11-11 |
+| Official NFS-e/CGSN169 explanation; read for existing MEI invoice duty and PF-customer distinction | https://www.gov.br/nfse/pt-br/noticias/resolucao-cgsn-no-169-traz-novos-beneficios-ao-mei |2026-11-11 |
 
-### Change log
+Not yet confirmed: complete exercise 2027 annual-return publication/calendar/software fields; owner Guide gaps in ordinary income, municipal tax, social contribution categories and special MEI activities; universal mixed-use percentages; a registration-card-only tax-regime determination; exact portal download menus not read here. Such items remain partial or owner handoffs, not assumed exemptions or reasons to evict an entire ordinary taxpayer group.
 
-- **v1.1 (Maio 2026):** Traduzido para PT-BR. Adicionados 5 gates de classificação CBS/IBS (Seção 2-A) cobrindo emissão de NF, Simples Nacional, MEI, alíquotas reduzidas LC 214/2025, e crédito de aquisições. Adicionado roteamento para `brazil-einvoice`. Adicionada chave `reforma_tributaria_2026` ao pacote estruturado. Frontmatter bilíngue, jurisdiction/tax_year/verified_by adicionados. Check IN13 incluído.
-- **v1.0 (Maio 2026):** Versão inicial em inglês. Padrão upload-first, inferir-depois-confirmar, modelado em mt-freelance-intake v0.1.
+## Talk to a verified accountant
 
-## Fim da Skill de Intake v1.1
-
-## Disclaimer
-
-Esta skill e seus outputs são fornecidos apenas para fins informativos e computacionais e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e seus contribuidores não aceitam qualquer responsabilidade por erros, omissões ou resultados decorrentes do uso desta skill. Todos os outputs devem ser revisados e assinados por um profissional qualificado (como contador habilitado no CRC, advogado tributarista, ou equivalente licenciado em sua jurisdição) antes do protocolo ou da tomada de decisão.
-
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão profissional de um contador habilitado, e acompanhar atualizações conforme a legislação tributária muda.
-
-## Seção 1 — A abertura
-
-0. **Abertura e início da varredura de recusas** — Saudação, resumo do fluxo, lembrete do revisor, inicia varredura de recusas via ask_user_input_v0
-
-## Seção 2 — Varredura de recusas (compacta)
-
-0. **Varredura de recusas Q1-Q3 e roteamento Q4-Q6** — Executa a varredura de recusas compacta e roteia por tipo de negócio
-
-## Seção 2-A — Reforma Tributária 2026: o que perguntar
-
-0. **Coleta dos gates G1-G5 de Reforma Tributária** — Aplica os 5 gates de classificação CBS/IBS e roteia para brazil-einvoice e/ou br-simples-nacional conforme resultado
-
-## Seção 3 — O envio de documentos
-
-0. **Solicitação de envio de documentos** — Pede envio de documentos em mensagem única
-
-## Seção 4 — O pass de inferência
-
-0. **Processamento e inferência de documentos** — Processa cada documento enviado e extrai dados relevantes construindo objeto interno de inferência
-
-## Seção 5 — A confirmação
-
-0. **Apresentação do resumo de confirmação** — Apresenta resumo compacto ao usuário para confirmação/correção
-
-## Seção 6 — Preenchimento de lacunas
-
-0. **Perguntas de preenchimento de lacunas** — Pergunta apenas sobre itens não inferíveis dos documentos usando ask_user_input_v0
-
-## Seção 7 — O handoff final
-
-0. **Handoff para br-return-assembly** — Produz mensagem de handoff final e invoca br-return-assembly com o pacote de intake estruturado
+Use the draft intake and evidence trail for professional review before filing or taking a tax position. Find Brazil Guides and professional-review options at [OpenAccountants](https://openaccountants.com). This Guide is **Not yet approved** and does not record accountant approval of the taxpayer's facts or return.

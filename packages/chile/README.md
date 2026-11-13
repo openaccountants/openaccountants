@@ -11,12 +11,19 @@
 4. `chile-iva.md`
 5. `cl-company-formation.md`
 6. `cl-corporate-income-tax.md`
-7. `cl-income-tax.md`
-8. `cl-social-contributions.md`
-9. `cl-tax-overview.md`
-10. `cl-vat-return.md`
-11. `references.md`
-12. `company-formation-workflow-base.md`
+7. `cl-cross-border.md`
+8. `cl-income-tax.md`
+9. `cl-payroll.md`
+10. `cl-social-contributions.md`
+11. `cl-tax-overview.md`
+12. `cl-transfer-pricing.md`
+13. `cl-vat-return.md`
+14. `references.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
+18. `workflow-base.md`
+19. `vat-workflow-base.md`
 
 ## Also known as
 

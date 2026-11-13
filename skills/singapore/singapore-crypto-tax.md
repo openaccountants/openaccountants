@@ -6,7 +6,7 @@ jurisdiction: SG
 tax_year: 2025
 last_updated: 2026-07-13
 depends_on:
-  - singapore-income-tax
+  - sg-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

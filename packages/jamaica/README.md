@@ -10,12 +10,12 @@
 3. `README.md`
 4. `jamaica-gct.md`
 5. `jm-company-formation.md`
-6. `jm-corporate-income-tax.md`
-7. `jm-income-tax.md`
-8. `jm-payroll-social.md`
-9. `jm-tax-overview.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `jm-income-tax.md`
+7. `jm-payroll-social.md`
+8. `jm-tax-overview.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
+11. `workflow-base.md`
 
 ## How to use
 

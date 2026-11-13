@@ -6,12 +6,10 @@ jurisdiction: KR
 tax_year: 2025
 last_updated: 2026-07-13
 depends_on:
-  - south-korea-income-tax
+  - kr-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Yeong Min Lee"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: crypto
 ---
 

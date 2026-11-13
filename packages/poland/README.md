@@ -15,15 +15,16 @@
 8. `pl-income-tax.md`
 9. `pl-payroll.md`
 10. `pl-transfer-pricing.md`
-11. `pl-vat-return.md`
-12. `pl-zus-contributions.md`
-13. `poland-einvoice.md`
-14. `poland-vat-return.md`
-15. `references.md`
+11. `pl-zus-contributions.md`
+12. `poland-einvoice.md`
+13. `poland-vat-return.md`
+14. `references.md`
+15. `eu-vat-base.md`
 16. `eu-vat-directive.md`
 17. `einvoice-workflow-base.md`
 18. `payroll-workflow-base.md`
 19. `transfer-pricing-workflow-base.md`
+20. `workflow-base.md`
 
 ## Also known as
 

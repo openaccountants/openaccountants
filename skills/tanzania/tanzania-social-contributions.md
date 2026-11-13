@@ -5,9 +5,7 @@ jurisdiction: TZ
 tax_year: 2026
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Baraka Cassian"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -17,7 +15,6 @@ domain: payroll
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -66,7 +63,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | SDL | 3.5% of gross emoluments, employer ≥10 employees (TRA) |
 | WCF | 0.5%–0.6% of cash paid to employees, employer-only (see gap) |
 | Currency | TZS only |
-| Validation date | Verified by Baraka Cassian (ACPA 3158) on 2026-06-12 |
 
 **Contribution overview (private-sector Mainland employee)**
 

@@ -20,6 +20,7 @@
 13. `sj-svalbard-visitor-environmental-levy.md`
 14. `payroll-workflow-base.md`
 15. `transfer-pricing-workflow-base.md`
+16. `workflow-base.md`
 
 ## How to use
 

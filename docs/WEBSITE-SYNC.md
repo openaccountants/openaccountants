@@ -10,13 +10,15 @@ write back to `skills/**`.
 The [ingest workflow](../.github/workflows/ingest-to-platform.yml) uses
 [deliver-to-platform.py](../scripts/deliver-to-platform.py) for pushes, scheduled
 catch-up and manual recovery. The production environment retains the ingestion credential;
-the job runs only on `main` with read-only repository permissions.
+the job runs only on `main`. Source permissions are read-only; issue-write permission
+is used solely to retain the [delivery work list](https://github.com/openaccountants/openaccountants/issues/1506).
 
 The runner:
 
 1. Collects every changed skill from the complete Git range, without depending
    on file lists in an Actions event or a single Commits API response.
-2. Excludes sync-bot authors/committers, removed files, templates and index files.
+2. Excludes sync-bot authors/committers, templates and index files. Removed source
+   skills remain in the plan and are listed explicitly in `deletedPaths`.
 3. Groups paths by their last non-merge human writer. A maintainer's merge does
    not replace the writer; a file created only in the merge uses its author.
 4. Sends 20 paths per workflow request (the API permits at most 200), with one author and the same requested
@@ -30,6 +32,22 @@ or unsettled paths, missing outcomes and unknown states. This does not bypass
 any source, accountant or repository review. Independent batches still run
 when one fails, and the final job reports failure.
 
+For a withdrawal, `paths` still includes the removed path and `deletedPaths`
+names it in both the delivery and verification requests. The platform checks
+that the commit belongs to main and that the source is absent both at that
+commit and at current main. It unpublishes the exactly bound skill and retires
+its canonical serving document, preserving its content, ownership and history.
+A matching filename is not sufficient authority to withdraw another skill.
+Network and HTTP errors never count as evidence that a source was deleted.
+Verification requires confirmed unpublished state and a withdrawal receipt.
+Deploy the platform's `deletedPaths` support before enabling this sender change;
+an older verifier cannot confirm a withdrawal and the run must remain red.
+
+The mandatory `compare` check enforces version/date integrity. Human source
+removals are governed by the mandatory `validate` check's Moved/Not moved record
+and the human merge decision; they remain visible as warnings in `compare`.
+The former automated exporter (`--mode sync`) still rejects source removal.
+
 Runs share a `queue: max` concurrency group, without cancelling in-progress work.
 The workflow checks out current `main` after acquiring the queue. It does not
 replay the event's older head when a newer run reached the queue first. GitHub
@@ -40,7 +58,18 @@ The daily 06:17 UTC sweep chooses a seven-day boundary on main's first-parent
 history, then examines the entire reachable range. Writing merged recently is
 included even when its branch commits have older dates. Repeating a failed
 range is safe: already-served documents compare identical, while failed paths
-still need verification. Recovery outside that window uses `since_sha`.
+still need verification. Every run also reads the persistent work list, so unresolved
+paths survive the seven-day window. A retry uses current main and recovers the last
+human writer from full history; it does not replay the old document. An absent path
+is delivered as an explicit withdrawal.
+
+Before sending anything, the runner saves every planned path to issue #1506. After
+each batch it removes only paths the verifier reports as `match`; held, failed,
+mismatched, superseded or unsettled paths remain with their state. A failed issue
+read, corrupt record or unconfirmed save stops the run. If a process dies after a
+successful delivery, the saved pending path is safely reverified on the next run.
+The issue is a recovery record, never permission to bypass professional review.
+Manual recovery can still use `since_sha`.
 
 A missing ingestion credential fails a non-empty delivery. A failed commit
 lookup stops before any request is sent. Redirects are not followed with the

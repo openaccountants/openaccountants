@@ -59,6 +59,40 @@ class Hosts(unittest.TestCase):
         self.assertEqual(sc.check_source_hosts("mc-x.md", table(["| Law | https://legifrance.gouv.fr/a | 2026-10-30 |"]), {"jurisdiction": "MC"}), [])
         self.assertEqual(sc.check_source_hosts("fr-x.md", table(["| Treaty | https://www.boe.es/a | 2026-10-30 |"]), {"jurisdiction": "FR"}), [])
 
+    def test_french_guiana_uses_french_official_sources(self):
+        path = str(REPO_ROOT / "skills/french-guiana/gf-income-tax.md")
+        fm = {"jurisdiction": "GF"}
+        source = table(["| DGFiP law | https://www.impots.gouv.fr/a | 2026-11-11 |"])
+        self.assertEqual(sc.check_source_hosts(path, source, fm), [])
+        self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.boe.es/a | 2026-11-11 |"]), fm))
+        self.assertEqual(sc.check_jurisdiction_body(path, "# Guyane\n" + "DGFiP " * 9, fm), [])
+
+
+class SourceEvidencePriority(unittest.TestCase):
+    def rates(self, row):
+        return "## Rates, bands and thresholds\n\n| Item | Rate | Source |\n|---|---|---|\n" + row + "\n"
+
+    def test_new_or_edited_unsourced_row_blocks_but_legacy_row_does_not(self):
+        old = self.rates("| Fictional rate | 10% | missing |")
+        self.assertEqual(sc.source_evidence_regressions(old, old + "\nOther prose."), [])
+        self.assertEqual(len(sc.source_evidence_regressions(old, old.replace("10%", "12%"))), 1)
+        self.assertEqual(len(sc.source_evidence_regressions("", old)), 1)
+
+    def test_same_inherits_a_real_source_but_cannot_invent_one(self):
+        linked = self.rates("| Fictional rate | 10% | https://authority.gov/rates |\n| Another | 12% | same |")
+        self.assertEqual(sc.source_evidence_regressions("", linked), [])
+        self.assertEqual(len(sc.source_evidence_regressions("", linked.replace("https://authority.gov/rates", "missing"))), 2)
+
+    def test_known_secondary_citation_blocks_but_unknown_official_host_does_not(self):
+        bad = table(["| Rates | https://taxsummaries.pwc.com/example | 2026-11-12 |"])
+        self.assertTrue(sc.source_evidence_regressions("", bad))
+        self.assertEqual(sc.source_evidence_regressions(bad, bad + "\nOther prose."), [])
+        self.assertEqual(sc.source_evidence_regressions("", bad.replace("taxsummaries.pwc.com", "new-authority.gov")), [])
+
+    def test_style_alone_cannot_block_a_tax_pr(self):
+        self.assertFalse(validate.is_pr_error("no_em_dash", "tax", True, False))
+        self.assertTrue(validate.is_pr_error("sources_read_dates", "tax", True, False))
+
 
 class Jurisdiction(unittest.TestCase):
     def path(self, tail):
@@ -73,6 +107,29 @@ class Jurisdiction(unittest.TestCase):
         body = "# x\n" + "₹1,00,000 " * 9
         self.assertEqual(sc.check_jurisdiction_body(self.path("india/in-x.md"), body, {"jurisdiction": "IN"}), [])
         self.assertEqual(sc.check_jurisdiction_body(self.path("portugal/pt-x.md"), "IRS " * 9, {"jurisdiction": "PT"}), [])
+
+    def test_idaho_cannot_be_labelled_as_indonesia(self):
+        path = self.path("us/states/id/id-income-tax.md")
+        self.assertEqual(sc.check_jurisdiction_path(path, "", {"jurisdiction": "ID"}),
+                         ["path says US-ID, frontmatter says ID"])
+        self.assertEqual(sc.check_jurisdiction_path(path, "", {"jurisdiction": "US-ID"}), [])
+        self.assertEqual(sc.check_jurisdiction_path(self.path("indonesia/id-x.md"), "", {"jurisdiction": "ID"}), [])
+
+    def test_path_identity_blocks_every_changed_skill_type(self):
+        for scope in ["tax", "general", "other"]:
+            for metadata_only in [True, False]:
+                self.assertTrue(validate.is_pr_error("jurisdiction_path", scope, True, metadata_only))
+        self.assertFalse(validate.is_pr_error("jurisdiction_body", "tax", True, False))
+
+
+class FalklandRegistry(unittest.TestCase):
+    def test_falkland_pack_has_a_named_coverage_route(self):
+        import json
+        rows = json.loads((REPO_ROOT / "scripts/data/jurisdictions.json").read_text())
+        record = next(row for row in rows if row["code"] == "FK")
+        self.assertEqual(record["name"], "Falkland Islands")
+        self.assertEqual(record["region"], "americas")
+        self.assertEqual(record["dir"], "skills/falkland-islands")
 
 
 class Years(unittest.TestCase):

@@ -1,0 +1,49 @@
+{
+  "withdrawals": [
+    {
+      "code": "VE",
+      "folder": "venezuela",
+      "decided_by": "Michael Cutajar, explicit instruction in the repo audit chat",
+      "decided_on": "2026-11-12",
+      "reason": "Withdraw the complete Venezuela pack from published coverage; preserve all prior text and attribution in Git history.",
+      "files": [
+        {
+          "path": "skills/venezuela/README.md",
+          "previous_blob": "ad1df4e4ef91c749bd7565be422af2caddf1158c"
+        },
+        {
+          "path": "skills/venezuela/venezuela-corporate-tax.md",
+          "previous_blob": "1d535da84a841f0dee1122653602d3602c5690b5"
+        },
+        {
+          "path": "skills/venezuela/venezuela-cross-border-tax.md",
+          "previous_blob": "33398028e81cd67d8fbc4ce5dd836ebda1b9c105"
+        },
+        {
+          "path": "skills/venezuela/venezuela-income-tax.md",
+          "previous_blob": "dcf09aeb4212128cc38b923e426232c88b076989"
+        },
+        {
+          "path": "skills/venezuela/venezuela-iva.md",
+          "previous_blob": "0d0149e71ad2b2fb0030b208398a1ed6a1261fa4"
+        },
+        {
+          "path": "skills/venezuela/venezuela-payroll.md",
+          "previous_blob": "224f3cb5fa002af912fd5be1980c692ef02ba007"
+        },
+        {
+          "path": "skills/venezuela/venezuela-social-contributions.md",
+          "previous_blob": "b6b0ed01e487ebb32a458b22813ad685c9611ab2"
+        },
+        {
+          "path": "skills/venezuela/venezuela-tax-optimization.md",
+          "previous_blob": "e536f14ab8f5d923118a65226ed98aceb1e5a1de"
+        },
+        {
+          "path": "skills/venezuela/venezuela-transfer-pricing.md",
+          "previous_blob": "8b38fc4b88170575aee46d3b46cabfcc77cc6bba"
+        }
+      ]
+    }
+  ]
+}

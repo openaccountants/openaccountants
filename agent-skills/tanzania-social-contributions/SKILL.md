@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "TZ"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  reviewed_by: "Baraka Cassian"
 ---
 
 # Tanzania (Mainland) Social Security & Payroll Contributions
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -66,7 +64,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | SDL | 3.5% of gross emoluments, employer ≥10 employees (TRA) |
 | WCF | 0.5%–0.6% of cash paid to employees, employer-only (see gap) |
 | Currency | TZS only |
-| Validation date | Verified by Baraka Cassian (ACPA 3158) on 2026-06-12 |
 
 **Contribution overview (private-sector Mainland employee)**
 

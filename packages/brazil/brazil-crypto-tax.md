@@ -1,386 +1,230 @@
 ---
 name: brazil-crypto-tax
-description: Use this skill whenever asked about Brazil cryptocurrency or digital asset taxation / Use esta skill sempre que for solicitado sobre tributação de criptomoedas ou ativos digitais no Brasil. Trigger on phrases like "crypto tax Brazil", "imposto de renda cripto", "Bitcoin Brazil", "criptoativos Brasil", "cryptocurrency gains Brazil", "Receita Federal crypto", "DARF crypto", "GCAP crypto", "staking Brazil", "mining income Brazil", "NFT tax Brazil", "Binance Brazil", "Mercado Bitcoin", "IN 1888", "Instrução Normativa 1888", "IRPF crypto", "ganho de capital crypto", or any question about the income tax, capital gains, or reporting obligations for cryptocurrency, tokens, or digital assets for Brazilian tax residents / ou qualquer pergunta sobre imposto de renda, ganhos de capital ou obrigações acessórias relativas a criptomoedas, tokens ou ativos digitais para residentes fiscais no Brasil. Covers progressive capital gains rates, monthly R$35,000 de minimis threshold, IN RFB 1,888/2019 reporting, DARF payments, IRPF annual declaration, and Crypto Framework Law 14,478/2022 / Abrange alíquotas progressivas de ganho de capital, isenção mensal de R$ 35.000, obrigação acessória da IN RFB 1.888/2019, pagamento de DARF, declaração anual de IRPF e Lei 14.478/2022 (Marco Legal das Criptos). ALWAYS read this skill before touching any Brazil crypto work / SEMPRE leia esta skill antes de qualquer trabalho com criptoativos no Brasil.
-version: 1.0
+description: >
+  Prepare Brazilian resident individuals' 2026 crypto tax working papers and reporting
+  handoffs. Distinguish domestic capital gains from qualifying foreign financial
+  assets, identify disposal and receipt events, reconcile acquisition evidence and
+  apply the dated IN 1888 to DeCripto transition. Covers Bitcoin, altcoins,
+  stablecoins, NFT classification, domestic custodial lending, swaps, annual asset
+  reporting, loss restrictions, reporting penalties and corrections. Trigger on
+  Brazil crypto tax, criptoativos, Bitcoin, GCAP, DARF 4600, IN 1888, DeCripto,
+  foreign exchange holdings, staking, mining, airdrops or NFT tax. Gives explicit
+  unresolved treatment for unsupported native DeFi and cost-method questions;
+  it does not assume every digital asset or yield product has the same tax regime.
 jurisdiction: BR
-tax_year: 2025
-last_updated: 2026-07-13
-depends_on:
-  - brazil-income-tax
 category: crypto
+domain: tax
+tax_year: 2026
+tier: 2
+last_updated: 2026-11-11
+version: 1.1
+type: situation-rules
+depends_on:
+  - br-income-tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ariane Marrocos"
-reviewed_on: 2026-11-03
-tier: 1
-domain: crypto
 ---
 
-# Brazil Crypto Tax
-
-## Brasil — Tributação de Criptoativos — Skill v1.1
-
-## Rates and thresholds
-
-Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### Cripto
+# Brazil crypto tax v 1.1
 
-- **Até R$ 5.000.000** — 15%  _(Lei 13.259/2016)_
-- **R$ 5.000.001 – R$ 10.000.000** — 17,5%  _(Lei 13.259/2016)_
-- **R$ 10.000.001 – R$ 30.000.000** — 20%  _(Lei 13.259/2016)_
-- **Acima de R$ 30.000.000** — 22,5%  _(Lei 13.259/2016)_
-- **Limite de alienações** — É isento do imposto de renda o ganho de capital decorrente da alienação de criptoativos quando o valor total das alienações realizadas no mês, consideradas conjuntamente as operações efetuadas em diferentes exchanges e carteiras, não ultrapassar R$ 35.000, observadas as regras do art. 22 da Lei nº 9.250/1995 e os entendimentos da Receita Federal.  _(A IN RFB nº 1.888/2019 não institui a isenção; ela trata da obrigação acessória de reporte de operações com criptoativos.; Lei nº 9.250/1995 – art. 22. Decreto nº 9.580/2018 Soluções de Consulta da Receita Federal sobre criptoativos.)_
-- **Efeito** — É isento do imposto de renda o ganho de capital auferido na alienação de bens e direitos quando o valor total das alienações realizadas no mês não ultrapassar R$ 35.000, observadas as regras do art. 22 da Lei nº 9.250/1995.  _(Lei nº 9.250/1995 – art. 22. Lei nº 11.196/2005.)_
-- **Se ultrapassado** — Se o valor total das alienações realizadas no mês ultrapassar R$ 35.000, a isenção para alienação de bens de pequeno valor deixa de ser aplicável, e o ganho de capital passa a ser tributado pelas regras normais, não apenas sobre a parcela excedente ao limite.  _(Lei nº 11.196/2005 – art. 38. Lei nº 9.250/1995. Entendimentos da Receita Federal sobre alienação de bens de pequeno valor e criptoativos.)_
-- **Quem reporta** — PF em exchange estrangeira: se operações > R$ 30.000/mês  _(IN RFB 1.888/2019)_
-- **Exchanges brasileiras** — Reportam automaticamente à RFB todas as operações  _(IN RFB 1.888/2019)_
-- **Saldo ≥ R$ 5.000 por cripto em 31/12** — Obrigatório declarar em Bens e Direitos  _(Instrução Normativa RFB nº 2.180/2024)_
-- **Código DARF** — O imposto sobre ganho de capital apurado por pessoa física deve ser recolhido por DARF código 4600, até o último dia útil do mês subsequente ao da alienação do bem ou direito.  _(Programa GCAP Decreto nº 9.580/2018)_
-- **Vencimento** — O imposto sobre ganho de capital deve ser recolhido até o último dia útil do mês subsequente ao da alienação do bem ou direito, mediante DARF código 4600.  _(Programa GCAP Decreto nº 9.580/2018)_
-- **Ferramenta** — GCAP – Programa utilizado para apuração de ganho de capital e importação para a DIRPF  _(N SRF nº 84/2001)_
-- **Padrão obrigatório** — Custo médio ponderado por unidade  _(Programa GCAP Decreto nº 9.580/2018)_
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Seção 1 -- Referência Rápida
+## Who this applies to
 
-**Referência Rápida**
-
-| Campo | Valor |
-| --- | --- |
-| País | Brasil (República Federativa do Brasil) |
-| Tributo | Imposto de Renda (IR) — Ganho de Capital sobre Criptoativos |
-| Moeda | BRL (todos os valores devem estar em BRL na data da operação) |
-| Ano fiscal | Ano-calendário (1º de janeiro a 31 de dezembro) |
-| Legislação principal | Lei 7.713/1988 (Art. 3º §3º); Lei 8.981/1995 (Art. 21); Lei 13.259/2016 (alíquotas progressivas de GC) |
-| Marco regulatório | Instrução Normativa RFB 1.888/2019 (obrigação acessória mensal); Lei 14.478/2022 (Marco Legal das Criptos) |
-| Autoridade fiscal | Receita Federal do Brasil (RFB) |
-| Portal de entrega | e-CAC (Centro Virtual de Atendimento ao Contribuinte) |
-| Declaração anual | IRPF (Declaração de Ajuste Anual do Imposto de Renda da Pessoa Física) |
-| Prazo de entrega anual | Último dia útil de maio do ano seguinte (ex.: 29 de maio de 2026 para o ano-base 2025) |
-| Obrigação mensal | DARF (Documento de Arrecadação de Receitas Federais) — código 4600 |
-| Prazo de pagamento mensal | Último dia útil do mês seguinte ao da alienação |
-| Validado por | Pendente — requer assinatura de contador brasileiro registrado no CRC |
-| Versão da skill | 1.1 |
+Brazilian tax-resident individuals preparing calendar-year 2026 crypto records. Determine the asset's nature, custody/negotiation location and event before calculating. Domestic disposal gains, qualifying foreign financial income, remuneration and information reporting are separate jobs. A platform's brand, a foreign issuer or a foreign blockchain server does not establish the tax location. [IN 2180 arts 2,9–12](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente).
 
-### Resumo das Alíquotas (2025)
+The output is a transaction schedule, documented basis reconciliation, separate tax/reporting calculations and an annual-return handoff. Company trading, a change of residence, foreign controlled entities/trusts and state gift tax require the corresponding owner Guide; continue the separable individual work. Ordinary native staking, mining, NFT creation and DeFi cases remain partial where the missing treatments listed in Sources affect the answer.
 
-**Resumo das Alíquotas (2025)**
+First obtain the year/residency dates; asset rights; actual provider/legal entity and custody history; complete buys, sales, swaps, receipts and transfers; and cost/payment evidence. Do not infer a zero cost from a missing statement. The detailed input list appears below.
 
-| Item | Alíquota / Limite |
-| --- | --- |
-| Ganho de capital (alíquotas progressivas) | 15% / 17,5% / 20% / 22,5% (vide Seção 3) |
-| Isenção mensal (de minimis) | Alienações ≤ **R$ 35.000** no total em todas as exchanges no mês → ganhos **isentos** |
-| Limite mensal de obrigação acessória (IN 1.888) | Operações > **R$ 30.000/mês** fora de exchanges brasileiras → obrigatório reportar à RFB |
-| Limite para declaração anual | Saldos ≥ **R$ 5.000** por tipo de cripto em 31 de dezembro → obrigatório declarar no IRPF |
+## Rates, bands and thresholds
 
-### Nota sobre a Reforma Tributária (CBS/IBS)
+| Item and conditions | Amount / period | Official source and exact anchor |
+|---|---|---|
+| Domestic custody/negotiation: gain exemption tests the aggregate monthly disposal proceeds of all crypto species, not the gain or a separate limit per exchange | Total disposals ≤R$ 35,000; above the limit, the taxable gain is not reduced by R$ 35,000 | [SC 184 conclusion 28(c)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933): “de todas as espécies de criptoativos”; “igual ou inferior a R$ 35.000,00” |
+| Ordinary taxable capital gain, marginal band |15% on gain up to R$ 5 million | [Lei 8981 art 21 I](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21): “sobre a parcela dos ganhos que não ultrapassar R$ 5.000.000,00” |
+| Ordinary taxable capital gain, next marginal band |17.5% on gain above R$ 5 million up to R$ 10 million | [Lei 8981 art 21 II](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21): “exceder R$ 5.000.000,00”; “não ultrapassar R$ 10.000.000,00” |
+| Ordinary taxable capital gain, next marginal band |20% on gain above R$ 10 million up to R$ 30 million | [Lei 8981 art 21 III](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21): “exceder R$ 10.000.000,00”; “não ultrapassar R$ 30.000.000,00” |
+| Ordinary taxable capital gain, top marginal band |22.5% on gain above R$ 30 million | [Lei 8981 art 21 IV](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21): “ultrapassar R$ 30.000.000,00” |
+| Resident PF's qualifying foreign financial-asset income, realized under the cash rules |15% in the annual DAA; the domestic small-disposal exemption does not apply | [Lei 14754 arts 2–3](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm), [IN 2180 arts 9–10](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente): “à alíquota de 15%”; “não se aplicando nenhuma dedução da base de cálculo” |
+| Annual asset entry, distinct from the obligation to file the entire return | Group 08 entry when acquisition value of each crypto type is ≥R$ 5,000; use the applicable exercise's form | [RFB 2026 Q 473](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf): “de cada tipo de criptoativo”; “igual ou superior a R$ 5.000,00” |
+| Historical information reporting: resident user with foreign exchange/no-exchange operations | January–June 2026 monthly operations >R$ 30,000; Brazilian exchange has its own reporting duty | [IN 1888 art 6](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/100592/visao/multivigente), [IN 2291 arts 18–19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709): “ultrapassar R$ 30.000,00” |
+| DeCripto resident user: foreign provider, decentralised platform or no provider | July–December 2026 monthly operations >R$ 35,000 | [IN 2291 art 5 II/§3 and art 19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709): “for maior que R$ 35.000,00” |
 
-Operações de PF (ganhos de capital, IRPF mensal) seguem inalteradas pela Reforma Tributária 2026. Para **PJ que opera exchange ou intermediação de criptoativos**, os serviços passam a ser tributados por CBS (a partir de 2027) e IBS (gradualmente de 2029 a 2033), substituindo PIS/Cofins/ISS. Compra/venda direta de cripto entre pessoas físicas permanece fora do campo de incidência de CBS/IBS (não é serviço).
+## The base
 
-### Padrões Conservadores
+### Classify the asset, location and event
 
-**Padrões Conservadores**
+1. Identify the legal/economic rights. A virtual asset that represents another financial investment, or whose nature/characteristics meet that definition, can be a financial application. BTC is generally in that class; an artwork NFT is not automatically financial. Do not default an unidentified token to either class. [IN 2180 art 9§1](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente), [official foreign-income FAQ Q 18](https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/abril/receita-federal-e-secretaria-da-reforma-tributaria-lancam-atualizacao-do-perguntas-e-respostas-sobre-tributacao-de-rendimentos-no-exterior/perguntas-e-respostas-offshores-lei-14-754-e-in-rfb-2-180.pdf).
+2. Custody or negotiation by an institution abroad establishes foreign location for this test, independently of the issuer's location. Self-custody by a Brazilian resident without an intermediary is not foreign solely because of the network's location. Record changes in custody and the provider's actual domicile. [IN 2180 art 9§2](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente), [official FAQ Q 19](https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/abril/receita-federal-e-secretaria-da-reforma-tributaria-lancam-atualizacao-do-perguntas-e-respostas-sobre-tributacao-de-rendimentos-no-exterior/perguntas-e-respostas-offshores-lei-14-754-e-in-rfb-2-180.pdf).
+3. Identify sales, swaps, payment for goods/services, rewards, gifts, inheritance and own-wallet transfers separately. A swap can dispose of an asset without fiat cash-out. An own-wallet transfer must reconcile ownership and basis; its reporting classification is a separate question. [SC 184 conclusion 28(b)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933), [IN 2291 arts 6,16](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-| Ambiguidade | Padrão |
-| --- | --- |
-| Custo de aquisição desconhecido | PARAR — não é possível apurar ganho sem custo de aquisição |
-| Residência fiscal desconhecida | PARAR — o Brasil tributa renda mundial apenas para residentes fiscais |
-| Valor de alienação próximo do limite de R$ 35.000 | Calcular com precisão considerando TODAS as exchanges/carteiras combinadas |
-| Dúvida sobre entrega da IN 1.888 | Entregar em caso de dúvida — as multas pela não entrega são severas |
-| Classificação do token indefinida | Tratar como criptoativo (ativo financeiro) — sujeito a ganho de capital |
+### Domestic ordinary disposal calculation
 
-## Seção 2 -- Regras de Classificação
+Reconcile quantity, documented BRL acquisition cost and disposal value for each transaction. Ordinary gain is the positive difference between proceeds and acquisition cost; non-cash disposal value is market value. Document any commission/cost included and the applicable legal condition. Do not silently impose a universal averaging method or treat every network fee as deductible. Missing basis/method blocks that transaction's final calculation, while other reconciled transactions can proceed. [IN 84 arts 2,5,17–19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/14400/visao/vigente).
 
-### 2.1 Classificação pela Receita Federal
+Aggregate monthly disposal proceeds for the exemption test. For taxable gains apply the marginal bands above. If parts of the same asset/right are sold, check the aggregation rule from the second disposal through the end of the calendar year following the first and deduct prior tax as prescribed; do not restart a marginal band for each fragment. [SC 184 conclusion 28](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933), [Lei 8981 art 21§§3–4](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21).
 
-- **Classificação de criptoativos** — A Receita Federal classifica criptoativos como "ativos financeiros" / "bens e direitos". Não são moeda de curso legal, mas estão sujeitos ao imposto de renda sobre ganhos e devem ser declarados no IRPF anual.
+Ordinary capital losses cannot offset gains on another disposal, even in the same month: “O prejuízo apurado em uma alienação não pode ser compensado com ganhos obtidos em outra”. Keep losing transactions in the reconciliation, without turning them into an ordinary monthly/future credit. [IN 84 art 2 sole paragraph](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/14400/visao/vigente).
 
-**IRPF Bens e Direitos — Grupo 08 (Criptoativos)**
+### Qualifying foreign financial assets
 
-| Código | Tipo | Exemplos |
-| --- | --- | --- |
-| 01 | Bitcoin (BTC) | BTC |
-| 02 | Outras criptomoedas (altcoins) | ETH, SOL, ADA, XRP, LTC, BNB |
-| 03 | Stablecoins | USDT, USDC, DAI, BRZ, BUSD |
-| 10 | NFTs (Tokens Não Fungíveis) | Arte digital, colecionáveis, itens de jogos |
-| 99 | Outros criptoativos | Utility tokens, governance tokens, tokens DeFi, security tokens |
+Record BRL income realized on receipt of remuneration and on redemption, amortisation, disposal, maturity or liquidation, including exchange variation on principal. Apply the annual 15% regime separately from the ordinary progressive return. Convert using the BCB closing sale quotation for the taxable event unless a specific statutory rule differs. Foreign nonfinancial assets remain under the specific capital-gain rules, rather than being forced into this financial regime. [Lei 14754 arts 2–3,15](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm), [IN 2180 arts 2,9–10](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente).
 
-### 2.2 Fatos Geradores
+Documented realized foreign financial losses can offset foreign financial income in the same annual period, then qualifying controlled-entity profits/dividends included that period; unused losses carry to subsequent eligible periods. Use losses only once, at nominal value. This is not the domestic loss rule. [Lei 14754 art 9](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm), [IN 2180 art 11](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente).
 
-**Fatos Geradores**
+Foreign tax credit requires treaty/reciprocity, the applicable per-income ceiling and tax not refundable/creditable abroad. It cannot be carried to earlier/later years or used indiscriminately against other investments. Foreign tax paid is converted with the BCB closing purchase quotation on payment date. Hand the resulting income/loss/credit schedule to `br-income-tax` for the complete annual reconciliation, including any applicable high-income rules. [Lei 14754 art 4](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm), [IN 2180 art 12](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente).
 
-| Evento | Tributável? | Observações |
-| --- | --- | --- |
-| Cripto → BRL (venda em exchange) | Sim | Ganho = valor de alienação − custo de aquisição |
-| Cripto → cripto (swap) | Sim | Cada permuta é uma alienação tributável; ganho/perda a valor de mercado |
-| Cripto → bens/serviços | Sim | Alienação ao valor de mercado dos bens/serviços recebidos |
-| Recebimento de cripto como pagamento | Sim | Rendimento ao valor de mercado na data do recebimento |
-| Transferência entre carteiras próprias | Não | Não há mudança de titularidade beneficiária |
-| Doação de cripto | Possivelmente | Pode incidir ITCMD (tributo estadual); não é IR federal |
-| Herança de cripto | Possivelmente | ITCMD em nível estadual; custo de aquisição = valor de mercado na data do óbito ou valor declarado |
+### Receipts, lending and special events
 
-## Seção 3 -- Tabelas de Alíquotas e Apuração
+| Event | Supported treatment or required distinction | Official source |
+|---|---|---|
+| Remuneration for fungible crypto lent to a Brazilian PJ custodian | Exclusive-source IRRF, withheld by the payer in the receipt month, at market value even without cash withdrawal. The fixed-income holding-period rates apply to this fact pattern, not automatically to every protocol called staking. Obtain term/contract and withholding evidence. | [SC 184 scope 7–9, discussion 19–24, conclusion 28(a)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933) |
+| Payment for professional services in crypto | Separate service income at receipt from later asset disposal; route payer/residency/withholding facts to `br-income-tax` and monthly-income owner. A subsequent sale is not the first and only event. | [RIR 2018 art 47 IV](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm) |
+| Gift/inheritance transfer | ITCMD and income tax are separate. A transfer above the donor/estate's declared cost can create taxable capital gain; recipient basis follows the chosen transfer value and supporting returns. Obtain transfer valuation and state. | [IN 84 art 20](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/14400/visao/vigente) |
+| Native staking, mining, airdrop/fork, lending to other counterparties, liquidity pools, wrapping/bridging, farming, NFT creation | Preserve each receipt/disposal and evidence; obtain the legal nature and counterparty. Do not assign the unsupported universal tax/basis answers removed from the old version. The specific missing treatments are listed in Sources. | [IN 2291 art 16](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709): reporting follows specific taxation law |
 
-### 3.1 Imposto sobre Ganho de Capital — Alíquotas Progressivas
+## Deadlines and filing
 
-**Alíquotas Progressivas**  _(Lei 13.259/2016, Art. 1º; Lei 8.981/1995, Art. 21.)_
+### Tax payment and annual handoff
 
-| Faixa de lucro (BRL) | Alíquota |
-| --- | --- |
-| Até R$ 5.000.000 | **15%** |
-| De R$ 5.000.001 a R$ 10.000.000 | **17,5%** |
-| De R$ 10.000.001 a R$ 30.000.000 | **20%** |
-| Acima de R$ 30.000.000 | **22,5%** |
+For ordinary resident capital gains, prepare the applicable year's GCAP calculation and DARF 4600 by the last business day of the month following receipt of the gain. Reconcile instalment receipts rather than taxing an assumed receipt date. These gains are separate from ordinary annual taxable income and the tax is not a general annual-return credit. Qualifying foreign financial income instead goes to the annual DAA regime. [Lei 8981 art 21§§1–2](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21), [IN 84 arts 30–31](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/14400/visao/vigente), [RFB Q 653](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
 
-- **Natureza das alíquotas** — São alíquotas marginais — cada faixa aplica-se apenas à parcela do ganho compreendida em seu intervalo.  _(Lei 13.259/2016, Art. 1º; Lei 8.981/1995, Art. 21.)_
+Prepare the GCAP transaction schedule, then use the official year's program and tax-payment service; retain the saved calculation, generated payment document and payment receipt, and match them to the annual import/handoff. Start at the [official GCAP directory](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/gcap), select the applicable year and retain its calculation/payment output.
 
-### 3.2 Isenção Mensal (De Minimis)
+Annual holdings: use acquisition values, quantity, asset type and custody details. The published exercise 2026 instructions use Group 08 codes 01 BTC,02 other cryptocurrencies,03 stablecoins,10 NFTs and 99 other cryptoassets. Preserve per-type records and the local country/foreign income-or-loss/foreign tax fields where applicable. After a full disposal, reconcile the actual closing quantity to zero and retain the disposal history; the annual owner must apply the published form rules instead of deleting the historical acquisition/disposal trail. Also hand off crypto-related loans, debts and liabilities with counterparty, balance and security/repayment evidence; this Guide does not establish their annual entry codes or thresholds. This reference does not assert that exercise 2027 software, boxes or its filing deadline have already been issued; use `br-income-tax` for the complete return obligation and current filing procedure. [RFB Q 473](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
 
-**Isenção Mensal (De Minimis)**
+### Separate information reporting by period
 
-| Parâmetro | Valor |
-| --- | --- |
-| Limite | Total de alienações ≤ **R$ 35.000** no mês-calendário |
-| Abrangência | Soma de TODAS as alienações de cripto em TODAS as exchanges e carteiras no mês |
-| Efeito | Se o total alienado ≤ R$ 35.000 → ganhos **isentos** de imposto |
-| Se ultrapassado | O imposto incide sobre o **ganho total** (não apenas sobre o excedente a R$ 35.000) |
+| Period / filer | What is reported and when | Official source |
+|---|---|---|
+| January–June 2026 resident users within the old threshold test | IN 1888 operations reporting; use the historical applicable layout, not the DeCripto file for an old period | [IN 1888 arts 6–9](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/100592/visao/multivigente), [IN 2291 arts 18–19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| July–December 2026 DeCripto users | Monthly by the last business day of the following calendar month, closing 23:59:59 Brasília; art 9 information for reportable art 6 I–VII operations | [IN 2291 arts 5,9,12,19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Providers under the Brazilian nexus tests | Individualised art 7 reporting from July 2026; annual art 8 CARF reporting applies from January 2026. Annual balances/CARF are due by the last business day of January of the next year; art 8 CARF relief below is conditional | [IN 2291 arts 5,7–8,12,19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
 
-- **Atenção** — O limite de R$ 35.000 baseia-se no valor total alienado (e não no ganho), apurado considerando todas as plataformas combinadas — e não por exchange.
+For the provider's annual CARF duty only, art 8§1 relieves the specified nexus cases after qualifying partner-jurisdiction compliance: art 5 I(b)–(d) where tax-resident there; (c)/(d) through the corresponding (b) link; (d) through the corresponding (c) link; and (d) for a tax-resident individual. For art 5 I(a)–(d), compliance under substantially similar partner rules also requires notification to Receita. Art 8§2 separately relieves operations through a branch that fulfilled the duty in a partner jurisdiction. Verify the applicable nexus/compliance evidence rather than assuming every foreign provider is exempt. These are exceptions to the art 8 provider duty; they do not eliminate the Brazilian user's independent art 5 II/art 9 duty. [IN 2291 art 8§§1–2](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-### 3.3 Pagamento Mensal por DARF
+Provider scope includes Brazilian tax residence/constitution/management/business and the specified provision of services in Brazil; art 5§1 defines .br domains, local collection/payment arrangements and targeted advertising. A foreign provider's duty does not, by itself, erase the resident user's art 5 II duty. [IN 2291 art 5](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-**Pagamento Mensal por DARF**
+DeCripto includes buys/sales/swaps; transfers such as airdrop/staking/mining/loans and goods/services; transfer to unhosted wallets; involuntary loss; and provider-specific asset-reference operations. The greater-than-USD 50,000 retail-payment category is an operation classification, not a blanket reporting exemption for smaller payments. For users, capture art 9 identity, tax residence/NIF where applicable, asset/quantity, BRL value excluding service fees, fees separately and provider/platform. For an indivisible smart-contract sequence, art 9 permits the specified atomic-transaction hash alternative. [IN 2291 arts 6–9](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-| Parâmetro | Valor |
-| --- | --- |
-| Código de DARF | **4600** (IRPF — Ganho de Capital — Alienação de Criptoativo) |
-| Vencimento | Último dia útil do mês seguinte ao da alienação |
-| Ferramenta de apuração | GCAP (Programa de Apuração dos Ganhos de Capital) — software da Receita Federal |
-| Multa por atraso no pagamento | 0,33% ao dia (limitada a 20%) + juros pela taxa Selic |
-| Emissão | Pelo GCAP ou pelo Sicalc Web (receita.fazenda.gov.br) |
+For reporting, value fair value under art 10; convert foreign currency to USD then BRL using closing PTAX sale quotation on the operation/balance date under art 11. These reporting valuation methods do not establish a universal income-tax cost method. [IN 2291 arts 10–11](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-- **Fórmula de apuração** — Ganho mensal = Σ(valor de alienação − custo de aquisição) de todas as alienações de cripto no mês Se total alienado > R$ 35.000: Imposto = aplicar alíquotas progressivas sobre o ganho total Senão: Imposto = R$ 0 (isento)
+Prepare the period's UTF-8 pipe-delimited file in the approved layout using the corresponding manual sections for provider, foreign-provider user or no-provider user. Access RFB's Coleta Nacional through e-CAC, select the crypto reporting obligation and correct period, validate, resolve errors, transmit only within the user's filing authority, then retain the transmitted file, receipt and records. A digital signature is required when e-CAC requires it. Wallet sending/receiving addresses are mandatory only upon the specified fiscal-procedure summons. The downloaded current manual is version 1.01, with the August 2026 large-file update; do not assume its old v 1 URL means its first edition. [IN 2291 arts 3–4,12,17](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709), [official manual pp 7–9 and sections 5–6](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-orientacao-leiaute-criptoativos/manual-de-orientacao-do-leiaute-da-decripto-v1.pdf).
 
-## Seção 4 -- Métodos de Custo de Aquisição
+## Penalties and interest
 
-### 4.1 Método Aceito
+| DeCripto infringement and filer | Penalty / condition | Official source |
+|---|---|---|
+| Late PF reporting | R$ 100 per month or fraction | [IN 2291 art 13 I(c)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Late reporting, specified entities starting activity, immune/exempt, Simples, or last-return lucro presumido | R$ 500 per month or fraction; art 13§3 switches the stated multiple-method/reorganisation cases to the other entity rate | [IN 2291 art 13 I(a)/§3](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Other late entity reporting | R$ 1,500 per month or fraction | [IN 2291 art 13 I(b)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Inaccurate/incomplete/incorrect/omitted information | Entity 3% of the affected operation, minimum R$ 100; PF 1.5% of the affected operation | [IN 2291 art 13 II](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Failure to comply with RFB summons within its stipulated period | R$ 500 per calendar month | [IN 2291 art 13 III](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
+| Reductions and correction | Late-reporting fine halves if fulfilled before an official procedure; entity misinformation fine reduces 70% for Simples. Errors corrected before an official procedure escape the error/omission fine under art 15, not automatically the late-reporting fine | [IN 2291 art 13§§1–2/art 15](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709) |
 
-**Método Aceito**
+For January–June historical infringements use the old rule's applicable art 10–12, not a new penalty mechanically applied backwards. Late tax payment is also separate from late reporting: route the original liability, payment date and official updated payment calculation to `br-estimated-tax` for the pack's shared late-payment rule, with `br-income-tax` for the annual bridge; do not combine a reporting fine with a tax-payment charge. Historical IN 1888 guidance in RFB Q473 identifies reporting-fine DARF revenue code 5720. This does not establish the current DeCripto fine-payment code, which remains unconfirmed. [RFB Q473](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf). [IN 1888 arts 10–12](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/100592/visao/multivigente), [IN 2291 arts 13–19](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
 
-| Método | Status | Observações |
-| --- | --- | --- |
-| **Custo médio ponderado por unidade** | **Padrão / default** | A Receita Federal exige o custo médio ponderado |
-| Identificação específica | Não padrão | Não é o método default segundo orientação da RFB |
-| FIFO / LIFO | Não padrão | Não previstos pela Receita Federal para pessoa física |
-
-- **Cálculo do custo médio ponderado** — Novo custo médio = (custo total anterior + custo da nova aquisição) / quantidade total mantida  _(O método padrão para pessoas físicas brasileiras é o custo médio ponderado por unidade)_
-
-### 4.2 Componentes do Custo de Aquisição
-
-- Preço de compra em BRL (converter moeda estrangeira pela PTAX da data da aquisição)
-- Taxas de exchange e corretagem
-- Taxas de rede/gas diretamente atribuíveis à aquisição
-- Taxas de transferência
-
-### 4.3 Declaração do Custo de Aquisição no IRPF
-
-- Utilizar sempre o **custo de aquisição**, nunca o valor de mercado
-- Informar em "Bens e Direitos" → Grupo 08 → código apropriado
-- "Situação em 31/12/2024" = custo de aquisição ao final do exercício anterior
-- "Situação em 31/12/2025" = custo de aquisição atualizado ao final do exercício corrente
-- Em caso de venda integral no exercício, informar R$ 0,00 no saldo final do ano
-
-## Seção 5 -- DeFi, Staking, Mineração e Airdrops
-
-**DeFi, Staking, Mineração e Airdrops**
-
-| Atividade | Tratamento Tributário | Momento | Observações |
-| --- | --- | --- | --- |
-| Mineração (pessoa física, eventual) | Rendimento a valor de mercado quando os tokens forem vendidos | Na alienação | Custo de aquisição = despesas incorridas (energia etc.), se documentadas; caso contrário, zero |
-| Mineração (negócio/profissional) | Receita empresarial (PJ ou MEI) | No recebimento ou na alienação, conforme a contabilidade | Sujeita a tributos corporativos (Simples, Lucro Presumido ou Lucro Real) |
-| Recompensas de staking | Rendimento a valor de mercado no recebimento → fixa o custo de aquisição | No recebimento (para custo); ganho na alienação | Tratar como "rendimentos" — deve constar no IRPF; sujeito a GC na alienação |
-| Juros de empréstimo DeFi | Rendimento a valor de mercado no recebimento | No recebimento | Análogo a rendimento financeiro; pode ser classificado como "rendimentos de aplicação financeira" |
-| Provisão de liquidez | Adicionar ao pool = potencial alienação (swap); tokens LP = nova aquisição | A cada evento | Cada lado da entrada/saída de liquidez é fato gerador se o total no mês > R$ 35 mil |
-| Yield farming | Rendimento a valor de mercado no recebimento | No recebimento | Cada recebimento de token estabelece um novo custo de aquisição |
-| Airdrops (gratuitos) | Custo de aquisição = R$ 0; tributável na alienação se alienações mensais > R$ 35.000 | Na alienação | Devem ser declarados em "Bens e Direitos" do IRPF se o valor ≥ R$ 5.000 |
-| Airdrops (vinculados a serviço) | Rendimento a valor de mercado no recebimento | No recebimento | Incluir em "Rendimentos Tributáveis Recebidos de PF/Exterior" |
-| Hard forks | Novas moedas: custo de aquisição = R$ 0 | Na alienação | Declarar no IRPF; custo da moeda original permanece inalterado |
-
-## Seção 6 -- Tratamento de NFTs
-
-**Tratamento de NFTs**
-
-| Cenário | Tratamento |
-| --- | --- |
-| Compra de NFT | Aquisição pelo custo — custo de aquisição (Grupo 08, Código 10 no IRPF) |
-| Venda de NFT com lucro | Ganho de capital; sujeito ao de minimis de R$ 35.000/mês e às alíquotas progressivas |
-| Criação e venda (artista/criador) | Se habitual → receita empresarial (MEI, Simples ou Lucro Presumido); se eventual → rendimentos diversos via GCAP |
-| Permuta NFT → NFT | Fato gerador — cada lado avaliado a valor de mercado |
-| Royalties de NFT (smart contract) | Rendimento a valor de mercado no recebimento; declarar como rendimento |
-| Declaração obrigatória no IRPF | Sim, se o custo de aquisição ≥ R$ 5.000 em 31 de dezembro |
-
-## Seção 7 -- Obrigações Acessórias
-
-### 7.1 Obrigação Mensal — IN RFB 1.888/2019
-
-**Obrigação Mensal — IN RFB 1.888/2019**  _(Instrução Normativa RFB 1.888 (3 de maio de 2019), alterada pela IN RFB 2.065/2022.)_
-
-| Quem deve reportar | Quando | Como |
-| --- | --- | --- |
-| **Exchanges brasileiras** (ex.: Mercado Bitcoin, Foxbit, NovaDAX) | Mensalmente, todas as operações independentemente do valor | Automático — a exchange reporta à RFB |
-| **Pessoas físicas** que operam em exchanges estrangeiras (Binance, Coinbase, Kraken etc.) ou P2P | Mensalmente, se o total de operações > **R$ 30.000** no mês | Via e-CAC, sistema "Coleta Nacional" |
-| **Pessoas jurídicas** que operam em exchanges estrangeiras | Mensalmente, se o total de operações > **R$ 30.000** no mês | Via e-CAC |
-
-- **Prazo** — Último dia útil do mês seguinte ao das operações.  _(Instrução Normativa RFB 1.888 (3 de maio de 2019), alterada pela IN RFB 2.065/2022.)_
-- **Penalidades pelo descumprimento** — Pessoas físicas: até 1,5% do valor da operação não declarada; Pessoas jurídicas: até 3% do valor da operação não declarada; Entrega em atraso: a partir de R$ 100 por mês de atraso; Código de DARF para multas: 5720  _(Art. 10, IN 1.888)_
-
-### 7.2 Apuração Mensal no GCAP e Pagamento de DARF
-
-**Apuração Mensal no GCAP e Pagamento de DARF**
-
-| Etapa | Detalhe |
-| --- | --- |
-| 1. Apurar os ganhos | Utilizar o GCAP para cada mês com alienações > R$ 35.000 |
-| 2. Emitir DARF | Código 4600; período = mês/ano da alienação |
-| 3. Pagar DARF | Até o último dia útil do mês seguinte |
-| 4. Importar para o IRPF | No encerramento do exercício, importar dados do GCAP para a declaração anual |
-
-### 7.3 Declaração Anual do IRPF
-
-**Declaração Anual do IRPF**
-
-| Seção | Finalidade | Quem deve declarar |
-| --- | --- | --- |
-| **Bens e Direitos, Grupo 08** | Declarar todos os criptoativos pelo custo de aquisição | Quem detiver ≥ R$ 5.000 em qualquer tipo de cripto em 31 de dezembro |
-| **Rendimentos Isentos e Não Tributáveis** | Informar ganhos isentos (meses com alienações ≤ R$ 35.000) | Quem teve ganhos isentos com cripto |
-| **Rendimentos Sujeitos à Tributação Exclusiva** | Informar ganhos já tributados por DARF | Quem pagou DARF sobre ganhos com cripto |
-| **Dívidas e Ônus Reais** | Informar dívidas/empréstimos relacionados a cripto | Quando aplicável |
-
-- **Campo Discriminação** — O campo "Discriminação" deve incluir: quantidade detida, nome/símbolo do token, exchange ou forma de custódia (exchange brasileira, exchange estrangeira ou carteira de autocustódia) e data de aquisição.
-- **IRPF 2025 — localização** — A partir do IRPF 2025: o contribuinte deve indicar se o criptoativo está no Brasil (localização 105) ou no exterior (localização 106).
-
-### 7.4 Lei 14.478/2022 — Marco Legal das Criptos
-
-- **Lei 14.478/2022 — Marco Legal das Criptos** — Essa lei (sancionada em 21 de dezembro de 2022, com vigência a partir de 20 de junho de 2023) estabelece o marco regulatório das prestadoras de serviços de ativos virtuais (VASPs) no Brasil. Embora seja predominantemente regulatória (e não tributária), impacta o compliance fiscal porque: - Exige o credenciamento das VASPs junto ao Banco Central do Brasil (BCB) - Impõe compliance de PLD/KYC para as exchanges em operação no Brasil - Viabiliza melhor troca de informações entre as exchanges e a Receita Federal - O BCB foi designado regulador principal (Decreto 11.563/2023)  _(Lei 14.478/2022; Decreto 11.563/2023)_
-
-### 7.5 Decripto — Sucessor da IN 1.888
-
-A Receita Federal vem desenvolvendo o "Decripto" para substituir o regime de reporte da IN 1.888. O sistema trará formatos de dados mais padronizados, maior capacidade de cruzamento e menor margem para inconsistências. Os contribuintes devem acompanhar os comunicados da RFB quanto aos prazos de implementação.
-
-## Seção 8 -- Compensação e Transporte de Prejuízos
-
-**Compensação e Transporte de Prejuízos**
-
-| Regra | Detalhe |
-| --- | --- |
-| Compensação dentro do mês | Perdas com cripto podem compensar ganhos com cripto **no mesmo mês** |
-| Compensação entre meses | Perdas de um mês **não podem** ser transportadas para compensar ganhos em meses futuros |
-| Compensação entre classes de ativos | Perdas com cripto **não podem** compensar ganhos de outras classes (ex.: ações, imóveis) |
-| Transporte para frente | **Não permitido** para fins de ganho de capital de pessoa física |
-| Transporte para trás | **Não permitido** |
-| Implicação estratégica | Os contribuintes devem temporizar as alienações para compensar ganhos e perdas dentro do mesmo mês-calendário |
-
-Diferença crucial em relação a outras jurisdições: o Brasil não permite o transporte de perdas de capital com cripto. As perdas expiram ao final do mês em que ocorrem.
-
-## Seção 9 -- Regras Antielisivas
-
-**Regras Antielisivas**
-
-| Regra | Descrição |
-| --- | --- |
-| Norma geral antielisão (CTN, Art. 116, parágrafo único) | A autoridade fiscal pode desconsiderar atos sem substância econômica |
-| Preços de transferência | Aplicáveis a operações transfronteiriças com partes vinculadas (Lei 14.596/2023, alinhada à OCDE) |
-| Beneficiário final | A Receita Federal pode desconsiderar interpostas pessoas ou trusts |
-| Estruturação / fracionamento | Fracionar deliberadamente alienações entre meses para permanecer abaixo de R$ 35.000 é monitorado; se identificado como artificial, a RFB pode agregar |
-| Declaração de capitais no exterior | CBE (Capitais Brasileiros no Exterior) — declaração anual ao BCB para ativos no exterior > US$ 1 milhão (trimestral se > US$ 100 milhões) |
-| Regras de CFC | Residentes brasileiros com participações em entidades estrangeiras em jurisdições de baixa tributação: a renda pode ser atribuída anualmente (Lei 14.754/2023) |
-
-## Seção 10 -- Exemplos Resolvidos
-
-### Exemplo 1 -- Alienação Mensal Abaixo de R$ 35.000 (Isenta)
-
-**Dados:** Residente fiscal no Brasil. Em março de 2025, vendeu 0,5 BTC por R$ 30.000 no Mercado Bitcoin. Custo de aquisição (custo médio): R$ 20.000.
-
-**Apuração:**
-```
-Valor de alienação:        R$ 30.000
-Custo de aquisição:        R$ 20.000
-Ganho:                     R$ 10.000
-
-Total alienado em março:   R$ 30.000 (≤ limite de R$ 35.000)
-
-Imposto devido:            R$ 0 (isento — total alienado ≤ R$ 35.000)
+## Cross-border points
+
+Keep the three tests separate: asset location/nature for tax; provider/user scope for information reporting; aggregate foreign holdings for BCB CBE. Load `brazil-cross-border-tax` for CBE, residence, controlled entities, trusts and treaty questions. Use the official [CBE service](https://www.gov.br/pt-br/servicos/preencher-declaracao-de-capitais-brasileiros-no-exterior) for its current threshold/date tests; a crypto tax exemption is not a CBE exemption.
+
+Law 14478's virtual-asset framework is not proof that a provider is currently licensed, nor does reporting make a transaction tax exempt. Do not apply corporate transfer-pricing law to every individual's crypto transaction or claim that all asset sales in separate months are automatically aggregated as avoidance. Record ownership, counterparties, valuations and transaction history, and refer the specific disputed classification. [IN 2291 art 16](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709).
+
+## Two worked examples that recompute
+
+**1. Domestic threshold decision, with another crypto disposal.** Assume a resident's documented single-lot domestic sale has proceeds R$ 30,000 and cost R$ 20,000; no other disposals means R$ 10,000 gain is exempt. Alternatively, another domestic crypto sale that month has proceeds R$ 10,000/cost R$ 8,000. Total proceeds R$ 40,000 exceed the limit, so both positive gains are taxable: R$ 12,000 × 15%=R$ 1,800. No losses, special aggregation or costs are assumed. This is a classification/compliance comparison, not a recommendation to split transactions artificially. Information reporting still requires its separate operations test. [SC 184 conclusion 28](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933), [Lei 8981 art 21](https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21).
+
+```oa-check
+name: Domestic threshold with another crypto sale
+inputs:
+  sale_a: 30000
+  cost_a: 20000
+  sale_b: 10000
+  cost_b: 8000
+steps:
+  gain_a: sale_a - cost_a
+  proceeds_both: sale_a + sale_b
+  gains_both: gain_a + sale_b - cost_b
+  tax_both: gains_both * 0.15
+expected:
+  gain_a: 10000
+  proceeds_both: 40000
+  gains_both: 12000
+  tax_both: 1800
 ```
 
-**Declaração:** Informar o ganho em "Rendimentos Isentos e Não Tributáveis" no IRPF anual. Não há DARF a recolher. Não há obrigação de IN 1.888 (operação em exchange brasileira — reporta automaticamente).
+**2. Foreign annual financial regime with a documented loss.** Assume qualifying foreign financial crypto held by a foreign institution, all values already correctly established in BRL. Sales R$ 50,000+R$ 15,000 less costs R$ 30,000+R$ 8,000 give R$ 27,000 realized gains. A separately documented eligible foreign financial loss R$ 7,000 in the same annual period leaves R$ 20,000;15% tax is R$ 3,000 before any eligible foreign tax credit and the full annual-return reconciliation. It is not monthly GCAP/DARF 4600 and the domestic proceeds exemption is not used. The loss would not be netted against another disposal under the domestic ordinary regime. [Lei 14754 arts 2–3,9](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm), [IN 2180 arts 10–11](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente).
 
-### Exemplo 2 -- Alienação Mensal Acima de R$ 35.000 (Tributável)
-
-**Dados:** Residente fiscal no Brasil. Em julho de 2025:
-- Vendeu 1 BTC por R$ 50.000 na Binance (exchange estrangeira). Custo de aquisição: R$ 30.000.
-- Vendeu 2 ETH por R$ 15.000 na Coinbase (exchange estrangeira). Custo de aquisição: R$ 8.000.
-
-**Apuração:**
-```
-Total alienado em julho: R$ 50.000 + R$ 15.000 = R$ 65.000 (> R$ 35.000)
-
-Ganho BTC:  R$ 50.000 - R$ 30.000 = R$ 20.000
-Ganho ETH:  R$ 15.000 - R$ 8.000  = R$ 7.000
-Ganho total: R$ 27.000
-
-Imposto (alíquotas progressivas):
-  R$ 27.000 está integralmente na primeira faixa (≤ R$ 5 mi)
-  Imposto = R$ 27.000 × 15% = R$ 4.050
-
-Código de DARF: 4600
-Vencimento:     último dia útil de agosto de 2025
+```oa-check
+name: Foreign financial crypto annual loss
+inputs:
+  sale_a: 50000
+  sale_b: 15000
+  cost_a: 30000
+  cost_b: 8000
+  eligible_loss: 7000
+steps:
+  gross_gains: sale_a + sale_b - cost_a - cost_b
+  annual_net: gross_gains - eligible_loss
+  annual_tax_before_credit: annual_net * 0.15
+expected:
+  gross_gains: 27000
+  annual_net: 20000
+  annual_tax_before_credit: 3000
 ```
 
-**Declaração:**
-1. Pagar DARF (R$ 4.050) até o final de agosto de 2025
-2. Entregar a IN 1.888 via e-CAC (operações em exchange estrangeira > R$ 30.000 no mês)
-3. Importar dados do GCAP no IRPF anual (entrega até maio de 2026)
+### Retained staking scenario with an unresolved tax result
 
-### Exemplo 3 -- Rendimentos de Staking e Posterior Alienação
+The old scenario is retained as a fact pattern: a resident receives 1 ETH in rewards with total market value of R$ 10,000 at receipt dates, then sells that ETH domestically for R$ 12,000. If a separately verified legal basis were R$ 10,000, the subtraction would be R$ 2,000. The contract, custodian, counterparty and reward mechanism are missing, so receipt taxation and acquisition basis are unresolved. Do not certify the old zero-tax answer or assume that every receipt is the Brazilian custodial-lending case in SC 184. Confirm other disposals in that sale month as well. Keep receipt and disposal schedules while the affected classification is referred. [SC 184 scope 7–9 and conclusion 28(a)](https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933).
 
-**Dados:** Residente fiscal no Brasil. Em 2025:
-- Recebeu 1 ETH em recompensas de staking ao longo do ano. O valor de mercado em cada data de recebimento totaliza R$ 10.000.
-- Em dezembro, vendeu o 1 ETH staked por R$ 12.000 no Mercado Bitcoin.
-
-**Apuração:**
-```
-Rendimentos de staking:
-  Custo de aquisição do ETH recebido = R$ 10.000 (VM nas datas de recebimento)
-  Declarar como rendimento no momento do recebimento
-
-Alienação em dezembro:
-  Total alienado em dezembro: R$ 12.000 (≤ R$ 35.000)
-  Ganho: R$ 12.000 - R$ 10.000 = R$ 2.000
-  Imposto: R$ 0 (isento — total alienado ≤ R$ 35.000)
+```oa-check
+name: Retained staking scenario arithmetic only, basis unresolved
+inputs:
+  reward_eth: 1
+  receipt_market_values_total: 10000
+  sale_proceeds: 12000
+  assumed_basis_for_subtraction_only: 10000
+steps:
+  conditional_difference: sale_proceeds - assumed_basis_for_subtraction_only
+  closing_quantity_after_full_sale: reward_eth - reward_eth
+expected:
+  conditional_difference: 2000
+  closing_quantity_after_full_sale: 0
 ```
 
-**Declaração:** Informar o rendimento de staking no IRPF. Declarar a posição de ETH em Bens e Direitos (Grupo 08, Código 02). Ganho isento em "Rendimentos Isentos".
+## Ask the client first
 
-## Autoverificações
+Use the existing record/documents before asking for these six fact groups:
 
-Antes de finalizar qualquer apuração de tributos sobre criptoativos no Brasil:
+1. Calendar year, residence changes, owner/entity and any foreign controlled entity/trust involvement.
+2. Asset rights/type and actual custody/provider domicile, including self-custody and migrations.
+3. Complete dated buys, disposals, swaps, transfers and receipts across all wallets/providers, with transaction hashes.
+4. Quantities, acquisition/basis records, currency conversion evidence, fees and records explaining missing/transferred lots.
+5. Reward/lending/service/gift/inheritance contracts, receipt valuations, holding periods and withholding evidence.
+6. Prior reports/returns, eligible loss/foreign-credit records, payments, notices and corrections already submitted.
 
-- [ ] Confirmado que o contribuinte é residente fiscal no Brasil (domicílio fiscal no Brasil)
-- [ ] Total mensal de alienações calculado em TODAS as exchanges e carteiras combinadas
-- [ ] Limite de minimis de R$ 35.000 aplicado corretamente (com base no valor total alienado, não no ganho)
-- [ ] DARF emitida e paga em todos os meses em que as alienações ultrapassaram R$ 35.000
-- [ ] IN 1.888 entregue mensalmente para operações em exchanges estrangeiras > R$ 30.000
-- [ ] Custo de aquisição apurado pelo método do custo médio ponderado
-- [ ] Todos os saldos de cripto ≥ R$ 5.000 por tipo declarados no IRPF Bens e Direitos (Grupo 08)
-- [ ] Ganhos isentos informados em "Rendimentos Isentos e Não Tributáveis"
-- [ ] Ganhos tributados importados do GCAP para o IRPF
-- [ ] Rendimentos de staking/mineração/airdrop incluídos e custo de aquisição estabelecido
-- [ ] Sem transporte de prejuízos entre meses (vedado no Brasil)
-- [ ] Ativos em exchanges estrangeiras informados em CBE quando aplicável (> US$ 1 milhão no exterior)
+Reconcile opening quantity+receipts−outflows=closing quantity for each asset and account; match own transfers on both sides. Preserve bank/fiat and exchange ledgers separately, then bridge them without treating every bank deposit as a new taxable gain. Before completion verify the domestic/foreign split, exemption aggregation, loss restrictions, dated reporting regime, filing/payment receipts and open gaps. Missing facts block only the dependent output. No filing/payment is implied by preparing working papers.
 
-## Aviso Legal
+## Sources
 
-Esta skill e seus resultados são fornecidos exclusivamente para fins informativos e de apoio à apuração e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus colaboradores não se responsabilizam por erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e assinados por um profissional habilitado (como contador registrado no CRC, advogado tributarista ou profissional licenciado equivalente no Brasil) antes da entrega ou de qualquer providência.
+| Source and portion read | URL | Read on |
+|---|---|---|
+| Lei 14754, arts 2–4,9,15,47: annual foreign financial income, losses, FX and effective dates | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm |2026-11-11 |
+| IN 2180, current original structured text; arts 2,8–12: classification, location, annual rate, losses and credits | https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/136603/visao/multivigente |2026-11-11 |
+| SC 184,24 June 2024; ementas, facts 7–9, discussion 19–24 and conclusion 28 | https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/138933 |2026-11-11 |
+| Lei 8981 current art 21 including marginal bands and partial-disposal aggregation | https://www.planalto.gov.br/ccivil_03/leis/l8981.htm#art21 |2026-11-11 |
+| IN 84 current arts 2,5,17–20,30–31: ordinary gain, costs, non-cash values, gifts, payment | https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/14400/visao/vigente |2026-11-11 |
+| IN 1888 historical reporting main articles; repeal/effects checked against IN 2291 | https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/100592/visao/multivigente |2026-11-11 |
+| IN 2291 main arts 1–19 and AnnexI definitions: reporting, dates, fees/FX, penalties and corrections | https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/147709 |2026-11-11 |
+| DeCripto manual actualv 1.01: version table,pp 7–9, operation tables and user sections 5–6 | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/manual-orientacao-leiaute-criptoativos/manual-de-orientacao-do-leiaute-da-decripto-v1.pdf |2026-11-11 |
+| RFB official foreign-income FAQ Q 18–20: asset nature/self-custody; complements IN 2180 | https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/abril/receita-federal-e-secretaria-da-reforma-tributaria-lancam-atualizacao-do-perguntas-e-respostas-sobre-tributacao-de-rendimentos-no-exterior/perguntas-e-respostas-offshores-lei-14-754-e-in-rfb-2-180.pdf |2026-11-11 |
+| RFB exercise 2026 QA actualv 1.03, Q 473/653; calendar 2025 form references only, with noted inconsistency below | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf |2026-11-11 |
+| RIR 2018 art 47 IV, remuneration in assets | https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm |2026-11-11 |
+| RFB GCAP directory, applicable-year program entries and stated calculation purpose | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/gcap |2026-11-11 |
+| BCB-owned CBE service, trigger paragraphs; owner Guide handles full CBE computation/calendar | https://www.gov.br/pt-br/servicos/preencher-declaracao-de-capitais-brasileiros-no-exterior |2026-11-11 |
 
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão por contador habilitado e acompanhar atualizações conforme a legislação for alterada.
+RFB Q 653 retains a progressive-rate warning inside its current foreign-financial subsection. Apply Lei 14754/IN 2180's annual 15% to qualifying foreign financial assets, rather than copying that inconsistent warning. Its old IN 1888 procedure is also not the July 2026 DeCripto procedure.
+
+Not yet confirmed: current DeCripto reporting-fine payment code (historical IN1888 code5720 is not assumed current); universal crypto weighted-average, identification, FIFO or LIFO; all gas/transfer-fee and self-transfer basis adjustments; native protocol staking; mining receipt/cost/professional-MEI treatment; pure airdrop and hardfork basis; liquidity-pool entry/exit, wrapping, bridging, farming and liquidation; NFT creator/business treatment and NFT royalty income/basis/withholding; annual crypto-related debt/liability entry rules; lost keys/theft losses; decentralised arrangements' tax location beyond the stated institution/self-custody cases; state-specific ITCMD; current BCB provider-licensing requirements and the old framework's commencement/decree details; scope of CTN 116 and interposed-person/trust anti-avoidance assertions beyond the sourced foreign-tax regimes; any blanket CBS/IBS exclusion; a general artificial-monthly-sales aggregation rule; exercise 2027 annual-return boxes/software/deadline. Refer affected components and continue verified ordinary work; do not invent these answers.
+
+Find the Brazil Guide library and professional-review options at [OpenAccountants](https://openaccountants.com). This draft's source-cited status does not itself attest a taxpayer's return.

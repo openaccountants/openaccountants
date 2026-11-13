@@ -7,20 +7,23 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `si-company-formation.md`
-4. `si-corporate-income-tax.md`
-5. `si-cross-border.md`
-6. `si-tax-overview.md`
-7. `si-transfer-pricing.md`
-8. `slovenia-income-tax.md`
-9. `slovenia-payroll.md`
-10. `slovenia-social-contributions.md`
-11. `slovenia-tax-optimization.md`
-12. `slovenia-vat-return.md`
-13. `eu-vat-directive.md`
-14. `payroll-workflow-base.md`
-15. `company-formation-workflow-base.md`
-16. `transfer-pricing-workflow-base.md`
+3. `README.md`
+4. `si-company-formation.md`
+5. `si-corporate-income-tax.md`
+6. `si-cross-border.md`
+7. `si-tax-overview.md`
+8. `si-transfer-pricing.md`
+9. `slovenia-income-tax.md`
+10. `slovenia-payroll.md`
+11. `slovenia-social-contributions.md`
+12. `slovenia-tax-optimization.md`
+13. `slovenia-vat-return.md`
+14. `eu-vat-base.md`
+15. `eu-vat-directive.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
+19. `workflow-base.md`
 
 ## How to use
 

@@ -13,6 +13,14 @@
 /scripts/build-*.py @michaelcutajar1995
 /scripts/build-derived.sh @michaelcutajar1995
 
+# Admission checks and delivery decide what enters the library and reaches users.
+/scripts/validate-guides.py @michaelcutajar1995
+/scripts/skill_checks.py @michaelcutajar1995
+/scripts/check-sync-integrity.py @michaelcutajar1995
+/scripts/deliver-to-platform.py @michaelcutajar1995
+/scripts/domains.py @michaelcutajar1995
+/docs/domains.yml @michaelcutajar1995
+
 # Licence and legal terms: changes here change what we can sell.
 /LICENSE @michaelcutajar1995
 /LICENSES/ @michaelcutajar1995

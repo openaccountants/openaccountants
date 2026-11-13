@@ -6,7 +6,7 @@ Concatenates, in order:
   1. The current llms.txt (must exist; run after any llms.txt rewrite)
   2. A divider
   3. A compact one-line-per-guide inventory from index.json
-     ("- <slug> | <jurisdiction> | tier <tier> | reviewed_by <reviewed_by or ->")
+     ("- <mcp_slug> | <jurisdiction> | tier <tier> | reviewed_by <reviewed_by or ->")
   4. A divider
   5. The full text of docs/GOAL.md and docs/QUALITY-TIERS.md
 
@@ -34,16 +34,17 @@ def read_text(rel_path):
 def guide_inventory():
     index = json.loads(read_text("index.json"))
     lines = ["## Skill inventory "
-             f"({index['counts']['guides']} skills, "
-             f"{index['counts']['jurisdictions']} jurisdictions, "
-             f"{index['counts']['accountant_reviewed']} accountant-reviewed)", ""]
+             f"({index['counts']['loadable_skill_names']} distinct MCP names)", "",
+             "Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.", ""]
     for guide in index["guides"]:
+        if not guide.get("mcp_slug"):
+            continue  # Repository documents and authoring templates are not MCP skills.
         jurisdiction = guide.get("jurisdiction") or "-"
         tier = guide.get("tier")
         tier = "-" if tier is None else tier
         reviewed_by = guide.get("reviewed_by") or "-"
         lines.append(
-            f"- {guide['slug']} | {jurisdiction} | tier {tier} | reviewed_by {reviewed_by}"
+            f"- {guide['mcp_slug']} | {jurisdiction} | tier {tier} | reviewed_by {reviewed_by}"
         )
     return "\n".join(lines)
 

@@ -35,11 +35,11 @@ You don't need to be an accountant, and you don't need an account with us. Many 
 
 1. **Pick the work.** Find your country in [skills/COUNTRIES.md](skills/COUNTRIES.md), or take an open issue for it. Comment `taking` so nobody duplicates you. We do not cover Russia, Belarus, Cuba, Iran, North Korea or Syria (broad embargo), or Afghanistan, Central African Republic, DR Congo, Haiti, Iraq, Lebanon, Libya, Somalia, South Sudan, Sudan or Guinea-Bissau (UN Security Council sanctions); the list is [scripts/data/sanctioned.yml](scripts/data/sanctioned.yml), and the checks refuse files for them.
 2. **Check it doesn't exist.** One task in one country has one skill. Search [skills/REGISTER.csv](skills/REGISTER.csv). If it exists, improve it.
-3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, two worked examples that recompute.
+3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, and the worked examples required by its declared `type:`.
 4. **Run the checks:** `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.
 5. **Open a pull request.** There is nothing to sign: opening it means you accept the [contributor terms](CONTRIBUTOR-TERMS.md).
 
-Before merging, a separate reviewer (a person, or a separate AI agent) re-reads the law, checks every figure and recomputes both examples. Once merged, the skill goes live as **Built from the law**, and your GitHub name is in its history.
+Before merging, a separate reviewer (a person, or a separate AI agent) re-reads the law, checks every figure and recomputes every example required by its shape. An incomplete or sampled automated review is not that full review record. Once merged, the skill goes live as **Built from the law**, and your GitHub name is in its history.
 
 ## 2. Approve a skill (accountants)
 
@@ -48,9 +48,9 @@ Approval puts your name on the skill: **Approved by [your name]**, on the websit
 **Start with one skill.** Our way of working is new, so every accountant begins with one task, one country, one tax year, agreed with us. When it is live, you can take more.
 
 1. **Create your free account** at [openaccountants.com/onboarding/accountant](https://www.openaccountants.com/onboarding/accountant) with your licence or membership number. We check it privately. It is never shown.
-2. **Add yourself to [accountants.yml](accountants.yml)** in your first pull request: one line, `your-github-username: Your Name`, using the same name as your account.
+2. **Open a separate pull request adding your GitHub account to [accountants.yml](accountants.yml).** Add one line, `your-github-username: Your Name`, using the same name as your account. Wait for it to merge before submitting a skill approval. The new roster entry cannot prove your identity for an approval in that same PR.
 3. **Write your skill, or take one that has no accountant yet**, and review all of it.
-4. **Approve it in the same pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
+4. **Approve it in the skill pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
 
 The skill stays yours. When the next tax year comes, you update it and approve it again. If the text of an approved skill changes, its approval clears until you approve the new version. If an accountant does not respond for 30 days, another accountant can ask us to take the skill over.
 

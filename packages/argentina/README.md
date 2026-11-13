@@ -14,10 +14,18 @@
 7. `ar-social-contributions.md`
 8. `ar-tax-overview.md`
 9. `ar-vat-return.md`
-10. `argentina-income-tax.md`
-11. `argentina-iva.md`
-12. `references.md`
-13. `company-formation-workflow-base.md`
+10. `argentina-cross-border.md`
+11. `argentina-income-tax.md`
+12. `argentina-iva.md`
+13. `argentina-payroll.md`
+14. `argentina-transfer-pricing.md`
+15. `references.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
+19. `workflow-base.md`
+20. `income-tax-workflow-base.md`
+21. `vat-workflow-base.md`
 
 ## Also known as
 

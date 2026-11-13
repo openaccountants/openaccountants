@@ -11,6 +11,7 @@
 4. `aw-individual-income-tax.md`
 5. `aw-social-contributions.md`
 6. `aw-turnover-taxes.md`
+7. `workflow-base.md`
 
 ## How to use
 

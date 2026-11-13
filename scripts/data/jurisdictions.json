@@ -399,6 +399,13 @@
   "dir": "skills/fiji"
  },
  {
+  "code": "FK",
+  "name": "Falkland Islands",
+  "region": "americas",
+  "owner": "open",
+  "dir": "skills/falkland-islands"
+ },
+ {
   "code": "FO",
   "name": "Faroe Islands",
   "region": "europe",
@@ -1678,13 +1685,6 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/saint-vincent-and-the-grenadines"
- },
- {
-  "code": "VE",
-  "name": "Venezuela",
-  "region": "americas",
-  "owner": "jeff",
-  "dir": "skills/venezuela"
  },
  {
   "code": "VG",

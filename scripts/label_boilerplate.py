@@ -31,6 +31,10 @@ LINES = [re.compile(p) for p in (
     r"^Built by Michael Cutajar and the OpenAccountants team\.(?: (?:\*\*)?Source-cited draft: not reviewed by an accountant\.(?:\*\*)?)?\s*$",
     r"^\|\s*Validated [Bb]y\s*\|\s*Pending[^|]*\|\s*$",
     r"^\|\s*Quality tier\s*\|[^|]*\|\s*$",
+    # Old reviewer lines in the body. Who approved a skill lives in the frontmatter
+    # (reviewed_by); a body line naming a reviewer is a label claim, not tax content.
+    r"^>?\s*Reviewed against the cited tax authorities by .*$",
+    r"^\|\s*(?:Validated by|Validation date|Verified by)\s*\|[^|]*\|\s*$",
 )]
 
 RENAMES = (

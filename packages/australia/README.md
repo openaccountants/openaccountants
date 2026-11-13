@@ -74,6 +74,8 @@
 67. `crypto-tax-workflow-base.md`
 68. `australia-guided-intake.md`
 69. `australia-return-assembly.md`
+70. `workflow-base.md`
+71. `income-tax-workflow-base.md`
 
 ## Also known as
 

@@ -1,610 +1,239 @@
 ---
 name: paraguay-income-tax
-description: "Use this skill whenever asked about Paraguay personal income tax (IRP) for self-employed individuals and personal-service providers. Trigger on phrases like \"how much tax do I pay in Paraguay\", \"IRP\", \"Impuesto a la Renta Personal\", \"Form 715\", \"Form 716\", \"RSP\", \"RGC\", \"renta neta\", \"declaración jurada\", \"allowable deductions Paraguay\", \"IPS contributions\", \"aporte obrero\", \"aporte patronal\", \"Marangatú\", \"RUC registration\", \"salario mínimo\", \"self-employed tax Paraguay\", or any question about filing or computing income tax for a Paraguayan resident with Paraguay-source income. Also trigger when preparing or reviewing an IRP RSP (715) or IRP RGC (716) return, computing documented deductible expenses, or advising on IPS social-security contributions and IVA interaction. This skill covers the territorial basis, the 8%/9%/10% progressive scale (personal services), the flat 8% capital regime, the gross-income filing threshold, IPS rates, minimum wage, penalties, and interaction with IVA. "
+description: "Paraguay personal income tax (Impuesto a la Renta Personal, IRP) for the 2026 fiscal year under Ley N° 6380/2019 and its regulation Decreto N° 3184/2019, for resident individuals: employees, independent professionals and other self-employed people (personal services, RSP, Form 515), and individuals with rent, interest, dividends, royalties and capital gains (capital income, RGC, Form 516). Covers the G 80,000,000 gross-income threshold and how the first year works, the 8%/9%/10% scale on net income, the flat 8% on capital income with the 30% and 50% presumed bases, the deductible business and personal outgoings (food, clothing, housing, health, education, one car every 3 years, one home every 5 years, donations up to 5%), the funding rule, exemptions, withholdings, the March RUC-digit deadline and penalties. Trigger on: how much tax do I pay in Paraguay, IRP, IRP RSP, IRP RGC, Formulario 515, Formulario 516, renta neta, Marangatu, freelancer Paraguay, salary tax Paraguay, rental income"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/paraguay-income-tax"
   jurisdiction: "PY"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Paraguay Personal Income Tax (IRP) -- Self-Employed
+# Paraguay personal income tax (IRP): 2026 threshold, scale, deductions and filing v0.2
 
-## Paraguay Personal Income Tax (IRP) -- Self-Employed Skill v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 -- Quick Reference
+The law is Ley N° 6380/2019 "De Modernización y Simplificación del Sistema Tributario Nacional", Libro I, Título III (arts. 47 to 70), read in the text published by the Biblioteca y Archivo Central del Congreso Nacional (BACN). The regulation is the Anexo to Decreto N° 3184/2019, read in the copy published by the Dirección Nacional de Ingresos Tributarios (DNIT, which replaced the Subsecretaría de Estado de Tributación, SET, under Ley N° 7143/2023). The DNIT list of tax laws, checked on 11 November 2026, shows no law amending the IRP articles since 2019. Penalties come from Ley N° 125/1991. Amounts are in guaraníes (G). The fiscal year is the calendar year (art. 52): tax year 2026 runs from 1 January to 31 December 2026, and its return is due in March 2027.
 
-**Quick Reference table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Paraguay (Republic of Paraguay) |
-| Tax | Personal Income Tax -- IRP (Impuesto a la Renta Personal) |
-| Currency | Guaraní (PYG / ₲) only |
-| Tax year | Calendar year (1 January -- 31 December); liability originates at close of fiscal year (31 Dec) [PwC tax administration] |
-| Basis | **Territorial** -- only Paraguay-source income is taxed; foreign-source income generally exempt [Ley 6380/19; PwC] |
-| Primary legislation | Ley N° 6380/2019 ("Modernización y Simplificación del Sistema Tributario Nacional"), in force since Jan 2020 |
-| Supporting legislation | Arts. 14-15, 64 Ley 6380/19 (deductions); Ley N° 125/1991 (Tax Code -- penalties); RG N° 90/2021 (Marangatú e-filing) |
-| Tax authority | DNIT -- Dirección Nacional de Ingresos Tributarios (formerly SET) |
-| Social security authority | IPS -- Instituto de Previsión Social |
-| Labour / minimum wage authority | MTESS -- Ministerio de Trabajo, Empleo y Seguridad Social |
-| Filing portal | Marangatú (electronic; RG N° 90/2021) |
-| Filing deadline | Annual return + payment in **March** of the following year; exact day set by last digit of RUC ("calendario perpetuo") [PwC; DNIT IRP] |
-| Validation date | Pending |
-| Skill version | 0.1 |
+- **Taxpayers** (art. 49): individuals, Paraguayan or foreign, who are resident in Paraguay; undivided estates until the assets are allotted (art. 50; the estate keeps the deceased's RUC, Decreto 3184 art. 3); parents, guardians and curators for the income of those in their care (one parent includes it, Decreto 3184 art. 4); and Paraguayan members of diplomatic, consular and official missions abroad paid by the State.
+- **Spouses** are taxed separately: each declares 100% of their own work income and of income from their own assets, and income from community assets goes to the spouse who holds title (art. 51).
+- **Two categories, computed separately** (art. 53): capital income (rentas y ganancias del capital, RGC) and personal-services income (rentas derivadas de la prestación de servicios personales, RSP). Costs and gains of one category never offset the other.
+- **What is Paraguayan source** (art. 48): activities in Paraguay, assets located and rights used in Paraguay; interest on capital placed in Paraguay; any pay from the Paraguayan State; and services performed **abroad** by an IRP taxpayer for IRE or IRP taxpayers. Foreign-source income is otherwise outside the IRP.
+- **Personal services (RSP)** (art. 62): independent professional or non-professional work, salaries and bonuses, travel allowances not accounted for, directors' fees, crew pay on Paraguayan-based vessels or vehicles, public-sector retirement incentives, and any other pay for personal work. Employee benefits under Ley 285/1993 and staff participation bonds count too (Decreto 3184 art. 51).
+- **Capital income (RGC)** (art. 57): dividends and profits **not** taxed by IDU (sociedades simples, cooperatives, mutuals); interest and financial returns from residents; transparent-structure income; royalties; gains on shares or rights giving use of Paraguayan property; sale or letting of real estate; sale of movable goods located in Paraguay; lottery and similar prizes; free transfers of assets; share redemptions above capital contributed; and any unexplained increase in wealth.
 
-### IRP Categories and Forms
+**When to refer.** Refer to a specialist for: sole-owner businesses and companies, which pay IRE ([paraguay-corporate-income-tax](paraguay-corporate-income-tax.md)); non-residents, who pay the non-resident tax (INR) by withholding (Ley 6380 arts. 71 to 79); diplomatic staff abroad (special 10% base, Decreto 3184 art. 63); unexplained wealth assessments; arrears and enforcement; a tax audit. IVA: [paraguay-iva](paraguay-iva.md). Employee and employer IPS contributions and the minimum wage: [paraguay-social-contributions](paraguay-social-contributions.md) and [paraguay-payroll](paraguay-payroll.md).
 
-**IRP Categories and Forms table**
+## Rates, bands and thresholds
 
-| Category | Form / obligation code | Basis | Rate |
-| --- | --- | --- | --- |
-| Personal services income (RSP -- Rentas de Servicios Personales) | **715 -- IRP RSP** | Net income (renta neta) | Progressive 8% / 9% / 10% [PwC; Ley 6380/19] |
-| Capital gains & income (RGC -- Rentas y Ganancias del Capital) | **716 -- IRP RGC** | Net income | Flat **8%** [PwC; DNIT IRP] |
+Quick answer: **personal services are taxed only once gross personal-services income in the year passes G 80,000,000**, and then on net income at 8%, 9% and 10% by slices. **Capital income is taxed at a flat 8%** on its net income.
 
-### Tax Rate Brackets -- Personal Services (RSP), tax year 2025
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| RSP: gross personal-services income at which the individual becomes liable (art. 62; art. 69 last paragraph) | Above G 80,000,000 counted from 1 January; at or below it, formal duties only for someone already registered, no tax | 2026 | https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional |
+| RSP rate, net income up to G 50,000,000 (art. 69) | 8% | 2026 | same |
+| RSP rate, net income G 50,000,001 to G 150,000,000 (art. 69) | 9% on that slice | 2026 | same |
+| RSP rate, net income from G 150,000,001 (art. 69) | 10% on that slice | 2026 | same |
+| RGC rate (art. 60) | 8% | 2026 | same |
+| RGC, sale of real estate, movables, shares or rights: net income (art. 59.1) | The lower of 30% of the sale price and the documented gain (price less documented cost plus selling costs or capital contributed) | 2026 | same |
+| RGC, letting of real estate: net income, taxpayer's choice (art. 59.2) | 50% of the rent, or rent less property tax, maintenance, management and administration costs that are real and documented | 2026 | same |
+| RGC, royalties, interest, dividends not taxed by IDU, prizes, other income (art. 59.3, 59.5, 59.6) | 100% of the amount received | 2026 | same |
+| Exempt: sales of movable goods in the year totalling no more than (art. 56.3) | G 20,000,000 | 2026 | same |
+| Exempt: lottery and similar prizes in Paraguay below (art. 56.13) | G 500,000 | 2026 | same |
+| Dependent family members: income limit for adult children studying, grandparents, parents and parents-in-law (art. 65.3) | Each with income not above G 30,000,000 a year | 2026 | same |
+| Car purchase deduction (art. 64.3) | One car every 3 years | 2026 | same |
+| Home purchase, building or renovation deduction (art. 66) | One property every 5 years; a loss from it carries forward 5 years, capped at 20% of RSP net income each year | 2026 | same |
+| Funding rule for all RSP deductions (art. 64) | Paid out of this year's IRP-taxed income, bank, finance, credit-house or cooperative loans, or the untaxed remainder of the last 5 years' taxed net income less tax paid | 2026 | same |
+| Donations, fees and contributions to the State, religious entities, recognised public-benefit entities, associations, sports clubs, unions and fire brigades (Decreto 3184 art. 57) | Deductible up to 5% of gross taxable income of the year, in total | 2026 | https://www.dnit.gov.py/documents/47797/47809/Decreto+N%C2%B0+3184-19.pdf/6eaa47e9-504b-fc0b-6a03-4dc2b267e2a8 |
+| Registration after passing the threshold (Decreto 3184 art. 60) | Within 30 working days of passing G 80,000,000 | 2026 | same |
+| End of the RSP filing duty (Decreto 3184 art. 62) | After two consecutive fiscal years at or below G 80,000,000, from the next year | 2026 | same |
+| Withholding on lottery and gaming prizes (Ley 6380 art. 61; Decreto 3184 art. 50) | 8% of each cash prize of G 500,000 or more, final | 2026 | same |
 
-**Tax Rate Brackets -- Personal Services (RSP), tax year 2025**  _([Source: PwC, last reviewed 7 Feb 2026, https://taxsummaries.pwc.com/paraguay/individual/taxes-on-personal-income ; statutory basis Ley 6380/19])_
+No decree updating the G 80,000,000 threshold for inflation under art. 139 was found on the DNIT decree list on 11 November 2026, and the DNIT IRP guides still show it.
 
-| Annual net taxable income (PYG) | Marginal rate | Cumulative tax at top of band |
-| --- | --- | --- |
-| Up to 50,000,000 | 8% | ₲4,000,000 |
-| 50,000,001 -- 150,000,000 | 9% | ₲13,000,000 |
-| 150,000,001 and above | 10% | -- |
+## The base
 
-- **Cumulative-tax check** — band 1 = 50,000,000 × 8% = ₲4,000,000. Band 2 = 100,000,000 × 9% = ₲9,000,000; cumulative at ₲150,000,000 = 4,000,000 + 9,000,000 = ₲13,000,000. Band 3 marginal 10% above ₲150,000,000.
+**Cash basis.** Income is taxed when received and costs when actually paid (art. 52). Capital income from financial instruments is taken when settled; a free transfer of assets is taxed when the asset is later sold; dividends follow the distribution timing of art. 44 (art. 58).
 
-### Capital Gains & Income (RGC) -- Form 716
+**RSP gross income (art. 63).** All personal-services income received in the year. Left out: medical cover the employer pays directly to a provider for the employee (but cash to buy cover, or a reimbursement, is taxable; Decreto 3184 art. 53) and **the employee's own contributions to IPS or another statutory pension scheme**. Shopping vouchers, food cards and school fees paid by the employer are taxable (Decreto 3184 art. 54). The aguinaldo (13th salary) and statutory severance up to the legal minimum are exempt (art. 56).
 
-**Capital Gains & Income (RGC) -- Form 716 table**
+**The first year.** Someone becomes liable once cumulative gross personal-services income since 1 January passes G 80,000,000. In that first year the tax is on **all** gross income received in the year, less only the deductible outgoings made **from the day after** passing the threshold. From the next year, all outgoings from 1 January count (art. 62). The DNIT treats the first fiscal year as running from that day to 31 December ([DNIT, IRP RSP guide](https://www.dnit.gov.py/documents/20123/233435/IRP+RSP+Cartilla+6.08.24.pdf/bb45c6ef-0c98-771a-c530-ac893db6bce2)).
 
-| Income type | Rate |
-| --- | --- |
-| Dividends, interest, royalties, rentals, capital gains | Flat **8%** on net income [PwC; DNIT IRP] |
-
-### Gross-Income Filing / Payment Threshold (RSP)
-
-**Gross-Income Filing / Payment Threshold (RSP) table**
-
-| Item | Value |
-| --- | --- |
-| Annual gross personal-services income below which IRP is **not payable** | ₲80,000,000 per year [PwC] |
-| Above the threshold | Progressive 8% / 9% / 10% scale applies on **net** income |
-
-- **Important distinction** — the ₲80,000,000 figure is the gross-income registration/payment threshold. The 8%/9%/10% brackets are applied to net taxable income (renta neta), not to gross turnover.  _([PwC])_
-
-### Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown IRP category (RSP 715 vs RGC 716) | STOP -- ask whether income is from personal services or from capital |
-| Unknown whether expense is documented with legal invoice | NOT deductible (no invoice = no deduction) |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown residency / RUC registration | STOP -- confirm RUC registration before computing |
-| "Standard deduction %" requested | Do NOT apply a fixed % -- deductions are documentation-based [RESEARCH GAP -- no statutory standard deduction; see Section 5.3] |
-| Unknown whether income is Paraguay-source | Treat as out of scope until source confirmed (territorial system) |
-| IPS contribution base unknown | Use actual gross salary; never below the legal minimum wage floor |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-- **Minimum viable** — bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of RUC registration, IRP category (RSP 715 / RGC 716), and that the income is Paraguay-source.
-- **Recommended** — all legal invoices (facturas) issued and received, IPS contribution records (if an employer or employee), prior-year declaración jurada or DNIT assessment, IVA registration status.
-- **Ideal** — complete income and expenditure account, asset/expense register cross-referenced to legal invoices, Marangatú voucher register, evidence that deductions were funded from IRP-taxed income (Arts. 14-15 Ley 6380/19).  _(Arts. 14-15 Ley 6380/19)_
-- **Refusal if minimum is missing -- SOFT WARN** — No bank statement at all = hard stop. Bank statement without legal invoices = proceed with reviewer warning: "This IRP computation was produced from bank statement alone. Under Art. 64 Ley 6380/19, deductions require a properly documented legal invoice (factura legal) representing a real expense directly related to the taxed activity. The reviewer must verify documentation before any deduction is claimed."  _(Art. 64 Ley 6380/19)_
-
-### Refusal Catalogue
-
-- **R-PY-1 -- IRP category unknown** — "IRP has two regimes: RSP (Form 715, personal services, progressive 8%/9%/10%) and RGC (Form 716, capital, flat 8%). This skill cannot compute tax without knowing which applies. Please confirm the nature of the income."
-- **R-PY-2 -- Companies / corporate income** — "This skill covers resident individuals (IRP) only. Corporate income (IRE -- Impuesto a la Renta Empresarial) and simplified business regimes have separate rules. Escalate to a Paraguayan licensed accountant."
-- **R-PY-3 -- Non-resident / foreign-source income** — "Paraguay's IRP is territorial. Non-resident taxation and the source classification of cross-border income require specialised analysis. Out of scope. Escalate to a Paraguayan licensed accountant."
-- **R-PY-4 -- Complex capital gains / property disposals** — "Capital gains computations under the RGC regime (real estate, securities, share transfers) require specialised analysis of cost basis and source. Escalate to a Paraguayan licensed accountant."
-- **R-PY-5 -- Arrears / enforcement** — "Client has outstanding tax debt or is subject to DNIT enforcement. Mora, omisión de pago and defraudación penalties under Ley 125/1991 are severe. Note the exceptional regularization regime running to 31 Aug 2026 for periods closed up to December 2023. Do not advise. Escalate to a Paraguayan licensed accountant immediately."
-- **R-PY-6 -- IVA (VAT) return requested** — "This skill covers personal income tax (IRP) only. For Paraguay IVA, use the paraguay-vat skill if available."
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Paraguay statements are in Spanish. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules. **Every claimed deduction additionally requires a legal invoice (factura legal) under Art. 64 Ley 6380/19 -- bank match alone is not sufficient.**
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**Income Patterns table**
-
-| Pattern | IRP Treatment | Notes |
-| --- | --- | --- |
-| Client name + TRANSFERENCIA, DEPOSITO, PAGO RECIBIDO, COBRO | RSP gross income (715) | Personal-services income. If IVA-registered, extract net (excl. 10% IVA) |
-| HONORARIOS, SERVICIOS PROFESIONALES, CONSULTORIA | RSP gross income (715) | Professional fees -- typical self-employed |
-| STRIPE PAYOUT, STRIPE TRANSFER | RSP gross income (715) | Confirm income is Paraguay-source before including (territorial) |
-| PAYPAL, WISE, PAYONEER, MERCADO PAGO | RSP gross income (715) | Platform payout -- confirm source and match to invoices |
-| UPWORK, FIVERR, WORKANA | RSP gross income (715) | Freelance platform -- confirm Paraguay-source |
-| SALARIO, SUELDO, REMUNERACION, EMPLEADOR [name] | Employment income | NOT self-employment -- subject to employer IRP/IPS withholding, not Form 715 self-employed line |
-| ALQUILER RECIBIDO, RENTA INMUEBLE | RGC income (716) | Rental income -- flat 8% capital regime |
-| INTERESES RECIBIDOS, INTERES | RGC income (716) | Interest income -- flat 8% |
-| DIVIDENDOS, DIVIDENDO | RGC income (716) | Dividend income -- flat 8% |
-| DEVOLUCION DNIT, DEVOLUCION SET, REINTEGRO IMPUESTO | EXCLUDE | Tax refund from prior period |
-| SUBSIDIO, APORTE ESTATAL | Check nature | Revenue subsidy may be income; confirm with reviewer |
-
-### 3.2 Expense Patterns (Debits) -- Deductible if Directly Related + Invoiced (RSP only)
-
-**Expense Patterns (deductible) table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| ALQUILER OFICINA, ALQUILER LOCAL | Office rent | Deductible | Dedicated business premises; factura legal required |
-| HONORARIOS CONTADOR, AUDITORIA, CONTABILIDAD | Accountancy fees | Deductible | Directly related to activity |
-| HONORARIOS ABOGADO, GASTOS LEGALES (business) | Legal fees | Deductible | Must be business-related |
-| UTILES, PAPELERIA, LIBRERIA, INSUMOS OFICINA | Office supplies | Deductible |  |
-| PUBLICIDAD, MARKETING, GOOGLE ADS, META ADS | Marketing/advertising | Deductible |  |
-| CAPACITACION, CURSO, SEMINARIO, CONGRESO | Training | Deductible | Must relate to current activity |
-| COMISION BANCARIA, GASTOS BANCARIOS, MANTENIMIENTO CUENTA | Bank charges | Deductible | Business account only |
-| INTERNET, FIBRA, TIGO, PERSONAL, CLARO, COPACO (business) | Telecoms | Deductible -- business % only | Default 0% if mixed-use (T2) |
-| DOMINIO, HOSTING, AWS, CLOUDFLARE | IT infrastructure | Deductible | Software/services directly related |
-
-- **Deduction condition intro** — Under Art. 64 Ley 6380/19, RSP taxpayers may deduct expenses directly related to the taxed activity, properly documented with a legal invoice (factura legal), representing a real expense, and funded from IRP-taxed income (Arts. 14-15).  _(Art. 64 Ley 6380/19; Arts. 14-15)_
-
-### 3.3 Expense Patterns (Debits) -- SaaS and Software
-
-**SaaS and Software table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, DROPBOX | Software subscription | Deductible |  |
-
-### 3.4 Expense Patterns (Debits) -- 1% Cap / Special Cases
-
-**1% Cap / Special Cases table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| Purchases from RESIMPLE contributors | Capped purchases | Deductible only up to 1% of gross income | Flag for reviewer |
-| Donations / specific listed items (arts. items 7,8,20,21,22) | Capped items | Deductible only up to 1% of gross income | [RESEARCH GAP -- reviewer to confirm exact item list against current Ley 6380/19 text] |
-
-- **1% of gross income cap** — A 1% of gross income deductibility cap applies in specific cases (items 7, 8, 20, 21, 22 of the relevant article, and purchases from RESIMPLE contributors).  _([Source: Ley 6380/19 via impuestospy.com; rsa.com.py])_
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**Travel table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AEROLINEAS, LATAM, GOL, BOLETO AEREO | Flights | Deductible if business travel | Must be directly related to activity |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel |  |
-| TAXI, UBER, BOLT, MUV | Local transport | Deductible if business purpose |  |
-| COMBUSTIBLE, NAFTA, GASOIL, PETROBRAS, PUMA | Vehicle fuel | Deductible -- business % only (T2) | Requires usage log |
-| ESTACIONAMIENTO, PEAJE | Parking/tolls | Deductible -- business % only (T2) |  |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**NOT Deductible table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANTE, ALMUERZO, CENA (personal/entertainment) | Personal/entertainment | NOT deductible | Not directly related to activity |
-| SUPERMERCADO, DESPENSA, COMPRAS PERSONALES, SUPER | Personal expenses | NOT deductible | Private living costs |
-| MULTA, INFRACCION, SANCION | Fines/penalties | NOT deductible | Public policy |
-| PAGO IRP, PAGO IMPUESTO, PAGO DNIT | Tax payments | NOT deductible | Income tax cannot reduce income |
-| RETIRO PERSONAL, EXTRACCION ATM (personal) | Drawings | NOT deductible | Not an expense |
-| Expense without factura legal | Undocumented | NOT deductible | Art. 64 Ley 6380/19 requires legal invoice |
-
-### 3.7 Exclusions (Neither Income nor Expense)
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA PROPIA, CUENTA PROPIA, ENTRE CUENTAS | EXCLUDE | Own-account transfer |
-| PAGO PRESTAMO, CUOTA PRESTAMO, AMORTIZACION | EXCLUDE | Loan principal movement (interest may be relevant -- flag) |
-| IPS, APORTE OBRERO, APORTE PATRONAL | IPS contribution | Social security, not an IRP deduction line -- record separately (see Section 5.6) |
-| PAGO IVA, IVA DNIT | EXCLUDE | IVA liability payment, not an expense |
-
-### 3.8 Paraguayan Banks -- Statement Format Reference
-
-**Statement Format Reference table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Banco Itaú Paraguay | TRANSFERENCIA, DEBITO AUTOMATICO, COMISION | PDF/Excel; Spanish descriptions; date DD/MM/AAAA |
-| Banco Continental | TRANSFERENCIA, PAGO, EXTRACCION | PDF; counterparty in description field |
-| Banco Nacional de Fomento (BNF) | DEPOSITO, RETIRO, TRANSFERENCIA | PDF; shorter descriptions |
-| Sudameris Bank | TRANSFERENCIA, DEBITO, CARGO | PDF/Excel |
-| Ueno Bank / digital wallets | TRANSFERENCIA, QR, PAGO | App export; clean counterparty names |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Client Payment (IVA-registered, RSP)
-
-**Input line:**
-`15/03/2025 ; ITAU TRANSFERENCIA RECIBIDA ; ESTUDIO LOPEZ S.A. ; PAGO FACTURA 001-001-0000123 ; +11,000,000 ; PYG`
-
-**Reasoning:**
-Client payment for personal services. Client is IVA-registered, so ₲11,000,000 includes 10% IVA. Net = ₲11,000,000 / 1.10 = ₲10,000,000 (RSP gross income, Form 715). The ₲1,000,000 IVA is collected on behalf of DNIT (excluded from income -- it is a liability).
-
-**Classification:** RSP gross income = ₲10,000,000. IVA ₲1,000,000 excluded.
-
-### Example 2 -- SaaS Subscription (Deductible, RSP)
-
-**Input line:**
-`01/04/2025 ; ITAU DEBITO AUTOMATICO ; ADOBE SYSTEMS ; CREATIVE CLOUD ABRIL ; -250,000 ; PYG`
-
-**Reasoning:**
-Monthly software subscription directly related to the taxed activity, supported by a legal invoice. Fully deductible operating expense under Art. 64 Ley 6380/19.
-
-**Classification:** Deductible expense = ₲250,000 (subject to factura legal verification).
-
-### Example 3 -- Personal Supermarket Spend (Not Deductible)
-
-**Input line:**
-`22/04/2025 ; ITAU TARJETA ; SUPERSEIS ; COMPRA ; -480,000 ; PYG`
-
-**Reasoning:**
-Supermarket / private living expense. Not directly related to the taxed activity. No deduction. No apportionment.
-
-**Classification:** NOT deductible. Exclude from deductions.
-
-### Example 4 -- IPS Employee Contribution at Minimum Wage
-
-**Input line:**
-`10/01/2025 ; ITAU DEBITO ; IPS APORTE OBRERO ; ENERO 2025 ; -260,914 ; PYG`
-
-**Reasoning:**
-Employee IPS contribution (aporte obrero) of 9.0% on the legal minimum wage of ₲2,899,048. Check: 2,899,048 × 9.0% = ₲260,914.32 → ₲260,914. [PwC other-taxes; MTESS Res. 677/2025] IPS is social security, recorded separately from the IRP deduction analysis; it is not a Box-style IRP expense line.
-
-**Classification:** IPS aporte obrero = ₲260,914. Record under social security, not as an IRP business deduction.
-
-### Example 5 -- Rental Income (RGC, Form 716)
-
-**Input line:**
-`05/06/2025 ; CONTINENTAL TRANSFERENCIA ; INQUILINO P. GIMENEZ ; ALQUILER JUNIO ; +3,000,000 ; PYG`
-
-**Reasoning:**
-Rental income falls under the capital regime (RGC, Form 716), taxed at a flat 8% on net income -- NOT under the progressive RSP scale. Net of any documented deductible rental costs.
-
-**Classification:** RGC income (716) = ₲3,000,000. If no deductible costs, tax = 3,000,000 × 8% = ₲240,000.
-
-### Example 6 -- Own-Account Transfer (Exclude)
-
-**Input line:**
-`15/05/2025 ; ITAU TRANSFERENCIA ; CUENTA PROPIA AHORRO ; ; -5,000,000 ; PYG`
-
-**Reasoning:**
-Transfer between the taxpayer's own accounts. Neither income nor expense. Exclude entirely.
-
-**Classification:** EXCLUDE.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Territorial Basis
-
-- **Territorial basis** — Paraguay taxes only Paraguay-source income. Foreign-source income is generally exempt. Before including any cross-border platform payout in RSP income, confirm the income is Paraguay-source.  _(Legislation: Ley N° 6380/2019 [PwC])_
-
-### 5.2 The "Directly Related + Documented" Deduction Test
-
-- **Deduction test** — An RSP expense is deductible only if it is (1) directly related to the taxed activity, (2) supported by a legal invoice (factura legal), (3) a real expense, and (4) funded from IRP-taxed income of the fiscal year (or from bank/financial/cooperative loans, or remaining IRP-taxed income from the prior 5 fiscal years). Mixed-use expenses must be apportioned to the business portion.  _(Art. 64 Ley 6380/19 (deduction principle); Arts. 14-15 Ley 6380/19 (general conditions))_
-
-### 5.3 No Statutory Standard Deduction
-
-- **No standard deduction** — There is no statutory fixed "standard deduction" percentage for IRP. Deductions are documentation-based. Some secondary guides cite an illustrative ~30% estimate, but this is not statutory and must not be applied as an official allowance.  _([RESEARCH GAP -- no published standard/automatic deduction; deductions are invoice-based. Reviewer to confirm.])_
-
-### 5.4 The 1% Deductibility Cap
-
-- **1% deductibility cap** — Certain expenses (items 7, 8, 20, 21, 22 of the relevant article, and purchases from RESIMPLE contributors) are deductible only up to 1% of gross income.  _([Source: Ley 6380/19 via impuestospy.com; rsa.com.py] [RESEARCH GAP -- reviewer to confirm exact item list against current statute.])_
-
-### 5.5 Revenue Recognition and IVA
-
-**Revenue Recognition and IVA table**
-
-| Scenario | IRP Treatment |
-| --- | --- |
-| IVA collected on sales (IVA-registered) | NOT income -- exclude from RSP gross income |
-| Input IVA recovered | NOT an expense -- exclude from deductions |
-| Input IVA non-recoverable / not registered | IS a cost -- gross amount is the expense |
-
-- **Standard/reduced IVA rate** — Standard IVA rate is 10%; a reduced 5% applies to certain goods (basic food basket, some real estate, pharmaceuticals).  _([Source: Ley 6380/19; PwC other-taxes])_
-
-### 5.6 IPS Social Security (Recorded Separately)
-
-- **IPS recorded separately** — IPS contributions are social security, computed on gross salary, and recorded separately from the IRP deduction analysis. See Section 5.7 for rates. They are not an IRP "business expense" line for a self-employed RSP taxpayer's own contributions; independent directors/managers/administrators may contribute to IPS optionally.  _([PwC other-taxes])_
-
-### 5.7 IPS Contribution Rates
-
-**Standard IPS contribution rates**  _([Source: PwC other-taxes, last reviewed Feb 2026])_
-
-| Party | Rate |
-| --- | --- |
-| Employee (Aporte Obrero) | 9.0% of gross salary (withheld by employer) |
-| Employer (Aporte Patronal) | 16.5% of gross salary |
-| **Total** | **25.5%** |
-
-- **Standard IPS total check** — 9.0% + 16.5% = 25.5%. ✓ (Employer 16.5% commonly described as 14% pension/health/maternity + 2.5% other worker-protection/training levies -- secondary breakdown only; the 25.5% total is authoritative.)
-
-**Banks/financial institutions IPS contribution rates**  _([Source: PwC other-taxes])_
-
-| Party | Rate |
-| --- | --- |
-| Employee | 11% |
-| Employer | 17% |
-| **Total** | **28%** |
-
-- **Bank sector total check** — 11% + 17% = 28%. ✓
-- **Contribution base floor** — Contribution base may not be below the legal monthly minimum wage (floor).  _([Source: IPS portal])_
-- **No published cap** — No upper ceiling/cap on the general IPS contribution base was found in authoritative sources.  _([RESEARCH GAP -- no published cap; treat absence as default but flag for reviewer.])_
-- **Contribution scope exclusions** — Contributions are on all wage items in cash or kind, EXCEPT the annual mandatory bonus (aguinaldo) and family allowance.  _([PwC])_
-- **Micro & Small Enterprises IPS rules** — Micro & Small Enterprises (Ley N° 7444/2025, reglamented 2026): IPS = 25.5% on the established minimum taxable base; for owners/responsibles of Small Enterprises, base = 80% of the SMLV for 36 months from issuance of the MIPYMES card.  _([Source: MTESS Res. 220/2026; irunvillamayor.com.py])_
-- **Payment timing** — contributions for a month are due in the first days of the following month.
-
-### 5.8 Minimum Wage (MTESS)
-
-**Minimum Wage table**  _(Legislation: Resolución MTESS N° 677/2025, effective 1 July 2025 (3.6% increase) [Source: mtess.gov.py/?p=30682; vouga.com.py])_
-
-| Item | Amount (PYG) |
-| --- | --- |
-| Monthly minimum wage (Salario Mínimo Legal) | ₲2,899,048 |
-| Daily wage -- jornaleros (day-rate) | ₲111,502 |
-| Daily wage -- mensualizados | ₲96,635 |
-| Hourly wage -- mensualizados | ₲12,080 |
-| Night-shift monthly minimum (+30%, Labour Code) | ₲3,768,763 |
-
-- **Night-shift check** — 2,899,048 × 1.30 = ₲3,768,762.40 → ₲3,768,763 (rounded). ✓ [RESEARCH GAP -- a further mid-2026 minimum-wage adjustment is typical but unconfirmed as of this research; use ₲2,899,048 until updated.]
-
-### 5.9 Filing and Payment
-
-**Filing and Payment table**  _(Legislation: RG N° 90/2021 (Marangatú e-filing); PwC tax administration)_
-
-| Item | Detail |
-| --- | --- |
-| Tax year | Calendar year; liability originates 31 December |
-| Return type | Annual declaración jurada |
-| Filing & payment | March of the following year; exact day set by last digit of RUC ("calendario perpetuo") |
-| FY2025 deadline | March 2026 |
-| Filing method | Electronic via Marangatú |
-
-- **Obligations per DNIT IRP page** — issue receipts/vouchers; communicate document numbering; register vouchers in Marangatú; file the declaración jurada; pay the tax.  _(DNIT IRP page)_
-
-### 5.10 Non-Deductible Expenses
-
-**Non-Deductible Expenses table**
-
-| Expense | Reason |
-| --- | --- |
-| Expenses without a legal invoice (factura legal) | Art. 64 Ley 6380/19 |
-| Expenses not directly related to the taxed activity | Art. 64 Ley 6380/19 |
-| Personal living expenses | Not business-related |
-| Fines and penalties | Public policy |
-| Income tax itself (IRP) | Tax on income |
-| Drawings / personal withdrawals | Not an expense |
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Apportionment
-
-- **Home office apportionment** — Calculate the proportion of the home used for business (dedicated room / floor area). Apply that percentage to rent, electricity, water, internet directly related to the activity, with legal invoices. A dual-use space does not qualify cleanly. Conservative default: 0% deduction until reviewer confirms arrangement.
-
-### 6.2 Vehicle Business Use
-
-- **Vehicle business use** — Only the business-use portion of fuel and running costs is deductible, supported by invoices and a usage log. Conservative default: 0% business use until log provided.
-
-### 6.3 Phone / Internet Mixed Use
-
-- **Phone/internet mixed use** — Business-use portion only, with a reasonable documented estimate. Conservative default: 0% deduction until business percentage confirmed.
-
-### 6.4 1% Capped Items
-
-- **1% capped items reviewer flag** — Confirm whether an expense falls under the 1% cap (RESIMPLE purchases, listed items 7/8/20/21/22) and recompute the cap against gross income. Flag for reviewer: Confirm item list against current Ley 6380/19 and apply the 1% gross-income ceiling.
-
-### 6.5 Source Classification (Territorial)
-
-- **Source classification** — For platform / cross-border payouts, confirm whether income is Paraguay-source before including. Flag for reviewer: Confirm source; foreign-source income is generally exempt.
-
-### 6.6 RSP vs RGC Classification
-
-- **RSP vs RGC classification** — Confirm whether income is personal services (715) or capital (716). Rental, interest, dividends and capital gains go to RGC (flat 8%); fees for services go to RSP (progressive). Flag for reviewer: Confirm category before applying any rate.
-
-### 6.7 IPS Optional Contributions
-
-- **IPS optional contributions** — For directors/managers/administrators, IPS contribution is optional; confirm whether the client elected to contribute.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-PARAGUAY IRP -- WORKING PAPER
-Tax Year: 2025
-Client: ___________________________
-RUC: ___________________________
-IRP Category: RSP (715) / RGC (716)
-IVA-registered: Yes / No
-
-A. RSP GROSS INCOME (Form 715, net of IVA if registered)
-  A1. Client payments for services             ___________
-  A2. Platform payouts (Paraguay-source only)   ___________
-  A3. Other personal-services income            ___________
-  A4. TOTAL RSP gross income                     ___________
-
-B. RSP DEDUCTIBLE EXPENSES (directly related + factura legal)
-  B1. Office rent                                ___________
-  B2. Accountancy / legal fees                   ___________
-  B3. Office supplies                            ___________
-  B4. Software subscriptions                     ___________
-  B5. Marketing / advertising                    ___________
-  B6. Training                                   ___________
-  B7. Bank charges                               ___________
-  B8. Telecoms (business %)                      ___________
-  B9. Travel (business purpose)                  ___________
-  B10. Vehicle (business %)                      ___________
-  B11. Home office (% apportioned)               ___________
-  B12. 1%-capped items (apply ceiling)           ___________
-  B13. Other documented expenses                 ___________
-  B14. TOTAL RSP deductions                       ___________
-
-C. RSP NET TAXABLE INCOME (renta neta) (A4 - B14)  ___________
-
-D. RGC INCOME (Form 716, flat 8%)
-  D1. Rental income (net)                         ___________
-  D2. Interest                                    ___________
-  D3. Dividends                                   ___________
-  D4. Capital gains                               ___________
-  D5. TOTAL RGC net income                        ___________
-
-E. TAX COMPUTATION (pass to deterministic engine)
-  E1. RSP threshold check (gross > ₲80,000,000?)  ___________
-  E2. RSP tax (8%/9%/10% on C)                    ___________
-  E3. RGC tax (8% on D5)                          ___________
-  E4. TOTAL IRP due                               ___________
-
-SEPARATE -- IPS (if applicable):
-  Employee aporte obrero (9.0% / 11% banks)       ___________
-  Employer aporte patronal (16.5% / 17% banks)    ___________
-
-REVIEWER FLAGS:
-  [ ] RUC registration confirmed?
-  [ ] IRP category (RSP/RGC) confirmed?
-  [ ] All income confirmed Paraguay-source?
-  [ ] Every deduction has a factura legal?
-  [ ] Home office / vehicle / phone business % documented?
-  [ ] 1% cap applied where relevant?
-  [ ] IVA excluded from income and from input-recovered expenses?
-  [ ] IPS recorded separately (not as IRP deduction)?
-  [ ] Gross-income threshold (₲80,000,000) checked?
+**RSP deductions (art. 64).** Any outgoing must be documented, a real outlay and, if supported by an autofactura, not above market price. Two groups:
+
+1. **Outgoings directly related to the activity**, including furniture, equipment, and building or refitting the office or premises used for the work (deducted in full when paid).
+2. **Personal and family outgoings**: food, clothing, housing rent and upkeep (own or rented), household furniture and appliances, and leisure, all incurred in Paraguay (leisure abroad only if bought through a travel agency based in Paraguay, Decreto 3184 art. 55); health and education for the taxpayer and dependants, in Paraguay or abroad (abroad: paid by a Paraguayan-issued card, bank transfer, or cash with consular legalisation, Decreto 3184 art. 56); one car every three years; one home every five years (instalments and interest if financed, the full price if paid in cash within the funding rule; art. 66); employer IPS contributions paid for a worker, and an independent provider's contributions to a private social-security scheme approved by law; and donations within the 5% cap.
+
+**Dependants (art. 65)** are a spouse or partner who pays no IRE, IDU or IRP; minor children and siblings; adult children in higher education, grandparents, parents and parents-in-law with income up to G 30,000,000 each; and anyone the taxpayer must support by law, including disabled adult children and siblings. Their receipts must be in their name or the taxpayer's, and they must be identified to the DNIT each year.
+
+**Loans (Decreto 3184 art. 59).** For a loan taken after becoming an IRP taxpayer, the capital repaid is not deductible (what it bought already was); interest, commissions and card charges are. For a loan taken before, both capital and interest instalments are deductible if documented, the lender is a registered taxpayer and the loan's use was not deducted already.
+
+**Not deductible (art. 68; [DNIT, IRP RSP guide](https://www.dnit.gov.py/documents/20123/233435/IRP+RSP+Cartilla+6.08.24.pdf/bb45c6ef-0c98-771a-c530-ac893db6bce2)).** The IRP itself; tax, public and IPS fines; outgoings paid from untaxed or exempt income; gifts and the part of donations above the cap; outgoings of the individual as owner of a sole-owner business (they go in the IRE); IVA already used as IVA credit or as a cost in another tax; leisure paid abroad; payments to charities ordered as a sanction. Aircraft, racing and collectors' cars, boats and jet skis, jewellery, watches, precious metals and stones, art and antiques, their running costs, and cars and homes beyond the 3-year and 5-year limits are deductible only when sold, under the RGC rules (art. 67). A movable or property deducted under art. 64 cannot be deducted again when sold; a home or car deducted in full is taxed under the RGC rules when sold (Decreto 3184 art. 58).
+
+**No carry-forward.** A negative result from these outgoings is lost at year-end, except the home-purchase loss (art. 64, last paragraph; art. 66).
+
+**Classifying receipts and payments.** Typical items in a self-employed person's records:
+
+| Item | Treatment |
+|---|---|
+| Fees for services (honorarios, consultoría), platform payouts for services to Paraguayan IRE or IRP clients | RSP gross income, net of IVA if the person charges IVA |
+| Platform payouts for services to foreign clients | Outside the IRP unless the service was performed in Paraguay or the client is an IRE or IRP taxpayer (art. 48); check where the work was done |
+| Salary (sueldo, salario) | RSP gross income; exclude the employee's IPS contribution and the aguinaldo |
+| Rent received (alquiler) | RGC (Form 516), 50% or actual-cost base |
+| Interest from Paraguayan banks, finance companies and savings cooperatives | Exempt (art. 56.12) |
+| Dividends from an S.A. or S.R.L. | Taxed by IDU at source, not in the IRP (art. 47.1) |
+| Office rent, accounting and legal fees, software, advertising, training, bank charges on the work account | Deductible as directly related, with the document |
+| Groceries, clothing, home rent, school fees, doctors | Deductible as personal outgoings, with a receipt or factura in Paraguay |
+| Phone, internet, fuel and car running costs used for both work and home | The work share is deductible as directly related, with the document; the private share only if it fits a listed personal category (home upkeep, leisure), which art. 64 does not settle for these items, so default to the documented work share. Buying the car itself is a personal deduction once every 3 years |
+| Purchases with a Boleta RESIMPLE | Deductible (an accepted document) |
+| IRP payments, fines, transfers between own accounts, loan capital after registration | Not deductible and not income |
+
+**RGC computation.** Each income item uses its base from the rates table and the flat 8%. Rentals, life-annuity and insurance income, cooperative surpluses, royalties from abroad, and sales of movables and shares are self-assessed on Form 516 (Decreto 3184 art. 41). Real-estate sales are taxed by withholding: the notary withholds the IRP when the seller is directly involved, on the art. 59.1 base, as a final payment, and the withholding certificate is the proof the Public Registry needs (Decreto 3184 arts. 25, 47 and 48; Ley 6380 art. 137). Distributions not taxed by IDU (sociedades simples, cooperatives) and royalties are withheld by the payer (Decreto 3184 arts. 45 and 46). An expropriation sale is exempt (art. 56.2).
+
+**Other exemptions (art. 56).** Interest on public debt; exchange differences on holding foreign currency or foreign-currency deposits; non-contributory and gracious pensions; stock-exchange bonds and securities traded on regulated exchanges; Fondo Patrimonial de Inversión returns; pay of accredited foreign diplomats (reciprocity); State overseas scholarships.
+
+**IVA and the IRP.** IVA charged on fees is not income. IVA on purchases is not deductible where it was used as IVA credit (art. 68.6); where it was not, the gross amount is the outgoing. The IVA return itself: [paraguay-iva](paraguay-iva.md).
+
+## Deadlines and filing
+
+Portal: the DNIT's Sistema Marangatu (marangatu.set.gov.py), logged in with the Clave de Acceso Confidencial de Usuario. Receipts are registered in Marangatu ("Registro de Comprobantes") through the year, by hand or by file import; electronic and virtual invoices can be pulled from the system ([DNIT, IRP RSP guide](https://www.dnit.gov.py/documents/20123/233435/IRP+RSP+Cartilla+6.08.24.pdf/bb45c6ef-0c98-771a-c530-ac893db6bce2)).
+
+1. **Register** in the RUC (or add the IRP RSP obligation) within 30 working days of passing G 80,000,000 (Decreto 3184 art. 60). If the DNIT learns that someone passed the threshold and did not register, it registers them of its own motion, notifies them, and they have 10 working days to confirm their data; sanctions follow (DNIT IRP RSP guide).
+2. **Keep the documents**: payslips and IPS statements for salaried work; pre-printed, virtual (Tesakã or Marangatu) or electronic (e-Kuatia) invoices for fees; for outgoings, invoices, Boletas RESIMPLE, autofacturas, tickets and transport tickets, card statements, and consular-legalised receipts for health and education abroad (DNIT IRP RSP guide).
+3. **File Form 515 (IRP RSP, obligation 715)** and pay by the due day of the **third month** after year-end: March 2027 for 2026 (Decreto 3184 art. 61). A registered RSP taxpayer files even in a year without income or below the threshold (DNIT IRP RSP guide), until two consecutive years at or below G 80,000,000 end the duty (Decreto 3184 art. 62), or on death or permanent move abroad, with RUC cancellation.
+4. **File Form 516 (IRP RGC, obligation 716)** for capital income not taxed by final withholding, also in the third month (Decreto 3184 art. 41; [DNIT, IRP RGC guide](https://www.dnit.gov.py/documents/20123/233435/IRP+RGC+Cartilla+6.08.24.pdf/df6a3595-02b7-50b5-c6cf-c4593254ac76)). With no RGC income in the previous year, the obligation can be removed within the first 30 working days of the year, filing a closing return.
+5. **The due day** depends on the last digit of the RUC, ignoring the check digit: 0 = 7th, 1 = 9th, 2 = 11th, 3 = 13th, 4 = 15th, 5 = 17th, 6 = 19th, 7 = 21st, 8 = 23rd, 9 = 25th; a non-working day moves it to the next working day ([DNIT, deadlines under Ley 6380](https://www.dnit.gov.py/web/portal-institucional/w/vencimiento-ley-n-6380/19)).
+6. **Pay** by electronic payment or card through the DNIT's collection channels; the payment is credited to the RUC current account.
+7. **An independent RSP taxpayer who pays a non-resident** for similar services directly linked to their own taxed income withholds INR (Ley 6380 art. 77) and settles withholdings through Form 525 (obligation 725).
+
+## Penalties and interest
+
+From Ley N° 125/1991, Libro V, in the DNIT copy of the 1991 text ([Ley 125/91, arts. 170 to 179](https://www.dnit.gov.py/documents/47797/47809/P+-+Ley+N%C2%BA+125-91.pdf/63cf3ff2-2b45-5920-cfc0-e562ff41ced9)):
+
+- **Late payment (mora, art. 171).** A fine on the unpaid tax of 4% if up to one month late, 6% up to two, 8% up to three, 10% up to four, 12% up to five, 14% at five months or more; plus a monthly surcharge or interest, day by day until payment, at the rate the Executive sets every four months. A return filed on time and paid late attracts only the mora charges ([DNIT deadlines page](https://www.dnit.gov.py/web/portal-institucional/w/vencimiento-ley-n-6380/19)).
+- **Late filing (contravención, art. 176).** The DNIT's schedule of formal breaches fixes **G 50,000** for a determinative return filed after its due date (Resolución General 13/2019, Anexo, item 4.a, [DNIT page](https://www.dnit.gov.py/web/portal-institucional/w/resolucion-general-n-13-19-anexo)). The statutory range (G 50,000 to G 1,000,000 in the 1991 text) is indexed each year (art. 179).
+- **Underpayment (omisión de pago, art. 177).** Up to 50% of the tax omitted.
+- **Fraud (defraudación, arts. 172 to 175).** One to three times the tax evaded; intent is presumed where the documents contradict the return or the return holds false data.
+
+The DNIT decree list shows Decreto N° 5154/2025, "an exceptional and transitional regime to regularise certain tax debts"; its terms were not read (see "Not yet confirmed").
+
+## Cross-border points
+
+- **Services performed abroad** by a resident for Paraguayan IRE or IRP clients are Paraguayan-source and taxed (art. 48.3). Services performed abroad for foreign clients are not.
+- **Health and education abroad** are deductible for the taxpayer and dependants (art. 64.2), with the payment evidence of Decreto 3184 art. 56. Other personal spending abroad is not, except leisure bought through a Paraguayan travel agency.
+- **Non-residents** are outside the IRP. Their Paraguayan-source income bears INR at 15% on a presumed net income (for personal services, 70% of the gross), withheld by the payer as a final tax (Ley 6380 arts. 72, 75 and 76).
+- **Foreign royalties** received for rights used partly in Paraguay are declared on Form 516 (Decreto 3184 art. 43).
+- **Treaties** can change the result for a person resident in two countries; Ley N° 7271/2024 approved the convention with Spain. Check the treaty's entry into force first.
+
+## Worked examples
+
+### Example 1: independent professional with a rental flat (includes a decision)
+
+Laura, a resident architect, has been an IRP RSP taxpayer since 2023. In 2026 she receives fees of G 240,000,000 (net of IVA). She pays G 40,000,000 of documented work costs, G 70,000,000 of documented personal and family outgoings in Paraguay (food, clothing, home rent, her children's school), and donates G 15,000,000 to a municipality. She also lets a flat for G 60,000,000 a year and has G 20,000,000 of documented property tax, maintenance and administration costs.
+
+- **RSP.** Donations are capped at 5% of G 240,000,000 = G 12,000,000. Net income: 240,000,000 less 40,000,000 less 70,000,000 less 12,000,000 = G 118,000,000. Tax: 8% of 50,000,000 = 4,000,000, plus 9% of 68,000,000 = 6,120,000: **G 10,120,000** on Form 515. Her deductions (G 122,000,000) are well inside her taxed income, so the funding rule is met.
+- **RGC, the choice for the flat.** Presumed base: 50% of 60,000,000 = G 30,000,000. Actual base: 60,000,000 less 20,000,000 = G 40,000,000. She chooses 50%: 8% of 30,000,000 = **G 2,400,000** on Form 516, against G 3,200,000 on actual costs. The figure that decides it is whether documented costs exceed half the rent: if her costs were G 35,000,000, the actual base would be G 25,000,000 and tax G 2,000,000, so the actual method would win.
+- The two categories are never netted: a loss on the flat could not reduce her fees.
+
+```oa-check
+name: Architect, RSP scale with donation cap and RGC rental choice, 2026
+inputs:
+  fees: 240000000
+  work_costs: 40000000
+  personal_costs: 70000000
+  donation: 15000000
+  rent: 60000000
+  rental_costs: 20000000
+  alt_rental_costs: 35000000
+steps:
+  - donation_cap: fees * 0.05
+  - donation_allowed: min(donation, donation_cap)
+  - rsp_net: fees - work_costs - personal_costs - donation_allowed
+  - rsp_tax: min(rsp_net, 50000000) * 0.08 + max(0, min(rsp_net, 150000000) - 50000000) * 0.09 + max(0, rsp_net - 150000000) * 0.10
+  - presumed_base: rent * 0.50
+  - actual_base: rent - rental_costs
+  - rgc_tax_presumed: presumed_base * 0.08
+  - rgc_tax_actual: actual_base * 0.08
+  - rgc_tax: min(rgc_tax_presumed, rgc_tax_actual)
+  - alt_actual_tax: (rent - alt_rental_costs) * 0.08
+  - alt_rgc_tax: min(rgc_tax_presumed, alt_actual_tax)
+expected:
+  donation_cap: 12000000
+  donation_allowed: 12000000
+  rsp_net: 118000000
+  rsp_tax: 10120000
+  presumed_base: 30000000
+  actual_base: 40000000
+  rgc_tax_presumed: 2400000
+  rgc_tax_actual: 3200000
+  rgc_tax: 2400000
+  alt_actual_tax: 2000000
+  alt_rgc_tax: 2000000
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### Example 2: employee who passes the threshold in July (first year)
 
-### Paraguayan Bank Statement Formats
+Diego starts 2026 as an employee on G 12,000,000 a month, with no earlier IRP registration. His employee IPS contribution is 9% of salary (rate from [paraguay-social-contributions](paraguay-social-contributions.md)). He also receives the aguinaldo of G 12,000,000 in December.
 
-**Paraguayan Bank Statement Formats table**
+- **When he passes the threshold.** Gross salary to the end of June is 6 × 12,000,000 = G 72,000,000; in July it reaches G 84,000,000, above G 80,000,000. He must register within 30 working days.
+- **Gross income for 2026.** Twelve salaries, G 144,000,000, less his IPS contributions (9% of 144,000,000 = G 12,960,000), excluded by art. 63: G 131,040,000. The aguinaldo is exempt.
+- **Deductions.** Only outgoings paid from the day after he passed the threshold: G 50,000,000 of documented personal outgoings from July to December.
+- **Net income and tax.** 131,040,000 less 50,000,000 = G 81,040,000. Tax: 4,000,000 plus 9% of 31,040,000 = 2,793,600: **G 6,793,600**, on Form 515 by his RUC-digit day in March 2027.
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Banco Itaú Paraguay | PDF, Excel | Fecha, Descripción, Débito, Crédito, Saldo | Most common; Spanish; date DD/MM/AAAA |
-| Banco Continental | PDF | Fecha, Concepto, Importe, Saldo | Counterparty in concept field |
-| Banco Nacional de Fomento (BNF) | PDF | Fecha, Detalle, Débito, Crédito | Shorter descriptions |
-| Sudameris Bank | PDF, Excel | Fecha, Descripción, Monto, Saldo |  |
-| Ueno / digital wallets | App export / CSV | Fecha, Contraparte, Monto, Referencia | Clean counterparty names; QR payments |
-
-### Key Paraguayan / Spanish Banking Terms
-
-**Key Banking Terms table**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRANSFERENCIA / TRF | Transfer | Check direction for income/expense |
-| DÉBITO AUTOMÁTICO | Direct debit | Regular expense (utility, subscription) |
-| DEPÓSITO | Deposit | Potential income |
-| EXTRACCIÓN / RETIRO | Withdrawal | Cash withdrawal -- ask what it funded |
-| COMISIÓN / CARGO | Charge / fee | Bank charge (deductible if business) |
-| INTERESES | Interest | RGC income (716) or bank cost |
-| HONORARIOS | Professional fees | RSP income (715) if received |
-| ALQUILER | Rent | RGC income if received; deductible if paid (office) |
-| FACTURA | Invoice | The deduction-supporting document (factura legal) |
-| IPS / APORTE | Social security contribution | Record separately |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items and any deduction lacking a factura legal as "PENDING -- reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- PARAGUAY IRP
-1. Are you registered with a RUC? Which IRP obligation(s) -- 715 (RSP) and/or 716 (RGC)?
-2. Is your income from personal services (RSP) or from capital -- rent/interest/dividends/gains (RGC)?
-3. Is all the income Paraguay-source? Any foreign-source income?
-4. Are you registered for IVA? At 10% or with 5% items?
-5. Do you have legal invoices (facturas) for the expenses you want to deduct?
-6. Home office: dedicated space? What % of floor area?
-7. Vehicle: business use? What %? Do you keep a usage log?
-8. Phone/internet: what % is business use?
-9. Are you an employee/employer paying IPS? What gross salary base?
-10. Was your gross personal-services income above or below ₲80,000,000 this year?
+```oa-check
+name: Employee first year, threshold passed in July, 2026
+inputs:
+  monthly_salary: 12000000
+  ips_employee_rate: 0.09
+  months: 12
+  deductions_after_threshold: 50000000
+steps:
+  - gross_to_june: monthly_salary * 6
+  - gross_to_july: monthly_salary * 7
+  - gross_salary: monthly_salary * months
+  - ips_excluded: gross_salary * ips_employee_rate
+  - rsp_gross: gross_salary - ips_excluded
+  - rsp_net: rsp_gross - deductions_after_threshold
+  - rsp_tax: min(rsp_net, 50000000) * 0.08 + max(0, min(rsp_net, 150000000) - 50000000) * 0.09 + max(0, rsp_net - 150000000) * 0.10
+expected:
+  gross_to_june: 72000000
+  gross_to_july: 84000000
+  gross_salary: 144000000
+  ips_excluded: 12960000
+  rsp_gross: 131040000
+  rsp_net: 81040000
+  rsp_tax: 6793600
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-### Key Legislation and Authority References
+1. Is the person resident in Paraguay, and since when? Non-residents pay INR, not IRP.
+2. Gross personal-services income received in 2026 (and in 2024 and 2025): it decides liability, the first-year rule and whether the filing duty has ended. When did cumulative income pass G 80,000,000?
+3. Is the income personal services (fees, salary) or capital (rent, sales, royalties, cooperative surpluses), and for services, where was the work done and who was the client?
+4. Is any activity run as a sole-owner business (empresa unipersonal)? Its outgoings then belong to the IRE.
+5. The documented outgoings: business, personal and family (with the dependants identified), health and education abroad, car or home purchases and when the last one was deducted, loans and when they were taken, donations.
+6. The last digit of the RUC (due day), and any withholding certificates (notary on a sale, payers of royalties or cooperative surpluses).
 
-**Key Legislation and Authority References table**
+## Sources
 
-| Topic | Reference |
-| --- | --- |
-| IRP framework, rates, regimes | Ley N° 6380/2019 (https://www.bacn.gov.py/archivos/9332/Ley+6380.pdf) |
-| RSP deduction principle | Art. 64 Ley 6380/19 |
-| General deduction conditions | Arts. 14-15 Ley 6380/19 |
-| Penalties / infractions | Ley N° 125/1991 (Tax Code) |
-| Electronic filing | RG N° 90/2021 (Marangatú) |
-| Minimum wage | Resolución MTESS N° 677/2025 |
-| Authoritative individual-tax summary | PwC Paraguay (https://taxsummaries.pwc.com/paraguay/individual/taxes-on-personal-income) |
-| DNIT IRP page | https://www.dnit.gov.py/en/web/portal-institucional/irp |
+| Source | URL | Read on |
+|---|---|---|
+| Ley N° 6380/2019, BACN text: Libro I Título III arts. 47 to 70 (IRP), arts. 44, 71 to 79 (IDU timing, INR), 137, 139 | https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional | 2026-11-11 |
+| Decreto N° 3184/2019 (IRP regulation), DNIT copy: Anexo arts. 1 to 5, 24, 25, 41 to 64 | https://www.dnit.gov.py/documents/47797/47809/Decreto+N%C2%B0+3184-19.pdf/6eaa47e9-504b-fc0b-6a03-4dc2b267e2a8 | 2026-11-11 |
+| DNIT, IRP page, read for obligations 715 and 716, March due month | https://www.dnit.gov.py/web/portal-institucional/irp | 2026-11-11 |
+| DNIT, IRP RSP guide (V 08/24), read for the first fiscal year, deductions, documents, Form 515, registration of own motion, end of duty | https://www.dnit.gov.py/documents/20123/233435/IRP+RSP+Cartilla+6.08.24.pdf/bb45c6ef-0c98-771a-c530-ac893db6bce2 | 2026-11-11 |
+| DNIT, IRP RGC guide (V 08/24), read for documents by income type, Form 516, removal of the obligation | https://www.dnit.gov.py/documents/20123/233435/IRP+RGC+Cartilla+6.08.24.pdf/df6a3595-02b7-50b5-c6cf-c4593254ac76 | 2026-11-11 |
+| DNIT, deadlines under Ley 6380 (RG 38/2020), read for the RUC-digit calendar, IRP third month, late payment without contravención | https://www.dnit.gov.py/web/portal-institucional/w/vencimiento-ley-n-6380/19 | 2026-11-11 |
+| Ley N° 125/1991, DNIT copy of the 1991 text (scanned; arts. 170 to 179 read by OCR): mora, contravención, omisión, defraudación | https://www.dnit.gov.py/documents/47797/47809/P+-+Ley+N%C2%BA+125-91.pdf/63cf3ff2-2b45-5920-cfc0-e562ff41ced9 | 2026-11-11 |
+| Resolución General 13/2019, Anexo, DNIT page: item 4.a, late determinative return G 50,000 | https://www.dnit.gov.py/web/portal-institucional/w/resolucion-general-n-13-19-anexo | 2026-11-11 |
+| DNIT, list of tax laws, read for amendments (no IRP amendment after 2019; Ley 7271/2024 Spain convention) | https://www.dnit.gov.py/web/portal-institucional/leyes | 2026-11-11 |
+| DNIT, list of decrees, read for updates (no art. 139 update of the G 80,000,000 threshold; Decreto 5154/2025 title) | https://www.dnit.gov.py/web/portal-institucional/decretos | 2026-11-11 |
 
-### Penalties (Ley N° 125/1991; Anexo RG 13/2019)
-
-Paraguay's tax infractions: mora (late payment), contravención (formal breach), omisión de pago (underpayment), defraudación (fraud).
-
-**Penalties table**
-
-| Infraction | Penalty |
-| --- | --- |
-| Contravención (late filing / formality breach, no fiscal harm) | Single fine of ₲50,000 per Resolución General N° 1 (DNIT/SET) [Source: ultimahora.com; RG 13/19 anexo] |
-| Mora (late payment of tax) | 4% up to 14% of tax owed, escalating by length of delay (Art. 171 Ley 125/1991) |
-| Late-payment interest (recargo moratorio) | 0.05% per day ≈ 1.5% per month, on tax owed [Ley 125/1991] |
-| Omisión de pago | Generally 50% of unpaid tax (Ley 125/1991) |
-| Defraudación (fraud) | 1× to 3× the defrauded tax (Ley 125/1991) |
-
-- **Transitional regularization regime** — An exceptional regularization regime (running to 31 Aug 2026) lets taxpayers settle obligations for periods closed up to December 2023 without moratorium interest.  _([Source: DNIT])_
-- **Reform watch** — A draft new Código Tributario (MEF, Sept 2025) is in consultation but NOT enacted; the omisión/defraudación ranges above are under the current Ley 125 and subject to pending reform.  _([Source: MEF draft])_
-
-### Test Suite
-
-Input: RSP, gross personal-services income ₲70,000,000 (below ₲80,000,000), net ₲55,000,000.
-Expected: Gross is below ₲80,000,000 → IRP not payable for the year. Filing obligations may still apply; tax due = ₲0. [PwC]
-
-Input: RSP, net taxable income ₲120,000,000 (gross above ₲80,000,000).
-Expected: First ₲50,000,000 × 8% = ₲4,000,000; next ₲70,000,000 × 9% = ₲6,300,000. Total tax = 4,000,000 + 6,300,000 = ₲10,300,000.
-
-Input: RSP, net taxable income ₲200,000,000.
-Expected: ₲4,000,000 (band 1) + ₲9,000,000 (band 2 full) + (50,000,000 × 10% = ₲5,000,000) = ₲18,000,000.
-
-Input: RGC net income ₲40,000,000 (rental + interest).
-Expected: 40,000,000 × 8% = ₲3,200,000.
-
-Input: ₲5,000,000 expense claimed with no factura legal.
-Expected: Disallow. Not deductible under Art. 64 Ley 6380/19.
-
-Input: Employee on minimum wage ₲2,899,048, general regime.
-Expected: Aporte obrero 9.0% = 2,899,048 × 0.09 = ₲260,914.32 → ₲260,914. Aporte patronal 16.5% = ₲478,343 (2,899,048 × 0.165 = 478,342.92 → ₲478,343). Combined 25.5% = ₲739,257.
-
-Input: Bank employee, gross salary ₲10,000,000.
-Expected: Employee 11% = ₲1,100,000; employer 17% = ₲1,700,000; total 28% = ₲2,800,000.
-
-## PROHIBITIONS
-
-- NEVER apply an IRP rate without confirming the category (RSP 715 vs RGC 716)
-- NEVER apply the progressive 8%/9%/10% scale to RGC (capital) income -- RGC is a flat 8%
-- NEVER apply the 8%/9%/10% brackets to gross turnover -- they apply to net income (renta neta)
-- NEVER treat the ₲80,000,000 figure as a net-income bracket -- it is the gross-income payment threshold
-- NEVER allow a deduction without a legal invoice (factura legal)
-- NEVER apply a fixed "standard deduction %" -- there is no statutory standard deduction
-- NEVER include foreign-source income without confirming Paraguay-source (territorial system)
-- NEVER include IVA collected on sales in RSP income
-- NEVER record IPS contributions as an IRP business deduction line
-- NEVER present tax calculations as definitive -- always label as estimated and pass to the deterministic engine
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: a numeric residence test for individuals (neither Ley 6380 nor Decreto 3184 sets one; any DNIT resolution that does was not read); whether later decrees (3457/2020, 3667/2020, others) amend the Decreto 3184 articles used here; whether the G 80,000,000 threshold is counted before or after excluding the employee's IPS contribution; the current monthly mora surcharge rate (the earlier skill gave 0.05% a day, about 1.5% a month); whether Ley 2421/2004 or later laws changed arts. 171 to 177 of Ley 125/1991; the terms of Decreto 5154/2025 (the earlier skill said a regime runs to 31 August 2026 for periods closed up to December 2023); the entry into force of the Spain convention; Form 515 and 516 box numbers.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

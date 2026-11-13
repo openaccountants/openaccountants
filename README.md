@@ -37,7 +37,7 @@ Then ask a question your AI would otherwise guess at:
 <details>
 <summary><strong>Prefer self-hosting or manual files?</strong></summary>
 
-- **pip MCP server:** `pip install openaccountants-mcp` (mirrors this repo's `packages/`)
+- **Python MCP server:** [install the tested GitHub revision](mcp/README.md). The current PyPI release is older and has no bundled skills.
 - **Manual:** download your jurisdiction's folder from [`packages/`](packages/) and upload the files to your AI. Start with your country's main package; `index.json` is the machine-readable inventory.
 
 Also listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) and the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants).

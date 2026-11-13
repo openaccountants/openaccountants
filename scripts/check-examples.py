@@ -24,9 +24,12 @@ clamp(x, lo, hi). Decimal arithmetic; a result matches when it is within the
 tolerance (default 0.01, override with `tolerance: 1` on the block).
 
 Exit 1 if any expected value does not match or a block cannot be read.
-A skill with no oa-check block passes; `--require` makes that a failure for
-the tax domains listed in GOAL.md (files under skills/ whose slug contains a
-tax token).
+A skill with no oa-check block passes; `--require` enforces its declared
+shape's example count. Undeclared legacy tax files still need at least one;
+an active non-tax domain follows the same shape rules.
+Generated copies inherit admission from their authored source. Existing blocks
+in those copies are still recomputed; missing-block admission applies to source
+files, including the hand-authored packages/us-federal/ tree.
 
 Usage:
     python3 scripts/check-examples.py                  # every skill
@@ -217,7 +220,8 @@ def body_unchanged(path):
     if old.returncode != 0:
         return False
     with open(path, encoding="utf-8") as fh:
-        return label_boilerplate.same_content(old.stdout, fh.read())
+        import skill_checks
+        return skill_checks.admission_content_unchanged(old.stdout, fh.read())
 
 
 def all_skill_files():
@@ -235,11 +239,29 @@ def is_tax_skill(path):
     return path.replace(os.sep, "/").find("/skills/") != -1 and any(t in slug for t in TAX_TOKENS)
 
 
+def required_examples(path):
+    # Rebuilding a copy is not writing new guidance. Its original domain/path
+    # can be lost in a package, and exact derivation is checked independently.
+    # Do not force unchanged inherited content through new-author admission.
+    rel = os.path.relpath(path, REPO_ROOT).replace(os.sep, "/")
+    if ((rel.startswith("packages/") and not rel.startswith("packages/us-federal/"))
+            or rel.startswith(("agent-skills/", "plugins/openaccountants/skills/"))):
+        return 0
+    # Lazy import: skill_checks also loads this module's arithmetic block regex.
+    import skill_checks
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    fm = skill_checks.read_frontmatter(text)
+    if skill_checks.skill_type(fm) or skill_checks.applied_domain(path, fm)[0]:
+        return skill_checks.required_example_count(text, fm)
+    return 1 if is_tax_skill(path) else 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("paths", nargs="*")
     ap.add_argument("--changed-only", action="store_true")
-    ap.add_argument("--require", action="store_true", help="fail tax skills that have no oa-check block")
+    ap.add_argument("--require", action="store_true", help="require the declared shape's worked examples (legacy tax files: at least one)")
     args = ap.parse_args(argv)
 
     if args.paths:
@@ -256,13 +278,15 @@ def main(argv=None):
         found, fails = check_file(path)
         total_blocks += found
         failures.extend(fails)
-        if args.require and found == 0 and is_tax_skill(path) and not (args.changed_only and body_unchanged(path)):
-            missing.append(os.path.relpath(path, REPO_ROOT))
+        if args.require and not (args.changed_only and body_unchanged(path)):
+            need = required_examples(path)
+            if found < need:
+                missing.append((os.path.relpath(path, REPO_ROOT), found, need))
 
     for line in failures:
         print("FAIL", line)
-    for path in missing:
-        print("MISSING", path, "(tax skill with no oa-check block)")
+    for path, found, need in missing:
+        print("MISSING", path, f"({found} oa-check block(s), need {need})")
     print(f"checked {len(files)} files, {total_blocks} oa-check blocks, {len(failures)} failures, {len(missing)} missing")
     return 1 if failures or missing else 0
 

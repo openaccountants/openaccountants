@@ -10,14 +10,20 @@
 3. `README.md`
 4. `ec-company-formation.md`
 5. `ec-corporate-income-tax.md`
-6. `ec-tax-overview.md`
-7. `ecuador-income-tax.md`
-8. `ecuador-iva.md`
-9. `ecuador-payroll.md`
-10. `ecuador-social-contributions.md`
-11. `ecuador-tax-optimization.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+6. `ec-cross-border.md`
+7. `ec-tax-overview.md`
+8. `ec-transfer-pricing.md`
+9. `ecuador-income-tax.md`
+10. `ecuador-iva.md`
+11. `ecuador-payroll.md`
+12. `ecuador-social-contributions.md`
+13. `ecuador-tax-optimization.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
+17. `workflow-base.md`
+18. `income-tax-workflow-base.md`
+19. `social-contributions-workflow-base.md`
 
 ## How to use
 

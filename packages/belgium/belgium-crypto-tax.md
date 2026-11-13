@@ -6,7 +6,7 @@ jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-10-31
 depends_on:
-  - belgium-income-tax
+  - be-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

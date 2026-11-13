@@ -8,6 +8,8 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
+4. `re-octroi-producer-registration-and-returns.md`
+5. `workflow-base.md`
 
 ## How to use
 

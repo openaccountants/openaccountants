@@ -879,6 +879,67 @@ def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
     return findings
 
 
+
+def excluded_country_path(repo: Path, head: str | None, path: str | None) -> bool:
+    """True when the path sits in a country folder named by the exclusion policy
+    or by a coverage-withdrawal manifest entry (read at head, or on disk when the
+    change is uncommitted)."""
+    if not path:
+        return False
+
+    def read(rel: str) -> str:
+        if head is None:
+            target = repo / rel
+            return target.read_text(encoding="utf-8") if target.exists() else ""
+        return read_revision_file(repo, head, rel) or ""
+
+    try:
+        import yaml
+        folders: set[str] = set()
+        policy = yaml.safe_load(read("scripts/data/sanctioned.yml")) or {}
+        folders |= {c["folder"] for c in policy.get("countries", []) if isinstance(c.get("folder"), str)}
+        manifest = json.loads(read("docs/coverage-withdrawals.json") or "{}")
+        folders |= {w["folder"] for w in manifest.get("withdrawals", []) if isinstance(w, dict) and isinstance(w.get("folder"), str)}
+        return any(path.startswith("skills/" + folder + "/") for folder in folders)
+    except (ValueError, TypeError, KeyError, AttributeError, OSError):
+        return True
+
+
+def declared_coverage_withdrawal(repo: Path, base: str, head: str | None, change: Change) -> bool:
+    """A committed audit deletion with an exact prior blob and coverage decision.
+
+    This is a reviewable withdrawal declaration, not proof of human approval.
+    Maintainers still review the policy and manifest. Exporter sync, renames,
+    uncommitted removals and all ordinary deletions remain blocked.
+    """
+    if head is None or change.status != "D" or not change.before_path:
+        return False
+    try:
+        import yaml
+        manifest = json.loads(read_revision_file(repo, head, "docs/coverage-withdrawals.json") or "{}")
+        policy = yaml.safe_load(read_revision_file(repo, head, "scripts/data/sanctioned.yml") or "") or {}
+        withdrawals = manifest.get("withdrawals", [])
+        excluded = {(c["code"], c["folder"]) for c in policy.get("countries", [])}
+        matches = []
+        for entry in withdrawals:
+            code, folder = entry.get("code"), entry.get("folder")
+            if (code, folder) not in excluded or not isinstance(folder, str):
+                continue
+            if not entry.get("decided_by") or not entry.get("reason"):
+                continue
+            date.fromisoformat(entry["decided_on"])
+            files = entry.get("files", [])
+            paths = [row["path"] for row in files]
+            if len(paths) != len(set(paths)) or any(not path.startswith("skills/" + folder + "/") for path in paths):
+                continue
+            for row in files:
+                if row["path"] == change.before_path and row.get("previous_blob") == revision_blob(repo, base, change.before_path):
+                    matches.append(row)
+        return len(matches) == 1
+    except (ValueError, TypeError, KeyError, AttributeError, yaml.YAMLError):
+        return False
+
+
 def run_integrity_check(
     repo: Path,
     base: str,
@@ -911,7 +972,19 @@ def run_integrity_check(
 
         guide_changes.append(change)
         if change.status in {"D", "R"} or (before_is_guide and not after_is_guide):
-            severity = "error" if mode == "sync" or strict_metadata else "warning"
+            if mode == "audit" and declared_coverage_withdrawal(repo, base, head, change):
+                findings.append(Finding("notice", "declared-coverage-withdrawal", change.display_path,
+                                        "coverage exclusion and exact prior Git blob recorded; maintainer review required"))
+                continue
+            # A human PR's deletion/rename is governed by validate-guides.py's
+            # required Moved/Not moved record. Strict metadata governs dates
+            # and versions, not a ban on every intentional retirement. The
+            # former database exporter still may never remove source files.
+            # Ordinary deletions are reviewed through validate-guides.py (warning);
+            # a deletion inside an excluded country folder that is not an exact
+            # declared withdrawal stays an error under strict metadata.
+            in_excluded = excluded_country_path(repo, head, change.before_path)
+            severity = "error" if mode == "sync" or (strict_metadata and in_excluded) else "warning"
             findings.append(
                 Finding(
                     severity,

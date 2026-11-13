@@ -14,9 +14,16 @@
 7. `uruguay-social-contributions.md`
 8. `uy-company-formation.md`
 9. `uy-corporate-income-tax.md`
-10. `uy-tax-overview.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+10. `uy-cross-border.md`
+11. `uy-tax-overview.md`
+12. `uy-transfer-pricing.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
+16. `workflow-base.md`
+17. `income-tax-workflow-base.md`
+18. `vat-workflow-base.md`
+19. `social-contributions-workflow-base.md`
 
 ## How to use
 

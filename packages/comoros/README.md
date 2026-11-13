@@ -13,6 +13,7 @@
 6. `km-registration-and-tax-clearance.md`
 7. `km-transfer-pricing.md`
 8. `transfer-pricing-workflow-base.md`
+9. `workflow-base.md`
 
 ## How to use
 

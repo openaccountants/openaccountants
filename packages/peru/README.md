@@ -11,12 +11,19 @@
 4. `pe-company-formation.md`
 5. `pe-corporate-income-tax.md`
 6. `pe-tax-overview.md`
-7. `peru-igv.md`
-8. `peru-income-tax.md`
-9. `peru-payroll.md`
-10. `peru-social-contributions.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+7. `peru-cross-border-tax.md`
+8. `peru-igv.md`
+9. `peru-income-tax.md`
+10. `peru-payroll.md`
+11. `peru-social-contributions.md`
+12. `peru-transfer-pricing.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
+16. `workflow-base.md`
+17. `vat-workflow-base.md`
+18. `income-tax-workflow-base.md`
+19. `social-contributions-workflow-base.md`
 
 ## How to use
 

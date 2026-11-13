@@ -1,5 +1,6 @@
 ---
 name: za-vat-return
+status: needs_sources
 description: Use this skill whenever asked about South African VAT returns for self-employed individuals or small businesses. Trigger on phrases like "South Africa VAT", "VAT201", "SARS VAT", "15% VAT", "eFiling VAT", "zero-rated SA", "VAT vendor", or any question about VAT filing, computation, or registration for vendors in South Africa. Covers the 15% standard rate, zero-rated and exempt supplies, R2.3M registration threshold, VAT201 return, and bimonthly filing via SARS eFiling. ALWAYS read this skill before touching any South African VAT work.
 version: 2.2
 tax_year_notes: Merged from za-vat-return and south-africa-vat on 2026-11-01. Werner Britz validated both in May 2026; he has not yet confirmed the merged file.

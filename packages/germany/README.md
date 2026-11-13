@@ -35,16 +35,20 @@
 28. `germany-vat-return.md`
 29. `leaving-germany-exit-tax.md`
 30. `references.md`
-31. `eu-vat-directive.md`
-32. `bookkeeping-workflow-base.md`
-33. `einvoice-workflow-base.md`
-34. `payroll-workflow-base.md`
-35. `company-formation-workflow-base.md`
-36. `financial-statements-workflow-base.md`
-37. `transfer-pricing-workflow-base.md`
-38. `crypto-tax-workflow-base.md`
-39. `germany-guided-intake.md`
-40. `germany-return-assembly.md`
+31. `eu-vat-base.md`
+32. `eu-vat-directive.md`
+33. `bookkeeping-workflow-base.md`
+34. `einvoice-workflow-base.md`
+35. `payroll-workflow-base.md`
+36. `company-formation-workflow-base.md`
+37. `financial-statements-workflow-base.md`
+38. `transfer-pricing-workflow-base.md`
+39. `crypto-tax-workflow-base.md`
+40. `germany-guided-intake.md`
+41. `germany-return-assembly.md`
+42. `workflow-base.md`
+43. `income-tax-workflow-base.md`
+44. `social-contributions-workflow-base.md`
 
 ## Also known as
 

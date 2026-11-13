@@ -6,12 +6,13 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ca-estimated-tax-540es"
   jurisdiction: "US-CA"
-  last_updated: "2026-06-12"
+  tax_year: "2025"
+  last_updated: "2026-07-13"
 ---
 
-# CA Estimated Tax 540-ES Skill v0.2
+# CA Estimated Tax 540es
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+## CA Estimated Tax 540-ES Skill v0.2
 
 ## What this file is, and what it is not
 
@@ -20,8 +21,6 @@ metadata:
 **This skill does NOT compute California income tax** (handled by `ca-540-individual-return`). It takes the total CA tax liability as an input and determines the required estimated payments, safe harbor amounts, and any underpayment penalty.
 
 **Critical distinction from federal.** Federal estimated tax uses equal 25% quarterly installments. California uses 30%/40%/0%/30%. Getting this wrong causes underpayment penalties. This is the single most important fact in this skill.
-
----
 
 ## Section 1 -- Scope statement
 
@@ -48,8 +47,6 @@ This skill does NOT cover:
 - Corporate estimated tax (Form 100-ES)
 - Nonresident estimated tax
 
----
-
 ## Section 2 -- Year coverage and currency
 
 **Tax year covered:** 2025 (estimated payments made during 2025; return filed in 2026).
@@ -66,16 +63,18 @@ This skill does NOT cover:
 - FTB Form 5805 Instructions (2025) -- Underpayment of Estimated Tax by Individuals and Fiduciaries
 - FTB Form 5805-F Instructions (2025) -- Underpayment of Estimated Tax by Farmers and Fishermen
 
----
-
 ## Section 3 -- Year-specific figures table for tax year 2025
 
 ### Installment schedule
 
+**Installment schedule**  _(R&TC section 19136.1)_
+
+**Installment schedule**  _([R&TC section 19136.1](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
+
 | Installment | Due date (calendar year) | Percentage of required annual payment | Cumulative |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Q1 | April 15, 2025 | 30% | 30% |
-| Q2 | June 15, 2025 | 40% | 70% |
+| Q2 | June 16, 2025 | 40% | 70% |
 | Q3 | September 15, 2025 | 0% (no payment due) | 70% |
 | Q4 | January 15, 2026 | 30% | 100% |
 
@@ -83,41 +82,50 @@ This skill does NOT cover:
 
 ### Safe harbor rules
 
-| Rule | Threshold | Source |
-|---|---|---|
-| Current-year safe harbor | Pay 90% of current year's CA tax liability | R&TC section 19136.5 |
-| Prior-year safe harbor | Pay 100% of prior year's CA tax liability | R&TC section 19136.5 |
-| Prior-year safe harbor (high income) | If CA AGI > $150,000 ($75,000 MFS): pay 110% of prior year's CA tax liability | R&TC section 19136.5 (verify -- some states use 110%, confirm CA does too) |
+**Safe harbor rules**  _([R&TC section 19136.5](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
 
-**Note:** Unlike federal law, which uses 110% for AGI > $150,000, California's high-income threshold must be verified. Some sources indicate California uses 100% for all income levels. **Flag for reviewer: verify whether CA requires 110% safe harbor for high-income taxpayers.**
+| Rule | Threshold | Source |
+| --- | --- | --- |
+| Current-year safe harbor | Pay 90% of current year's CA tax liability | R&TC section 19136.5 |
+| Prior-year safe harbor | Pay 100% of prior year's CA tax liability, unless the 110% high-income rule applies | R&TC section 19136.5 |
+| Prior-year safe harbor (high income) | If 2024 CA AGI > $150,000 ($75,000 MFS): use 110% of 2024 CA tax liability, unless the 2025 $1M/$500K current-year high-income rule applies | 2025 Form 540-ES / Form 5805 instructions |
+| Current-year high-income rule | If 2025 CA AGI is $1,000,000 or more ($500,000 MFS), use 90% of 2025 tax; prior-year safe harbor is unavailable | 2025 Form 540-ES / Form 5805 instructions |
+
+**High-income rules resolved for 2025:** If 2024 CA AGI was more than $150,000 ($75,000 MFS), use 110% of 2024 tax instead of 100% for the prior-year safe harbor. If 2025 CA AGI is $1,000,000 or more ($500,000 MFS), the taxpayer must base estimated tax on 90% of 2025 tax; the prior-year safe harbor is not available.
 
 ### Estimated tax payment threshold
 
+**Estimated tax payment threshold**  _([R&TC section 19136; FTB Form 540-ES instructions](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
+
 | Figure | Value | Source |
-|---|---|---|
+| --- | --- | --- |
 | Estimated tax required if expected tax liability (after withholding and credits) exceeds | $500 (single/HOH/MFS) or $1,000 (MFJ) (verify 2025) | R&TC section 19136; FTB Form 540-ES instructions |
 
 ### Underpayment penalty rate
 
+**Underpayment penalty rate**  _([R&TC section 19521; FTB quarterly announcements](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
+
 | Figure | Value | Source |
-|---|---|---|
-| Underpayment interest rate | Set quarterly by FTB; currently approximately 7% annually (verify current rate) | R&TC section 19521; FTB quarterly announcements |
+| --- | --- | --- |
+| Underpayment interest rate | Form 5805 uses FTB interest rates by period; 2025 Form 5805 shows 8% for April 15-June 30, 2025 and 7% for July 1, 2025-April 15, 2026. Verify current FTB rates at filing. | R&TC section 19521; FTB quarterly announcements |
 
 ### Key payment logistics
 
+**Key payment logistics**  _(https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html)_
+
 | Item | Detail |
-|---|---|
+| --- | --- |
 | Payment methods | FTB Web Pay (recommended), credit card (with fee), check with Form 540-ES voucher |
 | Web Pay URL | https://webapp.ftb.ca.gov/webpay |
 | Payee for checks | Franchise Tax Board |
-| Mailing address | Varies by county; see Form 540-ES voucher |
-
----
+| Mailing address | Franchise Tax Board, PO Box 942867, Sacramento, CA 94267-0008 |
 
 ## Section 4 -- Primary source library
 
+**Primary source library**
+
 | Source | Use |
-|---|---|
+| --- | --- |
 | R&TC section 19136 | Requirement to make estimated tax payments |
 | R&TC section 19136.1 | 30/40/0/30 installment allocation |
 | R&TC section 19136.5 | Safe harbor (prior-year and current-year) |
@@ -129,18 +137,11 @@ This skill does NOT cover:
 | FTB Form 5805-F (2025) | Farmer/fisherman underpayment penalty |
 | FTB Publication 1060 | Guide for Corporations Remitting Estimated Tax (reference for contrast) |
 
----
-
 ## Section 5 -- Determining whether estimated tax is required
 
 ### 5.1 -- General rule
 
-A taxpayer must make estimated tax payments if:
-
-1. They expect to owe at least $500 ($1,000 MFJ) in CA tax after subtracting withholding and credits (verify thresholds), AND
-2. They expect their withholding and credits to be less than the LESSER of:
-   - 90% of the current year's tax, OR
-   - 100% of the prior year's tax (110% if high income -- verify CA rule)
+- **General rule for estimated tax requirement** — A taxpayer must make estimated tax payments if: 1) they expect to owe at least $500 ($250 if married/RDP filing separately) in CA tax after subtracting withholding and credits, AND 2) they expect withholding and credits to be less than the applicable required annual payment: generally the lesser of 90% of 2025 tax or 100% of 2024 tax; 110% of 2024 tax if 2024 CA AGI exceeded $150,000 ($75,000 MFS); or 90% of 2025 tax if 2025 CA AGI is $1,000,000 or more ($500,000 MFS).  _([R&TC section 19136](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
 
 ### 5.2 -- Who typically must pay
 
@@ -151,34 +152,30 @@ A taxpayer must make estimated tax payments if:
 
 ### 5.3 -- Who may be exempt
 
-- Taxpayers whose CA tax liability (after withholding) is less than $500/$1,000
+- Taxpayers whose CA tax liability after withholding and credits is below $500 ($250 if MFS)
 - New California residents with no prior-year CA return (but see 5.4)
 - Farmers and fishermen (special rules under R&TC section 19136.2 -- single installment due January 15)
 
 ### 5.4 -- First year in California
 
-If the taxpayer had no CA tax liability in the prior year (e.g., new CA resident), the prior-year safe harbor is $0 (no prior-year tax). The taxpayer must use the 90% current-year method. **Flag for reviewer.**
-
----
+- **First year in California rule** — If the taxpayer had no CA tax liability in the prior year (e.g., new CA resident), no 2025 estimated tax payments are required: a nonresident or new resident of California in 2025 who did not have a California tax liability in 2024 does not have to make estimated tax payments. **Flag for reviewer.**  _([R&TC section 19136.5](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
 
 ## Section 6 -- The 30/40/0/30 installment schedule (detailed)
 
 ### 6.1 -- How it works
 
-California R&TC section 19136.1 prescribes the following allocation:
+**6.1 -- How it works**  _([R&TC section 19136.1](https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html))_
 
 | Installment | Percentage | Due date | What to pay |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1st | 30% | April 15, 2025 | 30% of the required annual payment |
-| 2nd | 40% | June 15, 2025 | 40% of the required annual payment |
+| 2nd | 40% | June 16, 2025 | 40% of the required annual payment |
 | 3rd | 0% | September 15, 2025 | $0 (no payment required) |
 | 4th | 30% | January 15, 2026 | 30% of the required annual payment |
 
 ### 6.2 -- Required annual payment
 
-The "required annual payment" is the LESSER of:
-- 90% of the 2025 CA tax liability, OR
-- 100% of the 2024 CA tax liability (verify high-income exception)
+- **Required annual payment formula** — The required annual payment is generally the lesser of 90% of 2025 CA tax or 100% of 2024 CA tax. Use 110% of 2024 tax if 2024 CA AGI exceeded $150,000 ($75,000 MFS). If 2025 CA AGI is $1,000,000 or more ($500,000 MFS), use 90% of 2025 tax; prior-year safe harbor is unavailable.  _([R&TC section 19136.5](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
 
 ### 6.3 -- Example computation
 
@@ -190,83 +187,60 @@ Required annual payment = lesser of:
 
 Required annual payment = $10,000.
 
+**Example computation table**  _(https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html)_
+
 | Installment | Amount |
-|---|---|
+| --- | --- |
 | Q1 (April 15) | $10,000 x 30% = $3,000 |
-| Q2 (June 15) | $10,000 x 40% = $4,000 |
+| Q2 (June 16) | $10,000 x 40% = $4,000 |
 | Q3 (September 15) | $0 |
 | Q4 (January 15) | $10,000 x 30% = $3,000 |
 
 ### 6.4 -- Withholding credit application
 
-If the taxpayer also has W-2 wages with CA withholding:
-- W-2 withholding is treated as paid ratably over the year (equally across all 4 quarters), regardless of when it was actually withheld.
-- Reduce each installment's required payment by 1/4 of the annual withholding.
-- If total withholding meets the safe harbor, no estimated payments are needed.
+- **Withholding credit application** — If the taxpayer also has W-2 wages with CA withholding: W-2 withholding is treated as paid on each payment due date in the same 30%/40%/0%/30% pattern as the required installments, unless you can show it was withheld otherwise. Reduce the 1st and 4th installments by 30% of the annual withholding and the 2nd by 40%. If total withholding meets the safe harbor, no estimated payments are needed.  _([R&TC section 19136.5](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
 
 ### 6.5 -- Backup withholding
 
-Backup withholding (7% on 1099 payments) is also treated as paid ratably. It reduces estimated tax obligations.
-
----
+- **Backup withholding treatment** — Backup withholding (7% on 1099 payments) is also treated as paid ratably. It reduces estimated tax obligations.  _(R&TC section 19136.5)_
 
 ## Section 7 -- Underpayment penalty computation (Form 5805)
 
 ### 7.1 -- When the penalty applies
 
-A penalty applies if:
-- The taxpayer underpaid any installment relative to its required amount, AND
-- No exception applies (Section 7.3)
-
-The penalty is computed as INTEREST on each underpayment from the installment due date to the earlier of:
-- The date the underpayment was cured (paid), or
-- April 15, 2026 (the return due date)
+- **When penalty applies** — A penalty applies if: The taxpayer underpaid any installment relative to its required amount, AND No exception applies (Section 7.3). The penalty is computed as INTEREST on each underpayment from the installment due date to the earlier of: The date the underpayment was cured (paid), or April 15, 2026 (the return due date)  _(R&TC section 19142)_
 
 ### 7.2 -- Penalty computation steps
 
-For each installment:
-
-1. Determine the required payment (30% / 40% / 0% / 30% of required annual payment).
-2. Subtract withholding credit allocated to that quarter (1/4 of annual withholding).
-3. Subtract estimated payments actually made by the due date.
-4. If the result is positive, that is the underpayment for that installment.
-5. Compute interest on the underpayment at the FTB's quarterly rate from the due date to April 15, 2026 (or earlier payment date).
+- **Penalty computation steps** — For each installment: 1. Determine the required payment (30% / 40% / 0% / 30% of required annual payment). 2. Subtract withholding credit allocated to that installment (30% of annual withholding for the 1st and 4th, 40% for the 2nd, 0% for the 3rd). 3. Subtract estimated payments actually made by the due date. 4. If the result is positive, that is the underpayment for that installment. 5. Compute interest on the underpayment at the FTB's quarterly rate from the due date to April 15, 2026 (or earlier payment date).  _([R&TC section 19142](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
 
 ### 7.3 -- Exceptions to penalty
 
+**Exceptions to penalty**  _([R&TC section 19144](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
+
 | Exception | Description |
-|---|---|
-| Tax liability under $500/$1,000 | No penalty if total tax after withholding/credits < $500 (single) / $1,000 (MFJ) |
+| --- | --- |
+| Tax liability under threshold | No penalty if total tax after withholding/credits is less than $500, or less than $250 if MFS |
 | No prior-year liability | If 2024 CA tax was $0 (12-month return), no penalty for 2025 underpayment |
-| Casualty/disaster | FTB may waive penalty for taxpayers in federally declared disaster areas |
-| Annualized income method | Taxpayer can use Schedule AI on Form 5805 to demonstrate income was earned unevenly throughout the year and payments matched income timing |
+| Casualty/disaster | FTB may waive the penalty if an installment was underpaid due to a casualty, disaster, or other unusual circumstance, or if you retired after age 62 or became disabled in 2024 or 2025 and the underpayment was due to reasonable cause |
+| Annualized income method | Taxpayer can use Part III (Annualized Income Installment Method Schedule) of Form 5805 to demonstrate income was earned unevenly throughout the year and payments matched income timing |
 
 ### 7.4 -- Annualized income installment method
 
-If income was earned unevenly (e.g., large contract paid in Q4), the taxpayer can use the annualized income installment method on Schedule AI (Form 5805):
-
-1. Compute CA taxable income for each cumulative period (Jan-Mar, Jan-May, Jan-Aug, Jan-Dec).
-2. Annualize each period's income.
-3. Compute tax on the annualized income.
-4. Determine the required installment based on annualized tax.
-5. This may reduce or eliminate the penalty for early installments when income was low.
-
----
+- **Annualized income installment method** — If income was earned unevenly (e.g., large contract paid in Q4), the taxpayer can use the annualized income installment method on Form 5805, Part III (Annualized Income Installment Method Schedule): 1. Compute CA taxable income for each cumulative period (Jan-Mar, Jan-May, Jan-Aug, Jan-Dec). 2. Annualize each period's income. 3. Compute tax on the annualized income. 4. Determine the required installment based on annualized tax. 5. This may reduce or eliminate the penalty for early installments when income was low.  _([FTB Form 5805 (2025)](https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html))_
 
 ## Section 8 -- Interaction with federal estimated tax
 
 ### 8.1 -- Separate systems
 
-California estimated tax and federal estimated tax are completely independent:
-- Separate computations
-- Separate payment methods (FTB Web Pay vs. IRS EFTPS/Direct Pay)
-- Separate safe harbors
-- Different installment schedules (CA 30/40/0/30 vs. federal 25/25/25/25)
+- **Separate systems** — California estimated tax and federal estimated tax are completely independent: Separate computations, Separate payment methods (FTB Web Pay vs. IRS EFTPS/Direct Pay), Separate safe harbors, Different installment schedules (CA 30/40/0/30 vs. federal 25/25/25/25)
 
 ### 8.2 -- Common errors
 
+**Common errors**
+
 | Error | Why it happens | Correct approach |
-|---|---|---|
+| --- | --- | --- |
 | Paying equal quarters to CA | Taxpayer assumes CA matches federal | Use 30/40/0/30 |
 | Skipping CA Q1 because federal Q1 was paid | Confusing the two systems | Pay both on April 15 |
 | Using federal safe harbor for CA | Different rules | Compute CA safe harbor separately |
@@ -274,47 +248,38 @@ California estimated tax and federal estimated tax are completely independent:
 
 ### 8.3 -- Consolidated payment calendar (for taxpayer action list)
 
+**Consolidated payment calendar**  _(https://www.ftb.ca.gov/forms/2025/2025-540-es-instructions.html)_
+
 | Date | Federal payment | CA payment |
-|---|---|---|
+| --- | --- | --- |
 | April 15, 2025 | 25% of federal required | 30% of CA required |
-| June 15, 2025 | 25% of federal required | 40% of CA required |
+| June 16, 2025 | 25% of federal required | 40% of CA required |
 | September 15, 2025 | 25% of federal required | $0 |
 | January 15, 2026 | 25% of federal required | 30% of CA required |
 
----
-
 ## Section 9 -- PROHIBITIONS
 
-**P-ES-1.** NEVER use equal 25% quarterly installments for California estimated tax. California uses 30/40/0/30. This is the most critical prohibition in this skill.
-
-**P-ES-2.** NEVER tell the taxpayer to make a California estimated tax payment on September 15. The Q3 California installment is $0.
-
-**P-ES-3.** NEVER combine federal and California estimated tax into a single payment. They go to different agencies (IRS vs. FTB) with different methods.
-
-**P-ES-4.** NEVER apply the federal 110% safe harbor rule to California without verifying California's high-income threshold. Confirm whether CA uses 100% or 110% for AGI > $150,000.
-
-**P-ES-5.** NEVER ignore withholding credits when computing estimated tax. W-2 withholding and backup withholding reduce the estimated tax obligation.
-
-**P-ES-6.** NEVER assume the farmer/fisherman exception applies automatically. It requires that at least 2/3 of gross income comes from farming or fishing.
-
-**P-ES-7.** NEVER confuse Form 540-ES (individual estimated tax) with Form 3522 (LLC franchise tax) or Form 3536 (LLC fee estimate). These are separate obligations with separate due dates.
-
-**P-ES-8.** NEVER skip the underpayment penalty analysis. Even if the taxpayer paid some estimated tax, they may have underpaid specific installments under the 30/40/0/30 schedule.
-
----
+- **P-ES-1** — NEVER use equal 25% quarterly installments for California estimated tax. California uses 30/40/0/30. This is the most critical prohibition in this skill.
+- **P-ES-2** — NEVER tell the taxpayer to make a California estimated tax payment on September 15. The Q3 California installment is $0.
+- **P-ES-3** — NEVER combine federal and California estimated tax into a single payment. They go to different agencies (IRS vs. FTB) with different methods.
+- **P-ES-4** — NEVER apply a flat 100% prior-year safe harbor for high-income California taxpayers. If 2024 CA AGI exceeded $150,000 ($75,000 MFS), use 110% of 2024 tax; if 2025 CA AGI is $1,000,000 or more ($500,000 MFS), use 90% of 2025 tax.  _(https://www.ftb.ca.gov/forms/2025/2025-5805-instructions.html)_
+- **P-ES-5** — NEVER ignore withholding credits when computing estimated tax. W-2 withholding and backup withholding reduce the estimated tax obligation.
+- **P-ES-6** — NEVER assume the farmer/fisherman exception applies automatically. It requires that at least 2/3 of gross income comes from farming or fishing.
+- **P-ES-7** — NEVER confuse Form 540-ES (individual estimated tax) with Form 3522 (LLC franchise tax) or Form 3536 (LLC fee estimate). These are separate obligations with separate due dates.
+- **P-ES-8** — NEVER skip the underpayment penalty analysis. Even if the taxpayer paid some estimated tax, they may have underpaid specific installments under the 30/40/0/30 schedule.
 
 ## Section 10 -- Edge Cases
 
 ### EC-ES-1 -- Taxpayer pays equal quarters by mistake
 
-**Situation:** Taxpayer's required annual payment is $20,000. They pay $5,000 on April 15, $5,000 on June 15, $5,000 on September 15, $5,000 on January 15.
+**Situation:** Taxpayer's required annual payment is $20,000. They pay $5,000 on April 15, $5,000 on June 16, $5,000 on September 15, $5,000 on January 15.
 
 **Resolution:**
 - Required: Q1 = $6,000 (30%), Q2 = $8,000 (40%), Q3 = $0, Q4 = $6,000 (30%).
 - Paid: Q1 = $5,000, Q2 = $5,000, Q3 = $5,000, Q4 = $5,000.
-- Underpayment: Q1 = $1,000 (underpaid), Q2 = $3,000 (underpaid), Q3 = $0 (overpaid, no penalty but no credit applied retroactively to Q1/Q2), Q4 = $1,000 (underpaid).
-- Penalty: interest computed on $1,000 from April 15, on $3,000 from June 15, and on $1,000 from January 15, each to April 15, 2026.
-- **Flag for reviewer:** The Q3 overpayment may reduce the Q4 underpayment depending on FTB rules. Verify on Form 5805.
+- Underpayment: Q1 = $1,000 (underpaid), Q2 = $3,000 (underpaid), Q3 = $0 required; the $5,000 September payment is applied first to the Q1 and Q2 underpayments, leaving $1,000 that carries to Q4, so the $5,000 January payment plus the $1,000 carried covers Q4 in full (no Q4 underpayment).
+- Penalty: interest computed on $1,000 from April 15 and on $3,000 from June 16, each to September 15, 2025 (the date the September payment was made).
+- Form 5805 applies payments to earlier underpayment balances first; the September payment cannot retroactively erase Q1/Q2 penalties but may be applied before later-period underpayments.
 
 ### EC-ES-2 -- New California resident, no prior-year CA tax
 
@@ -323,9 +288,8 @@ California estimated tax and federal estimated tax are completely independent:
 **Resolution:**
 - Prior-year safe harbor: $0 (no prior CA tax).
 - Cannot rely on 100% of prior-year tax (that would be $0, which is insufficient).
-- Must use 90% current-year method: 90% x $15,000 = $13,500.
-- Required annual payment: $13,500.
-- Q1 = $4,050, Q2 = $5,400, Q3 = $0, Q4 = $4,050.
+- No 2025 estimated tax payments are required: a new resident of California in 2025 who did not have a California tax liability in 2024 does not have to make estimated tax payments.
+- The $15,000 is paid with the 2025 return.
 - **Flag for reviewer:** New residents must carefully estimate current-year tax since the prior-year safe harbor is unavailable.
 
 ### EC-ES-3 -- Income spike in Q4
@@ -333,12 +297,12 @@ California estimated tax and federal estimated tax are completely independent:
 **Situation:** Freelancer earns $30,000 in Q1-Q3 combined, then receives a $120,000 contract payment in November. Total 2025 CA tax is $18,000. Prior-year CA tax was $5,000.
 
 **Resolution:**
-- Prior-year safe harbor: 100% x $5,000 = $5,000. This is the required annual payment (less than 90% x $18,000 = $16,200).
+- Prior-year safe harbor: 100% x $5,000 = $5,000, assuming the 110% prior-year and $1M current-year high-income rules do not apply. This is the required annual payment (less than 90% x $18,000 = $16,200).
 - Q1 = $1,500, Q2 = $2,000, Q3 = $0, Q4 = $1,500.
 - If the taxpayer paid $1,500 / $2,000 / $0 / $1,500, the safe harbor is met. No penalty even though actual tax is $18,000.
 - Remaining $13,000 ($18,000 - $5,000) is due with the return on April 15, 2026.
 - Alternatively, the taxpayer can use the annualized income method to reduce even the safe harbor amounts for early quarters.
-- **Flag for reviewer:** Confirm prior-year safe harbor is sufficient; check if 110% applies.
+- Confirm whether the 110% prior-year or $1M/$500K current-year high-income rule applies before relying on this example.
 
 ### EC-ES-4 -- W-2 withholding covers most of the tax
 
@@ -346,12 +310,12 @@ California estimated tax and federal estimated tax are completely independent:
 
 **Resolution:**
 - Required annual payment: lesser of 90% x $15,000 = $13,500 or 100% of prior year tax.
-- Withholding credit: $12,000 / 4 = $3,000 per quarter (allocated ratably).
+- Withholding credit: $12,000 is treated as paid 30% / 40% / 0% / 30% on the four due dates: Q1 $3,600, Q2 $4,800, Q3 $0, Q4 $3,600.
 - Net required estimated payment per installment:
-  - Q1: 30% x $13,500 - $3,000 = $4,050 - $3,000 = $1,050
-  - Q2: 40% x $13,500 - $3,000 = $5,400 - $3,000 = $2,400
-  - Q3: 0% x $13,500 - $3,000 = -$3,000 (no payment needed, credit applied)
-  - Q4: 30% x $13,500 - $3,000 = $4,050 - $3,000 = $1,050
+  - Q1: 30% x $13,500 - $3,600 = $4,050 - $3,600 = $450
+  - Q2: 40% x $13,500 - $4,800 = $5,400 - $4,800 = $600
+  - Q3: 0% x $13,500 - $0 = $0 (no installment due)
+  - Q4: 30% x $13,500 - $3,600 = $4,050 - $3,600 = $450
 - If withholding alone meets the prior-year safe harbor, no estimated payments needed.
 - **Flag for reviewer:** Verify whether W-2 withholding alone meets safe harbor.
 
@@ -364,7 +328,7 @@ California estimated tax and federal estimated tax are completely independent:
 - Single installment due January 15, 2026 (100% of required payment).
 - OR file return and pay full tax by March 1, 2026 -- no penalty.
 - The 30/40/0/30 schedule does NOT apply to qualifying farmers/fishermen.
-- **Flag for reviewer:** Verify the 2/3 gross income test. If the taxpayer does not qualify, the regular 30/40/0/30 schedule applies.
+- Verify the 2/3 gross income test. If the taxpayer does not qualify, the regular 30/40/0/30 schedule applies.
 
 ### EC-ES-6 -- Disaster area relief
 
@@ -378,7 +342,7 @@ California estimated tax and federal estimated tax are completely independent:
 
 ### EC-ES-7 -- Taxpayer overpays Q1 and Q2
 
-**Situation:** Taxpayer's required annual payment is $10,000. They pay $5,000 on April 15 and $5,000 on June 15 (total $10,000 by Q2). Nothing in Q3 or Q4.
+**Situation:** Taxpayer's required annual payment is $10,000. They pay $5,000 on April 15 and $5,000 on June 16 (total $10,000 by Q2). Nothing in Q3 or Q4.
 
 **Resolution:**
 - Required: Q1 = $3,000 (30%), Q2 = $4,000 (40%), Q3 = $0, Q4 = $3,000 (30%).
@@ -393,11 +357,9 @@ California estimated tax and federal estimated tax are completely independent:
 **Resolution:**
 - Each spouse computes estimated tax independently.
 - Spouse A: required annual payment based on Spouse A's tax. Apply 30/40/0/30.
-- Spouse B: if tax after withholding < $500, no estimated payments required.
+- Spouse B: if tax after withholding and credits is less than $250, no estimated payments required for MFS.
 - Joint payments from prior years must be allocated between spouses.
 - **Flag for reviewer:** Verify allocation of prior-year payments and withholding between spouses.
-
----
 
 ## Section 11 -- Test Suite
 
@@ -408,18 +370,18 @@ California estimated tax and federal estimated tax are completely independent:
 
 ### Test ES-2 -- Equal-quarter error detection
 
-**Input:** Required annual payment = $12,000. Taxpayer paid $3,000 each quarter (April 15, June 15, September 15, January 15).
-**Expected:** Required: Q1 $3,600, Q2 $4,800, Q3 $0, Q4 $3,600. Underpayment: Q1 $600, Q2 $1,800, Q3 none, Q4 $600. Penalty = interest on each underpayment from due date to April 15, 2026.
+**Input:** Required annual payment = $12,000. Taxpayer paid $3,000 each quarter (April 15, June 16, September 15, January 15).
+**Expected:** Required: Q1 $3,600, Q2 $4,800, Q3 $0, Q4 $3,600. Underpayment: Q1 $600, Q2 $1,800, Q3 none; the September 15 payment is applied first to the Q1 and Q2 underpayments and the $600 left over carries to Q4, so Q4 is paid in full (no Q4 underpayment). Penalty = interest on the Q1 and Q2 underpayments from their due dates to September 15.
 
 ### Test ES-3 -- Withholding offsets estimated tax
 
 **Input:** Total CA tax = $16,000. Prior year tax = $14,000. W-2 withholding = $14,000.
-**Expected:** Required annual payment = $14,000. Withholding per quarter = $3,500. Net required: Q1 = $4,200 - $3,500 = $700, Q2 = $5,600 - $3,500 = $2,100, Q3 = $0 - $3,500 = -$3,500 (no payment), Q4 = $4,200 - $3,500 = $700.
+**Expected:** Required annual payment = $14,000. Withholding allocated 30%/40%/0%/30% = Q1 $4,200, Q2 $5,600, Q3 $0, Q4 $4,200. Net required: Q1 = $4,200 - $4,200 = $0, Q2 = $5,600 - $5,600 = $0, Q3 = $0, Q4 = $4,200 - $4,200 = $0. No estimated payments needed.
 
 ### Test ES-4 -- No prior-year CA tax
 
 **Input:** New CA resident. No 2024 CA tax. Expected 2025 CA tax = $20,000. No withholding.
-**Expected:** Required annual payment = 90% x $20,000 = $18,000 (prior-year safe harbor is $0, does not help). Q1 = $5,400, Q2 = $7,200, Q3 = $0, Q4 = $5,400.
+**Expected:** No 2025 estimated tax payments required: a new resident of California in 2025 who did not have a California tax liability in 2024 does not have to make estimated tax payments. The $20,000 is paid with the return.
 
 ### Test ES-5 -- Prior-year safe harbor satisfied, current year much higher
 
@@ -431,11 +393,9 @@ California estimated tax and federal estimated tax are completely independent:
 **Input:** Federal required estimated = $16,000. CA required estimated = $10,000.
 **Expected:** Payment calendar:
 - April 15: Federal $4,000 (25%) + CA $3,000 (30%) = $7,000 total
-- June 15: Federal $4,000 (25%) + CA $4,000 (40%) = $8,000 total
+- June 16: Federal $4,000 (25%) + CA $4,000 (40%) = $8,000 total
 - September 15: Federal $4,000 (25%) + CA $0 (0%) = $4,000 total
 - January 15: Federal $4,000 (25%) + CA $3,000 (30%) = $7,000 total
-
----
 
 ## Section 12 -- Self-checks
 
@@ -445,7 +405,7 @@ California estimated tax and federal estimated tax are completely independent:
 
 **Check 252 -- Safe harbor computed correctly.** Verify that the required annual payment uses the lesser of 90% current-year or 100% (or 110%) prior-year.
 
-**Check 253 -- Withholding credited ratably.** If the taxpayer has W-2 withholding, verify it is allocated equally across all 4 quarters.
+**Check 253 -- Withholding credited by installment.** If the taxpayer has W-2 withholding, verify it is allocated 30%/40%/0%/30% across the installments unless actual withholding dates are shown.
 
 **Check 254 -- Federal and CA payments are separate.** Verify the taxpayer action list shows separate payment amounts to IRS (EFTPS/Direct Pay) and FTB (Web Pay).
 
@@ -459,8 +419,6 @@ California estimated tax and federal estimated tax are completely independent:
 
 **Check 259 -- Form 540-ES vs. Form 3522/3536 not confused.** Verify that 540-ES (personal estimated tax) is not conflated with Form 3522 (LLC $800) or Form 3536 (LLC fee estimate).
 
----
-
 ## Section 13 -- Cross-skill references
 
 **Inputs from:**
@@ -471,23 +429,19 @@ California estimated tax and federal estimated tax are completely independent:
 **Outputs to:**
 - `us-ca-return-assembly` -- Form 540-ES payment schedule, Form 5805 penalty, 2026 prospective schedule, consolidated payment calendar
 
----
-
 ## Section 14 -- Known gaps
 
-1. The exact FTB underpayment interest rate for 2025 quarters must be verified at filing time.
-2. Whether California uses 110% safe harbor for AGI > $150,000 requires verification.
-3. Disaster area deadline extensions are fact-specific and not embedded in this skill.
+1. FTB underpayment interest rates change by rate period; use Form 5805 and current FTB rates at filing time.
+2. 3. Disaster area deadline extensions are fact-specific and not embedded in this skill.
 4. The annualized income installment method computation is outlined but not fully detailed step-by-step.
 5. Part-year resident estimated tax allocation is not covered.
 
 ### Change log
+
 - **v0.1 (April 2026):** Stub.
 - **v0.2 (April 2026):** Full content skill with 30/40/0/30 schedule, safe harbor, underpayment penalty, edge cases, and test suite.
 
 ## End of skill
-
----
 
 ## Disclaimer
 
@@ -495,4 +449,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ca-estimated-tax-540es` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ca-estimated-tax-540es. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ca-estimated-tax-540es` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ca-estimated-tax-540es. If neither is available, confirm every figure against the official source pages cited above before relying on it.

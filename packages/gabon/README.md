@@ -12,14 +12,15 @@
 5. `ga-company-formation.md`
 6. `ga-corporate-income-tax.md`
 7. `ga-cross-border.md`
-8. `ga-income-tax.md`
-9. `ga-payroll-social.md`
-10. `ga-tax-overview.md`
-11. `ga-transfer-pricing.md`
-12. `ga-vat-gst.md`
+8. `ga-payroll-social.md`
+9. `ga-tax-overview.md`
+10. `ga-transfer-pricing.md`
+11. `ga-vat-gst.md`
+12. `gabon-income-tax.md`
 13. `payroll-workflow-base.md`
 14. `company-formation-workflow-base.md`
 15. `transfer-pricing-workflow-base.md`
+16. `workflow-base.md`
 
 ## How to use
 

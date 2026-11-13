@@ -13,7 +13,7 @@
 #   date_field        How a skill says it is still current. The checks demand these
 #                     frontmatter keys. A key ending in _date or _on is a YYYY-MM-DD date.
 #                     tax_year keeps the tax rule exactly as before (a bare year, the current
-#                     one, or tax_year_notes).
+#                     one, or an explicit adjacent-year period in tax_year_notes that includes it).
 #   max_age_days      For a date the skill was checked on (checked_on): how old it may be.
 #                     365 = twelve months before today. An older or a future date fails
 #                     check (a): an error on a pull request that changes the skill, a
@@ -41,8 +41,9 @@
 #     This guard reads the file name only. A tax skill whose name has no tax word
 #     could be relabelled to a non-tax domain; the reviewer playbook
 #     (.claude/agents/skill-reviewer.md) holds any tax-looking skill relabelled that way.
-#   - An active non-tax domain's date rule (check a) is an error on a pull request
-#     that changes the skill's text, as the tax year is for a tax skill.
+#   - The fixed core (dates, sources, worked examples, version and honest labels)
+#     applies in every domain on changed content. New skills must meet their shape;
+#     unchanged legacy shape defects remain warnings, but new defects block.
 #   - Any other value: a warning, "propose it in docs/domains.yml", and checked as before.
 #
 # How to propose a new domain:
