@@ -1,29 +1,29 @@
-# North Dakota — OpenAccountants Tax Skills
+# North Dakota state tax skills, 2026
 
-| Field | Value |
-|---|---|
-| State | North Dakota |
-| Code | US-ND |
-| Income tax | Yes |
-| Sales tax | Yes |
-| Franchise / gross receipts tax | No |
-| Tax authority | [North Dakota Office of State Tax Commissioner](https://www.tax.nd.gov) |
-| Quality tier | Q3 — AI-drafted, not independently verified |
+**Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. The ordinary core jobs have current state-law research; specific final-form, local-rate and specialist gaps remain explicit.
 
-## Files in this folder
+| Core job | Status | covered_by | Boundary / partial |
+| --- | --- | --- | --- |
+| Individual wages/business income tax | applicable | `nd-income-tax` | 2026 published ND-1ES schedules; final 2026 return mapping and specialist credits partial |
+| Sales and use tax | applicable | `nd-sales-tax` | Current ordinary 5% and remote rule; actual local rates, SaaS/digital classifications and special exemptions partial |
+| Corporate income tax | applicable | `nd-corporate-tax` | Current statutory rates/base; final 2026 forms, special industries/NOL cases and comprehensive PTET status partial |
+| General corporate franchise tax | not_applicable | `nd-corporate-tax` | Ordinary income-tax provisions do not create a general franchise computation; registration/industry charges remain separate |
+| Employer income-tax withholding | applicable | `nd-payroll` | Actual 2026 booklet; military-spouse facts, specialist nonwage and WSI matters partial |
+| Employer unemployment contributions | applicable | `nd-social-contributions` | Actual 2026 wage base/rate schedule; employer notice/elections, SOC details and special coverage partial |
 
-| File | What it covers |
-|---|---|
-| `nd-income-tax.md` | Individual income tax for self-employed / sole proprietors (Form ND-1) |
-| `nd-sales-tax.md` | State and local sales & use tax compliance |
+## Existing separate jobs retained
 
-## What's NOT covered
-- Payroll / employer withholding taxes
-- Corporate income tax (Form 40)
-- Property tax (administered at county level)
-- Estate / inheritance tax (North Dakota has none)
-- Oil and gas gross production tax
-- Coal severance tax
+| File | Retained scope and boundary |
+| --- | --- |
+| `nd-estimated-tax.md` | Separate 2025-2026 individual estimate workflow, unchanged; core `nd-income-tax` supplies current 2026 tests and amounts. Do not use old rates as 2026 authority. |
+| `nd-return-assembly.md` | Separate 2025-2026 return assembly, unchanged; final 2026 form mapping is partial. |
+| `nd-cross-border-tax.md` | Separate cross-border job, unchanged 2025 scope; no general 2026 update claimed. |
+| `nd-transfer-pricing.md` | Separate transfer-pricing job, unchanged existing 2026 scope; not an ordinary corporate computation or new independent approval. |
+
+`nd-payroll` owns wage withholding and employer reconciliation; `nd-social-contributions` owns state UI. Both original slugs remain because they serve different jobs. Their UI overlap has been consolidated into the UI owner, with all old UI assertions either corrected there or explicitly reserved.
+
+Property, oil/gas production/extraction, coal conversion/extraction, insurance-premium and other special excises are separate jobs. No new claim about estate/inheritance tax is made from the old README's absence assertion.
 
 ## How to use
-Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM. See the main README for details.
+
+Load the relevant state skill and its stated dependencies. `nd-sales-tax` requires `us-sales-tax`. Federal owners include `us-form-941-940-payroll`, `us-form-1120-c-corp`, `us-federal-income-tax-return-1040`, `us-schedule-c-and-se-computation` and `us-pl-86-272-income-tax-nexus`; state skills do not maintain competing federal figures. Resolve each closing **Not yet confirmed** item before relying on it for a filing. Taxpayer account facts and professional review remain necessary.

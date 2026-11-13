@@ -1,256 +1,156 @@
 ---
 name: nd-income-tax
-description: Use this skill whenever asked about North Dakota individual income tax for self-employed / sole proprietors. Trigger on phrases like "North Dakota income tax", "ND income tax", "Form ND-1", "ND Tax Commissioner", "ND self-employment tax".
+description: "Compute North Dakota 2026 individual income tax for residents with wages, sole proprietorship or pass-through income, using official 2026 indexed schedules, federal taxable income and state modifications. Trigger on ND-1, North Dakota wages, resident income tax, capital gains, qualified dividends and estimates."
+version: "0.3"
 jurisdiction: US-ND
-tax_year: 2025
+category: state-tax
+tax_year: 2026
 last_updated: 2026-11-13
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. North Dakota indexes its brackets and the 2026 amounts were not published when checked on 2026-11-13.
-version: "0.2"
+type: computation
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# ND Income Tax
+# North Dakota individual income tax, 2026
 
-## North Dakota Individual Income Tax Skill -- Self-Employed / Sole Proprietor
+> **Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. A qualified professional must review the established facts and filing result. Circular 230 section 10.37: consider relevant facts and circumstances; do not assume missing facts or rely on audit risk.
 
-> **Scope.** This skill covers North Dakota Form ND-1 (Individual Income Tax Return) for full-year ND residents who are sole proprietors or single-member LLC owners. Tax year 2025 (returns filed in 2026). North Dakota uses a three-bracket graduated rate structure with a 0% first bracket, making it one of the lowest-tax states.
->
-> **Quality tier.** Q3 -- AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
+**Answer first.** North Dakota starts with federal taxable income, then applies state adjustments and its indexed 0%, 1.95%, 2.50% schedule. The official 2026 ND-1ES publishes 2026 brackets even though the main individual landing page still displays 2025. Wages and sole-proprietor profit enter through the federal return; no separate state standard deduction is invented. [2026 ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf); [57-38-30.3](https://ndlegis.gov/cencode/t57c38.pdf).
 
-## Section 1: Metadata
+## Scope
 
-**Metadata table**
+Full-year resident individuals with wages, sole-proprietorship or pass-through income. Nonresident/part-year allocation, farm averaging, fiduciary and corporation returns require separate schedules/skills. Federal figures and deductions belong to `us-federal-income-tax-return-1040`; this skill does not restate federal amounts. `nd-return-assembly` and `nd-estimated-tax` remain separate, older 2025 jobs; do not use their old figures as 2026 authority.
 
-| Field | Value |
-| --- | --- |
-| Tax type | Individual income tax |
-| Jurisdiction | North Dakota (US-ND) |
-| Tax year | 2025 (filed 2026) |
-| Primary form | Form ND-1 |
-| Supporting schedules | Schedule ND-1SA (Modifications), Schedule ND-1TC (Credits), Schedule ND-1NR (Nonresidents/Part-year) |
-| Tax structure | Graduated (3 brackets) |
-| Rate range | 0% – 2.50% |
-| Filing deadline | April 15, 2026 |
-| Extension deadline | October 15, 2026 |
-| Tax authority | North Dakota Office of State Tax Commissioner |
-| Website | https://www.tax.nd.gov |
-| Statute | N.D.C.C. Chapter 57-38 |
+## Ask the client first
 
-**Sources:**
-- ND Office of State Tax Commissioner, Individual Income Tax: https://www.tax.nd.gov/tax-types/individual-income-tax
-- ND Office of State Tax Commissioner, 2025 Individual Income Tax Booklet: https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf
-- N.D.C.C. §57-38-30.3 (tax rates)
+1. Residence and move dates, filing status, spouse's residence and tax-year end.
+2. Completed federal return, federal taxable income including any negative pre-zero amount, wages and business schedules.
+3. State additions/subtractions, investment income, reservation/military/zone eligibility and supporting statements.
+4. Other-state income/taxes, nonresident schedules and credit documentation.
+5. North Dakota withholding, estimates, carryovers, notices and extension/payment history.
 
-## Section 2: Quick reference -- rates and thresholds
+## The method, step by step
 
-### Tax brackets -- Single (TY 2025)
+### Rates, bands and thresholds
 
-**Tax brackets -- Single (TY 2025)**
+These are **2026** schedules printed on page 2 of the official 2026 ND-1ES, not inferred from withholding or inflated from 2025.
 
-| Taxable income over | But not over | Rate | Tax on lower amount | Source |
-| --- | --- | --- | --- | --- |
-| $0 | $48,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| $48,475 | $244,825 | 1.95% | $0 | same |
-| $244,825 | -- | 2.50% | $3,828.83 | same |
-
-### Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)
-
-**Tax brackets -- Married filing jointly / Qualifying surviving spouse (TY 2025)**
-
-| Taxable income over | But not over | Rate | Tax on lower amount | Source |
-| --- | --- | --- | --- | --- |
-| $0 | $80,975 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| $80,975 | $298,075 | 1.95% | $0 | same |
-| $298,075 | -- | 2.50% | $4,233.45 | same |
-
-### Tax brackets -- Married filing separately (TY 2025)
-
-**Tax brackets -- Married filing separately (TY 2025)**
-
-| Taxable income over | But not over | Rate | Tax on lower amount | Source |
-| --- | --- | --- | --- | --- |
-| $0 | $40,475 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| $40,475 | $149,025 | 1.95% | $0 | same |
-| $149,025 | -- | 2.50% | $2,116.73 | same |
-
-### Tax brackets -- Head of household (TY 2025)
-
-**Tax brackets -- Head of household (TY 2025)**
-
-| Taxable income over | But not over | Rate | Tax on lower amount | Source |
-| --- | --- | --- | --- | --- |
-| $0 | $64,950 | 0.00% | $0 | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| $64,950 | $271,450 | 1.95% | $0 | same |
-| $271,450 | -- | 2.50% | $4,026.75 | same |
-
-### Standard deduction
-
-- **ND standard deduction** -- North Dakota does not have its own standard deduction. It uses the federal standard deduction as the starting point is federal taxable income (not federal AGI).
-
-### Local income tax
-
-- **Local income tax permitted** -- North Dakota does not permit local income taxes.
-
-## Section 3: How this skill works with the federal return
-
-North Dakota taxable income starts with **federal taxable income** from federal Form 1040, Line 15 (not federal AGI -- this is different from many other states).
-
-1. **Start with federal taxable income** → ND-1, Line 1
-2. **Add ND additions** (Schedule ND-1SA) -- items ND adds back
-3. **Subtract ND subtractions** (Schedule ND-1SA) -- items ND excludes
-4. **Result = ND taxable income**
-5. **Apply the graduated rate schedule** → ND tax
-6. **Subtract credits** (Schedule ND-1TC) → final tax due or refund
-
-### Key addition modifications (Schedule ND-1SA)
-
-**Key addition modifications (Schedule ND-1SA)**
-
-| Addition | Description |
-| --- | --- |
-| State/local bond interest | Interest from bonds of states other than ND |
-| State income tax refund adjustment | If federal treatment differs from ND |
-
-### Key subtraction modifications (Schedule ND-1SA)
-
-**Key subtraction modifications (Schedule ND-1SA)**
-
-| Subtraction | Description |
-| --- | --- |
-| US government bond interest | Interest from US Treasury obligations |
-| Native American reservation income | Income earned by enrolled members on their reservation |
-| ND Renaissance Zone income | Income from activity in a designated Renaissance Zone |
-
-## Section 4: Self-employed specific rules
-
-### Self-employment income flow
-
-- **Schedule C flow to ND** -- Schedule C net profit flows into federal taxable income, which is the starting point for ND. Because ND starts from federal taxable income (after the standard/itemized deduction and QBI deduction), the federal deductions are already incorporated.
-
-### Estimated tax
-
-- **Estimated tax requirement threshold** -- Not required if the prior-year ND net tax liability was less than $1,000 (N.D.C.C. 57-38-62(1)); the 2025 booklet asks for estimates when the 2025 net tax liability was $1,000 or more and the taxpayer expects to owe at least $1,000 after withholding.
-
-**Estimated tax installment due dates**
-
-| Installment | Due date |
-| --- | --- |
-| 1st quarter | April 15 |
-| 2nd quarter | June 15 |
-| 3rd quarter | September 15 |
-| 4th quarter | January 15 (following year) |
-
-Form ND-1ES is used for estimated tax payments. Payments can be made via the North Dakota Taxpayer Access Point (ND TAP).
-
-### Depreciation
-
-- **ND conformity to federal depreciation** -- ND generally conforms to federal depreciation rules, including IRC §168(k) bonus depreciation. No state-level add-back is required for bonus depreciation.
-
-### 0% bracket benefit
-
-- **Zero bracket threshold benefit** -- The 0% first bracket means that a single filer with ND taxable income of $48,475 or less (or MFJ of $80,975 or less) owes zero ND income tax. This is particularly beneficial for self-employed taxpayers with moderate income.
-
-## Section 5: Tier 1 rules -- deterministic
-
-**Tier 1 rules table**
-
-| Rule ID | Rule | Source |
+| Filing status and North Dakota taxable income, USD | 2026 rate / tax | Official source |
 | --- | --- | --- |
-| ND-T1-01 | ND taxable income = federal taxable income ± ND modifications | N.D.C.C. §57-38-01 |
-| ND-T1-02 | Tax computed using 3-bracket schedule: 0%, 1.95%, 2.50% (TY 2025) | N.D.C.C. §57-38-30.3 |
-| ND-T1-03 | Starting point is federal taxable income (Form 1040, Line 15), not federal AGI | N.D.C.C. §57-38-01(7) |
-| ND-T1-04 | ND generally conforms to federal depreciation including §168(k) | N.D.C.C. §57-38 |
-| ND-T1-05 | Estimated tax required if prior-year ND net tax liability was $1,000 or more and the taxpayer expects to owe at least $1,000; pay the lesser of 90% of current-year or 100% of prior-year liability | https://ndlegis.gov/cencode/t57c38.pdf (57-38-62) |
-| ND-T1-06 | Extension: automatic 6-month extension with valid federal extension | ND Tax Commissioner guidelines |
+| Single through 49,575 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Single over 49,575 through 250,400 | 1.95% of excess over 49,575 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Single over 250,400 | 3,916.09 + 2.50% of excess over 250,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Joint/qualifying surviving spouse through 82,800 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Joint over 82,800 through 304,850 | 1.95% of excess over 82,800 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Joint over 304,850 | 4,329.98 + 2.50% of excess over 304,850 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Separate through 41,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Separate over 41,400 through 152,425 | 1.95% of excess over 41,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Separate over 152,425 | 2,164.99 + 2.50% of excess over 152,425 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Head of household through 66,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Head over 66,400 through 277,600 | 1.95% of excess over 66,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Head over 277,600 | 4,118.40 + 2.50% of excess over 277,600 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Qualifying net long-term capital gain/qualified dividend adjustment | 40%, subject to state allocation and nonduplication conditions | [57-38-30.3(2)(d)](https://ndlegis.gov/cencode/t57c38.pdf); [2025-2026 instructions](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| Individual estimates | Prior net tax at least 1,000 and current expected balance at least 1,000, plus federal estimate and insufficient-withholding tests | [2026 ND-1ES p 1](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
 
-## Section 6: Tier 2 rules -- requires judgment
+1. Establish resident filing duty and status. Residents generally include all income; part-year/nonresident ND-1NR applies where required. Wage reciprocity with Minnesota/Montana does not exempt nonwage business/rental income. Do not apply a withholding wage table to the final return.
+2. Begin with federal taxable income, not AGI. For the **2025-2026 filing-cycle mapping**, ND-1 line 1b retains a negative federal taxable-income calculation even when federal line 15 displays zero. Federal standard/itemized and business deductions are already incorporated; avoid deducting them twice.
+3. Reconcile state adjustments from current law and the labelled form instructions. Other-state/local-obligation interest generally enters the state addition. Protected US-obligation income may be subtracted, but agency securities and repurchase agreements are not all protected. State contribution-credit adjustments prevent double benefits. A generic state-income-tax-refund subtraction is not established merely because the federal treatment differs.
+4. Qualifying capital gains and qualified dividends have distinct 40% state exclusions. Apply the capital-gain worksheet, netting and ND allocation; do not exclude a gain twice through reservation/other exclusions. Reservation income requires enrollment, residence and sourcing facts under the stated statute, not simply a Native American name or business location.
+5. Federal depreciation, including bonus depreciation, enters the federal starting point; verify any state modification rather than creating a second deduction or a blanket addback. Check military pay/retirement, railroad retirement, Social Security, eligible peace-officer retirement, CollegeSAVE and Schedule ND-1SA items where facts apply. Renaissance Zone/new-business exemptions require program eligibility. The ordinary method identifies these adjustments without supplying unverified specialist amounts. Oil/gas production taxes remain separate; do not treat them as individual income-tax withholding.
+6. Apply the correct 2026 schedule, then credits, including supported other-state tax credit/ND-1CR and ND-1TC. Reconcile withholding and estimates to account records. The official 2026 estimate worksheet refers to 2025 instructions for adjustment/credit mapping; final 2026 return line numbers still need checking.
 
-**Tier 2 rules table**
+### Preserved 2025-2026 filing-cycle reference
 
-| Rule ID | Situation | Guidance |
+The former current-rate table is retained here as **2025 figures only**, never as 2026 computation.
+
+| Status | 2025 zero band / middle-band ceiling / top base | Official source |
 | --- | --- | --- |
-| ND-T2-01 | **Multi-state income:** Taxpayer has income from another state | ND allows a credit for taxes paid to other states. Schedule ND-1CR. Requires allocation review. |
-| ND-T2-02 | **Renaissance Zone exemption** | Income from qualified ND Renaissance Zones may be exempt. Requires verification of zone designation and compliance with program requirements. |
-| ND-T2-03 | **Tribal reservation income** | Income earned by enrolled tribal members on their reservation may be subtracted. Requires verification of enrollment and income sourcing. |
-| ND-T2-04 | **Oil and gas income** | ND has specific rules for oil, gas, and mineral income. Production taxes are separate from income tax. Review sourcing. |
-| ND-T2-05 | **Federal conformity changes** | ND's IRC conformity is generally rolling. Monitor for any legislative decoupling from recent federal changes. |
+| Single | 48,475 /244,825 /3,828.83; positive rates 1.95% and 2.50% | [2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| Joint/surviving spouse | 80,975 /298,075 /4,233.45; positive rates 1.95% and 2.50% | [2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| Separate | 40,475 /149,025 /2,116.73; positive rates 1.95% and 2.50% | [2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| Head | 64,950 /271,450 /4,026.75; positive rates 1.95% and 2.50% | [2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
 
-## Section 7: Supplier pattern library
+### Form mapping, 2025-2026 filing cycle only
 
-**Supplier pattern library table**
+The read 2025 booklet maps federal taxable income to line 1b, other-state bond interest to line 3, qualifying capital gain to line 6, reservation income to line 7, CollegeSAVE to line 12, qualified dividends to line 13, state taxable income to line 18, tax to line 20, other-state credit to line 21, marriage credit to line 22, other credits to line 23, net tax to line 25, withholding to line 26 and estimates/extension payments to line 27. The old generic line 2/3 additions/subtractions and line 6/14/17/18/22 summary was not the actual 2025 form. Reconcile the federal return, ND-1SA, ND-1TC, ND-1CR, W-2/1099 state withholding and TAP estimate records; final 2026 lines remain unconfirmed. [2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf).
 
-| Input needed | Where to find it |
+That booklet permits CollegeSAVE contributions to a qualifying Bank of North Dakota account up to USD 5,000, or USD 10,000 jointly, regardless of account ownership, subject to the actual contribution/rollover conditions. These are labelled **2025-2026 filing-cycle** amounts; confirm 2026 continuation before claiming. The former April 15/October 15, 2026 filing/extension dates likewise describe the 2025 return cycle, not tax year 2026.
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| Federal taxable income | Federal Form 1040, Line 15 |
-| ND additions | Schedule ND-1SA (computed from federal return) |
-| ND subtractions | Schedule ND-1SA (computed from federal return) |
-| Tax credits | Schedule ND-1TC |
-| Estimated tax payments | ND-1ES records / ND TAP |
-| ND withholding | W-2 Box 17 / 1099 ND withholding amounts |
+| Resident wage earner | Federal taxable income plus/minus state adjustments; employer withholding is a payment, not final tax |
+| Sole proprietor/single-member LLC | Federal business result enters the federal starting point; no separate state self-employment tax is established here |
+| Other-state income | Compute state credit only after residency, source and overlapping-tax limits are supported |
+| Reservation/zone/military or farm income | Verify specific eligibility and allocation; farm averaging uses ND-1FA |
+| Estate/trust, corporation or amendment | Separate return/workflow; do not adapt ordinary resident line mapping without review |
 
-## Section 8: Form mapping
+## Worked cases
 
-**Form ND-1 line mapping table**
+**Case 1.** Invented 2026 single resident with final North Dakota taxable income USD 100,000 and no credits: (100,000-49,575)×1.95%= USD 983.29. The same taxable income in the preserved 2025 case gave USD 1,004.74 using the verified 2025 cutoff **48,475**. Use the year-specific table, not a guessed rounded cutoff.
 
-| Form ND-1 Line | Description | Source |
-| --- | --- | --- |
-| Line 1 | Federal taxable income | Federal 1040, Line 15 |
-| Line 2 | ND additions | Schedule ND-1SA |
-| Line 3 | ND subtractions | Schedule ND-1SA |
-| Line 4 | ND taxable income | Line 1 + Line 2 − Line 3 |
-| Line 6 | ND income tax | Computed from rate schedule |
-| Line 14 | Total credits | Schedule ND-1TC |
-| Line 17 | ND income tax withheld | W-2s / 1099s |
-| Line 18 | Estimated tax payments | ND-1ES payments |
-| Line 22 | Amount owed or refund | Computed |
+```oa-check
+name: ND 2026 single taxable income 100000
+inputs:
+  taxable_income: 100000
+  zero_cutoff: 49575
+steps:
+  - tax: round(max(taxable_income - zero_cutoff, 0) * 0.0195, 2)
+expected:
+  tax: 983.29
+```
 
-## Section 9: Refusal catalogue
+**Case 2, status/year boundary.** Invented 2026 joint resident taxable income USD 350,000: published top base 4,329.98 + 2.5% of 45,150 = USD 5,458.73. The preserved 2025 case was USD 5,531.58 using 298,075/4,233.45. At exactly USD 82,800 in 2026 the joint regular tax is zero, although filing or other obligations can remain.
 
-**Refusal catalogue table**
+```oa-check
+name: ND 2026 joint top band and zero-band boundary
+inputs:
+  taxable_income: 350000
+  top_cutoff: 304850
+  top_base_tax: 4329.98
+steps:
+  - tax: round(top_base_tax + (taxable_income - top_cutoff) * 0.025, 2)
+  - at_zero_band_top: 82800 * 0
+expected:
+  tax: 5458.73
+  at_zero_band_top: 0
+```
 
-| Refusal ID | Trigger | Response |
-| --- | --- | --- |
-| R-ND-01 | Part-year or nonresident | "ND part-year and nonresident returns require Schedule ND-1NR. This is outside the scope of this skill." |
-| R-ND-02 | Corporate return | "This skill covers individual income tax only (Form ND-1). Corporate returns (Form 40) are not covered." |
-| R-ND-03 | Estate or trust return | "ND fiduciary returns (Form 38) are not covered by this skill." |
-| R-ND-04 | Amended return | "ND amended returns are not covered. File an amended ND-1 with the amended box checked." |
-| R-ND-05 | Farm income special rules | "Detailed ND farm income rules (including farm income averaging) require specialist review." |
+## When to refuse or refer
+
+Refer nonresident/part-year allocations, reservation/zone eligibility, farm averaging, fiduciaries, corporate returns, specialized credits, amended returns and disputed conformity. North Dakota's rolling federal starting point does not make every federal credit a state credit. The old blanket local-income-tax prohibition and blanket refund adjustment are unconfirmed and must not decide a return.
+
+## Filing and payment
+
+Use ND-1 with required schedules and federal attachments through supported income-tax e-filing or the applicable paper process. Use ND TAP for account payments, retain the return's acceptance and separately confirm that payment posted. Do not assume an account payment files the return.
+
+Calendar 2026 ordinary filing/payment is generally April 15, 2027, with weekend/holiday relief. Federal extension generally extends the individual state filing date; without one, apply on Form 101 by the original date. Extension does not remove interest on unpaid tax; the read 2025 instructions allow penalty relief for payment within a valid extension, subject to the actual conditions. Recheck final 2026 procedures.
+
+For 2026 estimates, all four ND-1ES conditions apply: federal estimated-payment duty; 2025 net tax at least USD 1,000; expected 2026 balance after withholding at least USD 1,000; withholding below the lesser of 90% current/100% prior net tax. A qualifying farmer uses the stated 66 2/3% rule. New-resident/prior-return exceptions and separate-filing changes affect the prior-year route. Ordinary installments are April 15, June 15, September 15, 2026 and January 15, 2027; eligible farmers/late-source-income cases have separate timing. The official estimate form states 12% annual underpayment interest; no estimate penalty is invented.
+
+Under 57-38-45, timely-filed unpaid tax generally incurs 5% or USD 5 minimum; late filing adds 5% per month/part, maximum 25%, with statutory minimum/conditions. Ordinary delinquency interest is 1% per month/part starting after the due month; extension interest is 12% annual. Apply actual assessment/relief rules rather than a generic federal penalty.
+
+## Completion checklist
+
+- Resident/status and federal taxable-income starting point established.
+- Current state modifications and any specialist schedules supported.
+- 2026 return brackets distinguished from withholding and 2025 comparison.
+- Credits, withholding, estimates and extension reconciled.
+- Final form mapping, acceptance and payment confirmed.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-## Worked examples (oa-check)
-
-From the 2025 rate schedules (source 1). Example A: single, ND taxable income $100,000. Tax = 1.95% x (100,000 - 48,475) = 1,004.74. Example B: married filing jointly, ND taxable income $350,000. Tax = 4,233.45 + 2.50% x (350,000 - 298,075) = 5,531.58.
-
-```oa-check
-name: ND 2025 single, taxable income 100,000
-inputs:
-  ti: 100000
-steps:
-  - tax: round((min(ti, 244825) - 48475) * 0.0195, 2)
-expected:
-  tax: 1004.74
-```
-
-```oa-check
-name: ND 2025 MFJ, taxable income 350,000
-inputs:
-  ti: 350000
-steps:
-  - tax: round(4233.45 + (ti - 298075) * 0.025, 2)
-expected:
-  tax: 5531.58
-```
-
-
 ## Sources
 
-| # | Source | URL | Read on |
-| --- | --- | --- | --- |
-| 1 | ND Tax Commissioner -- 2025 Individual Income Tax Booklet (rate schedules, ND-1 Line 1, estimated tax) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-13 |
-| 2 | ND Tax Commissioner -- Individual income tax page (2025 rates) | https://www.tax.nd.gov/individual-income-tax | 2026-11-13 |
-| 3 | N.D.C.C. chapter 57-38 (57-38-30.3 rates, 57-38-62 estimated tax) | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-13 |
+| Source | URL | Read on |
+| --- | --- | --- |
+| 2026 ND-1ES. Read for all 2026 status schedules, four estimate tests, safe-harbor exceptions, deadlines and 12% interest. | https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf |2026-11-13 |
+| N.D.C.C.57-38, especially 30.3,34,45,62-63. Read for federal base, state adjustments/exclusions, credit, filing and estimate framework. | https://ndlegis.gov/cencode/t57c38.pdf |2026-11-13 |
+| 2025 individual booklet,2025-2026 filing cycle. Read for retained 2025 schedules/examples, actual ND-1 mapping, federal negative amount, adjustments, extensions and penalties. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |2026-11-13 |
+| Current individual page. Read for landing page's 2025 schedule distinction; not the source of 2026 amounts. | https://www.tax.nd.gov/individual-income-tax |2026-11-13 |
+
+Not yet confirmed: final 2026 ND-1 line mapping, CollegeSAVE limits and full specialized zone/reservation/credit computations; the legacy blanket local-income-tax prohibition and generic refund adjustment. Ancillary `nd-return-assembly`, `nd-estimated-tax` and `nd-cross-border-tax` still retain their separate 2025 scope; do not treat their figures as 2026 updates.
