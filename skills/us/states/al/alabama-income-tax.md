@@ -158,7 +158,7 @@ expected:
 
 Not yet confirmed: the ratio method for a joint federal return with separate Alabama returns in step 8 (carried from the prior draft; the booklet sentence on proration that an earlier draft quoted here is about part-year residents); the Schedule CR limitation mechanics as summarized above (narrative carried from the prior draft; confirm against the Schedule CR instructions); the credit for taxes paid to a foreign country under Alabama Administrative Rule 810-3-21-.03 (rule text not read); municipal/occupational tax interactions; the 2026 filing thresholds and standard deduction chart (no 2026 Form 40 booklet was published when read, so the 2025 figures are shown).
 
-> Contributed by Anthony Bandura, AL-10921.
+> Contributed by Anthony Bandura.
 
 <!-- openaccountants-cta-block -->
 
