@@ -75,14 +75,14 @@ The statute taxes retail sales of tangible personal property, digital goods, dig
 
 #### Sample combined rates, 1 October to 31 December 2026 ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf))
 
-| Location | Location code | Local rate | State rate | Combined rate |
-| --- | --- | --- | --- | --- |
-| Seattle | 1726 | 4.05% | 6.5% | 10.55% |
-| Tacoma | 2717 | 4.0% | 6.5% | 10.5% |
-| Olympia | 3403 | 3.5% | 6.5% | 10% |
-| Spokane (city) | 3210 | 2.6% | 6.5% | 9.1% |
-| Vancouver | 0605 | 2.4% | 6.5% | 8.9% |
-| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | 4.2% | 6.5% | 10.7% |
+| Location | Location code | Local rate | State rate | Combined rate | Source |
+| --- | --- | --- | --- | --- | --- |
+| Seattle | 1726 | 4.05% | 6.5% | 10.55% | [DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf) |
+| Tacoma | 2717 | 4.0% | 6.5% | 10.5% | same |
+| Olympia | 3403 | 3.5% | 6.5% | 10% | same |
+| Spokane (city) | 3210 | 2.6% | 6.5% | 9.1% | same |
+| Vancouver | 0605 | 2.4% | 6.5% | 8.9% | same |
+| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | 4.2% | 6.5% | 10.7% | same |
 
 Combined rates across the state run from 7.6% to 10.7% this quarter. The same rates applied from 1 July 2026. Never hard-code these: DOR publishes new rates each quarter, and a single address can sit in a transit or benefit area with its own code. Use the lookup tool for every address.
 
@@ -105,11 +105,11 @@ Marketplace facilitators must also send each seller a report of its Washington s
 
 #### Filing frequency ([DOR filing frequencies and due dates](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates))
 
-| Frequency | Annual tax liability |
-| --- | --- |
-| Annual | $1,050 or less |
-| Quarterly | $1,051 to $4,800 |
-| Monthly | $4,801 or more |
+| Frequency | Annual tax liability | Source |
+| --- | --- | --- |
+| Annual | $1,050 or less | [DOR filing frequencies](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates) |
+| Quarterly | $1,051 to $4,800 | same |
+| Monthly | $4,801 or more | same |
 
 DOR assigns the frequency when you register, based on estimated yearly business income; you can ask for a change. A business that does not collect retail sales tax and has B&O gross income under $125,000 a year (calendar years from 1 January 2023) may qualify for active non-reporting status. A seller that must collect sales tax does not qualify.
 
