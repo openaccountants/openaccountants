@@ -880,6 +880,31 @@ def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
 
 
 
+def excluded_country_path(repo: Path, head: str | None, path: str | None) -> bool:
+    """True when the path sits in a country folder named by the exclusion policy
+    or by a coverage-withdrawal manifest entry (read at head, or on disk when the
+    change is uncommitted)."""
+    if not path:
+        return False
+
+    def read(rel: str) -> str:
+        if head is None:
+            target = repo / rel
+            return target.read_text(encoding="utf-8") if target.exists() else ""
+        return read_revision_file(repo, head, rel) or ""
+
+    try:
+        import yaml
+        folders: set[str] = set()
+        policy = yaml.safe_load(read("scripts/data/sanctioned.yml")) or {}
+        folders |= {c["folder"] for c in policy.get("countries", []) if isinstance(c.get("folder"), str)}
+        manifest = json.loads(read("docs/coverage-withdrawals.json") or "{}")
+        folders |= {w["folder"] for w in manifest.get("withdrawals", []) if isinstance(w, dict) and isinstance(w.get("folder"), str)}
+        return any(path.startswith("skills/" + folder + "/") for folder in folders)
+    except (ValueError, TypeError, KeyError, AttributeError, OSError):
+        return True
+
+
 def declared_coverage_withdrawal(repo: Path, base: str, head: str | None, change: Change) -> bool:
     """A committed audit deletion with an exact prior blob and coverage decision.
 
@@ -955,7 +980,11 @@ def run_integrity_check(
             # required Moved/Not moved record. Strict metadata governs dates
             # and versions, not a ban on every intentional retirement. The
             # former database exporter still may never remove source files.
-            severity = "error" if mode == "sync" else "warning"
+            # Ordinary deletions are reviewed through validate-guides.py (warning);
+            # a deletion inside an excluded country folder that is not an exact
+            # declared withdrawal stays an error under strict metadata.
+            in_excluded = excluded_country_path(repo, head, change.before_path)
+            severity = "error" if mode == "sync" or (strict_metadata and in_excluded) else "warning"
             findings.append(
                 Finding(
                     severity,
