@@ -267,6 +267,21 @@ Other penalties:
 | Nonpayroll withholding (pensions, gambling, backup withholding) | Form 945, deposited separately from Form 941 taxes |
 | Worker classification in doubt | Common-law test under section 3121(d); section 530 relief or the Voluntary Classification Settlement Program (Form 8952: pay 10% of the employment tax for the most recent year at the reduced section 3509(a) rates). Analysis in `us-1099-nec-issuance` |
 
+### Red flags and common errors
+
+| Red flag | What it usually means |
+| --- | --- |
+| Social Security withholding did not stop at USD 184,500 | Mid-year payroll provider change lost the year-to-date total, an off-cycle bonus run skipped the check, or a negative wage adjustment was not applied to the total |
+| Related companies with separate EINs share one wage base, or unrelated ones do | Common paymaster or successor rules misapplied in one direction or the other |
+| Form 941 line 5a column 1 larger than line 5c column 1 | Almost always an error: Medicare wages have no cap, Social Security wages do |
+| Line 5d column 1 shows the 0.9% tax instead of the wages | Column 1 is wages above USD 200,000; column 2 is the tax |
+| Schedule B does not total line 12 | Deposit dates entered instead of liability (pay) dates, or months transposed |
+| Line 2 for the year differs from W-3 box 1 | A 31 December payroll with a January check date, or third-party sick pay |
+| Pre-tax health or HSA deductions with no plan document | No section 125 exclusion: the deductions are wages in boxes 1, 3 and 5 |
+| Box 3 equals USD 200,000 or USD 176,100 | Wage base confused with the Additional Medicare trigger, or the 2025 base still loaded |
+| Tipped or overtime employees with no code TP or TT on the 2026 W-2 | New 2026 reporting missed; box 14b also needed for tips |
+| FUTA at 0.6% on California wages | The 2026 1.5% credit reduction (Schedule A) left out of the fourth-quarter deposit |
+
 ## Worked cases
 
 **Case 1, a decision: monthly or semiweekly depositor for 2026?** Harbor Supply LLC files Form 941. As originally filed, line 12 was USD 11,800 for Q3 2024, USD 12,600 for Q4 2024, USD 13,100 for Q1 2025 and USD 13,400 for Q2 2025. In January 2026 its bookkeeper filed a Form 941-X reducing Q4 2024 by USD 1,500, and proposes to treat the company as a monthly depositor because the corrected total is USD 49,400.
