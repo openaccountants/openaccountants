@@ -7,13 +7,14 @@
 #                                          are exactly what this script produces
 #
 # Writes: packages/** (not us-federal), index.json, llms.txt (counts line),
-# llms-full.txt, agent-skills/**, plugins/openaccountants/skills/**.
-# Never writes skills/**.
+# llms-full.txt, agent-skills/**, plugins/openaccountants/skills/**, skills/COUNTRIES.md.
+# Under skills/, writes only the generated COUNTRIES.md, never Guide sources.
 #
 # Usage: scripts/build-derived.sh [REF...]
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+python3 scripts/build-country-index.py
 python3 scripts/build-packages.py
 python3 scripts/build-index.py
 python3 scripts/build-llms-full.py
@@ -39,8 +40,8 @@ for ref in sys.argv[1:]:
         break
 PY
 
-if [ -n "$(git status --porcelain -- skills/)" ]; then
-  echo "::error::skills/ changed during the build. The builders must never write the source tree." >&2
-  git status --porcelain -- skills/ | head -20 >&2
+if [ -n "$(git status --porcelain -- skills/ ':(exclude)skills/COUNTRIES.md')" ]; then
+  echo "::error::Hand-authored skills/ changed during the build. Only generated COUNTRIES.md may change." >&2
+  git status --porcelain -- skills/ ':(exclude)skills/COUNTRIES.md' | head -20 >&2
   exit 1
 fi

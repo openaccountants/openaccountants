@@ -5,6 +5,8 @@ import os
 import subprocess
 import sys
 import tempfile
+import io
+from unittest.mock import patch
 import unittest
 from pathlib import Path
 
@@ -27,8 +29,8 @@ vg = _load("validate_guides_sanctioned", "validate-guides.py")
 
 SIX = {"RU", "BY", "CU", "IR", "KP", "SY"}  # broad embargo, 6 Nov 2026
 UN_ELEVEN = {"AF", "CF", "CD", "HT", "IQ", "LB", "LY", "SO", "SS", "SD", "GW"}  # UN Security Council, 8 Nov 2026
-LISTED = SIX | UN_ELEVEN
-TARGETED = {"MM", "VE"}  # US or EU sanctions only: stay covered
+LISTED = SIX | UN_ELEVEN | {"VE"}  # Venezuela excluded by Michael, 12 Nov 2026
+TARGETED = {"MM"}  # US or EU sanctions only: stay covered
 
 
 def skill(jurisdiction):
@@ -48,13 +50,13 @@ class DataFileTest(unittest.TestCase):
         self.assertEqual(set(sanctioned.folders()),
                          {"russia", "belarus", "cuba", "iran", "north-korea", "syria",
                           "afghanistan", "central-african-republic", "dr-congo", "haiti", "iraq", "lebanon",
-                          "libya", "somalia", "south-sudan", "sudan", "guinea-bissau"})
+                          "libya", "somalia", "south-sudan", "sudan", "guinea-bissau", "venezuela"})
 
     def test_decision_recorded(self):
         data = sanctioned.load()
-        self.assertEqual(data["decided_on"], "2026-11-08")
-        self.assertEqual(data["decided_by"], "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven)")
-        for name in ("Myanmar", "Venezuela"):
+        self.assertEqual(data["decided_on"], "2026-11-12")
+        self.assertEqual(data["decided_by"], "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven), 12 Nov 2026 (Venezuela)")
+        for name in ("Myanmar",):
             self.assertIn(name, data["stay_live"])
 
     def test_targeted_sanction_countries_are_not_listed(self):
@@ -75,14 +77,14 @@ class GuardTest(unittest.TestCase):
     def test_folder_is_refused(self):
         for path in ("skills/iran/ir-vat.md", "skills/North-Korea/kp-tax.md", "library/belarus/figures.json",
                      "skills/russia/README.md", "evidence/research/belarus-2026/research.md",
-                     "evidence/ledgers/syria/x.md"):
+                     "evidence/ledgers/syria/x.md", "skills/Venezuela/venezuela-payroll.md", "library/venezuela/figures.json"):
             errors = guard({path: skill("GLOBAL")})
             self.assertEqual(len(errors), 1, path)
             self.assertIn("sanctioned country", errors[0])
             self.assertIn("scripts/data/sanctioned.yml", errors[0])
 
     def test_jurisdiction_is_refused_in_any_folder(self):
-        for code in ("RU", "by", "CU", "IR", "KP", "SY", "RU-MOW", '"IR"', "[DE, SY]"):
+        for code in ("RU", "by", "CU", "IR", "KP", "SY", "RU-MOW", '"IR"', "[DE, SY]", "VE", "ve", "VE-DC"):
             errors = guard({"skills/global/cross-border/x.md": skill(code)})
             self.assertEqual(len(errors), 1, code)
             self.assertIn("its jurisdiction", errors[0])
@@ -98,7 +100,6 @@ class GuardTest(unittest.TestCase):
     def test_other_countries_pass(self):
         files = {f"skills/x/{c.lower()}.md": skill(c) for c in TARGETED | {"DE", "MT", "GLOBAL", "INTL", "US-NY"}}
         files["skills/myanmar/mm-vat.md"] = skill("MM")
-        files["skills/venezuela/ve-vat.md"] = skill("VE")
         files["skills/jordan/jo-vat.md"] = skill("JO")
         files["skills/cyprus/cy-vat.md"] = skill("CY")
         self.assertEqual(guard(files), [])
@@ -201,7 +202,12 @@ class CoverageTest(unittest.TestCase):
         self.assertIn("Not covered (sanctioned", "\n".join(cr.summary_lines(report)))
 
     def test_countries_page_lists_them(self):
-        text = (REPO_ROOT / "skills" / "COUNTRIES.md").read_text(encoding="utf-8")
+        builder = _load("build_country_index_sanctioned", "build-country-index.py")
+        # Check freshly generated output; the checked-in derived snapshot may
+        # precede this source policy until the rebuild bot follows the merge.
+        with patch("pathlib.Path.write_text") as write, patch("sys.stdout", new_callable=io.StringIO):
+            builder.main()
+        text = write.call_args.args[0]
         section = text.split("## Not covered (sanctioned)", 1)[1]
         for c in sanctioned.countries():
             self.assertIn(f"| {c['name']} | Not covered (sanctioned) |", section)
