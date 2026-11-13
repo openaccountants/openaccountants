@@ -1,520 +1,372 @@
 ---
 name: us-qbi-deduction
-description: Tier 2 content skill for computing the §199A Qualified Business Income deduction for US sole proprietors and single-member LLCs disregarded for federal tax purposes. Covers tax year 2025 under the One Big Beautiful Bill Act (P.L. 119-21, July 4 2025) which made §199A permanent at 20%. Handles the QBI calculation from Schedule C net profit, the deductible SE tax and SE health insurance adjustments, the taxable income thresholds ($197,300 single / $394,600 MFJ), phase-in ranges for SSTB and W-2/UBIA limitations, the specified service trade or business (SSTB) classification, W-2 wage and UBIA of qualified property limitations, the interaction with retirement contributions, and Forms 8995 (simplified) and 8995-A (detailed). Consumes net profit from us-schedule-c-and-se-computation and SE health insurance / retirement from companion skills. MUST be loaded alongside us-tax-workflow-base v0.1 or later. Federal only. No state tax.
-version: 0.2
+description: Compute the 2026 section 199A qualified business income (QBI) deduction for a US sole proprietor or single-member LLC disregarded for federal tax, on Form 8995 or Form 8995-A. The rate stays 20% (the One Big Beautiful Bill Act did not adopt 23%). 2026 figures from Rev. Proc. 2025-32 and Public Law 119-21 section 70105, with thresholds of $201,750 (single and head of household), $201,775 (married filing separately) and $403,500 (joint), phase-in ranges widened to $75,000 and $150,000, and the new $400 minimum deduction for at least $1,000 of QBI from a business the taxpayer materially participates in. Covers QBI after the deductible half of self-employment tax, self-employed health insurance and retirement contributions, the specified service trade or business (SSTB) rules and de minimis test, the W-2 wage and UBIA limit, the phase-in, the 20% of taxable income cap and loss carryforwards. Trigger on "QBI", "199A", "pass-through deduction", "Form 8995", "Form 8995-A", "SSTB", "20% deduction". Federal only.
+version: "1.0"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# US QBI Deduction
+# US qualified business income deduction (section 199A), tax year 2026
 
-## US QBI Deduction Skill v0.3
+> **Source-cited draft.** Built from 26 U.S.C. 199A, Public Law 119-21 section 70105 (the One Big Beautiful Bill Act), Rev. Proc. 2025-32, Treas. Reg. 1.199A-1, 1.199A-2, 1.199A-3 and 1.199A-5 (eCFR), and the 2026 draft Forms 8995 and 8995-A and draft Instructions for Form 8995, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Rates and thresholds
+**Answer first.** For 2026 the deduction is **20%** of qualified business income, never 23%. The final One Big Beautiful Bill Act (Public Law 119-21, section 70105) kept the 20% rate, removed the end-2025 expiry, widened the phase-in ranges to **USD 75,000** (USD 150,000 joint) and added a **USD 400** minimum deduction for a taxpayer with at least **USD 1,000** of QBI from businesses they materially participate in. At or below taxable income of **USD 201,750** (single, head of household), **USD 201,775** (married filing separately) or **USD 403,500** (joint), the deduction is 20% of QBI, capped at 20% of taxable income less net capital gain, whatever the business is. Above that, a specified service business (law, health, accounting, consulting, financial services and the rest) phases out, and every business meets the W-2 wage and property limit, both fully by **USD 276,750**, **USD 276,775** or **USD 553,500**. A specified service business just above the threshold still gets a partial deduction (see Case 1).
 
-- **§199A QBI deduction rate for tax year 2025** — 20% percent (tax years beginning after Dec 31, 2024)  _(§199A, OBBBA P.L. 119-21 §70105)_
+## Scope and who this is for
 
-Reviewed against the cited tax authorities by a licensed accountant on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
+In scope: one individual (or a married couple filing jointly) with QBI from one or more Schedules C for tax year 2026: a sole proprietorship or a single-member LLC treated as disregarded. The skill works out QBI, the threshold position, SSTB status, the W-2 wage and UBIA limit, the phase-in, the taxable income cap and the minimum deduction, and fills Form 8995 or Form 8995-A. The result goes on Form 1040, line 13a (2026 draft instructions).
 
-### QBI Deduction
+Out of scope, and where it goes:
 
-- **Rate 2025** — 20%  _(IRC 199A; OBBBA (made 199A permanent at 20%).)_
-- **Rate 2026+** — The QBI rate remains 20% in 2026 and beyond. OBBBA made 199A permanent at 20%; the proposed increase to 23% (House bill) did not become law.  _(IRC 199A; OBBBA (PL 119-21).)_
-- **Single threshold 2025** — $197,300 (Single/other)  _(Rev. Proc. 2024-40.)_
-- **MFJ threshold 2025** — $394,600 (MFJ)  _(Rev. Proc. 2024-40.)_
-
-## What this file is, and what it is not
-
-This file is a content skill that loads on top of `us-tax-workflow-base` v0.1. It computes the §199A Qualified Business Income (QBI) deduction for sole proprietors and single-member LLCs (disregarded entities) for tax year 2025. It does not classify transactions (that is `us-sole-prop-bookkeeping`), compute Schedule C net profit or SE tax (that is `us-schedule-c-and-se-computation`), or compute retirement contributions or SE health insurance (those are companion skills whose outputs feed into this one).
-
-**Where this skill fits in the pipeline:**
-
-```
-Bank statement / source data
-        ↓
-us-sole-prop-bookkeeping (classifies every transaction into a Schedule C line)
-        ↓
-us-schedule-c-and-se-computation (aggregates, runs Form 8829, computes net profit, computes SE tax)
-        ↓
-us-self-employed-retirement + us-self-employed-health-insurance (retirement deduction, SE health insurance deduction)
-        ↓
-us-qbi-deduction (THIS SKILL — computes QBI and the §199A deduction)
-        ↓
-us-quarterly-estimated-tax (safe harbor for following year)
-```
-
-This skill is downstream of Schedule C computation AND of the retirement and SE health insurance skills. That ordering matters because QBI is reduced by retirement contributions and SE health insurance premiums, creating a circular dependency that must be resolved iteratively or algebraically.
-
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date (April 2026). It reflects the One Big Beautiful Bill Act (Public Law 119-21, signed July 4, 2025), which made §199A permanent at the 20% rate. The 23% rate that appeared in the House-passed version of H.R. 1 was NOT enacted — the deduction rate is 20% for 2025 and remains 20% for 2026 and later years. For tax years beginning after December 31, 2025, OBBBA §70105 widens the phase-in ranges to $75,000 (non-joint) / $150,000 (joint) and adds a new §199A(i) minimum deduction (greater of the computed deduction or $400, for taxpayers with at least $1,000 of aggregate QBI from active qualified trades or businesses). Those 2026+ changes do NOT apply to tax year 2025 returns.
-
-**The reviewer is the customer of this output.** The skill produces a QBI computation worksheet and a brief that the reviewing EA or CPA can audit and sign off on.
-
-## Section 1 — Scope statement
-
-This skill covers, for tax year 2025:
-
-- **QBI computation** from Schedule C net profit, adjusted for the deductible half of SE tax, SE health insurance premiums, and retirement contributions
-- **§199A deduction calculation** at the 20% rate
-- **Taxable income threshold testing** — determining whether the simplified or detailed computation applies
-- **Specified service trade or business (SSTB) classification** — determining whether the taxpayer's trade or business is an SSTB under §199A(d)(2) and Treas. Reg. §1.199A-5
-- **W-2 wage limitation** — the greater-of test under §199A(b)(2): (a) 50% of W-2 wages, or (b) 25% of W-2 wages plus 2.5% of UBIA of qualified property
-- **UBIA of qualified property limitation** — unadjusted basis immediately after acquisition of qualified property
-- **Phase-in computation** for taxpayers with taxable income within the phase-in range above the threshold
-- **Form 8995 (simplified)** — for taxpayers with taxable income at or below the threshold
-- **Form 8995-A (detailed)** — for taxpayers with taxable income above the threshold, SSTBs, or multiple trades or businesses
-- **The circular dependency** between QBI, retirement contributions, and SE health insurance
-- **Taxable income limitation** — QBI deduction cannot exceed 20% of taxable income (excluding net capital gain)
-
-This skill does NOT cover:
-
-- QBI from sources other than Schedule C (partnerships on K-1, S corporations on K-1, REITs, PTPs) — out of scope
-- Aggregation of multiple trades or businesses under Treas. Reg. §1.199A-4 — flagged for reviewer if multiple Schedule Cs exist
-- Net operating loss interactions with QBI — flagged for reviewer
-- QBI carryover of losses from prior years — flagged for reviewer
-- Any state-level QBI deduction or addback — out of scope
-- Computation of the deduction for cooperatives under §199A(g) — out of scope
-- The §199A(i) minimum deduction ($400) — first applies to tax years beginning after December 31, 2025; out of scope for TY2025 returns
-
-## Section 2 — Year coverage and currency
-
-**Tax year covered:** 2025 (returns due April 15, 2026, or October 15, 2026 with extension).
-
-**Currency date:** April 2026.
-
-**Legislation reflected:**
-- Internal Revenue Code §199A as in force for tax year 2025
-- One Big Beautiful Bill Act (OBBBA), Public Law 119-21, signed July 4, 2025 — §70105 made §199A permanent at the 20% rate (it was set to expire after 2025 under TCJA). The 23% rate in the House-passed bill was NOT enacted. Effective for tax years beginning after December 31, 2025, §70105 also widens the phase-in ranges to $75,000 (non-joint) / $150,000 (joint) and adds the §199A(i) minimum deduction ($400 / $1,000-of-QBI test, indexed after 2026)
-- OBBBA §70102 — retroactively increased the 2025 standard deduction to $15,750 single/MFS, $23,625 HoH, $31,500 MFJ (used in this skill's taxable-income computations)
-- Tax Cuts and Jobs Act of 2017 — original enactment of §199A
-- Treasury Regulations §1.199A-1 through §1.199A-6 — final regulations (January 2019) and subsequent amendments
-- Rev. Proc. 2024-40 — 2025 inflation adjustments for taxable income thresholds (§199A thresholds at section 2, item .27)
-- Rev. Proc. 2025-32 — modified Rev. Proc. 2024-40 for OBBBA (2025 standard deduction) and published the 2026 §199A thresholds
-- Form 8995 and Form 8995-A Instructions for tax year 2025
-- IRS Publication 334 (Tax Guide for Small Business) — Pub 535 was discontinued after its 2022 revision
-
-**Currency limitations:**
-- OBBBA made §199A permanent at 20%. No OBBBA provision changed the 2025 QBI mechanics (rate, thresholds, $50,000/$100,000 phase-in widths, SSTB rules, W-2 wage test, UBIA test). The wider $75,000/$150,000 phase-in ranges and the $400 minimum deduction apply only to tax years beginning after December 31, 2025.
-- For tax year 2025 the phase-in range widths ($50,000 non-joint / $100,000 joint) are statutory under §199A(b)(3)(B) and §199A(d)(3)(A) and are NOT indexed for inflation. (For 2026+ the statutory widths become $75,000 / $150,000.)
-
-## Section 3 — Year-specific figures table for tax year 2025
-
-**Year-specific figures table for tax year 2025**  _([Section 3 table, various IRC/Rev. Proc. citations as shown](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf))_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| §199A QBI deduction rate | 20% | IRC §199A(a); OBBBA P.L. 119-21 §70105 (permanent) |
-| §199A QBI deduction rate (2026 onward) | 20% — unchanged; the 23% House-bill rate was not enacted | IRC §199A(a) as amended by OBBBA P.L. 119-21 |
-| Taxable income threshold (single / HoH / QSS) | $197,300 | Rev. Proc. 2024-40 section 2, item .27; IRC §199A(e)(2) |
-| Taxable income threshold (MFJ) | $394,600 | Rev. Proc. 2024-40 section 2, item .27 |
-| Taxable income threshold (MFS) | $197,300 | Rev. Proc. 2024-40 section 2, item .27 |
-| Phase-in range width (single / HoH / QSS / MFS) | $50,000 above threshold | IRC §199A(b)(3)(B), §199A(d)(3)(A); statutory, not indexed |
-| Phase-in range width (MFJ) | $100,000 above threshold | IRC §199A(b)(3)(B), §199A(d)(3)(A); statutory, not indexed |
-| Phase-in range top (single / MFS) | $247,300 | $197,300 + $50,000; Rev. Proc. 2024-40 section 2, item .27 |
-| Phase-in range top (MFJ) | $494,600 | $394,600 + $100,000; Rev. Proc. 2024-40 section 2, item .27 |
-| W-2 wage limitation — alternative 1 | 50% of W-2 wages | IRC §199A(b)(2)(B)(i) |
-| W-2 wage limitation — alternative 2 | 25% of W-2 wages + 2.5% of UBIA | IRC §199A(b)(2)(B)(ii) |
-| Taxable income cap on QBI deduction | 20% of taxable income (excl. net capital gain, increased by any qualified dividends) | IRC §199A(a)(2) |
-| Standard deduction (single / MFS) | $15,750 (OBBBA retroactive increase) | OBBBA §70102; Rev. Proc. 2025-32 §3.01 |
-| Standard deduction (HoH) | $23,625 | OBBBA §70102; Rev. Proc. 2025-32 §3.01 |
-| Standard deduction (MFJ / QSS) | $31,500 | OBBBA §70102; Rev. Proc. 2025-32 §3.01 |
-| SE tax rate (for deductible-half computation) | 15.3% (12.4% OASDI + 2.9% Medicare) | IRC §1401 |
-| Net SE earnings adjustment factor | 92.35% | IRC §1402(a)(12) |
-| Social Security (OASDI) wage base | $176,100 | SSA; Schedule SE instructions (2025) |
-
-**Forward look — figures for tax year 2026 (do NOT apply to 2025 returns):** thresholds $201,750 single/HoH/QSS, $201,775 MFS, $403,500 MFJ; phase-in completion amounts $276,750 / $276,775 / $553,500 (widths $75,000 / $75,000 / $150,000); minimum deduction $400 where aggregate QBI from active qualified trades or businesses ≥ $1,000. Source: Rev. Proc. 2025-32 §4.26 and §2.12; IRC §199A(i).
-
-## Section 4 — Primary source library
-
-### Statute (Internal Revenue Code, Title 26 USC)
-
-- **IRC §199A** — Qualified business income deduction (full section)
-- **IRC §199A(a)** — Allowance of deduction: lesser of (A) combined QBI amount or (B) 20% of taxable income minus net capital gain
-- **IRC §199A(b)** — Combined QBI amount: sum of deductible amounts for each qualified trade or business
-- **IRC §199A(b)(2)** — W-2 wage / UBIA limitation (applies above the threshold)
-- **IRC §199A(b)(3)(B)** — Phase-in of the W-2/UBIA limitation ($50,000 / $100,000 range widths for 2025; $75,000 / $150,000 for 2026+)
-- **IRC §199A(b)(6)(B)** — Depreciable period for UBIA purposes (later of 10 years or the §168 recovery period determined without regard to §168(g))
-- **IRC §199A(c)** — Definition of qualified business income
-- **IRC §199A(c)(3)(B)** — Items excluded from QBI: capital gains/losses, dividends, interest not allocable to trade or business, commodities transactions, foreign currency gains/losses, certain annuity income
-- **IRC §199A(c)(4)** — QBI does not include reasonable compensation paid to taxpayer by S corp or guaranteed payments from partnership
-- **IRC §199A(d)** — Qualified trade or business definition, SSTB exclusion
-- **IRC §199A(d)(2)** — Specified service trade or business defined
-- **IRC §199A(d)(3)** — Exception for taxpayers below threshold; SSTB phase-in range
-- **IRC §199A(e)(2)** — Taxable income threshold amount
-- **IRC §199A(f)** — Special rules (netting of QBI from multiple businesses, carryover of losses)
-- **IRC §199A(i)** — Minimum deduction (added by OBBBA §70105; tax years beginning after December 31, 2025 only)
-- **IRC §164(f)** — Deductible half of SE tax
-- **IRC §162(l)** — Self-employed health insurance deduction
-- **IRC §1402(a)(12)** — 92.35% net SE earnings adjustment
-
-### Treasury Regulations (26 CFR)
-
-- **Treas. Reg. §1.199A-1** — Operational rules
-- **Treas. Reg. §1.199A-2** — W-2 wages and UBIA of qualified property
-- **Treas. Reg. §1.199A-3** — Qualified business income, qualified REIT dividends, qualified PTP income
-- **Treas. Reg. §1.199A-4** — Aggregation of trades or businesses
-- **Treas. Reg. §1.199A-5** — Specified service trades or businesses and the trade or business of performing services as an employee
-- **Treas. Reg. §1.199A-6** — RPE-level reporting
-
-### IRS Guidance and Forms
-
-- **Rev. Proc. 2024-40** — 2025 inflation adjustments (§199A thresholds at section 2, item .27)
-- **Rev. Proc. 2025-32** — OBBBA modifications to 2025 amounts; 2026 inflation adjustments (§199A at §4.26)
-- **Form 8995** — Qualified Business Income Deduction Simplified Computation (and instructions)
-- **Form 8995-A** — Qualified Business Income Deduction (detailed, with Schedules A through D) (and instructions)
-- **IRS Publication 334** — Tax Guide for Small Business (Publication 535 was discontinued after the 2022 revision)
-
-## Section 5 — The QBI computation for sole proprietors
-
-### Step 1 — Determine qualified business income (QBI)
-
-- **QBI formula** — QBI = Schedule C net profit (Line 31) − Deductible half of SE tax (Schedule 1, Line 15) − SE health insurance deduction (Schedule 1, Line 17) − Deductible retirement contributions (Schedule 1, Line 16 — SEP, SIMPLE, Solo 401(k))  _(IRC §199A(c)(1); §62(a)(1))_
-- **Items NOT subtracted from QBI** — The standard deduction or itemized deductions (these are not attributable to the trade or business); Traditional IRA contributions (personal deduction under §219, not attributable to the trade or business — see Edge case 9); The QBI deduction itself (that would be circular — the statute explicitly excludes it); Estimated tax payments (these are not deductions); State income taxes (not deductible on Schedule C and not attributable under §199A)  _(IRC §219; IRC §199A(c)(1))_
-
-### Step 2 — Determine taxable income BEFORE the QBI deduction
-
-- **Taxable income for QBI purposes** — Taxable income for QBI threshold purposes = AGI minus the greater of the standard deduction or itemized deductions, computed WITHOUT the QBI deduction itself. This figure determines: 1. Whether the taxpayer is below, within, or above the phase-in range; 2. The overall cap on the QBI deduction (20% of taxable income excluding net capital gain)  _(IRC §199A(e)(2))_
-
-### Step 3 — Apply the threshold test
-
-- **Below the threshold** — Below the threshold (taxable income ≤ $197,300 single / $394,600 MFJ): The QBI deduction is simply 20% of QBI, subject to the taxable income cap; SSTB classification does NOT matter (the SSTB exclusion is phased in above the threshold); W-2 wage and UBIA limitations do NOT apply; Use Form 8995 (simplified computation)  _(IRC §199A(d)(3); §199A(b)(3))_
-- **Above threshold but within phase-in range** — Above the threshold but within the phase-in range ($197,300 < TI ≤ $247,300 single / $394,600 < TI ≤ $494,600 MFJ): W-2 wage / UBIA limitations are phased in; SSTB exclusion is phased in (QBI, W-2 wages, and UBIA are reduced by the applicable percentage); Use Form 8995-A (detailed computation); The phase-in percentage = (taxable income − threshold) / phase-in range width  _(IRC §199A(b)(3)(B); §199A(d)(3))_
-- **Above the phase-in range** — Above the phase-in range (taxable income > $247,300 single / $494,600 MFJ): W-2 wage / UBIA limitations apply in full; SSTB businesses get ZERO QBI deduction; Use Form 8995-A (detailed computation)  _(IRC §199A(b)(2); §199A(d)(3))_
-
-### Step 4 — W-2 wage and UBIA limitation (when applicable)
-
-- **W-2/UBIA limitation greater-of test** — For taxpayers above the threshold, the QBI deduction for each qualified trade or business cannot exceed the GREATER of: (a) 50% of W-2 wages paid by that trade or business, OR (b) 25% of W-2 wages paid by that trade or business PLUS 2.5% of the unadjusted basis immediately after acquisition (UBIA) of qualified property held by the business. For most sole props without employees: W-2 wages = $0 (the sole proprietor's own draw is NOT W-2 wages). This means: Alternative (a) = $0; Alternative (b) = 2.5% of UBIA of qualified property. If the sole prop has no depreciable property still within its depreciable period (see Step 5), UBIA = $0, and BOTH alternatives = $0. This means the QBI deduction is limited to $0 for taxpayers fully above the phase-in range. This is the critical cliff for high-income sole props without employees. If taxable income exceeds the phase-in range top and the business has no W-2 wages and no qualifying property, the QBI deduction is $0. This is a major reason high-income sole props consider S corporation election (to create W-2 wages via reasonable compensation).  _(IRC §199A(b)(2)(B)(i)-(ii))_
-
-### Step 5 — UBIA of qualified property
-
-- **UBIA definition** — UBIA = the unadjusted basis of tangible depreciable property held at the close of the tax year, that is: Used in the production of QBI, AND Still within its depreciable period — which ends on the LATER of (a) 10 years after the placed-in-service date, or (b) the last day of the last full year in the applicable recovery period under §168 determined without regard to §168(g) (i.e., the regular MACRS/GDS recovery period, not ADS). "Unadjusted" means the original cost basis without reduction for depreciation. The property must still be in use at year-end.  _(IRC §199A(b)(6)(B); Treas. Reg. §1.199A-2(c)(2)(i))_
-
-**Example:** A MacBook Pro purchased for $3,499 in 2025, placed in service immediately, with a 5-year MACRS recovery period. UBIA = $3,499 for tax years 2025 through 2034 (the 10-year period is longer than the 5-year recovery period, so 10 years controls). Even if 100% bonus depreciation was taken in year 1, the UBIA remains $3,499 for QBI purposes.
-
-### Step 6 — Specified service trade or business (SSTB) rules
-
-- **SSTB definition** — Under IRC §199A(d)(2) and Treas. Reg. §1.199A-5, an SSTB is a trade or business involving the performance of services in the fields of: Health; Law; Accounting; Actuarial science; Performing arts; Consulting (defined narrowly — see below); Athletics; Financial services; Brokerage services; Any trade or business where the principal asset is the reputation or skill of one or more of its employees or owners (narrowed by regulation to mean income from endorsements, licensing of name/likeness/image, and appearance fees); Engineering and architecture were EXCLUDED from the SSTB list by statute (§199A(d)(2) flush language)  _(IRC §199A(d)(2); Treas. Reg. §1.199A-5)_
-
-**Key SSTB determinations for sole props in the target demographic**  _(Treas. Reg. §1.199A-5)_
-
-| Activity | SSTB? | Authority |
-| --- | --- | --- |
-| Software development | NO | Treas. Reg. §1.199A-5(b)(2)(vii) — not consulting |
-| Web development | NO | Same reasoning as software development |
-| UX/UI design | NO | Design is not a listed field |
-| Graphic design | NO | Design is not a listed field |
-| Data science / analytics | NO | Not a listed field; not consulting under the narrow reg definition |
-| IT consulting (advisory only, no deliverable) | MAYBE | Treas. Reg. §1.199A-5(b)(2)(vii) — "consulting" means providing advice and counsel, not delivering a work product. If the engagement produces a deliverable (code, report, system), it is NOT consulting for SSTB purposes |
-| Marketing consulting | MAYBE | Same analysis — depends on whether the taxpayer provides advice vs. deliverables |
-| Financial planning / advisory | YES | Financial services under §199A(d)(2) |
-| Legal services | YES | Law under §199A(d)(2) |
-| Medical / dental practice | YES | Health under §199A(d)(2) |
-| Accounting / bookkeeping services | YES | Accounting under §199A(d)(2) |
-| Real estate agent | NO | Not a listed field |
-
-- **The consulting trap** — The regulations define consulting narrowly as "the provision of professional advice and counsel to clients to assist the client in achieving goals and solving problems." Treas. Reg. §1.199A-5(b)(2)(vii). Importantly, performing services in the field of consulting does NOT include "the performance of services other than advice and counsel, such as sales or the provision of training courses." If a "consultant" actually delivers code, designs, systems, analyses, or other work product, the business is NOT consulting for SSTB purposes.  _([Treas. Reg. §1.199A-5(b)(2)(vii)](https://www.law.cornell.edu/cfr/text/26/1.199A-5))_
-
-### Step 7 — Compute the deduction
-
-- **Below threshold formula (Form 8995)** — QBI deduction = lesser of: (A) 20% × QBI (B) 20% × (taxable income − net capital gain)  _(IRC §199A(a))_
-- **Within phase-in range formula (Form 8995-A)** — The computation requires: 1. Calculate the "reduction amount" for the W-2/UBIA limitation 2. Calculate the "applicable percentage" for SSTB reduction (if SSTB) 3. Apply phase-in percentage to transition from unlimited to limited Phase-in percentage = (taxable income − threshold) / ($50,000 single or $100,000 MFJ, for TY2025) For non-SSTB businesses: - Tentative QBI deduction = 20% × QBI - W-2/UBIA limited amount = greater of 50% × W-2 wages or 25% × W-2 wages + 2.5% × UBIA - Reduction amount = (tentative QBI deduction − W-2/UBIA limited amount) × phase-in percentage - QBI deduction = tentative QBI deduction − reduction amount For SSTB businesses: - Applicable percentage = 1 − phase-in percentage - Adjusted QBI = QBI × applicable percentage - Adjusted W-2 wages = W-2 wages × applicable percentage - Adjusted UBIA = UBIA × applicable percentage - Then apply the non-SSTB formula above using the adjusted figures  _(IRC §199A(b)(3)(B); §199A(d)(3))_
-- **Above phase-in range formula (Form 8995-A)** — For non-SSTB: - QBI deduction = lesser of 20% × QBI or W-2/UBIA limited amount For SSTB: - QBI deduction = $0  _(IRC §199A(b)(2); §199A(d)(3))_
-
-### Step 8 — Apply the taxable income cap
-
-- **Taxable income cap** — The final QBI deduction cannot exceed 20% of taxable income (excluding net capital gain). This cap always applies regardless of threshold position.  _(IRC §199A(a)(1)(B))_
-
-### Step 9 — The circular dependency with retirement contributions
-
-- **Circular dependency resolution** — The computation of QBI depends on retirement contributions (which reduce QBI), but some retirement contribution limits depend on net SE earnings which are independent of QBI. However, the QBI deduction affects taxable income, which affects the threshold test, which can change the QBI deduction. For most sole props below the threshold, this circularity is irrelevant — the 20% rate applies regardless. For those near the threshold, the skill must iterate: 1. Compute retirement contributions and SE health insurance first (these depend on net SE earnings, not QBI) 2. Compute QBI = Schedule C net profit − deductible half of SE tax − SE health insurance − retirement contributions 3. Compute the QBI deduction 4. Compute taxable income including the QBI deduction 5. Verify the threshold position — if it changed from step 3's assumption, recompute In practice, for most sole props, a single pass is sufficient because retirement and SE health insurance are fixed once net SE earnings are known.
-
-## Section 6 — Form 8995 (simplified computation)
-
-- **When Form 8995 is used** — Form 8995 is used when: Taxable income is at or below $197,300 (single) / $394,600 (MFJ); The taxpayer is not a patron of an agricultural or horticultural cooperative; More than one trade or business (or aggregation) can be listed on line 1; No SSTB considerations apply (below threshold, SSTB status is irrelevant)  _([Form 8995 Instructions](https://www.irs.gov/pub/irs-pdf/f8995.pdf))_
-
-**Form 8995 line-by-line:**
-
-- **Line 1:** Trade, business, or aggregation name and TIN (sole prop = SSN)
-- **Line 1 column (c):** Qualified business income (QBI) for each business — from the computation in Section 5
-- **Line 2:** Total QBI — combine lines 1i through 1v, column (c) (typically just one for single-Schedule-C filers)
-- **Line 3:** Qualified business net (loss) carryforward from the prior year
-- **Line 4:** Total QBI — combine lines 2 and 3; if zero or less, enter $0
-- **Line 5:** QBI component — multiply line 4 by 20%
-- **Line 6:** Qualified REIT dividends and PTP income or (loss) — $0 for most sole props
-- **Line 7:** Qualified REIT dividends and qualified PTP (loss) carryforward from the prior year
-- **Line 8:** Total qualified REIT dividends and PTP income — combine lines 6 and 7; if zero or less, enter $0
-- **Line 9:** REIT and PTP component — multiply line 8 by 20%
-- **Line 10:** QBI deduction before the income limitation — line 5 + line 9
-- **Line 11:** Taxable income before QBI deduction
-- **Line 12:** Net capital gain, if any, increased by any qualified dividends
-- **Line 13:** Line 11 minus line 12; if zero or less, enter $0
-- **Line 14:** Income limitation — 20% of line 13
-- **Line 15:** QBI deduction — smaller of line 10 or line 14
-- **Line 16:** Total qualified business (loss) carryforward — combine lines 2 and 3; if greater than zero, enter $0
-- **Line 17:** Total qualified REIT dividends and PTP (loss) carryforward — combine lines 6 and 7; if greater than zero, enter $0
-
-## Section 7 — Form 8995-A (detailed computation)
-
-- **When Form 8995-A is used** — Form 8995-A is used when: Taxable income exceeds the threshold ($197,300 single / $394,600 MFJ); The taxpayer has an SSTB (regardless of income — though below threshold, Form 8995 may still be used); Multiple trades or businesses require separate computation; Aggregation election under Treas. Reg. §1.199A-4  _(Treas. Reg. §1.199A-4)_
-
-Form 8995-A is substantially more complex. The skill produces the computation worksheet but defers the actual form preparation to the reviewer. Key additional schedules:
-
-- **Schedule A** — SSTB determination for each trade or business
-- **Schedule B** — Aggregation of business operations
-- **Schedule C** — Loss netting and carryforward
-- **Schedule D** — Special rules for patrons of agricultural and horticultural cooperatives
-
-For a single-Schedule-C sole prop above the threshold with a non-SSTB business, the key computation on Form 8995-A is:
-
-1. Report QBI, W-2 wages, and UBIA for the business
-2. Compute the W-2/UBIA limitation
-3. Apply the phase-in if within the range
-4. Apply the taxable income cap
-
-## Section 8 — QBI loss carryover rules
-
-- **QBI loss carryover rules** — Under IRC §199A(c)(2), if QBI from a qualified trade or business is negative (a loss), the loss: 1. Is NOT deductible as part of the QBI deduction in the loss year 2. Is carried forward to the next tax year 3. Reduces QBI from the SAME trade or business in the next year (and subsequent years until absorbed) 4. Is treated as a loss from a separate trade or business in the carryforward year For sole props with a single business: a Schedule C loss year produces zero QBI deduction, and the loss carries forward to reduce QBI in the next profitable year. The carryforward is tracked on Form 8995 line 16 or Form 8995-A Schedule C.  _([IRC §199A(c)(2)](https://www.irs.gov/pub/irs-pdf/f8995.pdf))_
-
-## Section 9 — Conservative defaults table
-
-**Conservative defaults table**
-
-| Ambiguity | Conservative default |
+| Topic | Skill |
 | --- | --- |
-| SSTB status unclear | Assume SSTB (reduces or eliminates deduction above threshold); flag for reviewer |
-| Taxable income near the threshold (within $5,000) | Compute both ways (below-threshold simplified and above-threshold detailed); present both to reviewer |
-| W-2 wages unclear (did the business have common-law employees?) | Assume $0 W-2 wages (conservative above threshold); ask for clarification |
-| UBIA of qualified property not documented | Assume $0 UBIA (conservative above threshold); ask for Form 4562 or asset list |
-| Prior-year QBI loss carryover amount not provided | Assume $0 carryover; flag for reviewer to check prior-year Form 8995/8995-A |
-| Retirement contributions not yet computed | Compute retirement first, then QBI; do not skip the QBI adjustment |
-| SE health insurance deduction not yet computed | Compute SE health insurance first, then QBI; do not skip the QBI adjustment |
-| Multiple Schedule Cs | Compute QBI separately for each; do NOT net positive and negative QBI across businesses without applying §199A(c)(2) loss rules |
-| Taxpayer has both SE income and W-2 wages from another employer | W-2 wages from another employer are NOT the taxpayer's qualified trade or business's W-2 wages for the §199A(b)(2) limitation |
+| Classifying transactions into Schedule C lines | `us-sole-prop-bookkeeping` |
+| Schedule C net profit, self-employment tax and its deductible half | `us-schedule-c-and-se-computation` |
+| Self-employed health insurance deduction (section 162(l)) | `us-self-employed-health-insurance` |
+| SEP, SIMPLE and solo 401(k) contributions and their limits | `us-self-employed-retirement` |
+| Standard deduction and the rest of taxable income | `us-federal-income-tax-return-1040` |
+| No tax on tips (section 224) and the other 2026 changes | `us-2026-federal-tax-changes` |
+| Whether to elect S corporation status to create W-2 wages | `us-s-corp-election-decision` |
+| Rental real estate as a trade or business, material participation | `us-real-estate-professional-and-short-term-rentals` |
+| QBI from partnerships and S corporations (Schedule K-1) | `us-form-1065-partnership`; refer (R-QBI-K1) |
+| Paying the tax during the year | `us-quarterly-estimated-tax` |
+| Putting the return together | `us-federal-return-assembly` |
+| State QBI conformity or add-backs | the state's income tax skill (for California, `us-ca-return-assembly`) |
 
-## Section 10 — Topical refusal catalogue
+This skill loads on top of `us-tax-workflow-base`.
 
-Refusals on top of the global catalogue in `us-tax-workflow-base` Section 6 and the upstream skills' catalogues.
+## Ask the client first
 
-- **R-QBI-MULTI** — Trigger: The taxpayer has multiple Schedule Cs or K-1s with QBI, and the question of aggregation under Treas. Reg. §1.199A-4 arises. Output: "Aggregation of multiple trades or businesses for QBI purposes under Treas. Reg. §1.199A-4 requires analysis of common ownership, shared facilities, shared employees, and interdependence. This skill computes QBI for a single Schedule C. For multi-business aggregation, please consult a CPA or Enrolled Agent."  _(Treas. Reg. §1.199A-4)_
-- **R-QBI-K1** — Trigger: The taxpayer has QBI flowing from a Form K-1 (partnership or S corporation). Output: "QBI from partnerships and S corporations flows through Form K-1 and requires coordination with the entity-level W-2 wage and UBIA reporting. This skill handles sole proprietor QBI only. For K-1 QBI, please consult a CPA or Enrolled Agent."
-- **R-QBI-REIT** — Trigger: The taxpayer has qualified REIT dividends or qualified PTP income eligible for the §199A deduction. Output: "Qualified REIT dividends and publicly traded partnership (PTP) income have a separate 20% deduction under §199A(a)(1)(B) with different rules than trade-or-business QBI. This skill does not compute the REIT/PTP component. Please consult a CPA or Enrolled Agent."  _(IRC §199A(a)(1)(B))_
-- **R-QBI-NOL** — Trigger: The taxpayer has an NOL carryforward that affects taxable income, which in turn affects the QBI threshold test. Output: "NOL carryforwards reduce taxable income, which can change the QBI threshold position and the taxable income cap on the QBI deduction. NOL-QBI interaction requires careful ordering. Please consult a CPA or Enrolled Agent."
-- **R-QBI-SSTB-MIXED** — Trigger: The taxpayer's business has both SSTB and non-SSTB components (e.g., a CPA who also sells software products). Output: "When a business has both SSTB and non-SSTB activities, the de minimis rule under Treas. Reg. §1.199A-5(c)(1) may apply: if gross receipts from the SSTB activity are less than 10% of total gross receipts (or 5% if total gross receipts exceed $25 million), the entire business may be treated as non-SSTB. This requires detailed revenue analysis. Please consult a CPA or Enrolled Agent."  _(Treas. Reg. §1.199A-5(c)(1))_
+1. **Filing status for 2026.** It sets the threshold and phase-in range. Married filing separately has its own threshold (USD 201,775), not half the joint one.
+2. **What the business does, in the client's words**, with a split of 2026 gross receipts by type of work if it does more than one thing (advice against deliverables, services against product sales). This decides SSTB status and the de minimis test.
+3. **Did the client materially participate** in each business in 2026 (section 469(h), for example more than 500 hours)? Only then does its QBI count toward the USD 1,000 needed for the USD 400 minimum.
+4. **Employees.** Did the business pay common-law employees on Forms W-2 in 2026? The total of the section 6051(a)(3) and (8) amounts for those employees, and whether the Forms W-2 were filed with the Social Security Administration on time. The owner's own draw is never W-2 wages.
+5. **Depreciable property** still in use at 31 December 2026: each item's cost and placed-in-service date (Form 4562 and the asset register). Fully expensed items still count.
+6. **Prior-year carryforwards:** the 2025 Form 8995 line 16 or Form 8995-A Schedule C qualified business loss carryforward, and any REIT or PTP loss carryforward.
+7. **Upstream figures:** Schedule C line 31 for each business, the deductible half of self-employment tax, the self-employed health insurance deduction and the retirement plan deduction, each from its own skill.
+8. **Other income:** net capital gain and qualified dividends (they reduce the cap), W-2 wages from a job, and whether the client was an employee of the same customer in the last three years.
 
-## Section 11 — Reviewer attention thresholds
+## The method, step by step
 
-**Reviewer attention thresholds**
+### Rates, bands and thresholds
 
-| Threshold | Trigger | Rationale |
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| Taxable income within $10,000 of threshold | Always flag | Small changes in income could shift QBI computation dramatically |
-| Taxable income above phase-in range top + sole prop has no W-2 wages | Always flag | QBI deduction is likely $0; S-corp election discussion warranted |
-| QBI deduction > $15,000 | Always flag | Material deduction; verify all adjustments |
-| SSTB classification is ambiguous | Always flag | Wrong classification can eliminate deduction above threshold |
-| Business has both consulting and deliverable-based work | Always flag | "Consulting" SSTB classification depends on facts and circumstances |
-| Prior-year QBI loss carryover applied | Always flag | Verify against prior-year Form 8995/8995-A |
-| QBI is negative (loss year) | Always flag | Carryforward must be tracked |
-| Retirement contribution was not subtracted from QBI | Always flag | Overstates QBI and the deduction |
-| Taxpayer has multiple businesses | Always flag | Aggregation and loss netting rules apply |
+| Deduction rate on QBI | 20% (the 23% in the House-passed bill was not enacted) | [26 U.S.C. 199A(b)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm); [Public Law 119-21, section 70105](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Overall cap | 20% of (taxable income before the QBI deduction minus net capital gain, with qualified dividends added to net capital gain) | [26 U.S.C. 199A(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm); [Form 8995 (2026 draft), lines 11 to 14](https://www.irs.gov/pub/irs-dft/f8995--dft.pdf) |
+| Threshold amount, all other returns (single, head of household, qualifying surviving spouse) | USD 201,750 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Threshold amount, married filing separately | USD 201,775 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Threshold amount, married filing jointly | USD 403,500 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| End of phase-in range, all other returns | USD 276,750 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| End of phase-in range, married filing separately | USD 276,775 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| End of phase-in range, married filing jointly | USD 553,500 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Phase-in range width, every return except joint (was USD 50,000 to 2025) | USD 75,000 | [Public Law 119-21, section 70105(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Phase-in range width, joint return (was USD 100,000 to 2025) | USD 150,000 | [Public Law 119-21, section 70105(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Wage limit, first alternative | 50% of W-2 wages | [26 U.S.C. 199A(b)(2)(B)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
+| Wage limit, second alternative | 25% of W-2 wages plus 2.5% of UBIA of qualified property | [26 U.S.C. 199A(b)(2)(B)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
+| Depreciable period for UBIA | later of 10 years from placed in service or the last full year of the section 168 recovery period (ignoring 168(g)) | [26 U.S.C. 199A(b)(6)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
+| W-2 wages count only if filed with SSA within | 60 days after the due date (with extensions) | [26 U.S.C. 199A(b)(4)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
+| Minimum deduction, taxable years beginning after 31 December 2025 | USD 400 | [Rev. Proc. 2025-32, section 2.12](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Public Law 119-21, section 70105(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| QBI needed for the minimum, from active businesses (material participation, section 469(h)) | USD 1,000 | [Rev. Proc. 2025-32, section 2.12](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Public Law 119-21, section 70105(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| SSTB de minimis, gross receipts USD 25 million or less | not an SSTB if under 10% of gross receipts are from the specified service | [Treas. Reg. 1.199A-5(c)(1)(i)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-5) |
+| SSTB de minimis, gross receipts over USD 25 million | under 5% | [Treas. Reg. 1.199A-5(c)(1)(ii)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-5) |
+| Former employee presumed still an employee for the same services | 3 years | [Treas. Reg. 1.199A-5(d)(3)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-5) |
 
-## Section 12 — Worked examples
+The rate, the 50%, 25% and 2.5% factors and the phase-in widths are statutory and not indexed. The thresholds are indexed every year. The USD 400 and USD 1,000 are indexed only for taxable years beginning after 2026, in multiples of USD 5 (Public Law 119-21, section 70105(b), new section 199A(i)(3)).
 
-### Example 1 — Below threshold, non-SSTB sole prop (simplified — Form 8995)
+### Step 1: qualified business income for each business
 
-**Taxpayer:** Maria Hernandez, single, freelance UX designer (NOT SSTB), Austin TX.
+QBI is the net amount of qualified items of income, gain, deduction and loss from the trade or business, included in taxable income for 2026 (section 199A(c)(1), (c)(3)). For a sole proprietor:
 
-**Inputs from upstream skills:**
-- Schedule C net profit (Line 31): $62,644
-- Deductible half of SE tax: $4,427
-- SE health insurance deduction: $8,400
-- Solo 401(k) employee deferral: $23,500
-- Employer contribution: $7,264
+**QBI = Schedule C line 31 minus the deductible half of self-employment tax (Schedule 1) minus the self-employed health insurance deduction minus the deduction for contributions to SEP, SIMPLE or solo 401(k) plans for the owner.**
 
-**QBI computation:**
-```
-Schedule C net profit:                $62,644
-Less: deductible half of SE tax:     ($4,427)
-Less: SE health insurance:           ($8,400)
-Less: retirement contributions:      ($30,764)  [$23,500 + $7,264]
-                                     --------
-QBI:                                  $19,053
-```
+The three subtractions are required: Treas. Reg. 1.199A-3(b)(1)(vi) treats the section 164(f), 162(l) and 404 deductions as attributable to the business to the extent the business's gross income was used to work them out, in proportion where there are several businesses. The Form 8995 instructions repeat it. If the client has two Schedules C, split each of the three deductions between them in proportion to the income each contributed.
 
-**Tentative QBI deduction:** 20% × $19,053 = **$3,811**
+Not in QBI:
 
-**Taxable income check:** AGI = $62,644 − $4,427 − $8,400 − $30,764 = $19,053. Taxable income = $19,053 − $15,750 standard deduction (2025, post-OBBBA) = $3,303. Well below the $197,300 threshold. QBI deduction limited to lesser of $3,811 or 20% × $3,303 = $661.
+- Capital gains and losses (including section 1231 gain treated as capital), dividends, interest not properly allocable to the business, and annuities not received in connection with the business (section 199A(c)(3)(B)).
+- Wages as an employee (except a statutory employee, Form W-2 box 13 checked), and the owner's own draw (section 199A(c)(4), (d)(1)(B)).
+- From 2026, any tip amount deductible under section 224(a), and section 224 tip income excluded from the business's net profit (2026 draft Instructions for Form 8995). The tip deduction itself is in `us-2026-federal-tax-changes`.
+- Losses and deductions suspended in 2026 by other rules (sections 163(j), 179, 461(l), 465 and 469); they enter QBI in the year they are allowed (2026 draft Instructions for Form 8995).
+- A traditional IRA deduction (section 219), Roth contributions, the standard or itemized deductions, estimated tax payments and the QBI deduction itself.
 
-**Result: QBI deduction = $661** (limited by taxable income cap).
+### Step 2: taxable income before the QBI deduction
 
-**Form:** 8995 (simplified).
+Taxable income for every section 199A test is computed without the QBI deduction (section 199A(e)(1)). Use Form 1040 line 11a (adjusted gross income) minus the standard or itemized deduction and the other deductions the 2026 draft Form 8995 instructions list for line 11; the standard deduction amounts are in `us-federal-income-tax-return-1040`. Because the QBI deduction is left out, there is no loop: work out the self-employment tax, health insurance and retirement deductions first (they depend on net earnings from self-employment, not on QBI), then QBI, then taxable income, then the deduction, once.
 
-### Example 2 — Below threshold, higher income, non-SSTB
+### Step 3: where taxable income sits
 
-**Taxpayer:** James Chen, single, freelance software developer (NOT SSTB), San Francisco.
+| Taxable income before the QBI deduction | What applies | Form |
+| --- | --- | --- |
+| At or below the threshold (USD 201,750 / 201,775 / 403,500) | 20% of QBI for every business, SSTB or not; no wage or UBIA limit | Form 8995 (unless a cooperative patron) |
+| Above the threshold, up to the end of the range (USD 276,750 / 276,775 / 553,500) | SSTB items cut to the applicable percentage; wage and UBIA limit phased in | Form 8995-A with Part III, and Schedule A for an SSTB |
+| Above the end of the range | SSTB: no deduction. Other businesses: the smaller of 20% of QBI and the wage and UBIA limit | Form 8995-A |
 
-**Inputs:**
-- Schedule C net profit: $150,000
-- Deductible half of SE tax: $10,597
-- SE health insurance: $9,600
-- SEP-IRA contribution: $26,081
-- Standard deduction: $15,750 (2025, post-OBBBA)
+The phase-in fraction is (taxable income minus the threshold) divided by USD 75,000 (USD 150,000 joint) (Form 8995-A (2026 draft), lines 20 to 24). The applicable percentage for an SSTB is 100% minus that fraction, not below zero (section 199A(d)(3)(B)).
 
-**QBI computation:**
-```
-Schedule C net profit:                $150,000
-Less: deductible half of SE tax:     ($10,597)
-Less: SE health insurance:            ($9,600)
-Less: SEP-IRA contribution:          ($26,081)
-                                     --------
-QBI:                                  $103,722
-```
+### Step 4: SSTB status
 
-**QBI deduction (tentative):** 20% × $103,722 = $20,744
+A specified service trade or business is one involving services in health, law, accounting, actuarial science, performing arts, consulting, athletics, financial services, brokerage services, investing and investment management, trading, or dealing in securities, partnership interests or commodities, or one whose principal asset is the reputation or skill of its employees or owners (section 199A(d)(2), which takes the section 1202(e)(3)(A) list without "engineering, architecture"). Treas. Reg. 1.199A-5(b) defines each field narrowly:
 
-**Taxable income:** $150,000 − $10,597 − $9,600 − $26,081 − $15,750 = $87,972. Below $197,300.
+| Activity | SSTB? | Reason |
+| --- | --- | --- |
+| Physician, dentist, nurse, pharmacist, physical therapist, psychologist, veterinarian | Yes | Health, 1.199A-5(b)(2)(ii) |
+| Health club, spa, payment processing, selling drugs or medical devices | No | Excluded from health, 1.199A-5(b)(2)(ii) |
+| Lawyer | Yes | Law |
+| Accountant, enrolled agent, return preparer, financial auditor | Yes | Accounting, 1.199A-5(b)(2)(iv) |
+| Bookkeeper | Not named in the regulation; treat as accounting (conservative) and flag | "similar professionals", 1.199A-5(b)(2)(iv) |
+| Financial adviser, wealth or retirement planner, valuations and M&A advice | Yes | Financial services, 1.199A-5(b)(2)(ix) |
+| Taking deposits or making loans | No | Excluded from financial services, 1.199A-5(b)(2)(ix) |
+| Stockbroker | Yes | Brokerage, 1.199A-5(b)(2)(x) |
+| Real estate agent or broker, insurance agent or broker | No | Excluded from brokerage, 1.199A-5(b)(2)(x) |
+| Advice and counsel to clients, lobbying | Yes | Consulting, 1.199A-5(b)(2)(vii) |
+| Sales, training and educational courses, consulting embedded in a non-SSTB sale with no separate fee | No | Excluded from consulting, 1.199A-5(b)(2)(vii) |
+| Engineer, architect | No | Struck from the list by section 199A(d)(2)(A) |
+| Software development, web development, UX and graphic design, data analytics delivered as a work product | Not a listed field; no SSTB unless the work is really advice and counsel | Not named in 1.199A-5(b); judge on the facts |
+| "IT consultant" or "marketing consultant" | Depends: advice only is consulting; delivering code, systems or campaigns is not | 1.199A-5(b)(2)(vii) |
+| Endorsement, licensing of name or likeness, appearance fees | Yes | Reputation or skill, 1.199A-5(b)(2)(xiv), narrowed to these three |
 
-**Taxable income cap:** 20% × $87,972 = $17,594
+**De minimis.** A business with gross receipts of USD 25 million or less is not an SSTB if under 10% of its gross receipts come from a specified service (5% above USD 25 million); activity incident to the service counts as the service (Treas. Reg. 1.199A-5(c)(1)).
 
-**Result: QBI deduction = $17,594** (limited by taxable income cap).
+**Former employees.** A person treated as an employee who then provides substantially the same services to the same business (or a related person) as a contractor is presumed for three years to still be performing services as an employee, which is not a qualified business, unless records rebut it on IRS notice (Treas. Reg. 1.199A-5(d)(3)).
 
-### Example 3 — Above threshold, SSTB, within phase-in
+### Step 5: W-2 wages and UBIA
 
-**Taxpayer:** Sarah Kim, MFJ, freelance financial advisor (SSTB — financial services).
+- **W-2 wages** are the section 6051(a)(3) and (8) amounts the business paid its common-law employees for 2026, allocable to QBI, and on Forms W-2 filed with the SSA within 60 days of the due date (section 199A(b)(4)). Wages paid through a payroll provider count if paid to the business's own common-law employees (Treas. Reg. 1.199A-2(b)(2)(ii)). The owner's draw and wages the client earns as someone else's employee never count.
+- **UBIA** is the original basis of tangible depreciable property held and available for use at year end, used during the year to produce QBI, and still in its depreciable period: the later of 10 years after placed in service or the last full year of the regular MACRS recovery period (section 199A(b)(6)). Depreciation, section 179 and bonus depreciation do not reduce it (Treas. Reg. 1.199A-2(c)(3)(i): no section 1016(a)(2) or (3) adjustments). A laptop costing USD 3,499 placed in service in 2025 (5-year property) keeps a UBIA of USD 3,499 through 2034, even if it was fully expensed in 2025. Land is not depreciable and has no UBIA.
 
-**Inputs:**
-- Schedule C net profit: $380,000
-- Deductible half of SE tax: $16,007
-  - Net SE earnings = $380,000 × 92.35% = $350,930
-  - OASDI = 12.4% × $176,100 (2025 wage base cap) = $21,836.40
-  - Medicare = 2.9% × $350,930 = $10,176.97
-  - SE tax = $32,013.37; deductible half = $16,007
-- SE health insurance: $14,400
-- Solo 401(k) total contributions: $58,000
-- Spouse W-2 income: $165,000 (no other income; MFJ standard deduction $31,500)
+### Step 6: the deduction for each business
 
-**Derived taxable income (before QBI):**
-```
-Total income:        $380,000 + $165,000          = $545,000
-Adjustments:         $16,007 + $14,400 + $58,000  = ($88,407)
-AGI:                                                $456,593
-Standard deduction (MFJ, 2025):                    ($31,500)
-Taxable income before QBI:                          $425,093
-```
+Per business, before the cap (section 199A(b)(2) and (3); Form 8995-A (2026 draft), Parts II and III):
 
-**Analysis:** $425,093 is above the $394,600 MFJ threshold but within the $494,600 phase-in top.
+1. **At or below the threshold:** 20% x QBI.
+2. **SSTB above the threshold:** first multiply QBI, W-2 wages and UBIA by the applicable percentage (Schedule A, Form 8995-A). Above the end of the range the applicable percentage is zero and so is the deduction.
+3. **Tentative amount** (line 3): 20% x QBI (after step 2 for an SSTB).
+4. **Wage and UBIA limit** (line 10): the greater of 50% x W-2 wages, or 25% x W-2 wages plus 2.5% x UBIA.
+5. **Above the end of the range:** the smaller of line 3 and line 10 (line 11).
+6. **Inside the range, where line 10 is less than line 3:** reduction = (line 3 minus line 10) x phase-in fraction; the deduction is line 3 minus that reduction (lines 17 to 26). For a sole proprietor with no employees and no property, line 10 is zero, so the deduction is 20% x QBI x (1 minus the fraction), and for an SSTB that is applied to QBI already cut to the applicable percentage.
 
-```
-Phase-in percentage   = ($425,093 − $394,600) / $100,000 = 30.49%
-Applicable percentage = 1 − 30.49%                       = 69.51%
+### Step 7: combine, cap, then the minimum
 
-QBI          = $380,000 − $16,007 − $14,400 − $58,000    = $291,593
-Adjusted QBI = $291,593 × 69.51%                         = $202,686
-Tentative QBI deduction = 20% × $202,686                 = $40,537
+1. Add the amounts for every business (Form 8995-A line 16; Form 8995 line 4 times 20%). Negative QBI in one business is first netted against the positive businesses in proportion to their positive QBI, and the loss business's W-2 wages and UBIA are not carried with it (Treas. Reg. 1.199A-1(d)(2)(iii)(A)).
+2. Add 20% of qualified REIT dividends and PTP income (refer: R-QBI-REIT).
+3. **Cap:** the smaller of that total and 20% x (taxable income before the QBI deduction minus net capital gain plus qualified dividends) (section 199A(a); Form 8995 (2026 draft) lines 11 to 15; Form 8995-A (2026 draft) lines 33 to 37).
+4. **Minimum (new for 2026):** if aggregate QBI from all businesses the taxpayer materially participated in is at least USD 1,000, the deduction is the greater of the step 3 result and USD 400 (section 199A(i) as rewritten by Public Law 119-21 section 70105(b); Form 8995 (2026 draft) lines 16 and 17; Form 8995-A (2026 draft) lines 40 and 41). The minimum is compared after the taxable income cap. QBI from a business the taxpayer does not materially participate in is passive and does not count toward the USD 1,000.
 
-Adjusted W-2 wages = $0 × 69.51% = $0 (no employees)
-Adjusted UBIA      = $0 (no qualifying property)
-W-2/UBIA limited amount                                  = $0
+### Step 8: losses carried forward
 
-Reduction amount = ($40,537 − $0) × 30.49%               = $12,360
-QBI deduction    = $40,537 − $12,360                     = $28,177
+If total QBI for 2026 (including a 2025 carryforward) is below zero, the QBI part of the deduction is zero and the negative amount is carried to 2027 as negative QBI from a separate trade or business, offsetting QBI from all businesses in later years whether or not the loss business still exists (section 199A(c)(2); Treas. Reg. 1.199A-1(d)(2)(iii)(B); 2026 draft Instructions for Form 8995, line 18). A loss suspended under another rule (at-risk, passive, excess business loss) enters QBI only in the year it is allowed. An SSTB loss carried forward keeps the applicable percentage of the year it arose.
 
-Taxable income cap = 20% × $425,093 = $85,019 (not binding)
-```
+### Form 8995 (simplified), 2026 draft line by line
 
-**Result: QBI deduction ≈ $28,177** (Form 8995-A). Note the deduction does NOT vanish in the middle of the phase-in range — it reaches $0 only when taxable income reaches the $494,600 phase-in top (SSTB with no W-2 wages/UBIA). Flag for reviewer — at this income level an S-corp election discussion is warranted.
+Use it when taxable income before the QBI deduction is at or below USD 201,750 (USD 201,775 married filing separately, USD 403,500 joint) and the client is not a cooperative patron. Up to five businesses or aggregations go on line 1; an aggregation needs Schedule B (Form 8995-A) attached.
 
-## Section 13 — Edge cases
-
-1. **QBI is negative.** Schedule C loss or large retirement contributions create negative QBI. Deduction = $0; loss carries forward. Track on Form 8995 line 16 or Form 8995-A Schedule C.
-
-2. **Taxable income is negative.** QBI deduction = $0 (cannot create or increase a loss). The QBI itself still carries forward if negative.
-
-3. **Sole prop has employees (has W-2 wages).** W-2 wages paid to employees count for the §199A(b)(2) limitation, but the sole prop's own draw does NOT. This is unusual for freelancers but possible. Verify with Form 941/944 filings.
-
-4. **Software developer who also provides "consulting."** If the same Schedule C includes both development (deliverable-based, NOT SSTB) and advisory consulting (advice-only, potentially SSTB), the de minimis rule under Treas. Reg. §1.199A-5(c)(1) applies: if SSTB revenue < 10% of total, the entire business is non-SSTB. If ≥ 10%, the skill cannot resolve — flag for reviewer.
-
-5. **Taxpayer exactly at the threshold.** At $197,300 (single) exactly, the simplified computation applies. The phase-in begins at $197,301. Use Form 8995.
-
-6. **Mid-year change in business activity.** If the business changed character mid-year (e.g., from consulting to software product sales), QBI is not split — it is all from the same Schedule C trade or business for the full year. SSTB status is determined based on the overall character for the full year.
-
-7. **Property fully depreciated but within 10-year UBIA window.** The depreciable period for UBIA ends on the LONGER of 10 years from placed-in-service or the regular MACRS (§168(c), GDS) recovery period — determined without regard to ADS (§168(g)). A laptop with a 5-year MACRS recovery period therefore keeps its UBIA for 10 years even though it is fully depreciated. IRC §199A(b)(6)(B); Treas. Reg. §1.199A-2(c)(2)(i).
-
-8. **Married filing separately.** For 2025 the MFS threshold is $197,300 (same as single) and the phase-in range width is $50,000 (also same as single — phase-in completion $247,300 per Rev. Proc. 2024-40). MFS does NOT get a halved phase-in range. The MFS trap is the threshold itself: a high-earning couple filing separately hits the $197,300 threshold at half the joint income level.
-
-9. **Roth IRA and traditional IRA contributions do NOT reduce QBI.** Only retirement deductions attributable to the trade or business (SEP, SIMPLE, Solo 401(k) pre-tax contributions) reduce QBI. Traditional IRA contributions are personal deductions under §219 — deductible from AGI but NOT attributable to the business, so they do not reduce QBI (Form 8995 instructions; Treas. Reg. §1.199A-3(b)(1)(vi)). Roth contributions are after-tax and affect neither.
-
-10. **Community property states.** In community property states (CA, TX, etc.), a sole prop's Schedule C income may be split between spouses for tax purposes. Each spouse reports their share, and QBI follows the income allocation. The skill flags this if the filing status is MFJ and the state is a community property state, but does not perform the split — that is a personal return issue.
-
-## Section 14 — Test suite
-
-### Test 1 — Basic below-threshold computation
-
-**Input:** Schedule C net profit $80,000; deductible half of SE tax $5,652; SE health insurance $6,000; SEP-IRA $13,470; single; standard deduction $15,750 (2025, post-OBBBA); no capital gains.
-**Expected:** QBI = $80,000 − $5,652 − $6,000 − $13,470 = $54,878. Tentative QBI deduction = 20% × $54,878 = $10,976. Taxable income = $80,000 − $5,652 − $6,000 − $13,470 − $15,750 = $39,128. TI cap = 20% × $39,128 = $7,826. **QBI deduction = $7,826** (TI-limited). Form 8995.
-
-### Test 2 — Loss year
-
-**Input:** Schedule C net loss ($15,000); deductible half of SE tax $0 (no profit); single.
-**Expected:** QBI = ($15,000). QBI deduction = $0. QBI loss carryforward = ($15,000) to next year. Form 8995 line 16.
-
-### Test 3 — Above threshold, non-SSTB, no W-2 wages, no UBIA
-
-**Input:** Schedule C net profit $300,000; deductible half of SE tax $14,935 (= 50% × [12.4% × $176,100 + 2.9% × ($300,000 × 92.35%)] = 50% × [$21,836.40 + $8,034.45]); SE health insurance $12,000; Solo 401(k) $55,000; taxable interest income $7,685; single; standard deduction $15,750.
-**Expected:** QBI = $300,000 − $14,935 − $12,000 − $55,000 = $218,065. AGI = $218,065 + $7,685 = $225,750. Taxable income (before QBI) = $225,750 − $15,750 = $210,000 > $197,300. Phase-in % = ($210,000 − $197,300) / $50,000 = 25.4%. Tentative = 20% × $218,065 = $43,613. W-2/UBIA limit = $0. Reduction = ($43,613 − $0) × 25.4% = $11,078. QBI deduction = $43,613 − $11,078 = $32,535. TI cap = 20% × $210,000 = $42,000 (not binding). **QBI deduction = $32,535**. Form 8995-A.
-
-### Test 4 — SSTB fully above phase-in range
-
-**Input:** Schedule C net profit $350,000 (accounting firm); single; taxable income (before QBI) $260,000.
-**Expected:** $260,000 > $247,300 (phase-in top). SSTB = accounting (yes). **QBI deduction = $0**. Form 8995-A.
-
-### Test 5 — Below threshold, SSTB irrelevant
-
-**Input:** Schedule C net profit $100,000 (legal consulting — SSTB); deductible half SE tax $7,065; SE health insurance $7,200; Solo 401(k) $30,000; single; standard deduction $15,750; no other income.
-**Expected:** QBI = $100,000 − $7,065 − $7,200 − $30,000 = $55,735. Taxable income = $55,735 − $15,750 = $39,985 < $197,300. SSTB status irrelevant below threshold. Tentative = 20% × $55,735 = $11,147. TI cap = 20% × $39,985 = $7,997. **QBI deduction = $7,997** (TI-limited). Form 8995.
-
-### Test 6 — Taxable income cap binds
-
-**Input:** Schedule C net profit $50,000; no retirement; no SE health insurance; deductible half SE tax $3,532; single; itemizes with $30,000 deductions (mortgage interest + SALT + charitable; exceeds the $15,750 standard deduction).
-**Expected:** QBI = $50,000 − $3,532 = $46,468. Tentative = 20% × $46,468 = $9,294. Taxable income = $50,000 − $3,532 − $30,000 = $16,468. TI cap = 20% × $16,468 = $3,294. **QBI deduction = $3,294** (TI-limited). Form 8995.
-
-## Section 15 — PROHIBITIONS
-
-- **Prohibition 1** — NEVER compute the QBI deduction without first subtracting deductible half of SE tax, SE health insurance, and retirement contributions from Schedule C net profit. Skipping any of these adjustments overstates QBI and the deduction.
-- **Prohibition 2** — NEVER apply a 23% §199A rate for ANY tax year. The 23% rate appeared only in the House-passed version of H.R. 1 (May 2025). The enacted One Big Beautiful Bill Act (P.L. 119-21) kept the rate at 20% and made it permanent. The rate is 20% for 2025, 2026, and all later years unless Congress acts again.  _(P.L. 119-21)_
-- **Prohibition 3** — NEVER tell a taxpayer their SSTB status does not matter without checking their taxable income. SSTB status is irrelevant below the threshold but critical above it.
-- **Prohibition 4** — NEVER treat the sole proprietor's own draw or self-employment income as W-2 wages for the §199A(b)(2) limitation. Only wages paid to common-law employees count.  _(§199A(b)(2))_
-- **Prohibition 5** — NEVER assume UBIA is zero without asking. A sole prop who purchased equipment, vehicles, or other depreciable property may have significant UBIA even if the property is fully depreciated (the 10-year lookback applies).
-- **Prohibition 6** — NEVER net QBI losses across multiple businesses without applying the §199A(c)(2) ordering rules. Losses from one business reduce QBI from other businesses proportionally — they do not simply offset dollar-for-dollar.  _(§199A(c)(2))_
-- **Prohibition 7** — NEVER apply the QBI deduction to reduce self-employment tax. The QBI deduction reduces income tax only (it is below the AGI line). It does not affect Schedule SE.
-- **Prohibition 8** — NEVER ignore the taxable income cap. Even when 20% of QBI is large, the deduction cannot exceed 20% of taxable income excluding net capital gain.
-- **Prohibition 9** — NEVER file Form 8995 when Form 8995-A is required. If taxable income exceeds the threshold, Form 8995-A must be used.
-- **Prohibition 10** — NEVER classify software development as an SSTB. Software development is not consulting, not engineering (excluded from SSTB by statute), and not any other listed field. This is confirmed by Treas. Reg. §1.199A-5(b)(2)(vii).  _(Treas. Reg. §1.199A-5(b)(2)(vii))_
-- **Prohibition 11** — NEVER apply the 2026+ OBBBA changes (wider $75,000/$150,000 phase-in ranges, $400 minimum deduction) to a tax year 2025 return. They are effective only for tax years beginning after December 31, 2025.
-
-## Section 16 — Cross-skill references
-
-**Upstream skills**
-
-| Upstream skill | Data consumed |
+| Line | Entry |
 | --- | --- |
-| `us-sole-prop-bookkeeping` | Classified transactions for Schedule C |
-| `us-schedule-c-and-se-computation` | Schedule C Line 31 (net profit), deductible half of SE tax |
-| `us-self-employed-health-insurance` | SE health insurance deduction amount |
-| `us-self-employed-retirement` | Retirement contribution deduction amount |
+| 1i to 1v | Business name, TIN (the LLC's EIN, or the owner's SSN if none), QBI or loss |
+| 2 | Total QBI |
+| 3 | Qualified business loss carryforward from 2025 (negative) |
+| 4 | Lines 2 plus 3; zero if negative |
+| 5 | Line 4 x 20% |
+| 6 to 9 | REIT and PTP amounts and the 20% component |
+| 10 | Lines 5 plus 9 |
+| 11 | Taxable income before the QBI deduction |
+| 12 | Net capital gain plus qualified dividends |
+| 13 | Line 11 minus line 12, not below zero |
+| 14 | Line 13 x 20% |
+| 15 | Smaller of line 10 or line 14 (new label: before the minimum deduction) |
+| 16 | Minimum deduction for active QBI (new for 2026): USD 400 if active QBI on line 1 is at least USD 1,000 |
+| 17 | Greater of line 15 or line 16; to Form 1040 line 13a |
+| 18 | QBI loss carryforward to 2027 (lines 2 plus 3, if negative) |
+| 19 | REIT and PTP loss carryforward |
+| 20 | Box for an electing small business trust (new) |
 
-**Downstream skills**  _(https://www.irs.gov/pub/irs-pdf/i1040gi.pdf)_
+### Form 8995-A (detailed), 2026 draft
 
-| Downstream skill | Data provided |
+Use it when taxable income before the QBI deduction is above the threshold, or the client is a cooperative patron. An SSTB below the threshold, or several businesses below the threshold, do not on their own require Form 8995-A. Schedule A carries the SSTB applicable percentage, Schedule B the aggregation, Schedule C loss netting and carryforwards, Schedule D the patron reduction. Part II lines 2 to 16 run Step 6 per business, Part III lines 17 to 26 the phase-in, Part IV lines 27 to 41 the cap, the section 199A(g) amount and the minimum (lines 39 to 41).
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| `us-quarterly-estimated-tax` | QBI deduction amount (reduces estimated tax liability) |
-| `us-federal-return-assembly` | QBI deduction for Form 1040 Line 13a |
-| `us-federal-tx-return-assembly` | QBI deduction for Texas-resident federal return |
-| `us-ca-return-assembly` | QBI deduction for CA-resident federal return |
+| Taxable income exactly at the threshold (USD 201,750) | Below-threshold rules; Form 8995. The phase-in starts with the first dollar above |
+| Taxable income exactly at the end of the range (USD 276,750) | An SSTB gets nothing (applicable percentage zero); others take the full wage and UBIA limit |
+| Married filing separately | Threshold USD 201,775 and range USD 75,000 (end USD 276,775): not half the joint figures, so a couple filing separately reaches the limits at about half the joint income |
+| SSTB with taxable income inside the range | Partial deduction, shrinking on two counts (applicable percentage and phase-in); not zero until the end of the range |
+| Non-SSTB above the range, no employees, no property | Deduction zero: line 10 is zero. Flag; see `us-s-corp-election-decision` |
+| Non-SSTB above the range with equipment but no employees | Limit is 2.5% x UBIA: ask for the asset register before assuming zero |
+| QBI negative for the year | Deduction from QBI zero; carry the loss to 2027 (Step 8). The USD 400 minimum does not apply because aggregate active QBI is below USD 1,000 |
+| Active QBI between USD 1,000 and USD 2,000 | 20% is under USD 400, so the minimum lifts the deduction to USD 400 (Case 2) |
+| QBI only from a business the client does not materially participate in | Normal 20% rules apply; no USD 400 minimum |
+| Taxable income below QBI | The cap binds: 20% x (taxable income minus net capital gain) |
+| Taxable income zero or negative | Cap is zero. Whether and how the USD 400 minimum then applies is not settled by final instructions: flag for the reviewer |
+| Two Schedules C, one a loss | Net the loss against the profitable business in proportion (Treas. Reg. 1.199A-1(d)(2)(iii)); never take 20% of the profitable one alone |
+| Mixed SSTB and non-SSTB work in one business | Apply the 10% (or 5%) de minimis test on gross receipts; if it fails, refer (R-QBI-SSTB-MIXED) |
+| Client was the customer's employee in the last 3 years, same work | Presumed employee; no QBI from that work unless rebutted (Treas. Reg. 1.199A-5(d)(3)) |
+| Business changes character during the year | One trade or business for the year; judge SSTB status on the whole year's receipts with the de minimis test |
+| Community property state, married filing jointly | Schedule C income split between spouses follows state law; QBI follows that split. Flag; this skill does not do the split |
+| Statutory employee (W-2 box 13) | The income is QBI (Schedule C); not W-2 wages for the limit |
+
+Conservative defaults where facts are missing:
+
+| Missing fact | Default |
+| --- | --- |
+| SSTB status unclear | Treat as SSTB above the threshold; flag |
+| Taxable income within USD 10,000 of the threshold or the end of the range | Work it both ways and show both |
+| W-2 wages not documented | Assume zero; ask for Forms W-2 and W-3 |
+| UBIA not documented | Assume zero above the threshold only after asking for Form 4562 or the asset list |
+| 2025 carryforward not provided | Assume none; ask for the 2025 Form 8995 line 16 or Form 8995-A Schedule C |
+| Material participation not confirmed | Do not apply the USD 400 minimum; ask |
+| Health insurance or retirement deduction not yet worked out | Work them out first; never skip the QBI reduction |
+
+## Worked cases
+
+**Case 1, a decision: does a financial planner just above the threshold get a partial deduction, and is an extra USD 5,100 SEP contribution worth making?** A single financial planner (financial services, an SSTB) has 2026 Schedule C net profit of USD 270,000, no employees and no qualifying property. From the upstream skills: deductible half of self-employment tax USD 15,054.50, self-employed health insurance USD 12,000, SEP contribution USD 20,000 (option A). No other income; standard deduction USD 16,100 (2026, from `us-federal-income-tax-return-1040`). Option B raises the SEP contribution by USD 5,100 to USD 25,100, within the plan limit worked out in `us-self-employed-retirement`.
+
+Option A: QBI = 270,000 minus 15,054.50 minus 12,000 minus 20,000 = USD 222,945.50. Taxable income before the QBI deduction = USD 206,845.50, which is USD 5,095.50 above the USD 201,750 threshold. Phase-in fraction = 5,095.50 / 75,000 = 6.794%; applicable percentage = 93.206%. The SSTB is still a qualified business, cut to 93.206%: 20% x 222,945.50 x 93.206% = USD 41,559.72 (Form 8995-A line 3). Line 10 is zero, so the phase-in reduction is 41,559.72 x 6.794% = USD 2,823.57, leaving USD 38,736.15. The cap is 20% x 206,845.50 = USD 41,369.10, not binding. **Deduction USD 38,736.15**, a partial deduction, not zero. Taxable income after it: USD 168,109.35.
+
+Option B: QBI = USD 217,845.50 and taxable income before the QBI deduction = USD 201,745.50, at or below the threshold, so SSTB status no longer matters and Form 8995 applies. 20% of QBI is USD 43,569.10, but the cap is 20% x 201,745.50 = USD 40,349.10, which binds. **Deduction USD 40,349.10.** Taxable income after it: USD 161,396.40.
+
+The figure that decides: the extra USD 5,100 contribution cuts taxable income by USD 6,712.95 (USD 1,612.95 more QBI deduction on top of the USD 5,100). Recommend option B if the client can fund the extra contribution and is content to defer the money; a reviewer confirms the SEP limit. Either way, a planner USD 5,095.50 over the threshold keeps most of the deduction.
+
+```oa-check
+name: SSTB just above the 2026 threshold, with and without an extra SEP contribution (single)
+inputs:
+  schedule_c_profit: 270000
+  half_se_tax: 15054.50
+  se_health: 12000
+  sep_a: 20000
+  sep_b: 25100
+  std_deduction: 16100
+  threshold: 201750
+  phase_range: 75000
+steps:
+  - qbi_a: schedule_c_profit - half_se_tax - se_health - sep_a
+  - ti_a: qbi_a - std_deduction
+  - phase_a: clamp((ti_a - threshold) / phase_range, 0, 1)
+  - applicable_a: 1 - phase_a
+  - line3_a: 0.20 * qbi_a * applicable_a
+  - after_phase_a: line3_a - (line3_a - 0) * phase_a
+  - deduction_a: min(after_phase_a, 0.20 * ti_a)
+  - qbi_b: schedule_c_profit - half_se_tax - se_health - sep_b
+  - ti_b: qbi_b - std_deduction
+  - deduction_b: min(0.20 * qbi_b, 0.20 * ti_b)
+  - taxable_after_a: ti_a - deduction_a
+  - taxable_after_b: ti_b - deduction_b
+  - saving_in_taxable_income: taxable_after_a - taxable_after_b
+expected:
+  qbi_a: 222945.50
+  ti_a: 206845.50
+  line3_a: 41559.72
+  deduction_a: 38736.15
+  ti_b: 201745.50
+  deduction_b: 40349.10
+  taxable_after_a: 168109.35
+  taxable_after_b: 161396.40
+  saving_in_taxable_income: 6712.95
+```
+
+**Case 2, the new USD 400 minimum.** A single employee earns USD 30,000 of wages and runs a small weekend photography business she works in herself for more than 500 hours a year (material participation). Schedule C net profit is USD 1,500; the deductible half of self-employment tax is USD 105.97 (from `us-schedule-c-and-se-computation`); no health insurance or retirement deduction. Standard deduction USD 16,100.
+
+QBI = 1,500 minus 105.97 = USD 1,394.03. Taxable income before the QBI deduction = 30,000 plus 1,394.03 minus 16,100 = USD 15,294.03, below the threshold, so Form 8995. Line 5: 20% x 1,394.03 = USD 278.81. Line 14: 20% x 15,294.03 = USD 3,058.81. Line 15: USD 278.81. Active QBI of USD 1,394.03 is at least USD 1,000, so line 16 is USD 400 and line 17 is **USD 400**. Under 2025 rules the deduction would have been USD 278.81. Had she not materially participated, or had QBI been under USD 1,000, it would stay at line 15.
+
+```oa-check
+name: Minimum deduction for active QBI (2026, single)
+inputs:
+  wages: 30000
+  schedule_c_profit: 1500
+  half_se_tax: 105.97
+  std_deduction: 16100
+  minimum: 400
+  minimum_qbi: 1000
+steps:
+  - qbi: schedule_c_profit - half_se_tax
+  - taxable_income: wages + qbi - std_deduction
+  - line_5: 0.20 * qbi
+  - line_14: 0.20 * taxable_income
+  - line_15: min(line_5, line_14)
+  - line_16: minimum * clamp(floor(qbi / minimum_qbi), 0, 1)
+  - line_17: max(line_15, line_16)
+expected:
+  qbi: 1394.03
+  taxable_income: 15294.03
+  line_5: 278.81
+  line_14: 3058.81
+  line_15: 278.81
+  line_16: 400.00
+  line_17: 400.00
+```
+
+**Case 3, the wage limit above the range (no check block).** A married couple filing jointly have taxable income before the QBI deduction of USD 600,000, above the USD 553,500 end of the range. Her landscaping business (not an SSTB) has QBI of USD 300,000, paid USD 60,000 of W-2 wages to two employees and holds equipment with UBIA of USD 200,000. 20% of QBI is USD 60,000. The limit is the greater of 50% x 60,000 = USD 30,000 and 25% x 60,000 plus 2.5% x 200,000 = USD 20,000, so USD 30,000. The deduction is the smaller of USD 60,000 and USD 30,000: **USD 30,000**; the cap (20% x 600,000 = USD 120,000) does not bind. Were it an SSTB, the deduction would be zero.
+
+## When to refuse or refer
+
+On top of the global catalogue in `us-tax-workflow-base` and the upstream skills' catalogues.
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-QBI-MULTI | Several businesses where aggregation under Treas. Reg. 1.199A-4 is in question (50% common ownership, same year end, no SSTB, and two of: same products or services, shared facilities or staff, operated in coordination) | Refer: aggregation is an election that must be reported consistently in later years |
+| R-QBI-K1 | QBI from a partnership or S corporation (Schedule K-1) | Refer: entity-level W-2 wages, UBIA and reasonable compensation |
+| R-QBI-REIT | Qualified REIT dividends or PTP income or loss | Refer: separate 20% component and its own carryforward |
+| R-QBI-NOL | A net operating loss carryforward changes taxable income | Refer: ordering with the threshold and the cap |
+| R-QBI-SSTB-MIXED | A business with both SSTB and non-SSTB receipts that fails the 10% (or 5%) de minimis test | Refer: Treas. Reg. 1.199A-5(c) |
+| R-QBI-COOP | Patron of an agricultural or horticultural cooperative, or a section 199A(g) amount | Refer: Form 8995-A Schedule D |
+| R-QBI-RENTAL | Rental real estate claimed as a trade or business (Rev. Proc. 2019-38 safe harbor) | Use `us-real-estate-professional-and-short-term-rentals`, then refer if unclear |
+| R-QBI-EMPLOYEE | Client reclassified from employee to contractor for the same customer within 3 years | Flag: presumption of employee status; reviewer decides whether records rebut it |
+| R-QBI-TRUST | Estate, trust or electing small business trust | Refer: Form 1041 and the DNI allocation |
+
+Always flag for the reviewer: taxable income within USD 10,000 of the threshold or the end of the range; above the range with no W-2 wages; a deduction over USD 15,000; an unclear SSTB classification or mixed advice and deliverable work; any QBI loss or carryforward; a missing retirement or health insurance reduction; more than one business; the USD 400 minimum claimed (material participation evidence).
+
+Never:
+
+- Apply a 23% rate, for any year. It was in the House-passed bill only; Public Law 119-21 kept 20%.
+- Compute QBI without subtracting the deductible half of self-employment tax, self-employed health insurance and retirement plan contributions.
+- Say SSTB status does not matter without checking taxable income.
+- Treat the owner's draw or someone else's W-2 wages as W-2 wages for the limit.
+- Use Form 8995 when taxable income is above the threshold.
+- Let the QBI deduction reduce self-employment tax or adjusted gross income; it is allowed for income tax only (section 199A(f)(3)) and is taken after adjusted gross income.
+- Apply the 2025 figures (USD 197,300 / 394,600 thresholds, USD 50,000 / 100,000 ranges) or leave out the USD 400 minimum on a 2026 return.
+
+## Filing and payment
+
+Form 8995 or Form 8995-A (with Schedules A to D as needed) is attached to the 2026 Form 1040, due **15 April 2027**; the deduction goes on Form 1040 line 13a (2026 draft Instructions for Form 8995). An extension to 15 October 2027 extends filing, not payment. The QBI deduction lowers income tax only, so it lowers the 2026 estimated payments; see `us-quarterly-estimated-tax`. Keep the SSTB analysis, the de minimis receipts split, material participation evidence, Forms W-2 and W-3 and the asset register with the working papers.
+
+## Completion checklist
+
+- Year figures are 2026: thresholds USD 201,750 / 201,775 / 403,500, ranges USD 75,000 / 150,000, rate 20%.
+- QBI reduced by the deductible half of self-employment tax, self-employed health insurance and retirement contributions, split in proportion across businesses.
+- Section 224 tips, capital items, interest not allocable to the business and suspended losses kept out of QBI.
+- Taxable income measured before the QBI deduction.
+- SSTB status decided field by field, with the de minimis test and the former-employee presumption checked.
+- W-2 wages limited to common-law employees on timely filed Forms W-2; UBIA from the asset register at unadjusted cost, within the depreciable period.
+- Phase-in fraction and applicable percentage computed with the 2026 range.
+- Cap applied, then the USD 400 minimum (with USD 1,000 of active QBI and material participation confirmed).
+- 2025 carryforward brought in; 2027 carryforward recorded.
+- Right form: Form 8995 at or below the threshold, Form 8995-A above.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| 26 U.S.C. 199A (govinfo, 2024 edition, before Public Law 119-21). Read for (a) the cap, (b)(2) 20%, 50%, 25% and 2.5%, (b)(3) and (d)(3) the phase-in, (b)(4) W-2 wages and the 60-day rule, (b)(6) UBIA and the depreciable period, (c) QBI and loss carryover, (d)(2) SSTB, (e)(1) and (e)(2) taxable income and threshold, (f)(3), and the old (i) termination after 2025. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm | 2026-11-13 |
+| Public Law 119-21 (One Big Beautiful Bill Act), section 70105. Read for (a) the USD 75,000 (USD 150,000 joint) ranges, (b) the rewritten section 199A(i) minimum deduction of USD 400 with USD 1,000 of active QBI, material participation under 469(h), indexing after 2026, and (c) taxable years beginning after 31 December 2025. No change to the 20% rate. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for section 4.26 (2026 thresholds USD 201,750, 201,775, 403,500 and phase-in amounts USD 276,750, 276,775, 553,500) and section 2.12 (USD 400 minimum, USD 1,000 QBI, indexed after 2026). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Form 8995 (2026), IRS early release draft created 5/1/26. Read for the 2026 threshold line and lines 1 to 20, including new lines 15, 16 (minimum deduction) and 20. | https://www.irs.gov/pub/irs-dft/f8995--dft.pdf | 2026-11-13 |
+| Form 8995-A (2026), IRS early release draft created 5/26/26. Read for Parts I to IV, lines 2 to 26 (wage and UBIA limit, phase-in with USD 75,000 / 150,000) and lines 39 to 41 (minimum deduction). | https://www.irs.gov/pub/irs-dft/f8995a--dft.pdf | 2026-11-13 |
+| Instructions for Form 8995 (2026), IRS draft dated 17 June 2026. Read for the minimum deduction and material participation, section 224 tips out of QBI, suspended losses, the SSTB exceptions with 2026 amounts, aggregation conditions, line 11, line 17 and Form 1040 line 13a. | https://www.irs.gov/pub/irs-dft/i8995--dft.pdf | 2026-11-13 |
+| Instructions for Form 8995 (2025), final. Read for the QBI items list (deductible part of self-employment tax, self-employed health insurance, retirement contributions) and the QBI flow chart, repeated in the 2026 draft. | https://www.irs.gov/pub/irs-pdf/i8995.pdf | 2026-11-13 |
+| Treas. Reg. 1.199A-1 (eCFR). Read for (d)(2)(iii) netting of negative QBI in proportion and the separate-business carryover. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-1 | 2026-11-13 |
+| Treas. Reg. 1.199A-2 (eCFR). Read for (b)(2) W-2 wages, including wages paid by another person for the business's common-law employees, and (c)(3) UBIA without depreciation adjustments. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-2 | 2026-11-13 |
+| Treas. Reg. 1.199A-3 (eCFR). Read for (b)(1)(vi): the section 164(f), 162(l) and 404 deductions reduce QBI in proportion to the business's gross income. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-3 | 2026-11-13 |
+| Treas. Reg. 1.199A-5 (eCFR). Read for (b) the field definitions (health, accounting, consulting, financial services, brokerage, reputation or skill), (c)(1) the 10% and 5% de minimis rule at USD 25 million, and (d)(3) the three-year employee presumption. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.199A-5 | 2026-11-13 |
+
+Not yet confirmed: the final 2026 Forms 8995 and 8995-A and their instructions were not yet released when read; line numbers above are from the IRS early release drafts and may change. The draft Instructions for Form 8995-A (2026) were downloaded but not relied on. How the USD 400 minimum applies when taxable income before it is below USD 400 or zero is not addressed in the law or the draft instructions read. The 2027 indexed amounts of the USD 400 and USD 1,000 are not yet published. Treas. Reg. 1.199A-4 (aggregation) was not opened; the aggregation conditions above are from the 2026 draft Instructions for Form 8995.
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
