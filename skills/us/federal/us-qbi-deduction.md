@@ -212,7 +212,7 @@ Use it when taxable income before the QBI deduction is above the threshold, or t
 | Community property state, married filing jointly | Schedule C income split between spouses follows state law; QBI follows that split. Flag; this skill does not do the split |
 | Statutory employee (W-2 box 13) | The income is QBI (Schedule C); not W-2 wages for the limit |
 
-Conservative defaults where facts are missing:
+### Defaults when a fact is missing
 
 | Missing fact | Default |
 | --- | --- |
@@ -223,6 +223,19 @@ Conservative defaults where facts are missing:
 | 2025 carryforward not provided | Assume none; ask for the 2025 Form 8995 line 16 or Form 8995-A Schedule C |
 | Material participation not confirmed | Do not apply the USD 400 minimum; ask |
 | Health insurance or retirement deduction not yet worked out | Work them out first; never skip the QBI reduction |
+
+### Red flags for the reviewer
+
+| Trigger | Why |
+| --- | --- |
+| Taxable income within USD 10,000 of the threshold or the end of the range | A small change moves the computation a lot; work it both ways |
+| Above the range with no W-2 wages | The deduction is likely zero; S corporation discussion (`us-s-corp-election-decision`) |
+| QBI deduction over USD 15,000 | Material; check every adjustment |
+| SSTB classification unclear, or mixed advice and deliverable work | A wrong call removes the deduction above the threshold |
+| Any QBI loss, or a 2025 carryforward applied | Carryforward must match the prior-year form and be tracked |
+| Retirement or health insurance deduction not subtracted from QBI | Overstates QBI and the deduction |
+| More than one business | Netting and aggregation rules apply |
+| USD 400 minimum claimed | Needs evidence of material participation and USD 1,000 of active QBI |
 
 ## Worked cases
 
@@ -319,8 +332,6 @@ On top of the global catalogue in `us-tax-workflow-base` and the upstream skills
 | R-QBI-RENTAL | Rental real estate claimed as a trade or business (Rev. Proc. 2019-38 safe harbor) | Use `us-real-estate-professional-and-short-term-rentals`, then refer if unclear |
 | R-QBI-EMPLOYEE | Client reclassified from employee to contractor for the same customer within 3 years | Flag: presumption of employee status; reviewer decides whether records rebut it |
 | R-QBI-TRUST | Estate, trust or electing small business trust | Refer: Form 1041 and the DNI allocation |
-
-Always flag for the reviewer: taxable income within USD 10,000 of the threshold or the end of the range; above the range with no W-2 wages; a deduction over USD 15,000; an unclear SSTB classification or mixed advice and deliverable work; any QBI loss or carryforward; a missing retirement or health insurance reduction; more than one business; the USD 400 minimum claimed (material participation evidence).
 
 Never:
 
