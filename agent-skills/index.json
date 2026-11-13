@@ -709,7 +709,6 @@
   "UZ",
   "VA",
   "VC",
-  "VE",
   "VG",
   "VI",
   "VN",
@@ -901,7 +900,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "al-corporate-income-tax",
+   "jurisdiction": "US-AL",
+   "path": "skills/us/states/al/al-corporate-income-tax.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "al-corporate-tax",
@@ -925,25 +933,52 @@
    "name": "al-income-tax",
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/al-income-tax.md",
-   "trust_label": null,
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": null
+   "tax_year": 2025
+  },
+  {
+   "name": "al-payroll-withholding",
+   "jurisdiction": "US-AL",
+   "path": "skills/us/states/al/al-payroll-withholding.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "al-sales-tax",
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/al-sales-tax.md",
-   "trust_label": null,
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "al-transfer-pricing",
    "jurisdiction": "AL",
    "path": "skills/albania/al-transfer-pricing.md",
    "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "al-unemployment-contributions",
+   "jurisdiction": "US-AL",
+   "path": "skills/us/states/al/al-unemployment-contributions.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "alabama-cross-border",
+   "jurisdiction": "US-AL",
+   "path": "skills/us/states/al/alabama-cross-border.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
@@ -961,10 +996,19 @@
    "name": "alabama-sales-tax",
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/alabama-sales-tax.md",
-   "trust_label": null,
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "alabama-transfer-pricing",
+   "jurisdiction": "US-AL",
+   "path": "skills/us/states/al/alabama-transfer-pricing.md",
+   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "albania-income-tax",
@@ -10386,7 +10430,7 @@
    "path": "skills/us/states/ks/ks-corporate-income-tax.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": 2026
   },
   {
@@ -10395,7 +10439,7 @@
    "path": "skills/us/states/ks/ks-cross-border.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": 2026
   },
   {
@@ -10413,7 +10457,7 @@
    "path": "skills/us/states/ks/ks-payroll.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": 2026
   },
   {
@@ -10431,7 +10475,7 @@
    "path": "skills/us/states/ks/ks-social-contributions.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": 2026
   },
   {
@@ -10440,7 +10484,7 @@
    "path": "skills/us/states/ks/ks-transfer-pricing.md",
    "trust_label": null,
    "authored_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": 2026
   },
   {
@@ -13243,6 +13287,15 @@
    "tax_year": 2025
   },
   {
+   "name": "nd-cross-border-tax",
+   "jurisdiction": "US-ND",
+   "path": "skills/us/states/nd/nd-cross-border-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "nd-estimated-tax",
    "jurisdiction": "US-ND",
    "path": "skills/us/states/nd/nd-estimated-tax.md",
@@ -13285,7 +13338,25 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nd-social-contributions",
+   "jurisdiction": "US-ND",
+   "path": "skills/us/states/nd/nd-social-contributions.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "nd-transfer-pricing",
+   "jurisdiction": "US-ND",
+   "path": "skills/us/states/nd/nd-transfer-pricing.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ne-cash-payment-tax",
@@ -15967,7 +16038,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "se-benefits-and-allowances",
@@ -19471,78 +19542,6 @@
    "tax_year": 2026
   },
   {
-   "name": "venezuela-corporate-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-corporate-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-cross-border-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-cross-border-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-income-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-iva",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-iva.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-payroll",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-payroll.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": "Jose Padilla",
-   "tax_year": 2025
-  },
-  {
-   "name": "venezuela-social-contributions",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-social-contributions.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-tax-optimization",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-tax-optimization.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-transfer-pricing",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-transfer-pricing.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
    "name": "vg-company-formation",
    "jurisdiction": "VG",
    "path": "skills/british-virgin-islands/vg-company-formation.md",
@@ -19657,7 +19656,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "vu-company-formation",
