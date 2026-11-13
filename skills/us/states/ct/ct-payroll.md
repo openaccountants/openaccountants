@@ -1,598 +1,252 @@
 ---
 name: ct-payroll
-description: Tier 2 Connecticut content skill for employer payroll compliance covering tax year 2025. Includes the CT PIT brackets up to 6.99%, CT-W4 state W-4, CT-941 quarterly withholding, CT-W3 annual reconciliation, CT UI wage base $25,000 with rates 0.50-6.20%, CT Paid Leave 0.5% employee-paid contribution effective January 2022, the post-2024 expansion of Paid Sick Leave to all 50+ employer industries, no reciprocal agreement with NY, and the convenience-of-employer rule for CT employers with remote out-of-state workers.
+description: Use for Connecticut 2026 employer withholding, CT-W4/CT-941/CT-W3, SUI, CT Paid Leave, paid sick leave, cross-border workers, classification and final pay.
+version: "0.2"
 jurisdiction: US-CT
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
+category: state-tax
+type: computation
 domain: payroll
 ---
 
-# CT Payroll
+# Connecticut payroll: withholding, unemployment and retained employment obligations
 
-## Connecticut Payroll — Employer Compliance for Tax Year 2025
+> **General reference only.** Written by Codex. Not reviewed by an accountant. Obtain qualified professional review before filing, paying or taking a tax position.
 
-## 1. Scope
+> **Circular 230 section 10.37:** Apply relevant law to the taxpayer's facts, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of federal tax implications. Federal computations belong to linked federal owner skills.
 
-This is a **Tier 2 Connecticut content skill** for employer payroll compliance in the State of Connecticut for tax year 2025. It is loaded by the workflow base whenever a payroll workflow involves a Connecticut employer, a Connecticut resident employee, or wages sourced to Connecticut under the convenience-of-employer rule.
+**Answer first.** Compute state withholding with the actual 2026 Circular CT tables and the employee's CT-W4 code. Separately apply the employer's SUI notice to the first **$27,000** of each employee's covered 2026 wages. The 2026 new-employer SUI rate is **1.9% total**, not the old 2.5%. Paid Leave is a separate employee deduction. [2026 Circular CT](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf); [2026 CTDOL tax notice](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US).
 
-### In scope
+## Scope
 
-- Connecticut Personal Income Tax (CT PIT) withholding, including the 2025 bracket structure topping out at **6.99%** and the supplemental wage rate of **6.99%**.
-- Form **CT-W4**, the Connecticut Employee's Withholding Certificate, including withholding codes A through F and the additional withholding amount on Line 2.
-- Form **CT-941**, the Connecticut Quarterly Reconciliation of Withholding, including the four quarterly filing deadlines and the weekly/monthly/quarterly remitter categories.
-- Form **CT-W3**, the Connecticut Annual Reconciliation of Withholding, due January 31 of the following year.
-- Connecticut **Unemployment Insurance (UI)** administered by the Connecticut Department of Labor (CTDOL), including the **$25,000 taxable wage base** for 2025, the experience-rated tax rate range of **0.50% to 6.20%**, and the **2.5% new employer rate**.
-- Connecticut **Paid Leave (CTPL)** contributions of **0.5% of wages, employee-paid only**, effective since January 1, 2022, administered by the CT Paid Leave Authority.
-- Connecticut **Paid Sick Leave** under Conn. Gen. Stat. §31-57r through §31-57w, including the post-2024 expansion under Public Act 24-8 that broadens coverage from "service workers" only to all industries with **50 or more employees** (phasing in through January 1, 2027 with smaller employers).
-- The **Connecticut Family and Medical Leave Act (CT FMLA)**, which runs in parallel to the federal FMLA but is broader in scope, lower in headcount threshold, and the unpaid leave entitlement paired with the CTPL paid benefit.
-- The **lack of any reciprocal income tax agreement between Connecticut and New York**, with the practical consequence that CT residents commuting to NY pay both states and claim a credit on CT Form CT-1040.
-- The **convenience-of-employer rule** as Connecticut has codified it (Conn. Gen. Stat. §12-711(b)(2)(C)), which mirrors the well-known New York rule and which can pull remote out-of-state workers of CT employers back into the CT tax net.
-- Worker classification under the **ABC test** as applied by CTDOL for unemployment purposes (Conn. Gen. Stat. §31-222(a)(1)(B)(ii)).
-- The **final pay** rules: discharged employees by next business day, voluntary quits by next regular payday (Conn. Gen. Stat. §31-71c).
+Ordinary Connecticut wage withholding and state unemployment insurance, plus the existing skill's CTPL, sick leave, CTFMLA, worker-classification, cross-border and final-pay topics. Covers 2026; historic 2025 cases are identified explicitly. `us-form-941-940-payroll` owns federal withholding, FICA/FUTA, federal wage bases and federal returns; federal figures are not repeated here. `ct-income-tax` owns annual personal tax, `ct-sales-tax` sales/use, and `ct-corporate-tax` corporation tax. Connecticut unemployment uses CTDOL ReEmployCT; withholding uses DRS myconneCT; CTPL uses the Paid Leave Authority. These are separate filings/payments.
 
-### Out of scope
+Excluded computations: Connecticut tribal employment, regular work in three or more states, nonresident athlete/entertainer withholding, federal payroll, other states' tax and UI, workers' compensation, pension withholding, garnishments, union-specific rules and litigation. Do not interpret a state classification decision as automatically settling every federal or labor-law test.
 
-- Connecticut **personal income tax return preparation** (Form CT-1040) for the employee — that is the role of `ct-income-tax`.
-- **Federal payroll tax** (Form 941, FUTA, federal income tax withholding) — defer to the federal payroll skill set.
-- **Tribal employers** within Connecticut.
-- **Connecticut nonresident composite returns** for partnerships and S corporations.
-- **Wage garnishments, child support orders, and judgment liens** — these have specific Connecticut procedural rules but are outside this skill's scope.
-- **Connecticut SUTA dumping detection** — handled administratively by CTDOL.
-- **Pension and 401(k) plan administration** — deferred to the retirement skills.
+## Ask the client first
 
-### Coordination
+1. Entity, DRS/CTDOL/CTPL registrations, CT operations, employee count/location and acquisitions/successor history.
+2. Each employee's residence, workdays/remote arrangement, current CT-W4/CT-W4NA and other-state withholding evidence.
+3. Pay frequency, taxable wages, bonuses/commissions/benefits, year-to-date wages and prior payroll corrections.
+4. DRS remitter notice/lookback, CTDOL rate notice, UI localization and CTPL/private-plan eligibility.
+5. Hires/rehire dates, leave/PTO policies, employee leave records, contractor evidence and terminations.
+6. Prior returns, deposits, W-2/1099 reconciliations, notices, extensions/waivers and payment confirmations.
 
-- For an employee who is a Connecticut resident filing Form CT-1040, hand off to `ct-income-tax` for the personal return.
-- For Connecticut sales and use tax on goods or services sold by the employer, hand off to `ct-sales-tax`.
-- For the federal payroll forms (W-2, W-3, 941, 940), defer to the federal skill set.
-- When a CT employer pays a worker who turns out to be properly classified as an independent contractor under the ABC test, the worker becomes a self-employed taxpayer — hand off to `us-sole-prop-bookkeeping` and the federal Schedule C/SE skills for that worker's return.
+## The method, step by step
 
-## 2. Connecticut Personal Income Tax (CT PIT) Withholding
+### 1. Withholding obligation and the 2026 calculation
 
-### 2.1 Statutory basis
+An employer maintaining an office or transacting business in Connecticut and paying covered resident/nonresident wages follows section 12-705 and Circular CT. Connecticut requires its own CT-W4, separately from federal W-4. Use the actual DRS 2026 tables or the sixteen-step annualized calculation; DRS states **there is no percentage method** for Connecticut wage withholding. A top-bracket percentage is not an ordinary payroll calculation. [Circular CT, withholding requirements and TPG-211 appendix](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-- **CT PIT statutory basis and withholding requirement** — Connecticut's personal income tax is imposed under Conn. Gen. Stat. §12-700. Employer withholding is required under §12-705 and implemented by Department of Revenue Services (DRS) regulation Conn. Agencies Regs. §12-705(a)-1 et seq. Every employer that maintains an office or transacts business in Connecticut and pays wages to any resident or nonresident employee for services performed within Connecticut must withhold Connecticut income tax. The starting point is the federal Form W-4 only for federal purposes; Connecticut uses its own Form CT-W4.  _(Conn. Gen. Stat. §12-700, §12-705; Conn. Agencies Regs. §12-705(a)-1 et seq.)_
+Annualize the period's wages by the number of annual pay periods. Table A uses annualized salary and the withholding code to find the personal exemption. Subtract it to obtain annualized taxable income; if nonpositive, initial withholding is zero and proceed to certificate adjustments. Otherwise use Table B initial tax, add Table C's **2% Tax Rate Phase-Out Add-Back** and Table D recapture (both based on annualized salary and code), and multiply the sum by **1 minus Table E personal-credit decimal**. Divide by annual pay periods; apply CT-W4 line 2 additional or line 3 reduced withholding, never below zero. Code D has zero exemption and zero personal credit. Codes A/D/F use the single-style Table B; B uses head-of-household; C uses joint. Do not use the annual-return table's filing status instead of the payroll code. [TPG-211, pages 1-6](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-### 2.2 2025 Connecticut PIT brackets — the structure
+The rate structure retained from the old skill is 2%, 4.5%, 5.5%, 6%, 6.5%, 6.9% and 6.99%. The single-style taxable-income boundaries are $10,000/$50,000/$100,000/$200,000/$250,000/$500,000; joint boundaries double these and head-of-household boundaries multiply them by 1.6. **These brackets alone are insufficient**: phased exemptions, phase-out addback, recapture and personal credits are compulsory. The old references to a “3% phase-out” and a universal $90 recapture step were incomplete: the current source names the 2% phase-out and supplies code-specific stepped Tables C/D. `ct-income-tax` retains the full annual-return bands; use the payroll-specific tables for wages. [2026 Tables A-E](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-Connecticut has a **graduated** income tax with brackets that depend on filing status. For tax year 2025, the rate schedule applies as follows (these are statutory bracket boundaries for the calculation of the tax on Connecticut taxable income, and they are reflected in the withholding tables that DRS publishes in Informational Publication 2025(1)).
+### 2. CT-W4 codes, adjustments and nonresidents
 
-**Single / Married Filing Separately**  _(DRS Informational Publication 2025(1))_
+| Code | Current CT-W4 use, subject to the certificate's precise conditions | Official source |
+|---|---|---|
+| A | MFS with expected gross income above $12,000, or both-working MFJ with combined gross income above $24,000 through $100,500 | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| B | Head of household above $19,000 gross income | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| C | MFJ spouse not employed and gross income above $24,000; qualifying surviving spouse above $24,000 | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| D | Both-working MFJ above $100,500; also the highest-withholding election for substantial other/nonwage income | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| E | Exempt/no withholding under the stated income conditions or qualifying MSRRA exemption | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| F | Single above $15,000 gross income | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
 
-| Connecticut Taxable Income | Marginal Rate |
-| --- | --- |
-| $0 – $10,000 | 2.0% (phased to 3.0% — see note) |
-| $10,000 – $50,000 | 4.5% |
-| $50,000 – $100,000 | 5.5% |
-| $100,000 – $200,000 | 6.0% |
-| $200,000 – $250,000 | 6.5% |
-| $250,000 – $500,000 | 6.9% |
-| Over $500,000 | 6.99% |
+For income-based Code E, certificate ceilings are MFS $12,000; single $15,000; head of household $19,000; joint/qualifying surviving spouse $24,000. Do not select E solely because the employee wants no withholding. Missing CT-W4 requires **6.99% with no exemption**, rather than the old asserted Code F default. Annual exempt certificates expire; if not renewed by February 15, apply the source's following-day withholding rule. Obtain a new certificate within ten days of relevant changes. Line 2 adds a per-period dollar amount and line 3 reduces it subject to the instructions; **CT-W4P is a pension certificate, not a wage reduction approval form**. DRS-invalidated certificates require the DRS-directed treatment. Retain the current certificate and follow any written DRS instruction. [CT-W4 instructions and employer certificate rules](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-**Heads of Household**  _(DRS Informational Publication 2025(1))_
+A nonresident working partly inside and outside Connecticut uses **Form CT-W4NA**, a separate apportionment certificate, or adequate current employer records. Compute withholding on the full wage and multiply by the Connecticut service percentage. Absent the certificate or reliable records, withhold on the full wage. Count working days, not 365 calendar days; the form explains partial days and ancillary activities. Adjust when facts change; year-end actual source allocation can differ from estimates. The old CT-W4 “line 5” apportionment instruction actually belongs to CT-W4NA. [CT-W4NA and accompanying instructions](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-| Connecticut Taxable Income | Marginal Rate |
-| --- | --- |
-| $0 – $16,000 | 2.0% (phased to 3.0%) |
-| $16,000 – $80,000 | 4.5% |
-| $80,000 – $160,000 | 5.5% |
-| $160,000 – $320,000 | 6.0% |
-| $320,000 – $400,000 | 6.5% |
-| $400,000 – $800,000 | 6.9% |
-| Over $800,000 | 6.99% |
+Nonresident compensation for services in Connecticut on **not more than fifteen days** generally falls under the source/withholding exception described in Circular CT. Once the employee exceeds fifteen days, withhold on **all** Connecticut-service compensation including the first fifteen days, subject to the rule's stated exclusions and other source-income facts. This is not an informal materiality rule or a fourteen-day rule. [Nonresident fifteen-day rule](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-**Married Filing Jointly / Qualifying Surviving Spouse**  _(DRS Informational Publication 2025(1))_
+### 3. Supplemental wages
 
-| Connecticut Taxable Income | Marginal Rate |
-| --- | --- |
-| $0 – $20,000 | 2.0% (phased to 3.0%) |
-| $20,000 – $100,000 | 4.5% |
-| $100,000 – $200,000 | 5.5% |
-| $200,000 – $400,000 | 6.0% |
-| $400,000 – $500,000 | 6.5% |
-| $500,000 – $1,000,000 | 6.9% |
-| Over $1,000,000 | 6.99% |
+For a bonus/commission/overtime/sales award paid with regular wages, compute withholding on the aggregate for the payroll period. For a separately identified payment, the Circular CT method combines it with the regular wages for the relevant/current or preceding payroll period, computes total withholding, and subtracts withholding on regular wages as directed. Where no tax was withheld on regular wages, follow the combined calculation. **There is no general 6.99% flat supplemental-wage election** in these instructions; that percentage appears in the missing-certificate rule. [Supplemental Compensation](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-- **2025 rate cut note** — Public Act 23-204 reduced the bottom two rates: the 3.0% rate dropped to **2.0%** and the 5.0% rate dropped to **4.5%** effective January 1, 2024. These reductions remain in effect for tax year 2025. The description in the user prompt of "brackets 3.0%–6.99%" reflects the pre-2024 schedule. The current 2025 schedule begins at **2.0%**, not 3.0%. The skill follows the actual 2025 schedule for accuracy and flags the discrepancy in case a reviewer is working from older documentation.  _(Public Act 23-204)_
-- **3% phase-out** — The **3% phase-out** under Conn. Gen. Stat. §12-700(a)(8) gradually claws back the benefit of the 2.0% bracket once Connecticut AGI crosses the recapture thresholds (CT AGI over $56,500 for single, $100,500 for MFJ, etc.), turning the bottom-bracket rate into an effective 4.5% on the first slice for higher earners. The withholding tables embed this.  _(Conn. Gen. Stat. §12-700(a)(8))_
-- **tax recapture** — The **tax recapture** under Conn. Gen. Stat. §12-700(c)(1) further claws back the lower brackets for high earners on a sliding scale, adding $90 increments for each $5,000 of CT AGI above the threshold ($200,000 single / $400,000 MFJ).  _(Conn. Gen. Stat. §12-700(c)(1))_
+### 4. Deposits, CT-941, CT-W3 and corrections
 
-### 2.3 Supplemental wage rate
+| Remitter category | Lookback withholding amount | Ordinary deadline | Official source |
+|---|---|---|---|
+| Quarterly | At most $2,000 | Last day of month after quarter | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| Monthly | More than $2,000 through $10,000 | Fifteenth of following month | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
+| Weekly | More than $10,000 | Wednesday following the Saturday-Friday weekly period | [wh](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) |
 
-- **CT supplemental wage withholding rate** — 6.99% percent (Applies to supplemental wages (bonuses, commissions, severance, retroactive pay) when paid separately from regular wages or not aggregated with regular wages on the employee's most recent regular paycheck; aligns with CT's top marginal bracket.)  _(CT statutory withholding rules)_
-- **Aggregated supplemental wages** — If supplemental wages are aggregated with regular wages and there is no identifiable separate payment, the employer uses the regular withholding tables based on the CT-W4 code.  _(CT statutory withholding rules)_
+The lookback is the twelve months ending June 30 of the prior calendar year; 2026 uses the period ending June 30, 2025. Follow the DRS category notice; new employers generally start quarterly. A weekly remitter paying Saturday-Tuesday reaches the **second Wednesday after payday**; Wednesday-Friday payroll reaches the next Wednesday. The old blanket “Wednesday following payday” could accelerate or misstate the actual period. Holidays/weekends follow Circular CT; do not use return extensions for deposits. Electronic filing/payment is required unless a granted DRS-EWVR waiver applies. [Remitter classifications, lookback and payment calendar](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-### 2.4 Remitter categories — how often to deposit
+File CT-941 quarterly, including zero withholding unless the account has an approved seasonal, annual, household or agricultural exception. Quarter-end dates ordinarily produce April 30, July 31, October 31 and January 31 returns, subject to nonbusiness-day adjustment. If all tax was timely deposited and no balance remains, the source allows **ten additional days to file the return**, not to pay. Seasonal employers must meet the actual designation/instruction conditions; simply stopping payroll does not cancel the filing duty. [CT-941 filing rules](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-**Remitter categories**  _(Conn. Agencies Regs. §12-705(b)-2)_
+CT-W3 annually reconciles wages/Connecticut withholding with W-2s and CT-941 totals. Submit electronically by January 31 following the year, subject to calendar adjustment, and retain employee delivery/filing evidence. Reconcile each employee's wages and withholding to payroll records and deposits, investigate differences, and correct the applicable period. CT-1096 and reportable 1099s are a **separate** reporting stream, not automatically part of CT-W3. The old CT-941X amendment claim and detailed 1099 filing thresholds are not verified here; use myconneCT's current amended-return procedure and the current information-return specifications before submitting a correction. Final closure requires the final CT-941/CT-W3 and W-2s and closure of the DRS account; separately notify CTDOL if applicable. [Annual reconciliation, records and cancellation instructions](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
 
-| Category | Annual Withholding Threshold | Deposit Frequency |
-| --- | --- | --- |
-| Weekly remitter | More than $10,000 in look-back year | By Wednesday following payday (electronic) |
-| Monthly remitter | $2,000 to $10,000 | By 15th of following month |
-| Quarterly remitter | Less than $2,000 | With Form CT-941 by last day of month following quarter |
+### 5. State unemployment insurance, registration and localization
 
-- **Look-back year and electronic payment** — The look-back year is the 12-month period ending June 30 of the prior calendar year. DRS sends a notice each November confirming the remitter category for the following year. All payments must be made **electronically** through the myconneCT portal — DRS no longer accepts paper coupons.  _(Conn. Agencies Regs. §12-705(b)-2)_
+Register/report/pay through **ReEmployCT**, separately from DRS. Determine whether services are covered, including statutory exclusions and the ordered multistate tests: localized service first, then base of operations, direction/control and residence under the handbook conditions. Employee residence alone does not allocate UI, and short incidental visits do not necessarily move a localized job. Report total gross wages each quarter while taxing only wages within the annual base for the same employer, subject to successor/prior-state-wage rules. Do not deduct employer UI from the employee. [CTDOL Employer Handbook, coverage/localization and taxable wages](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf).
 
-## 3. Form CT-W4 — Connecticut Employee's Withholding Certificate
+| 2026 component | Rate/amount | Official source |
+|---|---|---|
+| Annual taxable wage base | $27,000 per employee; prior 2025 base was $26,100 | [ui](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) |
+| New-employer total rate | 1.9%; do not add the solvency percentage again | [ui](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) |
+| Fund solvency rate | 1.0% | [ui](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) |
+| Experience-rated total contribution range | 1.1%-9.9%; use the employer's actual notice | [ui](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) |
+| Preliminary charged rate | Statutory minimum 0.1%, maximum 10%; 2026 divisor 1.125 yields effective maximum 8.9% before solvency tax | [ui](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) |
 
-### 3.1 What it is and when it's required
+The actual 2026 notice takes the benefit ratio, converts it to a preliminary charged rate, divides by **1.125**, rounds **up** to the next tenth of one percent, then adds 1% solvency tax. The notice also supplies a qualifying industry-sector benefit-ratio reduction; use the issued rate rather than rebuilding a client's rate from incomplete data. The 2026 handbook still illustrates the 2024 $25,000 base; the dated **2026 tax notice controls** the current base and rate. The old 2.5%, 0.5%-6.2%, separate construction estimate and 1.4% solvency assertions are not 2026 instructions. [Actual 2026 notice and example](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US).
 
-- **CT-W4 requirement** — Form CT-W4 is **distinct from federal Form W-4** and is required from every employee at the start of employment and whenever the employee's withholding situation changes. Connecticut does not piggyback on the federal W-4. An employee who only completes a federal W-4 will default to withholding code **F** ("Single") regardless of their actual filing status.
+The retained UC-2 contribution-return and UC-5A wage-report topics correspond to the employer tax/employee wage reporting jobs now performed in ReEmployCT. Quarter reports/contributions are ordinarily due the last day of the next month, with calendar adjustments. Report all wages even after the base is exhausted and respond promptly to separation/earnings verification requests. Acquisition/successor rules can transfer liability, experience and wage-base history; the handbook includes exceptions where no assets/common control transfer. Do not promise a new-business rate merely because a new legal entity is formed. The old claimed **March 31 voluntary-contribution rate-buydown deadline is Not yet confirmed**; no payment recommendation relies on it. [Quarterly reports, tax liability and successor employers](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf).
 
-### 3.2 Withholding codes
+### 6. Connecticut Paid Leave (CTPL)
 
-The CT-W4 uses a single-letter code that the employer enters into payroll to select the correct table. The codes for 2025 are:
+CTPL contributions began January 1, 2021 and benefits January 1, 2022. The Authority's current page expressly maintains **0.5% for 2026**, employee-funded on subject wages up to the federal Social Security contribution/benefit base. `us-form-941-940-payroll` owns that federal year's cap; the old $168,600 asserted 2025 cap is not reused. Employers deduct/remit and register; there is no employer match. The same current page includes total-wage/in-kind/FICA-exclusion instructions. [Official Authority contribution instructions](https://www.ctpaidleave.org/remit-contributions); [Sections 31-49e and 31-49g](https://www.cga.ct.gov/current/pub/chap_557.htm).
 
-**Withholding codes table**
+Coverage generally includes private employers with one or more Connecticut employees, with statutory public-employer/school exceptions and negotiated covered-public-employee provisions. Connecticut-resident sole proprietors/self-employed people may opt in under the statutory enrollment rules. Do not call coverage universal or determine it solely by residence. Approved private plans have exemption conditions; obtain the approval rather than merely recording that the employer offers PTO. [Sections 31-49e, 31-49g and 31-49m](https://www.cga.ct.gov/current/pub/chap_557.htm); [Authority employer instructions](https://www.ctpaidleave.org/for-businesses-and-employers/i-am-an-employer).
 
-| Code | Description | Typical Use |
-| --- | --- | --- |
-| A | Married Filing Jointly, only one spouse works, combined wages under threshold | Single-earner MFJ households |
-| B | Married Filing Jointly, both spouses work, combined wages over threshold | Most dual-earner MFJ households |
-| C | Married Filing Jointly, both spouses work, combined wages and the higher-earner uses Code C while lower uses Code D | Asymmetric dual-earner |
-| D | Married Filing Jointly, both work, lower earner | Spousal companion to Code C |
-| E | Head of Household | HoH filers |
-| F | Single or Married Filing Separately | Default for unmarried filers and MFS |
+Remit through the Authority's portal or approved batch process, separately from CT-941/UI. The current Authority says contributions are **due at quarter end** (March 31, June 30, September 30, December 31), with no penalties/interest if submitted by the last day of the following month. This distinguishes the statutory/administrative due date from the grace period; the old skill called the grace-period dates the due dates. The page describes 1% monthly noncompounding interest and a single late penalty up to 10% or $50, whichever greater. Keep the quarter confirmation and contribution reconciliation. [Contribution Due Dates and Calculating Interest and Penalties](https://www.ctpaidleave.org/remit-contributions).
 
-### 3.3 Additional withholding and reduced withholding
+CTPL provides wage replacement, not automatic job protection. Statutory benefits are up to twelve weeks in twelve months, plus two for pregnancy-related incapacitation. The formula is 95% of base weekly earnings up to forty times the current minimum fair wage, plus 60% above that breakpoint, capped at sixty times that wage and subject to statutory solvency provisions. The old approximately $941 weekly cap is stale; no unverified current dollar cap is supplied. Eligibility includes the statutory $2,325 highest-quarter subject earnings and current/recent employment or opted-in status. The Authority, rather than an employer's ordinary wage payroll, administers benefits. [Sections 31-49e and 31-49g](https://www.cga.ct.gov/current/pub/chap_557.htm).
 
-- **Line 2 and Line 3 adjustments** — **Line 2 — Additional withholding.** The employee may request an extra dollar amount be withheld per pay period. **Line 3 — Reduced withholding.** Less commonly, an employee may request reduced withholding by certifying expected credits, deductions, or losses that will reduce their CT-1040 liability. This requires DRS approval via Form CT-W4P or a similar attestation if the reduction is significant.
+### 7. Paid sick leave and CTFMLA
 
-### 3.4 Nonresident employees
+The historic 2012 sick-leave topic is retained as history: the old fifty-worker/service-worker regime is superseded for current coverage. Current phased employer thresholds are **25+ Connecticut employees from 2025, 11+ from 2026 and 1+ from 2027**, based on the January 1 payroll week under the current FAQ. Occupation is no longer the old service-worker gate. Seasonal employees working 120 days or fewer and specified construction multiemployer arrangements have exceptions; the “all employers in 2027” shorthand remains subject to statutory definitions. [CTDOL Paid Sick Leave FAQs, updated September 23, 2026](https://portal.ct.gov/dol/divisions/legal/connecticut-leave-programs/paid-sick-leave-faqs); [Sections 31-57r through 31-57w](https://www.cga.ct.gov/current/pub/chap_557.htm).
 
-- **Nonresident CT-W4 handling** — A nonresident employee working in Connecticut completes the CT-W4 in the same way but checks the nonresident box on the form. CT-W4 line 5 (proportion of wages allocable to CT services) is then completed when the nonresident performs services partly in CT and partly outside. The employer withholds only on the CT-source portion. This is the flip side of the convenience-of-employer rule discussed in Section 9.
+Accrue one hour per thirty hours actually worked up to forty hours/year; use begins after 120 calendar days of employment. Carry up to forty unused hours, or provide the lawful frontloaded alternative available at the year's start; the annual use entitlement is forty hours unless the employer offers more. Exempt employees are normally treated as working forty hours weekly or their shorter normal schedule, without extra accrual for overtime beyond forty. Keep records at least three years. Reasons include employee/family illness, preventive care and wellness, public-health closure/exposure, and family violence/sexual assault, under the broad family definition. Provide the required individual notice and poster; do not impose prohibited documentation/replacement-worker conditions. [Accrual, carryover, use, records and notice FAQs](https://portal.ct.gov/dol/divisions/legal/connecticut-leave-programs/paid-sick-leave-faqs).
 
-### 3.5 Recordkeeping
+CTFMLA generally covers employers with one or more employees, including the state, but excludes municipalities, school boards and nonpublic elementary/secondary schools except specified school paraprofessionals. An employee generally needs three consecutive months' employment (thirteen weeks); the old federal 1,250-hour/50-worker tests do not set Connecticut eligibility. It provides twelve workweeks in a twelve-month period plus two for pregnancy-related incapacitation and up to twenty-six in a single twelve-month military-caregiver period. Reasons include qualifying own/family serious health conditions, birth/adoption/foster placement, organ/bone-marrow donation and military exigency/caregiving. Apply certification, notice and restoration requirements. [CTDOL CTFMLA FAQs](https://portal.ct.gov/dolui/fmla-faqs).
+
+CTFMLA is generally unpaid; accrued paid leave can be substituted at employee request or employer requirement, while the employee may preserve **up to two weeks** of accrued paid leave. The old categorical claim that employers cannot require PTO before CTPL is not a safe statement of this coordination rule. Determine CTFMLA job protection separately from CTPL benefit eligibility and federal FMLA. Do not infer that approval for wage replacement itself guarantees restoration. [Questions 8-10 and leave-coordination provisions](https://portal.ct.gov/dolui/fmla-faqs).
+
+### 8. Cross-border commuters and convenience rule
+
+Connecticut has no simple New York reciprocity exemption. Nonresidents physically working in Connecticut ordinarily have Connecticut-source wages, subject to the fifteen-day rule. A Connecticut resident working in another taxing state can have Connecticut withholding **reduced by qualifying other-state withholding** where the employer transacts business/maintains an office in both states and the source conditions apply: calculate Connecticut withholding, allocate to the outside-state service and withhold the excess over that other state's withholding, plus Connecticut-service withholding. The result can be zero. Do not require full double withholding merely because the employee is a Connecticut resident. Final other-state tax credits are limited separately on the annual return. [Residents Employed Outside Connecticut](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf); `ct-income-tax`.
+
+The convenience-of-employer test is reciprocal: residents of a state applying such a test may face similar Connecticut sourcing for work for a Connecticut employer. It is not a rule taxing every out-of-state remote worker merely because headquarters is in Connecticut. Keep the residence, home-state-rule, actual workday, employer-necessity and remote-agreement facts. Physical workday allocation and CT-W4NA remain necessary; an employer's “remote” label does not by itself settle source income. Foreign-state tax/return conclusions need that state's owner skill. [Convenience of the Employer Test and CT-W4NA](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf).
+
+### 9. Worker classification, ABC evidence and audits
 
-- **CT-W4 recordkeeping period** — The employer retains the CT-W4 for the duration of employment plus **four years** after the last withholding under that certificate. DRS may inspect on audit. If DRS issues a written determination that a particular CT-W4 is invalid (typically because the employee claimed too many adjustments), the employer must withhold at the default rate (Code F, no adjustments) until a replacement certificate is filed.
+Connecticut UI presumes covered service employment unless the employer establishes all three statutory ABC elements: **A**, freedom from direction/control under contract and in fact; **B**, work outside the enterprise's usual course **or** outside all its places of business; **C**, an independently established trade/occupation/profession/business of the same nature. The disjunctive B alternatives both matter. An LLC, invoice, federal 1099 or home office does not decide the test. [Employer Handbook, Employment section](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf); [Section 31-222(a)(1)(B)(ii)](https://www.cga.ct.gov/current/pub/chap_567.htm).
 
-## 4. Form CT-941 — Quarterly Reconciliation of Withholding
+For A, collect actual schedule/method/tool/training/supervision evidence. For B, describe the usual business and every relevant place of business; do not automatically reject the outside-place alternative because work is within the usual course, or automatically accept a contractor's home as outside all places. For C, examine marketing, other clients, business continuity, licenses, capital/tools and profit/loss risk. A single client is a relevant fact, **not an automatic statutory failure**. The prior *Standard Oil of Connecticut, Inc. v. Administrator* (2016) citation is retained as an unresolved case-law reference: the full opinion was not read, so its precise holding is **Not yet confirmed** and no case-specific safe harbor is claimed.
 
-### 4.1 What it is
-
-- **CT-941 purpose** — Form CT-941 is the quarterly reconciliation that every Connecticut withholding employer files, regardless of whether they remit weekly, monthly, or quarterly. It reconciles the amount **withheld** during the quarter, the amount **remitted** during the quarter, and the resulting underpayment or overpayment.
-
-### 4.2 Due dates
-
-**CT-941 due dates**
-
-| Quarter | Period Covered | CT-941 Due Date |
-| --- | --- | --- |
-| Q1 | January 1 – March 31 | April 30 |
-| Q2 | April 1 – June 30 | July 31 |
-| Q3 | July 1 – September 30 | October 31 |
-| Q4 | October 1 – December 31 | January 31 (following year) |
-
-- **Q4 deadline alignment** — The Q4 deadline aligns with the Form CT-W3 annual reconciliation and the W-2 furnishing deadline.
-
-### 4.3 Filing channel
-
-- **CT-941 filing channel** — CT-941 must be filed electronically through **myconneCT**. Paper filing is allowed only with a hardship waiver granted by DRS in advance — this is rare.
-
-### 4.4 Seasonal employers
-
-- **Zero CT-941 requirement** — A seasonal employer who has no wages in a quarter must still file a CT-941 marked "no wages." Failing to file a zero CT-941 generates a non-filer notice and a penalty under Conn. Gen. Stat. §12-735.  _(Conn. Gen. Stat. §12-735)_
-
-### 4.5 Amended CT-941
-
-- **CT-941X amendment** — To correct a prior CT-941, the employer files Form **CT-941X**. Refund claims must be made within three years from the due date of the return.
-
-## 5. Form CT-W3 — Annual Reconciliation
-
-### 5.1 What it is
-
-- **CT-W3 purpose** — Form CT-W3 (and the related Form CT-W3 HHE for household employers) is the annual reconciliation that ties together the four quarterly CT-941 filings to the total of W-2 Box 17 (Connecticut state tax withheld) reported to the employee. It is the Connecticut counterpart to federal Form W-3.
-
-### 5.2 Due date and filing channel
-
-- **CT-W3 due date and channel** — **Due:** January 31 of the year following the wage year (so 2025 wages reported January 31, 2026). **Channel:** myconneCT, electronic only. **Attachments:** All W-2 Copy 1 forms for Connecticut employees must accompany the CT-W3 electronically.
-
-### 5.3 Reconciliation
-
-- **DRS reconciliation checks** — DRS automatically reconciles: Sum of CT income tax withheld per the four CT-941 forms, Sum of CT income tax withheld per the W-2 Copy 1 attachments, Total remitted through myconneCT during the year. If the three figures do not match, the employer receives an automated notice. Common causes of mismatch: a year-end bonus paid in December but the withholding deposited in January; a Code F default used because a CT-W4 was lost; a refund of overwithheld CT tax to a terminating employee not properly reflected.
-
-### 5.4 1099 reporting
-
-- **CT-1096 requirement** — Connecticut also requires **Form CT-1096** as the annual reconciliation of 1099-NEC, 1099-MISC, and 1099-R reporting where CT tax was withheld or where the payee is a CT resident. This is mainly relevant when the employer pays an independent contractor classified outside the ABC test (see Section 11) and is conducting backup withholding.
-
-## 6. Connecticut Unemployment Insurance (UI)
-
-### 6.1 Statutory basis
-
-- **CT UI statutory basis** — Connecticut UI is governed by the Connecticut Unemployment Compensation Act, Conn. Gen. Stat. §31-222 through §31-274, and administered by the Connecticut Department of Labor (CTDOL).  _(Conn. Gen. Stat. §31-222 through §31-274)_
-
-### 6.2 2025 wage base
-
-- **CT UI taxable wage base 2025** — $25,000 USD per employee per year (One of the higher state wage bases in New England, the result of the 2024 statutory increase that took CT from a long-stagnant $15,000 to a phased-in $25,000 by 2025 under Public Act 21-200 (the "Trust Fund Solvency" legislation). The wage base is indexed to track average annual wages and will continue rising.)  _(Public Act 21-200)_
-
-### 6.3 Rate range and new employer rate
-
-**UI rate components 2025**
-
-| Rate Component | 2025 Value |
-| --- | --- |
-| Minimum experience-rated rate | **0.50%** |
-| Maximum experience-rated rate | **6.20%** |
-| New employer rate (non-construction) | **2.5%** (also called the standard rate) |
-| New employer rate (construction) | Higher, typically the industry average around 4.5% |
-| Fund Solvency Tax | Added on top — 1.4% for 2025 |
-| Charged Tax (experience portion) | Variable based on benefit ratio |
-
-- **Effective rate composition and new employer period** — The effective rate an employer sees on the CTDOL "Form UC-1 Tax Rate Notice" combines the **charged tax** (experience-rated portion) and the **fund solvency tax** (flat, currently 1.4%). New employers pay 2.5% until they have enough employment history (typically 3 years) to be experience-rated.
-
-### 6.4 Quarterly reporting — Form UC-2 and UC-5A
-
-**UC-2 and UC-5A forms**
-
-| Form | Purpose | Due |
-| --- | --- | --- |
-| UC-2 | Employer Contribution Return (computes tax) | Last day of month following quarter end |
-| UC-5A | Employee Quarterly Earnings Report (lists each employee and their gross wages) | Same |
-
-- **Filing channel** — Both are filed jointly through the CTDOL **ReEmployCT** portal. Paper filing is no longer accepted.
-
-### 6.5 Successor employer rules
-
-- **Successor employer experience rate inheritance** — When a business acquires substantially all the assets of another CT employer, the successor inherits the predecessor's experience rate under Conn. Gen. Stat. §31-225(g). This prevents "SUTA dumping" — the practice of spinning off a new entity to escape a high experience rate.  _(Conn. Gen. Stat. §31-225(g))_
-
-### 6.6 Voluntary contributions
-
-- **Voluntary contribution deadline** — An employer may make a voluntary contribution to its CTDOL account by March 31 of any year to reduce its experience rate for that year. This is a cash-against-tax tradeoff and only makes sense in narrow circumstances where the contribution buys a rate reduction worth more than the contribution itself.
-
-## 7. Connecticut Paid Leave (CTPL)
-
-### 7.1 Statutory basis and timeline
-
-- **CTPL creation and timeline** — CTPL was created by Public Act 19-25, the Paid Family and Medical Leave Insurance Act, codified at Conn. Gen. Stat. §31-49e through §31-49t. The contribution requirement became effective **January 1, 2021**, and benefits became payable **January 1, 2022**.  _(Public Act 19-25; Conn. Gen. Stat. §31-49e through §31-49t)_
-
-### 7.2 Contribution — 0.5%, employee-paid only
-
-- **CTPL contribution rate** — 0.5% percent of employee wages (Capped each year at the Social Security wage base (for 2025, capped at $168,600 — wages above that are not subject to CTPL contribution). The contribution is entirely employee-paid; the employer does not contribute. The employer's role is solely to withhold the 0.5% from each paycheck and remit to the CT Paid Leave Authority.)
-
-### 7.3 Coverage
-
-- **CTPL coverage scope** — CTPL covers virtually every employer with **one or more employees** in Connecticut. Unlike CT FMLA's job-protection rules, CTPL's contribution and benefit reach is essentially universal. Sole proprietors and the self-employed may opt in voluntarily.
-
-### 7.4 Remittance
-
-- **CTPL remittance schedule** — Contributions are remitted **quarterly** to the CT Paid Leave Authority through the ctpaidleave.org portal. Due dates align with the CT-941 quarterly deadlines (April 30, July 31, October 31, January 31).
-
-### 7.5 Benefits (informational)
-
-- **CTPL benefit structure** — Eligible employees may receive up to **12 weeks** of paid benefits in a 12-month period (plus 2 additional weeks for pregnancy-related incapacitation), paid at a percentage of the employee's average weekly wage capped at 60 times the CT minimum wage. As of 2025, the benefit cap is approximately **$941/week** (60 × $15.69 minimum wage). The Authority pays the benefit directly to the employee — not through the employer's payroll.
-
-### 7.6 Interaction with CT FMLA
-
-- **CTPL and CT FMLA relationship** — CTPL is the **paid benefit**; CT FMLA is the **unpaid job-protected leave**. An employee may take CT FMLA leave and simultaneously collect CTPL benefits. Employers may not require employees to use accrued PTO before CTPL benefits begin (one of the key CTPL distinctions from federal FMLA).
-
-## 8. Connecticut Paid Sick Leave — and the Post-2024 Expansion
-
-### 8.1 Original (2012) law — service workers only
-
-- **Original CT paid sick leave law** — Connecticut became the first U.S. state to require paid sick leave when Public Act 11-52 took effect January 1, 2012, codified at Conn. Gen. Stat. §31-57r through §31-57w. The original law applied only to employers with **50 or more employees** and only required paid sick leave for **"service workers"** — a defined list of approximately 70 occupations heavily weighted toward food service, healthcare, and personal care.  _(Public Act 11-52; Conn. Gen. Stat. §31-57r through §31-57w)_
-
-### 8.2 The Public Act 24-8 expansion
-
-Public Act 24-8 (effective January 1, 2025 for the largest employers, phasing in through January 1, 2027) dramatically expanded the law in two directions:
-
-- **Removed the "service worker" limitation.** All employees of covered employers are now entitled to paid sick leave, regardless of occupation.
-- **Phased-in headcount reduction.**
-
-**Phased headcount thresholds**  _(Public Act 24-8)_
-
-| Effective Date | Covered Employer Size |
-| --- | --- |
-| January 1, 2025 | 25 or more employees |
-| January 1, 2026 | 11 or more employees |
-| January 1, 2027 | 1 or more employees |
-
-- **2025 threshold note** — For 2025, the threshold is **25 employees** — which is below the original "50 or more" service-worker threshold the user prompt mentioned. By 2027, paid sick leave is universal in Connecticut.  _(Public Act 24-8)_
-
-### 8.3 Accrual
-
-- **Paid sick leave accrual rate** — Employees accrue **1 hour of paid sick leave for every 30 hours worked**, up to a maximum of **40 hours per year**. Carryover of up to 40 hours into the following year is permitted, but the cap of 40 used per year still applies.
-
-### 8.4 Permitted uses
-
-- **Permitted uses of paid sick leave** — - Employee's own illness, injury, or medical appointment. - Care for a family member (defined broadly under PA 24-8 — includes spouse, sibling, parent, grandparent, grandchild, child, and "individuals related by blood or whose close association is the equivalent of a family relationship"). - Absence related to domestic violence or sexual assault. - Closure of the employer's business or the child's school by a public official for a public health emergency.  _(Public Act 24-8)_
-
-### 8.5 Notification
-
-- **Notification requirement** — The employer must provide written notice to each employee at hire of their paid sick leave rights and must display the CTDOL paid sick leave poster.
-
-## 9. The Convenience-of-Employer Rule and Cross-Border Issues
-
-### 9.1 No reciprocal agreement with NY — and the consequences
-
-- **AUDIT FLASH POINT — no reciprocal agreement** — > **AUDIT FLASH POINT.** Connecticut has **NO reciprocal income tax agreement** with **any** neighboring state, including New York, Massachusetts, Rhode Island, or New Jersey. A CT resident commuting to NY pays both states' income tax on the same wages, and recovers the duplication only through the **resident credit** on Form CT-1040 Schedule 2 for taxes paid to NY. The credit is limited to the lesser of (a) the tax actually paid to NY on the NY-source wages or (b) the CT tax attributable to those same wages. Because NY's top rate plus NYC tax often exceeds CT's, the practical result is that the CT resident pays NY's higher rate with no CT refund — CT simply forgives its tax on those wages. This is **not** an exemption — the wages still appear on the CT return; the credit just zeros out the CT liability on them.  _(Form CT-1040 Schedule 2)_
-
-### 9.2 The convenience-of-employer rule — CT's version
-
-- **CT convenience-of-employer rule text** — Conn. Gen. Stat. §12-711(b)(2)(C), enacted by Public Act 18-49 and amended several times, contains Connecticut's own **convenience-of-employer** rule. The rule states: "Compensation for personal services rendered by a nonresident individual whose service is rendered for an employer located in this state shall be deemed to be derived from or connected with sources within this state if such compensation is for services rendered for the convenience of the employee rather than for the necessity of the employer." In plain English: if a CT employer has a remote employee who lives in (say) Texas and works from Texas because the employee prefers it (convenience) rather than because the employer requires them to be in Texas (necessity), Connecticut will deem the wages **CT-source** and require CT withholding. The remote employee is then a CT-source nonresident taxpayer.  _(Conn. Gen. Stat. §12-711(b)(2)(C); Public Act 18-49)_
-- **Reciprocal trigger design and AUDIT FLASH POINT** — The Connecticut version is **reciprocal** in design — it applies only to nonresidents of CT working remotely for a CT employer when the **employee's home state also imposes a convenience-of-employer rule** on its own employers. The reciprocal trigger means CT's rule "catches" employees in states like New York and Delaware (which do have convenience rules) but generally not employees in pure physical-presence states like Texas, Florida, or California — unless the relevant case law has evolved. > **AUDIT FLASH POINT.** The reciprocal-trigger language is the key. DRS has audited CT employers with remote workers in CofE-rule states (NY, NE, DE, PA, AR) and pulled the wages back into CT. Where the remote worker is in a non-CofE state (TX, FL, CA, WA), DRS has generally **not** asserted CT sourcing, but employers should not assume — there are open audit positions. Always document the necessity-of-employer rationale for any remote arrangement.  _(Conn. Gen. Stat. §12-711(b)(2)(C))_
-
-### 9.3 Practical employer outcomes by scenario
-
-**Practical employer outcomes by scenario table**
-
-| Employee Resident | Works in | CT Tax Treatment |
-| --- | --- | --- |
-| CT resident | CT | Standard CT withholding on full wages |
-| CT resident | NY (commuter) | CT withholds on full wages; employee gets CT credit for NY tax paid on CT-1040 |
-| CT resident | Remote from home in CT | Standard CT withholding |
-| NY resident | CT (commuter into CT) | CT withholds on CT-source portion (Line 5 CT-W4); NY taxes full wages with NY credit for CT |
-| NY resident | Remote from NY for CT employer | **Convenience-of-employer rule may apply** — if remote is for employee convenience, CT may treat as CT-source |
-| TX resident | Remote from TX for CT employer | Generally not CT-source (TX has no income tax and no CofE rule); CT does not withhold |
-
-## 10. CT Family and Medical Leave Act (CT FMLA)
-
-### 10.1 Coverage broader than federal FMLA
-
-**CT FMLA vs federal FMLA comparison**  _(Conn. Gen. Stat. §31-51kk through §31-51qq)_
-
-| Dimension | Federal FMLA | CT FMLA (post-2022) |
-| --- | --- | --- |
-| Employer threshold | 50+ employees in 75-mile radius | **1+ employee in CT** |
-| Employee eligibility | 12 months service + 1,250 hours | **3 months of service** |
-| Leave entitlement | 12 weeks in 12 months | **12 weeks in 12 months + 2 weeks pregnancy-related incapacitation** |
-| Job protection | Yes, with restoration | Yes, with restoration |
-| Pay status | Unpaid | Unpaid (but CTPL benefit may apply) |
-
-- **Example of small employer exposure** — A small employer (say, a 5-person CT design studio) is exempt from federal FMLA entirely but is fully subject to CT FMLA. The employee with 3 months of service has the same 12-week job-protected leave right as an employee of a 5,000-person employer.
-
-### 10.2 Permitted reasons
-
-- **CT FMLA permitted reasons** — - Birth, adoption, or foster placement of a child. - Serious health condition of the employee or a covered family member. - Qualifying exigency from a family member's military service. - Service-member family leave (26 weeks for caregiver of an injured servicemember). - **Family violence** — CT FMLA uniquely includes up to 12 days of leave for an employee victim of family violence (Conn. Gen. Stat. §31-51ss).  _(Conn. Gen. Stat. §31-51ss)_
-
-### 10.3 Interaction with CTPL
-
-- **CT FMLA and CTPL coordination** — CT FMLA is the **leave entitlement** (right to take time off and return to job); CTPL is the **wage replacement** benefit. The two are independent statutes that coordinate in practice. Most employees taking CT FMLA also file a CTPL claim with the Authority to receive partial wage replacement during the leave.
-
-## 11. Worker Classification — the ABC Test
-
-### 11.1 Why classification matters for payroll
-
-- **Employee vs contractor obligations** — If a worker is an **employee**, the employer must withhold CT PIT, pay CT UI, withhold CTPL, and provide paid sick leave (where headcount is met). If the worker is an **independent contractor**, none of the above applies, but the employer must issue Form 1099-NEC (and file CT-1096) when payments meet the federal $600 threshold (rising to $2,000 in 2026 under OBBBA — see `us-1099-nec-issuance`). CTDOL is aggressive about reclassification. A single audit can reclassify dozens of contractors as employees retroactively, generating UI tax assessments, CTPL contributions, paid sick leave damages, and the W-2 withholding underpayment.
-
-### 11.2 The CT ABC test (Conn. Gen. Stat. §31-222(a)(1)(B)(ii))
-
-- **ABC test prongs** — For UI purposes, a worker is presumed to be an **employee** unless the putative employer proves **all three** of the following prongs: > **A.** The worker is free from control and direction in connection with the performance of the service, both under the contract for the performance of service and in fact; AND > > **B.** The service is performed either outside the usual course of the business for which the service is performed or outside of all the places of business of the enterprise for which the service is performed; AND > > **C.** The worker is customarily engaged in an independently established trade, occupation, profession or business of the same nature as that involved in the service performed. All three prongs must be proven, by the employer, by a preponderance of the evidence. Failure on any single prong means the worker is an employee.  _(Conn. Gen. Stat. §31-222(a)(1)(B)(ii))_
-
-### 11.3 Prong-by-prong audit checklist
-
-**Prong A — Control:**
-
-- Does the worker set their own schedule?
-- Does the worker provide their own tools and equipment?
-- Does the worker decide the method and means of performing the work?
-- Is the worker subject to performance reviews like an employee?
-- Does the worker receive training from the putative employer?
-
-The presence of "method and means" control is fatal. The classic giveaway is a "contractor" who shows up at the employer's office every day at 9:00 a.m., uses the employer's laptop, and is supervised by an employer manager.
-
-**Prong B — Course of business or place of business:**
-
-- Is the service the worker provides part of the **usual course of business** of the putative employer?
-- Or, alternatively, is the service performed outside all the places of business of the putative employer?
-
-A web developer for a web development agency fails Prong B even if working from home — web development is the agency's usual course of business. Connecticut applies Prong B strictly; the "place of business" alternative is rarely available because remote work means anywhere can become a place of business.
-
-**Prong C — Independently established:**
-
-- Does the worker have their own business name, EIN, business cards, marketing?
-- Does the worker have other clients besides the putative employer?
-- Does the worker bear business risk (profit and loss)?
-- Has the worker filed Schedule C in prior years?
-
-A worker with one client, no marketing, and no incorporation almost always fails Prong C.
-
-### 11.4 CTDOL audit triggers
-
-- **CTDOL audit triggers list** — - Form 1099-NEC issued for amounts that look like full-time wages ($60,000+ per year to one worker). - Unemployment claim filed by a "former contractor." - Workers' compensation claim filed by a "contractor." - Routine 5-year audit cycle. - Whistleblower complaint to CTDOL Wage & Workplace Standards Division.
-
-### 11.5 Federal/state mismatch
-
-- **Federal vs CT classification mismatch and AUDIT FLASH POINT** — Federal IRS uses the multi-factor common-law test (the "20-factor test" or the modern "behavioral, financial, type-of-relationship" framework). The ABC test is **stricter**. It is therefore possible to be a federal contractor but a CT employee. In that scenario, the employer pays CT UI, withholds CT PIT, and withholds CTPL, while still issuing a 1099-NEC for federal purposes — a documentation nightmare that is best avoided by harmonizing the classification. > **AUDIT FLASH POINT.** The ABC test is the single most common cause of multi-six-figure CTDOL audit assessments against small CT employers. Software companies, design agencies, marketing firms, and home-care businesses that "use 1099 contractors" are the highest-risk industries. Where the worker fails any prong, retroactive assessment can go back 3 years for UI and potentially longer for PIT withholding under the §12-735 fraud window.  _(Conn. Gen. Stat. §12-735)_
-
-## 12. Final Pay and Wage Payment
-
-### 12.1 When final wages are due
-
-- **Final wages timing rules** — Conn. Gen. Stat. §31-71c governs the timing of final wages: **Discharged employee (involuntary termination):** Wages are due **on the business day next succeeding the date of discharge**. If discharged Tuesday, final pay is due Wednesday. **Voluntary quit:** Wages are due on the **next regular payday**. **Layoff:** Same as voluntary quit — by next regular payday. This is one of the strictest discharge-pay timelines in the country. Wage payment violations are subject to **double damages** under Conn. Gen. Stat. §31-72 if the violation is willful. A "willful" violation includes knowing failure to pay, not just intentional bad faith.  _(Conn. Gen. Stat. §31-71c; Conn. Gen. Stat. §31-72)_
-
-### 12.2 What counts as final wages
-
-- **Final wages composition** — - Earned regular wages through the last day worked. - Accrued unused vacation, **if** the employer's policy or contract provides for vacation payout at termination. Connecticut does **not** require vacation payout by statute; it follows the contract or policy. (This is different from California, where vacation must be paid out.) A clear written policy disclaiming payout is enforceable. - Earned but unpaid commissions, per the commission agreement. - Bonuses **only if** the bonus has vested per the bonus plan terms by termination.
-
-### 12.3 Method of final payment
-
-- **Final payment method rule** — The same method the employee was being paid (direct deposit or paper check). The employer cannot force a paper check if the employee was on direct deposit, and cannot force direct deposit if the employee asks for a paper check.
-
-### 12.4 Mailed payment
-
-- **Mailed final wages rule** — An employer may mail the final wages to the employee's last known address. The wages are deemed "paid" on the date of mailing (postmark) for purposes of the §31-71c deadline, not on the date of receipt — though prudent practice is to mail at least one business day before the deadline.  _(Conn. Gen. Stat. §31-71c)_
-
-## 13. Worked Example 1 — CT Employer with NY Commuters
-
-**Facts.** Cobalt Analytics LLC is a Hartford, Connecticut-based data analytics consultancy with 35 employees. Twelve employees live in Westchester County, New York, and commute daily to the Hartford office. None of the NY-resident employees work from home for Cobalt; they all work in the Hartford office five days a week. Two CT-resident employees work in Cobalt's small satellite office in midtown Manhattan and commute the other direction. Annual wages range from $80,000 to $250,000.
-
-**Question.** How does Cobalt handle payroll for the NY commuters (NY residents working in CT) and for the CT commuters (CT residents working in NY)?
-
-**Analysis — NY residents commuting into CT.**
-
-1. **CT-W4.** Each NY resident employee files a CT-W4 marked "nonresident" with Line 5 showing 100% of services performed in CT (because they all work in the Hartford office). The withholding code is selected based on their filing status.
-2. **CT withholding.** Cobalt withholds CT PIT on the full wages, because the wages are CT-source under the physical-presence rule (services performed in CT).
-3. **NY withholding.** New York requires withholding on wages paid to NY residents regardless of where the work is done, **but** the NY employer must register as a NY withholding agent. If Cobalt is not registered in NY and has no NY presence other than the satellite office, the NY residents must make their own NY estimated payments — the employer is not required to withhold for NY unless registered there. Because Cobalt has a NY satellite, it likely **is** registered in NY and **must** withhold NY tax on the wages of NY residents (NY treats all wages of NY residents as NY-source for residency purposes).
-4. **Reciprocal credit.** On Form IT-201 (NY resident return), the NY residents claim a **NY credit for tax paid to CT** under N.Y. Tax Law §620 for the CT tax actually paid on the CT-source wages. The credit is limited.
-5. **Net result for NY-resident employee.** Employee pays whichever is **higher** — the NY tax rate or the CT tax rate — because the higher state effectively keeps the difference. For a $150,000 earner, CT's marginal rate is about 6.0% and NY's is about 6.85% — so NY keeps ~0.85% net after credit.
-
-**Analysis — CT residents commuting into NY (the satellite office).**
-
-1. **NY withholding.** NY requires withholding on the **NY-source portion** of wages of a nonresident, which for a physical commuter is 100%. Cobalt withholds NY tax on these wages.
-2. **CT withholding.** Connecticut requires withholding on wages of a CT resident regardless of where earned. So Cobalt also withholds CT PIT on the full wages.
-3. **Apparent double withholding.** Without coordination, both states are withholding on the same wages. The employer should **not** reduce CT withholding to zero — Connecticut requires the employer to withhold on CT-resident wages and credit is claimed on the resident's CT-1040, not at the withholding stage. (Form CT-W4 line 5 is for nonresidents, not for CT residents working out of state.)
-4. **CT-1040 credit.** On Form CT-1040 Schedule 2, the CT resident claims a credit for the NY tax paid. The credit is limited to the lesser of (a) NY tax on the NY-source income or (b) CT tax on that same income. Because NY's rate is higher, the credit equals the full CT tax on those wages, effectively zeroing out CT's claim. CT does not refund the NY excess; the employee absorbs the difference.
-5. **Practical employer guidance.** Recommend that the CT-resident commuter file a CT-W4 with reduced withholding (Line 3) — they can use IP 2024(8) to compute the reduction such that CT withholding approximates the net CT liability after credit (which may be zero on these wages). However, getting Line 3 reduction approved requires substantiation and is often more trouble than just letting the employee receive a CT refund at filing.
-
-**Connecticut withholding totals for Cobalt's payroll.** Cobalt withholds CT PIT on:
-
-- 21 CT residents (CT office or satellite-commuter) — full wages.
-- 12 NY residents physically working in CT — full wages (CT-source).
-- 2 CT residents working at NY satellite — full wages (CT taxes residents on worldwide income).
-
-Cobalt's CT-941 reflects withholding on all 35 employees. Its Form NY-IT-2104 (NY counterpart withholding) reflects withholding on the 14 NY-source employees (12 NY residents + 2 CT residents whose work is NY-source).
-
-**CTPL.** Cobalt withholds the 0.5% CTPL contribution from every employee **physically working in CT**, because CTPL coverage follows the location of work. The 2 CT residents working in the NY satellite — these wages are NY-source for CTPL purposes and not subject to CT Paid Leave contribution. The 12 NY residents working in Hartford — these wages **are** subject to CTPL, even though the employee is a NY resident.
-
-**CT UI.** Cobalt reports the 12 NY residents working in CT to **Connecticut** for UI (work performed in CT), and reports the 2 CT residents working in NY to **New York** for UI (work performed in NY). UI follows the physical location of work under the multi-state "localization of work" test.
-
-## 14. Worked Example 2 — CT Employer with TX Remote Workers
-
-**Facts.** Lighthouse Software Inc. is a Stamford, Connecticut C-corporation with a 100-person headquarters. In 2025, Lighthouse opens a fully remote engineering position. It hires Priya Sharma, a Texas resident in Austin. Priya works exclusively from her home in Austin. She visits the Stamford office twice a year for company offsites (3 days each). Her salary is $180,000.
-
-**Question.** Does Lighthouse withhold CT income tax on Priya's wages? CTPL? Report her to CT UI?
-
-**Analysis.**
-
-1. **CT PIT withholding — convenience-of-employer rule analysis.**
-   - Priya is a Texas resident. Texas has **no state income tax** and no convenience-of-employer rule of its own. Connecticut's reciprocal-trigger formulation means CT's CofE rule generally **does not** apply to TX remote workers — there's no TX rule to reciprocate against.
-   - Priya's wages are sourced based on **physical place of performance**: Austin, TX, for 359 days; Stamford, CT, for 6 days (2 offsites × 3 days).
-   - CT may assert that the 6 Stamford days create CT-source wages: $180,000 × 6/365 ≈ $2,959 of CT-source compensation.
-   - For amounts under the de minimis threshold (CT's 14-day rule for nonresident business travelers under Conn. Gen. Stat. §12-711(b)(2)(D) for certain industries), or under the practical materiality threshold DRS applies, Lighthouse may treat the 6-day allocation as immaterial and not withhold. But the safer position is to withhold CT PIT on the 6-day CT-source portion via Priya filing a CT-W4 as a nonresident with Line 5 = 1.65%.
-   - **Conclusion:** Lighthouse does **not** withhold CT PIT on the bulk of Priya's wages. It may, conservatively, withhold on the CT-source offsite days. Priya files a CT-1040NR/PY if she has CT-source income above the filing threshold.
-
-2. **CTPL contribution.**
-   - CTPL coverage follows the physical place where the employee works for the employer. Priya works in TX, so her wages are not subject to CTPL contribution. Lighthouse does not withhold the 0.5% on Priya's pay.
-
-3. **CT UI.**
-   - UI follows the "localization of work" test from the Federal Unemployment Tax Act §3306. Priya's work is localized in Texas (she works there continuously; the CT offsites are incidental). Lighthouse reports Priya to **Texas Workforce Commission** for UI, not to CTDOL.
-   - Lighthouse must register as a TX employer with TWC for this single employee — an annoyance, but unavoidable.
-
-4. **CT paid sick leave.**
-   - Lighthouse has 100 employees, so it is over the 25-employee 2025 threshold. But the paid sick leave statute applies to employees working in Connecticut. Priya works in Texas — she is not entitled to CT paid sick leave. (She may have rights under any Texas or local law — but TX has no state paid sick leave statute, and Austin's local ordinance is preempted.)
-
-5. **Convenience-of-employer audit risk.**
-   - If DRS audits Lighthouse and asserts the CofE rule against Priya, it would need to show that Priya's remote arrangement is for her own convenience, not Lighthouse's necessity. Lighthouse should **document** that the remote arrangement is a business necessity — e.g., the role requires expertise that is unavailable in the Stamford labor market, and the position was posted as remote-first, with the offer contingent on a remote arrangement. A well-documented necessity defeats the CofE assertion.
-   - If Lighthouse loses the audit, DRS would assert CT PIT on all $180,000 of Priya's wages, plus interest and penalties. With a top marginal CT rate of ~6.5% on her income level, the exposure is roughly $11,700/year per year audited. Over a 3-year audit, ~$35,000 plus interest.
-
-> **AUDIT FLASH POINT.** Maintain a written **remote work agreement** with each out-of-state remote employee specifying that the remote arrangement is a business necessity for the employer (recruiting reach, specific expertise unavailable locally, business continuity). Without this, the CofE rule audit becomes much harder to defeat. This is especially important for high-income remote employees where the dollar exposure is large.
-
-## 15. Worked Example 3 — Contractor Classification under the ABC Test
-
-**Facts.** Nutmeg Design Studio LLC is a small CT-based graphic design firm with 4 W-2 employees. In 2025 it engages "Jordan," a freelance illustrator, for a 9-month book illustration project. Jordan is paid $90,000 over the engagement on 1099-NEC. Jordan works from his home in New Haven, CT, on his own laptop and tools, sets his own hours, has 4 other clients during the year, runs an LLC called "Jordan Illustration LLC" with his own EIN, and bills Nutmeg by invoice every two weeks. Nutmeg gives Jordan project specs at the start of each chapter but does not supervise his day-to-day work.
-
-In 2026, Jordan files for unemployment in CT after Nutmeg ends the engagement. CTDOL opens a contractor-classification audit of Nutmeg.
-
-**Question.** Will Jordan be reclassified as an employee under the ABC test?
-
-**Analysis.**
-
-**Prong A — Control.**
-
-- Jordan sets his own schedule: **passes**.
-- Jordan uses his own tools (laptop, Wacom tablet, Adobe software on his license): **passes**.
-- Nutmeg provides project specs but does not direct method or means: **passes**.
-- No performance reviews; just invoice-and-deliverable: **passes**.
-
-Conclusion on Prong A: Nutmeg likely passes.
-
-**Prong B — Outside usual course of business OR outside places of business.**
-
-- Nutmeg is a graphic design firm. Book illustration is graphic-design-adjacent. Is illustration "outside the usual course of business" of a graphic design firm?
-- This is the **danger prong**. Most CTDOL hearing officers would view illustration as **within** the usual course of business of a graphic design firm. Even though Nutmeg's 4 W-2 employees are general designers (not illustrators), the firm holds itself out as offering design services that include illustration.
-- Alternative test: outside the places of business. Jordan works from his New Haven home, not from Nutmeg's office. If "places of business" is read narrowly (Nutmeg's office only), Jordan **passes** under the alternative.
-- CTDOL's interpretation has been mixed. The CT Supreme Court in *Standard Oil of Connecticut, Inc. v. Administrator* (2016) held that the disjunctive "or" in Prong B is real — meeting **either** alternative satisfies the prong. So Jordan working from his home, not from Nutmeg's office, **may** satisfy Prong B's "outside the places of business" alternative.
-- **Conclusion on Prong B:** Pass under the *Standard Oil* alternative-place reading, but this is the audit battleground.
-
-**Prong C — Independently established business.**
-
-- Jordan has an LLC with EIN: **passes**.
-- Jordan has 4 other clients: **passes strongly**.
-- Jordan markets his services (own website, portfolio): **passes**.
-- Jordan bears business risk (could lose money if project goes over budget on a flat fee): **passes**.
-- Jordan files Schedule C: **passes**.
-
-Conclusion on Prong C: clean pass.
-
-**Overall.** Jordan is **likely** correctly classified as an independent contractor. Prongs A and C are clean. Prong B is the only risk, and *Standard Oil* gives Nutmeg a defensible position. CTDOL will probably find for Nutmeg on this fact pattern — but the audit will be a non-trivial defense.
-
-**Counterfactual.** Suppose Jordan had **only Nutmeg** as a client and worked exclusively for Nutmeg for 9 months. Prong C now fails (no independently established business — Jordan is functionally a Nutmeg employee), and the entire analysis collapses regardless of Prong A and B. Jordan is reclassified as an employee, and Nutmeg owes:
-
-- CT UI tax on $90,000 (× 2.5% new-employer-equivalent or Nutmeg's actual rate) ≈ $2,250 — but only on the wage base of $25,000, so actual UI ≈ $625.
-- CTPL contribution (0.5% × $90,000) = $450 — but this was the employee's contribution, not the employer's. CTDOL might still assess against Nutmeg under failure-to-withhold theory.
-- CT PIT withholding underpayment — could be substantial if Jordan didn't pay quarterly estimates. Penalties under §12-735.
-- Federal employment tax exposure (FICA, FUTA) — separate IRS exposure.
-- Paid sick leave back-damages — Nutmeg has 5 employees including Jordan now, still below the 2025 threshold of 25, so no exposure there for 2025 specifically.
-
-> **AUDIT FLASH POINT.** The single-client contractor is the **highest-risk** fact pattern. Even with a clean Prong A and a strong LLC structure on Prong C, a contractor whose entire income comes from one putative employer will fail Prong C in any rigorous audit. Diversify or convert to employment.
-
-## 16. Self-Checks
-
-Before delivering a Connecticut payroll work product to the reviewer, confirm each of the following:
-
-1. [ ] Each Connecticut employee has a current **CT-W4** on file (federal W-4 alone is insufficient).
-2. [ ] The withholding code (A through F) selected on the CT-W4 matches the employee's filing status and is propagated correctly into the payroll system.
-3. [ ] CT PIT withholding deposits are made via myconneCT under the correct remitter category (weekly / monthly / quarterly) based on the prior-year look-back.
-4. [ ] Form **CT-941** has been filed for each completed quarter by the last day of the following month.
-5. [ ] Form **CT-W3** with W-2 Copy 1s is filed by January 31 following the wage year.
-6. [ ] CTDOL **UC-2 and UC-5A** quarterly returns are filed in ReEmployCT; UI tax is computed on the **$25,000** 2025 wage base.
-7. [ ] **CTPL 0.5%** is withheld from every CT-working employee's pay, capped at the Social Security wage base, and remitted quarterly to ctpaidleave.org.
-8. [ ] For employers with **25+ employees in 2025** (or 11+ in 2026, 1+ in 2027), the paid sick leave policy and accrual tracking are in place.
-9. [ ] For each remote out-of-state worker of a CT employer, a **written necessity-of-employer documentation** is on file to defeat any future CofE audit.
-10. [ ] Every Form 1099-NEC contractor relationship has been tested against the **ABC test** with documented Prong A, B, and C analysis.
-11. [ ] Final pay is processed within Conn. Gen. Stat. §31-71c timelines: next business day for discharge, next regular payday for quit.
-12. [ ] For CT-resident employees commuting to NY, the **CT-1040 Schedule 2 credit** mechanism is understood — CT withholding is NOT reduced to zero at source.
-13. [ ] For NY-resident employees commuting to CT, the **CT-W4 nonresident** box and Line 5 allocation are completed properly.
-14. [ ] **CT-1096** is filed where the employer paid CT-source 1099 income to a CT resident or withheld CT tax from a 1099 payment.
-
-## 17. Summary Table — Connecticut Payroll Obligations at a Glance
-
-**Summary table of CT payroll obligations**
-
-| Obligation | Form/Channel | Frequency | Due Date |
-| --- | --- | --- | --- |
-| CT PIT deposit (weekly remitter) | myconneCT EFT | Per pay | Wednesday after payday |
-| CT PIT deposit (monthly) | myconneCT EFT | Monthly | 15th of following month |
-| CT PIT reconciliation | CT-941 via myconneCT | Quarterly | Last day of month after quarter |
-| Annual CT PIT reconciliation | CT-W3 + W-2 Copy 1 | Annual | January 31 |
-| 1099 reconciliation | CT-1096 + 1099 Copy 1 | Annual | January 31 |
-| CT UI quarterly | UC-2 + UC-5A in ReEmployCT | Quarterly | Last day of month after quarter |
-| CT Paid Leave | ctpaidleave.org | Quarterly | Last day of month after quarter |
-| Paid Sick Leave accrual | Internal tracking | Per pay | N/A (poster + records required) |
-| New hire reporting | CT New Hire Reporting | Per hire | Within 20 days of hire |
-| Final wages — discharge | Direct deposit / check | One-time | Next business day |
-| Final wages — voluntary quit | Direct deposit / check | One-time | Next regular payday |
-
-## 18. Statutory and Regulatory Citation Index
-
-- Conn. Gen. Stat. §12-700 — CT personal income tax imposition.
-- Conn. Gen. Stat. §12-705 — Employer withholding requirement.
-- Conn. Gen. Stat. §12-711(b)(2)(C) — Convenience-of-employer rule for nonresidents.
-- Conn. Gen. Stat. §12-735 — Penalty for failure to file/pay withholding.
-- Conn. Gen. Stat. §31-57r through §31-57w — Paid Sick Leave.
-- Conn. Gen. Stat. §31-49e through §31-49t — CT Paid Leave (CTPL).
-- Conn. Gen. Stat. §31-51kk through §31-51qq — CT FMLA.
-- Conn. Gen. Stat. §31-71c — Final wages timing.
-- Conn. Gen. Stat. §31-72 — Double damages for wage violations.
-- Conn. Gen. Stat. §31-222(a)(1)(B)(ii) — ABC test for UI.
-- Conn. Gen. Stat. §31-225 — UI experience rating; successor employer.
-- Public Act 11-52 (2011) — Original Paid Sick Leave Act.
-- Public Act 19-25 (2019) — Paid Family and Medical Leave Insurance Act.
-- Public Act 21-200 (2021) — UI Trust Fund Solvency, wage base increases.
-- Public Act 23-204 (2023) — 2024+ rate reductions to 2.0% / 4.5%.
-- Public Act 24-8 (2024) — Paid Sick Leave expansion to all industries, phased headcount reduction.
-- DRS Informational Publication 2025(1) — Connecticut Employer's Tax Guide.
-- DRS Informational Publication 2025(7) — Withholding Calculation Rules.
-- *Standard Oil of Connecticut, Inc. v. Administrator, Unemployment Compensation Act*, 320 Conn. 611 (2016) — ABC test Prong B "or" disjunctive reading.
-
-## 19. Refusals
-
-- **Skill refusal scope** — This skill does **not** produce final filings. It produces reviewer briefs and worksheets that a Connecticut-credentialed reviewer (CPA, EA, or attorney) signs off on before any return reaches DRS, CTDOL, or the CT Paid Leave Authority. This skill does **not** advise on: - Connecticut tribal employment. - Multi-state apportionment for employees working in 3+ states regularly. - Connecticut nonresident athlete or entertainer withholding (separate regime). - Wage garnishment computation under specific court orders. - Workers' compensation classification (separate from UI ABC analysis; defer to a CT WC attorney). - Public Act 25 or later changes that may post-date the 2025-11-15 last-updated date — verify against current DRS and CTDOL guidance before filing.
-
-## End of Connecticut Payroll Skill, version 0.1, last updated 2025-11-15.
-
-End of Connecticut Payroll Skill, version 0.1, last updated 2025-11-15.
+Federal common-law classification and the state UI ABC test may differ; refer the resulting forms/withholding coordination rather than automatically issuing a federal 1099 alongside state employee treatment. The former $60,000 audit flag, routine five-year audit cycle, “most common”/multi-six-figure assessment claims and blanket three-year UI exposure window are **Not yet confirmed**, not compliance rules. Respond to an actual notice with employment records, contracts, invoices, client evidence and payroll/tax histories; obtain professional representation for an assessment.
+
+### 10. Final pay and wage payment
+
+Section 31-71c requires discharged employees' wages by the **next business day**; employees who quit receive wages by the next regular payday through usual channels or mail; layoffs use the next regular payday. Distinguish those events. Section 31-76k requires accrued fringe-benefit payout where the employer policy/collective agreement provides it. Analyze earned commissions and vested/nondiscretionary bonuses under the contract and wage definition; do not assume every discretionary bonus is wages. [Sections 31-71a, 31-71c and 31-76k](https://www.cga.ct.gov/current/pub/chap_558.htm).
+
+The old “same payment method must always continue” and “postmark always establishes timely final pay” assertions are **Not yet confirmed**; section 31-71c's mailing language does not establish those blanket conclusions. Section 31-72 provides double recovery, fees/costs, with a good-faith-belief defense affecting the recovery measure. It is not confined to the old asserted willful-only standard. Refer disputed termination timing, commission/bonus entitlement, method of payment and wage claims. [Section 31-72 and adjacent wage provisions](https://www.cga.ct.gov/current/pub/chap_558.htm).
+
+## Worked cases
+
+**Case 1, ordinary 2026 withholding and SUI.** Single employee, Code F, $1,000 weekly pay, 52 periods, no other adjustments. Annualized wages $52,000; Table A exemption zero; Table B $2,000 + 5.5% of $2,000 = $2,110; Tables C/D zero; Table E .10; annual withholding $1,899. Period withholding is $36.51923077 before cent rounding. A $10 line 2 election makes it $46.51923077. Separately, a new employer with $26,000 prior covered wages pays SUI on only $1,000 of the current $3,000 wages: $19 at 1.9%. Report all $3,000 gross wages.
+
+```oa-check
+name: CT 2026 weekly withholding and SUI
+inputs:
+  weekly: 1000
+  periods: 52
+  extra: 10
+  prior_wages: 26000
+  current_wages: 3000
+steps:
+  - annual: weekly * periods
+  - initial: 2000 + (annual - 50000) * .055
+  - annual_tax: initial * .9
+  - per_period: annual_tax / periods + extra
+  - sui_wages: min(current_wages, max(27000 - prior_wages, 0))
+  - sui: sui_wages * .019
+expected:
+  annual: 52000
+  initial: 2110
+  annual_tax: 1899
+  per_period: 46.51923076923077
+  sui_wages: 1000
+  sui: 19
+```
+
+**Case 2, official experience-rate example and resident credit.** Three years' benefit charges total $1,500 on $30,000 taxable payroll. Ratio 5%; divide the charged rate by 1.125 and round upward to the next 0.1 percentage point, giving 4.5%; add 1% solvency for 5.5% total. This is an illustrative rate computation, not a substitute for the issued notice. Separately, in the source's qualifying resident/outside-state facts, computed CT withholding $160 less other-state withholding $100 leaves $60; computed CT $250 less other-state $300 leaves zero.
+
+```oa-check
+name: CT official charged rate and resident reduction
+inputs:
+  benefits: 1500
+  payroll: 30000
+  ct_wh: 160
+  other_wh: 100
+steps:
+  - ratio: benefits / payroll
+  - charged: ceil((ratio / 1.125) * 1000) / 1000
+  - total_rate: charged + .01
+  - ct_remaining: max(ct_wh - other_wh, 0)
+  - zero_remaining: max(250 - 300, 0)
+expected:
+  ratio: 0.05
+  charged: 0.045
+  total_rate: 0.055
+  ct_remaining: 60
+  zero_remaining: 0
+```
+
+**Retained case 3, Cobalt Analytics LLC and commuters.** Cobalt's Hartford consultancy has 35 employees: twelve Westchester, NY residents work in Hartford five days weekly without home work; two Connecticut residents work at the midtown Manhattan satellite; the remaining twenty-one are Connecticut residents working in Connecticut. Wages range $80,000-$250,000. The twelve inbound commuters have ordinary Connecticut-source wages and give CT-W4, with CT-W4NA only where actual allocation is needed. The twenty-one Connecticut workers receive ordinary CT withholding. For the two Connecticut residents at the NY satellite, apply the qualifying other-state withholding reduction above; their CT withholding can be zero, so it is wrong to insist on positive CT withholding for all 35. The old NY tax-rate comparison, IT-201 credit conclusion and “NY-IT-2104 counterpart return” assertion are not supplied as verified New York instructions. Obtain the NY owner skill; a certificate is not automatically a quarterly return. Determine UI localization and CTPL covered service separately for each job, rather than using residence alone or treating every day across a border as a new UI state. Document the satellite, assignments and workday records.
+
+**Retained case 4, Lighthouse Software Inc. and Priya Sharma.** Lighthouse is a Stamford C-corporation with 100 headquarters employees. The historic 2025 case hires Texas-resident Priya Sharma in Austin for a fully remote engineering position at $180,000, with two three-day Stamford offsites (six Connecticut days). If the actual facts meet the nonresident fifteen-day exception and there is no other CT-source trigger, the six days do not require the old “conservative” wage allocation. If allocation becomes necessary, use actual working days, not $180,000 x 6/365, and the separate CT-W4NA. Apply the reciprocal convenience test only after verifying the residence-state rule; no Texas-law conclusion is certified here. Determine localization/CTPL coverage from the actual employment facts and retain the remote agreement and travel records. Connecticut sick leave applies under its own employment-in-state conditions; the historic 2025 employer-size threshold was twenty-five and the 2026 threshold is eleven. Texas registration/UI, Austin ordinance preemption, a guaranteed business-necessity defense and the old $11,700/$35,000 hypothetical tax exposures remain **Not yet confirmed**. A flat marginal rate times the entire salary was not a valid CT tax computation.
+
+**Retained case 5, Nutmeg Design Studio LLC and Jordan.** Nutmeg has four W-2 employees and hired Jordan for a nine-month, $90,000 book-illustration project in 2025. Jordan works at home in New Haven with his own laptop, Wacom tablet and licensed Adobe software, sets hours, has four other clients, his own EIN and Jordan Illustration LLC, invoices every two weeks, and receives chapter specifications without daily supervision. The old case also describes a website/portfolio, business risk and Schedule C filings; retain evidence rather than treating them as established merely because an example states them. In 2026 he claims unemployment. Those facts support investigation of A/C; B still requires the actual usual-course/place-of-business analysis. No automatic “likely win” is promised and the unreviewed *Standard Oil* opinion supplies no safe harbor. If Jordan instead had only Nutmeg as a client, C would need further factual analysis; single-client status alone does not conclusively fail it.
+
+If reclassified, reconstruct the **actual 2025 payroll** with that year's notice and statutory facts; a 2026 audit does not turn 2025 wages into 2026 wages. For an explicitly separate **2026 wage illustration**, $90,000 covered wages at the issued new-employer rate yield SUI $27,000 x 1.9% = $513, not the old $625; CTPL would be $450 if all $90,000 is subject earnings below the actual federal cap. CTPL is the employee contribution and failure-to-withhold recovery requires the applicable law; it is not an extra employer matching tax. Compute state withholding from the actual period/code, not a flat annual estimate, and refer federal employment-tax exposure to its owner. With five counted employees, the firm is below the ordinary 2025 twenty-five and 2026 eleven sick-leave thresholds, subject to the actual counting/coverage rules; the 2027 threshold changes that result prospectively.
+
+```oa-check
+name: CT reclassification 2026 illustration only
+inputs:
+  wages: 90000
+  sui_base: 27000
+  sui_rate: 0.019
+  ctpl_rate: 0.005
+steps:
+  - sui: min(wages, sui_base) * sui_rate
+  - ctpl_below_federal_cap: wages * ctpl_rate
+expected:
+  sui: 513
+  ctpl_below_federal_cap: 450
+```
+
+## Self-checks and delivery
+
+Confirm certificates/code and source allocation; recompute a representative ordinary paycheck and bonus; confirm remitter notice and weekly period; reconcile CT-941/CT-W3/W-2/payroll/deposits; separate UI gross versus taxable wages and actual rate notice; reconcile CTPL contributions and cap to its separate portal; review headcount/accrual/leave notices; retain ABC evidence and final-pay dates. Obtain acceptance/payment confirmation for every filing stream, including zero reports and final account closure.
+
+**New hire reporting.** The old simple twenty-day statement needs the statute's channel conditions: section 31-254(b) generally requires new hires within twenty days, but electronic/magnetic reporting is at least twice monthly, with transmissions twelve to sixteen days apart. The handbook's fourteen-day electronic / twenty-day fax/mail description should be implemented as the actual statutory/reporting schedule, not a universal twenty-day electronic delay. Check rehire rules and reportable independent-contractor service agreements of $5,000 or more under the current handbook/statute. [Section 31-254(b)](https://www.cga.ct.gov/current/pub/chap_567.htm) [2026 Employer Handbook, New Hire Reporting](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf)
+
+**Records.** DRS requires at least four years after tax becomes due or is paid, whichever later, and a current accurate CT-W4/CT-W4NA at all times. Keep wages/dates, identities, employment periods, withholding, certificates, returns and payments. UI records must be available for CTDOL inspection; sick-leave records have the separate three-year minimum. The old employment-plus-four-years shorthand is not the exact DRS retention test. Apply the longest relevant obligation and any open-notice preservation requirement.
+
+## When to refuse or refer
+
+Refer contested residence/convenience sourcing, disputed classifications, acquisition/experience transfers, federal/state classification conflicts, private-plan exemptions, wage/leave disputes, assessments and late-filing remediation. Do not invent another state's payroll position or estimate audit exposures from a top marginal rate.
+
+## Sources
+
+| Source | Read scope | Read date |
+|---|---|---|
+| [IP 2026(1), Circular CT](https://portal.ct.gov/-/media/drs/publications/pubsip/2026/ip-2026-1.pdf) | Read for all relevant employer withholding, certificates, nonresident/resident, supplemental, remitter, return, records and 2026 TPG-211 Tables A-E appendix sections. | 2026-11-13 |
+| [CTDOL 2026 Unemployment Tax Notice](https://portal.ct.gov/dol/divisions/unemployment-insurance-tax/information-on-unemployment-tax-rate-for-calendar-year-2026?language=en_US) | Read for full dated 2026 tax/rate changes and charged-rate example. | 2026-11-13 |
+| [CTDOL Employer Handbook, April 23 2026](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf) | Read for coverage/localization, employment ABC, registration, successors, quarterly wages/contributions, new hires and records; stale 2024 base distinguished. | 2026-11-13 |
+| [CGA Chapter 567](https://www.cga.ct.gov/current/pub/chap_567.htm) | Read for sections 31-222 ABC and 31-254 new hire reporting with adjacent clauses. | 2026-11-13 |
+| [CGA Chapter 557](https://www.cga.ct.gov/current/pub/chap_557.htm) | Read for 31-49e/g/m paid leave definitions/contributions/benefits and paid-sick-leave sections 31-57r-w with adjacent clauses. | 2026-11-13 |
+| [Connecticut Paid Leave Authority, Remit Contributions](https://www.ctpaidleave.org/remit-contributions) | Read for full 2026 rate/cap instructions, due dates versus grace period, payment methods and late charges. | 2026-11-13 |
+| [Connecticut Paid Leave Authority, Employers](https://www.ctpaidleave.org/for-businesses-and-employers/i-am-an-employer) | Read for registration, covered employee/employer and private-plan guidance. | 2026-11-13 |
+| [CTDOL Paid Sick Leave FAQs](https://portal.ct.gov/dol/divisions/legal/connecticut-leave-programs/paid-sick-leave-faqs) | Read for 2026 coverage, exceptions, accrual/use/carryover/frontloading, records and notices. | 2026-11-13 |
+| [CTDOL CTFMLA FAQs](https://portal.ct.gov/dolui/fmla-faqs) | Read for coverage/eligibility, reasons, duration, paid-leave substitution, notice and military caregiver provisions. | 2026-11-13 |
+| [CGA Chapter 558](https://www.cga.ct.gov/current/pub/chap_558.htm) | Read for wage definition, final-pay timing, fringe benefits and civil recovery sections 31-71a/c, 31-72 and 31-76k. | 2026-11-13 |
+
+## Not yet confirmed
+
+- CT-941 amendment workflow/form identifier and detailed CT-1096/1099 thresholds need the current specific filing specifications. No unverified CT-941X route is instructed.
+- Exact voluntary-contribution eligibility/deadline, special construction-new-employer rate and a blanket three-year UI assessment period were not established from the current notice/handbook.
+- Full *Standard Oil* opinion, claimed automatic single-client failure, routine five-year audits, $60,000 audit triggers and generic six-figure assessment prevalence are not verified. The old categorical conclusions are withdrawn as unsafe assumptions.
+- Current CTPL weekly dollar cap/minimum-wage amount and federal wage-base number are not repeated; use official benefit determination and the federal owner. Private-plan/public-employer and multistate cases need their actual coverage facts.
+- Other-state tax forms/rates/credits, Texas registration and local ordinance conclusions, hypothetical flat-rate tax exposure, final-pay postmark and mandatory same-method claims remain unverified; they are not operational rules.
+- Historic statutory/regulatory citations retained for orientation include sections 12-700, 12-705, 12-735, 31-222 through 31-274, 31-49e through 31-49t, 31-51kk through 31-51qq, 31-57r through 31-57w, 31-71c/31-72/31-76k and agency regulations 12-705(a)-1 et seq./12-705(b)-2. Full regulations and every historical public act were not separately reread; current official publications/law listed below support the usable rules.
+
+
+Retained historical reference register: Public Act 11-52 (2011), Public Act 19-25 (2019), Public Act 21-200 (2021), Public Act 23-204 (2023), Public Act 24-8 (2024), DRS Informational Publication 2025(1), DRS Informational Publication 2025(7) (the old title/version attribution was not reverified), section 12-711(b)(2)(C), section 31-225 and its successor provisions, and *Standard Oil of Connecticut, Inc. v. Administrator, Unemployment Compensation Act*, 320 Conn. 611 (2016). These old citations are preserved, while operative 2026 instructions use the sources actually read above. Full historical act/opinion scope is Not yet confirmed.
+
+Not yet confirmed: old CT-W3 HHE household-specific instructions, CT-1096 January 31 deadline and resident/withheld-payment test across every 1099 type, a three-year withholding-refund deadline, and the asserted automatic DRS reconciliation-notice process were not independently established in the specific current publications. Preserve those subjects for the appropriate account-specific instructions rather than treating the old assertions as filing rules.
