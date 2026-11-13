@@ -19,7 +19,7 @@ type: computation
 
 ## Scope
 
-Ordinary contributory Alaska employers for calendar 2026: state income-tax withholding status, UI coverage, employee deductions, employer contribution and quarterly filing. Federal income withholding, FICA and FUTA belong to `us-payroll`. Reimbursable public/nonprofit/tribal arrangements, disputed employment localization and workers' compensation are separate matters.
+Ordinary contributory Alaska employers for calendar 2026: state income-tax withholding status, UI coverage, employee deductions, employer contribution and quarterly filing. Federal income withholding, FICA and FUTA belong to `us-form-941-940-payroll`. Reimbursable public/nonprofit/tribal arrangements, disputed employment localization and workers' compensation are separate matters.
 
 ## Ask the client first
 
