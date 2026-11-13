@@ -2,7 +2,8 @@
 jurisdiction: PR
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  IT-IND: pr-individual-income-tax
 partial: {}
 ---
 
@@ -37,5 +38,6 @@ Tracked in [\[PR\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Other skills
 
+- [Individual income tax](pr-individual-income-tax.md) (2026)
 - [Federal residence and filing](pr-federal-residence-and-filing.md) (2025)
 - [Self employment tax 2025](pr-self-employment-tax-2025.md) (2025)
