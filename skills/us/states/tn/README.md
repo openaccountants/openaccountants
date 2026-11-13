@@ -1,30 +1,42 @@
-# Tennessee — OpenAccountants Tax Skills
+---
+jurisdiction: US-TN
+applicable:
+- VAT
+- IT-CORP
+- PR
+not_applicable:
+  IT-IND: No tax on individual wages; Hall investment-income tax repealed
+    from January 1, 2021.
+covered_by:
+  VAT: tn-sales-tax
+  IT-CORP: tn-corporate-tax
+  PR: tn-PR
+partial:
+  VAT: Specific legacy exemptions/certificates, local rates and filing mechanics
+    remain unconfirmed; see final gaps line.
+  IT-CORP: Current business manual; 2025-2026 filing cycle FAE form mechanics.
+    2026 FAE forms/conformity, credits/groups and later interest not confirmed.
+  PR: Actual 2026 UI base/Table 6 confirmed; industry notice rates, payment deadlines
+    and special coverage still need confirmation.
+---
 
-| Field | Value |
-|---|---|
-| State | Tennessee |
-| Code | US-TN |
-| Income tax | No |
-| Sales tax | Yes |
-| Franchise / gross receipts tax | Yes (franchise & excise tax on entities) |
-| Tax authority | [Tennessee Department of Revenue](https://www.tn.gov/revenue) |
-| Quality tier | Q3 — AI-drafted, not independently verified |
+# Tennessee: 2026 tax skills
 
-## Files in this folder
+No individual-income skill is required. Franchise/excise and separate gross-receipts business tax share one owner so the fourth job is not silently omitted. Every changed skill is a source-cited draft with executable cases and an explicit gaps line. Coverage remains partial where the 2026 manuals could not be opened.
 
-| File | What it covers |
-|---|---|
-| tn-sales-tax.md | Tennessee sales and use tax — 7% state rate (4% on grocery food), local up to 2.75%, filing mechanics |
+## Domains
 
-## What's NOT covered
+| Job | Skill | Status |
+| --- | --- | --- |
+| VAT | `tn-sales-tax` | checked against the law |
+| IT-CORP | `tn-corporate-tax` | checked against the law |
+| PR | `tn-PR` | checked against the law |
 
-- Income tax (Tennessee has **no** individual income tax — the Hall Income Tax on investment income was fully repealed effective January 1, 2021)
-- Franchise & excise tax (applies to entities, not sole proprietors)
-- Property tax (administered locally)
-- Motor fuel tax
-- Business tax (gross receipts-based, separate from sales tax)
-- Privilege tax
+## Official sources
 
-## How to use
+All sources below read 2026-11-13.
 
-Upload all `.md` files in this folder PLUS `skills/global/methods/` and `skills/us/federal/` to your LLM.
+- [No income withholding](https://revenue.support.tn.gov/hc/en-us/articles/360057595051-GEN-34-Income-Tax-Withholding)
+- [2026 business tax manual](https://www.tn.gov/content/dam/tn/revenue/documents/tax_manuals/june-2026/business-tax.pdf)
+- [Sales rates](https://revenue.support.tn.gov/hc/en-us/articles/360058139672-SUT-13-Sales-and-Use-Tax-Rates-Overview)
+- [2026 UI rates and wage base](https://www.tn.gov/workforce/employers/tax-and-insurance-redirect/unemployment-insurance-tax/ui-tax-rates.html)
