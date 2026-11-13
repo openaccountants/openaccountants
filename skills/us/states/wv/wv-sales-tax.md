@@ -2,326 +2,181 @@
 name: wv-sales-tax
 description: Use this skill whenever asked about West Virginia sales tax, WV use tax, West Virginia Tax Division filing, West Virginia SaaS tax, West Virginia service taxation, or West Virginia sales tax compliance. Trigger on phrases like "West Virginia sales tax", "WV sales tax", "W.Va. Code §11-15", "WV Tax Division", "West Virginia SaaS", "West Virginia SST", or any request involving West Virginia state and local sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
 jurisdiction: US-WV
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: vat-gst
+domain: tax
+type: situation-rules
+category: state-tax
+version: "1.1"
 ---
 
-# WV Sales Tax
+# West Virginia sales and use tax (2026)
 
-## Skill Metadata
+**Circular 230 §10.37 disclosure:** This skill supplies general state-tax working papers from the sources below. It is not a professional approval. A qualified tax professional must review the facts, assumptions and outputs before filing.
 
-**Skill Metadata**
+**Answer first:** West Virginia generally taxes goods and services at 6%, with an additional 1% in listed municipalities. Exemptions matter: recognized professional services, qualifying capital-improvement contracting and prescription medicines are exempt; nonprescription medicines are taxable. [Municipal rate page](https://tax.wv.gov/business/salesandusetax/municipalsalesandusetax/pages/municipalsalesandusetax.aspx); [TSD 300](https://tax.wv.gov/Documents/TSD/tsd300.pdf).
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | West Virginia, United States |
-| Jurisdiction Code | US-WV |
-| Tax Type | Sales and Use Tax (state + limited local) |
-| State Rate | 6.00% |
-| Local Rate | Up to 1.00% (municipal) |
-| Maximum Combined Rate | 7.00% |
-| Primary Statute | West Virginia Code §11-15-1 et seq. (Consumers Sales and Service Tax) |
-| Governing Agency | West Virginia State Tax Division |
-| Portal | https://tax.wv.gov |
-| SST Member | Yes -- Full Member |
-| Contributor | Open Accounting Skills Registry |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | T1: state rate, basic taxability, filing mechanics. T2: broad service taxation, SaaS taxability, local rate determination. T3: audit defense, complex transactions, penalty abatement. |
-| Format | Restructured to Q1 execution format, April 2026 |
+## Scope
 
-## Confidence Tier Definitions
+West Virginia consumers sales/service tax and use tax in 2026: physical and remote sellers, marketplace sellers and purchasers with untaxed purchases. Load `us-sales-tax` for the federal constitutional/nexus framework; use this skill for WV rules. This is not the special district excise-tax return, motor-fuel or DMV tax computation. Municipal B&O can apply separately.
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to a licensed tax professional.
+## Ask the client first
 
-## Step 0: Client Onboarding Questions
+1. Locations, staff, inventory, delivery addresses and first-use locations in West Virginia?
+2. Gross WV sales and transaction counts for the current and preceding calendar years, including exempt sales?
+3. Actual contracts: goods, recognized professional services, software/data processing, repair or capital improvement?
+4. Marketplace collection reports, direct sales and documentation of facilitator-remitted tax?
+5. Exemption certificates, direct-pay permits and the purchaser's actual use?
+6. Registration, assigned filing frequency, purchases without tax and prior-period adjustments?
 
-Before proceeding with any West Virginia sales tax analysis, collect the following from the client: [T1]
+## The method, step by step
 
-**Client Onboarding Questions**
+### Rates, bands and thresholds
 
-| # | Question | Why It Matters |
+| Item | Amount or rule | Official source |
 | --- | --- | --- |
-| 1 | Do you have a West Virginia sales tax registration / tax ID? | Determines whether registration is needed before filing. |
-| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
-| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
-| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
-| 5 | What types of products or services do you sell in West Virginia? | Drives taxability classification under West Virginia law. |
-| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
-| 7 | Do you have locations, employees, or inventory in West Virginia? | Physical presence creates nexus independent of economic thresholds. |
-| 8 | Do you sell into multiple West Virginia local jurisdictions? | Local tax rates vary; determines compliance complexity. |
+| General state rate | 6% on taxable sales and corresponding use-tax base | [CST-200CU instructions, Part 3](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| Municipal rate | 1% in adopting municipalities; 7% combined general rate; test boundary and effective date | [Municipal table](https://tax.wv.gov/business/salesandusetax/municipalsalesandusetax/pages/municipalsalesandusetax.aspx) |
+| Remote small-seller exception | Annual gross WV sales $100,000 or less AND fewer than 200 separate transactions; physical presence/voluntary collection excluded | [Remote-seller FAQ, small-seller determination](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx) |
+| Return/payment due date | 20th after period; monthly unless an authorized less frequent filing applies | [CST-200CU instructions p.1](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| Quarterly eligibility | Annual aggregate $3,000 or less | [CST-200CU instructions p.1](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| Annual eligibility | Annual aggregate $600 or less | [CST-200CU instructions p.1](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| E-file requirement in current linked return instructions | Prior-year tax paid more than $25,000; also more than 10 municipalities | [CST-200CU instructions pp.1-2](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| Records | At least 3 years, and longer while period is open for assessment/refund | [TSD 345 p.2](https://tax.wv.gov/Documents/TSD/tsd345.pdf) |
 
-- **Missing info stop condition** — If the client cannot answer questions 1-4, STOP and gather this information before proceeding. (T1)
+The remote-seller FAQ contains conflicting introductory AND/OR wording and a boundary reference to reaching $100,000. Its specific "How is the small-seller exception determined?" answer uses $100,000 or less AND fewer than 200 transactions; use that explicit test and refer a seller exactly on the dollar boundary for written confirmation. It includes taxable and nontaxable sales. Re-test the preceding calendar year and the current year; after a threshold is met, the FAQ requires collection on sales after that day. A seller making only nontaxable sales need not register to collect sales tax solely because of the threshold. [Remote-seller FAQ](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx).
 
-### 1.1 State Sales Tax Rate
+### Taxability and exceptions
 
-- **Consumers Sales and Service Tax rate** — 6.00% percent (T1)  _(W.Va. Code §11-15-3)_
-- **Consumers Sales and Service Tax naming note** — The name "Consumers Sales and Service Tax" reflects that WV broadly taxes services, unlike states that only tax TPP. (T1)
+| Old topic retained | 2026 treatment and condition | Source |
+| --- | --- | --- |
+| Tangible goods and clothing | Generally taxable unless a specific exemption applies; retail clothing is not categorically exempt | [TSD 345 p.1](https://tax.wv.gov/Documents/TSD/tsd345.pdf) |
+| Grocery food, prepared food, candy, soft drinks | Qualifying food/ingredients are exempt, including candy and dietary supplements meeting the food definition; prepared food, vending-machine food and soft drinks remain taxable. Apply the statutory definitions, including seller heating/mixing/utensil tests and exceptions | [§11-15-3a](https://code.wvlegislature.gov/11-15-3a/), [§11-15-3b](https://code.wvlegislature.gov/11-15-3b/), [§11-15B-2(b)](https://code.wvlegislature.gov/11-15B-2/) |
+| Prescription medicines, DME, mobility aids and prosthetics | Exempt when dispensed on a qualifying prescription for diagnosis/cure/mitigation/treatment/prevention; insulin also exempt. No blanket exemption for all equipment | [TSD 300 pp.1-2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| OTC drugs and supplements | Nonprescription medications are taxable; distinguish a drug from a qualifying dietary supplement/food. In the old $25 OTC plus $20 qualifying supplement case, $25 is taxable, state-only tax is $1.50 and total $46.50 | [TSD 300 p.2; TSD 345 pharmacy example](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Lawyers, CPA accounting, engineers, architects and doctors | Recognized professional services are per-se exempt; the professional's own business purchases generally remain taxable. The old legal and tax-preparation examples incorrectly charged tax | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Haircuts, manicures, massage | Personal services to the person exempt; ordinary physical-fitness programs generally are not, while personalized fitness services are exempt | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Repairs, maintenance, cleaning, security, web/IT services and consulting | Taxable-services presumption applies, but determine professional, personal, data-processing and other exemptions before taxing a contract. Never characterize every consultant as a recognized professional | [TSD 300; TSD 345](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Custom software | Explicitly included in CST-200CU reporting; classify with any related exempt data-processing service before concluding | [CST-200CU p.1](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf) |
+| SaaS, canned software, digital downloads and streaming | The legacy blanket taxable rule is not sufficiently confirmed for every delivery model. Data-processing services and related software have a specific exemption. Contract-by-contract review required; see unconfirmed list | [TSD 300 p.4](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Manufacturing equipment/materials/utilities | Direct-use equipment, supplies, materials and services can qualify; incidental/convenient uses do not. Follow the applicable certificate, refund or direct-pay procedure; no blanket business-input exemption | [TSD 300 p.3](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Agriculture: machinery, feed, seed, fertilizer, breeding livestock | Commercial-production purchases can qualify; construction/permanent real-property improvements are excluded from that general category. Verify direct production purpose and documentation | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Government, nonprofits, schools and financial institutions | Status alone is not enough. Government billing/payment and nonprofit statutory conditions matter. Credit unions are separately identified; do not assume every bank or nonprofit is exempt | [TSD 300 pp.1,4](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Advertising and media buying | Listed broadcast time, preprinted circulars, outdoor space and newspaper/magazine advertising are per-se exempt. Agency consulting, digital-advertising and bundled services need separate classification; old all-advertising-taxable assertion withdrawn | [TSD 300 p.1](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Transportation and telecommunications | Regulated public services and interstate passenger transport have specified exemptions; mobile/paging and unregulated services are not automatically exempt | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| Educational services | Schools/camp tuition and qualifying organizations have specific exemptions; the old all-nonprofit-education assertion needs the actual transaction conditions | [TSD 300 pp.1,4](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
 
-### 1.2 Local Sales Taxes [T1]
+### Construction classification before charging tax
 
-- **Municipal local sales tax cap** — Up to 1.00% percent (T1)
-- **Not all municipalities have adopted local option** — Not all municipalities have adopted the local option. (T1)
-- **Combined rate where local adopted** — 7.00% percent (T1)
-- **Local tax administration** — Local taxes are administered by the State Tax Division. (T1)
+A capital improvement substantially adds value or prolongs useful life, becomes permanently part of the real property so removal causes material damage, and is intended to remain permanently/indefinitely. Such contracting charges are exempt, while the contractor generally pays tax on its inputs. Non-capital-improvement repair, maintenance or installation is taxable on labor and materials; physically transferred resale parts/materials may qualify for resale. [TSD 310 p.1](https://tax.wv.gov/Documents/TSD/tsd310.pdf).
 
-### 1.3 Sourcing [T1]
+The old $200,000 Charleston renovation case cannot be taxed without that classification. If it is a qualifying capital improvement, no tax is collected on the contract; inputs are generally taxable. If it is taxable repair and no exemption applies, $200,000 x 7% = $14,000. The July 2026 TSD 310 also identifies a new July 1, 2026 public-school-facility exemption for directly used/consumed services and building materials, with F0003 or CST-240 procedure. It is not an exemption for every contractor purchase. [TSD 310 p.1](https://tax.wv.gov/Documents/TSD/tsd310.pdf).
 
-- **Sourcing method** — West Virginia uses destination-based sourcing. (T1)
-- **SST sourcing rules** — As an SST member, West Virginia follows SSUTA sourcing rules. (T1)
+### Sourcing, registration and marketplace sales
 
-### 2.1 Grocery Food -- EXEMPT [T1]
+Source to receipt of the goods or first use of the service under the destination hierarchy, including customer pickup when receipt occurs at the shop. Check the municipal boundary and transaction date rather than relying on postal city/ZIP alone. The read municipal table names future 2027 changes too; do not apply them in 2026. Use the state boundary/rate files for the period. [Remote FAQ sourcing answer](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx); [municipal page](https://tax.wv.gov/business/salesandusetax/municipalsalesandusetax/pages/municipalsalesandusetax.aspx).
 
-- **Unprepared grocery food exemption** — Exempt. (T1)  _(W.Va. Code §11-15-9(a)(8))_
-- **Prepared food taxability** — Taxable at the full combined rate. (T1)
-- **Candy taxability** — Taxable. (T1)
-- **Soft drinks taxability** — Taxable. (T1)
-- **SST food definitions** — West Virginia follows SST food definitions. (T1)
+Register a physical-presence seller or remote seller required to collect through the state's online business-registration process, then activate the sales/use account in MyTaxes at https://mytaxes.wvtax.gov. WV participates in Streamlined Sales Tax registration and certified-provider filing; the state remote FAQ describes both routes. Registration is separate from classifying each sale. A qualifying facilitator collects for facilitated transactions; retain its reports and reconcile the marketplace deduction without omitting direct sales. The current return instructions explicitly include marketplace sales in gross sales and provide a deduction on Schedule D Part 1 line 14. Detailed facilitator eligibility thresholds are not confirmed here. [Remote FAQ](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx); [CST-200CU pp.3-5](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf).
 
-### 2.2 Clothing [T1]
+### The return, payment and use tax
 
-- **Clothing taxability** — Clothing is fully taxable. No exemption. (T1)
+1. Reconcile invoices and marketplace statements to gross WV sales. On CST-200CU line 1 column A enter gross sales including exempt and facilitator sales; line 1B deductions from Schedule D Part 1; 1C net taxable base; 1E tax.
+2. Line 2 reports untaxed purchases for WV use, with allowed deductions in Schedule D Part 2. Credit lawfully paid other-state sales/use tax in Schedule D Part 3 up to the WV state liability on the same taxable purchase; municipal credits are separately limited to municipal use tax. Do not claim a credit on a WV-exempt item merely because another state charged tax.
+3. Prepare Schedule M by municipality and FIPS code. Transfer municipal sales/use totals to return lines 3/4. Retain the period's actual form because the instructions' Schedule M column labels differ between narrative and transfer references; follow the current displayed form and reconcile totals.
+4. Line 5 includes excess tax collected; lines 6/7 interest/additions; line 8 total; line 9 prior payment; lines 10/11 permitted credits; line 12 balance/credit. Negative use tax is not accepted. For prior sales adjustments/refunds/bad debts use the prescribed S/U/BD supplemental schedules and request review rather than netting unsupported refunds.
+5. File for each assigned period, including zero periods (enter zero as instructed on lines 8/12). Pay by ACH debit/credit or an authorized method, save acceptance and payment confirmation, and reconcile the bank debit. Do not assume a timely-vendor discount: the read return gives no ordinary discount field. Retain returns, invoices, certificates and calculation workpapers. [CST-200CU pp.1-6](https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf).
 
-### 2.3 Prescription Drugs and Medical [T1]
+The current CST instructions say annual returns are due the 20th; a remote FAQ answer says 30th. Use the current return's 20th-day instruction, which is earlier and agrees with its general answer, and flag the stale FAQ sentence. The old quarterly $150/$600 frequency bands are not supported by the current instructions.
 
-- **Prescription drugs exemption** — Exempt. (T1)  _(W.Va. Code §11-15-9(a)(6))_
-- **OTC drugs exemption** — Exempt. (T1)
-- **DME exemption** — Exempt. (T1)
-- **Prosthetics exemption** — Exempt. (T1)
+## Boundary and exception table
 
-### 2.4 Services -- BROADLY TAXABLE [T1]
-
-- **Broad service taxation statement** — West Virginia taxes a very broad range of services. Along with Hawaii, New Mexico, and South Dakota, WV is one of the broadest service-taxing states. (T1)
-- **Taxable services list** — Taxable services include (non-exhaustive): Professional services: legal, accounting, consulting, engineering (many are taxable). Personal care: haircuts, spa, beauty treatments. Repair and maintenance. Cleaning and janitorial. IT services, web design, software development. Construction services. Health and fitness. Telecommunications. Transportation and courier services. Advertising services. Security services. (T1)
-- **Medical/healthcare services exemption** — Medical/healthcare services (physician, dental, hospital) are exempt. (T1)
-- **Educational services exemption** — Educational services provided by nonprofit institutions are exempt. (T1)
-- **Financial intermediation services exemption** — Financial intermediation services (banking) exemption. (T2)
-- **Statute for broad taxable services definition** — Broad definition of taxable services.  _(W.Va. Code §11-15-3)_
-
-### 2.5 SaaS and Digital Goods -- TAXABLE [T1]
-
-- **SaaS taxability** — Taxable in West Virginia. WV's broad service tax base includes remotely accessed software. (T1)  _(W.Va. Code §11-15-2(b)(19))_
-- **Canned software taxability** — Canned software (physical and electronic): Taxable. (T1)
-- **Custom software taxability** — Custom software: Taxable (WV taxes custom software, unlike many states). (T1)
-- **Digital downloads taxability** — Digital downloads: Taxable. (T1)
-- **Streaming services taxability** — Streaming services: Taxable. (T1)
-- **Custom software note** — West Virginia is notable for taxing CUSTOM software, which most states exempt. (T1)
-
-### 2.6 Manufacturing [T1]
-
-- **Manufacturing machinery and equipment exemption** — Exempt. (T1)  _(W.Va. Code §11-15-9(b)(3))_
-- **Raw materials for resale exemption** — Exempt under resale. (T1)
-- **Utilities used in manufacturing** — Reduced rate or exemption for qualifying manufacturers. (T2)
-
-### 2.7 Agricultural [T1]
-
-- **Farm machinery and equipment exemption** — Exempt. (T1)  _(W.Va. Code §11-15-9(a)(3))_
-- **Feed, seed, fertilizer exemption** — Exempt. (T1)
-- **Livestock for breeding/production exemption** — Exempt. (T1)
-
-### 4.1 Filing Details [T1]
-
-**Filing Details**
-
-| Field | Detail |
+| Situation | Action |
 | --- | --- |
-| Return Form | CST-200 (Consumers Sales and Service Tax Return) |
-| Filing Frequencies | Monthly (>$600/quarter avg); Quarterly ($150-$600); Annually (<$150) |
-| Due Date | 20th of the month following the reporting period |
-| Portal | https://tax.wv.gov (MyTaxes) |
-| E-filing | Required for most filers |
+| Recognized professional service vs taxable IT consulting | Document actual work, professional status and separate goods/services |
+| Exempt sale | Retain per-se proof or valid F0003/direct-pay documentation; never assume government/nonprofit status alone suffices |
+| Exempt customer's contractor | Customer exemption does not automatically pass through; apply the specified construction exceptions |
+| Untaxed remote purchase | Purchaser use tax remains even when the seller is a small seller |
+| Manufacturer or agricultural business | Separate direct-use/production items from administration, construction and incidental inputs |
+| Audit, voluntary disclosure, abatement or ambiguous bundled service | Stop final output and refer with the contract and primary-source issue |
 
-### 4.2 Vendor Discount [T1]
+## Worked cases
 
-- **Vendor discount** — West Virginia does NOT offer a vendor discount for timely filing. (T1)
+**Case 1:** Charleston furniture $1,000 x 7% = $70; total $1,070. Separately, Morgantown legal services by a recognized lawyer at $2,000 are exempt, tax $0, total $2,000. The exemption changes the outcome despite both cities imposing municipal tax. The old legal-services case overstated tax by $140.
 
-### 4.3 Penalties and Interest [T1]
+```oa-check
+name: WV taxable goods and exempt professional service
+inputs:
+  furniture: 1000
+  legal: 2000
+steps:
+- goods_tax: furniture * 0.07
+- goods_total: furniture + goods_tax
+- legal_tax: legal * 0
+- legal_total: legal + legal_tax
+expected:
+  goods_tax: 70
+  goods_total: 1070
+  legal_tax: 0
+  legal_total: 2000
+```
+**Case 2:** A registered business brings $10,000 of taxable equipment into a 1% municipality. It lawfully paid $400 state and $150 local tax elsewhere on the same equipment. WV state use tax is $600 less $400 = $200; municipal use tax is $100 less a capped $100 credit = $0. Total additional tax is $200. If neither tax was paid elsewhere, both credits are zero and $700 is due; retain payment evidence before choosing that branch.
 
-- **Late filing penalty** — 5% of tax due per month, up to 25%. (T1)
-- **Late payment penalty** — 0.5% per month, up to 25%. (T1)
-- **Interest** — Rate set by statute, based on federal underpayment rate. (T1)
+```oa-check
+name: WV input use tax and credit ceiling
+inputs:
+  cost: 10000
+  state_paid: 400
+  local_paid: 150
+steps:
+- state_gross: cost * 0.06
+- municipal_gross: cost * 0.01
+- state_net: state_gross - min(state_gross, state_paid)
+- municipal_net: municipal_gross - min(municipal_gross, local_paid)
+- net: state_net + municipal_net
+- without_credit: state_gross + municipal_gross
+expected:
+  state_gross: 600
+  municipal_gross: 100
+  state_net: 200
+  municipal_net: 0
+  net: 200
+  without_credit: 700
+```
 
-## Step 4: Deductibility / Exemptions
 
-Exemptions identified in Step 2 above are the primary deductibility rules for West Virginia. Key categories: [T1]
+Legacy fact patterns retained for review: the $5,000 IT consulting/$10,000 custom-development/$3,000 canned-software bundle totals $18,000, but each component now requires classification rather than assuming all taxable. If all three are independently taxable, tax is $1,080 state-only or $1,260 at 7%; otherwise remove only the exempt components. Similarly the $5,000 development plus $500 SaaS and the $15,000 custom-software cases need the software/data-processing determination; if taxable at 6%, results remain $300/$30 and $900 respectively. A taxable $8,000 Morgantown consulting service would give $560 and total $8,560; recognized professional exemption changes this to zero. A remote firm with $120,000 prior-year WV receipts fails the sales-value small-seller exception, but exempt professional-only sales do not thereby become taxable. The old $200 qualifying unprepared-grocery case is exempt, tax $0 and total $200; a prepared/vending/soft-drink item is not covered by that result.
 
-- **Resale exemption** — Valid resale certificate required. Retain for the statutory period. (T1)
-- **Exempt organizations** — Government entities and qualifying nonprofits -- require exemption certificate on file. (T1)
-- **Agricultural exemptions** — Where applicable per Step 2. (T1)
-- **Manufacturing exemptions** — Where applicable per Step 2. (T2)
-- **Exemption certificate retention** — All exemption certificates must be collected at or before the time of sale and retained per the state's statute of limitations. (T1)
+## When to refuse or refer
 
-### 3.1 Economic Nexus Threshold [T1]
+Refer software/SaaS and mixed professional-service contracts until classified, food-definition and special medical products, specialized manufacturing/direct-pay claims, complex multi-state nexus, special districts, refund disputes, audits and abatement. Do not send an unsupported legacy example to a filing system.
 
-**Economic Nexus Threshold**  _(W.Va. Code §11-15A-6b)_
+## Filing and payment
 
-| Field | Detail |
-| --- | --- |
-| Revenue Threshold | $100,000 in West Virginia sales |
-| Transaction Threshold | 200 transactions |
-| Test | OR (either threshold triggers nexus) |
-| Measurement Period | Current or prior calendar year |
-| Effective Date | January 1, 2019 |
+Use MyTaxes for the assigned return and account, retaining the submission and bank confirmation. Late filing/payment additions and period interest require the actual delinquent period's notice; the old 5%/0.5%/25% assertions have not been re-verified for sales/use and remain unconfirmed below.
 
-### 3.2 Marketplace Facilitator [T1]
+## Completion checklist
 
-- **Marketplace facilitator collection requirement** — West Virginia requires marketplace facilitators to collect and remit. (T1)  _(W.Va. Code §11-15A-6c)_
+- Nexus determined independently of whether a particular sale is exempt.
+- Actual product/service exemption and evidence recorded.
+- Period-specific municipality, boundary and rate selected.
+- Gross sales, marketplace deductions, taxable sales and untaxed purchases reconciled.
+- Filed return, payment and any refund/adjustment schedules retained.
 
-### 3.3 SST Registration [T1]
+## Sources
 
-- **SST membership status** — Full SST member. SSTRS and CSPs available. (T1)
+| Source and reading scope | URL | Read on |
+| --- | --- | --- |
+| CST-200CU current linked instructions. Read for pp.1-6: rate, frequencies, return fields, credits and supplemental schedules. | https://tax.wv.gov/Documents/CST/cst200cu.instructions.pdf | 2026-11-13 |
+| TSD 300, January 2026. Read for pp.1-4: per-se exemptions, prescriptions/OTC, professions, agriculture, manufacturing and data processing. | https://tax.wv.gov/Documents/TSD/tsd300.pdf | 2026-11-13 |
+| TSD 310, July 2026. Read for pp.1-3: capital-improvement test, materials/resale, public-school change and pass-through exceptions. | https://tax.wv.gov/Documents/TSD/tsd310.pdf | 2026-11-13 |
+| Municipal sales/use page. Read for rate/effective-date table, boundaries, sourcing and municipal credit limits; examples containing older city status not treated as current. | https://tax.wv.gov/business/salesandusetax/municipalsalesandusetax/pages/municipalsalesandusetax.aspx | 2026-11-13 |
+| Remote-seller FAQ. Read for small-seller computation, registration, sourcing and inconsistent introductory/due-date text. | https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx | 2026-11-13 |
+| TSD 345. Read for pp.1-3: collection responsibilities, documentation and retention. | https://tax.wv.gov/Documents/TSD/tsd345.pdf | 2026-11-13 |
+| West Virginia Code §§11-15-3a and 3b. Read for food-tax cessation and neighboring taxable exceptions; section 3b also read at https://code.wvlegislature.gov/11-15-3b/. | https://code.wvlegislature.gov/11-15-3a/ | 2026-11-13 |
+| West Virginia Code §11-15B-2. Read for food/ingredients, candy, supplements and prepared-food definitions. | https://code.wvlegislature.gov/11-15B-2/ | 2026-11-13 |
+| West Virginia Code §11-15-9(a)(21). Read for electronic-data-processing definition and related-software exemption. | https://code.wvlegislature.gov/11-15-9/ | 2026-11-13 |
+| Marketplace facilitator page. Read for facilitator collection, registration and municipal sourcing. | https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/MarketplaceFacilitators/Pages/MarketplaceFacilitators.aspx | 2026-11-13 |
 
-## Step 6: Filing Deadlines and Penalties
-
-Refer to Step 3 for filing frequencies and due dates. [T1]
-
-## PROHIBITIONS
-
-- **Never assume services exempt** — NEVER assume services are exempt in West Virginia. WV taxes virtually ALL services, including professional services. (T1)
-- **Never assume custom software exempt** — NEVER assume custom software is exempt in WV. Unlike most states, WV taxes custom software. (T1)
-- **Never assume SaaS exempt** — NEVER assume SaaS is exempt. WV taxes SaaS. (T1)
-- **Never tax grocery food** — NEVER tax grocery food in WV. Unprepared food is exempt. (T1)
-- **Never forget OTC drug exemption** — NEVER forget the OTC drug exemption. OTC drugs are exempt in WV. (T1)
-- **Never assume uniform rate** — NEVER assume a uniform rate. Municipal add-ons of up to 1% may apply. (T1)
-- **Never compute arithmetic** — NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude. (T1)
-
-### EC1 -- Professional Services Taxable [T2]
-
-**Situation:** An out-of-state accounting firm provides tax preparation services to WV clients. Is the fee taxable?
-
-**Resolution:**
-- Accounting services ARE taxable in West Virginia. [T1]
-- If the firm meets economic nexus, it must collect WV sales tax on fees. [T1]
-- Many out-of-state service providers are unaware of WV's broad service taxation. [T2]
-- **Flag for reviewer:** WV is one of the few states taxing professional services. Verify that all service revenue streams are evaluated. [T2]
-
-### EC2 -- Custom Software Taxable [T2]
-
-**Situation:** A software development company creates a custom application for a WV client. Is the development fee taxable?
-
-**Resolution:**
-- West Virginia taxes CUSTOM software, unlike most states that only tax canned software. [T1]
-- The development fee is subject to the 6% state rate + local. [T1]
-- This is unusual nationally -- most states exempt custom software. [T1]
-- **Flag for reviewer:** Developers accustomed to custom software exemptions in other states must adjust for WV. [T2]
-
-### EC3 -- Broad Service Base Impact on Compliance [T2]
-
-**Situation:** A multi-state service company needs to determine which of its services are taxable in WV vs. other states.
-
-**Resolution:**
-- WV taxes virtually all services. The starting assumption should be that a service is taxable, then check for specific exemptions. [T1]
-- This is the opposite approach from most states, where services are assumed exempt unless specifically enumerated. [T1]
-- The company should review its entire revenue mix against WV law. [T2]
-- **Flag for reviewer:** In WV, the question is "is there an exemption?" rather than "is the service specifically taxable?" [T2]
-
-### EC4 -- OTC Drug Exemption [T1]
-
-**Situation:** A retailer asks whether OTC medications are taxable in WV.
-
-**Resolution:**
-- OTC drugs are exempt in West Virginia. [T1]
-- Dietary supplements are NOT OTC drugs and are taxable. [T2]
-- **Flag for reviewer:** Ensure POS systems distinguish between OTC drugs and dietary supplements. [T2]
-
-### EC5 -- IT Consulting and Software Bundle [T2]
-
-**Situation:** An IT company provides consulting ($5,000), custom software development ($10,000), and canned software licenses ($3,000) to a WV client.
-
-**Resolution:**
-- IT consulting: taxable (service). [T1]
-- Custom software development: taxable (WV taxes custom software). [T1]
-- Canned software licenses: taxable. [T1]
-- ALL three components are taxable at the combined rate. [T1]
-- Total taxable = $18,000. [T1]
-- **Flag for reviewer:** In most other states, custom software and IT consulting would be exempt. WV is unusual. [T2]
-
-### EC6 -- Construction Services [T2]
-
-**Situation:** A contractor performs a $200,000 renovation on a commercial building in Charleston.
-
-**Resolution:**
-- Construction services are subject to the consumers sales and service tax. [T1]
-- The contractor should collect tax on the contract price. [T1]
-- The contractor does NOT separately pay tax on materials (the tax is on the service, not the materials). [T2]
-- Different from states where the contractor pays tax on materials and does not charge the customer. [T1]
-- **Flag for reviewer:** WV's construction tax treatment may differ from the contractor's experience in other states. Verify application. [T2]
-
-### EC7 -- Advertising and Marketing Services [T2]
-
-**Situation:** A marketing agency provides advertising campaign services to a WV business.
-
-**Resolution:**
-- Advertising services are taxable in West Virginia. [T1]
-- The agency must collect WV sales tax on its fees if it has nexus. [T1]
-- Digital advertising, print advertising, and media buying are all subject to tax. [T2]
-- **Flag for reviewer:** Most states exempt advertising services. WV's broad base captures them. [T2]
-
-### Test 1 -- Basic Taxable Sale
-
-**Input:** Seller in Charleston sells $1,000 of furniture. Combined rate = 7% (6% state + 1% local).
-**Expected output:** Tax = $1,000 x 7% = $70.00. Total = $1,070.00.
-
-### Test 2 -- Grocery Food Exempt
-
-**Input:** Customer buys $200 of unprepared groceries in Huntington.
-**Expected output:** Groceries are EXEMPT. Tax = $0. Total = $200.00.
-
-### Test 3 -- Legal Services Taxable
-
-**Input:** Attorney in Morgantown bills $2,000 for legal services. Combined rate = 7%.
-**Expected output:** Legal services ARE taxable. Tax = $2,000 x 7% = $140.00. Total = $2,140.00.
-
-### Test 4 -- SaaS and Custom Software Taxable
-
-**Input:** Software company charges $5,000 for custom development + $500/month SaaS to a WV client. Combined rate = 6% (no local).
-**Expected output:** BOTH are taxable. Custom dev tax = $5,000 x 6% = $300.00. SaaS tax = $500 x 6% = $30.00/month.
-
-### Test 5 -- Economic Nexus
-
-**Input:** Remote consulting firm from Virginia earned $120,000 from WV clients in the prior year.
-**Expected output:** $120,000 exceeds $100,000. Nexus IS triggered. Must register and collect on WV-delivered services.
-
-### Test 6 -- IT Consulting Taxable
-
-**Input:** IT consultant charges $8,000 for consulting services in Morgantown. Combined rate = 7%.
-**Expected output:** IT consulting IS taxable. Tax = $8,000 x 7% = $560.00. Total = $8,560.00.
-
-### Test 7 -- Custom Software Taxable
-
-**Input:** Developer charges $15,000 for custom application built for WV client. Rate = 6% (no local).
-**Expected output:** Custom software IS taxable in WV. Tax = $15,000 x 6% = $900.00. Total = $15,900.00.
-
-### Test 8 -- OTC Drug Exemption
-
-**Input:** Customer buys $25 OTC pain reliever and $20 dietary supplement. Combined rate = 6%.
-**Expected output:** OTC drug: exempt. Supplement: taxable. Tax = $20 x 6% = $1.20. Total = $46.20.
-
-## Reviewer Escalation Protocol
-
-**Reviewer Escalation Protocol**
-
-| Trigger | Action |
-| --- | --- |
-| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
-| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
-| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
-| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
-| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
-
-## Contribution Notes
-
-- This skill follows the Q1 execution format (Step 0 through Step 7).
-- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
-- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
-- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
-- All changes require validation by a US CPA or EA before merging.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: current holiday exceptions; SaaS, canned/custom software and digital/streaming classification in every delivery model; financial-intermediation and broad education exemptions; current facilitator definition/thresholds; sales/use penalty rates, interest and statutory vendor-discount prohibition. These were legacy subjects, not silently removed. TSD 300 confirms exempt data processing and related software, so the old blanket software/service rules must not be reused.
