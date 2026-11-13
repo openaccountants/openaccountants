@@ -1,30 +1,48 @@
-# Montana — OpenAccountants Tax Skills
+---
+jurisdiction: US-MT
+applicable:
+- IT-IND
+- IT-CORP
+- SC
+- PR
+not_applicable:
+  VAT: Montana has no general sales or use tax; selective lodging, rental vehicle
+    and local resort taxes are separate.
+  TP: No separate state transfer pricing documentation job; related-party and unitary
+    rules belong in corporate analysis.
+  XB: Resident/nonresident individual treatment is within mt-income-tax; complex corporate
+    interstate sourcing remains partial.
+covered_by:
+  IT-IND: mt-income-tax
+  IT-CORP: mt-corporate-tax
+  SC: mt-payroll
+  PR: mt-payroll
+partial:
+  IT-IND: Existing repaired 2026 income skill is retained unchanged; it still identifies
+    unpublished Form 2 and indexed subtraction/proration gaps.
+  IT-CORP: 2026 return form not confirmed; detailed multistate sourcing, unitary groups,
+    credits and NOL calculations referred.
+  SC: UI coverage thresholds and monetary delinquency penalty calculations for special
+    employer groups are not covered.
+---
 
-| Field | Value |
-|---|---|
-| State | Montana |
-| Code | US-MT |
-| Income tax | Yes |
-| Sales tax | No |
-| Franchise / gross receipts tax | No |
-| Tax authority | [Montana Department of Revenue](https://revenue.mt.gov) |
-| Quality tier | Q3 — AI-drafted, not independently verified |
+# Montana: 2026 tax skills
 
-## Files in this folder
+Montana taxes personal and corporate income but has no general sales tax. The repaired income skill is preserved; this batch fills the missing corporate and payroll jobs. All are source-cited drafts without accountant approval. Currency is USD. No separate general sales skill is created. Selective taxes, property, estate/trust and pass-through entity return computations remain outside this four-job pack.
 
-| File | What it covers |
-|---|---|
-| `mt-income-tax.md` | Individual income tax for self-employed / sole proprietors (Form 2) |
+## Domains
 
-## What's NOT covered
+| Job | Skill | Status |
+| --- | --- | --- |
+| IT-IND | `mt-income-tax` | checked against the law; not accountant-reviewed |
+| IT-CORP | `mt-corporate-tax` | checked against the law; not accountant-reviewed |
+| SC | `mt-payroll` | checked against the law; not accountant-reviewed |
+| PR | `mt-payroll` | checked against the law; not accountant-reviewed |
 
-- Corporate income tax (Form CIT)
-- Estate tax (Montana has no estate tax)
-- Part-year and non-resident returns (Form 2, Schedule IV)
-- Partnership / S-corp pass-through (Form PR-1 / Form CLT-4S)
-- Property tax (administered at county level)
-- Sales tax — Montana does not impose a general sales tax
+## Official sources
 
-## How to use
-
-Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM.
+- [DOR corporate tax](https://revenue.mt.gov/taxes/corporate-income-tax), read 2026-11-13.
+- [DOR employer instructions](https://revenuefiles.mt.gov/files/Forms/Montana_Employer_and_Information_Agent_Guide_with_Tax_Tables.pdf), read 2026-11-13.
+- [DLI 2026 UI rates](https://uid.dli.mt.gov/_docs/contributions-bureau/Rate-Explanation.pdf), read 2026-11-13.
+- [DLI UI forms and registration](https://uid.dli.mt.gov/forms), read 2026-11-13.
+- Income sources and their original read dates remain in `mt-income-tax`.
