@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T04:58:15+00:00",
+ "generated_at": "2026-11-13T08:24:36+00:00",
  "counts": {
-  "guides": 2259,
-  "loadable_skill_names": 2196,
-  "jurisdictions": 257,
-  "accountant_reviewed": 132,
+  "guides": 2251,
+  "loadable_skill_names": 2188,
+  "jurisdictions": 256,
+  "accountant_reviewed": 131,
   "held_skill_names": 115
  },
  "publication_holds": [
@@ -28937,8 +28937,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "tn-sales-tax",
@@ -29120,7 +29120,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "vt-sales-tax",
@@ -29132,8 +29132,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wa-b-and-o-tax",
@@ -29511,110 +29511,6 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-01"
-  },
-  {
-   "slug": "venezuela-corporate-tax",
-   "mcp_slug": "venezuela-corporate-tax",
-   "path": "skills/venezuela/venezuela-corporate-tax.md",
-   "name": "venezuela-corporate-tax",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-cross-border-tax",
-   "mcp_slug": "venezuela-cross-border-tax",
-   "path": "skills/venezuela/venezuela-cross-border-tax.md",
-   "name": "venezuela-cross-border-tax",
-   "jurisdiction": "VE",
-   "category": "cross-border",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-income-tax",
-   "mcp_slug": "venezuela-income-tax",
-   "path": "skills/venezuela/venezuela-income-tax.md",
-   "name": "venezuela-income-tax",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-iva",
-   "mcp_slug": "venezuela-iva",
-   "path": "skills/venezuela/venezuela-iva.md",
-   "name": "venezuela-iva",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-payroll",
-   "mcp_slug": "venezuela-payroll",
-   "path": "skills/venezuela/venezuela-payroll.md",
-   "name": "venezuela-payroll",
-   "jurisdiction": "VE",
-   "category": "payroll",
-   "tier": 1,
-   "verified_by": null,
-   "reviewed_by": "Jose Padilla",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "venezuela-social-contributions",
-   "mcp_slug": "venezuela-social-contributions",
-   "path": "skills/venezuela/venezuela-social-contributions.md",
-   "name": "venezuela-social-contributions",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-tax-optimization",
-   "mcp_slug": "venezuela-tax-optimization",
-   "path": "skills/venezuela/venezuela-tax-optimization.md",
-   "name": "venezuela-tax-optimization",
-   "jurisdiction": "VE",
-   "category": "tax-optimization",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-transfer-pricing",
-   "mcp_slug": "venezuela-transfer-pricing",
-   "path": "skills/venezuela/venezuela-transfer-pricing.md",
-   "name": "venezuela-transfer-pricing",
-   "jurisdiction": "VE",
-   "category": "transfer-pricing",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
   },
   {
    "slug": "references",
