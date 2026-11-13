@@ -120,9 +120,9 @@ The verified **2025-2026 filing cycle** general instructions require corporate e
 
 | Official source and scope actually read | URL | Read on |
 |---|---|---|
-| Read Notice 2026-01: full two-page LLC/entity table, minimums, filing dates, single-member footnotes and PTE/PTW discussion. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-02/Notice_2026_01_LLC_filing_requirements.pdf | 2026-11-13 |
-| Read 2025 RI-1120C instructions: federal reconciliation, lines 1 to 12, Schedule H/minimum worksheet, HR1 discussion and e-file mandate. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%201120C%20Instructions%20with%20Credit%20Worksheets.pdf | 2026-11-13 |
-| Read 2025 corporation general instructions: filing/extension, pass-through withholding and estimate sections, neighboring exceptions. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20Business%20Corp%20General%20Instructions.pdf | 2026-11-13 |
-| Read ADV 2026-02: R&D expense-credit carryforward and 2026 credit/deduction sunset table. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf | 2026-11-13 |
+| Read for Notice 2026-01: full two-page LLC/entity table, minimums, filing dates, single-member footnotes and PTE/PTW discussion. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-02/Notice_2026_01_LLC_filing_requirements.pdf | 2026-11-13 |
+| Read for 2025 RI-1120C instructions: federal reconciliation, lines 1 to 12, Schedule H/minimum worksheet, HR1 discussion and e-file mandate. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%201120C%20Instructions%20with%20Credit%20Worksheets.pdf | 2026-11-13 |
+| Read for 2025 corporation general instructions: filing/extension, pass-through withholding and estimate sections, neighboring exceptions. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20Business%20Corp%20General%20Instructions.pdf | 2026-11-13 |
+| Read for ADV 2026-02: R&D expense-credit carryforward and 2026 credit/deduction sunset table. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/ADV_2026_02_Tax-Changes.pdf | 2026-11-13 |
 
 Not yet confirmed: final 2026 RI-1120C/1120S/1065, schedules, apportionment/market sourcing, combined-reporting membership, loss limitations, HR1 conformity and PTE/PTW election calculation; 2026 estimate/extension procedures and specialist rates. Ordinary rate/minimum and entity classification are supported by the dated 2026 notice; final filing completeness remains partial.

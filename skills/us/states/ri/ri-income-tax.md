@@ -136,9 +136,9 @@ The posted 2026 ES draft requires estimates when tax over credits is **USD 250 o
 
 | Official source and scope actually read | URL | Read on |
 |---|---|---|
-| Read ADV 2025-22: 2026 brackets, deductions, exemptions and phase-out; neighboring 2025 retirement paragraphs read and kept separate. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf | 2026-11-13 |
-| Read Posted 2026 RI-1040ES: pages 1 to 2, estimate trigger, dates, rate and phase-out worksheets. DRAFT 10/01/2025 watermark. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-10/2026%20RI-1040ES_bd.pdf | 2026-11-13 |
-| Read 2025 resident instructions: residency, filing, extensions, RI-1040 lines 1 to 15, Schedule EIC, W and M, retirement and HR1 sections. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf | 2026-11-13 |
-| Read 2025 individual Schedule HR1: four adjustment categories, K-1 references and line 1f destination Schedule M 2k. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20HR1%20-%20Individual_w_0.pdf | 2026-11-13 |
+| Read for ADV 2025-22: 2026 brackets, deductions, exemptions and phase-out; neighboring 2025 retirement paragraphs read and kept separate. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf | 2026-11-13 |
+| Read for Posted 2026 RI-1040ES: pages 1 to 2, estimate trigger, dates, rate and phase-out worksheets. DRAFT 10/01/2025 watermark. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-10/2026%20RI-1040ES_bd.pdf | 2026-11-13 |
+| Read for 2025 resident instructions: residency, filing, extensions, RI-1040 lines 1 to 15, Schedule EIC, W and M, retirement and HR1 sections. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf | 2026-11-13 |
+| Read for 2025 individual Schedule HR1: four adjustment categories, K-1 references and line 1f destination Schedule M 2k. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20HR1%20-%20Individual_w_0.pdf | 2026-11-13 |
 
 Not yet confirmed: final 2026 RI-1040/RI-1040NR, Schedule M/HR1/EIC/W and tax-table line mapping; final version of the posted 2026 ES draft; 2026 retirement thresholds, credit/circuit-breaker amounts and detailed eligibility; alleged USD 500 child credit; final 2026 federal conformity; local income-tax assertion. The old 2025 standard deduction/exemption figures are superseded by the fetched 2026 advisory, and federal deduction figures route to the federal owner skill.
