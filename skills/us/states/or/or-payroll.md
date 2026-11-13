@@ -1,386 +1,325 @@
 ---
 name: or-payroll
-description: Tier 2 Oregon content skill for employer payroll compliance covering tax year 2025. Includes the OR PIT brackets up to 9.9%, supplemental wage rate 8.0%, OR-W-4 state withholding form, Form OQ quarterly combined withholding/UI return, OR UI wage base $54,300 (highest in US) with rates 0-5.4%, the Statewide Transit Tax 0.1% on all wages (no cap), TriMet 0.8237% employer payroll tax for Portland area, Lane Transit 0.79% for Eugene, the OR Paid Leave program 0.6% total split between employer (0.4%) and employee (0.2%), and WBF Workers' Benefit Fund assessment.
+description: "Oregon 2026 employer payroll: approved income withholding formulas, UI coverage and wage base, STT, TriMet/LTD, Paid Leave, WBF, combined registration/reporting and recomputing cases."
 jurisdiction: US-OR
-tax_year: 2025
-last_updated: 2026-07-13
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: payroll
+domain: tax
+tax_year: 2026
 tier: 2
-status: needs_sources
-domain: payroll
+type: computation
+version: "0.2"
+last_updated: 2026-11-13
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# OR Payroll
+# Oregon payroll, 2026
 
-## Oregon Payroll Compliance — Tier 2 Content Skill
+> **General reference only.** This skill provides working papers and a filing brief, not accountant approval. Apply cited law to verified facts, identify assumptions and unresolved issues, and obtain qualified professional review before filing or acting. Circular 230 section 10.37 requires reasonable factual and legal analysis.
 
-## 1. Scope
+## Scope
 
-This skill is the authoritative Tier 2 content layer for Oregon employer payroll compliance for tax year 2025. It is consumed by upstream workflow skills (`us-tax-workflow-base`, `us-federal-return-assembly`) when an employer has Oregon-source wages, an Oregon resident employee, or any employee performing services within Oregon transit district boundaries.
+Oregon (US-OR) employer payroll for wages paid in 2026: income tax withholding, employer UI, employee statewide transit tax, employer TriMet/LTD, Paid Leave Oregon contributions, Workers' Benefit Fund assessment, registration, reporting and employment-law boundaries. This skill is not an individual Form OR-40 tax calculator. Use `or-income-tax` for the owner's tax and individual deductions, `or-corporate-tax` for corporate excise/income tax and `or-cat` for commercial activity tax.
 
-### 1.1 What this skill covers
+Federal payroll rates, wage bases, credits and deposit classification belong to `us-form-941-940-payroll`. Federal contractor classification belongs to `us-worker-classification-w2-vs-1099`. Do not import either as a substitute for Oregon coverage/classification. The ordinary employer scenarios below exclude equivalent Paid Leave plans, reimbursement employers and special exemptions unless expressly stated.
 
-- Oregon Personal Income Tax (PIT) withholding from wages — brackets, supplemental wage rate, OR-W-4 employee certificate, Form OQ filing
-- Oregon Unemployment Insurance (UI) — wage base $54,300 (the highest taxable UI wage base in the United States for 2025), rates 0.0%–5.4%, new-employer rate 2.4%
-- Statewide Transit Tax (STT) — 0.1% of all Oregon wages, no wage base cap, applied to Oregon residents working anywhere and to non-residents performing services in Oregon
-- Local transit district employer payroll taxes:
-  - TriMet (Portland metropolitan area) — 0.8237% employer + 0.13% employee
-  - Lane Transit District (Eugene/Springfield) — 0.79% employer
-  - Salem Area Mass Transit District / Cherriots — 0.0036 (0.36%) employer
-- Oregon Paid Leave (Paid Leave Oregon) — 0.6% total contribution, split 40/60 employer/employee for employers with 25+ employees, 12 weeks of paid family/medical/safe leave benefits
-- Workers' Benefit Fund (WBF) assessment — 0.66¢ per hour worked employer + 0.66¢ per hour worked employee (1.32¢ combined)
-- Final-pay rule — by end of next business day after termination by employer
-- Independent contractor classification — the Oregon ABC test, codified by case law and adopted statutorily post-2020
-- Federal interactions — Family and Medical Leave Act parity, Pay Equity Act 2019 implications for payroll
+## Ask the client first
 
-### 1.2 What this skill does NOT cover
+- Where does each employee reside and actually work, including homeworking, travel, out-of-state work and transit district addresses?
+- What entity, owners/officers, worker duties, control, business evidence and program-specific exemptions apply?
+- What OR-W-4 status/allowances, exemption dates, pay frequency, taxable wages and actual federal income tax withholding apply?
+- What Oregon BIN, UI account/rate notice, current-employer year-to-date wages and predecessor/successor facts exist?
+- What nationwide average headcount, Paid Leave plan/grant status, subject wages and WBF hours/coverage apply?
+- What payroll dates, federal deposit schedule, prior reports/payments, hires/terminations and agency notices need reconciliation?
 
-- Oregon Corporate Activity Tax (CAT) — see `or-corporate-activity-tax`
-- Oregon individual income tax return preparation — see `or-income-tax`
-- Federal payroll (FICA, FUTA, federal income tax withholding, Form 941, Form 940) — outside scope; covered elsewhere
-- Multistate apportionment for employers outside Oregon with zero Oregon nexus
-- Self-employed sole proprietor own-wage treatment — sole proprietors do not pay themselves W-2 wages and do not owe employer payroll taxes on owner draws
-- Tribal employers and federally-recognized tribal sovereignty exemptions
-- Agricultural labor exemptions under ORS 657.045 (limited scope; refer)
+## The method, step by step
 
-### 1.3 Conservative defaults
+### 1. Register and separate coverage by program
 
-- **Default: worker classification** — Treat worker as W-2 employee unless ABC test affirmatively fails (i.e., default to employee classification)
-- **Default: STT applicability** — Apply Statewide Transit Tax to all wages until exemption is documented
-- **Default: transit district application** — Apply TriMet/Lane/Cherriots to all hours worked inside the district unless employer has documented evidence of work performed entirely outside
-- **Default: OR-W-4 missing** — Use the standard OR-W-4 default (single, zero allowances) when no signed OR-W-4 is on file
-- **Default: Paid Leave Oregon employee count** — For Paid Leave Oregon employee count, count all employees nationwide, not just Oregon (per OED rule)
+Register the employer through Oregon combined employer registration and obtain the Business Identification Number before reporting; an FEIN alone is not the Oregon BIN. Add/change transit obligations when actual work locations change. Keep DOR withholding/transit, OED UI/Paid Leave and DCBS WBF account responsibilities distinct even though Form OQ combines reporting. Frances Online supports combined payroll reporting; Revenue Online supports DOR accounts/payments and OR-WR. A payment confirmation is not a filed quarterly report. [2026 combined payroll pp.4-9](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf); [transit publication p.1](https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf).
 
-## 2. Oregon Personal Income Tax Withholding
+Ordinary UI coverage is generally triggered by at least $1,000 wages in a calendar quarter **or** one or more workers in each of 18 weeks in a calendar year. Agricultural coverage generally uses at least $20,000 cash wages in a quarter or ten or more workers in each of twenty weeks. Domestic coverage generally uses $1,000 cash wages in a quarter in the current or preceding year; domestic employers can use annual OA/132 or quarterly OQ/132. Apply actual exemptions, officer elections and reimbursement rules before taxing everyone alike. LLC members/partners and genuine independent contractors are not automatically UI employees. [OED payroll FAQ, subject/domestic/agricultural employers](https://www.oregon.gov/employ/Businesses/Pages/Frequently-Asked-Questions.aspx).
 
-### 2.1 2025 brackets (single filer; married brackets are double)
+These are Oregon coverage thresholds, not federal FUTA rules. General, domestic, agricultural, nonprofit, governmental, tribal, public and special-industry employers must be classified before choosing a tax/reimbursement account. Federal/railroad/maritime exclusions, tribal elections and owner/officer rules require specific authority; they are referral gates, not blanket exemptions inferred from an entity label. [OED FAQ](https://www.oregon.gov/employ/Businesses/Pages/Frequently-Asked-Questions.aspx); [Paid Leave coverage](https://paidleave.oregon.gov/resources/common-questions.html).
 
-**2025 Oregon PIT brackets (single filer)**
+### 2. Obtain the actual Oregon certificate
 
-| Taxable income (single) | Marginal rate |
-| --- | --- |
-| $0 – $4,300 | 4.75% |
-| $4,301 – $10,750 | 6.75% |
-| $10,751 – $125,000 | 8.75% |
-| Over $125,000 | 9.90% |
+Use Form OR-W-4 for Oregon status, allowances, additional withholding and exemption. A valid pre-2020 federal W-4 used for Oregon may continue until a new Oregon certificate/change is needed. A later federal W-4 does not supply Oregon allowances. If there is no withholding statement or exemption certificate, withhold **8%**, rather than assuming single with zero allowances. A qualifying no-liability exemption requires both prior-year no tax liability and current-year expected no liability. [2026 formula pp.1-3,8](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf).
 
-- **Married filing jointly bracket doubling** — For married filing jointly, double the bracket thresholds (top bracket begins at $250,000).
+Exempt certificates expire February 15 following the election year. Obtain the renewed certificate before February 15; absent renewal/statement, apply the 8% rule. A late valid exemption affects future wages; do not refund withholding from the gap merely because a new certificate arrives. Preserve certificate dates and changes. Extra withholding is applied as directed on OR-W-4. An income-tax exemption does not itself exempt STT, UI, Paid Leave or WBF. [Formula pp.2-3](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf); [STT coverage](https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx).
 
-The 9.9% top rate has been in place since 2013 and remains the third-highest top state PIT rate in the United States after California (13.3%) and Hawaii (11.0%).
+Resident/out-of-state and nonresident/Oregon-service withholding require actual source facts. The 2026 combined booklet permits a nonresident withholding exception when annual Oregon earnings are below the applicable Oregon standard deduction; use the current individual amounts owned by `or-income-tax`, not a payroll formula allowance. Nonresident employees below that amount may request withholding because of other Oregon income. There is no blanket Oregon reciprocity certificate inferred here. Military/spouses, tribal and other statutory exemptions need their specific authority. [Combined payroll p.4](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
 
-### 2.2 Supplemental wage rate
+### 3. Compute withholding from the approved 2026 formula
 
-- **Oregon supplemental wage withholding rate (2025)** — 8.0%
+Determine Oregon taxable pay after applicable exclusions, annualize at the correct number of pay periods, and subtract the allowed actual **federal income tax withholding**, not FICA or federal tax liability. Apply the formula's payroll standard deduction and federal-withholding cap/phase-out, then its status/allowance table. Floor a negative result at zero, deannualize and add any per-pay extra withholding. Monthly, twice-monthly, biweekly, weekly and daily use the source's 12/24/26/52/260 annualization factors. Whole-dollar withholding rounding is optional for the percentage method. [2026 formulas pp.4-8](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf).
 
-This rate applies to bonuses, commissions, severance, equity vesting events, retroactive pay, and other supplemental wages identified under IRS Pub 15 (which Oregon incorporates by reference for definitional purposes but applies its own rate to).
+The payroll deduction/allowance are inputs to withholding, not deductions/credits copied onto OR-40. Use the approved wage tables or approved software if implementing the full formula. A self-designed formula requires DOR approval. The source's explanatory page retains older $8,500/$256 text and an inconsistent $21,165/$1,798 example. Its explicit 2026 tables and internally recomputing calculation use $8,750/$263, $21,090 base and about $1,789 annual withholding in that example. Do not copy the stale arithmetic. [Formula pp.5-8](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf).
 
-Employers may use the supplemental flat rate **or** the aggregate method that combines the supplemental wage with the most recent regular pay period and applies the standard withholding tables. The flat method is strongly preferred for one-time large payments (bonuses, RSU vests) because the aggregate method can produce mechanical over-withholding when the supplemental payment is large relative to the regular paycheck.
+| Item / condition | Rate, amount or threshold | Official source |
+|---|---|---|
+| No statement/certificate; expired exemption without renewal | 8% Oregon withholding until valid certificate treatment applies | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Supplemental wages paid at a different time from regular payday | Optional 8% flat withholding; do not apply to every regular wage | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Payroll standard deduction, formula only | Single/HOH fewer than 3 allowances: $2,910; single at least 3 allowances or married: $5,820 | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Payroll allowance amount, formula only | $263 per allowed annual allowance; single wages >$100,000 or married wages >$200,000 force zero allowances | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Federal withholding annual cap, single status | Below $125,000 wages: $8,750; $125,000-<130,000: $7,000; $130,000-<135,000: $5,250; $135,000-<140,000: $3,500; $140,000-<145,000: $1,750; at least $145,000: zero | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Federal withholding annual cap, married status | Below $250,000 wages: $8,750; $250,000-<260,000: $7,000; $260,000-<270,000: $5,250; $270,000-<280,000: $3,500; $280,000-<290,000: $1,750; at least $290,000: zero | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
 
-### 2.3 OR-W-4 state withholding certificate
+Select the cap using **wages and certificate status**, not base wages or return AGI. A single claimant with at least three allowances uses the married deduction/formula but still the single federal-withholding phase-out. A married claimant electing higher single withholding uses the single phase-out/allowance limit. [Formula pp.7-8](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf).
 
-- **OR-W-4** — Oregon decoupled from the federal Form W-4 in 2020 when the IRS eliminated withholding allowances. Employers must obtain a Form OR-W-4 from every Oregon employee. The OR-W-4 still uses an allowances system and does not mirror the federal W-4 structure.
-- **Default rule when no OR-W-4 is on file** — withhold as single with zero allowances. This is the most conservative default and the explicit DOR rule.
-- **OR-W-4 retention** — retain for at least four years following the last calendar year the certificate was in effect. Submit to DOR only when requested or when the employee claims more than 10 allowances (mandatory submission trigger under OAR 150-316-0290).  _(OAR 150-316-0290)_
+Let G be annualized Oregon taxable wages, F actual annualized federal income tax withheld limited by the applicable cap, A allowed allowances, and B = G - F - payroll deduction. The annual formulas below are copied as calculation structure, not a final individual tax chart. Clamp final withholding at zero.
 
-### 2.4 Form OQ — Quarterly Oregon Combined Tax Report
+| Item / condition | Rate, amount or threshold | Official source |
+|---|---|---|
+| G below $50,000, single fewer than 3 allowances; B $0-4,550 | 263 + 4.75% x B - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B >$4,550 through $11,400 | 479 + 6.75% x (B - 4,550) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B >$11,400 through $50,000 | 941 + 8.75% x (B - 11,400) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| G below $50,000, single at least 3 allowances or married; B $0-9,100 | 263 + 4.75% x B - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B >$9,100 through $22,800 | 695 + 6.75% x (B - 9,100) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B >$22,800 through $50,000 | 1,620 + 8.75% x (B - 22,800) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| G at least $50,000, single fewer than 3 allowances; B through $125,000 | 678 + 8.75% x (B - 11,400) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B above $125,000 | 10,618 + 9.9% x (B - 125,000) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| G at least $50,000, single at least 3 allowances or married; B through $250,000 | 1,357 + 8.75% x (B - 22,800) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
+| Same; B above $250,000 | 21,237 + 9.9% x (B - 250,000) - 263 x A | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf |
 
-- **Form OQ** — Form OQ is Oregon's unified quarterly return that consolidates four employer obligations into a single filing: 1. Oregon income tax withholding 2. Oregon UI tax (Schedule B) 3. Statewide Transit Tax (Schedule STT) 4. TriMet or Lane Transit tax (Schedule TM or LTD) if applicable
-- **Form OQ due dates and e-filing** — Due dates: April 30, July 31, October 31, January 31. Electronic filing via Frances Online (Oregon Frances Online portal, which replaced OTTER) is mandatory for employers with 250+ W-2s and strongly encouraged otherwise.
-- **Form OR-WR Annual Withholding Reconciliation** — Form OR-WR (Annual Withholding Reconciliation) is due January 31 of the following year and reconciles the four quarterly OQs to the W-2/W-3 filed with DOR.
+The official table labels overlap at exactly $50,000 gross wages and gives minimum base ranges for the upper table. Use an approved table/calculator/software for that boundary or unusual additional deductions rather than arbitrarily extending a formula. Regular wages and separately timed supplemental wages require the correct method. Pretax insurance/retirement deductions affect Oregon taxable wages as the source directs; different payroll programs can have different wage definitions. [Formulas pp.6-8](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf); [Paid Leave subject wages](https://paidleave.oregon.gov/resources/common-questions.html).
 
-> **AUDIT FLASH POINT:** Form OQ filers commonly forget to attach Schedule STT or Schedule TM/LTD when the employer has Oregon wages but no employees in the transit district. The schedules must be filed with **zeros** rather than omitted — omission triggers a non-filer notice and a $50 penalty per schedule per quarter under ORS 314.400.
+### 4. UI: use the 2026 notice and this employer's annual base
 
-## 3. Oregon Unemployment Insurance — the highest UI wage base in the US
+| Item / condition | Rate, amount or threshold | Official source |
+|---|---|---|
+| 2026 UI annual taxable wage base per worker | $56,700 | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
+| 2026 UI schedule and ordinary experience range | Schedule 3; 0.9%-5.4%, use assigned employer notice | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
+| 2026 UI new-employer rate | 2.4% | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
+| 2026 special payroll tax offset, all four quarters | 0.135% of UI taxable wages, separately reported; not an additional tax or deduction from total UI due | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
+| 2026 Paid Leave subject wage limit | $184,500 per employee for Oregon contributions, as published by Oregon | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
+| 2026 Paid Leave combined contribution | 1% of subject wages; employee 60% of contribution, employer 40% when subject | https://paidleave.oregon.gov/resources/common-questions.html |
+| Paid Leave employer-share gate | At least 25 employees on average, counting workers in and outside Oregon; smaller employers generally no employer share unless assistance-grant rule applies | https://paidleave.oregon.gov/resources/common-questions.html |
+| 2026 STT | 0.1% of subject employee wages, no annual wage cap; employee-paid | https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx |
+| 2026 TriMet employer payroll tax | 0.8237% of covered wages for services in district; employer-paid | https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf |
+| 2026 LTD employer payroll tax | 0.80% of covered wages for services in district; employer-paid | https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf |
+| 2026 WBF combined assessment | $0.018 per subject hour; employer at least half, employee no more than half | https://wcd.oregon.gov/laws/Documents/New_rules/070%20WBF%20-%20January%201%2C%202026/70-25054-rule-notice-and-rules.pdf |
 
-### 3.1 Wage base $54,300 for 2025
+Report all UI subject wages, excess over the annual base and taxable wages separately. Current-quarter taxable wages are max(0, min(current subject wages, annual base minus prior **same employer** taxable/subject wages used toward that base)). Use the actual rate notice, not the range or an old example rate. Do not label Oregon's wage base the highest nationally; that comparison is unnecessary and unverified. [OED rates](https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx); [OQ instructions pp.14-15](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
 
-- **Oregon 2025 taxable UI wage base** — $54,300  _(ORS 657.435)_
+A worker's unrelated prior employer wages do not automatically reduce this employer's UI base. Acquisitions, common paymasters and successors need their specific wage-transfer/account rules, not the ordinary unrelated-employer calculation. Keep successor facts for agency review and do not manipulate entities to obtain a lower rate. Oregon does not permit combined payroll reporting through a federal section 3504 common pay agent; that is a separate issue from a legally established wage-base transfer. The special payroll offset is entered separately on OQ box 25 and **must not be added to or subtracted from** UI due/total payment boxes. [Combined payroll pp.14-16](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf); [OED FAQ](https://www.oregon.gov/employ/Businesses/Pages/Frequently-Asked-Questions.aspx).
 
-Oregon's 2025 taxable UI wage base is **$54,300**, the highest of any state. The wage base is set annually as 80% of the state average annual wage under ORS 657.435. For comparison:
+### 5. STT and district employer taxes are different taxes
 
-- Oregon: $54,300
-- Washington: $72,800 (Note: WA is now slightly higher under 2024 law; check if interstate comparison required)
-- Idaho: $55,300
-- Most other states: $7,000 – $20,000
+Continue STT at 0.1% for 2026 under DOR's current referendum update. It applies to Oregon resident wages wherever earned and nonresident wages for Oregon services, subject to exclusions, even when little or no personal income tax is withheld. It does not apply to self-employment income. An out-of-state employer paying an Oregon resident for services entirely outside Oregon may not be required to withhold; courtesy withholding and the employee's separate OR-STI obligation must be tested. Do not convert resident liability into an unlimited employer jurisdiction claim. [STT page](https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx); [2025 individual instructions, STT section](https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf).
 
-Implications:
-- Annual UI tax cost per employee is materially higher in Oregon than in most jurisdictions
-- For high-earning employees, the employer reaches the wage cap by mid-year; for lower-earning employees, the employer pays UI tax on essentially every dollar
-- Multistate employers must apply the **localization of work** test under ORS 657.030 to determine which state's wage base applies
+For periods from 2023, ordinary employers report STT quarterly on Form OQ in Frances Online or approved paper reporting. Annual/older-period channels differ. Annual reconciliation is required; a zero income-tax withholding return does not prove zero STT. STT is employee-paid and the employer remits it. Employer failure to withhold can create liability and penalties; the STT page describes a $250-per-employee failure-to-withhold penalty capped at $25,000 per period. [STT reporting/penalties](https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx).
 
-### 3.2 Rates 0.0% – 5.4%; new employer 2.4%
+TriMet and Lane Transit payroll taxes apply to employer payroll for actual services inside district boundaries, including homeworking and traveling representatives, with the publication's exclusions. Neither is a separate employee TriMet deduction. Zip codes are screening aids, not complete boundary maps. Verify each address and allocate services before applying the employer rate; an entire metropolitan/county label is insufficient. [Transit publication pp.1-2](https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf).
 
-- **Oregon UI experience rate range 2025** — 0.0% – 5.4%
-- **Oregon UI new-employer rate 2025** — 2.4%
+The publication exempts federal credit unions, public school districts, specified nonprofit/tax-exempt institutions except hospitals, specified insurers and domestic service. Certain local governmental/public districts exempt from LTD remain subject to TriMet. Check the exact category rather than assuming every nonprofit/public payroll is exempt from both. Boring, Canby, Sandy, Wilsonville, Molalla and Damascus have different historical deletion dates; current location and work dates matter. The old Cherriots levy and employee TriMet levy were not established by these official sources and are not usable charges. [Transit publication](https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf).
 
-Oregon uses an experience-rated system with rates ranging from 0.0% to 5.4% in 2025. The new-employer rate for 2025 is 2.4%. Rates are assigned annually based on the employer's reserve ratio (cumulative contributions minus benefits charged, divided by average annual taxable payroll).
-
-Schedule D applies for 2025 (Oregon has eight rate schedules A–H; D is the midpoint). The schedule is set by the OED based on the trust fund balance ratio.
-
-### 3.3 Employee count and Form OQ Schedule B
-
-- **Schedule B taxable/excess wage reporting** — Schedule B of Form OQ reports each employee's wages, broken down between taxable (capped at $54,300 YTD) and excess (above the cap). UI tax is owed only on the taxable portion.
-
-> **AUDIT FLASH POINT:** Employers commonly miscompute the taxable/excess split when an employee changes employers mid-year. The $54,300 wage base is per-employer per-year, not per-employee per-year across employers. A new hire whose YTD wages with the prior employer already exceeded $54,300 still owes UI tax on the first $54,300 paid by the new employer.
-
-## 4. Statewide Transit Tax — 0.1% with no cap
-
-### 4.1 Mechanics
-
-- **Statewide Transit Tax rate** — 0.1%  _(HB 2017 (2017); ORS 320.550)_
-- **STT wage base cap** — There is no wage base cap. The 0.1% applies to every dollar of covered wages.  _(ORS 320.550)_
-
-The Statewide Transit Tax (STT), enacted under HB 2017 (2017) and codified at ORS 320.550, is a 0.1% payroll tax on:
-
-- All wages paid to Oregon residents (regardless of where work is performed)
-- All wages paid to non-residents for services performed **in** Oregon
-
-### 4.2 Who pays
-
-- **STT liability** — The STT is an employee-paid tax that the employer is required to withhold and remit. The employer does not bear the economic burden but bears full liability for collection and remittance.
-
-### 4.3 Filing and remittance
-
-- **STT filing and W-2 reporting** — STT is reported on Schedule STT of Form OQ each quarter. Annual reconciliation on Form OR-STT-A is due January 31. The STT is also reported in W-2 Box 14 with the code "ORSTT W/H" (DOR-prescribed code).
-
-### 4.4 Common pitfalls
-
-> **AUDIT FLASH POINT:** Out-of-state employers with even one Oregon-resident remote worker frequently miss STT registration entirely. The 0.1% feels trivial per paycheck (e.g., $1 on a $1,000 weekly check) but compounded across years with no wage cap, an out-of-state employer with five Oregon remote employees earning $100,000 each owes $500/year STT — small in dollars but a 100% audit certainty given OED's data-share with DOR. The non-filing penalty under ORS 314.400 is the larger exposure.
-
-> **AUDIT FLASH POINT:** The STT applies to non-resident remote workers physically in Oregon. A consultant living in Vancouver, WA who crosses the river to work at a Portland client site has STT-covered wages for those days. The day-by-day allocation must be tracked.
-
-## 5. Local transit district employer payroll taxes
-
-### 5.1 TriMet — 0.8237% employer + 0.13% employee (Portland)
-
-- **TriMet employer rate (2025)** — 0.8237%
-- **TriMet employee rate (2025)** — 0.13%  _(OAR 150-267-0020)_
-
-The TriMet (Tri-County Metropolitan Transportation District of Oregon) employer payroll tax applies to wages paid for services performed within the TriMet district, which encompasses most of Multnomah County, the urban portions of Washington County, and the urban portions of Clackamas County.
-
-- Employer rate (2025): 0.8237% of subject wages
-- Employee rate (2025): 0.13% (this is the separate Paid Leave-style TriMet employee assessment; Note: some references treat the 0.13% as part of OR Paid Leave employee share — treat as separate per OAR 150-267-0020 unless guidance updates)
-- No wage base cap
-- Reported on Schedule TM of Form OQ
-
-The TriMet rate is statutorily increased by 0.0001 (1 basis point) per year through 2026 under ORS 267.385, then capped.
-
-### 5.2 Lane Transit District (LTD) — 0.79% employer (Eugene/Springfield)
-
-- **Lane Transit District employer rate (2025)** — 0.79%
-
-The Lane Transit District employer payroll tax applies to wages paid for services performed within the LTD boundary, which covers most of Lane County including Eugene, Springfield, and surrounding communities.
-
-- Employer rate (2025): 0.79% of subject wages
-- No wage base cap
-- Reported on Schedule LTD of Form OQ
-- Similar 0.0001 annual increase through 2026 under ORS 267.385
-
-### 5.3 Salem Area Mass Transit District (Cherriots) — 0.36%
-
-- **Cherriots employer rate** — 0.36% (0.0036)
-- **Cherriots administration** — Unlike TriMet and LTD, the Cherriots tax is administered locally rather than through Form OQ; the employer registers with and remits to Cherriots directly.
-
-### 5.4 Sandy / Canby / South Clackamas / others
-
-Several smaller cities and special districts impose narrow employer payroll taxes (typically 0.5%–0.7%) for local transit. These are jurisdiction-by-jurisdiction and require boundary verification using the DOR's transit district lookup tool.
-
-### 5.5 District boundary determination
-
-- **Boundary determination steps** — Determining whether a wage is "subject" to TriMet or LTD requires: 1. Geocoding the work location (not the employee's residence) 2. Cross-referencing the geocoded coordinates against the official transit district map (published annually by each district) 3. For remote workers, applying the principal-place-of-services test under OAR 150-267-0030: the location where the employee performs the majority of work in the quarter  _(OAR 150-267-0030)_
-
-> **AUDIT FLASH POINT:** The single most common Oregon payroll audit finding is misallocation between TriMet, Lane, and "no transit district." Employers often default all Oregon wages to TriMet because Portland is the largest metro, or default everything to "no district" because the employer is headquartered outside Oregon. Both are wrong. Each employee's work-location geocoding must be documented and refreshed annually, and remote-work reallocations during 2020–2024 created retroactive exposure that the OED began aggressively auditing in 2024.
-
-## 6. Paid Leave Oregon — 0.6% combined, 12 weeks of benefits
-
-### 6.1 Program overview
-
-- **Paid Leave Oregon program overview** — Paid Leave Oregon, enacted under HB 2005 (2019) and effective for benefits on September 3, 2023, provides up to 12 weeks of paid leave per benefit year (14 weeks for pregnancy-related conditions, with potential combined leave up to 16 weeks) for: - Family leave (bonding with a new child, caring for a family member with a serious health condition) - Medical leave (the employee's own serious health condition) - Safe leave (issues stemming from domestic violence, sexual assault, harassment, or stalking) Benefits are wage-replacement up to a maximum weekly benefit indexed to 120% of the state average weekly wage (approximately $1,568.60 per week in 2025).
-
-### 6.2 Contribution mechanics — 0.6% total, split 40/60
-
-- **Paid Leave Oregon combined contribution rate (2025)** — 1.0%
-- **25+ employees nationwide split** — For employers with 25 or more employees nationwide: Employer share: 40% of the total (0.4% of wages); Employee share: 60% of the total (0.6% of wages, withheld from paychecks)
-- **Fewer than 25 employees nationwide** — For employers with fewer than 25 employees nationwide: Employer share: $0 (exempt from employer portion); Employee share: 0.6% of wages (still withheld); Small employers may opt in to employer-portion participation to qualify for grants
-- **25-employee count basis** — The 25-employee count is a nationwide headcount, not Oregon-only. A California company with 30 employees and one Oregon remote worker is a "25+" employer for Paid Leave Oregon purposes.
-
-### 6.3 Wage base cap
-
-- **Paid Leave Oregon contribution wage base cap** — $176,100 for 2025 (Social Security wage base)
-- **Wages above SS cap** — Wages above the SS cap are not subject to Paid Leave contributions.
-
-### 6.4 Filing
-
-- **Paid Leave Oregon filing schedule** — Paid Leave Oregon contributions are reported on Schedule P of Form OQ quarterly. The schedule is filed with both employer and employee shares combined and remitted with Form OQ.
-
-### 6.5 Equivalent plans
-
-- **Equivalent private plans** — Employers may apply to OED for approval of an equivalent private plan that provides benefits and protections at least equal to the state plan. Approved equivalent plans exempt the employer (and its employees) from state contributions.
-
-> **AUDIT FLASH POINT:** The employer/employee 40/60 split is the most commonly mis-coded line item in Oregon payroll. Many payroll providers default to 50/50 or to "employer pays all" which produces an over-payment by the employer and an under-withholding from the employee — and creates a constructive bonus to the employee that should have been included in federal Box 1 wages. The 40/60 must be coded explicitly.
-
-> **AUDIT FLASH POINT:** Employers using the small-employer (<25) exemption often miscount by limiting to Oregon employees. OED counts nationwide. Misclassification as small triggers a back-assessment of employer contributions plus interest from program inception.
-
-## 7. Workers' Benefit Fund Assessment
-
-### 7.1 Mechanics
-
-- **WBF employer rate (2025)** — $0.0066 per hour worked (0.66¢)  _(ORS 656.506)_
-- **WBF employee rate (2025)** — $0.0066 per hour worked (0.66¢)  _(ORS 656.506)_
-- **WBF combined rate (2025)** — $0.0132 per hour worked (1.32¢)  _(ORS 656.506)_
-- **WBF hours basis for salaried/part-time** — Salaried employees: use 40 hours per week (or actual hours if tracked). Part-time employees: use actual hours.
-
-### 7.2 Filing
-
-- **WBF filing** — WBF assessment is reported on Form OQ alongside withholding, UI, and STT.
-
-> **AUDIT FLASH POINT:** WBF is computed per-hour, not per-dollar. A common mistake is to apply a 0.0066% rate to wages, which dramatically under-reports. The correct base is hours worked × $0.0066.
-
-## 8. ABC test for independent contractor classification
-
-- **Oregon independent contractor ABC test** — Oregon does not have a single statutory ABC test analog to California AB5. However, ORS 670.600 (the "independent contractor" definition for OED and DOR purposes) operates as a de-facto ABC test and has been strengthened by case law and by 2020+ administrative guidance. A worker is an independent contractor only if all of the following are true: A. The worker is free from direction and control over the means and manner of providing services, subject only to the right of the contracting person to specify the desired results. B. The worker is customarily engaged in an independently established business of the same nature as the services contracted for. Three of the following five factors must be met: 1. Maintains a business location separate from the contracting person 2. Bears the risk of loss 3. Provides contracted services for two or more different customers within a 12-month period, or routinely engages in business advertising or solicitation 4. Makes a significant investment in the business through tools, equipment, or premises 5. Has the authority to hire and fire employees to perform the contracted services C. The worker is licensed under ORS 671 or 701 if such license is required for the services performed. Failure on any of A, B, or C reclassifies the worker as a W-2 employee for Oregon withholding, UI, STT, transit district, Paid Leave, and WBF purposes.  _(ORS 670.600)_
-
-> **AUDIT FLASH POINT:** Software developers, designers, and other "professional" contractors frequently fail Prong B because they only have one client and do not advertise. Even with a Form 1099-NEC issued, OED can reclassify and impose retroactive UI, STT, transit, and Paid Leave taxes plus penalties under ORS 657.471.
-
-## 9. Final pay rule
-
-- **Final pay rule under ORS 652.140** — Under ORS 652.140: - Employer-initiated termination (firing/layoff): all wages due by the end of the next business day after termination - Employee-initiated termination (quit) with 48+ hours notice: all wages due on the last day worked - Employee-initiated termination without 48 hours notice: all wages due within five business days or the next regular payday, whichever is earlier  _(ORS 652.140)_
-- **Penalty wages under ORS 652.150** — Violation triggers penalty wages under ORS 652.150 equal to the employee's regular daily wage rate for each day the wages remain unpaid, up to 30 days. Penalty wages are owed even if the underpayment is minor.  _(ORS 652.150)_
-
-## 10. Federal interactions
-
-### 10.1 Family and Medical Leave Act parity
-
-- **FMLA and Paid Leave Oregon concurrency** — Paid Leave Oregon runs concurrently with federal FMLA leave when both apply. An employer covered by both must coordinate the leave designation; treating them as sequential (rather than concurrent) is a violation under both OED rule and DOL guidance.
-
-### 10.2 Oregon Pay Equity Act 2019
-
-- **Oregon Pay Equity Act requirements** — The Oregon Pay Equity Act (ORS 652.220) prohibits pay discrimination based on protected class and requires equal pay for work of "comparable character." For payroll purposes: - Salary history inquiries are prohibited - Pay decisions must be defensible against an "affirmative defense" requiring a documented equal-pay analysis within the prior three years - Posting of salary ranges in job postings is required under separate amendments Payroll system implications: maintain documented job-evaluation factors and ensure compensation changes carry justification metadata.  _(ORS 652.220)_
-
-## 11. Worked examples
-
-### 11.1 Example A — Portland TriMet-area employer, single employee
-
-- Employer: Acme Software LLC, located in Portland (Multnomah County, within TriMet district)
-- Employee: J. Smith, Oregon resident, lives and works in Portland
-- 2025 gross wages: $120,000 salaried, 2,080 hours
-- No bonuses
-
-**Example A computation**
-
-| Tax | Base | Rate | Amount |
-| --- | --- | --- | --- |
-| Oregon UI (employer) | $54,300 (capped) | 2.4% (new emp.) | $1,303.20 |
-| Statewide Transit Tax (EE) | $120,000 | 0.1% | $120.00 |
-| TriMet (employer) | $120,000 | 0.8237% | $988.44 |
-| Paid Leave Oregon (employer) | $120,000 | 0.4% (40% of 1%) | $480.00 |
-| Paid Leave Oregon (employee) | $120,000 | 0.6% (60% of 1%) | $720.00 |
-| WBF (employer) | 2,080 hours | $0.0066/hr | $13.73 |
-| WBF (employee) | 2,080 hours | $0.0066/hr | $13.73 |
-
-Employer total (Oregon-specific, excluding federal): approximately $2,785.37
-Employee withholding (Oregon-specific, excluding federal & PIT): approximately $853.73 plus Oregon PIT withholding from OR-W-4 table
-
-### 11.2 Example B — Eugene Lane Transit employer
-
-- Employer: Willamette Designs Inc., located in Eugene (Lane County, within LTD)
-- Employee: M. Garcia, Oregon resident
-- 2025 gross wages: $75,000 salaried, 2,080 hours
-- Employer has 30 employees nationwide
-
-**Example B computation**
-
-| Tax | Base | Rate | Amount |
-| --- | --- | --- | --- |
-| Oregon UI (employer) | $54,300 (capped) | 1.8% (assumed) | $977.40 |
-| Statewide Transit Tax (EE) | $75,000 | 0.1% | $75.00 |
-| Lane Transit (employer) | $75,000 | 0.79% | $592.50 |
-| Paid Leave Oregon (employer) | $75,000 | 0.4% | $300.00 |
-| Paid Leave Oregon (employee) | $75,000 | 0.6% | $450.00 |
-| WBF (employer) | 2,080 hours | $0.0066/hr | $13.73 |
-| WBF (employee) | 2,080 hours | $0.0066/hr | $13.73 |
-
-Employer total: approximately $1,897.36
-Note: Because the work is in Eugene (LTD), TriMet does not apply. A common error is to dual-allocate; only the district covering the work location applies.
-
-### 11.3 Example C — Multistate employer, Oregon-resident remote worker
-
-- Employer: TechCorp Inc., headquartered in Austin, Texas
-- Employee: K. Nguyen, lives in Bend, Oregon (Deschutes County — outside TriMet, LTD, and Cherriots boundaries)
-- 2025 gross wages: $150,000 salaried, fully remote, 2,080 hours
-- Employer has 200 employees nationwide
-
-**Example C Oregon obligations**
-
-| Tax | Base | Rate | Amount |
-| --- | --- | --- | --- |
-| Oregon withholding | per OR-W-4 | bracket-based | varies |
-| Oregon UI (employer) | $54,300 | 2.4% (new to OR) | $1,303.20 |
-| Statewide Transit Tax (EE) | $150,000 | 0.1% | $150.00 |
-| TriMet | n/a | — | $0 |
-| Lane Transit | n/a | — | $0 |
-| Cherriots | n/a | — | $0 |
-| Paid Leave Oregon (employer) | $150,000 capped at SS | 0.4% | $600.00 |
-| Paid Leave Oregon (employee) | $150,000 capped at SS | 0.6% | $900.00 |
-| WBF (employer) | 2,080 hours | $0.0066/hr | $13.73 |
-| WBF (employee) | 2,080 hours | $0.0066/hr | $13.73 |
-
-- TechCorp must register with Oregon DOR for withholding, OED for UI and Paid Leave, and DCBS for WBF — even with a single Oregon employee
-- No transit district tax because Bend is outside all three districts
-- The $1,500+ Paid Leave employee + employer combined is a non-trivial annual cost for a single remote hire
-
-### 11.4 Example D — Portland employee, mid-year wage cap
-
-**Facts:**
-- Employer: Acme Software LLC (same as Example A), new hire in Q2
-- Employee: D. Park, hired April 1, 2025, $200,000 annualized salary
-- Prior employer (Jan–March): paid $50,000 with $50,000 in UI taxable wages
-
-**Acme's UI obligation on Park:**
-- Acme's $54,300 wage base is not reduced by Park's prior-employer wages
-- Acme owes UI on the first $54,300 paid to Park during 2025
-- Park reaches $54,300 in Acme wages around mid-June (3 months × $16,667/mo)
-- UI tax on Park (assume 2.4% new-employer): $54,300 × 2.4% = $1,303.20
-
-This is the classic "double-count" problem unique to high-base UI states like Oregon and Washington.
-
-## 12. Reviewer self-checks
-
-Before signing off on an Oregon payroll filing, the credentialed reviewer must verify:
-
-1. Form OQ Schedule STT filed: even if zero
-2. Form OQ Schedule TM/LTD filed: correct district per work-location geocoding
-3. Paid Leave Oregon 40/60 split: employer at 0.4%, employee at 0.6% (assuming current rate; verify rate)
-4. UI wage base $54,300: not the federal FUTA $7,000 base
-5. STT applied with no cap: including high earners
-6. WBF on hours, not dollars
-7. OR-W-4 on file for every employee: default single/zero if missing
-8. Transit district boundary geocoded: for each work location, not based on employer HQ
-9. ABC test documented: for every 1099-NEC contractor
-10. Final-pay rule timeline: next business day for terminations
-
-## 13. Citations and authorities
-
-- ORS Chapter 316 — Personal Income Tax (withholding)
-- ORS Chapter 657 — Unemployment Insurance
-- ORS 320.550 — Statewide Transit Tax
-- ORS 267.385 — TriMet and LTD employer payroll tax
-- ORS 657B — Paid Leave Oregon
-- ORS 656.506 — Workers' Benefit Fund
-- ORS 670.600 — Independent contractor definition
-- ORS 652.140, 652.150 — Final pay and penalty wages
-- ORS 652.220 — Pay Equity Act
-- OAR 150-267-0020, 150-267-0030 — TriMet/LTD allocation
-- OAR 150-316-0290 — OR-W-4 submission triggers
-- OAR 471-070 — Paid Leave Oregon implementation
-- OED Frances Online portal — replacement for OTTER (effective 2022)
-- DCBS WBF assessment notice — annual publication
-
-## 14. Refusals
-
-- **Public employer (PERS-covered)** — The taxpayer is an Oregon public employer (PERS-covered) — different regime
-- **Agricultural employer ORS 657.045 exemption** — The taxpayer is an agricultural employer seeking the ORS 657.045 exemption analysis without documented seasonal-worker facts  _(ORS 657.045)_
-- **Tribal entity** — The taxpayer is a federally-recognized tribal entity — sovereignty defenses outside scope
-- **Railroad employees** — The request concerns railroad employees (federal RRA preempts state UI)
-- **Maritime employees** — The request concerns maritime employees on navigable waters
-- **Multistate apportionment OR/WA dispute** — The request concerns a multistate apportionment analysis where the primary work state is contested between Oregon and Washington under ORS 657.030 localization-of-work — refer to multistate workflow  _(ORS 657.030)_
+Net self-employment district taxes are separate from employer payroll tax and from STT. Do not apply employer rates and wage definitions automatically to a sole proprietor's profit or treat owner draws as wages. Federal self-employment numerical rules remain in `us-schedule-c-and-se-computation`. Local SHS/PFA and any district self-employment filing need separate sourced work; they are not discharged by OQ. [Transit publication p.2](https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf).
+
+### 6. Paid Leave and WBF
+
+Count average full-time and part-time employees in and outside Oregon for the Paid Leave employer-share gate, excluding temporary replacements for eligible employees on leave as the FAQ directs. Small employers still collect/remit employees' contributions and provide applicable job protection. At exactly 25 employees the ordinary employer share applies. A qualifying assistance grant can change a small employer's contribution obligation. Approved equivalent plans, elective self-employed/tribal coverage and employees working wholly outside Oregon need separate treatment. [Paid Leave employer FAQ](https://paidleave.oregon.gov/resources/common-questions.html).
+
+The 1% combined contribution is 0.6% employee and 0.4% employer when the employer share is due, subject to the Oregon-published annual base. This is not 0.6% combined or 0.2% employee. Employers may voluntarily pay the employee share. Reconcile program-specific subject wages instead of treating every federal/UI wage exclusion alike. General leave entitlement, pregnancy-related additional leave, eligibility, notice and benefits are not inferred from contribution amounts. The FAQ describes general benefits up to twelve weeks, possible additional pregnancy-related time and job protection after ninety consecutive days, subject to its conditions. [Paid Leave FAQ](https://paidleave.oregon.gov/resources/common-questions.html).
+
+For WBF, establish subject-worker coverage and assessment hours, then apply the 2026 combined cents-per-hour rate. It is not a percentage of wages and it is not workers' compensation insurance premium. Employers pay at least half and can pay all; employee deductions cannot exceed half. Use the rule/booklet for fractional hours, salaried workers, overtime and time not worked; do not treat a hypothetical 2,080-hour year as a statutory default. The rule permits a reasonable/contract method or its specified flat-hours method when actual hours are not tracked: 40 hours weekly or 173.33 monthly, with appropriate weekly/biweekly/monthly/semi-monthly application. Employee amounts are rounded each pay period to the nearest cent, with half cents rounded up; OQ total hours are rounded down to a whole hour and the reported assessment down to cents. Reconcile payroll deductions with the reporting calculation instead of assuming annual multiplication always equals the sum of rounded deductions. Report the source-prescribed whole hours and round total assessment down to cents as instructed. [2026 WBF rule](https://wcd.oregon.gov/laws/Documents/New_rules/070%20WBF%20-%20January%201%2C%202026/70-25054-rule-notice-and-rules.pdf); [WBF page](https://www.oregon.gov/dcbs/wbf/pages/index.aspx); [OQ WBF boxes](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
+
+### 7. Classification and final pay
+
+ORS 670.600 is not the generic ABC test stated previously. For its listed tax/UI/workers' compensation/licensing chapters, establish freedom from direction/control over means and manner; an independently established business subject to the farm exception; required chapter 671/701 licenses; and responsibility for other necessary licenses/certificates. The independent-business test generally requires **three of five**: separate business premises (qualifying home space can count); risk of loss; services for two or more persons in twelve months **or** regular qualifying marketing; significant investment; and authority to hire/fire assistants. Each statutory subcondition matters. Entity formation alone does not establish independence. [ORS 670.600(2)-(5)](https://www.oregonlegislature.gov/bills_laws/ors/ors670.html).
+
+A worker does not become a contractor merely by issuing invoices, having an LLC or working remotely. Different statutes can use different tests, including wage/hour law and federal employment tax. Refer classification where control/licensing or business-factor evidence is incomplete; document the facts rather than reducing every test to “outside usual course.” [ORS 670.600-605](https://www.oregonlegislature.gov/bills_laws/ors/ors670.html); federal owner `us-worker-classification-w2-vs-1099`.
+
+Under the ordinary final-pay rule, discharge or mutual termination requires payment by the end of the next business day. A quit with at least 48 hours' notice, excluding weekends/holidays, normally requires the final day, or next business day if that day is a weekend/holiday. Less notice normally means within five business days or the next regular payday, whichever is earlier. Seasonal farm work, fair employment and collective agreements can have specific exceptions. Willful failure can trigger penalty wages; do not assume every late dollar automatically receives the maximum. [BOLI Paychecks, ORS 652.140 and penalty discussion](https://www.oregon.gov/boli/workers/Pages/paychecks.aspx).
+
+## Boundary and exception table
+
+| Facts | Action |
+|---|---|
+| No OR-W-4 / expired exemption without renewal | Apply sourced 8% rule, not assumed single-zero formula. |
+| Wages exactly at a withholding table boundary | Use approved Oregon table/calculator; do not invent a tie rule. |
+| Nonresident below ordinary withholding threshold | Test exception using individual deduction; STT and UI remain separate. |
+| Unrelated prior employer | No automatic UI base credit; successor facts are different. |
+| Remote worker in Portland/Eugene | Actual address/services determine district tax, not employer headquarters. |
+| Self-employed draw | Not employee STT; analyze separate district/self-employed and elective leave rules. |
+| Fewer than 25 workers | Employee Paid Leave collection ordinarily continues; check grants/plan. |
+| “Contractor” with company registration only | Apply actual Oregon statutory factors and separate federal/wage-law tests. |
+| Government, nonprofit, tribal, domestic, farm or special industry | Resolve each program's separate coverage/reporting before calculating. |
+
+## Worked cases
+
+### Case A: Acme Software LLC, J. Smith, Portland
+
+Retain the former scenario's Oregon-resident employee living and working in Portland, Multnomah County, $120,000 annual wage, no bonuses and 2,080 actual subject hours. Assume all services are in TriMet, UI new-employer rate 2.4%, wages are subject to all listed programs, no prior wages at this employer and at least 25 average employees with no equivalent plan. Employer Oregon costs are UI $1,360.80, TriMet $988.44, Paid Leave $480 and WBF half $18.72: $2,847.96. Employee amounts other than income/federal withholding are STT $120, Paid Leave $720 and WBF $18.72: $858.72. The former employee TriMet charge is removed. Actual income withholding needs OR-W-4 and federal withholding, not salary alone.
+
+```oa-check
+name: Oregon Acme J Smith 2026 payroll
+inputs:
+  wages: 120000
+  hours: 2080
+steps:
+  - ui: min(wages, 56700) * 0.024
+  - trimet: floor(wages * 0.008237 * 100) / 100
+  - leave_er: min(wages, 184500) * 0.004
+  - leave_ee: min(wages, 184500) * 0.006
+  - wbf_each: hours * 0.009
+  - stt: wages * 0.001
+  - employer_total: ui + trimet + leave_er + wbf_each
+  - employee_other: stt + leave_ee + wbf_each
+expected:
+  ui: 1360.8
+  trimet: 988.44
+  employer_total: 2847.96
+  employee_other: 858.72
+```
+
+### Case B: Willamette Designs Inc., M. Garcia, Eugene
+
+Retain the Oregon-resident employee, $75,000 annual wages, 2,080 actual subject hours and thirty nationwide employees. Assume all services are in LTD, the actual 2026 notice assigns 1.8% UI, and ordinary Paid Leave coverage applies. Employer amounts: UI $1,020.60, LTD $600, Paid Leave $300 and WBF $18.72, totaling $1,939.32. Employee other amounts: STT $75, Paid Leave $450 and WBF $18.72, totaling $543.72. The 1.8% is a documented case assumption, not a new-employer rate.
+
+```oa-check
+name: Oregon Willamette M Garcia 2026 payroll
+inputs:
+  wages: 75000
+  hours: 2080
+  notice_ui_rate: 0.018
+steps:
+  - ui: min(wages, 56700) * notice_ui_rate
+  - ltd: floor(wages * 0.008 * 100) / 100
+  - leave_er: min(wages, 184500) * 0.004
+  - leave_ee: min(wages, 184500) * 0.006
+  - wbf_each: hours * 0.009
+  - stt: wages * 0.001
+  - employer_total: ui + ltd + leave_er + wbf_each
+  - employee_other: stt + leave_ee + wbf_each
+expected:
+  ui: 1020.6
+  ltd: 600
+  employer_total: 1939.32
+  employee_other: 543.72
+```
+
+### Case C: TechCorp Inc., K. Nguyen, Bend remote worker
+
+Retain the Austin-headquartered employer, $150,000 annual wages, 2,080 actual subject hours and two hundred employees. Assume all work is physically in Bend, Deschutes County, no services in either district, ordinary UI new-employer rate and Paid Leave coverage. Oregon UI is $1,360.80, employer leave $600 and WBF $18.72, totaling $1,979.52. Employee other amounts total $1,068.72. The employer's Texas headquarters does not remove Oregon obligations for an employee physically working in Oregon; no TriMet/LTD is charged on these facts.
+
+```oa-check
+name: Oregon TechCorp K Nguyen location decision
+inputs:
+  wages: 150000
+  hours: 2080
+  district_wages: 0
+steps:
+  - ui: min(wages, 56700) * 0.024
+  - district_tax: district_wages * 0.008237
+  - leave_er: min(wages, 184500) * 0.004
+  - leave_ee: min(wages, 184500) * 0.006
+  - wbf_each: hours * 0.009
+  - employer_total: ui + district_tax + leave_er + wbf_each
+  - employee_other: wages * 0.001 + leave_ee + wbf_each
+expected:
+  district_tax: 0
+  employer_total: 1979.52
+  employee_other: 1068.72
+```
+
+### Case D: Acme, D. Park changes employers April 1
+
+Retain annual salary $200,000 and $50,000 earned January-March at an unrelated former employer. Assume no successor/common-paymaster relationship and $150,000 April-December wages paid by Acme. Acme has its own full $56,700 UI base, yielding $1,360.80 at 2.4%. Subtracting former-employer wages would incorrectly produce only $160.80. At a level monthly $200,000/12 salary, Acme reaches its base during July, not mid-June. Same-employer prior wages or a proven successor rule would require a different workpaper.
+
+```oa-check
+name: Oregon D Park unrelated employer UI decision
+inputs:
+  new_employer_wages: 150000
+  prior_unrelated_wages: 50000
+  annual_salary: 200000
+steps:
+  - ui_correct: min(new_employer_wages, 56700) * 0.024
+  - incorrect_base: max(56700 - prior_unrelated_wages, 0)
+  - ui_incorrect: incorrect_base * 0.024
+  - difference: ui_correct - ui_incorrect
+  - months_to_base: ceil(56700 / (annual_salary / 12))
+expected:
+  ui_correct: 1360.8
+  ui_incorrect: 160.8
+  difference: 1200
+  months_to_base: 4
+```
+
+### Case E: compute the published formula, not the stale example
+
+An invented single employee with zero allowances has $25,000 annual taxable wages and $1,000 actual annual federal income tax withholding. Base is $21,090. The 2026 lower-gross-wage formula gives $1,788.875 annual withholding, or $149.0729167 monthly before optional rounding. If no certificate existed, the separately applicable 8% rule would instead withhold $2,000 annually. These are alternatives determined by certificate facts, not elective least-tax methods.
+
+```oa-check
+name: Oregon 2026 withholding certificate decision
+inputs:
+  wages: 25000
+  federal_withheld: 1000
+  allowances: 0
+steps:
+  - base: wages - min(federal_withheld, 8750) - 2910
+  - annual_formula: max(941 + (base - 11400) * 0.0875 - 263 * allowances, 0)
+  - monthly: annual_formula / 12
+  - no_certificate: wages * 0.08
+expected:
+  base: 21090
+  annual_formula: 1788.875
+  monthly: 149.0729166667
+  no_certificate: 2000
+```
+
+## When to refuse or refer
+
+Refer incomplete work-location records, withholding certificate/annualization edge cases, conflicting classifications, successors/common paymasters, stock compensation, noncash benefits, multistate UI localization, tribal/public/nonprofit/agricultural coverage, equivalent Paid Leave plans and disputed final pay. Minimum wages, sick time, workers' compensation premiums, new-hire deadlines and local income taxes need their own current official authority before adding figures. Do not treat a combined return as proof of federal or wage-law compliance.
+
+## Filing and payment
+
+Income withholding deposits follow the federal deposit cadence as adopted by Oregon, including EFT when federal EFTPS use is mandatory; the federal classification thresholds are owned by `us-form-941-940-payroll`. New employers ordinarily deposit monthly until a lookback exists. A quarterly return date does not postpone an earlier deposit. Agricultural/household reporting has separate annual options; follow the actual account registration. [Formula pp.3-4](https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf).
+
+For 2026 ordinary quarters, OQ/132 due dates are April 30, July 31, November 2, 2026 and February 1, 2027 (October 31 and January 31 move from weekends). File OQ while registered even with zero payroll; use the correct no-payroll option and numeric zero fields, not blanks. Do not submit employee detail/Schedule B unnecessarily for a no-payroll report. Frances Online is the combined reporting channel; approved paper forms remain available under the booklet's rules. [2026 combined payroll pp.3-9](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf); [OED rates/report dates](https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx).
+
+| 2026 reporting field | Reconciliation | Official source |
+|---|---|---|
+| OQ withholding column, boxes 1a-4a | Subject wages, withholding, prepaid amounts, net due | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| STT column, boxes 1b-4b | STT subject wages, tax, prepayments and due | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| TriMet boxes 5a-9a / LTD boxes 5b-9b | District wages x rate; tax rounded down to cents; subtract program prepayments | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| UI column, boxes 13a-22a | Subject wages less annual-base excess = taxable wages; box 19a tax, 20a prepaid, 21a penalty/interest, 22a due | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Paid Leave column, boxes 13b-24 | Subject/excess/taxable wages; boxes 17/18 shares, 19b total, 20b prepaid, 21b penalty/interest, 22b due; boxes 23/24 out-of-state and replacement workers | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Box 25, special payroll tax offset | UI taxable wages x quarter offset; informational allocation, not added/subtracted from UI total or combined payment | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| WBF boxes 27-31 | Assessment hours, rate, total assessment rounded down, prepaid and net due | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Form 132 | Employee-level UI/Paid Leave subject wages and hours; reconcile to OQ | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Oregon Schedule B | Withholding liability detail, not employee UI wage detail | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Form OR-WR | Annual withholding/STT reconciliation, electronically through Revenue Online | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+
+Do not use fabricated “Schedule TM/LTD/STT” fields. Reconcile OQ, employee Form 132 and withholding Schedule B as separate records. Retain accepted reports and each agency/payment allocation. Amend the affected OQ, Schedule B and/or Form 132 for the original period and reconcile credits/payments rather than applying an unexplained next-quarter net change. W-2/information returns have their own iWire submission and deadlines; a federal submission or OR-WR alone does not establish Oregon information-return compliance. [Combined payroll pp.8-9,14-17](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
+
+UI, Paid Leave, withholding/transit and WBF have different delinquency provisions. The 2026 booklet states UI interest of 1.5% per month or fraction and separate reporting penalties; do not apply a DOR annual income-tax interest rate to UI. Transit publication gives 5% unpaid tax, additional 20% for OQ over one month late, additional 25% after an unmet demand and 100% after three consecutive nonfiling years, subject to exact conditions. The UI reporting calculation in the booklet uses $11 per employee after the stated ten-day reporting trigger, minimum $100 and maximum $2,800; a no-employee report can have up to $100. Paid Leave has its separately identified reporting penalty and 1.5% monthly/fraction interest on unpaid contributions. Do not compound interest on prior interest or penalties under those instructions. Complete all-program penalty/fraud and relief calculations require dated notices and the program's own rules. [Combined payroll pp.11-13](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf); [transit p.1](https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf).
+
+The 2026 combined booklet requires WBF payroll records for at least four years and other payroll records for at least six years after required reports are filed. Preserve records longer where an audit, correction or other rule requires. [Combined payroll p.7](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
+
+## Completion checklist
+
+- Establish BIN, each program's coverage and actual services/location.
+- Preserve OR-W-4 and compute 2026 approved withholding rather than return tax.
+- Use the current UI notice and this employer's annual wage accumulation.
+- Separate STT employee tax, district employer tax, leave shares and hourly WBF.
+- Reconcile quarterly totals, employee detail, liability schedule, payments and annual reporting.
+- Record final-pay/worker-classification referrals and unresolved deadlines or special regimes.
+
+## Sources
+
+| Official source / section read | URL | Read on |
+|---|---|---|
+| DOR 2026 Withholding Tax Formulas, all eight pages, revised December 31, 2025. Read for certificate default/expiry, approved annual formulas, caps, payroll deduction/allowance, deposits and negative-result treatment. | https://www.oregon.gov/dor/forms/FormsPubs/withholding-tax-formulas_206-436_2026.pdf | 2026-11-13 |
+| DOR 2026 Combined Payroll Tax Report, pp.3-9,11-17. Read for current wages/rates, account channels, zero returns, OQ/132/Schedule B fields, special offset, rounding and program distinctions. | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf | 2026-11-13 |
+| OED Current Tax Rate, 2026 column and report calendar. Read for Schedule 3, range, new rate, base, offset and Oregon Paid Leave limit. | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx | 2026-11-13 |
+| OED Payroll Tax Frequently Asked Questions, employer/employee/domestic/agricultural sections. Read for coverage triggers and annual/quarterly domestic reporting. | https://www.oregon.gov/employ/Businesses/Pages/Frequently-Asked-Questions.aspx | 2026-11-13 |
+| DOR Statewide Transit Tax, current rate/referendum and reporting sections. Read for 0.1% continuation, wage coverage, self-employment exclusion and failure-to-withhold penalty. | https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx | 2026-11-13 |
+| DOR transit payroll publication, both pages, revised November 18, 2025. Read for 2026 TriMet/LTD employer rates, district work, exemptions, deleted areas and penalties. | https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf | 2026-11-13 |
+| Paid Leave Oregon common questions, employer/contribution/coverage sections. Read for 1% 2026 rate, 60/40 split, average headcount, small employer/grant/equivalent-plan boundaries and benefits routing. | https://paidleave.oregon.gov/resources/common-questions.html | 2026-11-13 |
+| DCBS Workers Benefit Fund current page. Read for 2026 combined hourly assessment and OQ channel. | https://www.oregon.gov/dcbs/wbf/pages/index.aspx | 2026-11-13 |
+| DCBS 2026 WBF rule notice and OAR 436-070, effective January 1, 2026. Read for combined assessment, employer/employee allocation and subject hours. | https://wcd.oregon.gov/laws/Documents/New_rules/070%20WBF%20-%20January%201%2C%202026/70-25054-rule-notice-and-rules.pdf | 2026-11-13 |
+| ORS 670.600-605. Read for control, three-of-five independent business factors, licenses, farm exception and entity-formation limitation. | https://www.oregonlegislature.gov/bills_laws/ors/ors670.html | 2026-11-13 |
+| BOLI Paychecks, final paycheck and penalty sections. Read for ordinary discharge/quit deadlines and special exceptions. | https://www.oregon.gov/boli/workers/Pages/paychecks.aspx | 2026-11-13 |
+| DOR 2025 OR-40 instructions, STT individual section; 2025-2026 filing cycle. Read for separate individual transit reporting boundary. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf | 2026-11-13 |
+
+Not yet confirmed: exact $50,000 withholding table tie and unusual below-minimum base treatment; special stock/benefit and agricultural/household withholding cases; complete nonresident/military/tribal exemptions and multistate UI localization; current successor/common-paymaster wage transfers; government/nonprofit reimbursement and officer elections; equivalent Paid Leave plans, grants and complete benefit calculations; special WBF hour/coverage exceptions beyond the sourced flat-hours and rounding rules; exact 2026 iWire upload specifications, corrections, annual due-date relief and new-hire deadlines; local SHS/PFA and self-employment district calculations; minimum wage/sick-time/premium schedules and full all-program penalties/relief. The former employee TriMet charge, Cherriots rate, generic ABC description, “highest UI base” comparison and single-zero missing-certificate default are withdrawn as unsupported or incorrect.
