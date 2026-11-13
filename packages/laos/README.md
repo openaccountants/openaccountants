@@ -12,9 +12,9 @@
 5. `la-corporate-income-tax.md`
 6. `la-payroll-social.md`
 7. `la-tax-overview.md`
-8. `laos-vat.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+8. `payroll-workflow-base.md`
+9. `company-formation-workflow-base.md`
+10. `workflow-base.md`
 
 ## How to use
 

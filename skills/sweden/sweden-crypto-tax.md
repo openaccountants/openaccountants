@@ -6,7 +6,7 @@ jurisdiction: SE
 tax_year: 2026
 last_updated: 2026-09-25
 depends_on:
-  - sweden-income-tax
+  - se-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

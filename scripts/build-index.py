@@ -9,12 +9,12 @@ the repo root:
 {
   "generated_at": "<UTC ISO>",
   "counts": { "guides": N, "jurisdictions": N, "accountant_reviewed": N },
-  "guides": [ { "slug", "path", "name", "jurisdiction", "category", "tier",
+  "guides": [ { "slug", "mcp_slug", "path", "name", "jurisdiction", "category", "tier",
                 "verified_by", "reviewed_by", "tax_year", "last_updated" }, ... ]
 }
 
-Dependency-free (stdlib only). Frontmatter is parsed with a simple ---block
-line scanner; malformed YAML is tolerated by regex-extracting the known keys.
+Metadata fields use a tolerant ---block scanner. Publication eligibility uses
+the strict shared source catalogue and the validation requirements' YAML parser.
 
 Usage:
     python3 scripts/build-index.py            # write index.json and restamp the llms.txt counts
@@ -25,7 +25,11 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from datetime import datetime, timezone
+
+from skill_dependencies import publication_catalogue
+from skill_eligibility import needs_sources
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,6 +49,7 @@ KNOWN_KEYS = [
     "reviewed_by",
     "tax_year",
     "last_updated",
+    "status",
 ]
 
 # `key: value` at column 0. Tolerates malformed YAML elsewhere in the block.
@@ -52,6 +57,17 @@ KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):[ \t]*(.*)$")
 
 # Jurisdiction values that look like codes get uppercased (MT, US, US-CA, CA-ON).
 CODE_RE = re.compile(r"^[A-Za-z]{2,3}(-[A-Za-z0-9]{1,4})*$")
+SKILL_NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+
+def mcp_slug(rel_path, name):
+    """Loadable frontmatter identity, distinct from the legacy filename slug."""
+    parts = rel_path.replace("\\", "/").split("/")
+    filename = parts[-1].lower()
+    if (filename.startswith("readme") or filename == "references.md"
+            or any(part.lower() in {"templates", "_templates"} for part in parts)):
+        return None
+    return name if isinstance(name, str) and SKILL_NAME_RE.fullmatch(name) else None
 
 
 def extract_frontmatter(text):
@@ -119,6 +135,9 @@ def guide_files():
 
 def build_index():
     guides = []
+    _skills, _targets, held, errors = publication_catalogue(Path(REPO_ROOT))
+    if errors:
+        raise ValueError("Invalid source catalogue:\n" + "\n".join(errors))
     for rel_path in guide_files():
         with open(os.path.join(REPO_ROOT, rel_path), encoding="utf-8", errors="replace") as fh:
             text = fh.read()
@@ -126,6 +145,8 @@ def build_index():
         if block is None:
             continue  # not a guide (no frontmatter)
         fields = parse_known_keys(block)
+        if needs_sources(fields) or fields["name"] in held:
+            continue
 
         jurisdiction = fields["jurisdiction"]
         if jurisdiction and CODE_RE.match(jurisdiction):
@@ -137,6 +158,7 @@ def build_index():
 
         guides.append({
             "slug": os.path.splitext(os.path.basename(rel_path))[0],
+            "mcp_slug": mcp_slug(rel_path, fields["name"]),
             "path": rel_path,
             "name": fields["name"],
             "jurisdiction": jurisdiction,
@@ -170,9 +192,12 @@ def build_index():
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "counts": {
             "guides": len(guides),
+            "loadable_skill_names": len({g["mcp_slug"] for g in guides if g["mcp_slug"]}),
             "jurisdictions": len(jurisdictions),
             "accountant_reviewed": sum(1 for g in guides if is_reviewed(g)),
+            "held_skill_names": len(held),
         },
+        "publication_holds": [{"name": name, "reason": reason} for name, reason in held.items()],
         "guides": guides,
     }
 

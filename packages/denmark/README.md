@@ -17,9 +17,13 @@
 10. `dk-social-contributions.md`
 11. `dk-transfer-pricing.md`
 12. `references.md`
-13. `eu-vat-directive.md`
-14. `payroll-workflow-base.md`
-15. `transfer-pricing-workflow-base.md`
+13. `eu-vat-base.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
+17. `workflow-base.md`
+18. `vat-workflow-base.md`
+19. `income-tax-workflow-base.md`
 
 ## Also known as
 

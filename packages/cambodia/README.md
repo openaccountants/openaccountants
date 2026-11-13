@@ -10,12 +10,12 @@
 3. `README.md`
 4. `cambodia-vat.md`
 5. `kh-company-formation.md`
-6. `kh-corporate-income-tax.md`
-7. `kh-income-tax.md`
-8. `kh-payroll-social.md`
-9. `kh-tax-overview.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `kh-income-tax.md`
+7. `kh-payroll-social.md`
+8. `kh-tax-overview.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
+11. `workflow-base.md`
 
 ## How to use
 

@@ -10,6 +10,12 @@ Tax is the first domain; [domains.yml](domains.yml) lists the others (financial 
 
 A skill is a set of instructions that lets an AI do one tax job correctly, in one place, for one tax year, and shows who stands behind it.
 
+The country or state folder and the declared jurisdiction must agree. For
+example, `skills/us/states/id/` is Idaho (`US-ID`), while `ID` is Indonesia.
+An explicit path/code mismatch blocks a PR changing that skill, for every
+domain and shape, including metadata-only edits. Body-language and currency
+heuristics remain advisory: they are clues for review, not proof of identity.
+
 Every part of a skill answers one of four questions. A field that answers none of them does not belong.
 
 | Question | Variables |
@@ -31,7 +37,7 @@ The frontmatter below is what the platform reads today. A smaller field list fol
 
 A perfect skill makes a frontier model give the right answer, with its conditions, cited to the law, and never a confident wrong one, for one job in one country.
 
-Each of the twelve lines below is in the standard because a measurement says so. Each line carries its **Evidence** (the test or reading that justifies it) and its **Check** (the function in `scripts/skill_checks.py` that tests it, or "reviewer" when only a human reading the law can). The checks run from `scripts/validate-guides.py`: an error on a PR for a tax skill, a warning on the backlog. Where a line is marked **unmeasured**, it is reasoning, not a result, and the weekly loop owes it a test.
+Each of the twelve lines below is in the standard because a measurement says so. Each line carries its **Evidence** (the test or reading that justifies it) and its **Check** (the function in `scripts/skill_checks.py` that tests it, or "reviewer" when only a human reading the law can). The checks run from `scripts/validate-guides.py`: the fixed core blocks changed content in every domain, while full-corpus scans warn on the backlog. New files must also meet their declared shape; an edit cannot break a shape check it previously passed. Existing shape gaps remain warnings unless this change adds a new source defect. A metadata-only approval does not inherit old body defects. Where a line is marked **unmeasured**, it is reasoning, not a result, and the weekly loop owes it a test.
 
 ## The fixed core and the seven shapes
 
@@ -58,11 +64,11 @@ Each of the twelve lines below is in the standard because a measurement says so.
 | `cross-country-method` | One topic across several countries | One method, then a section per country with its values | 1 | `global-home-office` |
 | `router` | Which skills to load, in what order | The routing steps, what is out of scope, the handoff | 0, or 1 if it carries rates, deadlines or worked cases | `cross-border-tax-router` |
 
-`situation-rules`, `filing-howto`, `computation` and `decision` keep either canonical heading set (line 7). A `router` that carries rates, deadlines or worked cases is doing a tax skill's job and needs one worked example, so declaring a shape cannot dodge line 9. `python3 scripts/check-examples.py --require` still asks every skill whose slug names a tax (vat, gst, income-tax, payroll and the rest) for at least one example, whatever its shape. `rates-card` needs `## Rates, bands and thresholds` and `## Sources`; `cross-country-method` needs `## The method, step by step` and `## Sources`; `router` needs `## The method, step by step`, `## When to refuse or refer` and `## Sources`.
+`situation-rules`, `filing-howto`, `computation` and `decision` keep either canonical heading set (line 7). A `router` that carries rates, deadlines or worked cases is doing a tax skill's job and needs one worked example, so declaring a shape cannot dodge line 9. `python3 scripts/check-examples.py --require` uses that same declared shape; a routing-only `router` does not need a dummy calculation because its filename names a tax. An undeclared legacy tax skill still needs at least one example in that command. `rates-card` needs `## Rates, bands and thresholds` and `## Sources`; `cross-country-method` needs `## The method, step by step` and `## Sources`; `router` needs `## The method, step by step`, `## When to refuse or refer` and `## Sources`.
 
 - **Evidence:** a study of 6 Nov 2026: all 2,376 skill files on main (public), plus 60 days of plugin usage and 60 real questions read by hand (usage logs, not public). In that sample about 60% of questions were a person's situation and about 15% a figure; the rest were developers building on the data, return preparation, or too vague to place. The scoreboard of 30 Oct 2026 scored figure questions 100% and condition questions 95% with our skills, decisions 56% and how-tos 21%: the gaps are the content a shape needs (steps, decision cases), not the layout. 1,370 skills (58%) use neither canonical heading set, including most of the 44 most-used; the single most-used skill in the logs (`global-home-office`) is a cross-country method, a shape the earlier standard did not have.
 - **Unmeasured:** that each shape beats the others for its own questions. The next step is a question set by shape, a baseline, then two skills per shape rewritten and re-run; a shape stays only if `right` rises and confident-wrong does not.
-- **Check:** `check_type_declared` (p, a warning) for the key; checks c, d and e read the declared shape.
+- **Check:** `check_type_declared` (p, required for a new skill, advisory on legacy gaps) for the key; checks c, d and e read the declared shape.
 
 ## How to read a source
 
@@ -71,7 +77,7 @@ Every figure comes from the official page, actually opened by the writer. Memory
 1. **Route, in order:** a direct fetch of the official page; then a real browser; then a dated archive copy, marked as archived in the Sources table.
 2. **Quote it:** each figure carries the exact wording from the page, the link and the read date.
 3. **Read the neighbouring sections:** caps, exceptions and definitions often sit elsewhere in the same law. A Kansas example used the right federal unemployment tax rate and missed the wage base in another section.
-4. **Respect blocks:** an ordinary browser visit is fine. Never solve a CAPTCHA or disguise a request. If a page will not open, the figure is marked unverified, never guessed.
+4. **Respect blocks:** an ordinary browser visit is fine. Never solve a CAPTCHA or disguise a request. If a page will not open, leave the unverified figure out of usable guidance and record the missing confirmation under `## Sources`; never guess it.
 
 ## The twelve lines
 
@@ -85,11 +91,11 @@ Every rate, threshold, deadline and penalty comes from the law itself (gazette o
 
 ### 2. The official URL sits on the rates row itself
 
-Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. A figure whose source could not be opened says `unverified` at the start of a cell: it counts as unverified, not linked, and a row with neither a URL nor that word fails the check. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
+Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. A figure whose source could not be opened is left out of the rates table and usable guidance, and listed on the `Not yet confirmed:` line under `## Sources`. An `unverified` mark identifies a legacy evidence gap; it does not make that row acceptable guidance. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
 
 - **Evidence:** year-boundary test: a skill that points at the law plus a live fetch answered 4 of 5; stored facts with no link, 0 of 5. Citations to an official source 76% with the skill against 20% without (4 Aug 2026). The section-demand read of 31 Oct 2026 (453 loads in 28 days, 6.4% with any section held back) showed `get_skill` almost always sends the Sources table, so the row URL is for the other read paths, not for `get_skill`.
 - **Host and column:** the URL is the page that holds the row's figure, on the site of the authority the row names, in the column the header says. Citing a secondary host or a neighbour's domain in a one-country skill warns.
-- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m), both warnings. A skill whose shape has no rates table (`filing-howto`, `decision`, `cross-country-method`, `router`) passes c when it has none; any rates table it does carry is checked.
+- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m) report the backlog as warnings. In every domain, newly added or edited rate rows without a source URL, including rows marked unverified, and newly added or edited citations to a barred secondary host block the PR. Unchanged legacy defects remain warnings. Unknown tax-authority hosts and inferred library matches remain advisory. Active non-tax domains use their explicit official-source host rules in domains.yml for new citations. A skill whose shape has no rates table (`filing-howto`, `decision`, `cross-country-method`, `router`) passes c when it has none; any rates table it does carry is checked.
 
 ### 3. Every rule states its conditions next to the figure
 
@@ -150,10 +156,10 @@ The method set (about 250 skills, the October waves):
 ## When to refuse or refer
 ## Filing and payment
 ## Completion checklist
-## (the standard closing block)
+## Sources
 ```
 
-In the method set, six headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; the standard closing block) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
+In the method set, six writer-owned headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; Sources) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). The platform adds its own closing CTA; a writer never adds a CTA heading. The website admits at most 112,640 UTF-8 bytes per skill. When a file needs splitting, preserve every topic, source and example in a base and a distinct companion job, link them explicitly and record the content map for independent review.
 
 - **Evidence:** shape test, 31 Oct 2026, 30 questions, two models: cutting a fifth of the text changed nothing on Claude (50% right either way) and cost GPT 7 points; the rewritten skills beat their pre-September versions by 16 points on Claude (56% against 40%) and 8 on GPT, and cut confident-wrong from 20% to 0% (Claude). Split by set on the same run: reference set 54% right, 0% confident-wrong (10 skills); method set 50%, 6% (8 skills); skills on neither set 28%, 11% (9 skills, the US, Australia and Canada ones). The two sets are within noise of each other; being on neither is what costs. Section demand, 31 Oct 2026: 6.4% of loads had any section held back, so the earlier inline-budget rule (core sections under a character budget) measured nothing and is dropped. Picking one set for everything is a decision for after the loop has measured both on a full Monday run.
 - **Check:** `check_canonical_headings` (d), which accepts either full set, or the short set of a `rates-card`, `cross-country-method` or `router`. The two older spellings it still accepts in the reference set ("The taxable base", "Worked examples") go once the backlog is rewritten.
@@ -198,23 +204,23 @@ The section names the facts the AI must have before it computes (residence, turn
 
 A skill has one label with two states. `tier: 2` shows **Built from the law**, with source links and the last check date where those exist. `tier: 1` adds **Approved by [name]**: an accountant with an approved account on openaccountants.com stands behind the whole skill. An accountant who writes and publishes it as their own professional work is also its approver. They set `reviewed_by` (their own name), `reviewed_on` (the actual approval date) and `tier: 1` in the publishing PR. No second accountant or separate approval PR is required. A maintenance assignment, old credit line or AI commit under a person's Git identity does not establish professional publication of that version. Licence numbers stay private.
 
-A substantive content change after approval requires the accountant to approve that version or the approval to be removed. Who wrote or edited a skill remains in the Git history; a commit author's name alone is not professional approval.
+A body change or a change to source-owned identity, description, category, dependency, period, place, domain or shape metadata requires the accountant to approve that version or the approval to be removed. Credit-only changes do not silently create or renew professional approval. Who wrote or edited a skill remains in the Git history; a commit author's name alone is not professional approval.
 
 - **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-signed label; the label never tracked accuracy.
-- **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the date it was signed. That `reviewed_on` moved with the content: reviewer.
+- **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the real, non-future date it was signed; a missing, impossible or future date blocks an approval-only PR too. That `reviewed_on` moved with the content: reviewer.
 
 ### 12. An independent second reader before merge
 
-Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. This source check can be done by a separate AI reviewer. It is distinct from the accountant author's own professional approval, recorded in the same PR under line 11. Without that approval, the skill remains **Not yet approved** (`tier: 2`).
+For a new skill or substantive content change, someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure in each changed skill, recomputes every worked example required by its shape, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. A maintenance PR that changes only a title, description, dependency name or credit records the exact unchanged body and checks that the metadata matches it; it cannot claim new legal verification. A change to the country, covered period, domain, shape or interpretation needs the full source review. This source check can be done by a separate AI reviewer. It is distinct from the accountant author's own professional approval, recorded in the same PR under line 11. Without that approval, the skill remains **Not yet approved** (`tier: 2`).
 
 - **Evidence:** not one first draft was clean in any wave since September 2026. Reviewer records on 266 merged PRs (22 to 31 Oct 2026) count about 12,234 figures checked.
-- **Check:** reviewer; the PR comment pattern is the record. Scripts do not test it.
+- **Check:** reviewer; the PR comment pattern is the record. Scripts do not test it. The automated reviewer must state its full figure inventory and checked count; sampling or an incomplete run cannot stand in for this record. Skipped or mixed-file PRs need the same independent source-review record from another person or AI agent; one professional accountant per skill remains enough.
 
 ## Writing rules that sit under the twelve
 
 - **When a site blocks scripts,** open it in a normal browser tab and read it there. Never solve a CAPTCHA or human check. If a site refuses every connection, use an Internet Archive (web.archive.org) copy captured in the current year and say so in the Sources table.
 - **Nothing unconfirmed goes in.** If you cannot confirm a figure or rule from an official source, leave it out and list it on the "Not yet confirmed:" line at the end of `## Sources`. Check: `check_not_yet_confirmed` (i).
-- **No em dash** anywhere in the writer's text. Check: `check_no_em_dash` (h). The platform-stamped `openaccountants-cta-block` is not yours and is not counted.
+- **No em dash** anywhere in the writer's text. Check: `check_no_em_dash` (h), advisory. The platform-stamped `openaccountants-cta-block` is not yours and is not counted.
 - **Sources live in the body**, in the `## Sources` table, not in a frontmatter key, because the platform export re-renders frontmatter and drops keys it does not store:
 
   ```markdown
@@ -259,22 +265,22 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 | Key | Format | Notes |
 |-----|--------|-------|
 | `name` | slug, `[country-or-topic]-[domain]` | e.g. `malta-income-tax` |
-| `description` | 80-150 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
+| `description` | At least 40 characters; aim for 80-150 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
 | `tax_year` | **bare integer**, e.g. `2026` | The **coverage start year**, and the current year (line 1). Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in `tax_year_notes` and the body text, never here. CI errors on anything that is not an integer 2015-2035 |
-| `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **Checked against the law** or **Sourced from the law** (line 11). These are the only two tiers |
+| `tier` | `1` or `2` | `1` adds **Approved by [name]**; `2` has no professional approval. Both show **Built from the law** (line 11). These are the only two tiers |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
 ## Optional keys
 
 | Key | Format | Notes |
 |-----|--------|-------|
-| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`. Its presence is what lets `check_tax_year_current` accept a `tax_year` other than the current year. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text too, such as a "Tax year" row in the quick-reference table, so it survives |
+| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`. For a non-current `tax_year`, it must name an adjacent-year period that starts in that year and includes the current year, such as `2025-26`; an arbitrary note, provenance date or reference to another year cannot exempt stale figures. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text too, such as a "Tax year" row in the quick-reference table, so it survives |
 | `verified_by` | legacy | Do not add to new skills. The platform is retiring it; accountant review uses `reviewed_by` and `reviewed_on` (line 11) |
 | `reviewed_by` | `Name` | The approving accountant's name, matching their openaccountants.com account. Set only by them, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1`. No licence number in the file |
 | `status` | `needs_sources` | Set when a tax skill cites no official source yet. The site keeps it off the site and out of the AI plugin until sources are added and this line is removed. CI requires it on an edited tax skill with no source link |
-| `type` | one of `situation-rules`, `filing-howto`, `computation`, `decision`, `rates-card`, `cross-country-method`, `router` | The skill's shape ("The fixed core and the seven shapes"). The checks test the body against it. Missing or unknown: checked as before, with a warning |
+| `type` | one of `situation-rules`, `filing-howto`, `computation`, `decision`, `rates-card`, `cross-country-method`, `router` | The skill's shape ("The fixed core and the seven shapes"). The checks test the body against it. Required for a new skill; existing missing labels remain backlog warnings. The declared shape determines the examples and headings |
 | `domain` | an id from [domains.yml](domains.yml) | What the skill is about: `tax`, `financial-reporting`, `audit-assurance`, `bookkeeping`, `payroll`, `practice-management`, `advisory`. It picks how the skill is dated (check a) and which hosts are official (check m). Tax, no domain, and the values the website already writes keep every rule on this page. A value not in the file warns: propose it there |
 | `standard`, `effective_date` | quoted string; `YYYY-MM-DD` | Instead of `tax_year`, for `financial-reporting` and `audit-assurance`: the standard as its setter names it, and the date from which the version described applies. Repeat both in the body, since the export may drop keys it does not store |
 | `checked_on` | `YYYY-MM-DD` | Instead of `tax_year`, for the other non-tax domains: the day the content was last checked against its official sources |
@@ -348,7 +354,7 @@ The body opens with `# [Skill Name] v0.1` and this notice, then the nine section
 
 ## General template (accounting packs only)
 
-Bookkeeping, e-invoicing, financial statements and tax optimisation skills (`category` in `bookkeeping`, `invoicing`, `financial-statements`, `tax-optimization`) keep this general shape and belong to the Accounting packs milestone. The twelve lines still apply where they fit (sources, read dates, conditions, no loss on rewrite, honest tier, second reader); `skill_checks.py` runs on them but `validate-guides.py` treats a failure as a warning, never an error. **Tax skills use the nine sections of line 7, not this.**
+Bookkeeping, e-invoicing, financial statements and tax optimisation skills (`category` in `bookkeeping`, `invoicing`, `financial-statements`, `tax-optimization`) keep this general shape and belong to the Accounting packs milestone. The twelve lines still apply where they fit (sources, read dates, conditions, no loss on rewrite, honest tier, second reader); The fixed-core admission rules apply in every domain. Existing general-template shape gaps remain warnings until improved; a new skill declares the appropriate one of the seven shapes above. **Tax skills use the applicable headings in line 7, not this legacy template.**
 
 1. **What this file is.** The workflow base it loads on top of (`us-tax-workflow-base`, `crypto-tax-workflow-base`, `bookkeeping-workflow-base`); what it computes, where it fits in the pipeline, what it does not cover; the tax year it is current for. The reviewer is the customer of the output: the skill produces working papers and a brief, not a return.
 2. **Scope statement.** What forms, entity types and line items are covered, and what is out of scope with the skill that handles it.

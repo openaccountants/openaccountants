@@ -18,6 +18,7 @@
 11. `uae-vat.md`
 12. `payroll-workflow-base.md`
 13. `company-formation-workflow-base.md`
+14. `workflow-base.md`
 
 ## Also known as
 

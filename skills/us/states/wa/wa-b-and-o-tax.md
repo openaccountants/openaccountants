@@ -1,5 +1,5 @@
 ---
-name: wa-business-occupation-tax
+name: wa-b-and-o-tax
 description: >
   Washington State Business and Occupation (B&O) Tax for self-employed individuals. Covers gross receipts tax classifications (service/other, retailing, wholesaling, manufacturing), B&O tax rates, small business credit (SBC), city B&O taxes, and filing frequencies on the Combined Excise Tax Return. Primary source: RCW 82.04.
 version: 1.0

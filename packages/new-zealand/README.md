@@ -19,6 +19,9 @@
 12. `nz-timing-deductions-when-expense-incurred.md`
 13. `references.md`
 14. `crypto-tax-workflow-base.md`
+15. `workflow-base.md`
+16. `vat-workflow-base.md`
+17. `income-tax-workflow-base.md`
 
 ## Also known as
 

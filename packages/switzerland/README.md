@@ -26,6 +26,9 @@
 19. `company-formation-workflow-base.md`
 20. `transfer-pricing-workflow-base.md`
 21. `crypto-tax-workflow-base.md`
+22. `workflow-base.md`
+23. `income-tax-workflow-base.md`
+24. `vat-workflow-base.md`
 
 ## Also known as
 

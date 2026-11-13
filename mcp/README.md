@@ -62,6 +62,20 @@ The self-hosted server exposes the 6 read-only tools below. The hosted server at
 
 Skill access is **read-only** and **path-sandboxed** to the `packages/` directory; `submit_feedback` does not call GitHub itself, it only constructs a URL.
 
+Preparation responses check the bundled `workflow-base` afresh and return a compact
+`workflow` reference with its current `body_sha256` and a mandatory
+`get_skill('workflow-base')` loading step. Read the full method once per task/current
+hash; an availability check does not mean the client already loaded it. The actual
+method call returns its full body and provenance without a recursive loading step.
+`get_skill` and
+`get_skill_sections` keep source inspection available when the method cannot be
+loaded, but return `application_status: "blocked"` and a stop instruction.
+`start` returns `blocked` for an unavailable method, or `uncovered` when no
+applicable jurisdiction/topic content is found; neither supplies an execution
+plan. Preparation prompts refuse to proceed without the usable method. The
+method alone does not establish country coverage, facts, tool execution or
+professional approval.
+
 ### The `start` flow
 
 `start` is what makes the connector self-guiding. A typical session looks like:
@@ -115,21 +129,15 @@ https://www.openaccountants.com/api/mcp
 
 That's it. The hosted server is the full product surface: the live database, review status per skill, `search_rules`, `get_deadlines` and the `share_with_openaccountants` handoff. See the note at the top.
 
-### Option 2 — Install from PyPI (no clone needed)
+### Option 2 — Install the tested GitHub revision
 
-Requires **Python 3.10+**. The wheel bundles all skill packages — you do not need a checkout of this repo:
-
-```bash
-pip install openaccountants-mcp
-```
-
-Or run it directly with `uvx`:
+Requires **Python 3.10+** and **Git**. The current [PyPI release, 0.1.1](https://pypi.org/project/openaccountants-mcp/0.1.1/), is older and contains no bundled skills. Use this tested GitHub revision instead. Run inside your Python virtual environment:
 
 ```bash
-uvx openaccountants-mcp
+python -m pip install --force-reinstall "openaccountants-mcp @ git+https://github.com/openaccountants/openaccountants-mcp.git@6fc1b5172ea299a3341649527d038678a31b7d06"
 ```
 
-Then connect your AI client (next section) using the `openaccountants-mcp` command.
+This builds the pinned revision with its bundled skill packages. Connect your AI client using the installed `openaccountants-mcp` executable; for a virtual environment, use its absolute path as shown below.
 
 ### Development install (clone the repo)
 
@@ -149,7 +157,7 @@ uv pip install -e ./mcp
 
 The `-e` matters. Without it both commands are ordinary non-editable installs: the build hook bundles a **snapshot** of `packages/` into the installed package and the server prefers that snapshot, so editing a guide in your checkout changes nothing until you reinstall. With `-e` the server resolves `packages/` from the repo root and picks up edits immediately. Either way `OPENACCOUNTANTS_ROOT` overrides the choice (see environment variables below).
 
-Published wheels and source distributions bundle the generated skill packages, which is what lets a plain `pip install openaccountants-mcp` work with no checkout at all.
+Wheels and source distributions built from the tested GitHub revision bundle the generated skill packages. The older PyPI release does not contain that data.
 
 ### Connect to your AI client
 
@@ -169,14 +177,13 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 }
 ```
 
-If installed in a virtualenv or with `uv`:
+If installed in a virtual environment, use the absolute path to its executable:
 
 ```json
 {
   "mcpServers": {
     "openaccountants": {
-      "command": "uv",
-      "args": ["run", "--directory", "/path/to/openaccountants/mcp", "openaccountants-mcp"]
+      "command": "/absolute/path/to/your/venv/bin/openaccountants-mcp"
     }
   }
 }
@@ -215,7 +222,7 @@ Any client that reads an `mcpServers` map works the same way. Google Antigravity
 }
 ```
 
-For a local install, `pip install openaccountants-mcp` and use `"command": "python", "args": ["-m", "openaccountants_mcp.server"]` with `"env": {"MCP_TRANSPORT": "stdio"}` instead of `url`. Tell the agent to compute only from the rates and thresholds in the loaded skills, never from memory, and to flag anything it assumed for an accountant to check.
+For a local install, use the tested GitHub revision above and set `command` to the absolute path of its installed `openaccountants-mcp` executable, with `"env": {"MCP_TRANSPORT": "stdio"}` instead of `url`. Tell the agent to compute only from the rates and thresholds in the loaded skills, never from memory, and to flag anything it assumed for an accountant to check.
 
 ### Start chatting
 

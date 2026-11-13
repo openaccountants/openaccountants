@@ -89,9 +89,18 @@ print("\nget_skill('malta-income-tax'):")
 gs = S.get_skill("malta-income-tax")
 check("has markdown", len(gs["markdown"]) > 500)
 check("has provenance footer", "Provenance & attribution" in gs["markdown"])
-check("explicit tier 2 stays research-verified",
-      gs["quality_tier"] == "research-verified", gs["quality_tier"])
-check("tier 2 does not expose a reviewer as verified", gs["verified_by"] is None,
+# This live sample can legitimately gain approval. Parse its current source
+# independently; hardcoded tier-1/tier-2 policy controls remain in unit tests.
+import yaml
+sample_path = S.PACKAGES_DIR / S._index()["malta-income-tax"]["relpath"]
+source_metadata = yaml.safe_load(sample_path.read_text(encoding="utf-8").split("---", 2)[1])
+source_reviewer = source_metadata.get("reviewed_by") or source_metadata.get("verified_by")
+source_approved = str(source_metadata.get("tier")) == "1" and bool(source_reviewer)
+expected_tier = "accountant-verified" if source_approved else "research-verified"
+check("quality matches explicit current source approval",
+      gs["quality_tier"] == expected_tier, gs["quality_tier"])
+check("reviewer matches current explicitly approved source",
+      gs["verified_by"] == (source_reviewer if source_approved else None),
       str(gs["verified_by"]))
 
 # --- get_skill_sections ---------------------------------------------------

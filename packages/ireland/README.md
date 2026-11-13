@@ -26,10 +26,13 @@
 19. `ie-transfer-pricing.md`
 20. `ie-usc.md`
 21. `ie-vat-return.md`
-22. `eu-vat-directive.md`
-23. `payroll-workflow-base.md`
-24. `company-formation-workflow-base.md`
-25. `transfer-pricing-workflow-base.md`
+22. `eu-vat-base.md`
+23. `eu-vat-directive.md`
+24. `payroll-workflow-base.md`
+25. `company-formation-workflow-base.md`
+26. `transfer-pricing-workflow-base.md`
+27. `workflow-base.md`
+28. `income-tax-workflow-base.md`
 
 ## Also known as
 

@@ -9,15 +9,16 @@
 2. `intake.md`
 3. `README.md`
 4. `uz-company-formation.md`
-5. `uz-corporate-income-tax.md`
-6. `uz-tax-overview.md`
-7. `uzbekistan-income-tax.md`
-8. `uzbekistan-payroll.md`
-9. `uzbekistan-social-contributions.md`
-10. `uzbekistan-tax-optimization.md`
-11. `uzbekistan-vat.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+5. `uz-tax-overview.md`
+6. `uzbekistan-income-tax.md`
+7. `uzbekistan-payroll.md`
+8. `uzbekistan-tax-optimization.md`
+9. `uzbekistan-vat.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
+12. `workflow-base.md`
+13. `income-tax-workflow-base.md`
+14. `vat-workflow-base.md`
 
 ## How to use
 

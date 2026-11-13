@@ -8,7 +8,7 @@ last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
-  - mexico-income-tax
+  - mx-income-tax
 category: crypto
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

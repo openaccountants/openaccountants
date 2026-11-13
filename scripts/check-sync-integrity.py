@@ -951,7 +951,11 @@ def run_integrity_check(
                 findings.append(Finding("notice", "declared-coverage-withdrawal", change.display_path,
                                         "coverage exclusion and exact prior Git blob recorded; maintainer review required"))
                 continue
-            severity = "error" if mode == "sync" or strict_metadata else "warning"
+            # A human PR's deletion/rename is governed by validate-guides.py's
+            # required Moved/Not moved record. Strict metadata governs dates
+            # and versions, not a ban on every intentional retirement. The
+            # former database exporter still may never remove source files.
+            severity = "error" if mode == "sync" else "warning"
             findings.append(
                 Finding(
                     severity,

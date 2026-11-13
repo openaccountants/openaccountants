@@ -1,4 +1,4 @@
-"""Check (c): every rates row is linked or marked unverified, and the counts say which."""
+"""Check (c): usable rates rows are linked; legacy unverified rows remain visible in counts."""
 import os
 import sys
 import unittest
@@ -24,9 +24,9 @@ class RatesRows(unittest.TestCase):
         self.assertEqual(problems, [])
         self.assertEqual((c["total"], c["linked"], c["linked_pct"]), (2, 2, 100.0))
 
-    def test_marked_row_passes_but_is_not_linked(self):
+    def test_marked_row_fails_as_guidance_but_is_counted_honestly(self):
         problems, c = self.check(doc(("VAT", URL), ("Reduced", "**Unverified**: page blocked")))
-        self.assertEqual(problems, [])
+        self.assertIn("remove from usable guidance", problems[0])
         self.assertEqual((c["linked"], c["unverified"], c["linked_pct"], c["unverified_pct"]), (1, 1, 50.0, 50.0))
 
     def test_mark_beats_a_url(self):

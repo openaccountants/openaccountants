@@ -48,14 +48,16 @@ WEBSITE_VALUES = {
 
 
 def legacy_tax_year_current(fm):
-    """check_tax_year_current exactly as it was before docs/domains.yml."""
+    """Tax dating with the explicit period-label check, independent of domain routing."""
     year = fm.get("tax_year")
     if year is None or str(year).strip() == "":
         return ["no tax_year"]
     if str(year).strip() == str(skill_checks.CURRENT_TAX_YEAR):
         return []
     if fm.get("tax_year_notes"):
-        return []
+        if skill_checks._current_tax_period(year, fm["tax_year_notes"]):
+            return []
+        return [f"tax_year {year}: tax_year_notes must name an adjacent-year period starting in {year} and including {skill_checks.CURRENT_TAX_YEAR}"]
     return [f"tax_year {year} is not {skill_checks.CURRENT_TAX_YEAR} and no tax_year_notes"]
 
 
@@ -272,10 +274,10 @@ class TaxUnchanged(unittest.TestCase):
             if fm and skill_checks.applied_domain(path, fm)[0] is None:
                 self.assertEqual(skill_checks.check_tax_year_current(path, text, fm), legacy_tax_year_current(fm), path)
 
-    def test_pr_error_checks_unchanged(self):
+    def test_pr_error_checks_keep_date_and_approval_rules_but_style_warns(self):
         self.assertEqual(validate_guides.PR_ERROR_CHECKS, {
             "tax_year_current", "sources_read_dates", "two_oa_checks", "version_numeric",
-            "tier_honest", "no_em_dash",
+            "tier_honest", "reviewed_on",
         })
 
     def test_staleness_unchanged_for_tax(self):
@@ -380,14 +382,14 @@ class OtherDomains(unittest.TestCase):
         self.assertTrue(pr_error("tax_year_current", "other", False, False))
         self.assertTrue(pr_error("tax_year_current", "general", False, False))
         self.assertFalse(pr_error("tax_year_current", "other", False, True))  # frontmatter-only relabel
-        # Only the date rule: the other checks keep the old scope rule.
-        self.assertFalse(pr_error("two_oa_checks", "other", False, False))
+        # The fixed core now applies in every domain.
+        self.assertTrue(pr_error("two_oa_checks", "other", False, False))
         self.assertFalse(pr_error("domain_known", "tax", True, False))
         # Tax: exactly as before.
         self.assertTrue(pr_error("tax_year_current", "tax", True, False))
         self.assertFalse(pr_error("tax_year_current", "tax", True, True))
         self.assertTrue(pr_error("tier_honest", "tax", True, True))
-        self.assertFalse(pr_error("tax_year_current", "general", True, False))
+        self.assertTrue(pr_error("tax_year_current", "general", True, False))
 
     def test_payroll_and_bookkeeping_apply_once_they_carry_checked_on(self):
         path = "skills/germany/de-payslip-contents.md"

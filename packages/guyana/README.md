@@ -17,6 +17,7 @@
 10. `gy-vat-gst.md`
 11. `payroll-workflow-base.md`
 12. `company-formation-workflow-base.md`
+13. `workflow-base.md`
 
 ## How to use
 

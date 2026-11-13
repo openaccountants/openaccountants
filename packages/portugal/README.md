@@ -26,14 +26,17 @@
 19. `pt-return-assembly.md`
 20. `pt-social-contributions.md`
 21. `pt-transfer-pricing.md`
-22. `eu-vat-directive.md`
-23. `bookkeeping-workflow-base.md`
-24. `einvoice-workflow-base.md`
-25. `payroll-workflow-base.md`
-26. `company-formation-workflow-base.md`
-27. `financial-statements-workflow-base.md`
-28. `transfer-pricing-workflow-base.md`
-29. `crypto-tax-workflow-base.md`
+22. `eu-vat-base.md`
+23. `eu-vat-directive.md`
+24. `bookkeeping-workflow-base.md`
+25. `einvoice-workflow-base.md`
+26. `payroll-workflow-base.md`
+27. `company-formation-workflow-base.md`
+28. `financial-statements-workflow-base.md`
+29. `transfer-pricing-workflow-base.md`
+30. `crypto-tax-workflow-base.md`
+31. `workflow-base.md`
+32. `vat-workflow-base.md`
 
 ## Also known as
 

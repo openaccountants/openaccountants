@@ -13,25 +13,25 @@
 6. `japan-crypto-tax.md`
 7. `japan-financial-statements.md`
 8. `japan-formation.md`
-9. `japan-payroll.md`
-10. `japan-tax-optimization.md`
-11. `japan-transfer-pricing.md`
-12. `jp-consumption-tax.md`
-13. `jp-estimated-tax.md`
-14. `jp-etax-filing.md`
-15. `jp-income-tax.md`
-16. `jp-incorporation.md`
-17. `jp-nonpermanent-resident.md`
-18. `jp-social-insurance.md`
-19. `references.md`
-20. `bookkeeping-workflow-base.md`
-21. `payroll-workflow-base.md`
-22. `company-formation-workflow-base.md`
-23. `financial-statements-workflow-base.md`
-24. `transfer-pricing-workflow-base.md`
-25. `crypto-tax-workflow-base.md`
-26. `japan-guided-intake.md`
-27. `japan-return-assembly.md`
+9. `japan-tax-optimization.md`
+10. `jp-consumption-tax.md`
+11. `jp-estimated-tax.md`
+12. `jp-etax-filing.md`
+13. `jp-income-tax.md`
+14. `jp-incorporation.md`
+15. `jp-nonpermanent-resident.md`
+16. `references.md`
+17. `bookkeeping-workflow-base.md`
+18. `payroll-workflow-base.md`
+19. `company-formation-workflow-base.md`
+20. `financial-statements-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
+22. `crypto-tax-workflow-base.md`
+23. `japan-guided-intake.md`
+24. `japan-return-assembly.md`
+25. `workflow-base.md`
+26. `vat-workflow-base.md`
+27. `income-tax-workflow-base.md`
 
 ## Also known as
 

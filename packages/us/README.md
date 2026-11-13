@@ -10,6 +10,7 @@
 3. `us-capital-gains.md`
 4. `us-nonresident-cgt.md`
 5. `us-tax-residency.md`
+6. `workflow-base.md`
 
 ## How to use
 

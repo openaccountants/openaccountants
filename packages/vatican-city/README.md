@@ -9,6 +9,7 @@
 2. `intake.md`
 3. `README.md`
 4. `va-italy-remuneration-and-financial-assets.md`
+5. `workflow-base.md`
 
 ## How to use
 

@@ -11,6 +11,7 @@
 4. `yt-employer-payroll-relief.md`
 5. `yt-vat-and-goods-imports.md`
 6. `payroll-workflow-base.md`
+7. `workflow-base.md`
 
 ## How to use
 

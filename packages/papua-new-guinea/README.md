@@ -9,13 +9,12 @@
 2. `intake.md`
 3. `README.md`
 4. `pg-company-formation.md`
-5. `pg-corporate-income-tax.md`
-6. `pg-income-tax.md`
-7. `pg-payroll-social.md`
-8. `pg-tax-overview.md`
-9. `png-gst.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+5. `pg-income-tax.md`
+6. `pg-payroll-social.md`
+7. `pg-tax-overview.md`
+8. `payroll-workflow-base.md`
+9. `company-formation-workflow-base.md`
+10. `workflow-base.md`
 
 ## How to use
 

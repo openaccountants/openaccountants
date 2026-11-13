@@ -13,9 +13,9 @@
 6. `ky-corporate-income-tax.md`
 7. `ky-payroll-social.md`
 8. `ky-tax-overview.md`
-9. `ky-vat-gst.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
+11. `workflow-base.md`
 
 ## How to use
 
