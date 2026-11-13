@@ -24,7 +24,7 @@ type: computation
 | Jurisdiction | Massachusetts (US-MA), [DOR](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
 | Law | M.G.L. c. 64H (sales tax), c. 64I (use tax), c. 62C (administration), [DOR guide](https://www.mass.gov/guides/sales-and-use-tax) |
 | Portal | [MassTaxConnect](https://mtc.dor.state.ma.us/mtc/_/) |
-| Returns | Form ST-9 (goods), Form STS (services), ST-10 and ST-11 (use tax) |
+| Returns | Form ST-9 (goods), Form STS (services), ST-10 and ST-11 (use tax), [DOR guide](https://www.mass.gov/guides/sales-and-use-tax) |
 
 Covers vendors selling goods, software and telecommunications into or within Massachusetts, and businesses and individuals owing use tax. Not covered here: room occupancy excise and short-term rental fees, the marijuana excise, motor vehicle sales through the Registry, and the meals tax detail beyond the rate. The multistate nexus and marketplace framework is in `us-sales-tax` and `us-sales-tax-nexus-50-state-matrix`.
 
