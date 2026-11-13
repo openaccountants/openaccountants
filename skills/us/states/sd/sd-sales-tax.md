@@ -22,10 +22,10 @@ version: 2.1
 | Jurisdiction | South Dakota, United States |
 | Jurisdiction Code | US-SD |
 | Tax Type | Sales and Use Tax (state + local) |
-| State Rate | 4.20% |
+| State Rate | 4.20% ([SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html), read 2026-11-13) |
 | Municipal Tax | Up to 2.00% |
 | Municipal Gross Receipts Tax | Additional (varies by municipality) |
-| Maximum Combined Rate | ~6.20% + municipal gross receipts |
+| Maximum Combined Rate | ~6.20% + municipal gross receipts (4.20% state, [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html), plus up to 2% municipal, [SDCL 10-52-2](https://sdlegislature.gov/api/Statutes/10-52-2.html), read 2026-11-13) |
 | Primary Statute | South Dakota Codified Laws (SDCL) §10-45 |
 | Governing Agency | South Dakota Department of Revenue (DOR) |
 | Portal | https://dor.sd.gov |
