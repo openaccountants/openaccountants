@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T04:58:15+00:00",
+ "generated_at": "2026-11-13T08:48:07+00:00",
  "counts": {
   "guides": 2259,
   "loadable_skill_names": 2196,
-  "jurisdictions": 257,
-  "accountant_reviewed": 132,
+  "jurisdictions": 256,
+  "accountant_reviewed": 126,
   "held_skill_names": 115
  },
  "publication_holds": [
@@ -26792,8 +26792,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "al-corporate-income-tax",
+   "mcp_slug": "al-corporate-income-tax",
+   "path": "skills/us/states/al/al-corporate-income-tax.md",
+   "name": "al-corporate-income-tax",
+   "jurisdiction": "US-AL",
+   "category": "corporate",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "al-income-tax",
@@ -26805,8 +26818,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2025",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "al-payroll-withholding",
+   "mcp_slug": "al-payroll-withholding",
+   "path": "skills/us/states/al/al-payroll-withholding.md",
+   "name": "al-payroll-withholding",
+   "jurisdiction": "US-AL",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "al-sales-tax",
@@ -26818,8 +26844,34 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "al-unemployment-contributions",
+   "mcp_slug": "al-unemployment-contributions",
+   "path": "skills/us/states/al/al-unemployment-contributions.md",
+   "name": "al-unemployment-contributions",
+   "jurisdiction": "US-AL",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "alabama-cross-border",
+   "mcp_slug": "alabama-cross-border",
+   "path": "skills/us/states/al/alabama-cross-border.md",
+   "name": "alabama-cross-border",
+   "jurisdiction": "US-AL",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "alabama-income-tax",
@@ -26832,7 +26884,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-06"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "alabama-sales-tax",
@@ -26844,8 +26896,21 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "alabama-transfer-pricing",
+   "mcp_slug": "alabama-transfer-pricing",
+   "path": "skills/us/states/al/alabama-transfer-pricing.md",
+   "name": "alabama-transfer-pricing",
+   "jurisdiction": "US-AL",
+   "category": "transfer-pricing",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ar-income-tax",
@@ -27660,11 +27725,11 @@
    "name": "ks-corporate-income-tax",
    "jurisdiction": "US-KS",
    "category": "state-tax",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-29"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ks-cross-border",
@@ -27673,11 +27738,11 @@
    "name": "ks-cross-border",
    "jurisdiction": "US-KS",
    "category": "cross-border",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-29"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ks-income-tax",
@@ -27699,11 +27764,11 @@
    "name": "ks-payroll",
    "jurisdiction": "US-KS",
    "category": "payroll",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-29"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ks-sales-tax",
@@ -27725,11 +27790,11 @@
    "name": "ks-social-contributions",
    "jurisdiction": "US-KS",
    "category": "payroll",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-29"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ks-transfer-pricing",
@@ -27738,11 +27803,11 @@
    "name": "ks-transfer-pricing",
    "jurisdiction": "US-KS",
    "category": "transfer-pricing",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Jeff Watts",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-29"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ky-income-tax",
@@ -28187,6 +28252,19 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "nd-cross-border-tax",
+   "mcp_slug": "nd-cross-border-tax",
+   "path": "skills/us/states/nd/nd-cross-border-tax.md",
+   "name": "nd-cross-border-tax",
+   "jurisdiction": "US-ND",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-11-13"
+  },
+  {
    "slug": "nd-estimated-tax",
    "mcp_slug": "nd-estimated-tax",
    "path": "skills/us/states/nd/nd-estimated-tax.md",
@@ -28197,7 +28275,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-income-tax",
@@ -28210,7 +28288,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-payroll",
@@ -28223,7 +28301,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-return-assembly",
@@ -28236,7 +28314,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-sales-tax",
@@ -28248,8 +28326,34 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nd-social-contributions",
+   "mcp_slug": "nd-social-contributions",
+   "path": "skills/us/states/nd/nd-social-contributions.md",
+   "name": "nd-social-contributions",
+   "jurisdiction": "US-ND",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
+  },
+  {
+   "slug": "nd-transfer-pricing",
+   "mcp_slug": "nd-transfer-pricing",
+   "path": "skills/us/states/nd/nd-transfer-pricing.md",
+   "name": "nd-transfer-pricing",
+   "jurisdiction": "US-ND",
+   "category": "transfer-pricing",
+   "tier": 2,
+   "verified_by": "pending",
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "ne-income-tax",
@@ -28937,8 +29041,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "tn-sales-tax",
@@ -29120,7 +29224,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "vt-sales-tax",
@@ -29132,8 +29236,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "wa-b-and-o-tax",
@@ -29511,110 +29615,6 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-01"
-  },
-  {
-   "slug": "venezuela-corporate-tax",
-   "mcp_slug": "venezuela-corporate-tax",
-   "path": "skills/venezuela/venezuela-corporate-tax.md",
-   "name": "venezuela-corporate-tax",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-cross-border-tax",
-   "mcp_slug": "venezuela-cross-border-tax",
-   "path": "skills/venezuela/venezuela-cross-border-tax.md",
-   "name": "venezuela-cross-border-tax",
-   "jurisdiction": "VE",
-   "category": "cross-border",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-income-tax",
-   "mcp_slug": "venezuela-income-tax",
-   "path": "skills/venezuela/venezuela-income-tax.md",
-   "name": "venezuela-income-tax",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-iva",
-   "mcp_slug": "venezuela-iva",
-   "path": "skills/venezuela/venezuela-iva.md",
-   "name": "venezuela-iva",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-payroll",
-   "mcp_slug": "venezuela-payroll",
-   "path": "skills/venezuela/venezuela-payroll.md",
-   "name": "venezuela-payroll",
-   "jurisdiction": "VE",
-   "category": "payroll",
-   "tier": 1,
-   "verified_by": null,
-   "reviewed_by": "Jose Padilla",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "venezuela-social-contributions",
-   "mcp_slug": "venezuela-social-contributions",
-   "path": "skills/venezuela/venezuela-social-contributions.md",
-   "name": "venezuela-social-contributions",
-   "jurisdiction": "VE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-tax-optimization",
-   "mcp_slug": "venezuela-tax-optimization",
-   "path": "skills/venezuela/venezuela-tax-optimization.md",
-   "name": "venezuela-tax-optimization",
-   "jurisdiction": "VE",
-   "category": "tax-optimization",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
-  },
-  {
-   "slug": "venezuela-transfer-pricing",
-   "mcp_slug": "venezuela-transfer-pricing",
-   "path": "skills/venezuela/venezuela-transfer-pricing.md",
-   "name": "venezuela-transfer-pricing",
-   "jurisdiction": "VE",
-   "category": "transfer-pricing",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-11"
   },
   {
    "slug": "references",
