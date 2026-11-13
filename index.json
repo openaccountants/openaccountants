@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-13T04:41:37+00:00",
+ "generated_at": "2026-11-13T04:58:15+00:00",
  "counts": {
-  "guides": 2260,
-  "loadable_skill_names": 2197,
+  "guides": 2259,
+  "loadable_skill_names": 2196,
   "jurisdictions": 257,
-  "accountant_reviewed": 133,
-  "held_skill_names": 114
+  "accountant_reviewed": 132,
+  "held_skill_names": 115
  },
  "publication_holds": [
   {
@@ -462,6 +462,10 @@
   },
   {
    "name": "withholding-tax-matrix",
+   "reason": "status: needs_sources"
+  },
+  {
+   "name": "za-vat-return",
    "reason": "status: needs_sources"
   }
  ],
@@ -22461,19 +22465,6 @@
    "reviewed_by": null,
    "tax_year": null,
    "last_updated": "2026-09-03"
-  },
-  {
-   "slug": "za-vat-return",
-   "mcp_slug": "za-vat-return",
-   "path": "skills/south-africa/za-vat-return.md",
-   "name": "za-vat-return",
-   "jurisdiction": "ZA",
-   "category": "international",
-   "tier": 1,
-   "verified_by": null,
-   "reviewed_by": "Werner Britz",
-   "tax_year": "2026",
-   "last_updated": "2026-11-03"
   },
   {
    "slug": "kr-income-tax",

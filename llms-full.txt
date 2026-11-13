@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,260 AI skills across 257 jurisdictions in this repository, 133 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,259 AI skills across 257 jurisdictions in this repository, 132 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2197 distinct MCP names)
+## Skill inventory (2196 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -1810,7 +1810,6 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - za-provisional-tax | ZA | tier 1 | reviewed_by Werner Britz
 - za-tax-residency | ZA | tier 1 | reviewed_by Werner Britz
 - za-travel-allowance-tables | ZA | tier 2 | reviewed_by -
-- za-vat-return | ZA | tier 1 | reviewed_by Werner Britz
 - kr-income-tax | KR | tier 2 | reviewed_by -
 - simplified-business-operator-registration-under-vat-act | KR | tier 2 | reviewed_by -
 - south-korea-crypto-tax | KR | tier 2 | reviewed_by -

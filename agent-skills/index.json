@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2164,
+ "count": 2163,
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
@@ -456,6 +456,10 @@
   },
   {
    "name": "withholding-tax-matrix",
+   "reason": "status: needs_sources"
+  },
+  {
+   "name": "za-vat-return",
    "reason": "status: needs_sources"
   }
  ],
@@ -20077,15 +20081,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": null
-  },
-  {
-   "name": "za-vat-return",
-   "jurisdiction": "ZA",
-   "path": "skills/south-africa/za-vat-return.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": "Werner Britz",
-   "tax_year": 2026
   },
   {
    "name": "zambia-vat",

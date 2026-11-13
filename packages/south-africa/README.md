@@ -28,11 +28,9 @@
 21. `za-provisional-tax.md`
 22. `za-tax-residency.md`
 23. `za-travel-allowance-tables.md`
-24. `za-vat-return.md`
-25. `payroll-workflow-base.md`
-26. `transfer-pricing-workflow-base.md`
-27. `workflow-base.md`
-28. `vat-workflow-base.md`
+24. `payroll-workflow-base.md`
+25. `transfer-pricing-workflow-base.md`
+26. `workflow-base.md`
 
 ## Also known as
 
