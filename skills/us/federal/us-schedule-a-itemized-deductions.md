@@ -103,7 +103,7 @@ Compare the total from step 6 with the standard deduction for the filing status,
 | Situation | Treatment |
 | --- | --- |
 | Married filing separately, spouse itemizes | Must itemize, even if the standard deduction is larger (26 U.S.C. 63(c)(6)(A)) |
-| Modified AGI above USD 639,000 | SALT cap is at the USD 10,000 floor (40,400 less 30% of 134,000 = 200, so the floor binds) |
+| Modified AGI above USD 606,333 | SALT cap is at the USD 10,000 floor (40,400 less 10,000 = 30,400; 30,400 / 0.30 = 101,333; 505,000 + 101,333 = 606,333) |
 | State tax refund received in 2026 for 2025 | Taxable only to the extent the 2025 deduction gave a benefit; check the 2025 Schedule A |
 | Pass-through entity tax paid by a partnership or S corporation | Deducted by the entity, not on Schedule A; not counted against the cap |
 | Mortgage refinanced above the old balance | Only the part replacing acquisition debt keeps acquisition status |
