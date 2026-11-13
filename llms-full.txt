@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,259 AI skills across 257 jurisdictions in this repository, 132 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,251 AI skills across 256 jurisdictions in this repository, 131 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2196 distinct MCP names)
+## Skill inventory (2188 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -2345,14 +2345,6 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - vu-tax-overview | VU | tier 2 | reviewed_by -
 - vu-vat-gst | VU | tier 2 | reviewed_by -
 - va-italy-remuneration-and-financial-assets | VA | tier 2 | reviewed_by -
-- venezuela-corporate-tax | VE | tier 2 | reviewed_by -
-- venezuela-cross-border-tax | VE | tier 2 | reviewed_by -
-- venezuela-income-tax | VE | tier 2 | reviewed_by -
-- venezuela-iva | VE | tier 2 | reviewed_by -
-- venezuela-payroll | VE | tier 1 | reviewed_by Jose Padilla
-- venezuela-social-contributions | VE | tier 2 | reviewed_by -
-- venezuela-tax-optimization | VE | tier 2 | reviewed_by -
-- venezuela-transfer-pricing | VE | tier 2 | reviewed_by -
 - vietnam-vat | VN | tier 2 | reviewed_by -
 - vn-company-formation | VN | tier 2 | reviewed_by -
 - vn-payroll-social | VN | tier 2 | reviewed_by -

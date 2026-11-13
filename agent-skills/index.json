@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2163,
+ "count": 2155,
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
@@ -709,7 +709,6 @@
   "UZ",
   "VA",
   "VC",
-  "VE",
   "VG",
   "VI",
   "VN",
@@ -15967,7 +15966,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "se-benefits-and-allowances",
@@ -19465,78 +19464,6 @@
    "name": "vc-vat",
    "jurisdiction": "VC",
    "path": "skills/saint-vincent-and-the-grenadines/vc-vat.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-corporate-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-corporate-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-cross-border-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-cross-border-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-income-tax",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-iva",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-iva.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-payroll",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-payroll.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": "Jose Padilla",
-   "tax_year": 2025
-  },
-  {
-   "name": "venezuela-social-contributions",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-social-contributions.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-tax-optimization",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-tax-optimization.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "venezuela-transfer-pricing",
-   "jurisdiction": "VE",
-   "path": "skills/venezuela/venezuela-transfer-pricing.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
