@@ -1,7 +1,7 @@
 ---
 name: us-capital-gains
 description: Work out a US resident individual's 2026 federal tax on capital gains. Covers short-term against long-term holding periods, the 0%, 15% and 20% rates with the 2026 maximum zero rate and 15 percent rate amounts from Rev. Proc. 2025-32 section 4.03, the 25% unrecaptured section 1250 group and the 28% collectibles group, the 3.8% net investment income tax under 26 U.S.C. 1411 with its fixed USD 250,000, 200,000 and 125,000 thresholds, the USD 3,000 (USD 1,500 separate) loss limit and the carryover worksheet, wash sales under section 1091, Form 8949 and Schedule D, the home sale exclusion and installment sales, with a 2025 return section and a sell-now-or-wait decision case. Trigger on "US capital gains tax", "long-term capital gains rate", "Schedule D", "Form 8949", "LTCG 0% bracket", "NIIT", "net investment income tax", "wash sale", "capital loss carryover", "sell shares tax US", "should I sell now or wait". Federal only. For nonresidents see us-nonresident-cgt; for QSBS see us-section-1202-qsbs; for like-kind exchanges see us-section-1031-like-kind-exchange.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-13
@@ -32,7 +32,7 @@ Out of scope, and where it goes:
 | Qualified small business stock (section 1202), including the tiered exclusion for stock acquired after 4 July 2025 | `us-section-1202-qsbs` |
 | Like-kind exchanges of real property (section 1031): deadlines, identification, boot, Form 8824 | `us-section-1031-like-kind-exchange` |
 | The ordinary income tax rate schedule, standard deduction, the 2026 return due date and the full Form 1040 | `us-federal-income-tax-return-1040` |
-| Digital asset events and Form 1099-DA detail | `us-crypto-tax`, `us-crypto-reporting` |
+| Digital asset events and Form 1099-DA detail | `us-crypto-tax` |
 | NFT collectible status | `us-nft-tax` |
 | Paying tax on a large gain during the year | `us-quarterly-estimated-tax` |
 | Estates and trusts | `us-form-1041-trust-and-estate-income` |

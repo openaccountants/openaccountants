@@ -95,7 +95,7 @@ class BuilderHoldTests(unittest.TestCase):
     def test_actual_held_source_files_are_held_without_dependents(self):
         _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])
-        names = {"fl-sales-tax", "in-payroll", "wi-payroll"}
+        names = {"fl-sales-tax", "wi-payroll"}
         for name in names:
             self.assertEqual(held[name], "status: needs_sources")
             self.assertNotIn(name, targets)
