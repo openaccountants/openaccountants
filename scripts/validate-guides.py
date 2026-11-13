@@ -616,6 +616,10 @@ def check_professional_numbers(errors, warnings, touched=None, old_text=None):
         text = _read_or_none(rel)
         if text is None:
             continue
+        # A source with no identifiers cannot introduce one. Do not require
+        # Git history for this case (unit-test checkouts can be shallow).
+        if not professional_numbers(text):
+            continue
         if touched is None:
             if professional_numbers(text):
                 warnings.append(f"{rel}: existing professional identifier; hide at serve time, do not reset approval")

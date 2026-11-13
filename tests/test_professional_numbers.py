@@ -1,5 +1,6 @@
 import importlib.util
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -55,6 +56,25 @@ class ProfessionalNumberTests(unittest.TestCase):
                 validator.check_professional_numbers(errors, warnings)
                 self.assertEqual(errors, [])
                 self.assertEqual(len(warnings), 1)
+
+    def test_shallow_checkout_needs_history_only_when_source_contains_identifiers(self):
+        spec = importlib.util.spec_from_file_location("validate_shallow_numbers", ROOT / "scripts/validate-guides.py")
+        validator = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(validator)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp, "skills/us/test.md")
+            path.parent.mkdir(parents=True)
+            path.write_text("# Fictional skill\nApproved by Jane Doe.\n")
+            with patch.object(validator, "REPO_ROOT", tmp), \
+                 patch.object(validator.subprocess, "run", return_value=subprocess.CompletedProcess([], 128, "", "missing history")) as git:
+                errors, warnings = [], []
+                validator.check_professional_numbers(errors, warnings, ["skills/us/test.md"])
+                self.assertEqual((errors, warnings), ([], []))
+                git.assert_not_called()
+                path.write_text("> Contributed by Jane Doe, AL-12345.\n")
+                validator.check_professional_numbers(errors, warnings, ["skills/us/test.md"])
+                self.assertEqual(len(errors), 1)
+                self.assertIn("cannot confirm base", errors[0])
 
 
 if __name__ == "__main__":
