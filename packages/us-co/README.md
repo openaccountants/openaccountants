@@ -77,10 +77,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 67. `co-income-tax.md`
 68. `co-retail-delivery-and-suts.md`
 69. `co-sales-tax.md`
-70. `colorado-sales-tax.md`
-71. `connecticut-sales-tax.md`
-72. `workflow-base.md`
-73. `cross-border-tax-workflow-base.md`
+70. `workflow-base.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
