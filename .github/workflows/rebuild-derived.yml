@@ -6,7 +6,7 @@
 # pushed straight to main and is switched off; nothing here reads production.
 #
 # Derived files: packages/** (not us-federal), index.json, the counts line in
-# llms.txt, llms-full.txt, agent-skills/**, plugins/openaccountants/skills/**.
+# llms.txt, llms-full.txt, skills/COUNTRIES.md, agent-skills/**, plugins/openaccountants/skills/**.
 # The builders and their order live in scripts/build-derived.sh. validate.yml
 # (guard-derived-trees) lets a PR touch these files only when it comes from
 # `bot/rebuild-derived` in this repository, touches nothing else, and matches a
@@ -151,7 +151,7 @@ jobs:
           BODY=$(cat <<EOF
           This PR was opened by the **Rebuild derived files** workflow. Nobody wrote these changes by hand.
 
-          It rebuilds the generated files (packages/, index.json, llms.txt counts, llms-full.txt, agent-skills/, plugins/openaccountants/skills/) from the skills on main at ${MAIN_SHA}. **$CHANGED file(s) changed.** Nothing under skills/ is touched.
+          It rebuilds the generated files (packages/, index.json, llms.txt counts, llms-full.txt, skills/COUNTRIES.md, agent-skills/, plugins/openaccountants/skills/) from the skills on main at ${MAIN_SHA}. **$CHANGED file(s) changed.** Under skills/, only the generated COUNTRIES.md changes; hand-authored Guides are untouched.
 
           The guard-derived-trees check runs scripts/build-derived.sh again on this PR and fails if any file differs from a fresh build.
 
