@@ -14,6 +14,8 @@ metadata:
 
 Alabama Form 40 (full-year resident): how I do it
 
+Includes self-employed individuals and sole proprietors. See also: `alabama-cross-border`, `al-payroll-withholding`.
+
 Form 40 is the Alabama individual income tax return for someone who was a legal resident of Alabama for the entire tax year. A resident reports income from all sources, wherever earned, unless Alabama specifically exempts it. It covers the calendar year and is due on the same date as the federal return.
 
 ## Who this applies to
@@ -68,6 +70,10 @@ Federal income tax deduction: allowed, computed on the booklet worksheet, with f
 
 The traps: the client who says "I live in Alabama" and moved in April (ask the date, not the state); assuming the federal itemize/standard choice carries over; computing the federal income tax deduction off withholding instead of actual liability, particularly on joint-federal/separate-Alabama returns where the ratio method applies; missing the credit for taxes paid to another state, or computing it on the wrong base; treating local or occupational tax as Alabama withholding, which overstates payments and produces a mismatch letter; claiming estimates the state has no record of (pull the account before filing); and assuming the automatic extension protects against interest, when it only avoids the late-filing penalty.
 
+Alabama-exempt income in the booklet's list includes federal Social Security and Railroad Retirement benefits, military retirement pay, unemployment compensation, state income tax refunds, and interest on obligations of Alabama and its subdivisions and of the United States (2025 Form 40 booklet, p.7). Interest on other states' obligations is taxable (booklet, p.8, line 6).
+
+For a self-employed client, the health-insurance deduction is allowed to the same extent as for federal purposes (booklet, p.16, page 2 Part II line 7). Check the Alabama income lines and adjustments individually rather than copying federal AGI.
+
 ## Deadlines and filing
 
 | Item | Value | Source |
@@ -79,6 +85,10 @@ The traps: the client who says "I live in Alabama" and moved in April (ask the d
 | 2026 estimated tax installments | April 15, 2026; June 15, 2026; September 15, 2026; January 15, 2027 | [2026 Form 40ES instructions](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf) |
 | Estimated tax safe harbor | Withholding plus credits of at least the smaller of 90% of the 2026 tax or 100% of the 2025 tax (110% where 2025 Alabama AGI exceeded $150,000, or $75,000 married filing separate) | [2026 Form 40ES instructions](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf) |
 
+Estimated-tax vouchers go to Alabama Department of Revenue, Individual Estimates, P.O. Box 327485, Montgomery, AL 36132-7485 (2026 Form 40ES instructions), or pay through My Alabama Taxes.
+
+Reading the client's bank statements for Alabama payments: debits to the Alabama Department of Revenue or through My Alabama Taxes are usually estimated or balance-due income tax payments, but a business may also pay sales tax or withholding to the same payee. Match each debit to the account statement in My Alabama Taxes before treating it as an income tax estimate.
+
 ## Penalties and interest
 
 | Item | Value | Source |
@@ -87,6 +97,8 @@ The traps: the client who says "I live in Alabama" and moved in April (ask the d
 | Failure to timely pay | "1% of the unpaid amount for each month or fraction of a month that the tax remains unpaid. The maximum penalty is 25%" | [2025 Form 40 booklet, p.17](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf) |
 | Underpayment penalty | Applies where tax due is $500 or more and withholding plus timely estimates was less than the smaller of 90% of the current year's tax (66-2/3% for farmers) or 100% of the prior year's tax, the prior year being a 12-month period. Form 2210AL | [2025 Form 40 booklet, p.17](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf) |
 | Interest | "The same rate of interest shall be collected as currently prescribed by the Internal Revenue Service," running from the due date even where an extension was granted | [2025 Form 40 booklet, p.17](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf) |
+
+Willful failure to file under §40-29-112 is a misdemeanor punishable on conviction by a fine up to $25,000 or imprisonment up to one year, or both (2025 Form 40 booklet, p.17).
 
 ## Cross-border points
 
@@ -134,6 +146,34 @@ expected:
   tax: 1560.00
 ```
 
+**Example 3: single filer with $2,000 taxable income**
+
+A single self-employed filer with Alabama taxable income of $2,000 after deductions and exemptions:
+
+```oa-check
+name: AL individual tax, single brackets
+inputs:
+  taxable: 2000
+steps:
+  - tax: 0.02 * 500 + 0.04 * (taxable - 500)
+expected:
+  tax: 70.00
+```
+
+**Example 4: married-filing-joint with $8,000 taxable income**
+
+A married couple filing jointly with Alabama taxable income of $8,000:
+
+```oa-check
+name: AL individual tax, MFJ brackets
+inputs:
+  taxable: 8000
+steps:
+  - tax: 0.02 * 1000 + 0.04 * 5000 + 0.05 * (taxable - 6000)
+expected:
+  tax: 320.00
+```
+
 ## Ask the client first
 
 - Residency dates and the spouse's residency (where the spouses' residencies differ, confirm the joint-return eligibility rules before filing).
@@ -142,6 +182,9 @@ expected:
 - Estimated payments and extension payments on record with the state?
 - Out-of-state purchases without sales tax collected (Schedule ATP consumer use tax)?
 - For 2026: overtime premium shown in W-2 box 12 code TT (deduction up to $1,000)?
+- Income not on a W-2 or 1099: rents, royalties, gains, K-1s, farm or Schedule C business income?
+- Expected tax of at least $500 for the year (the estimated-tax trigger)?
+- Refer out to a professional rather than answer from this skill: multistate business activity needing apportionment; part-year residency with complex sourcing; an Alabama net operating loss carryforward; Business Privilege Tax for entities beyond a sole proprietorship; municipal occupational taxes; Alabama credits (Historic Rehabilitation, Growing Alabama and similar); audit representation or controversy; and any question about tax fraud, evasion or aggressive positions.
 
 ## Sources
 
@@ -154,7 +197,7 @@ expected:
 | 5 | 2026 Form 40ES estimated tax instructions, read for installment dates, safe harbor | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf | 2026-11-13 |
 | 6 | ALDOR Overtime Premium Deduction (Act 2026-604) page, read for the page as a whole | https://www.revenue.alabama.gov/individual-corporate/overtime-premium-deduction-act-2026-604/ | 2026-11-13 |
 
-Not yet confirmed: the ratio method for a joint federal return with separate Alabama returns in step 8 (carried from the prior draft; the booklet sentence on proration that an earlier draft quoted here is about part-year residents); the Schedule CR limitation mechanics as summarized above (narrative carried from the prior draft; confirm against the Schedule CR instructions); the credit for taxes paid to a foreign country under Alabama Administrative Rule 810-3-21-.03 (rule text not read); municipal/occupational tax interactions; the 2026 filing thresholds and standard deduction chart (no 2026 Form 40 booklet was published when read, so the 2025 figures are shown).
+Not yet confirmed: the ratio method for a joint federal return with separate Alabama returns in step 8 (carried from the prior draft; the booklet sentence on proration that an earlier draft quoted here is about part-year residents); the Schedule CR limitation mechanics as summarized above (narrative carried from the prior draft; confirm against the Schedule CR instructions); the credit for taxes paid to a foreign country under Alabama Administrative Rule 810-3-21-.03 (rule text not read); municipal/occupational tax interactions; the 2026 filing thresholds, standard deduction chart and dependent exemption chart (no 2026 Form 40 booklet was published when read, so the 2025 figures are shown); the paid-versus-accrued method choice for the federal income tax deduction; the treatment of an Alabama net operating loss; the former al-income-tax claim that all Schedule C, SEP-IRA, solo-401(k) and home-office deductions flow through unchanged, and the precise effect of federal §199A on the Alabama federal tax deduction.
 
 > Contributed by Anthony Bandura.
 
