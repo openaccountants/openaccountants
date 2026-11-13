@@ -4,6 +4,7 @@ applicable:
 - IT-IND
 - VAT
 - IT-CORP
+- SC
 - PR
 not_applicable: {}
 covered_by:
@@ -11,11 +12,18 @@ covered_by:
   VAT: ok-sales-tax
   IT-CORP: ok-corporate-tax
   PR: ok-payroll
+  SC: ok-payroll
 partial:
-  IT-IND: Actual 2026 rates/deductions; final Form511 packet, credit/conformity and special exclusions remain partial.
-  VAT: Core rates/food/current return confirmed; local rates, 2026 rule amendments and special cases remain partial.
-  IT-CORP: Actual 2026 rate and franchise repeal; 2025-2026 filing cycle mechanics, final 2026 forms and special groups/credits remain partial.
-  PR: Actual 2026 withholding/UI numbers; special coverage, current authenticated screens, annual wage-statement and weekend deadline details remain partial.
+  IT-IND: Actual 2026 rates/deductions; final Form511 packet, credit/conformity and
+    special exclusions remain partial.
+  VAT: Core rates/food/current return confirmed; local rates, 2026 rule amendments
+    and special cases remain partial.
+  IT-CORP: Actual 2026 rate and franchise repeal; 2025-2026 filing cycle mechanics,
+    final 2026 forms and special groups/credits remain partial.
+  PR: Actual 2026 withholding/UI numbers; special coverage, current authenticated
+    screens, annual wage-statement and weekend deadline details remain partial.
+  SC: Special UI coverage, successor wages, authenticated screens and weekend deadline
+    details remain partial.
 ---
 
 # Oklahoma: 2026 tax skills
@@ -29,6 +37,7 @@ Oklahoma taxes individual wages, ordinary corporate income, sales/use and employ
 | IT-IND | `ok-income-tax` | checked against the law; not accountant-reviewed |
 | VAT | `ok-sales-tax` | checked against the law; not accountant-reviewed |
 | IT-CORP | `ok-corporate-tax` | checked against the law; not accountant-reviewed |
+| SC | `ok-payroll` | checked against the law; not accountant-reviewed |
 | PR | `ok-payroll` | checked against the law; not accountant-reviewed |
 
 ## Official sources
