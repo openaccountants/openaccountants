@@ -65,7 +65,7 @@ Not covered: sales and use tax nexus, payroll withholding, property tax, city an
 
 ### Step 4: is every in-state activity solicitation, entirely ancillary to it, or de minimis? ([Wrigley, 505 U.S. 214](https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505214/usrep505214.pdf))
 
-9. The Supreme Court held that "solicitation of orders" covers, besides "any speech or conduct that explicitly or implicitly proposes a sale", "those activities that are entirely ancillary to requests for purchases—those that serve no independent business function apart from their connection to the soliciting of orders".
+9. The Supreme Court held that "solicitation of orders" covers, besides "any speech or conduct that explicitly or implicitly proposes a sale", "those activities that are entirely ancillary to requests for purchases", that is, "those that serve no independent business function apart from their connection to the soliciting of orders".
 10. Activities "that the company would have reason to engage in anyway but chooses to allocate to its in-state sales force are not covered".
 11. The de minimis rule, in the Court's words: "whether in-state activity other than "solicitation of orders" is sufficiently de minimis to avoid loss of the tax immunity conferred by § 381 depends upon whether that activity establishes a nontrivial additional connection with the taxing State."
 12. On Wrigley's own facts (as summarised in the syllabus), three activities were not protected:
@@ -298,10 +298,10 @@ expected:
 | Cal. R&TC 23101. Read for the "lesser of" test and indexing. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101 | 2026-10-16 |
 | FTB Publication 1050. Read for protected and unprotected activities, the 14-day display rule, telecommuting and foreign commerce. | https://www.ftb.ca.gov/forms/misc/1050.pdf | 2026-10-16 |
 | Cal. R&TC 25135 and 25122. Read for throwback and "taxable in another state". | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135 | 2026-10-16 |
-| NY Tax Department, Article 9-A deriving receipts. Read for $1,283,000 and $12,000 for tax years beginning 2024 to 2026. | https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm | 2026-10-16 |
+| NY Tax Department, Article 9-A deriving receipts. Read for $1,283,000 and $12,000 for tax years beginning 2024 to 2026. | https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm | 2026-11-13 |
 | 20 NYCRR 1-2.10 (adopted text). Read for the internet activity rules and examples. | https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf | 2026-10-16 |
 | NY Form CT-3 instructions. Read for box C and the P.L. 86-272 disclaimer. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf | 2026-10-16 |
-| NJ TB-108(R). Read for the $100,000 or 200 transactions test, internet activity and the minimum tax. | https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf | 2026-10-16 |
-| Ohio DOT, Commercial Activity Tax. Read for the bright-line presence tests and the $6 million exclusion from 2025. | https://tax.ohio.gov/business/commercial-activity-tax | 2026-10-16 |
+| NJ TB-108(R). Read for the $100,000 or 200 transactions test, internet activity and the minimum tax. | https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf | 2026-11-13 |
+| Ohio DOT, Commercial Activity Tax. Read for the bright-line presence tests and the $6 million exclusion from 2025. | https://tax.ohio.gov/business/commercial-activity-tax | 2026-11-13 |
 
-Not yet confirmed: California's 2026 doing-business amounts (not posted when read); New York's threshold for tax years beginning in 2027; the status of the California ACMA judgment on FTB's internet guidance after 2025; New Jersey and Ohio figures were not re-read on 13 November (read 16 October 2026); due dates for extended 2025 corporate returns in each state.
+Not yet confirmed: California's 2026 doing-business amounts (not posted when read); New York's threshold for tax years beginning in 2027; the status of the California ACMA judgment on FTB's internet guidance after 2025; due dates for extended 2025 corporate returns in each state.
