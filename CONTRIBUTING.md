@@ -48,9 +48,9 @@ Approval puts your name on the skill: **Approved by [your name]**, on the websit
 **Start with one skill.** Our way of working is new, so every accountant begins with one task, one country, one tax year, agreed with us. When it is live, you can take more.
 
 1. **Create your free account** at [openaccountants.com/onboarding/accountant](https://www.openaccountants.com/onboarding/accountant) with your licence or membership number. We check it privately. It is never shown.
-2. **Add yourself to [accountants.yml](accountants.yml)** in your first pull request: one line, `your-github-username: Your Name`, using the same name as your account.
+2. **Open a separate pull request adding your GitHub account to [accountants.yml](accountants.yml).** Add one line, `your-github-username: Your Name`, using the same name as your account. Wait for it to merge before submitting a skill approval. The new roster entry cannot prove your identity for an approval in that same PR.
 3. **Write your skill, or take one that has no accountant yet**, and review all of it.
-4. **Approve it in the same pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
+4. **Approve it in the skill pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
 
 The skill stays yours. When the next tax year comes, you update it and approve it again. If the text of an approved skill changes, its approval clears until you approve the new version. If an accountant does not respond for 30 days, another accountant can ask us to take the skill over.
 
