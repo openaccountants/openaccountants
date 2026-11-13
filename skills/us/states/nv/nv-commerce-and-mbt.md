@@ -4,7 +4,7 @@ description: "Nevada 2026 Commerce Tax and Modified Business Tax: fiscal revenue
 jurisdiction: US-NV
 tax_year: 2026
 last_updated: 2026-11-13
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: situation-rules
