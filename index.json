@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-13T08:48:07+00:00",
+ "generated_at": "2026-11-13T19:33:35+00:00",
  "counts": {
-  "guides": 2259,
-  "loadable_skill_names": 2196,
+  "guides": 2243,
+  "loadable_skill_names": 2180,
   "jurisdictions": 256,
   "accountant_reviewed": 126,
-  "held_skill_names": 115
+  "held_skill_names": 114
  },
  "publication_holds": [
   {
@@ -282,10 +282,6 @@
   },
   {
    "name": "nc-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nd-corporate-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -18382,7 +18378,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "nz-motor-vehicle-expenses-logbook-business-use",
@@ -26528,12 +26524,12 @@
    "path": "skills/us/federal/us-quarterly-estimated-tax.md",
    "name": "us-quarterly-estimated-tax",
    "jurisdiction": "US",
-   "category": "federal",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-r-and-d-section-174-and-41",
@@ -26610,8 +26606,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "us-section-1031-like-kind-exchange",
@@ -26809,19 +26805,6 @@
    "last_updated": "2026-11-13"
   },
   {
-   "slug": "al-income-tax",
-   "mcp_slug": "al-income-tax",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-11-13"
-  },
-  {
    "slug": "al-payroll-withholding",
    "mcp_slug": "al-payroll-withholding",
    "path": "skills/us/states/al/al-payroll-withholding.md",
@@ -26887,19 +26870,6 @@
    "last_updated": "2026-11-13"
   },
   {
-   "slug": "alabama-sales-tax",
-   "mcp_slug": "alabama-sales-tax",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-11-13"
-  },
-  {
    "slug": "alabama-transfer-pricing",
    "mcp_slug": "alabama-transfer-pricing",
    "path": "skills/us/states/al/alabama-transfer-pricing.md",
@@ -26930,32 +26900,6 @@
    "mcp_slug": "ar-sales-tax",
    "path": "skills/us/states/ar/ar-sales-tax.md",
    "name": "ar-sales-tax",
-   "jurisdiction": "US-AR",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "arizona-sales-tax",
-   "mcp_slug": "arizona-sales-tax",
-   "path": "skills/us/states/ar/arizona-sales-tax.md",
-   "name": "arizona-sales-tax",
-   "jurisdiction": "US-AR",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "arkansas-sales-tax",
-   "mcp_slug": "arkansas-sales-tax",
-   "path": "skills/us/states/ar/arkansas-sales-tax.md",
-   "name": "arkansas-sales-tax",
    "jurisdiction": "US-AR",
    "category": null,
    "tier": 2,
@@ -27229,32 +27173,6 @@
    "mcp_slug": "co-sales-tax",
    "path": "skills/us/states/co/co-sales-tax.md",
    "name": "co-sales-tax",
-   "jurisdiction": "US-CO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "colorado-sales-tax",
-   "mcp_slug": "colorado-sales-tax",
-   "path": "skills/us/states/co/colorado-sales-tax.md",
-   "name": "colorado-sales-tax",
-   "jurisdiction": "US-CO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "connecticut-sales-tax",
-   "mcp_slug": "connecticut-sales-tax",
-   "path": "skills/us/states/co/connecticut-sales-tax.md",
-   "name": "connecticut-sales-tax",
    "jurisdiction": "US-CO",
    "category": null,
    "tier": 2,
@@ -27641,19 +27559,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "idaho-sales-tax",
-   "mcp_slug": "idaho-sales-tax",
-   "path": "skills/us/states/id/idaho-sales-tax.md",
-   "name": "idaho-sales-tax",
-   "jurisdiction": "US-ID",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "il-estimated-tax",
    "mcp_slug": "il-estimated-tax",
    "path": "skills/us/states/il/il-estimated-tax.md",
@@ -27697,19 +27602,6 @@
    "mcp_slug": "in-sales-tax",
    "path": "skills/us/states/in/in-sales-tax.md",
    "name": "in-sales-tax",
-   "jurisdiction": "US-IN",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "indiana-sales-tax",
-   "mcp_slug": "indiana-sales-tax",
-   "path": "skills/us/states/in/indiana-sales-tax.md",
-   "name": "indiana-sales-tax",
    "jurisdiction": "US-IN",
    "category": null,
    "tier": 2,
@@ -27888,19 +27780,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "massachusetts-sales-tax",
-   "mcp_slug": "massachusetts-sales-tax",
-   "path": "skills/us/states/ma/massachusetts-sales-tax.md",
-   "name": "massachusetts-sales-tax",
-   "jurisdiction": "US-MA",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "md-income-tax",
    "mcp_slug": "md-income-tax",
    "path": "skills/us/states/md/md-income-tax.md",
@@ -28044,19 +27923,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "minnesota-sales-tax",
-   "mcp_slug": "minnesota-sales-tax",
-   "path": "skills/us/states/mn/minnesota-sales-tax.md",
-   "name": "minnesota-sales-tax",
-   "jurisdiction": "US-MN",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "mn-income-tax",
    "mcp_slug": "mn-income-tax",
    "path": "skills/us/states/mn/mn-income-tax.md",
@@ -28083,19 +27949,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "missouri-sales-tax",
-   "mcp_slug": "missouri-sales-tax",
-   "path": "skills/us/states/mo/missouri-sales-tax.md",
-   "name": "missouri-sales-tax",
-   "jurisdiction": "US-MO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "mo-income-tax",
    "mcp_slug": "mo-income-tax",
    "path": "skills/us/states/mo/mo-income-tax.md",
@@ -28114,19 +27967,6 @@
    "path": "skills/us/states/mo/mo-sales-tax.md",
    "name": "mo-sales-tax",
    "jurisdiction": "US-MO",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "mississippi-sales-tax",
-   "mcp_slug": "mississippi-sales-tax",
-   "path": "skills/us/states/ms/mississippi-sales-tax.md",
-   "name": "mississippi-sales-tax",
-   "jurisdiction": "US-MS",
    "category": null,
    "tier": 2,
    "verified_by": null,
@@ -28250,6 +28090,19 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "nd-corporate-tax",
+   "mcp_slug": "nd-corporate-tax",
+   "path": "skills/us/states/nd/nd-corporate-tax.md",
+   "name": "nd-corporate-tax",
+   "jurisdiction": "US-ND",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-11-13"
   },
   {
    "slug": "nd-cross-border-tax",
@@ -28473,19 +28326,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "new-mexico-sales-tax",
-   "mcp_slug": "new-mexico-sales-tax",
-   "path": "skills/us/states/nm/new-mexico-sales-tax.md",
-   "name": "new-mexico-sales-tax",
-   "jurisdiction": "US-NM",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "nm-income-tax",
    "mcp_slug": "nm-income-tax",
    "path": "skills/us/states/nm/nm-income-tax.md",
@@ -28504,19 +28344,6 @@
    "path": "skills/us/states/nm/nm-sales-tax.md",
    "name": "nm-sales-tax",
    "jurisdiction": "US-NM",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "nevada-sales-tax",
-   "mcp_slug": "nevada-sales-tax",
-   "path": "skills/us/states/nv/nevada-sales-tax.md",
-   "name": "nevada-sales-tax",
-   "jurisdiction": "US-NV",
    "category": null,
    "tier": 2,
    "verified_by": null,
@@ -28863,19 +28690,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "oklahoma-sales-tax",
-   "mcp_slug": "oklahoma-sales-tax",
-   "path": "skills/us/states/ok/oklahoma-sales-tax.md",
-   "name": "oklahoma-sales-tax",
-   "jurisdiction": "US-OK",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "or-cat",
    "mcp_slug": "or-cat",
    "path": "skills/us/states/or/or-cat.md",
@@ -29175,19 +28989,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "utah-sales-tax",
-   "mcp_slug": "utah-sales-tax",
-   "path": "skills/us/states/ut/utah-sales-tax.md",
-   "name": "utah-sales-tax",
-   "jurisdiction": "US-UT",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
    "slug": "va-income-tax",
    "mcp_slug": "va-income-tax",
    "path": "skills/us/states/va/va-income-tax.md",
@@ -29387,19 +29188,6 @@
    "mcp_slug": "wy-sales-tax",
    "path": "skills/us/states/wy/wy-sales-tax.md",
    "name": "wy-sales-tax",
-   "jurisdiction": "US-WY",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "wyoming-sales-tax",
-   "mcp_slug": "wyoming-sales-tax",
-   "path": "skills/us/states/wy/wyoming-sales-tax.md",
-   "name": "wyoming-sales-tax",
    "jurisdiction": "US-WY",
    "category": null,
    "tier": 2,
