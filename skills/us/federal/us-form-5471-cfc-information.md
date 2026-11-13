@@ -1,7 +1,7 @@
 ---
 name: us-form-5471-cfc-information
 description: Decide whether a US person must file Form 5471 for a foreign corporation in tax year 2026, which filer category or categories apply (1a to 1c, 2, 3, 4, 5a to 5c), and which schedules follow, using the December 2025 Form 5471 and its instructions. Covers the 10% US shareholder and more-than-50% CFC tests with family and entity attribution, the filing exceptions (constructive owners, joint filers, foreign-controlled CFCs under Rev. Proc. 2019-40, dormant corporations under Rev. Proc. 92-70), the $10,000 penalties under sections 6038 and 6679 with the $50,000 continuing-failure cap, the foreign tax credit reduction, the open statute under section 6501(c)(8), and the routes to fix missed years. Explains the One Big Beautiful Bill Act changes that reach Form 5471 from 2026 (GILTI renamed net CFC tested income, the one-month deferral election repealed, section 958(b)(4) restored with new section 951B, the new pro rata share rule). Trigger on "Form 5471", "CFC", "controlled foreign corporation", "foreign company owner", "5471 penalty", "Category 4", "Category 5", "US shareholder of a foreign corporation". The NCTI (GILTI) computation itself is in us-gilti-fdii-beat. Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-13
@@ -26,7 +26,7 @@ Out of scope, and where it goes:
 | Topic | Skill |
 | --- | --- |
 | Computing net CFC tested income (formerly GILTI), the section 250 deduction, the section 962 election and the section 960 deemed-paid credit | `us-gilti-fdii-beat` |
-| Subpart F income categories (foreign personal holding company income, base company sales and services income, insurance income) and the CFC working paper | `us-cfc-gilti` |
+| Subpart F income categories (foreign personal holding company income, base company sales and services income, insurance income) and the CFC working paper | `us-gilti-fdii-beat` |
 | Foreign tax credit on Form 1116 for an individual | `us-foreign-tax-credit-1116` |
 | Form 5472, foreign-owned US corporations and disregarded entities | `us-form-5472-foreign-owned-us` |
 | FBAR (FinCEN 114) and Form 8938 | `us-fbar-and-fatca-8938` |
@@ -232,7 +232,7 @@ Streamlined procedures are for failures to report income from foreign financial 
 | A US board member with no shares, and a relative or investor crossed 10% | Category 2 filing the board member rarely knows about |
 | "Dormant" company with no Form 5471 at all | Still required; at least the Rev. Proc. 92-70 summary filing |
 | Partnership files and the partners assume they are covered | Partners who are US shareholders through it file unless an exception is met and documented |
-| Schedule I inclusion with no supporting working paper (subpart F categories, E&P limit, pro rata share) | Weak support at exam; keep the working paper from `us-cfc-gilti` |
+| Schedule I inclusion with no supporting working paper (subpart F categories, E&P limit, pro rata share) | Weak support at exam; keep the working paper from `us-gilti-fdii-beat` |
 | Schedule P with PTEP lumped in one column, no basket or year | Credit and exclusion on later distributions can be lost; reconcile every year |
 | Average and spot rates mixed between Schedules C and F | Reconciliation failure that draws attention |
 | First year over 10% filed with Category 5 schedules only | Schedule O Part II missing: incomplete form |
