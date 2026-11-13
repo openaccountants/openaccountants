@@ -62,6 +62,20 @@ The self-hosted server exposes the 6 read-only tools below. The hosted server at
 
 Skill access is **read-only** and **path-sandboxed** to the `packages/` directory; `submit_feedback` does not call GitHub itself, it only constructs a URL.
 
+Preparation responses check the bundled `workflow-base` afresh and return a compact
+`workflow` reference with its current `body_sha256` and a mandatory
+`get_skill('workflow-base')` loading step. Read the full method once per task/current
+hash; an availability check does not mean the client already loaded it. The actual
+method call returns its full body and provenance without a recursive loading step.
+`get_skill` and
+`get_skill_sections` keep source inspection available when the method cannot be
+loaded, but return `application_status: "blocked"` and a stop instruction.
+`start` returns `blocked` for an unavailable method, or `uncovered` when no
+applicable jurisdiction/topic content is found; neither supplies an execution
+plan. Preparation prompts refuse to proceed without the usable method. The
+method alone does not establish country coverage, facts, tool execution or
+professional approval.
+
 ### The `start` flow
 
 `start` is what makes the connector self-guiding. A typical session looks like:

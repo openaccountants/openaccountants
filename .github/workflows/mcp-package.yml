@@ -41,6 +41,7 @@ jobs:
           "$TEST_ROOT/venv/bin/python" "$GITHUB_WORKSPACE/scripts/probe-installed-publication.py" \
             --check "$GITHUB_WORKSPACE/dist/publication-expectations.json"
           "$TEST_ROOT/venv/bin/python" "$GITHUB_WORKSPACE/mcp/tests/test_publication_holds.py"
+          "$TEST_ROOT/venv/bin/python" "$GITHUB_WORKSPACE/mcp/tests/test_startup_method.py"
           "$TEST_ROOT/venv/bin/python" - <<'PY'
           from openaccountants_mcp import server
 
