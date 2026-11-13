@@ -505,7 +505,27 @@ SECTION G, REVIEWER FLAGS
 
 ## Deadlines and filing
 
-This section is in the child skill `nz-income-tax-ir3-reference`, moved there word for word so this file stays under the size limit. Load it with this skill.
+Dates are for a 31 March balance date. Inland Revenue's practice is that an instalment date on a weekend or public holiday is met by the next working day (IR3G 2026, IR289).
+
+| Item | Date | Tax year | Official source |
+| --- | --- | --- | --- |
+| Return due, no tax agent extension | 7 July after year end: 7 July 2025 | 2024-25 | [TAA s 37(1)(c)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Return due, no tax agent extension | 7 July 2026 | 2025-26 | [TAA s 37(1)(c)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Return due, no tax agent extension | 7 July 2027 | 2026-27 | [TAA s 37(1)(c)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Return due, tax agent extension | Date allowed, no later than the 31 March after year end: 31 March 2026 | 2024-25 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Return due, tax agent extension | No later than 31 March 2027 | 2025-26 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Return due, tax agent extension | No later than 31 March 2028 | 2026-27 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
+| Terminal tax | 7 February after year end: 7 February 2027 | 2025-26 | [ITA s RA 13(1), (2)(b), (3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column G](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax, return linked to a tax agent with an extension | 7 April after that: 7 April 2027 | 2025-26 | [ITA s RA 13(2)(a), (3), (4)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column H](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax, other years | 7 February 2026, or 7 April 2026 if linked | 2024-25 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax, other years | 7 February 2028, or 7 April 2028 if linked | 2026-27 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Provisional tax, 3 instalments | 28 August 2026, 15 January 2027 and 7 May 2027 | 2026-27 | [ITA s RC 9(3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns B, D, F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Provisional tax, 6-monthly GST | 28 October 2026 and 7 May 2027 | 2026-27 | [ITA s RC 9](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns C, F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Provisional tax, GST ratio method | 6 dates: 28 June, 28 August, 28 October, 15 January, 28 February, 7 May | 2026-27 | [ITA s RC 9](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A columns A to F](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+
+The agent date is an extension under section 37(4), not an automatic date. A 31 March year is measured from its own end: the prior version's '31 March of second following year' fits only if counted from the start of the year. Section 37(3) and (3B) allow other extensions.
+
+**Filing.** File in myIR ('Returns and transactions', then 'File now' on the Returns tab), or through a tax agent. An individual who is not otherwise required to file must file if they have more than NZD 200 of income that has not been reported to Inland Revenue, and anyone self-employed files; check Inland Revenue's IR3 page for the full list. Inland Revenue says to wait until June to file where a payer has to send it information about payments. Attachments and supports are the IR10 (financial statement summary), IR3B, IR3F, IR3R, IR833 and IR1261 where the return guide calls for them. Inland Revenue issues a notice of assessment. Keep records under TAA s 22.
 
 ## Penalties and interest
 
@@ -902,3 +922,4 @@ Not yet confirmed: the annual taxing Act for 2026-27 (Government Bill 344-1 only
 | 2.1 | November 2026 | ACC levy rates and caps by year (2025-26 and 2026-27); ACC earner levy removed from RIT and the computation flow |
 | 2.0 | April 2026 | Full rewrite to v2.0 structure; NZ bank formats (ANZ, BNZ, ASB, Westpac, Kiwibank); transaction pattern library; Windcave/PayNow patterns; worked examples; prohibitions and disclaimer added |
 | 1.0 | 2025 | Initial version |
+
