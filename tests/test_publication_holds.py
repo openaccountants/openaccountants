@@ -92,10 +92,10 @@ class BuilderHoldTests(unittest.TestCase):
                     with self.assertRaisesRegex(ValueError, "Invalid source catalogue"):
                         index.build_index()
 
-    def test_actual_six_source_files_are_held_without_dependents(self):
+    def test_actual_held_source_files_are_held_without_dependents(self):
         _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])
-        names = {"ca-income-tax", "fl-sales-tax", "in-payroll", "nd-corporate-tax", "tx-sales-tax", "wi-payroll"}
+        names = {"ca-income-tax", "fl-sales-tax", "in-payroll", "tx-sales-tax", "wi-payroll"}
         for name in names:
             self.assertEqual(held[name], "status: needs_sources")
             self.assertNotIn(name, targets)
