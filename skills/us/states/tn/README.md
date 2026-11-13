@@ -3,21 +3,25 @@ jurisdiction: US-TN
 applicable:
 - VAT
 - IT-CORP
+- SC
 - PR
 not_applicable:
-  IT-IND: No tax on individual wages; Hall investment-income tax repealed
-    from January 1, 2021.
+  IT-IND: No tax on individual wages; Hall investment-income tax repealed from January
+    1, 2021.
 covered_by:
   VAT: tn-sales-tax
   IT-CORP: tn-corporate-tax
   PR: tn-PR
+  SC: tn-payroll
 partial:
-  VAT: Specific legacy exemptions/certificates, local rates and filing mechanics
-    remain unconfirmed; see final gaps line.
-  IT-CORP: Current business manual; 2025-2026 filing cycle FAE form mechanics.
-    2026 FAE forms/conformity, credits/groups and later interest not confirmed.
+  VAT: Specific legacy exemptions/certificates, local rates and filing mechanics remain
+    unconfirmed; see final gaps line.
+  IT-CORP: Current business manual; 2025-2026 filing cycle FAE form mechanics. 2026
+    FAE forms/conformity, credits/groups and later interest not confirmed.
   PR: Actual 2026 UI base/Table 6 confirmed; industry notice rates, payment deadlines
     and special coverage still need confirmation.
+  SC: Actual 2026 UI base/Table 6 confirmed; industry notice rates, payment deadlines
+    and special coverage need confirmation.
 ---
 
 # Tennessee: 2026 tax skills
