@@ -50,7 +50,7 @@ jobs:
           BASE="origin/$BASE_REF"
           git fetch origin "$BASE_REF" --depth 50
           BAD=$(git diff --no-renames --name-only "$BASE"...HEAD -- \
-            'index.json' 'llms-full.txt' 'packages/**' \
+            'index.json' 'llms-full.txt' 'skills/COUNTRIES.md' 'packages/**' \
             'agent-skills/*/SKILL.md' 'agent-skills/index.json' \
             'plugins/openaccountants/skills/**' \
             'plugins/openaccountants-hermes/skills/**' \
@@ -60,7 +60,7 @@ jobs:
           # branch. Every changed path must be a file the builders write, on
           # an exact list; the next step then proves the content.
           if [ "$HEAD_REPO" = "$THIS_REPO" ] && [ "$HEAD_BRANCH" = "bot/rebuild-derived" ]; then
-            ALLOWED='^(index\.json|llms\.txt|llms-full\.txt|packages/.+|agent-skills/(README\.md|index\.json|[a-z0-9-]+/SKILL\.md)|plugins/openaccountants/skills/[a-z0-9-]+/SKILL\.md)$'
+            ALLOWED='^(skills/COUNTRIES\.md|index\.json|llms\.txt|llms-full\.txt|packages/.+|agent-skills/(README\.md|index\.json|[a-z0-9-]+/SKILL\.md)|plugins/openaccountants/skills/[a-z0-9-]+/SKILL\.md)$'
             CHANGED=$(git diff --no-renames --name-only "$BASE"...HEAD)
             OTHER=$(printf '%s\n' "$CHANGED" | sed '/^$/d' | grep -v -E "$ALLOWED" || true)
             FEDERAL=$(printf '%s\n' "$CHANGED" | grep -E '^packages/us-federal/' || true)
@@ -102,7 +102,7 @@ jobs:
           # keep rather than rewrite (llms.txt prose, agent-skills/README.md,
           # extra files in a skill folder) cannot carry a hand edit through.
           git restore --source="origin/$BASE_REF" --staged --worktree -- \
-            index.json llms.txt llms-full.txt packages agent-skills plugins/openaccountants/skills
+            index.json llms.txt llms-full.txt skills/COUNTRIES.md packages agent-skills plugins/openaccountants/skills
           bash scripts/build-derived.sh > /dev/null
           git add -A
           DIFF=$(git diff --cached --name-status HEAD)

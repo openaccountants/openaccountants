@@ -2,15 +2,16 @@
 #
 # The first six are under broad embargo (Michael 6 Nov 2026); the other eleven are under a
 # UN Security Council sanctions regime (Michael 8 Nov 2026). Their packs were removed from skills/ (Git history
-# keeps them; see docs/PATH-MOVES.md), and scripts/validate-guides.py fails any pull
+# keeps them; see docs/PATH-MOVES.md). Venezuela was added by Michael's coverage
+# decision on 12 Nov 2026. scripts/validate-guides.py fails any pull
 # request that adds or edits a file in their folders or with their `jurisdiction:` code.
 #
 # Read by scripts/sanctioned.py (validate-guides.py, coverage-report.py,
 # build-country-index.py). The platform's GitHub ingest (Accora-ai/githubaccountingskills)
 # keeps the same codes as a constant that points here: change both together.
 
-decided_on: "2026-11-08"
-decided_by: "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven)"
+decided_on: "2026-11-12"
+decided_by: "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven), 12 Nov 2026 (Venezuela)"
 
 countries:
   - code: RU
@@ -67,4 +68,9 @@ countries:
     name: Guinea-Bissau
     folder: guinea-bissau
 
-stay_live: "Countries under US or EU sanctions only, with no UN Security Council regime (such as Myanmar and Venezuela), stay covered."
+# Additional coverage exclusion, Michael 12 Nov 2026.
+  - code: VE
+    name: Venezuela
+    folder: venezuela
+
+stay_live: "Other countries under US or EU sanctions only, with no UN Security Council regime (such as Myanmar), stay covered unless listed above."

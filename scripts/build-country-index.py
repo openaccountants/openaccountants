@@ -78,7 +78,7 @@ def main():
         out.append("")
     data_file = sanctioned.load()
     out += ["## Not covered (sanctioned)", "",
-            "No skills for these countries: they are under broad embargo or a UN Security Council sanctions regime. The list is "
+            "No skills for these countries under the publisher's sanctions and coverage policy. The list is "
             "[scripts/data/sanctioned.yml](../scripts/data/sanctioned.yml) "
             f"({data_file['decided_by']}), and the checks refuse new files for them. "
             f"{data_file['stay_live']}", "",

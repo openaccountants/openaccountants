@@ -1687,13 +1687,6 @@
   "dir": "skills/saint-vincent-and-the-grenadines"
  },
  {
-  "code": "VE",
-  "name": "Venezuela",
-  "region": "americas",
-  "owner": "jeff",
-  "dir": "skills/venezuela"
- },
- {
   "code": "VG",
   "name": "British Virgin Islands",
   "region": "americas",
