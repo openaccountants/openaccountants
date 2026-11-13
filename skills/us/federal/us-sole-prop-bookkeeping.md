@@ -21,7 +21,7 @@ type: situation-rules
 
 In scope: transaction classification for tax year 2026 for one individual's Schedule C business: a sole proprietor, or a single-member LLC disregarded for federal tax, on the cash method unless the client uses accrual.
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Form | Schedule C (Form 1040) 2026, Profit or Loss From Business |
 | Return | 2026 Form 1040, due 15 April 2027 (15 October 2027 on extension) |
@@ -376,7 +376,7 @@ Payments by card or through a payment settlement entity are reported on Form 109
 
 Six classification lines from a freelance developer's 2026 Chase Business Checking statement:
 
-| Date | Counterparty | Amount | Line | Default? | Question |
+| Date | Counterparty | USD | Line | Default? | Question |
 | --- | --- | --- | --- | --- | --- |
 | 01/15/2026 | STRIPE TRANSFER | +4,827.50 | excluded payout | Y | Gross sales and fees from the Stripe dashboard |
 | 02/01/2026 | GITHUB INC | −19.00 | 27b software | N | none |
