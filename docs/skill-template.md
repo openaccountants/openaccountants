@@ -208,6 +208,7 @@ A body change or a change to source-owned identity, description, category, depen
 
 - **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-signed label; the label never tracked accuracy.
 - **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the real, non-future date it was signed; a missing, impossible or future date blocks an approval-only PR too. That `reviewed_on` moved with the content: reviewer.
+- **Private professional numbers:** `validate-guides.py` blocks new licence/warrant identifiers in skill text or credit lines, including extra occurrences of an existing number. Existing numbers are advisory backlog findings: the app hides them at serve time without changing the approved source or its approval. Keep the accountant's name; keep their professional number private.
 
 ### 12. An independent second reader before merge
 

@@ -73,6 +73,7 @@ import json
 import os
 import re
 import subprocess
+from professional_numbers import professional_numbers, new_professional_numbers
 import sys
 
 import job_identity
@@ -604,6 +605,36 @@ def check_merge_records(errors, warnings, pr_body=None, deleted=None, old_text=N
         warnings.extend(f"{rel}: {n}" for n in notes)
 
 
+def check_professional_numbers(errors, warnings, touched=None, old_text=None):
+    """Block newly published licence/warrant numbers without editing old approvals."""
+    if touched is None:
+        paths = [str(p.relative_to(REPO_ROOT)) for tree in ("skills", "packages/us-federal")
+                 for p in Path(REPO_ROOT, tree).rglob("*.md")]
+    else:
+        paths = [p for p in touched if p.startswith(("skills/", "packages/us-federal/")) and p.endswith(".md")]
+    for rel in paths:
+        text = _read_or_none(rel)
+        if text is None:
+            continue
+        if touched is None:
+            if professional_numbers(text):
+                warnings.append(f"{rel}: existing professional identifier; hide at serve time, do not reset approval")
+            continue
+        if old_text:
+            before = old_text(rel)
+        else:
+            # Compare with the PR's base, not a newer main that could conceal
+            # the introduction. A failed lookup is empty only for a new file.
+            base = subprocess.run(["git", "merge-base", "origin/main", "HEAD"], cwd=REPO_ROOT, capture_output=True, text=True)
+            if base.returncode:
+                errors.append(f"{rel}: cannot confirm base for professional-number check")
+                continue
+            old = subprocess.run(["git", "show", f"{base.stdout.strip()}:{rel}"], cwd=REPO_ROOT, capture_output=True, text=True)
+            before = old.stdout if old.returncode == 0 else ""
+        if new_professional_numbers(text, before or ""):
+            errors.append(f"{rel}: new licence/warrant number in skill text; keep professional numbers private, retain the accountant's name only")
+
+
 def same_job_report(bi):
     return job_identity.same_job_groups(
         guides_with_jobs(bi), job_identity.load_jurisdiction_words(), load_coverage().PSEUDO_CODES
@@ -958,6 +989,7 @@ def main():
     # Line 11 runs here too: a file that is not `.md` is not a guide, so no
     # later check would ever look at it.
     check_deliverable(errors, warnings, touched)
+    check_professional_numbers(errors, warnings, touched)
     # Resolve the whole source graph even on a deletion-only PR. A changed-file
     # scan cannot see unchanged children whose required parent was removed.
     _skills, _targets, dependency_errors = skill_dependencies.catalogue(Path(REPO_ROOT))
