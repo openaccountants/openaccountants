@@ -1,29 +1,33 @@
-# Iowa — OpenAccountants Tax Skills
+---
+jurisdiction: US-IA
+applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
+covered_by:
+  IT-IND: ia-income-tax
+  IT-CORP: ia-corporate-tax
+  VAT: ia-sales-tax
+  SC: ia-payroll
+  PR: ia-payroll
+partial:
+  IT-IND: "Final 2026 form mappings and school/EMS surtax table still require confirmation."
+  IT-CORP: "Ordinary C-corporation computation covered; financial-institution franchise rate/scope only, full bank base and return workflow missing."
+  PR: "Regular withholding and UI covered; detailed formula low-wage/rounding and special payroll regimes need confirmation."
+  TP: "No separate Iowa transfer-pricing skill."
+  XB: "Basic sourcing boundaries only; no dedicated cross-border skill."
+---
 
-| Field | Value |
-|---|---|
-| State | Iowa |
-| Code | US-IA |
-| Income tax | Yes |
-| Sales tax | Yes |
-| Franchise / gross receipts tax | No |
-| Tax authority | [Iowa Department of Revenue](https://revenue.iowa.gov/) |
-| Quality tier | Q3 — AI-drafted, not independently verified |
+# Iowa: 2026 state tax skills
 
-## Files in this folder
-| File | What it covers |
-|---|---|
-| `ia-income-tax.md` | Individual income tax (Form IA 1040) — flat 3.8% (2025), self-employed focus |
-| `ia-sales-tax.md` | Sales and use tax obligations (6% state rate) |
+Iowa has individual income tax on wages and business income, ordinary corporate income tax, financial-institution franchise tax, sales/use tax, employee income-tax withholding and employer unemployment insurance. Federal taxes remain separate. There is no broad state gross-receipts tax described by this pack. The former README incorrectly marked franchise tax absent: financial institutions are taxed under Iowa Code 422.60 and 422.63.
 
-## What's NOT covered
-- Corporate income tax
-- Withholding tax
-- Property tax (administered locally)
-- Inheritance tax (repealed effective 2025)
-- Partnership/S-corp returns
-- Part-year / nonresident allocation (Schedule IA 126)
-- Franchise tax (financial institutions)
+| Job | covered_by | Coverage and state |
+| --- | --- | --- |
+| Individual income tax | `ia-income-tax` | 2026 rate/base and core decisions; final form/surtax gap above |
+| Sales and use tax | `ia-sales-tax` | State tax, local option sales tax, purchaser use tax and common exemptions |
+| Corporate/franchise | `ia-corporate-tax` | Ordinary corporations plus franchise scope/rate; detailed bank computation partial |
+| Payroll withholding and UI | `ia-payroll` | Regular withholding, UI base/rates, registration and reporting; special-case gaps above |
 
-## How to use
-Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM. See the main README for details.
+All four skills are **Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. Reference mappings from read 2025 instructions are explicitly labelled the 2025-2026 filing cycle and must not be presented as final 2026 forms.
+
+Separate specialist work remains for pass-through/PTET returns, detailed farm/employee-owner capital-gain elections, special corporate credits, property/homestead relief, inheritance administration and complex multistate allocations. Each skill ends with its precise unconfirmed items. No person's professional approval is claimed.
+
+Official sources read 2026-11-13: [Iowa Department of Revenue](https://revenue.iowa.gov/), [Iowa Code chapter 422](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf), [Iowa sales tax law](https://www.legis.iowa.gov/docs/code/2026/423.3.pdf) and [Iowa Workforce Development](https://workforce.iowa.gov/employers/unemployment-insurance/ui-tax-and-audit/unemployment-insurance-taxes). The skills record sections and read purposes for each individual source.
