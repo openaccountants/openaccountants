@@ -46,9 +46,9 @@
 39. `crypto-tax-workflow-base.md`
 40. `germany-guided-intake.md`
 41. `germany-return-assembly.md`
-42. `income-tax-workflow-base.md`
-43. `social-contributions-workflow-base.md`
-44. `workflow-base.md`
+42. `workflow-base.md`
+43. `income-tax-workflow-base.md`
+44. `social-contributions-workflow-base.md`
 
 ## Also known as
 

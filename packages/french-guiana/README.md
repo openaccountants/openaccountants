@@ -18,6 +18,7 @@
 11. `gf-transfer-pricing.md`
 12. `payroll-workflow-base.md`
 13. `transfer-pricing-workflow-base.md`
+14. `workflow-base.md`
 
 ## How to use
 

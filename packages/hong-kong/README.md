@@ -15,8 +15,8 @@
 8. `hk-tax-overview.md`
 9. `hong-kong-tax.md`
 10. `company-formation-workflow-base.md`
-11. `income-tax-workflow-base.md`
-12. `workflow-base.md`
+11. `workflow-base.md`
+12. `income-tax-workflow-base.md`
 
 ## Also known as
 

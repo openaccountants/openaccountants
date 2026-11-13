@@ -50,9 +50,9 @@
 43. `crypto-tax-workflow-base.md`
 44. `malta-guided-intake.md`
 45. `malta-return-assembly.md`
-46. `income-tax-workflow-base.md`
-47. `social-contributions-workflow-base.md`
-48. `workflow-base.md`
+46. `workflow-base.md`
+47. `income-tax-workflow-base.md`
+48. `social-contributions-workflow-base.md`
 
 ## Also known as
 

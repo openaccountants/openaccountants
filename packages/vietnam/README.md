@@ -15,7 +15,8 @@
 8. `vn-tax-overview.md`
 9. `payroll-workflow-base.md`
 10. `company-formation-workflow-base.md`
-11. `vat-workflow-base.md`
+11. `workflow-base.md`
+12. `vat-workflow-base.md`
 
 ## Also known as
 

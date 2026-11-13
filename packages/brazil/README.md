@@ -33,8 +33,8 @@
 26. `crypto-tax-workflow-base.md`
 27. `brazil-guided-intake.md`
 28. `brazil-return-assembly.md`
-29. `income-tax-workflow-base.md`
-30. `workflow-base.md`
+29. `workflow-base.md`
+30. `income-tax-workflow-base.md`
 
 ## Also known as
 

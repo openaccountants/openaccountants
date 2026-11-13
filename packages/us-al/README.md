@@ -78,7 +78,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `al-sales-tax.md`
 69. `alabama-income-tax.md`
 70. `alabama-sales-tax.md`
-71. `cross-border-tax-workflow-base.md`
+71. `workflow-base.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

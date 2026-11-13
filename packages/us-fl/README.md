@@ -80,7 +80,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 70. `fl-sales-use-tax-surtax.md`
 71. `fl-sales-use-tax.md`
 72. `fl-transient-rental-tax.md`
-73. `cross-border-tax-workflow-base.md`
+73. `workflow-base.md`
+74. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

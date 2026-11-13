@@ -13,9 +13,9 @@
 6. `ivory-coast-social-contributions.md`
 7. `ivory-coast-vat.md`
 8. `payroll-workflow-base.md`
-9. `income-tax-workflow-base.md`
-10. `social-contributions-workflow-base.md`
-11. `workflow-base.md`
+9. `workflow-base.md`
+10. `income-tax-workflow-base.md`
+11. `social-contributions-workflow-base.md`
 
 ## How to use
 

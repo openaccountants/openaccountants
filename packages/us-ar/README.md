@@ -78,7 +78,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `ar-sales-tax.md`
 69. `arizona-sales-tax.md`
 70. `arkansas-sales-tax.md`
-71. `cross-border-tax-workflow-base.md`
+71. `workflow-base.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

@@ -14,6 +14,7 @@
 7. `mo-tax-overview.md`
 8. `payroll-workflow-base.md`
 9. `company-formation-workflow-base.md`
+10. `workflow-base.md`
 
 ## How to use
 

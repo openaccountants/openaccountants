@@ -43,8 +43,8 @@
 36. `crypto-tax-workflow-base.md`
 37. `netherlands-guided-intake.md`
 38. `netherlands-return-assembly.md`
-39. `income-tax-workflow-base.md`
-40. `workflow-base.md`
+39. `workflow-base.md`
+40. `income-tax-workflow-base.md`
 
 ## Also known as
 

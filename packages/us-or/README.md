@@ -76,7 +76,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 66. `global-router.md`
 67. `or-cat.md`
 68. `or-income-tax.md`
-69. `cross-border-tax-workflow-base.md`
+69. `workflow-base.md`
+70. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

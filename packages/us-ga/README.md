@@ -84,7 +84,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 74. `georgia-corporate-income-tax-returns-form-600.md`
 75. `georgia-individual-tax-return-form-500.md`
 76. `georgia-pass-through-entity-returns-form-700-partnership-and-form-600s-s-corporation.md`
-77. `cross-border-tax-workflow-base.md`
+77. `workflow-base.md`
+78. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

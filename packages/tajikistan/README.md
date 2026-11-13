@@ -13,6 +13,7 @@
 6. `tj-vat-gst.md`
 7. `payroll-workflow-base.md`
 8. `company-formation-workflow-base.md`
+9. `workflow-base.md`
 
 ## How to use
 

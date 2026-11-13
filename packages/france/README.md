@@ -40,9 +40,9 @@
 33. `crypto-tax-workflow-base.md`
 34. `france-guided-intake.md`
 35. `france-return-assembly.md`
-36. `income-tax-workflow-base.md`
-37. `social-contributions-workflow-base.md`
-38. `workflow-base.md`
+36. `workflow-base.md`
+37. `income-tax-workflow-base.md`
+38. `social-contributions-workflow-base.md`
 
 ## Also known as
 

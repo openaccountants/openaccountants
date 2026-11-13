@@ -12,6 +12,7 @@
 5. `dm-income-tax-paye.md`
 6. `dm-social-contributions.md`
 7. `dm-vat.md`
+8. `workflow-base.md`
 
 ## How to use
 

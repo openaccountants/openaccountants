@@ -81,7 +81,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 71. `ks-sales-tax.md`
 72. `ks-social-contributions.md`
 73. `ks-transfer-pricing.md`
-74. `cross-border-tax-workflow-base.md`
+74. `workflow-base.md`
+75. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

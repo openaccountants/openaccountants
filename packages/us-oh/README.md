@@ -79,7 +79,8 @@ This package contains **federal** tax skills (which apply to all US states) plus
 69. `oh-income-tax.md`
 70. `oh-sales-tax.md`
 71. `ohio-sales-tax.md`
-72. `cross-border-tax-workflow-base.md`
+72. `workflow-base.md`
+73. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
