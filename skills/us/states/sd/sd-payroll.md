@@ -19,7 +19,7 @@ type: computation
 
 ## Scope
 
-Ordinary contributory employers for 2026, including state income-tax withholding status, RA coverage and wage reporting, base, employer rates/fees and quarterly payment. Federal withholding/FICA/FUTA belong to `us-payroll`. Reimbursable employers, interstate localization and common-paymaster arrangements require separate facts.
+Ordinary contributory employers for 2026, including state income-tax withholding status, RA coverage and wage reporting, base, employer rates/fees and quarterly payment. Federal withholding/FICA/FUTA belong to `us-form-941-940-payroll`. Reimbursable employers, interstate localization and common-paymaster arrangements require separate facts.
 
 ## Ask the client first
 
