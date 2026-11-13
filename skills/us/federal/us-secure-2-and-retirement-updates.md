@@ -257,7 +257,7 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 
   The small-employer relief ends 1 year after the close of the first year in which the employer normally employs more than 10.
 
-## Boundary and exception table ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf), [IRC §414(v)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartB-sec414.htm))
+## Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
@@ -279,7 +279,7 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 | 529 account opened 14 years ago | Not eligible yet |
 | 529 rollover when the beneficiary already contributed the full IRA limit | Nothing can be rolled that year |
 
-## Worked cases ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf), [Pub. 590-B tables](https://www.irs.gov/publications/p590b))
+## Worked cases
 
 **Case C1: ordinary catch-up.** Ana is 55 at the end of 2026. Her 2025 box 3 wages from the employer sponsoring her 401(k) were $120,000, which is under the threshold. She may defer $24,500 + $8,000 = $32,500, pre-tax or Roth as the plan allows.
 
@@ -334,23 +334,23 @@ expected:
 
 **Case C6: 529 rollover.** Farah's 529 account was opened for her in 2009. In 2026 she is 24, has wages of $40,000 and has already contributed $2,000 to a traditional IRA for 2026. The account has been maintained for more than 15 years. Contributions from the last 5 years, and their earnings, are excluded. Her maximum 2026 rollover is $7,500 − $2,000 = $5,500. It must be a direct transfer to a Roth IRA in her name, and it counts toward her $35,000 lifetime cap.
 
-## 2025 returns, extended returns due 15 October 2026 ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf))
+## 2025 returns, extended returns due 15 October 2026
 
 For 2025, use these figures instead:
 
-| Item (2025) | Amount |
-| --- | --- |
-| Elective deferral limit | $23,500 |
-| Catch-up, age 50 or over | $7,500 |
-| Catch-up, age 60 to 63 in 2025 | $11,250 |
-| §415(c) annual additions limit | $70,000 |
-| SIMPLE deferral limit | $16,500 |
-| SIMPLE catch-up, age 50 or over | $3,500 |
-| IRA limit | $7,000 |
-| IRA catch-up | $1,000 |
-| QCD limit | $108,000 |
-| One-time split-interest QCD | $54,000 |
-| Domestic abuse distribution cap | $10,300 |
+| Item (2025) | Amount | Source |
+| --- | --- | --- |
+| Elective deferral limit | $23,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 50 or over | $7,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 60 to 63 in 2025 | $11,250 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| §415(c) annual additions limit | $70,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE deferral limit | $16,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE catch-up, age 50 or over | $3,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA limit | $7,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA catch-up | $1,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| QCD limit | $108,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| One-time split-interest QCD | $54,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Domestic abuse distribution cap | $10,300 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
 
 - **Roth income phase-out for 2025:** $150,000 to $165,000 for single or head of household; $236,000 to $246,000 married filing jointly.
 - **Roth catch-up.** It was **not** required in 2025, because the Notice 2023-62 transition period ran to 31 December 2025. A pre-tax catch-up in 2025 is fine.
