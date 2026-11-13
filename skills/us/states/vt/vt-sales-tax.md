@@ -2,12 +2,13 @@
 name: vt-sales-tax
 description: Use this skill whenever asked about Vermont sales tax, Vermont use tax, Vermont Tax Dept sales tax filing, Vermont local option tax, Vermont SaaS tax, or Vermont sales tax compliance. Trigger on phrases like "Vermont sales tax", "VT sales tax", "32 V.S.A. §9771", "Vermont Tax Dept", "Vermont local option", "Vermont SaaS", "Vermont SST", or any request involving Vermont state and local sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
 jurisdiction: US-VT
-tax_year: 2025
+tax_year: 2026
 last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
-tax_year_notes: Rates and rules checked on 2026-11-13 against 32 V.S.A. chapters 225 and 233 and Vermont Department of Taxes pages (see Sources). Vermont's statutory rates did not change for 2026, but the tax year label stays 2025 until the guide is re-reviewed for 2026.
+tax_year_notes: Rates and rules are the statutes in force when read on 2026-11-13 (32 V.S.A. chapters 103, 225 and 233) and Vermont Department of Taxes pages (see Sources). Items not re-read are listed in the PR that made this change and are not marked as confirmed.
+version: "1.1"
 ---
 
 # VT Sales Tax

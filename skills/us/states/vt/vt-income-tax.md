@@ -8,7 +8,7 @@ last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-tax_year_notes: Tax year 2025 (filed 2026). The Vermont Department of Taxes had not published a 2026 rate schedule when this guide was checked on 2026-11-13; Vermont indexes its brackets each year, so do not use the 2025 amounts for 2026.
+tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. The Vermont Department of Taxes had not published a 2026 rate schedule when this guide was checked on 2026-11-13; Vermont indexes its brackets each year, so do not use the 2025 amounts for 2026.
 ---
 
 # VT Income Tax
@@ -23,13 +23,13 @@ tax_year_notes: Tax year 2025 (filed 2026). The Vermont Department of Taxes had 
 
 **Metadata table**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Jurisdiction | Vermont, United States |
 | Jurisdiction code | US-VT |
 | Tax type | Individual income tax |
-| Rate structure | Graduated (4 brackets), plus a 3% minimum tax when federal AGI exceeds $150,000 |
-| Rate range | 3.35% - 8.75% |
+| Rate structure | Graduated (4 brackets), plus a 3% minimum tax when federal AGI exceeds $150,000 (https://legislature.vermont.gov/statutes/section/32/151/05822) |
+| Rate range | 3.35% - 8.75% (https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf) |
 | Primary form | Form IN-111 (Vermont Income Tax Return) |
 | Governing statute | 32 V.S.A. Chapter 151 (§5822 et seq.) |
 | Tax authority | Vermont Department of Taxes |
@@ -45,45 +45,45 @@ All bracket amounts are the 2025 Vermont Tax Rate Schedules (source 1). Vermont 
 
 **Single filer brackets**
 
-| Vermont taxable income | Marginal rate |
-| --- | --- |
-| $0 - $49,400 | 3.35% |
-| $49,400 - $119,700 | 6.60% |
-| $119,700 - $249,700 | 7.60% |
-| Over $249,700 | 8.75% |
+| Vermont taxable income | Marginal rate | Source |
+| --- | --- | --- |
+| $0 - $49,400 | 3.35% | https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf |
+| $49,400 - $119,700 | 6.60% | same |
+| $119,700 - $249,700 | 7.60% | same |
+| Over $249,700 | 8.75% | same |
 
 ### Tax brackets -- Married filing jointly / qualifying widow(er) (2025, Schedule Y-1)
 
 **MFJ brackets**
 
-| Vermont taxable income | Marginal rate |
-| --- | --- |
-| $0 - $82,500 | 3.35% |
-| $82,500 - $199,450 | 6.60% |
-| $199,450 - $304,000 | 7.60% |
-| Over $304,000 | 8.75% |
+| Vermont taxable income | Marginal rate | Source |
+| --- | --- | --- |
+| $0 - $82,500 | 3.35% | https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf |
+| $82,500 - $199,450 | 6.60% | same |
+| $199,450 - $304,000 | 7.60% | same |
+| Over $304,000 | 8.75% | same |
 
 ### Tax brackets -- Married filing separately (2025, Schedule Y-2)
 
 **MFS brackets**
 
-| Vermont taxable income | Marginal rate |
-| --- | --- |
-| $0 - $41,250 | 3.35% |
-| $41,250 - $99,725 | 6.60% |
-| $99,725 - $152,000 | 7.60% |
-| Over $152,000 | 8.75% |
+| Vermont taxable income | Marginal rate | Source |
+| --- | --- | --- |
+| $0 - $41,250 | 3.35% | https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf |
+| $41,250 - $99,725 | 6.60% | same |
+| $99,725 - $152,000 | 7.60% | same |
+| Over $152,000 | 8.75% | same |
 
 ### Tax brackets -- Head of household (2025, Schedule Z)
 
 **HOH brackets**
 
-| Vermont taxable income | Marginal rate |
-| --- | --- |
-| $0 - $66,200 | 3.35% |
-| $66,200 - $171,000 | 6.60% |
-| $171,000 - $276,850 | 7.60% |
-| Over $276,850 | 8.75% |
+| Vermont taxable income | Marginal rate | Source |
+| --- | --- | --- |
+| $0 - $66,200 | 3.35% | https://tax.vermont.gov/sites/tax/files/documents/TaxRateSched-2025.pdf |
+| $66,200 - $171,000 | 6.60% | same |
+| $171,000 - $276,850 | 7.60% | same |
+| Over $276,850 | 8.75% | same |
 
 Rate schedule base tax at each threshold (2025, source 1): Single $1,655.00 at $49,400, $6,295.00 at $119,700, $16,175.00 at $249,700. MFJ $2,764.00 at $82,500, $10,482.00 at $199,450, $18,428.00 at $304,000. MFS $1,382.00 at $41,250, $5,241.00 at $99,725, $9,214.00 at $152,000. HOH $2,218.00 at $66,200, $9,135.00 at $171,000, $17,179.00 at $276,850.
 
@@ -93,19 +93,19 @@ Rate schedule base tax at each threshold (2025, source 1): Single $1,655.00 at $
 
 | Item | Amount (2025) | Source |
 | --- | --- | --- |
-| Starting point | Federal adjusted gross income (IN-111 Line 1) | IN-111 instructions (source 3) |
-| Vermont standard deduction | Single $7,650; MFJ / QW $15,300; MFS $7,650; HOH $11,450; plus $1,250 per federal age 65 / blind box | IN-111 instructions, Line 4 (source 3) |
-| Vermont personal exemption | $5,300 per exemption | IN-111 instructions, Line 5e (source 3) |
-| Minimum tax | If federal AGI > $150,000, tax is the greater of the schedule tax or 3% of federal AGI less US obligation interest | 32 V.S.A. §5822 (source 2); IN-111 Line 8 |
-| Charitable contribution credit | 5% of the first $20,000 of contributions (max $1,000), nonrefundable | IN-111 instructions, Lines 11-13 (source 3) |
-| Child Care Contribution | 0.11% of Vermont-source net self-employment earnings (Schedule SE Line 6) | IN-111 instructions, Line 21 (source 3) |
-| Filing deadline | Same as the federal original due date (April 15, 2026 for TY 2025) | 32 V.S.A. §5861(b) (source 5) |
-| Extension | To the federal extended date (Oct. 15, 2026) if a federal extension was granted; Form IN-151 only if paying | 32 V.S.A. §5868 (source 6); IN-111 instructions |
-| Estimated tax safe harbour | Lesser of 90% of current-year tax or 100% of prior-year tax; no penalty if tax due less withholding is under $500 | 32 V.S.A. §5851 (source 7); IN-111 instructions, Line 31 |
-| VT Earned Income Tax Credit | 38% of federal EITC with qualifying children; 100% with no qualifying children (refundable) | 32 V.S.A. §5828b (source 8) |
-| VT Child and Dependent Care Credit | 72% of the federal credit (refundable) | 32 V.S.A. §5828c (source 9) |
-| VT Child Tax Credit | $1,000 per qualifying child aged 6 or under (refundable, phases out by income) | 32 V.S.A. §5830f (source 10) |
-| Use tax rate | 6% | IN-111 instructions, Line 22 (source 3) |
+| Starting point | Federal adjusted gross income (IN-111 Line 1) | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf |
+| Vermont standard deduction | Single $7,650; MFJ / QW $15,300; MFS $7,650; HOH $11,450; plus $1,250 per federal age 65 / blind box | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Line 4) |
+| Vermont personal exemption | $5,300 per exemption | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Line 5e) |
+| Minimum tax | If federal AGI > $150,000, tax is the greater of the schedule tax or 3% of federal AGI less US obligation interest | https://legislature.vermont.gov/statutes/section/32/151/05822 |
+| Charitable contribution credit | 5% of the first $20,000 of contributions (max $1,000), nonrefundable | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Lines 11-13) |
+| Child Care Contribution | 0.11% of Vermont-source net self-employment earnings (Schedule SE Line 6) | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Line 21) |
+| Filing deadline | Same as the federal original due date (April 15, 2026 for TY 2025) | https://legislature.vermont.gov/statutes/section/32/151/05861 |
+| Extension | To the federal extended date (Oct. 15, 2026) if a federal extension was granted; Form IN-151 only if paying | https://legislature.vermont.gov/statutes/section/32/151/05868 |
+| Estimated tax safe harbour | Lesser of 90% of current-year tax or 100% of prior-year tax; no penalty if tax due less withholding is under $500 | https://legislature.vermont.gov/statutes/section/32/151/05851 and https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Line 31) |
+| VT Earned Income Tax Credit | 38% of federal EITC with qualifying children; 100% with no qualifying children (refundable) | https://legislature.vermont.gov/statutes/section/32/151/05828b |
+| VT Child and Dependent Care Credit | 72% of the federal credit (refundable) | https://legislature.vermont.gov/statutes/section/32/151/05828c |
+| VT Child Tax Credit | $1,000 per qualifying child aged 6 or under (refundable, phases out by income) | https://legislature.vermont.gov/statutes/section/32/151/05830f |
+| Use tax rate | 6% | https://tax.vermont.gov/sites/tax/files/documents/IN-111-Instr-2025.pdf (Line 22) |
 
 ### Worked examples
 
