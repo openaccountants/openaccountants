@@ -18,7 +18,7 @@ last_updated: 2026-11-13
 
 ## Who this applies to
 
-Employers with wages subject to Idaho withholding or covered Idaho UI employment. Federal employment-tax computations belong in the relevant federal payroll owner skill; its figures are not repeated here.
+Employers with wages subject to Idaho withholding or covered Idaho UI employment. Federal employment-tax computations belong in `us-form-941-940-payroll`; its figures are not repeated here.
 
 General UI coverage arises with at least $1,500 wages in a quarter or an employee in 20 different weeks in the current/prior year. Agriculture, domestic work, acquisitions, nonprofits/government and family/owner services have separate tests. Obtain Labor's determination instead of extending the ordinary test to every employer. See [Labor handbook, printed pages 4-10](https://www.labor.idaho.gov/wp-content/uploads/2025/11/Handbook_Tax-information_Nov.-2025-1.pdf).
 

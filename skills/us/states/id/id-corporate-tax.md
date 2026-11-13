@@ -33,7 +33,7 @@ Corporations and LLCs taxed as corporations with Idaho business, registration or
 
 ## The base
 
-First compute the federal corporate result in the applicable federal owner skill. The [2025 Form 41 instructions](https://tax.idaho.gov/wp-content/uploads/forms/EFO00025/EFO00025_03-02-2026.pdf) reconcile Idaho additions, subtractions and allocations. For all-Idaho activity, line 33 uses 100%; multistate businesses require Form 42. Line 37 is Idaho taxable income, line 38 calculates tax, and line 44 adds PBF separately. Retain the reconciliation, rather than multiplying federal gross receipts by the income-tax rate.
+First compute the federal corporate result in `us-form-1120-c-corp`. The [2025 Form 41 instructions](https://tax.idaho.gov/wp-content/uploads/forms/EFO00025/EFO00025_03-02-2026.pdf) reconcile Idaho additions, subtractions and allocations. For all-Idaho activity, line 33 uses 100%; multistate businesses require Form 42. Line 37 is Idaho taxable income, line 38 calculates tax, and line 44 adds PBF separately. Retain the reconciliation, rather than multiplying federal gross receipts by the income-tax rate.
 
 | Boundary | Treatment | Source |
 |---|---|---|
