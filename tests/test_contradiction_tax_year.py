@@ -219,14 +219,22 @@ class RealPackagesTreeTests(unittest.TestCase):
              "ambiguous_year_dropped", "historical_dropped"), 0
         )
 
-    def test_us_federal_guides_carry_no_frontmatter_tax_year(self) -> None:
-        """The premise the rest of this class rests on; assert it, don't assume."""
-        tagged = [
-            g.name for g in self._guides()
-            if re.search(r"^tax_year:", g.read_text(encoding="utf-8"), re.MULTILINE)
-        ]
+    @staticmethod
+    def _frontmatter_year(text: str) -> str | None:
+        block = scanner.extract_frontmatter(text)
+        return scanner.parse_known_keys(block or "").get("tax_year")
 
-        self.assertEqual(tagged, [])
+    def test_refreshed_guides_declare_their_tax_year(self) -> None:
+        tagged = {}
+        for guide in self._guides():
+            year = self._frontmatter_year(guide.read_text(encoding="utf-8"))
+            if year is not None:
+                tagged[guide.name] = year
+
+        self.assertEqual(tagged, {
+            "us-form-1120-c-corp.md": "2026",
+            "us-form-941-940-payroll.md": "2026",
+        })
 
     def test_untagged_guides_bind_to_the_year_they_say_they_cover(self) -> None:
         default = scanner.resolve_tax_year()
@@ -234,6 +242,8 @@ class RealPackagesTreeTests(unittest.TestCase):
         checked = 0
         for guide in self._guides():
             text = guide.read_text(encoding="utf-8")
+            if self._frontmatter_year(text) is not None:
+                continue  # explicit metadata is checked separately
             stated = self._stated_year(text)
             if stated is None:
                 continue  # this guide declares no single coverage year
@@ -258,6 +268,8 @@ class RealPackagesTreeTests(unittest.TestCase):
         checked = 0
         for guide in self._guides():
             text = guide.read_text(encoding="utf-8")
+            if self._frontmatter_year(text) is not None:
+                continue  # explicit metadata is checked separately
             stated = self._stated_year(text)
             if stated is None:
                 continue

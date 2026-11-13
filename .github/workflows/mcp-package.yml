@@ -5,12 +5,16 @@ on:
     paths:
       - "mcp/**"
       - "packages/**"
+      - "skills/**"
+      - "scripts/**"
       - ".github/workflows/mcp-package.yml"
   push:
     branches: [main]
     paths:
       - "mcp/**"
       - "packages/**"
+      - "skills/**"
+      - "scripts/**"
       - ".github/workflows/mcp-package.yml"
 
 permissions:
@@ -28,9 +32,9 @@ jobs:
           python-version: "3.11"
       - name: Build sdist and wheel
         run: |
-          python -m pip install --disable-pip-version-check "build==1.5.0"
+          python -m pip install --disable-pip-version-check "build==1.5.0" -r scripts/requirements-validation.txt
+          python scripts/build-packages.py
           python -m build mcp --outdir dist
-          python -m pip install -r scripts/requirements-validation.txt
           python scripts/probe-installed-publication.py --write-expected dist/publication-expectations.json
       - name: Install and exercise the wheel outside the checkout
         run: |
