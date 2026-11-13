@@ -107,9 +107,9 @@ The amounts. The base amounts are in the table below. The first amount applies t
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.031.html |
-| First exemption, all taxes including school | USD 25,000 | "up to the assessed valuation of $25,000 on the residence and contiguous real property" (196.031(1)(a)) |
-| Additional exemption, base amount, non-school levies only, indexed each 1 January | USD 25,000 | "an additional exemption of up to $25,000 on the assessed valuation greater than $50,000 for all levies other than school district levies" (196.031(1)(b)) |
-| Assessed value above which the additional exemption starts | USD 50,000 | same sentence as the row above |
+| First exemption, all taxes including school | USD 25,000 | "up to the assessed valuation of $25,000 on the residence and contiguous real property" (196.031(1)(a)) ([source](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.031.html)) |
+| Additional exemption, base amount, non-school levies only, indexed each 1 January | USD 25,000 | "an additional exemption of up to $25,000 on the assessed valuation greater than $50,000 for all levies other than school district levies" (196.031(1)(b)) ([source](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.031.html)) |
+| Assessed value above which the additional exemption starts | USD 50,000 | same sentence as the row above ([source](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.031.html)) |
 
 The deadline. The application goes to the county property appraiser "on or before March 1 of each year". Missing it "shall constitute a waiver of the exemption privilege for that year", except under subsections 8 and 9 ([196.011(1)(a)](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.011.html)). The form needs the Social Security numbers of the applicant and spouse; a timely application without them is incomplete and may be completed by 1 April after the appraiser makes contact (196.011(1)(b)). After the first approval, the appraiser mails a renewal each year (196.011(7)).
 
@@ -122,9 +122,9 @@ The Department's own example. PT-113 prints examples of how the exemption applie
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://floridarevenue.com/property/Documents/pt113.pdf |
-| Assessed value in the example | USD 65,000 | "If the Assessed Value is $65,000" |
-| Exempt from all property tax | USD 25,000 | "The first $25,000 of value is exempt from all property tax." |
-| Remaining value exempt from non-school taxes only | USD 15,000 | "The remaining $15,000 of value is exempt from non-school taxes." |
+| Assessed value in the example | USD 65,000 | "If the Assessed Value is $65,000" ([source](https://floridarevenue.com/property/Documents/pt113.pdf)) |
+| Exempt from all property tax | USD 25,000 | "The first $25,000 of value is exempt from all property tax." ([source](https://floridarevenue.com/property/Documents/pt113.pdf)) |
+| Remaining value exempt from non-school taxes only | USD 15,000 | "The remaining $15,000 of value is exempt from non-school taxes." ([source](https://floridarevenue.com/property/Documents/pt113.pdf)) |
 
 In that example the next slice of value above the first exemption, up to the threshold, is taxable, as PT-113 states.
 
@@ -135,8 +135,8 @@ A home that receives the homestead exemption is assessed at just value as of 1 J
 | Item | Limit | Note |
 | --- | --- | --- |
 | Source | all limits below | http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0193/Sections/0193.155.html |
-| Limit (a) | three percent of the prior year's assessed value | "Three percent of the assessed value of the property for the prior year" |
-| Limit (b) | the CPI change for the preceding calendar year | "The percentage change in the Consumer Price Index for All Urban Consumers" |
+| Limit (a) | three percent of the prior year's assessed value | "Three percent of the assessed value of the property for the prior year" ([source](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0193/Sections/0193.155.html)) |
+| Limit (b) | the CPI change for the preceding calendar year | "The percentage change in the Consumer Price Index for All Urban Consumers" ([source](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0193/Sections/0193.155.html)) |
 
 What ends it. A change of ownership (any sale, foreclosure, or transfer of legal title or beneficial title in equity to any person) resets the home to just value on the following 1 January, except for the listed transfers such as between spouses and certain transfers on death (193.155(3)). Losing homestead also triggers reassessment ([PT-112](https://floridarevenue.com/property/Documents/pt112.pdf)).
 
