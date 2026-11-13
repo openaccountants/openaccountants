@@ -12,14 +12,12 @@ description: >
 version: 0.1
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-13
 depends_on:
   - ks-income-tax
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Jeff Watts"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 

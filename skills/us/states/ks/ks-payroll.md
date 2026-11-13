@@ -14,14 +14,12 @@ description: >
 version: 0.2
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-13
 depends_on:
   - ks-income-tax
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Jeff Watts"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -47,10 +45,10 @@ See also: `ks-income-tax`, `ks-social-contributions`, `ks-cross-border`.
 | Allowance value (TY2025+ tables) | **$2,320** per allowance, tied to the K.S.A. 79-32,121 exemptions ($9,160 single / $18,320 married) | 2026 | [Pub. KW-100](https://ksrevenue.gov/pdf/kw100.pdf); [K.S.A. 79-32,121](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0121.html) |
 | Default with no K-4 | Single, zero allowances | 2026 | [KDOR K-4 information](https://www.ksrevenue.gov/k4info.html) |
 | KW-5 frequency: Annual | Withholding ≤ $200 a year; due January 25 | 2026 | [K.S.A. 79-3298(a)(5)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0098.html); [KDOR Withholding FAQ](https://www.ksrevenue.gov/faqs-withholding.html) |
-| KW-5 frequency: Quarterly | $200.01 to $1,200; due the 25th of the month after quarter close | 2026 | K.S.A. 79-3298(a)(4) |
-| KW-5 frequency: Monthly | $1,200.01 to $8,000; due the 15th of the following month | 2026 | K.S.A. 79-3298(a)(3) |
-| KW-5 frequency: Semi-Monthly | $8,000.01 to $100,000; wages paid 1st to 15th due the 25th, the rest of the month due the 10th of the next month | 2026 | K.S.A. 79-3298(a)(2) |
-| KW-5 frequency: Quad-Monthly | Over $100,000; periods end the 7th, 15th, 21st and last day; when undeposited tax at a period end is $667 or more it is due within 3 banking days; EFT required | 2026 | K.S.A. 79-3298(a)(1); KDOR Withholding FAQ (EFT) |
+| KW-5 frequency: Quarterly | $200.01 to $1,200; due the 25th of the month after quarter close | 2026 | [K.S.A. 79-3298(a)(4)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0098.html) |
+| KW-5 frequency: Monthly | $1,200.01 to $8,000; due the 15th of the following month | 2026 | [K.S.A. 79-3298(a)(3)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0098.html) |
+| KW-5 frequency: Semi-Monthly | $8,000.01 to $100,000; wages paid 1st to 15th due the 25th, the rest of the month due the 10th of the next month | 2026 | [K.S.A. 79-3298(a)(2)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0098.html) |
+| KW-5 frequency: Quad-Monthly | Over $100,000; periods end the 7th, 15th, 21st and last day; when undeposited tax at a period end is $667 or more it is due within 3 banking days; EFT required | 2026 | [K.S.A. 79-3298(a)(1)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0098.html); KDOR Withholding FAQ (EFT) |
 | Nonresident management or consulting fees | Payer withholds Kansas tax on management or consulting fees paid to a nonresident | 2026 | [K.S.A. 79-32,100a(d)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0100a.html) |
 | E-filing mandate | **51+ employees / payees must e-file** W-2s / KW-3 | 2026 | [KW-3 e-file specs](https://www.ksrevenue.gov/pdf/KW-3ECSV.pdf) |
 
