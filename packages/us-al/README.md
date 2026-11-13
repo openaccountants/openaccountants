@@ -74,12 +74,17 @@ This package contains **federal** tax skills (which apply to all US states) plus
 64. `us-tax-return-review-supporting-documents-findings.md`
 65. `us-federal-return-assembly.md`
 66. `global-router.md`
-67. `al-income-tax.md`
-68. `al-sales-tax.md`
-69. `alabama-income-tax.md`
-70. `alabama-sales-tax.md`
-71. `workflow-base.md`
-72. `cross-border-tax-workflow-base.md`
+67. `al-corporate-income-tax.md`
+68. `al-income-tax.md`
+69. `al-payroll-withholding.md`
+70. `al-sales-tax.md`
+71. `al-unemployment-contributions.md`
+72. `alabama-cross-border.md`
+73. `alabama-income-tax.md`
+74. `alabama-sales-tax.md`
+75. `alabama-transfer-pricing.md`
+76. `workflow-base.md`
+77. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
