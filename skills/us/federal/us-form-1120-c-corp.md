@@ -1,7 +1,7 @@
 ---
 name: us-form-1120-c-corp
 description: Prepare the 2026 Form 1120 for a US domestic C corporation, federal only. Covers the flat 21% rate under 26 U.S.C. 11(b), the income and deduction lines, the dividends received deduction (50%, 65%, 100%), the One Big Beautiful Bill Act changes that start in 2026 (the 1 percent floor and 10 percent cap on corporate charitable gifts, the interest capitalization ordering rule and the CFC inclusion carve-out from adjusted taxable income under section 163(j)), domestic research expensing under section 174A, 100% bonus depreciation (linked), the 80% NOL limit, estimated tax under section 6655 with the large corporation rule, the corporate AMT pointer, the accumulated earnings tax and the dividend or retain decision, schedules and attached forms, Form 7004, e-file and penalties. Calendar-year 2026 returns are due 15 April 2027. Trigger on "Form 1120", "C corp return", "corporate tax return", "21% corporate rate", "dividends received deduction", "corporate estimated tax", "Form 7004 corporation", "retain earnings or pay a dividend".
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-13

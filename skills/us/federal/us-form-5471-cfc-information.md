@@ -1,7 +1,7 @@
 ---
 name: us-form-5471-cfc-information
 description: Decide whether a US person must file Form 5471 for a foreign corporation in tax year 2026, which filer category or categories apply (1a to 1c, 2, 3, 4, 5a to 5c), and which schedules follow, using the December 2025 Form 5471 and its instructions. Covers the 10% US shareholder and more-than-50% CFC tests with family and entity attribution, the filing exceptions (constructive owners, joint filers, foreign-controlled CFCs under Rev. Proc. 2019-40, dormant corporations under Rev. Proc. 92-70), the $10,000 penalties under sections 6038 and 6679 with the $50,000 continuing-failure cap, the foreign tax credit reduction, the open statute under section 6501(c)(8), and the routes to fix missed years. Explains the One Big Beautiful Bill Act changes that reach Form 5471 from 2026 (GILTI renamed net CFC tested income, the one-month deferral election repealed, section 958(b)(4) restored with new section 951B, the new pro rata share rule). Trigger on "Form 5471", "CFC", "controlled foreign corporation", "foreign company owner", "5471 penalty", "Category 4", "Category 5", "US shareholder of a foreign corporation". The NCTI (GILTI) computation itself is in us-gilti-fdii-beat. Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-13
