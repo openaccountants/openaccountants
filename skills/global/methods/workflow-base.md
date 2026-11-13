@@ -76,7 +76,7 @@ Give brief progress or failure messages when useful. If a tool, source or critic
 
 For each substantive position, identify both evidence for the facts and the applicable primary rule. Use the source version for the requested period, including effective dates and exceptions. Read the provision and neighbouring conditions; a working link alone does not confirm its contents.
 
-Never invent a citation, substitute an unchecked statute for a missing rule, or use an unsupported fallback. If relevant authority cannot be obtained, leave that position unresolved and identify what is missing. The [controlling authoring standard](../../../docs/skill-template.md) defines source requirements; this base does not weaken them.
+Never invent a citation, substitute an unchecked statute for a missing rule, or use an unsupported fallback. If relevant authority cannot be obtained, leave that position unresolved and identify what is missing. The [controlling authoring standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md) defines source requirements; this base does not weaken them.
 
 Applicable law and confirmed facts control the case. The repository standard controls authoring. This generic method cannot override either. Resolve content conflicts by checking scope, period, legal hierarchy and original authority. Do not automatically choose a skill because it is closer to a form line, more specific in its title or produces a larger amount. Stop the affected position until the conflict is resolved.
 
@@ -335,7 +335,7 @@ Record applicable regional and country constraints rather than automatically cho
 
 ## Section 7: Companion skill contract
 
-The [current skill-writing standard](../../../docs/skill-template.md) controls required metadata, headings, evidence, shapes, examples and independent review. This base adds no second admission checklist. Its seven shapes require zero, one or two examples as specified there; a valid routing-only skill needs no dummy example. Do not reject a companion for lacking five examples, thirteen slots, a bespoke refusal catalogue, defaults table, cash threshold or template its job does not need.
+The [current skill-writing standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md) controls required metadata, headings, evidence, shapes, examples and independent review. This base adds no second admission checklist. Its seven shapes require zero, one or two examples as specified there; a valid routing-only skill needs no dummy example. Do not reject a companion for lacking five examples, thirteen slots, a bespoke refusal catalogue, defaults table, cash threshold or template its job does not need.
 
 For preparation, establish the relevant scope/period, supported rules/conditions and primary sources, required inputs, calculation/mapping steps, exceptions/referral conditions and version/currency information. If a required part for this position is missing, name it and leave the position unresolved. An unused optional section is not a missing legal input.
 
@@ -390,7 +390,7 @@ This skill is informational and computational preparation guidance, not a case-s
 
 ## Sources
 
-Preparation sequence, templates and refusal messages are OA workflow design, not statutory or professional-standard mandates. Repository contracts read in full on 2026-11-13: [skill-writing standard](../../../docs/skill-template.md), [domain rules](../../../docs/domains.yml), [agent instructions](../../../AGENTS.md) and [contribution/approval rules](../../../CONTRIBUTING.md), at source commit `b565a49a68d4761bb2cc6b410922bfd2221e214b`. These links identify repository contracts, not legal citations.
+Preparation sequence, templates and refusal messages are OA workflow design, not statutory or professional-standard mandates. Repository contracts read in full on 2026-11-13: [skill-writing standard](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/skill-template.md), [domain rules](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/docs/domains.yml), [agent instructions](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/AGENTS.md) and [contribution/approval rules](https://github.com/openaccountants/openaccountants/blob/b565a49a68d4761bb2cc6b410922bfd2221e214b/CONTRIBUTING.md), at source commit `b565a49a68d4761bb2cc6b410922bfd2221e214b`. These links identify repository contracts, not legal citations.
 
 The professional principles below are context for honest evidence handling and reporting limits, not authority that this exact workflow is required or one code has legal force everywhere. The IESBA overview explains that adoption/enforcement depend on jurisdiction. No entire handbook or professional-compliance review is claimed.
 
