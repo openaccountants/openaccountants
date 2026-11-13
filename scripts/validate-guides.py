@@ -61,6 +61,8 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      whose name is not lowercase letters, digits and hyphens, a description below
      the website's 40-character minimum, and a skill file over the size limit; each message says what to rename or split. The
      full run WARNs for the same files, so old content never fails on them.
+     The size gate alone permits an existing file's strictly hold-only transition:
+     it can add status: needs_sources, never change guidance or allow publication.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -81,6 +83,7 @@ import skill_checks
 import skill_dependencies
 from pathlib import Path
 from frontmatter_yaml import FrontmatterError, load_frontmatter
+from skill_eligibility import needs_sources as source_needs_sources
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
@@ -280,6 +283,39 @@ def needs_sources(text):
     return bool(m and re.search(r"^status:\s*needs_sources\s*$", m.group(1), re.M))
 
 
+def protective_hold_only(rel, text):
+    """Existing source may only gain a hold; all other source bytes stay exact."""
+    if text is None:
+        return False
+    bi = load_build_index()
+    try:
+        block = bi.extract_frontmatter(text)
+        metadata = load_frontmatter(block)
+        if not source_needs_sources(metadata):
+            return False
+        if Path(REPO_ROOT, rel).read_bytes() != text.encode("utf-8"):
+            return False  # A lossy decode must never conceal changed source bytes.
+        old = subprocess.run(["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT,
+                             capture_output=True, check=True).stdout.decode("utf-8")
+        old_block = bi.extract_frontmatter(old)
+        old_metadata = load_frontmatter(old_block)
+        if source_needs_sources(old_metadata):
+            return False
+    except Exception:
+        return False  # Missing history or ambiguous/invalid metadata cannot exempt a file.
+    metadata.pop("status", None)
+    old_metadata.pop("status", None)
+    if metadata != old_metadata:
+        return False  # A YAML alias on status must not change another field's meaning.
+
+    def without_status(source, frontmatter):
+        start = source.index("\n") + 1
+        stripped = re.sub(r"^status:[^\n]*(?:\n|$)", "", frontmatter, flags=re.M)
+        return source[:start] + stripped + source[start + len(frontmatter):]
+
+    return without_status(old, old_block) == without_status(text, block)
+
+
 def changed_files_vs_main():
     """Files changed vs origin/main (PR mode). Empty list = nothing relevant."""
     import subprocess
@@ -315,7 +351,8 @@ def added_or_edited_vs_main():
 
 def _read_or_none(rel):
     try:
-        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8", errors="replace") as fh:
+        # Preserve exact line endings for the protective-hold comparison.
+        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8", errors="replace", newline="") as fh:
             return fh.read()
     except OSError:
         return None
@@ -422,7 +459,7 @@ def deliverable_problems(paths, read=_read_or_none, size=_size_or_none):
                 f"Rename `{rel}` to `{target}`"
             )
         nbytes = size(rel)
-        if nbytes is not None and nbytes > PLATFORM_MAX_SKILL_BYTES:
+        if nbytes is not None and nbytes > PLATFORM_MAX_SKILL_BYTES and not protective_hold_only(rel, text):
             problems.append(
                 f"{rel}: the skill is {nbytes:,} bytes and the website's limit is "
                 f"{PLATFORM_MAX_SKILL_BYTES:,} bytes, so it would be refused after the merge. "
