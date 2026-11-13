@@ -3,7 +3,7 @@ name: us-ira-and-roth-conversions-8606
 description: Work out a person's 2026 traditional and Roth IRA position. Covers the 2026 contribution limit of USD 7,500 plus the USD 1,100 age-50 catch-up, the traditional IRA deduction phase-outs for active plan participants and their spouses from IRS Notice 2025-67, the Roth IRA income phase-outs, Roth conversions, the section 408(d)(2) pro-rata rule that treats all traditional, SEP and SIMPLE IRAs as one, the backdoor Roth, and the 2026 Form 8606 line by line, with a convert-now-or-not decision. Trigger on "Roth conversion", "backdoor Roth", "pro-rata rule", "Form 8606", "nondeductible IRA", "can I deduct my IRA", "Roth income limit", "IRA basis". Federal only.
 version: "1.0"
 jurisdiction: US
-category: federal-tax
+category: federal
 tax_year: 2026
 last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
