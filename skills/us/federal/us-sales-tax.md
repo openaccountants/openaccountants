@@ -203,7 +203,7 @@ Each state sets its own return, frequency and due dates, usually based on the ta
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Each state's base rate source, as linked in the rates table. Read for the statewide rate. Rates for AZ, AR, CA, GA, HI, ID, IL, IA, LA, MA, MI, MS, NM, NY, NC, OH, PA, RI, TX, VT and WA are taken from the 13 Nov 2026 state skills and their links; ND and SD from the state skills on main. | (as linked in each row) | 2026-11-13 |
+| CDTFA, rate description. Read for the 7.25% statewide base rate. The rates for AZ, AR, CA, GA, HI, ID, IL, IA, LA, MA, MI, MS, NM, NY, NC, OH, PA, RI, TX, VT and WA are taken from the 13 Nov 2026 state skills and the links in their rows; ND and SD from the state skills on main. | https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm | 2026-11-13 |
 | CT DRS, sales tax information. Read for "The sales tax rate of 6.35% applies to the retail sale, lease, or rental of most goods". | https://portal.ct.gov/drs/sales-tax/tax-information | 2026-11-13 |
 | DC OTR FAQ. Read for "General Sale ... Tax Rate: 6%". | https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs | 2026-11-13 |
 | Florida DOR. Read for "Florida's general state sales tax rate is 6%". | https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx | 2026-11-13 |
