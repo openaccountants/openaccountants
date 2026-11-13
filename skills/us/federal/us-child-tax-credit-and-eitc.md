@@ -2,7 +2,7 @@
 name: us-child-tax-credit-and-eitc
 description: >
   Compute the 2026 child tax credit and the 2026 earned income credit. The child tax credit is USD 2,200 per qualifying child under 17, with a refundable cap of USD 1,700, a phase-out of USD 50 per USD 1,000 of modified AGI over USD 200,000 (USD 400,000 joint), and the social security number rules in section 24(h)(7) as amended by Public Law 119-21. The earned income credit uses the 2026 earned-income amounts, maximums, and phase-out thresholds in Rev. Proc. 2025-32, the statutory credit and phase-out percentages, the qualifying-child tests, and the USD 12,200 investment-income cliff. Trigger on "child tax credit", "additional child tax credit", "Schedule 8812", "earned income credit", "EITC", "qualifying child". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 category: federal
 tax_year: 2026
