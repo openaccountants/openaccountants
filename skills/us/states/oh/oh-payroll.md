@@ -49,22 +49,22 @@ Out of scope, and where it goes:
 
 | Item | 2026 figure | Source |
 | --- | --- | --- |
-| Withholding exemption allowance | $650 a year per exemption ($12.50 weekly, $25.00 biweekly, $27.08 semi-monthly, $54.17 monthly, $2.50 daily) | Withholding tables, both editions |
-| Annual taxable wage bands | $26,050 or less; more than $26,050 to $100,000; more than $100,000 | Optional computer formula, both editions |
-| Band rates, 1 October 2025 to 31 July 2026 | 1.775%, 2.990%, 3.640% | Percentage method effective 1 October 2025 |
-| Band rates, from 1 August 2026 | 1.600%, 2.990%, 3.400% | Percentage method effective 1 August 2026 |
-| Supplemental compensation (bonuses) | 2.75% | Employer withholding page |
-| Quarterly filer | combined state and school district withholding $2,000 or less in the look-back year | Employer withholding page |
+| Withholding exemption allowance | $650 a year per exemption ($12.50 weekly, $25.00 biweekly, $27.08 semi-monthly, $54.17 monthly, $2.50 daily) | [Percentage method, 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_PercentageMethod_2026.pdf); [1 October 2025](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2025%20Withholding%20Tables/WHT_PercentageMethod_2025.pdf) |
+| Annual taxable wage bands | $26,050 or less; more than $26,050 to $100,000; more than $100,000 | [Optional computer formula, 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_OptionalComputerFormula_2026.pdf) |
+| Band rates, 1 October 2025 to 31 July 2026 | 1.775%, 2.990%, 3.640% | [Percentage method effective 1 October 2025](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2025%20Withholding%20Tables/WHT_PercentageMethod_2025.pdf) |
+| Band rates, from 1 August 2026 | 1.600%, 2.990%, 3.400% | [Percentage method effective 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_PercentageMethod_2026.pdf) |
+| Supplemental compensation (bonuses) | 2.75% | [Employer withholding page](https://tax.ohio.gov/business/employer-withholding) |
+| Quarterly filer | combined state and school district withholding $2,000 or less in the look-back year | [Employer withholding page](https://tax.ohio.gov/business/employer-withholding) |
 | Monthly filer | more than $2,000 but less than $84,000 | same |
 | Partial-weekly filer (EFT) | $84,000 or more | same |
 | Next-banking-day rule | combined withholding in a pay period of $100,000 or more | same |
-| UI taxable wage base | $9,000 per employee per year | ODJFS contribution rates; 2026 Rate Details |
+| UI taxable wage base | $9,000 per employee per year | [ODJFS contribution rates](https://jfs.ohio.gov/page/CAJM.hl56rs7cilxWeGzd); [2026 Rate Details](https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/ouio/uctax/2026RateDetails.pdf) |
 | UI new employer rate | 2.85% (2.7% plus 0.15% fee) | same |
 | UI new employer rate, construction | 5.85% (5.7% plus 0.15% fee) | same |
 | UI experience rates | lowest 0.4%, highest 10.1% (plus 0.15% fee, so 0.55% to 10.25% effective) | same |
-| UI mutualized rate | 0% | ODJFS contribution rates |
+| UI mutualized rate | 0% | [ODJFS contribution rates](https://jfs.ohio.gov/page/CAJM.hl56rs7cilxWeGzd) |
 | UI delinquency rate | 12.75% | same |
-| Interest on late withholding | 7% (calendar year 2026) | Department interest rate page |
+| Interest on late withholding | 7% (calendar year 2026) | [Department interest rate page](https://tax.ohio.gov/individual/resources/interest-rates) |
 
 ### Ohio income tax withholding, per pay period
 

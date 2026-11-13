@@ -58,19 +58,19 @@ Out of scope, and where it goes:
 
 ### Rates, bands and thresholds
 
-| Item | Tax year 2026 | Tax year 2025 | Source |
+| Item | Rate or amount, 2026 | Rate or amount, 2025 | Source |
 | --- | --- | --- | --- |
-| Nonbusiness income, zero-tax band | $26,050 or less: no tax | $26,050 or less: no tax | R.C. 5747.02(A)(3) |
-| Nonbusiness income above the band | $332.00 plus 2.75% of the amount over $26,050 | $26,050 to $100,000: $342.00 plus 2.75% of the excess; over $100,000: $2,394.32 plus 3.125% of the excess | R.C. 5747.02(A)(3)(b) and (c) |
-| Business income deduction | First $250,000 ($125,000 married filing separately) | Same | 2025 IT 1040 instructions; 2026 not yet confirmed |
-| Rate on taxable business income | 3% | 3% | R.C. 5747.02(A)(4)(a) |
-| Exemption allowed only if MAGI is less than | $500,000 | $750,000 | R.C. 5747.025(A) |
-| Exemption per person, MAGI $40,000 or less | not yet published (statutory base $2,350, indexed) | $2,400 | R.C. 5747.025(A)(1), (C); 2025 instructions |
+| Nonbusiness income, zero-tax band | $26,050 or less: no tax | $26,050 or less: no tax | [R.C. 5747.02(A)(3)](https://codes.ohio.gov/ohio-revised-code/section-5747.02) |
+| Nonbusiness income above the band | $332.00 plus 2.75% of the amount over $26,050 | $26,050 to $100,000: $342.00 plus 2.75% of the excess; over $100,000: $2,394.32 plus 3.125% of the excess | [R.C. 5747.02(A)(3)(b) and (c)](https://codes.ohio.gov/ohio-revised-code/section-5747.02) |
+| Business income deduction | First $250,000 ($125,000 married filing separately) | Same | [2025 IT 1040 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf); 2026 not yet confirmed |
+| Rate on taxable business income | 3% | 3% | [R.C. 5747.02(A)(4)(a)](https://codes.ohio.gov/ohio-revised-code/section-5747.02) |
+| Exemption allowed only if MAGI is less than | $500,000 | $750,000 | [R.C. 5747.025(A)](https://codes.ohio.gov/ohio-revised-code/section-5747.025) |
+| Exemption per person, MAGI $40,000 or less | not yet published (statutory base $2,350, indexed) | $2,400 | [R.C. 5747.025(A)(1), (C)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2025 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf) |
 | Exemption per person, MAGI $40,001 to $80,000 | not yet published (statutory base $2,100, indexed) | $2,150 | same |
-| Exemption per person, MAGI above $80,000 | not yet published (statutory base $1,850, indexed); the 2026 IT 1040ES uses $1,900 | $1,900 | same; 2026 IT 1040ES |
-| Estimated payments needed if tax after credits less withholding is more than | $500 | $500 | 2026 IT 1040ES |
-| Estimated tax safe harbor | lesser of 90% of 2026 tax or 100% of 2025 tax | same rule | 2026 IT 1040ES worksheet lines 10 and 11 |
-| Interest rate on unpaid tax | 7% (calendar year 2026) | 8% (calendar year 2025) | Department interest rate page |
+| Exemption per person, MAGI above $80,000 | not yet published (statutory base $1,850, indexed); the 2026 IT 1040ES uses $1,900 | $1,900 | [R.C. 5747.025(A)(3)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
+| Estimated payments needed if tax after credits less withholding is more than | $500 | $500 | [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
+| Estimated tax safe harbor | lesser of 90% of 2026 tax or 100% of 2025 tax | same rule | [2026 IT 1040ES worksheet lines 10 and 11](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
+| Interest rate on unpaid tax | 7% (calendar year 2026) | 8% (calendar year 2025) | [Department interest rate page](https://tax.ohio.gov/individual/resources/interest-rates) |
 
 Notes on the table:
 - **The 2026 rate is in the statute, not yet in a 2026 form.** R.C. 5747.02(A)(3)(c) reads: "For taxable years beginning in 2026 and thereafter, $332.00 plus 2.75% of the amount in excess of $26,050." The tax commissioner indexes the $26,050 band each August under R.C. 5747.02(A)(5) and does not adjust rates; no 2026 adjusted band had been published when read. Use $26,050 until the 2026 IT 1040 instructions say otherwise.
