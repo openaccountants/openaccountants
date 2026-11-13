@@ -111,6 +111,30 @@ The deductible half on Schedule 1 reduces adjusted gross income, not Schedule C 
 | Married couple both self-employed | Two Schedules SE; each spouse has their own USD 184,500 base |
 | Low earnings and the client wants Social Security credits | Optional methods (Schedule SE Part II): nonfarm method only if net profits are under USD 8,186 and under 72.189% of gross, with at least USD 400 of net earnings in 2 of the prior 3 years; at most five times in a lifetime |
 
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Whether the client has W-2 wages | Assume none (the full USD 184,500 base is available); ask before filing |
+| Filing status | Single, which has the lowest Additional Medicare Tax threshold apart from married filing separately; ask |
+| Prior-year Form 8829 carryover | Zero; ask for the 2025 Form 8829 |
+| Building basis and land value for home depreciation | No depreciation until documented; note the recapture risk once it is taken |
+| Simplified or actual home office method | Ask; do not choose for the client |
+| At-risk status | All at risk (line 32a) unless there is nonrecourse debt or a guarantee |
+| A loss large enough to create a net operating loss | Stop (R-SE-NOL) |
+| Gross receipts below the 1099 totals received | Flag: the IRS will match the forms |
+
+### Red flags to raise with the client
+
+| Flag | Why it matters |
+| --- | --- |
+| Net profit at or above USD 200,000 (single) or USD 250,000 (joint) | Form 8959 Additional Medicare Tax is likely |
+| Wages plus net earnings near USD 184,500 | Check that every W-2 is on Schedule SE line 8a |
+| A loss of USD 5,000 or more, or losses in most recent years | At-risk and hobby-loss questions |
+| Home office deduction of USD 5,000 or more, or capped by 280A(c)(5) | Substantiation review; record the carryover |
+| Home depreciation taken | Recapture on a later sale of the home |
+| Gross receipts below the 1099-NEC and 1099-K totals | IRS matching notice |
+
 ## Worked cases
 
 **Case 1, a decision: simplified or actual home office?** A single designer has 2026 tentative profit (line 29) of USD 60,000 and no wages. The office is 200 of the home's 2,000 square feet (10%). Indirect home expenses: mortgage interest USD 12,000, real estate tax USD 6,000, insurance USD 1,500, utilities USD 3,500 (USD 23,000 total). The building's basis is USD 300,000 and it is in a full year of 39-year straight-line depreciation (2.564%).
