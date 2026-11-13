@@ -1,15 +1,22 @@
 ---
 jurisdiction: US-OR
+applicable: [IT-IND, IT-CORP, SC, PR, TP, XB]
+not_applicable:
+  VAT: "No general Oregon sales or use/transaction tax; vehicle and other specific taxes remain separate."
 covered_by:
-  income-tax: or-income-tax
-  corporate-tax: or-corporate-tax
-  gross-receipts-tax: or-cat
-  payroll: or-payroll
+  IT-IND: or-income-tax
+  IT-CORP: or-corporate-tax
+  SC: or-payroll
+  PR: or-payroll
+  TP: or-corporate-tax
+  XB: or-income-tax
 partial:
-  income-tax: "Final 2026 return forms/tables/credits and complete conformity unavailable; final 2025-2026 filing-cycle rules and labeled 2026 estimates/planning supplied. Nonresident, reduced-rate and local calculations are boundaries."
-  corporate-tax: "Ordinary rate/minimum computation and 2025-2026 filing-cycle map supplied; final 2026 forms/conformity, complete losses, sourcing and special regimes remain unconfirmed."
-  gross-receipts-tax: "Core CAT computation, thresholds and reporting supplied; statutory/DOR nexus and registration-equality conflicts explicit; final 2026 forms and special exclusion amendment audit incomplete."
-  payroll: "2026 core withholding/UI/STT/transit/leave/WBF and reporting supplied; multistate localization, special coverage, successors, exact withholding tie, full penalties and upload specifications remain boundaries."
+  IT-IND: "Final 2026 return forms/tables/credits and complete conformity unavailable; final 2025-2026 filing-cycle rules and labeled 2026 estimates/planning supplied. Nonresident, reduced-rate and local calculations are boundaries."
+  IT-CORP: "Ordinary corporate and CAT computations supplied; final 2026 forms/conformity, complete losses, sourcing, special exclusions and statutory/DOR CAT nexus and registration-equality conflicts remain boundaries."
+  SC: "2026 UI/leave/WBF ordinary coverage and calculation supplied; multistate localization, special coverage, successors and complete delinquency calculations remain boundaries."
+  PR: "2026 core withholding/STT/district reporting supplied; exact withholding table tie, unusual wages/certificates, full penalties and upload specifications remain boundaries."
+  TP: "Unitary/consolidated and related-entity gates supplied; full related-party, member and international adjustment calculations remain incomplete."
+  XB: "Resident/source routing supplied; complete nonresident/part-year, other-state credit, foreign-income and local allocations remain incomplete."
 ---
 
 # Oregon tax skills, 2026
