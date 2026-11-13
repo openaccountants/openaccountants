@@ -112,4 +112,4 @@ IRS, 2025 Instructions for Form 990, Return of Organization Exempt From Income T
 §6104, Internal Revenue Code, and Regulations §§301.6104(d)-1 through -3 — public inspection
 IRS Exempt Organizations help line: 877-829-5500
 
-> Contributed by Anthony Bandura, AL-10921.
+> Contributed by Anthony Bandura.
