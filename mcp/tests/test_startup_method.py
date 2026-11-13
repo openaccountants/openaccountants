@@ -146,6 +146,78 @@ class StartupMethodTests(unittest.TestCase):
         self.assertFalse(full["workflow"]["load_required"])
         self.assertNotIn("get_skill('workflow-base')", full["next_action"])
 
+    def test_cached_method_renamed_to_another_identity_is_not_a_method(self):
+        self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "available")
+        self.method.write_text(document("different-method", "Different instructions."))
+        out = server.get_skill("xx-income-tax")
+        self.assertEqual(out["application_status"], "blocked")
+        self.assertNotIn("body_sha256", out["workflow"])
+        with self.assertRaisesRegex(server.ToolInputError, "not found"):
+            server.get_skill("workflow-base")
+
+    def test_uncached_conflicts_are_found_even_when_an_existing_file_becomes_the_method(self):
+        for kind in ("new path", "renamed skill", "formerly unnamed"):
+            with self.subTest(kind=kind):
+                extra = self.packages / "xx/extra.md"
+                if kind == "renamed skill":
+                    extra.write_text(document("other-method", "Other instructions."))
+                elif kind == "formerly unnamed":
+                    extra.write_text("# Unnamed startup notice\n")
+                server._index.cache_clear()
+                self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "available")
+                extra.write_text(document("workflow-base", "Conflicting method."))
+                out = server.get_skill("xx-income-tax")
+                self.assertEqual(out["application_status"], "blocked")
+                self.assertIn("ambiguous", out["workflow"]["reason"])
+                extra.unlink()
+
+    def test_new_identical_alias_and_same_name_refresh_remain_usable(self):
+        self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "available")
+        alias = self.packages / "xx/alias.md"
+        alias.write_bytes(self.method.read_bytes())
+        self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "available")
+        alias.write_text(document("workflow-base", "Conflicting temporary copy."))
+        self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "blocked")
+        alias.write_bytes(self.method.read_bytes())
+        self.assertEqual(server.get_skill("xx-income-tax")["application_status"], "available")
+
+    def test_method_approval_is_current_not_a_cached_prior_claim(self):
+        self.method.write_text(self.method.read_text().replace("tier: 2", "tier: 1\nreviewed_by: Fictional Accountant"))
+        server._index.cache_clear()
+        self.assertEqual(server.get_skill("workflow-base")["verified_by"], "Fictional Accountant")
+        self.method.write_text(self.method.read_text().replace("tier: 1", "tier: 2"))
+        current = server.get_skill("workflow-base")
+        self.assertIsNone(current["verified_by"])
+        self.assertNotIn("verified by Fictional Accountant", current["markdown"])
+
+    def test_name_fast_negative_preserves_actual_parser_for_tricky_yaml(self):
+        headers = [
+            "name: other-method\n", "name: workflow-base\n", "name: other-method # workflow-base\n",
+            '"name": workflow-base\n', '"n\\u0061me": workflow-base\n',
+            'name: "workflow-\\u0062ase"\n', "name: 'workflow-base'\n",
+            "method: &id workflow-base\nname: *id\n",
+            "base: &id {name: workflow-base}\n<<: *id\n",
+            "name: other-method\nname: workflow-base\n",
+            'name: other-method\n"name": workflow-base\n',
+            'name: workflow-base\n"name": other-method\n',
+            "name: >-\n  workflow-base\n", "name: |-\n  workflow-base\n",
+            "? name\n: workflow-base\n", "{name: workflow-base}\n",
+            "name: workflow-base\nbroken: [\n", "name: other-method\nbroken: [\n",
+            "name: other-method\n  continuation\n", "name: null\n",
+            "name: other-method\nunknown-key: value\n", "name: other-method\n<<: {name: workflow-base}\n",
+            "name: other #comment\x85name: workflow-base\n",
+            "name: other #comment\u2028name: workflow-base\n",
+            "name: other #comment\u2029name: workflow-base\n",
+        ]
+        path = self.packages / "case.md"
+        for header in headers:
+            with self.subTest(header=header):
+                path.write_text("---\n" + header + "---\n\n# Body\n")
+                expected = server._current_metadata(path).get("name")
+                actual = server._current_metadata(path, required_name="workflow-base").get("name")
+                self.assertEqual(actual == "workflow-base", expected == "workflow-base")
+        self.assertFalse(server._may_declare_name(["---\n", "name: other-method\n", "---\n"], "workflow-base"))
+
 
 class StartupSDKTests(unittest.IsolatedAsyncioTestCase):
     async def test_client_receives_blocked_method_without_an_execution_plan(self):

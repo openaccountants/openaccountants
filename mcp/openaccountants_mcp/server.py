@@ -457,7 +457,33 @@ def _index() -> dict[str, dict[str, Any]]:
     return {name: rec for name, rec in records.items() if name not in held}
 
 
-def _current_metadata(path: Path) -> dict[str, Any]:
+def _may_declare_name(lines: list[str], name: str) -> bool:
+    """Fast negative only for an ordinary, unique, plain top-level name.
+
+    Unusual/quoted keys, aliases, merges, duplicate names, nonliteral values or
+    incomplete headers always go through the existing YAML parser. This never
+    decides that a candidate IS the required method.
+    """
+    if not lines or lines[-1].strip() not in {"---", "..."}:
+        return True
+    if any(char in line for line in lines for char in "\x85\u2028\u2029"):
+        return True  # YAML line breaks that file-line iteration does not split
+    names = []
+    for line in lines[1:-1]:
+        if not line.strip() or line.startswith((" ", "\t", "#")):
+            continue
+        key = _KEYLINE_RE.match(line)
+        if not key:
+            return True
+        if key[1] == "name":
+            literal = re.fullmatch(r"[ \t]*([a-z0-9]+(?:-[a-z0-9]+)*)(?:[ \t]+#[^\r\n]*)?[ \t]*", key[2])
+            if not literal:
+                return True
+            names.append(literal[1])
+    return len(names) != 1 or names[0] == name
+
+
+def _current_metadata(path: Path, required_name: str | None = None) -> dict[str, Any]:
     lines = []
     with path.open(encoding="utf-8") as source:
         first = source.readline()
@@ -468,6 +494,8 @@ def _current_metadata(path: Path) -> dict[str, Any]:
             lines.append(line)
             if line.strip() in {"---", "..."}:
                 break
+    if required_name is not None and not _may_declare_name(lines, required_name):
+        return {}
     return _parse_frontmatter("".join(lines), source=path.name)[0]
 
 
@@ -554,6 +582,8 @@ def _read_skill(slug: str, _parents: frozenset[str] = frozenset()) -> tuple[dict
     # (e.g. a rate correction 21% -> 22%), and can keep serving a body after
     # read permission is revoked. Freshness fails closed here.
     meta, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
+    if meta.get("name") != slug:
+        raise ToolInputError(f"Skill '{slug}' changed source identity; refresh the catalogue before use")
     meta = _live_metadata(rec, meta)
     if needs_sources(meta):
         raise ToolInputError(f"Skill '{slug}' is held from publication: status: needs_sources")
@@ -562,6 +592,11 @@ def _read_skill(slug: str, _parents: frozenset[str] = frozenset()) -> tuple[dict
             _read_skill(dependency, _parents | {slug})
         except (OSError, ValueError) as exc:
             raise ToolInputError(f"Skill '{slug}' is held: required companion '{dependency}' unavailable: {exc}") from exc
+    if slug == "workflow-base":
+        tier = _quality_tier(meta)
+        rec = {**rec, "metadata": meta, "quality_tier": tier,
+               "verified_by": _real_verifier(meta) if tier == "accountant-verified" else None,
+               "title": _first_h1(body) or slug, "last_updated": str(meta.get("last_updated") or "")}
     return rec, body
 
 
@@ -598,10 +633,49 @@ def _provenance_footer(rec: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def _read_workflow() -> tuple[dict[str, Any], str]:
+    """Prove the required method's current namespace, including uncached files.
+
+    Inspect headers using the existing publication reader; read full bodies only
+    for current method copies. A stat-only fingerprint cannot prove identity.
+    Refresh the existing catalogue only when this method's namespace changed.
+    """
+    copies = {}
+    for path in sorted(PACKAGES_DIR.rglob("*.md")):
+        if path.name.lower().startswith("readme") or path.name.lower() == "references.md":
+            continue
+        relative = path.relative_to(PACKAGES_DIR).as_posix()
+        try:
+            safe = _safe_resolve(PACKAGES_DIR, relative)
+        except ValueError:
+            continue  # excluded by the normal loader's path sandbox too
+        if _current_metadata(safe, required_name="workflow-base").get("name") == "workflow-base":
+            if safe.stat().st_size > MAX_FILE_BYTES:
+                raise ToolInputError("workflow-base file is too large")
+            meta, body = _parse_frontmatter(safe.read_text(encoding="utf-8"), source=relative)
+            if meta.get("name") != "workflow-base":
+                raise ToolInputError("workflow-base source identity changed during the read; retry")
+            if needs_sources(meta):
+                raise ToolInputError("workflow-base is held from publication: status: needs_sources")
+            copies[relative] = (meta, sha256(body.encode("utf-8")).digest())
+    if not copies:
+        raise ToolInputError("workflow-base not found in the current source namespace")
+    if len({digest for _meta, digest in copies.values()}) != 1:
+        raise ToolInputError("workflow-base is ambiguous: current packaged copies differ")
+    previous = _catalogue()[0].get("workflow-base")
+    if (previous is None or set(copies) != set(previous["publication_paths"])
+            or copies.get(previous["relpath"], (None,))[0] != previous["metadata"]):
+        _catalogue.cache_clear()
+    rec, body = _read_skill("workflow-base")
+    if sha256(body.encode("utf-8")).digest() != next(iter(copies.values()))[1]:
+        raise ToolInputError("workflow-base changed during the read; retry")
+    return rec, body
+
+
 def _workflow_context(loaded: tuple[dict[str, Any], str] | None = None) -> dict[str, Any]:
     """Fresh method proof, not a claim that the client has loaded/read its body."""
     try:
-        rec, body = loaded if loaded is not None else _read_skill("workflow-base")
+        rec, body = loaded if loaded is not None else _read_workflow()
     except (OSError, ValueError) as exc:
         return {"status": "unavailable", "slug": "workflow-base", "reason": str(exc)}
     return {
@@ -790,7 +864,7 @@ def get_skill(slug: str) -> dict[str, Any]:
     Args:
         slug: Skill slug exactly as returned by list_skills (e.g. "malta-income-tax").
     """
-    rec, body = _read_skill(slug)
+    rec, body = _read_workflow() if slug == "workflow-base" else _read_skill(slug)
     return _with_workflow({
         "slug": rec["slug"],
         "title": rec["title"],
