@@ -24,8 +24,8 @@ type: computation
 | Jurisdiction | Massachusetts (US-MA) |
 | Tax authority | [Massachusetts Department of Revenue](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
 | Portal | [MassTaxConnect](https://mtc.dor.state.ma.us/mtc/_/) |
-| Law | M.G.L. c. 62 (taxation of incomes), c. 62B (withholding and estimates), c. 62C (administration) |
-| Main form | Form 1 (resident return); Form 1-ES (estimates) |
+| Law | [M.G.L. c. 62](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section4) (taxation of incomes), c. 62B (withholding and estimates), c. 62C (administration) |
+| Main form | Form 1 (resident return); [Form 1-ES](https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download) (estimates) |
 
 Covers full-year residents filing Form 1: wage earners, sole proprietors and owners of single-member LLCs disregarded for federal tax whose Schedule C profit lands in Part B. Covers the 4% surtax for every chapter 62 taxpayer, and the credit a member claims for a pass-through entity excise paid on their behalf.
 
@@ -115,19 +115,19 @@ Total tax is entered on Form 1 with the surtax shown separately. Taxpayers subje
 
 | Missing fact | Default | Why |
 | --- | --- | --- |
-| Holding period of a gain | Treat as short-term (8.5%) until shown otherwise | The higher rate, so no understatement |
+| Holding period of a gain | Treat as short-term (8.5%, [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates)) until shown otherwise | The higher rate, so no understatement |
 | Rent receipts | No rent deduction | The deduction needs rent actually paid on a principal residence |
-| FICA withheld | Use the Form W-2 boxes 4 and 6 total, capped at $2,000 | The cap applies per taxpayer |
+| FICA withheld | Use the Form W-2 boxes 4 and 6 total, capped at $2,000 ([M.G.L. c. 62, s. 3](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section3)) | The cap applies per taxpayer |
 | Whether income tops the threshold | Run the surtax step anyway | The surtax also changes the extension and estimate rules |
 
 ### Red flags to raise with the client
 
 | Flag | Why it matters |
 | --- | --- |
-| One large gain in 2026 | Can push taxable income over $1,107,750; consider timing (worked case 2) |
+| One large gain in 2026 | Can push taxable income over $1,107,750 ([DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000)); consider timing (worked case 2) |
 | Gaps in health coverage | Schedule HC penalty, which needs a reviewer |
 | Income from another state | Other jurisdiction credit worksheets apply; surtax interaction |
-| Bonus near year end for a high earner | Withholding at 9% may still leave the surtax underpaid |
+| Bonus near year end for a high earner | Withholding at 9% ([DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000)) may still leave the surtax underpaid |
 
 ## Worked cases
 
