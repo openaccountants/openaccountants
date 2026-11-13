@@ -1,18 +1,18 @@
 ---
 name: texas-sales-tax
-description: "Use this skill whenever asked about Texas sales and use tax, Comptroller filings, Texas tax permits, Texas exemptions, Texas nexus, or any request involving Texas state sales and use tax compliance. Trigger on phrases like \"Texas sales tax\", \"TX sales tax\", \"Comptroller\", \"Texas use tax\", \"Texas sales tax return\", \"Texas exemption certificate\", or any request involving Texas sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Texas sales tax work."
+description: "Texas sales and use tax for 2026, from the Texas Comptroller of Public Accounts and Tax Code Chapter 151. Covers the 6.25% state rate and up to 2% local tax (8.25% maximum), local sourcing by place of business, the $500,000 remote seller safe harbor and the 1.75% single local use tax rate, marketplace providers, taxable services including the 80% base for data processing and SaaS, resale and exemption certificates (Form 01-339), the manufacturing exemption, occasional sales, use tax, monthly, quarterly and yearly filing on Form 01-114, the 0.5% timely filing and 1.25% prepayment discounts, penalties and 2026 interest at 7.75%. Trigger on \"Texas sales tax\", \"TX sales tax\", \"Comptroller\", \"Texas use tax\", \"Form 01-114\", \"Texas sales tax permit\", \"Texas resale certificate\", \"Texas SaaS tax\". Not franchise tax."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/texas-sales-tax"
   jurisdiction: "US-TX"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-13"
 ---
 
-# Texas sales and use tax: 2026 rates, sourcing, nexus, exemptions and filing
+# Texas sales and use tax, tax year 2026
 
-Figures are for tax year 2026, as they stand on 25 September 2026. They come from the Texas Comptroller of Public Accounts at comptroller.texas.gov. Texas has no state personal income tax, but it does have sales and use tax (this skill) and a franchise tax on businesses (not covered here). A short section at the end covers 2025 periods.
+Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Public Accounts (comptroller.texas.gov) and Texas Tax Code Chapter 151 (statutes.capitol.texas.gov). Texas has no state personal income tax; it has sales and use tax (this skill) and a franchise tax on businesses (`tx-margin-tax`). This skill replaces the older `tx-sales-tax` and `tx-sales-use-tax` files.
 
 ## Scope and who this is for
 
@@ -32,11 +32,12 @@ Figures are for tax year 2026, as they stand on 25 September 2026. They come fro
 - Does it hold a permit for each place of business, and what filing frequency has the Comptroller assigned?
 - Does it hold a properly completed Form 01-339 from each exempt or reselling customer? Has it bought taxable items for use in Texas without paying Texas tax?
 - Were any returns late? Did it pay $10,000 or more in the preceding state fiscal year ([electronic payment](https://comptroller.texas.gov/taxes/file-pay/texnet-faq.php))?
+- Is the business an occasional seller (one or two retail sales in 12 months, not habitually selling)? Does it sell computer programs, custom or off the shelf? Does it buy farm or timber items tax free?
 
 ## The method, step by step
 
 1. **Decide whether the seller must hold a permit.** A business engaged in business in Texas (physical presence, representatives, services performed here, or any of the other tests in [Publication 94-108](https://comptroller.texas.gov/taxes/publications/94-108.php)) must hold a permit before selling. A remote seller with no physical presence must get one once its total Texas revenue for the preceding 12 calendar months is outside the $500,000 safe harbor ([remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)).
-2. **Classify each sale.** Tangible personal property is taxable unless an exemption applies. Services are taxable only if they fall in one of the categories listed in Tax Code Section 151.0101 ([Publication 96-259](https://comptroller.texas.gov/taxes/publications/96-259.php)). Data processing (including SaaS) and information services are taxed on 80% of the charge.
+2. **Classify each sale.** Tangible personal property is taxable unless an exemption applies. Services are taxable only if they fall in one of the categories listed in Tax Code Section 151.0101 ([Publication 96-259](https://comptroller.texas.gov/taxes/publications/96-259.php)). Data processing (including SaaS) and information services are taxed on 80% of the charge (Tax Code Section 151.351 exempts 20%). Computer programs are tangible personal property ([Tax Code Section 151.009](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)), whether canned or custom.
 3. **Check exemption paperwork.** Resale and exempt sales need a properly completed Form 01-339 in the seller's records. Federal and Texas government buyers are exempt by law; nonprofits only once the Comptroller has granted exempt status.
 4. **Find the rate.** The state rate is 6.25%. Add local tax (city, county, special purpose district, transit) of up to 2%, for a combined maximum of 8.25% ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/)). Use the sourcing rules below to decide which location's local tax applies.
 5. **Charge tax on the full sales price**, including delivery and shipping charges on taxable items ([collection FAQ](https://comptroller.texas.gov/taxes/sales/faq/collection.php)). State the tax separately on the invoice unless the tax-included notice and sign rules are met.
@@ -44,16 +45,14 @@ Figures are for tax year 2026, as they stand on 25 September 2026. They come fro
 7. **File and pay by the 20th** of the month after the period (the next business day if the 20th is a weekend or legal holiday), even with nothing to report. Take the 0.5% timely filing discount only if you file and pay on time ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/)).
 8. **Keep records for at least four years**, including every resale and exemption certificate ([records FAQ](https://comptroller.texas.gov/taxes/sales/faq/records.php)).
 
-## Rates, sourcing and thresholds for 2026
-
-### Rates ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [Publication 94-105](https://comptroller.texas.gov/taxes/publications/94-105.php))
+### Rates, bands and thresholds ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [Publication 94-105](https://comptroller.texas.gov/taxes/publications/94-105.php))
 
 | Item | 2026 value | Condition |
 | --- | --- | --- |
-| State sales and use tax | 6.25% | On retail sales, leases and rentals of most goods and on taxable services |
-| Local sales and use tax | Up to 2% in total | Cities, counties, special purpose districts and transit authorities combined |
-| Maximum combined rate | 8.25% | "The local tax due cannot be more than 2 percent, so the most tax you can collect is 8.25 percent" |
-| Use tax | Same rates as sales tax | State use tax plus local use tax at the ship-to location |
+| State sales and use tax | 6.25% | On retail sales, leases and rentals of most goods and on taxable services ([source](https://comptroller.texas.gov/taxes/sales/)) |
+| Local sales and use tax | Up to 2% in total | Cities, counties, special purpose districts and transit authorities combined ([source](https://comptroller.texas.gov/taxes/sales/)) |
+| Maximum combined rate | 8.25% | "The local tax due cannot be more than 2 percent, so the most tax you can collect is 8.25 percent" ([source](https://comptroller.texas.gov/taxes/sales/)) |
+| Use tax | Same rates as sales tax | State use tax plus local use tax at the ship-to location ([source](https://comptroller.texas.gov/taxes/sales/)) |
 | Single local use tax rate (remote sellers only, by election) | 1.75% | Replaces destination local tax; not available to Texas-based sellers or marketplace providers ([remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 
 Local jurisdiction boundaries do not follow ZIP codes. Use the Comptroller's Sales Tax Rate Locator for the rate at a specific address.
@@ -86,13 +85,13 @@ A remote seller is an out-of-state seller whose only activity in Texas is remote
 
 | Rule | 2026 position |
 | --- | --- |
-| Safe harbor | No permit or collection is needed if total Texas revenue is less than $500,000 in the preceding 12 calendar months |
-| What counts | Gross revenue from taxable and nontaxable sales of goods and services into Texas, including separately stated handling, transportation and installation fees, sales for resale and sales to exempt entities. From 1 April 2020, marketplace sales count too, even when the marketplace provider collects the tax |
+| Safe harbor | No permit or collection is needed if total Texas revenue is less than $500,000 in the preceding 12 calendar months ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
+| What counts | Gross revenue from taxable and nontaxable sales of goods and services into Texas, including separately stated handling, transportation and installation fees, sales for resale and sales to exempt entities. From 1 April 2020, marketplace sales count too, even when the marketplace provider collects the tax ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 | Transaction count test | None |
-| Lookback | The preceding 12 calendar months, a rolling test |
-| Start date | Get a permit and begin collecting no later than the first day of the fourth month after the month the $500,000 safe harbor is exceeded |
-| Local tax | Destination local use tax at the ship-to address, or the single local use tax rate (1.75%) if elected on Form 01-799 |
-| Ending collection | Only after 12 consecutive months in which Texas revenue for the preceding 12 calendar months was less than $500,000, using the Comptroller's termination web form. Collection resumes on the first day of the second month after any 12 consecutive months with revenue over $500,000 |
+| Lookback | The preceding 12 calendar months, a rolling test ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
+| Start date | Get a permit and begin collecting no later than the first day of the fourth month after the month the $500,000 safe harbor is exceeded ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
+| Local tax | Destination local use tax at the ship-to address, or the single local use tax rate (1.75%) if elected on Form 01-799 ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
+| Ending collection | Only after 12 consecutive months in which Texas revenue for the preceding 12 calendar months was less than $500,000, using the Comptroller's termination web form. Collection resumes on the first day of the second month after any 12 consecutive months with revenue over $500,000 ([source](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 
 **Exactly $500,000: check.** The Comptroller's pages do not agree. The remote sellers page and FAQ give the safe harbor as revenue "less than $500,000", and the permit FAQ and Publication 94-105 say a permit is needed at "$500,000 or more". Publication 94-108 instead says "greater than $500,000". On most of the wording, a seller at exactly $500,000 is outside the safe harbor. Because Publication 94-108 reads the other way, get written confirmation from the Comptroller before relying on either reading.
 
@@ -108,12 +107,18 @@ A remote seller is an out-of-state seller whose only activity in Texas is remote
 
 ### Filing frequency and electronic payment ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [TEXNET FAQ](https://comptroller.texas.gov/taxes/file-pay/texnet-faq.php))
 
-- **Frequency.** The Comptroller tells each new permit holder by letter whether it files monthly or quarterly. Yearly filers also exist. Follow the frequency on the account; call 800-252-5555 if unsure.
+- **Frequency.** The Comptroller tells each new permit holder by letter whether it files monthly or quarterly, and follow the frequency on the account (800-252-5555 if unsure). The statute sets the bands ([Tax Code Sections 151.401 and 151.405](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)):
+
+| Liability | Frequency | Rule |
+| --- | --- | --- |
+| Less than $500 a month or $1,500 a calendar quarter | Quarterly | Section 151.401(b); due the 20th after the quarter ([Tax Code Chapter 151](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| Otherwise | Monthly | Section 151.401(a); due the 20th of the next month ([Tax Code Chapter 151](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| A period other than monthly, set by the Comptroller | Yearly (or other) | Section 151.405; yearly returns are due 20 January ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/)) |
 - **Electronic payment.** Taxpayers who paid $10,000 or more in a payment category in the preceding state fiscal year must pay electronically (TEXNET, Webfile, EDI or credit card). The Comptroller notifies them at least 60 days before the due date. Those who paid $500,000 or more must pay by TEXNET.
 - **Electronic filing.** The TEXNET FAQ says certain tax types must be filed electronically if more than $50,000 was paid in the prior fiscal year; check the Comptroller's thresholds page for sales tax.
 - **Penalty.** Payments that do not meet the electronic payment requirement carry a 5% penalty for each filing period.
 
-## What is taxable: boundary and exception table
+## Boundary and exception table
 
 ### Taxable services ([Publication 96-259, Taxable Services](https://comptroller.texas.gov/taxes/publications/96-259.php))
 
@@ -121,15 +126,15 @@ Only the services in Tax Code Section 151.0101 are taxable. Services not on the 
 
 | Service | Treatment | Condition or exception |
 | --- | --- | --- |
-| Data processing, including SaaS and application service providers | Taxable on 80% of the charge (20% exempt) | Word processing, data entry, storage, manipulation, web hosting and site maintenance, backup, check preparation, payables and receivables. Using a computer as a tool for a professional service (for example, preparing tax returns or original architectural plans) is not data processing |
+| Data processing, including SaaS and application service providers | Taxable on 80% of the charge (20% exempt) | Word processing, data entry, storage, manipulation, web hosting and site maintenance, backup, check preparation, payables and receivables. Using a computer as a tool for a professional service (for example, preparing tax returns or original architectural plans) is not data processing ([source](https://comptroller.texas.gov/taxes/publications/96-259.php)) |
 | Information services | Taxable on 80% of the charge (20% exempt) | Newsletters, database subscriptions, market reports, mailing lists. Not taxable when sold to FCC-licensed radio or TV stations or to newspapers published daily, weekly or at other short intervals. Polygraph tests, seminars and medical lab tests are not taxable ([Publication 94-109](https://comptroller.texas.gov/taxes/publications/94-109.php)) |
 | Real property services | Taxable, residential and nonresidential | Landscaping and lawn care, garbage collection, building or grounds cleaning and janitorial, structural pest control, surveying. Not taxable when bought by a homebuilder for a new residential structure, with certification ([Publication 94-157](https://comptroller.texas.gov/taxes/publications/94-157.php)) |
 | Household services by a self-employed individual | Not taxable | Only traditional household services (housekeeping, babysitting, cooking) by a person who is the household's employee and not a subcontractor for a maid service. Pool cleaning is still taxable ([Publication 94-111](https://comptroller.texas.gov/taxes/publications/94-111.php)) |
 | Nonresidential real property repair, restoration or remodeling | Taxable on labor and materials | Excludes adding new usable square footage and scheduled periodic maintenance. Property used as a family dwelling (including apartments, nursing homes and retirement homes) is not nonresidential |
 | Residential repair and remodeling | Labor not on the taxable list | Under a separated contract, collect tax on the separately stated materials at the job site ([Publication 94-105](https://comptroller.texas.gov/taxes/publications/94-105.php)) |
 | Personal property maintenance, repair and remodeling | Taxable | For example appliance, jewelry and furniture repair, dog grooming |
-| Amusement, cable television, credit reporting, debt collection, insurance services, parking and storage, security, telecommunications, telephone answering, laundry and cleaning | Taxable | Each has its own conditions in Publication 96-259 and the Comptroller rules |
-| Internet access | Not taxable when separately stated | Removed from the taxable list effective 1 July 2025 (SB 1405). Taxable when bundled with a taxable service unless the provider can support an allocation |
+| Amusement, cable television, credit reporting, debt collection, insurance services, parking and storage, security, telecommunications, telephone answering, laundry and cleaning | Taxable | Each has its own conditions in Publication 96-259 and the Comptroller rules ([source](https://comptroller.texas.gov/taxes/publications/96-259.php)) |
+| Internet access | Not taxable when separately stated | Removed from the taxable list effective 1 July 2025 (SB 1405). Taxable when bundled with a taxable service unless the provider can support an allocation ([source](https://comptroller.texas.gov/taxes/publications/96-259.php)) |
 
 **Mixed charges** ([Publication 94-127](https://comptroller.texas.gov/taxes/publications/94-127.php)):
 
@@ -138,16 +143,26 @@ Only the services in Tax Code Section 151.0101 are taxable. Services not on the 
 - **More than 5%.** The whole charge is taxable unless the charges are shown separately (the nontaxable share can later be proved with documents). Travel expenses passed on are part of the taxable price.
 - **Multi-state use.** Only the part used in Texas is taxable. A multi-state customer can give an exemption certificate and accrue Texas tax on its Texas share, using a reasonable allocation supported by its records.
 
+### Software, agricultural items and occasional sales ([Tax Code Chapter 151](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm); [Publication 96-259](https://comptroller.texas.gov/taxes/publications/96-259.php))
+
+| Item | Treatment | Condition |
+| --- | --- | --- |
+| Computer programs, canned or custom | Taxable as tangible personal property | Section 151.009 includes "a computer program" in tangible personal property, with no exclusion for custom programs. The older files said custom software is exempt; that is wrong. Detailed licensing questions: refer ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| SaaS and hosted software | Data processing, taxable on 80% | See the services table above ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| Web hosting | Data processing, taxable on 80% | Listed as data processing in Publication 96-259 ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| Occasional sale | Exempt | One or two retail sales of taxable items (not amusement services) in a 12-month period by a person not habitually selling, or the sale of the entire operating assets of a business or a separate division (Section 151.304) ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| Agricultural and timber items | Exempt only with an Ag/Timber Number | Section 151.316; the buyer gives Form 01-924, not Form 01-339. Refer for detail ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+
 ### Goods: selected points ([Publication 96-280](https://comptroller.texas.gov/taxes/publications/96-280.php))
 
 | Item | Treatment | Condition |
 | --- | --- | --- |
 | Food products (flour, sugar, bread, milk, eggs, fruit, vegetables) | Not taxable | Prepared food, hot food, and food sold with eating utensils are taxable |
-| Soft drinks, candy and gum | Taxable | Drinks with milk or more than 50% juice are not soft drinks |
+| Soft drinks, candy and gum | Taxable | Drinks with milk or more than 50% juice are not soft drinks ([source](https://comptroller.texas.gov/taxes/publications/96-280.php)) |
 | Ice | Taxable | Includes dry ice |
 | Prescription drugs | Not taxable | A drug or medicine without a Drug Facts label is exempt only if a physician prescribes or dispenses it. Drugs and medicines for animals are exempt only when bought with a veterinarian's prescription; other nonprescription animal drugs are taxable ([Publication 94-155](https://comptroller.texas.gov/taxes/publications/94-155.php)) |
 | Over-the-counter drugs and dietary supplements | Not taxable | Drugs must carry an FDA Drug Facts panel, and only OTC drugs designed for humans qualify; supplements a Supplement Facts panel (or meet the other listed tests). CBD products do not qualify |
-| Books and magazines | Taxable | Newspapers are exempt only if they meet all of Publication 96-280's tests |
+| Books and magazines | Taxable | Newspapers are exempt only if they meet all of Publication 96-280's tests ([source](https://comptroller.texas.gov/taxes/publications/96-280.php)) |
 | Clothing and footwear | Taxable, except during the August sales tax holiday | During the holiday, each eligible item sold for less than $100 is exempt. Athletic or protective clothing, clothing subscription boxes, rentals and accessories do not qualify ([Publication 98-490](https://comptroller.texas.gov/taxes/publications/98-490/)) |
 
 ### Resale and exemption certificates: Form 01-339 ([resale FAQ](https://comptroller.texas.gov/taxes/sales/faq/resale.php); [Form 01-339](https://comptroller.texas.gov/forms/01-339.pdf))
@@ -184,7 +199,43 @@ The agricultural and timber exemptions need a separate registration number and a
 - **Return.** Report these sales in Item 1 (Total Texas Sales) but not in Item 2 (Taxable Sales) ([Form 01-922](https://comptroller.texas.gov/forms/01-922.pdf)). Check whether the destination state requires you to collect its tax.
 - **Exports outside the United States.** No Texas tax is due if the seller keeps proof (a licensed customs broker export certification, foreign import documents, or a qualifying bill of lading). If the customer takes delivery in Texas, tax is due; the seller may refund it against proof of export, kept for four years.
 
-## Worked cases ([Publication 94-105](https://comptroller.texas.gov/taxes/publications/94-105.php); [Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/))
+### Exempt customers: what to keep and how to report ([Publication 96-122](https://comptroller.texas.gov/taxes/publications/96-122.php); [audit manual, chapter 5](https://comptroller.texas.gov/taxes/audit/manuals/fundamentals/ch5.php))
+
+| Buyer or sale | Treatment | Keep | On the return |
+| --- | --- | --- | --- |
+| Federal government | Exempt on qualifying purchases | Form 01-339 or a purchase voucher in the entity's name | Item 1, not Item 2 ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Texas state or local government, public schools | Exempt on qualifying purchases | Form 01-339 or a government purchase voucher | Item 1, not Item 2 ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Private school, college, church, charity or other nonprofit | Exempt only with Comptroller exempt status | Form 01-339 in the organization's name | Item 1, not Item 2, only with support ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Federally recognized tribal council or a business it owns | Exempt as a federal instrumentality; individual members are not | Documentation naming the tribal entity | Item 1, not Item 2, entity purchases only ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Farm, ranch or timber production | Exempt only for qualifying items | Form 01-924 with the Ag/Timber Number | Item 1, not Item 2, documented items only ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Resale | Exempt | Form 01-339 resale side with the buyer's permit number | Item 1, not Item 2 ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Shipped out of Texas | Not subject to Texas tax | Shipping records, bill of lading, delivery address, invoice | Item 1, not Item 2 ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+
+There is no separate deduction line on the basic return: the audit reconciles deductions as Item 1 minus Item 2, so keep certificates and shipping records transaction by transaction.
+
+### Defaults when a fact is missing
+
+| Missing fact | Default |
+| --- | --- |
+| No Form 01-339 for an exempt or resale sale | Treat the sale as taxable; sales without a certificate are presumed taxable on audit ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Remote seller's revenue unknown | Assume above the $500,000 safe harbor until the 12-month total is computed ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Local rate unknown | Use the Comptroller's Sales Tax Rate Locator for the address; never a ZIP code |
+| Filing frequency unknown | Follow the Comptroller's letter or account; do not choose one |
+| Mixed service charge not separately stated | Whole charge taxable if the taxable part is more than 5% ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+
+### Red flags to raise with the client
+
+| Sign | Why it matters |
+| --- | --- |
+| A customer quotes a "tax exempt number" | Form 01-339 says these numbers do not exist; get a completed certificate ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| A nonprofit buyer without a Comptroller exemption letter | Nonprofits are not exempt by status alone |
+| Remote sales near $500,000 | The Comptroller's pages disagree at exactly $500,000; get written confirmation ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| A Texas-based seller selling only on marketplaces with no permit | A Texas-based seller always needs a permit and must file |
+| Zero returns not filed | A $50 penalty applies to each late return even with no tax due ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Prepayment discount claimed without a timely prepayment | The 1.25% is lost and the shortfall is due with penalty ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+
+
+## Worked cases
 
 The amounts are illustrations. The local rates in case 1 are the ones given in Publication 94-105's own example.
 
@@ -197,6 +248,44 @@ The amounts are illustrations. The local rates in case 1 are the ones given in P
 7. **Prepayment.** A monthly filer owes $2,500 for February 2026, due 20 March 2026. Last year's February tax was $1,700. To earn the extra 1.25% prepayment discount, it must prepay a reasonable estimate by the February prepayment date (the 15th, moved to 17 February in 2026 on the due dates chart): at least 90% of this period's tax ($2,250) or 100% of the same period last year ($1,700) ([prepayment FAQ](https://comptroller.texas.gov/taxes/sales/faq/report-pay.php)).
 8. **Late return.** A monthly filer owes $2,000 for September 2026, due 20 October 2026. It files and pays on 5 December 2026, 46 days late. The penalty is 10%, or $200.00, plus the $50 late filing penalty: $250.00, and no discount. No interest is due, because interest starts on the 61st day after the due date ([penalties](https://comptroller.texas.gov/taxes/file-pay/penalties.php)).
 9. **Divergent use of manufacturing equipment.** A manufacturer bought a machine for $48,000 with Form 01-339 where the rate was 8.25%. Within its first four years, in one month it runs the machine 10% of its hours on non-manufacturing work. Tax due for that month is 1/48 × $48,000 × 10% × 8.25% = $8.25. At 5% or less divergent use, nothing would be due ([Publication 94-124](https://comptroller.texas.gov/taxes/publications/94-124.php)).
+
+### Checked cases
+
+**Delivery from the Navarro County store (case 1 recomputed).** $1,100 taxable (table plus delivery). Into Ennis the local total is 0.5% + 1.5% = 2%, so 8.25% in all. Into Waxahachie the 2% city tax would take local tax over 2%, so only state and county apply, 6.75%.
+
+```oa-check
+name: TX local use tax under the 2% cap, Navarro County store (2026)
+inputs:
+  price: 1100
+  state: 0.0625
+  county: 0.005
+  ennis_city: 0.015
+steps:
+  - ennis_tax: price * (state + county + ennis_city)
+  - waxahachie_tax: price * (state + county)
+  - difference: ennis_tax - waxahachie_tax
+expected:
+  ennis_tax: 90.75
+  waxahachie_tax: 74.25
+  difference: 16.50
+```
+
+**Decision: prepay or not.** A monthly filer expects $2,500 of tax for a month and can prepay the full estimate by the 15th. Filing and paying on time without prepaying earns 0.5%, $12.50. Prepaying adds 1.25% of the prepayment, $31.25, for $43.75 in all ([Tax Code Sections 151.423 and 151.424](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)). Prepay if cash allows: the extra $31.25 is the figure that decides it, and it is lost if any prepayment condition is missed.
+
+```oa-check
+name: TX prepayment decision, monthly filer (2026)
+inputs:
+  tax: 2500
+  prepayment: 2500
+steps:
+  - discount_no_prepay: tax * 0.005
+  - discount_prepay: tax * 0.005 + prepayment * 0.0125
+  - extra_from_prepaying: discount_prepay - discount_no_prepay
+expected:
+  discount_no_prepay: 12.50
+  discount_prepay: 43.75
+  extra_from_prepaying: 31.25
+```
 
 ## When to refuse or refer
 
@@ -225,10 +314,10 @@ Returns are due on the 20th of the month after the period. If the 20th is a Satu
 
 | Filer | 2026 due dates |
 | --- | --- |
-| Monthly | 20 Jan, 20 Feb, 20 Mar, 20 Apr, 20 May, 22 Jun, 20 Jul, 20 Aug, 21 Sep, 20 Oct, 20 Nov, 21 Dec |
-| Quarterly | Q4 2025 due 20 Jan; Q1 due 20 Apr; Q2 due 20 Jul; Q3 due 20 Oct. Q4 2026 is due 20 January 2027 (check the 2027 chart for weekend or holiday shifts) |
-| Yearly | Returns for the previous year are due 20 January |
-| Sales tax prepayments | 15 Jan, 17 Feb, 16 Mar, 15 Apr, 15 May, 15 Jun, 15 Jul, 17 Aug, 15 Sep, 15 Oct, 16 Nov, 15 Dec |
+| Monthly | 20 Jan, 20 Feb, 20 Mar, 20 Apr, 20 May, 22 Jun, 20 Jul, 20 Aug, 21 Sep, 20 Oct, 20 Nov, 21 Dec ([source](https://comptroller.texas.gov/taxes/file-pay/due-dates.php)) |
+| Quarterly | Q4 2025 due 20 Jan; Q1 due 20 Apr; Q2 due 20 Jul; Q3 due 20 Oct. Q4 2026 is due 20 January 2027 (check the 2027 chart for weekend or holiday shifts) ([source](https://comptroller.texas.gov/taxes/file-pay/due-dates.php)) |
+| Yearly | Returns for the previous year are due 20 January ([source](https://comptroller.texas.gov/taxes/file-pay/due-dates.php)) |
+| Sales tax prepayments | 15 Jan, 17 Feb, 16 Mar, 15 Apr, 15 May, 15 Jun, 15 Jul, 17 Aug, 15 Sep, 15 Oct, 16 Nov, 15 Dec ([source](https://comptroller.texas.gov/taxes/file-pay/due-dates.php)) |
 
 Mailed checks must be postmarked by the due date. TEXNET payments above $1,000,000 must be started by 8 p.m. CT on the banking business day before the due date.
 
@@ -246,8 +335,8 @@ Mailed checks must be postmarked by the due date. TEXNET payments above $1,000,0
 
 | Discount | 2026 rate | Conditions |
 | --- | --- | --- |
-| Timely filing | 0.5% of the tax timely reported and paid | Return and payment both on time. The Comptroller's pages and return instructions state no dollar cap |
-| Prepayment | 1.25%, in addition to the 0.5% | Monthly or quarterly filers only. Prepay a reasonable estimate (at least 90% of the current period's tax, or at least 100% of the tax for the same period last year) by the 15th of the month (monthly) or the 15th of the second month of the quarter (quarterly); file a prepayment report if paying by mail; file the return by its due date and pay the balance |
+| Timely filing | 0.5% of the tax timely reported and paid | Return and payment both on time. Tax Code Section 151.423 and the Comptroller's pages state no dollar cap (the older files' $500 cap was wrong) ([source](https://comptroller.texas.gov/taxes/sales/)) |
+| Prepayment | 1.25%, in addition to the 0.5% | Monthly or quarterly filers only. Prepay a reasonable estimate (at least 90% of the current period's tax, or at least 100% of the tax for the same period last year) by the 15th of the month (monthly) or the 15th of the second month of the quarter (quarterly); file a prepayment report if paying by mail; file the return by its due date and pay the balance ([source](https://comptroller.texas.gov/taxes/sales/)) |
 
 The prepayment discount applies only if all prepayment requirements are met and the return and any additional payment are on time.
 
@@ -255,24 +344,24 @@ The prepayment discount applies only if all prepayment requirements are met and 
 
 | Charge | 2026 rule |
 | --- | --- |
-| Late payment, 1 to 30 days | 5% of the tax |
-| Late payment, more than 30 days | 10% of the tax |
-| Paid after the date on a Notice of Tax Due | A further 10%, for a total of 20% |
-| Late return | $50 for each return filed after the due date, even if no tax is due |
-| Interest | Starts on the 61st day after the due date. The rate is prime plus 1%: 7.75% for 2026 (8.50% for 2025). Interest = tax × rate × days ÷ 365 (366 in a leap year) |
-| Not paying electronically when required | 5% for each filing period |
+| Late payment, 1 to 30 days | 5% of the tax ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
+| Late payment, more than 30 days | 10% of the tax ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
+| Paid after the date on a Notice of Tax Due | A further 10%, for a total of 20% ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
+| Late return | $50 for each return filed after the due date, even if no tax is due ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
+| Interest | Starts on the 61st day after the due date. The rate is prime plus 1%: 7.75% for 2026 (8.50% for 2025). Interest = tax × rate × days ÷ 365 (366 in a leap year) ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
+| Not paying electronically when required | 5% for each filing period ([source](https://comptroller.texas.gov/taxes/file-pay/penalties.php)) |
 | Failure to collect | The seller owes the tax it should have collected, plus penalties and interest ([local tax FAQ](https://comptroller.texas.gov/taxes/sales/faq/local.php)) |
 
 The Comptroller's own interest example: $1,000 owed at 7.75% for 150 days gives $31.85 of interest. Continued non-payment can lead to liens, permit suspension, asset seizure and criminal charges. Missing records can lead to an estimated assessment; keep them at least four years, and longer during an audit, appeal or refund claim ([records FAQ](https://comptroller.texas.gov/taxes/sales/faq/records.php)).
 
-## 2025 periods (for amended or audited 2025 returns) ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [interest](https://comptroller.texas.gov/taxes/file-pay/interest.php))
+### 2025 periods (amended or audited 2025 returns)
 
 - **Unchanged.** The Comptroller's current pages describe the rates, the 2% local cap, the $500,000 safe harbor, the discounts and the late penalties as standing rules, with no 2026 change.
 - **Interest.** Tax due in 2025 carries interest at 8.50%.
 - **Internet access.** Separately stated internet access has not been taxed since 1 July 2020; SB 1405 removed it from the taxable services list from 1 July 2025 ([Publication 96-259](https://comptroller.texas.gov/taxes/publications/96-259.php)).
 - **Due dates.** Use the 2025 due dates chart for weekend and holiday shifts.
 
-## Completion checklist ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/))
+## Completion checklist
 
 - [ ] Nexus decided: engaged in business in Texas, or a remote seller outside the $500,000 safe harbor (all channels, including marketplace, exempt and resale sales); exactly $500,000 confirmed with the Comptroller.
 - [ ] Permit held for each place of business (remote sellers: by the first day of the fourth month after crossing); marketplace certifications on file.
@@ -281,10 +370,40 @@ The Comptroller's own interest example: $1,000 owed at 7.75% for 150 days gives 
 - [ ] Form 01-339 held for every resale and exempt sale, kept for four years; no reliance on "exemption numbers".
 - [ ] Manufacturing exemptions limited to qualifying items; divergent use tracked monthly.
 - [ ] Use tax accrued in Item 3.
+- [ ] Computer programs, canned or custom, treated as taxable goods; occasional sales tested against Section 151.304.
+- [ ] Filing frequency matches the Comptroller's assignment (quarterly only under $1,500 a quarter).
 - [ ] Return filed and paid by the 20th (or the next business day), including zero returns; paid electronically if required.
 - [ ] 0.5% discount only on timely returns; 1.25% prepayment discount only if every condition was met.
 - [ ] Any late period costed: 5% or 10% penalty, $50 per late return, interest from the 61st day at 7.75% for 2026.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Comptroller, Sales and Use Tax page. Read for 6.25%, up to 2% local, 8.25% maximum, due dates by frequency, 0.5% and 1.25% discounts. | https://comptroller.texas.gov/taxes/sales/ | 2026-11-13 |
+| Comptroller, 2026 due dates. Read for the 2026 Sales and Use Tax row (20, 20, 20, 20, 20, 22, 20, 20, 21, 20, 20, 21) and prepayments (15, 17, 16, 15, 15, 15, 15, 17, 15, 15, 16, 15). | https://comptroller.texas.gov/taxes/file-pay/due-dates.php | 2026-11-13 |
+| Comptroller, remote sellers. Read for the $500,000 safe harbor, the fourth-month start and the 1.75% single local use tax rate. | https://comptroller.texas.gov/taxes/sales/remote-sellers.php | 2026-11-13 |
+| Comptroller, remote seller and marketplace FAQ. Read for marketplace sales in the revenue test and return lines. | https://comptroller.texas.gov/taxes/sales/remote-sellers-marketplace-faq.php | 2026-09-25 |
+| Comptroller, marketplace providers and sellers. Read for provider duties and certification. | https://comptroller.texas.gov/taxes/sales/marketplace-providers-sellers.php | 2026-09-25 |
+| Comptroller, interest page. Read for 7.75% for 2026, 8.50% for 2025, interest from the 61st day and the $31.85 example. | https://comptroller.texas.gov/taxes/file-pay/interest.php | 2026-11-13 |
+| Comptroller, penalties page. Read for 5%, 10%, a further 10% after a Notice of Tax Due, and $50 per late report. | https://comptroller.texas.gov/taxes/file-pay/penalties.php | 2026-11-13 |
+| Comptroller, prepayment FAQ. Read for the 15th prepayment dates and the 90% or 100% reasonable estimate. | https://comptroller.texas.gov/taxes/sales/faq/report-pay.php | 2026-11-13 |
+| Comptroller, permit FAQ. Read for who needs a permit, AP-201, one permit per place of business. | https://comptroller.texas.gov/taxes/sales/faq/permit.php | 2026-11-13 |
+| Texas Tax Code Chapter 151. Read for 151.009 (computer program), 151.0101 (taxable services), 151.304 (occasional sales), 151.316 (agricultural items), 151.351 (20% exemption), 151.401 ($500 a month or $1,500 a quarter), 151.405, 151.423 (0.5%) and 151.424 (1.25%, 90%). | https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm | 2026-11-13 |
+| Publication 94-105, local sales and use tax collection. Read for place of business, sourcing, the 2% cap and the Navarro County example. | https://comptroller.texas.gov/taxes/publications/94-105.php | 2026-11-13 |
+| Publication 94-108, sales to Texas customers by out-of-state sellers. Read for engaged in business and the "greater than $500,000" wording. | https://comptroller.texas.gov/taxes/publications/94-108.php | 2026-11-13 |
+| Publication 96-259, taxable services. Read for the services list, data processing and SB 1405 on internet access. | https://comptroller.texas.gov/taxes/publications/96-259.php | 2026-11-13 |
+| Publication 94-127, data processing. Read for the 5% rule, separate statement and multi-state allocation. | https://comptroller.texas.gov/taxes/publications/94-127.php | 2026-11-13 |
+| Publication 96-280, grocery and convenience stores. Read for food, soft drinks, candy, drugs. | https://comptroller.texas.gov/taxes/publications/96-280.php | 2026-11-13 |
+| Publication 98-490, sales tax holiday. Read for the under $100 clothing rule. | https://comptroller.texas.gov/taxes/publications/98-490/ | 2026-11-13 |
+| Publication 96-122, nonprofit and exempt organizations. Read for government and nonprofit buyers. | https://comptroller.texas.gov/taxes/publications/96-122.php | 2026-09-25 |
+| Publication 94-124, manufacturing. Read for the exemption and divergent use. | https://comptroller.texas.gov/taxes/publications/94-124.php | 2026-09-25 |
+| Form 01-339, resale and exemption certificate. Read for the "exemption numbers do not exist" line. | https://comptroller.texas.gov/forms/01-339.pdf | 2026-09-25 |
+| Form 01-922, instructions for Form 01-114. Read for Items 1 to 3 and the discount. | https://comptroller.texas.gov/forms/01-922.pdf | 2026-09-25 |
+| Comptroller, exports FAQ and audit manual chapter 5. Read for interstate and export proof and Item 1 minus Item 2. | https://comptroller.texas.gov/taxes/sales/faq/oos-exports.php | 2026-09-25 |
+
+Not yet confirmed: the 2027 due dates chart (for Q4 2026 and yearly 2026 returns due January 2027) was not yet published when read; Rule 3.286 (34 TAC) was not opened because the Secretary of State rules site has moved, so frequency bands are taken from the statute; the exactly-$500,000 boundary is unresolved on the Comptroller's own pages.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `texas-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/texas-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `texas-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/texas-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
