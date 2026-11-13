@@ -135,6 +135,26 @@ Federal income tax payments, estimated or not, are not deductible on Schedule C 
 | Federally declared disaster with postponed deadlines | Use the postponed date the IRS announces for that area |
 | Fiscal-year individual | Installments due the 15th day of the 4th, 6th and 9th months of the fiscal year and the 1st month of the next |
 
+### Defaults when a fact is missing
+
+| Missing fact | Default |
+| --- | --- |
+| 2025 AGI | Use 110% of the 2025 tax until the 2025 return is seen |
+| Whether the 2025 return was filed | Use only the 90% current-year amount until filing is confirmed (no prior-year safe harbour without a filed 12-month return) |
+| Which quarter's underpayment rate applies | Use the rate published for that quarter on the IRS page; never extend a rate into an unpublished quarter |
+| W-2 withholding plus self-employment income | Compute both explicitly; never assume the W-2 withholding covers the self-employment tax |
+| Whether the annualized method helps | Start from equal installments and flag the annualized method for the reviewer if income is uneven |
+| Mid-year income uncertain | Annualize the income to date and recheck before each due date; label the result as an estimate |
+
+### Red flags
+
+| Sign | Why it matters |
+| --- | --- |
+| A large 2025 balance due on the return | The client probably underpaid 2025 too; check the 110% rule for 2026 |
+| Income up sharply in 2026 | The 90% route is risky; the prior-year route gives certainty |
+| A large gain or bonus late in 2026 | The annualized method may remove penalties on earlier installments |
+| Filing status changes between 2025 and 2026 | The 2025 tax must be combined or split before the 100% or 110% test |
+
 ## Worked cases
 
 **Case 1, a decision: pay by the prior-year safe harbour or by the current-year estimate?** A single freelancer had 2025 AGI of USD 180,000 and 2025 tax (as figured for line 12b) of USD 40,000. Business is growing and the 2026 tax is estimated at USD 60,000. There is no withholding.
