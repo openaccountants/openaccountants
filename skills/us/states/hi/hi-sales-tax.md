@@ -16,7 +16,7 @@ type: computation
 
 > **General reference only.** Built from the official sources identified below. Written by Codex. Not reviewed by an accountant. Obtain qualified professional review before filing, paying or taking a tax position.
 
-> **Circular 230 section 10.37:** Apply this material to the taxpayer's actual facts and the law for the relevant period, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of any federal tax implications. Federal computations belong to the linked federal Guides.
+> **Circular 230 section 10.37:** Apply this material to the taxpayer's actual facts and the law for the relevant period, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of any federal tax implications. Federal computations belong to the linked federal skills.
 
 **Answer first.** Hawaii's business tax is GET, imposed on the seller's gross receipts; it is not a conventional customer sales tax. The general state rate is 4% plus the applicable 0.5% county surcharge. All four counties currently impose that surcharge, including Maui from 2024. Wholesaling generally uses 0.5% and insurance commissions 0.15%, without county surcharge. Use tax tests purchases from unlicensed out-of-state sellers separately. Sources: [DOTAX GET information](https://tax.hawaii.gov/get/); [county surcharge](https://tax.hawaii.gov/geninfo/countysurcharge/).
 
@@ -57,7 +57,7 @@ The official 2025 brochures were read for the **2025-2026 filing cycle**; the li
 | Quarterly periodic return | Annual GET including surcharge over USD 2,000 and no more than USD 4,000 | [GET brochure, question 35](https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf) |
 | Monthly periodic return | Annual GET including surcharge over USD 4,000; e-file unless waiver | [GET brochure, question 35](https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf) |
 
-1. Test nexus. Local business, employees, inventory, representatives or in-state services may establish physical nexus independently of the remote thresholds. Count both receipts and transactions for economic nexus; the old Guide omitted the transaction limb. Apply for a GET account through **Hawaii Tax Online**, https://hitax.hawaii.gov/, using BB-1, and save the license/account number. Display the license; use G-50 for additional branches. Source: [registration and nexus](https://tax.hawaii.gov/get/).
+1. Test nexus. Local business, employees, inventory, representatives or in-state services may establish physical nexus independently of the remote thresholds. Count both receipts and transactions for economic nexus; the old skill omitted the transaction limb. Apply for a GET account through **Hawaii Tax Online**, https://hitax.hawaii.gov/, using BB-1, and save the license/account number. Display the license; use G-50 for additional branches. Source: [registration and nexus](https://tax.hawaii.gov/get/).
 2. Classify gross receipts by actual business activity. Start before business expenses; separate wholesale/manufacturing, retail/service/rent, insurance and use-tax imports. GET cascades: qualifying manufacturer/wholesaler receipts can bear the lower rate and the retail sale bears general GET. It is not a conventional resale-certificate exemption. Obtain the appropriate resale evidence. Source: [GET brochure, rates and business activities](https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf).
 3. Include any passed-on GET in taxable receipts. If a business wants to recover its general 4.5% liability in full, the exact gross-up is `pretax price / (1 - 0.045) - pretax price`; the visibly passed-on rate must stay within DOTAX's published maximum. With no surcharge, the analogous 4% gross-up is approximately 4.1667%; that is not the current four-county general pass-on rate. Source: [Maximum Pass-On Rates](https://tax.hawaii.gov/geninfo/countysurcharge/).
 4. Apply sourced exemptions/deductions with supporting documentation. General retail clothing, groceries and prepared food do not gain an exemption simply because they are necessities. Professional services, SaaS/digital licensing, equipment and other business activities require the applicable exemption test rather than a blanket exempt label. The old assertion that all medical services are invariably taxed must not override specific healthcare exemptions. Source: [What is Taxed and Exemptions](https://tax.hawaii.gov/get/). Unconfirmed product-specific exemptions are listed below.
@@ -125,7 +125,7 @@ expected:
 
 ## When to refuse or refer
 
-Refer unsupported wholesale status, healthcare/drug exemptions, exported services, marketplace facilitator allocation, construction deductions, mixed-county sourcing and disputed import credits. Lodging may also trigger separate transient accommodations tax; this Guide does not compute it. Do not treat GET as income tax or assume the seller must collect it from the buyer.
+Refer unsupported wholesale status, healthcare/drug exemptions, exported services, marketplace facilitator allocation, construction deductions, mixed-county sourcing and disputed import credits. Lodging may also trigger separate transient accommodations tax; this skill does not compute it. Do not treat GET as income tax or assume the seller must collect it from the buyer.
 
 ## Filing and payment
 

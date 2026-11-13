@@ -16,13 +16,13 @@ type: computation
 
 > **General reference only.** Built from the official sources identified below. Written by Codex. Not reviewed by an accountant. Obtain qualified professional review before filing, paying or taking a tax position.
 
-> **Circular 230 section 10.37:** Apply this material to the taxpayer's actual facts and the law for the relevant period, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of any federal tax implications. Federal computations belong to the linked federal Guides.
+> **Circular 230 section 10.37:** Apply this material to the taxpayer's actual facts and the law for the relevant period, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of any federal tax implications. Federal computations belong to the linked federal skills.
 
 **Answer first.** Hawaii taxes resident wages and business income. For 2026, standard deductions increase to USD 8,000 single/separate, USD 16,000 joint/surviving spouse and USD 12,000 head of household; the 2025 rate schedules continue. Compute Hawaii adjustments before applying the state deduction and exemptions. GET is a separate business tax: `hi-sales-tax`. State payroll is `hi-payroll`; corporate returns are `hi-corporate-tax`.
 
 ## Scope
 
-Full-year resident individuals use Form N-11. This includes ordinary W-2 wages and Schedule C profit of a sole proprietor or disregarded single-member LLC. Residents are taxed on all-source income. Nonresidents and part-year residents use N-15; detailed allocation is outside this Guide. Every individual doing business in Hawaii must file even if the business has no taxable income. Employee services alone are excluded from that special business-filing rule. Source: [2025 N-11 instructions, Who Must File and Residency Status](https://files.hawaii.gov/tax/forms/current/n11ins.pdf).
+Full-year resident individuals use Form N-11. This includes ordinary W-2 wages and Schedule C profit of a sole proprietor or disregarded single-member LLC. Residents are taxed on all-source income. Nonresidents and part-year residents use N-15; detailed allocation is outside this skill. Every individual doing business in Hawaii must file even if the business has no taxable income. Employee services alone are excluded from that special business-filing rule. Source: [2025 N-11 instructions, Who Must File and Residency Status](https://files.hawaii.gov/tax/forms/current/n11ins.pdf).
 
 2026 rates and deductions are confirmed by [DOTAX Announcement 2024-03, Tax Year 2026](https://files.hawaii.gov/tax/news/announce/ann24-03.pdf). Form-line references and ancillary return instructions below are the verified **2025-2026 filing cycle**, not a claim that a final 2026 N-11 has been read.
 
@@ -95,7 +95,7 @@ The schedules below use DOTAX's published whole-dollar base amounts. Below USD 1
 | Certified blind, deaf or totally disabled person | USD 7,000 instead of that person's regular exemptions; obtain certification and check spouse/dependent interaction | [HRS 235-54(c)](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
 | Estimated tax filing floor | Tax liability below USD 500 is excused from estimates | [HRS 235-97(a)(6)](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
 
-1. Start with federal AGI. For Schedule C, self-employment tax and associated federal adjustments, load `us-schedule-c-and-se-computation`; federal retirement, health insurance, home office and QBI figures belong to `us-self-employed-retirement`, `us-self-employed-health-insurance`, `us-qbi-deduction` and that computation Guide. Do not restate federal amounts.
+1. Start with federal AGI. For Schedule C, self-employment tax and associated federal adjustments, load `us-schedule-c-and-se-computation`; federal retirement, health insurance, home office and QBI figures belong to `us-self-employed-retirement`, `us-self-employed-health-insurance`, `us-qbi-deduction` and that computation skill. Do not restate federal amounts.
 2. Prepare Hawaii additions and subtractions. HRS 235-7(b)(2) generally includes other-state municipal interest unless specifically exempt; qualifying U.S. obligation interest is subtracted to the extent in federal AGI. Social Security and first-tier railroad benefits included federally are subtracted. Qualifying employer-funded pension distributions can be excluded; employee-funded deferred compensation and IRA distributions require tracing and are not automatically exempt. The reserve/Guard exclusion has its own pay-based cap. Sources: [HRS 235-7](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf); [N-11 instructions, lines 11 to 18](https://files.hawaii.gov/tax/forms/current/n11ins.pdf).
 3. Reconcile federal and Hawaii depreciation. The verified N-11 instructions do not adopt federal bonus depreciation; prepare separate state depreciation and gain schedules. Do not replace MACRS with an unsupported blanket straight-line rule. Self-employed health insurance, retirement and home-office items already in federal AGI are starting-point inputs, subject to Hawaii conformity and adjustments; they are not an unconditional no-add-back guarantee. Source: [N-11 instructions, other additions and depreciation](https://files.hawaii.gov/tax/forms/current/n11ins.pdf).
 4. Subtract allowable Hawaii itemized deductions or the 2026 standard deduction. Hawaii itemization is evaluated separately from the federal election; married-separate and dependent limitations matter. Then subtract personal exemptions, flooring taxable income at zero. The federal QBI deduction is below AGI and is not automatically a Hawaii deduction. Source: [N-11 instructions, lines 22 to 26](https://files.hawaii.gov/tax/forms/current/n11ins.pdf).
@@ -165,9 +165,9 @@ Late filing is 5% per month or part, maximum 25%; interest is two-thirds of 1% p
 
 ## Completion checklist
 
-- Resident N-11 versus N-15 established; employee income included even where the old Guide focused on self-employment.
+- Resident N-11 versus N-15 established; employee income included even where the old skill focused on self-employment.
 - 2026 deduction used, filing status verified and final-year form lines checked.
-- Federal/state depreciation, pension and municipal interest reconciled; federal figures loaded from their owner Guides.
+- Federal/state depreciation, pension and municipal interest reconciled; federal figures loaded from their owner skills.
 - Mandatory tax table used where applicable; credits and payment references documented.
 - Extension and estimated-payment tests applied separately from tax computation.
 
