@@ -17,7 +17,7 @@ type: computation
 
 **Answer first.** For 2026 a full-year Virginia resident starts from federal AGI, adds and subtracts on Schedule ADJ, takes the Virginia standard deduction of $8,750 (single) or $17,500 (joint) only if they did not itemize federally, subtracts $930 per exemption, and applies 2% on the first $3,000, 3% to $5,000, 5% to $17,000 and 5.75% above $17,000. The federal QBI deduction does not reach Virginia. Estimated payments are needed when 2026 tax after withholding and credits will be more than $1,000. Payroll withholding is in `va-payroll`; the PTET election itself is in `va-corporate-tax-and-bpol`.
 
-## Scope and who this is for ([2025 Form 760 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Scope and who this is for
 
 This skill covers the Virginia resident individual income tax return, **Form 760**, for **tax year 2026** (returns filed in 2027), with a dated section for **2025 returns** (still being filed on extension until November 2026). It is written for full-year Virginia residents, including sole proprietors and owners of a single-member LLC that is disregarded for federal tax, whose business profit reaches Virginia through federal adjusted gross income.
 
@@ -75,23 +75,23 @@ The figures below are grouped by topic, each with its source.
 
 #### Tax rates (all filing statuses; unchanged since 1990; same for 2025 and 2026) ([§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/))
 
-| Virginia taxable income | Tax |
-| --- | --- |
-| Not over $3,000 | 2% of taxable income |
-| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 |
-| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 |
-| Over $17,000 | $720 plus 5.75% of the excess over $17,000 |
+| Virginia taxable income | Tax | Source |
+| --- | --- | --- |
+| Not over $3,000 | 2% of taxable income | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $17,000 | $720 plus 5.75% of the excess over $17,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
 
 Source: Va. Code § 58.1-320 ("Five and three-quarters percent on income in excess of $17,000 for taxable years beginning on and after January 1, 1990"), https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/ , and the rate schedule in the 2025 instructions and 2026 Form 760ES. The official example: taxable income of $90,000 gives $4,917.50, rounded to $4,918.
 
 #### Standard deduction (only if the client did not itemize federally) ([§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/))
 
-| Taxable years | Single | Married filing jointly | Married filing separately |
-| --- | --- | --- | --- |
-| 2025 and 2026 | $8,750 | $17,500 | $8,750 |
-| 2027 (Code as now published) | $9,200 | $18,400 | one-half of the married amount |
-| 2028 and 2029 (Code as now published) | $9,300 | $18,600 | one-half of the married amount |
-| 2030 onward (Code as now published) | $3,000 | $6,000 | one-half of the married amount |
+| Taxable years | Single | Married filing jointly | Married filing separately | Source |
+| --- | --- | --- | --- | --- |
+| 2025 and 2026 | $8,750 | $17,500 | $8,750 | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2027 (Code as now published) | $9,200 | $18,400 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2028 and 2029 (Code as now published) | $9,300 | $18,600 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2030 onward (Code as now published) | $3,000 | $6,000 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
 
 - A single filer with head-of-household federal status uses the single amount.
 - A person who can be claimed as a dependent on another return may take the standard deduction "only with respect to earned income": the smaller of earned income or the standard deduction.
@@ -153,7 +153,7 @@ A partnership, LLC taxed as a partnership, or S corporation (including an S corp
 - Conformity: the December 31, 2025 conformity date and the P.L. 119-21 decouplings apply to 2025 returns. Clients who filed a 2025 return before February 20, 2026 may need to amend (Tax Bulletin 26-1).
 - Due dates: filed by May 1, 2026; extended returns are due November 1, 2026, which is a Sunday, so a return postmarked Monday, November 2, 2026 is timely under the weekend rule.
 
-## Boundary and exception table ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Boundary and exception table
 
 | Situation | Rule |
 | --- | --- |
@@ -174,7 +174,7 @@ A partnership, LLC taxed as a partnership, or S corporation (including an S corp
 | Qualified business income deduction and Schedule 1-A deductions | Taken after federal AGI; no effect on Virginia; no Virginia addition needed |
 | Disregarded single-member LLC | Reported on the owner's Form 760; cannot make the PTET election |
 
-## Worked cases ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Worked cases
 
 All are hypothetical full-year residents with no additions or subtractions unless stated. Tax is shown before rounding to whole dollars.
 
@@ -248,7 +248,7 @@ expected:
 - Business credits on Schedule CR (land preservation, historic rehabilitation and others), net operating loss carrybacks, and amended returns after a federal audit (federal changes must be reported within one year of the final determination).
 - Planning for 2027 and later standard deductions until the 2027 forms are published.
 
-## Filing and payment ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Filing and payment
 
 | Item | 2025 return | 2026 return |
 | --- | --- | --- |
@@ -265,7 +265,7 @@ expected:
 - **Fiscal year filers:** the 15th day of the 4th month after year end.
 - Sources: 2025 instructions ("When to File Your Return", "Reminders", Schedule ADJ Lines 18 to 20); https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-341/ ; https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-344/ .
 
-## Completion checklist ([2026 Form 760ES](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf))
+## Completion checklist
 
 - [ ] Residency confirmed as full year (domicile, or a Virginia home kept more than 183 days); otherwise stop. Present more than 183 days with no Virginia abode: refer.
 - [ ] Line 1 is federal AGI, not taxable income.
