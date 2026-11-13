@@ -2,7 +2,7 @@
 name: us-child-tax-credit-and-eitc
 description: >
   Compute the 2026 child tax credit and the 2026 earned income credit. The child tax credit is USD 2,200 per qualifying child under 17, with a refundable cap of USD 1,700, a phase-out of USD 50 per USD 1,000 of modified AGI over USD 200,000 (USD 400,000 joint), and the social security number rules in section 24(h)(7) as amended by Public Law 119-21. The earned income credit uses the 2026 earned-income amounts, maximums, and phase-out thresholds in Rev. Proc. 2025-32, the statutory credit and phase-out percentages, the qualifying-child tests, and the USD 12,200 investment-income cliff. Trigger on "child tax credit", "additional child tax credit", "Schedule 8812", "earned income credit", "EITC", "qualifying child". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 category: federal
 tax_year: 2026
@@ -28,7 +28,7 @@ Out of scope, and where it goes:
 | Topic | Skill |
 | --- | --- |
 | A nonresident alien's return, including the limited child tax credit for residents of Canada, Mexico, India, and South Korea | `us-form-1040-nr-nonresident-return` |
-| The foreign earned income exclusion, which blocks the additional child tax credit and the earned income credit | `us-feie-ftc` |
+| The foreign earned income exclusion, which blocks the additional child tax credit and the earned income credit | `us-foreign-earned-income-2555` |
 | The rest of Form 1040 | `us-federal-income-tax-return-1040` |
 
 ## Ask the client first
@@ -168,7 +168,7 @@ expected:
 | --- | --- | --- |
 | R-CTC-TIE | Two taxpayers could claim the same child | Apply section 152(c)(4) before either credit |
 | R-CTC-NR | The client was a nonresident alien for any part of 2026 and did not elect resident treatment | Earned income credit is off. Child tax credit limits for nonresidents are in `us-form-1040-nr-nonresident-return` |
-| R-CTC-911 | The client claims the foreign earned income exclusion | No additional child tax credit and no earned income credit. See `us-feie-ftc` |
+| R-CTC-911 | The client claims the foreign earned income exclusion | No additional child tax credit and no earned income credit. See `us-foreign-earned-income-2555` |
 | R-CTC-PRIOR | The credit was denied in a deficiency proceeding, or a fraud or reckless finding is in the disallowance window | Do not compute a current credit until eligibility is re-established |
 | R-EITC-TABLE | The client needs the IRS dollar table rather than the formula | The 2026 Form 1040 instructions' table was not published when this skill was written. The formula above is the statute |
 
