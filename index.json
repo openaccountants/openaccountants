@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-13T08:48:07+00:00",
+ "generated_at": "2026-11-13T10:11:22+00:00",
  "counts": {
-  "guides": 2259,
-  "loadable_skill_names": 2196,
+  "guides": 2257,
+  "loadable_skill_names": 2194,
   "jurisdictions": 256,
   "accountant_reviewed": 126,
   "held_skill_names": 115
@@ -26809,19 +26809,6 @@
    "last_updated": "2026-11-13"
   },
   {
-   "slug": "al-income-tax",
-   "mcp_slug": "al-income-tax",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-11-13"
-  },
-  {
    "slug": "al-payroll-withholding",
    "mcp_slug": "al-payroll-withholding",
    "path": "skills/us/states/al/al-payroll-withholding.md",
@@ -26884,19 +26871,6 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-11-13"
-  },
-  {
-   "slug": "alabama-sales-tax",
-   "mcp_slug": "alabama-sales-tax",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
    "last_updated": "2026-11-13"
   },
   {

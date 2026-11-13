@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2163,
+ "count": 2161,
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
@@ -930,15 +930,6 @@
    "tax_year": 2026
   },
   {
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "al-payroll-withholding",
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/al-payroll-withholding.md",
@@ -991,15 +982,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
-  },
-  {
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
   },
   {
    "name": "alabama-transfer-pricing",
