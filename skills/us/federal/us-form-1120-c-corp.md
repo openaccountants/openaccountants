@@ -1,7 +1,7 @@
 ---
 name: us-form-1120-c-corp
 description: Prepare the 2026 Form 1120 for a US domestic C corporation, federal only. Covers the flat 21% rate under 26 U.S.C. 11(b), the income and deduction lines, the dividends received deduction (50%, 65%, 100%), the One Big Beautiful Bill Act changes that start in 2026 (the 1 percent floor and 10 percent cap on corporate charitable gifts, the interest capitalization ordering rule and the CFC inclusion carve-out from adjusted taxable income under section 163(j)), domestic research expensing under section 174A, 100% bonus depreciation (linked), the 80% NOL limit, estimated tax under section 6655 with the large corporation rule, the corporate AMT pointer, the accumulated earnings tax and the dividend or retain decision, schedules and attached forms, Form 7004, e-file and penalties. Calendar-year 2026 returns are due 15 April 2027. Trigger on "Form 1120", "C corp return", "corporate tax return", "21% corporate rate", "dividends received deduction", "corporate estimated tax", "Form 7004 corporation", "retain earnings or pay a dividend".
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-13
@@ -27,7 +27,7 @@ Out of scope, and where it goes:
 | --- | --- |
 | Section 179 and bonus depreciation figures and rules | `us-section-179-and-bonus-depreciation` |
 | Research credit (Form 6765) and section 174 / 174A mechanics in detail | `us-r-and-d-section-174-and-41` |
-| GILTI (net CFC tested income), FDII and BEAT computations, including the 2026 section 250 percentages | `us-gilti-fdii-beat`, `us-cfc-gilti` |
+| GILTI (net CFC tested income), FDII and BEAT computations, including the 2026 section 250 percentages | `us-gilti-fdii-beat` |
 | Form 5471 (US shareholder of a CFC) | `us-form-5471-cfc-information` |
 | Form 5472 (25% foreign-owned US corporation) | `us-form-5472-foreign-owned-us` |
 | Extension mechanics and the timely-mailing rule for Form 7004 | `us-corporate-extension-form-7004-and-the` |
@@ -305,7 +305,7 @@ expected:
 | R-1120-PHC | Possible personal holding company (Schedule PH) | Refer |
 | R-1120-SPECIAL | REIT, RIC, cooperative, insurance company, FSC, REMIC, tax-exempt organization, foreign corporation | Wrong form: 1120-REIT, 1120-RIC, 1120-C, 1120-L, 1120-PC, 1120-FSC, 1066, 990-T or 1120-F |
 | R-1120-CAMT | Possible applicable corporation under section 59(k) | Refer the Form 4626 computation (proposed regulations REG-112129-23 run to several hundred pages) |
-| R-1120-INTL | CFCs, GILTI or FDII, BEAT, foreign tax credit (Form 1118, including the 10% haircut on PTEP-related foreign taxes for distributions after 28 June 2025), country-by-country report (Form 8975) | Use `us-gilti-fdii-beat`, `us-cfc-gilti`, `us-form-5471-cfc-information`; refer Form 1118 and Form 8975 |
+| R-1120-INTL | CFCs, GILTI or FDII, BEAT, foreign tax credit (Form 1118, including the 10% haircut on PTEP-related foreign taxes for distributions after 28 June 2025), country-by-country report (Form 8975) | Use `us-gilti-fdii-beat`, `us-form-5471-cfc-information`; refer Form 1118 and Form 8975 |
 | R-1120-382 | Ownership change of more than 50 percentage points in 3 years with NOLs or built-in gains | Refer: section 382 limitation |
 | R-1120-BUYBACK | Public company stock repurchases (section 4501, Form 7208) | Refer: separate excise tax return, not part of Form 1120 |
 | R-1120-UTP | Schedule UTP positions to rank and describe | Prepare the schedule only with the tax provision team; this skill flags the duty |
