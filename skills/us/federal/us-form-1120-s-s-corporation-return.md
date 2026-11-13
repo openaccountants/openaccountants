@@ -42,7 +42,7 @@ Out of scope, and where it goes:
 | How long Form 7004 extends the return | `us-corporate-extension-form-7004-and-the` |
 | C corporation Form 1120 | `us-form-1120-c-corp` |
 | Partnership Form 1065 | `us-form-1065-partnership` |
-| Check-the-box before an S election | `us-form-8832-entity-classification` |
+| Check-the-box classification of an eligible entity, before any S election | Form 8832. A timely S election is treated as the corporate classification election; that path is `us-s-corp-election-decision` |
 
 ## Ask the client first
 
