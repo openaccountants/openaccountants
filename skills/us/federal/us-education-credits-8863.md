@@ -73,7 +73,7 @@ The tuition and fees deduction (old section 222) was repealed for tax years begi
 | Coverdell ESA contributions, per beneficiary per year (not indexed) | USD 2,000 | [26 U.S.C. 530(b)(1)(A)(iii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapF-partVIII-sec530.htm) |
 | Coverdell contribution phase-out start (USD 190,000 joint), over a USD 15,000 (USD 30,000 joint) range | MAGI over USD 95,000 | [26 U.S.C. 530(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapF-partVIII-sec530.htm) |
 | Additional tax on the taxable part of a 529 or Coverdell distribution | 10% | [26 U.S.C. 530(d)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapF-partVIII-sec530.htm) |
-| Paid preparer due-diligence penalty (section 6695(g)), per failure, returns filed in 2027 | USD 665 | [Rev. Proc. 2025-32, section 3.54](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Paid preparer due-diligence penalty (section 6695(g)), per failure, returns filed in 2027 | USD 665 | [Rev. Proc. 2025-32, section 4.54](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 
 The section 127 limit is indexed only for taxable years beginning after 2026 (section 127(d), added by Public Law 119-21 section 70412). Public Law 119-21 did not change the credit amounts or the phase-out limits; the 2020 law that aligned the LLC limits with the AOTC limits also removed the old LLC indexing.
 
@@ -276,7 +276,7 @@ Keep Form 1098-T, the bursar's statements, receipts for course materials, schola
 | --- | --- | --- |
 | 26 U.S.C. 25A (govinfo, 2024 edition). Read for (b)(1) 100% of USD 2,000 and 25% up to USD 4,000, (b)(2)(A) 4 years, (b)(4) bans, (c)(1) 20% of USD 10,000, (d) USD 80,000 / USD 160,000 over USD 10,000 / USD 20,000, (g)(6), (g)(7) and (i)(5) 40% refundable. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm | 2026-11-13 |
 | Public Law 119-21. Read for section 70606 (SSN rule and section 6213(g)(2)(J), taxable years beginning after 31 December 2025), section 70412 (section 127 student loans made permanent, indexed after 2026) and sections 70413 and 70414 (529 changes, USD 20,000). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
-| Rev. Proc. 2025-32. Read for section 4.29 (student loan interest USD 85,000 to USD 100,000, USD 175,000 to USD 205,000) and section 3.54 (section 6695(g) penalty USD 665). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for section 4.29 (student loan interest USD 85,000 to USD 100,000, USD 175,000 to USD 205,000) and section 4.54 (section 6695(g) penalty USD 665). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
 | Draft 2026 Instructions for Form 8863. Read for What's New (valid SSN), the 1098-T request after 1 February 2027, the under-24 questions and lines 8, 19 and 23 to 31. | https://www.irs.gov/pub/irs-dft/i8863--dft.pdf | 2026-11-13 |
 | Instructions for Form 8863 (2025), the latest final edition. Read for Example 2 (Pell grant) and credit recapture. | https://www.irs.gov/pub/irs-pdf/i8863.pdf | 2026-11-13 |
 | IRS Pub. 970 (2025), Tax Benefits for Education. Read for chapters 2 and 3 (who claims), 4 (student loan interest), 6 and 7 (Coverdell and 529 coordination). | https://www.irs.gov/pub/irs-pdf/p970.pdf | 2026-11-13 |
