@@ -1,44 +1,134 @@
 ---
 name: lc-imported-services-vat
 description: >
-  Saint Lucia VAT on imported services reference checked for 2026. Covers recipient liability, the distinction between registered and unregistered recipients, local branches, the import declaration, statutory payment timing and standard-rate arithmetic on an established taxable value. Use for overseas service purchases, reverse-charge questions, foreign consultants or VAT obligations below the ordinary registration threshold. It does not establish withholding tax, treaty relief, every place-of-supply rule, related-party valuation or automatic input deduction. The 2023 revised statutory text supplies the cited rules; subsequent amendments and detailed filing mechanics require independent review.
-version: 0.2
+  Saint Lucia VAT on services bought from abroad for 2026. Covers recipient liability
+  under section 9(2)(c), who pays under section 28(3) (overseas businesses supplying a
+  person or local branch, registered recipients using the service outside taxable
+  supplies, and non-registered recipients below the threshold or not making taxable
+  supplies), the local branch rule, the import declaration and payment within 21 calendar
+  days after the tax period, the time of import (section 26) and the 12.5% rate. Trigger
+  phrases include Saint Lucia imported services VAT, reverse charge Saint Lucia, foreign
+  consultant VAT Saint Lucia.
+version: 1.0
 jurisdiction: LC
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
+type: situation-rules
+domain: vat-gst
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
-domain: vat-gst
 ---
 
 # Saint Lucia VAT on imported services
 
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
 ## Scope
 
-Source-cited draft checked 22 October 2026. Start by determining whether the transaction is a taxable import of services. A foreign supplier invoice alone does not answer the exemption, value, time or recipient-use questions. The cited law is the Attorney General Chambers Revised Laws (2023), pending a later-amendment audit.
+VAT on imports of services into Saint Lucia in 2026 under the Value Added Tax Act (Revised Laws 2023). Covers who is liable, the declaration and payment, timing and the rate. Amounts are EC$. Registration, rates on local supplies and returns are in [lc-vat](lc-vat.md). Withholding tax, treaty relief, related-party valuation and input deduction are outside this skill.
 
-## Recipient liability
+## Ask the client first
 
-[Section 9(2)(c)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-9) places import-of-services VAT on the recipient. [Section 28(3)–(4)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28) addresses overseas businesses supplying persons or local branches in Saint Lucia. It expressly reaches nonregistered recipients below the ordinary registration threshold or not making taxable supplies. A local branch/affiliate is treated separately from its nonresident home office for this purpose.
+1. Where is the supplier established and does it carry on business from outside Saint Lucia?
+2. Is the recipient registered for VAT? Does it make taxable supplies, exempt supplies or both?
+3. What will the service be used for?
+4. Is the recipient a local branch or affiliate of a foreign business?
+5. Contract, invoice and service period (for the time of import), and the value excluding VAT.
 
-For registered recipients, section 28 addresses imports not used in making taxable supplies. Therefore, neither “we are below the VAT threshold” nor “we are VAT registered” is a sufficient answer. Establish actual use, including mixed taxable/exempt activities, before deciding treatment.
+## The method, step by step
 
-## Declaration and timing
+### Rates, bands and thresholds
 
-Where import tax is payable, [section 28(1)–(2)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28), subject to its section 4(12) exception, requires an approved import declaration and payment within 21 calendar days after the tax period in which import occurred.
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Liability | Tax on an import of services is paid by the recipient (s.9(2)(c)) | [VAT Act s.9](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-9) |
+| Rate | 12.5% of the value of taxable services imported (s.10(1)) | [VAT Act s.10](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-10) |
+| Declaration and payment | Import declaration (approved form) and payment within 21 calendar days after the tax period of the import, except where s.4(12) applies (s.28(1), (2)) | [VAT Act s.28](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28) |
+| Who pays, s.28(3) | (a) an overseas business supplying a person or local branch in Saint Lucia; (b) a registered recipient if the import is not for use in making taxable supplies; (c) a non-registered recipient, whether below the s.12 threshold or not making taxable supplies | same |
+| Local branch, s.28(4) | Treated as a person separate from its nonresident home office | same |
+| Time of import | Section 18 applied as if the import were a supply of services (s.26) | [VAT Act s.26](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-26) |
 
-[Section 26](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-26) determines import timing by applying section 18 as though the import were a supply of services. Do not automatically use the bank-payment date as the tax point. Review the contract, invoice, service period and relevant section 18 rule before choosing the return period.
+### Steps
 
-## Conditional calculation
+1. **Is it an import of services** by a supplier established outside Saint Lucia? Check exemptions and s.4(12) first.
+2. **Recipient status:** registered and using the service to make taxable supplies, not liable under s.28(3)(b); registered and using it otherwise, liable; non-registered, liable whatever its turnover.
+3. **Time of import:** apply the s.18 time-of-supply rules (invoice, payment, performance) as for a service; the bank payment date is not automatically the tax point.
+4. **Tax:** value excluding VAT x 12.5%.
+5. **Declare and pay** within 21 calendar days after the tax period of the import.
 
-Assume an overseas service has been established as taxable at the standard rate, its value excluding VAT is EC$10,000, and the recipient is liable under the above provisions. At the [section 10](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-10) rate of 12.5%, VAT is EC$1,250. This example assumes the taxable value; it does not determine valuation for related parties or VAT-inclusive contracts.
+## Boundary and exception table
 
-An illustrative nonregistered business cannot conclude that no import VAT is due merely because its own turnover is EC$200,000. The import rules require their own review. Do not assume a matching input credit without establishing entitlement.
+| Situation | Treatment | Source |
+|---|---|---|
+| "We are below the VAT threshold" | Not an answer: non-registered recipients below the threshold are liable | [VAT Act s.28(3)(c)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28) |
+| "We are VAT registered" | Not an answer either: liable if the service is not used for taxable supplies | [VAT Act s.28(3)(b)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28) |
+| Mixed taxable and exempt use | Not resolved in s.28(3)(b); establish actual use and refer | same |
+| Local subsidiary billed by its parent abroad | Branch or affiliate is a separate person; import VAT applies | [VAT Act s.28(4)](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28) |
+| Input credit for import VAT | Do not assume a matching credit; check entitlement | not covered |
 
-## Evidence and exclusions
+## Worked cases
 
-Keep the contract, supplier identity/location, description of services, recipient-use analysis, valuation calculation, tax-point decision, declaration and payment receipt together. Separate withholding-tax and treaty questions from VAT: this Guide determines neither.
+### Case 1: non-registered business buys foreign consulting
 
-Review zero-rating/exemptions, section 4(12), mixed-use treatment, taxable value, input deductions and current submission instructions before filing. The IRD imported-services brochure was located but returned 404 directly; no successful capture is claimed. Independent review remains outstanding, and this is not a complete cross-border tax pack.
+A non-registered business with turnover of EC$200,000 buys consulting worth EC$10,000 from an overseas firm. It is liable under s.28(3)(c): VAT 1,250, declared and paid within 21 days after the tax period.
+
+```oa-check
+name: Saint Lucia import VAT on 10,000 of services
+inputs:
+  value: 10000
+steps:
+  - vat: value * 0.125
+  - total_cost: value + vat
+expected:
+  vat: 1250
+  total_cost: 11250
+```
+
+### Case 2 (decision): registered recipient, taxable or exempt use?
+
+A registered company buys EC$24,000 of foreign software services. If it uses them to make its taxable supplies, s.28(3)(b) does not make it liable: import VAT 0. If it uses them for an exempt activity, it pays 3,000. Record the use with evidence before deciding.
+
+```oa-check
+name: Saint Lucia registered recipient, taxable against exempt use
+inputs:
+  value: 24000
+steps:
+  - vat_taxable_use: value * 0
+  - vat_exempt_use: value * 0.125
+  - difference: vat_exempt_use - vat_taxable_use
+expected:
+  vat_taxable_use: 0
+  vat_exempt_use: 3000
+  difference: 3000
+```
+
+## When to refuse or refer
+
+- Mixed-use services, related-party valuation, VAT-inclusive contracts.
+- Withholding tax and treaty questions: a separate matter.
+- Section 4(12), zero-rating and exemptions: read the Act.
+
+## Filing and payment
+
+1. Complete the import declaration in the form approved by the Comptroller (s.28(2)).
+2. Pay within 21 calendar days after the tax period in which the services were imported (s.28(1)(b)).
+3. Keep the contract, supplier identity and location, service description, use analysis, valuation, tax point, declaration and receipt together.
+
+## Completion checklist
+
+- Import of services confirmed; exemptions checked.
+- Recipient status and use recorded.
+- Time of import fixed under s.18.
+- 12.5% declared and paid within 21 days.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| VAT Act s.9, Revised Laws 2023: read for s.9(2)(c), import of services tax paid by the recipient | https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-9 | 2026-11-14 |
+| VAT Act s.10: read for the 12.5% rate on imported services | https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-10 | 2026-11-14 |
+| VAT Act s.26: read for the time of import of services | https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-26 | 2026-11-14 |
+| VAT Act s.28: read for the declaration, 21-day payment, s.28(3) liability cases and s.28(4) branches | https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28 | 2026-11-14 |
+
+Not yet confirmed: the treatment of mixed-use imports; the text of s.4(12) and s.18 (not opened); the IRD imported-services brochure (returned 404 on 22 October 2026, not retried); post-2023 amendments.

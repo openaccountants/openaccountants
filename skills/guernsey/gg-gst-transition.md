@@ -2,14 +2,15 @@
 name: gg-gst-transition
 description: >
   Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft separates the current absence of domestic VAT/GST from existing customs and excise duties, and preserves the future-GST planning work. The added current-scope analysis has received independent source review. Future charging and operational legislation remains outstanding; no current GST liability is inferred from the approved plan.
-version: 0.4
+version: 0.5
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Guernsey GST transition: approved policy and implementation evidence
@@ -39,9 +40,8 @@ The existing future-price examples below remain unchanged and explicitly hypothe
 | Personal tax and social-security changes | 1 January 2029 | Planned timetable; do not replace 2026 rates; [reform page](https://gov.gg/taxreform) |
 | Corporate changes | 1 January 2027 | Separate timetable; do not assume every reform starts together; [reform page](https://gov.gg/taxreform) |
 | Food produced or grown by small independent suppliers | 0% instead of 3% in the adopted direction | Final statutory definitions and evidence requirements still needed; [Proposition 1](https://statesvoting-records.gov.gg/Propositions/Details/2682) |
-| Registration and turnover threshold | Not established by this Guide | Obtain enacted registration rules; no threshold is inferred from Jersey |
 
-The official page says monetary thresholds will be adjusted for inflation before implementation. Do not treat an illustrative calculator threshold as a fixed future statutory figure. [Reform page](https://gov.gg/taxreform).
+No GST registration or turnover threshold has been enacted; obtain the enacted registration rules and do not infer one from Jersey (see Not yet confirmed under Sources). The official page says monetary thresholds will be adjusted for inflation before implementation. Do not treat an illustrative calculator threshold as a fixed future statutory figure. [Reform page](https://gov.gg/taxreform).
 
 ## The base
 
@@ -108,6 +108,10 @@ expected:
 ## Sources
 
 All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. The earlier review left current domestic tax scope open. The new current-scope evidence above establishes the independently reviewed 2026 domestic general VAT/GST not-applicable finding; complete customs/excise methods and future GST legislation/operations are separate limits. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. The new scope finding uses the additional current primary sources below, rather than a future timetable alone. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; the new current-scope method is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and professional attestation remains pending.
+
+The reform page and Proposition 1 were read again on 14 November 2026 for the 3% GST rate from the first quarter of 2029, the 1 January 2027 and 1 January 2029 timetables, the inflation adjustment of thresholds and the 0% rate for food from small independent suppliers.
+
+Not yet confirmed: the GST registration and turnover threshold (no enacted figure); the final statutory definitions, evidence rules and inflation-adjusted thresholds, which await the GST legislation.
 
 | Additional official source | Read scope | Read on |
 |---|---|---|

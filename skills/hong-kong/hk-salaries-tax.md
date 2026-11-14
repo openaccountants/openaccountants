@@ -1,323 +1,218 @@
 ---
 name: hk-salaries-tax
-description: Use this skill whenever asked about Hong Kong salaries tax. Trigger on phrases like "Hong Kong tax", "salaries tax", "BIR60", "IRD", "net chargeable income", "standard rate", "progressive rate HK", "personal allowance Hong Kong", "provisional tax HK", "tax return Hong Kong", or any question about computing, filing, or planning salaries tax for an individual in Hong Kong. This skill covers progressive and standard rate calculations, allowances, deductions, provisional tax, and BIR60 filing. ALWAYS read this skill before advising on Hong Kong salaries tax.
-version: 1.0
+description: Use this skill whenever asked about Hong Kong salaries tax for the year of assessment 2026/27 (1 April 2026 to 31 March 2027). Trigger on phrases like "Hong Kong tax", "salaries tax", "BIR60", "IRD", "net chargeable income", "standard rate", "progressive rate HK", "personal allowance Hong Kong", "provisional tax HK", "tax return Hong Kong", or any question about computing, filing, or planning salaries tax for an individual in Hong Kong. It covers the progressive and standard rate calculations, the 2026/27 allowances (basic HKD 145,000), deductions, provisional tax and BIR60 filing. Built from the law, not reviewed by an accountant.
+version: "2.0"
 jurisdiction: HK
-tax_year: 2024
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Year of assessment 2026/27, the year containing most of 2026. Allowances from the 2026-27 Budget (enacted, gazetted 22 May 2026). Filing dates are the 2025/26 cycle (BIR60 issued 4 May 2026)."
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# HK Salaries Tax
+# Hong Kong salaries tax (薪俸稅), year of assessment 2026/27
 
-## Hong Kong Salaries Tax -- Skill v1.0
+> **General reference only.** Built from the law, not reviewed by an accountant. Do not file, pay or take a tax position on it without review by a qualified professional in Hong Kong.
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
-**Quick Reference**
+Salaries tax is charged on every person on income arising in or derived from Hong Kong from an office or employment, or a pension (Inland Revenue Ordinance (IRO), Cap. 112, s. 8). Year of assessment (YA) 2026/27 runs 1 April 2026 to 31 March 2027. Currency: HKD only. Tax authority: Inland Revenue Department (IRD); filing through eTAX.
 
-**Quick Reference**
+**Method.** Salaries tax is the LOWER of (1) the progressive rates on net chargeable income (after deductions AND allowances) and (2) the standard rate on net income (after deductions but BEFORE allowances).
 
-| Field | Value |
-| --- | --- |
-| Country / Territory | Hong Kong SAR, China |
-| Tax | Salaries Tax (薪俸稅) |
-| Currency | HKD (Hong Kong Dollar) only |
-| Year of Assessment | 1 April -- 31 March (2024/25 = 1 Apr 2024 -- 31 Mar 2025) |
-| Primary legislation | Inland Revenue Ordinance (IRO), Cap. 112 |
-| Tax authority | Inland Revenue Department (IRD) |
-| Filing portal | ird.gov.hk / eTAX (etax.ird.gov.hk) |
-| Filing deadline | 1 month from BIR60 issue (usually June/July); eTAX: 1 extra month |
-| Skill version | 1.0 |
+Out of scope: profits tax (`hk-corporate-income-tax`), MPF contribution rules (`hk-mpf`), property tax (`hong-kong-tax`).
 
-### Tax Calculation Method
+## Rates, bands and thresholds
 
-- **Salaries tax method** — Salaries tax is the LOWER of: 1. Progressive rates on Net Chargeable Income (after deductions AND allowances) 2. Standard rate on Net Income (after deductions but BEFORE allowances)
-
-### Progressive Tax Rates (2024/25 onwards)
-
-**Progressive Tax Rates (2024/25 onwards)**
-
-| Net Chargeable Income Band (HK$) | Rate | Tax in Band | Cumulative Tax |
+| Item | Figure | Conditions | Source |
 | --- | --- | --- | --- |
-| First 50,000 | 2% | 1,000 | 1,000 |
-| Next 50,000 | 6% | 3,000 | 4,000 |
-| Next 50,000 | 10% | 5,000 | 9,000 |
-| Next 50,000 | 14% | 7,000 | 16,000 |
-| Remainder | 17% | — | — |
+| Progressive rate, first HKD 50,000 | 2% | Net chargeable income; YA 2020/21 onwards | https://www.gov.hk/en/residents/taxes/taxfiling/taxrates/salariesrates.htm |
+| Next HKD 50,000 | 6% | Same | same |
+| Next HKD 50,000 | 10% | Same | same |
+| Next HKD 50,000 | 14% | Same | same |
+| Remainder | 17% | Same | same |
+| Standard rate, first HKD 5,000,000 of net income | 15% | YA 2024/25 onwards | same |
+| Standard rate, net income above HKD 5,000,000 | 16% | Same | same |
+| Basic allowance | HKD 145,000 | From YA 2026/27 (2025/26: 132,000) | https://www.ird.gov.hk/eng/tax/budget.htm |
+| Married person's allowance | HKD 290,000 | From YA 2026/27 (2025/26: 264,000) | same |
+| Single parent allowance | HKD 145,000 | From YA 2026/27 | same |
+| Child allowance, 1st to 9th child | HKD 140,000 each | From YA 2026/27 (2025/26: 130,000) | same |
+| Additional child allowance, newborn | HKD 140,000 each year for the first two years | From YA 2026/27 (period extended from one to two years; HKD 280,000 in total) | same |
+| Dependent parent or grandparent, aged 60 or above (or on Disability Allowance) | HKD 55,000 | From YA 2026/27; additional HKD 55,000 if living with the taxpayer all year | same |
+| Dependent parent or grandparent, aged 55 to 59 | HKD 27,500 | From YA 2026/27; additional HKD 27,500 if living together all year | same |
+| Elderly residential care expenses | Up to HKD 110,000 | From YA 2026/27; excludes the parent allowance for the same person | same |
+| Dependent brother or sister allowance | HKD 37,500 | 2025/26 onwards, not changed by the 2026-27 Budget | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf |
+| Personal disability allowance | HKD 75,000 | Same | same |
+| Disabled dependant allowance | HKD 75,000 each | Same | same |
+| MPF mandatory contributions deduction | Up to HKD 18,000 | 2019/20 onwards | same |
+| Self-education expenses | Up to HKD 100,000 | Prescribed courses and examinations | same |
+| Home loan interest, basic deduction | Up to HKD 100,000 | Hong Kong home used as residence; 20 years of assessment | same |
+| Home loan interest or domestic rent, with additional deduction | Up to HKD 120,000 | From YA 2024/25 where the prescribed conditions (child) are met | same |
+| Domestic rent, basic deduction | Up to HKD 100,000 | Hong Kong residence, conditions in s. 26J | same |
+| Qualifying VHIS premiums | Up to HKD 8,000 per insured person | 2019/20 onwards | same |
+| QDAP and tax-deductible MPF voluntary contributions | Up to HKD 60,000 combined | Same | same |
+| Approved charitable donations | Up to 35% of income | After allowable expenses and depreciation | same |
+| Rental value of quarters, flat or serviced apartment | 10% of total income | Employer-provided residence; may elect rateable value | same |
+| Rental value, hotel, hostel or boarding house | 8% (up to 2 rooms) or 4% (1 room) | Same | same |
+| One-off reduction, YA 2025/26 final tax | 100%, capped at HKD 3,000 | Per taxpayer (per couple if jointly assessed); not for 2026/27 | https://www.ird.gov.hk/eng/tax/budget.htm |
+| BIR60 for 2025/26 | Issued 4 May 2026 | Represented taxpayers: 4 July 2026, or 5 October 2026 with sole proprietorship accounts | https://www.ird.gov.hk/eng/pdf/bel26e.pdf |
 
-### Standard Rate (2024/25 onwards -- Two-Tiered)
+**Proposed, not yet law (2026 Policy Address):** child allowance and the newborn additional allowance raised from HKD 140,000 to HKD 160,000 for second and later children born on or after 16 September 2026, from YA 2026/27, after legislation. Do not apply until enacted.
 
-**Standard Rate (2024/25 onwards -- Two-Tiered)**
+## The base
 
-| Net Income (HK$) | Rate |
-| --- | --- |
-| First 5,000,000 | 15% |
-| Exceeding 5,000,000 | 16% |
-
-### Personal Allowances (2024/25)
-
-**Personal Allowances (2024/25)**
-
-| Allowance | Amount (HK$) |
-| --- | --- |
-| Basic allowance | 132,000 |
-| Married person's allowance | 264,000 |
-| Child allowance (each child) | 130,000 |
-| Child allowance -- year of birth (additional) | 130,000 |
-| Dependent parent/grandparent (aged 60+) | 50,000 |
-| Dependent parent/grandparent (aged 60+, living together) | 100,000 |
-| Dependent parent/grandparent (aged 55--59) | 25,000 |
-| Dependent parent/grandparent (aged 55--59, living together) | 50,000 |
-| Dependent brother/sister allowance | 37,500 |
-| Single parent allowance | 132,000 |
-| Disabled dependant allowance | 75,000 |
-| Personal disability allowance | 75,000 |
-
-### Conservative Defaults
-
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown marital status | Apply basic allowance (HK$132,000) only |
-| Unknown whether children qualify | Do not claim child allowance |
-| Unknown dependent parent arrangement | Do not claim additional allowance for living together |
-| MPF deduction cap | Apply HK$18,000 cap per employee |
-| Unknown whether progressive or standard rate lower | Calculate both; apply lower |
-| Tax reduction year | Apply 2024/25 reduction: 100%, ceiling HK$1,500 |
-
-### 2.1 Charge to Salaries Tax (IRO Sec. 8)
-
-- **Charge to salaries tax** — Salaries tax is charged on every person in respect of income arising in or derived from Hong Kong from: Office or employment; Pension; Lump sum payments in connection with services rendered in Hong Kong  _(IRO Sec. 8)_
-
-### 2.2 Assessable Income
-
-**Assessable Income**
+### Assessable income
 
 | Component | Treatment |
 | --- | --- |
 | Salary, wages, commission | Fully assessable |
 | Bonus (discretionary or contractual) | Fully assessable |
-| Leave pay, end-of-contract gratuity | Fully assessable (time-apportioned if partly HK service) |
-| Housing benefit (provided by employer) | Add rental value: 10% of net income (4% if hotel, 8% if hostel) |
-| Share options/awards | Assessable at exercise/vesting (gain = market value - cost) |
-| Employer MPF contributions | NOT assessable (exempt under IRO Sec. 8(1A)) |
-| Reimbursed expenses (wholly business) | NOT assessable if solely for business |
-| Education benefit for children | Assessable as perquisite |
-| Severance / long service payment | Exempt up to statutory entitlement |
+| Leave pay, end-of-contract gratuity | Assessable (time-apportioned if partly Hong Kong service) |
+| Housing provided by the employer | Add rental value: 10% of net income for a flat; 8% or 4% for a hotel, hostel or boarding house |
+| Share options and awards | Assessable gain on exercise or vesting; still taxable after the employment ends |
+| Employer MPF mandatory contributions | Not assessable |
+| Reimbursed expenses wholly for business | Not assessable |
+| Education benefit for children | Assessable as a perquisite |
+| Severance or long service payment | Exempt up to the statutory entitlement |
 
-### 2.3 Deductions (IRO Sec. 12)
+### Deductions (IRO s. 12 and Part 7)
 
-**Deductions (IRO Sec. 12)**  _(IRO Sec. 12)_
+Order of work: total assessable income, less deductions (MPF mandatory, self-education, donations, elderly care, home loan interest, VHIS, QDAP and TVC, domestic rent) = **net income** (used for the standard rate); less allowances = **net chargeable income** (used for the progressive rates). Tax payable is the lower of the two results. The elderly residential care deduction and the dependent parent allowance cannot both be claimed for the same parent in the same year.
 
-| Deduction | Limit (2024/25) |
+### Worksheet
+
+A. Assessable income: salary, bonus, rental value of quarters, share gains, other perquisites. B. Deductions: MPF (max 18,000), self-education (max 100,000), donations (max 35%), home loan interest (max 100,000, or 120,000 with the additional deduction), QDAP plus TVC (max 60,000), VHIS (max 8,000 per person), domestic rent (max 100,000, or 120,000), elderly care (max 110,000). C. Net income = A less B. D. Allowances. E. Net chargeable income = C less D. F. Progressive tax on E; standard rate on C; tax = lower. G. Less any one-off reduction for the year. H. Provisional tax adjustments.
+
+### Special situations
+
+- **Employment partly outside Hong Kong:** income is time-apportioned by Hong Kong days where the employment is non-Hong Kong. The old file's visit exemption for short stays is on the Not yet confirmed line: do not apply it.
+- **Lump sums (s. 11D):** gratuity or severance connected with Hong Kong employment is assessable; a recognised retirement scheme lump sum is exempt if conditions are met; a golden handshake is assessable.
+- **Personal assessment (IRO s. 41):** lets an individual set off business losses against salaries income, claim home loan interest against other income and pool a married couple's income for the progressive rates.
+- **Married couples:** joint assessment helps when one spouse has low or no income (allowances pooled); separate taxation helps when both are high earners on the standard rate; personal assessment (joint) for business losses or mortgage interest.
+- **Domestic rent deduction (from 2022/23):** taxpayer not provided with quarters; property not owned by the taxpayer or a connected person; tenancy stamped. Each spouse claims up to the cap on separate tenancies; total up to twice the cap on joint assessment.
+
+### Conservative defaults
+
+| Ambiguity | Default |
 | --- | --- |
-| Self-education expenses | HK$100,000 |
-| MPF mandatory contributions (employee) | HK$18,000 |
-| Approved charitable donations | 35% of assessable income |
-| Elderly residential care expenses | HK$100,000 |
-| Home loan interest | HK$100,000 (max 20 years of assessment) |
-| Qualifying premiums (VHIS) | HK$8,000 per insured person |
-| Qualifying annuity premiums (QDAP) | HK$60,000 |
-| MPF voluntary contributions (TVC) | HK$60,000 |
-| Domestic rent deduction | HK$100,000 |
+| Unknown marital status | Apply the basic allowance (HKD 145,000) only |
+| Unknown whether children qualify | Do not claim child allowance |
+| Unknown dependent parent arrangement | Do not claim the additional (living together) allowance |
+| MPF deduction | Cap at HKD 18,000 |
+| Progressive or standard lower | Calculate both; apply the lower |
+| One-off reduction | None for 2026/27 unless announced; 2025/26: 100% capped at HKD 3,000 |
+| 2026 Policy Address child allowance increase | Do not apply until enacted |
 
-- **QDAP + TVC combined cap** — QDAP + TVC deduction combined cap = HK$60,000.  _(IRO Sec. 12)_
+### Recent one-off reductions
 
-### 2.4 Rental Value of Quarters (IRO Sec. 9)
+| Year of assessment | Reduction | Ceiling |
+| --- | --- | --- |
+| 2022/23 | 100% | HKD 6,000 |
+| 2023/24 | 100% | HKD 3,000 |
+| 2024/25 | 100% | HKD 1,500 |
+| 2025/26 | 100% | HKD 3,000 (enacted 22 May 2026) |
 
-- **Rental value of quarters** — If employer provides housing: Rental value = 10% of net income (after other deductions) for a house/flat; 8% for a service occupancy (hostel); 4% for hotel/boarding house; If employer pays rent (not provides quarters): assessable as Place of Residence benefit, but capped at rent paid or 10% rental value, whichever lower  _(IRO Sec. 9)_
-
-### 3.1 Progressive Rate Calculation
-
-- **Progressive rate calculation worksheet** — A. ASSESSABLE INCOME A1. Salary / wages / commission                      ___________ A2. Bonus / allowances                               ___________ A3. Rental value of quarters (10% of net)            ___________ A4. Share option gains                               ___________ A5. Other perquisites                                ___________ A6. Total Assessable Income                          ___________ B. DEDUCTIONS (Section 12) B1. MPF mandatory contributions (max $18,000)        ___________ B2. Self-education expenses (max $100,000)           ___________ B3. Charitable donations (max 35% of A6)             ___________ B4. Home loan interest (max $100,000)                ___________ B5. QDAP + TVC (combined max $60,000)                ___________ B6. VHIS premiums (max $8,000 per person)            ___________ B7. Domestic rent (max $100,000)                     ___________ B8. Total Deductions                                 ___________ C. NET INCOME (A6 - B8)                                 ___________ [Used for standard rate calculation] D. ALLOWANCES D1. Basic / Married                                  ___________ D2. Child allowances                                 ___________ D3. Dependent parent/grandparent                     ___________ D4. Other allowances                                 ___________ D5. Total Allowances                                 ___________ E. NET CHARGEABLE INCOME (C - D5)                       ___________ [Used for progressive rate calculation] F. TAX COMPUTATION F1. Progressive tax on E                             ___________ F2. Standard rate tax on C (15% on first $5M, 16% excess) ___________ F3. Tax payable = LOWER of F1 and F2                 ___________ G. TAX REDUCTION (2024/25) G1. 100% reduction, capped at $1,500                 ___________ H. FINAL TAX (F3 - G1)                                  ___________ I. PROVISIONAL TAX I1. Less: provisional tax already paid for 2024/25   ___________ I2. Plus: provisional tax for 2025/26                ___________ I3. NET AMOUNT PAYABLE                               ___________
-
-### 3.2 Worked Example -- Single Employee
-
-**Worked Example -- Single Employee**
-
-| Item | Amount (HK$) |
-| --- | --- |
-| Annual salary | 600,000 |
-| Bonus | 50,000 |
-| Total assessable income | 650,000 |
-| Less: MPF mandatory (capped) | (18,000) |
-| Net income | 632,000 |
-| Less: Basic allowance | (132,000) |
-| Net chargeable income | 500,000 |
-
-Progressive tax:
-- First 50,000 × 2% = 1,000
-- Next 50,000 × 6% = 3,000
-- Next 50,000 × 10% = 5,000
-- Next 50,000 × 14% = 7,000
-- Remaining 300,000 × 17% = 51,000
-- Total progressive = **67,000**
-
-Standard rate: 632,000 × 15% = **94,800**
-
-Tax payable = lower = **HK$67,000**
-Less 2024/25 reduction (100%, max $1,500): **HK$65,500**
-
-### 3.3 Worked Example -- Married with Children
-
-**Worked Example -- Married with Children**
-
-| Item | Amount (HK$) |
-| --- | --- |
-| Annual salary | 1,200,000 |
-| Total assessable income | 1,200,000 |
-| Less: MPF mandatory (capped) | (18,000) |
-| Net income | 1,182,000 |
-| Less: Married allowance | (264,000) |
-| Less: 2 children | (260,000) |
-| Net chargeable income | 658,000 |
-
-Progressive tax:
-- First 200,000 at bands = 16,000
-- Remaining 458,000 × 17% = 77,860
-- Total progressive = **93,860**
-
-Standard rate: 1,182,000 × 15% = **177,300**
-
-Tax payable = lower = **HK$93,860**
-Less 2024/25 reduction: **HK$92,360**
-
-### 4.1 BIR60 (Tax Return -- Individuals)
-
-**BIR60 (Tax Return -- Individuals)**
+## Deadlines and filing
 
 | Item | Detail |
 | --- | --- |
 | Form | BIR60 (個別人士報稅表) |
-| Issue date | Usually first working day of May |
-| Filing deadline (paper) | 1 month from date of issue (usually early June) |
-| Filing deadline (eTAX) | 1 additional month (usually early July) |
-| Extension | Automatic if filed via eTAX; further extension with tax representative |
-| Singed by | Taxpayer (paper) or digital certificate/eTAX password (online) |
+| Issue | Bulk issue early May (4 May 2026 for 2025/26; 2026/27 returns in May 2027) |
+| Due date | Normally one month from issue; e-filing gets a further month; represented taxpayers 4 July 2026, or 5 October 2026 with sole proprietorship accounts (2025/26) |
+| Signature | Taxpayer (paper), or eTAX login |
+| Provisional salaries tax | Charged with the final assessment, based on the year just assessed; applied against the next year's final tax |
+| Holdover of provisional tax | If income is expected to fall by more than 10% (or on other grounds); apply not later than 28 days before the due date or 14 days after the notice is issued, whichever is later |
+| Objection | Written notice to the Assessor stating the grounds; the time limit (IRO s. 64) is on the Not yet confirmed line, so object as soon as the notice of assessment arrives |
 
-### 4.2 Provisional Salaries Tax (IRO Sec. 63E)
+**Key dates (typical year).** 1 April: YA starts. Early May: BIR60 issued. June to July: filing. Later in the year to early the next year: notices of assessment and the first provisional tax instalment. 31 March: YA ends.
 
-**Provisional Salaries Tax (IRO Sec. 63E)**  _(IRO Sec. 63E)_
-
-| Rule | Detail |
-| --- | --- |
-| Basis | Estimated at 100% of current year final tax |
-| Payment | In two instalments (75% + 25%) |
-| First instalment | Usually January |
-| Second instalment | Usually April |
-| Holdover | Can apply if income expected to drop >10% or allowances increase |
-| Holdover deadline | 28 days before first instalment due or 14 days before second |
-
-### 4.3 Objection and Appeal
-
-**Objection and Appeal**
-
-| Step | Deadline |
-| --- | --- |
-| Objection to assessment | Within 1 month of Notice of Assessment |
-| Form | Written notice to Assessor stating grounds |
-| Appeal to Board of Review | Within 1 month of Commissioner's determination |
-| Appeal to Court | Within 1 month of Board's determination |
-
-### 5.1 Non-Hong Kong Employment (Sec. 8(1A)(b))
-
-- **Non-Hong Kong employment** — If employment is exercised partly outside Hong Kong: Income is time-apportioned (HK days / total days); Only HK-sourced portion is assessable; "60-day rule": visits totalling ≤60 days in a year = exempt  _(IRO Sec. 8(1A)(b))_
-
-### 5.2 Lump Sum Payments (Sec. 11D)
-
-- **Lump sum payments** — Gratuity, severance: assessable if connected to HK employment; Retirement scheme lump sum: exempt if from recognised scheme and meets conditions; Golden handshake: fully assessable  _(IRO Sec. 11D)_
-
-### 5.3 Personal Assessment (IRO Sec. 41)
-
-- **Personal Assessment** — Individuals may elect Personal Assessment to: Set off business losses against salaries income; Claim home loan interest deduction; Pool married couple's income for progressive rates. Requirements: Hong Kong permanent resident OR temporary resident for full year; Married couple must both elect if one does; May be beneficial when one spouse has losses/low income  _(IRO Sec. 41)_
-
-### 5.4 Joint Assessment vs Separate Taxation (Married Couples)
-
-**Joint Assessment vs Separate Taxation (Married Couples)**
-
-| Method | When Beneficial |
-| --- | --- |
-| Joint assessment | One spouse has low/no income; unused allowances transfer |
-| Separate taxation | Both spouses have high income; standard rate applies separately |
-| Personal assessment (joint) | Business losses to offset; mortgage interest claim |
-
-### 5.5 Domestic Rent Deduction (from 2022/23)
-
-**Domestic Rent Deduction (from 2022/23)**
-
-| Rule | Detail |
-| --- | --- |
-| Cap | HK$100,000 per year |
-| Condition | Taxpayer not provided with quarters by employer |
-| Condition | Property not owned by taxpayer or connected person |
-| Condition | Tenancy agreement registered with Rating and Valuation Department |
-| Married | Each spouse claims up to $100,000 if separate tenancies; or total $200,000 if joint assessment |
-
-### 5.6 Tax Reduction History (Recent Years)
-
-**Tax Reduction History (Recent Years)**
-
-| Year of Assessment | Reduction | Ceiling |
-| --- | --- | --- |
-| 2022/23 | 100% | HK$6,000 |
-| 2023/24 | 100% | HK$3,000 |
-| 2024/25 | 100% | HK$1,500 |
-| 2025/26 (proposed) | 100% | HK$3,000 |
-
-## Section 6 -- Penalties and Surcharges
-
-**Penalties and Surcharges**  _(IRO Sec. 80(2))_
+## Penalties and interest
 
 | Offence | Penalty |
 | --- | --- |
-| Late filing without reasonable excuse | Up to HK$10,000 + 3× tax undercharged (IRO Sec. 80(2)) |
-| Failure to notify chargeability | Fine up to HK$10,000 + 3× tax undercharged |
-| Incorrect return | Fine up to HK$10,000 + 3× tax undercharged; or on conviction HK$50,000 + imprisonment |
-| Late payment surcharge | 5% immediately on overdue amount; additional 10% after 6 months |
-| Fraud or wilful evasion | Fine up to HK$50,000 + 3× tax + imprisonment up to 3 years |
+| Late or no return, incorrect return, failure to notify chargeability, without reasonable excuse (s. 80(2)) | Fine of HKD 10,000 plus treble the tax undercharged; or additional tax up to treble under s. 82A |
+| Wilful evasion (s. 82) | Fine of HKD 50,000, treble the tax undercharged and up to 3 years' imprisonment |
+| Late payment | 5% surcharge on the whole balance of the demand notice; any further surcharge is on the Not yet confirmed line, do not apply it |
 
-## Section 7 -- Key Dates Calendar
+## Cross-border points
 
-**Key Dates Calendar**
+- Only Hong Kong-sourced employment income is charged; a non-Hong Kong employment is taxed on Hong Kong-day services.
+- Employees leaving Hong Kong: the employer must notify the IRD at least one month before the employee leaves and withhold money due to the employee for one month after the notice; the employee leaving for more than one month must notify at least one month before departure.
+- Double taxation arrangements (including with the Mainland) may give relief; Mainland liability of Mainland-domiciled individuals continues (`china-to-singapore-relocation-tax` explains domicile).
 
-| Date | Event |
-| --- | --- |
-| 1 April | Start of Year of Assessment |
-| Early May | BIR60 issued by IRD |
-| Early June | Filing deadline (paper) |
-| Early July | Filing deadline (eTAX) |
-| Oct--Nov | Notice of Assessment issued |
-| January | First instalment of provisional tax due |
-| 31 March | End of Year of Assessment |
-| April | Second instalment of provisional tax due |
+## Two worked examples that recompute
 
-## Section 8 -- Reference Material
+**Example 1: single employee, YA 2026/27.** Salary HKD 600,000 plus bonus 50,000 = 650,000. MPF mandatory 18,000. Net income 632,000. Less basic allowance 145,000: net chargeable income 487,000. Progressive: 16,000 on the first 200,000 plus 17% of 287,000 (48,790) = HKD 64,790. Standard: 15% of 632,000 = 94,800. Tax payable: HKD 64,790. (Under the old 2024/25 figures the old file showed 67,000 less a 1,500 reduction.)
 
-**Reference Material**
+```oa-check
+name: HK 2026/27 single employee, salary plus bonus HKD 650,000
+inputs:
+  income: 650000
+  mpf: 18000
+  basic: 145000
+steps:
+  - net_income: income - min(mpf, 18000)
+  - nci: net_income - basic
+  - progressive: 16000 + (nci - 200000) * 0.17
+  - standard: net_income * 0.15
+  - tax: min(progressive, standard)
+expected:
+  net_income: 632000
+  nci: 487000
+  progressive: 64790
+  standard: 94800
+  tax: 64790
+```
 
-| Topic | Reference |
-| --- | --- |
-| Charge to salaries tax | IRO Sec. 8 |
-| Assessable income | IRO Sec. 9 |
-| Deductions | IRO Sec. 12, 12AA, 12B, 12BA, 16AA, 26I, 26J |
-| Allowances | IRO Sec. 28--33 |
-| Progressive rates | IRO Schedule 2 |
-| Standard rate | IRO Sec. 12B / Schedule 2 |
-| Provisional tax | IRO Sec. 63--63J |
-| Personal assessment | IRO Sec. 41--43 |
-| Domestic rent deduction | IRO Sec. 26J |
-| Two-tiered standard rate | Inland Revenue (Amendment) (Taxation Proposals Relating to 2024-25 Budget) Ordinance |
-| IRD official site | ird.gov.hk |
-| eTAX portal | etax.ird.gov.hk |
-| Salaries Tax computation guide | DIPN No. 9 (Rev. 2024) |
+**Married with two children (not an oa-check).** Salary 1,200,000, spouse no income. Net income 1,182,000; married person's allowance 290,000; two children 280,000; net chargeable income 612,000. Progressive: 16,000 + 17% of 412,000 (70,040) = 86,040. Standard: 177,300. Tax: HKD 86,040.
 
-## Disclaimer
+**Example 2: decision, dependent parent allowance or elderly residential care deduction.** A single taxpayer with net income of HKD 800,000 pays HKD 80,000 to a licensed care home for a mother aged 80, who therefore does not live with the taxpayer. Option A, dependent parent allowance: 55,000 (no additional allowance). Option B, elderly residential care deduction: 80,000 (within the 110,000 cap). Both reduce income taxed at 17%. Option B saves 17% of 25,000 = HKD 4,250 more. The deciding figure is the care home cost against the allowance (55,000, or 110,000 if the parent lived with the taxpayer all year).
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Hong Kong CPA, tax representative, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+```oa-check
+name: HK 2026/27 parent allowance vs elderly care deduction
+inputs:
+  net_income: 800000
+  basic: 145000
+  allowance: 55000
+  care_cost: 80000
+steps:
+  - nci_a: net_income - basic - allowance
+  - nci_b: net_income - min(care_cost, 110000) - basic
+  - tax_a: 16000 + (nci_a - 200000) * 0.17
+  - tax_b: 16000 + (nci_b - 200000) * 0.17
+  - saving: tax_a - tax_b
+expected:
+  nci_a: 600000
+  nci_b: 575000
+  tax_a: 84000
+  tax_b: 79750
+  saving: 4250
+```
+
+## Ask the client first
+
+1. Employment: Hong Kong or non-Hong Kong employment, days in Hong Kong, and all income components for 1 April 2026 to 31 March 2027.
+2. Marital status and spouse's income (joint assessment or separate).
+3. Children (ages, births since 2025) and dependent parents or grandparents (ages, living together, care home).
+4. Deductible payments: MPF, self-education, home loan interest or rent, VHIS, QDAP, TVC, donations.
+5. Housing provided by the employer.
+6. Provisional tax already charged and whether a holdover applies.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| GovHK, tax rates of salaries tax and personal assessment. Read for the progressive bands and the 15% and 16% standard rates | https://www.gov.hk/en/residents/taxes/taxfiling/taxrates/salariesrates.htm | 2026-11-14 |
+| IRD, 2026-27 Budget tax measures. Read for the YA 2026/27 allowances, the 110,000 elderly care cap, the two-year newborn allowance and the YA 2025/26 reduction | https://www.ird.gov.hk/eng/tax/budget.htm | 2026-11-14 |
+| IRD, 2026 Policy Address tax measures. Read for the proposed 160,000 child allowance (not yet enacted) | https://www.ird.gov.hk/eng/tax/policyaddress2026.htm | 2026-11-14 |
+| IRD, A brief guide to taxes 2025/26 (PDF). Read for the other allowances, deduction caps, rental value percentages, provisional tax and holdover, departure notices | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf | 2026-11-14 |
+| IRD, block extension letter for 2025/26 (PDF). Read for the BIR60 issue and extended dates | https://www.ird.gov.hk/eng/pdf/bel26e.pdf | 2026-11-14 |
+| IRD penalty policy. Read for ss. 80(2), 82 and 82A | https://www.ird.gov.hk/eng/pol/ppo.htm | 2026-11-14 |
+| GovHK, consequence of not paying tax on time. Read for the 5% surcharge | https://www.gov.hk/en/residents/taxes/taxfiling/consequences/consequencenotpaytax.htm | 2026-11-14 |
+
+Not yet confirmed: the 60-day visit exemption for non-Hong Kong employment; the further 10% surcharge; the one-month objection period (IRO s. 64 not opened); the split of provisional tax instalments (old file said 75% in January and 25% in April); the 2026/27 BIR60 issue date (May 2027); the 2026 Policy Address child allowance of HKD 160,000 (pending legislation).
