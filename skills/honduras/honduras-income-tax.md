@@ -1,604 +1,227 @@
 ---
 name: honduras-income-tax
-description: Use this skill whenever asked about Honduras personal income tax (ISR — Impuesto Sobre la Renta) for individuals (personas naturales), including self-employed professionals. Trigger on phrases like "how much ISR do I pay", "Honduras income tax", "Declaración Jurada", "Form 102", "tabla progresiva", "aportación solidaria", "solidarity contribution", "IHSS contributions", "RAP", "Honduran tax return", "renta neta gravable", "self-employed tax Honduras", "ingreso exento", or any question about filing or computing ISR for an individual or self-employed client in Honduras. Also trigger when preparing or reviewing a Declaración Jurada de ISR — Persona Natural, classifying deductible expenses, advising on Pagos a Cuenta (advance payments), or the solidarity contribution. This skill covers the progressive ISR table, solidarity contribution, alternative minimum tax, capital gains, non-resident withholding, IHSS/RAP social security, filing forms and deadlines. ALWAYS read this skill before touching any Honduras income tax work.
-version: 0.1
+description: >
+  Use this skill for Honduras personal income tax (Impuesto Sobre la Renta, ISR) of
+  resident individuals and self-employed professionals for tax year 2026. It gives the
+  SAR 2026 progressive scale (exempt to L228,324.32, then 15%, 20% and 25%), the art. 13
+  deductions (L40,000 flat, L80,000 over 65), the 13th and 14th month exemption, the 10%
+  dividend and capital gains taxes, the 10% housing rent tax, the 12.5% art. 50 retention
+  on fees, the four pagos a cuenta, filing of Form 102 by 30 April and the Codigo
+  Tributario penalties. Trigger phrases include ISR Honduras, Declaracion Jurada 102,
+  tabla progresiva 2026, renta neta gravable, pagos a cuenta, retencion 12.5% honorarios
+  and SAR Oficina Virtual. Companies go to hn-corporate-income-tax; employer withholding
+  to honduras-payroll.
+version: "1.0"
 jurisdiction: HN
 tax_year: 2026
-last_updated: 2026-07-13
-depends_on:
-  - income-tax-workflow-base
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
+type: computation
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# Honduras Personal Income Tax (ISR) — Individuals
+# Honduras personal income tax (ISR), individuals, tax year 2026
 
-## Section 1 — Quick Reference
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed by a Honduran accountant. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Honduras.
 
-**Quick Reference table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Honduras (República de Honduras) |
-| Tax | Impuesto Sobre la Renta (ISR) — personal income tax on individuals |
-| Currency | Honduran Lempira (HNL / "L") only |
-| Tax year | Calendar year (1 January — 31 December) [PwC, tax administration] |
-| Basis of taxation | Territorial — Honduran-source income; non-residents taxed only on Honduran-source income [PwC] |
-| Primary legislation | Ley del Impuesto Sobre la Renta; Código Tributario (Decreto 170-2016) |
-| Solidarity contribution | Decreto 278-2013 (Aportación Solidaria) |
-| Tax authority | SAR — Servicio de Administración de Rentas (sar.gob.hn) |
-| Filing portal | DET Live (detlive.sar.gob.hn) |
-| Annual return form | Declaración Jurada del ISR — Persona Natural, Form 102 / 102-1 [SAR DET Live] |
-| Filing & payment deadline | 30 April of the year following the tax year [Radio HRN; PwC] |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Individuals (personas naturales) domiciled in Honduras who earn Honduran-source income from work, a profession, a trade, rents or capital, for the calendar tax year 2026 (1 January to 31 December, LISR art. 27). Honduras taxes Honduran-source income: art. 5 taxes non-residents only on Honduran-source gross income, at the flat rates in Cross-border points below.
 
-### ISR Progressive Table — 2026 (CURRENT)
+In scope: salaried individuals with more than one source, self-employed professionals and comerciantes individuales, landlords, recipients of dividends and capital gains.
 
-**ISR Progressive Table — 2026 (CURRENT)**  _(SAR Comunicado 02-2026; Deloitte HN 12 Jan 2026; PwC, updated 27 Feb 2026)_
+Out of scope, refer:
 
-| Annual net taxable income (HNL) | Monthly equivalent (HNL) | Rate | Cumulative tax at top of band |
-| --- | --- | --- | --- |
-| 0.01 – 228,324.32 | 0.01 – 22,360.36 | Exempt (0%) | L 0.00 |
-| 228,324.33 – 348,154.10 | 22,360.37 – 32,346.18 | 15% | L 17,974.47 |
-| 348,154.11 – 809,660.75 | 32,346.19 – 70,805.06 | 20% | L 110,275.80 |
-| 809,660.76 and above | 70,805.07 and above | 25% | — |
+- **R-HN-1 Domicile unknown.** Non-domiciled persons pay the art. 5 flat rates by withholding and do not use the scale. Do not compute until domicile is confirmed.
+- **R-HN-2 Legal persons.** Companies file Form 103 and pay 25% plus the solidarity contribution: use [hn-corporate-income-tax](hn-corporate-income-tax.md).
+- **R-HN-3 Special regimes.** Export, free zone (ZOLI, ZOLITUR), tourism and other exempt regimes have their own rules. Refer to a Honduran accountant.
+- **R-HN-4 Capital gains computation.** The 10% single tax applies (art. 10), but basis and proceeds need specialist work. Flag and refer.
+- **R-HN-5 Arrears or SAR enforcement.** Refer immediately; do not advise on settlement.
+- **R-HN-6 Sales tax (ISV).** Use [honduras-isv](honduras-isv.md).
 
-Indexed for inflation each year by SAR using the prior year's interannual CPI (4.98% for 2026). [SAR Comunicado 02-2026; Deloitte HN 12 Jan 2026; PwC, updated 27 Feb 2026]
-
-**Cumulative-tax derivation (recomputed):**
-- Band 2: (348,154.10 − 228,324.32) × 15% = 119,829.78 × 0.15 = **L 17,974.47**
-- Band 3: (809,660.75 − 348,154.10) × 20% = 461,506.65 × 0.20 = 92,301.33; plus L 17,974.47 = **L 110,275.80**
-
-### ISR Progressive Table — 2025 (FY2025 returns, filed by 30 Apr 2026)
-
-**ISR Progressive Table — 2025 (FY2025 returns, filed by 30 Apr 2026)**  _(KPMG TaxNewsFlash 14 Jan 2025; Bloomberg Línea; SAR)_
-
-| Annual net taxable income (HNL) | Monthly equivalent (HNL) | Rate |
-| --- | --- | --- |
-| 0 – 217,493.16 | 0 – 21,457.76 | Exempt (0%) |
-| 217,493.17 – 331,638 [RESEARCH GAP — reviewer to confirm exact centavos] | 21,457.77 – 30,969 | 15% |
-| 331,638 – 771,252 [RESEARCH GAP — reviewer to confirm exact centavos] | 30,969 – 67,604 | 20% |
-| 771,252 and above [RESEARCH GAP — reviewer to confirm exact centavos] | 67,604 and above | 25% |
-
-Indexed using 3.88% CPI. [KPMG TaxNewsFlash 14 Jan 2025; Bloomberg Línea; SAR]
-
-**Note:** The exempt base **L217,493.16** is also the legal FY2025 filing threshold cited by SAR. The two upper 2025 thresholds come from a secondary SAR/Bloomberg summary and are rounded — confirm exact centavos from the SAR 2025 comunicado PDF before filing a FY2025 return.
-
-### Surtaxes, Minimum Tax and Capital Gains
-
-**Surtaxes, Minimum Tax and Capital Gains**  _(Decreto 278-2013; PwC)_
-
-| Item | Rate / threshold | Source |
-| --- | --- | --- |
-| Solidarity Contribution (Aportación Solidaria) | 5% surtax on net taxable income **exceeding L1,000,000** | Decreto 278-2013 |
-| Alternative Minimum Tax (high earners) | 1.5% of **gross income** for domiciled individuals with gross income **≥ L10,000,000**, when it exceeds progressive ISR otherwise due | PwC |
-| Capital gains | Flat **10%** | PwC |
-
-### Conservative Defaults
-
-**Conservative Defaults**
+Conservative defaults when a fact is missing:
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown residence/domicile status | STOP — do not apply the resident progressive table without confirming domicile |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown income source (Honduran vs foreign) | Treat as Honduran-source (taxable) pending confirmation |
-| Pure salaried employee with PAYE withholding | Assume no separate filing obligation unless other income exists |
-| Income ≥ L10,000,000 gross | Flag alternative minimum tax for reviewer |
-| Net taxable income > L1,000,000 | Flag solidarity contribution |
+| Domicile unknown | Stop (R-HN-1) |
+| Business use share of a vehicle, phone or home unknown | 0% deductible until documented |
+| Expense without a factura bearing the supplier's RTN | Not deductible |
+| Source of a receipt unclear (foreign client, platform) | Treat as Honduran-source until the place of service is confirmed |
+| Gross income of the prior year above L1,000,000,000 | Flag the art. 22-A minimum tax for review |
+| Fees received from a legal person | Assume 12.5% was retained unless the client is in pagos a cuenta |
+| Pagos a cuenta or ISR paid | A credit against the final tax, never an expense |
 
-## Section 2 — Required Inputs and Refusal Catalogue
+Red flags: deductions over half of gross fees, rent received in cash without receipts, fees from abroad booked as exempt, pagos a cuenta not paid for the previous year, a Form 102 not filed although gross income exceeded the exempt amount, ISV collected on sales booked as income.
 
-### Required Inputs
+## Rates, bands and thresholds
 
-**Minimum viable** — bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of residence/domicile status and whether the client is purely salaried (PAYE) or has self-employment / professional / rental / investment income.
+**Progressive scale, art. 22(b), tax year 2026 (annual renta neta gravable, HNL).** SAR adjusted the scale by 4.98% (2025 interannual CPI) under Acuerdo SAR-01-2026, La Gaceta 37,051 of 23 January 2026. Employers use the same table for monthly withholding from 1 January 2026.
 
-**Recommended** — all sales invoices and fiscal receipts (facturas), purchase invoices/receipts, IHSS/RAP contribution records, prior year Declaración Jurada or SAR assessment, RTN (Registro Tributario Nacional), Pagos a Cuenta payment confirmations.
+| Band | From (L) | To (L) | Rate | Source |
+| --- | --- | --- | --- | --- |
+| 1 | 0.01 | 228,324.32 | Exempt | SAR Acuerdo SAR-01-2026: https://www.sar.gob.hn/download/acuerdo-numero-sar-01-2026-publicado-en-fecha-23-de-enero-del-2026-en-la-gaceta-no-37051/?wpdmdl=22954 |
+| 2 | 228,324.33 | 348,154.10 | 15% | same |
+| 3 | 348,154.11 | 809,660.75 | 20% | same |
+| 4 | 809,660.76 | and above | 25% | same |
 
-**Ideal** — complete income and expenditure account, asset register, employer salary certificate (constancia de sueldo), evidence of any solidarity-contribution advance instalments paid.
+Tax at the top of band 2 is L17,974.47 and at the top of band 3 L110,275.80 (computed: 119,829.78 x 15%; plus 461,506.65 x 20%).
 
-**Refusal if minimum is missing — SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This ISR computation was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid fiscal documentation (facturas with RTN) and that income is correctly classified as Honduran-source."
+**Tax year 2025 scale (for 2025 returns filed in 2026).** Acuerdo SAR-07-2025, La Gaceta 36,735 of 9 January 2025.
 
-### Refusal Catalogue
+| Band | From (L) | To (L) | Rate | Source |
+| --- | --- | --- | --- | --- |
+| 1 | 0.01 | 217,493.16 | Exempt | SAR Acuerdo SAR-07-2025: https://www.sar.gob.hn/download/acuerdo-numero-sar-07-2025-publicado-en-fecha-9-de-enero-del-2025-en-la-gaceta-no-36735/?wpdmdl=22996 |
+| 2 | 217,493.17 | 331,638.50 | 15% | same |
+| 3 | 331,638.51 | 771,252.38 | 20% | same |
+| 4 | 771,252.39 | and above | 25% | same |
 
-- **R-HN-1 — Residence/domicile unknown** — "Honduras taxes residents and non-residents differently; non-residents bear final withholding at flat rates and generally do not file the progressive return. This skill cannot compute ISR without confirming domicile. Please confirm before proceeding."  _(R-HN-1)_
-- **R-HN-2 — Companies / legal persons** — "This skill covers individuals (personas naturales) only. Legal persons (personas jurídicas) file Form 103 with Activo Neto and Aportación Solidaria, and face the corporate ISR regime. Escalate to a Honduran-licensed accountant."  _(R-HN-2)_
-- **R-HN-3 — Special regimes** — "Export, free-zone (Zona Libre/maquila), tourism, and other special regimes have bespoke rules and exemptions. Out of scope. Escalate to a Honduran-licensed accountant."  _(R-HN-3)_
-- **R-HN-4 — Capital gains / property disposals** — "Capital gains are taxed at a flat 10% and require specialised computation of basis and proceeds. Out of scope for the progressive-income workflow. Escalate to a Honduran-licensed accountant."  _(R-HN-4)_
-- **R-HN-5 — Arrears / SAR enforcement** — "Client has outstanding tax arrears or is subject to SAR enforcement. Penalties and surcharges under Código Tributario Art. 160 apply. Do not advise. Escalate to a Honduran-licensed accountant immediately."  _(R-HN-5)_
-- **R-HN-6 — Sales tax (ISV/VAT) requested** — "This skill covers income tax (ISR) only. Honduras sales tax (ISV) is a separate 15% (18% on certain premium services) regime — escalate to the appropriate ISV skill or a licensed accountant."  _(R-HN-6)_
+**Other amounts and rates for individuals.**
 
-## Section 3 — Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Honduran statements are typically in Spanish. Match by case-insensitive substring on the counterparty/description as it appears in the statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Income Patterns (Credits / Créditos)
-
-**Income Patterns (Credits / Créditos)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Client name + TRANSFERENCIA, DEPOSITO, ABONO, PAGO RECIBIDO | Business / professional income | Renta gravable; if ISV-registered, extract net of 15% ISV |
-| HONORARIOS, SERVICIOS PROFESIONALES, CONSULTORIA | Business / professional income | Professional fees — typical for self-employed |
-| COMISION, COMISIONES | Business income | Commissions are taxable |
-| STRIPE PAYOUT, PAYPAL, WISE, PAYONEER | Business income | Platform payout — match to underlying invoices |
-| UPWORK, FIVERR, FREELANCER | Business income | Freelance platform — net of platform commission |
-| SUELDO, SALARIO, PLANILLA, NOMINA, [employer name] | Employment income | PAYE-withheld; generally not in the self-employment base |
-| ALQUILER, RENTA RECIBIDA, ARRENDAMIENTO | Rental income | Taxable income, separate source |
-| INTERESES RECIBIDOS, INTERES | Investment income | Interest income (resident WHT 10% may apply) |
-| DIVIDENDOS | Investment income | Dividends (WHT 10%) |
-| DEVOLUCION SAR, REINTEGRO ISR | EXCLUDE | Tax refund — not income |
-| BONO GOBIERNO, SUBSIDIO (capital) | EXCLUDE unless revenue subsidy | Capital grants EXCLUDE; revenue subsidies = income |
-
-### 3.2 Expense Patterns (Debits / Débitos) — Deductible
-
-**Expense Patterns (Debits / Débitos) — Deductible**
-
-| Pattern | Category | Treatment | Notes |
+| Item | Amount or rate | Condition | Source |
 | --- | --- | --- | --- |
-| ALQUILER OFICINA, RENTA LOCAL | Office rent | Deductible | Dedicated business premises; needs factura with RTN |
-| CONTADOR, AUDITOR, CONTABILIDAD | Accountancy fees | Deductible | Business-related |
-| ABOGADO, NOTARIO, LEGAL (negocio) | Legal fees | Deductible | Must be business-related |
-| PAPELERIA, UTILES DE OFICINA | Office supplies | Deductible |  |
-| PUBLICIDAD, MARKETING, GOOGLE ADS, META ADS | Marketing/advertising | Deductible |  |
-| CAPACITACION, CURSO, SEMINARIO, COLEGIO PROFESIONAL | Training / professional subs | Deductible | Must relate to current business |
-| COMISION BANCARIA, CARGO BANCARIO, MANTENIMIENTO CUENTA | Bank charges | Deductible | Business account only |
-| COMISION STRIPE, COMISION PAYPAL | Payment processing fees | Deductible |  |
-| SOFTWARE, SUSCRIPCION, MICROSOFT 365, ADOBE, ANTHROPIC, OPENAI | Software subscription | Deductible | Recurring subscription = operating expense |
-| INTERNET, TIGO, CLARO, HONDUTEL (negocio) | Telecoms/broadband | Deductible (business %) | Apportion if mixed; default 0% if personal line |
+| Flat deduction for education and medical fees (art. 13 a) | L40,000 a year | No receipts needed; services from professionals resident in Honduras | SAR Ayuda Form 102 (2026): https://www.sar.gob.hn/download/ayuda-declaracion-jurada-impuesto-sobre-la-renta-102/?wpdmdl=22532 |
+| Same deduction, taxpayer over 65 | L80,000 a year | Art. 13 a) as reformed by Decreto 59-2020 | same |
+| Donations (art. 13 d) | Up to 10% of renta neta gravable | Legally recognised state, municipal, educational, charitable or sports bodies | same |
+| 13th month (aguinaldo) and 14th month salary | Exempt up to 10 average minimum wages each | Art. 10 h); the excess is taxable | same |
+| Average minimum wage 2026 (salario minimo promedio) | L14,917.20 a month | So the 2026 exempt cap is L149,172.00 for each of the 13th and 14th month | Secretaria de Trabajo, Tabla 2026: https://www.trabajo.gob.hn/wp-content/uploads/2026/05/TABLA-SALARIO-MINIMO-2026-.pdf |
+| Dividends and profit shares received by residents (art. 25) | 10% single tax, retained by the company | Excluded from the scale | SAR LISR consolidated text: https://www.sar.gob.hn/download/ley-isr-texto-consolidado-hasta-el-acuerdo-no-sar-014-2023/?wpdmdl=17388 |
+| Capital gains (art. 10) | 10% single tax | Domiciled or not; not on the scale | same |
+| Retention on fees, commissions and technical services paid by legal persons (art. 50) | 12.5% | Not applied to persons in the pagos a cuenta regime; remitted within 10 days of the following month | same |
+| Gross income below which a domiciled individual need not file (art. 28) | L199,039.47 in the 2023 text | The law says amounts tied to the scale are adjusted with it; see Not yet confirmed | same |
+| Pagos a cuenta below which one single payment is made | L200 a year | Paid by 30 November | same |
+| Housing rent received by individuals (Decreto 17-2010 art. 5) | 10% single cedular tax | Rent above L15,000 a month | SAR Ayuda Form 102 (2026): https://www.sar.gob.hn/download/ayuda-declaracion-jurada-impuesto-sobre-la-renta-102/?wpdmdl=22532 |
+| Minimum tax on gross income (art. 22-A, 3) | 1% of gross income (0.5% for listed sectors) | Only if gross income of the prior year exceeded L1,000,000,000 and the scale gives less; salary earners excluded | SAR Generalidades 30 de abril (June 2026): https://www.sar.gob.hn/download/generalidades-impuestos-con-vencimiento-al-30-de-abril/?wpdmdl=23287 |
 
-### 3.3 Statutory Deductions / Contributions
+The solidarity contribution (5% over L1,000,000) is charged on legal persons only: SAR's June 2026 guide opens "Las personas juridicas ... pagaran una Aportacion Solidaria del 5%". It does not apply to an individual's Form 102.
 
-**Statutory Deductions / Contributions**
+## The base
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| IHSS, SEGURO SOCIAL, COTIZACION IHSS | Statutory deduction | Employee EM+IVM contributions — see Section 5 |
-| RAP, APORTACION RAP, REGIMEN APORTACIONES PRIVADAS | Statutory deduction | Mandatory private pension/severance — see Section 5 |
-| INFOP | Employer-only levy | 1% employer only — NOT an employee deduction [PwC] |
-| IMPUESTO VECINAL, IMPUESTO PERSONAL MUNICIPAL | Municipal tax | Withheld by employers with 5+ workers, graduated 1.50–5.25 per thousand of gross [PwC] |
+1. **Gross income (renta bruta, art. 10).** All Honduran-source receipts in money or kind: salary, fees, business income, rent and interest. Dividends (10%), capital gains (10%) and housing rent above L15,000 a month (10%) are taxed separately and stay out of the scale.
+2. **Exempt items (art. 10 h).** Labour severance benefits, vacation bonus up to 30 extra days, pensions and the 13th and 14th month up to 10 average minimum wages each. Contributions to the institutions paying these benefits are deductible, which is how SAR's Form 102 guide lets RAP contributions of 1.5% in.
+3. **Deductions (art. 13).** The flat L40,000 (L80,000 over 65) for education and medical fees, without receipts; documented costs of a profession, art, trade or workshop; farm costs for farmers and ranchers; donations up to 10% of renta neta gravable. A business expense needs a valid factura with the supplier's RTN. Mixed-use costs (home office, vehicle, phone) are deductible only for the documented business share. Private living costs, fines and surcharges, ISR itself and drawings are never deductible.
+4. **Renta neta gravable** = gross taxable income less exempt items and deductions. Apply the 2026 scale.
+5. **Credits.** Art. 50 retentions (12.5%) suffered, pagos a cuenta paid and other retentions shown in the SAR current account reduce the tax due on Form 102.
+6. **Minimum tax.** Only for a person whose prior-year gross income exceeded L1,000,000,000: pay 1% of gross income if the scale gives less. Salary earners are outside art. 22-A.
 
-### 3.4 Expense Patterns — NOT Deductible
+Each tax year stands alone (art. 30): results of earlier or later years do not offset. A bad debt is deductible only if the income was declared before, recovery was attempted and the debt is truly lost. ISV collected on sales belongs to SAR and is not income; input ISV of a non-registered person is part of the cost.
 
-**Expense Patterns — NOT Deductible**
+## Deadlines and filing
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| RESTAURANTE, CENA, ALMUERZO, ENTRETENIMIENTO | NOT deductible | Personal/entertainment — flag any business-meal claim for reviewer |
-| SUPERMERCADO, LA COLONIA, WALMART, DESPENSA | NOT deductible | Private living costs |
-| MULTA, SANCION, RECARGO, MORA | NOT deductible | Fines/penalties — public policy |
-| PAGO ISR, IMPUESTO SOBRE LA RENTA | NOT deductible | Income tax cannot reduce its own base |
-| RETIRO PERSONAL, CAJERO (personal), GASTOS PERSONALES | NOT deductible | Drawings / private withdrawals |
-
-### 3.5 Exclusions (Neither Income nor Expense)
-
-**Exclusions (Neither Income nor Expense)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA PROPIA, ENTRE CUENTAS PROPIAS | EXCLUDE | Own-account transfer |
-| PRESTAMO, ABONO PRESTAMO, CAPITAL PRESTAMO | EXCLUDE | Loan principal movement |
-| PAGO ISV, IMPUESTO SOBRE VENTAS | EXCLUDE | ISV liability payment, not an income-tax expense |
-| PAGO A CUENTA, ANTICIPO ISR | Credit against ISR liability | Advance payment — not an expense; offsets final tax |
-| APORTACION SOLIDARIA (anticipo) | Credit against solidarity contribution | Quarterly advance instalment |
-
-### 3.6 Honduran Banks — Statement Format Reference
-
-**Honduran Banks — Statement Format Reference**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Banco Atlántida | TRANSFERENCIA, ABONO, CARGO, COMISION | PDF/CSV; date DD/MM/YYYY |
-| BAC Credomatic | PAGO, TRANSFERENCIA, DEBITO, CARGO | PDF/CSV; merchant in description |
-| Banco Ficohsa | DEPOSITO, RETIRO, COMISION | PDF; Spanish descriptions |
-| Banco de Occidente | ABONO, CARGO, TRANSFERENCIA | PDF |
-| Davivienda Honduras | PAGO, TRANSFERENCIA, COMISION | PDF/CSV |
-
-## Section 4 — Worked Examples
-
-All figures in Honduran Lempira (HNL / "L"). Statement lines are illustrative.
-
-### Example 1 — Professional fee received (self-employed)
-
-**Input line:**
-`12/03/2026 ; BAC TRANSFERENCIA RECIBIDA ; CONSTRUCTORA MAYA SA ; PAGO HONORARIOS FAC-0042 ; +34,500.00 ; HNL`
-
-**Reasoning:**
-Professional fee for services. Honduran-source, taxable. If the client is ISV-registered and the L34,500 includes 15% ISV, the net is L34,500 / 1.15 = L30,000 (ISV L4,500 is a liability to SAR, excluded from the income-tax base). Assume here the client is NOT ISV-registered, so the full L34,500 is gross income.
-
-**Classification:** Renta gravable = L34,500.00 (or L30,000.00 net if ISV-registered).
-
-### Example 2 — Software subscription (deductible)
-
-**Input line:**
-`01/04/2026 ; FICOHSA CARGO ; ADOBE SYSTEMS ; CREATIVE CLOUD ABR ; -780.00 ; HNL`
-
-**Reasoning:**
-Monthly recurring SaaS subscription used for the business. Fully deductible operating expense, provided a valid factura with the client's RTN is retained.
-
-**Classification:** Deductible expense = L780.00.
-
-### Example 3 — IHSS + RAP employee contributions (statutory deduction)
-
-**Input line (monthly salary at the contribution ceiling):**
-`30/04/2026 ; ATLANTIDA PLANILLA ; COTIZACION IHSS + RAP ; ABR 2026 ; -773.70 ; HNL`
-
-**Reasoning:**
-Employee social-security burden on a salary at or above the 2025 ceiling of **L11,903.13/month**: EM 2.5% + IVM 2.5% + RAP 1.5% = **6.5%** combined employee share. [El Heraldo; Dinero HN; RAP comunicado 2025]
-
-Computation: L11,903.13 × 6.5% = L773.70 (11,903.13 × 0.065 = 773.70345, rounded to L773.70).
-
-**Classification:** Statutory employee contribution = L773.70 for the month. [RESEARCH GAP — confirm 2026 IHSS/RAP ceiling; only the 2025 ceiling of L11,903.13 is authoritatively confirmed.]
-
-### Example 4 — Solidarity contribution (high net income)
-
-**Input:**
-Self-employed individual, FY2026, net taxable income (renta neta gravable) = **L1,400,000**.
-
-**Reasoning:**
-The solidarity contribution (Aportación Solidaria, Decreto 278-2013) is 5% on the portion of net taxable income exceeding L1,000,000. It is NOT deductible from ISR and is settled separately.
-
-Computation: (1,400,000 − 1,000,000) × 5% = 400,000 × 0.05 = **L20,000.00**.
-
-This is in addition to the progressive ISR on the full L1,400,000.
-
-**Classification:** Solidarity contribution = L20,000.00 (separate line from progressive ISR).
-
-### Example 5 — Drawings (exclude)
-
-**Input line:**
-`15/05/2026 ; OCCIDENTE TRANSFERENCIA ; CUENTA PROPIA AHORRO ; ; -25,000.00 ; HNL`
-
-**Reasoning:**
-Transfer between the client's own accounts. Neither income nor expense.
-
-**Classification:** EXCLUDE.
-
-### Example 6 — Pago a Cuenta (advance ISR payment)
-
-**Input line:**
-`30/06/2026 ; BAC PAGO SAR ; PAGO A CUENTA ISR ; 1ER ANTICIPO ; -18,000.00 ; HNL`
-
-**Reasoning:**
-Advance income-tax instalment (Pago a Cuenta). Not an expense — it is a credit against the final annual ISR liability, settled with the Declaración Jurada on 30 April.
-
-**Classification:** Credit against ISR = L18,000.00. NOT a deduction.
-
-## Section 5 — Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Territorial Scope
-
-- **Territorial Scope** — Honduras taxes on a territorial basis — only Honduran-source income is taxable for both residents and non-residents. Foreign-source income of residents is generally outside scope; confirm source before including any item.  _(Ley del ISR; PwC)_
-
-### 5.2 Progressive ISR — Resident Individuals
-
-- **Progressive ISR — Resident Individuals** — Apply the 2026 progressive table (Section 1) to annual net taxable income (renta neta gravable = gross taxable income less allowable deductions and the exempt base). The table is re-indexed annually by SAR. Cumulative-tax figures are pre-derived in Section 1 — pass the chargeable base to the deterministic engine rather than computing band tax by hand.  _(SAR Comunicado 02-2026)_
-
-### 5.3 Solidarity Contribution
-
-- **Solidarity Contribution** — A 5% surtax on net taxable income exceeding L1,000,000. Not deductible from ISR. Paid via three quarterly advance instalments (30 Jun, 30 Sep, 31 Dec) and settled with the annual return on 30 April. Excludes special export/tourism regimes.  _(Decreto 278-2013)_
-
-### 5.4 Alternative Minimum Tax
-
-- **Alternative Minimum Tax** — Domiciled individuals with gross income ≥ L10,000,000 pay the greater of progressive ISR or 1.5% of gross income. Flag any client at or above this threshold for reviewer.  _(PwC)_
-
-### 5.5 Capital Gains
-
-- **Capital Gains** — Flat 10% on the gain. Out of scope for the progressive workflow — see R-HN-4.  _(PwC)_
-
-### 5.6 Deductibility — General Test
-
-- **Deductibility — General Test** — Expenses are deductible only if ordinary, necessary, and incurred to produce or maintain Honduran-source taxable income, and supported by a valid factura bearing the supplier's RTN. Mixed-use expenses must be apportioned on a reasonable, documented basis.
-
-### 5.7 Non-Deductible Items
-
-**Non-Deductible Items**
-
-| Item | Reason |
-| --- | --- |
-| Entertainment / personal meals | Private consumption |
-| Personal living expenses | Not business-related |
-| Fines, penalties, surcharges (multas/recargos) | Public policy |
-| Income tax (ISR) itself | Tax on income |
-| Solidarity contribution | Expressly non-deductible from ISR |
-| Drawings / personal withdrawals | Not an expense |
-
-### 5.8 Social Security & Payroll Contributions (2025 reform)
-
-**Social Security & Payroll Contributions (2025 reform)**  _(El Heraldo; Dinero HN; RAP comunicado 2025)_
-
-| Regime | Employee | Employer | State |
+| Obligation | Form or channel | Deadline | Source |
 | --- | --- | --- | --- |
-| EM (Enfermedad y Maternidad — health/maternity) | 2.5% | 5.0% | — |
-| IVM (Invalidez, Vejez y Muerte — pensions) | 2.5% | 3.5% | 0.5% |
-| RAP (Régimen de Aportaciones Privadas) | 1.5% | 1.5% | — |
-| **TOTAL** | **6.5%** | **10.0%** | **0.5%** |
+| Annual return, persona natural | Declaracion Jurada ISR Persona Natural, Form 102, Oficina Virtual (OVI) | 1 January to 30 April 2027 for tax year 2026 (next working day if a holiday) | LISR art. 28; SAR Ayuda Form 102 |
+| Pagos a cuenta for 2026 | Three quarterly quotas, each a quarter of the prior year's tax | 30 June, 30 September and 31 December 2026; the fourth is the balance with the return by 30 April 2027 | LISR art. 34 |
+| Manifestacion de pagos a cuenta for 2027 | Declared in the last month of the year | December 2026; new taxpayers within 30 days of starting | LISR art. 29 |
+| Art. 50 retention suffered | Credit on Form 102 | With the return | LISR art. 50 |
+| Notice of suspension | Escrito de notificacion de suspension, for those below the exempt amount who filed before | Before 30 April | SAR ISR page |
 
-**Legislation:** Ley del Sistema Integral de Protección Social (approved 30 Apr 2024); new rates effective Jan 2025. Administered by IHSS (Instituto Hondureño de Seguridad Social) and RAP (Régimen de Aportaciones Privadas). Applied on salary up to the 2025 monthly ceiling of L11,903.13 (unified for EM and IVM; also the RAP piso/techo de cotización). [El Heraldo; Dinero HN; RAP comunicado 2025]
+Who need not file (art. 28): a domiciled individual whose gross income does not exceed the exempt amount, and a salary earner with a single employer whose ISR was fully withheld. Anyone else with Honduran income files Form 102. Businesses attach a balance sheet and income statement certified by a Honduran accountant.
 
-**Totals verification (recomputed):** Employee 2.5 + 2.5 + 1.5 = **6.5%** ✓; Employer 5.0 + 3.5 + 1.5 = **10.0%** ✓; State 0.5% on IVM only.
+## Penalties and interest
 
-**Employer-only:** INFOP (training fund) 1% of payroll, no employee portion. [PwC]
-
-**Caveat:** PwC's "other taxes" page lists pre-reform IHSS ceilings (L11,109 EM / L11,336 IVM) and a 1% employee IVM rate. The 2025 reform figures above (2.5% employee IVM, unified L11,903.13 ceiling) supersede them. [RESEARCH GAP — confirm 2026 IHSS/RAP ceiling directly with IHSS/RAP; only the 2025 ceiling is confirmed.]
-
-### 5.9 Non-Resident Withholding (Honduran-source income)
-
-**Non-Resident Withholding (Honduran-source income)**  _(PwC, withholding taxes)_
-
-| Payment type | WHT rate |
-| --- | --- |
-| Dividends | 10% |
-| Interest (commercial ops, bonds, securities) | 10% |
-| Royalties (incl. mining/natural resources) | 25% |
-| Salaries/fees for services (in or outside HN) | 25% |
-| Any other income not specified | 10% |
-
-Honduras has no double-tax treaties (only TIEAs with the US and some Central American countries). [PwC]
-
-### 5.10 Filing, Forms & Deadlines
-
-**Filing, Forms & Deadlines**
-
-| Item | Detail | Source |
+| Default | Charge | Source |
 | --- | --- | --- |
-| Tax year | Calendar year ending 31 December | PwC |
-| Annual return | Declaración Jurada del ISR — Persona Natural, Form 102 / 102-1, via DET Live | SAR DET Live |
-| Filing & payment deadline | 30 April of the following year | Radio HRN; PwC |
-| Who must file | Individuals with annual net income exceeding the exempt base (L217,493.16 for FY2025); self-employed earning fees, commissions, royalties, service income, interest or rental income | Radio HRN; PwC |
-| Pure salaried employees | ISR withheld monthly via PAYE; generally need not file unless other income exists | PwC |
-| Suspension | If below the exempt base but previously filed, file a Notification of Suspension before 30 Apr | Radio HRN |
-| Advance payments | Pagos a Cuenta paid in instalments during the year, settled with the annual return | PwC; SAR |
-| RTN | Registro Tributario Nacional required to file and operate | SAR |
+| ISR return filed late or not filed (CT art. 160.2) | 5% of the tax in month 1, 10% month 2, 15% month 3, 20% month 4, 25% month 5 onward, in proportion to days, not cumulative | Codigo Tributario consolidated text |
+| Late payment of tax or pagos a cuenta (CT art. 163.1) | 3% interest a month or part month, up to 36% | same |
+| Retained tax not remitted by an agent (CT art. 163.2) | 5% interest a month or part month, up to 60% | same |
+| Formal faults (CT art. 160.1) | From 10% of one average minimum wage (gross income up to L250,000) up to 10 average minimum wages and more | same |
+| Voluntary regularisation (CT art. 162) | Penalty cut by 50% before any SAR action, 30% after action but before notice, 10% before judicial demand; small taxpayers a further 20% | same |
 
-### 5.11 Penalties
+A missing Manifestacion de pagos a cuenta is fined as a late return (LISR art. 29).
 
-- **Penalties** — Late filing of the Declaración Jurada is subject to fines and surcharges under Article 160 of the Código Tributario (Decreto 170-2016). [RESEARCH GAP — reviewer to confirm] the exact graduated lempira fine/surcharge schedule directly from Decreto 170-2016 Art. 160 before advising on penalty amounts.  _(Radio HRN; Código Tributario (Decreto 170-2016) Art. 160)_
+## Cross-border points
 
-## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+Non-residents and non-domiciled persons pay a final tax on Honduran-source gross income, withheld by the payer (LISR art. 5): 25% on rents of movable or immovable property, mining royalties, salaries, fees and other pay for services, royalties for patents, trademarks and copyright, public shows and films; 10% on branch and subsidiary profits, dividends, interest, transport, telecoms and software, insurance premiums and any other income not listed. The payer retains under arts. 50 and 51 and is jointly liable if it does not.
 
-### 6.1 Home Office Deduction
+A person in Honduras only temporarily may file before leaving and ask SAR to settle (art. 4). Non-residents who must file get up to three extra months (art. 28). Foreign-source income of a resident is outside the territorial base, but source is a question of where the service is rendered and used: confirm before excluding.
 
-- **Home Office Deduction** — Calculate the business-use proportion of the home (dedicated room as % of total floor area). Apply that percentage to rent, electricity, water, internet, maintenance. Must be a genuinely dedicated workspace; dual-use rooms do not qualify. Conservative default: 0% deduction until reviewer confirms the arrangement.
+Treaties: no comprehensive double tax treaty was confirmed on an official page in this pass (see Not yet confirmed).
 
-### 6.2 Vehicle Business Use
+## Two worked examples that recompute
 
-- **Vehicle Business Use** — Only the business-use percentage of fuel, insurance, and maintenance is deductible. Client must keep a usage log (business vs total km). Conservative default: 0% business use until a log is provided.
+### Example 1: self-employed engineer, tax year 2026
 
-### 6.3 Phone / Internet Mixed Use
+Gross fees L900,000, documented professional costs L250,000, flat art. 13 deduction L40,000. Renta neta gravable L610,000, in band 3. Tax L70,343.65.
 
-- **Phone / Internet Mixed Use** — Business-use portion only; client must provide a reasonable estimate. Conservative default: 0% deduction until business percentage confirmed.
-
-### 6.4 Source of Income (Honduran vs Foreign)
-
-- **Source of Income (Honduran vs Foreign)** — Territorial system: only Honduran-source income is taxable. For platform/foreign-client receipts, the source can be ambiguous — flag for reviewer to confirm where the service was rendered/used. Conservative default: treat as Honduran-source (taxable) pending confirmation.
-
-### 6.5 Bad Debt Write-Off
-
-- **Bad Debt Write-Off** — Deductible only if the income was previously declared, recovery steps were taken, and the debt is genuinely irrecoverable. Flag all three for reviewer.
-
-### 6.6 ISV (Sales Tax) Interaction
-
-- **ISV (Sales Tax) Interaction** — ISV collected on sales (15%, or 18% on premium services) is a liability to SAR, not income; input ISV recovered is not an expense for ISR-registered taxpayers. For non-ISV-registered individuals, ISV paid on purchases forms part of the gross cost. Flag ISV registration status for reviewer.
-
-### 6.7 Alternative Minimum Tax / Solidarity Contribution Application
-
-- **Alternative Minimum Tax / Solidarity Contribution Application** — Flag any client with gross income ≥ L10,000,000 (AMT) or net taxable income > L1,000,000 (solidarity contribution) for reviewer confirmation of the additional charge.
-
-## Section 7 — Excel Working Paper Template
-
-```
-HONDURAS ISR -- DECLARACIÓN JURADA PERSONA NATURAL -- WORKING PAPER
-Tax Year: 2026
-Client: ___________________________   RTN: ___________________________
-Residence/Domicile: Resident / Non-resident
-ISV-registered: Yes / No
-
-A. GROSS TAXABLE INCOME (Renta Bruta Gravable)
-  A1. Professional fees / honorarios (net of ISV if registered) ___________
-  A2. Commissions / comisiones                                  ___________
-  A3. Platform payouts                                          ___________
-  A4. Rental income (alquiler)                                  ___________
-  A5. Interest / dividends (Honduran-source)                    ___________
-  A6. TOTAL gross taxable income                                ___________
-
-B. ALLOWABLE DEDUCTIONS (with factura + RTN)
-  B1. Office rent                                               ___________
-  B2. Accountancy / legal fees                                  ___________
-  B3. Office supplies / papelería                               ___________
-  B4. Software subscriptions                                    ___________
-  B5. Marketing / publicidad                                    ___________
-  B6. Bank / payment processing charges                         ___________
-  B7. Training / professional subscriptions                     ___________
-  B8. Telecoms (business %)                                     ___________
-  B9. Home office (business %)                                  ___________
-  B10. Vehicle expenses (business %)                            ___________
-  B11. IHSS + RAP statutory contributions                       ___________
-  B12. Other allowable expenses                                 ___________
-  B13. TOTAL deductions                                         ___________
-
-C. NET TAXABLE INCOME (Renta Neta Gravable) (A6 - B13)         ___________
-
-D. ISR COMPUTATION (pass C to deterministic engine)
-  D1. Progressive ISR on C                                      ___________
-  D2. Less: Pagos a Cuenta (advance payments)                   ___________
-  D3. Less: ISR withheld at source                              ___________
-  D4. ISR due / (refund)                                        ___________
-
-E. SOLIDARITY CONTRIBUTION (if C > 1,000,000)
-  E1. (C - 1,000,000) x 5%                                      ___________
-  E2. Less: solidarity advance instalments                      ___________
-  E3. Solidarity contribution due                               ___________
-
-F. ALTERNATIVE MINIMUM TAX (if gross income >= 10,000,000)
-  F1. Gross income x 1.5%                                       ___________
-  F2. Greater of D1 or F1 applies                               ___________
-
-REVIEWER FLAGS:
-  [ ] Residence/domicile confirmed?
-  [ ] ISV registration status confirmed?
-  [ ] All income confirmed Honduran-source?
-  [ ] Home office / vehicle / phone business % confirmed?
-  [ ] All deductions supported by factura + RTN?
-  [ ] Solidarity contribution checked (net > L1,000,000)?
-  [ ] AMT checked (gross >= L10,000,000)?
-  [ ] 2026 IHSS/RAP ceiling and minimum-wage table confirmed?
+```oa-check
+name: HN 2026 self-employed professional, three bands
+inputs:
+  gross: 900000
+  costs: 250000
+  flat_deduction: 40000
+  top1: 228324.32
+  top2: 348154.10
+  top3: 809660.75
+steps:
+  - net: gross - costs - flat_deduction
+  - band15: (min(net, top2) - top1) * 0.15
+  - band20: (min(net, top3) - top2) * 0.20
+  - tax: round(band15 + band20, 2)
+expected:
+  net: 610000
+  tax: 70343.65
 ```
 
-## Section 8 — Bank Statement Reading Guide
+### Example 2: fees from companies, retention or pagos a cuenta (decision)
 
-### Honduran Bank Statement Formats
+A consultant bills L600,000 to Honduran companies, has costs of L150,000 and takes the L40,000 deduction. Net L410,000, tax L30,343.65.
 
-**Honduran Bank Statement Formats**
+- **Route A, retention.** Clients retain 12.5%, L75,000. The retention exceeds the tax by L44,656.35, which the consultant recovers only through the return, after 30 April.
+- **Route B, pagos a cuenta.** Retentions do not apply to persons in the pagos a cuenta regime (art. 50). With a prior-year tax of L28,000, the three quotas are L7,000 each (L21,000 during 2026) and the balance at 30 April is L9,343.65.
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Banco Atlántida | PDF, CSV | Fecha, Descripción, Débito, Crédito, Saldo | Date DD/MM/YYYY |
-| BAC Credomatic | PDF, CSV | Fecha, Concepto, Monto, Saldo | Card transactions show merchant |
-| Banco Ficohsa | PDF | Fecha, Descripción, Cargo, Abono, Saldo | Spanish descriptions |
-| Banco de Occidente | PDF | Fecha, Detalle, Débito, Crédito | Shorter descriptions |
-| Davivienda Honduras | PDF, CSV | Fecha, Concepto, Monto, Saldo |  |
+The figure that decides it is the gap between 12.5% of fees and the real tax. Route B keeps L54,000 more cash in the consultant's hands during the year (L75,000 less L21,000).
 
-### Key Honduran Banking / Tax Terms
+```oa-check
+name: HN 2026 fees, art. 50 retention against pagos a cuenta
+inputs:
+  fees: 600000
+  costs: 150000
+  flat_deduction: 40000
+  prior_year_tax: 28000
+  top1: 228324.32
+  top2: 348154.10
+steps:
+  - net: fees - costs - flat_deduction
+  - tax: round((top2 - top1) * 0.15 + (net - top2) * 0.20, 2)
+  - retention: fees * 0.125
+  - refund_route_a: round(retention - tax, 2)
+  - quotas_in_year: prior_year_tax / 4 * 3
+  - balance_route_b: round(tax - quotas_in_year, 2)
+  - cash_kept: retention - quotas_in_year
+expected:
+  net: 410000
+  tax: 30343.65
+  retention: 75000
+  refund_route_a: 44656.35
+  quotas_in_year: 21000
+  balance_route_b: 9343.65
+  cash_kept: 54000
+```
 
-**Key Honduran Banking / Tax Terms**
+## Ask the client first
 
-| Term | English | Classification Hint |
+1. **Domicile.** Are you domiciled in Honduras, and since when? If not, the art. 5 flat rates apply instead.
+2. **Sources.** Salary from one employer only, or also fees, a business, rents, dividends or sales of assets?
+3. **RTN and regime.** What is your RTN, and are you registered for pagos a cuenta or do your clients retain 12.5%?
+4. **Credits.** What did you pay in pagos a cuenta for 2026 and what retentions appear in your SAR current account?
+5. **Deductions.** Are you over 65? Which professional costs do you hold facturas for, what share of home, vehicle and phone is business use, and any donations?
+6. **Size.** Did your gross income for 2025 exceed L1,000,000,000 (art. 22-A)?
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| ABONO / DEPÓSITO | Deposit / credit | Potential income |
-| CARGO / DÉBITO | Charge / debit | Expense — check counterparty |
-| TRANSFERENCIA | Transfer | Check direction and whether own-account |
-| HONORARIOS | Professional fees | Business income |
-| COMISIÓN | Commission / bank fee | Income if received; bank charge if debited |
-| SUELDO / SALARIO / PLANILLA | Salary / payroll | Employment income (PAYE) |
-| ALQUILER / ARRENDAMIENTO | Rent | Income if received; deductible if business premises |
-| INTERESES | Interest | Investment income or bank charge |
-| FACTURA | Tax invoice | Required to support a deduction (must carry RTN) |
-| RTN | National Tax ID | Identifies the taxpayer/supplier |
-| ISV | Sales tax (VAT) | Exclude from ISR base |
-| PAGO A CUENTA | Advance ISR payment | Credit against final ISR |
+| Read for the 2026 progressive scale and the 4.98% adjustment, Acuerdo SAR-01-2026, La Gaceta 37,051, arts. primero and segundo | https://www.sar.gob.hn/download/acuerdo-numero-sar-01-2026-publicado-en-fecha-23-de-enero-del-2026-en-la-gaceta-no-37051/?wpdmdl=22954 | 2026-11-14 |
+| Read for the 2025 progressive scale, Acuerdo SAR-07-2025, La Gaceta 36,735 | https://www.sar.gob.hn/download/acuerdo-numero-sar-07-2025-publicado-en-fecha-9-de-enero-del-2025-en-la-gaceta-no-36735/?wpdmdl=22996 | 2026-11-14 |
+| Read for LISR consolidated text to Acuerdo SAR-014-2023, arts. 2, 4, 5, 10, 13, 22, 22-A, 25, 27 to 30, 34, 50 and 51 | https://www.sar.gob.hn/download/ley-isr-texto-consolidado-hasta-el-acuerdo-no-sar-014-2023/?wpdmdl=17388 | 2026-11-14 |
+| Read for SAR Ayuda Form 102 (updated August 2026), the art. 13 deductions, 13th and 14th month cap, RAP 1.5% deduction, housing rent 10% above L15,000 and the 30 April deadline | https://www.sar.gob.hn/download/ayuda-declaracion-jurada-impuesto-sobre-la-renta-102/?wpdmdl=22532 | 2026-11-14 |
+| Read for SAR Generalidades impuestos con vencimiento al 30 de abril (June 2026), art. 22-A minimum tax and the solidarity contribution on legal persons | https://www.sar.gob.hn/download/generalidades-impuestos-con-vencimiento-al-30-de-abril/?wpdmdl=23287 | 2026-11-14 |
+| Read for Codigo Tributario Decreto 170-2016 consolidated, arts. 160, 162 and 163 | https://www.sar.gob.hn/download/texto-consolidado-codigo-tributario-decreto-170-2016-segun-fe-de-errata-publicada-en-la-gaceta-de-fecha-25-de-mayo-del-2017-y-los-decretos-25-2017-7-2017-32-2017-93-2017-98-2018-55-2019-170-2/?wpdmdl=6987 | 2026-11-14 |
+| Read for the 2026 minimum wage table and the salario minimo promedio, Acuerdo SETRASS-233-2026 | https://www.trabajo.gob.hn/wp-content/uploads/2026/05/TABLA-SALARIO-MINIMO-2026-.pdf | 2026-11-14 |
+| Read for the SAR ISR page, list of 2026 forms and the notice of suspension | https://www.sar.gob.hn/impuesto-sobre-renta-isr/ | 2026-11-14 |
 
-## Section 9 — Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING — reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- HONDURAS ISR
-1. Are you a Honduran resident/domiciled individual?
-2. Are you purely salaried (PAYE) or do you have self-employment / fees / rental / investment income?
-3. Are you ISV-registered? If yes, are your invoices net or gross of 15% ISV?
-4. Do you have an RTN (national tax ID)?
-5. Home office: dedicated room? If yes, what % of floor area?
-6. Vehicle: used for business? If yes, what % business use, and do you keep a log?
-7. Phone/internet: what % is business use?
-8. IHSS + RAP: total contributions in the tax year?
-9. Pagos a Cuenta (advance ISR) and any ISR withheld at source: amounts paid?
-10. Did your net taxable income exceed L1,000,000, or gross income reach L10,000,000?
-```
-
-## Section 10 — Reference Material
-
-### Key Legislation & Authorities
-
-**Key Legislation & Authorities**
-
-| Topic | Reference |
-| --- | --- |
-| Personal income tax | Ley del Impuesto Sobre la Renta (ISR) |
-| Progressive table indexing | SAR annual Comunicado (2026: Comunicado 02-2026) |
-| Solidarity contribution | Decreto 278-2013 (Aportación Solidaria) |
-| Tax procedure / penalties | Código Tributario, Decreto 170-2016 (incl. Art. 160) |
-| Social security | Ley del Sistema Integral de Protección Social (2024); IHSS / RAP |
-| Tax authority | SAR — Servicio de Administración de Rentas (sar.gob.hn) |
-| Filing system | DET Live (detlive.sar.gob.hn) — Form 102 / 102-1 |
-
-### Authoritative Sources
-
-**Authoritative Sources**
-
-| Item | Source |
-| --- | --- |
-| 2026 progressive table (exact) | Deloitte HN 12 Jan 2026; SAR Comunicado 02-2026; PwC (27 Feb 2026); Bloomberg Línea |
-| 2025 progressive table | KPMG TaxNewsFlash 14 Jan 2025; Bloomberg Línea; SAR |
-| Solidarity contribution | Decreto 278-2013; SEFIN consolidated text (25 Jun 2018) |
-| AMT, capital gains, WHT | PwC Honduras — taxes on personal income / withholding taxes |
-| Social security rates & 2025 ceiling | El Heraldo; Dinero HN; RAP comunicado 2025 |
-| Filing, deadline, who files | Radio HRN; PwC tax administration; SAR |
-| ISV, municipal tax, INFOP | PwC Honduras — other taxes / taxes on personal income |
-
-### Minimum Wage (2025 reference, Commerce & Construction)
-
-**Minimum Wage (2025 reference, Commerce & Construction)**  _(Secretaría de Trabajo, trabajo.gob.hn; La Prensa)_
-
-| Company size | Monthly wage (HNL) |
-| --- | --- |
-| 1–10 workers | 12,539.68 |
-| 11–50 workers | 12,937.94 |
-| 151+ workers | 17,557.35 |
-
-Set by Acuerdo Ejecutivo SETRASS-109-2024 (2024–2025 band), effective 1 Jan 2025; varies by sector and company size. [Secretaría de Trabajo, trabajo.gob.hn; La Prensa]
-
-Maquila/Free Zone: +7.5% adjustment. [RESEARCH GAP — reviewer to confirm] the 2026 minimum-wage table against trabajo.gob.hn before relying on it for FY2026.
-
-### Other Taxes (context)
-
-**Other Taxes (context)**
-
-| Tax | Rate | Source |
-| --- | --- | --- |
-| Sales tax (ISV/VAT) | 15% general; 18% on certain premium services | PwC |
-| Municipal tax (impuesto vecinal/personal) | 1.50–5.25 per thousand of gross, withheld by employers with 5+ workers | PwC |
-
-### Test Suite
-
-**Test 1 — Exempt salaried individual (2026).**
-Input: Resident, annual net income L210,000, purely salaried, PAYE withheld.
-Expected: Below 2026 exempt base of L228,324.32 → ISR = L0. Generally no filing obligation (may file Notification of Suspension if previously filed).
-
-**Test 2 — Mid-range self-employed (2026).**
-Input: Resident self-employed, net taxable income L500,000.
-Expected: Band 2 fully (L17,974.47) + Band 3 portion: (500,000 − 348,154.10) × 20% = 151,845.90 × 0.20 = L30,369.18. Total ISR = 17,974.47 + 30,369.18 = **L48,343.65**. No solidarity contribution (net < L1,000,000).
-
-**Test 3 — Top-band with solidarity contribution (2026).**
-Input: Resident self-employed, net taxable income L1,400,000.
-Expected: ISR = cumulative at L809,660.76 (L110,275.80) + (1,400,000 − 809,660.75) × 25% = 590,339.25 × 0.25 = L147,584.81; total ISR = 110,275.80 + 147,584.81 = **L257,860.61**. Plus solidarity contribution (1,400,000 − 1,000,000) × 5% = **L20,000.00** (separate, non-deductible).
-
-**Test 4 — Employee social security at ceiling (2025).**
-Input: Monthly salary ≥ L11,903.13.
-Expected: Employee contributions = 6.5% × L11,903.13 = **L773.70/month** (EM 2.5% + IVM 2.5% + RAP 1.5%).
-
-**Test 5 — Alternative minimum tax flag.**
-Input: Domiciled individual, gross income L12,000,000, progressive ISR computed at L150,000.
-Expected: AMT = 1.5% × 12,000,000 = L180,000 > L150,000 → AMT applies; tax = **L180,000**.
-
-**Test 6 — Drawings excluded.**
-Input: L25,000 own-account transfer recorded as expense.
-Expected: EXCLUDE. Not an expense, not income.
-
-## PROHIBITIONS
-
-- NEVER apply the resident progressive table without confirming residence/domicile.
-- NEVER compute band tax by hand for filing — pass net taxable income to the deterministic engine.
-- NEVER deduct entertainment or personal living expenses.
-- NEVER deduct the ISR or the solidarity contribution itself.
-- NEVER deduct fines, penalties, or surcharges (multas/recargos).
-- NEVER include ISV collected on sales in the income-tax base for ISV-registered clients.
-- NEVER treat a Pago a Cuenta as an expense — it is a credit against the final liability.
-- NEVER claim a deduction without a valid factura bearing the supplier's RTN.
-- NEVER apply foreign-source income to the Honduran base without confirming source (territorial system).
-- NEVER present tax calculations as definitive — always label as estimated and flag the marked RESEARCH GAPs.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the indexed 2026 figure for the art. 28 filing exemption (the 2023 text shows L199,039.47 and says amounts tied to the scale move with it; L228,324.32 is the inference, not a published figure); the art. 50 retention exemption amount for 2026 (L239,039.47 in the 2023 text); any amendment to the LISR after Acuerdo SAR-014-2023 other than the scale; whether housing rent of L15,000 a month or less is exempt or goes on the scale; the list of tax information exchange or double tax agreements in force; ZOLI, ZOLITUR and other special regimes.
