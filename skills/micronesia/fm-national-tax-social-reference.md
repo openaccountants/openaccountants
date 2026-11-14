@@ -14,18 +14,17 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 periods. FSM Code 2014 Title 54 Chs 1 and 9 and Title 53 Subtitle II, with s 112 read as re-enacted by PL 18-118 (from 1 April 2015) and PL 21-250 (from 1 January 2021), and T53 s 603 checked against PL 15-73 and PL 16-10. Law read as at captures of 25 to 31 October 2026. No 2026 consolidation found. Index titles show no later Act on the sections used, which is not proof of none. Section 114 regulations not found. FSMSSA Regulations No. 03 are dated 1 May 2012."
 tier: 2
-last_updated: 2026-11-02
-version: 0.5
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.6
 depends_on:
   - income-tax-workflow-base
   - payroll-workflow-base
   - social-contributions-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 ---
 
-# Federated States of Micronesia National Tax and Social Security Reference, 2026 (v0.5)
+# Federated States of Micronesia National Tax and Social Security Reference, 2026 (v0.6)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -173,9 +172,9 @@ Employee social security is not among them, so wage tax falls on wages before it
 
 | Gross annual wages | Withheld | Tax after s 122 | Refund |
 |---|---|---|---|
-| $900 | `900 × 6% = 54.00` | nil; the deduction exceeds the wages (inference) | `54 - 0 = 54.00`  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
-| $4,800 | `4,800 × 6% = 288.00` | `(4,800 - 1,000) × 6% = 228.00` | `288 - 228 = 60.00`  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
-| $4,999 | `4,999 × 6% = 299.94` | `(4,999 - 1,000) × 6% = 239.94` | `299.94 - 239.94 = 60.00`  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
+| $900 | `900 × 6% = 54.00` | nil; the deduction exceeds the wages (inference) | `54 - 0 = 54.00` (derived: illustrative wages, rates from s 121 and s 122)  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
+| $4,800 | `4,800 × 6% = 288.00` | `(4,800 - 1,000) × 6% = 228.00` | `288 - 228 = 60.00` (derived: illustrative wages, rates from s 121 and s 122)  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
+| $4,999 | `4,999 × 6% = 299.94` | `(4,999 - 1,000) × 6% = 239.94` | `299.94 - 239.94 = 60.00` (derived: illustrative wages, rates from s 121 and s 122)  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
 | Exactly $5,000 | `5,000 × 6% = 300.00` | `300.00`; no deduction, as $5,000 is 'or more' | `300 - 300 = 0.00`  https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf |
 
 HOLD whether 'gross annual wages' counts amounts excluded by s 112(13).
@@ -583,76 +582,56 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Historical T54 Chapter 8 reference-only text and codifier notes | https://www.fsmlaw.org/fsm/code/code2014/FSMCode2014Tit54Chap08ReferenceOnly.html | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
-| DoFA RMS rollout news item | https://dofa.gov.fm/news/pohnpei-businesses-adopt-rms-for-faster-paperless-tax-returns/ | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
-| DoFA Taxpayers' Charter | https://dofa.gov.fm/wp-content/uploads/2025/07/Taxpayers-Charter.pdf | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
-| T54 Ch 1, Code 2014, Department of Finance and Administration | https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
-| T54 Ch 1 subchapter IV, fsmlaw.org | https://fsmlaw.org/fsm/code/title54/T54_Ch01_SubChpIV_2014.html | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| T54 Ch 9, Code 2014 | https://fsmlaw.org/fsm/code/code2014/pdf/FSMCode2014Tit54Chap09.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| T53 Ch 6 | https://fsmlaw.org/fsm/code/title53/T53_Ch06_2014.html | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| T53 Ch 7 | https://fsmlaw.org/fsm/code/title53/T53_Ch07_2014.html | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| T53 Ch 9 | https://fsmlaw.org/fsm/code/title53/T53_Ch09_2014.html | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| PL 18-118 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-118.pdf | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| PL 21-250 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-250.pdf | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| PL 21-145 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-145.pdf | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| PL 22-190 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__22-190.pdf | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| PL 17-50 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-17-50.pdf | Exact reading day unrecorded; capture: October 2026; retained host and reading limits apply |
-| PL 18-16 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-16.pdf | Exact reading day unrecorded; capture: October 2026; retained host and reading limits apply |
-| PL 18-51 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-51.pdf | Exact reading day unrecorded; capture: October 2026; retained host and reading limits apply |
-| PL 14-86 | https://fsmlaw.org/fsm/code/PDF/CODE%2053/PL%2014-86.pdf | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
-| PL 15-73 | http://fsmssa.fm/files/laws/PublicLaw15-73.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| PL 16-10 | http://fsmssa.fm/files/laws/PublicLaw16-10.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| PL 22-166 | http://www.fsmssa.fm/wp-content/uploads/2023/02/PUBLIC_LAW_NO__22-166.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| FSMSSA Regulations No. 03 | http://fsmssa.fm/files/laws/AdoptedFSMSSregulation.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| Employers | https://www.fsmssa.fm/employers/ | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| FAQ | https://www.fsmssa.fm/f-a-q/ | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| Forms | https://www.fsmssa.fm/forms/ | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| Laws | https://www.fsmssa.fm/laws/ | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| 2017 notice | https://www.fsmssa.fm/fsm-social-security-taxable-wage-base-to-increase-on-january-1-2018/ | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| 2022 press release | http://www.fsmssa.fm/wp-content/uploads/2022/06/Quarterly-Taxable-Wage-Base-Increase.jpg | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| Guideline for tax clause in contractors' contracts | https://dofa.gov.fm/wp-content/uploads/2025/07/Guideline-on-Tax-Clause-for-Contractors-1.pdf | Exact reading day unrecorded; capture: 30 October 2026; retained host and reading limits apply |
-| 18th Congress index | https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=18th-cfsm-public-laws | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| 22nd Congress index | https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=22nd-public-laws | Exact reading day unrecorded; capture: 26 October 2026; retained host and reading limits apply |
-| fsmlaw.org amendment list | http://fsmlaw.org/fsm/code/Amendments.html | Exact reading day unrecorded; capture: 31 October 2026; retained host and reading limits apply |
+| Historical T54 Chapter 8 reference-only text and codifier notes | https://www.fsmlaw.org/fsm/code/code2014/FSMCode2014Tit54Chap08ReferenceOnly.html | Captured 2026-10-31 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| DoFA RMS rollout news item | https://dofa.gov.fm/news/pohnpei-businesses-adopt-rms-for-faster-paperless-tax-returns/ | Captured 2026-10-31 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| DoFA Taxpayers' Charter | https://dofa.gov.fm/wp-content/uploads/2025/07/Taxpayers-Charter.pdf | Captured 2026-10-31 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| T54 Ch 1, Code 2014, Department of Finance and Administration | https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf | 2026-11-14 (re-read ss 121 and 123: six percent on the first $11,000 and ten percent above, $1,000 deduction; the $80 tax) |
+| T54 Ch 1 subchapter IV, fsmlaw.org | https://fsmlaw.org/fsm/code/title54/T54_Ch01_SubChpIV_2014.html | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| T54 Ch 9, Code 2014 | https://fsmlaw.org/fsm/code/code2014/pdf/FSMCode2014Tit54Chap09.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| T53 Ch 6 | https://fsmlaw.org/fsm/code/title53/T53_Ch06_2014.html | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| T53 Ch 7 | https://fsmlaw.org/fsm/code/title53/T53_Ch07_2014.html | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| T53 Ch 9 | https://fsmlaw.org/fsm/code/title53/T53_Ch09_2014.html | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 18-118 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-118.pdf | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 21-250 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-250.pdf | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 21-145 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-145.pdf | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 22-190 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__22-190.pdf | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 17-50 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-17-50.pdf | Captured by Ryan in October 2026 (day unrecorded); reopened 2026-11-14 (opens; first page checked) |
+| PL 18-16 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-16.pdf | Captured by Ryan in October 2026 (day unrecorded); reopened 2026-11-14 (opens; first page checked) |
+| PL 18-51 | https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-51.pdf | Captured by Ryan in October 2026 (day unrecorded); reopened 2026-11-14 (opens; first page checked) |
+| PL 14-86 | https://fsmlaw.org/fsm/code/PDF/CODE%2053/PL%2014-86.pdf | Captured 2026-10-31 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 15-73 | http://fsmssa.fm/files/laws/PublicLaw15-73.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 16-10 | http://fsmssa.fm/files/laws/PublicLaw16-10.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| PL 22-166 | http://www.fsmssa.fm/wp-content/uploads/2023/02/PUBLIC_LAW_NO__22-166.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| FSMSSA Regulations No. 03 | http://fsmssa.fm/files/laws/AdoptedFSMSSregulation.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| Employers | https://www.fsmssa.fm/employers/ | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| FAQ | https://www.fsmssa.fm/f-a-q/ | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| Forms | https://www.fsmssa.fm/forms/ | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| Laws | https://www.fsmssa.fm/laws/ | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| 2017 notice | https://www.fsmssa.fm/fsm-social-security-taxable-wage-base-to-increase-on-january-1-2018/ | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| 2022 press release | http://www.fsmssa.fm/wp-content/uploads/2022/06/Quarterly-Taxable-Wage-Base-Increase.jpg | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| Guideline for tax clause in contractors' contracts | https://dofa.gov.fm/wp-content/uploads/2025/07/Guideline-on-Tax-Clause-for-Contractors-1.pdf | Captured 2026-10-30 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| 18th Congress index | https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=18th-cfsm-public-laws | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| 22nd Congress index | https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=22nd-public-laws | Captured 2026-10-26 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
+| fsmlaw.org amendment list | http://fsmlaw.org/fsm/code/Amendments.html | Captured 2026-10-31 by Ryan (exact reading day unrecorded); retained host and reading limits apply |
 
 ### Sources
 
 Dates are capture dates from the local copies, in UTC.
 
-- [Historical T54 Chapter 8 reference-only text and codifier notes](https://www.fsmlaw.org/fsm/code/code2014/FSMCode2014Tit54Chap08ReferenceOnly.html), non-official host, 31 October 2026; selected historical notes read, not the whole operative chapter or full amendment chain
-- [DoFA RMS rollout news item](https://dofa.gov.fm/news/pohnpei-businesses-adopt-rms-for-faster-paperless-tax-returns/), published 4 November 2025; captured through the official public news API on 31 October 2026, dated rollout evidence only
-- [DoFA Taxpayers' Charter](https://dofa.gov.fm/wp-content/uploads/2025/07/Taxpayers-Charter.pdf), captured 31 October 2026; native extraction retained, layout unverified and no additional obligation adopted
+- [Historical T54 Chapter 8 reference-only text and codifier notes](https://www.fsmlaw.org/fsm/code/code2014/FSMCode2014Tit54Chap08ReferenceOnly.html), non-official host, 2026-10-31; selected historical notes read, not the whole operative chapter or full amendment chain
+- [DoFA RMS rollout news item](https://dofa.gov.fm/news/pohnpei-businesses-adopt-rms-for-faster-paperless-tax-returns/), published 2025-11-04; captured through the official public news API on 2026-10-31, dated rollout evidence only
+- [DoFA Taxpayers' Charter](https://dofa.gov.fm/wp-content/uploads/2025/07/Taxpayers-Charter.pdf), captured 2026-10-31; native extraction retained, layout unverified and no additional obligation adopted
 
-- [T54 Ch 1, Code 2014, Department of Finance and Administration](https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf), 31 October 2026; [T54 Ch 1 subchapter IV, fsmlaw.org](https://fsmlaw.org/fsm/code/title54/T54_Ch01_SubChpIV_2014.html), 30 October 2026
-- [T54 Ch 9, Code 2014](https://fsmlaw.org/fsm/code/code2014/pdf/FSMCode2014Tit54Chap09.pdf), non-official host, 30 October 2026
-- [T53 Ch 6](https://fsmlaw.org/fsm/code/title53/T53_Ch06_2014.html), [T53 Ch 7](https://fsmlaw.org/fsm/code/title53/T53_Ch07_2014.html) and [T53 Ch 9](https://fsmlaw.org/fsm/code/title53/T53_Ch09_2014.html), non-official host, 30 October 2026
-- [PL 18-118](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-118.pdf), [PL 21-250](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-250.pdf), [PL 21-145](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-145.pdf) and [PL 22-190](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__22-190.pdf), 26 October 2026
-- [PL 17-50](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-17-50.pdf) (first and last pages), [PL 18-16](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-16.pdf) and [PL 18-51](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-51.pdf), October 2026
-- [PL 14-86](https://fsmlaw.org/fsm/code/PDF/CODE%2053/PL%2014-86.pdf), non-official host, 31 October 2026
-- [PL 15-73](http://fsmssa.fm/files/laws/PublicLaw15-73.pdf), [PL 16-10](http://fsmssa.fm/files/laws/PublicLaw16-10.pdf) and [PL 22-166](http://www.fsmssa.fm/wp-content/uploads/2023/02/PUBLIC_LAW_NO__22-166.pdf), FSMSSA, 30 October 2026
-- [FSMSSA Regulations No. 03](http://fsmssa.fm/files/laws/AdoptedFSMSSregulation.pdf), 30 October 2026
-- FSMSSA pages, 30 October 2026: [Employers](https://www.fsmssa.fm/employers/); [FAQ](https://www.fsmssa.fm/f-a-q/); [Forms](https://www.fsmssa.fm/forms/); [Laws](https://www.fsmssa.fm/laws/); [2017 notice](https://www.fsmssa.fm/fsm-social-security-taxable-wage-base-to-increase-on-january-1-2018/); [2022 press release](http://www.fsmssa.fm/wp-content/uploads/2022/06/Quarterly-Taxable-Wage-Base-Increase.jpg)
-- [Guideline for tax clause in contractors' contracts](https://dofa.gov.fm/wp-content/uploads/2025/07/Guideline-on-Tax-Clause-for-Contractors-1.pdf), Department of Finance and Administration, 30 October 2026, guidance and not law
-- Later law, titles only: [18th Congress index](https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=18th-cfsm-public-laws) and [22nd Congress index](https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=22nd-public-laws), 26 October 2026; the 19th, 20th, 21st, 23rd and 24th Congress public law pages and 24th Congress bills page on cfsm.gov.fm, October 2026; [fsmlaw.org amendment list](http://fsmlaw.org/fsm/code/Amendments.html), non-official and undated, 31 October 2026
+- [T54 Ch 1, Code 2014, Department of Finance and Administration](https://dofa.gov.fm/wp-content/uploads/2025/07/FSMCode-Taxation-of-Wages-Salaries-Gross-Revenues.pdf), 2026-10-31; [T54 Ch 1 subchapter IV, fsmlaw.org](https://fsmlaw.org/fsm/code/title54/T54_Ch01_SubChpIV_2014.html), 2026-10-30
+- [T54 Ch 9, Code 2014](https://fsmlaw.org/fsm/code/code2014/pdf/FSMCode2014Tit54Chap09.pdf), non-official host, 2026-10-30
+- [T53 Ch 6](https://fsmlaw.org/fsm/code/title53/T53_Ch06_2014.html), [T53 Ch 7](https://fsmlaw.org/fsm/code/title53/T53_Ch07_2014.html) and [T53 Ch 9](https://fsmlaw.org/fsm/code/title53/T53_Ch09_2014.html), non-official host, 2026-10-30
+- [PL 18-118](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-118.pdf), [PL 21-250](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-250.pdf), [PL 21-145](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__21-145.pdf) and [PL 22-190](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC_LAW_NO__22-190.pdf), 2026-10-26
+- [PL 17-50](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-17-50.pdf) (first and last pages), [PL 18-16](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-16.pdf) and [PL 18-51](https://www.cfsm.gov.fm/wp-content/uploads/2024/07/PUBLIC-LAW-18-51.pdf), October 2026 (read by Ryan, day unrecorded); reopened 2026-11-14
+- [PL 14-86](https://fsmlaw.org/fsm/code/PDF/CODE%2053/PL%2014-86.pdf), non-official host, 2026-10-31
+- [PL 15-73](http://fsmssa.fm/files/laws/PublicLaw15-73.pdf), [PL 16-10](http://fsmssa.fm/files/laws/PublicLaw16-10.pdf) and [PL 22-166](http://www.fsmssa.fm/wp-content/uploads/2023/02/PUBLIC_LAW_NO__22-166.pdf), FSMSSA, 2026-10-30
+- [FSMSSA Regulations No. 03](http://fsmssa.fm/files/laws/AdoptedFSMSSregulation.pdf), 2026-10-30
+- FSMSSA pages, 2026-10-30: [Employers](https://www.fsmssa.fm/employers/); [FAQ](https://www.fsmssa.fm/f-a-q/); [Forms](https://www.fsmssa.fm/forms/); [Laws](https://www.fsmssa.fm/laws/); [2017 notice](https://www.fsmssa.fm/fsm-social-security-taxable-wage-base-to-increase-on-january-1-2018/); [2022 press release](http://www.fsmssa.fm/wp-content/uploads/2022/06/Quarterly-Taxable-Wage-Base-Increase.jpg)
+- [Guideline for tax clause in contractors' contracts](https://dofa.gov.fm/wp-content/uploads/2025/07/Guideline-on-Tax-Clause-for-Contractors-1.pdf), Department of Finance and Administration, 2026-10-30, guidance and not law
+- Later law, titles only: [18th Congress index](https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=18th-cfsm-public-laws) and [22nd Congress index](https://www.cfsm.gov.fm/wp-json/wp/v2/pages?slug=22nd-public-laws), 2026-10-26; the 19th, 20th, 21st, 23rd and 24th Congress public law pages and 24th Congress bills page on cfsm.gov.fm, October 2026; [fsmlaw.org amendment list](http://fsmlaw.org/fsm/code/Amendments.html), non-official and undated, 2026-10-31
 
 Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
