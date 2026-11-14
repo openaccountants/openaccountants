@@ -75,7 +75,6 @@ Whether an individual is a Singapore tax resident for a Year of Assessment (YA),
 | Employee, 1 Oct 2025 to 31 Mar 2026 (182 days plus presence before and after) | Straddling rule: resident for both years if 183 days or more in total |
 | Director, professional or public entertainer straddling two years | Straddling rule does not apply; test each year separately |
 | Foreign dividends, branch profits or service income brought in by a resident individual | Exempt, unless received through a Singapore partnership |
-| One-tier dividends from Singapore companies | Exempt in the shareholder's hands |
 | Capital gains | Not taxed as such; see `sg-zero-cgt` for when gains are trading income |
 | Rebate for YA 2026 | IRAS lists rebates for YA 2024 (50%, cap S$200) and YA 2025 (60%, cap S$200) only; do not apply one for YA 2026 unless announced |
 
@@ -138,4 +137,4 @@ Residents and non-residents file Form B1 or B (see `sg-income-tax`) for YA 2026 
 | Read for the resident rates from YA 2024, non-resident rates, withholding rates and YA 2024 and YA 2025 rebates | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates | 2026-11-14 |
 | Read for the residency tests, the 3-year concession, the straddling rule, work pass treatment, examples and the remittance exemption for residents | https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency | 2026-11-14 |
 
-Not yet confirmed: work pass salary thresholds in the old file (Employment Pass S$5,000 a month, S Pass S$3,150; set by the Ministry of Manpower, not opened today); any YA 2026 personal income tax rebate (none listed by IRAS on the rates page read today).
+Not yet confirmed: work pass salary thresholds in the old file (Employment Pass S$5,000 a month, S Pass S$3,150; set by the Ministry of Manpower, not opened today); any YA 2026 personal income tax rebate (none listed by IRAS on the rates page read today); treatment of one-tier dividends received by individuals (not on the IRAS pages read; read the IRAS dividend page before restoring).
