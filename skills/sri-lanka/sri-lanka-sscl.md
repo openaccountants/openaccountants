@@ -44,7 +44,7 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 
 | Item | Figure | Conditions | Source |
 | --- | --- | --- | --- |
-| Rate | 2.5% of liable turnover | Every quarter from 1 October 2022 | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20(SSCL).aspx |
+| Rate | 2.5% of liable turnover | Every quarter from 1 October 2022 | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20%28SSCL%29.aspx |
 | Liable turnover, importation of any article | 100% of turnover | Value for VAT under VAT Act section 6, less exempt articles | same |
 | Liable turnover, manufacture of any article | 85% of turnover | Sums receivable for articles manufactured and sold in Sri Lanka | same |
 | Liable turnover, financial services | 100% of the value addition attributable to financial services | As under the VAT Act section 25C notification | same |
@@ -150,7 +150,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Read for scope of liability, turnover definitions, exclusions, registration threshold, rate and liable-turnover fractions, payment and return dates on the IRD SSCL page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20(SSCL).aspx | 2026-11-14 |
+| Read for scope of liability, turnover definitions, exclusions, registration threshold, rate and liable-turnover fractions, payment and return dates on the IRD SSCL page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20%28SSCL%29.aspx | 2026-11-14 |
 | Read for the SSCL section (registration test and the liable turnover table) of the IRD tax chart, the latest on the site | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
 
 Not yet confirmed: the text of the SSCL (Amendment) Act No. 24 of 2025 and what it changed (not linked from the IRD SSCL page; documents.gov.lk did not serve it to a script); the full First Schedule lists of exempt articles and services; any SSCL change announced for 2026/27 that is not on the IRD SSCL page.

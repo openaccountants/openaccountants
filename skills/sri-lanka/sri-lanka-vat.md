@@ -46,15 +46,15 @@ Built from the law: not yet approved by an accountant. Not tax advice.
 
 | Item | Rate or threshold | Conditions | Source |
 | --- | --- | --- | --- |
-| Standard rate | 18% (tax fraction 9/59) | Any taxable period from 1 January 2024; section 2(1)(ix) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Standard rate | 18% (tax fraction 9/59) | Any taxable period from 1 January 2024; section 2(1)(ix) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
 | Zero rate | 0% | Direct export of goods and services listed in section 7 | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Registration, taxable period test | Taxable supplies in Sri Lanka in the taxable period over Rs. 15,000,000 | From 1 January 2024; section 10 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Registration, taxable period test | Taxable supplies in Sri Lanka in the taxable period over Rs. 15,000,000 | From 1 January 2024; section 10 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
 | Registration, 12-month test | Taxable supplies in Sri Lanka in the 12 months then ending over Rs. 60,000,000 | Or reasonable grounds that the next period will exceed Rs. 15,000,000 or the next 12 months Rs. 60,000,000 | same |
 | Financial services VAT on value addition | 18% for periods from 1 January 2022 to 30 June 2026; 20.5% from 1 July 2026 | Section 25C(3)(g), (h) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14-2026_E.PDF |
 | Non-resident digital services: registration | Over Rs. 60,000,000 in the 12 months then ending, or over Rs. 15,000,000 for a quarter | From 1 July 2026; new section 25L | same |
 | Non-resident digital services charge | Tax under section 2(1)(c) from 1 July 2026 | Not charged where the recipient is a registered person (section 25N) | same |
 | Simplified statement penalty, non-resident supplying registered persons | Up to Rs. 50,000 | Section 25N(4) | same |
-| Return due | Last day of the month after the taxable period | Electronic; section 21(1)(a)(iii) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Return due | Last day of the month after the taxable period | Electronic; section 21(1)(a)(iii) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
 | Payment due | 20th day of the month after the taxable period | Quarterly filers pay month 1 by the 20th of month 2, month 2 by the 20th of month 3; section 26(1) | same |
 
 ### Steps
@@ -195,9 +195,9 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Read for sections 2(1) (rates and the section 2(1)(c) digital services charge), 10 (registration), 21 (returns), 26 (payment) and the taxable period definition in section 83 of the IRD consolidated VAT Act | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf | 2026-11-14 |
+| Read for sections 2(1) (rates and the section 2(1)(c) digital services charge), 10 (registration), 21 (returns), 26 (payment) and the taxable period definition in section 83 of the IRD consolidated VAT Act | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf | 2026-11-14 |
 | Read for sections 2 (digital services date moved to 1 July 2026), 4, 5, 7 (section 25C 20.5% rate) and 8 (new Chapter IIIC, sections 25L to 25P) of the VAT (Amendment) Act No. 14 of 2026 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14-2026_E.PDF | 2026-11-14 |
 | Read for the VAT section (registration test, standard and zero rates, financial services rows) of the IRD tax chart, the latest on the site | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
-| Read for the list of VAT amending Acts on the IRD VAT page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20(VAT).aspx?menuid=1204 | 2026-11-14 |
+| Read for the list of VAT amending Acts on the IRD VAT page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20%28VAT%29.aspx?menuid=1204 | 2026-11-14 |
 
 Not yet confirmed: the First Schedule exemption lists (the earlier version listed healthcare, education, residential rent and unprocessed agriculture, and financial services as exempt; financial services are in fact taxed on value addition under section 25C); utilities treatment; the blocked input tax list (personal consumption, entertainment, passenger vehicles in the earlier version); which persons file monthly and which quarterly under the section 83 definition; whether a reverse charge applies to other imported services; the SVAT scheme rules.
