@@ -71,7 +71,7 @@ Owner: Jeff Watts
 
 | Country | State | Skills | On 2026 | Accountant-reviewed |
 |---|---|---:|---:|---:|
-| [Alberta](canada/alberta/) | Needs writing | 4 | 3 | 0 |
+| [Alberta](canada/alberta/) | Needs writing | 4 | 4 | 0 |
 | [Antigua And Barbuda](antigua-and-barbuda/) | Needs writing | 3 | 3 | 0 |
 | [Argentina](argentina/) | Needs writing | 12 | 12 | 0 |
 | [Aruba](aruba/) | Needs writing | 3 | 3 | 0 |
@@ -82,7 +82,7 @@ Owner: Jeff Watts
 | [Bolivia](bolivia/) | Needs writing | 8 | 8 | 0 |
 | [Brazil](brazil/) | Needs writing | 21 | 21 | 0 |
 | [British Virgin Islands](british-virgin-islands/) | Needs writing | 3 | 3 | 0 |
-| [Canada](canada/) | Needs writing | 21 | 5 | 13 |
+| [Canada](canada/) | Needs writing | 21 | 9 | 13 |
 | [Cayman Islands](cayman-islands/) | Needs writing | 5 | 5 | 0 |
 | [Chile](chile/) | Needs signature | 10 | 10 | 0 |
 | [Colombia](colombia/) | Needs signature | 10 | 10 | 0 |
