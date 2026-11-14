@@ -1,11 +1,6 @@
 ---
 name: pk-einvoice
 description: Use for pakistan electronic invoicing and integration. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about electronic/digital invoicing and POS integration in Pakistan.
-  Trigger on phrases like "Pakistan e-invoicing", "FBR digital invoicing", "FBR POS integration",
-  "electronic invoice sales tax Pakistan", "FBR SRO e-invoice". Covers the FBR's electronic invoicing
-  requirements for sales-tax-registered persons, POS/real-time integration for retailers, and invoice
-  requirements. ALWAYS read before any Pakistan e-invoicing work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,13 +13,13 @@ domain: e-invoicing
 type: filing-howto
 ---
 
-# Pakistan electronic invoicing and integration v 1.1
+# Pakistan electronic invoicing and integration v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-For Pakistan federal sales-tax registered businesses and their invoicing controls in 2026. Federal digital invoicing/POS and provincial services systems are separate. A Punjab services business tests PRA rules separately; federal registration for a goods business creates its own FBR analysis. An unregistered solo freelancer does not become an integrated federal sales-tax taxpayer merely by issuing a business invoice. Registration liability still needs its own check. [STA s.23](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf).
+For Pakistan federal sales-tax registered businesses and their invoicing controls in 2026. Federal digital invoicing/POS and provincial services systems are separate. Keep PKR invoice values and any evidenced currency conversion explicit. A Punjab services business tests PRA rules separately; federal registration for a goods business creates its own FBR analysis. An unregistered solo freelancer does not become an integrated federal sales-tax taxpayer merely by issuing a business invoice. Registration liability still needs its own check. [STA s.23](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf).
 
 ## Ask the client first
 
@@ -41,7 +36,7 @@ Obtain NTN/STRN and provincial registrations, entity and goods/services categori
 
 ### Post 72 hour correction in the November 2026 IRIS manual
 
-FBR's 5 November 2026 manual provides an IRIS application to edit or cancel eligible invoices after 72 hours with concerned CIR approval. An invoice cannot be both edited and cancelled. Section 4.4 excludes invoices already linked to Annex C/FEDreturn, approved under another application, previously submitted/rejected, or pending elsewhere. Approval loads updated data into Annex C; rejection restores the original invoice. Retain application/evidence/status and reconcile the actual return; do not bypass these gates or promise approval. [Manual sections 4.1-4.4](https://download1.fbr.gov.pk/Docs/20261151611157507SalesTaxManual.pdf), read 2026-11-14.
+FBR's 5 November 2026 manual provides an IRIS application to edit or cancel eligible invoices after 72 hours with concerned CIR approval. An invoice cannot be both edited and cancelled. Section 4.4 excludes invoices already linked to Annex C/FED return, approved under another application, previously submitted/rejected, or pending elsewhere. Approval loads updated data into Annex C; rejection restores the original invoice. Retain application/evidence/status and reconcile the actual return; do not bypass these gates or promise approval. [Manual sections 4.1-4.4](https://download1.fbr.gov.pk/Docs/20261151611157507SalesTaxManual.pdf), read 2026-11-14.
 
 ## Boundary and exception table
 
@@ -99,8 +94,6 @@ Reconcile invoice/return data and supply the transmission/correction evidence to
 Registration and authority identified; applicable notification/calendar obtained; integrator approval and testing retained; outlets registered; invoice fields/QR/number present; acknowledgements reconciled; corrections authorised/timed; provincial obligations considered.
 
 ## Sources
-
-
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|

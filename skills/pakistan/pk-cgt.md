@@ -11,7 +11,7 @@ version: 1.1
 type: computation
 ---
 
-# Pakistan capital gains by asset and acquisition date v 1.1
+# Pakistan capital gains by asset and acquisition date v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -181,10 +181,9 @@ For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 O
 
 ## Sources
 
-
-
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
+| Read for Circular 04 of 2026-27, 15 October 2026, the 31 October extension for the original 30 September cohort; scanned signed page inspected | https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf | 2026-11-14 |
 | Read for Income Tax Rules 13 N(3)-(15), including FIFO/expenses/monthly collection/recomputation/annual certificate, on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf. | 2026-11-14 |
 | Read for ITO ss.37/37 A/38/59,68,76-79,159(1 B),174 and First Schedule Part I Div VII/VIII with adjacent conditions and historical omission footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for ordinary return/wealth/date framework ss.116/118/119; actual extension not established | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |

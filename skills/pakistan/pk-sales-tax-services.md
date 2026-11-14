@@ -11,7 +11,7 @@ version: 1.1
 type: computation
 ---
 
-# Pakistan provincial and ICT services sales tax v 1.1
+# Pakistan provincial and ICT services sales tax v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -58,8 +58,8 @@ Exemption and zero-rating differ. Sindh First Schedule 14 is **exemption**, not 
 
 | Authority and boundary | Read rule | Source |
 |---|---|---|
-| Sindh ordinary payment/return | Unless otherwise specified, payment 15 thfollowing month; electronic return within 3 days of payment due date; relevant service-specific variations still apply | [r 14](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf) |
-| Balochistan ordinary payment/return | Unless otherwise specified, payment 15 thfollowing month; return within 3 days after due date under r 15; particular service rules can differ | [rr 15/17](https://ebra.com.pk/public/storage/uploads/downloads/1715239876.pdf) |
+| Sindh ordinary payment/return | Unless otherwise specified, payment 15thfollowing month; electronic return within 3 days of payment due date; relevant service-specific variations still apply | [r 14](https://www.srb.gos.pk/srb/wp-content/uploads/2025/11/Sindh-Sales-Tax-Rules-2011-25-26-1.pdf) |
+| Balochistan ordinary payment/return | Unless otherwise specified, payment 15thfollowing month; return within 3 days after due date under r 15; particular service rules can differ | [rr 15/17](https://ebra.com.pk/public/storage/uploads/downloads/1715239876.pdf) |
 | KP | s.39 permits prescribed/other periodic returns; Finance Act 2025 changes revised-return window to 120 days. No universal no-quarterly/annual-option claim | [2022 Act](https://kpra.gov.pk/wp-content/uploads/2024/07/KP-STS-ACT-2022-Updated-2024.pdf); [FA 2025 s.10](https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf) |
 | Punjab/ICT | Obtain actual current applicable rule/form/payment/return/extension before scheduling; do not infer a universal 15/18 calendar from another authority | Pending operational source boundary |
 | Sindh records | For periods through 30 June 2025:10 years after tax period; from 1 July 2025:6 years from financial-year end; proceedings final decision if later | [s.27](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf) |
@@ -72,7 +72,7 @@ Use actual SRB/PRA/KPRA/BRA/IRIS authority registration and return portals, rath
 
 Sindh s.43 item 2 uses 100 per day of late-return default; the former 5,000/10,000 and 15 day bands are superseded. Sindh s.44 ordinary surcharge is interbank+3% yearly, fraud 2% monthly, calculated from day after due date to day before actual payment, tax due excluding penalty. [ss.43/44](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
 
-Balochistan s.48 item 2 states 10,000 late-return penalty and 200 per default day if not filed within 15 days; preserve the exact assessment/default facts. Its s.49 ordinary surcharge is 12% yearly, fraud 2% monthly, with day-after-due to day-before-payment window and penalty excluded. The oldinterbank+3% statement was superseded. [ss.48/49](https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf). Punjab/KP/ICT penalty summaries and actual default-date amendments remain pending; do not invent a common minimum.
+Balochistan s.48 item 2 states 10,000 late-return penalty and 200 per default day if not filed within 15 days; preserve the exact assessment/default facts. Its s.49 ordinary surcharge is 12% yearly, fraud 2% monthly, with day-after-due to day-before-payment window and penalty excluded. The old interbank+3% statement was superseded. [ss.48/49](https://ebra.com.pk/public/storage/uploads/downloads/1755574443.pdf). Punjab/KP/ICT penalty summaries and actual default-date amendments remain pending; do not invent a common minimum.
 
 ## Worked cases
 
@@ -139,4 +139,4 @@ Keep all 9 referral groups: provincial refunds; competing cross-province claims/
 | Read for KPFinance Act 2025 s.10 amendments, general rate and Second Schedule 12; base Act ss.36/39 | https://kpra.gov.pk/wp-content/uploads/2025/07/kp-finance-act-2025.pdf; https://kpra.gov.pk/wp-content/uploads/2024/07/KP-STS-ACT-2022-Updated-2024.pdf |2026-11-14|
 | Read for ICTOrdinances.3,Table 1 item 11 and Table 2 item 11 including no-input/refund condition | https://download1.fbr.gov.pk/Docs/2025711172945966ICTOUpdatedupto30.06.2025.pdf |2026-11-14|
 
-Not yet confirmed: Punjabcurrent 2025-2026 schedule/rate/IT/export/penalty/deadline conditions; ordinaryweb and browser attempts to officialpunjablaws 2506 failed/timedout, and old 2012 PRAchapters are insufficient to clear later rates. KP 2026 Finance Act/Maynotification recovery remains incomplete. All actual later 2026 changes/extension calendars, particular input-credit/election restrictions, export definitions/procedures beyond the read rows, each current registration/portal/form, withholding/marketplace/refund/cross-credit/treaty/notice route require targeted confirmation. These boundaries preserve the old topics and keep unsupported figures outside usable instructions.
+Not yet confirmed: Punjab current 2025-2026 schedule/rate/IT/export/penalty/deadline conditions; ordinary web and browser attempts to official punjablaws 2506 failed/timedout, and old 2012 PRAchapters are insufficient to clear later rates. KP 2026 Finance Act/Maynotification recovery remains incomplete. All actual later 2026 changes/extension calendars, particular input-credit/election restrictions, export definitions/procedures beyond the read rows, each current registration/portal/form, withholding/marketplace/refund/cross-credit/treaty/notice route require targeted confirmation. These boundaries preserve the old topics and keep unsupported figures outside usable instructions.

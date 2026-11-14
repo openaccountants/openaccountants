@@ -1,10 +1,6 @@
 ---
 name: pk-crypto-tax
 description: Use for pakistan virtual assets and tax evidence. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about taxation and legal status of cryptocurrency in Pakistan. Trigger
-  on phrases like "Pakistan crypto tax", "is crypto legal Pakistan", "Bitcoin tax Pakistan", "PVARA",
-  "crypto gains Pakistan FBR". Covers the evolving legal/regulatory status, how gains could be taxed,
-  and the strong uncertainty. ALWAYS read before any Pakistan crypto work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -17,7 +13,7 @@ domain: crypto
 type: situation-rules
 ---
 
-# Pakistan virtual assets and tax evidence v 1.1
+# Pakistan virtual assets and tax evidence v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -107,4 +103,4 @@ Regulatory date and provider status checked; receipts distinguished from own tra
 | Read for PVARA FAQ A.1-4/B.5-7: notified framework date, licence perimeter, register and no asset guarantee | https://pvara.gov.pk/faq | 2026-11-14 |
 | Read for ITO ss.18,37,39 categories and s.154A export-realisation conditions; no blanket crypto ruling adopted | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
-Not yet confirmed: a dedicated crypto tax rate, binding FBR classification of each activity, the unsupported historic claim of a uniform capital-asset position since 2023, specific provider authorisation, individual transaction/FX treatment and applicable return boxes. The regulatory framework is established; these tax and fact questions remain separate.
+Not yet confirmed: current legal-tender status; a dedicated crypto tax rate, binding FBR classification of each activity, the unsupported historic claim of a uniform capital-asset position since 2023, specific provider authorisation, individual transaction/FX treatment and applicable return boxes. The regulatory framework is established; these tax and fact questions remain separate.

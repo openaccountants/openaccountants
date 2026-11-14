@@ -1,11 +1,6 @@
 ---
 name: pk-tax-optimization
 description: Use for pakistan lawful freelancer tax planning. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about legally reducing tax for a freelancer or small business in
-  Pakistan. Trigger on phrases like "reduce tax Pakistan", "PSEB benefit", "filer vs non-filer",
-  "tax planning Pakistan freelancer", "save tax IT export Pakistan". Covers the PSEB IT-export
-  concession, the filer/Active-Taxpayer-List lever, export-vs-domestic structuring, and advance-tax
-  planning ; legal only. ALWAYS read before Pakistan tax planning.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,7 +13,7 @@ domain: tax-optimization
 type: decision
 ---
 
-# Pakistan lawful freelancer tax planning v 1.1
+# Pakistan lawful freelancer tax planning v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

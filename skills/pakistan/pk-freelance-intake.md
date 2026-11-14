@@ -12,7 +12,7 @@ domain: income-tax
 type: router
 ---
 
-# Pakistan freelance and SME intake v 1.1
+# Pakistan freelance and SME intake v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -154,4 +154,4 @@ Ask about work category and existing SESSI coverage even without staff. Sindh 20
 |---|---|---|
 | Read for ITO ss.11,71,74,82/84,92,114/116,147,154 A,174 and First Schedule salary classification; repealed residence footnote distinguished from operative text | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 
-Not yet confirmed: event-specific ATL rates/refresh and current re-entry surcharge, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence and special-year/treaty regimes. The old turnover intake bins 600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic 50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.
+Not yet confirmed: event-specific ATL rates/refresh and eligibility for the current re-entry routes, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence and special-year/treaty regimes. The old turnover intake bins 600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic 50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.

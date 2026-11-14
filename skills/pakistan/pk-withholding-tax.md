@@ -11,7 +11,7 @@ version: 1.1
 type: computation
 ---
 
-# Pakistan income-tax withholding by payment and period v 1.1
+# Pakistan income-tax withholding by payment and period v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -85,9 +85,9 @@ Deposit is separate from statement filing. Section 148 collection is at Customs 
 
 ### Deposit, salary statement and certificate rules now sourced
 
-Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5)requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IXSecond Schedule, separately from quarterly s.165 reporting. Rule 44(4)requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5) requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IX Second Schedule, separately from quarterly s.165 reporting. Rule 44(4) requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
-Rule 42's non-salary collection/deduction certificate uses Part VIISecond Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Rule 42's non-salary collection/deduction certificate uses Part VII Second Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
 ## Penalties and interest
 
@@ -193,11 +193,9 @@ Retain all earlier refusal groups: provincial/ICT sales-tax withholding; WWF/WPP
 
 ### Current late-entry ATL route, November 2026
 
-Current s.182A surcharge amounts are company 100,000/AOP 50,000/individual 25,000; these are current-action amounts, not the historical 20,000/10,000/1,000 table. For a late individual, r 81 B(2 B)-(2 D)now allows IRIS**Form ATL-U**undertaking instead of the surcharge: sixmonths starts from successful IRIS acknowledgment, with no purchase/acquisition/ownership or beneficial interest in any property during the undertaking. An established breach after electronic hearing withdraws the benefit from the breach date and ordinary rules then govern. Do not promise this route to an AOP/company or describe filing alone as automatic fee-free entry. Datedevent status and actual charge conditions still control withholding. [Current ITO s.182A](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf); [signed 10 November 2026 SRO 2097](https://download1.fbr.gov.pk/SROs/202611101511326308SRO2097of2026.pdf), read 2026-11-14 for the operative rule/form.
+Current s.182A surcharge amounts are company 100,000/AOP 50,000/individual 25,000; these are current-action amounts, not the historical 20,000/10,000/1,000 table. For a late individual, r 81 B(2 B)-(2D) now allows IRIS **Form ATL-U** undertaking instead of the surcharge: the 6-month period starts from successful IRIS acknowledgment, with no purchase/acquisition/ownership or beneficial interest in any property during the undertaking. An established breach after electronic hearing withdraws the benefit from the breach date and ordinary rules then govern. Do not promise this route to an AOP/company or describe filing alone as automatic fee-free entry. Dated event status and actual charge conditions still control withholding. [Current ITO s.182A](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf); [signed 10 November 2026 SRO 2097](https://download1.fbr.gov.pk/SROs/202611101511326308SRO2097of2026.pdf), read 2026-11-14 for the operative rule/form.
 
 ## Sources
-
-
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|

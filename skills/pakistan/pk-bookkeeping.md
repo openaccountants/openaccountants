@@ -1,11 +1,6 @@
 ---
 name: pk-bookkeeping
 description: Use for pakistan bookkeeping and records. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about record-keeping and bookkeeping for self-employed people and
-  small businesses in Pakistan. Trigger on phrases like "Pakistan bookkeeping", "records for FBR",
-  "invoice requirements Pakistan", "freelancer records Pakistan", "what records to keep FBR". Covers
-  the records a business individual must keep, foreign-remittance evidence for IT exporters, invoicing,
-  and retention. ALWAYS read before any Pakistan bookkeeping work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,7 +13,7 @@ domain: bookkeeping
 type: filing-howto
 ---
 
-# Pakistan bookkeeping and records v 1.1
+# Pakistan bookkeeping and records v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

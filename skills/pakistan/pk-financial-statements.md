@@ -1,11 +1,6 @@
 ---
 name: pk-financial-statements
 description: Use for pakistan financial statements and reporting route. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about financial statements and accounting reporting in Pakistan.
-  Trigger on phrases like "Pakistan financial statements", "do I file accounts as sole proprietor
-  Pakistan", "SECP financial statements", "IFRS Pakistan", "audit requirement Pakistan". Explains that
-  sole proprietors/AOPs file accounts with the tax return rather than statutory statements, and what
-  companies must prepare and file with SECP. ALWAYS read before any Pakistan financial-reporting work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,7 +13,7 @@ domain: financial-statements
 type: situation-rules
 ---
 
-# Pakistan financial statements and reporting route v 1.1
+# Pakistan financial statements and reporting route v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -100,7 +95,7 @@ Never instruct every freelancer to file SECP company statements, assume full IFR
 
 ## Filing and payment
 
-SECP's FAQ routes annual accounts through eZfile's Filing and Compliance, Periodic Filing, Annual Filing and Annual Accounts process. Tax accounts accompany the applicable IRIS workflow separately. Obtain the actual statutory date, approvals and current process before filing; preserve both acknowledgements. This skill does not prescribe an unverified universal accounts-filing deadline.
+Use the applicable SECP annual-accounts process in eZfile and retain its acknowledgement. Tax accounts accompany the applicable IRIS workflow separately. Obtain the actual statutory date, approvals and current process before filing; preserve both acknowledgements. This skill does not prescribe an unverified universal accounts-filing deadline.
 
 ## Completion checklist
 

@@ -11,7 +11,7 @@ version: 1.1
 type: computation
 ---
 
-# Pakistan integrated payroll and social-contribution run v 1.1
+# Pakistan integrated payroll and social-contribution run v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -43,16 +43,16 @@ Quick answer: determine gross taxable pay and annual tax forecast, separate empl
 
 ## Deadlines and filing
 
-For s.165 use the sourced quarterly schedule. Withholding-tax deposit, deduction certificate, EOBI registration/challan/insured-person schedule and provincial contribution/return dates are separate requirements. Obtain each operative calendar; the old 15 th-of-month deposit and 31 July annual-reconciliation claims are not blanket rules. Act s.11 requires employer registration particulars within 30 days after applicability (in words on page); actual applicability still requires the threshold conflict/notification analysis. [EOB Act ss.10-11](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf); [ITO s.165](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf).
+For s.165 use the sourced quarterly schedule. Withholding-tax deposit, deduction certificate, EOBI registration/challan/insured-person schedule and provincial contribution/return dates are separate requirements. Obtain each operative calendar; the old 15th-of-month deposit and 31 July annual-reconciliation claims are not blanket rules. Act s.11 requires employer registration particulars within 30 days after applicability (in words on the page); actual applicability still requires the threshold conflict/notification analysis. [EOB Act ss.10-11](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf); [ITO s.165](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf).
 
 Retain the employer's tax payment instructions/CPRs, EOBI challan and insured-person schedule (historically PR-03/PR-04, current form not confirmed), and provincial records separately. Annual sums must reconcile to actual monthly insured-person records, not simply current headcount multiplied across the whole year. Issue the actual required employee deduction certificate; do not promise a guessed Rule 42 date.
 
 
 ### Deposit, salary statement and certificate rules now sourced
 
-Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5)requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IXSecond Schedule, separately from quarterly s.165 reporting. Rule 44(4)requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5) requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IX Second Schedule, separately from quarterly s.165 reporting. Rule 44(4) requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
-Rule 42's non-salary collection/deduction certificate uses Part VIISecond Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Rule 42's non-salary collection/deduction certificate uses Part VII Second Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
 ## Penalties and interest
 
@@ -72,7 +72,7 @@ The 2018 amendment retains existing insurance when wages exceed the upper limit.
 
 ### Other provincial contribution branches
 
-KP Act 2021 s.20 requires employer 6% of wages for covered employees, capped by the minimum wage or s.12 determination, with no recovery of employer contribution from wages. Initial wage eligibility under s.2(k)(e) is 60% above the notified minimum, and existing secured employees continue despite a later increase. Thus eligibility ceiling and contribution base differ. Section 22 requires employer particulars within 60 days of applicability. Obtain actual current notification/establishment coverage before computing. [KP Act ss.2(k),20/22](https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf), read 2026-11-14; worded figures shown as numerals.
+KP Act 2021 s.20 requires employer 6% of wages for covered employees, capped by the minimum wage or s.12 determination, with no recovery of employer contribution from wages. Initial wage eligibility under s.2(k)(e) is 60% above the notified minimum, and existing secured employees continue despite a later increase. Thus eligibility ceiling and contribution base differ. Section 22 requires employer particulars within 60 days of applicability. Obtain actual current notification/establishment coverage before computing. [KP Act ss.2(k),20/22](https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf), read 2026-11-14; figures in words on the page are shown as numerals.
 
 Balochistan Act 2022 s.20 uses employer 6% with upper-limit cap and prevailing-minimum-wage proviso; s.75 lower limit is the notified minimum, upper is minimum plus 15%. Section 21 self-assessment uses 6% of lower limit per secured employee and a separate 60 monthly employee share. Sindh's self-assessment employee share is 40 monthly under s.21(3), separate from conditional self-employed 1,500 and employer-share recovery prohibition. These province-specific branches replace the universal “no employee ESSI deduction” assumption; they do not establish current numerical wage notifications or every professional's coverage. [Balochistan Act ss.20/21/75](https://pabalochistan.gov.pk/storage/4287/2022-11-28_10_00_34_34dbd.pdf); [Sindh Act ss.20/21](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Employees-Social-Security-Act-2016-with-rules-and-ammendments.pdf), read 2026-11-14 for these provisions; worded figures shown as numerals.
 
@@ -147,8 +147,6 @@ Obtain every input listed in The base and actual authority notices/payments/retu
 
 
 
-
-
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
 | Read for Sindh WWF s.2(l)/5 and WPPF s.2/3/Scheme 1 coverage/contribution/payment branches on 2026-11-14 | https://www.sindhlaws.gov.pk/DownloadDocument.aspx?Lang=EN&PubID=PUB-NEW-26-000098; https://www.srb.gos.pk/srb/wp-content/uploads/2020/07/ARM-6.pdf. | 2026-11-14 |
@@ -162,4 +160,4 @@ Obtain every input listed in The base and actual authority notices/payments/retu
 | Read for ministry FAQ 4-5 current administrative threshold and contribution-base/split description | https://ophrd.gov.pk/Detail/OGI0NzE3NGEtMzllOS00NjUwLTgzYjgtM2QwNzY4OGNkZWYy | 2026-11-14 |
 | Read for parliamentary reply pp 48-49 current 10-person/notified/voluntary coverage description | https://na.gov.pk/uploads/documents/6ae817d42a069_262.pdf | 2026-11-14 |
 
-Not yet confirmed: judicial resolution of 5/10-person threshold conflict, actual numeric EOBI base and its current challan/contribution calendar, current numeric wage notifications, Punjab operative law, actual establishment coverage and contribution-return calendars beyond the read branches, federal/other-province WWF/WPPF and Sindhworker distribution/residual/credit law beyond the read coverage/contribution branches. Old 40,000/37,000/50,000 placeholders, generic 6% provincial rule,the universal 50-worker assertion is wrong; federal/other-province 2% WWF/5% WPPF/9-month and specific distribution assertions remain unconfirmed, not deleted topics or usable instructions. No professional approval is claimed.
+Not yet confirmed: judicial resolution of 5/10-person threshold conflict, actual numeric EOBI base and its current challan/contribution calendar, current numeric wage notifications, Punjab operative law, actual establishment coverage and contribution-return calendars beyond the read branches, federal/other-province WWF/WPPF and Sindh worker distribution/residual/credit law beyond the read coverage/contribution branches. Old 40,000/37,000/50,000 placeholders, generic 6% provincial rule,the universal 50-worker assertion is wrong; federal/other-province 2% WWF/5% WPPF/9-month and specific distribution assertions remain unconfirmed, not deleted topics or usable instructions. No professional approval is claimed.

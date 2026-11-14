@@ -73,7 +73,7 @@ Preserve raw statement descriptions, including Urdu, alongside any translation. 
 2. Link sales/purchases to invoices and actual goods/service/location/date. Separate output from input and tax-exclusive value from gross. Mark missing evidence/ambiguous split in a pending register; never invent a higher “safe” rate or country.
 3. Run the appropriate owner computation. Federal input needs actual ss.7/8/8 B/73 evidence and restrictions, including business use, matching, banking and statutory exceptions. Provincial input, mixed-use apportionment and cross-credit are authority-specific. Keep denied and unverified credits separately identified.
 4. Preserve imports via own-name GD and exports via actual conditions/documents; imported goods and imported services follow different routes. Further tax, extra tax, retail-price/special regimes and sales-tax withholding need actual owner law. Do not conflate export income withholding with goods/services sales tax.
-5. Build the `vat-workflow-base` working paper with Pakistan fields: date, source ID, counterparty/rawdescription, direction/currency/gross, net, tax, rate/base, goods/service/code, authority/province, registration/status, document/source, exemption/election reason, business use/admissibility, default/pending flag and reviewer action. Use distinct federal output/input/zero/exempt, each provincial output/input, withholding, brought-forward/next credit and each authority's net payment.
+5. Build the `vat-workflow-base` working paper with Pakistan fields: date, source ID, counterparty/raw description, direction/currency/gross, net, tax, rate/base, goods/service/code, authority/province, registration/status, document/source, exemption/election reason, business use/admissibility, default/pending flag and reviewer action. Use distinct federal output/input/zero/exempt, each provincial output/input, withholding, brought-forward/next credit and each authority's net payment.
 6. Reconcile control totals to documents/owner calculations and actual returns/payments. Do not offset one authority's liability with another's credit. Produce a brief and action list for missing evidence and specialist matters, then route to `pk-return-assembly` if relevant. This workflow does not file or certify a return.
 
 ## Two worked examples that recompute
@@ -115,7 +115,7 @@ expected:
 
 ### Other historical cases preserved as their actual evidence gates
 
-The 15 April 2026 USIMPORTERINC 5,000,000 goods export has 0 output **only after actual export/zero-rate conditions**; input/refund is a separate test. The 18 April 2026 GOOGLECLOUD 50,000 payment is an imported-service classification hold; the old 9,000 federal 18% assertion is withdrawn. The 25 April 2026 JAZZCASH 50 fee requires its actual invoice/service/authority classification, not the blanket “financial-serviceexempt” label. None of these transfers creates input credit from bank text alone.
+The 15 April 2026 USIMPORTERINC 5,000,000 goods export has 0 output **only after actual export/zero-rate conditions**; input/refund is a separate test. The 18 April 2026 GOOGLECLOUD 50,000 payment is an imported-service classification hold; the old 9,000 federal 18% assertion is withdrawn. The 25 April 2026 JAZZCASH 50 fee requires its actual invoice/service/authority classification, not the blanket “financial-service exempt” label. None of these transfers creates input credit from bank text alone.
 
 ## Deadlines, filing and records
 

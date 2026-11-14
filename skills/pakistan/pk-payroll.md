@@ -1,11 +1,6 @@
 ---
 name: pk-payroll
 description: Use for pakistan employer salary withholding. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about Pakistan payroll and salary-tax withholding for employers.
-  Trigger on phrases like "Pakistan payroll", "salary tax withholding Pakistan", "deduct tax from
-  salary FBR", "EOBI deduction", "payroll Pakistan freelancer hiring staff". Covers salary income-tax
-  withholding under the salaried slabs, EOBI/provincial social security, and monthly withholding
-  statements. ALWAYS read before any Pakistan payroll work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,7 +13,7 @@ domain: payroll
 type: computation
 ---
 
-# Pakistan employer salary withholding v 1.1
+# Pakistan employer salary withholding v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,7 +27,7 @@ Quick answer: s.149 uses an estimated annual salary tax average rate at payment,
 
 | Item and conditions | Published tax-year 2026 rule | Source |
 |---|---|---|
-| Salary-table eligibility | Salary exceeds 75% of taxable income (in words on page); exactly 75% does not qualify for this table | [First Schedule Part I Division I(2)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Salary-table eligibility | Salary exceeds 75% of taxable income (in words on the page); exactly 75% does not qualify for this table | [First Schedule Part I Division I(2)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Salary-table lower boundary | Taxable income up to 600,000 is 0%; over 600,000 to 1,200,000 is 1% of excess over 600,000 | [Division I(2)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Top salary-table band | Over 4,100,000:616,000+35% of excess; separate s.4AB high-income surcharge must be tested | [Division I(2); s.4AB](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Withholding average rate | A/B under s.149, estimated salary tax including applicable surcharge divided by estimated salary income, with documented adjustments | [s.149(1)-(2)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
@@ -46,16 +41,16 @@ Quick answer: s.149 uses an estimated annual salary tax average rate at payment,
 
 ## Deadlines and filing
 
-Report s.149 deductions in the applicable quarterly s.165 statement, not a blanket monthly statement. The 2025 ordinance and current 2026 text require quarters ending March/June/September/December by 20 April/20 July/20 October/20 January. [s.165(1)-(2)](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf). Reconcile employee identifiers, pay, deduction, section and actual CPR. Use the sourced deposit/statement/certificate distinctions below; the old flat 15 th-of-next-month deposit rule is wrong.
+Report s.149 deductions in the applicable quarterly s.165 statement, not a blanket monthly statement. The 2025 ordinance and current 2026 text require quarters ending March/June/September/December by 20 April/20 July/20 October/20 January. [s.165(1)-(2)](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf). Reconcile employee identifiers, pay, deduction, section and actual CPR. Use the sourced deposit/statement/certificate distinctions below; the old flat 15th-of-next-month deposit rule is wrong.
 
 Generate the correct FBR payment instruction, remit and retain the CPR; reconcile with quarterly reporting and employee deduction certificates. EOBI/provincial contributions have their own institutions and calendars. This skill produces the reviewed working paper, not a filed statement.
 
 
 ### Deposit, salary statement and certificate rules now sourced
 
-Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5)requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IXSecond Schedule, separately from quarterly s.165 reporting. Rule 44(4)requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5) requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IX Second Schedule, separately from quarterly s.165 reporting. Rule 44(4) requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
-Rule 42's non-salary collection/deduction certificate uses Part VIISecond Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
+Rule 42's non-salary collection/deduction certificate uses Part VII Second Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
 ## Penalties and interest
 
@@ -107,8 +102,6 @@ The second case is an equal-pay reconciliation illustration: the annual forecast
 Obtain contracts/payroll records, employee identifiers, current/previous employment pay, benefits/bonuses, tax period, actual prior deductions/credits, joining/leaving/arrears facts, scheme registrations/base notices and current payment/reporting requirements. Refuse final payroll where the period/table or necessary pay records are missing. Never skip quarterly reporting, use business slabs for ordinary employee salary, assume an EOBI base or invent a credit/certificate.
 
 ## Sources
-
-
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|

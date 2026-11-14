@@ -1,11 +1,6 @@
 ---
 name: pk-social-contributions
 description: Use for pakistan social contributions and coverage. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
-  Use this skill whenever asked about social security and pension contributions for workers and the
-  self-employed in Pakistan. Trigger on phrases like "EOBI Pakistan", "social security Pakistan",
-  "pension contribution Pakistan", "ESSI PESSI SESSI", "do freelancers pay social security Pakistan".
-  Covers EOBI old-age benefits, the provincial social security institutions, and the (limited) position
-  of the self-employed. ALWAYS read before any Pakistan social-contribution work.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -18,7 +13,7 @@ domain: payroll
 type: situation-rules
 ---
 
-# Pakistan social contributions and coverage v 1.1
+# Pakistan social contributions and coverage v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,7 +37,7 @@ Obtain legal form, worker/contractor relationships, present and prior headcount,
 
 | EOBI item and conditions | Current source position | Official source |
 |---|---|---|
-| Current ministry contribution description, per insured person | Employer 5% plus employee 1% of federal-notified minimum wage; total 6% (figures in words on page); actual base not confirmed here | [Ministry FAQ 5](https://ophrd.gov.pk/Detail/OGI0NzE3NGEtMzllOS00NjUwLTgzYjgtM2QwNzY4OGNkZWYy) |
+| Current ministry contribution description, per insured person | Employer 5% plus employee 1% of federal-notified minimum wage; total 6% (figures in words on the page); actual base not confirmed here | [Ministry FAQ 5](https://ophrd.gov.pk/Detail/OGI0NzE3NGEtMzllOS00NjUwLTgzYjgtM2QwNzY4OGNkZWYy) |
 | Current administrative general headcount | 10 or more, plus establishments specified by notification; smaller establishments may join voluntarily | [Parliamentary reply pp 48-49](https://na.gov.pk/uploads/documents/6ae817d42a069_262.pdf) |
 | Conflicting consolidated statutory print | s.1(4) prints 5, including previous 12 months, continued coverage and voluntary branch, with a Finance Act 2008 substitution footnote; this conflict requires legal/court reconciliation before a threshold-only coverage decision | [Act s.1(4)](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf) |
 
@@ -66,7 +61,7 @@ The 2018 amendment retains existing insurance when wages exceed the upper limit.
 
 ### Other provincial contribution branches
 
-KP Act 2021 s.20 requires employer 6% of wages for covered employees, capped by the minimum wage or s.12 determination, with no recovery of employer contribution from wages. Initial wage eligibility under s.2(k)(e) is 60% above the notified minimum, and existing secured employees continue despite a later increase. Thus eligibility ceiling and contribution base differ. Section 22 requires employer particulars within 60 days of applicability. Obtain actual current notification/establishment coverage before computing. [KP Act ss.2(k),20/22](https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf), read 2026-11-14; worded figures shown as numerals.
+KP Act 2021 s.20 requires employer 6% of wages for covered employees, capped by the minimum wage or s.12 determination, with no recovery of employer contribution from wages. Initial wage eligibility under s.2(k)(e) is 60% above the notified minimum, and existing secured employees continue despite a later increase. Thus eligibility ceiling and contribution base differ. Section 22 requires employer particulars within 60 days of applicability. Obtain actual current notification/establishment coverage before computing. [KP Act ss.2(k),20/22](https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf), read 2026-11-14; figures in words on the page are shown as numerals.
 
 Balochistan Act 2022 s.20 uses employer 6% with upper-limit cap and prevailing-minimum-wage proviso; s.75 lower limit is the notified minimum, upper is minimum plus 15%. Section 21 self-assessment uses 6% of lower limit per secured employee and a separate 60 monthly employee share. Sindh's self-assessment employee share is 40 monthly under s.21(3), separate from conditional self-employed 1,500 and employer-share recovery prohibition. These province-specific branches replace the universal “no employee ESSI deduction” assumption; they do not establish current numerical wage notifications or every professional's coverage. [Balochistan Act ss.20/21/75](https://pabalochistan.gov.pk/storage/4287/2022-11-28_10_00_34_34dbd.pdf); [Sindh Act ss.20/21](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Employees-Social-Security-Act-2016-with-rules-and-ammendments.pdf), read 2026-11-14 for these provisions; worded figures shown as numerals.
 
@@ -115,15 +110,13 @@ Never impose a mandatory self-employed profit contribution without an operative 
 
 ## Filing and payment
 
-Use each institution's actual current registration, insured-person schedule/challan and due date. Keep EOBI and provincial payments/returns separate from FBR salary tax and quarterly withholding statements. The old blanket 15 th/31 July provincial calendar is not confirmed here.
+Use each institution's actual current registration, insured-person schedule/challan and due date. Keep EOBI and provincial payments/returns separate from FBR salary tax and quarterly withholding statements. The old blanket 15th/31 July provincial calendar is not confirmed here.
 
 ## Completion checklist
 
 Employment and locations established; coverage/continuation/voluntary branch supported; source conflict resolved for the actual case; notification/base/rate period obtained; employer/employee shares separated; paid records reconciled; provincial scheme checked separately; no unconfirmed voluntary self-employed promise.
 
 ## Sources
-
-
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|

@@ -11,7 +11,7 @@ version: 1.1
 type: computation
 ---
 
-# Pakistan federal goods sales-tax computation and return v 1.1
+# Pakistan federal goods sales-tax computation and return v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -39,7 +39,7 @@ Obtain legal identity/NTN/STRN, period/category/status, all bank/wallet statemen
 | Ordinary revised return | Within 120 days from filing, Commissioner approval; within 60 days higher tax/lower refund branch needs no approval unless risk-system restriction | [s.26(3)-(3 A)](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Late-return penalty |10,000; if filed within 10 days of due date,200 per default day instead | [s.33 item 1](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 | Ordinary default surcharge | Higher of 12% yearly or KIBOR+3%; fraud 2% monthly is a separate branch, with statutory accrual windows | [s.34](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
-| Record retention |6 years from end of relevant tax period; pending proceedings/final-decision period can extend it | [s.24](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
+| Record retention |6 years from end of relevant tax period; pending proceedings/final-decision period can extend it (in words on the page) | [s.24](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
 
 ## Registration, time and value
 
@@ -68,7 +68,7 @@ Keep ss.22/24 invoice, debit/credit-note, purchase/import/supply/zero/exempt, ba
 
 ## Deadlines and filing
 
-The read Rules require STR 7 and electronic submission; applicable information must be complete. For ordinary cases whose prescribed date is 15 th, r 18(9) provides payment 15 th and filing 18 th. It also contains special utility/power/petroleum dates and **quarterly CNG/Tenth Schedule brick-kiln branches**; no universal monthly assertion. Rule 18(3)'s supply/debit-credit data by 10 th, buyer purchase-data and seller-filing reconciliation require the actual period's amendments/extension check. More-than 6 months-late return needs Commissioner approval under r 14(3). [Rules 14/18](https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf).
+The read Rules require STR 7 and electronic submission; applicable information must be complete. For ordinary cases whose prescribed date is 15th, r 18(9) provides payment 15th and filing 18th. It also contains special utility/power/petroleum dates and **quarterly CNG/Tenth Schedule brick-kiln branches**; no universal monthly assertion. Rule 18(3)'s supply/debit-credit data by 10 th, buyer purchase-data and seller-filing reconciliation require the actual period's amendments/extension check. More-than 6 months-late return needs Commissioner approval under r 14(3). [Rules 14/18](https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf).
 
 Rule 17's STR 10 annual return applies registered private/public limited companies, by 30 September following financial year; manufacturing alone is not that rule's trigger. For later periods check amended forms/rules rather than promise the 1 January 2025 consolidation is current to November 2026. [r 17](https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf).
 
@@ -157,7 +157,7 @@ Use the table's sourced late-return/default rules for that law period, preservin
 
 Section 66's 1 year rule concerns tax paid/overpaid through error/inadvertence/misconstruction and unclaimed input, with Commissioner adjustment/judgment/provisional branches; it is not a universal deadline or entitlement for every exporter refund. Annex H/FASTER/ERS eligibility, input trace/stock and export evidence need specialist review before claiming. [s.66](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf); [STR 7 Annex H](https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf).
 
-Keep schedule topics distinct: Third Schedule retail-price; Fifthzero; Sixthexempt; Eighthother rates; Ninthphones; Tenthbricks; Eleventhwithholding; Twelfthcommercial-import value-addition. Read the actual item/date/PCT and exceptions; do not adopt generic 25% luxury,15% textile/leather POS,5% prize/discount, sugar/soybean/steel/EV/pharma/dairy/solar or phone rates without the current entry. Extra tax is not interchangeable with further tax or a luxury-rate notification; the old “generally abolished” claim is not cleared.
+Keep schedule topics distinct: Third Schedule retail-price; Fifth zero-rated; Sixth exempt; Eighth other rates; Ninth mobile phones; Tenth bricks; Eleventh withholding; Twelfth commercial-import value-addition. Read the actual item/date/PCT and exceptions; do not adopt generic 25% luxury,15% textile/leather POS,5% prize/discount, sugar/soybean/steel/EV/pharma/dairy/solar or phone rates without the current entry. Extra tax is not interchangeable with further tax or a luxury-rate notification; the old “generally abolished” claim is not cleared.
 
 ## When to refuse or refer
 
@@ -165,7 +165,6 @@ Preserve the 9 referral groups: mixed federal/provincial supplies; unseen SRO/co
 
 Internal review markers retained from the earlier workflow are **firm policy, not FBR law**: single transaction 5,000,000 and derived 900,000 at 18%; concentration>40%; defaults>5; net position 500,000; input/output>90% for 3 months. Use them only to request evidence/review, never as statutory registration/audit/credit rules or permission to file with defaults.
 
-For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 October 2026 extends the filing date to **31 October 2026** for persons originally due 30 September 2026 and previously extended to 15 October. It does not extend every company return. Apply any individual further order only on its evidence; this circular does not itself state a general payment extension. [Official circular](https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf), read and scanned page inspected 2026-11-14.
 
 ## Sources
 
@@ -174,4 +173,4 @@ For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 O
 | Read for Act ss.2(5 AB),(43 A),(44),3/7/8/8 B/14,21 A-24,26,33 item 1,34,66/73 and adjacent exceptions | https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf |2026-11-14|
 | Read for Rules 14/17/18 and STR 7 annex structure; consolidation only updated 1 January 2025, later amendments require period check | https://download1.fbr.gov.pk/Docs/20251141513138962Sales-Tax-Rules-2006-UpdatedUpto01-01-2025.pdf |2026-11-14|
 
-Not yet confirmed: complete later 2026 amendment/extension calendar, actual current portal/form/payment-provider screens, SRO 297/1190/660 operative status and all special schedule/POS/withholding/value-addition/item rates, statutory penalty/nonintegration/fraud figures beyond the sourced table, actual exporterrefund procedure/eligibility and every cross-credit arrangement with provincial services. Preserve those topics for targeted specialist work. No professional accountant approval is claimed.
+Not yet confirmed: complete later 2026 amendment/extension calendar, actual current portal/form/payment-provider screens, SRO 297/1190/660 operative status and all special schedule/POS/withholding/value-addition/item rates, statutory penalty/nonintegration/fraud figures beyond the sourced table, actual exporter refund procedure/eligibility and every cross-credit arrangement with provincial services. Preserve those topics for targeted specialist work. No professional accountant approval is claimed.
