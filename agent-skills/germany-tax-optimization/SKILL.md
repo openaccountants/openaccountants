@@ -7,16 +7,36 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-tax-optimization"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Tax planning for the self-employed in Germany (Steueroptimierung)
 
-The statutory rules behind the usual ways a self-employed person in Germany lowers income tax, trade tax, VAT and social contributions: for each idea the rule, its conditions, its limit and what stops it. This Guide never computes a saving and does not rank options. Figures are for tax year 2026, from the federal law pages, the ministry instructions for the 2026 EÜR form (ministry letter of 1 September 2026) and 2026 pension insurer pages. One source is dated another year: the ministry booklet "Steuern von A bis Z" is the 2025 edition, used only for the marginal income tax rates, the church tax rates and the lowest trade tax multiplier, because the statute prints those as factors, not at all, or already in its 2027 version. Rates set for later years are marked as not for 2026.
+## Scope
 
-## Germany Tax Optimization: Self-Employed Guide
+The statutory rules behind the usual ways a self-employed person in Germany lowers income tax, trade tax, VAT and social contributions: for each idea the rule, its conditions, its limit and what stops it. This Guide computes no saving for a real client and does not rank options; the worked cases use example inputs. Figures are for tax year 2026, from the federal law pages, the ministry instructions for the 2026 EÜR form (ministry letter of 1 September 2026) and 2026 pension insurer pages. One source is dated another year: the ministry booklet "Steuern von A bis Z" is the 2025 edition, used only for the marginal income tax rates, the church tax rates and the lowest trade tax multiplier, because the statute prints those as factors, not at all, or already in its 2027 version. Rates set for later years are marked as not for 2026.
 
 Read the conditions before the benefit. Several rules only move tax to a later year: the investment deduction is added back when the asset is bought, faster depreciation leaves less for later years, and retained profit is taxed again when withdrawn.
+
+## Ask the client first
+
+- What is the legal form and kind of income, and is profit worked out by EÜR or by balance sheet?
+- What is the expected profit this year before any investment deduction, what was last year's, and how much must be withdrawn to live on?
+- Is the client married or in a civil partnership, both fully liable to tax in Germany and living together, and does the spouse work in the business?
+- Which assets will be bought in the next three years, when, and how much will each be used privately?
+- VAT: last year's total turnover, this year's so far, and are large purchases planned?
+- How is the client insured for old age and health, and does the client work essentially for one client?
+
+## The method, step by step
+
+1. Fix the facts: legal form, trade or liberal profession (§ 15 and § 18 EStG), and EÜR or balance sheet (§ 4(3) EStG). https://www.gesetze-im-internet.de/estg/__4.html
+2. Work out the expected profit and test it against the § 7g profit limit before any investment deduction or special depreciation. https://www.gesetze-im-internet.de/estg/__7g.html
+3. Go through the deductions in Section 3, checking each limit and the separate record § 4(7) EStG demands. https://www.gesetze-im-internet.de/estg/__9.html
+4. Per fixed asset: low-value asset or pool first, one choice for the whole year (§ 6(2a) EStG), then the depreciation method and its date window. https://www.gesetze-im-internet.de/estg/__6.html
+5. Losses: offset within the year, then the carry-back or its waiver, then the carry-forward (§ 10d EStG). https://www.gesetze-im-internet.de/estg/__10d.html
+6. Special expenses in the year paid, and the choice between single and joint assessment in the return (§ 10 and § 26 EStG). https://www.gesetze-im-internet.de/estg/__10.html
+7. VAT: test both small-business limits before waiving the rule, knowing the waiver binds for at least five years. https://www.gesetze-im-internet.de/ustg_1980/__19.html
+8. Test every idea against § 42 AO, write down the non-tax reasons, and refer before any change of structure; a binding ruling can be asked for beforehand, for a fee (§ 89 AO). https://www.gesetze-im-internet.de/ao_1977/__89.html
 
 ## Section 1: Quick Reference
 
@@ -24,11 +44,11 @@ Read the conditions before the benefit. Several rules only move tax to a later y
 
 | Field | Value |
 | --- | --- |
-| Who this covers | Traders, liberal professions (§ 18 EStG), partners, owner-managers of a small GmbH |
-| Key legislation | EStG § 4, § 6, § 7, § 7g, § 9, § 10, § 10d, § 34a, § 35; KStG § 1a, § 23; GewStG § 11, § 16; UStG § 15, § 19, § 20; AO § 42 |
-| Anti-abuse rule | § 42 AO disregards an inappropriate arrangement giving a tax advantage the law does not provide for, unless non-tax reasons that matter overall are proven |
-| Currency, tax year | EUR; the calendar year (§ 2(7) EStG) |
-| Filing deadline | For 2026: nominal 31 July 2027 is Saturday, so the ordinary deadline is Monday 2 August 2027 under § 108(3) AO, subject to any applicable local public holiday; with an adviser, end of February 2028, which the tax office can shorten (§ 149 AO) |
+| Who this covers | Traders, liberal professions (§ 18 EStG), partners, owner-managers of a small GmbH Source: https://www.gesetze-im-internet.de/estg/__18.html |
+| Key legislation | EStG § 4, § 6, § 7, § 7g, § 9, § 10, § 10d, § 34a, § 35; KStG § 1a, § 23; GewStG § 11, § 16; UStG § 15, § 19, § 20; AO § 42 Source: https://www.gesetze-im-internet.de/estg/__4.html |
+| Anti-abuse rule | § 42 AO disregards an inappropriate arrangement giving a tax advantage the law does not provide for, unless non-tax reasons that matter overall are proven Source: https://www.gesetze-im-internet.de/ao_1977/__42.html |
+| Currency, tax year | EUR; the calendar year (§ 2(7) EStG) Source: https://www.gesetze-im-internet.de/estg/__2.html |
+| Filing deadline | For 2026: nominal 31 July 2027 is Saturday, so the ordinary deadline is Monday 2 August 2027 under § 108(3) AO, subject to any applicable local public holiday; with an adviser, end of February 2028, which the tax office can shorten (§ 149 AO) Source: https://www.gesetze-im-internet.de/ao_1977/__149.html |
 
 Pages: https://www.gesetze-im-internet.de/ao_1977/__42.html and https://www.gesetze-im-internet.de/ao_1977/__149.html
 
@@ -38,42 +58,38 @@ The tariff is a formula (§ 32a(1) EStG): the statute prints zone boundaries for
 
 **Income tax tariff 2026: zone boundaries**
 
-| Zone | Taxable income, single assessment | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__32a.html |
-| Basic allowance, no tax | up to EUR 12,348 | "bis 12 348 Euro" |
-| First progressive zone | EUR 12,349 to EUR 17,799 | "von 12 349 Euro bis 17 799 Euro" |
-| Second progressive zone | EUR 17,800 to EUR 69,878 | "von 17 800 Euro bis 69 878 Euro" |
-| First flat zone, factor 0,42 | EUR 69,879 to EUR 277,825 | "von 69 879 Euro bis 277 825 Euro" |
-| Highest zone, factor 0,45 | from EUR 277,826 | "von 277 826 Euro an" |
+| Zone | Taxable income, single assessment | Note | Source |
+| --- | --- | --- | --- |
+| Basic allowance, no tax | up to EUR 12,348 | "bis 12 348 Euro" | https://www.gesetze-im-internet.de/estg/__32a.html |
+| First progressive zone | EUR 12,349 to EUR 17,799 | "von 12 349 Euro bis 17 799 Euro" | same |
+| Second progressive zone | EUR 17,800 to EUR 69,878 | "von 17 800 Euro bis 69 878 Euro" | same |
+| First flat zone, factor 0,42 | EUR 69,879 to EUR 277,825 | "von 69 879 Euro bis 277 825 Euro" | same |
+| Highest zone, factor 0,45 | from EUR 277,826 | "von 277 826 Euro an" | same |
 
 **Marginal rates, church tax, lowest trade tax multiplier (ministry booklet, 2025 edition)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
-| Lowest marginal rate | 14% | "Zonen von 14 Pro- zent" |
-| Top marginal rate, first flat zone | 42% | "auf 42 Prozent (Spitzensteuersatz)" |
-| Highest marginal rate | 45% | "auf dann 45 Prozent (Reichensteuer)" |
-| Church tax for members, on the tax | 8% or 9% | "8 oder 9 Prozent" |
-| Lowest trade tax multiplier, the 2026 rule | 200% | "mindestens 200 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Lowest marginal rate | 14% | "Zonen von 14 Pro- zent" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
+| Top marginal rate, first flat zone | 42% | "auf 42 Prozent (Spitzensteuersatz)" | same |
+| Highest marginal rate | 45% | "auf dann 45 Prozent (Reichensteuer)" | same |
+| Church tax for members, on the tax | 8% or 9% | "8 oder 9 Prozent" | same |
+| Lowest trade tax multiplier, the 2026 rule | 200% | "mindestens 200 Prozent" | same |
 
 Rates on the next euro, not on all income. The booklet's zone boundaries are the 2025 ones: use the statute table.
 
 **Solidaritätszuschlag: the rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__4.html |
-| Surcharge on the tax, not on income | 5.5% | "beträgt 5,5 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Surcharge on the tax, not on income | 5.5% | "beträgt 5,5 Prozent" | https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 
 **Solidaritätszuschlag: exemption limits 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__3.html |
-| Single assessment: charged only above | EUR 20,350 | "anderen Fällen 20 350 Euro" |
-| Joint assessment and other splitting cases | EUR 40,700 | "Einkommensteuergesetzes 40 700 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Single assessment: charged only above | EUR 20,350 | "anderen Fällen 20 350 Euro" | https://www.gesetze-im-internet.de/solzg_1995/__3.html |
+| Joint assessment and other splitting cases | EUR 40,700 | "Einkommensteuergesetzes 40 700 Euro" | same |
 
 The limit is measured on the assessed income tax and has a mitigation zone above it: not an allowance. § 3(3) SolzG names persons liable to income tax, so a GmbH has no exemption limit. No official page prints a combined rate of income tax, surcharge and church tax, so this Guide states none.
 
@@ -85,8 +101,8 @@ The limit is measured on the assessed income tax and has a mitigation zone above
 
 | Strategy | Rule and what limits it |
 | --- | --- |
-| Joint assessment, § 26, § 26b, § 32a(5) EStG | Both fully liable to German income tax and not living permanently apart. Tax is twice the tax on half the joint income. No saving is printed anywhere: work the formula both ways |
-| Tax classes, § 38b EStG | Only for wage tax on a salary; they set withholding, not the year's tax. No tax class on self-employed income |
+| Joint assessment, § 26, § 26b, § 32a(5) EStG | Both fully liable to German income tax and not living permanently apart. Tax is twice the tax on half the joint income. No saving is printed anywhere: work the formula both ways Source: https://www.gesetze-im-internet.de/estg/__26.html |
+| Tax classes, § 38b EStG | Only for wage tax on a salary; they set withholding, not the year's tax. No tax class on self-employed income Source: https://www.gesetze-im-internet.de/estg/__38b.html |
 
 ### Sole Proprietorship vs GmbH
 
@@ -105,59 +121,53 @@ No official page prints a combined rate for either form, a profit level for inco
 
 **Corporate tax rate (§ 23 KStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/kstg_1977/__23.html |
-| Tax year 2026; printed for periods up to 2027 | 15% | "bis 2027 15 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Tax year 2026; printed for periods up to 2027 | 15% | "bis 2027 15 Prozent" | https://www.gesetze-im-internet.de/kstg_1977/__23.html |
 
 § 23(1) KStG also prints lower rates for the assessment periods 2028 to 2032. None applies to 2026. Surcharge and trade tax come on top.
 
 **Trade tax: allowance and base rate (§ 11 GewStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Allowance for natural persons and partnerships, per business per year; not a cliff | EUR 24,500 | "Freibetrag in Höhe von 24 500 Euro" |
-| Base rate after the allowance; the municipality's multiplier applies to the result | 3.5% | "Gewerbeertrag beträgt 3,5 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Allowance for natural persons and partnerships, per business per year; not a cliff | EUR 24,500 | "Freibetrag in Höhe von 24 500 Euro" | https://www.gesetze-im-internet.de/gewstg/__11.html |
+| Base rate after the allowance; the municipality's multiplier applies to the result | 3.5% | "Gewerbeertrag beträgt 3,5 Prozent" | same |
 
 **Trade tax: lowest multiplier from 2027, not for 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__16.html |
-| On the page, but § 36(5b) GewStG starts it in 2027; for 2026 see Section 1 | 280% | "Er beträgt 280 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| On the page, but § 36(5b) GewStG starts it in 2027; for 2026 see Section 1 | 280% | "Er beträgt 280 Prozent" | https://www.gesetze-im-internet.de/gewstg/__16.html |
 
 - **Trade tax credit (§ 35 EStG).** Income tax falls by four times the trade tax base amount ("das Vierfache"), capped at the trade tax payable and at the income tax on the trade income. Not for a GmbH. https://www.gesetze-im-internet.de/estg/__35.html
 
 **Retained profit of a sole trader or partner (§ 34a EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__34a.html |
-| On application, for profit not withdrawn, periods up to 2027; the lower later rates there are not for 2026 | 28.25% | "28,25 Prozent für Veranlagungszeiträume bis 2027" |
-| Tax on the follow-up amount when it is withdrawn later | 25% | "Nachversteuerungsbetrag beträgt 25 Prozent" |
-| A partner may apply only where one of the next two tests is met: the share of the profit is more than this share | 10% | "wenn sein Anteil am ... Gewinn mehr als 10 Prozent beträgt" |
-| Or the share of the profit is above this amount | EUR 10,000 | "oder 10 000 Euro übersteigt" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| On application, for profit not withdrawn, periods up to 2027; the lower later rates there are not for 2026 | 28.25% | "28,25 Prozent für Veranlagungszeiträume bis 2027" | https://www.gesetze-im-internet.de/estg/__34a.html |
+| Tax on the follow-up amount when it is withdrawn later | 25% | "Nachversteuerungsbetrag beträgt 25 Prozent" | same |
+| A partner may apply only where one of the next two tests is met: the share of the profit is more than this share | 10% | "wenn sein Anteil am ... Gewinn mehr als 10 Prozent beträgt" | same |
+| Or the share of the profit is above this amount | EUR 10,000 | "oder 10 000 Euro übersteigt" | same |
 
 - **Conditions.** Balance-sheet profit only, so not for an EÜR business; applied for per business or partner share and per year. Withdrawals above the year's profit plus deposits trigger the follow-up tax: it defers tax, it does not remove it. Not available for profit on which the § 16(4) EStG allowance or the § 34(3) EStG reduced rate is claimed.
 
 **Dividends: flat tax and the option out (§ 32d EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__32d.html |
-| Flat tax on private investment income | 25% | "beträgt 25 Prozent" |
-| On application it does not apply where the shareholder holds at least | 25% | "mindestens 25 Prozent an der Kapitalgesellschaft" |
-| Or holds this AND, through professional work for the company, can take significant entrepreneurial influence on its business | 1% | "zu mindestens 1 Prozent an der Kapitalgesellschaft beteiligt ist und durch eine berufliche Tätigkeit für diese maßgeblichen unternehmerischen Einfluss auf deren wirtschaftliche Tätigkeit nehmen kann" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Flat tax on private investment income | 25% | "beträgt 25 Prozent" | https://www.gesetze-im-internet.de/estg/__32d.html |
+| On application it does not apply where the shareholder holds at least | 25% | "mindestens 25 Prozent an der Kapitalgesellschaft" | same |
+| Or holds this AND, through professional work for the company, can take significant entrepreneurial influence on its business | 1% | "zu mindestens 1 Prozent an der Kapitalgesellschaft beteiligt ist und durch eine berufliche Tätigkeit für diese maßgeblichen unternehmerischen Einfluss auf deren wirtschaftliche Tätigkeit nehmen kann" | same |
 
 The dividends then go to the tariff under the partial-income method, related costs become deductible in part (§ 3c(2) EStG) and the saver's allowance stops applying. Applied for with the return; it covers four following years and cannot be renewed once withdrawn.
 
 **Partial-income method: the tax-free share (§ 3 EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |
-| Share of the dividend or sale price that is tax-free | 40% | § 3 no. 40: "40 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Share of the dividend or sale price that is tax-free | 40% | § 3 no. 40: "40 Prozent" | https://www.gesetze-im-internet.de/estg/__3.html |
 
 - **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. The initial application is irrevocable and is filed at least one month before the business year. A separate later Rückoption is available under § 1a(4), with its own deemed-conversion consequences. The corporate-tax option ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html
 
@@ -190,41 +200,37 @@ The base rule is § 4(4) EStG: expenses caused by the business. § 4(5) EStG lim
 
 **Limits in § 4 EStG**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__4.html |
-| Home working day rate per calendar day | EUR 6 | "Betrag von 6 Euro (Tagespauschale)" |
-| Yearly cap on the day rates, per person | EUR 1,260 | "höchstens 1 260 Euro" |
-| Yearly flat amount for a home office room that is the centre of all business/professional activity, reduced by 1/12 for every full calendar month that condition is absent | EUR 1,260 | "pauschal ein Betrag von 1 260 Euro"; § 4(5) no. 6b sentence 4 full-month reduction |
-| Gifts: all items to one recipient in the year | EUR 50 | "insgesamt 50 Euro nicht übersteigen" |
-| Entertainment: deductible share of reasonable costs | 70% | "sie 70 Prozent der Aufwendungen übersteigen" |
-| Business car, home-to-premises trips: the non-deductible amount is the positive DIFFERENCE between this share of the German list price per month per distance kilometre and the commuting allowance, not this share itself | 0.03% | "in Höhe des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inländischen Listenpreises ... und dem sich nach § 9 Absatz 1 Satz 3 Nummer 4 ... ergebenden Betrag" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Home working day rate per calendar day | EUR 6 | "Betrag von 6 Euro (Tagespauschale)" | https://www.gesetze-im-internet.de/estg/__4.html |
+| Yearly cap on the day rates, per person | EUR 1,260 | "höchstens 1 260 Euro" | same |
+| Yearly flat amount for a home office room that is the centre of all business/professional activity, reduced by 1/12 for every full calendar month that condition is absent | EUR 1,260 | "pauschal ein Betrag von 1 260 Euro"; § 4(5) no. 6b sentence 4 full-month reduction | same |
+| Gifts: all items to one recipient in the year | EUR 50 | "insgesamt 50 Euro nicht übersteigen" | same |
+| Entertainment: deductible share of reasonable costs | 70% | "sie 70 Prozent der Aufwendungen übersteigen" | same |
+| Business car, home-to-premises trips: the non-deductible amount is the positive DIFFERENCE between this share of the German list price per month per distance kilometre and the commuting allowance, not this share itself | 0.03% | "in Höhe des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inländischen Listenpreises ... und dem sich nach § 9 Absatz 1 Satz 3 Nummer 4 ... ergebenden Betrag" | same |
 
 **Limits in § 9 EStG**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__9.html |
-| Commuting allowance 2026 per full kilometre one way | EUR 0.38 | "von 0,38 Euro anzusetzen" |
-| Yearly cap where the own-car/use-provided-car exception does not apply | EUR 4,500 | "höchstens jedoch 4 500 Euro"; higher amount allowed to the extent an own or use-provided car is used (§ 9(1) no. 4 sentence 2) |
-| Second household: accommodation per month, in Germany | EUR 1,000 | "höchstens 1 000 Euro im Monat" |
-| Meals: calendar day with 24 hours away | EUR 28 | "28 Euro für jeden Kalendertag" |
-| Meals: arrival/departure day with a qualifying overnight stay on that, the following or preceding day; separately, a day without an overnight stay only if absence exceeds eight hours | EUR 14 | § 9(4a) sentence 3 nos. 2–3; the three-month limit remains |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Commuting allowance 2026 per full kilometre one way | EUR 0.38 | "von 0,38 Euro anzusetzen" | https://www.gesetze-im-internet.de/estg/__9.html |
+| Yearly cap where the own-car/use-provided-car exception does not apply | EUR 4,500 | "höchstens jedoch 4 500 Euro"; higher amount allowed to the extent an own or use-provided car is used (§ 9(1) no. 4 sentence 2) | same |
+| Second household: accommodation per month, in Germany | EUR 1,000 | "höchstens 1 000 Euro im Monat" | same |
+| Meals: calendar day with 24 hours away | EUR 28 | "28 Euro für jeden Kalendertag" | same |
+| Meals: arrival/departure day with a qualifying overnight stay on that, the following or preceding day; separately, a day without an overnight stay only if absence exceeds eight hours | EUR 14 | § 9(4a) sentence 3 nos. 2–3; the three-month limit remains | same |
 
 **Business trips in a private car (ministry instructions for the 2026 EÜR form)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Private car used for the business: flat amount per full kilometre, in place of the share of actual costs | EUR 0.30 | "pauschal mit 0,30 Euro für jeden vollen km" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Private car used for the business: flat amount per full kilometre, in place of the share of actual costs | EUR 0.30 | "pauschal mit 0,30 Euro für jeden vollen km" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 
 **Private deductions a self-employed person can also claim (§ 10 EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__10.html |
-| Childcare for a child of the household under 14, with an invoice and bank payment | 80% | "80 Prozent der Aufwendungen" |
-| Childcare: yearly cap, per child | EUR 4,800 | "höchstens 4 800 Euro je Kind" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Childcare for a child of the household under 14, with an invoice and bank payment | 80% | "80 Prozent der Aufwendungen" | https://www.gesetze-im-internet.de/estg/__10.html |
+| Childcare: yearly cap, per child | EUR 4,800 | "höchstens 4 800 Euro je Kind" | same |
 
 ## Section 4: Capital Allowances Optimization
 
@@ -243,22 +249,20 @@ The base rule is § 4(4) EStG: expenses caused by the business. § 4(5) EStG lim
 
 **Investment deduction and special depreciation (§ 7g EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7g.html |
-| Share of the expected cost deductible in advance | 50% | "bis zu 50 Prozent der voraussichtlichen" |
-| Profit limit: profit of that year calculated without investment deductions or § 7g(2) add-backs | EUR 200,000 | "200 000 Euro nicht überschreitet" |
-| Total cap per business on open deductions; same number, different rule | EUR 200,000 | "je Betrieb 200 000 Euro nicht übersteigen" |
-| Special depreciation in total under § 7g(5) | 40% | "insgesamt 40 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Share of the expected cost deductible in advance | 50% | "bis zu 50 Prozent der voraussichtlichen" | https://www.gesetze-im-internet.de/estg/__7g.html |
+| Profit limit: profit of that year calculated without investment deductions or § 7g(2) add-backs | EUR 200,000 | "200 000 Euro nicht überschreitet" | same |
+| Total cap per business on open deductions; same number, different rule | EUR 200,000 | "je Betrieb 200 000 Euro nicht übersteigen" | same |
+| Special depreciation in total under § 7g(5) | 40% | "insgesamt 40 Prozent" | same |
 
 **Ministry instructions for the 2026 EÜR form**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Minimum business use for § 7g EStG, purchase year and the next | 90% | "fast ausschließlich (mindestens zu 90 %)" |
-| Small business starting during the year: turnover of that year | EUR 25,000 | "Gesamtumsatz im laufenden Kj." |
-| Special depreciation cap under § 7g(5) for an asset bought before 1 January 2024, which can still be inside its five-year window in 2026 | 20% | "Für Wirtschaftsgüter, die vor dem 01.01.2024 angeschafft oder hergestellt worden sind, beträgt die Höchstgrenze der Sonderabschreibungen nach § 7g Abs. 5 EStG weiterhin 20 %" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Minimum business use for § 7g EStG, purchase year and the next | 90% | "fast ausschließlich (mindestens zu 90 %)" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Small business starting during the year: turnover of that year | EUR 25,000 | "Gesamtumsatz im laufenden Kj." | same |
+| Special depreciation cap under § 7g(5) for an asset bought before 1 January 2024, which can still be inside its five-year window in 2026 | 20% | "Für Wirtschaftsgüter, die vor dem 01.01.2024 angeschafft oder hergestellt worden sind, beträgt die Höchstgrenze der Sonderabschreibungen nach § 7g Abs. 5 EStG weiterhin 20 %" | same |
 
 ### Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG
 
@@ -272,15 +276,14 @@ The base rule is § 4(4) EStG: expenses caused by the business. § 4(5) EStG lim
 
 **Low-value assets, the pool and the car (§ 6 EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |
-| Immediate write-off: cost per qualifying independently usable depreciable movable fixed asset, less input VAT contained in it | EUR 800 | "das einzelne Wirtschaftsgut 800 Euro nicht" |
-| Register duty for an asset written off at once, value above | EUR 250 | "deren Wert 250 Euro übersteigt" |
-| Pool: cost per qualifying independently usable depreciable movable fixed asset above the first, not above the second | EUR 250 to EUR 1,000 | "250 Euro, aber nicht 1 000 Euro übersteigen" |
-| The list-price method needs business use above | 50% | "mehr als 50 Prozent betrieblich genutzt" |
-| Private use per month: share of the German list price at first registration, never the price paid | 1% | "mit 1 Prozent des inländischen Listenpreises" |
-| Electric car with no carbon dioxide emissions bought after 31 December 2018 and before 1 January 2031: a quarter of the list price is counted, but only where the gross list price is not above this amount. A cliff, not a ceiling on the amount counted. A car bought before 1 July 2025 may face a lower amount: check § 52 EStG | EUR 100,000 | "nicht mehr als 100 000 Euro beträgt" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Immediate write-off: cost per qualifying independently usable depreciable movable fixed asset, less input VAT contained in it | EUR 800 | "das einzelne Wirtschaftsgut 800 Euro nicht" | https://www.gesetze-im-internet.de/estg/__6.html |
+| Register duty for an asset written off at once, value above | EUR 250 | "deren Wert 250 Euro übersteigt" | same |
+| Pool: cost per qualifying independently usable depreciable movable fixed asset above the first, not above the second | EUR 250 to EUR 1,000 | "250 Euro, aber nicht 1 000 Euro übersteigen" | same |
+| The list-price method needs business use above | 50% | "mehr als 50 Prozent betrieblich genutzt" | same |
+| Private use per month: share of the German list price at first registration, never the price paid | 1% | "mit 1 Prozent des inländischen Listenpreises" | same |
+| Electric car with no carbon dioxide emissions bought after 31 December 2018 and before 1 January 2031: a quarter of the list price is counted, but only where the gross list price is not above this amount. A cliff, not a ceiling on the amount counted. A car bought before 1 July 2025 may face a lower amount: check § 52 EStG | EUR 100,000 | "nicht mehr als 100 000 Euro beträgt" | same |
 
 The alternative is the logbook method. Once the pool is chosen for a year, every asset of that year between its bounds goes into it (§ 6(2a) sentence 5 EStG). The 2026 EÜR instructions allow a one-year useful life for computer hardware and software. Under § 6(2) sentences 2–3, an asset is not independently usable if its business purpose requires it to be used only together with other fixed assets and those assets are technically coordinated; possible transfer into another such context does not itself cure that dependency. For an immediate write-off above EUR 250, the separate register is unnecessary if the required acquisition date and value particulars are already evident from the books. The GWG/pool eligibility cost excludes contained VAT; recoverability separately determines actual expense/acquisition cost under § 9b, rather than making every low-priced component eligible.
 
@@ -290,11 +293,10 @@ The alternative is the logbook method. Once the pool is chosen for a year, every
 
 **Depreciation rates and date windows (§ 7 EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |
-| Declining balance, movable assets bought after 30 June 2025 and before 1 January 2028: at most three times the straight-line rate and not above | 30% | "und 30 Prozent nicht übersteigen" |
-| Electric vehicles that are fixed assets, same window: share in the purchase year | 75% | "im Jahr der Anschaffung 75 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Declining balance, movable assets bought after 30 June 2025 and before 1 January 2028: at most three times the straight-line rate and not above | 30% | "und 30 Prozent nicht übersteigen" | https://www.gesetze-im-internet.de/estg/__7.html |
+| Electric vehicles that are fixed assets, same window: share in the purchase year | 75% | "im Jahr der Anschaffung 75 Prozent" | same |
 
 Outside a date window only straight-line depreciation applies, and a switch from declining balance to straight line is allowed, not the reverse. The electric vehicle rule prints its later shares in words and is barred where special depreciation was claimed. Other buildings: § 7(4) and § 7(5a) EStG; new rental housing § 7b EStG, in `de-rental-income`.
 
@@ -312,19 +314,17 @@ Outside a date window only straight-line depreciation applies, and a switch from
 
 **Loss relief (§ 10d EStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__10d.html |
-| Carry-back cap, single assessment | EUR 1,000,000 | "einem Betrag von 1 000 000 Euro" |
-| Carry-back cap, jointly assessed spouses | EUR 2,000,000 | "einem Betrag von 2 000 000 Euro" |
-| Carry-forward: share of the total income above the base | 70% for 2024 to 2027; 60% from 2028 | "bis zu 70 Prozent des 1 Million Euro übersteigenden"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Carry-back cap, single assessment | EUR 1,000,000 | "einem Betrag von 1 000 000 Euro" | https://www.gesetze-im-internet.de/estg/__10d.html |
+| Carry-back cap, jointly assessed spouses | EUR 2,000,000 | "einem Betrag von 2 000 000 Euro" | same |
+| Carry-forward: share of the total income above the base | 70% for 2024 to 2027; 60% from 2028 | "bis zu 70 Prozent des 1 Million Euro übersteigenden"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) | same |
 
 **Trade tax loss carry-forward (§ 10a GewStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__10a.html |
-| Share of the trade income above the base (one million euros, in words) | 60% | "ist bis zu 60 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Share of the trade income above the base (one million euros, in words) | 60% | "ist bis zu 60 Prozent" | https://www.gesetze-im-internet.de/gewstg/__10a.html |
 
 ### Strategy
 
@@ -338,14 +338,14 @@ These rules work for cash-basis (EÜR) businesses only; § 11 EStG leaves the ba
 
 | Strategy | Rule and what limits it |
 | --- | --- |
-| Defer invoicing | Receipts count in the year received (§ 11(1) EStG): the payment date decides. VAT differs: under ordinary Soll accounting it arises at the end of the period in which the supply or separately agreed partial supply is performed; advance consideration received before performance triggers tax on that amount in the receipt period. With permitted Ist accounting, the actual receipt rule applies (§§ 13, 20 UStG) |
-| Accelerate expenses | Expenses count in the year paid (§ 11(2) EStG). Prepayments for over five years are spread; fixed assets still follow depreciation |
-| Regularly recurring items | § 11(1) sentence 2 and § 11(2) sentence 2 EStG: a regularly recurring receipt or payment made a short time before or after the year end counts in the year it economically belongs to, not the year it moved. Rent, insurance and the VAT advance payment are the usual ones in practice, not in the statute, so for these the payment date does not decide. The statute prints no number of days |
-| Investment deduction timing | Only within the § 7g profit limit, the asset bought in time and used almost only for the business |
-| Year-end low-value purchases | Expensed in the business year of purchase; the purchase date decides, not payment |
-| Vorauszahlungen | Due 10 March, 10 June, 10 September, 10 December, adaptable to the expected tax (§ 37 EStG); too-low ones bear interest from 15 months after the year |
-| Adviser filing extension | Due at the end of February of the second following year, but interest still starts after 15 months and a late return costs a surcharge (§ 152 AO) |
-| Marriage timing | The conditions need only arise during the year, so a marriage on any day of it opens joint assessment for the whole year |
+| Defer invoicing | Receipts count in the year received (§ 11(1) EStG): the payment date decides. VAT differs: under ordinary Soll accounting it arises at the end of the period in which the supply or separately agreed partial supply is performed; advance consideration received before performance triggers tax on that amount in the receipt period. With permitted Ist accounting, the actual receipt rule applies (§§ 13, 20 UStG) Source: https://www.gesetze-im-internet.de/estg/__11.html |
+| Accelerate expenses | Expenses count in the year paid (§ 11(2) EStG). Prepayments for over five years are spread; fixed assets still follow depreciation Source: https://www.gesetze-im-internet.de/estg/__11.html |
+| Regularly recurring items | § 11(1) sentence 2 and § 11(2) sentence 2 EStG: a regularly recurring receipt or payment made a short time before or after the year end counts in the year it economically belongs to, not the year it moved. Rent, insurance and the VAT advance payment are the usual ones in practice, not in the statute, so for these the payment date does not decide. The statute prints no number of days Source: https://www.gesetze-im-internet.de/estg/__11.html |
+| Investment deduction timing | Only within the § 7g profit limit, the asset bought in time and used almost only for the business Source: https://www.gesetze-im-internet.de/estg/__7g.html |
+| Year-end low-value purchases | Expensed in the business year of purchase; the purchase date decides, not payment Source: https://www.gesetze-im-internet.de/estg/__6.html |
+| Vorauszahlungen | Due 10 March, 10 June, 10 September, 10 December, adaptable to the expected tax (§ 37 EStG); too-low ones bear interest from 15 months after the year Source: https://www.gesetze-im-internet.de/estg/__37.html |
+| Adviser filing extension | Due at the end of February of the second following year, but interest still starts after 15 months and a late return costs a surcharge (§ 152 AO) Source: https://www.gesetze-im-internet.de/ao_1977/__149.html |
+| Marriage timing | The conditions need only arise during the year, so a marriage on any day of it opens joint assessment for the whole year Source: https://www.gesetze-im-internet.de/estg/__26.html |
 
 Pages: https://www.gesetze-im-internet.de/estg/__11.html and https://www.gesetze-im-internet.de/estg/__37.html
 
@@ -355,27 +355,25 @@ Pages: https://www.gesetze-im-internet.de/estg/__11.html and https://www.gesetze
 
 | Strategy | Rule and what limits it |
 | --- | --- |
-| Kleinunternehmerregelung, § 19(1) | Tax-free where turnover was not above the first limit below last year and is not above the second this year. Both tests, and no input VAT. The current-year limit is hard: the 2026 EÜR instructions say the sale that crosses it is already taxed. A business that STARTS in the year has no previous year: its total turnover of that year must stay within the start-up limit in the ministry instructions table in Section 4, and the same rule applies when it is crossed. |
-| Waiver, § 19(3) | Declared irrevocably to the tax office until the last day of February of the second calendar year after the period concerned, effective from the start of the period it is to cover, and binding for AT LEAST five calendar years. After that it can be revoked with effect from the start of a later calendar year |
-| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG |
-| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain |
-| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` |
-| Return period, § 18 | Quarterly by default, monthly where the tax for the previous calendar year was above the § 18(2) UStG amount. A business that STARTS in 2026 is not automatically monthly: for the years 2021 to 2026 § 18(2) sentence 6 UStG puts the expected tax of the current year in place of the automatic monthly rule. Deadlines move by a month on application (§ 46 UStDV): `germany-vat-return` |
+| Kleinunternehmerregelung, § 19(1) | Tax-free where turnover was not above the first limit below last year and is not above the second this year. Both tests, and no input VAT. The current-year limit is hard: the 2026 EÜR instructions say the sale that crosses it is already taxed. A business that STARTS in the year has no previous year: its total turnover of that year must stay within the start-up limit in the ministry instructions table in Section 4, and the same rule applies when it is crossed. Source: https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Waiver, § 19(3) | Declared irrevocably to the tax office until the last day of February of the second calendar year after the period concerned, effective from the start of the period it is to cover, and binding for AT LEAST five calendar years. After that it can be revoked with effect from the start of a later calendar year Source: https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG Source: https://www.gesetze-im-internet.de/ustg_1980/__20.html |
+| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain Source: https://www.gesetze-im-internet.de/ustg_1980/__15.html |
+| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` Source: https://www.gesetze-im-internet.de/ustg_1980/__13b.html |
+| Return period, § 18 | Quarterly by default, monthly where the tax for the previous calendar year was above the § 18(2) UStG amount. A business that STARTS in 2026 is not automatically monthly: for the years 2021 to 2026 § 18(2) sentence 6 UStG puts the expected tax of the current year in place of the automatic monthly rule. Deadlines move by a month on application (§ 46 UStDV): `germany-vat-return` Source: https://www.gesetze-im-internet.de/ustg_1980/__18.html |
 
 **Small-business limits (§ 19 UStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Total turnover of the previous calendar year not above | EUR 25,000 | "vorangegangenen Kalenderjahr 25 000 Euro" |
-| Total turnover of the current calendar year not above | EUR 100,000 | "laufenden Kalenderjahr 100 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Total turnover of the previous calendar year not above | EUR 25,000 | "vorangegangenen Kalenderjahr 25 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Total turnover of the current calendar year not above | EUR 100,000 | "laufenden Kalenderjahr 100 000 Euro" | same |
 
 **Cash accounting limit (§ 20 UStG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__20.html |
-| Total turnover of the previous calendar year not more than | EUR 800,000 | "nicht mehr als 800 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Total turnover of the previous calendar year not more than | EUR 800,000 | "nicht mehr als 800 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__20.html |
 
 ## Section 8: Social Security Optimization
 
@@ -399,10 +397,10 @@ Pages: https://www.gesetze-im-internet.de/sgb_6/__2.html and https://www.gesetze
 
 | Strategy | Detail |
 | --- | --- |
-| Voluntary pension contributions | Special expenses under § 10(1) no. 2(a) EStG, only up to the one cap in Section 9. Amounts: `de-social-contributions` |
-| Versorgungswerk | In the same sentence as statutory contributions, so it shares that one cap |
-| Krankenversicherung | Basic health and care contributions are special expenses; for private cover only the part comparable to statutory cover. The choice is not a tax question |
-| Beitragsbemessungsgrenze | Contributions stop at each branch's ceiling; income above it adds none |
+| Voluntary pension contributions | Special expenses under § 10(1) no. 2(a) EStG, only up to the one cap in Section 9. Amounts: `de-social-contributions` Source: https://www.gesetze-im-internet.de/estg/__10.html |
+| Versorgungswerk | In the same sentence as statutory contributions, so it shares that one cap Source: https://www.gesetze-im-internet.de/estg/__10.html |
+| Krankenversicherung | Basic health and care contributions are special expenses; for private cover only the part comparable to statutory cover. The choice is not a tax question Source: https://www.gesetze-im-internet.de/estg/__10.html |
+| Beitragsbemessungsgrenze | Contributions stop at each branch's ceiling; income above it adds none Source: https://www.gesetze-im-internet.de/sgb_6/__159.html |
 
 ## Section 9: Investment & Retirement
 
@@ -420,11 +418,10 @@ For an ordinary employee with qualifying pension contributions, include the actu
 
 **Pension contributions: deduction cap 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260420-vorsorgen-und-steuern-sparen |
-| Cap 2026, single person | EUR 30,826 | "Höchstbetrag 30.826 Euro für Ledige" |
-| Cap 2026, jointly assessed spouses | EUR 61,652 | "61.652 Euro für Verheiratete" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Cap 2026, single person | EUR 30,826 | "Höchstbetrag 30.826 Euro für Ledige" | https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260420-vorsorgen-und-steuern-sparen |
+| Cap 2026, jointly assessed spouses | EUR 61,652 | "61.652 Euro für Verheiratete" | same |
 
 ### Riester-Rente: § 10a EStG
 
@@ -446,11 +443,10 @@ Document allowance entitlement rather than using child count alone. Under § 85,
 
 **VWL and Other table: saver's allowance (§ 20 EStG)**
 
-| Status | Allowance | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__20.html |
-| Sparer-Pauschbetrag, single individual, per year | EUR 1,000 | "Betrag von 1 000 Euro abzuziehen" |
-| Sparer-Pauschbetrag, jointly assessed couple | EUR 2,000 | "Sparer-Pauschbetrag von 2 000 Euro" |
+| Status | Allowance | Note | Source |
+| --- | --- | --- | --- |
+| Sparer-Pauschbetrag, single individual, per year | EUR 1,000 | "Betrag von 1 000 Euro abzuziehen" | https://www.gesetze-im-internet.de/estg/__20.html |
+| Sparer-Pauschbetrag, jointly assessed couple | EUR 2,000 | "Sparer-Pauschbetrag von 2 000 Euro" | same |
 
 ## Section 10: Red Lines
 
@@ -470,11 +466,10 @@ Document allowance entitlement rather than using child count alone. Under § 85,
 
 **Interest on back tax and refunds (§ 238 AO)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__238.html |
-| Per month on arrears and refunds after an assessment, periods from 1 January 2019 | 0.15% | "0,15 Prozent für jeden Monat" |
-| The same rate per year | 1.8% | "1,8 Prozent für jedes Jahr" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Per month on arrears and refunds after an assessment, periods from 1 January 2019 | 0.15% | "0,15 Prozent für jeden Monat" | https://www.gesetze-im-internet.de/ao_1977/__238.html |
+| The same rate per year | 1.8% | "1,8 Prozent für jedes Jahr" | same |
 
 ## Section 11: Annual Tax Planning Calendar
 
@@ -517,25 +512,43 @@ This Guide presents planning mechanisms and does not rank products or legal form
 
 **Example 5.** Qualifying days times the day rate in the § 4 table, never above the yearly cap there. Keep a record of the days.
 
-## The method, step by step
+## Worked cases
 
-1. Fix the facts: legal form, trade or liberal profession (§ 15 and § 18 EStG), and EÜR or balance sheet (§ 4(3) EStG). https://www.gesetze-im-internet.de/estg/__4.html
-2. Work out the expected profit and test it against the § 7g profit limit before any investment deduction or special depreciation. https://www.gesetze-im-internet.de/estg/__7g.html
-3. Go through the deductions in Section 3, checking each limit and the separate record § 4(7) EStG demands. https://www.gesetze-im-internet.de/estg/__9.html
-4. Per fixed asset: low-value asset or pool first, one choice for the whole year (§ 6(2a) EStG), then the depreciation method and its date window. https://www.gesetze-im-internet.de/estg/__6.html
-5. Losses: offset within the year, then the carry-back or its waiver, then the carry-forward (§ 10d EStG). https://www.gesetze-im-internet.de/estg/__10d.html
-6. Special expenses in the year paid, and the choice between single and joint assessment in the return (§ 10 and § 26 EStG). https://www.gesetze-im-internet.de/estg/__10.html
-7. VAT: test both small-business limits before waiving the rule, knowing the waiver binds for at least five years. https://www.gesetze-im-internet.de/ustg_1980/__19.html
-8. Test every idea against § 42 AO, write down the non-tax reasons, and refer before any change of structure; a binding ruling can be asked for beforehand, for a fee (§ 89 AO). https://www.gesetze-im-internet.de/ao_1977/__89.html
+Example inputs only; these are illustrations of the rules, not a saving for a real client. Tariff: [§ 32a(1) and (5) EStG](https://www.gesetze-im-internet.de/estg/__32a.html), tax rounded down to the full euro. Investment deduction: [§ 7g(1) EStG](https://www.gesetze-im-internet.de/estg/__7g.html).
 
-## Ask the client first
+**Case 1: single or joint assessment (2026).** One spouse has taxable income of EUR 60,000, the other none. Single assessment: second progressive zone, z = (60,000 less 17,799) / 10,000 = 4.2201, tax (173.10 x z + 2,397) x z + 1,034.87 = EUR 14,233. Joint assessment: tax on half, EUR 30,000 (z = 1.2201), is EUR 4,217, doubled EUR 8,434. The joint route gives EUR 5,799 less income tax before surcharge and church tax. Decision: elect joint assessment where both spouses meet § 26 EStG; check separately whether single assessment helps where one spouse has income taxed under progression relief or losses.
 
-- What is the legal form and kind of income, and is profit worked out by EÜR or by balance sheet?
-- What is the expected profit this year before any investment deduction, what was last year's, and how much must be withdrawn to live on?
-- Is the client married or in a civil partnership, both fully liable to tax in Germany and living together, and does the spouse work in the business?
-- Which assets will be bought in the next three years, when, and how much will each be used privately?
-- VAT: last year's total turnover, this year's so far, and are large purchases planned?
-- How is the client insured for old age and health, and does the client work essentially for one client?
+**Case 2: investment deduction before a purchase (2026).** A freelancer with 2026 profit of EUR 80,000 (within the EUR 200,000 profit limit) plans to buy a machine for EUR 30,000 in 2027. Up to 50% of the expected cost, EUR 15,000, may be deducted in 2026. In 2027 the same EUR 15,000 is added back to profit and may be taken off the machine's cost, so depreciation runs on EUR 15,000. Decision: worthwhile when the 2026 marginal rate is at least the expected 2027 rate and the purchase is certain; if the purchase does not happen within three years, the 2026 deduction is reversed with interest.
+
+```oa-check
+name: DE 2026, Case 1 single against joint assessment for EUR 60,000 on one income
+inputs:
+  income: 60000
+steps:
+  - z_single: (income - 17799) / 10000
+  - tax_single: floor((173.10 * z_single + 2397) * z_single + 1034.87)
+  - z_half: (income / 2 - 17799) / 10000
+  - tax_joint: 2 * floor((173.10 * z_half + 2397) * z_half + 1034.87)
+  - difference: tax_single - tax_joint
+expected:
+  tax_single: 14233
+  tax_joint: 8434
+  difference: 5799
+```
+
+```oa-check
+name: DE 2026, Case 2 investment deduction of 50% of expected cost
+inputs:
+  expected_cost: 30000
+  profit: 80000
+  profit_limit: 200000
+steps:
+  - deduction: pct(expected_cost, 50) * min(floor(profit_limit / profit), 1)
+  - base_for_depreciation: expected_cost - deduction
+expected:
+  deduction: 15000.00
+  base_for_depreciation: 15000.00
+```
 
 ## When to refuse or refer
 
@@ -558,9 +571,64 @@ This Guide presents planning mechanisms and does not rank products or legal form
 
 ## Sources
 
+Every address below was opened again on the read date shown; the figures quoted in the body come from the page linked on their row or in their table.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 4 EStG, Gewinnbegriff im Allgemeinen, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-14 |
+| Read for § 7g EStG, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__7g.html | 2026-11-14 |
+| Read for § 9 EStG, Werbungskosten, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__9.html | 2026-11-14 |
+| Read for § 6 EStG, Bewertung, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__6.html | 2026-11-14 |
+| Read for § 10d EStG, Verlustabzug, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__10d.html | 2026-11-14 |
+| Read for § 10 EStG, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__10.html | 2026-11-14 |
+| Read for § 19 UStG, Besteuerung der Kleinunternehmer, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
+| Read for § 89 AO, Beratung, Auskunft, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__89.html | 2026-11-14 |
+| Read for § 18 EStG, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__18.html | 2026-11-14 |
+| Read for § 42 AO, Missbrauch von rechtlichen Gestaltungsmöglichkeiten, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__42.html | 2026-11-14 |
+| Read for § 2 EStG, Umfang der Besteuerung, Begriffsbestimmungen, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__2.html | 2026-11-14 |
+| Read for § 149 AO, Abgabe der Steuererklärungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-14 |
+| Read for § 32a EStG, Einkommensteuertarif, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document steuern von a z, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-11-14 |
+| Read for § 4 SolzG, Zuschlagsatz, and the figures quoted from it | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-14 |
+| Read for § 3 SolzG, Bemessungsgrundlage und zeitliche Anwendung, and the figures quoted from it | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-11-14 |
+| Read for § 26 EStG, Veranlagung von Ehegatten, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__26.html | 2026-11-14 |
+| Read for § 38b EStG, Lohnsteuerklassen, Zahl der Kinderfreibeträge, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__38b.html | 2026-11-14 |
+| Read for § 23 KStG, Steuersatz, and the figures quoted from it | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-11-14 |
+| Read for § 11 GewStG, Steuermesszahl und Steuermessbetrag, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-11-14 |
+| Read for § 16 GewStG, Hebesatz, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__16.html | 2026-11-14 |
+| Read for § 35 EStG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__35.html | 2026-11-14 |
+| Read for § 34a EStG, Begünstigung der nicht entnommenen Gewinne, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__34a.html | 2026-11-14 |
+| Read for § 32d EStG, Gesonderter Steuertarif für Einkünfte aus Kapitalvermögen, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-11-14 |
+| Read for § 3 EStG, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__3.html | 2026-11-14 |
+| Read for § 1a KStG, Option zur Körperschaftsbesteuerung, and the figures quoted from it | https://www.gesetze-im-internet.de/kstg_1977/__1a.html | 2026-11-14 |
+| Read for § 12 EStG, Soweit in § 10 Absatz, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__12.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document 2026 09 01 anlage EUER 2026, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
+| Read for § 7 EStG, Absetzung für Abnutzung oder Substanzverringerung, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__7.html | 2026-11-14 |
+| Read for Bundesgesetzblatt Teil I - Gesetz zur Stärkung von Wachstumschancen, Investitionen und Innovation so, the passages cited in this skill | https://www.recht.bund.de/bgbl/1/2024/108/VO.html | 2026-11-14 |
+| Read for § 10a GewStG, Gewerbeverlust, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__10a.html | 2026-11-14 |
+| Read for § 11 EStG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__11.html | 2026-11-14 |
+| Read for § 37 EStG, Einkommensteuer-Vorauszahlung, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__37.html | 2026-11-14 |
+| Read for § 20 UStG, Berechnung der Steuer nach vereinnahmten Entgelten, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__20.html | 2026-11-14 |
+| Read for § 15 UStG, Vorsteuerabzug, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__15.html | 2026-11-14 |
+| Read for § 13b UStG, Leistungsempfänger als Steuerschuldner, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__13b.html | 2026-11-14 |
+| Read for § 18 UStG, Besteuerungsverfahren, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-11-14 |
+| Read for § 2 SGB_6, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_6/__2.html | 2026-11-14 |
+| Read for § 7 SGB IV, Beschäftigung, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_4/__7.html | 2026-11-14 |
+| Read for § 159 SGB_6, Beitragsbemessungsgrenzen, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_6/__159.html | 2026-11-14 |
+| Read for Meldungen / Vorsorgen und Steuern sparen / Deutsche Rentenversicherung, the passages cited in this skill | https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260420-vorsorgen-und-steuern-sparen | 2026-11-14 |
+| Read for § 10a EStG, Zusätzliche Altersvorsorge, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__10a.html | 2026-11-14 |
+| Read for § 1 VERMBG_2, Persönlicher Geltungsbereich, and the figures quoted from it | https://www.gesetze-im-internet.de/vermbg_2/__1.html | 2026-11-14 |
+| Read for § 20 EStG, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__20.html | 2026-11-14 |
+| Read for § 238 AO, Höhe und Berechnung der Zinsen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-11-14 |
+| Read for Gesetze im Internet, the passages cited in this skill | https://www.gesetze-im-internet.de/ | 2026-11-14 |
+
+Earlier reading notes kept from the previous version (read 2026-10-29):
+
 Each paragraph is linked where it is used. Laws read: Einkommensteuergesetz, Abgabenordnung, Körperschaftsteuergesetz, Gewerbesteuergesetz, Solidaritätszuschlaggesetz, Umsatzsteuergesetz, Sozialgesetzbuch IV and VI and the Fifth Capital Formation Act, at https://www.gesetze-im-internet.de/ Also the ministry's 2026 EÜR instructions (Section 4) and tax booklet (Section 1), and the pension insurer's 2026 pages (Sections 8 and 9).
 
 Source read on 29 October 2026 for the two narrow corrections: [KStG § 1a(1) and (4)](https://www.gesetze-im-internet.de/kstg_1977/__1a.html), initial irrevocable application and separate later Rückoption; [UStG § 15(1a)](https://www.gesetze-im-internet.de/ustg_1980/__15.html) with [EStG § 4(5) no. 1](https://www.gesetze-im-internet.de/estg/__4.html), the input-VAT exclusion follows the actual expense prohibition. No new legal-form or input-VAT case is certified.
+
+Not yet confirmed: the marginal rates and church tax rates come from the ministry's 2025 booklet (the statute prints the formula, not the marginal rates); the 2026 Basisrente cap is from Deutsche Rentenversicherung's 2026 notice, not from a statute page; the old numerical cash examples (Section 12) stay withdrawn.
 
 ## Disclaimer
 
@@ -570,4 +638,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

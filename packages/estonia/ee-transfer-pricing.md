@@ -1,14 +1,15 @@
 ---
 name: ee-transfer-pricing
 description: "Estonian transfer pricing (siirdehinnad) for tax year 2026: Estonian companies, permanent establishments of foreign companies and sole proprietors (FIE) dealing with associated persons. Covers who is associated under Income Tax Act § 8, the arm's length rule in § 50(4) (companies), § 14(7) (FIE) and § 53(4⁶) (permanent establishments), how an adjustment is taxed at 22/78 in the monthly TSD like a profit distribution, Minister of Finance Regulation No. 53 (methods, 5% low value-adding services mark-up, master file and local file), who must keep full files (250 staff, EUR 50m turnover or EUR 43m balance sheet with associated persons; banks, insurers, listed companies), the 60-day production deadline, fines, interest at 0.06% a day, country-by-country reporting at EUR 750m, MAP and why there is no domestic APA or binding ruling. Trigger on: siirdehind, turuväärtus, seotud isikud, master file Estonia, management fee Estonia. Out of scope: ee-corporate-income-tax (rates, distributions), estonia-income-tax, estonia-payroll (fringe benefits), estonia-vat-return."
-version: 0.1
+version: 0.2
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Estonian transfer pricing (siirdehinnad): tax year 2026
@@ -65,21 +66,21 @@ Meeting any one of the three size tests is enough. Companies below all three, an
 | Income tax rate | 22% | 2025 onwards, unchanged in the 2026 and 2027 versions | TuMS § 4(1): https://www.riigiteataja.ee/et/akt/109072026066 |
 | Gross-up for company-level objects (distributions, § 50(4) adjustments) | Taxable amount divided by 0.78 before the rate, so tax = 22/78 of the net amount | 2025 onwards | TuMS § 4(1¹); EMTA, Tax rates (2026): https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
 | Associated person: individual holding in a legal person | At least 10% of capital, votes or profit rights | 2026 | TuMS § 8(1) 3): https://www.riigiteataja.ee/en/akt/520102026008 |
-| Associated persons: common holding in one legal person | More than 25% each | 2026 | TuMS § 8(1) 6) |
-| Associated persons: common control | More than 50% held by the same person or associated persons | 2026 | TuMS § 8(1) 4) and 5) |
+| Associated persons: common holding in one legal person | More than 25% each | 2026 | TuMS § 8(1) 6); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Associated persons: common control | More than 50% held by the same person or associated persons | 2026 | TuMS § 8(1) 4) and 5); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Full documentation test: employees | 250 or more, counted with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4): https://www.riigiteataja.ee/et/akt/123122021024 |
-| Full documentation test: turnover | EUR 50 million or more in the preceding financial year, with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4) |
-| Full documentation test: balance sheet total | EUR 43 million or more, with associated persons (consolidated, for a permanent establishment) | 2026 | Regulation No. 53 § 18(1) 3) and 4) |
-| Low value-adding intra-group services | A 5% mark-up needs no comparables to support it | From 1 January 2022 | Regulation No. 53 § 6(3) |
+| Full documentation test: turnover | EUR 50 million or more in the preceding financial year, with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4); https://www.riigiteataja.ee/et/akt/123122021024 |
+| Full documentation test: balance sheet total | EUR 43 million or more, with associated persons (consolidated, for a permanent establishment) | 2026 | Regulation No. 53 § 18(1) 3) and 4); https://www.riigiteataja.ee/et/akt/123122021024 |
+| Low value-adding intra-group services | A 5% mark-up needs no comparables to support it | From 1 January 2022 | Regulation No. 53 § 6(3); https://www.riigiteataja.ee/et/akt/123122021024 |
 | Country-by-country report | Group revenue of EUR 750 million or more in the preceding financial year | 2026 | Regulation No. 53 § 18(3) 3); MTVS chapter 2²: https://www.riigiteataja.ee/et/akt/115042026002 |
-| Time to hand over transfer pricing information on request | At least 60 days | 2026 | TuMS § 50(7) |
+| Time to hand over transfer pricing information on request | At least 60 days | 2026 | TuMS § 50(7); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Interest on late tax | 0.06% a day | 2026 | MKS § 117(1): https://www.riigiteataja.ee/et/akt/116102026009 |
-| Fine for not submitting a document on time: legal person | Up to EUR 3,200 | 2026 | MKS § 154(2) |
+| Fine for not submitting a document on time: legal person | Up to EUR 3,200 | 2026 | MKS § 154(2); https://www.riigiteataja.ee/et/akt/116102026009 |
 | Fine for not submitting a document on time: individual | Up to 300 fine units; one fine unit is EUR 8, so up to EUR 2,400 | 2026 | MKS § 154(1); Penal Code § 47(1): https://www.riigiteataja.ee/et/akt/109072026028 |
-| Fine for intentionally withholding data or giving false data that cuts tax: legal person | Up to EUR 32,000 | 2026 | MKS § 153¹(2) |
-| Coercive payment (sunniraha) to force production of information | Up to EUR 640 the first time, EUR 2,000 the second, EUR 2,640 in total | 2026 | MKS § 67(3) |
-| Fine for breaching a country-by-country reporting duty: legal person | Up to EUR 50,000 | From 25 April 2026 | MKS § 155³(2) |
-| Time limit for EMTA to assess tax | 3 years from the TSD due date; 5 years if tax was intentionally not paid | 2026 | MKS § 98(1) |
+| Fine for intentionally withholding data or giving false data that cuts tax: legal person | Up to EUR 32,000 | 2026 | MKS § 153¹(2); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Coercive payment (sunniraha) to force production of information | Up to EUR 640 the first time, EUR 2,000 the second, EUR 2,640 in total | 2026 | MKS § 67(3); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Fine for breaching a country-by-country reporting duty: legal person | Up to EUR 50,000 | From 25 April 2026 | MKS § 155³(2); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Time limit for EMTA to assess tax | 3 years from the TSD due date; 5 years if tax was intentionally not paid | 2026 | MKS § 98(1); https://www.riigiteataja.ee/et/akt/116102026009 |
 
 ## The taxable base
 
@@ -217,18 +218,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tulumaksuseadus (TuMS), consolidated version in force 1 October to 31 December 2026, §§ 1, 4, 8, 14, 34, 44, 50, 50², 51, 53, 54, 56⁵ | https://www.riigiteataja.ee/et/akt/109072026066 | 2026-10-23 |
-| TuMS, consolidated version in force from 1 January 2027 (compared: no change to §§ 4(1), 8, 14(7), 50 or 53) | https://www.riigiteataja.ee/et/akt/109072026067 | 2026-10-23 |
-| Income Tax Act, English translation of the version in force from 1 October 2026 (§§ 8 and 50) | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
-| Rahandusministri 10.11.2006 määrus nr 53, "Seotud isikute vahel tehtud tehingute väärtuse määramise meetodid", consolidated from 1 January 2022 | https://www.riigiteataja.ee/et/akt/123122021024 | 2026-10-23 |
-| Maksukorralduse seadus (MKS), consolidated version in force from 17 October 2026, §§ 67, 91¹ to 91¹², 98, 115, 117, 151¹ to 151⁷, 153¹, 154, 155³ (also compared: versions in force from 26 October 2026, 1 November 2026, 1 January 2027 and 1 January 2028, ids 116102026010 to 116102026013, no change to these sections) | https://www.riigiteataja.ee/et/akt/116102026009 | 2026-10-24 |
-| Maksualase teabevahetuse seadus (MTVS), consolidated version in force from 25 April 2026, §§ 6, 20³ to 20⁷ | https://www.riigiteataja.ee/et/akt/115042026002 | 2026-10-23 |
-| Karistusseadustik (Penal Code), § 47(1) (fine unit EUR 8) | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-23 |
-| Rahandusministri 29.11.2010 määrus nr 60, annex 7 (TSD annex 6) and instructions, as worded by regulation nr 24 of 22.06.2020 | https://www.riigiteataja.ee/aktilisa/1260/6202/0024/RM_m24_lisa7.pdf | 2026-10-23 |
+| Tulumaksuseadus (TuMS), consolidated version in force 1 October to 31 December 2026, §§ 1, 4, 8, 14, 34, 44, 50, 50², 51, 53, 54, 56⁵; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/109072026066 | 2026-10-23 |
+| TuMS, consolidated version in force from 1 January 2027 (compared: no change to §§ 4(1), 8, 14(7), 50 or 53); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/109072026067 | 2026-10-23 |
+| Income Tax Act, English translation of the version in force from 1 October 2026 (§§ 8 and 50); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
+| Read for Full documentation test: employees, Full documentation test: turnover, Full documentation test: balance sheet total, Low value-adding intra-group services: Rahandusministri 10.11.2006 määrus nr 53, "Seotud isikute vahel tehtud tehingute väärtuse määramise meetodid", consolidated from 1 January 2022; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/123122021024 | 2026-10-23 |
+| Maksukorralduse seadus (MKS), consolidated version in force from 17 October 2026, §§ 67, 91¹ to 91¹², 98, 115, 117, 151¹ to 151⁷, 153¹, 154, 155³ (also compared: versions in force from 26 October 2026, 1 November 2026, 1 January 2027 and 1 January 2028, ids 116102026010 to 116102026013, no change to these sections); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/116102026009 | 2026-10-23 |
+| Maksualase teabevahetuse seadus (MTVS), consolidated version in force from 25 April 2026, §§ 6, 20³ to 20⁷; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/115042026002 | 2026-10-23 |
+| Karistusseadustik (Penal Code), § 47(1) (fine unit EUR 8); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-23 |
+| Rahandusministri 29.11.2010 määrus nr 60, annex 7 (TSD annex 6) and instructions, as worded by regulation nr 24 of 22.06.2020; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/aktilisa/1260/6202/0024/RM_m24_lisa7.pdf | 2026-10-23 |
 | EMTA, Tax rates (2026: corporate income tax 22/78) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-23 |
 | EMTA, Siirdehinna turuväärtuse määramise juhend (2011, recommended guidance) | https://www.emta.ee/sites/default/files/documents/2021-04/siirdehinna-maaramise-juhend.pdf | 2026-10-23 |
 | EMTA, transfer pricing hallmarks for cross-border arrangements (updated 8 January 2025) | https://emta.ee/node/382/chapter/23768/pdf | 2026-10-23 |
 
 Not yet confirmed: that the TSD annex 6 layout and code 6000 as worded by regulation nr 24 of 22 June 2020 are unchanged for 2026 periods; whether EMTA accepts or runs bilateral APAs through the treaty mutual agreement procedure (no emta.ee page on APAs was found, and no statute sets one up); which point inside the interquartile range EMTA adjusts to (Regulation No. 53 § 11(8) says only that the result must fall inside the range); whether a 2026 English EMTA page on transfer pricing replaces the 2011 guide.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

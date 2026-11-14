@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/tr-corporate-income-tax"
   jurisdiction: "TR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Türkiye: corporate income tax (kurumlar vergisi) (2026) v0.2
+# Türkiye: corporate income tax (kurumlar vergisi) (2026) v0.3
 
 Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 5520 (KVK) and collected by the Revenue Administration (GİB). The tax period is the accounting period, normally the calendar year (art. 16). Figures below come from the consolidated KVK on mevzuat.gov.tr, which includes the 2026 amending laws 7577, 7578, 7582 and 7590, and from GİB's current table of filing and payment dates.
 
@@ -27,29 +27,29 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Corporate tax rate | 25% | 2026 | KVK art. 32(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| Banks, financial leasing, factoring and financing companies, payment and e-money institutions, authorised FX dealers, asset management companies, capital market institutions, insurance, reinsurance and pension companies, and build-operate-transfer and public-private partnership project companies | 30% | 2026 | KVK art. 32(1) |
-| Profits made only from exports | 5 points lower (20%) | 2026 | KVK art. 32(7) |
+| Banks, financial leasing, factoring and financing companies, payment and e-money institutions, authorised FX dealers, asset management companies, capital market institutions, insurance, reinsurance and pension companies, and build-operate-transfer and public-private partnership project companies | 30% | 2026 | KVK art. 32(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Profits made only from exports | 5 points lower (20%) | 2026 | KVK art. 32(7), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Profits made only from manufacturing by companies with an industry registry certificate | 1 point lower (24%) in 2026 | 2026 | KVK art. 32(8) before Law 7582, archived text https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf; GİB, Kurumlar vergisi oranları, 2026 ve 2025 hesap dönemi, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkurumlar-vergisi-oranlari.pdf |
-| Manufacturing and agricultural production profits, from 2027 periods | 12.5% | 2027 | KVK art. 32(8) as amended by Law 7582 art. 8; in force for 2027 and later periods |
-| Companies first listed on Borsa İstanbul with at least 20% floated | 2 points lower for five periods | 2026 | KVK art. 32(6) |
+| Manufacturing and agricultural production profits, from 2027 periods | 12.5% | 2027 | KVK art. 32(8) as amended by Law 7582 art. 8; in force for 2027 and later periods, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Companies first listed on Borsa İstanbul with at least 20% floated | 2 points lower for five periods | 2026 | KVK art. 32(6), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Deduction for profit on goods bought abroad and sold abroad without entering Türkiye, or on brokering sales of goods abroad | 95% of the profit (100% in industrial zones the President approves and for Istanbul Financial Centre participants); 2026 periods onward | 2026 | KVK art. 10(1)(i) as changed by Law 7582 art. 7; Law 7582 art. 14(b), https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm |
-| Deduction for a qualified service centre's foreign earnings | 95% (100% in those zones and the Istanbul Financial Centre), for 20 periods from the period it starts | 2026 | KVK art. 10(1)(j) as added by Law 7582 art. 7; Law 4875 ek art. 1 |
-| Domestic minimum corporate tax | Tax may not be less than 10% of profit before deductions and exemptions | 2026 | KVK art. 32/C(1) |
-| New companies, minimum tax | Not applied for the first three accounting periods | 2026 | KVK art. 32/C(5) |
-| Provisional tax rate | The corporate tax rate of the current period | 2026 | KVK art. 32(2) |
-| Global minimum tax rate (Pillar Two) | 15% | 2026 | KVK ek art. 6(1) |
-| Pillar Two revenue threshold | EUR 750 million consolidated revenue in 2 of the 4 previous periods | 2026 | KVK ek art. 1(1) |
-| Pillar Two transitional safe harbour, effective tax rate test | 17% for the 2026 period | 2026 | KVK provisional art. 17(1)(e)(2) |
-| Loss carry-forward | 5 years | 2026 | KVK art. 9(1)(a) |
-| Thin capitalisation | Shareholder and related-party debt above 3 times equity | 2026 | KVK art. 12(1) |
+| Deduction for a qualified service centre's foreign earnings | 95% (100% in those zones and the Istanbul Financial Centre), for 20 periods from the period it starts | 2026 | KVK art. 10(1)(j) as added by Law 7582 art. 7; Law 4875 ek art. 1, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Domestic minimum corporate tax | Tax may not be less than 10% of profit before deductions and exemptions | 2026 | KVK art. 32/C(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| New companies, minimum tax | Not applied for the first three accounting periods | 2026 | KVK art. 32/C(5), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Provisional tax rate | The corporate tax rate of the current period | 2026 | KVK art. 32(2), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Global minimum tax rate (Pillar Two) | 15% | 2026 | KVK ek art. 6(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Pillar Two revenue threshold | EUR 750 million consolidated revenue in 2 of the 4 previous periods | 2026 | KVK ek art. 1(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Pillar Two transitional safe harbour, effective tax rate test | 17% for the 2026 period | 2026 | KVK provisional art. 17(1)(e)(2), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Loss carry-forward | 5 years | 2026 | KVK art. 9(1)(a), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Thin capitalisation | Shareholder and related-party debt above 3 times equity | 2026 | KVK art. 12(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Withholding on dividends paid to non-residents | 15% | 2026 | KVK art. 30(3); Presidential Decision 9286 art. 3, https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf |
 | Withholding on professional fees paid to non-resident companies | 20% (5% for oil exploration) | 2026 | KVK art. 30(1)(b); Decision 2009/14593; GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
-| Withholding on rent paid to non-resident companies | 20% (1% under financial leasing) | 2026 | KVK art. 30(1)(c); Decision 2009/14593; GİB table of art. 30 rates |
-| Withholding on royalties and payments for intangible rights to non-resident companies | 20% | 2026 | KVK art. 30(2); GİB table of art. 30 rates |
-| Withholding on loan interest to non-resident companies | 0% on loans from foreign states, international bodies and foreign banks or lenders that lend to the public; 5% on deferred-payment charges for goods; 10% on other loans | 2026 | KVK art. 30(1)(ç); Decision 2009/14593; GİB table of art. 30 rates |
-| Withholding on construction work of more than one year by non-residents | 5% (1% for rail systems, shipbuilding and nuclear plants) | 2026 | KVK art. 30(1)(a); GİB table of art. 30 rates |
-| Foreign participation exemption, minimum holding | 10% for at least one year, foreign tax burden at least 15% | 2026 | KVK art. 5(1)(b) |
-| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf |
+| Withholding on rent paid to non-resident companies | 20% (1% under financial leasing) | 2026 | KVK art. 30(1)(c); Decision 2009/14593; GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Withholding on royalties and payments for intangible rights to non-resident companies | 20% | 2026 | KVK art. 30(2); GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Withholding on loan interest to non-resident companies | 0% on loans from foreign states, international bodies and foreign banks or lenders that lend to the public; 5% on deferred-payment charges for goods; 10% on other loans | 2026 | KVK art. 30(1)(ç); Decision 2009/14593; GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Withholding on construction work of more than one year by non-residents | 5% (1% for rail systems, shipbuilding and nuclear plants) | 2026 | KVK art. 30(1)(a); GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Foreign participation exemption, minimum holding | 10% for at least one year, foreign tax burden at least 15% | 2026 | KVK art. 5(1)(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf |
 
 ## The taxable base
 
@@ -162,9 +162,9 @@ expected:
 | Kurumlar Vergisi Kanunu no. 5520, consolidated (to Law 7590): arts. 1, 3, 5, 6, 9, 10(1)(i)-(j), 11, 12, 14, 16, 21, 30, 32, 32/C, 33, ek 1, ek 6, ek 8, ek 10, provisional art. 17, amendment table | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
 | Law 7582, Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun (accepted 21 May 2026), Official Gazette 4 June 2026 no. 33270: arts. 6, 7, 8, 9, 14 | https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm | 2026-10-31 |
 | KVK, archived consolidated text of 6 October 2024 (arts. 10(1)(i) and 32(8) before Law 7582) | https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. mükerrer 28, 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
-| Gelir Vergisi Kanunu no. 193, mükerrer art. 120 (provisional tax) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf | 2026-10-31 |
-| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
+| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. mükerrer 28, 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-10-31 |
+| Gelir Vergisi Kanunu no. 193, mükerrer art. 120 (provisional tax) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-10-31 |
+| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-10-31 |
 | Presidential Decision 9286 (dividend withholding 10% to 15%), Official Gazette 22 December 2024 no. 32760 | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 |
 | GİB, Gelir Vergisi Kanununun 94 üncü maddesinde yer alan kesinti oranları (dividend withholding scope) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf | 2026-10-31 |
 | GİB, Kurumlar vergisi oranları, 2026 ve 2025 hesap dönemi (25%, 30%, IPO 23%, export 20%, manufacturing 24%) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkurumlar-vergisi-oranlari.pdf | 2026-10-31 |
@@ -176,4 +176,4 @@ Not yet confirmed: whether the President has published any list of harmful-tax c
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

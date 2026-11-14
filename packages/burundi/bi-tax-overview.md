@@ -3,16 +3,17 @@ name: bi-tax-overview
 description: "Build a Burundi compliance plan for calendar 2026 by identifying the taxpayer, income category, taxable activity and reporting period before choosing a return. This Guide routes individual, company, VAT, payroll, social contribution, related-party and cross-border questions to one substantive home each. It explains the distinction between a calendar income-tax year and the two budget-law periods within 2026, the official tax and registration authorities, registration and records, and the public portal activation process. It also shows how to reconcile a monthly payment schedule and a quarterly contribution schedule without confusing their deadlines. Special regimes and authenticated submission screens remain incomplete. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: tax-overview
-version: 1.2
+version: 1.3
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Burundi: tax classification and compliance routing for 2026 v1.2
+# Burundi: tax classification and compliance routing for 2026 v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

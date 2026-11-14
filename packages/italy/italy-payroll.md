@@ -1,16 +1,17 @@
 ---
 name: italy-payroll
 description: "Italian payroll for employees, tax year 2026: how the employer, as sostituto d'imposta, withholds IRPEF each month and settles it at the conguaglio. Covers the 2026 bands (23%, 33%, 43%), the employment detrazione, the cuneo fiscale (tax-free sum up to EUR 20,000, extra detrazione to EUR 40,000), the 2026 substitute taxes on pay rises, shift pay and productivity bonuses, regional and municipal surcharges, employee INPS (9.19% plus 1% above EUR 56,224, massimale EUR 122,295), TFR accrual and revaluation, tredicesima and quattordicesima, fringe benefits (EUR 1,000 or 2,000 with children; meal vouchers), F24 by the 16th, UniEmens, CU, 770, penalties and leave pay. Trigger on: busta paga, cedolino, ritenute IRPEF dipendenti, conguaglio, CU, 770, F24 1001, TFR, tredicesima, fringe benefit. Out of scope, see: it-employer-contributions, it-irpef-employees, it-income-tax, it-inps-contributions, it-impatriati, it-cross-border."
-version: 1.2
+version: 1.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Italian payroll for employees: IRPEF withholding, INPS, TFR, CU and F24 (2026)
@@ -38,38 +39,38 @@ This skill does not repeat its siblings:
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | IRPEF band 1, taxable income up to EUR 28,000 | 23% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-24 |
-| IRPEF band 2, EUR 28,000 to 50,000 (35% in 2024 and 2025) | 33% | 2026 | L. 199/2025 art. 1 comma 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
-| IRPEF band 3, above EUR 50,000 | 43% | 2026 | TUIR art. 11, link above |
+| IRPEF band 2, EUR 28,000 to 50,000 (35% in 2024 and 2025) | 33% | 2026 | TUIR art. 11, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=2026-10-24; L. 199/2025 art. 1 comma 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| IRPEF band 3, above EUR 50,000 | 43% | 2026 | TUIR art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-24 |
 | Gross tax on the first EUR 50,000 (was 14,140) | EUR 13,700 | 2026 | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
 | Employment detrazione, total income up to EUR 15,000 (at least 690; 1,380 for fixed-term contracts) | EUR 1,955 | 2026 | TUIR art. 13(1)(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 |
-| Employment detrazione, EUR 15,000 to 28,000 | EUR 1,910 + 1,190 x (28,000 - total income) / 13,000 | 2026 | TUIR art. 13(1)(b), link above |
-| Employment detrazione, EUR 28,000 to 50,000; nil above 50,000 | EUR 1,910 x (50,000 - total income) / 22,000 | 2026 | TUIR art. 13(1)(c), link above |
-| Extra employment detrazione, total income above EUR 25,000 and not above 35,000 | EUR 65 | 2026 | TUIR art. 13(1.1), link above |
+| Employment detrazione, EUR 15,000 to 28,000 | EUR 1,910 + 1,190 x (28,000 - total income) / 13,000 | 2026 | TUIR art. 13(1)(b): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 |
+| Employment detrazione, EUR 28,000 to 50,000; nil above 50,000 | EUR 1,910 x (50,000 - total income) / 22,000 | 2026 | TUIR art. 13(1)(c): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 |
+| Extra employment detrazione, total income above EUR 25,000 and not above 35,000 | EUR 65 | 2026 | TUIR art. 13(1.1): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 |
 | Cuneo fiscale tax-free sum, total income up to EUR 20,000: share of employment income up to 8,500 / up to 15,000 / above 15,000 | 7.1% / 5.3% / 4.8% | 2026 | L. 207/2024 art. 1 commi 4-5, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
-| Cuneo fiscale extra detrazione, total income above EUR 20,000 and up to 32,000 | EUR 1,000 | 2026 | L. 207/2024 art. 1 comma 6(a), link above |
-| Same, total income above EUR 32,000 and up to 40,000; nil above 40,000 | EUR 1,000 x (40,000 - total income) / 8,000 | 2026 | L. 207/2024 art. 1 comma 6(b), link above |
-| Cuneo wrongly granted: recovered in ten equal instalments if above | EUR 60 | 2026 | L. 207/2024 art. 1 comma 7, link above |
+| Cuneo fiscale extra detrazione, total income above EUR 20,000 and up to 32,000 | EUR 1,000 | 2026 | L. 207/2024 art. 1 comma 6(a): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
+| Same, total income above EUR 32,000 and up to 40,000; nil above 40,000 | EUR 1,000 x (40,000 - total income) / 8,000 | 2026 | L. 207/2024 art. 1 comma 6(b): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
+| Cuneo wrongly granted: recovered in ten equal instalments if above | EUR 60 | 2026 | L. 207/2024 art. 1 comma 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
 | Trattamento integrativo, total income up to EUR 15,000 (up to 28,000 under conditions) | EUR 1,200 | 2026 | D.L. 3/2020 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-10-24 |
-| Substitute tax on 2026 pay rises from contract renewals signed 1 January 2024 to 31 December 2026; private sector; 2025 employment income up to EUR 33,000 | 5% | 2026 | L. 199/2025 art. 1 comma 7, link above |
-| Substitute tax on night, holiday, rest-day and shift supplements up to EUR 1,500 a year; private sector; 2025 employment income up to EUR 40,000 | 15% | 2026 | L. 199/2025 art. 1 commi 10-11, link above |
-| Substitute tax on productivity bonuses and profit shares paid in 2026 and 2027, up to EUR 5,000 | 1% | 2026 | L. 199/2025 art. 1 comma 9, link above |
-| Trattamento integrativo speciale, tourism and food-service staff, 1 January to 30 September 2026, 2025 employment income up to EUR 40,000: share of gross pay for night work and holiday overtime | 15% | 2026 | L. 199/2025 art. 1 commi 18-21, link above |
+| Substitute tax on 2026 pay rises from contract renewals signed 1 January 2024 to 31 December 2026; private sector; 2025 employment income up to EUR 33,000 | 5% | 2026 | L. 199/2025 art. 1 comma 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| Substitute tax on night, holiday, rest-day and shift supplements up to EUR 1,500 a year; private sector; 2025 employment income up to EUR 40,000 | 15% | 2026 | L. 199/2025 art. 1 commi 10-11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| Substitute tax on productivity bonuses and profit shares paid in 2026 and 2027, up to EUR 5,000 | 1% | 2026 | L. 199/2025 art. 1 comma 9: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| Trattamento integrativo speciale, tourism and food-service staff, 1 January to 30 September 2026, 2025 employment income up to EUR 40,000: share of gross pay for night work and holiday overtime | 15% | 2026 | L. 199/2025 art. 1 commi 18-21: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
 | Addizionale regionale, base rate (regions may add up to 2.1 points) | 1.23% | 2026 | D.Lgs. 68/2011 art. 6, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-10-24 |
 | Addizionale comunale: maximum total variation of the rate; acconto as share of the prior-year surcharge | 0.8 points; 30% | 2026 | D.Lgs. 360/1998 art. 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-10-24 |
-| Employee INPS pension share, Fondo pensioni lavoratori dipendenti (total IVS 33%, so 23.81% employer) | 9.19% | 2026 | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm |
+| Employee INPS pension share, Fondo pensioni lavoratori dipendenti (total IVS 33%, so 23.81% employer, computed) | 9.19% | 2026 | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm |
 | Extra employee contribution on pay above the first pension band of EUR 56,224 a year (EUR 4,685 a month) | 1% | 2026 | INPS Circolare 6/2026 para. 5, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf |
-| Massimale, workers first insured from 1 January 1996 | EUR 122,295 | 2026 | INPS Circolare 6/2026 para. 6, link above |
-| Minimum daily pay for contributions (part-time on a 40-hour week: EUR 8.72 an hour) | EUR 58.13 | 2026 | INPS Circolare 6/2026 para. 2, link above |
-| TFR accrual: yearly pay divided by 13.5 | 7.41% | 2026 | Civil Code art. 2120, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-24 |
-| Contribution deducted from the TFR accrual (0.30 + 0.20; net accrual about 6.91%) | 0.50% | 2026 | L. 297/1982 art. 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-24 |
-| TFR revaluation each 31 December: fixed part, plus 75% of the ISTAT price rise since December | 1.5% | 2026 | Civil Code art. 2120, link above |
+| Massimale, workers first insured from 1 January 1996 | EUR 122,295 | 2026 | INPS Circolare 6/2026 para. 6: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf |
+| Minimum daily pay for contributions (part-time on a 40-hour week: EUR 8.72 an hour) | EUR 58.13 | 2026 | INPS Circolare 6/2026 para. 2: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf |
+| TFR accrual: yearly pay divided by 13.5 | 7.41% (computed: 1 / 13.5) | 2026 | Civil Code art. 2120, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-24 |
+| Contribution deducted from the TFR accrual (computed: 0.30 + 0.20; net accrual about 6.91%) | 0.50% | 2026 | L. 297/1982 art. 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-24 |
+| TFR revaluation each 31 December: fixed part, plus 75% of the ISTAT price rise since December | 1.5% | 2026 | Civil Code art. 2120: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-24 |
 | Substitute tax on the TFR revaluation (acconto: 90% of the prior year's revaluation) | 17% | 2026 | D.Lgs. 47/2000 art. 11(3)-(4), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-18;47~art11!vig=2026-10-24 |
 | Fringe benefits (goods, services, home utilities, rent or mortgage interest on the main home) exempt up to | EUR 1,000; EUR 2,000 with dependent children | 2025-2027 | L. 207/2024 art. 1 commi 390-391, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
 | Standing fringe-benefit limit in the TUIR, replaced for 2025 to 2027 | EUR 258.23 | 2026 | TUIR art. 51(3), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art51!vig=2026-10-24 |
-| Meal vouchers exempt per day: paper / electronic (electronic was EUR 8) | EUR 4 / EUR 10 | 2026 | TUIR art. 51(2)(c) as amended by L. 199/2025 art. 1 comma 14 |
-| Company car for mixed use: taxable share of the ACI cost for 15,000 km (10% battery electric, 20% plug-in hybrid) | 50% | 2026 | TUIR art. 51(4)(a), link above |
+| Meal vouchers exempt per day: paper / electronic (electronic was EUR 8) | EUR 4 / EUR 10 | 2026 | TUIR art. 51(2)(c) as amended by L. 199/2025 art. 1 comma 14 https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art51!vig=2026-10-24; https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| Company car for mixed use: taxable share of the ACI cost for 15,000 km (10% battery electric, 20% plug-in hybrid) | 50% | 2026 | TUIR art. 51(4)(a): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art51!vig=2026-10-24 |
 | Fee withholding on resident professionals (on account) / non-residents for work done in Italy (final) | 20% / 30% | 2026 | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/aliquote-f24_rit_red_lav_aut |
-| Legal interest rate for ravvedimento | 1.60% | 2026 | D.M. 10 December 2025, GU n. 289 of 13 December 2025 |
+| Legal interest rate for ravvedimento | 1.60% | 2026 | D.M. 10 December 2025, GU n. 289 of 13 December 2025 https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&tipoSerie=serie_generale&tipoVigenza=originario |
 
 ## The taxable base
 
@@ -301,7 +302,7 @@ expected:
 | D.Lgs. 472/1997 art. 13 (ravvedimento) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 | 2026-10-24 |
 | D.M. 10 December 2025, legal interest rate for 2026 (GU n. 289, 13 December 2025) | https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&tipoSerie=serie_generale&tipoVigenza=originario | 2026-10-24 |
 | Civil Code art. 2120 (TFR) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-24 | 2026-10-24 |
-| L. 297/1982 art. 3 (0.50% deducted from TFR) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-24 | 2026-10-24 |
+| L. 297/1982 art. 3 (0.30% + 0.20% = 0.50% deducted from TFR, computed) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 47/2000 art. 11 (17% on TFR revaluation) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-18;47~art11!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 66/2003 arts. 3, 4, 5, 10 (hours, overtime, leave) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-08;66~art10!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 151/2001 arts. 16, 22, 27-bis, 29, 34 (maternity, paternity, parental leave) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151~art34!vig=2026-10-24 | 2026-10-24 |

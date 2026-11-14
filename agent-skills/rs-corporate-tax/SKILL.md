@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/rs-corporate-tax"
   jurisdiction: "RS"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Serbia: corporate income tax (porez na dobit pravnih lica), tax year 2026
@@ -33,22 +33,21 @@ See also: [serbia-income-tax](serbia-income-tax.md) (individuals, entrepreneurs,
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Corporate income tax rate (proportional and uniform) | 15% | 2026 | [ZPDPL Art. 39 (MoF consolidated text)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica) |
-| Capital gains of a resident company | Part of taxable profit, so 15% | 2026 | ZPDPL Arts. 27 and 30 |
-| Withholding: dividends, royalties, interest, rent, listed services paid to non-resident companies | 20% (unless a treaty says otherwise) | 2026 | ZPDPL Art. 40(1) |
-| Withholding: royalties, interest, rent and any services paid to a company in a preferential tax jurisdiction | 25% | 2026 | ZPDPL Art. 40(4) |
-| Tax by assessment: non-resident's capital gains on Serbian assets | 20% (unless a treaty says otherwise) | 2026 | ZPDPL Art. 40(7) |
-| Withholding on payments for secondary raw materials and waste | 1% | 2026 only; repealed from 1 January 2027 | ZPDPL Art. 40 (2024 text); amending law 80/2026 Arts. 5 and 23 |
-| Loss carry-forward | 5 years | 2026 | ZPDPL Art. 32 |
-| Tax consolidation ownership test | at least 75% direct or indirect control, all members resident | 2026 | ZPDPL Art. 55 |
-| Thin capitalisation: related-party debt | interest deductible on related-party debt up to 4 × equity (10 × for banks and financial leasing companies) | 2026 | ZPDPL Art. 62 (2024 text) |
-| Non-profit exemption threshold | surplus up to RSD 400,000 | 2026 | ZPDPL Art. 44 |
-| Large investment tax holiday | 10 years, investment over RSD 1 billion and at least 100 new permanent employees | 2026 (repealed from 2028; see Article 22 grandfathering) | ZPDPL Art. 50a (2024 text); 80/2026 Arts. 22 and 23 |
-| IP income exemption | 80% of qualifying income | 2026 | ZPDPL Art. 25b |
-| Country-by-country report threshold | consolidated group revenue at least EUR 750 million | 2026 | ZPDPL Art. 61v |
-| Surcharges, local or trade tax on profit, small-company rate, minimum tax | None in the ZPDPL. Article 39 sets one rate. | 2026 | ZPDPL Art. 39 |
-| Pillar Two | No global minimum tax rules in the ZPDPL. A separate draft Law on Global Minimum Tax on Profit went to public consultation from 1 to 21 June 2026 (Government conclusion of 28 May 2026); adoption not confirmed. | 2026 | ZPDPL consolidated text |
-
+| Corporate income tax rate (proportional and uniform) | 15% | 2026 | [ZPDPL Art. 39 (MoF consolidated text)](https://www.mfin.gov.rs//upload/media/SByOge_6aa127acd2250.docx) |
+| Capital gains of a resident company | Part of taxable profit, so 15% | 2026 | [ZPDPL Arts. 27 and 30](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Withholding: dividends, royalties, interest, rent, listed services paid to non-resident companies | 20% (unless a treaty says otherwise) | 2026 | [ZPDPL Art. 40(1)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Withholding: royalties, interest, rent and any services paid to a company in a preferential tax jurisdiction | 25% | 2026 | [ZPDPL Art. 40(4)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Tax by assessment: non-resident's capital gains on Serbian assets | 20% (unless a treaty says otherwise) | 2026 | [ZPDPL Art. 40(7)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Withholding on payments for secondary raw materials and waste | 1% | 2026 only; repealed from 1 January 2027 | [ZPDPL Art. 40 (2024 text)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); [amending law 80/2026 Arts. 5 and 23](https://www.parlament.gov.rs/upload/archive/files/lat/pdf/zakoni/14_saziv/2559-26%20-%20Lat..pdf) |
+| Loss carry-forward | 5 years | 2026 | [ZPDPL Art. 32](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Tax consolidation ownership test | at least 75% direct or indirect control, all members resident | 2026 | [ZPDPL Art. 55](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Thin capitalisation: related-party debt | interest deductible on related-party debt up to 4 × equity (10 × for banks and financial leasing companies) | 2026 | [ZPDPL Art. 62 (2024 text)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Non-profit exemption threshold | surplus up to RSD 400,000 | 2026 | [ZPDPL Art. 44](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Large investment tax holiday | 10 years, investment over RSD 1 billion and at least 100 new permanent employees | 2026 (repealed from 2028; see Article 22 grandfathering) | [ZPDPL Art. 50a (2024 text)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); 80/2026 Arts. 22 and 23 |
+| IP income exemption | 80% of qualifying income | 2026 | [ZPDPL Art. 25b](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Country-by-country report threshold | consolidated group revenue at least EUR 750 million | 2026 | [ZPDPL Art. 61v](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Surcharges, local or trade tax on profit, small-company rate, minimum tax | None in the ZPDPL. Article 39 sets one rate. | 2026 | [ZPDPL Art. 39](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Pillar Two | No global minimum tax rules in the ZPDPL. A separate draft Law on Global Minimum Tax on Profit went to public consultation from 1 to 21 June 2026 (Government conclusion of 28 May 2026); adoption not confirmed. | 2026 | ZPDPL consolidated text; [Government conclusion of 28 May 2026](https://www.mfin.gov.rs//upload/media/thb1x7_6a198d07e3278.pdf) |
 ## The taxable base
 
 **Starting point.** The base is taxable profit. It is the profit in the income statement, prepared under IFRS, IFRS for SMEs or the Serbian accounting rules. It is then adjusted in the tax balance (poreski bilans) as the ZPDPL requires (Article 6).
@@ -292,4 +291,4 @@ Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consul
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rs-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rs-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rs-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rs-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

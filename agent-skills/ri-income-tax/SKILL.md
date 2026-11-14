@@ -1,182 +1,146 @@
 ---
 name: ri-income-tax
-description: "Triggers when the taxpayer is a Rhode Island resident sole proprietor or single-member LLC needing to file Rhode Island Form RI-1040. Covers Rhode Island's three-bracket graduated income tax (3.75%–5.99% for tax year 2025), standard deduction, personal exemptions, RI modifications to federal AGI, and the new RI Schedule HR1 for OBBBA add-backs. Must be loaded alongside us-tax-workflow-base and us-federal-return-assembly."
+description: "Rhode Island resident wages and sole-proprietor income: 2026 brackets, standard deductions, exemptions, phase-out, RI-1040 adjustments, credits and estimated tax; final 2026 filing gaps identified."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ri-income-tax"
   jurisdiction: "US-RI"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# RI Income Tax
+# Rhode Island resident individual income tax, tax year 2026
 
-## Rhode Island Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **General reference only.** Written by Codex. Not reviewed by an accountant. Apply the official sources to the taxpayer's facts and obtain qualified professional review before filing, paying or taking a tax position.
 
-> **Scope.** Rhode Island Form RI-1040 for tax year 2025 for full-year Rhode Island resident sole proprietors and disregarded single-member LLCs. Covers the three-bracket tax computation, RI modifications, standard and itemized deductions, and the new Schedule HR1 for OBBBA-related add-backs.
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All rates and thresholds have been researched from primary sources but must be confirmed by a qualified professional before use in return preparation.
+> **Circular 230 section 10.37:** Consider relevant facts, reasonable assumptions and applicable law. Evaluate federal tax implications using the federal owner skills and obtain professional review where needed.
 
-## Section 1: Metadata
+**Answer first.** Full-year residents compute tax from federal AGI with Rhode Island modifications, a state standard deduction and exemptions, then apply three bands from 3.75% to 5.99%. Rhode Island does **not** allow the federal itemized deduction. The 2026 inflation advisory supplies current annual amounts; final 2026 return instructions remain a gap. Sources: [2026 inflation adjustments](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf); [2025 RI-1040 instructions, lines 1 to 8](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
 
-- **Tax year covered** — 2025 (returns due April 15, 2026)
-- **Primary form** — RI-1040 (Rhode Island Resident Individual Income Tax Return)
-- **Tax authority** — [Rhode Island Division of Taxation](https://tax.ri.gov)
-- **Tax type** — Graduated income tax
-- **Currency date** — May 2026
+## Scope
 
-**Section 1 metadata table**
+Ordinary full-year resident W-2 wages and sole-proprietor/disregarded LLC income. A person domiciled in RI, or maintaining a permanent abode and spending **more than 183 days** here, tests resident status. Part-year/nonresidents use RI-1040NR and need allocation outside this ordinary computation. Federal Schedule C/SE figures belong to `us-schedule-c-and-se-computation`; federal AGI and federal filing rules to `us-form-1040-individual-return`. Separate sales/use is in `ri-sales-tax`, employer taxes in `ri-payroll`, and entity minimum/corporate tax in `ri-corporate-tax`. Source: [Who must file and residence definitions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
 
-| Field | Value |
-| --- | --- |
-| Tax year covered | 2025 (returns due April 15, 2026) |
-| Primary form | RI-1040 (Rhode Island Resident Individual Income Tax Return) |
-| Tax authority | [Rhode Island Division of Taxation](https://tax.ri.gov) |
-| Tax type | Graduated income tax |
-| Currency date | May 2026 |
+## Ask the client first
 
-**Primary sources**
+1. Domicile, abode, days in RI and any move or out-of-state wages.
+2. Filing status, federal AGI and schedules, including business income and deduction adjustments.
+3. Allowable exemption count, dependents and whether anyone can claim the taxpayer.
+4. Bond interest, state tax refunds, retirement income and business adjustments, including HR1 items.
+5. Federal EIC, other-state tax, property tax relief and certified state credits.
+6. W-2/1099 withholding, estimates, prior-year tax and extension/payment records.
 
-| Source | URL |
-| --- | --- |
-| R.I. Gen. Laws § 44-30 (personal income tax) | http://webserver.rilin.state.ri.us/Statutes/TITLE44/44-30/INDEX.HTM |
-| RI-1040 Instructions (2025) | https://tax.ri.gov/tax-sections/personal-income-tax |
-| RI Division of Taxation Advisory 2025-22 (2026 inflation adjustments) | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf |
-| RI 2025 Tax Tables (SC1040TT) | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-10/2025%20RI%20Tax%20Tables_Full_d.pdf |
+## The method, step by step
 
-## Section 2: Quick reference — rates and thresholds
+### Rates, bands and thresholds
 
-### Tax brackets — all filing statuses (tax year 2025)
+| Tax year 2026 item | Amount or computation | Official source |
+|---|---|---|
+| Taxable income through USD 82,050 | 3.75% | [2026 tax computation](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Over USD 82,050 through USD 186,450 | USD 3,076.88 + 4.75% of excess over USD 82,050 | [2026 tax computation](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Over USD 186,450 | USD 8,035.88 + 5.99% of excess over USD 186,450 | [2026 tax computation](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Standard deduction: single or married separate | USD 11,200 before phase-out | [2026 standard deductions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Joint or qualifying surviving spouse | USD 22,400 before phase-out | [2026 standard deductions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Head of household | USD 16,800 before phase-out | [2026 standard deductions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Personal/dependent exemption | USD 5,250 each before phase-out | [2026 exemptions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf) |
+| Modified-AGI phase-out | Starts over USD 261,000; USD 7,450 increments; no deduction/exemption above USD 290,800 | [2026 phase-out thresholds](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf); [final 2026 ES phase-out worksheet](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf) |
 
-Rhode Island uses a uniform rate schedule that applies to all filing statuses.
+The final 2026 RI-1040ES linked from the current personal-income forms page corroborates the advisory's annual thresholds and supplies the stepped worksheet. Deduction/exemption factors are 100% through USD 261,000; 80% for the first USD 7,450 excess; 60% for the second; 40% for the third; 20% for the fourth; zero when excess is **more than USD 29,800**. Round a fractional increment upward, not by linear interpolation. Source: [phase-out worksheet](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf).
 
-**Tax brackets — all filing statuses (tax year 2025)**
+1. Establish federal AGI. Wages and net sole-proprietor profit feed through federal AGI; do not compute a second RI Schedule C. Do not repeat federal standard-deduction, Social Security wage-base or SE tax figures here.
+2. Prepare **RI Schedule M** for supported additions/subtractions. Include qualifying other-state/municipal bond interest in additions and qualifying U.S. obligation interest in subtractions. The old blanket addition for state income-tax refunds is not supported by the passages read. The correct treatment of a particular refund, including federal inclusion and any state modification, is **Not yet confirmed**; do not make an automatic addition or subtraction. Source: [Schedule M instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
+3. The verified **2025-2026 filing cycle** form path is RI-1040 line 1 federal AGI, line 2 RI Schedule M net modifications, line 3 modified AGI, line 4 RI standard deduction, line 5 income after deduction, line 6 exemptions, line 7 taxable income and line 8 tax. Recheck final 2026 mapping. The state standard deduction replaces the old claim that federal itemized deductions could be selected. Source: [RI-1040 lines 1 to 8](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
+4. For business HR1, use the actual qualifying federal deduction and the applicable state difference, not a blanket add-back of every expenditure. Verified 2025 Schedule HR1 covers additional business interest under section 163(j), domestic research under section 174A, increased section 179(b) expensing and section 181 production costs. Total line 1f flows to Schedule M **line 2k**. Final 2026 conformity and schedule values are Not yet confirmed. Source: [2025 Schedule HR1, individual](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20HR1%20-%20Individual_w_0.pdf).
+5. Subtract the permitted 2026 deduction and exemptions after the phase-out. Use the correct taxpayer/dependent count; do not assume every household member qualifies. The uniform table above is status independent after deriving taxable income. The verified filing-cycle instructions require a tax-table lookup for taxable income below USD 100,000; final 2026 table is not yet read. Examples below use taxable income above that point.
+6. Apply supported other-state tax credit via RI Schedule II/RI-1040MU; refundable property-tax relief via RI-1040H; RI EIC via Schedule EIC; and certified business or lead-paint credits where eligible. The verified **2025-2026 filing cycle** EIC equals **16% of qualifying federal EIC** and is reported with payments/refundable credits; the old assertion that only 15% was refundable is not supported. The old USD 500-per-child-under-six state credit has not been confirmed and must not be claimed from this skill. Source: [lines 9, 14c, 14d and Schedule EIC](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
+7. Reconcile RI withholding through Schedule W and supporting W-2/1099, estimates and eligible PTE credits. Tax after credits less payments gives balance or refund. PTE credits and related state add-back require entity statements and current rules, not an assumed full-dollar credit. Source: [Schedule W and PTE instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
 
-| RI taxable income | Base tax | Rate | On excess over |
-| --- | --- | --- | --- |
-| $0 – $79,900 | $0 | 3.75% | $0 |
-| $79,901 – $181,650 | $2,996.25 | 4.75% | $79,900 |
-| Over $181,650 | $7,829.38 | 5.99% | $181,650 |
+### Retirement and other old topics retained with limits
 
-### Tax brackets — all filing statuses (tax year 2026, for reference)
+The inflation advisory's retirement section gives **2025-2026 filing cycle** thresholds, not a verified 2026 retirement table: eligible federally taxable Social Security requires full retirement age and federal AGI below USD 107,000 single/HOH/separate or USD 133,750 joint/surviving spouse. Its pension/annuity modification reaches USD 50,000 subject to qualifying income, full-retirement-age and AGI conditions. Do not carry these annual thresholds into a 2026 return as confirmed. Source: [2025 retirement modifications](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf).
 
-**Tax brackets — all filing statuses (tax year 2026, for reference)**
+Property tax circuit-breaker eligibility/amounts, age-related relief, other-state tax calculations and full Social Security/pension definitions remain separate eligibility work. The old mention of property-tax relief is retained, without inventing a 2026 credit amount. Final 2026 rules and any child credit are **Not yet confirmed**.
 
-| RI taxable income | Base tax | Rate | On excess over |
-| --- | --- | --- | --- |
-| $0 – $82,050 | $0 | 3.75% | $0 |
-| $82,051 – $186,450 | $3,076.88 | 4.75% | $82,050 |
-| Over $186,450 | $8,035.88 | 5.99% | $186,450 |
+## Boundary and exception table
 
-### Standard deduction (tax year 2025)
+| Situation | Action |
+|---|---|
+| More than 183 days plus permanent abode | Test resident definition; 183 days alone does not meet this limb |
+| Nonresident/part-year or multistate work | Use RI-1040NR allocation and reciprocity/sourcing research; refer complex allocation |
+| Modified AGI crosses a phase-out increment | Recompute both deduction and exemptions using the stepped worksheet |
+| Retirement income | Confirm age, income type, federal inclusion and correct-year ceiling |
+| HR1 or PTE adjustments | Obtain the federal/entity workpaper and final state schedule |
+| Property-tax or business credits | Obtain eligibility/certification; no unsupported automatic credit |
 
-**Standard deduction (tax year 2025)**
+## Worked cases
 
-| Filing status | Standard deduction |
-| --- | --- |
-| Single | $10,900 |
-| MFJ / QSS | $21,800 |
-| MFS | $10,900 |
-| HOH | $16,350 |
+**Case 1, ordinary wage earner.** Invented single resident has 2026 modified AGI USD 150,000, one exemption and no credits. Deduction USD 11,200 and exemption USD 5,250 give taxable income USD 133,550. Tax is USD 3,076.88 + (133,550 - 82,050) x 4.75% = **USD 5,523.13**. With USD 6,000 RI withholding, refund is USD 476.87 before other items.
 
-### Personal exemption (tax year 2025)
+```oa-check
+name: Rhode Island 2026 ordinary resident wage calculation
+inputs:
+  modified_agi: 150000
+  withholding: 6000
+steps:
+  - taxable: modified_agi - 11200 - 5250
+  - tax: 3076.88 + (taxable - 82050) * 0.0475
+  - refund: withholding - tax
+expected:
+  taxable: 133550
+  tax: 5523.13
+  refund: 476.87
+```
 
-**Personal exemption (tax year 2025)**
+**Case 2, phase-out decision.** Invented single taxpayer with one exemption compares modified AGI USD 268,450 with USD 268,451. The first is exactly one increment above USD 261,000: 80% deduction/exemption. One dollar more enters the second increment: 60%. Taxable incomes become USD 255,290 and USD 258,581; taxes are USD 12,159.396 and USD 12,356.5269 before return rounding. The USD 197.1309 change demonstrates the stepped phase-out, rather than tax at a single marginal rate. The annual amounts come from the final advisory; worksheet mechanics are from the final 2026 ES form; final annual-return instructions remain to be checked.
 
-| Item | Value |
-| --- | --- |
-| Exemption amount per person | $5,100 |
+```oa-check
+name: Rhode Island stepped deduction and exemption boundary
+inputs:
+  agi_at: 268450
+  agi_over: 268451
+steps:
+  - taxable_at: agi_at - 11200 * 0.8 - 5250 * 0.8
+  - taxable_over: agi_over - 11200 * 0.6 - 5250 * 0.6
+  - tax_at: 8035.88 + (taxable_at - 186450) * 0.0599
+  - tax_over: 8035.88 + (taxable_over - 186450) * 0.0599
+  - change: tax_over - tax_at
+expected:
+  taxable_at: 255290
+  taxable_over: 258581
+  tax_at: 12159.396
+  tax_over: 12356.5269
+  change: 197.1309
+```
 
-### Other key figures
+## When to refuse or refer
 
-**Other key figures**
+Refer RI-1040NR, domicile disputes, complex other-state credits, HR1 differences, special retirement cases, certified incentives and undocumented exemptions. Do not compute a 2026 filing with an unconfirmed final form or credit. This is a state supplement, not a substitute for the federal return.
 
-| Item | Value |
-| --- | --- |
-| RI EITC | 16% of federal EITC (partially refundable — 15% of the credit is refundable) |
-| RI child tax credit | $500 per qualifying child under 6 (income limits apply, verify 2025) |
-| Property tax circuit breaker credit | Available for low-income homeowners and renters |
+## Filing and payment
 
-## Section 3: How this skill works with the federal return
+File RI-1040 through authorized e-file/software or the permitted paper route, with RI Schedule M, EIC, W, HR1 and credit schedules as applicable; save acceptance and reconcile separate payment confirmation. The verified filing-cycle due date is 15 April following the tax year, subject to calendar relief. RI-4868 grants six months to file, with payment due by the original deadline; where no RI payment is due and a federal extension exists, follow the instructions' federal-extension attachment route. Final 2026 deadlines and return paths require confirmation. Source: [filing and extension instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf).
 
-- **Starting point and flow** — Rhode Island starts from federal adjusted gross income (AGI) on federal Form 1040, Line 11. Rhode Island then applies modifications (additions and subtractions) to arrive at RI modified AGI, then subtracts the RI standard deduction (or itemized, if applicable) and personal exemptions to arrive at RI taxable income.
-- **Key flow** — 1. Federal AGI → RI modifications (Schedule M) → RI modified AGI 2. RI modified AGI − standard or itemized deduction − exemptions = RI taxable income 3. Apply tax rates → RI tax before credits 4. Apply credits → RI income tax liability
+The final 2026 ES form requires estimates when tax over credits is **USD 250 or more**, with installments 15 April, 15 June and 15 September 2026 and 15 January 2027; exceptions and prior-year basis appear in the form. The stated underpayment comparison is 80% of installment liability, with RI-2210 exceptions. The January payment exception requires filing and paying in full by 15 February 2027 under that form. Use the final ES worksheet and any applicable RI-2210 exception. Source: [final estimated-tax instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf).
 
-### Important: RI Schedule HR1 (new for 2025)
+## Completion checklist
 
-- **Schedule HR1 required add-backs** — For tax year 2025, Rhode Island introduced Schedule HR1 to handle OBBBA-related add-backs. This schedule requires taxpayers to add back certain deductions claimed on the federal return under P.L. 119-21 (OBBBA), including: - Business interest expense deduction under §163(j) (if changed by OBBBA) - §174A amortization adjustment for R&E expenditures - §179(b) expensing limit increase - Qualified sound recording production deduction under §181
+- Residence/status and federal starting amounts reconciled; no federal deduction figures copied.
+- 2026 brackets, deduction, exemption and phase-out used for the correct tax year.
+- State adjustments and credits supported; withholding and estimates matched to records.
+- Final 2026 forms/retirement/credit gaps resolved before filing; acceptance/payment retained.
 
-## Section 4: Self-employed specific rules
+## Sources
 
-### RI modifications for self-employed
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for ADV 2025-22: 2026 brackets, deductions, exemptions and phase-out; neighboring 2025 retirement paragraphs read and kept separate. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf | 2026-11-13 |
+| Read for Final 2026 RI-1040ES: pages 1 to 2, estimate trigger, dates, rate and phase-out worksheets; final current forms-page publication supersedes research draft. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf | 2026-11-13 |
+| Read for 2025 resident instructions: residency, filing, extensions, RI-1040 lines 1 to 15, Schedule EIC, W and M, retirement and HR1 sections. 2025-2026 filing cycle. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf | 2026-11-13 |
+| Read for 2025 individual Schedule HR1: four adjustment categories, K-1 references and line 1f destination Schedule M 2k. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20HR1%20-%20Individual_w_0.pdf | 2026-11-13 |
 
-- **Common additions and subtractions** — **Common additions (RI taxes, federal does not):** - State/local income tax refund (if not already in federal AGI) - OBBBA-related add-backs via Schedule HR1 **Common subtractions (RI exempts, federal taxes):** - Social Security benefits (RI provides a subtraction for Social Security for taxpayers below certain income thresholds — verify 2025 rules, as RI recently expanded this) - Certain military pension income
-
-### Rhode Island EITC
-
-- **RI EITC** — 16% of the federal EITC for tax year 2025; partially refundable — 15% of the credit is refundable. Self-employment income qualifies.
-
-### RI itemized deduction rules
-
-- **Itemized deduction treatment** — If the taxpayer itemizes, Rhode Island uses the federal itemized deduction amount as a starting point. Rhode Island does NOT impose its own SALT cap. Taxpayers who itemize on the RI return generally use their federal Schedule A total (with RI-specific modifications if any).
-
-## Section 5: Tier 1 rules — deterministic
-
-- **R-RI-1** — Federal AGI is the starting point. RI-1040 starts from federal Form 1040, Line 11.  _(R-RI-1)_
-- **R-RI-2** — Uniform rate schedule applies to all filing statuses. Unlike most states, RI uses the same tax brackets regardless of filing status. Only the standard deduction and exemption amounts vary by status.  _(R-RI-2)_
-- **R-RI-3** — Standard deduction is based on filing status. $10,900 (single/MFS), $21,800 (MFJ/QSS), $16,350 (HOH) for 2025.  _(R-RI-3)_
-- **R-RI-4** — Personal exemption is $5,100 per person. Subject to income-based phase-out for high earners.  _(R-RI-4)_
-- **R-RI-5** — RI EITC = 16% of federal EITC. Partially refundable (15% of the credit is the refundable portion). Self-employment income qualifies.  _(R-RI-5)_
-- **R-RI-6** — Schedule HR1 is mandatory for OBBBA add-backs. If the taxpayer claimed any OBBBA-specific deductions on the federal return (§163(j), §174A, §179(b) increase, §181), complete Schedule HR1 to add these back.  _(R-RI-6)_
-- **R-RI-7** — Tax tables for income under $100,000. Use the RI tax tables for taxable income under $100,000; use the tax computation worksheet for $100,000 and above.  _(R-RI-7)_
-
-## Section 6: Tier 2 rules — requires judgment
-
-- **J-RI-1** — Social Security exemption eligibility. Rhode Island has been expanding its Social Security exemption. Verify the 2025 income thresholds for the Social Security subtraction — it may now be available to a wider range of taxpayers than in prior years.  _(J-RI-1)_
-- **J-RI-2** — OBBBA conformity determination. Rhode Island introduced Schedule HR1 to decouple from specific OBBBA provisions. Judgment is needed to determine exactly which federal deductions were claimed under OBBBA and must be added back.  _(J-RI-2)_
-- **J-RI-3** — Residency determination. RI considers a person domiciled in RI or maintaining a permanent place of abode in RI while spending 183+ days there as a resident. For taxpayers who moved, nonresident/part-year rules apply.  _(J-RI-3)_
-- **J-RI-4** — Property tax credit eligibility. The RI property tax circuit breaker credit has specific income and property tax thresholds. Verify eligibility.  _(J-RI-4)_
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library**
-
-| Pattern | Description |
-| --- | --- |
-| OBBBA filer | Must complete Schedule HR1 to add back OBBBA-specific deductions (§163(j), §174A, §179(b), §181). |
-| Low-income freelancer with children | Check eligibility for RI EITC (16% of federal) and RI child tax credit ($500/child under 6). |
-| Social Security recipient | Verify eligibility for RI Social Security subtraction based on income thresholds. |
-| High earner (>$181,650) | Top bracket at 5.99%. Plus personal exemption phase-out may apply. |
-| Standard vs. itemized | RI standard deduction is relatively generous ($10,900 single). Compare against itemized before choosing. |
-
-## Section 8: Form mapping
-
-**Form mapping**
-
-| RI-1040 line | Description | Source |
-| --- | --- | --- |
-| Line 1 | Federal AGI | Federal Form 1040, Line 11 |
-| Line 2 | Modifications (additions/subtractions) | Schedule M |
-| Line 2a | OBBBA add-backs | Schedule HR1 |
-| Line 3 | RI modified AGI | Line 1 ± modifications |
-| Line 4 | Deduction (standard or itemized) | Standard deduction or RI Schedule A |
-| Line 5 | Exemptions | $5,100 per person |
-| Line 7 | RI taxable income | Line 3 − deduction − exemptions |
-| Line 8 | RI income tax | Tax tables or tax computation worksheet |
-| Line 14 | RI EITC | 16% of federal EITC |
-| Line 18 | RI tax after credits | After all credits applied |
-
-## Section 9: Refusal catalogue
-
-- **REFUSE-RI-1** — REFUSE to prepare a RI return for a part-year resident or nonresident without Form RI-1040NR. This skill covers full-year residents only.  _(REFUSE-RI-1)_
-- **REFUSE-RI-2** — REFUSE to skip Schedule HR1 if the taxpayer claimed any OBBBA-specific deductions on the federal return. The schedule is mandatory for 2025.  _(REFUSE-RI-2)_
-- **REFUSE-RI-3** — REFUSE to claim the Social Security subtraction without verifying income eligibility thresholds for 2025.  _(REFUSE-RI-3)_
-- **REFUSE-RI-4** — REFUSE to apply 2026 inflation-adjusted brackets ($82,050 / $186,450) to a 2025 return. Use the 2025 brackets ($79,900 / $181,650).  _(REFUSE-RI-4)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: final 2026 RI-1040/RI-1040NR, Schedule M/HR1/EIC/W and tax-table line mapping; 2026 retirement thresholds, credit/circuit-breaker amounts and detailed eligibility; alleged USD 500 child credit; final 2026 federal conformity; local income-tax assertion. The old 2025 standard deduction/exemption figures are superseded by the fetched 2026 advisory, and federal deduction figures route to the federal owner skill.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ri-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ri-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ri-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ri-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

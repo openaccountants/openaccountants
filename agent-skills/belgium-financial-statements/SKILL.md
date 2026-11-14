@@ -1,23 +1,24 @@
 ---
 name: belgium-financial-statements
-description: "Preparing and filing Belgian annual accounts (jaarrekening / comptes annuels) for financial years closing in 2026: the Companies and Associations Code (WVV / CSA) size criteria for micro, small and large companies (EUR 900,000 / 450,000 / 10 and EUR 11,250,000 / 6,000,000 / 50), the full, abbreviated and micro schemes of the Royal Decree of 29 April 2019, approval within six months, filing with the National Bank (NBB) within 30 days of approval and at the latest seven months after year-end, the 2026 NBB filing costs and late-filing surcharges, XBRL or PDF filing, language rules, the social balance sheet, the statutory auditor (commissaris) test, consolidation and groups of limited size, and the sanctions for not filing. Trigger on: jaarrekening, comptes annuels, NBB filing, Balanscentrale, Centrale des bilans, verkort schema, microschema, commissaris Belgium, Belgian GAAP accounts, late filing NBB. Out of scope: bookkeeping and the chart of accounts (belgium-bookkeeping), corporate tax"
+description: "Preparing and filing Belgian annual accounts (jaarrekening / comptes annuels) for financial years closing in 2026 under the Companies and Associations Code (WVV / CSA) size criteria for micro, small and large companies (EUR 900,000 / 450,000 / 10 and EUR 11,250,000 / 6,000,000 / 50), the full, abbreviated and micro schemes of the Royal Decree of 29 April 2019, approval within six months, filing with the National Bank (NBB) within 30 days of approval and at the latest seven months after year-end, the 2026 NBB filing costs and late-filing surcharges, XBRL or PDF filing, language rules, the social balance sheet, the statutory auditor (commissaris) test, consolidation and groups of limited size, and the sanctions for not filing. Trigger phrases include jaarrekening, comptes annuels, NBB filing, Balanscentrale, Centrale des bilans, verkort schema, microschema, commissaris Belgium, Belgian GAAP accounts, late filing NBB. Out of scope are bookkeeping and the chart of accounts (belgium-bookkee"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/belgium-financial-statements"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Belgium Financial Statements
+# Belgium annual accounts: prepare, approve and file, financial years closing in 2026
 
-Rules below apply to annual accounts filed in 2026. Each line names its source; the full list is in Sources at the end. The WVV and the KB WVV were read in the consolidated Justel database, and the NBB pages on nbb.be, on 2026-10-30.
+> **General reference only.** This Guide and its outputs are for information and computation only and are not tax, legal or financial advice. A qualified professional in Belgium must review any output before anyone files or acts on it.
 
-## Section 1 -- Quick Reference
+**Answer layer.** A Belgian company puts its annual accounts to the shareholders within 6 months of year-end and files them with the National Bank (NBB) within 30 days of approval and at the latest 7 months after year-end, electronically (XBRL or PDF). Size decides the scheme: micro (no more than one of EUR 900,000 turnover, EUR 450,000 balance sheet, 10 FTE exceeded), small (EUR 11,250,000 / 6,000,000 / 50), otherwise large with a statutory auditor. Filing from the 9th month after year-end adds a surcharge (2026: EUR 151 / 227 / 453 for small companies filing the abbreviated or micro model, EUR 504 / 755 / 1,510 for others). Ask first: year-end date, the three size figures for the last two years, group links, legal form, and the approval date.
 
-**Quick Reference**
+The WVV and the KB WVV were read in the consolidated Justel database, and the NBB pages on nbb.be, on 2026-11-14 (two NBB pages refused script access and keep their earlier read date).
 
+## Scope
 | Field | Value |
 | --- | --- |
 | Country | Belgium (Koninkrijk België / Royaume de Belgique) |
@@ -28,14 +29,13 @@ Rules below apply to annual accounts filed in 2026. Each line names its source; 
 | Accounting standards | Belgian accounting law (KB WVV) with the guidance of the Commissie voor Boekhoudkundige Normen (CBN / CNC) |
 | Financial year | Normally 12 months; an exceptional year may not exceed 24 months less one day (WVV art. 1:24 § 4) |
 | Approval | Accounts put to the shareholders' meeting within 6 months after year-end (WVV art. 3:1 § 1) |
-| Filing deadline | Within 30 days after approval and at the latest 7 months after year-end (WVV art. 3:12 § 1) |
+| Filing deadline | Within 30 days after approval and at the latest 7 months after year-end (WVV art. 3:10, second paragraph) |
 | Filing cost 2026 (XBRL) | EUR 67.00 micro, EUR 89.40 abbreviated, EUR 379.50 full (NBB) |
 | Late filing surcharge 2026 | From the 9th month after year-end: EUR 151 small / EUR 504 other; 10th to 12th month: EUR 227 / EUR 755; from the 13th month: EUR 453 / EUR 1,510 (NBB; WVV art. 3:13) |
 | Digital filing | Electronic only, as an XBRL file (preferred) or a PDF file, through the NBB filing application; paper abolished since 1 January 2020 (NBB) |
 
-## Section 2 -- Reporting Framework
+### Reporting framework
 
-**Reporting framework**
 
 | Entity type | Applicable scheme | Source |
 | --- | --- | --- |
@@ -49,11 +49,11 @@ Rules below apply to annual accounts filed in 2026. Each line names its source; 
 - Unlisted small companies and micro companies may also publish in the abbreviated or micro form (WVV art. 3:11).
 - Belgian accounting law differs from IFRS: for example "non-recurring" items are shown inside operating and financial results, revaluations go to a separate equity heading, and development costs and goodwill are written off over at most 10 years where the life cannot be estimated (KB WVV annex 3; art. 3:35, 3:39). See [belgium-bookkeeping](belgium-bookkeeping.md) for the valuation rules.
 
-## Section 3 -- Size Thresholds
+### Size thresholds
 
 Criteria in force for financial years starting after 31 December 2023 (WVV art. 1:24 and 1:25, amounts set by art. 147 to 149 of the Law of 28 March 2024, in force 8 April 2024; art. 170 of that law applies them to financial years starting after 31 December 2023).
 
-### Small company (art. 1:24)
+#### Small company (art. 1:24)
 
 - **Small company classification.** A company with legal personality is small if, on the balance sheet date of the last closed financial year, it exceeds no more than one of the criteria below (WVV art. 1:24 § 1). A company that exceeds more than one is large.
 
@@ -65,7 +65,7 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 | Balanstotaal / Total du bilan (balance sheet total) | EUR 6,000,000 |
 | Jaargemiddelde werknemers / Moyenne annuelle des travailleurs (FTE) | 50 |
 
-### Micro company (art. 1:25)
+#### Micro company (art. 1:25)
 
 - **Micro company classification.** A small company that is neither a parent nor a subsidiary is micro if it exceeds no more than one of the criteria below (WVV art. 1:25 § 1).
 
@@ -77,7 +77,7 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 | Balance sheet total | EUR 450,000 |
 | Average FTE | 10 |
 
-### How the test works
+#### How the test works
 
 - **Two-year rule.** Exceeding, or no longer exceeding, more than one criterion has effect only when it happens in two consecutive financial years; the change applies from the year after the second year (art. 1:24 § 2, applied to micro companies by art. 1:25 § 2).
 - **Starters** estimate the figures in good faith at the start of the first year; if more than one criterion will be exceeded, that counts for the first year at once (art. 1:24 § 3).
@@ -85,7 +85,7 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 - **Staff** is the average of FTE registered in Dimona at the end of each month (art. 1:24 § 5).
 - **Linked companies.** For a parent company, turnover and balance sheet total are measured on a consolidated basis and staff numbers are added; if intragroup items are not eliminated, the turnover and balance sheet limits rise by 20% (art. 1:24 § 6, § 7).
 
-### Group of limited size (art. 1:26)
+#### Group of limited size (art. 1:26)
 
 **Group of limited size** (WVV art. 1:26 § 1): exempt from consolidation (art. 3:25) if, on a consolidated basis, it exceeds no more than one of these:
 
@@ -95,9 +95,47 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 | Balance sheet total | EUR 21,250,000 |
 | Average FTE | 250 |
 
-## Section 4 -- Required Financial Statements
+## Rates, bands and thresholds
 
-**Required financial statements**
+| Item | Figure | Conditions | Source |
+| --- | --- | --- | --- |
+| Small company limits | Net turnover EUR 11,250,000; balance sheet total EUR 6,000,000; 50 FTE | Small if no more than one is exceeded on the last closed balance sheet date; two-year rule; financial years starting after 31 December 2023 | [WVV art. 1:24 § 1 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Micro company limits | Net turnover EUR 900,000; balance sheet total EUR 450,000; 10 FTE | Small company that is neither parent nor subsidiary; no more than one exceeded | [WVV art. 1:25 § 1 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Group of limited size (no consolidation) | Net turnover EUR 42,500,000; balance sheet total EUR 21,250,000; 250 FTE | Consolidated basis; no more than one exceeded | [WVV art. 1:26 § 1 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Amounts set by | Law of 28 March 2024, art. 147 to 149, applied by art. 170 | Financial years starting after 31 December 2023 | [Law of 28 March 2024](https://www.ejustice.just.fgov.be/eli/wet/2024/03/28/2024002950/staatsblad) |
+| Limits uplift for linked companies without eliminations | Turnover and balance sheet limits plus 20% | Parent measuring on a consolidated basis without eliminating intragroup items | [WVV art. 1:24 § 6 and § 7 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Approval deadline | 6 months after year-end | Shareholders' meeting | [WVV art. 3:1 § 1 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Filing deadline | 30 days after approval, at the latest 7 months after year-end | NBB | [WVV art. 3:10 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| NBB acceptance | 8 working days | Deemed accepted unless the NBB objects | [WVV art. 3:14 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Late filing contribution, statutory base | EUR 400 (9th month), EUR 600 (10th to 12th), EUR 1,200 (13th on); EUR 120 / 180 / 360 for small or micro companies filing the abbreviated or micro model | Filing more than one month after the 7-month deadline; indexed each 1 January; refund on force majeure requested within 18 months after year-end | [WVV art. 3:13 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Late filing surcharge 2026, small or micro filing abbreviated or micro model | EUR 151 (9th month), EUR 227 (10th to 12th month), EUR 453 (13th month on) | Filings from 1 January 2026 | [NBB, Tarieftoeslag en beroepsprocedure](https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/hoeveel-betalen/tarieftoeslag-en-beroepsprocedure) |
+| Late filing surcharge 2026, other companies | EUR 504, EUR 755, EUR 1,510 | Same months | same |
+| NBB filing cost 2026, XBRL | Full EUR 379.50; abbreviated EUR 89.40; micro EUR 67.00 | Filings in 2026; indexed each 1 January (KB WVV art. 3:70) | [NBB, filing costs history 2026 (PDF)](https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf) |
+| NBB filing cost 2026, PDF | Full EUR 449.70; abbreviated EUR 159.50; micro EUR 137.30 | Same | same |
+| Maximum file size | 50 MB | Electronic filing | [NBB, Welk formaat](https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welk-formaat) |
+| Auditor mandate | 3 years, renewable | Statutory auditor (commissaris) | [WVV art. 3:61 § 1 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Exceptional financial year | At most 24 months less one day | Turnover prorated by months, each started month counting in full | [WVV art. 1:24 § 4 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+
+## Ask the client first
+
+1. Legal form (NV / SA, BV / SRL, CV / SC, VOF / SNC, CommV / SComm, association) and whether any partner is a legal person.
+2. Year-end date, and whether this is a first, short or long financial year.
+3. Net turnover, balance sheet total and average FTE (Dimona) for the last two closed years, and estimates for a starter.
+4. Is the company a parent or subsidiary? Does the group prepare consolidated accounts? Are any securities listed?
+5. Is there a statutory auditor? A works council?
+6. Date of the board's drawing-up of the accounts and of the shareholders' meeting.
+7. Is the company in liquidation or dissolved during the year?
+8. Which language area is the registered office in?
+9. Software that produces the XBRL file (or will it be PDF)?
+
+## The method, step by step
+
+### Step 1. Fix the size class
+
+Apply the size thresholds in Scope and the rates table: last closed balance sheet date, two-year rule, starters, short or long years, linked companies. The class decides the scheme (Step 2) and the audit duty (Step 9).
+
+### Step 2. Choose the scheme and the documents
+
 
 | Document | Micro | Small (verkort) | Large (volledig) | Source |
 | --- | --- | --- | --- | --- |
@@ -113,9 +151,8 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 - **Other documents filed with the accounts** (WVV art. 3:12 § 1): names of the directors and auditor and of any external accountant who checked or corrected the accounts, or a statement that none did; the appropriation of the result if not in the accounts; the date of filing of the deed or the updated articles; the auditor's report; amounts of debts guaranteed by the State, overdue tax and RSZ / ONSS debts, and public grants; the management report items where required; the list of participations; the social balance sheet; and other documents the code requires.
 - The NBB filing form includes the shareholder structure and the reports on conflicts of interest (NBB, "Andere neer te leggen documenten").
 
-## Section 5 -- Year-End Adjustments Checklist
+### Step 3. Make the year-end adjustments
 
-**Year-end adjustments checklist**
 
 | # | Adjustment | Belgian rule | Source |
 | --- | --- | --- | --- |
@@ -136,7 +173,7 @@ Criteria in force for financial years starting after 31 December 2023 (WVV art. 
 
 The method used to translate foreign-currency assets, debts and commitments is stated in the valuation rules in the notes (KB WVV art. 3:12); the translation rules themselves are on the "Not yet confirmed" line. The investment deduction is a tax item: see [be-corporate-tax](be-corporate-tax.md).
 
-## Section 6 -- Resultatenrekening Format (P&L)
+### Step 4. Lay out the profit and loss account
 
 Belgian full scheme, by nature (KB WVV annex 3, art. 3:81):
 
@@ -187,7 +224,7 @@ The abbreviated and micro schemes (annex 4) start with I.A.B Brutomarge (gross m
 
 The 2025 version showed headings VI "result from ordinary activities", VII and VIII "exceptional" items and XII to XIV for untaxed reserves. The current annex has no separate exceptional section; non-recurring items sit inside operating and financial results.
 
-## Section 7 -- Balans Format (Balance Sheet)
+### Step 5. Lay out the balance sheet
 
 Belgian full scheme (KB WVV annex 3, art. 3:80):
 
@@ -240,9 +277,8 @@ SCHULDEN (Liabilities)
 
 The 2025 version showed equity as capital and share premium (I, II) and liabilities as IX to XI. Since the WVV, equity heading I is the contribution (inbreng), and liabilities are VIII to X.
 
-## Section 8 -- Toelichting (Notes to Accounts)
+### Step 6. Write the notes
 
-**Notes by scheme**
 
 | Scheme | Content | Source |
 | --- | --- | --- |
@@ -255,16 +291,15 @@ The 2025 version showed equity as capital and share premium (I, II) and liabilit
 - **Stock**: where the book value (for example under LIFO) differs much from market value, the difference is disclosed; small companies may give one total (KB WVV art. 3:21).
 - The item-by-item table of the 2025 version (which notes apply to which size) is replaced by the article references above; the detailed lists are on the "Not yet confirmed" line for items not read one by one.
 
-## Section 9 -- Filing Requirements
+### Step 7. Approve within 6 months, then file within 30 days and 7 months
 
-**Filing requirements**
 
 | Item | Detail | Source |
 | --- | --- | --- |
 | Filing authority | NBB, Balanscentrale | WVV art. 3:10 |
 | Who files | Most Belgian companies, including all with limited liability; VOF / SNC and CommV / SComm only where a partner is a legal person and the company is large, or in other listed cases | NBB, "Belgische vennootschappen" |
 | Approval deadline | Within 6 months after year-end; late approval shifts the burden of proof for third-party damage | WVV art. 3:1 § 1 |
-| Filing deadline | Within 30 days after approval and at the latest 7 months after year-end | WVV art. 3:12 § 1; NBB, "Wanneer neerleggen" |
+| Filing deadline | Within 30 days after approval and at the latest 7 months after year-end | WVV art. 3:10, second paragraph; NBB, "Wanneer neerleggen" |
 | Filing method | Electronic only; paper abolished since 1 January 2020 | NBB, "Welk formaat" |
 | Format | XBRL file under the April 2022 taxonomy (about 99% of filings) or PDF; PDF compulsory for credit institutions, investment firms, health insurers and immigrating companies; maximum file size 50 MB | NBB, "Welk formaat" |
 | Language | The language (or one of the languages) of the language area of the registered office; one language per filing; an English translation may be filed in addition, never alone | NBB, "Welke taal" (WVV art. 2:33; KB WVV art. 3:67) |
@@ -284,7 +319,7 @@ The 2025 version showed equity as capital and share premium (I, II) and liabilit
 
 The costs are indexed every 1 January to consumer prices (NBB, "Tarieven neerlegging", citing KB WVV art. 3:70).
 
-### Late filing surcharge (tarieftoeslag)
+#### Late filing surcharge (tarieftoeslag)
 
 A company that files more than one month after the 7-month deadline pays a contribution to the cost of detecting companies in difficulty, collected by the NBB with the filing cost (WVV art. 3:13). The base amounts in the law (EUR 400 / 600 / 1,200, or EUR 120 / 180 / 360 for small companies filing the abbreviated or micro model) are indexed every 1 January. The 2026 amounts:
 
@@ -298,7 +333,50 @@ A company that files more than one month after the 7-month deadline pays a contr
 
 The surcharge can be refunded in case of force majeure on request within 18 months after year-end (WVV art. 3:13), and the company can appeal against it (NBB). The 2025 version's table (EUR 120 rising to EUR 1,200, EUR 600 "each subsequent month") was wrong: the surcharge is a single amount fixed by the month of filing, not a monthly charge.
 
-### Worked example: late filing by a small company
+#### Other sanctions for not filing
+
+- **Civil sanction.** Damage suffered by third parties is presumed to result from late approval or filing, unless the company proves otherwise (WVV art. 3:1 § 1, 3:10, third paragraph).
+- **Striking off.** The KBO / BCE may strike off a company that has not filed for at least three consecutive financial years; filing the missing accounts reverses it (NBB, citing WER art. III.42 § 1, 4°).
+- **Judicial dissolution.** The enterprise court may dissolve a company that has not filed its accounts, at the request of any interested party or the public prosecutor, unless the situation is put right during the proceedings (NBB, WVV art. 2:74 § 1: the court may instead set a period to put it right and send the file back to the chamber for enterprises in difficulty).
+
+### Step 8. Pay the filing cost and any surcharge
+
+The NBB collects the filing cost and any late filing surcharge together (WVV art. 3:13). Use the 2026 tables above; the amounts are indexed every 1 January. A refund of the surcharge for force majeure must be asked for within 18 months after year-end (WVV art. 3:13), and the company can appeal (NBB, "Tarieftoeslag en beroepsprocedure").
+
+### Step 9. Appoint a statutory auditor where required
+
+#### Mandatory appointment of a commissaris (statutory auditor)
+
+- **Who needs one.** The audit chapter (WVV art. 3:72 and following) applies to every company except: general and limited partnerships and EEIGs whose unlimited partners are all natural persons; unlisted small companies (art. 1:24), each company judged separately, unless it belongs to a group that must prepare and publish consolidated accounts; and certain recognised agricultural partnerships (WVV art. 3:72). Insurers and credit institutions (art. 3:1 § 3, 1° and 2°), the institutions in art. 1:12, 5° (central securities depositories and their support institutions) and stockbroking firms are always covered (same article, opening words). The small-company exemption in 2° covers unlisted small companies, and small companies that are not public-interest entities under art. 1:12, 2° (securities admitted to a regulated market).
+- **In practice:** a large company (more than one small criterion exceeded, two years running) must appoint a commissaris.
+
+**Large company test for audit** (WVV art. 1:24 § 1)
+
+| Criterion | Limit (more than one exceeded = large) |
+| --- | --- |
+| Net turnover excl. VAT | EUR 11,250,000 |
+| Balance sheet total | EUR 6,000,000 |
+| Average FTE | 50 |
+
+- **Two-year rule.** The size change applies from the year after it happens for the second consecutive year (art. 1:24 § 2).
+
+#### Companies with a works council
+
+- In every company that must set up a works council (ondernemingsraad) under the Law of 20 September 1948, one or more bedrijfsrevisoren are appointed for the information tasks towards the works council (WVV art. 3:83). Where no commissaris is appointed, the shareholders' meeting appoints a bedrijfsrevisor for those tasks (art. 3:93). In such a company the auditor can only be dismissed on the proposal or with the agreement of the works council (art. 3:91).
+
+#### Auditor qualification
+
+- **Bedrijfsrevisor / réviseur d'entreprises.** The commissaris is appointed by the shareholders' meeting from among the auditors in the public register of bedrijfsrevisoren or registered audit firms (WVV art. 3:58 § 1).
+
+#### Audit mandate
+
+- **Term.** A renewable term of three years (WVV art. 3:61 § 1).
+- **Dismissal.** During the mandate only for legal reasons, on pain of damages; a disagreement on an accounting treatment or audit procedure is not in itself a legal reason (WVV art. 3:66 § 1).
+- **No auditor appointed.** Each shareholder then has the investigation powers of an auditor individually, and may be assisted by a certified accountant (WVV art. 3:101).
+
+## Worked cases
+
+### Case 1: late filing by a small company
 
 A small BV with a 31 December 2025 year-end approves its abbreviated accounts on 25 June 2026 but files the XBRL file only on 15 October 2026. The 7-month deadline was 31 July 2026. The surcharge starts on 1 September 2026 (first day of the 9th month); 15 October falls in the 10th month (October), so the small-company surcharge is EUR 227. The NBB collects EUR 89.40 + EUR 227 = EUR 316.40.
 
@@ -317,66 +395,60 @@ expected:
   total_paid: 316.40
 ```
 
-### Other sanctions for not filing
+### Case 2: size class with the two-year rule
 
-- **Civil sanction.** Damage suffered by third parties is presumed to result from late approval or filing, unless the company proves otherwise (WVV art. 3:1 § 1, 3:12 § 3).
-- **Striking off.** The KBO / BCE may strike off a company that has not filed for at least three consecutive financial years; filing the missing accounts reverses it (NBB, citing WER art. III.42 § 1, 4°).
-- **Judicial dissolution.** The enterprise court may dissolve a company that has not filed its accounts, at the request of any interested party or the public prosecutor, unless the situation is put right during the proceedings (NBB, citing WVV art. 2:73).
+A BV (not a parent or subsidiary) closes 31 December. 2024: turnover EUR 1,000,000, balance sheet EUR 400,000, 8 FTE. 2025: turnover EUR 1,100,000, balance sheet EUR 500,000, 9 FTE. Against the micro limits it exceeds one criterion in 2024 (turnover) and two in 2025 (turnover and balance sheet). One year of exceeding more than one criterion does not change the class: the change takes effect only after two consecutive years, from the year after the second. So the 2025 accounts may still use the micro scheme; if 2026 again exceeds two micro criteria, the 2027 accounts use at least the abbreviated scheme. Against the small limits it exceeds none, so no statutory auditor.
 
-## Section 10 -- Audit Requirements
+```oa-check
+name: Belgium size test against micro and small limits, 2025
+inputs:
+  turnover: 1100000
+  balance_sheet: 500000
+  fte: 9
+  micro_turnover: 900000
+  micro_balance: 450000
+  micro_fte: 10
+  small_turnover: 11250000
+  small_balance: 6000000
+  small_fte: 50
+steps:
+  - micro_criteria_exceeded: clamp(ceil((turnover - micro_turnover) / turnover), 0, 1) + clamp(ceil((balance_sheet - micro_balance) / balance_sheet), 0, 1) + clamp(ceil((fte - micro_fte) / fte), 0, 1)
+  - small_criteria_exceeded: clamp(ceil((turnover - small_turnover) / turnover), 0, 1) + clamp(ceil((balance_sheet - small_balance) / balance_sheet), 0, 1) + clamp(ceil((fte - small_fte) / fte), 0, 1)
+expected:
+  micro_criteria_exceeded: 2
+  small_criteria_exceeded: 0
+```
 
-### Mandatory appointment of a commissaris (statutory auditor)
+Two micro criteria exceeded in 2025 (the first such year), none of the small criteria: still micro for 2025 under the two-year rule, never large.
 
-- **Who needs one.** The audit chapter (WVV art. 3:72 and following) applies to every company except: general and limited partnerships and EEIGs whose unlimited partners are all natural persons; unlisted small companies (art. 1:24), each company judged separately, unless it belongs to a group that must prepare and publish consolidated accounts; and certain recognised agricultural partnerships (WVV art. 3:72). Insurers and credit institutions (art. 3:1 § 3, 1° and 2°), the institutions in art. 1:12, 5° (central securities depositories and their support institutions) and stockbroking firms are always covered (same article, opening words). The small-company exemption in 2° covers unlisted small companies, and small companies that are not public-interest entities under art. 1:12, 2° (securities admitted to a regulated market).
-- **In practice:** a large company (more than one small criterion exceeded, two years running) must appoint a commissaris.
+## When to refuse or refer
 
-**Large company test for audit** (WVV art. 1:24 § 1)
-
-| Criterion | Limit (more than one exceeded = large) |
-| --- | --- |
-| Net turnover excl. VAT | EUR 11,250,000 |
-| Balance sheet total | EUR 6,000,000 |
-| Average FTE | 50 |
-
-- **Two-year rule.** The size change applies from the year after it happens for the second consecutive year (art. 1:24 § 2).
-
-### Companies with a works council
-
-- In every company that must set up a works council (ondernemingsraad) under the Law of 20 September 1948, one or more bedrijfsrevisoren are appointed for the information tasks towards the works council (WVV art. 3:83). Where no commissaris is appointed, the shareholders' meeting appoints a bedrijfsrevisor for those tasks (art. 3:93). In such a company the auditor can only be dismissed on the proposal or with the agreement of the works council (art. 3:91).
-
-### Auditor qualification
-
-- **Bedrijfsrevisor / réviseur d'entreprises.** The commissaris is appointed by the shareholders' meeting from among the auditors in the public register of bedrijfsrevisoren or registered audit firms (WVV art. 3:58 § 1).
-
-### Audit mandate
-
-- **Term.** A renewable term of three years (WVV art. 3:61 § 1).
-- **Dismissal.** During the mandate only for legal reasons, on pain of damages; a disagreement on an accounting treatment or audit procedure is not in itself a legal reason (WVV art. 3:66 § 1).
-- **No auditor appointed.** Each shareholder then has the investigation powers of an auditor individually, and may be assisted by a certified accountant (WVV art. 3:101).
+- Consolidated accounts and IFRS: this Guide gives the obligation and exemptions only; refer the consolidation itself to a Belgian adviser.
+- Credit institutions, insurers, investment firms, health insurers: special schemes and PDF filing; refer.
+- Associations and foundations (VZW / ASBL): different size criteria and filing rules; out of scope here.
+- The audit itself: only a bedrijfsrevisor registered in the public register may act as statutory auditor.
+- Disputes over a surcharge already charged, or a court dissolution procedure: refer to a Belgian adviser.
+- Corporate tax on the result: be-corporate-tax.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and what was read | Official URL | Read on |
 | --- | --- | --- |
-| Companies and Associations Code (WVV), art. 1:24 to 1:26, 3:1 to 3:17, 3:23 to 3:26, 3:58 to 3:101 (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel | 2026-10-30 |
-| Royal Decree of 29 April 2019 executing the WVV (valuation rules art. 3:21 to 3:55, schemes art. 3:80 to 3:88, filing art. 3:66 to 3:75, annexes 3 and 4) (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel | 2026-10-30 |
-| NBB, Tarieftoeslag en beroepsprocedure (surcharges from 1 January 2026, sanctions) | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/hoeveel-betalen/tarieftoeslag-en-beroepsprocedure | 2026-10-30 |
-| NBB, Tarieven neerlegging (indexation) | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/hoeveel-betalen/tarieven-neerlegging | 2026-10-30 |
-| NBB, history of filing costs for companies, 2026 (PDF) | https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf | 2026-10-30 |
-| NBB, Wanneer neerleggen | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/wanneer-neerleggen | 2026-10-30 |
-| NBB, Welk formaat | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welk-formaat | 2026-10-30 |
-| NBB, Welke taal | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welke-taal | 2026-10-30 |
-| NBB, Andere neer te leggen documenten | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wat-neerleggen/andere-neer-te-leggen-documenten | 2026-10-30 |
-| NBB, Belgische vennootschappen (who files, liquidation) | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wie-moet-neerleggen/belgische-vennootschappen | 2026-10-30 |
-| Law of 28 March 2024 (justice digitalisation and various provisions), art. 147 to 149 (size criteria) and 170 (first financial year) | https://www.ejustice.just.fgov.be/eli/wet/2024/03/28/2024002950/staatsblad | 2026-10-30 |
-| EU Regulation 1606/2002 on international accounting standards, art. 4 | https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32002R1606 | 2026-10-30 |
+| Companies and Associations Code (WVV), Justel consolidated. Read for art. 1:24 to 1:26 (size limits), 2:74 (dissolution for not filing), 3:1, 3:10 (30 days and 7 months), 3:11, 3:12, 3:13 (contribution amounts, indexation, 18-month refund), 3:14, 3:23 to 3:26, 3:58 to 3:101 | https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel | 2026-11-14 |
+| Royal Decree of 29 April 2019 executing the WVV, Justel consolidated. Read for valuation rules art. 3:11 to 3:55, schemes art. 3:80 to 3:88, filing art. 3:66 to 3:75 and annexes 3 and 4 | https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel | 2026-11-14 |
+| NBB, Tarieftoeslag en beroepsprocedure. Read for the 2026 surcharges EUR 151 / 227 / 453 and EUR 504 / 755 / 1,510 and the appeal | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/hoeveel-betalen/tarieftoeslag-en-beroepsprocedure | 2026-11-14 |
+| NBB, Tarieven neerlegging. Read for the yearly indexation of filing costs | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/hoeveel-betalen/tarieven-neerlegging | 2026-11-14 |
+| NBB, history of filing costs for companies, 2026 (PDF). Read for the 2026 XBRL and PDF costs per model | https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf | 2026-11-14 |
+| NBB, Wanneer neerleggen. Read on 2026-10-30 for the filing deadline; reopened 2026-11-14 but nbb.be refused script access to this page | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/wanneer-neerleggen | 2026-10-30 |
+| NBB, Welk formaat. Read for XBRL or PDF, the 99% XBRL share, PDF-only filers and the 50 MB limit | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welk-formaat | 2026-11-14 |
+| NBB, Welke taal. Read for the language rule and the English translation | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wanneer-en-hoe-neerleggen/welke-taal | 2026-11-14 |
+| NBB, Andere neer te leggen documenten. Read for the other documents filed with the accounts | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wat-neerleggen/andere-neer-te-leggen-documenten | 2026-11-14 |
+| NBB, Belgische vennootschappen. Read on 2026-10-30 for who files, liquidation and striking off; reopened 2026-11-14 but nbb.be refused script access to this page | https://www.nbb.be/nl/balanscentrale/opmaken-en-neerleggen/wie-moet-neerleggen/belgische-vennootschappen | 2026-10-30 |
+| Law of 28 March 2024, art. 147 to 149 and 170. Read for the size criteria amounts and their first financial year | https://www.ejustice.just.fgov.be/eli/wet/2024/03/28/2024002950/staatsblad | 2026-11-14 |
+| EU Regulation 1606/2002. Read for art. 4 (IFRS for listed groups) | https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32002R1606 | 2026-11-14 |
 
-Not yet confirmed: the full item lists of the notes under KB WVV art. 3:82 and 3:85 (only the micro list in art. 3:88 was read in full); how foreign-currency items are translated and how unrealised exchange gains and losses are treated in the company accounts (CBN guidance not read); the works-council threshold of 100 workers (the Law of 20 September 1948 was not read); whether the social balance sheet must be filed by companies with no staff; the 2025 version's statements that a correction can be filed within 2 months and that the accounts may be filed in German in the German-speaking area (the language rule was read only as "the language of the language area").
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: the NBB pages on who files and the deadline (nbb.be refused script access today; figures there rest on the WVV text read today); the full item lists of the notes under KB WVV art. 3:82 and 3:85 (only the micro list in art. 3:88 was read in full); how foreign-currency items are translated and how unrealised exchange gains and losses are treated in the company accounts (CBN guidance not read); the works-council threshold of 100 workers (the Law of 20 September 1948 was not read); whether the social balance sheet must be filed by companies with no staff; the 2025 version's statements that a correction can be filed within 2 months and that the accounts may be filed in German in the German-speaking area (the language rule was read only as "the language of the language area").
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

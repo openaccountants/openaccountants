@@ -1,10 +1,10 @@
 ---
 name: spain-bookkeeping
 description: Use this skill whenever asked about bookkeeping, chart of accounts, Plan General de Contabilidad (PGC), financial statements, P&L format, balance sheet layout, bank reconciliation, expense classification, asset capitalisation, or day-to-day accounting for a Spanish entity. Trigger on phrases like "PGC", "Plan General de Contabilidad", "cuadro de cuentas", "chart of accounts Spain", "balance", "cuenta de pérdidas y ganancias", "PYMES accounting", "microempresa Spain", "capitalise or expense Spain", "amortización", "depreciation Spain", "bank reconciliation Spain", "autónomo bookkeeping", "bookkeeping Spain", or any question about recording transactions, classifying expenses, or preparing accounts under Spanish law. ALWAYS read this skill before touching any bookkeeping work for Spain.
-version: 1.0
+version: 2.0
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-09-23
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -12,6 +12,7 @@ depends_on:
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: bookkeeping
 ---
 
@@ -19,11 +20,13 @@ domain: bookkeeping
 
 Which books a Spanish autónomo or company must keep, how they are legalised at the Registro Mercantil, how long they are kept, the account structure of the Plan General de Contabilidad, the simplifications for a small company, how expenses and assets are classified and what an invoice and a payment must carry. Figures are for tax year 2026. All figures come from consolidated Spanish statutes and from Agencia Tributaria pages current at the date of this refresh; the simplified depreciation table comes from the Agencia Tributaria Manual de actividades económicas, the same page the `es-income-tax` Guide uses.
 
-## Spain bookkeeping: Guide version 2.0
+## Scope
+
+**Spain bookkeeping: Guide version 2.0.** Which books a Spanish autónomo or company keeps for 2026, the chart of accounts, expense and asset classification, the cash payment limit and the year-end clock. Every figure row below carries its official URL. The VAT registers belong to `es-vat-return`; the annual accounts in detail to `spain-financial-statements`.
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Spain (Reino de España) |
 | Currency | EUR |
@@ -35,7 +38,7 @@ Which books a Spanish autónomo or company must keep, how they are legalised at 
 | Extra books, a company | A book or books of actas; a libro registro de socios in an SL, or a libro registro de acciones nominativas in an SA |
 | Books, autónomo in estimación directa simplificada | Libro registro de ventas e ingresos, libro registro de compras y gastos, libro registro de bienes de inversión. A professional keeps a book of ingresos, one of gastos, one of bienes de inversión and one of provisiones de fondos y suplidos |
 | Standard chart of accounts | The cuadro de cuentas in part four of the Plan General de Contabilidad, nine groups. The accounting movements in part five are not binding, and neither is the numbering and naming of the accounts in part four, except where either carries a recognition or measurement criterion |
-| Record retention | Six years from the last entry under the Código de Comercio; four years for tax, being the general prescription period |
+| Record retention | Six years from the last entry under the Código de Comercio art 30 (https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627); four years for tax, being the general prescription period of LGT art 66 (https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) |
 
 ## Which books each taxpayer must keep
 
@@ -43,12 +46,11 @@ The duty follows two separate laws at once. The Código de Comercio binds anyone
 
 ### The autónomo in estimación directa simplificada
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Prior-year turnover under which the simplified direct estimation applies | EUR 600,000 | "no supere los 600.000 euros anuales en el año inmediato anterior" |
-| Deductible provisions and hard-to-justify expenses together, as a share of net income before this item | 5% | "se cuantificará aplicando el porcentaje del 5 por ciento sobre el rendimiento neto" |
-| Yearly ceiling on that same item | EUR 2,000 | "sin que la cuantía resultante pueda superar 2.000 euros anuales" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Prior-year turnover under which the simplified direct estimation applies | EUR 600,000 | "no supere los 600.000 euros anuales en el año inmediato anterior" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Deductible provisions and hard-to-justify expenses together, as a share of net income before this item | 5% | "se cuantificará aplicando el porcentaje del 5 por ciento sobre el rendimiento neto" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Yearly ceiling on that same item | EUR 2,000 | "sin que la cuantía resultante pueda superar 2.000 euros anuales" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
 
 - **A business activity keeps three registers.** Article 68.4 of Real Decreto 439/2007 sends the simplified filer to the list in article 68.3: a libro registro de ventas e ingresos, a libro registro de compras y gastos and a libro registro de bienes de inversión. There is no libro diario and no double entry.
 - **A professional activity keeps four.** Article 68.5 applies to a professional in either modality of direct estimation: libro registro de ingresos, libro registro de gastos, libro registro de bienes de inversión and libro registro de provisiones de fondos y suplidos.
@@ -86,10 +88,9 @@ The duty follows two separate laws at once. The Código de Comercio binds anyone
 
 The VAT registers are a separate set, kept under the Reglamento del IVA, and they are the `es-vat-return` Guide's subject. Article 62.1 of Real Decreto 1624/1992 lists four: a libro registro de facturas expedidas, a libro registro de facturas recibidas, a libro registro de bienes de inversión and a libro registro de determinadas operaciones intracomunitarias. The simplified regime, the farming regime and the equivalence surcharge regime are outside that general duty, subject to what their own rules say. Do not answer a question about the content, the deadlines or the electronic supply of these registers from this Guide; read `es-vat-return`.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
-| Previous calendar year turnover above which the VAT period is the month, which is also what pulls a business into supplying the registers electronically | EUR 6,010,121.04 | "hubiese excedido durante el año natural inmediato anterior de 6.010.121,04 euros" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Previous calendar year turnover above which the VAT period is the month, which is also what pulls a business into supplying the registers electronically | EUR 6,010,121.04 | "hubiese excedido durante el año natural inmediato anterior de 6.010.121,04 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
 
 ## Legalisation at the Registro Mercantil
 
@@ -113,13 +114,12 @@ Three deadlines run one after the other, and only the last one carries a fine.
 
 **The fine for filing late (article 283 of the Ley de Sociedades de Capital)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
-| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" |
-| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 
 - The fine is set by the Instituto de Contabilidad y Auditoría de Cuentas, sized by the company's total assets and sales figure for the last year declared to the tax administration. Where the accounts were filed before the penalty procedure started, the fine is imposed at its minimum grade and cut by fifty per cent. These infringements prescribe in three years.
 
@@ -310,12 +310,11 @@ There is one Spanish election that changes all of this for VAT only: the cash cr
 
 ### IVA Rates (2026)
 
-| Rate | Application | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| 21% | The general rate. The default for any taxable supply where nothing else applies | "El Impuesto se exigirá al tipo del 21 por ciento" |
-| 10% | The reduced rate. Article 91.Uno lists it: food and drink outside the super-reduced list, water, passenger transport, hotels, restaurants and catering, the first transfer of new housing, qualifying home renovation | "Se aplicará el tipo del 10 por ciento a las operaciones siguientes" |
-| 4% | The super-reduced rate. Article 91.Dos lists it: plain bread, milk, cheese, eggs, fruit, vegetables, pulses, tubers and cereals, olive oil, books, newspapers, medicines for human use, social housing | "Se aplicará el tipo del 4 por ciento a las operaciones siguientes" |
+| Rate | Application | Note | Source |
+| --- | --- | --- |---|
+| 21% | The general rate. The default for any taxable supply where nothing else applies | "El Impuesto se exigirá al tipo del 21 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 10% | The reduced rate. Article 91.Uno lists it: food and drink outside the super-reduced list, water, passenger transport, hotels, restaurants and catering, the first transfer of new housing, qualifying home renovation | "Se aplicará el tipo del 10 por ciento a las operaciones siguientes" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 4% | The super-reduced rate. Article 91.Dos lists it: plain bread, milk, cheese, eggs, fruit, vegetables, pulses, tubers and cereals, olive oil, books, newspapers, medicines for human use, social housing | "Se aplicará el tipo del 4 por ciento a las operaciones siguientes" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 
 **Exempt is not a rate.** A supply exempt under article 20 of Ley 37/1992, such as medical care, education, insurance, most financial services or residential letting, carries no output VAT and gives no right to deduct the input VAT behind it. Recording it as a zero rate will produce the wrong deductible proportion. Exports and intra-Community supplies are a different case again: exempt, but with the right to deduct. Which box each of these goes in is in `es-vat-return`.
 
@@ -323,10 +322,9 @@ There is one Spanish election that changes all of this for VAT only: the cash cr
 
 ### What the corporate tax law refuses, and the one thing it caps
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Client and supplier entertainment (atenciones a clientes o proveedores), deductible up to this share of the net turnover of the tax period | 1% | "los gastos por atenciones a clientes o proveedores serán deducibles con el límite del 1 por ciento del importe neto de la cifra de negocios del período impositivo" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Client and supplier entertainment (atenciones a clientes o proveedores), deductible up to this share of the net turnover of the tax period | 1% | "los gastos por atenciones a clientes o proveedores serán deducibles con el límite del 1 por ciento del importe neto de la cifra de negocios del período impositivo" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 
 Article 15 of Ley 27/2014 lists what is never a deductible expense: anything that is a return on own funds; the corporate tax charge and the Impuesto Complementario; criminal and administrative fines and penalties, the surcharges of the enforcement period and the surcharge for a late return filed without a prior demand; gambling losses; gifts and liberalities; expenses of conduct contrary to the law; and services corresponding to operations with persons or entities in a territory classed as a tax haven, unless the taxpayer proves the operation really happened. The same article says that client and supplier entertainment, customary staff expenses, promotion of sales, and anything correlated with income are **not** gifts or liberalities, so they are deductible; entertainment is then capped by the figure in the table.
 
@@ -334,36 +332,33 @@ A self-employed person is inside these rules too. Article 28.1 of Ley 35/2006 de
 
 ### Special self-employed expense rules
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Share of the home supplies bill that is deductible, applied to the area proportion, unless another share is proved | 30% | "en el porcentaje resultante de aplicar el 30 por ciento a la proporción existente entre los metros cuadrados" |
-| Health insurance premium ceiling, per person covered | EUR 500 | "El límite máximo de deducción será de 500 euros por cada una de las personas" |
-| The same ceiling where that person has a disability | EUR 1,500 | "o de 1.500 euros por cada una de ellas con discapacidad" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Share of the home supplies bill that is deductible, applied to the area proportion, unless another share is proved | 30% | "en el porcentaje resultante de aplicar el 30 por ciento a la proporción existente entre los metros cuadrados" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Health insurance premium ceiling, per person covered | EUR 500 | "El límite máximo de deducción será de 500 euros por cada una de las personas" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| The same ceiling where that person has a disability | EUR 1,500 | "o de 1.500 euros por cada una de ellas con discapacidad" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 
 - The home supplies share is applied to the proportion the area used for the activity bears to the total area of the home. It is a default, not a cap: a higher or a lower percentage is allowed where it is proved.
 - The health cover may include the taxpayer, their spouse and children under twenty five living with them. The ceiling is per person, per year.
 
 ### Own meal costs while working
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Per day in Spain, with an overnight stay | EUR 53.34 | "Por gastos de manutención, 53,34 euros diarios, si corresponden a desplazamiento dentro del territorio español" |
-| Per day abroad, with an overnight stay | EUR 91.35 | "o 91,35 euros diarios, si corresponden a desplazamientos a territorio extranjero" |
-| Per day in Spain, no overnight stay | EUR 26.67 | "las asignaciones para gastos de manutención que no excedan de 26,67" |
-| Per day abroad, no overnight stay | EUR 48.08 | "26,67 ó 48,08 euros diarios" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Per day in Spain, with an overnight stay | EUR 53.34 | "Por gastos de manutención, 53,34 euros diarios, si corresponden a desplazamiento dentro del territorio español" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Per day abroad, with an overnight stay | EUR 91.35 | "o 91,35 euros diarios, si corresponden a desplazamientos a territorio extranjero" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Per day in Spain, no overnight stay | EUR 26.67 | "las asignaciones para gastos de manutención que no excedan de 26,67" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Per day abroad, no overnight stay | EUR 48.08 | "26,67 ó 48,08 euros diarios" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
 
 **Both conditions must hold, not either.** The meal must be taken in a restaurant or hospitality establishment AND paid by electronic means. A cash receipt fails the test even if the amount is inside the limit.
 
 ### The payment has to be traceable, and above a limit it may not be cash
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416 |
-| Amount at or above which an operation with a business or professional on either side may not be paid in cash | EUR 1,000 | "No podrán pagarse en efectivo las operaciones, en las que alguna de las partes intervinientes actúe en calidad de empresario o profesional, con un importe igual o superior a 1.000 euros" |
-| The same limit where the payer is an individual who proves they are not tax resident in Spain and is not acting as a business or professional | EUR 10,000 | "el citado importe será de 10.000 euros o su contravalor en moneda extranjera cuando el pagador sea una persona física" |
-| Fine, as a share of the amount paid in cash | 25% | "La sanción consistirá en multa pecuniaria proporcional del 25 por ciento de la base de la sanción" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Amount at or above which an operation with a business or professional on either side may not be paid in cash | EUR 1,000 | "No podrán pagarse en efectivo las operaciones, en las que alguna de las partes intervinientes actúe en calidad de empresario o profesional, con un importe igual o superior a 1.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416 |
+| The same limit where the payer is an individual who proves they are not tax resident in Spain and is not acting as a business or professional | EUR 10,000 | "el citado importe será de 10.000 euros o su contravalor en moneda extranjera cuando el pagador sea una persona física" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416 |
+| Fine, as a share of the amount paid in cash | 25% | "La sanción consistirá en multa pecuniaria proporcional del 25 por ciento de la base de la sanción" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416 |
 
 - **Splitting does not help.** The amounts of all the operations or payments into which the delivery of goods or the supply of services has been broken up are added together.
 - **Both sides are liable.** Payer and receiver answer jointly and severally, and the Agencia Tributaria may proceed against either or both.
@@ -371,11 +366,10 @@ A self-employed person is inside these rules too. Article 28.1 of Ley 35/2006 de
 
 ### Invoices
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
-| Amount, VAT included, up to which a simplified invoice may be issued for any operation | EUR 400 | "Cuando su importe no exceda de 400 euros, Impuesto sobre el Valor Añadido incluido" |
-| Amount, VAT included, up to which a simplified invoice may be issued in the listed cases, retail sales among them | EUR 3,000 | "cuando su importe no exceda de 3.000 euros, Impuesto sobre el Valor Añadido incluido" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Amount, VAT included, up to which a simplified invoice may be issued for any operation | EUR 400 | "Cuando su importe no exceda de 400 euros, Impuesto sobre el Valor Añadido incluido" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
+| Amount, VAT included, up to which a simplified invoice may be issued in the listed cases, retail sales among them | EUR 3,000 | "cuando su importe no exceda de 3.000 euros, Impuesto sobre el Valor Añadido incluido" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
 
 A full invoice under article 6 of Real Decreto 1619/2012 carries the number and, where used, the series, with correlative numbering inside each series; the date of issue; the full name or company name of both the issuer and the customer; the tax identification number of the issuer, and of the customer in the cases the article lists, which include an exempt intra-Community supply of goods and any operation where the customer is the taxable person; the address of both; the description of the operation with the data needed to determine the taxable amount and its unit price; the rate applied; the VAT charged, shown separately; the date of the operation where it differs from the date of issue; and the wording the article requires where the operation is exempt, reverse charged, under a margin scheme or on the cash criterion.
 
@@ -410,11 +404,10 @@ No figure appears in this table. Where a limit or a rate matters, it is in one o
 
 ### Capitalisation Rules
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Unit value at or below which a new tangible fixed asset may be depreciated freely | EUR 300 | "Los elementos del inmovilizado material nuevos, cuyo valor unitario no exceda de 300 euros" |
-| Ceiling on that free depreciation for the tax period | EUR 25,000 | "hasta el límite de 25.000 euros referido al período impositivo" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Unit value at or below which a new tangible fixed asset may be depreciated freely | EUR 300 | "Los elementos del inmovilizado material nuevos, cuyo valor unitario no exceda de 300 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Ceiling on that free depreciation for the tax period | EUR 25,000 | "hasta el límite de 25.000 euros referido al período impositivo" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 
 - **It is article 12.3.e of Ley 27/2014, not a small-company rule.** The provision sits in the general depreciation article and is open to any corporate taxpayer. The live version of this Guide attributed it to article 102 and restricted it to empresas de reducida dimensión. Article 102 is a different relief, tied to an increase in the average headcount.
 - **The asset must be NEW and tangible.** Second-hand equipment and intangibles are outside this letter.
@@ -426,51 +419,49 @@ No figure appears in this table. Where a limit or a rate matters, it is in one o
 
 This is the whole official table in article 12.1.a of Ley 27/2014. It applies to a company, and to an autónomo in the normal modality of direct estimation.
 
-| Asset type | Maximum linear coefficient | Maximum period, years |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Obra civil general | 2% | 100 |
-| Pavimentos | 6% | 34 |
-| Infraestructuras y obras mineras | 7% | 30 |
-| Centrales hidráulicas | 2% | 100 |
-| Centrales nucleares | 3% | 60 |
-| Centrales de carbón | 4% | 50 |
-| Centrales renovables | 7% | 30 |
-| Otras centrales | 5% | 40 |
-| Edificios industriales | 3% | 68 |
-| Terrenos dedicados exclusivamente a escombreras | 4% | 50 |
-| Almacenes y depósitos, gaseosos, líquidos y sólidos | 7% | 30 |
-| Edificios comerciales, administrativos, de servicios y viviendas | 2% | 100 |
-| Subestaciones, redes de transporte y distribución de energía | 5% | 40 |
-| Cables | 7% | 30 |
-| Resto instalaciones | 10% | 20 |
-| Maquinaria | 12% | 18 |
-| Equipos médicos y asimilados | 15% | 14 |
-| Locomotoras, vagones y equipos de tracción | 8% | 25 |
-| Buques, aeronaves | 10% | 20 |
-| Elementos de transporte interno | 10% | 20 |
-| Elementos de transporte externo | 16% | 14 |
-| Autocamiones | 20% | 10 |
-| Mobiliario | 10% | 20 |
-| Lencería | 25% | 8 |
-| Cristalería | 50% | 4 |
-| Útiles y herramientas | 25% | 8 |
-| Moldes, matrices y modelos | 33% | 6 |
-| Otros enseres | 15% | 14 |
-| Equipos electrónicos | 20% | 10 |
-| Equipos para procesos de información | 25% | 8 |
-| Sistemas y programas informáticos | 33% | 6 |
-| Producciones cinematográficas, fonográficas, vídeos y series audiovisuales | 33% | 6 |
-| Otros elementos | 10% | 20 |
+| Asset type | Maximum linear coefficient | Maximum period, years | Source |
+| --- | --- | --- |---|
+| Obra civil general | 2% | 100 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Pavimentos | 6% | 34 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Infraestructuras y obras mineras | 7% | 30 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Centrales hidráulicas | 2% | 100 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Centrales nucleares | 3% | 60 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Centrales de carbón | 4% | 50 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Centrales renovables | 7% | 30 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Otras centrales | 5% | 40 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Edificios industriales | 3% | 68 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Terrenos dedicados exclusivamente a escombreras | 4% | 50 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Almacenes y depósitos, gaseosos, líquidos y sólidos | 7% | 30 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Edificios comerciales, administrativos, de servicios y viviendas | 2% | 100 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Subestaciones, redes de transporte y distribución de energía | 5% | 40 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Cables | 7% | 30 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Resto instalaciones | 10% | 20 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Maquinaria | 12% | 18 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Equipos médicos y asimilados | 15% | 14 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Locomotoras, vagones y equipos de tracción | 8% | 25 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Buques, aeronaves | 10% | 20 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Elementos de transporte interno | 10% | 20 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Elementos de transporte externo | 16% | 14 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Autocamiones | 20% | 10 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Mobiliario | 10% | 20 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Lencería | 25% | 8 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Cristalería | 50% | 4 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Útiles y herramientas | 25% | 8 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Moldes, matrices y modelos | 33% | 6 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Otros enseres | 15% | 14 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Equipos electrónicos | 20% | 10 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Equipos para procesos de información | 25% | 8 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Sistemas y programas informáticos | 33% | 6 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Producciones cinematográficas, fonográficas, vídeos y series audiovisuales | 33% | 6 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Otros elementos | 10% | 20 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 
 - **Land is not in the table and is not depreciated.** Split the land out of the purchase price of a building before applying the building coefficient.
 - **The coefficient is a maximum and the period is a maximum.** Any figure between the two is accepted as effective depreciation.
 - **There are four other accepted methods** in article 12.1: a constant percentage on the written down value, the sum of the digits, a plan agreed with the tax administration, and any amount the taxpayer justifies. Buildings, furniture and fittings may not use the constant percentage or the digits method.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Floor under the constant percentage method | 11% | "El porcentaje constante no podrá ser inferior al 11 por ciento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Floor under the constant percentage method | 11% | "El porcentaje constante no podrá ser inferior al 11 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 
 - An intangible asset is amortised over its useful life. Where that cannot be estimated reliably, and for goodwill, the deduction is capped each year at one twentieth of the amount (article 12.2).
 
@@ -481,11 +472,10 @@ The regime is open where the net turnover of the immediately preceding tax perio
 - **New tangible assets, property investments and intangible assets** put at the taxpayer's disposal in a period that meets the test may be depreciated at the coefficient that results from multiplying by two the maximum linear coefficient in the official tables (article 103.1). The "new" condition is written for the tangible assets and the property investments; the article does not repeat it for the intangibles.
 - **The relief runs on after the company outgrows it.** Article 101.4 keeps the incentives for the three immediately following tax periods after the one in which the turnover reaches that figure, provided the conditions were met in that period and in the two before it.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Net turnover of the immediately preceding tax period below which the reduced-dimension incentives apply | EUR 10 million | "sea inferior a 10 millones de euros" |
-| Intangibles within article 13.3, deductible at this share of the amount that article gives | 150% | "podrán deducirse en un 150 por ciento del importe que resulte de aplicar dicho apartado" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Net turnover of the immediately preceding tax period below which the reduced-dimension incentives apply | EUR 10 million | "sea inferior a 10 millones de euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
+| Intangibles within article 13.3, deductible at this share of the amount that article gives | 150% | "podrán deducirse en un 150 por ciento del importe que resulte de aplicar dicho apartado" | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 
 - Article 102 is a different relief and is often confused with this one: free depreciation of new tangible assets and property investments, conditional on the total average headcount over the twenty four months from the start of the tax period in which the assets come into operation rising against the average of the twelve months before, and the rise being held for another twenty four months, with the qualifying investment limited by a per-head amount in the article. Failing the headcount test means paying back the tax on the excess with interest.
 
@@ -495,19 +485,18 @@ An autónomo in the simplified modality does not use the corporate table. Articl
 
 **Tabla de amortización simplificada (Agencia Tributaria, Manual de actividades económicas)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
-| Grupo 1, buildings and other constructions, maximum 68 years | 3% | "Edificios y otras construcciones 3 % 68" |
-| Grupo 2, installations, furniture, fittings and the rest of tangible fixed assets, maximum 20 years | 10% | "Instalaciones, mobiliario, enseres y resto del inmovilizado material 10 % 20" |
-| Grupo 3, machinery, maximum 18 years | 12% | "Maquinaria 12 % 18" |
-| Grupo 4, transport elements, maximum 14 years | 16% | "Elementos de Transporte 16 % 14" |
-| Grupo 5, data processing equipment and computer systems and programs, maximum 10 years | 26% | "sistemas y programas informáticos 26 % 10" |
-| Grupo 6, tools and implements, maximum 8 years | 30% | "y herramientas 30 % 8" |
-| Grupo 7, cattle, pigs, sheep and goats, maximum 14 years | 16% | "Ganado vacuno, porcino, ovino y caprino 16 % 14" |
-| Grupo 8, horses and non-citrus fruit trees, maximum 25 years | 8% | "Ganado equino y frutales no cítricos 8 % 25" |
-| Grupo 9, citrus trees and vines, maximum 50 years | 4% | "Frutales cítricos y viñedos 4 % 50" |
-| Grupo 10, olive groves, maximum 100 years | 2% | "Olivar 2 % 100" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Grupo 1, buildings and other constructions, maximum 68 years | 3% | "Edificios y otras construcciones 3 % 68" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 2, installations, furniture, fittings and the rest of tangible fixed assets, maximum 20 years | 10% | "Instalaciones, mobiliario, enseres y resto del inmovilizado material 10 % 20" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 3, machinery, maximum 18 years | 12% | "Maquinaria 12 % 18" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 4, transport elements, maximum 14 years | 16% | "Elementos de Transporte 16 % 14" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 5, data processing equipment and computer systems and programs, maximum 10 years | 26% | "sistemas y programas informáticos 26 % 10" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 6, tools and implements, maximum 8 years | 30% | "y herramientas 30 % 8" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 7, cattle, pigs, sheep and goats, maximum 14 years | 16% | "Ganado vacuno, porcino, ovino y caprino 16 % 14" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 8, horses and non-citrus fruit trees, maximum 25 years | 8% | "Ganado equino y frutales no cítricos 8 % 25" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 9, citrus trees and vines, maximum 50 years | 4% | "Frutales cítricos y viñedos 4 % 50" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+| Grupo 10, olive groves, maximum 100 years | 2% | "Olivar 2 % 100" | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
 
 - **There is no separate software line.** Computer programs sit in grupo 5 with the hardware, at the grupo 5 rate. This agrees with the `es-income-tax` Guide, which uses the same page.
 - The simplified table has ten groups and is shorter than the corporate table. Do not mix a coefficient from one into the other.
@@ -677,12 +666,11 @@ Also OpenAccountants' own pattern library, not an official classification. Every
 - **Being small does not always save you.** Two independent triggers put a small company back into audit.
 - Source: https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
-| Public subsidies or grants received in a financial year, accumulated, above which the accounts of that year and of the years in which the assisted operations are carried out must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" |
-| Contracts with the public sector in a financial year, accumulated, above which the accounts of that year AND of the following year must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" |
-| Share of the company's net annual turnover those contracts must also exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Public subsidies or grants received in a financial year, accumulated, above which the accounts of that year and of the years in which the assisted operations are carried out must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Contracts with the public sector in a financial year, accumulated, above which the accounts of that year AND of the following year must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Share of the company's net annual turnover those contracts must also exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
 
 - The two contract conditions are cumulative: the accumulated amount AND the share of turnover. The subsidies condition stands on the amount alone.
 - The two triggers cover different periods, and the difference is in the decree's own words. Public contracts catch "las cuentas anuales correspondientes a dicho ejercicio social y las del siguiente a este", that year and the one after it. Subsidies catch that year and the years in which the assisted operations are carried out. Do not read one period across both.
@@ -734,10 +722,19 @@ Also OpenAccountants' own pattern library, not an official classification. Every
 | `spain-financial-statements` | The same annual accounts seen from the filing side: the models, the memoria, the abbreviated forms and the audit. Where that Guide and this one both answer, prefer it for anything after the trial balance and this one for anything before it |
 | `spain-einvoice` | What the invoicing software itself must do: the SIF rules, VERI*FACTU and the business to business mandate. This Guide gives only what an invoice must carry under Real Decreto 1619/2012 |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Yearly depreciation on a let building, on the greater of the two values the article names, excluding the land | 3% | "si no excede del resultado de aplicar el 3 por ciento sobre el mayor de los siguientes valores" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Yearly depreciation on a let building, on the greater of the two values the article names, excluding the land | 3% | "si no excede del resultado de aplicar el 3 por ciento sobre el mayor de los siguientes valores" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+
+## Ask the client first
+
+- **Is the client a company, or an individual?** And if an individual, is the activity a business or a profession, and is it mercantile? Those three answers pick between full double entry, three registers and four registers.
+- **Which modality of direct estimation, and what was last year's turnover?** The simplified modality has a turnover cliff and a different depreciation table. Ask for the figure across all the client's activities together, not just this one.
+- **What are the total assets, the net turnover and the average headcount for each of the last two financial years?** Every plan, model and audit question turns on those three, tested at the close of each of two consecutive years.
+- **Did the company receive public subsidies or public sector contracts in the year?** Either can force an audit on a company that is otherwise under the size test.
+- **Is the client inside a group?** Group figures replace the company's own in every size test.
+- **Have the books been legalised, and were the last accounts filed?** Ask for the registry validation code and the filing receipt. A missed filing accrues a fine for each year of delay and closes the registry sheet.
+- **What is the SL's share capital?** An SL incorporated with capital below three thousand euros has a different and stricter legal reserve rule, and on liquidation its members answer for the shortfall up to that same amount.
 
 ## The method, step by step
 
@@ -750,15 +747,48 @@ Also OpenAccountants' own pattern library, not an official classification. Every
 7. **Close the year on the statutory clock.** Formulate within three months, approve at the ordinary general meeting inside the first six months, file at the Registro Mercantil within the month after approval, and legalise the books telematically within four months of the close under article 18 of [Ley 14/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074). The filing deadline is the one with a fine on it; the amounts are in Section "The annual accounts".
 8. **Archive for the longest period that applies**: six years from the last entry under article 30 of the [Código de Comercio](https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627), four years for tax under article 66 of [Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186), ten years where a loss is still being carried forward.
 
-## Ask the client first
+## Worked cases
 
-- **Is the client a company, or an individual?** And if an individual, is the activity a business or a profession, and is it mercantile? Those three answers pick between full double entry, three registers and four registers.
-- **Which modality of direct estimation, and what was last year's turnover?** The simplified modality has a turnover cliff and a different depreciation table. Ask for the figure across all the client's activities together, not just this one.
-- **What are the total assets, the net turnover and the average headcount for each of the last two financial years?** Every plan, model and audit question turns on those three, tested at the close of each of two consecutive years.
-- **Did the company receive public subsidies or public sector contracts in the year?** Either can force an audit on a company that is otherwise under the size test.
-- **Is the client inside a group?** Group figures replace the company's own in every size test.
-- **Have the books been legalised, and were the last accounts filed?** Ask for the registry validation code and the filing receipt. A missed filing accrues a fine for each year of delay and closes the registry sheet.
-- **What is the SL's share capital?** An SL incorporated with capital below three thousand euros has a different and stricter legal reserve rule, and on liquidation its members answer for the shortfall up to that same amount.
+### Case 1: which depreciation table for a new laptop? (a decision)
+
+An autónomo buys a computer for EUR 2,000 and uses it only for the activity. In the simplified modality of direct estimation the simplified table applies: grupo 5, 26%, so EUR 520 a full year. In the normal modality (and for a company) the corporate table in art 12.1.a of Ley 27/2014 applies: equipos para procesos de información, 25%, so EUR 500. The modality, not the asset, decides; never mix a coefficient from one table into the other. Both figures are before any reduced-dimension acceleration.
+
+```oa-check
+name: Spain 2026 laptop depreciation simplified vs normal table
+inputs:
+  cost: 2000
+  simplified_rate: 0.26
+  normal_rate: 0.25
+steps:
+  - simplified_year: cost * simplified_rate
+  - normal_year: cost * normal_rate
+  - difference: simplified_year - normal_year
+expected:
+  simplified_year: 520
+  normal_year: 500
+  difference: 20
+```
+
+### Case 2: a supplier wants EUR 1,200 in cash, in two halves
+
+An SL owes a supplier EUR 1,200 for one supply and the supplier asks for two cash payments of EUR 600. Art 7 of Ley 7/2012 adds the split payments together, so the operation is EUR 1,200, at or above the EUR 1,000 limit: it may not be paid in cash. If it is, payer and receiver answer jointly for a fine of 25% of the amount paid in cash, EUR 300. Pay by bank transfer and keep the proof for five years.
+
+```oa-check
+name: Spain 2026 cash payment limit split payments
+inputs:
+  payment_1: 600
+  payment_2: 600
+  limit: 1000
+  fine_rate: 0.25
+steps:
+  - operation: payment_1 + payment_2
+  - over_limit_by: operation - limit
+  - fine: operation * fine_rate
+expected:
+  operation: 1200
+  over_limit_by: 200
+  fine: 300
+```
 
 ## When to refuse or refer
 
@@ -773,21 +803,27 @@ Also OpenAccountants' own pattern library, not an official classification. Every
 
 ## Sources
 
-- Código de Comercio: https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627
-- Ley de Sociedades de Capital, Real Decreto Legislativo 1/2010: https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544
-- Plan General de Contabilidad, Real Decreto 1514/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884
-- Plan General de Contabilidad de Pequeñas y Medianas Empresas, Real Decreto 1515/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966
-- Ley 27/2014 del Impuesto sobre Sociedades: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
-- Ley 35/2006 del Impuesto sobre la Renta de las Personas Físicas: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764
-- Reglamento del IRPF, Real Decreto 439/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-- Ley 37/1992 del Impuesto sobre el Valor Añadido: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740
-- Reglamento del IVA, Real Decreto 1624/1992: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925
-- Reglamento de facturación, Real Decreto 1619/2012: https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696
-- Ley 58/2003 General Tributaria: https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186
-- Ley 7/2012, limitation on cash payments: https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416
-- Ley 14/2013, telematic legalisation of the books: https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074
-- Reglamento de la Ley de Auditoría de Cuentas, Real Decreto 2/2021: https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351
-- Agencia Tributaria, tabla de amortización simplificada: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html
+Every quoted figure in the tables above was found again on the linked consolidated text on 14 November 2026.
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Código de Comercio | Read for arts 25, 28 and 30 (compulsory books, six-year retention) | https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627 | 2026-11-14 |
+| Ley de Sociedades de Capital, RDL 1/2010 | Read for arts 4.1, 164, 253, 263, 279 (reserve rule, year-end clock, audit) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 | 2026-11-14 |
+| Plan General de Contabilidad, RD 1514/2007 | Read for art 2 and part four, the cuadro de cuentas | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884 | 2026-11-14 |
+| PGC de Pymes, RD 1515/2007 | Read for arts 2 to 4 (two-of-three test, microempresa criteria) | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966 | 2026-11-14 |
+| Ley 27/2014 del Impuesto sobre Sociedades | Read for arts 12 (official depreciation table, EUR 300 and EUR 25,000 free depreciation, 11% floor), 15, 26.5 (ten years to check losses carried forward), 101 to 103 (EUR 10 million, 150%) | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 | 2026-11-14 |
+| Ley 35/2006 del IRPF | Read for art 30.2.5.ª (own meal costs, home utilities) | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 | 2026-11-14 |
+| Reglamento del IRPF, RD 439/2007 | Read for arts 30 and 68 (simplified modality, registers) | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 | 2026-11-14 |
+| Ley 37/1992 del IVA | Read for arts 90 and 91 (21%, 10%, 4%) | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 | 2026-11-14 |
+| Reglamento del IVA, RD 1624/1992 | Read for art 62 (VAT registers) | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 | 2026-11-14 |
+| Reglamento de facturación, RD 1619/2012 | Read for art 6 (full invoice content) | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 | 2026-11-14 |
+| Ley 58/2003 General Tributaria | Read for art 66 (four-year prescription) | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 | 2026-11-14 |
+| Ley 7/2012, cash payment limit | Read for art 7 (EUR 1,000 and EUR 10,000 limits, 25% fine) | https://www.boe.es/buscar/act.php?id=BOE-A-2012-13416 | 2026-11-14 |
+| Ley 14/2013 | Read for art 18 (telematic legalisation within four months) | https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074 | 2026-11-14 |
+| Reglamento de la Ley de Auditoría, RD 2/2021 | Read for the audit triggers outside the size test (title and scope only) | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 | 2026-11-14 |
+| Agencia Tributaria, tabla de amortización simplificada | Read for groups 1 to 10 of the simplified table, page updated 30 April 2026 | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html | 2026-11-14 |
+
+Not yet confirmed: the bank file layouts in Section 8 are a working note, not an official standard; the registry fees for legalising books and depositing accounts are tariff amounts not printed on the official pages cited.
 
 ## Disclaimer
 

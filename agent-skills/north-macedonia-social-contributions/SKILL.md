@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/north-macedonia-social-contributions"
   jurisdiction: "MK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# North Macedonia mandatory social contributions v0.3
+# North Macedonia mandatory social contributions v0.4
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -33,21 +33,21 @@ Individual farmers and registered market-stall traders have their own base; the 
 
 | Item | Amount | Period | Official provision |
 |---|---|---|---|
-| Pension/disability | 18.8% | Wages January-June 2026 | [UJP dated rate table][rates], Contributions Law prior art. 25 |
-| Pension/disability | 19.9% | Wages July-December 2026 | [Contributions Law art. 25(1)(1)][social]; [UJP amendment notice][july] |
-| Ordinary health | 7.5% | All 2026 | [Art. 25(1)(3)][social]; [dated rate table][rates] |
-| Additional injury/occupational-disease health | 0.5% for art. 11 insured groups | All 2026 | [Arts. 11, 25(1)(7)][social] |
-| Unemployment | 1.2% / 0.1% for art. 12 groups | January-June / July-December wages 2026 | [Art. 25(1)(8)][social]; [dated rate table][rates] |
-| Derived ordinary employee total | 28% in both periods | 2026 | Sum of applicable [art. 25][social] / [dated rates][rates] |
-| Derived ordinary self-employed total | 26.8% / 27.9% | January-June / July-December 2026 | [Arts. 7(1)(5), 10(1)(3), 11-12, 25][social]; [dated rates][rates] |
-| Derived uninsured director total | 26.3% / 27.4% | January-June / July-December 2026 | [Arts. 7(1)(1-a), 10(1)(1-a), 11-12, 25][social]; [dated rates][rates] |
-| January-published average gross wage reference | 69,141 | January-December 2026 calculations | [UJP 22 January announcement][bases] |
-| General minimum monthly base | 34,570, UJP published amount | 2026 | [Art. 15(1)][social]; [UJP announcement][bases] |
-| Established professional/intellectual self-employed minimum | 69,141, one reference wage; starter exception below | 2026 | [Art. 15(2)][social]; [reference wage][bases] |
-| Employee/director maximum monthly base | 1,106,256, 16 reference wages | 2026 | [Art. 16(1)-(2),(5)-(6)][social]; [UJP announcement][bases] |
-| Self-employed maximum monthly base | 829,692, 12 reference wages | 2026 | [Art. 16(3),(5)-(6)][social]; [UJP announcement][bases] |
-| First-calendar-year self-employed base, including professionals | 50% of 69,141 = 34,570.50 before accepted MPIN denomination | 2026 | [Art. 14(1)(14), final starter indent][social]; [UJP starter code 060][mpin-manual]; [current July 2026 MPIN package][mpin-2026] |
-| Individual farmer/covered market trader base | 20% of January-published average, arithmetic 13,828.20 before operational rounding | 2026 | [Art. 14(1)(12), art. 15 exception][social]; [reference wage][bases] |
+| Pension/disability | 18.8% | Wages January-June 2026 | [UJP dated rate table](https://www.ujp.gov.mk/en/vodic/category/641?print=1), Contributions Law prior art. 25 |
+| Pension/disability | 19.9% | Wages July-December 2026 | [Contributions Law art. 25(1)(1)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP amendment notice](https://ujp.gov.mk/en/javnost/soopstenija/pogledni/1266?print=1) |
+| Ordinary health | 7.5% | All 2026 | [Art. 25(1)(3)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated rate table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Additional injury/occupational-disease health | 0.5% for art. 11 insured groups | All 2026 | [Arts. 11, 25(1)(7)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf) |
+| Unemployment | 1.2% / 0.1% for art. 12 groups | January-June / July-December wages 2026 | [Art. 25(1)(8)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated rate table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Derived ordinary employee total | 28% in both periods | 2026 | Sum of applicable [art. 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf) / [dated rates](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Derived ordinary self-employed total | 26.8% / 27.9% | January-June / July-December 2026 | [Arts. 7(1)(5), 10(1)(3), 11-12, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated rates](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Derived uninsured director total | 26.3% / 27.4% | January-June / July-December 2026 | [Arts. 7(1)(1-a), 10(1)(1-a), 11-12, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated rates](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| January-published average gross wage reference | 69,141 | January-December 2026 calculations | [UJP 22 January announcement](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| General minimum monthly base | 34,570, UJP published amount | 2026 | [Art. 15(1)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP announcement](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| Established professional/intellectual self-employed minimum | 69,141, one reference wage; starter exception below | 2026 | [Art. 15(2)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [reference wage](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| Employee/director maximum monthly base | 1,106,256, 16 reference wages | 2026 | [Art. 16(1)-(2),(5)-(6)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP announcement](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| Self-employed maximum monthly base | 829,692, 12 reference wages | 2026 | [Art. 16(3),(5)-(6)](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP announcement](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| First-calendar-year self-employed base, including professionals | 50% of 69,141 = 34,570.50 (computed) before accepted MPIN denomination | 2026 | [Art. 14(1)(14), final starter indent](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP starter code 060](https://www.ujp.gov.mk/files/attachment/0000/0526/ISBN_978-608-4592-70-9_Mesecna_presmetka_za_integrirana_naplata_11.03.2016.pdf); [current July 2026 MPIN package](https://www.ujp.gov.mk/files/attachment/0000/0393/klientski_13.07.2026.zip) |
+| Individual farmer/covered market trader base | 20% of January-published average, arithmetic 13,828.20 (computed: 20% of 69,141) before operational rounding | 2026 | [Art. 14(1)(12), art. 15 exception](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [reference wage](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
 
 The **wage month**, not the day a bank transfer happens, determines the July split: art. 25 expressly starts with the July wage and ends with the December wage. Use the published 34,570 floor; do not silently replace it with a different rounding of half the reference wage. These parameters are not a statutory minimum-wage amount.
 
@@ -184,4 +184,4 @@ Not yet confirmed: A universal operational MPIN rounding convention; reconcile a
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

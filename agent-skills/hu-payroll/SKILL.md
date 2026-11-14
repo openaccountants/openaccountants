@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-payroll"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Hungary payroll (bérszámfejtés): 2026
@@ -187,25 +187,25 @@ If the same household's mother were the employee, born in 1986 or later, her who
 
 | Source | URL | Read on |
 |---|---|---|
-| Szja tv., Act CXVII of 1995 (personal income tax), 3. § 21., 8. §, 29.-29/H. §, 35. §, 46.-49. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
-| Tbj., Act CXXII of 2019 (social security), 6. §, 23.-27. §, 79.-81. §, 87. § | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-10-23 |
-| Szocho tv., Act LII of 2018 (social contribution tax), 1.-2. §, 36/E. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
-| Art., Act CL of 2017 (tax procedure), 50. §, 209. §, 211.-212. §, 215. §, 220.-221. §, 225. §, 232. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Act LV of 2024, 4. § and 217. § (family allowance amounts and their start dates) | https://njt.jog.gov.hu/jogszabaly/2024-55-00-00 | 2026-10-23 |
-| Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-10-23 |
-| Act XIV of 2025 (mothers of two children) | https://njt.jog.gov.hu/jogszabaly/2025-14-00-00 | 2026-10-23 |
-| Act XV of 2025 (mothers of three children) | https://njt.jog.gov.hu/jogszabaly/2025-15-00-00 | 2026-10-23 |
-| Act CLV of 2011 (vocational training contribution), repeal note | https://njt.jog.gov.hu/jogszabaly/2011-155-00-00 | 2026-10-23 |
-| Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-10-23 |
-| NAV information sheet 73, Szja adóalap-kedvezmények (2026-03-19) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19 | 2026-10-23 |
-| NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-10-23 |
-| NAV information sheet 24, Bevallási, adófizetési információk (2026-01-26) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-10-23 |
-| NAV form 2608, monthly return on payments to individuals | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2608 | 2026-10-23 |
-| NAV form 08E (registration of insured employees, replaced T1041 from 2026-01-01) and its filling guide, section 5 | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/08E | 2026-10-23 |
-| MNB, Monetary Council statement of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
+| Szja tv., Act CXVII of 1995 (personal income tax), 3. § 21., 8. §, 29.-29/H. §, 35. §, 46.-49. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-11-14 |
+| Tbj., Act CXXII of 2019 (social security), 6. §, 23.-27. §, 79.-81. §, 87. § | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-11-14 |
+| Szocho tv., Act LII of 2018 (social contribution tax), 1.-2. §, 36/E. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-11-14 |
+| Art., Act CL of 2017 (tax procedure), 50. §, 209. §, 211.-212. §, 215. §, 220.-221. §, 225. §, 232. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-11-14 |
+| Act LV of 2024, 4. § and 217. § (family allowance amounts and their start dates) | https://njt.jog.gov.hu/jogszabaly/2024-55-00-00 | 2026-11-14 |
+| Read for Mothers under 30 (30 év alatti anyák kedvezménye): Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-11-14 |
+| Read for Mothers of two children: Act XIV of 2025 (mothers of two children) | https://njt.jog.gov.hu/jogszabaly/2025-14-00-00 | 2026-11-14 |
+| Read for Mothers of three children: Act XV of 2025 (mothers of three children) | https://njt.jog.gov.hu/jogszabaly/2025-15-00-00 | 2026-11-14 |
+| Read for Vocational training contribution (szakképzési hozzájárulás): Act CLV of 2011 (vocational training contribution), repeal note | https://njt.jog.gov.hu/jogszabaly/2011-155-00-00 | 2026-11-14 |
+| Read for Minimum wage (minimálbér), full time, monthly, Guaranteed minimum wage (garantált bérminimum), jobs needing at least secondary education: Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-11-14 |
+| Read for Under-25 exemption (25 év alatti fiatalok kedvezménye), Mothers under 30 (30 év alatti anyák kedvezménye): NAV information sheet 73, Szja adóalap-kedvezmények (2026-03-19) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19 | 2026-11-14 |
+| Read for Szocho reduction, labour market entrants: NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 24, Bevallási, adófizetési információk (2026-01-26) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-11-14 |
+| Read for the points the body cites to it: NAV form 2608, monthly return on payments to individuals | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2608 | 2026-11-14 |
+| NAV form 08E (registration of insured employees, replaced T1041 from 2026-01-01) and its filling guide, section 5 | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/08E | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): MNB, Monetary Council statement of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-11-14 |
 
 Not yet confirmed: the text of Art. 1. melléklet 3. pont itself (the registration timing is taken from NAV's 08E filling guide; the annex did not load on njt.jog.gov.hu); the conditions of each szocho reduction other than the labour market entrants and the unskilled and farm jobs (read in Szocho tv. 10.-11. §); the employer's year-end tax assessment rules; the rules for fringe benefits, simplified employment and the rehabilitation contribution.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

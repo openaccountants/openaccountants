@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-annual-real-estate-tax"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland annual real-estate tax v0.1
+# Finland annual real-estate tax v0.3
 
 ## Who this applies to
 
@@ -22,16 +22,16 @@ Forests, agricultural land and the other §3–4 exempt components are excluded,
 
 | Component or valuation rule | Ordinary mainland rule | Official source |
 |---|---|---|
-| General land rate | Municipal rate within 1.30–2.00% | Act §11 [text][law] |
-| General building rate | Municipal rate within 0.93–2.00% | Act §11 [text][law] |
-| Permanent residential building | Municipal rate within 0.41–1.00% | Act §12 [text][law] |
-| Other residential building | Municipal rate within 0.93–2.00% | Act §13 [text][law] |
-| Qualifying unbuilt residential site | Separate rate 2–6%; specified metropolitan municipalities at least general land rate +3 percentage points, maximum 6% | Act §§12a–12b [text][law] |
-| Helsinki 2026 example rates | Land 1.30%, general building 0.93%, permanent residence 0.41%, other residence 0.93%, unbuilt site 4.30% | [Council decision 5 November 2025 §262][helsinki] |
-| Annual age reductions | Wooden residential/office 1.25%, stone 1%; wooden commercial/industrial 5%, stone 4%; other structure 10% | Valuation Act 1142/2005 §30 [text][valuation] |
-| Value floor while in use | Residential building 30%, other ordinary building/structure 20% of replacement value | Valuation Act §30 [text][valuation] |
-| Ordinary small-house replacement unit | EUR 770.58/m² before adjustments; older wooden exceptions EUR 614.75 before 1960 / EUR 695.54 for 1960–69 | Regulation 1073/2025 §5 [text][building] |
-| Collection floor | Tax below EUR 10 not imposed | Act §22 [text][law] |
+| General land rate | Municipal rate within 1.30–2.00% | Act §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| General building rate | Municipal rate within 0.93–2.00% | Act §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Permanent residential building | Municipal rate within 0.41–1.00% | Act §12 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Other residential building | Municipal rate within 0.93–2.00% | Act §13 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Qualifying unbuilt residential site | Separate rate 2–6%; specified metropolitan municipalities at least general land rate +3 percentage points, maximum 6% | Act §§12a–12b [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Helsinki 2026 example rates | Land 1.30%, general building 0.93%, permanent residence 0.41%, other residence 0.93%, unbuilt site 4.30% | [Council decision 5 November 2025 §262](https://paatokset.hel.fi/en/node/242314) |
+| Annual age reductions | Wooden residential/office 1.25%, stone 1%; wooden commercial/industrial 5%, stone 4%; other structure 10% | Valuation Act 1142/2005 §30 [text](https://www.finlex.fi/fi/lainsaadanto/2005/1142) |
+| Value floor while in use | Residential building 30%, other ordinary building/structure 20% of replacement value | Valuation Act §30 [text](https://www.finlex.fi/fi/lainsaadanto/2005/1142) |
+| Ordinary small-house replacement unit | EUR 770.58/m² before adjustments; older wooden exceptions EUR 614.75 before 1960 / EUR 695.54 for 1960–69 | Regulation 1073/2025 §5 [text](https://www.finlex.fi/fi/lainsaadanto/2025/1073) |
+| Collection floor | Tax below EUR 10 not imposed | Act §22 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
 
 These are legal ranges, not a default municipal rate. Obtain the property's actual **2026** municipal decision/rate from the assessment or [Vero municipality tables][rates]. Åland has its own permitted lower bounds below.
 
@@ -170,8 +170,8 @@ Not yet confirmed: case-specific municipal zone inputs and actual building featu
 [payment]: https://www.vero.fi/en/individuals/property/real-estate-tax/paying-real-estate-tax/
 [penalty]: https://www.vero.fi/en/individuals/property/real-estate-tax/real-estate-tax-decision/late-filing-penalty-fees-and-punitive-tax-increases-in-real-estate-taxation/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-annual-real-estate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-annual-real-estate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-annual-real-estate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-annual-real-estate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

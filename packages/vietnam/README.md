@@ -9,14 +9,17 @@
 2. `intake.md`
 3. `README.md`
 4. `references.md`
-5. `vietnam-vat.md`
-6. `vn-company-formation.md`
-7. `vn-payroll-social.md`
-8. `vn-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
-11. `workflow-base.md`
-12. `vat-workflow-base.md`
+5. `vietnam-pit.md`
+6. `vietnam-vat.md`
+7. `vn-company-formation.md`
+8. `vn-corporate-income-tax.md`
+9. `vn-payroll-social.md`
+10. `vn-tax-overview.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
+13. `workflow-base.md`
+14. `income-tax-workflow-base.md`
+15. `vat-workflow-base.md`
 
 ## Also known as
 
