@@ -176,7 +176,7 @@ expected:
 | Ministerial Order 004/26/10/TC of 29/04/2026: read for arts 2-27 | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_VAT_on_Online_Services_April_2026.pdf | 2026-11-14 |
 | Ministerial Order 006/26/10/TC of 24/09/2026: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_order_EBM.pdf | 2026-11-14 |
 | Commissioner General Instructions 001/2023, quarterly PAYE and VAT: read in full | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-14 |
-| RRA Commissioner General guidelines, VAT deferral facility, July 2026: read in full, all 6 pages of the scan, for the eligibility rules, the RWF 10,000,000 import VAT minimum and the 1 August 2026 start | https://www.rra.gov.rw/fileadmin/Folder_for_2025/CG__s_Guidelines_For_Implementation_of_VAT-July_2026.pdf | 2026-11-01 |
+| RRA Commissioner General guidelines, VAT deferral facility, July 2026: read in full, all 6 pages of the scan, for the eligibility rules, the RWF 10,000,000 import VAT minimum and the 1 August 2026 start | https://www.rra.gov.rw/fileadmin/Folder_for_2025/CG__s_Guidelines_For_Implementation_of_VAT-July_2026.pdf | 2026-11-14 |
 | RRA, VAT registration page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/default-title-1 | 2026-11-14 |
 | RRA, Declare VAT page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/penalties-and-interest | 2026-11-14 |
 | Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
