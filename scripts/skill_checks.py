@@ -653,12 +653,15 @@ TERM_SHARED_WITH = {
     "NL": {"CW", "SX", "AW", "BQ"},
     "CA": {"NG"},  # CRA is also Nigeria's Consolidated Relief Allowance
     "FR": {"GF"},  # French Guiana uses French tax law and DGFiP
+    "AU": {"CX", "CC"},  # Christmas Island and Cocos (Keeling) Islands: Australian external territories, ATO
 }
 #: Territories that lawfully cite a neighbour's law and sites.
+#: Christmas Island and the Cocos (Keeling) Islands cite Australian Commonwealth sites (legislation.gov.au, ato.gov.au),
+#: and the Cook Islands, in free association with New Zealand, cite New Zealand dates its law adopts (govt.nz).
 #: French overseas territories, the Pacific collectivities (NC, PF, WF) included, cite French state
 #: sites (legifrance, impots.gouv, douane, the Wallis and Futuna prefecture at wallis-et-futuna.gouv.fr), and
 #: Sint Maarten, Curacao and Aruba cite Dutch ones (overheid.nl) for Kingdom law.
-NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "NC": {"fr"}, "PF": {"fr"}, "WF": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
+NEIGHBOUR_TLDS = {"CX": {"au"}, "CC": {"au"}, "CK": {"nz"}, "GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "NC": {"fr"}, "PF": {"fr"}, "WF": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
 #: Jurisdiction values that name no single place.
 NON_PLACE_JURISDICTIONS = {"", "GLOBAL", "INTL", "GENERAL", "EU", "EU-27", "EU/EEA/CH/UK", "?"}
 #: Two-letter endings that say nothing about a country.

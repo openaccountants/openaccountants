@@ -8,7 +8,7 @@ description: >
   entertainers, 20% other payments), year-end accruals, payment within 15 days after the
   month end, certificates and payer liability, and treaty directions. Trigger phrases
   include Montserrat withholding tax, nonresident tax Montserrat, Schedule 1 withholding.
-version: 1.0
+version: 1.1
 jurisdiction: MS
 tax_year: 2026
 last_updated: 2026-11-14
@@ -66,6 +66,9 @@ Deduction of tax from payments to nonresidents in 2026 under section 39 and Sche
 | Payer fails to deduct | Payer personally liable (para.6) | same |
 | Payment to a bank or agent for a nonresident | Still within the Schedule (para.2 proviso (c)) | same |
 | Payment by one nonresident to another | Comptroller may charge the recipient directly without relieving the payer (para.2 proviso (b)) | same |
+| Late payment, Cap. 17.26 ss.57 and 59 | Late payment fee of 5% of the tax unpaid (withholding tax and instalments included), plus interest at 6% simple a year (variable by Gazette order); Cap. 17.26 s.4(2) gives the revenue law precedence where they conflict | same |
+| MCRS withholding tax form | Has annual-year fields and cites 2019 section numbers; it does not move the s.52 deadline of 15 days after the month end | [MCRS withholding form](https://mcrs.ms/wp-content/uploads/2026/05/Withholding-Tax-Form.pdf) |
+| Government contracts and stock | Separate deductions under ss.37 and 38, not Schedule 1 | [Cap. 17.01, ss.37 and 38](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
 | Exemption orders | Some projects are exempt by SRO (for example SRO 22/2021, SRO 25/2022) | same |
 
 ## Worked cases
@@ -132,5 +135,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income and Corporation Tax Act Cap. 17.01, revised to 1 January 2025: read for s.39, s.52, Schedule 1 paras.1 to 6 (scope, accruals, rates, certificates, return, payer liability) and the exemption orders list | https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf | 2026-11-14 |
+| Tax Administration Act Cap. 17.26, revised to 1 January 2025: read for ss.4(2), 57 (6% interest) and 59 (5% late payment fee, withholding tax included) | https://www.gov.ms/wp-content/uploads/2026/02/17.26-Tax-Administration-Act.pdf | 2026-11-14 |
+| MCRS withholding tax form: read for its annual fields and 2019 references (Ryan Duguid's reading) | https://mcrs.ms/wp-content/uploads/2026/05/Withholding-Tax-Form.pdf | 2026-11-11 |
 
-Not yet confirmed: amendments after 1 January 2025; the treaty rate matrix (no s.55 agreements read); penalties for late payment.
+Not yet confirmed: amendments after 1 January 2025; the treaty rate matrix (no s.55 agreements read); whether the s.51-style penalties in Cap. 17.01 or Cap. 17.26 s.59 apply to late withholding remittances; approved use of the MCRS form.
