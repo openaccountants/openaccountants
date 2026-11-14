@@ -1,17 +1,18 @@
 ---
 name: kw-vat-gst
 description: "VAT, GST, excise and customs source checks for Kuwait tax year 2026. Use for questions about Kuwait VAT registration, invoice charges, returns, reverse charge, input recovery, digital services, GCC framework agreements and import duties. The Ministry of Finance legislation lists were read, but their omission of a tax title does not prove that no tax is in force. Current implementation status and all resulting no-tax conclusions remain on hold until affirmative official evidence is read. Worked cases reconcile invoice amounts and quantify a disputed charge without deciding tax liability. Customs figures and the GCC framework dates are retained only as non-operative historical claims in Sources."
-version: 0.3
+version: 0.4
+type: situation-rules
 jurisdiction: KW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Kuwait VAT / GST v0.3
+# Kuwait VAT / GST v0.4
 
 Tax year 2026.
 
@@ -23,12 +24,7 @@ Businesses reviewing a Kuwait indirect-tax question. The MOF laws, decree-laws a
 
 ## Rates, bands and thresholds
 
-| Item | Figure and conditions | Tax year | Official URL |
-|---|---|---|---|
-| VAT, GST and excise status | unverified: NON-OPERATIVE HOLD. MOF title searches did not establish current legal status | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
-| Rate, registration threshold and return frequency | unverified: no current rule established. Do not adopt a GCC framework percentage as Kuwait law | 2026 | unverified |
-| Reverse charge, input recovery and invoice requirements | unverified: no current Kuwait procedure established | 2026 | unverified |
-| Customs duty | unverified: rate, tariff classification and exemptions require current customs evidence | 2026 | unverified |
+No rate, threshold, filing period or customs figure is confirmed for 2026. Every item that used to sit in this table is on the "Not yet confirmed:" line under Sources.
 
 ## The base
 
