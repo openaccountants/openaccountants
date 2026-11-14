@@ -60,7 +60,7 @@ Contributions to the National Insurance Corporation (NIC) of Saint Lucia in 2026
 |---|---|---|
 | Two employers | Each deducts; contributions above the yearly maximum are refunded | [NIC FAQ](https://www.stlucianic.org/faq) |
 | June contributions | Due on or before 7 July | [NIC employers](https://www.stlucianic.org/employers) |
-| Travel allowance of EC$700 a month | Include it (above EC$500); the employers page does not say whether only the excess counts, so treat the whole amount as included until NIC confirms | same |
+| Travel allowance above EC$500 a month | Include it; the employers page does not say whether only the excess counts, so treat the whole amount as included until NIC confirms | same |
 | Non-national employee | Still registered and covered; nationality alone is no exemption | [NIC employees](https://www.stlucianic.org/employees) |
 
 ## Worked cases

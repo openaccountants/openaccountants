@@ -62,7 +62,7 @@ Value Added Tax in Saint Lucia for 2026 under the Value Added Tax Act (Revised L
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Old brochures quoting EC$180,000 | Superseded; the Act (as amended by Act 5 of 2016) says EC$400,000 | [VAT Act s.12](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-12) |
+| Old brochures quoting a lower threshold | Superseded; the Act (as amended by Act 5 of 2016) says EC$400,000 | [VAT Act s.12](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-12) |
 | Supplies of exactly EC$400,000 | "Exceeded" is not met by 400,000; check the other tests | same |
 | Hotel charging room, restaurant and spa | Room 7%, restaurant 10%, other items at their own rate; do not apply 7% to the whole bill | [SI 188 of 2020](https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-3-01) |
 | Tour operator buying transport from a third party | Indirect transport supplies by a tour operator are excluded from the 10% tour rate | same |

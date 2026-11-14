@@ -41,13 +41,13 @@ Section 59D of the Income Tax Act, Cap. 15.02, inserted by section 3 of the Inco
 
 | Item | 2026 figure and conditions | Official source |
 |---|---|---|
-| Deduction, s.59D(1) | 50% of interest paid in the year on money borrowed to buy the land | [Act 10 of 2026, s.3](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
-| Parcel size | Not more than 22,000 square feet, for residential purposes | same |
+| Deduction, s.59D(1) | A fifty per cent deduction of interest paid during the year of income on money borrowed to purchase the land | [Act 10 of 2026, s.3](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
+| Parcel size | Land of not more than twenty two thousand square feet, for residential purposes | same |
 | Deed registration | Registered at the Registry of Land from 2 May 2026 | same |
-| Cap, s.59D(2) | Excluded from the EC$40,000 overall cap in s.44(4)(a) | same |
+| Cap, s.59D(2) | Excluded from the overall cap of forty thousand dollars under section 44(4)(a) | same |
 | First-time landowner, s.59D(3) | Never previously held a legal interest, solely or jointly, in residential land in Saint Lucia, and acquires a parcel intended for residential use | same |
 | Company return extension, s.96(3) | Up to five months from the end of the year of assessment, on conditions | [Act 10 of 2026, s.4](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
-| Penalty for failure to pay tax by the due date, s.134(1) | 6% (was 10%), or another rate the Minister prescribes by order | [Act 10 of 2026, s.5](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
+| Penalty for failure to pay tax by the due date, s.134(1) | "six per cent or such other rate as may be prescribed by the Minister" replaces the old rate | [Act 10 of 2026, s.5](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
 
 ### Steps
 
@@ -61,7 +61,7 @@ Section 59D of the Income Tax Act, Cap. 15.02, inserted by section 3 of the Inco
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Parcel of exactly 22,000 sq ft | Meets the limit; 22,001 does not | [Act 10 of 2026, s.3](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
+| Parcel exactly at the size limit | Meets it ("not more than"); one square foot more does not | [Act 10 of 2026, s.3](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=) |
 | Deed registered 1 May 2026 | Fails the registration date | same |
 | Buyer previously held a joint interest in a house plot | Not a first-time landowner | same |
 | Same interest also claimed as owner-occupied mortgage interest | Do not claim twice without a legal basis | [lc-personal-tax-deductions](lc-personal-tax-deductions.md) |
