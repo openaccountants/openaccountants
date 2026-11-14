@@ -94,6 +94,21 @@ Goods/asset export evidence change from 2026-10-01: for a transfer or lease made
 
 ## Worked cases
 
+### Historical bank-line fixtures and corrected use
+
+The original six hypothetical みずほ銀行 CSV lines are preserved verbatim as **2025 historical source-record fixtures**, including descriptions, invoice references, signs and running balances. This unordered sample is not a complete bank reconciliation and does not establish any supplier's actual billing entity, registration or taxable status. Each source line must be interpreted under the evidence tests above; the original fixed form-box and provider-based conclusions are superseded.
+
+```text
+2025年04月15日,振込入金,株式会社サクラテック,請求書番号:ST-2025-041,+1,100,000,1,100,000
+2025年04月18日,振込入金,ウーバーイーツジャパン合同会社,売上精算 2025-04,+216,000,1,316,000
+2025年04月10日,引落,GOOGLE LLC,Google Ads April 2025,-110,000,1,206,000
+2025年04月01日,引落,フリー株式会社,freee会計 プロプラン 2025年4月,-11,000,1,195,000
+2025年04月01日,引落,田中不動産株式会社,4月分賃料,-110,000,1,085,000
+2025年04月22日,外貨入金,Acme Corp USA,Invoice JP-2025-018 IT Consulting,-,+1,250,000,2,335,000
+```
+
+Line 1 is the domestic consulting case below. Line 2 is only a JPY 216,000 platform receipt until gross food sales/fees are independently evidenced; Case 2 adds settlement evidence as a separate hypothetical, rather than rewriting that source receipt. Line 3 preserves the old JPY 110,000 payment and vendor narrative, but neither foreign billing nor B 2 B status can be proved from that narrative; the former output-plus-input result at a ratio above 95% is withdrawn under the concession. Line 4 needs actual software invoice/credit evidence. Line 5's rent remains pending until lease/use evidence distinguishes commercial from residential. Line 6 preserves the USD-client narrative and JPY 1,250,000 receipt, including its original extra sign field; retain and resolve that parser anomaly rather than repairing source data silently. Export exemption requires the actual service/place/domestic-benefit evidence. No line's running balance proves a tax classification.
+
 Case 1 preserves the domestic consulting and software examples: `株式会社サクラテック` pays JPY 1,100,000 gross, `フリー株式会社` invoice JPY 11,000 gross. Confirm standard-rate domestic supplies and qualified input evidence. Net sale JPY 1,000,000; combined output JPY 100,000; software net JPY 10,000 and combined input JPY 1,000; national balance JPY 77,220, local JPY 21,780, total JPY 99,000 as an unrounded transaction-stage estimate. This is not the final return balance: apply the annual form rounding after aggregating the period. These are hypothetical source-document inputs, not actual registration claims. [NTA 6351](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6351.htm).
 
 ```oa-check

@@ -119,6 +119,8 @@ expected:
 
 Additional retained test scenarios, gross amounts explicitly: old JPY 15,000,000 sales /JPY 3,000,000 purchases -> unrounded combined difference JPY 1,090,909.09; JPY 8,000,000 consultant sales -> unrounded simplified JPY 363,636.36; JPY 6,000,000 eligible 2割 sales -> unrounded JPY 109,090.91; food JPY 5,000,000 plus dine-in JPY 2,000,000 -> unrounded output JPY 552,188.55. These are diagnostics before statutory form rounding, not ready-to-file balances. [NTA 6351](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6351.htm).
 
+The original Test 5 also remains a distinct status scenario: freelancer base-period taxable sales JPY 8,000,000, not registered as an invoice issuer. The former automatic exemption answer is usable only after the specified-period, voluntary election, registration and other statutory exceptions are excluded under Step 1; missing evidence leaves status pending. It is not the consultant-method example merely because both use JPY 8,000,000. [NTA 6501](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm).
+
 ## When to refuse or refer
 
 Do not file an exempt operator's return as though taxable. Do not treat invoice registration alone as 2割 eligibility. Refer partial exemption, unusual industry classification, foreign operators, asset-lock or election disputes. Never use 8% for alcohol/dine-in, claim personal/exempt inputs, invent exports, mix national/combined figures or present estimates as definitive. Do not issue qualified invoices while unregistered.

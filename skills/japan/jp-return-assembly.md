@@ -97,6 +97,10 @@ The brief must preserve these detail sections:
 
 ## Worked cases
 
+### Historical reviewer-position illustrations
+
+The original 2025 reviewer-brief template included these illustrative facts: a dedicated home-office room of 9 square metres within a 30-square-metre home (raw area fraction 9/30 = 30%); a service-business example with base-period revenue JPY 8,200,000; and a MacBook Pro costing JPY 280,000, also the example's annual small-asset total JPY 280,000. Retain these as **historical hypothetical inputs**, not findings for the current taxpayer. The area fraction does not by itself prove deductible business use. The service example still needs actual activity classification and a binding valid simplified election. The MacBook example still needs its acquisition/in-service date, current dated asset regime, business use and annual-total evidence; the old automatic expensing assertion is not usable. The old business-income illustration also assumed opening notification, blue approval and double-entry books; these are evidence factors, not conclusive classification. The old JPY 650,000 blue-deduction position needs every current condition, including the supported electronic route and income limitation. Preserve the illustration only when the facts and applicable law support the resulting position; otherwise show it as rejected/pending in the brief.
+
 Case 1, source-to-return revenue bridge: hypothetical standard domestic net JPY 10,000,000, export JPY 2,000,000, exempt revenue JPY 500,000 and outside-scope business subsidy JPY 300,000. Domestic combined output JPY 1,000,000; tax-inclusive P/L revenue JPY 13,800,000. Removing JCT gives JPY 12,800,000 net P/L revenue. The JCT taxable-sales numerator JPY 12,000,000 differs from P/L revenue by JPY 800,000 of exempt/subsidy items. A blind equality check would fail. Classification inputs must be independently established; method from [NTA 6351](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6351.htm), [outside-scope guidance](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm), [ratio guidance](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6405.htm).
 
 ```oa-check
