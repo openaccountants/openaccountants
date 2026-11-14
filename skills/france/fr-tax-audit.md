@@ -12,7 +12,7 @@ domain: references
 type: situation-rules
 ---
 
-# France: tax audits of a business, penalties and taxpayer rights (contrôle fiscal) v1.4
+# France: tax audits of a business, penalties and taxpayer rights (contrôle fiscal) v2.0
 
 > **Based on work by [Romain Simon (@romainsimon)](https://github.com/romainsimon/paperasse)**, licensed under MIT. Adapted for the OpenAccountants format.
 

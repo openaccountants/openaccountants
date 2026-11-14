@@ -14,7 +14,7 @@ domain: transfer-pricing
 type: situation-rules
 ---
 
-# France: transfer pricing (prix de transfert) v1.3
+# France: transfer pricing (prix de transfert) v2.0
 
 This skill covers the French transfer pricing duties of a company that deals with related entities abroad: the arm's length rule of article 57 of the Code général des impôts (CGI), the documentation file under article L. 13 AA of the Livre des procédures fiscales (LPF), the yearly declaration on form 2257-SD, the country-by-country report on form 2258-SD, the fines for each, the information request of article L. 13 B LPF, and advance pricing agreements. Figures are for tax year 2026. Transfer pricing figures attach to the accounting year (exercice), not to an income year, and the EUR 150 million documentation threshold and the documented-method presumption apply to accounting years opened on or after 1 January 2024. The raised EUR 50,000 minimum documentation fine is a separate amendment: BOFiP states it from 1 January 2024; article 116 III’s opened-year clause applies to I-1 and II, while the fine amendment is I-2. Do not decide the penalty for an earlier audited year solely from the year-opening test; establish the actual failure and applicable penalty law. The calculation change described here is on intra-group interest (Section 8) and it applies to accounting years closed on or after 31 December 2025, so to the 2025 calendar-year accounts as well. Every figure below was read on an official page between 19 September and 19 October 2026; each page's own date is given where it matters.
 
