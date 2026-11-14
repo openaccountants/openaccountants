@@ -1,7 +1,7 @@
 ---
 name: hr-corporate-income-tax
 description: "Use this skill for Croatian profit tax (porez na dobit) in tax year 2026 under the Profit Tax Act in force from 1 January 2026 (last amended NN 151/25) and the Profit Tax Rulebook. It covers who pays and residence (art. 2 and 3), the 10% and 18% rates split at EUR 1,000,000 of revenue in the period (art. 28), the base and the main add-backs (50% of representation and of passenger car costs, fines, donations above 2%), depreciation rates and the car cap, bad debts, provisions, losses carried forward for 5 years, thin capitalisation (art. 8) and the 30% EBITDA interest limit (art. 30.a), monthly advances, the PD return due 30 April, and fines. Trigger on: Croatia corporate tax, porez na dobit 2026, PD obrazac, d.o.o. tax Croatia, predujam poreza na dobit, 10% or 18% profit tax. Out of scope: transfer pricing (hr-transfer-pricing), withholding and treaties in depth (cross-border skill), VAT (croatia-vat-return), individuals (croatia-income-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: HR
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Croatia: profit tax (2026) v0.4
+# Croatia: profit tax (2026) v0.5
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts published by the Tax Administration (Porezna uprava) and from Narodne novine, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -147,6 +147,19 @@ Where income tax is paid on the item as a benefit to a person, the add-back does
 - **Foreign tax credit (ZPD art. 30, rewritten by NN 151/25).** A resident with a foreign branch adds the branch's positive base and credits the foreign tax. The credit is capped at the Croatian rate on that base, at the Croatian liability and at the tax actually paid (art. 30(1) and (2)). Treaty withholding tax is credited the same way (art. 30(4)). Foreign tax with no treaty reduces the base instead (art. 30(5)). A certificate of the foreign tax paid, with no right to a refund, is needed (art. 30(6)).
 - **Anti-abuse.** Arrangements set up mainly for a tax advantage that are not genuine lose it (ZPD art. 5.a). CFC income is added under art. 30.b and 30.c (PD line 10); not covered here.
 
+### Large groups: the separate minimum global profit tax
+
+The 15% minimum tax for large groups is a separate act, the Zakon o minimalnom globalnom porezu na dobit (NN 155/2023, amended by NN 151/2025, with the ordinance NN 53/2026). It is not part of the PD return and is not computed here. Test it for any member of a large group:
+
+- **Scope.** Constituent entities of a multinational group or a large domestic group whose annual revenue in the ultimate parent's consolidated statements was **EUR 750,000,000.00 or more in at least two of the four fiscal years immediately preceding** the tested year, including excluded entities' revenue; a year longer or shorter than 12 months adjusts the threshold proportionally ([NN 155/2023 art. 5(1)–(2)](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_12_155_2362.html)). The minimum rate is 15% (art. 4(1) point 15). A Croatian subsidiary of a foreign group is reached first by the qualified domestic top-up tax (art. 13); the income inclusion rule is art. 7 and the undertaxed profits rule arts. 14–16.
+- **Effect dates.** Fiscal years beginning from **31 December 2023**; the undertaxed profits rule from **31 December 2024** (art. 61), except that art. 56(1) applies it for the year beginning 31 December 2023 where the ultimate parent is in a Member State that chose the six-year deferral ([NN 155/2023 arts. 56, 61](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_12_155_2362.html); [NN 151/2025 art. 10](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2260.html)).
+- **Not deductible.** Since NN 151/2025 the top-up liability cannot reduce the profit tax base (new art. 5(7)) ([NN 151/2025 art. 1](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2260.html)).
+- **Filing and payment.** The top-up tax information return is filed electronically no later than **15 months** after the last day of the fiscal year (art. 46(7)). The domestic top-up return (form MGP-DP1) is due in that same period and the tax 30 days after it expires (art. 49(1), (4)). The IIR/UTPR return (form MGP-DP2) is due 30 days after the 15-month deadline and the tax 30 days after that (art. 48(1), (4)). Group entities in Croatia are jointly liable for one debt (arts. 48(5), 49(5)). For the transition year, the ordinance moves DP1 to **18 months** and DP2 to 30 days after that ([NN 53/2026 arts. 6, 7, 12](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_53_665.html)).
+- **Fines.** EUR 3,000.00 to EUR 100,000.00 for not filing either return on time, not determining the liability, not paying on time or not appointing the responsible entity ([NN 151/2025 art. 8](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2260.html), replacing art. 52).
+- **Substance carve-out, transitional percentages.** For a fiscal year beginning from 31 December 2026 the payroll carve-out is **9.4%** and the tangible-asset carve-out **7.4%**, not the 5% end state in art. 30(3)–(4) ([NN 155/2023 art. 54](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_12_155_2362.html)).
+
+The effective-rate and top-up formulas in arts. 28–29 are printed as images in the gazette; a text extract of the Act loses them. Safe harbours (art. 34, 57) work by reference to agreed international rules published by the ministry, not by thresholds in the Act.
+
 ## Worked examples
 
 ### Example 1: small d.o.o. at 10% with add-backs and a loss
@@ -248,9 +261,12 @@ expected:
 | Zakon o porezu na dobit, consolidated text in force from 1 January 2026 (NN 177/04 to 151/25), arts. 2, 3, 5, 5.a, 6, 7, 7.a, 8, 9, 10, 11, 12, 17, 28, 29, 30, 30.a, 31, 32, 34, 35, 38 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 | 2026-10-23 |
 | Zakon o izmjenama i dopunama Zakona o porezu na dobit, NN 151/2025 (2026 changes: funds, sponsorship, art. 30, art. 32, e-filing for all) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2261.html | 2026-10-23 |
 | Pravilnik o porezu na dobit, consolidated text in force from 16 April 2026 (NN 95/05 to 39/26), arts. 23, 25, 32, 38, 39.a, 46, 47, 48 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro23 | 2026-10-23 |
+| Zakon o minimalnom globalnom porezu na dobit, NN 155/2023, arts. 4, 5, 7, 13–16, 28–30, 34, 46, 48, 49, 54, 56, 57, 61 | https://narodne-novine.nn.hr/clanci/sluzbeni/2023_12_155_2362.html | 2026-11-14 |
+| Amending Act NN 151/2025 (arts. 1, 8, 10: non-deductibility, fines, art. 56) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2260.html | 2026-11-14 |
+| Pravilnik o minimalnom globalnom porezu na dobit, NN 53/2026 (arts. 6, 7, 12: forms MGP-DP1 and DP2, transition-year deadlines) | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_53_665.html | 2026-11-14 |
 | Opći porezni zakon, consolidated text in force from 1 January 2026 (NN 115/16 to 151/25), arts. 130, 193 | https://porezna-uprava.gov.hr/Propisi | 2026-10-23 |
 | Zakon o kamatama (NN 94/04) and Uredba o visini stope zatezne kamate (NN 153/04), in the Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
-Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags.
+Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags. The minimum global profit tax is a boundary only: its computation, safe harbours and the form instructions for the art. 56(1) early-UTPR case were not read.
 
 > Contributed by OpenAccountants.

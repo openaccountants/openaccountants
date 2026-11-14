@@ -1,272 +1,175 @@
 ---
 name: pe-individual-return
-description: "Use this skill whenever asked about Prince Edward Island provincial individual income tax. Trigger on phrases like \"PEI tax\", \"Prince Edward Island tax\", \"PE provincial tax\", \"PEI T1\", \"PEI brackets\", \"HST PEI\", \"PEI surtax\", \"PEI credits\", or any question about computing PEI provincial tax for an individual return. This skill covers PEI's four-bracket tax system with surtax, HST at 15%, provincial credits, and filing requirements. ALWAYS read this skill before touching any PEI individual tax return work."
+description: "Prince Edward Island calendar 2026 individual tax: enacted six-band law, no post-2023 surtax, current conditional credits, provincial return workflow and separate benefit/investment decisions."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pe-individual-return"
   jurisdiction: "CA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# PE Individual Return
+# Prince Edward Island individual return v2.0
 
-## Prince Edward Island Individual Tax Return -- Provincial T1 Skill v1.0
+## Scope
 
-## Section 1 -- Quick Reference
+Calculate Prince Edward Island provincial individual tax for **calendar 2026**, in CAD, alongside the federal T1. The current Income Tax Act has six bands, including 20% above CAD 200,000, and no post-2023 personal surtax. Use `pe-tax-credits` for detailed personal, community-equity, benefit and labour-rebate decisions. This version is not accountant approved.
 
-**Quick Reference**
+### Quick reference
 
-| Field | Value |
-| --- | --- |
-| Province | Prince Edward Island (Canada) |
-| Tax | Provincial Personal Income Tax |
-| Currency | CAD only |
-| Tax year | 1 January -- 31 December 2025 |
-| Primary legislation | Income Tax Act (Prince Edward Island) |
-| Tax authority | Canada Revenue Agency (administers on behalf of PEI) |
-| Filing portal | CRA My Account / NETFILE / paper T1 |
-| Filing deadline | 30 April 2026 (15 June 2026 if self-employed; balance due 30 April) |
-| Skill version | 1.0 |
+| Portion of 2026 taxable income, CAD | Provincial rate | Official source |
+|---|---|---|
+| Over 0 through 33,928 | 9.500% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Over 33,928 through 65,820 | 13.4700% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Over 65,820 through 106,890 | 16.600% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Over 106,890 through 142,520 | 17.6200% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Over 142,520 through 200,000 | 19.00% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Over 200,000 | 20.00% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
 
-### PEI Provincial Tax Rates (2025)
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| 2026 basic personal base | CAD 15,000; ordinary non-refundable credit at 9.5%; not a CAD 15,000 tax exemption for all income types | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 spouse / eligible-dependant maximum | CAD 12,740 subject to status/support and the person's net income; CAD 1,274 income offset in statutory formula; not equal to the BPA | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 age amount | Maximum CAD 6,510 base for qualifying age 65; reduce base by 15% of eligible income above CAD 36,600; convert at 9.5% | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 pension / disability | Pension eligible base maximum CAD 1,000; certified adult disability base CAD 6,890 with separate child-supplement rules; non-refundable | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 donation credit | 9.5% on first CAD 200 of qualifying gifts; 20% on eligible excess, subject to statutory gift conditions | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 LITR | CAD 350 basic + CAD 350 spouse OR eligible dependant + CAD 300 each OTHER qualifying child + CAD 250 for each eligible senior spouse; less 5% of adjusted family income above CAD 23,000; non-refundable, authorised unused-spouse transfer | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| Current volunteer credit | CAD 1,000 refundable dollar credit; federal firefighter/SAR eligibility required and no volunteer-services income exemption elected; qualifying residence/death rules apply | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| 2026 children's wellness | Eligible shared expense base up to CAD 1,000 per qualifying child, under 18 at beginning of year; at 9.5%, derived maximum non-refundable credit CAD 95; programme and duplication tests apply | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf |
+| PEI HST | 15% on ordinary taxable supplies whose place of supply is PEI; supply classification and exceptions first | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html |
 
-**PEI Provincial Tax Rates (2025)**
+## Ask the client first
 
-| Taxable Income (CAD) | Rate |
-| --- | --- |
-| 0 -- 32,656 | 9.65% |
-| 32,657 -- 64,313 | 13.63% |
-| 64,314 -- 105,000 | 16.65% |
-| 105,001+ | 18% |
+1. Which tax year and benefit-payment period, and which province on the last day of the year? Obtain arrival, departure, death and interprovincial moving dates, Canadian residence status and every business permanent establishment.
+2. What are taxable income, net income and adjusted family net income, separately? Obtain all slips, foreign income, deductions, CPP/EI details and the spouse's return. Do not default an unknown marital status to single.
+3. Which age, dependant, disability, pension, tuition, medical, donation, volunteer and investment facts apply? Obtain certificates, receipts, shared claims and carryover assessments before using a credit.
+4. Is this an individual, an unincorporated business or a corporation? Identify self-employment, farming/fishing, instalments and prior assessments. A corporate credit cannot be placed on a personal return.
+5. What is the requested output: a planning estimate, the actual annual filing or a separate CRA-administered benefit calculation? Do not call a partial provincial computation a final refund.
 
-### PEI Surtax
+## The method, step by step
 
-**PEI Surtax**
+### Assemble the return and the review file
 
-| Provincial Tax Threshold | Surtax Rate |
-| --- | --- |
-| Provincial basic tax > $12,500 | 10% of provincial tax exceeding $12,500 |
+1. Reconcile T4, T4A, T5, T3, pension and EI slips with records, including multiple seasonal employers. Include taxable investment and foreign income; do not infer taxable income from gross salary. Complete the federal T1 steps before the provincial calculation. Business income and substantiated expenses go through T2125; farming and fishing need their own statements and inventory/CCA records.
+2. Determine the correct province and special-return route. December residence normally controls an individual's province, not the employer's office. Newcomers/emigrants, deaths, bankruptcy, non-residents and business income allocated across provinces need the applicable annual instructions, proration and, where required, T2203. They are not all automatically ineligible.
+3. Apply each provincial band only to its portion of taxable income. Apply the provincial credit rate to eligible credit bases, not the taxpayer's top marginal rate. Keep base CPP/EI credit amounts distinct from deductions for additional CPP; never duplicate the same amount as both a deduction and a credit.
+4. Use the year's provincial 428 form for tax, non-refundable credits, additions and reductions. Non-refundable credits normally stop at provincial tax owing. Use only authorised transfer/carryover rules; a family credit does not become two credits because two returns are filed.
+5. Reconcile provincial tax to T1 line 42800. Enter refundable provincial credits only through the actual year's specified schedule and T1 line 47900 where directed. Separately display benefit payments administered by the CRA; they are not an automatic offset of the T1 balance.
+6. Complete federal tax, provincial adjustments, CPP, EI where applicable, instalments, tax withheld and other refundable items before calculating the T1 balance. The gross provincial figure or a combined marginal rate cannot establish a refund.
+7. In CRA-certified NETFILE software select the correct province and year, review all generated schedules and validation messages, and submit only after the taxpayer or authorised representative approves. Save the submission confirmation and filed schedules. If using paper, use the year's package and attach the specified forms and certificates. CRA My Account is for account access and the resulting assessment, not a substitute for the NETFILE return.
+8. Compare the notice of assessment with the approved computation and carryover schedules, check the balance and benefit notices, and retain source documents. For an error, wait for the assessment, then use CRA account > Tax returns > Change my return, or the permitted ReFILE/paper route. Save the adjustment confirmation; elections, benefit applications and personal-detail updates can have separate procedures. [CRA change-a-return instructions](https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html).
 
-### Key PEI Features
+### Federal tax, capital income and planning
 
-**Key PEI Features**
+Calculate federal tax separately using the current federal table. For ordinary income the marginal rate before credits is the sum of the two rates that apply at that exact income. Do not reuse a combined table with obsolete thresholds, or apply the ordinary-income rate directly to cash dividends or a gross capital gain. [CRA 2026 rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html).
 
-| Feature | Detail |
-| --- | --- |
-| Harmonized sales tax (HST) | 15% (5% federal + 10% provincial) |
-| Basic personal amount (2025) | $13,500 |
-| Spousal/equivalent amount | $13,500 |
-| Age amount | $4,959 |
-| PEI Low-Income Tax Reduction | Reduces/eliminates tax for low-income residents |
-| PEI Sales Tax Credit | $110/adult; income-tested |
-| PEI Volunteer Firefighter Credit | $500 |
+Canadian eligible and other-than-eligible dividends require the appropriate federal gross-up followed by the province's dividend tax credit on the taxable amount. Source the actual slip classification; do not assume every small-company dividend has the same treatment. Capital transactions require capital-versus-business classification, adjusted cost base, proceeds, losses, the applicable inclusion rule and any supported exemption. Principal-residence relief requires the designation and factual tests, not an automatic exemption for any home sale. For a qualifying-business or farm/fishing exemption, establish the ownership, asset and use tests and current indexed limit rather than using the old guide's generic ceiling.
 
-### Combined Federal + PEI Marginal Rates (2025)
+Load `ca-fed-t1-return`, `ca-fed-cpp-ei` and `ca-capital-gains` for those federal jobs, and verify their current periods before use. RRSP deductions, pension splitting, incorporation, donations, employment expenses, CCA and loss timing need a comparison using actual taxable income, deduction room, eligibility, cash requirements and benefit effects. Do not recommend incorporation using a single combined corporate rate, or claim a deduction saves the same rate for every dollar. Do not silently alter another skill to resolve an inconsistency.
 
-**Combined Federal + PEI Marginal Rates (2025)**
+### HST and provincial programmes are separate
 
-| Taxable Income (CAD) | Combined Rate |
-| --- | --- |
-| 0 -- 32,656 | 24.65% |
-| 32,657 -- 57,375 | 28.63% |
-| 57,376 -- 64,313 | 34.13% |
-| 64,314 -- 105,000 | 37.15% |
-| 105,001 -- 114,750 | 38.5% |
-| 114,751 -- 158,468 | 44% |
-| 158,469 -- 220,000 | 47% |
-| 220,001+ | 51% |
+HST is a supply tax, not an individual income-tax bracket. Determine taxable, zero-rated or exempt status and place of supply first. Reconcile tax collected and eligible input tax credits through `canada-gst-hst`. Small-supplier registration, new-housing rebates and point-of-sale relief each have their own tests. This return skill does not authorise the old generic housing-rebate ceilings or an assumed provincial children's-clothing/book rebate. [CRA place-of-supply and HST-rate instructions](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html).
 
-### Combined Federal + PEI Marginal Rates (2025)
+### Use the enacted current law, not the old four-band/surtax guide
 
-Note: rates above do not include surtax effect. With surtax, effective top rate increases by approximately 1.8%.
+The current consolidated statute (read to July 1, 2026) and updated provincial income-tax page agree on the six 2026 bands. The January payroll page's older five-band presentation and its CAD 142,250 display are superseded by the statute's CAD 142,520 boundary and new top band. Source the actual law before trusting a cached withholding table. Section 31(2) expressly removes surtax for years ending after 2023. No surtax is added to a 2026 return. [Current Act sections 7 and 31](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf); [updated provincial table](https://www.princeedwardisland.ca/en/information/finance-and-affordability/provincial-personal-income-tax).
 
-### Conservative Defaults
+Ordinary provincial credit bases convert at 9.5%; they are not all equal to the basic personal amount and do not all have the same income test. Section 9's spouse/eligible-dependant base is reduced using the person's income and the CAD 1,274 offset; satisfy the support/status and no-duplicate tests. Age base is reduced by 15% above the stated income threshold, not an unrestricted maximum for every senior. Pension uses the eligible-income limit and disability requires the federal certification/child-supplement conditions incorporated by the Act. [Sections 9 and 12](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-**Conservative Defaults**
+For medical claims under section 11, deduct the lesser of CAD 1,678 or 3% of net income from the eligible self/family amount and use the separate dependant rule; reimbursements and claim periods still matter. Tuition/education carryovers and current-year transfers follow sections 13-18 and the applicable annual schedules, not an assumed transfer of all unused balances. Donation excess uses the year's highest provincial percentage, 20% for 2026, not the old 18% figure. Political contributions have their own statutory receipt and cap, not the charitable-gift formula. [Sections 10-18 and 36.4](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency province on Dec 31 | Do not compute -- confirm province |
-| Unknown marital/family status | Single, no dependants |
+The low-income reduction uses adjusted family income and the eligible-individual conditions, not a universal single-person cutoff. One family applies; the spouse/eligible-dependant additions are alternatives, and a child counted as the eligible dependant is not also an “other child”. The statute permits an authorised unused-spouse transfer, but unused reduction is not refunded to a single person. Age, support, residence, bankruptcy and prison exclusions must be tested. [Section 32](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-## Section 2 -- Classification and Filing
+### Volunteer and child wellness claims
 
-### 2.1 T1 Structure
+The volunteer claim is a **CAD 1,000 refundable tax amount**, linked to federal firefighter/search-rescue eligibility and the no-emergency-services-exemption election. The province's credit is not barred because the federal volunteer amount is claimed; federal eligibility is a condition. It is not CAD 500 times an old provincial rate. Qualifying death-residence cases are included, but specified separate returns are excluded. [Section 36.2](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-**T1 Structure**
+The children's wellness base is up to CAD 1,000 per eligible child shared between claimants, not a CAD 1,000 cash payment. The child must be under 18 **at the beginning of the year**. Confirm a qualifying supervised non-school programme and the weekly/camp/mixed-use tests, net reimbursements and duplication rules; integral eligible uniform/equipment costs are not categorically excluded. The credit details are in `pe-tax-credits`. [Section 11.1](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-| Schedule | Purpose |
-| --- | --- |
-| T1 General | Federal return |
-| Form PE428 | PEI Tax and Credits |
-| Form PE479 | PEI Credits (refundable) |
+### Benefits, community equity and other retained topics
 
-### 2.2 Provincial Non-Refundable Credits (Form PE428)
+The Island Essentials Benefit replaces the former PEI sales tax credit from July 2026. Do not apply the old CAD 110/55/60 and 2% phase-out formula to the new benefit period. The updated provincial page describes the new maxima and minimum; section 36.3 provides the current quarterly formula and the eligible-person/family/payment-month rules. It is a CRA-administered benefit separate from provincial tax and based on the relevant previous-year information. [Updated provincial page](https://www.princeedwardisland.ca/en/information/finance-and-affordability/provincial-personal-income-tax); [section 36.3](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-**Provincial Non-Refundable Credits (Form PE428)**
+Community-development equity is a certificate-based, non-refundable investment credit with an annual **CAD 7,000 tax claim** limit, actual registration, ownership/security and holding conditions and authorised carryover. A generic direct investment in any private business does not qualify. Do not use the old guide's contradictory four-year carryforward or four-year holding assertions. For the actual current community-development programme, distinguish the registered CEDB issuer from its underlying investee and check the amended Act, not only the old programme overview. [Income Tax Act section 36.1](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf); [Community Development Equity Tax Credit Act](https://www.princeedwardisland.ca/sites/default/files/legislation/c-13-01-community_development_equity_tax_credit_act.pdf).
 
-| Credit | Amount (2025) | Rate |
-| --- | --- | --- |
-| Basic personal amount | $13,500 | 9.65% |
-| Spousal / common-law partner | $13,500 | 9.65% |
-| CPP/EI contributions | Actual | 9.65% |
-| Age amount | $4,959 | 9.65% |
-| Pension income | Up to $1,000 | 9.65% |
-| Disability | $8,777 | 9.65% |
-| Tuition | Actual | 9.65% |
-| Medical expenses | Excess over 3% of net income | 9.65% |
-| Donations | First $200 at 9.65%; excess at 18% | Non-refundable |
-| Volunteer firefighter | $500 | 9.65% |
+Seasonal employment, EI benefits and multiple T4s require all slips and income reconciliation; withholding by several employers does not necessarily settle annual tax. Workers commuting to NB or NS still need their actual year-end residence and any business-allocation exception. PEI property-transfer tax is a separate transactional tax; no relief follows automatically from this income-tax return and the old blanket “1% of price or value” claim is held until its actual law/exemptions are read. Senior-independence assistance, school-supply credits, labour incentives and business incorporation each need their actual claimant/programme route. General population and “lowest tax in Canada” claims do not establish anyone's tax position.
 
-### 2.3 PEI Surtax Calculation
+### Filing dates and the actual form year
 
-- **PEI Surtax Calculation** — Surtax = (Basic provincial tax − $12,500) × 10% CAD (Applies when basic provincial tax exceeds $12,500; typically affects taxable incomes above approximately $140,000.)
+For ordinary 2026 individual returns, ITA section 150(1)(d) gives the following-year filing rule: 30 April 2027 ordinarily; 15 June 2027 where the individual or their spouse/common-law partner carried on a qualifying business, subject to the statutory exceptions. Deaths and other special returns have different clocks. The later business filing date does not itself extend the balance-payment deadline. [ITA section 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html).
 
-### 2.4 PEI Refundable Credits (Form PE479)
+The annual provincial instructions read for this rewrite are the **2025 tax year, 2025-2026 filing cycle**, not final 2026 annual forms. Those instructions are used below only for the explicitly dated filing map and historical credit details. Do not put a 2026 figure on a 2025 return or assume a 2025 line number is final for 2026. Verify the released 2026 package before filing. For payments, current interest, instalment requirements and penalties, load the current federal filing/payment rules and the taxpayer's CRA account notices; the old guide's unsupported penalty/interest estimate is not a payment instruction.
 
-**PEI Refundable Credits (Form PE479)**
+## Worked cases
 
-| Credit | Detail |
-| --- | --- |
-| PEI Sales Tax Credit | $110/adult; income-tested; phases out above $30,000 (single) |
-| Low-Income Tax Reduction | Eliminates/reduces tax for incomes below ~$20,000 |
-| Seniors Independence Initiative | Home care/modification assistance (not a tax credit per se) |
-| Community Development Equity Tax Credit | 35% of eligible investment |
+### Simple 2026 provincial slice, CAD 75,000 taxable income
 
-## Section 3 -- Computation Method
+Assume an ordinary full-year PEI single resident, taxable income CAD 75,000 and no credit other than the sourced basic personal amount, no minimum/split-income/foreign-tax adjustments and no LITR. Apply the six-band law to the portions that actually arise, then the basic-personal credit. Do not apply the highest rate to all income or add the abolished personal surtax. This is only the stated provincial slice; complete all federal and other personal items before giving a balance. [Income Tax Act sections 7, 9 and 31](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
 
-### Step 1: Calculate Taxable Income
-
-- **Calculate Taxable Income** — Same as federal taxable income (Line 26000).
-
-### Step 2: Apply PEI Bracket Rates
-
-- **Apply PEI Bracket Rates** — First $32,656 × 9.65%; $32,657 to $64,313 × 13.63%; $64,314 to $105,000 × 16.65%; Above $105,000 × 18%
-
-### Step 3: Subtract Non-Refundable Tax Credits
-
-- **Subtract Non-Refundable Tax Credits** — Total credit amounts × 9.65% (lowest bracket rate).
-
-### Step 4: Calculate Surtax
-
-- **Calculate Surtax** — If basic provincial tax > $12,500: add 10% of excess.
-
-### Step 5: Apply Low-Income Tax Reduction
-
-- **Apply Low-Income Tax Reduction** — Reduces or eliminates tax for low-income earners.
-
-### Step 6: Net Provincial Tax
-
-- **Net Provincial Tax** — After surtax addition and credit reductions.
-
-### Step 7: Apply Refundable Credits
-
-- **Apply Refundable Credits** — Subtract Sales Tax Credit and other refundable amounts.
-
-## Section 4 -- HST Considerations
-
-**HST Considerations**
-
-| Item | Detail |
-| --- | --- |
-| HST rate | 15% (5% federal + 10% provincial) |
-| HST registrant | Full ITC available for business purchases |
-| Small supplier threshold | $30,000 in 4 consecutive quarters |
-| Real property (new residential) | Provincial new housing rebate available |
-
-## Section 5 -- Income Types and Dividend Tax Credits
-
-### 5.1 PEI Dividend Tax Credit
-
-**PEI Dividend Tax Credit**
-
-| Dividend Type | Federal Gross-Up | PE Credit Rate |
-| --- | --- | --- |
-| Eligible dividends (public corps) | 38% gross-up | 10.5% of taxable amount |
-| Non-eligible dividends (CCPCs) | 15% gross-up | 1.8% of taxable amount |
-
-### 5.2 Capital Gains
-
-- **50% inclusion rate** — 50% inclusion rate for all capital gains; the proposed 66.67% increase and $250,000 threshold were cancelled March 21, 2025
-- **Lifetime Capital Gains Exemption** — $1,250,000 CAD (on qualifying small business shares)
-- **Combined top rate on capital gains (50% inclusion)** — ~25.5%
-
-### 5.3 Filing Deadlines and Instalments
-
-**Filing Deadlines and Instalments**
-
-| Item | Detail |
-| --- | --- |
-| Filing deadline | 30 April 2026 (self-employed: 15 June 2026) |
-| Balance due | 30 April 2026 regardless of filing deadline |
-| Instalment threshold | Net tax owing > $3,000 in current year AND either of prior 2 years |
-| Instalment schedule | Quarterly: March 15, June 15, September 15, December 15 |
-| Interest on late balance | Prescribed rate (compounded daily) |
-
-## Section 6 -- Edge Cases
-
-### 6.1 PEI Surtax Impact
-
-The surtax is unique to PEI among Atlantic provinces. It effectively creates a higher marginal rate for high-income earners:
-
-### 6.1 PEI Surtax Impact
-
-**PEI Surtax Impact**
-
-| Basic Provincial Tax | Effective Surtax | Total Effective Top Rate |
-| --- | --- | --- |
-| $12,500 or less | None | 18% (top bracket only) |
-| $15,000 | ($15,000 - $12,500) × 10% = $250 | ~18.2% effective |
-| $20,000 | ($20,000 - $12,500) × 10% = $750 | ~18.5% effective |
-| $30,000+ | Significant | ~19.8% effective on top bracket |
-
-### 6.2 Seasonal Workers
-
-PEI has significant seasonal employment (fishing, tourism, agriculture). Workers may have:
-- EI benefits during off-season (taxable)
-- Intermittent T4s from multiple employers
-- Provincial tax applies to total income regardless of seasonal pattern
-
-### 6.3 Small Province Considerations
-
-PEI has a small population (~170,000) -- fewer provincial-specific programs compared to larger provinces. Federal credits (GST/HST credit, Canada Workers Benefit) are particularly important for low-income PEI residents.
-
-### 6.4 Inter-Provincial Commuters
-
-Workers commuting to Nova Scotia or New Brunswick for employment are taxed as PEI residents if resident on Dec 31 in PEI. No provincial tax allocation for employment income earned in other provinces.
-
-### 6.5 Community Development Equity Tax Credit
-
-**Community Development Equity Tax Credit**
-
-| Element | Detail |
-| --- | --- |
-| Credit rate | 35% of eligible investment |
-| Maximum investment | $20,000/year |
-| Maximum credit | $7,000/year |
-| Eligible businesses | PEI-based community development corporations |
-| Hold period | 5 years minimum |
-| Carry-forward | 4 years |
-
-### 6.6 PEI Property Transfer Tax
-
-- **PEI Property Transfer Tax** — When acquiring property in PEI, a Real Property Transfer Tax of 1% of the greater of purchase price or assessed value applies. This is not an income tax but relevant context for property investors -- it adds to cost base for CGT purposes.
-
-## Section 6 -- Prohibitions
-
-- **NEVER apply other provincial rates to a PEI resident** — NEVER apply other provincial rates to a PEI resident
-- **NEVER separate HST into components for filing** — NEVER separate HST into components for filing -- PEI uses harmonized HST
-- **NEVER ignore the surtax calculation** — NEVER ignore the surtax calculation for higher-income earners
-- **NEVER claim PEI credits without confirming residency** — NEVER claim PEI credits without confirming PEI residency on December 31
-- **NEVER omit the surtax from the computation** — NEVER omit the surtax from the computation -- it applies in addition to bracket rates
-- **Prohibition 6** — NEVER present tax calculations as definitive -- always label as estimated
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CGA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+```oa-check
+name: PEI basic provincial slice six-band law 2026
+inputs:
+  income: 75000
+  bpa: 15000
+steps:
+  - band_1: max(0, min(income, 33928) - 0) * .095
+  - band_2: max(0, min(income, 65820) - 33928) * .1347
+  - band_3: max(0, min(income, 106890) - 65820) * .166
+  - band_4: max(0, min(income, 142520) - 106890) * .1762
+  - band_5: max(0, min(income, 200000) - 142520) * .19
+  - band_6: max(0, income - 200000) * .20
+  - gross_tax: band_1 + band_2 + band_3 + band_4 + band_5 + band_6
+  - bpa_credit: bpa * 0.095
+  - provincial_tax: round(max(0, gross_tax - bpa_credit), 2)
+expected:
+  gross_tax: 9042.8924
+  provincial_tax: 7617.89
+```
+
+### Surtax comparison: historical mechanic versus 2026
+
+Retain the old illustrative basic-tax inputs CAD 12,500, CAD 15,000, CAD 20,000 and CAD 30,000. Section 31's old formula would give CAD 0, CAD 250, CAD 750 and CAD 1,750, respectively, only for a year to which that historical provision applies. The statute expressly excludes taxation years ending after 2023, so the surtax addition for **every one of those 2026 scenarios is zero**. The old instruction “never omit surtax” must not produce a 2026 charge. This comparison does not reconstruct the old year's underlying tax calculation. [Section 31(1)-(2)](https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf).
+
+```oa-check
+name: PEI retained surtax comparison excluded in 2026
+inputs:
+  basic_tax: 30000
+  historical_threshold: 12500
+steps:
+  - historical_formula_only: max(0, basic_tax - historical_threshold) * 0.10
+  - surtax_2026: 0
+  - hypothetical_total_2026: basic_tax + surtax_2026
+expected:
+  historical_formula_only: 1750
+  surtax_2026: 0
+  hypothetical_total_2026: 30000
+```
+
+## When to refuse or refer
+
+- Stop the final calculation when residence, year, taxable income, family status, credit evidence or a current source needed for the answer is missing. State the exact missing fact; do not invent a conservative numeric default or relabel a prior-year amount as current.
+- Refer special returns, disputed residence, multiple-province business allocation, treaty income, minimum tax, tax on split income, Indigenous tax exemptions, trusts and corporate claims to the relevant specialist workflow. Do not turn “outside this ordinary computation” into an unsupported statement that no relief exists.
+- Do not substitute payroll withholding for annual tax, cash benefits for non-refundable credits, a provincial label for a federal credit, or a corporation's incentive for its shareholder's personal credit.
+- Do not promise a refund, investment eligibility, programme funding, investment value or professional approval. Obtain the relevant certificate and calculate tax and cash payments separately. Keep records supporting shared claims, carryovers, amendments and recapture.
+
+## Sources
+
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for: PEI Income Tax Act current to July 1, 2026, sections 7-18, 31-32 and 36.1-36.4: six bands, conditional credits, no current surtax, family reduction and benefit/volunteer mechanics | https://www.princeedwardisland.ca/sites/default/files/0432/I-01-Income%20Tax%20Act_1.pdf | 2026-11-14 |
+| Read for: PEI updated personal-income-tax page: 2026 enacted rates/credits and July 2026 Essentials Benefit replacement | https://www.princeedwardisland.ca/en/information/finance-and-affordability/provincial-personal-income-tax | 2026-11-14 |
+| Read for: CRA January 2026 PE payroll guide: read to identify the superseded five-band/threshold display, not used against the amended law | https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032pe-jan/t4032pe-january-general-information.html | 2026-11-14 |
+| Read for: CRA 2025 PEI annual guide: explicitly historical Parts A-C and personal-credit/special-return filing map | https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/prince-edward-island/5002-pc.html | 2026-11-14 |
+| Read for: Community Development Equity Tax Credit Act current May 29, 2026: registered issuer, investment/certificate and holding conditions | https://www.princeedwardisland.ca/sites/default/files/legislation/c-13-01-community_development_equity_tax_credit_act.pdf | 2026-11-14 |
+| Read for: CRA current-year rates: federal 2026 bands and corroborating updated PEI six-band table | https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html | 2026-11-14 |
+| Read for: CRA GST/HST rates/place-of-supply opening rules: PEI participating-province rate and classification | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-place-supply.html | 2026-11-14 |
+| Read for: ITA section 150(1)(b),(d): ordinary, business and death filing clocks | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html | 2026-11-14 |
+| Read for: CRA change-return page: assessment prerequisite and correction route | https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html | 2026-11-14 |
+
+Not yet confirmed: Final 2026 annual PE428/other schedules and box mapping; current PEI dividend-credit percentages and federal gross-up/inclusion/LCGE/CPP details before a full combined answer; property-transfer rate/exemptions, housing/POS rebate caps, senior-independence assistance and any purported provincial school-supply credit; exact present investment-certificate entitlement/application restrictions where the old programme overview conflicts with amended law, as explained in pe-tax-credits; current federal instalment interest/penalty amounts rather than the old guide's generic estimates. Prior-year forms are not relabelled 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pe-individual-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pe-individual-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pe-individual-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pe-individual-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

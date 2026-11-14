@@ -1,340 +1,267 @@
 ---
 name: qc-employer-contributions
-description: "Use this skill whenever asked about Quebec-specific employer contributions — CNESST (CSST), HSF (Health Services Fund / Fonds des services de santé), QPIP (Quebec Parental Insurance Plan / RQAP), QPP (Quebec Pension Plan — replaces CPP for Quebec employees), WSDRF (1% training levy). Trigger on \"Quebec payroll\", \"QPP Quebec\", \"QPIP RQAP\", \"CNESST\", \"HSF Quebec\", \"FSS\", \"Fonds services santé\", \"Quebec employer contributions\". ALWAYS read this skill for Quebec payroll alongside canada-payroll (federal)."
+description: "Calculate and reconcile Quebec employer payroll contributions for 2026: QPP and second additional QPP, QPIP, the Health Services Fund (FSS), CNESST periodic payments, the separate labour standards contribution and the Workforce Skills Development and Recognition Fund. Use for Quebec payroll, RRQ, RQAP, CNESST, FSS, RL-1 and employer-cost questions. Distinguish employee payroll from a self-employed person's return and worldwide payroll for the FSS rate from Quebec remuneration subject to it. Read canada-payroll for federal income tax, EI, T4 and ROE mechanics; this skill supplies the Quebec overlay, not a federal CPP calculation."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/qc-employer-contributions"
   jurisdiction: "CA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# QC Employer Contributions
+# Quebec employer contributions v1.1
 
-## Quebec — Employer Contributions (CNESST / HSF / QPIP / QPP) — Skill v1.0
+## Scope
 
-> **Scope note.** This skill covers Quebec-specific payroll contributions remitted to **Revenu Québec** and to **CNESST**. It is a Quebec overlay on top of the federal payroll skill at `canada-payroll.md`. Do NOT duplicate federal mechanics here — for federal source deductions (federal income tax, EI, the federal half of remitting cadence, ROE/T4 mechanics, RP account setup, RC1 enrolment, etc.) **read `canada-payroll.md` first**, then layer the Quebec rules below.
->
-> Quebec is the only province where the employer files a **separate provincial payroll return** (the source-deductions remittance **TPZ-1015.R-V**) and where **QPP replaces CPP** entirely. Quebec also has its own **RL-1** slip parallel to the federal T4 (covered in the Quebec individual-return skill, not here).
+Quebec employer contributions for remuneration paid in calendar year 2026, in CAD. The output is a calculation and reconciliation working paper for approval. It does not submit a return, change a payroll ledger or make a payment. This skill is **Built from the law** and **Not yet approved**.
 
-## 1. Quick reference table — 2025 Quebec employer contributions
+Cover QPP, second additional QPP (QPP2), QPIP, Health Services Fund (HSF/FSS), CNESST occupational health and safety periodic payments, the separate labour standards contribution and WSDRF training shortfall. Keep federal income tax, EI, T4, ROE and CRA registration/remittance work in [canada-payroll](../canada-payroll.md). Quebec income tax withholding uses the current TP-1015.3-V employee declaration and WebRAS or the current employer formulas; this skill does not compute income tax.
 
-**2025 Quebec employer contributions quick reference**
+Do not apply federal CPP rates to QPP, or employer payroll rates to a self-employed person's profit. QPP self-employment is paid through the individual's Quebec return using the applicable current-year calculation, not an employer remittance. Its first-tier combined rate is 12.60% in 2026, with 8% second additional contributions. Mixed employment, CPP/QPP and self-employment require the individual-return calculation. [Revenu Quebec, self-employed QPP](https://www.revenuquebec.ca/en/citizens/income-tax-return/paying-a-balance-due-or-receiving-a-refund/paying-contributions-and-premiums/contributions-and-premiums-payable-by-a-self-employed-person-or-a-member-of-a-partnership/qpp-contribution-payable-by-a-self-employed-person-or-a-member-of-a-partnership/). The official 2026 self-employed QPIP rate is 0.764%, with an annual maximum of CAD 786.92; this is a separate personal-return contribution, not the employer rate. [Quebec government, contribution table](https://www.quebec.ca/entreprises-et-travailleurs-autonomes/administrer-gerer/embauche-gestion-personnel/assurance-parentale/taux-cotisations). Self-employed QPIP computation, benefits and personal contribution deductions belong in [qc-individual-return](qc-individual-return.md), not this employer calculation.
 
-| # | Contribution | Who pays | Administered by | 2025 employee rate | 2025 employer rate | 2025 earnings ceiling / base |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | **QPP** base | EE + ER | Revenu Québec / Retraite Québec | 5.40% | 5.40% | $3,500 exemption – **$71,300** YMPE |
-| 1a | **QPP** additional (first additional contribution) | EE + ER | Revenu Québec / Retraite Québec | 1.00% | 1.00% | $3,500 – $71,300 |
-| 1b | **QPP2** (second additional, on YAMPE band) | EE + ER | Revenu Québec / Retraite Québec | 4.00% | 4.00% | $71,300 – **$81,200** (YAMPE) |
-| 2 | **QPIP / RQAP** | EE + ER (+ self-employed) | Conseil de gestion de l'assurance parentale / Revenu Québec | **0.494%** | **0.692%** (SE: 0.878%) | Max insurable earnings **$98,000** |
-| 3 | **HSF / FSS** | ER only | Revenu Québec | — | **1.65% → 4.26%** sliding by total payroll | Total Quebec payroll (no ceiling) |
-| 4 | **CNESST** (occupational health & safety / workers' comp) | ER only | CNESST (separate ministry) | — | Sector-rated, typically **0.5%–5%+** | Insurable earnings up to **$98,000/worker** (same 2025 max as QPIP) |
-| 5 | **WSDRF** (1% training levy, Loi du 1%) | ER only | Revenu Québec (Commission des partenaires du marché du travail) | — | **1.0%** of payroll | Only if total payroll **> $2,000,000** |
+## Ask the client first
 
-- **Maximum annual QPP employee contribution (2025)** — Base + additional = $4,348.50 (5.4% × ($71,300 − $3,500) + 1.0% × ($71,300 − $3,500) = $3,661.20 + $678.00; per Retraite Québec rounding the published maximum is **$4,348.50**). QPP2 maximum = 4.0% × ($81,200 − $71,300) = **$396.00**. **Total maximum employee QPP (2025) = $4,744.50.** Employer matches dollar-for-dollar.  _(Retraite Québec 2025 rounding)_
+- Which calendar year and pay dates? Obtain employee-by-employee payroll, cash and non-cash benefits, pay frequency, year-to-date contributions and any previous-employer/successor records.
+- Where does each employee report for work, and which establishment pays a remote worker? Obtain the province-of-employment determination, rather than infer it from home address. Identify foreign postings or social-security certificates.
+- Are workers employees, genuine contractors, directors, partners or exempt workers? Obtain age, pension status, QPP election RR-50-V and any disability/exempt-employment documents that change contribution eligibility.
+- What is the employer's own subject remuneration, worldwide payroll and payroll of associated employers at December 31? Identify sector, public-sector status and the activities qualifying for an HSF exemption.
+- Obtain the current CNESST classification decision and periodic payment rate, covered workers, wages by unit, annual/weekly basis and any retrospective-rating decision. Do not guess a rate from a business description.
+- Obtain Revenu Quebec employer account details and assigned remittance frequency, actual remittances, eligible training records/carryforwards and any valid training initiative quality certificate.
 
-> The "base + additional" presentation is how Retraite Québec publishes the 2025 figures: a combined first-tier rate of **6.4% EE / 6.4% ER** on earnings between $3,500 and $71,300, and a second-tier **4% EE / 4% ER** on earnings between $71,300 and $81,200. Some Revenu Québec guides express the first-tier rate as a single 6.4% figure rather than 5.4% + 1.0% — both are equivalent.
+## The method, step by step
 
-## 2. Required inputs + refusal catalogue
+### 1. Establish the coverage and separate the bases
 
-### 2.1 Required inputs (gather before computing)
+Determine province of employment before choosing QPP or CPP. Federal withholding follows province-of-employment rules rather than simply the employee's province of residence. Quebec employment requires the coordinated CRA and Revenu Quebec streams. Remote work, mixed provinces and a transfer between establishments need the specific rules, not a default to the employer's registered office. [CRA Quebec employees](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/determining-tax-treatment/quebec-employee.html).
 
-- **Total annual Quebec payroll** — Gross wages, salaries, bonuses, taxable benefits subject to source deductions — drives HSF rate and WSDRF threshold.
-- **Per-employee gross pensionable / insurable earnings breakdown** — Earnings up to $71,300 (for QPP base + additional); earnings between $71,300 and $81,200 (for QPP2); earnings up to $98,000 (for QPIP and CNESST insurable earnings).
-- **CNESST sector classification(s)** — NAICS-based unit code(s) assigned by CNESST in the *Avis de cotisation* / employer file. A single employer may have multiple classification units.
-- **Public/parapublic sector check** — Whether the employer is in the public/parapublic sector (different HSF table applies — out of scope, see §2.2).
-- **Self-employed contractors paid through payroll** — Whether any workers are self-employed contractors paid through payroll (QPIP self-employed rate of 0.878% differs; CPP/QPP and CNESST may not apply — confirm worker status under the Revenu Québec employee-vs-contractor tests).
-- **Employer identification numbers** — Employer's NEQ (numéro d'entreprise du Québec) and Revenu Québec identification number (NIQ).
-- **Remittance frequency** — As assigned by Revenu Québec (weekly / twice-monthly / monthly / quarterly — mirrors federal threshold logic but is determined by Revenu Québec separately based on the average monthly Quebec source deductions).
+Make separate columns for QPP pensionable remuneration, QPIP eligible remuneration, HSF subject remuneration, labour standards subject remuneration, WSDRF payroll and CNESST insurable wages. They are not interchangeable. In particular, [HSF subject remuneration](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/remuneration-subject-to-the-contribution/) has exceptions, while the [worldwide associated-employer payroll](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll/) determines only the HSF rate.
 
-### 2.2 Refusal catalogue — when to stop and escalate
+### 2. Select the 2026 rates and caps
 
-- **R-QC-1** — Employer is in the public sector or parapublic sector (different HSF rate table; reduced rate not available).  _(R-QC-1)_
-- **R-QC-2** — Employer is requesting HSF reduced rate for the primary-and-manufacturing sector (special table — verify eligibility under the SMB sector rules; do not assume).  _(R-QC-2)_
-- **R-QC-3** — Worker classification is ambiguous (employee vs. self-employed contractor) — defer to a Quebec employment-law review; misclassification triggers CNESST, QPP, QPIP, and HSF retroactive assessments plus penalties.  _(R-QC-3)_
-- **R-QC-4** — Employer has workers in multiple CNESST classification units and is requesting an allocation across units — refer to a CNESST tarification consultant.  _(R-QC-4)_
-- **R-QC-5** — Employer is requesting WSDRF training-expenditure substantiation (which courses qualify under the Loi favorisant le développement et la reconnaissance des compétences de la main-d'œuvre) — refer to the Commission des partenaires du marché du travail (CPMT).  _(R-QC-5)_
-- **R-QC-6** — Employer has out-of-province employees physically reporting to a Quebec establishment, or vice versa — the "establishment to which the employee reports" rule under R.R.Q. requires case-by-case analysis.  _(R-QC-6)_
-- **R-QC-7** — Indigenous employers operating on reserve, or employees with Indian Act §87 exemptions — out of scope.  _(R-QC-7)_
-- **R-QC-8** — First-Nations or Inuit employer subject to special HSF / QPIP exemptions under intergovernmental agreements.  _(R-QC-8)_
-- **R-QC-9** — Employer is a non-resident of Canada with a Quebec establishment — non-resident employer certification regime + Quebec source-deduction rules interact; refer.  _(R-QC-9)_
-- **R-QC-10** — Mid-year change in legal status, amalgamation, or asset sale affecting payroll continuity (e.g., successor employer rules for QPP/QPIP ceilings).  _(R-QC-10)_
+Amounts below are annual full-year ceilings, not a formula for withholding an entire year's contributions from one ordinary pay run.
 
-### 3.1 Why QPP instead of CPP
+| Item | 2026 value | Official source |
+|---|---|---|
+| QPP maximum pensionable earnings / basic exemption | CAD 74,600 / CAD 3,500 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPP employee and employer first-tier rate, each | 6.30%, comprising 5.30% base and 1% first additional | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| Maximum first-tier QPP, each | CAD 4,479.30 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPP additional maximum pensionable earnings | CAD 85,000 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPP2 employee and employer rate, each | 4% on the CAD 74,600 to CAD 85,000 band | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| Maximum QPP2, each | CAD 416; combined QPP annual maximum CAD 4,895.30, derived | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPIP eligible remuneration ceiling | CAD 103,000 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPIP employee rate / maximum | 0.430% / CAD 442.90 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| QPIP employer rate / maximum per employee | 0.602% / CAD 620.06 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ |
+| Labour standards contribution | Employer only, 0.06%; maximum subject remuneration CAD 103,000 per employee | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-related-to-labour-standards/ |
+| CNESST annual insurable maximum | CAD 103,000 per worker; actual assigned rate required | https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf |
+| CNESST eligible weekly basis | CAD 1,975.45 per week; only where weekly-basis conditions apply | https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf |
+| WSDRF threshold / training requirement | Payroll over CAD 2 million / 1% of subject payroll | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-to-the-workforce-skills-development-and-recognition-fund/ |
 
-- **CPP replacement by QPP** — CPP does not apply to employees whose establishment of the employer is in Quebec. QPP applies instead, administered jointly by Retraite Québec (benefits, plan administration) and Revenu Québec (collection of contributions through source deductions).
+Historical correction: 2025 first-tier QPP was CAD 4,339.20 per employee/employer, not CAD 4,348.50. Adding the 2025 QPP2 maximum CAD 396 gives CAD 4,735.20. The previous skill's difference was an error, not a special rounding convention. Do not use either year's figures for the other year. [Revenu Quebec, historical table](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpp-contributions/maximum-pensionable-earnings-and-contribution-rate/).
 
-If the same individual has Quebec and non-Quebec employment income in the same year, QPP and CPP are reconciled on the federal T1 / Schedule 8 and Quebec TP-1 / Schedule R. Out of scope for this payroll skill — see `qc-individual-return.md`.
+### 3. Calculate QPP using actual pay-period data
 
-### 3.2 2025 rates and ceilings
+For an ordinary full-year employee with one employer, no exemptions and pensionable annual earnings E, the annual reasonableness check is:
 
-- **YMPE (maximum pensionable earnings)** — $71,300  _(§3.2 2025 rates and ceilings)_
-- **YAMPE (additional maximum pensionable earnings)** — $81,200  _(§3.2 2025 rates and ceilings)_
-- **Basic exemption** — $3,500 (only the base + first-additional tier benefit from the exemption; QPP2 has no exemption — it applies to the entire YMPE-to-YAMPE band)  _(§3.2 2025 rates and ceilings)_
-- **Base rate** — 5.40% EE + 5.40% ER (10.80% total)  _(§3.2 2025 rates and ceilings)_
-- **First additional rate** — 1.00% EE + 1.00% ER (2.00% total) → Combined first-tier = 6.40% EE + 6.40% ER on earnings $3,500 – $71,300  _(§3.2 2025 rates and ceilings)_
-- **Second additional (QPP2)** — 4.00% EE + 4.00% ER on earnings $71,300 – $81,200  _(§3.2 2025 rates and ceilings)_
+`first_qpp = round(max(0, min(E, 74600) - 3500) * 0.063, 2)`
 
-### 3.3 Computation per pay period
+`qpp2 = round(max(0, min(E, 85000) - 74600) * 0.04, 2)`
 
-- **QPP per pay period computation steps** — 1. Compute annualized pensionable earnings for the period. 2. Apply pro-rated basic exemption ($3,500 ÷ number of pay periods). 3. Compute first-tier QPP at 6.40% on the result (employee and employer each). 4. If annualized earnings exceed $71,300, compute QPP2 at 4.00% on the excess up to $81,200 (employee and employer each). 5. Cap year-to-date employee contribution at $4,744.50 ($4,348.50 base+additional + $396.00 QPP2).  _(Revenu Québec method / WebRAS calculator)_
+The employer matches each component. This annual check does not replace the current-year WebRAS/formula calculation for each pay period. Enter actual pensionable pay, frequency and year-to-date amounts, apply the correct period exemption and remaining separate contribution limits, then reconcile the output. Do not annually project a single irregular payment and deduct that annual result. Special/non-continuous employment, bonuses, partial-year eligibility and transfers require the applicable current formulas.
 
-### 3.4 Reporting
+Track the first contribution and QPP2 separately. The current RL-1 guide reports base plus first additional contributions in **B.A** and second additional contributions in **B.B**. Box G reports pensionable wages under that guide; do not put employer contributions into employee boxes or relabel B.A as QPP2. [RL-1 guide, sections 5.4 and 5.9](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/).
 
-- **Source-deductions remittance** — TPZ-1015.R-V (combined with QPIP, HSF, and Quebec income tax).
-- **Year-end slip** — RL-1, Box B (QPP) and Box B.A (QPP2 — second additional contribution).
-- **Reconciliation** — Sommaire 1 (RLZ-1.S-V) — annual summary of source deductions and employer contributions, due last day of February.
+The RL-1 guide excludes pensionable remuneration paid before and during the month the employee turns 18 and after December 31 of the year they turn 72. An eligible pension recipient aged at least 65 and under 73 at year-end who has not revoked an election in the same year can deliver RR-50-V to stop QPP contributions; stopping takes effect from the first pay of the following month. Verify the election and its effective date, rather than reuse CPP's age-70 limit or CPT30. [RR-50-V rules](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/special-cases-source-deductions-and-employer-contributions/employee-who-is-at-least-65-but-under-73-at-the-end-of-the-year-who-elects-to-stop-contributing-to-the-qpp/). Disability or excepted employment must be checked separately.
 
-### 3.5 Self-employed Quebec residents
+### 4. Calculate QPIP separately from QPP and federal EI
 
-- **Self-employed QPP treatment** — Self-employed individuals pay both halves of QPP (12.80% on the first tier, 8.00% on QPP2) through their Quebec personal return (TP-1, Schedule U / form TP-1129.66.3.6-V), not through payroll. Not covered further in this skill.
+For eligible 2026 remuneration, apply the employee and employer rates separately up to the QPIP ceiling. Unlike QPP, do not subtract a CAD 3,500 exemption. QPIP applies regardless of employee age and generally regardless of residence; excluded employment/remuneration still needs checking. Use WebRAS, TP-1015.TA-V or TP-1015.F-V with actual year-to-date data. [QPIP rules](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpip-premiums/qpip-premiums-what-you-need-to-know/).
 
-### 4.1 Why QPIP exists
+Report employee QPIP in RL-1 **H** and eligible remuneration in **I**, using the current RL-1 guide's remuneration rules. Do not assume every taxable non-cash benefit has the same QPIP treatment as cash pay. [RL-1 guide, sections 5.10 and 5.11](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/). Federal EI remains a separate CRA obligation at the Quebec rate; load canada-payroll and fetch the current official EI figures before computing it. QPIP does not replace all federal EI.
 
-Since 2006, Quebec has run its own parental-insurance regime under the Loi sur l'assurance parentale (Régime québécois d'assurance parentale, RQAP). It replaces the parental-benefits portion of federal EI for Quebec workers. Federal EI premiums are correspondingly reduced for Quebec employees (the EI Quebec-reduced rate is published annually by the CEIC).
+### 5. Calculate HSF with two different payroll populations
 
-### 4.2 2025 rates
+First establish worldwide payroll T, including employers associated at December 31, for the rate. Then determine this employer's remuneration subject to HSF, after applicable exclusions, for the amount payable. Applying the low rate using only Quebec payroll can understate HSF for an employer with an associated group elsewhere. [Total payroll definition](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll/); [subject remuneration](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/remuneration-subject-to-the-contribution/).
 
-**QPIP 2025 rates**
+| Rate-setting payroll T | General private-sector rate (%) | Primary/manufacturing rate (%) | Public-sector rate (%) | Official source |
+|---|---|---|---|---|
+| CAD 1,000,000 or less | 1.65 | 1.25 | 4.26 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/ |
+| Over CAD 1,000,000 and below CAD 7,800,000 | 1.2662 + (0.3838 x T / 1,000,000) | 0.8074 + (0.4426 x T / 1,000,000) | 4.26 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/ |
+| CAD 7,800,000 or more | 4.26 | 4.26 | 4.26 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/ |
 
-| Payer | Rate | Applied to |
-| --- | --- | --- |
-| Employee | **0.494%** | Insurable earnings up to $98,000 |
-| Employer | **0.692%** | Insurable earnings up to $98,000 |
-| Self-employed | **0.878%** | Net self-employment earnings up to $98,000 |
+Check both principal activities and whether more than 50% of total payroll is attributable to eligible primary/manufacturing activities before using that column. Public-sector status has its own definition. For an intermediate payroll, use the official rate calculation and its prescribed precision before applying it; do not use the previous skill's 0.7575/0.9075 coefficients. [RL-1 summary, lines 50.1, 50.3, 51 and 54](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/).
 
-- **Maximum insurable earnings (MIE) 2025** — $98,000  _(§4.2 2025 rates)_
-- **Maximum 2025 employee QPIP** — $484.12 (0.494% × $98,000)  _(§4.2 2025 rates)_
-- **Maximum 2025 employer QPIP per employee** — $678.16 (0.692% × $98,000)  _(§4.2 2025 rates)_
-- **No earnings exemption** — No earnings exemption — premiums apply from the first dollar of insurable earnings.
+The 2026-2027 agriculture, forestry and fishing temporary exemption uses **the employer's own payroll**, not associated-employer payroll, for its activity proportion. Qualifying activities are NAICS 111, 112, 113, 1141, 321111 and 32211. More than 50% gives a full exemption; 25% through 50% gives a 50% exemption. Check employer eligibility and attributable employee duties before applying either. The broadened rules are retroactive to January 1, 2026; reduced periodic payments can start with the first pay period beginning after January 28, 2026. Earlier overpayments are reconciled through the annual summary. [Official exemption rules](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-02-12/broadening-of-the-temporary-exemption-from-health-services-fund-contributions-for-the-agriculture-forestry-and-fishing-sectors/).
 
-### 4.3 Federal EI coordination
+Reconcile the actual annual HSF rate and subject remuneration to periodic payments on RL-1 summary. Do not promise that a reasonable estimate eliminates interest. The summary guide distinguishes interest on insufficient periodic payments from the balance resulting from a changed actual HSF rate. [Guide sections 5.5 and 6.4](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/).
 
-- **Federal EI withholding for Quebec employees** — The employer still withholds federal EI from Quebec employees but at the Quebec-reduced rate (set annually by the CEIC — historically about 15% lower than the rest-of-Canada rate). The EI premium reduction reflects QPIP picking up parental benefits. See `canada-payroll.md` §EI for the federal mechanics — do not duplicate.
+### 6. Keep CNESST health and safety separate from labour standards
 
-### 4.4 Reporting
+CNESST assigns the occupational health and safety periodic payment rate. Use the employer's actual 2026 notice; a generic office-sector range or an assumed NAICS rate is not sufficient. Calculate insurable wages after exclusions and excess wages, apply the assigned dollar rate per CAD 100, and keep a worker/unit reconciliation. The annual-basis maximum and eligible weekly basis are in the table above. Multiple units, special coverage and retrospective rating need the CNESST method, not an invented universal threshold. [2026 periodic payment guide, sections 2 and 4](https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf).
 
-- **QPIP withholding and remittance** — Withheld and remitted on TPZ-1015.R-V alongside QPP and Quebec income tax.
-- **QPIP year-end slip** — RL-1, Box H (QPIP premium) and Box I (QPIP insurable earnings).
+Periodic CNESST payments go through Revenu Quebec, but the separate CNESST Statement of Wages determines the occupational health and safety assessment. Do not put CNESST amounts into the RL-1 summary balance payable. Pay any CNESST assessment balance to CNESST as instructed on its statement. The CNESST guide requires the 2026 Statement of Wages **before March 15, 2027**, with an earlier 45-day rule when the last worker permanently leaves. Keep confirmation and reconcile the assessment to periodic payments. [Guide section 4 and its deadline footnote](https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf).
 
-### 5.1 Purpose
+The labour standards contribution was **not abolished or absorbed into the occupational health and safety premium**. Calculate its own 0.06% contribution on eligible remuneration, capped per employee. Check exemptions for the listed religious/charitable bodies, Canada Labour Code employers and international organizations. Use **LE-39.0.2-V**, then enter the subject base on RL-1 summary line 61, the contribution on line 63 and the payment on line 64. The contribution on line 63 comes from LE-39.0.2-V line 36. Pay annually with that summary. This form is not the WSDRF training calculation. [Labour standards contribution](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-related-to-labour-standards/).
 
-- **HSF purpose** — The HSF is an employer-only contribution that funds Quebec's public health-care system. There is no employee portion and no ceiling per employee — it applies to the entire Quebec payroll without any per-employee cap.
+### 7. Determine the WSDRF shortfall
 
-### 5.2 2025 rate schedule (private-sector SMBs, all sectors)
+Determine this business's WSDRF subject payroll across its establishments; do not import the HSF worldwide associated-group figure. If subject payroll is exactly CAD 2,000,000 or less, there is no WSDRF obligation under the threshold test. Above it, calculate the 1% training requirement, deduct substantiated eligible expenditures and allowable carryforwards, and pay only a positive shortfall. A valid training initiative quality certificate exempts the contribution for its period of validity. [WSDRF rules](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-to-the-workforce-skills-development-and-recognition-fund/).
 
-**HSF 2025 rate schedule**
+Follow the current RL-1 summary work chart, including assistance adjustments and the special rule allowing preceding-year eligible expenditure into the first above-threshold year. Do not treat every historical training cost as a carryforward. The summary guide has separate treatment for excess eligible expenditure and multiple establishments. Report WSDRF payroll on summary line 71, the 1% requirement on line 73, eligible expenditure on line 74 and the shortfall on line 75. With a valid training initiative quality certificate, leave lines 71-75 blank. This is not the LE-39.0.2-V calculation. [Summary section 5.7](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/).
 
-| Total Quebec payroll (TP) | HSF rate |
-| --- | --- |
-| TP ≤ $1,000,000 | **1.65%** |
-| $1,000,000 < TP ≤ $7,500,000 | Computed by formula (see §5.3) |
-| TP > $7,500,000 | **4.26%** |
+### 8. Produce the employer working paper
 
-> **Reduced rate** is available to private-sector employers in the **primary and manufacturing sectors** with TP ≤ $7.5M (lower entry rate, sliding scale). Out of scope here — see refusal **R-QC-2**.
-
-### 5.3 Sliding-scale formula ($1M < TP ≤ $7.5M)
-
-- **HSF sliding-scale formula** — HSF rate (private sector, general) = 0.7575% + (0.9075% × TP / $1,000,000) for $1M < TP ≤ $7.5M, expressed as a percentage and rounded as Revenu Québec specifies.  _(Guide TP-1015.G-V and Guide de l'employeur (TP-1015.G))_
-
-For a payroll of $3,000,000: Rate = 0.7575% + (0.9075% × 3) = 0.7575% + 2.7225% = 3.48% (rounded per Revenu Québec). Always compute using the current-year Revenu Québec rate calculator (Outil de calcul du taux du FSS) rather than from memory — the formula coefficients are updated periodically by budget legislation.
-
-### 5.4 Reporting
-
-- **HSF remittance and true-up** — Remitted with each source-deductions remittance (TPZ-1015.R-V) using the expected annual rate derived from estimated payroll, then trued up on the Sommaire 1 (RLZ-1.S-V) based on actual year-end payroll. If estimated rate < actual rate, employer owes the difference (no penalty if reasonable estimate); if estimated rate > actual, refund or carry-forward credit on the Sommaire 1.
-
-### 6.1 What CNESST is and isn't
-
-- **CNESST** — CNESST (Commission des normes, de l'équité, de la santé et de la sécurité du travail) is a separate ministry from Revenu Québec — created in 2016 from the merger of the CSST (workers' comp), CNT (labour standards), and CES (pay equity). For payroll-contribution purposes, "CNESST" generally refers to the workers' compensation premium (formerly CSST), governed by the Loi sur les accidents du travail et les maladies professionnelles (LATMP) and Loi sur la santé et la sécurité du travail (LSST). CNESST contribution is employer-only. It is not filed on TPZ-1015 — it has its own annual statement and remittance flow.  _(LATMP, LSST)_
-
-### 6.2 2025 rate structure
-
-- **Rate varies by sector and classification unit** — Assigned by CNESST in the Décision sur la classification and published annually. Typical ranges: Office / professional services: ~0.15%–0.50%; Retail, hospitality: ~0.50%–1.50%; Construction (subject to ASP Construction): 3%–6%+; Forestry, mining, heavy industry: 5%+.
-- **Insurable earnings ceiling per worker (2025)** — $98,000 (same as QPIP MIE — Quebec aligns these annually).
-- **Retrospective/personalized rate regime threshold** — Larger employers (>$586,500 estimated 2025 premium threshold, indexed) may be in the retrospective or personalized rate regime rather than the rate-applied-to-payroll regime — refer to CNESST tarification specialist (refusal R-QC-4).  _(R-QC-4)_
-
-### 6.3 Annual filing — Déclaration des salaires (DAS)
-
-- **Form** — Déclaration des salaires (annual statement of insurable wages), filed online via Mon Espace CNESST.
-- **Due date** — 14 March of the following year (i.e., the 2025 statement is due 14 March 2026).
-- **Reconciliation** — Reconciles estimated premiums paid through periodic remittance against actual insurable wages.
-- **Periodic remittance mechanism** — Periodic remittance is integrated with Revenu Québec source-deductions remittance via the Versement périodique mechanism: employer pays estimated CNESST premium to Revenu Québec on the same TPZ-1015.R-V schedule, and Revenu Québec forwards to CNESST. The annual reconciliation happens on the Déclaration des salaires.
-
-> The 28 February date sometimes cited applies to the federal T4 / RL-1 slips and Sommaire 1, not to the CNESST DAS. The CNESST DAS is due 14 March.
-
-### 6.4 Other CNESST employer obligations not covered here
-
-- Pay equity (Loi sur l'équité salariale) — separate triennial maintenance obligation.
-- Labour standards levy (formerly CNT levy) — replaced by CNESST general financing; usually embedded in remittance.
-- Health-and-safety prevention programs (groupes prioritaires, programmes de prévention) — sector-dependent.
-
-### 7.1 Legal basis
-
-- **WSDRF legal basis** — Loi favorisant le développement et la reconnaissance des compétences de la main-d'œuvre, R.S.Q. c. D-8.3 (the "Loi du 1%"). Administered by the Commission des partenaires du marché du travail (CPMT) with collection via Revenu Québec.  _(R.S.Q. c. D-8.3)_
-
-### 7.2 Who is subject
-
-- **WSDRF applicability threshold** — Employers whose total Quebec payroll exceeds $2,000,000 in the calendar year.
-
-### 7.3 The 1% obligation — spend or pay
-
-- **1% spend-or-pay obligation** — Eligible employers must spend at least 1% of total payroll on eligible training expenditures during the year. If they spend less than 1%, the shortfall is remitted to Revenu Québec as a contribution to the WSDRF.
-- **Eligible expenditures** — Eligible expenditures are defined in the CPMT regulations (training provided by recognized educators, certain in-house training, training-related travel, etc.). See refusal R-QC-5 for substantiation work.  _(R-QC-5)_
-- **Reporting form** — Declared on form LE-39.0.2-V (Calcul des cotisations de l'employeur — fonds des services de santé et formation) and reconciled on the Sommaire 1.
-- **Carry-forward** — Unused excess training expenditures (i.e., spent >1%) can be carried forward to reduce the obligation in future years, subject to CPMT rules.
-
-### 7.4 Quick test
-
-Total Quebec payroll for 2025 = $2,000,001 → subject. Total Quebec payroll = $1,999,999 → not subject. (The threshold is the calendar year, evaluated on actual payroll, not estimated.)
-
-## 8. Federal coordination
-
-Cross-reference `canada-payroll.md` for federal mechanics. Quebec-specific deviations:
-
-**Federal coordination table**
-
-| Federal item | Quebec treatment |
-| --- | --- |
-| **CPP** | **Does not apply** to Quebec-establishment employees. Use QPP instead. |
-| **EI premiums** | Applies, but at the **Quebec-reduced rate** (lower than the rest-of-Canada rate). |
-| **Federal income tax withholding** | Applies as usual (TD1, T4127). |
-| **Quebec income tax withholding** | Separate — uses **TP-1015.3-V (TPD)** Quebec personal-exemption form and Revenu Québec's WebRAS calculator. |
-| **T4** | Still issued for federal tax / EI; **RL-1** issued in parallel for Quebec (QPP, QPIP, HSF, Quebec tax). |
-| **Federal remittance (PD7A)** | Still applies for federal tax, EI, CPP-or-its-Quebec-absence. Goes to CRA. |
-| **Quebec remittance (TPZ-1015.R-V)** | Separate; goes to Revenu Québec. |
-| **ROE (Record of Employment)** | Same as federal — issued through Service Canada. QPIP claims pull from the same ROE. |
-
-**Bottom line:** a Quebec employer files **two** payroll-remittance streams — one to CRA (federal tax + EI) and one to Revenu Québec (Quebec tax + QPP + QPIP + HSF + WSDRF + integrated CNESST periodic remittance). The two streams must be kept reconciled.
-
-## 9. Filing mechanics — Revenu Québec
-
-### 9.1 Periodic remittance — TPZ-1015.R-V
-
-**Periodic remittance frequency table**
-
-| Average monthly Quebec source deductions | Remittance frequency |
-| --- | --- |
-| < $3,000 | **Quarterly** (or monthly, employer's choice) |
-| $3,000 – $24,999.99 | **Monthly** (15th of following month) |
-| $25,000 – $99,999.99 | **Twice-monthly** (25th + 10th) |
-| ≥ $100,000 | **Weekly** (within 3 working days) |
-
-> Thresholds mirror but do not exactly equal the federal CRA thresholds — Revenu Québec assigns the frequency independently based on the prior two years of Quebec remittance history. Always check the employer's Avis de cotisation for the assigned frequency.
-
-- **Remittance includes** — The remittance includes (on a single voucher): 1. Quebec income tax withheld 2. Employee + employer QPP (incl. QPP2) 3. Employee + employer QPIP 4. Employer HSF 5. Employer WSDRF (if applicable) 6. Employer CNESST periodic remittance (if integrated)
-
-### 9.2 Annual reconciliation
-
-- **Sommaire 1 (RLZ-1.S-V)** — Annual employer summary; due last day of February following the calendar year.
-- **RL-1 slips** — To each employee — same deadline (28/29 February).
-- **CNESST Déclaration des salaires** — Separate; due 14 March.
-
-### 9.3 Penalties (non-exhaustive)
-
-- **Late remittance penalty** — 7% / 11% / 15% sliding penalty depending on lateness, plus interest.
-- **Failure to file RL-1 / Sommaire 1** — $25 per slip per day, capped.
-- **Failure to file CNESST DAS** — Separate CNESST penalty regime plus interest.
-- **Negligence / gross negligence penalty** — Up to 50% penalty on under-withheld amounts.
-
-## 10. Worked example — Montreal SaaS company, 8 employees, $800,000 payroll
-
-**Facts.** *Acme SaaS inc.*, Quebec-incorporated, Montreal establishment, 8 software developers and 1 office manager. 2025 calendar-year payroll:
-
-- 6 developers @ $95,000 = $570,000
-- 2 senior developers @ $130,000 = $260,000
-- 1 office manager @ $55,000 = $55,000
-- **Total Quebec payroll = $885,000** (revised — using these illustrative numbers)
-- For the "$800k" round number, assume total payroll = **$800,000**; we use that figure throughout for HSF and WSDRF.
-- Sector: software publishing / SaaS — NAICS 5132 — **office / professional services CNESST classification**, assumed rate **0.18%** (illustrative; verify against actual CNESST classification).
-
-For each employee, compute base + additional (6.40% EE / 6.40% ER) on earnings $3,500 – $71,300, plus QPP2 (4.00% EE / 4.00% ER) on earnings $71,300 – $81,200.
-
-- **Office manager (gross $55,000):** Pensionable base = $55,000 − $3,500 = $51,500. QPP first tier = 6.40% × $51,500 = **$3,296** EE + **$3,296** ER. No QPP2.
-- **Developer (gross $95,000):** First-tier capped: 6.40% × ($71,300 − $3,500) = 6.40% × $67,800 = **$4,339.20** EE + **$4,339.20** ER. QPP2: 4.00% × ($81,200 − $71,300) = 4.00% × $9,900 = **$396** EE + **$396** ER. Total per developer: $4,735.20 EE + $4,735.20 ER. (Slight rounding vs. published $4,744.50 max — Retraite Québec applies a specific rounding convention; the maximum is published as $4,348.50 base+additional, which differs from 6.40% × $67,800 = $4,339.20 by a rounding/inclusion-of-the-cents convention. **Always use the official WebRAS calculator** for final figures.)
-- **Senior developer (gross $130,000):** Both ceilings hit. Same maximum as the developer = **$4,735.20** EE + **$4,735.20** ER (approx; use WebRAS).
-
-- Office manager ($55,000): 0.494% × $55,000 = **$271.70** EE; 0.692% × $55,000 = **$380.60** ER.
-- Developer ($95,000, capped at $98,000): 0.494% × $95,000 = **$469.30** EE; 0.692% × $95,000 = **$657.40** ER.
-- Senior developer ($130,000, capped at $98,000): 0.494% × $98,000 = **$484.12** EE; 0.692% × $98,000 = **$678.16** ER.
-
-Total Quebec payroll = $800,000 (< $1M) → HSF rate = **1.65%**.
-- HSF = 1.65% × $800,000 = **$13,200**.
-
-Assume CNESST rate = 0.18% (office/SaaS classification — illustrative).
-- Insurable earnings, capped at $98,000/worker: developers and seniors capped at $98,000 each (6 + 2 = 8 workers × $98,000 = $784,000); office manager $55,000.
-- Insurable wage base = $784,000 + $55,000 = $839,000.
-- CNESST premium = 0.18% × $839,000 = **$1,510.20**.
-
-> Note: in this worked example, salaries exceed total payroll because we used the $800,000 round figure for HSF/WSDRF but full $95k/$130k for per-employee QPP/QPIP. In a real engagement, reconcile so per-employee gross sums to total Quebec payroll exactly.
-
-Total Quebec payroll = $800,000. Threshold = $2,000,000. **Not subject.**
-
-- Federal EI withheld at the **Quebec-reduced employee rate** plus 1.4× employer share — see `canada-payroll.md` §EI for current rates.
-- Federal income tax withheld using TD1 + T4127.
-- **No CPP withheld** (QPP replaces).
-
-**Summary — annual employer cost of Quebec contributions (illustrative)**
-
-| Contribution | Employer cost |
-| --- | --- |
-| QPP (employer match) | ≈ $35,000–$40,000 (sum of per-employee ER QPP) |
-| QPIP (employer) | ≈ $5,000–$5,400 |
-| HSF | $13,200 |
-| CNESST | $1,510 |
-| WSDRF | $0 (under threshold) |
-| **Total Quebec employer cost** | **≈ $55,000** on $800k payroll (~6.9%) |
-
-…on top of federal employer EI cost (Quebec-reduced rate × 1.4) and any group benefits.
-
-## 11. Conservative defaults
-
-- **General default principle** — When information is missing, default conservatively (i.e., assume the higher liability) and flag for verification.
-- **CNESST rate default** — If classification unit unknown, default to the sector's upper-bound published rate rather than the floor. Flag for CNESST classification confirmation.
-- **HSF rate default near tier break** — If total payroll is near a tier break (e.g., $999k vs. $1.01M), default to the higher tier until year-end actuals are known; refund/credit on Sommaire 1.
-- **WSDRF default near threshold** — If total payroll is within 5% of the $2M threshold, treat the employer as subject and recommend tracking training expenditures throughout the year.
-- **Worker classification default** — If employee-vs.-contractor is ambiguous, default to employee (more conservative for the employer — all five contributions apply). Document the basis and flag for legal review.
-- **Establishment location default** — If an employee works from home in a province other than Quebec but the employer's establishment is in Quebec, default to the "establishment to which the employee reports" rule — generally Quebec — and flag (refusal R-QC-6).  _(R-QC-6)_
-- **Remittance frequency default** — If Revenu Québec has not yet notified, default to monthly until the Avis de cotisation arrives.
-- **Annualized vs. period earnings default** — Always use Revenu Québec's WebRAS (Web ROD calculator) for per-pay-period figures rather than back-of-envelope annualization, which can over- or under-withhold near tier breaks.
-
-## 12. Sources
-
-Primary legislation (Quebec):
-
-- Loi sur le régime de rentes du Québec, R.S.Q. c. R-9 — QPP.
-- Loi sur l'assurance parentale, R.S.Q. c. A-29.011 — QPIP / RQAP.
-- Loi sur la Régie de l'assurance maladie du Québec, R.S.Q. c. R-5 — HSF.
-- Loi sur les accidents du travail et les maladies professionnelles (LATMP), R.S.Q. c. A-3.001 — CNESST.
-- Loi sur la santé et la sécurité du travail (LSST), R.S.Q. c. S-2.1 — CNESST.
-- Loi favorisant le développement et la reconnaissance des compétences de la main-d'œuvre, R.S.Q. c. D-8.3 — WSDRF.
-- Loi sur les impôts, R.S.Q. c. I-3 — Quebec income tax withholding.
-
-Administrative guidance:
-
-- Revenu Québec — Guide de l'employeur (TP-1015.G-V), 2025 edition.
-- Revenu Québec — Tableaux des retenues à la source et des cotisations de l'employeur (TP-1015.TI-V / TR-V), 2025 edition.
-- Revenu Québec — WebRAS (online source-deduction calculator), 2025.
-- Revenu Québec — TPZ-1015.R-V Source-Deductions Statement.
-- Revenu Québec — RLZ-1.S-V Sommaire des retenues et cotisations de l'employeur.
-- Revenu Québec — LE-39.0.2-V Calcul des cotisations de l'employeur — FSS et formation.
-- Retraite Québec — Bulletin des cotisations au RRQ, 2025.
-- RQAP — Cotisations 2025 (rqap.gouv.qc.ca).
-- CNESST — Taux de cotisation 2025 (cnesst.gouv.qc.ca).
-- CNESST — Déclaration des salaires (Mon Espace CNESST).
-- Commission des partenaires du marché du travail (CPMT) — règlement sur les dépenses de formation admissibles.
-
-Cross-references in this skill package:
-
-- `canada-payroll.md` — federal payroll workflow (CPP/EI/T4/CRA remittance).
-- `payroll-workflow-base.md` — Tier-1 workflow base.
-- `qc-individual-return.md` — Quebec TP-1 (employee side: RL-1 reconciliation, QPP credit, QPIP credit).
-- `intake.md`, `global-router.md` — routing into the Quebec payroll skills from a Canadian intake.
-
-## Verification status
-
-*Verification status: pending. To be reviewed by a Quebec-licensed CPA / payroll specialist before production use. All 2025 rates above should be cross-checked against the current Revenu Québec, Retraite Québec, CNESST, and CPMT publications at the time of engagement.*
+Show employee deductions and employer costs separately, by component. Reconcile employee-level gross pay to total payroll, component-specific subject wages to source documents, contribution limits to year-to-date payroll, and each liability to its destination. Federal income tax and EI go to CRA. Quebec income tax, QPP, QPIP and HSF go to Revenu Quebec. Labour standards and WSDRF settle annually with the RL-1 summary. CNESST has its own assessment and annual statement even when periodic payments travel through Revenu Quebec. Do not include employee deductions as employer expense or describe an illustrative contribution subtotal as full employment cost.
+
+## Boundary and exception table
+
+| Situation | Action before calculating | Source |
+|---|---|---|
+| Genuine self-employment, mixed CPP/QPP or multiple provinces | Use the personal-return and province-of-employment methods; do not double employer rates mechanically | https://www.revenuquebec.ca/en/citizens/income-tax-return/paying-a-balance-due-or-receiving-a-refund/paying-contributions-and-premiums/contributions-and-premiums-payable-by-a-self-employed-person-or-a-member-of-a-partnership/qpp-contribution-payable-by-a-self-employed-person-or-a-member-of-a-partnership/; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/determining-tax-treatment/quebec-employee.html |
+| Age, retirement pension, RR-50-V election or disability | Establish actual covered periods and exemptions; retain election/effective date | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/special-cases-source-deductions-and-employer-contributions/employee-who-is-at-least-65-but-under-73-at-the-end-of-the-year-who-elects-to-stop-contributing-to-the-qpp/; https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/ |
+| Public sector or primary/manufacturing activities | Apply the correct HSF definition, not the ordinary small-business column | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/; https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/ |
+| Agriculture, forestry, fishing, sawmill or pulp activities | Test the special 2026-2027 HSF exemption using own payroll and eligible duties | https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-02-12/broadening-of-the-temporary-exemption-from-health-services-fund-contributions-for-the-agriculture-forestry-and-fishing-sectors/ |
+| Indigenous/on-reserve remuneration, foreign posting or social-security agreement | Check the remuneration and coverage exceptions individually; obtain the certificate where relevant | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/remuneration-subject-to-the-contribution/; https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/ |
+| Non-resident employer, remote employee or establishment change | Resolve payroll coverage, withholding and reporting separately before using this overlay | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/determining-tax-treatment/quebec-employee.html |
+| Successor, amalgamation or subsidiary wind-up | Use the summary/slip guide's continuity rules; do not automatically restart annual limits | https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/; https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/ |
+| Multiple CNESST units, construction weekly basis or retrospective rating | Use CNESST classification, wage allocation and actual rating notices | https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf |
+| Training certificate or disputed training eligibility | Check certificate validity and supporting evidence before reducing WSDRF | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-to-the-workforce-skills-development-and-recognition-fund/; https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/ |
+
+## Worked cases
+
+### Case 1: one employee, CAD 55,000 in 2026
+
+An ordinary private service employer has one full-year employee, no associated employers, no exemptions and CAD 55,000 of cash wages subject to each contribution. The employee is eligible for full-year QPP. The hypothetical CNESST notice assigns CAD 0.18 per CAD 100 of insurable wages; **this is an example input, not a published sector rate**. No WSDRF threshold is met. Use the annual check only, not a pay-period withholding instruction.
+
+```oa-check
+name: Quebec employer annual contribution check, one employee, 2026
+inputs:
+  wages: 55000
+  cnesst_dollars_per_100: 0.18
+steps:
+  - qpp_first_each: round(max(0, min(wages, 74600) - 3500) * 0.063, 2)
+  - qpp_second_each: round(max(0, min(wages, 85000) - 74600) * 0.04, 2)
+  - qpip_employee: round(min(wages, 103000) * 0.00430, 2)
+  - qpip_employer: round(min(wages, 103000) * 0.00602, 2)
+  - hsf: round(wages * 0.0165, 2)
+  - labour_standards: round(min(wages, 103000) * 0.0006, 2)
+  - cnesst: round(min(wages, 103000) / 100 * cnesst_dollars_per_100, 2)
+  - employee_quebec_contributions: qpp_first_each + qpp_second_each + qpip_employee
+  - employer_quebec_contributions: qpp_first_each + qpp_second_each + qpip_employer + hsf + labour_standards + cnesst
+expected:
+  qpp_first_each: 3244.50
+  qpp_second_each: 0
+  qpip_employee: 236.50
+  qpip_employer: 331.10
+  hsf: 907.50
+  labour_standards: 33.00
+  cnesst: 99.00
+  employee_quebec_contributions: 3481.00
+  employer_quebec_contributions: 4615.10
+```
+
+The employer subtotal excludes federal EI, wages, income tax deductions and any benefits/other costs. It is not a take-home-pay result.
+
+### Case 2: the nine-person employer reconciles to CAD 885,000
+
+Six employees earn CAD 95,000, two earn CAD 130,000 and one earns CAD 55,000. All are full-year eligible employees of the same ordinary service employer, without associated employers or exemptions. All pay is subject to the listed contributions. Use the same hypothetical CNESST notice rate as case 1. Actual wages are CAD 885,000; do not replace the total by CAD 800,000 while keeping the employee list unchanged.
+
+```oa-check
+name: Quebec nine-person annual payroll reconciliation, 2026
+inputs:
+  standard_count: 6
+  standard_wage: 95000
+  senior_count: 2
+  senior_wage: 130000
+  manager_wage: 55000
+  cnesst_dollars_per_100: 0.18
+steps:
+  - payroll: standard_count * standard_wage + senior_count * senior_wage + manager_wage
+  - qpp_first_each_total: (standard_count + senior_count) * 4479.30 + (manager_wage - 3500) * 0.063
+  - qpp_second_each_total: (standard_count + senior_count) * 416
+  - capped_qpip_wages: standard_count * min(standard_wage, 103000) + senior_count * min(senior_wage, 103000) + manager_wage
+  - qpip_employer: round(capped_qpip_wages * 0.00602, 2)
+  - hsf: round(payroll * 0.0165, 2)
+  - labour_standards: round(capped_qpip_wages * 0.0006, 2)
+  - cnesst: round(capped_qpip_wages / 100 * cnesst_dollars_per_100, 2)
+  - employer_quebec_contributions: qpp_first_each_total + qpp_second_each_total + qpip_employer + hsf + labour_standards + cnesst
+expected:
+  payroll: 885000
+  qpp_first_each_total: 39078.90
+  qpp_second_each_total: 3328.00
+  capped_qpip_wages: 831000
+  qpip_employer: 5002.62
+  hsf: 14602.50
+  labour_standards: 498.60
+  cnesst: 1495.80
+  employer_quebec_contributions: 64006.42
+```
+
+Although the capped wage totals happen to match in this cash-only example, QPIP, labour standards and CNESST bases must be tested independently in real payroll. CNESST does not cap all eight higher-paid employees at the maximum: the six CAD 95,000 employees remain below it. WSDRF is zero under the threshold.
+
+## When to refuse or refer
+
+Do not produce a final payroll deduction from annual earnings alone, guess a worker's legal classification, assume a tax/benefit exemption, invent a CNESST rate or use a prior-year table. Calculate only the supported component and identify which fact is missing. Near a threshold, show both outcomes; do not treat an employer as legally liable merely because a figure is within 5% of the threshold. Never convert an unknown fact into a stated higher liability.
+
+Refer disputed employee status, foreign/non-resident payroll obligations, Indigenous exemptions, social-security coverage and complex employer succession to the relevant payroll/tax specialist. Refer CNESST multi-unit allocation, personal/volunteer coverage and retrospective assessment to the CNESST adviser. Training eligibility and certificates require evidence under CPMT rules. Pay equity and health-and-safety prevention obligations are separate from this contribution computation, not abolished by it.
+
+## Filing and payment
+
+Use the frequency assigned by Revenu Quebec. Do not change frequency until the Notice of Change in Filing Frequency of Returns is received. For 2026 the authority publishes these conditions and due dates; the two-year lookback is explicit, not a current-payroll shortcut. [Frequency table](https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/).
+
+| Frequency | Published eligibility for 2026 | Due date | Source |
+|---|---|---|---|
+| Annual | 2025 source deductions/employer contributions CAD 2,400 or less, or estimated for 2026 | 15th of month after last month remuneration was paid, usually January 15 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+| Quarterly, existing employer | Average monthly remittance in 2024 or 2025 CAD 3,000 or less; fiscal obligations met over last 12 months | April 15, July 15, October 15 and January 15 | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+| Quarterly, new employer | Each month's source deductions and contributions below CAD 1,000; fiscal obligations met | Same quarterly dates | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+| Monthly | 2024 average monthly remittance below CAD 25,000, or new employer, subject to assigned eligible frequency | 15th of following month | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+| Twice monthly | 2024 average at least CAD 25,000 but below CAD 100,000 | 25th for first half; 10th of next month for second half | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+| Weekly | 2024 average at least CAD 100,000 | Third business day after each period ending on the 7th, 14th, 21st or last day | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ |
+
+In My Account for businesses, or My Account for professional representatives with authority, prepare the source-deductions remittance using the correct account and period. Use the issued TPZ-1015.R.14.1-V, TPZ-1015.R.14.2-V, TPZ-1015.R.14.3-V or TPZ-1015.R.14.4-V form/payment reference for the assigned frequency, as applicable. Reconcile Quebec income tax, employee/employer QPP and QPIP and employer HSF; keep the CNESST periodic amount separate in the relevant remittance fields. Retain confirmation and reconcile actual bank processing, rather than treating a saved draft as payment.
+
+Prepare the RL-1 slips and RL-1 summary (RLZ-1.S-V) for the year. The usual statutory filing deadline is the last day of February of the following year; apply the authority's due-date calendar rather than invent a calendar-day extension. Give each employee their RL-1 copy by the applicable RL-1 deadline as well; filing with the authority does not replace delivery to the employee. An RL-1 summary is required for each employer account. The guide allows My Account, approved software or the prescribed paper/PDF route; filing slips electronically alone does not file the summary. Include the labour standards calculation and WSDRF annual shortfall, reconcile remittances and retain the filed summary and payment receipt. Do not include CNESST in that summary remittance. [Summary guide, sections 3-6](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/).
+
+If payroll permanently stops because there are no employees, the summary is due by the 20th of the month following the last-remittance month; if business activities stop, by the 30th day after cessation; if the responsible person dies, by the 90th day after death. These are separate from CNESST's last-worker rule. [Summary section 4.2](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/).
+
+Revenu Quebec late remittance penalties on withheld/collected amounts are 7% for days 1-7, 11% for days 8-14 and 15% from day 15, with applicable interest. Do not substitute CRA penalties. Late summary filing has a separate statutory penalty; do not reuse the old unsupported per-slip formula. CNESST's 2026 guide provides a 15% insufficient-instalment penalty and a CAD 25 to CAD 2,500 late-statement penalty, with its separate interest rules. [Summary sections 6.4-6.5](https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/); [CNESST guide sections 3.4 and 4](https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf).
+
+## Completion checklist
+
+- Year, employment province, employee eligibility and elections are evidenced.
+- Current rates, separate component bases and caps match the official source and actual pay-period method.
+- Employee wages sum exactly to payroll; HSF rate payroll is kept separate from subject Quebec wages and WSDRF payroll.
+- CNESST rate/classification comes from the employer notice, not this example.
+- Employee deductions and employer costs reconcile separately to CRA, Revenu Quebec and CNESST destinations.
+- Annual labour standards/WSDRF, RL-1 slips/summary and separate CNESST filing are tracked with confirmations.
+- Approval stays Not yet approved unless an approved accountant stands behind this exact version.
+
+## Sources
+
+Official pages were read on 2026-11-13 through the web tool. Direct script downloads returned HTTP 403; that failure is not counted as source verification. The table states which portions were actually read. Statutory references for HSF, labour standards and WSDRF are reproduced in the authority's RL-1 summary guide: ARAMQ sections 33-34, ALS sections 39.0.3-39.0.6, AWSDR sections 15-19; late remittance TAA section 59.2. This skill relies on those opened authority instructions, not an assertion that every consolidated act was separately read.
+
+| Official source and portion read | URL | Read on |
+|---|---|---|
+| Read for Revenu Quebec principal changes: 2026 QPP, QPIP, HSF and labour standards tables | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/employers-principal-changes-for-2026/ | 2026-11-13 |
+| Read for QPP historical table: 2025 and 2026 first-tier maximums | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpp-contributions/maximum-pensionable-earnings-and-contribution-rate/ | 2026-11-13 |
+| Read for HSF rate table: ordinary, primary/manufacturing and public-sector columns | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll-threshold-and-health-services-fund-contribution-rate/ | 2026-11-13 |
+| Read for HSF total payroll: worldwide associated employers and activity attribution | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/total-payroll/ | 2026-11-13 |
+| Read for HSF subject remuneration and foreign-posting exclusions | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/employer-contribution-to-the-health-services-fund/remuneration-subject-to-the-contribution/ | 2026-11-13 |
+| Read for Labour standards: contribution, exemptions, LE-39.0.2-V and annual payment | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-related-to-labour-standards/ | 2026-11-13 |
+| Read for WSDRF: threshold, shortfall, certificate, summary and payment | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/contribution-to-the-workforce-skills-development-and-recognition-fund/ | 2026-11-13 |
+| Read for 2026 remittance frequency table and notice requirement | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/remitting-source-deductions-and-employer-contributions/frequency-of-remittances/ | 2026-11-13 |
+| Read for RL-1 summary guide: account/filing rules, HSF, labour standards, WSDRF, interest and penalties | https://www.revenuquebec.ca/en/online-services/forms-and-publications/rlz-1-s-g-v/guide-to-filing-the-rl-1-summary-summary-of-source-deductions-and-employer-contributions/ | 2026-11-13 |
+| Read for RL-1 guide: QPP boxes, eligible ages, H/I, special transfers and postings | https://www.revenuquebec.ca/en/online-services/forms-and-publications/rl-1-g-v/guide-to-filing-the-rl-1-slip-employment-and-other-income/ | 2026-11-13 |
+| Read for CNESST 2026 periodic payment guide: printed pages 8-10 and 16-21, wage ceilings, remittance and assessment/penalties | https://www.cnesst.gouv.qc.ca/sites/default/files/documents/periodic-payment-calculation-2026.pdf | 2026-11-13 |
+| Read for QPP election: age, pension requirement, form and effective month | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/special-cases-source-deductions-and-employer-contributions/employee-who-is-at-least-65-but-under-73-at-the-end-of-the-year-who-elects-to-stop-contributing-to-the-qpp/ | 2026-11-13 |
+| Read for Self-employed QPP: 2026 rates and separate return treatment | https://www.revenuquebec.ca/en/citizens/income-tax-return/paying-a-balance-due-or-receiving-a-refund/paying-contributions-and-premiums/contributions-and-premiums-payable-by-a-self-employed-person-or-a-member-of-a-partnership/qpp-contribution-payable-by-a-self-employed-person-or-a-member-of-a-partnership/ | 2026-11-13 |
+| Read for Quebec government 2026 QPIP table, including self-employed rate and maximum | https://www.quebec.ca/entreprises-et-travailleurs-autonomes/administrer-gerer/embauche-gestion-personnel/assurance-parentale/taux-cotisations | 2026-11-13 |
+| Read for QPIP employer guide: eligibility, age, periodic payment and calculation tools | https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/calculating-source-deductions-and-contributions/qpip-premiums/qpip-premiums-what-you-need-to-know/ | 2026-11-13 |
+| Read for CRA Quebec employee page: province-of-employment and Quebec coordination | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/determining-tax-treatment/quebec-employee.html | 2026-11-13 |
+| Read for HSF 2026-2027 exemption: eligible activities, own-payroll test, effective and periodic-payment dates | https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-02-12/broadening-of-the-temporary-exemption-from-health-services-fund-contributions-for-the-agriculture-forestry-and-fishing-sectors/ | 2026-11-13 |
+
+Not yet confirmed: this skill does not supply a full 2026 self-employed QPIP return computation, disability/exempt-worker contribution computation, CNESST retrospective qualification threshold, CPMT training-cost substantiation or pay-equity/prevention-program procedures. The prior skill's fixed sector CNESST ranges, retrospective threshold, triennial pay-equity assertion, blanket higher-liability defaults and exact late-RL-slip penalty were not substantiated and are not usable rules here. A per-pay-period engine and HSF intermediate-rate precision must follow current WebRAS/formula instructions, not the annual examples. Other Canadian skills may still contain 2025 figures; this update does not certify them.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `qc-employer-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/qc-employer-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `qc-employer-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/qc-employer-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
