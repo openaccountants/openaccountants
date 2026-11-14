@@ -2,11 +2,11 @@
   "engine": "us_federal_income_tax_2026",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/us_federal_income_tax_2026",
   "generated_from": "src/lib/engines/us-federal-income-tax-2026.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "us_federal_income_tax_2026",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "jurisdiction": "US",
     "tax_years": [
       "2025",
@@ -480,25 +480,25 @@
       "name": "QBI_RATE",
       "value": 0.2,
       "slug": "us-qbi-deduction",
-      "section": "Section 3 — Year-specific figures table for tax year 2025",
-      "quote": "§199A QBI deduction rate | 20%\n§199A QBI deduction rate (2026 onward) | 20% — unchanged",
+      "section": "Rates, bands and thresholds",
+      "quote": "The final One Big Beautiful Bill Act (Public Law 119-21, section 70105) kept the 20% rate, removed the end-2025 expiry\nDeduction rate on QBI | 20% (the 23% in the House-passed bill was not enacted)",
       "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
     },
     {
       "name": "QBI_SIMPLIFIED_METHOD",
       "value": true,
-      "slug": "us-federal-return-assembly",
-      "section": "QBI deduction: which form, and the thresholds for 2025",
-      "quote": "At or below the threshold, a specified service business (for example consulting) is treated as a qualified business, and there is no limit based on W-2 wages or property.\nForm 8995 computes 20% of QBI, then caps it at 20% of (taxable income before QBI − net capital gain, including qualified dividends).",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-qbi-deduction",
+      "section": "Rates, bands and thresholds; Step 3: where taxable income sits",
+      "quote": "Overall cap | 20% of (taxable income before the QBI deduction minus net capital gain, with qualified dividends added to net capital gain)\nAt or below the threshold ... | 20% of QBI for every business, SSTB or not; no wage or UBIA limit | Form 8995",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
     },
     {
       "name": "QBI_DEFINITION",
       "value": true,
-      "slug": "us-federal-return-assembly",
-      "section": "The method, step by step",
-      "quote": "\"Taxable income before the QBI deduction\" = line 11a − line 12e − line 13b. ... QBI itself is net profit reduced by the deductible half of SE tax, the health insurance deduction and the retirement contribution attributable to the business.",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-qbi-deduction",
+      "section": "Step 1: qualified business income for each business; Step 2: taxable income before the QBI deduction",
+      "quote": "QBI = Schedule C line 31 minus the deductible half of self-employment tax (Schedule 1) minus the self-employed health insurance deduction minus the deduction for contributions to SEP, SIMPLE or solo 401(k) plans for the owner.\nUse Form 1040 line 11a (adjusted gross income) minus the standard or itemized deduction and the other deductions the 2026 draft Form 8995 instructions list for line 11",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
     },
     {
       "name": "QBI_THRESHOLD_2026",
@@ -508,10 +508,10 @@
         "married_filing_separately": 201775,
         "head_of_household": 201750
       },
-      "slug": "us-federal-return-assembly",
-      "section": "Figures for tax year 2026",
-      "quote": "QBI threshold (MFJ / MFS / all others) | $403,500 / $201,775 / $201,750",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-qbi-deduction",
+      "section": "Rates, bands and thresholds",
+      "quote": "Threshold amount, all other returns (single, head of household, qualifying surviving spouse) | USD 201,750\nThreshold amount, married filing separately | USD 201,775\nThreshold amount, married filing jointly | USD 403,500",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
     },
     {
       "name": "QBI_THRESHOLD_2025",
@@ -532,10 +532,10 @@
         "minimum": 400,
         "qbi_needed": 1000
       },
-      "slug": "us-federal-return-assembly",
-      "section": "What changed for 2026",
-      "quote": "Starting in 2026, an \"applicable taxpayer\" gets a minimum QBI deduction of $400. An applicable taxpayer has at least $1,000 of qualified business income, in total, from active trades or businesses in which the taxpayer materially participates. The deduction is the larger of the normal computation and $400.",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-qbi-deduction",
+      "section": "Rates, bands and thresholds; Step 7: combine, cap, then the minimum",
+      "quote": "Minimum deduction, taxable years beginning after 31 December 2025 | USD 400\nQBI needed for the minimum, from active businesses (material participation, section 469(h)) | USD 1,000\nMinimum (new for 2026): if aggregate QBI from all businesses the taxpayer materially participated in is at least USD 1,000, the deduction is the greater of the step 3 result and USD 400",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
     },
     {
       "name": "CAPITAL_GAIN_RATES_2026",
@@ -565,8 +565,8 @@
         }
       },
       "slug": "us-capital-gains",
-      "section": "Rates and thresholds for 2026",
-      "quote": "Filing status (2026) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | $49,450 | $545,500 | $545,500\nMarried filing jointly / surviving spouse | $98,900 | $613,700 | $613,700\nMarried filing separately | $49,450 | $306,850 | $306,850\nHead of household | $66,200 | $579,600 | $579,600",
+      "section": "Rates, bands and thresholds",
+      "quote": "Long-term gain and qualified dividends: maximum zero rate amount, married filing jointly and surviving spouse | USD 98,900\nMaximum 15 percent rate amount, married filing jointly and surviving spouse (20% above) | USD 613,700\nMaximum zero rate amount, married filing separately | USD 49,450\nMaximum 15 percent rate amount, married filing separately | USD 306,850\nMaximum zero rate amount, head of household | USD 66,200\nMaximum 15 percent rate amount, head of household | USD 579,600\nMaximum zero rate amount, all other individuals (single) | USD 49,450\nMaximum 15 percent rate amount, all other individuals (single) | USD 545,500\nRates on adjusted net capital gain | 0%, 15%, 20%",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
@@ -597,16 +597,16 @@
         }
       },
       "slug": "us-capital-gains",
-      "section": "2025 returns: tax year 2025, extended deadline October 15, 2026",
-      "quote": "Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | $48,350 | $533,400 | $533,400\nMarried filing jointly / surviving spouse | $96,700 | $600,050 | $600,050\nMarried filing separately | $48,350 | $300,000 | $300,000\nHead of household | $64,750 | $566,700 | $566,700",
+      "section": "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+      "quote": "Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | USD 48,350 | USD 533,400 | USD 533,400\nMarried filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050\nMarried filing separately | USD 48,350 | USD 300,000 | USD 300,000\nHead of household | USD 64,750 | USD 566,700 | USD 566,700",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
       "name": "CAPITAL_GAIN_STACKING",
       "value": true,
       "slug": "us-capital-gains",
-      "section": "The method, step by step",
-      "quote": "Qualified dividends go in the 0%/15%/20% group.\nStack. Ordinary taxable income fills the brackets first, and the preferential gain sits on top of it. The 0% and 15% ceilings are measured against total taxable income, not against the gain alone. Use the Qualified Dividends and Capital Gain Tax Worksheet.",
+      "section": "Step 5: split the long-term gain into rate groups; Step 6: stack the gain on top of ordinary income",
+      "quote": "0/15/20 group: all other net capital gain, plus qualified dividends.\nOrdinary taxable income fills the brackets first; the preferential gain sits on top.\nUse the Qualified Dividends and Capital Gain Tax Worksheet in the Form 1040 instructions.",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
@@ -646,8 +646,8 @@
       "name": "CHILD_TAX_CREDIT_PERMANENT",
       "value": true,
       "slug": "us-2026-federal-tax-changes",
-      "section": "Child tax credit (permanent from 2025)",
-      "quote": "The higher child tax credit no longer expires after 2025 (section 70104, taxable years beginning after 31 December 2024).",
+      "section": "Boundary and exception table / Families",
+      "quote": "Child tax credit (permanent). USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024).",
       "skill_url": "https://www.openaccountants.com/skills/us-2026-federal-tax-changes"
     },
     {
@@ -719,10 +719,10 @@
           "head_of_household": 200000
         }
       },
-      "slug": "us-federal-return-assembly",
-      "section": "Additional taxes on higher income",
-      "quote": "Additional Medicare Tax (Form 8959) on wages plus SE income | 0.9% | $200,000 single, head of household or qualifying surviving spouse; $250,000 MFJ; $125,000 MFS",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income",
+      "quote": "Additional Medicare Tax on self-employment income | 0.9%\nAdditional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000\nAdditional Medicare Tax threshold, married filing jointly | USD 250,000\nAdditional Medicare Tax threshold, married filing separately | USD 125,000\nTake the threshold for the filing status (USD 200,000, 250,000 or 125,000). Reduce it, not below zero, by the person's Medicare wages. Self-employment income (Schedule SE line 6) above the reduced threshold is taxed at 0.9%.",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "ADDITIONAL_MEDICARE_2025",
@@ -752,24 +752,24 @@
         }
       },
       "slug": "us-capital-gains",
-      "section": "Net investment income tax",
-      "quote": "Filing status | MAGI threshold (same for 2025 and 2026)\nMarried filing jointly / qualifying surviving spouse | $250,000\nMarried filing separately | $125,000\nSingle / head of household | $200,000\nRate: 3.8% of the smaller of net investment income or MAGI above the threshold",
+      "section": "Rates, bands and thresholds; Step 8: the net investment income tax",
+      "quote": "Net investment income tax rate | 3.8%\nNIIT threshold, joint return or surviving spouse | USD 250,000\nNIIT threshold, married filing separately (half the joint amount) | USD 125,000\nNIIT threshold, any other case (single, head of household) | USD 200,000\nOn Form 8960: 3.8% of the lesser of (A) net investment income or (B) modified adjusted gross income over the threshold",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
       "name": "NET_INVESTMENT_INCOME_ITEMS",
       "value": true,
       "slug": "us-capital-gains",
-      "section": "Net investment income tax",
-      "quote": "Net investment income includes capital gains, interest, dividends, rents, royalties, ... It excludes wages and most self-employment income.",
+      "section": "Step 8: the net investment income tax",
+      "quote": "Net investment income includes capital gains, interest, dividends, ... It excludes wages, most self-employment income",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
       "name": "NIIT_SAME_FOR_2025",
       "value": true,
       "slug": "us-capital-gains",
-      "section": "2025 returns: tax year 2025, extended deadline October 15, 2026",
-      "quote": "The NIIT thresholds, the 3.8% rate and the $3,000 / $1,500 loss limit are the same as for 2026.",
+      "section": "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+      "quote": "The NIIT thresholds, the 3.8% rate and the USD 3,000 / USD 1,500 loss limit are the same as for 2026.",
       "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
     },
     {
@@ -781,10 +781,10 @@
         "agi_limit": 150000,
         "agi_limit_mfs": 75000
       },
-      "slug": "us-federal-return-assembly",
-      "section": "Estimated tax and the Form 2210 penalty",
-      "quote": "Estimated tax is required for 2026 when ... the smaller of 90% of the 2026 tax and 100% of the 2025 tax. The 2025 return must cover 12 months.\nUse 110% instead of 100% if 2025 AGI (line 11b) was more than $150,000 ($75,000 if filing separately for 2026).",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-quarterly-estimated-tax",
+      "section": "Rates, bands and thresholds; Boundary and exception table",
+      "quote": "Current-year safe harbour: share of the 2026 tax | 90%\nPrior-year safe harbour: share of the 2025 tax | 100%\nPrior-year safe harbour where 2025 AGI exceeds the limit below | 110%\n2025 AGI limit for 100% (110% above it) | USD 150,000\n2025 AGI limit, married filing separately for 2026 | USD 75,000\n2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
     },
     {
       "name": "ESTIMATED_TAX_DUE_DATES_2026",
@@ -794,10 +794,10 @@
         "2026-09-15",
         "2027-01-15"
       ],
-      "slug": "us-federal-return-assembly",
-      "section": "Estimated tax and the Form 2210 penalty",
-      "quote": "2026 due dates: April 15, 2026; June 15, 2026; September 15, 2026; January 15, 2027.",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-quarterly-estimated-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "1st installment due | 15 April 2026\n2nd installment due | 15 June 2026\n3rd installment due | 15 September 2026\n4th installment due | 15 January 2027",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
     },
     {
       "name": "SAFE_HARBOUR_2025",
@@ -808,10 +808,10 @@
         "agi_limit": 150000,
         "agi_limit_mfs": 75000
       },
-      "slug": "us-quarterly-estimated-tax",
-      "section": "Rates and thresholds",
-      "quote": "Prior-year AGI <= $150,000 -> 100% prior-year safe harbor\nPrior-year AGI > $150,000 -> 110% prior-year safe harbor\nCurrent — 90% of current-year tax\nAGI > $150,000 ($75,000 MFS) | 110% of prior year tax\nRequired = lesser of: Method A (current year): 90% of TY2025 tax; Method B (prior year): 100% of TY2024 tax (110% if AGI > $150K / $75K MFS)",
-      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
+      "slug": "us-form-1040-individual-return",
+      "section": "15. Estimated tax — §6654",
+      "quote": "Safe harbors — 90% of current year tax, OR 100% of prior year tax (110% if prior-year AGI > $150,000 / $75,000 MFS)",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
     },
     {
       "name": "ESTIMATED_TAX_DUE_DATES_2025",
@@ -830,41 +830,41 @@
       "name": "QUARTERLY_INSTALMENT_SHARE",
       "value": 0.25,
       "slug": "us-quarterly-estimated-tax",
-      "section": "5.4 Quarterly instalments",
-      "quote": "Quarterly instalments — Each instalment = required annual payment / 4 (25% each).",
+      "section": "Rates, bands and thresholds",
+      "quote": "Each regular installment | 25% of the required annual payment",
       "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
     },
     {
       "name": "ZERO_PRIOR_YEAR_TAX",
       "value": true,
       "slug": "us-quarterly-estimated-tax",
-      "section": "5.3 Prior year safe harbour requirements",
-      "quote": "Prior year must be 12-month tax year. Prior year return must be filed. If prior year tax was zero: required annual payment under Method B = $0",
+      "section": "Step 1: is anything required?",
+      "quote": "The zero-tax exception: no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025",
       "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
     },
     {
       "name": "NET_EARNINGS_FACTOR",
       "value": 0.9235,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Net earnings | Schedule C net profit × 92.35%",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "MIN_NET_EARNINGS",
       "value": 400,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "No self-employment tax below this net earnings amount | USD 400",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "SS_RATE",
       "value": 0.124,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Social Security part of self-employment tax | 12.4%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "WAGE_BASE",
@@ -872,26 +872,26 @@
         "2025": 176100,
         "2026": 184500
       },
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Wage base | $176,100 for 2025; $184,500 for 2026",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-tax-workflow-base",
+      "section": "Figures for 2026, with years",
+      "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base",
+      "skill_url": "https://www.openaccountants.com/skills/us-tax-workflow-base"
     },
     {
       "name": "MEDICARE_RATE",
       "value": 0.029,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Medicare part | 2.9% of all net earnings, with no cap",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Medicare part of self-employment tax | 2.9%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "DEDUCTIBLE_SHARE",
       "value": 0.5,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     }
   ]
 }

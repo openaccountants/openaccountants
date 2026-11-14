@@ -1,14 +1,15 @@
 ---
 name: dk-payroll
 description: "Use this skill to run Danish payroll for 2026: registering as an employer on virk.dk, the monthly eIndkomst report and its 2026 deadlines (the 10th of the next month for small and medium employers, the last banking day of the month for large ones), the eSkattekort (hovedkort, bikort, frikort) and the forskudsopgørelse behind it, the withholding order (ATP, then 8% AM-bidrag, then A-skat at the trækprocent after the monthly fradrag), ATP of DKK 99 employee and DKK 198 employer a month, holiday pay under the Holiday Act (ferietillæg 1%, feriegodtgørelse 12.5%, FerieKonto), free car and free phone, payslips and penalties. Trigger phrases: lønkørsel, A-skat, am-bidrag, trækprocent, skattekort, eIndkomst, feriepenge, fri bil, Danish payroll. Out of scope: the employee's own tax computation (dk-income-tax), employer social contributions and Samlet Betaling (dk-social-contributions), self-employed B-tax (dk-income-tax), company tax (dk-corporate-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Denmark payroll: withholding, eIndkomst and holiday pay (2026)
@@ -242,34 +243,34 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Kildeskatteloven, LBK nr. 460 of 3 May 2024 (§§ 43 to 49 D, 48 B, 48 E, 48 F, 69, 74) | https://www.retsinformation.dk/eli/lta/2024/460 | 2026-10-23 |
-| Arbejdsmarkedsbidragsloven, LBK nr. 121 of 7 February 2020 (§§ 1 to 3) | https://www.retsinformation.dk/eli/lta/2020/121 | 2026-10-23 |
-| Lov nr. 96 of 4 February 2025 (young people exempt from AM-bidrag from 2026; AMBL § 1, 2nd sentence) | https://www.retsinformation.dk/eli/lta/2025/96 | 2026-10-23 |
-| Opkrævningsloven, LBK nr. 1040 of 13 September 2024 (§ 2(5) and (6): due dates and the large-employer test) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-23 |
-| Ferieloven, LBK nr. 152 of 20 February 2024 (§§ 3, 4 to 6, 16 to 19, 31, 34) | https://www.retsinformation.dk/eli/lta/2024/152 | 2026-10-23 |
-| Ligningsloven, LBK nr. 1500 of 24 November 2025 (§ 16(4) free car, § 16(12) free phone) | https://www.retsinformation.dk/eli/lta/2025/1500 | 2026-10-23 |
-| Skattestyrelsen, Frister: A-skat og am-bidrag (2026 deadline tables) | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-10-23 |
-| Skattestyrelsen, Sådan indberetter du løn (eIndkomst fields, nil return, DKK 1,400 fee, SMV test) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/saadan-indberetter-du-loen-eindkomst | 2026-10-23 |
-| Skattestyrelsen, Skat af ansattes løn (2026 youth AM-bidrag rule, foreign employers) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/skat-af-ansattes-loen | 2026-10-23 |
-| Skattestyrelsen, Sådan betaler du A-skat og am-bidrag (interest from the original deadline) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/saadan-betaler-du-a-skat-og-am-bidrag | 2026-10-23 |
-| Skattestyrelsen, Indberet feriepenge | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/indberet-feriepenge | 2026-10-23 |
-| Skattestyrelsen, Fri bil til dine medarbejdere (2026 rates and example) | https://skat.dk/erhverv/ansatte-og-loen/personalegoder-naar-du-er-arbejdsgiver/fri-bil-til-dine-medarbejdere-firmabil | 2026-10-23 |
-| Skattestyrelsen, Fri telefon, computer og internet (DKK 3,500 for 2026) | https://skat.dk/erhverv/ansatte-og-loen/personalegoder-naar-du-er-arbejdsgiver/fri-telefon-computer-og-internet-til-dine-ansatte | 2026-10-23 |
-| Skattestyrelsen, The Danish tax card (personal allowance DKK 54,100) | https://skat.dk/en-us/individuals/tax-card | 2026-10-23 |
-| Skattestyrelsen, Labour market contribution (order of deductions) | https://skat.dk/en-us/individuals/labour-market-contribution | 2026-10-23 |
-| Skattestyrelsen, Hiring your first employee (registration, payslip items) | https://skat.dk/en-us/businesses/employees-and-pay/hiring-your-first-employee | 2026-10-23 |
-| Skattestyrelsen, Start-up guide: Lav en lønseddel | https://skat.dk/erhverv/guides-og-webinarer-til-start-ups/start-up-med-skat/for-selskaber/ansatte/del-2-lav-en-loenseddel-og-bogfoer-loennen | 2026-10-23 |
-| Skattestyrelsen, Payments to your tax account (0.95% a month in 2026; reminder fee DKK 160 from 14 September 2026) | https://skat.dk/en-us/businesses/payment-and-the-tax-account-skattekontoen/payments-to-your-tax-account | 2026-10-23 |
-| Den juridiske vejledning A.B.4.7.2 (monthly interest, basis plus 0.85 points) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-23 |
-| SKM notice: rate under opkrævningsloven § 7(2) for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-23 |
-| Den juridiske vejledning A.B.4.1.1.2.6 (rounding) | https://info.skat.dk/data.aspx?oid=2292833 | 2026-10-23 |
-| Den juridiske vejledning C.A.10.2.1.1.2.4 (ATP: 1/3 and 2/3, PBL § 19) | https://info.skat.dk/data.aspx?oid=2048235 | 2026-10-23 |
-| eIndkomst reporting guide 8.3.1 (holiday pay for hourly staff, taxed when earned) | https://info.skat.dk/data.aspx?oid=2287085 | 2026-10-23 |
-| eIndkomst reporting guide 8.2 (field 13 after ATP and employer-administered pension; fields 147 and 148) | https://info.skat.dk/data.aspx?oid=2233519 | 2026-10-23 |
-| eIndkomst reporting guide 8.4.1 (field 19 free car, field 20 free phone, couple's threshold DKK 4,600) | https://info.skat.dk/data.aspx?oid=2395003 | 2026-10-23 |
-| Den juridiske vejledning C.F.6.1.4 (researcher scheme minimum pay DKK 65,400 for 2026) | https://info.skat.dk/data.aspx?oid=1977289 | 2026-10-23 |
-| borger.dk, ATP-satser for 2026 i privat virksomhed | https://www.borger.dk/pension-og-efterloen/ATP-Livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed | 2026-10-23 |
-| virk.dk, ATP Livslang Pension: arbejdsgiver (conditions, quarterly deadlines, interest) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ | 2026-10-23 |
-| virk.dk, Feriepenge: arbejdsgiver (FerieKonto deadlines, DKK 4 fee) | https://virk.dk/vejledning/feriepenge/fp-arbejdsgiver/ | 2026-10-23 |
+| Kildeskatteloven, LBK nr. 460 of 3 May 2024 (§§ 43 to 49 D, 48 B, 48 E, 48 F, 69, 74) | https://www.retsinformation.dk/eli/lta/2024/460 | 2026-11-14 |
+| Arbejdsmarkedsbidragsloven, LBK nr. 121 of 7 February 2020 (§§ 1 to 3) | https://www.retsinformation.dk/eli/lta/2020/121 | 2026-11-14 |
+| Lov nr. 96 of 4 February 2025 (young people exempt from AM-bidrag from 2026; AMBL § 1, 2nd sentence) | https://www.retsinformation.dk/eli/lta/2025/96 | 2026-11-14 |
+| Opkrævningsloven, LBK nr. 1040 of 13 September 2024 (§ 2(5) and (6): due dates and the large-employer test) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-11-14 |
+| Ferieloven, LBK nr. 152 of 20 February 2024 (§§ 3, 4 to 6, 16 to 19, 31, 34) | https://www.retsinformation.dk/eli/lta/2024/152 | 2026-11-14 |
+| Ligningsloven, LBK nr. 1500 of 24 November 2025 (§ 16(4) free car, § 16(12) free phone) | https://www.retsinformation.dk/eli/lta/2025/1500 | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Frister: A-skat og am-bidrag (2026 deadline tables) | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-11-14 |
+| Read for Fee for each provisional estimate (foreløbig fastsættelse) when a month is not reported: Skattestyrelsen, Sådan indberetter du løn (eIndkomst fields, nil return, DKK 1,400 fee, SMV test) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/saadan-indberetter-du-loen-eindkomst | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Skat af ansattes løn (2026 youth AM-bidrag rule, foreign employers) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/skat-af-ansattes-loen | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Sådan betaler du A-skat og am-bidrag (interest from the original deadline) | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/saadan-betaler-du-a-skat-og-am-bidrag | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Indberet feriepenge | https://skat.dk/erhverv/ansatte-og-loen/indberet-loen-eindkomst/indberet-feriepenge | 2026-11-14 |
+| Read for Free car: minimum value of the car: Skattestyrelsen, Fri bil til dine medarbejdere (2026 rates and example) | https://skat.dk/erhverv/ansatte-og-loen/personalegoder-naar-du-er-arbejdsgiver/fri-bil-til-dine-medarbejdere-firmabil | 2026-11-14 |
+| Read for Free phone (and data connection without access to the work network): Skattestyrelsen, Fri telefon, computer og internet (DKK 3,500 for 2026) | https://skat.dk/erhverv/ansatte-og-loen/personalegoder-naar-du-er-arbejdsgiver/fri-telefon-computer-og-internet-til-dine-ansatte | 2026-11-14 |
+| Read for General personal allowance (personfradrag), full-year, fully liable adult: Skattestyrelsen, The Danish tax card (personal allowance DKK 54,100) | https://skat.dk/en-us/individuals/tax-card | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Labour market contribution (order of deductions) | https://skat.dk/en-us/individuals/labour-market-contribution | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Hiring your first employee (registration, payslip items) | https://skat.dk/en-us/businesses/employees-and-pay/hiring-your-first-employee | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Start-up guide: Lav en lønseddel | https://skat.dk/erhverv/guides-og-webinarer-til-start-ups/start-up-med-skat/for-selskaber/ansatte/del-2-lav-en-loenseddel-og-bogfoer-loennen | 2026-11-14 |
+| Read for Interest on late A-tax and AM-bidrag (Skattekonto): Skattestyrelsen, Payments to your tax account (0.95% a month in 2026; reminder fee DKK 160 from 14 September 2026) | https://skat.dk/en-us/businesses/payment-and-the-tax-account-skattekontoen/payments-to-your-tax-account | 2026-11-14 |
+| Read for the points the body cites to it: Den juridiske vejledning A.B.4.7.2 (monthly interest, basis plus 0.85 points) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-11-14 |
+| SKM notice: rate under opkrævningsloven § 7(2) for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-11-14 |
+| Read for the points the body cites to it: Den juridiske vejledning A.B.4.1.1.2.6 (rounding) | https://info.skat.dk/data.aspx?oid=2292833 | 2026-11-14 |
+| Den juridiske vejledning C.A.10.2.1.1.2.4 (ATP: 1/3 and 2/3, PBL § 19) | https://info.skat.dk/data.aspx?oid=2048235 | 2026-11-14 |
+| Read for the points the body cites to it: eIndkomst reporting guide 8.3.1 (holiday pay for hourly staff, taxed when earned) | https://info.skat.dk/data.aspx?oid=2287085 | 2026-11-14 |
+| Read for the points the body cites to it: eIndkomst reporting guide 8.2 (field 13 after ATP and employer-administered pension; fields 147 and 148) | https://info.skat.dk/data.aspx?oid=2233519 | 2026-11-14 |
+| Read for the points the body cites to it: eIndkomst reporting guide 8.4.1 (field 19 free car, field 20 free phone, couple's threshold DKK 4,600) | https://info.skat.dk/data.aspx?oid=2395003 | 2026-11-14 |
+| Read for Researcher and key-employee scheme: minimum monthly pay for key employees (KSL § 48 E(3) no. 3), plus ATP: Den juridiske vejledning C.F.6.1.4 (researcher scheme minimum pay DKK 65,400 for 2026) | https://info.skat.dk/data.aspx?oid=1977289 | 2026-11-14 |
+| Read for ATP, monthly paid, private employer, at least 117 hours a month: employee / employer / total: borger.dk, ATP-satser for 2026 i privat virksomhed | https://www.borger.dk/pension-og-efterloen/ATP-Livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed | 2026-11-14 |
+| Read for Interest on late ATP (Samlet Betaling): virk.dk, ATP Livslang Pension: arbejdsgiver (conditions, quarterly deadlines, interest) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ | 2026-11-14 |
+| Read for FerieKonto administration fee: virk.dk, Feriepenge: arbejdsgiver (FerieKonto deadlines, DKK 4 fee) | https://virk.dk/vejledning/feriepenge/fp-arbejdsgiver/ | 2026-11-14 |
 
 Not yet confirmed: the statutory basis of the monthly payslip duty (Skattestyrelsen's guidance says "must" in Danish and "should" in English, and names no provision).

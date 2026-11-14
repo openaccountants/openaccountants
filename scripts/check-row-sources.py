@@ -74,7 +74,118 @@ def _value(s):
 
 
 # A space, no-break space or thin space between digit groups ("1 234,56").
-GROUP_SPACE_RE = re.compile(r"(?<=\d)[ \u00a0\u202f\u2009](?=\d{3}\b)")
+# A space, no-break space, thin space or apostrophe between digit groups ("1 234,56", Swiss "80'000").
+GROUP_SPACE_RE = re.compile(r"(?<=\d)[ \u00a0\u202f\u2009'\u2019](?=\d{3}\b)")
+
+
+# Laws often write a rate in words ("twenty per cent", "centoventi per cento",
+# "diez por ciento", "vingt pour cent", "vinte por cento", 百分之七十). These tables
+# give the words for 1 to 200 in each language, so such a rate matches its digit.
+def _strip_accents(s):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+
+
+def _en(n):
+    u = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+    tens = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+    if n < 20: return [u[n]]
+    if n < 100:
+        t, r = divmod(n, 10)
+        return [tens[t]] if r == 0 else [f"{tens[t]}-{u[r]}", f"{tens[t]} {u[r]}"]
+    h, r = divmod(n, 100)
+    head = f"{u[h]} hundred"
+    return [head] if r == 0 else [f"{head} and {w}" for w in _en(r)] + [f"{head} {w}" for w in _en(r)]
+
+
+def _it(n):
+    u = "zero uno due tre quattro cinque sei sette otto nove dieci undici dodici tredici quattordici quindici sedici diciassette diciotto diciannove".split()
+    tens = "_ _ venti trenta quaranta cinquanta sessanta settanta ottanta novanta".split()
+    if n < 20: return [u[n]]
+    if n < 100:
+        t, r = divmod(n, 10)
+        if r == 0: return [tens[t]]
+        stem = tens[t][:-1] if r in (1, 8) else tens[t]
+        return [stem + u[r]] + ([tens[t] + "tre"] if r == 3 else [])
+    h, r = divmod(n, 100)
+    head = "cento" if h == 1 else u[h] + "cento"
+    return [head] if r == 0 else [head + w for w in _it(r)]
+
+
+def _es(n):
+    u = "cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve".split()
+    veinti = "veinte veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve".split()
+    tens = "_ _ veinte treinta cuarenta cincuenta sesenta setenta ochenta noventa".split()
+    if n < 20: return [u[n]]
+    if n < 30: return [veinti[n - 20]]
+    if n < 100:
+        t, r = divmod(n, 10)
+        return [tens[t]] if r == 0 else [f"{tens[t]} y {u[r]}"]
+    if n == 100: return ["cien"]
+    if n < 200: return ["ciento " + w for w in _es(n - 100)]
+    return ["doscientos"]
+
+
+def _fr(n):
+    u = "zero un deux trois quatre cinq six sept huit neuf dix onze douze treize quatorze quinze seize dix-sept dix-huit dix-neuf".split()
+    tens = "_ _ vingt trente quarante cinquante soixante".split()
+    if n < 20: return [u[n]]
+    if n < 70:
+        t, r = divmod(n, 10)
+        if r == 0: return [tens[t]]
+        return [f"{tens[t]} et un"] if r == 1 else [f"{tens[t]}-{u[r]}"]
+    if n < 80:
+        r = n - 60
+        return ["soixante et onze"] if r == 11 else [f"soixante-{u[r]}"]
+    if n < 100:
+        r = n - 80
+        return ["quatre-vingts"] if r == 0 else [f"quatre-vingt-{u[r]}"]
+    if n == 100: return ["cent"]
+    if n < 200: return ["cent " + w for w in _fr(n - 100)]
+    return ["deux cents"]
+
+
+def _pt(n):
+    u = "zero um dois tres quatro cinco seis sete oito nove dez onze doze treze catorze quinze dezasseis dezassete dezoito dezanove".split()
+    br = {16: "dezesseis", 17: "dezessete", 19: "dezenove"}
+    tens = "_ _ vinte trinta quarenta cinquenta sessenta setenta oitenta noventa".split()
+    if n < 20: return [u[n]] + ([br[n]] if n in br else [])
+    if n < 100:
+        t, r = divmod(n, 10)
+        return [tens[t]] if r == 0 else [f"{tens[t]} e {w}" for w in _pt(r)]
+    if n == 100: return ["cem"]
+    if n < 200: return ["cento e " + w for w in _pt(n - 100)]
+    return ["duzentos"]
+
+
+PERCENT_WORDS = r"(?:per\s*cent(?:um)?|percent|per\s+cento|por\s+ciento|pour\s+cent|por\s+cento)"
+_WORD_VALUES = {}
+for _n in range(1, 201):
+    for _f in (_en, _it, _es, _fr, _pt):
+        for _w in _f(_n):
+            _WORD_VALUES[_w] = _n
+_WORD_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in sorted(_WORD_VALUES, key=len, reverse=True))
+                      + r")\s*(?:\(\s*[\d.,]+\s*\)\s*)?" + PERCENT_WORDS, re.IGNORECASE)
+_ZH_DIGITS = {"一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
+
+
+def _zh_number(s):
+    if s == "百": return 100
+    if "十" in s:
+        a, _, b = s.partition("十")
+        return (_ZH_DIGITS.get(a, 1) if a else 1) * 10 + (_ZH_DIGITS.get(b, 0) if b else 0)
+    return _ZH_DIGITS.get(s)
+
+
+def word_percent_values(page_text):
+    """Rates the page writes in words, as numbers (20 for "twenty per cent")."""
+    vals = set()
+    for m in _WORD_RE.finditer(_strip_accents(page_text)):
+        vals.add(float(_WORD_VALUES[m.group(1).lower()]))
+    for m in re.finditer(r"百分之([一二两三四五六七八九十百]{1,4})", page_text):
+        v = _zh_number(m.group(1))
+        if v: vals.add(float(v))
+    return vals
 
 
 def page_values(page_text):
@@ -92,6 +203,7 @@ def page_values(page_text):
             vals.add(round(float(m.replace(".", "").replace(",", ".")), 6))
         except ValueError:
             pass
+    vals |= word_percent_values(page_text)
     return vals
 
 
