@@ -48,7 +48,7 @@ The graduated corporate schedule (1.41%, 3.55%, 4.31%) is owned by `nd-corporate
 | Default apportionment fraction | (property + payroll + sales) / 3 | [N.D.C.C. 57-38.1-09(1)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
 | Single-sales-factor election (non-passthrough taxpayer, years after 2018): binding period | five consecutive taxable years, then lapses | [N.D.C.C. 57-38.1-09(4)(c)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
 | Waiting period before a new single-sales-factor election if not renewed in the next year | three taxable years on the default formula | [N.D.C.C. 57-38.1-09(4)(d)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
-| Corporation estimated tax required when both the prior-year liability and the expected current liability exceed | USD 5,000 | [N.D.C.C. 57-38-62(2)](https://ndlegis.gov/cencode/t57c38.pdf); [2026 Form 40-ES](https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf) |
+| Corporation estimated tax required when both the prior-year liability and the expected current liability exceed | Five thousand dollars | [N.D.C.C. 57-38-62(2)](https://ndlegis.gov/cencode/t57c38.pdf) |
 | Interest on underpaid corporate estimates | 12% per annum | [2026 Form 40-ES, kept in the agency's 2025-corp folder](https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf) |
 
 ## The base
