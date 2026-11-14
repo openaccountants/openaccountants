@@ -8,21 +8,21 @@ description: >
   Tier 2 draft; incomplete as an operational country skill.
 jurisdiction: WF
 category: international
-tax_year: 2019
-tax_year_notes: "Historical reference: primary tariff-base figures are from the selected 2019 gazette units. Selected 2018, 2019 and 2024 units and the official administrative page were read by 1 November 2026 UTC. Express effects include 1 January 2019, 1 January 2020 and 1 January 2025. The complete principal, operative Article 15 amendment and later chain remain unqualified. This period label certifies no requested-period liability or actual 2026 obligation."
+tax_year: 2026
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: situation-rules
 ---
 
-# Wallis and Futuna Patente Registration Reference (v0.2)
+# Wallis and Futuna Patente Registration Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+**Tax year 2026.** The patente figures on the official administrative page (S7), re-read on 14 November 2026, are the same as in Ryan's reading: a taxe déterminée by activity of 10 000 Fcfp minimum to 900 000 Fcfp maximum, the alcohol additional duty, the 2 % proportional duty on the customs value of imports and the 30% chamber levy. The 2019 gazette tariff bases (S3) were re-read on the same day. No later gazette changing these figures was found, but the complete later chain is not established (see Not yet confirmed). Ryan's earlier `tax_year: 2019` reflected the gazette dates; the rules are applied here to 2026 on that basis.
 
 ## Scope
 
@@ -207,48 +207,28 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| S1. JOWF 474, 31 July 2018 | https://www.wallis-et-futuna.gouv.fr/content/download/4591/32383/file/N%C2%B0%20474%20-%2031%20JUILLET%202018.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S2. JOWF 486, 31 December 2018 | https://www.wallis-et-futuna.gouv.fr/content/download/5383/37094/file/N%25C2%25B0%2520486%2520-%252031%2520DECEMBRE%25202018.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S3. JOWF 498, 30 June 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/6482/43335/file/JOWF%20n%C2%B0%20498%20du%2030%20JUIN%202019.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S4. JOWF 506, 15 October 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/6975/46017/file/JOWF%20N%C2%B0%20506%20du%2015%20OCTOBRE%202019.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S5. JOWF 511, 15 December 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/7300/47983/file/JOWF%20N%C2%B0%20511%20du%2015%20DECEMBRE%202019.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S6. JOWF 703, 31 December 2024 | https://www.wallis-et-futuna.gouv.fr/contenu/telechargement/14335/117826/file/JOWF%20N%C2%B0%20703%20du%2031%20d%C3%A9cembre%202024.pdf | Exact reading day unrecorded; read by 2026-11-01 UTC; specified complete units only |
-| S7. Official patente administrative page | https://www.wallis-et-futuna.gouv.fr/Demarches/Patente-professionnelle | 2026-11-01 UTC; complete LA PATENTE body through mandatory formalities |
+| S1. JOWF 474, 31 July 2018 | https://www.wallis-et-futuna.gouv.fr/content/download/4591/32383/file/N%C2%B0%20474%20-%2031%20JUILLET%202018.pdf | Read by Ryan by 2026-11-01 UTC (exact day unrecorded), specified complete units only; downloaded 2026-11-14, not re-read |
+| S2. JOWF 486, 31 December 2018 | https://www.wallis-et-futuna.gouv.fr/content/download/5383/37094/file/N%25C2%25B0%2520486%2520-%252031%2520DECEMBRE%25202018.pdf | Read by Ryan by 2026-11-01 UTC (exact day unrecorded), specified complete units only; downloaded 2026-11-14, not re-read |
+| S3. JOWF 498, 30 June 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/6482/43335/file/JOWF%20n%C2%B0%20498%20du%2030%20JUIN%202019.pdf | 2026-11-14 (re-read the printed 2-row annex, NAF 4931Z and 4939A); first read by Ryan by 2026-11-01 |
+| S4. JOWF 506, 15 October 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/6975/46017/file/JOWF%20N%C2%B0%20506%20du%2015%20OCTOBRE%202019.pdf | Read by Ryan by 2026-11-01 UTC (exact day unrecorded), specified complete units only; downloaded 2026-11-14, not re-read |
+| S5. JOWF 511, 15 December 2019 | https://www.wallis-et-futuna.gouv.fr/content/download/7300/47983/file/JOWF%20N%C2%B0%20511%20du%2015%20DECEMBRE%202019.pdf | Read by Ryan by 2026-11-01 UTC (exact day unrecorded), specified complete units only; downloaded 2026-11-14, not re-read |
+| S6. JOWF 703, 31 December 2024 | https://www.wallis-et-futuna.gouv.fr/contenu/telechargement/14335/117826/file/JOWF%20N%C2%B0%20703%20du%2031%20d%C3%A9cembre%202024.pdf | Read by Ryan by 2026-11-01 UTC (exact day unrecorded), specified complete units only; downloaded 2026-11-14, not re-read |
+| S7. Official patente administrative page | https://www.wallis-et-futuna.gouv.fr/Demarches/Patente-professionnelle | 2026-11-14 (re-read for the taxe déterminée, additional duty, 2 % proportional duty and 30% chamber levy); first read by Ryan 2026-11-01 UTC |
 
 ### Scope, period and primary sources
 
 The principal identified by the relied gazettes is délibération 03/AT/2003 of 24 January 2003, approved by arrêté 2003-018 of 29 January 2003. Its complete body has not been qualified here. Neither recitals nor an administrative summary supplies the missing principal, operative amendments or a complete current tax regime. This reference does not establish comprehensive WF coverage, tax absence, company formation, payroll, social, property, cross-border or other tax treatment.
 
-| Source | Complete relied units and read bounds | Limit |
-| --- | --- | --- |
-| **S1. [JOWF 474, 31 July 2018](https://www.wallis-et-futuna.gouv.fr/content/download/4591/32383/file/N%C2%B0%20474%20-%2031%20JUILLET%202018.pdf)** | Complete arrêté 2018-457 of 26 July 2018 and délibération 41/AT/2018 of 5 July 2018 on physical pp 66–67. | The deliberation annuls 74/AT/2017 and changes the tariff by annex. Its annex extends through physical p 71; its full row set is not adopted by this reference. No full 94-page issue reading or current tariff claim. |
-| **S2. [JOWF 486, 31 December 2018](https://www.wallis-et-futuna.gouv.fr/content/download/5383/37094/file/N%25C2%25B0%2520486%2520-%252031%2520DECEMBRE%25202018.pdf)** | Complete arrêté 2018-951 of 19 December 2018 and délibération 80/AT/2018 of 30 November 2018, physical pp 24–25, printed pp 18657–18658. Replaces principal articles 1 and 7; express effect 1 January 2019. | Its artist wording is historical in light of S5. No complete principal or later-chain acceptance. |
-| **S3. [JOWF 498, 30 June 2019](https://www.wallis-et-futuna.gouv.fr/content/download/6482/43335/file/JOWF%20n%C2%B0%20498%20du%2030%20JUIN%202019.pdf)** | Complete arrêté 2019-477 of 28 June 2019 and délibération 42/AT/2019 of 20 June 2019, including the complete printed 2-row annex, physical pp 47–48, printed pp 19149–19150. Express effect 1 January 2019. | Both amount columns are assessable bases. Marker '(1)' is unexplained in the printed annex before the next instrument. No payable tax or complete present tariff established. |
-| **S4. [JOWF 506, 15 October 2019](https://www.wallis-et-futuna.gouv.fr/content/download/6975/46017/file/JOWF%20N%C2%B0%20506%20du%2015%20OCTOBRE%202019.pdf)** | Complete arrêté 2019-833 of 15 October 2019 and délibération 60/AT/2019 of 30 September 2019, all 12 articles, physical pp 42–44, printed pp 19521–19523. | Article 11 ties application to entry into force of the approval order. A calendar commencement is not inferred from signature alone. Required implementing instruments and later changes remain open. |
-| **S5. [JOWF 511, 15 December 2019](https://www.wallis-et-futuna.gouv.fr/content/download/7300/47983/file/JOWF%20N%C2%B0%20511%20du%2015%20DECEMBRE%202019.pdf)** | Complete arrêté 2019-1070 of 12 December 2019 and délibération 111/AT/2019 of 5 December 2019, physical pp 84–85, printed pp 19788–19789. Replaces principal article 7; express entry into force 1 January 2020. | No acceptance of all later law or an actual exemption. The original date controls this historical reading over a conflicting catalogue date. |
-| **S6. [JOWF 703, 31 December 2024](https://www.wallis-et-futuna.gouv.fr/contenu/telechargement/14335/117826/file/JOWF%20N%C2%B0%20703%20du%2031%20d%C3%A9cembre%202024.pdf)** | Complete arrêtés 2024-792 and 2024-793 of 16 December 2024 and délibérations 81/AT/2024 and 82/AT/2024 of 4 December 2024, physical pp 23–26, printed pp 26198–26201. Both deliberations expressly take effect 1 January 2025. | Management allocation does not establish the charging rule, amount, deadline, payment account or current operating channel. Adjacent transport, tobacco and personnel measures are not adopted. |
-| **S7. [Official patente administrative page](https://www.wallis-et-futuna.gouv.fr/Demarches/Patente-professionnelle)** | Complete 'LA PATENTE' body through mandatory formalities, read on 1 November 2026 UTC. Official internal search labels the page updated 17 November 2025. | Administrative summary only. The update and retrieval dates do not qualify its statutory basis or resolve its contact information against S6. No linked principal or complete assessment workflow was obtained. |
+| Source | Complete relied units and read bounds | Limit | Read on |
+| --- | --- | --- | --- |
+| **S1. [JOWF 474, 31 July 2018](https://www.wallis-et-futuna.gouv.fr/content/download/4591/32383/file/N%C2%B0%20474%20-%2031%20JUILLET%202018.pdf)** | Complete arrêté 2018-457 of 26 July 2018 and délibération 41/AT/2018 of 5 July 2018 on physical pp 66–67. | The deliberation annuls 74/AT/2017 and changes the tariff by annex. Its annex extends through physical p 71; its full row set is not adopted by this reference. No full 94-page issue reading or current tariff claim. | 2026-11-01 (read by Ryan) |
+| **S2. [JOWF 486, 31 December 2018](https://www.wallis-et-futuna.gouv.fr/content/download/5383/37094/file/N%25C2%25B0%2520486%2520-%252031%2520DECEMBRE%25202018.pdf)** | Complete arrêté 2018-951 of 19 December 2018 and délibération 80/AT/2018 of 30 November 2018, physical pp 24–25, printed pp 18657–18658. Replaces principal articles 1 and 7; express effect 1 January 2019. | Its artist wording is historical in light of S5. No complete principal or later-chain acceptance. | 2026-11-01 (read by Ryan) |
+| **S3. [JOWF 498, 30 June 2019](https://www.wallis-et-futuna.gouv.fr/content/download/6482/43335/file/JOWF%20n%C2%B0%20498%20du%2030%20JUIN%202019.pdf)** | Complete arrêté 2019-477 of 28 June 2019 and délibération 42/AT/2019 of 20 June 2019, including the complete printed 2-row annex, physical pp 47–48, printed pp 19149–19150. Express effect 1 January 2019. | Both amount columns are assessable bases. Marker '(1)' is unexplained in the printed annex before the next instrument. No payable tax or complete present tariff established. | 2026-11-01 (read by Ryan) |
+| **S4. [JOWF 506, 15 October 2019](https://www.wallis-et-futuna.gouv.fr/content/download/6975/46017/file/JOWF%20N%C2%B0%20506%20du%2015%20OCTOBRE%202019.pdf)** | Complete arrêté 2019-833 of 15 October 2019 and délibération 60/AT/2019 of 30 September 2019, all 12 articles, physical pp 42–44, printed pp 19521–19523. | Article 11 ties application to entry into force of the approval order. A calendar commencement is not inferred from signature alone. Required implementing instruments and later changes remain open. | 2026-11-01 (read by Ryan) |
+| **S5. [JOWF 511, 15 December 2019](https://www.wallis-et-futuna.gouv.fr/content/download/7300/47983/file/JOWF%20N%C2%B0%20511%20du%2015%20DECEMBRE%202019.pdf)** | Complete arrêté 2019-1070 of 12 December 2019 and délibération 111/AT/2019 of 5 December 2019, physical pp 84–85, printed pp 19788–19789. Replaces principal article 7; express entry into force 1 January 2020. | No acceptance of all later law or an actual exemption. The original date controls this historical reading over a conflicting catalogue date. | 2026-11-01 (read by Ryan) |
+| **S6. [JOWF 703, 31 December 2024](https://www.wallis-et-futuna.gouv.fr/contenu/telechargement/14335/117826/file/JOWF%20N%C2%B0%20703%20du%2031%20d%C3%A9cembre%202024.pdf)** | Complete arrêtés 2024-792 and 2024-793 of 16 December 2024 and délibérations 81/AT/2024 and 82/AT/2024 of 4 December 2024, physical pp 23–26, printed pp 26198–26201. Both deliberations expressly take effect 1 January 2025. | Management allocation does not establish the charging rule, amount, deadline, payment account or current operating channel. Adjacent transport, tobacco and personnel measures are not adopted. | 2026-11-01 (read by Ryan) |
+| **S7. [Official patente administrative page](https://www.wallis-et-futuna.gouv.fr/Demarches/Patente-professionnelle)** | Complete 'LA PATENTE' body through mandatory formalities, read on 1 November 2026 UTC. Official internal search labels the page updated 17 November 2025. | Administrative summary only. The update and retrieval dates do not qualify its statutory basis or resolve its contact information against S6. No linked principal or complete assessment workflow was obtained. | 2026-11-01 (read by Ryan) |
 
 Source identity, enactment, approval, publication, express commencement and retrieval are separate. The original operative texts above control the particular historical statements. Assembly catalogue labels conflict with some originals: the 29/AT/2017 card says 4 July 2017 whilst gazette recitals say 5 July; the card labelled 31/AT/2002 gives 2 October 2008 whilst recitals identify 31/AT/08 of 3 October 2008. Those cards are locators, not operative texts. Their discrepancies do not establish which unqualified instrument applies.
 
-Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: any gazette after JOWF 703 (31 December 2024) changing the patente for 2026 (figures are applied to 2026 on the S7 page re-read on 2026-11-14; labelled for the 2025-2026 filing cycle); the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.

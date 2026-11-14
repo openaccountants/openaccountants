@@ -1715,6 +1715,13 @@
   "dir": "skills/vanuatu"
  },
  {
+  "code": "WF",
+  "name": "Wallis and Futuna",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/wallis-and-futuna"
+ },
+ {
   "code": "WS",
   "name": "Samoa",
   "region": "apac",
