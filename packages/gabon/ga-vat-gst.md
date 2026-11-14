@@ -7,14 +7,14 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-14
-version: 0.3
+version: 0.5
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 type: situation-rules
 ---
 
-# Gabon VAT and turnover taxes v0.3
+# Gabon VAT and turnover taxes v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,6 +32,7 @@ Independent economic activity under articles 207-209, including sales, imports a
 | Forestry gateway | 500,000,000, subject to the code scope | 2025 statutory baseline; 2026 currency hold | [CGI art208](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger V-FORESTCAP) |
 | Nonresident taxable persons | No Gabon turnover minimum | July 2026 text; implementation/first period unresolved | [LFR002/2026 art4, CGI art208ter](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-NONRES) |
 | Ordinary rate | 18%; classify reduced, zero and exempt items first | 2026 initial law and July amendment | [LF041/2025 art4, CGI art221](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf) (ledger V-RATESLF) |
+| Initial 2026 law reduced rates | 10%: production and sale of fishing gear, outboard motors, mineral water produced in Gabon, washing powder, rebar, office computers, tinned pulses, vegetables and fruit, water and electricity on social and standard meters, cement. 5%: listed dairy, margarine, butter, bread, flour, yeast, gluten, eggs, rice, tinned sardines, pilchards and mackerel, pasta, locally made table oil, salt; tourism investments of at least 300,000,000 excluding tax; used goods sold by the business that used them; petrol for licensed artisanal fishing. Rates apply to local and imported goods | LF041/2025, before the July amendment; reconcile with the July rows | [LF041/2025 art4, CGI art221](https://journal-officiel.ga/22265-041-2025-/) |
 | July specified reduced items | 10%: listed auto spare parts, axles, construction tiles, nails; retained earlier terms require reconciliation | July 2026 amendment | [LFR002/2026 art4, CGI art221(2)](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-TEN) |
 | July specified imported items | 5%: imported newspapers/magazines and mineral water; retained earlier terms require reconciliation | July 2026 amendment | [LFR002/2026 art4, CGI art221(3)](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-FIVE) |
 | July local rebar | 3% only for reinforcing iron manufactured in Gabon | July 2026 amendment | [LFR002/2026 art4, CGI art221(4)](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-THREE) |
@@ -104,8 +105,9 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
+| Journal Officiel: Law 041/2025, replacement arts 221 and 223 read | https://journal-officiel.ga/22265-041-2025-/ | 2026-11-14 |
 | CGI: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read. | https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf | 2026-11-01 |
-| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
-| LF: Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf | 2026-11-01 |
+| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis, 91bis, 178bis, 202-204, 208ter, 210, 211ter, 215, 221-224, 227, 230, 243bis, 248septies-nonies, 401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
+| LF: Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11, 23, 178bis, 210, 221, 223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf | 2026-11-01 |
 
 Not yet confirmed: The complete 2025-to-2026 item-level rate/exemption consolidation and commencement, the exact 90% prorata case, construction/property exceptions, refund workflow, digital registration form/current interface, reverse-charge interaction, CSS implementation and current excise schedule. The old broad 5%-40% excise claim is unverified and not a rate instruction. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).
