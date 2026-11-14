@@ -25,7 +25,7 @@ Anyone starting a Djibouti question. The tax authority is the Direction Generale
 | Minimum tax | 1%, floor 120,000 | Arts. 60, 61 | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
 | Top ITS band | 45% | Above 2,000,000 a month | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ |
 | VAT | 10% | Art. 187 | https://www.journalofficiel.dj/texte-juridique/loi-n82-an-14-7eme-l-portant-budget-initial-de-letat-pour-lexercice-2015/ |
-| CNSS | 21.7% | Employer 15.7%, employee 6% | https://cnss.dj/declaration-et-versement-des-cotisations/ |
+| CNSS | 21.7% | Employer 15.7%, employee 6% (totals computed from the branch rates on the CNSS page) | https://cnss.dj/declaration-et-versement-des-cotisations/ |
 | Dividends | 5% | Art. 90L | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 | Non-resident payments | 25% | Art. 75 as amended by LF 2024 art. 26 | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 

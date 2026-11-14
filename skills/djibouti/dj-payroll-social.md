@@ -26,7 +26,7 @@ Every employer with staff, public or private, and domestic employers. Employers 
 | Pension | 8% | Employer 4%, employee 4%. No ceiling | same |
 | Care | 7% | Employer 5%, employee 2% | same |
 | Work injury | 1.2% | Employer only. Derived: page states 8.2% for care and injury, 7% care. The CNSS table on the financing page shows 1%; see below |  same |
-| Employer total | 15.7% | 5.5 + 4 + 5 + 1.2 | same |
+| Employer total | 15.7% | Computed: 5.5 + 4 + 5 + 1.2 | same |
 | Employee total | 6% | 4 + 2 | same |
 | Self-employed | 7% | Care only | https://cnss.dj/financement-de-la-cnss/ |
 | Ceiling | 400,000 a month | All schemes except pension (Arrete 2015-605 art. 1) | https://www.journalofficiel.dj/texte-juridique/arrete-n2015-605-pr-mtra-portant-modification-du-plafonnement-des-remunerations-entrant-en-compte-pour-la-determination-de-lassiette-des-cotisations-dues-a-la-cnss-et-revalorisation-du-bareme/ |
