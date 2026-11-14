@@ -1,350 +1,234 @@
 ---
 name: vietnam-pit
-description: Use this skill whenever asked about Vietnam personal income tax (thuế thu nhập cá nhân / TNCN) for resident individuals, self-employed persons, or sole proprietors. Trigger on phrases like "thuế TNCN", "Vietnam income tax", "thuế thu nhập cá nhân", "giảm trừ gia cảnh", "biểu thuế lũy tiến", "progressive tax Vietnam", "personal deduction Vietnam", "dependent deduction Vietnam", "PIT Vietnam", or any question about computing or filing personal income tax in Vietnam. Covers the 2026 five-bracket progressive rate schedule (Luật số 109/2025/QH15), personal and dependent deductions, and filing obligations. ALWAYS read this skill before touching any Vietnam PIT work.
-version: 1.0
+description: >
+  Use this skill whenever asked about Vietnam personal income tax (thuế thu nhập
+  cá nhân, TNCN) for tax year 2026, for employees, self-employed individuals and
+  household businesses. Trigger on phrases like thuế TNCN, Vietnam income tax,
+  giảm trừ gia cảnh, biểu thuế lũy tiến, PIT Vietnam, personal deduction Vietnam,
+  dependent deduction Vietnam, hộ kinh doanh tax, quyết toán thuế TNCN, or any
+  question about computing or filing personal income tax in Vietnam. Covers the
+  five-band schedule of Law 109/2025/QH15 (5%, 10%, 20%, 30%, 35%), the family
+  deductions of VND 15.5 million and 6.2 million a month, the business income
+  regime with the VND 1 billion threshold set by Decree 141/2026, other income,
+  non-residents and the 2026 filing deadlines. Tier 2, not reviewed by an
+  accountant.
+version: "2.0"
 jurisdiction: VN
 tax_year: 2026
-last_updated: 2026-07-13
+tax_year_notes: "Calendar tax year 2026. Law 109/2025/QH15 applies to employment and business income of residents from tax period 2026 and to all other income from 1 July 2026."
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
+type: computation
 ---
 
-# Vietnam Pit
+# Vietnam Personal Income Tax (Thuế Thu Nhập Cá Nhân, TNCN) v2.0
 
-## Vietnam Personal Income Tax (Thuế Thu Nhập Cá Nhân / TNCN) v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 — Quick Reference
+## Who this applies to
 
-**Section 1 Quick Reference table**
+Individuals with Vietnam personal income tax obligations for the calendar tax year 2026: resident employees, resident individuals and household businesses with business income, and non-residents with Vietnam-source income. Companies are in [vn-corporate-income-tax](vn-corporate-income-tax.md); social insurance is in [vn-payroll-social](vn-payroll-social.md); VAT is in [vietnam-vat](vietnam-vat.md).
+
+**Quick reference**
 
 | Field | Value |
 | --- | --- |
-| Country | Vietnam (Cộng hòa Xã hội chủ nghĩa Việt Nam) |
-| Tax | Thuế Thu Nhập Cá Nhân (TNCN — Personal Income Tax / PIT) |
-| Currency | VND (Vietnamese Dong / đồng) |
-| Tax year | Calendar year (1 Jan – 31 Dec) |
-| Primary legislation | Luật Thuế Thu Nhập Cá Nhân No. 04/2007/QH12 (amended); Luật số 109/2025/QH15 (effective 01/01/2026) |
-| Tax authority | Tổng cục Thuế (General Department of Taxation — GDT) |
-| Filing portal | etax.gdt.gov.vn / thuedientu.gdt.gov.vn |
-| Filing deadline | Annual finalisation: 31 March of following year |
+| Country | Vietnam |
+| Tax | Thuế thu nhập cá nhân (TNCN), personal income tax |
+| Currency | VND |
+| Tax year | Calendar year 2026 (1 January to 31 December) |
+| Law | Law 109/2025/QH15 (passed 10 December 2025, in force 1 July 2026; employment and business income of residents from tax period 2026), as amended by Law 09/2026/QH16 |
+| Authority | Tax Department (Cục Thuế), Ministry of Finance |
+| Filing portal | thuedientu.gdt.gov.vn (eTax); eTax Mobile for individuals |
 | Contributor | Open Accountants Community |
-| Skill version | 1.0 |
 
-## Section 2 — Progressive Tax Brackets (Biểu Thuế Lũy Tiến Từng Phần) — 2026
+**Which law applies in 2026.** Law 109/2025/QH15 Art. 29(2) applies the new rules on business income and on employment income of residents from tax period 2026, so the full 2026 year of salary and business income uses the new schedule and deductions. Its other rules (investment income, capital and property transfers, prizes, royalties, inheritances, gifts, non-residents) take effect on 1 July 2026 (Art. 29(1)); income of those kinds received from 1 January to 30 June 2026 falls under the old Law 04/2007/QH12 as amended, whose figures are not restated here (see "Not yet confirmed").
 
-Effective 01/01/2026, Vietnam moved from a 7-bracket to a **5-bracket** progressive tax system under Luật số 109/2025/QH15.
+**Residence (Art. 2).** A resident is present in Vietnam 183 days or more in a calendar year or in 12 consecutive months from first arrival, or has a regular place of residence in Vietnam (a registered permanent residence, or a rented home under a fixed-term lease). Everyone else is a non-resident.
 
-### Monthly rates (applied to taxable income per month)
-
-**Monthly rates table**  _(Luật số 109/2025/QH15; googlesky/thue-2026 (MIT); thangtd-0050/pit)_
-
-| Bracket | Monthly Taxable Income (VND) | Rate |
+| Status | Taxed on | Employment income |
 | --- | --- | --- |
-| 1 | ≤ 10,000,000 | 5% |
-| 2 | 10,000,001 – 30,000,000 | 15% |
-| 3 | 30,000,001 – 60,000,000 | 25% |
-| 4 | 60,000,001 – 100,000,000 | 30% |
-| 5 | > 100,000,000 | 35% |
+| Resident | Worldwide income | Five-band schedule after deductions |
+| Non-resident | Vietnam-source income only | Flat 20% of gross pay for work in Vietnam |
 
-### Annual rates (applied to taxable income per year)
+### Refusals and boundaries
 
-**Annual rates table**  _(Luật số 109/2025/QH15; googlesky/thue-2026 (MIT); thangtd-0050/pit)_
+- Never apply the old seven-band schedule, or the old 11 million and 4.4 million deductions, to 2026 salary or business income.
+- Never claim a dependant deduction without the dependant's registration and the support condition met; each dependant counts once, against one taxpayer (Art. 10(3)).
+- Never apply resident rates to a confirmed non-resident.
+- Escalate to a licensed Vietnamese tax agent (đại lý thuế): foreign tax credits for residents with overseas income, tax equalisation, equity compensation, crypto income, transfer pricing on related-party business income.
 
-| Bracket | Annual Taxable Income (VND) | Rate |
-| --- | --- | --- |
-| 1 | ≤ 120,000,000 | 5% |
-| 2 | 120,000,001 – 360,000,000 | 15% |
-| 3 | 360,000,001 – 720,000,000 | 25% |
-| 4 | 720,000,001 – 1,200,000,000 | 30% |
-| 5 | > 1,200,000,000 | 35% |
+## Rates, bands and thresholds
 
-### Quick tax computation table (monthly)
-
-**Quick tax computation table**
-
-| If taxable income/month (VND) | Tax = |
-| --- | --- |
-| ≤ 10,000,000 | Income × 5% |
-| 10,000,001 – 30,000,000 | 500,000 + (Income − 10,000,000) × 15% |
-| 30,000,001 – 60,000,000 | 3,500,000 + (Income − 30,000,000) × 25% |
-| 60,000,001 – 100,000,000 | 11,000,000 + (Income − 60,000,000) × 30% |
-| > 100,000,000 | 23,000,000 + (Income − 100,000,000) × 35% |
-
-## Section 3 — Deductions (Giảm Trừ Gia Cảnh) — 2026
-
-### Personal and dependent deductions
-
-**Personal and dependent deductions table**  _(Luật số 109/2025/QH15; googlesky/thue-2026 (MIT))_
-
-| Deduction | Monthly (VND) | Annual (VND) | Notes |
+| Item | Figure | Condition | Source |
 | --- | --- | --- | --- |
-| Personal deduction (giảm trừ bản thân) | 15,500,000 | 186,000,000 | Per taxpayer; automatic |
-| Dependent deduction (giảm trừ người phụ thuộc) | 6,200,000 per dependent | 74,400,000 per dependent | Must register dependents with tax authority |
+| Band 1 (employment income of residents) | 5% | Taxable income to VND 10 million a month, 120 million a year | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/109signed-17692403594311667615452.pdf |
+| Band 2 | 10% | Over 10 to 30 million a month, over 120 to 360 million a year | same |
+| Band 3 | 20% | Over 30 to 60 million a month, over 360 to 720 million a year | same |
+| Band 4 | 30% | Over 60 to 100 million a month, over 720 million to 1.2 billion a year | same |
+| Band 5 | 35% | Over 100 million a month, over 1.2 billion a year | same |
+| Personal deduction | VND 15.5 million a month (186 million a year) | Resident, employment income, Art. 10(1)(a) | same |
+| Dependant deduction | VND 6.2 million a month per dependant | Registered dependant, Art. 10(1)(b) | same |
+| Business income threshold | VND 1 billion annual revenue or less: no PIT | Resident individual or household business; Law 09/2026/QH16 lets the Government set the threshold and Decree 141/2026 Art. 1 replaced 500 million with 1 billion in Decree 68/2026, from 1 January 2026 | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf |
+| Business income, income method, revenue above threshold to VND 3 billion | 15% of (revenue less costs) | Art. 7(2)(b) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/109signed-17692403594311667615452.pdf |
+| Business income, revenue over 3 to 50 billion | 17% of (revenue less costs) | Art. 7(2)(c) | same |
+| Business income, revenue over 50 billion | 20% of (revenue less costs) | Art. 7(2)(d) | same |
+| Revenue method (option, revenue above threshold to 3 billion): distribution and supply of goods | 0.5% of revenue above the threshold | Art. 7(3)(b) | same |
+| Revenue method: services, construction without materials | 2% | Art. 7(3)(c) | same |
+| Revenue method: asset leasing, insurance agency, lottery agency, multi-level sales agency | 5% | Art. 7(3)(c) | same |
+| Revenue method: production, transport, services tied to goods, construction with materials | 1.5% | Art. 7(3)(d) | same |
+| Revenue method: digital content (games, digital film, music, photos, digital advertising) | 5% | Art. 7(3)(đ) | same |
+| Revenue method: other business | 1% | Art. 7(3)(e) | same |
+| Property rental (other than accommodation business) | 5% of revenue above the threshold | Art. 7(4) | same |
+| Investment income (dividends, interest not exempt), resident | 5% per payment | Art. 12, from 1 July 2026 | same |
+| Capital transfer, resident | 20% of gain; 2% of price where cost cannot be determined | Art. 13(1), from 1 July 2026 | same |
+| Securities transfer | 0.1% of price per transfer | Art. 13(2), Art. 23(2) | same |
+| Real estate transfer | 2% of transfer price | Art. 14, Art. 24 | same |
+| Prizes | 10% of value above VND 20 million per prize | Art. 15, from 1 July 2026 | same |
+| Royalties, franchising | 5% of amount above VND 20 million per contract | Art. 16, 17, from 1 July 2026 | same |
+| Inheritances and gifts | 10% of value above VND 20 million per receipt | Art. 18, from 1 July 2026 | same |
+| Non-resident employment income | 20% of gross pay for work in Vietnam | Art. 21 | same |
+| Non-resident business income | Goods 1%; services 5%; production, transport, construction with materials 2%; digital content 5%; other 2% of revenue | Art. 20(3) | same |
+| Non-resident investment income | 5% | Art. 22 | same |
+| Non-resident capital transfer | 20% of gain; 2% of price where cost cannot be determined | Art. 23(1) | same |
 
-- **Previous values (pre-2026)** — Personal deduction was 11,000,000/month; dependent deduction was 4,400,000/month. The 2026 increase reflects Resolution 954/2020/UBTVQH14's CPI-triggered adjustment mechanism enacted via Luật số 109/2025/QH15.  _(Nghị quyết 954/2020/UBTVQH14; Luật số 109/2025/QH15)_
+## The base
 
-### Other deductions
+**Employment income of residents (Art. 8).** Taxable income = employment income for the period, less compulsory social insurance, health insurance and unemployment insurance contributions, compulsory professional liability insurance for certain professions, supplementary pension contributions under the Social Insurance Law, voluntary pension and life insurance up to the Government cap, the family deductions (Art. 10) and the charity, health and education deductions (Art. 11). The employee contribution rates are owned by [vn-payroll-social](vn-payroll-social.md).
 
-**Other deductions table**
+1. Gross employment income: salary, wages, remuneration, cash and non-cash benefits, allowances other than the listed exempt allowances (Art. 3(2)).
+2. Less exempt items (Art. 4), including night-shift and overtime pay and pay for untaken leave (Art. 4(8), new in 2026).
+3. Less employee compulsory insurance (see the payroll skill).
+4. Less VND 15.5 million personal deduction and VND 6.2 million per registered dependant, per month.
+5. Less allowable charity (approved funds and organisations only), and health and education costs at the level the Government sets (Art. 11(2)).
+6. Apply the five bands to the result.
 
-| Deduction | Amount | Notes |
-| --- | --- | --- |
-| Compulsory social insurance (BHXH) | 8% of salary | Employee's share — deducted before PIT |
-| Compulsory health insurance (BHYT) | 1.5% of salary | Employee's share — deducted before PIT |
-| Unemployment insurance (BHTN) | 1% of salary | Employee's share — deducted before PIT |
-| Voluntary pension fund | Up to 1,000,000/month | If contributing to qualified fund |
-| Charitable contributions | Actual amount | Donations to approved organisations only |
+**Quick computation (monthly).** Tax = 5% of the first 10 million, plus 10% of 10 to 30 million (2.0 million), plus 20% of 30 to 60 million (6.0 million), plus 30% of 60 to 100 million (12.0 million), plus 35% above 100 million. Cumulative tax at each band top: 0.5 million, 2.5 million, 8.5 million, 20.5 million.
 
-### Taxable income formula
+**Dependants (Art. 10(4)).** Minor children; children who have lost civil capacity, are disabled or unable to work; and persons with no income or income below the level the Minister of Finance sets: adult children in university, college or vocational study, a spouse unable to work, parents past working age or unable to work, and other unsupported persons the taxpayer directly supports.
 
-- **Taxable Income formula** — Taxable Income = Gross Income − Compulsory insurance (BHXH + BHYT + BHTN) − Personal deduction (15,500,000/month) − Dependent deductions (6,200,000 × number of registered dependents/month) − Other allowable deductions
+**Business income of residents (Art. 7).** Revenue up to VND 1 billion a year: no PIT (threshold from Decree 141/2026). Above it, tax = (revenue less costs) times 15%, 17% or 20% by revenue band. Where revenue is above the threshold and up to VND 3 billion, the individual may instead choose the revenue method: (revenue above the threshold) times the activity rate. Property rental (not accommodation business) always uses revenue above the threshold times 5%.
 
-## Section 4 — Resident vs Non-Resident
+**Exempt income (Art. 4), main items.** Real estate transfers, inheritances and gifts of real estate between spouses, parents and children (natural, adopted, in-law), grandparents and grandchildren, and siblings; transfer of the taxpayer's only home and residential land in Vietnam; interest on government and local government bonds, bank deposits and life insurance; remittances; night-shift and overtime pay and pay for untaken leave; social insurance pensions and payments from supplementary and voluntary pension funds; state and programme scholarships; insurance and compensation payments; income from approved charities and foreign humanitarian aid; salaries of Vietnamese seafarers on international routes; first transfer of carbon credits and green bond interest; pay for state science and technology tasks; income of investors and founders in innovative start-ups; after-CIT income of a private enterprise owner or single-member LLC owner. Art. 5 adds a five-year exemption for qualifying high-tech and digital technology staff and an exemption for open-ended fund certificates held two years or more.
 
-**Resident vs Non-Resident table**
+### Conservative defaults
 
-| Status | Definition | Tax treatment |
-| --- | --- | --- |
-| Tax resident | Present in Vietnam ≥ 183 days in a calendar year OR 12 consecutive months; OR has a regular abode in Vietnam | Worldwide income; progressive rates (Section 2) |
-| Non-resident | Does not meet resident criteria | Vietnam-sourced income only; flat 20% on employment income |
-
-## Section 5 — Income Categories (Các Khoản Thu Nhập Chịu Thuế)
-
-**Income Categories table**
-
-| Category | Rate | Notes |
-| --- | --- | --- |
-| Employment income (tiền lương, tiền công) | Progressive 5-bracket (Section 2) | Main category for salaried individuals |
-| Business income (kinh doanh) | Progressive 5-bracket OR deemed rates | Self-employed / sole proprietors |
-| Capital gains (chuyển nhượng vốn) | 20% on gains | Or 0.1% of transfer value for listed securities |
-| Securities transfer | 0.1% of sale proceeds | Regardless of gain/loss |
-| Real estate transfer (chuyển nhượng bất động sản) | 2% of transfer price | No deduction of cost basis |
-| Royalties, franchises | 5% above VND 10,000,000 per contract |  |
-| Lottery / prizes (trúng thưởng) | 10% above VND 10,000,000 |  |
-| Inheritance / gifts | 10% above VND 10,000,000 |  |
-
-### Deemed tax rates for business income (self-employed individuals)
-
-**Deemed tax rates table**
-
-| Business activity | Revenue tax rate |
+| Situation | Default |
 | --- | --- |
-| Distribution / supply of goods | 0.5% |
-| Services, construction (excl. materials) | 2% |
-| Manufacturing, transport, services with goods | 1.5% |
-| Other business activities | 1% |
+| Residence unknown | Treat as resident and ask for days present and housing |
+| Number of dependants unknown | Zero dependants |
+| Dependant registration unclear | Do not claim |
+| Income category unclear | Employment income |
+| Allowance taxability unclear | Taxable |
+| Business revenue unclear against the threshold | Ask for full-year revenue before applying the 1 billion threshold |
 
-- **Small business PIT exemption** — Self-employed individuals with revenue < VND 100,000,000/year are exempt from PIT on business income.
+### Red flags
 
-## Section 6 — Filing and Payment
+| Flag | Why |
+| --- | --- |
+| Monthly withholding used the old seven bands | Over-withholding to refund at finalisation |
+| A second income source with no withholding | Self-filing needed |
+| Dependant claimed by two taxpayers | Each dependant counts once (Art. 10(3)) |
+| Business revenue near VND 1 billion or 3 billion | The threshold and the band change the method |
 
-### Withholding (Khấu Trừ Tại Nguồn)
+## Deadlines and filing
 
-- **Employer withholding deadlines** — Employers withhold PIT monthly from employee salaries and remit to GDT by the 20th of the following month (monthly filers) or 30th of the month following the quarter (quarterly filers).
-
-### Annual finalisation (Quyết Toán Thuế)
-
-**Annual finalisation table**
-
-| Who | Deadline | Notes |
+| Item | Deadline | Source |
 | --- | --- | --- |
-| Employers (on behalf of employees) | 31 March of following year | File form 05/QTT-TNCN |
-| Individuals self-filing | 31 March of following year | File form 02/QTT-TNCN |
-| Individuals with single employer, no additional income | May authorise employer to finalise | No separate filing needed |
+| Employer monthly withholding return | 20th day of the following month | Decree 252/2026, as published by the Government portal |
+| Employer quarterly return (quarterly filers) | Last day of the first month of the next quarter | same |
+| Employer annual finalisation for employees | Last day of the 3rd month after year end (31 March 2027 for 2026) | same |
+| Individual self-filed finalisation of employment income | Last day of the 4th month after year end (30 April 2027 for 2026) | same |
+| Household and individual business filing | Under Decree 68/2026 as amended by Decree 141/2026 | Decree 141/2026 |
 
-### When individual must self-file
+An individual with one employer and no other income may authorise that employer to finalise. An individual self-files when there is income from two or more sources with tax still payable, income not subject to withholding, or foreign income (residents), or to claim deductions the employer did not apply. A first-year resident who is in Vietnam less than 183 days in the calendar year but 183 days in 12 consecutive months files by the last day of the 4th month after the 12-month period ends. Household businesses with revenue above VND 1 billion must use electronic invoices with a tax authority code (Decree 141/2026 Art. 1(2)).
 
-- Has income from 2+ sources and total additional tax > VND 100,000
-- Receives income not subject to withholding
-- Foreign-sourced income (residents only)
-- Wishes to claim dependent deductions not registered with employer
+## Penalties and interest
 
-## Section 7 — Worked Examples
+| Item | Figure | Source |
+| --- | --- | --- |
+| Late payment interest | 0.03% per day of the unpaid tax | Law 108/2025/QH15 Art. 16(2)(a) |
+| Late filing, under-declaration and evasion fines | Not stated here: the administrative penalty decree was not read for 2026 | Not yet confirmed |
 
-### Example 1 — Single employee, no dependents
+Failure to register a dependant means the deduction is refused, with back tax and late payment interest.
 
-**Facts:** Monthly gross salary VND 40,000,000. No dependents.
+## Cross-border points
 
-**Computation:**
-```
-Gross salary:                       40,000,000
-Less: BHXH (8%):                    -3,200,000
-Less: BHYT (1.5%):                    -600,000
-Less: BHTN (1%):                      -400,000
-Less: Personal deduction:          -15,500,000
-                                   -----------
-Taxable income:                     20,300,000
+- Non-residents pay flat rates on gross amounts (Art. 20 to 27); no family deductions.
+- A resident's capital transfer is taxed wherever the transfer happens; a non-resident's transfer of capital in a Vietnamese entity is taxed whether made in Vietnam or abroad (Art. 23(1)).
+- Tax treaties may reduce Vietnam's taxing right; the treaty text decides. Foreign tax credits for residents: escalate.
+- Foreign employees' social insurance: see [vn-payroll-social](vn-payroll-social.md).
 
-Tax:
-  First 10,000,000 × 5%  =            500,000
-  Next 10,300,000 × 15%  =          1,545,000
-                                   -----------
-Total PIT/month:                     2,045,000
-```
+## Two worked examples that recompute
 
-### Example 2 — Employee with 2 dependents
+### Example 1: single employee, VND 40 million a month, no dependants (2026)
 
-**Facts:** Monthly gross salary VND 60,000,000. Two registered dependents.
+Employee insurance at 10.5% (8% social, 1.5% health, 1% unemployment, below every cap): 4.2 million. Taxable income: 40 million less 4.2 million less 15.5 million = 20.3 million. Tax: 5% of 10 million = 0.5 million, plus 10% of 10.3 million = 1.03 million. Total 1.53 million a month. (The old file used 15% for band 2 and got 2.045 million: wrong.)
 
-**Computation:**
-```
-Gross salary:                       60,000,000
-Less: BHXH (8%):                    -4,800,000
-Less: BHYT (1.5%):                    -900,000
-Less: BHTN (1%):                      -600,000
-Less: Personal deduction:          -15,500,000
-Less: Dependent deductions (2×):   -12,400,000
-                                   -----------
-Taxable income:                     25,800,000
-
-Tax:
-  First 10,000,000 × 5%  =            500,000
-  Next 15,800,000 × 15%  =          2,370,000
-                                   -----------
-Total PIT/month:                     2,870,000
+```oa-check
+name: VN 2026 employee 40m a month, no dependants
+inputs:
+  gross: 40000000
+  insurance_rate: 0.105
+  personal: 15500000
+steps:
+  - insurance: gross * insurance_rate
+  - taxable: gross - insurance - personal
+  - band1: min(taxable, 10000000) * 0.05
+  - band2: max(min(taxable, 30000000) - 10000000, 0) * 0.10
+  - tax: band1 + band2
+expected:
+  insurance: 4200000
+  taxable: 20300000
+  tax: 1530000
 ```
 
-### Example 3 — High income earner
+### Example 2: designer with a household business, revenue VND 2.5 billion, costs 1.9 billion: which method?
 
-**Facts:** Monthly gross salary VND 150,000,000. One dependent.
+Revenue is above VND 1 billion and not above 3 billion, so she may choose. Income method: (2.5 billion less 1.9 billion) times 15% = 90 million. Revenue method for services: (2.5 billion less 1 billion) times 2% = 30 million. The revenue method costs 60 million less; the decision turns on the cost ratio. The income method wins only where profit times 15% is below (revenue above threshold) times 2%.
 
-**Computation:**
-```
-Gross salary:                      150,000,000
-Less: BHXH (8%, capped at 36×base): -2,984,000  (cap applies: 8% × 37,300,000)
-Less: BHYT (1.5%, capped):            -559,500
-Less: BHTN (1%, capped):              -373,000
-Less: Personal deduction:          -15,500,000
-Less: Dependent deduction (1×):     -6,200,000
-                                   -----------
-Taxable income (approx):          124,383,500
-
-Tax:
-  First 10,000,000 × 5%   =           500,000
-  Next 20,000,000 × 15%   =         3,000,000
-  Next 30,000,000 × 25%   =         7,500,000
-  Next 40,000,000 × 30%   =        12,000,000
-  Remaining 24,383,500 × 35% =      8,534,225
-                                   -----------
-Total PIT/month:                    31,534,225
+```oa-check
+name: VN 2026 household business, income method vs revenue method
+inputs:
+  revenue: 2500000000
+  costs: 1900000000
+  threshold: 1000000000
+steps:
+  - income_method: (revenue - costs) * 0.15
+  - revenue_method: (revenue - threshold) * 0.02
+  - saving: income_method - revenue_method
+  - chosen: min(income_method, revenue_method)
+expected:
+  income_method: 90000000
+  revenue_method: 30000000
+  saving: 60000000
+  chosen: 30000000
 ```
 
-## Section 8 — Conservative Defaults
+## Ask the client first
 
-**Conservative Defaults table**
+1. Days in Vietnam in 2026 and in the 12 months from first arrival, and whether there is a registered or leased home in Vietnam.
+2. Every income source in 2026, with the dates income was received (before or after 1 July 2026 for non-employment income).
+3. Number of dependants, their registration, and their own income.
+4. Employee compulsory insurance actually deducted, and any voluntary pension or life insurance.
+5. For business income: full-year revenue, costs with invoices, activity type, and the method chosen.
+6. Whether the employer will finalise on the individual's behalf.
 
-| Situation | Default Assumption |
-| --- | --- |
-| Unknown residency status | Treat as resident (progressive rates — higher tax) |
-| Unknown number of dependents | Zero dependents (no deduction) |
-| Dependent registration unclear | Do not claim deduction |
-| Income category unclear | Employment income (progressive rates) |
-| Insurance contribution cap unclear | Apply cap at statutory maximum |
-| Allowance taxability unclear | Taxable (include in gross income) |
-| Business vs employment income unclear | Employment income |
+Self-check before finalisation: five-band schedule used; 15.5 million and 6.2 million deductions; insurance deducted before the bands; every income source categorised; withholding reconciled to the annual liability; the right deadline (31 March employer, 30 April self-filer).
 
-## Section 9 — Red Flag Thresholds
+## Sources
 
-**Red Flag Thresholds table**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single month tax discrepancy | VND 10,000,000 |
-| HIGH annual under-withholding | VND 50,000,000 |
-| MEDIUM unreported income source | Any additional source > VND 2,000,000/month |
-| MEDIUM dependent claim without registration | Any amount |
-| LOW rounding difference | VND 100,000 |
-
-## Section 10 — Penalties
-
-**Penalties table**
-
-| Offence | Penalty |
-| --- | --- |
-| Late filing (quyết toán) | VND 2,000,000 – 25,000,000 |
-| Late payment | 0.03% per day of unpaid tax |
-| Under-declaration (underpayment) | 20% of underpaid amount |
-| Tax evasion | 1× – 3× evaded tax + criminal liability |
-| Failure to register dependents | Deduction denied + back-tax + interest |
-
-## Section 11 — Exempt Income (Thu Nhập Miễn Thuế)
-
-**Exempt Income table**
-
-| Item | Notes |
-| --- | --- |
-| Real estate transfer between spouses, parents/children, siblings | Exempt |
-| Inheritance/gift between immediate family | Exempt |
-| Salary from night shift / dangerous work allowances | Per statutory schedule |
-| One-off relocation allowance | Per statutory limits |
-| Life insurance proceeds | Exempt |
-| Severance pay per labour code | Exempt (up to statutory amount) |
-| Interest on bank deposits | Exempt (5% withholding applies separately) |
-| Scholarships | Exempt |
-
-## Section 12 — Reference Material
-
-### Key legislation
-
-**Key legislation table**
-
-| Topic | Reference |
-| --- | --- |
-| PIT Law | Luật Thuế TNCN No. 04/2007/QH12 (amended 2012, 2014) |
-| 2026 bracket reform | Luật số 109/2025/QH15 (effective 01/01/2026) |
-| Implementation decree | Nghị định 65/2013/NĐ-CP (as amended) |
-| Circular guidance | Thông tư 111/2013/TT-BTC (as amended) |
-| Deduction adjustment mechanism | Nghị quyết 954/2020/UBTVQH14 |
-| Tax administration | Luật Quản lý Thuế No. 38/2019/QH14 |
-| Social insurance | Luật BHXH No. 58/2014/QH13 |
-
-### Open-source references
-
-**Open-source references table**
-
-| Repository | License | Scope |
+| Source | URL | Read on |
 | --- | --- | --- |
-| [googlesky/thue-2026](https://github.com/googlesky/thue-2026) | MIT | 2026 PIT brackets and deduction amounts |
-| [thangtd-0050/pit](https://github.com/thangtd-0050/pit) | Open source | Vietnam PIT calculator implementation |
+| Read for Law 109/2025/QH15 in the Official Gazette: Art. 2 residence, Art. 4 and 5 exemptions, Art. 7 business income, Art. 8 base, Art. 9 bands, Art. 10 and 11 deductions, Art. 12 to 27 other income and non-residents, Art. 29 effective dates | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/109signed-17692403594311667615452.pdf | 2026-11-14 |
+| Read for Law 09/2026/QH16 Art. 1 (business threshold set by the Government) and Art. 5 (effective 1 January 2026) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469536-1779329464_v1_1779843299_signed.pdf | 2026-11-14 |
+| Read for Decree 141/2026/ND-CP Art. 1 (1 billion threshold, e-invoices) and Art. 3 (in force 1 January 2026) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf | 2026-11-14 |
+| Read for Law 108/2025/QH15 (Tax Administration) Art. 16(2)(a) late payment interest | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm | 2026-11-14 |
+| Read for the Decree 252/2026 filing deadlines (monthly, quarterly, finalisation 3rd and 4th month) as published on the Government portal | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
 
-### Known gaps
-
-- Foreign tax credit computation for residents with overseas income — escalate
-- Transfer pricing adjustments for related-party business income — escalate
-- Expatriate tax equalisation — escalate
-- Stock option / equity compensation — escalate
-- Crypto / digital asset income — uncertain; escalate
-
-### Self-check before finalisation
-
-- [ ] Correct bracket schedule applied (2026 five-bracket system)?
-- [ ] Personal deduction at VND 15,500,000/month?
-- [ ] Each dependent deduction at VND 6,200,000/month with registration confirmed?
-- [ ] Compulsory insurance deducted before applying brackets?
-- [ ] Insurance contribution caps applied correctly?
-- [ ] All income sources identified and categorised?
-- [ ] Withholding reconciled against annual liability?
-- [ ] Filing deadline (31 March) noted?
-
-## Section 13 — Changelog
-
-**Changelog table**
-
-| Version | Date | Change |
-| --- | --- | --- |
-| 1.0 | May 2026 | Initial release with 2026 five-bracket system per Luật số 109/2025/QH15 |
-
-## Prohibitions
-
-- **Prohibitions list** — NEVER apply the old 7-bracket schedule for tax year 2026 onwards; NEVER claim dependent deduction without confirmed registration; NEVER ignore compulsory insurance deductions when computing taxable income; NEVER apply resident rates to a confirmed non-resident; NEVER present calculations as definitive — direct to a licensed Vietnamese tax agent (đại lý thuế)
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
-
-The most up-to-date version is maintained at openaccountants.com.
+Not yet confirmed: the old Law 04/2007/QH12 thresholds and rates for non-employment income received 1 January to 30 June 2026 (prizes, royalties, inheritances, gifts; the old file showed VND 10 million thresholds); the Government cap on voluntary pension and life insurance deductions and the health and education deduction levels (implementing decree not read); the dependant income limit set by the Minister of Finance; late filing and under-declaration fines (administrative penalty decree not read for 2026); the full text of Decree 252/2026 (read through the Government portal summary only); Decree 68/2026 business filing deadlines.
