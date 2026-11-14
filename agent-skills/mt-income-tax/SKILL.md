@@ -1,18 +1,20 @@
 ---
 name: mt-income-tax
-description: "Use this skill whenever asked about Montana individual income tax for self-employed persons, sole proprietors, or single-member LLCs. Trigger on phrases like \"Montana income tax\", \"MT income tax\", \"Form 2\", \"Montana DOR\", \"MCA 15-30-2103\"."
+description: "Use this skill whenever asked about Montana individual income tax for tax year 2026, including self-employed persons, sole proprietors and single-member LLCs. Covers Form 2 from federal taxable income without the QBI deduction, the 2026 rates of 4.7% and 5.65% (bracket $47,500 single, $95,000 joint, $71,250 head of household), the 3% and 4.1% capital gains rates, Schedule I adjustments, the 65-and-older subtraction, the 20% Montana EITC, Schedule II for nonresidents and part-year residents, the elderly homeowner/renter credit, estimated tax and penalties. Trigger on phrases like \"Montana income tax\", \"MT income tax\", \"Form 2\", \"Montana DOR\", \"MCA 15-30-2103\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/mt-income-tax"
   jurisdiction: "US-MT"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
-# Montana individual income tax (Form 2), including sole proprietors
+# Montana individual income tax (Form 2), tax year 2026, including sole proprietors
 
-## Scope and who this is for ([2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf))
+## Scope and who this is for
+
+Main source: the [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf) (the 2026 edition is not out yet).
 
 This skill covers the Montana individual income tax return, **Form 2**, for **tax year 2026** (returns filed in 2027). It has a dated section for **2025 returns**. It is for residents, part-year residents and nonresidents, including sole proprietors and single-member LLC owners.
 
@@ -57,6 +59,35 @@ It does **not** cover pass-through entity returns or the pass-through entity tax
 
 ## The method, step by step
 
+### Rates, bands and thresholds
+
+| Item | Amount | Source |
+| --- | --- | --- |
+| 2026 ordinary income, lower rate | 4.7% | [MCA 15-30-2103(1)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| 2026 lower-rate bracket, single and married filing separately | first $47,500 | [MCA 15-30-2103(1)(c), (d)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| 2026 lower-rate bracket, married filing jointly and surviving spouse | first $95,000 | [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337) |
+| 2026 lower-rate bracket, head of household | first $71,250 | [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337) |
+| 2026 ordinary income, upper rate (income above the bracket) | 5.65% | [MCA 15-30-2103(1)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| Net long-term capital gains inside the room left under the bracket | 3.0% | [MCA 15-30-2103(2)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| Net long-term capital gains above that room, or all gains once nonqualified taxable income reaches the bracket | 4.1% | [MCA 15-30-2103(2)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| Montana earned income tax credit, from tax year 2026 | 20% of the federal EITC, refundable | [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337) |
+| 65-and-older subtraction, per qualifying taxpayer (2025 figure, 2025-2026 filing cycle; the 2026 amount is indexed and not yet published) | $5,660 | [DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025) |
+| Montana medical savings account contributions, per taxpayer (2025 figure, 2025-2026 filing cycle) | up to $4,600 | [DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025) |
+| 529 plan deposits (2025 figure, 2025-2026 filing cycle; indexed for each tax year after 2025) | up to $4,500 ($9,000 joint) | [MCA 15-30-2120(5)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html) |
+| Volunteer firefighter or emergency care provider subtraction (statutory base, indexed; 2026 indexed amount not yet published) | $3,000 | [MCA 15-30-2120(3)(o), (7)](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html) |
+| Elderly homeowner/renter credit, maximum (2025 rules, 2025-2026 filing cycle) | $1,150, refundable | [DOR elderly credit](https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit) |
+| Elderly homeowner/renter credit, gross household income must be below (2025 rules) | $45,000 | [DOR elderly credit](https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit) |
+| Elderly credit, amount deducted from gross household income before the multiplier (2025 Schedule 2EC) | $12,600 | [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf) |
+| Interest on unpaid individual income tax and underpaid estimates, 2026 | 7% a year (0.019178% a day) | [DOR penalty and interest](https://revenue.mt.gov/taxes/penalty-and-interest) |
+| Estimated tax required when expected tax after withholding and nonrefundable credits is more than | $500 | [Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf) |
+| Late filing penalty (2025 instructions) | 5% a month of tax owed on 15 October, up to 25%, minimum $50 | [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf) |
+| Late payment penalty (2025 instructions) | 0.5% a month, calculated daily, capped at 12% | [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf) |
+| Automatic extension to file | 6 months, to 15 October | [DOR extensions](https://revenue.mt.gov/taxes/individual-income-tax/extensions) |
+
+Federal figures that feed line 2 (the 2026 standard deduction, the age and blindness add-ons and the Schedule 1-A deductions) are owned by `us-federal-income-tax-return-1040` and are not restated here.
+
+### Form 2, line by line
+
 Form 2 line numbers are from the 2025 return ([2025 Form 2](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf)). Since tax year 2024, Montana starts from **federal taxable income, without the qualified business income deduction** ([DOR tax simplification hub](https://revenue.mt.gov/montana-tax-simplification-resource-hub)). Montana has no standard deduction, itemized deductions, personal exemption or dependent exemption of its own.
 
 1. **Line 1, federal AGI** from Form 1040 line 11b.
@@ -83,7 +114,7 @@ Form 2 line numbers are from the 2025 return ([2025 Form 2](https://revenue.mt.g
    - a business expense disallowed federally because a federal credit was claimed (for example wages reduced by the work opportunity credit). The instructions add: "Depreciation, depletion, and amortization deductions must be the same for federal and Montana income tax purposes."
 6. **Line 6, the 65-and-older subtraction** (see "Retirement income").
 7. **Line 7, Montana taxable income** = lines 3 plus 4, minus lines 5 and 6, not below zero.
-8. **Tax (page 2).** Split taxable income into net long-term capital gains and Montana ordinary income, and tax each at its own rates (see "Figures by year").
+8. **Tax (page 2).** Split taxable income into net long-term capital gains and Montana ordinary income, and tax each at its own rates (see "Rates, bands and thresholds" and "Ordinary income rates").
    - Residents: the tax goes to line 8.
    - Nonresidents, part-year residents and mixed-residency filers: compute the tax as if resident, then apply the Schedule II ratios (step 10).
 9. **Credits.** DOR applies them in this order ([DOR filing requirements](https://revenue.mt.gov/taxes/individual-income-tax/filing-requirements)):
@@ -102,9 +133,9 @@ Form 2 line numbers are from the 2025 return ([2025 Form 2](https://revenue.mt.g
     - Voluntary adjustments such as HSA or IRA contributions are not treated as related to Montana source income.
 11. **Payments and balance.** Withholding, estimates, extension payment and refundable credits (lines 11 to 17) give the balance due or refund; penalties and interest go on Schedule IV.
 
-## Figures by year
+### Ordinary income rates
 
-### Ordinary income rates ([HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html); [DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025))
+Sources: [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html); [DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025).
 
 Montana ordinary income is all taxable income that is not a net long-term capital gain, "and includes qualified dividends". Each rate applies only to the income inside its bracket.
 
@@ -117,7 +148,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
 - **2026 brackets are fixed in the statute** (the version of MCA 15-30-2103 that "Terminates December 31, 2026"). They are not indexed.
 - **2027 (HB 337):** 4.7% up to $65,000 (single and married filing separately), $130,000 (joint and surviving spouse) or $97,500 (head of household), and 5.4% above. The 2027 version of the statute then has DOR index the brackets by 1 November each year, from a June 2026 price base.
 
-### Net long-term capital gains rates ([2025 Form 2, page 2](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html))
+### Net long-term capital gains rates
+
+Sources: [2025 Form 2, page 2](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html).
 
 - **What counts:** "the net gain from the sale or exchange of a capital asset held for more than one year".
   - On the return it is the net long-term capital gain subject to the federal capital gains tax, generally the lesser of federal Schedule D line 15 or line 16. If no Schedule D is required, it is Form 1040 line 7.
@@ -129,7 +162,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
   3. Gains up to that room are taxed at 3%; the remaining gains at 4.1%.
   4. If ordinary income is at or above the bracket amount, **all** the gains are taxed at 4.1%.
 
-### Montana earned income tax credit ([2025 Form 2 instructions, line 15](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf); [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337))
+### Montana earned income tax credit
+
+Sources: [2025 Form 2 instructions, line 15](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf); [HB 337, DOR](https://revenue.mt.gov/news/recent-news/HB-337).
 
 - **2025:** 10% of the federal EITC, refundable. The full 10% applies only to a full-year resident who is neither:
   - an enrolled tribal member living on their tribe's reservation, nor
@@ -139,7 +174,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
 - **2026:** 20% of the federal EITC, "beginning in tax year 2026". The 2026 proration rules had not been published at the time of writing; check the 2026 Form 2.
 - A return must be filed to claim it, and the client must qualify for the federal EITC.
 
-### Subtraction amounts ([DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025); [MCA 15-30-2120](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf))
+### Subtraction amounts
+
+Sources: [DOR 2025 tax tables](https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025); [MCA 15-30-2120](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf).
 
 | Item | 2025 | 2026 |
 | --- | --- | --- |
@@ -152,7 +189,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
 - **Volunteer subtraction conditions.** For the whole calendar year, the person must have been an active, unpaid member of the same volunteer fire company or emergency medical service, and must have completed the required training (30 hours for firefighters).
 - **529 conditions.** The subtraction applies only to accounts owned by the taxpayer, the spouse, or a child or stepchild who is a Montana resident. Non-qualified withdrawals of deducted contributions carry a 5.9% recapture tax (2025 instructions).
 
-### Retirement income ([2025 Form 2, line 6](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf); [MCA 15-30-2120](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html); [DOR tax simplification hub](https://revenue.mt.gov/montana-tax-simplification-resource-hub))
+### Retirement income
+
+Sources: [2025 Form 2, line 6](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf); [MCA 15-30-2120](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html); [DOR tax simplification hub](https://revenue.mt.gov/montana-tax-simplification-resource-hub).
 
 - **65-and-older subtraction.** The statute allows it "for each taxpayer that has attained the age of 65".
   - On a joint return where both spouses are 65 or older it is doubled ($11,320 for 2025).
@@ -168,7 +207,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
   - It runs for only five consecutive years. It is not available again to someone who claimed it and then became a nonresident.
   - For those resident before 1 July 2023, the instructions say the five years end with tax year 2028.
 
-### Elderly homeowner/renter credit, 2025 rules ([DOR elderly credit](https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit); [Schedule 2EC](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf))
+### Elderly homeowner/renter credit, 2025 rules
+
+Sources: [DOR elderly credit](https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit); [Schedule 2EC](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf).
 
 - **Eligibility.** All of these must be true:
   - 62 or older by 31 December (on a joint return where both own or rent the home, one spouse is enough);
@@ -196,7 +237,9 @@ Montana ordinary income is all taxable income that is not a net long-term capita
 - **Deaths.** A claim for a person who died before 1 October of the year is not allowed.
 - **Care facilities.** Rent in a care facility is only the out-of-pocket rent. Without a breakdown from the facility, use Worksheet C, which removes 20% of the payment for board and 30% for care.
 
-## Federal conformity and P.L. 119-21 (OBBBA) ([MCA 15-30-2101](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0010/0150-0300-0210-0010.html); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf))
+### Federal conformity and P.L. 119-21 (OBBBA)
+
+Sources: [MCA 15-30-2101](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0010/0150-0300-0210-0010.html); [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf).
 
 - **Rolling conformity.** For this chapter, "Internal Revenue Code" means the Code "as amended, or as it may be labeled or further amended". Federal changes flow into Montana through federal AGI and the federal deductions on line 2, unless Montana lists an adjustment.
 - **What flows through for 2025 and 2026:**
@@ -208,17 +251,13 @@ Montana ordinary income is all taxable income that is not a net long-term capita
   - the **state income tax add-back**, computed after the federal SALT cap. The 2025 instructions describe the federal cap as $40,000 ($20,000 married filing separately), phased down above $500,000 ($250,000) of modified AGI until it reaches $10,000. If the deduction was limited by the cap, the add-back is reduced "after considering all state and local taxes, other than state income tax".
 - **No decoupling found.** We found no Montana decoupling from P.L. 119-21 in MCA 15-30-2120 or the 2025 Form 2 instructions (checked 25 September 2026). Check DOR's 2026 Form 2 instructions when they are published.
 
-### Federal standard deduction used on line 2 ([Rev. Proc. 2025-32, section 4.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [2025 Form 1040](https://www.irs.gov/pub/irs-pdf/f1040.pdf))
+### Federal standard deduction used on line 2
 
-| Filing status | 2025 | 2026 |
-| --- | --- | --- |
-| Single or married filing separately | $15,750 | $16,100 |
-| Married filing jointly or qualifying surviving spouse | $31,500 | $32,200 |
-| Head of household | $23,625 | $24,150 |
+The federal standard deduction (2026: by filing status, plus the add-ons for age and blindness) is taken from the client's Form 1040 line 12e. The 2026 amounts are in `us-federal-income-tax-return-1040`. The federal add-ons for age and blindness also count for Montana ([Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf)). The 2026 federal SALT cap used in the Worksheet B add-back is also in that skill.
 
-These are the basic amounts. The federal add-ons for age and blindness also count for Montana ([Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf)).
+### 2025 returns (due 15 April 2026, or 15 October 2026 on extension)
 
-## 2025 returns (due 15 April 2026, or 15 October 2026 on extension) ([2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf))
+Sources: [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf).
 
 - **Rates:** 4.7% and 5.9% with the 2025 brackets in the rate table above. Capital gains are taxed at 3% and 4.1% with the 2025 brackets.
 - **65-and-older subtraction** $5,660 ($11,320 joint, both 65 or older). **EITC** 10% of the federal credit, with proration.
@@ -226,7 +265,9 @@ These are the basic amounts. The federal add-ons for age and blindness also coun
 - **Filing after 15 April 2026 without full payment:** interest at 7% runs from 15 April 2026, recalculated after each part payment.
 - **2025 overpayment:** it can be applied to the first 2026 estimated installment (line 24).
 
-## Boundary and exception table ([Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html))
+## Boundary and exception table
+
+Sources: [Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf); [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html).
 
 | Situation | Rule |
 | --- | --- |
@@ -247,7 +288,9 @@ These are the basic amounts. The federal add-ons for age and blindness also coun
 | Elderly credit: gross household income of $45,000 or more | No credit. From $35,000 to $44,999 the credit is scaled down (see Case 5). |
 | Elderly credit: rent paid on property exempt from property tax | Not eligible, unless paid to a county or municipal housing authority ([DOR elderly credit](https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit)). |
 
-## Worked cases ([MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html); [Schedule 2EC](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf))
+## Worked cases
+
+Sources: [MCA 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html); [Schedule 2EC](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf).
 
 Amounts described as client facts are hypothetical inputs.
 
@@ -257,7 +300,7 @@ Client facts: federal AGI of $90,000, all from Schedule C. Federal standard dedu
 - Line 2 = $16,100 (the QBI deduction is left out). Montana taxable income = $90,000 − $16,100 = $73,900.
 - Tax: 4.7% × $47,500 = $2,232.50, plus 5.65% × $26,400 = $1,491.60, total $3,724.10.
 - Estimated tax: 90% of the 2026 tax is $3,351.69, below 100% of the 2025 tax ($3,500).
-- Four payments of $875 (100% of the 2025 tax) are safe whatever 2026 turns out to be. They are due 15 April, 15 June and 15 September 2026 and 15 January 2027.
+- **The decision: which safe harbor to pay on.** Each installment is the lesser of one quarter of 90% of the 2026 tax ($837.92) and one quarter of 100% of the 2025 tax ($875). The 90% route is cheaper by $37.08 a quarter, but it holds only if the 2026 profit really is $90,000; if profit rises during the year the 90% figure rises with it and earlier installments fall short. Four payments of $875 are safe whatever 2026 turns out to be, so pay $875 unless the client can project income reliably. They are due 15 April, 15 June and 15 September 2026 and 15 January 2027.
 
 **Case 2: 2025 return, married filing jointly, both 67, full-year residents.**
 
@@ -296,6 +339,59 @@ Client facts: lived all year in a rented Montana apartment on taxable property. 
   - $1,440 − $1,270 = $170;
   - the multiplier for $37,501 to $40,000 is 0.30, so the credit is $51.
 
+### Worked cases that recompute
+
+These recompute Worked cases 1 (including the estimated-tax decision) and 3 above from the 2026 brackets in MCA 15-30-2103 (4.7% up to $47,500 single, 5.65% above; net long-term capital gains 3.0% in the room left under $47,500 and 4.1% above).
+
+Example A (Case 1): 2026, single, federal AGI $90,000, federal standard deduction $16,100, QBI deduction left out. Montana taxable income $73,900. Tax = 4.7% x 47,500 + 5.65% x 26,400 = 2,232.50 + 1,491.60 = 3,724.10.
+
+```oa-check
+name: MT 2026 single, ordinary income only (Case 1)
+inputs:
+  federal_agi: 90000
+  federal_standard_deduction: 16100
+steps:
+  - mt_taxable: federal_agi - federal_standard_deduction
+  - tax_lower: min(mt_taxable, 47500) * 0.047
+  - tax_upper: max(mt_taxable - 47500, 0) * 0.0565
+  - tax: tax_lower + tax_upper
+  - ninety_pct: tax * 0.9
+  - prior_year_tax: 3500
+  - quarter_current: round(ninety_pct / 4, 2)
+  - quarter_prior: prior_year_tax / 4
+  - quarter_required: min(quarter_current, quarter_prior)
+expected:
+  mt_taxable: 73900
+  tax_lower: 2232.50
+  tax_upper: 1491.60
+  tax: 3724.10
+  ninety_pct: 3351.69
+  quarter_current: 837.92
+  quarter_prior: 875
+  quarter_required: 837.92
+```
+
+Example B (Case 3): 2026, single, Montana taxable income $60,000 of which $20,000 is net long-term capital gains. Ordinary tax 4.7% x 40,000 = 1,880. Room under the bracket 47,500 - 40,000 = 7,500; gains tax 3% x 7,500 + 4.1% x 12,500 = 737.50. Total 2,617.50.
+
+```oa-check
+name: MT 2026 single, ordinary income plus long-term gains (Case 3)
+inputs:
+  mt_taxable: 60000
+  lt_gains: 20000
+steps:
+  - ordinary: mt_taxable - lt_gains
+  - ordinary_tax: min(ordinary, 47500) * 0.047 + max(ordinary - 47500, 0) * 0.0565
+  - room: max(47500 - ordinary, 0)
+  - gains_at_3: min(lt_gains, room)
+  - gains_tax: gains_at_3 * 0.03 + (lt_gains - gains_at_3) * 0.041
+  - total_tax: ordinary_tax + gains_tax
+expected:
+  ordinary_tax: 1880
+  room: 7500
+  gains_tax: 737.50
+  total_tax: 2617.50
+```
+
 ## When to refuse or refer
 
 - **Residency in doubt**: homes in two states with similar permanency, or a claimed change of domicile without affirmative steps.
@@ -309,7 +405,9 @@ Client facts: lived all year in a rented Montana apartment on taxable property. 
 - **Non-qualified withdrawals** from farm and ranch risk management accounts, first-time homebuyer accounts and medical savings accounts, which carry 10% penalties ([2025 Form 2 instructions, Schedule IV](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf)).
 - **2026 returns** before DOR publishes the 2026 Form 2: confirm the 65-and-older subtraction, the 529 limit and EITC proration.
 
-## Filing and payment ([2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf); [DOR extensions](https://revenue.mt.gov/taxes/individual-income-tax/extensions); [DOR penalty and interest](https://revenue.mt.gov/taxes/penalty-and-interest); [DOR estimated tax](https://revenue.mt.gov/taxes/estimated-tax-payments); [Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf))
+## Filing and payment
+
+Sources: [2025 Form 2 instructions](https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf); [DOR extensions](https://revenue.mt.gov/taxes/individual-income-tax/extensions); [DOR penalty and interest](https://revenue.mt.gov/taxes/penalty-and-interest); [DOR estimated tax](https://revenue.mt.gov/taxes/estimated-tax-payments); [Publication 1](https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf).
 
 - **Due date:** 15 April (15 April 2026 for 2025; 15 April 2027 for 2026).
 - **Extension:** an automatic six months, to 15 October. No form and no federal extension are needed.
@@ -340,81 +438,31 @@ Client facts: lived all year in a rented Montana apartment on taxable property. 
 - **Schedule II** (with Form DE for nonresident business income) for part-year, nonresident and mixed residency returns.
 - **Credits and payments:** other-state credit with that state's return, EITC, Schedule 2EC, withholding, estimates, extension payment and Schedule IV interest and penalties.
 
-
-## Worked examples (oa-check)
-
-These recompute Worked cases 1 and 3 above from the 2026 brackets in MCA 15-30-2103 (4.7% up to $47,500 single, 5.65% above; net long-term capital gains 3.0% in the room left under $47,500 and 4.1% above).
-
-Example A (Case 1): 2026, single, federal AGI $90,000, federal standard deduction $16,100, QBI deduction left out. Montana taxable income $73,900. Tax = 4.7% x 47,500 + 5.65% x 26,400 = 2,232.50 + 1,491.60 = 3,724.10.
-
-```oa-check
-name: MT 2026 single, ordinary income only (Case 1)
-inputs:
-  federal_agi: 90000
-  federal_standard_deduction: 16100
-steps:
-  - mt_taxable: federal_agi - federal_standard_deduction
-  - tax_lower: min(mt_taxable, 47500) * 0.047
-  - tax_upper: max(mt_taxable - 47500, 0) * 0.0565
-  - tax: tax_lower + tax_upper
-  - ninety_pct: tax * 0.9
-expected:
-  mt_taxable: 73900
-  tax_lower: 2232.50
-  tax_upper: 1491.60
-  tax: 3724.10
-  ninety_pct: 3351.69
-```
-
-Example B (Case 3): 2026, single, Montana taxable income $60,000 of which $20,000 is net long-term capital gains. Ordinary tax 4.7% x 40,000 = 1,880. Room under the bracket 47,500 - 40,000 = 7,500; gains tax 3% x 7,500 + 4.1% x 12,500 = 737.50. Total 2,617.50.
-
-```oa-check
-name: MT 2026 single, ordinary income plus long-term gains (Case 3)
-inputs:
-  mt_taxable: 60000
-  lt_gains: 20000
-steps:
-  - ordinary: mt_taxable - lt_gains
-  - ordinary_tax: min(ordinary, 47500) * 0.047 + max(ordinary - 47500, 0) * 0.0565
-  - room: max(47500 - ordinary, 0)
-  - gains_at_3: min(lt_gains, room)
-  - gains_tax: gains_at_3 * 0.03 + (lt_gains - gains_at_3) * 0.041
-  - total_tax: ordinary_tax + gains_tax
-expected:
-  ordinary_tax: 1880
-  room: 7500
-  gains_tax: 737.50
-  total_tax: 2617.50
-```
-
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| 2025 Form 2 instructions | https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf | 2026-10-16 |
-| DOR filing requirements | https://revenue.mt.gov/taxes/individual-income-tax/filing-requirements | 2026-10-16 |
-| DOR residency | https://revenue.mt.gov/taxes/individual-income-tax/residency | 2026-10-16 |
-| HB 337, DOR | https://revenue.mt.gov/news/recent-news/HB-337 | 2026-10-16 |
-| DOR tax simplification hub | https://revenue.mt.gov/montana-tax-simplification-resource-hub | 2026-10-16 |
-| DOR elderly credit | https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit | 2026-10-16 |
-| 2025 Form 2 | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf | 2026-11-13 |
-| 2025 Schedule II | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_II.pdf | 2026-10-16 |
-| MCA 15-30-2103 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html | 2026-11-13 |
-| DOR 2025 tax tables | https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025 | 2026-10-16 |
-| MCA 15-30-2120 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html | 2026-10-16 |
-| Schedule 2EC | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf | 2026-10-16 |
-| MCA 15-30-2101 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0010/0150-0300-0210-0010.html | 2026-10-16 |
-| Rev. Proc. 2025-32, section 4.14 | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-10-16 |
-| 2025 Form 1040 | https://www.irs.gov/pub/irs-pdf/f1040.pdf | 2026-10-16 |
+| MCA 15-30-2103 (rates). Read for the 2026 version (terminates 31 December 2026): 4.7% on the first $47,500, 5.65% above, for single and married filing separately; 3.0% and 4.1% on net long-term capital gains, all at 4.1% once nonqualified taxable income is $47,500 or more. | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html | 2026-11-14 |
+| HB 337, DOR. Read for the 2026 brackets for every filing status ($95,000 joint, $71,250 head of household, $47,500 single), the 2027 brackets and the 20% EITC from tax year 2026. | https://revenue.mt.gov/news/recent-news/HB-337 | 2026-11-14 |
+| MCA 15-30-2120 (adjustments). Read for (2)(i) the QBI add-back, (3)(g) the $5,500 base for age 65, (3)(o) the $3,000 volunteer subtraction, (5) the $4,500 / $9,000 529 limit and its indexing after 2025, and (7) indexing rounded to $10. | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html | 2026-11-14 |
+| MCA 15-30-2101 (definitions). Read for the rolling definition of the Internal Revenue Code. | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0010/0150-0300-0210-0010.html | 2026-10-16 |
+| DOR 2025 tax tables. Read for the 2025 brackets ($21,100 single), the $5,660 65-and-over amount and the $4,600 medical savings account limit. | https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025 | 2026-11-14 |
+| DOR penalty and interest. Read for the 2026 interest rate of 7% (0.019178% a day), the 2025 rate of 8% and the understatement, failure to file, fraud and frivolous return penalties. | https://revenue.mt.gov/taxes/penalty-and-interest | 2026-11-14 |
+| 2025 Form 2 instructions. Read for line 2 (lines 12e plus 13b, no QBI), Schedule I, Schedule II, line 6 ($5,660, $11,320 joint), the EITC, the 529 limit, the $50 minimum late filing penalty, the 0.5% late payment penalty capped at 12%, and the elderly credit $12,600 deduction. | https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf | 2026-11-14 |
+| 2025 Form 2. Read for the line numbers and page 2 capital gains computation. | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf | 2026-11-14 |
+| 2025 Schedule II. Read for the ordinary income and capital gains ratios (lines 15 to 25). | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_II.pdf | 2026-11-14 |
+| Schedule 2EC (2025). Read for the household income test, line 28 cap of $1,150 and the multipliers. | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf | 2026-11-14 |
+| DOR elderly credit. Read for eligibility (62 or older, nine months in Montana, six months in the home, income below $45,000) and the $1,150 maximum. | https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit | 2026-11-14 |
+| Publication 1, Prepaying Income Tax. Read for the more-than-$500 estimated tax test, the exceptions and the safe harbors. | https://revenuefiles.mt.gov/files/Forms/Montana-Publication-1-Prepaying-Income-Tax.pdf | 2026-11-14 |
+| DOR filing requirements. Read for who must file and the order of credits. | https://revenue.mt.gov/taxes/individual-income-tax/filing-requirements | 2026-11-14 |
+| DOR residency. Read for domicile, two homes, part-year residents and nonresidents. | https://revenue.mt.gov/taxes/individual-income-tax/residency | 2026-11-14 |
+| DOR tax simplification hub. Read for the federal taxable income starting point and same filing status rule. | https://revenue.mt.gov/montana-tax-simplification-resource-hub | 2026-11-14 |
+| DOR extensions. Read for the automatic six-month extension with no form. | https://revenue.mt.gov/taxes/individual-income-tax/extensions | 2026-11-14 |
+| DOR estimated tax payments. Read for the due dates and payment routes. | https://revenue.mt.gov/taxes/estimated-tax-payments | 2026-11-14 |
+| DOR credit for income tax paid to another state. Read for the remote worker rule. | https://revenue.mt.gov/taxes/tax-credits/credit-for-income-tax-paid-to-other-state | 2026-11-14 |
 
-Not yet confirmed (DOR had not published these 2026 figures; the 2026 tax tables page at revenue.mt.gov returned 404 on 2026-11-13):
-- 2026 Form 2 and its instructions; rules taken from the 2025 instructions are labelled 2025.
-- 2026 65-and-older subtraction (indexed by 1 November 2026).
-- 2026 EITC percentage and proration.
-- 2026 Montana medical savings account and 529 plan limits.
-
-Confirmed on 2026-11-13 against MCA 15-30-2103: the 2026 brackets ($47,500 single and married filing separately, $95,000 joint and surviving spouse, $71,250 head of household; 4.7% and 5.65%) and the 3.0% / 4.1% capital gains rates, including the rule that all gains are taxed at 4.1% when nonqualified taxable income reaches the bracket amount.
+Not yet confirmed: the 2026 Form 2 and its instructions (not published; the 2026 instructions PDF and the 2026 tax tables page at revenue.mt.gov returned 404 on 2026-11-14), so rules taken from the 2025 instructions are labelled 2025; the 2026 65-and-older subtraction (indexed from the $5,500 base; 2025 was $5,660); the 2026 volunteer subtraction after indexing; the 2026 Montana medical savings account and 529 limits; the 2026 EITC proration rules; whether the elderly credit amounts ($1,150, $45,000, $12,600) change for 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

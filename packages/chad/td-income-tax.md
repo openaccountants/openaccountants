@@ -3,15 +3,16 @@ name: td-income-tax
 description: "Prepare Chad personal income working papers for 2026 from salary, ordinary positive business and professional bases, and separate rental and other capital categories. Covers fiscal domicile, documented salary allowances and mandatory deductions, marginal annual bands, BIC expense adjustments, BNC receipts and spouse limits, IGL routing, business reporting and collection evidence. Use for Chad IRPP, self-employment, professional fees, salary, rent or resident intake. Four cases recompute salary, category separation and positive BIC/BNC bases. Final personal settlement, individual losses, conflicting filing rules, special agriculture and deleted global-income provisions remain explicit holds; this is a partial preparation method."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.2
+version: 1.3
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Chad personal income tax v1.2
+# Chad personal income tax v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

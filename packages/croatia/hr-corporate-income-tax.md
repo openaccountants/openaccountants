@@ -1,17 +1,18 @@
 ---
 name: hr-corporate-income-tax
 description: "Use this skill for Croatian profit tax (porez na dobit) in tax year 2026 under the Profit Tax Act in force from 1 January 2026 (last amended NN 151/25) and the Profit Tax Rulebook. It covers who pays and residence (art. 2 and 3), the 10% and 18% rates split at EUR 1,000,000 of revenue in the period (art. 28), the base and the main add-backs (50% of representation and of passenger car costs, fines, donations above 2%), depreciation rates and the car cap, bad debts, provisions, losses carried forward for 5 years, thin capitalisation (art. 8) and the 30% EBITDA interest limit (art. 30.a), monthly advances, the PD return due 30 April, and fines. Trigger on: Croatia corporate tax, porez na dobit 2026, PD obrazac, d.o.o. tax Croatia, predujam poreza na dobit, 10% or 18% profit tax. Out of scope: transfer pricing (hr-transfer-pricing), withholding and treaties in depth (cross-border skill), VAT (croatia-vat-return), individuals (croatia-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Croatia: profit tax (2026) v0.2
+# Croatia: profit tax (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts published by the Tax Administration (Porezna uprava) and from Narodne novine, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 

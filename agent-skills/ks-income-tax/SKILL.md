@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ks-income-tax"
   jurisdiction: "US-KS"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # Kansas individual income tax, tax year 2026
@@ -50,14 +50,14 @@ Kansas individual taxpayers filing Form K-40, with this skill focused on sole pr
 | Taxable income | Rate | Tax calculation |
 | --- | --- | --- |
 | $0 to $23,000 | 5.20% | 5.20% of Kansas taxable income ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
-| Over $23,000 | 5.58% | $1,196 + 5.58% of excess over $23,000 |
+| Over $23,000 | 5.58% | $1,196 + 5.58% of excess over $23,000 ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
 
 **Married Filing Jointly bracket table**  _(K.S.A. 79-32,110(B))_
 
 | Taxable income | Rate | Tax calculation |
 | --- | --- | --- |
 | $0 to $46,000 | 5.20% | 5.20% of Kansas taxable income ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
-| Over $46,000 | 5.58% | $2,392 + 5.58% of excess over $46,000 |
+| Over $46,000 | 5.58% | $2,392 + 5.58% of excess over $46,000 ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
 
 **Note:** These two-bracket rates replaced the prior three-bracket system (3.1% / 5.25% / 5.7%) effective for tax year 2024 under Senate Bill 1 (2024).
 
@@ -273,4 +273,4 @@ Not yet confirmed: whether Kansas decouples from IRC §179 / bonus depreciation 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ks-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ks-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ks-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ks-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
