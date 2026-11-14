@@ -31,8 +31,8 @@ Employers in Myanmar running payroll in FY 2026-27 (1 April 2026 to 31 March 202
 | Health and social care insurance, worker aged 60 or under at entry | Employer 2% plus worker 2% of monthly wages | 2026 | https://www.ssb.gov.mm/Portal/assets/attachment/Contribution_Calculation%28Formula%29.pdf |
 | Health and social care insurance, worker over 60 at entry | Employer 2.5% plus worker 2.5% | 2026 | same |
 | Employment injury benefit insurance | Employer only 1% | 2026 | same |
-| Total, worker 60 or under at entry | 5% (employer 3%, worker 2%) | 2026 | same |
-| Total, worker over 60 at entry | 6% (employer 3.5%, worker 2.5%) | 2026 | same |
+| Total, worker 60 or under at entry | 5% (employer 3%, worker 2%; computed: health 2% each plus employment injury 1% employer only) | 2026 | same |
+| Total, worker over 60 at entry | 6% (employer 3.5%, worker 2.5%; computed: health 2.5% each plus employment injury 1% employer only) | 2026 | same |
 | Payment due | Monthly, not later than the 15th of the following month | 2026 | same |
 | Late payment fine | 10% of the month's contribution for each 30 days late, pro rata by day (SSB table runs to 150 days, 50%) | 2026 | https://www.ssb.gov.mm/Portal/assets/attachment/Fine_Calculation%28Formula%29.pdf |
 | Salary exempt from income tax | Up to 4.8 million kyats a year; above that, tax on total income | FY 2026-27 | https://www.ird.gov.mm/storage/laws/6a6b496e035ea-utl2026.pdf |
