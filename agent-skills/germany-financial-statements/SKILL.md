@@ -7,18 +7,45 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-financial-statements"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Annual financial statements in Germany (Jahresabschluss under the HGB)
 
+## Scope
+
 How a German business draws up, has audited and publishes its annual financial statements under the Commercial Code (Handelsgesetzbuch, HGB): which rules bind which legal form, the size classes, the statements each class needs, the statutory layouts of the balance sheet and the P&L, the notes, publication in the company register, the fine for late publication, and the audit duty. It is for GmbH, UG, AG and KGaA, for partnerships such as the GmbH & Co. KG, and for the people who prepare their accounts. Figures are for tax year 2026. The figures are read from the consolidated federal law pages as they stood on 19 September 2026 and from the Federal Office of Justice (Bundesamt für Justiz). The size limits apply to financial years that begin after 31 December 2023. Publication in the company register applies to financial years that begin after 31 December 2021. One help page of the Federal Office of Justice still prints older, lower limits for micro companies; this Guide follows the statute.
+
+## Ask the client first
+
+- What is the legal form? For an OHG or KG: is at least one personally liable partner a natural person?
+- What were the balance sheet total, the revenue and the average number of employees at the last two balance sheet dates (three for the PublG)? Was the company newly formed or converted in that time?
+- Are the company's securities traded on an organised market, or has admission been applied for? Is it a bank, an insurer, an investment company, or a company that only holds participations?
+- When does the financial year begin and end? This decides the size limits that apply, the publication medium and the one-year deadline.
+- Is the company included in a parent's consolidated accounts, and are all conditions of § 264(3) or § 264b HGB met? Is the company itself a parent?
+- Has the Bundesamt für Justiz sent a threat notice, and on which day was it received?
+
+## The method, step by step
+
+1. Fix the legal form and with it the set of rules. Every merchant draws up a balance sheet and a P&L under § 242 HGB. Companies add notes and a management report under § 264 HGB. An OHG or KG with no natural person as personally liable partner follows the company rules under § 264a HGB. https://www.gesetze-im-internet.de/hgb/__264a.html
+2. For a sole merchant, test the release of § 241a HGB first: both limits in Section 2, on two balance sheet dates in a row. https://www.gesetze-im-internet.de/hgb/__241a.html
+3. Set the size class under § 267 and § 267a HGB: two of three limits, on two balance sheet dates in a row, first date for a new company. Check the "always large" and "never micro" rules in Section 3. https://www.gesetze-im-internet.de/hgb/__267.html
+4. Close the books. Take the inventory (§ 240 HGB) and post the year-end adjustments in Section 5 under the valuation rules of §§ 252 to 256a HGB. https://www.gesetze-im-internet.de/hgb/__253.html
+5. Draw up the balance sheet in the layout of § 266 HGB and the P&L in the layout of § 275 HGB, with the reliefs of the size class. Companies do this within three months, small companies within six months at the latest (§ 264(1) HGB). https://www.gesetze-im-internet.de/hgb/__266.html
+6. Write the notes under §§ 284 to 288 HGB (Section 8). Medium-sized and large companies add the management report under § 289 HGB. https://www.gesetze-im-internet.de/hgb/__289.html
+7. If the company is not small, have the statements and the management report audited under § 316 HGB. The auditor should be elected before the financial year ends (§ 318 HGB). https://www.gesetze-im-internet.de/hgb/__316.html
+8. Have the statements adopted. In a GmbH the shareholders decide within eight months, or eleven months in a small company (§ 42a GmbHG). https://www.gesetze-im-internet.de/gmbhg/__42a.html
+9. Send the documents for the size class (Section 9) to the company register within one year after the balance sheet date under § 325 HGB, with the reliefs of § 326 and § 327 HGB. Register and identify the sender first. https://www.unternehmensregister.de/de/so-gehts/uebermitteln
+10. Send the content of the balance sheet and the P&L to the tax office as an electronic data set (E-Bilanz) under § 5b EStG. Values that do not follow tax law are adjusted by additions or notes, or a separate tax balance sheet is sent. The paragraph lists further documents to send; their start dates are in § 52 EStG and are not covered here. https://www.gesetze-im-internet.de/estg/__5b.html
+11. Keep the statements, the books and the inventories for ten years, the accounting vouchers for eight years and business letters for six years under § 257(4) HGB. https://www.gesetze-im-internet.de/hgb/__257.html
+12. If a threat notice from the Bundesamt für Justiz arrives, publish within six weeks of receipt or lodge a justified objection in the same time under § 335 HGB. https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html
 
 ## Section 1: Quick Reference
 
+Germany; currency EUR.
+
 | Field | Value | Source |
 | --- | --- | --- |
-| Country | Germany (Bundesrepublik Deutschland) | same |
 | Currency | Euro. The statements are drawn up in German and in euro (§ 244 HGB) | https://www.gesetze-im-internet.de/hgb/__244.html |
 | Filing authority | The company register (Unternehmensregister), for financial years that begin after 31 December 2021. Statements for earlier financial years go to the operator of the Bundesanzeiger (§ 325 HGB, Art. 88 EGHGB) | https://www.gesetze-im-internet.de/hgb/__325.html |
 | Primary legislation | Handelsgesetzbuch (HGB), Third Book (Handelsbücher), §§ 238 to 342r | https://www.gesetze-im-internet.de/hgb/__342r.html |
@@ -456,29 +483,45 @@ Source for this table: https://www.gesetze-im-internet.de/hgb/__316.html
 - **Auditor qualification.** Auditors can be Wirtschaftsprüfer (WP) and Wirtschaftsprüfungsgesellschaften. Vereidigte Buchprüfer and Buchprüfungsgesellschaften may also audit medium-sized GmbHs and medium-sized partnerships within § 264a HGB. The statute names no other legal form for them. Every auditor needs an extract from the professional register that shows the entry under § 38 no. 1 letter h or no. 2 letter f WPO. See § 319(1) HGB at https://www.gesetze-im-internet.de/hgb/__319.html
 - **Independence.** An auditor is shut out where there is reason to fear bias. § 319(3) HGB lists cases, among them holding shares in the company, being its legal representative, board member or employee, and having helped to keep the books or to draw up the statements being audited.
 
-## The method, step by step
+## Worked cases
 
-1. Fix the legal form and with it the set of rules. Every merchant draws up a balance sheet and a P&L under § 242 HGB. Companies add notes and a management report under § 264 HGB. An OHG or KG with no natural person as personally liable partner follows the company rules under § 264a HGB. https://www.gesetze-im-internet.de/hgb/__264a.html
-2. For a sole merchant, test the release of § 241a HGB first: both limits in Section 2, on two balance sheet dates in a row. https://www.gesetze-im-internet.de/hgb/__241a.html
-3. Set the size class under § 267 and § 267a HGB: two of three limits, on two balance sheet dates in a row, first date for a new company. Check the "always large" and "never micro" rules in Section 3. https://www.gesetze-im-internet.de/hgb/__267.html
-4. Close the books. Take the inventory (§ 240 HGB) and post the year-end adjustments in Section 5 under the valuation rules of §§ 252 to 256a HGB. https://www.gesetze-im-internet.de/hgb/__253.html
-5. Draw up the balance sheet in the layout of § 266 HGB and the P&L in the layout of § 275 HGB, with the reliefs of the size class. Companies do this within three months, small companies within six months at the latest (§ 264(1) HGB). https://www.gesetze-im-internet.de/hgb/__266.html
-6. Write the notes under §§ 284 to 288 HGB (Section 8). Medium-sized and large companies add the management report under § 289 HGB. https://www.gesetze-im-internet.de/hgb/__289.html
-7. If the company is not small, have the statements and the management report audited under § 316 HGB. The auditor should be elected before the financial year ends (§ 318 HGB). https://www.gesetze-im-internet.de/hgb/__316.html
-8. Have the statements adopted. In a GmbH the shareholders decide within eight months, or eleven months in a small company (§ 42a GmbHG). https://www.gesetze-im-internet.de/gmbhg/__42a.html
-9. Send the documents for the size class (Section 9) to the company register within one year after the balance sheet date under § 325 HGB, with the reliefs of § 326 and § 327 HGB. Register and identify the sender first. https://www.unternehmensregister.de/de/so-gehts/uebermitteln
-10. Send the content of the balance sheet and the P&L to the tax office as an electronic data set (E-Bilanz) under § 5b EStG. Values that do not follow tax law are adjusted by additions or notes, or a separate tax balance sheet is sent. The paragraph lists further documents to send; their start dates are in § 52 EStG and are not covered here. https://www.gesetze-im-internet.de/estg/__5b.html
-11. Keep the statements, the books and the inventories for ten years, the accounting vouchers for eight years and business letters for six years under § 257(4) HGB. https://www.gesetze-im-internet.de/hgb/__257.html
-12. If a threat notice from the Bundesamt für Justiz arrives, publish within six weeks of receipt or lodge a justified objection in the same time under § 335 HGB. https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html
+Amounts are example inputs. Limits: [§ 267 HGB](https://www.gesetze-im-internet.de/hgb/__267.html), [§ 267a HGB](https://www.gesetze-im-internet.de/hgb/__267a.html). A company belongs to a class when it does not go over at least two of the class's three limits, on two balance sheet dates in a row.
 
-## Ask the client first
+**Case 1: a GmbH at 31 December 2026 and 31 December 2025.** Balance sheet total EUR 8,200,000, revenue EUR 14,100,000, 46 employees on average, with the same pattern a year earlier. It goes over only one small limit (balance sheet total over EUR 7,500,000), so it stays small: no statutory audit (§ 316(1) HGB), shortened layouts allowed.
 
-- What is the legal form? For an OHG or KG: is at least one personally liable partner a natural person?
-- What were the balance sheet total, the revenue and the average number of employees at the last two balance sheet dates (three for the PublG)? Was the company newly formed or converted in that time?
-- Are the company's securities traded on an organised market, or has admission been applied for? Is it a bank, an insurer, an investment company, or a company that only holds participations?
-- When does the financial year begin and end? This decides the size limits that apply, the publication medium and the one-year deadline.
-- Is the company included in a parent's consolidated accounts, and are all conditions of § 264(3) or § 264b HGB met? Is the company itself a parent?
-- Has the Bundesamt für Justiz sent a threat notice, and on which day was it received?
+**Case 2: a UG on its first balance sheet date.** Balance sheet total EUR 120,000, revenue EUR 980,000, 4 employees. It goes over the micro revenue limit of EUR 900,000 but stays within the other two, so it is a micro company. On formation the first balance sheet date decides (§ 267(4) HGB, by reference in § 267a(1)).
+
+```oa-check
+name: DE accounts 2026, Case 1 small-company test counts limits exceeded
+inputs:
+  total: 8200000
+  revenue: 14100000
+  staff: 46
+steps:
+  - over_total: min(floor(total / 7500000.01), 1)
+  - over_revenue: min(floor(revenue / 15000000.01), 1)
+  - over_staff: min(floor(staff / 50.01), 1)
+  - limits_exceeded: over_total + over_revenue + over_staff
+expected:
+  limits_exceeded: 1
+```
+
+```oa-check
+name: DE accounts 2026, Case 2 micro-company test counts limits exceeded
+inputs:
+  total: 120000
+  revenue: 980000
+  staff: 4
+steps:
+  - over_total: min(floor(total / 450000.01), 1)
+  - over_revenue: min(floor(revenue / 900000.01), 1)
+  - over_staff: min(floor(staff / 10.01), 1)
+  - limits_exceeded: over_total + over_revenue + over_staff
+expected:
+  limits_exceeded: 1
+```
+
+Reading the checks: fewer than two limits exceeded means the company stays in the class.
 
 ## When to refuse or refer
 
@@ -496,28 +539,96 @@ Source for this table: https://www.gesetze-im-internet.de/hgb/__316.html
 
 ## Sources
 
-- HGB index (structure of the Third Book): https://www.gesetze-im-internet.de/hgb/ (read 2026-10-31)
-- HGB § 9, § 240, § 241a, § 242, § 243, § 244, § 245, § 247 (register access, inventory, release, duty to draw up, language, signature, content): https://www.gesetze-im-internet.de/hgb/__9.html and https://www.gesetze-im-internet.de/hgb/__240.html and https://www.gesetze-im-internet.de/hgb/__241a.html and https://www.gesetze-im-internet.de/hgb/__242.html and https://www.gesetze-im-internet.de/hgb/__243.html and https://www.gesetze-im-internet.de/hgb/__244.html and https://www.gesetze-im-internet.de/hgb/__245.html and https://www.gesetze-im-internet.de/hgb/__247.html (read 2026-10-31)
-- HGB § 246, § 249, § 250, § 251, § 252, § 253, § 256, § 256a, § 257 (recognition, valuation, retention): https://www.gesetze-im-internet.de/hgb/__246.html and https://www.gesetze-im-internet.de/hgb/__249.html and https://www.gesetze-im-internet.de/hgb/__250.html and https://www.gesetze-im-internet.de/hgb/__251.html and https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/hgb/__253.html and https://www.gesetze-im-internet.de/hgb/__256.html and https://www.gesetze-im-internet.de/hgb/__256a.html and https://www.gesetze-im-internet.de/hgb/__257.html (read 2026-10-31)
-- HGB § 264, § 264a, § 264b, § 264d, § 265, § 266, § 267, § 267a, § 268 (companies, partnerships, layouts, size classes): https://www.gesetze-im-internet.de/hgb/__264.html and https://www.gesetze-im-internet.de/hgb/__264a.html and https://www.gesetze-im-internet.de/hgb/__264b.html and https://www.gesetze-im-internet.de/hgb/__264d.html and https://www.gesetze-im-internet.de/hgb/__265.html and https://www.gesetze-im-internet.de/hgb/__266.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__267a.html and https://www.gesetze-im-internet.de/hgb/__268.html (read 2026-10-31)
-- HGB § 274, § 274a, § 275, § 276, § 277 (deferred tax, P&L): https://www.gesetze-im-internet.de/hgb/__274.html and https://www.gesetze-im-internet.de/hgb/__274a.html and https://www.gesetze-im-internet.de/hgb/__275.html and https://www.gesetze-im-internet.de/hgb/__276.html and https://www.gesetze-im-internet.de/hgb/__277.html (read 2026-10-31)
-- HGB § 284, § 285, § 286, § 288, § 289, § 289b (notes, management report): https://www.gesetze-im-internet.de/hgb/__284.html and https://www.gesetze-im-internet.de/hgb/__285.html and https://www.gesetze-im-internet.de/hgb/__286.html and https://www.gesetze-im-internet.de/hgb/__288.html and https://www.gesetze-im-internet.de/hgb/__289.html and https://www.gesetze-im-internet.de/hgb/__289b.html (read 2026-10-31)
-- HGB § 290, § 293, § 297, § 315e (groups, IFRS): https://www.gesetze-im-internet.de/hgb/__290.html and https://www.gesetze-im-internet.de/hgb/__293.html and https://www.gesetze-im-internet.de/hgb/__297.html and https://www.gesetze-im-internet.de/hgb/__315e.html (read 2026-10-31)
-- HGB § 316, § 316a, § 318, § 319, § 321 (audit): https://www.gesetze-im-internet.de/hgb/__316.html and https://www.gesetze-im-internet.de/hgb/__316a.html and https://www.gesetze-im-internet.de/hgb/__318.html and https://www.gesetze-im-internet.de/hgb/__319.html and https://www.gesetze-im-internet.de/hgb/__321.html (read 2026-10-31)
-- HGB § 325, § 325a, § 326, § 327, § 328, § 329, § 334, § 335, § 335b (publication, fines): https://www.gesetze-im-internet.de/hgb/__325.html and https://www.gesetze-im-internet.de/hgb/__325a.html and https://www.gesetze-im-internet.de/hgb/__326.html and https://www.gesetze-im-internet.de/hgb/__327.html and https://www.gesetze-im-internet.de/hgb/__328.html and https://www.gesetze-im-internet.de/hgb/__329.html and https://www.gesetze-im-internet.de/hgb/__334.html and https://www.gesetze-im-internet.de/hgb/__335.html and https://www.gesetze-im-internet.de/hgb/__335b.html (read 2026-10-31)
+Every address below was opened again on the read date shown; the figures quoted in the body come from the page linked on their row or in their table.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 244 HGB, Sprache. Währungseinheit, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__244.html | 2026-11-14 |
+| Read for § 325 HGB, Offenlegung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__325.html | 2026-11-14 |
+| Read for § 342r HGB, Rechnungslegungsbeirat, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__342r.html | 2026-11-14 |
+| Read for § 315e HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__315e.html | 2026-11-14 |
+| Read for BfJ - Offenlegungspflichten, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html | 2026-11-14 |
+| Read for BfJ - Ordnungsgeldverfahren, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html | 2026-11-14 |
+| Read for Unternehmensregister - Die zentrale Plattform zu Unternehmensdaten, the passages cited in this skill | https://www.unternehmensregister.de/de/so-gehts/uebermitteln | 2026-11-14 |
+| Read for HGB - nichtamtliches Inhaltsverzeichnis, the passages cited in this skill | https://www.gesetze-im-internet.de/hgb/ | 2026-11-14 |
+| Read for § 242 HGB, Pflicht zur Aufstellung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__242.html | 2026-11-14 |
+| Read for § 264 HGB, Pflicht zur Aufstellung; Befreiung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264.html | 2026-11-14 |
+| Read for § 264a HGB, Anwendung auf bestimmte offene Handelsgesellschaften und Kommanditgesellschaften, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264a.html | 2026-11-14 |
+| Read for § 241a HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__241a.html | 2026-11-14 |
+| Read for Art 92 EGHGB, § 241a Satz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgbeg/art_92.html | 2026-11-14 |
+| Read for § 267 HGB, Umschreibung der Größenklassen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__267.html | 2026-11-14 |
+| Read for § 267a HGB, Kleinstkapitalgesellschaften, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__267a.html | 2026-11-14 |
+| Read for Art 93 EGHGB, (1) § 267 Absatz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgbeg/art_93.html | 2026-11-14 |
+| Read for § 245 HGB, Unterzeichnung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__245.html | 2026-11-14 |
+| Read for § 42a GmbHG, Vorlage des Jahresabschlusses und des Lageberichts, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__42a.html | 2026-11-14 |
+| Read for § 175 AktG, Einberufung, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__175.html | 2026-11-14 |
+| Read for § 249 HGB, Rückstellungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__249.html | 2026-11-14 |
+| Read for § 250 HGB, Rechnungsabgrenzungsposten, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__250.html | 2026-11-14 |
+| Read for § 252 HGB, Allgemeine Bewertungsgrundsätze, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__252.html | 2026-11-14 |
+| Read for § 253 HGB, Zugangs- und Folgebewertung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__253.html | 2026-11-14 |
+| Read for § 256 HGB, Bewertungsvereinfachungsverfahren, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__256.html | 2026-11-14 |
+| Read for § 256a HGB, Währungsumrechnung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__256a.html | 2026-11-14 |
+| Read for § 274 HGB, Latente Steuern, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__274.html | 2026-11-14 |
+| Read for the Bundesbank discount rates for long-term provisions (§ 253(2) HGB); the page refused a script on 2026-11-14 | https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-renditen/abzinsungszinssaetze/abzinsungszinssaetze-772396 | could not be read on 2026-11-14 (last read 2026-10-31) |
+| Read for § 5 EStG, Gewinn bei Kaufleuten und bei bestimmten anderen Gewerbetreibenden, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__5.html | 2026-11-14 |
+| Read for § 275 HGB, Gliederung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__275.html | 2026-11-14 |
+| Read for § 265 HGB, Allgemeine Grundsätze für die Gliederung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__265.html | 2026-11-14 |
+| Read for § 276 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__276.html | 2026-11-14 |
+| Read for § 277 HGB, Vorschriften zu einzelnen Posten der Gewinn- und Verlustrechnung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__277.html | 2026-11-14 |
+| Read for § 266 HGB, Gliederung der Bilanz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__266.html | 2026-11-14 |
+| Read for § 268 HGB, Vorschriften zu einzelnen Posten der Bilanz Bilanzvermerke, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__268.html | 2026-11-14 |
+| Read for § 247 HGB, Inhalt der Bilanz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__247.html | 2026-11-14 |
+| Read for § 284 HGB, Erläuterung der Bilanz und der Gewinn- und Verlustrechnung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__284.html | 2026-11-14 |
+| Read for § 285 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__285.html | 2026-11-14 |
+| Read for § 288 HGB, Größenabhängige Erleichterungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__288.html | 2026-11-14 |
+| Read for § 286 HGB, Unterlassen von Angaben, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__286.html | 2026-11-14 |
+| Read for § 334 HGB, Bußgeldvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__334.html | 2026-11-14 |
+| Read for § 329 HGB, Prüfungs- und Unterrichtungspflicht der das Unternehmensregister führenden Stelle, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__329.html | 2026-11-14 |
+| Read for BfJ - Aktuelles, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Aktuelles/Aktuelles_node.html | 2026-11-14 |
+| Read for BfJ - Häufig gestellte Fragen, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Fragen/Fragen_node.html | 2026-11-14 |
+| Read for § 335 HGB, Festsetzung von Ordnungsgeld; Verordnungsermächtigungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__335.html | 2026-11-14 |
+| Read for anlage JVKOSTG, and the figures quoted from it | https://www.gesetze-im-internet.de/jvkostg/anlage.html | 2026-11-14 |
+| Read for § 335b HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__335b.html | 2026-11-14 |
+| Read for § 326 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__326.html | 2026-11-14 |
+| Read for § 327 HGB, Größenabhängige Erleichterungen für mittelgroße Kapitalgesellschaften bei der Offenlegung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__327.html | 2026-11-14 |
+| Read for § 9 HGB, Einsichtnahme in das Handelsregister und das Unternehmensregister, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__9.html | 2026-11-14 |
+| Read for BfJ - Bestandteile des Jahresabschlusses, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Verstoesse/InhaltJahresabschluss/Bestandteile/Bestandteile_node.html | 2026-11-14 |
+| Read for § 321 HGB, Prüfungsbericht, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__321.html | 2026-11-14 |
+| Read for § 328 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__328.html | 2026-11-14 |
+| Read for § 325a HGB, Zweigniederlassungen von Kapitalgesellschaften mit Sitz im Ausland, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__325a.html | 2026-11-14 |
+| Read for Art 88 EGHGB, (1) § 9c Absatz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgbeg/art_88.html | 2026-11-14 |
+| Read for § 66a WIPRO, Abschlussprüferaufsicht, and the figures quoted from it | https://www.gesetze-im-internet.de/wipro/__66a.html | 2026-11-14 |
+| Read for § 316 HGB, Pflicht zur Prüfung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__316.html | 2026-11-14 |
+| Read for § 318 HGB, Bestellung und Abberufung des Abschlußprüfers, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__318.html | 2026-11-14 |
+| Read for § 1 PublG, Zur Rechnungslegung verpflichtete Unternehmen, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__1.html | 2026-11-14 |
+| Read for § 2 PublG, Beginn und Dauer der Pflicht zur Rechnungslegung, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__2.html | 2026-11-14 |
+| Read for § 3 PublG, Geltungsbereich, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__3.html | 2026-11-14 |
+| Read for § 5 PublG, Aufstellung von Jahresabschluß und Lagebericht, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__5.html | 2026-11-14 |
+| Read for § 6 PublG, Prüfung durch die Abschlußprüfer, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__6.html | 2026-11-14 |
+| Read for § 9 PublG, and the figures quoted from it | https://www.gesetze-im-internet.de/publg/__9.html | 2026-11-14 |
+| Read for § 319 HGB, Auswahl der Abschlussprüfer und Ausschlussgründe, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__319.html | 2026-11-14 |
+| Read for § 289 HGB, Inhalt des Lageberichts, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__289.html | 2026-11-14 |
+| Read for § 5b EStG, Elektronische Übermittlung von Bilanzen sowie Gewinn- und Verlustrechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__5b.html | 2026-11-14 |
+| Read for § 257 HGB, Aufbewahrung von Unterlagen Aufbewahrungsfristen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__257.html | 2026-11-14 |
+| Read for § 240 HGB, Inventar, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__240.html | 2026-11-14 |
+| Read for § 243 HGB, Aufstellungsgrundsatz, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__243.html | 2026-11-14 |
+| Read for § 246 HGB, Vollständigkeit. Verrechnungsverbot, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__246.html | 2026-11-14 |
+| Read for § 251 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__251.html | 2026-11-14 |
+| Read for § 264b HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264b.html | 2026-11-14 |
+| Read for § 264d HGB, Kapitalmarktorientierte Kapitalgesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264d.html | 2026-11-14 |
+| Read for § 274a HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__274a.html | 2026-11-14 |
+| Read for § 289b HGB, Pflicht zur nichtfinanziellen Erklärung; Befreiungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__289b.html | 2026-11-14 |
+| Read for § 290 HGB, Pflicht zur Aufstellung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__290.html | 2026-11-14 |
+| Read for § 293 HGB, Größenabhängige Befreiungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__293.html | 2026-11-14 |
+| Read for § 297 HGB, Inhalt, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__297.html | 2026-11-14 |
+| Read for § 316a HGB, Abschlussprüfung bei Unternehmen von öffentlichem Interesse, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__316a.html | 2026-11-14 |
+
+Earlier reading notes kept from the previous version:
+
 - EGHGB Art. 88, Art. 92 and Art. 93 (start of the register rule, start of the § 241a amounts, start of the size limits): https://www.gesetze-im-internet.de/hgbeg/art_88.html and https://www.gesetze-im-internet.de/hgbeg/art_92.html and https://www.gesetze-im-internet.de/hgbeg/art_93.html (read 2026-10-31)
-- PublG § 1, § 2, § 3, § 5, § 6, § 9: https://www.gesetze-im-internet.de/publg/__1.html and https://www.gesetze-im-internet.de/publg/__2.html and https://www.gesetze-im-internet.de/publg/__3.html and https://www.gesetze-im-internet.de/publg/__5.html and https://www.gesetze-im-internet.de/publg/__6.html and https://www.gesetze-im-internet.de/publg/__9.html (read 2026-10-31)
-- GmbHG § 42a, AktG § 175, WPO § 66a: https://www.gesetze-im-internet.de/gmbhg/__42a.html and https://www.gesetze-im-internet.de/aktg/__175.html and https://www.gesetze-im-internet.de/wipro/__66a.html (read 2026-10-31)
 - EStG § 5, § 5b (tax limits on provisions, E-Bilanz): https://www.gesetze-im-internet.de/estg/__5.html and https://www.gesetze-im-internet.de/estg/__5b.html (read 2026-10-31)
-- JVKostG cost schedule (fee for a second and further fine under § 335 HGB): https://www.gesetze-im-internet.de/jvkostg/anlage.html (read 2026-10-31)
-- Bundesamt für Justiz, fine procedure: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html (read 2026-10-31)
-- Bundesamt für Justiz, publication duties: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html (read 2026-10-31)
-- Bundesamt für Justiz, questions and answers: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Fragen/Fragen_node.html (read 2026-10-31)
-- Bundesamt für Justiz, news on the move to the company register: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Aktuelles/Aktuelles_node.html (read 2026-10-31)
-- Bundesamt für Justiz, parts of the statements by size: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Verstoesse/InhaltJahresabschluss/Bestandteile/Bestandteile_node.html (read 2026-10-31)
-- Company register, how to send documents: https://www.unternehmensregister.de/de/so-gehts/uebermitteln (read 2026-10-31)
-- Deutsche Bundesbank, discount rates under § 253(2) HGB: https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-renditen/abzinsungszinssaetze/abzinsungszinssaetze-772396 (read 2026-10-31)
-- [HGB § 342r](https://www.gesetze-im-internet.de/hgb/__342r.html), read 2026-10-31
+
+Not yet confirmed: none for the size limits, layouts and filing deadlines read today; the Unternehmensregister fee schedule and any 2026 change to the publication portal routine were not opened in this pass.
 
 ## Disclaimer
 
@@ -527,4 +638,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

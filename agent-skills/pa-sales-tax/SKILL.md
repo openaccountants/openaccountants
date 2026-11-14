@@ -7,12 +7,28 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pa-sales-tax"
   jurisdiction: "US-PA"
   tax_year: "2026"
-  last_updated: "2026-09-25"
+  last_updated: "2026-11-13"
 ---
 
 # Pennsylvania sales and use tax: 2026 collection, nexus and filing
 
 Figures are for tax year 2026, as they stand on 25 September 2026. They come from the Pennsylvania Department of Revenue (DOR) at pa.gov. The biggest 2026 change is the local tax in Philadelphia and Allegheny County: Act 21 of 2026 moved it to destination sourcing for tax years after 31 December 2025, and DOR will begin enforcing that from 1 October 2026. A short section covers 2025 periods, when the old rule applied.
+
+**Quick reference, 2026 (folded in from the retired `pennsylvania-sales-tax` skill)**
+
+| Item | Rate or figure | Source |
+| --- | --- | --- |
+| State sales and use tax | 6% everywhere in Pennsylvania | [DOR sales tax page](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax) |
+| Allegheny County (Pittsburgh and the rest of the county) | 6% + 1% = 7% combined | same |
+| Philadelphia | 6% + 2% = 8% combined, the highest in the state | same |
+| Every other county | 6% (no local sales tax) | same |
+| Local tax sourcing | Destination (delivery address) for tax years after 31 December 2025; enforced from 1 October 2026 (Act 21 of 2026) | [DOR local sales tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/local-sales-tax) |
+| Remote seller and marketplace facilitator threshold | More than $100,000 of PA gross sales in the previous calendar year; no transaction count; since 1 July 2019 (Act 13 of 2019) | [DOR online retailers](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers) |
+| Return | Sales, use and hotel occupancy tax return (PA-3) filed in myPATH by the 20th after the period | [REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf) |
+| Vendor discount | 1% of tax collected, capped at $25 monthly, $75 quarterly, $150 semi-annual; on-time returns only | same |
+| Late return addition | 5% a month or part month, up to 25%, never less than $2 | same |
+| Interest, 2026 | 7% a year (daily 0.000192) | [REV-1611](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/otherforms/documents/rev-1611.pdf) |
+| Streamlined Sales Tax member | No | [DOR sales tax page](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax) |
 
 ## Scope and who this is for
 
@@ -45,9 +61,9 @@ Figures are for tax year 2026, as they stand on 25 September 2026. They come fro
 6. **File the return in myPATH by the 20th** after the period ends, even if you had no sales. Pay in full on time to keep the vendor discount. Payments of $1,000 or more must be made electronically ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf)).
 7. **Keep every exemption certificate for at least four years** from the date of the exempt sale.
 
-## Rates and thresholds for 2026
+### Rates, bands and thresholds
 
-### Rates ([DOR sales, use and hotel occupancy tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax))
+#### Rates ([DOR sales, use and hotel occupancy tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax))
 
 | Item | 2026 value | Source |
 | --- | --- | --- |
@@ -58,7 +74,7 @@ Figures are for tax year 2026, as they stand on 25 September 2026. They come fro
 
 Only Allegheny County and Philadelphia levy a local sales tax. The highest combined rate is therefore 8%, in Philadelphia.
 
-### Local tax sourcing from 2026 ([DOR local sales tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/local-sales-tax))
+#### Local tax sourcing from 2026 ([DOR local sales tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/local-sales-tax))
 
 - **The rule.** Act 21 of 2026 requires vendors that already collect the 6% state tax to collect Philadelphia's 2% and Allegheny County's 1% on taxable sales to customers in those counties.
 - **Destination, not origin.** Before the change, local tax was generally based on the point of sale, meaning where the vendor was located. It is now based on the point of destination, where the product or service is delivered.
@@ -69,7 +85,7 @@ Only Allegheny County and Philadelphia levy a local sales tax. The highest combi
 
 DOR's Retailer's Information booklet (REV-717, revised 02-26) still describes the old origin rule and voluntary collection. The DOR local sales tax page reflects Act 21 and is the later source; follow it.
 
-### Who must be licensed and collect ([DOR online retailers](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers))
+#### Who must be licensed and collect ([DOR online retailers](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers))
 
 | Seller | Rule |
 | --- | --- |
@@ -90,7 +106,7 @@ How the threshold works:
 - **Certified Service Provider option.** A vendor with no physical presence may use a DOR-approved CSP instead. While it keeps using the CSP, it does not need its own Pennsylvania license or returns. DOR lists Avalara, Sovos and TaxCloud.
 - **Marketplace sellers with inventory here.** A seller with inventory in Pennsylvania must collect on its direct sales. It must also collect on sales through a marketplace facilitator if that facilitator does not collect.
 
-### Filing frequency ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf) and [2026 REV-819](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/2026_rev-819.pdf))
+#### Filing frequency ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf) and [2026 REV-819](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/2026_rev-819.pdf))
 
 DOR assigns the frequency from the licensee's actual tax liability. The thresholds are:
 
@@ -109,7 +125,9 @@ Boundary points:
 - **Exactly $100,000** is AST Level 2.
 - **What the prepayment is.** AST Level 1 may pay either 50% of the liability for the same month of the prior year, or at least 50% of the actual liability for the current month. AST Level 2 must pay 50% of the liability for the same month of the prior year, with no alternative ([DOR AST prepayments](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/accelerated-sales-tax-ast-prepayments)). The current month's prepayment and the prior month's liability are separate payments.
 
-## What is taxable: boundary and exception table
+## Boundary and exception table
+
+What is taxable, what is exempt, use tax and exemption certificates.
 
 ### Goods, food and clothing ([DOR sales tax page](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax); [REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf))
 
@@ -173,7 +191,7 @@ Most services are not taxable in Pennsylvania. The services below are taxable, g
 
 Contractors generally pay tax on all materials and equipment they furnish and install. The exception is "building machinery and equipment" transferred under a contract with an exempt entity, such as a purely public charity or a government body. For that, the contractor gives the vendor a certificate naming the exempt entity and its exemption number, with a list of the qualifying property attached. Refer anything beyond this.
 
-## Use tax ([DOR use tax for businesses](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/use-tax/use-tax-for-businesses))
+### Use tax
 
 - **When it is owed.** On any taxable goods or services delivered into or used in Pennsylvania where the seller did not charge Pennsylvania sales tax, for example internet, catalog or out-of-state purchases.
 - **Rate.** Same as sales tax: 6%, plus 1% in Allegheny County or 2% in Philadelphia.
@@ -183,7 +201,7 @@ Contractors generally pay tax on all materials and equipment they furnish and in
 - **Individuals** can report use tax annually on the PA-40 personal income tax return.
 - **Late payment.** Use tax found on audit is assessed with penalty and interest.
 
-## Exemption certificates: REV-1220 ([form REV-1220](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-1220.pdf); [REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf))
+### Exemption certificates: REV-1220
 
 - **Form types.** Use a unit certificate for one transaction, or a blanket certificate for repeat purchases from the same seller.
 - **Common reasons.**
@@ -206,7 +224,31 @@ Contractors generally pay tax on all materials and equipment they furnish and in
 - **Exempt organizations** use REV-1220 with REV-1715 for purchases of $200 or more.
 - **Wholesale certificate holders** may give a supplier REV-1220 for items they will resell. It does not cover items they consume.
 
-## Worked cases ([DOR sales tax page](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax))
+### Defaults when a fact is missing (from the retired `pennsylvania-sales-tax`, corrected)
+
+| Missing fact | Default |
+| --- | --- |
+| Whether a product is taxable | Treat as taxable until an exemption is shown |
+| Whether a clothing item is everyday or formal, sporting or fur | Ask; everyday clothing is exempt, the listed exceptions are taxable |
+| Custom or canned software | Treat as canned (taxable) until the contract shows it was written to the original buyer's specifications |
+| Delivery address in Philadelphia or Allegheny County | Ask for the address. From 1 October 2026 local tax follows the delivery address; do not default to 6% only (the old file's "state rate only" default predates Act 21 of 2026) |
+| Whether the buyer holds a REV-1220 | Charge tax until a properly completed certificate is in hand within 60 days |
+
+### Red flags and never do
+
+- Never charge tax on everyday clothing, grocery food, candy and gum, or custom software.
+- Never forget the 1% (Allegheny) or 2% (Philadelphia) local tax on sales delivered there from 1 October 2026.
+- Never take the vendor discount on a late return or on use tax.
+- Never present a figure as final without review by a CPA, EA or other qualified professional.
+
+### Bank statement and ledger hints (from the retired `pennsylvania-sales-tax`)
+
+| Narration | Hint |
+| --- | --- |
+| PA DOR, REVENUE PA, MYPATH | Sales tax payment or prepayment; not a sale |
+| AMAZON, SHOPIFY, STRIPE, ETSY payouts | Marketplace or processor payout; check whether the facilitator collected PA tax |
+
+## Worked cases
 
 Rates are 6% state, plus 1% in Allegheny County or 2% in Philadelphia. Amounts are illustrative.
 
@@ -221,6 +263,44 @@ Rates are 6% state, plus 1% in Allegheny County or 2% in Philadelphia. Amounts a
 6. **Late return.** A monthly filer owes $2,000 for September 2026, due 20 October 2026. It files and pays on 1 December 2026. That is one full month plus a fraction of a month late, so two months count. The addition is 2 × 5% = 10% of $2,000 = $200.00, and the discount is lost. Interest at 7% for 2026 is charged daily: $2,000 × 42 days × 0.000192 = $16.13.
 7. **Business use tax.** A Philadelphia business buys $3,000 of computers from a website that charges no Pennsylvania tax, delivered to its Philadelphia office. It owes $3,000 × 8% = $240.00 use tax, on line 6 of its sales tax return, with no discount.
 8. **Resale certificate.** A Pittsburgh retailer buys stock for resale and gives its supplier a blanket REV-1220 showing its License ID. The supplier holds the certificate within 60 days and keeps it for four years, so it need not charge tax. If the retailer later takes some of that stock for its own use, it owes use tax on it.
+
+The arithmetic for cases 1, 2 and 5, and the decision in case 3:
+
+```oa-check
+name: PA 2026 combined rates and vendor discount cap
+inputs:
+  laptop: 1000
+  tuxedo: 300
+  collected_monthly: 4000
+steps:
+  - philadelphia_tax: laptop * (0.06 + 0.02)
+  - store_pickup_tax: laptop * 0.06
+  - allegheny_tux_tax: tuxedo * (0.06 + 0.01)
+  - discount: min(collected_monthly * 0.01, 25)
+expected:
+  philadelphia_tax: 80.00
+  store_pickup_tax: 60.00
+  allegheny_tux_tax: 21.00
+  discount: 25.00
+```
+
+```oa-check
+name: Remote seller threshold, counting only direct sales (decision)
+inputs:
+  direct_sales: 90000
+  facilitator_collected: 30000
+  threshold: 100000
+steps:
+  - counted: direct_sales
+  - excess_if_direct_only: max(counted - threshold, 0)
+  - excess_if_all_direct: max(direct_sales + facilitator_collected - threshold, 0)
+expected:
+  counted: 90000
+  excess_if_direct_only: 0
+  excess_if_all_direct: 20000
+```
+
+A zero excess means no duty to collect from 1 April 2026; any positive excess means the seller must register and collect from 1 April 2026 to 31 March 2027, or use a CSP.
 
 ## When to refuse or refer
 
@@ -258,6 +338,23 @@ Returns are due the 20th of the month after the period. If the 20th is a weekend
 - **Electronic payment.** Payments of $1,000 or more must be made by electronic funds transfer (ACH debit, ACH credit or credit card). Failing to do so can cost a penalty of 3% of the tax due, up to $500.
 - **Credit sales.** Tax on credit sales must be remitted within 30 days of the date of sale.
 
+### Return working paper (from the retired `pennsylvania-sales-tax`, updated for local tax)
+
+```
+PENNSYLVANIA SALES TAX WORKING PAPER (PA-3)
+Business: ____________  License ID: ____________  Period: ________
+A. Gross sales                                         __________
+B. Exempt sales (clothing, food, resale, out of state)  __________
+C. Taxable sales (A - B)                               __________
+D. State tax (C x 6%)                                  __________
+E. Allegheny County local tax (Allegheny sales x 1%)   __________
+F. Philadelphia local tax (Philadelphia sales x 2%)    __________
+G. Use tax on untaxed purchases (line 6, no discount)  __________
+H. Total tax (D + E + F + G)                           __________
+I. Vendor discount (timely only, capped)               __________
+J. Net remittance (H - I)                              __________
+```
+
 ### Vendor discount ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf); [DOR sales tax discount Q&A](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/taxtypes/sut/documents/sales_tax_discount_qa.pdf))
 
 - **The cap.** For returns filed and paid on time, the discount is the lesser of 1% of tax collected or $25 for a monthly filer, $75 for a quarterly filer, or $150 for a semi-annual filer. These caps apply to periods ending after 1 August 2016. They add up to a $300 annual cap, so changing frequency does not raise the discount.
@@ -276,14 +373,14 @@ Returns are due the 20th of the month after the period. If the 20th is a weekend
 
 DOR sets the interest rate each 1 January at the rate set by the U.S. Secretary of the Treasury. Earlier years' rates differ (for example 8% for 2024), so use the year the tax was due. DOR has an online penalty and interest calculator.
 
-## 2025 periods (for amended or audited 2025 returns) ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf))
+### 2025 periods (for amended or audited 2025 returns) ([REV-717](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf))
 
 - **Unchanged from 2026.** The state rate (6%), the local rates (1% and 2%), the $100,000 economic presence test, the filing frequency thresholds, the discount caps and the late-return additions.
 - **Local tax sourcing.** For 2025, local tax followed the old point-of-sale rule. Vendors located in Allegheny County or Philadelphia had to collect local tax. Vendors located elsewhere could collect it voluntarily, and buyers who received taxable items in those areas without local tax owed local use tax. Sales delivered out of state were not subject to local tax.
 - **Remote seller window.** Calendar year 2024 sales decided whether a remote seller collected from 1 April 2025 through 31 March 2026.
 - **Interest** on tax due in 2025 is 7%.
 
-## Completion checklist ([DOR sales tax page](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax))
+## Completion checklist
 
 - [ ] Nexus decided: physical presence, or more than $100,000 of prior calendar year gross sales (all channels, taxable and nontaxable), with marketplace sales handled correctly.
 - [ ] Licensed through myPATH before the first taxable sale (or a CSP engaged).
@@ -298,6 +395,18 @@ DOR sets the interest rate each 1 January at the rate set by the U.S. Secretary 
 - [ ] Vendor discount taken only on timely returns and within the $25, $75 or $150 cap.
 - [ ] Any late period costed: 5% per month up to 25% (at least $2) plus 7% interest.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| DOR, Sales, Use and Hotel Occupancy Tax. Read for the 6% state rate, 1% Allegheny and 2% Philadelphia local tax, the major exemptions and use tax at the same rate. | https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax | 2026-11-13 |
+| DOR, Local Sales Tax. Read for Act 21 of 2026: destination sourcing, law on 12 July 2026, retroactive to tax years after 31 December 2025, enforcement from 1 October 2026. | https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/local-sales-tax | 2026-11-13 |
+| DOR, Online Retailers. Read for the $100,000 economic presence test, calendar-year measure, second-quarter start, marketplace rules and CSPs. | https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers | 2026-11-13 |
+| REV-717 (02-26), Retailer's Information. Read for discount (72 P.S. 7227), additions (5% to 25%, $2 minimum), EFT, TeleFile, taxable services, construction, petitions (60 days, Act 43 of 2017; refunds three years). | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/sut/documents/rev-717.pdf | 2026-11-13 |
+| REV-1611, interest rates. Read for 7% (0.000192 daily) for 2025 and 2026, and 8% for 2024. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/otherforms/documents/rev-1611.pdf | 2026-11-13 |
+
+Not yet confirmed: the filing-frequency thresholds, AST prepayment rules, 2026 due dates from the 2026 REV-819 calendar, the canned software and digital products guidance, the use tax for businesses page and the REV-1220 instructions were carried from the previous version and not reread on 2026-11-13; how DOR will treat Philadelphia and Allegheny sales made 1 January to 30 September 2026 without local tax; whether sales of exactly $100,000 trigger collection (DOR pages say both "more than" and "at least"); whether Act 123 of 2024's 90-day petition period reaches sales tax (REV-717 still says 60 days).
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-25. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pa-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pa-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pa-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pa-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

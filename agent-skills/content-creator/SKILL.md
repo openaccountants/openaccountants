@@ -1,128 +1,100 @@
 ---
 name: content-creator
-description: "Industry vertical for content creators including YouTubers, podcasters, bloggers, newsletter writers, course creators, and social media influencers. Loaded alongside any country skill to provide industry-specific classification guidance for multi-stream revenue, content production costs, and platform income. Trigger phrases — YouTuber, podcaster, blogger, newsletter, course creator, influencer, content creator, streamer, Twitch, Patreon creator, digital creator."
+description: "2026 creator accounting method for ads, sponsorships, non-cash benefits, memberships, affiliates, digital products, merchandise and business/private costs."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/content-creator"
   jurisdiction: "GLOBAL"
-  last_updated: "2026-06-12"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Content Creator Vertical Skill v1.0
+# Content creator accounting v2.0
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+## Scope
 
-## Section 1 — Industry Profile
+For accountants reconciling creator advertising, sponsorships, subscriptions, affiliate commissions, digital products and merchandise. Covers creators using video, streaming, podcasts, newsletters, courses and social platforms, with mixed private and business costs.
 
-Content creators produce digital media (video, audio, text, courses) and monetize through advertising, sponsorships, subscriptions, affiliate commissions, and direct product sales. The financial profile is characterized by multiple small revenue streams from different platforms, front-loaded production costs, minimal inventory (digital products), and highly variable income that can scale dramatically with audience growth.
+This is a cross-country method for 2026. Establish the entity, country, tax year, reporting framework and permitted accounting basis before using it. Financial-reporting recognition is separate from income-tax deductions, capital allowances and VAT/GST. The IFRS principles below use the Australian adopted paragraph text as an official public reference; Australian-specific paragraphs and local simplified rules are not automatically rules in another country. Match the compilation and local adoption to the reporting period. Do not silently apply this method as US GAAP or a country's cash-basis tax computation.
 
-**Typical entity structures:** Sole trader (starting), single-member LLC/limited company (once monetized), personal service company (for brand deals and sponsorships).
+## Quick reference
 
-**Revenue model variations:**
-- **Ad-supported** — YouTube AdSense, podcast dynamic ad insertion, blog display ads
-- **Sponsorship/brand deals** — direct payments from brands for promotional content
-- **Subscription/membership** — Patreon, YouTube Memberships, Substack paid tier, Discord communities
-- **Affiliate marketing** — commission on referred sales (Amazon Associates, ShareASale, etc.)
-- **Digital products** — online courses, ebooks, templates, presets, music packs
-- **Merchandise** — branded physical products (t-shirts, mugs, prints)
-- **Speaking/appearances** — paid speaking engagements, event appearances, workshops
-- **Licensing** — content licensed to media companies, stock footage/audio
+| Decision | First check | Source |
+| --- | --- | --- |
+| Revenue or customer money? | Identify the enforceable contract, promised supply, performance and the party entitled to consideration | [AASB 15, paragraphs 9-38 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Gross sales or a net commission? | Determine control and principal/agent status for the specified supply, not from the bank payout | [AASB 15, paragraphs B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Expense or intangible asset? | Identify controlled rights and applicable recognition criteria; business size alone does not decide | [AASB 138, paragraphs 18-23 and 48-71](https://standards.aasb.gov.au/aasb-138-dec-2022) |
+| Rental or right-of-use asset? | Establish the reporting framework, lease and any applicable short-term/low-value election | [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022) |
 
-**Scale indicators:** Subscriber/follower count, monthly views/listens, email list size, course enrollment count, MRR from memberships. Revenue range from hobby ($0–$5K) to full-time ($50K–$500K+) to media company ($1M+).
+## Ask the client first
 
-**Cash flow pattern:** Highly irregular. Ad revenue paid 30–60 days after earning. Sponsorship payments often Net 30–60 (sometimes Net 90). Course launches create revenue spikes. Membership revenue is the only predictable stream. Many creators have feast-or-famine months.
+- Which person/entity earns the income, owns the assets and signs the contracts? Obtain the legal structure, residence, business locations and reporting dates.
+- Which reporting framework and tax accounting basis apply? What registrations, elections, prior balances and tax losses exist?
+- Obtain contracts, invoices, credit notes, bank and platform statements, withholding certificates, refunds, chargebacks and opening/closing balances.
+- What is sold, when and to whom? Identify customer location and status, performance obligations, intermediaries, private use and any money held for another person.
+- Obtain cost invoices, asset ownership/use records, funding agreements, payroll/contractor documents, related-party dealings and the actual terms of insurance and licences.
 
----
+## The method, step by step
 
-## Section 2 — Revenue Recognition
+1. Establish legal ownership and accounting/tax scope before coding transactions. Keep each business entity, owner and client-money account separate.
+2. Map each contract to the actual promised goods/services and the consideration the business is entitled to. Determine recognition from performance and control. Billing, payout and cash dates are evidence, not universal recognition rules.
+3. Reconcile each income source from transactions to returns/refunds, fees, withheld tax, reserves and bank settlement. Review principal/agent status before choosing gross or net reporting. Do not double-count a payout and the underlying sales.
+4. Reconcile receivables, conditional contract assets, customer deposits, contract liabilities, deferred fees and client funds. Separate price concessions from credit losses. Obtain the applicable impairment standard before quantifying a loss allowance.
+5. Establish business purpose, private proportion, capital versus revenue treatment and timing for every cost. Obtain the current country law before claiming a tax deduction; an accounting expense is not proof of tax deductibility.
+6. Prepare an asset register with invoices, costs, ownership, available-for-use date, residual value, useful life, method and disposal proceeds. Maintain a separate tax-capital-allowance schedule. The prior purchase-price and useful-life ranges were unsupported planning estimates, not statutory values, and are held below.
+7. Apply the country's VAT/GST/sales-tax rules by supply, customer, location and registration. Include reverse charges/imported services where relevant. Do not reclaim tax on exempt/private activity just because a supplier charged it.
+8. Test payroll/contractor status, withholding, permanent establishment, cross-border reporting and elections using current country jobs. A platform tax form, incorporation or a merchant-of-record arrangement does not remove every obligation.
+9. Deliver reconciled journals and schedules, source-linked tax adjustments, missing facts and a review checklist. Require the relevant professional review before a return, tax payment or material accounting judgment is relied on.
 
-### Advertising revenue
+## Industry profile and source records
 
-**YouTube AdSense / Google AdSense:**
-- Revenue accrues daily based on views/impressions but is calculated monthly
-- Payout threshold: $100 minimum (varies by country)
-- Payment arrives 21–26 days after month-end
-- Revenue = gross earnings before YouTube's 45% share (YouTube reports net to creator)
-- Actually: YouTube reports the creator's share (55%) — this IS the creator's revenue; YouTube's 45% is never in the creator's accounts
+Separate advertising, brand work, memberships, affiliates, digital products, merchandise, licensing, tips, gifts and other receipts. Keep creator, agency, company and personal accounts distinct. Sponsorships can include cash, goods, accommodation, travel or access; a non-cash benefit is not invisible merely because no bank receipt exists.
 
-**Podcast advertising:**
-- Dynamic ad insertion (Spotify, Acast): revenue per thousand listens (CPM), paid monthly in arrears
-- Host-read sponsorships: flat fee per episode or per campaign — see Sponsorship below
-- Revenue recognized when the episode is delivered/published (accrual) or when payment received (cash)
+Track the creator's actual audience, concentration of income, seasonality, recurring fees, platform balances and production costs. The former earnings, margin, subscriber and growth ranges are not a source for a tax or business-status decision. Obtain the actual commercial arrangement rather than assuming all creators have the same platform revenue split.
 
-**Blog/website display ads (Mediavine, AdThrive, Raptive):**
-- Revenue calculated from page views and RPM (revenue per mille)
-- Paid monthly, typically Net 65 (earned in January, paid in March)
-- Revenue = the amount reported by the ad network to the creator
+## Revenue by channel
 
-### Sponsorship and brand deals
+| Channel | Recognition and reconciliation check | Source |
+| --- | --- | --- |
+| Advertising | Identify the services promised, earned consideration and counterparty. Do not treat the advertiser's gross spend as the creator's income automatically or subtract an already retained platform share a second time | [AASB 15, paragraphs 31-59 and B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Sponsorship/brand work | Identify posts, appearances, exclusivity, licensing and any distinct ongoing promises. Recognise from performance, not solely contract signature, publication or payment | [AASB 15, paragraphs 22-45 and 73-86](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Non-cash sponsorship | Determine contract consideration and the applicable non-cash measurement. Classify the thing received independently as an asset, expense or private use; equal expense is not automatic | [AASB 15, paragraphs 66-69](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Memberships/subscriptions | Identify access, current content, community, merchandise and future promises. A payout after fees does not itself establish net revenue or completion | [AASB 15, paragraphs 22-45, 73-86 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Affiliate commissions | Establish entitlement, returns/cancellation conditions and the variable-consideration constraint. A platform payout minimum alone is not the accrual-recognition test | [AASB 15, paragraphs 47-59 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Digital downloads and courses | Distinguish a delivered right to use, hosted access, live teaching, updates and support. Not every course is fully earned on sale | [AASB 15, paragraphs 22-38 and B52-B63B](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Merchandise | Establish principal/agent and transfer of control, including returns and outsourced fulfilment. Shipping date is not a universal control test | [AASB 15, paragraphs 31-38, B20-B27 and B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
 
-**Flat-fee sponsorships:**
-- Single payment for a specific deliverable (one video, one post, one newsletter mention)
-- Revenue recognized when the content is delivered/published (accrual) or payment received (cash)
-- Multi-video deals: allocate revenue across deliverables proportionally
+For YouTube/AdSense, streaming, Shorts, TikTok, podcasts and other ad arrangements, obtain the current settlement definitions, rights and included tax. Neither the former platform-share percentages nor an assumed payment day are used here. The creator's contractual entitlement can already be net of another party's own advertising revenue; do not manufacture an expense for revenue the creator was never entitled to.
 
-**Performance-based sponsorships:**
-- Base fee plus bonus based on clicks/conversions/views
-- Base fee: recognize on delivery; performance bonus: recognize when earned and determinable
+For Patreon and other membership platforms, reconcile member charges, eligible tax, refunds, commissions, processing and settlement. Do not start with a net creator figure and then deduct the same commissions again. For affiliate programmes, retain pending, approved, reversed and paid amounts and distinguish eligibility from merely reaching a payout threshold.
 
-**Gifted products:**
-- Products received for free in exchange for content are taxable income at fair market value in most jurisdictions
-- Classify as revenue (non-cash) with an equal expense if the product is used for business
-- If the product is personal, it is income with no offsetting deduction
-- The country skill determines thresholds for reporting gifted items
+## Worked case: membership settlement without double-counting fees
 
-**Payment timing and deposits:**
-- 50% upfront / 50% on delivery is common for brand deals
-- Upfront portion: deferred revenue until content delivered (accrual) or recognize on receipt (cash)
-- Usage rights fees (brand paying extra to use content in their ads): separate revenue, recognized when rights are granted
+Fabricated currency units. Assume the creator is principal for the membership service, the service is fully performed in the period, the creator is entitled to gross member charges, and the fees shown are separate business charges. Gross charges are 10,000, valid refunds 500, platform fees 800 and processing fees 200. Revenue after the refunds is 9,500; fees are 1,000; settlement is 8,500. Do not use 8,500 as revenue and deduct the same 1,000 again. Tax/withholding and rolling reserves are absent from this example. [AASB 15, paragraphs 47-59 and B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022).
 
-### Membership and subscription revenue
+```oa-check
+name: Creator membership gross-to-net reconciliation
+inputs:
+  member_charges: 10000
+  refunds: 500
+  platform_fees: 800
+  processing_fees: 200
+steps:
+  revenue: member_charges - refunds
+  fees: platform_fees + processing_fees
+  settlement: revenue - fees
+expected:
+  revenue: 9500
+  fees: 1000
+  settlement: 8500
+```
 
-**Patreon, YouTube Memberships, Buy Me a Coffee, Ko-fi:**
-- Recurring monthly payments from supporters
-- Revenue recognized in the month it relates to
-- Platform takes 5–12% — the creator's share is revenue; platform fee is cost of sale
-- Declined payments/churn: no revenue recognition for failed charges
+Boundary: if the platform is principal and the creator is entitled only to a royalty/commission, use that arrangement's revenue; do not gross up to customer spending that the creator does not control or earn. A not-yet-performed membership promise also requires a contract-balance review.
 
-**Substack, Ghost, Beehiiv (paid newsletters):**
-- Annual subscribers: defer and recognize monthly (accrual) or recognize on receipt (cash)
-- Monthly subscribers: recognize in the month received
-- Platform fee is cost of sale
+## Production costs and private use
 
-### Affiliate income
-
-**Amazon Associates, ShareASale, Impact, CJ Affiliate:**
-- Commission earned when a referred customer makes a qualifying purchase
-- Revenue recognized when commission is confirmed (not just clicked)
-- Payout thresholds vary ($10–$100 minimum)
-- Amazon Associates pays 60 days after month-end
-- High return periods (Amazon 30-day returns) may result in commission clawbacks — reverse the revenue
-
-### Digital product sales
-
-**Courses (Teachable, Kajabi, Podia, Gumroad):**
-- One-time course purchase: revenue on sale date (or payment receipt for cash basis)
-- Payment plans (3x or 6x monthly): revenue recognized as each payment is received (cash) or full amount at sale (accrual with receivable)
-- Platform fees: cost of sale
-- Refund periods (typically 30 days): consider refund reserve provision (accrual basis)
-
-**E-books, templates, presets:**
-- Revenue on sale/download date
-- Platform fees (Gumroad 10%, etc.): cost of sale
-
-### Merchandise revenue
-
-- Revenue when items ship to customer
-- Cost of goods sold: production cost of merch
-- If using print-on-demand (Printful, Spring): COGS = per-item production cost; no inventory to hold
-- If holding inventory: standard inventory accounting applies (see e-commerce vertical)
-
----
-
-## Section 3 — Industry-Specific Deductions
-
+These are cost categories to investigate, not an automatic tax-deduction list:
 ### Production equipment
 
 - Camera bodies and lenses (DSLR, mirrorless, cinema cameras)
@@ -177,22 +149,55 @@ Content creators produce digital media (video, audio, text, courses) and monetiz
 - Equipment transportation costs
 - Vehicle expenses (if dedicated content vehicle e.g., automotive channel)
 
-**Caution:** Personal travel with incidental content creation is NOT deductible. The primary purpose must be business. Mixed trips: apportion based on business days vs. personal days.
+For travel, establish the business purpose and the applicable local allocation method. Recording incidental content on a personal holiday does not establish a business deduction; a day-count is not the only possible statutory method.
 
 ### Marketing and growth
 
 - Paid promotion (YouTube ads for channel growth, social media ads)
 - Collaboration costs (traveling to collab, hosting creators)
-- Giveaway prizes (deductible as promotional expense at cost, not retail value)
+- Giveaway prizes (retain purchase/value, purpose, winner and promotion records; determine the local deduction, VAT/GST and reporting treatment)
 - PR and talent management fees
 
----
+Document the business/private allocation of equipment, housing, internet, electricity, clothing, props, meals and travel. Consuming an item in a video does not by itself make it a deductible production cost. A gifted camera retained for use may be an asset; a private stay may have no equal business expense. Preserve the value and tax treatment of the receipt separately from any allowable cost.
 
-## Section 4 — Common Bank Statement Patterns
+Outsourced editors, writers, designers, researchers, assistants, social managers and moderators require their actual contracts and worker-status/withholding analysis. Management or talent fees require the actual service period, commission base and contract; no common worldwide percentage or employment trigger is supplied.
+
+## Content and licensing
+
+- Classify films, recordings, courseware, newsletters, photography, software, templates and other production under the actual applicable standard. Do not assume all creator content is IAS 38 development or all production is immediately expensed. Determine whether an item is inventory, an intangible, contract fulfilment, a service cost or outside those standards.
+- For research/development within IAS 38, use the recognition criteria rather than business size or the creator's intention to monetise. Keep costs and rights separate for individual projects; the owner's unpaid opportunity cost is not an invoice expense.
+- Purchased music, stock footage and image rights can be a service or controlled right with restrictions. Obtain permitted uses, duration and territory; neither a vendor subscription nor a “royalty-free” label proves unrestricted use.
+- For licensing the creator's content, distinguish right to access from right to use and identify any combined service obligations. Apply the sales/usage-based royalty exception where its conditions are met. [AASB 15, paragraphs B52-B63B](https://standards.aasb.gov.au/aasb-15-dec-2022).
+- Internally generated brands, trademarks and audience reputation are not automatically recognised assets. Purchased rights and registration/legal costs require the actual recognition analysis; a filing fee does not create a general rule to capitalise the entire brand.
+
+## Asset, lease and intellectual-property checks
+
+Do not copy the former asset-price and useful-life ranges into an accounting or tax register. Use actual acquisition cost and the applicable framework; review private use, ownership, finance, impairment and disposal separately. For a lessee applying IFRS 16 there is no general exemption merely because the business is a sole practitioner or the lease is called operating. Specific short-term and low-value exemptions have conditions. [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022).
+
+Research costs and internally generated goodwill/brands are not automatically capitalisable. Development requires all recognition criteria, including technical feasibility, intent, ability to use/sell, probable benefits, resources and reliable cost measurement. Once the criteria are met, qualifying subsequent development costs are not excluded merely because the developer is self-employed. Previously expensed expenditure is not reinstated as an asset later. Finite-life intangibles are amortised from availability for use using a supported life and pattern; indefinite-life intangibles are not amortised and require impairment review. Purchased rights, service subscriptions and business-combination goodwill require separate classification. [AASB 138, paragraphs 48-71 and 97-110](https://standards.aasb.gov.au/aasb-138-dec-2022).
+
+For an IFRS business combination, goodwill is not routinely amortised; it is carried subject to impairment, with annual testing. Separately identified finite-life customer lists or other intangibles can have amortisation. Other local GAAP and tax amortisation may differ. Do not post tax relief or a generic goodwill amortisation period without identifying the regime. [AASB 3, paragraph B63](https://standards.aasb.gov.au/aasb-3-dec-2022-0); [AASB 136, paragraphs 9-10 and 90](https://standards.aasb.gov.au/aasb-136-jan-2026-0).
+
+| Asset retained from the prior checklist | Cost evidence | Useful life/tax treatment | Practical use |
+| --- | --- | --- | --- |
+| Camera body (mirrorless/cinema) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Rapid obsolescence |
+| Camera lenses | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Hold value well |
+| Audio setup (mic + interface) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Durable |
+| Lighting kit | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | LED panels, softboxes |
+| Editing computer | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | High-spec for video |
+| Studio furniture/set | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Background, desk, shelving |
+| Acoustic treatment | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Permanent improvement to space |
+| Streaming setup | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Capture card, stream deck |
+| Drone | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | If aerial content |
+| Vehicle (automotive/travel channel) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Only if core to content |
+
+## Bank-statement investigation prompts
+
+These legacy descriptions are search hints, not evidence that a transaction is business income, deductible expenditure or a particular tax supply. Obtain the invoice, contract, settlement and counterparty. Transfers can be loans, refunds, owner funds or money held for someone else. A vendor name alone proves none of those decisions. The lists do not claim current vendor prices or platform contracts.
 
 ### Platform revenue (inflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | GOOGLE ADSENSE, GOOGLE YOUTUBE | YouTube/AdSense advertising revenue |
 | PATREON, PATREON INC | Membership/subscription revenue |
@@ -209,7 +214,7 @@ Content creators produce digital media (video, audio, text, courses) and monetiz
 
 ### Sponsorship payments (inflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | [Brand name] + TRANSFER/WIRE | Sponsorship payment (verify contract) |
 | TALENT AGENCY NAME | Sponsorship via agent (net of commission) |
@@ -217,7 +222,7 @@ Content creators produce digital media (video, audio, text, courses) and monetiz
 
 ### Production costs (outflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | ADOBE INC, ADOBE SYSTEMS | Software subscription |
 | EPIDEMIC SOUND, ARTLIST | Music licensing |
@@ -232,253 +237,71 @@ Content creators produce digital media (video, audio, text, courses) and monetiz
 
 ### Merch and physical products (outflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | PRINTFUL, PRINTIFY | Merch production (COGS) |
 | SPRING (TEESPRING) | Merch platform |
 | SHOPIFY | Merch store subscription |
 
----
+## Platform, withholding and foreign-currency reporting
 
-## Section 5 — Equipment & Assets
+Identify the legal payer and contract separately for every platform or processor. Reconcile gross entitled consideration, platform fees, refunds, taxes withheld, rolling reserves, exchange conversion and settlements. A platform statement can include non-revenue transfers; a tax report can report gross payments that differ from accounting income. Check refunds, duplicated forms and the actual issuing entity. Do not assume every named platform issues the same tax form.
 
-### Typical capital expenditure
+The former US Form 1099-K shorthand is not a taxability threshold. Current IRS guidance distinguishes payment-card transactions from third-party settlement organisations, notes that a form may be issued below the statutory reporting threshold, and explains that a form alone does not decide taxable income. Retain the reporting question in the current US job; this global method does not introduce a new US return computation. [IRS, Understanding Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k).
 
-| Asset | Typical cost range | Useful life | Notes |
-|---|---|---|---|
-| Camera body (mirrorless/cinema) | $1,500–$6,000 | 4–5 years | Rapid obsolescence |
-| Camera lenses | $500–$3,000 each | 7–10 years | Hold value well |
-| Audio setup (mic + interface) | $300–$2,000 | 5–7 years | Durable |
-| Lighting kit | $300–$2,000 | 5 years | LED panels, softboxes |
-| Editing computer | $2,000–$6,000 | 3–4 years | High-spec for video |
-| Studio furniture/set | $500–$5,000 | 7–10 years | Background, desk, shelving |
-| Acoustic treatment | $500–$3,000 | 10 years | Permanent improvement to space |
-| Streaming setup | $500–$2,000 | 3–4 years | Capture card, stream deck |
-| Drone | $500–$3,000 | 3 years | If aerial content |
-| Vehicle (automotive/travel channel) | $10,000–$50,000 | 5–8 years | Only if core to content |
+For an international payment, establish the income's character, source, work location, beneficial recipient, withholding documentation and any treaty claim. A US payer does not make every payment a US-source royalty. A platform's withholding is not automatically the final liability, and a credit requires its own evidence. Record foreign-currency recognition at the applicable transaction date and review the framework's translation and settlement requirements; invoice date is not universal where performance occurred earlier. Exact exchange-rate methods, treaty rates and withholding forms remain country-specific items below.
 
-### Depreciation considerations
+## United Kingdom: expense boundary
 
-- Camera bodies depreciate fastest (technology moves quickly)
-- Lenses hold value and have longer useful lives
-- Studio improvements to rented space: amortize over lease term or useful life (shorter of)
-- Personal items repurposed for content: business-use percentage of original cost basis at date of business commencement
+For a UK sole trader or individual in a business partnership, use the business-expense rules and private-use allocation, with the correct cash or traditional basis. Do not apply the sole-trader overview as company tax law. The owner's drawings, loan principal and an invented charge for the proprietor's own unpaid time are not ordinary paid business costs. [HMRC self-employed expenses](https://www.gov.uk/expenses-if-youre-self-employed).
 
-### Lease vs. buy
+Do not use the former global half-deduction default for client meals: UK client entertaining is not generally allowable under the cited self-employed guidance. Business advertising, qualifying subscriptions, professional/legal costs and training have their own conditions. The UK training guidance can cover new skills supporting the existing business, not only maintaining old skills; training to start a new unrelated business is different. Accountancy fees for the business and the individual's own Self Assessment preparation/submission are also distinguished. Review the actual cost and its purpose. [HMRC marketing/entertainment](https://www.gov.uk/expenses-if-youre-self-employed/marketing-entertainment-subscriptions); [HMRC legal/financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial); [HMRC training](https://www.gov.uk/expenses-if-youre-self-employed/training-courses).
 
-- **Camera equipment:** Sometimes rented for specific shoots (expense per project). Regular use: purchase and depreciate.
-- **Studio space:** Rent is operating expense. Long leases may require right-of-use asset recognition (large creators only, per country GAAP).
-- **Vehicles:** Lease if used for content periodically; buy if central to the channel.
 
----
+## Australia: business, hobby and gifts
 
-## Section 6 — IP & Licensing
+ATO education explains that goods, services, perks and access received in return for content **may** be income, not only money deposited in a bank. Retain the agreement, business connection, actual value and records. Do not turn this into either “every personal gift is income” or “a gift never counts”. The exact assessment and deduction follow the applicable tax law and facts. [ATO creator material on non-cash receipts](https://smallbusiness.taxsuperandyou.gov.au/content-clicks-income-and-tax/gifted-income).
 
-### Content as an asset
+Determine whether the activity is a business and whether a particular receipt is assessable separately. Calling something a hobby does not settle taxability, but the former worldwide statement that all hobby receipts are always taxable is also not supported. The current detailed ATO business/hobby guidance could not be retrieved at its tax-authority endpoint in this pass; its specific tests and examples are held below rather than invented from a search snippet.
 
-**The key question: should content (videos, courses, podcasts) be capitalized as an intangible asset?**
+## Other countries and recurring traps
 
-**Conservative default: NO — expense production costs as incurred.** Rationale:
-- Most content has a short commercial life (YouTube videos peak in 2–4 weeks)
-- Revenue attribution to specific content is uncertain
-- Sole traders and micro-entities rarely meet capitalization criteria
-- The administrative burden of tracking cost per video/episode outweighs any benefit
+- **UK:** use the self-employed expense boundary above, actual business/private allocation and the country's current creator-income, VAT and reporting rules. No global client-meal percentage applies.
+- **EU and other digital-service destinations:** classify sponsorship, advertising, membership, electronic services and physical merchandise separately. Establish customer business status/location, supplier establishment, scheme/platform responsibility and current country VAT/GST registration before charging tax.
+- **US and other payer countries:** establish source and income character before treaty/withholding claims. A US brand's sponsorship payment is not automatically a US-source royalty subject to the old blanket withholding percentage. Complete forms only after verifying the correct beneficial recipient and income type.
+- **Affiliate balances:** reaching the payout minimum and earning an unconditional or conditional right are different. Reconcile period-end balances and returns under the applicable basis.
+- **Pre-business equipment:** preserve purchase date, original cost, market value evidence, business commencement and first business-use date. The basis on conversion varies by jurisdiction; neither original cost nor current market value is a global default.
+- **Hobby/private use:** document the business indicators and each receipt. Do not claim business losses or private travel merely because the activity generates content.
 
-**Exception — online courses:**
-- High-production courses with expected multi-year sales life MAY warrant capitalization
-- If capitalized: amortize over expected sales life (typically 2–3 years for tech content, 3–5 years for evergreen content)
-- Only capitalize direct production costs (filming, editing, platform fees), not the creator's own time (unless an employee of their company on payroll)
+## Insurance, professional costs and scaling
 
-### Music and media licensing
+Review media/professional liability, equipment and public liability insurance, including defamation, copyright, location, travel and equipment exclusions. Insurance need and coverage come from the contract and regulator/client, not an assumed mandatory worldwide policy. Review agent/talent commissions, professional memberships, courses, accountant/bookkeeping and legal fees using their actual nature and country law. Do not automatically deduct every education or individual tax-preparation cost.
 
-- Royalty-free music subscriptions (Epidemic Sound, Artlist): expense as incurred
-- Per-track licensing: expense in the period the content using that track is published
-- Stock footage subscriptions: expense as incurred
-- Custom music commissions: expense per project
+Consider incorporation from actual profits, retained funds, investors, liability, contracts and local tax consequences; distinguish tax registrations from incorporation. Track VAT/GST turnover under the actual supply and country rules, including foreign customers and platform responsibility. No subscriber, revenue or profit number automatically decides registration or the optimal entity.
 
-### Content licensing (creator licensing their content)
+For editors, assistants, designers and community support, establish capacity, economics, contracts and worker classification before hiring. The prior hour-based hiring and revenue milestones were planning suggestions without official support. Diversify revenue and build reserves based on actual platform concentration, recurring commitments and cash needs; no fixed global percentage or creator-income milestone is a tax rule.
 
-- When brands pay to license/repurpose creator content: licensing income (separate revenue stream)
-- Exclusive rights deals: may require deferral over exclusivity period (accrual basis)
-- Syndication agreements: revenue per the payment schedule/delivery terms
+## When to refuse or refer
 
-### Intellectual property protection
+Do not certify earnings from a dashboard total without contracts and settlements, claim private purchases as business costs, assign a value to an undocumented barter, or advise on copyright/advertising compliance from this accounting method. Refer disputed IP, foreign withholding, worker status, business/hobby or tax-residence questions with the underlying records to the relevant practitioner. Reconcile every platform and retain missing conditions in the output.
+## Sources
 
-- Trademark registration (channel name, brand name): capitalize as intangible, amortize over registration period
-- Copyright registration fees: expense (copyright exists automatically; registration is a filing cost)
-- Legal costs for IP enforcement: expense as incurred
+| Official source | Read date | Read scope |
+| --- | --- | --- |
+| [AASB 15, adopted IFRS revenue text](https://standards.aasb.gov.au/aasb-15-dec-2022) | 2026-11-14 | Read for contract/performance, over-time criteria, variable consideration, principal/agent and contract balances; not US GAAP or cash-basis tax rules |
+| [AASB 138, adopted IAS 38 text](https://standards.aasb.gov.au/aasb-138-dec-2022) | 2026-11-14 | Read for recognition, research/development, internally generated goodwill/brands, later costs and finite/indefinite lives |
+| [AASB 16, adopted IFRS 16 text](https://standards.aasb.gov.au/aasb-16-nov-2022) | 2026-11-14 | Read for lessee recognition and short-term/low-value exemptions, not a sole-practitioner size exemption |
+| [AASB 3, current July 2026 compilation](https://standards.aasb.gov.au/aasb-3-dec-2022-0) | 2026-11-14 | Read for paragraph B63 goodwill measurement versus separately identified intangibles |
+| [AASB 136, current July 2026 compilation](https://standards.aasb.gov.au/aasb-136-jan-2026-0) | 2026-11-14 | Read for paragraphs 9-10 and 90 on impairment and annual goodwill testing |
+| [HMRC self-employed expenses](https://www.gov.uk/expenses-if-youre-self-employed) | 2026-11-14 | Read for sole-trader/individual-partnership scope, business expenses and private allocation |
+| [HMRC marketing and entertainment](https://www.gov.uk/expenses-if-youre-self-employed/marketing-entertainment-subscriptions) | 2026-11-14 | Read for advertising, gifts, subscriptions and client-entertaining restrictions; not a global deduction percentage |
+| [HMRC legal and financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial) | 2026-11-14 | Read for insurance/professional costs, own Self Assessment distinction, capital expenditure, fines, finance and cash-basis bad debts |
+| [HMRC training courses](https://www.gov.uk/expenses-if-youre-self-employed/training-courses) | 2026-11-14 | Read for existing-business skills, technology and administrative development versus a new unrelated business |
+| [IRS Form 1099-K guidance](https://www.irs.gov/businesses/understanding-your-form-1099-k) | 2026-11-14 | Read for payment-card/TPSO reporting distinction and why receipt of a form does not determine taxable income; no US-country rewrite here |
+| [Official creator education, gifted income](https://smallbusiness.taxsuperandyou.gov.au/content-clicks-income-and-tax/gifted-income) | 2026-11-14 | Read for non-cash products, perks and access received in return for content; not a complete business/hobby legal test |
 
----
-
-## Section 7 — Platform Income Reporting
-
-### YouTube/Google AdSense
-
-**Tax reporting:**
-- US creators: Google issues 1099-MISC/1099-NEC for AdSense earnings exceeding $600
-- Non-US creators: Google may withhold US tax on US-viewer revenue (W-8BEN reduces rate per treaty)
-- Withholding shown on AdSense dashboard — classify as tax withheld at source, not expense
-
-**Revenue reconciliation:**
-- YouTube Studio analytics shows estimated revenue (real-time)
-- AdSense dashboard shows finalized earnings (monthly, with ~5-day delay)
-- Bank payout = finalized earnings minus any holds/adjustments
-- Report AdSense finalized amount as revenue; bank timing difference is just float
-
-### Patreon
-
-- Patreon issues 1099-K to US creators exceeding threshold
-- Creator earnings = gross pledges minus Patreon fees minus failed pledges
-- Platform fee is cost of sale; failed pledges are never revenue (not a write-off)
-
-### Multi-platform income summary
-
-Creators commonly earn from 5–10+ sources simultaneously. Required tracking:
-- Per-platform monthly revenue schedule
-- Clear distinction between: ad revenue, sponsorships, affiliates, products, memberships, tips
-- Annual reconciliation: sum of platform-reported earnings should match total revenue on tax return
-
-### International audience = international tax complexity
-
-- YouTube pays based on viewer geography (different CPM rates)
-- But the creator's tax obligation is based on their residence (not viewer location)
-- US withholding on non-US creators applies to the US-viewer portion
-- Digital product sales to foreign customers may trigger local VAT/GST (per country skill thresholds)
-
----
-
-## Section 8 — Industry Tax Traps
-
-### Trap 1: Not reporting gifted products/services as income
-
-Products received from sponsors for review ARE taxable income at fair market value. Many creators receive thousands in free products annually and fail to report this. If the product is used for content, it is both income AND a business expense (net zero impact on profit, but MUST be reported).
-
-### Trap 2: Travel deductions for vlogs/travel content
-
-A travel vlogger cannot deduct 100% of travel costs simply because they vlog while traveling. The primary purpose test applies: if the trip would not have occurred without the business need, it may be deductible. Personal vacation with camera rolling is NOT a business trip.
-
-### Trap 3: Home studio without proper documentation
-
-Claiming a room as a dedicated studio requires exclusive business use in most jurisdictions. A bedroom that doubles as a filming backdrop does NOT qualify for full dedicated-space deductions. Use the country skill's simplified home office method if exclusive use cannot be demonstrated.
-
-### Trap 4: Meal and entertainment deductions for "content"
-
-Restaurants, activities, and experiences filmed for content are NOT automatically deductible entertainment. Strict jurisdictions (UK, Australia) severely limit entertainment deductions regardless of filming. Only deductible where the country skill specifically permits it AND the primary purpose is business content production.
-
-### Trap 5: Treating hobby income as non-taxable
-
-All income is taxable regardless of whether the activity is a hobby or business. The distinction affects expense deductions: hobby expenses may not be deductible (or limited to hobby income) in some jurisdictions. If the activity has generated losses for several consecutive years without reasonable profit expectation, the country skill's hobby loss rules apply.
-
-### Trap 6: Ignoring affiliate income below payout threshold
-
-Affiliate commissions accrue when earned, not when paid out. If $80 is earned but the $100 payout threshold hasn't been reached, the income still exists and may be reportable on accrual basis. Cash basis: report when received (at next payout).
-
-### Trap 7: Multi-country sponsorship payments without withholding consideration
-
-International brands paying sponsorship fees may be required to withhold local tax. US brands paying non-US creators should withhold 30% (reducible by treaty). Many brands don't withhold — the creator is still liable for the tax. Track origin of each sponsorship payment.
-
-### Trap 8: Equipment purchased before business started
-
-Equipment bought as a hobbyist and later used in a business: the deductible cost is the fair market value at date of business commencement (not original purchase price). Depreciation starts from that date.
-
----
-
-## Section 9 — Insurance & Professional Costs
-
-### Media liability / professional indemnity insurance
-
-- Covers claims from content (defamation, copyright infringement, misleading claims)
-- Increasingly important as channels grow and brands demand it for sponsorships
-- Cost range: $300–$2,000/year
-- Fully deductible
-
-### Equipment insurance
-
-- Covers camera gear, computers, audio equipment against theft/damage
-- Essential for creators with $10K+ in equipment
-- May be covered under home contents insurance (check limits)
-- Separate policy needed for equipment used on location
-- Deductible as business expense
-
-### Public liability insurance
-
-- Covers injury to third parties at events, studio visits, or public filming
-- Required for creators who host events or invite guests to studio
-- Cost range: $200–$1,000/year
-- Deductible as business expense
-
-### Talent management and agent fees
-
-- Manager/agent takes 10–20% of sponsorship revenue
-- This is a deductible cost of sale (reduces net sponsorship income)
-- Legal fees for contract negotiation: deductible as professional fees
-
-### Professional memberships and education
-
-- Creator economy memberships (paid communities, masterminds)
-- Video production courses and workshops
-- Industry events and conferences (VidCon, Podcast Movement)
-- All deductible where they maintain/develop existing skills
-
-### Accounting and business services
-
-- Bookkeeper specializing in creator economy — deductible
-- Tax advisor with creator experience — deductible
-- Business formation and legal setup costs — deductible (or capitalize per country rules)
-- Brand/business trademark registration — capitalize and amortize
-
----
-
-## Section 10 — Scaling Triggers
-
-### When to incorporate
-
-Consider incorporation when:
-- Sponsorship income exceeds the country skill's tax-advantaged threshold for companies
-- Brands require an incorporated entity for contracts over a certain value
-- Hiring team members (editors, managers, assistants)
-- Income splitting with spouse/partner is desirable (where permitted)
-- Separating personal liability from business activities (controversial content risk)
-
-### When to register for VAT/GST
-
-- Monitor total revenue (all streams) against the country skill's threshold
-- Course sales to international customers may trigger obligations in their countries
-- Digital services to EU consumers fall under EU digital services rules (MOSS/OSS)
-- YouTube AdSense is B2B (Google to you) — different VAT treatment than direct consumer sales
-
-### Hiring and team building
-
-**First hires (in typical order):**
-1. Video/audio editor (when content volume exceeds what creator can edit alone)
-2. Virtual assistant (scheduling, email, admin)
-3. Community manager (Discord, comments, Patreon)
-4. Thumbnail designer / graphic designer
-5. Social media manager (repurposing content across platforms)
-6. Manager/agent (when sponsorship volume warrants it)
-
-**Employee vs. contractor:** Most creator team members are contractors (flexible, project-based). Consider employment when: consistent 20+ hours/week, creator controls how work is done, exclusive relationship. The country skill's worker classification rules apply.
-
-### Revenue diversification triggers
-
-- **>50% from one platform:** Vulnerable to algorithm changes or policy shifts — diversify
-- **>50% from sponsorships:** Vulnerable to brand budget cycles — build owned revenue (courses, products)
-- **>50% from one client/brand:** Possible worker classification issues — diversify client base
-
-### Financial planning milestones
-
-- First $1K month: Treat as business, start tracking expenses properly
-- First $5K month: Get a dedicated business bank account, hire a bookkeeper
-- First $10K month: Consider incorporation, quarterly tax payments, hire an editor
-- First $50K month: Full team, proper company structure, pension/retirement planning
-- Consistent 6-figure annual: Diversified investments, business premises consideration
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: Exact creator business/hobby tests and assessability exceptions by country, including the detailed ATO page that returned 403; current country valuation of barter and business-conversion assets; content-production recognition outside IAS 38; copyright and advertising rules; creator-specific withholding/treaty conditions and platform revenue entitlements, fee rates, settlement dates and tax-form issuers. No automatic matching expense is established for a non-cash benefit. Exact current country deduction restrictions, VAT/GST/sales-tax thresholds, cash-basis eligibility and recognition adjustments, capital allowances, withholding/treaty/source rules, foreign-currency methodology, worker status, pension relief and incorporation consequences must be obtained from the relevant country job before a computation. The former equipment prices/useful-life ranges, platform fee/payout schedules, mandatory insurance/CPD amounts, market margin estimates and management revenue/headcount/hour thresholds had no current official support and are not retained as rules. Platform names and bank descriptions remain investigation hints only.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `content-creator` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/content-creator. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `content-creator` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/content-creator. If neither is available, confirm every figure against the official source pages cited above before relying on it.

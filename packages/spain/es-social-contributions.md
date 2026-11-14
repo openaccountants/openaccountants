@@ -1,19 +1,20 @@
 ---
 name: es-social-contributions
 description: Use this Guide to calculate Spanish social-security contributions for ordinary self-employed RETA workers and employers in the Régimen General in 2026. It covers annual computable income, the calendar-day monthly average, contribution bands, chosen and final bases, generic deductions, company and family floors, coverage rates, starting-fee conditions, bonuses, annual regularisation and pluriactividad refunds. For payroll it covers assessable remuneration, extra-pay proration, overtime, contribution groups, employer and employee shares, occupational tariffs, capped bases, MEI and solidarity, plus household salary bands and agricultural monthly, daily and inactivity methods. Trigger phrases include cuota de autónomos, RETA, cotización, TGSS, regularización, tarifa plana, Seguridad Social, RLC and payroll contributions. Obtain the actual registration, base, coverage and assessment records when reconciling an individual charge; the labelled public starting-fee worksheet also supplies a prospective administrative calculation.
-version: 2.4
+version: 2.5
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Spanish social contributions: RETA and employer payroll v2.4
+# Spanish social contributions: RETA and employer payroll v2.5
 
 Compute 2026 contributions from the worker's status, assessable income, contribution base and coverage. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. Amounts below are euros.
 

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/no-social-contributions"
   jurisdiction: "NO"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Norway: social contributions (income year 2026)
@@ -35,25 +35,25 @@ Read [no-income-tax](no-income-tax.md) for income tax and bracket tax on the sam
 | Trygdeavgift, middle rate: pay and other income in § 23-3 second paragraph no. 2 | 7.6% | 2026 | same decision § 7 |
 | Trygdeavgift, high rate: business income | 10.8% | 2026 | same decision § 8 |
 | Lower limit | No trygdeavgift when personal income is up to NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph; https://lovdata.no/lov/1997-02-28-19/§23-3 |
-| Phase-in limit | Trygdeavgift never more than 25% of personal income above NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph |
-| Upper limit on the base | None | 2026 | folketrygdloven § 23-3 (no ceiling in the section) |
-| Arbeidsgiveravgift zone I | 14.1% | 2026 | Decision on contributions 2026 § 3 |
-| Zone Ia | 10.6% while the saving against 14.1% stays within the de minimis limit (NOK 850,000), then 14.1% | 2026 | same § 3 and § 4 fourth and fifth paragraphs |
-| Zone II | 10.6% | 2026 | same § 3 |
-| Zone III | 6.4% | 2026 | same § 3 |
-| Zone IV | 5.1% | 2026 | same § 3 |
-| Zone IVa (Tromsø, Bodø) | 7.9% | 2026 | same §§ 2 and 3 |
-| Zone V (Finnmark and seven Nord-Troms municipalities) | 0% | 2026 | same §§ 2 and 3 |
-| Sector-excluded employers | Zone I rate in all zones, except within NOK 850,000 a year (group-wide) | 2026 | same § 4 |
-| De minimis ceiling under the EEA rules | Reduced contribution plus other de minimis aid at most EUR 300,000 per legal entity or group over three years; the NOK 850,000 is the yearly share of that ceiling | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, point 6.5 (Regulation (EU) 2023/2831) |
-| Products outside the EEA Agreement (listed farming, fishing and food codes) | 5.1% in zone IVa; 10.6% in zone Ia | 2026 | same § 5 |
+| Phase-in limit | Trygdeavgift never more than 25% of personal income above NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph; https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Upper limit on the base | None | 2026 | folketrygdloven § 23-3 (no ceiling in the section); https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Arbeidsgiveravgift zone I | 14.1% | 2026 | Decision on contributions 2026 § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone Ia | 10.6% while the saving against 14.1% stays within the de minimis limit (NOK 850,000), then 14.1% | 2026 | same § 3 and § 4 fourth and fifth paragraphs; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone II | 10.6% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone III | 6.4% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone IV | 5.1% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone IVa (Tromsø, Bodø) | 7.9% | 2026 | same §§ 2 and 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone V (Finnmark and seven Nord-Troms municipalities) | 0% | 2026 | same §§ 2 and 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Sector-excluded employers | Zone I rate in all zones, except within NOK 850,000 a year (group-wide) | 2026 | same § 4; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| De minimis ceiling under the EEA rules | Reduced contribution plus other de minimis aid at most EUR 300,000 per legal entity or group over three years; the NOK 850,000 is the yearly share of that ceiling | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, point 6.5 (Regulation (EU) 2023/2831); https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
+| Products outside the EEA Agreement (listed farming, fishing and food codes) | 5.1% in zone IVa; 10.6% in zone Ia | 2026 | same § 5; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
 | Workers posted from the USA, Canada or South Korea, members only of the sickness benefit part | 7% | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, citing forskrift 19 December 2025 nr. 2786; https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
-| Private household exemption | No arbeidsgiveravgift while household pay is not over NOK 60,000 in the year | 2026 | folketrygdloven § 23-2 |
-| Minimum payment of arbeidsgiveravgift per period | NOK 100 (the a-melding is still due) | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026 (skattebetalingsforskriften § 10-4-1) |
+| Private household exemption | No arbeidsgiveravgift while household pay is not over NOK 60,000 in the year | 2026 | folketrygdloven § 23-2; https://lovdata.no/lov/1997-02-28-19/§23-2 |
+| Minimum payment of arbeidsgiveravgift per period | NOK 100 (the a-melding is still due) | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026 (skattebetalingsforskriften § 10-4-1); https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
 | Financial tax on pay (finansskatt på lønn) | 5% | 2026 | Decision on financial tax on pay 2026; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 |
-| Additional 5% employer contribution on high pay | Discontinued from 1 January 2025 | 2026 | Skatteetaten, Employer's additional national insurance contributions (discontinued) |
+| Additional 5% employer contribution on high pay | Discontinued from 1 January 2025 | 2026 | Skatteetaten, Employer's additional national insurance contributions (discontinued); https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ |
 | Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
-| Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, Enforcement fines |
+| Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, Enforcement fines; https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ |
 
 ## The taxable base
 
@@ -186,24 +186,24 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748, amended 19 June 2026 (§§ 1 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-10-30 |
-| Stortingsvedtak om fastsetting av finansskatt på lønn for 2026, FOR-2025-12-18-2749 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 | 2026-10-30 |
-| Stortingets skattevedtak 2026, FOR-2025-12-18-2747 (§§ 3-3, 3-9) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
-| Folketrygdloven, lov 1997-02-28-19 (§§ 2-1, 2-1 a, 2-2, 23-2, 23-2 a, 23-3) | https://lovdata.no/lov/1997-02-28-19 | 2026-10-30 |
-| Skatteloven, lov 1999-03-26-14 (§§ 12-2, 12-11, 12-13) | https://lovdata.no/lov/1999-03-26-14 | 2026-10-30 |
-| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 9-4, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-10-30 |
-| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1, 8-2-3, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-10-30 |
-| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-10, 10-20, 10-21, 11-1, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-10-30 |
-| Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
-| Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-10-30 |
-| Skatteetaten, Employer's additional national insurance contributions (discontinued) | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ | 2026-10-30 |
-| Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-10-30 |
-| Skatteetaten, Advance tax | https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/ | 2026-10-30 |
-| Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-10-30 |
-| Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
+| Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748, amended 19 June 2026 (§§ 1 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-11-14 |
+| Read for Financial tax on pay (finansskatt på lønn): Stortingsvedtak om fastsetting av finansskatt på lønn for 2026, FOR-2025-12-18-2749 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 | 2026-11-14 |
+| Stortingets skattevedtak 2026, FOR-2025-12-18-2747 (§§ 3-3, 3-9) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-11-14 |
+| Folketrygdloven, lov 1997-02-28-19 (§§ 2-1, 2-1 a, 2-2, 23-2, 23-2 a, 23-3) | https://lovdata.no/lov/1997-02-28-19 | 2026-11-14 |
+| Skatteloven, lov 1999-03-26-14 (§§ 12-2, 12-11, 12-13) | https://lovdata.no/lov/1999-03-26-14 | 2026-11-14 |
+| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 9-4, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-11-14 |
+| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1, 8-2-3, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-11-14 |
+| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-10, 10-20, 10-21, 11-1, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-11-14 |
+| Read for De minimis ceiling under the EEA rules, Workers posted from the USA, Canada or South Korea, members only of the sickness benefit part, Minimum payment of arbeidsgiveravgift per period: Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-11-14 |
+| Read for Additional 5% employer contribution on high pay: Skatteetaten, Employer's additional national insurance contributions (discontinued) | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, Advance tax | https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/ | 2026-11-14 |
+| Read for Court fee (basis of enforcement fines): Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-11-14 |
+| Read for Late-payment interest: Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-11-14 |
 
 Not yet confirmed: the treatment of a person who turns 17 or 70 during the year; how Skatteetaten splits a capped contribution between income types where a system needs it; spouse coordination of a joint business's personal income; voluntary membership premiums and the continental shelf and foreign-ship rules.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

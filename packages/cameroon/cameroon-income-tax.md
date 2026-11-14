@@ -1,10 +1,11 @@
 ---
 name: cameroon-income-tax
 description: Use this skill whenever asked about Cameroon personal income tax (IRPP) for salaried or self-employed individuals. Trigger on phrases like "how much income tax do I pay in Cameroon", "IRPP", "impot sur le revenu", "CNPS contributions", "PAYE Cameroon", "IGS", "Impot General Synthetique", "Centre de Gestion Agree", "CGA", "barème IRPP", "Credit Foncier", "FNE", "monthly salary tax Cameroon", "net taxable income", "minimum tax", or any question about filing or computing income tax for a salaried or self-employed client in Cameroon. Also trigger when preparing or reviewing a monthly PAYE return, the annual recapitulative declaration, the DIPE employer summary, computing CNPS social security, or advising on the IGS/actual-earnings turnover regimes. This skill covers the progressive IRPP scale (CAC-inclusive), CNPS branches, Credit Foncier/FNE, council tax and CRTV royalty, the IGS small-business regime, filing deadlines, and penalties. ALWAYS read this skill before touching any Cameroon income tax work.
-version: 0.2
+version: 0.3
 jurisdiction: CM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: income-tax
 ---
 
-# Cameroon income tax (IRPP) v0.2
+# Cameroon income tax (IRPP) v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,20 +34,20 @@ Salaried, passive-income and non-professional taxpayers are covered by art. 93 u
 | Item | Rate or amount | Source |
 |---|---|---|
 | Salary scale, up to XAF 2,000,000 | 10% (11% with CAC) | CGI art. 69(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| XAF 2,000,001 to 3,000,000 | 15% (16.5% with CAC) | same |
-| XAF 3,000,001 to 5,000,000 | 25% (27.5% with CAC) | same |
-| Over XAF 5,000,000 | 35% (38.5% with CAC) | same |
+| XAF 2,000,001 to 3,000,000 | 15% (16.5% with CAC, computed: 15% plus the 10% CAC on it) | same |
+| XAF 3,000,001 to 5,000,000 | 25% (27.5% with CAC, computed: 25% plus the 10% CAC on it) | same |
+| Over XAF 5,000,000 | 35% (38.5% with CAC, computed: 35% plus the 10% CAC on it) | same |
 | Communal surcharge (CAC) | 10% of the tax | same |
-| Professional expenses, salary | 30% of gross, capped at XAF 4,800,000 a year | CGI art. 34: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Professional expenses, salary | 30% of gross, capped at four million eight hundred thousand francs CFA a year | CGI art. 34: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Business, agricultural, property and listed non-commercial income | Art. 17 rate of 30% (33% with CAC) | CGI art. 17, 69(2), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Minimum on those incomes | 2% of turnover, 2.2% with CAC | CGI art. 69(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Listed non-commercial income, art. 56(2) d, e, f, h | Final 10%; art. 56(2) g: 5% | CGI art. 69(3): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Investment income | Final 15% (16.5% with CAC) | CGI art. 70(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Investment income | Final 15% (16.5% with CAC, computed: 15% plus the 10% CAC on it) | CGI art. 70(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Dividends from a company with turnover up to XAF 3 billion | 10% (11% with CAC) | CGI art. 70(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Passive income paid to a tax haven | 30% | CGI art. 70(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Instalment, real regime and IGS | 2% of monthly turnover plus CAC (2.2%) | CGI art. 21, 91; Arrete 00001 of 5 Jan 2026 art. 2: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
 | Withholding, not on active taxpayer file | 10% | same |
-| Liberal professions and public orders under XAF 5,000,000 | 5.5% | Arrete art. 3: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
+| Liberal professions and public orders under five million francs CFA | 5.5% | Arrete art. 3: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
 | Gain on a building | Final 5%; 10% if paid in cash | CGI art. 90: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | IGS class 1, under XAF 500,000 | XAF 20,000 | CGI art. C 40: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Class 2, to under 1 million | XAF 30,000 | same |
@@ -62,10 +63,7 @@ Salaried, passive-income and non-professional taxpayers are covered by art. 93 u
 | Credit Foncier | Employee 1%; employer 1.5% | CGI annex law art. 6: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | National Employment Fund (FNE) | 1% employer | same |
 | CRTV audiovisual fee, monthly pay over XAF 1,000,000 | XAF 13,000 | CGI annex law art. 3: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| CNPS pension | Unverified: 4.2% employee, 4.2% employer, ceiling XAF 750,000 a month. cnps.cm did not open | n/a |
-| CNPS family and work risk | Unverified: 7% and 1.75% to 5% employer; voluntary 8.4% | n/a |
 | Development tax, employees, base pay over XAF 500,000 a month | XAF 30,000 a year; lower bands from XAF 3,000 start at XAF 62,000 | CGI art. C 86: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Minimum wage | Unverified: XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State | n/a |
 
 ## The base
 
@@ -147,7 +145,7 @@ expected:
 
 ## Further worked examples
 
-All examples use XAF. Salary IRPP base = gross - 30% professional deduction - CNPS employee 4.2% (capped), then rounded down to nearest XAF 1,000, then the progressive scale in Section 1 (220,000 / 385,000 / 935,000 cumulative checkpoints).
+All examples use XAF. The CNPS figures in this section and below (employee 4.2%, the XAF 9,000,000 ceiling, family 7%, occupational risk 1.75% to 5%) are the old file's and are on the Not yet confirmed line: they are example inputs only. Before using them for a client, take the rates and ceiling from the client's CNPS statement or the CNPS. Salary IRPP base = gross - 30% professional deduction - CNPS employee contribution (capped), then rounded down to nearest XAF 1,000, then the progressive scale in Section 1 (220,000 / 385,000 / 935,000 cumulative checkpoints).
 
 ### Example 1 -- Salaried employee, mid-range salary
 
@@ -233,7 +231,7 @@ Classification: EXCLUDE.
 | Unknown taxpayer type (salaried vs self-employed) | STOP -- do not apply a scale without knowing income type |
 | Unknown residency | Treat as resident (worldwide income) only after confirmation; otherwise STOP |
 | Unknown turnover (self-employed regime) | STOP -- IGS vs actual-earnings turns on turnover |
-| Unknown CNPS occupational-risk class | Use lowest published rate 1.75% and flag for reviewer |
+| Unknown CNPS occupational-risk class | Take the rate from the client's CNPS statement (the old file's 1.75% lowest rate is not confirmed) and flag for reviewer |
 | Unknown whether expense is professional | Not deductible (rely on the 30% lump sum only) |
 | Unknown CGA membership (self-employed) | Assume NOT a CGA member (no IGS halving) |
 | Unknown VAT status | Standard 19.25% VAT-registered |
@@ -359,7 +357,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 ### 6.4 CNPS Occupational-Risk Class
 
-- **CNPS Occupational-Risk Class** : Employer occupational-accident rate is 1.75%-5% depending on the industry risk class (A/B/C). Flag for reviewer: confirm the client's assigned risk class; default to 1.75% if unknown and flag.
+- **CNPS Occupational-Risk Class** : Employer occupational-accident rate depends on the industry risk class (A/B/C; the old file's 1.75%-5% is not confirmed). Flag for reviewer: confirm the client's assigned risk class and rate from its CNPS statement; if it is unknown, do not assume one: flag it.
 
 ### 6.5 IGS vs Actual-Earnings Boundary
 
@@ -384,7 +382,7 @@ Residency: Resident / Non-resident (STOP if non-resident)
 A. SALARIED COMPUTATION (skip if self-employed)
   A1. Gross annual salary                          ___________
   A2. Less 30% professional deduction (A1 x 30%)   ___________
-  A3. Less CNPS employee 4.2% (cap base 9,000,000) ___________
+  A3. Less CNPS employee contribution (rate and cap from the CNPS statement) ___________
   A4. Net taxable (A1 - A2 - A3), round down 1,000 ___________
   A5. IRPP per progressive scale (Section 1)       ___________
   A6. Development tax (up to 30,000/yr)             ___________
@@ -448,7 +446,7 @@ REVIEWER FLAGS:
 | Salaire / Paie | Salary | Salary income -> progressive scale |
 | Honoraires | Professional fees | Business turnover |
 | Loyer | Rent | Received = rental income; paid = office rent (if commercial) |
-| CNPS | Social security | Employee 4.2% reduces salary base |
+| CNPS | Social security | Employee contribution reduces salary base (rate not confirmed here) |
 | TVA | VAT | Exclude from income/expense (liability) |
 
 ## Section 9 -- Onboarding Fallback
@@ -470,7 +468,7 @@ ONBOARDING QUESTIONS -- CAMEROON IRPP
 6. Are you VAT-registered (standard 19.25%)?
 7. Do you have investment income (dividends/interest from shares)?
 8. Any rental income?
-9. What is your CNPS occupational-risk class (employer rate 1.75%-5%)?
+9. What is your CNPS occupational-risk class and rate (from your CNPS statement)?
 10. Any capital assets, home-office use, or vehicle used for business?
 
 ## Test suite and prohibitions
@@ -509,7 +507,7 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 
 - NEVER apply the progressive salary scale to investment income (use the flat rate) or to IGS turnover
 - NEVER compute final tax figures as definitive -- always label as estimated and pass to the deterministic engine
-- NEVER apply CNPS 4.2% on a base above the XAF 9,000,000/year ceiling
+- NEVER apply the CNPS employee rate on a base above the CNPS ceiling, and never use the old file's 4.2% or XAF 9,000,000 without the client's CNPS statement
 - NEVER add the 10% CAC again on top of the 11/16.5/27.5/38.5% scale -- it is already included
 - NEVER apply minimum tax to salaried workers or IGS taxpayers
 - NEVER itemise business expenses for a salaried taxpayer -- only the 30% lump-sum deduction applies
@@ -527,7 +525,7 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 | Arrete 00001/MINFI/DGI of 5 Jan 2026 on withholding: arts. 1 to 9 | https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf | 2026-11-01 |
 | CNPS site | https://www.cnps.cm | 2026-11-01 (refused: 403 to fetch, no page text in browser) |
 
-Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre.
+Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre; CNPS figures moved out of the rates table: pension 4.2% employee and 4.2% employer with ceiling XAF 750,000 a month, family 7% and work risk 1.75% to 5% employer, voluntary 8.4%; minimum wage XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State (old skill; cnps.cm did not open again on 2026-11-14).
 
 ## Disclaimer
 

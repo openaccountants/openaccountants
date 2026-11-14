@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-irap"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Italian regional tax on productive activities (IRAP)
@@ -170,8 +170,8 @@ These groups follow their own base rules or a separate regime. Do not compute th
 
 Not yet confirmed: the IRAP instructions for tax year 2026 (the 2027 return edition; the published IRAP 2026 instructions cited above cover tax year 2025); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-irap` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-irap. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-irap` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-irap. If neither is available, confirm every figure against the official source pages cited above before relying on it.

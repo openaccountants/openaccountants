@@ -1,52 +1,137 @@
 ---
 name: vc-corporate-income-tax
-description: "Saint Vincent and the Grenadines corporate income tax reference checked for 2026. Covers the standard company rate, financial-year filing deadline and the distinction between estimated instalments and the final balance. Uses the enacted Finance Act of 2023, current Inland Revenue guidance and the Income Tax Act’s instalment provisions. Includes a worked chargeable-income calculation and a calendar-year payment example. Use after residence, taxable scope and chargeable income have been determined. Does not establish capital allowances, loss relief, incentives, treaty treatment or a special-sector rate. The remaining amendment audit and independent accountant review are outstanding."
+description: "Saint Vincent and the Grenadines company income tax for 2026. Covers the 28% rate on chargeable income set by the Finance Act 10 of 2023, the return and final tax three months after the financial year end, estimated tax in four instalments (one quarter each by the end of months six, nine and twelve, the balance three months after year end), the EC$600 instalment exemption, the short-year rule, 1.5% monthly interest, and the withholding rates on payments to nonresidents. Trigger phrases include SVG corporate tax, St Vincent company tax 28%, SVG estimated tax instalments."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/vc-corporate-income-tax"
   jurisdiction: "VC"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Saint Vincent and the Grenadines corporate income tax
+# Saint Vincent and the Grenadines company income tax
 
-## Standard rate
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Checked 22 October 2026. The [Finance Act 10 of 2023, Schedule item 8(b)(ii)](https://finance.gov.vc/finance/images/PDF/Acts/Finance_Act_No_10_of_2023_30_to_28_tax_rate_001.pdf) replaces the company rate in the Income Tax Act's Fifth Schedule with 28%. The [current IRD tax page](https://ird.gov.vc/index.php/taxes) corroborates that rate. This Guide assumes a company within the standard regime, with chargeable income already determined.
+## Scope
 
-Accounting profit is not automatically chargeable income. Prepare a reconciliation before applying the rate, documenting each adjustment and its authority. This batch does not decide deductions, capital allowances, losses or incentives.
+Company income tax in Saint Vincent and the Grenadines (SVG) for years of assessment in 2026, under the Income Tax Act, Cap. 435, as amended by the Finance Act 10 of 2023, and the Inland Revenue Department (IRD) guidance. Covers the rate, return, estimated tax and interest once chargeable income is known. Amounts are EC$. Residence, deductions, capital allowances, losses, incentives, special sectors and treaties are outside it. VAT: [vc-vat](vc-vat.md).
 
-## Worked tax calculation
+## Ask the client first
 
-Assume chargeable income of EC$100,000 with no special relief or credit. Tax is 100,000 × 28% = EC$28,000. At EC$125,000 chargeable income it is EC$35,000. These examples are deliberately expressed in chargeable income rather than turnover or unadjusted accounts profit.
+1. Financial year end; whether the company was assessed for the preceding year, and that year's length.
+2. Chargeable income for the preceding assessed year and the expected chargeable income now.
+3. Accounting profit and the adjustments to reach chargeable income, each with its authority.
+4. Instalments paid, withholding credits, and any payments to nonresidents.
 
-## Estimated payments
+## The method, step by step
 
-[Income Tax Act sections 70–71](https://ird.gov.vc/images/pdf/Cap435.pdf) provide for estimated tax based on prior assessed chargeable income at current rates, or expected income for a person not previously assessed. Special rules apply to a short preceding company period. The first three instalments are each one-quarter of estimated tax, due by the ends of months six, nine and twelve; the fourth is the final balance by the end of the third month following year end.
+### Rates, bands and thresholds
 
-Assume a calendar-year company with an established estimated tax amount of EC$28,000 and final tax of EC$35,000:
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Company rate | 28% on every dollar of chargeable income (Fifth Schedule item 2, replacing 30%) | [Finance Act 10 of 2023, Schedule item 8(b)](https://finance.gov.vc/finance/images/PDF/Acts/Finance_Act_No_10_of_2023_30_to_28_tax_rate_001.pdf) |
+| Return and final tax | Three months after the financial year ends | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
+| Estimated tax base, s.70(2) | Tax at current rates on the preceding (or latest assessed) year's chargeable income; expected income if never assessed; a short preceding year is grossed up by 365 / days | [Income Tax Act Cap. 435, s.70](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Instalments 1 to 3, s.71 | One quarter of estimated tax each, by the end of the 6th, 9th and 12th months of the year | [Income Tax Act Cap. 435, s.71](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Instalment 4, s.71 | The balance of tax for the year, by the end of the 3rd month after year end | same |
+| Instalment exemption, s.72 | None required where tax chargeable, as reduced by tax deductible at source, is six hundred dollars or less | [Income Tax Act Cap. 435, s.72](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Revision of the estimate, s.73 | Application by 30 November in the income year | same |
+| Interest | 1.5% a month | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
+| Withholding on services by nonresidents | 20%; rental 10%; CARICOM royalties, interest and management fees 15%; remit by the 15th of the next month | same |
 
-| Payment | EC$ |
-|---|---:|
-| End of June | 7,000 |
-| End of September | 7,000 |
-| End of December | 7,000 |
-| Final balance, end of March following | 14,000 |
+### Steps
 
-The final payment is 35,000 − 21,000. It is not automatically a fourth EC$7,000 instalment. Keep the basis of the estimate, instalment receipts and final reconciliation together.
+1. **Bridge** accounting profit to chargeable income; record the authority for each adjustment.
+2. **Tax:** chargeable income x 28%.
+3. **Estimated tax:** prior-year chargeable income x 28% (grossed up for a short year), or expected income if never assessed. If the tax is EC$600 or less, no instalments.
+4. **Pay** a quarter of the estimate by the end of months 6, 9 and 12, and the balance with the return three months after year end.
+5. **Credits:** subtract instalments and tax withheld at source.
 
-## Return and closing process
+## Boundary and exception table
 
-IRD states the company return and final tax are due three months after the financial year ends. [IRD company-tax section](https://ird.gov.vc/index.php/taxes). Check the applicable year-end and any authorised extension rather than assuming every company files in March.
+| Situation | Treatment | Source |
+|---|---|---|
+| Final tax above the estimate | The fourth payment is the balance, not a fourth quarter | [Cap. 435, s.71(2)(b)](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Preceding year of 200 days | Gross up: chargeable income x 365 / 200 | [Cap. 435, s.70(2)(c)](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Old 30% rate in the consolidated Act | Replaced by 28% (Finance Act 2023, embodying the Provisional Collection of Taxes Order 8 of 2023) | [Finance Act 10 of 2023](https://finance.gov.vc/finance/images/PDF/Acts/Finance_Act_No_10_of_2023_30_to_28_tax_rate_001.pdf) |
+| Paying a nonresident for services | Withhold 20% and remit by the 15th | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
 
-For a closing review, reconcile the submitted computation to the financial statements and the payment ledger. Identify any withholding credits or other adjustments separately; the worked example assumes none.
+## Worked cases
 
-## Open work
+### Case 1: calendar-year company
 
-The historical consolidated Income Tax Act and its later amendments, including the Tax Administration Act, need a complete reconciliation before merge. Residence, source, special sectors, incentives, deductions, loss relief and cross-border transactions remain outside this focused draft. Independent accountant review has not occurred.
+Last year's chargeable income gives an estimate of 28,000; this year's chargeable income is 125,000, tax 35,000. Instalments of 7,000 are due at the end of June, September and December, and the balance of 14,000 by the end of March 2027.
+
+```oa-check
+name: SVG company tax and instalments, estimate 28,000, final 35,000
+inputs:
+  chargeable: 125000
+  estimate: 28000
+steps:
+  - tax: chargeable * 0.28
+  - quarter: estimate / 4
+  - paid_in_year: quarter * 3
+  - balance: tax - paid_in_year
+expected:
+  tax: 35000
+  quarter: 7000
+  paid_in_year: 21000
+  balance: 14000
+```
+
+### Case 2 (decision): short preceding year, what estimate?
+
+The company's first year was 200 days with chargeable income of 50,000. The statutory estimate grosses up: 50,000 x 365 / 200 = 91,250, tax 25,550, instalments 6,387.50. Using the unadjusted 50,000 would give 14,000 and instalments of 3,500, short by 2,887.50 each. If a lower expected income is real, apply for revision by 30 November.
+
+```oa-check
+name: SVG estimated tax after a 200-day first year
+inputs:
+  prior_income: 50000
+  days: 200
+steps:
+  - grossed: prior_income * 365 / days
+  - estimate: grossed * 0.28
+  - quarter: estimate / 4
+  - wrong_quarter: prior_income * 0.28 / 4
+  - shortfall: quarter - wrong_quarter
+expected:
+  grossed: 91250
+  estimate: 25550
+  quarter: 6387.5
+  wrong_quarter: 3500
+  shortfall: 2887.5
+```
+
+## When to refuse or refer
+
+- Residence and source, special sectors, incentives, losses, capital allowances.
+- Treaties and cross-border structuring beyond the IRD withholding rates.
+- Penalty amounts: the IRD page names penalties without amounts.
+
+## Filing and payment
+
+1. File the company return with the final tax three months after year end ([IRD taxes page](https://ird.gov.vc/index.php/taxes)).
+2. Pay estimated tax under ss.70 and 71; apply by 30 November to revise the estimate.
+3. Reconcile the computation to the accounts and the payment ledger; list withholding credits separately.
+
+## Completion checklist
+
+- Chargeable income bridged; 28% applied.
+- Estimate on the s.70(2) basis; EC$600 exemption checked.
+- Quarters by months 6, 9, 12; balance three months after year end.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Finance Act 10 of 2023 (scanned, OCR): read for Schedule item 8(b), the Fifth Schedule company rate 30% to 28% and the individual band change, and the Provisional Collection of Taxes Order 8 of 2023 | https://finance.gov.vc/finance/images/PDF/Acts/Finance_Act_No_10_of_2023_30_to_28_tax_rate_001.pdf | 2026-11-14 |
+| IRD taxes page: read for the 28% rate, the return and payment three months after year end, 1.5% monthly interest and the withholding tax rates | https://ird.gov.vc/index.php/taxes | 2026-11-14 |
+| Income Tax Act Cap. 435 (IRD PDF): read for ss.70 to 73, estimated tax, instalments, the EC$600 exemption and revision | https://ird.gov.vc/images/pdf/Cap435.pdf | 2026-11-14 |
+
+Not yet confirmed: amendments to ss.70 to 73 after the consolidation; penalty amounts; the Tax Administration Act rules on interest and penalties (not opened).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `vc-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/vc-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `vc-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/vc-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

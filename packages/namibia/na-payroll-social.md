@@ -2,18 +2,19 @@
 name: na-payroll-social
 description: >
   Namibia payroll, 2026: PAYE, the Social Security ceiling of N$12,500 from 1 March 2026, new benefits from 1 October 2026, VET levy and year-end certificates. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Namibia Payroll and Social Contributions v0.2
+# Namibia Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -29,7 +30,6 @@ Employers in Namibia and their employees. A new employer registers with NamRA wi
 | SSC deemed basic wage floor | N$500 a month | 2026 | https://www.lac.org.na/laws/2026/8975.pdf |
 | SSC maximum basic wage | N$12,500 from 1 March 2026 | 2026 | https://www.lac.org.na/laws/2026/8975.pdf |
 | Same, next steps | N$14,000 from 1 March 2027; N$15,000 from 1 March 2028; N$16,000 from 1 March 2029 | 2027-29 | same |
-| SSC contribution rate | unverified: old skill 0.9% each side; the regulation was not opened | 2026 | unverified |
 | Maternity benefit from 1 October 2026 | 100% of basic wage, N$20,000 a month maximum, 12 weeks | 2026 | https://www.lac.org.na/laws/2026/9037.pdf |
 | Sick leave from 1 October 2026 | 75% up to N$15,000 for 12 months; then 65% up to N$13,000 | 2026 | same |
 | Death benefit from 1 October 2026 | N$15,000 lump sum | 2026 | same |
@@ -96,12 +96,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Government Gazette 8975 GN 236 (read: notice and table) | https://www.lac.org.na/laws/2026/8975.pdf | 2026-11-01 |
-| Government Gazette 9037 GN 305 (read: notice) | https://www.lac.org.na/laws/2026/9037.pdf | 2026-11-01 |
-| Social Security Act 34 of 1994 (read: ss.20-24) | https://www.lac.org.na/laws/annoSTAT/Social%20Security%20Act%2034%20of%201994.pdf | 2026-11-01 |
-| Income Tax Act 24 of 1981, annotated to Act 4 of 2024 (read: s.80, Schedule 2) | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01 |
-| NamRA employee tax page (read: whole page) | https://www.namra.org.na/tax-types/page/employee-tax-30120-30120/ | 2026-11-01 |
-| NTA VET levy page (read: whole page) | https://www.nta.com.na/vet-levy/ | 2026-11-01 |
-| SSC site (read: home page and forms 1 to 4) | https://www.ssc.org.na | 2026-11-01 |
+| Government Gazette 8975 GN 236: read for the notice, the N$500 floor and the maximum basic salary table | https://www.lac.org.na/laws/2026/8975.pdf | 2026-11-14 |
+| Government Gazette 9037 GN 305: read for the maternity, sick leave and death benefit amendments | https://www.lac.org.na/laws/2026/9037.pdf | 2026-11-14 |
+| Social Security Act 34 of 1994: read for ss.20 to 24 on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Social%20Security%20Act%2034%20of%201994.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| Income Tax Act 24 of 1981, annotated to Act 4 of 2024: read for s.80 and Schedule 2 on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| NamRA employee tax page: read in full | https://www.namra.org.na/tax-types/page/employee-tax-30120-30120/ | 2026-11-14 |
+| NTA VET levy page: read in full on 2026-11-01 | https://www.nta.com.na/vet-levy/ | 2026-11-01; tried again 2026-11-14, nta.com.na refused the script (406) |
+| SSC site: read for the home page and forms 1 to 4 | https://www.ssc.org.na | 2026-11-14 |
 
-Not yet confirmed: SSC contribution rate of 0.9% each side and period of 30 days after the month (old skill; Regulations GN 198 of 1995 not opened); Employees Compensation Fund rates and ceiling (ECF page opened gave no figures; the N$ rates are unverified); PAYE tables for 2026.
+Not yet confirmed: SSC contribution rate of 0.9% each side and period of 30 days after the month (old skill; Regulations GN 198 of 1995 not opened); Employees Compensation Fund rates and ceiling (ECF page opened gave no figures; the N$ rates are unverified); PAYE tables for 2026; the SSC contribution rate (old skill 0.9% each side), moved out of the rates table: GN 236 and GN 305, read 2026-11-14, do not state it.

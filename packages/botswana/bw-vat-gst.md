@@ -2,18 +2,19 @@
 name: bw-vat-gst
 description: >
   Botswana VAT for 2026-27 under the Value Added Tax Act, 2026: 14% rate, P1,000,000 threshold, P500,000 remote supplier threshold, reverse charge for large unregistered persons, zero-rated food, the medical suspension, categories, returns in 28 days. Use for Botswana VAT.
-version: 1.0
+version: 1.1
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Botswana VAT v1.0
+# Botswana VAT v1.1
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 

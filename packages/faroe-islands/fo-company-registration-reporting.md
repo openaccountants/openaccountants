@@ -13,17 +13,18 @@ description: >
   documented checklist for qualified local review. Foreign branches, special
   entities, licences and unresolved first-year or holding-company audit
   implementation require their own source work.
-version: 0.4
+version: 0.5
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Faroe Islands company registration and annual reporting v0.4
+# Faroe Islands company registration and annual reporting v0.5
 
 > **Checked against the law.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.
 

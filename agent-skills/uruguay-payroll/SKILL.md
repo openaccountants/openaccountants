@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uruguay-payroll"
   jurisdiction: "UY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Uruguay payroll for 2026 v0.2
+# Uruguay payroll for 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -276,8 +276,8 @@ expected:
 
 Not yet confirmed: the two-instalment payment dates of the aguinaldo (June and December), which sit in a later law not read; whether the 6% gross-up also applies in the December ajuste anual; how deductions attached to the aguinaldo are credited; the CCM amount per worker; the BSE work-accident insurance premium, which BPS does not collect and which varies by activity; the employer rates of public bodies and of servicios bonificados; whether a worker outside the AFAP regime has any contribution ceiling; the socio vitalicio FONASA rates (the BPS table shows an inconsistent row for "sin cónyuge con hijos"); the annual limit for the art. 64 bis exclusion; the DGI form used by employers outside BPS (art. 68); the 2027 BPS calendar.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
