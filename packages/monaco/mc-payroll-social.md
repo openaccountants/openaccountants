@@ -1,14 +1,15 @@
 ---
 name: mc-payroll-social
 description: "Monaco payroll and social contributions for all of 2026, separating January to September and October rate periods. Covers professional and domestic employers, ordinary bases and caps, directors, part time and absent workers, CAMTI and CARTI self employed classes, wages and payslips, filings, sanctions and French cross border tax collection. Use for Monaco payroll, pension, social security, gross to net and independent contribution questions. Includes two reproducible ordinary payroll examples and sourced in-year transitions. Source cited draft awaiting named Monaco professional review."
-version: 1.5
+version: 1.6
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Monaco payroll and social contributions

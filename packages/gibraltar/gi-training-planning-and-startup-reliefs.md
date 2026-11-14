@@ -5,14 +5,15 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: "0.2"
+last_updated: 2026-11-14
+version: "0.3"
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, Schedule 3 paragraphs 2, 16, 17 and 17A"
     as_of: "2026-10-22"
 tier: 2
 domain: tax-optimization
+type: situation-rules
 ---
 
 # Gibraltar: training, planning costs and historic start-up relief

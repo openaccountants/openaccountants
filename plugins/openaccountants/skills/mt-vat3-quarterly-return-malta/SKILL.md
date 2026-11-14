@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-vat3-quarterly-return-malta"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-08"
+  last_updated: "2026-11-14"
 ---
 
 # Malta VAT returns: Article 10, Article 11 and Article 12
@@ -310,4 +310,4 @@ Not yet confirmed: authenticated portal box/field mapping and current submission
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-vat3-quarterly-return-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-vat3-quarterly-return-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-vat3-quarterly-return-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-vat3-quarterly-return-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.

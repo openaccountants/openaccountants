@@ -3,12 +3,13 @@ name: mg-tax-overview
 description: "Madagascar 2026 tax intake and routing across business IR, salary IRSA, TVA, payroll, transfer pricing and non-resident services; partial pack."
 jurisdiction: MG
 tax_year: 2026
-last_updated: 2026-11-01
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Madagascar 2026 tax router

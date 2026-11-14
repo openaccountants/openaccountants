@@ -1,11 +1,12 @@
 ---
 name: ge-cross-border
 description: "Cross-border tax in Georgia (the country, GE, currency GEL; not the US state) for tax year 2026, under the Tax Code of Georgia. Covers residence of individuals (183 days) and companies (place of business or management), permanent establishment including the three-month management rule, Georgian-source income, withholding on payments to non-residents (dividends, interest and royalties 5%; international telecom and transport 10%; other Georgian-source income 10%; salary 20%; 15% on interest, royalties and other income to a preferential tax country), the refund return for non-residents, treaty relief under art. 125 and residence certificates, the foreign tax credit, the Government list of preferential tax countries and its treaty rule, and VAT reverse charge at 18% on services bought from abroad. Trigger phrases: Georgia withholding tax non-resident, Georgia double tax treaty, Georgian residence certificate, permanent establishment Georgia, reverse charge Georgia, offshore payments Georgia. Out of scope: profit tax generally (ge-corporate-income-tax), transfer pricing (ge-transfer-pricing), individual income tax (georgia-income-tax), VAT generally (georgia-vat), treaty-by-treaty rate tables."
-version: 0.1
+version: 0.2
+type: situation-rules
 jurisdiction: GE
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -31,22 +32,22 @@ Profit tax is covered in ge-corporate-income-tax. Transfer pricing, including th
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Residence test for individuals | 183 days or more in any continuous 12 calendar months ending in the tax year | 2026 | Tax Code art. 34(2), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Permanent establishment through management by another person | over 3 months | 2026 | art. 29(4), same URL |
-| Dividends paid to a non-resident | 5% at source | 2026 | arts. 130(1), 134(1)(a), same URL |
-| Dividends from profit of banks, credit unions, microfinance organisations and loan providers earned in 2023 or later | not taxed at source | 2026 | art. 130(8), same URL |
-| Interest paid to a non-resident without a PE | 5% at source | 2026 | arts. 131(1), 134(1)(b), same URL |
-| Interest from a Georgian licensed financial institution | not taxed at source | 2026 | art. 131(5), same URL |
-| Interest on debt securities of a Georgian enterprise listed on a recognised foreign exchange | not taxed at source | 2026 | art. 131(8), same URL |
-| Royalties paid to a non-resident | 5% at source | 2026 | art. 134(1)(b^1), same URL |
-| International telecom and international transport services | 10% at source | 2026 | art. 134(1)(c), same URL |
-| Non-resident oil and gas subcontractors | 4% at source | 2026 | art. 134(1)(d), same URL |
-| Other Georgian-source income of a non-resident | 10% at source | 2026 | art. 134(1)(e), same URL |
-| Salary of a non-resident | 20% at source | 2026 | arts. 81(1), 134(1)(f), same URL |
-| Interest, royalties and other income to a person registered in a preferential tax country | 15% at source | 2026 | art. 134(1^1), same URL |
-| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | art. 98^2(5), (6), same URL |
+| Permanent establishment through management by another person | over 3 months | 2026 | art. 29(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Dividends paid to a non-resident | 5% at source | 2026 | arts. 130(1), 134(1)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Dividends from profit of banks, credit unions, microfinance organisations and loan providers earned in 2023 or later | not taxed at source | 2026 | art. 130(8), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest paid to a non-resident without a PE | 5% at source | 2026 | arts. 131(1), 134(1)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest from a Georgian licensed financial institution | not taxed at source | 2026 | art. 131(5), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest on debt securities of a Georgian enterprise listed on a recognised foreign exchange | not taxed at source | 2026 | art. 131(8), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Royalties paid to a non-resident | 5% at source | 2026 | art. 134(1)(b^1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| International telecom and international transport services | 10% at source | 2026 | art. 134(1)(c), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Non-resident oil and gas subcontractors | 4% at source | 2026 | art. 134(1)(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Other Georgian-source income of a non-resident | 10% at source | 2026 | art. 134(1)(e), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary of a non-resident | 20% at source | 2026 | arts. 81(1), 134(1)(f), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest, royalties and other income to a person registered in a preferential tax country | 15% at source | 2026 | art. 134(1^1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | art. 98^2(5), (6), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 49 countries | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
-| VAT on services bought from a non-established supplier (reverse charge) | 18% of the amount paid | 2026 | arts. 161(1)(a), (3)(a), 166, same Tax Code URL |
-| Penalty interest on late tax, including tax not withheld | 0.05% of the unpaid tax per day | 2026 | art. 272(4), same Tax Code URL |
+| VAT on services bought from a non-established supplier (reverse charge) | 18% of the amount paid | 2026 | arts. 161(1)(a), (3)(a), 166, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax, including tax not withheld | 0.05% of the unpaid tax per day | 2026 | art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 

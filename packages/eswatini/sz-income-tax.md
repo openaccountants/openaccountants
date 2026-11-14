@@ -5,14 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Personal Income Tax v0.2
+# Eswatini Personal Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -24,12 +25,12 @@ Natural persons with Eswatini-source income. Tax year: the year of assessment 1 
 
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Up to E100,000 | 20% | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| E100,000 to E150,000 | E20,000 + 25% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| E150,000 to E200,000 | E32,500 + 30% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| Above E200,000 | E47,500 + 33% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| Up to E100,000 | 20% | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| E100,000 to E150,000 | E20,000 + 25% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| E150,000 to E200,000 | E32,500 + 30% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| Above E200,000 | E47,500 + 33% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
 | Rebate | E8,200 a year, apportioned for a part year. Effective threshold E41,000 of taxable income | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
-| Extra rebate, over 60 on the last day of the year | E2,700, total E10,900 | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| Extra rebate, over 60 on the last day of the year | E2,700, total E10,900 | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
 | Redundancy or retirement lump sum above the exempt amount | 25% to E330,000, then E82,500 + 30% of the excess. No rebate. The ERS page still shows older bands; the Act wins | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Resident dividends, natural person | 10%, final per ERS guide | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Resident interest, natural person | 10%, final, no deduction, no refund (s 32C) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
@@ -105,13 +106,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023); scanned, read by OCR, Third Schedule pages checked by eye; cited sections read | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-01 |
-| ERS, Rates and Thresholds; whole page read | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-01 |
-| ERS, Presumptive Tax; whole page read | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-01 |
-| ERS, Public Notice, returns for tax year end 2025 (scanned, OCR); cited sections read | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-01 |
-| ERS, Income Tax Returns; whole page read | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-01 |
-| ERS, Self Assessment; whole page read | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-01 |
-| ERS, Step-by-Step Guide for New Businesses; whole page read | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-01 |
-| Income Tax Order 1975, ERS consolidated copy to the 2013 amendments; sections cited were read; cited sections read | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| ERS, Rates and Thresholds: read in full | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-14 |
+| ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
+| ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
+| ERS, Income Tax Returns: read in full | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-14 |
+| ERS, Self Assessment: read in full | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-14 |
+| ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
+| Income Tax Order 1975, ERS consolidated copy to the 2013 amendments: read for the cited sections | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-14 |
 
 Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The ERS Income Tax Returns page still gives E1.2 million; the 2025 notice says E3 million and the notice is used here. The guide gives E2 million for TIN registration, unresolved. The old pack's residence day-count test has no source: the Order uses "ordinarily resident" and no day count was found. The Third Schedule text names the year ended 30 June 2023 and no later schedule was found. The exempt lump sum under s 14(1)(l)(iii) was not extracted.

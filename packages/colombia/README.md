@@ -15,15 +15,14 @@
 8. `co-vat-return.md`
 9. `colombia-cross-border.md`
 10. `colombia-income-tax.md`
-11. `colombia-iva.md`
-12. `colombia-payroll.md`
-13. `colombia-transfer-pricing.md`
-14. `formalizing-small-informal-businesses-in-colombia.md`
-15. `payroll-workflow-base.md`
-16. `company-formation-workflow-base.md`
-17. `transfer-pricing-workflow-base.md`
-18. `workflow-base.md`
-19. `vat-workflow-base.md`
+11. `colombia-payroll.md`
+12. `colombia-transfer-pricing.md`
+13. `formalizing-small-informal-businesses-in-colombia.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
+17. `workflow-base.md`
+18. `vat-workflow-base.md`
 
 ## Also known as
 

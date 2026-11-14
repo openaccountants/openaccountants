@@ -1,17 +1,18 @@
 ---
 name: georgia-vat
 description: "VAT in the country of Georgia (Sakartvelo, GE, currency GEL; not the US state) for tax year 2026 under Section VI of the Tax Code of Georgia. Covers who is a taxable person, compulsory registration within 2 business days of passing GEL 100,000 of taxable supplies in any 12 months, voluntary registration, the single 18% rate, exemptions with and without the right of deduction (exports, international transport, tour operators, financial services, land, medical and education), place of supply of services, reverse charge on services from non-residents, non-resident suppliers of services to consumers, input VAT deduction, the blocked items, proportional deduction, tax invoices, refunds, the monthly return and payment by the 15th, import VAT and the penalties (5% for trading unregistered, 100% and 200% invoice fines, late filing, 0.05% a day). Trigger on: Georgia VAT, dghg, VAT registration Georgia GEL 100,000, VAT return rs.ge, reverse charge Georgia. Out of scope: income tax (georgia-income-tax), profit tax (ge-corporate-income-tax), excise and customs duty."
-version: 2.1
+version: 2.2
+type: situation-rules
 jurisdiction: GE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Georgia (country): value added tax (2026) v2.1
+# Georgia (country): value added tax (2026) v2.2
 
 Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next month. A business must register once its taxable supplies pass GEL 100,000 in any 12 months in a row. Figures below are from Section VI (arts. 156-181^1) of the Tax Code of Georgia, consolidated on matsne.gov.ge to the law of 15 October 2026 (publication 247), read in English and checked against the Georgian text. Article letters follow the English translation.
 
@@ -32,19 +33,19 @@ Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | VAT rate | 18% | 2026 | Tax Code art. 166, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Compulsory registration threshold | GEL 100,000 of taxable supplies in any 12 calendar months in a row | 2026 | art. 165(1), same URL |
-| Time to apply after passing the threshold | 2 business days | 2026 | art. 165(1), same URL |
-| Cancelling registration on request | supplies not more than GEL 100,000 in the last 12 months and at least a year since registration | 2026 | art. 165^1(1), same URL |
-| Reorganisation or contribution in kind from a VAT payer | register before the first taxable supply, at the latest 10 days after | 2026 | art. 165(4)-(5), same URL |
-| Accounting period | calendar month | 2026 | art. 167, same URL |
-| Return and payment | by the 15th of the next month | 2026 | art. 168(1), same URL |
-| Import VAT on listed goods (codes 8401-9033) | within 45 days of release | 2026 | art. 168(3), same URL |
-| Proportional deduction, small exempt share | ignore if exempt supplies are under 5% of turnover | 2026 | art. 177(7), same URL |
-| Fixed assets used for mixed supplies: adjustment period | 10 years for immovable property, 5 years for other assets | 2026 | art. 177(6), same URL |
-| Time limit to deduct VAT on an invoice | 3 years from the end of the year of the supply | 2026 | art. 178(d), same URL |
-| VAT refund to foreign tourists | goods over GEL 200 a receipt (excluding VAT), taken out within 3 months | 2026 | art. 181(6)(b), same URL |
-| Trading while unregistered | fine of 5% of taxable supplies in the period | 2026 | art. 282(1), same URL |
-| Penalty interest | 0.05% of the unpaid tax a day | 2026 | art. 272(4), same URL |
+| Compulsory registration threshold | GEL 100,000 of taxable supplies in any 12 calendar months in a row | 2026 | art. 165(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Time to apply after passing the threshold | 2 business days | 2026 | art. 165(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Cancelling registration on request | supplies not more than GEL 100,000 in the last 12 months and at least a year since registration | 2026 | art. 165^1(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Reorganisation or contribution in kind from a VAT payer | register before the first taxable supply, at the latest 10 days after | 2026 | art. 165(4)-(5), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Accounting period | calendar month | 2026 | art. 167, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Return and payment | by the 15th of the next month | 2026 | art. 168(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Import VAT on listed goods (codes 8401-9033) | within 45 days of release | 2026 | art. 168(3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Proportional deduction, small exempt share | ignore if exempt supplies are under 5% of turnover | 2026 | art. 177(7), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Fixed assets used for mixed supplies: adjustment period | 10 years for immovable property, 5 years for other assets | 2026 | art. 177(6), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Time limit to deduct VAT on an invoice | 3 years from the end of the year of the supply | 2026 | art. 178(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| VAT refund to foreign tourists | goods over GEL 200 a receipt (excluding VAT), taken out within 3 months | 2026 | art. 181(6)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Trading while unregistered | fine of 5% of taxable supplies in the period | 2026 | art. 282(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest | 0.05% of the unpaid tax a day | 2026 | art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 

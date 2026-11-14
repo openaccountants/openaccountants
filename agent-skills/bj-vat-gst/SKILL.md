@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bj-vat-gst"
   jurisdiction: "BJ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Benin monthly VAT working paper v0.2
+# Benin monthly VAT working paper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,7 +32,6 @@ The code distinguishes persons within scope from persons required to charge VAT.
 | Banking and insurance | Specified operations subject to TAFA fall under article 229(12), rather than an exemption for everything supplied by the sector | [CGI 2026, art. 229](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=103) |
 | Domestic gas | Gas for domestic use under article 229(17); the separate 2026 cylinder/accessory rule has its own goods and date conditions | [CGI 2026, art. 229](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=103); [LF 2026, art. 7](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=3) |
 | Electric/hybrid motorcycles and battery systems | The specific article 12 DD/VAT exemption begins 1 January 2026; charging/swapping scope and regulatory goods list must be checked. Article 13 preserves separate named levies | [LF 2026, art. 12](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=3); [LF 2026, art. 13](https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=4) |
-| Registration threshold | Unverified amount: obtain the operative ministerial order; this calculation presupposes confirmed VAT status | [CGI 2026, art. 228](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=103) |
 
 ## The base
 
@@ -115,4 +114,4 @@ Not yet confirmed: operative ministerial order setting the registration threshol
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bj-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bj-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bj-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bj-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

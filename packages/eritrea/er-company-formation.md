@@ -4,11 +4,12 @@ description: "Entity forms in Eritrea under the Commercial Code in the Ministry 
 jurisdiction: ER
 category: formation
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Eritrea Company Formation and Entity Choice

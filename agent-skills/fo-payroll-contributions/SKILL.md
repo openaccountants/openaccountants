@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fo-payroll-contributions"
   jurisdiction: "FO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Faroe Islands payroll and mandatory contributions v0.3
+# Faroe Islands payroll and mandatory contributions v0.4
 
 > **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026; benefit, dated pension and contribution provisions re-read 28 October 2026. This Guide prepares payroll working papers, with professional review pending.
 
@@ -298,4 +298,4 @@ Not yet confirmed: calendar-only part-year annual housing/electricity/heat valua
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-payroll-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-payroll-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-payroll-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-payroll-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
