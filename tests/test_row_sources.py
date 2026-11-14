@@ -27,6 +27,27 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_swiss_apostrophe_thousands(self):
+        t = skill(f"| Threshold | CHF 80,000 | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "Freibetrag Fr. 80'000 pro Jahr " * 40}))
+        self.assertEqual(misses, [])
+
+    def test_rates_written_in_words(self):
+        for page, row in [("the rate is twenty per cent of the gain", "20%"),
+                          ("aliquota del dieci per cento", "10%"),
+                          ("tipo del veintiuno por ciento", "21%"),
+                          ("taux de quatre-vingt-dix pour cent", "90%"),
+                          ("按百分之二十五的税率", "25%")]:
+            with self.subTest(page=page):
+                t = skill(f"| Rate | {row} | [law]({A}) |")
+                _, misses, _ = rs.check_text(t, pages(**{A: (page + " ") * 40}))
+                self.assertEqual(misses, [])
+
+    def test_wrong_rate_in_words_still_misses(self):
+        t = skill(f"| Rate | 25% | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "the rate is twenty per cent " * 40}))
+        self.assertEqual([m[0] for m in misses], ["25%"])
+
     def test_url_with_brackets_is_kept_whole(self):
         u = "https://law.example.gov/act_(01-07-24).pdf"
         t = skill(f"| Rate | 7% | [act]({u}) |")
