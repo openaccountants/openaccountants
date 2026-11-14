@@ -27,6 +27,19 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_url_with_brackets_is_kept_whole(self):
+        u = "https://law.example.gov/act_(01-07-24).pdf"
+        t = skill(f"| Rate | 7% | [act]({u}) |")
+        _, misses, unreadable = rs.check_text(t, pages(**{u: "rate 7% " * 80}))
+        self.assertEqual((misses, unreadable), ([], []))
+
+    def test_zip_of_pdfs_is_read(self):
+        import io, zipfile
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as z:
+            z.writestr("doc.xml", "<a>rate 9%</a>")
+        self.assertIn("9%", rs.read_bytes(buf.getvalue()))
+
     def test_table_in_attribute_is_read(self):
         page = '<div data-table="{&quot;column_1&quot;:{&quot;text&quot;:&quot;Kauniainen 4,70&quot;}}"></div>' + "x" * 500
         self.assertIn("Kauniainen 4,70", rs.read_bytes(page.encode()))
