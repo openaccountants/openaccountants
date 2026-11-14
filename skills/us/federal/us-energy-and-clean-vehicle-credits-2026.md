@@ -1,10 +1,10 @@
 ---
 name: us-energy-and-clean-vehicle-credits-2026
 description: What the One Big Beautiful Bill Act (Public Law 119-21) ended for individual US taxpayers, and when, and what is still claimable on a 2026 Form 1040. Covers the new clean vehicle credit (section 30D) and the previously-owned clean vehicle credit (section 25E), both ended for vehicles acquired after 30 September 2025, with the IRS meaning of "acquired" (a written binding contract plus a payment); the energy efficient home improvement credit (section 25C), ended for property placed in service after 31 December 2025; the residential clean energy credit (section 25D), ended for expenditures made after 31 December 2025, with its carryforward of unused credit into 2026; and the alternative fuel vehicle refueling property credit (section 30C), ended for property placed in service after 30 June 2026. Business-side credits (45W, 45L, 179D, 45Y, 48E) are pointers only. Trigger on "EV credit 2026", "clean vehicle credit", "solar credit 2026", "Form 5695 2026", "Form 8936", "home charger credit", "Form 8911", "energy credit carryforward", "did the OBBBA end the energy credits". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -53,7 +53,7 @@ Out of scope, and where it goes:
 | New clean vehicle credit (30D): no credit for a vehicle acquired after | 30 September 2025 | [Public Law 119-21, section 70502](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Previously-owned clean vehicle credit (25E): no credit for a vehicle acquired after | 30 September 2025 | [Public Law 119-21, section 70501](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Meaning of "acquired" for 25E, 30D and 45W | written binding contract entered into and a payment made (a nominal down payment or a trade-in counts) | [IRS FS-2025-05, question 2](https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb) |
-| New clean vehicle credit, critical minerals part and battery components part | USD 3,750 each (USD 7,500 together) | [26 U.S.C. 30D(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartB-sec30D.htm) |
+| New clean vehicle credit, critical minerals part and battery components part | USD 3,750 each (USD 7,500 together, derived) | [26 U.S.C. 30D(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartB-sec30D.htm) |
 | New clean vehicle MSRP limit, vans, SUVs, pickups | USD 80,000 | [26 U.S.C. 30D(f)(11)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartB-sec30D.htm) |
 | New clean vehicle MSRP limit, other vehicles | USD 55,000 | [26 U.S.C. 30D(f)(11)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartB-sec30D.htm) |
 | New clean vehicle MAGI limit, joint or surviving spouse | USD 300,000 | [26 U.S.C. 30D(f)(10)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartB-sec30D.htm) |

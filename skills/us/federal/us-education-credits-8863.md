@@ -1,10 +1,10 @@
 ---
 name: us-education-credits-8863
 description: Compute the 2026 US American opportunity credit and lifetime learning credit on Form 8863, with the new valid Social Security number rule from Public Law 119-21 section 70606, the unindexed $80,000 to $90,000 ($160,000 to $180,000 joint) phase-out, the 40% refundable part and the under-24 rule, and how the credits meet tax-free scholarships, 529 plans, Coverdell ESAs, employer educational assistance and the student loan interest deduction. Trigger on "education credit", "AOTC", "American opportunity credit", "lifetime learning credit", "Form 8863", "1098-T", "tuition credit". Federal only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -54,15 +54,15 @@ The tuition and fees deduction (old section 222) was repealed for tax years begi
 | --- | --- | --- |
 | AOTC: share of the first USD 2,000 of adjusted expenses per student | 100% | [26 U.S.C. 25A(b)(1)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | AOTC: share of expenses above USD 2,000 up to USD 4,000 | 25% | [26 U.S.C. 25A(b)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
-| AOTC maximum per eligible student (result of the two rows above) | USD 2,500 | [26 U.S.C. 25A(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
-| AOTC: refundable share of the credit after the phase-out (none under the under-24 rule) | 40% | [26 U.S.C. 25A(i)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
+| AOTC maximum per eligible student (result of the two rows above) | USD 2,500 (derived: USD 2,000 plus 25% of the next USD 2,000) | [26 U.S.C. 25A(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
+| AOTC: refundable share of the credit after the phase-out (none under the under-24 rule) | 40% (in words on the page) | [26 U.S.C. 25A(i)(5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | AOTC: number of tax years per student | 4 | [26 U.S.C. 25A(b)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | LLC rate, per return | 20% | [26 U.S.C. 25A(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | LLC expense cap, per return, however many students | USD 10,000 | [26 U.S.C. 25A(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | Phase-out start, both credits, other than joint (not indexed) | MAGI over USD 80,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
-| Phase-out range, other than joint (no credit at USD 90,000 or more) | USD 10,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
+| Phase-out range, other than joint (no credit at USD 90,000 or more, derived: USD 80,000 plus USD 10,000) | USD 10,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | Phase-out start, joint return (not indexed) | MAGI over USD 160,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
-| Phase-out range, joint return (no credit at USD 180,000 or more) | USD 20,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
+| Phase-out range, joint return (no credit at USD 180,000 or more, derived: USD 160,000 plus USD 20,000) | USD 20,000 | [26 U.S.C. 25A(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25A.htm) |
 | Identification, tax years beginning after 31 December 2025 | valid SSN of the claimant, and of the student if not the taxpayer or spouse | [Public Law 119-21, section 70606](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Student loan interest deduction, maximum | USD 2,500 | [26 U.S.C. 221(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVII-sec221.htm) |
 | Student loan interest phase-out, other than joint | MAGI USD 85,000 to USD 100,000 | [Rev. Proc. 2025-32, section 4.29](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |

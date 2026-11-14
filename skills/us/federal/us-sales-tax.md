@@ -1,10 +1,10 @@
 ---
 name: us-sales-tax
 description: The US sales and use tax framework for tax year 2026, read before any state sales tax work. Covers how sales tax and use tax fit together, physical and economic nexus after Wayfair, marketplace facilitators, the five states with no general sales tax, the statewide base rate of each of the 45 sales tax states and DC (each linked to that state's own source), sourcing, exemption and resale certificates, taxability patterns for SaaS, food, clothing and digital goods, Streamlined Sales Tax registration and voluntary disclosure. Trigger on "sales tax", "use tax", "nexus", "Wayfair", "resale certificate", "exemption certificate", "sales tax rate", "marketplace facilitator", "Streamlined Sales Tax". Load the state's own sales tax skill for that state's base and filing, and us-sales-tax-nexus-50-state-matrix for thresholds.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -48,7 +48,7 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 
 | State | Statewide base rate, 2026 | Source |
 | --- | --- | --- |
-| Arizona (transaction privilege tax, retail) | 5.6% (5% plus the 0.6% increment) | [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm), [A.R.S. 42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) |
+| Arizona (transaction privilege tax, retail) | 5.6% (derived: 5% plus the 0.6% increment, both in words on the page) | [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm), [A.R.S. 42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) |
 | Arkansas | 6.5% | [Arkansas 2026 Tax Handbook, section 1.7](https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly%2F2027%2FSummary+Budget+Manuals%2F2026+Tax+Handbook.pdf) |
 | California | 7.25% | [CDTFA, rate description](https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm) |
 | Connecticut | 6.35% | [CT DRS, sales tax information](https://portal.ct.gov/drs/sales-tax/tax-information) |
@@ -67,7 +67,7 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 | Maryland | 6% (6 cents for each exact dollar) | [Md. Tax-General 11-104](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false) |
 | Massachusetts | 6.25% | [Mass. DOR, sales and use tax guide](https://www.mass.gov/guides/sales-and-use-tax) |
 | Michigan | 6% | [Michigan Treasury, sales and use tax](https://www.michigan.gov/taxes/business-taxes/sales-use-tax) |
-| Minnesota | 6.875% (6.5% plus the 0.375% constitutional tax) | [Minn. Stat. 297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
+| Minnesota | 6.875% (derived: 6.5% plus the 0.375% constitutional tax) | [Minn. Stat. 297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
 | Mississippi (general retail) | 7% | [Mississippi DOR, sales tax rates](https://www.dor.ms.gov/business/sales-use-tax/sales-tax-rates) |
 | Missouri | 4.225% | [Missouri DOR, sales and use tax](https://dor.mo.gov/taxation/business/tax-types/sales-use/) |
 | Nebraska | 5.5% | [Nebraska DOR, sales and use tax](https://revenue.nebraska.gov/businesses/sales-and-use-tax) |
@@ -81,12 +81,12 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 | Pennsylvania | 6% | [Pennsylvania DOR, sales, use and hotel occupancy tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax) |
 | Rhode Island | 7% | [RI Division of Taxation, sales and use tax](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax) |
 | South Carolina | 6% | [SCDOR, sales tax](https://dor.sc.gov/sales-use-tax-index/sales-tax) |
-| South Dakota | 4.2% | [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html) |
+| South Dakota | 4.2% (in words on the page) | [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html) |
 | Tennessee | 7% | [Tennessee DOR, sales and use tax](https://www.tn.gov/revenue/taxes/sales-and-use-tax.html) |
 | Texas | 6.25% | [Texas Comptroller, sales and use tax](https://comptroller.texas.gov/taxes/sales/) |
 | Vermont | 6% | [32 V.S.A. 9771](https://legislature.vermont.gov/statutes/section/32/233/09771) |
 | Virginia (combined state and statewide local rate, outside the regions with extra regional tax) | 5.3% | [Virginia Tax, retail sales and use tax](https://www.tax.virginia.gov/retail-sales-and-use-tax) |
-| Washington | 6.5% | [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020) |
+| Washington | 6.5% (in words on the page) | [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020) |
 | West Virginia | 6% | [West Virginia Tax Division, sales and use tax](https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx) |
 | Wisconsin | 5% | [Wisconsin DOR, tax rates FAQ](https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx) |
 | Wyoming | 4% | [Wyo. Stat. 39-15-104](https://wyoleg.gov/statutes/compress/title39.pdf) |

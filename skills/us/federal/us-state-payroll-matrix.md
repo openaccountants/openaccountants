@@ -1,10 +1,10 @@
 ---
 name: us-state-payroll-matrix
 description: State payroll for US employers in 2026, every state and DC on one page. Gives the method for a multi-state employer (which state's withholding, unemployment insurance and paid leave apply, under the FUTA localization test), and a row for every state with its 2026 unemployment insurance taxable wage base, new employer rate and any state paid leave or disability payroll deduction, each linked to that state's own agency (for example California SDI 1.3% with no wage limit, New York PFL 0.432%, Washington PFML 1.13% and WA Cares 0.58%, Massachusetts PFML 0.88%, Colorado FAMLI 0.88%, Rhode Island TDI 1.1%, wage bases from USD 7,000 to USD 78,200). Trigger on "state payroll", "SUI wage base", "SUTA rate", "new employer rate", "state disability insurance", "paid family leave deduction", "multi-state payroll". Federal payroll (941, 940, FUTA) is in us-form-941-940-payroll; withholding detail is in each state's payroll skill.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -89,7 +89,7 @@ In scope: state unemployment insurance (SUI) wage bases and new employer rates, 
 | Ohio | USD 9,000 | 2.85% (construction 5.85%) | None | [ODJFS contribution rates](https://jfs.ohio.gov/page/CAJM.hl56rs7cilxWeGzd) | `oh-payroll` |
 | Oklahoma | Not confirmed | Not confirmed | None | [OESC](https://oklahoma.gov/oesc.html) |  |
 | Oregon | USD 56,700 | Not confirmed | Paid Leave Oregon: not confirmed | [Oregon Employment Department, 2026 rates](https://www.oregon.gov/employ/businesses/pages/current-tax-rate.aspx) |  |
-| Pennsylvania | USD 10,000 (employer); employee 0.07% on all wages | 3.822% (construction 10.5924%) | None | [DLI UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) | `pa-payroll` |
+| Pennsylvania | USD 10,000 (employer); employee 0.07% on all wages | 3.822% (construction 10.5924%) (derived: the page prints .038220 and .105924) | None | [DLI UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) | `pa-payroll` |
 | Rhode Island | USD 30,800 | 1.00% UI plus 0.21% JDF (1.21%) | TDI 1.1% employee on the first USD 100,000 | [DLT 2026 quick reference](https://dlt.ri.gov/sites/g/files/xkgbur571/files/2025-12/FINAL%202026%20Quick%20Reference.pdf) | `ri-payroll` |
 | South Carolina | Not confirmed | Not confirmed | None | [SC Department of Employment and Workforce](https://dew.sc.gov/) |  |
 | South Dakota | Not confirmed | Not confirmed | None | [SD Department of Labor and Regulation](https://dlr.sd.gov/) |  |
@@ -98,7 +98,7 @@ In scope: state unemployment insurance (SUI) wage bases and new employer rates, 
 | Utah | USD 50,700 | Not confirmed | None | [Utah DWS, tax rates](https://jobs.utah.gov/UI/Employer/Public/Questions/TaxRates.aspx) |  |
 | Vermont | USD 15,400 | 1% (from 1 July 2026) | Not confirmed (child care contribution not re-read) | [Vermont Labor, UI reporting](https://labor.vermont.gov/unemployment-insurance/ui-employers/quarterly-reporting-taxable-wage-information); [UI rates](https://labor.vermont.gov/unemployment-insurance/ui-employers/unemployment-tax-rates) | `vt-payroll` |
 | Virginia | USD 8,000 | Not confirmed | None | [VEC FAQ](https://vec.virginia.gov/frequently-asked-questions) |  |
-| Washington | USD 78,200 (USD 82,000 for 2027) | 115% of the industry average, minimum 1% | PFML 1.13% to USD 184,500 (employee up to 71.43%); WA Cares 0.58% of all wages | [ESD wage base release](https://esd.wa.gov/); [Paid Leave employers](https://paidleave.wa.gov/employer-roles-responsibilities/); [WA Cares employers](https://wacaresfund.wa.gov/employers/) | `wa-payroll` |
+| Washington | USD 78,200 (USD 82,000 for 2027) | 115% of the industry average, minimum 1% | PFML 1.13% to USD 184,500 (employee up to 71.43%); WA Cares 0.58% of all wages | [ESD tax rates and wage base](https://esd.wa.gov/employer-requirements/unemployment-taxes/how-we-determine-tax-rates); [ESD 2027 wage base release](https://esd.wa.gov/about-us/news-release/2026/new-average-annual-wage-estimates-adjust-unemployment-insurance-and-paid-leave-benefits); [Paid Leave employers](https://paidleave.wa.gov/employer-roles-responsibilities/); [WA Cares employers](https://wacaresfund.wa.gov/employers/) | `wa-payroll` |
 | West Virginia | Not confirmed | Not confirmed | None | [WorkForce West Virginia](https://workforcewv.org/) |  |
 | Wisconsin | USD 14,000 | Not confirmed | None | [DWD 2026 UI tax rates](https://dwd.wisconsin.gov/ui/employers/prior/taxrates-2026.htm) |  |
 | Wyoming | Not confirmed | Not confirmed | None | [Wyoming DWS](https://dws.wyo.gov/) |  |

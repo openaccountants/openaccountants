@@ -1,10 +1,10 @@
 ---
 name: us-gilti-fdii-beat
 description: Work out the 2026 US federal tax on a US person's controlled foreign corporations and a large US corporation's foreign-facing income, under the rules Public Law 119-21 (the One Big Beautiful Bill Act) set for taxable years beginning after 31 December 2025. Covers the United States shareholder and CFC tests, the subpart F income categories with the de minimis, full-inclusion and earnings limits, net CFC tested income (formerly GILTI, now with no QBAI return), the high-tax exception and exclusion at greater than 18.9 percent, the section 250 deduction of 40 percent on net CFC tested income and 33.34 percent on foreign-derived deduction eligible income (formerly FDII), the 90 percent section 960(d) deemed-paid credit and the section 78 gross-up, the section 904(b)(5) expense rule, the section 962 election for individuals with the section 962(d) second layer, and the base erosion minimum tax at 10.5 percent. Trigger on "GILTI", "NCTI", "net CFC tested income", "subpart F", "section 962 election", "FDII", "FDDEI", "BEAT", "Form 8992", "Form 8993", "Form 8991", "CFC inclusion". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -57,7 +57,7 @@ Out of scope, and where it goes:
 | United States shareholder: owns this share of vote or value, or more | 10% | [26 U.S.C. 951(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec951.htm) |
 | CFC: United States shareholders own more than this share of vote or value | 50% | [26 U.S.C. 957(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec957.htm) |
 | Corporate tax rate (also the section 962 rate) | 21% | [26 U.S.C. 11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm) |
-| High-tax exception and exclusion: foreign effective rate must be greater than 90% of the section 11 rate | 18.9% | [26 U.S.C. 954(b)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
+| High-tax exception and exclusion: foreign effective rate must be greater than 90% of the section 11 rate | 18.9% (derived: 90% of 21%) | [26 U.S.C. 954(b)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
 | Subpart F de minimis: base company and insurance income less than the lesser of this share of gross income | 5% | [26 U.S.C. 954(b)(3)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
 | Subpart F de minimis: or this amount | USD 1,000,000 | [26 U.S.C. 954(b)(3)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
 | Subpart F full inclusion: base company and insurance income more than this share of gross income | 70% | [26 U.S.C. 954(b)(3)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
