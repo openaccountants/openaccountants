@@ -8,16 +8,18 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `costa-rica-income-tax.md`
-5. `costa-rica-iva.md`
-6. `costa-rica-payroll.md`
-7. `costa-rica-social-contributions.md`
-8. `costa-rica-tax-optimization.md`
-9. `payroll-workflow-base.md`
-10. `workflow-base.md`
-11. `income-tax-workflow-base.md`
-12. `vat-workflow-base.md`
-13. `social-contributions-workflow-base.md`
+4. `costa-rica-corporate-income-tax.md`
+5. `costa-rica-income-tax.md`
+6. `costa-rica-iva.md`
+7. `costa-rica-payroll.md`
+8. `costa-rica-social-contributions.md`
+9. `costa-rica-tax-optimization.md`
+10. `payroll-workflow-base.md`
+11. `workflow-base.md`
+12. `corporate-income-tax-workflow-base.md`
+13. `income-tax-workflow-base.md`
+14. `vat-workflow-base.md`
+15. `social-contributions-workflow-base.md`
 
 ## How to use
 
