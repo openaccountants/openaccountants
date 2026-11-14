@@ -3,14 +3,15 @@ name: cv-vat-gst
 description: "VAT (IVA) for Cape Verde (tax year 2026): 15% rate, 8% on electricity and water, Modelo 106, e-invoicing and goods removed from exemption in 2026. Built from the Boletim Oficial and DNRE pages."
 jurisdiction: CV
 tax_year: 2026
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Cape Verde VAT v0.2
+# Cape Verde VAT v0.3
 
 ## Who this applies to
 
@@ -97,12 +98,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 21/VI/2003, IVA Code and Regulation, BO I 21, 14 Jul 2003 (original text): arts 17, 26 to 30, 47 to 54 read | https://boe.incv.cv/Bulletins/Download/12387 | 2026-11-01 |
-| Lei 35/X/2023, Budget 2024: amendments to IRPC, REMPE and IVA read | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-01 |
-| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: all months read | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-01 |
-| DNRE, REMPE leaflet, 2015: all read | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-01 |
-| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 21/VI/2003, IVA Code and Regulation, BO I 21, 14 Jul 2003 (original text): arts 17, 26 to 30, 47 to 54 read | https://boe.incv.cv/Bulletins/Download/12387 | 2026-11-14 |
+| Lei 35/X/2023, Budget 2024: read for amendments to IRPC, REMPE and IVA | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-14 |
+| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: read for all months | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-14 |
+| DNRE, REMPE leaflet, 2015: read in full | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-14 |
+| DNRE, forms and leaflets page: read for the list of forms and leaflets | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-14 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. VAT registration threshold outside REMPE and the current art. 47 exemption; tourism at 8% (old skill); zero-rated exports and the imports listed in the old skill; current reverse charge wording on services from non-residents (art. 26 is the 2003 text); the Modelo 106 box numbers; refund procedure.
