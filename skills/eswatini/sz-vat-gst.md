@@ -5,14 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Eswatini VAT v0.2
+# Eswatini VAT v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -26,7 +27,6 @@ Businesses making taxable supplies in Eswatini, importers of goods, and recipien
 |---|---|---|---|
 | Standard rate | 15%, since 1 August 2018 | 2026 | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf |
 | Exports and Second Schedule supplies, such as prescribed brown bread and agricultural inputs (fertiliser, seed, pesticide) | 0% | 2026 | https://www.ers.org.sz/documents/EswatiniTax-VAT_Act_2011.pdf |
-| Compulsory registration threshold | unverified: ERS Registration page says E900,000; the ERS new business guide says E500,000. Get the Gazette notice under s 6(2) before relying on either | 2026 | https://www.ers.org.sz/Registration |
 | Registration test | One quarter of the annual threshold exceeded in any 3 months, or expected at the start of 3 months. Apply within 20 days of the end of the period (s 6) | 2026 | https://www.ers.org.sz/documents/EswatiniTax-VAT_Act_2011.pdf |
 | Cancellation | Last 3 months at or below one quarter of the threshold and last 12 months at or below 75% of it | 2026 | https://www.ers.org.sz/documents/EswatiniTax-VAT_Act_2011.pdf |
 | Private individual importing services | Reverse charge above E5,000 a month (reg 18) | 2026 | https://www.ers.org.sz/documents/EswatiniTax-VAT_Regulations.pdf |
@@ -99,13 +99,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Legal Notice 112 of 2018, VAT rate; cited sections read | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf | 2026-11-01 |
-| VAT Act 2011, ss 6, 16, 31, 32, 47, 49, Second Schedule; cited sections read | https://www.ers.org.sz/documents/EswatiniTax-VAT_Act_2011.pdf | 2026-11-01 |
-| VAT Regulations, regs 5, 6 and 18; cited sections read | https://www.ers.org.sz/documents/EswatiniTax-VAT_Regulations.pdf | 2026-11-01 |
-| Legal Notice 130 of 2025, VAT schedules (scanned, OCR); cited sections read | https://www.ers.org.sz/documents/THE_VALUE_ADDED_TAX_ACT_LEGAL_NOTICE_30_OF_2025.pdf | 2026-11-01 |
-| ERS, VAT Registration; whole page read | https://www.ers.org.sz/Registration | 2026-11-01 |
-| ERS, Reverse Charge Concept; whole page read | https://www.ers.org.sz/ReverseCharge | 2026-11-01 |
-| ERS, e-Invoicing; whole page read | https://www.ers.org.sz/e-invoicing | 2026-11-01 |
-| ERS, Step-by-Step Guide for New Businesses; whole page read | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-01 |
+| Legal Notice 112 of 2018, VAT rate (scan): read in full, both pages, for the 15% rate from 1 August 2018 | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf | 2026-11-14 |
+| VAT Act 2011, ss 6, 16, 31, 32, 47, 49, Second Schedule: read for the cited sections | https://www.ers.org.sz/documents/EswatiniTax-VAT_Act_2011.pdf | 2026-11-14 |
+| VAT Regulations, regs 5, 6 and 18: read for the cited sections | https://www.ers.org.sz/documents/EswatiniTax-VAT_Regulations.pdf | 2026-11-14 |
+| Legal Notice 130 of 2025, VAT schedules (scan): read in full, all 4 pages, for the First and Second Schedule amendments | https://www.ers.org.sz/documents/THE_VALUE_ADDED_TAX_ACT_LEGAL_NOTICE_30_OF_2025.pdf | 2026-11-14 |
+| ERS, VAT Registration: read in full | https://www.ers.org.sz/Registration | 2026-11-14 |
+| ERS, Reverse Charge Concept: read in full | https://www.ers.org.sz/ReverseCharge | 2026-11-14 |
+| ERS, e-Invoicing: read in full | https://www.ers.org.sz/e-invoicing | 2026-11-14 |
+| ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
 
-Not yet confirmed: The registration threshold (E900,000 or E500,000): Gazette notice not found. The return deadline conflict (20 days in the Act, 27 days in the guide). Commencement notice for the VAT (Amendment) Act 2022. VAT penalty rates. E-invoicing go-live date and regulations, whose pages load by script. Whether the ERS exempt and zero-rated pages reflect all changes.
+Not yet confirmed: The registration threshold (E900,000 or E500,000): Gazette notice not found. The return deadline conflict (20 days in the Act, 27 days in the guide). Commencement notice for the VAT (Amendment) Act 2022. VAT penalty rates. E-invoicing go-live date and regulations, whose pages load by script. Whether the ERS exempt and zero-rated pages reflect all changes; the compulsory registration threshold: the ERS Registration page (read 2026-11-14) says E900,000 and the ERS new business guide (read 2026-11-14) says E500,000; the Gazette notice under s 6(2) is needed before relying on either.
