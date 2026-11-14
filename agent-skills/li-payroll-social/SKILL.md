@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/li-payroll-social"
   jurisdiction: "LI"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Liechtenstein payroll and social contributions v0.3
+# Liechtenstein payroll and social contributions v0.4
 
 ## Who this applies to
 
@@ -22,12 +22,12 @@ The [AHV-IV-FAK bulletin effective 1 January 2026][contributions], sections 5–
 
 | Contribution | Employee | Employer | Tax year | Official source |
 |---|---:|---:|---|---|
-| AHV | 4.025% | 4.225% | 2026 | [AHV bulletin section 5][contributions] |
-| IV | 0.675% | 0.675% | 2026 | [AHV bulletin section 5][contributions] |
-| FAK | 0.200% | 1.900% | 2026 | [AHV bulletin section 5][contributions] |
-| Administration, VK | none | 0.585% | 2026 | [AHV bulletin section 5][contributions] |
-| Total above, excluding ALV | 4.900% | 7.385% | 2026 | [AHV bulletin section 5][contributions] |
-| ALV | 0.500% | 0.500% | 2026 | [AHV bulletin section 6][contributions] |
+| AHV | 4.025% | 4.225% | 2026 | [AHV bulletin section 5](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
+| IV | 0.675% | 0.675% | 2026 | [AHV bulletin section 5](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
+| FAK | 0.200% | 1.900% | 2026 | [AHV bulletin section 5](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
+| Administration, VK | none | 0.585% | 2026 | [AHV bulletin section 5](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
+| Total above, excluding ALV | 4.900% | 7.385% | 2026 | [AHV bulletin section 5](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
+| ALV | 0.500% | 0.500% | 2026 | [AHV bulletin section 6](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf) |
 
 ALV is capped at CHF 126,000 yearly **per employment**. For part-year employment, the bulletin uses CHF 350 per contribution day with its 30-day-month convention; do not use actual calendar days or an unadjusted annual cap. AHV/IV/FAK/VK and ALV do not necessarily share the same wage ceiling. The employer deducts employee contributions and remits both sides. [Bulletin, sections 5–6][contributions]
 
@@ -278,4 +278,4 @@ Find the current Guide and professional-review status at [OpenAccountants](https
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `li-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/li-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `li-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/li-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

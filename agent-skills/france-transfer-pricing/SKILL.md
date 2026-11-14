@@ -7,18 +7,46 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/france-transfer-pricing"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# France: transfer pricing (prix de transfert) v1.3
+# France: transfer pricing (prix de transfert) v2.0
 
 This skill covers the French transfer pricing duties of a company that deals with related entities abroad: the arm's length rule of article 57 of the Code général des impôts (CGI), the documentation file under article L. 13 AA of the Livre des procédures fiscales (LPF), the yearly declaration on form 2257-SD, the country-by-country report on form 2258-SD, the fines for each, the information request of article L. 13 B LPF, and advance pricing agreements. Figures are for tax year 2026. Transfer pricing figures attach to the accounting year (exercice), not to an income year, and the EUR 150 million documentation threshold and the documented-method presumption apply to accounting years opened on or after 1 January 2024. The raised EUR 50,000 minimum documentation fine is a separate amendment: BOFiP states it from 1 January 2024; article 116 III’s opened-year clause applies to I-1 and II, while the fine amendment is I-2. Do not decide the penalty for an earlier audited year solely from the year-opening test; establish the actual failure and applicable penalty law. The calculation change described here is on intra-group interest (Section 8) and it applies to accounting years closed on or after 31 December 2025, so to the 2025 calendar-year accounts as well. Every figure below was read on an official page between 19 September and 19 October 2026; each page's own date is given where it matters.
+
+## Scope
+
+In scope: a company or permanent establishment taxed in France that deals with related parties abroad, for its accounting years in 2026: the arm's length rule, the documentation file and its thresholds, form 2257-SD, the country-by-country report (form 2258-SD), the fines, and advance pricing agreements.
+
+- Out of scope here: the corporation tax computation itself (`fr-corporate-tax`), Pillar Two top-up tax filings beyond the scope test shown, customs valuation, and a mutual agreement procedure already under way: refer that to an avocat fiscaliste.
+
+## Ask the client first
+
+- What were the French entity's turnover excluding VAT and gross balance sheet assets for each accounting year in question, and when did each year open? (Decides the documentation threshold and which version applies.)
+- Who holds the French entity, and what does it hold, at each year end: does any entity above or below it, or in its French tax group, meet the turnover or assets test? (The holding tests bring small entities into scope.)
+- Which transactions with related entities abroad, by type, and for what amounts, including dealings with foreign branches? Are any counterparties in a non-cooperative state? (Decides the 2257-SD exemption, the local file content and the L. 13 AB file.)
+- What was the group's consolidated turnover in the previous year, who is the ultimate parent, and has another entity been designated to file the country-by-country report? (Decides form 2258-SD.)
+- Is an audit under way, has a formal notice or an L. 13 B request been received, and on what date? (Starts the thirty-day or two-month clock.)
+- Does the method applied in the books match the method in the documentation for each year opened on or after 1 January 2024? (A gap is deemed a transfer of profits.)
+
+## The method, step by step
+
+1. **Map the related parties.** List every entity abroad linked to the French company under article 39, 12 CGI (majority of capital, de facto control, or common control), and every foreign branch. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
+2. **Test the documentation file (article L. 13 AA LPF).** Apply the four alternative tests in Section 2.1 for each accounting year, using turnover excluding VAT and gross balance sheet assets, and the year-end holdings. Use the threshold that matches the year (opened on or after 1 January 2024, or earlier). Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
+3. **Test form 2257-SD (article 223 quinquies B CGI).** Apply the tests in Section 2.4, then the exemptions (no foreign related-party transactions, or all below the per-type amount, measured per company). Source: https://bofip.impots.gouv.fr/bofip/11462-PGP.html
+4. **Test the country-by-country report (article 223 quinquies C CGI).** Check the group's consolidated turnover for the year before, whether a parent or surrogate already files, and whether the French entity has been designated. Tick the boxes on form 2065-SD. Source: https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf and https://www.impots.gouv.fr/la-declaration-pays-par-pays
+5. **Price each controlled transaction at arm's length (article 57 CGI).** Choose and apply a method from the list in Section 3.2 consistently, and keep the evidence for each transaction. For years opened on or after 1 January 2024, make sure the method actually applied is the one documented (Section 3.4). Source: https://bofip.impots.gouv.fr/bofip/9389-PGP.html and https://bofip.impots.gouv.fr/bofip/11463-PGP.html
+6. **Check intra-group interest.** Apply the article 212, I-a rate limit, then the article 212 bis cap (Section 8.1). Source: https://bofip.impots.gouv.fr/bofip/8420-PGP.html
+7. **Build or update the file.** Master file in its five categories and local file for each category above the amount in Section 2.1, in French, in a readable electronic format, reviewed every year, ready on the first day of any audit. Add the L. 13 AB file for any ETNC counterparty. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
+8. **File the yearly forms.** Form 2257-SD within six months after the results return deadline; form 2258-SD within twelve months after the group's year end. Source: https://bofip.impots.gouv.fr/bofip/11462-PGP.html and https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf
+9. **In an audit.** Produce the file at the start; answer a formal notice within thirty days or ask in writing for an extension; answer any valid L. 13 B request within its period, and distinguish no initial reply from the reasoned thirty-day completeness-notice branch in Section 6.3. Measure exposure with the tables in Section 6. Source: https://bofip.impots.gouv.fr/bofip/10389-PGP.html and https://bofip.impots.gouv.fr/bofip/4332-PGP.html
+10. **Consider certainty.** For a stable, material flow with a treaty partner, weigh a bilateral advance pricing agreement, applied for at least six months before the first year covered (Section 7). Source: https://bofip.impots.gouv.fr/bofip/1053-PGP.html
 
 ## Section 1: Quick reference
 
 **Quick reference fields**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | France (République française) |
 | Tax authority | Direction générale des Finances publiques (DGFiP) |
@@ -54,9 +82,9 @@ The tests are applied by the administration for each accounting year named in th
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11463-PGP.html |
-| Turnover or gross assets threshold, accounting years opened on or after 1 January 2024 | EUR 150 million | "est supérieur ou égal à 150 millions d’euros" (BOI-BIC-BASE-80-10-40, version in force from 10/12/2025) |
-| Previous threshold, earlier accounting years | EUR 400 million | "a abaissé de 400 millions d’euros à 150 millions d’euros ce seuil pour les exercices ouverts à compter du 1 er janvier 2024" |
-| Local file: controlled transactions described | aggregated by category, more than EUR 100,000 for the year | "dont le montant, agrégé par catégorie, excède 100 000 € au titre de l’exercice" |
+| Turnover or gross assets threshold, accounting years opened on or after 1 January 2024 | EUR 150 million | "est supérieur ou égal à 150 millions d’euros" (BOI-BIC-BASE-80-10-40, version in force from 10/12/2025) https://bofip.impots.gouv.fr/bofip/11463-PGP.html |
+| Previous threshold, earlier accounting years | EUR 400 million | "a abaissé de 400 millions d’euros à 150 millions d’euros ce seuil pour les exercices ouverts à compter du 1 er janvier 2024" https://bofip.impots.gouv.fr/bofip/11463-PGP.html |
+| Local file: controlled transactions described | aggregated by category, more than EUR 100,000 for the year | "dont le montant, agrégé par catégorie, excède 100 000 € au titre de l’exercice" https://bofip.impots.gouv.fr/bofip/11463-PGP.html |
 
 The value EUR 150 million is the pack value `fr.transfer-pricing.documentation.threshold`.
 
@@ -79,9 +107,9 @@ A company in scope need not file where it has no transactions at all with relate
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11462-PGP.html |
-| Turnover or gross assets threshold | EUR 50 million | "est supérieur ou égal à 50 millions d'euros" (BOI-BIC-BASE-80-10-30, version in force from 18/07/2018) |
-| Exemption: transactions with related foreign entities below, per type of transaction | EUR 100,000 | "dont le montant est inférieur à 100 000 € par nature de transaction" |
-| Amounts listed on the form, per type of flow | aggregated amount above EUR 100,000 | "le montant agrégé des produits, charges, acquisitions et cessions d'actifs supérieurs à 100 000 €, par nature de flux" |
+| Turnover or gross assets threshold | EUR 50 million | "est supérieur ou égal à 50 millions d'euros" (BOI-BIC-BASE-80-10-30, version in force from 18/07/2018) https://bofip.impots.gouv.fr/bofip/11462-PGP.html |
+| Exemption: transactions with related foreign entities below, per type of transaction | EUR 100,000 | "dont le montant est inférieur à 100 000 € par nature de transaction" https://bofip.impots.gouv.fr/bofip/11462-PGP.html |
+| Amounts listed on the form, per type of flow | aggregated amount above EUR 100,000 | "le montant agrégé des produits, charges, acquisitions et cessions d'actifs supérieurs à 100 000 €, par nature de flux" https://bofip.impots.gouv.fr/bofip/11462-PGP.html |
 
 The values EUR 50 million and EUR 100,000 (exemption) are the pack values `fr.transfer-pricing.declaration-2257.threshold` and `fr.transfer-pricing.declaration-2257.de-minimis`. The form threshold is lower than the documentation threshold in 2.1: a company can owe form 2257-SD without owing the full documentation file.
 
@@ -94,13 +122,13 @@ The report is due, for accounting years opened from 1 January 2016, from (a) gro
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf |
-| Consolidated turnover excluding VAT, previous accounting year | at least EUR 750 million | "un chiffre d'affaires annuel hors taxes consolidé supérieur ou égal à 750 millions d'euros" (form 2258-SD, 2025 edition) |
-| Fine for not filing | up to EUR 100,000 | "une amende qui ne peut excéder 100 000 euros (article 1729 F du CGI)" |
+| Consolidated turnover excluding VAT, previous accounting year | at least EUR 750 million | "un chiffre d'affaires annuel hors taxes consolidé supérieur ou égal à 750 millions d'euros" (form 2258-SD, 2025 edition) https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf |
+| Fine for not filing | up to EUR 100,000 | "une amende qui ne peut excéder 100 000 euros (article 1729 F du CGI)" https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf |
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/la-declaration-pays-par-pays |
-| Same threshold as printed on the administration's explanatory page | more than EUR 750 million | "un chiffre d'affaires annuel hors taxes consolidé supérieur à 750 millions d'euros" (page modified 24/05/2022) |
+| Same threshold as printed on the administration's explanatory page | more than EUR 750 million | "un chiffre d'affaires annuel hors taxes consolidé supérieur à 750 millions d'euros" (page modified 24/05/2022) https://www.impots.gouv.fr/la-declaration-pays-par-pays |
 
 The two official pages differ at the threshold: the 2025 form says “supérieur ou égal”, while the explanatory page last modified in 2022 says “supérieur”. Current CGI art. 223 quinquies C I-1(c) expressly says at least EUR 750 million, agreeing with the form; exactly EUR 750 million therefore meets the turnover limb, subject to every other condition. For a French entity under a foreign parent, I-2 specifically requires the controlling parent to be in a state or territory outside the current II list and to be a parent that would otherwise owe the report if established in France; then apply the designation/no-other-designated-entity test. Check that current exchange/list status rather than infer it merely from the parent’s foreign address. Filing: electronically, within twelve months after the close of the group's accounting year, as stated on the 2025 form (https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf). The information is passed to the partner states where the group has at least one entity.
 
@@ -163,85 +191,15 @@ The corporation tax return itself and its date are in `fr-business-accounting` a
 
 ## Section 6: Penalties
 
-### 6.1 Documentation not produced after a formal notice (article 1735 ter CGI)
-
-Where the company does not produce the file, or produces only part of it, within thirty days of receiving the formal notice (or within the extended period), the fine CAN REACH the higher of the two amounts in the table below; the rate actually applied depends on how serious the failure is (completeness, accuracy, effect on the administration's ability to judge the policy). The maximum is applied in particular where there is no documentation at all, where gaps are serious or the content is misleading, or where the breach repeats over successive audits. Whatever the result, the fine cannot be lower than the minimum below. It is charged for each accounting year covered by the audit. It can apply even where no reassessment is made. It does NOT apply where the only dispute is the transfer pricing policy or method itself. Dividends are not a transaction for the base, except in abuse of law. The fine is not a "serious penalty" under the EU Arbitration Convention, so it does not shut out mutual agreement or arbitration procedures, and it is recalculated on the adjustments confirmed by those procedures. The decision to apply it needs the sign-off of an officer of at least inspecteur divisionnaire rank.
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
-| Share of the transactions left undocumented after the notice | 0.5% | "0,5 % du montant des transactions concernées par les documents ou compléments qui n’ont pas été mis à disposition" |
-| Share of the article 57 adjustments on those transactions | 5% | "5 % des rectifications du résultat fondées sur l’ article 57 du CGI" |
-| Minimum fine, from 1 January 2024 | EUR 50,000 | "Le montant de l’amende ne peut être inférieur à 50 000 €." |
-| Minimum fine before 1 January 2024 | EUR 10,000 | "le montant minimal de cette amende de 10 000 € à 50 000 €" |
-
-The share 0.5% is the pack value `fr.transfer-pricing.penalty.share-of-transactions`.
-
-**Worked examples printed by BOFiP (hypothetical amounts, BOI-CF-INF-20-10-40 § 100)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
-| Example 2: brand royalty not booked and not documented, arm's length value and adjustment | EUR 2,000,000 | "0,5 % x 2 000 000 € = 10 000 €" |
-| Example 2: fine on the transactions test | EUR 10,000 | "0,5 % x 2 000 000 € = 10 000 €" |
-| Example 2: fine on the adjustments test, the higher, so the maximum | EUR 100,000 | "5 % x 2 000 000 € = 100 000 €" |
-| Example 4: service charge booked | EUR 1,000,000 | "1 000 000 € - 600 000 €) = 2 000 €" |
-| Example 4: adjustment | EUR 600,000 | "5 % x 600 000 € = 30 000 €" |
-| Example 4: fine on the transactions test | EUR 2,000 | "1 000 000 € - 600 000 €) = 2 000 €" |
-| Example 4: fine on the adjustments test | EUR 30,000 | "5 % x 600 000 € = 30 000 €" |
-| Example 4: fine actually due, because the minimum applies | EUR 50,000 | "celle-ci ne saurait être inférieure à 50 000 €" |
-
-In example 4 the higher of the two tests is below the minimum in the table above, so the minimum is charged.
-
-The blocks below recompute these two existing BOFiP illustrations. Eligibility for the documentation duty, a valid unanswered notice, the specific undocumented transactions and the adjustment are declared facts. Example 2 reports a maximum exposure, not an automatic 5% charge in every case. The amount actually imposed depends on the breach’s severity and is subject to the statutory floor.
-
-```oa-check
-name: Existing BOFiP TP example 2, unbooked royalty
-inputs:
-  undocumented_royalty: 2000000
-  adjustment: 2000000
-  transaction_rate: 0.005
-  adjustment_rate: 0.05
-  floor: 50000
-steps:
-  - transaction_test: undocumented_royalty * transaction_rate
-  - adjustment_test: adjustment * adjustment_rate
-  - maximum_exposure: max(floor, transaction_test, adjustment_test)
-expected:
-  transaction_test: 10000
-  adjustment_test: 100000
-  maximum_exposure: 100000
-```
-
-```oa-check
-name: Existing BOFiP TP example 4, reduced service price and floor
-inputs:
-  booked_charge: 1000000
-  adjustment: 600000
-  transaction_rate: 0.005
-  adjustment_rate: 0.05
-  floor: 50000
-steps:
-  - corrected_transaction: booked_charge - adjustment
-  - transaction_test: corrected_transaction * transaction_rate
-  - adjustment_test: adjustment * adjustment_rate
-  - fine_at_floor: max(floor, transaction_test, adjustment_test)
-expected:
-  corrected_transaction: 400000
-  transaction_test: 2000
-  adjustment_test: 30000
-  fine_at_floor: 50000
-```
-
 ### 6.2 Form 2257-SD late, missing or wrong (article 1729 B CGI)
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
-| Form not filed within the time limit | EUR 150 | "entraîne l’application d’une amende de 150 €" |
-| Each omission or inaccuracy, save force majeure | EUR 15 | "une amende de 15 € par omission ou inexactitude" |
-| Total of the omission fines, floor | EUR 60 | "ne puisse être inférieur à 60 €" |
-| Total of the omission fines, cap | EUR 10,000 | "ni supérieur à 10 000 €" |
+| Form not filed within the time limit | EUR 150 | "entraîne l’application d’une amende de 150 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Each omission or inaccuracy, save force majeure | EUR 15 | "une amende de 15 € par omission ou inexactitude" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Total of the omission fines, floor | EUR 60 | "ne puisse être inférieur à 60 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Total of the omission fines, cap | EUR 10,000 | "ni supérieur à 10 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
 
 These four values are the pack values `fr.transfer-pricing.2257.late-filing-fine`, `fr.transfer-pricing.2257.omission-fine`, `fr.transfer-pricing.2257.omission-fine.floor` and `fr.transfer-pricing.2257.omission-fine.cap`. None of these fines applies to a first breach in the current calendar year and the three previous years, where the company has put it right either of its own accord or within thirty days of a request from the administration (§ 160, https://bofip.impots.gouv.fr/bofip/10389-PGP.html)
 
@@ -252,7 +210,7 @@ A request under article L. 13 B can be made only during an audit (vérification 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/4332-PGP.html |
-| Fixed fine per accounting year covered by the request | EUR 10,000 | "une amende fiscale fixe de 10 000 € pour chaque exercice visé par la demande initiale" (BOI-CF-IOR-60-50, version in force from 10/12/2025) |
+| Fixed fine per accounting year covered by the request | EUR 10,000 | "une amende fiscale fixe de 10 000 € pour chaque exercice visé par la demande initiale" (BOI-CF-IOR-60-50, version in force from 10/12/2025) https://bofip.impots.gouv.fr/bofip/4332-PGP.html |
 
 ### 6.4 Surcharges on the tax from a transfer pricing reassessment (article 1729 CGI)
 
@@ -261,15 +219,15 @@ A transfer pricing reassessment under article 57 bears the general surcharges on
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
-| Deliberate breach (manquement délibéré) | 40% | "la majoration de 40 % pour manquement délibéré prévue par l’article 1729 du CGI" |
-| Abuse of law where principal initiative or principal benefit is established; fraudulent manoeuvres; concealed contractual price | 80%; abuse reduced to 40% otherwise | "80 % sur les droits résultant des rappels (1729)" |
+| Deliberate breach (manquement délibéré) | 40% | "la majoration de 40 % pour manquement délibéré prévue par l’article 1729 du CGI" https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
+| Abuse of law where principal initiative or principal benefit is established; fraudulent manoeuvres; concealed contractual price | 80%; abuse reduced to 40% otherwise | "80 % sur les droits résultant des rappels (1729)" https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
 
 Both are pack values (`fr.penalty.deliberate-breach`, `fr.penalty.fraud`). The surcharge regime and late-payment interest in full are in `fr-tax-audit`.
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/1458-PGP.html |
-| Late-payment interest (intérêt de retard, article 1727 CGI), per month | 0.2% | "taux de l'intérêt de retard de 0,2 % par mois" |
+| Late-payment interest (intérêt de retard, article 1727 CGI), per month | 0.2% | "taux de l'intérêt de retard de 0,2 % par mois" https://bofip.impots.gouv.fr/bofip/1458-PGP.html |
 
 The rate is the pack value `fr.penalty.late-interest.monthly`.
 
@@ -321,7 +279,7 @@ The limits apply in this order: first the interest-rate limits (article 212, I-a
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11787-PGP.html |
-| Second cap: share of tax EBITDA | 30% | "30 % de son résultat fiscal avant impôts, intérêts, dépréciations et amortissements" (BOI-IS-BASE-35-40-10-20, version of 13/05/2020) |
+| Second cap: share of tax EBITDA | 30% | "30 % de son résultat fiscal avant impôts, intérêts, dépréciations et amortissements" (BOI-IS-BASE-35-40-10-20, version of 13/05/2020) https://bofip.impots.gouv.fr/bofip/11787-PGP.html |
 
 The under-capitalisation rules and the group safeguard clause are outside this skill: see "When to refuse or refer".
 
@@ -341,7 +299,7 @@ The under-capitalisation rules and the group safeguard clause are outside this s
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf |
-| Pillar Two scope: consolidated turnover in at least two of the four previous accounting years | EUR 750 million | "atteint ou dépasse 750 millions d’euros sur au moins deux des quatre exercices précédant l’exercice concerné" |
+| Pillar Two scope: consolidated turnover in at least two of the four previous accounting years | EUR 750 million | "atteint ou dépasse 750 millions d’euros sur au moins deux des quatre exercices précédant l’exercice concerné" https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf |
 
 The Pillar Two test is not the country-by-country test in Section 2.5: it looks at two of the four previous years, not the single previous year. The Pillar Two return is due within fifteen months of the year end, or eighteen months for the first year in scope (same guide).
 
@@ -357,27 +315,77 @@ The Pillar Two test is not the country-by-country test in Section 2.5: it looks 
 | `fr-tax-audit` | Audit procedure, surcharges, late-payment interest and taxpayer rights during a transfer pricing audit |
 | `france-vat-return` | VAT on intra-group invoices; a transfer pricing adjustment may also raise VAT or customs valuation questions, which this skill does not answer |
 
-## The method, step by step
+## Worked cases
 
-1. **Map the related parties.** List every entity abroad linked to the French company under article 39, 12 CGI (majority of capital, de facto control, or common control), and every foreign branch. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
-2. **Test the documentation file (article L. 13 AA LPF).** Apply the four alternative tests in Section 2.1 for each accounting year, using turnover excluding VAT and gross balance sheet assets, and the year-end holdings. Use the threshold that matches the year (opened on or after 1 January 2024, or earlier). Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
-3. **Test form 2257-SD (article 223 quinquies B CGI).** Apply the tests in Section 2.4, then the exemptions (no foreign related-party transactions, or all below the per-type amount, measured per company). Source: https://bofip.impots.gouv.fr/bofip/11462-PGP.html
-4. **Test the country-by-country report (article 223 quinquies C CGI).** Check the group's consolidated turnover for the year before, whether a parent or surrogate already files, and whether the French entity has been designated. Tick the boxes on form 2065-SD. Source: https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf and https://www.impots.gouv.fr/la-declaration-pays-par-pays
-5. **Price each controlled transaction at arm's length (article 57 CGI).** Choose and apply a method from the list in Section 3.2 consistently, and keep the evidence for each transaction. For years opened on or after 1 January 2024, make sure the method actually applied is the one documented (Section 3.4). Source: https://bofip.impots.gouv.fr/bofip/9389-PGP.html and https://bofip.impots.gouv.fr/bofip/11463-PGP.html
-6. **Check intra-group interest.** Apply the article 212, I-a rate limit, then the article 212 bis cap (Section 8.1). Source: https://bofip.impots.gouv.fr/bofip/8420-PGP.html
-7. **Build or update the file.** Master file in its five categories and local file for each category above the amount in Section 2.1, in French, in a readable electronic format, reviewed every year, ready on the first day of any audit. Add the L. 13 AB file for any ETNC counterparty. Source: https://bofip.impots.gouv.fr/bofip/11463-PGP.html
-8. **File the yearly forms.** Form 2257-SD within six months after the results return deadline; form 2258-SD within twelve months after the group's year end. Source: https://bofip.impots.gouv.fr/bofip/11462-PGP.html and https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf
-9. **In an audit.** Produce the file at the start; answer a formal notice within thirty days or ask in writing for an extension; answer any valid L. 13 B request within its period, and distinguish no initial reply from the reasoned thirty-day completeness-notice branch in Section 6.3. Measure exposure with the tables in Section 6. Source: https://bofip.impots.gouv.fr/bofip/10389-PGP.html and https://bofip.impots.gouv.fr/bofip/4332-PGP.html
-10. **Consider certainty.** For a stable, material flow with a treaty partner, weigh a bilateral advance pricing agreement, applied for at least six months before the first year covered (Section 7). Source: https://bofip.impots.gouv.fr/bofip/1053-PGP.html
+### 6.1 Documentation not produced after a formal notice (article 1735 ter CGI)
 
-## Ask the client first
+Where the company does not produce the file, or produces only part of it, within thirty days of receiving the formal notice (or within the extended period), the fine CAN REACH the higher of the two amounts in the table below; the rate actually applied depends on how serious the failure is (completeness, accuracy, effect on the administration's ability to judge the policy). The maximum is applied in particular where there is no documentation at all, where gaps are serious or the content is misleading, or where the breach repeats over successive audits. Whatever the result, the fine cannot be lower than the minimum below. It is charged for each accounting year covered by the audit. It can apply even where no reassessment is made. It does NOT apply where the only dispute is the transfer pricing policy or method itself. Dividends are not a transaction for the base, except in abuse of law. The fine is not a "serious penalty" under the EU Arbitration Convention, so it does not shut out mutual agreement or arbitration procedures, and it is recalculated on the adjustments confirmed by those procedures. The decision to apply it needs the sign-off of an officer of at least inspecteur divisionnaire rank.
 
-- What were the French entity's turnover excluding VAT and gross balance sheet assets for each accounting year in question, and when did each year open? (Decides the documentation threshold and which version applies.)
-- Who holds the French entity, and what does it hold, at each year end: does any entity above or below it, or in its French tax group, meet the turnover or assets test? (The holding tests bring small entities into scope.)
-- Which transactions with related entities abroad, by type, and for what amounts, including dealings with foreign branches? Are any counterparties in a non-cooperative state? (Decides the 2257-SD exemption, the local file content and the L. 13 AB file.)
-- What was the group's consolidated turnover in the previous year, who is the ultimate parent, and has another entity been designated to file the country-by-country report? (Decides form 2258-SD.)
-- Is an audit under way, has a formal notice or an L. 13 B request been received, and on what date? (Starts the thirty-day or two-month clock.)
-- Does the method applied in the books match the method in the documentation for each year opened on or after 1 January 2024? (A gap is deemed a transfer of profits.)
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Share of the transactions left undocumented after the notice | 0.5% | "0,5 % du montant des transactions concernées par les documents ou compléments qui n’ont pas été mis à disposition" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Share of the article 57 adjustments on those transactions | 5% | "5 % des rectifications du résultat fondées sur l’ article 57 du CGI" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Minimum fine, from 1 January 2024 | EUR 50,000 | "Le montant de l’amende ne peut être inférieur à 50 000 €." https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Minimum fine before 1 January 2024 | EUR 10,000 | "le montant minimal de cette amende de 10 000 € à 50 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+
+The share 0.5% is the pack value `fr.transfer-pricing.penalty.share-of-transactions`.
+
+**Worked examples printed by BOFiP (hypothetical amounts, BOI-CF-INF-20-10-40 § 100)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 2: brand royalty not booked and not documented, arm's length value and adjustment | EUR 2,000,000 | "0,5 % x 2 000 000 € = 10 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 2: fine on the transactions test | EUR 10,000 | "0,5 % x 2 000 000 € = 10 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 2: fine on the adjustments test, the higher, so the maximum | EUR 100,000 | "5 % x 2 000 000 € = 100 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 4: service charge booked | EUR 1,000,000 | "1 000 000 € - 600 000 €) = 2 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 4: adjustment | EUR 600,000 | "5 % x 600 000 € = 30 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 4: fine on the transactions test | EUR 2,000 | "1 000 000 € - 600 000 €) = 2 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 4: fine on the adjustments test | EUR 30,000 | "5 % x 600 000 € = 30 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+| Example 4: fine actually due, because the minimum applies | EUR 50,000 | "celle-ci ne saurait être inférieure à 50 000 €" https://bofip.impots.gouv.fr/bofip/10389-PGP.html |
+
+In example 4 the higher of the two tests is below the minimum in the table above, so the minimum is charged.
+
+The blocks below recompute these two existing BOFiP illustrations. Eligibility for the documentation duty, a valid unanswered notice, the specific undocumented transactions and the adjustment are declared facts. Example 2 reports a maximum exposure, not an automatic 5% charge in every case. The amount actually imposed depends on the breach’s severity and is subject to the statutory floor.
+
+```oa-check
+name: Existing BOFiP TP example 2, unbooked royalty
+inputs:
+  undocumented_royalty: 2000000
+  adjustment: 2000000
+  transaction_rate: 0.005
+  adjustment_rate: 0.05
+  floor: 50000
+steps:
+  - transaction_test: undocumented_royalty * transaction_rate
+  - adjustment_test: adjustment * adjustment_rate
+  - maximum_exposure: max(floor, transaction_test, adjustment_test)
+expected:
+  transaction_test: 10000
+  adjustment_test: 100000
+  maximum_exposure: 100000
+```
+
+```oa-check
+name: Existing BOFiP TP example 4, reduced service price and floor
+inputs:
+  booked_charge: 1000000
+  adjustment: 600000
+  transaction_rate: 0.005
+  adjustment_rate: 0.05
+  floor: 50000
+steps:
+  - corrected_transaction: booked_charge - adjustment
+  - transaction_test: corrected_transaction * transaction_rate
+  - adjustment_test: adjustment * adjustment_rate
+  - fine_at_floor: max(floor, transaction_test, adjustment_test)
+expected:
+  corrected_transaction: 400000
+  transaction_test: 2000
+  adjustment_test: 30000
+  fine_at_floor: 50000
+```
 
 ## When to refuse or refer
 
@@ -391,26 +399,31 @@ The Pillar Two test is not the country-by-country test in Section 2.5: it looks 
 
 ## Sources
 
-- BOI-BIC-BASE-80-10-40, documentation obligation (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/11463-PGP.html Selected cited scope read 2026-10-29.
-- BOI-BIC-BASE-80-10-30, form 2257-SD declaration (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/11462-PGP.html Selected cited scope read 2026-10-29.
-- BOI-CF-INF-20-10-40, fines for the documentation and the declaration (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/10389-PGP.html Selected cited scope read 2026-10-29.
-- BOI-BIC-BASE-80-10-20, audit policy (version in force from 18/07/2018): https://bofip.impots.gouv.fr/bofip/9389-PGP.html Selected cited scope read 2026-10-29.
-- BOI-CF-IOR-60-50, article L. 13 B request (version in force from 10/12/2025): https://bofip.impots.gouv.fr/bofip/4332-PGP.html (selected prior-information/response/completeness scopes reread31October2026; local-file derivative-flow scope in BOI-BIC-BASE-80-10-40 also reread then; earlier dates preserved) Selected cited scope read 2026-10-29.
-- BOI-SJ-RES-20-10, bilateral advance pricing agreement (version in force from 15/04/2026): https://bofip.impots.gouv.fr/bofip/1053-PGP.html Selected cited scope read 2026-10-29.
-- BOI-IS-BASE-35-10, order of the interest limits (version in force from 15/07/2026): https://bofip.impots.gouv.fr/bofip/8420-PGP.html Selected cited scope read 2026-10-29.
-- BOI-IS-BASE-35-40-10-20, cap on net financial charges (version of 13/05/2020): https://bofip.impots.gouv.fr/bofip/11787-PGP.html Selected cited scope read 2026-10-29.
-- Surcharges, article 1729 CGI: https://bofip.impots.gouv.fr/bofip/4911-PGP.html Selected cited scope read 2026-10-29.
-- Late-payment interest, article 1727 CGI: https://bofip.impots.gouv.fr/bofip/1458-PGP.html Selected cited scope read 2026-10-29.
-- Form 2258-SD, 2025 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf Selected cited scope read 2026-10-29.
-- La déclaration pays par pays (modified 24/05/2022): https://www.impots.gouv.fr/la-declaration-pays-par-pays Selected cited scope read 2026-10-29.
-- Form 2257-SD, 2017 edition: https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf Selected cited scope read 2026-10-29.
-- Securing a transfer pricing policy (modified 04/07/2022): https://www.impots.gouv.fr/professionnel/questions/ma-societe-situee-en-france-fait-partie-dun-groupe-international-comment Selected cited scope read 2026-10-29.
-- Form 2259-SD user guide, Pillar Two (November 2025): https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf Selected cited scope read 2026-10-29.
-- Current CGI223quinquiesB/C, selected filing and exact-threshold clauses: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162534/ Selected cited scope read 2026-10-29.
-- Original FinanceLaw2024article116, separate threshold/presumption and fine commencements: https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000048727469 Selected cited scope read 2026-10-29.
-- Current CGI1729 abuse-of-law reduced-rate conditions: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| BOI-BIC-BASE-80-10-40, documentation obligation (version in force from 10/12/2025): read for Local file: controlled transactions described; Turnover or gross assets threshold, accounting years opened on or after 1 Januar; Previous threshold, earlier accounting years | https://bofip.impots.gouv.fr/bofip/11463-PGP.html | 2026-11-14 |
+| BOI-BIC-BASE-80-10-30, form 2257-SD declaration (version in force from 18/07/2018): read for Exemption: transactions with related foreign entities below, per type of transac; Amounts listed on the form, per type of flow | https://bofip.impots.gouv.fr/bofip/11462-PGP.html | 2026-11-14 |
+| BOI-CF-INF-20-10-40, fines for the documentation and the declaration (version in force from 10/12/2025): read for Share of the transactions left undocumented after the notice; Share of the article 57 adjustments on those transactions; Minimum fine, from 1 January 2024; Minimum fine before 1 January 2024; Example 2: brand royalty not booked and not documented, arm's length value and a; Example 2: fine on the transactions test; and 10 more rows | https://bofip.impots.gouv.fr/bofip/10389-PGP.html | 2026-11-14 |
+| BOI-BIC-BASE-80-10-20, audit policy (version in force from 18/07/2018): read for the procedure and conditions this skill cites from it | https://bofip.impots.gouv.fr/bofip/9389-PGP.html | 2026-11-14 |
+| BOI-CF-IOR-60-50, article L. 13 B request (version in force from 10/12/2025):  (selected prior-information/response/completeness scopes reread31October2026; local-file derivative-flow scope in BOI-BIC-BASE-80-10-40 also reread then; earlier dates preserved): read for Fixed fine per accounting year covered by the request | https://bofip.impots.gouv.fr/bofip/4332-PGP.html | 2026-11-14 |
+| BOI-SJ-RES-20-10, bilateral advance pricing agreement (version in force from 15/04/2026): read for EUR 160, EUR 170, EUR 100, EUR 150 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/1053-PGP.html | 2026-11-14 |
+| BOI-IS-BASE-35-10, order of the interest limits (version in force from 15/07/2026): read for 30%, EUR 212 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/8420-PGP.html | 2026-11-14 |
+| BOI-IS-BASE-35-40-10-20, cap on net financial charges (version of 13/05/2020): read for Second cap: share of tax EBITDA | https://bofip.impots.gouv.fr/bofip/11787-PGP.html | 2026-11-14 |
+| Surcharges, article 1729 CGI: read for Deliberate breach (manquement délibéré); Abuse of law where principal initiative or principal benefit is established; fra | https://bofip.impots.gouv.fr/bofip/4911-PGP.html | 2026-11-14 |
+| Late-payment interest, article 1727 CGI: read for Late-payment interest (intérêt de retard, article 1727 CGI), per month | https://bofip.impots.gouv.fr/bofip/1458-PGP.html | 2026-11-14 |
+| Form 2258-SD, 2025 edition: read for Fine for not filing; Consolidated turnover excluding VAT, previous accounting year | https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf | 2026-11-14 |
+| La déclaration pays par pays (modified 24/05/2022): read for Same threshold as printed on the administration's explanatory page | https://www.impots.gouv.fr/la-declaration-pays-par-pays | 2026-11-14 |
+| Form 2257-SD, 2017 edition: read for EUR 100,000, EUR 2,257, EUR 223 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf | 2026-11-14 |
+| Securing a transfer pricing policy (modified 04/07/2022): read for EUR 2,257 and the conditions next to them | https://www.impots.gouv.fr/professionnel/questions/ma-societe-situee-en-france-fait-partie-dun-groupe-international-comment | 2026-11-14 |
+| Form 2259-SD user guide, Pillar Two (November 2025): read for Pillar Two scope: consolidated turnover in at least two of the four previous acc | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf | 2026-11-14 |
+| Current CGI art. 223 quinquies B and C, selected filing and exact-threshold clauses (not reopened today: the site refuses scripted reads): read for the procedure and conditions this skill cites from it | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162534/ | 2026-10-29 |
+| Original finance law for 2024, article 116, separate threshold/presumption and fine commencements (not reopened today: the site refuses scripted reads): read for the procedure and conditions this skill cites from it | https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000048727469 | 2026-10-29 |
+| Current CGI art. 1729 abuse-of-law reduced-rate conditions (not reopened today: the site refuses scripted reads): read for the procedure and conditions this skill cites from it | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29 | 2026-10-29 |
 
 Selected-source update, 29 October 2026: actual selected operative clauses and the retained form instructions are pinned in the figure ledger separately from source acquisition and earlier author reads. Article116 was actually read in the official indexed original-language excerpt; a direct full-body request returned403. The full current country-by-country exchange list and every future filing-year form layout have not been reproduced here. The statutory threshold is supplied; exchange/list status and designation still require the actual group facts. A general safe-harbour margin, current unilateral/SME APA procedure, economic benchmark and special thin-capitalisation method are not established merely by the pages cited here.
+
+Not yet confirmed: the CGI art. 223 quinquies B and C texts and the 2024 finance law article 116 were not reopened today (Legifrance refuses scripted reads); the thresholds above rest on the BOFiP and impots.gouv pages read today. Any transfer pricing change made by the loi de finances pour 2026 was not found on those pages.
 
 ## Disclaimer
 
@@ -418,4 +431,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `france-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/france-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `france-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/france-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

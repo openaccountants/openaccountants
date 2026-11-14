@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hr-transfer-pricing"
   jurisdiction: "HR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-11-14"
 ---
 
-# Croatia: transfer pricing (2026) v0.1
+# Croatia: transfer pricing (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts published by the Tax Administration (Porezna uprava) and from Narodne novine, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -239,8 +239,8 @@ expected:
 
 Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law. The Tax Administration's register lists the Zakon o kamatama (NN 94/04, kept in force by the Obligations Act art. 1164), which treats taxes as money obligations (art. 1(2)), and the Croatian National Bank published, under Obligations Act art. 29(9), an ECB rate of 2.40% in force on 1 July 2026 (NN 68/2026). The provision that sets the margin over that rate for tax debts was not read, so no rate is given; whether the Tax Administration expects a corresponding downward adjustment by the domestic counterparty in a case like Example 2; how Rulebook art. 37(5) computes the proportional reduction for withholding tax; any time limit for producing documentation after a request; and the content of the Tax Administration's TP audit manual (Priručnik za nadzor transfernih cijena), which was not read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hr-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hr-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hr-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hr-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

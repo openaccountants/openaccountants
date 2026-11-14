@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cyprus-vat-return"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Cyprus VAT return: rates, registration, the return and penalties (2026)
@@ -51,8 +51,8 @@ What changed for 2026:
 | Temporary 0%: baby milk, nappies, feminine hygiene products, listed fresh fruit and vegetables, continued | 0% from 1 Jan to 31 Dec 2027 | 2027 | https://www.cylaw.org/KDP/data/2026_1_362.pdf (para. 4) |
 | Temporary 0%: fresh and frozen meat and offal, fish, cuttlefish, squid and octopus (Sixth Schedule paras 25(γ) and 25(δ)) | 0% from 6 Apr to 30 Sep 2026, then continued from 1 Oct 2026 to 31 May 2027; 5% food rate before 6 Apr 2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_168.pdf (para. 4); https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(α)) |
 | Temporary 0%: bread, milk, coffee, sugar and baby food (Sixth Schedule para. 25(ε)) | 0% from 12 Oct 2026 to 31 May 2027; 5% food rate before | 2026 | https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(β)) |
-| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date) | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf |
-| Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
+| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date); derived: the order adds the item to the Twelfth Schedule, which art. 18A(1) taxes at "εννέα τοις εκατόν (9%)" | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf; [VAT Law art. 18A](https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html) |
+| Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027; derived: Κ.Δ.Π. 82/2026 adds the item to the Twelfth Schedule (9%, art. 18A) and Κ.Δ.Π. 167/2026 moves it to Table A of the Fifth Schedule (5%) and deletes the Twelfth Schedule entry from 30.4.2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
 | 5% main residence: first 130 m² of buildable area, up to this value | EUR 350,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
 | 5% main residence: lost entirely if total value passes / total buildable area passes | EUR 475,000 / 190 m² | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
 | Registration threshold, established business | EUR 15,600 (past 12 months or next 30 days) | 2026 | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ |
@@ -62,7 +62,6 @@ What changed for 2026:
 | EU small business scheme (SME-SS): EU-wide turnover cap | EUR 100,000 | 2026 | https://www.cylaw.org/nomoi/arith/2025_1_104.pdf |
 | Retailer must issue a VAT invoice if a taxable customer asks and the price passes | EUR 85 | 2026 | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ |
 | Errors in past returns that may be corrected in the current return (net total, periods under three years old) | Up to EUR 1,708.60 | 2026 | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/ |
-| Gifts of goods: output VAT due when cost per gift passes | EUR 17 | 2026 | Tax Department return guide (URL in Sources) |
 
 ## The taxable base
 
@@ -80,7 +79,7 @@ What changed for 2026:
 - **Input VAT.** VAT on purchases used for taxable supplies is deductible under art. 21 if the business holds a tax invoice dated in the period. Mixed taxable and exempt use is apportioned under regs 64 to 65Γ of Κ.Δ.Π. 314/2001 (refer). Credit notes received reduce Box 4.
 - **Partial exemption** (regs 64 and 65 of Κ.Δ.Π. 314/2001). A business with both taxable and exempt sales deducts in full the input VAT on costs used only for taxable sales, nothing on costs used only for exempt sales (or for non-business activity), and on shared costs the proportion that taxable sales bear to all sales in the period. The ratio leaves out sales of the business's capital goods, incidental property and financial transactions, and self-supplies, and is rounded up to the next whole percentage. The Commissioner may approve or direct another method. The deduction in each return is provisional (reg. 64(1)). Refer the annual adjustment and any special method.
 - **Input VAT that must not go in Box 4** (return guide): private purchases; business entertainment of employees or company managers; second-hand goods bought under the second-hand scheme; payments to the Tax Department under an assessment. The Tax Department's 2001 General VAT Guide also blocks VAT on ordinary passenger cars (not taxis, hire cars, driving-school cars, vans, vehicles with more than ten seats or over three tonnes) and on business entertainment generally. That guide predates the current law, so this skill keeps the conservative default: block, ask, refer.
-- **Output VAT that is easy to miss** (return guide): reverse-charge services and purchases; commission on sales for third parties; sales of fixed assets; goods taken for private use; self-billed invoices; bad-debt relief later recovered; and gifts of goods costing more than EUR 17 each. Credit notes issued reduce Box 1.
+- **Output VAT that is easy to miss** (return guide): reverse-charge services and purchases; commission on sales for third parties; sales of fixed assets; goods taken for private use; self-billed invoices; bad-debt relief later recovered; and gifts of goods above the business-gift limit (the limit is not yet confirmed; see Sources, Not yet confirmed). Credit notes issued reduce Box 1.
 
 ### Property
 
@@ -282,10 +281,10 @@ expected:
 | Κ.Δ.Π. 168/2026 (0% on meat and fish, 6 Apr to 30 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_168.pdf | 2026-10-24 |
 | Κ.Δ.Π. 354/2026 (0% on meat and fish 1 Oct 2026 to 31 May 2027; bread, milk, coffee, sugar, baby food 12 Oct 2026 to 31 May 2027) | https://www.cylaw.org/KDP/data/2026_1_354.pdf | 2026-10-24 |
 | Κ.Δ.Π. 362/2026 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2027) | https://www.cylaw.org/KDP/data/2026_1_362.pdf | 2026-10-24 |
-| Κ.Δ.Π. 363/2026 (9% on home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-10-24 |
+| Κ.Δ.Π. 363/2026, Official Gazette Αρ. 6053 of 16.10.2026: read for the new Twelfth Schedule para. 6 (home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-11-14 |
 | Κ.Δ.Π. 172/2026 (form to opt out of VAT on a commercial lease) | https://www.cylaw.org/KDP/data/2026_1_172.pdf | 2026-10-24 |
 | CyLaw index of 2026 regulatory acts (Κ.Δ.Π.) | https://www.cylaw.org/KDP/2026.html | 2026-10-24 |
-| Κ.Δ.Π. 82/2026 (9% household electricity from 1 Apr 2026) | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-10-24 |
+| Κ.Δ.Π. 82/2026, Official Gazette Αρ. 5998 of 20.2.2026: read for the new Twelfth Schedule para. 6 (household electricity tariffs 01, 02, 08, 56) and its 1.4.2026 to 31.3.2027 start | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-11-14 |
 | Κ.Δ.Π. 167/2026 (5% household electricity, readings 1 May 2026 to 31 Mar 2027) | https://www.cylaw.org/KDP/data/2026_1_167.pdf | 2026-10-24 |
 | Κ.Δ.Π. 102/2026 and 103/2026 (renovation and first establishment, from 1 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_102.pdf; https://www.cylaw.org/KDP/data/2026_1_103.pdf | 2026-10-24 |
 | Κ.Δ.Π. 221/2026 (Seventh Schedule wording) | https://www.cylaw.org/KDP/data/2026_1_221.pdf | 2026-10-24 |
@@ -303,8 +302,8 @@ expected:
 | Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 
-Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
+Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format; rates row taken out of the table until read on the official page: Gifts of goods, output VAT due when cost per gift passes EUR 17 (Tax Department VAT return guide on gov.cy, which refuses scripted reads; the VAT Law text on CyLaw still states the business-gift limit as CYP 10).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

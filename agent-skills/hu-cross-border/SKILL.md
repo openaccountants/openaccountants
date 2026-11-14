@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-cross-border"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Hungary: cross-border tax for people and companies (2026)
@@ -47,17 +47,17 @@ So a Hungarian citizen working abroad for years stays resident under domestic la
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Personal income tax, flat rate (also on dividends and interest) | 15% | 2026 | [Szja tv. 8. § (1)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
-| Residence test for EEA nationals | 183 days in the calendar year, arrival and departure days counted | 2026 | Szja tv. 3. § 2. b) |
+| Residence test for EEA nationals | 183 days in the calendar year, arrival and departure days counted | 2026 | Szja tv. 3. § 2. b); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
 | Payer's tax on dividends, interest, royalties and other Hungarian-source income paid to a non-resident individual | 15% unless the treaty rate is documented by the time of payment; paid by the 12th of the month after payment | 2026 | Szja tv. 7. számú melléklet, points 1 and 2; [NAV information sheet 24, section 2.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26) |
-| Treaty rate at source | The treaty rate, if by the time of payment the payer holds this year's residence certificate (or accepts the person's written residence statement until it arrives) and, where the treaty asks, a beneficial owner statement | 2026 | Szja tv. 7. számú melléklet, points 2, 6 and 7 |
+| Treaty rate at source | The treaty rate, if by the time of payment the payer holds this year's residence certificate (or accepts the person's written residence statement until it arrives) and, where the treaty asks, a beneficial owner statement | 2026 | Szja tv. 7. számú melléklet, points 2, 6 and 7; https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
 | Withholding on dividends, interest and royalties paid to a foreign company | None | 2026 | [NAV English summary on business associations](https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations), sections 2.6 and 7.1; see hu-corporate-tax |
 | Social contribution tax (szocho) on a resident's dividends and interest | 13% | 2026 | [Szocho tv. 1. § (5), 2. § (1)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00) |
 | Szocho on dividends, interest and gains of a person who is "foreign" under the Tbj. | None | 2026 | Szocho tv. 5. § (6); [Tbj. 4. § 1. and 12.](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
-| Foreign tax credit, no treaty, consolidated income (employment, self-employment) | 90% of the foreign tax, capped at 15% of that income | 2026 | Szja tv. 32. § (1) |
-| Foreign tax credit, no treaty, separately taxed income (dividends, interest) | Foreign tax credited, but Hungarian tax stays at least 5% of the income | 2026 | Szja tv. 8. § (2) |
-| Allowances for a non-resident | Only if Hungarian-taxable work and pension income is at least 75% of world income, and no similar allowance abroad | 2026 | Szja tv. 1/A. § (3) |
+| Foreign tax credit, no treaty, consolidated income (employment, self-employment) | 90% of the foreign tax, capped at 15% of that income | 2026 | Szja tv. 32. § (1); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Foreign tax credit, no treaty, separately taxed income (dividends, interest) | Foreign tax credited, but Hungarian tax stays at least 5% of the income | 2026 | Szja tv. 8. § (2); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Allowances for a non-resident | Only if Hungarian-taxable work and pension income is at least 75% of world income, and no similar allowance abroad | 2026 | Szja tv. 1/A. § (3); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
 | Corporate exit tax | 9% corporate tax on market value less tax book value of what leaves | 2026 | [Tao. tv. 16/A. § (2)](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00), 19. § |
-| Exit tax instalments (move to an EU state, or an EEA state with a recovery agreement) | 20% with the return, then 4 equal annual instalments of the other 80% | 2026 | Tao. tv. 16/A. § (4), (5) |
+| Exit tax instalments (move to an EU state, or an EEA state with a recovery agreement) | 20% with the return, then 4 equal annual instalments of the other 80% | 2026 | Tao. tv. 16/A. § (4), (5); https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 |
 | Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 points, per day (1/365) | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00) |
 | Central bank base rate | 5.50% from 26 August 2026 (late interest 10.50% a year) | 2026 | [NAV base rate notice, 25 August 2026](https://nav.gov.hu/ugyfeliranytu/jegybank) |
 
@@ -230,4 +230,4 @@ Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájék
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

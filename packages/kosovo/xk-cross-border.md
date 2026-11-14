@@ -16,13 +16,14 @@ description: >
 jurisdiction: XK
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
+type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
-# Kosovo cross-border business income v0.2
+# Kosovo cross-border business income v0.3
 
 Tax year **2026**, checked against the law on **30 October 2026** (tier 2; no
 licensed accountant has signed it off). Corporate Income Tax Law 06/L-105 has
@@ -59,16 +60,16 @@ establishing the correct classification.
 
 | Item | Domestic rule for 2026 | Official authority |
 |---|---|---|
-| Ordinary corporate/PE income tax | 10% of net taxable income | [06/L-105 arts. 4–7][law] |
-| Nonresident services performed in Kosovo under an agreement with a Kosovo person/entity | 5% of gross compensation if the recipient has no Kosovo PE | [Art. 33(2)–(3)][law] |
-| Nonresident entertainer/sportsperson's personal activities in Kosovo | 5% of gross compensation, including indirect payment | [Art. 33(1), (3)][law] |
-| Interest on loans/credits and royalties | 10% at payment or credit, subject to the statutory interest exclusions | [Art. 31(2), (4)][law] |
-| Rent | 9% at payment or credit, except exempt lessor income | [Art. 31(3)][law] |
-| Dividends | Express income-tax exemption for dividends paid or received by resident and nonresident persons | [Art. 8(1.8)][law] |
-| Fixed-place domestic PE | Longer than six months within any twelve months | [Art. 30(1)][law] |
-| Construction/assembly/installation/supervisory domestic PE | Longer than 183 days within any twelve months, including actual preparatory commencement | [Art. 30(3.1)][law] |
-| Services domestic PE | More than 90 days within any twelve months, with the additional individual-presence proviso requiring interpretation below | [Art. 30(3.2)][law] |
-| Foreign business-income tax credit | Foreign income tax actually paid, limited to Kosovo tax attributable to that income | [Art. 29][law] |
+| Ordinary corporate/PE income tax | 10% of net taxable income | [06/L-105 arts. 4–7](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Nonresident services performed in Kosovo under an agreement with a Kosovo person/entity | 5% of gross compensation if the recipient has no Kosovo PE | [Art. 33(2)–(3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Nonresident entertainer/sportsperson's personal activities in Kosovo | 5% of gross compensation, including indirect payment | [Art. 33(1), (3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Interest on loans/credits and royalties | 10% at payment or credit, subject to the statutory interest exclusions | [Art. 31(2), (4)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Rent | 9% at payment or credit, except exempt lessor income | [Art. 31(3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Dividends | Express income-tax exemption for dividends paid or received by resident and nonresident persons | [Art. 8(1.8)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Fixed-place domestic PE | Longer than six months within any twelve months | [Art. 30(1)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Construction/assembly/installation/supervisory domestic PE | Longer than 183 days within any twelve months, including actual preparatory commencement | [Art. 30(3.1)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Services domestic PE | More than 90 days within any twelve months, with the additional individual-presence proviso requiring interpretation below | [Art. 30(3.2)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Foreign business-income tax credit | Foreign income tax actually paid, limited to Kosovo tax attributable to that income | [Art. 29](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
 
 Article 33 has **no EUR 5,000 minimum** for the nonresident service route.
 Do not carry that threshold forward from older legislation. A Kosovo payer

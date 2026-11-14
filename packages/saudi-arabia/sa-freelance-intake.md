@@ -2,15 +2,16 @@
 name: sa-freelance-intake
 description: Use this Guide to collect and reconcile the facts needed for a Saudi Arabia freelance or SME tax and Zakat workflow for tax year 2026. It covers resident sole establishments, privately held companies, foreign-owned companies and branches, records ownership and fiscal periods, checks registration evidence, and identifies VAT, withholding, real estate, excise, employment and e-invoicing workstreams. Trigger on Saudi business intake, ZATCA registration, mixed ownership, MISA registration, Fatoorah or Saudi compliance. It produces a documented intake package for sa-return-assembly and a qualified Saudi reviewer. Missing facts and unconfirmed legal rules remain explicit holds; this Guide does not submit returns.
 jurisdiction: SA
-version: 1.3
+version: 1.4
+type: router
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# SA Freelance Intake v1.3
+# SA Freelance Intake v1.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -62,8 +63,6 @@ Infer applicable facts from documents and ask for remaining facts. Record inappl
 | WHT dividends, rent, loan charges, insurance/reinsurance, technical and consulting services, air tickets or air/sea freight, international telecoms, subject to definitions and exclusions below | 5% | 2026 | same |
 | VAT monthly filing | annual supplies over SAR 40 million | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx |
 | E-invoicing Wave 25 | VAT-liable revenue over SAR 187,500 in any of 2022 to 2025; integrate by 1 February 2027 | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx |
-| VAT registration decision | HOLD pending current threshold and scope verification; no numeric default | 2026 | unverified |
-| VAT voluntary eligibility | HOLD; taxable expenses and non-resident rules also require review | 2026 | unverified |
 
 Apply a domestic rate only after confirming a resident payer or Saudi PE, a payment to a non-resident, a Saudi income source, the precise payment category and any PE connection, exclusion, exemption or documented treaty claim. [ZATCA WHT Guideline, sections 2 to 5](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf). The table is not a rate-selection default. Unknown category means HOLD the calculation, never choose the highest rate. Natural-person payer rules cover activity-related payments, not personal consumption. Exclusions include relevant oil/gas investment dividends and specified telecom network/roaming payments. Interbank loan returns require the specific maximum-90-day and certified-statement conditions; freight definitions exclude inbound shipping to Saudi ports. Payments connected with a recipient's Saudi PE and capital gains need the separate income-tax treatment. Read the category definition and any treaty before the rate, not after.
 

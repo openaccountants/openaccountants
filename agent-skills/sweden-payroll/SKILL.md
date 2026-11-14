@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sweden-payroll"
   jurisdiction: "SE"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-11-14"
 ---
 
 # Sweden payroll and PAYE
@@ -29,16 +29,16 @@ This skill runs one month of Swedish payroll for 2026: what to withhold from the
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Employer contributions, full rate (born 1959 or later) | 31.42% of pay and benefits: 18.80% social contributions (SAL 2 kap. 26 §) plus 12.62% general payroll fee (allmän löneavgift, Lag 1994:1920 3 §) | 2026 | https://data.riksdagen.se/dokument/sfs-2000-980.text ; https://data.riksdagen.se/dokument/sfs-1994-1920.text |
-| Parts of the 18.80% | Health 3.55%, parental 2.00%, old-age pension 10.21%, survivor's pension 0.30%, labour market 2.64%, work injury 0.10% | 2026 | SAL 2 kap. 26 § (Lag 2025:1362) |
-| Age 67 or over at 1 January 2026 (born 1938-1958) | 10.21% (old-age pension contribution only; no general payroll fee) | 2026 | SAL 2 kap. 27 § (Lag 2022:889, in force 1 January 2026); Lag 1994:1920 1 § |
+| Parts of the 18.80% | Health 3.55%, parental 2.00%, old-age pension 10.21%, survivor's pension 0.30%, labour market 2.64%, work injury 0.10% | 2026 | SAL 2 kap. 26 § (Lag 2025:1362); https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Age 67 or over at 1 January 2026 (born 1938-1958) | 10.21% (old-age pension contribution only; no general payroll fee) | 2026 | SAL 2 kap. 27 § (Lag 2022:889, in force 1 January 2026); Lag 1994:1920 1 §; https://data.riksdagen.se/dokument/sfs-2000-980.text |
 | Born 1937 or earlier | 0% | 2026 | SAL transitional rules to Lag 2000:980, point 5; https://www.skatteverket.se/arbetsgivaravgifter |
 | Youth reduction, aged 18 but not 23 at 1 January 2026 (born 2003-2007), pay from 1 April 2026 to 30 September 2027 | 20.81% on pay up to SEK 25,000 per calendar month (full old-age pension contribution plus half of the rest, truncated to two decimals); 31.42% on the excess | 2026 | Lag (2026:100) 2 § and transitional rules; https://data.riksdagen.se/dokument/sfs-2026-100.text |
 | Employer with no permanent establishment in Sweden | 18.80% (born 1959 or later); 10.21% (born 1938-1958); 14.50% (born 2003-2007, from 1 April 2026). No general payroll fee: it is a tax, and a foreign employer without a PE does not pay it (Skatteverket legal guidance, citing prop. 1994/95:122 p. 18) | 2026 | https://www.skatteverket.se/arbetsgivaravgifter ; https://www4.skatteverket.se/rattsligvagledning/1333.html |
-| Växa refund (first and second employee of a sole trader in active business, an aktiebolag, or a handelsbolag with at most two partners) | Refund of the contributions and general payroll fee paid, except the 10.21% old-age pension part, on pay up to SEK 35,000 a month, for the first 24 months of the employment; employment of at least three months and at least 20 hours a week; SEK 25,000 cap for someone hired before 1 May 2024 under the old växa rules; within EU de minimis limits; apply per month within one year | 2026 | Lag (2025:1334) 7-8, 13 §§ and transitional rule 3; https://data.riksdagen.se/dokument/sfs-2025-1334.text |
-| Annual threshold for contributions and withholding | Pay under SEK 1,000 to one person in the year | 2026 | SAL 2 kap. 14 §; SFL 10 kap. 4 § 2 |
-| Withholding on main income | Tax table number on the A-tax decision, column by age and income type | 2026 | SFL 11 kap. 16-17 §§; SKVFS 2025:20 tables |
-| 30% withholding | Pay that is not main income; work meant to last less than a week; pay from a foreign employer with no PE in Sweden | 2026 | SFL 11 kap. 20 § |
-| Withholding with no A-tax or SINK decision shown | Table for the employer's municipality plus 10% of the table amount | 2026 | SFL 11 kap. 21 § |
+| Växa refund (first and second employee of a sole trader in active business, an aktiebolag, or a handelsbolag with at most two partners) | Refund of the contributions and general payroll fee paid, except the 10.21% old-age pension part, on pay up to SEK 35,000 a month, for the first 24 months of the employment; employment of at least three months and at least 20 hours a week; SEK 25,000 cap for someone hired before 1 May 2024 under the old växa rules; within EU de minimis limits; apply per month within one year | 2026 | Lag (2025:1334) 7-8, 13 §§ and transitional rule 3; https://data.riksdagen.se/dokument/sfs-2025-1334.text; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Annual threshold for contributions and withholding | Pay under SEK 1,000 to one person in the year | 2026 | SAL 2 kap. 14 §; SFL 10 kap. 4 § 2; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Withholding on main income | Tax table number on the A-tax decision, column by age and income type | 2026 | SFL 11 kap. 16-17 §§; SKVFS 2025:20 tables; https://data.riksdagen.se/dokument/sfs-2011-1244.text; https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html |
+| 30% withholding | Pay that is not main income; work meant to last less than a week; pay from a foreign employer with no PE in Sweden | 2026 | SFL 11 kap. 20 §; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Withholding with no A-tax or SINK decision shown | Table for the employer's municipality plus 10% of the table amount | 2026 | SFL 11 kap. 21 §; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 | One-off payments, column 1 | Estimated annual pay (leaving out the one-off amount) up to SEK 25,041: 0%; 25,042-82,800: 10%; 82,801-192,000: 21%; 192,001-477,600: 26%; 477,601-660,000: 34%; over 660,000: 54% | 2026 | SFL 12 kap. 6 §; https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html ; https://www4.skatteverket.se/rattsligvagledning/325047.html |
 | State tax threshold (skiktgräns) | 20% on taxable earned income above SEK 643,000 | 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Breakpoint (brytpunkt), before basic deduction | SEK 660,400 a year if under 66 at 1 January; SEK 760,500 if 66 or over | 2026 | same page |
@@ -47,8 +47,8 @@ This skill runs one month of Swedish payroll for 2026: what to withhold from the
 | Student certificate (SKV 434) limit | Expected 2026 pay under SEK 25,042 and living in Sweden all year | 2026 | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html |
 | SINK withholding (non-resident under a SINK decision) | 22.5% (20% from 1 January 2027) | 2026 | Lag (1991:586) 7 §; https://data.riksdagen.se/dokument/sfs-1991-586.text |
 | Special payroll tax on pension costs | 24.26% | 2026 | Lag (1991:687) 1 §; https://data.riksdagen.se/dokument/sfs-1991-687.text |
-| Late-filing fee, employer return | SEK 625; SEK 1,250 if filed after an order | 2026 | SFL 48 kap. 6 § |
-| Tax surcharge (skattetillägg) | 20% of tax that would have been lost; 5% of tax not withheld; 2% or 5% for a timing error | 2026 | SFL 49 kap. 11, 13, 18 §§ |
+| Late-filing fee, employer return | SEK 625; SEK 1,250 if filed after an order | 2026 | SFL 48 kap. 6 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Tax surcharge (skattetillägg) | 20% of tax that would have been lost; 5% of tax not withheld; 2% or 5% for a timing error | 2026 | SFL 49 kap. 11, 13, 18 §§; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 | Cost interest (kostnadsränta) | Base rate 2.5% (since 1 December 2024); late payment: base rate plus 15 points = 17.5% | 2026 | SFL 65 kap. 3-4, 13 §§; https://www.skatteverket.se/rantapaskattekontot |
 
 ## The taxable base
@@ -194,28 +194,28 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Socialavgiftslag (2000:980), as amended to SFS 2026:493: 2 kap. 1, 4, 14, 26-27 §§; transitional rules 2000:981 point 5, 2022:889 | https://data.riksdagen.se/dokument/sfs-2000-980.text | 2026-10-24 |
-| Lag (1994:1920) om allmän löneavgift, 1 and 3 §§ (as amended by 2025:1360) | https://data.riksdagen.se/dokument/sfs-1994-1920.text | 2026-10-24 |
+| Socialavgiftslag (2000:980), as amended to SFS 2026:493: 2 kap. 1, 4, 14, 26-27 §§; transitional rules 2000:981 point 5, 2022:889 | https://data.riksdagen.se/dokument/sfs-2000-980.text | 2026-11-14 |
+| Lag (1994:1920) om allmän löneavgift, 1 and 3 §§ (as amended by 2025:1360) | https://data.riksdagen.se/dokument/sfs-1994-1920.text | 2026-11-14 |
 | Lag (2026:100) om särskild beräkning av arbetsgivaravgifter och allmän löneavgift för personer som vid årets ingång fyllt 18 men inte 23 år | https://data.riksdagen.se/dokument/sfs-2026-100.text | 2026-10-24 |
-| Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag, 1-14 §§ and transitional rules | https://data.riksdagen.se/dokument/sfs-2025-1334.text | 2026-10-24 |
-| Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305: 10 kap. 3-6 §§; 11 kap. 2-4, 9, 16-23, 27 §§; 12 kap. 3, 6 §§; 26 kap. 3, 26, 30-32 §§; 48 kap. 5-6 §§; 49 kap. 10-11, 13, 18 §§; 62 kap. 2-3 §§; 65 kap. 3-4, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
-| Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, 7 § | https://data.riksdagen.se/dokument/sfs-1991-586.text | 2026-10-24 |
-| Lag (1991:687) om särskild löneskatt på pensionskostnader, 1 § | https://data.riksdagen.se/dokument/sfs-1991-687.text | 2026-10-24 |
-| Semesterlag (1977:480), 4, 16 a, 16 b §§ | https://data.riksdagen.se/dokument/sfs-1977-480.text | 2026-10-24 |
-| Lag (1991:1047) om sjuklön, 3, 6-8 §§ | https://data.riksdagen.se/dokument/sfs-1991-1047.text | 2026-10-24 |
-| Skatteverket, arbetsgivaravgifter (rates and codes 2026) | https://www.skatteverket.se/arbetsgivaravgifter | 2026-10-24 |
-| Skatteverket, employer contributions (English) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html | 2026-10-24 |
-| Skatteverket, skattetabeller 2026 and monthly table 32 (SKVFS 2025:20) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html | 2026-10-24 |
-| Skatteverket, så läser du skattetabellen (columns 2026) | https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/salaserdutabellen.4.319dc1451507f2f99e875f.html | 2026-10-24 |
-| Skatteverket, engångsbelopp (one-off tables 2026) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html | 2026-10-24 |
-| Skatteverket, belopp och procent inkomstår 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-24 |
-| Skatteverket, deducted tax | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html | 2026-10-24 |
-| Skatteverket, PAYE return box by box | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html | 2026-10-24 |
-| Skatteverket, filing a PAYE return (absence details) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn.4.2cf1b5cd163796a5c8b107cd.html | 2026-10-24 |
-| Skatteverket, correcting a PAYE return | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html | 2026-10-24 |
-| Skatteverket, hiring workers from abroad | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html | 2026-10-24 |
-| Skatteverket, social security agreement for employers | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/socialsecurityagreementforyouasanemployer.4.2fb39afe18dabf1e4d21c41.html | 2026-10-24 |
-| Skatteverket, ränta på skattekontot | https://www.skatteverket.se/rantapaskattekontot | 2026-10-24 |
+| Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag, 1-14 §§ and transitional rules | https://data.riksdagen.se/dokument/sfs-2025-1334.text | 2026-11-14 |
+| Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305: 10 kap. 3-6 §§; 11 kap. 2-4, 9, 16-23, 27 §§; 12 kap. 3, 6 §§; 26 kap. 3, 26, 30-32 §§; 48 kap. 5-6 §§; 49 kap. 10-11, 13, 18 §§; 62 kap. 2-3 §§; 65 kap. 3-4, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-14 |
+| Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, 7 § | https://data.riksdagen.se/dokument/sfs-1991-586.text | 2026-11-14 |
+| Lag (1991:687) om särskild löneskatt på pensionskostnader, 1 § | https://data.riksdagen.se/dokument/sfs-1991-687.text | 2026-11-14 |
+| Semesterlag (1977:480), 4, 16 a, 16 b §§ | https://data.riksdagen.se/dokument/sfs-1977-480.text | 2026-11-14 |
+| Lag (1991:1047) om sjuklön, 3, 6-8 §§ | https://data.riksdagen.se/dokument/sfs-1991-1047.text | 2026-11-14 |
+| Read for Born 1937 or earlier, Employer with no permanent establishment in Sweden: Skatteverket, arbetsgivaravgifter (rates and codes 2026) | https://www.skatteverket.se/arbetsgivaravgifter | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, employer contributions (English) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html | 2026-11-14 |
+| Read for Withholding on main income: Skatteverket, skattetabeller 2026 and monthly table 32 (SKVFS 2025:20) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, så läser du skattetabellen (columns 2026) | https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/salaserdutabellen.4.319dc1451507f2f99e875f.html | 2026-11-14 |
+| Read for One-off payments, column 1: Skatteverket, engångsbelopp (one-off tables 2026) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html | 2026-11-14 |
+| Read for State tax threshold (skiktgräns), Late-filing fee, employer return: Skatteverket, belopp och procent inkomstår 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-11-14 |
+| Read for Student certificate (SKV 434) limit: Skatteverket, deducted tax | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html | 2026-11-14 |
+| Skatteverket, PAYE return box by box | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, filing a PAYE return (absence details) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn.4.2cf1b5cd163796a5c8b107cd.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, correcting a PAYE return | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, hiring workers from abroad | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket, social security agreement for employers | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/socialsecurityagreementforyouasanemployer.4.2fb39afe18dabf1e4d21c41.html | 2026-11-14 |
+| Read for Cost interest (kostnadsränta): Skatteverket, ränta på skattekontot | https://www.skatteverket.se/rantapaskattekontot | 2026-11-14 |
 | Skatteverket, rättslig vägledning: Arbetsgivaravgifternas storlek (2026) | https://www4.skatteverket.se/rattsligvagledning/1333.html | 2026-10-24 |
 | Skatteverket, rättslig vägledning: Skattetabeller (one-off amounts) | https://www4.skatteverket.se/rattsligvagledning/325047.html | 2026-10-24 |
 
@@ -223,4 +223,4 @@ Not yet confirmed: nothing open. Settled on review: the no-PE rate basis (Skatte
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sweden-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sweden-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sweden-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sweden-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

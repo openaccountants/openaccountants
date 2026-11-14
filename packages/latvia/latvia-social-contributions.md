@@ -1,19 +1,20 @@
 ---
 name: latvia-social-contributions
 description: "Latvian state social insurance contributions (VSAOI) for tax year 2026. Covers the 34.09% rate for employees (employer 23.59%, employee 10.50%) and the reduced rates for pensioners, board members and others, the EUR 105,300 maximum base and the solidarity tax above it with the refund down to 25%, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base for employees, self-employed contributions (31.07% on at least EUR 780 a month plus 10% for pensions), quarterly reports by the 17th and payment by the 23rd, workers of foreign employers (31.83%), and late interest of 0.05% a day. Trigger on: VSAOI, Latvian social tax, solidaritātes nodoklis, pašnodarbinātā iemaksas, minimālās obligātās iemaksas. Out of scope: monthly gross-to-net and wage tax (latvia-payroll), the annual income tax return (latvia-income-tax), microenterprise tax (latvia-tax-optimization), A1 certificates and residence (lv-cross-border)."
-version: 0.2
+version: 0.4
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Latvia: state social insurance contributions (2026) v0.2
+# Latvia: state social insurance contributions (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated law On State Social Insurance (SI Law), the Solidarity Tax Law, the Law On Personal Income Tax (PIT Law), the Law On Taxes and Fees (LTF) and State Revenue Service (VID) pages. See Sources for how they were read.
 
@@ -160,4 +161,4 @@ likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 Octob
 
 Not yet confirmed: the Cabinet regulation that splits the reduced rates (pensioners, board members, self-employed, foreign workers) by insurance type (rates taken from the VID table, which says it was published 28 September 2022); Cabinet Regulation No. 656 on the 2026 minimum wage (EUR 780 is from VID pages); whether the employer's minimum contributions on the quarterly gap are at the full 34.09% for a fully insured employee (s. 20.4 says the employer pays from its own funds but the rate split was not confirmed); the Cabinet regulation on the self-employed minimum base under SI Law s. 14(2); how contributions on royalties to a person not registered for business are collected in 2026 (SI Law s. 14(19)); the Cabinet regulation on the solidarity tax refund method; SI Law amendments adopted after 3 October 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

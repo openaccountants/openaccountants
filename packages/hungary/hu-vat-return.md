@@ -1,10 +1,10 @@
 ---
 name: hu-vat-return
 description: "Hungarian VAT (általános forgalmi adó, ÁFA) for tax year 2026: who must charge it, the 27%, 18%, 5% and 0% rates (0% for prescription-only medicines from 1 September 2026), the subjective exemption limit of HUF 20 million for 2026 and HUF 22 million for 2027, the EU small-business scheme (EUR 100,000), monthly, quarterly or annual filing set from 2024 data, the 20th-of-the-month and 25 February deadlines, form 2665 and its M sheets, online invoice data reporting, refund minimums, domestic reverse charge, blocked input VAT, cash accounting, late-payment interest and penalties under the Art. Trigger on: Hungarian VAT, áfa bevallás, 2665, alanyi adómentesség, áfa gyakoriság, havi negyedéves éves áfa, Online Számla, fordított adózás, NAV refund. Out of scope: row-by-row classification and the supplier library (hungary-vat-return), invoice software and data format (hungary-einvoice), income tax (hu-income-tax), corporate tax (hu-corporate-tax)."
-version: 2.2
+version: 2.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -12,6 +12,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Hungary VAT (ÁFA): rates, thresholds, filing and penalties, tax year 2026 v2.1
@@ -165,13 +166,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Áfa tv., Act CXXVII of 2007 on VAT (consolidated, state of 15 September 2026, with annexes) | https://njt.jog.gov.hu/jogszabaly/2007-127-00-00 | 2026-10-23 |
-| Art., Act CL of 2017 on the rules of taxation (2. melléklet, 64. §, 209.-229. §) | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Act XL of 2026 (0% rate for prescription-only medicines from 1 September 2026) | https://njt.jog.gov.hu/jogszabaly/2026-40-00-00 | 2026-10-23 |
-| NAV, notice on the higher subjective exemption limit (11 December 2025) | https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara | 2026-10-23 |
-| NAV, information booklet 14 (VAT for new taxpayers, 2026) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 | 2026-10-23 |
-| NAV, information booklet 24 (filing and payment, 2026) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-10-23 |
-| NAV, form 2665 completion guide | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato | 2026-10-23 |
-| NAV, central bank base rate notice (5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
+| Read for Standard rate, Reduced rate, Annex 3 (for example books, periodicals, certain medicines, pork, poultry, eggs, milk, fish, district heating, internet access, restaurant food and on-site non-alcoholic drinks, commercial accommodation, certain new homes), Reduced rate, Annex 3/A (milk products, flour and cereal bakery products, admission to occasional open-air events), Zero rate: daily newspapers (published at least four times a week): Áfa tv., Act CXXVII of 2007 on VAT (consolidated, state of 15 September 2026, with annexes) | https://njt.jog.gov.hu/jogszabaly/2007-127-00-00 | 2026-11-14 |
+| Art., Act CL of 2017 on the rules of taxation (2. melléklet, 64. §, 209.-229. §) | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-11-14 |
+| Read for Zero rate: prescription-only medicines and magistral preparations for human use, from 1 September 2026: Act XL of 2026 (0% rate for prescription-only medicines from 1 September 2026) | https://njt.jog.gov.hu/jogszabaly/2026-40-00-00 | 2026-11-14 |
+| Read for Subjective exemption limit for 2026: NAV, notice on the higher subjective exemption limit (11 December 2025) | https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara | 2026-11-14 |
+| Read for the points the body cites to it: NAV, information booklet 14 (VAT for new taxpayers, 2026) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 | 2026-11-14 |
+| Read for the points the body cites to it: NAV, information booklet 24 (filing and payment, 2026) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-11-14 |
+| Read for the points the body cites to it: NAV, form 2665 completion guide | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato | 2026-11-14 |
+| Read for Central bank base rate (sets late interest): NAV, central bank base rate notice (5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-11-14 |
 
 Not yet confirmed: the HUF 24,000,000 exemption limit for 2028 is in NAV's notice but not in the consolidated Áfa tv. text read today; the specific fine for missing or late online invoice data was not located in the Art. today, so only the general default fine (Art. 220. §) is given; the full Annex 3 list of 5% items is summarised, not reproduced.

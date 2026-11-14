@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ao-transfer-pricing"
   jurisdiction: "AO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Angola Transfer Pricing v0.1
+# Angola Transfer Pricing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -23,7 +23,6 @@ Large taxpayers on the general regime of Imposto Industrial: the 2026 calendar r
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
 | Dossier filing | 30 June 2026, general regime, Grandes Contribuintes | 2026 | https://portaldocontribuinte.minfin.gov.ao/pdfs/CALENDARIO_FISCAL_2026.pdf |
-| Income threshold | Not stated in the pages opened | 2026 | unverified: text of the transfer pricing rules not opened |
 
 ## The base
 
@@ -84,8 +83,8 @@ expected:
 | AGT, Calendario Fiscal 2026, Regime Geral page (read in part: image of Regime Geral page) | https://portaldocontribuinte.minfin.gov.ao/pdfs/CALENDARIO_FISCAL_2026.pdf | 2026-11-01 |
 | AGT quick guide, transfer pricing dossier (read in part: steps) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/dossier-de-precos-de-transferencias/guia-rapido-declaracao-de-dossier-de-precos-de-transferencia.pdf | 2026-11-01 |
 
-Not yet confirmed: Who else must file, thresholds, methods, penalties: the rules themselves were not opened.
+Not yet confirmed: Who else must file, thresholds, methods, penalties: the rules themselves were not opened; the income threshold for the transfer pricing file (the rules text was not opened).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ao-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ao-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ao-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ao-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

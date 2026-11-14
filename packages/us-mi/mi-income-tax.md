@@ -1,205 +1,248 @@
 ---
 name: mi-income-tax
-description: Use this skill whenever asked about Michigan individual income tax for self-employed persons, sole proprietors, or single-member LLCs. Trigger on phrases like "Michigan income tax", "MI income tax", "Form MI-1040", "Michigan Treasury", "MCL 206.51".
-version: "0.1"
+description: Compute a full-year Michigan resident's 2026 Form MI-1040 income tax. Michigan starts from federal adjusted gross income, applies Schedule 1 additions and subtractions, deducts $5,900 per personal exemption and taxes the result at a flat 4.25% (Treasury notice of 15 April 2026, MCL 206.51). Covers sole proprietors and single-member LLCs, wage earners, the new 2026 Michigan deductions for federally claimed qualified tips and qualified overtime, the 2025 PA 24 decoupling from the federal bonus depreciation, section 179, section 174 and section 163(j) changes, the reciprocity states and the credit routing. Trigger on "Michigan income tax", "MI-1040", "Michigan Schedule 1", "Michigan personal exemption", "Michigan Treasury", "MCL 206.51". Retirement income goes to mi-pension-retirement-subtraction, city tax to mi-detroit-individual-return.
+version: "1.0"
 jurisdiction: US-MI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# MI Income Tax
+# Michigan individual income tax (Form MI-1040), tax year 2026
 
-## Michigan Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **Source-cited draft.** Built from the Michigan Treasury notice "4.25% Income Tax Rate for Individuals and Fiduciaries in 2026 Tax Year" (15 April 2026), the 2026 Michigan Income Tax Withholding Guide (Form 446), the Treasury notice on decoupling from the Internal Revenue Code (25 February 2026), the September 2026 Treasury Update on tips and overtime, the Tax Year 2025 guidance page and the 2025 Schedule 1 instructions, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Scope.** This skill covers Michigan Form MI-1040 for full-year Michigan residents who are sole proprietors or single-member LLC owners. Michigan imposes a flat 4.25% income tax. This skill also flags city-level income taxes that may apply in 24 Michigan cities.
->
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All rates and thresholds were researched on 2026-05-22 from official Michigan Department of Treasury publications. A qualified professional must review before filing.
+**Answer first.** For 2026 Michigan tax is **4.25%** of Michigan taxable income: federal AGI, plus Schedule 1 additions, minus Schedule 1 subtractions, minus **$5,900** for each personal and dependency exemption. There are no brackets. Michigan has no standard deduction for people under 67. From 2026 a Michigan resident can also subtract the federal qualified tips and qualified overtime deductions claimed on the 2026 federal return. Michigan does not follow the federal 2025 law on bonus depreciation, section 179, research expenses or the business interest limit: those differences are added back. The return is due 15 April 2027.
 
-## Section 1: Metadata
+## Scope and who this is for
 
-**Metadata table**
+In scope: a full-year Michigan resident (or married couple) filing Form MI-1040 for tax year 2026, with wages, Schedule C business profit, rental, interest, dividends and capital gains, and the Schedule 1 adjustments most such clients meet.
 
-| Field | Value |
+Out of scope, and where it goes:
+
+| Topic | Skill |
 | --- | --- |
-| Jurisdiction | Michigan (US-MI) |
-| Tax type | Individual income tax |
-| Primary form | Form MI-1040 |
-| Tax year | 2026 (filed in 2027) |
-| Authority | Michigan Department of Treasury |
-| Statute | MCL 206.1 et seq. (Income Tax Act of 1967) |
-| Version | 0.1 |
-| Last updated | 2026-05-22 |
-| Validation | AI-drafted — Q3 |
+| Pension, IRA and annuity subtraction, the age-67 Michigan standard deduction, Social Security for seniors (Form 4884) | `mi-pension-retirement-subtraction` |
+| Homestead property tax credit (MI-1040CR) | `mi-homestead-credit` |
+| Paying during the year (MI-1040ES) and the underpayment penalty (MI-2210) | `mi-estimated-tax` |
+| City of Detroit income tax (Forms 5118, 5119, 5120) | `mi-detroit-individual-return` |
+| Putting the federal, Michigan and city returns together | `mi-return-assembly` |
+| Employer withholding and unemployment insurance | `mi-payroll` |
+| Corporate income tax | `mi-corporate-income-tax` |
+| Federal AGI, Schedule C and self-employment tax | `us-schedule-c-and-se-computation` and the federal skills |
 
-### Sources consulted
+## Ask the client first
 
-**Sources consulted table**
+1. **Michigan resident for all of 2026?** Domicile decides it: the place of the permanent home. Part-year and nonresident returns use Schedule NR and are refused here.
+2. **Filing status and the number of exemptions** (the client, spouse, dependents), and whether anyone is deaf, blind, hemiplegic, paraplegic, quadriplegic or totally and permanently disabled, or a qualified disabled veteran (special exemptions).
+3. **Birth year of the client and spouse.** If either has retirement income, or is 67 or older, load `mi-pension-retirement-subtraction`.
+4. **Did the 2026 federal return claim the qualified tips or qualified overtime deduction?** Amounts from federal Schedule 1-A.
+5. **Business assets placed in service in 2026:** did the federal return use 100% bonus depreciation, section 179 above the pre-2025 limit, immediate research expensing, or the new section 163(j) computation? Each needs a Michigan adjustment.
+6. **U.S. government bond interest, and interest on bonds of other states**, and any city income tax deducted federally.
+7. **Michigan withholding** (W-2 box 17, 1099-R) and **2026 MI-1040ES payments**.
+8. **Does the client live or work in a city with an income tax** (for example Detroit)? That is a separate city return.
 
-| # | Source | URL |
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| 1 | Michigan Treasury — 4.25% Rate Notice for 2026 | https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year |
-| 2 | MI-1040 Book (TY 2025 instructions) | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040-Book.pdf |
-| 3 | MCL 206.51 — Tax rate | https://legislature.mi.gov/Laws/MCL?objectName=mcl-206-51 |
-| 4 | Michigan city income tax list | https://www.michigan.gov/taxes/iit/city |
+| Individual income tax rate (flat) | 4.25% | [Treasury notice, 15 April 2026](https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year) |
+| Personal exemption, per person and per dependent | $5,900 | [2026 Michigan Income Tax Withholding Guide (Form 446)](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/SUW/TY2026/446_Withholding-Guide_2026.pdf) |
+| Personal exemption, 2025 (for prior-year comparisons) | $5,800 | [Tax Year 2025 Information](https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance) |
+| Special exemption (deaf, blind, hemiplegic, paraplegic, quadriplegic, totally and permanently disabled), 2025-2026 filing cycle | $3,400 | [Tax Year 2025 Information](https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance) |
+| Qualified disabled veteran deduction, 2025-2026 filing cycle | $500 | [Tax Year 2025 Information](https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance) |
+| Exemption for each certificate of stillbirth | equal to the personal exemption ($5,800 for 2025) | [Tax Year 2025 Information](https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance) |
+| Senior interest, dividend and capital gain deduction limit, 2025-2026 filing cycle (single / joint) | $14,688 / $29,376 | [Tax Year 2025 Information](https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance) |
+| Section 179 limit for the Michigan computation (pre-2025 federal law, before inflation indexing) | $1,250,000, reduced above $3,130,000 of property | [Treasury decoupling notice, 25 February 2026](https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions) |
+| Michigan 529 contribution subtraction cap (single / joint), 2025-2026 filing cycle | $10,000 / $20,000 | [2025 Schedule 1 instructions, line 17](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/Schedule-1-Instr.pdf) |
+| Estimated payments required if tax due on the return is expected to exceed | $500 | [2026 MI-1040ES](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf) |
 
-## Section 2: Quick reference — rates and thresholds
+The rate can only fall: MCL 206.51(1)(c) cuts it when general fund revenue growth beats inflation. Treasury found that general fund revenue fell 1.56% in fiscal 2025 while inflation was 2.70%, so the rate for 2026 stays at 4.25%. The personal exemption is indexed each year.
 
-### Tax rate — 2026 tax year
+### From federal AGI to Michigan tax
 
-**Michigan flat income tax rate table**  _(MCL 206.51)_
+1. **Federal AGI.** Form 1040 line 11. Schedule C profit, the deductible half of self-employment tax, self-employed health insurance and retirement plan deductions all reach Michigan through AGI; there is no separate Michigan business schedule. The federal qualified business income deduction is below AGI and has no Michigan effect.
+2. **Schedule 1 additions** (2025 line numbers; the 2026 form is not out yet):
+   - Line 1: interest and dividends from bonds of other states and their cities (non-Michigan municipal bonds).
+   - Line 2: city income tax and other taxes on or measured by income deducted in arriving at AGI.
+   - Line 3 and line 5: Michigan capital gain and loss adjustments (MI-1040D, MI-4797) where the federal and Michigan basis differ.
+   - Line 4: losses from business or property outside Michigan that are allocated to another state (with MI-1040H).
+   - Line 7: a federal net operating loss deduction (Michigan uses its own NOL on MI-1045).
+   - Line 8, other additions, including the **2025 PA 24 decoupling adjustments**: (a) bonus depreciation: Michigan uses section 168(k) as in effect on 31 December 2024, so the excess of the federal depreciation over the pre-2025-law depreciation is added back; (b) section 179: Michigan uses the pre-2025 limit in the table above, indexed; (c) section 174 and 174A: domestic research expenses are amortized over five years for Michigan, the excess deduction is added back and then subtracted ratably over the next four years; (d) section 163(j): the business interest limit is recomputed without adding depreciation and amortization to adjusted taxable income; (e) section 168(n) qualified production property: Michigan computes depreciation as if 168(n) did not exist. Source: [Treasury decoupling notice](https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions). Keep a Michigan depreciation schedule for every affected asset: the later-year subtractions depend on it.
+3. **Schedule 1 subtractions:**
+   - Line 10: interest on U.S. government obligations included in AGI.
+   - Line 11: military retirement and railroad retirement benefits included in AGI.
+   - Line 14: compensation for active duty in the U.S. Armed Forces.
+   - Line 15: Renaissance Zone deduction (zone residents and businesses).
+   - Line 16: Michigan state and city income tax refunds included in AGI.
+   - Line 17: contributions to Michigan 529 plans (MESP, MAP), net of qualified withdrawals, up to the cap.
+   - Social Security benefits included in AGI are subtracted in full.
+   - Retirement and pension benefits: Form 4884, see `mi-pension-retirement-subtraction`.
+   - **New for 2026: qualified tips and qualified overtime.** For tax years beginning after 31 December 2025 and before 1 January 2029, Michigan taxable income is reduced by the federal deduction for qualified tips (IRC 224) and qualified overtime compensation (IRC 225) claimed on the federal return for the same year, to the extent not already deducted in arriving at AGI. The federal deductions are taken below AGI, so in practice the full federal amount is subtracted. A 2025 federal deduction cannot be used on a Michigan return. Source: [Treasury Update, September 2026](https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Newsletters/Treasury-Update-Newsletter_Sept2026.pdf). The 2026 Schedule 1 line for it is not published yet.
+   - Source for the line list: [2025 Schedule 1 instructions](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/Schedule-1-Instr.pdf).
+4. **Exemptions.** Number of exemptions times $5,900, plus special exemptions and the qualified disabled veteran deduction.
+5. **Michigan taxable income** = federal AGI + additions - subtractions - exemptions (not below zero).
+6. **Tax** = taxable income times 4.25%.
+7. **Credits.** Nonrefundable: income tax paid to another state on the same income (for a resident), and the other MI-1040 credits. Refundable: the homestead property tax credit (`mi-homestead-credit`), the home heating credit (MI-1040CR-7) and the Michigan earned income tax credit. Then subtract withholding and estimated payments.
 
-| Item | Value | Source |
-| --- | --- | --- |
-| Michigan flat income tax rate | 4.25% | MCL 206.51 |
+### Reciprocity states
 
-- **Flat rate applicability** — Michigan uses a flat rate — the same 4.25% applies to all taxable income regardless of filing status or income level.  _(MCL 206.51)_
+Michigan has reciprocal agreements with **Illinois, Indiana, Kentucky, Minnesota, Ohio and Wisconsin**. A Michigan resident working in one of them pays income tax on those wages to Michigan only; the employer there does not withhold its state's tax (it may register to withhold Michigan tax). A resident of those states working in Michigan files a Certificate of Nonresidency with the employer. Source: [2026 Withholding Guide, "Reciprocal Agreements"](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/SUW/TY2026/446_Withholding-Guide_2026.pdf). Wages earned in any other state are taxed by both, and Michigan gives the resident a credit for the other state's tax.
 
-### Exemptions — 2026
+### Michigan cities
 
-**Exemptions table**  _(MCL 206.30)_
+Michigan cities may levy their own income tax under the City Income Tax Act. Detroit's resident rate is 2.4% and nonresident rate 1.2%: see `mi-detroit-individual-return`. A city return is separate from the MI-1040; nothing on the MI-1040 depends on it except the Schedule 1 add-back of any city tax deducted federally.
 
-| Item | Amount | Source |
-| --- | --- | --- |
-| Personal exemption | $5,800 per person | MCL 206.30 |
-| Stillbirth exemption | $5,800 | MCL 206.30 |
-| Special exemption (disabled/deaf/blind) | $3,400 | MCL 206.30 |
-| Disabled veteran exemption | $500 | MCL 206.30 |
+## Boundary and exception table
 
-- **No state standard deduction** — Michigan does NOT have a state-level standard deduction for most filers. Taxpayers under age 67 deduct only personal exemptions from AGI.  _(MCL 206.30)_
-
-### Retirement / senior deductions (age 67+)
-
-**Senior deduction table**
-
-| Filing status | Deduction |
+| Situation | Treatment |
 | --- | --- |
-| Single (age 67+) | $20,000 against all income |
-| MFJ (both 67+) | $40,000 against all income |
+| Federal 100% bonus depreciation on 2026 assets | Add back the excess over pre-2025-law depreciation; deduct the Michigan depreciation in later years |
+| Federal section 179 above $1,250,000 (as indexed) | Add back the excess; track a Michigan carryover |
+| Domestic research expenses deducted in full federally | Add back; subtract over the next four years |
+| Federal qualified tips or overtime deduction claimed for 2026 | Subtract the same amount on Michigan |
+| The same deduction claimed for 2025 | Not allowed on the 2025 or any Michigan return |
+| Interest on Michigan municipal bonds | No adjustment (exempt federally and in Michigan) |
+| Interest on another state's bonds | Add back (Schedule 1 line 1) |
+| Social Security in AGI | Subtract in full |
+| Wages from a reciprocity state | Taxed only by Michigan |
+| Wages from a non-reciprocity state | Taxed in both; credit for the other state's tax |
+| Client with pension or IRA income, or age 67+ | Route to `mi-pension-retirement-subtraction` before finishing |
 
-### Key thresholds
+### Defaults when a fact is missing
 
-**Key thresholds table**
-
-| Item | Value |
+| Missing fact | Default, and flag it |
 | --- | --- |
-| Filing deadline | April 15, 2027 (for TY 2026) |
-| Extension | Automatic 6-month with federal extension |
-| Estimated tax threshold | $500 expected liability after credits and withholding |
-| Estimated payment due dates | April 15, June 15, September 15, January 15 |
+| Number of exemptions | Use the federal count of the taxpayer, spouse and dependents; ask |
+| Whether federal tips or overtime deductions were claimed | None; ask for federal Schedule 1-A |
+| Asset placed-in-service detail | No decoupling adjustment until the fixed asset register is seen; flag before filing |
+| Birth years | Ask before any retirement subtraction |
+| City of residence | Ask: Detroit residents and workers file a city return |
 
-### City income taxes (overview)
+### Red flags to raise with the client
 
-24 Michigan cities impose a separate city income tax. The most notable:
+| Flag | Why it matters |
+| --- | --- |
+| Federal depreciation, section 179 or research expensing on 2026 assets | Michigan add-back and a separate Michigan depreciation schedule |
+| A W-2 with Michigan wages but a reciprocity-state home address | Withholding may be wrong |
+| Expected balance due over $500 and no estimates | MI-2210 penalty and interest |
+| Tips or overtime on the W-2 but no federal deduction claimed | Michigan follows the federal claim only |
 
-**City income tax rates table**
+### Common income patterns
 
-| City | Resident rate | Non-resident / worker rate |
+| Pattern | Michigan treatment |
+| --- | --- |
+| W-2 wages from a Michigan employer | In AGI; Michigan withholding claimed on Schedule W |
+| W-2 wages from a reciprocity state | In AGI; Michigan only; ask the employer to withhold Michigan tax |
+| Schedule C net profit, 1099-NEC income | In AGI; estimates likely needed |
+| Rental income (Schedule E) | In AGI; Michigan property income is Michigan source |
+| Capital gains | In AGI at the flat rate |
+| U.S. Treasury interest | Subtract |
+| Other states' municipal bond interest | Add back |
+| Social Security | Subtract |
+
+## Worked cases
+
+**Case 1, single sole proprietor with one dependent.** Federal AGI $85,000. Interest of $500 from Ohio municipal bonds (add back). U.S. Treasury interest of $1,000 (subtract). Two exemptions: $11,800. Michigan taxable income $85,000 + $500 - $1,000 - $11,800 = $72,700. Tax at 4.25%: $3,089.75.
+
+```oa-check
+name: MI 2026 single, one dependent, Schedule 1 adjustments
+inputs:
+  federal_agi: 85000
+  other_state_muni_interest: 500
+  us_government_interest: 1000
+  exemptions: 2
+  exemption_amount: 5900
+  rate: 0.0425
+steps:
+  - taxable_income: max(federal_agi + other_state_muni_interest - us_government_interest - exemptions * exemption_amount, 0)
+  - tax: taxable_income * rate
+expected:
+  taxable_income: 72700
+  tax: 3089.75
+```
+
+**Case 2, a decision: does the 2026 federal tips and overtime deduction help on Michigan?** A married couple filing jointly with two children has federal AGI of $95,000. On the 2026 federal return they deducted $12,000 of qualified tips and $3,000 of qualified overtime below AGI. Four exemptions: $23,600. Without the new subtraction Michigan taxable income would be $71,400 and the tax $3,034.50. With it, taxable income is $95,000 - $23,600 - $12,000 - $3,000 = $56,400 and the tax $2,397.00: $637.50 less. Claim it, and keep federal Schedule 1-A with the file: Michigan allows only what the federal return claimed for the same year.
+
+```oa-check
+name: MI 2026 joint, tips and overtime subtraction
+inputs:
+  federal_agi: 95000
+  exemptions: 4
+  exemption_amount: 5900
+  federal_tips_deduction: 12000
+  federal_overtime_deduction: 3000
+  rate: 0.0425
+steps:
+  - tax_without: max(federal_agi - exemptions * exemption_amount, 0) * rate
+  - taxable_with: max(federal_agi - exemptions * exemption_amount - federal_tips_deduction - federal_overtime_deduction, 0)
+  - tax_with: taxable_with * rate
+  - saving: tax_without - tax_with
+expected:
+  tax_without: 3034.50
+  taxable_with: 56400
+  tax_with: 2397.00
+  saving: 637.50
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
 | --- | --- | --- |
-| Detroit | 2.4% | 1.2% |
-| Grand Rapids | 1.5% | 0.75% |
-| All other cities | 1.0% | 0.5% |
+| MI-R-01 | Part-year or nonresident (Schedule NR) | Refuse: allocation of income is outside this skill |
+| MI-R-02 | Corporate income tax or the flow-through entity tax | Refer to `mi-corporate-income-tax` |
+| MI-R-03 | City income tax | Use `mi-detroit-individual-return` for Detroit; refuse other cities |
+| MI-R-04 | Business income apportioned between Michigan and other states (MI-1040H) | Refuse: refer for multistate review |
+| MI-R-05 | Amended returns | Refer |
+| MI-R-06 | A tax year other than 2026 | Refuse: the exemption and other figures change each year |
+| MI-R-07 | Michigan Business Tax carryforwards or certificated credits | Refuse: a separate regime |
+| MI-R-08 | Decoupling adjustments for assets held in a flow-through entity, without the entity's statement | Refer: the entity must report each member's share |
+| MI-R-09 | Michigan net operating loss (MI-1045) | Refer |
+| MI-R-10 | Domicile unclear (homes in two states) | Refer: Form 3799 domicile review |
 
-- **City tax filing separate from MI-1040** — City income tax is filed on a separate return directly with the city. It is NOT computed on Form MI-1040.
+## Filing and payment
 
-## Section 3: How this skill works with the federal return
+File Form MI-1040 with Schedule 1 (and Schedule W for withholding) by **15 April 2027** through Michigan Treasury eServices (free file) or approved software, or on paper. A federal extension extends the Michigan filing date; it does not extend payment, so pay the expected balance by 15 April 2027. During 2026, estimated payments are due 15 April, 15 June and 15 September 2026 and 15 January 2027 (see `mi-estimated-tax`). Source for the payment dates: [2026 MI-1040ES](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf).
 
-- **Starting point** — Michigan taxable income begins with federal adjusted gross income (AGI) from federal Form 1040, Line 11.
-- **Step 1 - Additions** — Additions — Add back items Michigan does not exclude (e.g., deductions for income taxed by a Michigan city, interest on non-Michigan state/municipal bonds).
-- **Step 2 - Subtractions** — Subtractions — Subtract items Michigan excludes (e.g., U.S. government bond interest, Social Security benefits, Michigan state/local income tax refunds included in federal AGI, retirement/pension income for qualifying seniors).
-- **Step 3 - Michigan AGI** — Michigan AGI = Federal AGI + additions − subtractions.
-- **Step 4 - Personal exemptions** — Personal exemptions — $5,800 per qualifying exemption (2026).
-- **Step 5 - Michigan taxable income** — Michigan taxable income = Michigan AGI − exemptions.
-- **Step 6 - Tax** — Tax = Michigan taxable income × 4.25%.
-- **Step 7 - Credits** — Credits — Apply applicable credits.
-- **No standard/itemized deduction under 67** — Michigan does NOT have a state standard deduction or itemized deductions for taxpayers under age 67.
+### Form map
 
-## Section 4: Self-employed specific rules
+| Form | What it covers |
+| --- | --- |
+| MI-1040 | The return |
+| Schedule 1 | Additions and subtractions |
+| Schedule W | Withholding |
+| Schedule NR | Part-year and nonresident (out of scope) |
+| Form 4884 | Pension schedule (`mi-pension-retirement-subtraction`) |
+| MI-1040CR | Homestead property tax credit (`mi-homestead-credit`) |
+| MI-1040CR-7 | Home heating credit |
+| MI-1040ES | Estimated payments (`mi-estimated-tax`) |
 
-- **1. Self-employment income flow-through** — Self-employment income flows through federal Schedule C → federal AGI → Michigan AGI. No separate Michigan schedule for self-employment income.
-- **2. Federal SE tax deduction** — The 50% self-employment tax deduction is reflected in federal AGI. Michigan starts from federal AGI, so this carries through.
-- **3. Estimated taxes** — Self-employed taxpayers must make quarterly estimated payments (Form MI-1040ES) if expected liability exceeds $500. Penalty applies for underpayment.
-- **4. Business equipment depreciation** — Michigan generally conforms to federal depreciation, including IRC § 179. Michigan also conforms to bonus depreciation under IRC § 168(k).
-- **5. Home office deduction** — Flows through federal Schedule C; no separate Michigan adjustment.
-- **6. Health insurance deduction** — The self-employed health insurance deduction is included in federal AGI. No Michigan add-back required.
-- **7. City income tax** — If the taxpayer operates a business in a city with a city income tax (e.g., Detroit), a separate city income tax return may be required.
+## Completion checklist
 
-## Section 5: Tier 1 rules — deterministic
+- Residency confirmed as full-year Michigan.
+- Exemptions counted at $5,900 each, plus special exemptions.
+- Every Schedule 1 addition considered, including the decoupling items for 2026 assets.
+- Tips and overtime subtraction matches the federal 2026 claim.
+- Retirement, Social Security and senior items routed to `mi-pension-retirement-subtraction`.
+- Homestead credit tested (`mi-homestead-credit`).
+- City return need checked.
+- Withholding on Schedule W agrees with W-2 box 17 and 1099-R.
 
-**Tier 1 rules table**
+## Sources
 
-| Rule ID | Rule | Source |
+| Source | URL | Read on |
 | --- | --- | --- |
-| MI-T1-01 | Start with federal AGI (Form 1040, Line 11) | MCL 206.30 |
-| MI-T1-02 | Add back interest on out-of-state municipal bonds | MCL 206.30(1)(d) |
-| MI-T1-03 | Add back city income tax deduction claimed on federal Schedule A | MCL 206.30 |
-| MI-T1-04 | Subtract U.S. government bond interest | MCL 206.30(1)(f) |
-| MI-T1-05 | Subtract Social Security, military pay, railroad retirement (fully exempt) | MCL 206.30(1)(f) |
-| MI-T1-06 | Personal exemption: $5,800 per person (2026) | MCL 206.30 |
-| MI-T1-07 | Flat rate: taxable income × 4.25% | MCL 206.51 |
-| MI-T1-08 | Michigan EITC: 30% of federal Earned Income Credit (refundable) | MCL 206.272 |
-| MI-T1-09 | Homestead Property Tax Credit: available to homeowners/renters with household income ≤ certain thresholds (filed on MI-1040CR) | MCL 206.520 |
-| MI-T1-10 | Credit for taxes paid to other states: non-refundable, limited to Michigan tax on income also taxed by other state | MCL 206.255 |
+| Treasury notice: 4.25% income tax rate for individuals and fiduciaries in 2026 tax year (15 April 2026). Read for the 2026 rate and the fiscal 2025 revenue test (-1.56% against 2.70% inflation). | https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/04/15/425-income-tax-rate-for-individuals-and-fiduciaries-in-2026-tax-year | 2026-11-13 |
+| 2026 Michigan Income Tax Withholding Guide (Form 446). Read for the 4.25% rate, the $5,900 personal exemption and the reciprocity states. | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/SUW/TY2026/446_Withholding-Guide_2026.pdf | 2026-11-13 |
+| Treasury: Tax Year 2025 Information. Read for the 2025 exemption ($5,800), special exemption ($3,400), disabled veteran deduction ($500), stillbirth exemption and senior interest limits. | https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance | 2026-11-13 |
+| Treasury notice: Decoupling Michigan income taxes from certain IRC provisions (25 February 2026). Read for the 163(j), 168(k), 168(n), 174 and 179 adjustments under 2025 PA 24 and the pre-2025 section 179 limits. | https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions | 2026-11-13 |
+| Treasury Update newsletter, September 2026. Read for the 2026 to 2028 Michigan deductions for federal qualified tips and qualified overtime. | https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Newsletters/Treasury-Update-Newsletter_Sept2026.pdf | 2026-11-13 |
+| 2025 Michigan Schedule 1 instructions. Read for the addition and subtraction line list and the 529 cap. | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/Schedule-1-Instr.pdf | 2026-11-13 |
+| 2026 MI-1040ES. Read for the $500 estimate threshold and the four 2026 due dates. | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf | 2026-11-13 |
 
-## Section 6: Tier 2 rules — requires judgment
-
-**Tier 2 rules table**
-
-| Rule ID | Rule | Guidance |
-| --- | --- | --- |
-| MI-T2-01 | **Residency determination** — Michigan uses a domicile test. A person domiciled in Michigan is a resident for the full year, even if temporarily absent. | If taxpayer has homes in multiple states, flag for professional review. |
-| MI-T2-02 | **Reciprocal agreements** — Michigan has reciprocity with IL, IN, KY, MN, OH, WI. Wages earned in those states by a MI resident are taxed only by MI. | Verify the employer withheld for MI (not the work state) and file exemption certificate. |
-| MI-T2-03 | **City income tax nexus** — If a self-employed person has customers or performs work in a city with city income tax, apportionment rules may apply. | Flag for professional review if the taxpayer works in Detroit, Grand Rapids, or other taxing cities. |
-| MI-T2-04 | **Retirement/pension income subtraction** — Complex rules for taxpayers born before 1946, between 1946–1952, and after 1952. | Apply the correct tier based on birth year. |
-| MI-T2-05 | **Home heating credit** — Income-based credit available to low-income households. | Requires separate computation on MI-1040CR-7. |
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| W-2 wages from Michigan employer | Michigan withholding applies; include on MI-1040 | Most common |
-| W-2 wages from reciprocal state (IL, IN, KY, MN, OH, WI) | Should have MI withholding; if not, claim credit | File exemption with employer |
-| Schedule C net profit (sole prop) | Flows through federal AGI → Michigan AGI | No separate MI schedule |
-| Rental income (Schedule E) | Included in federal AGI → Michigan AGI | Michigan-source if property in MI |
-| Interest on U.S. government bonds | Subtract from Michigan AGI | MCL 206.30 |
-| Interest on non-Michigan muni bonds | Add back to Michigan AGI | Taxable for MI purposes |
-| Social Security benefits | Subtract from Michigan AGI (fully exempt) | MCL 206.30 |
-| Capital gains from asset sale | Included in federal AGI → Michigan AGI | No special MI rate |
-| 1099-NEC freelance income | Flows through Schedule C → federal AGI | Estimated payments likely needed |
-
-## Section 8: Form mapping
-
-**Form mapping table**
-
-| Michigan form / schedule | What it covers | Federal counterpart |
-| --- | --- | --- |
-| Form MI-1040 | Michigan Individual Income Tax Return | Form 1040 |
-| Schedule 1 (MI-1040) | Additions and Subtractions | Schedule 1 (Form 1040) |
-| Schedule NR | Non-resident / Part-year Resident | N/A |
-| Schedule W | Michigan Withholding | W-2/1099 withholding summary |
-| MI-1040CR | Homestead Property Tax Credit | N/A |
-| MI-1040CR-7 | Home Heating Credit | N/A |
-| MI-1040ES | Estimated Tax Payment Voucher | Form 1040-ES |
-| City returns (various) | City income tax | N/A |
-
-## Section 9: Refusal catalogue
-
-**Refusal catalogue table**
-
-| ID | Situation | Action |
-| --- | --- | --- |
-| MI-R-01 | Part-year or non-resident return (Schedule NR) | Refuse — out of scope |
-| MI-R-02 | Corporate income tax (CIT) | Refuse — out of scope |
-| MI-R-03 | City income tax return (Detroit, Grand Rapids, etc.) | Refuse — separate filing; out of scope |
-| MI-R-04 | Multi-state income apportionment | Refuse — flag for professional review |
-| MI-R-05 | Amended returns | Refuse — out of scope |
-| MI-R-06 | Tax year other than current | Refuse — rate may differ |
-| MI-R-07 | Michigan Business Tax (MBT) or Corporate Income Tax | Refuse — different tax type |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: the 2026 MI-1040 and Schedule 1 forms and instructions were not published when read, so 2025 line numbers are used and the line for the tips and overtime subtraction is not given; the 2026 special exemption, disabled veteran deduction, senior interest limits and 529 cap (2025 figures shown, "2025-2026 filing cycle"); the Michigan earned income tax credit percentage (the old file said 30% of the federal credit; not re-read); the extension rule (taken from the old file, not re-read); MCL 206.30 and 206.51 themselves (legislature.mi.gov returned errors, so the statute text was read only as quoted by Treasury).

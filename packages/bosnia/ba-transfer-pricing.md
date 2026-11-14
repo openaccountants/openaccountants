@@ -1,11 +1,12 @@
 ---
 name: ba-transfer-pricing
 description: "Transfer pricing in Bosnia and Herzegovina for tax year 2026, set out separately for the Federation of BiH (FBiH), Republika Srpska (RS) and Brčko District (BD), because each has its own profit tax law and rules. Covers who counts as a related party (25% in FBiH and RS, 10% in BD); the arm's length rule and the accepted methods; the interquartile range and the RS median adjustment; the FBiH 5% mark-up for support services; documentation that must exist at filing; the FBiH TP-902 report above KM 500,000 and the RS 9-month electronic filing above KM 50,000; master file and country-by-country thresholds; TP-900 domestic relief; penalties. Trigger phrases: transferne cijene, povezana lica, princip van dohvata ruke, TP-902, TP-900, CBC-901, Bosnia transfer pricing documentation, RS transfer pricing deadline. Out of scope: the profit tax computation, thin capitalisation and the interest cap (ba-corporate-income-tax), withholding tax and treaties (ba-cross-border), VAT (bosnia-vat)."
-version: 0.1
+version: 0.2
+type: situation-rules
 jurisdiction: BA
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
@@ -37,20 +38,20 @@ Apply the law of the place where the company (or its branch) is taxed on profit.
 | Related party, RS | 25% of shares or interests, 25% of votes or profit share, board control, family, or actual control | 2026 | RS law art. 31(3), (4): https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf |
 | Related party, BD | 10% of shares or capital | 2026 | BD law art. 2(j): https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf |
 | FBiH annual report on controlled transactions (Form TP-902) | Required when controlled transactions exceed KM 500,000 in the year; due 31 March of the next year | 2026 | FBiH law art. 49(3); FBiH Rulebook art. 92(1), (2): https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf |
-| FBiH documentation on request | Within 45 days of the request | 2026 | FBiH law art. 46(2); FBiH Rulebook art. 94 |
+| FBiH documentation on request | Within 45 days of the request | 2026 | [FBiH law art. 46(2)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [FBiH Rulebook art. 94](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
 | FBiH master file and country-by-country report (Form CBC-901) | Group consolidated revenue of EUR 750 million or more (KM at the Central Bank rate); CBC-901 due 12 months after the group's year end | 2026 | FBiH Rulebook arts. 70(2), 91(3), (4) as amended by 92/24: https://www.pufbih.ba/v1/public/upload/zakoni/80e33-pravilnik-o-izmjenama-pravilnika-o-transfernim-cijenama-92-24.pdf |
-| FBiH support services mark-up | 5% on cost accepted as arm's length, if the conditions are met | 2026 | FBiH Rulebook art. 54(2) |
-| FBiH cost pooling: "not the main activity" presumption | Service costs up to 15% of the provider's total costs | 2026 | FBiH Rulebook art. 56(3)(c) |
-| FBiH comparables | Interquartile range (first to third quartile); weighted average of 3 to 5 years | 2026 | FBiH Rulebook art. 25(3), (4) |
-| FBiH industry analysis waived | Activity under 10% of total revenue | 2026 | FBiH Rulebook art. 85(2) |
-| FBiH domestic relief claim (Form TP-900) | With the profit tax return, by 31 March; a late form counts as not filed | 2026 | FBiH Rulebook art. 95(3) |
+| FBiH support services mark-up | 5% on cost accepted as arm's length, if the conditions are met | 2026 | [FBiH Rulebook art. 54(2)](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
+| FBiH cost pooling: "not the main activity" presumption | Service costs up to 15% of the provider's total costs | 2026 | [FBiH Rulebook art. 56(3)(c)](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
+| FBiH comparables | Interquartile range (first to third quartile); weighted average of 3 to 5 years | 2026 | [FBiH Rulebook art. 25(3), (4)](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
+| FBiH industry analysis waived | Activity under 10% of total revenue | 2026 | [FBiH Rulebook art. 85(2)](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
+| FBiH domestic relief claim (Form TP-900) | With the profit tax return, by 31 March; a late form counts as not filed | 2026 | [FBiH Rulebook art. 95(3)](https://www.pufbih.ba/v1/public/upload/zakoni/ae0c4-pravilnik-o-transfernim-cijenama-preciscen-tekst.pdf) |
 | RS documentation threshold | Controlled transactions (including credits and loans) over KM 50,000 in the year | 2026 | RS law art. 34(1) as amended by 114/25 art. 10: https://poreskaupravars.org/wp-content/uploads/2025/12/Dobit-1.pdf |
-| RS documentation filing | Electronically within 30 days of a request, and in any case within 9 months after the year end without a request | 2026 | RS law art. 34(2) as amended by 114/25 art. 10 |
+| RS documentation filing | Electronically within 30 days of a request, and in any case within 9 months after the year end without a request | 2026 | [RS law art. 34(2) as amended by 114/25 art. 10](https://poreskaupravars.org/wp-content/uploads/2025/12/Dobit-1.pdf) |
 | RS annual return of controlled transactions | Controlled transactions (including loans) over KM 700,000 in the year, no netting of income and expenses; filed with the profit tax return | 2026 | RS Rulebook art. 13: https://www.poreskaupravars.org/dokumenti/pravilnici/Pravilnik%20o%20transfernim%20cijenama%20i%20metodama%20za%20njihovo%20utvrdjivanje.pdf |
-| RS country-by-country data in the documentation | Group revenue over EUR 750,000,000 | 2026 | RS Rulebook art. 12(2)(4) |
-| RS adjustment point | Median of the arm's length range, unless a party proves another point fits | 2026 | RS Rulebook art. 11(3), (4) |
-| Fines, FBiH | Company KM 3,000 to 100,000; responsible person KM 2,500 to 10,000; repeat offence +50% | 2026 | FBiH law art. 58(2) to (4) |
-| Fines, RS | Company KM 20,000 to 60,000; responsible person KM 5,000 to 15,000 | 2026 | RS law art. 58 (94/15; point 2 amended by 114/25 art. 17) |
+| RS country-by-country data in the documentation | Group revenue over EUR 750,000,000 | 2026 | [RS Rulebook art. 12(2)(4)](https://www.poreskaupravars.org/dokumenti/pravilnici/Pravilnik%20o%20transfernim%20cijenama%20i%20metodama%20za%20njihovo%20utvrdjivanje.pdf) |
+| RS adjustment point | Median of the arm's length range, unless a party proves another point fits | 2026 | [RS Rulebook art. 11(3), (4)](https://www.poreskaupravars.org/dokumenti/pravilnici/Pravilnik%20o%20transfernim%20cijenama%20i%20metodama%20za%20njihovo%20utvrdjivanje.pdf) |
+| Fines, FBiH | Company KM 3,000 to 100,000; responsible person KM 2,500 to 10,000; repeat offence +50% | 2026 | [FBiH law art. 58(2) to (4)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Fines, RS | Company KM 20,000 to 60,000; responsible person KM 5,000 to 15,000 | 2026 | [RS law art. 58 (94/15](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf); point 2 amended by 114/25 art. 17) |
 | Late-payment interest | FBiH 0.04% a day; RS 0.03% a day; BD 0.03% a day, capped at the principal | 2026 | FBiH: https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf art. 2; RS ZPP art. 60(1): https://poreskaupravars.org/wp-content/uploads/2020/11/Zakon-o-poreskom-postupku.pdf; BD Zakon o Poreznoj upravi art. 68 |
 
 ## The taxable base

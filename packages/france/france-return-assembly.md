@@ -1,14 +1,15 @@
 ---
 name: fr-return-assembly
 description: Final orchestrator skill that assembles the complete French filing package for France-resident self-employed individuals, micro-entrepreneurs, and sole proprietors. Consumes outputs from all French content skills (france-tva for TVA CA3/CA12, france-income-tax for 2042/2042-C-PRO/2035/2031, france-cotisations for URSSAF/SSI, fr-estimated-tax for prélèvement à la source) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all French content skills listed above. France full-year residents only. Self-employed individuals, micro-entrepreneurs, and sole proprietors only.
-version: 1.1
+version: 2.0
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
 # France: assembling the self-employed filing package (return assembly)
@@ -543,27 +544,30 @@ If the option was made but the reference-income test fails, flag it at once: the
 
 ## Sources
 
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23267 (micro regime, checked 13 May 2026 by the site, read 2026-10-31)
-- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf (2026 income tax brochure, self-employed income, read 2026-10-31)
-- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf (2026 income tax brochure, deductible charges, read 2026-10-31)
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 (income tax scale, checked 15 April 2026 by the site, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 (family-quotient cap, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 (décote, read 2026-10-31)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (VAT franchise en base, checked 1 January 2026 by the site, read 2026-10-31)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (declaring and paying VAT, checked 21 February 2026 by the site, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/1196-PGP.html (VAT on gifts, read 2026-10-31)
-- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (micro-entrepreneur rates, Acre, training contribution, declarations, read 2026-10-31)
-- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html (reformed base, read 2026-10-31)
-- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html (CSG-CRDS and the attestation, read 2026-10-31)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (CFE, checked 2 April 2026 by the site, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/839-PGP.html (CVAE, read 2026-10-31)
-- https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 (2026 deadlines, balance, correction service, read 2026-10-31)
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F34009 (prélèvement à la source, checked 15 April 2026 by the site, read 2026-10-31)
-- https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur (micro-entrepreneur declaring, flat-payment ceiling, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/4911-PGP.html (late filing surcharge, read 2026-10-31)
-- https://bofip.impots.gouv.fr/bofip/1458-PGP.html (late payment interest, read 2026-10-31)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F10029 (document retention, read 2026-10-31)
-- https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation (electronic invoicing start dates, read 2026-10-31)
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| (micro regime, checked 13 May 2026 by the site, read 2026-10-31): read for 2.2%, 1.7%, 30%, 71%, 34% and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 | 2026-11-14 |
+| (2026 income tax brochure, self-employed income, read 2026-10-31): read for 12.8%, 10.6%, 2.2%, 0.5%, 1.7% and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf | 2026-11-14 |
+| (2026 income tax brochure, deductible charges, read 2026-10-31): read for 12.8%, 9.2%, 30%, 50%, 10% and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf | 2026-11-14 |
+| (income tax scale, checked 15 April 2026 by the site, read 2026-10-31): read for 30%, 11%, 45%, 41%, 0% and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 | 2026-11-14 |
+| (family-quotient cap, read 2026-10-31): read for 40%, EUR 1,807 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 | 2026-11-14 |
+| (décote, read 2026-10-31): read for 30%, 40%, EUR 1,982, EUR 3,277 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 | 2026-11-14 |
+| (VAT franchise en base, checked 1 January 2026 by the site, read 2026-10-31): read for EUR 93,500, EUR 85,000, EUR 37,500, EUR 41,250, EUR 1,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 | 2026-11-14 |
+| (declaring and paying VAT, checked 21 February 2026 by the site, read 2026-10-31): read for 10%, 55%, 40%, EUR 37,500, EUR 85,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 | 2026-11-14 |
+| (VAT on gifts, read 2026-10-31): read for the procedure and conditions this skill cites from it | https://bofip.impots.gouv.fr/bofip/1196-PGP.html | 2026-11-14 |
+| (micro-entrepreneur rates, Acre, training contribution, declarations, read 2026-10-31): read for 21.2%, 17.4%, 19.2%, 23.2%, 12.8% and the conditions next to them | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html | 2026-11-14 |
+| (reformed base, read 2026-10-31): read for 0.3%, 0.5%, 34%, 50%, 11% and the conditions next to them | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html | 2026-11-14 |
+| (CSG-CRDS and the attestation, read 2026-10-31): read for 0.1%, 0.3%, 0.5%, 9.7%, 9.2% and the conditions next to them | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html | 2026-11-14 |
+| (CFE, checked 2 April 2026 by the site, read 2026-10-31): read for 30%, 50%, 1%, EUR 500,000, EUR 3,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 | 2026-11-14 |
+| (CVAE, read 2026-10-31): read for 50%, 10%, 40%, 0%, EUR 500,000 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/839-PGP.html | 2026-11-14 |
+| (2026 deadlines, balance, correction service, read 2026-10-31): read for 10%, EUR 976, EUR 974, EUR 300 and the conditions next to them | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 | 2026-11-14 |
+| (prélèvement à la source, checked 15 April 2026 by the site, read 2026-10-31): read for 10%, 0%, EUR 1,000, EUR 300 and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F34009 | 2026-11-14 |
+| (micro-entrepreneur declaring, flat-payment ceiling, read 2026-10-31): read for 21.2%, 12.3%, 2.2%, 1.7%, 30% and the conditions next to them | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur | 2026-11-14 |
+| (late filing surcharge, read 2026-10-31): read for 10%, 40% and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4911-PGP.html | 2026-11-14 |
+| (late payment interest, read 2026-10-31): read for 0.2%, 30% and the conditions next to them | https://bofip.impots.gouv.fr/bofip/1458-PGP.html | 2026-11-14 |
+| (document retention, read 2026-10-31): read for EUR 1,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F10029 | 2026-11-14 |
+| (electronic invoicing start dates, read 2026-10-31): read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation | 2026-11-14 |
 
 Not yet confirmed: the flat-payment ceiling for the option taken in 2026. F23267 prints EUR 29,579 for a single person against year N-2, and impots.gouv.fr prints EUR 29,315 against the 2024 reference income.
 

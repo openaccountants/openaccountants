@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-company-accounts-and-reporting"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # Guernsey: company accounts, records and annual reporting
@@ -168,8 +168,8 @@ expected:
 
 Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-company-accounts-and-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-company-accounts-and-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-company-accounts-and-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-company-accounts-and-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.

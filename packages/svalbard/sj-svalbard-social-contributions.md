@@ -2,16 +2,17 @@
 name: sj-svalbard-social-contributions
 description: >
   Determine ordinary National Insurance membership and contribution classes for people living or working on Svalbard in 2026. Covers retained membership, newcomers working for Norwegian employers, employment cessation, Nordic coordination, ordinary salary and pension rates, age-based low-rate classes, the middle rate for Svalbard sole-trader income, and the statutory zero employer contribution cases. Separates gross payroll collection from individually assessed business income and the youth refund introduced for 2026. Includes reporting/payment cross-references, penalties and two reproducible examples. Use for Svalbard trygdeavgift, employer contributions, national insurance, pension income and self-employment. Jan Mayen is outside this pack. This source-cited draft requires licensed professional review.
-version: 0.1
+version: 0.2
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Svalbard: social insurance contributions in 2026 v0.1
+# Svalbard: social insurance contributions in 2026 v0.2
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 

@@ -1,49 +1,134 @@
 ---
 name: vc-vat
-description: "Saint Vincent and the Grenadines VAT reference checked for 2026. Covers the current administrative rates, registration scope, accommodation rate and monthly return and payment deadline. Includes tax-exclusive and tax-inclusive computations and a framework for reviewing sales classifications. Uses the current Inland Revenue tax page while distinguishing it from the older published VAT Act, whose amendment chain remains incomplete. Use after the supply’s taxable status and value are established. Does not assume all small hotels or public entertainment promoters are outside registration, or that exemption equals zero rating. Independent accountant review and further statutory verification remain outstanding."
+description: "Saint Vincent and the Grenadines VAT for 2026. Covers the 16% standard rate, 11% on accommodation rooms, zero rating and exemption, registration for businesses with annual sales of EC$300,000 and for every public entertainment promoter and hotelier (guest houses and apartments included), returns and payment by the 15th of the next month, 1.5% monthly interest, the tax fraction, and the separate EC$8 a night Climate Resiliency Levy. Trigger phrases include SVG VAT, St Vincent VAT 16%, VAT registration St Vincent, accommodation VAT 11%."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/vc-vat"
   jurisdiction: "VC"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Saint Vincent and the Grenadines VAT
 
-## Scope and registration
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Source-cited draft checked 22 October 2026. The [current Inland Revenue guidance](https://ird.gov.vc/index.php/taxes) states a general annual-sales registration figure of EC$300,000 and separately lists all public-entertainment promoters and hoteliers, including guest houses and apartments. Do not apply a small-business turnover exemption to those separately listed categories without checking their statutory position.
+## Scope
 
-The guidance's wording does not precisely settle the exact EC$300,000 boundary, forecast test, aggregation or application deadline. Those points require the current Act and amendments before a registration determination. This Guide supplies no invented equality rule.
+Value Added Tax in Saint Vincent and the Grenadines for 2026, as published by the Inland Revenue Department (IRD). Covers rates, registration, returns and output tax arithmetic. Amounts are EC$. The VAT Act PDF on the IRD site is the 2009 revised issue and is not used for current figures. Input credits, imports, refunds and exemption lists are outside this skill. Company tax: [vc-corporate-income-tax](vc-corporate-income-tax.md).
 
-## Rates and examples
+## Ask the client first
 
-IRD lists 16% standard VAT, 11% for accommodation rooms, zero rating and exemption. [IRD VAT section](https://ird.gov.vc/index.php/taxes). Classify the transaction before selecting a rate. The room rate is not a blanket classification of every hotel invoice line.
+1. Annual sales, and whether the business is a public entertainment promoter or a hotelier, guest house or apartment.
+2. What is supplied: rooms, food, tours, other goods and services; any zero-rated or exempt supplies?
+3. Prices inclusive or exclusive of VAT?
+4. Room nights for transient visitors (Climate Resiliency Levy).
+5. Tax period and VAT collected.
 
-Assume the following bases are established and no special adjustment applies:
+## The method, step by step
 
-| Tax-exclusive charge | VAT | Total |
-|---|---:|---:|
-| EC$1,000 standard-rated | 160 | 1,160 |
-| EC$1,000 qualifying accommodation room | 110 | 1,110 |
-| EC$2,500 standard-rated | 400 | 2,900 |
+### Rates, bands and thresholds
 
-For an EC$1,160 price inclusive only of standard VAT, divide by 1.16 to recover the EC$1,000 base and EC$160 tax. For a room price of EC$1,110 inclusive only of 11% VAT, divide by 1.11. Applying the percentage to the tax-inclusive price would overstate the embedded tax.
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Standard rate | 16% | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
+| Accommodation (rooms) | 11% | same |
+| Zero-rated | 0% | same |
+| Exempt | No rate | same |
+| Registration | Businesses grossing EC$300,000 in sales a year; all promoters of public entertainment; all hoteliers including guest houses and apartments | same |
+| Return and payment | On or before the 15th of the month after the tax period | same |
+| Interest | 1.5% a month | same |
+| Climate Resiliency Levy | EC$8 per night per room for transient visitors at any visitor accommodation; due by the 15th of the next month | same |
 
-These examples calculate output VAT only. They do not decide input-credit eligibility, treatment of service charges, package allocations, deposits, imported services or refunds. Keep zero-rated and exempt supplies separately identified; this batch does not certify their respective input-tax consequences.
+### Steps
 
-## Filing
+1. **Register** if sales reach EC$300,000 a year, or at once if a promoter of public entertainment or any hotelier, whatever the turnover.
+2. **Classify** each supply: rooms 11%, other taxable supplies 16%, zero-rated 0%, exempt.
+3. **Output tax:** net x rate; inside an inclusive price, price x 16/116 (or 11/111).
+4. **Return and pay** by the 15th of the following month; June's return and payment are due 15 July.
+5. **Climate Resiliency Levy:** EC$8 per room per night on top, remitted by the 15th.
 
-IRD states returns and payment are due by the fifteenth of the following month. [IRD VAT section](https://ird.gov.vc/index.php/taxes). For example, a June tax period points to 15 July. Any holiday rule or special direction needs separate verification.
+## Boundary and exception table
 
-Suggested monthly controls: reconcile sales by rate to invoices, identify credits and adjustments separately, match the tax calculation to the return, and retain filing/payment confirmation. Investigate unexplained differences instead of forcing the ledger to match a filed return.
+| Situation | Treatment | Source |
+|---|---|---|
+| Guest house with sales well below the general figure | Must register: all hoteliers register whatever their sales | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
+| Hotel package with room and meals | Room 11%, meals 16%; split the price | same |
+| Sales of exactly EC$300,000 | The IRD wording ("grossing in sales of $300,000") does not settle the boundary; treat as registrable until the Act is checked | same |
+| Exempt against zero-rated | Different treatments; keep them apart in the records | same |
+| Older VAT Act text | 2009 revised issue; not a current rate authority | [VAT Act PDF](https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf) |
 
-## Source status and remaining work
+## Worked cases
 
-The [official VAT Act PDF](https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf) was downloaded, but its opening pages show the 2009 revised issue and only early amendments. It is not a current consolidated rate authority. The rate and filing statements above rely on current IRD administrative guidance, pending reconciliation of later legislation. The exact threshold tests, input credits, exemptions, import rules, records, penalties and other operational provisions need further statutory work. Independent accountant review is pending; this is not comprehensive VAT coverage.
+### Case 1: standard and room rates both ways
+
+A standard-rated charge of EC$1,000: VAT 160, total 1,160. A room charge of 1,000: VAT 110, total 1,110. Inside 2,900 inclusive of 16% VAT the tax is 400.
+
+```oa-check
+name: SVG VAT 16% and 11%, and the tax fraction
+inputs:
+  net: 1000
+  gross_std: 2900
+steps:
+  - std_vat: net * 0.16
+  - room_vat: net * 0.11
+  - fraction_vat: gross_std * 0.16 / 1.16
+expected:
+  std_vat: 160
+  room_vat: 110
+  fraction_vat: 400
+```
+
+### Case 2 (decision): split a hotel package or charge one rate?
+
+A 3-night package is 1,500 net: rooms 1,000 and meals 500. Split correctly, VAT is 110 + 80 = 190. Charging 11% on the whole package gives 165, understating VAT by 25. The Climate Resiliency Levy adds 3 x 8 = 24 for one room.
+
+```oa-check
+name: SVG hotel package split, rooms 1,000 and meals 500
+inputs:
+  rooms: 1000
+  meals: 500
+  nights: 3
+steps:
+  - split_vat: rooms * 0.11 + meals * 0.16
+  - single_rate_vat: (rooms + meals) * 0.11
+  - understatement: split_vat - single_rate_vat
+  - levy: nights * 8
+expected:
+  split_vat: 190
+  single_rate_vat: 165
+  understatement: 25
+  levy: 24
+```
+
+## When to refuse or refer
+
+- The exact registration tests (forecast, aggregation, deadline) and the current Act text.
+- Input credits, imports, imported services, deposits, service charges and refunds.
+- Penalty amounts (the IRD page names penalties without amounts).
+
+## Filing and payment
+
+1. Register with the IRD.
+2. File and pay by the 15th of the month after each tax period ([IRD taxes page](https://ird.gov.vc/index.php/taxes)).
+3. Reconcile sales by rate to invoices, credits and adjustments to the return; keep filing and payment confirmations.
+
+## Completion checklist
+
+- Registration duty checked, hoteliers and promoters included.
+- 16% or 11% by supply; packages split.
+- Filed and paid by the 15th; levy remitted.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| IRD taxes page: read for the VAT rates (16%, 11%, 0%, exempt), who registers, the 15th of the month deadline, 1.5% interest and the Climate Resiliency Levy of EC$8 a night | https://ird.gov.vc/index.php/taxes | 2026-11-14 |
+| VAT Act Cap. 445 PDF on the IRD site (scanned, OCR of pages 1 and 2): read for its revision (Issue 1/2009, amendments to Act 1 of 2008), so not used for current figures | https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf | 2026-11-14 |
+
+Not yet confirmed: the VAT Act as amended (registration tests, deadlines, exempt and zero-rated lists); penalty amounts; whether the EC$300,000 test is "equal to or more" or "more than".
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `vc-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/vc-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `vc-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/vc-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

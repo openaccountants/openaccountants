@@ -3,10 +3,11 @@ name: mt-vat3-quarterly-return-malta
 description: "Legacy VAT3 lookup name for Malta periodic VAT returns. This compatibility Guide follows malta-vat-return; use that canonical Guide for Article 10, Article 11 and distinct Article 12 obligations. VAT3 is not accepted here as proof of an official form identity."
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-version: 1.1
+version: 1.3
+type: filing-howto
 ---
 
 # Malta VAT returns: Article 10, Article 11 and Article 12

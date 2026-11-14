@@ -2,14 +2,15 @@
 name: gg-transfer-pricing-and-connected-transactions
 description: >
   Prepare Guernsey 2026 domestic connected-transaction and transfer-pricing working papers from the verified income-tax base, anti-avoidance, connected machinery-sale and records rules. Identify the actual adjustment power before changing a price or deduction. Covers the section 108 market-value and written-election calculations, the Revenue Service's approved associated-company reporting treatment, company-by-company evidence, retention periods, omitted-income notifications and information-notice appeals. Distinguishes those rules from treaty associated-enterprise adjustments and specialist international reporting. Includes two recomputing pricing-base examples. This source-cited draft does not establish a complete general transfer-pricing or master-file/local-file regime, nor an exemption from one. Its exact current-scope question remains explicit after independent source review; competent-authority clarification is still required.
-version: "0.1"
+version: "0.3"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Guernsey domestic connected transactions and transfer-pricing evidence
@@ -137,14 +138,14 @@ expected:
 
 | Primary source and actual read scope | URL | Read on |
 |---|---|---|
-| Income Tax Law v.0113:7(1)–(3)(d),65(4),67,68,68A,68AA,75,75A,75P,108,148(3); targeted75B(1)–(4),75K(1)–(7),(11),75L(1)–(5),75M(1)–(3). Consolidation is non-authoritative; authentic enactments control | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
-| 2006 GSI37 Keeping of Records Regulations, complete rr 1–8, read with actual2012amendment rather than original wording alone | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267992 | 2026-10-28 |
-| 2012 GSI13 Records amendment, complete rr 1–8 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266947 | 2026-10-28 |
-| Revenue C42, all 3 pages, revised 16 July 2025 | https://gov.gg/CHttpHandler.ashx?id=191876&p=0 | 2026-10-28 |
-| Revenue M40/M41, complete statements; specific settlement arm's-length scope | https://gov.gg/CHttpHandler.ashx?id=189611&p=0 and https://gov.gg/CHttpHandler.ashx?id=191687&p=0 | 2026-10-28 |
+| Income Tax Law v.0113: read for ss. 7(1)–(3)(d), 65(4),67,68,68A,68AA,75,75A,75P,108,148(3); targeted75B(1)–(4),75K(1)–(7),(11),75L(1)–(5),75M(1)–(3). Consolidation is non-authoritative; authentic enactments control | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
+| 2006 GSI37 Keeping of Records Regulations: read for complete rr 1–8, read with actual2012amendment rather than original wording alone | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267992 | 2026-10-28 |
+| 2012 GSI13 Records amendment: read for complete rr 1–8 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266947 | 2026-10-28 |
+| Revenue C42: read for all 3 pages, revised 16 July 2025 | https://gov.gg/CHttpHandler.ashx?id=191876&p=0 | 2026-10-28 |
+| Revenue M40/M41: read for complete statements; specific settlement arm's-length scope | https://gov.gg/CHttpHandler.ashx?id=189611&p=0 and https://gov.gg/CHttpHandler.ashx?id=191687&p=0 | 2026-10-28 |
 | Revenue MAP Guidance issue 8,12 February 2024:7.1–7.4,7.7.1–7.7.5; linked in Guernsey's 17 March 2025 dispute-resolution profile | https://www.gov.gg/CHttpHandler.ashx?id=178595&p=0 | 2026-10-28 |
-| OECD 2020 best-practices peer review, paragraph 3: dated Guernsey-reported no-specific-TP-legislation statement only | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/beps-action-14-peer-review-best-practices-guernsey-2020.pdf | 2026-10-28 |
+| OECD 2020 best-practices peer review: read for paragraph 3: dated Guernsey-reported no-specific-TP-legislation statement only | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/beps-action-14-peer-review-best-practices-guernsey-2020.pdf | 2026-10-28 |
 
 Not yet confirmed: whether a general domestic arm's-length adjustment regime or TP-specific master-file/local-file requirement applies for 2026 beyond the verified provisions and ordinary records duties above, including any operative scope/threshold/method/filing/penalty instrument. The2020statement does not establish current absence. Specialist CbCR/Pillar Two and regulated-sector regimes are excluded, not treated as absent. Detailed privilege, compulsory production/search and source-specific foreign-information appeals require separate legal review. The [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) accepts these methods at `5d8327ad`, with the [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md) checking later status edits. No professional attestation is claimed.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

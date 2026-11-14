@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/no-corporate-income-tax"
   jurisdiction: "NO"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Norway corporate income tax (2026)
@@ -29,29 +29,29 @@ Norway taxes companies on ordinary income (alminnelig inntekt) at a flat state r
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Tax on ordinary income, companies | 22% | 2026 | ssv. § 3-3 first paragraph; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
-| Companies that pay financial-sector tax on wages (finansskatt, folketrygdloven § 23-2a) | 25% | 2026 | ssv. § 3-3 second paragraph |
-| Group entities within the global minimum tax | Supplementary tax (suppleringsskatt) under the Supplementary Tax Act | 2026 | ssv. § 3-3 third paragraph |
-| Petroleum: ordinary tax on petroleum income | 22% | 2026 | ssv. § 4-1 third paragraph |
-| Petroleum: special tax (særskatt) | 71.8% | 2026 | ssv. § 4-2 |
-| Resource rent tax, hydropower | 57.7% | 2026 | ssv. § 3-4 |
-| Resource rent tax, wind power | 32.1% | 2026 | ssv. § 3-4 |
-| Resource rent tax, aquaculture | 32.1%; base deduction of NOK 70 million can be claimed | 2026 | ssv. § 3-4 A |
-| State wealth tax, companies and bodies not exempt (not AS or ASA) | 0.3%; wealth under NOK 10,000 tax-free | 2026 | ssv. § 2-2 |
-| Participation exemption: taxable share of exempt dividends | 3% of the dividend (22% x 3% = 0.66% effective) | 2026 | sktl. § 2-38 sixth paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§2-38 |
-| Participation exemption: holding test for shares outside the EEA | At least 10% of capital and votes, held continuously for 2 years | 2026 | sktl. § 2-38 third paragraph letters b and d |
+| Companies that pay financial-sector tax on wages (finansskatt, folketrygdloven § 23-2a) | 25% | 2026 | ssv. § 3-3 second paragraph; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Group entities within the global minimum tax | Supplementary tax (suppleringsskatt) under the Supplementary Tax Act | 2026 | ssv. § 3-3 third paragraph; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Petroleum: ordinary tax on petroleum income | 22% | 2026 | ssv. § 4-1 third paragraph; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Petroleum: special tax (særskatt) | 71.8% | 2026 | ssv. § 4-2; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Resource rent tax, hydropower | 57.7% | 2026 | ssv. § 3-4; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Resource rent tax, wind power | 32.1% | 2026 | ssv. § 3-4; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Resource rent tax, aquaculture | 32.1%; base deduction of NOK 70 million can be claimed | 2026 | ssv. § 3-4 A; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| State wealth tax, companies and bodies not exempt (not AS or ASA) | 0.3%; wealth under NOK 10,000 tax-free | 2026 | ssv. § 2-2; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Participation exemption: taxable share of exempt dividends | 3% of the dividend (22% x 3% = 0.66% effective, computed) | 2026 | sktl. § 2-38 sixth paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§2-38 |
+| Participation exemption: holding test for shares outside the EEA | At least 10% of capital and votes, held continuously for 2 years | 2026 | sktl. § 2-38 third paragraph letters b and d; https://lovdata.no/lov/1999-03-26-14/§2-38 |
 | Interest limitation: cap | Net interest above 25% of ordinary income plus interest costs and tax depreciation, less interest income | 2026 | sktl. § 6-41 third paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
-| Interest limitation: threshold, group companies | NOK 25 million net interest, for the Norwegian part of the group together | 2026 | sktl. § 6-41 fourth paragraph |
-| Interest limitation: threshold, companies not in a group | NOK 5 million net interest | 2026 | sktl. § 6-41 fourth paragraph |
-| Interest limitation: related-party test | At least 50% ownership or control, direct or indirect | 2026 | sktl. § 6-41 fifth paragraph |
-| Interest limitation: carry-forward of disallowed interest | Next 10 years | 2026 | sktl. § 6-41 tenth paragraph |
+| Interest limitation: threshold, group companies | NOK 25 million net interest, for the Norwegian part of the group together | 2026 | sktl. § 6-41 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
+| Interest limitation: threshold, companies not in a group | NOK 5 million net interest | 2026 | sktl. § 6-41 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
+| Interest limitation: related-party test | At least 50% ownership or control, direct or indirect | 2026 | sktl. § 6-41 fifth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
+| Interest limitation: carry-forward of disallowed interest | Next 10 years | 2026 | sktl. § 6-41 tenth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
 | Group contribution: ownership test | Parent owns more than nine tenths of the shares and votes at year end | 2026 | sktl. § 10-4 first paragraph; https://lovdata.no/lov/1999-03-26-14/§10-4 |
 | Capitalisation threshold for depreciable assets | Cost of NOK 30,000 or more and useful life of at least 3 years | 2026 | sktl. § 14-40 first paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§14-40 |
 | Declining-balance depreciation, groups a / b / c / d | 30% / 20% / 24% / 20% | 2026 | sktl. § 14-43 first paragraph; https://lovdata.no/lov/1999-03-26-14/§14-43 |
-| Declining-balance depreciation, groups e / f / g / h / i / j | 14% / 12% / 5% / 4% / 2% / 10% | 2026 | sktl. § 14-43 first paragraph |
-| Withholding tax on dividends to foreign shareholders | 25%, or the lower treaty rate | 2026 | ssv. § 3-5 third paragraph; sktl. § 10-13 |
-| Withholding tax on interest, royalties and certain lease payments to related companies in low-tax countries | 15%, or the lower treaty rate | 2026 | ssv. § 3-5 fifth paragraph; sktl. §§ 10-80, 10-81 |
-| Low-tax country | Tax on the company's total profit is less than two thirds of the Norwegian tax | 2026 | sktl. § 10-63 |
-| Tonnage tax, first 1,000 net tonnes | NOK 0.90 per day per 100 net tonnes | 2026 | ssv. § 5-1 |
+| Declining-balance depreciation, groups e / f / g / h / i / j | 14% / 12% / 5% / 4% / 2% / 10% | 2026 | sktl. § 14-43 first paragraph; https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| Withholding tax on dividends to foreign shareholders | 25%, or the lower treaty rate | 2026 | ssv. § 3-5 third paragraph; sktl. § 10-13; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Withholding tax on interest, royalties and certain lease payments to related companies in low-tax countries | 15%, or the lower treaty rate | 2026 | ssv. § 3-5 fifth paragraph; sktl. §§ 10-80, 10-81; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Low-tax country | Tax on the company's total profit is less than two thirds of the Norwegian tax | 2026 | sktl. § 10-63; https://lovdata.no/lov/1999-03-26-14/§10-63 |
+| Tonnage tax, first 1,000 net tonnes | NOK 0.90 per day per 100 net tonnes | 2026 | ssv. § 5-1; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 | Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | sktbl. § 11-1; Skatteetaten, Forsinkelsesrenter; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
 | Court fee (rettsgebyr), the base for coercive fines | NOK 1,345 | 2026 | Brønnøysundregistrene, late filing penalty page; https://www.brreg.no/en/submission-of-annual-accounts/late-filing-penalty/how-much-is-the-late-filing-penalty/ |
 
@@ -200,4 +200,4 @@ Not yet confirmed: the Petroleum Tax Act's own base rules (uplift, deductions) a
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

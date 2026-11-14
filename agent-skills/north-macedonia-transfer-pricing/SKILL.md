@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/north-macedonia-transfer-pricing"
   jurisdiction: "MK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# North Macedonia transfer pricing v0.1
+# North Macedonia transfer pricing v0.2
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -24,16 +24,16 @@ Art. 12-b expressly excludes **transactions between resident related parties** a
 
 | Item | Amount | Tax year | Official provision |
 |---|---|---|---|
-| Main corporate TP revenue exclusion | Total annual revenue up to and including 300,000,000 | 2026 | [Profit Tax Law art. 12-b][cit] |
-| Shortened report | Covered annual related-party transaction total not exceeding 10,000,000; otherwise full report | 2026 | [Art. 12-a(1)-(2)][cit] |
-| Ownership/votes/common-ownership threshold | At least 20% | 2026 | [Art. 16(1)(1)-(2)][cit] |
-| Loan/guarantee relationship | More than 20% of other's total book assets | 2026 | [Art. 16(1)(4)][cit] |
-| Contractual profit relationship | At least 20% | 2026 | [Art. 16(1)(5)][cit] |
-| Low-tax jurisdiction relationship test | Foreign profit-tax rate 25% below North Macedonia's rate | 2026 | [Art. 16(1)(7)][cit] |
-| Arm's-length accepted range | 25th-75th percentiles; outside range use median | 2026 | [TP Rulebook art. 16(5)-(6)][tp] |
-| Main-report retention | 10 years from year-end covered by report | 2026 | [Profit Tax Law art. 12-a(4)][cit] |
-| Report on UJP request | Within 15 days after receipt; UJP request after 30 days from DB deadline | 2026 | [Art. 12-a(5)-(6)][cit] |
-| Profit-tax effect of a taxable uplift | 10% | 2026 | [Art. 2][cit] |
+| Main corporate TP revenue exclusion | Total annual revenue up to and including 300,000,000 | 2026 | [Profit Tax Law art. 12-b](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Shortened report | Covered annual related-party transaction total not exceeding 10,000,000; otherwise full report | 2026 | [Art. 12-a(1)-(2)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Ownership/votes/common-ownership threshold | At least 20% | 2026 | [Art. 16(1)(1)-(2)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Loan/guarantee relationship | More than 20% of other's total book assets | 2026 | [Art. 16(1)(4)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Contractual profit relationship | At least 20% | 2026 | [Art. 16(1)(5)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Low-tax jurisdiction relationship test | Foreign profit-tax rate 25% below North Macedonia's rate | 2026 | [Art. 16(1)(7)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Arm's-length accepted range | 25th-75th percentiles; outside range use median | 2026 | [TP Rulebook art. 16(5)-(6)](https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf) |
+| Main-report retention | 10 years from year-end covered by report | 2026 | [Profit Tax Law art. 12-a(4)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Report on UJP request | Within 15 days after receipt; UJP request after 30 days from DB deadline | 2026 | [Art. 12-a(5)-(6)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Profit-tax effect of a taxable uplift | 10% | 2026 | [Art. 2](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
 
 The 10 million test chooses report format **after** establishing that arts. 12/12-a apply. A shortened report is not a price safe harbour. Record total revenue and the annual transaction aggregate separately and test exact boundaries.
 
@@ -144,4 +144,4 @@ Not yet confirmed: None within the stated scope.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

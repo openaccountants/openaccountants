@@ -3,15 +3,16 @@ name: lr-payroll-social
 description: "Computes Liberia NASSCORP contributions for employees within the verified pension and employment-injury categories and sets the separate payroll withholding, contribution payment and employee-detail recording calendars for 2026. Use for Liberia payroll, NASSCORP, employer contributions, pension deductions, employee registration, an expatriate worker or a missed remittance. The Guide reads the 2017 Act with the 2023 General Regulations, distinguishes gross remuneration from excluded expenses and prevents recovery of the employer share from workers. It routes personal tax bands to the income Guide. Entry-age, membership and statutory exclusions must be checked; retroactive employee deductions and live submission details remain explicit gaps, without a claim of professional attestation."
 jurisdiction: LR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 0.2
+version: 0.3
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Liberia Payroll and Social Contributions v0.2
+# Liberia Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

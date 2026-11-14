@@ -1,193 +1,90 @@
 ---
 name: paypal-integration
-description: "Integration skill for PayPal activity download CSV exports. Activate when the user uploads a PayPal CSV, PayPal activity report, or mentions PayPal transactions. This is one of the messiest exports in common use."
+description: "Reconcile supplied paypal exports for bookkeeping in 2026. Establish the actual schema, account, dates and currency, preserve order/invoice/payment relationships, reject malformed or unreconciled data and prepare postings for human approval. Historical fields and sample data are retained, but current API, software and fee behaviour is not certified."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/paypal-integration"
   jurisdiction: "GLOBAL"
-  last_updated: "2026-06-12"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# PayPal Integration Skill v1.0
+# PayPal activity and multi-currency reconciliation v2.0
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 — Platform Overview
+## Scope
 
-PayPal is a global payment platform used by individuals and businesses for online payments, invoicing, and money transfers. Headquartered in the US, PayPal operates in 200+ markets and supports 25+ currencies. It serves everyone from eBay sellers and freelancers to enterprise e-commerce businesses.
+Apply this method to the client's supplied files and supporting documents. It prepares a reconciled workpaper and proposed import/postings; it does not operate a live integration or certify a destination schema. Checked on 2026-11-14. Country tax positions remain with their own current skills.
 
-PayPal's Activity Download CSV is notoriously complex — up to 41 columns, fees as separate transaction rows, multiple transaction types, and locale-dependent formatting. It is widely considered the most difficult payment platform export to reconcile.
+## Ask the client first
 
----
+1. Which entity owns the account, which country and reporting period apply, and what accounting framework, cash/accrual basis and functional currency are used?
+2. Which product, region, account, export/report variant and file-generation date produced the supplied data? Obtain the actual headers or authenticated mapping, all pages/files, account identifiers and opening/closing statements.
+3. Does this file describe orders, invoices, authorisations, settled balance activity, payouts, a general ledger or a trial balance? Which overlapping feeds/imports are already in the ledger?
+4. What are the actual delimiter, encoding, header status, date order, timezone, decimal separator, units and signed-amount conventions? For an ambiguous date or missing currency, stop before import.
+5. Which invoices, contracts, refunds, reserve movements, tax reports and supplier fee documents support the transactions? Who is principal, agent or merchant of record for each specified supply?
+6. Is the ledger read-only? Who will approve the proposed import or postings and confirm the result? No live write access is assumed.
 
-## Section 2 — Export Formats
+## The method, step by step
 
-| Format | Use Case |
-|--------|----------|
-| CSV | Activity Download Report (up to 41 columns, max 50,000 rows, max 12 months per export, 7-year history) |
-| TAB | Tab-separated alternative to CSV |
-| PDF | Monthly statements, individual transaction receipts |
-| QIF | Quicken import format |
-| IIF | QuickBooks Desktop import format (US only) |
+1. **Keep the evidence.** Preserve original bytes and record file identity, owner/account, report type, currency, covered dates and row count. Parse CSV/TSV with a real delimiter/quote-aware parser, not a split on commas. Preserve leading-zero identifiers, quoted narratives and original timestamps. Validate field count on every row. Treat spreadsheet formatting, headings, blank/footer/summary rows and BOMs explicitly; never remove a first data row merely because the old map expected a header. The historical inventory below is a starting question, not a certified current schema.
+2. **Define the record grain.** Distinguish order, line item, invoice, payment, fee, balance event and payout. Use a stable source ID plus account, event kind and relevant line/currency identity. A repeated order ID can represent legitimate lines; a payment and its invoice are two records of one commercial event. Keep the mapping and a rejected-row report. Do not deduplicate by date/amount alone or silently discard unknown event codes.
+3. **Test signs and units against evidence.** Recompute the supplied gross/fee/net relationship for every row where those fields exist. A signed deduction may be added; a positive charge may be subtracted. Do not force a platform-wide formula on contradictory data. Establish major/minor units from the actual report or supplied schema, including currencies that do not use two decimal places. Reject a conversion based only on an assumed divide-by-100 rule.
+4. **Reconcile each account and currency.** Start from a supported opening balance, add signed balance movements and compare to the closing statement. Prove row-by-row balances where supplied. Include refunds, reversed payments, disputes, reserves, releases, fees, adjustments and transfers according to their actual balance impact and reporting cutoff. An authorisation without movement is different from a posted reversal. A pending label alone is not proof of either outcome. Holds and releases can fall in different periods; keep unmatched reserves on a balance-sheet control.
+5. **Match settlement to the bank.** Group by supported payout/settlement references, currency and completed movement; reconcile settlement components, fees, retained amounts, negative settlements and timing differences. A bank deposit is a transfer from a clearing account, not another sale. Do not assume every intervening row between payouts belongs to the next deposit. Record opening/closing unsettled funds; obtain missing statements instead of inserting a balancing sale. Reconcile a card-funded negative settlement to the funding account.
+6. **Prepare the commercial accounting.** Link the invoice/order/bill and payment, preserve tax and shipping detail, and separate amounts collected for others. A customer shipping charge can be part of the seller's consideration; it is not automatically removed from revenue. Gross cash does not always equal revenue, and a net payout is not by itself proof of agency. Under an applicable AASB 15/IFRS-equivalent reporting policy, assess control of each specified good/service, principal versus agent and third-party collections using paragraphs 47 and B34-B38. That conditional financial-reporting test does not replace local tax law. [AASB 15](https://standards.aasb.gov.au/sites/default/files/2026-11/AASB15_12-14_COMPdec22_07-26.pdf).
+7. **Apply the owning country's tax method.** Currency, marketplace suffix, email, billing country or a configured software tax code alone does not establish tax jurisdiction, business status, nexus or recoverability. Read the actual supply, establishment, customer, product, destination and registrations; link the official rule used. A payment-only file may lack the tax breakdown. UK sole-trader/partner records must identify business transactions and preserve receipts, invoices and statements; traditional accounting also tracks amounts owed/unpaid. Eligible UK business bank charges are distinct from non-deductible loan principal. [HMRC records](https://www.gov.uk/self-employed-records/what-records-to-keep); [financial charges](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial).
+8. **Handle foreign currency without losing either leg.** Keep original, settlement and functional-currency amounts and rate directions. Pair own-account conversion/transfer legs using documented IDs and accounts, not timestamp proximity alone. Transfer principal is not a sale, but settlement/translation differences and separately evidenced charges require their own treatment. For an applicable AASB 121/IFRS-equivalent reporting policy, use recognition-date rates, closing rates for monetary balances and the stated settlement-difference exceptions. An average is acceptable only when it reasonably approximates actual rates. Tax translation follows its own country's method. [AASB 121 paragraphs 21-23,27-30](https://standards.aasb.gov.au/sites/default/files/2025-03/AASB121_08-15_COMPoct23_01-25.pdf).
+9. **Deliver a controlled proposal.** Output a source-to-journal map, reconciliations by currency/account, unique IDs, proposed accounts/tax codes, debit/credit totals, outstanding differences and approvals required. For a read-only ledger, provide an import file or list of postings for a human to approve. Retain a manifest of approved/imported IDs and amounts, check existing feeds and earlier imports before re-running, then compare actual ledger counts and balances to the approved proposal. Never describe a draft as posted or change live bank-feed rules as part of reading a file.
 
-The Activity Download CSV is accessed via: Activity page > Statements > Activity Download > Select date range > Choose CSV format > Download.
+## Country and framework boundaries
 
-For merchants with high volume, PayPal also offers the **Balance Reconciliation Report** (SFTP-delivered CSV with structured header/body/footer format).
+- **United Kingdom.** The HMRC source supports the UK recordkeeping and sole-trader/partner financial-charge points above. VAT on the platform's service and the client's sale are separate questions. Where an overseas service is involved, test actual belonging, establishment, exemption and input entitlement under Notice 741A sections 3-6, including unregistered-recipient registration consequences. A partly exempt buyer's reverse charge need not be neutral. [Notice 741A](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a).
+- **Australia or another entity using an IFRS-equivalent policy.** The cited AASB documents support only the conditional reporting treatments stated above. Confirm the framework and effective compilation for the entity's period. They do not set every country's income-tax deduction or VAT/GST result.
+- **EU, US, Canada and other tax jurisdictions.** Load the current country/subnational sales-tax, income-tax and reporting methods. No global tax rate, marketplace exemption, information-reporting threshold or customer-location conclusion is certified from this export. EU consolidated VAT/DAC7 law was not readable during the current EUR-Lex outage; those obligations remain with the owning country method, not an inferred universal platform rule.
 
----
+## When to refuse or refer
 
-## Section 3 — Column Mapping
+- Unknown owner, incomplete date range, missing currency, inconsistent field count, duplicate identity, ambiguous locale/units or a reconciliation difference: hold the import and identify the missing evidence. Never manufacture an opening balance or fee to make it fit.
+- Do not filter away real money movements merely because their narrative says refund, reversal or conversion. Do not post transfers, loan principal, payroll liabilities or tax payments as new sales/ordinary expenses based solely on sign.
+- Unsupported legal tax treatment, principal-agent contract, stock reimbursement, gift-card breakage or regulatory status: preserve the item and hand it to the relevant accounting/country method. Processor legal status and deposit protection depend on the actual entity and product.
+- Exact live API endpoints, current platform export/import rules, software plan capabilities, pricing, fee-return policies and default codes have not been verified under this wave's official-authority-only restriction. No vendor page was used, and this method is not certification of a working live connection.
 
-### Activity Download CSV — All Available Columns
+### PayPal-specific controls
 
-| Position | Column Header | State | Meaning |
-|----------|---------------|-------|---------|
-| 1 | Date | Mandatory | Completion date. MM/DD/YYYY (US), DD/MM/YYYY (non-US). Locale-dependent. |
-| 2 | Time | Mandatory | Completion time. HH:MM:SS format. |
-| 3 | TimeZone | Mandatory | Timezone string (e.g., "PST", "GMT", "CET"). |
-| 4 | Name | Mandatory | Counterparty name (buyer/seller/recipient). |
-| 5 | Type | Mandatory | Transaction type description (see Section 4). |
-| 6 | Status | Mandatory | Completed, Pending, Denied, Reversed, Refunded, etc. |
-| 7 | Currency | Mandatory | Three-letter ISO code (USD, GBP, EUR). |
-| 8 | Gross | Mandatory | Gross transaction amount including tax/shipping. Positive = received, negative = sent. |
-| 9 | Fee | Mandatory | PayPal fee. Negative number (deducted from gross). Zero for non-fee transactions. |
-| 10 | Net | Mandatory | Net amount (Gross + Fee, since Fee is negative). |
-| 11 | From Email Address | Mandatory | Sender's PayPal email. |
-| 12 | To Email Address | Mandatory | Recipient's PayPal email. |
-| 13 | Transaction ID | Mandatory | Unique 17-character PayPal transaction ID. |
-| 14 | Counterparty Status | Mandatory | Verified / Unverified. |
-| 15 | Shipping Address | Unselected | Full shipping address (single field). |
-| 16 | Address Status | Unselected | Confirmed / Unconfirmed. |
-| 17 | Item Title | Selected | Product/service name from the payment. |
-| 18 | Item ID | Selected | Product/item identifier. |
-| 19 | Shipping and Handling Amount | Unselected | Shipping cost. |
-| 20 | Insurance Amount | Unselected | Insurance cost. |
-| 21 | Sales Tax | Unselected | Tax amount on the transaction. |
-| 22 | Option 1 Name | Unselected | Custom field name (e.g., "Size"). |
-| 23 | Option 1 Value | Unselected | Custom field value (e.g., "Large"). |
-| 24 | Option 2 Name | Unselected | Additional custom field name. |
-| 25 | Option 2 Value | Unselected | Additional custom field value. |
-| 26 | Reference Txn ID | Selected | Original transaction ID for refunds/reversals. Links refund to original payment. |
-| 27 | Invoice Number | Selected | Your invoice reference. |
-| 28 | Custom Number | Unselected | Merchant-defined custom field. |
-| 29 | Quantity | Unselected | Item quantity. |
-| 30 | Receipt ID | Unselected | PayPal receipt identifier. |
-| 31 | Balance | Selected | Running balance after transaction. |
-| 32 | Address Line 1 | Unselected | Street address. |
-| 33 | Address Line 2 | Unselected | Address line 2. |
-| 34 | Town/City | Unselected | City. |
-| 35 | State/Province | Unselected | State or province. |
-| 36 | Zip/Postal Code | Unselected | Postal code. |
-| 37 | Country | Unselected | Country name. |
-| 38 | Contact Phone Number | Unselected | Buyer's phone number. |
-| 39 | Subject | Selected | Payment subject/memo. |
-| 40 | Note | Unselected | Payment note from buyer. |
-| 41 | Country Code | Unselected | Two-letter country code (US, GB, DE). |
-| 42 | Balance Impact | Selected | "Credit" (money in) or "Debit" (money out). |
+Distinguish Activity Download, balance-reconciliation data, monthly statement and transaction receipt. Parse actual headings, including locale variants such as `Datum`, `Brutto` and `Gebühr`, and confirm timezones before translating a cutoff. Preserve selected/omitted-field status as supplied; a remembered column position or maximum column count cannot identify the file. Counterparty email can help matching but is not a guaranteed unique legal-person identifier or reverse-charge proof.
 
-"State" column indicates whether the field is included in the default download (Mandatory/Selected) or must be manually enabled (Unselected).
+Keep invoice references, original/refund reference IDs, balance impact and separate monthly/dispute fees alongside per-payment fees. Test `Gross + Fee = Net` only where the actual signed-fee mapping supports it. Do not restrict books to `Completed` labels or assume holds/releases cancel within the period. Pair conversion legs without treating their principal as revenue, but retain actual FX differences. Link withdrawals to bank deposits by evidence, not by summing every row between two withdrawals. Shipping charged to a buyer is not automatically deducted from revenue. Obtain tax detail and official reporting rules separately; the old universal PayPal DAC7 assertion is not confirmed.
 
----
+## Worked case
 
-## Section 4 — Transaction Type Codes
+In the supplied fixture, an illustrative GBP 3,100 opening balance, derived from first supplied balance less first movement, gives GBP 2,927.23 closing; the EUR balance separately returns to zero. The GBP 415 conversion leg is not new sales revenue. Do not combine GBP and EUR totals into one balance.
 
-PayPal uses verbose, human-readable type descriptions:
+```oa-check
+name: PayPal activity and multi-currency reconciliation
+inputs:
+  opening_gbp: 3100
+  receipt_one: 145.05
+  receipt_two: 87.02
+  refund_gbp: 150
+  bank_transfer: 3000
+  conversion_gbp: 415
+  last_receipt: 2330.16
+  eur_received_net: 485.1
+  eur_converted: 485.1
+steps:
+  - closing_gbp: opening_gbp + receipt_one + receipt_two - refund_gbp - bank_transfer + conversion_gbp + last_receipt
+  - closing_eur: eur_received_net - eur_converted
+expected:
+  closing_gbp: 2927.23
+  closing_eur: 0
+```
 
-| Type | Meaning | Balance Impact |
-|------|---------|----------------|
-| Web Accept Payment Received | Payment received via PayPal button/checkout | Credit |
-| Express Checkout Payment Received | Payment via Express Checkout | Credit |
-| Mobile Payment Received | Payment received via mobile | Credit |
-| Payment Received | Generic incoming payment | Credit |
-| Invoice Received | Payment received against a PayPal invoice | Credit |
-| Recurring Payment Received | Subscription/recurring charge collected | Credit |
-| Payment Sent | Outgoing payment to another PayPal user | Debit |
-| Refund | Refund issued to buyer (reverses a previous payment) | Debit |
-| Payment Reversal | Chargeback or dispute reversal | Debit |
-| Temporary Hold | Funds temporarily held by PayPal (disputes, reviews) | Debit |
-| Payment Release | Held funds released | Credit |
-| Transfer to Bank | Withdrawal to linked bank account | Debit |
-| Bank Deposit to PayPal | Deposit from linked bank account | Credit |
-| Currency Conversion | FX conversion between currencies | Both |
-| General Authorization | Pre-authorisation (no funds moved yet) | None |
-| PayPal fee | Monthly/service fee charged by PayPal | Debit |
+## Retained supplied-data fixtures
 
----
-
-## Section 5 — Fee Structure
-
-| Fee Type | Typical Rate | How It Appears |
-|----------|-------------|----------------|
-| Domestic payment processing | 2.99% + $0.49 (US standard) | Negative value in Fee column of the payment row |
-| International payment processing | 4.49% + fixed fee | Negative value in Fee column |
-| Micropayment rate | 5% + $0.05 (for transactions under $10) | Negative value in Fee column |
-| Currency conversion spread | ~3-4% above mid-market rate | NOT shown as a fee. Embedded in the exchange rate. |
-| Chargeback fee | $20 | Separate transaction row with Type = "Payment Reversal" |
-| Withdrawal fee | Usually free for standard, $0.25 for instant | Separate row or deducted from withdrawal |
-| Monthly fee | Varies by plan | Separate row with Type = "PayPal fee" |
-| Invoicing fee | 2.99% + $0.49 | In Fee column of the invoice payment row |
-
-Critical: PayPal fees appear in the **same row** as the payment (in the Fee column), unlike Wise where fees are separate rows.
-
----
-
-## Section 6 — Tax-Relevant Fields
-
-| Field | Notes |
-|-------|-------|
-| Sales Tax | Column 21. Contains the tax amount if the buyer paid tax through PayPal. Often blank — most merchants handle tax externally. |
-| Country / Country Code | Buyer's country. Critical for determining cross-border VAT obligations (EU distance selling, UK import VAT). |
-| Invoice Number | Links to your invoicing system for VAT/GST matching. |
-| Gross vs Net | Gross includes tax and shipping if applicable. For VAT purposes, you need the net amount excluding shipping and tax. |
-| Currency | Determines which country's tax rules may apply for FX transactions. |
-| 1099-K reporting (US) | PayPal issues 1099-K forms for US sellers meeting thresholds. Data comes from these same transaction records. |
-| DAC7 reporting (EU) | PayPal reports EU seller activity to tax authorities under DAC7. |
-
----
-
-## Section 7 — Multi-Currency Handling
-
-| Scenario | How It Appears |
-|----------|---------------|
-| Single-currency | All rows share the same Currency value. Straightforward. |
-| Received in foreign currency, held | Payment row shows Currency = foreign currency, Gross = foreign amount. Balance Impact = Credit. |
-| Received and auto-converted | Two rows: (1) Payment received in foreign currency, (2) "Currency Conversion" row showing the conversion. Both share a related Transaction ID. |
-| Currency conversion | Two rows: a debit in the source currency and a credit in the target currency. The exchange rate is NOT shown as a separate column — it must be calculated from the two amounts. |
-| Withdrawal in non-default currency | PayPal converts to the bank's currency. Conversion row appears before the withdrawal row. |
-
-PayPal's multi-currency handling is messy. Conversion rows and payment rows are separate, linked by Reference Txn ID. You must match them to determine the effective exchange rate.
-
----
-
-## Section 8 — Reconciliation Tips
-
-1. **Filter by Status = "Completed" first.** Pending, Denied, and Reversed transactions should be excluded from the books. Only Completed transactions represent actual money movement.
-2. **Match Transfer to Bank rows to bank deposits.** PayPal batches multiple transactions into one bank transfer. Sum all rows between "Transfer to Bank" entries to match bank deposits.
-3. **Fees are in the payment row, not separate rows.** Unlike Wise, PayPal deducts fees in the same row. The Fee column is negative. Net = Gross + Fee.
-4. **Temporary Holds and Releases net to zero.** A hold debits the balance, a release credits it back. They should cancel out and not appear in the P&L.
-5. **Refunds reference the original transaction.** Use Reference Txn ID (column 26) to match refunds to their original payments.
-6. **Currency Conversions are noise for bookkeeping.** They represent internal movement, not income or expense. Filter them out of P&L calculations.
-7. **50,000-row limit.** Large accounts will receive a ZIP file with multiple CSVs. Process all files for a complete picture.
-8. **Locale affects everything.** Date format, decimal separator, and even column names can change based on the user's PayPal locale setting. Always check the first row.
-
----
-
-## Section 9 — Common Gotchas
-
-1. **Fees as separate rows vs same row — inconsistent.** Most fees are in the Fee column of the payment row, but some (chargeback fees, monthly fees) are entirely separate rows. You must handle both patterns.
-2. **Gross includes shipping and tax.** For revenue calculations, Gross is NOT your sales revenue if the buyer paid shipping through PayPal. Subtract Shipping and Sales Tax columns.
-3. **Currency Conversion rows inflate totals.** If you sum all Credit-impact rows as revenue, currency conversions will double-count. Filter Type = "Currency Conversion" out.
-4. **"General Authorization" has no money movement.** These rows show pre-auths that haven't captured. Exclude them.
-5. **Email addresses as identifiers.** PayPal identifies counterparties by email, not by name. The same person may appear with different names but the same email (or vice versa).
-6. **Balance column may not match your actual balance.** If you filtered the export by date range, the Balance column reflects only the filtered period, not the actual account balance.
-7. **Negative Gross on refunds.** Refunds show as negative Gross with zero Fee. The original payment's fee is not returned.
-8. **Time zones matter.** PayPal records times in the user's selected timezone. A transaction at 11:30 PM PST on March 31 is April 1 in UTC.
-9. **Column names are locale-dependent.** A German PayPal account may export columns as "Datum", "Brutto", "Gebühr" instead of "Date", "Gross", "Fee".
-
----
-
-## Section 10 — Sample Data
+These are the original illustrations, retained byte-for-byte inside their code blocks. They are not certified current platform exports, fee schedules or complete accounts. Use the worked control above and the validation method before using any record. A failed example must remain failed, not silently repaired.
 
 ```csv
 Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net,From Email Address,To Email Address,Transaction ID,Item Title,Invoice Number,Reference Txn ID,Balance,Balance Impact
@@ -201,12 +98,141 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net,From Email Address,To
 03/19/2026,10:00:00,GMT,Widget Corp,Payment Received,Completed,GBP,2400.00,-69.84,2330.16,widget@example.com,merchant@business.com,2GH78901BCDE3456F,Enterprise License,INV-1043,,2927.23,Credit
 ```
 
----
-
-## Disclaimer
+## Existing review requirement
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
+## Sources
+
+| Official source | Read on | Read scope |
+|---|---|---|
+| https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47 and 105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+
+Not yet confirmed: the live paypal API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
+
+### Historical schema and claim inventory, not usable guidance
+
+#### Historical 2 - Export Formats
+
+```text
+Historical item CSV. Use Case: Activity Download Report (up to 41 columns, max 50,000 rows, max 12 months per export, 7-year history)
+Historical item TAB. Use Case: Tab-separated alternative to CSV
+Historical item PDF. Use Case: Monthly statements, individual transaction receipts
+Historical item QIF. Use Case: Quicken import format
+Historical item IIF. Use Case: QuickBooks Desktop import format (US only)
+```
+
+#### Historical Activity Download CSV - All Available Columns
+
+```text
+Historical item 1. Column Header: Date; State: Mandatory; Meaning: Completion date. MM/DD/YYYY (US), DD/MM/YYYY (non-US). Locale-dependent.
+Historical item 2. Column Header: Time; State: Mandatory; Meaning: Completion time. HH:MM:SS format.
+Historical item 3. Column Header: TimeZone; State: Mandatory; Meaning: Timezone string (e.g., "PST", "GMT", "CET").
+Historical item 4. Column Header: Name; State: Mandatory; Meaning: Counterparty name (buyer/seller/recipient).
+Historical item 5. Column Header: Type; State: Mandatory; Meaning: Transaction type description (see Section 4).
+Historical item 6. Column Header: Status; State: Mandatory; Meaning: Completed, Pending, Denied, Reversed, Refunded, etc.
+Historical item 7. Column Header: Currency; State: Mandatory; Meaning: Three-letter ISO code (USD, GBP, EUR).
+Historical item 8. Column Header: Gross; State: Mandatory; Meaning: Gross transaction amount including tax/shipping. Positive = received, negative = sent.
+Historical item 9. Column Header: Fee; State: Mandatory; Meaning: PayPal fee. Negative number (deducted from gross). Zero for non-fee transactions.
+Historical item 10. Column Header: Net; State: Mandatory; Meaning: Net amount (Gross + Fee, since Fee is negative).
+Historical item 11. Column Header: From Email Address; State: Mandatory; Meaning: Sender's PayPal email.
+Historical item 12. Column Header: To Email Address; State: Mandatory; Meaning: Recipient's PayPal email.
+Historical item 13. Column Header: Transaction ID; State: Mandatory; Meaning: Unique 17-character PayPal transaction ID.
+Historical item 14. Column Header: Counterparty Status; State: Mandatory; Meaning: Verified / Unverified.
+Historical item 15. Column Header: Shipping Address; State: Unselected; Meaning: Full shipping address (single field).
+Historical item 16. Column Header: Address Status; State: Unselected; Meaning: Confirmed / Unconfirmed.
+Historical item 17. Column Header: Item Title; State: Selected; Meaning: Product/service name from the payment.
+Historical item 18. Column Header: Item ID; State: Selected; Meaning: Product/item identifier.
+Historical item 19. Column Header: Shipping and Handling Amount; State: Unselected; Meaning: Shipping cost.
+Historical item 20. Column Header: Insurance Amount; State: Unselected; Meaning: Insurance cost.
+Historical item 21. Column Header: Sales Tax; State: Unselected; Meaning: Tax amount on the transaction.
+Historical item 22. Column Header: Option 1 Name; State: Unselected; Meaning: Custom field name (e.g., "Size").
+Historical item 23. Column Header: Option 1 Value; State: Unselected; Meaning: Custom field value (e.g., "Large").
+Historical item 24. Column Header: Option 2 Name; State: Unselected; Meaning: Additional custom field name.
+Historical item 25. Column Header: Option 2 Value; State: Unselected; Meaning: Additional custom field value.
+Historical item 26. Column Header: Reference Txn ID; State: Selected; Meaning: Original transaction ID for refunds/reversals. Links refund to original payment.
+Historical item 27. Column Header: Invoice Number; State: Selected; Meaning: Your invoice reference.
+Historical item 28. Column Header: Custom Number; State: Unselected; Meaning: Merchant-defined custom field.
+Historical item 29. Column Header: Quantity; State: Unselected; Meaning: Item quantity.
+Historical item 30. Column Header: Receipt ID; State: Unselected; Meaning: PayPal receipt identifier.
+Historical item 31. Column Header: Balance; State: Selected; Meaning: Running balance after transaction.
+Historical item 32. Column Header: Address Line 1; State: Unselected; Meaning: Street address.
+Historical item 33. Column Header: Address Line 2; State: Unselected; Meaning: Address line 2.
+Historical item 34. Column Header: Town/City; State: Unselected; Meaning: City.
+Historical item 35. Column Header: State/Province; State: Unselected; Meaning: State or province.
+Historical item 36. Column Header: Zip/Postal Code; State: Unselected; Meaning: Postal code.
+Historical item 37. Column Header: Country; State: Unselected; Meaning: Country name.
+Historical item 38. Column Header: Contact Phone Number; State: Unselected; Meaning: Buyer's phone number.
+Historical item 39. Column Header: Subject; State: Selected; Meaning: Payment subject/memo.
+Historical item 40. Column Header: Note; State: Unselected; Meaning: Payment note from buyer.
+Historical item 41. Column Header: Country Code; State: Unselected; Meaning: Two-letter country code (US, GB, DE).
+Historical item 42. Column Header: Balance Impact; State: Selected; Meaning: "Credit" (money in) or "Debit" (money out).
+```
+
+#### Historical 4 - Transaction Type Codes
+
+```text
+Historical item Web Accept Payment Received. Meaning: Payment received via PayPal button/checkout; Balance Impact: Credit
+Historical item Express Checkout Payment Received. Meaning: Payment via Express Checkout; Balance Impact: Credit
+Historical item Mobile Payment Received. Meaning: Payment received via mobile; Balance Impact: Credit
+Historical item Payment Received. Meaning: Generic incoming payment; Balance Impact: Credit
+Historical item Invoice Received. Meaning: Payment received against a PayPal invoice; Balance Impact: Credit
+Historical item Recurring Payment Received. Meaning: Subscription/recurring charge collected; Balance Impact: Credit
+Historical item Payment Sent. Meaning: Outgoing payment to another PayPal user; Balance Impact: Debit
+Historical item Refund. Meaning: Refund issued to buyer (reverses a previous payment); Balance Impact: Debit
+Historical item Payment Reversal. Meaning: Chargeback or dispute reversal; Balance Impact: Debit
+Historical item Temporary Hold. Meaning: Funds temporarily held by PayPal (disputes, reviews); Balance Impact: Debit
+Historical item Payment Release. Meaning: Held funds released; Balance Impact: Credit
+Historical item Transfer to Bank. Meaning: Withdrawal to linked bank account; Balance Impact: Debit
+Historical item Bank Deposit to PayPal. Meaning: Deposit from linked bank account; Balance Impact: Credit
+Historical item Currency Conversion. Meaning: FX conversion between currencies; Balance Impact: Both
+Historical item General Authorization. Meaning: Pre-authorisation (no funds moved yet); Balance Impact: None
+Historical item PayPal fee. Meaning: Monthly/service fee charged by PayPal; Balance Impact: Debit
+```
+
+#### Historical 5 - Fee Structure
+
+```text
+Historical item Domestic payment processing. Typical Rate: 2.99% + $0.49 (US standard); How It Appears: Negative value in Fee column of the payment row
+Historical item International payment processing. Typical Rate: 4.49% + fixed fee; How It Appears: Negative value in Fee column
+Historical item Micropayment rate. Typical Rate: 5% + $0.05 (for transactions under $10); How It Appears: Negative value in Fee column
+Historical item Currency conversion spread. Typical Rate: ~3-4% above mid-market rate; How It Appears: NOT shown as a fee. Embedded in the exchange rate.
+Historical item Chargeback fee. Typical Rate: $20; How It Appears: Separate transaction row with Type = "Payment Reversal"
+Historical item Withdrawal fee. Typical Rate: Usually free for standard, $0.25 for instant; How It Appears: Separate row or deducted from withdrawal
+Historical item Monthly fee. Typical Rate: Varies by plan; How It Appears: Separate row with Type = "PayPal fee"
+Historical item Invoicing fee. Typical Rate: 2.99% + $0.49; How It Appears: In Fee column of the invoice payment row
+```
+
+#### Historical 7 - Multi-Currency Handling
+
+```text
+Historical item Single-currency. How It Appears: All rows share the same Currency value. Straightforward.
+Historical item Received in foreign currency, held. How It Appears: Payment row shows Currency = foreign currency, Gross = foreign amount. Balance Impact = Credit.
+Historical item Received and auto-converted. How It Appears: Two rows: (1) Payment received in foreign currency, (2) "Currency Conversion" row showing the conversion. Both share a related Transaction ID.
+Historical item Currency conversion. How It Appears: Two rows: a debit in the source currency and a credit in the target currency. The exchange rate is NOT shown as a separate column , it must be calculated from the two amounts.
+Historical item Withdrawal in non-default currency. How It Appears: PayPal converts to the bank's currency. Conversion row appears before the withdrawal row.
+```
+
+#### Historical navigation and API descriptions
+
+```text
+The Activity Download CSV is accessed via: Activity page > Statements > Activity Download > Select date range > Choose CSV format > Download.
+```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- Sales Tax; retain as an investigation field, not proof of tax treatment.
+- Country / Country Code; retain as an investigation field, not proof of tax treatment.
+- Invoice Number; retain as an investigation field, not proof of tax treatment.
+- Gross vs Net; retain as an investigation field, not proof of tax treatment.
+- Currency; retain as an investigation field, not proof of tax treatment.
+- 1099-K reporting (US); retain as an investigation field, not proof of tax treatment.
+- DAC7 reporting (EU); retain as an investigation field, not proof of tax treatment.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paypal-integration` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paypal-integration. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paypal-integration` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paypal-integration. If neither is available, confirm every figure against the official source pages cited above before relying on it.

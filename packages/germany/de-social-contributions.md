@@ -1,16 +1,17 @@
 ---
 name: de-social-contributions
 description: "German social insurance contributions for 2026, written for the self-employed and voluntary members. Covers voluntary statutory health insurance (minimum base EUR 1,318.33, ceiling EUR 5,812.50 a month, 14.0% or 14.6% plus the fund's additional rate, average 2.9%), long-term care at 3.6% with the childless surcharge and child reductions, compulsory pension insurance for the self-employed groups in § 2 SGB VI (teachers, carers, midwives, craftspeople, one-client workers) with the 18.6% rate, standard, start-phase and income-based bases, exemptions, voluntary pension contributions, the Künstlersozialkasse and the 4.9% artists' levy, accident and unemployment insurance on application, the status procedure, due dates, late surcharges and the income tax deduction, plus a short employee summary. Trigger on: Krankenkasse freiwillig, Mindestbeitrag, KSK, Künstlersozialabgabe, Rentenversicherungspflicht Selbständige, Pflegeversicherung Kinderlosenzuschlag, Statusfeststellung. Out of scope: the payroll run (de-payroll), benefits in kind and managing directors (de-payroll-benefits), income tax (de-einkommensteuer-freelancer)."
-version: 2.4
+version: 2.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Social insurance contributions in Germany 2026: the self-employed, voluntary members and a short employee summary

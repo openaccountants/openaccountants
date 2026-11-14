@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/belgium-payroll"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Belgium Payroll (2026)
@@ -186,8 +186,8 @@ expected:
 
 Not yet confirmed: the company car benefit in kind formula of art. 36, par. 2 WIB 92 (6/7 of catalogue value, CO2 percentage from 5.5% moving 0.1 point per gram, 4% to 18%, age reduction) and its 2026 indexed minimum, because Fisconetplus could not be read today; the employer's 2026 tax deductibility of company cars (art. 198bis and 66 WIB 92); the rounding step in the solidarity contribution; the special social security contribution scale for 2026; work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI, CAO 43); the labour-law points (holiday pay, overtime, guaranteed pay, holidays, payslip contents, Dimona, 281.10 and work accident deadlines) carried from the earlier version without a 2026 re-read; the FOD withholding calendar page, which blocked automated reading today (dates kept in `be-payroll-withholding`).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

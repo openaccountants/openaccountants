@@ -1,10 +1,10 @@
 ---
 name: mc-company-formation
 description: "Monaco company formation reference checked in October 2026. Covers SARL and sole member SURL capital rules, the natural person exception, cash and in kind payment gates, and SAM subscription, minimum paid capital and approval requirements. Use for Monaco incorporation, entity choice and capital planning questions. Separates nationality and activity permissions from registry filings and records the 2025 and October 2026 reform transition limits. Includes two reproducible capital illustrations. Complete forms, beneficial ownership, fees, audit and accounts procedures await a named Monaco professional review."
-version: 1.2
+version: 1.3
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -100,4 +100,4 @@ expected:
 
 **Not yet confirmed:** SNC and SCS partnership rules, SAM board size and statutory-auditor duty (carried in the earlier version without a cited provision), complete registry/beneficial-owner procedures, fees, sanctions, account/audit thresholds and deferred October implementation. Obtain Monaco professional review before incorporation or filing.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
