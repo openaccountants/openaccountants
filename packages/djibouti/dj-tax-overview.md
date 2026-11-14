@@ -1,10 +1,11 @@
 ---
 name: dj-tax-overview
 description: "Use as the starting map of Djibouti tax for 2026: IBP 25%, IMF 1%, ITS to 45%, VAT 10%, CNSS 21.7%, dividends 5%, and the main dates."
-version: 2.0
+version: 2.1
 jurisdiction: DJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -24,7 +25,7 @@ Anyone starting a Djibouti question. The tax authority is the Direction Generale
 | Minimum tax | 1%, floor 120,000 | Arts. 60, 61 | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
 | Top ITS band | 45% | Above 2,000,000 a month | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ |
 | VAT | 10% | Art. 187 | https://www.journalofficiel.dj/texte-juridique/loi-n82-an-14-7eme-l-portant-budget-initial-de-letat-pour-lexercice-2015/ |
-| CNSS | 21.7% | Employer 15.7%, employee 6% | https://cnss.dj/declaration-et-versement-des-cotisations/ |
+| CNSS | 21.7% | Employer 15.7%, employee 6% (totals computed from the branch rates on the CNSS page) | https://cnss.dj/declaration-et-versement-des-cotisations/ |
 | Dividends | 5% | Art. 90L | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 | Non-resident payments | 25% | Art. 75 as amended by LF 2024 art. 26 | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 
@@ -91,14 +92,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Code general des impots, edition updated to the 2011 finance law, Ministry of Finance: articles cited read in the PDF text; later changes taken from the finance laws listed here | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf | 2026-11-01 |
-| Loi de finances 203/AN/25/9eme L, budget 2026 (JO 31/12/2025): Titre II read; direct tax: rectified 2025 measures stay in force, no CGI rate change | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n203-an-25-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2026/ | 2026-11-01 |
-| Loi de finances 64/AN/23/9eme L, budget 2024: Titre II tax articles read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ | 2026-11-01 |
-| Loi de finances 181/AN/22/8eme L, budget 2023: Titre II read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n181-an-22-8eme-l-portant-budget-initial-de-letat-de-lexercice-2023/ | 2026-11-01 |
-| Loi de finances 142/AN/21/8eme L, budget 2022: Titre II read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ | 2026-11-01 |
-| Loi de finances 111/AN/20/8eme L, budget 2021: articles 6 to 20 read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n111-an-20-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2021/ | 2026-11-01 |
-| Loi 82/AN/14/7eme L, budget 2015: articles 8 to 29 read | https://www.journalofficiel.dj/texte-juridique/loi-n82-an-14-7eme-l-portant-budget-initial-de-letat-pour-lexercice-2015/ | 2026-11-01 |
-| CNSS, Declaration et versement des cotisations: full page read | https://cnss.dj/declaration-et-versement-des-cotisations/ | 2026-11-01 |
-| CNSS, Affiliation employeur: full page read | https://cnss.dj/affiliation-employeur/ | 2026-11-01 |
+| Code general des impots, edition updated to the 2011 finance law, Ministry of Finance: articles cited read in the PDF text; later changes taken from the finance laws listed here | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf | 2026-11-14 |
+| Loi de finances 203/AN/25/9eme L, budget 2026 (JO 31/12/2025): read for Titre II; direct tax: rectified 2025 measures stay in force, no CGI rate change | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n203-an-25-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2026/ | 2026-11-14 |
+| Loi de finances 64/AN/23/9eme L, budget 2024: read for Titre II tax articles | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ | 2026-11-14 |
+| Loi de finances 181/AN/22/8eme L, budget 2023: read for Titre II | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n181-an-22-8eme-l-portant-budget-initial-de-letat-de-lexercice-2023/ | 2026-11-14 |
+| Loi de finances 142/AN/21/8eme L, budget 2022: read for Titre II | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ | 2026-11-14 |
+| Loi de finances 111/AN/20/8eme L, budget 2021: articles 6 to 20 read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n111-an-20-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2021/ | 2026-11-14 |
+| Loi 82/AN/14/7eme L, budget 2015: articles 8 to 29 read | https://www.journalofficiel.dj/texte-juridique/loi-n82-an-14-7eme-l-portant-budget-initial-de-letat-pour-lexercice-2015/ | 2026-11-14 |
+| CNSS, Declaration et versement des cotisations: read in full | https://cnss.dj/declaration-et-versement-des-cotisations/ | 2026-11-14 |
+| CNSS, Affiliation employeur: read in full | https://cnss.dj/affiliation-employeur/ | 2026-11-14 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. Peg of the franc to the US dollar was in the old skill, not checked in a Central Bank text. The old statement that Djibouti follows OHADA rules was removed: the Code de commerce and the texts read make no such link, and membership was not checked at OHADA itself. Accounting standard: a Plan Comptable General 2012 is linked on the ministry site, not opened.

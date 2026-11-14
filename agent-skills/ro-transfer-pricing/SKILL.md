@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-transfer-pricing"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Romania: transfer pricing (prețuri de transfer) v0.3
+# Romania: transfer pricing (prețuri de transfer) v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Romania.
 
@@ -286,16 +286,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code (Legea 227/2015), ANAF consolidated text, last update Legea 170/2026: art. 7 pt. 26 and 33, art. 11(4), art. 19(6), art. 17, art. 41, art. 42, art. 42^6 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code (Legea 207/2015), ANAF consolidated text, last update Legea 170/2026: art. 52, 108(2), 110, 127, 156, 174, 175, 176, 181, 282, 283, 291^3, 299, 336, annex 3 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| ANAF President's Order 828/2026 (MO nr. 543 of 2 July 2026), transfer pricing file, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf | 2026-10-23 |
-| ANAF President's Order 827/2026 (MO nr. 543 of 2 July 2026), APA procedure, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_827_2026.pdf | 2026-10-23 |
-| ANAF President's Order 442/2016 (MO nr. 74 of 2 February 2016), earlier transfer pricing file order, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_442_2016.pdf | 2026-10-23 |
-| ANAF President's Order 3049/2017 (MO nr. 894 of 14 November 2017), CbCR form, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_3049_2017.pdf | 2026-10-23 |
-| ANAF, Ghid al prețurilor de transfer (updated November 2025; predates Order 828/2026) | https://static.anaf.ro/static/10/Anaf/Prezentare_R/Ghid%20Preturi%20de%20Transfer%20(1).pdf | 2026-10-23 |
+| Fiscal Code (Legea 227/2015), ANAF consolidated text, last update Legea 170/2026: art. 7 pt. 26 and 33, art. 11(4), art. 19(6), art. 17, art. 41, art. 42, art. 42^6 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 7 pt. 26 and 33, art. 11(4), art. 19(6) and art. 42^6: affiliated persons and the arm's length rule |
+| Fiscal Procedure Code (Legea 207/2015), ANAF consolidated text, last update Legea 170/2026: art. 52, 108(2), 110, 127, 156, 174, 175, 176, 181, 282, 283, 291^3, 299, 336, annex 3 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 52, 108, 174, 176, 181 and 336: file requests, interest, penalties and fines |
+| ANAF President's Order 828/2026 (MO nr. 543 of 2 July 2026), transfer pricing file, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf | 2026-11-14, read for art. 2: the EUR 100,000, 200,000 and 250,000 transaction thresholds |
+| ANAF President's Order 827/2026 (MO nr. 543 of 2 July 2026), APA procedure, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_827_2026.pdf | 2026-11-14, read for the APA procedure and its annexes |
+| ANAF President's Order 442/2016 (MO nr. 74 of 2 February 2016), earlier transfer pricing file order, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_442_2016.pdf | 2026-11-14, read for the earlier file rules replaced by Order 828/2026 |
+| ANAF President's Order 3049/2017 (MO nr. 894 of 14 November 2017), CbCR form, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_3049_2017.pdf | 2026-11-14, read for the CbCR form and its instructions |
+| ANAF, Ghid al prețurilor de transfer (updated November 2025; predates Order 828/2026) | https://static.anaf.ro/static/10/Anaf/Prezentare_R/Ghid%20Preturi%20de%20Transfer%20(1).pdf | 2026-11-14, read for the November 2025 guide on the arm's length principle and methods |
 
 Not yet confirmed: (1) Whether several contracts of the same category with one affiliated person are added together for the Order 828/2026 thresholds. The Order measures "each individual transaction with each affiliated person" (art. 2(3) and (8)) and does not define a transaction. (2) Whether filing the annual file late in SPV, while it was prepared on time, is itself fined under CPF art. 336(1)(e). (3) The Portal Legislativ (legislatie.just.ro) could not be loaded on 23 October 2026, so no later amendment to Order 828/2026 was checked there. ANAF's consolidated Procedure Code still lists Order "446/2016" (a typing error for 442/2016) under art. 108(2) and does not yet list Order 828/2026. (4) Whether ANAF spreads the non-declaration penalty on a corporate tax difference across the quarterly due dates rather than starting it after the annual due date, as Example 2 does. (5) Whether a reduced fine for paying half the minimum within 15 days applies under the general contraventions law (OG 2/2001), which was not read. (6) The treatment of secondary adjustments, such as whether an excess paid to a foreign parent becomes a dividend, was not researched. (7) Whether the CbCR report, the CbCR notification and the SPV filing deadline move when they fall on a non-working day was not checked.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

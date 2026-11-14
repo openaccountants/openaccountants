@@ -14,19 +14,20 @@ description: >
   before advising on any Spanish tax optimization strategy. This Tier 2 draft
   supports source checking and reviewer questions; it does not authorise a
   tax position.
-version: 1.3
+version: 1.4
 jurisdiction: ES
 tax_year: 2026
 tax_year_notes: "Planning for income of 2026, declared in 2027; baseline reading 6 November 2026 and additional repair units read 7 November 2026. State IRPF rules and the 2026 RETA order are read as in force at that date. Autonomous scales are those of the AEAT Manual for 2025, because the 2026 scales were not read. No Budget Act for 2026 was found and that absence is held. País Vasco and Navarra are out of scope."
-last_updated: 2026-11-07
+last_updated: 2026-11-14
 depends_on: []
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: tax-optimization
+type: situation-rules
 ---
 
-# Spain Tax Optimization v1.3
+# Spain Tax Optimization v1.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -168,8 +169,9 @@ The micro rates apply 'unless a different rate from the general one applies'. Th
 | Módulos limit, of which to businesses and professionals, statute | 75,000 | same |
 | Módulos limit, agriculture and forestry, statute | 250,000 | same |
 | Módulos limit, purchases of goods and services excluding fixed assets, subcontracts counted, statute | 150,000 | same |
-| unverified 2026 limits by AEAT criterion: 250,000 all, 125,000 to businesses, 250,000 purchases | conflict | AEAT note of 1 April 2026: https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html |
 | Módulos reduction for 2026 | 5% | Orden HAC/1425/2025 DA 1ª: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-25272 |
+
+The AEAT note of 1 April 2026 (https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html) applies higher 2026 limits by administrative criterion (250,000 all activities, 125,000 to businesses, 250,000 purchases). That conflicts with the statute above, so those figures are not usable guidance; see Not yet confirmed under Sources.
 
 For the módulos income and purchase thresholds, annualise the prior-year volumes if an activity began during that year (LIRPF art. 31.1.3ª b and c). Apply the family and common-direction aggregation tests described below before comparing with any limit.
 
@@ -237,9 +239,7 @@ The bases and rates are in Orden PJC/297/2026 arts 18 and 37. The cuota column i
 
 **Reduced cuota (tarifa plana)**
 
-| Item | Amount | Source |
-| --- | --- | --- |
-| unverified monthly reduced cuota for an alta in 2026 | held | LETA art. 38 ter.1 leaves the amount to the Budget Act: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2007-13409/texto; RDL 13/2022 DT 5ª sets EUR 80 for 2023 to 2025 only: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2022-12482/texto |
+The monthly reduced cuota for an alta in 2026 is held, not stated. LETA art. 38 ter.1 leaves the amount to the Budget Act (https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2007-13409/texto); RDL 13/2022 DT 5ª sets EUR 80 for 2023 to 2025 only (https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2022-12482/texto). It is listed under Not yet confirmed.
 
 No amount for 2026 appears in RDL 3/2026 or Orden PJC/297/2026. EUR 80 is not stated here as the 2026 figure.
 

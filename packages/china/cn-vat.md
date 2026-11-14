@@ -3,14 +3,15 @@ name: cn-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a China VAT (增值税 / VAT) return, handle Golden Tax System (金税系统) compliance, classify transactions for Chinese VAT purposes, or advise on VAT registration and filing in China. Trigger on phrases like "增值税", "VAT return China", "增值税申报", "增值税专用发票", "金税系统", "一般纳税人", "小规模纳税人", simplified-method election, 选择简易计税, or any China VAT request. Covers general and small-scale taxpayers, including the 3%, 5%, 2% and 1.5% simplified-method elections for 2026 and 2027. ALWAYS read this skill before touching any China VAT work.
 jurisdiction: CN
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 depends_on:
   - vat-workflow-base
 category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 

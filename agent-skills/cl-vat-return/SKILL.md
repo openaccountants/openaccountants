@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cl-vat-return"
   jurisdiction: "CL"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Chile: IVA and the monthly Formulario 29 (2026) v1.1
+# Chile: IVA and the monthly Formulario 29 (2026) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,7 +38,7 @@ Linked skills, not repeated here:
 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
-| IVA standard rate | 19% of the taxable base | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=6369 (DL 825 art. 14) |
+| IVA standard rate | 19% of the taxable base | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=6369 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=6369 (DL 825 art. 14) |
 | Exports of goods | Exempt (export recovery under art. 36) | 2026 | same, art. 12 D, art. 36 |
 | Services to non-residents that Customs qualifies as exports | Exempt, with recovery of input IVA | 2026 | same, art. 12 E No. 16, art. 36 |
 | International freight and international passenger tickets | Exempt | 2026 | same, art. 12 E No. 2 |
@@ -86,6 +86,19 @@ Linked skills, not repeated here:
 **Withholding by buyers (cambio de sujeto, art. 3).** SII can make the buyer withhold all or part of the IVA. The DTE format lists the codes and usual rates: code 15, total IVA withheld on purchase invoices (types 45, 46); legumes (30), rice (36) and hydrobiological products (37) usually 10%; cattle (32) and timber (33) usually 8%; wheat (34) usually 4%; raspberries and raisins (48) 14%; scrap (38), PPA (39), construction (41), gold (46), cartons (47) and wild products (31) total withholding. Confirm the rate in the SII resolution for the sector before applying it.
 
 **IVA anticipado.** Sellers of meat and flour charge an advance IVA to the buyer, shown on the invoice under its own DTE tax code: slaughter (faenamiento) of meat 5% on the base amount (code 17), meat 5% (code 18), flour 12% (code 19). Source: SII DTE format, tax code table; the underlying SII resolutions were not read.
+
+**Additional tax codes on a DTE.** The SII DTE format gives each additional tax its own code: 23, art. 37 a) to c) (gold, platinum and ivory articles, jewels and precious stones, fine furs), 15%; 44, art. 37 e), h), i), l) (carpets and tapestries, motor homes, caviar, air or gas guns), 15% on first sale; 45, art. 37 j) (pyrotechnics), 50% on first sale; 24, art. 42 b) (spirits, pisco, whisky), 31.5%; 25, art. 42 c) (wine), 20.5%; 26, art. 42 c) (beer and other alcoholic drinks), 20.5%; 27, art. 42 a) (non-alcoholic and mineral drinks), 10%; 271, art. 42 a) second paragraph (high-sugar drinks), 18%. Source: SII DTE format v2.2, tax code table.
+
+**Classifying common purchases and sales.** The law, not the supplier's name, decides each line:
+
+- **Banks and payment firms.** Interest on financial operations is exempt (art. 12 E No. 10). A fee or commission is a service, because art. 2 No. 2 counts "un interés, prima, comisión o cualquiera otra forma de remuneración"; treat bank and card-processing fees as taxed unless an exemption is shown.
+- **Insurance.** A premium is also a service under art. 2 No. 2. Only the premiums listed in art. 12 E (for example No. 3, transport insurance on imports and exports, ship hulls and goods abroad; No. 5, premiums paid by the Federación Aérea de Chile, aero clubs and Chilean commercial airlines) are exempt. Do not treat business insurance as exempt by default.
+- **Health and medicines.** Health services financed by FONASA or ISAPRE up to the FONASA tariff, and outpatient services without lodging, are exempt (art. 12 E Nos. 19, 20); medicines are exempt only when used and consumed in that outpatient service and included in its price (No. 20). A pharmacy sale of medicines has no exemption of its own: 19%.
+- **Passenger transport.** Shipping, air, rail and urban, intercity, interprovincial and rural transport companies are exempt on their passenger income (art. 13 No. 3); international passenger tickets are exempt (art. 12 E No. 2). No input credit arises on an exempt ticket.
+- **Cars and fuel.** No credit for cars, station wagons and similar vehicles or their fuel, lubricants, spare parts and repairs, even if the car is in the company's name, unless the business sells or rents such vehicles (art. 23 No. 4).
+- **Foreign digital services.** The simplified regime is for foreign providers selling to persons in Chile who are not IVA taxpayers (art. 35 A). A VAT-registered business that buys a service from a provider abroad pays the IVA itself (art. 11 e)) and takes it as credit if the service relates to taxed operations; it has no Chilean invoice from that provider.
+
+**When only bank totals are available.** Treat each total as IVA-inclusive at 19%: net = total x 100 / 119, IVA = total x 19 / 119 (the boleta rule, art. 20). Give output IVA on every receipt until the document shows otherwise, give no credit on any payment without an electronic invoice to the buyer's RUT (art. 23 Nos. 1, 5), list the missing folios and ask for them. Chilean bank statements write pesos with a full stop for thousands and no decimals: $23.800.000 is CLP 23,800,000.
 
 **Conservative defaults when facts are missing.** Treat a sale as taxed at 19% until the exemption is shown (arts. 8, 12, 13); treat an export as domestic until the export document (DUS, or Customs qualification of a service under art. 12 E No. 16) is in hand; give no credit on a purchase without an electronic invoice to the buyer's RUT (art. 23 Nos. 1, 5), or for cars and their fuel (No. 4), or for a business-use share that is not documented (No. 2).
 
@@ -223,9 +236,11 @@ expected:
 | Read for the figures named: SII UTM/UTA 2026 (October to December UTM) | https://www.sii.cl/valores_y_fechas/utm/utm2026.htm | 2026-11-11 |
 | Read for the figures named: SII daily penal interest (7.70%, Jul to Dec 2026) | https://www.sii.cl/valores_y_fechas/otros_valores/tasa_interes_penal_diario.html | 2026-11-11 |
 | Read for the figures named: SII news of 19 Oct 2026 on Ley 21.850 (new-housing IVA exemption from the first business day of December 2026, for one year) | https://www.sii.cl/noticias/2026/191026noti01pcr.htm | 2026-11-11 |
+| DL 825, LeyChile XML export, reopened: read for arts. 2 No. 2, 11 e), 12 E Nos. 3, 5, 10, 19, 20, 13 No. 3 and 35 A (the classification notes in The base) | https://www.leychile.cl/Consulta/obtxml?opt=7&idNorma=6369 | 2026-11-14 |
+| SII, Formato Documentos Tributarios Electrónicos v2.2, reopened: read for the additional tax code table (codes 23, 24, 25, 26, 27, 44, 45, 271 and their rates) | https://www.sii.cl/factura_electronica/factura_mercado/formato_dte.pdf | 2026-11-14 |
 
-Not yet confirmed: the text of D.S. 1.001 of 2006 itself (the day 20 rule is taken from SII's pages); the current sector withholding rates for cambio de sujeto (the DTE format gives the usual rates; each sector has its own SII resolution); the proportional credit rules of the Reglamento (D.S. 55 of 1977), not read; the construction companies' special credit (DL 910 art. 21), not read; whether the F29 form image on sii.cl matches every code of the 2026 on-screen form; the rounding SII applies to the updated remanente.
+Not yet confirmed: the text of D.S. 1.001 of 2006 itself (the day 20 rule is taken from SII's pages); the current sector withholding rates for cambio de sujeto (the DTE format gives the usual rates; each sector has its own SII resolution); the proportional credit rules of the Reglamento (D.S. 55 of 1977), not read; the construction companies' special credit (DL 910 art. 21), not read; whether the F29 form image on sii.cl matches every code of the 2026 on-screen form; the rounding SII applies to the updated remanente; whether life insurance premiums are taxed (no life-insurance exemption was found in art. 12 E as read); the IVA treatment of ride-hailing trips (passenger transport by a company under art. 13 No. 3, or a digital intermediation service under art. 8 n)), not settled from the law as read.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cl-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cl-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cl-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cl-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

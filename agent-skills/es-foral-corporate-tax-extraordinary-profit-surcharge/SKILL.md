@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-foral-corporate-tax-extraordinary-profit-surcharge"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
-# Spain: Basque extraordinary-profit corporate tax surcharge, 2026–2030 v0.7
+# Spain: Basque extraordinary-profit corporate tax surcharge, 2026–2030 v0.8
 
 This Guide holds part of [es-foral-corporate-tax](es-foral-corporate-tax.md), moved here unchanged on 6 November 2026 so that each Guide stays within the size the site can deliver. Built from the law; not yet approved by an accountant.
 
@@ -21,6 +21,13 @@ A company taxed under Bizkaia, Álava or Gipuzkoa corporate tax law at the gener
 ## Rates, bands and thresholds
 
 The nominal rates, and the ordinary gross quota the surcharge increases, are in [es-foral-corporate-tax](es-foral-corporate-tax.md#rates-bands-and-thresholds). The growth slices and additional percentages are in the rules below.
+
+| Current accounting result `R` against mean `M` of the three previous positive results | Additional percentage on the corresponding gross-quota portion | Source |
+|---|---:|---|
+| Above 1.35 M up to 1.50 M | 1% | [Bizkaia NF11/2013 art.57 bis](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013 art.56.7](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014 art.56.7](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54) |
+| Above 1.50 M up to 1.75 M | 2% | same |
+| Above 1.75 M up to 2 M | 3% | same |
+| Above 2 M | 4% | same |
 
 ## The base
 
@@ -170,4 +177,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-corporate-tax-extraordinary-profit-surcharge` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-corporate-tax-extraordinary-profit-surcharge. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-corporate-tax-extraordinary-profit-surcharge` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-corporate-tax-extraordinary-profit-surcharge. If neither is available, confirm every figure against the official source pages cited above before relying on it.
