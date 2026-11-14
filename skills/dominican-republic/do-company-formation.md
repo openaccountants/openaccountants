@@ -54,7 +54,7 @@ Founders forming a commercial company in the Dominican Republic in 2026 under th
 |---|---|---|---|---|
 | SRL | 2 to 50 partners | Limited to contributions | At least RD$100,000 | Most common SME vehicle |
 | SAS | 2 or more | Limited to contributions | Authorised at least RD$3,000,000, 10% paid | Flexible governance |
-| SA | Shareholders | Limited | Authorised at least RD$30,000,000 | Larger companies; shares fully subscribed and paid before issue |
+| SA | Shareholders | Limited | Authorised at least RD$30,000,000 | Larger companies; the paid-up share required is under Not yet confirmed |
 | EIRL | One individual | Limited | Set by the founder; bank deposit certificate if contributed in cash | No 1% capital tax |
 
 All pay corporate income tax at 27% (30% for income of RD$1,000 million or more in fiscal years 2026 to 2028) and the 1% asset tax: see `do-tax-overview`.

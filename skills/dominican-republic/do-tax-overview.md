@@ -27,7 +27,7 @@ type: situation-rules
 
 Sources for this section: DGII income tax page and DGII Aviso 10-26 (see Sources).
 
-This skill is a map of the main national taxes in the Dominican Republic as they stand on 25 September 2026. It covers:
+This skill is a map of the main national taxes in the Dominican Republic as they stand on the pages read on 14 November 2026. It covers:
 
 - income tax (Impuesto sobre la Renta, ISR) for individuals and companies, including the 2026 personal scale and the new scale that starts in fiscal year 2027;
 - the corporate rate of 27%, and the temporary 30% rate for very large taxpayers;
@@ -390,6 +390,6 @@ If a date falls on a weekend or public holiday, it moves to the next working day
 | Law 253-12: read for arts. 6 to 8 (Tax Code arts. 306, 306 Bis, 308) and art. 23 (ITBIS rates) | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/253-12.pdf | 2026-11-14 |
 | DGII, Calendario del contribuyente 2026: read for the monthly IR-3, IR-17 and anticipo entries | https://dgii.gov.do/publicacionesOficiales/Calendario%20del%20contribuyente/Calendario%20del%20contribuyente%202026.pdf | 2026-11-14 |
 | DGII, RST page: read for the regime outline and approval requirement | https://dgii.gov.do/contribuyentesRegistrados/regimenesEspeciales/RST | 2026-11-14 |
-| Tax Code, Law 11-92: cited for arts. 12, 271, 314, 342 and 401 to 407 from the earlier version; not re-read in this pass | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf | not read on 2026-11-14 |
+| Tax Code, Law 11-92 (DGII consolidated copy): read for art. 12 and its Párrafo I (domicile; resident if more than 182 days in the fiscal year), art. 271 (foreign-source income from the third year), art. 314 (anticipos: 1.5% or one twelfth; individuals 50%, 30%, 20%; excess offset against the asset tax), art. 342 (zero rate for exports and refund) and arts. 401 to 407 (asset tax: 1%, base, financial and electricity companies, two instalments six months apart, exemptions, credit against ISR) | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf | 2026-11-14 |
 
-Not yet confirmed: the Decree 265-19 RST limits for 2026 and whether the new RST regulation has been issued; the scale DGII published for fiscal year 2025 returns; the exact anticipo day each month in 2026 (the calendar shows dates on the 15th or 16th); the ITBIS withholding rate on services by individuals; Tax Code arts. 12, 271, 314, 342 and 401 to 407 as quoted from the earlier version (Law 11-92 not re-read on 14 November 2026); the second asset tax instalment dates that DGII's page prints with year 2026 for 31 March and 30 June 2026 closes; DGII's treatment of Christmas salary above one twelfth.
+Not yet confirmed: the Decree 265-19 RST limits for 2026 and whether the new RST regulation has been issued; the scale DGII published for fiscal year 2025 returns; the exact anticipo day each month in 2026 (the calendar shows dates on the 15th or 16th); the ITBIS withholding rate on services by individuals; the second asset tax instalment dates that DGII's page prints with year 2026 for 31 March and 30 June 2026 closes; DGII's treatment of Christmas salary above one twelfth.
