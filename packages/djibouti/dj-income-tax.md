@@ -1,13 +1,14 @@
 ---
 name: dj-income-tax
 description: "Use for Djibouti personal income tax for tax year 2026: ITS salary tax bands 2% to 45%, the 50,000 exemption, withholding by the 10th, capital gains and non-residents."
-version: 2.0
+version: 2.1
 jurisdiction: DJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Djibouti Personal Income Tax

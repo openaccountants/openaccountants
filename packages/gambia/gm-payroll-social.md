@@ -3,11 +3,12 @@ name: gm-payroll-social
 description: "payroll and social contributions for The Gambia (tax year 2026): PAYE, SSHFC NPF, FPS and IICF, expatriate quota tax of D30,000 and D100,000. Built from official GRA, SSHFC and Ministry of Justice pages."
 jurisdiction: GM
 tax_year: 2026
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Gambia Payroll and Social Contributions

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/dj-company-formation"
   jurisdiction: "DJ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Djibouti Company Formation
@@ -96,15 +96,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ODPIC, Creation d entreprise: steps read | https://odpic.dj/creation-dentreprise/ | 2026-11-01 |
-| ODPIC, Registre de commerce et des societes: presentation read | https://odpic.dj/presentation-du-registre-de-commerce-et-des-societes-rcs/ | 2026-11-01 |
-| Code de commerce 2011, Ministry of Finance: arts. L.313-1 to L.313-3 and L.314-2 read | https://www.ministere-finances.dj/Code%20DE%20COMMERCE.pdf | 2026-11-01 |
-| Code general des impots, edition updated to the 2011 finance law, Ministry of Finance: articles cited read in the PDF text; later changes taken from the finance laws listed here | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf | 2026-11-01 |
-| CNSS, Affiliation employeur: full page read | https://cnss.dj/affiliation-employeur/ | 2026-11-01 |
-| Loi 190/AN/17/7eme L amending the CGI: articles 1 to 5 read | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ | 2026-11-01 |
+| ODPIC, Creation d entreprise: read for steps | https://odpic.dj/creation-dentreprise/ | 2026-11-14 |
+| ODPIC, Registre de commerce et des societes: read for presentation | https://odpic.dj/presentation-du-registre-de-commerce-et-des-societes-rcs/ | 2026-11-14 |
+| Code de commerce 2011, Ministry of Finance: read for arts. L.313-1 to L.313-3 and L.314-2 | https://www.ministere-finances.dj/Code%20DE%20COMMERCE.pdf | 2026-11-14 |
+| Code general des impots, edition updated to the 2011 finance law, Ministry of Finance: articles cited read in the PDF text; later changes taken from the finance laws listed here | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf | 2026-11-14 |
+| CNSS, Affiliation employeur: read in full | https://cnss.dj/affiliation-employeur/ | 2026-11-14 |
+| Loi 190/AN/17/7eme L amending the CGI: articles 1 to 5 read | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ | 2026-11-14 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. The old skill's 3-day timeline, USD 70,000 free-zone capital and 1,000,000 SARL capital came from non-official sites; the capital figure is contradicted by ODPIC and the others were not confirmed. Fees: ODPIC tariff page not read. Guichet-unique.dj did not open.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dj-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dj-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dj-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dj-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

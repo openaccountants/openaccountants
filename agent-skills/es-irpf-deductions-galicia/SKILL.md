@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-irpf-deductions-galicia"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
 # Spain: Galicia regional IRPF credits, 2026
@@ -100,11 +100,11 @@ For a fresh year in which works relief450 and market-entry relief500 both qualif
 
 A sole claimant has only three rentable homes A/B/C, each wholly owned, and no public aid. All qualifying works, vacancy, value, tenancy and continuing-rental facts are documented. A and B each incur 9,000 eligible costs, complete works and first let in 2025. C incurs 3,000 eligible costs, completes works and first lets in 2026. All rents initially exceed 700, isolating works relief from fixed 500 relief. There is enough regional quota to absorb every nominal works credit in this expense-base example. The 2025 two-home calculation admitted 3,000 for A and 3,000 for B; their remaining 6,000 each are genuine expense balances excluded by the combined ceiling, with 2029 expiry under 22.5. In 2026 each old home has a 3,000 annual tranche and current C has 3,000, so 9,000 competes for 6,000 capacity:
 
-|2026 property tranche|Origin/last expense-use year|Eligible before combined ceiling|Base selected|Expense excluded by combined ceiling|
-|---|---|---:|---:|---:|
-|A, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|
-|B, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|
-|C, current cost|2026/2030|3,000|0|3,000|
+|2026 property tranche|Origin/last expense-use year|Eligible before combined ceiling|Base selected|Expense excluded by combined ceiling|Source|
+|---|---|---:|---:|---:|---|
+|A, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|[Art. 5.Veintidós.3/5](https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161#a5)|
+|B, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|same|
+|C, current cost|2026/2030|3,000|0|3,000|same|
 
 The selected 2026 base 6,000 generates **900** credit, fully used. After that use, A and B each retain 3,000 expense with the original 2029 expiry; C retains 3,000 expense expiring 2030. A current-first allocation would instead select C 3,000 and only 3,000 of A/B, leaving 9,000 of older expense expiring 2029. It would produce the same 900 current credit but a different expense ledger. In the supplied chronological selection, using A/B's last 3,000 each in 2027 and C’s 3,000 in 2028 gives 900 and 450 nominal credits, respectively; the total base across all years is 21,000 and total relief 3,150. None of the individual 9,000 lifetime property ceilings is exceeded. If the allowed 2028 C-base credit cannot be absorbed for quota, it is a **2028 credit** with 2032 last use; the original expense amount does not remain deductible a second time.
 
@@ -177,4 +177,4 @@ National law rows (LIRPF, RIRPF, LGT, Ley 49/2002) and the AEAT national guidanc
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-irpf-deductions-galicia` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-irpf-deductions-galicia. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-irpf-deductions-galicia` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-irpf-deductions-galicia. If neither is available, confirm every figure against the official source pages cited above before relying on it.

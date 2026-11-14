@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cv-tax-overview"
   jurisdiction: "CV"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Cape Verde Tax Overview v0.2
+# Cape Verde Tax Overview v0.3
 
 ## Who this applies to
 
@@ -84,16 +84,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 78/VIII/2014, Codigo do IRPS, BO I 81, 31 Dec 2014 (original text): arts 21, 45 to 53, 57, 70 to 74 read | https://boe.incv.cv/Bulletins/Download/1952 | 2026-11-01 |
-| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: arts on the TEU, 25 and 26 read | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-01 |
-| INPS, Obrigacoes: all read | https://inps.cv/obrigacoes/ | 2026-11-01 |
-| Deliberacao 06/CD/ATCV/2026, BO II 209, 30 Oct 2026: preamble read | https://boe.incv.cv/Bulletins/DownloadAct?id=114418 | 2026-11-01 |
-| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: all months read | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 78/VIII/2014, Codigo do IRPS, BO I 81, 31 Dec 2014 (original text): arts 21, 45 to 53, 57, 70 to 74 read | https://boe.incv.cv/Bulletins/Download/1952 | 2026-11-14 |
+| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: read for arts on the TEU, 25 and 26 | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-14 |
+| INPS, Obrigacoes: read in full | https://inps.cv/obrigacoes/ | 2026-11-14 |
+| Deliberacao 06/CD/ATCV/2026, BO II 209, 30 Oct 2026: read for preamble | https://boe.incv.cv/Bulletins/DownloadAct?id=114418 | 2026-11-14 |
+| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: read for all months | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-14 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. CVE to EUR peg of 110.265 (Banco de Cabo Verde site did not open); other tax years by Ministry authorisation; worldwide basis wording for residents.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
