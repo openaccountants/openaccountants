@@ -1,461 +1,260 @@
 ---
 name: mt-rental-income
-description: 'Use this skill whenever asked about Malta rental income taxation. Trigger on phrases like "rental income Malta", "letting property Malta", "15% final withholding tax", "Article 31D", "TA24 rental", "property letting", "kiri", "rent received", "landlord tax Malta", "Airbnb Malta tax", "short-term rental Malta", "non-resident landlord Malta", "rental declaration CFR", "FWS rental", or any question about computing, filing, or optimising tax on rental income from Maltese immovable property. Covers both the Final Withholding System (15% flat) and the normal progressive system, non-resident landlords, short-term letting, VAT interaction, and property transfer tax. Basis year 2026: the 15% final tax under Article 31D, the L.N. 100 of 1993 deductions (interest, ground rent, licence fees and the 20% further deduction) under the normal system, the 2026 single rate bands, and the TA24 deadline of 30 April. ALWAYS read this skill before touching any Malta rental income work.'
-version: 1.4
+description: 'Use this skill whenever asked about Malta rental income tax for basis year 2026. Trigger on phrases like rental income Malta, letting property Malta, 15% final tax on rent, Article 31D, TA24, kiri, landlord tax Malta, Airbnb Malta tax, short let Malta, non-resident landlord Malta, Housing Authority lease rebate, or any question about computing, filing or choosing the route for tax on rent from Maltese immovable property. Covers the optional 15% final tax on gross rent (residential from 2014, commercial from 2016, commercial lets to or from a related body of persons excluded), the return route with the S.L. 123.26 deductions (interest, ground rent, licence fees and the 20% further deduction), the Housing Authority rates of 5% and 10%, the long-lease rebate, short lets, VAT on lettings, the 35% charge on undeclared rent, TA24 by 30 April and the return by 30 June. Read it before any Malta rental income work.'
+version: "2.0"
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 depends_on:
   - malta-income-tax
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# MT Rental Income
+# Malta rental income: the 15% final tax or the tax return, basis year 2026
+
+## Scope
+
+This skill decides and computes how a landlord is taxed in Malta on rent from immovable property for **basis year 2026** (rent received in calendar 2026; year of assessment 2027). It covers individuals and companies, residents and non-residents, residential and commercial lets, long lets and MTA-licensed short lets.
+
+Two routes exist for rent from a qualifying tenement:
+
+1. **The 15% final tax on gross rent** (Income Tax Act, Cap. 123, art. 31D). Optional, chosen each year, covering all qualifying rent of that year, paid with form TA24 by 30 April 2027.
+2. **The tax return route.** Net rent is added to chargeable income and taxed at the person's normal rates. The individual rate tables live in [malta-income-tax](malta-income-tax.md) and are not restated here.
+
+Out of scope, linked instead: selling the property ([mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md)), provisional tax on rent declared in the return ([mt-estimated-tax](mt-estimated-tax.md)), VAT returns ([malta-vat-return](malta-vat-return.md)), foreign property and trusts (refer).
+
+This file absorbed `how-to-account-for-rental-income-in-malta` on 14 November 2026: the order of work, the intake questions, the working paper and the traps from that file are below.
+
+Built from the law: not yet approved by an accountant. Working paper only.
+
+## Ask the client first
+
+1. **What is let?** A dwelling or garage (art. 31D(8)(a)(i)), or a commercial tenement or club under Civil Code art. 1525 (art. 31D(8)(a)(ii))? Any ground rent received from an emphyteutical concession?
+2. **For a commercial tenement or club: is it let to or from a related body of persons?** A body of persons is related to an individual if that individual owns or controls more than 25% of it, directly or indirectly; two bodies are related if the same persons own or control more than 25% of each. If yes, the 15% is not available for that let.
+3. **Long let or short let?** Is the letting licensed by the MTA under the Malta Travel and Tourism Services Act, Cap. 409? Are services (cleaning, breakfast, transfers) priced separately?
+4. **For a residential long let: is the lease registered with the Housing Authority under Cap. 604, for what original duration, and how many bedrooms does the contract state?** Is the property let to the Housing Authority itself, or to a tenant on a Housing Authority subsidy or scheme?
+5. **Who owns it and in what shares?** Each owner reports their own share; a rebate is split by share.
+6. **Other income and status** (single, married, parent; resident or not), to find the marginal rate on the return route. **Loan interest, ground rent paid and MTA licence fees** for each property.
+
+## The method, step by step
+
+1. **Registration first.** For a residential long let, confirm the lease is registered with the Housing Authority. The lessor registers it "within thirty (30) days of the commencement of the lease"; an unregistered private residential lease contract is "null and void" ([Cap. 604 art. 4](https://legislation.mt/eli/cap/604/eng/pdf)). Cap. 604 does not apply to tenements let to tourists exclusively for tourism purposes (art. 3(2)(b)), so a licensed holiday let has no Housing Authority registration duty; it still applies to licensed premises let to someone who is not a tourist.
+2. **Classify the tenement** (residential or commercial) and, for a commercial let, test the related-party bar. The bar sits only in the commercial limb, art. 31D(8)(a)(ii); a dwelling or garage qualifies whoever the tenant is.
+3. **Check the special Housing Authority rates** before art. 31D: rent from a lease to the Housing Authority for at least ten years is taxed at 5% final, deducted by the Authority (art. 31A); rent from a tenant on a Housing Authority rent subsidy, owner registered, at 10% final (art. 31B); rent to the same person for more than seven years under a Housing Authority scheme, owner registered, at 5% final (art. 31E). Restored scheduled or urban-conservation-area property under a MEPA scheme: 10% residential, 15% commercial, final, remitted by 30 June of the following year (art. 31C).
+4. **Confirm ownership and shares.**
+5. **Model both routes.** Never present the 15% first: clients anchor on the low number.
+   - 15% route: tax = 15% x gross rent received in the year, final, "no set-off or refund" (art. 31D(2)). For a registered long private residential lease of two years or more, deduct the S.L. 123.201 rebate.
+   - Return route, investment rent (art. 4(1)(e)): gross rent less interest on the loan for that property, less ground rent or similar burden, less MTA licence fees, less a further 20% of what remains after ground rent and licence fees (S.L. 123.26 rule 3). The 20% replaces every other expense. Each property is a separate source: a property whose deductions exceed its rent gives nil, and the loss is not set against other property, other income or later years (MTCA rental manual).
+   - Return route, trading rent (art. 4(1)(a), including most MTA-licensed short lets): expenses wholly and exclusively incurred, declared in Section 2 of the return. The 20% rule does not apply.
+   - Compare the extra tax the net rent causes at the marginal rate with the 15% of gross. Choose for **all** qualifying rent of the year: the option, once exercised, "shall apply to the total rental income received in the said year from all the tenements" (art. 31D(4)).
+6. **Record** both computations, the difference, the route chosen and the client's reason in the working paper.
+7. **File and pay** (see Filing and payment). Check that rent paid through TA24 is not declared again in the return, and reconcile rent credited to the bank to the registered lease value.
+
+### Rates, bands and thresholds
+
+| Item | Figure | Conditions | Source |
+|---|---|---|---|
+| Final tax on rent, art. 31D | 15% of gross rental income received | Optional, chosen yearly; final, no set-off or refund; covers all qualifying rent of the year; residents and non-residents, individuals and companies | Cap. 123 art. 31D(2), (4): https://legislation.mt/getpdf/69d8a9187da37f0580d5140c |
+| Start of the 15% option | Residential 1 January 2014; commercial 1 January 2016 | By calendar year of receipt (art. 31D(8)(b)) | MTCA art. 31D FAQ, Q1 and Q7: https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act |
+| Related body of persons, commercial lets | More than 25% ownership or control | Commercial tenement or club only; the 15% is then not available | Cap. 123 art. 31D(8)(a)(ii): https://legislation.mt/getpdf/69d8a9187da37f0580d5140c |
+| Undeclared rent found on enquiry | 35% of gross rent, plus interest and additional tax | Whether or not the 15% was exercised; final | same |
+| Lease to the Housing Authority, 10 years or more | 5% of gross rent, final, deducted by the Authority | Art. 31A | same |
+| Tenant on a Housing Authority rent subsidy | 10% of gross rent, final, deducted by the Authority | Owner registered with the Authority; art. 31B | same |
+| Housing Authority scheme, same tenant more than 7 years | 5% of gross rent, final | Owner registered; art. 31E | same |
+| Restored scheduled or UCA property, MEPA scheme | 10% residential, 15% commercial, final | Remitted with the forms by 30 June of the following year; art. 31C | same |
+| Further deduction, return route | 20% of rent remaining after ground rent and licence fees | Investment rent only; not on income from emphyteutical concessions; replaces all other expenses | S.L. 123.26 rule 3: https://legislation.mt/eli/sl/123.26/eng/pdf |
+| Long-lease rebate, 2 to under 3 years | EUR 200 (1 bedroom), EUR 300 (2), EUR 400 (3 or more) | Lease registered as a long private residential lease, original duration; 15% option exercised; pro rata by days in the first and last year; capped at 15% of the year's rent from that lease | S.L. 123.201 rule 5: https://legislation.mt/eli/sl/123.201/eng/pdf |
+| Long-lease rebate, 3 years or more | EUR 300 (1 bedroom), EUR 400 (2), EUR 500 (3 or more) | same conditions | same |
+| TA24 with payment | 30 April of the year after the year of receipt | 15% route; 30 April 2027 for 2026 rent | MTCA art. 31D FAQ, Q10: https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act |
+| Tax return and tax settlement date | 30 June of the following year; online return by 31 July | Return route | MTCA Tax Return Cycle: https://mtca.gov.mt/personal-tax/individual/tax-return-cycle |
+| Interest on late tax | 0.6% for every month or part of a month, capped at the tax | Tax payable on or after 31 August 2022 | Cap. 372 art. 44(2A): https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b |
+| VAT on licensed tourist accommodation | 7% | Article 10 registered supplier; where the price includes other goods or services, 80% of the price is accommodation and 20% the other supplies | Cap. 406 Eighth Schedule item 1: https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 |
+| Records | At least nine years | Anyone carrying on a trade, business, profession or vocation; gives way to Companies Act art. 163(5) | Cap. 372 art. 19(5): https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b |
+
+### What counts as rent
+
+- "Rents" include ground rents, urban or rural (art. 31D(8)(c)). MTCA's guidance note lets the 15% apply to ground rent from an emphyteutical concession of a residential or commercial tenement (note para. (a)).
+- Premiums paid in the same way as the rent they relate to may go to the 15% in the year received, or into the return (MTCA rental manual). Key money (*rigal*), recognition fees (*lawdemju*) and ground rent (*cens*) are "other profits arising from property" under art. 4(1)(e).
+- Recharges of common costs are not rent for art. 31D (note para. (d)). A refundable security deposit is not income unless forfeited.
+- Platform payouts: the base is the rent before the platform's fee, net of any VAT collected (method carried from earlier versions; see Not yet confirmed).
+- A person who would have claimed wear and tear and opts for the 15% is deemed to have claimed it, for a later balancing charge under art. 24 (note para. (e)).
+- A company allocates distributable profits from 15% rent to its final tax account (art. 31D(6)), and declares the rent in its company return (MTCA rental manual).
+
+### Short lets
+
+An MTA-licensed host can choose the 15% on gross rent. Art. 31D(1) applies "where, during a relevant year, any person rents a tenement", and a tenement includes "a dwelling house or part thereof which is to be occupied or is occupied as a home or residence by the occupier" (art. 31D(8)(a)(i)); nothing in art. 31D excludes tourist lets. MTCA's guidance note para. (b): "The final tax rate of 15% can be applied both on receipts of rental income that are chargeable to tax either under Article 4(1)(a) of the Income Tax Act or Article 4(1)(e) of the Income Tax Act." Without the 15%, MTCA treats short lets as trading: Section 2 of the return, "This includes short letting of holiday accommodation which is subject to MTA license requirements", with expenses wholly and exclusively incurred. Two limits: only rent qualifies, so separately priced services are not rent; and MTCA's reading of the dwelling limb for tourist stays is administrative guidance.
+
+A licence is needed to "provide accommodation in a house to tourists" (Cap. 409 art. 18(2)); a tourist is a person staying outside their usual environment "for not more than one consecutive year" (art. 2). There is no 30-day test in the licensing law; the 30-day figure is a VAT rule.
+
+## Boundary and exception table
+
+| Situation | Treatment | Why |
+|---|---|---|
+| Office let to a company the landlord owns 60% of | 15% not available; return route | Commercial tenement, related body (art. 31D(8)(a)(ii)) |
+| Flat or garage let to the landlord's own company | 15% available | The related-party bar sits only in the commercial limb; MTCA's FAQ states it without that limit, so confirm with MTCA before filing |
+| Two flats: one on 15%, one in the return, same year | Not allowed | Art. 31D(4): the option covers all qualifying rent of the year |
+| 15% one year, return the next | Allowed | Chosen annually (MTCA FAQ Q13); 15% paid cannot be claimed back (Q12) |
+| Repairs, agent fees, insurance claimed with the 15% | Not deductible | Tax on gross (art. 31D(2)) |
+| Repairs claimed on top of the 20% | Not deductible | The 20% covers all other expenses (S.L. 123.26 rule 3; MTCA manual) |
+| Loss on one property in the return | Nil for that property, no carry-forward | MTCA rental manual |
+| Rent never declared, found on enquiry | 35% of gross plus interest and additional tax | Art. 31D(5); MTCA FAQ Q8 says normal rates for individuals, the statute controls |
+| Trading short let | 15% still available on the rent | MTCA guidance note para. (b) |
+| Mixed accommodation and services, receipts not separable | Refer | Only rent qualifies |
+| Lease registered for 2 years and renewed for 2 more | Rebate band by the original duration only | S.L. 123.201 rule 4 |
+| Spouses filing separately under art. 49A | Each may still use the 15% | MTCA rental manual |
+| Non-resident landlord | 15% available; or the return at non-resident rates with the S.L. 123.26 deductions | MTCA FAQ Q3; MTCA rental manual |
+
+### VAT on lettings ([Cap. 406 Fifth Schedule Part Two item 1](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4))
+
+| Letting | VAT |
+|---|---|
+| Letting of immovable property generally | Exempt without credit |
+| Accommodation that must be licensed under Cap. 409, or in a holiday camp or camping site | Taxable; 7% for an Article 10 supplier |
+| Designated vehicle parking premises or sites | Taxable |
+| Permanently installed equipment and machinery; hire of safes | Taxable |
+| Letting by a limited liability company to an Article 10 person for that person's economic activity | Taxable |
+| Letting for not more than thirty days by a taxable person in the course of an economic activity | Taxable, except: the cases above, space for artistic and cultural activities, habitation premises not needing a Cap. 409 licence, garages and stores, and poker rooms |
 
-Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malta-income-tax](malta-income-tax.md); sales of property are in [mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md); [how-to-account-for-rental-income-in-malta](how-to-account-for-rental-income-in-malta.md) covers the bookkeeping side.
+VAT collected is not rent. Registration under Article 10 or 11 depends on turnover: see [malta-vat-return](malta-vat-return.md).
 
-## Section 1 -- Quick Reference
+### Defaults when a fact is missing
 
-**Quick Reference**
+| Missing fact | Default |
+|---|---|
+| Route not chosen | Stop and ask; compute both |
+| Commercial tenant, relationship unknown | Treat as related (15% blocked) |
+| Residential or commercial unknown | Stop and ask |
+| Residence of the landlord unknown | Stop and ask |
+| Short or long let unknown | Stop: VAT and the return section depend on it |
+| Furnished or not | No effect on either route |
 
-| Field | Value |
-| --- | --- |
-| Country | Malta (Republic of Malta) |
-| Tax | Income Tax on Rental Income (Immovable Property) |
-| Currency | EUR only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Income Tax Act, Chapter 123, Article 31D |
-| Supporting legislation | ITA Article 4(1)(a) and 4(1)(e); Income Tax Management Act (Chapter 372); Deduction of Expenses in respect of Immovable Property Rules, [S.L. 123.26](https://legislation.mt/eli/sl/123.26/eng/pdf) (L.N. 100 of 1993) |
-| Tax authority | Commissioner for Tax and Customs / Malta Tax and Customs Administration (MTCA) |
-| Filing portal | MTCA online services (myTax) |
-| Filing deadline (FWS) | 30 April of the year following the basis year |
-| Filing deadline (normal) | 30 June of the year following the basis year (via annual tax return), with payment. For 2025 rent (year of assessment 2026), MTCA extended both filing and payment to 31 July 2026 ([MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline)). For 2026 rent the date is 30 June 2027 unless MTCA extends it again |
-| Review status | Source-cited draft: not reviewed by an accountant |
-| Skill version | 1.4 |
+### Red flags
 
-### Two Systems for Taxing Rental Income
+- Software that nets expenses before applying the 15%.
+- Rent split between TA24 and the return in one year.
+- Short lets treated as passive rent, with the VAT and eco-contribution questions missed.
+- A residential lease not registered with the Housing Authority: the contract may be void and no rebate is due.
+- A rebate claimed that was not due is repayable with interest from 1 May of the year of assessment (S.L. 123.201 rule 9).
 
-**Two Systems for Taxing Rental Income**
+## Worked cases
 
-| Feature | Final Withholding System (FWS) | Normal Progressive System |
-| --- | --- | --- |
-| Tax rate | 15% flat on gross rent | Progressive rates (0%--35%) on net rent |
-| Deductions | NONE: no expenses, set-offs, or refunds | Interest, ground rent, licence fees, plus a 20% further deduction that replaces all other expenses (L.N. 100 of 1993) |
-| Filing form | TA24 | Annual income tax return |
-| Deadline | 30 April following year | 30 June following year |
-| Availability | Residents and non-residents | Residents and non-residents |
-| Entities | Individuals and bodies corporate | Individuals and bodies corporate |
-| Commercial tenement or club let to or from a related body of persons | NOT available | Must use this system |
-| Election | Annual choice: can change each year | Default if FWS not elected |
-| Mixed election | NOT allowed: the option covers all qualifying rental income from all tenements for the year | N/A |
+All taxpayers are invented; rates are the 2026 law.
 
-### Conservative Defaults
+### Case 1: which route, single landlord with a salary (a decision)
 
-**Conservative Defaults**
+A single resident earns chargeable income of EUR 30,000 from salary, in the 25% band of the 2026 single table ([malta-income-tax](malta-income-tax.md); [MTCA 2026 rates](https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026): 25% less EUR 3,400 from EUR 16,001 to EUR 60,000). She receives EUR 12,000 rent in 2026 from one flat. With a loan, interest is EUR 3,000; without one, nil. No ground rent or licence fee.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown system choice (FWS vs normal) | STOP: ask client which system they elect |
-| Commercial tenement or club, and unknown whether it is let to or from a related body of persons (more than 25% owned or controlled by the landlord, or by the same persons) | Treat as related (FWS blocked). The test does not apply to a dwelling or garage |
-| Unknown property type (residential vs commercial) | STOP: ask client |
-| Unknown residency status of landlord | STOP: affects withholding obligations |
-| Unknown whether furnished or unfurnished | Treat as unfurnished (no furniture premium) |
-| Unknown rental period (short-term vs long-term) | STOP: VAT treatment depends on this |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-**Minimum viable** -- total gross rental income for the year, election for FWS or normal system, whether each property is a dwelling or garage or a commercial tenement, and for a commercial tenement whether it is let to or from a related body of persons.
-
-**Recommended** -- lease agreement(s), rental income bank receipts, property purchase documentation (for normal system deductions), details of any letting agent commissions, insurance and maintenance invoices.
-
-**Ideal** -- complete rental income schedule per property, bank statements showing rental receipts, itemised expenses with receipts (normal system only), confirmation of property type (residential/commercial), and dates of letting periods.
-
-### Refusal Catalogue
-
-- **R-MTR-1 -- System election unknown**: The client must confirm whether they elect the 15% Final Withholding System or the normal progressive system. This affects all calculations. Cannot proceed without this election.  _(R-MTR-1)_
-- **R-MTR-2 -- Related-party letting**: A commercial tenement or club let to or from a related body of persons cannot benefit from the 15% final tax (Article 31D(8)(a)(ii)). The related-party condition sits only in that limb: a dwelling house or garage under Article 31D(8)(a)(i) qualifies whoever the tenant is. A body of persons is related to an individual if that individual owns or controls more than 25% of it, directly or indirectly; two bodies of persons are related if the same persons own or control more than 25% of each. If a commercial letting is between related parties, the normal system must be used. Confirm the relationship before proceeding.  _(R-MTR-2; Article 31D)_
-- **R-MTR-3 -- Property transfers / capital gains**: Property disposals and transfer tax computations are outside the scope of this skill. Escalate to a warranted accountant.  _(R-MTR-3)_
-- **R-MTR-4 -- Complex non-resident structures**: Non-resident landlords with complex holding structures, trusts, or nominee arrangements require specialist advice. Escalate to a warranted accountant.  _(R-MTR-4)_
-- **R-MTR-5 -- Mixed election attempted**: A taxpayer cannot elect FWS for part of their rental income and the normal system for another part. All rental income must be under one system for any given year.  _(R-MTR-5)_
-
-## Section 3 -- Final Withholding System (FWS) -- Computation Rules
-
-### 3.1 Core Rules (Article 31D)
-
-- **FWS core rules**: 1. The tax is 15% of **gross rental income received** in the basis year 2. Gross means gross: no deductions of any kind (repairs, insurance, management fees, mortgage interest, depreciation: NOTHING) 3. The tax is **final**: no refunds, no set-offs, no credits against other tax, no carry-forward of losses 4. Available to both residents and non-residents 5. Available to both individuals and companies; a Malta company allocates the profits to its final tax account 6. **NOT available** for a commercial tenement or club let to or from a related body of persons (Article 31D(8)(a)(ii)) 7. "Tenement" is a dwelling house or part of one occupied as a home, a garage, or a commercial tenement or club as defined in article 1525 of the Civil Code (Article 31D(8)(a)); "rents" include ground rents (Article 31D(8)(c)); recharges of common costs are not rent for Article 31D (MTCA guidance note) 8. Tax on rent from a long private residential lease is abated as prescribed (Article 31D(2) proviso); this skill does not compute the abatement  _(Article 31D)_
-
-### 3.2 Calculation
-
-- **FWS tax calculation**: Tax = Gross rental income × 15% There is no exempt band, no personal allowance applicable, and no threshold below which FWS is unavailable.  _(Article 31D)_
-
-### 3.3 Filing and Payment
-
-**Filing and Payment**
-
-| Step | Detail |
-| --- | --- |
-| Form | TA24, online through MTCA (residents and non-residents/companies have separate entry points) or manually |
-| Deadline | 30 April of the following year |
-| Payment | Accompanies the form |
-| Rental income not declared in annual return | Correct for individuals: FWS rent is not declared in the tax return |
-
-### 3.4 FWS Historical Coverage
-
-**FWS Historical Coverage**
-
-| Property type | Available from |
-| --- | --- |
-| Residential property | 1 January 2014 |
-| Commercial property | 1 January 2016 |
-
-## Section 4 -- Normal Progressive System -- Computation Rules
-
-### 4.1 Core Rules
-
-- **Normal system core rule**: If FWS is not elected, rental income is declared in the annual tax return and taxed at progressive rates after deducting allowable expenses.
-
-### 4.2 Allowable Deductions (Normal System Only)
-
-For rent from property held as an investment (Article 4(1)(e) ITA), MTCA limits the deductions to those in [S.L. 123.26 rule 3](https://legislation.mt/eli/sl/123.26/eng/pdf) (L.N. 100 of 1993). Rule 3 still refers to income under article 4(1)(f), which was "Repealed by Act XX of 1996"; rent is now charged under article 4(1)(e). MTCA's rental manual still applies these deductions to that rent, so follow it, and note that the rule's own cross-reference is out of date. The deductions are:
-
-| Deduction | Notes |
-| --- | --- |
-| (a) Interest | Only on a loan that relates to the property producing the rent |
-| (b) Rent, ground rent or similar burden | Paid by the landlord on the property |
-| (c) Licence fees | Paid to the MTA under the Malta Travel and Tourism Services Act, Cap. 409 (formerly the Guest Houses and Holiday Furnished Premises Act, repealed by Cap. 409 art. 53) |
-| (d) Further deduction | 20% of the gross rent less (b) and (c). Not allowed on income from emphyteusis |
-
-The 20% further deduction replaces every other expense. Repairs, insurance, agent fees, condominium fees, accountancy and similar costs are NOT deducted on top of it. Round deductions up to the nearest euro. (Version 1.0 of this skill listed those costs as deductible; that was wrong.)
-
-### 4.3 Per-Property Rule and Losses
-
-Each property is a separate source. If deductions exceed the rent on one property, that property gives NIL income. A loss on one property cannot be set against another property, against other income, or carried forward.
-
-Rent that forms part of a trade (Article 4(1)(a)) is computed as business income; that is outside this section. MTCA treats most MTA-licensed short lets this way (see 6.2).
-
-### 4.4 Tax Rates (Normal System)
-
-- **Tax Rates (Normal System)**: Progressive rates apply per the Income Tax Act rate tables. Net rental income is added to all other income and taxed at the marginal rate. For 2026 the single rates are 0% to EUR 12,000, 15% to EUR 16,000, 25% to EUR 60,000 and 35% above (MTCA, Tax Rates 2026). See [malta-income-tax](malta-income-tax.md) for the married and parent tables. Non-residents who opt for the normal system are taxed at the non-resident rates.  _(Income Tax Act rate tables)_
-
-### 4.5 When Normal System May Be Preferable
-
-- **Large loan interest or ground rent**: these come off before tax, on top of the 20% further deduction
-- **Low marginal rate**: at 0% or 15%, the tax on net rent is usually below 15% of gross rent
-- **Losses**: the normal system gives NIL income on a loss-making property, but the loss cannot be used elsewhere
-
-## Section 5 -- Transaction Pattern Library
-
-### 5.1 Income Patterns (Credits on Bank Statement)
-
-**Income Patterns (Credits on Bank Statement)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KIRI, RENT RECEIVED, RENTAL PAYMENT | Rental income | Gross amount = FWS base; normal system deducts interest, ground rent, licence fees and the 20% |
-| LETTING AGENT, PROPERTY MANAGER + DEPOSIT | Rental income | Agent collects on behalf: full gross is landlord's income |
-| AIRBNB PAYOUT, BOOKING.COM PAYOUT | Rental income | Platform rental: verify if short-term (VAT implications) |
-| SECURITY DEPOSIT, DEPOSIT RECEIVED | EXCLUDE if refundable | Not income unless forfeited |
-| TENANT REIMBURSEMENT, UTILITY REFUND, COMMON COSTS RECHARGE | EXCLUDE | Recharges of common costs are not rent for Article 31D |
-
-### 5.2 Expense Patterns (Normal System Only -- Debits)
-
-| Pattern | Category | Treatment |
-| --- | --- | --- |
-| MORTGAGE INTEREST, LOAN INTEREST, BOV LOAN | Interest expense | Deductible under normal system if the loan relates to the let property; NOT under FWS |
-| GROUND RENT, CENS | Ground rent | Deductible under normal system |
-| MTA LICENCE, LICENCE FEE | Licence fee | Deductible under normal system |
-| INSURANCE, REPAIRS, AGENT COMMISSION, CONDOMINIUM, FURNITURE | Other costs | Covered by the 20% further deduction; not deducted separately |
-
-### 5.3 Exclusions
-
-**Exclusions**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MORTGAGE REPAYMENT, LOAN PRINCIPAL | EXCLUDE | Capital repayment, not expense |
-| PROPERTY PURCHASE, NOTARY (acquisition) | EXCLUDE | Capital cost: relevant only to transfer tax or CGT |
-| INTERNAL TRANSFER, OWN ACCOUNT | EXCLUDE | Not rental transaction |
-| STAMP DUTY, PROPERTY TRANSFER TAX | EXCLUDE | Capital cost at acquisition |
-
-## Section 6 -- Special Topics
-
-### 6.1 Non-Resident Landlord Rules
-
-- **Non-Resident Landlord Rules**: - Non-residents can elect FWS (15% on gross) just like residents - Non-residents can alternatively declare the rent in a return, take the L.N. 100 of 1993 deductions and pay at the non-resident rates - Non-domiciled, non-resident landlords: Malta rental income is Malta-source and always taxable in Malta regardless of domicile or remittance - Double tax treaty relief may apply: landlord should check treaty with country of residence (Article 6 OECD Model typically gives primary taxing rights to the country where the property is situated)  _(Article 6 OECD Model)_
-
-### 6.2 Short-Term Rental / Airbnb Treatment
-
-- **Short-Term Rental / Airbnb Treatment**: - **MTA licence**: a licence is needed to provide accommodation in a house to tourists, or to lease a house to a tourist ([Cap. 409 art. 18(2), (3)](https://legislation.mt/eli/cap/409/eng/pdf)). A tourist is a person staying outside their usual environment "for not more than one consecutive year" (art. 2). There is no 30-day test in the licensing law; the 30-day figure is the VAT rule in 6.5 - **Income tax**: see the short-let paragraph below - **VAT treatment**: letting that needs a licence under the Malta Travel and Tourism Services Act is outside the VAT exemption; an Article 10 registered landlord charges 7% (8th Schedule VAT Act). This is separate from income tax - If the landlord is VAT-registered for short-term letting: VAT collected is NOT income; net of VAT is the rental income for FWS/normal system - Platform fees (Airbnb service fee, Booking.com commission) are deducted by the platform before payout: the gross rental income for tax purposes is the amount **before** platform deductions (method carried from version 1.0; not re-checked against an MTCA source)
-
-**Short lets (MTA-licensed holiday lets).** An MTA-licensed host can choose the 15% on the gross rent. [Article 31D(1)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) applies "where, during a relevant year, any person rents a tenement", and article 31D(2) sets the tax "at the option of the person ... at the rate of fifteen cents (0.15) on every euro of the gross rental income received". A tenement includes "a dwelling house or part thereof which is to be occupied or is occupied as a home or residence by the occupier" (article 31D(8)(a)(i)). Nothing in article 31D excludes tourist or licensed lets. [MTCA's Guidance Note on article 31D](https://mtca.gov.mt/docs/default-source/documents/mtca-guidance-note-art31d.pdf), paragraph (b): "The final tax rate of 15% can be applied both on receipts of rental income that are chargeable to tax either under Article 4(1)(a) of the Income Tax Act or Article 4(1)(e) of the Income Tax Act." When the 15% is not chosen, short lets are usually trading income under article 4(1)(a). [MTCA's rental manual](https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf) says "short lets are considered as trading in nature and are taxable under Article 4(1)(a) ITA". They go in Section 2 of the return ("This includes short letting of holiday accommodation which is subject to MTA license requirements"), with expenses "wholly and exclusively incurred in the production of the rental income" deducted, not the S.L. 123.26 20% rule. Two limits: only rent qualifies for the 15%, so separately priced services (cleaning, breakfast, transfers) are not rent; and MTCA's reading of the dwelling limb for tourist stays is administrative guidance, not law.
-
-### 6.3 Property Transfer Tax (on Disposal)
-
-**Property Transfer Tax (on Disposal)**
-
-Out of scope here; see [mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md). Headline rates from the MTCA FAQ for orientation only:
-
-| Scenario | Final WHT Rate |
-| --- | --- |
-| General property transfer | 8% of transfer value |
-| Property acquired before 1 January 2004 | 10% of transfer value |
-| Property not part of a project, transferred within 5 years of acquisition (conditions apply) | 5% of transfer value |
-| Property in Urban Conservation Area, restored under a permit applied for on or after 1 January 2015 | 5% of transfer value |
-| Sole ordinary residence declared on acquisition, sold within 3 years, no other residential property owned | 2% of transfer value |
-| Own residence owned and occupied for at least 3 consecutive years, sold within 12 months of vacating | Exempt |
-
-### 6.4 Furnished vs Unfurnished
-
-- **Furnished vs Unfurnished**: - FWS: no distinction, 15% on gross regardless - Normal system (Article 4(1)(e)): no separate deduction for furniture; the 20% further deduction covers it - A person who would have claimed wear and tear and opts for the 15% is deemed to have claimed it for any later balancing charge (MTCA guidance note) - Furnished premium (if charged): included in gross rental income
-
-### 6.5 VAT and Rental Income
-
-**VAT and Rental Income**
-
-| Scenario | VAT Treatment |
-| --- | --- |
-| Letting of immovable property generally | Exempt without credit (5th Schedule, Part Two, VAT Act) |
-| Accommodation that needs a Malta Travel and Tourism Services Act licence | Taxable; 7% where the landlord is Article 10 registered |
-| Letting by a limited liability company to an Article 10 registered person for its economic activity | Taxable at 18% |
-| Letting for 30 days or less in the course of an economic activity (with the listed exceptions) | Taxable at 18% |
-| Qualifying designated vehicle-parking premises/sites; permanently installed equipment/machinery; safes | Outside the immovable-letting exemption under the relevant statutory limbs; check registration and applicable rate |
-| Ordinary garages, stores or similar premises | Not automatically taxable: excepted from the short-period exclusion by item 1(1)(e)(iv). Test other exclusion limbs separately, including a limited-company letting to an Article 10 registered person for that person’s economic activity |
-
-### 6.6 Records and Interest
-
-Keep rent records for at least nine years after the transactions they relate to. That is the period for tax records in [ITMA art. 19(5)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b), which applies to anyone carrying on a trade or business, including most short lets. A company keeps its accounting records for ten years ([Companies Act, Cap. 386, art. 163(5)](https://legislation.mt/eli/cap/386/eng/pdf)), and art. 19(5) gives way to that rule. Interest on tax paid late is 0.6% "for every month or part thereof", capped at the tax ([ITMA art. 44(2A)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b)). Provisional tax applies to rent declared in the return; see [mt-estimated-tax](mt-estimated-tax.md). Undeclared rent found on investigation is taxed at 35% of gross rent, plus interest and additional tax, whichever system would have applied (MTCA FAQ 11).
-
-Version 1.0 had a section on a "former EUR 1,200 exemption". No MTCA source for it was found, so it is removed.
-
-## Section 7 -- Worked Examples
-
-### Example 1 -- FWS, Single Residential Property
-
-**Input:** Resident individual receives EUR 12,000 gross rent in 2026 from one apartment let to an unrelated tenant. Elects the 15% final tax. Costs: EUR 2,500 (insurance, repairs, agent fees).
-
-The costs do not matter under the final tax. Tax is 15% of EUR 12,000, so EUR 1,800, paid with the TA24 by 30 April 2027. The rent is not declared in the return.
+With the loan: 20% further deduction EUR 2,400, net rent EUR 6,600, extra tax at 25% EUR 1,650 against EUR 1,800 on the 15%. The return is cheaper by EUR 150. Without the loan: net rent EUR 9,600, extra tax EUR 2,400, so the 15% is cheaper by EUR 600. The loan interest decides it.
 
 ```oa-check
-name: Article 31D 15% on gross rent EUR 12,000 (2026)
-inputs:
-  gross_rent: 12000
-steps:
-  - tax: pct(gross_rent, 15)
-expected:
-  tax: 1800.00
-```
-
-### Example 2 -- Normal System, Single, With a Salary
-
-**Input:** Same landlord, EUR 12,000 rent, no ground rent or licence fee, EUR 3,000 interest on the loan that bought the flat. Single, salary EUR 30,000 (chargeable income after the salary's own deductions). Repairs and insurance EUR 1,700.
-
-Under L.N. 100 of 1993 the interest comes off, plus a further 20% of gross rent (no ground rent or licence to subtract first), so EUR 2,400. Repairs and insurance are covered by the 20% and are not deducted again. Net rent is EUR 6,600. Total chargeable income is EUR 36,600, in the 25% band of the 2026 single table (rate times income, less EUR 3,400). Tax with the rent is EUR 5,750; without it, EUR 4,100. The rent adds EUR 1,650, which is EUR 150 less than the EUR 1,800 final tax. The normal system is cheaper here, before the cost of the extra compliance.
-
-```oa-check
-name: Normal system, single, salary EUR 30,000, rent EUR 12,000, interest EUR 3,000 (2026)
+name: Rent EUR 12,000, single at 25 percent, 15 percent versus return, with and without loan interest (2026)
 inputs:
   salary: 30000
   gross_rent: 12000
-  interest: 3000
+  interest_loan: 3000
   ground_rent: 0
 steps:
-  - further_deduction: pct(gross_rent - ground_rent, 20)
-  - net_rent: max(0, gross_rent - interest - ground_rent - further_deduction)
-  - total_income: salary + net_rent
-  - tax_with_rent: total_income * 0.25 - 3400
-  - tax_without_rent: salary * 0.25 - 3400
-  - extra_tax_normal: tax_with_rent - tax_without_rent
-  - tax_fws: pct(gross_rent, 15)
-  - saving_normal: tax_fws - extra_tax_normal
+  - further: pct(gross_rent - ground_rent, 20)
+  - net_loan: max(0, gross_rent - interest_loan - ground_rent - further)
+  - extra_loan: (salary + net_loan) * 0.25 - 3400 - (salary * 0.25 - 3400)
+  - net_noloan: max(0, gross_rent - ground_rent - further)
+  - extra_noloan: (salary + net_noloan) * 0.25 - 3400 - (salary * 0.25 - 3400)
+  - final_tax: pct(gross_rent, 15)
+  - return_saves_with_loan: final_tax - extra_loan
+  - final_saves_without_loan: extra_noloan - final_tax
 expected:
-  further_deduction: 2400.00
-  net_rent: 6600.00
-  total_income: 36600.00
-  tax_with_rent: 5750.00
-  tax_without_rent: 4100.00
-  extra_tax_normal: 1650.00
-  tax_fws: 1800.00
-  saving_normal: 150.00
+  further: 2400.00
+  net_loan: 6600.00
+  extra_loan: 1650.00
+  net_noloan: 9600.00
+  extra_noloan: 2400.00
+  final_tax: 1800.00
+  return_saves_with_loan: 150.00
+  final_saves_without_loan: 600.00
 ```
 
-### Example 3 -- FWS, Non-Resident Landlord
+### Case 2: 15% with the long-lease rebate, lease starting in the year
 
-**Input:** UK-resident individual owns apartment in Sliema. Gross rent EUR 18,000.
+A two-bedroom flat is let from 1 April 2026 on a three-year lease registered with the Housing Authority, at EUR 800 a month. Rent received in 2026 is EUR 7,200; the lease runs 275 days of 2026. The owner opts for the 15%. Rebate: EUR 400 x 275 / 365 = EUR 301.37, below the cap of 15% of the year's rent (EUR 1,080). Tax payable with the TA24 by 30 April 2027: EUR 778.63.
 
-**Computation:**
-```
-Tax = EUR 18,000 × 15% = EUR 2,700
-```
-Non-residents can elect the 15% final tax. Filed via TA24 by 30 April. Rent from Malta property is taxable in Malta. The treaty article and the UK credit are for the landlord's UK adviser to confirm.
-
-### Example 4 -- Short-Term Letting with VAT
-
-**Input:** Landlord holds a Malta Travel and Tourism Services Act licence and is Article 10 VAT registered. Total platform payouts received: EUR 20,000 (net of a 3% host service fee). Gross bookings: EUR 20,619. VAT at 7% is included in the gross accommodation charge.
-
-**Computation:**
-```
-Gross income before platform fee = EUR 20,619
-VAT component (7/107 × EUR 20,619) = EUR 1,349
-Net income for tax = EUR 20,619 - EUR 1,349 = EUR 19,270
-FWS tax = EUR 19,270 × 15% = EUR 2,891
-```
-Platform fees are not deducted from the FWS base.
-
-### Example 5 -- Related-Party Let (FWS Blocked)
-
-**Input:** An individual lets an office to a company in which she holds 60% of the shares, for EUR 6,000 a year. No loan, no ground rent.
-
-**Computation:** The company is more than 25% owned by her, so it is a related party under Article 31D and the 15% is not available. Under the normal system the 20% further deduction is EUR 1,200 and net rent is EUR 4,800. If her other income keeps her in the 25% band:
-```
-Additional tax = EUR 4,800 × 25% = EUR 1,200
-```
-An office is a commercial tenement, so the related-party bar in Article 31D(8)(a)(ii) applies. A dwelling or garage let to the same company would not be caught, and a let between two individuals is not caught by the body-of-persons test.
-
-## Section 8 -- Decision Flowchart: FWS vs Normal System
-
-```
-1. Is the property a commercial tenement or club let to or from a RELATED
-   body of persons (more than 25% owned or controlled by the landlord, or by
-   the same persons)? Dwellings and garages skip this test.
-   YES → Normal system only (FWS blocked)
-   NO → Continue
-
-2. Compute net rent under the normal system:
-   gross rent - interest - ground rent - licence fees - 20% of (gross - ground rent - licence fees)
-
-3. Compute the extra tax that net rent causes at the landlord's marginal rate
-   (resident or non-resident table).
-
-4. Compare with 15% of gross rent. Choose the lower, for ALL qualifying rent in the year.
-
-ALWAYS compute both options and present to reviewer for confirmation.
+```oa-check
+name: Article 31D with S.L. 123.201 rebate, 2 bedrooms, 3-year lease from 1 April 2026
+inputs:
+  rent_received: 7200
+  full_rebate: 400
+  days_in_force: 275
+  days_in_year: 365
+steps:
+  - tax_15: pct(rent_received, 15)
+  - rebate_prorata: round(full_rebate * days_in_force / days_in_year, 2)
+  - rebate_cap: pct(rent_received, 15)
+  - rebate: min(rebate_prorata, rebate_cap)
+  - tax_payable: tax_15 - rebate
+expected:
+  tax_15: 1080.00
+  rebate_prorata: 301.37
+  rebate: 301.37
+  tax_payable: 778.63
 ```
 
-## Section 9 -- Filing Checklist
+### Further cases (prose)
 
-### FWS Filing
+- **Non-resident, 15%.** A UK resident receives EUR 18,000 rent from a flat in Sliema: 15% is EUR 2,700 via the non-resident TA24 route. The treaty credit in the UK is for the UK adviser.
+- **Licensed short let with VAT.** Gross bookings before the platform fee EUR 20,619, VAT at 7% included: VAT 7/107 = EUR 1,349; rent EUR 19,270; 15% = EUR 2,891 (whole euros). The platform fee is not deducted.
+- **Related commercial let.** Office let for EUR 6,000 to a company the landlord owns 60% of: 15% blocked; return route net rent EUR 4,800 after the 20%; at 25%, EUR 1,200 extra tax.
+- **MTCA's own example.** Gross rent EUR 400, ground rent payable EUR 40: 20% of EUR 360 is EUR 72; net EUR 288 (boxes 11a, 16a and 16b).
 
-- [ ] Confirm no commercial tenement or club is let to or from a related body of persons (more than 25% owned or controlled)
-- [ ] Calculate total gross rental income for the basis year
-- [ ] Compute 15% tax
-- [ ] Complete TA24, online or manually
-- [ ] Submit TA24 with payment by 30 April
-- [ ] Do NOT include FWS rental income in annual tax return
+## When to refuse or refer
 
-### Normal System Filing
+| Code | Trigger | Action |
+|---|---|---|
+| R-MTR-1 | Route not chosen by the client | Compute both and stop for the client's choice |
+| R-MTR-2 | Commercial tenement or club, related body of persons | Return route only; confirm the relationship first |
+| R-MTR-3 | Sale or transfer of the property | Use [mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md) |
+| R-MTR-4 | Trusts, nominees, foreign holding structures, foreign-situs property | Refer to a warranted accountant |
+| R-MTR-5 | Part of the year's rent on 15% and part in the return | Refuse; one route for all qualifying rent |
+| R-MTR-6 | Accommodation and services that cannot be separated; borderline trade | Refer for a facts-based review |
+| R-MTR-7 | Residential let to a related company relying on the statute against the FAQ | Confirm with MTCA before filing |
 
-- [ ] Gather all rental income evidence (lease, bank receipts)
-- [ ] Gather loan interest statements, ground rent and licence fee receipts
-- [ ] Apply the 20% further deduction per property
-- [ ] Compute net rental income per property; a loss is NIL and is not carried anywhere
-- [ ] Include in annual tax return under rental income section
-- [ ] File by 30 June
+## Filing and payment
 
-## Section 10 -- Reference Material
+**15% route.** Form TA24 with payment by 30 April of the year after receipt (30 April 2027 for 2026 rent). Individual Malta tax residents file on [myTax](https://mytax.mtca.gov.mt/) with e-ID; individual non-residents, companies and other entities use the [TA24 online form](https://irdpubserv.gov.mt/TA24/Form.aspx) (MTCA TA24 page). The long-lease rebate is claimed on the online TA24, submitted with the payment (S.L. 123.201 rule 6). A manual TA24 can be paid in cash at Malta Post with the completed form; Malta Post does not accept late payments (MTCA rental manual). An individual paying the 15% does not declare that rent in the return (art. 31D(3)). Late tax carries 0.6% interest a month or part, capped at the tax (Cap. 372 art. 44(2A)).
 
-### Key Legislation
+**Return route.** Investment rent: gross rents in box 11a, ground rents received in box 11b, deductions in section 16 (16a ground rent payable, 16b the 20%); deductions per property cannot exceed that property's rent. Trading rent: Section 2. Tax settlement date 30 June 2027; online return by 31 July 2027 (MTCA Tax Return Cycle). Provisional tax may apply on rent declared in the return: see [mt-estimated-tax](mt-estimated-tax.md). A correction to a filed return is made on form AF1.
 
-**Key Legislation**
+**Working paper:** both computations, the route and the reason, Cap. 604 registration proof and lease length for any rebate, and the TA24 or return reference.
 
-| Topic | Reference |
-| --- | --- |
-| Final Withholding System | ITA Article 31D |
-| Residential property FWS | From 1 January 2014 |
-| Commercial property FWS | From 1 January 2016 |
-| Allowable deductions | Deduction of Expenses in respect of Immovable Property Rules, S.L. 123.26 (L.N. 100 of 1993), rule 3 |
-| Property transfer tax | ITA Article 5A |
-| Tax rates | ITA Rate Schedules |
-| Filing deadlines | ITMA Chapter 372 |
-| VAT on letting | VAT Act, 5th Schedule Part Two (exemption) and 8th Schedule (7% on licensed accommodation) |
+## Completion checklist
 
-## PROHIBITIONS
-
-- NEVER apply FWS to a commercial tenement or club let to or from a related body of persons
-- NEVER deduct expenses under the FWS: the 15% rate applies to GROSS income with zero deductions
-- NEVER deduct repairs, insurance or agent fees on top of the 20% further deduction under the normal system
-- NEVER set a rental loss against other income or carry it forward
-- NEVER allow a mixed election (part FWS, part normal) in the same basis year
-- NEVER treat a refundable security deposit as rental income
-- NEVER ignore VAT on short-term tourist accommodation
-- NEVER present the FWS/normal system comparison as definitive without running both computations
-- NEVER file FWS rental income in the annual tax return of an individual: it is declared separately on TA24
-- NEVER compute property transfer tax in this skill: use mt-property-transfer-tax-the-sale-immovable
-
-## Ask the Client First
-
-- For each commercial property or club: is it let to or from a company or other body of persons that the landlord (or the same owners) holds more than 25% of?
-- Gross rent received in 2026 per property, and whether any of it is ground rent from emphyteusis.
-- Interest on loans for each let property, ground rent paid, and any MTA licence fees.
-- The landlord's other income and marital or parent status, to find the marginal rate (resident or non-resident).
-- Whether any letting needs a tourism licence or is short-term or a garage, for VAT.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+- [ ] Housing Authority registration checked for every residential long let.
+- [ ] Each property classified; related-party test done for every commercial let.
+- [ ] Special Housing Authority and art. 31C rents identified and kept out of art. 31D.
+- [ ] Both routes computed; one route for all qualifying rent.
+- [ ] Rebate computed by original duration, bedrooms, days and the 15% cap.
+- [ ] No 15% rent declared again in an individual's return.
+- [ ] VAT status of every short let checked.
+- [ ] TA24 by 30 April or return by 30 June; reference filed.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| MTCA, Rental Income Taxed at 15%, Article 31D FAQs | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act | 2026-10-23 |
-| MTCA, Manual on the Taxation of Rental Income (Article 31D and L.N. 100 of 1993) | https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf | 2026-10-23 |
-| MTCA, Guidance Note on Article 31D | https://mtca.gov.mt/docs/default-source/documents/mtca-guidance-note-art31d.pdf | 2026-10-23 |
-| MTCA, Tax on Rental Income (TA24) | https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-(ta24) | 2026-10-23 |
-| MTCA, Tax Rates for Individuals 2026 | https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026 | 2026-10-23 |
-| MTCA, Tax Return Cycle | https://mtca.gov.mt/personal-tax/individual/tax-return-cycle | 2026-10-23 |
-| MTCA, New Property Tax System FAQ | https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq | 2026-10-23 |
-| MTCA, Budget Measures Implementation Act 2026 overview (no change to rental income tax) | https://mtca.gov.mt/business-tax/legislative-developments/2026 | 2026-10-23 |
-| Income Tax Act, Cap. 123, Articles 31D, 5A(4)(c) and 5A(5)(a), (e), (f), (g), (h) | https://legislation.mt/eli/cap/123/eng | 2026-11-08 |
+| Read for Cap. 123 arts 31A, 31B, 31C, 31D(1) to (8) and 31E (rates, related party, undeclared rent, final tax account) | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-14 |
+| Read for Cap. 372 art. 19(5) (nine-year records) and art. 44(2A) (0.6% interest from 31 August 2022, capped) | https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b | 2026-11-14 |
+| Read for S.L. 123.26 rule 3 (interest, ground rent, licence fee, 20% further deduction, emphyteusis exclusion) | https://legislation.mt/eli/sl/123.26/eng/pdf | 2026-11-14 |
+| Read for S.L. 123.201 rules 3 to 9 (rebate table, original duration, pro rata, 15% cap, claim on TA24, forfeiture) | https://legislation.mt/eli/sl/123.201/eng/pdf | 2026-11-14 |
+| Read for Cap. 604 arts 3(2)(b) and 4 (registration within 30 days, null and void, tourism carve-out) | https://legislation.mt/eli/cap/604/eng/pdf | 2026-11-14 |
+| Read for Cap. 409 arts 2 and 18(2) (tourist definition, licence to provide accommodation) | https://legislation.mt/eli/cap/409/eng/pdf | 2026-11-14 |
+| Read for Cap. 406 Fifth Schedule Part Two item 1 (letting exemption and its exclusions) and Eighth Schedule item 1 (7% accommodation, 80/20 split) | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
+| Read for MTCA art. 31D FAQ, Q1 to Q13 (start dates, final, non-residents, companies, annual option, 30 April, 35%) | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act | 2026-11-14 |
+| Read for MTCA Guidance Note on art. 31D, paras (a) to (e) | https://mtca.gov.mt/docs/default-source/documents/mtca-guidance-note-art31d.pdf | 2026-11-14 |
+| Read for MTCA Manual on the Taxation of Rental Income (deductions, per-property nil rule, return boxes, short lets in Section 2, rebate, Malta Post, premiums) | https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf | 2026-11-14 |
+| Read for MTCA TA24 page (myTax for residents, separate online form for non-residents and companies) | https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-(ta24) | 2026-11-14 |
+| Read for MTCA Tax Return Cycle (30 June settlement date, 31 July online return, 0.6% interest, AF1) | https://mtca.gov.mt/personal-tax/individual/tax-return-cycle | 2026-11-14 |
+| Read for MTCA Tax Rates 2026, single table (25% less EUR 3,400 band used in Case 1) | https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026 | 2026-11-14 |
 
-Not yet confirmed: the MTCA guidance note's wider reading of "tenement" (land, roof tops) against the Article 31D(8)(a) definition; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
-
-> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
-
-## Targeted hypothetical VAT classification checks
-
-These illustrations apply the Fifth Schedule exemption gates. An individual’s ordinary garage lease, with none of the other exclusions and no designated vehicle-parking treatment, is assumed exempt without credit: no output VAT on EUR 1,200 rent. A limited company’s EUR 1,200 net garage letting to an Article 10 registered business for its economic activity is instead within item 1(1)(d); assuming Article 10 supplier registration and the standard 18% rate, output VAT is EUR 216. The property label alone does not decide the result.
-
-```oa-check
-name: Ordinary garage: no exemption exclusion assumed
-inputs:
-  rent: 1200
-steps:
-  - output_vat: pct(rent,0)
-expected:
-  output_vat: 0
-```
-
-```oa-check
-name: Company garage lease to Article 10 economic user
-inputs:
-  net_rent: 1200
-steps:
-  - output_vat: pct(net_rent,18)
-  - gross_invoice: net_rent + output_vat
-expected:
-  output_vat: 216
-  gross_invoice: 1416
-```
-
-
-### Targeted audit source checks, 4 November 2026
-
-Repaired the garage/store and parking classifications. The existing platform-fee and MTA scope limitations remain; an exemption gate is not a registration determination. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
-
-- Cap. 406 article 19(1): https://legislation.mt/eli/cap/406/eng/pdf (read 2026-11-04).
-
-### Targeted audit source checks, 8 November 2026
-
-Stated the short-let position (15% available to an MTA-licensed host; otherwise usually trading income), removed the 30-day MTA licensing claim, corrected record retention, the interest citation, the 2025-rent payment date, the licence-fee Act, the deduction rules' name and the property-transfer citation. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
-
-- [Cap. 123 article 31D(1), (2), (8)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) (read 2026-11-08).
-- [Cap. 409 articles 2, 18 and 53](https://legislation.mt/eli/cap/409/eng/pdf) (read 2026-11-08).
-- [Cap. 372 articles 19(5) and 44(2A)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b) (read 2026-11-08).
-- [Cap. 386 article 163(5)](https://legislation.mt/eli/cap/386/eng/pdf) (read 2026-11-08).
-- [S.L. 123.26 rule 3](https://legislation.mt/eli/sl/123.26/eng/pdf) (read 2026-11-08).
-- MTCA Guidance Note on article 31D and MTCA rental manual (read 2026-11-08 in a browser).
+Not yet confirmed: whether MTCA has extended the 2027 return or payment date for 2026 rent (the 3 June 2026 extension to 31 July 2026 was for 2025 rent and was not re-read); treating platform fees as not deductible from the 15% base; MTCA's wider reading of "tenement" (land, roof tops, note para. (c)) against the art. 31D(8)(a) definition; the manual's line that gross rent under the 15% is "declared by end of June", against FAQ Q5 for individuals; the manual's EUR 9,100 and EUR 10,500 separate-return thresholds, which are older figures and are not used here; the UK treaty position in the non-resident case; any Budget 2027 change for rent received from 2027.
