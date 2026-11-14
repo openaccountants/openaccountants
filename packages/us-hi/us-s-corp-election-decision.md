@@ -1,551 +1,316 @@
 ---
 name: us-s-corp-election-decision
-description: Tier 2 content skill for evaluating whether a US sole proprietor or single-member LLC should elect S-corporation status under IRC §1362 via Form 2553. Covers the SE tax savings analysis (salary subject to FICA, distributions not), the reasonable salary requirement under IRC §3121 and IRS audit scrutiny, the break-even analysis where SE tax savings exceed incremental costs, the QBI deduction interaction under §199A (W-2 wages increase QBI limitation room), state-specific disadvantages (California $800 franchise tax + 1.5% S-corp tax, New York City UBT elimination, etc.), the Form 2553 election deadline (March 15, or 2 months and 15 days after the first day of the first tax year for a new entity), late election relief under Rev. Proc. 2013-30, payroll processing and Form 1120-S filing costs, and the decision framework for when NOT to elect. Tax year 2025. MUST be loaded alongside us-tax-workflow-base v0.1+. Federal only; state issues flagged but not computed.
-version: 0.2
+description: Decide whether a US sole proprietor or single-member LLC should elect S corporation status (Form 2553, 26 U.S.C. 1362) for 2026 or 2027. Covers who can elect, reasonable compensation and the IRS power to recharacterize distributions as wages, the payroll tax saved (self-employment tax against FICA on salary only, with the 2026 Social Security wage base of $184,500), the added costs, the QBI deduction interaction under section 199A (salary is not QBI, but it is W-2 wages), other wages above the wage base, the Form 2553 deadline (2 months and 15 days, so 16 March 2026 for a calendar-year 2026 election and 15 March 2027 for 2027), late-election relief under Rev. Proc. 2013-30, revocation and the five-year bar, and state entity-level taxes flagged to the state skills. Trigger on "should I elect S corp", "S corp election", "Form 2553", "LLC taxed as S corp", "reasonable salary", "save self-employment tax", "late S election", "Rev. Proc. 2013-30". Federal only.
+version: "1.1"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-16
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: decision
 ---
 
-# US S Corp Election Decision
+# US S corporation election for a sole proprietor or single-member LLC, tax year 2026
 
-## US S-Corp Election Decision Skill v0.2
+> **Source-cited draft.** Built from the Instructions for Form 2553 (Rev. December 2020), Form 2553 (Rev. December 2017), Rev. Proc. 2013-30, IRS Pub. 15 (2026), Rev. Proc. 2025-32, the IRS page on S corporation compensation, Public Law 119-21 section 70105, and 26 U.S.C. 199A, 1361, 1362, 1401, 1402, 6413(c) and 7503, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before an election is filed.
 
-## Rates and thresholds
+**Answer first.** An S corporation saves payroll tax only on the profit paid out as distributions instead of salary. As a sole proprietor the owner pays 15.3% self-employment tax on 92.35% of profit (the 12.4% part up to **$184,500** for 2026). As an S corporation shareholder-employee the owner pays 15.3% FICA (employer plus employee) only on a salary that must be **reasonable compensation** for the work done. From that saving take off the added costs (payroll, Form 1120-S, state fees and taxes) and the income tax effect: salary is not qualified business income, so below the section 199A threshold the S corporation usually cuts the 20% QBI deduction. When the owner's other wages already pass $184,500, the saving falls to the 2.9% Medicare part and usually disappears. For a calendar-year entity the 2026 election deadline was **16 March 2026** (15 March was a Sunday); the 2027 deadline is **15 March 2027**. A missed 2026 election can be saved only through Rev. Proc. 2013-30 (intent from the start, reasonable cause, within 3 years and 75 days).
 
-- **Reviewer note** — Reviewed against the cited tax authorities by a licensed accountant on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.
+## Scope and who this is for
 
-### S-Corp Election
+In scope: one individual who now files Schedule C (a sole proprietor or a single-member LLC disregarded for federal tax) and is deciding whether to have the business taxed as an S corporation from 2026 or 2027; or who already has an S election and is deciding whether to keep it. The output is a decision brief for the reviewer: the payroll tax saved at a stated salary, the added costs, the QBI effect, state flags, the deadline and a recommendation with its conditions. It does not file Form 2553, run payroll or prepare Form 1120-S.
 
-- **SE rate** — 15.3%  _(IRC 1401.)_
-- **SS base** — 2025 = $176,100  _(SSA 2025.)_
-- **Election TY2025** — Form 2553 due 2 months 15 days after the start of the tax year = March 15, 2025; that date is a Saturday, so the deadline rolls to March 17, 2025  _(IRC 1362(b); Form 2553 instr.)_
+Out of scope, and where it goes:
 
-## What this file is, and what it is not
-
-This file is a content skill that loads on top of `us-tax-workflow-base` v0.1. It provides a structured decision framework for evaluating whether a sole proprietor or single-member LLC should elect S-corporation status for federal tax purposes. It does not file Form 2553, prepare Form 1120-S, or run payroll — those are execution tasks that follow after the decision is made.
-
-This is a decision skill, not a computation skill. Unlike the bookkeeping and computation skills in the pipeline, this skill produces a decision brief for the reviewer, not a tax return position. The decision brief presents the SE tax savings estimate, the incremental costs, the QBI interaction, state-specific issues, and a recommendation with confidence level.
-
-Tax year coverage. This skill is current for tax year 2025 as of its currency date (April 2026). It reflects the One Big Beautiful Bill Act (Public Law 119-21, signed July 4, 2025), including the permanent QBI deduction, which stays at 20% for 2026+.
-
-The reviewer is the customer of this output. The skill produces a decision analysis, not a filing. The reviewing Enrolled Agent, CPA, or attorney makes the final recommendation to the client.
-
-## Section 1 — Scope statement
-
-This skill covers the S-corp election decision for tax year 2025 for taxpayers who are:
-
-- US sole proprietors filing Schedule C, OR
-- Single-member LLCs treated as disregarded entities for federal income tax purposes
-
-Who are considering:
-
-- Electing S-corporation status under IRC §1362 via Form 2553
-- Evaluating whether an existing S-corp election should be maintained or revoked
-- Comparing the tax cost of sole proprietorship vs S-corp structure
-
-For the following kinds of work:
-
-- Computing the SE tax savings from S-corp election at various salary levels
-- Determining reasonable compensation under IRC §3121 and case law
-- Running the break-even analysis (SE tax savings vs incremental costs)
-- Evaluating the QBI deduction interaction (W-2 wages affect the QBI wage limitation)
-- Identifying state-specific advantages and disadvantages
-- Checking the Form 2553 election deadline and late election relief availability
-- Producing a decision brief with recommendation and confidence level
-
-This skill does NOT cover:
-
-- Preparation of Form 2553 — execution task
-- Preparation of Form 1120-S — execution task for a future tax year
-- Payroll setup and processing — execution task
-- Multi-member LLC to S-corp conversion — different considerations
-- C-corp to S-corp conversion — built-in gains tax under §1374, different analysis
-- Partnership to S-corp — different analysis
-- S-corp vs C-corp comparison — this skill focuses on sole prop/SMLLC vs S-corp only
-
-## Section 2 — Year coverage and currency
-
-Tax year covered: 2025 (election effective for TY2025 if Form 2553 filed by March 17, 2025 — March 15 falls on Saturday — or no more than 2 months and 15 days after the beginning of the first tax year if formed after January 1, 2025).
-
-Currency date: April 2026.
-
-Legislation reflected:
-- Internal Revenue Code as in force for tax year 2025
-- One Big Beautiful Bill Act (OBBBA), Public Law 119-21, signed July 4, 2025
-- IRC §199A as made permanent by OBBBA (20% for 2025 and 2026+)
-- Rev. Proc. 2013-30 (late S-corp election relief)
-- Rev. Proc. 2024-40 (2025 inflation adjustments)
-
-## Section 3 — Year-specific figures table for tax year 2025
-
-### Self-employment tax figures
-
-**Self-employment tax figures**
-
-**Self-employment tax figures**  _(IRC §1401; §3101; §3111; §1402(a)(12); SSA annual announcement)_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| Social Security wage base | $176,100 | SSA annual announcement |
-| OASDI rate (employee + employer combined) | 12.4% | IRC §1401(a) / §3101(a) + §3111(a) |
-| Medicare rate (employee + employer combined) | 2.9% | IRC §1401(b) / §3101(b) + §3111(b) |
-| Additional Medicare Tax (employee only, no employer match) | 0.9% above threshold | IRC §3101(b)(2) |
-| Additional Medicare Tax threshold (single) | $200,000 | IRC §3101(b)(2)(C) |
-| Additional Medicare Tax threshold (MFJ) | $250,000 | IRC §3101(b)(2)(A) |
-| SE tax rate (OASDI + Medicare) | 15.3% (below SS wage base) | IRC §1401 |
-| SE tax rate (Medicare only, above SS wage base) | 2.9% | IRC §1401(b) |
-| Net SE earnings adjustment factor | 92.35% | IRC §1402(a)(12) |
-
-### S-corp payroll tax figures (employer side)
-
-**S-corp payroll tax figures (employer side)**  _([IRC §3301; IRC §3306(b)(1); State law](https://www.irs.gov/pub/irs-pdf/f940sa.pdf))_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| FUTA tax rate | 6.0% (0.6% after state credit) | IRC §3301; most states qualify for 5.4% credit; 2025 credit reduction states: California 1.2%, U.S. Virgin Islands 4.5% |
-| FUTA wage base | $7,000 | IRC §3306(b)(1) |
-| Effective FUTA cost per employee | $42 (0.6% x $7,000) | Derived |
-| State unemployment insurance (SUI) | Varies by state; typically 1-5% on first $7K-$56K | State law |
-
-### QBI deduction figures
-
-**QBI deduction figures**  _([IRC §199A(a); §199A(b)(2); OBBBA P.L. 119-21; Rev. Proc. 2024-40](https://www.law.cornell.edu/uscode/text/26/199A))_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| QBI deduction rate (2025) | 20% | IRC §199A(a); OBBBA made permanent |
-| QBI deduction rate (2026 onward) | 20% | OBBBA P.L. 119-21; IRC §199A as amended |
-| QBI threshold (single) | $197,300 | Rev. Proc. 2024-40 |
-| QBI threshold (MFJ) | $394,600 | Rev. Proc. 2024-40 |
-| QBI phase-in range top (single) | $247,300 | $197,300 + $50,000 |
-| QBI phase-in range top (MFJ) | $494,600 | $394,600 + $100,000 |
-| W-2 wages limitation (above phase-in) | Greater of: 50% of W-2 wages, or 25% of W-2 wages + 2.5% of UBIA | IRC §199A(b)(2) |
-
-### Form 2553 deadlines
-
-**Form 2553 deadlines**  _([IRC §1362(b)(1)(B); §7503; §1362(b)(1)(C); Rev. Proc. 2013-30](https://www.irs.gov/pub/irs-pdf/i2553.pdf))_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| Election deadline for existing entity (calendar year) | March 17, 2025 (March 15 is Saturday) | IRC §1362(b)(1)(B); §7503 |
-| Election deadline for newly formed entity | No more than 2 months and 15 days after the beginning of its first tax year (earliest of first shareholders, first assets, or beginning business) | IRC §1362(b); Form 2553 instructions |
-| Late election relief | Available if requirements of Rev. Proc. 2013-30 are met | Rev. Proc. 2013-30 |
-
-## Section 4 — Primary source library
-
-### Statute (Internal Revenue Code, Title 26 USC)
-
-- **IRC §1361** — S corporation defined; eligibility requirements  _(IRC §1361)_
-- **IRC §1361(b)(1)** — Requirements: domestic corporation, ≤ 100 shareholders, one class of stock, eligible shareholders only  _(IRC §1361(b)(1))_
-- **IRC §1362** — Election; revocation; termination  _(IRC §1362)_
-- **IRC §1362(b)** — When election takes effect  _(IRC §1362(b))_
-- **IRC §1362(d)** — Termination of election  _(IRC §1362(d))_
-- **IRC §1363** — Effect of election on corporation (pass-through)  _(IRC §1363)_
-- **IRC §1366** — Pass-through of items to shareholders  _(IRC §1366)_
-- **IRC §1368** — Distributions (AAA, E&P, basis)  _(IRC §1368)_
-- **IRC §1374** — Built-in gains tax (not applicable to new elections from sole prop)  _(IRC §1374)_
-- **IRC §1375** — Excess net passive income tax  _(IRC §1375)_
-- **IRC §199A** — Qualified Business Income deduction  _(IRC §199A)_
-- **IRC §199A(b)(2)** — W-2 wages and UBIA limitations  _(IRC §199A(b)(2))_
-- **IRC §3101, §3111** — FICA taxes (employee and employer shares)  _(IRC §3101, §3111)_
-- **IRC §3121** — Definitions (wages for FICA purposes — basis for reasonable salary)  _(IRC §3121)_
-- **IRC §3301, §3306** — FUTA tax  _(IRC §3301, §3306)_
-- **IRC §1401, §1402** — Self-employment tax (applies to sole props, NOT to S-corp shareholder-employees on wages)  _(IRC §1401, §1402)_
-- **IRC §162** — Trade or business expenses (S-corp deducts salary as business expense)  _(IRC §162)_
-
-### Treasury Regulations
-
-- **Treas. Reg. §1.1361-1** — S corporation defined  _(Treas. Reg. §1.1361-1)_
-- **Treas. Reg. §1.1362-6** — Procedural requirements for Form 2553  _(Treas. Reg. §1.1362-6)_
-- **Treas. Reg. §1.199A-1 through §1.199A-6** — QBI deduction regulations  _(Treas. Reg. §1.199A-1 through §1.199A-6)_
-- **Treas. Reg. §31.3121(a)-1** — Definition of wages for FICA  _(Treas. Reg. §31.3121(a)-1)_
-
-### Revenue Procedures and Rulings
-
-- **Rev. Proc. 2013-30** — Late S-corp election relief (simplified method)  _(Rev. Proc. 2013-30)_
-- **Rev. Proc. 2024-40** — 2025 inflation adjustments  _(Item 13)_
-
-### Key Court Cases and IRS Guidance
-
-- **Watson v. United States, 668 F.3d 1008 (8th Cir. 2012)** — $24K salary on $488K net income was unreasonably low; reasonable compensation required  _(Watson v. United States, 668 F.3d 1008 (8th Cir. 2012))_
-- **Radtke v. United States, 712 F. Supp. 143 (E.D. Wis. 1989)** — Zero salary to S-corp shareholder-employee who performed services was unreasonable; all distributions recharacterized as wages  _(Radtke v. United States, 712 F. Supp. 143 (E.D. Wis. 1989))_
-- **Joseph M. Grey Public Accountant, P.C. v. Commissioner, T.C. Memo 2002-34** — IRS successfully recharacterized distributions as wages when salary was unreasonably low  _(Joseph M. Grey Public Accountant, P.C. v. Commissioner, T.C. Memo 2002-34)_
-- **David E. Watson, P.C. v. United States, 757 F. Supp. 2d 877 (S.D. Iowa 2010)** — Detailed reasonable compensation analysis  _(David E. Watson, P.C. v. United States, 757 F. Supp. 2d 877 (S.D. Iowa 2010))_
-- **IRS Fact Sheet FS-2008-25** — Reasonable compensation guidance for S-corp shareholders  _(IRS Fact Sheet FS-2008-25)_
-
-### IRS Forms
-
-- **Form 2553** — Election by a Small Business Corporation  _(Form 2553)_
-- **Form 1120-S** — U.S. Income Tax Return for an S Corporation  _(Form 1120-S)_
-- **Form 1120-S, Schedule K-1** — Shareholder's Share of Income, Deductions, Credits, etc.  _(Form 1120-S, Schedule K-1)_
-- **Form 940** — Employer's Annual Federal Unemployment (FUTA) Tax Return  _(Form 940)_
-
-## Section 5 — The SE tax savings mechanism
-
-### How a sole proprietor pays SE tax
-
-- **Sole proprietor SE tax formula** — Net SE earnings = Schedule C net profit x 92.35% SE tax = (Net SE earnings, up to SS wage base) x 15.3% + (Net SE earnings above SS wage base) x 2.9% + (Net SE earnings above $200K/$250K) x 0.9% (Additional Medicare Tax) Deductible half of SE tax = 50% of the 15.3%/2.9% portion (NOT the 0.9%)  _(As a sole proprietor, the taxpayer pays self-employment tax on all net SE earnings)_
-
-### How an S-corp shareholder-employee pays employment tax
-
-- **S-corp shareholder-employee FICA formula** — FICA on salary: Employee share: 7.65% (6.2% OASDI + 1.45% Medicare) up to SS wage base 1.45% Medicare on salary above SS wage base Additional 0.9% Medicare on salary above $200K/$250K Employer share: 7.65% (6.2% OASDI + 1.45% Medicare) up to SS wage base 1.45% Medicare on salary above SS wage base Distributions (K-1 income above salary): NO FICA, NO SE tax  _(As an S-corp shareholder-employee, the taxpayer pays FICA only on salary (W-2 wages))_
-
-### The savings calculation
-
-- **Savings calculation formula** — Sole prop SE tax on $X of net income: = $X x 92.35% x 15.3% (up to SS wage base) = approximately 14.13% of net income (simplified) S-corp FICA on salary of $Y (where Y < X): Employee + employer = $Y x 15.3% (up to SS wage base) Savings = SE tax on $X - FICA on $Y - incremental S-corp costs The savings come from the "distribution gap" ($X - $Y) that escapes FICA/SE tax.
-
-### Why the savings are not unlimited: reasonable salary
-
-- **Reasonable compensation requirement** — The IRS requires that S-corp shareholder-employees who perform services receive reasonable compensation before taking distributions. If the salary is set too low, the IRS can recharacterize distributions as wages, assess back FICA taxes (both shares), plus penalties and interest. This is a well-known audit target.  _(IRC §3121; Watson v. United States; Radtke v. United States)_
-
-## Section 6 — Reasonable salary determination
-
-### The IRS approach
-
-- **Reasonable compensation factors** — There is no bright-line rule for reasonable compensation. The IRS and courts look at multiple factors: 1. Training and experience — what would a comparable employee earn? 2. Duties and responsibilities — the shareholder's role in generating revenue 3. Time devoted — hours per week/year 4. Comparable wages — what do similar positions pay in the same geographic area? (BLS data, salary surveys, industry benchmarks) 5. Dividend history — pattern of distributions vs salary 6. Compensation agreements — documented compensation arrangements 7. Amounts paid to non-shareholder employees — if they exist 8. Timing and manner of paying dividends — distributions that replace what would normally be salary
-
-### Practical guidelines (not law, but widely used)
-
-**Practical guidelines (not law, but widely used)**
-
-| Net SE income range | Reasonable salary range (rough guide) | Notes |
-| --- | --- | --- |
-| < $50,000 | 80-100% of net income | Little room for meaningful split |
-| $50,000 - $100,000 | 50-70% of net income | Moderate savings begin |
-| $100,000 - $200,000 | 40-60% of net income | Sweet spot for savings |
-| $200,000 - $400,000 | 35-50% of net income | Diminishing OASDI savings above SS wage base |
-| > $400,000 | Comparable market salary (may be 20-40% of net) | Large distribution gap; ensure salary withstands scrutiny |
-
-- **Key principle** — The salary should reflect what the taxpayer would earn as an employee performing the same services for an unrelated employer. It should NOT be set to minimize FICA — it should reflect market value, with distributions representing the return on the business as an enterprise (similar to corporate dividends).
-
-### Documentation requirements
-
-- **Documentation requirements** — The taxpayer should document the reasonable salary determination with: - Job description listing duties performed - Comparable salary data (BLS Occupational Employment Statistics, Glassdoor, industry surveys) - Time log or estimate of hours worked - Written board resolution or compensation memo (even for a single-shareholder S-corp) - Consistent payment through payroll with proper withholding
-
-## Section 7 — Break-even analysis
-
-### Incremental costs of S-corp election
-
-**Incremental costs of S-corp election**
-
-| Cost category | Typical annual cost | Notes |
-| --- | --- | --- |
-| Form 1120-S preparation (tax return) | $1,000 - $3,000 | CPA or tax preparer; complexity varies |
-| Payroll processing | $500 - $2,000/year | Provider fees (Gusto, ADP, manual); includes W-2, 940, 941 |
-| State franchise/filing fees | $0 - $800+ | Varies by state; California is $800 minimum |
-| State unemployment insurance (SUI) | $100 - $500+ | Varies by state and experience rating |
-| FUTA tax | $42/year | 0.6% x $7,000 per employee (after state credit) |
-| Workers' compensation (if required) | Varies | Some states require even for single-employee S-corps |
-| Registered agent (if LLC) | $100 - $300 | If not already paying |
-| Additional accounting/bookkeeping complexity | $500 - $1,500 | Payroll journal entries, K-1 reconciliation |
-| **Total incremental cost** | **$2,000 - $6,000+** |  |
-
-### Break-even formula
-
-- **Break-even formula** — SE tax savings = (Net SE income - Reasonable salary) x effective SE tax rate on the gap Incremental costs = sum of costs above Break-even: SE tax savings > Incremental costs Simplified: Break-even typically occurs when net SE income > $50,000 - $60,000 (assuming reasonable salary is ~60% of net income and incremental costs are ~$3,000-4,000)
-
-### Worked break-even example
-
-Scenario: Freelance software developer, single filer, net SE income = $120,000.
-
-As sole proprietor:
-```
-Net SE earnings: $120,000 x 92.35% = $110,820
-OASDI: $110,820 x 12.4% = $13,742 (all below $176,100 SS wage base)
-Medicare: $110,820 x 2.9% = $3,214
-Total SE tax: $16,956
-Deductible half: $8,478
-```
-
-As S-corp with $65,000 salary:
-```
-Employee FICA: $65,000 x 7.65% = $4,973
-Employer FICA: $65,000 x 7.65% = $4,973
-Total FICA: $9,945
-FUTA: $42
-Distribution: $120,000 - $65,000 = $55,000 (no FICA)
-```
-
-Savings calculation:
-```
-SE tax avoided: $16,956 - $9,945 = $7,011
-Less FUTA: -$42
-Less incremental costs (est.): -$3,500 (payroll, 1120-S, etc.)
-Net annual savings: approximately $3,469
-```
-
-Conclusion: At $120K net SE income with a $65K salary, the S-corp saves roughly $3,400-3,500/year after costs. The savings increase as income rises above the salary level.
-
-## Section 8 — QBI deduction interaction
-
-### The basic QBI framework (2025)
-
-- **Basic QBI framework** — Under IRC §199A, sole proprietors and S-corp shareholders can deduct 20% of qualified business income (unchanged at 20% for 2026+ under OBBBA). For taxpayers below the income threshold ($197,300 single / $394,600 MFJ for 2025), the deduction is simply 20% of QBI with no W-2 wage/UBIA limitation (the cap of 20% of taxable income minus net capital gain still applies).  _([IRC §199A](https://www.law.cornell.edu/uscode/text/26/199A))_
-
-### When QBI interacts with the S-corp decision
-
-- **QBI limitation and sole prop vs S-corp comparison** — For taxpayers above the QBI threshold (in the phase-in range or above), the QBI deduction is limited to the greater of: - 50% of W-2 wages paid by the business, OR - 25% of W-2 wages + 2.5% of unadjusted basis immediately after acquisition (UBIA) of qualified property As a sole proprietor: There are no W-2 wages (the sole proprietor's own earnings are SE income, not wages). The W-2 wages component is zero unless the sole proprietor has employees. The QBI limitation therefore depends entirely on the UBIA of qualified property (25% of W-2 wages is zero, so only 2.5% of UBIA applies in the second prong, and the first prong is $0). As an S-corp: The shareholder-employee's salary IS W-2 wages for QBI purposes. This increases the W-2 wages component, potentially increasing the QBI deduction limitation.  _(IRC §199A(b)(2))_
-
-### When this matters
-
-**When this matters**  _(https://www.irs.gov/pub/irs-pdf/i8995.pdf)_
-
-| Taxpayer situation | QBI impact of S-corp | Notes |
-| --- | --- | --- |
-| Income below QBI threshold | Reduces QBI — the S-corp salary is not QBI, so the deduction is 20% of profit after salary | Include the lost QBI deduction alongside SE tax savings |
-| Income in phase-in range | S-corp W-2 wages may increase QBI deduction | Run both scenarios; net tax impact may favor S-corp |
-| Income above phase-in range | S-corp W-2 wages are critical for QBI deduction | Without W-2 wages, QBI deduction may be zero for service businesses (SSTBs) |
-| Specified Service Trade or Business (SSTB) above threshold | QBI deduction phases out across the phase-in range ($394,600 to $494,600 MFJ for 2025) and is gone above it | S-corp W-2 wages do not help once fully phased out |
-
-### The SSTB factor
-
-- **SSTB QBI phase-out** — For specified service trades or businesses (legal, health, consulting, financial services, performing arts, athletics, etc. under §199A(d)(2)), the QBI deduction phases out over the phase-in range above the threshold ($197,300 to $247,300 single / $394,600 to $494,600 MFJ for 2025) and is fully phased out above the top of that range. Once fully phased out, the W-2 wages from S-corp salary provide no QBI benefit. The S-corp decision for SSTBs above the threshold is driven purely by SE tax savings. Note: Software development is generally NOT an SSTB (consulting may be, depending on facts). The reviewer must classify the business.  _([IRC §199A(d)(2)](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf))_
-
-## Section 9 — Form 2553 election mechanics
-
-### Filing deadline
-
-**Filing deadline**  _(https://www.irs.gov/pub/irs-pdf/i2553.pdf)_
-
-| Scenario | Deadline | Primary source |
-| --- | --- | --- |
-| Existing entity, calendar year, electing for TY2025 | March 17, 2025 (March 15 is Saturday) | IRC §1362(b)(1)(B); §7503 |
-| Entity formed on or after Jan 1, 2025 | No more than 2 months and 15 days after the beginning of its first tax year | IRC §1362(b); Form 2553 instructions |
-| Fiscal year entity | By the 15th day of the 3rd month of the fiscal year | IRC §1362(b)(1)(B) |
-
-### Late election relief under Rev. Proc. 2013-30
-
-- **Late election relief requirements** — If the Form 2553 deadline was missed, relief is available under Rev. Proc. 2013-30 if ALL of the following are met: 1. The entity is an eligible entity (meets all §1361(b) requirements) 2. The entity intended to be classified as an S-corp as of the intended effective date 3. The entity failed to qualify solely because the election was not timely filed 4. The entity has reasonable cause for the late filing 5. No more than 3 years and 75 days have passed since the intended effective date 6. No inconsistent returns were filed (i.e., the entity and all shareholders filed as if the S election were in effect) How to file: Attach a statement to Form 2553 explaining the reasonable cause, and write "FILED PURSUANT TO REV. PROC. 2013-30" at the top. File with the IRS service center.  _(Rev. Proc. 2013-30)_
-
-### Other late election methods
-
-- **Other late election methods** — PLR (Private Letter Ruling): If Rev. Proc. 2013-30 does not apply (e.g., inconsistent returns were filed, or more than 3 years and 75 days have passed without the corporation and all shareholders having reported consistently with S status and at least 6 months having elapsed since the first Form 1120-S was filed), the entity can request a PLR from the IRS. Cost: $14,500 user fee ($3,450 if gross income is less than $400,000) under Rev. Proc. 2026-1, plus professional fees. Generally not cost-effective for sole props. Rev. Proc. 2022-19: Provides taxpayer assistance procedures, including under § 1362(f), to resolve frequently encountered S corporation issues without requesting a PLR (it is not a late-election procedure).  _([Rev. Proc. 2022-19](https://www.irs.gov/pub/irs-pdf/i2553.pdf))_
-
-### Eligibility requirements for S-corp status
-
-- **Eligibility requirements for S-corp status** — The entity must meet ALL of the following (IRC §1361(b)(1)): 1. Domestic corporation (or LLC electing corporate treatment) 2. No more than 100 shareholders 3. Only eligible shareholders (individuals, certain trusts, estates — no partnerships, corporations, or nonresident aliens) 4. Only one class of stock (differences in voting rights are OK; differences in distribution/liquidation rights are not) 5. Not an ineligible corporation (certain financial institutions, insurance companies, DISCs) For a single-member LLC, the LLC must first elect to be treated as a corporation (Form 8832) or simultaneously elect S-corp status (Form 2553 with the LLC's EIN triggers the entity classification election automatically under Treas. Reg. §301.7701-3(c)(1)(v)(C)).  _(IRC §1361(b)(1); Treas. Reg. §301.7701-3(c)(1)(v)(C))_
-
-## Section 10 — State-specific considerations
-
-### States with significant S-corp disadvantages
-
-**States with significant S-corp disadvantages**  _(https://www.ftb.ca.gov/file/business/types/corporations/s-corporations.html)_
-
-| State | Issue | Impact |
-| --- | --- | --- |
-| **California** | $800 annual minimum franchise tax (LLC or S-corp; waived for a newly formed S corporation's first taxable year) + 1.5% S-corp tax on net income | S-corp pays 1.5% income tax at entity level (franchise tax); sole prop does not. At $100K net income, this is $1,500 additional state tax. Break-even analysis must account for this. |
-| **New York City** | S-corps are subject to NYC General Corporation Tax (GCT) or UBT | Sole props pay NYC UBT; S-corps may pay GCT. The rates and structures differ. Detailed NYC analysis needed. |
-| **New Hampshire** | Business Profits Tax (BPT) at 7.5% applies to S-corp income | NH has no personal income tax but taxes business income at entity level. S-corps pay BPT. |
-| **Tennessee** | No state income tax on earned income | S-corp provides no state tax savings; sole prop is equally advantaged. |
-| **Texas** | Franchise (margin) tax applies to S-corps with revenue > $2,470,000 (report years 2024 and 2025; $2,650,000 for report years 2026 and 2027) | Small S-corps below the no-tax-due threshold are unaffected. Above threshold, 0.375% to 0.75% on margin. |
-
-### States with S-corp advantages
-
-**States with S-corp advantages**
-
-| State | Issue | Impact |
-| --- | --- | --- |
-| **New Jersey** | S-corp income taxed at reduced rates at entity level; shareholder may benefit from pass-through structure | Complex; run both scenarios |
-| **Most states** | S-corp income passes through to shareholder's personal return | No entity-level tax in most states (CA, NH, NYC are exceptions) |
-
-### General guidance
-
-The state analysis is fact-intensive and varies by state. The skill flags state issues and provides the California example in detail (because it is the most common disadvantage case), but the reviewer must analyze the taxpayer's specific state situation.
-
-## Section 11 — When NOT to elect S-corp
-
-### Decision matrix: situations where S-corp is typically NOT advantageous
-
-**Decision matrix: situations where S-corp is typically NOT advantageous**
-
-| Situation | Why S-corp is typically NOT advantageous |
+| Topic | Skill |
 | --- | --- |
-| **Net SE income < $50,000** | SE tax savings are too small to justify incremental costs ($2K-6K/year). The break-even is not met. |
-| **Taxpayer values simplicity** | S-corp adds payroll, 1120-S filing, K-1, and ongoing compliance. Sole prop is simpler. |
-| **California resident with income < $150K** | California's 1.5% S-corp tax + $800 franchise tax may offset or exceed SE tax savings. |
-| **Taxpayer has significant losses** | S-corp losses are limited by basis, at-risk, and passive activity rules. Sole prop losses flow directly to Schedule C. S-corp basis rules are more restrictive (shareholder loans must be direct loans, not from third parties). |
-| **Taxpayer plans to sell the business** | S-corp sale mechanics (asset sale vs stock sale) are more complex and may have less favorable tax treatment than sole prop goodwill sale. |
-| **Taxpayer has multiple businesses** | Each S-corp requires its own 1120-S, payroll, etc. Multiple Schedule C sole proprietorships are simpler. |
-| **Taxpayer is near retirement** | S-corp salary (lower than SE income) reduces Social Security benefit computation. For taxpayers near 62, this may not matter, but for younger taxpayers it reduces future benefits. |
-| **Income is highly variable** | In low-income years, the S-corp's fixed costs (payroll, 1120-S) remain even when there is no SE tax savings. |
-| **Taxpayer has no employees and does all work personally** | The "reasonable salary = all income" argument is strongest here. If the IRS determines that 100% of income is reasonable compensation, there are zero SE tax savings but full S-corp costs. |
-| **SSTB above QBI threshold** | No QBI benefit from W-2 wages (QBI deduction fully phased out). Decision rests on SE tax savings alone. |
+| Schedule C profit and Schedule SE self-employment tax, line by line | `us-schedule-c-and-se-computation` |
+| The QBI deduction, its 2026 thresholds and phase-in, SSTB rules | `us-qbi-deduction` |
+| Running payroll after the election: Forms 941, 940, W-2, FUTA | `us-form-941-940-payroll` |
+| State payroll, unemployment insurance and new-hire rules | `us-state-payroll-matrix`, `us-state-new-hire-reporting-matrix` |
+| Forming the LLC or corporation in a state | `us-state-formation-matrix` |
+| Retirement contribution limits for salary against Schedule C earnings | `us-self-employed-retirement` |
+| Health insurance of a more-than-2% shareholder | `us-self-employed-health-insurance` |
+| Elective pass-through entity taxes (SALT workaround) | `us-pte-state-matrix` |
+| C corporation compared with S corporation | `us-form-1120-c-corp` |
+| Partnerships and multi-member LLCs | `us-form-1065-partnership` |
+| State entity-level taxes on S corporations | the state skill named in the state table below |
 
-## Section 12 — Conservative defaults table
+## Ask the client first
 
-## Section 12 — Conservative defaults table
+1. **What is the entity today?** A sole proprietor with no entity cannot elect: only a corporation, or an entity eligible to be treated as one (an LLC), can file Form 2553. When was it formed, and does anyone other than the owner (or the owner's spouse) hold an interest? Is any owner a nonresident alien, a partnership or a corporation?
+2. **Expected 2026 and 2027 profit** before any owner salary, and how steady it is. One good year is not enough: the costs recur every year.
+3. **What the owner does and what that work would cost to hire:** duties, hours, who produces the revenue (the owner personally, staff, or equipment and capital), and any market pay data. This sets the reasonable salary.
+4. **Other wages:** W-2 wages from any job in 2026 (Form W-2 boxes 3 and 5), and the spouse's wages and self-employment income. Wages above $184,500 remove most of the saving.
+5. **Filing status, other income and deductions**, enough to place taxable income against the QBI threshold in `us-qbi-deduction` and to know the marginal rate.
+6. **State of residence and of the business**, and quotes for the added costs: payroll provider, Form 1120-S preparation, state fees and unemployment insurance.
 
-**Conservative defaults table**
+## The method, step by step
 
-| Situation | Conservative default | Rationale |
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| Reasonable salary percentage unknown | Use 60% of net SE income as starting point | Provides moderate savings while leaving room for IRS scrutiny |
-| Comparable salary data unavailable | Use BLS median for the taxpayer's SOC code + 10% | Conservative buffer against IRS challenge |
-| State S-corp tax unknown | Flag for reviewer; do not assume zero | Many states have entity-level taxes on S-corps |
-| QBI impact unclear | Run both scenarios (sole prop and S-corp); present both | Reviewer decides which is better |
-| Late election feasibility uncertain | Assume Rev. Proc. 2013-30 relief is available if within 3 years 75 days and returns were filed consistently | Conservative but optimistic; flag for reviewer confirmation |
-| Incremental cost estimate unavailable | Use $3,500 as default incremental cost | Covers payroll ($1,000), 1120-S prep ($1,500), miscellaneous ($1,000) |
-| Social Security benefit impact | Flag but do not compute | SSA benefit computation is complex and fact-specific |
+| Social Security part of self-employment tax | 12.4 percent | [26 U.S.C. 1401(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Medicare part of self-employment tax | 2.9 percent | [26 U.S.C. 1401(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Self-employment tax rate in total | 15.3% | [IRS, self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) |
+| Net earnings factor (Schedule SE line 4a) | 92.35% | [Schedule SE (Form 1040) 2026](https://www.irs.gov/pub/irs-pdf/f1040sse.pdf) |
+| Social Security wage base (wages plus net self-employment earnings) | USD 184,500 | [IRS Pub. 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Social security tax on salary, each for employer and employee | 6.2% | [IRS Pub. 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Medicare tax on salary, each for employer and employee, no wage base | 1.45% | [IRS Pub. 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Additional Medicare Tax on wages and self-employment income above the threshold | 0.9 percent | [26 U.S.C. 1401(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Additional Medicare Tax threshold, single, head of household | USD 200,000 | [26 U.S.C. 1401(b)(2)(A)(iii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Additional Medicare Tax threshold, married filing jointly | USD 250,000 | [26 U.S.C. 1401(b)(2)(A)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Additional Medicare Tax threshold, married filing separately | USD 125,000 | [IRS Additional Medicare Tax Q&A](https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax) |
+| QBI deduction rate, on qualified business income and capped at 20 percent of taxable income less net capital gain; made permanent by Public Law 119-21 section 70105(b) | 20 percent | [26 U.S.C. 199A(a), (b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm), [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Standard deduction, single (used in Case 1) | USD 16,100 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Top of the single 22% band (used in Case 1) | USD 105,700 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Form 2553 window for the year it takes effect | no more than 2 months and 15 days after the tax year begins, or any time in the preceding tax year | [26 U.S.C. 1362(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1362.htm), [Instructions for Form 2553](https://www.irs.gov/pub/irs-pdf/i2553.pdf) |
+| Calendar year 2026 election, last day (15 March 2026 was a Sunday) | 16 March 2026 | [26 U.S.C. 7503](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7503.htm) |
+| Calendar year 2027 election, last day (a Monday) | 15 March 2027 | [26 U.S.C. 1362(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1362.htm) |
+| Late-election relief, time limit from the intended effective date | 3 years and 75 days | [Rev. Proc. 2013-30, section 4.02(2)](https://www.irs.gov/pub/irs-drop/rp-13-30.pdf) |
+| Re-election after a revocation or termination, without IRS consent | not before the 5th tax year after the first year the termination is effective | [26 U.S.C. 1362(g)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1362.htm) |
+| Shareholder limit | 100 | [26 U.S.C. 1361(b)(1)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1361.htm) |
 
-## Section 13 — PROHIBITIONS
+The statutory rates and the Additional Medicare Tax thresholds are not indexed. The wage base, the standard deduction and the bands change each year. The QBI thresholds and phase-in amounts for 2026 are in `us-qbi-deduction`; FUTA and state unemployment rates are in `us-form-941-940-payroll` and `us-state-payroll-matrix`.
 
-- **PROHIBITIONS** — The skill MUST NOT: 1. Recommend a specific salary amount as "the" reasonable salary — the skill presents a range and factors; the reviewer and client determine the actual salary with professional judgment 2. Prepare or file Form 2553 — the skill produces a decision brief, not a filing 3. Advise setting salary to zero or near-zero — this is the single most audited S-corp position; cases like Radtke and Watson demonstrate the consequences 4. Guarantee SE tax savings — savings depend on facts (income level, reasonable salary, state taxes, costs) that vary by taxpayer 5. Ignore state-level S-corp taxes — state taxes can eliminate or reverse federal savings; always flag 6. Treat the QBI interaction as always favoring S-corp — for many taxpayers (below the threshold, SSTBs above the threshold), QBI is neutral or irrelevant to the S-corp decision 7. Advise revocation of an existing S-corp election without full analysis — revocation has its own consequences (including the 5-year prohibition on re-election under §1362(g)) 8. Compute Social Security benefit reductions — SSA benefit calculations are out of scope; flag the issue for the reviewer 9. Apply the analysis to multi-member LLCs or partnerships — different rules apply 10. Recommend S-corp election solely to avoid Additional Medicare Tax — the 0.9% Additional Medicare Tax applies to wages above $200K/$250K regardless of entity structure; S-corp salary above the threshold still pays it  _(IRC §1362(g))_
+### Step 1: can this business elect at all?
 
-## Section 14 — Edge cases
+1. **There must be an entity.** Form 2553 is filed by "a corporation or other entity eligible to elect to be treated as a corporation" ([Instructions for Form 2553](https://www.irs.gov/pub/irs-pdf/i2553.pdf)). A sole proprietor forms an LLC or a corporation first (`us-state-formation-matrix`).
+2. **A single-member LLC does not need Form 8832.** An eligible entity that files a timely Form 2553 and meets the tests is treated as a corporation from the S election's effective date (Instructions for Form 2553, Purpose of Form; deemed classification election in Treas. Reg. 301.7701-3(c)(1)(v)(C)).
+3. **The small business corporation tests** ([26 U.S.C. 1361(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1361.htm)): a domestic corporation that is not an ineligible corporation (certain banks, insurance companies, DISCs), with no more than 100 shareholders, only individuals, estates, certain trusts and certain exempt organizations as shareholders, no nonresident alien shareholder, and no more than one class of stock (differences in voting rights alone are allowed). The tax year must be a calendar year or one of the permitted fiscal years. Every shareholder consents (Form 2553 column K).
 
-### Edge Case 1 — Net SE income fluctuates widely year to year.
+If any test fails, stop: the S election is not available (see the refusal table).
 
-A freelancer earned $150K in TY2024 but expects only $40K in TY2025 due to a career change. The S-corp election made sense at $150K but may not at $40K. The incremental costs ($3K-5K) may exceed SE tax savings at $40K. The skill should present both years' analysis and note that S-corp elections are ongoing — the taxpayer must pay the incremental costs even in low-income years unless they revoke the election.
+### Step 2: set the reasonable salary first
 
-### Edge Case 2 — Taxpayer's only income source is this business.
+4. **The rule.** "S corporations must pay reasonable compensation to a shareholder-employee in return for services that the employee provides to the corporation before non-wage distributions may be made" ([IRS, S corporation compensation and medical insurance issues](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues)). Distributions to an officer are wages to the extent they are reasonable compensation (Pub. 15 (2026), Officers or shareholders of an S corporation), and the IRS can reclassify them, with employment tax, penalties and interest. Courts have upheld this: Joly v. Commissioner, T.C. Memo. 1998-361, aff'd 211 F.3d 1269 (6th Cir. 2000); Veterinary Surgical Consultants, P.C. v. Commissioner, 117 T.C. 141 (2001); Joseph M. Grey Public Accountant, P.C. v. Commissioner, 119 T.C. 121 (2002); David E. Watson, P.C. v. United States, 668 F.3d 1008 (8th Cir. 2012) (all as listed on the IRS page).
+5. **Where the money comes from.** The IRS looks at the source of gross receipts: the shareholder's own services, the services of non-shareholder employees, and capital and equipment. Receipts from the owner's personal services (and the owner's management of staff and assets) point to wages; receipts from staff and equipment can support distributions. A solo service business with no staff and little equipment has the least room.
+6. **The IRS factors:** training and experience; duties and responsibilities; time and effort devoted; dividend history; payments to non-shareholder employees; timing and manner of paying bonuses to key people; what comparable businesses pay for similar services; compensation agreements; the use of a formula. Reasonable compensation never exceeds what the shareholder actually received.
+7. **Document it:** a job description, market pay data for the role and place (for example the Bureau of Labor Statistics occupational wage data), hours, and a written compensation decision; then pay it through payroll every month or quarter with withholding.
+8. **No percentage rule exists.** Old rules of thumb ("60% of profit") are not law and are not in any IRS source. Use the evidence; if there is none, assume the salary is close to profit and say so in the brief.
 
-When the taxpayer's entire livelihood comes from the business and they perform all services personally, the IRS's argument that "reasonable salary = most of the income" is strongest. The Watson case involved a CPA whose firm earned $488K; the court found $91,044 per year was reasonable, but the taxpayer had other partners. A solo operator has a weaker position. Conservative approach: set salary at 60-70% of net income for solo operators.
+### Step 3: payroll tax as a sole proprietor against as an S corporation
 
-### Edge Case 3 — S-corp election mid-year.
+9. **Sole proprietor** (Schedule SE, see `us-schedule-c-and-se-computation`): net earnings = profit x 92.35%; tax = 12.4% on net earnings up to whatever remains of USD 184,500 after the owner's other Social Security wages, plus 2.9% on all net earnings.
+10. **S corporation:** on the salary W, employer 6.2% plus 1.45% and employee 6.2% plus 1.45% (15.3% in total below the wage base); distributions carry no Social Security or Medicare tax. The employer half is a deduction of the corporation.
+11. **Other wages above the wage base.** If the owner also has a job, the S corporation is a second employer. It must still pay the employer 6.2% on the salary. The employee 6.2% withheld by both employers above USD 184,500 comes back as a credit on Form 1040 ([26 U.S.C. 6413(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap65-subchapB-sec6413.htm), "a credit or refund" of the section 3101(a) tax only), but the employer share is never refunded. As a sole proprietor, Schedule SE line 9 would be zero and only 2.9% applies. So with other wages at or above the base, the S corporation usually costs more payroll tax, not less (Case 2).
+12. **Additional Medicare Tax** (0.9%) applies to salary and to self-employment income above the threshold, but not to S corporation distributions. Count it in both columns when wages plus profit pass USD 200,000 (single) or USD 250,000 (joint).
 
-An S-corp election effective mid-year (e.g., LLC formed July 1, 2025, with Form 2553 filed within 75 days) creates a short S-corp year. The taxpayer files Schedule C for Jan 1 - Jun 30 and Form 1120-S for Jul 1 - Dec 31. Both SE tax and FICA apply to their respective periods. The break-even analysis should pro-rate costs and savings.
+### Step 4: added costs
 
-### Edge Case 4 — Husband and wife qualified joint venture converting to S-corp.
+13. List the client's quotes, each year: payroll service (and quarterly Form 941, annual Form 940 and Forms W-2), Form 1120-S and Schedule K-1 preparation, FUTA and state unemployment insurance on the salary (`us-form-941-940-payroll`, `us-state-payroll-matrix`), workers' compensation where the state requires it, state annual reports, franchise taxes or entity-level taxes (state table below), and extra bookkeeping. Do not use national averages; this skill holds no official cost figures.
 
-A married couple filing jointly who operate a qualified joint venture (§761(f)) must restructure to a single-member entity before electing S-corp status. The QJV files two Schedule Cs; the S-corp files one 1120-S. Both spouses must be employees if both perform services. This doubles the payroll cost and FUTA. Flag for reviewer.
+### Step 5: the income tax effect, mainly QBI
 
-### Edge Case 5 — Taxpayer has substantial depreciable property (high UBIA).
+14. **Salary is not QBI.** QBI does not include "reasonable compensation paid to the taxpayer by any qualified trade or business of the taxpayer" ([26 U.S.C. 199A(c)(4)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm)). The S corporation's QBI is profit less salary, less the employer payroll tax, less the added costs. The sole proprietor's QBI is profit less the deductible half of self-employment tax and other deductions attributable to the business (`us-qbi-deduction`).
+15. **Below the QBI threshold** (taxable income under the 2026 amount in `us-qbi-deduction`), the deduction is 20% of QBI, capped at 20% of taxable income less net capital gain. The S corporation usually lowers it, because the salary leaves QBI. Price that at the marginal rate (Case 1).
+16. **Above the threshold**, the deduction for a non-SSTB is limited by W-2 wages and property. The owner's salary is W-2 wages ([26 U.S.C. 199A(b)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm)), so for a high earner with no staff and no property the S corporation can restore a deduction that is zero as a sole proprietor. For an SSTB above the phase-in range, no QBI deduction is left either way. Run both cases in `us-qbi-deduction`; never assume QBI favours the S corporation.
+17. **Other income tax differences** are small and go the same way in both columns: the deductible half of self-employment tax against the deductible employer payroll tax. Count them only if the reviewer asks.
 
-When the business has significant qualified property (equipment, vehicles, etc.), the UBIA component of the QBI limitation may provide adequate QBI deduction room without W-2 wages. In this case, the S-corp's W-2 wages provide less QBI benefit, and the decision tilts toward sole proprietorship. Run both QBI scenarios.
+### Step 6: the deadline
 
-### Edge Case 6 — California resident with high income.
+18. **Timely election** ([26 U.S.C. 1362(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1362.htm)): "at any time during the preceding taxable year, or ... on or before the 15th day of the 3d month of the taxable year". The instructions count it as 2 months and 15 days from the day the year begins: a corporation whose first year begins 7 January must file by 21 March (Instructions for Form 2553, Example 1). An election made in that window is pushed to the next year if, on any earlier day of the year, the entity was not eligible or a then-shareholder did not consent (1362(b)(2)). An election made after the window applies from the next year (1362(b)(3)).
+19. **For 2026 and 2027.** An existing calendar-year entity had until **16 March 2026** for 2026 (15 March was a Sunday; 26 U.S.C. 7503 moves the day to the next business day). It can file at any time now, until **15 March 2027**, for 2027. A new entity formed in 2026 or 2027 counts its 2 months and 15 days from the earliest of: first having shareholders, first having assets, or beginning business (Instructions for Form 2553, item E).
+20. **Late election for 2026: Rev. Proc. 2013-30.** All of these must hold ([Rev. Proc. 2013-30, sections 4.02 and 5](https://www.irs.gov/pub/irs-drop/rp-13-30.pdf); Instructions for Form 2553, Relief for Late Elections):
+    - the entity intended to be an S corporation as of the effective date entered on line E;
+    - it fails to qualify solely because Form 2553 was not filed on time;
+    - it has reasonable cause and acted diligently to correct the mistake once found (stated on line I of Form 2553 or an attached statement);
+    - Form 2553 is filed within 3 years and 75 days of the line E date; and
+    - every person who was a shareholder in that period gives a statement that they reported income consistently with the S election for that year and all later years (column K does this).
+    Write "FILED PURSUANT TO REV. PROC. 2013-30" at the top of page 1. For an LLC, the same procedure also covers the late corporate classification election, and the entity must also have filed every Form 1120-S consistently (or the first one must not yet be due). A corporation (not an LLC) past 3 years and 75 days can still get relief if it and every shareholder filed as an S corporation from the start, at least 6 months have passed since the first Form 1120-S, and the IRS raised no problem within 6 months of that return (section 5.04). Otherwise the only route is a private letter ruling with a user fee.
+21. **A decision made late in 2026 is not intent from 1 January.** Relief is for a business that meant to be an S corporation and missed the filing. A business that decides in November 2026 to look back has no reasonable cause, and in any case paid no salary during 2026: the brief recommends 2027 instead, unless there is evidence of the earlier intent (refusal code R-SC-LATE).
+22. **Filing.** Send the signed original or fax it to the service center listed for the entity's state in the Instructions for Form 2553; keep proof. The IRS should answer within 60 days; if nothing comes within 2 months, call 1-800-829-4933.
 
-At $300K net SE income in California: SE tax savings from S-corp might be $10K-15K, but California imposes a 1.5% S-corp tax ($4,500) plus the $800 franchise tax. Net California cost: $5,300. Federal savings must exceed this state cost plus other incremental costs ($3K-5K). Total break-even: federal savings must exceed ~$8K-10K. This typically works at $300K but is marginal at $150K.
+### Step 7: decide and write the brief
 
-### Edge Case 7 — Taxpayer also has W-2 income from another employer.
+23. **Net annual saving** = sole proprietor self-employment tax less S corporation payroll tax, less added costs, less (or plus) the income tax change from Step 5. Recommend the election only when the net saving is clearly positive at a salary the evidence supports, for profit the client expects to keep earning. When it is small or rests on a low salary, say "marginal", and say what would change it.
+24. Also in the brief: state flags (below), the loss of Social Security earnings record on the salary gap (flag, do not compute), retirement contribution room under each structure (`us-self-employed-retirement`), and that revoking later bars a new election for five years.
 
-If the taxpayer's W-2 wages from another employer exceed the Social Security wage base ($176,100 for 2025), then ALL of the sole prop's SE income is subject to only the 2.9% Medicare rate (not the 12.4% OASDI rate). The S-corp savings are dramatically reduced because the OASDI savings disappear. The S-corp only saves the 2.9% Medicare rate on the distribution gap, which at a $3K-5K cost may not break even.
+### State entity-level taxes (flag only; figures in the state skill)
 
-### Edge Case 8 — Taxpayer plans to contribute to a Solo 401(k).
+| State | What to flag | Skill |
+| --- | --- | --- |
+| California | An S corporation owes California tax at entity level as well as the shareholder's personal tax; compare it with the LLC fee and tax the LLC pays now | `ca-llc-fee-and-tax`; no OpenAccountants skill yet holds the California S corporation rate (refer) |
+| New York State | A federal S corporation is taxed as a New York C corporation unless it also makes the New York S election | `ny-corporate-franchise-article-9a` |
+| New York City | The city does not recognise S status: a sole proprietor pays the unincorporated business tax, an S corporation pays the city's business corporation tax | `nyc-ubt` |
+| New Hampshire | Business profits tax and business enterprise tax apply to the entity | `nh-bpt-bet` |
+| New Jersey | A federal S corporation must also elect New Jersey S status, or it is taxed as a New Jersey C corporation | `nj-cbt-and-bait` |
+| Texas | Franchise (margin) tax applies to the LLC whether or not it elects S status; check the no-tax-due threshold | `tx-franchise-tax` |
+| Tennessee | Franchise and excise tax applies to LLCs and corporations alike | no OpenAccountants skill yet (refer) |
+| Every state | State unemployment insurance on the new salary; some states require workers' compensation for an owner-employee | `us-state-payroll-matrix` |
 
-The Solo 401(k) employer contribution for an S-corp shareholder-employee is based on W-2 salary (25% of salary, up to the §415 limit of $70,000 for 2025). Lower salary = lower employer contribution limit. For a sole proprietor, the contribution is based on net SE earnings (20% of net SE earnings after the SE tax deduction). The skill must compare retirement contribution room under both structures and flag if the S-corp salary would reduce maximum retirement contributions.
+## Boundary and exception table
 
-### Edge Case 9 — Entity already has an S-corp election in place but income has dropped.
+| Situation | Treatment |
+| --- | --- |
+| Sole proprietor with no entity | Must form an LLC or corporation first; the election runs from the later of formation and the effective date chosen |
+| Profit low, or close to a reasonable salary | Little or no gap to save on; fixed costs usually exceed the saving. Recommend against |
+| Profit swings widely between years | The costs recur in the low years; compare at least two years, including a low one |
+| Owner's other W-2 wages at or above USD 184,500 | Sole proprietor pays only 2.9%; the S corporation adds a non-refundable employer 6.2% on salary. Usually recommend against (Case 2) |
+| Other wages below the base but wages plus profit above it | Recompute line 9 of Schedule SE; the 12.4% saving applies only to the base left |
+| Owner's spouse also works in the business | Each spouse who works needs a salary and payroll; a qualified joint venture (two Schedules C) must first become one entity |
+| Business with staff or substantial equipment | Stronger case for a salary below profit, because part of the receipts come from others' work or capital |
+| High income, non-SSTB, no staff, no property, above the QBI phase-in | Salary creates W-2 wages that can restore the QBI deduction; run both cases in `us-qbi-deduction` |
+| SSTB fully above the QBI phase-in | No QBI deduction either way; decision rests on payroll tax and costs |
+| Substantial qualified property (high UBIA) | The property prong may already support the QBI deduction as a sole proprietor; the S corporation's wages add less |
+| Election effective mid-year (new LLC) | Short years: Schedule C before the effective date, Form 1120-S after; prorate salary, savings and costs |
+| Losses expected | S corporation losses are limited by stock and debt basis (loans must be from the shareholder directly), at-risk and passive rules; a sole proprietor's loss flows straight to Schedule C |
+| Owner plans to sell the business | S corporation sale (stock or assets) is more complex; refer before electing |
+| Several businesses | Each S corporation is its own payroll and Form 1120-S |
+| Health insurance paid for the owner | For a more-than-2% shareholder it goes on the W-2 as wages, but is not Social Security or Medicare wages if under a plan (IRS compensation page); see `us-self-employed-health-insurance` |
+| Solo 401(k) or SEP | Employer contributions are based on salary, not on profit; a low salary cuts the room (`us-self-employed-retirement`) |
+| Spouse is a nonresident alien | The spouse must not hold shares (1361(b)(1)(C)); check community property states, where the spouse may own shares by law |
+| Existing S election, income has dropped | Revocation needs consent of shareholders holding more than half the shares; made by the 15th day of the 3rd month it is effective from the 1st day of that year, otherwise from the next year, unless a later date is specified (1362(d)(1)); then no new election for five years (1362(g)) |
+| Additional Medicare Tax as the only reason | Not a reason on its own: the 0.9% still applies to salary above the threshold; it saves only on the distribution part |
 
-The taxpayer elected S-corp when income was $200K but now earns $50K. The incremental costs ($3K-5K) may exceed the SE tax savings. The skill should analyze whether revoking the election makes sense, noting the 5-year prohibition on re-election under §1362(g). This creates an asymmetric decision: revoking is easy but re-electing requires waiting 5 years.
+### Defaults when a fact is missing
 
-### Edge Case 10 — Taxpayer is a nonresident alien's spouse filing MFJ.
+| Missing fact | Default | Why |
+| --- | --- | --- |
+| No evidence for the salary | Assume a salary close to profit and show the saving as near zero; ask for duties, hours and market pay data | The IRS can reclassify distributions as wages; no percentage rule exists |
+| State entity-level tax unknown | Flag it for the reviewer; never assume zero | Several states tax S corporations at entity level (state table) |
+| QBI effect unclear | Run both structures in `us-qbi-deduction` and show both | The effect can go either way (Step 5) |
+| Added costs not quoted | Ask for quotes; do not recommend on an estimate | This skill holds no official cost figures |
+| Late-election facts uncertain | Test every Rev. Proc. 2013-30 condition; if one is unproven, recommend the next timely year | Relief needs intent, reasonable cause and shareholder statements |
+| Social Security benefit effect | Flag, do not compute | Benefit projections are outside this skill |
 
-An S-corp cannot have a nonresident alien as a shareholder (§1361(b)(1)(C)). If the taxpayer's spouse is a nonresident alien, the taxpayer can still elect S-corp status (the spouse is not a shareholder), but the MFJ filing status and its interaction with Additional Medicare Tax thresholds ($250K MFJ) should be analyzed. Flag for reviewer.
+## Worked cases
 
-## Section 15 — Test suite
+**Case 1, a decision: a single consultant with USD 120,000 profit and a USD 70,000 salary.** A single filer, no other income, standard deduction, a non-SSTB business in a state with no entity-level tax on S corporations. 2026 profit before any owner pay is USD 120,000. Market data supports a salary of USD 70,000. Quotes for the added costs (payroll service, Form 1120-S, FUTA and state unemployment) total USD 3,000.
 
-### Test 1 — Clear S-corp advantage
+Sole proprietor: net earnings USD 120,000 x 92.35% = USD 110,820, all under the USD 184,500 base; self-employment tax 15.3% = USD 16,955.46; deductible half USD 8,477.73. QBI = USD 111,522.27. Taxable income before QBI: USD 120,000 less USD 8,477.73 less USD 16,100 = USD 95,422.27. QBI deduction: the smaller of 20% of QBI (USD 22,304.45) and 20% of taxable income (USD 19,084.45), so USD 19,084.45. Taxable income USD 76,337.82.
 
-**Input:** Freelance developer, single filer, net SE income = $150,000. No employees. No state income tax (TX resident). No W-2 income from other sources.
-**Expected output:**
-- Sole prop SE tax: $150,000 x 92.35% x 15.3% = approximately $21,194
-- S-corp with $80,000 salary: FICA = $80,000 x 15.3% = $12,240 + FUTA $42 = $12,282
-- SE tax savings: $21,194 - $12,282 = $8,912
-- Incremental costs (estimated): $3,500
-- Net savings: approximately $5,412
-- Recommendation: S-corp election likely advantageous. Flag reasonable salary determination for reviewer.
+S corporation: FICA on salary USD 70,000 x 15.3% = USD 10,710 (employer half USD 5,355 deducted by the corporation). K-1 income USD 120,000 less 70,000 less 5,355 less 3,000 = USD 41,645, which is the QBI. Taxable income before QBI USD 70,000 plus 41,645 less 16,100 = USD 95,545; QBI deduction 20% of USD 41,645 = USD 8,329. Taxable income USD 87,216.
 
-### Test 2 — Below break-even
+The decision: payroll tax saved USD 16,955.46 less USD 10,710 = USD 6,245.46. Less added costs USD 3,000. Taxable income is USD 10,878.18 higher with the S corporation, mostly because the salary left QBI; both figures sit in the 22% band (under USD 105,700), so income tax rises USD 2,393.20. Net saving: **USD 852.26 a year**. The election is marginal: recommend it only if profit is expected to grow, or if evidence supports a lower salary. Without the QBI step the saving would have looked like USD 3,245.46, which is the common mistake.
 
-**Input:** Freelance writer, single filer, net SE income = $35,000. No employees. No state income tax.
-**Expected output:**
-- Sole prop SE tax: $35,000 x 92.35% x 15.3% = approximately $4,945
-- S-corp with $25,000 salary: FICA = $25,000 x 15.3% = $3,825 + FUTA $42 = $3,867
-- SE tax savings: $4,945 - $3,867 = $1,078
-- Incremental costs (estimated): $3,500
-- Net savings: -$2,422 (NET LOSS)
-- Recommendation: S-corp election NOT advantageous at this income level. The incremental costs exceed the SE tax savings.
+```oa-check
+name: S corporation decision, single, profit 120,000, salary 70,000 (2026)
+inputs:
+  profit: 120000
+  salary: 70000
+  added_costs: 3000
+  standard_deduction: 16100
+  marginal_rate: 0.22
+steps:
+  - se_tax: profit * 0.9235 * 0.153
+  - half_se: se_tax * 0.5
+  - ti_before_qbi_sp: profit - half_se - standard_deduction
+  - qbi_sp: min((profit - half_se) * 0.2, ti_before_qbi_sp * 0.2)
+  - taxable_sp: ti_before_qbi_sp - qbi_sp
+  - fica: salary * 0.153
+  - k1_income: profit - salary - salary * 0.0765 - added_costs
+  - ti_before_qbi_s: salary + k1_income - standard_deduction
+  - qbi_s: min(k1_income * 0.2, ti_before_qbi_s * 0.2)
+  - taxable_s: ti_before_qbi_s - qbi_s
+  - payroll_tax_saved: se_tax - fica
+  - extra_income_tax: (taxable_s - taxable_sp) * marginal_rate
+  - net_saving: payroll_tax_saved - added_costs - extra_income_tax
+expected:
+  se_tax: 16955.46
+  qbi_sp: 19084.45
+  taxable_sp: 76337.82
+  fica: 10710.00
+  k1_income: 41645.00
+  qbi_s: 8329.00
+  taxable_s: 87216.00
+  payroll_tax_saved: 6245.46
+  extra_income_tax: 2393.20
+  net_saving: 852.26
+```
 
-### Test 3 — California resident with 1.5% S-corp tax
+**Case 2, a decision: a side business on top of a job above the wage base.** A married couple filing jointly. One spouse earns USD 190,000 of W-2 wages (boxes 3 and 5) from an employer and has a side LLC with 2026 profit of USD 60,000; the other spouse has no income. A reasonable salary for the side work is USD 35,000; added costs are quoted at USD 2,500.
 
-**Input:** Freelance consultant, single filer, CA resident, net SE income = $120,000. No employees.
-**Expected output:**
-- Sole prop SE tax: $120,000 x 92.35% x 15.3% = approximately $16,956
-- S-corp with $65,000 salary: FICA = $65,000 x 15.3% = $9,945 + FUTA $42 = $9,987
-- SE tax savings: $16,956 - $9,987 = $6,969
-- California S-corp tax: $120,000 x 1.5% = $1,800 + $800 franchise tax = $2,600
-- Incremental costs (federal): $3,500
-- Total incremental costs: $3,500 + $2,600 = $6,100
-- Net savings: $6,969 - $6,100 = $869
-- Recommendation: Marginal. Savings are under $1,000. The complexity and audit risk may not justify the election. Flag for reviewer — might be worth it if income is expected to grow.
+Sole proprietor: net earnings USD 60,000 x 92.35% = USD 55,410. Schedule SE line 9: USD 184,500 less USD 190,000 is below zero, so zero; no 12.4%. Self-employment tax is 2.9% only: USD 1,606.89. Additional Medicare Tax: the USD 250,000 joint threshold less USD 190,000 of wages leaves USD 60,000, above USD 55,410, so none.
 
-### Test 4 — High income with W-2 from another employer
+S corporation on a USD 35,000 salary: employer 6.2% plus 1.45% = USD 2,677.50; employee Medicare 1.45% = USD 507.50; employee social security 6.2% = USD 2,170 is withheld but comes back as the excess social security credit on Form 1040, because the job already withheld on the full USD 184,500 (26 U.S.C. 6413(c)). Payroll tax borne USD 3,185. Wages total USD 225,000, under USD 250,000, so no Additional Medicare Tax either. With the added costs: USD 5,685.
 
-**Input:** Freelance consultant, MFJ, net SE income = $80,000. Spouse has W-2 income of $200,000 (exceeds SS wage base).
-**Expected output:**
-- The taxpayer's W-2 spouse already exceeds the SS wage base. The taxpayer's SE income is also subject to employer OASDI (because SE tax is separate from the spouse's FICA).
-- Wait — SE tax applies to the individual, not the household. The taxpayer's own SE earnings below the SS wage base are still subject to full 15.3% SE tax.
-- Sole prop SE tax: $80,000 x 92.35% x 15.3% = approximately $11,300
-- S-corp with $50,000 salary: FICA = $50,000 x 15.3% = $7,650 + $42 = $7,692
-- SE tax savings: $11,300 - $7,692 = $3,608
-- Incremental costs: $3,500
-- Net savings: approximately $108
-- Recommendation: Barely break-even. S-corp election provides negligible savings. Not recommended given the added complexity.
-- **However:** If the taxpayer's OWN wages + SE earnings exceed the SS wage base, the savings picture changes. Recalculate with combined income analysis.
+The decision: the S corporation costs **USD 4,078.11 more each year** in payroll tax and costs. Below the joint QBI threshold the S corporation's QBI (USD 60,000 less salary, employer tax and costs) is also smaller than the sole proprietor's, so income tax does not rescue it. Recommend against the election.
 
-### Test 5 — Late election with Rev. Proc. 2013-30 relief
+```oa-check
+name: S corporation decision, other wages above the wage base, joint (2026)
+inputs:
+  profit: 60000
+  salary: 35000
+  other_wages: 190000
+  wage_base: 184500
+  added_costs: 2500
+steps:
+  - line_4a: profit * 0.9235
+  - line_9: max(wage_base - other_wages, 0)
+  - se_tax: min(line_4a, line_9) * 0.124 + line_4a * 0.029
+  - employer_tax: salary * 0.0765
+  - employee_medicare: salary * 0.0145
+  - employee_ss_withheld: salary * 0.062
+  - employee_ss_credited: min(employee_ss_withheld, max(other_wages + salary - wage_base, 0) * 0.062)
+  - scorp_payroll_tax: employer_tax + employee_medicare + employee_ss_withheld - employee_ss_credited
+  - scorp_total: scorp_payroll_tax + added_costs
+  - extra_cost_of_election: scorp_total - se_tax
+expected:
+  line_4a: 55410.00
+  se_tax: 1606.89
+  employer_tax: 2677.50
+  employee_ss_credited: 2170.00
+  scorp_payroll_tax: 3185.00
+  scorp_total: 5685.00
+  extra_cost_of_election: 4078.11
+```
 
-**Input:** Freelance designer, single filer, formed LLC on January 15, 2025. Intended to elect S-corp effective January 15, 2025. Missed the 75-day deadline (April 1, 2025). Now filing Form 2553 on July 15, 2025. Net SE income expected: $100,000. Filed TY2025 returns as S-corp.
-**Expected output:**
-- Election deadline: no more than 2 months and 15 days after the beginning of the tax year (count as in Form 2553 instructions, Example 1)
-- Filing date: July 15, 2025 (105 days late)
-- Rev. Proc. 2013-30 requirements:
-  - Eligible entity: YES (assumed)
-  - Intended S-corp effective date: January 15, 2025
-  - Within 3 years and 75 days: YES (well within)
-  - Filed consistently as S-corp: YES (stated)
-  - Reasonable cause: must be documented on Form 2553
-- Relief likely available. File Form 2553 with "FILED PURSUANT TO REV. PROC. 2013-30" notation.
-- Recommendation: Proceed with late filing. Flag for reviewer to verify all Rev. Proc. 2013-30 requirements.
+## When to refuse or refer
 
-### Test 6 — QBI interaction for high-income non-SSTB
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-SC-INELIG | An owner is a nonresident alien, a partnership, a corporation or an ineligible trust; more than 100 shareholders; or more than one class of stock | Refuse: no S election is possible; refer the structure question |
+| R-SC-MULTI | Multi-member LLC or partnership converting | Refer: `us-form-1065-partnership` and a reviewer; different rules |
+| R-SC-CCORP | Existing C corporation electing S status | Refer: built-in gains tax (26 U.S.C. 1374) and earnings and profits issues are outside this skill |
+| R-SC-ZEROSAL | Client wants no salary or a token salary while working in the business | Refuse to recommend it: the IRS reclassifies distributions as wages (IRS compensation page and cases above) |
+| R-SC-LATE | Late 2026 election without evidence of intent from the effective date, or past 3 years and 75 days | Refer: Rev. Proc. 2013-30 may not apply; a private letter ruling has a user fee; usually elect for the next year instead |
+| R-SC-REVOKE | Existing election to be revoked | Refer for full analysis before acting: the five-year bar (1362(g)) makes it hard to undo |
+| R-SC-SALE | Business sale planned within a few years | Refer: S corporation sale mechanics |
+| R-SC-STATE | California S corporation tax, Tennessee franchise and excise tax, or any state without an OpenAccountants skill | Flag and refer; do not put a state figure in the brief without the state source |
+| R-SC-SSA | Client asks how much Social Security benefit they lose | Flag only: benefit projections are outside this skill |
 
-**Input:** Freelance app developer (NOT an SSTB), single filer, net SE income = $280,000. No employees, no depreciable property (UBIA = $0). Considering S-corp with $140,000 salary.
-**Expected output:**
-- Taxable income above QBI threshold ($197,300 single): YES, in phase-in range
-- As sole proprietor: W-2 wages = $0, UBIA = $0. QBI limitation = greater of (50% x $0) or (25% x $0 + 2.5% x $0) = $0. QBI deduction is limited to $0 once fully phased in (at $247,300 for single). Since income is $280K (above $247,300), full limitation applies: QBI deduction = $0 as sole prop.
-- As S-corp: W-2 wages = $140,000. QBI limitation = greater of (50% x $140,000 = $70,000) or (25% x $140,000 + 2.5% x $0 = $35,000) = $70,000. QBI = $280,000 - $140,000 = $140,000 (K-1 income). QBI deduction = 20% x $140,000 = $28,000, limited to $70,000 → deduction = $28,000.
-- QBI tax savings: $28,000 x marginal tax rate (est. 32%) = approximately $8,960
-- SE tax savings from S-corp: additional savings on top
-- Recommendation: S-corp is strongly advantageous due to BOTH SE tax savings and QBI deduction recovery. Flag for reviewer.
+The skill never chooses "the" salary on its own, never guarantees a saving, never files Form 2553, and never treats the QBI effect as always favouring the S corporation.
 
-## Section 16 — Cross-skill references
+## Filing and payment
 
-**Inputs from upstream skills:**
+- **Form 2553** for 2027: any time up to **15 March 2027** for an existing calendar-year entity; a new entity within 2 months and 15 days of the start of its first year. Signed by an officer and consented to by every shareholder (column K). Sent to the service center or fax number for the entity's state listed in the [Instructions for Form 2553](https://www.irs.gov/pub/irs-pdf/i2553.pdf). A late election under Rev. Proc. 2013-30 can be filed alone or attached to a Form 1120-S, with the headings above.
+- **After acceptance:** payroll from the first month, Form 941 quarterly and Form 940 yearly (`us-form-941-940-payroll`), Forms W-2 by 31 January, and Form 1120-S with Schedules K-1 by the 15th day of the 3rd month after the year ends (15 March 2028 for 2027; extension by Form 7004, see `us-corporate-extension-form-7004-and-the`).
+- **The owner's own tax:** the salary is withheld through payroll; K-1 income still needs estimated tax (`us-quarterly-estimated-tax`).
 
-- **From `us-schedule-c-and-se-computation`:** Schedule C net profit (the starting point for SE income and the income base for break-even analysis)
-- **From `us-form-1040-self-employed-positions`:** QBI deduction computation under both scenarios (sole prop vs S-corp); total tax liability
+## Completion checklist
 
-**Outputs:**
+- Entity exists and passes every 1361(b)(1) test; every shareholder can consent.
+- Salary chosen from evidence (duties, hours, market data, source of receipts), with the evidence named in the brief.
+- Self-employment tax computed with the owner's other wages on Schedule SE line 8a.
+- S corporation payroll tax at that salary, with the employer share counted in full when other wages pass USD 184,500.
+- Added costs from quotes, every year, including state items.
+- QBI computed both ways in `us-qbi-deduction`, priced at the marginal rate.
+- State flags from the table, each sent to its state skill.
+- Deadline stated: 15 March 2027 for 2027, or a new entity's 2 months and 15 days; Rev. Proc. 2013-30 tested before any late 2026 election.
+- Recommendation with confidence level and what would change it.
 
-- This skill produces a decision brief, not a tax return position. If the decision is to elect S-corp, the taxpayer begins using the S-corp pipeline (Form 1120-S, payroll, K-1) for the current or future tax year, which is outside the scope of the sole-prop skill stack.
+## Sources
 
-## Section 17 — Reference material
+| Source | URL | Read on |
+| --- | --- | --- |
+| Instructions for Form 2553 (Rev. December 2020). Read for Who May Elect (tests 1 to 8), When To Make the Election (2 months and 15 days, Examples 1 to 3), Relief for Late Elections (both lists, the "FILED PURSUANT TO REV. PROC. 2013-30" heading, the 3 years and 75 days and 6-month rules), Where To File, and the 60-day and 2-month follow-up. | https://www.irs.gov/pub/irs-pdf/i2553.pdf | 2026-11-13 |
+| Form 2553 (Rev. December 2017). Read for line E (effective date), line I (reasonable cause declaration) and column K (consents). | https://www.irs.gov/pub/irs-pdf/f2553.pdf | 2026-11-13 |
+| Rev. Proc. 2013-30. Read for section 4.02 (intent, 3 years and 75 days, solely late filing, reasonable cause and diligence) and section 5 (Form 2553 signatures, shareholder statements, section 5.04 relief where all returns were filed as an S corporation). | https://www.irs.gov/pub/irs-drop/rp-13-30.pdf | 2026-11-13 |
+| IRS, S corporation compensation and medical insurance issues. Read for the reasonable compensation rule, the cases listed, the sources-of-receipts test, the factors, and the more-than-2% shareholder health insurance treatment. | https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues | 2026-11-13 |
+| IRS Pub. 15 (2026). Read for the social security wage base ($184,500), the 6.2% and 1.45% rates and the S corporation officer row in the special classes table. | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-13 |
+| Schedule SE (Form 1040) 2026. Read for line 4a (92.35%) and lines 7 to 9. | https://www.irs.gov/pub/irs-pdf/f1040sse.pdf | 2026-11-13 |
+| IRS, self-employment tax page. Read for the 15.3% total rate. | https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes | 2026-11-13 |
+| IRS, Additional Medicare Tax questions and answers. Read for the $125,000 married filing separately threshold. | https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for the 2026 single standard deduction ($16,100) and the single 22% band (to $105,700). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| 26 U.S.C. 1401 (govinfo). Read for (a) 12.4 percent, (b)(1) 2.9 percent, (b)(2) 0.9 percent and the thresholds. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm | 2026-11-13 |
+| 26 U.S.C. 1361 (govinfo). Read for (b)(1)(A) to (D): 100 shareholders, eligible shareholders, no nonresident alien, one class of stock. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1361.htm | 2026-11-13 |
+| 26 U.S.C. 1362 (govinfo). Read for (b)(1) to (5) timing and late-election authority, (d)(1) revocation and (g) the five-year bar. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapS-partI-sec1362.htm | 2026-11-13 |
+| 26 U.S.C. 199A (govinfo, 2024 edition). Read for (a) the taxable income cap, (b)(2) the 20 percent, (b)(4) W-2 wages and (c)(4) reasonable compensation excluded from QBI. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm | 2026-11-13 |
+| Public Law 119-21, section 70105. Read for the replacement of 199A(i) (the old end date) by the minimum deduction, which makes the deduction permanent, and the wider phase-in. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| 26 U.S.C. 6413(c) (govinfo). Read for the credit or refund of employee social security tax withheld by more than one employer above the base. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap65-subchapB-sec6413.htm | 2026-11-13 |
+| 26 U.S.C. 7503 (govinfo). Read for the next-business-day rule (16 March 2026). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7503.htm | 2026-11-13 |
 
-### Validation status
-
-This file is v0.2 of `us-s-corp-election-decision`, drafted in April 2026. SE tax rates, QBI thresholds, and SS wage base verified against IRC, SSA announcements, and Rev. Proc. 2024-40. Case law citations verified. California S-corp tax rate verified against Cal. Rev. & Tax. Code §23802(b).
-
-### Known gaps
-
-1. The reasonable salary analysis is inherently fact-intensive. The skill provides a framework and rough guidelines but cannot substitute for a formal compensation study. For taxpayers above $200K net SE income, a formal study may be warranted.
-2. State-specific analysis is provided only for California in detail. Other states with entity-level S-corp taxes (NH, NYC, etc.) are flagged but not computed.
-3. The skill does not compute Social Security benefit reductions from lower W-2 wages. This is a long-term planning consideration that requires SSA benefit projection tools.
-4. The QBI interaction analysis assumes the taxpayer has only one business. Multi-business QBI aggregation under §199A(b)(3) is handled by the QBI companion skill.
-5. The skill does not address the built-in gains tax (§1374), which applies to C-corp to S-corp conversions. This is out of scope (sole prop to S-corp does not trigger §1374).
-6. Workers' compensation insurance requirements for single-shareholder S-corps vary by state and are not tracked.
-
-### Change log
-
-- **v0.1 (April 2026):** Stub.
-- **v0.2 (April 2026):** Full skill. Tax year 2025. Built on `us-tax-workflow-base` v0.1.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the private letter ruling user fee in Rev. Proc. 2026-1 (the IRS PDF link did not open, so no amount is given); the California S corporation tax rate and minimum tax (no state skill and not read here); IRS Fact Sheet FS-2008-25 (not opened; the IRS compensation page is used instead); the rows of the state table are flags taken from the named state skills, not read at the state source here, and the Tennessee row has no state skill behind it; Treas. Reg. 301.7701-3(c)(1)(v)(C) is cited as named in the Form 2553 instructions, not read on eCFR.

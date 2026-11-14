@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-transfer-pricing"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland transfer pricing (Part 35A TCA 1997), 2026
@@ -42,17 +42,17 @@ See also: `ie-corporation-tax` (rates, CT1, preliminary tax, interest limitation
 | Corporation tax on trading income (where a TP adjustment hits a trade) | 12.5% | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx |
 | Corporation tax on non-trading income and excepted trades | 25% | 2026 | same page |
 | Master file: MNE group total revenue in the relevant period | EUR 250 million or more | 2026 | s.835G(1), (3)(a); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
-| Local file: MNE group total revenue in the relevant period | EUR 50 million or more | 2026 | s.835G(1), (3)(b); same |
-| SME exclusion: group staff / turnover / balance sheet | under 250; EUR 50m or less and/or EUR 43m or less | 2026 | s.835EA; TDM 35A-01-01 section 7 |
-| Capital allowances: TP applies to the acquirer's allowances only if capital expenditure on the asset exceeds, and to the supplier's balancing allowance or charge only if the asset's market value exceeds | EUR 25 million | 2026 | s.835HA(1)(a), (c) |
-| Chargeable gains: TP applies only if market value of the asset exceeds | EUR 25 million | 2026 | s.835HB(2)(a), (3)(a) |
-| Low-value-adding intra-group services, simplified approach mark-up | 5% on relevant costs, no benchmarking needed | 2026 | TDM 35A-01-01 section 8.7 (2022 OECD Guidelines Ch. VII D) |
-| Pillar One Amount B: tested party operating expenses must be within | 3% to 30% of net revenues | chargeable periods from 1 Jan 2025 | s.835DA(2)(b)(iii); Finance Act 2024 s.45 |
-| Documentation produced on request | within 30 days of a written request | 2026 | s.835G(5)(b) |
-| Fixed penalty, failure to produce documentation | EUR 4,000 | 2026 | s.835G(6)(a) |
-| Fixed penalty if the local file threshold is met | EUR 25,000 plus EUR 100 a day while the failure continues | 2026 | s.835G(6)(b) |
-| Country-by-country report: group revenue in the preceding fiscal year | EUR 750 million or more | 2026 | TDM 38-03-21 paragraphs 2 and 8 (s.891H) |
-| CbC report penalty | EUR 19,045 plus EUR 2,535 a day; EUR 19,045 for an incorrect or incomplete report | 2026 | TDM 38-03-21 paragraph 30 (s.891H(7)) |
+| Local file: MNE group total revenue in the relevant period | EUR 50 million or more | 2026 | s.835G(1), (3)(b); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| SME exclusion: group staff / turnover / balance sheet | under 250; EUR 50m or less and/or EUR 43m or less | 2026 | s.835EA; TDM 35A-01-01 section 7; https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35a/35a-01-01.pdf |
+| Capital allowances: TP applies to the acquirer's allowances only if capital expenditure on the asset exceeds, and to the supplier's balancing allowance or charge only if the asset's market value exceeds | EUR 25 million | 2026 | s.835HA(1)(a), (c); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| Chargeable gains: TP applies only if market value of the asset exceeds | EUR 25 million | 2026 | s.835HB(2)(a), (3)(a); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| Low-value-adding intra-group services, simplified approach mark-up | 5% on relevant costs, no benchmarking needed | 2026 | TDM 35A-01-01 section 8.7 (2022 OECD Guidelines Ch. VII D); https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35a/35a-01-01.pdf |
+| Pillar One Amount B: tested party operating expenses must be within | 3% to 30% of net revenues | chargeable periods from 1 Jan 2025 | s.835DA(2)(b)(iii); Finance Act 2024 s.45; https://www.irishstatutebook.ie/eli/2024/act/43/section/45/enacted/en/html |
+| Documentation produced on request | within 30 days of a written request | 2026 | s.835G(5)(b); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| Fixed penalty, failure to produce documentation | EUR 4,000 | 2026 | s.835G(6)(a); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| Fixed penalty if the local file threshold is met | EUR 25,000 plus EUR 100 a day while the failure continues | 2026 | s.835G(6)(b); https://www.irishstatutebook.ie/eli/2019/act/45/section/27/enacted/en/html |
+| Country-by-country report: group revenue in the preceding fiscal year | EUR 750 million or more | 2026 | TDM 38-03-21 paragraphs 2 and 8 (s.891H); https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-03-21.pdf |
+| CbC report penalty | EUR 19,045 plus EUR 2,535 a day; EUR 19,045 for an incorrect or incomplete report | 2026 | TDM 38-03-21 paragraph 30 (s.891H(7)); https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-03-21.pdf |
 | Late payment interest on corporation tax | 0.0219% per day | 2026 | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx |
 
 Pillar Two: in-scope groups also pay the 15% minimum tax; see `ie-corporation-tax`. A transfer pricing adjustment changes the Irish profit that feeds into that computation.
@@ -231,4 +231,4 @@ Not yet confirmed: the percentages of the s.1077E tax-geared penalties (not stat
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
