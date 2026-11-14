@@ -1,10 +1,10 @@
 ---
 name: tx-franchise-tax
 description: Compute and file the Texas franchise tax (the margin tax) for any taxable entity, for reports due in 2026 and 2027 (accounting years ending in 2025 and 2026). Covers who is taxable (single-member LLCs included, sole proprietors and natural-person general partnerships not), the $2,650,000 no tax due threshold on annualized total revenue, the rule that tax under $1,000 is not owed, the four margin bases (70% of revenue, revenue minus cost of goods sold, revenue minus compensation capped at $480,000 a person, revenue minus $1 million), the 0.75% and 0.375% rates, the 0.331% E-Z computation for revenue up to $20 million, single-factor apportionment, the $500,000 nexus rule, combined groups, the Public Information Report and Ownership Information Report, extensions, penalties and forfeiture. Trigger on "Texas franchise tax", "margin tax", "no tax due threshold", "Form 05-158", "Form 05-169", "E-Z computation", "Public Information Report", "05-102", "05-167", "Texas LLC tax". Texas Comptroller and Tax Code Chapter 171.
-version: "2.0"
+version: "2.1"
 jurisdiction: US-TX
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - us-tax-workflow-base
 category: state
@@ -58,7 +58,7 @@ Out of scope, and where it goes:
 | Compensation deduction limit, per person per 12-month period | USD 480,000 | [Texas Comptroller, franchise tax](https://comptroller.texas.gov/taxes/franchise/) |
 | E-Z computation total revenue limit | USD 20 million | [Texas Comptroller, franchise tax](https://comptroller.texas.gov/taxes/franchise/); [Tax Code 171.1016(a)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.171.htm) |
 | E-Z computation rate (of apportioned total revenue) | 0.331% | [Texas Comptroller, franchise tax](https://comptroller.texas.gov/taxes/franchise/); [Tax Code 171.1016(b)(3)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.171.htm) |
-| Margin base: share of total revenue | 70% | [Tax Code 171.101(a)(1)(A)(i)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.171.htm) |
+| Margin base: share of total revenue | 70% | [Tax Code 171.101(a)(1)(A)(i)](https://tcss.legis.texas.gov/resources/TX/htm/TX.171.htm) |
 | Margin base: flat deduction from total revenue | USD 1 million | [Tax Code 171.101(a)(1)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.171.htm) |
 | Tax computed below this amount is not owed | USD 1,000 | [Tax Code 171.002(d)(1)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.171.htm); [Form 05-915 (2026), Minimum Franchise Tax](https://comptroller.texas.gov/forms/05-915.pdf) |
 | Economic nexus for an out-of-state entity (Texas gross receipts in the federal accounting period) | USD 500,000 or more | [Rule 3.586(e)(1), STAR 202601004R](https://star.comptroller.texas.gov/view/202601004R) |

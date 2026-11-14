@@ -1,10 +1,11 @@
 ---
 name: montenegro-income-tax
 description: "Montenegro personal income tax (porez na dohodak fizičkih lica) for tax year 2026, from the Personal Income Tax Law as amended by 160/25 (from 1 January 2026) and 70/26 (from 21 May 2026). Covers residence and scope, the monthly salary bands (0, 9 and 15% at EUR 700 and 1,000), the annual bands for a principal independent activity (0, 9 and 15% at EUR 8,400 and 12,000), the flat 15% for supplementary entrepreneurs, occasional work, rent, capital income, capital gains, sport, royalties, other receipts and internet or gaming income, and gambling winnings (progressive to 20 May, 12% from 21 May). Sets out business-profit adjustments, standard expense percentages, losses, reliefs, the municipal surtax, the GPP-FL return due by the end of April, monthly advances, withholding, lump-sum tax, fines and the foreign tax credit. Payroll, social contributions and VAT have their own skills."
-version: 0.4
+version: 0.5
+type: computation
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -31,37 +32,37 @@ This skill computes Montenegro personal income tax for an individual or a sole p
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Personal earnings (salary), monthly | 0% up to EUR 700.00; 9% from EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 | 2026 | [PIT Law art. 10(1)(1)][law], as restated by [160/25 art. 3][amend] |
-| Principal independent activity, annual | 0% up to EUR 8,400.00; 9% from EUR 8,400.01 to 12,000.00; 15% above EUR 12,000.00 | 2026 | [PIT Law art. 10(1)(2)][law] |
-| Supplementary entrepreneurship, occasional work, property, capital, capital gains, sport, royalties, other receipts, internet and gaming | 15% of the tax base | 2026 | [PIT Law art. 10(1)(3)][law] |
-| Gambling winnings paid 1 January to 20 May 2026 | 0% up to EUR 50.00; 10% from EUR 50.01 to 1,500.00; 15% above EUR 1,500.00, per winning | 1 Jan to 20 May 2026 | [PIT Law art. 10(1)(4)][law], [160/25 art. 3][amend] |
-| Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3][may]; [Gazette record][mayrecord] |
-| Undeclared income found from the rise in net assets | 80% of the base | 2026 | [PIT Law art. 10a][law] |
-| Occasional independent work, undocumented costs | standard expenses 30% of receipts | 2026 | [PIT Law art. 20(2)][law] |
-| Rent, undocumented costs | standard expenses 30% | 2026 | [PIT Law art. 35(2)][law] |
-| Holiday letting to tourists | standard expenses 50% if tourist tax is paid; 70% under a lease with a travel agency or local tourist organisation with average occupancy of at least 60 days a year | 2026 | [PIT Law art. 35(3)][law] |
-| Depreciable fixed assets | value over EUR 200 and useful life over one year | 2026 | [PIT Law art. 23(2)][law] |
-| Depreciation rates | group I 2.5% (straight line, asset by asset); II 10%; III 15%; IV 20%; V 30% (declining balance on the group) | 2026 | [PIT Law art. 23(3) to (5)][law]; [160/25 art. 7][amend] |
-| Health, humanitarian, social, educational, scientific, religious, cultural, sports and environmental spending | deductible up to 3% of total income | 2026 | [PIT Law art. 24][law] |
-| Representation (entertainment) | deductible up to 1% of total income | 2026 | [PIT Law art. 25][law] |
-| Chamber and association memberships | deductible up to 0.1% of total income, or the amount fixed by law | 2026 | [PIT Law art. 26][law] |
-| Business losses | carried forward, no longer than 5 years | 2026 | [PIT Law art. 33][law] |
-| New business in an underdeveloped municipality | tax cut by 100% for the first 8 years, total relief no more than EUR 200,000; apply within 30 days of registration | 2026 | [PIT Law arts. 32 and 32a][law] |
-| New hire in an underdeveloped municipality | salary tax relief for 4 years from hiring | 2026 | [PIT Law art. 32b][law] |
-| Property acquisition cost that cannot be established | 80% of the sale price | 2026 | [PIT Law art. 37d(5)][law] |
-| Sport income, undocumented costs | standard expenses 30%; amateur athletes 90% | 2026 | [PIT Law art. 37j][law] |
-| Copyright and related income, undocumented costs | 60% fine art; 50% architecture, urban and landscape planning; 30% performers; 30% all other copyright, related rights, patents, trademarks and cultural professionals | 2026 | [PIT Law art. 37lj][law] |
-| Internet income | expenses 15% of receipts | 2026 | [PIT Law art. 37p(1)][law] |
-| Video-game (gaming) income, undocumented costs | standard expenses 20% | 2026 | [PIT Law art. 37p(3)][law] |
-| Lump-sum tax eligibility | prior-year (or planned) turnover below EUR 30,000.01 | 2026 | [PIT Law art. 49(1)][law]; [160/25 art. 14][amend] |
-| Salary from two or more payers, return required | total monthly gross above EUR 700 | 2026 | [PIT Law art. 43(4)(5)][law] |
-| Municipal surtax (prirez) | up to 13% of the tax; up to 15% in the Capital City (Podgorica) and the Old Royal Capital (Cetinje); rate set by each municipality's decision | 2026 | [Local Self-Government Financing Law arts. 8 and 9][local] |
-| Pension and disability contribution (PIO), employees | 10% employee, 0% employer | 2026 | [Contributions Law art. 15][contrib] |
-| Unemployment contribution, employees | 0.5% employee, 0.5% employer | 2026 | [Contributions Law art. 18][contrib] |
-| VAT, standard rate and registration | 21%; registration once turnover in the last 12 months, or a shorter period, exceeds EUR 30,000 | 2026 | [VAT Law arts. 24, 42 and 55][vat] |
-| Fine, individual (return, payment, foreign salary, rent withholding) | EUR 500 to 2,000 | 2026 | [PIT Law art. 53v][law] |
-| Fine, entrepreneur (return, advances, information return, lump sum, books) | EUR 1,000 to 6,000, plus a possible ban on the activity of 1 to 3 months | 2026 | [PIT Law art. 53a(3) and (4)][law]; [160/25 art. 18][amend] |
-| Fine, legal-person payer | EUR 2,000 to 20,000; responsible person EUR 500 to 1,000 | 2026 | [PIT Law art. 53a(1) and (2)][law] |
+| Personal earnings (salary), monthly | 0% up to EUR 700.00; 9% from EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 | 2026 | [PIT Law art. 10(1)(1)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0), as restated by [160/25 art. 3](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0) |
+| Principal independent activity, annual | 0% up to EUR 8,400.00; 9% from EUR 8,400.01 to 12,000.00; 15% above EUR 12,000.00 | 2026 | [PIT Law art. 10(1)(2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Supplementary entrepreneurship, occasional work, property, capital, capital gains, sport, royalties, other receipts, internet and gaming | 15% of the tax base | 2026 | [PIT Law art. 10(1)(3)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Gambling winnings paid 1 January to 20 May 2026 | 0% up to EUR 50.00; 10% from EUR 50.01 to 1,500.00; 15% above EUR 1,500.00, per winning | 1 Jan to 20 May 2026 | [PIT Law art. 10(1)(4)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0), [160/25 art. 3](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0) |
+| Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3](https://www.sluzbenilist.me/propisi/394390/download); [Gazette record](https://www.sluzbenilist.me/propisi/394390) |
+| Undeclared income found from the rise in net assets | 80% of the base | 2026 | [PIT Law art. 10a](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Occasional independent work, undocumented costs | standard expenses 30% of receipts | 2026 | [PIT Law art. 20(2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Rent, undocumented costs | standard expenses 30% | 2026 | [PIT Law art. 35(2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Holiday letting to tourists | standard expenses 50% if tourist tax is paid; 70% under a lease with a travel agency or local tourist organisation with average occupancy of at least 60 days a year | 2026 | [PIT Law art. 35(3)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Depreciable fixed assets | value over EUR 200 and useful life over one year | 2026 | [PIT Law art. 23(2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Depreciation rates | group I 2.5% (straight line, asset by asset); II 10%; III 15%; IV 20%; V 30% (declining balance on the group) | 2026 | [PIT Law art. 23(3) to (5)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [160/25 art. 7](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0) |
+| Health, humanitarian, social, educational, scientific, religious, cultural, sports and environmental spending | deductible up to 3% of total income | 2026 | [PIT Law art. 24](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Representation (entertainment) | deductible up to 1% of total income | 2026 | [PIT Law art. 25](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Chamber and association memberships | deductible up to 0.1% of total income, or the amount fixed by law | 2026 | [PIT Law art. 26](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Business losses | carried forward, no longer than 5 years | 2026 | [PIT Law art. 33](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| New business in an underdeveloped municipality | tax cut by 100% for the first 8 years, total relief no more than EUR 200,000; apply within 30 days of registration | 2026 | [PIT Law arts. 32 and 32a](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| New hire in an underdeveloped municipality | salary tax relief for 4 years from hiring | 2026 | [PIT Law art. 32b](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Property acquisition cost that cannot be established | 80% of the sale price | 2026 | [PIT Law art. 37d(5)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Sport income, undocumented costs | standard expenses 30%; amateur athletes 90% | 2026 | [PIT Law art. 37j](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Copyright and related income, undocumented costs | 60% fine art; 50% architecture, urban and landscape planning; 30% performers; 30% all other copyright, related rights, patents, trademarks and cultural professionals | 2026 | [PIT Law art. 37lj](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Internet income | expenses 15% of receipts | 2026 | [PIT Law art. 37p(1)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Video-game (gaming) income, undocumented costs | standard expenses 20% | 2026 | [PIT Law art. 37p(3)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Lump-sum tax eligibility | prior-year (or planned) turnover below EUR 30,000.01 | 2026 | [PIT Law art. 49(1)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [160/25 art. 14](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0) |
+| Salary from two or more payers, return required | total monthly gross above EUR 700 | 2026 | [PIT Law art. 43(4)(5)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Municipal surtax (prirez) | up to 13% of the tax; up to 15% in the Capital City (Podgorica) and the Old Royal Capital (Cetinje); rate set by each municipality's decision | 2026 | [Local Self-Government Financing Law arts. 8 and 9](https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0) |
+| Pension and disability contribution (PIO), employees | 10% employee, 0% employer | 2026 | [Contributions Law art. 15](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Unemployment contribution, employees | 0.5% employee, 0.5% employer | 2026 | [Contributions Law art. 18](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| VAT, standard rate and registration | 21%; registration once turnover in the last 12 months, or a shorter period, exceeds EUR 30,000 | 2026 | [VAT Law arts. 24, 42 and 55](https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0) |
+| Fine, individual (return, payment, foreign salary, rent withholding) | EUR 500 to 2,000 | 2026 | [PIT Law art. 53v](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| Fine, entrepreneur (return, advances, information return, lump sum, books) | EUR 1,000 to 6,000, plus a possible ban on the activity of 1 to 3 months | 2026 | [PIT Law art. 53a(3) and (4)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [160/25 art. 18](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0) |
+| Fine, legal-person payer | EUR 2,000 to 20,000; responsible person EUR 500 to 1,000 | 2026 | [PIT Law art. 53a(1) and (2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
 
 Checks: a monthly salary of EUR 1,200 bears PIT of 300 × 9% + 200 × 15% = EUR 57.00. Annual principal-business profit of EUR 8,400 bears no tax; EUR 12,000 bears EUR 324.00. The salary bands are monthly; the business bands are annual. Never apply one to the other.
 

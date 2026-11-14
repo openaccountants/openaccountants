@@ -1,7 +1,7 @@
 ---
 name: ks-income-tax
 description: Use this skill whenever asked about Kansas individual income tax. Trigger on phrases like "Kansas income tax", "KS income tax", "K-40", "KDOR income tax", "K.S.A. 79-32,110". Kansas has a two-bracket progressive system (5.20% to 5.58%) effective 2024+; Social Security is fully exempt for tax years 2024+ regardless of AGI (K.S.A. 79-32,117(c)(xviii)(B)). ALWAYS load us-tax-workflow-base first.
-version: "0.5"
+version: "0.6"
 jurisdiction: US-KS
 tax_year: 2026
 last_updated: 2026-11-14
@@ -169,7 +169,7 @@ Kansas individual taxpayers filing Form K-40, with this skill focused on sole pr
 | Obligation | When | Source |
 | --- | --- | --- |
 | Form K-40, calendar-year filers | The 15th day of the 4th month after year end, so April 15 of the following year (April 15, 2027 for 2026) | [K.S.A. 79-3221(b)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html); [KDOR 2025 booklet](https://www.ksrevenue.gov/incomebook25.html) |
-| Extension | A K-40 filed by the federal due date including any IRS extension is on time; no separate Kansas extension request is needed (tax years after 2019). The extension covers filing only: [K.S.A. 79-3228](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0028.html) penalties are waived when 90% of the liability is paid by the original due date | K.S.A. 79-3221(c)(1), (c)(3) |
+| Extension | A K-40 filed by the federal due date including any IRS extension is on time; no separate Kansas extension request is needed (tax years after 2019). The extension covers filing only: [K.S.A. 79-3228](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0028.html) penalties are waived when 90% of the liability is paid by the original due date | [K.S.A. 79-3221(c)(1), (c)(3)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html) |
 | Estimated tax, Form K-40ES: 1st quarter | April 15 | [K.S.A. 79-32,103](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0103.html); KDOR 2025 booklet |
 | 2nd quarter | June 15 | K.S.A. 79-32,103 |
 | 3rd quarter | September 15 | K.S.A. 79-32,103 |
