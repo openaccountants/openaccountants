@@ -3,16 +3,17 @@ name: bi-cross-border-tax
 description: "Classify cross-border income under Burundi’s domestic rules before calculating tax or applying an asserted treaty benefit. This Guide covers ordinary residence tests, domestic income source, fixed-place and service or construction permanent establishments, the source-withholding categories and capped foreign-tax credit with documentary requirements. It gives the published monthly withholding fields and separates withholding from the recipient’s ultimate business or capital-gain liability. The Morocco ratification and treaty commencement wording are read without assuming an exchange of instruments or a 2026 reduced rate. Complete treaty-by-treaty effectiveness, diplomatic residence details, exchange controls and authenticated filing screens remain unresolved. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: cross-border
-version: 1.1
+version: 1.2
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Burundi: domestic cross-border residence, PE and withholding for 2026 v1.1
+# Burundi: domestic cross-border residence, PE and withholding for 2026 v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

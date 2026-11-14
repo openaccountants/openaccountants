@@ -1,16 +1,17 @@
 ---
 name: belgium-payroll
 description: "Belgian payroll for 2026 from the employer side: employee social security of 13.07% (RSZ / ONSS), the private-sector employer rate of 24.92% (19.88% plus wage moderation for most workers), the social and fiscal work bonus (werkbonus), the structural reduction, the exemption above the quarterly pay ceiling, first-hire reductions, the company car solidarity contribution and the 2026 reference CO2 for the benefit in kind, meal vouchers and eco-cheques, how withholding (bedrijfsvoorheffing) fits in, DmfA and monthly advance dates, and RSZ surcharges, interest and late-filing charges. Trigger on: Belgian payroll, RSZ bijdragen, ONSS cotisations, werkbonus, structurele vermindering, solidariteitsbijdrage bedrijfswagen, employer cost Belgium, DmfA, maaltijdcheques. Out of scope: be-payroll-withholding (the Annex III key formula), be-employee-income-tax, be-social-contributions (self-employed), be-cross-border (posted and frontier workers)."
-version: 1.4
+version: 1.5
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Belgium Payroll (2026)
