@@ -21,6 +21,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 | Payroll | dk-payroll | checked against the law |
 | Transfer pricing | dk-transfer-pricing | checked against the law |
 | Cross-border | dk-cross-border | checked against the law |
+| Annual accounts | dk-annual-reporting-reference (class B annual report: size, audit, filing and late fees) | source-cited draft |
 
 ## Official sources
 
