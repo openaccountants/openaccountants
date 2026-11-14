@@ -21,6 +21,13 @@
   "dir": "skills/antigua-and-barbuda"
  },
  {
+  "code": "AI",
+  "name": "Anguilla",
+  "region": "americas",
+  "owner": "michael",
+  "dir": "skills/anguilla"
+ },
+ {
   "code": "AL",
   "name": "Albania",
   "region": "europe",
