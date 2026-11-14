@@ -27,7 +27,7 @@ Delaware has personal and corporate income taxes, seller gross receipts tax, cor
 | Franchise / entity annual tax | Partial | de-franchise-tax-and-llc | Both corporate methods, reports, LLC/LP/GP and registered series; old 2025 assessment conflict and special capital/status cases unresolved |
 | Gross receipts tax | Partial | de-gross-receipts-tax | Common activities, corrected rates, 2026 lookback, source and exclusions; specialist petroleum/nexus unresolved |
 | Payroll | Partial | us-de-payroll | Withholding, 2026 UI base/rates, operations/training and Paid Leave boundaries; dated replacement withholding method and individual rate-notice differences unresolved |
-| Formation | Existing separate job, not rewritten | de-formation | Entity formation and startup workflow; retained without extending approval or claiming this PR refreshed it |
+| Formation | Checked against the law | de-formation | 2026 certificate, agent, current fee schedule and startup handoffs; recurring taxes and federal computations retain their separate owners |
 
 Each job has one owner. Formation cross-references recurring taxes; it does not create a second recurring-tax owner. Federal calculations remain in the federal skills, including `us-form-1120-c-corp`, `us-schedule-c-and-se-computation` and `us-form-941-940-payroll`.
 
