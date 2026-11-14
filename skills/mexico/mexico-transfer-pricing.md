@@ -1,10 +1,11 @@
 ---
 name: mexico-transfer-pricing
 description: Use this skill whenever asked about Mexico transfer pricing rules, documentation requirements, or precios de transferencia compliance. Trigger on phrases like "transfer pricing Mexico", "Mexican TP documentation", "precios de transferencia Mexico", "master file Mexico", "local file Mexico", "CbCR Mexico", "APA Mexico", "SAT transfer pricing", "maquiladora safe harbor", "Article 76 LISR", or any question about intercompany pricing for Mexican entities.
-version: 1.1
+version: 1.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: situation-rules
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -36,11 +37,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Threshold | Amount | Source |
 | --- | --- | --- |
-| CbCR: prior-year consolidated accounting revenues | Equal to or above MXN 12,000,000,000 (fixed; LIF modification possible only by Congress) | LISR Art. 76-A fr. III item 6 |
-| Master/local informative returns: large-taxpayer classes | Art. 32-H fr. I class: accumulated income equal to or above MXN 1,103,204,520.00 (updated through DOF 28-12-2025) | CFF Art. 32-H; LISR Art. 76-A first paragraph |
-| TP documentation exemption (business) | Prior-year income up to MXN 13,000,000.00 | LISR Art. 76 fr. IX final paragraph |
-| TP documentation exemption (professional services) | Prior-year service income up to MXN 3,000,000.00 | LISR Art. 76 fr. IX final paragraph |
-| Maquiladora safe harbour | Greater of 6.9% of total assets or 6.5% of total costs and expenses | LISR Art. 182 |
+| CbCR: prior-year consolidated accounting revenues | Equal to or above MXN 12,000,000,000 (fixed; LIF modification possible only by Congress) | [LISR Art. 76-A fr. III item 6, DOF 18-11-2015 ("doce mil millones de pesos")](https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015) |
+| Master/local informative returns: large-taxpayer classes | Art. 32-H fr. I class: accumulated income equal to or above MXN 1,103,204,520.00 (updated through DOF 28-12-2025) | [CFF Art. 32-H fr. I amount, RMF 2026 Anexo 5, DOF 28-12-2025 ("$1,103,204,520.00")](https://dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025); LISR Art. 76-A first paragraph |
+| TP documentation exemption (business) | Prior-year income up to MXN 13,000,000.00 | [LISR Art. 76 fr. IX, DOF 11-12-2013 ("no hayan excedido de $13 '000,000.00")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| TP documentation exemption (professional services) | Prior-year service income up to MXN 3,000,000.00 | [LISR Art. 76 fr. IX, DOF 11-12-2013 ("no hubiesen excedido en dicho ejercicio de $3 '000,000.00")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| Maquiladora safe harbour | Greater of 6.9% of total assets or 6.5% of total costs and expenses | [LISR Art. 182 frs. I and II, DOF 11-12-2013 ("El 6.9%", "El 6.5%")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
 
 ## The taxable base
 
@@ -273,6 +274,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| DOF 18-11-2015, LISR reform decree, read for Art. 76-A fr. III item 6 (CbCR trigger of twelve thousand million pesos) | https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015 | 2026-11-14 |
+| DOF 11-12-2013, decree issuing the LISR, second part, read for Art. 76 fr. IX (MXN 13,000,000 and 3,000,000 documentation exemptions) and Art. 182 (6.9% of assets, 6.5% of costs) | https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013 | 2026-11-14 |
+| DOF 28-12-2025, RMF 2026 Anexos 4, 5, 6, 8, 15 and 25, read for Anexo 5 (CFF Art. 32-H fr. I amount MXN 1,103,204,520.00) | https://dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025 | 2026-11-14 |
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 76 frs. IX and X, 76-A, 179, 180, 181, 182 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
 | Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 32-H, 34-A, 65, 76, 81 fr. XL, 82 fr. XXXVII (multa $226,000.00 a $321,770.00, actualizada DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (2025 fine amounts for CFF infractions; item XXXVII: MXN 199,630.00 to MXN 284,220.00 for CFF Art. 81 fr. XL -- superseded for 2026 by the amounts compiled in the consolidated CFF text) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |

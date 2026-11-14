@@ -1,10 +1,11 @@
 ---
 name: mx-estimated-tax
 description: Use this skill whenever asked about Mexican provisional income tax payments (pagos provisionales de ISR) for self-employed individuals and sole proprietors. Trigger on phrases like "pagos provisionales", "ISR provisional", "estimated tax Mexico", "coeficiente de utilidad", "SAT monthly payment", "declaracion provisional", "Mexican advance tax", "RESICO", or any question about monthly provisional income tax obligations under the Ley del ISR. Covers the monthly payment schedule, cumulative computation method, RESICO simplified rates, penalties for late payment, and SAT filing procedures. ALWAYS read this skill before touching any estimated tax work for Mexico.
-version: 2.1
+version: 2.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: computation
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -42,15 +43,17 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the upper limit: Hasta 25,000.00 at 1.00%, Hasta 50,000.00 at 1.10%, Hasta 83,333.33 at 1.50%, Hasta 208,333.33 at 2.00%, Hasta 3,500,000.00 at 2.50%. The lower bounds below are the complement of the previous row.
 
-| Monthly income (MXN) | Rate |
-| --- | --- |
-| Up to 25,000 | 1.00% |
-| 25,000.01 -- 50,000 | 1.10% |
-| 50,000.01 -- 83,333.33 | 1.50% |
-| 83,333.34 -- 208,333.33 | 2.00% |
-| 208,333.34 -- 3,500,000 | 2.50% |
+| Monthly income (MXN) | Rate | Source |
+| --- | --- | --- |
+| Up to 25,000 | 1.00% | [LISR Art. 113-E, DOF 12-11-2021 (monthly table)](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
+| 25,000.01 -- 50,000 | 1.10% | same |
+| 50,000.01 -- 83,333.33 | 1.50% | same |
+| 83,333.34 -- 208,333.33 | 2.00% | same |
+| 208,333.34 -- 3,500,000 | 2.50% | same |
 
-**Conservative defaults**
+## The taxable base
+
+**Conservative defaults** (practice guidance set by this skill, not statutory figures)
 
 | Ambiguity | Default |
 | --- | --- |
@@ -59,8 +62,6 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 | Coefficient of utility uncertain | Verify against most recent annual return |
 | RESICO threshold exceeded | Switch to general regime immediately |
 | CFDI status of expenses | Only deduct with valid CFDI |
-
-## The taxable base
 
 ### 5.1 General regime -- cumulative method
 
@@ -321,6 +322,7 @@ Before delivering output, verify:
 
 | Source | URL | Read on |
 |---|---|---|
+| DOF 12-11-2021, reform decree adding RESICO, read for LISR Art. 113-E (monthly RESICO table, payment by the 17th) | https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021 | 2026-11-14 |
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 14, 96, 106-108, 113-E to 113-J | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
 | Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 17-A, 21, 22, 79 fr. IV, 80 fr. III a, 81 fr. I, 82 fr. I a (multas actualizadas DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs 2025 (C.I) and 2026 (C.II), monthly Art. 96 provisional tariff 2026 (B.V) | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
