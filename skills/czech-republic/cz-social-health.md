@@ -286,37 +286,37 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ČSSZ, Sazby pojistného (29.2%, 2.7%) | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-10-23 |
-| ČSSZ, Změna výše minimálních záloh OSVČ v roce 2026 (CZK 19,587 / 17,139 / 5,387 / 12,242; advances 5,720 / 5,005 / 1,574 / 3,575; new-starter exemption) | https://www.cssz.gov.cz/web/cz/zmena-vyse-minimalnich-zaloh-osvc-v-roce-2024 | 2026-10-23 |
-| ČSSZ, Zálohy na pojistné na důchodové pojištění (55%, cap CZK 2,350,416, maximum advance CZK 57,194, due dates) | https://www.cssz.gov.cz/web/cz/zalohy-na-pojistne-na-duchodove-pojisteni | 2026-10-23 |
-| ČSSZ, Stanovení výše pojistného (55% base, cap rules with employment) | https://www.cssz.gov.cz/web/cz/osvc-duchodove-pojisteni-stanoveni-vyse-pojistneho | 2026-10-23 |
-| ČSSZ, Výše minimálních vyměřovacích základů OSVČ (annual table) | https://www.cssz.gov.cz/web/cz/vyse-minimalnich-vymerovacich-zakladu-osvc | 2026-10-23 |
-| ČSSZ, Maximální vyměřovací základ (CZK 2,350,416) | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-10-23 |
-| ČSSZ, Výpočet pojistného (CZK 9,000 = twice the threshold in 2026) | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-10-23 |
-| ČSSZ, OSVČ v kostce (CZK 117,521 threshold, CZK 9,794 a month, registration by the 15th day) | https://www.cssz.gov.cz/web/cz/osvc-v-kostce | 2026-10-23 |
-| ČSSZ, Přehled o příjmech a výdajích (2025 přehled dates, secondary-activity reasons, corrections) | https://www.cssz.gov.cz/web/cz/prehled-o-prijmech-a-vydajich | 2026-10-23 |
-| ČSSZ, OSVČ v paušálním režimu (band social bases and advances, 10 January) | https://www.cssz.gov.cz/web/cz/osvc-v-pausalnim-rezimu | 2026-10-23 |
-| ČSSZ, Vyslaní pracovníci (A1, 24 months, OSVČ may be posted) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-23 |
-| VZP, Vyměřovací základ a výpočet pojistného (50%, 13.5%, no maximum) | https://www.vzp.cz/platci/informace/osvc/vymerovaci-zaklad-a-vypocet-pojistneho | 2026-10-23 |
-| VZP, Minimální výše záloh (CZK 24,483.50, CZK 3,306) | https://www.vzp.cz/platci/informace/osvc/zalohy-na-pojistne/minimalni-vyse-zaloh | 2026-10-23 |
-| VZP, Platby zdravotního pojištění v roce 2026 | https://www.vzp.cz/o-nas/tiskove-centrum/otazky-tydne/platby-zdravotniho-pojisteni-v-roce-2026 | 2026-10-23 |
-| VZP, Splatnost a další zásady pro platbu pojistného (8th of the next month) | https://www.vzp.cz/platci/informace/osvc/splatnost-a-dalsi-zasady-pro-platbu-pojistneho | 2026-10-23 |
-| VZP, Přehled o výši daňového základu OSVČ a doplatek pojistného (electronic only from 2026, probable premium) | https://www.vzp.cz/platci/informace/osvc/prehled-o-vysi-danoveho-zakladu-osvc-a-doplatek-pojistneho | 2026-10-23 |
-| VZP, Platba pojistného při souběhu činností | https://www.vzp.cz/platci/informace/osvc/platba-pojistneho-pri-soubehu-cinnosti | 2026-10-23 |
-| VZP, Dlužné pojistné, penále, pokuty (0.0322% a day, CZK 10,000 / 50,000) | https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty | 2026-10-23 |
-| Finanční správa, Informace k institutu paušální daně pro rok 2025 a 2026 (2026 band payments, band 1 change, payment by the 20th) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025 | 2026-10-23 |
-| Finanční správa, Paušální daň: obecné informace (entry conditions, band limits) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/obecne-informace | 2026-10-23 |
-| Finanční správa, press release 23 June 2026 (band 1 from CZK 9,984 to CZK 9,162, overpayment CZK 4,932) | https://financnisprava.gov.cz/cs/financni-sprava/media-a-verejnost/tiskove-zpravy-gfr/tiskove-zpravy-2026/poplatnikum-v-prvnim-pasmu-pausalniho-rezimu-snizeni-zalohy | 2026-10-23 |
-| Act No. 589/1992 Coll. (SSPA), consolidated: §§ 5b, 5d, 7, 13a, 14, 14a, 14bb, 14c, 15, 15a, 20, 25c | https://e-sbirka.gov.cz/sb/1992/589 | 2026-10-23 |
-| Act No. 90/2026 Coll. (minimum back to 35%, transitional provisions, refund by 31 December 2026) | https://e-sbirka.gov.cz/sb/2026/90 | 2026-10-23 |
-| Act No. 592/1992 Coll. (HIPA), consolidated: §§ 2, 3a, 7, 8, 18, 24, 26 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-10-23 |
-| Act No. 187/2006 Coll. (SIA), § 11 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-10-23 |
-| Government Regulation No. 351/2013 Coll., § 2 (default interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
-| Act No. 155/1995 Coll. (pension insurance), §§ 9(6) to (9) and 10 (secondary activity, threshold) | https://e-sbirka.gov.cz/sb/1995/155 | 2026-10-23 |
-| Government Regulation No. 365/2025 Coll. (general assessment base 2024 CZK 46,278, coefficient 1.0581) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-10-23 |
-| Government Regulation No. 177/2026 Coll. (general assessment base 2025 CZK 48,900, coefficient 1.0565, for 2027) | https://e-sbirka.gov.cz/sb/2026/177 | 2026-10-23 |
-| VZP, Dlužné pojistné a penále pro OSVČ (daily penalty rates by period) | https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty/dluzne-pojistne-a-penale | 2026-10-23 |
-| Act No. 280/2009 Coll. (Tax Code), §§ 251a(5) and 252 (tax interest, for contrast) | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
-| Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
+| Read for Social insurance rate (28% pension, 1.2% state employment policy), Voluntary sickness insurance rate: ČSSZ, Sazby pojistného (29.2%, 2.7%) | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-11-14 |
+| Read for Minimum monthly social base, main activity, Minimum annual social base, main activity, full year, Minimum monthly social base, main activity, in the start year and the next 2 years, if not self-employed in the previous 20 years, Minimum monthly social advance: ČSSZ, Změna výše minimálních záloh OSVČ v roce 2026 (CZK 19,587 / 17,139 / 5,387 / 12,242; advances 5,720 / 5,005 / 1,574 / 3,575; new-starter exemption) | https://www.cssz.gov.cz/web/cz/zmena-vyse-minimalnich-zaloh-osvc-v-roce-2024 | 2026-11-14 |
+| Read for Minimum monthly social base, secondary activity, Annual maximum social base (48 times the average wage): ČSSZ, Zálohy na pojistné na důchodové pojištění (55%, cap CZK 2,350,416, maximum advance CZK 57,194, due dates) | https://www.cssz.gov.cz/web/cz/zalohy-na-pojistne-na-duchodove-pojisteni | 2026-11-14 |
+| Read for Social base: ČSSZ, Stanovení výše pojistného (55% base, cap rules with employment) | https://www.cssz.gov.cz/web/cz/osvc-duchodove-pojisteni-stanoveni-vyse-pojistneho | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Výše minimálních vyměřovacích základů OSVČ (annual table) | https://www.cssz.gov.cz/web/cz/vyse-minimalnich-vymerovacich-zakladu-osvc | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Maximální vyměřovací základ (CZK 2,350,416) | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-11-14 |
+| Read for Minimum monthly sickness base: ČSSZ, Výpočet pojistného (CZK 9,000 = twice the threshold in 2026) | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-11-14 |
+| Read for Secondary-activity threshold (rozhodná částka): ČSSZ, OSVČ v kostce (CZK 117,521 threshold, CZK 9,794 a month, registration by the 15th day) | https://www.cssz.gov.cz/web/cz/osvc-v-kostce | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Přehled o příjmech a výdajích (2025 přehled dates, secondary-activity reasons, corrections) | https://www.cssz.gov.cz/web/cz/prehled-o-prijmech-a-vydajich | 2026-11-14 |
+| Read for Flat-rate regime, monthly social base: ČSSZ, OSVČ v paušálním režimu (band social bases and advances, 10 January) | https://www.cssz.gov.cz/web/cz/osvc-v-pausalnim-rezimu | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Vyslaní pracovníci (A1, 24 months, OSVČ may be posted) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-11-14 |
+| Read for Health insurance rate, Maximum health base: VZP, Vyměřovací základ a výpočet pojistného (50%, 13.5%, no maximum) | https://www.vzp.cz/platci/informace/osvc/vymerovaci-zaklad-a-vypocet-pojistneho | 2026-11-14 |
+| Read for Minimum monthly health base: VZP, Minimální výše záloh (CZK 24,483.50, CZK 3,306) | https://www.vzp.cz/platci/informace/osvc/zalohy-na-pojistne/minimalni-vyse-zaloh | 2026-11-14 |
+| Read for Minimum monthly health advance: VZP, Platby zdravotního pojištění v roce 2026 | https://www.vzp.cz/o-nas/tiskove-centrum/otazky-tydne/platby-zdravotniho-pojisteni-v-roce-2026 | 2026-11-14 |
+| Read for the points the body cites to it: VZP, Splatnost a další zásady pro platbu pojistného (8th of the next month) | https://www.vzp.cz/platci/informace/osvc/splatnost-a-dalsi-zasady-pro-platbu-pojistneho | 2026-11-14 |
+| Read for the points the body cites to it: VZP, Přehled o výši daňového základu OSVČ a doplatek pojistného (electronic only from 2026, probable premium) | https://www.vzp.cz/platci/informace/osvc/prehled-o-vysi-danoveho-zakladu-osvc-a-doplatek-pojistneho | 2026-11-14 |
+| Read for the points the body cites to it: VZP, Platba pojistného při souběhu činností | https://www.vzp.cz/platci/informace/osvc/platba-pojistneho-pri-soubehu-cinnosti | 2026-11-14 |
+| Read for Late payment penalty (penále), social and health: VZP, Dlužné pojistné, penále, pokuty (0.0322% a day, CZK 10,000 / 50,000) | https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty | 2026-11-14 |
+| Read for Flat-rate tax regime (paušální daň), monthly payment: Finanční správa, Informace k institutu paušální daně pro rok 2025 a 2026 (2026 band payments, band 1 change, payment by the 20th) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025 | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Paušální daň: obecné informace (entry conditions, band limits) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/obecne-informace | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, press release 23 June 2026 (band 1 from CZK 9,984 to CZK 9,162, overpayment CZK 4,932) | https://financnisprava.gov.cz/cs/financni-sprava/media-a-verejnost/tiskove-zpravy-gfr/tiskove-zpravy-2026/poplatnikum-v-prvnim-pasmu-pausalniho-rezimu-snizeni-zalohy | 2026-11-14 |
+| Act No. 589/1992 Coll. (SSPA), consolidated: §§ 5b, 5d, 7, 13a, 14, 14a, 14bb, 14c, 15, 15a, 20, 25c | https://e-sbirka.gov.cz/sb/1992/589 | 2026-11-14 |
+| Read for Minimum monthly social base, main activity: Act No. 90/2026 Coll. (minimum back to 35%, transitional provisions, refund by 31 December 2026) | https://e-sbirka.gov.cz/sb/2026/90 | 2026-11-14 |
+| Act No. 592/1992 Coll. (HIPA), consolidated: §§ 2, 3a, 7, 8, 18, 24, 26 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-11-14 |
+| Act No. 187/2006 Coll. (SIA), § 11 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-11-14 |
+| Government Regulation No. 351/2013 Coll., § 2 (default interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-11-14 |
+| Act No. 155/1995 Coll. (pension insurance), §§ 9(6) to (9) and 10 (secondary activity, threshold) | https://e-sbirka.gov.cz/sb/1995/155 | 2026-11-14 |
+| Read for Average wage for 2026: Government Regulation No. 365/2025 Coll. (general assessment base 2024 CZK 46,278, coefficient 1.0581) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-11-14 |
+| Read for the points the body cites to it: Government Regulation No. 177/2026 Coll. (general assessment base 2025 CZK 48,900, coefficient 1.0565, for 2027) | https://e-sbirka.gov.cz/sb/2026/177 | 2026-11-14 |
+| Read for the points the body cites to it: VZP, Dlužné pojistné a penále pro OSVČ (daily penalty rates by period) | https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty/dluzne-pojistne-a-penale | 2026-11-14 |
+| Act No. 280/2009 Coll. (Tax Code), §§ 251a(5) and 252 (tax interest, for contrast) | https://e-sbirka.gov.cz/sb/2009/280 | 2026-11-14 |
+| Read for Late payment penalty (penále), social and health: Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-11-14 |
 
 Not yet confirmed: the 2026 přehled due dates (3 May, 3 June and 2 August 2027 are computed from the one-month rule; ČSSZ has not yet published them); the 2027 minimum advances (computed from Government Regulation 177/2026 Coll.; ČSSZ and VZP have not yet published them); whether ČSSZ and VZP in practice keep the penalty rate fixed for the whole default as Regulation 351/2013 § 2(1) reads (VZP lists its daily rates by period without saying).

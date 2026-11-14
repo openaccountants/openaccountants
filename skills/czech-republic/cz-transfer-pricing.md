@@ -229,17 +229,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 21(1), 22(1)(g)(3), 23(3)(a)(17), 23(7), 23(11), 23g(1), 25(1)(w), 36(1)(b), 38nc, 38nd, 38r(2) | https://e-sbirka.gov.cz/sb/1992/586 | 2026-10-23 |
-| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 74, 92, 132, 133, 136, 141, 148, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
-| Act No. 634/2004 Coll., Administrative Fees, tariff item 1(1)(n) | https://e-sbirka.gov.cz/sb/2004/634 | 2026-10-23 |
-| Act No. 164/2013 Coll., International Cooperation in Tax Administration, §§ 13zd, 13zl, 13zm, 13zn, 13zp | https://e-sbirka.gov.cz/sb/2013/164 | 2026-10-23 |
-| Government Regulation No. 351/2013 Coll., § 2(1) (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
-| Finanční správa, form 25 5404/E vzor 12, Přehled transakcí se spojenými osobami, with instructions | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf | 2026-10-23 |
-| Finanční správa, Pokyn D-334 (documentation scope), listed as current | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/D-334.pdf | 2026-10-23 |
-| Finanční správa, Pokyn GFŘ D-34 (arm's length principle, methods, range, documentation, adjustments) | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/Pokyn-GFR-D-34.pdf | 2026-10-23 |
-| Finanční správa, Pokyn GFŘ D-32 (binding rulings under §§ 38nc and 38nd) | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/Pokyn_GFR_D_32.pdf | 2026-10-23 |
-| Finanční správa, pokyny a sdělení 2010 (status of D-332, D-333, D-334) | https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-zdanovani-prime-dane/pokyny-sdeleni/2010 | 2026-10-23 |
-| Finanční správa, Převodní ceny, zdaňování nadnárodních společností | https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-zdanovani-prime-dane/prevodni-ceny-zdanovani-nadnarodnich-spolecnosti | 2026-10-23 |
-| Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
+| Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 21(1), 22(1)(g)(3), 23(3)(a)(17), 23(7), 23(11), 23g(1), 25(1)(w), 36(1)(b), 38nc, 38nd, 38r(2) | https://e-sbirka.gov.cz/sb/1992/586 | 2026-11-14 |
+| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 74, 92, 132, 133, 136, 141, 148, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-11-14 |
+| Read for Fee for a binding ruling (APA) application: Act No. 634/2004 Coll., Administrative Fees, tariff item 1(1)(n) | https://e-sbirka.gov.cz/sb/2004/634 | 2026-11-14 |
+| Act No. 164/2013 Coll., International Cooperation in Tax Administration, §§ 13zd, 13zl, 13zm, 13zn, 13zp | https://e-sbirka.gov.cz/sb/2013/164 | 2026-11-14 |
+| Government Regulation No. 351/2013 Coll., § 2(1) (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-11-14 |
+| Read for Annex size test: total assets, Annex size test: annual net turnover, Annex size test: average employees, Annex figures: Finanční správa, form 25 5404/E vzor 12, Přehled transakcí se spojenými osobami, with instructions | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Pokyn D-334 (documentation scope), listed as current | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/D-334.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Pokyn GFŘ D-34 (arm's length principle, methods, range, documentation, adjustments) | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/Pokyn-GFR-D-34.pdf | 2026-11-14 |
+| Finanční správa, Pokyn GFŘ D-32 (binding rulings under §§ 38nc and 38nd) | https://financnisprava.gov.cz/assets/cs/prilohy/d-zakony/Pokyn_GFR_D_32.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, pokyny a sdělení 2010 (status of D-332, D-333, D-334) | https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-zdanovani-prime-dane/pokyny-sdeleni/2010 | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Převodní ceny, zdaňování nadnárodních společností | https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-zdanovani-prime-dane/prevodni-ceny-zdanovani-nadnarodnich-spolecnosti | 2026-11-14 |
+| Read for Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points: Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-11-14 |
 
 Not yet confirmed: the form version of the annex for tax periods starting in 2026 (vzor 12 covers periods starting in 2025 and parts of 2026 periods whose filing deadline falls by 31 December 2026; a later vzor had not been found); whether Pokyn GFŘ D-35, announced in D-34 to replace D-334, has been issued (it was not found on the Financial Administration pages read, and D-334 is listed as current); the Czech act that transposes EU directive 2017/1852 and its procedure; the day-count basis the Financial Administration uses to compute late payment interest; whether Article 9(2) appears in each Czech treaty; and the point in the range (median or nearest edge) to which the tax office adjusts a price that falls outside the arm's length range, which the guidance read does not state.

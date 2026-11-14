@@ -242,15 +242,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026: §§ 4a, 6, 6c, 6f to 6l, 47, 64, 71i, 72, 73, 92a to 92f, 94, 94a, 96, 99, 99a, 101, 101a, 101c to 101k, 102, 106a, 108, 109, 109a; Annexes 2, 3, 5, 6 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
-| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 135, 136, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
-| Act No. 349/2023 Coll., public budget consolidation, Part on the VAT Act, point 5 (§ 47(1)(b): reduced rate 12% from 2024) | https://e-sbirka.gov.cz/sb/2023/349 | 2026-10-23 |
-| Government Regulation No. 361/2014 Coll., temporary domestic reverse charge | https://e-sbirka.gov.cz/sb/2014/361 | 2026-10-23 |
-| Government Regulation No. 351/2013 Coll., § 2 (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
-| Finanční správa, Změny v plátcovství a registračním řízení DPH od 1. 1. 2025 (information note 11977/25) | https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/11977_25_Informace_ke_zmenam_v_platcovstv2025.pdf | 2026-10-23 |
-| Finanční správa, VAT return form 25 5401, specimen no. 26 (English) | https://financnisprava.gov.cz/assets/tiskopisy/5401-A_26.pdf | 2026-10-23 |
-| Finanční správa, Control Statement Guidelines, valid from 1 January 2024 | https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/Control_Statement_Guidelines_20240101.pdf | 2026-10-23 |
-| Finanční správa, Kontrolní hlášení DPH | https://financnisprava.gov.cz/cs/dane/dane/dan-z-pridane-hodnoty/kontrolni-hlaseni-dph | 2026-10-23 |
+| Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026: §§ 4a, 6, 6c, 6f to 6l, 47, 64, 71i, 72, 73, 92a to 92f, 94, 94a, 96, 99, 99a, 101, 101a, 101c to 101k, 102, 106a, 108, 109, 109a; Annexes 2, 3, 5, 6 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-11-14 |
+| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 135, 136, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-11-14 |
+| Act No. 349/2023 Coll., public budget consolidation, Part on the VAT Act, point 5 (§ 47(1)(b): reduced rate 12% from 2024) | https://e-sbirka.gov.cz/sb/2023/349 | 2026-11-14 |
+| Read for Selected goods under temporary domestic reverse charge: Government Regulation No. 361/2014 Coll., temporary domestic reverse charge | https://e-sbirka.gov.cz/sb/2014/361 | 2026-11-14 |
+| Government Regulation No. 351/2013 Coll., § 2 (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Změny v plátcovství a registračním řízení DPH od 1. 1. 2025 (information note 11977/25) | https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/11977_25_Informace_ke_zmenam_v_platcovstv2025.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, VAT return form 25 5401, specimen no. 26 (English) | https://financnisprava.gov.cz/assets/tiskopisy/5401-A_26.pdf | 2026-11-14 |
+| Read for Control statement detail split: Finanční správa, Control Statement Guidelines, valid from 1 January 2024 | https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/Control_Statement_Guidelines_20240101.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Kontrolní hlášení DPH | https://financnisprava.gov.cz/cs/dane/dane/dan-z-pridane-hodnoty/kontrolni-hlaseni-dph | 2026-11-14 |
 | Finanční správa, Registr DPH (unreliable payers and published accounts) | https://adisspr.mfcr.cz/dpr/DphReg | 2026-10-23 |
 
 Not yet confirmed:
