@@ -1,21 +1,22 @@
 ---
 name: mt-non-dom
 description: "Use this skill for any Malta-resident individual who is not domiciled in Malta. Trigger on: \"Malta non-dom\", \"non-domiciled Malta\", \"remittance basis Malta\", \"move to Malta taxes\", \"Malta ordinary resident\", \"foreign income Malta\", \"Malta minimum tax\", \"remit to Malta\", \"Malta global residence\", \"Malta non-dom status\", or any question about whether foreign income is taxed in Malta. Covers non-dom eligibility, remittance basis mechanics, minimum tax obligation, foreign capital gains treatment, and comparison with full resident taxation. ALWAYS load this skill before advising a non-Maltese-domiciled resident on their Malta tax position."
-version: 1.2
+version: 2.0
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 depends_on:
   - malta-income-tax
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Malta non-dom tax: residence, domicile, the remittance basis and the minimum tax
 
-## Scope ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+## Scope and who this is for
 
 This skill covers individuals who live in Malta but are **not domiciled** in Malta, or are **not ordinarily resident** here. It explains when foreign income and foreign capital gains are taxed, the €5,000 minimum tax for non-doms, who cannot use the remittance basis, how to evidence what was brought into Malta, the special residence programmes, double tax relief and the filing duties.
 
@@ -23,8 +24,6 @@ This skill covers individuals who live in Malta but are **not domiciled** in Mal
 - **Basis year 2025 = year of assessment 2026.** See the dated section "2025 income (year of assessment 2026)" for returns being filed now.
 
 The status tests (residence, domicile, ordinary residence, the minimum tax) are applied to the basis year: article 56(27) looks at the individual "during any year preceding the year of assessment".
-
-**Source scope.** The law and the specific official pages identified in Sources were read on 4 November 2026 for this correction. Historical source-access failures are preserved in the evidence archive, not used as a present unavailability claim. Only the listed changed claims were rechecked; remaining specialist or form-layout gaps are explicitly held.
 
 **Not covered here:** the resident rate tables and deductions (see the Malta income tax Guide), non-resident computations, Maltese property and share disposals (see the Malta capital gains Guide), companies and trusts, and the detail of the residence programmes beyond their tax rate and minimum tax.
 
@@ -60,11 +59,26 @@ All steps apply the [Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d
 
 Order matters. Check the exclusions (step 4) before anything else: a non-dom whose spouse is domiciled and ordinarily resident in Malta, or who has long-term resident status, is taxed on everything, and every later step changes.
 
-## Residence, domicile and ordinary residence ([Income Tax Act, Cap. 123, art. 2](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### Rates, bands and thresholds
+
+| Item | Figure and conditions | Tax year | Source |
+|---|---|---|---|
+| Remittance basis, Cap. 123 art. 4(1) proviso (i) | foreign income of a person not ordinarily resident or not domiciled in Malta taxed only on "the amount received in Malta" | Current | https://legislation.mt/eli/cap/123/eng/pdf |
+| Foreign capital gains, art. 4(1) proviso (ii) | not taxed for such a person, received in Malta or not | Current | same |
+| Non-dom minimum tax, art. 56(27) | EUR 5,000 a year, tax before relief under arts. 76 to 89; tax paid under the Act counts; art. 5A tax does not | YA 2019 onwards, unchanged for YA 2027 | same |
+| Minimum tax trigger, art. 56(27)(ii) | at least EUR 35,000 of foreign income "not received or not fully received in Malta"; joint couple: both spouses | same | same |
+| Single table, 2026 income, art. 56(1) | 0% to EUR 12,000; 15% minus EUR 1,800 to EUR 16,000; 25% minus EUR 3,400 to EUR 60,000; 35% minus EUR 9,400 above | YA 2027 | https://legislation.mt/eli/cap/123/eng/pdf |
+| Married joint table (no qualifying child), 2026 income, art. 56(1) | 0% to EUR 15,000; 15% minus EUR 2,250 to EUR 23,000; 25% minus EUR 4,550 to EUR 60,000; 35% minus EUR 10,550 above | YA 2027 | same |
+| Residence practice | more than 183 days in a year; ordinary residence possible after about three consecutive years | MTCA practice | https://mtca.gov.mt/personal-tax/individual/tax-residence |
+| GRP and Residence Programme, rule 5(1) | 15% on remitted foreign income, minimum EUR 15,000 | Current | https://legislation.mt/eli/sl/123.148/eng/pdf |
+| Nomad Residence Permit, rule 3(1) | 10% on authorised-work income after the first 12 months | Current | https://legislation.mt/eli/sl/123.210/eng/pdf |
+| Interest on late tax, Cap. 372 art. 44 | 0.6% per month or part, tax payable on or after 31 Aug 2022 | Current | https://legislation.mt/eli/cap/372/eng/pdf |
+
+### Residence, domicile and ordinary residence
 
 - **Resident.** The Act's only definition: "an individual who resides in Malta except for such temporary absences as to the Commissioner may seem reasonable and not inconsistent with the claim of such individual to be resident in Malta". There is no statutory day count and no split-year rule. MTCA's Tax Residence page (updated 29 August 2025) says a person present in Malta for more than 183 days in a year is resident for that year; that is MTCA practice, not the Act. Arrival and departure years are decided on the facts; refer them.
 - **Domicile.** Not defined in the Act. It is a general-law concept, not a tax test. In broad terms, a person keeps the domicile they had at birth (usually their father's) until they settle in another country intending to stay there permanently. Most people who move to Malta keep their foreign domicile unless they take clear steps to make Malta their permanent home. This is background only; a disputed domicile must be referred.
-- **Ordinary residence.** Not defined in the Act either. In ordinary usage it means Malta is the person's settled, habitual home, year after year, rather than a temporary stay. A newly arrived person may be resident but not yet ordinarily resident. The Act gives no number of years; refer borderline cases.
+- **Ordinary residence.** Not defined in the Act either. MTCA's guidance (section 2.3, read 14 November 2026): a person living in Malta on a permanent or indefinite basis is ordinarily resident; a person here for a temporary purpose may become so, for example after more than 183 days a year for "say, three consecutive years", or regular visits over about three years with personal and economic ties. In ordinary usage it means Malta is the person's settled, habitual home, year after year, rather than a temporary stay. A newly arrived person may be resident but not yet ordinarily resident. The Act gives no number of years; refer borderline cases.
 
 Why the labels matter:
 
@@ -76,7 +90,7 @@ Why the labels matter:
 | Not domiciled, but a long-term resident or permanent-residence holder | Taxed as it arises, from the year the status was granted | Taxed where chargeable | No: the provisos do not apply |
 | Not domiciled, spouse ordinarily resident and domiciled in Malta | Taxed as it arises | Taxed where chargeable | No: the provisos do not apply |
 
-## The remittance basis ([Income Tax Act, Cap. 123, art. 4(1)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### The remittance basis
 
 Article 4(1) charges income "accruing in or derived from Malta or elsewhere, and whether received in Malta or not". Two provisos cut this back:
 
@@ -105,7 +119,7 @@ Malta does charge tax on capital gains from securities: article 5(1)(a)(ii) cove
 
 There is **no election** for the remittance basis. The provisos apply by law when the conditions are met. The return must still show the facts; how domicile and remitted income are declared on the return is a matter to check on mtca.gov.mt.
 
-## The €5,000 minimum tax for non-doms ([Income Tax Act, Cap. 123, art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### The €5,000 minimum tax for non-doms
 
 Article 56(27) has applied since year of assessment 2019 (with an amendment from year of assessment 2020). It is unchanged for basis years 2025 and 2026.
 
@@ -126,11 +140,11 @@ Article 56(27) has applied since year of assessment 2019 (with an amendment from
 - Tax paid under the Act "whether by withholding or otherwise", on Malta or foreign income, counts towards the minimum. FSS tax on a Malta salary counts.
 - **Cap.** If the person proves to the Commissioner that, taxed on a worldwide basis without provisos (i) and (ii), their total tax would be less than €5,000, the liability "shall be capped accordingly at the said lower amount". This needs a full worldwide computation, with evidence.
 
-**Authority guidance on the threshold.** MTCA remittance-basis guidance section 6.3 describes foreign income below €35,000 as outside the minimum and uses the couple's total foreign income. Do not test only the unremitted balance. The statutory conditions, exclusions and the requirement that foreign income is not fully received still apply. [Official guidance](https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf), read 4 November 2026.
+**Authority guidance on the threshold.** MTCA remittance-basis guidance section 6.3 describes foreign income below €35,000 as outside the minimum and uses the couple's total foreign income. Do not test only the unremitted balance. The statutory conditions, exclusions and the requirement that foreign income is not fully received still apply. Section 6.4 adds that the individual "may opt to be taxed on a worldwide basis, instead of the remittance basis, if his tax liability on a worldwide basis is less than the minimum tax", which is the Act's cap in other words. [Official guidance](https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf), read 14 November 2026.
 
 **Married couples.** With joint taxation under article 49, both spouses' foreign income is counted and the test runs once, on the joint computation. Where the couple has opted for separate computation or separate assessment, how the €35,000 and €5,000 apply is not spelled out; check on mtca.gov.mt and refer.
 
-## Remittances: what counts and how to prove it ([Income Tax Act, Cap. 123, art. 4(1)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### Remittances: what counts and how to prove it
 
 **What counts as "received in Malta".** The Act taxes "the amount received in Malta" but does not define it for article 4. (The only definition, in article 56(2)(d), is limited to that sub-article and does not apply here.) On a plain reading:
 
@@ -152,11 +166,11 @@ Borderline cases are not settled by the Act: spending in Malta on a foreign card
 6. Keep a yearly schedule: foreign income by type, the amount received in Malta, capital and gains transferred, and foreign tax paid. The same schedule drives the €35,000 test.
 7. Keep the evidence at least as long as the Commissioner can raise an assessment; check the time limit in the Income Tax Management Act or on mtca.gov.mt.
 
-## Special residence programmes ([Income Tax Act, Cap. 123, art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### Special residence programmes
 
 These programmes replace the normal rates and the €5,000 minimum tax with their own flat rate and their own minimum. Only the tax rate and minimum tax are given here, as the rules on legislation.mt state them. Eligibility, property and fee conditions, whether applications are still open, and the application process must be checked with the Commissioner (mtca.gov.mt) or Residency Malta Agency. Refer every programme case.
 
-### Global Residence Programme ([S.L. 123.148](https://legislation.mt/getpdf/6022599cbc8272018c0f9636))
+#### Global Residence Programme
 
 - **Who:** a "third country national" who is not Maltese, EEA or Swiss, is not a long-term resident, and meets the rule 4 conditions (a qualifying owned or rented property as primary residence, stable resources, sickness insurance, a valid travel document, language and "fit and proper" tests). Applications go through an authorised registered mandatary.
 - **Rate:** 15% ("fifteen cents (0.15) on every euro") on income arising outside Malta and received in Malta, for the beneficiary, the spouse and the minor or dependent disabled children, with double tax relief under article 74(a) and (b) available (rule 5(1)).
@@ -165,7 +179,7 @@ These programmes replace the normal rates and the €5,000 minimum tax with thei
 - **When the minimum is paid:** by 30 April of the year immediately preceding the year of assessment, which is 30 April of the basis year itself (for year of assessment 2027, 30 April 2026), with a return proving the rule 4 conditions still hold. Tax paid under rule 5(1) is not refundable.
 - **Status ends** (rule 6) if the person becomes Maltese, EEA or Swiss, stops holding the qualifying property (including by letting it), becomes a long-term resident, loses sickness insurance, or "stays in any other jurisdiction for more than one hundred and eighty-three days in a calendar year". The person must notify the Commissioner within four weeks of becoming aware; the penalty for not doing so is €5,000.
 
-### Residence Programme, for EU, EEA and Swiss nationals ([S.L. 123.160](https://legislation.mt/getpdf/60225973bc8272018c0f5156))
+#### Residence Programme, for EU, EEA and Swiss nationals
 
 - **Who:** an "EU, EEA or Swiss national but ... not a Maltese national", not a permanent resident of Malta, meeting the rule 4 conditions (qualifying property, resources, insurance, travel document, language, fit and proper).
 - **Rate:** 15% on income arising outside Malta and received in Malta, for the beneficiary, spouse and qualifying children, with double tax relief available (rule 5(1)).
@@ -173,7 +187,7 @@ These programmes replace the normal rates and the €5,000 minimum tax with thei
 - **Other income:** 35% as separate income (rule 5(2)).
 - **Status ends** on the same kind of events, including becoming a permanent resident and staying elsewhere for more than 183 days in a calendar year (rule 6).
 
-### Nomad Residence Permit ([S.L. 123.210](https://legislation.mt/getpdf/65815fd48a3ed618b0827fe2))
+#### Nomad Residence Permit
 
 The rules state a **10%** rate, not 15%.
 
@@ -185,7 +199,7 @@ The rules state a **10%** rate, not 15%.
 - **Foreign tax of at least 10%:** if the holder proves to Residency Malta Agency that tax of at least 10% was paid abroad on the authorised-work income, that income need not be reported in Malta (rule 4(3)).
 - The rules do not say how the €5,000 minimum tax interacts with a nomad permit. Refer.
 
-## Double tax relief ([Income Tax Act, Cap. 123, arts. 74-81](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+### Double tax relief
 
 Relief matters only for foreign income that is taxed in Malta, which for a non-dom means foreign income received in Malta (or deemed received under the minimum tax).
 
@@ -195,9 +209,9 @@ Relief matters only for foreign income that is taxed in Malta, which for a non-d
 - **Gross-up for the remittance basis** (article 77(5)(b)): "where the income tax chargeable depends on the amount received in Malta the said amount shall be increased by the appropriate amount of the foreign tax". Tax is computed on the grossed-up amount, and the foreign tax is then credited.
 - **Unilateral relief** (articles 80-81): available for foreign income that suffered "tax of a similar character" abroad, again only if the person is resident in Malta for the basis year.
 - **Time limit** (article 77(9)): a treaty credit claim must be made "not later than two years after the end of the year of assessment". For basis year 2026, that is by 31 December 2029.
-- **Minimum tax:** article 56(27) compares with €5,000 the tax liability "before taking into account any relief granted in terms of articles 76 to 89 of the Act". Double tax relief therefore does not reduce the tax being compared, and does not create or enlarge a top-up. The Act does not say that relief is then set against the €5,000. MTCA remittance-basis guidance section 6.2 was recorded on 4 November 2026 as saying the minimum is reduced by relief due on remitted income taxed abroad. Not confirmed: the guidance could not be opened on 8 November 2026, and the Act's words do not say it. Do not rely on it; refer any claim that relief takes the tax below €5,000, and never claim a credit on unremitted income.
+- **Minimum tax:** article 56(27) compares with €5,000 the tax liability "before taking into account any relief granted in terms of articles 76 to 89 of the Act". Double tax relief therefore does not reduce the tax being compared, and does not create or enlarge a top-up. The Act does not say that relief is then set against the €5,000. MTCA remittance-basis guidance section 6.2 (read 14 November 2026) says the minimum "is reduced by any double taxation relief due to the individual" and that relief "can only be claimed on income that is actually remitted to Malta on which tax has been paid abroad". The Act's words do not say the first part. Follow the Act until MTCA or a court settles it; refer any claim that relief takes the tax below €5,000, and never claim a credit on unremitted income.
 
-## Boundary and exception table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+## Boundary and exception table
 
 | Situation | Result | Rule |
 | --- | --- | --- |
@@ -216,7 +230,10 @@ Relief matters only for foreign income that is taxed in Malta, which for a non-d
 | Tax before double tax relief below €5,000, worldwide tax would be lower still | Liability capped at the worldwide figure, if proven | art. 56(27) second proviso |
 | Art. 5A final tax on a Maltese property sale | Does not count towards the €5,000 | art. 56(27) first proviso |
 
-## Worked cases, basis year 2026 ([Act III of 2026 rate tables](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
+## Worked cases
+
+Basis year 2026. Rate source: [Act III of 2026 rate tables](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430), consolidated in [Cap. 123 art. 56(1)](https://legislation.mt/eli/cap/123/eng/pdf).
+
 
 The rates used are the year of assessment 2027 tables from Act III of 2026: single, 25% band over €16,000 and under €60,000, subtract €3,400; 35% over €60,000, subtract €9,400. Married joint with no qualifying child, 25% band over €23,000 and under €60,000, subtract €4,550. The full tables are in the Malta income tax Guide. These are examples; check every fact before relying on them.
 
@@ -252,66 +269,7 @@ The rates used are the year of assessment 2027 tables from Act III of 2026: sing
 - Facts: arrived in Malta in March 2026 on a two-year secondment, foreign domicile, foreign investment income €80,000, of which €5,000 transferred.
 - If the facts support "not ordinarily resident", the €5,000 received is taxed and the minimum tax does not apply, because it needs ordinary residence. If ordinary residence is arguable, refer; the difference is the minimum tax.
 
-## When to refuse or refer
-
-Articles cited below are in the [Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c).
-
-- Refuse to give a final figure without the basis year, marital status and spouse's domicile and ordinary residence, long-term resident or permanent residence status, and the split of foreign income into received and not received.
-- Refer any disputed domicile, any "ordinarily resident or not" question, and arrival and departure years.
-- Refer mixed accounts where a transfer cannot be traced to capital, and every borderline remittance (card spending, debts, assets brought in, loans).
-- Refer the worldwide cap claim under article 56(27); it needs a full worldwide computation and proof.
-- Refer separate computation or separate assessment for married non-doms under the minimum tax.
-- Refer all Global Residence Programme, Residence Programme and Nomad Residence Permit cases beyond the rate and minimum shown here, and any other special scheme: the Highly Skilled Individuals Rules ([L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng/pdf)), which replaced the Highly Qualified Persons Rules from 1 January 2026 (under the old rules no determination is issued for applications made after 31 December 2025, and no benefit runs after year of assessment 2030, rule 12(2)), the retirement programme and returned migrants.
-- Refer treaty claims, the flat-rate foreign tax credit, and any claim that double tax relief takes the tax below €5,000; the Act compares tax before that relief ([ITA art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
-- Refer gains on Maltese property or Maltese company shares, trusts, and foreign companies you control.
-- Refer anything that turns on an MTCA form, notice or online-filing extension you cannot see.
-
-## Filing and payment ([Income Tax (Statutory Dates) Rules, S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2))
-
-
-**Year-specific override, read 4 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
-
-| Item | Date or rule | Source |
-| --- | --- | --- |
-| Return and self-assessment, basis year 2026 | 30 June 2027 ("the thirtieth of June of the relative year of assessment") | S.L. 372.16 rule 2(c)(ii); ITMA art. 10 |
-| Balance of tax (tax settlement date) | Same date as the return | S.L. 372.16 rule 5(b) |
-| No notice received | A person chargeable to tax who has not received a notice to file is treated as if served with one, so the duty to file still applies | S.L. 372.16 rule 3 |
-| Minimum tax top-up | Part of the self-assessment; due with the balance of tax | art. 56(27); S.L. 372.16 rule 5(b) |
-| GRP and Residence Programme minimum tax | 30 April of the basis year (30 April 2026 for year of assessment 2027), with a return proving the conditions | S.L. 123.148 and S.L. 123.160 rule 5(3) |
-| Nomad Residence Permit | Register for income tax; file a return unless rule 4(2)(c) excuses it | S.L. 123.210 rule 4 |
-| Double tax relief claim | Within two years after the end of the year of assessment | ITA art. 77(9) |
-| Provisional tax | Payable in the basis year where there is a benchmark; see the Malta income tax Guide | ITMA; S.L. 372.18 |
-| Online filing, forms and any extension | Check on mtca.gov.mt | - |
-
-### Interest and penalties ([Income Tax Management Act, Cap. 372](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b))
-
-- **Interest on late tax:** 0.6% for each month or part of a month, where the tax became payable on or after 31 August 2022, capped at the tax (ITMA art. 44).
-- **Late return (individuals):** additional tax on a fixed scale, from €10 if filed within 6 months of the due date up to €500 if more than 60 months late (Income Tax Act, Schedule; see the Malta income tax Guide for the full scale).
-- **GRP and Residence Programme:** failing to notify the Commissioner within four weeks that status has ended costs €5,000 (rule 6(2)).
-
-## 2025 income (year of assessment 2026) ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
-
-- The general statutory date was 30 June 2026, but MTCA extended both manual/electronic individual filing and the related payment to **31 July 2026**. Apply actual dates when determining late charges; the general date is not the operative 2026 deadline.
-- The remittance basis, the exclusions and the €35,000 / €5,000 minimum tax rules were the same for basis year 2025.
-- The rate tables differ: 2025 income uses the Act IX of 2025 tables (single, married and parent only). See the Malta income tax Guide.
-- GRP and Residence Programme minimum tax for year of assessment 2026 was due by 30 April 2025.
-
-## Completion checklist ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
-
-- The basis year and year of assessment are stated.
-- Residence, domicile and ordinary residence are recorded, with the facts behind each.
-- The exclusions are checked: long-term resident or permanent residence (and the year granted), and the spouse's domicile and ordinary residence.
-- Any special scheme is identified; if there is one, its own rate and minimum apply and the €5,000 minimum does not.
-- Foreign income is listed by type, split into received and not received in Malta, with the evidence for each transfer.
-- Foreign capital gains are listed and excluded; Malta-situated gains are sent to the capital gains Guide.
-- Tax is computed on Malta income plus foreign income received, at the right table for the year.
-- The €35,000 test is run (joint income for a jointly taxed couple), the tax before double tax relief is compared with €5,000, article 5A tax is excluded, and any top-up is computed.
-- If the worldwide cap is claimed, the worldwide computation and proof are on file.
-- Double tax relief is claimed only on foreign income taxed in Malta, grossed up, and within the time limit.
-- The return date (30 June), payment and any late interest are checked. Online-filing details are confirmed on mtca.gov.mt.
-- The output is labelled as an estimate until reviewed.
-
-## Executable worked checks
+### Executable worked checks
 
 The assumptions exclude legal-status/spouse exceptions and special programmes; there is no foreign-tax credit in either case.
 
@@ -346,30 +304,80 @@ expected:
   liability_if_cap_proved: 4200
 ```
 
+## When to refuse or refer
+
+Articles cited below are in the [Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c).
+
+- Refuse to give a final figure without the basis year, marital status and spouse's domicile and ordinary residence, long-term resident or permanent residence status, and the split of foreign income into received and not received.
+- Refer any disputed domicile, any "ordinarily resident or not" question, and arrival and departure years.
+- Refer mixed accounts where a transfer cannot be traced to capital, and every borderline remittance (card spending, debts, assets brought in, loans).
+- Refer the worldwide cap claim under article 56(27); it needs a full worldwide computation and proof.
+- Refer separate computation or separate assessment for married non-doms under the minimum tax.
+- Refer all Global Residence Programme, Residence Programme and Nomad Residence Permit cases beyond the rate and minimum shown here, and any other special scheme: the Highly Skilled Individuals Rules ([L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng/pdf)), which replaced the Highly Qualified Persons Rules from 1 January 2026 (under the old rules no determination is issued for applications made after 31 December 2025, and no benefit runs after year of assessment 2030, rule 12(2)), the retirement programme and returned migrants.
+- Refer treaty claims, the flat-rate foreign tax credit, and any claim that double tax relief takes the tax below €5,000; the Act compares tax before that relief ([ITA art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
+- Refer gains on Maltese property or Maltese company shares, trusts, and foreign companies you control.
+- Refer anything that turns on an MTCA form, notice or online-filing extension you cannot see.
+
+## Filing and payment
+
+
+**Year-specific override, read 14 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
+
+| Item | Date or rule | Source |
+| --- | --- | --- |
+| Return and self-assessment, basis year 2026 | 30 June 2027 ("the thirtieth of June of the relative year of assessment") | S.L. 372.16 rule 2(c)(ii); ITMA art. 10 |
+| Balance of tax (tax settlement date) | Same date as the return | S.L. 372.16 rule 5(b) |
+| No notice received | A person chargeable to tax who has not received a notice to file is treated as if served with one, so the duty to file still applies | S.L. 372.16 rule 3 |
+| Minimum tax top-up | Part of the self-assessment; due with the balance of tax | art. 56(27); S.L. 372.16 rule 5(b) |
+| GRP and Residence Programme minimum tax | 30 April of the basis year (30 April 2026 for year of assessment 2027), with a return proving the conditions | S.L. 123.148 and S.L. 123.160 rule 5(3) |
+| Nomad Residence Permit | Register for income tax; file a return unless rule 4(2)(c) excuses it | S.L. 123.210 rule 4 |
+| Double tax relief claim | Within two years after the end of the year of assessment | ITA art. 77(9) |
+| Provisional tax | Payable in the basis year where there is a benchmark; see the Malta income tax Guide | ITMA; S.L. 372.18 |
+| Online filing, forms and any extension | Check on mtca.gov.mt | - |
+
+### Interest and penalties
+
+- **Interest on late tax:** 0.6% for each month or part of a month, where the tax became payable on or after 31 August 2022, capped at the tax (ITMA art. 44).
+- **Late return (individuals):** additional tax on a fixed scale, from €10 if filed within 6 months of the due date up to €500 if more than 60 months late (Income Tax Act, Schedule; see the Malta income tax Guide for the full scale).
+- **GRP and Residence Programme:** failing to notify the Commissioner within four weeks that status has ended costs €5,000 (rule 6(2)).
+
+### 2025 income (year of assessment 2026)
+
+- The general statutory date was 30 June 2026, but MTCA extended both manual/electronic individual filing and the related payment to **31 July 2026**. Apply actual dates when determining late charges; the general date is not the operative 2026 deadline.
+- The remittance basis, the exclusions and the €35,000 / €5,000 minimum tax rules were the same for basis year 2025.
+- The rate tables differ: 2025 income uses the Act IX of 2025 tables (single, married and parent only). See the Malta income tax Guide.
+- GRP and Residence Programme minimum tax for year of assessment 2026 was due by 30 April 2025.
+
+## Completion checklist
+
+- The basis year and year of assessment are stated.
+- Residence, domicile and ordinary residence are recorded, with the facts behind each.
+- The exclusions are checked: long-term resident or permanent residence (and the year granted), and the spouse's domicile and ordinary residence.
+- Any special scheme is identified; if there is one, its own rate and minimum apply and the €5,000 minimum does not.
+- Foreign income is listed by type, split into received and not received in Malta, with the evidence for each transfer.
+- Foreign capital gains are listed and excluded; Malta-situated gains are sent to the capital gains Guide.
+- Tax is computed on Malta income plus foreign income received, at the right table for the year.
+- The €35,000 test is run (joint income for a jointly taxed couple), the tax before double tax relief is compared with €5,000, article 5A tax is excluded, and any top-up is computed.
+- If the worldwide cap is claimed, the worldwide computation and proof are on file.
+- Double tax relief is claimed only on foreign income taxed in Malta, grossed up, and within the time limit.
+- The return date (30 June), payment and any late interest are checked. Online-filing details are confirmed on mtca.gov.mt.
+- The output is labelled as an estimate until reviewed.
+
 ## Sources
 
-Earlier section citations and research are preserved in the full evidence archive; the dated rows below identify this correction's actual reads.
-
-
-### Correction source reads, 4 November 2026
-
-Only the identified passages were read for this delta; historical source rows keep their prior dates and are not a blanket re-verification.
-
-| Source and passage actually read | URL | Read on |
+| Source | URL | Read on |
 |---|---|---|
-| MTCAremittanceguidance sections1,2,5,6 read | https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf | 2026-11-04 |
-| MTCA2026nomadguidance reporting exceptions and deadlines read | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/nomad-guidelines---12-03-2026.pdf?sfvrsn=f0cc9971_6 | 2026-11-04 |
-| Cap123article4/56minimum and joint/single tables read | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
-| MTCAactualYA2026deadline read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
+| Income Tax Act, Cap. 123: read for art. 2 (resident), art. 4(1) provisos and exclusions, arts. 74 to 77 (relief, gross-up, two-year claim), art. 56(1) YA 2027 single and married tables, art. 56(27) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-14 |
+| Act III of 2026: rate tables applicable from YA 2027 (same text as consolidated in Cap. 123), read for the single and married tables | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-14 |
+| Income Tax Management Act, Cap. 372: read for art. 44 interest (0.6%) and art. 10 returns | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-14 |
+| Income Tax (Statutory Dates) Rules, S.L. 372.16: read for rules 2, 3 and 5 (30 June return and payment) | https://legislation.mt/eli/sl/372.16/eng/pdf | 2026-11-14 |
+| Global Residence Programme Rules, S.L. 123.148: read for rules 4, 5 and 6 | https://legislation.mt/eli/sl/123.148/eng/pdf | 2026-11-14 |
+| Residence Programme Rules, S.L. 123.160: read for rules 4, 5 and 6 | https://legislation.mt/eli/sl/123.160/eng/pdf | 2026-11-14 |
+| Nomad Residence Permits (Income Tax) Rules, S.L. 123.210: read for rules 3 and 4 | https://legislation.mt/eli/sl/123.210/eng/pdf | 2026-11-14 |
+| L.N. 20 of 2026, Highly Skilled Individuals Rules: read for rules 1 and 12 | https://legislation.mt/eli/ln/2026/20/eng/pdf | 2026-11-14 |
+| MTCA, Tax Residence page: read for the 183-day practice, residence from arrival, ordinary residence over about three years | https://mtca.gov.mt/personal-tax/individual/tax-residence | 2026-11-14 |
+| MTCA, Guidance Note on the Remittance Basis: read for sections 1 to 6 (spouse rule, domicile, arising and received in Malta, minimum tax, relief, excluded schemes) | https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf | 2026-11-14 |
+| MTCA, notice of 3 June 2026: read for the 31 July 2026 YA 2026 deadline | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-14 |
+| MTCA, Nomad Residence Permits guidelines (12 March 2026): read on 4 November 2026 for the reporting exceptions and the 31 March documentation date; not reopened today | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/nomad-guidelines---12-03-2026.pdf?sfvrsn=f0cc9971_6 | 2026-11-04 |
 
-### Correction source reads, 8 November 2026
-
-| Source and passage actually read | URL | Read on |
-|---|---|---|
-| Income Tax Act, Cap. 123, art. 2 (resident) and art. 56(27) (tax before relief under arts. 76 to 89) | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-08 |
-| LN 20 of 2026, Highly Skilled Individuals Rules, rules 1 and 12 | https://legislation.mt/eli/ln/2026/20/eng/pdf | 2026-11-08 |
-| MTCA, Tax Residence (more than 183 days; page updated 29 August 2025), as read for the 8 November 2026 audit | https://mtca.gov.mt/personal-tax/individual/tax-residence | 2026-11-08 |
-
-Correction ledger and complete old-topic destinations: [personal-mt-non-dom](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-non-dom.md). Full original research is archived there; this correction is not professional attestation.
-
-Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope. No whole-pack professional review is claimed.
+Not yet confirmed: whether double tax relief reduces the EUR 5,000 minimum (MTCA guidance 6.2 says it does; the Act compares tax before relief and says nothing more); how the EUR 35,000 and EUR 5,000 apply to a married couple on separate computation; how the non-dom minimum interacts with a nomad permit; the nomad guideline points (reporting exception, 31 March documentation) were not reopened today; the Commissioner's time limit for raising an assessment (for record keeping) was not re-read.
