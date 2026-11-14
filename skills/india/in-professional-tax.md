@@ -69,12 +69,12 @@ Telangana First Schedule "as amended upto date", as printed on the Telangana Com
 | Entry 20, company not a dealer under the VAT Act, in a profession, trade or calling, turnover 10 lakh and above | 2,500 PA | Turnover | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
 | Entry 21, each partner of a firm drawing remuneration from the firm | 1,250 PA | Per partner | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
 | Entry 39, exempt classes include physically handicapped persons with this degree of disability or more | 40% | Exempt | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
-| Entry 40, any other person with annual income more than 1,80,000 (unless exempt under section 31 or entry 39) | 2,500 PA | Annual income over 1,80,000 | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
+| Entry 40, any other person with annual income of more than one lakh eighty thousand rupees (Rs 1.8 lakh; unless exempt under section 31 or entry 39) | 2500 PA | Annual income over Rs 1.8 lakh | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx |
 | Interest on unpaid tax (employer or enrolled person) | 2 rupees per 100 rupees or part, per month or part | From the due date | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/11Consequences.html |
-| Penalty, tax not paid by the date in a notice of demand without reasonable cause | 25% to 50% of the tax due | On top of interest | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html |
+| Penalty, tax not paid by the date in a notice of demand without reasonable cause | Not less than twenty five percent and not more than fifty percent of the tax due | On top of interest | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html |
 | Penalty, wilful late registration (employer) | 10 to 20 rupees a day | Each day of delay | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/06Registration.html |
 | Penalty, wilful late enrolment (others) | Up to 5 rupees a day | Each day of delay | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/06Registration.html |
-| Penalty, deliberately false information in the application | 100 to 1,000 rupees | Per application | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/06Registration.html |
+| Penalty, deliberately false information in the application | Rupees one hundred to rupees one thousand | Per application | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/06Registration.html |
 | Penalty, return late without reasonable cause | 5 to 100 rupees a day | Each day of delay | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/07Returns.html |
 | Penalty, wilful failure to keep books as directed | Up to 5 rupees a day | Employer | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/17Accounts.html |
 | Income tax: salary deduction for profession tax paid, Income-tax Act 2025 s 19(1) Table Sl. No. 1 | Entire amount paid | Only for a person who opted out of s 202(1) under s 202(4); nil on the default regime (s 202(2)) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -173,7 +173,7 @@ The figures are in the rates table. How they apply in Telangana:
 | Return late without reasonable cause | Per-day penalty in the rates table (section 7) |
 | Employer fails to deduct, or deducts and fails to pay | Deemed assessee in default, plus interest at the rates-table rate from the due date ([section 11](https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/11Consequences.html); rule 24) |
 | Enrolled person fails to pay | Interest at the same rate (section 11(2)) |
-| Tax not paid by the date in a notice of demand, without reasonable cause | Penalty of 25% to 50% of the tax due, on top of interest ([section 12](https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html)) |
+| Tax not paid by the date in a notice of demand, without reasonable cause | Penalty of twenty five to fifty percent of the tax due, on top of interest ([section 12](https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html)) |
 | Wilful failure to enrol | Best judgment assessment and a demand in Form XIV payable within fifteen days (rule 23) |
 
 ## Cross-border points
@@ -288,7 +288,7 @@ expected:
 | Read for section 7, returns and the late return penalty | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/07Returns.html | 2026-11-14 |
 | Read for section 10, payment dates for enrolled persons | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/10Payment.html | 2026-11-14 |
 | Read for section 11, interest at two rupees per hundred per month | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/11Consequences.html | 2026-11-14 |
-| Read for section 12, the 25% to 50% penalty | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html | 2026-11-14 |
+| Read for section 12, the penalty of twenty five to fifty percent of the tax due | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html | 2026-11-14 |
 | Read for section 17, books and the daily penalty | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/17Accounts.html | 2026-11-14 |
 | Read for section 21, refunds and set-off | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/21Refund.html | 2026-11-14 |
 | Read for section 31, power to exempt | https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/31Power.html | 2026-11-14 |
