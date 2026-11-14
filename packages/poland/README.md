@@ -14,17 +14,19 @@
 7. `pl-cross-border.md`
 8. `pl-income-tax.md`
 9. `pl-payroll.md`
-10. `pl-transfer-pricing.md`
-11. `pl-vat-return.md`
-12. `pl-zus-contributions.md`
-13. `poland-einvoice.md`
-14. `poland-vat-return.md`
-15. `eu-vat-base.md`
-16. `eu-vat-directive.md`
-17. `einvoice-workflow-base.md`
-18. `payroll-workflow-base.md`
-19. `transfer-pricing-workflow-base.md`
-20. `workflow-base.md`
+10. `pl-small-company-financial-statements.md`
+11. `pl-transfer-pricing.md`
+12. `pl-vat-return.md`
+13. `pl-zus-contributions.md`
+14. `poland-einvoice.md`
+15. `poland-vat-return.md`
+16. `eu-vat-base.md`
+17. `eu-vat-directive.md`
+18. `einvoice-workflow-base.md`
+19. `payroll-workflow-base.md`
+20. `financial-statements-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
+22. `workflow-base.md`
 
 ## Also known as
 
