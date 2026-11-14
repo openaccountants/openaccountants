@@ -179,10 +179,10 @@ Premium percentages are of income; ceilings are in XCG for 2026 ([SVB Tabel 2026
 
 Premium amounts use the SVB table for 2026. Wage tax uses the 2026 monthly table, which excludes the basic credit.
 
-- **Case 1: monthly premiums for an ordinary employee** ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)). A resident employee aged 35 earns XCG 5,000 gross a month in 2026, with no exemptions.
-  - Employee: 6% AOV = XCG 300; 0,5% AWW = XCG 25; 4,3% BVZ = XCG 215; 1.5% AVBZ = XCG 75. Total withheld: XCG 615 ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
-  - Employer: 9% AOV = XCG 450; 0,5% AWW = XCG 25; 9,3% BVZ = XCG 465; 0.5% AVBZ = XCG 25. Total: XCG 965 ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
-  - The Belastingdienst return shows XCG 1,580 of premiums plus the wage tax. Separately, the employer owes ZV at 1,9% = XCG 95 (the pay is below the XCG 7,146.10 monthly ceiling) and OV at its risk-class rate, both settled with the SVB ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+- **Case 1: monthly premiums for an ordinary employee** ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)). A resident employee aged 35 earns XCG 5,000 gross a month in 2026, with no exemptions.
+  - Employee: 6% AOV = XCG 300; 0,5% AWW = XCG 25; 4,3% BVZ = XCG 215; 1.5% AVBZ = XCG 75. Total withheld: XCG 615 ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+  - Employer: 9% AOV = XCG 450; 0,5% AWW = XCG 25; 9,3% BVZ = XCG 465; 0.5% AVBZ = XCG 25. Total: XCG 965 ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+  - The Belastingdienst return shows XCG 1,580 of premiums plus the wage tax. Separately, the employer owes ZV at 1,9% = XCG 95 (the pay is below the XCG 7,146.10 monthly ceiling) and OV at its risk-class rate, both settled with the SVB ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
 - **Case 2: credits in the monthly wage-tax calculation.** The same employee is unmarried, with one child aged 10 at home (category IV). Annual credits: XCG 2,915 + XCG 96 = XCG 3,011. The monthly credit is 1/12 of XCG 3,011 = XCG 250.92, deducted from the table tax. With no child it would be 1/12 of XCG 2,915 = XCG 242.92 ([Loonbelastingverklaring 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Loonbelastingverklaring-2026.pdf)). The 2026 monthly table gives XCG 631.48 on a monthly wage of XCG 5,000 ([Maandtabel 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/lb-maandtabel-2026.pdf)); if that is the taxable wage after the AOV/AWW, pension and cost deductions in step 6, wage tax withheld is 631.48 less 250.92 = XCG 380.56.
 
 ```oa-check
@@ -208,10 +208,10 @@ expected:
   wage_tax: 380.56
 ```
 
-- **Case 3: a high earner and the ceilings.** An employee earns XCG 120,000 in 2026 (XCG 10,000 a month) ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
-  - AOV (annual view): 6% applies up to the XCG 100,000 ceiling, giving XCG 6,000. The table's 1% above the ceiling gives 1% of XCG 20,000 = XCG 200; whether that is withheld in payroll or charged on the assessment is a check item ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
-  - BVZ: income is below the XCG 150,000 ceiling, so 4,3% of XCG 120,000 = XCG 5,160 (employee) and 9,3% = XCG 11,160 (employer) ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
-  - ZV each month: 1,9% of the XCG 7,146.10 ceiling = XCG 135.78, not 1,9% of XCG 10,000 ([SVB Tabel 2023](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+- **Case 3: a high earner and the ceilings.** An employee earns XCG 120,000 in 2026 (XCG 10,000 a month) ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+  - AOV (annual view): 6% applies up to the XCG 100,000 ceiling, giving XCG 6,000. The table's 1% above the ceiling gives 1% of XCG 20,000 = XCG 200; whether that is withheld in payroll or charged on the assessment is a check item ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+  - BVZ: income is below the XCG 150,000 ceiling, so 4,3% of XCG 120,000 = XCG 5,160 (employee) and 9,3% = XCG 11,160 (employer) ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
+  - ZV each month: 1,9% of the XCG 7,146.10 ceiling = XCG 135.78, not 1,9% of XCG 10,000 ([SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf)).
   - How an annual ceiling is spread over monthly payrolls is not stated on any page read for this skill. Ask the SVB.
 
 ```oa-check
