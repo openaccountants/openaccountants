@@ -110,3 +110,5 @@ How a PR is merged:
 
 Still a person's (Michael's): anything that adds or removes a person's name, and files with
 `reviewed_by`, which only their accountant changes.
+
+Calculator quotes: the `calculator-quotes` job runs `scripts/check-calculator-quotes.py --changed-only` and fails when a PR's skill edit removes or rewords a line a calculator quotes (`calculators/engines/*/rules.json`); keep the line word for word, or update the calculator in the app repo first.
