@@ -1,10 +1,10 @@
 ---
 name: ny-corporate-franchise-article-9a
 description: New York State corporation franchise tax under Tax Law Article 9-A (Form CT-3, CT-3-A) for tax year 2026. Covers nexus (the $1,283,000 receipts test, the $12,000 unitary floor, P.L. 86-272), entire net income and the 2025 decoupling from IRC 168(n) and 174/174A, business income and investment capital, the three bases (business income at 6.5%, or 7.25% on a base over $5 million, 4.875% for QETCs, 0% for qualified manufacturers; capital at 0.1875% capped at $5 million; the fixed dollar minimum), single receipts factor apportionment, PNOLC and NOLs, combined reporting, the 30% MTA surcharge, the MFI, estimates, extensions and penalties. Trigger on "New York corporate tax", "CT-3", "Article 9-A", "NY franchise tax", "MTA surcharge", "fixed dollar minimum", "CT-300". New York State only; NYC business corporation tax is separate.
-version: "2.0"
+version: "2.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -208,16 +208,16 @@ Compute all three bases. The tax is the **largest** of them (for a combined grou
 |---|---|---|
 | New York receipts exactly $1,283,000 (2026) | Taxable: the test is "or more" | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
 | Business income base exactly $5,000,000 | 6.5%: 7.25% applies only if the base is **more than** $5,000,000 | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
-| Business income over $5,000,000 before apportionment, base below it after | 6.5%: the test uses line 19 | [Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf) |
+| Business income over $5,000,000 before apportionment, base below it after | 6.5%: the test uses line 19 | [CT-3-I (tax rates schedule and line 19)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf) |
 | Seller of goods whose only New York activity is soliciting orders, including static website content | Protected by P.L. 86-272; mark box C and enter 0 tax | [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | The same seller, with website chat support or post-sale technical advice | Not protected: interaction beyond static content, or advice after delivery, goes beyond solicitation | same |
-| Services or SaaS seller with $1,283,000 or more of New York receipts | Taxable; P.L. 86-272 never covers services or intangibles | same |
+| Services or SaaS seller with $1,283,000 or more of New York receipts | Taxable; P.L. 86-272 never covers services or intangibles | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | Second preceding year's tax exactly $5,000 | No MFI: it must **exceed** $5,000 | [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf) |
 | Second preceding year's tax exactly $100,000 | 25% MFI; 40% only if it **exceeds** $100,000 | same |
 | No second preceding year return | No MFI, but declare and pay the remaining installments on Form CT-400 | same |
-| ENI $390,000 but $1,200,000 of paid-in capital | Not a small business taxpayer; capital base at 0.1875% | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| ENI $390,000 but $1,200,000 of paid-in capital (derived: an example amount above the CT-3-I limit of not more than $1 million) | Not a small business taxpayer; capital base at 0.1875% | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
 | QETC with product sales over $10 million | Still eligible for 4.875%: the $10 million limit is disregarded | same |
-| Extension paid at 85% of the final tax, when the prior year's tax was higher | Extension invalid, so the late filing penalty runs from the original due date. Pay at least the prior year's tax (for a 12-month year), or 90% of the final tax | [CT-5-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf) |
+| Extension paid at 85% of the final tax, when the prior year's tax was higher (derived: an example below the CT-5-I 90% test) | Extension invalid, so the late filing penalty runs from the original due date. Pay at least the prior year's tax (for a 12-month year), or 90% of the final tax | [CT-5-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf) |
 | Loss year, waiver election left off the original return | The carryback applies; the waiver cannot be made on an amended return | [CT-3.4-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3_4i.pdf) |
 | Unitary sister corporation with $11,000 of New York receipts (2026) | Left out of the group's nexus total and not taxable on that basis | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
 

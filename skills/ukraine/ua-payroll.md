@@ -1,10 +1,11 @@
 ---
 name: ua-payroll
 description: "Ukrainian payroll for employers, tax year 2026: companies and sole proprietors (ФОП) who hire staff under employment or civil-law contracts. Covers the hiring notice before work starts; withholding of 18% personal income tax and the 5% military levy; the tax social benefit for low salaries (UAH 1,664, limit UAH 4,660); the employer's 22% ЄСВ on gross pay, with the UAH 1,902.34 floor, the UAH 172,940 cap and 8.41% for employees with disabilities; gross-to-net; paying with each salary and by the 20th; the combined tax calculation (quarterly for sole proprietors, monthly for companies) and its 2026 deadlines; fines under the Tax Code, the ЄСВ law and the Labour Code; contractors versus employees. Trigger on: Ukraine payroll, зарплата податки, ПДФО з зарплати, військовий збір з зарплати, ЄСВ роботодавця, податковий розрахунок, hiring in Ukraine. Out of scope: own ЄСВ (ua-social-contributions), annual declaration (ua-income-tax)."
-version: 1.1
+version: 1.2
+type: computation
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -31,15 +32,15 @@ An employer in Ukraine is a tax agent for its staff. From each salary it withhol
 | Employer ЄСВ | 22% of gross pay, on top | 2026 | https://zakon.rada.gov.ua/laws/show/2464-17 (art. 8 part 5) |
 | Employer ЄСВ for employees with disabilities | 8.41% | 2026 | same, art. 8 part 13 |
 | Minimum wage | UAH 8,647 a month; UAH 52 an hour | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
-| ЄСВ floor at the main place of work | UAH 1,902.34 a month (22% x 8,647) | 2026 | ЄСВ law art. 8 part 5; Budget art. 8 |
+| ЄСВ floor at the main place of work | UAH 1,902.34 a month (computed: 22% x 8,647) | 2026 | ЄСВ law art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
 | ЄСВ maximum base | 20 minimum wages, UAH 172,940 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 32) |
-| ЄСВ maximum per person | UAH 38,046.80 a month | 2026 | computed: 22% x 172,940 |
-| Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | TCU art. 169.1.1; Budget art. 7 |
-| ПСП for a parent of two or more children | UAH 1,664 per child | 2026 | TCU art. 169.1.2 |
-| ПСП, 150% group | UAH 2,496 | 2026 | TCU art. 169.1.3 |
-| ПСП, 200% group | UAH 3,328 | 2026 | TCU art. 169.1.4 |
-| ПСП salary limit | UAH 4,660 a month (3,328 x 1.4, rounded to UAH 10); times the number of children for child benefits | 2026 | TCU art. 169.4.1 |
-| Non-cash pay gross-up | factor 100 / (100 - 18) | 2026 | TCU art. 164.5 |
+| ЄСВ maximum per person | UAH 38,046.80 a month | 2026 | computed: 22% x 172,940, https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html |
+| Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | TCU art. 169.1.1; Budget art. 7, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП for a parent of two or more children | UAH 1,664 per child | 2026 | TCU art. 169.1.2, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП, 150% group | UAH 2,496 | 2026 | TCU art. 169.1.3, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП, 200% group | UAH 3,328 | 2026 | TCU art. 169.1.4, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП salary limit | UAH 4,660 a month (3,328 x 1.4, rounded to UAH 10); times the number of children for child benefits | 2026 | TCU art. 169.4.1, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| Non-cash pay gross-up | factor 100 / (100 - 18) | 2026 | TCU art. 164.5, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=33461 |
 | Salary paid at least | twice a month, at most 16 days apart, within 7 days after the period | 2026 | https://zakon.rada.gov.ua/laws/show/322-08 (KZpP art. 115) |
 
 ## The taxable base
@@ -198,6 +199,10 @@ expected:
 | Law No. 2464-VI on the unified social contribution, edition of 1 Jan 2026: arts. 4, 6, 7, 8, 9, 25 | https://zakon.rada.gov.ua/laws/show/2464-17 | 2026-10-30 (via web.archive.org capture of 9 Jan 2026; the 18 Oct 2026 capture shows only the 26 Jan 2026 forced-absence amendment by Law 4697-IX since) |
 | Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 7, 8 and 32 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
 | Labour Code of Ukraine (Кодекс законів про працю), Law No. 322-VIII, edition of 31 Jul 2026: arts. 24, 115, 265 | https://zakon.rada.gov.ua/laws/show/322-08 | 2026-10-30 (via web.archive.org capture of 1 Oct 2026, https://web.archive.org/web/20261001113537/https://zakon.rada.gov.ua/laws/show/322-08/print) |
-| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
+| DPS, rates sheet: unified social contribution (ЄСВ) | https://zir.tax.gov.ua/docs/stavki/esv.pdf | 2026-11-14, read for the 22% and 8.41% rates |
+| DPS, tax social benefit (ПСП) amounts for 2026 | https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf | 2026-11-14, read for the 2026 ПСП amounts, the UAH 4,660 limit and the UAH 8,647 minimum wage |
+| DPS Zhytomyr region, ЄСВ in 2026 (3 March 2026) | https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html | 2026-11-14, read for the 2026 maximum base of 20 minimum wages (15 for service members) and the suspension of the ЄСВ law cap |
+| DPS knowledge base (ЗІР), question 33461 | https://zir.tax.gov.ua/main/bz/view/?src=ques&id=33461 | 2026-11-14, read for art. 164.5: the non-cash gross-up K = 100 : (100 - rate) |
+| State Tax Service of Ukraine, main site | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: the Cabinet of Ministers procedure and form for the hiring notice; the tax calculation form and its annexes (Ministry of Finance order not read); ЄСВ and the floor for an employee hired or leaving mid-month, on unpaid leave or on sick leave (Ministry of Finance instruction not read); how sick pay and holiday pay are split between employer and social fund; the Law "On remuneration of labour" rule that full-time pay may not be below the minimum wage; the employment test in the draft new Labour Code; ЄСВ for foreign nationals and social security agreements; Diia City gig contracts; the National Bank discount rate for penalty interest; any amendment after the archive captures named above.
