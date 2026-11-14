@@ -45,8 +45,8 @@ Contributions to the National Insurance Services (NIS) of Saint Vincent and the 
 | Total rate | 14% of insurable earnings | [NIS employers' guide](https://www.nissvg.org/employers-guide/) |
 | Employee share | 6.5% | same |
 | Employer share | 7.5% | same |
-| Ceiling | EC$62,400 a year, EC$5,200 a month, EC$1,200 a week | same |
-| Employment injury | Employers pay 0.5% of insurable earnings for all employees | same |
+| Ceiling | EC$5,200 a month or EC$1,200 a week (the guide also gives the yearly equivalent) | same |
+| Employment injury | Employers pay .5% of insurable earnings for all employees | same |
 | Employer registration | Within 7 days of employing the first employee, Form R3 | same |
 | Payment | Within one month after the end of the month | same |
 | Late payment | 10% surcharge on the contributions payable, plus 1% compound interest for each month or part month outstanding | same |

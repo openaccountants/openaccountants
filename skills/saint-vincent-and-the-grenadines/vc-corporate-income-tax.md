@@ -45,7 +45,7 @@ Company income tax in Saint Vincent and the Grenadines (SVG) for years of assess
 | Estimated tax base, s.70(2) | Tax at current rates on the preceding (or latest assessed) year's chargeable income; expected income if never assessed; a short preceding year is grossed up by 365 / days | [Income Tax Act Cap. 435, s.70](https://ird.gov.vc/images/pdf/Cap435.pdf) |
 | Instalments 1 to 3, s.71 | One quarter of estimated tax each, by the end of the 6th, 9th and 12th months of the year | [Income Tax Act Cap. 435, s.71](https://ird.gov.vc/images/pdf/Cap435.pdf) |
 | Instalment 4, s.71 | The balance of tax for the year, by the end of the 3rd month after year end | same |
-| Instalment exemption, s.72 | None required where tax chargeable, after tax deducted at source, is EC$600 or less | [Income Tax Act Cap. 435, s.72](https://ird.gov.vc/images/pdf/Cap435.pdf) |
+| Instalment exemption, s.72 | None required where tax chargeable, as reduced by tax deductible at source, is six hundred dollars or less | [Income Tax Act Cap. 435, s.72](https://ird.gov.vc/images/pdf/Cap435.pdf) |
 | Revision of the estimate, s.73 | Application by 30 November in the income year | same |
 | Interest | 1.5% a month | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
 | Withholding on services by nonresidents | 20%; rental 10%; CARICOM royalties, interest and management fees 15%; remit by the 15th of the next month | same |

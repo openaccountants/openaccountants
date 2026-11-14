@@ -62,7 +62,7 @@ Value Added Tax in Saint Vincent and the Grenadines for 2026, as published by th
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Guest house with sales of EC$120,000 | Must register: all hoteliers register whatever their sales | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
+| Guest house with sales well below the general figure | Must register: all hoteliers register whatever their sales | [IRD taxes page](https://ird.gov.vc/index.php/taxes) |
 | Hotel package with room and meals | Room 11%, meals 16%; split the price | same |
 | Sales of exactly EC$300,000 | The IRD wording ("grossing in sales of $300,000") does not settle the boundary; treat as registrable until the Act is checked | same |
 | Exempt against zero-rated | Different treatments; keep them apart in the records | same |
