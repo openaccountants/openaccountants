@@ -11,16 +11,15 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected complete units of RONLAW Revenue Administration Act Service 6, the original 2026 Acts 21 and 26, BTA/ESTA compilations and official public blank forms were read on 1 November 2026 UTC. The RAA compilation was produced on 2 September 2026; Act 26 was certified and commences on 20 July 2026. Forms bear different reporting periods. These dates do not certify an exhaustive operative chain or actual 2026 obligations."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 ---
 
-# Nauru Tax Administration Reference (v0.2)
+# Nauru Tax Administration Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -248,34 +247,14 @@ The Revenue Administration Act 2014 (RAA) applies to its defined tax laws, inclu
 
 RAA section 2 specifies 1 October 2014 commencement except Part 3 Division 1, which commenced on 26 September 2014. Original Constitution (Amendment) (No.2) Act 2026 No 21 was certified on 12 May 2026 and commences on certification; section 5 substitutes 'Naoero' for 'Nauru' in written laws. It does not itself amend a tax rate or threshold. Original RAA (Amendment) Act 2026 No 26 was certified on 20 July 2026 and commences on certification. Its section 6 amends RAA section 23 and section 7 replaces section 67(7). Those particular original instruments are qualified; the exhaustive original enactment, amendment, commencement, later-law and electronic-copy authority chain remains open. Compilation production, enactment/certification, commencement, reporting period and retrieval must remain distinct. [S1–S3]
 
-| Source | Complete units actually relied on | Limits |
-| --- | --- | --- |
-| **S1. [RONLAW RAA 2014, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2014/Revenue%20Administration%20Act%202014_serv6.pdf)** | Selected complete sections 1–5, 9–17, 20–28, 37–38, 51–56, 63–64, 66A–67 and 84; Schedule 2; embedded Revenue Administration Regulations 2016 regulations 1–5. Principal relied units appear on physical pp 9–13, 17–19, 21, 23, 26–31, 37–38, 49–50, 54–57, 63 and 67; regulations pp 73–75. Amendment table p 7. Original images resolve the bracketed interest rate and 2026 amendment. | The file has 76 physical pages. This is not a full-file read claim or qualification of every cross-referenced provision. Sections 63–64 and 67 were read for boundaries, not a complete penalty/appeal workflow. The 2 September 2026 production label does not establish currency. |
-| **S2. [RAA (Amendment) Act 2026 No 26](https://ronlaw.gov.nr/assets/docs/acts/2026/Revenue%20Administration%20%28Amendment%29%20Act%202026.pdf)** | All 3 pages, complete sections 1–7; original certified date and sections 6–7 checked visually. | A particular amendment, not proof of no later amendment. Sections 4–5 concern defined authorities and disclosures; no disclosure permission or operational privacy guidance is given here. |
-| **S3. [Constitution (Amendment) (No.2) Act 2026 No 21](https://ronlaw.gov.nr/assets/docs/acts/2026/Constitution%20%28Amendment%29%20%28No.2%29%20Act%202026.pdf)** | All 2 pages, complete sections 1–6, original images checked. | The naming amendment closes that specific instrument gap only. |
-| **S4. [RONLAW BTA 2016, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete sections 37–44 on physical pp 35–40; complete section 3 definitions, section 12 eligibility, section 25A credit and Schedule 1 used to compare form wording. These comparator units were separately read in the NR business-tax source work. | The 84-page file was not all read. No actual charging, category priority, deduction, foreign credit, transport clearance or refund is determined. Production date 18 September 2026 is not a currency guarantee. |
-| **S5. [RONLAW ESTA 2014, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2014/Employment%20and%20Services%20Tax%20Act%202014_serv6.pdf)** | Complete sections 15–26 on physical pp 15, 17–19; complete Schedule pp 25–26 and 2018 exemption notice pp 31–32 compared with blank EST forms. Complete principal sections 1–30 were read in the NR employment/services source work. | Not an all-40-page read claim. Resident bands, public-sector/notice boundaries, rate gaps and the PE definition remain governed by their separate source conditions. No flat form rate resolves them. |
-| **S6. [NRO official forms index](https://naurufinance.info/nro-forms/)** | Full public index body and its actual linked files, F1–F11 below, read on 1 November 2026 UTC. All 24 pages of the 10 blank PDFs read natively; selected financial rows, titles and registration fields checked against originals. F11 inspected statically and rendered without edits. | Index labels, URL upload dates, accessible downloads and printed periods do not prove approval, current acceptance, applicable law or filing readiness. No live taxpayer, submission, payment or native Excel recalculation was tested. |
-| **S7. [NRO key dates](https://naurufinance.info/nro-key-dates/)** | Full public body read on 1 November 2026 UTC. | Administrative comparison only. Its 'when ... filed' annual BPT payment statement differs from BTA section 40(1)'s due date. Universal 30 September wording does not account for a company's substituted tax year. |
+| Source | Complete units actually relied on | Limits | Read on |
+| --- | --- | --- | --- |
+| **S1. [RONLAW RAA 2014, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2014/Revenue%20Administration%20Act%202014_serv6.pdf)** | Selected complete sections 1–5, 9–17, 20–28, 37–38, 51–56, 63–64, 66A–67 and 84; Schedule 2; embedded Revenue Administration Regulations 2016 regulations 1–5. Principal relied units appear on physical pp 9–13, 17–19, 21, 23, 26–31, 37–38, 49–50, 54–57, 63 and 67; regulations pp 73–75. Amendment table p 7. Original images resolve the bracketed interest rate and 2026 amendment. | The file has 76 physical pages. This is not a full-file read claim or qualification of every cross-referenced provision. Sections 63–64 and 67 were read for boundaries, not a complete penalty/appeal workflow. The 2 September 2026 production label does not establish currency. | 2026-11-01 (read by Ryan) |
+| **S2. [RAA (Amendment) Act 2026 No 26](https://ronlaw.gov.nr/assets/docs/acts/2026/Revenue%20Administration%20%28Amendment%29%20Act%202026.pdf)** | All 3 pages, complete sections 1–7; original certified date and sections 6–7 checked visually. | A particular amendment, not proof of no later amendment. Sections 4–5 concern defined authorities and disclosures; no disclosure permission or operational privacy guidance is given here. | 2026-11-01 (read by Ryan) |
+| **S3. [Constitution (Amendment) (No.2) Act 2026 No 21](https://ronlaw.gov.nr/assets/docs/acts/2026/Constitution%20%28Amendment%29%20%28No.2%29%20Act%202026.pdf)** | All 2 pages, complete sections 1–6, original images checked. | The naming amendment closes that specific instrument gap only. | 2026-11-01 (read by Ryan) |
+| **S4. [RONLAW BTA 2016, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete sections 37–44 on physical pp 35–40; complete section 3 definitions, section 12 eligibility, section 25A credit and Schedule 1 used to compare form wording. These comparator units were separately read in the NR business-tax source work. | The 84-page file was not all read. No actual charging, category priority, deduction, foreign credit, transport clearance or refund is determined. Production date 18 September 2026 is not a currency guarantee. | 2026-11-01 (read by Ryan) |
+| **S5. [RONLAW ESTA 2014, Service 6](https://ronlaw.gov.nr/assets/docs/acts/2014/Employment%20and%20Services%20Tax%20Act%202014_serv6.pdf)** | Complete sections 15–26 on physical pp 15, 17–19; complete Schedule pp 25–26 and 2018 exemption notice pp 31–32 compared with blank EST forms. Complete principal sections 1–30 were read in the NR employment/services source work. | Not an all-40-page read claim. Resident bands, public-sector/notice boundaries, rate gaps and the PE definition remain governed by their separate source conditions. No flat form rate resolves them. | 2026-11-01 (read by Ryan) |
+| **S6. [NRO official forms index](https://naurufinance.info/nro-forms/)** | Full public index body and its actual linked files, F1–F11 below, read on 1 November 2026 UTC. All 24 pages of the 10 blank PDFs read natively; selected financial rows, titles and registration fields checked against originals. F11 inspected statically and rendered without edits. | Index labels, URL upload dates, accessible downloads and printed periods do not prove approval, current acceptance, applicable law or filing readiness. No live taxpayer, submission, payment or native Excel recalculation was tested. | 2026-11-01 (read by Ryan) |
+| **S7. [NRO key dates](https://naurufinance.info/nro-key-dates/)** | Full public body read on 1 November 2026 UTC. | Administrative comparison only. Its 'when ... filed' annual BPT payment statement differs from BTA section 40(1)'s due date. Universal 30 September wording does not account for a company's substituted tax year. | 2026-11-01 (read by Ryan) |
 
 Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -11,16 +11,15 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected complete units of the official RONLAW Service 6 compilation, produced on 18 September 2026, and Gazette No. 304 of 28 June 2024 were read on 1 November 2026 UTC. SL 22/2024 regulation 2 states 1 July 2024. Production, retrieval, commencement and application dates are distinct. This dated-source reference establishes no exhaustive current-law chain or actual 2026 liability."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 ---
 
-# Nauru Business Tax Charge and Rate Reference (v0.2)
+# Nauru Business Tax Charge and Rate Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -196,40 +195,20 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| S1. RONLAW Business Tax Act 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf | 2026-11-01 UTC; specified complete units or bounded overview only |
-| S2. Gazette No. 304, 28 June 2024, GN 909/2024 | https://naurufinance.info/wp-content/uploads/2026/03/Nauru-Government-Gazette-No.-304-28-June-2024.pdf | 2026-11-01 UTC; specified complete units or bounded overview only |
-| S3. Business Tax Regulations 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/laws/2016/Business%20Tax%20Regulations%202016_serv6.pdf | Exact reading day unrecorded; complete 6-page file read |
+| S1. RONLAW Business Tax Act 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf | 2026-11-01 UTC (read by Ryan); specified complete units; reopened 2026-11-14 for the 0.5% instalment and the $250,000 band |
+| S2. Gazette No. 304, 28 June 2024, GN 909/2024 | https://naurufinance.info/wp-content/uploads/2026/03/Nauru-Government-Gazette-No.-304-28-June-2024.pdf | 2026-11-01 UTC (read by Ryan); reopened 2026-11-14 for the 20% and 30% category rates |
+| S3. Business Tax Regulations 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/laws/2016/Business%20Tax%20Regulations%202016_serv6.pdf | 2026-11-14 (reopened; read for regulations 1-6); first read by Ryan, day unrecorded |
 | S4. NRO administered legislation page | https://naurufinance.info/nro-administered-legislation/ | 2026-11-01 UTC; specified complete units or bounded overview only |
 
 ### Primary source library
 
-| Source | Material actually read | Limits |
-| --- | --- | --- |
-| **S1. [RONLAW Business Tax Act 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete BTA sections 1–10 on physical pp 7–14, 11–15 on pp 15–17, 16–18 on pp 19–20, 45–48 on pp 41–42 and Schedules 1–2 on pp 43–45; amendment table p 5. Financial tables and missing extracted section 11/45 numbers checked against original page images. Cover contents locally OCR processed. | The 84-page file includes subsidiary material; all 84 pages have not been read. Section 19 begins on p 20 but was not completely read. Production label 18 September 2026 is not a legal currency attestation. Schedule 2 retains a Service 0 label. Electronic-copy authority, unqualified sections and later instruments remain open. |
-| **S2. [Gazette No. 304, 28 June 2024, GN 909/2024](https://naurufinance.info/wp-content/uploads/2026/03/Nauru-Government-Gazette-No.-304-28-June-2024.pdf)** | All 4 pages read; complete regulations 1–11 on pp 2–4, including table rows and commencement. Original images pp 2–4 checked against extraction. | Specific enacted amendment, not the complete applicable chain. The 2026 upload directory is not enactment. Underlying RPC definition statutes are not qualified. |
-| **S3. [Business Tax Regulations 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/laws/2016/Business%20Tax%20Regulations%202016_serv6.pdf)** | All 6 pages read, including complete regulations 1–6 on pp 5–6, printed pp 129,401–129,402. Amendment table distinguishes notification on 4 November 2016 from stated commencement on 1 July 2016. | Insurance reserve/life-business and record provisions provide context. No special-sector computation, retention period or later-regulation completeness is established here. |
-| **S4. [NRO administered legislation page](https://naurufinance.info/nro-administered-legislation/)** | Fresh official HTML overview and observed legislation links read on 1 November 2026 UTC. | Locator/conflict evidence only. Its SBT summary still says 2.5%, which is not adopted. Its employment-tax monthly/annual figures do not reconcile and its BTA summary is not a complete list of charges. No employment-tax figure is adopted. |
+| Source | Material actually read | Limits | Read on |
+| --- | --- | --- | --- |
+| **S1. [RONLAW Business Tax Act 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete BTA sections 1–10 on physical pp 7–14, 11–15 on pp 15–17, 16–18 on pp 19–20, 45–48 on pp 41–42 and Schedules 1–2 on pp 43–45; amendment table p 5. Financial tables and missing extracted section 11/45 numbers checked against original page images. Cover contents locally OCR processed. | The 84-page file includes subsidiary material; all 84 pages have not been read. Section 19 begins on p 20 but was not completely read. Production label 18 September 2026 is not a legal currency attestation. Schedule 2 retains a Service 0 label. Electronic-copy authority, unqualified sections and later instruments remain open. | 2026-11-01 (read by Ryan) |
+| **S2. [Gazette No. 304, 28 June 2024, GN 909/2024](https://naurufinance.info/wp-content/uploads/2026/03/Nauru-Government-Gazette-No.-304-28-June-2024.pdf)** | All 4 pages read; complete regulations 1–11 on pp 2–4, including table rows and commencement. Original images pp 2–4 checked against extraction. | Specific enacted amendment, not the complete applicable chain. The 2026 upload directory is not enactment. Underlying RPC definition statutes are not qualified. | 2026-11-01 (read by Ryan) |
+| **S3. [Business Tax Regulations 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/laws/2016/Business%20Tax%20Regulations%202016_serv6.pdf)** | All 6 pages read, including complete regulations 1–6 on pp 5–6, printed pp 129,401–129,402. Amendment table distinguishes notification on 4 November 2016 from stated commencement on 1 July 2016. | Insurance reserve/life-business and record provisions provide context. No special-sector computation, retention period or later-regulation completeness is established here. | 2026-11-01 (read by Ryan) |
+| **S4. [NRO administered legislation page](https://naurufinance.info/nro-administered-legislation/)** | Fresh official HTML overview and observed legislation links read on 1 November 2026 UTC. | Locator/conflict evidence only. Its SBT summary still says 2.5%, which is not adopted. Its employment-tax monthly/annual figures do not reconcile and its BTA summary is not a complete list of charges. No employment-tax figure is adopted. | 2026-11-01 (read by Ryan) |
 
 S1's native Schedule 1 extraction merges columns; original images bind rates to rows. The original repeats 'Category F:' and contains an unmatched parenthesis in the RPC 2012 Act title. Preserve these anomalies; do not silently repair the cross-reference or claim the underlying statutes were read. [S1, physical pp 43–44; S2, p 4]
 
 Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

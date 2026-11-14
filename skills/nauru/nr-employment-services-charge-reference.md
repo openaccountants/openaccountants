@@ -11,16 +11,15 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected complete units of the RONLAW Service 6 Employment and Services Tax Act compilation, produced on 9 September 2026, and Gazette No. 33 of 10 February 2023 were read on 1 November 2026 UTC. SL 3/2023 regulation 2 says deemed commencement on 1 July 2022. Production, notification, application and retrieval dates are distinct. This dated-source reference establishes no exhaustive current-law chain or actual 2026 liability."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 ---
 
-# Nauru Employment and Services Tax Charge Reference (v0.2)
+# Nauru Employment and Services Tax Charge Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -224,37 +223,17 @@ The table records the original reading evidence. A retrieval or capture is not a
 | Source | URL | Read on |
 | --- | --- | --- |
 | S1. RONLAW Employment and Services Tax Act 2014, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/acts/2014/Employment%20and%20Services%20Tax%20Act%202014_serv6.pdf | 2026-11-01 UTC; specified complete units or bounded overview only |
-| S2. Gazette No. 33, 10 February 2023 | https://ronlaw.gov.nr/assets/docs/gazettes/2023/02/Gazette%20No.%2033%20%2810%20February%202023%29.pdf | 2026-11-01 UTC; specified complete units or bounded overview only |
-| S3. RONLAW Business Tax Act 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf | Exact reading day unrecorded; section 7 read in the business-tax source block |
+| S2. Gazette No. 33, 10 February 2023 | https://ronlaw.gov.nr/assets/docs/gazettes/2023/02/Gazette%20No.%2033%20%2810%20February%202023%29.pdf | 2026-11-01 UTC (read by Ryan); reopened 2026-11-14 for the $9,240, $4,257 and $2,129 thresholds and the 20% rate |
+| S3. RONLAW Business Tax Act 2016, Service 6 compilation | https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf | 2026-11-14 (reopened; read for section 7); first read by Ryan, day unrecorded |
 | S4. NRO administered legislation overview | https://naurufinance.info/nro-administered-legislation/ | 2026-11-01 UTC; specified complete units or bounded overview only |
 
 ### Primary source library
 
-| Source | Material actually read | Limits |
-| --- | --- | --- |
-| **S1. [RONLAW Employment and Services Tax Act 2014, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2014/Employment%20and%20Services%20Tax%20Act%202014_serv6.pdf)** | Complete principal sections 1–10 on physical pp 7–11, 11–14 on pp 13–14, 15 on p 15, 16–26 on pp 17–19, 27–28 on p 21, 29–30 on p 23 and complete Schedule pp 25–26. Amendment table p 5. Complete Employment and Services (Tax Exemption) Notice 2018 sections 1–5 on p 31, blank p 32 boundary and amendment table p 29. Rate tables, relevant section numbers, dates and notice checked against original page images. | The file has 40 physical pages; this is not an all-40-page read claim. Cover contents and later specific GMSS/Downer notices are unqualified. The 9 September 2026 production label is not proof of law current through retrieval. Electronic-copy authority and exhaustive later law remain open. |
-| **S2. [Gazette No. 33, 10 February 2023](https://ronlaw.gov.nr/assets/docs/gazettes/2023/02/Gazette%20No.%2033%20%2810%20February%202023%29.pdf)** | All 3 pages read; complete regulations 1–4 on pp 2–3. Original images checked to resolve merged native columns and bind each period/rate row. | A specific amendment with express deemed commencement, not the complete applicable chain. It replaces only the specified resident paragraphs. |
-| **S3. [RONLAW Business Tax Act 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete BTA section 7 on physical pp 12–13, read separately in the NR business-tax source block and compared with ESTA section 3's PE wording. | Comparator for an unresolved cross-reference, not permission to replace or combine definitions. Other BTA rules require their own complete companion. |
-| **S4. [NRO administered legislation overview](https://naurufinance.info/nro-administered-legislation/)** | Fresh official public HTML read on 1 November 2026 UTC in the NR business-tax source block; legislation links and employment summary observed. | Locator/conflict evidence only. Its monthly AUD 9,240 and stated annual AUD 110,800 do not reconcile. Do not adopt the annual figure, repair it or annualise statutory pay-period bands. |
+| Source | Material actually read | Limits | Read on |
+| --- | --- | --- | --- |
+| **S1. [RONLAW Employment and Services Tax Act 2014, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2014/Employment%20and%20Services%20Tax%20Act%202014_serv6.pdf)** | Complete principal sections 1–10 on physical pp 7–11, 11–14 on pp 13–14, 15 on p 15, 16–26 on pp 17–19, 27–28 on p 21, 29–30 on p 23 and complete Schedule pp 25–26. Amendment table p 5. Complete Employment and Services (Tax Exemption) Notice 2018 sections 1–5 on p 31, blank p 32 boundary and amendment table p 29. Rate tables, relevant section numbers, dates and notice checked against original page images. | The file has 40 physical pages; this is not an all-40-page read claim. Cover contents and later specific GMSS/Downer notices are unqualified. The 9 September 2026 production label is not proof of law current through retrieval. Electronic-copy authority and exhaustive later law remain open. | 2026-11-01 (read by Ryan) |
+| **S2. [Gazette No. 33, 10 February 2023](https://ronlaw.gov.nr/assets/docs/gazettes/2023/02/Gazette%20No.%2033%20%2810%20February%202023%29.pdf)** | All 3 pages read; complete regulations 1–4 on pp 2–3. Original images checked to resolve merged native columns and bind each period/rate row. | A specific amendment with express deemed commencement, not the complete applicable chain. It replaces only the specified resident paragraphs. | 2026-11-01 (read by Ryan) |
+| **S3. [RONLAW Business Tax Act 2016, Service 6 compilation](https://ronlaw.gov.nr/assets/docs/acts/2016/Business%20Tax%20Act%202016_serv6.pdf)** | Complete BTA section 7 on physical pp 12–13, read separately in the NR business-tax source block and compared with ESTA section 3's PE wording. | Comparator for an unresolved cross-reference, not permission to replace or combine definitions. Other BTA rules require their own complete companion. | 2026-11-01 (read by Ryan) |
+| **S4. [NRO administered legislation overview](https://naurufinance.info/nro-administered-legislation/)** | Fresh official public HTML read on 1 November 2026 UTC in the NR business-tax source block; legislation links and employment summary observed. | Locator/conflict evidence only. Its monthly AUD 9,240 and stated annual AUD 110,800 do not reconcile. Do not adopt the annual figure, repair it or annualise statutory pay-period bands. | 2026-11-01 (read by Ryan) |
 
 Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

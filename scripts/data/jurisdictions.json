@@ -952,6 +952,13 @@
   "dir": "skills/nepal"
  },
  {
+  "code": "NR",
+  "name": "Nauru",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/nauru"
+ },
+ {
   "code": "NZ",
   "name": "New Zealand",
   "region": "apac",
