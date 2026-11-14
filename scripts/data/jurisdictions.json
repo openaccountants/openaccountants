@@ -301,6 +301,13 @@
   "dir": "skills/curacao"
  },
  {
+  "code": "CX",
+  "name": "Christmas Island",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/christmas-island"
+ },
+ {
   "code": "CY",
   "name": "Cyprus",
   "region": "europe",
