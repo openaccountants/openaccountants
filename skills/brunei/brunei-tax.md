@@ -1,7 +1,7 @@
 ---
 name: brunei-tax
 description: Start here for any Brunei Darussalam tax or bookkeeping question in 2026. Routes to the right Brunei skill (company tax, withholding, payroll and SPK, VAT position, personal tax, formation), states the refusals (petroleum, VAT return requests), and gives the bank-statement classification patterns for Brunei books (BIBD, Baiduri, Standard Chartered, HSBC, utilities, TAP). Brunei has no VAT or GST and no personal income tax; companies pay corporate income tax. Trigger on Brunei tax, Brunei VAT, Brunei GST, corporate tax Brunei, MOFE filing or Brunei bookkeeping.
-version: "3.0"
+version: 3.0
 jurisdiction: BN
 category: orchestrator
 tax_year: 2026
