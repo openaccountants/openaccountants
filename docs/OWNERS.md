@@ -111,6 +111,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 | IM | Isle of Man | ChatGPT; Claude finished the open work | 2026 | #783 merged 30 Oct; CIT, overview, formation, VAT and payroll rebuilt (#1013, #1015, #1016, #1020, #1021). Issue #403 open. |
 | IS | Iceland | ChatGPT; Claude finished the open work | 2026 | #782 merged 30 Oct; optimisation, overview and formation refreshed (#1012, #1014, #1019). Issue #404 open. |
 | IT | Italy | Claude | 2026 | ChatGPT PR #915 reviewed, fixed and merged 30 Oct. Issue #405 closed. |
+| JE | Jersey | Claude (import of Ryan Duguid's fork) | 2026 | Fourteen skills imported from Ryan Duguid's fork and brought to the 2026 standard (14 Nov). No country issue yet. |
 | LI | Liechtenstein | ChatGPT; Claude finishing PR #785 | 2025 | Draft PR #785 open. Issue #406 open. |
 | LT | Lithuania | Claude | 2026 | Issue #407 closed. |
 | LU | Luxembourg | Claude | 2026 | Issue #408 closed. |
@@ -141,7 +142,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 - One active writer per country. Before another writer starts, record a handover on the country issue with the topic, branch or PR, unfinished scope and next action. Inactivity or a merged PR alone does not transfer a country.
 - An independent source review does not transfer writing. Keep author and source-reviewer records. An approved accountant publishing their own professional work records their own approval in that same PR; no second accountant is required. The public label is Approved by [name]. A maintenance assignment or AI commit under a person's identity is not professional publication.
 
-This allocation covers only the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific and sub-Saharan Africa allocation and Michael's Americas, Middle East and North Africa accountability are set in the owner table above (14 November 2026). Caribbean and Middle East drafts in the #514 split are preserved contributions, not a new regional assignment. Assign Jersey or Åland work here before adding it to this table.
+This allocation covers only the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific and sub-Saharan Africa allocation and Michael's Americas, Middle East and North Africa accountability are set in the owner table above (14 November 2026). Caribbean and Middle East drafts in the #514 split are preserved contributions, not a new regional assignment. Assign Åland work here before adding it to this table.
 
 ## By jurisdiction
 
