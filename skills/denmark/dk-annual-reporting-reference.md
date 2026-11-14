@@ -84,7 +84,7 @@ These are selected **2026 reporting-law** figures, not income-tax rates or proof
 | Ordinary audit size screen | Assets DKK 4 million; net turnover DKK 8 million; average full-time employees 12 | § 135 two-year test, measurement, holding aggregation, status and disqualification rules remain required. | 2026 | https://www.retsinformation.dk/eli/lta/2026/402 |
 | Audit asset override | Assets above DKK 50 million in 2 consecutive years | Prevents ordinary audit opt-out despite satisfying the other size screen. It is not the class-B asset threshold. | 2026 | https://www.retsinformation.dk/eli/lta/2026/402 |
 | Classified risk-industry accountant report | Net turnover above DKK 5 million in 2 consecutive financial years | Class B, actual current balance-date principal industry and current order; an independent assistance report or assurance report is required under § 135(5). | 2026 | https://www.retsinformation.dk/eli/lta/2025/1488 |
-| Late annual-report fee per relevant management member | DKK 500 for first commenced month; DKK 2,000 total for second; DKK 3,000 total for third, maximum DKK 3,000 | § 150 demand-letter condition, § 151 timing and adjustments, § 152 relief and actual procedural stage apply. These are cumulative totals. | 2026 | https://www.retsinformation.dk/eli/lta/2026/402 |
+| Late annual-report fee per relevant management member | The Act's wording: 500 kr. for the 1st commenced month, i alt 2.000 kr. for the 2nd and i alt 3.000 kr. for the 3rd; at most 3.000 kr. | § 150 demand-letter condition, § 151 timing and adjustments, § 152 relief and actual procedural stage apply. These are cumulative totals. | 2026 | https://www.retsinformation.dk/eli/lta/2026/402 |
 
 ### Computation rules
 
