@@ -52,7 +52,7 @@ Individuals liable to Barbados income tax under the Income Tax Act, Cap. 73, for
 | Self-employed prepayments | 25% of the prior year's tax in each of June, September and December | Based on the prior-year return; balance with the return | BRA, self-employment: https://bra.gov.bb/Popular-Topics/Self-Employment/ |
 | Reverse tax credit eligibility | Income of BBD 25,000 or less a year and not more than BBD 2,083.33 a month; worked at least four months earning at least BBD 1,000 a month or BBD 250 a week | Employed residents | BRA, reverse tax credit: https://bra.gov.bb/Credits-Rebates/Reverse-Tax-Credit |
 | NIS, self-employed | 17.00% of insurable earnings (13.50 NI, 2.00 non-contributory, 0.50 training levy, 1.00 health service) | Plus 0.25% Resilience and Regeneration Fund on gross earnings from 1 April 2025 | NIS, contribution rates and earnings ceilings: https://www.nis.gov.bb/contribution-rates/ |
-| NIS insurable earnings ceiling 2026 | BBD 5,360 a month (BBD 64,320 a year); BBD 1,238 a week from 5 January 2026 | Contribution rates unchanged | NIS, increase in earnings ceiling 2026: https://www.nis.gov.bb/increase-in-earnings-ceiling-2026/ |
+| NIS insurable earnings ceiling 2026 | BBD 5,360 a month (BBD 64,320 a year, computed: 12 x 5,360); BBD 1,238 a week from 5 January 2026 | Contribution rates unchanged | NIS, increase in earnings ceiling 2026: https://www.nis.gov.bb/increase-in-earnings-ceiling-2026/ |
 | Withholding, non-treaty non-residents | 15% | Treaty ranges: dividends 0 to 15%, interest 5 to 15%, royalties 5 to 15%, management fees 0 to 15% | BRA, withholding tax: https://bra.gov.bb/Popular-Topics/Companies/Withholding-Tax |
 
 ### Formula
