@@ -109,7 +109,7 @@ expected:
 | Loi n. 2025-19, finance law for 2026 (64-page scan): read by OCR on 2026-11-01, all pages searched: no CGI amendment found; art. 19 adds a cashew export duty. Reopened 2026-11-14, not re-read | https://budget.sec.gouv.sn/documents/public_download/69556841-a9d4-4658-8c1e-fe230a2a028a/telechargement | 2026-11-14 (opened, not re-read) |
 | DGID calendar of annual filings: read for full table | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-14 |
 | DGID SENTAX user guide v1.1, 2026: read for contents and steps | https://www.dgid.sn/storage/uploads/guide-utilisateur-espace-connecte-1790609363.pdf | 2026-11-14 |
-| DGID communique: read for SENTAX for CME1, CME2 and CPR from 1 October 2026: full text | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-14 |
+| DGID communique, SENTAX for CME1, CME2 and CPR from 1 October 2026: read in full | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-14 |
 | DGID Entreprises page: read for portal descriptions | https://www.dgid.sn/entreprises | 2026-11-14 |
 
 Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. Free export enterprise 15% rate; 20% royalty and service withholding to non-residents; first-year instalment exemption; 5% rule as the old file worded it for non-CIT residents is carried only as art. 200.
