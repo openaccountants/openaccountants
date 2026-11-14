@@ -42,7 +42,7 @@ Red lines: Costa Rica taxes Costa Rican-source income, so only genuinely foreign
 
 ## The base
 
-Individuals: renta neta of the activity on the annual table, less credits. Small companies: renta neta on the 5% to 20% table if the period's gross income is not above CRC 119,174,000; otherwise the general corporate rate (30% per the old file, not confirmed today). Profit taken out of a company bears a further tax on distribution, not computed here.
+Individuals: renta neta of the activity on the annual table, less credits. Small companies: renta neta on the 5% to 20% table if the period's gross income is not above CRC 119,174,000; otherwise the general corporate rate (see Not yet confirmed). Profit taken out of a company bears a further tax on distribution, not computed here.
 
 ## Deadlines and filing
 
@@ -78,20 +78,18 @@ expected:
 
 ### Example 2: the CRC 119,174,000 gross income cliff
 
-A company with renta neta CRC 20,000,000 pays CRC 2,735,150 on the small table while its gross income stays at or below CRC 119,174,000. One colón more of gross income moves it to the general rate; at the 30% the old file gave, the tax would be CRC 6,000,000, CRC 3,264,850 more. Watch gross income near the ceiling; do not split the business artificially to stay under it.
+A company with renta neta CRC 20,000,000 pays CRC 2,735,150 on the small table while its gross income stays at or below CRC 119,174,000. One colón more of gross income moves the whole renta neta to the general corporate rate, which was not confirmed on an official page for this version (see Not yet confirmed): compute the cost of crossing the ceiling only once that rate is confirmed. Watch gross income near the ceiling; do not split the business artificially to stay under it.
 
 ```oa-check
-name: CR 2026 small company table against 30%
+name: CR 2026 small company table at renta neta 20 million
 inputs:
   net: 20000000
 steps:
   - small_table: 5621000 * 0.05 + (8433000 - 5621000) * 0.10 + (11243000 - 8433000) * 0.15 + (net - 11243000) * 0.20
-  - general: net * 0.30
-  - cliff_cost: general - small_table
+  - effective_rate: round(small_table / net, 4)
 expected:
   small_table: 2735150
-  general: 6000000
-  cliff_cost: 3264850
+  effective_rate: 0.1368
 ```
 
 ## Ask the client first
