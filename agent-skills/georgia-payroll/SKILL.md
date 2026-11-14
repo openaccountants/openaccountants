@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/georgia-payroll"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Georgia (country): payroll for employers (2026) v0.2
+# Georgia (country): payroll for employers (2026) v0.3
 
 An employer in Georgia withholds 20% income tax from each salary payment and pays it to the budget when the salary is paid. For staff in the funded pension scheme it also withholds the employee's 2% contribution and adds its own 2%. The state adds up to 2% on top. Both are reported on the monthly return to the Revenue Service by the 15th of the next month. Figures below are from the Tax Code of Georgia, consolidated on matsne.gov.ge to the law of 15 October 2026 (publication 247), and the Law of Georgia on Funded Pension (No 3303, 21 July 2018), Georgian consolidated text to the law of 16 September 2026.
 
@@ -27,20 +27,20 @@ An employer in Georgia withholds 20% income tax from each salary payment and pay
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Income tax on salary | 20% | 2026 | Tax Code art. 81(1), 154(1)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Non-resident's salary from a Georgian source | 20% at source | 2026 | art. 134(1)(f), same URL |
+| Non-resident's salary from a Georgian source | 20% at source | 2026 | art. 134(1)(f), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Employee funded pension contribution, withheld | 2% of taxable salary | 2026 | Law on Funded Pension art. 3(6)(b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
-| Employer funded pension contribution, at its own cost | 2% of taxable salary | 2026 | art. 3(6)(a), same URL |
-| State contribution, first GEL 24,000 of annual salary | 2% | 2026 | art. 3(6)(e.a), same URL |
-| State contribution, GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), same URL |
-| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), same URL |
-| Employer and state pension contributions | not salary of the employee | 2026 | Tax Code art. 101(3)(d) |
-| Employee's pension contribution to the individual account | exempt from income tax | 2026 | Tax Code art. 82(1)(b3) |
-| Personal use of the employer's car: tax a year by engine size | over 3,500 cm3: GEL 300; 2,500-3,500 cm3: GEL 200; under 2,500 cm3: GEL 100; hybrid: GEL 60; electric: none | 2026 | Tax Code art. 101(2^1), (2^3) |
-| Salary paid by a small business, not taxed at source | up to GEL 6,000 in a year in total, if the business got the status this year or had gross income up to GEL 50,000 last year | 2026 | Tax Code art. 94(4) |
-| Salary paid in farming, not taxed | if the employer's gross income from farming is up to GEL 200,000, until 1 January 2028 | 2026 | Tax Code art. 82(1)(z1) |
-| Missed pension contribution | GEL 300 fine per breach | 2026 | Law on Funded Pension art. 37^3(1) |
-| Employee not entered in the Register of Hired Employees | GEL 200 per employee | 2026 | Tax Code art. 288^5 |
-| Penalty interest on late tax | 0.05% a day | 2026 | Tax Code art. 272(4) |
+| Employer funded pension contribution, at its own cost | 2% of taxable salary | 2026 | art. 3(6)(a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, first GEL 24,000 of annual salary | 2% | 2026 | art. 3(6)(e.a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Employer and state pension contributions | not salary of the employee | 2026 | Tax Code art. 101(3)(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Employee's pension contribution to the individual account | exempt from income tax | 2026 | Tax Code art. 82(1)(b3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Personal use of the employer's car: tax a year by engine size | over 3,500 cm3: GEL 300; 2,500-3,500 cm3: GEL 200; under 2,500 cm3: GEL 100; hybrid: GEL 60; electric: none | 2026 | Tax Code art. 101(2^1), (2^3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary paid by a small business, not taxed at source | up to GEL 6,000 in a year in total, if the business got the status this year or had gross income up to GEL 50,000 last year | 2026 | Tax Code art. 94(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary paid in farming, not taxed | if the employer's gross income from farming is up to GEL 200,000, until 1 January 2028 | 2026 | Tax Code art. 82(1)(z1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Missed pension contribution | GEL 300 fine per breach | 2026 | Law on Funded Pension art. 37^3(1), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Employee not entered in the Register of Hired Employees | GEL 200 per employee | 2026 | Tax Code art. 288^5, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax | 0.05% a day | 2026 | Tax Code art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -192,4 +192,4 @@ Not yet confirmed: no Pension Fund or Revenue Service guidance was read to confi
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

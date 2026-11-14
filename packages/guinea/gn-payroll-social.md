@@ -3,15 +3,16 @@ name: gn-payroll-social
 description: "Guinea CNSS contribution working method for ordinary employees covered by the general social-security regime in 2026. Use it to identify registration evidence, assemble contributory remuneration, apply the monthly floor and ceiling published by CNSS, calculate employer and employee contributions, and reconcile the declaration and payment file. It distinguishes combined branch funding from employer-only costs and separates CNSS from salary income tax. The sources conflict on the remittance deadline: this Guide reports both and uses the earlier published agency date as an operational control without asserting that the decree changed. Special-category bases, partial months, multi-employer allocation and disputed assessments require separate review. Current salary-tax bands and complete payroll compliance remain unresolved."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 1.1
+version: 1.2
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Guinea payroll and social contributions v1.1
+# Guinea payroll and social contributions v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

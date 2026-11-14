@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cv-corporate-income-tax"
   jurisdiction: "CV"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Cape Verde Corporate Income Tax v0.2
+# Cape Verde Corporate Income Tax v0.3
 
 ## Who this applies to
 
@@ -27,8 +27,8 @@ Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 Janu
 | TEU (REMPE art. 25) | 4% of gross sales | 2026 | https://boe.incv.cv/Bulletins/Download/1891 |
 | TEU minimum, micro company turnover up to CVE 1,000,000 | CVE 30,000 a year, pro rata in a start year | 2026 | same |
 | TEU retention by organised-accounts payers (art. 25-A) | 4% on account of the quarter | 2026 | https://boe.incv.cv/Bulletins/Download/5549 |
-| REMPE micro | Turnover up to CVE 5,000,000 and/or up to 5 workers | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
-| REMPE small | Turnover CVE 5,000,000 to 10,000,000 and/or 6 to 10 workers | 2026 | same |
+| REMPE micro | Turnover up to 5 mil contos (CVE 5,000,000, computed: 1 conto = CVE 1,000) and/or up to 5 workers | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
+| REMPE small | Turnover from 5 to 10 mil contos (CVE 5,000,000 to 10,000,000, computed: 1 conto = CVE 1,000) and/or 6 to 10 workers | 2026 | same |
 | REMPE exit | Over 30% above the art. 3(1)(c) turnover in a year: excluded next year | 2026 | https://boe.incv.cv/Bulletins/Download/6150 |
 | Qualified minimum tax (IMG) | 15%, groups with EUR 750,000,000 revenue in 2 of the prior 4 years; detail in separate rules | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Capital income withholding (art. 85) | 20%, some items 10%; on account for organised accounts, otherwise final | 2026 | https://boe.incv.cv/Bulletins/Download/1957 |
@@ -124,19 +124,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 82/VIII/2015, Codigo do IRPC, BO I 3, 8 Jan 2015 (original text): arts 59, 84 to 86, 96, annual return read | https://boe.incv.cv/Bulletins/Download/1957 | 2026-11-01 |
-| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: arts on the TEU, 25 and 26 read | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-01 |
-| Lei 16/X/2022, Budget 2023: arts 32 to 34 read | https://boe.incv.cv/Bulletins/Download/4568 | 2026-11-01 |
-| Lei 35/X/2023, Budget 2024: amendments to IRPC, REMPE and IVA read | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-01 |
-| Lei 45/X/2024, Budget 2025: arts 25 and 26 read | https://boe.incv.cv/Bulletins/Download/6150 | 2026-11-01 |
-| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: all months read | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-01 |
-| DNRE, REMPE leaflet, 2015: all read | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-01 |
-| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 82/VIII/2015, Codigo do IRPC, BO I 3, 8 Jan 2015 (original text): arts 59, 84 to 86, 96, annual return read | https://boe.incv.cv/Bulletins/Download/1957 | 2026-11-14 |
+| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: read for arts on the TEU, 25 and 26 | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-14 |
+| Lei 16/X/2022, Budget 2023: arts 32 to 34 read | https://boe.incv.cv/Bulletins/Download/4568 | 2026-11-14 |
+| Lei 35/X/2023, Budget 2024: read for amendments to IRPC, REMPE and IVA | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-14 |
+| Lei 45/X/2024, Budget 2025: arts 25 and 26 read | https://boe.incv.cv/Bulletins/Download/6150 | 2026-11-14 |
+| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: read for all months | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-14 |
+| DNRE, REMPE leaflet, 2015: read in full | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-14 |
+| DNRE, forms and leaflets page: read for the list of forms and leaflets | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-14 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Fire surcharge (Taxa de Incendio) of 2% in Praia and Mindelo and the 20.40% effective rate: the tax exists in the budget, the rate was not found; the art. 85 list of 10% items; old rates of 10% on bonds, 5% on listed bonds and full dividend relief; 20% on royalties; 15% on services to non-residents; whether the third instalment is 30% (calendar) or 20% (2015 text; the calendar is followed); the calendar month August against July in the 2015 text; loss carry-forward period after the 2024 change; whether the TEU 2.8% and 3.2% codes in the DPR FAQ are current; the TEU reductions in art. 41; any later change to the 4% rate.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -3,15 +3,16 @@ name: gn-vat-gst
 description: "Guinea ordinary VAT working method for 2026, covering franchise and VAT-option tests, registration keys, supply classification, tax timing, taxable base, output tax, documented input deductions, the unchanged-goods reseller credit cap, monthly returns and credit/refund controls. Use it to distinguish exempt, zero-rated and outside-scope supplies; service cash receipts from invoice timing; and normal input tax from reverse charge or client withholding. It corrects the old fifteen-day return deadline to the enacted tenth-day rule and links the separate invoice-field control. Establish that the cited source versions govern the actual period, including any October rectification, before live use. Special sectors, detailed exemptions, mixed-use adjustments, electronic services and complete refund/portal procedures remain unresolved."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Guinea VAT, timing and input-credit method v1.1
+# Guinea VAT, timing and input-credit method v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
