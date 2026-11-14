@@ -1,10 +1,11 @@
 ---
 name: cameroon-income-tax
 description: Use this skill whenever asked about Cameroon personal income tax (IRPP) for salaried or self-employed individuals. Trigger on phrases like "how much income tax do I pay in Cameroon", "IRPP", "impot sur le revenu", "CNPS contributions", "PAYE Cameroon", "IGS", "Impot General Synthetique", "Centre de Gestion Agree", "CGA", "barème IRPP", "Credit Foncier", "FNE", "monthly salary tax Cameroon", "net taxable income", "minimum tax", or any question about filing or computing income tax for a salaried or self-employed client in Cameroon. Also trigger when preparing or reviewing a monthly PAYE return, the annual recapitulative declaration, the DIPE employer summary, computing CNPS social security, or advising on the IGS/actual-earnings turnover regimes. This skill covers the progressive IRPP scale (CAC-inclusive), CNPS branches, Credit Foncier/FNE, council tax and CRTV royalty, the IGS small-business regime, filing deadlines, and penalties. ALWAYS read this skill before touching any Cameroon income tax work.
-version: 0.2
+version: 0.3
 jurisdiction: CM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: income-tax
 ---
 
-# Cameroon income tax (IRPP) v0.2
+# Cameroon income tax (IRPP) v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -62,10 +63,7 @@ Salaried, passive-income and non-professional taxpayers are covered by art. 93 u
 | Credit Foncier | Employee 1%; employer 1.5% | CGI annex law art. 6: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | National Employment Fund (FNE) | 1% employer | same |
 | CRTV audiovisual fee, monthly pay over XAF 1,000,000 | XAF 13,000 | CGI annex law art. 3: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| CNPS pension | Unverified: 4.2% employee, 4.2% employer, ceiling XAF 750,000 a month. cnps.cm did not open | n/a |
-| CNPS family and work risk | Unverified: 7% and 1.75% to 5% employer; voluntary 8.4% | n/a |
 | Development tax, employees, base pay over XAF 500,000 a month | XAF 30,000 a year; lower bands from XAF 3,000 start at XAF 62,000 | CGI art. C 86: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Minimum wage | Unverified: XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State | n/a |
 
 ## The base
 
@@ -527,7 +525,7 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 | Arrete 00001/MINFI/DGI of 5 Jan 2026 on withholding: arts. 1 to 9 | https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf | 2026-11-01 |
 | CNPS site | https://www.cnps.cm | 2026-11-01 (refused: 403 to fetch, no page text in browser) |
 
-Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre.
+Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre; CNPS figures moved out of the rates table: pension 4.2% employee and 4.2% employer with ceiling XAF 750,000 a month, family 7% and work risk 1.75% to 5% employer, voluntary 8.4%; minimum wage XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State (old skill; cnps.cm did not open again on 2026-11-14).
 
 ## Disclaimer
 
