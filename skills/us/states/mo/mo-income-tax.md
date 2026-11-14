@@ -39,7 +39,7 @@ USD, 2026; same schedule for each taxpayer. On a married combined Missouri retur
 | Individual estimate trigger | Expected Missouri tax after credits/withholding **100 or more** | [2026 MO-1040ES, item 1](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Missouri-source business income subtraction | 20% of qualifying positive combined business income, no duplicate subtraction | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
 | State HOH / qualifying widow(er) additional exemption | 1,400; same filing status as federal return | [2026 estimate line 5](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
-| Federal-income-tax deduction cap | 5,000 other returns; 10,000 married combined, after income-based percentage (in words on the page in 143.171) | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
+| Federal-income-tax deduction cap | 5,000 other returns; 10,000 married combined, after income-based percentage (in words on the page) | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
 
 Published bracket constants are rounded whole-dollar amounts. Do not substitute an independently accumulated 262.86 for the published 263. Annual tax-table lookup and whole-dollar rounding can differ from a rate-schedule estimate. Federal standard-deduction amounts have their home in the federal skill; obtain the applicable 2026 federal input and apply Missouri's rules, rather than copying old 2025 amounts.
 
