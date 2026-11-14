@@ -12,19 +12,20 @@ description: >
   to the payroll skill. Includes statutory source dates, filing/payment and neglect
   procedures and two recomputable examples. Individual benefit awards and MYEL
   agricultural/grant schemes require their own entitlement decisions.
-version: 1.6
+version: 1.7
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - fi-income-tax
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Finland YEL and self-employed social insurance v1.6
+# Finland YEL and self-employed social insurance v1.7
 
 **Tax year:** 2026. Ordinary entrepreneur contributions, read together with [employee payroll/social insurance](fi-employer-payroll.md). Independent source-review evidence is in the [pack README](README.md).
 
@@ -52,16 +53,16 @@ A paid employee's pension/unemployment/health/accident/group-life duties are com
 
 | Item | Applicable 2026 figure | Statutory / official source |
 |---|---|---|
-| Annual confirmed-income minimum / maximum | EUR 9,423.09 / EUR 214,000, indexed statutory values | [YEL Act, sections 4, 89, 112][yel]; [ETK current values][etk]; [Työeläke income][income] |
-| Standard pension contribution | 24.40% for all ages | [YEL Act, section 114][yel]; [ETK 2026 contribution][etk] |
-| Eligible startup contribution | 78% of standard, i.e. 22% reduction, first 48 qualifying months; second period can use remainder | [YEL Act, section 115][yel] |
-| Working Oy manager | More than 30% personally / more than 50% with family shares or votes; indirect-control rules apply | [YEL Act, section 3][yel] |
-| Review transition | Specified EUR 4,000 increase cap absent consent; history/transition below | [YEL Act, Acts 1157/2022 and 1400/2025 commencement][yel] |
-| Contribution flexibility | Increase 10–100% / decrease 10–20%; decrease at most three of any seven consecutive years; eligibility restrictions apply | [YEL Act, sections 116–117][yel] |
-| Ordinary pension accrual | 1.5% of annual pensionable earnings, subject to paid-premium/other pension rules | [YEL Act, sections 61, 67][yel]; [ETK 2026 changes][changes] |
-| Health care on work base | 1.10% of the statutory substituted/deducted base | [Health Insurance Act, chapter 18 section 14][health]; [Decree 1026/2025, section 1][health-rates] |
-| General daily allowance | 0.88% of full qualifying wage+work base if aggregate annual wage/work income at least EUR 17,255; zero below | [Health Insurance Act, chapter 18 section 15][health]; [Decree 1026/2025, section 2][health-rates] |
-| YEL daily-allowance supplement | 0.23% of YEL confirmed income, also below that aggregate threshold, subject to age/coverage | [Decree 1026/2025, section 2][health-rates] |
+| Annual confirmed-income minimum / maximum | EUR 9,423.09 / EUR 214,000, indexed statutory values | [YEL Act, sections 4, 89, 112](https://www.finlex.fi/fi/lainsaadanto/2006/1272); [ETK current values](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/); [Työeläke income](https://www.tyoelake.fi/en/pensions-for-the-self-employed/what-is-yel-income/) |
+| Standard pension contribution | 24.40% for all ages | [YEL Act, section 114](https://www.finlex.fi/fi/lainsaadanto/2006/1272); [ETK 2026 contribution](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) |
+| Eligible startup contribution | 78% of standard, i.e. 22% reduction, first 48 qualifying months; second period can use remainder | [YEL Act, section 115](https://www.finlex.fi/fi/lainsaadanto/2006/1272) |
+| Working Oy manager | More than 30% personally / more than 50% with family shares or votes; indirect-control rules apply | [YEL Act, section 3](https://www.finlex.fi/fi/lainsaadanto/2006/1272) |
+| Review transition | Specified EUR 4,000 increase cap absent consent; history/transition below | [YEL Act, Acts 1157/2022 and 1400/2025 commencement](https://www.finlex.fi/fi/lainsaadanto/2006/1272) |
+| Contribution flexibility | Increase 10–100% / decrease 10–20%; decrease at most three of any seven consecutive years; eligibility restrictions apply | [YEL Act, sections 116–117](https://www.finlex.fi/fi/lainsaadanto/2006/1272) |
+| Ordinary pension accrual | 1.5% of annual pensionable earnings, subject to paid-premium/other pension rules | [YEL Act, sections 61, 67](https://www.finlex.fi/fi/lainsaadanto/2006/1272); [ETK 2026 changes](https://www.etk.fi/en/topical-issues/how-earnings-related-pensions-will-change-in-2026/) |
+| Health care on work base | 1.10% of the statutory substituted/deducted base | [Health Insurance Act, chapter 18 section 14](https://www.finlex.fi/fi/lainsaadanto/2004/1224); [Decree 1026/2025, section 1](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026) |
+| General daily allowance | 0.88% of full qualifying wage+work base if aggregate annual wage/work income at least EUR 17,255; zero below | [Health Insurance Act, chapter 18 section 15](https://www.finlex.fi/fi/lainsaadanto/2004/1224); [Decree 1026/2025, section 2](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026) |
+| YEL daily-allowance supplement | 0.23% of YEL confirmed income, also below that aggregate threshold, subject to age/coverage | [Decree 1026/2025, section 2](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026) |
 
 Do not read nominal base-year statutory euros as current indexed values. Likewise the pension provider's invoice dates, timing adjustment and actual policy-period amount are not a universal annual rate divided by twelve. [YEL Act, sections 89, 114][yel].
 
