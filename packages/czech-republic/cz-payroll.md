@@ -1,14 +1,15 @@
 ---
 name: cz-payroll
 description: "Use for running Czech payroll as an employer in 2026. Covers registration with ČSSZ, the tax office and health insurers under the new single monthly employer report (JMHZ), the monthly gross-to-net sequence (employee social insurance 7.1%, health insurance 4.5%, the 15% and 23% tax advance, the signed prohlášení k dani, the CZK 2,570 monthly taxpayer credit and child credits), DPP and DPČ agreements and the 15% withholding tax below CZK 12,000 and CZK 4,500, the 2026 minimum wage of CZK 22,400, the CZK 129.50 tax-free meal contribution, sick pay for the first 14 days (náhrada mzdy), the annual reconciliation and vyúčtování, payslips, record keeping and penalties. Trigger on: Czech payroll, mzdy, výplatní páska, záloha na daň, srážková daň, DPP, DPČ, prohlášení poplatníka, JMHZ, stravenkový paušál, náhrada mzdy, roční zúčtování. Out of scope: cz-employee-income-tax (the employee's own return), cz-employee-contributions (contribution rules in depth), cz-social-health (self-employed), cz-cross-border."
-version: 0.3
+version: 0.4
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Czech Republic: running payroll (2026)
@@ -215,29 +216,29 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Finanční správa, employment income for 2026 (rates, average wage, credits, child bonus, DPP and DPČ thresholds, meal and home office limits, car benefit, withholding tax, forms) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/obecne-informace | 2026-10-23 |
-| Finanční správa, Q&A on employment income for 2025 and 2026 (vyúčtování deadlines) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/dotazy-a-odpovedi/2026/aktualni-dotazy-a-odpovedi-k-dani-z | 2026-10-23 |
-| Finanční správa, mandatory employer contribution to old-age savings products (Act 324/2025 Sb.) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/informace-stanoviska-sdeleni/2026/informace-k-povinnemu-prispevku-na-produkty-na-stari | 2026-10-23 |
-| ČSSZ, main social security figures for 2026 (sickness reduction thresholds) | https://www.cssz.gov.cz/web/cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-10-23 |
-| MPSV, minimum wage 2026 | https://www.mpsv.cz/minimalni-mzda | 2026-10-23 |
-| ČSSZ, social insurance rates | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-10-23 |
-| ČSSZ, maximum assessment base | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-10-23 |
-| ČSSZ, calculation of contributions | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-10-23 |
-| ČSSZ, payment and due dates | https://www.cssz.gov.cz/web/cz/platba-a-terminy | 2026-10-23 |
-| ČSSZ, who files the JMH, deadlines and content | https://www.cssz.gov.cz/web/cz/kdo-podava-jmh- | 2026-10-23 |
-| ČSSZ, what JMHZ is, and the list of forms it replaces (XLSX attached to the page) | https://www.cssz.gov.cz/web/cz/co-je-jmhz- | 2026-10-23 |
-| ČSSZ, employer evidence | https://www.cssz.gov.cz/web/cz/evidence-zamestnavatelu-prihlaseni-zmena-odhlaseni- | 2026-10-23 |
-| ČSSZ, employee evidence | https://www.cssz.gov.cz/web/cz/evidence-zamestnancu-prihlaseni-zmena-odhlaseni- | 2026-10-23 |
-| MPSV, JMHZ project site (phases and deadlines) | https://jmhz.mpsv.cz | 2026-10-23 |
-| Income Taxes Act 586/1992 Sb., § 6 (incl. § 6(9)(p)), § 35ba-35d, § 36, § 38d, § 38h, § 38ch, § 38j, § 38k | https://e-sbirka.gov.cz/sb/1992/586 | 2026-10-23 |
-| Act 360/2025 Sb. (JMHZ amendments; čl. V, VI, VII (transitional rules: the 2026 vyúčtování is still due), XXXIV) | https://e-sbirka.gov.cz/sb/2025/360 | 2026-10-23 |
-| Act 323/2025 Sb. on the single monthly employer report, § 28, § 35 | https://e-sbirka.gov.cz/sb/2025/323 | 2026-10-23 |
-| Act 592/1992 Sb. on health insurance contributions, § 2, § 3, § 5, § 18 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-10-23 |
-| Act 48/1997 Sb. on public health insurance, § 5, § 9, § 10 | https://e-sbirka.gov.cz/sb/1997/48 | 2026-10-23 |
-| Act 589/1992 Sb. on social insurance contributions, § 5, § 20 | https://e-sbirka.gov.cz/sb/1992/589 | 2026-10-23 |
-| Act 187/2006 Sb. on sickness insurance, § 6, § 7a, § 21 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-10-23 |
-| Tax Code 280/2009 Sb., § 33, § 247a, § 250, § 251a, § 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
-| Labour Code 262/2006 Sb., § 75, § 76, § 142, § 192, § 194, § 354, § 356 | https://e-sbirka.gov.cz/sb/2006/262 | 2026-10-23 |
-| Act 582/1991 Sb. on social security administration, § 35a | https://e-sbirka.gov.cz/sb/1991/582 | 2026-10-23 |
+| Read for Average wage used for tax limits, Tax advance rate, Annual 23% threshold (36 x average wage), Basic taxpayer credit: Finanční správa, employment income for 2026 (rates, average wage, credits, child bonus, DPP and DPČ thresholds, meal and home office limits, car benefit, withholding tax, forms) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/obecne-informace | 2026-11-14 |
+| Read for the points the body cites to it: Finanční správa, Q&A on employment income for 2025 and 2026 (vyúčtování deadlines) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/dotazy-a-odpovedi/2026/aktualni-dotazy-a-odpovedi-k-dani-z | 2026-11-14 |
+| Read for Mandatory employer contribution to an old-age savings product (category 3 risky work, at least 3 such shifts in the month, once the employee has notified the employer): Finanční správa, mandatory employer contribution to old-age savings products (Act 324/2025 Sb.) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/zamestnanci-zamestnavatele/informace-stanoviska-sdeleni/2026/informace-k-povinnemu-prispevku-na-produkty-na-stari | 2026-11-14 |
+| Read for Sick pay reduction thresholds (hourly, for náhrada mzdy): ČSSZ, main social security figures for 2026 (sickness reduction thresholds) | https://www.cssz.gov.cz/web/cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-11-14 |
+| Read for Minimum wage, 40-hour week: MPSV, minimum wage 2026 | https://www.mpsv.cz/minimalni-mzda | 2026-11-14 |
+| Read for Employee social insurance, Employer social insurance: ČSSZ, social insurance rates | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-11-14 |
+| Read for Maximum annual social insurance base: ČSSZ, maximum assessment base | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, calculation of contributions | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, payment and due dates | https://www.cssz.gov.cz/web/cz/platba-a-terminy | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, who files the JMH, deadlines and content | https://www.cssz.gov.cz/web/cz/kdo-podava-jmh- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, what JMHZ is, and the list of forms it replaces (XLSX attached to the page) | https://www.cssz.gov.cz/web/cz/co-je-jmhz- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, employer evidence | https://www.cssz.gov.cz/web/cz/evidence-zamestnavatelu-prihlaseni-zmena-odhlaseni- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, employee evidence | https://www.cssz.gov.cz/web/cz/evidence-zamestnancu-prihlaseni-zmena-odhlaseni- | 2026-11-14 |
+| Read for the points the body cites to it: MPSV, JMHZ project site (phases and deadlines) | https://jmhz.mpsv.cz | 2026-11-14 |
+| Income Taxes Act 586/1992 Sb., § 6 (incl. § 6(9)(p)), § 35ba-35d, § 36, § 38d, § 38h, § 38ch, § 38j, § 38k | https://e-sbirka.gov.cz/sb/1992/586 | 2026-11-14 |
+| Read for the points the body cites to it: Act 360/2025 Sb. (JMHZ amendments; čl. V, VI, VII (transitional rules: the 2026 vyúčtování is still due), XXXIV) | https://e-sbirka.gov.cz/sb/2025/360 | 2026-11-14 |
+| Act 323/2025 Sb. on the single monthly employer report, § 28, § 35 | https://e-sbirka.gov.cz/sb/2025/323 | 2026-11-14 |
+| Act 592/1992 Sb. on health insurance contributions, § 2, § 3, § 5, § 18 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-11-14 |
+| Act 48/1997 Sb. on public health insurance, § 5, § 9, § 10 | https://e-sbirka.gov.cz/sb/1997/48 | 2026-11-14 |
+| Act 589/1992 Sb. on social insurance contributions, § 5, § 20 | https://e-sbirka.gov.cz/sb/1992/589 | 2026-11-14 |
+| Act 187/2006 Sb. on sickness insurance, § 6, § 7a, § 21 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-11-14 |
+| Tax Code 280/2009 Sb., § 33, § 247a, § 250, § 251a, § 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-11-14 |
+| Labour Code 262/2006 Sb., § 75, § 76, § 142, § 192, § 194, § 354, § 356 | https://e-sbirka.gov.cz/sb/2006/262 | 2026-11-14 |
+| Act 582/1991 Sb. on social security administration, § 35a | https://e-sbirka.gov.cz/sb/1991/582 | 2026-11-14 |
 
 Not yet confirmed: whether the health insurance minimum base applies to a worker insured only through a DPP or DPČ (Act 592/1992 Sb. § 3(8) does not list them; the examples avoid the point); how the employee's one-third health share is rounded when 13.5% of the base does not divide by three (the examples use bases where it does); the legal basis, and the 2026 form, of any monthly statement each health insurer asks employers for (JMHZ does not replace it under the ČSSZ list); the current Civil Code default interest rate used for late-payment interest and penále (not given on the pages read); how the reduced hourly figure for sick pay is rounded when it is not a whole number of haléře (Labour Code § 192(2) applies the sickness benefit method "in a similar way"; Example 3 uses earnings below the first threshold, where the point does not arise).

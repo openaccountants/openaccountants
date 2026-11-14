@@ -7,18 +7,20 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/spain-financial-statements"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-09-23"
+  last_updated: "2026-11-14"
 ---
 
 # Spanish annual accounts: the cuentas anuales, the models, the audit and the deposit
 
 How a Spanish company draws up its annual accounts, which official model it must use, which size tests decide the abbreviated forms and the audit, and how the accounts are deposited at the Registro Mercantil. Figures are for tax year 2026. Almost every threshold in this area is printed in the Ley de Sociedades de Capital and in the accounting decrees in WORDS, not in digits, so this Guide prints them in words too: writing them as amounts would put a number in the Guide that no official page carries. The deposit models in force are the ones approved by the resolution of 19 May 2026; the accounting and company law texts are consolidated statutes that carry no year of their own.
 
-## Spain financial statements: Guide version 2.0
+## Scope
+
+**Spain financial statements: Guide version 2.0.** The annual accounts of a Spanish SL or SA for financial years closing in 2026: which plan and which models, the memoria, the audit test and the formulate, approve and deposit clock at the Registro Mercantil. The books themselves are `spain-bookkeeping`; tax is `es-corporate-tax`.
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Spain (Reino de España) |
 | Currency | EUR |
@@ -27,9 +29,9 @@ How a Spanish company draws up its annual accounts, which official model it must
 | Supporting legislation | Real Decreto 1514/2007, Plan General de Contabilidad; Real Decreto 1515/2007, Plan General de Contabilidad de Pymes; Ley 22/2015 de Auditoría de Cuentas; Real Decreto 2/2021, its regulation; Real Decreto 1784/1996, Reglamento del Registro Mercantil |
 | Accounting standards | Plan General de Contabilidad, or the Plan General de Contabilidad de Pymes with the optional microempresa criteria |
 | Financial year | Whatever the articles say. Where the articles are silent, article 26 of the Ley de Sociedades de Capital says the financial year ends on the thirty first of December |
-| Formulation deadline | Three months from the close of the financial year (article 253.1) |
-| Meeting deadline | The ordinary general meeting is held within the first six months of each financial year (article 164.1) |
-| Filing deadline | Within the month following approval of the accounts (article 279.1) |
+| Formulation deadline | Three months from the close of the financial year (article 253.1, https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544) |
+| Meeting deadline | The ordinary general meeting is held within the first six months of each financial year (article 164.1, https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544) |
+| Filing deadline | Within the month following approval of the accounts (article 279.1, https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544) |
 | Latest ordinary filing | End of July for a company whose year ends on the thirty first of December. DERIVED, not published: no official page prints this date. It is six months (article 164.1) plus one month (article 279.1), and it holds only where the year ends on the thirty first of December AND the meeting is held on the last day of the six month window. A company that approves its accounts in April must deposit them in May, and a year ending on another date moves the whole thing |
 | Filing fee | Set by the registry tariff. No page on the official hosts this Guide may cite prints it, so no amount is given here |
 | Digital filing | Electronic deposit through the registrars' portal (registradores.org), or on paper at the registry |
@@ -63,11 +65,11 @@ The three size tests below are the ones this Guide owns for the filing and audit
 
 **Abbreviated balance sheet and abbreviated profit and loss thresholds**  _(Art. 257, Art. 258 TRLSC)_
 
-| Criterion | Abbreviated balance sheet, article 257 | Abbreviated profit and loss account, article 258 |
-| --- | --- | --- |
-| Total activo (total assets) | Not above four million euros | Not above eleven million four hundred thousand euros |
-| Cifra de negocios (net annual turnover) | Not above eight million euros | Not above twenty two million eight hundred thousand euros |
-| Empleados (average employees in the year) | Not more than fifty | Not more than two hundred and fifty |
+| Criterion | Abbreviated balance sheet, article 257 | Abbreviated profit and loss account, article 258 | Source |
+| --- | --- | --- | --- |
+| Total activo (total assets) | Not above four million euros | Not above eleven million four hundred thousand euros | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Cifra de negocios (net annual turnover) | Not above eight million euros | Not above twenty two million eight hundred thousand euros | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Empleados (average employees in the year) | Not more than fifty | Not more than two hundred and fifty | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 
 - Every one of the six amounts above is printed in the Ley de Sociedades de Capital in words. The law does not print them as digits anywhere, so neither does this Guide.
 - **The two tests are independent.** A company can qualify for the abbreviated profit and loss account and still be barred from the abbreviated balance sheet, and that combination changes what it must file.
@@ -84,11 +86,11 @@ The three size tests below are the ones this Guide owns for the filing and audit
 
 **Microempresa criteria, article 4 of Real Decreto 1515/2007**
 
-| Criterion | Threshold |
-| --- | --- |
-| Total activo | Not above one million euros |
-| Cifra de negocios | Not above two million euros |
-| Empleados | Not more than ten |
+| Criterion | Threshold | Source |
+| --- | --- | --- |
+| Total activo | Not above one million euros | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966 |
+| Cifra de negocios | Not above two million euros | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966 |
+| Empleados | Not more than ten | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966 |
 
 - These are printed in the decree in words as well ("el millón de euros", "los dos millones de euros", "diez").
 - **The criteria live in article 4, not article 2.** The earlier version of this Guide cited article 2 for them. Article 2 is the scope of the Pymes plan; article 4 is the microempresa option inside it.
@@ -347,13 +349,12 @@ The memoria completes, expands and comments on the other documents (article 259 
 
 **The fine for filing late (article 283 of the Ley de Sociedades de Capital)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
-| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" |
-| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 
 - **Who is fined.** The company, not the directors, and the fine is imposed by the Instituto de Contabilidad y Auditoría de Cuentas.
 - **How it is sized.** By the company's total assets and its sales figure, both taken from the last year declared to the tax administration. The company must supply those figures; not supplying them counts against it. Where they are not available the fine is set from the share capital, which the registry supplies (article 283.2).
@@ -371,11 +372,11 @@ The memoria completes, expands and comments on the other documents (article 259 
 
 **Audit exemption thresholds**  _(Art. 263 TRLSC)_
 
-| Criterion | Threshold for the exemption |
-| --- | --- |
-| Total activo (total assets) | Not above two million eight hundred and fifty thousand euros |
-| Cifra neta de negocios (net annual turnover) | Not above five million seven hundred thousand euros |
-| Número medio de empleados (average employees in the year) | Not more than fifty |
+| Criterion | Threshold for the exemption | Source |
+| --- | --- | --- |
+| Total activo (total assets) | Not above two million eight hundred and fifty thousand euros | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Cifra neta de negocios (net annual turnover) | Not above five million seven hundred thousand euros | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Número medio de empleados (average employees in the year) | Not more than fifty | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 
 - All three are printed in the Ley de Sociedades de Capital in words. The earlier version of this Guide printed them as amounts and stated them the wrong way round, as thresholds a company must EXCEED to be audited, with a total row that did not add up. The statute frames them as ceilings a company must stay at or below, two out of three, for two years running, in order to escape the audit.
 - **Cessation of the audit obligation, and this sentence is a reading, not the statute's words.** Article 263.2 states the exception and states how the facility is lost; it does not spell out the return journey. This Guide takes it that a company that was audited and then meets two of the three at the close of two consecutive years falls back inside the exception from then on, which is the natural reading of the same sentence. An accountant should confirm that before relying on it, because nothing in article 263 says it in those terms.
@@ -394,12 +395,11 @@ The first additional provision of Ley 22/2015 says these entities must be audite
 
 **The two limits the Government set by royal decree**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
-| Subsidies or aid from public budgets or European Union funds received in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" |
-| Public sector contracts entered into in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" |
-| Share of net annual turnover those contracts must ALSO exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Subsidies or aid from public budgets or European Union funds received in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Public sector contracts entered into in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Share of net annual turnover those contracts must ALSO exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
 
 - **The two contract conditions are cumulative**, the accumulated amount AND the share of turnover. The subsidies condition stands on the amount alone.
 - **The years caught are not the same.** Subsidies pull in the accounts of the year of receipt AND the years in which the assisted operations or investments are carried out. Public contracts pull in the accounts of that financial year AND the following one.
@@ -435,6 +435,15 @@ Both Guides touch the annual accounts. They are written to agree; if they ever d
 | The VAT registers and the return | `es-vat-return` |
 | What the invoicing software must do, and the business to business mandate | `spain-einvoice` |
 
+## Ask the client first
+
+- **What are the total assets, the net turnover and the average headcount at the close of each of the last two financial years?** Three tests hang on them, they are tested at the close and not on an average, and two of three is enough.
+- **Is the company part of a group?** Group figures replace the company's own in the accounting plan test, and a company in a group that consolidates cannot use the Pymes plan at all.
+- **Did the company receive public subsidies, or contract with the public sector, during the year?** Either can force an audit on a company that sits inside the article 263.2 exception and would otherwise not be audited at all, and the contract trigger also catches the following year.
+- **Which financial year do the articles set, and has it ever been changed?** Every deadline in this Guide runs from the close, and a short or changed year moves all of them.
+- **Has an auditor been appointed, and when?** The appointment must be made before the end of the year to be audited. An appointment made afterwards does not cure the gap; the registrar appoints instead.
+- **Were last year's accounts deposited, and is the registry sheet open?** Ask for the deposit receipt. A closed sheet blocks every other filing the client may be waiting on.
+
 ## The method, step by step
 
 1. **Fix the financial year and the two prior years' figures first.** Article 26 of the [Ley de Sociedades de Capital](https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544) ends the year on the thirty first of December where the articles are silent. Write down the total assets, the net turnover and the average headcount at the CLOSE of each of the last two financial years. Every question below turns on those six numbers, and on a group they are the group's, not the company's.
@@ -446,14 +455,33 @@ Both Guides touch the annual accounts. They are written to agree; if they ever d
 7. **Deposit within the month after approval**, on the models approved by the [resolution of 19 May 2026](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11581), with the documents listed in article 366.1 of the [Reglamento del Registro Mercantil](https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533), the beneficial owner declaration, and the statement about the re-formulation option in the approval certificate.
 8. **Diary the closure date, not the filing date.** Article 378.1 of the Reglamento del Registro Mercantil closes the sheet one year after the YEAR END, which for a calendar year company is five months after the ordinary filing deadline has already passed.
 
-## Ask the client first
+## Worked cases
 
-- **What are the total assets, the net turnover and the average headcount at the close of each of the last two financial years?** Three tests hang on them, they are tested at the close and not on an average, and two of three is enough.
-- **Is the company part of a group?** Group figures replace the company's own in the accounting plan test, and a company in a group that consolidates cannot use the Pymes plan at all.
-- **Did the company receive public subsidies, or contract with the public sector, during the year?** Either can force an audit on a company that sits inside the article 263.2 exception and would otherwise not be audited at all, and the contract trigger also catches the following year.
-- **Which financial year do the articles set, and has it ever been changed?** Every deadline in this Guide runs from the close, and a short or changed year moves all of them.
-- **Has an auditor been appointed, and when?** The appointment must be made before the end of the year to be audited. An appointment made afterwards does not cure the gap; the registrar appoints instead.
-- **Were last year's accounts deposited, and is the registry sheet open?** Ask for the deposit receipt. A closed sheet blocks every other filing the client may be waiting on.
+### Case 1: audit or not, abbreviated or normal? (a decision)
+
+An SL closes 2025 and 2026 with total assets of EUR 3,100,000, net turnover of EUR 5,200,000 and 45 average staff in each year, and has no subsidies or public contracts. The law prints the thresholds in words; they are converted to digits here only to show the test. Audit (art 263.2): assets are above two million eight hundred and fifty thousand euros, but turnover is within five million seven hundred thousand euros and staff within fifty, so two of three are met in both years and the company is not obliged to audit. Abbreviated balance sheet (art 257.1): assets within four million, turnover within eight million, staff within fifty, so all three are met and the abbreviated balance sheet and memoria may be used. The figure that decides the audit is assets: had turnover also passed EUR 5,700,000, only staff would be met and the audit would be compulsory.
+
+```oa-check
+name: Spain 2026 audit and abbreviated accounts headroom
+inputs:
+  assets: 3100000
+  turnover: 5200000
+  staff: 45
+steps:
+  - audit_assets_headroom: 2850000 - assets
+  - audit_turnover_headroom: 5700000 - turnover
+  - audit_staff_headroom: 50 - staff
+  - abbreviated_assets_headroom: 4000000 - assets
+  - abbreviated_turnover_headroom: 8000000 - turnover
+expected:
+  audit_assets_headroom: -250000
+  audit_turnover_headroom: 500000
+  audit_staff_headroom: 5
+  abbreviated_assets_headroom: 900000
+  abbreviated_turnover_headroom: 2800000
+```
+
+A negative headroom means the criterion is not met. Two non-negative audit headrooms out of three, in each of two consecutive closes, give the exemption.
 
 ## When to refuse or refer
 
@@ -463,20 +491,26 @@ Both Guides touch the annual accounts. They are written to agree; if they ever d
 - **Sector adaptations of the accounting plan.** Construction, insurance, non-profit entities, health service entities and others have adapted plans that override parts of the general one.
 - **Public interest entities.** The rules on their audit, their audit committee and their reporting are in Ley 22/2015 and are not covered here.
 - **The corporate tax return.** The accounting result is the starting point, not the answer. Read `es-corporate-tax`.
-- **Any amount printed in the law in words.** Where this Guide writes a threshold in words it is because no official page prints the digits. Do not turn it into a number to feed a calculation without an accountant confirming it.
+- **Any amount printed in the law in words.** Where this Guide writes a threshold in words it is because no official page prints the digits. The worked case converts them to digits only to show the test; for a client decision, have an accountant confirm the conversion and the figures.
 - **The registry fee, and any quoted cost of filing.** No page on the hosts this Guide may cite prints a tariff.
 
 ## Sources
 
-- Código de Comercio: https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627
-- Ley de Sociedades de Capital, Real Decreto Legislativo 1/2010: https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544
-- Plan General de Contabilidad, Real Decreto 1514/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884
-- Plan General de Contabilidad de Pymes, Real Decreto 1515/2007: https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966
-- Reglamento del Registro Mercantil, Real Decreto 1784/1996: https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533
-- Ley 22/2015 de Auditoría de Cuentas: https://www.boe.es/buscar/act.php?id=BOE-A-2015-8147
-- Reglamento de la Ley de Auditoría de Cuentas, Real Decreto 2/2021: https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351
-- Resolución de 19 de mayo de 2026, models for deposit at the Registro Mercantil: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11581
-- Ley 27/2014 del Impuesto sobre Sociedades: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
+The quoted figures in the tables above were found again on the linked consolidated texts on 14 November 2026.
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Código de Comercio | Read for arts 25 to 49 (books, annual accounts) and 42 (groups) | https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627 | 2026-11-14 |
+| Ley de Sociedades de Capital, RDL 1/2010 | Read for arts 26, 164.1, 253.1, 255, 257, 258, 261, 263, 265, 279, 282, 283 (models, thresholds in words, audit, deposit, closure, fine) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 | 2026-11-14 |
+| Plan General de Contabilidad, RD 1514/2007 | Read for part three, the normal and abbreviated models | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884 | 2026-11-14 |
+| PGC de Pymes, RD 1515/2007 | Read for arts 2 and 4 (Pymes test, microempresa criteria in words) | https://www.boe.es/buscar/act.php?id=BOE-A-2007-19966 | 2026-11-14 |
+| Reglamento del Registro Mercantil, RD 1784/1996 | Read for arts 366.1 and 378.1 (deposit documents, closure of the sheet) | https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533 | 2026-11-14 |
+| Ley 22/2015 de Auditoría de Cuentas | Read for the first additional provision (entities always audited) | https://www.boe.es/buscar/act.php?id=BOE-A-2015-8147 | 2026-11-14 |
+| Reglamento de la Ley de Auditoría, RD 2/2021 | Read for the additional provisions on subsidies and public contracts (EUR 600,000, 50%) | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 | 2026-11-14 |
+| Resolución de 19 de mayo de 2026, deposit models | Read for the Normal, Abreviado and Pyme models approved for deposit | https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11581 | 2026-11-14 |
+| Ley 27/2014 del Impuesto sobre Sociedades | Read for art 10.3 (the accounting result as the start of the tax base) | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 | 2026-11-14 |
+
+Not yet confirmed: the registry deposit fee (no official page cited prints the tariff); the end of July as the latest ordinary filing date for a calendar-year company is derived from arts 164.1 and 279.1, not printed by any official page.
 
 ## Disclaimer
 
@@ -486,4 +520,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

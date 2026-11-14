@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/im-corporate-income-tax"
   jurisdiction: "IM"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Isle of Man: corporate income tax (2026/27)
@@ -29,21 +29,20 @@ Related skills: [im-income-tax](im-income-tax.md) for resident individuals and t
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate, resident and non-resident companies | 0% | 2026/27 | PN 227/26 para 1, https://www.gov.im/media/1391759/pn-227-26-budget.pdf ; https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ |
-| Banking business income (deposit taking by a licensed bank) | 10% | 2026/27 | PN 227/26 para 1; corporate tax rates page; PN 124/06 |
+| Banking business income (deposit taking by a licensed bank) | 10% | 2026/27 | PN 227/26 para 1; corporate tax rates page; PN 124/06: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ https://www.gov.im/media/511816/pn12406.pdf |
 | Retail business in the Island, taxable income from that business over GBP 500,000 (then all of it) | 10% | 2026/27 | PN 227/26 para 1; https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ ; PN 181/13 paras 1 and 4 |
-| Income from land and property in the Isle of Man | 20% | 2026/27 | PN 227/26 para 1; Business and Corporations page |
-| Petroleum extraction activities or rights (from 6 April 2024) | 20% | 2026/27 | PN 227/26 para 1; ITA 1970 s.119BA |
-| One-year rate on banking and retail income (history only) | 15% | 2024/25 only | corporate tax rates page |
+| Income from land and property in the Isle of Man | 20% | 2026/27 | PN 227/26 para 1; Business and Corporations page: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ |
+| Petroleum extraction activities or rights (from 6 April 2024) | 20% | 2026/27 | PN 227/26 para 1; ITA 1970 s.119BA: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf |
+| One-year rate on banking and retail income (history only) | 15% | 2024/25 only | corporate tax rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ |
 | Domestic Top-up Tax, in-scope groups | 15% minimum effective rate on Isle of Man profits | fiscal years starting on or after 1 January 2025 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/pillar-2-global-minimum-tax/ ; PN 227/26 |
-| Domestic Top-up Tax de minimis | average Isle of Man revenue under EUR 10 million and average income under EUR 1 million | same | Pillar 2 page |
-| Loans to participators charge | the individual higher rate for the year of the loan: 21% for 2026/27 | 2026/27 | ITA 1970 s.A108(3); PN 227/26 |
-| Return and payment due | the day after 12 months from the end of the accounting period | all periods | ITA 1970 s.A66(3); GN58 |
-| First late return penalty | GBP 250 | all periods | ITA 1970 s.112A; GN38 para 5.1.1 (SD 460/07) |
-| Second late return penalty (not filed 18 months after period end) | GBP 500, on top of the first | all periods | ITA 1970 s.112B; GN38 para 5.1.1 |
-| Interest on overdue tax | 5% a year | from 1 February 2009, no later change | ITA 1970 s.111A and endnote 956 (SD 961/08); PN 154/09 |
+| Domestic Top-up Tax de minimis | average Isle of Man revenue under EUR 10 million and average income under EUR 1 million | same | Pillar 2 page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/pillar-2-global-minimum-tax/ |
+| Loans to participators charge | the individual higher rate for the year of the loan: 21% for 2026/27 | 2026/27 | ITA 1970 s.A108(3); PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf |
+| Return and payment due | the day after 12 months from the end of the accounting period | all periods | ITA 1970 s.A66(3); GN58: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/media/1386923/gn58-company-income-tax-return-20241231_compressed.pdf |
+| First late return penalty | GBP 250 | all periods | ITA 1970 s.112A; GN38 para 5.1.1 (SD 460/07): https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/media/365163/gn38_november_09_final_02112009.pdf |
+| Second late return penalty (not filed 18 months after period end) | GBP 500, on top of the first | all periods | ITA 1970 s.112B; GN38 para 5.1.1: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/media/365163/gn38_november_09_final_02112009.pdf |
+| Interest on overdue tax | 5% a year | from 1 February 2009, no later change | ITA 1970 s.111A and endnote 956 (SD 961/08); PN 154/09: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/media/97344/pn154.pdf |
 | Withholding on dividends and loan interest paid by a 0% company | 0% | current | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ |
-| Withholding on Manx rent paid by a company to a non-resident company | 20% | from 6 April 2015 | withholding tax page |
-
+| Withholding on Manx rent paid by a company to a non-resident company | 20% | from 6 April 2015 | withholding tax page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ |
 ## The taxable base
 
 ### Step 1: sort income by source
@@ -180,31 +179,31 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1, 2, A66, B66, A108, 111A, 112A to 112I, 119BA, Part 6A | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
-| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026), para 1 | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
-| Income Tax Division, Business and Corporations | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ | 2026-10-30 |
-| Income Tax Division, Corporate Tax Rates | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ | 2026-10-30 |
-| Practice Note PN 124/06, Budget 2006: Banking Business (21 February 2006) | https://www.gov.im/media/511816/pn12406.pdf | 2026-10-30 |
-| Practice Note PN 181/13, retail business 10% rate | https://www.gov.im/media/365703/pn18113.pdf | 2026-10-30 |
-| Practice Note PN 222/24, Budget 2024 (2024/25 15% rate, petroleum) | https://www.gov.im/media/1382355/pn-222-24-budget-2024.pdf | 2026-10-30 |
-| Practice Note PN 154/09, Interest and Repayment Supplement: Change of Rate (30 January 2009) | https://www.gov.im/media/97344/pn154.pdf | 2026-10-30 |
-| Pillar 2 update: Registration deadline (5 November 2025) | https://www.gov.im/media/1390706/pillar-2-update-registration-deadline.pdf | 2026-10-30 |
-| Pillar 2 update: Side-by-Side Package of measures (24 June 2026) | https://www.gov.im/media/1393642/pillar-2-update-side-by-side-measures.pdf | 2026-10-30 |
-| Pillar 2 update: Compulsory enrolment for Pillar 2 online service (13 October 2026) | https://www.gov.im/media/1394700/pillar-2-update-compulsory-enrolment-for-pillar-2-online-service.pdf | 2026-10-30 |
-| Global Minimum Tax (Pillar Two) (Amendment) Order 2026, SD 2026/0127 | https://www.gov.im/media/1394545/global-minimum-tax-pillar-two-amendment-order-2026.pdf | 2026-10-30 |
-| Income Tax Division, Pay and File | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/pay-and-file/ | 2026-10-30 |
-| Income Tax Division, Online Filing | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/online-filling/ | 2026-10-30 |
-| Income Tax Division, Withholding Tax | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ | 2026-10-30 |
-| Income Tax Division, Distributable Profits Charge | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/distributable-profits-charge/ | 2026-10-30 |
-| Income Tax Division, Attribution Regime for Individuals | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/attribution-regime-for-individuals/ | 2026-10-30 |
-| Income Tax Division, New Manx Vehicles (2006 Act Companies) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/new-manx-vehicles-2006-act-companies/ | 2026-10-30 |
-| Income Tax Division, Pillar 2 Global Minimum Tax | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/pillar-2-global-minimum-tax/ | 2026-10-30 |
-| Income Tax Division, Economic Substance | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/economic-substance/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026), para 1: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-11-14 |
+| Income Tax Division, Business and Corporations: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/ | 2026-10-30 |
+| Income Tax Division, Corporate Tax Rates: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/corporate-tax-rates/ | 2026-11-14 |
+| Practice Note PN 124/06, Budget 2006: Banking Business (21 February 2006): read for the rules and figures this Guide cites from it | https://www.gov.im/media/511816/pn12406.pdf | 2026-10-30 |
+| Practice Note PN 181/13, retail business 10% rate: read for the rules and figures this Guide cites from it | https://www.gov.im/media/365703/pn18113.pdf | 2026-10-30 |
+| Practice Note PN 222/24, Budget 2024: read for 2024/25 15% rate, petroleum | https://www.gov.im/media/1382355/pn-222-24-budget-2024.pdf | 2026-10-30 |
+| Practice Note PN 154/09, Interest and Repayment Supplement: Change of Rate (30 January 2009): read for the rules and figures this Guide cites from it | https://www.gov.im/media/97344/pn154.pdf | 2026-10-30 |
+| Pillar 2 update: Registration deadline (5 November 2025): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1390706/pillar-2-update-registration-deadline.pdf | 2026-10-30 |
+| Pillar 2 update: Side-by-Side Package of measures (24 June 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1393642/pillar-2-update-side-by-side-measures.pdf | 2026-10-30 |
+| Pillar 2 update: Compulsory enrolment for Pillar 2 online service (13 October 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1394700/pillar-2-update-compulsory-enrolment-for-pillar-2-online-service.pdf | 2026-10-30 |
+| Global Minimum Tax (Pillar Two) (Amendment) Order 2026, SD 2026/0127: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1394545/global-minimum-tax-pillar-two-amendment-order-2026.pdf | 2026-10-30 |
+| Income Tax Division, Pay and File: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/pay-and-file/ | 2026-10-30 |
+| Income Tax Division, Online Filing: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/online-filling/ | 2026-10-30 |
+| Income Tax Division, Withholding Tax: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/withholding-tax/ | 2026-10-30 |
+| Income Tax Division, Distributable Profits Charge: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/distributable-profits-charge/ | 2026-10-30 |
+| Income Tax Division, Attribution Regime for Individuals: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/attribution-regime-for-individuals/ | 2026-10-30 |
+| Income Tax Division, New Manx Vehicles (2006 Act Companies): read for the rules this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/new-manx-vehicles-2006-act-companies/ | 2026-10-30 |
+| Income Tax Division, Pillar 2 Global Minimum Tax: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/pillar-2-global-minimum-tax/ | 2026-10-30 |
+| Income Tax Division, Economic Substance: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/economic-substance/ | 2026-10-30 |
 | Guidance Note GN38, The Pay and File Income Tax System for Companies (November 2009), section 5.1.1 | https://www.gov.im/media/365163/gn38_november_09_final_02112009.pdf | 2026-10-30 |
-| Guidance Note GN58, Company Income Tax Return (version 3.0, 31 December 2024) | https://www.gov.im/media/1386923/gn58-company-income-tax-return-20241231_compressed.pdf | 2026-10-30 |
-| Companies Registry, Limited Liability Companies | https://www.gov.im/categories/business-and-industries/companies-registry/registries/limited-liability-companies/ | 2026-10-30 |
+| Guidance Note GN58, Company Income Tax Return (version 3.0, 31 December 2024): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1386923/gn58-company-income-tax-return-20241231_compressed.pdf | 2026-10-30 |
+| Companies Registry, Limited Liability Companies: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/business-and-industries/companies-registry/registries/limited-liability-companies/ | 2026-10-30 |
 
 Not yet confirmed: the text of the Treasury order fixing the 2026/27 company rates (the rates here come from PN 227/26 and the Division's pages, which agree); the current text of SD 460/07 and the higher amounts for successive defaults under s.112F (the GBP 250 and GBP 500 come from GN38, issued 2009); the statutory test of company residence; the exact formula for reducing the GBP 500,000 retail limit for associated companies; the voluntary election by a 0% company to pay 10% (the old version of this skill listed it; the only official mention found is GN41 section 4.4 under the abolished Attribution Regime); loss relief, capital allowances and group relief (ITA 1980 Schedule 2); the Domestic Top-up Tax computation, payment dates and return due dates after the first year in the Global Minimum Tax (Pillar Two) Order 2024 (Order not read).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

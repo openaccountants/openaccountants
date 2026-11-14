@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/slovakia-pit"
   jurisdiction: "SK"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.7
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.8
 
 This skill covers the annual income tax of an individual for the 2026 calendar year: employees, the self-employed (SZČO, živnostník) and people with rental, capital or other income. It links to the other Slovakia skills and does not repeat them:
 
@@ -38,7 +38,7 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Subsistence minimum, one adult, used for 2026 | EUR 284.13 a month | 2026 | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html |
-| Band 1: base up to 154.8 x subsistence minimum (EUR 43,983.32) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§15(a)(1a)) |
+| Band 1: base up to 154.8 x subsistence minimum (EUR 43,983.32) (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§15(a)(1a)) |
 | Band 2: EUR 43,983.32 to 212.4 x (EUR 60,349.21) | 25% | 2026 | same, §15(a)(1b) |
 | Band 3: EUR 60,349.21 to 264 x (EUR 75,010.32) | 30% | 2026 | same, §15(a)(1c) |
 | Band 4: above EUR 75,010.32 | 35% | 2026 | same, §15(a)(1d) |
@@ -56,7 +56,7 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Child tax bonus, through the month of the 15th birthday | EUR 100 a month | 2026 | same, §33(1)(b) |
 | Child tax bonus, after the 15th-birthday month through the 18th-birthday month | EUR 50 a month | 2026 | same, §33(1)(a) |
 | Child tax bonus cap, as % of the employment or business base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | same, §33(6) |
-| Child tax bonus taper threshold: 1.5 x 12 x average monthly wage of 2024 (EUR 1,524) | EUR 27,432; above it the bonus per child falls by 1/10 of the excess | 2026 | same, §33(11); wage: https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf |
+| Child tax bonus taper threshold: 1.5 x 12 x average monthly wage of 2024 (EUR 1,524) (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | EUR 27,432; above it the bonus per child falls by 1/10 of the excess | 2026 | same, §33(11); wage: https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf |
 | Mortgage interest credit, contracts made by 31 December 2023 | 50% of eligible interest on at most EUR 50,000 of loan principal; annual cap EUR 400; reference-income multiple 1.3 | Continuing eligible five-year claims in 2026 | [Historical ITA §33a](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html), [current §52zzy(1)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Mortgage interest credit, contracts made after 31 December 2023 | 50% of eligible interest; annual cap EUR 1,200; reference-income multiple 1.6; first/last-year caps prorated | 2026 | [ITA §33a, §52zzy(2)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Minimum tax of an individual | no tax assessed if the tax is EUR 17 or less, or total income is EUR 2,983.37 or less; not where a child or mortgage bonus is claimed or tax was withheld | 2026 | same, §46a |
@@ -319,8 +319,11 @@ expected:
 
 Historical source credit from the original Guide: [priznanie-digital/priznanie-digital](https://github.com/priznanie-digital/priznanie-digital) (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
+
+Not yet confirmed: ECB main refinancing rates after the 27 October 2026 read; for §155 penalties and §156 interest select the rate in force on the actual statutory reference date.
+
 > Contributed by Michael Cutajar.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovakia-pit` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovakia-pit. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovakia-pit` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovakia-pit. If neither is available, confirm every figure against the official source pages cited above before relying on it.

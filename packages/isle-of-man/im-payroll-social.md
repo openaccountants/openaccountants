@@ -4,11 +4,12 @@ description: "Use this skill for Isle of Man payroll and National Insurance in t
 jurisdiction: IM
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Isle of Man: payroll and National Insurance (2026/27)
@@ -31,7 +32,7 @@ Related skills: [im-income-tax](im-income-tax.md) for the employee's annual inco
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Lower Earnings Limit (LEL) | GBP 129 a week; GBP 559 a month | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/rates-and-thresholds/ ; PN 227/26 para 4 |
-| Primary Threshold | GBP 176 a week; GBP 763 a month; GBP 9,152 a year | 2026/27 | rates and thresholds page; PN 227/26 para 4 |
+| Primary Threshold | GBP 176 a week; GBP 763 a month; GBP 9,152 a year | 2026/27 | rates and thresholds page; PN 227/26 para 4: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/rates-and-thresholds/ |
 | Secondary Threshold | GBP 176 a week; GBP 9,152 a year | 2026/27 | same |
 | Upper Earnings Limit (UEL) | GBP 1,082 a week; GBP 4,689 a month | 2026/27 | same |
 | Class 1 employee rate, Primary Threshold to UEL | 11% | 2026/27 | same |
@@ -45,11 +46,11 @@ Related skills: [im-income-tax](im-income-tax.md) for the employee's annual inco
 | Class 4 rates | 8% between the limits; 1% above the upper limit | 2026/27 | same |
 | ITIP lower and higher rates | 10% and 21% (tables D and C from 6 April 2026) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/ ; PN 227/26 para 1 |
 | Monthly ITIP and NI payment (form T35) | by the 19th of the month after the month of payment | current | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ |
-| Employer's annual return (T37, T14, T9) | within 30 days after the tax year end (by 5 May) | current | compliance and penalties page |
-| Most employer compliance failures | GBP 250 | current | compliance and penalties page |
-| Late T35 notification and payment | 5% of the amount due; a further 5% if outstanding after six months | current | compliance and penalties page |
-| Late annual return | GBP 250 plus GBP 50 a day | current | compliance and penalties page |
-| Late notice of starting self-employment | GBP 100 | current | Social Security (Contributions) Regulations 2001 reg 87(3), cited on the Paying National Insurance page |
+| Employer's annual return (T37, T14, T9) | within 30 days after the tax year end (by 5 May) | current | compliance and penalties page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ |
+| Most employer compliance failures | GBP 250 | current | compliance and penalties page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ |
+| Late T35 notification and payment | 5% of the amount due; a further 5% if outstanding after six months | current | compliance and penalties page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ |
+| Late annual return | GBP 250 plus GBP 50 a day | current | compliance and penalties page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ |
+| Late notice of starting self-employment | GBP 100 | current | Social Security (Contributions) Regulations 2001 reg 87(3), cited on the Paying National Insurance page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/paying-national-insurance/ |
 | NI Holiday Scheme, returning students | refund of first 12 months' Class 1 primary contributions, up to GBP 4,400 | current | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/national-insurance-holiday-scheme/ |
 
 ## The taxable base
@@ -173,19 +174,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026), paras 1, 4, 5 | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
-| Income Tax Division, National Insurance: Rates and Thresholds | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/rates-and-thresholds/ | 2026-10-30 |
-| Income Tax Division, National Insurance Contributions | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/ | 2026-10-30 |
-| Income Tax Division, Paying National Insurance | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/paying-national-insurance/ | 2026-10-30 |
-| Income Tax Division, Small Earnings Exception | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/small-earnings-exception/ | 2026-10-30 |
-| Income Tax Division, National Insurance Holiday Scheme | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/national-insurance-holiday-scheme/ | 2026-10-30 |
-| Income Tax Division, Reciprocal Agreement with the UK | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/reciprocal-agreement-with-the-uk/ | 2026-10-30 |
-| Income Tax Division, UK/Isle of Man Agreement on Social Security relating to National Insurance Contributions (SD 2026/0113) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/reciprocal-agreement-with-the-uk/ukisle-of-man-agreement-on-social-security-relating-to-national-insurance-contributions/ | 2026-10-30 |
-| Income Tax Division, Detached Workers | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/detached-workers/ | 2026-10-30 |
-| Income Tax Division, Employers | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/ | 2026-10-30 |
-| Income Tax Division, Employers: Compliance and Penalties | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ | 2026-10-30 |
-| Income Tax Division, Employers: Income Tax (ITIP) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/income-tax-itip/ | 2026-10-30 |
-| Income Tax Division, Employers: Tax codes explained for employers | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/tax-codes-explained-for-employers/ | 2026-10-30 |
-| Income Tax Division, Employers: Legislation | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/legislation/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026), paras 1, 4, 5: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-11-14 |
+| Income Tax Division, National Insurance: Rates and Thresholds: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/rates-and-thresholds/ | 2026-11-14 |
+| Income Tax Division, National Insurance Contributions: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/ | 2026-10-30 |
+| Income Tax Division, Paying National Insurance: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/paying-national-insurance/ | 2026-10-30 |
+| Income Tax Division, Small Earnings Exception: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/small-earnings-exception/ | 2026-10-30 |
+| Income Tax Division, National Insurance Holiday Scheme: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/national-insurance-holiday-scheme/ | 2026-10-30 |
+| Income Tax Division, Reciprocal Agreement with the UK: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/reciprocal-agreement-with-the-uk/ | 2026-10-30 |
+| Income Tax Division, UK/Isle of Man Agreement on Social Security relating to National Insurance Contributions: read for SD 2026/0113 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/reciprocal-agreement-with-the-uk/ukisle-of-man-agreement-on-social-security-relating-to-national-insurance-contributions/ | 2026-10-30 |
+| Income Tax Division, Detached Workers: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/national-insurance-contributions/detached-workers/ | 2026-10-30 |
+| Income Tax Division, Employers: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/ | 2026-10-30 |
+| Income Tax Division, Employers: Compliance and Penalties: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/compliance-and-penalties/ | 2026-11-14 |
+| Income Tax Division, Employers: Income Tax: read for ITIP | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/income-tax-itip/ | 2026-10-30 |
+| Income Tax Division, Employers: Tax codes explained for employers: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/tax-codes-explained-for-employers/ | 2026-10-30 |
+| Income Tax Division, Employers: Legislation: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/legislation/ | 2026-10-30 |
 
 Not yet confirmed: the Tynwald order or regulations setting the 2026/27 National Insurance limits and rates (the figures come from PN 227/26 and the Division's rates page, which agree); the section numbers in the Income Tax (Instalment Payments) Act 1974 and its regulations for the employer deadlines and GBP 250 penalties (taken from the Division's Compliance and Penalties page); the current numeric emergency tax code for 'all other cases' (the tax codes page still shows 1450S at 10/21%, which matches the 2024/25 allowance, not GBP 17,000); interest on late ITIP and NI; when the 2026 UK agreement enters into force.

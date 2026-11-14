@@ -1,18 +1,21 @@
 ---
 name: ae-company-formation
 description: "Source-cited draft: company formation & entity choice for United Arab Emirates (tax year 2026): rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
-version: 1.1
+version: 2.0
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # UAE company formation: what to set up for tax, and in what order (2026)
 
-## Scope and who this is for ([Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf))
+## Scope and who this is for
+
+Sources for this section: [Corporate Tax Law, consolidated](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf).
 
 This skill is the entry point for someone setting up a business in the United Arab Emirates who wants to know what the choice of vehicle means for tax, and which tax registrations to make, by when. It covers tax periods and registrations in 2026, with a short section on returns being filed now for 2025.
 
@@ -66,15 +69,15 @@ Once the company exists, use the companion skills for the detail:
 
 ### Corporate Tax ([Corporate Tax Law, Article 3](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf))
 
-| Item | Figure | Applies to |
-| --- | --- | --- |
-| Rate on taxable income up to the band | 0% | Tax periods in 2025 and 2026, per Taxable Person, not per licence |
-| Band | AED 375,000 | Same |
-| Rate above the band | 9% | Same |
-| QFZP rate on Qualifying Income | 0% | QFZP meeting all conditions for the whole period |
-| QFZP rate on other taxable income | 9% | From the first dirham; the AED 375,000 band does not apply to it |
-| Natural person's business turnover test | Exceeds AED 1,000,000 in a Gregorian calendar year | 2024 onwards |
-| Domestic minimum top-up tax | Effective rate of 15% | Constituent entities of multinational groups with consolidated revenue of EUR 750 million or more; fiscal years from 1 January 2025 ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf)) |
+| Item | Figure | Applies to | Source |
+| --- | --- | --- | --- |
+| Rate on taxable income up to the band | 0% | Tax periods in 2025 and 2026, per Taxable Person, not per licence | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Band | AED 375,000 | Same | same |
+| Rate above the band | 9% | Same | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| QFZP rate on Qualifying Income | 0% | QFZP meeting all conditions for the whole period | same |
+| QFZP rate on other taxable income | 9% | From the first dirham; the AED 375,000 band does not apply to it | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf ; https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
+| Natural person's business turnover test | Exceeds AED 1,000,000 in a Gregorian calendar year | 2024 onwards | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf |
+| Domestic minimum top-up tax | Effective rate of 15% | Constituent entities of multinational groups with consolidated revenue of EUR 750 million or more; fiscal years from 1 January 2025 ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf)) | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf |
 
 ### Small Business Relief ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Ministerial Decision No. 131 of 2026](https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf))
 
@@ -88,14 +91,14 @@ Once the company exists, use the companion skills for the detail:
 
 ### VAT registration ([VAT Law, Articles 13 and 17](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [VAT Executive Regulation, Articles 7 and 8](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
 
-| Item | Figure or rule |
-| --- | --- |
-| Standard rate | 5% |
-| Mandatory Registration Threshold | AED 375,000 of supplies counted under VAT Law Article 19 that **exceeded** it in the previous 12 months, or are expected to in the next 30 days |
-| Application deadline | Within 30 days of becoming required to register |
-| If the person does not apply | The FTA registers it from the date it first became liable, and imposes penalties |
-| Voluntary Registration Threshold | AED 187,500 of supplies **or taxable expenses** |
-| Non-resident with no place of residence in the UAE or another implementing state | Registers when it makes supplies on which no one else must account for the VAT; no threshold |
+| Item | Figure or rule | Source |
+| --- | --- | --- |
+| Standard rate | 5% | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf |
+| Mandatory Registration Threshold | AED 375,000 of supplies counted under VAT Law Article 19 that **exceeded** it in the previous 12 months, or are expected to in the next 30 days | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf |
+| Application deadline | Within 30 days of becoming required to register | same |
+| If the person does not apply | The FTA registers it from the date it first became liable, and imposes penalties | same |
+| Voluntary Registration Threshold | AED 187,500 of supplies **or taxable expenses** | same |
+| Non-resident with no place of residence in the UAE or another implementing state | Registers when it makes supplies on which no one else must account for the VAT; no threshold | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf |
 
 The VAT threshold and the Corporate Tax band are both AED 375,000, but they measure different things: the VAT test counts turnover of taxable supplies; the Corporate Tax band is a slice of taxable profit. Do not confuse them.
 
@@ -114,18 +117,20 @@ The VAT threshold and the Corporate Tax band are both AED 375,000, but they meas
 | Record keeping | 7 years after the end of the tax period |
 | Tell the FTA of a change to registered details | 20 Business Days from the event |
 
-## Mainland or free zone: what changes for tax ([Corporate Tax Law, Articles 11, 18 and 19](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf))
+## Mainland or free zone: what changes for tax
+
+Sources for this section: [Corporate Tax Law, Articles 11, 18 and 19](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [FTA Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf).
 
 The licensing differences (ownership rules, where the company may trade, office requirements, visas and costs) are **check** items for the licensing authority. For tax the differences are narrower than most set-up material suggests:
 
-| Vehicle | Corporate Tax position | Registration | Main tax point at set-up |
-| --- | --- | --- | --- |
-| Mainland company (for example an LLC) | Resident Person; 0% up to AED 375,000, 9% above | Within 3 months of incorporation | Small Business Relief may be available if revenue stays at or below AED 3,000,000 |
-| Free zone company (FZ-LLC, FZE, FZCO or similar; **check** the forms with the zone) | Resident Person and a Free Zone Person; 0% on Qualifying Income **only** if a QFZP; otherwise the same as mainland | Within 3 months of incorporation, even if it expects 0% | Build substance, income tracking, transfer pricing file and audit from the start |
-| Branch of a foreign company | The foreign company is a Non-Resident Person with a permanent establishment, taxed on the branch's profits | 6 months from when the permanent establishment exists | A branch registered in a free zone is a Free Zone Person |
-| Branch of a UAE company | Same Taxable Person as the head office (one registration, one return) | Covered by the head office's registration | The FTA bulletin says a UAE company with a branch registered in a free zone will be a Free Zone Person, with the UAE company's own presence treated as a domestic permanent establishment; income of a domestic permanent establishment is taxed at 9% even for a QFZP. Refer |
-| Sole establishment or civil (professional) licence held by an individual | Not a juridical person; the individual is taxable only if business turnover exceeds AED 1,000,000 in a calendar year | 31 March of the following year | Wages, personal investment income and unlicensed real estate investment income never count |
-| Unincorporated partnership | Transparent: each partner is taxed on its share, unless the FTA approves an application to treat the partnership as taxable | Each partner that is a Taxable Person registers | Refer; see Corporate Tax Law, Article 16 |
+| Vehicle | Corporate Tax position | Registration | Main tax point at set-up | Source |
+| --- | --- | --- | --- | --- |
+| Mainland company (for example an LLC) | Resident Person; 0% up to AED 375,000, 9% above | Within 3 months of incorporation | Small Business Relief may be available if revenue stays at or below AED 3,000,000 | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf ; https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf ; https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf |
+| Free zone company (FZ-LLC, FZE, FZCO or similar; **check** the forms with the zone) | Resident Person and a Free Zone Person; 0% on Qualifying Income **only** if a QFZP; otherwise the same as mainland | Within 3 months of incorporation, even if it expects 0% | Build substance, income tracking, transfer pricing file and audit from the start | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf |
+| Branch of a foreign company | The foreign company is a Non-Resident Person with a permanent establishment, taxed on the branch's profits | 6 months from when the permanent establishment exists | A branch registered in a free zone is a Free Zone Person | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf |
+| Branch of a UAE company | Same Taxable Person as the head office (one registration, one return) | Covered by the head office's registration | The FTA bulletin says a UAE company with a branch registered in a free zone will be a Free Zone Person, with the UAE company's own presence treated as a domestic permanent establishment; income of a domestic permanent establishment is taxed at 9% even for a QFZP. Refer | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf |
+| Sole establishment or civil (professional) licence held by an individual | Not a juridical person; the individual is taxable only if business turnover exceeds AED 1,000,000 in a calendar year | 31 March of the following year | Wages, personal investment income and unlicensed real estate investment income never count | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf |
+| Unincorporated partnership | Transparent: each partner is taxed on its share, unless the FTA approves an application to treat the partnership as taxable | Each partner that is a Taxable Person registers | Refer; see Corporate Tax Law, Article 16 | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
 
 **Choosing a free zone does not by itself give 0%.** The 0% rate applies only to Qualifying Income of a Free Zone Person that meets every condition in Article 18, all the time, for the whole tax period.
 
@@ -151,14 +156,18 @@ A QFZP that distributes goods in or from a Designated Zone also needs an agreed-
 - A person established or registered in a Designated Zone is treated as resident in the UAE for VAT.
 - Detail, including goods movements, is in **uae-vat**.
 
-## Economic Substance and UBO ([Ministry of Finance announcement on Cabinet Decision No. 98 of 2024](https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/))
+## Economic Substance and UBO
+
+Sources for this section: [Ministry of Finance announcement on Cabinet Decision No. 98 of 2024](https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/).
 
 - **Economic Substance Regulations (ESR):** the Ministry of Finance announced the cancellation of economic substance reporting requirements "for financial years ending after 31 December 2022", following Cabinet Decision No. 98 of 2024. A company formed now therefore has no ESR notification or report to file. ESR filings for financial years ending on or before 31 December 2022 (and any penalties for them) are a legacy matter: refer.
 - **Substance still matters for tax.** For a free zone company, adequate substance is a QFZP condition (above), and a foreign company run from the UAE can become UAE resident through effective management and control.
 - **UBO (Ultimate Beneficial Owner) register:** UBO filings are made with the licensing authority, not the FTA, under rules this skill's official sources do not cover. Mark as **check**: confirm the form, timing and update rules with the Emirate or free zone registrar.
 - **Anti-money-laundering registration** for regulated professions and dealers is also outside this skill (**check** with the relevant supervisor).
 
-## Boundaries and exceptions ([FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [VAT Executive Regulation, Article 7](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
+## Boundaries and exceptions
+
+Sources for this section: [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [VAT Executive Regulation, Article 7](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf).
 
 | Situation | Answer | Why |
 | --- | --- | --- |
@@ -174,7 +183,9 @@ A QFZP that distributes goods in or from a Designated Zone also needs an agreed-
 | Free zone company fails the de minimis test in its second year | Standard rates from the start of that year and the next 4 years | Ministerial Decision No. 229 of 2025 |
 | Licence renewal, capital, lease, visa or fee questions | **Check** with the licensing authority | Outside the FTA's rules and this skill |
 
-## Worked cases ([FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf))
+## Worked cases
+
+Sources for this section: [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf).
 
 1. **Free zone consultancy that is not a QFZP.**
    - **Facts:** a free zone company is incorporated on 15 February 2026 with a 31 December year end. It gives management consulting to mainland companies and to individuals. Revenue for 2026 is AED 3,400,000, all from those customers; taxable income is AED 900,000.
@@ -271,18 +282,20 @@ A company formed in 2025 files its first return 9 months after its first period 
 
 ### Penalties most often met at formation ([Cabinet Decision No. 75 of 2023 and amendments](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf); [VAT penalties, Cabinet Decision No. 40 of 2017 as amended](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf))
 
-| Violation | Penalty |
-| --- | --- |
-| Late Corporate Tax registration | AED 10,000; waived or refunded if the first return is filed within 7 months of the end of the first tax period (first period only) |
-| Late VAT registration application | AED 10,000 |
-| Late Corporate Tax return | AED 500 for each month or part month in the first 12 months, then AED 1,000 |
-| Failure to keep Corporate Tax records | AED 10,000, or AED 20,000 for a repeat within 24 months |
-| Late Corporate Tax deregistration application | AED 1,000 a month, up to AED 10,000 |
-| Failure to update the Corporate Tax record | AED 1,000, or AED 5,000 for a repeat within 24 months |
+| Violation | Penalty | Source |
+| --- | --- | --- |
+| Late Corporate Tax registration | AED 10,000; waived or refunded if the first return is filed within 7 months of the end of the first tax period (first period only) | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf |
+| Late VAT registration application | AED 10,000 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf |
+| Late Corporate Tax return | AED 500 for each month or part month in the first 12 months, then AED 1,000 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf |
+| Failure to keep Corporate Tax records | AED 10,000, or AED 20,000 for a repeat within 24 months | same |
+| Late Corporate Tax deregistration application | AED 1,000 a month, up to AED 10,000 | same |
+| Failure to update the Corporate Tax record | AED 1,000, or AED 5,000 for a repeat within 24 months | same |
 
 The full penalty tables are in **ae-corporate-tax** and **uae-vat**.
 
-## Completion checklist ([FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Ministerial Decision No. 84 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf); [VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
+## Completion checklist
+
+Sources for this section: [FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [Ministerial Decision No. 84 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf); [VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf).
 
 - [ ] Activities, customers and owners recorded; multinational group status and revenue checked.
 - [ ] Vehicle chosen with the tax consequences in the "Mainland or free zone" table explained to the client.
@@ -301,24 +314,24 @@ The full penalty tables are in **ae-corporate-tax** and **uae-vat**.
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Corporate Tax Law, consolidated | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-10-31, opened, spot-checked only: 9% rate on Art. 3 |
-| FTA Decision No. 3 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 49 of 2023 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 1,000,000 test, Art. 2 |
-| VAT Executive Regulation, Articles 7 and 8 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-10-31, opened, spot-checked only: AED 375,000 and 187,500 thresholds; cash input tax block; Decision 149 footnotes |
-| Ministerial Decision No. 84 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-10-31, opened, spot-checked only: AED 50,000,000 audit test |
-| Ministerial Decision No. 73 of 2023, Article 3 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 3,000,000, Art. 2 |
-| Ministry of Finance announcement | https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/ | 2026-10-31, link opened, not re-read |
-| Tax Procedures Law, Article 6 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf | 2026-10-31, opened, spot-checked only: 20 Business Days duties |
-| Cabinet Decision No. 116 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 375,000 band |
-| Cabinet Decision No. 142 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-10-31, link opened, not re-read |
-| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-10-31, opened, spot-checked only: end date 31 December 2029 |
-| VAT Law, Articles 13 and 17 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-10-31, opened, spot-checked only: 5% rate |
-| FTA Free Zone Persons bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 100 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%20100%20of%202023%20on%20Determining%20Qualifying%20Income%20for%20the%20Qualifying%20Free%20Zone%20Person%20-%20for%20publishing.pdf | 2026-10-31, link opened, not re-read |
-| Ministerial Decision No. 229 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-10-31, opened, spot-checked only: 5% or AED 5,000,000 de minimis |
-| FTA Decision No. 6 of 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 75 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
-| CTP006 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-10-31, link opened, not re-read |
-| VAT penalties, Cabinet Decision No. 40 of 2017 as amended | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
+| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-14 |
+| FTA Decision No. 3 of 2024: read for the registration timelines (3 months, 6 months, 31 March for natural persons) | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-14 |
+| Cabinet Decision No. 49 of 2023: read for Art. 2 (natural person Taxable Person above AED 1,000,000 turnover) and the excluded income | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
+| VAT Executive Regulation, consolidated September 2026: read for Art. 7 (AED 375,000, 30 days), Art. 8 (AED 187,500) and the Cabinet Decision No. 149 of 2026 amendments effective 1 October 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-11-14 |
+| Ministerial Decision No. 84 of 2025: read for the AED 50,000,000 audited financial statements test | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-14 |
+| Ministerial Decision No. 73 of 2023: read for Art. 2 (AED 3,000,000 revenue limit) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
+| MoF announcement on Cabinet Decision No. 98 of 2024: read for the economic substance repeal announcement | https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/ | 2026-11-14 |
+| Tax Procedures Law, consolidated December 2025: read for Art. 6 (records) and general procedure | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf | 2026-11-14 |
+| Cabinet Decision No. 116 of 2022: read for Art. 3 (AED 375,000 band) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-14 |
+| Cabinet Decision No. 142 of 2024 (top-up tax): read for the 15% minimum rate, the EUR 750 million test and fiscal years from 1 January 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-14 |
+| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-14 |
+| VAT Law, consolidated November 2025: read for Art. 3 (5%), Arts 13 and 17, Art. 50 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-11-14 |
+| FTA Free Zone Person bulletin: read for the QFZP conditions and free zone branch points | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-11-14 |
+| Cabinet Decision No. 100 of 2023 (Qualifying Income): read for qualifying activities and the de minimis rule | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%20100%20of%202023%20on%20Determining%20Qualifying%20Income%20for%20the%20Qualifying%20Free%20Zone%20Person%20-%20for%20publishing.pdf | 2026-11-14 |
+| Ministerial Decision No. 229 of 2025: read for the QFZP qualifying activities | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-11-14 |
+| FTA Decision No. 6 of 2026 (QFZP compliance procedures): read for the additional QFZP procedures | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-11-14 |
+| Cabinet Decision No. 75 of 2023 and amendments (Corporate Tax penalties): read for the late registration (AED 10,000) and other penalty amounts | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-14 |
+| FTA public clarification CTP006 (July 2025): read for the late registration penalty waiver conditions | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-14 |
+| Cabinet Decision No. 40 of 2017 and amendments (VAT penalties), November 2025: read for the late registration and late return penalties | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-11-14 |
 
-Not yet confirmed: every figure not named in the Read on column was not re-read on 2026-10-31, and the date of its earlier reading is not recorded.
+Not yet confirmed: licensing rules (legal forms, ownership, office and visa requirements) belong to each licensing authority and were not checked. The economic substance position rests on the Ministry of Finance announcement of Cabinet Decision No. 98 of 2024; the Decision text itself was not opened.

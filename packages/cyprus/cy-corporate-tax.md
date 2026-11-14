@@ -1,10 +1,11 @@
 ---
 name: cy-corporate-tax
 description: "Cyprus corporate income tax for tax year 2026: companies resident in Cyprus (managed and controlled in Cyprus, or incorporated in Cyprus unless a treaty says otherwise) and Cyprus permanent establishments of foreign companies. Covers the 15% rate from 1 January 2026 (Law 244(I)/2025), the taxable base, the dividend and securities-gains exemptions, notional interest deduction, IP box, the 7-year loss carry-forward, 75% group relief, interest limitation (30% EBITDA, EUR 3m), provisional tax on 31 July and 31 December, the IR4 return, penalties, Special Defence Contribution as it stands for 2026 (deemed distribution kept only for 2024 and 2025 profits) and withholding on outbound payments. Trigger on: Cyprus corporate tax, 15% Cyprus, IR4, TD4, provisional tax Cyprus, deemed dividend distribution, NID Cyprus, Cyprus group relief. Out of scope: individuals (cyprus-income-tax), domicile and SDC for individuals (cy-non-dom), VAT (cyprus-vat-return), payroll (cyprus-payroll), social insurance (cyprus-social-contributions), planning (cyprus-tax-optimization)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -31,26 +32,26 @@ Related skills: `cyprus-income-tax` (individuals), `cy-non-dom` (domicile and SD
 |---|---|---|---|
 | Corporate income tax rate, every euro of taxable income | 15% | 2026 onward | Income Tax Law, Second Schedule, para 2: https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
 | Previous rate (for comparison only) | 12.5% | 2025 and earlier | Tax Department presentation of Law 244(I)/2025, slide 41 (new rate "from 1/1/2026"): https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf |
-| Loss carry-forward | 7 years (was 5) | Losses usable against 2026 profits onward | Income Tax Law, article 13(1); presentation, slide 18 |
-| Group relief ownership test | 75% | 2026 | Income Tax Law, article 13(8) |
-| Interest limitation | Excess borrowing cost above 30% of taxable EBITDA disallowed | 2026 | Income Tax Law, article 11(16)(a) |
-| Interest limitation safe harbour | EUR 3,000,000 per company or Cyprus group | 2026 | Income Tax Law, article 11(16)(d)(ii) |
-| IP box deduction | 80% of qualifying profits from a qualifying intangible asset | 2026 | Income Tax Law, article 9(1)(k) |
-| Notional interest deduction (NID) on new equity | Reference rate = 10-year government bond yield of the country where the new equity is invested, plus 5 percentage points, at 31 December of the prior year; capped at 80% of taxable income from the new equity | 2026 | Income Tax Law, article 9B |
-| Extra deduction for R&D expenditure | 20% on top, extended to tax year 2030 | 2026 | Presentation, slide 11 |
+| Loss carry-forward | 7 years (was 5) | Losses usable against 2026 profits onward | [Income Tax Law, article 13(1)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); presentation, slide 18 |
+| Group relief ownership test | 75% | 2026 | [Income Tax Law, article 13(8)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Interest limitation | Excess borrowing cost above 30% of taxable EBITDA disallowed | 2026 | [Income Tax Law, article 11(16)(a)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Interest limitation safe harbour | EUR 3,000,000 per company or Cyprus group | 2026 | [Income Tax Law, article 11(16)(d)(ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| IP box deduction | 80% of qualifying profits from a qualifying intangible asset | 2026 | [Income Tax Law, article 9(1)(k)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Notional interest deduction (NID) on new equity | Reference rate = 10-year government bond yield of the country where the new equity is invested, plus 5 percentage points, at 31 December of the prior year; capped at 80% of taxable income from the new equity | 2026 | [Income Tax Law, article 9B](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Extra deduction for R&D expenditure | 20% on top, extended to tax year 2030 | 2026 | Presentation, slide 11; [Income Tax Law, article 9(1), proviso on research and development spending 2025 to 2030](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html) |
 | Provisional tax underestimate charge | 10% of the shortfall, if provisional taxable income is below 3/4 of the final figure | 2026 | Assessment and Collection of Taxes Law, article 26(1): https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html |
-| Late return administrative charge, legal person with turnover or assets above EUR 1m | EUR 500 | 2026 | Assessment and Collection of Taxes Law, article 50A(a) |
-| Late return administrative charge, other legal person | EUR 250 | 2026 | Assessment and Collection of Taxes Law, article 50A(a) |
-| Late payment administrative charge | 5% of the unpaid tax, plus a further 5% if still unpaid two months after the due date | 2026 | Assessment and Collection of Taxes Law, article 50A(e) |
+| Late return administrative charge, legal person with turnover or assets above EUR 1m | EUR 500 | 2026 | [Assessment and Collection of Taxes Law, article 50A(a)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Late return administrative charge, other legal person | EUR 250 | 2026 | [Assessment and Collection of Taxes Law, article 50A(a)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Late payment administrative charge | 5% of the unpaid tax, plus a further 5% if still unpaid two months after the due date | 2026 | [Assessment and Collection of Taxes Law, article 50A(e)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
 | Public interest rate on late-paid tax | 3.50% a year | Calendar year 2026 | Minister of Finance decree K.D.P. 376/2025 (Official Gazette 12 December 2025), in force 1 January 2026: https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 | SDC on dividends received by a resident and domiciled individual, out of profits of 2026 onward | 5% | 2026 | SDC presentation, slide 8: https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf |
-| SDC on dividends from Cyprus companies out of profits up to tax year 2025, received up to 31/12/2031 | 17% | 2026 | SDC presentation, slide 8 |
+| SDC on dividends from Cyprus companies out of profits up to tax year 2025, received up to 31/12/2031 | 17% | 2026 | SDC presentation, slide 8; [SDC Law, article 3(1)(α), proviso (ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html) |
 | Deemed dividend distribution: share of 2024 and 2025 profits deemed paid two years after year end | 70%, taxed at 17% SDC | Profits of 2024 and 2025 only | SDC presentation, slide 30; SDC Law 117(I)/2002, article 3C: https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html |
-| SDC on a disguised dividend distribution (new article 3A) | 10% | 2026 | SDC presentation, slide 21 |
-| Outbound dividend to a company in a low-tax jurisdiction | 5% | From 1 January 2026 | SDC Law, article 3(1)(d)(i)(aa) and commencement note to Law 48(I)/2025 |
-| Outbound dividend to a company in an EU-listed non-cooperative jurisdiction | 17% | 2026 | SDC Law, article 3(1)(d)(i)(bb) |
-| Low-tax jurisdiction test | Third country with a corporate rate below 50% of the Cyprus rate (so below 7.5% at the 15% rate) | 2026 | SDC Law, article 2; Income Tax Law, article 2 |
-| Pillar Two | Cyprus has a law implementing Directive (EU) 2022/2523 for in-scope groups; this skill does not compute top-up tax | 2026 | Presentation, slide 38 (names the law); Income Tax Law, article 35(11) |
+| SDC on a disguised dividend distribution (new article 3A) | 10% | 2026 | SDC presentation, slide 21; [SDC Law, article 3A(1)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html) |
+| Outbound dividend to a company in a low-tax jurisdiction | 5% | From 1 January 2026 | [SDC Law, article 3(1)(d)(i)(aa) and commencement note to Law 48(I)/2025](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| Outbound dividend to a company in an EU-listed non-cooperative jurisdiction | 17% | 2026 | [SDC Law, article 3(1)(d)(i)(bb)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| Low-tax jurisdiction test | Third country with a corporate rate below 50% of the Cyprus rate (so below 7.5% at the 15% rate) | 2026 | SDC Law, article 2; [Income Tax Law, article 2](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Pillar Two | Cyprus has a law implementing Directive (EU) 2022/2523 for in-scope groups; this skill does not compute top-up tax | 2026 | Presentation, slide 38 (names the law); [Income Tax Law, article 35(11)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
 
 There is no small-company rate, no local or trade tax on corporate profit, and no minimum tax in the Income Tax Law. SDC is not a tax on the company's profit; for a company it matters as a withholding duty and, for 2024 and 2025 profits, the deemed distribution.
 
@@ -177,13 +178,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law 118(I)/2002, consolidated text including Law 244(I)/2025 (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-22 |
-| Special Defence Contribution Law 117(I)/2002, consolidated text (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-22 |
-| Assessment and Collection of Taxes Law 4/1978, consolidated text including Law 243(I)/2025 (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html | 2026-10-22 |
-| Tax Department presentation: Income Tax (Amendment) Law 244(I)/2025 | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf | 2026-10-22 |
-| Tax Department presentation: SDC (Amendment) (No. 4) Law 2025 and CGT (Amendment) (No. 3) Law 2025 | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf | 2026-10-22 |
-| Capital Gains Tax Law 52/1980, consolidated text (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html | 2026-10-22 |
-| Minister of Finance decree K.D.P. 376/2025, public interest rate for 2026 (Official Gazette Part III(I), No. 5986, 12 December 2025) | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-22 |
+| Income Tax Law 118(I)/2002: read for consolidated text including Law 244(I)/2025 (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-11-14 |
+| Special Defence Contribution Law 117(I)/2002: read for consolidated text (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-11-14 |
+| Assessment and Collection of Taxes Law 4/1978: read for consolidated text including Law 243(I)/2025 (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html | 2026-11-14 |
+| Tax Department presentation: Income Tax (Amendment) Law 244(I)/2025: read for slides 11, 18, 38 and 41 (R&D uplift, 7-year losses, Pillar Two law, new 15% rate) | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf | 2026-10-22 |
+| Tax Department presentation: SDC (Amendment) (No. 4) Law 2025 and CGT (Amendment) (No. 3) Law 2025: read for slides 8 and 21 (SDC on dividends, disguised dividends) | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf | 2026-10-22 |
+| Capital Gains Tax Law 52/1980: read for consolidated text (CyLaw) | https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html | 2026-11-14 |
+| Minister of Finance decree K.D.P. 376/2025, public interest rate for 2026 (Official Gazette Part III(I), No. 5986, 12 December 2025) | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-11-14 |
 
 The gov.cy PDFs refuse automated downloads (HTTP 403); they were read in a browser on 2026-10-22. Article references to the laws are to the Greek consolidated texts on CyLaw, which are not the official gazette.
 

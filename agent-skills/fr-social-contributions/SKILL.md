@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-social-contributions"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # France: social contributions (cotisations sociales, CSG and CRDS)
@@ -42,28 +42,28 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Maladie 1, reduced rate below 3 PASS (CSS D. 621-2) | 0% below 20% PASS (EUR 9,612); rises linearly 0 to 1.5% (20-40%), 1.5 to 4% (40-60%), 4 to 6.5% (60-110%), 6.5 to 7.7% (110-200%), 7.7 to 8.5% (200-300%) | 2026 | same page |
 | Maladie 2, daily benefits: artisan, commerçant, unregulated liberal (D. 621-3) | 0.50% up to 5 PASS (EUR 240,300); minimum base 40% PASS | 2026 | same page |
 | Maladie 2, regulated liberal profession (D. 621-3) | 0.30% up to 3 PASS (EUR 144,180); minimum base 40% PASS | 2026 | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
-| Retraite de base, artisan, commerçant, unregulated liberal | 17.87% up to 1 PASS; 0.72% on the part above | 2026 | ac-plnr page |
-| Retraite complémentaire, same group | 8.10% up to 1 PASS; 9.10% from 1 to 4 PASS (EUR 192,240) | 2026 | ac-plnr page |
-| Invalidité-décès, same group | 1.30% up to 1 PASS | 2026 | ac-plnr page |
+| Retraite de base, artisan, commerçant, unregulated liberal | 17.87% up to 1 PASS; 0.72% on the part above | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Retraite complémentaire, same group | 8.10% up to 1 PASS; 9.10% from 1 to 4 PASS (EUR 192,240) | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Invalidité-décès, same group | 1.30% up to 1 PASS | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
 | Retraite de base, Cipav and CnavPL | 8.73% up to 1 PASS plus 1.87% up to 5 PASS | 2026 | Cipav page; https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html |
-| Retraite complémentaire, Cipav | 11% up to 1 PASS; 21% from 1 to 4 PASS | 2026 | Cipav page |
-| Invalidité-décès, Cipav | 0.50% up to 1.85 PASS (EUR 88,911) | 2026 | Cipav page |
-| Allocations familiales (CSS D. 613-1) | 0% up to 110% PASS (EUR 52,866); rising rate 110-140%; 3.10% above 140% (EUR 67,284) | 2026 | ac-plnr page |
+| Retraite complémentaire, Cipav | 11% up to 1 PASS; 21% from 1 to 4 PASS | 2026 | Cipav page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
+| Invalidité-décès, Cipav | 0.50% up to 1.85 PASS (EUR 88,911) | 2026 | Cipav page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
+| Allocations familiales (CSS D. 613-1) | 0% up to 110% PASS (EUR 52,866); rising rate 110-140%; 3.10% above 140% (EUR 67,284) | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
 | CSG and CRDS on activity income | 9.70% (CSG 9.20% + CRDS 0.50%) | 2026 | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html |
-| CSG and CRDS on replacement income of a travailleur indépendant | 6.70% | 2026 | ac-plnr page ("Revenus de remplacement 6,70 %") |
-| Training levy (CFP), on 1 PASS | 0.25% commerçant and liberal (EUR 120); 0.29% artisan (EUR 139); 0.34% for a commerçant or liberal professional with conjoint collaborateur (EUR 163) | 2026, paid November 2026 | ac-plnr page |
-| Minimum contributions, general group | daily benefits EUR 96 (base EUR 19,224); retraite de base EUR 967 (base EUR 5,409, 450 hourly Smic); invalidité-décès EUR 72 (base EUR 5,527, 11.5% PASS) | 2026 | ac-plnr page |
-| Minimum contributions, Cipav | daily benefits EUR 58; retraite de base EUR 573 (base EUR 5,409); invalidité-décès EUR 89 (base EUR 17,782, 37% PASS) | 2026 | Cipav page |
-| Minimum contributions, non-Cipav regulated | daily benefits EUR 58; retraite de base CnavPL EUR 573; 4 quarters need income of 600 hourly Smic (EUR 7,212) | 2026 | hors-Cipav page |
-| Maximum contributions, general group (as URSSAF prints them) | daily benefits EUR 1,202; retraite complémentaire EUR 17,494; invalidité-décès EUR 625 | 2026 | ac-plnr page |
-| Maximum contributions, Cipav | daily benefits EUR 433; retraite de base EUR 8,690; retraite complémentaire EUR 35,565; invalidité-décès EUR 445 | 2026 | Cipav page |
-| First and second year flat base | 19% PASS: EUR 9,131 in 2026 | 2026 | ac-plnr page; CSS L. 131-6-2 |
-| First year 2026 without Acre, general group, training levy excluded | EUR 3,473 | 2026 | ac-plnr page |
-| First year 2026, Cipav: supplementary pension on the flat base (never exempted by Acre) | EUR 9,131 at 11% = EUR 1,004 | 2026 | Cipav page ("Taux 11 % ... Montant annuel 1 004 €") |
-| Overseas (not Mayotte): maladie 1, fixed rate | 8.50% up to EUR 144,180 (3 PASS); 6.50% above | 2026 | ac-plnr page |
-| Overseas (not Mayotte): allocations familiales, fixed | 3.10% on the whole income | 2026 | ac-plnr page |
-| Overseas start-up exemption (24 months), by income | income EUR 52,866 to 72,090 (110-150% PASS): exemption worth 110% PASS; EUR 72,090 to 120,150 (150-250% PASS): tapering; above EUR 120,150: none | 2026 | ac-plnr page |
-| Overseas, 3rd year / 4th year onward, income below EUR 72,090 | allowance of 75% / 50% of income, capped at 1 PASS; excludes supplementary pension, invalidity-death and the training contribution | 2026 | ac-plnr page |
+| CSG and CRDS on replacement income of a travailleur indépendant | 6.70% | 2026 | ac-plnr page ("Revenus de remplacement 6,70 %") https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Training levy (CFP), on 1 PASS | 0.25% commerçant and liberal (EUR 120); 0.29% artisan (EUR 139); 0.34% for a commerçant or liberal professional with conjoint collaborateur (EUR 163) | 2026, paid November 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Minimum contributions, general group | daily benefits EUR 96 (base EUR 19,224); retraite de base EUR 967 (base EUR 5,409, 450 hourly Smic); invalidité-décès EUR 72 (base EUR 5,527, 11.5% PASS) | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Minimum contributions, Cipav | daily benefits EUR 58; retraite de base EUR 573 (base EUR 5,409); invalidité-décès EUR 89 (base EUR 17,782, 37% PASS) | 2026 | Cipav page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
+| Minimum contributions, non-Cipav regulated | daily benefits EUR 58; retraite de base CnavPL EUR 573; 4 quarters need income of 600 hourly Smic (EUR 7,212) | 2026 | hors-Cipav page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html |
+| Maximum contributions, general group (as URSSAF prints them) | daily benefits EUR 1,202; retraite complémentaire EUR 17,494; invalidité-décès EUR 625 | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Maximum contributions, Cipav | daily benefits EUR 433; retraite de base EUR 8,690; retraite complémentaire EUR 35,565; invalidité-décès EUR 445 | 2026 | Cipav page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
+| First and second year flat base | 19% PASS: EUR 9,131 in 2026 | 2026 | ac-plnr page; CSS L. 131-6-2 https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html ; https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| First year 2026 without Acre, general group, training levy excluded | EUR 3,473 | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| First year 2026, Cipav: supplementary pension on the flat base (never exempted by Acre) | EUR 9,131 at 11% = EUR 1,004 | 2026 | Cipav page ("Taux 11 % ... Montant annuel 1 004 €") https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html |
+| Overseas (not Mayotte): maladie 1, fixed rate | 8.50% up to EUR 144,180 (3 PASS); 6.50% above | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Overseas (not Mayotte): allocations familiales, fixed | 3.10% on the whole income | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Overseas start-up exemption (24 months), by income | income EUR 52,866 to 72,090 (110-150% PASS): exemption worth 110% PASS; EUR 72,090 to 120,150 (150-250% PASS): tapering; above EUR 120,150: none | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
+| Overseas, 3rd year / 4th year onward, income below EUR 72,090 | allowance of 75% / 50% of income, capped at 1 PASS; excludes supplementary pension, invalidity-death and the training contribution | 2026 | ac-plnr page https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
 | Acre, base at or below 75% PASS (EUR 36,045) (CSS L. 131-6-4, D. 131-6-1) | only for the eligible recipient population/effective-control gates below: exemption of one quarter of maladie, daily benefits, family, retraite de base and invalidité-décès contributions, 12 months | creations from 1 Jan 2026 | https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189 |
 | Acre, base between 75% PASS and 1 PASS | exemption = 0.25 x E / (0.25 x PASS) x (PASS - income), E = those contributions at 75% PASS; nil at 1 PASS | creations from 1 Jan 2026 | same |
 | Micro-entrepreneur global rate (CSS D. 613-4) | sales BIC 12.3%; BIC services 21.2%; BNC (SSI) 25.6%; Cipav 23.2%; classified tourist lettings 6% | from 1 Jan 2026 | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
@@ -217,9 +217,9 @@ Defaults while waiting (OpenAccountants working practice, not a legal rule): act
 | CSS L. 136-8, version in force 31 Dec 2025 to 27 Jun 2026, with the application note of LFSS 2026 art. 12 II | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053278668/2026-05-26 | 2026-10-26 |
 | Loi n° 2025-1403 of 30 December 2025 (LFSS 2026), art. 12 (capital-income CSG) and art. 23 (Acre) | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053226384/ | 2026-10-24 |
 | URSSAF, plafonds de la Sécurité sociale (updated 1 Jan 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html | 2026-10-24 |
-| URSSAF, taux artisan, commerçant, profession libérale non réglementée (updated 27 Feb 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html | 2026-10-24 |
-| URSSAF, taux profession libérale réglementée Cipav (updated 27 Feb 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html | 2026-10-24 |
-| URSSAF, taux profession libérale réglementée hors Cipav (updated 27 Feb 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html | 2026-10-24 |
+| URSSAF, taux artisan, commerçant, profession libérale non réglementée (updated 27 Feb 2026): read for the 2026 pension, invalidity-death, family allowance, CSG on replacement income, training levy, minimum and maximum contributions, first-year flat base and overseas rows | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html | 2026-11-14 |
+| URSSAF, taux profession libérale réglementée Cipav (updated 27 Feb 2026): read for the Cipav supplementary pension, invalidity-death, minimum and maximum contributions and the first-year supplementary pension | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html | 2026-11-14 |
+| URSSAF, taux profession libérale réglementée hors Cipav (updated 27 Feb 2026): read for the non-Cipav minimum contributions and the 600 hourly Smic (EUR 7,212) four-quarter threshold | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html | 2026-11-14 |
 | URSSAF, réforme de l'assiette sociale (updated 7 May 2026) | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html | 2026-10-24 |
 | URSSAF, quelles sont vos cotisations (updated 5 Oct 2026) | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html | 2026-10-24 |
 | URSSAF, calendrier de paiement des indépendants | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/calendrier-paiement-cotisations.html | 2026-10-24 |
@@ -237,4 +237,4 @@ The micro-entrepreneur Acre change is supported by décret n° 2026-69, arts. 2�
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

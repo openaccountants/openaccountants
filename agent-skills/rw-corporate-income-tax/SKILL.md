@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/rw-corporate-income-tax"
   jurisdiction: "RW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Rwanda Corporate Income Tax
@@ -137,18 +137,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 027/2022 establishing taxes on income (read: arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-01 |
-| Law 051/2023 amending the income tax law (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-01 |
-| Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax) (whole of both) | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-01 |
-| Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
-| Ministerial Order 003/26/10/TC of 29/04/2026 (read: arts 17, 19, 32-33) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-01 |
-| Ministerial Order 008/26/10/TC of 24/09/2026 (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_order___Financial_institutions.pdf | 2026-11-01 |
-| Ministerial Order 009/26/10/TC of 24/09/2026 (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-01 |
-| RRA, Declare withholding tax page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/withholding-tax-wht/declare-withholding-tax | 2026-11-01 |
-| RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
+| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
+| Law 051/2023 amending the income tax law: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-14 |
+| Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax): read in full, both laws | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Ministerial Order 003/26/10/TC of 29/04/2026: read for arts 17, 19, 32-33 | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-14 |
+| Ministerial Order 008/26/10/TC of 24/09/2026: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_order___Financial_institutions.pdf | 2026-11-14 |
+| Ministerial Order 009/26/10/TC of 24/09/2026: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-14 |
+| RRA, Declare withholding tax page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/withholding-tax-wht/declare-withholding-tax | 2026-11-14 |
+| RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
 Not yet confirmed: whether the Order under art 50 bis has been issued (none on the RRA laws page as read 2026-11-01), so the 1.5% digital tax is not treated as live; the list of treaties and their rates, including the Hong Kong agreement the first draft cited, which no saved source shows; incentive rates under the investment law (Law art 69 points to it, not read); the Handbook line that goods sold in Rwanda fall within 15% was not tested; art 60 items 3 (royalties) was missing in our text extract and rests on the old file.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rw-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rw-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rw-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rw-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

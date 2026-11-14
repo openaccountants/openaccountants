@@ -3,14 +3,15 @@ name: az-tax-overview
 description: 'Use this overview to route 2026 Azerbaijan tax questions to the dedicated individual income, corporate profit, VAT, payroll, social-contribution, transfer-pricing and cross-border skills. It identifies ordinary starting rates, taxpayer types, reporting cycles and the need to separate tax bases and registrations. Trigger on Azerbaijan tax overview, tax system, company tax, entrepreneur tax, salary taxes, VAT, foreign payments and which Azerbaijan skill applies. It does not replace the detailed computation or cover all special schemes. Read the pack README and relevant skill for explicit missing calculations. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 category: international
 tier: 2
+type: situation-rules
 ---
 
-# Azerbaijan Tax Overview v0.1
+# Azerbaijan Tax Overview v0.2
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

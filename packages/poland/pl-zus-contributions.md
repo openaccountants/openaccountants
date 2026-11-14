@@ -1,14 +1,15 @@
 ---
 name: pl-zus-contributions
 description: "Polish ZUS social contributions and the health contribution for the self-employed (jednoosobowa działalność gospodarcza) for 2026. Covers the standard base of PLN 5,652 (60% of the PLN 9,420 forecast wage), the rates (pension 19.52%, disability 8%, voluntary sickness 2.45%, accident 1.67%, Labour Fund 1.0% and Solidarity Fund 1.45%), the start relief (ulga na start), the 24-month preferential base of PLN 1,441.80, Mały ZUS Plus, the one-month contribution holiday, the annual cap of PLN 282,600, and the health contribution by tax form: 9% of income on the scale, 4.9% on the flat tax, both with a PLN 432.54 monthly minimum, and three fixed ryczałt bands (PLN 498.35, 830.58, 1,495.04). Also the DRA due on the 20th, the annual health reconciliation and 10.50% late interest. Trigger on: składki ZUS, ZUS przedsiębiorcy 2026, mały ZUS plus, ulga na start, preferencyjny ZUS, składka zdrowotna 2026. Out of scope: income tax in pl-income-tax; employees in pl-payroll; contract workers in pl-civil-law-contracts; cross-border residence in pl-cross-border."
-version: 2.3
+version: 2.4
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Poland: ZUS and health contributions for the self-employed (2026)
@@ -37,24 +38,24 @@ This skill covers what a sole trader in Poland pays to ZUS on themself in 2026: 
 | Minimum wage (monthly) | PLN 4,806 | 2026 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Forecast average wage | PLN 9,420 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 24) |
 | Standard minimum base: 60% of the forecast wage (ZUS Act art. 18 ust. 8) | PLN 5,652 a month | 2026 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Pension (emerytalne) | 19.52% (PLN 1,103.27 on the standard base) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (art. 22) |
+| Pension (emerytalne) | 19.52% (PLN 1,103.27 on the standard base, computed) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (art. 22) |
 | Disability (rentowe) | 8.00% (PLN 452.16) | 2026 | same, art. 22 |
 | Sickness (chorobowe), voluntary | 2.45% (PLN 138.47) | 2026 | same, art. 22 |
-| Accident (wypadkowe), up to 9 insured persons | 1.67% (PLN 94.39) | 2026 | zus.pl page above |
-| Labour Fund (FP) 1.0% + Solidarity Fund (FS) 1.45% | 2.45% (PLN 138.47), only if the base is at least the minimum wage | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 25, 26) |
-| Total on the standard base, with sickness / without | PLN 1,926.76 / PLN 1,788.29 a month | 2026 | zus.pl page above |
-| Preferential base: 30% of the minimum wage, first 24 months (art. 18a) | PLN 1,441.80 a month | 2026 | zus.pl page above |
-| Total on the preferential base, with sickness / without (no FP or FS) | PLN 456.18 / PLN 420.86 a month | 2026 | zus.pl page above |
+| Accident (wypadkowe), up to 9 insured persons | 1.67% (PLN 94.39) | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Labour Fund (FP) 1.0% + Solidarity Fund (FS) 1.45% | 2.45% (PLN 138.47; total and amount computed), only if the base is at least the minimum wage | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 25, 26) |
+| Total on the standard base, with sickness / without | PLN 1,926.76 / PLN 1,788.29 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Preferential base: 30% of the minimum wage, first 24 months (art. 18a) | PLN 1,441.80 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Total on the preferential base, with sickness / without (no FP or FS) | PLN 456.18 / PLN 420.86 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Mały ZUS Plus: prior-year revenue limit | PLN 120,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (art. 18c) |
 | Mały ZUS Plus base: floor and ceiling | PLN 1,441.80 to PLN 5,652 a month | 2026 | same, art. 18c ust. 2 |
 | Annual cap on the pension and disability base (30 times the forecast wage) | PLN 282,600 | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf |
-| Monthly cap on the voluntary sickness base | PLN 23,550 | 2026 | zus.pl page above |
+| Monthly cap on the voluntary sickness base | PLN 23,550 | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Health, scale (art. 27 PIT): 9% of the prior month's income | minimum PLN 432.54 a month (Feb 2026 to Jan 2027) | 2026 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Health, flat tax (art. 30c PIT): 4.9% of the prior month's income | minimum PLN 432.54 a month (9% of the minimum wage) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf (art. 79a) |
-| Health, ryczałt, revenue to date up to PLN 60,000 | PLN 498.35 a month (9% of PLN 5,537.18) | 2026 | zus.pl page above |
-| Health, ryczałt, revenue to date PLN 60,000 to 300,000 | PLN 830.58 a month (9% of PLN 9,228.64) | 2026 | zus.pl page above |
-| Health, ryczałt, revenue to date over PLN 300,000 | PLN 1,495.04 a month (9% of PLN 16,611.55) | 2026 | zus.pl page above |
-| Health, January 2026 (last month of the 2025 contribution year), scale and flat | minimum PLN 314.96 (9% of PLN 3,499.50) | 2025/26 | zus.pl page above |
+| Health, ryczałt, revenue to date up to PLN 60,000 | PLN 498.35 a month (9% of PLN 5,537.18) | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Health, ryczałt, revenue to date PLN 60,000 to 300,000 | PLN 830.58 a month (9% of PLN 9,228.64) | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Health, ryczałt, revenue to date over PLN 300,000 | PLN 1,495.04 a month (9% of PLN 16,611.55) | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Health, January 2026 (last month of the 2025 contribution year), scale and flat | minimum PLN 314.96 (9% of PLN 3,499.50) | 2025/26 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Late payment interest | 10.50% a year from 5 March 2026 | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf |
 
 ## The taxable base

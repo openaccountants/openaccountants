@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uruguay-income-tax"
   jurisdiction: "UY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Uruguay: personal income tax (IRPF) for 2026 v0.2
+# Uruguay: personal income tax (IRPF) for 2026 v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -48,7 +48,7 @@ All BPC amounts are at UYU 6,864 for 2026. The annual scale applies to the annua
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | BPC value from 1 January 2026 | UYU 6,864 a month (UYU 6,576 in 2025 under Decreto 5/025; increase 4.38%) | 2026 | https://www.impo.com.uy/bases/decretos/11-2026 |
-| Categoría II individual: up to 84 BPC (UYU 576,576), the mínimo no imponible general | Exempt | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 48 A) |
+| Categoría II individual: up to 84 BPC (UYU 576,576, computed: 84 x the 2026 BPC of UYU 6,864), the mínimo no imponible general | Exempt | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 48 A) |
 | Over 84 BPC up to 120 BPC (UYU 823,680) | 10% | 2026 | same, art. 48 A |
 | Over 120 BPC up to 180 BPC (UYU 1,235,520) | 15% | 2026 | same, art. 48 A |
 | Over 180 BPC up to 360 BPC (UYU 2,471,040) | 24% | 2026 | same, art. 48 A |
@@ -73,8 +73,7 @@ All BPC amounts are at UYU 6,864 for 2026. The annual scale applies to the annua
 | Foreign capital income of people resident from 2020 who opted under art. 24 second paragraph b) | 7% | 2026 | same, art. 37 B) |
 | Interest on local bank deposits and on publicly issued, listed debt of resident issuers, in pesos at a fixed nominal rate: 1 year or less / over 1 to 3 years / over 3 years | 5.5% / 2.5% / 0.5% | 2026 | same, art. 37 A) |
 | Same, pesos with an adjustment clause (for example UI): 1 year or less / over 1 to 3 years / over 3 years | 10% / 7% / 5% | 2026 | same, art. 37 A) |
-| Same, foreign currency: 1 year or less / over 3 years | 12% / 7% | 2026 | same, art. 37 A) |
-| Same, foreign currency, over 1 to 3 years | unverified: the rate cell is blank in the IMPO consolidated text | 2026 | same, art. 37 A) |
+| Same, foreign currency: 1 year or less / over 3 years (the over 1 to 3 years cell is blank in the IMPO consolidated text: see Not yet confirmed) | 12% / 7% | 2026 | same, art. 37 A) |
 | Rental income exemption | Exempt if all rents are 40 BPC a year (UYU 274,560) or less and the owner lifts bank secrecy; lost if other capital yields exceed 3 BPC (UYU 20,592) | 2026 | same, art. 38 J) |
 | Small disposals exemption | Each disposal UI 30,000 or less, and the year's total of such disposals under UI 90,000 | 2026 | same, art. 38 I) |
 | Sale of permanent home exemption | Sale UI 1,200,000 or less, at least 50% reinvested in a new permanent home within 12 months, new home UI 1,800,000 or less | 2026 | same, art. 38 L) |
@@ -255,8 +254,8 @@ expected:
 
 Not yet confirmed: the art. 37 A) rate for foreign-currency interest over one and up to three years (blank in the consolidated text); the monthly recargo rate for 2026; how the 180 BPC deduction-rate test and the deductions apply to a núcleo familiar return; whether a deduction credit larger than the tax is lost; which SMN figure (January or July) the 12 SMN test uses in a year with two values; the filing calendar for 2026 income (2027 campaign); monotributo and the unipersonal minimum base, which sit in BPS rules not read for this skill; the employer withholding mechanics in Decreto 148/007, left to uruguay-payroll.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -16,14 +16,15 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: "0.5"
+last_updated: 2026-11-14
+version: "0.6"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Faroe Islands individual income tax v0.5
+# Faroe Islands individual income tax v0.6
 
 > **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026, with the church-tax, spouse and bounded part-year methods checked on 28 October; professional review is pending.
 

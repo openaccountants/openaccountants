@@ -6,191 +6,167 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/singapore-formation"
   jurisdiction: "SG"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Singapore Formation
+# Singapore company formation v2.0
 
-## Section 1 -- Quick Reference
+Calendar-2026 formation and ongoing requirements. Incorporation, bank onboarding, tax residence, work permission and permission to conduct a regulated business are distinct outcomes. A submitted form is not an approval.
 
-**Section 1 -- Quick Reference**
+## Scope and who this is for
 
-| Field | Value |
-| --- | --- |
-| Country | Singapore (Republic of Singapore) |
-| Currency | SGD |
-| Company registrar | Accounting and Corporate Regulatory Authority (ACRA) -- acra.gov.sg |
-| Key legislation | Companies Act 1967; Business Registration Act |
-| Typical formation time | 1--2 business days (Singaporean/PR founders); 3--5 days (foreign founders) |
-| Corporate tax rate | 17% (headline); effective ~8.5% on first S$200,000 for new companies (partial tax exemption) |
-| Skill version | 1.0 |
+A founder or accountant registering a Singapore local company through ACRA's Bizfile. Entity comparison is a selection aid, not a universal Pte Ltd recommendation. Partnerships, LLPs, public and regulated companies need their own structure-specific work before filing. Currency is SGD; ACRA administers company registration, IRAS tax and MOM work passes.
 
-## Section 2 -- Entity Types Comparison
+| Structure | Legal personality and liability | Ownership and tax boundary | Source |
+|---|---|---|---|
+| Sole proprietorship | No separate personality; owner has unlimited liability | One owner; profits taxed to the owner | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
+| Partnership | No separate personality; partners have unlimited liability | Generally 2 to 20 partners, with professional exceptions; tax follows partner type | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
+| LLP | Separate legal person; protection does not excuse a partner's own wrongful acts | At least 2 partners, no maximum; locally resident manager required; partner-level tax | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
+| Private company | Separate person; shareholder liability limited | At least one shareholder/director; private-company shareholder maximum 50; corporate tax | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
+| Public company | Separate person; share-capital and guarantee types differ | No private-company shareholder maximum; public-company requirements need a separate assessment | [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/) |
 
-**Section 2 -- Entity Types Comparison**
+Foreign ownership does not remove resident officer/manager, work-pass, sector or licensing conditions. Do not assume all sectors permit every ownership arrangement. Read the current structure requirements for the actual founder.
 
-| Feature | Sole Proprietorship | Partnership / LLP | Private Limited (Pte Ltd) | Public Company (Ltd) |
-| --- | --- | --- | --- | --- |
-| Legal personality | No | Partnership: No / LLP: Yes | Yes | Yes |
-| Liability | Unlimited | Partnership: Unlimited / LLP: Limited | Limited | Limited |
-| Min. founders | 1 | 2 (Partnership/LLP) | 1 shareholder + 1 director | 1+ (no max) |
-| Max. shareholders | 1 | 20 (Partnership); unlimited (LLP) | 50 | Unlimited |
-| Min. share capital | N/A | N/A | S$1 | S$1 |
-| Tax treatment | Personal income tax | Partners taxed individually / LLP partners taxed individually | Corporate (17%) | Corporate (17%) |
-| Foreign ownership | 100% allowed | 100% allowed | 100% allowed | 100% allowed |
-| Admin burden | Very low | Low | Medium | High |
+## Ask the client first
 
-**Recommended default:** Private Limited Company (Pte Ltd) for credibility, limited liability, tax incentives, and foreign ownership flexibility.
+- Proposed activities and SSIC codes, customers, regulated work and any cross-border trade.
+- Every legal/beneficial owner, ownership percentage, nominator/controller, nationality and residence.
+- Proposed director's eligibility, ordinary residence, disqualifications and pass-issuer permission where applicable.
+- Share classes, rights, number, currency, issued commitment, actual payment and non-cash consideration.
+- Registered Singapore address, public-access hours, consent and residential-use permissions where relevant.
+- Name, structure, proposed FYE and first accounting period, constitution and persons authorised to endorse/file.
+- Expected taxable turnover, employees and work location, secretary/auditor arrangements, existing group and bank KYC readiness.
 
-## Section 3 -- Registration Process
+Do not default to a company from a claimed tax-saving threshold. Liability, extraction, commercial purpose, administration and immigration facts all matter.
 
-### Step 1: Reserve Company Name
+## Rates, bands and thresholds
 
-- **Reserve company name process** — Apply via ACRA's BizFile+ portal (bizfile.gov.sg). Fee: S$15. Name reserved for 120 days (renewable for 60 days at S$10). Must be unique and not offensive or identical/similar to existing names. Certain names (bank, finance, law, school) require referral to relevant authority.  _(ACRA BizFile+)_
+| Item | Current boundary | Source |
+|---|---|---|
+| Name application | S$15; approved name used within 120 days, then released | [Official source](https://www.acra.gov.sg/resources/guides-forms/apply-for-new-business-entity-name/) |
+| Company registration | S$300; name plus ordinary registration = derived S$315 (15 + 300), excluding service costs/capital | [Official source](https://www.acra.gov.sg/manage/companies/service-transaction-fees/) |
+| Annual-return filing | S$60; separate from formation | [Official source](https://www.acra.gov.sg/manage/companies/service-transaction-fees/) |
+| Share capital, company requiring it | At least S$1 in issued share capital; issued commitment and actual paid-up amount are distinct | [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/deciding-on-share-capital-share-types/) |
+| Secretary appointment | Within six months of registration; secretary cannot be the sole director | [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/) |
+| Auditor appointment | Within three months unless actually exempt | [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/) |
+| Ordinary non-listed company's AR | Within seven months of FYE; eight where it has share capital and an overseas branch register | [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-annual-returns-companies/deadline-requirements/) |
+| Listed company's AR | Within five months of FYE; six with share capital and an overseas branch register | [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-annual-returns-companies/deadline-requirements/) |
+| Private-company ordinary AGM | Within six months of FYE, subject to an applicable AGM exemption/dispensation; not a universal first 18-month grace period | [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/choosing-a-companys-financial-year-end/) |
+| ECI | Within three months of FYE unless waiver/specific exemption applies; ordinary waiver requires annual revenue at most S$5m AND nil ECI before SUTE/PTE | [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing) |
+| Corporate return | Ordinary Form C-S/C-S (Lite)/C due 30 November of the relevant YA; identify first accounts/YA, not merely the following calendar year | [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies) |
+| Corporate headline tax | 17%; apply only the exact eligible SUTE or PTE bands | [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
+| SUTE, qualifying first three consecutive YAs | 75% exemption first S$100,000 normal income and 50% next S$100,000; residence, incorporation, shareholder and activity conditions apply | [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
+| Small-company audit thresholds | Private company, ordinarily at least two of revenue ≤S$10m, assets ≤S$10m, full-time employees ≤50 for the immediate past two consecutive FYs; startup/group/continuation conditions below | [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/preparing-financial-statements/audit-exemptions/) |
+| 2026 EP salary starting points | S$5,600 general / S$6,200 financial services for age 23 or below, rising by age; COMPASS ordinarily also applies | [Official source](https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility) |
 
-### Step 2: Prepare Incorporation Documents
+A share commitment is not an expense or registration fee. Enter actual issued and paid-up amounts separately; never mark capital paid without evidence. The current guide permits unpaid/partly-paid share capital, so the former universal S$1 paid-up minimum and "at or after incorporation" payment promise are not certified. Non-cash consideration needs its actual terms/valuation and filing classification. [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/deciding-on-share-capital-share-types/)
 
-- **Prepare incorporation documents** — Company constitution (replaces Memorandum & Articles since 2014). Can adopt ACRA's Model Constitution or draft a custom one. Details: company name, registered office, share capital, directors, shareholders, secretary provisions.  _(ACRA)_
+## The method, step by step
 
-### Step 3: Appoint Key Officers
+1. Choose the structure using the liability/ownership facts. Overseas foreigners engage a CSP; a FIN holder checks with the pass issuer before accepting a role. Confirm the local director and secretary plan. [Official source](https://www.acra.gov.sg/register/business/choosing-business-structure/)
+2. Reserve the name in Bizfile's **Apply for new business entity name** service. Select structure and SSIC; review the declaration, pay, save the transaction ID, receipt and approval expiry. Referral/review is not instant approval. Do not use the former unsupported 60-day/S$10 renewal promise. [Official source](https://www.acra.gov.sg/resources/guides-forms/apply-for-new-business-entity-name/)
+3. Assemble constitution (model or customised), office/FYE, officer/shareholder details, nominators/controllers and actual capital/allotments. The filer must qualify; the name reserver normally must be a proposed director or secretary, or use a CSP. [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/)
+4. In Bizfile choose **Register → Register new entity → Register new business entity**. Retrieve the name transaction, complete company/position-holder data, ROND/RONS and RORC questions, capital/allotments and constitution. Review, submit, obtain endorsements where required and pay. Save acknowledgement and receipt. [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/)
+5. Check the Bizfile inbox for the actual outcome, incorporation notice and UEN. Download the Business Profile; do not label an application receipt a certificate of successful incorporation. Most applications are approved soon after payment, but complex/referral cases have separate processing periods. [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/)
+6. After approval, arrange Corppass, company registers, bank onboarding, the secretary and any auditor. Check business licences/trade permits before operations and CSN if hiring. Tax and GST obligations are separate from ACRA's annual return. [Official source](https://www.acra.gov.sg/register/business/after-registering/local-company/)
 
-- **Appoint key officers** — At least 1 director who is ordinarily resident in Singapore (Singapore citizen, PR, or qualifying pass holder). Company secretary must be appointed within 6 months of incorporation (must be Singapore-resident). Sole director cannot also be sole secretary.  _(ACRA)_
+### Bank account opening
 
-### Step 4: File Incorporation via BizFile+
+Use the chosen institution's current checklist. ACRA identifies authorised signatories, director/owner identity checks, board decisions and certified company documents; it notes most directors may need to be physically present. Prepare the business description, source of funds, constitution, profile, ownership chart and address evidence as requested. No universal 25% bank KYC cut-off or completion timeline is certified here. [Official source](https://www.acra.gov.sg/register/business/after-registering/local-company/)
 
-- **File incorporation via BizFile+** — Upload: constitution, officer details, shareholder details, registered office address. All directors and shareholders must provide identity verification via Singpass (Singaporeans/PRs) or passport (foreigners). Fee: S$300 (incorporation). Total ACRA fees: S$315 (S$15 name + S$300 registration).  _(ACRA BizFile+)_
+The old examples of banks/platforms are not recommendations or proof they provide a regulated deposit account. ACRA currently lists ANEXT Bank, Bank of China, CIMB, DBS, Maybank, OCBC, State Bank of India and UOB. Product eligibility and protection must be checked with the actual provider. [Official source](https://www.acra.gov.sg/register/business/after-registering/local-company/)
 
-### Step 5: Receive Certificate of Incorporation
+### Cost and timeline workpaper
 
-- **Receive Certificate of Incorporation** — Issued electronically via BizFile+. Includes Unique Entity Number (UEN). Company legally exists from date of incorporation.  _(ACRA)_
+Separate government charges, share capital and private quotes. Obtain actual quotes for secretary, registered office, nominee director if appropriate, accounting/tax and audit. Do not quote the former first-year totals or market ranges as statutory costs. A nominee remains a real director with duties; it is not a way around work or disclosure rules. [Official source](https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/)
 
-### Step 6: Post-Incorporation Registrations
+Sequence name approval → complete documents/endorsement → payment → registration outcome → required licences/work authorisation → bank and operational readiness. A bank's KYC or MOM's decision may outlast incorporation. Do not promise "ready to trade in one week" or rank Singapore's speed without evidence.
 
-- **Post-incorporation registrations** — IRAS (Inland Revenue Authority of Singapore): corporate tax registration is automatic upon incorporation. GST registration: mandatory if taxable turnover exceeds S$1M; voluntary registration permitted below threshold. CPF (Central Provident Fund): register as employer if hiring Singapore citizens/PRs. Employment Pass: apply via MOM if foreign directors/employees need to work in Singapore.  _(IRAS; CPF Board; MOM)_
+## Boundary and exception table
 
-## Section 4 -- Capital Requirements
+| Situation | Action and limit |
+|---|---|
+| No qualifying local director | Hold incorporation until a lawful director arrangement exists. A paid nominee service is not the only theoretical way to appoint an eligible director and is not automatically recommended. |
+| Pass holder wants to be director or work | Check pass issuer and role. An EP/S Pass label alone does not prove ordinary residence/permission. Incorporation does not authorise employment. |
+| EP application | Use MOM's age/sector/application-date salary table, COMPASS unless exempt, and actual advertising requirements. No company-capital guarantee was found. New applications from 1 Jan 2027 use higher starting salaries S$6,000/S$6,600, with age progression; renewal timing differs. [Official source](https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility) |
+| Small private company seeks audit exemption | Two-of-three test, new-company current-year route, group including foreign entities, and continuing/disqualifying conditions must all be considered. Corporate shareholders do not automatically bar exemption. [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/preparing-financial-statements/audit-exemptions/) |
+| Audit-exempt company | Financial-statement preparation/filing remains a separate question. Apply actual dormant-relevant/solvent-EPC exemption or Full/Simplified XBRL/PDF category; "only larger companies use XBRL" is wrong. [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-financial-statements-in-xbrl-format/requirements-exemptions/) |
+| First accounts span more than one YA | Allocate the income/expenses to the proper YAs. A missing IRAS notification is not a filing exemption. [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies) |
+| Nil ECI | Apply the two-part waiver, not "always file nil". Annual return and final corporate return are still separate obligations. [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing) |
+| Nominee/controller or regulated activity | Record actual nominators/controllers and exemption basis. Do not provide a shell-company concealment or licensing bypass. |
+| Residential office / foreign document / apostille | Obtain the applicable authority and receiving institution's requirements; this pass does not certify every zoning/notarisation outcome. |
 
-**Section 4 -- Capital Requirements**
+## Worked cases
 
-| Entity Type | Min. Share Capital | Min. Paid-Up | Payment Timing | In-Kind Contributions |
-| --- | --- | --- | --- | --- |
-| Pte Ltd | S$1 | S$1 | At or after incorporation | Not common; shares can be issued for non-cash consideration with proper valuation |
-| Public Ltd | S$1 | S$1 | At or after incorporation | Permitted |
-| LLP | N/A | N/A | Per LLP agreement | N/A |
+**Ordinary registration budget:** a private company reserves one approved name and completes one registration, with no special UEN or private service charge. Government setup charges are 15+300=315. A later annual return adds 60, so 375 is the combined government amount across these distinct events, not a first-year all-inclusive quote. Share capital is separate. [Official source](https://www.acra.gov.sg/manage/companies/service-transaction-fees/)
 
-**Practical capital:** While S$1 is the legal minimum, Employment Pass applicants are advised to have S$50,000+ in paid-up capital to demonstrate business viability. Banks also prefer higher capital for account opening.
+```oa-check
+name: Distinguish formation charges from later annual return
+inputs:
+  name_fee: 15
+  registration_fee: 300
+  annual_return_fee: 60
+steps:
+  - formation_charges: name_fee + registration_fee
+  - combined_distinct_events: formation_charges + annual_return_fee
+expected:
+  formation_charges: 315
+  combined_distinct_events: 375
+```
 
-## Section 5 -- Costs Breakdown
+**Nil ECI is not a universal waiver:** a company with 5,000,000 annual revenue and nil pre-exemption ECI meets the ordinary two-part waiver; the same revenue with 100,000 ECI does not. Neither conclusion waives ACRA AR or the final corporate return. [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing)
 
-**Section 5 -- Costs Breakdown**
+## When to refuse or refer
 
-| Cost Component | Amount (SGD) | Notes |
-| --- | --- | --- |
-| ACRA name application | S$15 | Via BizFile+ |
-| ACRA registration fee | S$300 | One-time |
-| **Total ACRA fees** | **S$315** | Mandatory government fees |
-| Corporate secretary (first year) | S$300--S$900 | Mandatory appointment within 6 months |
-| Registered office address (if using service) | S$200--S$500/year | Must be a physical Singapore address |
-| Nominee resident director (if needed) | S$1,500--S$4,000/year | For fully foreign-owned companies |
-| Accounting and tax filing (first year) | S$800--S$2,500 | Depends on transaction volume |
-| **Total first year (foreign-owned, with nominee)** | **S$3,100--S$8,200** |  |
-| **Total first year (local founder)** | **S$1,400--S$3,700** |  |
+- R-SG-F1: No qualifying resident director: hold; do not invent eligibility.
+- R-SG-F2: Missing secretary: arrange appointment within the sourced period; no blanket promise of automatic strike-off is made.
+- R-SG-F3: Capital/EP: refuse an invented S$50,000 approval threshold; obtain actual funding and MOM eligibility evidence.
+- R-SG-F4: Shell/AML: refuse concealment, false owner/controller statements and conduit arrangements without lawful purpose.
+- R-SG-F5: Missing ECI: test waiver before deciding filing; resolve an estimated assessment with IRAS, not by ignoring it.
+- R-SG-F6: Work permission: hold activities requiring an appropriate valid work pass; ownership and incorporation are not permission to work.
 
-### Annual Maintenance
+Refer public/regulated structures, bespoke share rights, non-cash valuation, director disqualification, immigration, exemptions and disputed filings to their respective qualified practitioners. Do not file, accept declarations, hire or pay without the client's authorised process.
 
-**Annual Maintenance**
+## Filing and payment
 
-| Item | Cost (SGD) |
-| --- | --- |
-| ACRA annual return filing fee | S$60 |
-| Corporate secretary | S$300--S$900/year |
-| Registered office (if service) | S$200--S$500/year |
-| Accounting and tax filing | S$800--S$2,500/year |
-| Audit (if required) | S$2,000--S$8,000/year |
-| Nominee director (if needed) | S$1,500--S$4,000/year |
+Maintain the office, officers, members, capital, controller and nominee records, with current electronic/central filings where required. Appoint any required auditor and keep proper annual accounts. Calendar the actual FYE-based AR and AGM requirements and separately ECI/final tax returns. [Official source](https://www.acra.gov.sg/register/business/after-registering/local-company/)
 
-## Section 6 -- Post-Formation Compliance
+For the AR use Bizfile's **File annual returns** service, review company/officer/shareholder details, AGM status and applicable financial statements, submit and pay the separate S$60. Retain acknowledgement, receipt and updated record. [Official source](https://www.acra.gov.sg/manage/companies/service-transaction-fees/) The financial-statement filing category depends on company type, size and public accountability, not audit exemption alone. [Official source](https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-financial-statements-in-xbrl-format/requirements-exemptions/)
 
-**Section 6 -- Post-Formation Compliance**
+For tax use the company's authorised Corppass/myTax Portal access and correct UEN. GST registration follows taxable-turnover retrospective/prospective tests; load `sg-gst-return` for filing/InvoiceNow and input-tax requirements. Apply for a CPF Submission Number where hiring requires it and use the actual payroll schedule: the former "statutory due by 14th" shorthand is not re-certified. [Official source](https://www.acra.gov.sg/register/business/after-registering/local-company/) ECI waiver and corporate return deadlines use the separate IRAS sources above.
 
-| Obligation | Deadline | Authority |
-| --- | --- | --- |
-| Annual return (AR) | Within 30 days of AGM | ACRA |
-| AGM | Within 6 months of financial year-end (18 months for first AGM) | Internal |
-| Estimated Chargeable Income (ECI) | Within 3 months of financial year-end | IRAS |
-| Corporate tax return (Form C/C-S) | 30 November of following year | IRAS |
-| GST returns (if registered) | Quarterly | IRAS |
-| CPF contributions | Monthly (by 14th of following month) | CPF Board |
-| Financial statements | Prepare annually; file with AR | ACRA (via XBRL for larger companies) |
-| Company secretary appointment | Continuously maintained | ACRA |
-| Register of members, directors, secretaries | Maintain at registered office | Internal |
+## Completion checklist
 
-### Audit Exemption (Small Company Exemption)
+- Structure, owners, local director eligibility and pass permission established.
+- Name transaction/expiry, SSIC, FYE, office, constitution, capital/allotments and nominee/controller facts reconciled.
+- Endorsements/payment followed by actual incorporation outcome, UEN and Business Profile retained.
+- Bank KYC, Corppass, registers, licences, work permission and employee registrations resolved separately.
+- Secretary/auditor and AR/AGM/ECI/final-return calendar set using the actual company/FYE/exemption facts.
+- Government fees, paid-up capital and private quotes separated; no promised bank/EP outcome.
 
-- **Audit exemption criteria** — A private company is exempt from statutory audit if it meets at least 2 of 3 criteria for the immediate past 2 financial years: Total annual revenue ≤ S$10M; Total assets ≤ S$10M; Number of employees ≤ 50.  _(Small Company Exemption)_
+## Sources
 
-## Section 7 -- Bank Account Opening
+| Source and scope read | Official URL | Read on |
+|---|---|---|
+| Read for legal personality/liability, owner/partner limits, corporate versus partner tax, foreign CSP and local-manager requirements. | https://www.acra.gov.sg/register/business/choosing-business-structure/ | 2026-11-14 |
+| Read for SSIC/structure selection, service sequence, payment/transaction ID, 120-day use and release, referrals; no old renewal promise. | https://www.acra.gov.sg/resources/guides-forms/apply-for-new-business-entity-name/ | 2026-11-14 |
+| Read for required data, ten-step Bizfile process, controller/nominee questions, issued/paid capital, endorsement/payment and actual incorporation outcome. | https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/ | 2026-11-14 |
+| Read for issued versus paid capital, minimum issued capital and unpaid/part-paid/non-cash distinctions. | https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/deciding-on-share-capital-share-types/ | 2026-11-14 |
+| Read for local eligibility, FIN pass-issuer check, secretary/sole-director boundary, appointments and nominee duties. | https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/ | 2026-11-14 |
+| Read for name, company registration and annual-return government charges. | https://www.acra.gov.sg/manage/companies/service-transaction-fees/ | 2026-11-14 |
+| Read for Corppass, bank prerequisites, registers, licences, staff CSN and separation of operations from registration. | https://www.acra.gov.sg/register/business/after-registering/local-company/ | 2026-11-14 |
+| Read for listed/non-listed and overseas-branch-register AR periods, including dormant live companies. | https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-annual-returns-companies/deadline-requirements/ | 2026-11-14 |
+| Read for private-company AGM/AR examples and actual FYE boundaries. | https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/choosing-a-companys-financial-year-end/ | 2026-11-14 |
+| Read for preparation versus filing, dormant/solvent-EPC distinction and Full/Simplified XBRL/PDF categories; not a fresh certification of every exemption definition. | https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/filing-financial-statements-in-xbrl-format/requirements-exemptions/ | 2026-11-14 |
+| Read for two-of-three thresholds, startup/group/continuation and separate financial-statement filing; Companies Act s205C and Thirteenth Schedule referenced by ACRA. | https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/preparing-financial-statements/audit-exemptions/ | 2026-11-14 |
+| Read for age/sector salary tables, 2027 new-application/2028 renewal distinction, COMPASS and advertising boundary. | https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility | 2026-11-14 |
+| Read for three-month ECI period, 5m/nil pre-exemption waiver, specific exempt categories and estimated assessment handling. | https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-%28eci%29-filing | 2026-11-14 |
+| Read for preceding-year basis, first accounts across YAs, 30 November return and separate ECI obligation. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/basic-guide-to-corporate-income-tax-for-companies | 2026-11-14 |
+| Read for 17% headline and PTE/SUTE bands, first-three-YA and residence/shareholder/activity conditions. | https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes | 2026-11-14 |
 
-### Documents Typically Required
-
-ACRA BizFile profile (company details); Certificate of Incorporation; Company constitution; Board resolution for account opening; ID (passport / NRIC) for all directors and shareholders (25%+); Proof of residential address for all UBOs; Business plan or description of activities; Source of funds documentation.
-
-### Typical Timeline
-
-1--3 days (Singapore-resident directors with clear KYC); 1--4 weeks (foreign directors, enhanced due diligence).
-
-### Common Banks
-
-DBS, OCBC, UOB (local Big 3); HSBC Singapore, Standard Chartered, Citibank (international); Aspire, Airwallex (digital/fintech).
-
-## Section 8 -- Foreign Founder Considerations
-
-**Section 8 -- Foreign Founder Considerations**
-
-| Question | Answer |
-| --- | --- |
-| Non-resident directors allowed? | Yes, but at least 1 director must be ordinarily resident in Singapore (citizen, PR, or EP/S Pass holder) |
-| 100% foreign ownership? | Yes, permitted in virtually all sectors |
-| Nominee director service | Available; recommended for fully foreign-owned companies without an EP holder |
-| Employment Pass (EP) requirement | Foreign individuals working in Singapore must hold an EP; minimum salary S$5,600/month (S$6,200 for financial services) in 2026 |
-| Physical presence required? | Not for incorporation (BizFile+ accepts remote filing); required for EP application |
-| Apostille requirements | Foreign documents may need notarisation; Singapore is a Hague Convention member |
-| Registered office | Must be a physical address in Singapore; residential address acceptable if permitted by URA zoning |
-| Tax incentives for startups | 75% exemption on first S$100,000 + 50% on next S$100,000 of chargeable income for first 3 years (conditions apply) |
-
-## Section 9 -- Common Mistakes and Refusals
-
-- **R-SG-F1 -- No resident director** — At least one director must be ordinarily resident in Singapore. A Pte Ltd cannot be incorporated without this. If no founder qualifies, a nominee director service must be engaged.  _(R-SG-F1)_
-- **R-SG-F2 -- Forgetting company secretary** — A company secretary must be appointed within 6 months of incorporation. The sole director cannot also serve as sole secretary. Failure to appoint results in ACRA penalties and potential strike-off.  _(R-SG-F2)_
-- **R-SG-F3 -- S$1 capital and EP application** — While S$1 is the legal minimum capital, the Ministry of Manpower (MOM) evaluates EP applications based on company viability. Very low capital signals insufficient substance. Recommend S$50,000+ paid-up capital for EP-linked companies.  _(R-SG-F3)_
-- **R-SG-F4 -- Shell company without substance** — Singapore takes anti-money-laundering seriously. ACRA and MAS (Monetary Authority of Singapore) actively scrutinise companies without genuine business activity. This skill will not assist in forming a company intended solely as a conduit without real operations.  _(R-SG-F4)_
-- **R-SG-F5 -- Missing ECI filing** — ECI must be filed within 3 months of financial year-end, even if estimated income is nil. Failure to file triggers IRAS penalties and a Notice of Assessment based on IRAS's own estimate.  _(R-SG-F5)_
-- **R-SG-F6 -- Operating without EP** — Foreign individuals performing work in Singapore (including as company directors managing day-to-day operations) without a valid work pass violate the Employment of Foreign Manpower Act, which carries criminal penalties.  _(R-SG-F6)_
-
-## Section 10 -- Timeline
-
-**Section 10 -- Timeline**
-
-| Step | Duration | Cumulative |
-| --- | --- | --- |
-| Reserve company name (BizFile+) | 1 day (often instant) | Day 1 |
-| Prepare constitution and officer details | 1--3 days | Day 2--4 |
-| File incorporation (BizFile+) | 1 day | Day 3--5 |
-| ACRA processes incorporation | 1--2 days (straightforward) | Day 4--7 |
-| Certificate of Incorporation received | Same day as approval | Day 4--7 |
-| Open corporate bank account | 1--3 days (resident) / 1--4 weeks (non-resident) | Day 5--35 |
-| IRAS corporate tax file number (automatic) | 1--2 weeks | Day 11--21 |
-| Apply for EP (if needed) | 3--8 weeks | Day 7--63 |
-| Appoint company secretary | Within 6 months | Day 1--180 |
-| **Ready to trade** |  | **As fast as 1 week (Singapore-resident founder)** |
-
-Singapore consistently ranks among the fastest and most efficient jurisdictions globally for company incorporation.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
+Not yet confirmed: current individual bank KYC documents/timing, a universal beneficial-owner 25% cut-off, residential zoning and apostille requirements, work-pass decision or a universal 50,000 paid-capital threshold. The old private annual ranges (secretary 300-900; office 200-500; nominee 1,500-4,000; accounting 800-2,500; audit 2,000-8,000), first-year totals (foreign 3,100-8,200; local 1,400-3,700), formation/bank/EP/tax-file timing promises, 60-day/10-dollar name renewal, universal 1-dollar paid-up requirement, blanket corporate-tax-file automation and fixed payroll 14th due date are not usable guidance without their own current official evidence. Exact AGM exemption/dispensation conditions and sector-specific foreign ownership remain case-specific. Historical replacement of Memorandum/Articles in 2014, company-name suffix, public-company subtype, custom rights and legal disputes require their actual statutory text, which was not newly opened here.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `singapore-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/singapore-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -13,17 +13,18 @@ description: >
   2026 approved-payer direct-relief conditions. Qatar Financial Centre, free-zone relief,
   treaty-specific rate tables and global minimum tax calculations require
   separate analysis. Produces working papers for qualified professional review.
-version: 0.2
+version: 0.4
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Qatar cross-border income tax v0.2
+# Qatar cross-border income tax v0.4
 
 ## Who this applies to
 
@@ -492,4 +493,4 @@ General reference only. A qualified Qatar tax professional must review the
 facts, contracts, treaty entitlement, records and operative filings before acting.
 This is a source-cited draft, not professional attestation.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
