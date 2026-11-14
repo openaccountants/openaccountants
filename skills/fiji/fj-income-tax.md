@@ -13,18 +13,19 @@ description: >
   2026-27 Budget measures are shown as held. This Tier 2 draft supports source
   checking and reviewer questions; it does not authorise filing, payment or a
   tax position.
-version: 0.2
+version: 0.3
 jurisdiction: FJ
 tax_year: 2026
 tax_year_notes: "2026 tax year (calendar year, 1 January to 31 December 2026, for individuals). Bands: Legal Notice 55 of 2023 from 1 January 2024, which FRCS repeats for the 2024 tax year onwards. Legal Notice 36 of 2025 amends the same Regulations and was not read. The 2026-27 Budget bills are held: no 2026 Income Tax, Tax Administration or FNPF amending Act was read at 5 November 2026."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: computation
 ---
 
-# Fiji Income Tax v0.2
+# Fiji Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -135,9 +136,8 @@ There is no nil band. The Legal Notice prints 3 bands to $270,000, all at 20%; t
 | Employer | 8% | 1 August 2026 to 31 July 2027, a temporary measure | Fund page says 16% total is current and gives the 8% split. Bill 22 of 2026 prints section 37(4A), total 16% for this period, with no split. No Act read. | https://myfnpf.com.fj/employers/ ; https://frcs.org.fj/files/2026/07/Bill-No.-22-Fiji-National-Provident-Fund-Budget-Amendment-Bill-2026.pdf |
 | Employer additional, above the mandatory rate to 10% | The Budget Summary says a 150% tax deduction on the excess; the Fund page says a 150% tax rebate | From 1 August 2026 | Held: no enacting text read | https://frcs.org.fj/files/2026/06/Budget-Summary-of-Revenue-Policy-2026-2027-.pdf ; https://myfnpf.com.fj/employers/ |
 | Voluntary and additional contributions | Limit of $250,000 a financial year for a member | From 1 February 2025, gazetted 31 January 2025 per the Fund; FNPF Act s 38(6) as cited there | Fund page; Gazette not read | https://myfnpf.com.fj/2025/02/19/fnpf-reverts-to-old-voluntary-and-additional-contribution-limit/ |
-| Compulsory wage ceiling | unverified: no ceiling or absence of ceiling was read | Held | Held | No page read states this |
 
-The Fund calculates contributions on total wages, inclusive of cents. Employee and employer contributions are not personal deductions: see 'FNPF and deductions' in The base.
+No page read states whether FNPF contributions have a wage ceiling, so none is applied here and the point is listed under Not yet confirmed. The Fund calculates contributions on total wages, inclusive of cents. Employee and employer contributions are not personal deductions: see 'FNPF and deductions' in The base.
 
 ### Other figures
 
@@ -160,7 +160,6 @@ The Fund calculates contributions on total wages, inclusive of cents. Employee a
 | Other employment lump sum exemption | Up to $5,000, as the CEO considers reasonable, reduced by earlier use | Same Schedule para 2. Excludes a redundancy payment, a fund refund, an amount due under the contract of employment and a payment for or in lieu of leave | Enacted, revised Act | same |
 | Small and micro enterprise exemption | Prescribed small and micro enterprises in agriculture, fisheries or tourism, gross turnover not exceeding $500,000 | Same Schedule Part 9 para 4. What is prescribed sits in the Small and Micro Enterprises Incentives Regulations, not read | Enacted, revised Act | same |
 | Presumptive Income Tax | Turnover under $100,000 | ITA s 9, which starts on a date the Minister appoints by Gazette notice (s 1(3)). No notice or rate was read. Do not apply it | Held | same |
-| National minimum wage | unverified: FJD 5.00 an hour from 1 April 2025, carried from the earlier version | Payroll context only. Page not read | Held | Fiji Government media page not read |
 
 ### Budget measures held
 
@@ -657,7 +656,7 @@ Rates were read in the Legal Notice and FRCS's own page. FRCS's revised Acts wer
 | Parliament of Fiji, Acts and Bills lists | https://www.parliament.gov.fj/acts/ ; https://www.parliament.gov.fj/bills/ | tried 2026-11-05: JavaScript challenge, not read |
 | Fiji laws site | https://www.laws.gov.fj/ | tried 2026-11-05: no statute text, not read |
 
-Not yet confirmed: enactment, final text and commencement of Bills 14, 15 and 22 of 2026 and any regulations under them, including the FNPF 16% period and split in an Act, the employer 150% measure, a rebate on the Fund page and a deduction in the Budget Summary, and every Budget measure held above; any earlier 2026 Income Tax amendment implied by the title 'No. 2'; Legal Notice 36 of 2025, which amends the same Regulations as the bands, Legal Notice 37 of 2025, and whether any later notice alters the bands; the FNPF Act for every Fund page rate, and the Gazette for the $250,000 limit; any FNPF wage ceiling; deduction for a self-employed person's own voluntary FNPF contribution, after a complete search; the current level of the extra deduction for additional employer contributions; ECAL on prescribed services; Presumptive Income Tax commencement and rate; whether section 25(20) reaches an existing tour operator, against SIG 2026-07 para 24; whether section 125A's removal affects the 2024 tax year; whether a current-year loss can reduce employment income after that removal (this guide infers it cannot); whether consecutive jobs or a part year need a PIT-S on FRCS's list when sections 105 and 125 require none; dividend exemption scope (Exempt Income Schedule Part 5 against the FRCS exemptions page); home office and mileage evidence rules; express VAT treatment in gross proceeds; provisional tax on the VAT-exclusive amount, FRCS page practice; section 117 against regulation 5 on remittance date; section 108 against FRCS's 30 days after assessment for self-assessment; whether TAA s 43(1)(a) and (b) add together, and how months of default are counted; TAA ss 45 and 46 against the percentages on FRCS's penalties page; a general interest charge on arrears; any filing extension for 2025 or 2026 returns, and past extensions such as 31 May; the asset declaration thresholds, format and restart date, and whether the requirement runs from 1 August 2025 (Act 8 of 2025) or 1 January 2026 (SIG 2026-08); the 2026 PIT-B and PIT-S forms and FRCS's TPOS user guide; Income Tax (Allowances) Regulations 2019 and Employment Incentives Regulations; class of printers and scanners for depreciation; grant treatment; non-resident withholding on foreign software subscriptions and the 3% or 3.75% insurance rate; treaty position; source rules in section 7 beyond employment income; SIG 2026-01 and SIG 2026-02; national minimum wage; bank statement layouts.
+Not yet confirmed: enactment, final text and commencement of Bills 14, 15 and 22 of 2026 and any regulations under them, including the FNPF 16% period and split in an Act, the employer 150% measure, a rebate on the Fund page and a deduction in the Budget Summary, and every Budget measure held above; any earlier 2026 Income Tax amendment implied by the title 'No. 2'; Legal Notice 36 of 2025, which amends the same Regulations as the bands, Legal Notice 37 of 2025, and whether any later notice alters the bands; the FNPF Act for every Fund page rate, and the Gazette for the $250,000 limit; any FNPF wage ceiling; deduction for a self-employed person's own voluntary FNPF contribution, after a complete search; the current level of the extra deduction for additional employer contributions; ECAL on prescribed services; Presumptive Income Tax commencement and rate; whether section 25(20) reaches an existing tour operator, against SIG 2026-07 para 24; whether section 125A's removal affects the 2024 tax year; whether a current-year loss can reduce employment income after that removal (this guide infers it cannot); whether consecutive jobs or a part year need a PIT-S on FRCS's list when sections 105 and 125 require none; dividend exemption scope (Exempt Income Schedule Part 5 against the FRCS exemptions page); home office and mileage evidence rules; express VAT treatment in gross proceeds; provisional tax on the VAT-exclusive amount, FRCS page practice; section 117 against regulation 5 on remittance date; section 108 against FRCS's 30 days after assessment for self-assessment; whether TAA s 43(1)(a) and (b) add together, and how months of default are counted; TAA ss 45 and 46 against the percentages on FRCS's penalties page; a general interest charge on arrears; any filing extension for 2025 or 2026 returns, and past extensions such as 31 May; the asset declaration thresholds, format and restart date, and whether the requirement runs from 1 August 2025 (Act 8 of 2025) or 1 January 2026 (SIG 2026-08); the 2026 PIT-B and PIT-S forms and FRCS's TPOS user guide; Income Tax (Allowances) Regulations 2019 and Employment Incentives Regulations; class of printers and scanners for depreciation; grant treatment; non-resident withholding on foreign software subscriptions and the 3% or 3.75% insurance rate; treaty position; source rules in section 7 beyond employment income; SIG 2026-01 and SIG 2026-02; national minimum wage; bank statement layouts; the national minimum wage (the earlier version carried FJD 5.00 an hour from 1 April 2025, but no official page was read).
 
 ### Version history
 
