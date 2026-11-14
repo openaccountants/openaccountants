@@ -1,90 +1,75 @@
 ---
 name: ke-income-tax
 description: Use this skill whenever asked about Kenyan income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay", "KRA", "iTax", "income tax return", "personal relief", "insurance relief", "turnover tax", "presumptive tax", "self-employed tax Kenya", or any question about filing or computing income tax for a self-employed or sole proprietor client in Kenya. ALWAYS read this skill before touching any Kenyan income tax work.
-version: 2.2
 jurisdiction: KE
-tax_year: 2025
-tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The SHIF treatment was updated on 2026-10-31. Finance Act, 2026 changes are listed in their own section and are not yet worked into the rates or examples.
-last_updated: 2026-11-01
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+version: 2.3
+type: computation
+category: international
 ---
 
-# KE Income Tax
+# Kenya self-employed income tax (2026) v2.3
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference field table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Kenya |
-| Tax type | Income tax on business income (self-assessment) |
-| Primary legislation | Income Tax Act, Chapter 470 |
-| Supporting legislation | Tax Procedures Act 2015; Finance Act 2023; Finance Act 2024 |
-| Tax authority | KRA (Kenya Revenue Authority) |
-| Filing portal | iTax (itax.kra.go.ke) |
-| Currency | KES only |
-| Return form | Self-assessment return |
-| Filing deadline | 30 June of the following year. Finance Act, 2026 s.18 moves individuals to the last day of the fourth month after the year of income, in force 1 January 2027, so the 2026 return is due 30 April 2027: see "Finance Act, 2026" |
-| Instalment tax | Quarterly (20th of 4th, 6th, 9th, 12th months) |
-| Personal relief | KES 28,800/year (credit against tax) |
-| Insurance relief | 15% of qualifying premiums, cap KES 60,000/year |
-| Turnover tax | 1.5% on gross turnover KES 1M--25M (non-professional) |
-| Presumptive tax | KES 15,000/year (turnover below KES 1M) |
-| Contributor | Open Accountants Community |
-| Validation date | Pending |
+Resident self-employed individuals and sole proprietors computing business income for the calendar year. [ITA ss2-4,15-16](https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf) control residence, source and taxable profit. A Kenyan bank account/PIN is an intake clue, not proof of residence. Collect bank and M-PESA records; recommended invoices, premium certificates, instalment receipts, PIN and WHT certificates; ideal full books, prior return and iTax ledger. Bank credits alone are not taxable turnover.
 
-**Progressive tax table (resident, annual)**
+Refusal catalogue retained: R-KE-1 companies/LLPs and entity classification go to the relevant adviser/sibling; R-KE-2 non-resident computation is outside this resident workflow, without the old flat-rate assumption; R-KE-3 cross-border WHT/treaties need specialist review; R-KE-4 property/business-asset capital gains need a separate computation. Do not guess missing expenses, business-use share, residence or the tax regime. Hold unsupported deductions pending documents, without asserting that a conservative zero is the legal result.
 
-| Taxable income (KES) | Rate |
-| --- | --- |
-| 0--288,000 | 10% |
-| 288,001--388,000 | 25% |
-| 388,001--6,000,000 | 30% |
-| 6,000,001--9,600,000 | 32.5% |
-| 9,600,001+ | 35% |
+## Rates, bands and thresholds
 
-**Wear-and-tear rates (reducing balance)**
+All rates below are for the 2026 year of income. The KRA consolidated Act notes outstanding Finance Act amendments on its cover; read it together with the separate Finance Act rather than relying on the cover as proof all deferred changes are applied.
 
-| Asset | Rate |
-| --- | --- |
-| Heavy/self-propelling machinery | 37.5% |
-| Computer/IT equipment | 30% |
-| Motor vehicles | 25% |
-| Furniture and fittings | 12.5% |
-| Farm machinery | 100% |
+| Annual taxable-income slice (KES) | Rate and condition | Official source |
+|---|---|---|
+| First 288,000 | 10%, Third Schedule Head B para1 | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Next 100,000 | 25%, same | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Next 5,612,000 | 30%, same | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Next 3,600,000 | 32.5%, same | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Above 9,600,000 | 35%, same | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 
-**Conservative defaults**
+| Item | Amount and complete condition | Official source |
+|---|---|---|
+| Resident personal relief | KES 28,800 per year, credit against tax; ITA s30 and Head A para1, in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Insurance relief | 15% of qualifying premiums, maximum KES 60,000 per year; s31 and Head A para2, in words on the page; establish policy/payer eligibility | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Turnover-tax eligibility | Resident business turnover more than KES 1,000,000 and not exceeding/expected to exceed KES 25,000,000 annually; s12C, in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Turnover-tax rate | 1.5% of gross business receipts, final tax; no expense deduction; Head B para9, in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Turnover-tax exclusions | Rental, management/professional/training fees and final-WHT income; non-residents outside s12C; written election out permitted | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Resident professional-fee WHT credit | 5% on aggregate qualifying fee KES 24,000 or more in a month, Head B para5(f), in words on the page; certificate supports credit, not a second final charge | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Individual instalment exemption | Current-year total tax not exceeding KES 40,000, s12(5), in words on the page; not old prior-year less-than test | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| SHIF | Contribution deductible under s15(2)(ae); not insurance relief | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency | STOP -- non-residents pay flat 30% |
-| Unknown expense category | Not deductible |
-| Unknown business-use proportion | 0% |
-| Unknown whether turnover tax is elected | Normal tax |
+Capital allowances replace the old reducing-balance table; use the actual asset/use category, not just its bank narration.
 
-**Read this whole section before classifying anything.**
+| Capital expenditure | Allowance and condition | Official source |
+|---|---|---|
+| Motor vehicles/heavy earth-moving equipment | 25% per year in equal instalments, Second Schedule para1(b)(v) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Computers/peripheral hardware/software, calculators/copiers/duplicating | 25% per year in equal instalments, para1(b)(vi) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Furniture and fittings | 10% per year in equal instalments, para1(b)(vii) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Manufacture machinery | 50% first year of use; residual 25% per year in equal instalments, paras1(b)(i),(iv); special investment conditions need review | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Other machinery | 10% per year in equal instalments, para1(b)(xii) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 
-## Section 2 -- Required inputs and refusal catalogue
+## The base
 
-### Required inputs
+1. Reconcile income in Kenyan shillings from invoices, bank and mobile-money statements. Remove documented loans, own-account transfers and capital introduced. Gross up fees received net of creditable withholding and retain certificates.
+2. Establish normal assessment or s12C turnover tax before deducting expenses. Under TOT do not deduct costs; a taxpayer can elect out by written notice. Compare only legally available routes.
+3. For normal assessment, s15(1) permits expenses wholly and exclusively incurred in producing income, subject to s16 exclusions and documentation. Allocate mixed business/private use on evidence. Capital expenditure is not a direct revenue deduction; use capital allowances where eligible.
+4. Apply allowable paid pension/SHIF deductions and other established adjustments. NSSF deductibility and pension limits depend on ss22A-22B; do not grant an uncapped deduction or double count against an individual retirement fund limit.
+5. Apply progressive bands to normal taxable income. Personal/insurance relief are credits, not deductions from profit. Do not refund unused relief in these examples. SHIF is a deduction, without a second insurance-relief credit.
+6. Offset evidenced instalment tax and creditable WHT against the final annual liability. Final-tax income is not assessed twice; identify qualifying interest/dividends separately instead of treating all bank interest as ordinary business profit.
 
-- **Minimum viable inputs**: bank statement for the tax year. Acceptable from: Equity Bank, KCB (Kenya Commercial Bank), Co-operative Bank, NCBA, Standard Chartered Kenya, Absa Kenya, I&M Bank, DTB, or mobile money (M-Pesa via Safaricom).
-- **Recommended inputs**: invoices, insurance premium certificates, instalment tax payment records, PIN certificate, WHT certificates.
-- **Ideal inputs**: complete bookkeeping, prior year return, iTax account records.
+### Transaction-pattern library (intake prompts, never proof of tax treatment)
 
-### Refusal catalogue
+The following retained bank/counterparty patterns help classify documents. Deductibility always depends on actual business purpose under ss15-16, not the supplier brand. They are illustrative workflow labels, not an official authority endorsement of any vendor.
 
-- **R-KE-1 -- Company/LLP**: This skill covers self-employed individuals only. Companies file corporate returns at 30%. (Trigger: client is a limited company or LLP.)
-- **R-KE-2 -- Non-resident**: Non-residents pay flat 30% on Kenya-source income with no personal relief. This skill covers residents only. (Trigger: non-resident status.)
-- **R-KE-3 -- Cross-border/WHT**: Cross-border WHT and treaty analysis are outside scope. Consult a tax practitioner. (Trigger: complex withholding tax or treaty questions.)
-- **R-KE-4 -- Capital gains**: Capital gains tax (15%) is outside scope. (Trigger: property disposal.)
 
-## Section 3 -- Transaction pattern library (the lookup table)
-
-### 3.1 Kenyan banks (fees and interest)
+#### 3.1 Kenyan banks (fees and interest)
 
 **Kenyan banks (fees and interest)**
 
@@ -98,11 +83,11 @@ domain: income-tax
 | ABSA KENYA (formerly Barclays) | Bank charges: deductible | Same |
 | I&M BANK, DTB | Bank charges: deductible | Same |
 | REVOLUT, WISE (fees) | Deductible | Fintech fees |
-| INTEREST (credit) | Taxable income | Subject to WHT at source (15%) |
+| INTEREST (credit) | Taxable income | Identify the interest instrument and final/credit treatment; see corporate withholding table |
 | INTEREST (debit) | Deductible if business loan | Personal: NOT deductible |
 | LOAN (principal) | EXCLUDE | Principal movement |
 
-### 3.2 M-Pesa and mobile money
+#### 3.2 M-Pesa and mobile money
 
 **M-Pesa and mobile money**
 
@@ -113,7 +98,7 @@ domain: income-tax
 | MPESA FLOAT, B2C, C2B | EXCLUDE if internal movement | Business float management |
 | AIRTEL MONEY | Same as M-Pesa | Alternative mobile money |
 
-### 3.3 Kenyan government and statutory bodies
+#### 3.3 Kenyan government and statutory bodies
 
 **Kenyan government and statutory bodies**
 
@@ -122,10 +107,10 @@ domain: income-tax
 | KRA, KENYA REVENUE AUTHORITY | EXCLUDE | Tax payment |
 | NSSF, NATIONAL SOCIAL SECURITY | Deductible (up to statutory limit) | Provident fund contribution |
 | SHIF, SOCIAL HEALTH INSURANCE | Deductible (ITA s15(2)(ae)) | Deduction from taxable income, not insurance relief |
-| NHIF (legacy) | NOT deductible | Replaced by SHIF |
+| NHIF (legacy) | Historical-period review | Do not apply current SHIF treatment to a different historic payment |
 | COUNTY GOVERNMENT, NAIROBI COUNTY | Deductible if business licence/permit | Business licence fees |
 
-### 3.4 Kenyan utilities and telecoms
+#### 3.4 Kenyan utilities and telecoms
 
 **Kenyan utilities and telecoms**
 
@@ -136,7 +121,7 @@ domain: income-tax
 | SAFARICOM, AIRTEL, TELKOM KENYA | Deductible: business phone/internet | Mixed: apportion |
 | ZUKU, FAIBA | Deductible: business internet | Mixed: apportion |
 
-### 3.5 SaaS and software -- international
+#### 3.5 SaaS and software -- international
 
 **SaaS and software -- international**
 
@@ -146,7 +131,7 @@ domain: income-tax
 | GITHUB, OPENAI, ANTHROPIC | Deductible expense | Non-EU |
 | SLACK, ZOOM, ATLASSIAN | Deductible expense | Check entity |
 
-### 3.6 Professional services (Kenya)
+#### 3.6 Professional services (Kenya)
 
 **Professional services (Kenya)**
 
@@ -156,7 +141,7 @@ domain: income-tax
 | ADVOCATE, LAW FIRM | Deductible if business | Legal fees |
 | TAX AGENT | Deductible | Tax advisory |
 
-### 3.7 Transport and travel
+#### 3.7 Transport and travel
 
 **Transport and travel**
 
@@ -167,16 +152,16 @@ domain: income-tax
 | TOTAL, SHELL, RUBIS, VIVO ENERGY | Deductible: business vehicle portion | Fuel |
 | SGR (Madaraka Express) | Deductible if business | Train |
 
-### 3.8 Insurance
+#### 3.8 Insurance
 
 **Insurance**
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | JUBILEE, BRITAM, CIC, UAP, APA | Deductible if business insurance | Personal life/health: insurance RELIEF (not deduction) |
-| INSURANCE PREMIUM (life/health/education) | Insurance relief: 15% of premiums, cap KES 60,000 | Credit against tax |
+| INSURANCE PREMIUM (life/health/education) | Insurance relief subject to the sourced limits above | Credit against tax |
 
-### 3.9 Food and entertainment
+#### 3.9 Food and entertainment
 
 **Food and entertainment**
 
@@ -185,7 +170,7 @@ domain: income-tax
 | NAIVAS, CARREFOUR KE, QUICKMART | Default: NOT deductible | Personal provisioning |
 | RESTAURANT | Deductible only if wholly and exclusively business | Must prove |
 
-### 3.10 Internal transfers and exclusions
+#### 3.10 Internal transfers and exclusions
 
 **Internal transfers and exclusions**
 
@@ -195,7 +180,66 @@ domain: income-tax
 | MPESA TO BANK, BANK TO MPESA | EXCLUDE | Own account transfer |
 | DRAWINGS, PERSONAL | EXCLUDE | Owner drawings |
 
-## Section 4 -- Worked examples
+
+### Working papers, bank formats and escalation
+
+Retain a Transactions sheet: Date, Counterparty, Description, KES amount, Revenue/Expense/Capital/Insurance/Exclude classification, deductible amount, provisional default, question and notes. Tax Computation sheet: taxable profit, bands, relief, instalments and WHT credits. These are working-paper labels, not official iTax boxes.
+
+Read actual export headers before importing: common fields Date, Description/Narration, Debit, Credit, Balance; Equity date formats, KCB variations and Co-op separators must be confirmed in the client's file rather than hard-coded. M-PESA is separate from the bank; reconcile transaction ID, paybill/till/send-money, recipient and amount. PAYBILL/TILL indicate channels, B2C/C2B describe transfers, and FULIZA/KCB MPESA may involve loans or own movements; establish substance. Document a justified KES conversion for foreign currency; the old universal CBK transaction-date rule is not independently established here.
+
+Ask follow-ups on business activity, turnover, elected regime, insurance, instalments and WHT certificates; do not infer residence from the bank/PIN or credits from a narration. Vehicle/home-office mixed use requires an evidenced business allocation. Industrial buildings/complex allowances go to a reviewer. A dedicated room is not treated here as a universally necessary statutory home-office condition.
+
+### Finance Act, 2026 changes retained
+
+
+Act No. 19 of 2026, assented 23 June 2026, published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Read in the KRA copy of the Gazette. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
+
+| Section | Change | In force  Official source |
+|---|---|------|
+| s.2 | "Management or professional fee" includes interchange and merchant service fees on card payments. "Royalty" is redefined to include software, proprietary or off-the-shelf, whether licence, development, training, maintenance or support fees, and proprietary digital payment card networks or platforms. New definition of "winnings": a pay-out from a lottery or prize competition by a person licensed under the Gambling Control Act, 2025 | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.3 | Contribution to a gratuity added to s.5(4) as new paragraph (ga): continuous contract of service of at least 3 years, or its renewal or extension beyond 3 years, amount paid not above 31% of emoluments earned for the contract period | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.4 | New s.6B: non-resident rental income tax, a final tax. Register through the simplified framework, then return and payment by the 20th of the month following the end of the month for which the rent is paid, unless a resident receiving the rent is subject to deduction under s.35(1)(c). The rate is in the Third Schedule, not in this section. See `non-resident-rental-income-tax-on-kenyan-property` | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.5 | Income Tax Act s.8(5A) deleted | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.7, s.16, s.21 | Scrap metal and winnings added to s.10 and s.35. Withholding: 1.5% of the gross amount on scrap metal, 20% on winnings (rates in words on the page) | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.8 | Trust income is deemed income of the trustee, executor or administrator. Qualifying dividend or interest in that income bears no further tax. Where the trustee, executor or administrator has paid tax, the beneficiary is not liable on that income | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.9 | s.12(1)(a) replaced: no instalment tax for a person who, to the best of their judgement and belief, will have no income chargeable for the year other than emoluments (read together with ITA s12(1)(b) and s12(5); do not ignore the other conditions) | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.10 | Bad debts of money lenders, banks and licensed financial institutions include principal, interest and related amounts. Deficit carry-forward proviso for investors of at least KES 10 billion before 1 July 2025 | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.15, s.42 | Income Tax Act s.23 (tax avoidance adjustment) repealed. New Tax Procedures Act s.18A on tax avoidance schemes | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.17 | s.52(1): a return required by the Commissioner's notice is now due by the last day of the 4th month after the year of income, in place of a reasonable time of at least 30 days | 1 January 2027 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.18 | s.52B(1): individuals file with self-assessment by the last day of the 4th month after the year of income; others by the last day of the 6th month after the accounting period | 1 January 2027 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.19 | First Schedule: benefits arising due to death added to paragraph 53 proviso; capital gains on transfer of property to a real estate investment trust registered by the Commissioner under s.20(1) exempt (paragraph 76) | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.20 | Second Schedule: 100% in the first year of use on item (iv) where investment is over KES 10 billion; item (a)(viii) 10% is per year in equal instalments | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.23 | Eighth Schedule: gains of a non-resident on shares that derive value from Kenya, or where the sale changes the group membership of a Kenyan resident company or ownership of property in Kenya | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| s.47 | Tax Procedures Act s.75: the Commissioner may issue a pre-populated return by the end of January. The person confirms or amends it within 2 months of issue, and may rely on it to file | 1 July 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+
+If a client's year of income ends on 31 December, the s.18 date is 30 April. New s.52B(1)(a) applies to "any year of income", s.1 starts it on 1 January 2027, and the Act has no transitional rule, so the 2026 return is due 30 April 2027. KRA says the new timelines begin on 1 January 2027 and that individuals file by 30 April.
+
+## Deadlines and filing
+
+| Obligation | Due and complete condition | Official source |
+|---|---|---|
+| Individual return before deferred change | Last day of 6th month after year under existing s52B, in words on the page; this does not preserve that deadline once the new provision commences | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Individual return after commencement | Last day of 4th month after year; FA2026 s18 effective 1 January 2027 under s1(a), in words on the page. Thus 2026 calendar-year return due 30 April 2027 is derived interpretation of commencement and wording, not a separate KRA named-year notice | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
+| Self-assessment payment | Last day of 4th month after year, s92A, in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Ordinary instalments | 25% each by 20th of 4th,6th,9th,12th months, s12/Twelfth Schedule; agricultural exceptions need separate review | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| TOT return and payment | 20th of following calendar month, s12C(4),(8), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+
+Calculate instalments on the lesser current-year tax basis or 110% of preceding-year assessment, reduce by specified credits under s12(2)-(3), then apply the schedule. Do not ignore the emoluments exemption conditions or current-year individual tax exemption.
+
+For normal assessment, use iTax (https://itax.kra.go.ke), select the resident individual's income-tax return and period, enter reconciled business income/expenses, allowances, other income, reliefs and evidenced credits; validate, submit and save acknowledgement. Generate the payment registration for the correct obligation/period and reconcile the receipt and ledger. Current form/box labels are not supplied by these statutes and must be checked against the actual return.
+
+For TOT, KRA's [official instructions](https://www.kra.go.ke/individual/filing-paying/types-of-taxes/turnover-tax-tot) direct Registration > amend PIN details, basic information/obligation details to register, and Return > File Return, select TOT and period, enter gross sales, submit, then Payments > Payment Registration and generate the slip for the TOT period. Save acknowledgements and payment evidence.
+
+## Penalties and interest
+
+[TPA ss38,83(1)(b),(d)(ii),83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf): late ordinary individual return, higher of 5% of tax payable or KES 2,000, with tax reduced by prior payments/WHT credits; late TOT return KES 1,000; late tax 5% plus 1% simple interest per month or part (in words on the page). These are distinct charges. The old 20% underestimation-penalty assertion is not used without the applicable provision and facts.
+
+## Cross-border points
+
+Non-residents are referred outside this resident workflow; the old universal flat 30% and prohibition on progressive rates were incorrect generalisations. The Third Schedule individual table applies subject to income-type rules, and personal relief is resident-only. Foreign employment/business, treaties, non-resident consulting WHT and foreign tax relief require the relevant law and treaty. A generic professional-WHT rate must not be assumed to apply to every contract or EAC/SEZ case. Capital gains, including business assets and property, require a separate regime.
+
+## Two worked examples that recompute
+
 
 ### Example 1 -- Standard self-employed, mid-range
 
@@ -249,204 +293,74 @@ expected:
 **Input:** Non-professional trader, turnover KES 8,000,000.
 **Computation:** TOT = 1.5% x KES 8,000,000 = KES 120,000/year.
 
-### Example 4 -- Presumptive vs normal
-
-**Input:** Small trader, turnover KES 500,000, expenses KES 350,000.
-**Computation:** Normal: profit KES 150,000. Tax = 15,000 - 28,800 relief = KES 0. Presumptive: KES 15,000. Normal is better.
-
-## Section 5 -- Tier 1 rules (deterministic)
-
-### 5.1 Progressive rates
-
-- **Progressive rates**: 10%/25%/30%/32.5%/35%. Non-residents: flat 30%.  _(ITA Cap 470, Third Schedule.)_
-
-### 5.2 Personal relief
-
-- **Personal relief**: KES 28,800/year. Credit against tax, NOT deduction from income. Available to all residents.  _(ITA.)_
-
-### 5.3 Insurance relief
-
-- **Insurance relief**: 15% of qualifying premiums (life, health, education). Cap KES 60,000/year. Credit against tax. SHIF contributions do not qualify; they are a deduction under s15(2)(ae).  _(s31; KRA notice 8 Nov 2024.)_
-
-### 5.4 Instalment tax
-
-- **Instalment tax**: Quarterly: 25% each on 20th of 4th, 6th, 9th, 12th months. Based on estimated current year or prior year actual. If prior year tax < KES 40,000: not required. Under-estimation: 20% penalty.  _(s12.)_
-
-### 5.5 Turnover tax
-
-- **Turnover tax**: 1.5% on gross turnover KES 1M--25M. Monthly filing. Replaces income tax. No expense deductions. Excludes professional/management services.  _(s12C.)_
-
-### 5.6 Presumptive tax
-
-- **Presumptive tax**: KES 15,000/year for specified businesses under KES 1M turnover. Final tax.  _(s12D.)_
-
-### 5.7 Wear-and-tear (capital deductions)
-
-- **Wear-and-tear rates**: Reducing balance method. Heavy machinery: 37.5%. Computers: 30%. Vehicles: 25%. Furniture: 12.5%. Farm machinery: 100%.  _(Second Schedule.)_
-
-### 5.8 NSSF/SHIF
-
-- **NSSF/SHIF treatment**: NSSF (provident): deductible up to statutory limit. SHIF (health): deductible, from 27 December 2024. Insurance relief does not apply to SHIF.  _(ITA s15(2)(ae); KRA PAYE page; KRA notice 8 Nov 2024.)_
-
-### 5.9 WHT credits
-
-- **WHT credits**: Withholding tax on professional fees (5%) is a credit against final tax. Requires WHT certificates.  _(ITA.)_
-
-### 5.10 Record keeping
-
-- **Record keeping**: 5 years. English or Swahili. Paper or electronic.  _(Tax Procedures Act s23.)_
-
-## Section 6 -- Tier 2 catalogue
-
-### 6.1 Turnover tax vs normal tax
-
-*Why:* Depends on expense level and qualification. *Default:* Present both. *Question:* "What are your total expenses? Professional services?"
-
-### 6.2 Below KES 1M: presumptive vs normal
-
-*Why:* Normal may be cheaper if expenses are high. *Default:* Compute both. *Question:* "Total documented expenses?"
-
-### 6.3 Motor vehicle business portion
-
-*Why:* Unknown split. *Default:* 0%. *Question:* "Do you maintain a logbook?"
-
-### 6.4 Home office
-
-*Why:* Must be dedicated space. *Default:* Not deductible. *Question:* "Dedicated room for business?"
-
-### 6.5 Capital allowances (industrial building)
-
-*Why:* Complex rules. *Default:* Flag for reviewer. *Question:* "Do you own business premises?"
-
-## Section 7 -- Excel working paper template
-
-### Sheet "Transactions"
-
-Columns: Date, Counterparty, Description, Amount (KES), Category (Revenue/Expense/Capital/Insurance/EXCLUDE), Deductible amount, Default?, Question, Notes.
-
-### Sheet "Tax Computation"
-
-Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
-
-## Section 8 -- Bank statement reading guide
-
-**CSV formats.** Equity Bank exports CSV with DD/MM/YYYY. KCB uses various formats. Co-op Bank uses semicolons. Common columns: Date, Description/Narration, Debit, Credit, Balance.
-
-**M-Pesa integration.** Many transactions flow through M-Pesa. M-Pesa statements are separate from bank statements. Request both. M-Pesa shows: transaction ID, type (paybill/till/send money), recipient, amount.
-
-**Kenyan-specific patterns.** "PAYBILL" = payment to business. "TILL" = payment at point of sale. "B2C" = business to customer. "C2B" = customer to business. "FULIZA" = overdraft (loan -- exclude principal). "KCB MPESA" = integrated mobile banking.
-
-**WHT deductions.** Professional fees received may have 5% withheld. Gross up the income and claim WHT credit.
-
-**Foreign currency.** Convert to KES at CBK (Central Bank of Kenya) rate on transaction date.
-
-## Section 9 -- Onboarding fallback
-
-### 9.1 Residency
-
-*Inference:* Kenyan bank + KRA PIN. *Fallback:* "Are you a Kenyan tax resident?"
-
-### 9.2 Nature of trade
-
-*Inference:* From counterparty mix. *Fallback:* "What is your business activity?"
-
-### 9.3 Annual turnover
-
-*Inference:* Sum of credits. *Fallback:* "What is your approximate annual turnover? (Determines TOT/presumptive eligibility.)"
-
-### 9.4 Tax regime
-
-*Inference:* If TOT monthly payments visible. *Fallback:* "Are you on turnover tax, presumptive tax, or normal self-assessment?"
-
-### 9.5 Insurance premiums
-
-*Inference:* Monthly insurance debits. *Fallback:* "Do you pay life, health, or education insurance premiums?"
-
-### 9.6 Instalment tax
-
-*Inference:* Quarterly KRA payments. *Fallback:* "What instalment tax amounts have you paid?"
-
-### 9.7 WHT certificates
-
-*Inference:* Not inferable from bank statement. *Fallback:* "Do you have WHT certificates from clients who withheld tax?"
-
-## Section 10 -- Reference material
-
-### Test suite
-
-**Test 1 -- Mid-range.** KES 3M revenue, KES 1.2M expenses, KES 100K insurance, KES 150K instalment. Net tax KES 283,600.
-**Test 2 -- Below relief.** KES 200K taxable. Tax KES 0 (below relief).
-**Test 3 -- Turnover tax.** KES 8M turnover. TOT KES 120,000.
-**Test 4 -- Insurance cap.** KES 600K premiums. Relief = KES 60,000.
-**Test 5 -- High earner.** KES 12M taxable. Tax KES 3,718,600.
-**Test 6 -- Presumptive vs normal.** KES 500K turnover, KES 350K expenses. Normal = KES 0; presumptive = KES 15,000.
-
-### Edge case registry
-
-**EC1 -- Personal relief as deduction.** INCORRECT -- it's a credit against tax.
-**EC2 -- Insurance relief cap.** KES 60,000 maximum.
-**EC3 -- TOT for professionals.** NOT eligible.
-**EC4 -- Presumptive vs normal.** Compare both.
-**EC5 -- WHT not credited.** Must include as credit.
-**EC6 -- SHIF deductibility.** Deductible under ITA s15(2)(ae). No insurance relief on SHIF.
-**EC7 -- Capital gain on business asset.** ESCALATE.
-**EC8 -- Non-resident consulting.** 20% WHT (or treaty rate). ESCALATE.
-
-### Prohibitions
-
-- NEVER apply personal relief as deduction from income
-- NEVER allow turnover tax for professional/management services
-- NEVER allow insurance relief above KES 60,000
-- NEVER compute non-residents with progressive rates
-- NEVER allow capital expenditure as direct expense
-- NEVER ignore WHT certificates
-- NEVER give insurance relief on SHIF contributions
-- NEVER present calculations as definitive
-
-## Finance Act, 2026
-
-Act No. 19 of 2026, assented 23 June 2026, published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Read in the KRA copy of the Gazette. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
-
-| Section | Change | In force |
-|---|---|---|
-| s.2 | "Management or professional fee" includes interchange and merchant service fees on card payments. "Royalty" is redefined to include software, proprietary or off-the-shelf, whether licence, development, training, maintenance or support fees, and proprietary digital payment card networks or platforms. New definition of "winnings": a pay-out from a lottery or prize competition by a person licensed under the Gambling Control Act, 2025 | 1 July 2026 |
-| s.3 | Contribution to a gratuity added to s.5(4) as new paragraph (ga): continuous contract of service of at least three years, or its renewal or extension beyond three years, amount paid not above 31% of emoluments earned for the contract period | 1 July 2026 |
-| s.4 | New s.6B: non-resident rental income tax, a final tax. Register through the simplified framework, then return and payment by the 20th of the month following the end of the month for which the rent is paid, unless a resident receiving the rent is subject to deduction under s.35(1)(c). The rate is in the Third Schedule, not in this section. See `non-resident-rental-income-tax-on-kenyan-property` | 1 July 2026 |
-| s.5 | Income Tax Act s.8(5A) deleted | 1 July 2026 |
-| s.7, s.16, s.21 | Scrap metal and winnings added to s.10 and s.35. Withholding: 1.5% of the gross amount on scrap metal, 20% on winnings | 1 July 2026 |
-| s.8 | Trust income is deemed income of the trustee, executor or administrator. Qualifying dividend or interest in that income bears no further tax. Where the trustee, executor or administrator has paid tax, the beneficiary is not liable on that income | 1 July 2026 |
-| s.9 | s.12(1)(a) replaced: no instalment tax for a person who, to the best of their judgement and belief, will have no income chargeable for the year other than emoluments (exemption wording per KPMG; the Act gives only the new paragraph) | 1 July 2026 |
-| s.10 | Bad debts of money lenders, banks and licensed financial institutions include principal, interest and related amounts. Deficit carry-forward proviso for investors of at least KES 10 billion before 1 July 2025 | 1 July 2026 |
-| s.15, s.42 | Income Tax Act s.23 (tax avoidance adjustment) repealed. New Tax Procedures Act s.18A on tax avoidance schemes | 1 July 2026 |
-| s.17 | s.52(1): a return required by the Commissioner's notice is now due by the last day of the fourth month after the year of income, in place of a reasonable time of at least 30 days | 1 January 2027 |
-| s.18 | s.52B(1): individuals file with self-assessment by the last day of the fourth month after the year of income; others by the last day of the sixth month after the accounting period | 1 January 2027 |
-| s.19 | First Schedule: benefits arising due to death added to paragraph 53 proviso; capital gains on transfer of property to a real estate investment trust registered by the Commissioner under s.20(1) exempt (paragraph 76) | 1 July 2026 |
-| s.20 | Second Schedule: 100% in the first year of use on item (iv) where investment is over KES 10 billion; item (a)(viii) 10% is per year in equal instalments | 1 July 2026 |
-| s.23 | Eighth Schedule: gains of a non-resident on shares that derive value from Kenya, or where the sale changes the group membership of a Kenyan resident company or ownership of property in Kenya | 1 July 2026 |
-| s.47 | Tax Procedures Act s.75: the Commissioner may issue a pre-populated return by the end of January. The person confirms or amends it within two months of issue, and may rely on it to file | 1 July 2026 |
-
-If a client's year of income ends on 31 December, the s.18 date is 30 April. New s.52B(1)(a) applies to "any year of income", s.1 starts it on 1 January 2027, and the Act has no transitional rule, so the 2026 return is due 30 April 2027. KRA says the new timelines begin on 1 January 2027 and that individuals file by 30 April.
-
-Not verified: KRA does not name the 2026 year of income in terms, so the 30 April 2027 date is our reading of the Act. The current wording of s.5(4), s.8(5A), s.12 and the Third Schedule was not read, so the rate for s.6B and the full effect of the s.5 and s.12 changes are not stated here. KPMG reports 30% on rent for immovable property and 15% for other property; check the Third Schedule before quoting. KRA guidance on the two-month pre-populated window against the 30 April date is still to come.
-
-The rest of the Act (other Income Tax amendments, VAT, excise, Tax Procedures, fees and levies, housing levy, stamp duty, road maintenance) is held in `evidence/research/kenya-2026/finance-act-2026-extract.md`.
-
-> Finance Act, 2026 extract contributed by CPA Julian Njoroge Maina, 25241.
+### Example 4 -- Trader below the turnover-tax lower boundary
+
+**Input:** Resident small trader, turnover KES 500,000, documented deductible expenses KES 350,000.
+**Computation:** Normal profit KES 150,000. Tax KES 15,000 before personal relief; payable KES 0 after the non-refundable relief. Turnover tax does not apply below its lower boundary. Do not charge the old file's invented KES 15,000 annual presumptive tax.
+
+
+### Example 5 -- Legal election decision: eligible trader
+
+Hypothetical resident trader turnover KES 8,000,000, documented allowable expenses KES 7,500,000, no other income or relief beyond personal relief. TOT would be KES 120,000. If a valid written election out makes normal assessment available, profit KES 500,000 gives tax KES 87,400 before relief, KES 58,600 after relief, difference KES 61,400. Do not silently elect or apply TOT to an excluded professional.
+
+```oa-check
+name: Eligible trader compares written election out
+inputs:
+  turnover: 8000000
+  expenses: 7500000
+steps:
+  - tot: turnover * 0.015
+  - profit: turnover - expenses
+  - normal_gross: min(profit, 288000) * 0.10 + max(0, min(profit,388000) - 288000) * 0.25 + max(0, profit - 388000) * 0.30
+  - normal_net: max(0, normal_gross - 28800)
+  - difference: tot - normal_net
+expected:
+  tot: 120000
+  profit: 500000
+  normal_gross: 87400
+  normal_net: 58600
+  difference: 61400
+```
+
+### Retained test and edge-case register
+
+The examples above preserve the mid-range, SHIF deduction, below-relief, turnover and below-threshold cases. Additional regression cases: KES 600,000 qualifying insurance premiums cap relief at KES 60,000; taxable KES 12,000,000 gives normal resident tax KES 3,718,600 after personal relief and before other credits. Recompute every case from the applicable bands, rather than trusting the old expected output.
+
+```oa-check
+name: Insurance cap and high resident income
+inputs:
+  profit: 12000000
+  premiums: 600000
+steps:
+  - gross_tax: 288000 * 0.10 + 100000 * 0.25 + 5612000 * 0.30 + 3600000 * 0.325 + (profit - 9600000) * 0.35
+  - net_before_insurance: gross_tax - 28800
+  - insurance_cap: min(premiums * 0.15, 60000)
+expected:
+  net_before_insurance: 3718600
+  insurance_cap: 60000
+```
+
+Preserved prohibitions/edge cases: personal relief is never an expense; insurance credit never exceeds cap; professional/management/training income is outside TOT; confirm the election before normal assessment; include evidenced WHT credits; SHIF is deductible without duplicate insurance relief; do not directly expense capital; refer capital gains and non-resident consulting; do not present a provisional working paper as definitive advice. The old presumptive-tax comparison is rejected, not an alternative liability.
+
+## Ask the client first
+
+- Residence and legal form, tax year, activity and any cross-border/other income.
+- Reconciled bank and M-PESA statements, invoices, loans/transfers and books.
+- Gross turnover, excluded activities and written election/regime evidence.
+- Business/private expense split, asset categories/dates and allowance history.
+- Qualifying insurance policies and paid premiums, pension and SHIF evidence.
+- Instalments, WHT certificates, prior assessment and iTax ledger/filing history.
 
 ## Sources
 
-1. Income Tax Act, Chapter 470 (not re-read in this update; read date unverified)
-2. Tax Procedures Act 2015 (not re-read in this update; read date unverified)
-3. Finance Act 2023, Finance Act 2024 (not re-read in this update; read date unverified)
-4. KRA, read 2026-10-31 -- https://www.kra.go.ke
-5. Income Tax Act, s15(2)(ae) (section text not re-read in this update; read date unverified)
-6. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
-7. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
-8. Finance Act, 2026, Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026, KRA copy, read 2026-11-01 -- https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf. Extract in evidence/research/kenya-2026/finance-act-2026-extract.md
-9. KRA, Finance Act 2026: what it means for you, read 2026-11-01 -- https://www.kra.go.ke/finance-act-2026-what-it-means-for-you
-10. KPMG, Kenya Finance Act, 2026 Analysis, 1 July 2026, read 2026-11-01 (secondary) -- https://assets.kpmg.com/content/dam/kpmgsites/ke/pdf/thought_leaderships/tax/2026/Finance-Act-2026_KPMG-Analysis.pdf
-11. EY Global Tax Alert 2026-1445, read 2026-11-01 (secondary) -- https://taxnews.ey.com/news/2026-1445-kenya-enacts-finance-act-2026
+| Source and passages actually read | Official URL | Read on |
+|---|---|---|
+| Read for ITA s2 residence;ss3-4,12,12C,15-16,22A-22B,30-31,35,52B,92A; Second Schedule and Third Schedule Heads A/B, Twelfth Schedule; passages on normal business income, deductions, rates, capital allowances, credits, exclusions and timing | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
+| Read for Finance Act 2026 ss1-23,42,47, operative amendments affecting individuals and small businesses and deferred return commencement | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
+| Read for TPA ss23,38,75,83,83A, records, pre-populated returns, penalties and interest | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
+| Read for KRA TOT eligibility, written election, exclusions, registration, return and payment steps | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/turnover-tax-tot | 2026-11-14 |
+| Read for KRA PAYE deduction/relief passages for SHIF and registered pension interaction | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye | 2026-11-14 |
 
-### Disclaimer
+Not yet confirmed: Current iTax annual-return box labels, KRA guidance naming the 2026 return explicitly under the deferred FA2026 deadline and pre-populated-return/annual-return interaction. The old KES 15,000 presumptive tax under s12D is unsupported: s12C presumptive subsections were deleted and s12D concerned minimum tax and is repealed. Old reducing-balance rates 37.5% heavy machinery,30% computers,12.5% furniture and100% farm machinery are replaced by current asset/use-based allowances. The old universal non-resident flat30%, prior-year less-than KES40000 instalment exemption,20% underestimation penalty, dedicated-room-only home office rule, specific bank CSV formats and universal CBK transaction-date conversion are not usable statutory instructions. The former farm-machinery rate is not replaced with the farmworks rate: farmworks are defined immovable works, not machinery. Confirm the machinery category before allowing a deduction. Complex industrial-building/special-investment allowances and treaty positions require separate review.
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA(K), registered tax agent, or equivalent licensed practitioner in Kenya) before filing or acting upon.
+> Finance Act, 2026 extract contributed by CPA Julian Njoroge Maina, 25241.
