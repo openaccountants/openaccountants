@@ -3,16 +3,17 @@ name: bi-income-tax
 description: "Determine how an individual’s Burundi income is classified before choosing a rate or return. This Guide covers residence routing, annual employment and rental bands, ordinary business profit versus the turnover minimum, the current quarterly micro-business rule and the distinction between individual capital gains and company business gains. It explains the agricultural exemption’s boundaries and the published annual and quarterly business return fields. Monthly payroll deductions belong to the payroll Guide, and domestic source withholding and foreign tax credits belong to the cross-border Guide. Rental exemption procedures, detailed property-gain valuations, special final turnover levies and authenticated submission screens remain incomplete. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: income-tax
-version: 1.3
+version: 1.4
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Burundi: individual business and rental income for 2026 v1.3
+# Burundi: individual business and rental income for 2026 v1.4
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

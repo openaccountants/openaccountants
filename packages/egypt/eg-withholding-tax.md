@@ -1,19 +1,20 @@
 ---
 name: eg-withholding-tax
 description: Use this skill whenever asked about Egyptian withholding tax for tax year 2026, both on payments abroad to non-residents (interest, royalties, services, athletes and artists, dividends) and on payments to Egyptian residents under the deduction at source system of Law 91 art. 59 (commissions, brokerage, purchases, supplies, contracting, services) with quarterly form 41, plus the advance payment alternative. Trigger on phrases like "Egypt WHT", "Egypt withholding tax", "ضريبة الخصم تحت حساب الضريبة", "الخصم والتحصيل", "نموذج 41", "نموذج 11 مستقطعة", "dividends to non-resident Egypt", "royalty WHT Egypt", "technical services fee Egypt", "dividend tax Egypt", or any payment by an Egyptian payer that may need tax withheld. ALWAYS read this skill before touching any Egypt withholding work.
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# EG Withholding Tax v0.2
+# EG Withholding Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

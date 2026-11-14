@@ -1,400 +1,215 @@
 ---
 name: mi-homestead-credit
-description: Use this skill whenever asked about the Michigan Homestead Property Tax Credit for full-year Michigan residents who own or rent their principal residence. Trigger on phrases like "Michigan homestead credit", "MI-1040CR", "Michigan property tax credit", "total household resources", "homestead property tax", "MCL 206.520".
+description: Compute the Michigan Homestead Property Tax Credit (Form MI-1040CR) for a homeowner or renter. The credit is the property tax levied on the homestead (or 23% of rent) above 3.2% of total household resources, times 60% for most claimants (100% for disabled claimants, a sliding 60% to 100% for seniors), reduced 10% for each $1,000 of household resources over $62,500, capped at $1,900 and not available above $71,500 of household resources or a taxable value over $165,400. Figures are the latest published (2025 claims, filed in 2026); 2026 figures are not yet out. Covers total household resources, eligible taxes and rent, seniors, the senior renter alternate credit, partial business use, duplexes and mobile homes. Trigger on "Michigan homestead credit", "MI-1040CR", "Michigan property tax credit", "total household resources", "renter's credit Michigan".
+version: "1.0"
 jurisdiction: US-MI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# MI Homestead Credit
+# Michigan homestead property tax credit (MI-1040CR), tax year 2026
 
-## Michigan Homestead Property Tax Credit — MI-1040CR (TY 2025)
+> **Source-cited draft.** Built from the 2025 MI-1040CR form and its instructions, the Treasury Homestead Property Tax Credit pages and the 2025 credit information page, read on 2026-11-13. The 2026 MI-1040CR (for claims filed in 2027) was not yet published, so every figure below is the 2025 figure for the 2025-2026 filing cycle. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Scope.** This skill covers the **regular Form MI-1040CR** for full-year Michigan residents who **own or rent** their principal residence and whose total household resources are at or below the statutory ceiling. It is one of the largest refundable state credits in the US — Michigan Treasury data shows roughly **$300M/year** in refunds across all claim variants. Every Michigan return preparer encounters it.
->
-> **Out of scope (see Section 10 refusal catalogue):**
-> - **MI-1040CR-2** — special filers (veterans, blind persons, surviving spouses of veterans, totally and permanently disabled) who get a credit computation with **no income test** in many fact patterns.
-> - **MI-1040CR-5** — Farmland Preservation Tax Credit (a separate program tied to MDARD development-rights agreements; not the household-income credit).
-> - **MI-1040CR-7** — Home Heating Credit. Interacts with the homestead credit but is administered separately. Out of scope here; will be a sibling skill.
-> - Part-year and non-resident returns.
-> - Amended MI-1040CR claims.
->
-> **Quality tier.** Q3 — AI-drafted, not independently verified. Rates and thresholds were researched on 2026-05-28 from the published TY 2025 MI-1040CR form and instructions on michigan.gov/taxes and from the AARP Foundation Property Tax-Aide knowledge base. A qualified Michigan preparer must review before filing.
+**Answer first.** A Michigan homeowner or renter can get back part of the property tax on their home. Take the property tax **levied** on the homestead for the year (renters: **23%** of the rent), subtract **3.2%** of total household resources, and multiply by **60%** (most people), **100%** (disabled claimants) or **60% to 100%** (seniors, on a sliding table). Then cut the result by 10% for every $1,000 that household resources exceed **$62,500**. The most anyone gets is **$1,900**. No credit if household resources exceed **$71,500** or, for owners, if the home's taxable value exceeds **$165,400**. These are the 2025 limits; the 2026 limits are not published yet.
 
-## Section 1: Metadata
+## Scope and who this is for
 
-- **Jurisdiction** — Michigan (US-MI)
-- **Tax type** — Refundable individual income tax credit
-- **Primary form** — Form MI-1040CR (regular)
-- **Tax year** — 2025 (filed in 2026)
-- **Authority** — Michigan Department of Treasury
-- **Statute** — MCL 206.520 – 206.535 (Income Tax Act of 1967, as amended)
-- **Reform act** — Lowering MI Costs Plan — PA 4 of 2023
-- **Version** — 0.1
-- **Last updated** — 2026-05-28
-- **Validation** — AI-drafted — Q3 — pending CPA verifier
+In scope: a natural person (not a trust or company) who owned and occupied, or rented under a lease, a homestead in Michigan, was a Michigan resident for at least six months of the year, and claims the regular credit on Form MI-1040CR.
 
-### Sources consulted
+Out of scope, and where it goes:
 
-**Sources consulted**
-
-| # | Source | URL |
-| --- | --- | --- |
-| 1 | TY 2025 MI-1040CR (form) | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR.pdf |
-| 2 | TY 2025 MI-1040CR Instructions (general information booklet) | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf |
-| 3 | TY 2025 MI-1040CR-2 (Veterans and Blind People) booklet | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-2-Book.pdf |
-| 4 | Michigan Treasury — Homestead Property Tax Credit landing page | https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc |
-| 5 | Michigan Treasury — Total Household Resources guidance | https://www.michigan.gov/taxes/iit/tax-guidance/total-household-resources |
-| 6 | MCL 206.520 — Homestead credit statute | https://legislature.mi.gov/Laws/MCL?objectName=mcl-206-520 |
-| 7 | MCL 206.522 — Computation; senior tables | https://legislature.mi.gov/Laws/MCL?objectName=mcl-206-522 |
-| 8 | Public Act 4 of 2023 — Lowering MI Costs Plan | https://legislature.mi.gov/Laws/PublicActs?ObjectName=2023-PA-0004 |
-| 9 | AARP Foundation Property Tax-Aide — Michigan | https://my.aarpfoundation.org/property-taxes/taxpayer-states/michigan/ |
-| 10 | Michigan Taxpayer's Guide (2025 tax year) — Senate Fiscal Agency | https://www.legislature.mi.gov/publications/TaxpayerGuide.pdf |
-
-## Section 2: Quick reference — TY 2025 thresholds
-
-**Quick reference — TY 2025 thresholds**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| **Maximum credit (regular CR)** | **$1,900** | TY 2025 MI-1040CR instructions; MCL 206.520(3) as amended by PA 4 of 2023 |
-| Total household resources (THR) ceiling — credit fully phased out above | **$71,500** | TY 2025 MI-1040CR instructions |
-| THR floor where phase-out begins (regular claimants) | **$62,500** | TY 2025 MI-1040CR instructions |
-| Phase-out rate (regular claimants) | Credit reduced by **10%** for every **$1,000** (or part) of THR over $62,500 | TY 2025 MI-1040CR instructions |
-| Taxable value cap on homestead | **$165,400** | TY 2025 MI-1040CR instructions |
-| Property-tax-floor as % of THR (regular) | **3.2%** of THR | TY 2025 MI-1040CR Line 34 |
-| Rent treated as property tax (renters) | **23%** of rent paid `[VERIFY: 23% per AARP source; some legacy summaries say 20% — confirm against current TY 2025 instructions]` | AARP Property Tax-Aide MI page |
-| Senior alternate THR ceiling (100% of difference) | THR ≤ **$21,000** ⇒ 100% credit allowance `[VERIFY exact 2025 figure]` | MCL 206.522; TY 2025 instructions Table 2 |
-| Senior phase-out — THR over $21,000 | Credit % reduced 4% per $1,000 of THR over $21,000 `[VERIFY]` | TY 2025 instructions Table 2 |
-| Senior phase-out — THR $30,001–$60,000 | Credit = 60% of difference `[VERIFY]` | TY 2025 instructions Table 2 |
-| Senior renter alternate test | Rent > 40% of THR triggers alternate computation | TY 2025 instructions |
-| Filing deadline | Same as MI-1040 (April 15, 2026 for TY 2025) | MI-1040 Book |
-| Statute of limitations on credit claim | **4 years** from original due date | MCL 205.27a |
-
-> Every dollar figure above is sourced to the published TY 2025 instructions or the underlying statute. Any figure marked `[VERIFY]` was confirmed in the AARP / TaxSlayer summaries but the preparer should cross-check against the official Treasury PDF before relying on it.
-
-## Section 3: Total Household Resources (THR) — the Michigan-only concept
-
-THR is the Michigan-defined income base for the homestead credit. It is **not** federal AGI and **not** Michigan AGI. It is broader than both. This is the single most error-prone area on the credit and is the leading cause of Treasury adjustment letters on MI-1040CR claims.
-
-### What THR INCLUDES (additions to federal AGI)
-
-**What THR INCLUDES (additions to federal AGI)**
-
-| Item | Notes / Form line |
+| Topic | Skill |
 | --- | --- |
-| All wages, salaries, tips (gross) | W-2 Box 1 |
-| Self-employment net profit (Schedule C / Schedule F) | Federal Schedule C Line 31 |
-| Interest, dividends, capital gains | Including U.S. obligation interest (**unlike** Michigan AGI which excludes it) |
-| **Social Security benefits — gross amount** | **Included for THR even though excluded from Michigan AGI**. Use the gross amount paid by check or direct deposit (the figure on SSA-1099 Box 5), not the federally taxable portion |
-| SSI, SSDI, Railroad Retirement | Full amounts |
-| Pension and annuity distributions | Gross amount, regardless of MI subtraction status |
-| IRA / 401(k) / 403(b) distributions | Gross amount |
-| Unemployment compensation | Full amount |
-| Workers' compensation | Full amount |
-| Veterans' disability and pension benefits | Full amount |
-| FIP / MDHHS cash assistance, foster care payments, adoption subsidy | Full amount |
-| Child support received | Full amount (not deductible by payor for THR either) |
-| **Alimony received** | Full amount, including post-2018 divorces where federally excluded |
-| Net rental income (gross rents − ordinary expenses, but **not** depreciation) | Add back depreciation deducted federally |
-| Net farm income (gross − operating expenses, not depreciation) | Add back depreciation |
-| Scholarships, fellowships, grants used for living expenses | Excludes amounts for tuition/required fees |
-| **Gifts of cash or merchandise from non-household members in excess of $300** | First $300 excluded; remainder included. Includes expenses paid on the claimant's behalf (rent, utilities, taxes, medical) |
-| Inheritance income realized during year | Cash distributions; not the corpus of an estate |
-| Lottery, gambling winnings, prizes, awards | Gross |
-| Long-term care insurance benefits paid for the claimant | If reimbursed via THR-includible source |
-| Other taxable and non-taxable income | Catch-all per MCL 206.510(1) |
+| The MI-1040 itself (the credit carries to it) | `mi-income-tax` |
+| Veterans and blind people who may use MI-1040CR-2 | Refused here (see refusals) |
+| Home heating credit (MI-1040CR-7) | Refused here; a separate credit |
+| Farmland preservation credit (MI-1040CR-5) | Refused |
+| Principal residence exemption (Form 2368, filed with the assessor) | Mentioned only |
 
-### What THR EXCLUDES (subtractions from gross receipts)
+## Ask the client first
 
-**What THR EXCLUDES (subtractions from gross receipts)**
+1. **Owner or renter, and the address.** Was it the principal residence, and for which months?
+2. **Owners:** the property tax statements for the year (summer and winter), the **taxable value** on the statement, and any special assessments. Is the principal residence exemption in place?
+3. **Renters:** the lease, the landlord's name and address, monthly rent, months rented; is any service charge paid instead of property tax (subsidized or tax-exempt housing)?
+4. **Every source of household income for both spouses**, taxable or not: wages, business profit, Social Security (gross), pensions and IRAs (gross), unemployment, child support, alimony, gifts over $300, and the rest of the list below.
+5. **Medical insurance and HMO premiums** the household paid.
+6. **Age 65 or older, or deaf, blind, paraplegic, hemiplegic, quadriplegic or totally and permanently disabled?** Veteran or surviving spouse of a veteran?
+7. **Business or rental use of the home**, a duplex, a tenant renting a room, a mobile home on a rented lot?
+8. **FIP or other MDHHS benefits** received in the year?
 
-| Item | Reason |
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2025-2026 filing cycle | Source |
+| --- | --- | --- |
+| Maximum credit | $1,900 | [2025 Homestead Property Tax Credit Information](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025) |
+| Total household resources limit (no credit above it) | $71,500 | [2025 Homestead Property Tax Credit Information](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025) |
+| Phase-out begins when total household resources exceed | $62,500 | [2025 Homestead Property Tax Credit Information](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025) |
+| Maximum taxable value of an owned homestead (excluding unoccupied farmland classified agricultural) | $165,400 | [2025 Homestead Property Tax Credit Information](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025) |
+| Share of total household resources not refundable, general claimants | 3.2% | [2025 MI-1040CR instructions, line 34 and Table 2](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Same, seniors and disabled claimants with household resources of $3,000 or less / $3,001 to $4,000 / $4,001 to $5,000 / $5,001 to $6,000 / over $6,000 | 0% / 1% / 2% / 3% / 3.2% | [2025 MI-1040CR instructions, Table 2](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Share of rent treated as property tax | 23% | [2025 MI-1040CR instructions, "Rent Eligible for Credit"](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Housing with a service charge instead of property tax | 10% of gross rent | [2025 MI-1040CR instructions, "Rent Eligible for Credit"](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Allowance, all other claimants (Section C) | 60% | [2025 MI-1040CR, line 41](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR.pdf) |
+| Allowance, disabled claimants (Section B) | 100% | [2025 MI-1040CR, line 39](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR.pdf) |
+| Allowance, seniors (Table A): household resources $21,000 or less | 100%, falling 4 points for each $1,000 to 64% at $29,001 to $30,000 | [2025 MI-1040CR instructions, Table A](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Allowance, seniors with household resources $30,001 to $71,500 | 60% | [2025 MI-1040CR instructions, Table A](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Phase-out (Table B): reduction for each $1,000 or part over $62,500 | 10 points (90% at $62,501 to $63,500 down to 0% at $71,501) | [2025 MI-1040CR instructions, Table B](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| Senior renter alternate credit: rent above this share of household resources | 40% | [2025 MI-1040CR instructions, Worksheet 5](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+| First gifts, and first gambling, lottery and prize winnings, left out of household resources | $300 each | [2025 MI-1040CR instructions](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf) |
+
+### Gate 1: who can claim
+
+All of: a natural person; a Michigan homestead (owned or rented); a Michigan resident for at least six months of the year; total household resources within the limit; an owner's taxable value within the limit (the cap does not apply to renters); owning and occupying the homestead, or occupying it under a lease. Source: [Homestead Property Tax Credit](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc).
+
+### Step 1: total household resources (line 33)
+
+Total household resources are the total income, taxable and nontaxable, of both spouses or of a single person keeping a household: **AGI, excluding net business and farm losses, net rent and royalty losses and any net operating loss carryover, plus all income exempt or excluded from AGI**, less medical insurance and HMO premiums paid for the household (line 31). Source: [2025 MI-1040CR instructions](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf).
+
+Included (beyond what the form lists): gain on the sale of the home even if federally exempt; damages for personal injury or sickness; an inheritance (except from a spouse); life insurance proceeds (except on a spouse); employer death benefits; a minister's housing allowance; forgiven debt even if excluded from AGI; reimbursements from dependent care and medical spending accounts; scholarships, stipends and grants (except government payments made directly to third parties); forgiven PPP loans net of the related unclaimed expenses. Social Security, pensions and IRA distributions count in full, not only the federally taxable part.
+
+Not included: NOL deductions; foster grandparent and senior companion payments; energy assistance grants; government payments made directly to third parties (unless taken from the claimant's own benefit, such as MDHHS paying rent to the landlord); government money to repair the home; food assistance; state and city income tax refunds and homestead credits; chore service payments; the first $300 of gambling, bingo, lottery, awards or prizes; the first $300 of gifts of cash or merchandise or expenses paid on the claimant's behalf by others; Medicare premiums deducted from Social Security or Railroad Retirement; employer-paid life, health and accident premiums; loan proceeds; an inheritance or life insurance from a spouse; long-term care policy payments made to a care facility; most Step Forward Michigan payments; compensation for wrongful imprisonment.
+
+### Step 2: the tax that counts (line 10, or 23% of rent)
+
+**Owners:** ad valorem property taxes **levied** on the homestead for the year (plus collection fees up to 1% of the taxes), whenever paid; add taxes from a corrected or supplemental bill issued in the year; deduct any refund received in the year from a corrected bill of an earlier year. Do not include: adjacent property that is occupied or classed as commercial, industrial, residential or timber-cutover; delinquent taxes of earlier years; penalty and interest; water and sewer bills; cottages and second homes; association dues; most special assessments (only those levied across the whole taxing unit, or for police, fire or advanced life support township-wide, at a uniform millage on taxable value, count). Business use of the home: only the living area's tax counts (attach federal Form 8829). Owner-occupied duplex with equal units: 50% of the tax on both units, after removing school operating taxes. Owner renting a room or unit: the lower of two figures, including the tax minus 23% of rent collected.
+
+**Renters:** 23% of rent paid under a lease or rental contract for the homestead. Service-charge housing: 10% of gross rent. Special housing facilities: rent only, not other services. Rent on land under a mobile home also qualifies at 23%.
+
+Source for step 2: [2025 MI-1040CR instructions](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf).
+
+### Step 3: the computation (lines 34 to 44)
+
+1. Line 34: total household resources times 3.2% (or the Table 2 share for low-income seniors and disabled claimants).
+2. Line 35: tax that counts minus line 34. If zero or less, no credit.
+3. Allowance: senior (Section A) line 35 times the Table A share; disabled (Section B) line 35 in full; all others (Section C) line 35 times 60%. Maximum $1,900.
+4. FIP or MDHHS benefits: prorate by (household resources minus those benefits) divided by household resources (Worksheet 4).
+5. Line 43: Table B share (100% up to $62,500 of household resources, down 10 points per $1,000 or part).
+6. Line 44: the credit = allowance times the Table B share. It carries to MI-1040 line 26, or is claimed alone on the MI-1040CR.
+7. **Seniors who rent:** Worksheet 5 alternate: rent paid minus 40% of household resources. The credit is the larger of the line 42 amount (after Table B) and the alternate, maximum $1,900.
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| Net business / rental losses (zero floor — losses **cannot** drive THR below zero) | MCL 206.510(1)(c) caps losses |
-| The federal **Earned Income Credit** received as refund | Per Treasury guidance |
-| Property tax credits received in prior year | Excluded to avoid circularity |
-| Government payments for medical care (Medicare, Medicaid) made directly to provider | Not received by claimant |
-| Food assistance (SNAP) | Excluded |
-| Energy assistance grants | Excluded |
-| First $300 of cash gifts in aggregate | Per the $300 floor rule |
-| **Net operating loss carryovers** | Cannot reduce current-year THR |
-| Section 125 cafeteria plan amounts already excluded from gross wages | Already excluded from Box 1; not added back |
+| Taxable value over the cap (owner) | No credit |
+| Household resources over $71,500 | No credit |
+| Landlord pays no property tax (fully exempt) | No credit on that rent |
+| Moved during the year | Prorate the tax and rent of each homestead by the time lived there |
+| Married, living apart in separate homesteads | Each claims on their own share; flag for review |
+| Divorced or separated during the year | Each claims for the time in each homestead; flag |
+| Home used partly for business | Exclude the business portion of the tax |
+| Duplex, owner in one equal unit | 50% after school operating taxes |
+| Mobile home on a rented lot | 23% of lot rent, plus any property tax or specific tax on the home |
+| Nursing home or adult foster care resident | Share of the facility's tax or rent; refused here |
+| Delinquent prior-year taxes paid this year | Not eligible |
+| Senior renter with high rent and low income | Run the Worksheet 5 alternate |
 
-### Health insurance premiums — special handling
+### Defaults when a fact is missing
 
-- **Health insurance premium deduction from THR** — Medical insurance and HMO premiums paid by the household are deductible from THR on the MI-1040CR. This includes Medicare Part B, C, and D premiums withheld from Social Security benefits; private health insurance premiums; long-term care insurance premiums. This is reported on MI-1040CR Line 36.  _(Treasury guidance ("Health Insurance Premiums and Total Household Resources"))_
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Taxable value | No claim until the statement is seen |
+| Untaxed income (gross Social Security, child support) | Ask: a claim built on AGI alone overstates the credit |
+| Medical premiums | Zero; ask for Medicare and insurance statements |
+| Whether special assessments qualify | Exclude them |
 
-### The "federal AGI vs. Michigan AGI vs. THR" trap
+### Red flags to raise with the client
 
-> These three income bases are routinely confused. A quick comparison for a 67-year-old retiree with $30k Social Security and $20k pension income:
->
-> A senior with $50k of "Michigan AGI = $0" can easily have THR of $50k. The THR rules are the gating test for the homestead credit, not the Michigan AGI rules.
+| Flag | Why it matters |
+| --- | --- |
+| Household resources near $62,500 or $71,500 | Each $1,000 changes the credit by 10 points |
+| Household resources that look too low to live on | Treasury asks for proof of other resources |
+| Rent paid to a relative | The lease must be real; may be challenged |
+| Claim built from federal AGI only | Most adjustment letters come from missing nontaxable income |
 
-**Federal AGI vs Michigan AGI vs THR comparison**
+## Worked cases
 
-| Base | Includes Social Security? | Includes pension? |
+**Case 1, homeowner under 65.** Household resources $40,000; property tax levied on the homestead $3,000; taxable value under the cap. Line 34: $40,000 x 3.2% = $1,280. Line 35: $3,000 - $1,280 = $1,720. Section C: $1,720 x 60% = $1,032. Table B: 100% (resources under $62,500). Credit $1,032.
+
+```oa-check
+name: MI homestead credit, homeowner, general claimant
+inputs:
+  thr: 40000
+  property_tax: 3000
+steps:
+  - line_34: thr * 0.032
+  - line_35: max(property_tax - line_34, 0)
+  - allowance: min(line_35 * 0.6, 1900)
+  - table_b: clamp(1 - ceil(max(thr - 62500, 0) / 1000) * 0.1, 0, 1)
+  - credit: allowance * table_b
+expected:
+  line_34: 1280
+  line_35: 1720
+  allowance: 1032
+  credit: 1032
+```
+
+**Case 2, a decision: regular or alternate credit for a senior renter.** A renter aged 70 has household resources of $15,000 and pays $9,000 of rent. Regular credit: 23% x $9,000 = $2,070; minus 3.2% x $15,000 = $480, leaves $1,590; Table A share 100% (resources $21,000 or less): $1,590. Alternate (Worksheet 5): $9,000 - 40% x $15,000 = $3,000. Take the larger, capped at $1,900: the alternate gives $1,900, $310 more than the regular credit.
+
+```oa-check
+name: MI homestead credit, senior renter, regular against alternate
+inputs:
+  thr: 15000
+  rent: 9000
+  table_a_share: 1.0
+steps:
+  - regular: max(rent * 0.23 - thr * 0.032, 0) * table_a_share
+  - alternate: max(rent - thr * 0.4, 0)
+  - credit: min(max(regular, alternate), 1900)
+  - gain_from_alternate: credit - min(regular, 1900)
+expected:
+  regular: 1590
+  alternate: 3000
+  credit: 1900
+  gain_from_alternate: 310
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
 | --- | --- | --- |
-| Federal AGI | Partial (up to 85% per § 86) | Yes |
-| Michigan AGI | **No** (subtracted) | Senior subtraction may apply |
-| **THR (this credit)** | **Yes, gross amount** | **Yes, gross amount** |
+| MI-CR-R-01 | Veteran, blind person or veteran's surviving spouse who may claim on MI-1040CR-2 | Refuse: different form and rules |
+| MI-CR-R-02 | Farmland preservation credit (MI-1040CR-5) | Refuse |
+| MI-CR-R-03 | Home heating credit (MI-1040CR-7) | Refuse here; a separate credit with its own tables |
+| MI-CR-R-04 | Part-year resident (prorated claim, annualized resources) | Refuse |
+| MI-CR-R-05 | Amended claim | Refer; claims can be filed up to four years after the year |
+| MI-CR-R-06 | Homestead held in a trust or by an LLC | Refuse: only natural persons claim |
+| MI-CR-R-07 | Nursing home, adult foster care or special housing resident | Refer |
+| MI-CR-R-08 | Claim for a deceased taxpayer | Refer: annualization and representative rules |
+| MI-CR-R-09 | Home owned with someone outside the household | Refer: prorated shares |
+| MI-CR-R-10 | Foreclosure, short sale or debt forgiveness in the year | Refer: forgiven debt counts in household resources |
+| MI-CR-R-11 | Fully tax-exempt landlord | Refuse: no eligible rent |
+| MI-CR-R-12 | Homestead outside Michigan | Refuse |
 
-## Section 4: Eligibility — the four gates
+## Filing and payment
 
-A claimant must clear **all four** of these tests to claim the regular MI-1040CR. Failing any one disqualifies the claim.
+File the MI-1040CR with the MI-1040 (due 15 April 2027 for the 2026 claim) or on its own; the credit is paid as a refund or reduces the MI-1040 balance. A claim may be filed up to four years after the year it could first be claimed. File through Michigan Treasury eServices or approved software. Keep the tax statements or lease and rent receipts. Source: [Homestead Property Tax Credit](https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc).
 
-### Gate 1 — Michigan residency
+## Completion checklist
 
-- **Michigan residency requirement** — Claimant must have been a Michigan resident for at least 6 months during the tax year. This skill is scoped to full-year residents only; part-year residents file Schedule NR and a prorated CR. Domicile, not mere physical presence, controls; the same residency test as Form MI-1040 applies.  _(MCL 206.522)_
+- Resident at least six months; natural person; Michigan homestead.
+- Taxable value within the cap (owners).
+- Total household resources include every nontaxable item and both spouses.
+- Taxes are those levied for the year, without delinquent taxes, penalties or most special assessments.
+- Business share, duplex and room-rental adjustments made.
+- Right allowance section (A, B or C) and Table B share applied; $1,900 cap.
+- Senior renters tested on Worksheet 5.
+- Principal residence exemption confirmed with the assessor.
 
-### Gate 2 — Principal residence in Michigan
+## Sources
 
-- **Principal residence requirement** — The homestead must be the claimant's principal residence in Michigan. One homestead per household per year. This includes: an owned single-family home; an owned condominium unit; a unit in a housing cooperative (co-op) — see Section 4.5; a mobile home or manufactured home owned by the claimant on land owned or rented by the claimant — see Section 4.6; a rented apartment, single-family home, mobile home pad rental. The homestead does NOT include: vacation property, second homes; property held only for investment (rental property where the owner doesn't live); property in another state; a college dormitory; a nursing home or assisted living facility where the resident does not pay property tax through their fee (special rules apply if they do).  _(MCL 206.508(4))_
-
-### Gate 3 — Taxable value cap (owners only)
-
-- **Taxable value cap** — For TY 2025, the homestead's taxable value cannot exceed $165,400. This is taxable value on the property tax bill — typically about half of true cash value. The cap applies to the homestead portion only; unoccupied farmland classified as agricultural is excluded from this cap.  _(MCL 206.520(7), per PA 4 of 2023 amendment)_
-
-> **Note for renters:** Gate 3 is bypassed for renters; the cap only applies to owned homesteads.
-
-### Gate 4 — Total household resources ceiling
-
-- **THR ceiling** — $71,500 USD (For TY 2025, THR ≤ $71,500. Above this, no credit is available in any category. Below this, the phase-out and computation rules in Sections 5–6 apply.)  _(TY 2025 MI-1040CR instructions)_
-
-### 4.5 — Co-op apartment rules
-
-- **Co-op apartment rules** — A claimant living in a housing cooperative is treated as an owner for homestead credit purposes if they hold a membership / share that conveys the right to occupy a specific unit. The "property tax paid" is the claimant's pro-rata share of the co-op's real property taxes, as certified by the co-op management on the year-end statement. Do NOT treat co-op assessments that include operating costs as property tax — only the portion the co-op identifies as real property tax flows to the credit.
-
-### 4.6 — Mobile / manufactured home rules
-
-- **Mobile-home owner renting lot** — If the claimant owns the mobile home and rents the lot/pad: include the $3 per month specific tax paid to the local unit ($36/year) as property tax, plus 23% of the lot rent paid `[VERIFY 23%]` as the rent portion. The mobile-home owner pays the $3/month specific tax under MCL 125.1041, in lieu of ad valorem property tax on the unit.  _(MCL 125.1041)_
-- **Mobile-home owner owning lot** — If the claimant owns both the home and the lot: standard owner computation using actual property tax on the parcel.
-
-## Section 5: The computation — owners
-
-- **Regular MI-1040CR formula for non-senior owners** — Step 1.  Property tax paid (line 10) on principal residence, subject to taxable-value cap and prorated for any non-residential or rental use. Step 2.  Floor = 3.2% × Total Household Resources (line 33 × 0.032 on line 34). Step 3.  Tentative credit = (Step 1 − Step 2), if positive. If Step 2 ≥ Step 1, no credit. Step 4.  Credit factor (line 35): 60% (i.e., 0.60) for non-senior, non-disabled regular claimants.  Tentative credit × 0.60. Step 5.  Apply phase-out for THR > $62,500: Reduce by 10% per $1,000 (or part of $1,000) that THR exceeds $62,500. Fully eliminated at THR ≥ $71,500. Step 6.  Cap at $1,900 (TY 2025).  _(TY 2025 MI-1040CR form)_
-
-> **Line numbers above refer to the TY 2025 MI-1040CR form. Verify each line number against the published form before producing client-ready output — Treasury periodically renumbers.**
-
-### Senior owners (age 65 or older)
-
-- **Senior Table 2 computation** — Seniors use Table 2 in the MI-1040CR instructions rather than the flat 60% factor: - THR ≤ $21,000 ⇒ allowance is 100% of (property tax − 3.2% of THR). - THR $21,001 – $30,000 ⇒ allowance reduced 4 percentage points per $1,000 (or part) above $21,000. So at THR $25,500 the allowance is 100% − (5 × 4%) = 80% `[VERIFY exact bracket cutoffs against TY 2025 instructions]`. - THR $30,001 – $60,000 ⇒ allowance is 60% of the difference. - Above $60,000 (and certainly above $62,500), the regular 10% per $1,000 phase-out applies until THR exceeds $71,500. - Senior renters with rent > 40% of THR may take an alternate computation that compares rent paid to 40% of THR, which can yield a larger credit. The taxpayer takes the larger of the two.  _(MCL 206.522; TY 2025 instructions Table 2)_
-
-### Property tax PAID — timing and qualifying amounts
-
-- **Cash basis and qualifying amounts** — The credit is based on property tax paid in cash during the tax year, not accrued or billed: - Use the actual payment dates, not the levy or bill dates. - Summer + winter installments paid in the same calendar year both count. - Property taxes paid through a mortgage escrow are deemed paid by the homeowner when the lender disburses to the municipality (Form 1098 statements are the standard documentation). - Special assessments for general municipal services are NOT property tax. Special assessments for local improvements (sewer, water main) are also NOT property tax for this credit, even though they appear on the property tax bill. - Delinquent property tax paid in 2025 for a prior year IS includible in 2025 — cash basis controls. - Penalties and interest on delinquent tax are NOT includible.  _(Treasury guidance; long-standing administrative rule)_
-
-### Multi-unit / partial business use
-
-- **Proration for partial business/rental use** — If the homestead is used partly as rental or partly for business, the property tax is prorated between the homestead portion and the non-homestead portion. Only the homestead-portion tax flows into Step 1. Typical proration: square footage or number of units. A duplex where the owner lives in one unit and rents the other: claim 50% of property tax (plus the renter pays their own through rent — that renter, if eligible, files their own MI-1040CR using 23% of rent paid).
-
-### Principal Residence Exemption (PRE) interaction
-
-**PRE vs MI-1040CR comparison**
-
-| Item | PRE (Form 2368) | MI-1040CR |
+| Source | URL | Read on |
 | --- | --- | --- |
-| What it does | Exempts homestead from 18-mill school operating tax | Refundable income tax credit |
-| Filed with | Local township/city assessor | Michigan Treasury (with MI-1040 or stand-alone) |
-| Income tested? | No | Yes (THR ≤ $71,500) |
-| Statute | MCL 211.7cc | MCL 206.520 |
+| Treasury, 2025 Homestead Property Tax Credit Information. Read for $165,400, $71,500, $62,500 and $1,900. | https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc/tax-year-credit-information/2025 | 2026-11-13 |
+| 2025 MI-1040CR instructions. Read for total household resources, eligible taxes and rent (23%, 10%), Tables 2, A and B, Worksheets 4 and 5 (40%), the $300 exclusions and the four-year limit. | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR-Instr.pdf | 2026-11-13 |
+| 2025 MI-1040CR form. Read for lines 33 to 44, Section B (100%) and Section C (60%). | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR.pdf | 2026-11-13 |
+| Treasury, Homestead Property Tax Credit. Read for who qualifies (natural person, six months' residency, taxable value cap, renters) and the four-year filing window. | https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc | 2026-11-13 |
 
-The Principal Residence Exemption (PRE, formerly "Homestead Exemption") under MCL 211.7cc exempts a homeowner's principal residence from the 18-mill school operating tax. PRE is filed with the local assessor on Form 2368, not on Form MI-1040CR. The two programs are commonly confused.
-
-A claimant should generally have a PRE in place on the same homestead for which they claim the MI-1040CR, but failure to claim the PRE does not disqualify the MI-1040CR.
-
-## Section 6: The computation — renters
-
-- **Renter formula** — Step 1.  Property tax equivalent = 23% × rent paid for the year [VERIFY 23%]. Step 2.  Floor = 3.2% × THR. Step 3-6. Same as owners (60% factor, $62,500 phase-out, $1,900 cap).  _(TY 2025 MI-1040CR instructions)_
-- **Senior renter alternate test** — If THR ≤ $30,000 and rent paid exceeds 40% of THR, an alternate computation may produce a larger credit. The taxpayer takes the higher of the two. This is specifically the relief mechanism for the "house poor senior renter" archetype.  _(TY 2025 instructions)_
-
-### What rent qualifies
-
-- **Rent qualification rules** — - Cash rent paid to a private landlord. - Mobile-home lot rent (separately from any home ownership). - Rent paid to a tax-exempt landlord (e.g., a non-profit, certain subsidized housing) is NOT eligible because the underlying real property paid no tax. Section 8 housing where the landlord pays property tax is eligible, but if the property is wholly tax-exempt the renter cannot claim. - Rent paid by a government agency (housing assistance paid directly to landlord) is NOT the claimant's rent for credit purposes; only the claimant's own portion counts. - College dormitory rent is NOT eligible.
-
-## Section 7: Tier 1 — deterministic rules
-
-- **MI-CR-T1-01** — Maximum credit TY 2025 = $1,900  _(TY 2025 MI-1040CR instructions; MCL 206.520(3))_
-- **MI-CR-T1-02** — THR ceiling TY 2025 = $71,500  _(TY 2025 MI-1040CR instructions)_
-- **MI-CR-T1-03** — THR phase-out begins at $62,500; reduce credit 10% per $1,000 over  _(TY 2025 MI-1040CR instructions)_
-- **MI-CR-T1-04** — Owner taxable value cap = $165,400 (TY 2025)  _(TY 2025 MI-1040CR instructions)_
-- **MI-CR-T1-05** — 3.2% of THR is subtracted from property tax (or 23% of rent) on Line 34  _(TY 2025 MI-1040CR Line 34)_
-- **MI-CR-T1-06** — Regular allowance factor = 60% (non-senior, non-disabled)  _(TY 2025 MI-1040CR Line 35)_
-- **MI-CR-T1-07** — Property tax = cash basis (paid during tax year), not accrued  _(Treasury guidance; long-standing administrative rule)_
-- **MI-CR-T1-08** — Social Security is included in THR at gross (even though excluded from Michigan AGI)  _(MCL 206.510)_
-- **MI-CR-T1-09** — First $300 of cash/in-kind gifts excluded from THR; remainder included  _(TY 2025 MI-1040CR instructions)_
-- **MI-CR-T1-10** — Health insurance premiums paid by household are a subtraction from THR (Line 36)  _(Treasury guidance; TY 2025 MI-1040CR Line 36)_
-- **MI-CR-T1-11** — Business / rental losses cannot drive THR below zero  _(MCL 206.510(1)(c))_
-- **MI-CR-T1-12** — Statute of limitations on filing CR claim = 4 years from original due date  _(MCL 205.27a)_
-- **MI-CR-T1-13** — Mobile-home specific tax = $3/month ($36/year) treated as property tax  _(MCL 125.1041)_
-- **MI-CR-T1-14** — One homestead per household per tax year  _(MCL 206.508(4))_
-- **MI-CR-T1-15** — Credit is refundable — paid as refund or applied against other MI tax  _(MCL 206.520(6))_
-
-## Section 8: Tier 2 — judgment rules
-
-- **MI-CR-T2-01 Mid-year move within Michigan** — Prorate property tax / rent between the two homesteads by number of days occupied. The claimant files a single MI-1040CR but lists both homesteads on the supplemental schedule.
-- **MI-CR-T2-02 Move out of Michigan during year** — If MI residency was at least 6 months, prorate property tax / rent for the MI-resident portion. Out of scope for this skill (part-year); refer to professional review.
-- **MI-CR-T2-03 Divorce or separation during the year** — Each spouse files a separate CR for the part of the year they occupied each homestead. THR is generally each spouse's separate THR for their respective occupancy periods. Court-ordered occupancy controls. Flag for review.
-- **MI-CR-T2-04 Death of spouse during the year** — Surviving spouse files a full-year CR if they remained in the homestead. Decedent's THR for the months alive is includible. The estate does NOT file a separate CR for the homestead.
-- **MI-CR-T2-05 Mobile home owner — separate lot rental** — Combine $36/year specific tax + 23% of lot rent into the property-tax-paid figure. Verify the home is the claimant's principal residence and is permanently sited.
-- **MI-CR-T2-06 Duplex / multi-unit owner-occupied** — Prorate property tax by units. Owner claims the homestead portion only. Verify tenant unit is leased at arm's-length; below-market family rentals can be re-characterized.
-- **MI-CR-T2-07 Co-op share ownership** — Use the co-op's year-end statement of pro-rata real property tax. Reject claims based on full monthly maintenance fee — only the property-tax component qualifies.
-- **MI-CR-T2-08 Home office / Schedule C use of home** — If federal Form 8829 allocates property tax to business, the business-use portion is NOT eligible for the homestead credit (it was already deducted on Schedule C). Reduce property tax paid by the business-use percentage from Form 8829.
-- **MI-CR-T2-09 Senior renter with rent > 40% of THR** — Compute both the standard and alternate credits; take the larger.
-- **MI-CR-T2-10 Roommates / multiple unrelated occupants** — Each unrelated tenant files separately for their portion of rent paid. Each has their own THR. Verify written or implied allocation.
-- **MI-CR-T2-11 College student dependent of MI parent** — Generally not a separate claimant; parents' homestead is the claimant. Dormitory rent does not qualify. Apartment rent off-campus by an independent student may qualify if the student is not claimed as a dependent and meets the 6-month residency test.
-- **MI-CR-T2-12 Subsidized / Section 8 housing** — Only the tenant-paid portion of rent counts; the government-paid portion does not. If the landlord is fully tax-exempt (e.g., a public housing authority), no credit.
-- **MI-CR-T2-13 Recent inheritance of homestead mid-year** — Property tax paid by the claimant from the date of acquisition counts. Tax paid by the decedent / estate before death does not.
-- **MI-CR-T2-14 Spouse living apart in separate MI homesteads** — Treasury guidance allows each spouse to file a separate CR using their own homestead and their own THR, even when filing MFJ on MI-1040. Document occupancy. Flag for review.
-- **MI-CR-T2-15 Property tax bill includes special assessments** — Strip out special assessments; only ad valorem property tax (plus the mobile-home specific tax) is eligible.
-
-## Section 9: Worked examples
-
-> All examples use TY 2025 thresholds. All dollar figures are rounded for clarity. Line numbers refer to the TY 2025 MI-1040CR.
-
-### Example 1 — Standard homeowner
-
-**Facts.** Married couple, both age 45. Own home in Lansing, MI. Property tax paid in 2025 = $4,200. THR = $55,000 (combined wages, no other income). Home taxable value = $90,000 (under cap). No business use.
-
-```
-Property tax paid (Line 10):               $4,200
-Floor: 3.2% × $55,000 (Line 34):           $1,760
-Difference:                                $2,440
-Allowance factor: 60%                  ×    0.60
-Credit before phase-out and cap:           $1,464
-THR ≤ $62,500 → no phase-out reduction.
-$1,464 < $1,900 cap.
-
-Credit = $1,464.
-```
-
-### Example 2 — Renter
-
-**Facts.** Single, age 38, renter in Ann Arbor. Rent paid in 2025 = $18,000. THR = $42,000 (wages and small freelance Schedule C).
-
-```
-Rent paid:                                $18,000
-Property tax equivalent: 23% × $18,000:    $4,140   [VERIFY 23%]
-Floor: 3.2% × $42,000:                     $1,344
-Difference:                                $2,796
-Allowance factor: 60%                  ×    0.60
-Credit before phase-out and cap:           $1,678
-THR ≤ $62,500 → no phase-out reduction.
-$1,678 < $1,900 cap.
-
-Credit = $1,678.
-```
-
-### Example 3 — Senior homeowner using Table 2
-
-**Facts.** Widow, age 72. Owns home in Grand Rapids since 1982. Property tax paid in 2025 = $2,800. THR = $18,500 (Social Security $14,500 gross + small pension $4,000). Home taxable value = $65,000.
-
-```
-Property tax paid:                         $2,800
-Floor: 3.2% × $18,500:                       $592
-Difference:                                $2,208
-Senior allowance per Table 2:
-    THR ≤ $21,000 → 100% allowance
-Credit before cap:                         $2,208
-Cap at $1,900.
-
-Credit = $1,900 (capped).
-```
-
-> Note how the senior table is dramatically more generous than the regular 60% factor — a non-senior with the identical fact pattern would receive only $1,325 (60% × $2,208).
-
-### Example 4 — High-income / phase-out boundary
-
-**Facts.** Married homeowner, both age 50, in Northville. Property tax paid in 2025 = $7,800. THR = $66,400 (combined wages plus small Schedule C net income). Home taxable value = $140,000 (under cap).
-
-```
-Property tax paid:                         $7,800
-Floor: 3.2% × $66,400:                     $2,125
-Difference:                                $5,675
-Allowance factor: 60%                  ×    0.60
-Credit before phase-out and cap:           $3,405
-
-Cap at $1,900 first:                       $1,900
-Phase-out: THR exceeds $62,500 by $3,900.
-    Number of $1,000 increments (or part) over: 4
-    Reduction: 4 × 10% = 40%.
-$1,900 × (1 − 0.40) =                      $1,140.
-
-Credit = $1,140.
-```
-
-> If THR had been $71,500 or above, the credit would be $0 — full phase-out. If THR had been $62,500 exactly, the credit would be the full $1,900 cap (no phase-out reduction).
-
-## Section 10: Refusal catalogue
-
-- **MI-CR-R-01** — Claimant is a qualified veteran, blind person, surviving spouse of a veteran, or totally and permanently disabled — and would file MI-1040CR-2  _(Refuse — out of scope. Refer to MI-1040CR-2 booklet. CR-2 has special rules including a no-income-test computation in some patterns.)_
-- **MI-CR-R-02** — Farmland Preservation Tax Credit (development-rights agreement under PA 116) — Form MI-1040CR-5  _(Refuse — out of scope. MI-1040CR-5 is a separate credit program administered by MDARD; not the household-income homestead credit.)_
-- **MI-CR-R-03** — Home Heating Credit — Form MI-1040CR-7  _(Refuse — separate skill. The MI-1040CR-7 is income- and family-size-tested but distinct from the property tax credit. Note interaction: a CR-7 claim does not reduce the CR claim and vice versa.)_
-- **MI-CR-R-04** — Part-year or non-resident — would file Schedule NR with MI-1040  _(Refuse — out of scope.)_
-- **MI-CR-R-05** — Amended MI-1040CR (using the 5-digit "X" suffix or check-box "amended return")  _(Refuse — out of scope. Statute of limitations is 4 years; refer to professional.)_
-- **MI-CR-R-06** — Trusts and estates filing for a homestead held in a trust  _(Refuse — special grantor-trust and life-estate rules apply (the beneficial occupant generally claims, not the trustee). Refer to professional.)_
-- **MI-CR-R-07** — Nursing home or assisted-living facility resident  _(Refuse — special rules: the credit follows the portion of the fee attributable to property tax, certified by the facility. Refer to professional.)_
-- **MI-CR-R-08** — Decedent's final-year return where the executor / personal representative files  _(Refuse — fiduciary filing has special signature and documentation requirements.)_
-- **MI-CR-R-09** — Homestead held jointly with someone outside the household  _(Refuse — pro-rata ownership and pro-rata tax flow rules apply; flag for review.)_
-- **MI-CR-R-10** — Mortgage forgiveness / short sale / foreclosure in the year  _(Refuse — interacts with THR (cancellation of debt income) and ownership timing. Flag for review.)_
-- **MI-CR-R-11** — Renter where landlord is fully tax-exempt (public housing authority, certain non-profits)  _(Refuse — no qualifying property tax; ineligible.)_
-- **MI-CR-R-12** — Out-of-state homestead, Michigan-domicile claimant  _(Refuse — homestead must be in Michigan.)_
-
-## Section 11: Form mapping — MI-1040CR (TY 2025)
-
-**Form mapping table**
-
-| Section | Line(s) | What it covers |
-| --- | --- | --- |
-| Filer information | 1–7 | Name, SSN, address, filing status, school district code |
-| Homestead information | 8–9 | Address; mark owner / renter; taxable value (owners); date moved in / out |
-| Property tax / rent | 10 | Property tax paid (owners), or rent paid × 23% (renters) `[VERIFY]` |
-| Move-related | 11–14 | Proration for mid-year moves |
-| Tentative credit | 15–17 | Sum of property tax / rent equivalent |
-| THR — wage and business | 18–25 | Wages, business income, interest/dividends, capital gains |
-| THR — retirement | 26–28 | Social Security gross, pensions, IRA |
-| THR — other receipts | 29–32 | Unemployment, alimony received, gifts > $300, other |
-| THR — subtotal | 33 | Total Household Resources |
-| Floor computation | 34 | THR × 3.2% (or Table 2 percentage for seniors) |
-| Allowance | 35 | 60% factor (or Table 2 for seniors) |
-| Subtractions from THR | 36 | Health insurance premiums |
-| Credit before phase-out | 37–38 | (Property tax − floor) × allowance % |
-| Phase-out application | 39 | Reduce by 10% per $1,000 over $62,500 |
-| Final credit | 40 | Capped at $1,900 |
-
-> **Line numbers below reflect the TY 2025 MI-1040CR. Verify against the official form PDF before producing client-ready output.**
-
-### Interaction with MI-1040 and Schedule 1
-
-- **Interaction rules** — - The MI-1040CR credit flows to MI-1040 Line 25b (Homestead Property Tax Credit) as a refundable credit. It reduces tax liability and any excess is refunded. - Property tax paid is NOT separately deductible on Schedule 1; only the credit applies. - If the taxpayer claims a home-office deduction on federal Schedule C (Form 8829), the business-use portion of property tax must be backed out before entering on MI-1040CR Line 10 — see Rule MI-CR-T2-08. - The Home Heating Credit (MI-1040CR-7) is filed on a separate form but uses the same THR concept. The MI-1040CR-7 has its own income thresholds (lower) and family-size-based standard allowance — out of scope for this skill.
-
-## Section 12: Provenance and verification status
-
-**Provenance table**
-
-| Element | Status | Notes |
-| --- | --- | --- |
-| Statute citations (MCL 206.520–535) | Direct from Michigan Compiled Laws | Verified against legislature.mi.gov 2026-05-28 |
-| TY 2025 form line numbers | From TY 2025 MI-1040CR PDF | Treasury periodically renumbers; reverify each year |
-| $1,900 maximum credit | TY 2025 instructions | Confirmed |
-| $71,500 THR ceiling | TY 2025 instructions | Confirmed |
-| $62,500 phase-out floor + 10% / $1,000 | TY 2025 instructions | Confirmed |
-| $165,400 taxable value cap | TY 2025 instructions | Confirmed |
-| 3.2% floor of THR | TY 2025 form Line 34 | Confirmed |
-| 23% rent factor | AARP Property Tax-Aide MI page | `[VERIFY: cross-check against TY 2025 Treasury instructions; long-standing rate was 20% in older guidance — likely changed to 23% but reviewer must confirm]` |
-| Senior Table 2 percentages | AARP / TaxSlayer summaries | `[VERIFY exact 2025 figures against Treasury PDF]` |
-| PA 4 of 2023 reform impact | Treasury press releases; House Bill 4001 (2023) | Confirmed at high level; specific dollar changes summarized in Section 2 |
-
-### Known uncertainties for verifier
-
-1. **23% vs 20% rent factor.** Several legacy and consumer sources still reference 20%. The 2025 AARP Property Tax-Aide says 23%. Verifier must confirm the operative rate on TY 2025 MI-1040CR Line 10 instructions.
-2. **Senior Table 2 exact brackets.** The four-percentage-point-per-$1,000 reduction above $21,000, the 60% floor for $30,001–$60,000, and intermediate brackets need line-by-line confirmation against the TY 2025 instructions.
-3. **PRE Form 2368 deadlines and 18-mill exemption tie-in** — verify any recent administrative changes for completeness.
-4. **Mobile home $3/month specific tax** — confirm this remained $3 in TY 2025; some legislative proposals have circulated to raise it.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: every 2026 figure (the 2026 MI-1040CR and the 2026 credit information page were not published; Treasury's 2026 page returned "not found"), so the 2025 limits apply to the 2025-2026 filing cycle only; the mobile home specific tax amount (the old file said $3 a month; not re-read); MCL 206.501 to 206.532 themselves (legislature.mi.gov returned errors).

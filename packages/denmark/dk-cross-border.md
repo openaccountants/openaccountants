@@ -1,17 +1,18 @@
 ---
 name: dk-cross-border
 description: "Danish cross-border tax for individuals and companies, income year 2026. Covers full tax liability (dwelling in Denmark, the 6-month stay rule, the 3-month and 180-day holiday rule), limited tax liability of non-residents on Danish wages, board fees, permanent establishments, property, dividends and royalties, the researcher and key-employee scheme (forskerskatteordningen: 27% plus 8% AM-bidrag for up to 84 months, minimum salary DKK 65,400 a month in 2026), cross-border commuters (grænsegængere, 75% rule), withholding on dividends (27%, 15%, 44%) and royalties (22%) and the refund claim, foreign tax credit and the ligningsloven § 33 A exemption, and exit tax on shares (fraflytningsbeskatning, DKK 100,000 threshold, deferral). Trigger on: moving to or from Denmark, Danish tax residence, begrænset skattepligt, forskerordning, grænsegænger, udbytteskat refund, fraflytningsskat, fast driftssted. Out of scope: rate tables for residents (dk-income-tax), share income in general (dk-capital-gains), company exit tax and corporate withholding detail (dk-corporate-tax), VAT (denmark-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Denmark: cross-border tax (residence, non-residents, withholding, exit) v0.2
+# Denmark: cross-border tax (residence, non-residents, withholding, exit) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's or company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 

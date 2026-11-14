@@ -4,10 +4,11 @@ description: "Mainland China transfer pricing for 2026: related-party identifica
 jurisdiction: CN
 category: international
 tax_year: 2026
-version: 1.0
-last_updated: 2026-10-29
+version: 1.1
+last_updated: 2026-11-14
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # China transfer pricing: related-party returns, documentation and adjustments

@@ -3,15 +3,16 @@ name: bj-payroll-social
 description: "Prepare a Benin employer payroll-tax schedule for 2026 alongside the separate salary ITS calculation. Use this Guide to screen VPS scope and exemptions, link the appropriate salary base, distinguish ordinary and private-teaching rates and organise the monthly employer-tax return and payment evidence. Two executable cases compare ordinary liability and a conditional employee exemption. Current CNSS contribution percentages, bases, ceilings, risk classes and remittance procedures were not established from an accessible official source and remain explicit gaps. Do not use this schedule alone to calculate complete employment cost or employee net pay. Trigger phrases include Benin VPS, employer payroll tax, private-school payroll and CNSS source gaps."
 jurisdiction: BJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 0.2
+version: 0.3
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Benin employer payroll tax VPS working paper v0.2
+# Benin employer payroll tax VPS working paper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
