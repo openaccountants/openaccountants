@@ -22,7 +22,6 @@ Tax years: not stated (2 skills), 2026 (16 skills).
 | Company tax | [Company income tax ir4](nz-company-income-tax-ir4.md) | 2026 | Ready |
 | VAT or sales tax | [GST return](nz-gst-return.md) | 2026 | Ready |
 | Social contributions | [Acc levies](nz-acc-levies.md) | 2026 | Ready |
-| Payroll | [Employer payroll kiwisaver esct ess](nz-employer-payroll-kiwisaver-esct-ess.md), [Employer payroll](nz-employer-payroll.md) | 2026 | Ready |
 | Transfer pricing | | | Missing |
 | Cross-border | [Tax residency](nz-tax-residency.md) | 2026 | Partly covered: residence rules only; no non-resident withholding, treaty or exit rules |
 
