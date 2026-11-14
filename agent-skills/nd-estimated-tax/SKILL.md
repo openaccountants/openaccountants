@@ -14,7 +14,7 @@ metadata:
 
 > **Source-cited draft.** Built from the 2026 Form ND-1ES (SFN 28709, 12-2025), the 2025 Schedule ND-1UT (SFN 28704, 12-2025), the 2025 individual income tax booklet, N.D.C.C. chapter 57-38 and N.D. Admin. Code chapter 81-03-04, read on 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing or payment.
 
-**Answer first.** A North Dakota individual must pay 2026 estimated tax only if all four tests on the 2026 Form ND-1ES are met: the person must pay federal estimated tax for 2026, their 2025 North Dakota net tax liability was USD 1,000 or more, they expect to owe USD 1,000 or more for 2026 after withholding, and their withholding will be less than the smaller of 90% of the 2026 net tax liability or 100% of the 2025 net tax liability. There is no 110% high-income step-up as there is federally. A quarter of the required amount is due on 15 April, 15 June and 15 September 2026 and 15 January 2027. Short or late installments carry interest at 12% a year to the earlier of the payment date or the return due date (generally 15 April 2027). The 2026 tax itself comes from the 2026 rate schedules owned by `nd-income-tax`.
+**Answer first.** A North Dakota individual must pay 2026 estimated tax only if all four tests on the 2026 Form ND-1ES are met: the person must pay federal estimated tax for 2026, their 2025 North Dakota net tax liability was USD 1,000 or more, they expect to owe USD 1,000 or more for 2026 after withholding, and their withholding will be less than the smaller of 90% of the 2026 net tax liability or 100% of the 2025 net tax liability. Apply the prior-year mover exception below before using the prior-year alternative. There is no 110% high-income step-up as there is federally. A quarter of the required amount is due on 15 April, 15 June and 15 September 2026 and 15 January 2027. Short or late installments carry interest at 12% a year to the earlier of the payment date or the return due date (generally 15 April 2027). The 2026 tax itself comes from the 2026 rate schedules owned by `nd-income-tax`.
 
 ## Scope and who this is for
 
@@ -33,7 +33,7 @@ Out of scope, and where it goes:
 
 ## Ask the client first
 
-1. **The 2025 North Dakota return:** was one required, and what is the net tax liability on the 2025 Form ND-1, line 25 (or Form ND-EZ, line 2)? Did the client move into North Dakota during 2025 with no North Dakota income before the move?
+1. **The 2025 North Dakota return:** was one required, and what is the net tax liability on the 2025 Form ND-1, line 25 (or Form ND-EZ, line 2)? Did the client move into North Dakota during 2025, and was there any North Dakota-source income before the move?
 2. **Expected 2026 federal taxable income** and any North Dakota additions, subtractions and credits (these feed `nd-income-tax`), and whether the client must pay federal estimated tax for 2026.
 3. **Expected 2026 North Dakota withholding** (Form W-2 and Form 1099 amounts shown for North Dakota).
 4. **Filing status in 2025 and 2026**, especially a change between joint and separate returns.
@@ -73,7 +73,7 @@ Out of scope, and where it goes:
 3. Does the client expect to owe USD 1,000 or more for 2026 after subtracting North Dakota withholding?
 4. Will 2026 North Dakota withholding be less than the smaller of 90% of the 2026 net tax liability (66 2/3% for a qualified farmer) and 100% of the 2025 net tax liability?
 
-All four must be yes.
+All four must be yes, applying the prior-year exceptions before test 4. **Prior-year mover source conflict:** [N.D.C.C. 57-38-62(1)(b)(1)](https://ndlegis.gov/cencode/t57c38.pdf) excludes an individual who moved into North Dakota during the preceding taxable year from the prior-year alternative, without a no-pre-move-income condition. The [2026 Form ND-1ES, condition 4(b) and line 13](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) states the exception more narrowly, for a 2025 mover with no earlier North Dakota income. Follow the statutory current-year alternative for a 2025 mover when estimates are otherwise required; do not assume the form permits the prior-year harbor for a mover with earlier North Dakota-source income. Record that conflict for the reviewer before payment; an authoritative basis for applying the narrower agency condition has not been confirmed. The separate prior-year liability threshold and no-return-required tests still apply.
 
 ### Step 3: the 2026 worksheet (Form ND-1ES, page 2)
 
@@ -91,7 +91,7 @@ All four must be yes.
 | 10 | Line 8 less line 9. If below USD 1,000, stop: no estimated tax |
 | 11 | Line 8 times 90% (or 66 2/3% for a qualified farmer) |
 | 12 | 2025 net tax liability from the 2025 Form ND-1, line 25 (0 if no 2025 return was required). If below USD 1,000, stop |
-| 13 | Smaller of line 11 and line 12; but use line 11 if the client moved into North Dakota during 2025 with no North Dakota income before the move. If line 9 is equal to or more than line 13, stop |
+| 13 | Smaller of line 11 and line 12, subject to the statutory prior-year exceptions above; for a 2025 mover use line 11 when estimates are otherwise required and record the narrower form wording for review. If line 9 is equal to or more than line 13, stop |
 | 14 | Minimum annual payment: line 13 less line 9. Divide by 4 for each installment |
 | 15 | Nonresident or part-year: tax on line 5 using the 2026 rate schedule |
 | 16 | Portion of estimated federal adjusted gross income reportable to North Dakota (reduced by line 4) |
@@ -150,7 +150,7 @@ Part 1 exceptions on the 2025 schedule: A, qualified farmer (whole required paym
 | Illness, casualty or other good cause | The Commissioner may waive all or part of any civil penalty or interest for good cause shown | [N.D.C.C. 57-38-45(5)](https://ndlegis.gov/cencode/t57c38.pdf) |
 | Refund due on the return but an installment was short | Interest may still be charged, even with a refund | [2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 | No 2025 North Dakota return was required | 2025 net tax liability is zero, so no 2026 estimates are required | same form, condition 2 and line 12 |
-| Moved into North Dakota during 2025 with no North Dakota income before the move | Prior-year test does not apply; meet the 90% test | [2026 Form ND-1ES, condition 4(b) and line 13](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf); [N.D.C.C. 57-38-62(1)(b)(1)](https://ndlegis.gov/cencode/t57c38.pdf) |
+| Moved into North Dakota during 2025, including a mover with earlier North Dakota-source income | Statute excludes the prior-year alternative; use the applicable current-year test if estimates are otherwise required. The form adds a no-pre-move-income condition; record the source conflict above for review | [N.D.C.C. 57-38-62(1)(b)(1)](https://ndlegis.gov/cencode/t57c38.pdf); [2026 Form ND-1ES, condition 4(b) and line 13](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 | High-income client (federal 110% prior-year rule) | North Dakota keeps 100% of the prior-year liability; the federal and state required payments differ | same form, line 12 |
 | Federal safe harbor met by withholding | The state tests are separate: check North Dakota withholding (state box of Form W-2 and Form 1099) against the state liability | same form, condition 4 |
 | Oil or gas royalty with North Dakota extraction or production tax withheld | Not income tax withholding: do not count it on worksheet line 9 or Form ND-1, line 26 | [2025 booklet, line 26](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
@@ -263,7 +263,7 @@ The rate factors are the Schedule ND-1UT line 16d results: 275/365 = 0.753 x 0.1
 | 2025 Schedule ND-1UT (SFN 28704, 12-2025), 2025-2026 filing cycle. Read for Parts 1 to 3, the exceptions A to D, line 8 withholding rule, line 16 rounding steps and line 17 USD 5.00 rule. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/28704-schedule-nd-1ut-2025.pdf | 2026-11-14 |
 | 2025 individual income tax booklet, 2025-2026 filing cycle. Read for "Estimated tax requirement (for 2026)" and Form ND-1 line 26, 27, 30 and 37 instructions. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-14 |
 
-Not yet confirmed: the 2026 Schedule ND-1UT and 2026 Form ND-1 line numbers (the 2025 forms are used, labelled 2025-2026 filing cycle); the exact date in the federal 4th quarter exception C for 2026; whether any electronic-payment mandate applies to individual estimated tax (none was found in the sources read); card processing fees; and the fiduciary and pass-through estimated payment forms, which this skill does not cover.
+Not yet confirmed: an authoritative basis for the narrower prior-year mover wording in Form ND-1ES where the mover had earlier North Dakota-source income (the statutory rule above governs pending resolution); the 2026 Schedule ND-1UT and 2026 Form ND-1 line numbers (the 2025 forms are used, labelled 2025-2026 filing cycle); the exact date in the federal 4th quarter exception C for 2026; whether any electronic-payment mandate applies to individual estimated tax (none was found in the sources read); card processing fees; and the fiduciary and pass-through estimated payment forms, which this skill does not cover.
 
 ## Today's figures and who stands behind this skill
 

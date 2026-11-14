@@ -1,11 +1,7 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2265,
+ "count": 2268,
  "publication_holds": [
-  {
-   "name": "ab-corporate-tax",
-   "reason": "status: needs_sources"
-  },
   {
    "name": "bd-corporate-income-tax",
    "reason": "status: needs_sources"
@@ -131,10 +127,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "nt-payroll-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "pg-corporate-income-tax",
    "reason": "status: needs_sources"
   },
@@ -160,10 +152,6 @@
   },
   {
    "name": "property-transfer-tax-matrix",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "qc-corporate-tax-co17",
    "reason": "status: needs_sources"
   },
   {
@@ -255,6 +243,13 @@
   "BZ",
   "CA",
   "CA-AB",
+  "CA-BC",
+  "CA-MB",
+  "CA-NT",
+  "CA-NU",
+  "CA-QC",
+  "CA-SK",
+  "CA-YT",
   "CG",
   "CH",
   "CI",
@@ -491,6 +486,15 @@
    "authored_by": null,
    "reviewed_by": "Anthony Bandura",
    "tax_year": 2025
+  },
+  {
+   "name": "ab-corporate-tax",
+   "jurisdiction": "CA",
+   "path": "skills/canada/alberta/ab-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ab-individual-return",
@@ -2092,7 +2096,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bc-individual-return",
@@ -2105,21 +2109,21 @@
   },
   {
    "name": "bc-pst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-BC",
    "path": "skills/canada/british-columbia/bc-pst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bc-speculation-vacancy-tax",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-BC",
    "path": "skills/canada/british-columbia/bc-speculation-vacancy-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "bd-bookkeeping",
@@ -3586,7 +3590,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ca-income-tax",
@@ -3658,7 +3662,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ca-smllc-form-568",
@@ -11600,21 +11604,21 @@
   },
   {
    "name": "mb-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-MB",
    "path": "skills/canada/manitoba/mb-individual-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mb-rst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-MB",
    "path": "skills/canada/manitoba/mb-rst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mc-company-formation",
@@ -13342,7 +13346,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nb-tax-credits",
@@ -13351,7 +13355,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nc-bailey-settlement-retirement",
@@ -14053,7 +14057,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nl-payroll-tax",
@@ -14089,7 +14093,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nl-tax-objection",
@@ -14368,7 +14372,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ns-tax-credits",
@@ -14377,34 +14381,43 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nt-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-NT",
    "path": "skills/canada/northwest-territories/nt-individual-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "nt-payroll-tax",
+   "jurisdiction": "CA-NT",
+   "path": "skills/canada/northwest-territories/nt-payroll-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "nu-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-NU",
    "path": "skills/canada/nunavut/nu-individual-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nu-tax-credits",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-NU",
    "path": "skills/canada/nunavut/nu-tax-credits.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nv-commerce-and-mbt",
@@ -14764,7 +14777,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "on-individual-return",
@@ -14782,7 +14795,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "or-cat",
@@ -15007,7 +15020,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "pe-tax-credits",
@@ -15016,7 +15029,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "pe-tax-overview",
@@ -15739,13 +15752,22 @@
    "tax_year": 2026
   },
   {
+   "name": "qc-corporate-tax-co17",
+   "jurisdiction": "CA-QC",
+   "path": "skills/canada/qc-corporate-tax-co17.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "qc-employer-contributions",
    "jurisdiction": "CA",
    "path": "skills/canada/quebec/qc-employer-contributions.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "qc-individual-return",
@@ -15758,12 +15780,12 @@
   },
   {
    "name": "qc-qst-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-QC",
    "path": "skills/canada/quebec/qc-qst-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "quickbooks-integration",
@@ -16825,7 +16847,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sk-payroll-social",
@@ -16838,12 +16860,12 @@
   },
   {
    "name": "sk-pst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-SK",
    "path": "skills/canada/saskatchewan/sk-pst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sk-tax-overview",
@@ -20627,21 +20649,21 @@
   },
   {
    "name": "yt-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-YT",
    "path": "skills/canada/yukon/yt-individual-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "yt-tax-credits",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-YT",
    "path": "skills/canada/yukon/yt-tax-credits.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "yt-vat-and-goods-imports",

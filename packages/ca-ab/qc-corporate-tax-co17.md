@@ -1,0 +1,282 @@
+---
+name: qc-corporate-tax-co17
+description: >
+  Prepare a Quebec CO-17 corporate-income-tax workpaper alongside the separate
+  federal T2. Establish permanent establishments and allocation, Quebec taxable
+  income, paid-hours and primary/manufacturing SBD eligibility, associated-group
+  limits, C3i property and regional rates, legacy research versus CRIC transition,
+  meals limits, instalments, filing, payment and representation. Calendar 2026
+  estimates are separated from actual 2025-2026 filing-cycle forms and the
+  announced SBD change for years beginning after 29 April 2026. Unread law and
+  special regimes are held explicitly rather than defaulted to a larger tax.
+version: 2.0
+jurisdiction: CA-QC
+tax_year: 2026
+last_updated: 2026-11-14
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: corporate-tax
+type: computation
+---
+
+# Quebec corporate income tax and CO-17 v2.0
+
+Produced by OpenAccountants (openaccountants.com)
+
+This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Quebec tax adviser (CPA auditeur or CPA with Quebec corporate tax expertise, or a tax lawyer admitted to the Barreau du Québec with corporate tax specialisation) before filing or acting upon. Quebec administers its CIT separately from the federal government ; the CRA does not collect Quebec corporate tax. The latest verified version of this skill is maintained at openaccountants.com.
+
+## Scope
+
+Prepare a Quebec corporate-income-tax computation, reconciled to the federal T2 but filed with Revenu Québec. A federal submission or payment does not file or settle the CO-17. The ordinary route concerns an active business of a corporation with a Quebec permanent establishment. Separate PE existence, Quebec allocation, CCPC status and Quebec SBD eligibility. An employee, customer or registration alone does not conclusively resolve every PE question. Do not manufacture a Quebec PE or allocate everything here simply because facts are missing.
+
+No PE does not automatically remove the return duty. Actual CO-17.G lists a Quebec PE at any time, specified insurance activities, a non-resident disposing of taxable Quebec property without a PE, a mandate/nominee contract, and specified special taxes as filing triggers. A registered charity throughout the year has its separate information-return route. Inactivity can still require a return and balance sheet. Apply the actual statutory facts and exceptions. [CO-17.G scope and sections 3.5-3.6](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Currency is CAD unless an actual permitted functional-currency election and conversion rules apply. Filing and remittance currency are distinct; CO-1027 requires CAD payments. Taxable capital/paid-up capital, assets, gross revenue, active income, adjusted aggregate investment income and taxable income are different populations. Do not interchange them merely because a credit uses another size test. [Actual CO-771](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf), [actual instalment form](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf).
+
+The latest full corporate-guide edition read is **CO-17.G (2025-12), the 2025-2026 filing cycle**. Its introduction expressly excludes changes announced after 2025. Its later-year headings do not override the separate May 2026 SBD announcement. Current statutory amendments could not be read from the oversized/blocked Act endpoint. The supported computation below therefore distinguishes calendar 2026 years beginning before that change from the later announced route, with its enactment check explicitly held. No accountant approval is added or inferred. [Edition boundary](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/), [May 2026 announcement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/).
+
+## Ask the client first
+
+1. What are the exact start/end dates, residence/continuance/amalgamation/control events, legal identity, NEQ and Revenu Québec IC account, initial/final/amended status and all PE locations? Obtain opening statements for a first Quebec return and any nominee/insurance/taxable-property/special-tax facts.
+2. What statutory accounts, reconciled trial balance and general ledger support net income? Obtain the prior CO-17, federal T2 and Schedules 1/5/7/8 and assessments. For a genuinely new corporation, document that there is no prior return; do not impose an impossible prior-return requirement. Missing books prevent a final computation, not all intake or supported preliminary work.
+3. Is the corporation a CCPC throughout the relevant period? Obtain voting/control/beneficial ownership, related/associated entities and de facto control evidence, rather than treating unconfirmed status as proved non-CCPC or automatically associated.
+4. What current paid-hour records, per-person weekly caps, paid-leave facts, controlling-shareholder active hours and previous-year associated-group records support the SBD? Obtain primary/manufacturing labour costs, short-year and merger facts; headcount and wages alone do not prove the test.
+5. What group Canadian paid-up-capital computation, prior-calendar-year adjusted investment income, business-limit allocations and specified corporate/partnership income restrictions apply? Obtain all relevant associated-company years and signed allocations.
+6. What revenue and remuneration belong to each PE under the applicable allocation rule? Obtain employee travel/secondment, related-party payroll, services, goods, royalty, software and interest source evidence, not only billing addresses or federal Schedule 5 totals.
+7. For each C3i asset obtain invoice, class, first-use/new condition, acquisition/order/construction and expense/payment dates, actual municipality and location/use over the required period, assistance, excluded amount, associated/partnership/joint-venture caps and prior claims. Do not infer classification from an invoice's word 'equipment'.
+8. For R&D obtain the actual project science/technical work, Quebec work locations, employee time, annual salaries/basic-personal-amount inputs, related/unrelated subcontract chains, university/public/consortium contracts, ownership/use of results, payments, capital assets, government assistance and federal SR&ED workpapers. Separate precommercial activity from qualifying R&D and legacy year starts from CRIC.
+9. Obtain gains/losses, dividends and federal RDTOH/GRIP/LRIP workpapers; CCA classes/availability/elections; foreign income/tax; meals/entertainment revenue and exceptions; club dues, fines, deposits/environmental costs, shareholder benefits and remuneration reasonableness.
+10. What instalments, credits, balances, prior compliance, bank payment dates, representation scope and accepted filing receipts exist? Obtain audit/objection/waiver/carryback correspondence and all special-regime certificates before a deadline or reassessment opinion.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount and precise population/period | Official source |
+|---|---|---|
+| Ordinary Quebec general CIT | 11.5% before applicable deductions/credits; establish Quebec business allocation separately | [RQ rate table and CO-771](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Existing maximum SBD | 8.3 percentage points, leaving a derived 3.2% (11.5% minus 8.3%), for the supported pre-change route; a full calendar 2026 year starts before the new commencement | [2025-12 guide section 4.4.3 and later announcement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/)  [CO-17.G sections 4.4.3 and 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Announced later SBD | 9.3 percentage points, leaving a derived 2.2% (11.5% minus 9.3%), for tax years **beginning after 29 April 2026**; enactment/current statutory text not yet confirmed here | [4 May 2026 notice](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/) |
+| Nominal annual business limit | CAD 500,000, subject to group sharing, short year, income restrictions and actual Quebec adjustments | [RQ SBD notice](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/)  [CO-17.G sections 4.4.3 and 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Group capital reduction | Canadian paid-up capital 10 million to 50 million; no limit at 50 million or more for current years | [RQ current SBD notice](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/)  [CO-17.G sections 4.4.3 and 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Group adjusted investment income | Reduction above 50,000; eliminated at 150,000; use applicable preceding-calendar-year group population | [RQ current SBD notice](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/)  [CO-17.G sections 4.4.3 and 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Ordinary full paid-hour route | At least 5,500 qualifying hours; rate factor between 5,000 and 5,500; zero at 5,000 or fewer, subject to the alternative activity route | [CO-771 instructions](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf) |
+| Weekly employee cap |40 hours per person; controlling-shareholder active-work counting has its own 1.1 multiplier and record requirements | [CO-771 instructions](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf) |
+| Primary/manufacturing alternative | Full activity factor at 50% or more; linear above 25% below 50%; zero at 25% or less; use actual labour-cost ratio | [Guide section 4.4.3.14](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Current C3i rates |15% high vitality,20% intermediate,25% low vitality for the supported post 2023 route; dated transition and actual municipality apply | [Guide section 5.38.1](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| C3i excluded cost |5,000 for class 50 or eligible management software;12,500 otherwise, with actual joint-venture and earlier-exclusion adjustment | [Guide section 5.38.2](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| C3i cumulative expense ceiling |100 million across applicable group population; current year plus preceding 36 months for post 2023 starts, not an evergreen five-year per-asset cap | [Guide section 5.38.4](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Legacy research salary rate | Base 14%, enhanced up to 30% with asset tests 50 million/75 million and expense-limit conditions; applies only to eligible legacy years | [Guide sections 5.2 and 5.24](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| CRIC rate and exclusion |20% base; eligible corporate enhanced 30% on first 1 million above exclusion; exclusion greater 50,000 or calculated employee threshold | [RQ CRIC announcement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/)  [CO-17.G sections 4.4.3 and 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/) |
+| Instalment duty threshold | Current and preceding-year relevant tax totals must **each exceed 3,000**, excluding compensation tax in this threshold test | [Actual CO-1027](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf) |
+
+### Establish the base, status and allocation
+
+Start with net income from the accounts. Prepare Quebec fiscal-income reconciliation **CO-17.A.1**, then the separate taxable-income deductions and losses. Federal Schedule 1 is a reconciliation reference, not itself federal taxable income or an automatic Quebec starting balance. Reconcile Quebec and federal current/prior assistance, losses, foreign affiliates/FAPI, foreign taxes, dividends and CCA. A personal foreign-specialist deduction must not be subtracted from corporate taxable income merely because the corporation employs that person. [CO-17.G income/deductions and annexes](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Identify PEs before using an allocation percentage. For an ordinary corporation with PEs in and outside Quebec, the general factor is the average of Quebec-attributable gross revenue/total gross revenue and Quebec-PE wages/total wages. Where the relevant wage factor is absent the actual guide uses the revenue factor, and vice versa. An exclusively Quebec-PE corporation has the stated 100% route. Banks/credit unions, insurers, trust/loan, rail/air/bus/truck, grain, pipeline, shipping, diversified and foreign companies have special rules. Do not apply the ordinary average to those automatically, multiply the wrong income twice, or use 100% as an uncertainty default. Reconcile CO-771/CO-17 business proportion to federal Schedule 5, explaining real jurisdictional differences. [Guide section 4.4.4](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+The original wage/revenue source investigations remain: commissions versus contractors, travelling staff, secondments, related-party arrangements, partly performed services, goods deliveries, royalties, software licensing and borrower/interest connections. Detailed source rules for those fact patterns are not all confirmed in this read. Hold the disputed allocation, retain records and refer material cases; do not infer a customer's address settles every source rule. Interprovincial income-shifting, avoidance, acquisitions of control, loss streaming, amalgamation/continuance and foreign-affiliate/FAPI positions require their own Quebec law review. Do not repeat the former unverified GAAR section numbers or claim a universally broader interpretation than federal law.
+
+For gains, replace the old automatic post 24 June 2024 two-thirds rule. Official Quebec Bulletin 2025-8 records cancellation of the planned increase and related Canadian Entrepreneurs' Incentive, while maintaining the separate lifetime-exemption increase. Do not apply an individual exemption to a corporation. The old archived deferral-to 2026 announcement is not current proof of a corporate two-thirds rate. Use the separately supported federal/Quebec capital-gain workpaper and confirm current Quebec section 231 before a final material claim; it could not be read in this session. [Actual cancellation discussion, pages 12-13](https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2025-8.pdf).
+
+Keep dividend classification, shareholder integration and federal refundable-tax balances as real coordination jobs. **Do not create a Quebec Part-IV-equivalent tax, Quebec eligible/non-eligible RDTOH balance, or provincial dividend refund by copying the federal accounts.** The old 'Quebec IMRTD' mechanism/section 1106 assertion was unsupported. The actual guide instead requires dividend information in CO-17S.3 and Quebec deduction analysis; federal RDTOH/GRIP/LRIP belong to the federal T2 workpaper. Do not blindly equate their beginning balances to any provincial account. [Actual dividend annex and deduction instructions](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+### Apply the SBD to the correct amount
+
+The general tax less the **deduction** is the computation. A partial paid-hours entitlement reduces the deduction rate, not the business-limit amount in a way that leaves all excess income untaxed. Screen CCPC status, eligible Canadian active business income, investment/personal-services/specified corporate and partnership income restrictions, taxable income, associated-group allocation, short year and both group size reductions before using the net rate. The current business limit uses the greater applicable capital or adjusted-investment-income reduction, not their sum or a missing passive-income test. Obtain CO-771, the associated allocation and adjusted-limit schedules rather than replacing them with a single min(Quebec ABI,500,000) shortcut. [Actual CO-771](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf), [current RQ SBD notice](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/).
+
+The paid-hour routes are **current corporation's eligible hours** or the applicable **preceding-year associated group**; those are not interchangeable current-year group totals. Annualise the current short-year hours where prescribed, not the preceding-year total. Apply merger predecessor rules when relevant. CO-771 instructions cap each employee's weekly hours, not just shareholders, and include documented active work by a person controlling a majority of full-voting shares using the specified multiplier. Do not assume every paid leave hour qualifies without applying the actual definition, count contractors as employees, infer hours from full-time headcount, use dividends as paid salary, or retroactively borrow next year's ramp-up hours. [CO-771 instructions, notes 2-3](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf).
+
+For an eligible primary/manufacturing corporation, calculate the alternative labour-cost activity factor using the actual eligible and total labour-cost definitions. Full activity relief is available at the upper boundary, partial between the lower and upper, and none at the lower boundary. Apply the greater eligible hours/activity deduction rate, not the old statement that an over-half sector business necessarily has only a reduced rate. Partnerships require their own eligible-income and hours/activity test. [Guide section 4.4.3](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+The May 2026 announcement is based on **year start**, not gains date, calendar-day proration from announcement, or every return filed in 2026. A31 December 2026 year that began 1 January remains in the earlier rate route. The later announcement and older guide are reconciled by their scope/edition; current enactment for post 29 April starts is held because the law could not be read. Do not silently use either the old or announced rate for an affected final return. [Actual commencement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/).
+
+### CCA, deductions and assistance
+
+Keep separate Quebec/federal CCA pools, additions, dispositions, recapture/terminal losses, assistance and elections. The asset class, acquisition/order/available-for-use dates, ownership, use, related-party transactions and period-specific accelerated/immediate-expensing provisions decide the result. The old universal 1.5 million expensing claim and generic regional bonus are not a current entitlement for every 2026 asset. Review actual CO-17.G part 7 and the CCA guide, which distinguish classes and changing commencement dates. Claim no more than the permitted amount and do not assume federal choice equals Quebec choice. Track credit/assistance income or cost-basis treatment and timing separately; do not both reduce cost and include income without the applicable rule. [Current bounded CCA guide](https://www.revenuquebec.ca/en/online-services/forms-and-publications/tpw-130-g-v/capital-cost-allowance-guide/), [CO-17.G part 7 and credit treatment](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Ordinary business-purpose, reasonableness and capital/current distinctions remain. Review recreational club dues, statutory fines/penalties, shareholder/officer benefits and gifts, excessive remuneration, bottle deposits and environmental contributions separately. The previous blanket 'deductible when paid' treatment of every deposit/environmental amount is not established. Retain contract, recoverability, ownership, accrual and benefit evidence before an adjustment. Do not treat the source's generic wording as an incorporated-by-reference federal allowance for every item.
+
+Meals/entertainment require both the ordinary deduction restriction and the Quebec revenue ceiling, subject to actual exceptions and special long-haul trucking/cultural-event rules. The original small-revenue percentages were reversed. The actual ceiling is 2% of revenue at 32,500 or less;650 between 32,500 and 52,000;1.25% at 52,000 or more. Use the lesser allowed amount, not multiply one cap by the other. Short-year and exempt-event treatment require their actual rule. Input-credit/RTI adjustment is a separate sales-tax calculation; it does not create another corporate income-tax deduction. [Finance current explanatory measure](https://www.budget.finances.gouv.qc.ca/budget/outils/depenses-fiscales/fiches/fiche-230105.asp), [RQ meals and input-credit restrictions](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/situations-particulieres-liees-a-la-tpstvh-et-a-la-tvq/frais-de-repas-et-de-representation-cti-et-rti/).
+
+Foreign specialists/researchers, IFC, large investment projects, manufacturing/innovation and specialised science/AI/quantum/aerospace projects remain specialist screening jobs. Preserve the actual certificate, qualifying-project, period, location and claimant analysis. Do not use the old universal five-year holiday,100 million project threshold or 15-year term without the programme/vintage law. Foreign-researcher programme transition is especially relevant after the CRIC change. A personal remuneration deduction and corporate holiday are different claims. [Actual current guide, specialised deduction and CRIC transitions](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+### C3i investment and innovation credit
+
+Use the actual **investment and innovation** programme, not the older investment credit. CO-17.G identifies C3i at sections 1029.8.36.166.60.36-1029.8.36.166.60.65, form**CO-1029.8.36.II**, code 109. The former 166.40 anchor belongs to the different older investment credit. Do not replace either programme with a generic regional subsidy. [Guide credit table and section 5.38](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Establish an eligible corporation/partnership and every determined-property condition. Actual categories include qualifying manufacturing/processing equipment, class 50 property and eligible management software, with stated exclusions. Newness matters: previously used property is not rescued merely because it was not used by a related Quebec party. Do not automatically accept ore, green-hydrogen, biofuel, buildings, vehicles, in-house software or leased property by a broad industry label. Apply the exact class/use/exclusion/lease rules or hold that line. Actual exclusions include specified large-project certification, specified fuel-production facilities and old written obligations/construction. [Guide section 5.38 property definition](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Management software has its principally-Quebec/business-use and consecutive-use condition. Other qualifying property has its **only-in-Quebec**, principally-business and consecutive-use condition, subject to actual loss/destruction exceptions. The actual use period is 730 consecutive days; the software rule also addresses obsolescence. The former 'more-than-half Quebec use for all equipment' test was too loose. Keep location/use records beyond the initial invoice. [Actual property definition](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Determine the actual dated municipality/RCM/urban agglomeration and acquisition/expense/obligation dates. Current post 2023 rates differ from the historical 2021-2023 enhanced rates. The old 20/30/40 table is a **historical route with transition conditions**, not a current floor chosen whenever zone is unknown. Current regional lists themselves contain changes by acquisition/expense date; Montreal examples cannot classify all of an administrative region. Hold an uncertain zone rather than choosing the lowest as a supposedly correct entitlement. [Guide section 5.38.1](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Calculate actual paid/eligible expense net of applicable exclusions and assistance. The excluded threshold differs by property class; account for previous expenditure against that asset and joint-venture share. The cumulative ceiling uses costs before the excluded amount, group/partnership/joint-venture scope and current-year-plus-lookback population. Do not treat it as a separate ceiling per property or mix the old 48 month lookback into the current 36 month route. [Guide sections 5.38.2-5.38.4](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+For a taxation year beginning after 2023, the guide's C3i is fully refundable, rather than limited by the old asset/revenue sliding scale. Earlier years retain their actual larger-of-assets/gross-revenue refundability test and possible non-refundable portion; the old table was not a current CCPC-only asset test. Historical non-refundable balances have the stated three-back/twenty-forward limits, subject to eligible-year and tax capacity. Reconcile actual carryforward vintages instead of losing them when updating the current-year rule. [Guide section 5.38.3](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Prepare CO-1029.8.36.II and any required group allocation, transfer code 109 to the actual return, and retain invoice, payment, class, municipality, use, assistance and group cap evidence. Determine the actual statutory claim deadline and special extensions from the current form/law. The old bare '12 months' did not identify whether measured from year-end or filing due date. Do not presume every late claim is rescued or deny it without checking the actual applicable rule. CCA/federal ITC assistance interaction remains a separate workpaper; do not simply stack the published headline percentages. [Actual guide filing and credit rules](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+### Legacy research and CRIC transition
+
+Classify by **taxation/partnership fiscal year beginning**. Legacy salary, university/public research, precompetitive partnership and consortium credits do not remain the default for all 2026 years. RQ announces CRIC for years beginning after 25 March 2025. Legacy years and specifically allowed consortium balance transitions remain real jobs, not deleted claims. Consortium balance transitional claims can run through a year ending no later than 2029 under the actual guide's conditions; that does not extend all old programmes. [RQ announcement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/), [guide research sections](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+For a legacy salary route use actual RD-1029.7, the eligibility/asset/control/expense-limit and exclusion tests. The original 30%of every dollar of payroll omitted material exclusions; using total capital as if it were programme assets is also wrong. Unrelated subcontract, related salary, university/public research, partnership and consortium routes have their own bases/rates/forms, not a universal 30%-or 14% table copied from salary. The actual guide identifies RD-1029.8.16.1 for qualifying research contracts/partnership route and RD-1029.8.9.03 for consortium fees. Confirm the precise legacy claimant and form rather than inventing CO-prefixed form numbers from an Act article. [Guide sections 5.2,5.3,5.10 and 5.24/credit table](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+For CRIC identify eligible direct/partnership claimant, Quebec R&D and qualifying precommercial work, relationship/subcontract level, payment and rights to results. Actual bases distinguish employee/related-contractor salary, the eligible half of unrelated contract consideration/research-organisation payments, and qualifying new capital assets. Land/buildings/use rights are excluded from the stated capital route; availability and sustained Quebec R&D/precommercial use matter. Precommercial work is not every marketing cost. Do not infer entitlement from federal SR&ED acceptance alone. [Actual CRIC scope](https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/), [guide section 5.41](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Calculate employee exclusion from the lesser actual relevant salary and the applicable employee basic personal amount adjusted for qualifying-work proportion and employment days; share the relevant basic amount across applicable credits. Compare its total with the fixed exclusion and use the greater. The enhanced corporate limit is shared with associated eligible companies; a corporate member's share of partnership expenses does **not** receive the enhanced rate merely because its own assets are small. Split R&D and precommercial components and use RD-1029.8.CR, RD-222 for the R&D component, RD-1029.8.PR for precommercial information and RD-1029.8.EN where group allocation is needed. Actual codes 112/113 identify the two components. [Guide section 5.41 and form table](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Reconcile federal SR&ED technical and financial evidence, government assistance, current/prior Quebec credits and cost-base/income consequences. A Quebec filing is not legally made only by first filing federal SR&ED; the old prohibition was an unsupported sequencing requirement. Coordinate the two claims and actual deadlines without guessing a combined 50%-plus benefit. Quebec does not automatically harmonise every federal ITC change. Hold material timing, stacking or claimant differences until the relevant law/forms are read. [Quebec transition](https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/), [Bulletin 2025-8 harmonisation exclusions](https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2025-8.pdf).
+
+### Filing, payment and records
+
+Prepare the current CO-17 with CO-17.A.1, CO-771/allocation, losses/CCA, related/shareholder transactions, dividend information, actual credit schedules and financial statements. The guide identifies actual supplementary annex numbers; 'CO-17.SP' is not a licence to invent a generic panel or a provincial IMRTD field. Reconcile income/base, tax, credit order, refundable/non-refundable balances, instalments, prior assessments and net balance, with no double use of assistance or credits. [CO-17.G actual lines and annex table](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Filing is due within six months after year-end; Quebec balance is due within **two months**, including the SBD-qualifying CCPC route. Do not import the federal three-month payment extension. A31 December 2025 year has nominal 28 February 2026 balance date and 30 June 2026 filing date; check the applicable non-working-day/receipt rule before stating a shifted legal payment date. A30 June 2026 year has 31 December 2026 filing date; a short year ending 15 April 2025 has 15 October 2025 filing date. A refund expectation does not prove instalments were properly paid or remove return duties. [Actual guide section 3.5](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/), [CO-1027 balance instruction](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf).
+
+Use up-to-date Revenu Québec authorised commercial software/certified Internet transmission. Current general Internet filing is not a promise that Mon dossier contains an online CO-17 editor. Actual exceptions include insurers, non-residents, functional-currency filers and specified exempt corporations; qualifying mail filings have their own forms/print requirements. An accredited transmitter uses the actual CO-1000.TE declaration. Keep accepted transmission acknowledgement separate from a saved draft, a federal acceptance, a payment confirmation or an assessment. Mon dossier is useful for account, payment, notices, return status and actual processed figures. [Guide section 3.6/3.11](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Establish the correct NEQ/identification/IC account and registration obligations for the actual legal entity and activities; do not state that every foreign corporation automatically has identical registration duties. Verify annual registry updating and fees separately from CIT liability. Obtain authority before any actual filing/payment; this method prepares the workpaper and does not post, submit or debit by itself.
+
+### Instalments, penalties and reassessment
+
+Apply CO-1027 to the actual relevant taxes. Duty requires both current and preceding totals above the threshold, not either year alone. Compensation-tax instalments have their own calculation even though that tax is excluded from the duty threshold. Monthly is the default. Quarterly requires actual CCPC, current-or-prior income/capital group tests, eligible active income and previous compliance; 'federal SBD claimed' and 'both years must satisfy every threshold' are not substitutes. A missed quarterly due payment moves the account to monthly from the following month under the form. [Actual CO-1027](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf).
+
+MethodA uses the lesser of estimated current tax and the first base divided by applicable payment count. MethodB uses the second base for the first quarter/two months, then the remaining first-base amount over the remaining payment count, subject to the form's floor and special rules. Short prior years, mergers, winding-up subsidiaries, rollover acquisitions and investment-project deductions need the form's special calculations. Refundable credits reduce actual qualifying instalments in chronological order. Do not merely choose a larger 'safer' tax or subtract credits repeatedly. [CO-1027 actual computation](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf).
+
+Use actual due dates and bank receipt evidence. Prescribed interest is time-specific and compounded daily; the old 8-10% guess is not a2026 rate. The actual form provides additional 10%annual daily-compounded interest on unpaid required instalments unless the stated 90%payment test is met, not the copied federal 50%instalment-interest surcharge. Determine applicable rate periods and interest base before quoting a total. [Actual CO-1027 interest rules](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf).
+
+Ordinary late-return penalty is 5%unpaid tax plus 1%per complete month, maximum 12 months in the actual guide. Distinguish late return, unpaid balance, instalment interest, false statement/gross negligence and criminal conduct. Do not present the former federal-style repeat 10%+2%/20 months, blanket negligence 50%, or an arbitrary article anchor as verified Quebec outcomes. Those specific escalated penalties and their factual thresholds remain specialist/law-read jobs. Paying interest is not permission to file late. [Guide section 3.5.4](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+Keep assessment date/type, CCPC status, misrepresentation/fraud, signed waiver, non-arm's-length cross-border transactions, foreign information, loss/credit carrybacks and uncertain-tax-treatment disclosures as separate limitation investigations. The original ordinary three/four-year categories are not an all-purpose safe date, and 'seven years for every transfer-pricing case' is unsupported. Do not promise a closed reassessment window without current section 1010, amendment and case facts. Preserve objection/appeal rights with counsel; this guide does not advise an active dispute.
+
+MR-69 is an actual way to grant an **authorization to communicate information or a power of attorney**. These scopes differ. The official page also permits online grants and electronic signature; a newly mailed paper form is not mandatory for every authorised action. Federal authorization alone does not authorise Quebec access. Obtain the actual current mandate and access scope, retain confirmation and revoke when appropriate. [Actual MR-69 catalogue and online alternatives](https://www.revenuquebec.ca/en/online-services/forms-and-publications/current-details/mr-69/).
+
+Retain readable books/electronic evidence and integrity. The guide's general record period runs six years after the last related year, with a late-filed-return clock and longer dispute requirements. Preserve asset/credit/carryforward and ownership evidence longer when it supports a later claim. [Guide section 3.10](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+## Worked cases
+
+### Case 1: retain TechMTL's facts and correct the C3i workpaper
+
+TechMTL Inc. has a Montreal head office and sole PE, confirmed CCPC status, year ending 31 December 2025, CAD 2 million Quebec sales and 400,000 stated all-active fiscal income;700,000 wages to 8 full-time staff,15,200 recorded hours;4 million stated Canadian taxable capital, no associated corporations. It acquired 200,000 manufacturing equipment used at its Montreal facility and has 80,000 federal-SR&ED qualifying in-house salaries. The old example also assumed programme assets below 50 million. Those facts and original period are retained; taxable capital does not itself prove that asset test.
+
+The following is a **2026 workpaper scenario using the same monetary inputs**, year 1 January-31 December 2026, explicitly assuming 400,000 is reconciled Quebec taxable income before credits, all is eligible SBD base after every limitation, fully eligible paid hours, no group passive-income reduction, no other taxes/credits/assistance, and one new qualifying manufacturing asset satisfying every C3i class/use/date/zone/payment/cap condition in the high-vitality route. Quebec gross 46,000 less SBD 33,200 gives 12,800. C3i is (200,000-12,500)×15%=**28,125**, not 39,000. The component-only balance after that refundable credit is **minus 15,325**, before R&D, instalments and all assistance/CCA/taxable-income coordination. It is not a certified refund from the original 2025 facts. [Current rate/commencement](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/), [actual C3i conditions](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+```oa-check
+name: Quebec calendar2026 TechMTL ordinary SBD and conditional C3i components
+inputs:
+  reconciled_qc_taxable_income: 400000
+  eligible_sbd_base: 400000
+  one_supported_manufacturing_asset: 200000
+steps:
+  - ordinary_qc_gross: reconciled_qc_taxable_income * 0.115
+  - full_prechange_sbd: eligible_sbd_base * 0.083
+  - before_credits: ordinary_qc_gross - full_prechange_sbd
+  - conditional_c3i: (one_supported_manufacturing_asset - 12500) * 0.15
+  - component_balance_before_other_items: before_credits - conditional_c3i
+expected:
+  ordinary_qc_gross: 46000
+  full_prechange_sbd: 33200
+  before_credits: 12800
+  conditional_c3i: 28125
+  component_balance_before_other_items: -15325
+```
+
+The original 2025 R&D year begins before the CRIC transition if it was a normal calendar year, so use its actual legacy salary/exclusion/assistance rules, not the old automatic 80,000×30%=24,000. A new calendar 2026 year uses CRIC, not that legacy salary rate. Nor do 80,000 in federal eligible salaries establish the Quebec employee exclusion or a federal 15%credit rate/refundability for a CCPC. The old combined 26,200 refund and negative effective rate are not supported and must not be carried forward. Recompute both returns with actual programme eligibility, exclusion, applicable federal rate, assistance, CCA and income timing. Nominal Quebec balance deadline remains two months; no SBD three-month extension is introduced.
+
+### Case 2: a partial hours deduction does not remove the rest of the income
+
+For an ordinary full-year, sole-Quebec-PE CCPC beginning 1 January 2026, assume eligible taxable and active income 400,000, no group reduction or other credit, documented qualifying 5,250 hours, no qualifying preceding-group or stronger sector route. Hours factor is 0.5; deduction rate is 4.15 percentage points. Gross 46,000 less 16,600 leaves**29,400**, not 3.2%times a reduced income limit with all other income omitted. At 5,000 the hours route is zero, and at 5,500 the factor is full. [Actual hours and deduction mechanics](https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf), [pre-change maximum rate](https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/).
+
+```oa-check
+name: Quebec partial paid-hours SBD retains ordinary tax on the full base
+inputs:
+  taxable_income: 400000
+  eligible_abi_within_limit: 400000
+  supported_qualifying_hours: 5250
+steps:
+  - hours_factor: min(1, max(0, (supported_qualifying_hours - 5000) / 500))
+  - general_tax: taxable_income * 0.115
+  - partial_deduction: eligible_abi_within_limit * 0.083 * hours_factor
+  - qc_tax_before_credits: general_tax - partial_deduction
+expected:
+  hours_factor: 0.5
+  general_tax: 46000
+  partial_deduction: 16600
+  qc_tax_before_credits: 29400
+```
+
+### Case 3: CRIC's exclusion and corporate enhanced limit
+
+Assume a fully eligible direct corporate CRIC claim in a2026 calendar year, qualified expenses 1,300,000, independently calculated employee threshold 80,000 and full allocated enhanced expense limit 1 million. No partnership attribution, other assistance or disqualifier. Exclusion is 80,000, leaving 1,220,000. Enhanced credit 300,000 plus base-rate 44,000 is**344,000**. This example supplies the employee-threshold workpaper; it does not invent it from payroll or ignore employee time/annual basic amount rules. [RQ CRIC rates/exclusion](https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/), [actual employee and associated/partnership instructions](https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/).
+
+```oa-check
+name: Quebec CRIC corporate excluded base and enhanced tier
+inputs:
+  established_eligible_expenses: 1300000
+  computed_employee_threshold: 80000
+  allocated_enhanced_limit: 1000000
+steps:
+  - exclusion: max(50000, computed_employee_threshold)
+  - eligible_excess: max(0, established_eligible_expenses - exclusion)
+  - enhanced_part: min(allocated_enhanced_limit, eligible_excess)
+  - base_part: max(0, eligible_excess - enhanced_part)
+  - conditional_cric: enhanced_part * 0.30 + base_part * 0.20
+expected:
+  exclusion: 80000
+  eligible_excess: 1220000
+  enhanced_part: 1000000
+  base_part: 220000
+  conditional_cric: 344000
+```
+
+## When to refuse or refer
+
+Preserve the original refusal catalogue, with corrected boundaries:
+
+- **R-QC-CT-1:** unresolved PE/source/return duty. No-PE is not an automatic no-CO-17 decision; establish the actual other filing triggers and obtain specialist determination for contested facts.
+- **R-QC-CT-2:** compensation tax on financial institutions, insurer/credit-union special taxes and separate bases require their own computation.
+- **R-QC-CT-3:** mining duties, resource/forestry and logging regimes need their own applicable Act and return; ordinary CIT is not a substitute.
+- **R-QC-CT-4:** cooperatives, mutual/life insurers, investment/mutual-fund and exempt entities require status-specific rules. Do not presume all cooperatives are exempt.
+- **R-QC-CT-5:** interprovincial income shifting, GAAR, avoidance or related-party transfer-pricing positions require Quebec corporate tax counsel; ordinary allocation is evidence-based, not automatic over-allocation.
+- **R-QC-CT-6:** route federal T2 to the actual federal corporate-return owner found by a Canada-scoped search (the old `canada-corporate-tax-t2` file is absent; do not invent a successful handoff), Quebec personal to `qc-individual-return`, QST to `qc-qst-return`, federal sales tax to `canada-gst-hst`, employer contributions to `qc-employer-contributions`, formation to `canada-formation`; Retain the original foundation/intake evidence jobs through this guide's scope and intake questions; the old bare `foundation` and `intake` slugs are not present in this checkout and are not successful handoffs. Distinguish QPP/FSS/QPIP payroll and any actual pension-plan scheme; RREGOP is not every employer's ordinary payroll tax.
+- **R-QC-CT-7:** active audit, verification, objection or appeal requires an engaged appropriately authorised Quebec professional and the actual mandate/access scope.
+- **R-QC-CT-8:** continuance, amalgamation, acquisition of control and short-year/loss streaming require separate law and schedule analysis.
+- **R-QC-CT-9:** foreign affiliates/FAPI, treaties, foreign tax credit and international allocations require their own Quebec/federal reconciliations and specialist sign-off.
+
+Do not finalise unsupported CCPC/group/hours/source facts, affected post 29 April 2026 SBD enactment, disputed capital-gain law, credit property/zone/use/exclusion, research transition/assistance, special holiday, limitation or penalty. Complete supported components and identify the exact held determination rather than substituting the largest tax or a guessed lowest credit. Figures remain workpapers pending the original professional sign-off requirement; a public file, portal link, software acceptance or this rewrite is not approval by a named accountant.
+
+## Completion checklist
+
+- Correct entity, year start/end, residence/PE, special filing triggers and separate federal/Quebec return duties.
+- Books to Quebec fiscal income to taxable income, with explicit federal differences, losses, foreign taxes, dividends, CCA/assistance and no invented provincial RDTOH.
+- Actual business allocation and industry exceptions, no default 100% or duplicate application of the factor.
+- CCPC/SBD eligible base, hours/current-versus-prior-group route, activity alternative, short year, capital/passive-income and shared limit established.
+- Applicable SBD commencement law and form, no blanket 3.2%or 2.2%for every 2026 return.
+- C3i programme distinct from old CII; actual property/newness/use/municipality/dates, class-specific exclusion, cumulative cap and current refundability.
+- Legacy R&D versus CRIC start dates, actual claimant/project/base/exclusion/group/partnership/assistance/form and deadline evidence.
+- Meals and all original restricted-expense, specialist-holiday and cross-border jobs retained; unsupported details held.
+- Actual accepted CO-17 transmission, separate payment dates, instalment method/threshold/frequency, current interest/penalty scope and authority.
+- Preserve records, carryforward/asset evidence, reassessment/objection dates and actual representation permission; no automatic submission or ledger posting.
+
+## Sources
+
+| Official source actually read and scope | URL | Read on |
+|---|---|---|
+| Read for CO-17.G2025-12: bounded scope, edition limitation, general rate/SBD, allocation, income/annex distinctions, C3i, legacy research/CRIC, filing/payment, instalments, records and electronic routes; not every special programme or full Act | https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/co-17-g/guide-de-la-declaration-de-revenus-des-societes/ |2026-11-14|
+| Read for Full May 2026 SBD announcement: new maximum, year-start commencement, group capital/adjusted-investment limits and unchanged hours condition | https://www.revenuquebec.ca/en/press-room/tax-news/details/2026-05-04/increase-in-the-small-business-deduction-rate/ |2026-11-14|
+| Read for Actual CO-7712023-12: supported paid-hours/controlling-owner/current-versus-prior-group notes and computation structure; not a new 2026 amended form | https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-771(2023-12).pdf |2026-11-14|
+| Read for Actual CO-10272025-09: threshold, current/prior quarterly conditions, methodsA/B, missed-quarter consequence, payment and additional interest; bounded underlying tax bases | https://www.revenuquebec.ca/documents/fr/formulaires/co/CO-1027(2025-09).pdf |2026-11-14|
+| Read for CRIC 2025announcement: commencement, replacement programmes, exclusion, rate, claimant and eligible expense categories | https://www.revenuquebec.ca/en/press-room/tax-news/details/2025-07-09/tax-credit-for-rd-innovation-and-pre-commercialization/ |2026-11-14|
+| Read for Bulletin 2025-8pages 12-13: cancellation of planned capital-inclusion increase and harmonisation distinction; not every bulletin measure or subsequently enacted Act | https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2025-8.pdf |2026-11-14|
+| Read for Finance meals-deduction explanatory measure: ordinary restriction, revenue ceiling, cultural/trucking exceptions; RQ page separately read for actual revenue table and input-credit distinction | [Finance](https://www.budget.finances.gouv.qc.ca/budget/outils/depenses-fiscales/fiches/fiche-230105.asp), [RQ](https://www.revenuquebec.ca/fr/entreprises/taxes/tpstvh-et-tvq/situations-particulieres-liees-a-la-tpstvh-et-a-la-tvq/frais-de-repas-et-de-representation-cti-et-rti/) |2026-11-14|
+| Read for Current CCA guide: bounded availability/class/date and enhanced-expensing distinctions, not a complete calculator for every asset | https://www.revenuquebec.ca/en/online-services/forms-and-publications/tpw-130-g-v/capital-cost-allowance-guide/ |2026-11-14|
+| Read for MR-69 catalogue: authorization/power-of-attorney purpose, online alternative, signature and revocation routes | https://www.revenuquebec.ca/en/online-services/forms-and-publications/current-details/mr-69/ |2026-11-14|
+
+Not yet confirmed: current enacted Quebec Taxation Act sections/commencement for the announced SBD rate on years beginning after 29 April 2026 (May 2026 notice versus older CO-17.G); current section 231 capital-gain consolidation after the cancellation bulletin versus archived deferral announcements; every detailed PE/source allocation, special-sector and foreign-affiliate/GAAR rule; all paid-leave/complex-owner and merger hour definitions beyond the notes read; final case-specific group limits; each C3i lease/industry/municipality transition, assistance timing, current claim-window extension and historical carryforward; every legacy research-contract/consortium entitlement, CRIC threshold sharing and federal assistance timing; class-specific 2026 CCA/election details; special holidays and employee personal deductions; current prescribed-interest periods, escalated/repeat/gross-negligence penalties and reassessment extensions; exact deadline holiday/receipt shifts. Act retrieval failed (403/oversize/502); no full current law read is claimed and the held figures must not be guessed. Source PDF/HTML web text was read as scoped; failed local downloads are not represented as cached originals or a visual PDF review.
+
+## Disclaimer
+
+This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Quebec tax adviser (CPA auditeur with Quebec corporate tax experience, or a tax lawyer admitted to the Barreau du Québec with corporate tax specialisation) before filing or acting upon. Quebec administers its corporate income tax separately from the federal government ; a corporation with a permanent establishment in Quebec must file both the federal T2 with the CRA and the CO-17 with Revenu Québec; these returns are not interchangeable, and reliance on one does not satisfy the other. The latest verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).

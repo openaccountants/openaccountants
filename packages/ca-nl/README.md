@@ -30,21 +30,22 @@ financial statements, transfer pricing, tax optimization) plus
 18. `canada-tax-optimization.md`
 19. `canada-transfer-pricing.md`
 20. `leaving-canada-departure-tax.md`
-21. `references.md`
-22. `bookkeeping-workflow-base.md`
-23. `payroll-workflow-base.md`
-24. `company-formation-workflow-base.md`
-25. `financial-statements-workflow-base.md`
-26. `transfer-pricing-workflow-base.md`
-27. `crypto-tax-workflow-base.md`
-28. `nl-individual-return.md`
-29. `nl-tax-credits.md`
-30. `ca-freelance-intake.md`
-31. `ca-return-assembly.md`
-32. `global-router.md`
-33. `workflow-base.md`
-34. `social-contributions-workflow-base.md`
+21. `qc-corporate-tax-co17.md`
+22. `references.md`
+23. `bookkeeping-workflow-base.md`
+24. `payroll-workflow-base.md`
+25. `company-formation-workflow-base.md`
+26. `financial-statements-workflow-base.md`
+27. `transfer-pricing-workflow-base.md`
+28. `crypto-tax-workflow-base.md`
+29. `nl-individual-return.md`
+30. `nl-tax-credits.md`
+31. `ca-freelance-intake.md`
+32. `ca-return-assembly.md`
+33. `global-router.md`
+34. `workflow-base.md`
 35. `income-tax-workflow-base.md`
+36. `social-contributions-workflow-base.md`
 
 ## How to use
 
