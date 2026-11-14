@@ -17,7 +17,7 @@ tax_year: 2026
 tier: 2
 verified_by: pending
 last_updated: 2026-11-14
-version: "1.0"
+version: "1.1"
 ---
 
 # North Dakota transfer pricing (combined reporting, water's edge, apportionment), tax year 2026
@@ -69,7 +69,7 @@ The graduated corporate schedule (1.41%, 3.55%, 4.31%) is owned by `nd-corporate
 
 ## Penalties and interest
 
-- **Underpaid estimates:** interest at 12% per annum from the installment due date to the earlier of the payment date or the due date (without extension) of the return; it applies if a quarter's payment is less than 90% of the quarterly liability or less than the prior year's net tax liability divided by four; computed on Form 40-UT ([2026 Form 40-ES](https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf)).
+- **Underpaid estimates:** interest at 12% per annum from the installment due date to the earlier of the payment date or the due date (without extension) of the return; compute the required payment using the lesser current/prior alternative in [N.D.C.C. 57-38-62(2)](https://ndlegis.gov/cencode/t57c38.pdf), including withholding, rather than treating failure of either alternative as sufficient for interest. The 2026 Form 40-ES uses an inconsistent OR description of those shortfalls. Record that source conflict for review and compute any interest on Form 40-UT; do not charge interest solely because a timely payment meeting the applicable lesser requirement falls below the larger alternative ([2026 Form 40-ES](https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf)).
 - **Late payment and late filing:** 5% of unpaid tax or USD 5; late filing 5% per month or part up to 25%; interest 1% per month or part, excluding the month due; a corporation that still fails to file 30 days after notice can be assessed up to USD 500 per failure ([N.D.C.C. 57-38-45(1), (2) and (7)](https://ndlegis.gov/cencode/t57c38.pdf)).
 - **Audit theme:** intercompany intangible, interest and management-fee charges are the usual target; the Commissioner's tools are unitary combination and 57-38.1-18 alternative apportionment.
 
@@ -128,6 +128,17 @@ expected:
 4. Has the group made the single-sales-factor election, and when does its five-year period end?
 5. Do other states' combined-reporting rules include or exclude the same members differently (keep both computations in the file)?
 
+<!-- openaccountants-cta-block -->
+
+---
+
+### Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network -- accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at the OpenAccountants network.
+
+- Use it in your AI:
+- Talk to a verified accountant: https://calendly.com/openaccountants-info/30min
+
 ## Sources
 
 | Source | URL | Read on |
@@ -139,4 +150,4 @@ expected:
 | 2026 Form 40-ES, kept in the agency's 2025-corp folder. Read for the USD 5,000 tests, the quarterly interest conditions, Form 40-UT and the 12% per annum interest. | https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf | 2026-11-14 |
 | Tax Commissioner corporate income tax page. Read for the rate table, the 3.5% water's-edge surtax sentence and "Corporate tax rates have remained unchanged since 2015." | https://www.tax.nd.gov/corporate-income-tax | 2026-11-14 |
 
-Not yet confirmed: the 2026 Form 40 line for the water's-edge additional tax and the 2026 instructions (the 2025 instructions are used, labelled 2025-2026 filing cycle); North Dakota's Joyce or Finnigan position for the sales factor of non-nexus members; whether North Dakota offers a pass-through entity tax election for 2026 (the old file's "no PTET" statement is not carried as a rule); the statute that makes worldwide combination mandatory beyond the instructions and 57-38.4-02's opening sentence.
+Not yet confirmed: an authoritative reconciliation of the Form 40-ES OR wording with the statutory lesser-of requirement (apply the statute pending resolution); the 2026 Form 40 line for the water's-edge additional tax and the 2026 instructions (the 2025 instructions are used, labelled 2025-2026 filing cycle); North Dakota's Joyce or Finnigan position for the sales factor of non-nexus members; whether North Dakota offers a pass-through entity tax election for 2026 (the old file's "no PTET" statement is not carried as a rule); the statute that makes worldwide combination mandatory beyond the instructions and 57-38.4-02's opening sentence.
