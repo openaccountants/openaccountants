@@ -90,14 +90,14 @@ The employer never works out the bands. It applies the rate it is given, or the 
 
 This scale is what the tax office uses to set the rate. The employer does not use it. It is measured on taxable income per family-quotient share, not on gross salary.
 
-| Taxable income per share | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| Up to EUR 11,600 | 0% | "Jusqu'à 11 600 € 0 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| EUR 11,601 to EUR 29,579 | 11% | "De 11 601 € à 29 579 € 11 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| EUR 29,580 to EUR 84,577 | 30% | "De 29 580 € à 84 577 € 30 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| EUR 84,578 to EUR 181,917 | 41% | "De 84 578 € à 181 917 € 41 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| Above EUR 181,917 | 45% | "Plus de 181 917 € 45 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
+| Taxable income per share | Rate | Note | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
+| Up to EUR 11,600 | 0% | "Jusqu'à 11 600 € 0 %" | same |
+| EUR 11,601 to EUR 29,579 | 11% | "De 11 601 € à 29 579 € 11 %" | same |
+| EUR 29,580 to EUR 84,577 | 30% | "De 29 580 € à 84 577 € 30 %" | same |
+| EUR 84,578 to EUR 181,917 | 41% | "De 84 578 € à 181 917 € 41 %" | same |
+| Above EUR 181,917 | 45% | "Plus de 181 917 € 45 %" | same |
 
 These bands apply to the income of 2025 declared in 2026. A payroll run in 2026 does not use them.
 
@@ -105,29 +105,29 @@ These bands apply to the income of 2025 declared in 2026. A payroll run in 2026 
 
 This is the grid in force from 1 May 2026 for taxpayers living in mainland France or outside France. It is read on the monthly withholding base, which is the net imposable for the month.
 
-| Monthly withholding base | Default rate | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| Below EUR 1,635 | 0% | "Inférieure à 1 635 euros 0 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 1,635 and below EUR 1,698 | 0.5% | "Supérieure ou égale à 1 635 euros et inférieure à 1 698 euros 0,5 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 1,698 and below EUR 1,807 | 1.3% | "Supérieure ou égale à 1 698 euros et inférieure à 1 807 euros 1,3 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 1,807 and below EUR 1,928 | 2.1% | "Supérieure ou égale à 1 807 euros et inférieure à 1 928 euros 2,1 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 1,928 and below EUR 2,060 | 2.9% | "Supérieure ou égale à 1 928 euros et inférieure à 2 060 euros 2,9 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 2,060 and below EUR 2,170 | 3.5% | "Supérieure ou égale à 2 060 euros et inférieure à 2 170 euros 3,5 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 2,170 and below EUR 2,315 | 4.1% | "Supérieure ou égale à 2 170 euros et inférieure à 2 315 euros 4,1 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 2,315 and below EUR 2,738 | 5.3% | "Supérieure ou égale à 2 315 euros et inférieure à 2 738 euros 5,3 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 2,738 and below EUR 3,135 | 7.5% | "Supérieure ou égale à 2 738 euros et inférieure à 3 135 euros 7,5 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 3,135 and below EUR 3,571 | 9.9% | "Supérieure ou égale à 3 135 euros et inférieure à 3 571 euros 9,9 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 3,571 and below EUR 4,019 | 11.9% | "Supérieure ou égale à 3 571 euros et inférieure à 4 019 euros 11,9 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 4,019 and below EUR 4,690 | 13.8% | "Supérieure ou égale à 4 019 euros et inférieure à 4 690 euros 13,8 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 4,690 and below EUR 5,624 | 15.8% | "Supérieure ou égale à 4 690 euros et inférieure à 5 624 euros 15,8 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 5,624 and below EUR 7,037 | 17.9% | "Supérieure ou égale à 5 624 euros et inférieure à 7 037 euros 17,9 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 7,037 and below EUR 8,789 | 20% | "Supérieure ou égale à 7 037 euros et inférieure à 8 789 euros 20 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 8,789 and below EUR 12,200 | 24% | "Supérieure ou égale à 8 789 euros et inférieure à 12 200 euros 24 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 12,200 and below EUR 16,523 | 28% | "Supérieure ou égale à 12 200 euros et inférieure à 16 523 euros 28 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 16,523 and below EUR 25,937 | 33% | "Supérieure ou égale à 16 523 euros et inférieure à 25 937 euros 33 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 25,937 and below EUR 55,558 | 38% | "Supérieure ou égale à 25 937 euros et inférieure à 55 558 euros 38 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| EUR 55,558 and above | 43% | "Supérieure ou égale à 55 558 euros 43 %" https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
+| Monthly withholding base | Default rate | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
+| Below EUR 1,635 | 0% | "Inférieure à 1 635 euros 0 %" | same |
+| EUR 1,635 and below EUR 1,698 | 0.5% | "Supérieure ou égale à 1 635 euros et inférieure à 1 698 euros 0,5 %" | same |
+| EUR 1,698 and below EUR 1,807 | 1.3% | "Supérieure ou égale à 1 698 euros et inférieure à 1 807 euros 1,3 %" | same |
+| EUR 1,807 and below EUR 1,928 | 2.1% | "Supérieure ou égale à 1 807 euros et inférieure à 1 928 euros 2,1 %" | same |
+| EUR 1,928 and below EUR 2,060 | 2.9% | "Supérieure ou égale à 1 928 euros et inférieure à 2 060 euros 2,9 %" | same |
+| EUR 2,060 and below EUR 2,170 | 3.5% | "Supérieure ou égale à 2 060 euros et inférieure à 2 170 euros 3,5 %" | same |
+| EUR 2,170 and below EUR 2,315 | 4.1% | "Supérieure ou égale à 2 170 euros et inférieure à 2 315 euros 4,1 %" | same |
+| EUR 2,315 and below EUR 2,738 | 5.3% | "Supérieure ou égale à 2 315 euros et inférieure à 2 738 euros 5,3 %" | same |
+| EUR 2,738 and below EUR 3,135 | 7.5% | "Supérieure ou égale à 2 738 euros et inférieure à 3 135 euros 7,5 %" | same |
+| EUR 3,135 and below EUR 3,571 | 9.9% | "Supérieure ou égale à 3 135 euros et inférieure à 3 571 euros 9,9 %" | same |
+| EUR 3,571 and below EUR 4,019 | 11.9% | "Supérieure ou égale à 3 571 euros et inférieure à 4 019 euros 11,9 %" | same |
+| EUR 4,019 and below EUR 4,690 | 13.8% | "Supérieure ou égale à 4 019 euros et inférieure à 4 690 euros 13,8 %" | same |
+| EUR 4,690 and below EUR 5,624 | 15.8% | "Supérieure ou égale à 4 690 euros et inférieure à 5 624 euros 15,8 %" | same |
+| EUR 5,624 and below EUR 7,037 | 17.9% | "Supérieure ou égale à 5 624 euros et inférieure à 7 037 euros 17,9 %" | same |
+| EUR 7,037 and below EUR 8,789 | 20% | "Supérieure ou égale à 7 037 euros et inférieure à 8 789 euros 20 %" | same |
+| EUR 8,789 and below EUR 12,200 | 24% | "Supérieure ou égale à 8 789 euros et inférieure à 12 200 euros 24 %" | same |
+| EUR 12,200 and below EUR 16,523 | 28% | "Supérieure ou égale à 12 200 euros et inférieure à 16 523 euros 28 %" | same |
+| EUR 16,523 and below EUR 25,937 | 33% | "Supérieure ou égale à 16 523 euros et inférieure à 25 937 euros 33 %" | same |
+| EUR 25,937 and below EUR 55,558 | 38% | "Supérieure ou égale à 25 937 euros et inférieure à 55 558 euros 38 %" | same |
+| EUR 55,558 and above | 43% | "Supérieure ou égale à 55 558 euros 43 %" | same |
 
 Guadeloupe, La Reunion and Martinique have their own grid, and Guyane and Mayotte a third grid. Both are on the same page as the table above. Do not apply the mainland grid to an employee living in those territories.
 
@@ -145,55 +145,55 @@ The EUR 766 allowance applies only when no personal PAS rate has been transmitte
 
 ### URSSAF Contributions (Employee Share)
 
-| Contribution | Employee rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Vieillesse deplafonnee (old age, uncapped) | 0.40% | Total gross. "Assurance vieillesse 0,40 % sur la totalité et 6,90 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Vieillesse plafonnee (old age, capped) | 6.90% | Up to the monthly ceiling. "0,40 % sur la totalité et 6,90 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| CSG non imposable (deductible from taxable pay) | 6.80% | "CSG non imposable 6,80 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| CSG imposable (not deductible) | 2.40% | "CSG imposable 2,40 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| CRDS | 0.50% | "CRDS 0,50 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Extra employee health contribution, Haut-Rhin, Bas-Rhin and Moselle only | 1.30% | "Moselle 1,30 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Contribution | Employee rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Vieillesse deplafonnee (old age, uncapped) | 0.40% | Total gross. "Assurance vieillesse 0,40 % sur la totalité et 6,90 % dans la limite du plafond" | same |
+| Vieillesse plafonnee (old age, capped) | 6.90% | Up to the monthly ceiling. "0,40 % sur la totalité et 6,90 % dans la limite du plafond" | same |
+| CSG non imposable (deductible from taxable pay) | 6.80% | "CSG non imposable 6,80 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" | same |
+| CSG imposable (not deductible) | 2.40% | "CSG imposable 2,40 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" | same |
+| CRDS | 0.50% | "CRDS 0,50 % sur 98,25 % du salaire brut dans la limite de 192 240 € en 2026" | same |
+| Extra employee health contribution, Haut-Rhin, Bas-Rhin and Moselle only | 1.30% | "Moselle 1,30 %" | same |
 
 The employee table on that page carries no general health contribution and no unemployment contribution. Do not enter a rate for either.
 
 **The CSG and CRDS base**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| CSG rate on earned income, the two employee lines added by the page | 9.20% | "ce taux est de : 9,20 % pour la CSG ; 0,50 % pour la CRDS" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| CRDS rate on earned income | 0.50% | "9,20 % pour la CSG ; 0,50 % pour la CRDS" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| Allowance for professional costs taken off the base | 1.75% | "elle est généralement réduite de 1,75 % au titre des frais professionnels" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| Share of earned income that is therefore charged | 98.25% | "les CSG-CRDS sont calculées sur 98,25 % des revenus d’activité" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| Limit beyond which the allowance stops | Four annual social security ceilings. The amount is in the employee table above | "La réduction de 1,75 % ne s’applique toutefois que dans la limite de 4 plafonds annuels de la Sécurité sociale" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
-| Employee health contribution where the person is not tax resident in France but is in the French health scheme | 5.50% | "Cette cotisation, au taux de 5,50 %, est à déclarer" https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
+| Item | Value | Note | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html |
+| CSG rate on earned income, the two employee lines added by the page | 9.20% | "ce taux est de : 9,20 % pour la CSG ; 0,50 % pour la CRDS" | same |
+| CRDS rate on earned income | 0.50% | "9,20 % pour la CSG ; 0,50 % pour la CRDS" | same |
+| Allowance for professional costs taken off the base | 1.75% | "elle est généralement réduite de 1,75 % au titre des frais professionnels" | same |
+| Share of earned income that is therefore charged | 98.25% | "les CSG-CRDS sont calculées sur 98,25 % des revenus d’activité" | same |
+| Limit beyond which the allowance stops | Four annual social security ceilings. The amount is in the employee table above | "La réduction de 1,75 % ne s’applique toutefois que dans la limite de 4 plafonds annuels de la Sécurité sociale" | same |
+| Employee health contribution where the person is not tax resident in France but is in the French health scheme | 5.50% | "Cette cotisation, au taux de 5,50 %, est à déclarer" | same |
 
 Conditions that change the answer. The allowance is taken off only up to four annual ceilings; above that the charge is on the whole amount. The employer's contribution to the company health cover is itself charged to CSG and CRDS with no allowance. The charges are due only where the person is resident in France for income tax **and** is covered by a compulsory French health scheme: if only the health test is met, the charges are not due and an employee health contribution is due instead, at the rate in the table above.
 
 ### AGIRC-ARRCO (Supplementary Pension: Employee Share)
 
-| Contribution | Employee rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Retraite complementaire, tranche 1 | 3.15% | Annual pay up to EUR 48,060. "7,87 % (part salariale : 3,15 % / part patronale : 4,72 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Retraite complementaire, tranche 2 | 8.64% | Annual pay between EUR 48,060 and EUR 384,480. "21,59 % (part salariale : 8,64 % / part patronale : 12,95 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Combined rate, tranche 1 | 7.87% | "7,87 % (part salariale : 3,15 % / part patronale : 4,72 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Combined rate, tranche 2 | 21.59% | "21,59 % (part salariale : 8,64 % / part patronale : 12,95 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Rate used to buy pension points, tranche 1 | 6.20% | "Tranche 1 : jusqu'à 48 060 € 6,20 % 20,1877 €" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Rate used to buy pension points, tranche 2 | 17% | "Tranche 2 : entre 48 060 € et 384 480 € 17 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
-| Price of one pension point in 2026 | EUR 20.1877 | "6,20 % 20,1877 €" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
+| Contribution | Employee rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
+| Retraite complementaire, tranche 1 | 3.15% | Annual pay up to EUR 48,060. "7,87 % (part salariale : 3,15 % / part patronale : 4,72 % )" | same |
+| Retraite complementaire, tranche 2 | 8.64% | Annual pay between EUR 48,060 and EUR 384,480. "21,59 % (part salariale : 8,64 % / part patronale : 12,95 % )" | same |
+| Combined rate, tranche 1 | 7.87% | "7,87 % (part salariale : 3,15 % / part patronale : 4,72 % )" | same |
+| Combined rate, tranche 2 | 21.59% | "21,59 % (part salariale : 8,64 % / part patronale : 12,95 % )" | same |
+| Rate used to buy pension points, tranche 1 | 6.20% | "Tranche 1 : jusqu'à 48 060 € 6,20 % 20,1877 €" | same |
+| Rate used to buy pension points, tranche 2 | 17% | "Tranche 2 : entre 48 060 € et 384 480 € 17 %" | same |
+| Price of one pension point in 2026 | EUR 20.1877 | "6,20 % 20,1877 €" | same |
 
 The rate charged and the rate that buys points are different rates. Points are bought at the point rates in the table, not at the contribution rates: the difference funds the scheme and buys nothing. Tranche 2 stops at the ceiling in the table, which is eight annual ceilings.
 
 **CEG and CET (employee share)**
 
-| Contribution | Employee rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CEG, tranche 1 | 0.86% | "Contribution d'équilibre générale (CEG) tranche 1 (3) 0,86 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CEG, tranche 2 | 1.08% | "CEG tranche 2 : 1,08 % part salariale et 1,62 % en part patronale" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CET | 0.14% | "Part salariale à 0,14 % et part patronale à 0,21 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
+| Contribution | Employee rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
+| CEG, tranche 1 | 0.86% | "Contribution d'équilibre générale (CEG) tranche 1 (3) 0,86 % dans la limite du plafond" | same |
+| CEG, tranche 2 | 1.08% | "CEG tranche 2 : 1,08 % part salariale et 1,62 % en part patronale" | same |
+| CET | 0.14% | "Part salariale à 0,14 % et part patronale à 0,21 %" | same |
 
 The CET condition is easy to get wrong. The page says the CET applies to every employee whose pay is above the social security ceiling, and that it is charged from the first euro, not only on the slice above the ceiling. The page that prints these three rates is the Urssaf rates page for household employers; the general CEG tranche 1 employee rate is confirmed on the Urssaf page for the overtime relief, at https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html
 
@@ -207,13 +207,13 @@ No official page prints a single total for employee deductions, so this skill do
 
 **Relief on overtime (employee share)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| Reduction of employee old-age contributions on overtime and complementary hours, capped | 11.31% | "dans la limite de 11,31 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| Employee old-age contributions inside that cap | 7.30% | "7,30 % (cotisations salariales vieillesse dont 0,40 % sur la totalité de la rémunération et 6,90 % dans la limite du plafond)" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| Agirc-Arrco tranche 1 employee contribution inside that cap | 3.15% | "3,15 % (cotisations salariales de retraite complémentaire sur la tranche 1 (= plafond))" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| CEG tranche 1 employee contribution inside that cap | 0.86% | "0,86 % (contribution d’équilibre général (CEG) sur la tranche 1 (= plafond))" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
+| Item | Value | Note | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
+| Reduction of employee old-age contributions on overtime and complementary hours, capped | 11.31% | "dans la limite de 11,31 %" | same |
+| Employee old-age contributions inside that cap | 7.30% | "7,30 % (cotisations salariales vieillesse dont 0,40 % sur la totalité de la rémunération et 6,90 % dans la limite du plafond)" | same |
+| Agirc-Arrco tranche 1 employee contribution inside that cap | 3.15% | "3,15 % (cotisations salariales de retraite complémentaire sur la tranche 1 (= plafond))" | same |
+| CEG tranche 1 employee contribution inside that cap | 0.86% | "0,86 % (contribution d’équilibre général (CEG) sur la tranche 1 (= plafond))" | same |
 
 The relief is a reduction of the employee's old-age contributions on the overtime pay only. It is not an exemption from CSG or CRDS. The reduction must appear on the payslip. Apply eligible overtime/complementary pay × min(the employee’s actually due mandatory legal/conventional old-age contribution rate,11.31%);11.31% is a cap, not every employee’s rate. Eligibility requires legal/conventional working-time compliance, no substitution for suppressed remuneration unless twelve months elapsed, and no complete replacement of the overtime pay by compensatory rest.
 
@@ -221,29 +221,29 @@ The relief is a reduction of the employee's old-age contributions on the overtim
 
 ### URSSAF Contributions (Employer Share)
 
-| Contribution | Employer rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Maladie, maternite, invalidite, deces, full rate | 13% | Total gross. "Taux réduit à 7 % Taux plein à 13 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Maladie, reduced rate, only in the cases in the note below the table | 7% | "Taux réduit à 7 % Taux plein à 13 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Pay condition for the reduced 7% maladie rate, where the employer qualifies at all, on https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html | Annual pay at or below 2.5 times the Smic in force on 31 December 2023, a frozen Smic, not the current one | "le taux de la cotisation d’assurance maladie sera de 7 % si la rémunération annuelle du salarié est inférieure ou égale à 2,5 fois le Smic en vigueur au 31/12/2023" |
-| Contribution solidarite autonomie (CSA) | 0.30% | Total gross. "Contribution solidarité autonomie (CSA) 0,30 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Vieillesse deplafonnee | 2.11% | Total gross. "Assurance vieillesse 2,11 % sur la totalité et 8,55 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Vieillesse plafonnee | 8.55% | Up to the monthly ceiling. "2,11 % sur la totalité et 8,55 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Allocations familiales, full rate | 5.25% | Total gross. "Allocations familiales Taux réduit à 3,45 % Taux plein à 5,25 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Allocations familiales, reduced rate, only in the cases in the note below the table | 3.45% | "Taux réduit à 3,45 % Taux plein à 5,25 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Pay condition for the reduced 3.45% allocations familiales rate, where the employer qualifies at all, on https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html | Annual pay at or below 3.5 times the Smic in force on 31 December 2023, a frozen Smic, not the current one | "le taux de la cotisation d’allocations familiales sera de 3,45 % si la rémunération annuelle du salarié est inférieure ou égale à 3,5 fois le Smic en vigueur au 31/12/2023" |
-| Contribution au dialogue social | 0.016% | Total gross. "Contribution au dialogue social 0,016 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Fnal, employer with fewer than 50 employees | 0.10% | Up to the monthly ceiling. "Fnal (effectif de moins de 50 salariés) 0,10 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Fnal, employer with 50 employees or more | 0.50% | Total gross. "Fnal (effectif de 50 salariés et plus) 0,50 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Contribution formation professionnelle, fewer than 11 employees | 0.55% | "Pour une entreprise de moins de 11 salariés : 0,55 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Contribution formation professionnelle, 11 employees or more | 1% | "Pour une entreprise de 11 salariés et plus : 1 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Contribution CPF-CDD, on fixed-term contract pay | 1% | "Contribution CPF-CDD 1 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Taxe d'apprentissage, main part | 0.59% | "Taxe d'apprentissage Part principale à 0,59 % Solde à 0,09 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Taxe d'apprentissage, balance | 0.09% | "Part principale à 0,59 % Solde à 0,09 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Taxe d'apprentissage, establishments in Haut-Rhin, Bas-Rhin and Moselle, main part, no balance due | 0.44% | "Part principale à 0,44 % Solde - Néant" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Accident du travail (AT/MP) | Rate notified to the employer by the Carsat | "Accident du travail Taux notifié par la Carsat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Versement mobilite, employer with 11 employees or more | Rate set locally, look it up with the Urssaf search tool | "Versement mobilité (effectif de 11 salariés et plus)" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Contribution | Employer rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Maladie, maternite, invalidite, deces, full rate | 13% | Total gross. "Taux réduit à 7 % Taux plein à 13 %" | same |
+| Maladie, reduced rate, only in the cases in the note below the table | 7% | "Taux réduit à 7 % Taux plein à 13 %" | same |
+| Pay condition for the reduced 7% maladie rate, where the employer qualifies at all, on https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html | Annual pay at or below 2.5 times the Smic in force on 31 December 2023, a frozen Smic, not the current one | "le taux de la cotisation d’assurance maladie sera de 7 % si la rémunération annuelle du salarié est inférieure ou égale à 2,5 fois le Smic en vigueur au 31/12/2023" |  |
+| Contribution solidarite autonomie (CSA) | 0.30% | Total gross. "Contribution solidarité autonomie (CSA) 0,30 %" | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Vieillesse deplafonnee | 2.11% | Total gross. "Assurance vieillesse 2,11 % sur la totalité et 8,55 % dans la limite du plafond" | same |
+| Vieillesse plafonnee | 8.55% | Up to the monthly ceiling. "2,11 % sur la totalité et 8,55 % dans la limite du plafond" | same |
+| Allocations familiales, full rate | 5.25% | Total gross. "Allocations familiales Taux réduit à 3,45 % Taux plein à 5,25 %" | same |
+| Allocations familiales, reduced rate, only in the cases in the note below the table | 3.45% | "Taux réduit à 3,45 % Taux plein à 5,25 %" | same |
+| Pay condition for the reduced 3.45% allocations familiales rate, where the employer qualifies at all, on https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html | Annual pay at or below 3.5 times the Smic in force on 31 December 2023, a frozen Smic, not the current one | "le taux de la cotisation d’allocations familiales sera de 3,45 % si la rémunération annuelle du salarié est inférieure ou égale à 3,5 fois le Smic en vigueur au 31/12/2023" |  |
+| Contribution au dialogue social | 0.016% | Total gross. "Contribution au dialogue social 0,016 %" | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Fnal, employer with fewer than 50 employees | 0.10% | Up to the monthly ceiling. "Fnal (effectif de moins de 50 salariés) 0,10 % dans la limite du plafond" | same |
+| Fnal, employer with 50 employees or more | 0.50% | Total gross. "Fnal (effectif de 50 salariés et plus) 0,50 %" | same |
+| Contribution formation professionnelle, fewer than 11 employees | 0.55% | "Pour une entreprise de moins de 11 salariés : 0,55 %" | same |
+| Contribution formation professionnelle, 11 employees or more | 1% | "Pour une entreprise de 11 salariés et plus : 1 %" | same |
+| Contribution CPF-CDD, on fixed-term contract pay | 1% | "Contribution CPF-CDD 1 %" | same |
+| Taxe d'apprentissage, main part | 0.59% | "Taxe d'apprentissage Part principale à 0,59 % Solde à 0,09 %" | same |
+| Taxe d'apprentissage, balance | 0.09% | "Part principale à 0,59 % Solde à 0,09 %" | same |
+| Taxe d'apprentissage, establishments in Haut-Rhin, Bas-Rhin and Moselle, main part, no balance due | 0.44% | "Part principale à 0,44 % Solde - Néant" | same |
+| Accident du travail (AT/MP) | Rate notified to the employer by the Carsat | "Accident du travail Taux notifié par la Carsat" | same |
+| Versement mobilite, employer with 11 employees or more | Rate set locally, look it up with the Urssaf search tool | "Versement mobilité (effectif de 11 salariés et plus)" | same |
 
 There is no published national range for the AT/MP rate. Use the rate on the Carsat notification for the establishment and nothing else.
 
@@ -253,26 +253,26 @@ There is no published national range for the AT/MP rate. Use the rate on the Car
 
 New for 2026 and the largest single item in French employer cost. The old degressive relief and the reduced maladie and allocations familiales rates were merged into one relief.
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below unless a row names another page | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Pay ceiling for eligibility, at the Smic in force on 1 January 2026 | 3 Smic | "a une rémunération inférieure : à 3 Smic applicable au 1 er janvier 2026" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Same ceiling expressed against the Smic in force on 1 June 2026 | 2.9293 Smic | "(ou 2,9293 Smic applicable au 1 er juin 2026)" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Smic value that governs the 2026 coefficient, mainland and overseas departments other than Mayotte | The Smic in force on 1 January 2026 | "En 2026, la valeur du Smic à prendre en compte est celle en vigueur au 1 er janvier 2026" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Official worked example: employer with 70 employees, June 2026, full-time 35 hours, no overtime, monthly gross pay EUR 2,000 | Coefficient 0.3178 | "une rémunération mensuelle brute de 2 000 €, la valeur maximale du coefficient de réduction générale est de 0,3178" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Pay ceiling in Mayotte | 1.6 Smic | "à 1,6 Smic applicable à Mayotte en 2026" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| What the Urssaf 2026-news page (informations-nouvelle-annee.html) says the 3-Smic ceiling replaced | 1.6 Smic, the pre-2026 figure | "qui sont inférieurs à 3 Smic en vigueur au lieu de 1,6 Smic auparavant" https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html |
-| What entreprendre.service-public.fr F559, Vérifié le 01 juin 2026, still prints for the general relief | Below 1.6 Smic, EUR 2,987.23 | "Allègements généraux dont bénéficient les employeurs au titre des salariés dont les rémunérations brutes sont inférieures à 1,6 Smic ( 2 987,23 € )" https://entreprendre.service-public.gouv.fr/vosdroits/F559 |
-| What the same F559 page prints for the allocations familiales rate reduction, measured against the current Smic rather than the frozen Smic that governs the rate in Section 4 | Below 3.5 Smic, EUR 6,534.56, which is 3.5 times the June 2026 Smic | "Réduction du taux de cotisations allocations familiales, dont bénéficient les employeurs au titre des salariés dont les rémunérations brutes sont inférieures à 3,5 Smic ( 6 534,56 € )" https://entreprendre.service-public.gouv.fr/vosdroits/F559 |
-| Maladie rate covered by the relief | 13.00% | "d’assurances sociales (maladie, maternité, invalidité, décès) au taux de 13,00 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Vieillesse rate covered | 10.66% | "de vieillesse au taux de 10,66 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Allocations familiales rate covered | 5.25% | "d’allocations familiales au taux de 5,25 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| AT/MP rate covered, capped at the pooled part | 0.49% | "pour sa partie mutualisée au taux de 0,49 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Agirc-Arrco rate covered | 6.01% | "de retraite complémentaire légalement obligatoire (Agirc-Arrco) au taux de 6,01 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Fnal rate covered, employer with fewer than 50 employees | 0.10% | "de fonds national d’aide au logement (Fnal) au taux de 0,10 % pour les entreprises de moins de 50 salariés" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Fnal rate covered, employer with 50 employees or more | 0.50% | "ou 0,50 % pour les entreprises de 50 salariés et plus ; de solidarité pour l’autonomie" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| CSA rate covered | 0.30% | "de solidarité pour l’autonomie (CSA) au taux de 0,30 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
-| Unemployment rate covered | 4.00% | "d’assurance chômage au taux de 4,00 %" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below unless a row names another page |  | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
+| Pay ceiling for eligibility, at the Smic in force on 1 January 2026 | 3 Smic | "a une rémunération inférieure : à 3 Smic applicable au 1 er janvier 2026" | same |
+| Same ceiling expressed against the Smic in force on 1 June 2026 | 2.9293 Smic | "(ou 2,9293 Smic applicable au 1 er juin 2026)" | same |
+| Smic value that governs the 2026 coefficient, mainland and overseas departments other than Mayotte | The Smic in force on 1 January 2026 | "En 2026, la valeur du Smic à prendre en compte est celle en vigueur au 1 er janvier 2026" | same |
+| Official worked example: employer with 70 employees, June 2026, full-time 35 hours, no overtime, monthly gross pay EUR 2,000 | Coefficient 0.3178 | "une rémunération mensuelle brute de 2 000 €, la valeur maximale du coefficient de réduction générale est de 0,3178" | same |
+| Pay ceiling in Mayotte | 1.6 Smic | "à 1,6 Smic applicable à Mayotte en 2026" | same |
+| What the Urssaf 2026-news page (informations-nouvelle-annee.html) says the 3-Smic ceiling replaced | 1.6 Smic, the pre-2026 figure | "qui sont inférieurs à 3 Smic en vigueur au lieu de 1,6 Smic auparavant" | https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html |
+| What entreprendre.service-public.fr F559, Vérifié le 01 juin 2026, still prints for the general relief | Below 1.6 Smic, EUR 2,987.23 | "Allègements généraux dont bénéficient les employeurs au titre des salariés dont les rémunérations brutes sont inférieures à 1,6 Smic ( 2 987,23 € )" | https://entreprendre.service-public.gouv.fr/vosdroits/F559 |
+| What the same F559 page prints for the allocations familiales rate reduction, measured against the current Smic rather than the frozen Smic that governs the rate in Section 4 | Below 3.5 Smic, EUR 6,534.56, which is 3.5 times the June 2026 Smic | "Réduction du taux de cotisations allocations familiales, dont bénéficient les employeurs au titre des salariés dont les rémunérations brutes sont inférieures à 3,5 Smic ( 6 534,56 € )" | same |
+| Maladie rate covered by the relief | 13.00% | "d’assurances sociales (maladie, maternité, invalidité, décès) au taux de 13,00 %" | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html |
+| Vieillesse rate covered | 10.66% | "de vieillesse au taux de 10,66 %" | same |
+| Allocations familiales rate covered | 5.25% | "d’allocations familiales au taux de 5,25 %" | same |
+| AT/MP rate covered, capped at the pooled part | 0.49% | "pour sa partie mutualisée au taux de 0,49 %" | same |
+| Agirc-Arrco rate covered | 6.01% | "de retraite complémentaire légalement obligatoire (Agirc-Arrco) au taux de 6,01 %" | same |
+| Fnal rate covered, employer with fewer than 50 employees | 0.10% | "de fonds national d’aide au logement (Fnal) au taux de 0,10 % pour les entreprises de moins de 50 salariés" | same |
+| Fnal rate covered, employer with 50 employees or more | 0.50% | "ou 0,50 % pour les entreprises de 50 salariés et plus ; de solidarité pour l’autonomie" | same |
+| CSA rate covered | 0.30% | "de solidarité pour l’autonomie (CSA) au taux de 0,30 %" | same |
+| Unemployment rate covered | 4.00% | "d’assurance chômage au taux de 4,00 %" | same |
 
 Two official pages give different ceilings for the general relief. entreprendre.service-public.gouv.fr/vosdroits/F559, Vérifié le 01 juin 2026, still prints 1.6 Smic and EUR 2,987.23. The Urssaf relief and 2026 news pages give 3 Smic, and the news page says the 3 Smic figure replaced 1.6 Smic. Both are in the table above. The Urssaf pages are the ones that describe the 2026 reform by name, but do not treat that as settled without checking the client's own Urssaf account.
 
@@ -308,14 +308,14 @@ From 1 January 2026 the old headcount limit for this deduction was removed, so e
 | Retraite complementaire, tranche 1 | 4.72% | Annual pay up to EUR 48,060. "7,87 % (part salariale : 3,15 % / part patronale : 4,72 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
 | Retraite complementaire, tranche 2 | 12.95% | Annual pay between EUR 48,060 and EUR 384,480. "21,59 % (part salariale : 8,64 % / part patronale : 12,95 % )" https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 |
 
-| Contribution | Employer rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CEG, tranche 1 | 1.29% | "Contribution d'équilibre générale (CEG) tranche 1 (3) 1,29 % dans la limite du plafond" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CEG, tranche 2 | 1.62% | "CEG tranche 2 : 1,08 % part salariale et 1,62 % en part patronale" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| CET | 0.21% | "Part salariale à 0,14 % et part patronale à 0,21 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
-| Employer share of the Agirc-Arrco contribution, on https://entreprendre.service-public.gouv.fr/vosdroits/F24013 | 60% | "60 % par l'employeur et 40 % par le salarié" |
-| Employee share of the Agirc-Arrco contribution, on https://entreprendre.service-public.gouv.fr/vosdroits/F24013 | 40% | "60 % par l'employeur et 40 % par le salarié" |
+| Contribution | Employer rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html |
+| CEG, tranche 1 | 1.29% | "Contribution d'équilibre générale (CEG) tranche 1 (3) 1,29 % dans la limite du plafond" | same |
+| CEG, tranche 2 | 1.62% | "CEG tranche 2 : 1,08 % part salariale et 1,62 % en part patronale" | same |
+| CET | 0.21% | "Part salariale à 0,14 % et part patronale à 0,21 %" | same |
+| Employer share of the Agirc-Arrco contribution, on https://entreprendre.service-public.gouv.fr/vosdroits/F24013 | 60% | "60 % par l'employeur et 40 % par le salarié" |  |
+| Employee share of the Agirc-Arrco contribution, on https://entreprendre.service-public.gouv.fr/vosdroits/F24013 | 40% | "60 % par l'employeur et 40 % par le salarié" |  |
 
 The same warning as on the employee table applies here. The only allowed page that prints the employer CEG tranche 2 and CET rates is the Urssaf rates page for household employers, in a footnote that states the Agirc-Arrco rules generally. The private-sector rates page prints neither. Confirm the tranche 2 and CET rates against the Agirc-Arrco circular before signing. The 60/40 Agirc-Arrco employer/employee split is confirmed separately, for all private-sector employees and not just household employees, on entreprendre.service-public.gouv.fr/vosdroits/F24013, which is a better source for that split than the household-employer page.
 
@@ -323,13 +323,13 @@ Apec is also due on cadres’ salary up to four social-security ceilings: 0.06% 
 
 ### Unemployment and Other Employer-Only
 
-| Contribution | Employer rate | Base and page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Assurance chomage | 4.00% | "Contribution assurance chômage 4,00 % dans la limite de 192 240 € en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| Annual pay ceiling for the unemployment and AGS contributions | EUR 192,240 | "dans la limite de 192 240 € en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| AGS | 0.25% | "Dans la limite de 192 240 € en 2026 : 0,25 %" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
-| AGS, temporary work agencies | 0.03% | "0,03 % pour les entreprises de travail temporaire" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Contribution | Employer rate | Base and page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html |
+| Assurance chomage | 4.00% | "Contribution assurance chômage 4,00 % dans la limite de 192 240 € en 2026" | same |
+| Annual pay ceiling for the unemployment and AGS contributions | EUR 192,240 | "dans la limite de 192 240 € en 2026" | same |
+| AGS | 0.25% | "Dans la limite de 192 240 € en 2026 : 0,25 %" | same |
+| AGS, temporary work agencies | 0.03% | "0,03 % pour les entreprises de travail temporaire" | same |
 
 | Contribution | Employer rate | Page wording |
 | --- | --- | --- |
@@ -348,15 +348,15 @@ No official page prints a single percentage for total employer cost, so this ski
 
 The minimum wage changed inside the year. Use the value in force on the day the work was done.
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross hourly, 1 January 2026 to 31 May 2026 | EUR 12.02 | "Smic horaire brut 12,02 € 12,31 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross monthly on a 35 hour week, 1 January 2026 to 31 May 2026 | EUR 1,823.03 | "Du 1 er janvier 2026 au 31 mai 2026 Smic horaire brut 12,02 € Smic brut mensuel (base 35 heures par semaine) 1 823,03 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross hourly from 1 June 2026 | EUR 12.31 | "Smic horaire brut 12,02 € 12,31 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross monthly on a 35 hour week from 1 June 2026 | EUR 1,867.02 | "Au 1 er juin 2026 Smic horaire brut 12,31 € Smic brut mensuel (base 35 heures par semaine) 1 867,02 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross hourly from 1 June 2026, employee aged 17 to 18 without six months in the trade | EUR 11.08 | "Smic horaire brut 10,82 € 11,08 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
-| Gross hourly from 1 June 2026, employee under 17 without six months in the trade | EUR 9.85 | "Smic horaire brut 9,62 € 9,85 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html |
+| Gross hourly, 1 January 2026 to 31 May 2026 | EUR 12.02 | "Smic horaire brut 12,02 € 12,31 €" | same |
+| Gross monthly on a 35 hour week, 1 January 2026 to 31 May 2026 | EUR 1,823.03 | "Du 1 er janvier 2026 au 31 mai 2026 Smic horaire brut 12,02 € Smic brut mensuel (base 35 heures par semaine) 1 823,03 €" | same |
+| Gross hourly from 1 June 2026 | EUR 12.31 | "Smic horaire brut 12,02 € 12,31 €" | same |
+| Gross monthly on a 35 hour week from 1 June 2026 | EUR 1,867.02 | "Au 1 er juin 2026 Smic horaire brut 12,31 € Smic brut mensuel (base 35 heures par semaine) 1 867,02 €" | same |
+| Gross hourly from 1 June 2026, employee aged 17 to 18 without six months in the trade | EUR 11.08 | "Smic horaire brut 10,82 € 11,08 €" | same |
+| Gross hourly from 1 June 2026, employee under 17 without six months in the trade | EUR 9.85 | "Smic horaire brut 9,62 € 9,85 €" | same |
 
 | Item | Value | Page wording |
 | --- | --- | --- |
@@ -370,26 +370,26 @@ Net monthly pay at the Smic is not published as a figure on any allowed page and
 
 ### Working Hours and Overtime
 
-| Rule | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Legal weekly hours (duree legale) | 35 hours per week | "35 heures par semaine" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Legal monthly hours | 151.67 hours | "151,67 heures par mois" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| Legal annual hours | 1,607 hours | "1 607 heures par an" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Maximum daily working time | 10 hours | "ne doit pas dépasser la durée maximale de 10 heures par jour" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Maximum daily working time under the stated derogation | 12 hours where the collective-agreement derogation covers increased activity or organisational need; other departures require the inspector’s approval or the stated emergency route | "Soit si une convention collective ... le prévoit" / "limitée à 12 heures par jour" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Ordinary maximum in a single week | 48 hours; up to60 only for exceptional circumstances with inspection approval | "Soit 48 heures sur une même semaine" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
-| Ordinary maximum average over 12 consecutive weeks | 44 hours; up to46 over12 consecutive weeks under the stated collective/company agreement or inspection authorisation | "Soit 44 heures par semaine en moyenne sur une période de 12 semaines consécutives" https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
+| Rule | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
+| Legal weekly hours (duree legale) | 35 hours per week | "35 heures par semaine" | same |
+| Legal monthly hours | 151.67 hours | "151,67 heures par mois" | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
+| Legal annual hours | 1,607 hours | "1 607 heures par an" | https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 |
+| Maximum daily working time | 10 hours | "ne doit pas dépasser la durée maximale de 10 heures par jour" | same |
+| Maximum daily working time under the stated derogation | 12 hours where the collective-agreement derogation covers increased activity or organisational need; other departures require the inspector’s approval or the stated emergency route | "Soit si une convention collective ... le prévoit" / "limitée à 12 heures par jour" | same |
+| Ordinary maximum in a single week | 48 hours; up to60 only for exceptional circumstances with inspection approval | "Soit 48 heures sur une même semaine" | same |
+| Ordinary maximum average over 12 consecutive weeks | 44 hours; up to46 over12 consecutive weeks under the stated collective/company agreement or inspection authorisation | "Soit 44 heures par semaine en moyenne sur une période de 12 semaines consécutives" | same |
 
-| Rule | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
-| Overtime premium, first 8 overtime hours in the week, 36th to 43rd hour, where no collective agreement sets a rate | 25% | "25 % pour les 8 premières heures supplémentaires travaillées dans la même semaine (de la 36 e à la 43 e heure)" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
-| Overtime premium, hours after that, from the 44th hour, where no collective agreement sets a rate | 50% | "50 % pour les heures suivantes (à partir de la 44 e heure)" https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
-| Floor for any premium rate set by a collective agreement | 10% | "Chaque taux est au minimum fixé à 10 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
-| Part-time complementary hours, within one tenth of the contract hours | 10% | "Soit 10 % pour chaque heure complémentaire accomplie dans la limite de 1/10 e" https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
-| Part-time complementary hours, beyond one tenth | 25% | "Soit 25 % pour chaque heure accomplie au-delà de 1/10 e" https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
-| Annual overtime quota where no collective agreement sets one | 220 hours | "le nombre maximal d'heures supplémentaires est de 220 heures par salarié et par an" https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
+| Rule | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
+| Overtime premium, first 8 overtime hours in the week, 36th to 43rd hour, where no collective agreement sets a rate | 25% | "25 % pour les 8 premières heures supplémentaires travaillées dans la même semaine (de la 36 e à la 43 e heure)" | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html |
+| Overtime premium, hours after that, from the 44th hour, where no collective agreement sets a rate | 50% | "50 % pour les heures suivantes (à partir de la 44 e heure)" | https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 |
+| Floor for any premium rate set by a collective agreement | 10% | "Chaque taux est au minimum fixé à 10 %" | same |
+| Part-time complementary hours, within one tenth of the contract hours | 10% | "Soit 10 % pour chaque heure complémentaire accomplie dans la limite de 1/10 e" | same |
+| Part-time complementary hours, beyond one tenth | 25% | "Soit 25 % pour chaque heure accomplie au-delà de 1/10 e" | same |
+| Annual overtime quota where no collective agreement sets one | 220 hours | "le nombre maximal d'heures supplémentaires est de 220 heures par salarié et par an" | same |
 
 Conditions that change the answer. The premiums above are the fallback. Where a collective agreement, a company agreement or an extended branch agreement sets rates, those rates apply and only the floor above binds them. Overtime is counted by calendar week. Where working time is counted by the week or over two weeks, paid leave taken in that period counts as time worked for the overtime count, so the hours the employee would have worked count towards the threshold. Pay for overtime can be replaced in whole or in part by equivalent compensatory rest, and the rest must equal the premium-inclusive pay. The annual quota is also set by agreement first, and the figure above applies only where none of the three kinds of agreement exists.
 
@@ -397,29 +397,29 @@ Conditions that change the answer. The premiums above are the fallback. Where a 
 
 ### Congés Payés (Paid Annual Leave)
 
-| Entitlement | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Accrual per month of actual work | 2.5 working days | "ouvre droit à un congé de 2,5 jours ouvrables" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Full year | 30 working days, five weeks | "30 jours ouvrables (5 semaines) pour une année complète de travail" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Accrual during sick leave that is not work related | 2 working days per month, 24 a year | "dans la limite de 2 jours ouvrables par mois (soit 24 jours ouvrables par an)" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Reference period | 1 June of year N-1 to 31 May of year N, unless an agreement sets another | "du 1 er juin de l'année N-1 au 31 mai de l'année N" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Main leave period | 1 May to 31 October | "du 1 er mai au 31 octobre de l'année en cours" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
-| Leave that must be taken in the main period to earn fractionnement days | 12 working days, two weeks | "un congé d'au moins 12 jours ouvrables (soit 2 semaines)" https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
+| Entitlement | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 |
+| Accrual per month of actual work | 2.5 working days | "ouvre droit à un congé de 2,5 jours ouvrables" | same |
+| Full year | 30 working days, five weeks | "30 jours ouvrables (5 semaines) pour une année complète de travail" | same |
+| Accrual during sick leave that is not work related | 2 working days per month, 24 a year | "dans la limite de 2 jours ouvrables par mois (soit 24 jours ouvrables par an)" | same |
+| Reference period | 1 June of year N-1 to 31 May of year N, unless an agreement sets another | "du 1 er juin de l'année N-1 au 31 mai de l'année N" | same |
+| Main leave period | 1 May to 31 October | "du 1 er mai au 31 octobre de l'année en cours" | same |
+| Leave that must be taken in the main period to earn fractionnement days | 12 working days, two weeks | "un congé d'au moins 12 jours ouvrables (soit 2 semaines)" | same |
 
 A part-day of accrued leave is rounded up to the next whole day. The fractionnement rules themselves are set by the collective agreement. If the applicable convention or agreement does not stipulate the rules, Code du travail L3141-23 supplies the fallback: a continuous minimum twelve working days between 1 May and 31 October; for the part of principal leave beyond twelve days taken outside that period, one extra working day for three to five days, or two for at least six. Principal leave above twenty-four working days does not count for that supplement, and an individual agreement may derogate. Source: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000033020705/2026-03-03 .
 
 ### Sick Leave (Arrêt Maladie)
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Daily allowance from the health scheme | 50% of the daily base salary | "Les indemnités journalières (IJ) sont égales à 50 % du salaire journalier de base" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Daily base salary for a monthly paid employee | The last three gross salaries before the stoppage, divided by 91.25 | "au total des 3 derniers salaires bruts perçus avant l'arrêt de travail, divisé par 91,25" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Pay taken into account, capped | 1.4 times the Smic in force on the last day of the month before the stoppage. The page states the 2026 cap as EUR 2,613.82 a month, which is built on the Smic in force from 1 June 2026, so it governs a stoppage beginning on or after 1 July 2026 | "est plafonné à 1,4 fois le montant du Smic en vigueur, lors du dernier jour du mois qui précède l'arrêt (soit 2 613,82 € par mois en 2026)" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Cap for a stoppage that began before 1 April 2025 | 1.8 times the Smic, the old ceiling | "Pour les arrêts ayant débuté avant le 1ᵉʳ avril 2025, l’ancien plafond reste applicable" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Maximum daily allowance using the June-based monthly cap, for a stoppage beginning from 1 July 2026 | EUR 42.97; for an earlier 2026 stoppage recompute from the prior-month Smic gate above | "Les IJ ne peuvent pas dépasser 42,97 € bruts" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
-| Waiting period before the allowance starts | 3 days | "Les IJ sont versées après un délai de carence de 3 jours" https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 |
+| Daily allowance from the health scheme | 50% of the daily base salary | "Les indemnités journalières (IJ) sont égales à 50 % du salaire journalier de base" | same |
+| Daily base salary for a monthly paid employee | The last three gross salaries before the stoppage, divided by 91.25 | "au total des 3 derniers salaires bruts perçus avant l'arrêt de travail, divisé par 91,25" | same |
+| Pay taken into account, capped | 1.4 times the Smic in force on the last day of the month before the stoppage. The page states the 2026 cap as EUR 2,613.82 a month, which is built on the Smic in force from 1 June 2026, so it governs a stoppage beginning on or after 1 July 2026 | "est plafonné à 1,4 fois le montant du Smic en vigueur, lors du dernier jour du mois qui précède l'arrêt (soit 2 613,82 € par mois en 2026)" | same |
+| Cap for a stoppage that began before 1 April 2025 | 1.8 times the Smic, the old ceiling | "Pour les arrêts ayant débuté avant le 1ᵉʳ avril 2025, l’ancien plafond reste applicable" | same |
+| Maximum daily allowance using the June-based monthly cap, for a stoppage beginning from 1 July 2026 | EUR 42.97; for an earlier 2026 stoppage recompute from the prior-month Smic gate above | "Les IJ ne peuvent pas dépasser 42,97 € bruts" | same |
+| Waiting period before the allowance starts | 3 days | "Les IJ sont versées après un délai de carence de 3 jours" | same |
 
 Ordinary sickness IJ entitlement is separate from the amount calculation. For the first six months, CSS R313-3(1) requires either 150 salaried or assimilated hours in the preceding three calendar months or 90 days, or six-month insurance contributions equivalent to those on 1,015 hourly Smic valued at the first day of the reference period; assess at the work-interruption date under R313-1(2). Beyond six continuous months, R313-3(2) requires twelve months of affiliation plus either 600 hours in the preceding twelve months or 365 days, or the stated twelve-month contributions equivalent to 2,030 hourly Smic valued at the 1 January preceding the reference period. Seasonal/discontinuous and other special histories must follow their own source rules. Do not substitute stale fixed-euro thresholds for those statutory Smic gates. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047983348/2026-09-29 .
 
@@ -482,48 +482,48 @@ The cover must meet a minimum basket of care: the whole of the ticket moderateur
 
 These are the pay elements most often mis-entered. A benefit in kind is pay and bears contributions; an expense allowance inside the limit does not. The company-car forfait depends on the date the vehicle was first made available to the employee, not the date of the payroll run: a car handed over before 1 February 2025 and still in use is valued on the older, lower schedule below, not on the newer one, even in a 2026 payroll.
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Meal provided, one meal | EUR 5.50 | "Montant de l'avantage en 2026 1 repas 5,50 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Meal provided, two meals | EUR 11.00 | "2 repas 11,00 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Luncheon voucher, maximum exempt employer share | EUR 7.32 | "Exonération maximale de la part patronale 7,32 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Luncheon voucher face value that carries the maximum exemption, lower end | EUR 12.20 | "Entre 12,20 € et 14,64 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Luncheon voucher face value that carries the maximum exemption, upper end | EUR 14.64 | "Entre 12,20 € et 14,64 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available since 1 February 2025, bought, five years old or less | 15% of the purchase cost | "Véhicule acheté âgé de 5 ans ou moins 15 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 20% of the purchase cost | "15 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 20 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available since 1 February 2025, bought, more than five years old | 10% of the purchase cost | "Véhicule acheté de plus de 5 ans 10 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 15% of the purchase cost | "10 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 15 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available since 1 February 2025, leased | 50% of annual lease, maintenance and insurance costs | "Véhicule loué ou en location avec option d’achat (LOA) 50 % du coût global annuel (location, entretien, assurance)" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 50% of annual lease/maintenance/insurance PLUS actual invoiced private fuel, OR67% of global annual lease/maintenance/insurance plus private AND professional fuel and all related taxes | "50 % du coût global annuel (location, entretien, assurance) + frais réels sur factures de carburant utilisé à des fins personnelles ou 67 % du coût global" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available before 1 February 2025, bought, five years old or less | 9% of the purchase cost | "Véhicule acheté âgé de 5 ans ou moins 9 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 12% of the purchase cost | "9 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 12 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available before 1 February 2025, bought, more than five years old | 6% of the purchase cost | "Véhicule acheté de plus de 5 ans 6 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 9% of the purchase cost | "6 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 9 % du coût d'achat" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Company car, vehicle made available before 1 February 2025, leased | 30% of the yearly total cost | "Véhicule loué ou en location avec option d’achat (LOA) 30 % du coût global annuel TTC (location, entretien, assurance)" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Same car, employer pays the private fuel | 40% of the yearly total cost | "30 % du coût global annuel TTC (location, entretien, assurance) + frais de carburant sur facture o u 4 0 % du coût global" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Leased company car, either schedule, cap | Capped at the hypothetical purchased-car benefit under the applicable schedule. Its reference purchase price is the lessor’s actual VAT-inclusive price, with the discount capped at30% of the manufacturer’s advised price at contract start | "L'avantage évalué pour un véhicule loué est plafonné au montant de l'avantage en nature qui aurait été évalué si l'employeur avait acheté le véhicule" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Electric vehicle, made available since 1 February 2025, meeting the environmental score required for the bonus écologique | 70% reduction of the benefit on the schedule above, the reduction being limited to EUR 4,641.60 a year in 2026 | "Si le véhicule respecte le score environnemental requis pour bénéficier du bonus écologique, vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 70 % sur le montant de l’avantage en nature, dans la limite de 4 641,60 € par an en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Electric vehicle made available before 1 February 2025 | 50% reduction of the benefit on the schedule above, the reduction being limited to EUR 2,026.30 a year in 2026 | "Vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 50 %, dans la limite de 2 026,30 € par an en 2026" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
-| Electric vehicle, either schedule | Electricity the employer pays for is excluded from the benefit-in-kind calculation | "Les frais d'électricité pris en charge par l’employeur n’entrent pas en compte dans le calcul de l’avantage en nature" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html |
+| Meal provided, one meal | EUR 5.50 | "Montant de l'avantage en 2026 1 repas 5,50 €" | same |
+| Meal provided, two meals | EUR 11.00 | "2 repas 11,00 €" | same |
+| Luncheon voucher, maximum exempt employer share | EUR 7.32 | "Exonération maximale de la part patronale 7,32 €" | same |
+| Luncheon voucher face value that carries the maximum exemption, lower end | EUR 12.20 | "Entre 12,20 € et 14,64 €" | same |
+| Luncheon voucher face value that carries the maximum exemption, upper end | EUR 14.64 | "Entre 12,20 € et 14,64 €" | same |
+| Company car, vehicle made available since 1 February 2025, bought, five years old or less | 15% of the purchase cost | "Véhicule acheté âgé de 5 ans ou moins 15 % du coût d'achat" | same |
+| Same car, employer pays the private fuel | 20% of the purchase cost | "15 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 20 % du coût d'achat" | same |
+| Company car, vehicle made available since 1 February 2025, bought, more than five years old | 10% of the purchase cost | "Véhicule acheté de plus de 5 ans 10 % du coût d'achat" | same |
+| Same car, employer pays the private fuel | 15% of the purchase cost | "10 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 15 % du coût d'achat" | same |
+| Company car, vehicle made available since 1 February 2025, leased | 50% of annual lease, maintenance and insurance costs | "Véhicule loué ou en location avec option d’achat (LOA) 50 % du coût global annuel (location, entretien, assurance)" | same |
+| Same car, employer pays the private fuel | 50% of annual lease/maintenance/insurance PLUS actual invoiced private fuel, OR67% of global annual lease/maintenance/insurance plus private AND professional fuel and all related taxes | "50 % du coût global annuel (location, entretien, assurance) + frais réels sur factures de carburant utilisé à des fins personnelles ou 67 % du coût global" | same |
+| Company car, vehicle made available before 1 February 2025, bought, five years old or less | 9% of the purchase cost | "Véhicule acheté âgé de 5 ans ou moins 9 % du coût d'achat" | same |
+| Same car, employer pays the private fuel | 12% of the purchase cost | "9 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 12 % du coût d'achat" | same |
+| Company car, vehicle made available before 1 February 2025, bought, more than five years old | 6% of the purchase cost | "Véhicule acheté de plus de 5 ans 6 % du coût d'achat" | same |
+| Same car, employer pays the private fuel | 9% of the purchase cost | "6 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 9 % du coût d'achat" | same |
+| Company car, vehicle made available before 1 February 2025, leased | 30% of the yearly total cost | "Véhicule loué ou en location avec option d’achat (LOA) 30 % du coût global annuel TTC (location, entretien, assurance)" | same |
+| Same car, employer pays the private fuel | 40% of the yearly total cost | "30 % du coût global annuel TTC (location, entretien, assurance) + frais de carburant sur facture o u 4 0 % du coût global" | same |
+| Leased company car, either schedule, cap | Capped at the hypothetical purchased-car benefit under the applicable schedule. Its reference purchase price is the lessor’s actual VAT-inclusive price, with the discount capped at30% of the manufacturer’s advised price at contract start | "L'avantage évalué pour un véhicule loué est plafonné au montant de l'avantage en nature qui aurait été évalué si l'employeur avait acheté le véhicule" | same |
+| Electric vehicle, made available since 1 February 2025, meeting the environmental score required for the bonus écologique | 70% reduction of the benefit on the schedule above, the reduction being limited to EUR 4,641.60 a year in 2026 | "Si le véhicule respecte le score environnemental requis pour bénéficier du bonus écologique, vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 70 % sur le montant de l’avantage en nature, dans la limite de 4 641,60 € par an en 2026" | same |
+| Electric vehicle made available before 1 February 2025 | 50% reduction of the benefit on the schedule above, the reduction being limited to EUR 2,026.30 a year in 2026 | "Vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 50 %, dans la limite de 2 026,30 € par an en 2026" | same |
+| Electric vehicle, either schedule | Electricity the employer pays for is excluded from the benefit-in-kind calculation | "Les frais d'électricité pris en charge par l’employeur n’entrent pas en compte dans le calcul de l’avantage en nature" | same |
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Meal allowance, employee forced to eat at the workplace | EUR 7.50 | "Salarié contraint de prendre son repas sur le lieu de travail 7,50 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Meal allowance, employee travelling and forced to eat in a restaurant | EUR 21.40 | "Salarié en situation de déplacement contraint de prendre son repas au restaurant 21,40 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Meal allowance, employee travelling but not forced to eat in a restaurant | EUR 10.40 | "non contraint de prendre son repas au restaurant 10,40 €" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Telework allowance, no collective agreement, per day | EUR 2.70 | "Par jour de télétravail 2,70 € dans la limite de 59,40 € par mois" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Telework allowance, no collective agreement, monthly cap | EUR 59.40 | "2,70 € dans la limite de 59,40 € par mois" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Telework allowance under a collective agreement, per day | EUR 3.30 | "Par jour de télétravail 3,30 € dans la limite de 72,60 € par mois" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
-| Telework allowance under a collective agreement, monthly cap | EUR 72.60 | "3,30 € dans la limite de 72,60 € par mois" https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html |
+| Meal allowance, employee forced to eat at the workplace | EUR 7.50 | "Salarié contraint de prendre son repas sur le lieu de travail 7,50 €" | same |
+| Meal allowance, employee travelling and forced to eat in a restaurant | EUR 21.40 | "Salarié en situation de déplacement contraint de prendre son repas au restaurant 21,40 €" | same |
+| Meal allowance, employee travelling but not forced to eat in a restaurant | EUR 10.40 | "non contraint de prendre son repas au restaurant 10,40 €" | same |
+| Telework allowance, no collective agreement, per day | EUR 2.70 | "Par jour de télétravail 2,70 € dans la limite de 59,40 € par mois" | same |
+| Telework allowance, no collective agreement, monthly cap | EUR 59.40 | "2,70 € dans la limite de 59,40 € par mois" | same |
+| Telework allowance under a collective agreement, per day | EUR 3.30 | "Par jour de télétravail 3,30 € dans la limite de 72,60 € par mois" | same |
+| Telework allowance under a collective agreement, monthly cap | EUR 72.60 | "3,30 € dans la limite de 72,60 € par mois" | same |
 
-| Item | Value | Page wording |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
-| Prime de partage de la valeur, exempt from contributions up to | EUR 3,000 | "exonérée de cotisations et contributions sociales dans la limite de 3 000 €" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
-| Same cap where the employer has a profit-sharing scheme in the conditions on the page | EUR 6,000 | "Cette limite d’exonération passe à 6 000 € par bénéficiaire et par an" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
-| Forfait social on the prime, employer with at least 250 employees | 20% | "le forfait social au taux de 20 % est dû si l’effectif de votre entreprise est égal ou supérieur à 250 salariés" https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
+| Item | Value | Page wording | Source |
+|---|---|---|---|
+| Source | all figures below |  | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
+| Prime de partage de la valeur, exempt from contributions up to | EUR 3,000 | "exonérée de cotisations et contributions sociales dans la limite de 3 000 €" | same |
+| Same cap where the employer has a profit-sharing scheme in the conditions on the page | EUR 6,000 | "Cette limite d’exonération passe à 6 000 € par bénéficiaire et par an" | same |
+| Forfait social on the prime, employer with at least 250 employees | 20% | "le forfait social au taux de 20 % est dû si l’effectif de votre entreprise est égal ou supérieur à 250 salariés" | same |
 
 The EUR 3,000/6,000 contribution exemption is per beneficiary and calendar year. For the ordinary EUR 6,000 route, an employer subject to compulsory participation needs intéressement; an employer not subject to it may use intéressement or participation, implemented by payment or concluded for the same financial year. The page separately exempts specified public-interest associations/foundations and Esat from that scheme condition. Through 31 December 2026, the wider CSG/CRDS and income-tax exemption requires both fewer than 50 employees and pay below three annual Smic; do not infer it from the basic social-contribution exemption. The prime de partage de la valeur counts in annual gross pay for the single degressive relief, whether or not it is paid into a savings plan.
 
