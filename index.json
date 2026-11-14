@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T18:37:44+00:00",
+ "generated_at": "2026-11-14T18:52:06+00:00",
  "counts": {
   "guides": 2357,
   "loadable_skill_names": 2298,
@@ -19806,7 +19806,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "portugal-einvoice",
@@ -19858,7 +19858,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "portugal-tax-optimization",
@@ -19910,7 +19910,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-foreign-source-treaties",
@@ -19923,7 +19923,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-income-tax",
@@ -19936,7 +19936,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-irs-employees-investment",
@@ -19949,7 +19949,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-nhr-ifici",
@@ -19962,7 +19962,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-return-assembly-filing",
@@ -20001,7 +20001,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-transfer-pricing",
@@ -20014,7 +20014,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pr-act-60-incentives",
