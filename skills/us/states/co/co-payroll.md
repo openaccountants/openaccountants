@@ -1,451 +1,363 @@
 ---
 name: co-payroll
-description: Tier 2 Colorado content skill for employer payroll compliance covering tax year 2025. Includes the 4.4% flat PIT phasing from 4.55%, DR 1098 state withholding form, DR 1094 annual reconciliation, CO SUTA wage base $24,800 with rates 0.50-10.39%, the FAMLI Paid Family and Medical Leave program effective January 2024 (0.9% total payroll tax split between employer and employee for 10+ employees), Healthy Families and Workplaces Act 48-hour paid sick leave, Equal Pay for Equal Work Act salary range disclosure requirements, and ABC contractor classification.
+description: >
+  Colorado 2026 employer wage withholding, UI and FAMLI compliance. Covers the
+  actual DR 1098 calculation, optional DR 0004, payment frequencies, MyUI Employer+
+  wage reporting, 2026 UI base and introductory rates, and FAMLI nationwide
+  headcount and premium allocation. Labor-law overlays remain expressly partial.
 jurisdiction: US-CO
-tax_year: 2025
-last_updated: 2026-07-13
+category: payroll
+tax_year: 2026
+last_updated: 2026-11-13
+version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
+type: computation
+depends_on:
+  - us-tax-workflow-base
+  - us-form-941-940-payroll
 ---
 
-# CO Payroll
-
-## Colorado Payroll Compliance Skill (Tax Year 2025)
-
-## 1. Scope
-
-- **Tier 2 dependency requirement** — MUST be loaded alongside `us-tax-workflow-base` v0.2 or later.  _(Skill scope statement)_
-
-This skill governs employer payroll obligations in the State of Colorado for tax year 2025. It is a Tier 2 content skill and MUST be loaded alongside `us-tax-workflow-base` v0.2 or later. It covers:
-
-- Colorado Personal Income Tax (PIT) withholding at the 4.4% flat rate (Colorado Revised Statutes §39-22-104), including the supplemental withholding rate and the 2025 step-down from the historical 4.55% rate.
-- The DR 1098 Colorado Employee Withholding Certificate (state analog of the federal Form W-4) and the optional use of the federal Form W-4 for Colorado purposes.
-- The DR 1094 Annual Reconciliation of Income Tax Withheld and the DR 1093 Annual Transmittal of State W-2s (commonly described as the "combined" annual filing in informal usage).
-- Colorado State Unemployment Tax Act (SUTA) liability administered by the Colorado Division of Unemployment Insurance (CDLE-UI), including the 2025 taxable wage base of $24,800, the experience-rated employer schedule (0.50% to 10.39%), the 1.70% new-employer rate for non-construction employers, and the support surcharge components.
-- The Colorado Family and Medical Leave Insurance program ("FAMLI"), in effect for benefits since January 1, 2024 and continuing in 2025, with 0.9% total payroll premium, employer/employee split rules, the 10-employee threshold, the $176,100 wage cap (Social Security wage base for 2025), and the 12-week leave entitlement.
-- The Healthy Families and Workplaces Act (HFWA): 48 hours of accrued paid sick leave per year plus the Public Health Emergency (PHE) supplemental leave entitlement.
-- The Equal Pay for Equal Work Act (EPEWA), Senate Bill 19-085 as amended by Senate Bill 23-105 (the "Ensure Equal Pay for Equal Work" amendments), including the salary range disclosure obligation and the new post-selection notice obligation effective January 1, 2024.
-- Worker classification under Colorado's modified ABC test (C.R.S. §8-70-115(1)(b)) for unemployment-insurance purposes.
-- Final pay timing rules under the Colorado Wage Act, C.R.S. §8-4-109.
-- Construction industry compliance overlays: separate SUTA rate schedule, HB 19-1267 wage-theft criminal exposure, and the construction-employee retainage rules.
-
-Out of scope:
-- Federal income tax withholding, FICA, FUTA — see `us-federal-payroll` and `us-payroll-fundamentals`.
-- Local occupational privilege taxes ("OPT" or "head taxes") imposed by Denver, Aurora, Glendale, Greenwood Village, and Sheridan — see `co-local-opt`. This skill mentions them only at the integration points.
-- Workers' compensation insurance under C.R.S. §8-40-101 et seq.
-- ERISA-governed retirement plans, except where the Colorado SecureSavings state mandate intersects with payroll. SecureSavings registration enforcement is addressed in `co-securesavings`.
-
-## 2. Colorado Personal Income Tax Withholding
-
-### 2.1 Statutory rate
-
-- **Colorado PIT withholding rate 2025** — 4.40% percent (flat rate for tax year 2025)  _(C.R.S. §39-22-104(1.7))_
-- **Historical PIT rate 2020-2021** — 4.55% percent (tax years 2020 through 2021)  _(C.R.S. §39-22-104(1.7))_
-- **PIT rate 2022 and forward** — 4.40% percent (tax years 2022 and forward, per TABOR refund mechanism and Proposition 121 (approved November 2022))  _(C.R.S. §39-22-627; Proposition 121)_
-- **Colorado PIT withholding rate 2025** — 4.40% percent (flat rate for tax year 2025)  _(C.R.S. §39-22-104(1.7))_
-- **TABOR further reduction check** — Colorado may, contingent on TABOR refund triggers under C.R.S. §39-22-627(3)(a), step the rate down further for a given tax year. For tax year 2025 no such temporary further reduction was triggered as of the last_updated date of this skill. Reviewers MUST confirm against CDOR's current-year Income 70 publication if filing after the legislative session.  _(C.R.S. §39-22-627(3)(a))_
-
-### 2.2 DR 1098: Colorado Employee Withholding Certificate
-
-- **DR 1098** — Colorado's state-equivalent of the federal Form W-4. Since tax year 2022 CDOR has accepted a DR 1098 in lieu of using the federal Form W-4 for Colorado withholding purposes.  _(CDOR DR 1098)_
-- **Employer options for withholding form** — Employers MAY use either: (a) The federal Form W-4 alone, with Colorado-specific allowances inferred under the DR 1098 Worksheet, OR (b) The DR 1098 itself, completed by the employee, OR (c) Both, with the DR 1098 governing for Colorado purposes if the employee chooses a different number of withholding allowances or additional Colorado withholding amount than the federal W-4 implies.  _(DR 1098 Worksheet)_
-
-The DR 1098 collects:
-- Filing status (single; married filing jointly; married filing separately; head of household).
-- Annual gross wages estimate (used by the worksheet).
-- Number of dependent children under age 17 and other dependents.
-- Other Colorado-specific income (interest, dividends, side income).
-- Other Colorado adjustments (Colorado-source deductions).
-- Other Colorado tax credits the employee expects to claim.
-- An "Additional Colorado Withholding" line (analogous to W-4 step 4(c)).
-- Optional exemption claim if the employee expects zero Colorado tax liability (analogous to the prior W-4 exemption claim, which the federal form no longer supports directly).
-
-- **DR 1098 retention and expiration** — Employers retain the DR 1098 with payroll records and apply it to all wage payments beginning with the first payroll on or after receipt. The DR 1098 does NOT expire annually — it remains in effect until superseded by a new one. Employees who claim exempt MUST refile by February 15 of each subsequent year, mirroring federal W-4 exempt-claim mechanics.  _(CDOR DR 1098 instructions)_
-
-AUDIT FLASH POINT — DR 1098 NEGLECT: Employers commonly default new hires to "Single, zero allowances" using the federal W-4 only and never offer the DR 1098. The CDOR position is that a properly completed federal W-4 is sufficient absent an employee request, but the employer's exposure on over-withholding refund claims and on EPEWA recordkeeping audits is materially lower when DR 1098s are retained in the employee file. Workpapers MUST document which form is in use.
-
-### 2.3 Withholding deposit cadence
-
-- **Quarterly filer threshold** — under $7,000 USD annual aggregate withholding liability (Deposit by the last day of the month following each calendar quarter (April 30, July 31, October 31, January 31))  _(CDOR withholding deposit rules)_
-- **Monthly filer threshold** — between $7,000 and $50,000 USD annual aggregate withholding liability (Deposit by the 15th day of the following month)  _(CDOR withholding deposit rules)_
-- **Weekly filer threshold** — $50,000 or more USD annual aggregate withholding liability (Deposit within three business days of the wage payment date that triggered the weekly threshold)  _(CDOR withholding deposit rules)_
-- **Seasonal filer** — Businesses with regular off-season months can apply for seasonal status; deposits only during active months.  _(CDOR withholding deposit rules)_
-- **Electronic filing requirement** — All deposits and returns are submitted electronically through Revenue Online unless CDOR has granted a paper-filing waiver. The remittance form attached to each deposit is the DR 1094 in its periodic role (see §2.4).  _(Revenue Online filing requirement)_
-
-### 2.4 DR 1094 (Annual Reconciliation) and DR 1093 (Transmittal)
-
-- **DR 1094** — Colorado W-2 Wage Withholding Tax Return. This is BOTH (a) the periodic payment voucher accompanying each deposit, AND (b) the annual reconciliation form. The annual reconciliation reports total Colorado wages paid, total Colorado tax withheld per period, and any reconciliation adjustments. It is due January 31 of the year following the wage year.  _(CDOR DR 1094)_
-- **DR 1093** — Annual Transmittal of State W-2s. This accompanies the paper or electronic submission of Colorado W-2s (the Colorado copy of federal Form W-2). It is also due January 31.  _(CDOR DR 1093)_
-
-In practice CDOR's Revenue Online accepts a combined annual filing that satisfies both DR 1094 and DR 1093 in a single workflow. Practitioners informally call this the "combined annual filing," which is the usage adopted by the description in the frontmatter of this skill.
-
-- **Penalty for failure to file annual reconciliation** — $50 minimum penalty plus the higher of $5 per W-2 unreconciled or 5% of unreported withholding per month (capped at 12 months).  _(CDOR penalty rules)_
-- **Penalty for failure to deposit timely** — 5% penalty plus 0.5% per month, plus interest at the CDOR statutory rate (subject to annual TABOR-adjusted rate publication; reviewers verify current rate).  _(CDOR penalty rules)_
-
-## 3. Colorado State Unemployment Insurance (SUTA)
-
-### 3.1 Coverage and registration
-
-- **Employer subject-to-UI tests** — An employer becomes subject to Colorado UI when ANY of the following tests is met: - Pays $1,500 or more in wages in any calendar quarter in the current or preceding calendar year (general employer test); OR - Employs at least one worker in any portion of a day in 20 different calendar weeks in the current or preceding year (general employer test, alternative branch); OR - Pays $1,000 or more in domestic-service wages in any calendar quarter (domestic employer test); OR - Pays $20,000 or more in agricultural wages in any calendar quarter (agricultural employer test).  _(C.R.S. §8-70-101 et seq.)_
-- **Registration process** — A subject employer registers via My UI Employer+ (the CDLE-UI portal). Construction industry employers register on a separate workflow that asserts construction status — this matters for the rate schedule (see §3.4).  _(CDLE-UI My UI Employer+ portal)_
-
-### 3.2 Taxable wage base for 2025
-
-- **Colorado SUTA taxable wage base 2025** — $24,800 USD per employee per calendar year  _(C.R.S. §8-76-102.5)_
-- **Colorado SUTA taxable wage base 2024** — $23,800 USD per employee per calendar year  _(C.R.S. §8-76-102.5)_
-
-### 3.3 Premium rate schedule
-
-- **2025 experience-rated SUTA premium rate range** — 0.50% to 10.39% percent (applied to the first $24,800 of each employee's wages, determined by reserve ratio and UI Trust Fund solvency tier; published December 2024)  _(2025 CDLE rate notices)_
-- **Non-construction new-employer rate** — 1.70% percent (first 3 years)  _(2025 CDLE rate notices)_
-- **Construction new-employer rate** — published annually on a separate schedule that materially exceeds 1.70% (commonly in the 3-5% range; reviewer to confirm against the 2025 rate notice) percent (first 3 years)  _(2025 CDLE rate notice (reviewer to confirm))_
-- **Support Surcharge 2025** — 0.22% percent (subject to annual adjustment; reviewer to confirm against current CDLE-UI rate notice)  _(C.R.S. §8-77-106)_
-- **Bond Assessment 2025** — Not assessed for 2025 because the bond issued during the COVID Trust Fund solvency crisis was retired in 2023. Reviewers verify against the current rate notice before assuming zero.  _(SB 20-207)_
-- **Combined effective rate for new non-construction employer 2025** — 1.70% premium + 0.22% surcharge = 1.92%, applied to the $24,800 wage base, producing a per-employee maximum cost of approximately $476.16 per year  _(Skill computed example)_
-
-### 3.4 Construction industry overlay
-
-- **Construction employer separate experience pool** — Colorado treats construction employers as a separate experience pool under C.R.S. §8-76-102.5(5). The construction new-employer rate is substantially higher than the 1.70% non-construction rate because the construction pool has historically had higher claim incidence. Employers registering should self-identify on the My UI Employer+ portal with the appropriate NAICS code in the 23xxxx range; misclassification of industry sector to obtain the lower non-construction rate is fraud under C.R.S. §8-81-101.  _(C.R.S. §8-76-102.5(5); C.R.S. §8-81-101)_
-
-### 3.5 Quarterly reporting
-
-- **UI Premium and Wage Report due dates** — The Colorado UI Premium Report and Wage Report are due: Q1 — April 30; Q2 — July 31; Q3 — October 31; Q4 — January 31.  _(CDLE-UI filing schedule)_
-- **Electronic filing and report contents** — Filing is electronic-only through MyUI Employer+. The wage report itemizes each employee's gross wages for the quarter; the premium report computes the SUTA owed using the employer's published rate and the up-to-the-wage-base portion of each employee's wages.  _(CDLE-UI MyUI Employer+)_
-
-## 4. Colorado FAMLI (Family and Medical Leave Insurance)
-
-### 4.1 Program overview
-
-- **FAMLI program history** — Colorado's Paid Family and Medical Leave Insurance program ("FAMLI") was created by Proposition 118 (November 2020), codified at C.R.S. §8-13.3-501 et seq. Premium collection began January 1, 2023. Benefit payments to employees on qualifying leave began January 1, 2024 and continue in 2025. The program is administered by the CDLE Division of Family and Medical Leave Insurance ("CDLE-FAMLI").  _(C.R.S. §8-13.3-501 et seq.; Proposition 118)_
-- **FAMLI qualifying leave reasons** — FAMLI provides up to 12 weeks of paid leave per benefit year for: - Bonding with a new child (birth, adoption, foster placement); - Caring for a family member with a serious health condition; - The employee's own serious health condition; - Qualifying military exigency; - Safe leave for survivors of domestic violence, stalking, sexual assault, or abuse.  _(C.R.S. §8-13.3-501 et seq.)_
-- **FAMLI base leave entitlement** — 12 weeks weeks per benefit year  _(C.R.S. §8-13.3-501 et seq.)_
-- **FAMLI pregnancy/childbirth complications additional leave** — An additional 4 weeks (16 weeks total) is available for pregnancy or childbirth complications. weeks  _(C.R.S. §8-13.3-501 et seq.)_
-- **FAMLI weekly benefit calculation** — The weekly benefit is wage-replacement on a progressive schedule: 90% of the portion of the employee's average weekly wage at or below 50% of the state AWW, plus 50% of the portion above.  _(CDLE-FAMLI benefit schedule)_
-- **2025 FAMLI maximum weekly benefit** — $1,324.21 USD (90% of the 2025 Colorado average weekly wage published by CDLE)  _(CDLE-FAMLI 2025 benefit publication)_
-
-### 4.2 Premium: 0.9% total, employer/employee split
-
-- **Total FAMLI premium** — 0.9% percent of wages (applied to the same wage cap as the Social Security wage base)  _(C.R.S. §8-13.3-501 et seq.)_
-- **2025 FAMLI wage cap** — $176,100 USD  _(2025 Social Security wage base)_
-- **Default premium split** — The default statutory split is 0.45% employee + 0.45% employer, with the employer required to deposit the full 0.9% to CDLE-FAMLI quarterly.  _(CDLE-FAMLI premium rules)_
-- **Sub-10 employer waiver** — Employers with fewer than 10 employees are NOT required to pay the employer 0.45% share. They MUST still withhold and remit the employee's 0.45% share. The employer share is waived but the employee share is not.  _(CDLE-FAMLI premium rules)_
-- **10+ employer obligation** — Employers with 10 or more employees owe the full 0.9% (0.45% employer + 0.45% employee withheld). The employer may voluntarily absorb the employee's share if it chooses (a common election among Colorado employers competing for talent).  _(CDLE-FAMLI premium rules)_
-- **10-employee count methodology** — The 10-employee count uses the national employee count, not the Colorado-only headcount, and uses a rolling 20-week look-back analogous to the federal FMLA 50-employee test. An employer that is 10+ for any 20 weeks (consecutive or not) in the calendar year is treated as a 10+ employer for the next premium year. Local-government employers have unique opt-out rights under C.R.S. §8-13.3-522.  _(C.R.S. §8-13.3-522)_
-
-AUDIT FLASH POINT — 10-EMPLOYEE THRESHOLD MISCOUNT:
-
-The single most common FAMLI compliance error is for an employer with 8-12 employees to assume they are exempt from the employer share because they "feel small." The actual rules:
-
-1. The count is total employees nationally, including part-time and seasonal workers, NOT FTE-adjusted and NOT Colorado-only.
-2. Owners, partners, and members of an LLC are NOT counted as employees unless they receive W-2 wages.
-3. The look-back is the prior calendar year's average headcount across 20 weeks, not a point-in-time count.
-4. Even employers under 10 MUST register, withhold the employee share, and file quarterly reports — only the EMPLOYER share is waived.
-5. Crossing the 10-employee threshold mid-year does not retroactively make the employer responsible for the employer share for prior quarters of that year; the obligation activates the following premium year (the following January 1).
-
-Workpapers MUST document the 20-week headcount computation and retain the underlying payroll register snapshots that support the count. A CDLE-FAMLI audit will request these directly.
-
-### 4.3 Quarterly premium remittance
-
-- **FAMLI quarterly remittance due dates** — FAMLI premiums are remitted quarterly through My FAMLI+ Employer: Q1 — April 30; Q2 — July 31; Q3 — October 31; Q4 — January 31.  _(CDLE-FAMLI My FAMLI+ Employer)_
-- **Filing method by headcount** — Filing is electronic-only above 10 employees. Below 10 employees, paper filing is technically available but discouraged.  _(CDLE-FAMLI filing rules)_
-- **Quarterly filing wage reporting and cap** — The quarterly filing reports each employee's FAMLI-subject wages (gross wages up to $176,100 year-to-date per employee) and computes the 0.9% premium (or 0.45% for employers under 10). Wages above the $176,100 cap for an employee year-to-date are excluded.  _(CDLE-FAMLI filing rules)_
-
-### 4.4 Private plan substitution
-
-- **Private plan substitution rules** — An employer may apply to CDLE-FAMLI for approval to substitute a private paid-leave plan that meets or exceeds FAMLI benefits and costs no more to the employee than the FAMLI program. Approval is on a one-year basis renewable annually; private-plan employers are exempt from the 0.9% premium but pay a separate administrative fee to CDLE-FAMLI. This skill does not deep-dive private plan administration — refer to `co-famli-private-plan` (planned).  _(CDLE-FAMLI private plan program)_
-
-### 4.5 Job protection
-
-- **FAMLI job protection eligibility** — An employee who has been employed by the same employer for at least 180 days at the time of leave commencement is entitled to job protection (restoration to the same or equivalent position) on return from FAMLI leave. This overlays but does not displace federal FMLA — for employees eligible under both, the leaves run concurrently and the more protective rule prevails.  _(CDLE-FAMLI job protection rules)_
-
-## 5. Healthy Families and Workplaces Act (HFWA)
-
-### 5.1 48-hour annual accrual
-
-- **HFWA applicability** — The Colorado Healthy Families and Workplaces Act (SB 20-205), C.R.S. §8-13.3-401 et seq., requires every Colorado employer regardless of size to provide paid sick leave.  _(C.R.S. §8-13.3-401 et seq.; SB 20-205)_
-- **Sick leave accrual rate** — 1 hour per 30 hours worked hours  _(C.R.S. §8-13.3-401 et seq.)_
-- **Maximum mandatory accrual** — 48 hours per year hours  _(C.R.S. §8-13.3-401 et seq.)_
-- **Maximum carryover** — 48 hours hours  _(C.R.S. §8-13.3-401 et seq.)_
-- **New hire usage and pay rate** — New hires may use accrued leave immediately (no 90-day wait). Sick leave is paid at the employee's regular rate.  _(C.R.S. §8-13.3-401 et seq.)_
-
-Eligible uses:
-- Employee's mental or physical illness, injury, or health condition.
-- Diagnosis, care, or treatment of same.
-- Preventive care.
-- Care for a covered family member.
-- Safe leave (domestic abuse, sexual assault, stalking).
-- School/childcare closure due to weather or public health.
-- Bereavement.
-
-### 5.2 Public Health Emergency (PHE) supplemental leave
-
-- **PHE supplemental leave amounts** — When a federal, state, or local public health emergency is declared, the HFWA requires employers to provide additional supplemental paid leave on top of the 48 hours: Up to 80 hours for full-time employees (40+ hours/week). For part-time employees, the greater of (a) hours typically worked in a 14-day period, or (b) hours actually worked over the prior 14 days, capped at 80 hours.  _(HFWA PHE provisions)_
-- **PHE leave duration and refresh** — The PHE leave is available throughout the duration of the declared emergency and for four weeks after its expiration. PHE leave is a one-time pool per emergency, but it refreshes when a new unrelated emergency is declared.  _(HFWA PHE provisions)_
-
-As of the last_updated date of this skill there is no active statewide PHE in Colorado. Reviewers MUST confirm against CDLE publications before excluding PHE supplemental leave from a payroll configuration.
-
-### 5.3 Notice, posting, and recordkeeping
-
-- **HFWA notice, posting, recordkeeping requirements** — Employers must: - Provide written notice to each employee at hire describing HFWA rights (the CDLE-INFO 6B model notice satisfies this). - Post the CDLE workplace poster (HFWA section) in each workplace and on any electronic platform employees regularly access. - Maintain HFWA records (accrual, use, balance) for two years — not three, the general Colorado payroll record retention period.  _(CDLE-INFO 6B)_
-
-## 6. Equal Pay for Equal Work Act (EPEWA)
-
-### 6.1 Statutory framework
-
-- **EPEWA statutory framework** — The Colorado Equal Pay for Equal Work Act, C.R.S. §8-5-101 et seq., was enacted by SB 19-085 effective January 1, 2021, and substantially expanded by SB 23-105 ("Ensure Equal Pay for Equal Work") effective January 1, 2024. Both provisions are in force for 2025.  _(C.R.S. §8-5-101 et seq.; SB 19-085; SB 23-105)_
-
-### 6.2 Salary range disclosure
-
-- **Job posting disclosure obligations** — Every job posting for a position that could be performed in Colorado (remote postings included if a Colorado-based employee could fill the role) MUST include: (a) The hourly or salary compensation range that the employer in good faith believes it will pay for the position. A range is permitted but must be a "good faith" range, not an arbitrary $0-$1,000,000 placeholder. (b) A general description of all benefits and other compensation offered (health insurance summary level, retirement, equity summary, bonus structure, paid time off). (c) The application deadline (or a statement that applications will be accepted on a rolling basis).  _(C.R.S. §8-5-101 et seq.)_
-- **Scope of disclosure applicability** — This disclosure obligation applies to: - All external postings. - All internal postings (with limited exceptions where the position is a "career progression" rather than a "job opportunity" — CDLE INFO 9 sets the test). - Postings made by third-party recruiters and job boards on the employer's behalf.  _(CDLE INFO 9)_
-
-### 6.3 Post-selection notice (new under SB 23-105)
-
-- **Post-selection notice requirement** — Within 30 days after a successful candidate begins work in a posted position, the employer MUST notify employees who, at the employer's discretion, have a "career progression" interest in that position, of: - The name of the successful candidate; - Their former job title (if internal); - Their new job title; - Information on how employees may demonstrate interest in similar future opportunities.  _(SB 23-105)_
-
-This requirement is widely under-implemented and is the leading EPEWA enforcement target as of 2025.
-
-### 6.4 Pay-history prohibition
-
-- **Pay-history prohibition rules** — Employers MAY NOT: - Ask applicants about wage-rate history. - Rely on prior wage history to set offered compensation. - Discriminate or retaliate against an applicant who declines to disclose prior wage history.  _(C.R.S. §8-5-101 et seq.)_
-
-### 6.5 Penalties
-
-- **EPEWA penalty amounts** — $500 to $10,000 per violation (per posting, per failure-to-notice). Multiple postings of the same position can be aggregated as one violation at the Director's discretion. Civil action by aggrieved employees is also available for pay-equity violations.  _(C.R.S. §8-5-203)_
-
-AUDIT FLASH POINT — EPEWA POSTING NEGLECT:
-
-The EPEWA salary-disclosure regime is enforced primarily by employee and union complaints, not proactive audit. CDLE has assessed five-figure aggregate penalties against multistate employers whose "job posting on LinkedIn for a remote role open to Colorado" omitted the salary range. Common failure modes:
-
-1. Treating remote roles as out-of-scope because no specific Colorado office is designated — wrong. If the role COULD be filled by a Colorado-based employee, the disclosure applies.
-2. Listing only "DOE" (depending on experience) instead of a range.
-3. Listing a $0 to $X range with X arbitrarily high.
-4. Posting the job range in the original posting but omitting it from the LinkedIn/Indeed amplifications.
-5. Forgetting the post-selection notice obligation entirely.
-
-Workpapers for an EPEWA risk assessment MUST review (a) a random sample of 2025 postings, (b) the post-selection notice log, (c) the internal-vs-external posting classification policy, and (d) the job-board syndication process for range carry-through.
-
-## 7. Worker Classification — Colorado ABC Test
-
-### 7.1 The ABC test under C.R.S. §8-70-115
-
-- **ABC test three prongs** — For Colorado unemployment-insurance purposes, a worker is presumed to be an employee unless the putative employer can establish ALL THREE of the following ("ABC test"): A. The worker is free from control and direction in the performance of the service, both under the contract and in fact; AND B. The service is performed outside the usual course of business of the person for whom the service is performed, OR is performed outside of all the places of business of the enterprise for which the service is performed; AND C. The worker is customarily engaged in an independent trade, occupation, profession, or business related to the service performed. Failure on any prong means the worker is an employee for SUTA, FAMLI, and HFWA purposes.  _(C.R.S. §8-70-115)_
-
-### 7.2 The nine-factor safe harbor under §8-70-115(1)(c)
-
-- **Nine-factor documentary safe harbor** — C.R.S. §8-70-115(1)(c) provides a documentary safe harbor: a written contract that includes at least nine specified provisions (e.g., the worker is not insurance-covered by the principal; pay is by the job not by time; the worker provides own tools; etc.) creates a rebuttable presumption of contractor status. However, the actual conduct of the relationship can override the contract language. The safe harbor is heavily contested in audits.  _(C.R.S. §8-70-115(1)(c))_
-
-### 7.3 ABC vs federal common-law test
-
-- **ABC test vs federal common-law test** — Colorado's ABC test is STRICTER than the federal IRS common-law test used for federal employment-tax purposes. A worker can be a contractor for IRS purposes (1099-NEC) and an employee for Colorado SUTA / FAMLI / HFWA purposes simultaneously. This is a common source of error in multistate practices: a worker properly classified as a 1099 federally may still trigger Colorado employer liability.  _(C.R.S. §8-70-115)_
-
-AUDIT FLASH POINT — ABC IN COLORADO:
-
-The Colorado ABC test is one of the strictest in the United States and substantially stricter than the federal common-law test. Common failure modes:
-
-1. Treating long-tenured "contractors" who work only for the principal as bona fide independent contractors — fails Prong C (not customarily engaged in an independent trade).
-2. Treating a contractor who performs the same core services as the company's regular employees as a contractor — fails Prong B (within the usual course of business).
-3. Relying on a contract with the nine §8-70-115(1)(c) clauses without conforming actual practice to the clauses.
-4. Aggregating 1099 spend that exceeds the W-2 payroll base — a strong CDLE-UI audit trigger.
-5. Reclassifying employees as contractors to avoid FAMLI premium collection — separate violation under FAMLI rules and triggers C.R.S. §8-13.3-516 retaliation exposure.
-
-Workpapers for any Colorado contractor classification MUST walk through ALL THREE prongs, not just rely on the contract template.
-
-## 8. Final Pay and Wage Act
-
-- **Discharge/involuntary termination final pay timing** — All wages and compensation earned and unpaid at separation are due immediately. If the employer's accounting unit is not available (e.g., after-hours discharge), wages are due within six hours of the start of the accounting unit's next regular workday, OR within 24 hours if accounting is offsite.  _(C.R.S. §8-4-109)_
-- **Voluntary resignation final pay timing** — Wages are due on the next regular payday.  _(C.R.S. §8-4-109)_
-- **PTO/vacation treatment at termination** — Earned and accrued vacation pay is treated as wages under C.R.S. §8-4-101(14)(a)(III) following Nieto v. Clark's Market (2021). It cannot be forfeited at termination, even under a "use it or lose it" policy, to the extent earned. PTO and vacation that has been earned but not used IS payable at separation; "front-loaded but unearned" leave can be subject to forfeiture rules in the employee handbook so long as those rules are clear and consistent.  _(C.R.S. §8-4-101(14)(a)(III); Nieto v. Clark's Market (2021))_
-- **HFWA sick leave at separation** — NOT payable at separation, unless the employer voluntarily commits to pay it in the handbook.  _(C.R.S. §8-4-109)_
-- **Penalty for non-payment of final wages** — A demand letter from the employee triggers a 14-day cure period. After 14 days, the employee may recover the unpaid wages PLUS a statutory penalty equal to the greater of (a) two times the unpaid amount, or (b) $1,000. Willful nonpayment doubles this to three times or $3,000.  _(C.R.S. §8-4-109)_
-
-## 9. Construction Industry Compliance Overlay
-
-- **Construction industry heightened obligations** — Construction industry employers in Colorado are subject to several heightened payroll obligations: - Separate SUTA rate pool (see §3.4). - HB 19-1267: criminal wage-theft exposure — failure to pay wages with intent or reckless disregard is a Class 6 felony if the amount exceeds $2,000. - Mechanic's lien retainage rules under C.R.S. §38-22-101 and prompt-payment statutes under C.R.S. §24-91-103 (public works) — these are not payroll but they affect when payroll cash is available. - The Workers' Compensation Cost Containment Certificate (CCC) is broadly required in construction to maintain insurance rate stability.  _(HB 19-1267; C.R.S. §38-22-101; C.R.S. §24-91-103)_
-
-This skill does NOT cover prevailing wage under Davis-Bacon or Colorado HB 21-1264 (Colorado prevailing wage on certain public projects) — see `co-prevailing-wage`.
-
-## 10. Worked Examples
-
-### Example 1 — Colorado 5-employee creative agency (sub-10 FAMLI)
-
-Facts:
-- Single-member LLC operating as an S-corp in Denver, CO.
-- 5 employees on W-2 (including the owner-employee at $80,000 salary).
-- 4 other employees at average $55,000 each.
-- Total Colorado W-2 wages 2025: $80,000 + (4 × $55,000) = $300,000.
-- Owner-employee on FAMLI applies because owner takes W-2.
-
-Step 1 — Colorado PIT withholding:
-- Aggregate Colorado withholding for 2025 (assuming no other state income, single filer for owner, married joint for others): approximately 4.40% × $300,000 = $13,200, less applicable DR 1098 worksheet adjustments (~$1,500 in standard adjustments).
-- Net annual Colorado withholding ≈ $11,700.
-- Filing cadence: $11,700 is in the $7,000-$50,000 range, so monthly filing of DR 1094 deposits, due the 15th of the following month.
-- Annual DR 1094 reconciliation due January 31, 2026.
-- DR 1093 W-2 transmittal due January 31, 2026.
-
-Step 2 — Colorado SUTA:
-- All 5 employees exceed the $24,800 wage base.
-- Taxable wages: 5 × $24,800 = $124,000.
-- New-employer non-construction rate: 1.70%.
-- Support surcharge: 0.22%.
-- Combined: 1.92%.
-- Annual SUTA: 1.92% × $124,000 = $2,380.80.
-- Filed quarterly through MyUI Employer+.
-
-Step 3 — FAMLI (sub-10 employer):
-- 5 < 10 employees → employer share WAIVED.
-- Employee share: 0.45% × $300,000 = $1,350 withheld from employees and remitted to CDLE-FAMLI.
-- All employees under the $176,100 cap, so full wages subject.
-- Quarterly remittance via My FAMLI+ Employer.
-- Note: even though the employer share is waived, the employer MUST register and file quarterly returns. Skipping registration is a $50 per quarter penalty plus the unremitted employee share.
-
-Step 4 — HFWA:
-- All 5 employees accrue 1 hour per 30 hours worked.
-- A full-time employee (40 hr/wk × 50 wk) accrues 66.67 hours, capped at the 48-hour annual maximum.
-- Carryover into 2026: up to 48 hours per employee.
-
-Step 5 — EPEWA:
-- Any 2025 job postings must include salary range, benefits summary, application deadline.
-- Post-selection notice within 30 days of each hire.
-
-Aggregate Colorado payroll-tax burden for this employer:
-- SUTA $2,380.80
-- FAMLI employer share $0 (sub-10 exception)
-- FAMLI employee share withheld $1,350 (employee-borne, not employer cost)
-- Colorado withholding $11,700 (employee-borne)
-- Total EMPLOYER cost: $2,380.80
-
-### Example 2 — Colorado 50-employee tech company (full FAMLI)
-
-Facts:
-- Delaware C-corp with Colorado nexus, 50 W-2 employees in CO.
-- Average salary $120,000. Total CO W-2 wages = $6,000,000.
-- No employees over $176,100 (FAMLI cap), no employees over $24,800 wage base for SUTA (all are).
-- Established employer with 2024 SUTA rate of 1.10%.
-
-Step 1 — Colorado PIT withholding:
-- Approx. 4.40% × $6,000,000 = $264,000, less DR 1098 worksheet adjustments (~$30,000) = ~$234,000 net.
-- Filing cadence: > $50,000 → weekly filing, deposit within 3 business days of each payroll.
-- Annual DR 1094 reconciliation due January 31, 2026.
-
-Step 2 — Colorado SUTA:
-- Taxable wages: 50 × $24,800 = $1,240,000.
-- Premium rate: 1.10% (experience-rated).
-- Support surcharge: 0.22%.
-- Combined: 1.32%.
-- Annual SUTA: 1.32% × $1,240,000 = $16,368.
-
-Step 3 — FAMLI (10+ employer):
-- Full 0.9% applies.
-- All employees below $176,100 cap, so full $6,000,000 in subject wages.
-- Total FAMLI premium: 0.9% × $6,000,000 = $54,000.
-- Split: $27,000 employer share + $27,000 employee share withheld from employee paychecks.
-- Many tech employers in Colorado voluntarily absorb the employee share; if absorbed, total employer cost is $54,000.
-- If standard split: employer cost $27,000.
-
-Step 4 — HFWA:
-- Same 1-hour-per-30-hours accrual, 48-hour cap.
-- For a 40 hr/wk employee, the cap binds.
-- No active PHE in 2025 as of skill date.
-
-Step 5 — EPEWA exposure:
-- High-volume hiring → high posting volume → highest EPEWA exposure of these examples.
-- Post-selection notice obligation is the most-missed item.
-- Recommend a posting-compliance checklist in the ATS workflow.
-
-Aggregate Colorado employer payroll-tax burden:
-- SUTA $16,368
-- FAMLI employer share $27,000 (or $54,000 if absorbing employee share)
-- Total EMPLOYER cost: $43,368 (standard split) or $70,368 (full absorb).
-
-### Example 3 — Multistate employer (CO + TX + remote)
-
-Facts:
-- Texas-headquartered LLC taxed as S-corp.
-- 20 employees total: 12 in TX, 5 in CO, 3 remote (one in WY, two in NM).
-- Q: Which Colorado obligations apply?
-
-Analysis:
-
-Colorado PIT withholding:
-- Withhold Colorado PIT only on the 5 CO-resident employees' Colorado-source wages. The 3 remote-state employees do NOT have Colorado withholding unless they perform services in Colorado.
-- File DR 1094 quarterly or monthly based on the CO portion alone.
-
-Colorado SUTA:
-- Liable for SUTA on the 5 CO employees' wages up to $24,800 each. The TX and remote employees are not Colorado SUTA wages.
-- Register with CDLE-UI as a "foreign employer with Colorado operations."
-
-Colorado FAMLI:
-- HEADCOUNT TEST IS NATIONAL: 20 employees total ≥ 10, so the employer is a 10+ employer for FAMLI purposes.
-- Premium applies only to CO employees' wages (FAMLI is a Colorado tax on Colorado work).
-- 0.9% on 5 CO employees: employer 0.45% + employee 0.45%.
-- This is the single most common multistate mistake — a CO employer with only 5 CO employees but 20 total is NOT a sub-10 employer for FAMLI purposes.
-
-Colorado HFWA:
-- Applies to all 5 CO employees.
-- Does NOT apply to TX, WY, NM employees (state law-only).
-
-EPEWA:
-- Any job posting open to remote Colorado candidates MUST include CO salary disclosure even if HQ is in TX.
-- This is the highest-risk multistate item.
-
-ABC test:
-- The 3 remote employees (WY, NM) are governed by their own state's ABC or common-law test. The 5 CO employees are governed by the strict Colorado ABC test.
-
-Aggregate Colorado employer payroll-tax burden (CO portion only):
-- Colorado PIT withholding: employee-borne, ~$22,000 routed to CDOR.
-- SUTA: 1.92% × (5 × $24,800) = $2,380.80.
-- FAMLI employer share: 0.45% × CO wages. Assuming $120k average × 5 = $600,000 CO wages, all below the cap → 0.45% × $600,000 = $2,700.
-- Total CO-specific EMPLOYER cost: ~$5,080.80, plus EPEWA compliance overhead.
-
-### Example 4 — Sub-10 employer crossing the threshold mid-year
-
-Facts:
-- Boulder-based startup begins 2025 with 8 employees.
-- Hires aggressively and reaches 12 employees by August 2025.
-- Q: When does the 10+ FAMLI employer share liability begin?
-
-Analysis:
-- The FAMLI 10-employee threshold uses a 20-week look-back over the prior calendar year for the current year's classification.
-- Because the startup averaged 8 employees in 2024 (prior year), it is a sub-10 employer for ALL of 2025, regardless of the August jump.
-- However, for 2026 classification: count the 2025 average over 20 weeks. If the startup is at 10+ for any 20 weeks in 2025 (almost certainly true given the August jump), it is a 10+ employer for 2026 and owes the employer 0.45% beginning January 1, 2026.
-- Workpaper MUST document the 2025 20-week count to support the 2026 classification.
-
-Aggregate 2025 employer FAMLI cost: $0 employer share, employee share still withheld throughout.
-
-## 11. Filing Calendar Summary
-
-**Filing Calendar Summary**  _(placeholder)_
-
-:n placeholder
-
-## 12. Self-Checks Before Sign-Off
-
-Before producing reviewer output that incorporates this skill's content, verify:
-
-1. The 4.40% PIT rate is correct for the tax year in scope, and the TABOR-trigger temporary further reduction has not been activated.
-2. The SUTA wage base $24,800 and rate schedule 0.50%-10.39% are current; confirm against the latest CDLE-UI rate notice.
-3. The FAMLI 10-employee threshold has been computed using national headcount and the 20-week look-back, with the underlying payroll register snapshots retained.
-4. EPEWA job posting compliance has been reviewed for any 2025 postings, including remote postings open to Colorado.
-5. ABC test analysis for any 1099 contractors with Colorado nexus has walked through ALL THREE prongs, not just relied on contract language.
-6. Final pay timing is correct for the separation type (discharge vs resignation).
-7. The construction-industry overlay has been considered if the employer's NAICS is in the 23xxxx range.
-8. Local OPT (Denver, Aurora, Glendale, Greenwood Village, Sheridan) has been considered for employees working in those jurisdictions — out of scope of this skill but in scope of the workflow.
-
-## 13. Refusal Catalogue (Colorado Payroll Specific)
-
-- **R-CO-PAY-1** — Do not advise reclassifying employees as contractors solely to avoid FAMLI premium — violates C.R.S. §8-13.3-516 anti-retaliation provision.  _(C.R.S. §8-13.3-516)_
-- **R-CO-PAY-2** — Do not advise omitting salary range from a Colorado-visible job posting — EPEWA $500-$10,000 per-violation exposure.  _(C.R.S. §8-5-203)_
-- **R-CO-PAY-3** — Do not advise "front-loading and clawing back" vacation to defeat Nieto v. Clark's Market — Colorado Wage Act forbids forfeiture of earned vacation.  _(Nieto v. Clark's Market)_
-- **R-CO-PAY-4** — Do not advise withholding Colorado tax from a non-resident remote employee who performs no services in Colorado; this creates an over-withholding compliance posture for the employee.  _(Skill refusal catalogue)_
-- **R-CO-PAY-5** — Do not advise treating the FAMLI threshold as Colorado-only headcount — it is national.  _(Skill refusal catalogue)_
-
-## 14. Citation Discipline
-
-- **Citation requirements** — Citations in workpapers produced from this skill MUST identify: - C.R.S. section number for substantive statutory rules. - CDOR DR-number for forms and the relevant Income tax publication (Income 70 for withholding; FYI Income 11 for Colorado source income). - CDLE INFO number for HFWA (INFO 6B), EPEWA (INFO 9), and FAMLI (INFO 17 series) interpretive guidance. - The case name and citation for Nieto v. Clark's Market, 488 P.3d 1140 (Colo. 2021) when discussing vacation forfeiture. When citing a 2025 rate, identify the source publication date and the URL or document reference. Reviewers must verify rates against the live CDOR/CDLE publications before sign-off because Colorado revenue rates change with TABOR triggers and the SUTA schedule publishes annually.  _(Nieto v. Clark's Market, 488 P.3d 1140 (Colo. 2021))_
-
-## 15. Skill Slot Contract
-
-- **Slot satisfaction and dependencies** — This skill SATISFIES the `state-payroll` slot for jurisdiction US-CO in the us-tax-workflow-base v0.2 workflow. It DEPENDS ON: - `us-tax-workflow-base` v0.2 or later (workflow architecture). - `us-payroll-fundamentals` (federal payroll baseline; planned). It is COMPLEMENTED BY (load alongside for full Colorado payroll): - `co-income-tax` (employee/owner-side Colorado PIT — already in the package). - `co-local-opt` (Denver/Aurora/Glendale/Greenwood Village/Sheridan occupational privilege taxes; planned). - `co-securesavings` (state retirement registration mandate; planned). - `co-prevailing-wage` (HB 21-1264 prevailing wage; planned). End of co-payroll v0.1.
+# Colorado payroll v1.0
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
+
+Employers with Colorado covered wages in 2026. This skill owns state wage
+withholding, unemployment insurance (UI) and FAMLI payroll contributions.
+Federal withholding/FICA/FUTA and the federal wage cap stay in
+`us-form-941-940-payroll`; individual return tax stays in `co-income-tax`.
+
+Labor-law topics from the former file remain identified below, with unresolved
+rules reserved rather than carried forward as unsupported figures. Local
+occupational privilege tax, workers' compensation and SecureSavings need separate
+current analysis; the former referenced local skills are not assumed to exist.
+
+## Ask the client first
+
+1. Each worker's residence, physical workdays, multistate localization and employee/contractor facts.
+2. Actual wages, payroll frequency, latest W-4/DR 0004 and any DOR adjustment.
+3. UI account, industry, coverage start and actual 2026 rate notice/components.
+4. Nationwide qualifying individual headcount in the preceding year and each worker's FAMLI localization.
+5. Year-to-date UI/FAMLI wage histories, deductions and contribution elections.
+6. Assigned withholding frequency, portal access, private-plan approval and outstanding notices.
+
+## Rates, bands and thresholds
+
+| Item | 2026 rule and conditions | Official source |
+|---|---|---|
+| Wage withholding multiplier | 4.40% in the actual 2026 DR 1098, not a final annual-return/TABOR determination | https://tax.colorado.gov/sites/default/files/documents/DR_1098_Colorado_Withholding_Worksheet_for_Employees.pdf |
+| Default annual worksheet reduction | $11,000 MFJ/qualifying surviving spouse; $5,500 otherwise, only where DR 0004 line 2 is absent/blank | https://tax.colorado.gov/sites/default/files/documents/DR_1098_Colorado_Withholding_Worksheet_for_Employees.pdf |
+| Quarterly withholding | Annual withholding less than $7,000; due last day following quarter | https://tax.colorado.gov/withholding-tax-guide |
+| Monthly withholding | DOR table says at least $7,000 but not more than $50,000; due 15th following month; exactly $50,000 conflicts with its weekly row, so obtain the assigned frequency | https://tax.colorado.gov/withholding-tax-guide |
+| Weekly withholding | DOR table says $50,000 or more; Saturday-Friday period, due third business day after Friday, EFT required; exact boundary as above | https://tax.colorado.gov/withholding-tax-guide |
+| UI taxable wage base | First $30,600 per covered worker in 2026; do not use the page's separately labelled 2027 base | https://cdle.colorado.gov/ui/employers/requirements/premiums/premium-rates |
+| New UI, ordinary/general construction/trades | 1.53% base + 0.17% support + 1.35% solvency = 3.05% combined, actual 2026 introductory table | https://cdle.colorado.gov/ui/employers/requirements/premiums/introductory-rates |
+| New UI, heavy construction | 4.28% base + 0.48% support + 1.525% solvency = 6.285% combined, actual 2026 table | https://cdle.colorado.gov/ui/employers/requirements/premiums/introductory-rates |
+| Introductory political subdivision | 0.20% combined in separately identified 2026 category; reimbursement alternatives require classification | https://cdle.colorado.gov/ui/employers/requirements/premiums/introductory-rates |
+| Ordinary UI liability | $1,500 wages in a calendar quarter this/prior year OR a worker for part of a day in 20 different weeks; special classes differ | https://cdle.colorado.gov/ui/employers/requirements/employer-liability-requirements |
+| Domestic/agricultural UI classes | Domestic $1,000 quarterly; agriculture $20,000 quarterly OR 10 workers in 20 weeks; apply actual class/coverage exceptions | https://cdle.colorado.gov/ui/employers/requirements/employer-liability-requirements |
+| UI quarter due dates | April 30, July 31, October 31, January 31, next business day on weekend/holiday | https://cdle.colorado.gov/ui/employers/requirements/premiums/wage-reporting |
+| FAMLI total | 0.88% of covered wages up to the federal Social Security wage cap, kept in federal owner | https://famli.colorado.gov/employers |
+| FAMLI employee maximum | 0.44%; employer may pay it voluntarily, cannot recover missed deductions from later paychecks | https://famli.colorado.gov/employers |
+| FAMLI employer share | 0.44% for 10+ qualifying nationwide employees; fewer than 10 no required employer share, but report/remit employee share | https://famli.colorado.gov/employers |
+| FAMLI headcount | Count individuals who each worked at least 20 calendar workweeks in preceding year nationwide, including part-time/seasonal, not average weekly headcount | https://famli.colorado.gov/employers |
+| FAMLI headcount report | Initially and first quarter annually by February 28, otherwise account defaults to full employer share | https://famli.colorado.gov/employers |
+| FAMLI quarterly due dates | April 30, July 31, October 31, January 31 through My FAMLI+; check actual holiday-adjusted portal date | https://famli.colorado.gov/employers |
+| Ordinary FAMLI benefit duration | Up to 12 weeks plus up to 4 for pregnancy/childbirth complications; additional up to 12 weeks for eligible neonatal intensive-care needs effective 2026 | https://leg.colorado.gov/bills/sb25-144 |
+| Withholding late payment | Greater of $5 or 5%, plus 0.5% per month, capped 12%; collection penalty can apply after demand | https://tax.colorado.gov/withholding-tax-guide |
+| Withholding 2026 interest | Regular 11%; discounted 8% if full payment before/within 30 days of deficiency notice | https://tax.colorado.gov/withholding-tax-guide |
+
+## The method, step by step
+
+### A. Register and establish coverage
+
+1. Obtain the DOR wage-withholding account through MyBizColorado or CR 0100 and
+   set up Revenue Online access. This is separate from MyUI Employer+ and
+   My FAMLI+. Register the UI account when liable and retain the determination,
+   industry classification, effective date and annual rate notice. Register
+   FAMLI even for a small employer with no required employer share.
+2. For UI, ordinary coverage and domestic/agricultural thresholds differ.
+   Nonprofit, government, successor, voluntary coverage and statutory excluded
+   employment need their own classification. Do not treat every corporate
+   officer as automatically outside employment.
+3. Determine withholding separately from UI and FAMLI localization. Colorado
+   residents generally have all wages withheld, except wages for out-of-state
+   services subject to that state's withholding. Nonresidents generally have
+   wages for physical Colorado work withheld. DOR allocates by Colorado workdays
+   over total workdays in the pay period, including its majority-of-workday and
+   inbound/outbound travel rules. Do not allocate solely by employer address.
+4. FAMLI first examines where work is localized. Incidental outside services,
+   base of operations, direction/control and a residence tie-breaker can matter.
+   Nationwide headcount determines employer contribution status; only covered
+   Colorado-localized wages enter this Colorado premium calculation.
+
+Sources: https://tax.colorado.gov/withholding-tax-guide;
+https://cdle.colorado.gov/ui/employers/requirements/employer-liability-requirements;
+https://famli.colorado.gov/employers (national/localization accordions).
+
+### B. Compute each paycheck with actual DR 1098
+
+DR 1098 is the **employer calculation worksheet**. DR 0004 is the optional
+**employee Colorado withholding certificate**. They are not interchangeable.
+
+1. DR 1098 line 1a: this payroll period's taxable wages, including overtime.
+2. Line 1b: annual pay periods; line 1c = 1a times 1b.
+3. Line 2a: use DR 0004 line 2 if completed, including zero. Only absent/blank
+   uses the filing-status default above. A new W-4 without a new DR 0004 revokes
+   the prior DR 0004. No certificate defaults to the single calculation.
+4. Line 2b = max(0, 1c minus 2a); 2c = 2b times the worksheet multiplier;
+   2d = 2c divided by annual pay periods.
+5. Line 2e: DR 0004 line 3 additional amount, or preserved pre-2022 request until
+   superseded; otherwise zero. Line 2f = 2d + 2e, withheld per paycheck.
+6. A W-4 exemption with no DR 0004 follows DOR's review rules. The guide requires
+   a copy submitted when expected wages exceed $200 weekly and both other
+   stated conditions apply. Do not invent a DR 1098 annual employee renewal.
+   Do not separately reduce withholding for federal deductions outside this
+   worksheet. Overtime's federal treatment does not erase Colorado withholding.
+
+Actual 2026 source:
+https://tax.colorado.gov/sites/default/files/documents/DR_1098_Colorado_Withholding_Worksheet_for_Employees.pdf.
+
+### C. Compute UI and FAMLI
+
+For each covered worker, UI taxable pay for the period is the smaller of current
+UI wages and the unused annual Colorado UI base, floored at zero. Multiply by
+that employer's combined actual rate; do not add surcharges again to a combined
+notice rate. The current CDLE page also displays 2027 figures. Use the explicitly
+labelled 2026 table or actual 2026 notice, not a future untitled schedule.
+
+For FAMLI, apply the annual federal wage-cap limitation per worker using the
+federal owner; multiply covered pay by the employee share and, where required,
+employer share. Headcount counts qualifying **individuals**, not a weekly
+average. New hires' covered pay can attract premiums immediately even before
+that individual has worked enough weeks to count for a later headcount test.
+Keep employee deductions separate from employer expense.
+
+### D. File, pay, correct and retain confirmation
+
+- **DOR withholding:** use the assigned frequency, with weekend/holiday next-day
+  rule. Monthly/quarterly zero returns are required unless approved seasonal
+  treatment; weekly filers report periods with wages. Weekly EFT identifies the
+  period-ending Friday. The final year-end weekly period ends December 31 and
+  is due third business day afterwards. EFT satisfies return and payment;
+  do not also file DR 1094 and create a duplicate bill. Non-EFT eligible filers
+  use Revenue Online or DR 1094. Save confirmation and match account/period.
+- **Corrections:** report only the additional withholding for underpayment,
+  rather than re-reporting the original total. Same-year overpayments may offset
+  a later period; year-end refunds use the applicable DR 1093/DR 0137 procedure.
+  A notice may require a written protest within 30 days. Source:
+  https://tax.colorado.gov/withholding-tax-guide, Parts 3-4.
+- **W-2:** report state wages/withholding and provide to employee/DOR by January
+  31 following year, using actual calendar adjustments. State e-filing follows
+  the federal electronic-filing trigger, whose number remains in federal owner.
+  Request Revenue Online withholding-submitter access at least five days before
+  first filing: Additional Services > Submit Year-End Withholding > Request
+  Withholding Submitter Access. Then submit manual entries or .txt file and save
+  acceptance/errors. Electronic filers normally do not file paper DR 1093.
+  Supply DR 0995 or its full written contents annually in required languages;
+  a hyperlink or workplace posting alone is insufficient.
+- **UI:** MyUI Employer+ > relevant quarter wage-detail report; enter/upload each
+  worker's identifying information and gross wages, with monthly employment
+  counts for workers employed on the 12th day. Correct errors, submit, save
+  acceptance, verify taxable wages/rate and separately pay premiums. Reports
+  are electronic unless the employer has an approved non-electronic waiver;
+  third-party administrators cannot use that waiver. Copy Previous Quarter
+  requires actual edits; it does not authorize repeating stale pay.
+- **FAMLI:** My FAMLI+ > quarterly wage reporting; manual entry or supported file
+  upload, validate workers/wages and headcount, submit and separately remit the
+  assessed premium. Save report, payment and reconciliation. Follow current
+  private-plan approval instructions before assuming an exemption. A private
+  plan is not created by buying a policy alone.
+
+UI source: https://cdle.colorado.gov/ui/employers/requirements/premiums/wage-reporting.
+FAMLI source: https://famli.colorado.gov/employers (payment/reporting accordions).
+
+### E. Classification and preserved labor-law subjects
+
+The current CDLE independent-contractor page presumes covered employment until
+both freedom from control/direction in contract **and fact**, and a customary
+independent related business are established. The old categorical three-prong
+ABC statement is withdrawn. A qualifying written contract shifts a rebuttable
+presumption; it does not conclusively determine status. Read the page's complete
+clauses and prominent unemployment/income-tax disclosure: nonexclusivity,
+limited quality-control direction, contract rather than hourly pay, constrained
+termination, minimal training, tools/benefits limits, time flexibility, payment
+to business name and separate operations. Source:
+https://cdle.colorado.gov/independent-contractors (ordinary browser read).
+
+The former labor-law topics remain in scope as checks requiring current sources:
+HFWA accrual/carryover, PHE supplemental leave and notices/records; Equal Pay for
+Equal Work Act posting, compensation/benefits disclosure, application deadlines,
+post-selection notices and wage-history restrictions; final wages and earned
+vacation, including the cited Nieto v. Clark's Market (2021) issue; construction
+classification, wage theft, retainage and prevailing wage; SecureSavings and
+local occupational privilege taxes. Their former numerical claims have not been
+confirmed for 2026 and are not usable computations here. Do not treat the old
+private-plan approval duration, FAMLI weekly benefit maximum, federal wage-cap
+number or final-pay penalty formula as current verified figures.
+
+## Worked cases
+
+### Five-employee Denver creative agency
+
+Preserve the old invented agency: S-corporation owner earns $80,000 and four
+employees $55,000 each, $300,000 total. Assume all wages covered, owner single,
+other four MFJ, no DR 0004/additional amounts, equal full-year payroll, ordinary
+new-employer UI, each worker over the UI base and below the federal FAMLI cap.
+Annualized worksheet withholding is $11,022, not the old rough $11,700. UI is
+$4,666.50. Five qualifying nationwide individuals means no required employer
+FAMLI share; employees' total share is $1,320. Actual per-pay rounding can differ.
+Annual withholding is in the monthly range, subject to assigned frequency.
+
+```oa-check
+name: Colorado five employee agency 2026
+inputs:
+  owner_pay: 80000
+  other_pay: 55000
+  other_count: 4
+  ui_base: 30600
+steps:
+  payroll: owner_pay + other_pay * other_count
+  owner_wh: max(0, owner_pay - 5500) * 0.044
+  staff_wh: max(0, other_pay - 11000) * 0.044 * other_count
+  annual_wh: owner_wh + staff_wh
+  ui: ui_base * (other_count + 1) * 0.0305
+  employee_famli: payroll * 0.0044
+  required_employer_famli: payroll * 0
+expected:
+  payroll: 300000
+  annual_wh: 11022
+  ui: 4666.50
+  employee_famli: 1320
+  required_employer_famli: 0
+```
+
+### Fifty-employee technology company: contribution election
+
+Preserve the invented company with 50 covered workers earning $120,000 each.
+Assume all single/default worksheet, below the federal FAMLI cap and a supplied
+2026 UI notice with **hypothetical combined 1.10%**; this is not a published
+industry rate. UI is $16,830; annualized withholding $251,900. FAMLI is $52,800,
+ordinarily $26,400 each side. Required employer UI plus FAMLI costs $43,230;
+paying employees' FAMLI share voluntarily raises that to $69,630, a $26,400
+employer cost decision. Withholding is weekly/EFT under the stated assumptions.
+
+```oa-check
+name: Colorado technology employer FAMLI election
+inputs:
+  count: 50
+  annual_pay: 120000
+  ui_base: 30600
+  assumed_notice_rate: 0.011
+steps:
+  payroll: count * annual_pay
+  annual_wh: count * max(0, annual_pay - 5500) * 0.044
+  ui: count * ui_base * assumed_notice_rate
+  half_famli: payroll * 0.0044
+  total_famli: half_famli * 2
+  standard_employer_cost: ui + half_famli
+  absorb_employer_cost: ui + total_famli
+  added_cost: absorb_employer_cost - standard_employer_cost
+expected:
+  payroll: 6000000
+  annual_wh: 251900
+  ui: 16830
+  total_famli: 52800
+  standard_employer_cost: 43230
+  absorb_employer_cost: 69630
+  added_cost: 26400
+```
+
+### Multistate employer
+
+The old 20-person employer has 12 in Texas, five in Colorado and three in
+Wyoming/New Mexico. Assume every person qualifies for the preceding-year
+headcount, only the five Colorado workers are Colorado-localized, each paid
+$120,000 below the federal FAMLI cap, and an ordinary new-employer UI rate.
+Colorado employer UI/FAMLI expense is $7,306.50. Nationwide headcount requires
+the employer FAMLI share even though only five work in Colorado. No other state's
+rates or liability is inferred.
+
+```oa-check
+name: Colorado multistate nationwide headcount
+inputs:
+  colorado_count: 5
+  colorado_pay: 120000
+steps:
+  colorado_payroll: colorado_count * colorado_pay
+  ui: colorado_count * 30600 * 0.0305
+  employer_famli: colorado_payroll * 0.0044
+  employee_famli: employer_famli
+  employer_cost: ui + employer_famli
+expected:
+  colorado_payroll: 600000
+  ui: 4666.50
+  employer_famli: 2640
+  employee_famli: 2640
+  employer_cost: 7306.50
+```
+
+### Boulder startup growing from eight to twelve in August
+
+Hiring alone does not establish the next year's qualifying individual count.
+Preserve the growth case but obtain each person's actual weeks. At assumed
+$600,000 covered pay below each worker's federal cap, nine qualifying nationwide
+individuals means zero required employer premium versus $2,640 for ten. The
+employee share remains $2,640 in either scenario. Do not impose retroactive
+employer premiums merely because the current payroll reached twelve people.
+
+```oa-check
+name: Colorado startup qualifying headcount scenarios
+inputs:
+  covered_pay: 600000
+steps:
+  employee_share: covered_pay * 0.0044
+  nine_employer_share: covered_pay * 0
+  ten_employer_share: covered_pay * 0.0044
+  difference: ten_employer_share - nine_employer_share
+expected:
+  employee_share: 2640
+  nine_employer_share: 0
+  ten_employer_share: 2640
+  difference: 2640
+```
+
+## Checks before finalising
+
+- Reconcile certificate dates and all DR 1098 lines; worksheet is not certificate.
+- Verify 2026 rate notice and year-labelled UI table; no duplicate surcharge.
+- Track separate per-worker UI and federally capped FAMLI wage bases.
+- Count nationwide qualifying individuals from weeks, not average headcount.
+- Reconcile employee deductions, employer expense, three portal accounts and receipts.
+- Check notices, labor-law overlays and private-plan approval independently.
+
+## When to refuse or refer
+
+Refer doubtful worker/localization status, reimbursement classes, private plans,
+leave eligibility/protection, wage disputes and local obligations. Obtain DOR
+assigned frequency at the published $50,000 boundary conflict. Do not use the
+old unsourced experienced UI range, rough withholding percentages or obsolete
+FAMLI premium/headcount method.
+
+## Sources
+
+| Source | URL | Reading scope | Read on |
+|---|---|---|---|
+| DOR wage withholding | https://tax.colorado.gov/withholding-tax-guide | Read for Parts 1-4 registration, certificates, resident/nonresident allocation, filing table/boundary conflict, EFT, corrections, W-2 and DR 0995 | 2026-11-13 |
+| Actual 2026 DR 1098 | https://tax.colorado.gov/sites/default/files/documents/DR_1098_Colorado_Withholding_Worksheet_for_Employees.pdf | Read for all three pages, worksheet lines, defaults, certificate replacement and EFT/annual filing FAQs | 2026-11-13 |
+| CDLE premium rates | https://cdle.colorado.gov/ui/employers/requirements/premiums/premium-rates | Read for year-labelled 2026 wage base in ordinary browser after direct403; current page also displays 2027 | 2026-11-13 |
+| CDLE introductory rates | https://cdle.colorado.gov/ui/employers/requirements/premiums/introductory-rates | Read for every component/category of actual 2026 table in ordinary browser; did not apply separate 2027 table | 2026-11-13 |
+| CDLE liability | https://cdle.colorado.gov/ui/employers/requirements/employer-liability-requirements | Read for general/domestic/agricultural coverage and nonprofit/government/successor exceptions in ordinary browser | 2026-11-13 |
+| CDLE wage reporting | https://cdle.colorado.gov/ui/employers/requirements/premiums/wage-reporting | Read for quarterly due dates, monthly counts, electronic reporting/waiver, corrections and MyUI workflow in ordinary browser | 2026-11-13 |
+| CDLE classification | https://cdle.colorado.gov/independent-contractors | Read for both substantive tests, rebuttable contract presumption, all expanded clauses and prominent disclosure in ordinary browser | 2026-11-13 |
+| FAMLI employers | https://famli.colorado.gov/employers | Read for 2026 premium, employee/employer shares, cap, qualifying headcount, national example, localization, payment/reporting accordions in ordinary browser | 2026-11-13 |
+| SB25-144 | https://leg.colorado.gov/bills/sb25-144 | Read for enacted summary's 2026 premium and additional neonatal intensive-care leave | 2026-11-13 |
+
+Not yet confirmed: full actual 2026 experienced UI schedule and each notice, detailed UI registration/payment screen fields, precise holiday-adjusted FAMLI dates, final 2026 DR0004/1093/1094 fields, private-plan approval duration, current weekly benefit maximum, job-protection/leave eligibility and labor-law overlays named above. HFWA/PHE, Equal Pay, final-pay/vacation including Nieto v. Clark's Market (2021), construction/wage-theft/retainage, SecureSavings and local OPT need their own current sources. These gaps remain partial, not silently certified.
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at https://www.openaccountants.com.
