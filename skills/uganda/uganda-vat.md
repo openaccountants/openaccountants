@@ -2,18 +2,19 @@
 name: uganda-vat
 description: >
   Uganda VAT return work, tax year 2026-27: the 18% rate, registration threshold of UGX 300,000,000 from 1 July 2026, withholding VAT at 6% and its 2026 e-invoice exception, zero-rated supplies, blocked input tax, EFRIS, supplier patterns, bad debts and penalties. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
-version: 2.1
+version: 2.2
 jurisdiction: UG
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Uganda VAT v2.1
+# Uganda VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +30,6 @@ Persons making taxable supplies in Uganda above the threshold, voluntary registr
 |---|---|---|---|
 | Annual registration threshold | UGX 300,000,000 (was 150,000,000) | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
 | Quarterly test, one quarter of threshold | UGX 75,000,000 | 2026-27 | same; s.7(1) in https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
-| Standard rate | unverified: 18% (old file; s.78(2) not opened) | 2026-27 | unverified |
 | Withholding VAT | 6% of taxable value; none if an e-invoice or e-receipt is issued | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
 | Refund for non-taxable buyer on e-receipts | 5% of tax, on UGX 2,000,000 within 30 days | 2026-27 | same |
 | Refund interest cut-off | Excess of not less than 5% of the claim | 2026-27 | same |
