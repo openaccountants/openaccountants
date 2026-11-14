@@ -13,14 +13,15 @@ description: >
   "foreign company VAT Netherlands", "fiscal representative Netherlands". Out of scope:
   filling in the return boxes (nl-vat-return), income tax
   (nl-income-tax), cross-border income (nl-cross-border).
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Netherlands VAT registration, KOR, OSS and non-established businesses (2026)
@@ -252,22 +253,22 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Wet op de omzetbelasting 1968, version from 1 January 2026 (art. 1a, 6, 6h, 6k, 7, 9, 12, 25 to 25d, 28r to 28tn, 33g) | https://wetten.overheid.nl/BWBR0002629/2026-01-01 | 2026-10-23 |
-| Belastingdienst: btw-id and ob-nummer, KVK route | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-identificatienummer-en-omzetbelastingnummer | 2026-10-23 |
-| KVK: the VAT number, and registering without the KVK | https://www.kvk.nl/starten/alles-wat-je-moet-weten-over-het-btw-nummer/ | 2026-10-23 |
-| Belastingdienst: what is a foreign business | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/wat_is_een_buitenlandse_ondernemer/ | 2026-10-23 |
-| Belastingdienst: tax office and registration for foreign businesses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/belastingkantoor_en_registratie/ | 2026-10-23 |
-| Belastingdienst: Aanmelding Onderneming buitenland form | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/aanmelding-onderneming-buitenland | 2026-10-23 |
-| Belastingdienst: fiscal representative | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/fiscaal_vertegenwoordiger/ | 2026-10-23 |
-| Belastingdienst: reverse charge with foreign businesses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/waarover_btw_berekenen/verleggingsregeling/wanneer_btw_verleggen/verlegging_bij_zakendoen_met_het_buitenland | 2026-10-23 |
-| Belastingdienst: return deadlines for foreign businesses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/uiterste_ontvangstdatum_aangifte_en_betaling_btw_aangifte | 2026-10-23 |
-| Belastingdienst: filing returns for foreign businesses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/aangifte_doen/btw_aangifte_doen | 2026-10-23 |
-| Belastingdienst: KOR conditions | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-10-23 |
-| Belastingdienst: joining the KOR | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor | 2026-10-23 |
-| Belastingdienst: leaving the KOR | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor | 2026-10-23 |
-| Belastingdienst: One Stop Shop (Union and import schemes) | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-melden-eenloketsysteem | 2026-10-23 |
-| Belastingdienst: distance sales of goods within the EU, EUR 10,000 threshold | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-goederen-eu-particulieren | 2026-10-23 |
-| Belastingdienst: import scheme registration for non-EU businesses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/e_commerce_en_diensten/ik_lever_goederen_van_buiten_de_eu_-_de_invoerregeling/invoerregeling_registratie/ | 2026-10-23 |
-| Belastingdienst: late filing penalty | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_doet_geen_of_te_laat_aangifte | 2026-10-23 |
-| Belastingdienst: late payment penalty | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-10-23 |
+| Belastingdienst: btw-id and ob-nummer, KVK route. Read for the VAT ID and VAT number. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-identificatienummer-en-omzetbelastingnummer | 2026-10-23 |
+| KVK: the VAT number, and registering without the KVK. Read for registering through the KVK or without it. | https://www.kvk.nl/starten/alles-wat-je-moet-weten-over-het-btw-nummer/ | 2026-10-23 |
+| Belastingdienst: what is a foreign business. Read for who is a foreign business. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/wat_is_een_buitenlandse_ondernemer/ | 2026-10-23 |
+| Belastingdienst: tax office and registration for foreign businesses. Read for the tax office for foreign businesses. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/belastingkantoor_en_registratie/ | 2026-10-23 |
+| Belastingdienst: Aanmelding Onderneming buitenland form. Read for the registration form for foreign businesses. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/aanmelding-onderneming-buitenland | 2026-10-23 |
+| Belastingdienst: fiscal representative. Read for when a fiscal representative is needed. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/fiscaal_vertegenwoordiger/ | 2026-10-23 |
+| Belastingdienst: reverse charge with foreign businesses. Read for reverse charge with foreign businesses. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/waarover_btw_berekenen/verleggingsregeling/wanneer_btw_verleggen/verlegging_bij_zakendoen_met_het_buitenland | 2026-10-23 |
+| Belastingdienst: return deadlines for foreign businesses. Read for the return deadlines for foreign businesses. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/uiterste_ontvangstdatum_aangifte_en_betaling_btw_aangifte | 2026-10-23 |
+| Belastingdienst: filing returns for foreign businesses. Read for how foreign businesses file. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/btw_aangifte_doen_en_betalen/aangifte_doen/btw_aangifte_doen | 2026-10-23 |
+| Belastingdienst: KOR conditions. Read for the KOR conditions. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-10-23 |
+| Belastingdienst: joining the KOR. Read for joining the KOR. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor | 2026-10-23 |
+| Belastingdienst: leaving the KOR. Read for leaving the KOR. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor | 2026-10-23 |
+| Belastingdienst: One Stop Shop (Union and import schemes). Read for the One Stop Shop. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-melden-eenloketsysteem | 2026-10-23 |
+| Belastingdienst: distance sales of goods within the EU, EUR 10,000 threshold. Read for the distance sales threshold. | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/btw-goederen-eu-particulieren | 2026-10-23 |
+| Belastingdienst: import scheme registration for non-EU businesses. Read for import scheme registration. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/btw_voor_buitenlandse_ondernemers/e_commerce_en_diensten/ik_lever_goederen_van_buiten_de_eu_-_de_invoerregeling/invoerregeling_registratie/ | 2026-10-23 |
+| Belastingdienst: late filing penalty. Read for the late filing penalty. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_doet_geen_of_te_laat_aangifte | 2026-10-23 |
+| Belastingdienst: late payment penalty. Read for the late payment penalty. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-10-23 |
 
 Not yet confirmed: the exact OSS start rule for a non-EU business registering through the Netherlands (the Belastingdienst page read describes the route for Dutch businesses); the text of the Uitvoeringsbesluit omzetbelasting 1968 on when a fiscal representative is compulsory (the list above is the Belastingdienst's).

@@ -1,16 +1,17 @@
 ---
 name: nl-corporate-tax
 description: "Dutch corporate income tax (vennootschapsbelasting, Vpb) for a resident bv or nv, tax year 2026. Covers the 19% and 25.8% rates with the EUR 200,000 bracket, the fiscal profit and what is not deductible, partly deductible costs (EUR 5,700 or 73.5%), depreciation caps and the building floor value, the director-shareholder usual salary, the participation exemption, the fiscal unity, earnings stripping (24.5% of tax EBITDA or EUR 1,000,000), loss carry-back of one year and unlimited carry-forward with the EUR 1,000,000 plus 50% cap, the 30% ownership-change rule, the innovation box, liquidation and cessation losses, provisional assessments, the return deadline and extensions, tax interest (belastingrente) and penalties. Trigger on: vennootschapsbelasting, Vpb aangifte, gemengde kosten, bodemwaarde, gebruikelijk loon, Dutch corporate tax, BV tax, fiscale eenheid, deelnemingsvrijstelling, earnings stripping, verliesverrekening, innovatiebox, liquidatieverlies, voorlopige aanslag, belastingrente Vpb. Out of scope: dividend tax and conditional withholding tax (nl-dividend-withholding), transfer pricing (netherlands-transfer-pricing), residence and emigration (nl-cross-border), foreign tax relief (nl-double-tax-relief), the shareholder's box 2 tax (nl-box2-substantial-interest), objections (nl-tax-objection)."
-version: 1.2
+version: 1.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Netherlands corporate income tax (vennootschapsbelasting, Vpb), 2026
@@ -190,30 +191,30 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Wet op de vennootschapsbelasting 1969, arts. 2, 8, 10, 12b, 12bd, 13, 13d, 15, 15b, 15i, 20, 20a, 22 (in force from 1 January 2026) | https://wetten.overheid.nl/BWBR0002672/2026-01-01 | 2026-10-24 |
-| Wet Vpb 1969, change overview (Belastingplan 2026, Stb. 2025, 444; Overige fiscale maatregelen 2026, Stb. 2025, 445) | https://wetten.overheid.nl/BWBR0002672/2026-01-01/0/informatie | 2026-10-24 |
-| Belastingplan 2026, Stb. 2025, 444 (art. IXA: Wet Vpb change from 1 January 2029) | https://zoek.officielebekendmakingen.nl/stb-2025-444.html | 2026-10-24 |
+| Wet Vpb 1969, change overview (Belastingplan 2026, Stb. 2025, 444; Overige fiscale maatregelen 2026, Stb. 2025, 445). Read for the 2026 changes to the Vpb Act. | https://wetten.overheid.nl/BWBR0002672/2026-01-01/0/informatie | 2026-10-24 |
+| Belastingplan 2026, Stb. 2025, 444 (art. IXA: Wet Vpb change from 1 January 2029). Read for the Vpb change from 2029. | https://zoek.officielebekendmakingen.nl/stb-2025-444.html | 2026-10-24 |
 | Wet inkomstenbelasting 2001, arts. 3.14 (fines not deductible), 3.15 (partly deductible costs), 3.30 and 3.30a (depreciation caps, building floor value), version in force from 1 January 2026 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
-| Belastingdienst, threshold for partly deductible costs 2026 (EUR 5,700; 73.5% for Vpb) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 | 2026-10-24 |
-| Belastingdienst, depreciation for Vpb (buildings stop at WOZ value) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/afschrijving-vennootschapsbelasting | 2026-10-24 |
-| Belastingdienst, salary and substantial interest (gebruikelijk loon EUR 58,000 in 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang | 2026-10-24 |
-| Belastingdienst, credit for investment participations (deelnemingsverrekening) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingsverrekening | 2026-10-24 |
-| Belastingdienst, Vpb rates | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting | 2026-10-24 |
-| Belastingdienst, changes to Vpb 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026 | 2026-10-24 |
-| Belastingdienst, earnings stripping | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking | 2026-10-24 |
-| Belastingdienst, offsetting losses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen | 2026-10-24 |
-| Belastingdienst, change of ownership | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging | 2026-10-24 |
-| Belastingdienst, participations | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen | 2026-10-24 |
-| Belastingdienst, qualifying investment participation | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/kwalificerende_beleggingsdeelneming | 2026-10-24 |
-| Belastingdienst, fiscal unity | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, threshold for partly deductible costs 2026 (EUR 5,700; 73.5% for Vpb). Read for the threshold for partly deductible costs. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 | 2026-10-24 |
+| Belastingdienst, depreciation for Vpb (buildings stop at WOZ value). Read for the depreciation limit on buildings. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/afschrijving-vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, salary and substantial interest (gebruikelijk loon EUR 58,000 in 2026). Read for the customary salary amount. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang | 2026-10-24 |
+| Belastingdienst, credit for investment participations (deelnemingsverrekening). Read for the credit for investment participations. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingsverrekening | 2026-10-24 |
+| Belastingdienst, Vpb rates. Read for the 2026 Vpb rates and bracket. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, changes to Vpb 2026. Read for what changed in Vpb for 2026. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026 | 2026-10-24 |
+| Belastingdienst, earnings stripping. Read for the earnings stripping limit. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking | 2026-10-24 |
+| Belastingdienst, offsetting losses. Read for loss offset rules. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen | 2026-10-24 |
+| Belastingdienst, change of ownership. Read for the change of ownership rule. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging | 2026-10-24 |
+| Belastingdienst, participations. Read for the participation exemption. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen | 2026-10-24 |
+| Belastingdienst, qualifying investment participation. Read for the qualifying investment participation test. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/kwalificerende_beleggingsdeelneming | 2026-10-24 |
+| Belastingdienst, fiscal unity. Read for the fiscal unity conditions. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting | 2026-10-24 |
 | Belastingdienst, innovation box | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox | 2026-10-24 |
 | Belastingdienst, innovation box smaller and larger taxpayers | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kleinere-en-grotere-belastingplichtigen | 2026-10-24 |
-| Belastingdienst, filing the Vpb return | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen | 2026-10-24 |
-| Belastingdienst, extension for the Vpb return | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/uitstel_aangifte_vennootschapsbelasting | 2026-10-24 |
-| Belastingdienst, provisional assessment | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/voorlopige_aanslag_vennootschapsbelasting | 2026-10-24 |
-| Belastingdienst, tax interest on Vpb | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/belastingrente_betalen_bij_vennootschapsbelasting | 2026-10-24 |
-| Belastingdienst, tax interest rates | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
-| Belastingdienst, penalties | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete | 2026-10-24 |
-| Belastingdienst, paying a dividend (15% dividend tax) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/dividendbelasting/als_u_dividend_uitkeert | 2026-10-24 |
-| Belastingdienst, minimum tax | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting | 2026-10-24 |
+| Belastingdienst, filing the Vpb return. Read for how and when to file. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen | 2026-10-24 |
+| Belastingdienst, extension for the Vpb return. Read for extension of the filing date. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/uitstel_aangifte_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, provisional assessment. Read for the provisional assessment. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/voorlopige_aanslag_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, tax interest on Vpb. Read for how tax interest runs on Vpb. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/belastingrente_betalen_bij_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, tax interest rates. Read for the tax interest rates. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
+| Belastingdienst, penalties. Read for the penalty rules. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete | 2026-10-24 |
+| Belastingdienst, paying a dividend (15% dividend tax). Read for the dividend tax rate and return. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/dividendbelasting/als_u_dividend_uitkeert | 2026-10-24 |
+| Belastingdienst, minimum tax. Read for the Pillar Two minimum tax. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting | 2026-10-24 |
 
 Not yet confirmed: the tax interest rate for 2027 (set once a year from the ECB rate before 1 November); the measures in the Belastingplan 2027 presented on 15 September 2026, which are not yet law; how the earnings stripping limit is split inside a fiscal unity when pre-joining losses are offset.

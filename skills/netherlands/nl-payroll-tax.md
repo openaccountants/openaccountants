@@ -1,10 +1,10 @@
 ---
 name: nl-payroll-tax
 description: "Dutch payroll (loonheffingen) and the work-cost scheme (werkkostenregeling, WKR) for tax year 2026. Running payroll: wage tax and national insurance withheld under the Wet LB 1964, white and green tables, special-remuneration tables, the 2026 combined bands (35.75%, 37.56%, 49.50%) and the AOW-age bands, the payroll tax credits applied by one employer, the 52% anonymous rate, employer premiums (AWf, Aof, Wko, Whk, Ufo) and the Zvw levy on the EUR 79,409 cap, the director's customary wage of EUR 58,000, minimum wage, holiday pay and the transition payment, the monthly and four-weekly loonaangifte calendar, corrections, the EUR 83 and 3% penalties, payslips and the annual statement. WKR and employer final levies: whether a benefit is wage, the targeted exemptions and nil valuations, designating final-levy wage, the customary test (30% and EUR 2,400 per person), the free space of 2.00% up to EUR 400,000 and 1.18% above, the 80% final levy, the group (concern) election, settlement in the second return period of 2027, gifts to non-employees (45% / 75%), the van final levy and grossed-up final levy on assessments. Trigger phrases: loonheffing, loonaangifte, Dutch payroll, loonstrook, witte tabel, groene tabel, bijzondere beloningen, anoniementarief, minimumloon, vakantiegeld, nulaangifte, betaalverzuimboete, werkkostenregeling, WKR, vrije ruimte, eindheffing, eindheffingsloon, gerichte vrijstelling, nihilwaardering, concernregeling, gebruikelijkheidstoets, kerstpakket, onbelaste vergoeding, reiskostenvergoeding, thuiswerkvergoeding. Out of scope: company car (nl-company-car); expat scheme (nl-30-percent-ruling); premiums in depth and the self-employed (nl-social-contributions); cross-border (nl-cross-border)."
-version: 1.3
+version: 1.4
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-09
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
   - payroll-workflow-base
@@ -12,6 +12,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Netherlands: payroll (loonheffingen), work-cost scheme (WKR) and final levies 2026
@@ -246,14 +247,14 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Belastingdienst, Handboek Loonheffingen 2026 (March 2026), para. 4.2, 4.12.5, ch. 6, 7 (incl. §7.5), 9, 10, 13, 14, 22, 25.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
-| Belastingdienst, rates appendix loonheffingen 2026, edition 4 (25 June 2026), tables 5.1, 9, 10, 11, 12, 13 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-27 |
-| Belastingdienst, period codes and filing and payment dates 2026 | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-27 |
+| Belastingdienst, rates appendix loonheffingen 2026, edition 4 (25 June 2026), tables 5.1, 9, 10, 11, 12, 13. Read for the 2026 payroll rates and tables. | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-27 |
+| Belastingdienst, period codes and filing and payment dates 2026. Read for the filing and payment dates. | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-27 |
 | Wet op de loonbelasting 1964, art. 12a, 20a, 22, 26b, 31 and 31a | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-27 |
-| Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
-| Rijksoverheid, minimum wage 2026 | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
-| Rijksoverheid, holiday allowance | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
+| Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026). Read for the tax-free mileage allowance. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
+| Rijksoverheid, minimum wage 2026. Read for the 2026 minimum wage. | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
+| Rijksoverheid, holiday allowance. Read for the holiday allowance. | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
 | Burgerlijk Wetboek Book 7, art. 629, 634, 640a | https://wetten.overheid.nl/BWBR0005290/2026-01-01 | 2026-10-27 |
-| Rijksoverheid, transition payment | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
-| Tweede Kamer, Belastingplan 2027, explanatory memorandum (kst. 37022 nr. 3) | https://zoek.officielebekendmakingen.nl/kst-37022-3.html | 2026-10-27 |
+| Rijksoverheid, transition payment. Read for the transition payment. | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
+| Tweede Kamer, Belastingplan 2027, explanatory memorandum (kst. 37022 nr. 3). Read for the proposed 2027 changes. | https://zoek.officielebekendmakingen.nl/kst-37022-3.html | 2026-10-27 |
 
 Not yet confirmed: the Belastingplan 2027 proposes abolishing the own-products exemption from 2027 (a bill, not law; do not apply to 2026). These older points were not re-read and stay out until checked: maternity and partner leave and their UWV benefits, working-time limits, the full payslip content list, third-party payments reporting, the employee-count limit for filing in Mijn Belastingdienst Zakelijk, the exact customary-wage exceptions for start-ups and loss-making companies, the overtime revision method for multiple contracts and business transfers, director-liability reporting deadlines in the Invorderingswet 1990, and the detailed conditions of the tools, training, workplace and bicycle exemptions (handbook ch. 22 to 23).

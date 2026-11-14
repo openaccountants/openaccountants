@@ -1,16 +1,17 @@
 ---
 name: nl-company-car
 description: "Dutch company car benefit (bijtelling privegebruik auto) in payroll for tax year 2026. Covers when an employer adds private use of a car or van to wage (Wet LB 1964 art. 13bis): the 22% addition on the catalogue value including VAT and BPM, 25% for cars first admitted before 2017, the 2026 zero-emission discount (18% up to EUR 30,000, 22% above), the 60-month rule that fixes the rate in force at first admission, 35% of market value for cars older than 16 years, vans, the 500 km private-use proof (rittenregistratie, Verklaring geen privegebruik), the employee's own contribution (eigen bijdrage), Zvw and employee-insurance effects, and why the werkkostenregeling cannot absorb it. Trigger on: bijtelling, auto van de zaak, company car Netherlands, lease car tax, eigen bijdrage auto, rittenregistratie, bestelauto. Out of scope: general payroll (nl-payroll-tax), entrepreneurs' own cars in box 1 profit (nl-zzp-deductions), VAT on private use (nl-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
-# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.2
+# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.3
 
 This skill is the car method that `nl-payroll-tax` refers to. It covers the private-use benefit an employer adds to wages. General payroll steps (tables, credits, the return itself) stay in those two skills.
 
@@ -174,15 +175,15 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Wet op de loonbelasting 1964, art. 13bis, 31 and 36c (version 1 Jan 2026, and current version from 8 Oct 2026) | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-23 |
-| Wet op de loonbelasting 1964, current version | https://wetten.overheid.nl/BWBR0002471/ | 2026-10-23 |
+| Wet op de loonbelasting 1964, current version. Read for the company car addition rules. | https://wetten.overheid.nl/BWBR0002471/ | 2026-10-23 |
 | Wet op de loonbelasting 1964, version from 1 Jan 2027 (art. 13bis) | https://wetten.overheid.nl/BWBR0002471/2027-01-01 | 2026-10-23 |
-| Staatssecretaris van Financiën, letter to the Eerste Kamer, Herstel omissie versobering youngtimerregeling, 15 Jan 2026 | https://apiback.eerstekamer.nl/9370000/1/j9vvkfvj6b325az/vmu8e84v2svn/f=/vmu8e84n1bqh.pdf | 2026-10-23 |
-| Kamerstukken II 2025-26, 36812, nr. 116 (transition for cars that turned 15 in 2025) | https://zoek.officielebekendmakingen.nl/kst-36812-116.html | 2026-10-23 |
+| Staatssecretaris van Financiën, letter to the Eerste Kamer, Herstel omissie versobering youngtimerregeling, 15 Jan 2026. Read for the youngtimer correction. | https://apiback.eerstekamer.nl/9370000/1/j9vvkfvj6b325az/vmu8e84v2svn/f=/vmu8e84n1bqh.pdf | 2026-10-23 |
+| Kamerstukken II 2025-26, 36812, nr. 116 (transition for cars that turned 15 in 2025). Read for the transition for cars that turned 15 in 2025. | https://zoek.officielebekendmakingen.nl/kst-36812-116.html | 2026-10-23 |
 | Wet inkomstenbelasting 2001, art. 3.145 (repealed 1 Jan 2006) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-23 |
-| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), par. 13.2, 13.4, 13.5, 14.5, 23.3, 23.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-23 |
-| Belastingdienst, Tarieven, bedragen en percentages loonheffingen 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-23 |
-| Belastingdienst, Bijtelling privégebruik auto 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/bijtelling-privegebruik-auto-2026 | 2026-10-23 |
-| Belastingdienst, Werknemer: wat is mijn bijtelling? | https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/reizen-werk-privegebruik-werknemer-wat-is-mijn-bijtelling | 2026-10-23 |
-| Kennisgroep Belastingdienst KG:213:2026:1 (youngtimer age 25 from 2027) | https://kennisgroepen.belastingdienst.nl/publicaties/kg21320261-heretikettering-bij-wetswijziging-privegebruik-auto/ | 2026-10-23 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), par. 13.2, 13.4, 13.5, 14.5, 23.3, 23.4. Read for the private use addition and the 500 km proof. | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-23 |
+| Belastingdienst, Tarieven, bedragen en percentages loonheffingen 2026. Read for the 2026 addition percentages and caps. | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-23 |
+| Belastingdienst, Bijtelling privégebruik auto 2026. Read for the 2026 addition rates. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/bijtelling-privegebruik-auto-2026 | 2026-10-23 |
+| Belastingdienst, Werknemer: wat is mijn bijtelling?. Read for how an employee's addition is worked out. | https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/reizen-werk-privegebruik-werknemer-wat-is-mijn-bijtelling | 2026-10-23 |
+| Kennisgroep Belastingdienst KG:213:2026:1 (youngtimer age 25 from 2027). Read for the youngtimer age from 2027. | https://kennisgroepen.belastingdienst.nl/publicaties/kg21320261-heretikettering-bij-wetswijziging-privegebruik-auto/ | 2026-10-23 |
 
 Not yet confirmed: (1) the retroactive repair of art. 13bis(5)(b) (market value from 16 instead of 15 years) is announced but was not in the law text on 23 October 2026; (2) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
