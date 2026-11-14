@@ -12,16 +12,15 @@ category: international
 tax_year: 2026
 tax_year_notes: "The notice says As of 2 June 2026. Selected complete units of Immigration Control Amendment Ordinance No. 2 of 2026 and the 2014 revised principal were read. The amendment copy gives publication on 27 April 2026, while the live official index gives 5 May 2026; commencement is the day after publication. No commencement date is selected. The vessel guide's filename says March 2026 and its fee sections refer to bookings from 1 April 2020. Later law, authoritative status, actual application and collection remain held. These are dated sources, not a general fiscal year or comprehensive 2026 coverage."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 ---
 
-# Pitcairn Landing Fee and Passenger Levy Reference (v0.2)
+# Pitcairn Landing Fee and Passenger Levy Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -213,7 +212,7 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| S1. Immigration Control Ordinance 2006: Fees and Levies | https://www.government.pn/s/2026-04-30-Immigration-Fees-Notice.pdf | Exact reading day unrecorded; public source files retrieved 2026-10-31 UTC; specified units read |
+| S1. Immigration Control Ordinance 2006: Fees and Levies | https://www.government.pn/s/2026-04-30-Immigration-Fees-Notice.pdf | 2026-11-14 (re-read the whole notice: landing fees NZ$100, NZ$50, NIL; passport stamp NZ$20; head levy NZ$2); first read by Ryan 2026-10-31 UTC |
 | S2. Immigration Control Amendment Ordinance 2026, No. 2 of 2026 | https://www.government.pn/s/2026-04-27-Immigration-Control-Amendment-Ordinance-as-published.pdf | Exact reading day unrecorded; public source files retrieved 2026-10-31 UTC; specified units read |
 | S3. Immigration Control Ordinance, Chapter 12, Revised Edition 2014 | https://www.government.pn/s/Cap-12-Immigration-Ordinance-2014-Rev-Ed.pdf | Exact reading day unrecorded; public source files retrieved 2026-10-31 UTC; specified units read |
 | S4. Guide for Visiting Vessels, file labelled as of March 2026 | https://www.government.pn/s/GUIDE-FOR-VISITING-VESSELS-as-of-March-2026.pdf | Exact reading day unrecorded; public source files retrieved 2026-10-31 UTC; specified units read |
@@ -223,34 +222,14 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 ### Primary source library and limits
 
-| Source | Text actually read | Qualification and limits |
-| --- | --- | --- |
-| **S1. [Immigration Control Ordinance 2006: Fees and Levies](https://www.government.pn/s/2026-04-30-Immigration-Fees-Notice.pdf)** | Complete 1-page notice, read natively and against its original image. Fresh HTTPS PDF with verified TLS on 31 October 2026 UTC: 129,184 bytes, SHA256 `a7c1ee82920e4f6a2134a42b5404baf250b112833da3d7a89d0886b9cc45d6a9`. | Officially hosted copy. It describes fees set by the Governor in consultation with the Island Council under s 2D(1). Making, publication history, later settings, actual assessment and the age gaps are not fully resolved. |
-| **S2. [Immigration Control Amendment Ordinance 2026, No. 2 of 2026](https://www.government.pn/s/2026-04-27-Immigration-Control-Amendment-Ordinance-as-published.pdf)** | Officially hosted 22-page scan, 3,289,022 bytes, SHA256 `25d10d6820042353b228e021a15bacfe703a40aad53c803ea8cc18952340b5d2`, freshly retrieved with verified TLS. Complete relied units checked against original images: title, making/publication annotations and ss 1-2 on p 1; complete inserted definitions in amendment s 4 on pp 1-2; new s 2D and s 2E on p 4; ss 4A-4C on pp 10-11; new s 5 on p 12; changes to s 15 in amendment ss 20-24 on p 14; repeal of old s 21 in amendment s 29 and new delegation s 18 on p 15. | All pages were OCR processed for location, but only the named units are qualified here. The remaining immigration, enforcement and explanatory provisions are not a complete legal review. Visible signature and date annotations are not authentication or proof resolving the index conflict. |
-| **S3. [Immigration Control Ordinance, Chapter 12, Revised Edition 2014](https://www.government.pn/s/Cap-12-Immigration-Ordinance-2014-Rev-Ed.pdf)** | Fresh verified-TLS 12-page PDF, 181,905 bytes, SHA256 `156338a2e3d235f3891af9130fdd0632c1eace348637dfe6fde0b790b999ad62`. Selected complete native units: ss 1-2 on pp 2-3, s 15 on p 10 and s 21 on p 11. | Historical principal context, not a current consolidation. Intervening amendments and all provisions are not qualified. In particular, the older s 21 cannot be treated as current after the express repeal in S2. |
-| **S4. [Guide for Visiting Vessels, file labelled as of March 2026](https://www.government.pn/s/GUIDE-FOR-VISITING-VESSELS-as-of-March-2026.pdf)** | Fresh verified-TLS 10-page PDF, 279,242 bytes, SHA256 `1bc64e76f9ae52bca0af72436dd6892f8c2bb5b5db7a7c6c82141353d8a10551`. Complete selected guidance sections 11-13 on pp 5-6 and section 15 on p 6 read natively and against both images. | Administrative guidance, not a substitute for S2 or a later fee setting. Its booking-date language, age wording and service-invoicing directions must not silently replace the June notice or establish its current application. Other safety, marine, immigration and service provisions are outside the qualified extent. |
-| **S5. Government [laws index](https://www.government.pn/laws), [policies and forms](https://www.government.pn/government/policies-annexes-and-forms) and [notices](https://www.government.pn/government/notices)** | Independent read-only check on 31 October 2026 UTC: relevant current ordinance entry and legislative disclaimer, fee-notice locator and complete 12-entry notices list. | No body-hashed capture of these pages is supplied. The laws page warns that electronic legislation lacks official status. No later immigration amendment or fees notice was located in the bounded check; that is not an exhaustive current-law determination. |
+| Source | Text actually read | Qualification and limits | Read on |
+| --- | --- | --- | --- |
+| **S1. [Immigration Control Ordinance 2006: Fees and Levies](https://www.government.pn/s/2026-04-30-Immigration-Fees-Notice.pdf)** | Complete 1-page notice, read natively and against its original image. Fresh HTTPS PDF with verified TLS on 31 October 2026 UTC: 129,184 bytes, SHA256 `a7c1ee82920e4f6a2134a42b5404baf250b112833da3d7a89d0886b9cc45d6a9`. | Officially hosted copy. It describes fees set by the Governor in consultation with the Island Council under s 2D(1). Making, publication history, later settings, actual assessment and the age gaps are not fully resolved. | 2026-10-31 (read by Ryan) |
+| **S2. [Immigration Control Amendment Ordinance 2026, No. 2 of 2026](https://www.government.pn/s/2026-04-27-Immigration-Control-Amendment-Ordinance-as-published.pdf)** | Officially hosted 22-page scan, 3,289,022 bytes, SHA256 `25d10d6820042353b228e021a15bacfe703a40aad53c803ea8cc18952340b5d2`, freshly retrieved with verified TLS. Complete relied units checked against original images: title, making/publication annotations and ss 1-2 on p 1; complete inserted definitions in amendment s 4 on pp 1-2; new s 2D and s 2E on p 4; ss 4A-4C on pp 10-11; new s 5 on p 12; changes to s 15 in amendment ss 20-24 on p 14; repeal of old s 21 in amendment s 29 and new delegation s 18 on p 15. | All pages were OCR processed for location, but only the named units are qualified here. The remaining immigration, enforcement and explanatory provisions are not a complete legal review. Visible signature and date annotations are not authentication or proof resolving the index conflict. | 2026-10-31 (read by Ryan) |
+| **S3. [Immigration Control Ordinance, Chapter 12, Revised Edition 2014](https://www.government.pn/s/Cap-12-Immigration-Ordinance-2014-Rev-Ed.pdf)** | Fresh verified-TLS 12-page PDF, 181,905 bytes, SHA256 `156338a2e3d235f3891af9130fdd0632c1eace348637dfe6fde0b790b999ad62`. Selected complete native units: ss 1-2 on pp 2-3, s 15 on p 10 and s 21 on p 11. | Historical principal context, not a current consolidation. Intervening amendments and all provisions are not qualified. In particular, the older s 21 cannot be treated as current after the express repeal in S2. | 2026-10-31 (read by Ryan) |
+| **S4. [Guide for Visiting Vessels, file labelled as of March 2026](https://www.government.pn/s/GUIDE-FOR-VISITING-VESSELS-as-of-March-2026.pdf)** | Fresh verified-TLS 10-page PDF, 279,242 bytes, SHA256 `1bc64e76f9ae52bca0af72436dd6892f8c2bb5b5db7a7c6c82141353d8a10551`. Complete selected guidance sections 11-13 on pp 5-6 and section 15 on p 6 read natively and against both images. | Administrative guidance, not a substitute for S2 or a later fee setting. Its booking-date language, age wording and service-invoicing directions must not silently replace the June notice or establish its current application. Other safety, marine, immigration and service provisions are outside the qualified extent. | 2026-10-31 (read by Ryan) |
+| **S5. Government [laws index](https://www.government.pn/laws), [policies and forms](https://www.government.pn/government/policies-annexes-and-forms) and [notices](https://www.government.pn/government/notices)** | Independent read-only check on 31 October 2026 UTC: relevant current ordinance entry and legislative disclaimer, fee-notice locator and complete 12-entry notices list. | No body-hashed capture of these pages is supplied. The laws page warns that electronic legislation lacks official status. No later immigration amendment or fees notice was located in the bounded check; that is not an exhaustive current-law determination. | 2026-10-31 (read by Ryan) |
 
 These are source explanations, not professional sign-off. For actual use, obtain authoritative applicable text and resolve the publication discrepancy, amendment chain and notice status through substantive legal evidence. A reviewer's approval alone does not establish missing law.
 
-Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: any change to the fee notice after 2 June 2026 (the notice re-read on 2026-11-14 is unchanged); the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
