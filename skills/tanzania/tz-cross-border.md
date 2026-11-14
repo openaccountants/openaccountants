@@ -129,7 +129,7 @@ expected:
 
 ## Sources
 
-All read on 2026-11-01. Unverified: Zambia fees, the entry-into-force status of each treaty, and the 2026 consolidated numbering of First Schedule para 4(b).
+All read on 2026-11-01; the Zambia treaty reread on 2026-11-14 (no fees article). Unverified: the entry-into-force status of each treaty, and the 2026 consolidated numbering of First Schedule para 4(b).
 
 | Source | Link | Read |
 |---|---|---|
