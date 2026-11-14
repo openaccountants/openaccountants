@@ -89,7 +89,7 @@ Choosing between sole trader and company is a tax decision (25% company rate aga
 - A foreign company trading in Jamaica registers as an overseas company with COJ; its Jamaica-source profit is taxed under `jm-corporate-income-tax`.
 - Non-resident shareholders: withholding on dividends is in the corporate and income tax skills (rates not yet confirmed there).
 
-## Worked example that recomputes
+## Two worked examples that recompute
 
 ### Example: Incorporate a private company with same-day expedition, then file the first annual return
 
