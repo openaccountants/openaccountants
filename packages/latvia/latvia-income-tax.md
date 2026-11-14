@@ -1,19 +1,20 @@
 ---
 name: latvia-income-tax
 description: "Latvian personal income tax (IIN) for tax year 2026, for resident employees, self-employed people, pensioners and people with capital income. Covers the 25.5% and 33% bands with the threshold tied to the EUR 105,300 maximum social insurance base, the 3% surcharge above EUR 200,000, the fixed EUR 550 monthly non-taxable minimum, EUR 250 monthly dependant relief, the EUR 12,000 pensioner minimum, eligible expenses, capital income at 25.5%, business income and losses, the annual return (1 March to 1 June, or 1 April to 1 July), payment dates, penalties and 0.05% a day late interest. Trigger on: Latvia income tax, gada ienākumu deklarācija, neapliekamais minimums, Latvian capital gains tax, self-employed Latvia. Out of scope: payroll withholding (latvia-payroll), social contributions (latvia-social-contributions), non-residents (lv-cross-border), company tax (lv-corporate-income-tax), microenterprise planning (latvia-tax-optimization)."
-version: 0.3
+version: 0.4
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Latvia: personal income tax (2026) v0.3
+# Latvia: personal income tax (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated Law On Personal Income Tax (PIT Law), the law On State Social Insurance, the Law On Taxes and Fees (LTF) and the Administrative Liability Law, in the versions in force for 2026, and from the State Revenue Service (VID) rate and annual return pages. See Sources for how they were read.
 

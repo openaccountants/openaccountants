@@ -3,11 +3,12 @@ name: gm-vat-gst
 description: "VAT for The Gambia (tax year 2026): 15% rate, registration thresholds, exempt supplies, monthly filing and refunds. Built from official GRA, SSHFC and Ministry of Justice pages."
 jurisdiction: GM
 tax_year: 2026
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Gambia VAT

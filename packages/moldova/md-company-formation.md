@@ -3,15 +3,16 @@ name: md-company-formation
 description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited draft states current-form and specialist gaps, and has a bounded source-review record linked under Sources. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: "0.9"
+version: "0.10"
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Moldova company formation and entity choice, 2026 v0.9
+# Moldova company formation and entity choice, 2026 v0.10
 
 ## Who this applies to
 

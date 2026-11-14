@@ -14,17 +14,18 @@ description: >
   2026 pension rules. Other specified benefit transitions and operational cases
   remain open. Independent AI review accepted partial draft publication;
   professional attestation is pending.
-version: 0.3
+version: 0.4
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Faroe Islands payroll and mandatory contributions v0.3
+# Faroe Islands payroll and mandatory contributions v0.4
 
 > **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026; benefit, dated pension and contribution provisions re-read 28 October 2026. This Guide prepares payroll working papers, with professional review pending.
 

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-cas-cass"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Romania: CAS and CASS for the self-employed (PFA, II, IF, liberal professions), 2026
@@ -35,18 +35,18 @@ All thresholds for 2026 use the minimum wage in force on 1 January 2026, RON 4,0
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | CAS rate | 25% | 2026 | Fiscal Code art. 138(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| CASS rate | 10% | 2026 | art. 156, same page |
+| CASS rate | 10% | 2026 | art. 156, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Minimum wage that sets the 2026 thresholds and bases (in force 1 January 2026) | RON 4,050 a month | 2026 | art. 135^1(3), same page; HG 1506/2024 art. 1, https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf; ANAF DGRFP Brașov 2026 summary, p. 38, https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf |
 | Minimum wage from 1 July 2026 (not used for these contributions) | RON 4,325 a month | 2026 | HG 146/2026 art. 1, https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf |
-| CAS threshold: 12 minimum wages | RON 48,600 | 2026 | art. 148(1), Fiscal Code page |
-| CAS minimum base, net income from 12 up to 24 minimum wages | 12 wages, RON 48,600; minimum CAS RON 12,150 | 2026 | art. 148(2)(a) |
-| CAS minimum base, net income of 24 minimum wages or more | 24 wages, RON 97,200; minimum CAS RON 24,300 | 2026 | art. 148(2)(b) |
-| CAS opt-in below 12 minimum wages | base at least RON 48,600; CAS at least RON 12,150 | 2026 | art. 148(4) |
-| CASS base | actual net income or norm, all independent sources added | 2026 | art. 170(1) |
-| CASS cap: 72 minimum wages | base RON 291,600; CASS at most RON 29,160 | 2026 | art. 170(1); ANAF Brașov summary, p. 38 (cap raised from 60 to 72 wages by Legea 239/2025 and Legea 141/2025) |
-| CASS floor: 6 minimum wages | base RON 24,300; CASS at least RON 2,430 | 2026 | art. 174(6) |
-| CASS opt-in (no income, a loss or zero net income in the previous year, or starting during the year) | 10% of 6 wages, RON 2,430; 25% when the option is filed, 75% by 25 May of the next year | 2026 | art. 180(1)-(2), art. 182 |
-| Early-payment discount | up to 10%, only if the annual budget law sets it | 2026 | art. 151(14), art. 174(17) |
+| CAS threshold: 12 minimum wages | RON 48,600 | 2026 | art. 148(1), Fiscal Code page, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CAS minimum base, net income from 12 up to 24 minimum wages | 12 wages, RON 48,600; minimum CAS RON 12,150 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 148(2)(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CAS minimum base, net income of 24 minimum wages or more | 24 wages, RON 97,200; minimum CAS RON 24,300 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 148(2)(b), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CAS opt-in below 12 minimum wages | base at least RON 48,600; CAS at least RON 12,150 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 148(4), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS base | actual net income or norm, all independent sources added | 2026 | art. 170(1), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS cap: 72 minimum wages | base RON 291,600; CASS at most RON 29,160 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 170(1); ANAF Brașov summary, p. 38 (cap raised from 60 to 72 wages by Legea 239/2025 and Legea 141/2025), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS floor: 6 minimum wages | base RON 24,300; CASS at least RON 2,430 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 174(6), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS opt-in (no income, a loss or zero net income in the previous year, or starting during the year) | 10% of 6 wages, RON 2,430; 25% when the option is filed, 75% by 25 May of the next year (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | art. 180(1)-(2), art. 182, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Early-payment discount | up to 10%, only if the annual budget law sets it | 2026 | art. 151(14), art. 174(17), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 
 ## The taxable base
 
@@ -173,15 +173,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Legea 227/2015, Codul fiscal, ANAF consolidated text (last update Legea 170/2026): art. 118, 122, 135^1, 135^2, 137, 138, 148, 150, 151, 153, 154, 155, 156, 170, 174, 174^1, 180, 182 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Legea 207/2015, Codul de procedură fiscală, ANAF consolidated text (last update Legea 170/2026): art. 174, 175, 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-10-23 |
-| HG 146/2026, minimum wage RON 4,325 from 1 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-10-23 |
-| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026), p. 38: CASS cap 72 wages, RON 291,600; RON 4,050 used for 2026; CASS option paid 25% and 75% | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-10-23 |
-| ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
+| Legea 227/2015, Codul fiscal, ANAF consolidated text (last update Legea 170/2026): art. 118, 122, 135^1, 135^2, 137, 138, 148, 150, 151, 153, 154, 155, 156, 170, 174, 174^1, 180, 182 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 135^1, 138, 148, 151, 156, 170, 174, 180 and 182: rates, thresholds, cap, floor and opt-in |
+| Legea 207/2015, Codul de procedură fiscală, ANAF consolidated text (last update Legea 170/2026): art. 174, 175, 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 174, 175, 176, 181 and 336: interest, penalties and fines |
+| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,050 a month |
+| HG 146/2026, minimum wage RON 4,325 from 1 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,325 a month from 1 July 2026 |
+| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026), p. 38: CASS cap 72 wages, RON 291,600; RON 4,050 used for 2026; CASS option paid 25% and 75% | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-11-14, read for p. 38: CASS cap of 72 wages, RON 291,600 |
+| ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-11-14, read for the online filing route for the Declarația unică |
 
 Not yet confirmed: whether the 2026 state budget law grants an early-payment discount on 2026 CAS and CASS paid in 2027 (art. 151(14), art. 174(17)). The amending texts of Legea 239/2025 and Legea 141/2025 were not read; the 72-wage cap is taken from the consolidated Fiscal Code and the ANAF summary. Which professional pension systems count for the art. 150(1) exemption was not checked.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-cas-cass` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-cas-cass. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-cas-cass` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-cas-cass. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -108,7 +108,7 @@ Owner: Jeff Watts
 | [Panama](panama/) | Needs writing | 4 | 1 | 0 |
 | [Paraguay](paraguay/) | Needs writing | 7 | 7 | 0 |
 | [Peru](peru/) | Needs writing | 9 | 9 | 0 |
-| [Puerto Rico](puerto-rico/) | Needs writing | 3 | 1 | 0 |
+| [Puerto Rico](puerto-rico/) | Needs writing | 6 | 6 | 0 |
 | [Saint Barthelemy](saint-barthelemy/) | Needs writing | 2 | 2 | 0 |
 | [Saint Kitts And Nevis](saint-kitts-and-nevis/) | Needs writing | 2 | 2 | 0 |
 | [Saint Lucia](saint-lucia/) | Needs writing | 5 | 4 | 0 |
@@ -116,7 +116,7 @@ Owner: Jeff Watts
 | [Saint Pierre And Miquelon](saint-pierre-and-miquelon/) | Needs writing | 2 | 1 | 0 |
 | [Saint Vincent And The Grenadines](saint-vincent-and-the-grenadines/) | Needs writing | 3 | 3 | 0 |
 | [Sint Maarten](sint-maarten/) | Needs writing | 3 | 3 | 0 |
-| [Suriname](suriname/) | Needs signature | 7 | 5 | 0 |
+| [Suriname](suriname/) | Needs signature | 7 | 7 | 0 |
 | [Trinidad And Tobago](trinidad-and-tobago/) | Needs writing | 6 | 0 | 0 |
 | [Turks And Caicos](turks-and-caicos/) | Needs writing | 3 | 3 | 0 |
 | [Uruguay](uruguay/) | Needs signature | 9 | 9 | 0 |
