@@ -66,21 +66,21 @@ Meeting any one of the three size tests is enough. Companies below all three, an
 | Income tax rate | 22% | 2025 onwards, unchanged in the 2026 and 2027 versions | TuMS § 4(1): https://www.riigiteataja.ee/et/akt/109072026066 |
 | Gross-up for company-level objects (distributions, § 50(4) adjustments) | Taxable amount divided by 0.78 before the rate, so tax = 22/78 of the net amount | 2025 onwards | TuMS § 4(1¹); EMTA, Tax rates (2026): https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
 | Associated person: individual holding in a legal person | At least 10% of capital, votes or profit rights | 2026 | TuMS § 8(1) 3): https://www.riigiteataja.ee/en/akt/520102026008 |
-| Associated persons: common holding in one legal person | More than 25% each | 2026 | TuMS § 8(1) 6) |
-| Associated persons: common control | More than 50% held by the same person or associated persons | 2026 | TuMS § 8(1) 4) and 5) |
+| Associated persons: common holding in one legal person | More than 25% each | 2026 | TuMS § 8(1) 6); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Associated persons: common control | More than 50% held by the same person or associated persons | 2026 | TuMS § 8(1) 4) and 5); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Full documentation test: employees | 250 or more, counted with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4): https://www.riigiteataja.ee/et/akt/123122021024 |
-| Full documentation test: turnover | EUR 50 million or more in the preceding financial year, with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4) |
-| Full documentation test: balance sheet total | EUR 43 million or more, with associated persons (consolidated, for a permanent establishment) | 2026 | Regulation No. 53 § 18(1) 3) and 4) |
-| Low value-adding intra-group services | A 5% mark-up needs no comparables to support it | From 1 January 2022 | Regulation No. 53 § 6(3) |
+| Full documentation test: turnover | EUR 50 million or more in the preceding financial year, with associated persons | 2026 | Regulation No. 53 § 18(1) 3) and 4); https://www.riigiteataja.ee/et/akt/123122021024 |
+| Full documentation test: balance sheet total | EUR 43 million or more, with associated persons (consolidated, for a permanent establishment) | 2026 | Regulation No. 53 § 18(1) 3) and 4); https://www.riigiteataja.ee/et/akt/123122021024 |
+| Low value-adding intra-group services | A 5% mark-up needs no comparables to support it | From 1 January 2022 | Regulation No. 53 § 6(3); https://www.riigiteataja.ee/et/akt/123122021024 |
 | Country-by-country report | Group revenue of EUR 750 million or more in the preceding financial year | 2026 | Regulation No. 53 § 18(3) 3); MTVS chapter 2²: https://www.riigiteataja.ee/et/akt/115042026002 |
-| Time to hand over transfer pricing information on request | At least 60 days | 2026 | TuMS § 50(7) |
+| Time to hand over transfer pricing information on request | At least 60 days | 2026 | TuMS § 50(7); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Interest on late tax | 0.06% a day | 2026 | MKS § 117(1): https://www.riigiteataja.ee/et/akt/116102026009 |
-| Fine for not submitting a document on time: legal person | Up to EUR 3,200 | 2026 | MKS § 154(2) |
+| Fine for not submitting a document on time: legal person | Up to EUR 3,200 | 2026 | MKS § 154(2); https://www.riigiteataja.ee/et/akt/116102026009 |
 | Fine for not submitting a document on time: individual | Up to 300 fine units; one fine unit is EUR 8, so up to EUR 2,400 | 2026 | MKS § 154(1); Penal Code § 47(1): https://www.riigiteataja.ee/et/akt/109072026028 |
-| Fine for intentionally withholding data or giving false data that cuts tax: legal person | Up to EUR 32,000 | 2026 | MKS § 153¹(2) |
-| Coercive payment (sunniraha) to force production of information | Up to EUR 640 the first time, EUR 2,000 the second, EUR 2,640 in total | 2026 | MKS § 67(3) |
-| Fine for breaching a country-by-country reporting duty: legal person | Up to EUR 50,000 | From 25 April 2026 | MKS § 155³(2) |
-| Time limit for EMTA to assess tax | 3 years from the TSD due date; 5 years if tax was intentionally not paid | 2026 | MKS § 98(1) |
+| Fine for intentionally withholding data or giving false data that cuts tax: legal person | Up to EUR 32,000 | 2026 | MKS § 153¹(2); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Coercive payment (sunniraha) to force production of information | Up to EUR 640 the first time, EUR 2,000 the second, EUR 2,640 in total | 2026 | MKS § 67(3); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Fine for breaching a country-by-country reporting duty: legal person | Up to EUR 50,000 | From 25 April 2026 | MKS § 155³(2); https://www.riigiteataja.ee/et/akt/116102026009 |
+| Time limit for EMTA to assess tax | 3 years from the TSD due date; 5 years if tax was intentionally not paid | 2026 | MKS § 98(1); https://www.riigiteataja.ee/et/akt/116102026009 |
 
 ## The taxable base
 
