@@ -1,10 +1,10 @@
 ---
 name: pa-local-eit
 description: Use this skill for Pennsylvania local earned income tax (EIT) for tax year 2026 under the Local Tax Enabling Act (Act 511 of 1965) as rewritten by Act 32 of 2008, for residents, nonresidents, employees and the self-employed. It covers what is taxed (earned income and net profits, no offset of business losses against wages, military pay excluded), the higher-of withholding rule, PSD codes and the Residency Certification Form, the 1% statutory cap and the half-rate split between municipality and school district, credits for tax paid to other Pennsylvania localities and to other states, part-year domicile, quarterly estimates on net profits (15 April, 15 July, 15 October, 15 January) with the 100% and 90% safe harbours, the annual final return, and a triage of the Philadelphia wage, earnings and net profits taxes at the 2026 rates of 3.74% then 3.735% (residents) and 3.43% then 3.425% (nonresidents). Trigger on "Pennsylvania local tax", "PA local earned income tax", "Act 32", "PSD code", "Berkheimer", "Keystone", "Philadelphia wage tax", "Philadelphia net profits tax". Employer payroll mechanics and the Local Services Tax are in pa-payroll.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-PA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -66,7 +66,7 @@ depends_on:
 
 | Item | Amount or rule | Condition | Source |
 | --- | --- | --- | --- |
-| Statutory cap on a tax on wages and other earned income | 1% | Where the municipality and the school district both levy the same tax, each is limited to one-half of the capped rate unless they agree otherwise (the usual 0.5% and 0.5%). Higher rates exist under other laws; read the actual rate from DCED | [LTEA section 311(3) and the half-rate paragraph](https://www.palegis.us/statutes/unconsolidated/law-information/view-statute?txtType=PDF&SessYr=1965&ActNum=0511.&SessInd=0) |
+| Statutory cap on a tax on wages and other earned income | 1% | Where the municipality and the school district both levy the same tax, each is limited to one-half of the capped rate unless they agree otherwise (the usual 0.5% and 0.5%) (in words on the page). Higher rates exist under other laws; read the actual rate from DCED | [LTEA section 311(3) and the half-rate paragraph](https://www.palegis.us/statutes/unconsolidated/law-information/view-statute?txtType=PDF&SessYr=1965&ActNum=0511.&SessInd=0) |
 | Cap on a payroll tax | 0.55% | Employer tax on payrolls | same, section 311(12) |
 | Local Services Tax cap | See `pa-payroll` | Owned by the payroll skill | [DCED LST](https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/) |
 | Resident PSD code and rate for someone living outside Pennsylvania | 880000 and 0% | Owes the worksite nonresident rate | [DCED FAQs](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/) |

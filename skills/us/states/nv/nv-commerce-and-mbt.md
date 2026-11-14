@@ -3,13 +3,13 @@ name: nv-commerce-and-mbt
 description: "Nevada 2026 Commerce Tax and Modified Business Tax: fiscal revenue, current category rates, employer wages/health, four-quarter credit, returns and recomputed cases."
 jurisdiction: US-NV
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: situation-rules
 category: state-tax
-version: "1.1"
+version: "1.2"
 ---
 
 # Nevada Commerce Tax and Modified Business Tax, 2026
@@ -86,9 +86,9 @@ Compute max(0, Nevada revenue less allowed adjustments less $4,000,000) x catego
 | air transportation (NAICS 481) | 0.058% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | truck transportation (NAICS 484) | 0.202% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | rail transportation (NAICS 482) | 0.331% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
-| other transportation (NAICS 483,485,486,487,488,491,492) | 0.129% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
+| other transportation (NAICS 483, 485, 486, 487, 488, 491, 492) | 0.129% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | warehousing and storage (NAICS 493) | 0.128% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
-| publishing, software and data processing (NAICS 512,513,516,518) | 0.253% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
+| publishing, software and data processing (NAICS 512, 513, 516, 518) | 0.253% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | utilities and telecommunications (NAICS 517) | 0.136% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | finance and insurance (NAICS 52) | 0.111% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
 | real estate and rental and leasing (NAICS 53) | 0.250% | [V2026.1 chart](https://tax.nv.gov/wp-content/uploads/2025/07/EXC-F025-COM-Tax-Return.pdf) |
@@ -108,8 +108,8 @@ Compute max(0, Nevada revenue less allowed adjustments less $4,000,000) x catego
 | --- | --- | --- |
 | Commerce filing/base threshold | $4,000,000 Nevada gross revenue; strictly over for annual filing | [Official source](https://tax.nv.gov/faqs/commerce-tax-faqs/) |
 | Commerce year/due | July 1-June 30; 45 days after year-end, normallyAugust 14 | [Official source](https://tax.nv.gov/faqs/commerce-tax-faqs/) |
-| General MBT | 1.17% after health offset and $50,000 quarterly floor | [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F003-MBT-Return-General-Business.pdf) |
-| Financial/mining MBT | 1.554%; no $50,000 floor | [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F002-MBT-Return-Financial-Institution.pdf); [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F004-MBT-Return-Mining.pdf) |
+| General MBT | 1.17% after health offset and $50,000 quarterly floor | [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F003-MBT-Return-General-Business.pdf); [DOR MBT page](https://tax.nv.gov/tax-types/modified-business-tax/) |
+| Financial/mining MBT | 1.554%; no $50,000 floor (the floor is a line on the general-business return only) | [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F002-MBT-Return-Financial-Institution.pdf); [Official source](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F004-MBT-Return-Mining.pdf); [general-business return](https://tax.nv.gov/wp-content/uploads/2025/12/TAX-F003-MBT-Return-General-Business.pdf); [DOR MBT page](https://tax.nv.gov/tax-types/modified-business-tax/) |
 | Employer health deduction | Full qualifying employer-paid amount, not 50%; excess offset carries forward | [Official source](https://tax.nv.gov/faqs/modified-business-tax-faqs/) |
 | Commerce-to-MBT credit | 50% of Commerce Tax actually paid; four quarters after June 30 | [Official source](https://tax.nv.gov/faqs/commerce-tax-faqs/) |
 | Commerce extension interest | 0.75% per month despite the extension | [Official source](https://tax.nv.gov/faqs/commerce-tax-faqs/) |

@@ -1,10 +1,10 @@
 ---
 name: la-sales-tax
 description: "Louisiana 2026 sales/use tax: 5% state rate, local sourcing, remote seller nexus, taxable software access, exemptions, registration, filing and computation. Load us-sales-tax first."
-version: "2.1"
+version: "2.2"
 jurisdiction: US-LA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -43,8 +43,8 @@ Ordinary Louisiana retail sales and taxable purchases, physical-presence dealers
 | 2026 rule | Value | Authority |
 | --- | --- | --- |
 | General state sales/use rate | 5% | [LDR sales/use page](https://revenue.louisiana.gov/businesses/general-sales-and-use-taxes/general-sales-use-tax) |
-| Remote-seller dealer threshold, no physical presence | Gross delivered revenue exceeds $100,000 in previous/current calendar year; no transaction-count alternative | [R.S.47:301(4)(k)](https://legis.la.gov/Legis/Law.aspx?d=101815&p=y) |
-| Marketplace facilitator threshold | Louisiana remote retail-sale revenue exceeds $100,000 in previous/current calendar year | [R.S.47:340.1(C)](https://www.legis.la.gov/legis/Law.aspx?d=1186690) |
+| Remote-seller dealer threshold, no physical presence | Gross delivered revenue exceeds $100,000 (in words on the page) in previous/current calendar year; no transaction-count alternative | [R.S.47:301(4)(k)](https://legis.la.gov/Legis/Law.aspx?d=101815&p=y) |
+| Marketplace facilitator threshold | Louisiana remote retail-sale revenue exceeds $100,000 (in words on the page) in previous/current calendar year | [R.S.47:340.1(C)](https://www.legis.la.gov/legis/Law.aspx?d=1186690) |
 | State food for home consumption | Generally exempt; local tax may apply | [LDR food FAQ](https://www.revenue.la.gov/tax-education-and-faqs/faqs/fairs-festivals-and-other-special-events/is-there-sales-tax-on-food/) |
 | Local rates | Address/date-specific, not a statewide fixed maximum in this skill | [R.S.47:301.4](https://www.legis.la.gov/legis/Law.aspx?d=1392328); [R.S.47:340.1(E)](https://www.legis.la.gov/legis/Law.aspx?d=1186690) |
 
