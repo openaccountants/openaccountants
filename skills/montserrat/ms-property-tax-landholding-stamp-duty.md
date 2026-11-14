@@ -117,20 +117,20 @@ expected:
 
 ### Case 2 (decision): what does a non-belonger pay to buy at EC$260,100?
 
-An ordinary sale with an ownership licence needed and no relief: licence 13,005, conveyance stamp 5,205 (1,041 units of EC$250, rounded up), registration 1,950.75. Total 20,160.75 (derived), about 7.75% of the price. A buyer who belongs to Montserrat, or a covered Antigua and Barbuda or St Vincent national, avoids the 13,005 licence (an exempt national pays EC$500 per parcel instead).
+An ordinary sale with an ownership licence needed and no relief: 13,005 for the licence, 5,205 for the conveyance stamp (1,041 units of EC$250, rounded up), registration 1,950.75. Total 20,160.75 (derived), about 7.75% of the price. A buyer who belongs to Montserrat, or a covered Antigua and Barbuda or St Vincent national, avoids the 13,005 licence (an exempt national pays EC$500 per parcel instead).
 
 ```oa-check
 name: Montserrat purchase charges on 260,100, licence needed
 inputs:
   price: 260100
 steps:
-  - licence: max(price * 0.05, 2500)
+  - ownership_fee: max(price * 0.05, 2500)
   - units: ceil(price / 250)
   - stamp: units * 5
   - registration: max(price * 0.0075, 20)
-  - total: licence + stamp + registration
+  - total: ownership_fee + stamp + registration
 expected:
-  licence: 13005
+  ownership_fee: 13005
   units: 1041
   stamp: 5205
   registration: 1950.75
