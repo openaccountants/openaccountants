@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Sint Eustatius ordinance checked on 17 October 2026; not a Bonaire or Saba tariff"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Sint Eustatius: tourist tax in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the island, visitor's resident status, accommodation or vessel,
 provider, dates, price and exemption before calculating tax. This ordinance
@@ -40,7 +45,17 @@ domain outputs/checks. This Tier 2 reference supplies conditional components,
 not a complete return, operational engagement or country pack. Unknown
 mandatory conditions hold the complete financial output package.
 
-## Current instrument, taxpayer and chargeable stay
+## Ask the client first
+
+1. **Is the stay on Sint Eustatius**: this ordinance does not apply on Bonaire or Saba.
+2. **Land or water**: paid accommodation on land, or visitors on a vessel (with or without an overnight stay).
+3. **Is the visitor a non-resident**, and does any exemption apply (homestay registration, short vessel stays under four hours, boats up to four metres)?
+4. **The amount charged for the stay**, separated from breakfast and other additional services.
+5. **Who is the provider or vessel operator** and which return period applies.
+
+## The method, step by step
+
+### Current instrument, taxpayer and chargeable stay
 
 The official register records the Verordening toeristenbelasting Sint
 Eustatius 2021 as current from 17 December 2020, with one version and source
@@ -71,12 +86,12 @@ not an assumed exemption. A resident owner's own stay is not automatically
 a paid non-resident overnight stay. Actual resident status, consideration
 and any mixed property/operator arrangements remain fact-dependent. [TOURISM]
 
-## Exemptions and separate bases
+### Exemptions and separate bases
 
-| Branch | Article 4 exemptions to establish |
-|---|---|
-| Land | Specified visiting aircraft crew; the visitor also staying aboard a vessel for which water tourist tax is due; or a dwelling registered with the named tourism foundation as a homestay. |
-| Water | Stay shorter than four hours; specified care vessels; canoes, rowing boats and tenders; motor/sailing boats no longer than four metres; or a vessel present under government order. |
+| Branch | Article 4 exemptions to establish | Source of the figure |
+|---|---|---|
+| Land | Specified visiting aircraft crew; the visitor also staying aboard a vessel for which water tourist tax is due; or a dwelling registered with the named tourism foundation as a homestay. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 |
+| Water | Stay shorter than four hours; specified care vessels; canoes, rowing boats and tenders; motor/sailing boats no longer than four metres; or a vessel present under government order. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 |
 
 [TOURISM]
 
@@ -92,11 +107,11 @@ explanatory note's looser phrase about a stay up to four hours does not
 change the operative threshold. Other exemptions and the underlying charge
 must still be checked. [TOURISM]
 
-| Branch | Base and tariff under articles 5–6 |
-|---|---|
-| Land | **7%** of the amount charged for the stay, excluding taxes and charges for additional services. |
-| Water with overnight stay | **USD 3 per person per etmaal**, including a part of an etmaal. |
-| Water without overnight stay | **USD 2 per person per etmaal**, including a part of an etmaal. |
+| Branch | Base and tariff under articles 5–6 | Source of the figure |
+|---|---|---|
+| Land | **7%** of the amount charged for the stay, excluding taxes and charges for additional services. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 |
+| Water with overnight stay | **USD 3 per person per etmaal**, including a part of an etmaal. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 |
+| Water without overnight stay | **USD 2 per person per etmaal**, including a part of an etmaal. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 |
 
 [TOURISM]; [MONEY, articles 1–2][MONEY]
 
@@ -114,7 +129,9 @@ allocation percentage or deduct every business cost. Actual all-inclusive,
 refund, cancellation, time-share valuation and fractional-cent cases remain
 held pending their complete method. [TOURISM]
 
-## Fictional tax components
+## Worked cases
+
+### Fictional tax components
 
 These cases stipulate non-resident visitors, the relevant taxable branch,
 established USD amounts or counted units, the required vessel/port-tax
@@ -131,7 +148,50 @@ a live registration, final return or an ABB result. [TOURISM]
 | Qualifying motor/sailing boat exactly four metres long | The no-longer-than-four-metres exemption applies. |
 | A qualifying homestay registration and all other category conditions are stipulated | The land exemption applies; an ABB exemption is not thereby established. |
 
-## Filing, payment and ABB
+### Recomputed cases
+
+**Case 1, paid land stay.** A guest pays USD 1,000 for the room and USD 150 for separately identified breakfast. The base is USD 1,000 and the tax at 7% is USD 70.
+
+```oa-check
+name: Sint Eustatius land tourist tax (2026)
+inputs:
+  room_charge: 1000
+  extras: 150
+steps:
+  - tax: room_charge * 0.07
+  - wrong_if_extras_included: (room_charge + extras) * 0.07
+expected:
+  tax: 70
+  wrong_if_extras_included: 80.50
+```
+
+**Case 2, a decision for a vessel: overnight or day visitors?** Four visitors each staying two etmalen with overnight stays pay 4 x 2 x USD 3 = USD 24. Three day visitors for one etmaal without an overnight stay pay 3 x 1 x USD 2 = USD 6.
+
+```oa-check
+name: Sint Eustatius water tourist tax, overnight and day (2026)
+inputs:
+  overnight_visitors: 4
+  overnight_etmalen: 2
+  day_visitors: 3
+steps:
+  - overnight_tax: overnight_visitors * overnight_etmalen * 3
+  - day_tax: day_visitors * 1 * 2
+expected:
+  overnight_tax: 24
+  day_tax: 6
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-TOUR-ISLAND | Tourist tax on Bonaire or Saba | Refer: a separate island ordinance applies; this skill covers Sint Eustatius only |
+| R-BQ-TOUR-BUNDLE | Bundled price where the stay cannot be separated from other services | Refer: allocation is not settled here |
+| R-BQ-TOUR-ABB | ABB on the same accommodation | Refer to `bq-abb`; the tourist tax result does not settle ABB |
+
+## Filing and payment
+
+### Filing, payment and ABB
 
 Land tax uses a calendar-month period. Water tax uses the vessel's continuous
 period in the public body's waters, with notification at the start of the
@@ -171,7 +231,9 @@ The responsible practitioner retains identities, registrations, tax numbers
 and bank details outside the agent. No booking, licensing, filing, payment
 or private-document submission is authorised by this reference.
 
-## Verification and limits
+## Completion checklist
+
+### Verification and limits
 
 Check current instrument/event date; actual resident status; land versus
 water; provider versus fallback visitor; port-tax condition; each exemption;
@@ -189,28 +251,20 @@ actual forms, registration evidence, port-tax instruments, bundled-price
 methods and live operational cases were not reviewed. No complete island
 tax pack, engagement workbook or practitioner sign-off is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| TOURISM. Read for the provisions this skill cites as [TOURISM]. | https://lokaleregelgeving.overheid.nl/CVDR743003/1 | 2026-10-17 |
+| META. Read for the provisions this skill cites as [META]. | https://lokaleregelgeving.overheid.nl/CVDR743003?show-wti=true | 2026-10-17 |
+| FIN. Read for the provisions this skill cites as [FIN]. | https://wetten.overheid.nl/BWBR0028151/2023-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| MONEY. Read for the provisions this skill cites as [MONEY]. | https://wetten.overheid.nl/BWBR0028551/2012-07-01 | 2026-10-17 |
+
 [TOURISM]: https://lokaleregelgeving.overheid.nl/CVDR743003/1
 [META]: https://lokaleregelgeving.overheid.nl/CVDR743003?show-wti=true
 [FIN]: https://wetten.overheid.nl/BWBR0028151/2023-01-01
 [B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
 [MONEY]: https://wetten.overheid.nl/BWBR0028551/2012-07-01
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the return and payment forms; allocation of a bundled price; disputed classification of stays; holiday adjustments to due dates. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

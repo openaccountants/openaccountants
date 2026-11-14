@@ -17,15 +17,20 @@ category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026 contributions; insured status and period established separately"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: payroll
 depends_on:
   - social-contributions-workflow-base
   - bq-income-tax
 ---
 
 # Bonaire, Sint Eustatius and Saba: contributions in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Determine insured status **for each programme** before applying a percentage.
 AOV, AWW and healthcare have different coverage rules. Employee status for wage
@@ -40,7 +45,17 @@ and five contribution outputs. Payroll owns the per-payslip computation; this
 reference supports the annual position and reconciliation. An unfilled mandatory
 country slot holds the complete financial output package.
 
-## Programme, person and period
+## Ask the client first
+
+1. **Whether the person is insured for each programme** (AOV, AWW, healthcare) for the whole of 2026, or only part of it.
+2. **The established 2026 taxable sum** from the income-tax workpaper.
+3. **Employee or self-employed**: employer charges (ZV, OV, cessantia, employer healthcare) apply only to employees' wages.
+4. **Any foreign coverage, posting or special status** (these branches are held here).
+5. **Contributions already withheld or paid**, with their periods.
+
+## The method, step by step
+
+### Programme, person and period
 
 The ordinary AOV insured class begins at age 15 and ends at age 65, subject to
 the residence, non-resident and exclusion rules in AOV article 5. AWW article 6
@@ -88,20 +103,20 @@ administration provisions and a punctuation correction; it does not establish
 a new contribution percentage or ceiling. Pending/undated amendments are not
 treated as operative. [AOV-JAN]; [AOV]; [JULY, article VII][JULY]; [START]
 
-## Rates and bases
+### Rates and bases
 
 These are calendar 2026 figures in US dollars. They require established status
 and the correct base; a percentage alone cannot determine a liability.
 
-| Programme | Liable person | 2026 rate | Base and ceiling |
-|---|---|---:|---|
-| AOV | Insured person | 25% | Ordinary taxable sum under Income Tax BES article 24(1); annual maximum base USD 38,390. AOV articles 26–28; RATES article VI(D); IB article 24a(7). |
-| AWW | Insured person | 1.3% | Same statutory taxable-sum definition and annual maximum base USD 38,390. AWW articles 29–31; RATES article VII(C); IB article 24a(7). |
-| Healthcare, income contribution | Insured person | 0.5% | Taxable sum as defined by HEALTH article 1(h), with article 11's USD 38,390 maximum through IB article 24a(7). CARE-RATES article 1. |
-| ZV sickness insurance | Employer | 0.7% | Established worker's wage under the Act; no tax-free sum, elderly allowance or annual insured-person ceiling. ZV article 8; RATES article XI(B); CALC page 2. |
-| OV accident insurance | Employer | 0.2% | Established worker's wage under the Act; same distinction from personal allowances and ceilings. OV article 8; RATES article X(B); CALC page 2. |
-| CES cessantia | Employer | 0.1% | Established worker's wage, under CES article 7; RATES article III; CALC page 2. |
-| Healthcare, employer charge | Employer | 9.3% | Wage under HEALTH article 12; no personal tax-free sum, elderly allowance or insured-person annual ceiling. CARE-RATES article 2; CALC page 2. |
+| Programme | Liable person | 2026 rate | Base and ceiling | Source of the figure |
+|---|---|---:|---|---|
+| AOV | Insured person | 25% | Ordinary taxable sum under Income Tax BES article 24(1); annual maximum base USD 38,390. AOV articles 26–28; RATES article VI(D); IB article 24a(7). | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
+| AWW | Insured person | 1.3% | Same statutory taxable-sum definition and annual maximum base USD 38,390. AWW articles 29–31; RATES article VII(C); IB article 24a(7). | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
+| Healthcare, income contribution | Insured person | 0.5% | Taxable sum as defined by HEALTH article 1(h), with article 11's USD 38,390 maximum through IB article 24a(7). CARE-RATES article 1. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 |
+| ZV sickness insurance | Employer | 0.7% | Established worker's wage under the Act; no tax-free sum, elderly allowance or annual insured-person ceiling. ZV article 8; RATES article XI(B); CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
+| OV accident insurance | Employer | 0.2% | Established worker's wage under the Act; same distinction from personal allowances and ceilings. OV article 8; RATES article X(B); CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
+| CES cessantia | Employer | 0.1% | Established worker's wage, under CES article 7; RATES article III; CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
+| Healthcare, employer charge | Employer | 9.3% | Wage under HEALTH article 12; no personal tax-free sum, elderly allowance or insured-person annual ceiling. CARE-RATES article 2; CALC page 2. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 |
 
 [RATES]; [CARE-RATES]; [IB]; [CALC]
 
@@ -128,7 +143,9 @@ expressly states no maximum base for those employer charges. Do not cap employer
 ZV/OV or healthcare at USD 38,390. [RATES, articles X–XI][RATES]; [ZV, articles 5 and 8][ZV];
 [OV, articles 5 and 8][OV]; [CALC, page 2][CALC]
 
-## Income-tax credits and annual examples
+## Worked cases
+
+### Income-tax credits and annual examples
 
 Income Tax BES article 24a(2)–(7) supplies the corresponding contribution
 credits; article 24c combines assessment where applicable. The income-tax
@@ -169,7 +186,68 @@ No personal allowance is deducted from that base. These exact arithmetic amounts
 do not select a general fractional-cent rounding convention or establish wage
 classification. [ZV]; [OV]; [CES]; [HEALTH]; [RATES]; [CARE-RATES]; [CALC]
 
-## Declaration, remittance and reconciliation
+### Recomputed cases
+
+**Case 1, resident above the ceiling.** A fully insured resident has a taxable sum of USD 40,000. The three income programmes are capped at USD 38,390: AOV 25% USD 9,597.50, AWW 1.3% USD 499.07, healthcare 0.5% USD 191.95, total USD 10,288.52 (second column of the table above).
+
+```oa-check
+name: AOV, AWW and healthcare above the USD 38,390 ceiling (2026)
+inputs:
+  taxable_sum: 40000
+  ceiling: 38390
+steps:
+  - base: min(taxable_sum, ceiling)
+  - aov: base * 0.25
+  - aww: base * 0.013
+  - health: base * 0.005
+  - total: aov + aww + health
+expected:
+  base: 38390
+  aov: 9597.50
+  aww: 499.07
+  health: 191.95
+  total: 10288.52
+```
+
+**Case 2, a decision: employee or self-employed?** A sole trader with a taxable sum of USD 25,000 pays only the income programmes: USD 6,700. If the same person were employed on a USD 2,000 monthly wage, the employer would in addition owe USD 206 a month in wage-based charges (ZV, OV, cessantia, healthcare), with no ceiling and no tax-free sum.
+
+```oa-check
+name: Sole trader premiums against monthly employer charges (2026)
+inputs:
+  taxable_sum: 25000
+  monthly_wage: 2000
+steps:
+  - sole_trader_premiums: taxable_sum * (0.25 + 0.013 + 0.005)
+  - employer_monthly: monthly_wage * (0.007 + 0.002 + 0.001 + 0.093)
+expected:
+  sole_trader_premiums: 6700
+  employer_monthly: 206
+```
+
+## When to refuse or refer
+
+### Completion conditions and refusals
+
+No additional missing-fact default is authorised. Missing insured status,
+programme inclusion, base, source evidence, exemption, period, rounding or
+payment allocation remains Needs Input or a source hold. Do not default a
+programme to insured, exempt or zero because a record is absent.
+
+This reference holds partial-year changes, negative taxable sums, directors and
+other uncertain worker classes, overseas/posted workers, special or voluntary
+cover, pension/benefit entitlement, unverified fractional-cent methods and
+unmapped returns. Establish each mandatory companion slot before delivering
+the complete universal/domain package. No live taxpayer, portal declaration,
+engagement workbook or practitioner sign-off was tested.
+
+Check programme status separately; annual versus wage bases; cap versus benefit
+limit; credits versus premiums; employer cost versus employee deduction; each
+remittance's taxpayer/period; and the four universal plus five domain outputs.
+Recalculate all engagement figures and obtain professional review before use.
+
+## Filing and payment
+
+### Declaration, remittance and reconciliation
 
 Employer registration and the assigned return period must be established with
 Belastingdienst Caribisch Nederland. Retain the registration/period confirmation
@@ -213,26 +291,32 @@ their complete applicable branch before any actual penalty or interest is
 calculated. A statutory maximum is not an automatic charge. [B1]; [AOV]; [AWW];
 [HEALTH]; [ZV]; [OV]; [CES]
 
-## Completion conditions and refusals
+## Sources
 
-No additional missing-fact default is authorised. Missing insured status,
-programme inclusion, base, source evidence, exemption, period, rounding or
-payment allocation remains Needs Input or a source hold. Do not default a
-programme to insured, exempt or zero because a record is absent.
+| Source | URL | Read on |
+|---|---|---|
+| AOV. Read for the provisions this skill cites as [AOV]. | https://wetten.overheid.nl/BWBR0028459/2026-07-01 | 2026-10-17 |
+| AOV-JAN. Read for the provisions this skill cites as [AOV-JAN]. | https://wetten.overheid.nl/BWBR0028459/2026-01-01 | 2026-10-17 |
+| AWW. Read for the provisions this skill cites as [AWW]. | https://wetten.overheid.nl/BWBR0028387/2026-01-01 | 2026-10-17 |
+| CIRCLE. Read for the provisions this skill cites as [CIRCLE]. | https://wetten.overheid.nl/BWBR0028533/2022-07-01 | 2026-10-17 |
+| REG. Read for the provisions this skill cites as [REG]. | https://wetten.overheid.nl/BWBR0029205/2026-07-22 | 2026-10-17 |
+| REG-OLD. Read for the provisions this skill cites as [REG-OLD]. | https://wetten.overheid.nl/BWBR0029205/2024-01-01 | 2026-10-17 |
+| REG-CHANGE. Read for the provisions this skill cites as [REG-CHANGE]. | https://zoek.officielebekendmakingen.nl/stcrt-2026-25854.html | 2026-10-17 |
+| HEALTH. Read for the provisions this skill cites as [HEALTH]. | https://wetten.overheid.nl/BWBR0029404/2025-01-01 | 2026-10-17 |
+| ZV. Read for the provisions this skill cites as [ZV]. | https://wetten.overheid.nl/BWBR0028728/2026-01-01 | 2026-10-17 |
+| OV. Read for the provisions this skill cites as [OV]. | https://wetten.overheid.nl/BWBR0028497/2026-01-01 | 2026-10-17 |
+| CES. Read for the provisions this skill cites as [CES]. | https://wetten.overheid.nl/BWBR0028304/2025-01-01 | 2026-10-17 |
+| RATES. Read for Stcrt. 2025, 39413, articles III, VI(D), VII(C), X(B) and XI(B): 2026 rates AOV 25%, AWW 1.3%, OV 0.2%, ZV 0.7%, cessantia 0.1%, in force 1 January 2026. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html | 2026-11-14 |
+| CARE-RATES. Read for the provisions this skill cites as [CARE-RATES]. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 | 2026-10-17 |
+| IB. Read for the provisions this skill cites as [IB]. | https://wetten.overheid.nl/BWBR0029281/2026-01-01 | 2026-10-17 |
+| WAGE. Read for the provisions this skill cites as [WAGE]. | https://wetten.overheid.nl/BWBR0029283/2025-04-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| B-RULES. Read for the provisions this skill cites as [B-RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| JULY. Read for the provisions this skill cites as [JULY]. | https://zoek.officielebekendmakingen.nl/stb-2026-18.html | 2026-10-17 |
+| START. Read for the provisions this skill cites as [START]. | https://zoek.officielebekendmakingen.nl/stb-2026-76.html | 2026-10-17 |
+| CALC. Read for the provisions this skill cites as [CALC]. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/rekenregels-2026/rekenregels-tabellen-lb-en-premies-2026.pdf | 2026-10-17 |
 
-This reference holds partial-year changes, negative taxable sums, directors and
-other uncertain worker classes, overseas/posted workers, special or voluntary
-cover, pension/benefit entitlement, unverified fractional-cent methods and
-unmapped returns. Establish each mandatory companion slot before delivering
-the complete universal/domain package. No live taxpayer, portal declaration,
-engagement workbook or practitioner sign-off was tested.
-
-Check programme status separately; annual versus wage bases; cap versus benefit
-limit; credits versus premiums; employer cost versus employee deduction; each
-remittance's taxpayer/period; and the four universal plus five domain outputs.
-Recalculate all engagement figures and obtain professional review before use.
-
-## Primary sources
+### Primary sources
 
 Selected provisions were read on 17 October 2026. The AOV January/July texts,
 insured-circle decree, healthcare decree, programme premium provisions, 2026
@@ -261,22 +345,4 @@ This does not claim a full benefit, historical or treaty review.
 [START]: https://zoek.officielebekendmakingen.nl/stb-2026-76.html
 [CALC]: https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/rekenregels-2026/rekenregels-tabellen-lb-en-premies-2026.pdf
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: partial-year insurance changes, negative taxable sums, directors and other uncertain worker classes, overseas and posted workers, voluntary or special cover, the fractional-cent method, and the return mapping for contributions. Other sources were read by Ryan Duguid on 2026-10-17; only RATES was re-read on 2026-11-14.

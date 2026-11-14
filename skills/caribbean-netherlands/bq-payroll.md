@@ -17,15 +17,20 @@ category: payroll
 tax_year: 2026
 tax_year_notes: "2026 payroll withholding and employer charges; payment date and assigned return period matter"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: payroll
 depends_on:
   - payroll-workflow-base
   - bq-social-contributions
 ---
 
 # Bonaire, Sint Eustatius and Saba: payroll taxes in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the employee, withholding agent, payment date, pay period and insurance
 status before using a table. Monthly **pay** does not establish a monthly
@@ -39,7 +44,17 @@ and all five payroll outputs: payslips, journals, employer cost summary, filing
 calendar and reviewer brief. Missing mandatory country slots hold the complete
 financial output package; a labelled reference calculation remains available.
 
-## Employment and the withholding agent
+## Ask the client first
+
+1. **Who the employer is and on which island** the employee works, and the payment date and pay period.
+2. **The employee's age at 1 January 2026, residence, and whether the tax-free sum is used with this employer** or another one.
+3. **Gross cash wage and any benefits in kind**, pension contributions or reimbursements for the period.
+4. **Insurance coverage for each programme** (ZV, OV, cessantia, healthcare): the employer charges depend on it.
+5. **The return period the Belastingdienst Caribisch Nederland has assigned** and payroll returns filed so far.
+
+## The method, step by step
+
+### Employment and the withholding agent
 
 Wage Tax BES articles 2–4 define employees, deemed employments and withholding
 agents. Test the actual relationship, including supervision and the statutory
@@ -63,7 +78,7 @@ retains identification documents, identity values and payment details outside
 the agent. Record only stable references and verified status in the agent's
 workpapers. [M, section 2.1][M]; [W, articles 19–19a][W]; [U, articles 4a–4e][U]
 
-## Wage and taxable-wage bases
+### Wage and taxable-wage bases
 
 Wage broadly includes monetary and noncash employment benefits and specified
 rights, subject to article 6's exclusions. Qualifying employee pension and
@@ -96,7 +111,7 @@ The 2025-onwards payroll-record model distinguishes these columns:
 
 [M, chapter 6, columns 5–16][M]; [U, article 4a][U]; [W]
 
-## Withholding method and selected 2026 monthly rows
+### Withholding method and selected 2026 monthly rows
 
 Wage is recognised at the article 10 receipt/set-off/availability/collectibility
 events, with its special timing conditions. Withhold under the table applicable
@@ -126,14 +141,14 @@ reference rows, not an embedded complete table or a substitute for current
 instructions. The elderly column is retained for source comparison only and
 is held for computation, as explained below. Amounts are USD. [T, pages 9–10 and 27][T]
 
-| Monthly taxable-pay row | No tax-free sum, no elderly allowance | Tax-free sum, no elderly allowance | Published elderly column, held |
-|---|---:|---:|---:|
-| 1,914 | 562.71 | 24.79 | 41.08 |
-| 1,920 | 564.48 | 26.55 | 41.08 |
-| 1,974 | 580.35 | 42.43 | 41.08 |
-| 2,118 | 622.69 | 84.77 | 41.08 |
-| 2,124 | 624.45 | 86.53 | 41.08 |
-| 6,582, the final published row | 2,128.50 | 1,425.91 | 53.66 |
+| Monthly taxable-pay row | No tax-free sum, no elderly allowance | Tax-free sum, no elderly allowance | Published elderly column, held | Source of the figure |
+|---|---:|---:|---:|---|
+| 1,914 | 562.71 | 24.79 | 41.08 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
+| 1,920 | 564.48 | 26.55 | 41.08 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
+| 1,974 | 580.35 | 42.43 | 41.08 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
+| 2,118 | 622.69 | 84.77 | 41.08 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
+| 2,124 | 624.45 | 86.53 | 41.08 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
+| 6,582, the final published row | 2,128.50 | 1,425.91 | 53.66 | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf |
 
 The final table page states the method for taxable pay above its last row:
 38.4% of the excess, added to the last applicable withholding amount. Obtain
@@ -141,7 +156,7 @@ the complete conditions and rounding before using that tail for an actual
 payroll. Do not extend the printed rows or use a different document's table-end
 amount as though it appeared in this table. [T, page 27][T]
 
-### Source discrepancies and held branches
+#### Source discrepancies and held branches
 
 The explanation's page 4 prints USD 526.71 for the no-allowance amount at a
 USD 1,914 row. The actual monthly table prints USD 562.71. Page 6's narrative
@@ -169,7 +184,9 @@ complete instructions. The website's quarter-table label currently links to
 the special-payment document; do not treat that link as a read quarterly table.
 [C]; [T]; [W, articles 8a–12 and 20–21b][W]; [TABLES]
 
-## Employer charges and fictional payroll check
+## Worked cases
+
+### Employer charges and fictional payroll check
 
 For each programme, establish worker coverage and the wage base separately.
 The ordinary 2026 employer rates are ZV 0.7%, OV 0.2%, CES 0.1% and healthcare
@@ -213,7 +230,56 @@ Exact-cent employer amounts avoid selecting an unverified fractional-cent
 method. These checks do not certify eligibility, a real payslip, return-field
 mapping or a final payroll run.
 
-## Records, returns and deadlines
+### Recomputed cases
+
+**Case 1, employer cost on a USD 2,000 monthly wage.** All four employer programmes apply: ZV 0.7%, OV 0.2%, cessantia 0.1% and healthcare 9.3%, together USD 206. With the tax-free sum used here, the combined employee withholding from the monthly table row USD 1,974 is USD 42.43, so net pay is USD 1,957.57 and the employer's cost is USD 2,206 (first column of the table above).
+
+```oa-check
+name: BES monthly payroll, USD 2,000 wage, tax-free sum used here (2026)
+inputs:
+  wage: 2000
+  fixed_deduction: 23.33
+  table_withholding: 42.43
+steps:
+  - taxable_pay: wage - fixed_deduction
+  - employer_charges: wage * (0.007 + 0.002 + 0.001 + 0.093)
+  - net_pay: wage - table_withholding
+  - employer_cost: wage + employer_charges
+expected:
+  taxable_pay: 1976.67
+  employer_charges: 206
+  net_pay: 1957.57
+  employer_cost: 2206
+```
+
+**Case 2, a decision: which employer applies the tax-free sum?** The same employee has a second job and lawfully uses the tax-free sum with the other employer. This employer then uses the no-tax-free-sum column: withholding at row USD 1,974 is USD 580.35, net pay USD 1,419.65. The tax-free sum is worth USD 537.92 a month in withholding to whichever employer applies it; it may be used with only one.
+
+```oa-check
+name: Tax-free sum used elsewhere, row USD 1,974 (2026)
+inputs:
+  wage: 2000
+  with_sum: 42.43
+  without_sum: 580.35
+steps:
+  - net_without_sum: wage - without_sum
+  - monthly_value_of_sum: without_sum - with_sum
+expected:
+  net_without_sum: 1419.65
+  monthly_value_of_sum: 537.92
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-PR-ELDERLY | The employee qualifies for the elderly reduction | Hold the payroll figure: the official sheet (USD 1,677) and the statute (USD 1,678) differ; refer to the Belastingdienst Caribisch Nederland |
+| R-BQ-PR-SPECIAL | Special payments, bonuses, back pay or benefits in kind | Refer: the special-payment tables and conditions are not covered |
+| R-BQ-PR-TAIL | Monthly taxable pay above the last printed table row (USD 6,582) | Refer until the tail method's conditions and rounding are confirmed |
+| R-BQ-PR-STATUS | Director, posted or overseas worker, or uncertain employee status | Refer: coverage and withholding need a separate determination |
+
+## Filing and payment
+
+### Records, returns and deadlines
 
 The implementing regulation requires a payroll record before the first wage
 payment in each calendar year, with ongoing updates and the prescribed data.
@@ -267,14 +333,16 @@ single application of the specified penalty provisions for simultaneous levies;
 do not multiply a combined-return penalty by the number of programmes. This
 reference does not calculate a penalty from a headline maximum. [W]; [B1]
 
-## Completion conditions and self-checks
+## Completion checklist
+
+### Completion conditions and self-checks
 
 No additional missing-fact default is authorised. Unknown insurance, allowance
 election, residence, wage classification, inspector decision or evidence remains
 Needs Input or a source hold. The statutory anonymous-rate branch is not a
 general substitute for asking which rules apply; establish its actual trigger.
 
-### Minimum wage check
+#### Minimum wage check
 
 The 2026 gross hourly minimum for a covered worker aged 21 or older is
 USD 10.69 in Bonaire, USD 10.61 in Sint Eustatius and USD 10.66 in Saba. Establish
@@ -322,7 +390,29 @@ column; no second addition of employee premiums; exact programme coverage;
 pay versus return period; statement deadlines; evidence-backed payments; and
 all universal/domain outputs and reconciliations. Obtain professional sign-off.
 
-## Primary sources and verification scope
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| W. Read for the provisions this skill cites as [W]. | https://wetten.overheid.nl/BWBR0029283/2025-04-01 | 2026-10-17 |
+| U. Read for the provisions this skill cites as [U]. | https://wetten.overheid.nl/BWBR0029331/2025-04-01 | 2026-10-17 |
+| IB. Read for the provisions this skill cites as [IB]. | https://wetten.overheid.nl/BWBR0029281/2026-01-01 | 2026-10-17 |
+| INDEX. Read for Bijstellingsregeling directe belastingen 2026 (Stcrt. 2025, 40487), article XII: tax-free sum USD 21,956, elderly amount USD 1,678, the USD 53,198 bracket and the USD 15,640 constant. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-40487.html | 2026-11-14 |
+| AOV. Read for the provisions this skill cites as [AOV]. | https://wetten.overheid.nl/BWBR0028459/2026-07-01 | 2026-10-17 |
+| MIN. Read for the provisions this skill cites as [MIN]. | https://wetten.overheid.nl/BWBR0028170/2026-01-01 | 2026-10-17 |
+| YOUTH. Read for the provisions this skill cites as [YOUTH]. | https://wetten.overheid.nl/BWBR0028325/2010-10-10 | 2026-10-17 |
+| YOUTH-CHANGE. Read for the provisions this skill cites as [YOUTH-CHANGE]. | https://zoek.officielebekendmakingen.nl/stb-2026-279.html | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| B-RULES. Read for the provisions this skill cites as [B-RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| RATES. Read for Stcrt. 2025, 39413, articles III, VI(D), VII(C), X(B) and XI(B): 2026 rates AOV 25%, AWW 1.3%, OV 0.2%, ZV 0.7%, cessantia 0.1%. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html | 2026-11-14 |
+| CARE-RATES. Read for the provisions this skill cites as [CARE-RATES]. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 | 2026-10-17 |
+| TABLES. Read for the provisions this skill cites as [TABLES]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/loonheffing/tabellen-en-rekenregels | 2026-10-17 |
+| T. Read for the provisions this skill cites as [T]. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/maandtabel-2026/maand-tabel-2026.pdf | 2026-10-17 |
+| E. Read for the provisions this skill cites as [E]. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/toelichting-2026/toelichting-tabellen-lb-en-premies-2026.pdf | 2026-10-17 |
+| C. Read for the provisions this skill cites as [C]. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/rekenregels-2026/rekenregels-tabellen-lb-en-premies-2026.pdf | 2026-10-17 |
+| M. Read for the provisions this skill cites as [M]. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/2026/handboek-loonheffingen-2026/bes-handboek-loonheffingen-2026.pdf | 2026-10-17 |
+
+### Primary sources and verification scope
 
 Read on 17 October 2026. Selected WAGE provisions, the full implementing
 regulation, selected general tax provisions, relevant insurance provisions and
@@ -351,22 +441,4 @@ comparison was used to establish these values.
 [C]: https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/tabellen-en-rekenregels-2026/rekenregels-2026/rekenregels-tabellen-lb-en-premies-2026.pdf
 [M]: https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/lh/2026/handboek-loonheffingen-2026/bes-handboek-loonheffingen-2026.pdf
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: payroll calculations that rely on the elderly reduction (held: the official calculation sheet and manual show USD 1,677 against USD 1,678 in the statute and indexation instrument); special payments and their tables; the withholding tail above the last printed monthly row; rounding to the cent; the payroll return form and field mapping; pension and labour-law conditions. Other sources were read by Ryan Duguid on 2026-10-17; INDEX and RATES were re-read on 2026-11-14.

@@ -15,14 +15,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 Bonaire local grondbelasting reference; no operative Saba or Sint Eustatius local ground-tax regime established"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: computation
+domain: estate-wealth-tax
 depends_on:
   - workflow-base
 ---
 
 # Bonaire local ground tax in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish whether the property falls within Bonaire's local *grondbelasting*
 before calculating an assessment component. A national *vastgoedbelasting*
@@ -35,7 +40,7 @@ refusals, four outputs, recalculation and professional review. This Tier 2
 reference has no accountant sign-off. Its fictional component examples do
 not resolve the operational completion conditions for an actual property.
 
-## Scope and completion conditions
+### Scope and completion conditions
 
 This guide covers selected Bonaire local charging, valuation, rate, co-holder
 and collection provisions. It does not establish an operative local ground
@@ -61,7 +66,17 @@ Unresolved law is a source condition. It cannot be supplied by a factual
 default, an assumed higher assessment or a reviewer flag. Hold the dependent
 calculation and complete engagement outputs until the condition is resolved.
 
-## Charge, object and valuation
+## Ask the client first
+
+1. **Which island** the property is on: this local ground tax is Bonaire's only; no Saba or Sint Eustatius ground-tax regime is established here.
+2. **Who held the property right on 1 January 2026**, and any co-holders.
+3. **What the property is used for**: the owner's main home, an enterprise asset, or something else.
+4. **The established local base** (value) and the local valuation period the island has actually set.
+5. **Whether national vastgoedbelasting exempts it**: that exemption does not by itself remove the local tax.
+
+## The method, step by step
+
+### Charge, object and valuation
 
 Article 1 charges the person enjoying the qualifying property through
 ownership, possession or limited right at the calendar year's start.
@@ -116,15 +131,15 @@ exclude their residential parts from those exclusions. Verify every use,
 holder and removal condition. A national exemption or a general charity
 description does not replace this local list. [L1, article 4; F1, article 49]
 
-## Rate, threshold and assessment rounding
+### Rate, threshold and assessment rounding
 
-| Rule | Figure or method | Authority |
-|---|---|---|
-| Main-home branch | 0.345% of the established local base | L1, article 5(1)(a) |
-| Enterprise-property branch | 0.345% of the established local base | L1, article 5(1)(b) |
-| Base threshold | No tax when the base is **below** USD 10,000 | L1, article 5(2) |
-| Assessment rounding | Round down to whole United States dollars per assessment | L1, article 5(3) |
-| Collection concession | The text says amounts 'tot 10 USD'; aggregate amounts combined on one bill for this rule | L1, article 5(4); exact USD 10 boundary remains unverified |
+| Rule | Figure or method | Authority | Source of the figure |
+|---|---|---|---|
+| Main-home branch | 0.345% of the established local base | L1, article 5(1)(a) | https://lokaleregelgeving.overheid.nl/CVDR355362 |
+| Enterprise-property branch | 0.345% of the established local base | L1, article 5(1)(b) | https://lokaleregelgeving.overheid.nl/CVDR355362 |
+| Base threshold | No tax when the base is **below** USD 10,000 | L1, article 5(2) | https://lokaleregelgeving.overheid.nl/CVDR355362 |
+| Assessment rounding | Round down to whole United States dollars per assessment | L1, article 5(3) | https://lokaleregelgeving.overheid.nl/CVDR355362 |
+| Collection concession | The text says amounts 'tot 10 USD'; aggregate amounts combined on one bill for this rule | L1, article 5(4); exact USD 10 boundary remains unverified | https://lokaleregelgeving.overheid.nl/CVDR355362 |
 
 The USD 10,000 threshold is not a deduction from every taxable base. FinBES
 permits a threshold up to USD 12,000, but Bonaire's enacted threshold is USD
@@ -145,7 +160,7 @@ Preserve the statutory downward assessment rounding and record the guidance
 conflict. The example does not establish the actual taxpayer's classification
 or value. [L1, article 5(3); G1, cost panel]
 
-## Co-holders, collection and procedure
+### Co-holders, collection and procedure
 
 FinBES article 83 allows an assessment to name one of multiple liable persons.
 For the specified property-right case, recovery can reach the whole property;
@@ -185,7 +200,29 @@ procedures. The implementing decision's listed forms concern other specified
 levies; no ground-tax return form or automatic no-return procedure is inferred.
 [L1, articles 7 and 10; F1, articles 67 and 84; L4]
 
-## Hypothetical component positions
+### Output and intake additions
+
+Retain the universal workbook, reviewer brief, action list and review checklist.
+Add a local-property schedule recording a stable redacted reference, year,
+holder/right, statutory object, charging branch, local period/reference date,
+value and exclusions, rate, raw component, downward assessment rounding,
+named assessment recipient, combined bill, collection hold, actual notices,
+instalment conditions and source pinpoints. Map applicable universal fields to
+that schedule and disclose omissions.
+
+Keep the national and local levies, ground lease, valuation events, assessments,
+payment terms, objections and relief requests separate. Do not label a
+stipulated component as an actual payable amount. Obtain the universal profile
+confirmation from redacted records. Group questions about the period/island,
+rights and co-holders, main-home/enterprise use, object and exclusions,
+valuation/physical changes, notices and combined bills, collection/objections
+and professional delivery requirements. Keep identity documents, tax numbers,
+addresses, cadastral identifiers, bank details and authentication material with
+the professional, outside agent inputs and outputs.
+
+## Worked cases
+
+### Hypothetical component positions
 
 These are fictional arithmetic positions. The statutory object, taxable
 classification, full local base and absence of other exclusions or reductions
@@ -216,7 +253,43 @@ payment schedule or final amount after unresolved procedural conditions.
    before selecting this rate or producing engagement outputs. [L1,
    article 1; F1, article 43; I1, article 6]
 
-## Defaults, questions and refusals
+### Recomputed cases
+
+**Case 1, rounding a fractional assessment.** A qualifying Bonaire main home has an established local base of USD 250,000. At 0.345% the tax is USD 862.50, and article 5(3) rounds each assessment down to whole dollars: USD 862 (example 1 above).
+
+```oa-check
+name: Bonaire ground tax on a USD 250,000 base, rounded down (2026)
+inputs:
+  base: 250000
+  rate: 0.00345
+steps:
+  - unrounded: base * rate
+  - assessment: floor(unrounded)
+expected:
+  unrounded: 862.50
+  assessment: 862
+```
+
+**Case 2, a decision at the USD 10,000 threshold.** Below USD 10,000 there is no tax (article 5(2)). At exactly USD 10,000 the "below" branch no longer applies and the whole base is taxed: USD 34.50, rounded down to USD 34. The threshold is not a deduction, so deducting USD 10,000 first (which gives nil) is wrong (example 2).
+
+```oa-check
+name: Bonaire ground tax at the USD 10,000 threshold (2026)
+inputs:
+  base: 10000
+  rate: 0.00345
+steps:
+  - unrounded: base * rate
+  - assessment: floor(unrounded)
+  - wrong_if_deducted: floor((base - 10000) * rate)
+expected:
+  unrounded: 34.50
+  assessment: 34
+  wrong_if_deducted: 0
+```
+
+## When to refuse or refer
+
+### Defaults, questions and refusals
 
 No substantive factual default is permitted. Holder, object, year, use,
 value, period and legal conditions require evidence at any impact. Unresolved
@@ -234,27 +307,9 @@ is an evidence state. A refusal stops before partial engagement outputs.
 | R-BQ-GROUND-OPERATIONAL | Complete operational assessment or payment package requested while a completion condition remains open | This Bonaire ground-tax reference does not yet support a complete operational package. Resolve the classification, valuation, legal and procedure conditions with the professional reviewer before preparing engagement outputs. |
 | R-BQ-GROUND-AMBIGUITY | More than ten grouped factual questions remain necessary | This ground-tax engagement needs more than ten grouped factual questions. Resolve the source records with the professional reviewer before restarting the workflow. |
 
-## Output and intake additions
+## Completion checklist
 
-Retain the universal workbook, reviewer brief, action list and review checklist.
-Add a local-property schedule recording a stable redacted reference, year,
-holder/right, statutory object, charging branch, local period/reference date,
-value and exclusions, rate, raw component, downward assessment rounding,
-named assessment recipient, combined bill, collection hold, actual notices,
-instalment conditions and source pinpoints. Map applicable universal fields to
-that schedule and disclose omissions.
-
-Keep the national and local levies, ground lease, valuation events, assessments,
-payment terms, objections and relief requests separate. Do not label a
-stipulated component as an actual payable amount. Obtain the universal profile
-confirmation from redacted records. Group questions about the period/island,
-rights and co-holders, main-home/enterprise use, object and exclusions,
-valuation/physical changes, notices and combined bills, collection/objections
-and professional delivery requirements. Keep identity documents, tax numbers,
-addresses, cadastral identifiers, bank details and authentication material with
-the professional, outside agent inputs and outputs.
-
-## Review Checklist Items
+### Review Checklist Items
 
 - Verify the current local authority and actual 2026 valuation period.
 - Establish the year-start holder, statutory object and charging branch.
@@ -266,16 +321,37 @@ the professional, outside agent inputs and outputs.
 - Verify actual instalments, notices, local officials and procedures.
 - Recalculate all four outputs and obtain professional sign-off.
 
-## Primary source library
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| F1. Read for: Wet financiën openbare lichamen Bonaire, Sint Eustatius en Saba, articles 43–52, 67, 83–84 and selected 101a–101e transition provisions. | https://wetten.overheid.nl/BWBR0028151/2023-01-01 | 2026-10-17 |
+| I1. Read for: Wet inkomstenbelasting BES, from 1 January 2026, articles 4 and 6. Actual enterprise, residence and asset attribution require separate determination. | https://wetten.overheid.nl/BWBR0029281/2026-01-01 | 2026-10-17 |
+| P1. Read for: Bonaire liable-person selection policy, articles I–II, current displayed text from 29 September 2011. | https://lokaleregelgeving.overheid.nl/CVDR357428/1 | 2026-10-17 |
+| L4. Read for: Uitvoeringsregeling eilandsbelastingen Bonaire, articles 1–5 and annex headings; no actual form was opened or adopted as a ground-tax filing method. | https://lokaleregelgeving.overheid.nl/CVDR361286/1 | 2026-10-17 |
+| L5. Read for: Legacy fifteen-opcenten ordinance, read with F1's transition provisions; not selected as an additional 2026 charge. | https://lokaleregelgeving.overheid.nl/CVDR795 | 2026-10-17 |
+| G1. Read for: Bonaire government ground-tax product guidance, selected non-payment panels only. Its fractional-dollar example does not replace L1 article 5(3). | https://bonairegov.com/bouwen-en-wonen/grondbelasting | 2026-10-17 |
+| L1. Read for the provisions this skill cites as [L1]. | https://lokaleregelgeving.overheid.nl/CVDR355362 | 2026-10-17 |
+| L2. Read for the provisions this skill cites as [L2]. | https://lokaleregelgeving.overheid.nl/CVDR355362?show-wti=true | 2026-10-17 |
+| O1. Read for the provisions this skill cites as [O1]. | https://wetten.overheid.nl/BWBR0044462/2020-12-11 | 2026-10-17 |
+| O2. Read for the provisions this skill cites as [O2]. | https://zoek.officielebekendmakingen.nl/stcrt-2020-62994.html | 2026-10-17 |
+| O3. Read for the provisions this skill cites as [O3]. | https://zoek.officielebekendmakingen.nl/stcrt-2020-62994/metadata.xml | 2026-10-17 |
+
+### Primary source library
 
 - **L1–L2:** [Eilandsverordening grondbelasting Bonaire][L1] and its [official metadata/history][L2], current displayed text from 1 January 2011, inspected on 17 October 2026. Authentic original and exhaustive amendment chain remain unverified.
-- **F1:** [Wet financiën openbare lichamen Bonaire, Sint Eustatius en Saba][F1], articles 43–52, 67, 83–84 and selected 101a–101e transition provisions.
-- **I1:** [Wet inkomstenbelasting BES, from 1 January 2026][I1], articles 4 and 6. Actual enterprise, residence and asset attribution require separate determination.
 - **O1–O3:** [Own-home policy][O1], sections 2.1 and 3.1, its [original publication][O2] and [publication metadata][O3], read on 17 October 2026. These are income-tax approvals, not a verified local ground-tax concession. Their interaction with the amended article 4 and local main-residence condition remains open.
-- **P1:** [Bonaire liable-person selection policy][P1], articles I–II, current displayed text from 29 September 2011.
-- **L4:** [Uitvoeringsregeling eilandsbelastingen Bonaire][L4], articles 1–5 and annex headings; no actual form was opened or adopted as a ground-tax filing method.
-- **L5:** [Legacy fifteen-opcenten ordinance][L5], read with F1's transition provisions; not selected as an additional 2026 charge.
-- **G1:** [Bonaire government ground-tax product guidance][G1], selected non-payment panels only. Its fractional-dollar example does not replace L1 article 5(3).
+
+### Revision and assurance
+
+Version 0.2, 17 October 2026: adds the own-home policy's scope and preserves the
+unresolved local charging interaction. The five hypothetical positions and
+operational completion conditions are unchanged. This source-cited draft does
+not establish comprehensive property-topic or country coverage.
+
+This guide supports professional review and does not constitute tax, legal or
+financial advice. The professional verifies the sources, decisions,
+calculations, notices and final treatment before reliance.
 
 [L1]: https://lokaleregelgeving.overheid.nl/CVDR355362
 [L2]: https://lokaleregelgeving.overheid.nl/CVDR355362?show-wti=true
@@ -289,33 +365,4 @@ the professional, outside agent inputs and outputs.
 [L5]: https://lokaleregelgeving.overheid.nl/CVDR795
 [G1]: https://bonairegov.com/bouwen-en-wonen/grondbelasting
 
-## Revision and assurance
-
-Version 0.2, 17 October 2026: adds the own-home policy's scope and preserves the
-unresolved local charging interaction. The five hypothetical positions and
-operational completion conditions are unchanged. This source-cited draft does
-not establish comprehensive property-topic or country coverage.
-
-This guide supports professional review and does not constitute tax, legal or
-financial advice. The professional verifies the sources, decisions,
-calculations, notices and final treatment before reliance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the authentic original text and full amendment chain of the Bonaire ground-tax ordinance (only the displayed consolidation from 1 January 2011 was read); the exact USD 10 boundary of the collection concession in article 5(4) ("tot 10 USD"); Bonaire's actual 2026 local valuation period; the interaction of the own-home policy with the local main-residence condition; the forms and collection practice. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

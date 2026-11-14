@@ -16,15 +16,20 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 reference using BRN current from 2025 and unilateral decree current from 2011; verify each source country and relevant period"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: situation-rules
+domain: cross-border
 depends_on:
   - workflow-base
   - cross-border-workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: double-tax relief in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish residence, income classification, source, period and the applicable
 instrument before selecting a rate or relief. The Belastingwet BES distinguishes
@@ -43,7 +48,26 @@ reference establishes selected relief components. Unknown mandatory conditions
 hold the complete financial output package; it does not complete every
 cross-border slot or certify a country pack.
 
-## Choose the instrument and the tax
+## Ask the client first
+
+1. **Where the person is resident** in 2026 (BES, European Netherlands or elsewhere) and any dual-residence facts.
+2. **The other jurisdiction**: the European Netherlands (BRN applies first) or another country, and any treaty in force.
+3. **The income type**: business or PE profit, employment (days worked abroad), dividends, interest, royalties, pensions.
+4. **Foreign tax actually assessed and paid**, with evidence, and any refund.
+5. **The BES tax and the denominator income** established in the income or corporate workpaper.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Source |
+|---|---|---|
+| BRN dividend exemption, Netherlands-source dividends to a qualifying BES company | Direct holding of at least 10% (a participation threshold, not a withholding rate) | BRN, article 2.4(4): https://wetten.overheid.nl/BWBR0029675/2025-01-01 |
+| Unilateral decree, foreign tax counted on dividends | Capped at 5% of the dividend | UNI, article 11(3): https://wetten.overheid.nl/BWBR0029674/2011-03-05 |
+| Unilateral decree, short foreign employment | Less than 30 consecutive days needs proof that foreign tax was paid | UNI, article 7(3): https://wetten.overheid.nl/BWBR0029674/2011-03-05 |
+| Unilateral decree, return to residence | Within eight years after the end of the emigration year, for prior established balances | UNI, article 17: https://wetten.overheid.nl/BWBR0029674/2011-03-05 |
+
+### Choose the instrument and the tax
 
 | Instrument | Scope and control |
 |---|---|
@@ -69,7 +93,7 @@ local charge, social premiums or minimum tax merely because a payment crosses
 between the areas. Tax-specific and foreign rules still need their own sources.
 [BRN, article 1.3][BRN]
 
-## BRN residence and permanent establishments
+### BRN residence and permanent establishments
 
 Article 1.4 uses domestic residence/deeming provisions. A dual-resident
 individual's order is permanent home, then closest personal/economic relations
@@ -96,7 +120,7 @@ construction threshold to every activity or treat group ownership alone as a
 permanent establishment. Actual contracts, functions, assets, risks and day
 aggregation require evidence. [BRN]
 
-## BRN income classification and taxing rights
+### BRN income classification and taxing rights
 
 The phrases 'may be taxed' and 'only taxable' allocate rights under the
 arrangement; they do not create a domestic tax charge or set a universal rate.
@@ -119,7 +143,7 @@ Retain the domestic base and relief analysis separately. [BRN]
 
 [BRN, articles 2.1–2.12][BRN]
 
-### Ordinary employment and the 183-day exception
+#### Ordinary employment and the 183-day exception
 
 Subject to articles 2.7, 2.9, 2.10 and 2.11, BRN article 2.6(2) leaves ordinary
 employment remuneration taxable only in the residence area when **all** apply:
@@ -146,7 +170,7 @@ tax or allocation between work locations. [BRN]
 | 184 days; otherwise the same facts | Presence condition fails: Netherlands may tax remuneration attributable to the work there, subject to the remaining analysis. |
 | 90 days; Netherlands-resident employer | Employer condition fails despite the short stay: Netherlands may tax the relevant work remuneration. |
 
-### Dividends and pensions
+#### Dividends and pensions
 
 BRN article 2.4(3) exempts qualifying Netherlands-source dividends for a
 BES-resident pension fund that is the beneficial owner. Paragraph 4's separate
@@ -172,7 +196,7 @@ actual payment; early lump sums and tax-facilitated origin require their full
 conditions. An objection to Netherlands withholding has its Netherlands route,
 not automatically `bq-tax-compliance`'s BES objection clock. [G-FOREIGN]; [BRN]
 
-## BRN relief is directional
+### BRN relief is directional
 
 Article 3.1 permits residence-area inclusion, then supplies the relevant
 exemption or capped credit. Its lists differ by direction. For a BES resident,
@@ -188,7 +212,7 @@ not an unlimited refund of foreign tax. This guide does not complete European
 Netherlands tax computation, corporate participation exemption or an actual
 BRN relief claim. [BRN, article 3.1][BRN]
 
-## Unilateral exemption and credit
+### Unilateral exemption and credit
 
 Use the unilateral decree only after article 1's priority test. Its PE/agent
 definitions in article 2 are its own; do not import every BRN definition.
@@ -223,7 +247,7 @@ costs for the proportional limit; royalties by directly attributable costs.
 Article 12 requires beneficial ownership and has transaction-series rules.
 [UNI, articles 11–12][UNI]
 
-### Fictional positive-income relief components
+#### Fictional positive-income relief components
 
 Each example stipulates residence, priority, qualifying foreign source and
 tax treatment, beneficial ownership where needed, no other relief or carry
@@ -239,7 +263,7 @@ eligibility or select fractional-cent rounding. [UNI]
 | Dividend credit ceiling | Tax 12,000; denominator 60,000; gross dividend 10,000; related costs 1,000; foreign tax 1,500. Proportional limit 12,000 × 9,000 / 60,000 = 1,800; eligible foreign tax capped at 500; credit 500; remaining BES tax 11,500. |
 | Interest credit ceiling | Same tax/denominator; gross interest 8,000; related costs 500; foreign tax 2,000. Proportional limit 12,000 × 7,500 / 60,000 = 1,500; credit 1,500; remaining BES tax 10,500. The dividend-specific 5% cap is not applied. |
 
-### Carry balances and distinct tax branches
+#### Carry balances and distinct tax branches
 
 Articles 9–10 distinguish excess exemptible foreign income from negative
 foreign income. Articles 14–15 prescribe per-jurisdiction decisions, revision
@@ -260,7 +284,60 @@ from the recipient having a foreign address. Actual wage/prize treatment,
 delegated rules, carry/revision periods and form mapping remain held until
 their complete sources and facts are established. [UNI]
 
-## Evidence, reconciliation and completion holds
+## Worked cases
+
+### Recomputed cases
+
+**Case 1, exemption relief for two foreign jurisdictions.** BES tax is USD 12,000 on denominator income of USD 60,000. Qualifying foreign income is USD 15,000 from one country and USD 10,000 from another. Relief is computed per country: USD 3,000 and USD 2,000, leaving BES tax of USD 7,000.
+
+```oa-check
+name: Unilateral exemption relief per jurisdiction (article 8)
+inputs:
+  bes_tax: 12000
+  denominator: 60000
+  foreign_a: 15000
+  foreign_b: 10000
+steps:
+  - relief_a: bes_tax * foreign_a / denominator
+  - relief_b: bes_tax * foreign_b / denominator
+  - remaining_tax: bes_tax - relief_a - relief_b
+expected:
+  relief_a: 3000
+  relief_b: 2000
+  remaining_tax: 7000
+```
+
+**Case 2, a decision: which limit bites on a dividend credit?** A gross foreign dividend of USD 10,000 with USD 1,000 related costs suffered foreign tax of USD 1,500. The proportional limit is USD 12,000 x 9,000 / 60,000 = USD 1,800, but foreign tax counts only up to 5% of the dividend (USD 500), so the credit is USD 500. For interest of USD 8,000 with USD 500 costs and USD 2,000 foreign tax, no 5% cap applies and the proportional limit of USD 1,500 gives the credit.
+
+```oa-check
+name: Article 11 credit, dividend 5% cap against interest proportional limit
+inputs:
+  bes_tax: 12000
+  denominator: 60000
+steps:
+  - dividend_limit: bes_tax * (10000 - 1000) / denominator
+  - dividend_credit: min(1500, 10000 * 0.05, dividend_limit)
+  - interest_limit: bes_tax * (8000 - 500) / denominator
+  - interest_credit: min(2000, interest_limit)
+expected:
+  dividend_limit: 1800
+  dividend_credit: 500
+  interest_limit: 1500
+  interest_credit: 1500
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-DTR-INSTRUMENT | A bilateral treaty other than BRN may apply, or priority between instruments is unclear | Refer: the treaty roster for BES is not established here |
+| R-BQ-DTR-LOSS | Zero or negative denominator, foreign losses or carry balances | Refer: articles 9, 10 and 13 to 16 decisions are held |
+| R-BQ-DTR-RESIDENCE | Complex or dual residence | Refer: residence must be settled before relief |
+| R-BQ-DTR-SOCIAL | The question is about social insurance coverage | Refer to `bq-social-contributions`; a tax allocation does not settle coverage |
+
+## Completion checklist
+
+### Evidence, reconciliation and completion holds
 
 Keep a jurisdiction-by-jurisdiction schedule of instrument/version, residence,
 income character, work/presence dates, payer, PE and cost bearing, gross income,
@@ -287,7 +364,17 @@ reporting duties, information exchange, import/indirect tax, inheritance,
 operational relief forms, rounding or a complete country pack. No actual
 taxpayer, authority submission, portal or engagement workbook was tested.
 
-## Primary sources and read scope
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| BRN. Read for the provisions this skill cites as [BRN]. | https://wetten.overheid.nl/BWBR0029675/2025-01-01 | 2026-10-17 |
+| UNI. Read for the provisions this skill cites as [UNI]. | https://wetten.overheid.nl/BWBR0029674/2011-03-05 | 2026-10-17 |
+| G-FOREIGN. Read for the provisions this skill cites as [G-FOREIGN]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/inkomen-van-buiten-caribisch-nederland | 2026-10-17 |
+| G-RESIDENT. Read for the provisions this skill cites as [G-RESIDENT]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/binnenlands-belastingplichtigen | 2026-10-17 |
+
+### Primary sources and read scope
 
 Read on 17 October 2026. All operative articles of the current BRN and
 unilateral decree were read in context, with their current registry dates.
@@ -304,22 +391,4 @@ form mapping were not completed. A captured text alone is not eligibility.
 [G-FOREIGN]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/inkomen-van-buiten-caribisch-nederland
 [G-RESIDENT]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/binnenlands-belastingplichtigen
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the complete list of bilateral instruments in force for BES in 2026 beyond the BRN and the unilateral decree; the actual relief claim forms; rounding; foreign-law eligibility conditions; loss and carry decisions. Sources were read by Ryan Duguid on 2026-10-17 (the unilateral decree is the consolidation current from 2011, the BRN from 2025) and not re-opened on import.

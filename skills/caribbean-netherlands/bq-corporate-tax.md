@@ -17,9 +17,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 status and distribution rules; separate minimum-tax reporting periods"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: corporate-tax
 depends_on:
   - corporate-income-tax-workflow-base
   - bq-formation
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: entity and distribution taxes in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the entity's actual residence, legal form, inspector's decision and
 continuing conditions before choosing a tax regime. Incorporation in BES does
@@ -41,7 +46,25 @@ companion slot or authorise a complete financial output package. A required
 unfilled slot remains a hold; labelled conditional reference examples remain
 available within their assumptions.
 
-## Entity, residence and decision
+## Ask the client first
+
+1. **Where the entity is established** and whether it holds an effective article 5.2(2) decision treating it as a BES entity (incorporation alone is not enough).
+2. **What is being paid out**: a dividend, buyback, liquidation proceeds, capital repayment, profit right or foundation payment, and when it is made available.
+3. **Who bears the distribution tax**: withheld from a gross amount, or borne by the payer on a promised net amount.
+4. **The recipient**: a qualifying participation holder (5% test), a qualifying foundation purpose, a pension arrangement, or an ordinary shareholder.
+5. **Group size** for the minimum-tax screen (consolidated revenue of the group).
+
+## The method, step by step
+
+### Key figures, 2026
+
+| Item | Figure | Source |
+|---|---|---|
+| Distribution tax (opbrengstbelasting) rate | 7.5% of the distribution (5% until 31 December 2024) | B1, article 5.5: https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Payer-borne gross-up | Gross = net x 100 / 92.5 (derived from the 7.5% rate) | same |
+| Participation for the article 5.7 withholding exemption, ordinary shares | At least 5% of nominal paid-up capital (European Netherlands CIT Act article 13(2), imported by article 5.2(5)) | NL-CIT, article 13(2): https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+
+### Entity, residence and decision
 
 Belastingwet BES article 1.5 determines residence from the circumstances.
 Chapter V uses its own entity definition: article 5.1 covers specified companies,
@@ -83,7 +106,7 @@ admission may supply a different statutory route; the lapse does not itself
 select the new outcome. Reassess changes in activities, assets, people, premises,
 ownership and residence. [B1, article 5.2(4)][B1]
 
-### European Netherlands and other taxes
+#### European Netherlands and other taxes
 
 The European Netherlands Corporate Income Tax Act article 2(9) and Dividend
 Tax Act article 1(6) expressly carry the BES residence fiction into their
@@ -108,7 +131,7 @@ treated as proof that no deemed distribution or other tax applies. Company-law
 distribution capacity and accounting recognition remain separate questions
 under `bq-financial-statements`. [B1, articles 5.3–5.8][B1]
 
-## Distributions and exemptions
+### Distributions and exemptions
 
 Article 5.4 includes direct and indirect profit distributions under any name
 or form, specified buybacks/liquidation amounts above nominal value, specified
@@ -146,7 +169,7 @@ connected company or matching tax rate is not by itself an exemption. Treaty
 relief, foreign credits, beneficial ownership, pension and nonprofit qualification
 remain held until their operative sources and facts are established.
 
-### Foundation withholding requires separate resolution
+#### Foundation withholding requires separate resolution
 
 Article 5.1(1)(c) includes foundation/fund beneficiaries, and article 5.2(1)
 excludes those BES-established forms from its ordinary residence fiction.
@@ -158,7 +181,41 @@ paragraph 2 company. Actual foundation/fund withholding is held for a supported
 professional determination. The ordinary NV examples below do not cover it.
 [B1]; [G-FAQ]
 
-## Rate, timing and fictional computations
+## Boundary and exception table
+
+### Minimum-tax screening is a separate obligation
+
+BES chapter VIIb applies the Minimum Tax Act 2024, with its express changes and
+exclusions, to the covered BES group entities and defined permanent
+establishments. Do not conclude that the absence of ordinary BES profit tax
+removes this overlay. The imported law's article 2.1 generally tests consolidated
+group revenue of at least **EUR 750 million** in at least two of the four
+immediately preceding reporting years, with the stated shorter-history rule,
+excluded-entity revenue inclusion and proportional adjustment for non-twelve-month
+years. Group restructurings have further rules. [B1, article 7b.1][B1]; [MIN-TAX]
+
+Article 2.2 separately defines excluded entities and qualifying owned entities,
+with conditions and an election. A foundation, fund, pension or charity label
+does not prove that exclusion. The 15% minimum-tax rate is part of the defined
+top-up system, not a flat 15% corporate tax on every BES company's accounting
+profit. Jurisdictional income, adjusted covered taxes, exclusions, safe harbours
+and elections require their complete applicable rules. This guide supplies no
+top-up computation or blanket zero conclusion. [MIN-TAX, articles 1.2 and 2.1–3.1][MIN-TAX]
+
+Keep tax returns/payments separate from the top-up information return and
+notification. BES article 7b.2 generally uses a tax-return deadline set no earlier
+than seventeen months after period-end and payment within seventeen months.
+Article 7b.8 conditionally sets the transition tax-return deadline no earlier
+than twenty months after period-end, payment within twenty months, and
+information/notification within eighteen months. Paragraph
+4 limits that transition route; article 7b.9 adds specific rules for the
+specified early-ending years. Establish the entity's reporting year and
+complete exceptions before selecting a calendar or treating a deadline as met.
+Do not apply distribution tax's quarterly fifteen-day rule here. [B1]
+
+## Worked cases
+
+### Rate, timing and fictional computations
 
 For 2026, article 5.5 sets **7.5% of the distribution**. If the payer bears the
 tax, multiply the net amount by `100 / 92.5` to establish the gross base, then
@@ -173,27 +230,6 @@ the cash proceeds, paragraph 5 provides the deemed-withholding and recovery
 mechanism, including possible suspension of noncash delivery. This guide does
 not compute a noncash or insufficient-cash case. [B1]
 
-These fictional 2026 cases stipulate an ordinary BES NV with an effective
-article 5.2(2) decision, continuing qualification, established corporate
-distribution capacity, a cash distribution made available, no withholding
-exemption or foreign relief, and no other transaction. They do not establish
-any real entity's status. [B1]
-
-| Item, USD | Tax withheld from a gross distribution | Payer bears tax on a promised net amount | Second payer-borne case |
-|---|---:|---:|---:|
-| Stipulated amount | 25,000 gross | 18,500 net | 23,125 net |
-| Gross taxable distribution | 25,000 | 20,000 | 25,000 |
-| Distribution tax, 7.5% of gross | 1,875 | 1,500 | 1,875 |
-| Recipient cash entitlement | 23,125 | 18,500 | 23,125 |
-| Total distribution/payable components | 25,000 | 20,000 | 25,000 |
-
-The first arithmetic journal debits the established distribution/equity amount
-USD 25,000 and credits recipient liability USD 23,125 plus tax liability
-USD 1,875. In the second, total distribution USD 20,000 equals recipient
-liability USD 18,500 plus tax USD 1,500. Neither records a completed payment or
-prescribes accounting recognition without the applicable framework and evidence.
-Payer-borne tax is included in the gross distribution, not added a second time.
-
 The authority's gross-up example for a USD 50,000 desired net amount reports
 USD 4,054 tax. The statutory formula produces USD 4,054.054054… before rounding.
 This guide neither treats the displayed whole-dollar example as an established
@@ -206,7 +242,75 @@ automatically treat withholding as final, deduct it twice, or add a second
 unreconciled tax at a matching rate. Establish the applicable income category,
 credit and evidence through the recipient's rules and `bq-income-tax`.
 
-## Returns, evidence and changes
+### Fictional distributions (moved from Rate, timing and fictional computations)
+
+These fictional 2026 cases stipulate an ordinary BES NV with an effective
+article 5.2(2) decision, continuing qualification, established corporate
+distribution capacity, a cash distribution made available, no withholding
+exemption or foreign relief, and no other transaction. They do not establish
+any real entity's status. [B1]
+
+| Item, USD | Tax withheld from a gross distribution | Payer bears tax on a promised net amount | Second payer-borne case | Source of the figure |
+|---|---:|---:|---:|---|
+| Stipulated amount | 25,000 gross | 18,500 net | 23,125 net | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Gross taxable distribution | 25,000 | 20,000 | 25,000 | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Distribution tax, 7.5% of gross | 1,875 | 1,500 | 1,875 | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Recipient cash entitlement | 23,125 | 18,500 | 23,125 | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Total distribution/payable components | 25,000 | 20,000 | 25,000 | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+
+The first arithmetic journal debits the established distribution/equity amount
+USD 25,000 and credits recipient liability USD 23,125 plus tax liability
+USD 1,875. In the second, total distribution USD 20,000 equals recipient
+liability USD 18,500 plus tax USD 1,500. Neither records a completed payment or
+prescribes accounting recognition without the applicable framework and evidence.
+Payer-borne tax is included in the gross distribution, not added a second time.
+
+### Recomputed cases
+
+**Case 1, tax withheld from a gross dividend.** A qualifying BES NV distributes USD 25,000 gross. Distribution tax at 7.5% is USD 1,875 and the shareholder receives USD 23,125 (first column of the table above).
+
+```oa-check
+name: BES distribution tax withheld from USD 25,000 (2026)
+inputs:
+  gross: 25000
+steps:
+  - tax: gross * 0.075
+  - net_to_shareholder: gross - tax
+expected:
+  tax: 1875
+  net_to_shareholder: 23125
+```
+
+**Case 2, a decision: withhold, or promise a net amount and bear the tax?** If the company instead promises the shareholder USD 18,500 net and bears the tax, the gross distribution is 18,500 x 100 / 92.5 = USD 20,000 and the tax USD 1,500. Applying 7.5% to the net USD 18,500 (USD 1,387.50) would understate the tax by USD 112.50.
+
+```oa-check
+name: Payer-borne distribution tax on a USD 18,500 net promise (2026)
+inputs:
+  net: 18500
+steps:
+  - gross: net * 100 / 92.5
+  - tax: gross * 0.075
+  - wrong_tax_on_net: net * 0.075
+  - understatement: tax - wrong_tax_on_net
+expected:
+  gross: 20000
+  tax: 1500
+  wrong_tax_on_net: 1387.50
+  understatement: 112.50
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-CIT-STATUS | The entity's BES status or article 5.2(2) decision is unknown | Refer: do not assume exemption from European Netherlands corporate or dividend tax |
+| R-BQ-CIT-NONCASH | Non-cash distribution, or tax exceeds the cash proceeds | Refer: article 5.6(5) deemed-withholding mechanism not computed here |
+| R-BQ-CIT-MINTAX | The group may be in scope of the minimum-tax law | Refer: separate obligation and reporting periods |
+| R-BQ-CIT-FOREIGN | Foreign relief, special entities or exit valuations | Refer to `bq-double-tax-relief` or a specialist |
+
+## Filing and payment
+
+### Returns, evidence and changes
 
 Distribution tax uses calendar quarters. Filing and remittance are generally
 due within fifteen days after the quarter under articles 8.5 and 8.11. Article
@@ -253,37 +357,9 @@ this reference holds actual exit, liquidation and restructuring computations.
 Use `bq-formation` and `bq-financial-statements` for separate corporate events
 and annual reporting. [B1]
 
-## Minimum-tax screening is a separate obligation
+## Completion checklist
 
-BES chapter VIIb applies the Minimum Tax Act 2024, with its express changes and
-exclusions, to the covered BES group entities and defined permanent
-establishments. Do not conclude that the absence of ordinary BES profit tax
-removes this overlay. The imported law's article 2.1 generally tests consolidated
-group revenue of at least **EUR 750 million** in at least two of the four
-immediately preceding reporting years, with the stated shorter-history rule,
-excluded-entity revenue inclusion and proportional adjustment for non-twelve-month
-years. Group restructurings have further rules. [B1, article 7b.1][B1]; [MIN-TAX]
-
-Article 2.2 separately defines excluded entities and qualifying owned entities,
-with conditions and an election. A foundation, fund, pension or charity label
-does not prove that exclusion. The 15% minimum-tax rate is part of the defined
-top-up system, not a flat 15% corporate tax on every BES company's accounting
-profit. Jurisdictional income, adjusted covered taxes, exclusions, safe harbours
-and elections require their complete applicable rules. This guide supplies no
-top-up computation or blanket zero conclusion. [MIN-TAX, articles 1.2 and 2.1–3.1][MIN-TAX]
-
-Keep tax returns/payments separate from the top-up information return and
-notification. BES article 7b.2 generally uses a tax-return deadline set no earlier
-than seventeen months after period-end and payment within seventeen months.
-Article 7b.8 conditionally sets the transition tax-return deadline no earlier
-than twenty months after period-end, payment within twenty months, and
-information/notification within eighteen months. Paragraph
-4 limits that transition route; article 7b.9 adds specific rules for the
-specified early-ending years. Establish the entity's reporting year and
-complete exceptions before selecting a calendar or treating a deadline as met.
-Do not apply distribution tax's quarterly fifteen-day rule here. [B1]
-
-## Completion conditions and self-checks
+### Completion conditions and self-checks
 
 No missing-fact default is authorised. Unknown residence, decision, continued
 qualification, ownership, distribution character, valuation, exemption,
@@ -304,7 +380,23 @@ separate periods; and all universal/domain outputs. Obtain professional review.
 No live taxpayer, portal filing, engagement workbook or professional sign-off
 was tested. This guide does not establish comprehensive country coverage.
 
-## Primary sources and read scope
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| B-JAN. Read for the provisions this skill cites as [B-JAN]. | https://wetten.overheid.nl/BWBR0029244/2026-01-01 | 2026-10-17 |
+| B-FEB. Read for the provisions this skill cites as [B-FEB]. | https://wetten.overheid.nl/BWBR0029244/2026-02-21 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| NL-CIT. Read for the provisions this skill cites as [NL-CIT]. | https://wetten.overheid.nl/BWBR0002672/2026-01-01 | 2026-10-17 |
+| NL-DIV. Read for the provisions this skill cites as [NL-DIV]. | https://wetten.overheid.nl/BWBR0002515/2025-01-01 | 2026-10-17 |
+| MIN-TAX. Read for the provisions this skill cites as [MIN-TAX]. | https://wetten.overheid.nl/BWBR0049111/2026-04-11 | 2026-10-17 |
+| G-FAQ. Read for the provisions this skill cites as [G-FAQ]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/veel-gestelde-vragen-en-antwoorden-qa | 2026-10-17 |
+| G-STATUS. Read for the provisions this skill cites as [G-STATUS]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/vestigingsplaatsbeschikking | 2026-10-17 |
+| G-RATE. Read for the provisions this skill cites as [G-RATE]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/tarief-opbrengstbelasting | 2026-10-17 |
+| G-FILE. Read for the provisions this skill cites as [G-FILE]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/aangifte-opbrengstbelasting | 2026-10-17 |
+
+### Primary sources and read scope
 
 Read on 17 October 2026. The complete BES distribution-tax chapter was read and
 compared across the [January][B-JAN], [February][B-FEB] and [April][B1] 2026 texts and a fresh current
@@ -335,22 +427,4 @@ specific controls above, rather than being resolved by a simplified summary.
 [G-RATE]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/tarief-opbrengstbelasting
 [G-FILE]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/opbrengstbelasting/aangifte-opbrengstbelasting
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: rounding of the distribution tax (the authority's USD 50,000 gross-up example shows USD 4,054 against USD 4,054.05 from the formula); noncash and insufficient-cash distributions; withholding on foundation payments; the distribution tax return form mapping; minimum-tax computations. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

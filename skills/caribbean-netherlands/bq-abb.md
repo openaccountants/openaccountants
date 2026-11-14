@@ -16,14 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026 ABB reference; retrospective threshold correction included"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: computation
+domain: vat-gst
 depends_on:
   - workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: ABB in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the island, transaction and tax period before calculating general
 expenditure tax, or *algemene bestedingsbelasting* (ABB). The rates and relief
@@ -36,7 +41,7 @@ Load `workflow-base`. Preserve its profile confirmation, refusal handling, four
 outputs, recalculation and review requirements. ABB is a distinct BES tax;
 European Netherlands VAT rules do not supply missing ABB rules.
 
-## Scope, period and completion conditions
+### Scope, period and completion conditions
 
 This guide covers ordinary producer supplies, ordinary services, selected import
 rates, producer input credit, the small entrepreneur scheme, and the common ABB
@@ -79,23 +84,52 @@ universal output package; labelled reference examples remain available.
 | Filing | Actual invitation, permitted period, current return instructions and field mapping, deadline extensions and non-working-day rules |
 | Delivery | Recalculated workbook, all four universal outputs, consumer/portal validation and professional sign-off |
 
-## 2026 rates and thresholds
+## Ask the client first
+
+1. **Which island** each supply, service or import belongs to (Bonaire, or Sint Eustatius or Saba): the rates differ by island.
+2. **What the transaction is**: a producer supply of locally manufactured goods, a resale, a service, or an import, and the customer's and provider's establishments.
+3. **Whether prices are ABB-exclusive or ABB-inclusive**, and the tax point (invoice, performance or payment).
+4. **For a car or van**: CO2 emissions, unused or used status, and the established value.
+5. **Relief decisions held**: an article 6.22 small entrepreneur decision (USD 32,000) or the separate USD 10,000 administration concession, and total annual turnover of all the person's businesses.
+6. **Filing period**: monthly, or a permitted quarter, and the return invitation.
+
+### Defaults, questions and reviewer thresholds
+
+| Missing item | Treatment | Alternative and disclosure |
+|---|---|---|
+| Island, period, establishment, event, place or vehicle status | Needs Input; no factual default | Obtain the missing evidence before applying a rate |
+| Relief decision, exemption conditions, input-credit evidence or customs value | Needs Input; no factual default | An apparently higher tax amount cannot establish eligibility or unknown law |
+| Invoice rounding, filing period or return instructions | Needs Input for the dependent calculation | Retain source precision; obtain the relevant method or notice |
+| Applicable law or required delegated authority | Needs Input as a source condition | Identify and verify the authority; do not classify unknown law as a T2 factual assumption |
+
+This version permits no substantive factual defaults, so no T2 cash-question
+floor is used to authorise one. Ask essential factual questions even when cash
+impact is small. For the universal question filter, the configured question
+threshold is USD 0 where a later verified companion expressly permits a default.
+Flag every ABB amount for reviewer sign-off at a USD 0 attention threshold,
+including nil, refunds, relief, island/place boundaries and source holds.
+These are workflow settings, not statutory thresholds. Preserve the base's
+grouping rules and ten-question ceiling.
+
+## The method, step by step
+
+### 2026 rates and thresholds
 
 These rates apply only after establishing a taxable transaction and excluding
 any applicable special rule. Amounts are US dollars (USD). The producer supply
 base is the consideration excluding ABB under article 6.9; the import base is
 the customs value under article 6.18. They are not interchangeable. [B1]
 
-| Item | Bonaire | Sint Eustatius and Saba | Authority |
-|---|---:|---:|---|
-| Ordinary taxable producer supply | 8% | 6% | B1, articles 6.10(1), 6.10a(1)(a) |
-| Ordinary taxable service | 6% | 4% | B1, articles 6.10(2)(a), 6.10a(1)(b) |
-| Taxable insurance, after exemption checks | 7% | 5% | Same provisions; article 6.11(1)(l) exemptions |
-| Ordinary taxable import | 8% | 6% | B1, articles 6.19(1), 6.19a(1)(a) |
-| CO2-emitting passenger car or van | 25% | Progressive table below | B1, articles 6.10(2)(b), 6.10a, 6.19(2)(a), 6.19a |
-| Passenger car or van without CO2 emissions | Nil | Nil | B1, articles 6.10(2)(c), 6.19(2)(b) |
-| Small entrepreneur annual turnover limit, excluding ABB | USD 32,000 or less | USD 32,000 or less | B1, article 6.22; C1, articles IV and V(d) |
-| Separate administration concession: annual service turnover, excluding ABB | USD 10,000 or less | USD 10,000 or less | R1, article 6.14; additional conditions apply |
+| Item | Bonaire | Sint Eustatius and Saba | Authority | Source of the figure |
+|---|---:|---:|---|---|
+| Ordinary taxable producer supply | 8% | 6% | B1, articles 6.10(1), 6.10a(1)(a) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Ordinary taxable service | 6% | 4% | B1, articles 6.10(2)(a), 6.10a(1)(b) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Taxable insurance, after exemption checks | 7% | 5% | Same provisions; article 6.11(1)(l) exemptions | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Ordinary taxable import | 8% | 6% | B1, articles 6.19(1), 6.19a(1)(a) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| CO2-emitting passenger car or van | 25% | Progressive table below | B1, articles 6.10(2)(b), 6.10a, 6.19(2)(a), 6.19a | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Passenger car or van without CO2 emissions | Nil | Nil | B1, articles 6.10(2)(c), 6.19(2)(b) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Small entrepreneur annual turnover limit, excluding ABB | USD 32,000 or less | USD 32,000 or less | B1, article 6.22; C1, articles IV and V(d) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Separate administration concession: annual service turnover, excluding ABB | USD 10,000 or less | USD 10,000 or less | R1, article 6.14; additional conditions apply | https://wetten.overheid.nl/BWBR0029332/2025-01-01 |
 
 For a qualifying CO2-emitting car or van in Sint Eustatius or Saba, let `V` be
 the established taxable consideration for a producer supply or established
@@ -104,15 +138,15 @@ vehicle is unused; an invoice description alone does not establish that status.
 Check the excluded vehicle categories in R1, article 1.2. [B1, articles 6.10a
 and 6.19a]
 
-| Value band | Used vehicle ABB | Unused vehicle ABB |
-|---|---|---|
-| Up to USD 20,000 | 18% of V | 10% of V |
-| Over USD 20,000, up to USD 30,000 | USD 3,600 + 22% of (V − USD 20,000) | USD 2,000 + 22% of (V − USD 20,000) |
-| Over USD 30,000 | USD 5,800 + 30% of (V − USD 30,000) | USD 4,200 + 30% of (V − USD 30,000) |
+| Value band | Used vehicle ABB | Unused vehicle ABB | Source of the figure |
+|---|---|---|---|
+| Up to USD 20,000 | 18% of V | 10% of V | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Over USD 20,000, up to USD 30,000 | USD 3,600 + 22% of (V − USD 20,000) | USD 2,000 + 22% of (V − USD 20,000) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Over USD 30,000 | USD 5,800 + 30% of (V − USD 30,000) | USD 4,200 + 30% of (V − USD 30,000) | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
 
-## Position rules
+### Position rules
 
-### Classify the event and establish the place
+#### Classify the event and establish the place
 
 1. Identify a producer supply, service or import under article 6.2. A producer
    manufactures locally from raw materials, auxiliary materials or intermediate
@@ -146,7 +180,7 @@ until the legal mapping is verified, preserving records and the full
 financial output-package hold. This source comparison does not newly
 revalidate the other figures in this reference. [B1, R1]
 
-### Determine the liable person, base and tax point
+#### Determine the liable person, base and tax point
 
 The supplier normally owes ABB. Article 6.12(2) can shift liability to a local
 business or body for a producer supply or a service by a non-BES entrepreneur
@@ -172,7 +206,7 @@ under article 6.14(7); do not automatically reverse it in the working paper.
 Prices offered for taxable goods and services must include ABB under article
 6.24. Keep net, tax and gross amounts separately. [B1]
 
-### Restrict producer input credit
+#### Restrict producer input credit
 
 Article 6.3 permits a producer credit for qualifying ABB paid to other producers
 on prescribed invoices or paid on imports, only to the extent the goods are raw
@@ -189,7 +223,7 @@ under B1, article 6.20 and R1, article 6.11. Excess producer credit and bad-debt
 or returned-goods relief follow different request procedures under B1, articles
 6.15–6.16 and 6.21; do not net an unapproved bad-debt refund into ordinary tax.
 
-### Separate small entrepreneur relief from administration relief
+#### Separate small entrepreneur relief from administration relief
 
 Article 6.22 relief requires a written request and inspector's decision.
 Ordinarily it concerns a natural person resident, established or with a fixed
@@ -223,32 +257,35 @@ ends when its conditions fail. Following voluntary termination, a renewed
 request cannot be granted for five years. Do not apply it automatically to
 every entrepreneur below USD 32,000. [R1]
 
-## Filing, records and return presentation
+### Output and intake additions
 
-R1, article 8.7 sets a calendar month as the ABB period; the inspector may permit
-a calendar quarter. Use the actual invitation and permission. B1, articles
-8.5 and 8.11 generally require filing and payment within 15 days after the
-period ends and a nil return where no tax is due. If no return has been issued,
-request one before payment is due. Verify applicable extensions and
-non-working-day rules before assigning a calendar deadline. [B1, R1]
+Retain the universal workbook, reviewer brief, action list and review checklist.
+Add an **ABB position schedule** with a stable redacted record reference, island,
+event, provider/customer establishment, place rule, liable person, tax point,
+net base, rate, output ABB, qualifying producer credit, reverse charge, relief
+decision reference, source pinpoint, precision amount and return presentation
+adjustment. Map every universal transaction field to a column. Add separate
+annual relief-turnover and customs-evidence schedules where applicable.
 
-R1, article 8.2 requires electronic filing for the specified ABB administration
-obligors and BES fiscal representatives, with a hardship exemption route.
-The January 2026 ABB handbook, published on 8 April 2026, instructs whole-dollar
-return entries with dollar cents rounded down. Preserve transaction precision
-and show the return presentation adjustment separately. This instruction does
-not establish an invoice-level fractional-cent method or the treatment of
-negative adjustments. Current form mapping remains a completion condition.
-[G1, page 40]
+The brief must state which completion conditions were cleared, the actual filing
+period, every source hold, and every universal and topical refusal code's
+disposition. Show actual return fields only after verifying their current
+instructions. A component example cannot substitute for the recalculated
+workbook, a complete reconciliation or professional sign-off.
 
-Keep reconcilable supply, service, import, export and payment records and invoice
-copies under B1, articles 6.25, 8.86 and 8.89a, with R1, article 6.15. The general
-tax retention duty is seven years under article 8.86(6). A different legal-person
-or sector retention duty can also apply; seven years is not a universal
-destruction date. Keep actual identifiers, bank details, credentials and filing
-authentication with the reviewer, outside agent inputs and outputs.
+Infer the profile from redacted records and obtain the universal confirmation.
+Ask for: the island and requested period; legal form and activities; provider
+and customer establishments; producer premises and manufacturing facts; net
+versus gross contract prices; tax points and advances; goods movements and
+customs evidence; vehicle classification, emissions and unused status; relief
+and import decisions; qualifying paid input ABB and use; all businesses' annual
+turnover; filing invitations and period permissions; and the reviewing
+professional's role. Do not request identity documents, tax identifiers, bank
+details or authentication material.
 
-## Hypothetical component positions
+## Worked cases
+
+### Hypothetical component positions
 
 These examples use stipulated, established law and facts for 2026. They are
 arithmetic and classification examples, not completed returns, relief decisions
@@ -305,25 +342,45 @@ or customs valuations. No factual default is used. All amounts are USD.
    each source transaction down to force that result; invoice rounding and
    aggregation still require their applicable method and actual form mapping.
 
-## Defaults, questions and reviewer thresholds
+### Recomputed cases
 
-| Missing item | Treatment | Alternative and disclosure |
-|---|---|---|
-| Island, period, establishment, event, place or vehicle status | Needs Input; no factual default | Obtain the missing evidence before applying a rate |
-| Relief decision, exemption conditions, input-credit evidence or customs value | Needs Input; no factual default | An apparently higher tax amount cannot establish eligibility or unknown law |
-| Invoice rounding, filing period or return instructions | Needs Input for the dependent calculation | Retain source precision; obtain the relevant method or notice |
-| Applicable law or required delegated authority | Needs Input as a source condition | Identify and verify the authority; do not classify unknown law as a T2 factual assumption |
+**Case 1, progressive ABB on a used car imported into Sint Eustatius.** A qualifying CO2-emitting used passenger car has an established customs value of USD 35,000. Under article 6.19a the top band applies: USD 5,800 plus 30% of the value over USD 30,000, so ABB is USD 7,300 (example 4 above). The same car, unused and imported into Saba, would bear USD 5,700 (example 5): USD 4,200 plus 30% of the same USD 5,000 excess.
 
-This version permits no substantive factual defaults, so no T2 cash-question
-floor is used to authorise one. Ask essential factual questions even when cash
-impact is small. For the universal question filter, the configured question
-threshold is USD 0 where a later verified companion expressly permits a default.
-Flag every ABB amount for reviewer sign-off at a USD 0 attention threshold,
-including nil, refunds, relief, island/place boundaries and source holds.
-These are workflow settings, not statutory thresholds. Preserve the base's
-grouping rules and ten-question ceiling.
+```oa-check
+name: Sint Eustatius used car and Saba unused car, ABB on import (2026)
+inputs:
+  customs_value: 35000
+steps:
+  - used_abb: 5800 + (customs_value - 30000) * 0.30
+  - unused_abb: 4200 + (customs_value - 30000) * 0.30
+  - status_difference: used_abb - unused_abb
+expected:
+  used_abb: 7300
+  unused_abb: 5700
+  status_difference: 1600
+```
 
-## Topical refusal catalogue
+**Case 2, a decision: does small entrepreneur relief survive?** A Bonaire natural person with an article 6.22 relief decision runs one ordinary service business. If 2026 ABB-exclusive taxable turnover stays at or below USD 32,000, no ABB is charged under the decision. At USD 32,500 the limit is exceeded and relief lapses for the whole year: ABB is 6% of USD 32,500, USD 1,950, payable on the first return of 2027 (example 7). Charging 6% on only the USD 500 excess (USD 30) would understate the tax by USD 1,920.
+
+```oa-check
+name: Bonaire small entrepreneur relief lost on USD 32,500 of services (2026)
+inputs:
+  turnover: 32500
+  limit: 32000
+  service_rate: 0.06
+steps:
+  - whole_year_abb: turnover * service_rate
+  - excess_only_abb: (turnover - limit) * service_rate
+  - understatement: whole_year_abb - excess_only_abb
+expected:
+  whole_year_abb: 1950
+  excess_only_abb: 30
+  understatement: 1920
+```
+
+## When to refuse or refer
+
+### Topical refusal catalogue
 
 Needs Input identifies a missing fact or source and is not itself a refusal.
 Run the universal catalogue and these codes; preserve the exact message when
@@ -335,33 +392,36 @@ a trigger applies. A refusal stops the workflow before partial return output.
 | R-BQ-ABB-OPERATIONAL | Asked to produce a complete operational ABB return while this guide's completion conditions remain open | This ABB reference does not yet support a complete operational return. Resolve the completion conditions and retain a qualified professional reviewer before preparing the filing package. |
 | R-BQ-ABB-AMBIGUITY | More than ten grouped factual questions remain necessary under the universal workflow | This ABB preparation needs more than ten grouped factual questions. Resolve the source records with the professional reviewer before restarting the workflow. |
 
-## Output and intake additions
+## Filing and payment
 
-Retain the universal workbook, reviewer brief, action list and review checklist.
-Add an **ABB position schedule** with a stable redacted record reference, island,
-event, provider/customer establishment, place rule, liable person, tax point,
-net base, rate, output ABB, qualifying producer credit, reverse charge, relief
-decision reference, source pinpoint, precision amount and return presentation
-adjustment. Map every universal transaction field to a column. Add separate
-annual relief-turnover and customs-evidence schedules where applicable.
+### Filing, records and return presentation
 
-The brief must state which completion conditions were cleared, the actual filing
-period, every source hold, and every universal and topical refusal code's
-disposition. Show actual return fields only after verifying their current
-instructions. A component example cannot substitute for the recalculated
-workbook, a complete reconciliation or professional sign-off.
+R1, article 8.7 sets a calendar month as the ABB period; the inspector may permit
+a calendar quarter. Use the actual invitation and permission. B1, articles
+8.5 and 8.11 generally require filing and payment within 15 days after the
+period ends and a nil return where no tax is due. If no return has been issued,
+request one before payment is due. Verify applicable extensions and
+non-working-day rules before assigning a calendar deadline. [B1, R1]
 
-Infer the profile from redacted records and obtain the universal confirmation.
-Ask for: the island and requested period; legal form and activities; provider
-and customer establishments; producer premises and manufacturing facts; net
-versus gross contract prices; tax points and advances; goods movements and
-customs evidence; vehicle classification, emissions and unused status; relief
-and import decisions; qualifying paid input ABB and use; all businesses' annual
-turnover; filing invitations and period permissions; and the reviewing
-professional's role. Do not request identity documents, tax identifiers, bank
-details or authentication material.
+R1, article 8.2 requires electronic filing for the specified ABB administration
+obligors and BES fiscal representatives, with a hardship exemption route.
+The January 2026 ABB handbook, published on 8 April 2026, instructs whole-dollar
+return entries with dollar cents rounded down. Preserve transaction precision
+and show the return presentation adjustment separately. This instruction does
+not establish an invoice-level fractional-cent method or the treatment of
+negative adjustments. Current form mapping remains a completion condition.
+[G1, page 40]
 
-## Review Checklist Items
+Keep reconcilable supply, service, import, export and payment records and invoice
+copies under B1, articles 6.25, 8.86 and 8.89a, with R1, article 6.15. The general
+tax retention duty is seven years under article 8.86(6). A different legal-person
+or sector retention duty can also apply; seven years is not a universal
+destruction date. Keep actual identifiers, bank details, credentials and filing
+authentication with the reviewer, outside agent inputs and outputs.
+
+## Completion checklist
+
+### Review Checklist Items
 
 - Confirm the 2026 period chain and retrospective USD 32,000 correction.
 - Check the island rule before selecting a rate; resolve every service exception.
@@ -374,33 +434,28 @@ details or authentication material.
 - Confirm monthly or permitted quarterly filing, invitation, nil return and deadline rules.
 - Preserve records, all four universal outputs, recalculation and professional sign-off.
 
-## Primary source library
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for: Belastingwet BES, consolidation from 11 April 2026, chapter VI and the cited chapter VIII provisions. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-16 |
+| B2. Read for: Belastingwet BES, 1 January 2026 snapshot, valid to 20 February 2026; read with the retrospective correction. | https://wetten.overheid.nl/BWBR0029244/2026-01-01 | 2026-10-16 |
+| B3. Read for: Belastingwet BES, 21 February 2026 snapshot, valid to 10 April 2026. | https://wetten.overheid.nl/BWBR0029244/2026-02-21 | 2026-10-16 |
+| R1. Read for: Uitvoeringsregeling Belastingwet BES, articles 1.2, 6.3–6.15, 8.2 and 8.7; displayed operative version from 1 January 2025. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-16 |
+| C1. Read for: Staatscourant 2026/3708, articles III–V, retrospective 2025 and 2026 threshold corrections. | https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html | 2026-10-16 |
+| H1. Read for: Staatsblad 2010/847, chapter II, article XVI(E), and chapter III, article II(4), the proposed repeal and delayed commencement. | https://zoek.officielebekendmakingen.nl/stb-2010-847.html | 2026-10-16 |
+| H2. Read for: Staatsblad 2018/504, articles XXXI and XLIV(1)(k), withdrawal of that chain. | https://zoek.officielebekendmakingen.nl/stb-2018-504.html | 2026-10-16 |
+| H3. Read for: Staatsblad 2023/500, article I(I), (M) and article VI(1), later island amendments and commencement. | https://zoek.officielebekendmakingen.nl/stb-2023-500.html | 2026-10-16 |
+| G1. Read for: Belastingdienst Caribisch Nederland, Handboek ABB, version January 2026, published 8 April 2026, pages 40 and 46–48. | https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/abb/handboek-algemene-bestedingsbelasting/index/handboek-abb-versie-2026.pdf | 2026-10-16 |
+
+### Primary source library
 
 Sources were inspected on 16 October 2026. Statutes and operative delegated
 rules govern; the handbook supplies the identified administrative instructions.
 Captured text alone does not prove an unexamined cross-reference or a later
 amendment. The completion conditions above remain part of every applied rule.
 
-- **B1:** [Belastingwet BES, consolidation from 11 April 2026](https://wetten.overheid.nl/BWBR0029244/2026-04-11), chapter VI and the cited chapter VIII provisions.
-- **B2:** [Belastingwet BES, 1 January 2026 snapshot](https://wetten.overheid.nl/BWBR0029244/2026-01-01), valid to 20 February 2026; read with the retrospective correction.
-- **B3:** [Belastingwet BES, 21 February 2026 snapshot](https://wetten.overheid.nl/BWBR0029244/2026-02-21), valid to 10 April 2026.
-- **R1:** [Uitvoeringsregeling Belastingwet BES](https://wetten.overheid.nl/BWBR0029332/2025-01-01), articles 1.2, 6.3–6.15, 8.2 and 8.7; displayed operative version from 1 January 2025.
-- **C1:** [Staatscourant 2026/3708](https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html), articles III–V, retrospective 2025 and 2026 threshold corrections.
-- **H1:** [Staatsblad 2010/847](https://zoek.officielebekendmakingen.nl/stb-2010-847.html), chapter II, article XVI(E), and chapter III, article II(4), the proposed repeal and delayed commencement.
-- **H2:** [Staatsblad 2018/504](https://zoek.officielebekendmakingen.nl/stb-2018-504.html), articles XXXI and XLIV(1)(k), withdrawal of that chain.
-- **H3:** [Staatsblad 2023/500](https://zoek.officielebekendmakingen.nl/stb-2023-500.html), article I(I), (M) and article VI(1), later island amendments and commencement.
-- **G1:** Belastingdienst Caribisch Nederland, [Handboek ABB, version January 2026](https://www.belastingdienst-cn.nl/site/binaries/site-content/collections/documents/belastingdienst/abb/handboek-algemene-bestedingsbelasting/index/handboek-abb-versie-2026.pdf), published 8 April 2026, pages 40 and 46–48.
-
-[B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
-[B2]: https://wetten.overheid.nl/BWBR0029244/2026-01-01
-[B3]: https://wetten.overheid.nl/BWBR0029244/2026-02-21
-[R1]: https://wetten.overheid.nl/BWBR0029332/2025-01-01
-[C1]: https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html
-[H1]: https://zoek.officielebekendmakingen.nl/stb-2010-847.html
-[H2]: https://zoek.officielebekendmakingen.nl/stb-2018-504.html
-[H3]: https://zoek.officielebekendmakingen.nl/stb-2023-500.html
-
-## Revision and assurance
+### Revision and assurance
 
 Version 0.1, 16 October 2026: initial 2026 ABB reference, with island rates,
 retrospective relief correction, restricted producer credit and component
@@ -411,22 +466,13 @@ This guide supports professional review and does not constitute tax, legal or
 financial advice. The reviewer is responsible for the final treatment, filing
 and payment. Recheck operative sources and the particular facts before reliance.
 
-<!-- openaccountants-cta-block -->
+[B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
+[B2]: https://wetten.overheid.nl/BWBR0029244/2026-01-01
+[B3]: https://wetten.overheid.nl/BWBR0029244/2026-02-21
+[R1]: https://wetten.overheid.nl/BWBR0029332/2025-01-01
+[C1]: https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html
+[H1]: https://zoek.officielebekendmakingen.nl/stb-2010-847.html
+[H2]: https://zoek.officielebekendmakingen.nl/stb-2018-504.html
+[H3]: https://zoek.officielebekendmakingen.nl/stb-2023-500.html
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the invoice-level fractional-cent rounding method and the treatment of negative adjustments (the handbook covers only whole-dollar return entries); the current ABB return form and its field mapping; whether the export and re-import zero rate is applied under article 6.10(2)(d) of the Act or the letter (c) pointer kept in R1, article 6.6(1); the effect of the undated proposed-repeal annotation on articles 6.10a and 6.19a (read here as abandoned per Stb. 2018/504). Ryan Duguid read the sources on 2026-10-16; the import on 2026-11-14 did not re-open them, so a 2026 amendment published after that date is not reflected.

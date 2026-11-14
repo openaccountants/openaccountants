@@ -616,7 +616,7 @@ AUTHORITY_HOSTS = {
     r"\bIRAS\b": ("iras.gov.sg",),
     r"\bMTCA\b": ("cfr.gov.mt", "mtca.gov.mt", "gov.mt"),
     r"\bELSTER\b": ("elster.de",),
-    r"\bBelastingdienst\b": ("belastingdienst.nl", "overheid.nl"),
+    r"\bBelastingdienst\b": ("belastingdienst.nl", "belastingdienst-cn.nl", "overheid.nl"),
     r"\bEUR-Lex\b": ("europa.eu",),
 }
 #: Currency and authority words that belong to one jurisdiction family.
@@ -656,8 +656,9 @@ TERM_SHARED_WITH = {
 }
 #: Territories that lawfully cite a neighbour's law and sites.
 #: French overseas territories cite French state sites (legifrance, impots.gouv, douane), and
-#: Sint Maarten, Curacao and Aruba cite Dutch ones (overheid.nl) for Kingdom law.
-NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
+#: Sint Maarten, Curacao and Aruba cite Dutch ones (overheid.nl) for Kingdom law; Bonaire, Sint Eustatius
+#: and Saba (BQ) are public bodies of the Netherlands and cite overheid.nl and belastingdienst-cn.nl.
+NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "BQ": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
 #: Jurisdiction values that name no single place.
 NON_PLACE_JURISDICTIONS = {"", "GLOBAL", "INTL", "GENERAL", "EU", "EU-27", "EU/EEA/CH/UK", "?"}
 #: Two-letter endings that say nothing about a country.

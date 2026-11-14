@@ -16,14 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026 personal income tax; separate insurance and filing conditions"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: income-tax
 depends_on:
   - income-tax-workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: personal income tax in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish residence, the filing unit and each income source before using the
 tariff. This is a dated statutory reference for a qualified reviewer. It adds
@@ -36,7 +41,7 @@ tax outputs. The examples below are conditional arithmetic, not substitute
 returns. Missing mandatory companion slots hold the complete financial output
 package; a labelled rule or example remains available for reference.
 
-## Scope, residence and filing unit
+### Scope, residence and filing unit
 
 The tax year is the calendar year. BES residents are within personal income tax;
 the authority describes their reporting basis as worldwide income. Residence is
@@ -65,21 +70,31 @@ Amounts below are US dollars (USD). The three BES public bodies share this
 national personal-income statute; European Netherlands box rates, euro
 allowances and filing dates do not supply missing BES rules. [I1]; [B1, article 1.3][B1]
 
-## Income classification and expenses
+## Ask the client first
+
+1. **Residence**: a BES resident for the whole of 2026, or a non-resident with BES-source income (non-residents are held here).
+2. **Income by type**: wages, business profit, savings interest and any substantial-interest benefits.
+3. **Age at 1 January 2026** (for the elderly amount) and the filing unit.
+4. **Losses carried forward** and personal deductions claimed, with evidence.
+5. **Tax already withheld** on wages and provisional assessments paid.
+
+## The method, step by step
+
+### Income classification and expenses
 
 Articles 3–11 distinguish movable-capital income, business/labour income and
 periodic-payment rights. Substantial-interest income has a separate tariff.
 Record the statutory category and timing for every receipt. [I1]
 
-| Receipt or cost | Treatment to establish | Authority in [I1] |
-|---|---|---|
-| Salary, pension from employment, fees and benefits | Business/labour category; wage definition imports payroll law, with the stated exceptions. Use gross evidence and keep withholding separate. | Article 6 |
-| Sole-trader receipts and disposals of business assets | Business profit includes the specified disposal, private-transfer and cessation gains. Establish tax book values before computing a gain. | Article 6(1)–(3) |
-| Interest and ordinary dividends | Movable-capital category unless the business or substantial-interest rules apply. Savings-deposit interest has an annual exclusion of up to USD 5,000; do not extend it to every investment return. | Articles 5 and 8(i) |
-| Substantial-interest distributions and disposals | Apply article 11's direct/indirect 5% tests, spouse/family and associated-right/debt rules, acquisition basis and deemed disposals before using the separate rate. | Article 11 |
-| Annuity or other periodic right | Apply the periodic-payment category and the consideration/recovery conditions. Employment pensions remain in the employment branch. | Articles 6–7 |
-| Private asset sale, gift or inheritance | Test article 8's exclusions against business income, periodic payments and the special article 11 inclusions. An income-tax exclusion proves no exemption from another tax. | Articles 8 and 11 |
-| Own-account transfer, loan principal or capital introduced | Reconcile supporting records and the actual legal character; a bank credit alone does not prove income or exclusion. | Articles 3 and 5–11 |
+| Receipt or cost | Treatment to establish | Authority in [I1] | Source of the figure |
+|---|---|---|---|
+| Salary, pension from employment, fees and benefits | Business/labour category; wage definition imports payroll law, with the stated exceptions. Use gross evidence and keep withholding separate. | Article 6 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Sole-trader receipts and disposals of business assets | Business profit includes the specified disposal, private-transfer and cessation gains. Establish tax book values before computing a gain. | Article 6(1)–(3) | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Interest and ordinary dividends | Movable-capital category unless the business or substantial-interest rules apply. Savings-deposit interest has an annual exclusion of up to USD 5,000; do not extend it to every investment return. | Articles 5 and 8(i) | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Substantial-interest distributions and disposals | Apply article 11's direct/indirect 5% tests, spouse/family and associated-right/debt rules, acquisition basis and deemed disposals before using the separate rate. | Article 11 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Annuity or other periodic right | Apply the periodic-payment category and the consideration/recovery conditions. Employment pensions remain in the employment branch. | Articles 6–7 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Private asset sale, gift or inheritance | Test article 8's exclusions against business income, periodic payments and the special article 11 inclusions. An income-tax exclusion proves no exemption from another tax. | Articles 8 and 11 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Own-account transfer, loan principal or capital introduced | Reconcile supporting records and the actual legal character; a bank credit alone does not prove income or exclusion. | Articles 3 and 5–11 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
 
 Non-business receipts are recognised on receipt, set-off, availability, becoming
 interest-bearing, or becoming due and collectible as article 16b specifies.
@@ -111,7 +126,7 @@ against that source's positive proceeds in the next five calendar years, in
 origin order. This is separate from article 15's income-loss carryforward.
 [I1, articles 9(7), 9b and 15][I1]
 
-## Deductions, losses and the taxable sum
+### Deductions, losses and the taxable sum
 
 Use the statutory ladder, rather than subtracting the tax-free sum from bank
 receipts. Article 3 starts with net income by source, deducts personal and
@@ -134,13 +149,13 @@ illness/support and study, with separate limits, floors, family allocations and
 partial-year adjustments. Retrieve the complete applicable branch and evidence
 before claiming it. The examples stipulate no such deduction. [I1]
 
-| 2026 item | Amount or rate | Conditions and source |
-|---|---:|---|
-| Resident tax-free sum | USD 21,956 | I1, article 24(1)(a), (2); R1, article XII(A) |
-| Elderly allowance | USD 1,678 | Age qualifying for AOV benefit reached at the beginning of the calendar year; I1, article 24(1)(a)(3), (3); R1 |
-| Ordinary taxable sum up to USD 53,198 | 29.4% | I1, article 24a(1); R1, article XII(B) |
-| Ordinary taxable sum above USD 53,198 | USD 15,640 plus 38.4% of the excess | Published statutory constant; same provisions |
-| Net substantial-interest benefits and specified non-resident sources | 7.5% | I1, article 24b; establish article 11 or article 17 eligibility first |
+| 2026 item | Amount or rate | Conditions and source | Source of the figure |
+|---|---:|---|---|
+| Resident tax-free sum | USD 21,956 | I1, article 24(1)(a), (2); R1, article XII(A) | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Elderly allowance | USD 1,678 | Age qualifying for AOV benefit reached at the beginning of the calendar year; I1, article 24(1)(a)(3), (3); R1 | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Ordinary taxable sum up to USD 53,198 | 29.4% | I1, article 24a(1); R1, article XII(B) | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Ordinary taxable sum above USD 53,198 | USD 15,640 plus 38.4% of the excess | Published statutory constant; same provisions | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
+| Net substantial-interest benefits and specified non-resident sources | 7.5% | I1, article 24b; establish article 11 or article 17 eligibility first | https://wetten.overheid.nl/BWBR0029281/2026-01-01 |
 
 The indexation instrument takes effect on 1 January 2026 at 00:00 in the BES
 public bodies. It supplies the completed tariff after the original 2026 tax
@@ -148,7 +163,7 @@ plan's omitted upper-band amount. Use USD 15,640 as published in the upper row;
 do not replace it with a recalculated lower-band product. Intermediate tariff
 arithmetic is not a final assessment-rounding method. [R1, articles XII–XIII and the explanatory section on BES indexation][R1]; [A1, article XXXV][A1]
 
-### Contribution credits and separate premiums
+#### Contribution credits and separate premiums
 
 Article 24a(2)–(7) reduces income tax by the applicable AOV, AWW and healthcare
 credits. Each credit uses the relevant prescribed percentage and the base on
@@ -170,7 +185,7 @@ premium and its credit are equal, they cancel in the combined arithmetic;
 that identity does not establish eligibility or make a credit independently
 refundable. This reference does not settle a credit exceeding tariff tax. [I1]
 
-### Own-home relief discrepancy: hold the dependent calculation
+#### Own-home relief discrepancy: hold the dependent calculation
 
 The 2026 authority page says qualifying own-home interest and declining
 life-insurance premiums receive relief at 29.4%, rather than 38.4%. The retained
@@ -186,7 +201,9 @@ treatment is established. Own-home classification under article 4, the separate
 Read `bq-property-tax` and `bq-bonaire-ground-tax` for their separate scope;
 neither supplies the missing income-tax resolution. [I1, articles 4 and 16(1)(h)][I1]
 
-## Computation and fictional examples
+## Worked cases
+
+### Computation and fictional examples
 
 1. Establish the period, resident status, filing unit and source categories.
 2. Reconcile gross amounts to certificates and ledgers. Deduct only established
@@ -237,7 +254,83 @@ that excess gives an **unrounded intermediate tariff amount of USD 18,251.968**.
 It is neither a return amount nor an instruction to round a notice. This check
 deliberately preserves the statutory USD 15,640 constant. [I1]; [R1]
 
-## Filing, payment and review
+### Recomputed cases
+
+**Case 1, employee.** Gross wages USD 52,236 less the USD 280 employment expense deduction give taxable income of USD 51,956. Less the USD 21,956 tax-free sum, the taxable sum is USD 30,000; tax at 29.4% is USD 8,820. After stipulated contribution credits of USD 5,000, income tax is USD 3,820. With withholding of USD 9,000 against tax and premiums of USD 8,820, USD 180 is refundable (first column of the table above).
+
+```oa-check
+name: BES employee, 2026 income tax and refund
+inputs:
+  wages: 52236
+  expense_deduction: 280
+  tax_free_sum: 21956
+  credits: 5000
+  premiums: 5000
+  withheld: 9000
+steps:
+  - taxable_sum: wages - expense_deduction - tax_free_sum
+  - tariff_tax: taxable_sum * 0.294
+  - income_tax: tariff_tax - credits
+  - balance_due: income_tax + premiums - withheld
+expected:
+  taxable_sum: 30000
+  tariff_tax: 8820
+  income_tax: 3820
+  balance_due: -180
+```
+
+**Case 2, upper band.** For an established taxable sum of USD 60,000, the excess over USD 53,198 is USD 6,802. Tax is the statutory constant USD 15,640 plus 38.4% of the excess: USD 18,251.968 unrounded. Applying 29.4% to the first band and 38.4% to the excess yourself gives USD 18,252.18 (derived); the statute fixes the constant, so use USD 15,640.
+
+```oa-check
+name: BES upper-band tariff on a USD 60,000 taxable sum (2026)
+inputs:
+  taxable_sum: 60000
+steps:
+  - excess: taxable_sum - 53198
+  - tax: 15640 + excess * 0.384
+  - recomputed_band_tax: 53198 * 0.294 + excess * 0.384
+expected:
+  excess: 6802
+  tax: 18251.968
+  recomputed_band_tax: 18252.18
+```
+
+## When to refuse or refer
+
+### Defaults, refusals and completion register
+
+No additional missing-fact default is authorised by this reference. Do not
+turn missing residence, family status, insurance, eligibility, tax basis,
+withholding evidence or legal authority into zero or a chosen adverse outcome.
+Report the missing item under the bases' Needs Input/source gates.
+
+Hold the dependent calculation for non-residence, migration, foreign relief,
+uncertain filing-unit allocation, special substantial-interest events,
+unverified asset incentives, mortgage-relief interaction, unmatched insurance
+credits/premiums, a credit exceeding tariff tax or missing operative rounding.
+Route corporate entities, employer payroll, property taxes and cross-border
+questions to their applicable rules. A treaty income allocation does not itself
+settle social-insurance coverage. [I1]; [G5]
+
+Before a complete income-tax workflow result, establish all mandatory country
+slots: the actual return/form and field map, complete applicable deductions and
+asset methods, contribution eligibility/bases/periods, withholding certificates,
+provisional-payment evidence and future instalment terms, currency/rounding,
+all material special branches, the current filing/payment calendar and complete
+penalty/correction/appeal procedures. Recalculate the engagement workpaper,
+produce every required universal/domain output, run their checks and obtain
+professional review. No live taxpayer, portal run, workbook or practitioner
+sign-off was tested for this reference.
+
+Self-check the distinction between taxable income and taxable sum; source-cost
+and income-loss registers; the two employment-expense alternatives; savings
+interest and other returns; ordinary and substantial-interest rates; statutory
+upper-row constant; credits and separate premiums; evidence-backed settlements;
+and filing versus payment dates. Recheck every held branch before lifting it.
+
+## Filing and payment
+
+### Filing, payment and review
 
 An invitation requires a return. For assessment taxes, the inspector sets a
 period of at least two months after issue; request an extension before the
@@ -270,38 +363,21 @@ has a two-month period from the specified notice date; objections to amounts
 paid or withheld have the separately stated trigger. Retain proof and obtain
 the full procedure before an actual objection. [B1, articles 8.4(2), 8.22(1) and 8.92][B1]
 
-## Defaults, refusals and completion register
+## Sources
 
-No additional missing-fact default is authorised by this reference. Do not
-turn missing residence, family status, insurance, eligibility, tax basis,
-withholding evidence or legal authority into zero or a chosen adverse outcome.
-Report the missing item under the bases' Needs Input/source gates.
+| Source | URL | Read on |
+|---|---|---|
+| I1. Read for the provisions this skill cites as [I1]. | https://wetten.overheid.nl/BWBR0029281/2026-01-01 | 2026-10-17 |
+| R1. Read for Bijstellingsregeling directe belastingen 2026 (Stcrt. 2025, 40487), article XII: tax-free sum USD 21,956, elderly amount USD 1,678, bracket USD 53,198 at 29.4% and USD 15,640 plus 38.4% above, maximum USD 38,390 in article 24a(7); in force 1 January 2026. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-40487.html | 2026-11-14 |
+| A1. Read for the provisions this skill cites as [A1]. | https://zoek.officielebekendmakingen.nl/stb-2025-444.html | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| G1. Read for the provisions this skill cites as [G1]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/inkomstenbelasting/tarieven-en-belastingvrije-bedragen-inkomstenbelasting | 2026-10-17 |
+| G2. Read for the provisions this skill cites as [G2]. | https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/domestic-taxpayers | 2026-10-17 |
+| G3. Read for the provisions this skill cites as [G3]. | https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/foreign-taxpayers | 2026-10-17 |
+| G4. Read for the provisions this skill cites as [G4]. | https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/filing-your-income-tax-return | 2026-10-17 |
+| G5. Read for the provisions this skill cites as [G5]. | https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/income-from-outside-of-caribbean-netherlands | 2026-10-17 |
 
-Hold the dependent calculation for non-residence, migration, foreign relief,
-uncertain filing-unit allocation, special substantial-interest events,
-unverified asset incentives, mortgage-relief interaction, unmatched insurance
-credits/premiums, a credit exceeding tariff tax or missing operative rounding.
-Route corporate entities, employer payroll, property taxes and cross-border
-questions to their applicable rules. A treaty income allocation does not itself
-settle social-insurance coverage. [I1]; [G5]
-
-Before a complete income-tax workflow result, establish all mandatory country
-slots: the actual return/form and field map, complete applicable deductions and
-asset methods, contribution eligibility/bases/periods, withholding certificates,
-provisional-payment evidence and future instalment terms, currency/rounding,
-all material special branches, the current filing/payment calendar and complete
-penalty/correction/appeal procedures. Recalculate the engagement workpaper,
-produce every required universal/domain output, run their checks and obtain
-professional review. No live taxpayer, portal run, workbook or practitioner
-sign-off was tested for this reference.
-
-Self-check the distinction between taxable income and taxable sum; source-cost
-and income-loss registers; the two employment-expense alternatives; savings
-interest and other returns; ordinary and substantial-interest rates; statutory
-upper-row constant; credits and separate premiums; evidence-backed settlements;
-and filing versus payment dates. Recheck every held branch before lifting it.
-
-## Primary sources and provenance
+### Primary sources and provenance
 
 Read on 17 October 2026. The registry identifies I1 as effective from
 1 January 2026 to the consultation date. Pending/undated amendments are not
@@ -322,22 +398,4 @@ every delegated rule or historical instrument has been examined.
 [G4]: https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/filing-your-income-tax-return
 [G5]: https://english.belastingdienst-cn.nl/topics/tax-individuals/income-tax/income-from-outside-of-caribbean-netherlands
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: mortgage interest relief and its interaction with the own-home rules; eligibility for the contribution credits and how they match the AOV, AWW and healthcare premiums (examples use stipulated credits); final rounding of the assessment; foreign tax relief for residents; the 2026 return form and field mapping. Other sources were read by Ryan Duguid on 2026-10-17; only R1 was re-read on 2026-11-14.

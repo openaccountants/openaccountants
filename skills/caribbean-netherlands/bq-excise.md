@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 excise rules checked on 17 October 2026; establish island, product and release/import date"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: excise in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish island, product classification, quantity, alcohol strength or tobacco
 specification, movement, licence, person and event before using a tariff.
@@ -43,7 +48,17 @@ a complete return or country pack. Unknown mandatory conditions hold the
 complete financial output package. Import duty, import ABB and excise are
 separate charges; use `bq-customs-valuation` and `bq-abb` for their bases.
 
-## Charge, release and the responsible person
+## Ask the client first
+
+1. **Which island**: Bonaire has the wider goods list; Saba and Sint Eustatius levy excise on petrol only.
+2. **The product and its classification** (HS heading), with measured volume, alcohol strength, cigarette length or weight.
+3. **The event**: import, release from a warehouse, or local manufacture, and the date.
+4. **Any warehouse permit, suspension, exemption, refund claim or tobacco stamps** used.
+5. **Who is the responsible person** under the Customs and Excise Act BES.
+
+## The method, step by step
+
+### Charge, release and the responsible person
 
 Article 4.1 charges release and import. Article 4.4 treats removal from a
 designated excise warehouse, specified consumption within warehouses, and
@@ -73,17 +88,17 @@ article 4.64. They are not automatically deductible stock losses. Import
 excise instead follows the applicable import branch under article 4.5.
 [DAB]
 
-## Classification, quantities and tariffs
+### Classification, quantities and tariffs
 
-| Goods and statutory branch | Tariff and quantity rule |
-|---|---|
-| Petrol, HS subheading 2710.12 | Per hectolitre: **USD 31.86 on Bonaire**, **USD 24.27 on Saba/Sint Eustatius**. A partial hectolitre counts as a whole hectolitre. |
-| Bonaire beer, HS 22.03, alcohol **above 0.5% vol** | **USD 67.04 per hectolitre**. Concentrated beer uses ready-to-consume volume, with the required information supplied to the inspector. |
-| Bonaire wine, specified HS 22.04–22.06, alcohol **at most 20% vol** | **USD 128.50 per hectolitre**. |
-| Bonaire other alcohol under article 4.13 | **USD 12.85 per hectolitre per volume percentage point of alcohol**. Includes wine above 20% vol and the specified other product categories; establish the precise branch. |
-| Bonaire cigarettes, HS 2402.20 | Per 100 statutory cigarettes: **USD 5.34** if made on Bonaire for a Bonaire brand; **USD 7.01** if made there for a non-Bonaire brand; **USD 8.69** on import. Apply the length adjustment below. |
-| Bonaire cigars/cigarillos, HS 2402.10 | **USD 9.78 per 100 cigars**; **USD 4.89 per 100 cigarillos**, which weigh **no more than three grams each**. |
-| Bonaire smoking tobacco under article 4.20 | **USD 30 per kilogram**, including its specified partly/non-tobacco substitutes. |
+| Goods and statutory branch | Tariff and quantity rule | Source of the figure |
+|---|---|---|
+| Petrol, HS subheading 2710.12 | Per hectolitre: **USD 31.86 on Bonaire**, **USD 24.27 on Saba/Sint Eustatius**. A partial hectolitre counts as a whole hectolitre. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire beer, HS 22.03, alcohol **above 0.5% vol** | **USD 67.04 per hectolitre**. Concentrated beer uses ready-to-consume volume, with the required information supplied to the inspector. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire wine, specified HS 22.04–22.06, alcohol **at most 20% vol** | **USD 128.50 per hectolitre**. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire other alcohol under article 4.13 | **USD 12.85 per hectolitre per volume percentage point of alcohol**. Includes wine above 20% vol and the specified other product categories; establish the precise branch. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire cigarettes, HS 2402.20 | Per 100 statutory cigarettes: **USD 5.34** if made on Bonaire for a Bonaire brand; **USD 7.01** if made there for a non-Bonaire brand; **USD 8.69** on import. Apply the length adjustment below. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire cigars/cigarillos, HS 2402.10 | **USD 9.78 per 100 cigars**; **USD 4.89 per 100 cigarillos**, which weigh **no more than three grams each**. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Bonaire smoking tobacco under article 4.20 | **USD 30 per kilogram**, including its specified partly/non-tobacco substitutes. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
 
 [DAB, articles 4.7–4.21][DAB]; [RATES]
 
@@ -101,7 +116,7 @@ weight and classification are different inputs. Fractional-cent return
 rounding and disputed product/measurement classifications remain held.
 [DAB]; [RULES, article 4.2][RULES]
 
-### Fictional quantity and rate components
+#### Fictional quantity and rate components
 
 These examples stipulate the stated island, a taxable ordinary release/import,
 established product classification and measurements, no exemption, suspension,
@@ -130,7 +145,7 @@ wine imported into Saba does not acquire Bonaire excise merely because its
 rate appears in a general table. Establish ABB and other applicable charges
 separately. [DAB]; [AUTH]
 
-## Warehouse permission, suspension, periods and security
+### Warehouse permission, suspension, periods and security
 
 A place requires the inspector's permit to operate as an excise warehouse.
 Articles 4.22–4.33 govern eligibility, requests, conditions, amendment,
@@ -177,7 +192,7 @@ Do not infer an entitlement to the minimum or double-count a consolidated
 security. Actual security and any increase/acceptance decision need review.
 [DAB, articles 4.39–4.43][DAB]; [RULES]
 
-## Exemptions, refunds and tobacco stamps
+### Exemptions, refunds and tobacco stamps
 
 Import exemptions under article 4.48 require the delegated conditions; a nil
 import-duty tariff is not proof that every good meets an exemption category.
@@ -225,7 +240,54 @@ movement evidence, physical stock reconciliations and the statutory
 manufacture, possession and stamp prohibitions remain relevant. [DAB,
 articles 4.51–4.70][DAB]; [RULES, articles 4.11–4.17][RULES]
 
-## Verification and completion conditions
+## Worked cases
+
+### Recomputed cases
+
+**Case 1, petrol on Bonaire, part hectolitre.** 100.01 litres of petrol count as two hectolitres, because a partial hectolitre counts as whole: 2 x USD 31.86 = USD 63.72. On Saba or Sint Eustatius the same quantity costs 2 x USD 24.27 = USD 48.54 (table above).
+
+```oa-check
+name: Petrol excise, 100.01 litres, Bonaire and Saba (2026)
+inputs:
+  litres: 100.01
+steps:
+  - hectolitres: ceil(litres / 100)
+  - bonaire: hectolitres * 31.86
+  - saba_statia: hectolitres * 24.27
+expected:
+  hectolitres: 2
+  bonaire: 63.72
+  saba_statia: 48.54
+```
+
+**Case 2, a decision on cigarette length.** 100 imported cigarettes on Bonaire at up to eight centimetres excluding filter bear USD 8.69. At exactly eleven centimetres each counts as two, so the tax is on 200: USD 17.38. A spirit of 10 litres at 40% vol bears 0.1 x 40 x USD 12.85 = USD 51.40.
+
+```oa-check
+name: Bonaire cigarettes by length, and spirits by strength (2026)
+inputs:
+  cigarettes: 100
+  rate_per_100: 8.69
+steps:
+  - short_tax: cigarettes / 100 * rate_per_100
+  - eleven_cm_tax: cigarettes * 2 / 100 * rate_per_100
+  - spirits_tax: 0.1 * 40 * 12.85
+expected:
+  short_tax: 8.69
+  eleven_cm_tax: 17.38
+  spirits_tax: 51.40
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-EXC-CLASS | Disputed classification or measurement | Refer: hold the tariff until classification is settled |
+| R-BQ-EXC-PERMIT | Warehouse permits, security or suspension arrangements to be set up | Refer to the Belastingdienst Caribisch Nederland |
+| R-BQ-EXC-OTHER | Excise on Saba or Sint Eustatius for goods other than petrol | Do not apply Bonaire's rates; no other excise is established there |
+
+## Completion checklist
+
+### Verification and completion conditions
 
 Check island and HS/product category before rate; actual quantity and
 strength; petrol-only upward unit rounding; cigarette length; inclusive
@@ -246,6 +308,17 @@ monetary rounding beyond express rules, permits, security and live operating
 cases were not completed here. No practitioner sign-off, engagement workbook
 or comprehensive country coverage is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| DECREE. Read for the provisions this skill cites as [DECREE]. | https://wetten.overheid.nl/BWBR0029262/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| AUTH. Read for the provisions this skill cites as [AUTH]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/accijnzen | 2026-10-17 |
+| RATES. Read for the provisions this skill cites as [RATES]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/accijnstarieven | 2026-10-17 |
+
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [DECREE]: https://wetten.overheid.nl/BWBR0029262/2025-01-01
 [RULES]: https://wetten.overheid.nl/BWBR0029309/2025-01-01
@@ -253,22 +326,4 @@ or comprehensive country coverage is claimed.
 [AUTH]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/accijnzen
 [RATES]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/accijnstarieven
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: fractional-cent and return-entry rounding; disputed product and measurement classifications; currency conversion for foreign-currency values; the excise return forms. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

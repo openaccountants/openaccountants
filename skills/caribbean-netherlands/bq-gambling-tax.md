@@ -16,14 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 statutory gambling-tax branches; establish operator licence, residence, period and actual prize facts"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: income-tax
 depends_on:
   - workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: gambling tax in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Classify the game, organiser, licence, recipient and taxable event before
 applying a rate. A licensed casino's margin, a lottery prize subject to
@@ -40,7 +45,25 @@ Tier 2 reference supplies conditional tax components. Unknown mandatory
 conditions hold the complete financial output package; it does not certify
 every country slot or an operational engagement.
 
-## Taxpayer, game and base
+## Ask the client first
+
+1. **Who is involved**: a licensed casino or other operator, a lottery, another domestic prize debtor, or a BES resident or entity winning a foreign prize.
+2. **The prize amount and the stake** that gave entitlement to it, and whether several prizes come from the same debtor and chance event.
+3. **Who bears the tax**: the winner (withheld) or the prize debtor (gross-up).
+4. **For an operator**: stakes received and prizes made available per assigned period, and any losses carried forward.
+5. **The return period** assigned by the inspector.
+
+## The method, step by step
+
+### Key figures, 2026
+
+| Item | Figure | Source |
+|---|---|---|
+| Gambling tax (kansspelbelasting) rate | 10% | B1, article 7a.5(1): https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Gross-up where the prize debtor bears the tax (branch (c)) | Prize x 100 / 90 | B1, article 7a.5(2): https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+| Prize exemption, branches (b) to (d) | Prize not exceeding USD 600, or not exceeding the corresponding stake | B1, article 7a.4: https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+
+### Taxpayer, game and base
 
 | Belastingwet BES article 7a.1 | Person identified and base |
 |---|---|
@@ -66,7 +89,7 @@ or assuming only the cash element counts. A player's stakes are not a general
 deduction from the prize base in branches (b)–(d); test the specific exemption
 below. The margin branch belongs to (a). [B1]
 
-## Prize exemptions, aggregation and rate
+### Prize exemptions, aggregation and rate
 
 For branches (b), (c) and (d), article 7a.4 exempts:
 
@@ -87,7 +110,7 @@ The corresponding legal branch must be established before using that formula;
 do not silently extend this paragraph to every lottery/operator arrangement.
 Fractional-cent and actual return-entry rounding remain held. [B1]
 
-### Fictional prize components
+#### Fictional prize components
 
 These cases stipulate an ordinary branch (b)/(c)/(d) prize as indicated,
 economic value in USD, the stated aggregation facts, no other exemption or
@@ -108,7 +131,7 @@ The base, taxpayer and collection mechanism must remain separate. The same
 rate does not make licensed lotteries and other domestic prizes the same
 filing branch.
 
-## Licensed casino/operator margin and losses
+### Licensed casino/operator margin and losses
 
 For article 7a.1(a), article 7a.3(1)(a) uses stakes received and prizes made
 available in the period, or its alternative participation receipts where
@@ -144,7 +167,85 @@ opening/closing schedule to period records. Administrative costs or all other
 corporate losses are not additional deductions from this statutory gambling
 margin merely because they are business expenses.
 
-## Withholding, self-assessment and records
+### Foreign prizes and public guidance limits
+
+The unilateral relief decree's article 19 exempts a BES-resident/established
+recipient's foreign-game prize when its specified similar-tax condition is
+met, including the stated European Netherlands branch. Article 1's instrument
+priority and the actual foreign charge still matter. Foreign income withholding
+or a platform fee is not automatically a similar gambling tax. Do not replace
+this exemption by an invented credit for every foreign amount. [UNI];
+`bq-double-tax-relief`
+
+The authority page confirms the 10% rate, ordinary prize exemptions, operator
+margin and negative-difference carry. Its general paragraph calls the winner
+the taxpayer while describing organiser withholding. The statute instead
+identifies distinct persons in article 7a.1 and branch (b)'s operator in
+article 7a.8. Preserve those statutory distinctions. The page's broad discussion
+of an organiser bearing tax is not proof that article 7a.5(2)'s express branch
+(c) formula applies to every branch. Conflicting actual instructions or forms
+need prompt professional clarification, not an unverified default. [G-TAX]; [B1]
+
+The page's fifteen-day-after-prize statement does not replace a licensed
+casino's assigned period. Its assessment-objection summary does not remove
+article 8.92(2)'s separate payment/withholding objection trigger. Establish the
+correct remedy, decision/event, payment duty and source using
+`bq-tax-compliance`. No bank reference, actual taxpayer submission or portal
+mapping was tested. [G-TAX]; [B1]; [RULES]
+
+## Worked cases
+
+### Recomputed cases
+
+**Case 1, operator losses carried forward.** A licensed operator has a margin of minus USD 2,000 in period 1 and plus USD 5,000 in period 2. The period 1 loss is set against period 2, leaving USD 3,000 taxable: tax USD 300 (table above).
+
+```oa-check
+name: Operator margin with a carried loss, two periods (2026)
+inputs:
+  p1_stakes: 10000
+  p1_prizes: 12000
+  p2_stakes: 20000
+  p2_prizes: 15000
+steps:
+  - p1_loss: p1_prizes - p1_stakes
+  - p2_taxable: p2_stakes - p2_prizes - p1_loss
+  - p2_tax: p2_taxable * 0.10
+expected:
+  p1_loss: 2000
+  p2_taxable: 3000
+  p2_tax: 300
+```
+
+**Case 2, a decision: withhold from the prize or bear the tax?** A USD 601 prize is fully taxable (no USD 600 deduction): tax USD 60.10, winner receives USD 540.90. If the debtor instead promises USD 900 net and bears the tax, the prize is grossed up to USD 1,000 and the tax is USD 100.
+
+```oa-check
+name: Prize withholding against a payer-borne gross-up (2026)
+inputs:
+  prize: 601
+  promised_net: 900
+steps:
+  - withheld_tax: prize * 0.10
+  - winner_receives: prize - withheld_tax
+  - grossed_prize: promised_net * 100 / 90
+  - borne_tax: grossed_prize * 0.10
+expected:
+  withheld_tax: 60.10
+  winner_receives: 540.90
+  grossed_prize: 1000
+  borne_tax: 100
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-GAMB-LICENCE | Licensing questions or unlicensed operators | Refer: licensing is outside this skill |
+| R-BQ-GAMB-BORNE | A tax-borne arrangement outside branch (c) | Refer: the 100/90 gross-up is only prescribed for branch (c) |
+| R-BQ-GAMB-FOREIGN | Foreign prize with a possible similar foreign tax | Refer to `bq-double-tax-relief` (unilateral decree article 19) |
+
+## Filing and payment
+
+### Withholding, self-assessment and records
 
 Under article 7a.8, branch (b)'s operator withholds when the prize is made
 available and remits on return. The provision addresses prizes whose cash
@@ -177,33 +278,16 @@ bank details outside the agent. Use stable case references and sanitised
 established amounts. Do not collect or submit ID documents, tax numbers or
 bank details. No filing, payment or licensing submission is authorised here.
 
-## Foreign prizes and public guidance limits
+## Sources
 
-The unilateral relief decree's article 19 exempts a BES-resident/established
-recipient's foreign-game prize when its specified similar-tax condition is
-met, including the stated European Netherlands branch. Article 1's instrument
-priority and the actual foreign charge still matter. Foreign income withholding
-or a platform fee is not automatically a similar gambling tax. Do not replace
-this exemption by an invented credit for every foreign amount. [UNI];
-`bq-double-tax-relief`
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| UNI. Read for the provisions this skill cites as [UNI]. | https://wetten.overheid.nl/BWBR0029674/2011-03-05 | 2026-10-17 |
+| G-TAX. Read for the provisions this skill cites as [G-TAX]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/kansspelbelasting-bedrijven/wanneer-kansspelbelasting | 2026-10-17 |
 
-The authority page confirms the 10% rate, ordinary prize exemptions, operator
-margin and negative-difference carry. Its general paragraph calls the winner
-the taxpayer while describing organiser withholding. The statute instead
-identifies distinct persons in article 7a.1 and branch (b)'s operator in
-article 7a.8. Preserve those statutory distinctions. The page's broad discussion
-of an organiser bearing tax is not proof that article 7a.5(2)'s express branch
-(c) formula applies to every branch. Conflicting actual instructions or forms
-need prompt professional clarification, not an unverified default. [G-TAX]; [B1]
-
-The page's fifteen-day-after-prize statement does not replace a licensed
-casino's assigned period. Its assessment-objection summary does not remove
-article 8.92(2)'s separate payment/withholding objection trigger. Establish the
-correct remedy, decision/event, payment duty and source using
-`bq-tax-compliance`. No bank reference, actual taxpayer submission or portal
-mapping was tested. [G-TAX]; [B1]; [RULES]
-
-## Completion conditions and primary sources
+### Completion conditions and primary sources
 
 Unknown game, licence, residence, prize/right, valuation, aggregation, period,
 exemption, foreign tax, carry, method or source remains Needs Input or a hold.
@@ -228,22 +312,4 @@ delegated register rules and actual downloaded forms were not reviewed here.
 [UNI]: https://wetten.overheid.nl/BWBR0029674/2011-03-05
 [G-TAX]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/kansspelbelasting-bedrijven/wanneer-kansspelbelasting
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: fractional-cent rounding and return-entry rounding; delegated register details for licensed operators; wider tax-borne arrangements; the return forms and field mapping. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.
