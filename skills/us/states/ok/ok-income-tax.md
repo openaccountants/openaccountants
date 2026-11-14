@@ -1,10 +1,10 @@
 ---
 name: ok-income-tax
 description: "Compute Oklahoma 2026 resident Form 511 income tax, including sole proprietors and disregarded LLCs. Covers 0%/2.5%/3.5%/4.5% schedules, state deductions/exemptions, corrected federal-tax-paid prohibition, adjustments, credits and estimated payments. Trigger on OK Form 511, Oklahoma resident income or state self-employment return."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-OK
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -36,13 +36,13 @@ Full-year Oklahoma resident individuals, including sole proprietors and disregar
 | Item and conditions | Amount / treatment | Official source |
 | --- | --- | --- |
 | 2026 single/MFS: first $3,750 | 0% | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Single/MFS: over $3,750 to $4,900 | 2.5% excess over $3,750 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Single/MFS: over $4,900 to $7,200 | $28.75 + 3.5% excess over $4,900 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Single/MFS: over $7,200 | $109.25 + 4.5% excess over $7,200 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
+| Single/MFS: over $3,750 to $4,900 | 2.5% excess over $3,750 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
+| Single/MFS: over $4,900 to $7,200 | $28.75 + 3.5% excess over $4,900 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
+| Single/MFS: over $7,200 | $109.25 + 4.5% excess over $7,200 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
 | 2026 joint/HOH/qualifying surviving spouse: first $7,500 | 0% | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Joint/HOH/QSS: over $7,500 to $9,800 | 2.5% excess over $7,500 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Joint/HOH/QSS: over $9,800 to $14,400 | $57.50 + 3.5% excess over $9,800 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
-| Joint/HOH/QSS: over $14,400 | $218.50 + 4.5% excess over $14,400 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF) |
+| Joint/HOH/QSS: over $7,500 to $9,800 | 2.5% excess over $7,500 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
+| Joint/HOH/QSS: over $9,800 to $14,400 | $57.50 + 3.5% excess over $9,800 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
+| Joint/HOH/QSS: over $14,400 | $218.50 + 4.5% excess over $14,400 | [HB 2764, section 2, 68 O.S.2355(D)](https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/hB/HB2764%20ENR.PDF); [OTC 2025 Legislative Update, 2026 bracket table p.6](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/legislation/2025LegislativeUpdate.pdf) |
 | 2026 state standard deduction | Single/MFS $6,350; joint/QSS $12,700; HOH $9,350 | [Appendix B](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/software-developers/2026MeFDeveloperGuide.pdf) |
 | 2026 personal exemption | $1,000 per qualifying exemption; dependent/age/blind conditions apply | [2026 annual report p.1](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/reports/annual-reports/otc/AR-2026.pdf) |
 | State itemized deduction limit | $17,000 other eligible deductions, plus eligible medical and charity outside that cap; state/local income OR sales taxes removed | [Appendix B](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/software-developers/2026MeFDeveloperGuide.pdf) |

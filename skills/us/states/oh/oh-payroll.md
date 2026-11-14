@@ -1,10 +1,10 @@
 ---
 name: oh-payroll
 description: Run Ohio employer payroll taxes for 2026, state income tax withholding and state unemployment insurance. Covers the Ohio withholding tables effective 1 October 2025 and the new tables effective 1 August 2026 (1.600%, 2.990% and 3.400% bands, $650 per exemption a year), the 2.75% supplemental rate, Form IT 4, IT 501 and IT 941 filing frequency (quarterly, monthly, partial-weekly), school district withholding, penalties, and Ohio unemployment insurance for 2026 (taxable wage base $9,000, new employer rate 2.85% or 5.85% for construction, experience rates 0.4% to 10.1%, quarterly reports due the last day of the month after the quarter). Trigger on "Ohio payroll", "Ohio withholding", "IT 501", "IT 941", "IT 4", "Ohio SUI", "ODJFS unemployment rate", "Ohio new employer rate". Points to municipal income tax withholding without computing it.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-OH
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -49,7 +49,7 @@ Out of scope, and where it goes:
 
 | Item | 2026 figure | Source |
 | --- | --- | --- |
-| Withholding exemption allowance | $650 a year per exemption ($12.50 weekly, $25.00 biweekly, $27.08 semi-monthly, $54.17 monthly, $2.50 daily) | [Percentage method, 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_PercentageMethod_2026.pdf); [1 October 2025](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2025%20Withholding%20Tables/WHT_PercentageMethod_2025.pdf) |
+| Withholding exemption allowance | $650 a year per exemption (derived: $12.50 weekly x 52); per period: ($12.50 weekly, $25.00 biweekly, $27.08 semi-monthly, $54.17 monthly, $2.50 daily) | [Percentage method, 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_PercentageMethod_2026.pdf); [1 October 2025](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2025%20Withholding%20Tables/WHT_PercentageMethod_2025.pdf) |
 | Annual taxable wage bands | $26,050 or less; more than $26,050 to $100,000; more than $100,000 | [Optional computer formula, 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_OptionalComputerFormula_2026.pdf) |
 | Band rates, 1 October 2025 to 31 July 2026 | 1.775%, 2.990%, 3.640% | [Percentage method effective 1 October 2025](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2025%20Withholding%20Tables/WHT_PercentageMethod_2025.pdf) |
 | Band rates, from 1 August 2026 | 1.600%, 2.990%, 3.400% | [Percentage method effective 1 August 2026](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/employer_withholding/2026%20Withholding%20Tables/WHT_PercentageMethod_2026.pdf) |
