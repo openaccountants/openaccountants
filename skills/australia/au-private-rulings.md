@@ -11,13 +11,12 @@ description: >
   'ATO ruling application', 'Division 359' or 'object to a private ruling'.
 jurisdiction: AU
 category: international
+type: filing-howto
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -61,12 +60,12 @@ Every figure below was read on 2 November 2026 in TAA Schedule 1, compilation 22
 
 | Item | Value | Source |
 | --- | --- | --- |
-| Delay notice | The applicant may give written notice requiring the ruling if, at the end of 60 days after the application was made, the Commissioner has neither made the ruling nor declined to make it | s 359-50(1) |
-| Extensions of the 60 days | Extended by the days from a request for further information to its receipt, from notice of proposed assumptions to the applicant's response, from notice of third-party information to the applicant's response, and from notice of a valuation referral to notice that the valuer has finished, where the request or notice is given during the 60 day period; overlapping periods count once | s 359-50(2) |
-| Objection for delay | If the ruling is not made within 30 days of the notice and has not been declined, the applicant may object under Part IVC, lodging a draft private ruling with the objection | s 359-50(3)-(4) |
-| Default period of a ruling | No start time: applies from when made. No end time (other than an indirect tax or excise ruling): ceases at the end of the income year or other accounting period in which it started to apply | s 359-25(3)-(4) |
-| Objection against a ruling | Available if dissatisfied, but not once there is an assessment for the income year or other period the ruling relates to, not once withholding tax or mining withholding tax the ruling relates to has become due and payable, and not for an excise ruling once the Commissioner has made a reviewable decision about the duty on those goods | s 359-60(1), (3) |
-| Obligations continue | Applying for a ruling or objecting against one does not affect the obligation to lodge a return, or the Commissioner's power to assess | s 357-125; ATO, Applying for a private ruling |
+| Delay notice | The applicant may give written notice requiring the ruling if, at the end of 60 days after the application was made, the Commissioner has neither made the ruling nor declined to make it | s 359-50(1) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Extensions of the 60 days | Extended by the days from a request for further information to its receipt, from notice of proposed assumptions to the applicant's response, from notice of third-party information to the applicant's response, and from notice of a valuation referral to notice that the valuer has finished, where the request or notice is given during the 60 day period; overlapping periods count once | s 359-50(2) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Objection for delay | If the ruling is not made within 30 days of the notice and has not been declined, the applicant may object under Part IVC, lodging a draft private ruling with the objection | s 359-50(3)-(4) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Default period of a ruling | No start time: applies from when made. No end time (other than an indirect tax or excise ruling): ceases at the end of the income year or other accounting period in which it started to apply | s 359-25(3)-(4) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Objection against a ruling | Available if dissatisfied, but not once there is an assessment for the income year or other period the ruling relates to, not once withholding tax or mining withholding tax the ruling relates to has become due and payable, and not for an excise ruling once the Commissioner has made a reviewable decision about the duty on those goods | s 359-60(1), (3) ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Obligations continue | Applying for a ruling or objecting against one does not affect the obligation to lodge a return, or the Commissioner's power to assess | s 357-125; ATO, Applying for a private ruling ([TAA 1953, compilation 227, Sch 1 Divs 357 and 359](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
 
 ### Step 1: Confirm a private ruling is the right product
 
@@ -214,7 +213,7 @@ Stop the affected work where a fact, condition or source in this guide is unreso
 
 **Reviewer attention thresholds.** These are this guide's review settings, not statutory figures. Flag for reviewer attention regardless of confidence:
 
-| Threshold | Why |
+| Trigger | Why |
 | --- | --- |
 | Tax at stake of $50,000 or more across the periods covered | The ruling's scope and facts need senior review |
 | Any assumption in the application | An assumption can lead the Commissioner to decline, or narrow the ruling |
@@ -244,8 +243,8 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | --- | --- | --- |
 | TAA 1953, compilation 227 (from 1 October 2026), Volume 3: Sch 1 ss 357-55, 357-60, 357-65, 357-70, 357-75, 357-80, 357-105, 357-110, 357-115, 357-120, 357-125 and Division 359 (ss 359-5 to 359-70) | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2 November 2026 |
 | TAA 1953, compilation 227, Volume 1: s 14ZVA | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
-| ATO, Applying for a private ruling (last updated 8 October 2026): form or letter, all relevant information, no hypothetical rulings, substantial difference, online channels, lodge separately, returns still due | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling | 2 November 2026 |
-| ATO, How to complete the private ruling application form (QC100187, last updated 1 August 2025): Sections A to F, yes-or-no questions, facts, assumptions, reasoning, declaration | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling/reference-guide-for-private-rulings/how-to-complete-the-private-ruling-application-form | 2 November 2026 |
+| ATO, Applying for a private ruling (last updated 8 October 2026): form or letter, all relevant information, no hypothetical rulings, substantial difference, online channels, lodge separately, returns still due | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling | 2026-11-02 |
+| ATO, How to complete the private ruling application form (QC100187, last updated 1 August 2025): Sections A to F, yes-or-no questions, facts, assumptions, reasoning, declaration | https://www.ato.gov.au/about-ato/ato-advice-and-guidance/ato-advice-products-rulings/early-engagement-for-advice/applying-for-a-private-ruling/reference-guide-for-private-rulings/how-to-complete-the-private-ruling-application-form | 2026-11-02 |
 
 Not yet confirmed: PS LA 2008/3 and the ATO's service standards for private rulings were not read for this draft; the objection lodgment period for a private ruling is left to `au-objections`. No accountant has reviewed this draft.
 
@@ -254,23 +253,3 @@ Method adapted by its author from the `au-private-ruling-application` skill in r
 Topic chosen from the public Ask Nagaris skill list (names only); no Nagaris text was used.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

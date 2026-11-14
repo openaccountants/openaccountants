@@ -11,13 +11,12 @@ description: >
   'Div 615' or 'restructure rollover'.
 jurisdiction: AU
 category: international
+type: decision
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -78,15 +77,15 @@ Ask for these before building the matrix. Each feeds a named condition; a missin
 
 | Item | Value | Source |
 |---|---|---|
-| Small business entity aggregated turnover threshold used by s 328-430(1)(b) | Less than $10 million for the previous year, or likely for the current year (s 328-110(1)), but not on the 'likely' limb if the 2 previous years were each $10 million or more (s 328-110(3)); also less than $10 million for the current year worked out at its end (s 328-110(4)); the ATO SBRR page states the $10 million figure | ITAA 1997 s 328-110; ATO SBRR page |
-| SBRR start | Transfers from 1 July 2016 | ATO SBRR page; LCR 2016/3 para 3 |
-| SBRR safe harbour period | 3 years after the transaction takes effect | ITAA 1997 s 328-435 |
-| Depreciating assets under the SBRR | Automatic roll-over relief (s 40-340(1) item 8); CRP 2017/2 removes other direct income tax consequences for transfers on or after 8 May 2018 | ITAA 1997 ss 40-340, 328-430 (CRP note) |
-| Pre-CGT cut-off | Acquired before 20 September 1985 | ITAA 1997 ss 328-460, 122-40(3), 124-10(4), 615-65(2) |
-| Time to choose a Part 3-1 or Part 3-3 roll-over (includes Division 122) | By the day the income tax return for the year of the CGT event is lodged, or a further time the Commissioner allows | ITAA 1997 s 103-25(1) |
-| Division 615 interposed company choice | Within 2 months after the completion time (choice that s 615-65 applies) or 28 days (consolidated group continuation), or further time the Commissioner allows; irrevocable | ITAA 1997 s 615-30(3) |
-| Division 615 shares held by outsiders | No more than 5 shares, of a market value that makes it reasonable to treat the exchanging members as owning all the shares | ITAA 1997 s 615-25(3)(b) |
-| Small business pool roll-over choice (simplified depreciation) | In writing, kept 5 years, made within 6 months of the end of the transferee's income year of the balancing adjustment event unless the ATO allows longer; all the transferor's general small business pool assets must be held by the transferee just after the events (s 328-243(2)) | ATO 'Rollover and restructure' page; ITAA 1997 s 328-243 |
+| Small business entity aggregated turnover threshold used by s 328-430(1)(b) | Less than $10 million for the previous year, or likely for the current year (s 328-110(1)), but not on the 'likely' limb if the 2 previous years were each $10 million or more (s 328-110(3)); also less than $10 million for the current year worked out at its end (s 328-110(4)); the ATO SBRR page states the $10 million figure | ITAA 1997 s 328-110; ATO SBRR page ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/328-110)) |
+| SBRR start | Transfers from 1 July 2016 | ATO SBRR page; LCR 2016/3 para 3 ([ATO SBRR page](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/concessions-offsets-and-rebates/small-business-restructure-roll-over)) |
+| SBRR safe harbour period | 3 years after the transaction takes effect | ITAA 1997 s 328-435 ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/328-435)) |
+| Depreciating assets under the SBRR | Automatic roll-over relief (s 40-340(1) item 8); CRP 2017/2 removes other direct income tax consequences for transfers on or after 8 May 2018 | ITAA 1997 ss 40-340, 328-430 (CRP note) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-340)) |
+| Pre-CGT cut-off | Acquired before 20 September 1985 | ITAA 1997 ss 328-460, 122-40(3), 124-10(4), 615-65(2) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/328-460)) |
+| Time to choose a Part 3-1 or Part 3-3 roll-over (includes Division 122) | By the day the income tax return for the year of the CGT event is lodged, or a further time the Commissioner allows | ITAA 1997 s 103-25(1) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/103-25)) |
+| Division 615 interposed company choice | Within 2 months after the completion time (choice that s 615-65 applies) or 28 days (consolidated group continuation), or further time the Commissioner allows; irrevocable | ITAA 1997 s 615-30(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/615-30)) |
+| Division 615 shares held by outsiders | No more than 5 shares, of a market value that makes it reasonable to treat the exchanging members as owning all the shares | ITAA 1997 s 615-25(3)(b) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/615-25)) |
+| Small business pool roll-over choice (simplified depreciation) | In writing, kept 5 years, made within 6 months of the end of the transferee's income year of the balancing adjustment event unless the ATO allows longer; all the transferor's general small business pool assets must be held by the transferee just after the events (s 328-243(2)) | ATO 'Rollover and restructure' page; ITAA 1997 s 328-243 ([ATO Rollover and restructure](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/rollover-and-restructure)) |
 
 **Choice timing not located.** Section 103-25 governs choices under Parts 3-1 and 3-3 only. Subdivision 328-G sits in Part 3-45 and Division 615 in Part 3-80; the sections read set no time for the SBRR choice (s 328-430(1)(f)) or a member's Division 615 choice (s 615-5(1)). The ATO page on choosing a CGT rollover states the general practice (choose by lodgment; the return is evidence; the choice cannot be changed). Record the provision relied on for each choice, or return Needs Input.
 
@@ -420,7 +419,7 @@ The reviewer attention threshold for a roll-over position is **AUD 0**: every ro
 | ATO, Tax reform: introducing a minimum tax on discretionary trusts (QC107302, last updated 3 November 2026): 'not yet law'; 3-year roll-over from 1 July 2027 | https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/tax-reform-introducing-a-minimum-tax-on-discretionary-trusts | 2026-11-11 |
 | APH, Treasury Laws Amendment (Tax Reform No. 3) Bill 2026: progress and committee referral | https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7554 | 2026-11-11 |
 
-Named on the ATO SBRR page but not read in this session: LCR 2016/2 (consequences of a roll-over), CRP 2017/2 (text read only as the legal database note at s 328-430) and PS LA 2005/24. The active asset test (s 152-40) and s 152-10(1A) were not re-read; `au-small-business-cgt` holds them.
+Not yet confirmed: Named on the ATO SBRR page but not read in this session: LCR 2016/2 (consequences of a roll-over), CRP 2017/2 (text read only as the legal database note at s 328-430) and PS LA 2005/24. The active asset test (s 152-40) and s 152-10(1A) were not re-read; `au-small-business-cgt` holds them.
 
 **Currency and revision.** Version 0.1, currency date 2 November 2026. Change log: v0.1 (2 November 2026) first draft from primary sources read that day; 11 November 2026 recheck: the ATO discretionary trust page date corrected to 3 November 2026 and the Bill's status reread unchanged; awaiting qualified Australian review.
 
@@ -429,23 +428,3 @@ Method adapted by its author from the `au-restructure-rollovers` skill in ryandu
 Topic chosen from the public Ask Nagaris skill list (names only); no Nagaris text was used.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

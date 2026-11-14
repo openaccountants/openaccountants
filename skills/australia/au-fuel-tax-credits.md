@@ -11,13 +11,12 @@ description: >
   charge", "label 7D", "off-road diesel" or "basic method for heavy vehicles".
 jurisdiction: AU
 category: international
+type: computation
 tax_year: 2026
 tax_year_notes: "2026-27 (rates read 2 November 2026; 2025-26 liquid fuel rates kept for late claims)"
 tier: 2
 last_updated: 2026-11-12
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -56,6 +55,17 @@ Collect these before any rate is applied. Missing items become Needs Input, not 
 7. **History**: prior-period 7C and 7D amounts, the apportionment method used and when it was last reviewed, total fuel tax credit entitlement for the preceding 12 months, current GST turnover, and whether the ATO has notified any compliance activity.
 
 ## The method, step by step
+
+### Key figures
+
+The current figures, repeated from Step 6 below, which holds the full rate tables, the earlier periods and the road user charge history.
+
+| Item | Value | Source |
+| --- | --- | --- |
+| Credit rate, liquid fuels (diesel or petrol; blends B5, B20, E10) acquired from 3 August 2026, heavy vehicle travelling on a public road | 21.3 cents per litre | [ATO, From 1 July 2026 to 30 June 2027 (QC107638)](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/fuel-schemes/fuel-tax-credits-business/rates-business/from-1-july-2026-to-30-june-2027) |
+| Credit rate, the same fuels acquired from 3 August 2026, all other business uses | 53.7 cents per litre | [ATO, From 1 July 2026 to 30 June 2027 (QC107638)](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/fuel-schemes/fuel-tax-credits-business/rates-business/from-1-july-2026-to-30-june-2027) |
+| Road user charge from 3 August 2026, liquid fuels | $0.324 per litre | [Fuel Tax (Road User Charge) Determination 2026 (F2026L00789)](https://www.legislation.gov.au/F2026L00789/latest/text) |
+| Road user charge from 3 August 2026, gaseous fuels | $0.432 per kilogram | [Fuel Tax (Road User Charge) Determination 2026 (F2026L00789)](https://www.legislation.gov.au/F2026L00789/latest/text) |
 
 ### Step 1: Entitlement and registration
 
@@ -348,28 +358,8 @@ Stop the affected calculation where a fact, source condition or scope requiremen
 | ATO, Travelling on public roads (QC44648, updated 22 February 2023): public roads, travelling, environmental criteria | https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/fuel-schemes/in-detail/heavy-vehicles/travelling-on-public-roads | 2026-11-02 |
 | ATO, Eligibility (QC44501), Registering (QC44510) and Ineligible fuels and activities (QC44509, updated 6 December 2022) | https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/fuel-schemes/fuel-tax-credits-business/eligibility/ineligible-fuels-and-activities | 2026-11-02 |
 
-Named but not read for this guide: FTR 2007/1, FTR 2008/1, FTR 2009/1, FTD 2010/1, FTD 2016/1, PCG 2016/8, PCG 2016/11, LI 2023/33 itself (its limits are taken from the ATO Errors page) and the ATO list of heavy vehicles used mainly off public roads. Read each before relying on a position that turns on it.
+Not yet confirmed: Named but not read for this guide: FTR 2007/1, FTR 2008/1, FTR 2009/1, FTD 2010/1, FTD 2016/1, PCG 2016/8, PCG 2016/11, LI 2023/33 itself (its limits are taken from the ATO Errors page) and the ATO list of heavy vehicles used mainly off public roads. Read each before relying on a position that turns on it.
 
 Method adapted by its author from the `fuel-tax-credits` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

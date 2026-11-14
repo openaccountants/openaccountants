@@ -10,13 +10,12 @@ description: >
   leave levy', 'Levy Advice', 'eligible wages' or 'black coal mining payroll'.
 jurisdiction: AU
 category: payroll
+type: computation
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -72,17 +71,17 @@ Also out of scope: approving and paying long service leave under Part 5A of the 
 
 | Item | Value | Source |
 |---|---|---|
-| Who pays | The person who paid the eligible wages | Payroll Levy Act 1992 s 6 |
-| Levy rate | 2.7% of the eligible wages paid, for eligible wages paid on or after 1 July 2023 | Payroll Levy Regulations 2018 ss 6, 8; Payroll Levy Act s 5; Coal LSL levy returns page |
-| Return | Within 28 days after the end of each month in which the person employs an eligible employee at any time, in the approved form | Collection Act s 5(1)-(2A) |
-| Payment due | At the end of the period for the return for that month, unless Coal LSL extends the time or permits instalments | Collection Act ss 4, 6 |
-| Additional levy | On levy unpaid after it became payable, at 2 percentage points above the Reserve Bank's most recently published cash rate target, unless regulations prescribe a rate; Coal LSL describes it as per annum, calculated daily | Collection Act s 7(1)-(2); Coal LSL levy returns page |
-| Remission of additional levy | Written request to Coal LSL; no decision within 30 days is a deemed refusal; decisions are reviewable by the Administrative Review Tribunal | Collection Act s 8 |
-| Annual audit report | Given to Coal LSL no later than 6 months after the end of the financial year, by an auditor, with reasons | Collection Act s 10(1) |
-| Auditor report on Coal LSL's notice | The notice sets the due date, which must be at least 28 days after the notice is given to the auditor, and the auditor must comply; the employer is repaid the auditor's fee from the Fund if the report finds all levy and additional levy paid | Collection Act ss 10A(2)-(3), 10B(2) |
-| Penalties for a late return or audit report | Civil penalty 40 penalty units; strict liability offence 30 penalty units; an executive officer's civil penalty 60 penalty units | Collection Act ss 5, 10, 13B |
-| Overpaid levy | Refunded from the Fund | Administration Act s 47 |
-| Waiver agreement in effect | No levy on that employee's eligible wages for the period; the return still includes the employee | Administration Act ss 39B, 39BD |
+| Who pays | The person who paid the eligible wages | Payroll Levy Act 1992 s 6 ([Payroll Levy Act 1992](https://www.legislation.gov.au/C2004A04353/2012-01-01/2012-01-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Levy rate | 2.7% of the eligible wages paid, for eligible wages paid on or after 1 July 2023 | Payroll Levy Regulations 2018 ss 6, 8; Payroll Levy Act s 5; Coal LSL levy returns page ([Payroll Levy Regulations 2018](https://www.legislation.gov.au/F2018L00217/2023-07-01/2023-07-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Return | Within 28 days after the end of each month in which the person employs an eligible employee at any time, in the approved form | Collection Act s 5(1)-(2A) ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Payment due | At the end of the period for the return for that month, unless Coal LSL extends the time or permits instalments | Collection Act ss 4, 6 ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Additional levy | On levy unpaid after it became payable, at 2 percentage points above the Reserve Bank's most recently published cash rate target, unless regulations prescribe a rate; Coal LSL describes it as per annum, calculated daily | Collection Act s 7(1)-(2); Coal LSL levy returns page ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Remission of additional levy | Written request to Coal LSL; no decision within 30 days is a deemed refusal; decisions are reviewable by the Administrative Review Tribunal | Collection Act s 8 ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Annual audit report | Given to Coal LSL no later than 6 months after the end of the financial year, by an auditor, with reasons | Collection Act s 10(1) ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Auditor report on Coal LSL's notice | The notice sets the due date, which must be at least 28 days after the notice is given to the auditor, and the auditor must comply; the employer is repaid the auditor's fee from the Fund if the report finds all levy and additional levy paid | Collection Act ss 10A(2)-(3), 10B(2) ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Penalties for a late return or audit report | Civil penalty 40 penalty units; strict liability offence 30 penalty units; an executive officer's civil penalty 60 penalty units | Collection Act ss 5, 10, 13B ([Collection Act, compilation 12](https://www.legislation.gov.au/C2004A04352/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Overpaid levy | Refunded from the Fund | Administration Act s 47 ([Administration Act, compilation 25](https://www.legislation.gov.au/C2004A04351/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Waiver agreement in effect | No levy on that employee's eligible wages for the period; the return still includes the employee | Administration Act ss 39B, 39BD ([Administration Act, compilation 25](https://www.legislation.gov.au/C2004A04351/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_1/document_1.html)) |
 
 The dollar value of a penalty unit is not stated here; read the *Crimes Act 1914* s 4AA figure current at the time of the contravention if a penalty is in issue (refer: R-AU-CLSL-5).
 
@@ -327,30 +326,10 @@ The reviewer attention threshold is **AUD 0**: every difference between levy com
 | Coal LSL, Understand your obligations | https://coallsl.com.au/employer/legal-obligations/overview | 2026-11-02 |
 | Coal LSL, Protecting Worker Entitlements (casual changes from 1 January 2024) | https://coallsl.com.au/employer/protecting-worker-entitlements | 2026-11-02 |
 
-Not read in this session: *Fair Work Act 2009* ss 13, 14 and 16, *Crimes Act 1914* s 4AA, the Employer Reimbursement Rules, the Levy Advice form and guide, Schedule 6 item 17 to Act No. 43, 2023, and any Ministerial determination under Schedule 1 to the Collection Act.
+Not yet confirmed: Not read in this session: *Fair Work Act 2009* ss 13, 14 and 16, *Crimes Act 1914* s 4AA, the Employer Reimbursement Rules, the Levy Advice form and guide, Schedule 6 item 17 to Act No. 43, 2023, and any Ministerial determination under Schedule 1 to the Collection Act.
 
 **Currency and revision.** Version 0.1, currency date 2 November 2026. Change log: v0.1 (2 November 2026) first draft from primary sources read that day; awaiting qualified Australian review.
 
 Method adapted by its author from the `coal-lsl-levy` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

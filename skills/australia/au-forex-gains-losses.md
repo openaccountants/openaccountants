@@ -13,9 +13,9 @@ description: >
   review.
 jurisdiction: AU
 category: international
+type: situation-rules
 tax_year: 2026
 last_updated: 2026-11-11
-review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -43,6 +43,17 @@ Rules were checked on 3 November 2026 against the targeted sources below. The Re
 - For crypto assets, establish their legal character. A foreign currency peg does not establish that a stablecoin is foreign currency.
 
 ## The method, step by step
+
+### Key figures
+
+The figures this guide uses, repeated from Steps 5 and 6 below, which hold the conditions.
+
+| Item | Value | Source |
+| --- | --- | --- |
+| Personal-use CGT asset gain exemption relied on in s 775-15: first element of cost base | A$10,000 or less | [ITAA 1997 s 118-10(3)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-10) |
+| Limited balance election: credit total and debit total of the elected accounts, each tested separately, no netting | No more than A$250,000 | [ITAA 1997 s 775-245](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-245) |
+| Increased balance period that can be buffered | Totals above A$250,000 but no more than A$500,000 | [ITAA 1997 s 775-245(2), (3)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-245) |
+| Buffer length for an increased balance period | 15 days | [ITAA 1997 s 775-245(3)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-245) |
 
 ### 1. Confirm currency and regime
 
@@ -572,54 +583,54 @@ Targeted source text was read on **3 November 2026**. Same-day captures reused f
 | Source | URL | Read scope |
 | --- | --- | --- |
 | Federal Register, ITAA 1997 compilation 268 | <https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_9/document_9.html> | Compilation identity and selected Division 775 event, overlap, private, exempt/NANE, limited balance and retranslation provisions. Extracted s 775-285 formula omitted; readable formula checked in ATO legislation copy below. |
-| SECTION 775-15 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-15> | Affected operative section or relevant forex page text |
-| SECTION 775-30 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-30> | Affected operative section or relevant forex page text |
-| SECTION 775-25 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-25> | Affected operative section or relevant forex page text |
-| SECTION 775-20 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-20> | Affected operative section or relevant forex page text |
-| SECTION 775-35 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-35> | Affected operative section or relevant forex page text |
-| SECTION 775-40 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-40> | Affected operative section or relevant forex page text |
-| SECTION 775-45 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-45> | Affected operative section or relevant forex page text |
-| SECTION 775-50 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-50> | Affected operative section or relevant forex page text |
-| SECTION 775-55 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-55> | Affected operative section or relevant forex page text |
-| SECTION 775-60 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-60> | Affected operative section or relevant forex page text |
-| SECTION 775-65 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-65> | Affected operative section or relevant forex page text |
-| SECTION 775-70 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-70> | Affected operative section or relevant forex page text |
-| SECTION 775-75 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-75> | Affected operative section or relevant forex page text |
-| SECTION 775-80 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-80> | Affected operative section or relevant forex page text |
-| SECTION 775-85 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-85> | Affected operative section or relevant forex page text |
-| SECTION 775-105 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-105> | Affected operative section or relevant forex page text |
-| SECTION 775-125 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-125> | Affected operative section or relevant forex page text |
-| SECTION 775-135 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-135> | Affected operative section or relevant forex page text |
-| SECTION 775-140 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-140> | Affected operative section or relevant forex page text |
-| SECTION 775-150 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-150> | Affected operative section or relevant forex page text |
-| SECTION 775-155 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-155> | Affected operative section or relevant forex page text |
-| SECTION 775-165 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-165> | Affected operative section or relevant forex page text |
-| SECTION 775-270 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-270> | Affected operative section or relevant forex page text |
-| SECTION 775-280 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-280> | Affected operative section or relevant forex page text |
-| SECTION 775-285 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-285> | Affected operative section or relevant forex page text |
-| Foreign exchange gains and losses / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses> | Affected operative section or relevant forex page text |
-| Forex realisation events / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/forex-realisation-events> | Affected operative section or relevant forex page text |
-| Common forex transactions / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions> | Affected operative section or relevant forex page text |
-| Forex elections / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections> | Affected operative section or relevant forex page text |
-| SECTION 775-90 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-90> | Affected operative section or relevant forex page text |
-| SECTION 775-95 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-95> | Affected operative section or relevant forex page text |
-| SECTION 775-100 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-100> | Affected operative section or relevant forex page text |
-| SECTION 775-110 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-110> | Affected operative section or relevant forex page text |
-| SECTION 775-115 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-115> | Affected operative section or relevant forex page text |
-| SECTION 775-290 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-290> | Affected operative section or relevant forex page text |
-| SECTION 960-50 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/960-50> | Affected operative section or relevant forex page text |
-| SECTION 118-10 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-10> | Affected operative section or relevant forex page text |
-| SECTION 108-20 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/108-20> | Affected operative section or relevant forex page text |
-| 195-1 | <https://www.ato.gov.au/law/view/document?docid=PAC/19990055/195-1> | Digital currency definition only |
-| TD 2014/25 / Legal database | <https://www.ato.gov.au/law/view/document?docid=TXD/TD201425/NAT/ATO/00001> | Paragraphs 1–3 and relevant ordinary-meaning reasoning |
-| What are crypto assets? / Australian Taxation Office | <https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/what-are-crypto-assets> | Main crypto classification and common assets text |
-| GST and digital currency / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/your-industry/gst-and-crypto-assets/gst-and-digital-currency> | Digital currency definition and stablecoin text |
-| 775-230 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-230> | Operative section; same-day capture reused |
-| 775-250 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-250> | Operative section; same-day capture reused |
-| 775-255 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-255> | Operative section; same-day capture reused |
-| 775-245 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-245> | Operative section; same-day capture reused |
-| 995-1 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/995-1> | Operative section; same-day capture reused |
-| Section 775-27 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-27> | Entire operative section |
+| SECTION 775-15 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-15> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-30 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-30> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-25 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-25> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-20 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-20> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-35 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-35> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-40 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-40> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-45 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-45> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-50 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-50> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-55 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-55> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-60 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-60> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-65 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-65> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-70 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-70> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-75 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-75> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-80 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-80> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-85 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-85> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-105 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-105> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-125 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-125> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-135 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-135> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-140 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-140> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-150 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-150> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-155 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-155> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-165 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-165> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-270 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-270> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-280 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-280> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-285 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-285> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| Foreign exchange gains and losses / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| Forex realisation events / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/forex-realisation-events> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| Common forex transactions / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/common-forex-transactions> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| Forex elections / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/foreign-exchange-gains-and-losses/in-detail/forex-elections> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-90 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-90> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-95 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-95> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-100 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-100> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-110 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-110> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-115 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-115> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 775-290 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-290> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 960-50 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/960-50> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 118-10 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-10> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| SECTION 108-20 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/108-20> | Affected operative section or relevant forex page text; read 2026-11-03 |
+| 195-1 | <https://www.ato.gov.au/law/view/document?docid=PAC/19990055/195-1> | Digital currency definition only; read 2026-11-03 |
+| TD 2014/25 / Legal database | <https://www.ato.gov.au/law/view/document?docid=TXD/TD201425/NAT/ATO/00001> | Paragraphs 1–3 and relevant ordinary-meaning reasoning; read 2026-11-03 |
+| What are crypto assets? / Australian Taxation Office | <https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/what-are-crypto-assets> | Main crypto classification and common assets text; read 2026-11-03 |
+| GST and digital currency / Australian Taxation Office | <https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/your-industry/gst-and-crypto-assets/gst-and-digital-currency> | Digital currency definition and stablecoin text; read 2026-11-03 |
+| 775-230 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-230> | Operative section; same-day capture reused; read 2026-11-03 |
+| 775-250 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-250> | Operative section; same-day capture reused; read 2026-11-03 |
+| 775-255 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-255> | Operative section; same-day capture reused; read 2026-11-03 |
+| 775-245 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-245> | Operative section; same-day capture reused; read 2026-11-03 |
+| 995-1 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/995-1> | Operative section; same-day capture reused; read 2026-11-03 |
+| Section 775-27 | <https://www.ato.gov.au/law/view/document?docid=PAC/19970038/775-27> | Entire operative section; read 2026-11-03 |
 
 The old edited-private-ruling citation is no longer a general authority for an A$10,000 forex exemption. No current reliance is placed on that ruling or the earlier TOFA elective-method page for the ordinary account choice. The operative provisions and their separate regimes govern the method above.
 
@@ -628,23 +639,3 @@ Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 > Contributed by Ryan Duguid.
 
 Not yet confirmed: complete historical amendment/application coverage, every actual taxpayer's character and elections, future law after the checked compilation period, return procedures and deployment/consumer results. The executable cases verify conditional arithmetic; they are not independent legal certification.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

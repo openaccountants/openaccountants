@@ -11,13 +11,12 @@ description: >
   statement', 'start-up concession', 'deferred taxing point' or 'Division 83A'.
 jurisdiction: AU
 category: international
+type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-12
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -74,27 +73,27 @@ Every figure below was read on 2 November 2026 in the source named, with the ful
 
 | Item | Value | Source |
 | --- | --- | --- |
-| Upfront reduction cap | Reduce the total upfront inclusion by no more than $1,000 | ITAA 1997 s 83A-35(2)(a) |
-| Upfront income test | Only if taxable income (before the reduction, excluding any assessable FHSS released amount), reportable fringe benefits total, reportable superannuation contributions and total net investment loss together do not exceed $180,000 | ITAA 1997 s 83A-35(2)(b) |
-| Non-discriminatory scheme (upfront reduction) | Operated on a non-discriminatory basis for at least 75% of the employer's permanent employees with at least 3 years of service who are Australian residents | ITAA 1997 s 83A-35(6) |
-| Ownership and voting limit (reduction, start-up, deferral) | Immediately after acquisition, no beneficial interest in more than 10% of the shares and no control of more than 10% of the votes, counting shares obtainable under rights | ITAA 1997 s 83A-45(6)-(7) |
-| Minimum holding period (reduction and start-up) | No disposal for 3 years after acquisition, or until earlier cessation of employment; the Commissioner may allow an earlier time on a disposal of all membership interests in the company | ITAA 1997 s 83A-45(4)-(5) |
-| Start-up: not listed | No equity interests in the company or its group listed at the end of the company's most recent income year before the acquisition | ITAA 1997 s 83A-33(2) |
-| Start-up: age | Company and group incorporated less than 10 years before the end of that income year | ITAA 1997 s 83A-33(3) |
-| Start-up: turnover | Aggregated turnover not exceeding $50 million for the most recent income year before the income year of acquisition | ITAA 1997 s 83A-33(4) |
-| Start-up: shares | Discount no more than 15% of market value at acquisition | ITAA 1997 s 83A-33(5)(a) |
-| Start-up: rights | Exercise price at least the market value of an ordinary share at acquisition | ITAA 1997 s 83A-33(5)(b) |
-| Broad availability (deferred shares and start-up shares) | At least 75% of the employer's permanent employees with at least 3 years of service who are Australian residents are, or had been, entitled to acquire ESS interests | ITAA 1997 ss 83A-105(2), 83A-33(1)(c) |
-| Salary sacrifice deferral cap | Total market value of the year's salary-sacrificed ESS interests in the employer and its holding company not more than $5,000 | ITAA 1997 s 83A-105(4)(c), (5) |
-| Maximum deferral | End of the 15 year period starting at acquisition | ITAA 1997 ss 83A-115(6), 83A-120(6) |
-| 30-day rule | A disposal within 30 days after the time otherwise worked out moves the deferred taxing point to the disposal | ITAA 1997 ss 83A-115(3), 83A-120(3) |
-| Cessation of employment | Not a deferred taxing point for deferred taxing points on or after 1 July 2022: Act No. 8 of 2022, Sch 10, applies from the first 1 July after Royal Assent, which was 22 February 2022 | ATO legal database history notes to ss 83A-115(2) and 83A-120(2), (5); Federal Register title record C2022A00008 |
-| ESS statement to the employee | No later than 14 July after the end of the financial year | TAA Sch 1 s 392-5(5)(a) |
-| ESS statement to the Commissioner | No later than 14 August after the end of the financial year | TAA Sch 1 s 392-5(5)(b) |
-| Correcting a statement | No later than 30 days after the provider becomes aware of a material change or omission | TAA Sch 1 s 392-10(2) |
-| TFN withholding tax (ESS) | Payable by the provider at the end of 21 days after the end of the income year, where no TFN (or ABN) was quoted | TAA Sch 1 s 14-155(1), (4) |
-| CGT discount holding test | The asset must have been acquired at least 12 months before the CGT event | ITAA 1997 s 115-25(1) |
-| CGT discount for an individual | 50% for a discount capital gain from a CGT event before 1 July 2027 where ss 115-105 and 115-110 do not apply; later events and other entities: `au-capital-gains` | ITAA 1997 s 115-100(aa) |
+| Upfront reduction cap | Reduce the total upfront inclusion by no more than $1,000 | ITAA 1997 s 83A-35(2)(a) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35)) |
+| Upfront income test | Only if taxable income (before the reduction, excluding any assessable FHSS released amount), reportable fringe benefits total, reportable superannuation contributions and total net investment loss together do not exceed $180,000 | ITAA 1997 s 83A-35(2)(b) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35)) |
+| Non-discriminatory scheme (upfront reduction) | Operated on a non-discriminatory basis for at least 75% of the employer's permanent employees with at least 3 years of service who are Australian residents | ITAA 1997 s 83A-35(6) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35)) |
+| Ownership and voting limit (reduction, start-up, deferral) | Immediately after acquisition, no beneficial interest in more than 10% of the shares and no control of more than 10% of the votes, counting shares obtainable under rights | ITAA 1997 s 83A-45(6)-(7) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-45)) |
+| Minimum holding period (reduction and start-up) | No disposal for 3 years after acquisition, or until earlier cessation of employment; the Commissioner may allow an earlier time on a disposal of all membership interests in the company | ITAA 1997 s 83A-45(4)-(5) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-45)) |
+| Start-up: not listed | No equity interests in the company or its group listed at the end of the company's most recent income year before the acquisition | ITAA 1997 s 83A-33(2) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-33)) |
+| Start-up: age | Company and group incorporated less than 10 years before the end of that income year | ITAA 1997 s 83A-33(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-33)) |
+| Start-up: turnover | Aggregated turnover not exceeding $50 million for the most recent income year before the income year of acquisition | ITAA 1997 s 83A-33(4) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-33)) |
+| Start-up: shares | Discount no more than 15% of market value at acquisition | ITAA 1997 s 83A-33(5)(a) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-33)) |
+| Start-up: rights | Exercise price at least the market value of an ordinary share at acquisition | ITAA 1997 s 83A-33(5)(b) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-33)) |
+| Broad availability (deferred shares and start-up shares) | At least 75% of the employer's permanent employees with at least 3 years of service who are Australian residents are, or had been, entitled to acquire ESS interests | ITAA 1997 ss 83A-105(2), 83A-33(1)(c) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-105)) |
+| Salary sacrifice deferral cap | Total market value of the year's salary-sacrificed ESS interests in the employer and its holding company not more than $5,000 | ITAA 1997 s 83A-105(4)(c), (5) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-105)) |
+| Maximum deferral | End of the 15 year period starting at acquisition | ITAA 1997 ss 83A-115(6), 83A-120(6) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115)) |
+| 30-day rule | A disposal within 30 days after the time otherwise worked out moves the deferred taxing point to the disposal | ITAA 1997 ss 83A-115(3), 83A-120(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115)) |
+| Cessation of employment | Not a deferred taxing point for deferred taxing points on or after 1 July 2022: Act No. 8 of 2022, Sch 10, applies from the first 1 July after Royal Assent, which was 22 February 2022 | ATO legal database history notes to ss 83A-115(2) and 83A-120(2), (5); Federal Register title record C2022A00008 ([ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115)) |
+| ESS statement to the employee | No later than 14 July after the end of the financial year | TAA Sch 1 s 392-5(5)(a) ([TAA 1953 Sch 1 Div 392](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| ESS statement to the Commissioner | No later than 14 August after the end of the financial year | TAA Sch 1 s 392-5(5)(b) ([TAA 1953 Sch 1 Div 392](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| Correcting a statement | No later than 30 days after the provider becomes aware of a material change or omission | TAA Sch 1 s 392-10(2) ([TAA 1953 Sch 1 Div 392](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html)) |
+| TFN withholding tax (ESS) | Payable by the provider at the end of 21 days after the end of the income year, where no TFN (or ABN) was quoted | TAA Sch 1 s 14-155(1), (4) ([TAA 1953 Sch 1 s 14-155](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| CGT discount holding test | The asset must have been acquired at least 12 months before the CGT event | ITAA 1997 s 115-25(1) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-25)) |
+| CGT discount for an individual | 50% for a discount capital gain from a CGT event before 1 July 2027 where ss 115-105 and 115-110 do not apply; later events and other entities: `au-capital-gains` | ITAA 1997 s 115-100(aa) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-100)) |
 
 The rate of TFN withholding tax (ESS) is set by the *Income Tax (TFN Withholding Tax (ESS)) Act 2009*, which this guide has not read. Do not state a rate; return Needs Input if the employee's credit for it matters.
 
@@ -295,7 +294,7 @@ Stop the affected calculation where a fact, condition or source in this guide is
 
 **Reviewer attention thresholds.** These are this guide's review settings, not statutory figures. Flag for reviewer attention regardless of confidence:
 
-| Threshold | Why |
+| Trigger | Why |
 | --- | --- |
 | Any single ESS inclusion of $10,000 or more | Material income; market value and date evidence must be complete |
 | An s 83A-35(2)(b) income-test total within $5,000 of $180,000 | A small correction to any component removes or restores the reduction |
@@ -329,36 +328,16 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | ITAA 1997, compilation 268, Volume 4: s 130-80 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html | 2 November 2026 |
 | TAA 1953, compilation 227 (from 1 October 2026), Volume 1: Sch 1 s 14-155 | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
 | TAA 1953, compilation 227, Volume 3: Sch 1 ss 392-5, 392-10 | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2 November 2026 |
-| ATO legal database, ITAA 1997 s 83A-115, with history notes on Act No. 8 of 2022 | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115 | 2 November 2026 |
-| ATO legal database, ITAA 1997 s 83A-120, with history notes on Act No. 8 of 2022 and repealed s 83A-120(5) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-120 | 2 November 2026 |
-| ATO legal database, ITAA 1997 s 83A-35 (cross-check of the compilation text; ss 83A-30, 83A-33, 83A-45 and 83A-105 were cross-checked on the same database) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35 | 2 November 2026 |
-| Federal Register of Legislation API, title record C2022A00008 (Corporate Collective Investment Vehicle Framework and Other Measures Act 2022, Act No. 8 of 2022): making date 22 February 2022 | https://api.prod.legislation.gov.au/v1/Titles('C2022A00008') | 2 November 2026 |
-| ATO, Employees (QC47638, last updated 7 May 2020): no discount means no ESS rules; ESS statement by 14 July | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees | 2 November 2026 |
-| ATO, Concessional schemes (QC47641, last updated 21 December 2015): scheme types and the 30-day rule. Superseded on cessation of employment | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/types-of-ess/concessional-schemes-concessional-tax-treatment-can-apply | 2 November 2026 |
-| ATO, ESS and capital gains tax (QC47654, last updated 21 December 2015): cost base and acquisition-date resets, start-up examples | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/ess-and-your-tax/ess-and-capital-gains-tax | 2 November 2026 |
+| ATO legal database, ITAA 1997 s 83A-115, with history notes on Act No. 8 of 2022 | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-115 | 2026-11-02 |
+| ATO legal database, ITAA 1997 s 83A-120, with history notes on Act No. 8 of 2022 and repealed s 83A-120(5) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-120 | 2026-11-02 |
+| ATO legal database, ITAA 1997 s 83A-35 (cross-check of the compilation text; ss 83A-30, 83A-33, 83A-45 and 83A-105 were cross-checked on the same database) | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/83A-35 | 2026-11-02 |
+| Federal Register of Legislation API, title record C2022A00008 (Corporate Collective Investment Vehicle Framework and Other Measures Act 2022, Act No. 8 of 2022): making date 22 February 2022 | https://api.prod.legislation.gov.au/v1/Titles('C2022A00008') | 2026-11-02 |
+| ATO, Employees (QC47638, last updated 7 May 2020): no discount means no ESS rules; ESS statement by 14 July | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees | 2026-11-02 |
+| ATO, Concessional schemes (QC47641, last updated 21 December 2015): scheme types and the 30-day rule. Superseded on cessation of employment | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/types-of-ess/concessional-schemes-concessional-tax-treatment-can-apply | 2026-11-02 |
+| ATO, ESS and capital gains tax (QC47654, last updated 21 December 2015): cost base and acquisition-date resets, start-up examples | https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/employee-share-schemes/employees/ess-and-your-tax/ess-and-capital-gains-tax | 2026-11-02 |
 
 Not yet confirmed: the rate of TFN withholding tax (ESS); the 2026-27 return labels for ESS amounts; the s 83A-315 valuation regulations; the Subdivision 130-B and Division 134 rules for exercised rights beyond the points stated here; and any amendment in the ITAA 1997 compilation from 1 December 2026. No accountant has reviewed this draft.
 
 Method adapted by its author from the `au-employee-share-schemes` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

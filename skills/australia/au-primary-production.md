@@ -13,13 +13,12 @@ description: >
   disposal of livestock" or "drought".
 jurisdiction: AU
 category: international
+type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27 (law and figures read 2 November 2026)"
 tier: 2
 last_updated: 2026-11-02
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -174,12 +173,12 @@ Horticultural plant write-off rates, applied to establishment expenditure x writ
 
 | Effective life | Annual write-off rate | Use counted for at most |
 |---|---|---|
-| 3 to fewer than 5 years | 40% | 2 years and 183 days |
-| 5 to fewer than 6 2/3 years | 27% | 3 years and 257 days |
-| 6 2/3 to fewer than 10 years | 20% | 5 years |
-| 10 to fewer than 13 years | 17% | 5 years and 323 days |
-| 13 to fewer than 30 years | 13% | 7 years and 253 days |
-| 30 years or more | 7% | 14 years and 105 days |
+| 3 to fewer than 5 years | 40% | 2 years and 183 days ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
+| 5 to fewer than 6 2/3 years | 27% | 3 years and 257 days ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
+| 6 2/3 to fewer than 10 years | 20% | 5 years ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
+| 10 to fewer than 13 years | 17% | 5 years and 323 days ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
+| 13 to fewer than 30 years | 13% | 7 years and 253 days ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
+| 30 years or more | 7% | 14 years and 105 days ([s 40-545](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/40-545)) |
 
 **Small business entities** may choose, for each such asset, Subdivision 40-F or 40-G treatment or the simplified depreciation rules ([s 328-175(3), (4)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/328-175)); once made for an asset the choice cannot be changed (s 328-175(4)), and horticultural plants cannot use the simplified rules (s 328-175(5)). The ATO guide says capital expenditure on connecting mains electricity or installing a phone line can be deductible over 10 years under separate rules; route those, with every general depreciating asset, to `au-deductions-offsets`.
 
@@ -387,30 +386,10 @@ Stop the affected calculation where a fact, source condition or scope requiremen
 | ATO, Information for primary producers 2026 (2026 edition, whose year references are to 2025-26; used for principles only): depreciating assets, valuing livestock, natural increase, abnormal receipts, small business concessions | https://www.ato.gov.au/law/view/document?docid=SAV/PP | 2026-11-02 |
 | ATO, Tax rates - Australian residents, 2026-27 table (updated 13 August 2026) | https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents | 2026-11-02 |
 
-Named but not read for this guide: TR 2006/3, TR 2008/2, the ATO determination of values for goods taken from stock for 2026-27, s 40-635 (the landcare list above comes from the ATO guide) and ss 393-16, 393-17 and 393-27. Read each before relying on a position that turns on it.
+Not yet confirmed: Named but not read for this guide: TR 2006/3, TR 2008/2, the ATO determination of values for goods taken from stock for 2026-27, s 40-635 (the landcare list above comes from the ATO guide) and ss 393-16, 393-17 and 393-27. Read each before relying on a position that turns on it.
 
 Method adapted by its author from the `au-primary-production` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
 Topic chosen from the public Ask Nagaris skill list (names only); no Nagaris text was used.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

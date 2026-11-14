@@ -11,13 +11,12 @@ description: >
   'ETF distribution', 'cost base adjustment' or 'CGT event E10'.
 jurisdiction: AU
 category: international
+type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -68,19 +67,19 @@ Every figure below was read on 2 November 2026 in ITAA 1997 compilation 268 unle
 
 | Item | Value | Source |
 | --- | --- | --- |
-| AMMA statement deadline | No later than 3 months after the end of the income year | s 276-455(2) |
-| Replacement statements | A trustee that gave statements on time does not breach the deadline by later giving replacement statements | s 276-455(4) |
-| No statement needed | Where all of the member's determined member components are nil and the cost base net amount of all its interests is nil | s 276-455(3) |
-| Outer limit | A statement given more than 4 years after the end of the income year is not an AMMA statement | s 276-460(3) |
-| Statement contents | Amount and character of each member component, and the trustee's reasonable estimate of the cost base excess or shortfall for the member's unit or interest | s 276-460(2) |
-| Discount capital gain component | Treated as double the component's amount (the trustee's discounted figure, not a grossed-up line) for s 276-80 | s 276-85(3)-(4) |
-| Cost base excess (decrease) | Reduce the cost base and reduced cost base by the excess, or to nil if the excess is larger than the cost base | s 104-107B(2) |
-| Cost base shortfall (increase) | Increase the cost base and reduced cost base by the shortfall | s 104-107B(3) |
-| Timing of the adjustment | Just before the end of the income year, or just before a CGT event that happens to the unit during the year | s 104-107B(4) |
-| CGT event E10 gain | The excess over the cost base (or the whole excess if the cost base is already nil); no capital loss can arise | s 104-107A(1), (3) |
-| E10 exception | A gain is disregarded for units acquired before 20 September 1985 | s 104-107A(4) |
-| Discount availability for an E10 gain | E10 is not in the list of events whose gains cannot be discount capital gains; the 12-month holding test applies to the unit | s 115-25(1), (3) |
-| CGT discount for an individual | 50% for a discount capital gain from a CGT event before 1 July 2027 where ss 115-105 and 115-110 do not apply; other entities and later events: `au-capital-gains` | s 115-100(aa) |
+| AMMA statement deadline | No later than 3 months after the end of the income year | s 276-455(2) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-455)) |
+| Replacement statements | A trustee that gave statements on time does not breach the deadline by later giving replacement statements | s 276-455(4) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-455)) |
+| No statement needed | Where all of the member's determined member components are nil and the cost base net amount of all its interests is nil | s 276-455(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-455)) |
+| Outer limit | A statement given more than 4 years after the end of the income year is not an AMMA statement | s 276-460(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-460)) |
+| Statement contents | Amount and character of each member component, and the trustee's reasonable estimate of the cost base excess or shortfall for the member's unit or interest | s 276-460(2) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-460)) |
+| Discount capital gain component | Treated as double the component's amount (the trustee's discounted figure, not a grossed-up line) for s 276-80 | s 276-85(3)-(4) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/276-85)) |
+| Cost base excess (decrease) | Reduce the cost base and reduced cost base by the excess, or to nil if the excess is larger than the cost base | s 104-107B(2) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-107B)) |
+| Cost base shortfall (increase) | Increase the cost base and reduced cost base by the shortfall | s 104-107B(3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-107B)) |
+| Timing of the adjustment | Just before the end of the income year, or just before a CGT event that happens to the unit during the year | s 104-107B(4) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-107B)) |
+| CGT event E10 gain | The excess over the cost base (or the whole excess if the cost base is already nil); no capital loss can arise | s 104-107A(1), (3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-107A)) |
+| E10 exception | A gain is disregarded for units acquired before 20 September 1985 | s 104-107A(4) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-107A)) |
+| Discount availability for an E10 gain | E10 is not in the list of events whose gains cannot be discount capital gains; the 12-month holding test applies to the unit | s 115-25(1), (3) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-25)) |
+| CGT discount for an individual | 50% for a discount capital gain from a CGT event before 1 July 2027 where ss 115-105 and 115-110 do not apply; other entities and later events: `au-capital-gains` | s 115-100(aa) ([ITAA 1997, ATO legal database](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-100)) |
 
 ### Step 1: Confirm the regime for the year
 
@@ -241,7 +240,7 @@ Stop the affected calculation where a fact, condition or source in this guide is
 
 **Reviewer attention thresholds.** These are this guide's review settings, not statutory figures. Flag for reviewer attention regardless of confidence:
 
-| Threshold | Why |
+| Trigger | Why |
 | --- | --- |
 | Any CGT event E10 gain | The cost base is exhausted and every later decrease is a gain |
 | A cost base decrease above 10% of a parcel's opening cost base in one year | Large returns of capital need the statement and registry checked |
@@ -270,30 +269,10 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | --- | --- | --- |
 | ITAA 1997, compilation 268 (from 1 October 2026), Volume 3: ss 104-107A to 104-107G (AMIT cost base adjustments and CGT event E10), 115-25, 115-100 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2 November 2026 |
 | ITAA 1997, compilation 268, Volume 6: ss 276-10, 276-80, 276-85, 276-455, 276-460 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_6/document_6.html | 2 November 2026 |
-| ATO, Attributing amounts to members (QC82269, last updated 23 July 2025): character retained, attribution can differ from cash, AMMA statement replaces the standard distribution statement, 3-month deadline | https://www.ato.gov.au/businesses-and-organisations/trusts/specific-rules-for-some-trusts/managed-investment-trusts/managed-investment-trusts-overview/attribution-managed-investment-trusts/attribution-method-for-managed-investment-trusts/attributing-amounts-to-members | 2 November 2026 |
+| ATO, Attributing amounts to members (QC82269, last updated 23 July 2025): character retained, attribution can differ from cash, AMMA statement replaces the standard distribution statement, 3-month deadline | https://www.ato.gov.au/businesses-and-organisations/trusts/specific-rules-for-some-trusts/managed-investment-trusts/managed-investment-trusts-overview/attribution-managed-investment-trusts/attribution-method-for-managed-investment-trusts/attributing-amounts-to-members | 2026-11-02 |
 
 Not yet confirmed: the 2026-27 return labels for AMIT components; the member-level treatment of each tax offset type; and any amendment in the ITAA 1997 compilation from 1 December 2026. No accountant has reviewed this draft.
 
 Method adapted by its author from the `au-managed-fund-amit` skill in ryanduguid/australian-accounting-skills (commit 3e110da). This guide is licensed under FSL-1.1-ALv2, not the OA Guide License; see LICENSING.md.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

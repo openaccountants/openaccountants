@@ -12,15 +12,14 @@ description: >
   'ART review' or 'disputed debt'.
 jurisdiction: AU
 category: international
+type: filing-howto
 tax_year: 2026
 tax_year_notes: "2026-27 (law as at 2 November 2026)"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
-verified_by: pending
 license: FSL-1.1-ALv2
 ---
 
@@ -62,24 +61,24 @@ Every figure below was read on 2 November 2026. 'TAA' means TAA compilation 227;
 
 | Item | Value | Source |
 | --- | --- | --- |
-| Income tax assessment, where s 170(1) item 1, 2, 3 or 3A applies | 2 years after notice of the assessment is given | TAA s 14ZW(1)(aa)(i) |
-| Income tax assessment, otherwise | 4 years after notice of the assessment is given | TAA s 14ZW(1)(aa)(ii) |
-| Who is in the 2-year group (ATO summary) | Most individuals, small businesses and medium businesses; medium business means aggregated turnover of at least $10 million but less than $50 million, for income years starting on or after 1 July 2021 | ATO, What you can object to, and the time limits (last updated 3 July 2026); ITAA 1936 s 170(1) items 1 to 3A and the 'medium business entity' definition in s 170(14) |
-| FBT assessment (FBTAA s 78A) | 4 years after notice of the decision is given | TAA s 14ZW(1)(aaa) |
-| Amended assessment where the 2-year rule would apply | Whichever ends last: 2 years after notice of the assessment that was amended was served, or 60 days after notice of the amended assessment was served | TAA s 14ZW(1BA) |
-| Amended assessment where a 4-year rule would apply | Whichever ends last: 4 years after notice of the assessment that was amended was served (the first assessment for the year if amended more than once), or 60 days after notice of the amended assessment was served | TAA s 14ZW(1B), (1C) |
-| Penalty assessment under Division 284 relating to an assessment of the person | 60 days, or the longer period for objecting to that assessment if there is one | TAA s 14ZW(1BB), (1)(c) |
-| GST and other indirect tax assessment under Subdivision 155-C | The period in Sch 1 s 155-35(2)(a); the ATO states it as 4 years and one day from the date the assessment was given | TAA s 14ZW(1)(bg); ATO time limits page |
-| Private ruling relating to an income year (not indirect tax or excise) | Whichever ends last: 60 days after the ruling was made, or 2 years (2-year group) or 4 years (otherwise) after the last day allowed for lodging the return for that year | TAA s 14ZW(1A) |
-| Private indirect tax ruling | Whichever ends last: 60 days after the ruling was made, or 4 years after the last day allowed for lodging the return for the assessment to which it relates | TAA s 14ZW(1AAC) |
-| Any other case | 60 days after notice of the decision is served | TAA s 14ZW(1)(c) |
-| When a posted notice counts as given (ATO practice) | Currently 7 business days from the date it was issued through Australia Post | ATO time limits page; *Acts Interpretation Act 1901* s 29 (posted service is taken to occur when the letter would be delivered in the ordinary course of post, unless the contrary is proved) |
-| Commissioner's decision period before the taxpayer can require one | 60 days after lodgment (or after the s 14ZX agreement), extended to 60 days after receipt of information requested within that period | TAA s 14ZYA(1) |
-| Deemed disallowance | 60 days after the taxpayer gives notice requiring a decision | TAA s 14ZYA(3) |
-| Applying to the ART for review of an objection decision | Within 60 days after being served with notice of the decision | TAA s 14ZZC(1) |
-| Appeal to the Federal Court | Within 60 days after being served with notice of the decision | TAA s 14ZZN |
-| Counting 'after' a day; weekend or holiday last day | The day named is excluded; a last day on a Saturday, Sunday or holiday moves to the next day that is none of those | *Acts Interpretation Act 1901* s 36(1) item 6, s 36(2) |
-| Disputed-debt 50:50 arrangement | Pay all undisputed debts and at least 50% of the disputed principal tax debt; the ATO defers recovery of the balance and remits 50% of the GIC on it (75% for a Test Case Litigation Program dispute). Subject to a risk assessment; not available for an SGC debt, a diverted profits tax assessment, an objection the decision-maker considers frivolous or without merit, or where it would disadvantage the revenue | PS LA 2011/4 paras 25, 27, 28, 33, 38 |
+| Income tax assessment, where s 170(1) item 1, 2, 3 or 3A applies | 2 years after notice of the assessment is given | TAA s 14ZW(1)(aa)(i) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Income tax assessment, otherwise | 4 years after notice of the assessment is given | TAA s 14ZW(1)(aa)(ii) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Who is in the 2-year group (ATO summary) | Most individuals, small businesses and medium businesses; medium business means aggregated turnover of at least $10 million but less than $50 million, for income years starting on or after 1 July 2021 | ATO, What you can object to, and the time limits (last updated 3 July 2026); ITAA 1936 s 170(1) items 1 to 3A and the 'medium business entity' definition in s 170(14) ([ATO time limits page](https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits)) |
+| FBT assessment (FBTAA s 78A) | 4 years after notice of the decision is given | TAA s 14ZW(1)(aaa) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Amended assessment where the 2-year rule would apply | Whichever ends last: 2 years after notice of the assessment that was amended was served, or 60 days after notice of the amended assessment was served | TAA s 14ZW(1BA) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Amended assessment where a 4-year rule would apply | Whichever ends last: 4 years after notice of the assessment that was amended was served (the first assessment for the year if amended more than once), or 60 days after notice of the amended assessment was served | TAA s 14ZW(1B), (1C) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Penalty assessment under Division 284 relating to an assessment of the person | 60 days, or the longer period for objecting to that assessment if there is one | TAA s 14ZW(1BB), (1)(c) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| GST and other indirect tax assessment under Subdivision 155-C | The period in Sch 1 s 155-35(2)(a); the ATO states it as 4 years and one day from the date the assessment was given | TAA s 14ZW(1)(bg); ATO time limits page ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Private ruling relating to an income year (not indirect tax or excise) | Whichever ends last: 60 days after the ruling was made, or 2 years (2-year group) or 4 years (otherwise) after the last day allowed for lodging the return for that year | TAA s 14ZW(1A) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Private indirect tax ruling | Whichever ends last: 60 days after the ruling was made, or 4 years after the last day allowed for lodging the return for the assessment to which it relates | TAA s 14ZW(1AAC) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Any other case | 60 days after notice of the decision is served | TAA s 14ZW(1)(c) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| When a posted notice counts as given (ATO practice) | Currently 7 business days from the date it was issued through Australia Post | ATO time limits page; *Acts Interpretation Act 1901* s 29 (posted service is taken to occur when the letter would be delivered in the ordinary course of post, unless the contrary is proved) ([ATO time limits page](https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits)) |
+| Commissioner's decision period before the taxpayer can require one | 60 days after lodgment (or after the s 14ZX agreement), extended to 60 days after receipt of information requested within that period | TAA s 14ZYA(1) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Deemed disallowance | 60 days after the taxpayer gives notice requiring a decision | TAA s 14ZYA(3) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Applying to the ART for review of an objection decision | Within 60 days after being served with notice of the decision | TAA s 14ZZC(1) ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Appeal to the Federal Court | Within 60 days after being served with notice of the decision | TAA s 14ZZN ([TAA 1953, compilation 227, Part IVC](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Counting 'after' a day; weekend or holiday last day | The day named is excluded; a last day on a Saturday, Sunday or holiday moves to the next day that is none of those | *Acts Interpretation Act 1901* s 36(1) item 6, s 36(2) ([Acts Interpretation Act 1901](https://www.legislation.gov.au/C1901A00002/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html)) |
+| Disputed-debt 50:50 arrangement | Pay all undisputed debts and at least 50% of the disputed principal tax debt; the ATO defers recovery of the balance and remits 50% of the GIC on it (75% for a Test Case Litigation Program dispute). Subject to a risk assessment; not available for an SGC debt, a diverted profits tax assessment, an objection the decision-maker considers frivolous or without merit, or where it would disadvantage the revenue | PS LA 2011/4 paras 25, 27, 28, 33, 38 ([PS LA 2011/4](https://www.ato.gov.au/law/view/document?docid=PSR/PS20114/NAT/ATO/00001)) |
 
 The ATO page lists further decisions with other periods, including 21 days for some superannuation regulatory decisions and 6 months for disputed excise liabilities. Read that page and the enabling provision for any decision not in this table.
 
@@ -251,7 +250,7 @@ Stop the affected work where a fact, condition or source in this guide is unreso
 
 **Reviewer attention thresholds.** These are this guide's review settings, not statutory figures. Flag for reviewer attention regardless of confidence:
 
-| Threshold | Why |
+| Trigger | Why |
 | --- | --- |
 | Tax, penalty and interest in dispute of $25,000 or more | Grounds, evidence and payment strategy need senior review |
 | Any late objection request | The request is refused or granted on its explanation and evidence |
@@ -281,15 +280,15 @@ All read on 2 November 2026; figures and dates rechecked against the same source
 | Source | URL | Read on |
 | --- | --- | --- |
 | TAA 1953, compilation 227 (C2026C00468, from 1 October 2026), Volume 1: Part IVC, ss 14ZL to 14ZZS | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
-| ITAA 1936 s 175A (ATO legal database) | https://www.ato.gov.au/law/view/document?docid=PAC/19360027/175A | 2 November 2026 |
-| ITAA 1936 s 170, items 1 to 4 and the 'medium business entity' definition (ATO legal database) | https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 | 2 November 2026 |
+| ITAA 1936 s 175A (ATO legal database) | https://www.ato.gov.au/law/view/document?docid=PAC/19360027/175A | 2026-11-02 |
+| ITAA 1936 s 170, items 1 to 4 and the 'medium business entity' definition (ATO legal database) | https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 | 2026-11-02 |
 | *Acts Interpretation Act 1901*, compilation 39 (C2026C00117): ss 29 and 36 | https://www.legislation.gov.au/C1901A00002/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html | 2 November 2026 |
-| ATO, What you can object to, and the time limits (QC107660, last updated 3 July 2026) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits | 2 November 2026 |
-| ATO, What to include in your objection (QC102388) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-to-include-in-your-objection | 2 November 2026 |
-| ATO, Complete and lodge your objection (QC33792, last updated 4 June 2026) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/complete-and-lodge-your-objection | 2 November 2026 |
-| ATO, Seek an external review of ATO decisions (QC33793, last updated 30 September 2025) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/seek-an-external-review-of-ato-decisions | 2 November 2026 |
-| PS LA 2003/7, How to treat a request to lodge a late objection (amended 2 April 2026): paras 7, 8, 10 to 12, 15 | https://www.ato.gov.au/law/view/document?DocID=PSR/PS20037/NAT/ATO/00001&PiT=99991231235958 | 2 November 2026 |
-| PS LA 2011/4, Collection and recovery of disputed debts: paras 2, 6, 22, 23, 25, 27, 28, 31, 33, 38 | https://www.ato.gov.au/law/view/document?docid=PSR/PS20114/NAT/ATO/00001 | 2 November 2026 |
+| ATO, What you can object to, and the time limits (QC107660, last updated 3 July 2026) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits | 2026-11-02 |
+| ATO, What to include in your objection (QC102388) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-to-include-in-your-objection | 2026-11-02 |
+| ATO, Complete and lodge your objection (QC33792, last updated 4 June 2026) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/complete-and-lodge-your-objection | 2026-11-02 |
+| ATO, Seek an external review of ATO decisions (QC33793, last updated 30 September 2025) | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/seek-an-external-review-of-ato-decisions | 2026-11-02 |
+| PS LA 2003/7, How to treat a request to lodge a late objection (amended 2 April 2026): paras 7, 8, 10 to 12, 15 | https://www.ato.gov.au/law/view/document?DocID=PSR/PS20037/NAT/ATO/00001&PiT=99991231235958 | 2026-11-02 |
+| PS LA 2011/4, Collection and recovery of disputed debts: paras 2, 6, 22, 23, 25, 27, 28, 31, 33, 38 | https://www.ato.gov.au/law/view/document?docid=PSR/PS20114/NAT/ATO/00001 | 2026-11-02 |
 
 Not yet confirmed: the period for applying to the ART against an extension-of-time refusal, and how a deemed disallowance interacts with the s 14ZZC and s 14ZZN periods (both Needs Input). Sch 1 s 155-35 was not reread for this draft; `au-lodgment-deadlines-penalties` holds it. No accountant has reviewed this draft.
 
@@ -298,23 +297,3 @@ Method adapted by its author from the `au-ato-objection` skill in ryanduguid/aus
 Topic chosen from the public Ask Nagaris skill list (names only); no Nagaris text was used.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

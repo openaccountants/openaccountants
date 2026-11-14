@@ -11,13 +11,12 @@ description: >
   'change of intention'.
 jurisdiction: AU
 category: international
+type: decision
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
 last_updated: 2026-11-11
 version: 0.1
-review_status: pending_review
-verified_by: pending
 license: FSL-1.1-ALv2
 depends_on:
   - workflow-base
@@ -310,7 +309,7 @@ The reviewer attention threshold is **AUD 0**: every characterisation, s 70-30 e
 | GST Act ss 9-70, 9-75 (amount of GST; value of a taxable supply) | https://www.ato.gov.au/law/view/document?DocID=PAC/19990055/9-75 | 2026-11-11 |
 | ITAA 1997 s 116-20(5) (net GST disregarded in capital proceeds) | https://www.ato.gov.au/law/view/document?DocID=PAC/19970038/116-20 | 2026-11-11 |
 
-Named in the sources but not read in this session: TR 97/11 (primary production business), MT 2006/1 (held by `au-gst-property`), TD 97/3 (subdivided land as separate assets) and s 25A ITAA 1936.
+Not yet confirmed: Named in the sources but not read in this session: TR 97/11 (primary production business), MT 2006/1 (held by `au-gst-property`), TD 97/3 (subdivided land as separate assets) and s 25A ITAA 1936.
 
 **Currency and revision.** Version 0.1, currency date 2 November 2026. Change log: v0.1 (2 November 2026) first draft from primary sources read that day; 6 November 2026 correction: registration alone does not make an amount GST-exclusive (ss 17-5, 27-5); 11 November 2026 correction: the worked cases restated net of GST under ss 17-5 and 27-5, with a 1/11 example under GST Act ss 9-70 and 9-75 and capital proceeds under s 116-20(5); awaiting qualified Australian review.
 
@@ -319,23 +318,3 @@ Method adapted by its author from the `au-property-development-income` skill in 
 Topic chosen from the public Ask Nagaris skill list (names only); no Nagaris text was used.
 
 Copyright 2026 Ryan Duguid. From github.com/ryanduguid/australian-accounting-skills, FSL-1.1-ALv2. Copies and adaptations of this file must keep this notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
