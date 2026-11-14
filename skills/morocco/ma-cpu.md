@@ -1,7 +1,7 @@
 ---
 name: ma-cpu
 description: Use this skill whenever asked about Morocco's Contribution Professionnelle Unique (CPU) for tax year 2026, the single-tax regime that replaced the regime forfaitaire for small individual businesses and professionals who are not auto-entrepreneurs. Trigger on phrases like "CPU Maroc", "Contribution Professionnelle Unique", "regime forfaitaire Maroc", "droit complementaire AMO CPU", "coefficient benefice CPU", "المساهمة المهنية الموحدة", "CPU vs auto-entrepreneur Maroc". Covers eligibility and the MAD 2,000,000 and MAD 500,000 ceilings, the computation (turnover times the trade coefficient, then 10% IR), the droit complementaire banded by IR for AMO, the 30% client withholding above MAD 80,000, gains on sale or closure with the 2026 retirement relief, and the filing and payment calendar. Reply in the user's language (English, French or Darija) and keep the native terms (CPU, IR, DGI, AMO, CNSS). Cross-reference ma-auto-entrepreneur and morocco-professional-income-tax.
-version: "2.0"
+version: 2.0
 jurisdiction: MA
 tax_year: 2026
 last_updated: 2026-11-14

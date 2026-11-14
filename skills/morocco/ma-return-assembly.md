@@ -2,7 +2,7 @@
 name: ma-return-assembly
 description: >
   Use this skill to assemble and sequence the complete Moroccan filing package for a self-employed person, tax year 2026, once the regime, income, social and VAT figures are known. Trigger on "assemble my Morocco return", "what do I file in Morocco", "Morocco filing package", "declaration Maroc". Picks the one income-tax declaration for the regime (auto-entrepreneur turnover return, CPU turnover return before 1 April, or the global income return before 1 May), the VAT return cadence and the 2026 dates from the CGI, and the submission steps. Consumes ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, ma-social-contributions and morocco-vat. Computes no tax itself.
-version: "1.0"
+version: 1.0
 jurisdiction: MA
 tax_year: 2026
 last_updated: 2026-11-14
