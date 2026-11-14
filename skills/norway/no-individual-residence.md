@@ -18,14 +18,15 @@ description: >
 jurisdiction: "NO"
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.3
+last_updated: 2026-11-14
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Norway individual tax residence (2026) v0.3
+# Norway individual tax residence (2026) v0.4
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten. Statutes: Skatteloven (Taxation Act, lov 26 March 1999 nr. 14, "sktl.") §§ 2-1, 2-3, 10-70, 16-20 and chapter 20; Skatteforvaltningsloven (lov 27 May 2016 nr. 14, "sktfvl.") and its regulation (forskrift 23 November 2016 nr. 1360). See Sources.
 
@@ -46,20 +47,20 @@ See also: [norway-to-switzerland-wealth-tax-exit](norway-to-switzerland-wealth-t
 | Item | Amount | Year | Source |
 |---|---|---|---|
 | Arrival: 12-month test | More than 183 days in any 12-month period | 2026 | sktl. § 2-1 second paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§2-1 |
-| Arrival: 36-month test | More than 270 days in any 36-month period | 2026 | sktl. § 2-1 second paragraph letter b |
-| Emigration: presence limit | Not in Norway for periods exceeding 61 days in the income year | 2026 | sktl. § 2-1 third paragraph letters a and b |
-| Long-resident rule | Resident at least 10 years before the year of moving: residence ends only after the 3rd income year after the moving year | 2026 | sktl. § 2-1 third paragraph letter b |
-| Holiday-home exception | A unit acquired at least 5 years before the moving year, not used as a home by the person or close relatives in that period, is not a "home" | 2026 | sktl. § 2-1 sixth paragraph |
-| Wealth tax liability | Living in Norway on 31 December of the year before the assessment year | From income year 2026 | sktl. § 2-1 seventh paragraph (lov 2025-12-22-119) |
-| Foreign work relief | Work stay abroad of at least 12 continuous months; Norway visits average at most 6 days per full month (9 days where unforeseeable) | 2026 | sktl. § 2-1 tenth paragraph letters a and b |
-| Foreign work relief, state employees | Several stays of at least 6 months each, together at least 12 months within 30 months | 2026 | sktl. § 2-1 tenth paragraph letter a, second sentence |
-| Exit tax threshold on emigration | Net gain on shares etc. above NOK 3,000,000 | 2026 | sktl. § 10-70 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§10-70 |
-| Exit tax on transfer to a non-resident | The whole net gain or loss is taxed once it exceeds NOK 100,000 in the income year (no NOK 3,000,000 deduction) | 2026 | sktl. § 10-70 fourth paragraph, second sentence |
-| Exit tax payment deferral | Up to 12 years from the end of the year the tax is timed to | 2026 | sktl. § 10-70 seventh paragraph |
+| Arrival: 36-month test | More than 270 days in any 36-month period | 2026 | sktl. § 2-1 second paragraph letter b; https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/global-tax-liability/ |
+| Emigration: presence limit | Not in Norway for periods exceeding 61 days in the income year | 2026 | sktl. § 2-1 third paragraph letters a and b; https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/global-tax-liability/ |
+| Long-resident rule | Resident at least 10 years before the year of moving: residence ends only after the 3rd income year after the moving year | 2026 | sktl. § 2-1 third paragraph letter b; https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/global-tax-liability/ |
+| Holiday-home exception | A unit acquired at least 5 years before the moving year, not used as a home by the person or close relatives in that period, is not a "home" | 2026 | sktl. § 2-1 sixth paragraph; https://lovdata.no/lov/1999-03-26-14/§2-1 |
+| Wealth tax liability | Living in Norway on 31 December of the year before the assessment year | From income year 2026 | sktl. § 2-1 seventh paragraph (lov 2025-12-22-119); https://lovdata.no/lov/1999-03-26-14/§2-1 |
+| Foreign work relief | Work stay abroad of at least 12 continuous months; Norway visits average at most 6 days per full month (9 days where unforeseeable) | 2026 | sktl. § 2-1 tenth paragraph letters a and b; https://lovdata.no/lov/1999-03-26-14/§2-1 |
+| Foreign work relief, state employees | Several stays of at least 6 months each, together at least 12 months within 30 months | 2026 | sktl. § 2-1 tenth paragraph letter a, second sentence; https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/global-tax-liability/ |
+| Exit tax threshold on emigration | Net gain on shares etc. above NOK 3,000,000 (in words on the page: 3 millioner kroner) | 2026 | sktl. § 10-70 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§10-70 |
+| Exit tax on transfer to a non-resident | The whole net gain or loss is taxed once it exceeds NOK 100,000 in the income year (no NOK 3,000,000 deduction) | 2026 | sktl. § 10-70 fourth paragraph, second sentence; https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/exit-tax/ |
+| Exit tax payment deferral | Up to 12 years from the end of the year the tax is timed to | 2026 | sktl. § 10-70 seventh paragraph; https://lovdata.no/lov/1999-03-26-14/§10-70 |
 | Upward adjustment factor for share gains | 1.72 (gain after unused shielding, times 1.72, taxed as ordinary income at 22%) | 2026 | Forskuddsutskrivingen 2026; sktl. § 10-31 first paragraph; https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
-| Dividends to shareholders resident abroad | 25% unless a treaty reduces it | 2026 | Forskuddsutskrivingen 2026; sktl. §§ 2-3 first paragraph letter c, 10-13 |
-| PAYE source tax on wages (short-stay non-residents) | 25%; cap NOK 725,050 | 2026 | Forskuddsutskrivingen 2026; sktl. chapter 20 |
-| Change window where exit tax was not assessed | 15 years after the end of the tax period | 2026 | sktfvl. § 12-6 first paragraph |
+| Dividends to shareholders resident abroad | 25% unless a treaty reduces it | 2026 | Forskuddsutskrivingen 2026; sktl. §§ 2-3 first paragraph letter c, 10-13; https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
+| PAYE source tax on wages (short-stay non-residents) | 25%; cap NOK 725,050 | 2026 | Forskuddsutskrivingen 2026; sktl. chapter 20; https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
+| Change window where exit tax was not assessed | 15 years after the end of the tax period | 2026 | sktfvl. § 12-6 first paragraph; https://lovdata.no/dokument/NL/lov/2016-05-27-14 |
 
 ## The base
 
