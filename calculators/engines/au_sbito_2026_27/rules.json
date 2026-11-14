@@ -2,11 +2,11 @@
   "engine": "au_sbito_2026_27",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/au_sbito_2026_27",
   "generated_from": "src/lib/engines/au-sbito-2026-27.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "au_sbito_2026_27",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "jurisdiction": "AU",
     "tax_years": [
       "2026-27"
@@ -88,7 +88,7 @@
       "value": 0.16,
       "slug": "au-rates-2026-27",
       "section": "Individual income tax / Offsets and deductions",
-      "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m",
+      "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability",
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     },
     {
@@ -96,7 +96,7 @@
       "value": 1000,
       "slug": "au-rates-2026-27",
       "section": "Individual income tax / Offsets and deductions",
-      "quote": "SBITO | ... cap $1,000",
+      "quote": "SBITO | ... capped at $1,000",
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     },
     {
@@ -104,7 +104,7 @@
       "value": 5000000,
       "slug": "au-rates-2026-27",
       "section": "Individual income tax / Offsets and deductions",
-      "quote": "SBITO | ... turnover < $5m",
+      "quote": "SBITO | ... aggregated turnover must be < $5m",
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     },
     {
