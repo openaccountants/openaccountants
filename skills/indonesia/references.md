@@ -2,7 +2,7 @@
 name: indonesia-references
 jurisdiction: ID
 last_updated: 2026-11-14
-version: 1.1
+version: "1.2"
 description: Official-source navigation for Indonesian tax methods and the evidence to read before applying a rate, deadline or taxpayer classification in calendar 2026.
 tier: 2
 tax_year: 2026
