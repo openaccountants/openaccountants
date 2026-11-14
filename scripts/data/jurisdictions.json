@@ -1344,6 +1344,13 @@
   "dir": "skills/uganda"
  },
  {
+  "code": "UM",
+  "name": "United States Minor Outlying Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/united-states-minor-outlying-islands"
+ },
+ {
   "code": "US",
   "name": "United States (federal)",
   "region": "americas",
