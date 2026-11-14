@@ -1,10 +1,10 @@
 ---
 name: italy-einvoice
 description: Use this skill whenever asked about Italian e-invoicing, FatturaPA, Sistema di Interscambio (SDI), electronic invoicing compliance in Italy, Codice Destinatario, PEC invoicing, fattura elettronica, TD document types, cross-border e-invoicing via SDI, conservazione sostitutiva, or any question about issuing, receiving, validating, or archiving electronic invoices in Italy. Also trigger when preparing or reviewing XML invoices for SDI submission, handling SDI rejection (scarto) errors, configuring Codice Destinatario or PEC routing, or advising on FatturaPA technical format compliance. This skill covers the FatturaPA XML schema, SDI transmission channels, mandatory fields, validation rules, archiving, penalties, and interaction with Italian VAT returns. ALWAYS read this skill before touching any Italian e-invoicing work.
-version: 1.1
+version: 2.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,19 +13,25 @@ category: invoicing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+type: filing-howto
 ---
 
 # E-invoicing in Italy (fattura elettronica, FatturaPA and the SdI)
 
 Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and from when, the FatturaPA XML file, routing (codice destinatario or PEC), deadlines, stamp duty (imposta di bollo), cross-border data (the old esterometro), storage and penalties. For Italian VAT-registered businesses, forfettari included. Figures are for tax year 2026. Sources: the Agenzia's technical specifications 1.9.1 (31 March 2026, usable from 15 May 2026), its e-invoice guide (December 2025) and compilation guide 1.10 (April 2025); stamp duty from its guide updated June 2026; statutes on Normattiva as in force on 30 June 2026.
 
-## Section 1: Quick Reference
+## Scope
+
+This skill is the how-to for issuing, receiving and storing Italian e-invoices in tax year 2026: who must use the Sistema di Interscambio (SdI) and from when, the FatturaPA XML file and its codes, routing by codice destinatario or PEC, the issue deadlines, stamp duty (imposta di bollo) on invoices without VAT, cross-border reporting (the old esterometro), storage and penalties.
+
+Who is in: businesses and professionals resident or established in Italy and registered for VAT, forfettari and minimi included. Who is out: invoices to public administrations beyond the basics (CIG, CUP, NSO), health services to individuals that go to the Sistema tessera sanitaria, and VAT groups, fiscal representatives and VAT warehouses. Whether an operation is taxable at all, and VAT settlement, are in `italy-vat-return`.
+
+### Quick reference
 
 **Quick Reference**
 
 | Field | Value | Source |
 | --- | --- |---|
-| Country | Italy (Repubblica Italiana) | same |
 | E-invoicing system | Sistema di Interscambio (SdI), run by the Agenzia delle Entrate (art. 1(2) D.Lgs. 127/2015) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 |
 | Invoice format | FatturaPA XML (ordinary schema 1.2.3, simplified 1.0.2) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
 | Key legislation | D.Lgs. 127/2015 art. 1; D.P.R. 633/1972 art. 21; D.L. 36/2022 art. 18; D.Lgs. 471/1997 arts. 6 and 11; Provvedimento 433608/2022 (private parties); D.M. 55/2013 (public administrations) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica |
@@ -33,11 +39,48 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 | Current spec version | 1.9.1, usable from 15 May 2026 (version 1.9 was usable from 1 April 2025) | https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new |
 | B2G mandatory since | 31 March 2015 for all public administrations | https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica |
 | B2B/B2C mandatory since | 1 January 2019 | same |
-| Current status | In force for VAT persons resident or established in Italy, forfettari included (exceptions in Section 2) | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari |
+| Current status | In force for VAT persons resident or established in Italy, forfettari included (exceptions in section "Mandate Scope") | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari |
 
-## Section 2: Mandate Scope
+## Ask the client first
 
-### Who Must Comply
+- Is the customer an Italian business, a consumer, a public administration or foreign? Routing and reporting depend on it.
+- Are you a forfettario, and was your prior-year revenue above the limit in the section "Mandate Scope" table? That sets when your duty began.
+- Do you provide health services to individuals, or send data to the Sistema tessera sanitaria? Those invoices must not go through the SdI.
+- Do your invoices include exempt, non-taxable or out-of-scope lines? Stamp duty may be due.
+- Do goods travel with a transport document (DDT)? A deferred invoice may be possible.
+- Did a supplier fail to invoice you, or send a wrong invoice? You have ninety days to report it by TD29.
+
+## The method, step by step
+
+1. **Check the SdI duty.** Both parties resident or established in Italy: yes (art. 1(3) D.Lgs. 127/2015). Forfettari, minimi and L. 398/1991 associations are in (art. 18 D.L. 36/2022). Health services to natural persons are out (art. 10-bis D.L. 119/2018). Foreign counterparty: go to step 6.
+2. **Fix the deadline.** Immediate invoice within twelve days of the operation; deferred invoice (TD24) by the 15th of the next month (art. 21 D.P.R. 633/1972, section "Transmission Method" table).
+3. **Build the XML.** Take document type, regime and nature sub-codes from the technical specifications 1.9.1 (Sources). Check the totals against the tolerances in section "Tax Computation Rules".
+4. **Route it.** Buyer's 7-character code, or `0000000` with or without PEC (section "Transmission Method").
+5. **Apply stamp duty.** If the invoice carries non-VAT lines (N2.1, N2.2, N3.5, N3.6, N4) above the limit in the stamp duty table, set `BolloVirtuale` to SI and pay by quarter (section "Tax Computation Rules").
+6. **Report cross-border operations.** Sales: `XXXXXXX` invoice within the issue deadline. Purchases: TD17, TD18, TD19 or TD28 by the fifteenth day of the following month (art. 1(3-bis) D.Lgs. 127/2015).
+7. **Watch the receipt.** RC or MC: issued. NS: correct and re-send. Store the file (section "Archiving Requirements", free storage service).
+
+### Rates, bands and thresholds
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Immediate invoice: send to the SdI within | 12 days of the operation | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30 |
+| Deferred invoice (TD24, goods with a DDT or services identified by documents): send by | the 15th of the following month | 2026 | same |
+| Simplified invoice (TD07): maximum total | EUR 400 (no limit for forfettari and RF20) | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
+| Stamp duty on an invoice with non-VAT lines | EUR 2 per invoice | 2026 | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari |
+| Stamp duty is due when the invoice's non-VAT amounts are above | EUR 77.47 | 2026 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
+| Stamp duty, small amounts: Q1 paid by 30 September (Q1 and Q2 together by 30 November) if not above | EUR 5,000 | 2026 | same |
+| Forfettari, minimi and L. 398/1991 associations: in the SdI from 1 July 2022 if prior-year revenue was above (all others from 1 January 2024) | EUR 25,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30 |
+| Cross-border purchases not territorially relevant in Italy, not reported if each is not above | EUR 5,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 |
+| Taxable operation not invoiced or late (art. 6(1)) | 70% of the VAT; EUR 250 to EUR 2,000 if the settlement was not affected | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 |
+| Non-taxable, exempt or reverse-charge operation not invoiced (art. 6(2)) | 5% of the consideration | 2026 | same |
+| Cross-border data omitted or wrong (art. 11(2-quater)) | EUR 2 per invoice, up to EUR 400 a month (EUR 200 if corrected within 15 days) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 |
+
+VAT rates are owned by `italy-vat-return`; the rates printed in "Tax Computation Rules" below are only the codes the XML carries.
+
+### Mandate Scope
+
+#### Who Must Comply
 
 **Who Must Comply**
 
@@ -49,15 +92,15 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 | B2C | Mandatory since 2019; consumer views it in the Agenzia's services, and the seller's copy may be refused | |
 | Forfettari, minimi and associations under L. 398/1991 | From 1 July 2022 if 2021 revenue or fees, annualised, were above EUR 25,000; from 1 January 2024 for the rest | "superiori a euro 25.000" |
 | Non-resident businesses | Not obliged when only identified for VAT in Italy (direct identification or fiscal representative); the duty covers parties resident or established in Italy. An Italian buyer from such a supplier still sends TD17 or TD19 | Spec 1.9.1, citing risoluzione 89/E of 25 August 2010 |
-| Cross-border | E-invoicing optional; data go to the SdI (Section 5) | |
+| Cross-border | E-invoicing optional; data go to the SdI (section "Transmission Method") | |
 
-### Exemptions
+#### Exemptions
 
 - Health services: operators who send data to the Sistema tessera sanitaria may not e-invoice through the SdI for those invoices, and the ban extends to other operators for health services to natural persons. The text in force on 30 June 2026 has no end year (the year limit, last set at 2025, was removed in June 2025) ([art. 10-bis D.L. 119/2018](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30)).
 - People exempt from invoicing altogether, such as "piccoli produttori agricoli" (art. 34(6) D.P.R. 633/1972), and those excused under art. 36-bis D.P.R. 633/1972 for exempt operations ([Agenzia e-invoice guide](https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica)).
-- Invoices to or from foreign parties: e-invoicing optional, data reported instead (Section 5). San Marino has its own rules (TD28).
+- Invoices to or from foreign parties: e-invoicing optional, data reported instead (section "Transmission Method"). San Marino has its own rules (TD28).
 
-### Timeline Summary
+#### Timeline Summary
 
 **Timeline Summary**
 
@@ -70,16 +113,14 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 | 1 April 2025 | Specifications 1.9 usable (TD29, RF20) |
 | 15 May 2026 | Specifications 1.9.1 usable (new check 00327) |
 
-## Section 3: Technical Format
+### Technical Format
 
-### Format Specification
+#### Format Specification
 
 **Format Specification**
 
 | Parameter | Value | Source |
 | --- | --- |---|
-| Format | FatturaPA XML (Italian schema, not the European standard EN 16931) |  |
-| Schema files | VFPR12 (ordinary) and VFSM10 (simplified) |  |
 | Root element | `FatturaElettronica` (ordinary) or `FatturaElettronicaSemplificata` (simplified) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
 | Versioning attribute | `versione="FPR12"` (to private parties) or `versione="FPA12"` (to a public administration); simplified invoice `FSM10` | same |
 | Encoding | UTF-8 | same |
@@ -88,7 +129,7 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 | File name | Country code, sender's fiscal ID, underscore, unique progressive of up to 5 characters: `IT01234567890_00001.xml` | same |
 | Signature | Optional: CAdES or XAdES Baseline B (qualified certificate), or CAdES with the Agenzia's certificate | same |
 
-### XML Structure
+#### XML Structure
 
 Three top-level parts, in this order (schema VFPR12):
 
@@ -96,7 +137,7 @@ Three top-level parts, in this order (schema VFPR12):
 2. **FatturaElettronicaBody** (repeatable for batches): `DatiGenerali`, `DatiBeniServizi` (lines and VAT summary), then optional `DatiVeicoli`, `DatiPagamento`, `Allegati`.
 3. **ds:Signature** (optional).
 
-### Document Types (TipoDocumento)
+#### Document Types (TipoDocumento)
 
 **Document Types (TipoDocumento)**, field 2.1.1.1, as listed in specifications 1.9.1:
 
@@ -124,9 +165,9 @@ Three top-level parts, in this order (schema VFPR12):
 | TD28 | Purchases from San Marino with VAT (paper invoice) |
 | TD29 | Buyer's report of omitted or irregular invoicing (art. 6(8) D.Lgs. 471/97) |
 
-The simplified invoice may not exceed the Section 7 limit, except for a forfettario or the EU cross-border franchise (RF20).
+The simplified invoice may not exceed the section "Tax Computation Rules" limit, except for a forfettario or the EU cross-border franchise (RF20).
 
-### Nature codes (Natura)
+#### Nature codes (Natura)
 
 Required with a zero VAT rate (fields 2.2.1.14 and 2.2.2.2). Bare N2, N3 and N6 are no longer valid.
 
@@ -141,13 +182,13 @@ Required with a zero VAT rate (fields 2.2.1.14 and 2.2.2.2). Bare N2, N3 and N6 
 | N6.1 to N6.9 | Reverse charge: scrap (6.1); gold and silver (6.2); construction subcontracting (6.3); buildings (6.4); mobile phones (6.5); electronics (6.6); construction and related services (6.7); energy (6.8); other (6.9) |
 | N7 | VAT paid in another EU state (telecoms, broadcasting, electronic services) |
 
-### Tax regime codes (RegimeFiscale)
+#### Tax regime codes (RegimeFiscale)
 
 RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agriculture, travel agencies, second-hand goods, VAT for cash, others); RF19 forfettario; RF20 EU cross-border VAT franchise (Directive 2020/285); no RF03.
 
-## Section 4: Mandatory Fields
+### Mandatory Fields
 
-### Header Fields (FatturaElettronicaHeader)
+#### Header Fields (FatturaElettronicaHeader)
 
 **Header Fields (FatturaElettronicaHeader)**
 
@@ -163,7 +204,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 | `CedentePrestatore/Sede`, `CessionarioCommittente/Sede` | Seller and buyer addresses | Yes |
 | `CessionarioCommittente/DatiAnagrafici` (1.4.1) | Buyer VAT number (1.4.1.1) or codice fiscale (1.4.1.2) | Yes |
 
-### Body Fields (FatturaElettronicaBody)
+#### Body Fields (FatturaElettronicaBody)
 
 **Body Fields (FatturaElettronicaBody)**. `DGD` stands for `DatiGenerali/DatiGeneraliDocumento`; `DettaglioLinee` and `DatiRiepilogo` sit under `DatiBeniServizi`.
 
@@ -174,7 +215,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 | `DGD/Data` (2.1.1.3) | Invoice date (YYYY-MM-DD) | Yes |
 | `DGD/Numero` (2.1.1.4) | Invoice number, up to 20 characters | Yes |
 | `DGD/DatiRitenuta` (2.1.1.5) | Withholding (RT01 to RT06) | If a line is subject to withholding |
-| `DGD/DatiBollo/BolloVirtuale` | "SI" when stamp duty is due (Section 7) | When stamp duty applies |
+| `DGD/DatiBollo/BolloVirtuale` | "SI" when stamp duty is due (section "Tax Computation Rules") | When stamp duty applies |
 | `DettaglioLinee/NumeroLinea`, `Descrizione`, `PrezzoUnitario` | Line number, description, unit price | Yes |
 | `DettaglioLinee/PrezzoTotale` (2.2.1.11) | Line total | Yes |
 | `DettaglioLinee/AliquotaIVA` (2.2.1.12) | VAT rate, written as a percentage (10.00, not 0.10) | Yes |
@@ -185,9 +226,9 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 | `DatiRiepilogo/EsigibilitaIVA` (2.2.2.7) | I immediate, D deferred, S split payment | No (optional in the schema) |
 | `DatiPagamento/CondizioniPagamento`, `DettaglioPagamento/ModalitaPagamento`, `ImportoPagamento` | Payment terms, method, amount | If block used |
 
-## Section 5: Transmission Method
+### Transmission Method
 
-### SDI Channels
+#### SDI Channels
 
 **SDI Channels**
 
@@ -198,7 +239,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 | PEC | Posta Elettronica Certificata | Low volume |
 | "Fatture e Corrispettivi" | Agenzia portal, free | Manual submission |
 
-### Routing
+#### Routing
 
 - **CodiceDestinatario**: a 7-character code the SdI gives to a subject with an accredited receiving channel (B2B).
 - **`0000000`**: buyer receives by PEC (put it in `PECDestinatario`), channel unknown, or consumer.
@@ -207,7 +248,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 - `PECDestinatario` is used only if no channel is registered for the buyer's VAT number.
 - **Delivery failure.** The SdI sends a receipt of impossible delivery and places the invoice in the buyer's reserved area: issued for the seller, received by the buyer only when viewed. Tell the buyer.
 
-### Submission Deadlines
+#### Submission Deadlines
 
 **Submission Deadlines**
 
@@ -220,7 +261,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 | Cross-border data, sales to non-established parties | Within the time limits for issuing the invoice | [art. 1(3-bis) D.Lgs. 127/2015](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30) |
 | Cross-border data, purchases (TD17 to TD19) | By the fifteenth day of the month after receipt of the document or the operation | art. 1(3-bis)(b) |
 
-### Cross-border reporting (former esterometro)
+#### Cross-border reporting (former esterometro)
 
 | Item | Rule | Note |
 | --- | --- | --- |
@@ -232,7 +273,7 @@ RF01 ordinary; RF02 contribuenti minimi; RF04 to RF18 special regimes (agricultu
 
 The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 
-### SDI Processing Flow
+#### SDI Processing Flow
 
 1. Sender transmits the XML file (signed or unsigned) to the SdI.
 2. The SdI checks the file name, size, signature (if any), format and content.
@@ -240,9 +281,9 @@ The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 4. If invalid, the SdI sends a rejection receipt (ricevuta di scarto, NS) within 5 days of receiving the file.
 5. A rejected invoice is treated as never issued. Correct the error and resend, reusing the rejected invoice's date and number, with a new file name unless using the portal's web procedure.
 
-## Section 6: Validation Rules
+### Validation Rules
 
-### SDI Pre-Checks (Automated)
+#### SDI Pre-Checks (Automated)
 
 **SDI Pre-Checks (Automated)**
 
@@ -259,9 +300,9 @@ The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 | VAT amount | 00421 | `Imposta` differs from rate times taxable amount by more than one euro cent |
 | Taxable amount | 00422 | `ImponibileImporto` off the sum of lines by more than one euro |
 | Duplicate detection | 00404, 00409 | Already processed; duplicate in the batch |
-| Simplified invoice total | 00460 | Total above the simplified-invoice limit (Section 7) |
+| Simplified invoice total | 00460 | Total above the simplified-invoice limit (section "Tax Computation Rules") |
 
-### Common Rejection Reasons
+#### Common Rejection Reasons
 
 **Common Rejection Reasons**
 
@@ -272,9 +313,9 @@ The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 | Missing Natura code | Use a sub-code (N2.1, N3.2, N6.3 and so on), not the retired N2, N3 or N6 |
 | Expired digital certificate | Renew the certificate, or send unsigned |
 
-## Section 7: Tax Computation Rules
+### Tax Computation Rules
 
-### VAT Rates (2025/2026)
+#### VAT Rates (2025/2026)
 
 **VAT Rates (2025/2026)**
 
@@ -288,28 +329,28 @@ The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 
 For a line with no VAT, the rate field is set to "0%" with a nature code; for a forfettario the nature is "Non soggette - altri casi" (N2.2) ([forfettari page](https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari)).
 
-### Simplified invoice limit
+#### Simplified invoice limit
 
 | Item | Amount | Note | Source |
 | --- | --- | --- |---|
 | Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |  |
 | Maximum total of a simplified invoice (TD07), error 00460 | EUR 400 | "non può eccedere il limite di euro 400"; no limit for forfettari and RF20 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
 
-### Rounding
+#### Rounding
 
 - **Line level**: `PrezzoTotale` = (`PrezzoUnitario` plus or minus discounts) times `Quantita` (error 00423).
 - **Summary level**: `Imposta` = `ImponibileImporto` times `AliquotaIVA` / 100, rounded half up to two decimals.
 - **SdI tolerance**: one euro cent on `Imposta` (error 00421) and one euro on `ImponibileImporto` (error 00422).
 
-### Multi-Rate Invoices
+#### Multi-Rate Invoices
 
 Each VAT rate and each nature code needs its own `DatiRiepilogo` block. `Natura` is required with a zero rate and forbidden otherwise, except in a TD16.
 
-### Split Payment (Scissione dei Pagamenti)
+#### Split Payment (Scissione dei Pagamenti)
 
 - **Split Payment rule**: for public administrations and other designated buyers, the buyer pays the VAT to the Treasury. Set `EsigibilitaIVA` to S; not allowed with an N6 nature code.
 
-### Stamp duty (imposta di bollo) on e-invoices
+#### Stamp duty (imposta di bollo) on e-invoices
 
 | Item | Amount or rule | Note | Source |
 | --- | --- | --- |---|
@@ -325,7 +366,7 @@ Each VAT rate and each nature code needs its own `DatiRiepilogo` block. `Natura`
 | Late or short payment | PEC notice: stamp, penalty cut to one third, interest | Reply within thirty days | same |
 | Review | A stamp charged in error can be removed after a successful request for review (riesame); see the lists of excluded invoices in the portal | June 2026 guide | same |
 
-## Section 8: Archiving Requirements
+### Archiving Requirements
 
 **Archiving Requirements**
 
@@ -338,7 +379,7 @@ Each VAT rate and each nature code needs its own `DatiRiepilogo` block. `Natura`
 | Free AdE service | Free storage of e-invoices issued and received, in "Fatture e Corrispettivi", after accepting the service agreement; past SdI invoices addable back to 1 January of the second year before joining ([free storage service](https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica)) |
 | Audit access | Tax authorities may ask for the stored invoices at any time |
 
-## Section 9: Penalties for Non-Compliance
+### Penalties for Non-Compliance
 
 **Penalties for Non-Compliance**
 
@@ -351,7 +392,7 @@ Each VAT rate and each nature code needs its own `DatiRiepilogo` block. `Natura`
 | Buyer who does not report a missing or irregular invoice within ninety days, by TD29 (art. 6(8)) | Seventy per cent of the VAT, minimum EUR 250 | "con un minimo di euro 250" |
 | Buyer who skips reverse-charge steps, TD16 to TD19 (art. 6(9-bis)) | EUR 500 to EUR 10,000 | "compresa fra 500 euro e 10.000 euro" |
 | Same, when the operation is not in the buyer's books | Five per cent of the taxable amount, minimum EUR 1,000 | "con un minimo di 1.000 euro" |
-| Rejected invoice not re-sent | Never issued; penalties above apply | Section 5 |
+| Rejected invoice not re-sent | Never issued; penalties above apply | section "Transmission Method" |
 | Reduced penalty (ravvedimento operoso) | Available; fractions not restated | Refer |
 
 These rates apply to violations from 1 September 2024 (D.Lgs. 87/2024, art. 5); earlier violations follow the text then in force.
@@ -361,43 +402,69 @@ These rates apply to violations from 1 September 2024 (D.Lgs. 87/2024, art. 5); 
 | Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 |
 | Cross-border data omitted or wrong, operations from 1 July 2022 (art. 11(2-quater)) | EUR 2 per invoice, up to EUR 400 a month | "euro 2 per ciascuna fattura, entro il limite massimo di euro 400 mensili" |
 | Same, corrected within fifteen days of the deadline | Halved, up to EUR 200 a month | "limite massimo di euro 200 per ciascun mese" |
-| Stamp duty paid late or short | Art. 13(1) D.Lgs. 471/1997, cut to one third on the Agenzia's notice | Section 7 |
+| Stamp duty paid late or short | Art. 13(1) D.Lgs. 471/1997, cut to one third on the Agenzia's notice | section "Tax Computation Rules" |
 
-## Section 10: Interaction with other Guides
+### Interaction with other Guides
 
-### VAT Return Integration
+#### VAT Return Integration
 
 - SdI invoices appear in the taxpayer's "Fatture e Corrispettivi" area.
 - For operators in the group set by the provvedimento of 8 July 2021, the Agenzia drafts VAT registers, settlements and the annual return from SdI data. See `italy-vat-return`.
 - Gaps between SdI data and VAT returns can trigger compliance letters.
 
-### Income Tax Integration
+#### Income Tax Integration
 
 - SdI invoices are the record of a self-employed person's revenue, which also drives the forfettario limits. See `it-income-tax` and `italy-bookkeeping`.
 
-### Withholding Tax
+#### Withholding Tax
 
 - `DatiRitenuta` records withholding (ritenuta d'acconto) on fees: RT01 natural persons, RT02 legal persons, RT03 to RT06 social security contributions. Amounts flow to the CU and Modello 770 (see `italy-payroll`).
 - A forfettario professional adds a causale that the fee is not subject to withholding under art. 1(67) L. 190/2014 ([forfettari page](https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari)).
 
-## The method, step by step
+## Worked cases
 
-1. **Check the SdI duty.** Both parties resident or established in Italy: yes (art. 1(3) D.Lgs. 127/2015). Forfettari, minimi and L. 398/1991 associations are in (art. 18 D.L. 36/2022). Health services to natural persons are out (art. 10-bis D.L. 119/2018). Foreign counterparty: go to step 6.
-2. **Fix the deadline.** Immediate invoice within twelve days of the operation; deferred invoice (TD24) by the 15th of the next month (art. 21 D.P.R. 633/1972, Section 5 table).
-3. **Build the XML.** Take document type, regime and nature sub-codes from the technical specifications 1.9.1 (Sources). Check the totals against the tolerances in Section 7.
-4. **Route it.** Buyer's 7-character code, or `0000000` with or without PEC (Section 5).
-5. **Apply stamp duty.** If the invoice carries non-VAT lines (N2.1, N2.2, N3.5, N3.6, N4) above the limit in the stamp duty table, set `BolloVirtuale` to SI and pay by quarter (Section 7).
-6. **Report cross-border operations.** Sales: `XXXXXXX` invoice within the issue deadline. Purchases: TD17, TD18, TD19 or TD28 by the fifteenth day of the following month (art. 1(3-bis) D.Lgs. 127/2015).
-7. **Watch the receipt.** RC or MC: issued. NS: correct and re-send. Store the file (Section 8, free storage service).
+### Case 1: a forfettario's invoice, stamp duty and the quarterly payment
 
-## Ask the client first
+Facts. Giulia, a forfettario graphic designer, invoices an Italian company EUR 1,000 for a logo on 3 February 2026. The line carries nature N2.2 (no VAT, forfettario). In the first quarter she issues 30 such invoices, all above EUR 77.47.
 
-- Is the customer an Italian business, a consumer, a public administration or foreign? Routing and reporting depend on it.
-- Are you a forfettario, and was your prior-year revenue above the limit in the Section 2 table? That sets when your duty began.
-- Do you provide health services to individuals, or send data to the Sistema tessera sanitaria? Those invoices must not go through the SdI.
-- Do your invoices include exempt, non-taxable or out-of-scope lines? Stamp duty may be due.
-- Do goods travel with a transport document (DDT)? A deferred invoice may be possible.
-- Did a supplier fail to invoice you, or send a wrong invoice? You have ninety days to report it by TD29.
+Steps. She sends the XML (TD01) through "Fatture e Corrispettivi" within 12 days, by 15 February 2026, to the buyer's 7-character code. The invoice has no VAT and is above EUR 77.47, so she sets `BolloVirtuale` to SI and adds the EUR 2 stamp to the document total, EUR 1,002. The causale says the fee is not subject to withholding under art. 1(67) L. 190/2014. Her first-quarter stamp duty is 30 x EUR 2 = EUR 60; that is not above EUR 5,000, so she may pay it by 30 September 2026 with the second quarter instead of 31 May.
+
+```oa-check
+name: Italy 2026, forfettario invoice with stamp duty and Q1 stamp total
+inputs:
+  fee: 1000
+  stamp: 2
+  invoices_q1: 30
+  small_amount_limit: 5000
+steps:
+  - document_total: fee + stamp
+  - stamp_q1: invoices_q1 * stamp
+  - headroom_small_amount: small_amount_limit - stamp_q1
+expected:
+  document_total: 1002.00
+  stamp_q1: 60.00
+  headroom_small_amount: 4940.00
+```
+
+### Case 2: cross-border data left out for one month
+
+Facts. Beta S.r.l. forgot to send 300 TD17 self-invoices for services bought from foreign suppliers in March 2026, and corrects it two months later.
+
+Working. The penalty is EUR 2 per invoice, capped at EUR 400 for the month: 300 x EUR 2 = EUR 600, so EUR 400 (D.Lgs. 471/1997 art. 11(2-quater)). Had it corrected within 15 days of the deadline, the cap would have been EUR 200.
+
+```oa-check
+name: Italy 2026, cross-border data penalty cap for one month
+inputs:
+  invoices: 300
+  per_invoice: 2
+  monthly_cap: 400
+steps:
+  - uncapped: invoices * per_invoice
+  - penalty: min(uncapped, monthly_cap)
+expected:
+  uncapped: 600.00
+  penalty: 400.00
+```
 
 ## When to refuse or refer
 
@@ -410,19 +477,24 @@ These rates apply to violations from 1 September 2024 (D.Lgs. 87/2024, art. 5); 
 
 ## Sources
 
-- Agenzia: technical specifications 1.9.1: https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 (read 2026-10-31)
-- Agenzia: specification versions: https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new (read 2026-10-31)
-- Agenzia: e-invoice guide (December 2025): https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica (read 2026-10-31)
-- Agenzia: compilation guide 1.10: https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025 (read 2026-10-31)
-- Agenzia: e-invoices for forfettari: https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari (read 2026-10-31)
-- Agenzia: stamp duty guide (June 2026): https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 (read 2026-10-31)
-- Agenzia: VAT rates: https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote (read 2026-10-31)
-- Agenzia: free storage service: https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica (read 2026-10-31)
-- D.Lgs. 127/2015, art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 (read 2026-10-31)
-- D.P.R. 633/1972, art. 21: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30 (read 2026-10-31)
-- D.L. 36/2022, art. 18: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30 (read 2026-10-31)
-- D.L. 119/2018, art. 10-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30 (read 2026-10-31)
-- D.Lgs. 471/1997, art. 6 and art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 (read 2026-10-31)
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Agenzia: technical specifications 1.9.1. Read for the XML schema, document types, nature codes and the EUR 400 TD07 limit | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 | 2026-11-14 |
+| Agenzia: specification versions. Read for version 1.9.1 being usable from 15 May 2026 | https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new | 2026-11-14 |
+| Agenzia: e-invoice guide (December 2025). Read for the B2G and B2B start dates and the portal | https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica | 2026-11-14 |
+| Agenzia: compilation guide 1.10. Read for TD16 to TD29 and cross-border reporting | https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025 | 2026-11-14 |
+| Agenzia: e-invoices for forfettari. Read for the forfettari duty, the N2.2 code and the EUR 2 stamp | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari | 2026-11-14 |
+| Agenzia: stamp duty guide (June 2026). Read for the EUR 77.47 trigger, quarterly payment dates and the EUR 5,000 small-amount rule | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 | 2026-11-14 |
+| Agenzia: VAT rates. Read for the 22%, 10%, 5% and 4% rates | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote | 2026-11-14 |
+| Agenzia: free storage service. Read for the free storage service | https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica | 2026-11-14 |
+| D.Lgs. 127/2015, art. 1. Read for who must use the SdI and the EUR 5,000 cross-border purchase exclusion | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 | 2026-11-14 |
+| D.P.R. 633/1972, art. 21. Read for the 12-day and 15th-of-next-month deadlines | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30 | 2026-11-14 |
+| D.L. 36/2022, art. 18. Read for forfettari in the SdI from 1 July 2022 above EUR 25,000 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30 | 2026-11-14 |
+| D.L. 119/2018, art. 10-bis. Read for the health services exclusion | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30 | 2026-11-14 |
+| D.Lgs. 471/1997, art. 6. Read for penalties for invoices not issued (70%, EUR 250 to 2,000, 5%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 | 2026-11-14 |
+| D.Lgs. 471/1997, art. 11. Read for the EUR 2 and EUR 400 cross-border data penalty | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 | 2026-11-14 |
 
 Not yet confirmed: that FatturaPA is not EN 16931; the schema file names VFPR12 and VFSM10 (not in the specifications 1.9.1 text).
 
