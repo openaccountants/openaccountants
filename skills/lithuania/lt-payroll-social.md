@@ -198,10 +198,10 @@ expected:
 | Law on Personal Income Tax No. IX-1007, consolidated version from 11 June 2026: art. 6, 18-2, 20, 23, 27 | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-10-24 |
 | VMI order VA-121 (GPM313 form and filing rules), consolidated version from 21 November 2025 | https://www.e-tar.lt/portal/lt/legalAct/75345220e61e11e7acd7ea182930b17f/asr | 2026-10-24 |
 | Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 139 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
-| Sodra, contribution rates for employees, 2026 | https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-uz-samdomus-darbuotojus | 2026-10-24 |
-| Sodra, contribution rates for the self-employed, 2026 | https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-savarankiskai-dirbantiems-asmenims | 2026-10-24 |
-| Sodra, individual activity: bases, cap, PSD, payment dates | https://sodra.lt/imokos/vykdau-individualia-veikla | 2026-10-24 |
-| Sodra, employers: SAM report, VSD ceiling | https://sodra.lt/imokos/idarbinimas-pranesimai-imokos-ir-tarifai?kam=draudejams | 2026-10-24 |
+| Sodra, contribution rates for employees, 2026 (not reopened 14 Nov 2026: sodra.lt refuses scripted reads) | https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-uz-samdomus-darbuotojus | 2026-10-24 |
+| Sodra, contribution rates for the self-employed, 2026 (not reopened 14 Nov 2026: sodra.lt refuses scripted reads) | https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-savarankiskai-dirbantiems-asmenims | 2026-10-24 |
+| Sodra, individual activity: bases, cap, PSD, payment dates (not reopened 14 Nov 2026: sodra.lt refuses scripted reads) | https://sodra.lt/imokos/vykdau-individualia-veikla | 2026-10-24 |
+| Sodra, employers: SAM report, VSD ceiling (not reopened 14 Nov 2026: sodra.lt refuses scripted reads) | https://sodra.lt/imokos/idarbinimas-pranesimai-imokos-ir-tarifai?kam=draudejams | 2026-10-24 |
 | VMI, commentary on the Personal Income Tax Law (version of 19 October 2026), art. 20 | https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+%28aktuali+redakcija+2026-10-19%29+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1792476568043 | 2026-10-24 |
 | VMI, late payment interest, answer KM2633 | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
