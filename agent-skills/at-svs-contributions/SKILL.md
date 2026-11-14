@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/at-svs-contributions"
   jurisdiction: "AT"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
 # SVS social insurance for the self-employed in Austria (GSVG and FSVG, 2026)
@@ -30,22 +30,22 @@ metadata:
 |---|---|---|---|
 | Pension insurance, GSVG (paid by the insured; the Bund adds 4.3%) | 18.5% of the base | 2026 | GSVG § 27 Abs 2, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422 |
 | Pension insurance, FSVG | 20% of the base | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal |
-| Health insurance (paid by the insured; the Bund adds 0.85%) | 6.8% of the base | 2026 | GSVG § 27 Abs 1a, RIS link above |
+| Health insurance (paid by the insured; the Bund adds 0.85%) | 6.8% of the base | 2026 | GSVG § 27 Abs 1a: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422&Paragraf=27 |
 | Accident insurance, fixed per month | EUR 12.95 | 2026 | ASVG § 74 Abs 1 Z 1 with BGBl. II Nr. 263/2025, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 |
 | Selbständigenvorsorge, share of the provisional health base | 1.53% | 2026 | BMSVG § 52 Abs 1, https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html |
 | Minimum base per month (Mindestbeitragsgrundlage, GSVG § 25 Abs 4 links it to ASVG § 5 Abs 2) | EUR 551.10 | 2026 | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
 | Maximum base per month (GSVG § 25 Abs 5) | EUR 8,085.00 | 2026 | same SVS contribution sheet |
 | Maximum base per year | EUR 97,020.00 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal |
 | Minimum base per year of full insurance | EUR 6,613.20 | 2026 | same SVS page |
-| Pension at the minimum and maximum base, GSVG | EUR 101.95 / EUR 1,495.73 a month | 2026 | SVS contribution sheet |
-| Pension at the minimum and maximum base, FSVG | EUR 110.22 / EUR 1,617.00 a month | 2026 | SVS contribution sheet |
-| Health at the minimum and maximum base | EUR 37.48 / EUR 549.79 a month | 2026 | SVS contribution sheet |
+| Pension at the minimum and maximum base, GSVG | EUR 101.95 / EUR 1,495.73 a month | 2026 | SVS contribution sheet: https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
+| Pension at the minimum and maximum base, FSVG | EUR 110.22 / EUR 1,617.00 a month | 2026 | SVS contribution sheet: https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
+| Health at the minimum and maximum base | EUR 37.48 / EUR 549.79 a month | 2026 | SVS contribution sheet: https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
 | Revaluation factor for 2023 income used for 2026 provisional bases (Aufwertungszahlen 2024 1.035 x 2025 1.063 x 2026 1.073) | 1.181 | 2026 | GSVG § 25a Abs 1 Z 2; ASVG § 108a with BGBl. II Nr. 263/2025; https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal |
 | Versicherungsgrenze, Neue Selbständige, per year | EUR 6,613.20 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
 | Small business exemption: income limit per year (twelve times the minimum base) | EUR 6,613.20 | 2026 | GSVG § 4 Abs 1 Z 7; https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal |
 | Small business exemption: turnover limit from all business (UStG § 6 Abs 1 Z 27 limit) | EUR 55,000.00 | 2026 | same |
 | Surcharge when insurance is found later from the tax assessment | 9.3% of pension and health contributions | 2026 | GSVG § 35; https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
-| Health contribution credit (Gutschrift): monthly health base on 31 May at most | EUR 2,900.00 | 2026 | GSVG § 27f |
+| Health contribution credit (Gutschrift): monthly health base on 31 May at most | EUR 2,900.00 | 2026 | GSVG § 27f: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422&Paragraf=27f |
 | Zusatzversicherung (Krankengeld), share of the provisional health base | 2.5%, at least EUR 30.77, at most EUR 202.13 a month | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal |
 | Krankengeld from the Zusatzversicherung | 60% of the daily base, at least EUR 11.02 a day | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal |
 | Unterstützungsleistung (no opt-in needed), per day | EUR 40.04 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal |
@@ -202,4 +202,4 @@ Not yet confirmed: the Selbständigenvorsorge scope for opted-in and pension-onl
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `at-svs-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/at-svs-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `at-svs-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/at-svs-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

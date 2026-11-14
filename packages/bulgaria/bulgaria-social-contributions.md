@@ -1,10 +1,11 @@
 ---
 name: bulgaria-social-contributions
 description: "Bulgarian social and health insurance contributions for tax year 2026, in euro. Covers the state social insurance funds (pension, general illness and maternity, unemployment, work accident), the universal pension fund (second pillar) and health insurance; the employer and employee split by fund and by year of birth; the minimum and maximum insurable income for 2026 (two periods, to 31 July and from 1 August); and the self-insured (freelancers, sole traders, working owners): monthly advance contributions, the optional illness and maternity cover, and the annual reconciliation with Declaration 6 by 30 April. Also covers payment dates (25th), Declarations 1 and 6 and penalties. Lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria social security, осигуровки, самоосигуряващо се лице, МОД, максимален осигурителен доход, Декларация образец 6, УПФ. Out of scope: monthly gross-to-net and wage tax (bulgaria-payroll), income tax (bulgaria-income-tax), A1 certificates and treaties (bg-cross-border)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: BG
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -31,22 +32,22 @@ Contribution year: the calendar year. The National Revenue Agency (NRA, НАП) 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Pension, born after 31 Dec 1959 | 14.8% (employee: employer 8.22%, employee 6.58%) | 2026 | KSO art. 6(1)(2)(a), (1)(4), (3)(9), [lex.bg](https://lex.bg/laws/ldoc/1597824512) |
-| Pension, born before 1 Jan 1960 | 19.8% (employee: employer 11.02%, employee 8.78%) | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8) |
-| Universal pension fund (UPF), born after 31 Dec 1959 | 5% (employee: employer 2.8%, employee 2.2%); self-insured pay all 5% | 2026 | KSO art. 157(1)(1)(c), (3), (5) |
-| General illness and maternity | 3.5%, split 60:40 (2.1% / 1.4%); optional for the self-insured | 2026 | KSO arts. 4(4), 6(1)(5), (3)(7) |
-| Unemployment | 1%, split 60:40 (0.6% / 0.4%); employees only | 2026 | KSO art. 6(1)(6), (3)(7) |
+| Pension, born before 1 Jan 1960 | 19.8% (employee: employer 11.02%, employee 8.78%) | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8), https://lex.bg/laws/ldoc/1597824512 |
+| Universal pension fund (UPF), born after 31 Dec 1959 | 5% (employee: employer 2.8%, employee 2.2%); self-insured pay all 5% | 2026 | KSO art. 157(1)(1)(c), (3), (5), https://lex.bg/laws/ldoc/1597824512 |
+| General illness and maternity | 3.5%, split 60:40 (2.1% / 1.4%); optional for the self-insured | 2026 | KSO arts. 4(4), 6(1)(5), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
+| Unemployment | 1%, split 60:40 (0.6% / 0.4%); employees only | 2026 | KSO art. 6(1)(6), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
 | Work accident and occupational disease | 0.4% to 1.1% by activity, employer only | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2, 2A, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
-| Health insurance | 8%, split 60:40 for employees (4.8% / 3.2%); self-insured pay all 8% | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), (2), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
-| Self-insured total, without illness and maternity | 27.8% (pension 14.8 + UPF 5 + health 8; or pension 19.8 + health 8 if born before 1960) | 2026 | KSO arts. 6(3)(8)(a), (9)(a), (1)(4), 157(5); ZZO art. 40(1)(2) |
-| Self-insured total, with illness and maternity | 31.3% | 2026 | As above plus KSO art. 6(1)(5) |
-| Minimum monthly insurable income, self-insured, 1 Jan to 31 Jul | EUR 550.66 (BGN 1,077) | 2026 | ZBDOO 2026 art. 9(1)(b) |
-| Minimum monthly insurable income, self-insured, 1 Aug to 31 Dec | EUR 620.20 | 2026 | ZBDOO 2026 art. 9(2)(b) |
-| Maximum monthly insurable income, all insured, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130) | 2026 | ZBDOO 2026 art. 9(1)(c) |
-| Maximum monthly insurable income, all insured, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c) |
-| Minimum insurable income for employees by activity and job group | EUR 550.66 to EUR 901.41 (to 31 Jul); EUR 620.20 to EUR 1,532.00 (from 1 Aug) | 2026 | ZBDOO 2026 art. 9, Appendices 1, 1A |
+| Health insurance | 8%, split 60:40 for employees (computed: 4.8% / 3.2%); self-insured pay all 8% | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), (2), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
+| Self-insured total, without illness and maternity | 27.8% (computed: pension 14.8 + UPF 5 + health 8; or pension 19.8 + health 8 if born before 1960) | 2026 | KSO arts. 6(3)(8)(a), (9)(a), (1)(4), 157(5); ZZO art. 40(1)(2), https://lex.bg/laws/ldoc/1597824512 |
+| Self-insured total, with illness and maternity | 31.3% | 2026 | As above plus KSO art. 6(1)(5), https://lex.bg/laws/ldoc/1597824512 |
+| Minimum monthly insurable income, self-insured, 1 Jan to 31 Jul | EUR 550.66 (BGN 1,077, computed at the fixed rate 1.95583) | 2026 | ZBDOO 2026 art. 9(1)(b), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum monthly insurable income, self-insured, 1 Aug to 31 Dec | EUR 620.20 | 2026 | ZBDOO 2026 art. 9(2)(b), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Maximum monthly insurable income, all insured, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130, computed at the fixed rate 1.95583) | 2026 | ZBDOO 2026 art. 9(1)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Maximum monthly insurable income, all insured, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum insurable income for employees by activity and job group | EUR 550.66 to EUR 901.41 (to 31 Jul); EUR 620.20 to EUR 1,532.00 (from 1 Aug) | 2026 | ZBDOO 2026 art. 9, Appendices 1, 1A, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Minimum monthly wage (floor where no activity minimum is set) | EUR 620.20 (BGN 1,213) | 2026 | Decree 243/2025, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961) |
-| Annual insurable income limits for a self-insured person active all year | Minimum EUR 6,955.62 (7 x 550.66 + 5 x 620.20); maximum EUR 26,281.48 (7 x 2,111.64 + 5 x 2,300) | 2026 | KSO art. 6(9); ZBDOO 2026 art. 9 |
-| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1) |
+| Annual insurable income limits for a self-insured person active all year | Minimum EUR 6,955.62 (computed: 7 x 550.66 + 5 x 620.20); maximum EUR 26,281.48 (7 x 2,111.64 + 5 x 2,300) | 2026 | KSO art. 6(9); ZBDOO 2026 art. 9, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 
 Employee totals: employee 13.78%, employer 18.52% plus 0.4% to 1.1% work accident. The same totals apply to both birth cohorts.
 

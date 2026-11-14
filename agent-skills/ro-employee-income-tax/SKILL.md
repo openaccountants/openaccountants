@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-employee-income-tax"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Romania: income tax for employees and other personal income (2026)
@@ -31,27 +31,27 @@ This skill covers a person whose income is a salary, a pension, rent from their 
 | Employee CASS (health) | 10% of gross salary | 2026 | same, art. 156 |
 | National gross minimum wage, 1 January to 30 June 2026 | RON 4,050 a month | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf (HG 1506/2024 art. 1) |
 | National gross minimum wage, from 1 July 2026 | RON 4,325 a month | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf (HG 146/2026 art. 1) |
-| Basic personal deduction, salary up to the minimum wage | 20% of the minimum wage (no dependants), 25% (1), 30% (2), 35% (3), 45% (4 or more) | 2026 | Fiscal Code art. 77 alin. (4) |
+| Basic personal deduction, salary up to the minimum wage | 20% of the minimum wage (no dependants), 25% (1), 30% (2), 35% (3), 45% (4 or more) | 2026 | Fiscal Code art. 77 alin. (4), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Basic personal deduction, salary above the minimum wage | Falls by 0.5 points for each RON 50 band above the minimum wage; nil above minimum wage + RON 2,000 | 2026 | same, art. 77 alin. (3)-(4) |
 | Extra deduction, employee aged up to 26 | 15% of the minimum wage, if salary is at most minimum wage + RON 2,000 | 2026 | same, art. 77 alin. (10) lit. a) |
 | Extra deduction per child under 18 enrolled in school | RON 100 a month, to one parent, any salary level | 2026 | same, art. 77 alin. (10) lit. b) |
 | Dependant's own income limit | 20% of the minimum wage a month | 2026 | same, art. 77 alin. (5) |
 | Tax-free and contribution-free amount, minimum-wage staff, January to June 2026 | RON 300 a month, if base salary equals the minimum wage and gross salary is at most RON 4,300 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf (OUG 89/2025 art. III) |
 | Same, July to December 2026 | RON 200 a month, gross salary at most RON 4,600 | 2026 | same |
-| Employee pension pillar III, health insurance, ETF purchases | Each deductible up to EUR 400 a year | 2026 | Fiscal Code art. 78 alin. (2) lit. a) (iii), (iv), (vi) |
+| Employee pension pillar III, health insurance, ETF purchases | Each deductible up to EUR 400 a year | 2026 | Fiscal Code art. 78 alin. (2) lit. a) (iii), (iv), (vi), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Sports subscription | Deductible up to EUR 100 a year | 2026 | same, (v) |
 | Dividends (distributed from 1 January 2026) | 16%, final, withheld by the company; 10% on dividends distributed on 2025 interim financial statements | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf (art. II pct. 5, art. VII alin. (1) lit. c) and alin. (2)); Fiscal Code art. 97 alin. (7) |
-| Interest on deposits, savings and civil loans | 10%, final, withheld by the payer | 2026 | Fiscal Code art. 97 alin. (1)-(2) |
+| Interest on deposits, savings and civil loans | 10%, final, withheld by the payer | 2026 | Fiscal Code art. 97 alin. (1)-(2), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Gains on shares and derivatives through a Romanian broker, held 365 days or more | 3% of each gain, final | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf (art. XII pct. 12, art. XIII alin. (2) lit. c)) |
 | Same, held under 365 days | 6% of each gain, final | 2026 | same |
 | Net annual gain on shares not through a Romanian broker, and investment gold | 16%, declared in the Declarația unică | 2026 | same, art. XII pct. 16; Fiscal Code art. 123 alin. (1^2) |
-| Loss carry-forward on those gains | 70% of later net gains, 5 years | 2026 | Fiscal Code art. 119 alin. (2)-(3) |
-| Gains on virtual currency | 16%; gains under RON 200 per transaction are untaxed if the year's total is at most RON 600 | 2026 | L 239/2025 art. XII pct. 14 (Fiscal Code art. 116 alin. (2^1)) |
-| Rent from personal property | Flat 20% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 8; Fiscal Code art. 84 alin. (3) |
-| Short-term rental of 1 to 7 rooms in own homes | Flat 30% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 10 (Fiscal Code art. 85) |
-| Pensions | First RON 3,000 a month untaxed, 10% on the rest | 2026 | Fiscal Code art. 100 alin. (1), art. 101 alin. (2) |
-| CASS on non-salary income (rent, investments and similar) | 10% of 6, 12 or 24 minimum wages: RON 24,300, 48,600 or 97,200 | 2026 | Fiscal Code art. 170 alin. (2)-(4), art. 174^1; the minimum wage in force on 1 January of the income year (RON 4,050) applies for the whole year: art. 135^1 alin. (3) |
-| Declarația unică and payment | By 25 May 2027 for 2026 income | 2026 | Fiscal Code art. 122 alin. (3), art. 123 alin. (7) |
+| Loss carry-forward on those gains | 70% of later net gains, 5 years | 2026 | Fiscal Code art. 119 alin. (2)-(3), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Gains on virtual currency | 16%; gains under RON 200 per transaction are untaxed if the year's total is at most RON 600 | 2026 | L 239/2025 art. XII pct. 14 (Fiscal Code art. 116 alin. (2^1)), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Rent from personal property | Flat 20% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 8; Fiscal Code art. 84 alin. (3), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Short-term rental of 1 to 7 rooms in own homes | Flat 30% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 10 (Fiscal Code art. 85), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Pensions | First RON 3,000 a month untaxed, 10% on the rest | 2026 | Fiscal Code art. 100 alin. (1), art. 101 alin. (2), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS on non-salary income (rent, investments and similar) | 10% of 6, 12 or 24 minimum wages: RON 24,300, 48,600 or 97,200 (computed: multiples of the RON 4,050 minimum wage in force on 1 January 2026) | 2026 | Fiscal Code art. 170 alin. (2)-(4), art. 174^1; the minimum wage in force on 1 January of the income year (RON 4,050) applies for the whole year: art. 135^1 alin. (3), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Declarația unică and payment | By 25 May 2027 for 2026 income | 2026 | Fiscal Code art. 122 alin. (3), art. 123 alin. (7), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 
 ## The taxable base
 
@@ -210,19 +210,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026): art. 7, 60, 64, 66, 76-84^1, 97, 100-101, 116, 119, 121-123, 131, 135^1, 138, 156, 170, 174^1, 224 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text: art. 174-176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| OUG 89/2025, art. III (2026 tax-free amount for minimum-wage staff) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
-| Legea 239/2025, art. XII-XIII (broker gains 3%/6%, 16% on other gains and crypto, rent and short-term rental) | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf | 2026-10-23 |
-| Legea 141/2025, art. II pct. 5 and 41, art. VII (dividends 16% from 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
-| OUG 156/2024, art. LXIV pct. 7, art. LXV (repeal of the IT, construction and agriculture exemptions) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf | 2026-10-23 |
-| HG 1506/2024 (minimum wage RON 4,050) | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-10-23 |
-| HG 146/2026 (minimum wage RON 4,325 from 1 July 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-10-23 |
-| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026) | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-10-23 |
-| ANAF DGRFP Galați, the 2026 minimum tax-free amount (21 January 2026) | https://static.anaf.ro/static/3/Galati/20260123122801_suma%20neimpozabila%20in%202026.pdf | 2026-10-23 |
+| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026): art. 7, 60, 64, 66, 76-84^1, 97, 100-101, 116, 119, 121-123, 131, 135^1, 138, 156, 170, 174^1, 224 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 64, 77, 78, 84, 85, 97, 100, 116, 119, 122, 138, 156, 170 and 174^1: rates, deductions and CASS bases |
+| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text: art. 174-176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 174, 176 and 181: interest and penalty rates |
+| OUG 89/2025, art. III (2026 tax-free amount for minimum-wage staff) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-11-14, read for art. III: the RON 300 and RON 200 tax-free amounts |
+| Legea 239/2025, art. XII-XIII (broker gains 3%/6%, 16% on other gains and crypto, rent and short-term rental) | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf | 2026-11-14, read for art. XII and XIII: broker gains, crypto, rent and short-term rental |
+| Legea 141/2025, art. II pct. 5 and 41, art. VII (dividends 16% from 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-11-14, read for art. II and VII: dividends at 16% from 2026 |
+| OUG 156/2024, art. LXIV pct. 7, art. LXV (repeal of the IT, construction and agriculture exemptions) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf | 2026-11-14, read for art. LXIV and LXV: repeal of the sector exemptions |
+| HG 1506/2024 (minimum wage RON 4,050) | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,050 |
+| HG 146/2026 (minimum wage RON 4,325 from 1 July 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,325 from 1 July 2026 |
+| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026) | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-11-14, read for the 2026 changes to salary and investment income |
+| ANAF DGRFP Galați, the 2026 minimum tax-free amount (21 January 2026) | https://static.anaf.ro/static/3/Galati/20260123122801_suma%20neimpozabila%20in%202026.pdf | 2026-11-14, read for the 2026 tax-free amount for minimum-wage staff |
 
 Not yet confirmed: the early-payment discount under art. 121 for tax paid in 2027 is not set yet. The construction-sector minimum wage for 2026 was not checked. CASS on pensions above RON 3,000 is not covered. Whether payroll reads the personal deduction band from gross salary including the RON 300 or 200 tax-free amount: OUG 89/2025 and the ANAF notes are silent and no ANAF example was found.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

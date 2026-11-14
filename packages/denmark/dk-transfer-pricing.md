@@ -1,17 +1,18 @@
 ---
 name: dk-transfer-pricing
 description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (denmark-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Denmark: transfer pricing (armslængdeprincippet) v0.2
+# Denmark: transfer pricing (armslængdeprincippet) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Denmark.
 

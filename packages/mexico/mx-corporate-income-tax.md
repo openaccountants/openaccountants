@@ -6,8 +6,9 @@ jurisdiction: MX
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-05
-version: 0.5
+last_updated: 2026-11-14
+version: 0.6
+type: computation
 ---
 
 # Mexico corporate income tax (ISR, personas morales)
@@ -26,11 +27,11 @@ Resident Mexican corporations (personas morales) are taxed on all their income r
 
 | Item | Rate | Tax year | Source |
 |---|---|---|---|
-| Corporate ISR on the annual fiscal result | 30% | 2026 | [LISR Art. 9](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
-| Corporate-level tax on dividends not paid out of CUFIN | 30% on the dividend grossed up by the factor 1.4286 | 2026 | [LISR Art. 10](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
-| Additional tax on dividends paid to resident individuals | 10% | 2026 | [LISR Art. 140](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
-| Non-resident flat rates (no PE) | 25% on rent, real-property gains and services | 2026 | LISR Arts. 156, 158, 160; see `mx-cross-border` |
-| Dividends paid to non-residents | 10% withheld by the paying company | 2026 | [LISR Art. 164 fr. I](https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf) |
+| Corporate ISR on the annual fiscal result | 30% | 2026 | [LISR Art. 9, DOF 11-12-2013 (text: "aplicando al resultado fiscal obtenido en el ejercicio la tasa del 30%")](https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013) |
+| Corporate-level tax on dividends not paid out of CUFIN | 30% on the dividend grossed up by the factor 1.4286 | 2026 | [LISR Art. 10, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013) |
+| Additional tax on dividends paid to resident individuals | 10%, withheld by the paying company | 2026 | [LISR Art. 140, DOF 11-12-2013 ("tasa adicional del 10%")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| Non-resident flat rates (no PE) | 25% of the gross income, no deductions, on independent services (Art. 156), real property rent (Art. 158) and real property disposals (Art. 160, or the elective rate on the gain); see `mx-cross-border` | 2026 | [LISR Arts. 156, 158, 160, DOF 11-12-2013 ("la tasa del 25% sobre el total del ingreso obtenido")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| Dividends paid to non-residents | 10% withheld by the paying company | 2026 | [LISR Art. 164 fr. I, DOF 11-12-2013 ("la tasa del 10% sobre dichos dividendos")](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
 
 No general reduced corporate rate exists in the consolidated LISR text read on 2026-10-28.
 
@@ -120,6 +121,8 @@ expected:
 |---|---|---|
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 8-10, 14, 25-37, 44-46, 57, 76, 76-A, 78, 140, 156, 158, 160, 164, 179-182 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
 | SAT, personas morales régimen general: declaraciones mensuales | http://omawww.sat.gob.mx/informacion_fiscal/obligaciones_fiscales/personas_morales/regimen_general/Paginas/declaraciones_mensuales.aspx | 2026-10-28 |
+| DOF 11-12-2013, decree issuing the Ley del Impuesto Sobre la Renta, first part (Arts. 1 to 75), read for Art. 9 (30%) and Art. 10 (1.4286 gross-up) | https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013 | 2026-11-14 |
+| DOF 11-12-2013, same decree, second part (Arts. 76 onward), read for Art. 140 (additional 10%), Arts. 156, 158 and 160 (25%) and Art. 164 (10% dividends to non-residents) | https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013 | 2026-11-14 |
 | Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 64, 65, 75, 76 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 
 Not yet confirmed: how the 10% additional dividend tax (Art. 140, second paragraph) applies to non-resident shareholders; whether CUFIN is limited to profits taxed before 2014 as earlier drafts said, and the CUFIN-non-resident account; whether a 2025-2026 reform changed the Art. 9 rate after the DOF 01-04-2024 consolidation (the 2025-2026 rate-increase debate had not changed the text read; the consolidated copy read on 2026-10-29 still shows 30%); the annual return as a calendar date (the LISR text gives three months after year end; earlier drafts said 30 July for calendar-year taxpayers); the PTU payment deadline of 60 days after the annual return (Ley Federal del Trabajo; not read); treaty-by-treaty withholding rates; the 2026 minimum wage; current SAT tariff tables. The consolidated LISR read contains no 35% rate anywhere in Title V (the 25% rates in Arts. 156, 158, 160 and the interest tiers in Art. 166 are the flat rates), so the "35% Title V rate" earlier drafts listed is not carried.

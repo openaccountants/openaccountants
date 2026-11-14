@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-foral-income-tax-foreign-assignment"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
 # Spain: foral exemption for work performed abroad, 2026
@@ -21,6 +21,13 @@ An ordinary resident employee whose foral IRPF is Bizkaia, Álava, Gipuzkoa or N
 ## Rates, bands and thresholds
 
 The general and savings scales of each territory are in [es-foral-income-tax](es-foral-income-tax.md#rates-bands-and-thresholds); the amounts this Guide applies sit in the rules under The base.
+
+| Resident system | Annual cap on exempt pay for work performed abroad | Source |
+|---|---:|---|
+| Bizkaia | EUR 60,100 (NF13/2013 art.9.17) | [B NF13/2013](https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068) |
+| Álava | EUR 60,100 (NF33/2013 art.9.17) | [A NF33/2013](https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf) |
+| Gipuzkoa | EUR 60,100 (NF3/2014 art.9.17) | [G NF3/2014](https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc) |
+| Navarra | EUR 60,000 (DFL4/2008 art.7(n)) | [N DFL4/2008](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) |
 
 ## The base
 
@@ -173,4 +180,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-income-tax-foreign-assignment` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-income-tax-foreign-assignment. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-income-tax-foreign-assignment` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-income-tax-foreign-assignment. If neither is available, confirm every figure against the official source pages cited above before relying on it.
