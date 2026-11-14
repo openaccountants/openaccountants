@@ -83,12 +83,14 @@ class PartialDomainsTest(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "README.md"):
                     cr.read_pack_readme(d)
 
-    def test_real_malta_report_keeps_the_pack_in_writing(self):
+    def test_real_malta_report_keeps_partial_domains_in_writing(self):
+        # The rule, not a snapshot of Malta's progress: a domain the README declares
+        # partial still counts as missing, and a pack with any partial domain is not complete.
         row = next(row for row in cr.build_report()["rows"] if row["code"] == "MT")
-        self.assertEqual(set(row["partial"]), set(cr.DOMAIN_CODES))
-        self.assertEqual(set(row["missing"]), set(cr.DOMAIN_CODES))
-        self.assertFalse(row["complete"])
-        self.assertEqual(row["state"], "needs_writing")
+        self.assertTrue(set(row["partial"]) <= set(row["missing"]))
+        if row["partial"]:
+            self.assertFalse(row["complete"])
+            self.assertEqual(row["state"], "needs_writing")
 
 
 if __name__ == "__main__":

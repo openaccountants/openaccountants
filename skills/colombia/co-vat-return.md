@@ -12,11 +12,11 @@ description: >
   UVT 2026 COP 52,374. Trigger on: IVA Colombia, declaración de IVA formulario 300, responsable de IVA,
   no responsable 3.500 UVT, IVA bimestral cuatrimestral, IVA descontable, reteIVA, exportación de
   servicios IVA, Colombian VAT return.
-version: 1.1
+version: 1.2
 jurisdiction: CO
 category: international
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 type: computation
 depends_on:
   - vat-workflow-base
@@ -24,7 +24,7 @@ tier: 2
 domain: vat-gst
 ---
 
-# Colombia: IVA (VAT) return, 2026 v1.1
+# Colombia: IVA (VAT) return, 2026 v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -40,7 +40,7 @@ Related skills: [colombia-income-tax](colombia-income-tax.md) (an IVA responsabl
 - **No responsables** (art. 437 par. 3): individual retailers and artisans, small farmers and stockbreeders, and individuals providing services, but only if they meet **all** of these: gross income from the activity under 3,500 UVT (COP 183,309,000) in 2025 and in 2026; one business premises at most; no franchise, concession or royalty arrangement there; not a customs user; no single taxed contract of 3,500 UVT or more in 2025 or 2026; and bank deposits and investments from taxed activity not over 3,500 UVT. The limit is 4,000 UVT (COP 209,496,000) for individuals whose income comes from contracts with the State (par. 5). A no responsable may not add IVA to its prices; if it does, it takes on all the obligations of a responsable (par. 1). Before signing a taxed contract of more than 3,500 UVT, it must register as responsable.
 - **Companies**: the art. 437 par. 3 exception names individual retailers and artisans, small farmers and stockbreeders and service providers; treat a company making taxed supplies as a responsable unless a source confirms otherwise (see Not yet confirmed).
 - **Régimen Simple members** are not responsables if they only run small shops, minimarkets or hairdressers (art. 908(1)), or are individuals with gross income under 3,500 UVT (art. 437 par. 4).
-- **Out of scope**: the national consumption tax (impuesto nacional al consumo) on restaurants and bars, the special IVA rules for construction (AIU) and gambling, free-zone and international marketing company details, and the IVA refund procedure.
+- **Out of scope**: the municipal industry and commerce tax (ICA), which is not IVA; the national consumption tax (impuesto nacional al consumo) on restaurants and bars, the special IVA rules for construction (AIU) and gambling, free-zone and international marketing company details, and the IVA refund procedure.
 
 ## Rates, bands and thresholds
 
@@ -52,14 +52,14 @@ Related skills: [colombia-income-tax](colombia-income-tax.md) (an IVA responsabl
 | Reduced rate, services (storage of farm products in bonded warehouses, farm insurance, prepaid medicine and complementary health plans, health insurance policies, certain cleaning and security services by solidarity entities employing people with disabilities) | 5% | 2026 | same (art. 468-3) |
 | Domestic passenger air tickets | 19%: the 5% rate in art. 468-3(5) ran only to 31 December 2022; routes with no organised land transport and listed tourist routes are excluded (art. 476(10)) | 2026 | same (arts. 468-3(5), 476(10)) |
 | Excluded services, no IVA and no credit (art. 476): medical, dental, hospital and lab services; recognised education; public land, river and sea passenger transport, and all cargo transport; public energy, water, sewerage, refuse and household gas; residential rent; interest and leasing; web pages, hosting and cloud computing; cinema, sport and cultural tickets; funeral services; internet for stratum 3 homes | 0%, no IVA | 2026 | same (art. 476) |
-| Excluded goods (art. 424), for example fresh potatoes, paddy rice, most medicines, personal computers worth up to 50 UVT (COP 2,618,700) | 0%, no IVA | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 424) |
+| Excluded goods (art. 424), for example fresh potatoes, paddy rice, most medicines, personal computers worth up to 50 UVT (COP 2,618,700, computed at the 2026 UVT of COP 52,374) | 0%, no IVA | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 424) |
 | Exempt goods with right to credit and refund (art. 477), for example fresh or frozen beef, pork, chicken and fish, milk, fresh cheese, fresh eggs, rice for human consumption, infant formula | 0% with credit | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html (art. 477) |
 | Books and magazines of scientific and cultural character, and musical works | exempt; instruments and inputs for luthiers excluded (Ley 2615 de 2026) | 2026 | same (art. 478) |
 | Exports of goods, sales to international marketing companies for export, services used exclusively abroad by non-residents with no business in Colombia, tourist services to non-residents | exempt with bimonthly refund | 2026 | same (art. 481) |
-| No responsable threshold (individuals) | 3,500 UVT (COP 183,309,000); 4,000 UVT (COP 209,496,000) for State contractors | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 437 par. 3, 5) |
+| No responsable threshold (individuals) | 3,500 UVT (COP 183,309,000); 4,000 UVT (COP 209,496,000) for State contractors; COP amounts computed at the 2026 UVT of COP 52,374 | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 437 par. 3, 5) |
 | IVA withholding (reteIVA), general | 15% of the IVA, unless a decree sets another rate up to 50% | 2026 | same (art. 437-1) |
 | IVA withholding on services from non-residents (art. 437-2(3) and (8)) | 100% of the IVA, by the Colombian buyer | 2026 | same (art. 437-1 par. 1) |
-| Bimonthly filing | grandes contribuyentes, those with gross income of 92,000 UVT (COP 4,818,408,000) or more at 31 Dec 2025, and art. 477 and 481 exporters | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr025.html (art. 600(1)) |
+| Bimonthly filing | grandes contribuyentes, those with gross income of 92,000 UVT (COP 4,818,408,000, computed at the 2026 UVT of COP 52,374) or more at 31 Dec 2025, and art. 477 and 481 exporters | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr025.html (art. 600(1)) |
 | Four-monthly filing | everyone else: gross income under 92,000 UVT | 2026 | same (art. 600(2)) |
 | Input IVA timing | in the period of the tax point or the next 3 bimonthly periods (bimonthly filers) or the next 1 four-monthly period | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr020.html (art. 496) |
 
@@ -83,6 +83,19 @@ Related skills: [colombia-income-tax](colombia-income-tax.md) (an IVA responsabl
 6. Purchases from a no responsable carry no IVA and give no credit.
 
 **Withholding (reteIVA).** State entities, grandes contribuyentes, entities DIAN designates, card issuers and responsables buying services from non-residents withhold IVA on payment or crediting, whichever is first (arts. 437-1, 437-2). The general rate is 15% of the IVA. The supplier claims the IVA withheld in box 85 in the period or the next three periods, if booked in the period.
+
+**Classifying common bank-statement lines.** The Estatuto decides, not the supplier's name (art. 476 numbers as read on 14 Nov 2026):
+
+- **Banks and cards.** Interest and financial yields on credit operations and financial leasing are excluded (art. 476(16)); so are foreign-exchange operations (476(27)) and commissions for the use of credit and debit cards (476(28)). Other bank fees are not on the list: treat them as taxed at 19% unless an exclusion is shown.
+- **Utilities.** Public energy services (476(11)), water, sewerage and refuse services (476(12)) and household gas (476(13)) are excluded, whoever the customer is. Internet connection is excluded only for residential users in stratum 3 (476(7)); local telephone service is excluded only for the first 325 minutes a month billed to strata 1, 2 and 3 and for public telephones (476(8)). Business mobile and internet: 19%.
+- **Transport.** Public land, river and sea passenger transport in Colombia (476(9)) is excluded. Domestic air tickets are 19% since the 5% rate of art. 468-3(5) ended on 31 December 2022, except routes with no organised land transport and the listed tourist routes, which are excluded (476(10)).
+- **Rent and cloud.** Residential rent is excluded (476(15)); commercial rent is 19%. Web pages, hosting and cloud computing are excluded (476(21)).
+- **Insurance.** Prepaid medicine, complementary health plans and health insurance policies are 5% (art. 468-3); compulsory health plans of the social security system are excluded (476(3)). No general exclusion for other insurance was found in art. 476: confirm before treating a premium as excluded.
+- **Food and medicines.** Rice for human consumption, fresh eggs, milk and fresh meat are exempt with credit (art. 477); most medicines and paddy rice are excluded (art. 424). The difference matters to the seller (credit and refund), not to the buyer: neither carries IVA to credit.
+
+**Conservative defaults when facts are missing.** Treat a sale as taxed at 19% until a 5%, excluded or exempt rule is shown (arts. 468, 468-1, 468-3, 424, 476, 477); treat an export as domestic until the export proof is in hand (art. 481); give no credit without a valid invoice to the buyer (art. 771-2), on a purchase from a no responsable, on a fixed asset (art. 491), or on a business-use share that is not documented (art. 488).
+
+**When only bank totals are available.** Treat each total as IVA-inclusive: at 19%, net = total x 100 / 119 and IVA = total x 19 / 119; at 5%, net = total x 100 / 105. Give no credit on any payment without a valid electronic invoice, list the missing invoices and ask for them. Colombian bank statements write pesos with a full stop for thousands and no decimals: $119.000.000 is COP 119,000,000.
 
 **E-invoicing.** Invoices and equivalent documents form the invoicing system that DIAN regulates, including electronic documents (art. 616-1). Costs and input IVA need a valid invoice (art. 771-2).
 
@@ -206,6 +219,7 @@ expected:
 | ET arts. 420, 424, 429, 437 (par. 1 to 5), 437-1, 437-2 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html | 2026-11-11 |
 | ET arts. 447, 459 (base) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr018.html | 2026-11-11 |
 | ET arts. 468, 468-1, 468-3, 476, 477, 478 (as amended by Ley 2615 de 2026), 481, 485, 488 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html | 2026-11-11 |
+| ET arts. 476 (numbers 3, 7 to 13, 15, 16, 21, 27, 28) and 488, reopened: read for the classification notes in The base | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html | 2026-11-14 |
 | ET arts. 490, 491, 496 (proration, fixed assets, timing) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr020.html | 2026-11-11 |
 | ET arts. 512-22 (online gambling, Decreto Legislativo 240 de 2026) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr021.html | 2026-11-11 |
 | ET arts. 600, 601, 616-1 (periods, who files, invoicing) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr025.html | 2026-11-11 |
@@ -215,4 +229,4 @@ expected:
 | DUR 1625 de 2016, arts. 1.6.1.13.2.30 and 1.6.1.13.2.31 (IVA deadlines), DIAN normograma | https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1625_2016.htm | 2026-11-11 |
 | DIAN, Form 300 and instructions (boxes 24 to 102, 980) | https://www.dian.gov.co/atencionciudadano/formulariosinstructivos/Formularios/2025/Formulario_300_2025.pdf | 2026-11-11 |
 
-Not yet confirmed: the decree rates of IVA withholding other than the 15% default (up to 50% allowed); the calendar dates of the 2026 and January 2027 deadlines (only the business-day rule was read); the full tariff lists of arts. 424, 468-1 and 477 (only examples are given here, check the heading); whether an individual below the thresholds may register voluntarily; whether a company providing services can use the art. 437 par. 3 exception; the refund procedure and its timing for exporters; the payment form for Form 300 balances.
+Not yet confirmed: the decree rates of IVA withholding other than the 15% default (up to 50% allowed); the calendar dates of the 2026 and January 2027 deadlines (only the business-day rule was read); the full tariff lists of arts. 424, 468-1 and 477 (only examples are given here, check the heading); whether an individual below the thresholds may register voluntarily; whether a company providing services can use the art. 437 par. 3 exception; the refund procedure and its timing for exporters; the payment form for Form 300 balances; the IVA treatment of insurance premiums other than the health policies of art. 468-3 (no exclusion found in art. 476 as read on 14 Nov 2026).

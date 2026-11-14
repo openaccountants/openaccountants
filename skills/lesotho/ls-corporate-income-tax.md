@@ -5,14 +5,15 @@ jurisdiction: LS
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: computation
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Lesotho Corporate Income Tax v0.2
+# Lesotho Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,7 +29,6 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 |---|---|---|---|
 | Standard rate | 25% | All income not listed below; also branch profits | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
 | Manufacturing and farming | 10% | Manufacturing income, income from farming operations | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
-| Exports outside SACU | unverified: 10% or 0% | RSL guide shows 10%; the Third Schedule in the 2012 Act copy shows 0%. Ask before relying on either | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
 | Advance corporation tax | 25/75 of the dividend (33.33%) | On dividends distributed; creditable, see the base | https://www.rsl.org.ls/sites/default/files/2026-09/Advanced%20Corporation%20Tax%20Guide.pdf |
 | Dividend WHT, non-resident | 25%, or 0% from concessional manufacturing income | s.107(1),(2) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Interest, royalty, natural resource payment, management charge, non-resident | 25% | s.107(1) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |

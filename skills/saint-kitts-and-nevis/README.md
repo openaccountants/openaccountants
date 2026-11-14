@@ -2,7 +2,9 @@
 jurisdiction: KN
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  SC: kn-social-security-contributions
+  PR: kn-housing-social-development-levy
 partial: {}
 ---
 

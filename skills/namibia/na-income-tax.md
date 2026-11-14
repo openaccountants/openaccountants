@@ -2,18 +2,19 @@
 name: na-income-tax
 description: >
   Namibia personal income tax for individuals, year of assessment ending 28 February 2027: seven bands, the N$150,000 retirement cap, provisional tax, returns on ITAS and penalties. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Namibia Personal Income Tax v0.2
+# Namibia Personal Income Tax v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -28,15 +29,15 @@ Individuals, deceased estates and trusts ([NamRA](https://www.namra.org.na/tax-t
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
 | Taxable amount to N$100,000 | No tax | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (Schedule 4 para 1) |
-| N$100,001 to N$150,000 | 18% above N$100,000 | 2026 | same |
-| N$150,001 to N$350,000 | N$9,000 + 25% above N$150,000 | 2026 | same |
-| N$350,001 to N$550,000 | N$59,000 + 28% above N$350,000 | 2026 | same |
-| N$550,001 to N$850,000 | N$115,000 + 30% above N$550,000 | 2026 | same |
-| N$850,001 to N$1,550,000 | N$205,000 + 32% above N$850,000 | 2026 | same |
+| Above N$100,000 to N$150,000 | 18% above N$100,000 | 2026 | same |
+| Above N$150,000 to N$350,000 | N$9,000 + 25% above N$150,000 | 2026 | same |
+| Above N$350,000 to N$550,000 | N$59,000 + 28% above N$350,000 | 2026 | same |
+| Above N$550,000 to N$850,000 | N$115,000 + 30% above N$550,000 | 2026 | same |
+| Above N$850,000 to N$1,550,000 | N$205,000 + 32% above N$850,000 | 2026 | same |
 | Above N$1,550,000 | N$429,000 + 37% above N$1,550,000 | 2026 | same |
 | Retirement, provident, annuity and education policy deductions together | N$150,000 cap, from years starting 1 March 2022 | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf (s.17(2)) |
 | Lump sum exemption | N$300,000 lifetime, conditions in s.16(1)(o) | 2026 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf |
-| Company car fringe benefit | 1.5% if employer pays all costs; 1.4% if employee pays fuel | Page undated | https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/ |
+| Company car fringe benefit | 1.5% if employer pays all costs; 1.4% if employee pays fuel | Page undated | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-on-individuals-060399fedd.pdf |
 | Housing allowance | Taxable; one third exempt under an approved scheme | Page undated | same |
 
 NamRA's salary page still shows a N$40,000 cap. Its own brochure and s.17(2) say N$150,000. The statute wins.
@@ -108,12 +109,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 24 of 1981, annotated to Act 4 of 2024 (read: Schedule 4, ss.6, 15, 16, 17, 21, 21A, 56, 66, 79, 80, Schedule 2 Part III) | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01 |
-| NamRA salary page (read: whole page) | https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/ | 2026-11-01 |
-| NamRA provisional page (read: whole page) | https://www.namra.org.na/individual-tax/page/i-am-a-provisional-taxpayer/ | 2026-11-01 |
-| NamRA income tax page (read: whole page) | https://www.namra.org.na/tax-types/page/income-tax/ | 2026-11-01 |
-| NamRA ITAS brochure (read: whole) | https://www.namra.org.na/documents/cms/uploaded/information-brochure--how-to-register-on-itas-ce02d8af03.pdf | 2026-11-01 |
-| NamRA tax payments brochure (read: whole) | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-payments-325a997127.pdf | 2026-11-01 |
-| NamRA tax amnesty (read: whole page) | https://www.namra.org.na/tax-amnesty | 2026-11-01 |
+| Income Tax Act 24 of 1981, annotated to Act 4 of 2024: read for Schedule 4, ss.6, 15, 16, 17, 21, 21A, 56, 66, 79, 80, Schedule 2 Part III on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| NamRA salary page: read in full | https://www.namra.org.na/individual-tax/page/i-earn-a-monthly-salary/ | 2026-11-14 |
+| NamRA provisional page: read in full | https://www.namra.org.na/individual-tax/page/i-am-a-provisional-taxpayer/ | 2026-11-14 |
+| NamRA income tax page: read in full | https://www.namra.org.na/tax-types/page/income-tax/ | 2026-11-14 |
+| NamRA ITAS brochure: read in full | https://www.namra.org.na/documents/cms/uploaded/information-brochure--how-to-register-on-itas-ce02d8af03.pdf | 2026-11-14 |
+| NamRA tax payments brochure: read in full | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-payments-325a997127.pdf | 2026-11-14 |
+| NamRA tax amnesty: read in full | https://www.namra.org.na/tax-amnesty | 2026-11-14 |
+| NamRA brochure, Tax on Individuals: read for the company car rates (1.5% and 1.4%) and the normal tax bands | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-on-individuals-060399fedd.pdf | 2026-11-14 |
 
 Not yet confirmed: Budget 2026/27 proposals (mof.gov.na refused plain fetch and the browser read failed); any Income Tax Amendment Act passed after the LAC index was last updated; ITAS return screens and box numbers.
