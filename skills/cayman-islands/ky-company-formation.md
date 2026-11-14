@@ -5,13 +5,15 @@ description: >
   entity types (exempted company, ordinary company, limited duration company,
   LLC, exempted limited partnership), registration with the General Registry
   and its 2026 exempted company registration fees by share capital (CI$700 to
-  CI$42,000 of capital, then CI$1,000, CI$1,984 and CI$2,568), the tax
+  CI$42,000 of capital, then CI$1,000, CI$1,984 and CI$2,568), the annual
+  fees (CI$925 to CI$2,793 in 2026, rising on 1 January 2027), beneficial
+  ownership at 25% or more, CRS and FATCA dates, the tax
   undertaking, economic substance notification, and what follows. No tax
   registration is needed because there is no income tax or VAT. Trigger on
   Cayman company formation, exempted company Cayman, register a company in
   Cayman, General Registry fees. Built from the General Registry fee table
   and Cayman legislation; not reviewed by an accountant.
-version: 1.0
+version: 1.1
 jurisdiction: KY
 tax_year: 2026
 last_updated: 2026-11-14
@@ -48,6 +50,14 @@ People setting up a Cayman entity in 2026: exempted companies (the usual vehicle
 | Share capital CI$42,001 to 820,000 | CI$1,000 (US$1,219.51) | s. 26(4)(b)(ii) | same |
 | Share capital CI$820,001 to 1,640,000 | CI$1,984 (US$2,419.51) | s. 26(4)(b)(iii) | same |
 | Share capital over CI$1,640,001 | CI$2,568 (US$3,131.71) | s. 26(4)(b)(iv) | same |
+| Exempted company annual fee, share capital up to CI$42,000 | CI$925 in 2026; CI$1,025 from 1 January 2027 | Paid in January each year after the year of registration, with the s. 168 return | Companies Act (2026 Revision), s. 169 and Schedule 5 Part 4: https://gov.ky/documents/43485/45951/Companies%2BAct%2B%282026%2BRevision%29%2C%2B%28LG4%2C%2BS7%29%2Bv2.pdf/bda7504d-2c94-2c49-3ac6-632a54fdd070; Companies (Amendment of Schedule 5) (No. 2) Order 2026, SL 46 of 2026: https://gov.ky/documents/35692/0/Companies%28AmendmentofSchedule5%29%28No.2%29Order%2C2026_MADE.pdf/8599c386-394d-3f0b-a450-cf98cc027bc1?t=1792179441340 |
+| Annual fee, capital over CI$42,000 up to CI$820,000 | CI$1,225 in 2026; CI$1,325 from 2027 | | same |
+| Annual fee, capital over CI$820,000 up to CI$1,640,000 | CI$2,209 in 2026; CI$2,309 from 2027 | | same |
+| Annual fee, capital over CI$1,640,000 | CI$2,793 in 2026; CI$2,893 from 2027 | | same |
+| Late annual return or fee, exempted company | 33.33% of the annual fee (paid 1 April to 30 June); 66.67% (1 July to 30 September); 100% (1 October to 31 December) | s. 169(3) | Companies Act (2026 Revision), s. 169(3): https://gov.ky/documents/43485/45951/Companies%2BAct%2B%282026%2BRevision%29%2C%2B%28LG4%2C%2BS7%29%2Bv2.pdf/bda7504d-2c94-2c49-3ac6-632a54fdd070 |
+| LLC annual fee from 1 January 2027 | CI$1,200 | Limited Liability Companies (Fees) Regulations, item 10, s. 57(1) | Limited Liability Companies (Fees) (Amendment) Regulations 2026, SL 40 of 2026: https://gov.ky/documents/35692/0/LimitedLiabilityCompanies%28Fees%29%28Amendment%29Regulations2026_MADE.pdf/622b8493-964f-12c2-80c2-87b993f423e7?t=1786740547243 |
+| Beneficial ownership threshold | 25% or more of shares, voting rights or partnership interests, held directly or indirectly | Separate tests for control by other means | Beneficial Ownership Transparency Act (2026 Revision), s. 2: https://gov.ky/documents/35692/0/Beneficial%2BOwnership%2BTransparency%2BAct%2B%2B%282026%2BRevision%29%2C.pdf/451d0c7a-a64d-65da-974e-4fd7863af95f |
+| CRS and FATCA, 2025 reporting year | Registration 30 April 2026; reporting 31 July 2026; CRS compliance form 15 September 2026 | The principal point of contact and the date the entity became a financial institution: 31 January 2027 | DITC, CRS jurisdictions lists and 2026 reporting deadlines: https://www.ditc.ky/press/crs-jurisdictions-lists-and-2026-reporting-deadlines/ |
 | Tax undertaking | Up to 30 years | Application to the Financial Secretary | Tax Concessions Act (2018 Revision), s. 6: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0164/1964-0164_2018%20Revision.pdf |
 | Economic substance notification | Annually | Every entity, s. 7(1) | International Tax Co-operation (Economic Substance) Act (2026 Revision): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf |
 | Companies Act | 2026 Revision in force | | Cayman legislation, current by title: https://legislation.gov.ky/cms/legislation/current/by-title.html |
@@ -60,13 +70,33 @@ People setting up a Cayman entity in 2026: exempted companies (the usual vehicle
 4. **Apply for a tax undertaking** if wanted (Tax Concessions Act s. 6).
 5. **Economic substance.** Make the first annual notification; if a relevant activity is carried on, plan the substance and the report due 12 months after the first year end (`ky-corporate-income-tax`).
 6. **Staff in Cayman.** Enrol employees in a pension plan and health insurance and obtain work permits (`ky-payroll-social`).
-7. **Each year.** Annual return and fee to the Registry (timing and amounts: see Not yet confirmed); economic substance notification and report.
+7. **Each year.** In January after the year of registration, the exempted company files its s. 168 return and pays the annual fee for its capital band (table above); late payment bears the s. 169(3) penalty. Economic substance notification and report (`ky-corporate-income-tax`).
+8. **Beneficial ownership.** Identify each individual owning or controlling 25% or more, give the particulars to the corporate services provider, and report a change within 30 days of knowing of it (Beneficial Ownership Transparency Act ss. 2, 14 and 15).
 
 ### What happens after
 
 The Registry issues a certificate of incorporation. No tax authority registration follows, because there is no income tax or VAT. Import duty applies to goods the company brings in (`ky-vat-gst`).
 
 ## Worked cases
+
+### Late annual fee, paid in May 2026
+
+An exempted company with CI$41,000 of capital misses January and pays in May 2026.
+
+```oa-check
+name: KY exempted company late annual fee, second quarter
+inputs:
+  annual_fee: 925
+  penalty_rate: 0.3333
+steps:
+  - penalty: annual_fee * penalty_rate
+  - total: annual_fee + penalty
+expected:
+  penalty: 308.3025
+  total: 1233.3025
+```
+
+The penalty is 33.33% of CI$925, about CI$308.30 (derived); paying in October instead doubles the fee.
 
 ### Exempted company with US$50,000 of share capital
 
@@ -94,7 +124,7 @@ expected:
 
 - Drafting constitutional documents, registered office services, segregated portfolio companies, foundation companies and funds: refer to a Cayman attorney or licensed corporate services provider.
 - CRS/FATCA classification: refer.
-- Beneficial ownership filings: refer (rules not read for this version).
+- Beneficial ownership: the 25% threshold is stated above; the alternative routes, control tests and deposit intervals go to the corporate services provider.
 
 ## Filing and payment
 
@@ -102,6 +132,7 @@ expected:
 |---|---|---|
 | Registration | General Registry, through the registered office provider | At formation |
 | Registration fee | General Registry | With the application |
+| Annual return and fee | General Registry | January each year after the year of registration |
 | Tax undertaking | Financial Secretary | After incorporation, if wanted |
 | Economic substance notification and report | The Authority named in the Act, in its approved form | Annually; report 12 months after year end |
 
@@ -109,9 +140,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| Companies Act (2026 Revision): read for s. 169 (annual fee in January, 33.33%, 66.67% and 100% penalties) and Schedule 5 Part 4 (CI$925, CI$1,225, CI$2,209, CI$2,793) | https://gov.ky/documents/43485/45951/Companies%2BAct%2B%282026%2BRevision%29%2C%2B%28LG4%2C%2BS7%29%2Bv2.pdf/bda7504d-2c94-2c49-3ac6-632a54fdd070 | 2026-11-14 |
+| Companies (Amendment of Schedule 5) (No. 2) Order 2026, SL 46 of 2026: read for the annual fees from 1 January 2027 | https://gov.ky/documents/35692/0/Companies%28AmendmentofSchedule5%29%28No.2%29Order%2C2026_MADE.pdf/8599c386-394d-3f0b-a450-cf98cc027bc1?t=1792179441340 | 2026-11-14 |
+| Limited Liability Companies (Fees) (Amendment) Regulations 2026, SL 40 of 2026: read for the CI$1,200 LLC annual fee from 1 January 2027 | https://gov.ky/documents/35692/0/LimitedLiabilityCompanies%28Fees%29%28Amendment%29Regulations2026_MADE.pdf/622b8493-964f-12c2-80c2-87b993f423e7?t=1786740547243 | 2026-11-14 |
+| Beneficial Ownership Transparency Act (2026 Revision): read for s. 2, the 25% threshold | https://gov.ky/documents/35692/0/Beneficial%2BOwnership%2BTransparency%2BAct%2B%2B%282026%2BRevision%29%2C.pdf/451d0c7a-a64d-65da-974e-4fd7863af95f | 2026-11-14 |
+| DITC, CRS jurisdictions lists and 2026 reporting deadlines: read for the 30 April, 31 July and 15 September 2026 dates and the 31 January 2027 extension | https://www.ditc.ky/press/crs-jurisdictions-lists-and-2026-reporting-deadlines/ | 2026-11-14 |
 | Cayman Islands General Registry, fees: read for the exempted company registration fees by capital band and the US$ conversion at 0.82 | https://www.ciregistry.ky/fees/ | 2026-11-14 |
 | Tax Concessions Act (2018 Revision): read for s. 6 undertakings | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0164/1964-0164_2018%20Revision.pdf | 2026-11-14 |
 | International Tax Co-operation (Economic Substance) Act (2026 Revision): read for s. 7 notification and report | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf | 2026-11-14 |
 | Cayman legislation, current by title: read for the Companies Act 2026 Revision and the absence of income tax and VAT Acts | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
 
-Not yet confirmed: annual government fees (the old CI$925 and CI$1,225 for 2025 came from the Registry page but the page read today showed only the registration fee table; the January filing date is not confirmed); name reservation fees (old: US$49 to US$195); incorporation timeline (old: 1 to 5 business days); minimum directors and shareholders and the registered office rule in the Companies Act (old file relied on firm and vendor pages); ordinary company, LLC and exempted limited partnership fees; beneficial ownership register duties.
+Not yet confirmed: the current LLC annual fee for 2026 (only the 2027 figure was read); the March 2026 erratum to Schedule 5 (merger plan fee CI$1,000 per constituent entity, not read); the trade and business licence fee schedule from 28 April 2026; name reservation fees (old: US$49 to US$195); incorporation timeline (old: 1 to 5 business days); minimum directors and shareholders and the registered office rule in the Companies Act (old file relied on firm and vendor pages); ordinary company and exempted limited partnership fees; the beneficial ownership deposit intervals.
