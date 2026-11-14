@@ -12,16 +12,15 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected complete units of RPPL 11-11, passed and visibly approved on 29 September 2021, were read from the official ministry gallery on 1 November 2026 UTC. Section 21(a) states 1 January 2023 subject to express exceptions. This is a dated-source reference, not comprehensive 2026 coverage or acceptance of a complete later-law chain. The 2026 proposal index fields establish no enacted rate change. Current applicability, regulations, forms, registration and actual liability remain held."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: situation-rules
 ---
 
-# Palau PGST Charge and Value Reference (v0.2)
+# Palau PGST Charge and Value Reference (v0.3)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -74,7 +73,7 @@ Before delivery, check that:
 
 | Component and conditions | Amount | Reference period and limit | Official source |
 | --- | --- | --- | --- |
-| Independently established ordinary standard-rate supply, subject to the complete charging and value rules below | 10% of the established value | Selected RPPL 11-11 reference; commencement exceptions and later chain remain held | https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/ |
+| Independently established ordinary standard-rate supply, subject to the complete charging and value rules below | 10% of the established value | Selected RPPL 11-11 reference; commencement exceptions and later chain remain held | https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/; [RPPL 11-11 PDF, s 1211(b)(2)](https://www.palaugov.pw/wp-content/uploads/2022/04/RPPL-11-11.pdf); [BRT, PGST](https://www.palaugov.pw/executive-branch/ministries/finance/brt/) |
 
 ### Selected charging and value rules [S1](https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/)
 
@@ -195,42 +194,22 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| S1. RPPL No. 11-11, official ministry gallery | https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/ | 2026-11-01 UTC; selected complete gallery units and page images |
-| S2. Bureau of Revenue & Taxation index | https://www.palaugov.pw/executive-branch/ministries/finance/brt/ | Exact reading day unrecorded; fresh public HTML response dated 2026-11-01 UTC |
-| S3. Customs: Time of Import | https://bcbp.pw/?page_id=3700 | Exact reading day unrecorded; specified published extracts read |
-| S3. Exempt and Temporary | https://bcbp.pw/?page_id=3199 | Exact reading day unrecorded; specified published extracts read |
-| S4. OEK member legislation index | https://palauoek.org/members/honorable-tj-imerur-remengesau/ | No complete page read; native search fields only; full-page read timed out |
-| PalauGov original PDF locator | https://www.palaugov.pw/wp-content/uploads/2022/04/RPPL-11-11.pdf | Not read from this locator; complete native retrieval unavailable |
+| S1. RPPL No. 11-11, official ministry gallery | https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/ | 2026-11-01 UTC (read by Ryan); selected complete gallery units and page images; refused on 2026-11-14 (403) |
+| S2. Bureau of Revenue & Taxation index | https://www.palaugov.pw/executive-branch/ministries/finance/brt/ | 2026-11-14 (re-read the PGST section: 10%, introduced 1 January 2023); first read by Ryan 2026-11-01 UTC |
+| S3. Customs: Time of Import | https://bcbp.pw/?page_id=3700 | Read by Ryan by 2026-11-01 UTC (exact day unrecorded); specified published extracts; not re-read on 2026-11-14 |
+| S3. Exempt and Temporary | https://bcbp.pw/?page_id=3199 | Read by Ryan by 2026-11-01 UTC (exact day unrecorded); specified published extracts; not re-read on 2026-11-14 |
+| S4. OEK member legislation index | https://palauoek.org/members/honorable-tj-imerur-remengesau/ | 2026-11-14 (read the bill list: SB 12-83 "Reduce PGST to 5%" and SB 12-82 "Exemption of Food from PGST", both 14 Sep 2026, In Progress) |
+| PalauGov original PDF locator | https://www.palaugov.pw/wp-content/uploads/2022/04/RPPL-11-11.pdf | 2026-11-14 (read s 1211(b) on printed p 10: zero percent (0%) and ten percent (10%)) |
 
 ### Source library and qualification
 
-| Source | Material actually read | Limits |
-| --- | --- | --- |
-| **S1. [RPPL No. 11-11, official ministry gallery](https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/)** | Complete section 1211(a)–(d) on printed p 10, gallery 11; section 1235(a)–(f) on printed pp 22–23, gallery 23–24; section 1236(a)–(b) on printed p 23; complete section 21(a)–(c) on printed pp 105–106, gallery 106–107, and the passage/approval annotations. Captured through the public HTML viewer, OCR processed locally and checked against the page images, including the formula's layout and handwritten date. | Selected units only. Other text visible at page boundaries is not accepted as a complete provision. The official gallery's page map was parsed as data, without executing it. Screenshots are derivatives, not raw original-image or PDF bytes. Electronic-copy authority, later amendments and actual application remain subject to review. |
-| **S2. [Bureau of Revenue & Taxation index](https://www.palaugov.pw/executive-branch/ministries/finance/brt/)** | Fresh public HTML response on 1 November 2026 UTC. The PGST section describes 10% and introduction on 1 January 2023; its legislation/resources links include RPPL 11-11, Title 40, PGST regulations labelled 'as of 2/7/2023', registration resources and forms. | Administrative corroboration and locators. The linked regulations and forms have not been completely qualified here. The page's other tax summaries are outside this reference and are not adopted. Retrieval does not establish complete current-law acceptance. |
-| **S3. [Customs: Time of Import](https://bcbp.pw/?page_id=3700) and [Exempt and Temporary](https://bcbp.pw/?page_id=3199)** | Fresh credential-free official API responses and the Time of Import HTML text. Complete published extracts of sections 1214, 1238, 1239(a)–(b), 1283(a)–(c), section 1282(b) only and the site's displayed section 1215 text were read. | Official HTML transcriptions, separate from original Act images. Section 1239 retains source-line artefacts. The exemption page appears to join a further import category into 1215(a)(5)(B); original numbering and context are unresolved. No import exemption, valuation total or temporary-import PGST treatment is established for an actual case. The site's 2006 customs-regulation text is not automatically a PGST exemption. |
-| **S4. [OEK member legislation index](https://palauoek.org/members/honorable-tj-imerur-remengesau/)** | Native search returned primary index fields for SB 12-82 and SB 12-83, introduced 14 September 2026 and labelled 'In Progress', describing food exemptions and a 5%/utilities proposal respectively. | No original bill, enactment, commencement or subsequent status was qualified. The full page field read timed out; no body hash was retained. These are leads. Do not apply 5% or a proposed exemption from these fields. |
+| Source | Material actually read | Limits | Read on |
+| --- | --- | --- | --- |
+| **S1. [RPPL No. 11-11, official ministry gallery](https://ministryofhrctd.pw/regulations/RPPL%20No.%2011-11/)** | Complete section 1211(a)–(d) on printed p 10, gallery 11; section 1235(a)–(f) on printed pp 22–23, gallery 23–24; section 1236(a)–(b) on printed p 23; complete section 21(a)–(c) on printed pp 105–106, gallery 106–107, and the passage/approval annotations. Captured through the public HTML viewer, OCR processed locally and checked against the page images, including the formula's layout and handwritten date. | Selected units only. Other text visible at page boundaries is not accepted as a complete provision. The official gallery's page map was parsed as data, without executing it. Screenshots are derivatives, not raw original-image or PDF bytes. Electronic-copy authority, later amendments and actual application remain subject to review. | 2026-11-01 (read by Ryan) |
+| **S2. [Bureau of Revenue & Taxation index](https://www.palaugov.pw/executive-branch/ministries/finance/brt/)** | Fresh public HTML response on 1 November 2026 UTC. The PGST section describes 10% and introduction on 1 January 2023; its legislation/resources links include RPPL 11-11, Title 40, PGST regulations labelled 'as of 2/7/2023', registration resources and forms. | Administrative corroboration and locators. The linked regulations and forms have not been completely qualified here. The page's other tax summaries are outside this reference and are not adopted. Retrieval does not establish complete current-law acceptance. | 2026-11-01 (read by Ryan) |
+| **S3. [Customs: Time of Import](https://bcbp.pw/?page_id=3700) and [Exempt and Temporary](https://bcbp.pw/?page_id=3199)** | Fresh credential-free official API responses and the Time of Import HTML text. Complete published extracts of sections 1214, 1238, 1239(a)–(b), 1283(a)–(c), section 1282(b) only and the site's displayed section 1215 text were read. | Official HTML transcriptions, separate from original Act images. Section 1239 retains source-line artefacts. The exemption page appears to join a further import category into 1215(a)(5)(B); original numbering and context are unresolved. No import exemption, valuation total or temporary-import PGST treatment is established for an actual case. The site's 2006 customs-regulation text is not automatically a PGST exemption. | 2026-11-01 (read by Ryan) |
+| **S4. [OEK member legislation index](https://palauoek.org/members/honorable-tj-imerur-remengesau/)** | Native search returned primary index fields for SB 12-82 and SB 12-83, introduced 14 September 2026 and labelled 'In Progress', describing food exemptions and a 5%/utilities proposal respectively. | No original bill, enactment, commencement or subsequent status was qualified. The full page field read timed out; no body hash was retained. These are leads. Do not apply 5% or a proposed exemption from these fields. | 2026-11-01 (read by Ryan) |
 
 The [PalauGov original PDF locator](https://www.palaugov.pw/wp-content/uploads/2022/04/RPPL-11-11.pdf) remained unavailable for complete native retrieval; the native web reader rejected its size. The ministry's HTML gallery supplied the named page images instead. No PDF was sent to Firecrawl. Unusable loading captures and a redirected search-index asset supplied no statutory evidence.
 
-Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: whether Senate bills SB 12-82 (food exemptions) and SB 12-83 (a 5% and utilities proposal), introduced 14 September 2026 and still in progress, are enacted and when (the BRT page re-read on 2026-11-14 still states 10%); the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
