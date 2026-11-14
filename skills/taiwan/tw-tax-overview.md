@@ -27,7 +27,7 @@ Taiwan (Republic of China) taxes individuals mainly on Taiwan-source income (ove
 | --- | --- | --- | --- |
 | Individual income tax | 5% to 40% | Five bands; top band above NT$5,190,000 of net income for 2026 | https://www.ntbt.gov.tw/multiplehtml/1b82b380e1a34de9afd204d39b007db2 |
 | Personal exemption | NT$101,000 per person | 2026 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c |
-| Individual basic tax deduction | 750萬 (NT$7.5 million) | Basic income above it may trigger the basic tax | same |
+| Individual basic tax deduction | 750萬 (7.5 million NT dollars) | Basic income above it may trigger the basic tax | same |
 | Profit-seeking enterprise income tax | 20% | Taxable income above NT$120,000; half-excess cap to NT$200,000 | https://www.ntbt.gov.tw/singlehtml/0baa381b53034993a08862dfde2243b9?cntId=08f87d2104c04266a40e67c00d7c5c5a |
 | Enterprise and individual returns | 1 to 31 May of the following year | For 2026: May 2027 | same |
 | Business tax (VAT) | 5% | Floor of the statutory 5% to 10% range; bimonthly returns by the 15th of the next period | https://law-out.mof.gov.tw/LawContent.aspx?id=FL006082 |

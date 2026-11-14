@@ -38,7 +38,7 @@ Profit-seeking enterprises (companies, sole proprietorships and partnerships, li
 | Non-resident withholding, royalties | 20% | Same | same |
 | Non-resident withholding, interest on bonds, bills, securitised products and repos | 15% | Other interest 20% | same |
 | Late payment surcharge | 1% per 3 days, capped at 10% | Tax Collection Act art. 20 | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 |
-| Basic tax (AMT), enterprises | Basic income exemption 60萬 (NT$600 thousand) | Not adjusted for 2026 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c |
+| Basic tax (AMT), enterprises | Basic income exemption 60萬 (600 thousand NT dollars) | Not adjusted for 2026 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c |
 
 ## The base
 

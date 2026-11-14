@@ -28,7 +28,7 @@ Three business forms register with the Ministry of Economic Affairs (MOEA) syste
 | Company name pre-check | NT$300 (NT$150 online) | Company, limited partnership or business name | https://www.gov.tw/News_Content_26_541581 |
 | Company registration fee | NT$1 per NT$4,000 of capital in the articles; minimum NT$1,000 | NT$300 less if filed online | same |
 | Business (行號) registration fee | NT$1,000 | NT$200 less if filed online | same |
-| Bank account proof for a 行號 | Not needed if capital is under 25萬 (NT$250 thousand) | Companies always open a preparatory account | same |
+| Bank account proof for a 行號 | Not needed if capital is under 25萬 (250 thousand NT dollars) | Companies always open a preparatory account | same |
 | CPA capital verification | Required for companies | Not required for a 行號 | same |
 | Labour insurance unit | Compulsory with 5 or more employees | Voluntary for 1 to 4 | same |
 | Employment insurance and occupational accident insurance | Compulsory from the first employee | Registered units | same |
