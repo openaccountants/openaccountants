@@ -1,7 +1,7 @@
 ---
 name: armenia-income-tax
 description: "Prepare Armenia 2026 individual income-tax workpapers for salary, interest, royalty, rent, dividends, ordinary property and foreign-income credit, with ordinary refund and personal cross-border methods. Distinguishes personal income from entrepreneur business regimes, taxable versus reportable receipts, accrual/payment events, tax-agent withholding and annual prefill. Explains the separate 2025 declaration filed in 2026 and general 2026 filing dates. Includes two reproducible examples and preserved supplementary research controls and targeted published-form mapping. Use for Armenian PIT and annual declarations. Payroll levies are in the companion Guides. Specialist exemptions/refunds, actual portal acceptance, taxpayer-specific treaty entitlement and named accountant attestation remain separate boundaries. Checked against the law."
-version: 0.5
+version: 0.6
 type: computation
 jurisdiction: AM
 tax_year: 2026
@@ -29,7 +29,7 @@ Classify source under Article 144, including Armenian payer/PE employment and ci
 | Personal-income category | Domestic rule | 2026 primary source |
 |---|---|---|
 | Ordinary taxable salary/other general income | 20% | [150(1)][code], https://www.arlis.am/hy/acts/215611/latest |
-| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate; status/list/commission requirements, not every IT job | [150(1.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate from 1 January 2025 to 31 December 2031 (HO-499-N art. 8(1)); status/list/commission requirements, not every IT job | [150(1.1)][code], https://www.arlis.am/hy/acts/215611/latest |
 | Ordinary interest | General rate, currently 20%, after securities exemptions | [150(5), 149][code], https://www.arlis.am/hy/acts/215611/latest |
 | Bank-deposit / specified public-offer or regulated-market debt interest | 10%, after applicable securities exemptions | [150(5.1), 149][code], https://www.arlis.am/hy/acts/215611/latest |
 | Royalties | 10% | [150(6)][code], https://www.arlis.am/hy/acts/215611/latest |
