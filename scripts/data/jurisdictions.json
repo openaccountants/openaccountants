@@ -1099,6 +1099,13 @@
   "dir": "skills/portugal"
  },
  {
+  "code": "PW",
+  "name": "Palau",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/palau"
+ },
+ {
   "code": "PY",
   "name": "Paraguay",
   "region": "americas",
