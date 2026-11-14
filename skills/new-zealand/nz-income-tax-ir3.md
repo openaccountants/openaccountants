@@ -2,11 +2,11 @@
 name: nz-income-tax-ir3
 description: >
   Use this skill whenever asked about New Zealand income tax for self-employed individuals filing an IR3 return. Trigger on phrases like "how much tax do I pay in NZ", "IR3", "income tax return New Zealand", "allowable deductions NZ", "provisional tax NZ", "schedular payments", "independent earner tax credit", "IETC", "ACC levies", "Working for Families", "residual income tax", "self-employed tax NZ", "schedular withholding NZ", or any question about filing or computing income tax for a self-employed individual in New Zealand. Covers tax rates for 2024-25, 2025-26 and 2026-27, the IR3 structure, deductions, ACC levies, provisional tax, the IETC, penalties and the interaction with GST. Read this skill before touching any NZ income tax work.
-version: 2.2
+version: 2.3
 jurisdiction: NZ
 tax_year: 2026
 tax_year_notes: "Label 2026 means the tax year starting 1 April 2026 (2026-27, Inland Revenue's 2027 income year), whose annual rates are at Bill stage. Returns for 2024-25 and 2025-26 are also covered."
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -515,7 +515,7 @@ Dates are for a 31 March balance date. Inland Revenue's practice is that an inst
 | Return due, tax agent extension | Date allowed, no later than the 31 March after year end: 31 March 2026 | 2024-25 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
 | Return due, tax agent extension | No later than 31 March 2027 | 2025-26 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
 | Return due, tax agent extension | No later than 31 March 2028 | 2026-27 | [TAA s 37(4), (5)(a)](https://www.legislation.govt.nz/act/public/1994/166/en/latest/) |
-| Terminal tax | 7 February after year end: 7 February 2027 | 2025-26 | [ITA s RA 13(1), (2)(b), (3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column G](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
+| Terminal tax | 7 February after year end: 7 February 2027. That is a Sunday and Monday 8 February 2027 is the observed Waitangi Day holiday, so a payment received on Tuesday 9 February 2027 is on time (derived from [Inland Revenue, When to pay](https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay) and [Employment NZ, public holiday dates](https://www.employment.govt.nz/leave-and-holidays/public-holidays/public-holidays-and-anniversary-dates)); confirm the date in myIR | 2025-26 | [ITA s RA 13(1), (2)(b), (3)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column G](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Terminal tax, return linked to a tax agent with an extension | 7 April after that: 7 April 2027 | 2025-26 | [ITA s RA 13(2)(a), (3), (4)](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A column H](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Terminal tax, other years | 7 February 2026, or 7 April 2026 if linked | 2024-25 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
 | Terminal tax, other years | 7 February 2028, or 7 April 2028 if linked | 2026-27 | [ITA s RA 13](https://www.legislation.govt.nz/act/public/2007/97/en/latest/); [Schedule 3 Part A](https://www.legislation.govt.nz/act/public/2007/97/en/latest/) |
@@ -822,6 +822,8 @@ Layouts are carried from the prior version and untested. Each treatment assumes 
 
 | Source | URL | Read on | What was read |
 | --- | --- | --- | --- |
+| Inland Revenue, When to pay | https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay | 2026-11-14 | Read for the terminal tax row of the dates table: a due date on a weekend or public holiday moves to the next working day |
+| Employment New Zealand, Public holidays and anniversary dates | https://www.employment.govt.nz/leave-and-holidays/public-holidays/public-holidays-and-anniversary-dates | 2026-11-14 | Read for the terminal tax row of the dates table: Waitangi Day 2027 falls on Saturday 6 February and is observed on Monday 8 February |
 | Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/ | 2026-11-05 | Version as at 4 September 2026, read in part: sections and Schedules 1, 3 and 4 as cited, including sections DB 18AA, DE 2B to DE 12, EL 1 to EL 13 and RC 37 to RC 40 |
 | Income Tax Act 2007, version as at 30 March 2025 | https://www.legislation.govt.nz/act/public/2007/97/en/2025-03-30/ | 2026-11-05 | Read in part: sections DH 1 to DH 8 and DH 10; section LC 13(1) |
 | Income Tax Act 2007, version as at 30 June 2024 | https://www.legislation.govt.nz/act/public/2007/97/en/2024-06-30/ | 2026-11-05 | Read in part: section CB 6A; section LC 13(1) |
