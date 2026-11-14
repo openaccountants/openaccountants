@@ -438,11 +438,11 @@ IRAS disallows expenses "on using private hire cars or private cars (E, Q or S-p
 
 ### 6.3 Capital vs Revenue Expenditure; Renovation (Section 14N)
 
-Capital expenditure is not an expense; it goes through capital allowances if the asset qualifies. Qualifying renovation or refurbishment that does not affect the structure of the premises may be deducted under Section 14N. For a sole proprietor the cap applies to the individual, however many sole proprietorships he or she owns. Claim it under allowable business expenses on the 4-line statement, starting from the YA of the basis period in which the cost is first incurred. Keep an itemised list, confirmation that no Building Control approval is needed, and invoices for 5 years.
+Capital expenditure is not an expense; it goes through capital allowances if the asset qualifies. Qualifying renovation or refurbishment that does not affect the structure of the premises may be deducted under Section 14N. For a sole proprietor the cap applies to the individual, however many sole proprietorships he or she owns. From YA 2025 the expenditure cap uses fixed three-YA periods, first YA 2025 to YA 2027, rather than a rolling project-specific period. Three-year straight-line treatment exists, with an irrevocable option to claim qualifying expenditure in one year permanently available from YA 2025. Do not also claim the same expenditure as repairs or capital allowances. Claim it under allowable business expenses on the 4-line statement, starting from the YA of the basis period in which the cost is first incurred. Keep an itemised list, confirmation that no Building Control approval is needed, and invoices for 5 years.
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Section 14N renovation deduction cap | SGD 300,000 | "for every relevant 3-year period"  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions) |
+| Section 14N renovation deduction cap | SGD 300,000 | Per fixed three-YA period, first YA2025-YA2027; qualifying-cost and no-double-deduction conditions, not a fresh cap per project. [Official source](https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_it_deduction_r_r_costs.pdf) |
 
 ### 6.4 CPF MediSave Contributions
 
@@ -813,5 +813,7 @@ IRAS: "The NOR scheme has ceased. The last NOR status granted will run / be vali
 
 | Read for Form B/B1 published portal path, two/four-line fields, prior-year filing triggers, five-year retention and certified-account attachment threshold. | https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/filing-responsibilities-of-self-employed-persons-%28including-individual-partners%29 | 2026-11-14 |
 | Read for revenue, cost of goods, gross profit, allowable-expense sequence and sole-proprietor reporting fields; partnership allocation remains out of scope. | https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/calculating-my-business-income/calculating-business-income | 2026-11-14 |
+
+| Read for paragraphs2.3-2.6,4-6: Section14N one-year option, fixed three-YA cap, sole-proprietor aggregation and no double deduction. | https://www.iras.gov.sg/media/docs/default-source/e-tax/etaxguide_it_deduction_r_r_costs.pdf | 2026-11-14 |
 
 Not yet confirmed: the exact YA 2027 announced filing window, final Form B field/attachment/rounding requirements and any new personal rebate; do not reuse a YA 2026 form by changing its date. Some relief pages still illustrate YA 2026 facts; ongoing conditions and expressly announced YA 2027 changes above are the planning basis, to be reconciled with the final YA 2027 form before filing. The old statutory donation expiry and Income Tax Act/GST Act article text could not be newly opened. Home-office apportionment, client entertainment, sole-proprietor ride-hailing application, non-residence, partnerships, property/crypto character and refund/disputes remain the stated referral questions.
