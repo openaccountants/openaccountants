@@ -14,17 +14,18 @@ description: >
   exit-deferral adjustments and complex foreign-tax credit cases need additional
   source work. Independent AI review accepted partial draft publication;
   professional attestation remains pending.
-version: 0.3
+version: 0.4
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Faroe Islands cross-border payments and migration v0.3
+# Faroe Islands cross-border payments and migration v0.4
 
 > **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026, with ordinary foreign-tax credit, branch attribution, corporate-loan interest and bounded later-disposal methods checked on 28 October.
 

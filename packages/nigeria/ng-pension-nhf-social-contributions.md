@@ -1,13 +1,14 @@
 ---
 name: ng-pension-nhf-social-contributions
 description: "Nigerian employer social contributions for 2026: the Contributory Pension Scheme (10% employer and 8% employee of monthly emoluments; private-sector threshold 15 employees in the Act, 3 in PenCom guidance), the National Housing Fund (2.5% of basic salary), the Employees' Compensation Scheme contribution to NSITF (1% of monthly payroll), and the Industrial Training Fund levy (1% of annual payroll). Also covers how these contributions interact with personal income tax under the Nigeria Tax Act 2025 (in force 1 January 2026), which treats pension, NHF and NHIS contributions as eligible deductions and taxes individuals from 0% to 25%. Covers coverage, exemptions, foreign employees, remittance deadlines, Group Life cover and penalties. Trigger on: Nigeria pension contribution, PenCom 8% 10%, RSA remittance, NHF 2.5%, NSITF 1%, ITF levy, Nigerian payroll deductions 2026. Out of scope: PAYE administration (ng-payroll), NHIS rates, state pension laws."
-version: 0.1
+version: 0.2
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: international
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Nigerian social contributions: pension, NHF, NSITF and ITF (2026)

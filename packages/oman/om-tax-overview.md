@@ -1,16 +1,17 @@
 ---
 name: om-tax-overview
 description: "Tax overview for Oman, tax year 2026: which taxes apply, their headline rates, deadlines and authorities, from the Tax Authority pages and the laws, with links to the skill that owns each tax."
-version: 1.2
+version: 1.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Oman Tax Overview v1.2
+# Oman Tax Overview v1.3
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 

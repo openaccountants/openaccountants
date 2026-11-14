@@ -5,13 +5,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 description: "Sierra Leone tax intake map for the 2026 research year. Use to identify the taxpayer, residence and source, accounting period, source currency and separate filing obligations before choosing a tax calculation. It routes individual income and PAYE, company income and withholding, GST, NASSIT, transfer pricing and foreign-income questions to their six existing figure homes and preserves their unresolved conditions. It reads the NRA authority statute, selected income-tax and TIN provisions and the Bank denomination notice. The company-law reform download is explicitly held because its bill status does not prove enactment or commencement. Two arithmetic controls identify double redenomination and the difference between owner funding and a preliminary trading surplus. This is a partial intake workpaper, not filing approval or comprehensive coverage."
 tax_year: 2026
 tax_year_notes: "2026 research intake; conditional source baseline, full current law and filing implementation unresolved"
-last_updated: 2026-11-03
-version: 1.1
+last_updated: 2026-11-14
+version: 1.2
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Sierra Leone Tax Intake and Figure Map v1.1
+# Sierra Leone Tax Intake and Figure Map v1.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

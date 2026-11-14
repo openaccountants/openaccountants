@@ -1,10 +1,11 @@
 ---
 name: mexico-iva
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Mexico IVA (Impuesto al Valor Agregado) return or classify transactions for Mexican VAT purposes. Trigger on phrases like "prepare IVA return", "Mexican VAT", "declaracion de IVA", "CFDI classification", "SAT filing", or any request involving Mexico value-added tax. Also trigger when classifying transactions from CFDI XML files, bank statements, or invoices for Mexican IVA purposes. This skill contains the complete Mexico IVA classification rules, CFDI 4.0 requirements, rate determination (16%/0%/exempt), border zone treatment, withholding rules, deductibility rules, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Mexico IVA-related work.
-version: 2.1
+version: 2.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: situation-rules
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -20,29 +21,24 @@ Self-employed personas fisicas and personas morales filing the monthly Mexican I
 
 ## Rates, bands and thresholds
 
-**Quick reference field table**
+Country: Mexico (Estados Unidos Mexicanos). Authority: Servicio de Administración Tributaria (SAT). Currency: MXN. Return: the monthly IVA declaration, filed in the Declaraciones y Pagos service on the SAT portal (https://www.sat.gob.mx). E-invoicing: CFDI 4.0 for every transaction. Primary legislation: Ley del Impuesto al Valor Agregado (LIVA), its Reglamento (RLIVA), Código Fiscal de la Federación (CFF) and Resolución Miscelánea Fiscal 2026 (RMF 2026). Tax year 2026.
 
-| Field | Value |
-| --- | --- |
-| Country | Mexico (Estados Unidos Mexicanos) |
-| Standard rate | 16% |
-| Border zone rate | 8% (50% reduction of the general rate, Decreto Region Fronteriza Norte, DOF 31-12-2018; conditions apply -- reviewer must confirm eligibility; extension into 2026 not in archived sources) |
-| Zero rate (tasa cero) | 0% (Article 2-A LIVA: basic food, medicine, agricultural, exports) -- input IVA IS creditable; pet food is NOT zero-rate, it pays 16% (Art. 2-A Fr. I b) numeral 6) |
-| Exempt (exento) | No IVA charged, input IVA NOT creditable (Articles 9, 15, 20, 25 LIVA) |
-| Return form | Declaracion Mensual de IVA (monthly, filed via Declaraciones y Pagos portal) |
-| Filing portal | https://www.sat.gob.mx (Portal del SAT) |
-| Authority | Servicio de Administracion Tributaria (SAT) |
-| Currency | MXN (Mexican Peso) |
-| Filing frequency | Monthly (all IVA filers, no exceptions) |
-| Deadline | 17th of the month following the period (individuals under RESICO: same) |
-| E-invoice requirement | CFDI 4.0 mandatory for all transactions (Comprobante Fiscal Digital por Internet) |
-| Primary legislation | Ley del Impuesto al Valor Agregado (LIVA); Codigo Fiscal de la Federacion (CFF); Resolucion Miscelanea Fiscal (RMF 2026) |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Deep research verification, April 2026 |
-| Validation date | April 2026 |
-| Skill version | 2.0 |
+| Item | Figure (2026) | Conditions | Source |
+| --- | --- | --- | --- |
+| Standard rate | 16% | All taxable acts and activities unless zero-rated or exempt (LIVA Art. 1: "la tasa del 16%") | [LIVA Art. 1 (SAT)](https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1) |
+| Zero rate (tasa 0%) | 0% | Activities listed in LIVA Art. 2-A (unprocessed basic food, patent medicines, agricultural inputs, listed exports); input IVA is creditable; food prepared for consumption on the premises is taxed at 16%; processed pet food is outside the 0% list (Art. 2-A fr. I b) numeral 6) | [LIVA Art. 2-A (SAT)](https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a) |
+| Exempt (exento) | No IVA, no credit | LIVA Arts. 9, 15, 20 and 25 (see 5.4) | same |
+| Northern border region stimulus | Credit of 50% of the IVA, an effective 8% | Only taxpayers with the aviso filed and all decree conditions met; CFDI shows "IVA Crédito aplicado del 50%" (RMF 2026 rule 11.9.3); decree extended to 31 December 2026 | [DOF 31-12-2025 extension decree](https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025); [RMF 2026 rule 11.9.3](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf) |
+| Retention by personas morales on fees and rent from personas físicas | Two thirds of the IVA transferred and effectively paid | RLIVA Art. 3 fr. I | [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
+| Monthly payment deadline | Day 17 of the following month | Monthly declaration (LIVA Art. 5-D) | [LIVA Art. 5-D (SAT)](https://wwwmatnp.sat.gob.mx/articulo/73134/articulo-5-d) |
+| Automobile investment cap carried into IVA credit | MXN 175,000 | LISR Art. 36 fr. II; LIVA Art. 5 fr. I ties credit to ISR deductibility | [LISR Art. 36 fr. II, DOF 18-11-2015](https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015) |
 
 **Read this whole section before classifying anything.**
+
+- **CFDI 4.0 requirements** -- Every sale, purchase, and payment must be documented by a valid CFDI 4.0 containing: RFC of issuer and recipient, regimen fiscal of issuer, uso del CFDI code, forma de pago, metodo de pago (PUE or PPD), lugar de expedicion (ZIP), IVA trasladado and/or retenido shown separately, UUID assigned by PAC, and SAT digital seal. Input IVA is NOT creditable without a valid, non-cancelled CFDI showing the client's correct RFC.
+- **Cash basis rule** -- Mexico IVA operates on a cash basis (flujo de efectivo) for most taxpayers. IVA is owed when payment is received, not when invoiced. IVA is creditable when payment is made, not when the CFDI is received. For PPD invoices, crediting requires the Complemento de Pago (REP) to be issued.
+
+## The taxable base
 
 **Return concepts (generic descriptions)**
 
@@ -72,9 +68,6 @@ The A/B/C/D codes below are internal worksheet labels used by this skill, not of
 | D3 | Less saldo a favor from prior periods |
 | D4 | Amount payable (cantidad a cargo) or D5: saldo a favor |
 
-- **CFDI 4.0 requirements** -- Every sale, purchase, and payment must be documented by a valid CFDI 4.0 containing: RFC of issuer and recipient, regimen fiscal of issuer, uso del CFDI code, forma de pago, metodo de pago (PUE or PPD), lugar de expedicion (ZIP), IVA trasladado and/or retenido shown separately, UUID assigned by PAC, and SAT digital seal. Input IVA is NOT creditable without a valid, non-cancelled CFDI showing the client's correct RFC.
-- **Cash basis rule** -- Mexico IVA operates on a cash basis (flujo de efectivo) for most taxpayers. IVA is owed when payment is received, not when invoiced. IVA is creditable when payment is made, not when the CFDI is received. For PPD invoices, crediting requires the Complemento de Pago (REP) to be issued.
-
 **Conservative defaults -- Mexico-specific** (practice guidance set by this skill, not statutory rules)
 
 | Ambiguity | Default |
@@ -100,7 +93,6 @@ The A/B/C/D codes below are internal worksheet labels used by this skill, not of
 | MEDIUM conservative-default count | >4 across the return |
 | LOW absolute net IVA position | MXN 100,000 |
 
-## The taxable base
 
 Each rule states the legal source and the return line mapping. Apply silently if the data is unambiguous.
 
@@ -110,7 +102,7 @@ Each rule states the legal source and the return line mapping. Apply silently if
 
 ### 5.2 Border zone rate 8% (Decreto region fronteriza)
 
-- **Border zone rate rule** -- Available ONLY when all conditions are met: tax domicile in qualifying border municipality, supply occurs physically in the zone, 18-month establishment requirement, aviso filed with SAT, not on EFOS blacklist. If ANY condition is unverified, apply 16%. Sales at 8%: internal lines A3 (net), A4 (IVA). Purchases at 8%: internal line B2.  _(Decreto de Estimulos Fiscales Region Fronteriza Norte, DOF 31-12-2018: 50% reduction of the general rate; extension into 2026 not confirmed in archived sources)_
+- **Border zone rate rule** -- Available ONLY when all conditions are met: tax domicile in qualifying border municipality, supply occurs physically in the zone, 18-month establishment requirement, aviso filed with SAT, not on EFOS blacklist. If ANY condition is unverified, apply 16%. The decree grants a credit of 50% of the IVA (CFDI value "IVA Crédito aplicado del 50%", RMF 2026 rule 11.9.3), an effective 8%. Sales at 8%: internal lines A3 (net), A4 (IVA). Purchases at 8%: internal line B2.  _(Decreto de Estimulos Fiscales Region Fronteriza Norte, DOF 31-12-2018, extended to 31 December 2026 by the decree of DOF 31-12-2025)_
 
 ### 5.3 Zero-rated activities 0% (Article 2-A LIVA)
 
@@ -118,7 +110,7 @@ Each rule states the legal source and the return line mapping. Apply silently if
 
 ### 5.4 Exempt activities (Articles 9, 15, 20, 25 LIVA)
 
-- **Exempt activities rule** -- Sale of land (Art. 9 Fr. I) and of constructions destined or used for housing (Art. 9 Fr. II); used movable goods except those sold by businesses (Art. 9 Fr. IV); residential rental (Art. 20 Fr. II); and the services listed in Art. 15, including accredited education (Fr. IV), urban/suburban public land transport (Fr. V), agro-weather, housing-credit, financial-guarantee and life insurance plus agent commissions on those (Fr. IX), and services deriving from interest in authorized financing operations (Fr. X). Import exemptions sit in Art. 25. Medical services are not listed in the archived Art. 15 text. Exempt = no IVA charged AND no input IVA credit on attributable costs.  _(Articles 9, 15, 20, 25 LIVA)_
+- **Exempt activities rule** -- Sale of land (Art. 9 Fr. I) and of constructions destined or used for housing (Art. 9 Fr. II); used movable goods except those sold by businesses (Art. 9 Fr. IV); residential rental (Art. 20 Fr. II); and the services listed in Art. 15, including accredited education (Fr. IV), urban/suburban public land transport (Fr. V), agro-weather, housing-credit, financial-guarantee and life insurance plus agent commissions on those (Fr. IX), and services deriving from interest in authorized financing operations (Fr. X). Import exemptions sit in Art. 25. Professional medical services that require a medical degree and are provided by individuals (personas físicas), alone or through civil societies, are exempt (Art. 15 Fr. XIV); medical, hospital, radiology and laboratory services of public decentralised bodies are exempt under Fr. XV. Exempt = no IVA charged AND no input IVA credit on attributable costs.  _(Articles 9, 15, 20, 25 LIVA)_
 
 ### 5.5 CFDI requirements for input IVA crediting
 
@@ -142,7 +134,7 @@ Each rule states the legal source and the return line mapping. Apply silently if
 
 ### 5.10 Vehicle rules (LISR Art. 36 Fr. II cross-reference)
 
-- **Vehicle cap rules** -- Automobile investments are deductible only up to MXN 175,000, or MXN 250,000 where propulsion is through rechargeable electric batteries, or combustion/hydrogen hybrids (LISR Art. 36 Fr. II, texto vigente DOF 01-04-2024). Because LIVA Art. 5 Fr. I ties IVA credit to ISR deductibility, input IVA on the vehicle follows the same cap. The cap does not apply to taxpayers whose activity is granting temporary use of automobiles, provided the vehicles are used exclusively for that activity.  _(LISR Art. 36 Fr. II; LIVA Art. 5 Fr. I)_
+- **Vehicle cap rules** -- Automobile investments are deductible only up to MXN 175,000 (LISR Art. 36 Fr. II, DOF 18-11-2015); a higher cap applies to automobiles propelled by rechargeable electric batteries and to hybrids (amount on the Not yet confirmed line). Because LIVA Art. 5 Fr. I ties IVA credit to ISR deductibility, input IVA on the vehicle follows the same cap. The cap does not apply to taxpayers whose activity is granting temporary use of automobiles, provided the vehicles are used exclusively for that activity.  _(LISR Art. 36 Fr. II; LIVA Art. 5 Fr. I)_
 
 ### 5.11 Cash basis timing
 
@@ -654,6 +646,14 @@ For each question, the inference rule comes first. Only ask if inference fails.
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| SAT article portal, LIVA Art. 1, read for the 16% rate | https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1 | 2026-11-14 |
+| SAT article portal, LIVA Art. 2-A, read for the 0% list, the 16% on food prepared on the premises and the effects of the 0% rate | https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a | 2026-11-14 |
+| SAT article portal, LIVA Art. 15, read for the exempt services list including Fr. IV (education) and Fr. XIV (medical services by individuals) | https://wwwmatnp.sat.gob.mx/articulo/67548/articulo-15 | 2026-11-14 |
+| SAT article portal, LIVA Art. 5-D, read for monthly payment by day 17 | https://wwwmatnp.sat.gob.mx/articulo/73134/articulo-5-d | 2026-11-14 |
+| DOF 31-12-2025, decree extending the northern and southern border stimulus decrees, read for the new validity to 31 December 2026 | https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025 | 2026-11-14 |
+| SAT, RMF 2026 (DOF 28-12-2025), read for chapter 11.9 and rule 11.9.3 (CFDI "IVA Crédito aplicado del 50%") | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-14 |
+| DOF 04-12-2006, Reglamento de la Ley del IVA, read for Art. 3 fr. I (two thirds retention) | https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006 | 2026-11-14 |
+| DOF 18-11-2015, LISR reform decree, read for Art. 36 fr. II (MXN 175,000 automobile cap) | https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015 | 2026-11-14 |
 | Ley del Impuesto al Valor Agregado, texto vigente (ultima reforma DOF 12-11-2021), Arts. 1o., 1o.-A, 1o.-A BIS, 2o.-A, 4o., 5o., 9o., 15, 18-B, 18-J, 20, 25 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-11-02 |
 | Reglamento de la Ley del IVA (ultima reforma DOF 25-09-2014), Art. 3 | https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf | 2026-11-01 |
 | Ley del Impuesto sobre la Renta, texto vigente (ultima reforma DOF 01-04-2024), Arts. 28 Fr. IV, 36 Fr. II, 106 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
@@ -668,10 +668,10 @@ Also referenced without full archival: CFF Arts. 29, 29-A, 32, 69-B (CFDI and EF
 2. ICMS-ST equivalent mechanisms (retencion to specific industries) require more granular treatment.
 3. The worked examples are drawn from a hypothetical software consultant. Sector-specific examples (manufacturing, retail, agricultural) should be added in v2.1.
 4. Border zone municipality lists may be updated by decree -- verify annually.
-5. The MXN 175,000 / MXN 250,000 vehicle cap values are as of 2026. Verify annually.
+5. The MXN 175,000 vehicle cap (DOF 18-11-2015) applies in 2026; the electric and hybrid cap is on the Not yet confirmed line.
 6. Digital platform withholding rules (Art. 18-B to 18-M) are evolving and may change.
 
-Not yet confirmed: extension of the border-zone 8% IVA decrees into 2026 (the archived SAT guide documents the 2018 northern-border decree only); no-cap treatment of cargo and taxi vehicles under LISR Art. 36 Fr. II (not present in the archived texto vigente); official SAT Declaraciones y Pagos field names for the IVA return (the A/B/C/D codes in this skill are internal worksheet labels).
+Not yet confirmed: the higher LISR Art. 36 fr. II automobile cap for electric and hybrid vehicles (the old MXN 250,000, not read in a 2026 text today); the 50% IVA retention by digital intermediation platforms under LIVA Art. 18-J (not read today); no-cap treatment of cargo and taxi vehicles under LISR Art. 36 Fr. II (not present in the archived texto vigente); official SAT Declaraciones y Pagos field names for the IVA return (the A/B/C/D codes in this skill are internal worksheet labels).
 
 
 ## Disclaimer

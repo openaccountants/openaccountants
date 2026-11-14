@@ -10,10 +10,11 @@ description: >
   Kansas", "K-40PN", "Kansas reciprocity", "moving to Kansas".
   Source-cited draft; KDOR withholding-residence rule verified 2026-10-28;
   form IDs and credit mechanics not yet confirmed.
-version: 0.1
+version: "0.2"
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
+type: situation-rules
 depends_on:
   - ks-income-tax
 category: cross-border
@@ -51,7 +52,6 @@ See also: `ks-income-tax`, `ks-payroll`, `ks-corporate-income-tax`.
 |---|---|---|
 | Resident base | Worldwide income at Kansas rates | Residence-based withholding rule, [KDOR Withholding page](https://www.ksrevenue.gov/bustaxtypeswh.html) |
 | Source rules for remote work | Income sourced where services are performed; Kansas resident remote workers are still Kansas-withheld | KDOR Withholding page |
-
 | Nonresident base | Kansas tax on all income as if resident, scaled by the Kansas-source share (K.S.A. 79-32,110(b)) | K.S.A. 79-32,110(b) |
 | Foreign-country tax | The resident credit for tax paid to a foreign country is limited to that tax less the federal credit allowed for it | K.S.A. 79-32,111(a) |
 
