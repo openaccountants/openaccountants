@@ -21,6 +21,13 @@
   "dir": "skills/antigua-and-barbuda"
  },
  {
+  "code": "AI",
+  "name": "Anguilla",
+  "region": "americas",
+  "owner": "michael",
+  "dir": "skills/anguilla"
+ },
+ {
   "code": "AL",
   "name": "Albania",
   "region": "europe",
@@ -47,6 +54,13 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/argentina"
+ },
+ {
+  "code": "AS",
+  "name": "American Samoa",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/american-samoa"
  },
  {
   "code": "AT",
@@ -224,6 +238,13 @@
   "dir": "skills/canada/alberta"
  },
  {
+  "code": "CC",
+  "name": "Cocos (Keeling) Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/cocos-keeling-islands"
+ },
+ {
   "code": "CG",
   "name": "Republic Of Congo",
   "region": "africa",
@@ -243,6 +264,13 @@
   "region": "africa",
   "owner": "ryan",
   "dir": "skills/ivory-coast"
+ },
+ {
+  "code": "CK",
+  "name": "Cook Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/cook-islands"
  },
  {
   "code": "CL",
@@ -292,6 +320,13 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/curacao"
+ },
+ {
+  "code": "CX",
+  "name": "Christmas Island",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/christmas-island"
  },
  {
   "code": "CY",
@@ -411,6 +446,13 @@
   "region": "americas",
   "owner": "open",
   "dir": "skills/falkland-islands"
+ },
+ {
+  "code": "FM",
+  "name": "Micronesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/micronesia"
  },
  {
   "code": "FO",
@@ -602,6 +644,13 @@
   "dir": "skills/india"
  },
  {
+  "code": "IO",
+  "name": "British Indian Ocean Territory",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/british-indian-ocean-territory"
+ },
+ {
   "code": "IS",
   "name": "Iceland",
   "region": "europe",
@@ -614,6 +663,13 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/italy"
+ },
+ {
+  "code": "JE",
+  "name": "Jersey",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/jersey"
  },
  {
   "code": "JM",
@@ -656,6 +712,13 @@
   "region": "apac",
   "owner": "ryan",
   "dir": "skills/cambodia"
+ },
+ {
+  "code": "KI",
+  "name": "Kiribati",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/kiribati"
  },
  {
   "code": "KM",
@@ -805,6 +868,13 @@
   "dir": "skills/madagascar"
  },
  {
+  "code": "MH",
+  "name": "Marshall Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/marshall-islands"
+ },
+ {
   "code": "MK",
   "name": "North Macedonia",
   "region": "europe",
@@ -838,6 +908,13 @@
   "region": "apac",
   "owner": "ryan",
   "dir": "skills/macau"
+ },
+ {
+  "code": "MP",
+  "name": "Northern Mariana Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/northern-mariana-islands"
  },
  {
   "code": "MQ",
@@ -917,6 +994,13 @@
   "dir": "skills/namibia"
  },
  {
+  "code": "NC",
+  "name": "New Caledonia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/new-caledonia"
+ },
+ {
   "code": "NE",
   "name": "Niger",
   "region": "africa",
@@ -959,6 +1043,13 @@
   "dir": "skills/nepal"
  },
  {
+  "code": "NU",
+  "name": "Niue",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/niue"
+ },
+ {
   "code": "NZ",
   "name": "New Zealand",
   "region": "apac",
@@ -985,6 +1076,13 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/peru"
+ },
+ {
+  "code": "PF",
+  "name": "French Polynesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/french-polynesia"
  },
  {
   "code": "PG",
@@ -1022,6 +1120,13 @@
   "dir": "skills/saint-pierre-and-miquelon"
  },
  {
+  "code": "PN",
+  "name": "Pitcairn",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/pitcairn"
+ },
+ {
   "code": "PR",
   "name": "Puerto Rico",
   "region": "americas",
@@ -1034,6 +1139,13 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/portugal"
+ },
+ {
+  "code": "PW",
+  "name": "Palau",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/palau"
  },
  {
   "code": "PY",
@@ -1083,6 +1195,13 @@
   "region": "middle-east",
   "owner": "michael",
   "dir": "skills/saudi-arabia"
+ },
+ {
+  "code": "SB",
+  "name": "Solomon Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/solomon-islands"
  },
  {
   "code": "SC",
@@ -1267,6 +1386,13 @@
   "dir": "skills/trinidad-and-tobago"
  },
  {
+  "code": "TV",
+  "name": "Tuvalu",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/tuvalu"
+ },
+ {
   "code": "TW",
   "name": "Taiwan",
   "region": "apac",
@@ -1293,6 +1419,13 @@
   "region": "africa",
   "owner": "ryan",
   "dir": "skills/uganda"
+ },
+ {
+  "code": "UM",
+  "name": "United States Minor Outlying Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/united-states-minor-outlying-islands"
  },
  {
   "code": "US",
@@ -1720,6 +1853,13 @@
   "region": "apac",
   "owner": "ryan",
   "dir": "skills/vanuatu"
+ },
+ {
+  "code": "WF",
+  "name": "Wallis and Futuna",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/wallis-and-futuna"
  },
  {
   "code": "WS",

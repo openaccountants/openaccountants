@@ -9,7 +9,7 @@ description: >
   tourists. Trigger on Cayman VAT, Cayman GST, Cayman sales tax, Cayman import
   duty, Cayman customs duty, Cayman hotel tax. Built from Cayman legislation;
   not reviewed by an accountant.
-version: 1.0
+version: 1.1
 jurisdiction: KY
 tax_year: 2026
 last_updated: 2026-11-14
@@ -42,6 +42,12 @@ Businesses and individuals buying, selling or importing in the Cayman Islands in
 | Other ad valorem rates | 12%, 17%, 29.50% on particular lines | Read the line for the item | same |
 | Beer | CI$1.95 a litre | 2203.00.00, specific duty | same |
 | Tourist accommodation tax | thirteen per cent of the charges for each tourist | Paid by the proprietor; timeshare owners, their guests and exchangers: US$10 a room a day | Tourist Accommodation (Taxation) Act (2013 Revision), s. 3: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf |
+| Accommodation tax return and payment | Within 28 days after the end of the month of supply | Copies of the tourist statements go to the Collector of Taxes with the payment | same, s. 7 |
+| Accommodation tax default surcharge | 20% of the tax due for the month | Statements not submitted or tax not paid in full by the deadline | same, s. 8 |
+| Value for duty, uninsured goods | Notional insurance of 1% of cost and freight | Value is the normal open-market price at entry, including freight and insurance to the import point | Customs and Border Control Act (2024 Revision), s. 44: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0034/2018-0034_2024%20Revision.pdf |
+| Customs entry | Before or within 7 days of landing, from the date of report | | same, s. 17(1) |
+| Returning resident allowance | Up to CI$1,000 for 1 July to 31 August 2026 and 23 November 2026 to 7 January 2027; otherwise up to CI$800 from 1 September 2026 | Personal and household goods accompanying the passenger, at the Director's discretion | Customs Tariff (Amendment of Schedule 2) Order 2026, SL 33 of 2026, para 2: https://gov.ky/documents/35692/0/CustomsTariff%28AmendmentofSchedule2%29Order2026_MADE.pdf/6764b881-1563-1c4f-4eac-d526acaf3136?t=1782940267024 |
+| Departure tax | CI$26 a traveller by air or non-cruise vessel; CI$6 a cruise ship tourist | Collected by the carrier's agent | Travel (Departure Tax and Environmental Protection Fee) Act (2026 Revision), s. 4: https://gov.ky/documents/35692/0/Travel%2B%28Departure%2BTax%2Band%2BEnvironmental%2BProtection%2BFee%29%2BAct%2B%282026%2BRevision%29%2C.pdf/8ce52143-7c33-aeb3-eb13-4b2e8d46aee0?t=1770926366494 |
 
 ## The base
 
@@ -49,14 +55,14 @@ Businesses and individuals buying, selling or importing in the Cayman Islands in
 
 1. Classify the goods to the tariff line (heading and subheading) in the Customs Tariff Act Schedule.
 2. Read the rate on that line: a percentage, or a specific amount per unit (litre, kilogram, number).
-3. Apply it to the value for duty, or to the quantity for a specific duty.
-4. Pay Customs and Border Control on entry. Duty paid is a cost; nothing is recoverable later because there is no VAT credit system.
+3. Apply it to the value for duty, or to the quantity for a specific duty. The value is the normal open-market price between independent parties, including freight and insurance to the import point; for uninsured goods add a notional 1% of cost and freight (s. 44). Convert the invoice at the exchange rate in force on arrival.
+4. Enter the goods before or within 7 days of landing (s. 17) and pay Customs and Border Control on entry. Duty paid is a cost; nothing is recoverable later because there is no VAT credit system.
 
 Duty concessions in development agreements and other exemptions: flag for a practitioner. A drawback scheme exists for the marine industry (Marine Industry (Import Duty and Tonnage Tax) (Drawback) Act): refer.
 
 ### Accommodation tax
 
-The proprietor pays 13% of the room charges made to each tourist, meaning a person not ordinarily resident who stays up to six months. The proprietor keeps records and gives each departing tourist a statement (s. 4).
+The proprietor pays 13% of the room charges made to each tourist, meaning a person not ordinarily resident who stays up to six months. The proprietor keeps records and gives each departing tourist a statement (s. 4). Copies of the month's statements and the tax go to the Collector of Taxes within 28 days after the month ends (s. 7); a late or short month bears a 20% surcharge (s. 8). The Department of Tourism publishes the return forms and asks for a nil return for vacant months.
 
 ### Bank-statement patterns
 
@@ -71,24 +77,26 @@ The proprietor pays 13% of the room charges made to each tourist, meaning a pers
 
 | Unknown | Default |
 |---|---|
-| Duty rate on an import | 22% until the line is checked |
+| Duty rate on an import | No default: classify the goods to the exact tariff line first (rates run from 0% to 42% and some duties are per unit) |
 | Guest status | Tourist (13% applies) unless shown to be ordinarily resident |
 
 ## Deadlines and filing
 
 - Import duty: paid on entry of the goods.
-- Accommodation tax: the Act requires records and a statement to each tourist; the payment schedule is not confirmed in this version.
+- Customs entry: before or within 7 days of landing; duty paid on entry.
+- Accommodation tax: statements and payment within 28 days after the end of the month of supply.
+- Departure tax: collected by the carrier's agent at departure.
 - No VAT returns exist.
 
 ## Penalties and interest
 
-Customs and accommodation tax penalties were not read for this version; refer any dispute.
+Accommodation tax: 20% surcharge on the month's tax if statements are not submitted or the tax not paid in full by the 28-day deadline (s. 8); the Collector can assess missing amounts. Customs penalties were not read for this version; refer any dispute.
 
 ## Cross-border points
 
 - Exports carry no Cayman tax.
 - Imported services carry no Cayman tax.
-- Goods brought in by visitors and residents are subject to the same tariff, subject to allowances not confirmed here.
+- Returning residents: duty relief on accompanying personal and household goods up to CI$800 (CI$1,000 in the two 2026 holiday periods), at the Director's discretion; merchandise is outside the allowance.
 
 ## Two worked examples that recompute
 
@@ -144,6 +152,9 @@ The tax applies only to tourists, so the proprietor needs evidence of each guest
 |---|---|---|
 | Cayman legislation, current by title: read to confirm no VAT, GST or sales tax Act is in force | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
 | Customs Tariff Act (2026 Revision, revised as at 31 December 2025): read for the Schedule rates (22% on most lines, 0%, 12%, 17%, 27%, 29.50%, 42%, beer CI$1.95 a litre) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2012/2012-0001/2012-0001_2026%20Revision.pdf | 2026-11-14 |
-| Tourist Accommodation (Taxation) Act (2013 Revision): read for ss. 2 to 4, the thirteen per cent rate, timeshare rule, tourist definition and records | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf | 2026-11-14 |
+| Customs and Border Control Act (2024 Revision): read for s. 17 (7-day entry) and s. 44 (value for duty, 1% notional insurance) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0034/2018-0034_2024%20Revision.pdf | 2026-11-14 |
+| Customs Tariff (Amendment of Schedule 2) Order 2026, SL 33 of 2026: read for the CI$800 and CI$1,000 returning resident allowance | https://gov.ky/documents/35692/0/CustomsTariff%28AmendmentofSchedule2%29Order2026_MADE.pdf/6764b881-1563-1c4f-4eac-d526acaf3136?t=1782940267024 | 2026-11-14 |
+| Travel (Departure Tax and Environmental Protection Fee) Act (2026 Revision): read for s. 4, CI$26 and CI$6 | https://gov.ky/documents/35692/0/Travel%2B%28Departure%2BTax%2Band%2BEnvironmental%2BProtection%2BFee%29%2BAct%2B%282026%2BRevision%29%2C.pdf/8ce52143-7c33-aeb3-eb13-4b2e8d46aee0?t=1770926366494 | 2026-11-14 |
+| Tourist Accommodation (Taxation) Act (2013 Revision): read for ss. 2 to 4, 7 and 8, the thirteen per cent rate, timeshare rule, tourist definition, records, the 28-day deadline and the 20% surcharge | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf | 2026-11-14 |
 
-Not yet confirmed: the value for duty (the old files said CIF value; the Customs and Border Control Act was not read); the old ranges "food 15% to 22%", "motor vehicles 29.5%, luxury 42%" (vehicle lines were not checked line by line); the accommodation tax payment date and penalties; visitor and returning resident allowances; fuel duties per gallon.
+Not yet confirmed: the 2% temporary import rate in Act 2 of 2025 (not among the provisions commenced on 1 October 2025); the environmental tax on motor vehicles from 1 October 2025 (CI$1,000 or CI$2,000 by CIF value as reported; the order, SL 36 of 2025, was not read); the 15% building materials rate and Sister Islands waivers announced to 31 December 2030; the accommodation tax interest rate; the old ranges "food 15% to 22%", "motor vehicles 29.5%, luxury 42%" (vehicle lines were not checked line by line); fuel duties per gallon.
