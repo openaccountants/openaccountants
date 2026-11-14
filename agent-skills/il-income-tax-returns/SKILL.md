@@ -7,339 +7,165 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/il-income-tax-returns"
   jurisdiction: "IL"
   tax_year: "2026"
-  last_updated: "2026-11-03"
+  last_updated: "2026-11-14"
 ---
 
-# IL Income Tax Returns
-
-## Israel Income Tax Returns Skill v1.1
+# Israel: annual income tax returns and computation
 
 > **Based on work by [Skills IL](https://github.com/skills-il/tax-and-finance)**, licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1: Quick reference
-
-**Quick reference table**
+> **General reference only.** Produce a tax working paper and filing brief for review by an Israeli CPA. Establish the applicable year before using any rate or deadline.
 
-| Field | Value |
-| --- | --- |
-| Country | Israel (מדינת ישראל) |
-| Scope | Annual income tax returns for individuals and companies |
-| Currency | NIS (Israeli New Shekel: ₪) |
-| Tax authority | Israel Tax Authority (ITA: Reshut HaMisim: רשות המיסים) |
-| Filing portal | Shaam Online: https://www.misim.gov.il |
-| Individual return | Form 1301 (דוח שנתי ליחיד) |
-| Short return (salaried refund) | Form 135 (דוח שנתי מקוצר) |
-| Corporate return | Form 1214 (דוח שנתי לחברה) |
-| Corporate tax rate | unverified: 23% flat |
-| Surtax threshold | NIS 721,560 a year (NIS 60,130 a month) for 2026 (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.11); unverified: frozen 2025 to 2027 |
-| Credit point value | NIS 242 a month, NIS 2,904 a year, for 2026 (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.12, s.33A); unverified: frozen 2025 to 2027 |
-| Contributor | Open Accountants Community |
-
-### Conservative defaults
-
-**Conservative defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown filing obligation | Assume filing is required |
-| Unknown bracket year | Use the most recent confirmed brackets |
-| Unknown credit points | Apply base resident points only (2.25 male / 2.75 female) |
-| Unknown rental income track | Apply marginal rate (most conservative; highest potential tax) |
-| Unknown capital gains holding period | Apply 25% rate (no reduced rate exists in Israel regardless) |
-
-## Section 2: Return types and deadlines
-
-**Return types and deadlines table**
-
-| Form | Hebrew | Who files | Deadline | Frequency |
-| --- | --- | --- | --- | --- |
-| 1301 | דוח שנתי ליחיד | Individuals, sole proprietors, freelancers | 30 June 2026 online; 29 May 2026 paper (tax year 2025) | Annual |
-| 135 | דוח שנתי מקוצר | Salaried individuals claiming a refund | unverified: within 6 years of the tax year end (Section 160) | On demand |
-| 1214 | דוח שנתי לחברה | Companies (Chevra Ba'am, Chevra Pratit) | unverified: May 31 (5 months after year end); extensions available | Annual |
-| 126 | דוח מעסיק על משכורות | Employers reporting employee salaries | unverified: April 30 | Annual |
-| 856 | דוח על תשלומים לספקים | Businesses reporting payments to suppliers | unverified: April 30 | Annual |
-| 6111 | דוח כספי אחיד | unverified: businesses with turnover > NIS 300,000 (incl. VAT) | Submitted with 1301 or 1214 | Annual |
-| Mikdamot | מקדמות מס הכנסה | Self-employed and businesses with advance assessments | unverified: 15th of the month after the period | Bi-monthly |
-| Mas Shevach | הצהרת מס שבח | Anyone selling real estate in Israel | unverified: 30 days from sale (40 days if requesting exemption) | Per transaction |
-| 1322/1325 | דוח רווח הון מניירות ערך | Anyone with securities capital gains | unverified: 30 days from sale (or annually with Form 1301) | Per transaction or annual |
+## Scope
 
-**CPA-represented filers** (unverified) typically receive automatic extensions through the CPA association's quota arrangement with the ITA (often to September 30 or later).
+Individuals, sole proprietors and company return preparation for Israel in 2026. The personal-exertion bands and surtax below apply to 2026. The latest complete annual-return guidance read is the **2025-2026 filing cycle**: do not label its return forms, thresholds or extensions as tax-year 2026 instructions.
 
-## Section 3: Who must file Form 1301
+| Quick reference | Rate or threshold and condition | Official source |
+|---|---|---|
+| Personal-exertion income | Progressive s.121(b) bands below; also generally available from age 60, subject to the statutory books condition | ITO s.121, https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Credit-point value | NIS 242/month; NIS 2,904/year (derived: 12 months) | ITO s.33A; 2026 booklet p.12, https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf |
+| General surtax | 3% on total taxable income above NIS 721,560/year | ITO s.121B(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Capital-source surtax | Separate 2% on capital-source taxable income above NIS 721,560/year | ITO s.121B(a1), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Residential sale surtax entry | Sale value must exceed NIS 5,385,285 and sale must not be exempt; this is a sale-value test, not a gain threshold | ITO s.121B(e), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-- **Who must file Form 1301**: Self-employed individuals (Osek Murshe or Osek Patur); Individuals whose gross salary exceeded NIS 721,560 (surtax threshold); Individuals with income from multiple employers; Individuals with foreign income or assets abroad exceeding reporting thresholds; Anyone who received capital gains during the tax year; Individuals who received rental income exceeding the exempt threshold  _(Section 3: Who must file Form 1301)_
+## Ask the client first
 
-## Section 4: Income tax brackets (2026)
+Ask for residence, tax year, age, all household income and supporting certificates; every employer's Form 106 and withholding certificates; business books and allowable-expense evidence; VAT status; foreign income/assets/entity holdings; property acquisition/sale history; securities and crypto transaction records; pension deposits, insured income and fund certificates; personal-status/child/custody evidence; advance payments, losses and prior returns. Identify joint/separate spouse treatment and any representative authorization. Do not assume standard points, a default rental track or a universal capital-gain rate when facts are missing.
 
-The Economic Efficiency Law 2026, chapter C, amended s.121 on 31.3.2026 with effect from 1 January 2026: 20% now runs from NIS 120,721 to 228,000, 31% from 228,001 to 301,200 and 35% from 301,201 to 560,280 (2026 deduction booklet p.4). The booklet's 2026 table (2026 deduction booklet p.10) gives the full set of bands. unverified: that the other bands are frozen at 2025 values:
+## The method, step by step
 
-**Income tax brackets (2026) table**  _(Section 4: Income tax brackets (2026))_
+### Route the return and annexes
 
-| Bracket | Annual income range (NIS) | Rate | Source |
-| --- | --- | --- | --- |
-| 1 | 0 – 84,120 | 10% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.10) |
-| 2 | 84,121 – 120,720 | 14% | same |
-| 3 | 120,721 – 228,000 | 20% | same |
-| 4 | 228,001 – 301,200 | 31% | same |
-| 5 | 301,201 – 560,280 | 35% | same |
-| 6 | 560,281 – 721,560 | 47% | same |
-| Surtax | Above 721,560 | See Section 5 | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
+Use Form 1301 for an individual return; Form 135 for a voluntary refund only where the taxpayer qualifies and is not obliged to file the full return, as explained in [il-employee-tax-refund](il-employee-tax-refund.md). Companies use Form 1214; profit extraction is in [il-corporate-tax](il-corporate-tax.md). Employer salary reporting (Form 126) and supplier withholding reconciliation (Form 856) are payer obligations, not substitutes for the recipient's return. See [il-tax-withholding](il-tax-withholding.md).
 
-These bands apply to income from personal exertion (work and business). Income that is not from personal exertion is taxed at 31% up to NIS 25,100 a month and 35% up to NIS 46,690 a month, then 47% (2026 deduction booklet p.10).
+Self-employment, salary, foreign interests/income, gains and rent are filing-screen inputs. Apply ITO ss.131-134 and the return-exemption regulations to the actual facts: multiple employers alone or a single threshold alone does not settle every filing case. New immigrants and returners need [il-new-immigrant](il-new-immigrant.md), including the reporting transition from 2026.
 
-### Monthly equivalent brackets
+### Compute the taxable base
 
-**Monthly equivalent brackets table**
+Reconcile income by source to books and third-party certificates; deduct only substantiated allowable amounts, applying restrictions, exemptions and the applicable loss rules. Allocate special-rate income separately. Salary withholding is a prepayment, not final tax. Keep a bridge from accounting profit to taxable income, then from tax before credits to liability after eligible credits and payments. Corporate taxable income is not automatically accounting profit. Use ITO ss.2, 17, 28, 31-32, 91-92 and 121 as applicable ([Ordinance](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-| Monthly income (NIS) | Rate | Source |
-| --- | --- | --- |
-| Up to 7,010 | 10% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.10) |
-| 7,011 – 10,060 | 14% | same |
-| 10,061 – 19,000 | 20% | same |
-| 19,001 – 25,100 | 31% | same |
-| 25,101 – 46,690 | 35% | same |
-| 46,691 and above | 47% | same |
+### Personal-exertion bands: one home for the pack
 
-## Section 5: Surtax (Mas Yesafim: מס יסף)
+The March 2026 amendment widens the bands retrospectively from 1 January 2026. Do not use the narrower 2025 bands for 2026. The monthly figures below are derived by dividing annual endpoints by 12; lower boundaries describe the next whole shekel, while actual calculations apply marginal slices without rounding a fractional shekel out of tax.
 
-Two separate charges, on two different bases (2026 deduction booklet p.11, Income Tax Ordinance s.121B):
+| Annual taxable slice (NIS) | Monthly equivalent (NIS, derived) | Rate | Official source |
+|---|---|---|---|
+| First 84,120 | First 7,010 (derived: annual endpoints / 12) | 10% | ITO s.121(b)(1)(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 84,120 to 120,720 | Above 7,010 to 10,060 (derived: annual endpoints / 12) | 14% | ITO s.121(b)(1)(b), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 120,720 to 228,000 | Above 10,060 to 19,000 (derived: annual endpoints / 12) | 20% | ITO s.121(b)(1)(c), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 228,000 to 301,200 | Above 19,000 to 25,100 (derived: annual endpoints / 12) | 31% | ITO s.121(b)(1)(d), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 301,200 to 560,280 | Above 25,100 to 46,690 (derived: annual endpoints / 12) | 35% | ITO s.121(a)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 560,280 | Above 46,690 (derived: annual endpoints / 12) | 47% before surtax | ITO s.121(a)(3), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-**Surtax rates table**  _(Section 5: Surtax (Mas Yesafim: מס יסף))_
+Income outside personal exertion generally starts at 31% up to NIS 301,200, then 35% up to NIS 560,280, then 47%; s.121(b) also extends the lower bands to a person who reached age 60 in the tax year. The lower bands do not apply to income requiring books where acceptable books were not maintained, under s.121(b)(2). Special-rate income and exemptions require their own provisions. The 2025-2027 indexation freeze does not cancel the express 2026 band amendment (2026 booklet pp.3-4).
 
-| Charge | Base | Rate | Source |
-| --- | --- | --- | --- |
-| Surtax, s.121B(a) | The part of an individual's total taxable income above NIS 721,560 a year (NIS 60,130 a month) | 3% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
-| Additional surtax on capital income | Taxable income from capital sources above the s.121B amount (added by the Economic Efficiency Law published 26 December 2024) | 2% more | same |
-| Residential property sale, s.121B(e) | The real betterment (gain) on selling a right in a residential apartment, only if the sale value exceeds NIS 5,385,285 (2026) and the sale is not exempt under any law | Surtax as above | same |
+### Apply both surtax bases
 
-- **Employment income**: only the 3% charge applies; top rate on employment income 50% (47% + 3%).
-- **Capital income**: the 3% charge on the part of total taxable income above the threshold, and the 2% charge on capital-source taxable income above the threshold. Do not apply a blanket 5% to every capital item once total income passes the threshold; work out each base. unverified: which income types count as "capital sources" (dividends, interest, rent, capital gains), and the effective top rates.
-- **Residential property**: the sale enters the surtax computation only if both conditions hold: sale value above NIS 5,385,285 (2026) and the sale is not exempt. unverified: the treatment of gains on non-residential real estate.
-- **Surtax threshold**: NIS 721,560 for 2026 (2026 deduction booklet p.11). unverified: that it stays frozen through tax year 2027.
+General surtax = max(total taxable income - NIS 721,560, 0) x 3%. Additional capital surtax = max(capital-source taxable income - NIS 721,560, 0) x 2%. Capital-source income excludes business/employment income under s.2(1)/(2) and other personal-exertion income under s.121B(e). Capital-source is a statutory residual category, not just gains on disposals. Exclude the defined inflationary components. A residential-apartment gain enters only when both the sale-value and non-exempt conditions above hold. Do not apply a flat 5% to every dividend or gain merely because total income exceeds the threshold ([ITO s.121B](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-## Section 6: Nekudot Zikui (נקודות זיכוי: Tax credit points)
+### Credits and pension relief
 
-- **Credit point value**: NIS 242 a month for 2026 (2026 deduction booklet p.12, s.33A), so NIS 2,904 a year. unverified: frozen 2025 to 2027. unverified: every row of the table below; the point values per category were not checked against the law in this refresh.  _(Section 6: Nekudot Zikui (נקודות זיכוי: Tax credit points))_
+Nekudot Zikui reduce tax subject to actual eligibility and use limits. The old category table is not a reliable entitlement calculator: resident sex/status, child birth year/age, custody, single parenthood, immigration, returning-resident benefit status, degree/vocational completion date, disability and combat reserve service need the applicable provision and evidence. Use [il-employee-tax-refund](il-employee-tax-refund.md) for the personal-status checklist; do not infer 5.75 points merely from the old freelancer's children's ages.
 
-**Nekudot Zikui table**  _(Section 6: Nekudot Zikui (נקודות זיכוי: Tax credit points))_
+Keep s.45A credit and s.47 deduction separate from the mandatory pension contribution. The old blanket calculation of 5.5% and 11% of all NIS 300,000 income ignored qualifying-income ceilings and is withheld. The 2026 booklet p.12 lists s.45A(e)(2) NIS 19,400/month, s.45A(d)/(e)(1) NIS 189/month, s.47(a) NIS 9,700/month and s.47(a)(5) NIS 24,250/month. These are different statutory ceilings, not interchangeable deposit limits. Calculate relief only after confirming member status, insured/non-insured income, contribution type and how deductions/credits interact ([2026 booklet](https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf)). The earlier NIS 23,232 monthly credit ceiling remains withdrawn.
 
-| Category | Points | Notes |
-| --- | --- | --- |
-| Israeli resident (male) | 2.25 | Base entitlement |
-| Israeli resident (female) | 2.75 | Base (0.5 additional) |
-| New immigrant (Oleh Chadash: עולה חדש) | 3.0 year 1, 2.0 year 2, 1.0 year 3 | For 3.5 years from Aliyah date (post-2022: 8.5 points over 54 months) |
-| Returning resident (Toshav Chozer: תושב חוזר) | unverified: same as Oleh Chadash | unverified: the qualifying stay abroad; see il-new-immigrant for the official definitions of returning and veteran returning residents |
-| Child born during tax year | 1.5 | Per child |
-| Children aged 1–5 | 2.5 per child | Per child |
-| Children aged 6–17 | 1.0 per child | Per child |
-| Child aged 18 | 0.5 | Last year of child credit |
-| Single parent | 1.0 | Divorced, widowed, or separated with custody |
-| Academic degree (BA) | 1.0 | Per year, up to 3 years matching study duration (graduates 2023+) |
-| Academic degree (MA) | 0.5 | For 2 years after completion (graduates 2023+) |
-| Vocational certificate | 1.0 | Per year, up to 3 years matching study duration (graduates 2023+) |
-| Disability (100% or blind) | 2.0 | Permanent |
-| Combat reserve soldiers | unverified: 0.5 to 4.0 | Ordinance s.39B (Amendment 283, published 23.11.2025, credit points for reserve service as a combatant) exists (2026 deduction booklet p.7). unverified: the day bands (30 to 39 days 0.5; 40 to 49 days 0.75; 50 days 1.0; plus 0.25 per five further days) and the years they apply to; the directive that sets them was not opened |
+### Residential rent: compare lawful tracks
 
-### Worked example
+The exemption regime, the s.122 gross-rent election and ordinary net-income treatment are different choices. Under s.122, an individual with non-business income from residential letting in Israel may elect 10% on gross rent, generally without expenses, depreciation, deductions, offsets, credits or exemptions against that income, subject to the specific rent-paid exception in s.122(f). The s.122(f) exception permits qualifying rent paid in the same year for the taxpayer's Israeli home, or qualifying retirement/geriatric-home payments for the taxpayer/cohabiting spouse, against rent from the sole apartment. Deduct the lowest of actual qualifying payments, rental income and NIS 90,000/year (the statute says 90 thousand), with no duplicate deduction by anyone and no qualifying payment to the specified relative. The sole-apartment and household aggregation definitions include the cohabiting spouse and cohabiting children under 18; check them before use. Payment of the elected tax is within 30 days after tax-year end unless paid through advances, not automatically 31 January. The disposal calculation must also account for the statutory depreciation adjustment ([ITO s.122](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-Married woman (2.75 points) with two children aged 3 and 7 (2.5 + 1.0 = 3.5 points):
-- Total: 6.25 points × NIS 2,904 = **NIS 18,150** annual tax reduction
+The 2026 deduction booklet p.13 confirms an exemption ceiling of NIS 5,654/month. The Residential Rental Income Exemption Law ss.1-3 requires qualifying residential property/tenant and a tenant-signed residential-use document. Aggregate rental income of the taxpayer, cohabiting spouse and children under 18; test each month across all residential-dwelling rents, including rents taxed on the 10% track and rents from a tenant who does not meet the exemption conditions. Where aggregate monthly rent exceeds the ceiling, reduce the ceiling by the excess, floored at zero; do not treat the ceiling as an annual all-or-nothing exemption. Property entered or required in business-income books is excluded from the definition. A corporate tenant must be approved by the Commissioner in a Gazette notice, operate without profit mainly for Ministry-approved housing, immigrant absorption, health or welfare, and rent to sublet for that purpose to an individual who is not its employee. [Exemption Law](https://www.btl.gov.il/Laws1/02_0103_100002.pdf). Ordinary-rate treatment may start above the lowest personal-exertion bracket, depending on age and income character. Do not default to a track without comparing tax and conditions.
 
-### 7.1 Section 45א: 35% tax credit (Zikui)
+### Gains, securities and real estate
 
-- **Section 45א credit rules**: The 2026 booklet lists the s.45A(e)(2) ceiling ("ceiling of the amount for a credit for insurance and provident contributions") at **NIS 19,400 a month**, and the s.45A(d) and s.45A(e)(1) ceilings at NIS 189 a month (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.12). unverified: the 35% credit rate, the 7% employee contribution limit and how it applies to salary up to the NIS 19,400 ceiling, and the self-employed 5.5% limit. The NIS 23,232 a month in an earlier draft has no official support and is withdrawn.  _(7.1 Section 45א: 35% tax credit (Zikui))_
+For an individual, s.91(b) taxes real gains at the ordinary scale capped at 25%, or 30% for a company security where the seller is a material shareholder at sale or during the preceding 12 months. Unindexed debt instruments have separate 15%/20% rules; historical acquisition periods, inflationary components and special regimes differ. Hence “25% on every asset regardless of holding period” is wrong. Material shareholder is at least 10% of a control right under s.88, including indirect/joint-holding rules ([ITO ss.88, 91](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-### 7.2 Section 47: Pension deduction (Nikui)
+Under s.92, only a loss that would have been taxable as a gain qualifies. Offset real gains first; foreign-asset losses first offset foreign gains. Securities losses may also offset interest/dividends from the same security in that year. For other securities, the interest/dividend tax rate must not exceed the applicable s.125B(1)/s.125C(b) individual limit or s.126(a) company limit, under s.92(a)(4). Carryforward generally offsets capital gains only and requires filing the loss-year return; retain foreign-source ordering. Do not equate “same category” with the full statutory rule ([ITO s.92](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-- **Section 47 deduction rules**: 2026 ceilings in the booklet (2026 deduction booklet p.12): qualifying income for a self-employed member s.47(a) NIS 9,700 a month; additional income s.47(a)(5) NIS 24,250 a month. unverified: Reduces taxable income by the contribution amount; Self-employed can deduct up to 11% of annual business income (capped at qualifying ceiling); Employee contributions above the 7% Section 45א threshold can qualify  _(7.2 Section 47: Pension deduction (Nikui))_
+Forms 1322/1325 concern securities; do not automatically use them for all capital assets or crypto. The general s.91(d) asset-disposal report and tax advance are due within 30 days. Listed-security sales with full withholding have an exception; where no withholding and an annual-return duty apply, the statutory half-year reports/payments fall on 31 July and 31 January for the preceding half-years ([ITO s.91(d)](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)). Crypto requires [il-crypto-tax](il-crypto-tax.md).
 
-### 7.3 Combined rule
+Mas Shevach has its own legislation. The old 30/40-day distinction, single-apartment NIS 5,008,000 ceiling and 18-month conditions, claimed 7 January 2014 linear cutoff, 25% gain method and expenses/CPI adjustments remain unresolved below. Do not file or compute a property return from this income-tax outline.
 
-- **Combined 45א/47 rule**: unverified: The same shekel cannot double-count. Self-employed filers typically structure deposits so part qualifies for 45א (credit) and part for 47 (deduction) within the 16.5% combined ceiling.  _(7.3 Combined rule)_
+### Advance payments, company return and Form 6111
 
-### Worked example (self-employed, NIS 300,000 annual income)
+Use the assessment notice to identify the advance rate, taxable turnover and payment frequency. Reconcile advances against final liability and consider a supported rate-reduction request when income changes. Do not offer the old universal two-month calendar: ss.175 and following have distinct statutory/installment arrangements. VAT-exclusive revenue must be reconciled to the applicable advance base ([ITO s.175](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-**Worked example (self-employed, NIS 300,000 annual income) table**
+The 2025-2026 filing-cycle guide describes Form 6111 as standardized P&L, balance-sheet and tax-adjustment data. For 2025, turnover not exceeding NIS 300,000 including VAT is exempt, and qualifying agricultural books have a separate exception. Electronic/accounting-system conditions affect submission; retain the acknowledged copy. Reconcile to financial statements **and tax adjustments**, rather than forcing every tax field to equal accounting profit ([rights guide, return annex section](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf)). Do not assume the 2026 trigger without the year's instructions.
 
-unverified: this example uses the unconfirmed 5.5% and 11% bases and ignores the 2026 ceilings above.
+Company rate, closely held undistributed-profit rules, management fees, shareholder loans and dividend/salary comparisons are owned by [il-corporate-tax](il-corporate-tax.md); do not duplicate their figures here.
 
-| Benefit | Calculation |
-| --- | --- |
-| Pension deposit | NIS 33,000 (11% of income) |
-| Section 47 deduction | Reduces taxable income by up to NIS 33,000 |
-| Section 45א credit | 35% of up to 5.5% of income = up to NIS 16,500 eligible → NIS 5,775 direct tax reduction |
+## Worked cases
 
-## Section 8: Rental income tax tracks
+### Freelancer: reconcile income, approved points and advance payments
 
-Israeli law offers three options for taxing residential rental income:
-
-**Rental income tax tracks table**  _(Section 8: Rental income tax tracks)_
-
-| Track | Rate | Conditions |
-| --- | --- | --- |
-| Exempt | 0% | unverified: monthly rent below NIS 5,654/month (2025–2027, frozen, no longer CPI-indexed) |
-| Flat rate | 10% | unverified: on gross rent, no deductions allowed. Payment by January 31 of following year |
-| Marginal | Progressive rates (10%–50%) | unverified: full deduction of expenses (depreciation, mortgage interest, maintenance). Filed with Form 1301 |
-
-### 9.1 Real estate (Mas Shevach: מס שבח)
-
-- **Filing deadline**: unverified: Filing: Within 30 days of sale (40 days if requesting exemption).  _(9.1 Real estate (Mas Shevach: מס שבח))_
-- **Mas Shevach calculation**: unverified: Sale price − Original purchase price (adjusted for CPI) − Allowable deductions (purchase tax paid, legal fees, agent commission, renovation costs with receipts) = Real capital gain (Shevach Re'ali: שבח ריאלי) × 25% tax rate = Mas Shevach payable  _(9.1 Real estate (Mas Shevach: מס שבח))_
-- **Single apartment exemption (Ptur Dira Yechida: פטור דירה יחידה)**: unverified: Seller's only residential property in Israel; Owned for at least 18 months; Sale price below NIS 5,008,000 (2024–2027, frozen); Seller is an Israeli resident; Partial exemption applies proportionally above the ceiling  _(9.1 Real estate (Mas Shevach: מס שבח))_
-- **Linear method (Shita Liniarit: שיטה ליניארית)**: unverified: For properties purchased before January 7, 2014, only the portion of gain attributable to the period after that date is taxed at 25%. The pre-2014 portion may be exempt or taxed at a lower historical rate.  _(9.1 Real estate (Mas Shevach: מס שבח))_
-
-### 9.2 Securities (Forms 1322/1325)
-
-- **Securities capital gains rules**: unverified: 25% tax rate for individuals on traded securities; 30% if seller holds 10%+ of the company; Losses can offset gains within the same category in the same tax year; Capital losses carry forward to offset future capital gains (but not ordinary income)  _(9.2 Securities (Forms 1322/1325))_
-
-### 10.1 How they work
-
-- **Mikdamot mechanics**: The ITA sets a percentage rate based on prior year returns; Applied to bi-monthly turnover (total revenue excluding VAT); New businesses receive a percentage based on industry statistics  _(10.1 How they work)_
-
-### 10.2 Payment schedule
-
-**Payment schedule table**  _(10.2 Payment schedule)_
-
-| Period | Months | Payment due |
-| --- | --- | --- |
-| 1 | January – February | March 15 |
-| 2 | March – April | May 15 |
-| 3 | May – June | July 15 |
-| 4 | July – August | September 15 |
-| 5 | September – October | November 15 |
-| 6 | November – December | January 15 |
-
-### 10.3 Year-end reconciliation
-
-- **Year-end reconciliation rules**: Mikdamot paid > actual tax → refund (Hechzer Mas: החזר מס); Mikdamot paid < actual tax → difference owed (plus possible interest); Rate adjustment available mid-year if income changes significantly (Shinui Shiur Mikdamot: שינוי שיעור מקדמות)  _(10.3 Year-end reconciliation)_
-
-## Section 11: Corporate tax
-
-**Corporate tax table**  _(Section 11: Corporate tax)_
-
-| Item | Rate / rule |
-| --- | --- |
-| Corporate tax rate | unverified: 23% flat on taxable profits |
-| Closely held company (Chevra Me'atim: חברה מעטים) | unverified: 2% annual tax on accumulated undistributed profits unless 6%+ distributed as dividends |
-| Form 6111 | unverified: required for turnover > NIS 300,000 (including VAT) |
-| Deadline | unverified: May 31 (extensions available) |
-
-## Section 12: Form 6111 (standardized financial statements)
-
-- **Form 6111 requirement**: unverified: Required for any business with annual turnover exceeding NIS 300,000 (including VAT).  _(Section 12: Form 6111 (standardized financial statements))_
-- **Section A: Profit and Loss Statement**: Revenue by source, COGS, operating expenses, financial income/expenses, depreciation, net profit, tax adjustments  _(Section 12: Form 6111 (standardized financial statements))_
-- **Section B: Balance Sheet**: Current assets, fixed assets, current liabilities, long-term liabilities, equity  _(Section 12: Form 6111 (standardized financial statements))_
-- **Submission requirement**: All amounts in NIS. Must match audited financial statements exactly. Submitted electronically via Shaam.  _(Section 12: Form 6111 (standardized financial statements))_
-
-## Section 13: Filing via Shaam online portal
-
-1. Register at misim.gov.il with Teudat Zehut (תעודת זהות) or company number
-2. Set up digital credentials (username + password + 2FA)
-3. Select the relevant form and tax year
-4. Enter data or upload from accounting software
-5. System validates data and flags errors
-6. Review calculated tax liability
-7. Submit electronically (receive confirmation number)
-8. Pay any tax owed via the payment portal
-
-- **CPA authorization (Yipui Koach: ייפוי כוח)**: Granted per-client, per-year via the Shaam portal. Allows CPA to submit returns and communicate with the ITA on behalf of the client.  _(Section 13: Filing via Shaam online portal)_
-
-### Example 1: Freelancer annual return (Form 1301)
-
-**Scenario:** Male freelance developer (Osek Murshe), annual business revenue NIS 450,000, business expenses NIS 80,000, two children aged 4 and 8.
-
-**Working:**
-- Net business income: NIS 450,000 − NIS 80,000 = NIS 370,000
-- Credit points: 2.25 (resident) + 2.5 (child age 4) + 1.0 (child age 8) = 5.75 points
-- Tax credit: 5.75 × NIS 2,904 = NIS 16,698
-- Income tax (applying 2026 brackets to NIS 370,000):
-  - 10% on 84,120 = NIS 8,412
-  - 14% on 36,600 = NIS 5,124
-  - 20% on 107,280 = NIS 21,456
-  - 31% on 73,200 = NIS 22,692
-  - 35% on 68,800 = NIS 24,080
-  - **Gross tax: NIS 81,764**
-- Less credit points: NIS 81,764 − NIS 16,698 = **NIS 65,066 income tax**
-- Less mikdamot paid during year → net tax due or refund
-
-### Example 2: Real estate capital gains (Mas Shevach)
-
-**Scenario:** Investment apartment sold for NIS 2,800,000, purchased in 2018 for NIS 1,600,000.
-
-**Working:**
-- Gross gain: NIS 2,800,000 − NIS 1,600,000 = NIS 1,200,000
-- Adjust for CPI change from 2018 to sale date
-- Deduct allowable expenses (purchase tax, legal fees, agent commission, documented renovation)
-- Real gain × 25% = Mas Shevach payable
-- unverified: file within 30 days of sale
-- Surtax: an investment apartment is a residential apartment, so the gain enters the surtax only if the sale value exceeds NIS 5,385,285 (2026) and the sale is not exempt (2026 deduction booklet p.11, s.121B(e)). The sale value here is NIS 2,800,000, below the ceiling: no surtax on this gain. Had it been above the ceiling, the 3% charge would apply to the part of total taxable income above NIS 721,560 and the 2% capital-income charge to the part of capital-source income above it; they are two bases, not a single 5% on the gain.
-
-## Section 15: Common errors
-
-**Common errors table**  _(Section 15: Common errors)_
-
-| Error | Why it matters |
-| --- | --- |
-| Using US form numbers (1040) | Israel uses Form 1301 for individuals |
-| Wrong deadline (April 30 for Form 1301) | April 30 is the legacy paper baseline; current online deadline is June 30 |
-| Single capital gains rate for everything | unverified: securities 25%; significant shareholders 30%; real estate varies |
-| Default credit point value without checking eligibility | Points vary by personal status; must calculate per individual |
-| Adding every residential sale to surtax income | A residential-apartment gain counts only if the sale value exceeds NIS 5,385,285 (2026) and the sale is not exempt (2026 deduction booklet p.11) |
-| Forgetting Section 45א/47 pension credits | One of the most common filing errors for self-employed |
-
-## Section 16: Reference material
-
-**Reference material table**  _(Section 16: Reference material)_
-
-| Resource | Reference |
-| --- | --- |
-| Tax Authority: Form 1301 service | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals |
-| Shaam filing portal | https://www.misim.gov.il |
-| Kol Zchut: income tax brackets | https://www.kolzchut.org.il/he/מדרגות_מס_הכנסה |
-| Kol Zchut: tax credit points | https://www.kolzchut.org.il/he/נקודות_זיכוי |
-| Kol Zchut: Mas Shevach | https://www.kolzchut.org.il/he/חישוב_מס_שבח |
-| Real estate taxation office | https://www.gov.il/he/departments/topics/land_taxation |
-| Income Tax Ordinance | https://www.nevo.co.il/law/70264 |
-
-## Recomputed checks (2026)
+Retain the old developer's NIS 450,000 revenue less NIS 80,000 allowable expenses = NIS 370,000 taxable personal-exertion income. **Assume an independently established 5.75 eligible points**; the old facts “male resident, children aged 4 and 8” do not prove that count. Gross 2026 tax is NIS 81,764; points reduce it by NIS 16,698, leaving NIS 65,066 before other reliefs and advances. On assumed advances of NIS 60,000, balance due is NIS 5,066. Pension/social-insurance deductions and other income are assumed already settled in the taxable input.
 
 ```oa-check
-name: Freelancer, net NIS 370,000, 5.75 points (2026)
+name: Freelancer annual working-paper reconciliation
 inputs:
-  p: 370000
-  pts: 5.75
+  revenue: 450000
+  expenses: 80000
+  eligible_points: 5.75
+  advances: 60000
 steps:
-  - tax: 84120*0.10+36600*0.14+107280*0.20+73200*0.31+(p-301200)*0.35
-  - net: tax-pts*2904
+  - income: revenue-expenses
+  - gross: 84120*0.10+36600*0.14+107280*0.20+73200*0.31+(income-301200)*0.35
+  - credits: eligible_points*2904
+  - liability: gross-credits
+  - due: liability-advances
 expected:
-  net: 65066
+  income: 370000
+  gross: 81764
+  credits: 16698
+  liability: 65066
+  due: 5066
 ```
 
+### Residential sale: decide whether it enters surtax
+
+Retain the 2018 investment-apartment purchase at NIS 1,600,000 and sale for NIS 2,800,000. The unadjusted gain is NIS 1,200,000; this is **not** final Mas Shevach, since CPI, allowable costs and statutory property treatment are unresolved. Even assuming the sale is not exempt, its sale value is below NIS 5,385,285, so that apartment gain does not enter s.121B surtax. Assume separate employment income of NIS 800,000, no other capital income: general surtax on employment is NIS 2,353.20; the capital-source surtax from this apartment is zero. An above-ceiling, non-exempt sale would need both surtax bases recomputed.
+
 ```oa-check
-name: Surtax on employment income NIS 800,000
+name: Below-ceiling apartment sale and employment surtax
 inputs:
-  p: 800000
+  sale: 2800000
+  purchase: 1600000
+  employment: 800000
 steps:
-  - s: (p-721560)*0.03
+  - unadjusted_gain: sale-purchase
+  - employment_surtax: max(employment-721560,0)*0.03
+  - included_apartment_gain: 0
+  - capital_surtax: max(included_apartment_gain-721560,0)*0.02
 expected:
-  s: 2353.2
+  unadjusted_gain: 1200000
+  employment_surtax: 2353.20
+  capital_surtax: 0
 ```
+
+## When to refuse or refer
+
+Refer unverified filing exemptions, personal-status points, pension ceilings, rental-track elections, historical gains, property disposals, mixed foreign income and closely held company rules. Do not promise a refund until aggregate annual tax and all prepayments are reconciled. Missing documents remain an open item rather than a conservative invented rate.
+
+## Filing and payment
+
+Choose the correct form and year in the Tax Authority personal/Shaam service, verify identity and representative authority, enter/upload reconciled data and all required annexes, clear validation messages, review liability, submit and retain the acknowledgment. Complete any signature/supporting-document delivery required by the selected submission route; payment is a separate step. No portal simulation authorizes actual submission here.
+
+No tax-year 2026 annual-return deadline is confirmed. The 2025 guide states statutory baseline dates and possible extensions; the old claimed 29 May/30 June 2026 deadlines require the live year's service/extension notice, which could not be reopened. Form 126/856 dates and represented-client quotas require their own current notices. Keep their dates out of the client filing calendar until sourced.
+
+## Completion checklist
+
+Confirm year/place/source; reconcile every income certificate and the books; substantiate expenses, exemptions and losses; check age, status and credit eligibility; apply the correct bands and both surtax bases; compare rental options where applicable; reconcile advances and withholding; obtain professional review; retain filing/payment acknowledgments and unresolved items.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.4 (Economic Efficiency Law 2026 bracket change from 1 January 2026), p.7 (s.39B, Amendment 283), p.10 (2026 annual and monthly bands after the bracket-widening law, s.121), p.11 (s.121B surtax 3% above NIS 721,560, extra 2% on capital-source income, residential sale ceiling NIS 5,385,285), p.12 (credit point NIS 242, s.45A(d), (e)(1), (e)(2) ceilings NIS 189, 189, 19,400; s.47(a) ceilings NIS 9,700 and 24,250) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
-| Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
+| Consolidated Income Tax Ordinance; Read for ss.91(b), 91(d) including listed-security exceptions, 92 loss ordering/carryforward, 121 bands, 121B definitions and surtax, 122 rental election and 175 advances | https://www.btl.gov.il/Laws1/00_0103_000000.pdf | 2026-11-14 |
+| Residential Rental Income Exemption Law; Read for ss.1-4 property/tenant definitions, household/monthly aggregation, taper and signed-use condition | https://www.btl.gov.il/Laws1/02_0103_100002.pdf | 2026-11-14 |
+| ITA 2026 deduction booklet; Read for pp.3-4 freeze/band amendment, pp.10-13 rates, surtax, credit point, individually labelled pension ceilings and rental exemption ceiling | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-14 |
+| ITA 2025 rights guide, 2025-2026 filing cycle; Read for return annex Form 6111 turnover and agricultural/electronic exceptions, filing baseline/extensions, residential-rent exemption/taper section | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-14 |
 
-Not yet confirmed: the tax year 2026 return deadlines (the Authority has published only tax year 2025 dates); Forms 126, 856, 1214 deadlines and representative extensions; Form 6111 NIS 300,000 trigger; Mas Shevach filing window, calculation, single-apartment exemption and the linear method; Form 135 six-year window; securities rates and loss rules; closely held company 2% tax; corporate rate 23%; the 2025 to 2027 freezes; the credit-point table by category and the reserve-duty day bands; the s.45A 35%, 7% and 5.5% rules and the s.47 11% rule; the rental tracks; which income counts as capital-source for the 2% surtax; non-residential real estate in the surtax. No official consolidated text of the Income Tax Ordinance was opened; sections are cited as the Authority's booklet states them.
-
-## Disclaimer
-
-> **חשוב:** כל המידע בקובץ זה מיועד למטרות מידע וחישוב בלבד. יש לבדוק כל עמדה מול רואה חשבון (Ro'eh Cheshbon) או יועץ מס (Yo'etz Mas) מוסמך לפני הגשה או פעולה.
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional: such as a רואה חשבון (Ro'eh Cheshbon: CPA) or יועץ מס (Yo'etz Mas: tax advisor) licensed in Israel: before filing or acting upon.
+Not yet confirmed: tax-year 2026 return forms/deadlines and Form 6111 trigger; the old 2025-cycle 29 May/30 June 2026 extensions; Form 1214/126/856 dates and representative extensions. The old pension example (NIS 300,000 income, NIS 33,000/11% deduction and NIS 16,500/5.5% base for a 35% credit) is not usable without full member/insured-income and cap computation; NIS 23,232 monthly credit ceiling is withdrawn. The old married-woman example (children aged 3 and 7, claimed 6.25 points giving NIS 18,150) is preserved as an unsupported entitlement scenario, not a verified credit claim. The old personal-status category table, child/immigrant point counts and reserve-service eligibility are routed to the refund skill, not assumed here. Mas Shevach calculation/30-vs-40-day filing/single-apartment relief (old NIS 5,008,000 and 18-month claims), old 7 January 2014 linear cutoff and non-income-tax property conditions remain unconfirmed. The annual-return service page could not be reopened (HTTP 403); no failed fetch is recorded as a read. The old two-month advance calendar is not treated as universal. Companies and withholding retain their own sibling boundaries.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-income-tax-returns` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-income-tax-returns. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-income-tax-returns` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-income-tax-returns. If neither is available, confirm every figure against the official source pages cited above before relying on it.
