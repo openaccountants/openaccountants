@@ -1,7 +1,7 @@
 ---
 name: rwanda-social-contributions
 description: "Rwanda RSSB contributions for 2026: pension 6% plus 6% under Presidential Order 086/01, steps to 20% by 2030, maternity, medical, CBHI, Ishema declaration by the 15th, payment and sanctions."
-version: 0.3
+version: 0.4
 jurisdiction: RW
 tax_year: 2026
 last_updated: 2026-11-14
@@ -11,7 +11,7 @@ tier: 2
 domain: payroll
 ---
 
-# Rwanda RSSB Social Contributions v0.3
+# Rwanda RSSB Social Contributions v0.4
 
 Tax year 2026. PAYE computation sits in [rwanda-payroll](rwanda-payroll.md).
 
@@ -171,7 +171,7 @@ NET PAY = gross - pension EE - maternity EE - PAYE - CBHIS [- medical EE]: [____
 
 EMPLOYER COST ON TOP OF GROSS
   Pension ER 6% x gross:                       [____]
-  Occ. hazards ER 2% x gross:                  [____]
+  Occ. hazards ER [rate from RSSB] x gross:    [____]  (no default; rate not confirmed)
   Maternity ER 0.3% x gross:                   [____]
   Medical ER 7.5% x basic (if enrolled):       [____]
   Employer total:                              [____]
@@ -236,7 +236,7 @@ If the client provides only a bank statement and no payroll detail:
 | Case (monthly) | Result |
 |---|---|
 | Gross 500,000 with transport 30,000, not enrolled | Pension 30,000; maternity 1,500; PAYE 114,000; CBHI 1,772.50; net 352,727.50. The old 362,192.93 deducted RSSB before PAYE and left transport out of maternity |
-| Employer on that gross | Pension 30,000; occupational hazards 10,000 (unverified 2%); maternity 1,500; total 41,500 |
+| Employer on that gross | Pension 30,000; maternity 1,500; subtotal 31,500 before occupational hazards, which is added at the rate RSSB applies to the employer. For scale only, an assumed example rate of 2% (not a default and not confirmed) would add 10,000 |
 | Gross 55,000, not enrolled | PAYE 0; pension 3,300; maternity 165; CBHI 257.68; net 51,277.32 |
 | Casual, FRW 80,000 | 15% of 20,000 = 3,000 (art 56); flag RSSB. The old 12,000 missed the 0% slice |
 | Taxable 90,000 | PAYE 3,000 |
@@ -246,7 +246,7 @@ PAYE shortcut: to 60,000, nil; to 100,000, (B - 60,000) x 10%; to 200,000, 4,000
 
 Bank lines: `RWANDA REVENUE AUTHORITY ; E-TAX PAYE+RSSB` is a unified declaration payment, EXCLUDE, and split from the payroll journal. `RSSB CONTRIB ; ARREARS + INTEREST` is EXCLUDE; split principal from interest and escalate.
 
-Pension from 2027: totals are in the rates table. Equal shares of 7%, 8%, 9% and 10% are unverified. Maternity 0.6% in all.
+Pension from 2027: totals are in the rates table. Order 086/01 sets the totals only, not the employer and employee split, so no split is applied (see Not yet confirmed). Maternity 0.6% in all.
 
 ## Deadlines and filing
 
@@ -343,4 +343,4 @@ expected:
 | Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
 | RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
-Not yet confirmed: occupational hazards rate; the pension and maternity treatment of transport; the definition of net for CBHI; the 7-employee minimum and 10th of the month date for medical; split of pension from 2027; the occupational hazards rate (old file: 2% employer), moved out of the rates table; the RRA RSSB pages read 2026-11-14 name the scheme but give no rate.
+Not yet confirmed: the occupational hazards rate: no RSSB, RRA or gazette page read on 2026-11-14 states it (the RSSB scheme page and the RRA RSSB pages name the scheme but give no rate; the 2% in the old file, and on the RDB business procedures page https://businessprocedures.rdb.rw/menu/179, which also prints the pre-2025 6% pension and so is stale, is not used), so no rate is applied and the employer gets it from RSSB; the pension and maternity treatment of transport; the definition of net for CBHI; the 7-employee minimum and 10th of the month date for medical; the employer and employee split of the pension totals from 2027 (old file: equal shares of 7%, 8%, 9% and 10%; Order 086/01 sets totals only); the occupational hazards row (old file: 2% employer) was moved out of the rates table on 2026-11-14, and the employer form line and worked example no longer use it.

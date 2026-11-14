@@ -1,7 +1,7 @@
 ---
 name: de-payroll-benefits
 description: "German payroll benefits for 2026: how an employer values and taxes benefits in kind on the payslip. Covers the EUR 50 monthly limit for benefits in kind and vouchers, company cars (1% rule, 0.03% commute charge, a quarter or a half of the list price for electric and plug-in hybrid cars, the EUR 100,000 price cap, the logbook method, user charges), meals and lodging at the 2026 official values, the 30% flat tax of § 37b EStG and the 15%, 20% and 25% flat taxes of §§ 40 and 40b, tax-free items (public transport tickets, childcare, health promotion, bikes, charging, devices, employee shares), employer pensions (8% and 4% limits, the § 100 subsidy, salary sacrifice and the 15% top-up), and the social insurance status of managing directors with the DRV status procedure. Trigger on: Sachbezug, geldwerter Vorteil, Dienstwagen, 1%-Regelung, Fahrtenbuch, Sachbezugswerte 2026, 37b, Pauschalsteuer, Jobticket, bAV, Entgeltumwandlung, Gesellschafter-Geschäftsführer, Statusfeststellung. Out of scope: the wage tax and contribution run itself (de-payroll), the employee's annual return (de-employee-income-tax), self-employed contributions (de-social-contributions)."
-version: 0.4
+version: 0.5
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-11-14
@@ -238,4 +238,4 @@ expected:
 
 Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on flat taxes (for § 37b the BMF letter, Rn. 36, points to the state decrees of 28 and 29 December 2006; the rates themselves were not read); whether a collective agreement can set aside the 15% top-up; whether a bAV top-up is owed where pay exceeds the ceilings (depends on the saving actually made); the written reasons of the 23 July 2026 BSG decision (only the hearing report was read); the wage tax treatment of the Unterstützungskasse and direct-promise routes of bAV, which is not covered here.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

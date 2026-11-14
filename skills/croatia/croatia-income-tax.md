@@ -1,7 +1,7 @@
 ---
 name: croatia-income-tax
 description: "Use this skill for Croatian personal income tax (porez na dohodak) for the 2026 tax year (calendar year). It covers residence, the two annual rates set by each town or municipality inside the legal ranges (lower rate up to EUR 60,000 of base, higher rate above), the default 20% / 30%, the EUR 600 monthly personal allowance and the dependant and disability coefficients, employment income and monthly withholding, the youth and returnee reliefs, self-employed income from books (obrt, free professions), the lump-sum paušalni obrt and its seven 2026 bands, final taxes on interest, dividends and capital gains (12%), rent (12%), property disposals (24%), the annual return, deadlines and fines. Trigger on: porez na dohodak, osobni odbitak, paušalni obrt, PO-SD, DOH, JOPPD, Croatian salary tax, Zagreb tax rate, dividend tax Croatia. Out of scope: hr-cross-border (treaties, non-resident withholding), croatia-payroll and croatia-social-contributions, croatia-vat-return, hr-corporate-income-tax, hr-transfer-pricing, croatia-tax-optimization."
-version: 0.4
+version: 0.5
 jurisdiction: HR
 tax_year: 2026
 last_updated: 2026-11-14
@@ -248,4 +248,4 @@ expected:
 
 Not yet confirmed: the late payment interest rate on tax debts for 2026 (General Tax Act art. 130(1) points to a separate law; no official text naming the 2026 rate for tax debts was found); the tourist letting lump sum each local unit set for 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

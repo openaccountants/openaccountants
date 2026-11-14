@@ -1,14 +1,15 @@
 ---
 name: no-vat-return
 description: "Use this skill for Norwegian VAT (merverdiavgift, MVA) for 2026: registration, rates, deductions and the VAT return (skattemelding for merverdiavgift). It covers the NOK 50,000 registration limit (NOK 140,000 for charities, NOK 3 million for sports tickets), pre-registration, the 25% standard rate and the 15%, 12% and 11.11% reduced rates, exempt and zero-rated supplies, input VAT and the blocked items (entertainment, serving, passenger cars, staff benefits), the NOK 10,000 bank-payment rule, two-monthly and annual periods and their deadlines, imports, remote services bought from abroad, VOEC for low-value goods, corrections, enforcement fines, additional tax and interest. Norway is in the EEA but not the EU: there are no intra-community supplies. Trigger on: MVA, mva-melding, merverdiavgift, Norwegian VAT, VAT return Norway, VOEC, reverse charge Norway, import VAT Norway. Out of scope: no-income-tax, no-corporate-income-tax, no-employer-payroll, no-social-contributions, no-transfer-pricing; VAT compensation for public bodies and property adjustment are flagged only."
-version: 2.2
+version: 2.3
 jurisdiction: "NO"
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Norway: VAT (merverdiavgift) for 2026
@@ -37,18 +38,18 @@ Read [no-income-tax](no-income-tax.md) and [no-corporate-income-tax](no-corporat
 | Passenger transport, transport of vehicles on ferries, hotel rooms and holiday letting, cinema, broadcasting, museums and exhibitions, amusement parks, sporting events | 12% | 2026 | same decision § 4; merverdiavgiftsloven §§ 5-3 to 5-7, 5-9 to 5-11 |
 | Wild marine resources (§ 5-8) | 11.11% | 2026 | same decision § 5; merverdiavgiftsloven § 5-8 |
 | Registration limit | Over NOK 50,000 in twelve months | 2026 | merverdiavgiftsloven § 2-1 first paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
-| Registration limit, charities and non-profits | NOK 140,000 | 2026 | § 2-1 first paragraph |
-| Registration limit, sports event tickets | NOK 3 million | 2026 | § 2-1 second paragraph |
+| Registration limit, charities and non-profits | NOK 140,000 | 2026 | § 2-1 first paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
+| Registration limit, sports event tickets | NOK 3 million | 2026 | § 2-1 second paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
 | Pre-registration: significant purchases | At least NOK 250,000 including VAT; not if the limit will be reached within four months | 2026 | merverdiavgiftsforskriften § 2-4-1; https://lovdata.no/forskrift/2009-12-15-1540/§2-4-1 |
-| Bank-payment rule for input VAT | No deduction unless paid through a bank or payment provider, or the total payment is under NOK 10,000 | 2026 | merverdiavgiftsloven § 8-8 |
-| Gifts and advertising items of "insignificant value" | NOK 200 or less | 2026 | merverdiavgiftsforskriften § 1-3-6 |
-| Low-value goods (VOEC) | Under NOK 3,000 per item, excluding transport and insurance | 2026 | merverdiavgiftsforskriften § 1-3-8 |
-| Non-registered business buying remote services | VAT due only when purchases in a quarter exceed NOK 2,000 excluding VAT | 2026 | merverdiavgiftsloven § 11-3 first paragraph |
-| Mixed use, small share rules | No deduction if VAT-able sales are normally no more than 5% of total; full deduction if exempt sales are normally no more than 5% | 2026 | merverdiavgiftsloven § 8-2 third and fourth paragraphs |
-| Annual period, low turnover | Calendar year if VAT-able sales and withdrawals are no more than NOK 1 million in the year, with consent | 2026 | skatteforvaltningsforskriften § 8-3-3 |
+| Bank-payment rule for input VAT | No deduction unless paid through a bank or payment provider, or the total payment is under NOK 10,000 | 2026 | merverdiavgiftsloven § 8-8; https://lovdata.no/lov/2009-06-19-58/§8-8 |
+| Gifts and advertising items of "insignificant value" | NOK 200 or less | 2026 | merverdiavgiftsforskriften § 1-3-6; https://lovdata.no/forskrift/2009-12-15-1540/§1-3-6 |
+| Low-value goods (VOEC) | Under NOK 3,000 per item, excluding transport and insurance | 2026 | merverdiavgiftsforskriften § 1-3-8; https://lovdata.no/forskrift/2009-12-15-1540/§1-3-8 |
+| Non-registered business buying remote services | VAT due only when purchases in a quarter exceed NOK 2,000 excluding VAT | 2026 | merverdiavgiftsloven § 11-3 first paragraph; https://lovdata.no/lov/2009-06-19-58/§11-3 |
+| Mixed use, small share rules | No deduction if VAT-able sales are normally no more than 5% of total; full deduction if exempt sales are normally no more than 5% | 2026 | merverdiavgiftsloven § 8-2 third and fourth paragraphs; https://lovdata.no/lov/2009-06-19-58/§8-2 |
+| Annual period, low turnover | Calendar year if VAT-able sales and withdrawals are no more than NOK 1 million in the year, with consent | 2026 | skatteforvaltningsforskriften § 8-3-3; https://lovdata.no/forskrift/2016-11-23-1360 |
 | Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
-| Enforcement fine for a late VAT return | Half a court fee (NOK 672.50) per day, at most 50 court fees (NOK 67,250) | 2026 | Skatteetaten, Enforcement fines; skatteforvaltningsloven § 14-1 |
-| Additional tax | 20% of the tax advantage; aggravated 20% or 40% more | 2026 | skatteforvaltningsloven §§ 14-5, 14-6 |
+| Enforcement fine for a late VAT return | Half a court fee (NOK 672.50) per day, at most 50 court fees (NOK 67,250) | 2026 | Skatteetaten, Enforcement fines; skatteforvaltningsloven § 14-1; https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ |
+| Additional tax | 20% of the tax advantage; aggravated 20% or 40% more | 2026 | skatteforvaltningsloven §§ 14-5, 14-6; https://lovdata.no/lov/2016-05-27-14 |
 
 ## The taxable base
 

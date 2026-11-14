@@ -1,7 +1,7 @@
 ---
 name: hr-cross-border
 description: "Croatian cross-border tax for tax year 2026 (Profit Tax Act NN 177/04 as amended to NN 151/25, Personal Income Tax Act NN 115/16 as amended to NN 152/24, General Tax Act NN 115/16). Covers residence of individuals (home or habitual abode of 183 days) and companies (registered seat or place of effective management), how non-residents are taxed, permanent establishment, withholding tax under Profit Tax Act article 31 (15% interest and royalties, 10% dividends, 10% foreign performers, 25% on payments and listed services to EU-listed non-cooperative jurisdictions), EU directive exemptions, 12% tax on dividends and interest paid to non-resident individuals, treaty relief claim forms, foreign tax credit, and the company exit tax with five-period spreading. Trigger on: Croatia withholding tax, porez po odbitku, Croatian non-resident, move to Croatia, leave Croatia, exit tax Croatia, PE in Croatia. Out of scope: hr-corporate-income-tax, croatia-income-tax, croatia-payroll, croatia-social-contributions, croatia-vat-return."
-version: 0.2
+version: 0.3
 type: situation-rules
 jurisdiction: HR
 tax_year: 2026
@@ -257,4 +257,4 @@ expected:
 
 Not yet confirmed: which jurisdictions are on the EU Annex I list on a given payment date (the Council list was not read for this skill); the late-payment interest rate for 2026 (the special law setting it was not read); the footnotes to the Tax Administration treaty table (rates shown with footnote marks, such as Austria and Belgium dividends, were not used); the Rulebook arts. 49 to 52 were read in the Tax Administration consolidated text to NN 39/26, not against each amending rulebook; whether the art. 28 rate applied to an exit base spread over five periods follows each later period's revenue.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -12,7 +12,7 @@ description: >
   and separate country-by-country reporting obligations. Includes ordinary transaction calculations and two
   recomputable examples. Specialist arrangements require a separately scoped
   transaction analysis; no professional attestation is claimed.
-version: 0.8
+version: 0.9
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -23,7 +23,7 @@ domain: transfer-pricing
 type: situation-rules
 ---
 
-# Finland transfer-pricing documentation v0.8
+# Finland transfer-pricing documentation v0.9
 
 ## Who this applies to
 
@@ -205,4 +205,4 @@ Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustmen
 [services]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-of-sale-of-services/
 [loans]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

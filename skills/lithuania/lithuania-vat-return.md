@@ -1,7 +1,7 @@
 ---
 name: lithuania-vat-return
 description: "Use this skill for Lithuanian VAT (pridėtinės vertės mokestis, PVM) in tax year 2026. It covers the 21% standard rate, the 12% and 5% reduced rates and the end of the 9% rate on 31 December 2025 (heating, firewood, books, accommodation, transport and culture moved), the EUR 45,000 small business scheme and when VAT starts once it is passed, the EU cross-border small business scheme, the EUR 14,000 acquisitions threshold, tax periods, the FR0600 return and payment by the 25th, i.SAF invoice data by the 20th, the EU sales list (FR0564), reverse charge on services and goods from foreign suppliers and on construction work, blocked input VAT on representation and cars, fines and 0.027% a day late payment interest. Trigger on: Lithuanian VAT, PVM, FR0600, i.SAF, PVM mokėtojas, Lithuania VAT registration, 12% PVM. Out of scope: corporate income tax (lt-corporate-income-tax), personal income tax (lithuania-pit), payroll (lt-payroll-social), cross-border income tax (lt-cross-border)."
-version: 2.3
+version: 2.4
 jurisdiction: LT
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ domain: vat-gst
 type: filing-howto
 ---
 
-# Lithuania: VAT (2026) v2.3
+# Lithuania: VAT (2026) v2.4
 
 This skill sets out who must charge Lithuanian VAT (pridėtinės vertės mokestis, PVM), at what rate, and how to file and pay it for 2026. The law is the Law on VAT No. IX-751 (Pridėtinės vertės mokesčio įstatymas, PVMĮ), in its consolidated version in force from 1 July 2026 to 31 December 2026. Art. 19 (rates) is the same in the version in force from 1 January 2026: its last changes are laws XV-287 and XV-366 of June 2025. Fines and late payment interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
@@ -189,4 +189,4 @@ expected:
 
 Not yet confirmed: how VAT is computed on a supply that crossed the EUR 45,000 limit where the price was agreed without VAT and cannot be increased (on top of, or within, the price); the rate for accommodation booked and paid in 2025 but supplied in 2026 (VMI answer KM3670, title only read); the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing FR0600, FR0564 or i.SAF late (Code of Administrative Offences, not read); the Government list of extra domestic reverse charge cases under art. 96(1)(4); the exemptions in art. 20 to 40 and the zero-rate evidence rules (not read in detail); the OSS and IOSS rules and the EUR 10,000 distance sales limit; VAT refunds to foreign businesses (art. 116 to 119); and the PVMĮ version in force from 1 January 2027 (law XV-1036 of 18 June 2026 changes art. 78, 88-1 and others from 2027; not read in detail).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

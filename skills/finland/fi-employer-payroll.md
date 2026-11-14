@@ -12,7 +12,7 @@ description: >
   consequences and two executable examples. Pension contributions for entrepreneurs
   are computed in the linked YEL skill; international coverage requires the
   actual A1 or applicable-law decision.
-version: "0.12"
+version: "0.13"
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -23,7 +23,7 @@ domain: payroll
 type: computation
 ---
 
-# Finland employer payroll reporting v0.12
+# Finland employer payroll reporting v0.13
 **Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Independent source-review evidence is in the [pack README](README.md).
 
 ## Who this applies to
@@ -229,4 +229,4 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 [self-act]: https://www.finlex.fi/fi/lainsaadanto/2016/768
 [interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -2,7 +2,7 @@
 name: fi-individual-cross-border-residence
 description: >
   Determine Finnish individual residence, Finnish-source income and ordinary international double-tax relief for 2026. Covers arrival, departure, the Finnish-citizen three-year presumption, treaty residence, nonresident wage and investment taxation, progressive assessment, pensions, property income, foreign employment and the six-month exemption. Establish the actual source and treaty treatment before calculating withholding or relief. Includes net-income foreign-tax-credit limits, oldest-first five-year carryovers, progression exemption, source-tax refunds and filing routes. Trigger on moving to Finland, leaving Finland, tax residence, foreign wages, foreign pension, Finnish rent, source-tax card, nonresident dividends or foreign-tax credit. Social insurance and corporate permanent establishments use separate skills.
-version: 0.6
+version: 0.7
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -13,7 +13,7 @@ domain: cross-border
 type: situation-rules
 ---
 
-# Finland individual cross-border residence v0.6
+# Finland individual cross-border residence v0.7
 
 ## Who this applies to
 
@@ -170,4 +170,4 @@ Not yet confirmed: country-specific treaty rates and unusual special-service/ele
 [nonresident]: https://www.vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/
 [municipal]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

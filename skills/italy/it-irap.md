@@ -1,7 +1,7 @@
 ---
 name: it-irap
 description: "Italian regional tax on productive activities (IRAP) for tax year 2026. Covers who pays (companies, partnerships, professional associations, entities, public bodies) and who does not (individual traders, professionals and forfettari since 2022), the 3.9% standard rate and the 4.2%, 4.65% and 5.9% special rates, regional variation up to 0.92 points, the 2026 sector and bank surcharges, the base for companies (art. 5), partnerships (art. 5-bis) and professional associations (art. 8), the staff deductions and the flat deduction for small bases, the IRAP return, saldo and acconti, penalties, the multi-region split and the IRAP deduction in income tax. Trigger on: IRAP, imposta regionale sulle attività produttive, valore della produzione netta, dichiarazione IRAP, acconto IRAP, IRAP studio associato. Out of scope: IRES (it-ires-corporate-tax), individual income tax (it-income-tax, it-regime-forfettario), payroll (italy-payroll), cross-border hub (it-cross-border)."
-version: 0.6
+version: 0.7
 jurisdiction: IT
 tax_year: 2026
 last_updated: 2026-11-14
@@ -172,4 +172,4 @@ These groups follow their own base rules or a separate regime. Do not compute th
 
 Not yet confirmed: the IRAP instructions for tax year 2026 (the 2027 return edition; the published IRAP 2026 instructions cited above cover tax year 2025); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

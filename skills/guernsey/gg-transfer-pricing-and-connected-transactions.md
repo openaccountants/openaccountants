@@ -2,7 +2,7 @@
 name: gg-transfer-pricing-and-connected-transactions
 description: >
   Prepare Guernsey 2026 domestic connected-transaction and transfer-pricing working papers from the verified income-tax base, anti-avoidance, connected machinery-sale and records rules. Identify the actual adjustment power before changing a price or deduction. Covers the section 108 market-value and written-election calculations, the Revenue Service's approved associated-company reporting treatment, company-by-company evidence, retention periods, omitted-income notifications and information-notice appeals. Distinguishes those rules from treaty associated-enterprise adjustments and specialist international reporting. Includes two recomputing pricing-base examples. This source-cited draft does not establish a complete general transfer-pricing or master-file/local-file regime, nor an exemption from one. Its exact current-scope question remains explicit after independent source review; competent-authority clarification is still required.
-version: "0.2"
+version: "0.3"
 jurisdiction: GG
 tax_year: 2026
 last_updated: 2026-11-14
@@ -148,4 +148,4 @@ expected:
 
 Not yet confirmed: whether a general domestic arm's-length adjustment regime or TP-specific master-file/local-file requirement applies for 2026 beyond the verified provisions and ordinary records duties above, including any operative scope/threshold/method/filing/penalty instrument. The2020statement does not establish current absence. Specialist CbCR/Pillar Two and regulated-sector regimes are excluded, not treated as absent. Detailed privilege, compulsory production/search and source-specific foreign-information appeals require separate legal review. The [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) accepts these methods at `5d8327ad`, with the [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md) checking later status edits. No professional attestation is claimed.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

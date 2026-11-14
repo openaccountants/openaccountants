@@ -1,7 +1,7 @@
 ---
 name: ad-corporate-income-tax
 description: "Andorra corporate income tax for resident companies and other entities in tax year 2026. Covers accounting-profit reconciliation, depreciation, impairments, provisions, financing limits, ordinary participation and foreign permanent-establishment exemptions, authorised holding and intellectual-property relief, loss carryforwards, the combined minimum settlement, foreign and domestic credits, advances, property transfers and filing. Includes corporate residence, migration valuation and the 2026 tax-administration ruling on departure gains, plus penalties and source-linked working papers. Use for Andorra IS, company tax, holding-company exemption, loss relief, September instalments, July returns and corporate exit-tax questions. Source-cited draft requiring professional review of the actual facts, records, authorisations and operative treaties."
-version: 0.8
+version: 0.9
 jurisdiction: AD
 tax_year: 2026
 last_updated: 2026-11-14
@@ -196,4 +196,4 @@ expected:
 
 Not yet confirmed: historic pre-July-2017 holding gain allocations require the actual old authorisation/acquisition workpaper; the precise article 13 client-cost average for a new, short-period or loss-history case and interaction of a particular donation expense with its separate credit require a supported case-specific treatment. No current new-company 5%-on-EUR-50,000 incentive is established. Treaty-by-treaty rates, consolidation/CFC/reorganisation and sector-specific calculations are outside this ordinary standalone method. Portal consolidations are not the official gazette; retain their amendment/application annotations and check the operative act where a historical transition matters.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

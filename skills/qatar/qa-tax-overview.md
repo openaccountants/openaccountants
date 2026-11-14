@@ -12,7 +12,7 @@ description: >
   and foreign-income routing. Preserves the existing overview slug while supplying
   the pack's individual income-tax computation. Treaty-specific conclusions and
   special-regime computations require separate analysis.
-version: 0.2
+version: 0.3
 jurisdiction: QA
 tax_year: 2026
 last_updated: 2026-11-14
@@ -22,7 +22,7 @@ tier: 2
 type: situation-rules
 ---
 
-# Qatar individual income tax and business income v0.2
+# Qatar individual income tax and business income v0.3
 
 ## Who this applies to
 
@@ -248,4 +248,4 @@ General reference only. A qualified Qatar tax professional must review the
 facts, records, elections and applicable law before filing or acting. This is a
 source-cited draft, not professional attestation.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

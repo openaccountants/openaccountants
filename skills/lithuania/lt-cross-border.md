@@ -1,7 +1,7 @@
 ---
 name: lt-cross-border
 description: "Hub skill for crossing the Lithuanian border in tax year 2026. Covers individual residence under GPMĮ article 4 (permanent home, centre of interests, 183 days, the 280 and 90 day two-year test, departure); companies and permanent establishments under PMĮ articles 2 and 4; tax at source on payments to foreign entities (PMĮ articles 4(4), 5, 34, 37, 37-1): 17% on dividends and real estate income, 10% on royalties and on interest to non-EEA, non-treaty lenders, 0% on interest to EEA and treaty lenders; the 10% and 12 month dividend exemption; DAS-1 and DAS-2 treaty forms and the FR0313 return; inbound dividends and foreign PE profits; foreign tax credits for companies and individuals; tax withheld from non-resident individuals (GPMĮ articles 6 and 23(7)); the corporate exit tax and its five year spread (PMĮ article 40-2); late payment interest. Includes the 2026 changes: CIT at 17%, PIT at 20, 25 and 32%, Russia and Belarus treaties no longer applied. Trigger phrases: nenuolatinis gyventojas, užsienio vienetas, DAS-1, išskaičiuojamas pelno mokestis, turto perkėlimas, exit tax Lithuania, withholding tax Lithuania, leaving Lithuania. Out of scope: lt-corporate-income-tax, lithuania-pit, lt-payroll-social, lithuania-vat-return."
-version: 0.3
+version: 0.4
 jurisdiction: LT
 tax_year: 2026
 last_updated: 2026-11-14
@@ -248,4 +248,4 @@ expected:
 
 Not yet confirmed: whether DAS-1 forms go to VMI with the annual financial statements and CIT return or only on request (VMI's PMĮ commentary says the first under article 52 and the second under article 34; VMI order No. 159 was not read); the rate and interest charged when the small-company 0% rate is lost under PMĮ article 5(2); the current list of target territories (Minister of Finance order No. 344) and VMI's own treaty list page (the PMĮ commentary's treaty lists still name Russia and Belarus; the GPMĮ commentary of 2026-10-19 marks both as no longer applied from 2026-01-01); the CFC rules (PMĮ article 39), which this skill does not cover. Also not confirmed today: that Lithuania no longer applies its tax treaties with Russia and Belarus from 1 January 2026 (the VMI commentary link now opens the VMI home page; the row was taken out of the rates table).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
