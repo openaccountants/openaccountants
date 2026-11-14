@@ -52,7 +52,7 @@ This file does not compute any return. It routes, and states the headline figure
 | ISR, non-residents without a permanent establishment | 3%, 5%, 10%, 15% or 25% of gross by type of income | Table in `gt-corporate-income-tax` | [LAT art 104](https://web.archive.org/web/20261029214607/https://tse.org.gt/images/UECFFPP/leyes/decreto_10-2012_Ley_actualizacion_tributaria.pdf) |
 | IVA standard rate | 12%, included in the price | Decreto 27-92 | [LIVA art 10](https://web.archive.org/web/20261030100915/https://tse.org.gt/images/UECFFPP/leyes/decreto_27-92-iva.pdf) |
 | IVA small taxpayer | 5% of gross monthly income, annual billing below Q500,285.00 | Replaces IVA credits and ISR | [SAT FAQ, cumplimiento tributario](https://portal.sat.gob.gt/portal/preguntas-frecuentes/cumplimiento-tributario/) |
-| Fuel distribution tax | Gasolina superior Q4.70, regular Q4.60, aviación Q4.70, diesel and gas oil Q1.30, kerosene Q0.50, jet kerosene Q0.50, nafta Q0.50 a gallon | Decreto 38-92 | [SAT, principales impuestos](https://portal.sat.gob.gt/portal/principales-impuestos-en-guatemala/) |
+| Fuel distribution tax | Gasolina superior Q4.70, regular Q4.60, aviación Q4.70, diesel and gas oil Q1.30, kerosene Q0.50, jet kerosene Q0.50, nafta Q0.50 (unit not stated on the page) | Decreto 38-92 | [SAT, principales impuestos](https://portal.sat.gob.gt/portal/principales-impuestos-en-guatemala/) |
 | Cement distribution tax | Q1.50 per 42.5 kg bag or equivalent | Decreto 79-2000 | same |
 | Vehicle circulation tax | Paid 1 January to 31 July each year | Decreto 70-94 | same |
 
@@ -152,7 +152,7 @@ expected:
 | SAT, preguntas frecuentes, cumplimiento tributario (copy taken 14 November 2026). Read for the forms and deadlines and the Q500,285 small taxpayer limit | https://portal.sat.gob.gt/portal/preguntas-frecuentes/cumplimiento-tributario/ | 2026-11-14 |
 | Banco de Guatemala, tasas de interés para efectos tributarios. Read for the 2026 rates | https://banguat.gob.gt/page/tasas-de-interes-para-efectos-tributarios-determinada-por-la-junta-monetaria | 2026-11-14 |
 
-Not yet confirmed: the ISO rate and base; IUSI, alcohol, tobacco, stamp duty (timbres) and IPRIMA rates; the Código Tributario penalty amounts; whether the fuel tax figures on SAT's page are current after any later reform; treaties.
+Not yet confirmed: the ISO rate and base; IUSI, alcohol, tobacco, stamp duty (timbres) and IPRIMA rates; the Código Tributario penalty amounts; the unit of the fuel tax amounts and whether they are current after any later reform; treaties.
 
 ## Changelog
 
