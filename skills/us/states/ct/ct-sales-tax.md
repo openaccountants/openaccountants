@@ -1,10 +1,10 @@
 ---
 name: ct-sales-tax
 description: Use for Connecticut sales/use tax, economic nexus, luxury items, software and OS-114 filing.
-version: "2.1"
+version: "2.2"
 jurisdiction: US-CT
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 category: state-tax
@@ -52,15 +52,15 @@ Ordinary Connecticut retail sales, consumer use tax, remote-seller registration,
 | Meals and certain beverages | 7.35% | [sales](https://portal.ct.gov/drs/sales-tax/tax-information) |
 | Passenger motor vehicle rental, 30 days or less | 9.35%; the former 7.75% claimed maximum was incorrect | [sales](https://portal.ct.gov/drs/sales-tax/tax-information) |
 | Computer/data processing services | 1%, subject to correct service classification | [service](https://portal.ct.gov/drs/sales-tax/services-subject-to-sales-and-use-taxes) |
-| Electronically accessed/transferred canned software for business use, without any tangible property | 1%, with purchaser business information and retailer good faith | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019(8).pdf) |
-| Personal canned software, or software provided with tangible property | 6.35% even if the physical item merely authorizes electronic access | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019(8).pdf) |
-| Ordinary digital goods | 6.35%; specified newspapers/subscription magazines/textbooks are exceptions | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019(8).pdf) |
+| Electronically accessed/transferred canned software for business use, without any tangible property | 1%, with purchaser business information and retailer good faith | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019%288%29.pdf) |
+| Personal canned software, or software provided with tangible property | 6.35% even if the physical item merely authorizes electronic access | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019%288%29.pdf) |
+| Ordinary digital goods | 6.35%; specified newspapers/subscription magazines/textbooks are exceptions | [softactual](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019%288%29.pdf) |
 
 **Clothing and the holiday.** Ordinary clothing under $50 is **not** generally exempt. DRS's alert on SN 2003(3) states that exemption was repealed July 1, 2011. The DRS 2026 development reports an enacted change, effective from passage, changing the annual sales-tax-free-week item threshold to **less than $300** and adding cleated shoes and backpacks; do not apply this limited holiday all year. Confirm the designated holiday dates and item definitions before using it. The old $50-$999 / $1,000+ split was wrong at the boundary: an ordinary $1,000 item does not exceed the luxury threshold. [DRS repeal alert](https://portal.ct.gov/drs/publications/special-notices/2003/sn-2003-3); [2026 developments](https://portal.ct.gov/drs/miscellaneous-taxes/other-tax-page/state-tax-developments/2026-developments).
 
 **Exemptions are conditional.** Grocery food for human consumption is generally exempt; prepared meals are separately taxable. Prescription drugs, qualifying manufacturing machinery/equipment and purchases for resale require the precise statutory conditions and documentation, rather than a blanket exemption for every medical or factory purchase. Chapter 219 section 12-412 contains the food, prescription and manufacturing exemptions; section 12-410 governs resale. The old broad professional-service exemption cannot be used: DRS lists taxable business management/consulting, personnel training, interior design and other enumerated services. Classify the actual service. [Sections 12-410 and 12-412](https://www.cga.ct.gov/current/pub/chap_219.htm); [DRS taxable services](https://portal.ct.gov/drs/sales-tax/services-subject-to-sales-and-use-taxes).
 
-**SaaS and digital sourcing.** A software subscription is not automatically a 1% computer service. Establish business use, delivery method, any physical property and the contract; digital content is separately classified. SN 2019(8) presumes digital goods delivered into Connecticut where the consumer/subscriber billing address is Connecticut unless contracts or other documents specifically provide otherwise. Retain business buyer name, address, orderer's name/title and business-use identification for the 1% software treatment. Resale of software requires unaltered onward sale/license/lease; digital-goods/service resale has its own integral-component conditions. [SN 2019(8), pages 1-3](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019(8).pdf).
+**SaaS and digital sourcing.** A software subscription is not automatically a 1% computer service. Establish business use, delivery method, any physical property and the contract; digital content is separately classified. SN 2019(8) presumes digital goods delivered into Connecticut where the consumer/subscriber billing address is Connecticut unless contracts or other documents specifically provide otherwise. Retain business buyer name, address, orderer's name/title and business-use identification for the 1% software treatment. Resale of software requires unaltered onward sale/license/lease; digital-goods/service resale has its own integral-component conditions. [SN 2019(8), pages 1-3](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019%288%29.pdf).
 
 ## Worked cases
 
@@ -114,7 +114,7 @@ Former agency landing URL retained: https://portal.ct.gov/DRS. The specific curr
 | [DRS Sales and Use Tax Information](https://portal.ct.gov/drs/sales-tax/tax-information) | Read for current registration, rates, permits, filing and use tax. | 2026-11-13 |
 | [CGA Chapter 219](https://www.cga.ct.gov/current/pub/chap_219.htm) | Read for retailer/economic nexus definitions, marketplace provisions, sections 12-410, 12-412 and 12-414 with adjacent clauses. | 2026-11-13 |
 | [DRS Services Subject to Sales and Use Taxes](https://portal.ct.gov/drs/sales-tax/services-subject-to-sales-and-use-taxes) | Read for enumerated services and computer/software classification. | 2026-11-13 |
-| [SN 2019(8)](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019(8).pdf) | Read for all three pages, digital goods, software use/delivery, sourcing and resale conditions. | 2026-11-13 |
+| [SN 2019(8)](https://portal.ct.gov/-/media/drs/publications/pubssn/2019/sn-2019%288%29.pdf) | Read for all three pages, digital goods, software use/delivery, sourcing and resale conditions. | 2026-11-13 |
 | [SN 2003(3), current alert](https://portal.ct.gov/drs/publications/special-notices/2003/sn-2003-3) | Read for 2011 repeal alert, distinguishing obsolete body text. | 2026-11-13 |
 | [DRS 2026 developments](https://portal.ct.gov/drs/miscellaneous-taxes/other-tax-page/state-tax-developments/2026-developments) | Read for sales-tax holiday threshold and eligible-item amendments. | 2026-11-13 |
 

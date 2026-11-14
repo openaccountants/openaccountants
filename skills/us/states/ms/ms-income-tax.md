@@ -1,10 +1,10 @@
 ---
 name: ms-income-tax
 description: "Mississippi 2026 resident wage and sole-proprietor income tax: separate state income computation, 4% above $10,000, deductions/exemptions, retirement, combined spouses and estimates."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-MS
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -53,7 +53,7 @@ Ordinary full-year Mississippi residents with wages, sole-proprietor/disregarded
 | Fact | Treatment |
 | --- | --- |
 | 2025-2026 filing cycle | 2025 rate is4.4% above $10,000; use dated form instructions only for their stated year. [DOR 2025 comparison row](https://www.dor.ms.gov/general-information). |
-| Future phase-out | DOR confirms3.75% for 2027; later reductions are not evidence that2026 tax is repealed. [DOR 2027 row](https://www.dor.ms.gov/general-information); [2025 enacted-law summary](https://www.dor.ms.gov/forms-resources/laws-regulations/2025-legislation). |
+| Future phase-out | DOR confirms 3.75% for 2027; later reductions are not evidence that 2026 tax is repealed. [DOR 2027 row](https://www.dor.ms.gov/general-information); [2025 enacted-law summary](https://www.dor.ms.gov/forms-resources/laws-regulations/2025-legislation). |
 | Two working spouses | Income stays with its earner; allocate permitted joint deductions/exemptions without exceeding totals and compute separately when using combined filing. |
 | Qualified retirement versus early payout | Identify plan and service/age requirements. An ordinary retirement exemption is not a blanket exemption for every1099-R. [Retirement FAQ](https://www.dor.ms.gov/individual/individual-income-tax-frequently-asked-questions). |
 | Part-year/nonresident/mixed-residency spouses | Form 80-205 and prorated deductions require separate work. [Residency FAQ](https://www.dor.ms.gov/individual/individual-income-tax-frequently-asked-questions). |
