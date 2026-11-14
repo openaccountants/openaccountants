@@ -34,7 +34,7 @@ Out of scope: companies' residence (Cabinet Decision No. 85 of 2022 Art. 3, see 
 | Personal income tax on wages, investment income and personal real estate income | None | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf |
 | Corporate Tax for an individual in business | Applies only where business turnover exceeds AED 1,000,000 in a Gregorian calendar year | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf |
 | Corporate Tax rate on taxable income up to AED 375,000 | 0% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
-| Corporate Tax rate above AED 375,000 | 9% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf |
+| Corporate Tax rate above AED 375,000 | 9% | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf ; https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |
 | VAT standard rate (on consumption, not income) | 5% | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf |
 | TRC application fee, non-refundable | AED 50 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf |
 | TRC review and electronic certificate, applicant registered with the FTA | AED 500 | same |
