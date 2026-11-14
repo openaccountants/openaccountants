@@ -444,7 +444,7 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 | Tax Guide | How Bookkeeping Connects |
 | --- | --- |
 | **`it-income-tax`** | Professionals and forfettari |
-| **IRES (companies)** | Risultato dell'esercizio is the start;  the section "Expense Classification" caps create permanent differences |
+| **IRES (companies)** | Risultato dell'esercizio is the start; the section "Expense Classification" caps create permanent differences |
 | **`italy-vat-return`** | 1420 and 2220 feed the liquidazione and the LIPE |
 | **`it-irap`** | Base starts from the Differenza A-B |
 | **`it-inps-contributions`** | Account 5310; self-employed contributions |
