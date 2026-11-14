@@ -14,14 +14,15 @@ description: >
   e-invoicing formats and platforms (france-einvoice), tax audits (fr-tax-audit),
   income and corporate tax (fr-income-tax, fr-corporate-tax), bookkeeping
   (france-bookkeeping).
-version: 2.17
+version: 2.18
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # France: VAT and the VAT return (TVA, CA3 and CA12)
