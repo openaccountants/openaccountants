@@ -1,10 +1,10 @@
 ---
 name: mo-sales-tax
 description: "Missouri sales/use: state and local rates, food/business tests, software delivery, remote-seller nexus, filing, consumer use and 2026 cash rounding."
-version: "2.1"
+version: "2.2"
 jurisdiction: US-MO
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -26,10 +26,10 @@ Economic collection began January 1,2023 under SB153; the old “last state” h
 
 | 2026 item | Rule | Official source |
 | --- | --- | --- |
-| General state sales/use rate | 4.225%, plus applicable local **sales or use** tax | [2026 rate tables](https://dor.mo.gov/taxation/business/tax-types/sales-use/rate-tables/2026/) |
+| General state sales/use rate | 4.225%, plus applicable local **sales or use** tax | [DOR sales/use tax](https://dor.mo.gov/taxation/business/tax-types/sales-use/); [2026 rate tables](https://dor.mo.gov/taxation/business/tax-types/sales-use/rate-tables/2026/) |
 | Qualifying food state rate | 1.225%, plus applicable local tax; not a grocery exemption | [12 CSR10-110.990](https://dor.mo.gov/resources/official-final-rules/documents/12_CSR_10-110_990_Tax-Sales_of_Food.pdf) |
 | Other food / full-rate category | 4.225% state plus local, subject to business/transaction classification | [Food rule](https://dor.mo.gov/resources/official-final-rules/documents/12_CSR_10-110_990_Tax-Sales_of_Food.pdf) |
-| Local/combined rate | Actual transaction address and effective date; no assumed 6.5% local or 10.85% statewide maximum | [2026 rate tables](https://dor.mo.gov/taxation/business/tax-types/sales-use/rate-tables/2026/) |
+| Local/combined rate | Actual transaction address and effective date; never assume a local rate or a statewide maximum | [2026 rate tables](https://dor.mo.gov/taxation/business/tax-types/sales-use/rate-tables/2026/) |
 | Remote seller / facilitator threshold | **Exceeds 100,000** gross receipts from taxable deliveries of TPP into Missouri; statutory quarter-close preceding 12-month test | [144.605(2)(e)](https://revisor.mo.gov/main/OneSection.aspx?bid=49987&section=144.605); [remote FAQ](https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html) |
 | Regular monthly return assignment | State tax 500 or more/month; local tax excluded from assignment calculation | [Sales filing FAQ](https://dor.mo.gov/faq/taxation/business/sales-tax-filing.html) |
 | Annual return assignment | State tax less than 200/quarter; otherwise quarterly below monthly boundary | [Sales filing FAQ](https://dor.mo.gov/faq/taxation/business/sales-tax-filing.html) |
