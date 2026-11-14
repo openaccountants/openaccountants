@@ -2,7 +2,9 @@
 jurisdiction: GD
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: gd-vat-registration
+  SC: gd-social-contributions
 partial: {}
 ---
 
