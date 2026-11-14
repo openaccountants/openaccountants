@@ -38,7 +38,7 @@ This skill computes the monthly withholding an employer takes from pay in 2026. 
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Employee social security deducted first | 13.07% of gross pay (blue-collar: of gross at 108%), less any social work bonus | 2026 | [RSZ instructions 2026/3](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html); see `belgium-payroll` |
+| Employee social security deducted first | 13.07% of gross pay (computed: 7.50 + 3.55 + 1.15 + 0.87 on the RSZ table) (blue-collar: of gross at 108%), less any social work bonus | 2026 | [RSZ instructions 2026/3](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html); see `belgium-payroll` |
 | Flat-rate professional expenses, employees | 30% of annual gross after social security, capped at EUR 6,070 (cap reached at EUR 20,233.33) | 2026 | [Key formula 2026, nr. 8](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
 | Flat-rate professional expenses, directors | 3%, capped at EUR 3,200 (cap reached at EUR 106,666.67) | 2026 | Key formula 2026, nr. 8; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
 | Withholding scale (annex 1) | 26.75% to EUR 16,710; EUR 4,469.93 + 42.80% to EUR 29,500; EUR 9,944.05 + 48.15% to EUR 51,050; EUR 20,320.38 + 53.50% above | 2026, whole year | [Key formula 2026, annex 1](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
