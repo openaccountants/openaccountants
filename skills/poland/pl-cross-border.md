@@ -226,19 +226,19 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | PIT Act, consolidated text Dz.U. 2026 poz. 592, ELI record (later amendments 779, 846, 1079) | https://api.sejm.gov.pl/eli/acts/DU/2026/592 | 2026-10-23 |
-| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 13, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2 and 3b, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-10-23 |
-| Social Insurance System Act, Sejm unified text of Dz.U. 2026 poz. 199 (arts. 16, 22) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf | 2026-10-23 |
+| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 13, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2 and 3b, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-11-14 |
+| Social Insurance System Act, Sejm unified text of Dz.U. 2026 poz. 199 (arts. 16, 22) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf | 2026-11-14 |
 | MRPiPS notice on the 2026 annual contribution cap, M.P. 2025 poz. 1206 | https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf | 2026-10-23 |
-| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 26a, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-10-23 |
-| MF notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
+| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 26a, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-11-14 |
+| Read for Late payment interest: MF notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
 | NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
-| Poland-Germany double tax treaty, Dz.U. 2005 nr 12 poz. 90 (art. 14) | https://api.sejm.gov.pl/eli/acts/DU/2005/90/text.pdf | 2026-10-23 |
-| Act of 29 October 2021 amending the PIT Act (Polski Ład), Dz.U. 2021 poz. 2105, art. 53 (return relief only for moves after 31 December 2021) | https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf | 2026-10-23 |
+| Poland-Germany double tax treaty, Dz.U. 2005 nr 12 poz. 90 (art. 14) | https://api.sejm.gov.pl/eli/acts/DU/2005/90/text.pdf | 2026-11-14 |
+| Act of 29 October 2021 amending the PIT Act (Polski Ład), Dz.U. 2021 poz. 2105, art. 53 (return relief only for moves after 31 December 2021) | https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf | 2026-11-14 |
 | Ministry of Finance tax explanations of 29 April 2021 on tax residence of individuals (sections 2.2 and 2.3), in the MF Eureka system | https://eureka.mf.gov.pl/informacje/podglad/482416 | 2026-10-23 |
-| podatki.gov.pl, ulga na powrót (updated 6 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit | 2026-10-23 |
-| podatki.gov.pl, ulga abolicyjna (updated 13 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit | 2026-10-23 |
-| podatki.gov.pl, deduction of social contributions (contributions on exempt revenue not deductible) | https://www.podatki.gov.pl/ulgi-i-odliczenia/odliczenie-skladek-na-ubezpieczenie-spoleczne-pit | 2026-10-23 |
-| podatki.gov.pl, PIT forms for businesses (PIT-NZ (2), PIT-8AR (14), IFT-1R (18)) | https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit | 2026-10-23 |
+| Read for Return relief (ulga na powrót): podatki.gov.pl, ulga na powrót (updated 6 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit | 2026-11-14 |
+| Read for Abolition relief (ulga abolicyjna) cap: podatki.gov.pl, ulga abolicyjna (updated 13 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, deduction of social contributions (contributions on exempt revenue not deductible) | https://www.podatki.gov.pl/ulgi-i-odliczenia/odliczenie-skladek-na-ubezpieczenie-spoleczne-pit | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, PIT forms for businesses (PIT-NZ (2), PIT-8AR (14), IFT-1R (18)) | https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit | 2026-11-14 |
 
 The ISAP pages (isap.sejm.gov.pl) serve a browser check to scripted requests, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 

@@ -252,25 +252,25 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | CIT Act, consolidated text Dz.U. 2026 poz. 554 (ISAP record) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 | 2026-10-22 |
-| CIT Act, Sejm unified text including Dz.U. 2026 poz. 554, 779, 846, 912, 1123 (arts. 1, 1a, 3, 4a, 7, 7a, 8, 9, 15c, 16, 16f, 16k, 19, 20, 21, 22, 24a, 24aa, 24ca, 24f, 25, 26, 27, 28c-28t, 38aa-38ad, 38ec) | https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf | 2026-10-22 |
-| Amending act Dz.U. 2025 poz. 1658 (bank rates, 9% revenue test, from 1 January 2026) | https://api.sejm.gov.pl/eli/acts/DU/2025/1658/text.pdf | 2026-10-22 |
-| Amending act Dz.U. 2026 poz. 779 (JPK_CIT deadline, from 1 July 2026; corrects art. 38ab(1)(2)(b)) | https://api.sejm.gov.pl/eli/acts/DU/2026/779/text.pdf | 2026-10-22 |
-| MF regulation Dz.U. 2026 poz. 188 (seventh-month JPK_CIT deadline for tax years ending before 1 April 2026) | https://api.sejm.gov.pl/eli/acts/DU/2026/188/text.pdf | 2026-10-22 |
-| Act Dz.U. 2021 poz. 2105, art. 66 (JPK_CIT phase-in), as amended by Dz.U. 2023 poz. 1059 | https://api.sejm.gov.pl/eli/acts/DU/2023/1059/text.pdf | 2026-10-22 |
-| Amending act Dz.U. 2026 poz. 1371 (transfer pricing information, cash payments) | https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf | 2026-10-22 |
-| Act on top-up taxation (Pillar Two), Dz.U. 2024 poz. 1685 | https://api.sejm.gov.pl/eli/acts/DU/2024/1685/text.pdf | 2026-10-22 |
-| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 56, 56a, 56b, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-10-22 |
-| Fiscal Penal Code, Sejm unified text of Dz.U. 2025 poz. 633 (arts. 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text/U/D20250633Lj.pdf | 2026-10-22 |
-| MF notice on late payment interest rates, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-22 |
-| podatki.gov.pl, classic CIT rates and limits (2026 limits: PLN 8,517,000, 8,431,000, 213,000; car caps; bank rates) | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity | 2026-10-22 |
-| podatki.gov.pl, Estonian CIT rates and limits | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/stawki-i-limity-w-estonskim-cit | 2026-10-22 |
-| podatki.gov.pl, Estonian CIT basic information (conditions, ZAW-RD, CIT-8E) | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/informacje-podstawowe-cit-estonski | 2026-10-22 |
-| podatki.gov.pl, CIT forms (CIT-8 (34), CIT-8AB (9), CIT-8E (4), CIT/M) | https://www.podatki.gov.pl/podatki-firmowe/cit/formularze-cit | 2026-10-22 |
+| CIT Act, Sejm unified text including Dz.U. 2026 poz. 554, 779, 846, 912, 1123 (arts. 1, 1a, 3, 4a, 7, 7a, 8, 9, 15c, 16, 16f, 16k, 19, 20, 21, 22, 24a, 24aa, 24ca, 24f, 25, 26, 27, 28c-28t, 38aa-38ad, 38ec) | https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Amending act Dz.U. 2025 poz. 1658 (bank rates, 9% revenue test, from 1 January 2026) | https://api.sejm.gov.pl/eli/acts/DU/2025/1658/text.pdf | 2026-11-14 |
+| Amending act Dz.U. 2026 poz. 779 (JPK_CIT deadline, from 1 July 2026; corrects art. 38ab(1)(2)(b)) | https://api.sejm.gov.pl/eli/acts/DU/2026/779/text.pdf | 2026-11-14 |
+| Read for the points the body cites to it: MF regulation Dz.U. 2026 poz. 188 (seventh-month JPK_CIT deadline for tax years ending before 1 April 2026) | https://api.sejm.gov.pl/eli/acts/DU/2026/188/text.pdf | 2026-11-14 |
+| Act Dz.U. 2021 poz. 2105, art. 66 (JPK_CIT phase-in), as amended by Dz.U. 2023 poz. 1059 | https://api.sejm.gov.pl/eli/acts/DU/2023/1059/text.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Amending act Dz.U. 2026 poz. 1371 (transfer pricing information, cash payments) | https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Act on top-up taxation (Pillar Two), Dz.U. 2024 poz. 1685 | https://api.sejm.gov.pl/eli/acts/DU/2024/1685/text.pdf | 2026-11-14 |
+| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 56, 56a, 56b, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-11-14 |
+| Fiscal Penal Code, Sejm unified text of Dz.U. 2025 poz. 633 (arts. 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text/U/D20250633Lj.pdf | 2026-11-14 |
+| Read for the points the body cites to it: MF notice on late payment interest rates, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
+| Read for Revenue limit for the 9% rate, in the tax year, Small taxpayer (mały podatnik) limit, One-off depreciation, small taxpayers and start-ups, Passenger car value cap for depreciation: podatki.gov.pl, classic CIT rates and limits (2026 limits: PLN 8,517,000, 8,431,000, 213,000; car caps; bank rates) | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity | 2026-11-14 |
+| Read for Estonian CIT (ryczałt od dochodów spółek): podatki.gov.pl, Estonian CIT rates and limits | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/stawki-i-limity-w-estonskim-cit | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, Estonian CIT basic information (conditions, ZAW-RD, CIT-8E) | https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/informacje-podstawowe-cit-estonski | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, CIT forms (CIT-8 (34), CIT-8AB (9), CIT-8E (4), CIT/M) | https://www.podatki.gov.pl/podatki-firmowe/cit/formularze-cit | 2026-11-14 |
 | NBP, EUR mid rate 2 January 2026 (4.2156) and 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2026-01-02/?format=json and https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-22 |
 | NBP base interest rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-22 |
-| Read for Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank: isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658 | 2026-11-14 |
-| Read for Late payment interest (odsetki za zwłokę): isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-11-14 |
-| Read for Pillar Two: isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 | 2026-11-14 |
+| Read for Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank: ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658 | 2026-11-14 |
+| Read for Late payment interest (odsetki za zwłokę): ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-11-14 |
+| Read for Pillar Two: ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 | 2026-11-14 |
 
 The ISAP pages (isap.sejm.gov.pl) served a browser check to scripted requests on 2026-10-22, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 

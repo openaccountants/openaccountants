@@ -174,16 +174,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with the transitional provisions of Dz.U. 2025 poz. 896 and 1203 quoted in the notice (art. 2 pkt 25, 5, 9, 15, 17, 19a, 21, 28b, 29a, 41, 43, 86, 86a, 87, 88, 96, 99, 103, 106ga, 106i, 106ni, 108a, 109, 112b, 112c, 113, 113a, 113b, 145l-145n, 146ef) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-10-23 |
-| Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (not applied) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-10-23 |
-| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 56b, 63, 117ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
-| Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
-| Business Law (Prawo przedsiębiorców), Dz.U. 2025 poz. 1480 (art. 19) | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf | 2026-10-23 |
-| PIT Act, Dz.U. 2026 poz. 592 (art. 22p) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
-| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16a, 54, 56, 57, 62) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
-| Ministry of Finance, VAT rates and limits (PLN 240,000 exemption) | https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity | 2026-10-23 |
-| Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-10-23 |
-| NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-10-23 |
+| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with the transitional provisions of Dz.U. 2025 poz. 896 and 1203 quoted in the notice (art. 2 pkt 25, 5, 9, 15, 17, 19a, 21, 28b, 29a, 41, 43, 86, 86a, 87, 88, 96, 99, 103, 106ga, 106i, 106ni, 108a, 109, 112b, 112c, 113, 113a, 113b, 145l-145n, 146ef) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (not applied) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-11-14 |
+| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 56b, 63, 117ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-11-14 |
+| Read for Late payment interest: Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
+| Business Law (Prawo przedsiębiorców), Dz.U. 2025 poz. 1480 (art. 19) | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf | 2026-11-14 |
+| PIT Act, Dz.U. 2026 poz. 592 (art. 22p) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-11-14 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16a, 54, 56, 57, 62) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-11-14 |
+| Read for Reduced rate, restaurant and catering services (PKWiU 56), with exceptions such as alcohol, Small-business exemption: sales without VAT, previous and current year: Ministry of Finance, VAT rates and limits (PLN 240,000 exemption) | https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity | 2026-11-14 |
+| Read for the points the body cites to it: Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-11-14 |
+| Read for Late payment interest: NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-11-14 |
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
 | Read for Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000: official text of Dz.U. 2025 poz. 896 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf | 2026-11-14 |
 
