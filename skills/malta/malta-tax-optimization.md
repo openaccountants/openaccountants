@@ -1,22 +1,20 @@
 ---
 name: malta-tax-optimization
-description: "Use this skill when asked how a self-employed individual or small business owner in Malta can lawfully reduce or time income tax for basis year 2026 (year of assessment 2027). Covers the 10% part-time final tax and its EUR 12,000 cap, joint and parent rate tables, the sole trader or company choice (35% with shareholder refunds, the elective 15% final tax), deductions people miss (article 14 test, home for the elderly fees, the car cost cap), wear and tear timing, losses, provisional tax, VAT registration choice, pension tax credits, and the anti-avoidance rule in article 51. Trigger on: reduce tax Malta, tax planning Malta, save tax Malta, pay less tax Malta, deductions I'm missing, part-time 10% Malta, incorporate in Malta, pension tax credit Malta. Links the computation skills instead of repeating them."
-version: 1.5
+description: "Use this skill when asked how a self-employed individual or small business owner in Malta can lawfully reduce or time income tax for basis year 2026 (year of assessment 2027). Covers the 10% part-time final tax and its EUR 12,000 cap, joint and parent rate tables, the sole trader or company choice (35% with shareholder refunds, the elective 15% final tax), deductions people miss (article 14 test, home for the elderly fees, the car cost cap), wear and tear timing, losses, provisional tax, VAT registration choice, pension tax credits, and the anti-avoidance rule in article 51. Trigger on reduce tax Malta, tax planning Malta, save tax Malta, pay less tax Malta, deductions I'm missing, part-time 10% Malta, incorporate in Malta, pension tax credit Malta. Links the computation skills instead of repeating them."
+version: 2.0
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: decision
 ---
 
-# Malta Tax Optimization
+# Malta Tax Optimization v2.0
 
-**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-tax-optimization.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
-
-## Malta Tax Optimization: Self-Employed Skill v1.5
-
+## Scope and who this is for
 Tax year 2026: basis year 2026, year of assessment 2027. This skill lists the lawful levers and points to the skill that computes each one. It does not repeat the rate tables or the computations:
 
 - individual rates, residence, part-time and rental final taxes: `malta-income-tax`
@@ -26,47 +24,46 @@ Tax year 2026: basis year 2026, year of assessment 2027. This skill lists the la
 - related-party pricing: `malta-transfer-pricing`; moving to Malta: `moving-to-malta-tax-residence`
 - VAT: `malta-vat-return`; social security: `malta-ssc`
 
-## Section 1: Quick Reference
+## Ask the client first
+1. Are you in full-time employment registered with Jobsplus, a pensioner, or a full-time student? Is the side work registered and for different customers?
+2. Married or single in 2026? Children, their ages, custody, and nationality of each spouse?
+3. Expected 2026 profit, and will profits be paid out or kept in the business?
+4. What did your last self-assessment show (the provisional tax benchmark)?
+5. Which assets will you buy, when, and what share is business use?
+6. Turnover in 2025 and so far in 2026, and who are your customers (businesses or consumers)?
 
-| Field | Value | Source |
-| --- | --- | --- |
-| Country | Malta | |
-| Tax year | Calendar basis year 2026, assessed in year of assessment 2027 | Income Tax Act, Cap. 123 |
-| Individual return due | 30 June 2027 for basis year 2026 | S.L. 372.16 rule 2(c)(ii) |
-| Top individual rate | 35% above EUR 60,000 (all resident tables) | Cap. 123 art. 56(1), as replaced by Act III of 2026 |
-| Single table, basis year 2026 | 0% to EUR 12,000; 15% to EUR 16,000; 25% to EUR 60,000; 35% above | Cap. 123 art. 56(1)(b)(i) |
-| Married joint table (no qualifying child), basis year 2026 | 0% to EUR 15,000; 15% to EUR 23,000; 25% to EUR 60,000; 35% above | Cap. 123 art. 56(1)(a)(i) |
-| Part-time final tax | 10% on part-time self-employed profit up to EUR 12,000 | Cap. 123 art. 90A; S.L. 123.39 rule 3(2) |
-| Company rate | 35%. For a non-resident shareholder, the six-sevenths refund on Malta trading profit usually leaves 5% Malta tax. For a Malta-resident individual shareholder, articles 12(1)(c)(iii) and 43(6) may change this: see `mt-corporate-tax` | Cap. 123 art. 56(6), 12(1)(c)(iii), 43(6); Cap. 372 art. 48(4A) |
-| Anti-avoidance | Article 51: artificial or fictitious schemes are disregarded; schemes whose sole or main purpose is a tax advantage can be nullified by order | Cap. 123 art. 51 |
-| Interest on late tax | 0.6% a month or part month, capped at the tax | Cap. 372 art. 44(2A) |
+## The method, step by step
+1. Fix the year (basis year 2026, YA 2027) and the person's status (single, married, parent; employee with side work, self-employed, pensioner).
+2. Run the levers in order: part-time final tax, family rate tables, sole trader or company, deductions, wear and tear timing, losses, provisional tax, VAT choice, pension credits.
+3. For each lever, compute both ways and keep the cheaper lawful one; the worked cases show the pattern.
+4. Test every step against article 51 (anti-avoidance) and the article 14(1) and 26 deduction rules.
+5. Diarise the calendar dates.
 
-The full rate tables, including the four new child tables for 2026, are in `malta-income-tax`. Every rate above is from that skill's sources and from the Acts read on 2026-10-23.
+The levers, one by one:
 
-## Section 2: Income Splitting and Structuring
-
-### The part-time 10% final tax (article 90A, S.L. 123.39)
+### Income Splitting and Structuring
+#### The part-time 10% final tax (article 90A, S.L. 123.39)
 
 | Point | Rule | Source |
 | --- | --- | --- |
 | Who | A Malta resident in full-time employment registered with Jobsplus, a pensioner taxed in Malta, or a full-time student or apprentice. A spouse living with a qualifying spouse is included. | S.L. 123.39 rule 2; art. 90A(9) |
-| Rate and cap | 10% final tax on part-time self-employed profit up to EUR 12,000. Profit above EUR 12,000 goes into the return at normal rates. | art. 90A(11); rule 3(2) |
+| Rate and cap | 10% final tax on part-time self-employed profit up to EUR 12,000 (EUR 10,000 where the part-time income is employment income under art. 4(1)(b)). Profit above the cap goes into the return at normal rates. | art. 90A(11); rule 3(2) |
 | Conditions | Part-time work registered with Jobsplus; at most two part-time employees; proper books; work for someone other than the full-time employer; VAT registration unless not required or exempt. | rule 4 |
 | Payment | By 30 April after the basis year (30 April 2027 for 2026 profit), with a statement of accounts | Cap. 372 art. 42(4)(a) |
 | Risk | If the tax is not paid on time and the Commissioner sends a notice, all the part-time income is taxed at normal rates. The Commissioner can refuse the regime where the work is the person's normal activity. | art. 90A(8), (10) |
 
 Planning point: profit above EUR 12,000 is not lost, it is taxed at the person's normal marginal rate. Timing of invoices only helps if the business genuinely reports on an accruals basis and the work is genuinely done in the later year. Do not move income artificially (article 51).
 
-### Rate tables and family status (article 56)
+#### Rate tables and family status (article 56)
 
 - Married couples are taxed jointly by default under article 49. They may elect separate returns (article 49A), or the responsible spouse may opt for a separate computation (article 50), in which case each spouse uses the single or parent tables. Compare both before filing; `malta-income-tax` has the tables.
 - For basis year 2026 the married and parent tables with qualifying children give wider 0% bands (for example EUR 22,500 for a married couple with two or more qualifying children). Each table has conditions on custody, age and nationality. Check every condition before relying on a table.
 
-### Employing a family member
+#### Employing a family member
 
 A salary to a spouse or child is deductible only if it meets the article 14(1) test (wholly and exclusively incurred in producing the income) and is not barred by article 26. Rule 4(1) of the Income Tax (Deductions) Rules, S.L. 123.07, limits the deduction for emoluments to emoluments "duly accounted for", meaning run through FSS payroll. The work must be real, the pay must match the work, and the employment must be registered. See `malta-payroll`.
 
-### Sole trader or company
+#### Sole trader or company
 
 | Factor | Sole trader | Private limited company |
 | --- | --- | --- |
@@ -78,8 +75,7 @@ A salary to a spouse or child is deductible only if it meets the article 14(1) t
 
 The refund route, the 15% election and the Malta-resident individual shareholder rules (article 43(6) and article 12(1)(c)(iii)) are worked through in `mt-corporate-tax`. Formation steps and costs: `malta-formation`. Accounts and audit: `malta-financial-statements`.
 
-## Section 3: Deductions Most People Miss
-
+### Deductions Most People Miss
 Every deduction below must pass article 14(1) ("wholly and exclusively incurred in the production of the income") and must not be barred by article 26 (private or domestic spending, capital spending, recoverable amounts, voluntary payments). Mixed-use items are apportioned. Default to 0% business use until the client documents it.
 
 | Deduction | Rule | Source |
@@ -96,15 +92,14 @@ Entertainment: the Income Tax Act has no specific rule. Treat client entertainme
 
 Social security Class 2: Part IV of the Income Tax Act has no specific provision on social security contributions either way, and MTCA's 2026 return booklet (basis year 2025) does not mention them. `malta-income-tax` treats Class 2 as a memo item. Do not claim it until the position is confirmed.
 
-## Section 4: Capital Allowances (Wear and Tear)
-
+### Capital Allowances (Wear and Tear)
 **Legislation:** Cap. 123 art. 14(1)(f); Deduction for Wear and Tear of Plant and Machinery Rules, S.L. 123.01.
 
-### Timing of purchases
+#### Timing of purchases
 
 Rule 7(a) of S.L. 123.01: an asset acquired on any day other than the first day of the year is treated "as if the asset had been used for the whole year". Rule 7(b): no allowance for a sale, scrapping or other listed event before the year's last day; a last-day event requires separate analysis. So an asset bought and in use by 31 December 2026 gets a full year's allowance in basis year 2026. The purchase must be genuine and the asset in business use.
 
-### Minimum years (S.L. 123.01 Schedule, straight line on cost)
+#### Minimum years (S.L. 123.01 Schedule, straight line on cost)
 
 | Asset | Minimum years | Maximum annual rate |
 | --- | --- | --- |
@@ -120,12 +115,11 @@ Article 14(1)(j) also gives an initial deduction of one-fifth on plant and machi
 
 Allowances are only given where proper records of cost are kept (rule 5) and are cut to the business-use share (rule 11). S.L. 123.01 has no de minimis amount for writing off small items in one year.
 
-### Asset disposal
+#### Asset disposal
 
 A sale or scrapping triggers a balancing statement under article 24: proceeds above the written-down value are a balancing charge; below it, a balancing allowance.
 
-## Section 5: Loss Utilization
-
+### Loss Utilization
 **Legislation:** Cap. 123 art. 14(1)(g).
 
 | Point | Rule |
@@ -138,8 +132,7 @@ A sale or scrapping triggers a balancing statement under article 24: proceeds ab
 
 Losses must come from genuine commercial activity. A manufactured loss is open to article 51.
 
-## Section 6: Timing Strategies
-
+### Timing Strategies
 | Strategy | Detail | Source |
 | --- | --- | --- |
 | Asset purchase before year end | Full year's wear and tear in the year of acquisition | S.L. 123.01 rule 7(a) |
@@ -150,8 +143,7 @@ Losses must come from genuine commercial activity. A manufactured loss is open t
 
 Detail on provisional tax: `mt-estimated-tax`.
 
-## Section 7: VAT Choice
-
+### VAT Choice
 | Strategy | Detail | Source |
 | --- | --- | --- |
 | Article 11 small enterprise | Available where turnover in the preceding calendar year was not more than EUR 35,000. Charges no VAT and recovers none. Suits sales to consumers or VAT-exempt customers. | VAT Act, Cap. 406, art. 11 |
@@ -160,17 +152,15 @@ Detail on provisional tax: `mt-estimated-tax`.
 
 Registration rules, deadlines and the EUR 100,000 Union threshold are in `malta-vat-return`.
 
-## Section 8: Social Security
-
-Class 2 is charged under the Social Security Act, Cap. 318, on the previous year's net earnings, at 15% in the middle band with a weekly minimum and maximum. The 2026 weekly amounts were not found in the law on legislation.mt; take them from MTCA's 2026 table. See `malta-ssc` before quoting a figure.
+### Social Security
+Class 2 is charged under the Social Security Act, Cap. 318, on the previous year's net earnings, with a weekly minimum and maximum. The rate band and the 2026 weekly amounts are in `malta-ssc` (not re-read here). See `malta-ssc` before quoting a figure.
 
 Planning points:
 
 - A full-time employee with part-time self-employment pays Class 1 through the employer; check the Class 2 position on mtca.gov.mt (`malta-ssc`).
 - Class 2 above the maximum adds nothing. Below the band the flat minimum applies.
 
-## Section 9: Investment and Retirement
-
+### Investment and Retirement
 | Relief | Rule | Source |
 | --- | --- | --- |
 | Personal retirement scheme tax credit | 25% of qualifying contributions, up to EUR 750 a year. Each spouse may claim. Not carried forward. | MTCA tax return booklet 2026 (basis year 2025); Cap. 123 art. 57 |
@@ -182,8 +172,7 @@ Article 57(1) of the Act states 15% and EUR 150 "or such other amount as may be 
 
 Malta Enterprise runs grant and tax-credit schemes for small businesses (for example Micro Invest). Their rates and caps change by call and are not in the Income Tax Act. Read the current Malta Enterprise guidelines before quoting a figure.
 
-## Section 10: Red Lines
-
+### Red Lines
 | Risk | Detail | Source |
 | --- | --- | --- |
 | Anti-avoidance | Malta has a general anti-avoidance rule. An artificial or fictitious scheme is disregarded. A scheme whose sole or main purpose is a tax advantage can be nullified by the Commissioner's order. Companies also face the ATAD rules in S.L. 123.187. | Cap. 123 art. 51 |
@@ -192,8 +181,7 @@ Malta Enterprise runs grant and tax-credit schemes for small businesses (for exa
 | Undeclared income | Omission additional tax of 1.5% a month of the endangered tax, up to 60 months, reduced if corrected early | Cap. 123 Schedule, items 5 to 9 |
 | Late return (individual) | EUR 10 within 6 months, rising to EUR 500 after 60 months (Table A) | Cap. 123 Schedule, item 2 |
 
-## Section 11: Annual Tax Planning Calendar (basis year 2026)
-
+### Annual Tax Planning Calendar (basis year 2026)
 | Month | Action |
 | --- | --- |
 | January | Receive FS3s for 2025 by 31 January. Review 2026 provisional tax benchmark. |
@@ -206,11 +194,33 @@ Malta Enterprise runs grant and tax-credit schemes for small businesses (for exa
 
 Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTCA notice of 3 June 2026.
 
-## Section 12: Worked Examples
+## Rates, bands and thresholds
 
+| Item | Figure and conditions | Tax year | Source |
+|---|---|---|---|
+| Single table, art. 56(1) | 0% to EUR 12,000; 15% minus EUR 1,800 to EUR 16,000; 25% minus EUR 3,400 to EUR 60,000; 35% minus EUR 9,400 above | YA 2027 (Act III of 2026) | https://legislation.mt/eli/cap/123/eng/pdf |
+| Married joint table, no qualifying child, art. 56(1) | 0% to EUR 15,000; 15% minus EUR 2,250 to EUR 23,000; 25% minus EUR 4,550 to EUR 60,000; 35% minus EUR 10,550 above | YA 2027 | same |
+| Part-time final tax, art. 90A(11) | 10 cents per euro from YA 2023 (in place of 15 cents) | Current | same |
+| Part-time cap, S.L. 123.39 rule 3(2) | EUR 12,000 of part-time trade or profession income (art. 4(1)(a)); EUR 10,000 of part-time employment income (art. 4(1)(b)); the excess goes in the return at normal rates | Current | https://legislation.mt/eli/sl/123.39/eng/pdf |
+| Company rate, art. 56(6) | 35% | YA 2027 | https://legislation.mt/eli/cap/123/eng/pdf |
+| Elderly or disabled home fees, art. 14D | lower of the amount paid and EUR 4,500 | From YA 2027 | same |
+| R&D deduction, art. 14(1)(ha) | 175%, only from a date the Minister sets by Gazette notice | Marked YA 2027 | same |
+| Personal retirement scheme credit, art. 57(1) | lower of 15% of contributions and EUR 150, "or such other amount as may be prescribed" | Current | same |
+| Late individual return, Schedule Table A | EUR 10 within 6 months, rising to EUR 500 after 60 months | Current | same |
+| Omission from a return, Schedule | 1.5% a month of the endangered tax | Current | same |
+| Car cost cap, S.L. 123.07 rule 3 | wear and tear on a car costing over EUR 14,000 computed as if it cost EUR 14,000 | Current | https://legislation.mt/eli/sl/123.7/eng/pdf |
+| Wear and tear minimum years, S.L. 123.01 Schedule | computers 4, motor vehicles 5, catering 6, furniture 10, electrical and plumbing 15 | Current | https://legislation.mt/eli/sl/123.1/eng/pdf |
+| Pension income exemption, S.L. 123.204 rule 3 | 100% up to EUR 37,104 (basis year 2026); 80% up to EUR 13,309 (basis year 2025) | YA 2027 / YA 2026 | https://legislation.mt/eli/sl/123.204/eng/pdf |
+| Pensioner rebate, S.L. 123.204 rule 4 | (chargeable income less 15,000) x 15%, capped at EUR 540 | From YA 2027 | same |
+| Provisional tax, S.L. 372.18 rule 4 | 20% by 30 April, 30% by 31 August, 50% by 21 December of the basis year | Each basis year | https://legislation.mt/eli/sl/372.18/eng/pdf |
+| Interest on late tax, Cap. 372 art. 44(2A) | 0.6% a month or part, capped at the tax | Current | https://legislation.mt/eli/cap/372/eng/pdf |
+| Small enterprise VAT exemption, Cap. 406 art. 11 | domestic annual turnover not above the "domestic threshold" of EUR 35,000 (schedule definition read with art. 11) | Current | https://legislation.mt/eli/cap/406/eng/pdf |
+| Capital goods for VAT, S.L. 406.12 | movable goods of EUR 1,160 or more, and immovable property; adjusted over 5 or 20 years | Current | https://legislation.mt/eli/sl/406.12/eng/pdf |
+
+## Worked cases
 All figures are invented. Rates are from the 2026 single table and the rules cited above.
 
-### Example 1: part-time 10% final tax against declaring the profit
+#### Example 1: part-time 10% final tax against declaring the profit
 
 A single person, a full-time employee registered with Jobsplus, has chargeable employment income of EUR 30,000 in 2026. She also has EUR 10,000 of part-time design profit from her own clients, registered with Jobsplus, with no employees. Every part-time condition is met.
 
@@ -238,7 +248,7 @@ expected:
   saving: 1500
 ```
 
-### Example 2: a car bought in December, with the EUR 14,000 cap
+#### Example 2: a car bought in December, with the EUR 14,000 cap
 
 A self-employed consultant, single, chargeable income well inside the 25% band, buys a car for EUR 30,000 on 15 December 2026 and starts using it at once. A mileage log shows 80% business use.
 
@@ -267,57 +277,30 @@ expected:
   tax_value: 560
 ```
 
-## Section 13: Ask the Client First
-
-1. Are you in full-time employment registered with Jobsplus, a pensioner, or a full-time student? Is the side work registered and for different customers?
-2. Married or single in 2026? Children, their ages, custody, and nationality of each spouse?
-3. Expected 2026 profit, and will profits be paid out or kept in the business?
-4. What did your last self-assessment show (the provisional tax benchmark)?
-5. Which assets will you buy, when, and what share is business use?
-6. Turnover in 2025 and so far in 2026, and who are your customers (businesses or consumers)?
-
-## Historical source references
-
-| Source | URL | Read on |
-|---|---|---|
-| Income Tax Act, Cap. 123 (arts. 14, 14D, 26, 51, 56, 57, 90A, Schedule) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-10-23 |
-| Income Tax Management Act, Cap. 372 (arts. 42, 44, 48) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-10-23 |
-| Deduction for Wear and Tear of Plant and Machinery Rules, S.L. 123.01 | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-10-23 |
-| Income Tax (Deductions) Rules, S.L. 123.07 | https://legislation.mt/eli/sl/123.7/eng/pdf | 2026-10-23 |
-| Pensions (Tax Exemption) Rules, S.L. 123.204 (L.N. 53 of 2026) | https://legislation.mt/eli/sl/123.204/eng/pdf | 2026-10-23 |
-| Voluntary Occupational Pension Scheme Rules, S.L. 123.175 | https://legislation.mt/eli/sl/123.175/eng/pdf | 2026-10-23 |
-| MTCA, Completing your tax return, basis year 2025 (pension tax credits) | https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/tax-return-booklet-individuals/mtca-tax-booklet-2026-eng-17-03.pdf?sfvrsn=5ca02b73_1 | 2026-10-23 |
-| VAT Act, Cap. 406 (arts. 10, 11) | https://legislation.mt/eli/cap/406/eng/pdf | 2026-10-23 |
-| VAT capital goods regulations, S.L. 406.12 | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-10-23 |
-| Act III of 2026 (2026 rate tables, art. 14D amount, art. 14(1)(ha)) | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-10-23 |
-
-Rates and dates also rely on the sources listed in `malta-income-tax`, `mt-corporate-tax`, `mt-estimated-tax` and `malta-vat-return`.
-
-Not yet confirmed:
-- The 2026 personal retirement scheme and occupational pension tax credit figures (the 25% and EUR 750 are from MTCA's booklet for basis year 2025).
-- Whether Class 2 social security contributions are deductible. Checked on 2026-10-24: Cap. 123 Part IV has no specific provision and MTCA's 2026 booklet is silent, so it turns on the general article 14(1) test, which no official source applies to Class 2.
-- Whether the one-fifth initial deduction on plant and machinery in art. 14(1)(j) has been ended by Ministerial order.
-- Whether the Gazette notice and rules starting the 175% deduction in art. 14(1)(ha) have been issued.
-- 2026 Class 2 weekly amounts (see `malta-ssc`).
-- Current Malta Enterprise scheme rates and caps.
-- Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
+## When to refuse or refer
+- Refuse any step that moves income artificially or creates a manufactured loss (article 51).
+- Refer the company route for a Malta-resident individual shareholder (articles 12(1)(c)(iii) and 43(6)) to `mt-corporate-tax` and a Malta accountant.
+- Refer Malta Enterprise grant and tax-credit schemes: rates and caps change by call.
+- Refer the R&D 175% deduction until the Gazette notice and rules exist.
+- This skill and its outputs do not constitute tax, legal or financial advice; outputs must be reviewed and signed off by a qualified professional before filing or acting.
 
 ## Sources
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act, Cap. 123: read for arts. 14, 14(1)(ha), 14D, 26, 51, 56(1) YA 2027 tables, 56(6), 57(1), 90A(11) and the Schedule (late return Table A, 1.5% omission) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-14 |
+| Income Tax Management Act, Cap. 372: read for arts. 42(4), 44(2A) and 48(4A) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-14 |
+| Part-Time Work Rules, S.L. 123.39: read for rules 2 to 4 (EUR 12,000 and EUR 10,000 caps) | https://legislation.mt/eli/sl/123.39/eng/pdf | 2026-11-14 |
+| Deduction for Wear and Tear of Plant and Machinery Rules, S.L. 123.01: read for rules 5, 7, 11 and the Schedule | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-14 |
+| Income Tax (Deductions) Rules, S.L. 123.07: read for rules 3 (EUR 14,000) and 4 | https://legislation.mt/eli/sl/123.7/eng/pdf | 2026-11-14 |
+| Pensions (Tax Exemption) Rules, S.L. 123.204: read for rules 3 and 4 (EUR 37,104, EUR 13,309, EUR 540) | https://legislation.mt/eli/sl/123.204/eng/pdf | 2026-11-14 |
+| Voluntary Occupational Pension Scheme Rules, S.L. 123.175: read for the tax credit rule | https://legislation.mt/eli/sl/123.175/eng/pdf | 2026-11-14 |
+| Provisional Tax Rules, S.L. 372.18: read for rules 4, 5, 10 and 14 | https://legislation.mt/eli/sl/372.18/eng/pdf | 2026-11-14 |
+| Income Tax (Statutory Dates) Rules, S.L. 372.16: read for rule 2(c)(ii) (30 June) | https://legislation.mt/eli/sl/372.16/eng/pdf | 2026-11-14 |
+| S.L. 372.14: read for rule 21 (FS3 by 31 January) | https://legislation.mt/eli/sl/372.14/eng/pdf | 2026-11-14 |
+| VAT Act, Cap. 406: read for arts. 10, 11 and 19 (18%) | https://legislation.mt/eli/cap/406/eng/pdf | 2026-11-14 |
+| VAT capital goods regulations, S.L. 406.12: read for the EUR 1,160 threshold and adjustment periods | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-11-14 |
+| Final Income Tax Without Imputation Regulations, S.L. 123.217: read for regulation 3 | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-14 |
+| MTCA notice of 3 June 2026: read for the 31 July 2026 deadline | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-14 |
+| MTCA tax return booklet 2026 (basis year 2025): read on 24 October 2026 for the 25% and EUR 750 pension credits; not reopened today | https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/tax-return-booklet-individuals/mtca-tax-booklet-2026-eng-17-03.pdf?sfvrsn=5ca02b73_1 | 2026-10-24 |
 
-| Official provision / guidance | URL | Read on | Scope |
-|---|---|---|---|
-| SL123.217 reg3(2)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-| SL123.01 rule7(b) | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-| Cap123 art14D | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-| Cap123 art12(1)(c)(iii)(B) and art43(6); Cap372 art48(1) last proviso | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-08 | Company refund rows only |
-| MTCA notice: YA 2026 individual returns and tax due 31 July 2026 | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-08 | Calendar row only |
-
-Prior source-read dates remain historical; this list does not refresh unrelated claims.
-
-Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.
+Not yet confirmed: the basis year 2026 pension credit figures (25% and EUR 750 come from MTCA's booklet for basis year 2025; art. 57(1) still prints 15% and EUR 150 "or such other amount as may be prescribed"); whether Class 2 contributions are deductible; the Class 2 rate band and 2026 weekly amounts (owned by `malta-ssc`; Cap. 318 not read today); whether the art. 14(1)(j) one-fifth initial deduction has been ended by order; whether the art. 14(1)(ha) notice and rules exist; Malta Enterprise scheme rates; Budget 2027 measures.
