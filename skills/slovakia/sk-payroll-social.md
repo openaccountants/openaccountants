@@ -1,14 +1,15 @@
 ---
 name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
-version: 0.9
+version: "0.10"
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Slovakia payroll and social contributions, tax year 2026
@@ -43,31 +44,31 @@ SZČO health-advance duties begin with the business, subject to the concurrent-e
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Employee social insurance: sickness 1.4%, old age 4%, disability 3%, unemployment 1% | 9.4% of gross pay | 2026 | [Sociálna poisťovňa, 2026 tables](https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435); Act 461/2003 §§ 130 to 136 |
-| Employer social insurance: sickness 1.4%, old age 14%, disability 3%, unemployment 0.5%, short-time support 0.5%, guarantee 0.25%, solidarity reserve 4.75% | 24.4% of gross pay, capped | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 137 |
-| Employer accident insurance | 0.8%, no cap | 2026 | Act 461/2003 § 133, §138(10) |
-| Employer unemployment rate where it pays no short-time support contribution (work agreements) | 1% instead of 0.5% + 0.5% | 2026 | Act 461/2003 §128(1)(g), §136(b) |
-| Second pillar (II. pilier) saver | 4% of the employer's 14% old-age rate goes to the saver's pension fund; the total rate is unchanged | 2026 | Act 461/2003 §131(2); Sociálna poisťovňa, changes from 1 January 2026, item 13 |
-| Maximum monthly social assessment base (11 x EUR 1,524 average monthly wage for 2024) | EUR 16,764 | 2026 | Sociálna poisťovňa, 2026 tables, note 2; Act 461/2003 §138(9), (10) |
-| Maximum monthly social insurance | Employee EUR 1,575.81; employer EUR 4,090.41 plus 0.8% accident on the full pay | 2026 | Sociálna poisťovňa, 2026 tables |
+| Employee social insurance: sickness 1.4%, old age 4%, disability 3%, unemployment 1% (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | 9.4% of gross pay | 2026 | [Sociálna poisťovňa, 2026 tables](https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435); Act 461/2003 §§ 130 to 136 |
+| Employer social insurance: sickness 1.4%, old age 14%, disability 3%, unemployment 0.5%, short-time support 0.5%, guarantee 0.25%, solidarity reserve 4.75% (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | 24.4% of gross pay, capped | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 137; https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf |
+| Employer accident insurance | 0.8%, no cap | 2026 | Act 461/2003 § 133, §138(10); https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf |
+| Employer unemployment rate where it pays no short-time support contribution (work agreements) | 1% instead of 0.5% + 0.5% | 2026 | Act 461/2003 §128(1)(g), §136(b); https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf |
+| Second pillar (II. pilier) saver | 4% of the employer's 14% old-age rate goes to the saver's pension fund; the total rate is unchanged | 2026 | Act 461/2003 §131(2); Sociálna poisťovňa, changes from 1 January 2026, item 13; https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435 |
+| Maximum monthly social assessment base (11 x EUR 1,524 average monthly wage for 2024) (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | EUR 16,764 | 2026 | Sociálna poisťovňa, 2026 tables, note 2; Act 461/2003 §138(9), (10); https://www.socpoist.sk/news/v-oktobri-2026-dostane-takmer-92-tisic-zivnostnikov-szco-od-socialnej-poistovne-oznamenia-o |
+| Maximum monthly social insurance | Employee EUR 1,575.81; employer EUR 4,090.41 plus 0.8% accident on the full pay | 2026 | Sociálna poisťovňa, 2026 tables; https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435 |
 | Health insurance, employee | 5% (2.5% for a person with a disability), no cap | 2026 | [Act 580/2004](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html) §12(1)(a); [VšZP, changes from 1 January 2026](https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/) |
-| Health insurance, employer | 11% (5.5% for an employee with a disability), no cap, for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(c) |
-| Health insurance, SZČO | 16% (8% with a disability), for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(b); VšZP, changes from 1 January 2026 |
-| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability) where the statutory minimum applies; concurrent employment/state-insured exceptions below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |
-| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25) for a full month without §16a(2) excluded days; concurrent-employer election below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1) |
+| Health insurance, employer | 11% (5.5% for an employee with a disability), no cap, for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(c); https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html |
+| Health insurance, SZČO | 16% (8% with a disability), for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(b); VšZP, changes from 1 January 2026; https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html |
+| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability) where the statutory minimum applies; concurrent employment/state-insured exceptions below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a); https://www.vszp.sk/platitelia/platenie-poistneho/samostatne-zarobkovo-cinna-osoba/ |
+| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25) for a full month without §16a(2) excluded days; concurrent-employer election below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1); https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/ |
 | Health deductible amount for a low-paid employee who claims it | Up to EUR 380 a month, zero from EUR 570 of pay; up to EUR 4,560 a year in the reconciliation | 2026 | Act 580/2004 §16(16) to (18), §13a; [VšZP, odpočítateľná položka](https://www.vszp.sk/platitelia/platenie-poistneho/odpocitatelna-polozka/) |
-| SZČO social insurance: sickness 4.4%, old age 18%, disability 6%, solidarity reserve 4.75% | 33.15% of the assessment base | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 132, 137 |
-| SZČO minimum social base (60% of EUR 1,524) and payment | EUR 914.40; EUR 303.11 a month | 2026 | Sociálna poisťovňa, 2026 tables, note 1; Act 461/2003 §138(8) |
+| SZČO social insurance: sickness 4.4%, old age 18%, disability 6%, solidarity reserve 4.75% (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | 33.15% of the assessment base | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 132, 137; https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/poistne-szco-dpo-po-prerusenom-poisteni |
+| SZČO minimum social base (60% of EUR 1,524) and payment (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | EUR 914.40; EUR 303.11 a month | 2026 | Sociálna poisťovňa, 2026 tables, note 1; Act 461/2003 §138(8); https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/tabulky-platenia-poistneho/tabulky-platenia-poistneho-od-1-6?ref=2435 |
 | SZČO special base (26% of EUR 1,524) and payment, for insured new entrants and other SZČO with no income-derived base; ordinary continuing 2025-income cases require EUR2876.91–9144 inclusive | EUR 396.24; EUR 131.34 a month | 2026 | [Sociálna poisťovňa, changes from 1 January 2026, item 22](https://www.socpoist.sk/socialne-poistenie/zmeny-v-socialnom-poisteni/najdolezitejsie-zmeny-v-socialnom-poisteni-od-1-1?ref=2441); Act 461/2003 §138(2)(b) |
-| SZČO maximum social payment | EUR 5,557.26 a month | 2026 | Sociálna poisťovňa, 2026 tables |
-| SZČO income test for the 1.486 base | Income (not profit) above EUR 9,144 (50% of the 2024 general assessment base) | 2026 | Sociálna poisťovňa, changes from 1 January 2026, item 22; Act 461/2003 §138(2)(a) |
-| Work agreement deduction (dohoda) for a student or pensioner who claims it | EUR 200 a month off the social base | 2026 | Act 461/2003 §138a |
+| SZČO maximum social payment | EUR 5,557.26 a month | 2026 | Sociálna poisťovňa, 2026 tables; https://www.socpoist.sk/news/v-oktobri-2026-dostane-takmer-92-tisic-zivnostnikov-szco-od-socialnej-poistovne-oznamenia-o |
+| SZČO income test for the 1.486 base | Income (not profit) above EUR 9,144 (50% of the 2024 general assessment base) | 2026 | Sociálna poisťovňa, changes from 1 January 2026, item 22; Act 461/2003 §138(2)(a); https://www.socpoist.sk/nastroje-sluzby/kalkulacky/kalkulacky-pre-szco/kalkulacka-na-informativny-vypocet-poistneho-pre-5 |
+| Work agreement deduction (dohoda) for a student or pensioner who claims it | EUR 200 a month off the social base | 2026 | Act 461/2003 §138a; https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf |
 | Personal allowance (NČZD), annual and monthly | EUR 5,966.73 and EUR 497.23 (21 x EUR 284.13); tapers above an annual tax base of EUR 26,083.13 | 2026 | [Financial Directorate, 31/DZPaU/2025/I](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf); [Act 595/2003](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) §11(2), §35(1)(b) |
-| Annual tax bands on employment income | 19% to EUR 43,983.32; 25% to EUR 60,349.21; 30% to EUR 75,010.32; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §15(a)(1) |
-| Monthly advance bands | 19% to EUR 3,665.28; 25% to EUR 5,029.10; 30% to EUR 6,250.86; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §35(2) |
-| Child tax bonus | EUR 100 monthly through the child’s 15th-birthday month; EUR 50 from the next month through the 18th-birthday month; zero thereafter | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §33(1) |
-| Tax bonus cap as a share of the employment tax base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | Act 595/2003 §33(6) |
-| Tax bonus taper | Each child's bonus falls by 1/10 of the tax base above EUR 27,432 a year (1.5 x 12 x EUR 1,524, the 2024 average wage). In payroll the employer applies it to the month's base above EUR 2,286 (1/12) | 2026 | Act 595/2003 §33(11), §35(5); [Financial Directorate, tax bonus in 2026, question 5](https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026) |
+| Annual tax bands on employment income | 19% to EUR 43,983.32; 25% to EUR 60,349.21; 30% to EUR 75,010.32; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §15(a)(1); https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf; https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Monthly advance bands | 19% to EUR 3,665.28; 25% to EUR 5,029.10; 30% to EUR 6,250.86; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §35(2); https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf; https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Child tax bonus | EUR 100 monthly through the child’s 15th-birthday month; EUR 50 from the next month through the 18th-birthday month; zero thereafter | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §33(1); https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Tax bonus cap as a share of the employment tax base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | Act 595/2003 §33(6); https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Tax bonus taper (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | Each child's bonus falls by 1/10 of the tax base above EUR 27,432 a year (1.5 x 12 x EUR 1,524, the 2024 average wage). In payroll the employer applies it to the month's base above EUR 2,286 (1/12) | 2026 | Act 595/2003 §33(11), §35(5); [Financial Directorate, tax bonus in 2026, question 5](https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026) |
 
 **Rounding.** Social insurance: each assessment base and each separate contribution is rounded down to the cent (Act 461/2003 §138(14); 2026 tables, closing note). Health: bases and advances are rounded down to the cent (Act 580/2004 §13(17), §16(1)). Income tax: amounts are rounded half up to two decimals (Act 595/2003 §47).
 
@@ -277,5 +278,8 @@ expected:
 | Act122/2026, operative July2026 SZČO coverage amendment, Art.I points1–3/9 and Art.II | https://static.slov-lex.sk/pdf/SK/ZZ/2026/122/ZZ_2026_122_20260701.pdf | 2026-10-27 |
 | SP current July2026 calculator instructions and commencement/return/low-income cases | https://www.socpoist.sk/nastroje-sluzby/kalkulacky/kalkulacky-pre-szco/kalkulacka-na-informativny-vypocet-poistneho-pre-5 | 2026-10-27 |
 | SP8October2026 notice: actual annual start/end thresholds and special-base interval | https://www.socpoist.sk/news/v-oktobri-2026-dostane-takmer-92-tisic-zivnostnikov-szco-od-socialnej-poistovne-oznamenia-o | 2026-10-27 |
+
+
+Not yet confirmed: the 2024 average monthly wage of EUR 1,524 behind the 2026 social and health bases is taken from the Sociálna poisťovňa, VšZP and Financial Directorate figures derived from it; the Statistical Office release itself was not read.
 
 > Contributed by Michael Cutajar.

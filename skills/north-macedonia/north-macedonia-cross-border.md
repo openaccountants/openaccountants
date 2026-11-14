@@ -4,13 +4,14 @@ description: "Use this skill for North Macedonia international income-tax matter
 jurisdiction: MK
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
+type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
-# North Macedonia cross-border tax v0.2
+# North Macedonia cross-border tax v0.3
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -26,16 +27,16 @@ This skill covers ordinary income-tax coordination, not a universal treaty-rate 
 
 | Item | Amount | Tax year | Official provision |
 |---|---|---|---|
-| Ordinary personal income tax | 10% on relevant category base | 2026 | [PIT arts. 9-11][pit] |
-| Ordinary company/PE profit tax | 10% | 2026 | [Profit Tax Law arts. 2, 5][cit] |
-| Foreign legal-person withholding | 10% of listed gross receipts, unless properly relieved | 2026 | [Profit Tax Law arts. 20-23][cit] |
-| Domestic individual residence presence test | 183 or more days in any 12 months | 2026 | [PIT art. 5][pit] |
-| Construction/installation/supervisory PE | More than 6 months; counted from commencement including preparatory activity | 2026 | [Profit Tax Law art. 6(3)][cit] |
-| Service/consulting PE | More than 90 continuous days for one/connected project in any 12 months; interruptions up to 7 days do not break continuity | 2026 | [Profit Tax Law art. 6(4)-(6)][cit] |
-| Foreign corporate profit-tax credit | Foreign tax paid, capped at local 10% tax on foreign profit | 2026 | [Profit Tax Law art. 37][cit] |
-| Foreign personal-tax credit | Foreign tax paid, capped at domestic tax on that income | 2026 | [PIT art. 8(4)][pit] |
-| Treaty relief decision / individual residence certificate | UJP statutory 30-day decision/issue period | 2026 | [Profit Tax Law art. 23(5)][cit]; [PIT arts. 8(3), 82(4), 89-a(4)][pit] |
-| Late-payment interest | 0.03% daily | 2026 | [Tax Procedure Law art. 123][procedure] |
+| Ordinary personal income tax | 10% on relevant category base | 2026 | [PIT arts. 9-11](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Ordinary company/PE profit tax | 10% | 2026 | [Profit Tax Law arts. 2, 5](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Foreign legal-person withholding | 10% of listed gross receipts, unless properly relieved | 2026 | [Profit Tax Law arts. 20-23](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Domestic individual residence presence test | 183 or more days in any 12 months | 2026 | [PIT art. 5](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Construction/installation/supervisory PE | More than 6 months; counted from commencement including preparatory activity | 2026 | [Profit Tax Law art. 6(3)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Service/consulting PE | More than 90 continuous days for one/connected project in any 12 months; interruptions up to 7 days do not break continuity | 2026 | [Profit Tax Law art. 6(4)-(6)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Foreign corporate profit-tax credit | Foreign tax paid, capped at local 10% tax on foreign profit | 2026 | [Profit Tax Law art. 37](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Foreign personal-tax credit | Foreign tax paid, capped at domestic tax on that income | 2026 | [PIT art. 8(4)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Treaty relief decision / individual residence certificate | UJP statutory 30-day decision/issue period | 2026 | [Profit Tax Law art. 23(5)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf); [PIT arts. 8(3), 82(4), 89-a(4)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Late-payment interest | 0.03% daily | 2026 | [Tax Procedure Law art. 123](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
 
 PE thresholds above are domestic-law tests. Read the actual applicable treaty before asserting that a PE exists or is exempt; do not substitute the domestic threshold for a treaty threshold.
 

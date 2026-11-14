@@ -27,6 +27,40 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_swiss_apostrophe_thousands(self):
+        t = skill(f"| Threshold | CHF 80,000 | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "Freibetrag Fr. 80'000 pro Jahr " * 40}))
+        self.assertEqual(misses, [])
+
+    def test_rates_written_in_words(self):
+        for page, row in [("the rate is twenty per cent of the gain", "20%"),
+                          ("aliquota del dieci per cento", "10%"),
+                          ("tipo del veintiuno por ciento", "21%"),
+                          ("taux de quatre-vingt-dix pour cent", "90%"),
+                          ("按百分之二十五的税率", "25%")]:
+            with self.subTest(page=page):
+                t = skill(f"| Rate | {row} | [law]({A}) |")
+                _, misses, _ = rs.check_text(t, pages(**{A: (page + " ") * 40}))
+                self.assertEqual(misses, [])
+
+    def test_wrong_rate_in_words_still_misses(self):
+        t = skill(f"| Rate | 25% | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "the rate is twenty per cent " * 40}))
+        self.assertEqual([m[0] for m in misses], ["25%"])
+
+    def test_url_with_brackets_is_kept_whole(self):
+        u = "https://law.example.gov/act_(01-07-24).pdf"
+        t = skill(f"| Rate | 7% | [act]({u}) |")
+        _, misses, unreadable = rs.check_text(t, pages(**{u: "rate 7% " * 80}))
+        self.assertEqual((misses, unreadable), ([], []))
+
+    def test_zip_of_pdfs_is_read(self):
+        import io, zipfile
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as z:
+            z.writestr("doc.xml", "<a>rate 9%</a>")
+        self.assertIn("9%", rs.read_bytes(buf.getvalue()))
+
     def test_table_in_attribute_is_read(self):
         page = '<div data-table="{&quot;column_1&quot;:{&quot;text&quot;:&quot;Kauniainen 4,70&quot;}}"></div>' + "x" * 500
         self.assertIn("Kauniainen 4,70", rs.read_bytes(page.encode()))
@@ -82,6 +116,11 @@ class RowSources(unittest.TestCase):
     def test_derived_rows_and_zero_are_not_misses(self):
         t = skill(f"| MFS | $125,000 (derived: half of $250,000) | [a]({A}) |", f"| Band | $0 to $10,000 | [a]({A}) |")
         _, misses, _ = rs.check_text(t, pages(**{A: "10,000 joint 250,000 " * 30}))
+        self.assertEqual(misses, [])
+
+    def test_in_words_marker_and_dot_leaders(self):
+        t = skill(f"| Rate | 6% (in words on the page) | [a]({A}) |", f"| Tax | $3,916.09 | [b]({B}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "six percent " * 40, B: "over 250,400.....3,916.09 plus " * 20}))
         self.assertEqual(misses, [])
 
     def test_worked_cases_are_skipped(self):

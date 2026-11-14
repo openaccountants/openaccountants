@@ -1,10 +1,10 @@
 ---
 name: us-kiddie-tax-8615
 description: Work out the 2026 US kiddie tax on a child's unearned income, on Form 8615 (child's return, taxed at the parent's rate) or by the parent's election on Form 8814. Covers which children it applies to (under 18, 18 with low earned income, full-time students under 24), net unearned income above USD 2,700 (twice the USD 1,350 amount), the child's own standard deduction, the Form 8814 conditions (only interest and dividends, gross income more than USD 1,350 and less than USD 13,500), the USD 135 tax on the second USD 1,350, and the choice between the two forms. Trigger on "kiddie tax", "Form 8615", "Form 8814", "child's investment income", "unearned income of a minor", "UTMA account tax", "child's dividends on parent's return". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -46,10 +46,10 @@ Out of scope, and where it goes:
 | Item | Amount, 2026 | Source |
 | --- | --- | --- |
 | Amount that reduces net unearned income, and the minimum standard deduction for a dependent | USD 1,350 | [Rev. Proc. 2025-32, section 4.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Unearned income above which Form 8615 applies (twice USD 1,350) | USD 2,700 | [26 U.S.C. 1(g)(4)(A)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm); [Rev. Proc. 2025-32, section 4.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Unearned income above which Form 8615 applies (twice USD 1,350) | USD 2,700 (derived: twice USD 1,350) | [26 U.S.C. 1(g)(4)(A)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm); [Rev. Proc. 2025-32, section 4.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Form 8814: child's gross income must be more than | USD 1,350 | [Rev. Proc. 2025-32, section 4.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Form 8814: child's gross income must be less than | USD 13,500 | [Rev. Proc. 2025-32, section 4.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Form 8814: rate on the child's income between USD 1,350 and USD 2,700 | 10% | [26 U.S.C. 1(g)(7)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |
+| Form 8814: rate on the child's income between USD 1,350 and USD 2,700 (derived: twice USD 1,350) | 10% | [26 U.S.C. 1(g)(7)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |
 | Dependent standard deduction: earned income plus | USD 450 | [Rev. Proc. 2025-32, section 4.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Age: under | 18 | [26 U.S.C. 1(g)(2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |
 | Full-time students: under | 24 | [26 U.S.C. 1(g)(2)(A)(ii)(II)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partI-sec1.htm) |

@@ -1,10 +1,10 @@
 ---
 name: us-sales-tax-nexus-50-state-matrix
 description: The post-Wayfair economic nexus test of every US sales tax state and DC for tax year 2026, each row linked to that state's own source. Gives the sales test, transaction test (if any), measuring period, which sales count and the marketplace facilitator start date, with the five states that have no general sales tax, physical presence through marketplace inventory, and start-collecting rules. Trigger on "economic nexus", "Wayfair threshold", "do I need to register for sales tax in", "remote seller threshold", "marketplace facilitator", "200 transactions". Load us-sales-tax for the framework and the state sales tax skill for rates and returns.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -74,7 +74,7 @@ Read "Sales test" literally: "more than" means exactly the threshold does **not*
 | Iowa | $100,000 or more (the same page also says a seller "exceeds the sales threshold": check exactly $100,000) | None | Prior calendar year, or current year once crossed | All Iowa sales revenue, including exempt, wholesale, resale and facilitator-collected sales | check | [IDR remote sellers](https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/remote-sellers-marketplace-facilitators) |
 | Kansas | In excess of $100,000 | None | Current or immediately preceding calendar year | Cumulative gross receipts from sales to Kansas customers | check | [K.S.A. 79-3702](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_037_0000_article/079_037_0002_section/079_037_0002_k/) |
 | Kentucky | $100,000 or more | Or 200 or more sales | Prev or current | Gross receipts from sales into Kentucky | check | [DOR notice](https://revenue.ky.gov/News/Pages/Kentucky-Sales-and-Use-Tax-Collections-by-Remote-Retailers-U.S.-Supreme-Court-Ruling.aspx) |
-| Louisiana | Exceeds $100,000 | None | Previous or current calendar year | Gross revenue from deliveries into Louisiana | check | [La. R.S. 47:301(4)(k)](https://legis.la.gov/Legis/Law.aspx?d=101815&p=y), [La. R.S. 47:340.1](https://www.legis.la.gov/legis/Law.aspx?d=1186690) |
+| Louisiana | Exceeds $100,000 (in words on the page) | None | Previous or current calendar year | Gross revenue from deliveries into Louisiana | check | [La. R.S. 47:301(4)(k)](https://legis.la.gov/Legis/Law.aspx?d=101815&p=y), [La. R.S. 47:340.1](https://www.legis.la.gov/legis/Law.aspx?d=1186690) |
 | Maine | Exceed $100,000 | None in Instructional Bulletin 43 (revised 2 Feb 2022) | Prev or current | Total gross sales of tangible goods or taxable services in Maine | check | [IB 43](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB43RegistrationofSellers02_2022.pdf) |
 | Maryland | Exceeds $100,000 | Or 200 or more separate transactions | Prev or current | Goods or taxable services delivered in Maryland; direct and facilitated sales both counted | 1 Oct 2019 | [Tax Alert 09-19](https://marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/SUT_Tax_Alert_Sept2019.pdf) |
 | Massachusetts | More than $100,000 | None | Calendar year | Remote sales into Massachusetts; for a marketplace, direct plus facilitated sales | check | [Mass. DOR, sales and use tax guide](https://www.mass.gov/guides/sales-and-use-tax) |

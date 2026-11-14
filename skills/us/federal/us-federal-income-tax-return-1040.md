@@ -1,10 +1,10 @@
 ---
 name: us-federal-income-tax-return-1040
 description: Prepare a US individual's tax year 2026 Form 1040 or 1040-SR. Holds the 2026 rate schedules for every filing status, standard deductions ($16,100 single, $32,200 joint, $24,150 head of household), additional amounts for age or blindness, child tax credit and earned income credit amounts, capital gain rate thresholds and AMT exemptions from Rev. Proc. 2025-32, the Public Law 119-21 changes for 2026 (senior, tips, overtime and car loan interest deductions on Schedule 1-A, the $40,400 SALT cap, the non-itemizer charitable deduction, the 0.5% charitable floor and the 2/37 itemized limit), who must file, deadlines, extensions and how to file and pay. Includes a worked standard or itemized decision. Trigger on "Form 1040 2026", "2026 tax brackets", "standard deduction 2026", "do I need to file", "when is my return due", "standard or itemize". Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -192,8 +192,8 @@ For a calendar-year 2026 return the date is April 15, 2027: the IRS prints "The 
 
 | What | Value | Note |
 |---|---|---|
-| Free File guided software | adjusted gross income of USD 95,000 or less | "Free File - If your adjusted gross income is $95,000 or less." Above that, the page points to Free File Fillable Forms. Page reviewed 19-Oct-2026. The [IRS Free File page](https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free), reviewed 21-Oct-2026, also prints USD 95,000 and says "IRS Free File has closed. Please check back January 2027." Earlier versions of this row said USD 89,000 ([source](https://www.irs.gov/filing/individuals/how-to-file)) |
-| IRS-certified volunteers | earn USD 70,244 or less, or have a disability, or are 60 or older, or need language support | "If you earn $70,244 or less, have a disability, are 60 years or older or need language support". Earlier versions of this row said USD 69,000 ([source](https://www.irs.gov/filing/individuals/how-to-file)) |
+| Free File guided software | adjusted gross income of USD 95,000 or less | "Free File - If your adjusted gross income is $95,000 or less." Above that, the page points to Free File Fillable Forms. Page reviewed 19-Oct-2026. The [IRS Free File page](https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free), reviewed 21-Oct-2026, also prints USD 95,000 and says "IRS Free File has closed. Please check back January 2027." Also on [How to file](https://www.irs.gov/filing/individuals/how-to-file). |
+| IRS-certified volunteers | earn USD 70,244 or less, or have a disability, or are 60 or older, or need language support | "If you earn $70,244 or less, have a disability, are 60 years or older or need language support" ([How to file](https://www.irs.gov/filing/individuals/how-to-file)) |
 
 ### Steps
 

@@ -1,11 +1,11 @@
 ---
 name: sc-income-tax
 description: "South Carolina 2026 wage and sole-proprietor income: federal AGI starting point, SCIAD phased deduction and rounding, 1.99 and 5.21 percent bands, capped EITC and bounded active-business 3 percent election."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-SC
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -41,9 +41,9 @@ Ordinary full-year SC resident employees, sole proprietors and disregarded singl
 |---|---|---|
 | SC taxable income below USD 30,000 | 1.99% of taxable income | [12-6-510(C)](https://www.scstatehouse.gov/code/t12c006.php) |
 | SC taxable income USD 30,000 or more | 5.21% of taxable income minus USD 966 | [12-6-510(C)](https://www.scstatehouse.gov/code/t12c006.php) |
-| SCIAD single/separate | USD 15,000 through federal AGI USD 40,000; phases out over USD 55,000; zero at USD 95,000 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php) |
-| SCIAD head of household | USD 22,500 through AGI USD 60,000; phases out over USD 82,500; zero at USD 142,500 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php) |
-| SCIAD joint/surviving spouse | USD 30,000 through AGI USD 80,000; phases out over USD 110,000; zero at USD 190,000 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php) |
+| SCIAD single/separate | USD 15,000 through federal AGI USD 40,000; phases out over USD 55,000; zero at USD 95,000 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php); [SCIAD table, IL 26-20](https://dor.sc.gov/sites/dor/files/policies/IL26-20.pdf) |
+| SCIAD head of household | USD 22,500 through AGI USD 60,000; phases out over USD 82,500; zero at USD 142,500 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php); [SCIAD table, IL 26-20](https://dor.sc.gov/sites/dor/files/policies/IL26-20.pdf) |
+| SCIAD joint/surviving spouse | USD 30,000 through AGI USD 80,000; phases out over USD 110,000; zero at USD 190,000 | [12-6-1140(15)](https://www.scstatehouse.gov/code/t12c006.php); [SCIAD table, IL 26-20](https://dor.sc.gov/sites/dor/files/policies/IL26-20.pdf) |
 | SCIAD reduction rounding | Round the **reduction** down to next USD 10; no deduction when fraction reaches one | [12-6-1140(15)(b/c)](https://www.scstatehouse.gov/code/t12c006.php); [SCIAD table and rounding](https://dor.sc.gov/sites/dor/files/policies/IL26-20.pdf) |
 | State EITC | Nonrefundable; 125% of qualifying federal EITC, limited to USD 200 and SC tax; full-year resident requirement | [12-6-3632](https://www.scstatehouse.gov/code/t12c006.php) |
 | Active trade/business election | 3% only on qualifying separated income, after exclusions and allocations | [12-6-545](https://www.scstatehouse.gov/code/t12c006.php) |

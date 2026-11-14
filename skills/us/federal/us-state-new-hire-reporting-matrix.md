@@ -1,10 +1,10 @@
 ---
 name: us-state-new-hire-reporting-matrix
 description: US new hire reporting for 2026, federal rule and every state. Gives the federal baseline under 42 U.S.C. 653a (report within 20 days, or two monthly electronic transmissions 12 to 16 days apart; state penalties capped at USD 25 per failure and USD 500 for a conspiracy), the multistate employer election to report to one state, and a row for every state and DC with its deadline (Alabama and Maine 7 days, Georgia and Vermont 10, Iowa and Mississippi 15, Massachusetts, Rhode Island and West Virginia 14), whether it requires independent contractor reports (California USD 600, New York and New Hampshire USD 2,500, Connecticut USD 5,000, and others), and a link to the state's new hire site, all from the federal Office of Child Support Services state chart. Trigger on "new hire reporting", "report new employee to the state", "DE 542", "multistate employer new hire", "independent contractor reporting". Payroll taxes are in us-state-payroll-matrix.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -98,7 +98,7 @@ In scope: any employer (including sole proprietors and single-member LLCs) that 
 | Vermont | 10 days | No | [Vermont new hire reporting](https://labor.vermont.gov/) |
 | Virginia | 20 days | Yes (23VAC10-500-130; Va. Code 63.2-1946 and 60.2-212) | [Virginia new hire reporting](https://va-newhire.com/) |
 | Washington | 20 days | No | [Washington new hire reporting](https://www.NewHire.wa.gov) |
-| West Virginia | 14 days | Yes: services of USD 2,500 or more | [West Virginia new hire reporting](https://www.wv-newhire.com/) |
+| West Virginia | 14 days | Yes: services of USD 2,500 or more | [West Virginia new hire reporting fundamentals](https://wv-newhire.com/reporting_fundamentals) |
 | Wisconsin | 20 days | No | [Wisconsin new hire reporting](https://www.wi-newhire.com) |
 | Wyoming | 20 days | No | [Wyoming new hire reporting](http://newhire-reporting.com/WY-Newhire/default.aspx) |
 
