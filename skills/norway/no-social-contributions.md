@@ -188,20 +188,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748, amended 19 June 2026 (§§ 1 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-10-30 |
-| Stortingsvedtak om fastsetting av finansskatt på lønn for 2026, FOR-2025-12-18-2749 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 | 2026-10-30 |
-| Stortingets skattevedtak 2026, FOR-2025-12-18-2747 (§§ 3-3, 3-9) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-30 |
-| Folketrygdloven, lov 1997-02-28-19 (§§ 2-1, 2-1 a, 2-2, 23-2, 23-2 a, 23-3) | https://lovdata.no/lov/1997-02-28-19 | 2026-10-30 |
-| Skatteloven, lov 1999-03-26-14 (§§ 12-2, 12-11, 12-13) | https://lovdata.no/lov/1999-03-26-14 | 2026-10-30 |
-| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 9-4, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-10-30 |
-| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1, 8-2-3, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-10-30 |
-| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-10, 10-20, 10-21, 11-1, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-10-30 |
-| Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
-| Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-10-30 |
-| Skatteetaten, Employer's additional national insurance contributions (discontinued) | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ | 2026-10-30 |
-| Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-10-30 |
-| Skatteetaten, Advance tax | https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/ | 2026-10-30 |
-| Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-10-30 |
-| Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
+| Stortingsvedtak om fastsetting av avgifter mv. til folketrygden for 2026, FOR-2025-12-18-2748, amended 19 June 2026 (§§ 1 to 8) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-11-14 |
+| Read for Financial tax on pay (finansskatt på lønn): Stortingsvedtak om fastsetting av finansskatt på lønn for 2026, FOR-2025-12-18-2749 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 | 2026-11-14 |
+| Stortingets skattevedtak 2026, FOR-2025-12-18-2747 (§§ 3-3, 3-9) | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-11-14 |
+| Folketrygdloven, lov 1997-02-28-19 (§§ 2-1, 2-1 a, 2-2, 23-2, 23-2 a, 23-3) | https://lovdata.no/lov/1997-02-28-19 | 2026-11-14 |
+| Skatteloven, lov 1999-03-26-14 (§§ 12-2, 12-11, 12-13) | https://lovdata.no/lov/1999-03-26-14 | 2026-11-14 |
+| Skatteforvaltningsloven, lov 2016-05-27-14 (§§ 9-4, 14-1, 14-4 to 14-6) | https://lovdata.no/lov/2016-05-27-14 | 2026-11-14 |
+| Skatteforvaltningsforskriften, FOR-2016-11-23-1360 (§§ 8-2-1, 8-2-3, 14-1-1) | https://lovdata.no/forskrift/2016-11-23-1360 | 2026-11-14 |
+| Skattebetalingsloven, lov 2005-06-17-67 (§§ 10-10, 10-20, 10-21, 11-1, 11-5) | https://lovdata.no/lov/2005-06-17-67 | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, Forskuddsutskrivingen 2026 | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-11-14 |
+| Read for De minimis ceiling under the EEA rules, Workers posted from the USA, Canada or South Korea, members only of the sickness benefit part, Minimum payment of arbeidsgiveravgift per period: Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-11-14 |
+| Read for Additional 5% employer contribution on high pay: Skatteetaten, Employer's additional national insurance contributions (discontinued) | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, Advance tax | https://www.skatteetaten.no/en/person/taxes/tax-deduction-card-and-advance-tax/advance-tax/ | 2026-11-14 |
+| Read for Court fee (basis of enforcement fines): Skatteetaten, Enforcement fines | https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ | 2026-11-14 |
+| Read for Late-payment interest: Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-11-14 |
 
 Not yet confirmed: the treatment of a person who turns 17 or 70 during the year; how Skatteetaten splits a capped contribution between income types where a system needs it; spouse coordination of a joint business's personal income; voluntary membership premiums and the continental shelf and foreign-ship rules.

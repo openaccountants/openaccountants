@@ -163,7 +163,7 @@ The cap only bites at low income. At the 2025 høy sats the cap and the rate mee
 | Income year | Maximum rate | Status | Official source |
 | --- | --- | --- | --- |
 | 2025 | 4.6% (3-month treasury bill mean 4.1480, plus 0.5 points, rounded to the nearest tenth) | Practice | Skatteetaten rate page, under FSFIN §§ 10-12-1 and 12-12-10: https://www.skatteetaten.no/en/rates/risk-free-interest-rate-for-shares-and-sole-proprietorships/ |
-| 2026 | unverified: held. Do not use the 2025 rate. | Held | Same page, with FSFIN § 10-12-1(2): https://www.skatteetaten.no/en/rates/risk-free-interest-rate-for-shares-and-sole-proprietorships/ |
+| 2026 | Not yet announced: see Sources, Not yet confirmed (1). Do not use the 2025 rate. | Held | Same page, with FSFIN § 10-12-1(2): https://www.skatteetaten.no/en/rates/risk-free-interest-rate-for-shares-and-sole-proprietorships/ |
 
 Skattedirektoratet announces the rate in January after the income year (FSFIN § 10-12-1(2)). A lower rate may be chosen only in whole percentage points, and by the time the return is filed on time. Where no clear choice is made, the maximum applies (FSFIN § 12-12-10(2)).
 
@@ -193,10 +193,10 @@ Other limits in § 14-43: simple buildings up to 10%, livestock buildings 6%, fr
 | Representation, outside service (uteservering) limit per person per occasion | NOK 579 | NOK 592 | Satsforskrift 2025 § 10 (FOR-2024-11-27-2889) and 2026 § 10 (FOR-2025-11-07-2216): https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
 | Branded gift item | NOK 317 | NOK 324 | Satsforskrift § 10: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
 | Attention to a business contact, per occasion | NOK 317 | NOK 324 | Satsforskrift § 10: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Private car, per km of business driving | NOK 3.50 | unverified: deduction rate held (see note) | 2025 deduction: takseringsregler 2025 § 1-3-20 (FOR-2025-12-01-2404), https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2. 2026: satsforskrift 2026 § 4 |
+| Private car, per km of business driving | NOK 3.50 | Held: see note and Sources, Not yet confirmed (2) | 2025 deduction: takseringsregler 2025 § 1-3-20 (FOR-2025-12-01-2404), https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2. 2026: satsforskrift 2026 § 4 |
 | Home office standard deduction | NOK 2,192 | NOK 2,240 (Practice) | 2025: takseringsregler 2025 § 1-3-26. 2026: satsforskrift 2026 § 14 and Skatteetaten: https://www.skatteetaten.no/en/rates/home-office-standard-deduction/ |
 | Private use of electronic communication | NOK 4,392 per year | NOK 4,392 per year | Skatteloven §§ 6-14 and 5-12(5), and FSFIN § 5-12-21 in the current text, unamended since income year 2014: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2. Application to a sole trader: Skatte-ABC 2025 E-3-2.1 (Practice), https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/e-3-elektronisk-kommunikasjon-telefon-mv/E-3.019/E-3.020/ |
-| Membership of a national trade body, sole trader | unverified: amount held | Up to NOK 8,700, or up to 2 per mille of total wages paid; see Expenses for the other limits | Skatteloven § 6-19(2) and (3), (2) as amended with effect from income year 2026: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
+| Membership of a national trade body, sole trader | Held: see Sources, Not yet confirmed (5) | Up to NOK 8,700, or up to 2 per mille of total wages paid; see Expenses for the other limits | Skatteloven § 6-19(2) and (3), (2) as amended with effect from income year 2026: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
 
 No takseringsregler for 2026 appeared in the data read. The NOK 3.50 in satsforskrift 2026 § 4 is an allowance rate. It does not confirm a deduction rate, so a 2026 deduction per km is Needs Input and stays held under Sources.
 

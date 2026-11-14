@@ -39,7 +39,7 @@ Read [no-income-tax](no-income-tax.md) and [no-corporate-income-tax](no-corporat
 | Wild marine resources (§ 5-8) | 11.11% | 2026 | same decision § 5; merverdiavgiftsloven § 5-8 |
 | Registration limit | Over NOK 50,000 in twelve months | 2026 | merverdiavgiftsloven § 2-1 first paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
 | Registration limit, charities and non-profits | NOK 140,000 | 2026 | § 2-1 first paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
-| Registration limit, sports event tickets | NOK 3 million | 2026 | § 2-1 second paragraph |
+| Registration limit, sports event tickets | NOK 3 million | 2026 | § 2-1 second paragraph; https://lovdata.no/lov/2009-06-19-58/§2-1 |
 | Pre-registration: significant purchases | At least NOK 250,000 including VAT; not if the limit will be reached within four months | 2026 | merverdiavgiftsforskriften § 2-4-1; https://lovdata.no/forskrift/2009-12-15-1540/§2-4-1 |
 | Bank-payment rule for input VAT | No deduction unless paid through a bank or payment provider, or the total payment is under NOK 10,000 | 2026 | merverdiavgiftsloven § 8-8; https://lovdata.no/lov/2009-06-19-58/§2-1 |
 | Gifts and advertising items of "insignificant value" | NOK 200 or less | 2026 | merverdiavgiftsforskriften § 1-3-6; https://lovdata.no/forskrift/2009-12-15-1540/§2-4-1 |

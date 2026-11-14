@@ -176,22 +176,22 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Skattebetalingsloven (lov 2005-06-17-67) §§ 5-1 to 5-11, 10-2, 10-10, 11-1, 11-6, 16-20 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-30 |
-| Skattebetalingsforskriften (forskrift 2007-12-21-1766) §§ 5-1-4, 5-7-1, 5-7-2 | https://lovdata.no/forskrift/2007-12-21-1766/§5-7-1 | 2026-10-30 |
-| Folketrygdloven (lov 1997-02-28-19) § 23-2 | https://lovdata.no/lov/1997-02-28-19/§23-2 | 2026-10-30 |
-| A-opplysningsloven (lov 2012-06-22-43) §§ 4, 10, 11 | https://lovdata.no/dokument/NL/lov/2012-06-22-43 | 2026-10-30 |
-| A-opplysningsforskriften (forskrift 2014-06-24-857) §§ 2-1, 4-1, 4-2 | https://lovdata.no/forskrift/2014-06-24-857/§2-1 | 2026-10-30 |
-| Skatteforvaltningsloven (lov 2016-05-27-14) §§ 14-3, 14-5, 14-6 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-30 |
-| Skatteloven (lov 1999-03-26-14) §§ 20-1 to 20-3 | https://lovdata.no/lov/1999-03-26-14/§20-3 | 2026-10-30 |
-| Rettsgebyrloven (lov 1982-12-17-86) § 1 and note 1 (court fee NOK 1,345 from 1 January 2026) | https://lovdata.no/lov/1982-12-17-86/§1 | 2026-10-30 |
-| Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 (6 January 2026) | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-10-30 |
-| Skatteetaten, Forskuddsutskrivingen 2026 (15 December 2025) | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-30 |
-| Skatteetaten, employer's national insurance contributions, rates 2026 | https://www.skatteetaten.no/en/rates/employers-national-insurance-contributions/ | 2026-10-30 |
-| Skatteetaten, National Insurance contributions, rates 2026 | https://www.skatteetaten.no/en/rates/national-insurance-contributions/ | 2026-10-30 |
-| Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-10-30 |
-| Skatteetaten, payment of withholding tax and employer's contributions | https://www.skatteetaten.no/en/business-and-organisation/employer/employers-national-insurance-contributions/payment-of-withholding-tax-and-employers-national-insurance-contributions/ | 2026-10-30 |
-| Skatteetaten, employer withholding obligations (deferral scheme) | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/as-an-employer-you-are-obliged-to-make-withholding-tax-deductions/ | 2026-10-30 |
-| Skatteetaten, how to deduct the correct amount of tax | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/how-to-deduct-the-correct-amount-of-tax/ | 2026-10-30 |
-| Skatteetaten, tax deduction cards for employers | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/tax-deduction-cards/about-tax-deduction-cards-for-you-as-an-employer/ | 2026-10-30 |
+| Skattebetalingsloven (lov 2005-06-17-67) §§ 5-1 to 5-11, 10-2, 10-10, 11-1, 11-6, 16-20 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-11-14 |
+| Skattebetalingsforskriften (forskrift 2007-12-21-1766) §§ 5-1-4, 5-7-1, 5-7-2 | https://lovdata.no/forskrift/2007-12-21-1766/§5-7-1 | 2026-11-14 |
+| Folketrygdloven (lov 1997-02-28-19) § 23-2 | https://lovdata.no/lov/1997-02-28-19/§23-2 | 2026-11-14 |
+| A-opplysningsloven (lov 2012-06-22-43) §§ 4, 10, 11 | https://lovdata.no/dokument/NL/lov/2012-06-22-43 | 2026-11-14 |
+| A-opplysningsforskriften (forskrift 2014-06-24-857) §§ 2-1, 4-1, 4-2 | https://lovdata.no/forskrift/2014-06-24-857/§2-1 | 2026-11-14 |
+| Skatteforvaltningsloven (lov 2016-05-27-14) §§ 14-3, 14-5, 14-6 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-11-14 |
+| Skatteloven (lov 1999-03-26-14) §§ 20-1 to 20-3 | https://lovdata.no/lov/1999-03-26-14/§20-3 | 2026-11-14 |
+| Rettsgebyrloven (lov 1982-12-17-86) § 1 and note 1 (court fee NOK 1,345 from 1 January 2026) | https://lovdata.no/lov/1982-12-17-86/§1 | 2026-11-14 |
+| Read for Employer contribution, zone I, De minimis cap on reduced-rate aid: Skattedirektoratet, Arbeidsgiveravgift til folketrygden for 2026 (6 January 2026) | https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ | 2026-11-14 |
+| Read for Exemption card (frikort) amount limit, PAYE source tax on wages (kildeskatt på lønn), PAYE scheme income cap, Employee contribution lower limit: Skatteetaten, Forskuddsutskrivingen 2026 (15 December 2025) | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-11-14 |
+| Read for Employer contribution, zone Ia: Skatteetaten, employer's national insurance contributions, rates 2026 | https://www.skatteetaten.no/en/rates/employers-national-insurance-contributions/ | 2026-11-14 |
+| Read for Employee national insurance contribution on salary (age 17 to 69): Skatteetaten, National Insurance contributions, rates 2026 | https://www.skatteetaten.no/en/rates/national-insurance-contributions/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, a-melding deadlines and payment | https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/ | 2026-11-14 |
+| Read for Minimum employer contribution to pay per period: Skatteetaten, payment of withholding tax and employer's contributions | https://www.skatteetaten.no/en/business-and-organisation/employer/employers-national-insurance-contributions/payment-of-withholding-tax-and-employers-national-insurance-contributions/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, employer withholding obligations (deferral scheme) | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/as-an-employer-you-are-obliged-to-make-withholding-tax-deductions/ | 2026-11-14 |
+| Read for the points the body cites to it: Skatteetaten, how to deduct the correct amount of tax | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/how-to-deduct-the-correct-amount-of-tax/ | 2026-11-14 |
+| Read for Salary above the frikort amount allocated to this employer, Pre-Christmas break: Skatteetaten, tax deduction cards for employers | https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/tax-deduction-cards/about-tax-deduction-cards-for-you-as-an-employer/ | 2026-11-14 |
 
 Not yet confirmed: the simplified settlement scheme (forenklet oppgjørsordning) for household employers; the late-payment interest rate in force in 2026 (set by regulation under forsinkelsesrenteloven § 3); the detailed sector exclusions and financial-difficulty rules for the reduced contribution rates; financial activity tax on wages; valuation of benefits in kind; the withholding tables; seafarer, fishing and Svalbard rules.
