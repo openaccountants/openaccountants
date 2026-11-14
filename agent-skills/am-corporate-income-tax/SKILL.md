@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/am-corporate-income-tax"
   jurisdiction: "AM"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Armenia corporate income tax preparation v0.4
+# Armenia corporate income tax preparation v0.5
 
 ## Who this applies to
 
@@ -28,15 +28,15 @@ On turnover-to-ordinary exit, calculate post-exit bases separately. Reconstruct 
 
 | Item | Amount or period | Tax year and primary source |
 |---|---|---|
-| Ordinary corporate / attributable corporate-PE tax | 18% of established taxable profit | 2026, [125(1)][code] |
-| Registered Armenian investment funds (not pension or guarantee funds) and securitisation foundations | 0.01% of net assets, as the special base | 2026, [125(2)][code] |
-| Representation, established business | Up to 0.5% of annual gross income, capped at AMD 5 million | 2026, [116][code] |
-| Representation, registration year | Separate AMD 5 million limit; ordinary percentage restriction does not apply | 2026, [116(2)][code] |
-| General qualifying charitable deductions | Up to 0.25% of annual gross income | 2026, [123(1)(5)][code] |
-| Specified licensed state/community education/foundation recipients | Separate qualifying category up to 2.5% | 2026, [123(1)(5.1)][code] |
-| Small depreciable asset original cost | Up to AMD 50,000 inclusive, full acquisition-year deduction | 2026, [121(2)(1)][code] |
-| Ordinary loss carryforward | Five tax years following origin year, with ordering/regime/reorganisation restrictions | 2026, [123(1)(4)][code] |
-| Quarterly instalment | Lower of adjusted prior-year tax × 20% and defined prior-quarter income × 2%, after exceptions | 2026, Armenian [135][code] |
+| Ordinary corporate / attributable corporate-PE tax | 18% of established taxable profit | 2026, [125(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Registered Armenian investment funds (not pension or guarantee funds) and securitisation foundations | 0.01% of net assets, as the special base | 2026, [125(2)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Representation, established business | Up to 0.5% of annual gross income, capped at AMD 5 million | 2026, [116][code], https://www.arlis.am/hy/acts/215611/latest |
+| Representation, registration year | Separate AMD 5 million limit; ordinary percentage restriction does not apply | 2026, [116(2)][code], https://www.arlis.am/hy/acts/215611/latest |
+| General qualifying charitable deductions | Up to 0.25% of annual gross income | 2026, [123(1)(5)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Specified licensed state/community education/foundation recipients | Separate qualifying category up to 2.5% | 2026, [123(1)(5.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Small depreciable asset original cost | Up to AMD 50,000 inclusive, full acquisition-year deduction | 2026, [121(2)(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary loss carryforward | Five tax years following origin year, with ordering/regime/reorganisation restrictions | 2026, [123(1)(4)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Quarterly instalment | Lower of adjusted prior-year tax × 20% and defined prior-quarter income × 2%, after exceptions | 2026, Armenian [135][code], https://www.arlis.am/hy/acts/215611/latest |
 
 The English instalment sentence is ambiguous. The Armenian Article 135(1) expressly uses the minimum of the two calculated amounts. It is not a 2%-of-revenue floor, and no old March election should be invented after paragraph 4's repeal. Other English passages, including an exceptional historical asset-period wording, need Armenian verification before use. [135, 121][code]; [English reproduction][english]
 
@@ -277,7 +277,7 @@ Read **24 October 2026**: targeted current Armenian Code Articles 103–125, 130
 | HO-234-N 2026 base changes | https://www.arlis.am/hy/acts/226008 | 2026-10-24 |
 | HO-385-N future dividend changes | https://www.arlis.am/hy/acts/228632 | 2026-10-24 |
 | 749-N return, current July 2026 consolidation | https://www.arlis.am/hy/acts/226558 | 2026-10-24 |
-| Targeted current native 117,119–121(3), 123(1)(2), 135; supporting English read against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
+| Targeted current native 117, 119–121(3), 123(1)(2), 135; supporting English read against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
 | 1373-N current ordinary Annex 1, reserve and debt methods | https://www.arlis.am/hy/acts/183923/latest | 2026-10-25 |
 | 994-N threshold/enforcement amendment and origin-date transition | https://www.arlis.am/hy/acts/209809/latest | 2026-10-25 |
 | HO-19-N 1–2, statutory threshold/enforcement and origin-date transition | https://www.arlis.am/hy/acts/203083 | 2026-10-25 |
@@ -327,4 +327,4 @@ Read **24 October 2026**: targeted current Armenian Code Articles 103–125, 130
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `am-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/am-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `am-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/am-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

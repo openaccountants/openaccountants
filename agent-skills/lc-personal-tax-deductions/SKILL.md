@@ -1,59 +1,140 @@
 ---
 name: lc-personal-tax-deductions
-description: "Saint Lucia resident individual deduction rules introduced by the February 2026 Income Tax Amendment Act, with specified changes applying from the 2025 income year. Covers the aggregate deduction cap, child and dependent-relative allowances, mortgage interest, co-operative shares and investment deductions. Use for Saint Lucia income tax allowances, the EC$40,000 cap or revised 2025 return deductions. The Guide distinguishes individual entitlement from shared limits and prevents treating the cap as an automatic allowance. It does not compute the full income tax return, personal allowance, pension exemption, tax bands or PAYE code. Independent review remains pending."
+description: "Saint Lucia resident individual deductions for the 2026 income year under the Income Tax (Amendment) Act 2 of 2026, effective from 1 January 2025. Covers the EC$40,000 aggregate cap on Parts 6 and 7 allowances (personal allowance and medical expenses outside it; solar outside it for 2025 only), the child, education, higher education and dependent relative amounts, mortgage interest up to EC$40,000, upkeep up to EC$10,000, co-operative shares and investments up to EC$10,000, and the pension withdrawal penalty. Trigger phrases include Saint Lucia tax deductions, EC$40,000 cap, St Lucia mortgage interest deduction, dependent relative allowance."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/lc-personal-tax-deductions"
   jurisdiction: "LC"
-  tax_year: "2025"
-  last_updated: "2026-11-01"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Saint Lucia personal tax deductions: 2025 onward
+# Saint Lucia personal tax deductions, 2026 income year
 
-## Authority and scope
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Source-cited draft checked 22 October 2026. [Act 2 of 2026](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9), assented to on 19 February 2026, amends specific provisions with effect from 1 January 2025. This Guide covers the changes listed below, not every deduction in the Income Tax Act. Verify residence, qualifying expenditure and remaining conditions before claiming.
+## Scope
 
-## Aggregate cap comes after entitlement
+Deductions and allowances for resident individuals under the Income Tax Act, Cap. 15.02, as amended by Act 2 of 2026 (assented 19 February 2026, effective from 1 January 2025), for the 2026 income year. It covers the changed claims and the aggregate cap, not the personal allowance amount, tax bands, pension exemption, PAYE codes or the full return. The first-time landowner interest deduction is in [lc-first-time-land-interest](lc-first-time-land-interest.md). Amounts are EC$.
 
-Act 2, section 4 replaces Income Tax Act section 44(4). From 1 January 2025 the aggregate Parts 6 and 7 allowances/deductions, excluding the personal allowance and medical deduction, cannot exceed **EC$40,000**. For income year 2025, qualifying solar photovoltaic expenditure is also expressly outside that cap. Do not extend the solar exception into 2026 from this provision alone.
+## Ask the client first
 
-The cap is not an automatic EC$40,000 deduction and is not the personal allowance. First establish each claim, then apply individual limits, then the combined cap. [Act 2, section 4, printed pages 10–11](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9).
+1. Is the person resident in Saint Lucia?
+2. Children maintained: ages at 1 January, students or invalid, each child's own income; education costs.
+3. Dependent relatives maintained and each relative's assessable income.
+4. Owner-occupied home: mortgage interest, property taxes, insurance, upkeep costs.
+5. Co-operative or building society share subscriptions; purchases of local or regional securities.
+6. Solar photovoltaic spending, medical expenses, other Part 6 and 7 claims.
 
-[Section 44(1)–(3) of the principal Act](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44) requires a claim and supporting evidence and limits concessions to remaining assessable income after the specified earlier deductions. The page's old subsection (4) must be replaced by the 2026 amendment.
+## The method, step by step
 
-## Selected changed claims
+### Rates, bands and thresholds
 
-All amounts below are Eastern Caribbean dollars. These are conditional entitlements, not deductions available to everyone.
-
-| Principal Act provision | Change applying from 1 January 2025 | Authority in Act 2 |
+| Item | 2026 figure and conditions | Official source |
 |---|---|---|
-| Section 48: child maintenance | 5,000; child born during year, under 16 at year start, or a qualifying student/invalid child; unavailable if child's income from any source exceeds 5,000 | Section 5 |
-| Section 52: dependent relative | 5,000 per qualifying maintained relative; reduce dollar-for-dollar for relative's assessable income above 5,000 | Section 8 |
-| Section 54: owner-occupied mortgage interest | Maximum 40,000, subject to section 54 conditions and the aggregate cap | Section 9 |
-| Section 57: qualifying co-operative/building-society share subscriptions | Payments up to 10,000 | Section 11 |
-| Section 59: qualifying investment purchases | Value purchased up to 10,000; securities issued by local or regional institutions | Section 12 |
+| Aggregate cap, s.44(4)(a) | Parts 6 and 7 allowances and deductions, excluding the personal allowance and medical expenses, must not exceed forty thousand dollars (from 1 January 2025) | [Act 2 of 2026, s.4](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Solar exclusion, s.44(4)(b) | Solar photovoltaic costs are outside the cap for income year 2025 only | same |
+| Child maintenance, s.48 | A deduction of five thousand dollars per qualifying child; none for a child whose income exceeds five thousand dollars | [Act 2 of 2026, s.5](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Education of certain children, s.49 | five thousand dollars in respect of any one child | [Act 2 of 2026, s.6](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Higher education, s.50 | ten thousand dollars in respect of any one person | [Act 2 of 2026, s.7](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Dependent relative, s.52 | An allowance of five thousand dollars per relative, reduced by one dollar for each dollar of the relative's assessable income in excess of five thousand dollars | [Act 2 of 2026, s.8](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Mortgage interest, s.54(1A), (1B) | Owner-occupied dwelling house, must not exceed forty thousand dollars | [Act 2 of 2026, s.9](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Upkeep and maintenance, s.54(1)(d) | must not exceed ten thousand dollars | same |
+| Co-operative or building society shares, s.57 | up to a limit of ten thousand dollars | [Act 2 of 2026, s.11](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Investments, s.59 | Value of local or regional securities bought (treasury bills, notes, bonds, shares, mutual funds), up to a limit of ten thousand dollars in an income year | [Act 2 of 2026, s.12](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Pension fund withdrawal, s.63(14) | Trustees deduct a 10% penalty before paying the member | [Act 2 of 2026, s.13](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
 
-Source: [Act 2 of 2026, printed pages 11–14](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9). Mortgage interest is not automatically additional to a separate 40,000 pool. Section 59 covers qualifying security purchases, not every transfer into a savings account.
+### Steps
 
-## Eligibility interactions
+1. **Establish each claim** with evidence (s.44(1)): claims need a due claim and the evidence the Comptroller requires.
+2. **Apply each limit** in the table.
+3. **Apply the EC$40,000 cap** to the total of the capped claims; the personal allowance and medical expenses sit outside it. For 2026, solar costs are inside the cap (the exclusion was for 2025 only). The first-time landowner deduction (s.59D) is outside it.
+4. **Limit** concessions to remaining assessable income (s.44(2), (3)).
+5. **Keep** receipts, lender certificates, proof of maintenance, school status and investment records.
 
-The unchanged [section 48(3)–(4)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-48) contains apportionment and student-child definitions. The unchanged [section 52(2)(a), (3)–(4)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-52) defines dependent relatives, prevents overlapping child claims and permits apportionment. Read these alongside the new amounts. Separate university-education provisions are not resolved by the child-maintenance row.
+## Boundary and exception table
 
-## Worked checks
+| Situation | Treatment | Source |
+|---|---|---|
+| Revised Laws page shows a $30,000 cap from 1 January 2023 | Replaced by forty thousand dollars from 1 January 2025 | [Income Tax Act s.44](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44); [Act 2 of 2026](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Child's own income exactly at the limit | Not "exceeds"; the income test is met (other conditions still apply) | [Act 2 of 2026, s.5](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Mortgage interest and the cap | The mortgage interest limit is not an extra pool; it counts inside the aggregate cap | same |
+| Section 59 investment | Only qualifying security purchases, not a savings deposit | same |
+| Apportionment and overlapping child and relative claims | Sections 48(3), (4) and 52(2), (3), (4) unchanged; read with the new amounts | [Income Tax Act s.48](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-48); [s.52](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-52) |
 
-Assume all underlying conditions and individual limits are satisfied:
+## Worked cases
 
-- Mortgage interest 30,000, child claim 5,000 and investment deduction 10,000 total 45,000. The capped pool is 40,000, before separate qualifying exclusions and the remaining-income limitation.
-- A qualifying relative has assessable income 7,000. The amended allowance is 5,000 − (7,000 − 5,000) = 3,000, before apportionment and the overall cap.
-- A child's income of 5,001 exceeds the section 48 limit; the child-maintenance claim is unavailable. Exactly 5,000 does not itself breach that income test, but the other conditions still apply.
+### Case 1: the cap bites
 
-## Filing controls and limits
+Mortgage interest 30,000, one child 5,000 and investments 10,000 total 45,000; the cap allows 40,000. A dependent relative with assessable income of 7,000 gives 5,000 less 2,000 = 3,000, which would also fall inside the same full cap.
 
-Keep receipts, lender certificates, proof of maintenance, education status and investment documentation. Reconcile capped and excluded claims separately. These rules do not establish the personal allowance, tax bands, pension treatment, filing deadline or a final tax balance. The first-time land deduction has a separate Guide. Independent accountant review remains required.
+```oa-check
+name: Saint Lucia aggregate cap and dependent relative reduction
+inputs:
+  mortgage: 30000
+  child: 5000
+  investment: 10000
+  relative_income: 7000
+steps:
+  - claimed: mortgage + child + investment
+  - allowed: min(claimed, 40000)
+  - lost: claimed - allowed
+  - relative_allowance: max(5000 - max(relative_income - 5000, 0), 0)
+expected:
+  claimed: 45000
+  allowed: 40000
+  lost: 5000
+  relative_allowance: 3000
+```
+
+### Case 2 (decision): buy securities when already at the cap?
+
+A resident has 40,000 of mortgage interest already. Buying 10,000 of qualifying local securities adds nothing in 2026: the capped total stays 40,000. With only 25,000 of interest, the same purchase raises allowable deductions from 25,000 to 35,000. Check room under the cap before buying for the deduction.
+
+```oa-check
+name: Saint Lucia s.59 investment, at the cap against below it
+inputs:
+  high_interest: 40000
+  low_interest: 25000
+  investment: 10000
+steps:
+  - gain_at_cap: min(high_interest + investment, 40000) - min(high_interest, 40000)
+  - gain_below: min(low_interest + investment, 40000) - min(low_interest, 40000)
+expected:
+  gain_at_cap: 0
+  gain_below: 10000
+```
+
+## When to refuse or refer
+
+- The personal allowance, tax bands, pension exemption and the full return.
+- University education provisions in detail, housekeeper and spouse allowances.
+- Nonresidents: these deductions are for resident individuals.
+
+## Filing and payment
+
+1. Claim each deduction on the individual return with the evidence the Comptroller requires.
+2. Show capped and excluded claims separately so the EC$40,000 cap can be checked.
+3. Late payment penalties changed in July 2026 (s.134(1): 6% instead of 10%): see [lc-first-time-land-interest](lc-first-time-land-interest.md) for Act 10 of 2026.
+
+## Completion checklist
+
+- Residence confirmed; each claim evidenced.
+- Individual limits applied, then the EC$40,000 cap.
+- 2026 solar costs inside the cap; s.59D outside it.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax (Amendment) Act 2 of 2026: read for ss.4 to 13 (cap, child, education, higher education, relative, mortgage, upkeep, co-operative, investment, pension withdrawal) and the 19 February 2026 assent | https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9 | 2026-11-14 |
+| Income Tax Act s.44, Revised Laws 2023: read for s.44(1) to (3), the old EC$30,000 cap and the Part 6 list of sections | https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44 | 2026-11-14 |
+| Income Tax Act s.48: read for the unchanged apportionment and student-child rules | https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-48 | 2026-11-14 |
+| Income Tax Act s.52: read for the dependent relative definition and overlap rules | https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-52 | 2026-11-14 |
+
+Not yet confirmed: the personal allowance amount and 2026 tax bands (not read); conditions in ss.49 and 50 beyond the amounts; the return filing deadline for individuals.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lc-personal-tax-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lc-personal-tax-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lc-personal-tax-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lc-personal-tax-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

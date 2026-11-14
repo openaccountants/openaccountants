@@ -1,14 +1,15 @@
 ---
 name: de-einkommensteuer-freelancer
 description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, sorting a year of bank transactions into receipts and costs, business expenses including the § 4(5) limits (entertainment 70%, gifts EUR 50, fines), the home office flat rate and the EUR 6 day rate, business cars (1% rule, commuting adjustment), business loan interest (§ 4(4a)), low-value assets, the Sammelposten pool and depreciation (§§ 6, 7, including the § 7(2a) electric vehicle schedule), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses and the § 10c lump sum, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit and the Hebesatz floor, filing deadlines with and without a Steuerberater (§ 149 AO), the late-filing surcharge (§ 152 AO), interest, the 1% late payment surcharge and the § 370 and § 378 AO offences. Trigger on: Freiberufler, Selbständige, Einkommensteuer Selbständige, EÜR, Anlage EÜR, Anlage S, Betriebsausgaben, Bewirtung, Arbeitszimmer, Homeoffice-Pauschale, GWG, Investitionsabzugsbetrag, Vorauszahlungen, Gewerbesteuer Anrechnung, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
-version: 1.8
+version: 1.9
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Income tax for the self-employed in Germany (Einkommensteuer for Freiberufler and Gewerbetreibende)

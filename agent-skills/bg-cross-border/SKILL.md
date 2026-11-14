@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bg-cross-border"
   jurisdiction: "BG"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-11-14"
 ---
 
 # Bulgaria cross-border tax: residence, non-residents, withholding, treaties and exit (2026)
@@ -36,23 +36,23 @@ Residents are taxed on income from Bulgaria and abroad (art. 6). Non-residents a
 |---|---|---|---|
 | Residence by presence (individuals) | More than 183 days in any 12-month period | 2026 | PITA art. 4(1)(2), [lex.bg](https://lex.bg/laws/ldoc/2135538631) |
 | Corporate income tax (resident company or PE) | 10% | 2026 | CITA art. 20, [lex.bg](https://lex.bg/laws/ldoc/2135540562) |
-| Dividends and liquidation shares paid to foreign companies | 5% final withholding | 2026 | CITA arts. 194(1), 200(1) |
-| Dividends paid to companies resident in another EU or EEA state | Exempt, except hidden profit distributions; no minimum holding | 2026 | CITA art. 194(3)(3) |
-| Interest, royalties, technical services, franchise and factoring fees, rent of movable property, management or control fees, gains on Bulgarian financial assets and real estate, paid to foreign companies | 10% final withholding | 2026 | CITA arts. 12(2), (3), (5), (8), 195(1), 200(2) |
-| Penalties and compensation paid to companies in preferential tax regimes | 10% final withholding | 2026 | CITA arts. 12(9), 195(1) |
-| Interest and royalties to an associated EU company (25% held for at least 2 years, beneficial owner) | Exempt | 2026 | CITA art. 195(6)(3), (7), (12) |
-| Interest on listed bonds of Bulgarian issuers, the state or municipalities (regulated market or growth market in the EU or EEA) | Exempt | 2026 | CITA art. 195(6)(1), extended to growth markets from 1 Jan 2026 |
-| Disposals of financial instruments as defined in the CITA | Not withheld | 2026 | CITA art. 196 |
-| Dividends to individuals (resident or non-resident) | 5% final tax | 2026 | PITA arts. 38(1), 46(3) |
-| Interest, rents, royalties, technical services, management fees, artists' and sportspeople's fees, paid to non-resident individuals | 10% final tax on the gross amount | 2026 | PITA arts. 37(1)(1) to (9), 37(2), 46(1) |
-| Non-resident individual, gain on Bulgarian real estate | 10% of (sale price less documented cost, less 10% for expenses) | 2026 | PITA arts. 37(1)(10), 37(3), 46(1) |
-| Non-resident individual, gain on shares and other financial assets | 10% of (sale price less documented cost) | 2026 | PITA arts. 37(1)(12), 37(4), 46(1) |
+| Dividends and liquidation shares paid to foreign companies | 5% final withholding | 2026 | CITA arts. 194(1), 200(1), https://lex.bg/laws/ldoc/2135540562 |
+| Dividends paid to companies resident in another EU or EEA state | Exempt, except hidden profit distributions; no minimum holding | 2026 | CITA art. 194(3)(3), https://lex.bg/laws/ldoc/2135540562 |
+| Interest, royalties, technical services, franchise and factoring fees, rent of movable property, management or control fees, gains on Bulgarian financial assets and real estate, paid to foreign companies | 10% final withholding | 2026 | CITA arts. 12(2), (3), (5), (8), 195(1), 200(2), https://lex.bg/laws/ldoc/2135540562 |
+| Penalties and compensation paid to companies in preferential tax regimes | 10% final withholding | 2026 | CITA arts. 12(9), 195(1), https://lex.bg/laws/ldoc/2135540562 |
+| Interest and royalties to an associated EU company (25% held for at least 2 years, beneficial owner) | Exempt | 2026 | CITA art. 195(6)(3), (7), (12), https://lex.bg/laws/ldoc/2135540562 |
+| Interest on listed bonds of Bulgarian issuers, the state or municipalities (regulated market or growth market in the EU or EEA) | Exempt | 2026 | CITA art. 195(6)(1), extended to growth markets from 1 Jan 2026, https://lex.bg/laws/ldoc/2135540562 |
+| Disposals of financial instruments as defined in the CITA | Not withheld | 2026 | CITA art. 196, https://lex.bg/laws/ldoc/2135540562 |
+| Dividends to individuals (resident or non-resident) | 5% final tax | 2026 | PITA arts. 38(1), 46(3), https://lex.bg/laws/ldoc/2135538631 |
+| Interest, rents, royalties, technical services, management fees, artists' and sportspeople's fees, paid to non-resident individuals | 10% final tax on the gross amount | 2026 | PITA arts. 37(1)(1) to (9), 37(2), 46(1), https://lex.bg/laws/ldoc/2135538631 |
+| Non-resident individual, gain on Bulgarian real estate | 10% of (sale price less documented cost, less 10% for expenses) | 2026 | PITA arts. 37(1)(10), 37(3), 46(1), https://lex.bg/laws/ldoc/2135538631 |
+| Non-resident individual, gain on shares and other financial assets | 10% of (sale price less documented cost) | 2026 | PITA arts. 37(1)(12), 37(4), 46(1), https://lex.bg/laws/ldoc/2135538631 |
 | Simplified treaty relief (proof given to the payer only) | Income from one payer to one foreign person up to EUR 255,645.94 (BGN 500,000) a year | 2026 | DOPK art. 142(1), [NRA](https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/prilagane-na-SIDDO) |
-| NRA opinion on a treaty request (where a check is made) | Within 60 days; silence counts as an opinion that the treaty applies | 2026 | DOPK art. 141(1) to (3) |
+| NRA opinion on a treaty request (where a check is made) | Within 60 days; silence counts as an opinion that the treaty applies | 2026 | DOPK art. 141(1) to (3), https://lex.bg/laws/ldoc/2135514513 |
 | Treaties listed by the NRA | 71 countries, from Austria to Japan | 2026 | [NRA treaty list](https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/spisak-sas-spogodbi) |
-| CFC control test | More than 50% of votes, capital or profit, with related enterprises | 2026 | CITA art. 47в(1)(1) |
-| Exit tax base (companies) | Market price less tax value of transferred assets, at the 10% rate | 2026 | CITA arts. 155, 155а |
-| Exit tax deferral (transfers to EU or EEA) | Five equal annual instalments, with interest | 2026 | CITA art. 155г(1), (5) |
+| CFC control test | More than 50% of votes, capital or profit, with related enterprises | 2026 | CITA art. 47в(1)(1), https://lex.bg/laws/ldoc/2135540562 |
+| Exit tax base (companies) | Market price less tax value of transferred assets, at the 10% rate | 2026 | CITA arts. 155, 155а, https://lex.bg/laws/ldoc/2135540562 |
+| Exit tax deferral (transfers to EU or EEA) | Five equal annual instalments, with interest | 2026 | CITA art. 155г(1), (5), https://lex.bg/laws/ldoc/2135540562 |
 
 **Treaties.** The NRA list (read 2026-10-23) shows treaties with: Albania, Algeria, Armenia, Austria, Azerbaijan, Bahrain, Belarus, Belgium, Canada, China, Croatia, Cyprus, Czech Republic, Denmark, Egypt, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, India, Indonesia, Iran, Ireland, Israel, Italy, Japan, Jordan, Kazakhstan, Kuwait, Latvia, Lebanon, Lithuania, Luxembourg, Malta, Moldova, Mongolia, Montenegro, Morocco, Netherlands (new treaty in force 31 July 2021), North Korea, North Macedonia, Norway, Pakistan, Poland, Portugal, Qatar, Romania, Russia, Saudi Arabia, Serbia, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Syria, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States, Uzbekistan, Vietnam and Zimbabwe. For several the NRA also publishes a synthesised text showing the effect of the multilateral BEPS convention. Read the treaty for the rate: this skill does not tabulate treaty rates.
 
@@ -204,4 +204,4 @@ Not yet confirmed: treaty rates for any treaty (the NRA treaty texts are PDFs th
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bg-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bg-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bg-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bg-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

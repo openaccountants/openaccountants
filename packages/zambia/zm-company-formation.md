@@ -4,14 +4,15 @@ description: "Company formation and entity choice for Zambia, 2026: PACRA regist
 jurisdiction: ZM
 category: formation
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: filing-howto
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 ---
 
-# Zambia Company Formation and Entity Choice v0.2
+# Zambia Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,8 +28,6 @@ Anyone starting a business in Zambia, 2026.
 | Deregistration ground | Registrar may de-register a company with no annual returns for two consecutive years | 2026 | same |
 | Tax start notice | Notify ZRA within 30 days of commencing business | 2026 | https://www.zra.org.zm/wp-content/uploads/2026/06/Turnover-Tax.pdf |
 | Records | Keep at least six years | 2026 | same |
-| PACRA fees | unverified: fees page is a menu with no figures read | 2026 | unverified |
-| Minimum share capital | unverified: old sources K15,000 or K20,000, both blogs | 2026 | unverified |
 
 ## The base
 
@@ -93,4 +92,4 @@ expected:
 | ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
 | ZRA step-by-step applications guide; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/09/STEP-BY-STEP-GUIDE-ON-THE-ZRA-DOMESTIC-TAXES-APPLICATIONS.pdf | 2026-11-01 |
 
-Not yet confirmed: shareholder cap of 50; PACRA timeline of 1 to 5 days; PACRA Act No. 4 of 2020 citation; all fees; share capital; company law text beyond the 2025 amendment.
+Not yet confirmed: shareholder cap of 50; PACRA timeline of 1 to 5 days; PACRA Act No. 4 of 2020 citation; all fees; share capital; company law text beyond the 2025 amendment; rows moved out of the rates table on 2026-11-14: PACRA fees (the fees page is a menu with no figures) and minimum share capital (old sources K15,000 or K20,000, both from blogs).

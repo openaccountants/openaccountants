@@ -13,19 +13,20 @@ description: >
   urssaf.fr. ALWAYS read this skill before advising on any French tax
   optimization strategy. This Tier 2 draft supports source checking and
   reviewer questions; it does not authorise a tax position.
-version: 1.3
+version: 1.4
 jurisdiction: FR
 tax_year: 2026
 tax_year_notes: "Planning for income of 2026, declared in 2027, read at 5 November 2026. Art. 197 as amended by LF 2026 art. 4 is the law at that date, and its note applies it to tax due for 2025 and later years. The final position for income of 2026 is held, because a loi de finances for 2027 can amend it and PLF 2027 is a bill."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 depends_on: []
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: tax-optimization
+type: situation-rules
 ---
 
-# France Tax Optimization v1.3
+# France Tax Optimization v1.4
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to

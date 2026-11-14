@@ -11,17 +11,18 @@ description: >
   regimes and Pillar Two. Includes filing and penalty rules, two independently
   checkable computation examples, and links to the individual, transfer-pricing
   and cross-border Guides for specialist computations.
-version: 0.1
+version: 0.2
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Qatar corporate income tax v0.1
+# Qatar corporate income tax v0.2
 
 ## Who this applies to
 
