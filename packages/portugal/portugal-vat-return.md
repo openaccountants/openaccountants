@@ -1,10 +1,10 @@
 ---
 name: portugal-vat-return
 description: "Portuguese VAT (IVA) for tax year 2026: who must charge it, the mainland rates of 23%, 13% and 6%, the Azores (16%, 9%, 4%) and Madeira (22%, 12%, 4%) rates, the art. 53 small-business exemption at EUR 15,000 with its 25% margin, the EU small-business scheme (EUR 100,000), monthly or quarterly periodic returns (EUR 650,000 test), return due on the 20th and payment on the 25th of the second month after the period (20 and 25 September for June and Q2, with deadlines on a weekend moving to the next working day), refunds after 12 months or above EUR 3,000, blocked input VAT, the domestic reverse charge on construction, late interest and RGIT fines. Trigger on: Portuguese VAT, Portuguese VAT return, IVA, IVA Portugal, declaração periódica, Declaração Periódica de IVA, regime de isenção artigo 53, IVA trimestral mensal, autoliquidação, reembolso de IVA, coima IVA, Açores Madeira IVA. Out of scope: invoicing software, ATCUD and SAF-T (portugal-einvoice), bookkeeping (portugal-bookkeeping), income tax (pt-income-tax), corporate tax (pt-corporate-tax)."
-version: 2.3
+version: 2.4
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -12,9 +12,10 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.3
+# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.4
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Portugal.
 

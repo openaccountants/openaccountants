@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-employee-income-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-11-09"
+  last_updated: "2026-11-14"
 ---
 
 # Germany: income tax return for employees, tax year 2026 (Anlage N)
@@ -58,17 +58,17 @@ All amounts are for tax year 2026.
 | Zone 4 (42%) | EUR 69,879 to 277,825: 0.42 × x − 11,135.63 | Same |
 | Zone 5 (45%) | From EUR 277,826: 0.45 × x − 19,470.38 | Same |
 | Rounding | Taxable income and tax both rounded down to whole euros | Same, § 32a(1) sentences 1 and 6 |
-| Splitting for joint assessment | Twice the tax on half the joint taxable income | § 32a(5) EStG, same URL |
+| Splitting for joint assessment | Twice the tax on half the joint taxable income | § 32a(5) EStG; https://www.gesetze-im-internet.de/estg/__32a.html |
 | Employee lump sum (Arbeitnehmer-Pauschbetrag) | EUR 1,230 unless higher costs are shown; union dues are deducted on top | https://www.gesetze-im-internet.de/estg/__9a.html |
 | Commuting allowance (Entfernungspauschale) | EUR 0.38 per full km of one-way distance, from the first km, per day the first place of work is visited; cap EUR 4,500 a year unless an own or provided car is used | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4); this text applies from 2026 under § 52(1) EStG |
 | Home office day allowance (Tagespauschale) | EUR 6 per day worked mainly at home without visiting the first place of work; max EUR 1,260 a year | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) sentence 1 no. 6c), applied to employees by § 9(5) EStG |
-| Home office room (Arbeitszimmer), only if it is the centre of all work | Actual cost or EUR 1,260 a year flat | § 4(5) sentence 1 no. 6b EStG, same URL |
+| Home office room (Arbeitszimmer), only if it is the centre of all work | Actual cost or EUR 1,260 a year flat | § 4(5) sentence 1 no. 6b EStG; https://www.gesetze-im-internet.de/estg/__4.html |
 | Work equipment written off at once | Cost up to EUR 800 net of VAT per item | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), applied by § 9(1) sentence 3 no. 7 EStG |
-| Second home for work (doppelte Haushaltsführung), rent | Up to EUR 1,000 a month in Germany | § 9(1) sentence 3 no. 5 EStG |
+| Second home for work (doppelte Haushaltsführung), rent | Up to EUR 1,000 a month in Germany | § 9(1) sentence 3 no. 5 EStG; https://www.gesetze-im-internet.de/estg/__9.html |
 | First vocational training or study (no prior qualification, not within employment) | Special expense up to EUR 6,000 a year | https://www.gesetze-im-internet.de/estg/__10.html (§ 10(1) no. 7) |
 | Pension contributions, cap | Up to the maximum contribution to the miners' pension scheme: EUR 124,800 × 24.7% = EUR 30,826 (rounded up); doubled for joint assessment. The tax-free employer share is then subtracted | § 10(3) EStG; ceiling: SVBezGrV 2026 § 4(1) no. 2, https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html; rate: https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
-| Other insurance (health, care, unemployment, liability, etc.), cap | EUR 1,900 for employees (employer pays towards health cover); EUR 2,800 otherwise; summed for spouses. Basic health and care cover is deductible in full even above the cap | § 10(4) EStG, same URL as § 10 |
-| Statutory health contribution with sick-pay entitlement | Reduce by 4% before deducting | § 10(1) no. 3(a) sentence 4 EStG |
+| Other insurance (health, care, unemployment, liability, etc.), cap | EUR 1,900 for employees (employer pays towards health cover); EUR 2,800 otherwise; summed for spouses. Basic health and care cover is deductible in full even above the cap | § 10(4) EStG; https://www.gesetze-im-internet.de/estg/__10.html |
+| Statutory health contribution with sick-pay entitlement | Reduce by 4% before deducting | § 10(1) no. 3(a) sentence 4 EStG; https://www.gesetze-im-internet.de/estg/__10.html |
 | Special expenses lump sum | EUR 36 (EUR 72 joint) | https://www.gesetze-im-internet.de/estg/__10c.html |
 | Donations | Up to 20% of total income | https://www.gesetze-im-internet.de/estg/__10b.html |
 | Child allowances (Freibeträge für Kinder) | EUR 3,414 plus EUR 1,464 per parent (EUR 4,878); EUR 9,756 per child for joint assessment | https://www.gesetze-im-internet.de/estg/__32.html (§ 32(6)); BMF monthly report Feb 2026 |
@@ -284,4 +284,4 @@ Not yet confirmed: the 2026 form set and line numbers (ELSTER has not published 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

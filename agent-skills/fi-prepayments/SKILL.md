@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-prepayments"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Finland prepayments v1.3
+# Finland prepayments v1.4
 
 ## Who this applies to
 
@@ -20,16 +20,16 @@ Use for ordinary advance collection of Finnish income tax for individuals, sole 
 
 | Item | 2026 amount or rule | Official basis |
 |---|---|---|
-| Ordinary individual advance | Minimum EUR 170; EUR 170–500: 2 instalments in March/September; over 500–1,700: 3 in February/July/November; over 1,700–10,000: 6 in February/April/June/August/October/December; over 10,000: 12 monthly | Act §23 and [Vero instalment table][instalments] |
-| Ordinary corporate advance | Minimum EUR 500; EUR 500–2,000: 2 equal instalments in accounting-period months 3 and 9; over 2,000: 12 equal instalments | Act §23 and [Vero instalment table][instalments] |
-| Ordinary due day | 23rd, moved to next business day when a weekend or public holiday | Act §23; [Vero payment instructions][payments] |
-| Additional prepayment minimum | Individual EUR 170; corporate EUR 500 | Act §24; [Vero additional prepayment][additional] |
-| Interest with relief accruing in 2026 | 4.5% annually; starts first day of second month after tax-year end | Act §24; [Vero interest calculation][relief] |
-| Ordinary overdue-tax interest accruing in 2026 | 9.5% annually, day after due date through payment | [Vero interest calculation][relief] |
-| Relief-interest deduction on back tax | EUR 20, capped at calculated interest; no deduction on additional prepayment | [Vero interest calculation][relief] |
-| Back tax collection | Over EUR 170: two instalments; under EUR 10: not collected | [Vero back taxes][backtax] |
-| Customer withholding on work paid to a supplier not in the prepayment register | Corporate entity or partnership 13%; self-employed or other individual: rate on the tax card for nonwage pay, or 60% if no card is presented; none on goods or rent | Act §§13,25; [Vero prepayment register][register] |
-| Claim for adjustment against a prepayment decision | Within 60 days of receiving the decision; instalments stay payable while it is pending | [Vero claim for adjustment][adjust] |
+| Ordinary individual advance | Minimum EUR 170; EUR 170–500: 2 instalments in March/September; over 500–1,700: 3 in February/July/November; over 1,700–10,000: 6 in February/April/June/August/October/December; over 10,000: 12 monthly | Act §23 and [Vero instalment table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
+| Ordinary corporate advance | Minimum EUR 500; EUR 500–2,000: 2 equal instalments in accounting-period months 3 and 9; over 2,000: 12 equal instalments | Act §23 and [Vero instalment table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
+| Ordinary due day | 23rd, moved to next business day when a weekend or public holiday | Act §23; [Vero payment instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/) |
+| Additional prepayment minimum | Individual EUR 170; corporate EUR 500 | Act §24; [Vero additional prepayment](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/) |
+| Interest with relief accruing in 2026 | 4.5% annually; starts first day of second month after tax-year end | Act §24; [Vero interest calculation](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/) |
+| Ordinary overdue-tax interest accruing in 2026 | 9.5% annually, day after due date through payment | [Vero interest calculation](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/) |
+| Relief-interest deduction on back tax | EUR 20, capped at calculated interest; no deduction on additional prepayment | [Vero interest calculation](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/) |
+| Back tax collection | Over EUR 170: two instalments; under EUR 10: not collected | [Vero back taxes](https://www.vero.fi/en/individuals/payments/back-taxes/payment-instructions/) |
+| Customer withholding on work paid to a supplier not in the prepayment register | Corporate entity or partnership 13%; self-employed or other individual: rate on the tax card for nonwage pay, or 60% if no card is presented; none on goods or rent | Act §§13,25; [Vero prepayment register](https://www.vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/) |
+| Claim for adjustment against a prepayment decision | Within 60 days of receiving the decision; instalments stay payable while it is pending | [Vero claim for adjustment](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/making-a-claim-for-adjustment-against-a-decision-on-prepayments/) |
 
 The ordinary table assumes a full period and no special scheduling election or midyear decision. Individuals can elect equal monthly payments or request seasonal months. A replacement decision controls the actual dates and rounding. Do not mechanically divide a changed advance over months that have already passed. [Vero instalment table][instalments].
 
@@ -130,7 +130,7 @@ expected:
 | [Vero payment instructions][payments] | Due day, revisions and forecasts | 2026-10-26 |
 | [Vero additional prepayment][additional] | Requests, tax year and payment procedure | 2026-10-26 |
 | [Vero interest guidance][relief] | 2026 rates, periods and EUR 20 distinction | 2026-10-26 |
-| [Vero prepayment register][register]; [if you pay late][late]; [claim for adjustment][adjust]; [back taxes][backtax]; [tax prepayment][prepayment-home] | Withholding rates, payment allocation, 60-day claim, back-tax instalments, wage-card route | 2026-10-27 |
+| [Vero prepayment register][register]; [if you pay late][late]; [claim for adjustment][adjust]; [back taxes][backtax]; [tax prepayment][prepayment-home] | Withholding rates, payment allocation, 60-day claim, back-tax instalments, wage-card route | 2026-11-14 |
 
 Not yet confirmed: 2027 interest rates and the exact December 2026 opening day for individual 2026 additional-prepayment requests. These are future parameters; they do not change the confirmed 2026 procedures.
 
@@ -139,7 +139,12 @@ Not yet confirmed: 2027 interest rates and the exact December 2026 opening day f
 [payments]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/
 [additional]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/
 [relief]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/
+[backtax]: https://www.vero.fi/en/individuals/payments/back-taxes/payment-instructions/
+[register]: https://www.vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/
+[adjust]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/making-a-claim-for-adjustment-against-a-decision-on-prepayments/
+[late]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/if-you-pay-late/
+[prepayment-home]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-prepayments` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-prepayments. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-prepayments` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-prepayments. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -3,15 +3,16 @@ name: bh-company-formation
 description: "Company formation and entity choice in Bahrain, 2026: W.L.L., closed and public shareholding companies, partnerships, branches, individual establishments and Sijili, with minimum capital and commitments from the Sijilat portal. Use for questions like how to set up a company in Bahrain, minimum capital W.L.L. Bahrain, or can a foreigner own 100% in Bahrain."
 jurisdiction: BH
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.3
+last_updated: 2026-11-14
+version: 0.4
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Bahrain Company Formation and Entity Choice v0.3
+# Bahrain Company Formation and Entity Choice v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

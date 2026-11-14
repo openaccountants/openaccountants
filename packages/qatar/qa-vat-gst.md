@@ -11,17 +11,18 @@ description: >
   analysis, business-payment withholding to the cross-border income-tax Guide,
   and foreign VAT recovery to the relevant foreign jurisdiction. Includes two
   checked illustrations without assuming a future Qatar rate or commencement.
-version: 0.1
+version: 0.2
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Qatar VAT status v0.1
+# Qatar VAT status v0.2
 
 ## Who this applies to
 

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gq-company-formation"
   jurisdiction: "GQ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Equatorial Guinea Company Formation and Entity Choice v0.2
+# Equatorial Guinea Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,11 +27,6 @@ Founders and investors forming a company in Equatorial Guinea in 2026. Companies
 | Registration papers | Name, representative with power of attorney, capital, statutes, notarial deed, office, activities (art 13.3) | 2026 | same |
 | Books | SYSCOHADA; retained 10 years for VAT (arts 79, 166) | 2026 | same |
 | Audit report | Required unless under two of three limits; always for an SA (art 79) | 2026 | same |
-| Minimum capital SARL | unverified: 1,000,000 XAF, old skill from a commercial site; OHADA made it default, so national law can differ | 2026 | unverified |
-| Minimum capital SA | unverified: 10,000,000 XAF | 2026 | unverified |
-| Minimum members SARL | unverified: 1 | 2026 | unverified |
-| Local ownership | unverified: 35% held by nationals and one third of directors | 2026 | unverified |
-| Timeline | unverified: 8 to 16 weeks | 2026 | unverified |
 
 Old-skill items also unverified: physical registered office required; capital deposited in a local bank with a certificate to the notary; steps of notarised articles, deposit, RCCM entry, NIF, social security.
 
@@ -103,8 +98,8 @@ expected:
 
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
-Not yet confirmed: every row marked unverified; the OHADA Uniform Act text did not open on ohada.org or ohada.com; the investment law on boe.gob.gq was not read.
+Not yet confirmed: every row marked unverified; the OHADA Uniform Act text did not open on ohada.org or ohada.com; the investment law on boe.gob.gq was not read; rows moved out of the rates table on 2026-11-14: minimum capital SARL 1,000,000 XAF and SA 10,000,000 XAF (old skill, from a commercial site; OHADA made it a default, so national law can differ), minimum one member for an SARL, local ownership 35% held by nationals and one third of directors, timeline 8 to 16 weeks.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
