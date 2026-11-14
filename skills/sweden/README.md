@@ -21,6 +21,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 | Payroll | sweden-payroll, se-benefits-and-allowances | checked against the law |
 | Transfer pricing | se-transfer-pricing | checked against the law |
 | Cross-border | se-cross-border | checked against the law |
+| Bookkeeping and annual accounts | sweden-bookkeeping, sweden-financial-statements (K2 annual report for a private AB) | source-cited draft |
 
 ## Official sources
 
