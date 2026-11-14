@@ -118,7 +118,7 @@ Premium percentages are of income; ceilings are in XCG for 2026 ([SVB Tabel 2026
 | OV (accident insurance) | 0,5 to 5% by risk class | all | none | wage ceiling XCG 7,146.10 a month | same |
 | ZV and OV wage ceiling, other periods | | | | XCG 274.85 a day (6-day week), 329.82 a day (5-day week), 1,649.10 a week, 85,753.20 a year | same |
 | Cessantia (severance fund) | XCG 40 per employee per year | all | none | none | same |
-| Wage tax rate range | 9,75% to 46,5% | | | 2026 bands below | [Schijven tarief 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Schijven-tarief-2026.pdf) |
+| Wage tax rate range | 9.75% to 46.5% | | | 2026 bands below | [Schijven tarief 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Schijven-tarief-2026.pdf) |
 | Basic credit (basiskorting) | XCG 2,915 a year | | | residents; one employer only | [Loonbelastingverklaring 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Loonbelastingverklaring-2026.pdf) |
 | Fixed employment-cost deduction in withholding | ANG 500 a year | | | applied automatically | [Tax Office Curacao, Loonbelasting](https://belastingdienst.cw/ondernemer/themas/loonbelasting/) |
 | Savings fund deduction in withholding | up to ANG 840 a year | | | | same |
@@ -134,12 +134,12 @@ Premium percentages are of income; ceilings are in XCG for 2026 ([SVB Tabel 2026
 
 | Taxable income from (XCG) | Up to but not including (XCG) | Tax on the lower limit (XCG) | Rate on the excess | Source |
 |---|---|---|---|---|
-| 0 | 39,094 | 0 | 9,75% | [Schijven tarief 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Schijven-tarief-2026.pdf) |
+| 0 | 39,094 | 0 | 9.75% | [Schijven tarief 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Schijven-tarief-2026.pdf) |
 | 39,094 | 52,127 | 3,812 | 15% | same |
 | 52,127 | 78,190 | 5,767 | 23% | same |
 | 78,190 | 110,769 | 11,761 | 30% | same |
-| 110,769 | 162,894 | 21,535 | 37,5% | same |
-| 162,894 | no limit | 41,082 | 46,5% | same |
+| 110,769 | 162,894 | 21,535 | 37.5% | same |
+| 162,894 | no limit | 41,082 | 46.5% | same |
 
 - **Credits for 2026, as printed in the employer's calculation box on the 2026 declaration**: basic credit (basiskorting) ANG 2,915 a year; sole-earner supplement (alleenverdienertoeslag) ANG 1,779; elderly supplement (ouderentoeslag) ANG 1,342; transferred elderly supplement ANG 673 ([Loonbelastingverklaring 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Loonbelastingverklaring-2026.pdf)).
 - **Source conflict (check).** The 2026 explanatory notes print "NAf 1.739" (sole earner), "NAf 1.312" (elderly) and "658" (transferable) in their text. Those are the 2025 amounts fixed by P.B. 2024 no. 143 ([Ministeriele regeling bedragen inkomstenbelasting 2025](https://belastingdienst.cw/wp-content/uploads/2026/02/143.-MR-vaststelling-bedragen-IB-2025.pdf)), left in the notes. This skill uses the 2026 form ([Toelichting Loonbelastingverklaring 2026](https://belastingdienst.cw/wp-content/uploads/2026/01/Loonbelastingverklaring-2026-toelichting.docx-1.pdf)).
