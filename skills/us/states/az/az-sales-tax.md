@@ -50,7 +50,7 @@ Out of scope, and where it goes:
 | State rate, retail, restaurant and bar, amusement, personal property rental, prime contracting, utilities, telecommunications, transporting, pipeline, private car line, publication, job printing | Five percent | [A.R.S. 42-5010(A)(1)](https://www.azleg.gov/ars/42/05010.htm) |
 | Additional state increment on the same classifications (1 July 2021 to 30 June 2041) | Six-tenths of one percent (state total 5.6%, derived: five percent plus the increment) | [A.R.S. 42-5010.01(A)](https://www.azleg.gov/ars/42/05010-01.htm) |
 | State rate, transient lodging and registered online lodging marketplaces | Five and one-half percent | [A.R.S. 42-5010(A)(2)](https://www.azleg.gov/ars/42/05010.htm) |
-| State rate, mining | Three and one-eighth percent (3.125%, derived from the words) | [A.R.S. 42-5010(A)(3)](https://www.azleg.gov/ars/42/05010.htm) |
+| State rate, mining | Three and one-eighth percent | [A.R.S. 42-5010(A)(3)](https://www.azleg.gov/ars/42/05010.htm) |
 | State rate, commercial lease | 0% (cities may still tax it) | [A.R.S. 42-5010(A)(4)](https://www.azleg.gov/ars/42/05010.htm) |
 | Combined state and county, retail (code 017): Maricopa | 6.30% | [ADOR rate tables, 1 Oct 2026, Table 1](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
 | Combined state and county, retail: Pima | 6.10% | [ADOR rate tables, Table 1](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
