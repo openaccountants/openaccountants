@@ -35,9 +35,9 @@ Read this whole section before computing anything.
 | Tax Authority | Central Provident Fund Board (CPFB); Inland Revenue Authority of Singapore (IRAS) |
 | Tax Year | 2026 work year; paid-in-2026 relief considered in YA 2027  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
 | Currency | SGD only |
-| MediSave Trigger Threshold | NTI > S$6,000  [Official source](https://www.cpf.gov.sg/member/growing-your-savings/cpf-contributions/saving-as-a-self-employed-person) |
+| MediSave Trigger Threshold | NTI > S$6,000  [Official source](https://www.cpf.gov.sg/service/sfc/servlet.shepherd/document/download/069IW00000G4S1QYAV) |
 | CPF Annual Limit | S$37,740, voluntary-contribution/relief limit, not an automatic mandatory MediSave cap  [Official source](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed) |
-| Basic Healthcare Sum (BHS) | S$79,000 for members below 65 or turning 65 in 2026; older cohorts retain their fixed BHS  [Official source](https://www.cpf.gov.sg/service/article/what-is-the-basic-healthcare-sum) |
+| Basic Healthcare Sum (BHS) | S$79,000 for members below 65 or turning 65 in 2026; older cohorts retain their fixed BHS  [Official source](https://www.moh.gov.sg/newsroom/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026/) |
 | Contributor | Open Accountants |
 | Validation Date | Pending |
 | Skill Version | 3.0 |
@@ -404,5 +404,7 @@ After repeated reminders CPFB may issue a Letter of Demand and Offer for outstan
 | Read for maximum qualifying annual income 96,000 from 2026, Additional Wages exclusion, platform timing and CPFB application. | https://www.cpf.gov.sg/service/article/what-are-the-conditions-for-applying-to-limit-my-medisave-payable-as-a-self-employed-person |2026-11-14 |
 | Read for SEP demand/composition/NTA and first/repeat fine/imprisonment maxima. | https://www.cpf.gov.sg/service/article/what-if-self-employed-persons-do-not-respond-to-the-notice-of-cpf-contributions-for-self-employed-persons |2026-11-14 |
 | Read for flexible instalment handling and court as last resort, no promised waiver. | https://www.cpf.gov.sg/service/article/why-does-cpf-board-take-self-employed-persons-to-court-for-not-contributing-to-their-medisave |2026-11-14 |
+
+| Read for 2026 BHS of 79,000 below age65 and fixed turn65 cohort; older cohorts unchanged. | https://www.moh.gov.sg/newsroom/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026/ | 2026-11-14 |
 
 Not yet confirmed: exact rounding on an individual CPF notice and an approved concurrent-income limitation; current SEP late-interest amount (old 1.5%monthly/18%annual not certified), travel-restriction power and contact number formerly 1800-227-1188; maximum instalment term formerly typically 12 months; AXS/internet banking/service-centre availability for this exact liability; pensioner classification for undocumented facts, detailed voluntary allocation/refund/top-up routes and healthcare premium/withdrawal limits. Self-Employed Persons Regulations access returned 403, so no new statutory article reading is claimed. Ordinary sourced 2026 computations remain usable.

@@ -93,8 +93,8 @@ Historical YA 2025 only: 60% rebate capped at S$200. It is not carried into YA 2
 | Parameter | Value |
 | --- | --- |
 | Headline rate | 17%  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
-| PTE: first S$10,000 normal income before exemption | 75% exemption → effective 4.25%  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
-| PTE: next S$190,000 normal income before exemption | 50% exemption → effective 8.5%  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
+| PTE: first S$10,000 normal income before exemption | 75% exemption → derived effective 4.25% = 17% × 25%  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
+| PTE: next S$190,000 normal income before exemption | 50% exemption → derived effective 8.5% = 17% × 50%  [Official source](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes) |
 
 PTE applies only where the company is not claiming SUTE; SUTE requires separate first-three-YA, residence, incorporation, shareholder and activity conditions. Any YA-specific rebate is separate from these bands.
 
