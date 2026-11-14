@@ -7,14 +7,14 @@ category: formation
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-14
-version: 0.3
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 type: filing-howto
 ---
 
-# Gabon company formation and entity choice v0.3
+# Gabon company formation and entity choice v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +29,7 @@ Founders comparing ordinary companies under the historical OHADA company-law tex
 | Item and conditions | Rule or amount (XAF unless stated) | Period/status | Official source |
 |---|---|---|---|
 | SARL statutory default | 1,000,000 minimum subject to national provisions; at least half of cash shares paid, balance within two years | 2014 act; Gabon derogation/currentness hold | [AUSCGIE arts311-311-1](https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf) (ledger F-SARL) |
-| Gabon SARL national rule | Capital freely set by the members in the statutes, in equal shares of nominal value at least 5,000 | Law 028/2018 of 21 April 2020 (JO no. 65, 1 May 2020); later amendments not checked | [Law028/2018 art2, new art2 of Law13/2016](https://journal-officiel.ga/4761-028-2018-/) |
+| Gabon SARL national rule | Capital freely set by the members in the statutes, in equal shares of nominal value at least 5,000 (in words on the page: "cinq mille francs CFA") | Law 028/2018 of 21 April 2020 (JO no. 65, 1 May 2020); later amendments not checked | [Law028/2018 art2, new art2 of Law13/2016](https://journal-officiel.ga/4761-028-2018-/) |
 | Ordinary SA statutory capital | 10,000,000; cash shares at least one quarter paid, balance within three years | 2014 act; currentness and sector hold | [AUSCGIE arts387-389](https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf) (ledger F-SA) |
 | SAS capital | Set by statutes; no public offering | 2014 act; currentness hold | [AUSCGIE arts853-4-853-5](https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf) (ledger F-SAS) |
 | Tax-registration baseline | Within 45 days after starting activity, with location plan; substantial changes within 15 days | 2025 CGI baseline; 2026 hold | [CGI artP817](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger F-TAX) |
@@ -102,11 +102,11 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| OHADA: Historical statutory text deposited with WTO. Read AUSCGIE arts1-3,7-13,23-27,97-101,309-315,323-324,385-389,853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established. | https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf | 2026-11-01 |
+| OHADA: Historical statutory text deposited with WTO. Read AUSCGIE arts1-3, 7-13, 23-27, 97-101, 309-315, 323-324, 385-389, 853-1 to853-5 and surrounding headings. Gabon national derogations and later amendment chain not established. | https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf | 2026-11-01 |
 | Journal Officiel no. 65 (1 May 2020): Law 028/2018 of 21 April 2020 read in full for SARL capital and statutes | https://journal-officiel.ga/4761-028-2018-/ | 2026-11-14 |
 | Journal Officiel: Law 041/2025 (finance law 2026), replacement arts 252, 254 and 265 read for the patente | https://journal-officiel.ga/22265-041-2025-/ | 2026-11-14 |
 | ANPI: Read dossier/licensing sections and entire displayed10-step creation circuit. Linked downloadable dossier/guide returns same page. No authenticated creation submission or fee schedule inspected. | https://www.investingabon.ga/formalisation | 2026-11-01 |
 | CGI: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read. | https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf | 2026-11-01 |
-| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
+| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis, 91bis, 178bis, 202-204, 208ter, 210, 211ter, 215, 221-224, 227, 230, 243bis, 248septies-nonies, 401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
 
 Not yet confirmed: Gabon SARL capital and statute certification are now from Law 028/2018; whether the OHADA half-paid rule still governs pay-up under the national rule, and later amendments, are not checked. Replacement art 265 bases the patente on turnover "as defined by article 62 for the minimum flat tax", but in the 2025 CGI the minimum tax is in arts 24-25 and art 62 deals with securities income; the base definition is unresolved. Current fees, processing time and complete dossier; UBO-at-incorporation rules; annual accounts filing route; business-licence/patente computation and 2026 changes; regulated activities and complete OHADA amendment chain. The old 1-2-week timing, 200,000-500,000 cost and 15,000-540,000 patente range remain unverified, not promises. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).

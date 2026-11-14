@@ -259,6 +259,13 @@
   "dir": "skills/ivory-coast"
  },
  {
+  "code": "CK",
+  "name": "Cook Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/cook-islands"
+ },
+ {
   "code": "CL",
   "name": "Chile",
   "region": "americas",
@@ -432,6 +439,13 @@
   "region": "americas",
   "owner": "open",
   "dir": "skills/falkland-islands"
+ },
+ {
+  "code": "FM",
+  "name": "Micronesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/micronesia"
  },
  {
   "code": "FO",
@@ -693,6 +707,13 @@
   "dir": "skills/cambodia"
  },
  {
+  "code": "KI",
+  "name": "Kiribati",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/kiribati"
+ },
+ {
   "code": "KM",
   "name": "Comoros",
   "region": "africa",
@@ -882,6 +903,13 @@
   "dir": "skills/macau"
  },
  {
+  "code": "MP",
+  "name": "Northern Mariana Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/northern-mariana-islands"
+ },
+ {
   "code": "MQ",
   "name": "Martinique",
   "region": "americas",
@@ -1008,6 +1036,13 @@
   "dir": "skills/nepal"
  },
  {
+  "code": "NU",
+  "name": "Niue",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/niue"
+ },
+ {
   "code": "NZ",
   "name": "New Zealand",
   "region": "apac",
@@ -1097,6 +1132,13 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/portugal"
+ },
+ {
+  "code": "PW",
+  "name": "Palau",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/palau"
  },
  {
   "code": "PY",
