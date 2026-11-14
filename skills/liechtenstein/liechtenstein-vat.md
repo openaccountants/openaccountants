@@ -13,17 +13,18 @@ description: >
   VAT, MWST Liechtenstein, eMWST, Bezugsteuer Liechtenstein, Steuerverwaltung
   MWST. Out of scope: platforms, margin taxation, groups, property and sector
   schemes. Bank statements alone do not establish VAT treatment.
-version: 2.4
+version: 2.5
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Liechtenstein VAT preparation v2.4
+# Liechtenstein VAT preparation v2.5
 
 ## Who this applies to
 
@@ -35,25 +36,25 @@ Do not classify a transaction from a merchant name, and do not apply a default r
 
 | Item | Rule or 2026 figure | Primary source |
 |---|---|---|
-| Normal rate | 8.1% | MWSTG article 25(1); [rate page][rates] |
-| Reduced rate | 2.6% for statutory categories | Article 25(2); [rate page][rates] |
-| Accommodation | 3.8% for qualifying accommodation, including breakfast | Article 25(4) |
-| Ordinary small-business exemption | Annual worldwide relevant turnover **less than CHF 100,000**, excluding article 21(2) exempt supplies | Articles 10(2)(a), 10(2a) |
-| Specified nonprofit bodies | Separate **less than CHF 250,000** test | Article 10(2)(c), not every business |
-| Registered domestic taxpayer: acquisition tax | Assess each qualifying acquisition; no CHF 10,000 exemption | Article 45(2)(a) |
-| Recipient not already liable under article 10 | Acquisition-tax screen for qualifying acquisitions **over CHF 10,000** in the calendar year | Articles 45(2)(b), 47(2), 53(3) |
-| Annual reporting, on application | Taxable turnover **not more than CHF 5,005,000** a year | Article 35(1a)(b) |
-| Net tax rate method (Saldosteuersatz), on application | Taxable turnover **not more than CHF 5,024,000** a year and tax at the net rate **not more than CHF 108,000** in the same period | Article 37(1) |
-| Filing and payment | Within **60 days** after the reporting period ends | Articles 58(1), 76(1) |
+| Normal rate | 8.1% | MWSTG article 25(1); [rate page](https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze) |
+| Reduced rate | 2.6% for statutory categories | Article 25(2); [rate page](https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze) |
+| Accommodation | 3.8% for qualifying accommodation, including breakfast | Article 25(4) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Ordinary small-business exemption | Annual worldwide relevant turnover **less than CHF 100,000**, excluding article 21(2) exempt supplies | Articles 10(2)(a), 10(2a) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Specified nonprofit bodies | Separate **less than CHF 250,000** test | Article 10(2)(c), not every business ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Registered domestic taxpayer: acquisition tax | Assess each qualifying acquisition; no CHF 10,000 exemption | Article 45(2)(a) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Recipient not already liable under article 10 | Acquisition-tax screen for qualifying acquisitions **over CHF 10,000** in the calendar year | Articles 45(2)(b), 47(2), 53(3) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Annual reporting, on application | Taxable turnover **not more than CHF 5,005,000** a year | Article 35(1a)(b) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Net tax rate method (Saldosteuersatz), on application | Taxable turnover **not more than CHF 5,024,000** a year and tax at the net rate **not more than CHF 108,000** in the same period | Article 37(1) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
+| Filing and payment | Within **60 days** after the reporting period ends | Articles 58(1), 76(1) ([Article](https://www.gesetze.li/konso/pdf/2009330000)) |
 
 These tests do not alone establish liability: review the foreign-supplier, domestic/foreign-only and exempt-activity provisions in article 10. Article 14 distinguishes activity commencement, the end of exemption when prior-year turnover reaches the limit or a 12-month exceedance is foreseeable on commencement/expansion, and deregistration. Do not import another country's crossing-sale rule. Preserve a dated turnover forecast and authority registration decision. Compute the turnover limit from agreed consideration **excluding VAT**. Article 10(2)(d) separately exempts a Liechtenstein-established enterprise making only foreign supplies, with a possible article 11 waiver. For a foreign enterprise, article 10(2)(b) separately exempts the stated exclusively exempt/service/energy supplies; its article 8(1) service category does not exempt telecommunications/electronic supplies to non-taxable recipients. Establish the actual supply mix rather than deciding registration from the CHF 100,000 total alone. [MWSTG, articles 10–14][law]
 
 | Additional 2026 control | Figure/rule | Official source |
 |---|---|---|
-| Annual movable/service input-tax use-change reduction | One fifth of the relevant input VAT per counted year; actual timing rules below | [MWSTG articles 31–32][law] |
-| Annual immovable input-tax use-change reduction | One twentieth per counted year; property-base/special rules remain necessary | [MWSTG articles 31–32][law] |
-| Late-payment and ordinary domestic refund interest | 4% per year from 1 January 2026 | [MWSTV articles 142–143][ordinance]; [enacted 2025/548][interest-amendment] |
-| Collection/payment threshold for those interest amounts | CHF 100 interest amount, not the underlying VAT/refund principal | [MWSTV articles 142(3), 143(3)][ordinance] |
+| Annual movable/service input-tax use-change reduction | One fifth of the relevant input VAT per counted year; actual timing rules below | [MWSTG articles 31–32](https://www.gesetze.li/konso/pdf/2009330000) |
+| Annual immovable input-tax use-change reduction | One twentieth per counted year; property-base/special rules remain necessary | [MWSTG articles 31–32](https://www.gesetze.li/konso/pdf/2009330000) |
+| Late-payment and ordinary domestic refund interest | 4% per year from 1 January 2026 | [MWSTV articles 142–143](https://www.gesetze.li/konso/pdf/2009340000); [enacted 2025/548](https://www.gesetze.li/chrono/pdf/2025548000) |
+| Collection/payment threshold for those interest amounts | CHF 100 interest amount, not the underlying VAT/refund principal | [MWSTV articles 142(3), 143(3)](https://www.gesetze.li/konso/pdf/2009340000) |
 
 ## The base
 

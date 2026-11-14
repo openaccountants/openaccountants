@@ -1,11 +1,12 @@
 ---
 name: be-cross-border
 description: "Belgian cross-border tax for 2026: who is a Belgian tax resident (home or seat of wealth, the National Register presumption, and the company test of main establishment or seat of management); arriving under the special tax regime for inbound taxpayers and researchers (35% cost allowance, EUR 70,000 minimum pay, changed by the law of 18 December 2025); non-resident income tax (belasting der niet-inwoners, BNI) and the 75% rule; the new 10% exit tax on financial assets from 1 January 2026 and the company exit charge on moving the seat abroad, with EU/EEA deferral; 30% withholding tax on outbound dividends, interest and royalties; treaty relief and EU social security coordination. Tax year 2026 (assessment year 2027). Trigger on: moving to Belgium, leaving Belgium, expat Belgium, impatriate, BBIB, BBIO, non-resident Belgium, BNI, exit tax Belgium, roerende voorheffing non-resident, digital nomad Belgium. Out of scope: be-income-tax, be-social-contributions, belgium-payroll, be-capital-gains, belgium-crypto-tax."
-version: 0.2
+version: 1.0
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -209,31 +210,31 @@ Edge cases to check: the pro rata rounds down to the lower multiple of EUR 10 wh
 
 ## Sources
 
-All read on 2026-10-22.
-
-- FPS Finance, Circular 2026/C/51 on the changes to the special tax regimes for inbound taxpayers and inbound researchers (1 April 2026), with the consolidated text of art. 32/1 and 32/2 WIB 92 and art. 17 of the law of 18 December 2025: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d6fdb273-93c6-490d-8abe-67edd8373598
-- FPS Finance, special tax regime for inbound taxpayers and researchers (application forms page): https://finance.belgium.be/en/node/14643
-- Fisconetplus, art. 2 WIB 92 (income 2026), residence of individuals and companies: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/2bfeec21-7e5f-4828-a283-cb99c56d41a1
-- Fisconetplus, art. 130 WIB 92 (income 2026), indexed tax scale: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96
-- Fisconetplus, art. 131 WIB 92 (income 2026), tax-free amount, read 2026-10-23: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751
-- Fisconetplus, art. 243 WIB 92 (income 2026): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/629ac5c1-967e-40e9-8511-7ad5b1cbfe40
-- Fisconetplus, art. 243/1 WIB 92 (income 2026), the 75% rule: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a32b08a8-163e-4d48-b76f-fc6b40a89daf
-- Fisconetplus, art. 244bis WIB 92 (income 2026), changed by the law of 15 July 2026: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/36447522-376d-4cb1-b5bf-8243bc16ae93
-- Fisconetplus, art. 245 WIB 92 (income 2026), additional centimes: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182fc9a7-f7c6-46ef-8da9-239fd2378423
-- Fisconetplus, art. 80 KB/WIB 92 (income 2026), 7 additional centimes: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/ff25ff26-ce91-4678-bdb5-5a1dee98e899
-- FPS Finance, Circular 2026/C/74 on the tax on capital gains on financial assets (22 July 2026), including the exit tax: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4
-- Fisconetplus, art. 413/1 WIB 92 (income 2026), spread payment and exit tax deferral: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/baa69120-644c-46a1-aaab-697645ea9501
-- Fisconetplus, art. 210 WIB 92 (income 2026), seat transfer treated as liquidation: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a3d38979-9797-4133-b830-bf716b9625de
-- Fisconetplus, art. 215 WIB 92 (income 2026), corporate tax rate: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/3fd24be9-c978-47d0-ad39-5157070d42b1
-- Fisconetplus, art. 269 WIB 92 (income 2026), withholding tax rates: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac
-- Fisconetplus, art. 444 WIB 92 (income 2026), tax increases: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0
-- Fisconetplus, art. 445 WIB 92 (income 2026), administrative fines: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f
-- Fisconetplus, art. 308 WIB 92 (income 2026), return filing periods: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1
-- Fisconetplus, law of 5 May 1865 on interest-bearing loans, art. 2, §2/1, with the yearly rates (4% for 2026 and 2027): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca
-- Belgian Official Gazette, notice of 1 July 2025 setting the 2026 rate at 4% (Numac 2025004733): https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2025-07-01&lg_txt=n&numac_search=2025004733
-- FPS Finance, Circular 2026/C/70 on the separate assessment for the exit tax dividend of art. 18, first paragraph, 2°quater WIB 92 (30 June 2026): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/09089595-7dba-4d67-9ea6-2a65554e5efc
-- FPS Finance, Circular 2026/C/94 on withholding tax on capital gains on financial assets (20 October 2026): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55
-- Regulation (EC) No 883/2004, consolidated text, art. 12 and 13: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731
-- Justel, list of 2025 and 2026 laws amending the WIB 92: https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=1992041032&table_name=wet
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| FPS Finance, Circular 2026/C/51 (1 April 2026) with art. 32/1 and 32/2 WIB 92. Read for the inbound regime: EUR 70,000 minimum pay, 35% cost allowance, EUR 1,500 furnishing costs, 5 plus 3 years, the 150 km and 60-month look-back | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d6fdb273-93c6-490d-8abe-67edd8373598 | 2026-11-14 |
+| FPS Finance, special tax regime for inbound taxpayers and researchers (application forms page). Read on 2026-10-22 for the application route and forms; reopened 2026-11-14 but the site served a bot check, so nothing on this row is dated today | https://finance.belgium.be/en/node/14643 | 2026-10-22 |
+| Fisconetplus, art. 2 WIB 92 (income 2026). Read for the residence tests for individuals (home, seat of wealth, National Register) and companies | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/2bfeec21-7e5f-4828-a283-cb99c56d41a1 | 2026-11-14 |
+| Fisconetplus, art. 130 WIB 92 (income 2026). Read for the 2026 bands EUR 16,720 / 29,510 / 51,070 and rates 25% to 50% | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-11-14 |
+| Fisconetplus, art. 131 WIB 92 (income 2026). Read for the EUR 11,550 basic tax-free amount and EUR 2,030 disability supplement | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-11-14 |
+| Fisconetplus, art. 243 WIB 92 (income 2026). Read for how the resident scale applies in the non-resident tax | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/629ac5c1-967e-40e9-8511-7ad5b1cbfe40 | 2026-11-14 |
+| Fisconetplus, art. 243/1 WIB 92 (income 2026). Read for the 75% professional income rule | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a32b08a8-163e-4d48-b76f-fc6b40a89daf | 2026-11-14 |
+| Fisconetplus, art. 244bis WIB 92 (income 2026). Read for the non-resident allowances as changed by the law of 15 July 2026 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/36447522-376d-4cb1-b5bf-8243bc16ae93 | 2026-11-14 |
+| Fisconetplus, art. 245 WIB 92 (income 2026). Read for the statutory six additional centimes in the non-resident tax | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182fc9a7-f7c6-46ef-8da9-239fd2378423 | 2026-11-14 |
+| Fisconetplus, art. 80 KB/WIB 92 (income 2026). Read for the 7 additional centimes actually applied | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/ff25ff26-ce91-4678-bdb5-5a1dee98e899 | 2026-11-14 |
+| FPS Finance, Circular 2026/C/74 (22 July 2026). Read for the 10% capital gains tax, the 1.25% to 10% substantial-interest scale, the EUR 10,000 and EUR 1 million exemptions and the exit tax (nos. 153 to 156) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4 | 2026-11-14 |
+| Fisconetplus, art. 413/1 WIB 92 (income 2026). Read for the one-fifth plus four instalments spread payment and the exit tax deferral | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/baa69120-644c-46a1-aaab-697645ea9501 | 2026-11-14 |
+| Fisconetplus, art. 210 WIB 92 (income 2026). Read for the seat transfer treated as a liquidation | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a3d38979-9797-4133-b830-bf716b9625de | 2026-11-14 |
+| Fisconetplus, art. 215 WIB 92 (income 2026). Read for the 25% corporate rate and 20% on the first EUR 100,000 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/3fd24be9-c978-47d0-ad39-5157070d42b1 | 2026-11-14 |
+| Fisconetplus, art. 269 WIB 92 (income 2026). Read for the 30%, 15% (first EUR 77,220 copyright), VVPR-bis 20% and 18% withholding rates | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac | 2026-11-14 |
+| Fisconetplus, art. 444 WIB 92 (income 2026). Read for the scale of tax increases | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0 | 2026-11-14 |
+| Fisconetplus, art. 445 WIB 92 (income 2026). Read for the administrative fines | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f | 2026-11-14 |
+| Fisconetplus, art. 308 WIB 92 (income 2026). Read for the return filing periods (the date is left to the form) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1 | 2026-11-14 |
+| Fisconetplus, law of 5 May 1865, art. 2, §2/1. Read for the 4% legal interest rate for 2026 and 2027 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca | 2026-11-14 |
+| Belgian Official Gazette, notice of 1 July 2025 (Numac 2025004733), body text. Read for the 2026 rate of four percent | https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2025-07-01&lg_txt=n&numac_search=2025004733 | 2026-11-14 |
+| FPS Finance, Circular 2026/C/70 (30 June 2026). Read for the separate assessment of the exit tax dividend of art. 18, first paragraph, 2°quater WIB 92 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/09089595-7dba-4d67-9ea6-2a65554e5efc | 2026-11-14 |
+| FPS Finance, Circular 2026/C/94 (20 October 2026). Read for the 10% withholding on capital gains from 1 June 2026, residents only, and its exclusion from the non-resident tax | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55 | 2026-11-14 |
+| Regulation (EC) No 883/2004, consolidated text. Read for art. 12 (posting) and art. 13 (work in two or more states) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-11-14 |
+| Justel, list of laws amending the WIB 92. Read for the 2025 and 2026 amending laws and their gazette dates | https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=1992041032&table_name=wet | 2026-11-14 |
 
 Not yet confirmed: the filing date printed on the 2026 non-resident return for income 2025 (art. 308 WIB 92 leaves the date to the form; FPS Finance pages at fin.belgium.be were behind a human-verification check and could not be read, and the form model in the royal decree of 22 June 2026 does not print it; secondary references give 20 November 2026); the conditions of the domestic withholding exemptions for EU parent companies and associated companies (KB/WIB 92); whether municipal surcharges apply to the exit tax in the year of departure; the RSZ/ONSS treatment of the 35% inbound cost allowance.
