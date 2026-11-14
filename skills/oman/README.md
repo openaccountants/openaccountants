@@ -7,8 +7,8 @@ partial:
   IT-IND: "Future 2028 law explained; executive-regulation controls and operational filing details unresolved."
   IT-CORP: "Later-amendment and dividend/interest withholding suspension closure unresolved."
   VAT: "September 2026 zero-rate decisions and annexes unresolved."
-  SC: "Current ceiling decisions and sick-leave implementation conflict unresolved."
-  PR: "Current ceiling decisions and sick-leave implementation conflict unresolved."
+  SC: "Current ceiling decisions unresolved; sick-leave start settled at 19 July 2026 (RD 60/2025, Decision R/13/2026)."
+  PR: "Current ceiling decisions unresolved; sick-leave start settled at 19 July 2026 (RD 60/2025, Decision R/13/2026)."
 ---
 
 # Oman: tax pack
