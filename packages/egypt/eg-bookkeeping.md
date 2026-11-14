@@ -1,16 +1,17 @@
 ---
 name: eg-bookkeeping
 description: Use this skill whenever asked about Egyptian record-keeping, bookkeeping, or the mandatory ETA digital systems for self-employed people, sole proprietors (منشأة فردية), and professionals (أصحاب المهن الحرة). Trigger on phrases like "Egypt e-invoicing", "الفاتورة الإلكترونية", "ETA e-receipt", "الإيصال الإلكتروني", "bookkeeping Egypt", "records sole proprietor Egypt", "EGS item coding", "digital signature ETA", "what books must I keep in Egypt", or any request to set up, review, or explain the books and records an Egyptian self-employed taxpayer must keep. ALWAYS read this skill before touching any Egyptian record-keeping or e-invoicing/e-receipt work.
-version: 1.1
+version: 1.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+type: situation-rules
 ---
 
 # Egypt record-keeping, e-invoices and e-receipts for the self-employed (2026)

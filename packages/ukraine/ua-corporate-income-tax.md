@@ -1,14 +1,15 @@
 ---
 name: ua-corporate-income-tax
 description: "Ukrainian corporate income tax (податок на прибуток підприємств) for tax year 2026 under the Tax Code of Ukraine, section III and the martial-law transitional provisions. Covers who pays, the 18% base rate, 25% for financial institutions, 50% for banks in 2026, insurers' 3% and 0% rates, gambling and lottery rates, the accounting-profit base and the UAH 40 million small-taxpayer option, loss carry-forward with the 50% limit for large taxpayers, the advance payment on dividends, quarterly and annual returns, penalties and penalty interest, and 15% withholding on payments to non-residents. Trigger on: Ukraine corporate tax, CIT Ukraine, податок на прибуток, декларація з податку на прибуток, dividend advance payment Ukraine, bank tax 50%. Out of scope: sole proprietors and the simplified regime (ua-single-tax, ua-income-tax), VAT (ukraine-vat), payroll (ua-payroll), the country summary (ua-tax-overview)."
-version: 0.1
+version: 0.2
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Ukraine: corporate income tax (2026)

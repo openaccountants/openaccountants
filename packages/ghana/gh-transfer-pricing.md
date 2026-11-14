@@ -2,17 +2,18 @@
 name: gh-transfer-pricing
 description: >
   Use this skill for Ghana transfer pricing compliance in tax year 2026 under the Transfer Pricing Regulations, 2020 (L.I. 2412) and Income Tax Act, 2015 (Act 896) as amended. It covers who is in a controlled relationship, the 25% control test, arm's length pricing, the methods, contemporaneous documentation, Master and Local files, the transfer pricing return due four months after year end, the Country-by-Country Report due twelve months after the reporting year, adjustments and penalties. Trigger on "Ghana transfer pricing", "related party Ghana", "TP return GRA", "controlled relationship", "Master file Ghana", "CbC Ghana". Rates are in gh-corporate-income-tax and withholding is in gh-cross-border.
-version: 0.1
+version: 0.2
 jurisdiction: GH
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Ghana Transfer Pricing v0.1
+# Ghana Transfer Pricing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

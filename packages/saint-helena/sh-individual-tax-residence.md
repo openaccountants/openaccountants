@@ -2,16 +2,17 @@
 name: sh-individual-tax-residence
 description: >
   Saint Helena island individual tax residence for tax year 2026 (1 April 2026 to 31 March 2027). Covers the three section 2 tests (more than 90 days with a normal abode, more than 183 days, a contract of at least 183 days), arrival and departure, the one-tenth travel discretion, the source rule, and where the official leaflet conflicts with the statute. Use for residence, days on island or part-year allowance questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
-version: 0.3
+version: 0.4
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
-# Saint Helena island: individual tax residence v0.3
+# Saint Helena island: individual tax residence v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 

@@ -1,17 +1,18 @@
 ---
 name: cameroon-corporate-income-tax
 description: "Cameroon company income tax (impot sur les societes) for 2026: 30% and 25% rates, CAC, 2.2% instalments and minimum tax, loss carry-forward, return dates and penalties, under the CGI Edition 2026."
-version: 0.1
+version: 0.2
 jurisdiction: CM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Cameroon company income tax v0.1
+# Cameroon company income tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
