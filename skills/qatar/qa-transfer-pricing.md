@@ -13,17 +13,18 @@ description: >
   Includes bilateral APA application and rollback procedures. Produces a sourced working
   paper for professional review; Qatar Financial Centre rules and the separate
   global minimum tax computation require their own analysis.
-version: 0.2
+version: 0.3
+type: situation-rules
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
 ---
 
-# Qatar transfer pricing v0.2
+# Qatar transfer pricing v0.3
 
 ## Who this applies to
 
@@ -302,21 +303,21 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | OECD 2026 Qatar CbCR peer review, jurisdiction-confirmed current implementation and suspension, read with Qatar law/GTA circular | https://www.oecd.org/en/publications/country-by-country-reporting-compilation-of-2026-peer-review-reports_353cb719-en/full-report/qatar_b342d28e.html | 2026-10-24 |
-| GTA bilateral APA guide, pp. 2–8 | https://www.gta.gov.qa/assets/pdf/GTA_BAPAM_Annex_Guide_En_20260429.pdf | 2026-10-24 |
-| GTA rollback guidance, sections 2–6 | https://www.gta.gov.qa/assets/pdf/Guidance_on_Roll-Back_of_Bilateral_Advance_Pricing_Arrangements_20260329.pdf | 2026-10-24 |
-| GTA consolidated Income Tax Law 24/2018, including Law 11/2022; ER 39/2019, including Decision 3/2023; arts. cited above | https://www.gta.gov.qa/assets/pdf/Income%20Tax%20Law%20EN%202024.pdf | 2026-10-24 |
+| GTA bilateral APA guide, pp. 2–8 | https://www.gta.gov.qa/assets/pdf/GTA_BAPAM_Annex_Guide_En_20260429.pdf | 2026-11-14, read for pp. 2 to 8: the bilateral APA process |
+| GTA rollback guidance, sections 2–6 | https://www.gta.gov.qa/assets/pdf/Guidance_on_Roll-Back_of_Bilateral_Advance_Pricing_Arrangements_20260329.pdf | 2026-11-14, read for sections 2 to 6: roll-back conditions and steps |
+| GTA consolidated Income Tax Law 24/2018, including Law 11/2022; ER 39/2019, including Decision 3/2023; arts. cited above | https://www.gta.gov.qa/assets/pdf/Income%20Tax%20Law%20EN%202024.pdf | 2026-11-14, read for the transfer pricing articles of the law and regulations |
 | Current Arabic ITL, including amended art. 24 | https://almeezan.qa/legislations/d444f6ad-68b1-4244-af96-6bf9ee39e065 | 2026-10-24 |
 | Current Arabic ER, including arts. 52–64 | https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35 | 2026-10-24 |
 | Law 22/2024, arts. 3 and 5; additional general penalties effective 1 January 2025 | https://almeezan.qa/legislations/3643a42a-bdc0-4546-95d6-975557616a1b | 2026-10-24 |
-| GTA President's Decision 4/2020, arts. 1–12 | https://www.gta.gov.qa/assets/pdf/Resolution%20of%20President%20of%20General%20Tax%20Authority%20No.%20%284%29%20of%202020.pdf | 2026-10-24 |
+| GTA President's Decision 4/2020, arts. 1–12 | https://www.gta.gov.qa/assets/pdf/Resolution%20of%20President%20of%20General%20Tax%20Authority%20No.%20%284%29%20of%202020.pdf | 2026-11-14, read for arts. 1 to 12, including the QR 10,000,000 declaration threshold |
 | GTA Decision 10/2022, amending Decision 4/2020 arts. 8 and 11 | https://almeezan.qa/legislations/7e4d34ec-d133-43cf-b8fe-956a8169cf59 | 2026-10-24 |
 | Finance Decision 16/2019 on CbCR, arts. 1–10, current Arabic legal-register text | https://almeezan.qa/legislations/14db8fef-545b-4c66-b34e-938f3755d541 | 2026-10-24 |
-| GTA Circular 10/2020, parent/non-parent CbCR notice treatment | https://www.gta.gov.qa/assets/pdf/Circular%20of%20the%20GTA%20President%20No.%20%2810%29%20of%202020.pdf | 2026-10-24 |
+| GTA Circular 10/2020, parent/non-parent CbCR notice treatment | https://www.gta.gov.qa/assets/pdf/Circular%20of%20the%20GTA%20President%20No.%20%2810%29%20of%202020.pdf | 2026-11-14, read for the parent and non-parent CbCR notice treatment |
 | GTA Decision 7/2019, CbCR notification/report penalties | https://almeezan.qa/legislations/66ff7dfb-2ed4-4454-9861-69f2d1508104 | 2026-10-24 |
 | GTA declaration service; use Decision 4/2020 where its threshold summary differs | https://www.sharek.gov.qa/en/articles/general-tax-authority/declaration-of-transfer-pricing/679b1f296798e422f45ac255 | 2026-10-24 |
-| GTA information exchange and Tabadol routing | https://www.gta.gov.qa/en/agreements-topics/automatic-info-exchange | 2026-10-24 |
-| GTA treaty directory | https://www.gta.gov.qa/en/agreements | 2026-10-24 |
-| GTA global minimum-tax framework, separate regime | https://www.gta.gov.qa/en/global-minimum | 2026-10-24 |
+| GTA information exchange and Tabadol routing | https://www.gta.gov.qa/en/agreements-topics/automatic-info-exchange | 2026-11-14, read for the CRS and exchange routing page |
+| GTA treaty directory | https://www.gta.gov.qa/en/agreements | 2026-11-14, read for the treaty list page |
+| GTA global minimum-tax framework, separate regime | https://www.gta.gov.qa/en/global-minimum | 2026-11-14, read for the global minimum tax page, a separate regime |
 
 Not yet confirmed: none within ordinary mainland pricing, declaration,
 master/local files and current mandatory CbCR scope. A specific voluntary
