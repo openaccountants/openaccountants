@@ -45,7 +45,7 @@ Out of scope:
 | Ordinary individual brackets, exemptions and the optional tax | `pr-individual-income-tax` |
 | Regular corporate tax, including tax on export base-period income | `pr-company-income-tax` |
 | Federal bona fide residence, section 933, and which federal return is required | `pr-federal-residence-and-filing` |
-| Federal self-employment tax | `pr-self-employment-tax-2025` |
+| Federal self-employment tax | `pr-self-employment-tax` |
 | Manufacturing, tourism, agriculture, film, young entrepreneurs, qualified physicians | other chapters of Act 60, not this skill |
 | IVU on sales | `pr-ivu-sales-and-use-tax` |
 

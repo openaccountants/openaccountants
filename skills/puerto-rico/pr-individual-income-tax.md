@@ -41,7 +41,7 @@ Out of scope, and where it goes:
 | --- | --- |
 | Regular corporate income tax | `pr-company-income-tax` |
 | Federal bona fide residence, the section 933 exclusion, and which federal return is required | `pr-federal-residence-and-filing` |
-| Federal self-employment tax | `pr-self-employment-tax-2025` |
+| Federal self-employment tax | `pr-self-employment-tax` |
 | Act 60 resident-investor and export-services decrees | outside this skill |
 | The alternate basic tax computation in section 1021.02 | not computed here; see When to refuse or refer |
 
@@ -125,7 +125,7 @@ Married spouses who live together file one joint return on their combined income
 
 A nonresident alien who is not engaged in a Puerto Rico trade or business pays 29 percent, 15 percent or 33 percent, as the rates table states, on the Puerto Rico-source amounts received, instead of sections 1021.01 and 1021.02. A nonresident alien who is engaged in a Puerto Rico trade or business pays tax on the net income effectively connected with that business under the individual rules. An election can treat Puerto Rico real-property income as effectively connected. [Section 1091.01](https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/C%C3%B3digos/1-2011/1-2011.pdf).
 
-Federal residence, the section 933 exclusion and which federal form is required are in `pr-federal-residence-and-filing`. Federal self-employment tax is in `pr-self-employment-tax-2025`. Neither figure is restated here. A Puerto Rico decree does not, by itself, answer the federal tests.
+Federal residence, the section 933 exclusion and which federal form is required are in `pr-federal-residence-and-filing`. Federal self-employment tax is in `pr-self-employment-tax`. Neither figure is restated here. A Puerto Rico decree does not, by itself, answer the federal tests.
 
 ## Boundary and exception table
 
@@ -193,7 +193,7 @@ expected:
 | R-PR-OPTIONAL-STACK | Gross income for the optional tax is over USD 100,000 | Stop until the band is confirmed as a flat rate or a slice. The first band, not over USD 100,000, is safe |
 | R-PR-NRA | Nonresident alien and the file does not show whether a Puerto Rico trade or business exists | Do not choose between section 1091.01(a) and the resident table |
 | R-PR-ENTITY | The person is a corporation, partnership, estate or trust | Use `pr-company-income-tax` for a regular corporation. Estates and trusts are outside this skill |
-| R-PR-FED | The question is the federal return, section 933, or self-employment tax | Use `pr-federal-residence-and-filing` or `pr-self-employment-tax-2025` |
+| R-PR-FED | The question is the federal return, section 933, or self-employment tax | Use `pr-federal-residence-and-filing` or `pr-self-employment-tax` |
 
 ## Filing and payment
 
