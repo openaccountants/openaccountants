@@ -267,6 +267,7 @@ expected:
 | --- | --- | --- | --- |
 | AASB 15, December 2022 compilation | https://standards.aasb.gov.au/aasb-15-dec-2022 | 2026-11-14 | Read for Recognition/progress sections; paragraphs 18-45, 50-59, 98(b), 105-109 and B18-B19; fabricated WIP case method |
 | AASB current standards index | https://standards.aasb.gov.au/accounting-standards | 2026-11-14 | Read for Calendar-year 2026 table and July 2026 public-sector insurance amendment, not a new tax rate |
+| AASB 2022-9 official instrument | https://www.legislation.gov.au/F2023L00015/asmade/2023-01-04/text/original/pdf | 2026-11-14 | Read for Paragraphs 17-18: reversal of temporary public-sector insurance changes, including removal of AASB 15 Aus5.3; not a change to the cost-to-cost case |
 | HMRC, CIS deductions | https://www.gov.uk/what-you-must-do-as-a-cis-contractor/make-deductions-and-pay-subcontractors | 2026-11-14 | Read for Deduction rates, excluded invoice items, verification and deduction statements |
 | HMRC, monthly returns | https://www.gov.uk/what-you-must-do-as-a-cis-contractor/file-your-monthly-returns | 2026-11-14 | Read for Filing service, employment declaration, nil/inactive arrangements and deadline |
 | HMRC, paying deductions | https://www.gov.uk/what-you-must-do-as-a-cis-contractor/pay-deductions-to-hmrc | 2026-11-14 | Read for PAYE/CIS payment route and postal/electronic due dates |
@@ -276,7 +277,7 @@ expected:
 | HMRC reverse-charge scope | https://www.gov.uk/guidance/vat-domestic-reverse-charge-for-building-and-construction-services | 2026-11-14 | Read for Covered/excluded construction operations and employment-business distinction |
 | HMRC reverse-charge technical guide | https://www.gov.uk/guidance/vat-reverse-charge-technical-guide | 2026-11-14 | Read for End-user and intermediary notification sections, invoice/accounting and mixed-supply boundaries |
 
-Not yet confirmed: current US section 460 contract definition, indexed receipts/estimated-duration exceptions, home-construction scope, completed-contract/cash eligibility and look-back interest procedure; detailed US GAAP comparison; France/Germany/Italy/Spain construction, social housing, first-home, renovation and land VAT regimes; UK new-build/empty-property/energy-saving-material VAT rates and full relief conditions; CIS recovery routes, quarterly-payment eligibility and penalties; country worker-classification, IR35, section 530 and Davis-Bacon details; AASB 2022-9 paragraph-level amendment text beyond the index's listed scope. These topics remain held rather than inheriting unsupported old values.
+Not yet confirmed: current US section 460 contract definition, indexed receipts/estimated-duration exceptions, home-construction scope, completed-contract/cash eligibility and look-back interest procedure; detailed US GAAP comparison; France/Germany/Italy/Spain construction, social housing, first-home, renovation and land VAT regimes; UK new-build/empty-property/energy-saving-material VAT rates and full relief conditions; CIS recovery routes, quarterly-payment eligibility and penalties; country worker-classification, IR35, section 530 and Davis-Bacon details; AASB 2022-9 public-sector requirements beyond the limited paragraphs 17-18 scope read here. These topics remain held rather than inheriting unsupported old values.
 
 ## Section 9 :  Disclaimer
 

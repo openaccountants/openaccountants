@@ -70,7 +70,7 @@ The detailed lifecycle, opinion paths, refusal catalogue and country handoff bel
 | Independence (firm-level + engagement team) | Applicable ethical/independence standards, including the adopted IESBA Code and national additions; ISA 220 (Revised) |
 | Competence to perform the audit | ISA 220 (Revised), competence and resource requirements |
 | Acceptance approval by appropriate partner | Firm acceptance policies; ISA 220 (Revised) |
-| Written engagement terms agreed and recorded | ISA 210 paragraphs 9-10 |
+| Terms agreed and recorded in a letter or suitable written agreement, subject to the prescribed-law exception | ISA 210 paragraphs 9-11 |
 | Predecessor auditor communication | Initial-engagement/opening-balance work under ISA 510; predecessor access/communication under the applicable ethical and local requirements |
 | Audit fee not impaired (no contingent fees on the audit opinion) | Applicable ethical fee/contingent-fee provisions; do not assume a section number replaces the local rule |
 
@@ -110,7 +110,7 @@ Authority: ISA 320 paragraphs 10-14 and application material; ISA 450 paragraphs
 | Reperformance | Classify by the purpose of the procedure, not its name alone |
 | Analytical procedures | Substantive (when designed appropriately) |
 
-- **ISA-required specific procedures** :  Specific ISA-required procedures: - ISA 240 :  fraud: testing journal entries, related party transactions, management override - ISA 250 :  laws and regulations: inquiries, document inspection, legal letters - ISA 501 :  inventory observation, litigation legal letters, segment information - ISA 540 (Revised) :  accounting estimates (including ECL, pensions, goodwill, fair value) - ISA 550 :  related party transactions - ISA 560 :  subsequent events review through report date - ISA 570 :  going concern under the engagement's effective version (see the period and reporting distinction below) - ISA 600 :  group audit direction, supervision, review, communication and sufficient appropriate group evidence  _(ISA 240, 250, 501, 540, 550, 560, 570, 600)_
+- **Specific procedures and their conditions:** ISA 240 addresses fraud risks and management override, including journal-entry procedures. ISA 250 distinguishes direct-effect laws from other laws and requires the applicable evidence, inquiries, inspection and response to suspected non-compliance; it does not impose a legal letter on every audit. ISA 501 addresses material inventory, litigation/claims and segment information. Litigation communication with external counsel is conditional on the assessed risk or indications of material claims, with alternatives and reporting consequences where appropriate. ISA 540 addresses estimates, ISA 550 related parties, ISA 560 subsequent events, ISA 570 going concern and ISA 600 group work under their effective versions. Identify which requirements apply and obtain the specific standard before designing the work; this list is not a substitute for the complete conditions.
 
 ### Phase 5 :  Completion (ISA 700-720)
 
@@ -265,7 +265,7 @@ expected:
 Before signing the opinion, verify:
 
 1. [ ] Engagement acceptance / continuance documented and approved
-2. [ ] Engagement letter signed before fieldwork
+2. [ ] Engagement terms agreed and recorded under ISA 210, including any applicable prescribed-law exception and recurring-engagement review
 3. [ ] Independence :  firm and engagement team :  declared and threats assessed
 4. [ ] Risk assessment per ISA 315 (Revised) :  entity understanding, RMM, significant risks
 5. [ ] Materiality :  overall, performance, specific, trivial :  determined and documented
@@ -364,7 +364,7 @@ ISA 230 A21 describes final file assembly as ordinarily no more than sixty days 
 
 | Source | URL | Read on | Read for |
 | --- | --- | --- | --- |
-| IAASB 2025 handbook publication and linked Volume 1 PDF | https://www.iaasb.org/publications/2025-handbook-international-quality-management-auditing-review-other-assurance-and-related-services | 2026-11-14 | Read for the linked public Volume 1 PDF, downloaded and parsed separately; applicable ISA reporting/quality/engagement sections; ISA 210, 220, 230, 315, 320, 330, 450, 570, 580, 600, 700, 705 and ISQM 1/2; particularly opinion paths, going-concern period, representations, EQR timing and documentation |
+| IAASB 2025 handbook publication and public Volume 1 PDF | https://www.iaasb.org/publications/2025-handbook-international-quality-management-auditing-review-other-assurance-and-related-services | 2026-11-14 | Read for the official public Volume 1 PDF, downloaded and parsed separately; selected applicable reporting/quality/engagement paragraphs, not a line-by-line review of the whole handbook; ISA 210, 220, 230, 315, 320, 330, 450, 570, 580, 600, 700, 705 and ISQM 1/2; particularly opinion paths, going-concern period, representations, EQR timing and documentation |
 | IAASB 2026 handbook announcement | https://www.iaasb.org/publications/2026-handbook-international-quality-management-auditing-review-sustainability-and-other-assurance | 2026-11-14 | Read for current edition contents and separate December 2026 commencement list; not represented as a download of the full 2026 handbook |
 | ISA 570 (Revised 2024) official publication | https://www.iaasb.org/publications/isa-570-revised-2024-going-concern | 2026-11-14 | Read for the period-beginning commencement boundary and revised going-concern scope |
 | IAASB going-concern FAQ announcement | https://www.iaasb.org/news-events/2025-05/new-faq-going-concern-now-available-iaasb | 2026-11-14 | Read for the new twelve-month approval-date assessment and distinction from prior standard |
