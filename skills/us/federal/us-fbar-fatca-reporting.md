@@ -299,8 +299,8 @@ expected:
 
 | Violation | Statutory amount (31 U.S.C. 5321(a)(5)) | Inflation-adjusted maximum for penalties assessed on or after 17 January 2025 (31 CFR 1010.821) |
 | --- | --- | --- |
-| Non-willful | up to USD 10,000 | USD 16,536 per violation |
-| Willful | greater of USD 100,000 or 50% of the account balance at the time of the violation | USD 165,353, or 50% of the balance if greater |
+| Non-willful | up to USD 10,000 | USD 16,536 per violation, [31 CFR 1010.821](https://www.govinfo.gov/content/pkg/CFR-2025-title31-vol3/xml/CFR-2025-title31-vol3-sec1010-821.xml) |
+| Willful | greater of USD 100,000 or 50% of the account balance at the time of the violation | USD 165,353, or 50% of the balance if greater, [31 CFR 1010.821](https://www.govinfo.gov/content/pkg/CFR-2025-title31-vol3/xml/CFR-2025-title31-vol3-sec1010-821.xml) |
 
 - Non-willful penalties apply per FBAR (one violation per annual report). Willful penalties apply per account, so one late FBAR can produce several willful penalties (IRM 4.26.16).
 - No non-willful penalty applies if the violation was due to reasonable cause **and** the balance was properly reported (31 U.S.C. 5321(a)(5)(B)(ii)). The reasonable cause exception does not apply to willful violations (5321(a)(5)(C)(ii)).
