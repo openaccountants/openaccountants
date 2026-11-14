@@ -1036,6 +1036,13 @@
   "dir": "skills/nepal"
  },
  {
+  "code": "NU",
+  "name": "Niue",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/niue"
+ },
+ {
   "code": "NZ",
   "name": "New Zealand",
   "region": "apac",
