@@ -23,14 +23,9 @@ type: computation
 
 This skill computes Malaysian income tax for an individual who carries on a business or profession (section 4(a) of the Income Tax Act 1967, the ITA), as a sole proprietor or a partner, for **year of assessment (YA) 2026**. The basis year for an individual is the calendar year, so YA 2026 taxes income of 1 January to 31 December 2026, and the return (Form B, or Form M for a non-resident) is filed in 2027.
 
-| Field | Value |
-| --- | --- |
-| Tax | Income tax (Cukai Pendapatan) |
-| Law | Income Tax Act 1967 (Act 53), online version as at 1 January 2026 |
-| Authority | Lembaga Hasil Dalam Negeri Malaysia (LHDN, also IRBM) |
-| Portal | MyTax, https://mytax.hasil.gov.my |
-| Currency | Ringgit (RM) |
-| Year | YA 2026, basis year calendar 2026 |
+- Tax: income tax (Cukai Pendapatan), under the Income Tax Act 1967 (Act 53), online version as at 1 January 2026.
+- Authority: Lembaga Hasil Dalam Negeri Malaysia (LHDN, also IRBM); portal MyTax, https://mytax.hasil.gov.my.
+- Currency: ringgit (RM). Year: YA 2026, basis year calendar 2026.
 
 Out of scope, with the skill that owns it:
 
