@@ -1260,6 +1260,13 @@
   "dir": "skills/trinidad-and-tobago"
  },
  {
+  "code": "TV",
+  "name": "Tuvalu",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/tuvalu"
+ },
+ {
   "code": "TW",
   "name": "Taiwan",
   "region": "apac",

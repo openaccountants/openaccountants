@@ -13,21 +13,25 @@ description: >
   jurisdiction acceptance or authority to operate payroll.
 jurisdiction: TV
 category: international
-tax_year: 2022
-tax_year_notes: "Conditional reference to the 2022 Revised Edition; fictional December 2022 monthly earnings and January 2023 payment reference; actual law and later changes held"
+tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: 0.2
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
+type: computation
 ---
 
-# Tuvalu: ordinary monthly NPF contribution reference v0.2
+# Tuvalu: ordinary monthly NPF contribution reference v0.3
 
 > **General reference only.** This Tier 2 conditional draft illustrates selected ordinary contribution mechanics in dated legislation. It does not establish actual liability, a lawful deduction, current operational readiness or comprehensive jurisdiction acceptance.
+
+**Answer first.** For an ordinary (non-seafarer) employed member of the Tuvalu National Provident Fund, the employee contribution is **13%** and the employer contribution is **10%** of the member's monthly gross earnings (before income tax and other deductions, including overtime and bonuses). Each share is worked out to the nearest **$0.10**, with **$0.05 or less** disregarded, and the employer initially owes both shares to the Fund. Payment is due by the **15th** of the month after the earnings were paid; from the 16th a surcharge of **5 per cent** a month applies to the unpaid amount. Currency is the Australian dollar.
+
+**Tax year 2026.** The latest consolidation of the law is the 2022 Revised Edition. The Fund's own membership page, read on 14 November 2026, still states 13% employee and 10% employer, so the figures apply to 2026. The fictional cases below are dated December 2022 as Ryan wrote them; the same rates and rounding give the same results for a 2026 month, and for December 2026 earnings the due date is 15 January 2027.
+
+## Scope and who this is for
 
 Load workflow-base and social-contributions-workflow-base in full. Preserve all 4 universal outputs and 18 checks, all 5 social contributions outputs and 12 checks, all 13 universal and 12 social contributions mandatory country slots and every shared refusal. Missing applicable law, facts, tools, outputs or qualified review prevents delivery of an actual financial result. A worked component does not fill another mandatory slot by assumption.
 
@@ -35,28 +39,7 @@ The fictional branch is one established non-seafarer employed member, one establ
 
 Multiple employers, separate capacities, split or more frequent payments and another period require their own allocation analysis. Regulation 5 expressly requires separate assessment for concurrent different employers or different capacities with separate payments. It does not itself establish a universal per-payday rule for all ordinary employment.
 
-## Primary sources and limits
-
-| Source | Selected proposition and limit |
-|---|---|
-| [L1: Provident Fund Act, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1984/1984-0005/1984-0005_2.pdf) | Complete 29-page official PDF retained and natively extracted. Selected definitions, contribution, exception, waiver, recovery and tax provisions and endnotes were compared with originals. Sections 12-14 establish the contribution and regulation framework. This is not a complete later-law or commencement-chain determination. |
-| [L2: Provident Fund (Contributions) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) | Complete 14-page official PDF retained. All substantive physical pages 5-14 were compared with originals. Regulations 1-2 define gross earnings and monthly assessment/precision; Schedule 1 gives ordinary Group 1(i) 13% and Group 2 10%. Schedule 2 is a separate seafarer branch. |
-| [L3: Provident Fund (Exceptions) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0017/1985-0017_2.pdf) | Complete 4-page official PDF retained; substantive pages 3-4 compared with originals. Qualified exclusions and the printed low-income anomaly must be preserved. This guide does not decide an unresolved exclusion or refund. |
-| [L4: Provident Fund (Registration) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1984/1984-0008/1984-0008_2.pdf) | Complete 6-page official PDF retained; substantive pages 3-6 compared with originals. Registration timing and evidence rules are distinct from a contribution calculation. Current approved forms and channels remain unqualified. |
-| [L5: Currency Act, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1937/1937-0001/1937-0001_2.pdf) | Complete 10-page official PDF retained. Selected original pages 5-6 support Australian notes as legal tender to the stated extent, qualified coin treatment and dollar/cent denomination. The fixtures use AUD only. No currency conversion or assumption about tendering a particular coin is supplied. |
-| [A1: Official legislation collection](https://www.tuvalu-legislation.tv/cms/) and [disclaimer](https://www.tuvalu-legislation.tv/cms/?view=article&id=116:disclaimer&catid=14:general-articles) | The collection describes laws in force at 31 December 2022 and also lists later legislation. Its disclaimer does not warrant timeliness or accuracy. Access on 28 October 2026 and a point-in-time selector do not establish the operative current law. |
-| [A2: TNPF membership page](https://tnpf.tv/index.php?id=87&option=com_sppagebuilder&view=page) and [legislation page](https://tnpf.tv/corporate/tnpf-legislations) | The public membership page lists employee 13% and employer 10% but also states a 26% total. Those ordinary shares sum to 23% before statutory rounding. Its separate voluntary matching description and broad age/citizenship summary do not resolve L2's voluntary cross-reference or replace L3's qualified exclusions. The fund's historical contribution PDF still prints 5% plus 5%; it is not the consolidated 2022 Schedule. |
-
-The source period is **2022**. Retaining a complete PDF is not proof that every provision is operative or that the complete amendment, commencement, instrument and direction chain has been reconciled. Before actual application, establish that chain for the requested period and resolve any applicable source conflict.
-
-Preserve these printed source issues:
-
-- L2 regulation 2(1) refers to Act section 12(4), whereas the consolidated L1 places the rate-prescribing power at section 12(6). The older numbering is not silently repaired here.
-- L3 regulation 4(1)(a) literally prints **$2,000**, alongside conditions referring to monthly earnings below **$20.00**. The original confirms the wording. This is not extraction loss, a general $2,000 exemption or permission to replace it with $20.00. The affected deeming and refund branch remains held.
-- L2 regulation 7(3) permits a voluntary employer addition up to **3%** above the compulsory rate 'stated in (1)', but paragraph (1) concerns Group 1 deduction. Its basis and application remain held. Do not make an employer 13% contribution or total 26% compulsory.
-- L1 section 17(3) retains a regulation-making provision whilst endnote 21 says it was repealed by Act 9 of 2009. Unqualified reliance on that provision remains held. L1 also literally prints 'LN 10/1892' in its endnotes. L2's general 1999 endnote and selected provision footnotes differ between LN 7/1999 and LN 17/1999. These references alone do not establish operative commencement.
-
-## Coverage and earnings intake
+### Coverage and earnings intake
 
 Establish the L1 section 3 definitions and section 12 branch, the linked employer, the complete applicable instruments and each L3 exception. A job title, citizenship, retirement age or existing registration alone is insufficient. The employed-person definition extends beyond a formally labelled contract of service. Do not infer that a service provider, director or office holder is excluded solely from the label.
 
@@ -72,7 +55,33 @@ For the fictional ordinary branch, record:
 4. Ordinary Schedule 1 coverage, established exception findings, normal-earnings and short-employment treatment, no direction or waiver and no additional contribution. An unknown condition is Needs Input, not zero.
 5. The two scheduled shares, the employer's initial Fund liability, the evidence of any lawful employee recovery and the separate actual deduction. Missing recovery evidence does not erase the Fund liability.
 
-## Rates, precision and calculation
+## Ask the client first
+
+1. **Which month, and when the earnings were actually paid** (the due date runs from payment).
+2. **The member's branch**: ordinary employee, seafarer, self-employed or voluntary member, and any possible exception (school age, domestic service, aid or volunteer scheme, foreign domicile, age 65, or age 50 with 3 previous benefit entitlements).
+3. **The complete monthly gross earnings**, every component (salary, overtime, bonus, allowances, non-cash items), before income tax and any other deduction.
+4. **How many employers, capacities and separate payments** fall in the month (each may be its own assessment unit).
+5. **Whether the 13% employee share was actually deducted** no later than the payment of the earnings.
+6. **Whether the contribution was paid by the 15th** of the following month, and any earlier surcharge or arrears.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount or rule | Source |
+|---|---|---|
+| Employee contribution, ordinary Group 1(i) | 13 per cent of the member's gross earnings | [L2, Schedule 1](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf); [TNPF membership page](https://tnpf.tv/index.php?id=87&option=com_sppagebuilder&view=page) |
+| Employer contribution, Group 2 | 10 per cent of the gross earnings for each member | same |
+| Rounding of each contribution | To the nearest $0.10; any amount of $0.05 or less is disregarded | [L2, regulation 2](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| Short employment period excluded | Total earnings for the period less than $5.00 | [L2, regulation 12](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| Due date | Not later than the 15th day of the month following the month in which the earnings were paid | [L2, regulation 8](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| Surcharge on late payment | 5 per cent of the amount due but unpaid, for each month or part month | [L2, regulation 8](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| Records kept | Not less than 6 years from the date of the last entry | [L2, regulation 9](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| Refund of contributions paid in error | Residual in excess of $1.00 refunded | [L2, regulation 13](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) |
+| New employer registration | Within 7 days of becoming an employer | [L4, regulations 3-8](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1984/1984-0008/1984-0008_2.pdf) |
+| Low normal monthly earnings exception | Normal monthly earnings less than $20.00 (the deeming branch prints $2,000; held) | [L3, regulations 1-4](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0017/1985-0017_2.pdf) |
+
+### Rates, precision and calculation
 
 L2 regulation 2 applies the Schedule 1 rates to each member's monthly gross earnings. Its calculation is to the nearest **$0.10**, disregarding a residual **$0.05 or less**. Schedule 1 identifies two contributions: ordinary Group 1(i), **13%**, and Group 2, **10%**. **Selected source-bound interpretation:** calculate and round each share separately, then add the rounded shares. Regulation 2 refers to the plural rates and Schedule 1 separately defines both contributions; it does not expressly say to round each group before adding. This sequence is the interpretation used in the synthetic examples and requires qualified confirmation for actual work. Do not round a pooled 23% figure instead or round a combined total for multiple members or months. Preserve the exact percentage product until the ten-cent step; do not first round it to cents.
 
@@ -92,7 +101,55 @@ The divisor converts a percentage of whole-cent earnings into ten-cent units. Ex
 
 Under Schedule 1, the employer initially owes both ordinary contributions. R is not proof of an actual lawful deduction. Regulation 7(1) requires ordinary recovery no later than actual payment of the earnings. Later recovery under regulation 7(2) requires a good-faith error, notification before recovery and the stated limit tied to what is properly deductible from the same future payment. This reference does not calculate a catch-up deduction. Unknown or missed recovery leaves the actual deduction and employer cost held. E equals the employer's funding balance only where the entire R has actually been lawfully recovered; otherwise a different residual requires established evidence. Neither a missed deduction nor nonpayment creates an automatic contribution credit.
 
-## Fictional December 2022 examples
+## Worked cases
+
+Two of Ryan's cases, as CI recomputes them. Half-down rounding to ten cents is written as `ceil(x - 0.5)` on the amount in tenths of a dollar, so an exact residual of $0.05 rounds down.
+
+**Case 1 (N4), one ordinary member, G = 1,000.25.** The employee share is 130.0325 and the employer share 100.0250. Each rounds separately to 130.00 and 100.00, so the employer owes the Fund 230.00. Rounding the pooled 23% product (230.0575) would wrongly give 230.10.
+
+```oa-check
+name: Tuvalu NPF, ordinary member, monthly gross 1000.25 (2026 rates)
+inputs:
+  gross: 1000.25
+steps:
+  - employee: ceil(gross * 0.13 * 10 - 0.5) / 10
+  - employer: ceil(gross * 0.10 * 10 - 0.5) / 10
+  - total: employee + employer
+  - pooled_wrong: ceil(gross * 0.23 * 10 - 0.5) / 10
+expected:
+  employee: 130.00
+  employer: 100.00
+  total: 230.00
+  pooled_wrong: 230.10
+```
+
+**Case 2 (A3), a decision: one gross or three payroll lines?** Salary 900.00, overtime 50.39 and bonus 49.86 are paid together for one month. They form one gross of 1,000.25, so the liability is 230.00 as in Case 1. Rounding each payroll line separately would give 130.10 and 100.00, total 230.10, which is wrong: a payroll line is not a separate assessment unit.
+
+```oa-check
+name: Tuvalu NPF, three earnings components in one monthly payment (2026 rates)
+inputs:
+  salary: 900.00
+  overtime: 50.39
+  bonus: 49.86
+steps:
+  - gross: salary + overtime + bonus
+  - employee: ceil(gross * 0.13 * 10 - 0.5) / 10
+  - employer: ceil(gross * 0.10 * 10 - 0.5) / 10
+  - total: employee + employer
+  - lines_employee_wrong: ceil(salary * 1.3 - 0.5) / 10 + ceil(overtime * 1.3 - 0.5) / 10 + ceil(bonus * 1.3 - 0.5) / 10
+  - lines_employer_wrong: ceil(salary - 0.5) / 10 + ceil(overtime - 0.5) / 10 + ceil(bonus - 0.5) / 10
+  - lines_total_wrong: lines_employee_wrong + lines_employer_wrong
+expected:
+  gross: 1000.25
+  employee: 130.00
+  employer: 100.00
+  total: 230.00
+  lines_employee_wrong: 130.10
+  lines_employer_wrong: 100.00
+  lines_total_wrong: 230.10
+```
+
+### Ryan's fictional December 2022 examples
 
 Every numeric row stipulates the ordinary branch and established premises above. Amounts are AUD. These artificial values test the contribution rule, not compliance with wage or employment law. Normal monthly earnings and all exception findings are separately established; the listed G alone does not decide them. Each R and E is the independently rounded share, and T is initially payable by the employer. All actual delivery remains held.
 
@@ -121,7 +178,7 @@ Aggregation examples, with law and coverage independently stipulated for each un
 - **A2, separate months:** One member has G = 1000.25 in each of 2 separately established months under the same rule. The monthly liabilities sum to 460.00. Do not round the combined 2000.50 base or infer a carry of discarded fractions. The source-period stipulation for both months is part of this synthetic example.
 - **A3, one complete payment with several earnings components:** Ordinary salary 900.00, overtime 50.39 and bonus 49.86 form one monthly G = 1000.25. R = 130.00, E = 100.00 and T = 230.00. Rounding the 3 components separately would instead give R = 130.10, E = 100.00 and T = 230.10. A payroll line is not itself a separate assessment unit.
 
-## Held cases and exact stops
+## When to refuse or refer
 
 Return **Needs Input**, with no dependent financial result, for each unresolved case:
 
@@ -149,7 +206,7 @@ Return **Needs Input**, with no dependent financial result, for each unresolved 
 
 No country-specific factual or legal default is authorised. Missing law, coverage, normal earnings, complete gross, assessment unit or recovery evidence produces the corresponding hold. Fictional established facts are not defaults for actual work. All actual amounts need qualified review; there is no de minimis amount that releases a source, scope or delivery hold.
 
-## Procedure, outputs and verification
+## Filing and payment
 
 The following are dated source requirements, not a qualified current operating procedure:
 
@@ -172,7 +229,15 @@ All 13 universal country slots remain mandatory. This reference supplies bounded
 
 Other social programmes, optional regimes and payroll, tax, formation, reporting, property, cross-border and compliance topics are not completed by this document.
 
-## Revision and disclaimer
+## Completion checklist
+
+- Branch, period, payment date and exceptions recorded.
+- Complete gross earnings for the month, before any deduction.
+- Each share computed on the exact product and rounded to ten cents separately.
+- Employer liability T = R + E; actual lawful deduction recorded separately.
+- Paid by the 15th of the following month, or surcharge position flagged.
+
+### Revision and disclaimer
 
 28 October 2026, v0.2: corrected the L4 source title to Provident Fund (Registration) Regulations; contribution mechanics and examples unchanged.
 
@@ -180,22 +245,37 @@ Other social programmes, optional regimes and payroll, tax, formation, reporting
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish the applicable law and facts and complete and sign off all required outputs before filing, paying, deducting or relying on a result.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Source | Read for | URL | Read on |
+|---|---|---|---|
+| L1: Provident Fund Act, 2022 Revised Edition | Read for ss 3, 12, 16 (persons covered, contributions, waiver of liability); Ryan also read ss 17 and 32 and the endnotes | https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1984/1984-0005/1984-0005_2.pdf | 2026-11-14 |
+| L2: Provident Fund (Contributions) Regulations, 2022 Revised Edition | Read for regs 1-2 (gross earnings, ten-cent rounding), reg 8 (15th day, 5 per cent surcharge), regs 9, 12, 13 and Schedule 1 (13 and 10 per cent) | https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf | 2026-11-14 |
+| L3: Provident Fund (Exceptions) Regulations, 2022 Revised Edition | Read for regs 1-4 (exceptions; $20.00 normal earnings; age 65 and age 50 branches; the printed $2,000) | https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0017/1985-0017_2.pdf | 2026-11-14 |
+| L4: Provident Fund (Registration) Regulations, 2022 Revised Edition | Read for regs 3-8 (7 days, 14 days, 4 days) | https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1984/1984-0008/1984-0008_2.pdf | 2026-11-14 |
+| L5: Currency Act, 2022 Revised Edition | Read for s 3 (Australian notes as legal tender) | https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1937/1937-0001/1937-0001_2.pdf | 2026-11-14 |
+| A1: Official legislation collection | Read for the collection's currency (laws in force at 31 December 2022) and its disclaimer | https://www.tuvalu-legislation.tv/cms/ | 2026-11-14 |
+| A2: TNPF membership page | Read for the current contribution rates (13% employee, 10% employer; voluntary matching to 26%) | https://tnpf.tv/index.php?id=87&option=com_sppagebuilder&view=page | 2026-11-14 |
 
-## Talk to a verified accountant
+### Ryan's notes on each source (kept)
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+| Source | Selected proposition and limit | Read on |
+|---|---|---|
+| [L1: Provident Fund Act, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1984/1984-0005/1984-0005_2.pdf) | Complete 29-page official PDF retained and natively extracted. Selected definitions, contribution, exception, waiver, recovery and tax provisions and endnotes were compared with originals. Sections 12-14 establish the contribution and regulation framework. This is not a complete later-law or commencement-chain determination. | 2026-10-28 (read by Ryan) |
+| [L2: Provident Fund (Contributions) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0016/1985-0016_2.pdf) | Complete 14-page official PDF retained. All substantive physical pages 5-14 were compared with originals. Regulations 1-2 define gross earnings and monthly assessment/precision; Schedule 1 gives ordinary Group 1(i) 13% and Group 2 10%. Schedule 2 is a separate seafarer branch. | 2026-10-28 (read by Ryan) |
+| [L3: Provident Fund (Exceptions) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1985/1985-0017/1985-0017_2.pdf) | Complete 4-page official PDF retained; substantive pages 3-4 compared with originals. Qualified exclusions and the printed low-income anomaly must be preserved. This guide does not decide an unresolved exclusion or refund. | 2026-10-28 (read by Ryan) |
+| [L4: Provident Fund (Registration) Regulations, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1984/1984-0008/1984-0008_2.pdf) | Complete 6-page official PDF retained; substantive pages 3-6 compared with originals. Registration timing and evidence rules are distinct from a contribution calculation. Current approved forms and channels remain unqualified. | 2026-10-28 (read by Ryan) |
+| [L5: Currency Act, 2022 Revised Edition](https://www.tuvalu-legislation.tv/cms/images/LEGISLATION/PRINCIPAL/1937/1937-0001/1937-0001_2.pdf) | Complete 10-page official PDF retained. Selected original pages 5-6 support Australian notes as legal tender to the stated extent, qualified coin treatment and dollar/cent denomination. The fixtures use AUD only. No currency conversion or assumption about tendering a particular coin is supplied. | 2026-10-28 (read by Ryan) |
+| [A1: Official legislation collection](https://www.tuvalu-legislation.tv/cms/) and [disclaimer](https://www.tuvalu-legislation.tv/cms/?view=article&id=116:disclaimer&catid=14:general-articles) | The collection describes laws in force at 31 December 2022 and also lists later legislation. Its disclaimer does not warrant timeliness or accuracy. Access on 28 October 2026 and a point-in-time selector do not establish the operative current law. | 2026-10-28 (read by Ryan) |
+| [A2: TNPF membership page](https://tnpf.tv/index.php?id=87&option=com_sppagebuilder&view=page) and [legislation page](https://tnpf.tv/corporate/tnpf-legislations) | The public membership page lists employee 13% and employer 10% but also states a 26% total. Those ordinary shares sum to 23% before statutory rounding. Its separate voluntary matching description and broad age/citizenship summary do not resolve L2's voluntary cross-reference or replace L3's qualified exclusions. The fund's historical contribution PDF still prints 5% plus 5%; it is not the consolidated 2022 Schedule. | 2026-10-28 (read by Ryan) |
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+The source period is **2022**. Retaining a complete PDF is not proof that every provision is operative or that the complete amendment, commencement, instrument and direction chain has been reconciled. Before actual application, establish that chain for the requested period and resolve any applicable source conflict.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Preserve these printed source issues:
+
+- L2 regulation 2(1) refers to Act section 12(4), whereas the consolidated L1 places the rate-prescribing power at section 12(6). The older numbering is not silently repaired here.
+- L3 regulation 4(1)(a) literally prints **$2,000**, alongside conditions referring to monthly earnings below **$20.00**. The original confirms the wording. This is not extraction loss, a general $2,000 exemption or permission to replace it with $20.00. The affected deeming and refund branch remains held.
+- L2 regulation 7(3) permits a voluntary employer addition up to **3%** above the compulsory rate 'stated in (1)', but paragraph (1) concerns Group 1 deduction. Its basis and application remain held. Do not make an employer 13% contribution or total 26% compulsory.
+- L1 section 17(3) retains a regulation-making provision whilst endnote 21 says it was repealed by Act 9 of 2009. Unqualified reliance on that provision remains held. L1 also literally prints 'LN 10/1892' in its endnotes. L2's general 1999 endnote and selected provision footnotes differ between LN 7/1999 and LN 17/1999. These references alone do not establish operative commencement.
+
+Not yet confirmed: whether any amendment made after 31 December 2022 changes the Provident Fund Act or its Contributions, Exceptions or Registration Regulations (no 2026 consolidation is published; the figures above are the 2022 Revised Edition, confirmed as current only by the TNPF page read on 2026-11-14); the current approved employer return and payment forms and channel; the basis of the voluntary employer matching (L2 reg 7(3)) and the printed $2,000 in L3 reg 4(1)(a); whether rounding applies to each share before adding (the interpretation used here); the TNPF historical PDF printing 5% plus 5%.
