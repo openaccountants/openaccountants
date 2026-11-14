@@ -1,17 +1,18 @@
 ---
 name: sz-transfer-pricing
 description: "Eswatini transfer pricing for the year of assessment 1 July 2025 to 30 June 2026 (tax year 2026) under sections 65quat, 65quin and 65sex of the Income Tax Order 1975, added by the Income Tax (Amendment) Act 2023 (Act 20 of 2023) and in force from 1 July 2024. Covers who is an associate person (relatives, partners, trusts, 50% control, acting on directions), controlled transactions, permanent establishments and head office charges, the arm's length rule, the five approved methods and the most-appropriate-method test, the tested party, OECD Guidelines as interpretation aid, the commodity quoted-price rule, beneficial tax regime counterparties, the intangibles cap, documentation and record keeping, additional tax, interest and offences. Trigger on: Eswatini transfer pricing, Swaziland transfer pricing, related party Eswatini, associate person, arm's length ERS, TNMM Eswatini, management fee to parent Eswatini, section 65quat. Out of scope: the interest-deduction cap (sz-corporate-income-tax), treaty rates, mutual agreement procedures."
-version: 0.1
+version: 0.2
 jurisdiction: SZ
 category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "Year of assessment 1 July 2025 to 30 June 2026"
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Eswatini transfer pricing: associate persons, the arm's length rule, methods and documentation (year to 30 June 2026) v0.1
+# Eswatini transfer pricing: associate persons, the arm's length rule, methods and documentation (year to 30 June 2026) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

@@ -5,13 +5,14 @@ description: >
 jurisdiction: XK
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.5
+last_updated: 2026-11-14
+version: 0.6
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Kosovo transfer pricing v0.5
+# Kosovo transfer pricing v0.6
 
 Tax year **2026**, checked against the law on **30 October 2026** (tier 2).
 No licensed accountant has signed off this revision. Corporate Law 06/L-105

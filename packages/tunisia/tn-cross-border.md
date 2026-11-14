@@ -1,17 +1,18 @@
 ---
 name: tn-cross-border
 description: "Tunisia cross-border tax for tax year 2026: withholding on non-residents, dividends, interest, property and share gains, privileged-tax jurisdictions and gross-up. Use for questions on paying a foreign supplier from Tunisia, retenue a la source for non-residents, or Tunisian-source income."
-version: 0.1
+version: 0.2
 jurisdiction: TN
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Tunisia Cross-Border Withholding v0.1
+# Tunisia Cross-Border Withholding v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

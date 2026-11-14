@@ -1,401 +1,293 @@
 ---
 name: us-crypto-tax
-description: ALWAYS USE THIS SKILL when a user asks about cryptocurrency taxation, digital asset reporting, or mentions any of these trigger phrases — crypto, bitcoin, ethereum, Form 8949, digital assets, staking, mining, NFT, DeFi, airdrop, token swap, liquidity pool, yield farming, cost basis crypto, wash sale crypto, Form 1099-DA, Coinbase taxes, Kraken taxes, crypto capital gains, virtual currency, blockchain income. Covers IRS treatment of cryptocurrency and digital assets as property under Notice 2014-21, Form 8949 and Schedule D reporting, cost basis methods, staking and mining income, airdrops, hard forks, DeFi transactions, NFT collectibles treatment, wash sale inapplicability, Form 1099-DA requirements, FBAR/Form 8938 for foreign exchanges, and transaction pattern recognition from major exchanges. US federal only; state-specific crypto rules require separate state skills.
-version: 1.0
+description: Work out a US individual's 2026 federal tax on cryptocurrency and other digital assets, and report it. Covers property treatment under Notice 2014-21, the taxable events (sales, crypto-to-crypto swaps, spending), income on receipt at fair market value for mining, staking (Rev. Rul. 2023-14), airdrops and hard forks (Rev. Rul. 2019-24), DeFi yield and rewards, basis by wallet under Rev. Proc. 2024-28 with specific identification or FIFO, Form 8949 digital asset boxes G to L, 2026 Form 1099-DA broker reporting (gross proceeds for all sales, basis for covered assets acquired after 2025 in a custodial account, the USD 10,000 stablecoin and USD 600 NFT and payment de minimis rules, no staking rewards on the form), the repealed DeFi broker rule, Form 8300 relief, FBAR and Form 8938, gifts, donations with a qualified appraisal above USD 5,000, theft and lost keys, and records. Trigger on "crypto tax", "bitcoin", "ethereum", "staking", "mining", "airdrop", "DeFi", "Form 1099-DA", "Form 8949 digital asset", "Coinbase taxes", "crypto cost basis", "crypto wash sale". Federal only.
+version: "2.0"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
-category: federal
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: computation
 ---
 
-# US Crypto Tax
+# US tax on cryptocurrency and digital assets: income, gains, basis and Form 1099-DA, tax year 2026
 
-## Rates and thresholds
+> **Source-cited draft.** Built from Notice 2014-21, Rev. Rul. 2019-24, Rev. Rul. 2023-14, Rev. Proc. 2024-28, Announcement 2024-4, CCA 202302012, the 2026 Instructions for Form 1099-DA, the 2025 Form 1040 and Instructions for Form 8949, Public Law 119-21 (sections 70109 and 70433), 26 U.S.C. 1091 and 1411, FinCEN Notice 2020-2 and the IRS digital asset pages, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> Reviewed against the cited tax authorities by **a licensed accountant** on 2026-06-03.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+**Answer first.** For US tax, crypto is **property**, not currency. Every sale for dollars, every swap of one token for another, and every purchase paid in crypto is a taxable disposition: gain or loss is proceeds minus basis, short-term if held one year or less, long-term if more, at the rates in `us-capital-gains`. Crypto **received** (mining, staking, airdrops, pay, rewards) is ordinary income at its fair market value when the person gains dominion and control, and that value becomes its basis. Basis is tracked **wallet by wallet** (since 1 January 2025), by specific identification or, by default, first in first out; averaging is not allowed. For 2026, US brokers report **gross proceeds of every sale** on Form 1099-DA and, for the first time, **basis** for assets bought after 2025 and kept in the same custodial account. The wash sale rule does not apply to crypto that is not a security.
 
-### Crypto Tax (US)
+## Scope and who this is for
 
-- **Treatment** — Treated as property  _(IRS Notice 2014-21; IRS digital-asset FAQs.)_
-- **Default** — FIFO is the default; specific identification permitted with adequate records  _(Treas. Reg. 1.1012-1(j); Rev. Proc. 2024-28.)_
-- **Avg cost** — Averaging is not allowed for digital assets (only FIFO or specific ID)  _(Rev. Proc. 2024-28; Treas. Reg. 1.1012-1(c)/(j).)_
-- **NIIT** — 3.8% NIIT applies to crypto investment gains above MAGI thresholds  _(IRC 1411.)_
-- **FBAR** — The $10,000 aggregate threshold is correct for foreign financial accounts generally, but a foreign account holding ONLY virtual currency is not currently FBAR-reportable (FinCEN Notice 2020-2 proposed to add virtual currency but the rule is not finalized). As applied to crypto, this is premature/misleading.  _(31 CFR 1010.350; FinCEN Notice 2020-2.)_
+In scope: US citizens and resident aliens filing a 2026 Form 1040 who buy, sell, swap, spend, mine, stake, lend or receive cryptocurrency and other fungible digital assets (including stablecoins), and the reporting that follows.
 
-### IRS Notice 2014-21: Crypto as property
+Out of scope, and where it goes:
 
-- **Property treatment** — Virtual currency is treated as property for federal tax purposes. General tax principles applicable to property transactions apply to transactions using virtual currency. Virtual currency is not treated as currency for purposes of determining foreign currency gain or loss under §988.  _(IRS Notice 2014-21)_
-- **Key consequences of property treatment** — Every disposition is a taxable event requiring gain/loss calculation; Holding period determines short-term vs long-term treatment; Basis must be tracked for every lot acquired; Like-kind exchange under §1031 does NOT apply to crypto (confirmed by TCJA 2017 limiting §1031 to real property); Constructive receipt rules apply when crypto is credited to wallet  _(IRS Notice 2014-21; TCJA 2017)_
+| Topic | Skill |
+| --- | --- |
+| Capital gain rates, the 3.8% net investment income tax, the USD 3,000 loss limit, Form 8949 and Schedule D mechanics in general | `us-capital-gains` |
+| NFTs: collectible status, creators and royalties | `us-nft-tax` |
+| Mining or validating as a business: Schedule C and self-employment tax | `us-schedule-c-and-se-computation` |
+| Mining equipment: section 179 and bonus depreciation | `us-section-179-and-bonus-depreciation` |
+| FBAR and Form 8938 thresholds and filing | `us-fbar-and-fatca-8938` |
+| Gift tax returns and the lifetime exemption | `us-estate-gift-706-709` |
+| Charitable deduction limits | `us-charitable-giving-strategies` |
+| Paying tax during the year | `us-quarterly-estimated-tax` |
+| Nonresident aliens | `us-nonresident-cgt` |
+| Businesses that accept crypto, brokers' own filing duties, state tax | Refer (see When to refuse or refer) |
 
-### IRS digital asset question on Form 1040
+## Ask the client first
 
-- **Digital asset question text** — For tax year 2025, every taxpayer must answer the digital asset question on Form 1040 page 1: "At any time during 2025, did you: (a) receive (as a reward, award, or payment for property or services); or (b) sell, exchange, or otherwise dispose of a digital asset (or a financial interest in a digital asset)?"  _(Form 1040 (2025))_
-- **Answer Yes if taxpayer** — Received crypto as payment for services (including mining/staking rewards); Sold crypto for fiat; Exchanged one crypto for another; Received an airdrop; Received crypto from a hard fork (receipt alone is enough, even if not disposed of); Used crypto to pay for goods or services  _([Form 1040 instructions](https://www.irs.gov/instructions/i1040gi))_
-- **Answer No only if taxpayer** — Held crypto without any transactions; Transferred between own wallets (same owner); Purchased crypto with fiat and took no other action  _(Form 1040 instructions)_
+1. **Every platform and wallet** used in 2026 and earlier: exchanges (US and foreign), hosted wallets, self-custody wallets (hardware, browser), DeFi protocols, and the chains used.
+2. **Full transaction histories** (CSV or API exports) from each exchange, and wallet addresses for on-chain activity; every Form 1099-DA, 1099-MISC, 1099-NEC and 1099-K received.
+3. **What happened:** purchases, sales, swaps, spending, transfers between own wallets, staking, mining, lending, liquidity pools, airdrops, forks, bridges, wrapping, gifts given or received, donations, theft or lost access.
+4. **Basis records:** how basis was assigned to each wallet on 1 January 2025 (Rev. Proc. 2024-28), and whether the client uses specific identification (with standing orders at a broker) or FIFO.
+5. **Business or not:** does the client mine or run validators with regularity and a profit motive, or receive crypto for services as a contractor or employee?
+6. **Other income and filing status**, to place gains in the rate bands and test the net investment income tax.
+7. **Foreign platforms:** balances by month, and whether each account held only crypto or also fiat or securities.
 
-### Taxable events requiring Form 8949 reporting
+## The method, step by step
 
-- **Taxable events** — 1. Sale of crypto for fiat currency (USD, EUR, etc.); 2. Exchange of one crypto for another (BTC → ETH is a taxable disposition of BTC); 3. Using crypto to purchase goods or services; 4. Receiving crypto as payment (ordinary income at FMV, then basis established); 5. Liquidating a DeFi position; 6. Selling an NFT  _(Form 8949 instructions)_
+### Rates, bands and thresholds
 
-### Form 8949 columns
-
-- **Columns** — Column (a): Description of property — e.g., "2.5 BTC" or "1,000 ETH"; Column (b): Date acquired; Column (c): Date sold or disposed; Column (d): Proceeds (FMV in USD at time of disposition); Column (e): Cost or other basis; Column (f): Adjustment code (if any); Column (g): Adjustment amount; Column (h): Gain or loss (d minus e, plus or minus g)  _(Form 8949 instructions)_
-
-### Box checking on Form 8949
-
-- **Box definitions** — For 2025 digital assets, use the dedicated digital-asset boxes: Box G (short-term, 1099-DA with basis reported), Box H (short-term, 1099-DA, basis not reported), Box I (short-term, no 1099-DA received); Boxes J, K, L are the long-term counterparts. Do not use Box C for digital assets.  _(2025 Instructions for Form 8949)_
-
-### Schedule D summary
-
-- **Schedule D structure** — Part I: Short-term capital gains and losses (holding period ≤ 1 year); Part II: Long-term capital gains and losses (holding period > 1 year); Schedule D totals flow to Form 1040 Line 7a (or Schedule D Tax Worksheet if needed)  _([Schedule D instructions](https://www.irs.gov/instructions/i1040sd))_
-
-### Capital gains rates (2025)
-
-**Short-term capital gains rates (2025, ordinary income brackets)**  _(IRC (2025 brackets))_
-
-| Rate | Single | MFJ |
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| 10% | $0–$11,925 | $0–$23,850 |
-| 12% | $11,926–$48,475 | $23,851–$96,950 |
-| 22% | $48,476–$103,350 | $96,951–$206,700 |
-| 24% | $103,351–$197,300 | $206,701–$394,600 |
-| 32% | $197,301–$250,525 | $394,601–$501,050 |
-| 35% | $250,526–$626,350 | $501,051–$751,600 |
-| 37% | Over $626,350 | Over $751,600 |
+| Net investment income tax on investment gains and income | 3.8% | [26 U.S.C. 1411](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, single and head of household (modified AGI) | USD 200,000 | [26 U.S.C. 1411(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| NIIT threshold, married filing jointly | USD 250,000 | [26 U.S.C. 1411(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| Form 1099-DA: basis reported for assets acquired after this year in a custodial account | 2025 | [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf) |
+| Form 1099-DA: qualifying stablecoin sales not reported under the optional method if a customer's yearly gross proceeds do not exceed | USD 10,000 | [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf) |
+| Form 1099-DA: specified NFT sales not reported under the optional method if yearly gross proceeds do not exceed | USD 600 | [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf) |
+| Form 1099-DA: payment processor sales not reported if a customer's yearly total is not more than | USD 600 | [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf) |
+| Form 1099-MISC threshold for payments (for example staking or reward payments from a platform) after 2025 | USD 2,000 | [Public Law 119-21, section 70433](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Gift tax annual exclusion, per donee | USD 19,000 | [Rev. Proc. 2025-32, section 4.42](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Donation of crypto: qualified appraisal required above | USD 5,000 | [CCA 202302012](https://www.irs.gov/pub/irs-wd/202302012.pdf) |
+| Form 8300 for a business receiving more than USD 10,000: digital assets counted | Not yet (relief) | [Announcement 2024-4](https://www.irs.gov/pub/irs-drop/a-24-04.pdf) |
 
-**Long-term capital gains rates (2025)**  _(IRC (2025 brackets))_
+The capital gain rate bands, the 28% collectibles rate and the USD 3,000 loss limit are owned by `us-capital-gains`; the self-employment tax figures by `us-schedule-c-and-se-computation`.
 
-| Rate | Single | MFJ |
+### Step 1: crypto is property
+
+1. Convertible virtual currency is treated as **property**; general property tax principles apply, and it does not give foreign currency gain or loss. Source: [Notice 2014-21](https://www.irs.gov/pub/irs-drop/n-14-21.pdf). The Form 8949 instructions use the term **digital asset**: any digital representation of value recorded on a cryptographically secured distributed ledger. Source: [Instructions for Form 8949](https://www.irs.gov/pub/irs-pdf/i8949.pdf).
+2. Like-kind exchange treatment under section 1031 is limited to real property, so swaps of tokens are never tax-deferred.
+3. **Form 1040 question:** every return asks whether, during the year, the person (a) received a digital asset as a reward, award or payment for property or services, or (b) sold, exchanged or otherwise disposed of a digital asset or a financial interest in one. It must be answered. "No" is right if the only activity was holding, transferring between the person's own wallets or accounts, or buying with real currency. Source: [Form 1040 (2025)](https://www.irs.gov/pub/irs-pdf/f1040.pdf); [IRS, Determine how to answer the digital asset question](https://www.irs.gov/filing/determine-how-to-answer-the-digital-asset-question).
+
+### Step 2: income on receipt (ordinary income at fair market value)
+
+4. **The rule:** crypto received without paying for it is gross income equal to its US dollar fair market value when the person gains **dominion and control** (the ability to sell, exchange or otherwise dispose of it). Fair market value uses the exchange rate set by the market, converted in a reasonable manner consistently applied. Basis in the units equals the amount included, and the holding period starts the day after receipt. Source: [Notice 2014-21](https://www.irs.gov/pub/irs-drop/n-14-21.pdf).
+
+| Event | Treatment | Authority |
 | --- | --- | --- |
-| 0% | $0–$48,350 | $0–$96,700 |
-| 15% | $48,351–$533,400 | $96,701–$600,050 |
-| 20% | Over $533,400 | Over $600,050 |
+| Mining rewards | Income at fair market value on receipt; if mining is a trade or business (not as an employee), net earnings are self-employment income | Notice 2014-21, Q&A 8 and 9 |
+| Staking rewards (directly or through an exchange) | Income at fair market value when the person gains dominion and control, including the ability to sell; locked rewards count when they become transferable | [Rev. Rul. 2023-14](https://www.irs.gov/pub/irs-drop/rr-23-14.pdf) |
+| Hard fork with no new units received | No income | [Rev. Rul. 2019-24](https://www.irs.gov/pub/irs-drop/rr-19-24.pdf), Situation 1 |
+| Airdrop of new units after a fork, or any other airdrop | Ordinary income at fair market value when recorded on the ledger and the person can dispose of it; deferred if, for example, the exchange does not yet support the new coin | [Rev. Rul. 2019-24](https://www.irs.gov/pub/irs-drop/rr-19-24.pdf), Situation 2 |
+| Unsolicited airdrop | Still income once the person has dominion and control and the token has a value | Rev. Rul. 2019-24 |
+| Pay for work, as an employee | Wages at fair market value, on Form W-2 with withholding | Notice 2014-21 |
+| Pay for work, as a contractor | Schedule C income at fair market value, subject to self-employment tax | Notice 2014-21 |
+| Lending or DeFi yield, earn-account interest | Ordinary income when received (no crypto-specific ruling; general section 61 principle); report as other income, not Schedule B interest | General principles |
+| Liquidity-mining and governance reward tokens | Ordinary income when received, by analogy to staking | General principles |
+| Referral, learn-and-earn and play-to-earn rewards | Ordinary income when received; a reward tied to a purchase may instead reduce basis; play-to-earn at business scale is self-employment income | General principles |
 
-- **Net Investment Income Tax (NIIT)** — Additional 3.8% on net investment income for modified adjusted gross income above $200,000 (single or head of household) / $250,000 (MFJ) / $125,000 (married filing separately) percent  _([§1411](https://www.irs.gov/individuals/net-investment-income-tax))_
-
-### Specific identification (recommended)
-
-- **Requirements** — The taxpayer identifies exactly which lots are being sold. Requires contemporaneous records showing: Date and time of acquisition for each lot; Amount of crypto acquired; FMV at acquisition (cost basis); Transaction ID or wallet address for identification. Specific identification allows tax-loss harvesting and holding period optimization. Per Rev. Proc. 2024-28, specific identification requires adequate records designating the specific unit sold at the time of the transaction. If the taxpayer cannot adequately identify the units sold, FIFO applies by default.  _(Rev. Proc. 2024-28; Treas. Reg. §1.1012-1(j))_
-
-### FIFO (First In, First Out)
-
-- **FIFO default method** — Default method if specific identification records are inadequate. The earliest-acquired units are deemed sold first. Generally results in more long-term gains if the taxpayer has been accumulating over time.  _(Treas. Reg. 1.1012-1(j))_
-
-### HIFO (Highest In, First Out)
-
-- **HIFO method** — A subset of specific identification where the taxpayer deliberately selects the highest-basis lots to minimize current gain. Legal if specific identification requirements are met.  _(Rev. Proc. 2024-28)_
-
-### Average cost basis
-
-- **Average cost basis not permitted** — NOT permitted for cryptocurrency. Average cost is only available for mutual fund shares and dividend reinvestment plan shares under Reg. §1.1012-1(e). Crypto does not qualify. Taxpayers who used average cost on prior returns may need to file amended returns.  _(Reg. §1.1012-1(e))_
-
-### Universal basis tracking requirement (new for 2025+)
-
-- **Broker basis reporting** — Under the broker reporting regulations (TD 10000), beginning January 1, 2025, brokers must track and report cost basis. Taxpayers using exchanges that are now classified as brokers will receive Form 1099-DA (gross proceeds only for 2025; basis reporting begins with 2026 acquisitions). For transactions on non-broker platforms (DeFi protocols, peer-to-peer), the taxpayer must maintain their own basis records.  _(TD 10000; Treas. Reg. §1.6045-1)_
-
-### Tax treatment
-
-- **Staking income timing and recognition** — Staking rewards are ordinary income at the fair market value (FMV) at the time the taxpayer gains dominion and control over the rewards. Income recognized when rewards are credited to the staking wallet and freely transferable; If rewards are locked during an unbonding period, income is recognized when the unbonding completes and tokens become available; Reported on Schedule 1 Line 8v (digital assets) or Schedule C if staking constitutes a trade or business.  _([IRS guidance on staking (dominion and control)](https://www.irs.gov/instructions/i1040gi))_
-
-### Basis in staked tokens received
-
-- **Basis and holding period** — The taxpayer's basis in tokens received as staking rewards equals the FMV reported as income. The holding period for these tokens begins the day after receipt.  _(IRS guidance on staking)_
-
-### When staking is a trade or business (Schedule C)
-
-- **Trade or business criteria and SE tax** — If the taxpayer operates a validator node with: Continuity and regularity of activity; Primary purpose of income or profit; Significant personal effort (maintaining uptime, software updates, hardware). Then staking income is reported on Schedule C and subject to self-employment tax (15.3% on first $176,100 of net earnings for 2025, 2.9% thereafter).  _(IRC self-employment tax provisions)_
-
-### When staking is passive (Schedule 1)
-
-- **Passive staking treatment** — If the taxpayer delegates to a staking pool or exchange-managed staking (e.g., Coinbase staking, Kraken staking): Income reported on Schedule 1 Line 8v; NOT subject to self-employment tax; Subject to NIIT (3.8%) if AGI exceeds threshold.  _([IRC §1411](https://www.irs.gov/instructions/i1040gi))_
-
-### Ethereum-specific: post-Merge staking
-
-- **ETH staking rewards recognition** — ETH staking rewards from the Beacon Chain are recognized as income at FMV when withdrawn (post-Shanghai upgrade, April 2023). For 2025, all ETH staking rewards are freely withdrawable and taxable upon receipt.  _(IRS guidance on staking; Shanghai upgrade April 2023)_
-
-### Tax treatment
-
-- **Mining income recognition** — Mining rewards (block rewards + transaction fees) are ordinary income at FMV when the miner gains dominion and control (typically when the block is confirmed and coins are spendable).  _(IRS guidance on mining)_
-
-### Individual miner (hobby vs. business)
-
-- **Trade or business (Schedule C)** — Mining is conducted with continuity and regularity; Primary purpose is profit; Equipment costs, electricity, and facility costs are deductible against mining income; Net mining income subject to self-employment tax; Equipment depreciable under MACRS (5-year property for computer equipment) or §179 expensing  _(MACRS; §179)_
-- **Hobby (Schedule 1)** — Mining is sporadic or incidental; Hobby loss rules under §183 apply: no deduction for expenses exceeding income (post-TCJA, hobby expenses are not deductible at all); Income still taxable, reported on Schedule 1 Line 8v  _([§183; TCJA](https://www.irs.gov/instructions/i1040gi))_
-
-### Pool mining
-
-- **Pool mining treatment** — Income recognized when the pool distributes the miner's share; Pool fees are deductible if mining is a trade or business; Report gross mining income before pool fees on Schedule C Line 1, pool fees on Line 10 (Commissions and fees)  _(Schedule C instructions)_
-
-### Mining equipment depreciation
-
-- **Depreciation rules** — MACRS 5-year property (computers and peripherals); §179 expensing available up to $2,500,000 for 2025 (OBBBA); Bonus depreciation: 100% for property acquired and placed in service after January 19, 2025 (OBBBA restored; 40% applies only to property acquired before January 20, 2025); If equipment becomes worthless or is scrapped, remaining basis is deductible as a loss in that year  _(MACRS; OBBBA (P.L. 119-21): §179 2025 limit $2,500,000; IRC §168(k))_
-
-### Tax treatment
-
-- **Airdrop income recognition** — Airdrops are ordinary income at FMV at the time of receipt, provided: The taxpayer has dominion and control (tokens are in the wallet and freely transferable); The airdrop has ascertainable FMV (listed on an exchange with trading volume). Per Rev. Rul. 2019-24 (as applied to airdrops): taxpayer receiving new cryptocurrency has ordinary income equal to FMV at time of receipt.  _(Rev. Rul. 2019-24)_
-
-### Unsolicited airdrops
-
-- **Unsolicited airdrops still taxable** — Even if the taxpayer did not request the airdrop, it is still taxable upon receipt if it has FMV. The taxpayer cannot avoid income by ignoring tokens in their wallet.  _(Rev. Rul. 2019-24)_
-
-### Airdrops with no ascertainable FMV
-
-- **No ascertainable FMV positions** — If the airdropped token has no trading market and no ascertainable FMV at receipt: Some practitioners take the position that income is $0 at receipt, with $0 basis; This position is aggressive and should be flagged for reviewer; Conservative position: use any available pricing data (DEX pools, OTC markets) to establish FMV  _(Practitioner guidance (aggressive position — flag for reviewer))_
-
-### Basis in airdropped tokens
-
-- **Basis and holding period** — Basis equals the FMV reported as income. Holding period begins the day after receipt.  _(Rev. Rul. 2019-24)_
-
-### Tax treatment per Rev. Rul. 2019-24
-
-- **Hard fork taxability** — A hard fork that does not result in an airdrop (i.e., the taxpayer does not receive new tokens on the new chain) does NOT create a taxable event. A hard fork followed by an airdrop (taxpayer receives new tokens): ordinary income at FMV when taxpayer has dominion and control over the new tokens.  _(Rev. Rul. 2019-24)_
-
-### Dominion and control for fork tokens
-
-- **Dominion and control criteria** — The taxpayer has dominion and control when: The new chain is live and the tokens are accessible; The taxpayer's wallet or exchange supports the new chain; The tokens can be transferred or sold. If the exchange does not support the fork and the taxpayer cannot access the new tokens: no income until access is established.  _(Rev. Rul. 2019-24)_
-
-### Basis allocation
-
-- **Basis allocation for forked tokens** — No basis from the original token is allocated to the forked token. The forked token's basis equals the amount of ordinary income recognized (FMV at receipt). The original token retains its original basis.  _(Rev. Rul. 2019-24)_
-
-### Token swaps on DEXs (Uniswap, SushiSwap, etc.)
-
-- **Token swap taxability** — A token swap is a taxable exchange. Selling Token A for Token B: Proceeds = FMV of Token B received; Basis = cost basis of Token A disposed; Gain/loss recognized on Form 8949  _(Form 8949 instructions; general property tax principles)_
-
-### Liquidity pool (LP) positions
-
-- **Providing liquidity** — Depositing tokens into an LP may constitute a taxable exchange (position uncertain); Conservative position: treat deposit as a taxable disposition of both tokens for the LP token received; Aggressive position: treat LP deposit as a non-taxable open transaction until withdrawal; Flag for reviewer: IRS has not issued definitive guidance on LP deposits  _(No definitive IRS guidance — flag for reviewer)_
-- **LP fee income** — Trading fees earned by LPs are ordinary income when received/accrued; Report on Schedule 1 Line 8v or Schedule C if LP activity constitutes a trade or business  _([IRS guidance on ordinary income](https://www.irs.gov/instructions/i1040gi))_
-- **Impermanent loss** — Not deductible as a separate loss; Reflected in the reduced value of tokens withdrawn from the pool; Capital loss recognized only upon actual disposition of the LP position  _(General property tax principles)_
-- **Withdrawing from LP** — Taxable event: recognize gain/loss based on difference between value received and basis in LP position  _(General property tax principles)_
-
-### Lending (Aave, Compound, etc.)
-
-- **Interest earned from lending** — Ordinary income at FMV when received; similar treatment to staking (Schedule 1 or Schedule C depending on the trade-or-business determination). Crypto lending rewards are NOT statutory interest from a bank or bond payor, so Schedule B does not apply; report as other income at FMV. No crypto-specific interest guidance exists.  _(IRC §61(a); Notice 2014-21)_
-- **Depositing collateral** — Not a taxable event (similar to pledging securities for a margin loan). The taxpayer retains ownership; tokens are returned upon repayment.  _(General property tax principles)_
-- **Borrowing** — Not a taxable event (receiving loan proceeds is not income); Interest paid on crypto loans: potentially deductible as investment interest under §163(d) if proceeds used for investment; If collateral is liquidated: taxable disposition of the collateral tokens  _(§163(d))_
-
-### Yield farming / liquidity mining
-
-- **Yield farming income** — Governance tokens or reward tokens received for providing liquidity: ordinary income at FMV when received; Same treatment as staking/mining rewards; Basis in tokens received = FMV recognized as income  _(IRS guidance on ordinary income for rewards)_
-
-### Wrapped tokens (WBTC, wETH)
-
-- **Wrapping treatment** — Wrapping: exchanging BTC for WBTC or ETH for wETH; Position uncertain: arguably not a taxable event if economically equivalent; Conservative position: taxable exchange (recognize gain/loss); Aggressive position: non-taxable (same underlying asset, just a representation change); Flag for reviewer  _(No definitive IRS guidance — flag for reviewer)_
-
-### General treatment
-
-- **NFT property treatment** — NFTs are digital assets treated as property. Buying, selling, and exchanging NFTs follows the same capital gains framework as other crypto.  _(IRS Notice 2014-21 general property principles)_
-
-### Collectibles rate (28%)
-
-- **Collectibles maximum rate** — 28% percent (Under §408(m), long-term capital gains on "collectibles" are taxed at a maximum rate of 28% instead of the standard 20% maximum rate. An NFT may qualify as a collectible if it represents: A work of art; A rug or antique; A metal or gem; A stamp or coin; An alcoholic beverage; Any other tangible personal property specified by the IRS. IRS Notice 2023-27 provides a look-through framework: if the NFT represents a right to a collectible (e.g., digital art), it may be taxed at the 28% collectibles rate. If it represents a non-collectible asset (e.g., event tickets, in-game items with utility), the standard long-term rates apply.)  _(§408(m); IRS Notice 2023-27)_
-
-### NFT creator income
-
-- **Creator income treatment** — Artists/creators who mint and sell NFTs: Sale proceeds are ordinary income (self-employment income) if the creator is in the trade or business of creating NFTs; Report on Schedule C; Subject to SE tax; Minting costs (gas fees) are deductible business expenses  _(Schedule C instructions)_
-
-### Royalties on secondary sales
-
-- **Royalty income treatment** — Smart contract royalties received by NFT creators on secondary sales: ordinary income; Report on Schedule C or Schedule E depending on whether the creator is actively involved  _(Schedule C/E instructions)_
-
-### Current law: NOT applicable to crypto
-
-- **Wash sale inapplicability** — IRC §1091 (wash sale rule) applies only to "stock or securities." Cryptocurrency is classified as property, not stock or securities. Therefore, the wash sale rule does NOT currently apply to crypto. This means a taxpayer can: Sell crypto at a loss; Immediately repurchase the same crypto; Claim the capital loss without the 30-day waiting period required for stocks  _(IRC §1091)_
-
-### Proposed legislation (not yet enacted)
-
-- **Proposed wash sale legislation** — Multiple proposals have been introduced to extend wash sale rules to digital assets: Build Back Better Act (2021) — did not pass; Lummis-Gillibrand Responsible Financial Innovation Act — introduced but not enacted; Various 2024-2025 proposals. For 2025 tax year: Wash sale rule does NOT apply. Crypto tax-loss harvesting is fully permitted. Flag for reviewer: If legislation passes retroactively or effective for 2025, positions may need amendment. Monitor legislative developments.  _(Build Back Better Act (2021); Lummis-Gillibrand Responsible Financial Innovation Act)_
-
-### Background
-
-- **Form 1099-DA background** — The Infrastructure Investment and Jobs Act (2021) expanded the definition of "broker" to include digital asset exchanges and certain DeFi platforms, effective January 1, 2025.  _(Infrastructure Investment and Jobs Act (2021))_
-
-### What Form 1099-DA reports
-
-- **Reported fields** — Gross proceeds from sales or exchanges of digital assets; Cost basis (if the broker has the information); Date of acquisition; Date of sale; Type of digital asset; Whether the gain is short-term or long-term  _(Form 1099-DA)_
-
-### Who receives Form 1099-DA
-
-- **Recipients** — Taxpayers who used: Centralized exchanges (Coinbase, Kraken, Gemini, Binance.US); Certain payment processors handling crypto; Hosted wallet providers that facilitate dispositions  _(Form 1099-DA)_
-
-### Who does NOT receive Form 1099-DA
-
-- **Non-recipients** — Self-custodied wallet transactions (hardware wallets, MetaMask); Peer-to-peer transactions; Certain DeFi protocols (the DeFi broker rule, TD 10021, was REPEALED under the Congressional Review Act by P.L. 119-5 on April 10, 2025, and the regulations were removed at 90 FR 30825; non-custodial DeFi front-ends are not brokers and will not issue Form 1099-DA, and the CRA bars a substantially similar rule absent new legislation)  _([P.L. 119-5; 90 FR 31136](https://www.federalregister.gov/documents/full_text/text/2025/07/11/2025-12967.txt))_
-
-### Reconciliation
-
-- **Reconciliation guidance** — Taxpayers must reconcile Form 1099-DA against their own records: 1099-DA may not reflect correct basis (especially for transferred-in tokens); 1099-DA may report gross proceeds without netting fees; If basis on 1099-DA is incorrect, report on Form 8949 Box G or J (basis reported to IRS: enter the 1099-DA basis in column (e) and correct it in column (g), code B in column (f)) or Box H or K (basis not reported: enter the correct basis in column (e))  _([Form 8949 instructions](https://www.irs.gov/instructions/i8949))_
-
-### Current law
-
-- **No de minimis exemption** — There is no statutory de minimis exemption for crypto transactions. Every transaction, regardless of size, is technically a taxable event requiring reporting.  _(General property tax principles)_
-
-### Proposed safe harbor
-
-- **Proposed de minimis exclusion** — Multiple legislative proposals have included a de minimis exclusion ($200 or $600 gain per transaction) for using crypto as a medium of exchange. None have been enacted as of 2025.  _(Legislative proposals (not enacted))_
-
-### Practical guidance
-
-- **Practical guidance for small transactions** — All transactions must be reported regardless of size; For very small transactions (coffee purchases with Bitcoin), the gain/loss must still be computed; Aggregate reporting on Form 8949 is permitted: multiple small transactions can be combined into a single line if same exchange, same asset, same holding period category; Reference: Form 8949 instructions allow summary reporting per broker statement  _(Form 8949 instructions)_
-
-### FBAR (FinCEN Form 114)
-
-- **FBAR requirement and application to crypto** — Requirement: US persons with financial interest in or signature authority over foreign financial accounts must file FBAR if the aggregate value exceeds $10,000 at any time during the calendar year. Application to crypto: a foreign account holding ONLY virtual currency is not currently FBAR-reportable (FinCEN Notice 2020-2 announced an intent to change this; the rule remains unfinalized), but an account that also holds or can hold fiat or other reportable assets counts in full toward the $10,000 threshold. Filing deadline: April 15 (automatic extension to October 15); filed electronically through FinCEN BSA E-Filing. Penalties for non-filing (2025 inflation-adjusted): up to $16,536 per violation (non-willful), or the greater of $165,353 or 50% of the account balance (willful); amounts re-adjust each January.  _(31 CFR 1010.350; FinCEN Notice 2020-2)_
-- **FBAR aggregate threshold** — 10000 USD  _(31 CFR 1010.350)_
-
-### Form 8938 (FATCA)
-
-**Form 8938 thresholds (end of year / any time during year)**  _(FATCA Form 8938 instructions)_
-
-| Filing status | End of year | Any time during year |
+5. **Where it goes:** outside a business, Schedule 1 (2025 form, line 8v for digital assets received as a reward, award or payment, or line 8z), with no self-employment tax but inside net investment income where it is investment income. In a business, Schedule C and Schedule SE. Mining equipment, power and hosting are deductible only for a business; a hobby's income is taxable and its expenses are not deductible (the suspension of miscellaneous itemized deductions is permanent from 2026 under Public Law 119-21, section 70110). Source: [IRS, Frequently asked questions on digital asset transactions](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions).
+6. **Staking and litigation:** taxpayers have argued that newly created staking tokens are not income until sold. The first refund suit (Jarrett v. United States, 6th Cir. No. 22-6023, 2023) ended as moot after the IRS refunded the tax, and a second suit was filed in 2024. The IRS position in Rev. Rul. 2023-14 stands; follow it, and flag any client who wants the other position (R-CRYPTO-STAKE).
+7. **No ascertainable value:** if an airdropped token has no market at receipt, some practitioners report nil income and nil basis. That is aggressive; use any available price (DEX pools, OTC quotes) and flag the position for the reviewer.
+
+### Step 3: dispositions and gain
+
+8. **Taxable dispositions:** sale for dollars or other currency; exchange of one crypto for another (BTC for ETH disposes of the BTC, at the fair market value of the ETH received); paying for goods or services with crypto; liquidating a DeFi position; a collateral liquidation. **Not dispositions:** buying with dollars, holding, moving between the person's own wallets, pledging collateral, and borrowing against crypto (loan proceeds are not income). Interest paid on a crypto loan used for investment may be investment interest under section 163(d).
+9. **Gain or loss** = amount realized (fair market value of what is received, less selling costs) minus adjusted basis (cost plus acquisition fees, or the income amount for received units). Held more than one year: long-term; otherwise short-term. Rates, NIIT and the loss limit: `us-capital-gains`.
+10. **Unsettled areas** (no IRS guidance; flag each for the reviewer, and apply one position consistently): depositing tokens into a liquidity pool for LP tokens (conservative: a taxable exchange; aggressive: open transaction until withdrawal); withdrawing from a pool (a disposition of the LP position); impermanent loss (not separately deductible; it shows up when the position is closed); wrapping (ETH to wETH) and bridging (conservative: taxable; aggressive: no change in substance).
+11. **Small purchases:** there is no de minimis exemption; a coffee bought with bitcoin is a disposition. Proposals for an exemption have not been enacted.
+
+### Step 4: basis, by wallet
+
+12. **Wallet by wallet from 1 January 2025.** Basis must be identified separately for each wallet or account. Rev. Proc. 2024-28 gave a safe harbour to allocate unused basis to the units held in each wallet or account as of 1 January 2025 (by specific allocation or a rule-based method, fixed by that date and documented). Source: [Rev. Proc. 2024-28](https://www.irs.gov/pub/irs-drop/rp-24-28.pdf).
+13. **Specific identification:** the person identifies the units sold at the time of the sale, with records of each unit's acquisition date and time, basis and the sale details; for assets held at a broker, through the broker's records or a standing order. This permits choosing the highest-basis lots (HIFO is a form of specific identification). **Without adequate identification, FIFO applies** within that wallet or account.
+14. **Averaging is not allowed** for crypto held as property. Average basis applies only to mutual fund and dividend reinvestment plan shares, and the Form 1099-DA instructions allow it for **tokenized securities**, which are securities. A taxpayer who averaged in earlier years should be told that amended returns may be needed.
+15. **Received units:** basis is the income amount (Step 2). **Gifts received:** the donor's basis carries over (fair market value at the gift date if lower, for losses), and the holding period tacks on the carryover basis. **Inherited:** fair market value at death.
+
+### Step 5: wash sales, futures and other special rules
+
+16. **Wash sales:** section 1091 applies to "stock or securities". Crypto held as property is neither, so a loss on crypto sold and bought back at once is allowed. It **does** apply to tokenized securities and to crypto exposure held as a security (for example shares of an exchange-traded fund). Proposals to extend it to digital assets have not been enacted. Source: [26 U.S.C. 1091](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partVII-sec1091.htm).
+17. **Futures:** regulated futures on a qualified board or exchange (for example CME bitcoin futures) are section 1256 contracts: marked to market, 60% long-term and 40% short-term, on Form 6781. Perpetual futures on offshore platforms are generally not section 1256 contracts; refer a disputed classification (R-CRYPTO-1256).
+18. **Theft, scams and lost keys:** a personal theft or casualty loss is deductible only if it comes from a federally declared disaster or, from 2026, a state declared disaster; Public Law 119-21, section 70109, made the limit permanent. A theft from a profit-seeking transaction may still be deductible under section 165(c)(2); refer that analysis. A worthless token gives a capital loss in the year it becomes wholly worthless; lost keys give no deduction until the loss is shown to be permanent. Source: [Public Law 119-21, section 70109](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+19. **Gifts given:** no income tax for the donor; Form 709 if gifts to one donee in 2026 exceed **USD 19,000** (`us-estate-gift-706-709`).
+20. **Donations:** held more than one year, deduct fair market value with no gain; held one year or less, the lower of basis and value. Form 8283 above USD 500 of noncash gifts (Section B above USD 5,000). For a claim above **USD 5,000** a **qualified appraisal** is required: the IRS position is that crypto is not exempt as a readily valued security, and an exchange price is not a substitute. Source: [CCA 202302012](https://www.irs.gov/pub/irs-wd/202302012.pdf).
+
+### Step 6: Form 8949 and Schedule D
+
+21. Each disposition goes on Form 8949, column (a) with the asset's name or symbol, the exact units, and the transaction ID if available. Digital assets use **boxes G, H and I** (short-term: 1099-DA with basis reported; 1099-DA without basis; no 1099-DA) and **J, K and L** (long-term), never boxes C or F. Totals go to Schedule D. Source: [Instructions for Form 8949](https://www.irs.gov/pub/irs-pdf/i8949.pdf).
+22. **Correcting a 1099-DA:** if the broker's basis is wrong, report on box G or J with the broker's basis in column (e) and the correction in column (g) with code B; if basis was not reported, report on box H or K with the correct basis in column (e). Fees not netted by the broker are adjustments. Summary lines are allowed where the instructions permit.
+
+### Step 7: Form 1099-DA for 2026
+
+23. **Who files:** a US digital asset broker: a custodial trading platform, a hosted wallet provider that effects sales, a kiosk operator, a payment processor (with knowledge), or an issuer that regularly redeems its own tokens. Not brokers: pure validators, and sellers of hardware or software that only lets users control their own keys. Source: [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf).
+24. **What is reported for 2026 sales:** **gross proceeds for every sale**, and **basis** for **covered securities**: digital assets acquired after 2025 in an account where the broker provided custody, and held there until sold. Assets acquired before 2026, or transferred in from elsewhere, are **noncovered**: the broker may leave basis blank (box 9 checked). Expect 2026 forms to show basis only for 2026 purchases.
+25. **Optional and de minimis rules:** qualifying stablecoin sales need not be reported where the customer's total does not exceed USD 10,000 for the year; specified NFT sales where they do not exceed USD 600; payment processor sales where they are not more than USD 600. **Rewards and staking payments are not reported on Form 1099-DA** (look for a Form 1099-MISC, now above USD 2,000, or nothing). Source: [Instructions for Form 1099-DA (2026)](https://www.irs.gov/pub/irs-pdf/i1099da.pdf).
+26. **DeFi front ends are not brokers.** The rule that would have made non-custodial DeFi platforms report (T.D. 10021) was disapproved under the Congressional Review Act (Public Law 119-5, 10 April 2025) and the regulation was removed. Self-custody wallets, peer-to-peer trades and DeFi protocols produce no Form 1099-DA, so the client's own records are the only source.
+27. **No form is not no tax.** Every disposition is reported whether or not a Form 1099-DA arrives; the IRS matches the forms it does receive against Form 8949.
+
+### Step 8: other reporting
+
+28. **Form 8300:** a business receiving more than USD 10,000 in cash must file Form 8300; the 2021 law added digital assets to "cash", but under Announcement 2024-4 digital assets need not be counted until final regulations are issued. Source: [Announcement 2024-4](https://www.irs.gov/pub/irs-drop/a-24-04.pdf).
+29. **FBAR:** "at this time, a foreign account holding virtual currency is not reportable on the FBAR (unless it is a reportable account ... because it holds reportable assets besides virtual currency)". A foreign exchange account that also holds fiat or securities counts in full. Source: [FinCEN Notice 2020-2](https://www.fincen.gov/sites/default/files/shared/Notice-Virtual%20Currency%20Reporting%20on%20the%20FBAR%20123020.pdf). Thresholds and filing: `us-fbar-and-fatca-8938`.
+30. **Form 8938:** whether crypto on a foreign platform is a specified foreign financial asset has no final IRS answer; many preparers report it. Thresholds: `us-fbar-and-fatca-8938`. Accounts at US exchanges are not foreign accounts for either form.
+
+### Step 9: records
+
+31. Keep, for every transaction: date and time, units, US dollar fair market value and its source, purpose, counterparty if known, wallet addresses, transaction hashes, and exchange records. Source: [IRS, Frequently asked questions on digital asset transactions](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions). Valuation: the exchange where the trade happened is the best evidence; widely used price aggregators and timestamped exchange data are acceptable if used consistently. The assessment period is normally 3 years from filing (6 years if income is understated by more than 25%, unlimited with no return or fraud), but basis records are needed for as long as the units are held: keep them indefinitely.
+
+### Step 10: reconcile the exchange exports
+
+32. Download the complete history from each platform; trace every deposit (bought there, transferred in, received as pay) and every withdrawal (to own wallet, paid out, sold); match transfers between the client's own platforms so they are not counted as sales; assign basis per wallet; produce Form 8949 lines; split short-term and long-term; then reconcile to each Form 1099-DA. Typical exports: Coinbase (timestamp, transaction type, asset, quantity, spot price, subtotal, total including fees); Kraken ledgers (txid, refid, time, type, asset, amount, fee, balance; staking rewards itemised); Gemini and Binance.US (date, type, symbol or pair, quantity, price, fee, trade ID). Self-custody wallets such as Coinbase Wallet are not reported by the exchange.
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Transfer between two wallets the client owns | Not a disposition; answer "No" to the Form 1040 question if that was the only activity |
+| Swap of ETH for USDC | Disposition of the ETH at the dollar value of the USDC received |
+| Hard fork, client's exchange does not support the new chain | No income until the client can access and dispose of the new coins |
+| Staking rewards locked in an unbonding period | Income when the rewards become transferable |
+| Sold at a loss and bought back the same day | Loss allowed (no wash sale rule), unless the asset is a tokenized security or fund share |
+| Units bought in 2025, sold on the same exchange in 2026 | Noncovered: 1099-DA shows proceeds; basis may be blank (box H or K) |
+| Units bought in 2026 on the exchange where they are sold | Covered: 1099-DA shows basis (box G or J) |
+| Units transferred in from a hardware wallet and sold | Noncovered: client supplies basis |
+| Coins stolen in a phishing scam, personal account | No casualty deduction outside a declared disaster; a profit-motive theft claim needs referral |
+| Donated bitcoin worth USD 8,000 with no appraisal | Deduction at risk: a qualified appraisal is required above USD 5,000 |
+| Foreign exchange account holding only crypto | Not an FBAR account under Notice 2020-2; check Form 8938 |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Basis of units transferred in | Do not use zero without telling the client; trace the source wallet first (R-CRYPTO-1 if impossible) |
+| Lot identification at the time of sale | FIFO within the wallet or account |
+| Whether staking or mining is a business | Treat as non-business (no self-employment tax) and ask about scale, regularity and effort |
+| Fair market value at receipt | Price on the platform where received, at that time; record the source |
+| Liquidity pool or wrapping position | The conservative taxable treatment, flagged |
+| Whether a foreign account holds fiat | Assume it does and count it for the FBAR |
+
+### Red flags to raise with the client
+
+| Flag | Why it matters |
+| --- | --- |
+| Form 1099-DA proceeds with no matching Form 8949 lines | IRS matching notice |
+| Average cost used in earlier years | Not allowed: amended returns may be needed |
+| Many DeFi positions and no records | Reconstruction needed before any figure (R-CRYPTO-3) |
+| Material balances on foreign platforms and no FBARs | Possible past non-filing (R-CRYPTO-2) |
+| Staking or mining with significant equipment and time | Possibly a business: Schedule C and self-employment tax |
+| A donation claimed at exchange value above USD 5,000 | Qualified appraisal needed |
+
+## Worked cases
+
+Amounts are invented; the 2026 rates come from `us-capital-gains` and 26 U.S.C. 1411.
+
+**Case 1, a decision: which lot to sell.** A single filer has other 2026 income of USD 150,000 (modified AGI, all ordinary, so any long-term gain falls in the 15% band). In one exchange account she holds 1 BTC bought in 2023 for USD 30,000 and 1 BTC bought in March 2026 for USD 95,000. In November 2026 she sells 1 BTC for USD 90,000.
+
+FIFO (the default): long-term gain USD 60,000, tax 15% = USD 9,000, plus NIIT 3.8% on the smaller of USD 60,000 and the USD 10,000 by which modified AGI (USD 210,000) passes USD 200,000 = USD 380; total USD 9,380. Specific identification of the 2026 lot, made at the time of sale with the broker: short-term loss USD 5,000, of which USD 3,000 offsets ordinary income taxed at 24% (USD 720 saved) and USD 2,000 carries forward. The low-basis 2023 coin remains, with its gain deferred. Recommend specific identification, set up as a standing order with the broker before the sale.
+
+```oa-check
+name: Lot selection, FIFO against specific identification (2026)
+inputs:
+  other_magi: 150000
+  proceeds: 90000
+  old_lot_basis: 30000
+  new_lot_basis: 95000
+  niit_threshold: 200000
+steps:
+  - fifo_gain: proceeds - old_lot_basis
+  - fifo_tax: fifo_gain * 0.15
+  - fifo_niit: min(fifo_gain, max(other_magi + fifo_gain - niit_threshold, 0)) * 0.038
+  - fifo_total: fifo_tax + fifo_niit
+  - specific_id_loss: proceeds - new_lot_basis
+  - specific_id_saving: min(abs(specific_id_loss), 3000) * 0.24
+  - carryforward: abs(specific_id_loss) - min(abs(specific_id_loss), 3000)
+expected:
+  fifo_gain: 60000.00
+  fifo_tax: 9000.00
+  fifo_niit: 380.00
+  fifo_total: 9380.00
+  specific_id_loss: -5000.00
+  specific_id_saving: 720.00
+  carryforward: 2000.00
+```
+
+**Case 2: staking income, then a sale reported on Form 1099-DA.** A client stakes ETH through a US exchange (not a business) and receives 1.2 ETH of rewards during 2026 at an average value of USD 3,500 when each reward became transferable (the actual computation uses each reward's value). Income on Schedule 1: USD 4,200; basis in the 1.2 ETH: USD 4,200. No Form 1099-DA reports the rewards. In December 2026 the client sells the 1.2 ETH for USD 5,000. The Form 1099-DA shows proceeds of USD 5,000; if the exchange leaves basis blank, report on Form 8949 box H with basis USD 4,200: short-term gain USD 800. Total 2026 income from the ETH: USD 5,000, taxed as ordinary income.
+
+```oa-check
+name: Staking rewards and a later sale (2026)
+inputs:
+  units: 1.2
+  value_at_receipt: 3500
+  sale_proceeds: 5000
+steps:
+  - staking_income: units * value_at_receipt
+  - basis: staking_income
+  - short_term_gain: sale_proceeds - basis
+  - total_income: staking_income + short_term_gain
+expected:
+  staking_income: 4200.00
+  basis: 4200.00
+  short_term_gain: 800.00
+  total_income: 5000.00
+```
+
+**Other quick results.** An airdrop of 1,000 tokens worth USD 1.15 each when the client can dispose of them: USD 1,150 of ordinary income and USD 1,150 basis; sold later at USD 2.00 each, gain USD 850. A swap of 10 ETH (basis USD 25,000, held under a year) for 50,000 USDC: short-term gain USD 25,000, on box I if no Form 1099-DA is received.
+
+## When to refuse or refer
+
+| Code | Situation | Action |
 | --- | --- | --- |
-| Single, living in US | $50,000 | $75,000 |
-| MFJ, living in US | $100,000 | $150,000 |
-| Single, living abroad | $200,000 | $300,000 |
-| MFJ, living abroad | $400,000 | $600,000 |
+| R-CRYPTO-1 | No transaction history or wallet records for material positions | Refuse to prepare Form 8949; refer to a crypto tax specialist with blockchain reconstruction tools |
+| R-CRYPTO-2 | Material foreign platform holdings and past FBARs or Forms 8938 not filed | Refer to a practitioner experienced in streamlined filing or voluntary disclosure |
+| R-CRYPTO-3 | Dozens of DeFi positions with no records | Refuse to estimate; reconstruction first |
+| R-CRYPTO-1256 | Disputed section 1256 classification of crypto futures | Refer for sign-off |
+| R-CRYPTO-STAKE | Client wants the "no income until sold" position on staking | Refer; disclose the position against Rev. Rul. 2023-14 |
+| R-CRYPTO-THEFT | Theft loss from a transaction entered into for profit | Refer: section 165(c)(2) facts and timing |
+| R-CRYPTO-BIZ | A business that accepts crypto, or a client that is itself a broker | Refer: Form 8300, Form 1099-DA filing and business accounting |
+| R-CRYPTO-STATE | State tax | The state skill |
 
-- **Application to crypto** — Accounts on foreign exchanges holding digital assets may be reportable as specified foreign financial assets.  _(FATCA Form 8938 instructions)_
+## Filing and payment
 
-### Domestic exchanges — no FBAR/8938
+- Report on the **2026 Form 1040**, due **15 April 2027** (extension to 15 October 2027 for filing only): the digital asset question, Form 8949 and Schedule D, Schedule 1 or Schedule C (with Schedule SE) for income, Form 6781 for section 1256 contracts, Form 8283 for donations.
+- Brokers furnish 2026 Forms 1099-DA in early 2027; reconcile them before filing.
+- Crypto income and gains usually have no withholding: pay through 2026 estimated tax (`us-quarterly-estimated-tax`).
+- FBAR and Form 8938: `us-fbar-and-fatca-8938`. Form 709 for gifts above USD 19,000 to one person: due 15 April 2027.
 
-- **Domestic exchange exclusion** — Coinbase, Kraken, Gemini, Binance.US are US-based. Accounts on these exchanges are NOT reported on FBAR or Form 8938.  _(FBAR/FATCA guidance)_
+## Completion checklist
 
-### Coinbase
+- [ ] Every platform and wallet listed and its export obtained.
+- [ ] Transfers between own wallets matched and excluded.
+- [ ] Every disposition (including swaps and spending) on Form 8949, boxes G to L.
+- [ ] All income events (staking, mining, airdrops, rewards, DeFi yield) included at fair market value when control arose.
+- [ ] Basis per wallet, with the 1 January 2025 allocation documented; specific identification or FIFO applied consistently; no averaging.
+- [ ] Each Form 1099-DA reconciled, corrections shown in columns (f) and (g).
+- [ ] NIIT tested; business activity on Schedule C with self-employment tax.
+- [ ] Foreign platforms reviewed for FBAR and Form 8938.
+- [ ] Unsettled positions (pools, wrapping, no-value airdrops) flagged for the reviewer.
+- [ ] The Form 1040 digital asset question answered.
 
-- **Coinbase reporting patterns** — Provides annual tax report and Form 1099-MISC (for staking/rewards over $600); Beginning 2025: Form 1099-DA for sales; Transaction history downloadable as CSV; Fields: timestamp, transaction type, asset, quantity, spot price, subtotal, total (including fees), notes; Coinbase Pro (now Advanced Trade): separate transaction history; Coinbase Wallet (self-custody): not reported by Coinbase
+## Sources
 
-### Kraken
+| Source | URL | Read on |
+| --- | --- | --- |
+| Notice 2014-21. Read for property treatment, receipt at fair market value, mining (Q&A 8) and self-employment (Q&A 9). | https://www.irs.gov/pub/irs-drop/n-14-21.pdf | 2026-11-13 |
+| Rev. Rul. 2019-24. Read for hard forks (Situation 1) and airdrops (Situation 2). | https://www.irs.gov/pub/irs-drop/rr-19-24.pdf | 2026-11-13 |
+| Rev. Rul. 2023-14. Read for staking rewards and dominion and control. | https://www.irs.gov/pub/irs-drop/rr-23-14.pdf | 2026-11-13 |
+| Rev. Proc. 2024-28. Read for wallet-by-wallet basis and the safe harbour as of January 1, 2025. | https://www.irs.gov/pub/irs-drop/rp-24-28.pdf | 2026-11-13 |
+| Instructions for Form 1099-DA (2026). Read for covered securities (acquired after 2025, custodial), noncovered securities, the $10,000 stablecoin and $600 NFT and PDAP rules, and "Do not report rewards and staking payments on Form 1099-DA". | https://www.irs.gov/pub/irs-pdf/i1099da.pdf | 2026-11-13 |
+| Instructions for Form 8949 (2025). Read for boxes G to L and "Do not use box C". | https://www.irs.gov/pub/irs-pdf/i8949.pdf | 2026-11-13 |
+| Form 1040 (2025). Read for the digital asset question wording. | https://www.irs.gov/pub/irs-pdf/f1040.pdf | 2026-11-13 |
+| IRS, Determine how to answer the digital asset question. Read for the Yes and No cases. | https://www.irs.gov/filing/determine-how-to-answer-the-digital-asset-question | 2026-11-13 |
+| IRS, Frequently asked questions on digital asset transactions. Read for reporting lines and records. | https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions | 2026-11-13 |
+| Announcement 2024-4. Read for digital assets not yet counted for Form 8300. | https://www.irs.gov/pub/irs-drop/a-24-04.pdf | 2026-11-13 |
+| CCA 202302012. Read for the qualified appraisal requirement for donated cryptocurrency. | https://www.irs.gov/pub/irs-wd/202302012.pdf | 2026-11-13 |
+| Public Law 119-21. Read for section 70109 (casualty loss limit permanent, state declared disasters), 70110 (miscellaneous itemized deductions) and 70433 ($2,000 information reporting threshold after 2025). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for the 2026 gift annual exclusion ($19,000). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| 26 U.S.C. 1091 (govinfo). Read for "stock or securities". | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partVII-sec1091.htm | 2026-11-13 |
+| 26 U.S.C. 1411 (govinfo). Read for 3.8% and the $250,000 and $200,000 thresholds. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm | 2026-11-13 |
+| FinCEN Notice 2020-2. Read for crypto-only foreign accounts not reportable on the FBAR "at this time". | https://www.fincen.gov/sites/default/files/shared/Notice-Virtual%20Currency%20Reporting%20on%20the%20FBAR%20123020.pdf | 2026-11-13 |
 
-- **Kraken reporting patterns** — Provides transaction history and ledger export; Beginning 2025: Form 1099-DA for US customers; CSV fields: txid, refid, time, type, subtype, aclass, asset, amount, fee, balance; Staking rewards itemized in ledger; Kraken has historically provided Form 1099-MISC for staking income > $600
-
-### Gemini
-
-- **Gemini reporting patterns** — Provides transaction history export; Beginning 2025: Form 1099-DA; CSV fields: date, time, type, symbol, specification, liquidity indicator, trading fee, quantity, price, amount, trade ID; Gemini Earn interest reported on Form 1099-MISC (program discontinued, but legacy reporting may apply)
-
-### Binance.US
-
-- **Binance.US reporting patterns** — Provides transaction history and tax reports; Beginning 2025: Form 1099-DA; CSV fields: date, pair, type, order price, order amount, average trading price, filled, total, trigger condition, status; Note: Binance.US has limited trading pairs compared to international Binance
-
-### General reconciliation approach
-
-- **Reconciliation steps** — 1. Download complete transaction history from each exchange; 2. Identify all deposits (trace origin: purchased on exchange, transferred from wallet, received as payment); 3. Identify all withdrawals (trace destination: transferred to wallet, sent as payment, sold for fiat); 4. Match deposits/withdrawals between exchanges to avoid double-counting; 5. Compute basis for each lot using chosen method (specific ID or FIFO); 6. Generate Form 8949 entries for all dispositions; 7. Separate short-term from long-term based on holding period; 8. Cross-check against any 1099-DA received
-
-### Lost or stolen crypto
-
-- **Theft, worthlessness, and lost keys** — Theft loss: Under TCJA (2018-2025), personal theft losses are only deductible if attributable to a federally declared disaster. Crypto theft generally does NOT qualify. Exception: If the crypto was held in a trade or business, the loss may be deductible under §165(c)(1). Worthless tokens: Capital loss in the year the token becomes worthless (must demonstrate complete worthlessness). Lost keys/inaccessible wallet: No deduction until the taxpayer can demonstrate the crypto is permanently inaccessible (abandonment loss requires affirmative act).  _(TCJA (2018-2025); §165(c)(1))_
-
-### Gifts of crypto
-
-- **Gift tax treatment** — Donor: No taxable event upon gifting. Recipient basis: Carryover basis from donor (for gains); FMV at time of gift (for losses, if FMV < donor's basis). Gift tax: Form 709 required if gift exceeds $19,000 annual exclusion (2025) per recipient. Holding period: Tacks (recipient includes donor's holding period) if using carryover basis.  _(Form 709; Rev. Proc. 2024-40: 2025 annual exclusion $19,000)_
-
-### Charitable donations of crypto
-
-- **Charitable donation treatment** — Held > 1 year: Deduct FMV, no capital gains recognized (§170(e) long-term capital gain property). Held ≤ 1 year: Deduct lesser of FMV or basis. Qualified appraisal required for donations > $5,000 (Form 8283 Section B). Donations > $500: Form 8283 Section A required.  _(§170(e); Form 8283)_
-
-### Crypto received as compensation
-
-- **Compensation treatment** — W-2 employees receiving crypto: FMV included in Box 1 of W-2, subject to withholding. Independent contractors receiving crypto: Ordinary income at FMV, reported on Schedule C. Basis = FMV at time of receipt (amount included in income).  _(W-2/Schedule C reporting rules)_
-
-### Margin trading and futures
-
-- **Margin and futures treatment** — Crypto margin trades: Same as regular trades, gain/loss on disposition. Crypto futures on regulated exchanges (CME Bitcoin futures): Subject to §1256 (60% long-term / 40% short-term, marked-to-market). Crypto perpetual futures on unregulated exchanges: Standard capital gain/loss treatment (not §1256).  _(§1256)_
-
-### What records to maintain
-
-- **Recordkeeping requirements** — Per IRS guidance (FAQ Q95): Date and time of each transaction; Quantity of digital asset received or transferred; FMV at time of transaction (with source of valuation); Purpose of the transaction; Counterparty information (if available); Wallet addresses involved; Transaction IDs (hash); Exchange records  _([IRS FAQ Q39-Q41](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions))_
-
-### Valuation sources
-
-- **Acceptable FMV sources** — Exchange where the transaction occurred (best evidence); CoinMarketCap, CoinGecko (widely accepted); Exchange APIs with timestamp-level pricing; Block explorer data (for on-chain transactions). Use consistent valuation methodology. Document the source used.
-
-### Retention period
-
-- **Record retention periods** — Standard: 3 years from filing date (§6501 statute of limitations); If income understated by >25%: 6 years; If no return filed or fraudulent return: unlimited; Recommendation: retain crypto records indefinitely (basis tracking requires historical data)  _(§6501)_
-
-## Section 17 — Self-checks
-
-**Check CRYPTO-1 — Every disposition reported.** All sales, exchanges, and uses of crypto are reported on Form 8949.
-
-**Check CRYPTO-2 — Basis method consistent.** The same basis method (specific ID or FIFO) is applied consistently within each exchange/wallet for the tax year.
-
-**Check CRYPTO-3 — Income recognition complete.** All staking rewards, mining income, airdrops, and DeFi income are reported as ordinary income.
-
-**Check CRYPTO-4 — Holding period correct.** Short-term vs long-term classification matches actual holding periods with documentation.
-
-**Check CRYPTO-5 — NIIT computed if applicable.** 3.8% NIIT applied to crypto gains if AGI exceeds threshold.
-
-**Check CRYPTO-6 — Foreign exchange reporting evaluated.** FBAR and Form 8938 obligations assessed for foreign exchange accounts.
-
-**Check CRYPTO-7 — Form 1040 digital asset question answered correctly.**
-
-**Check CRYPTO-8 — 1099-DA reconciled.** Any Form 1099-DA received is reconciled against taxpayer records with adjustments noted on Form 8949.
-
-**Check CRYPTO-9 — NFT collectibles rate evaluated.** If NFTs sold, determination made whether 28% collectibles rate applies.
-
-**Check CRYPTO-10 — No average cost basis used.** Average cost is not permitted for crypto.
-
-## Section 18 — Refusals
-
-- **R-CRYPTO-1 — Insufficient records** — If the taxpayer cannot provide transaction history or wallet records for material positions, refuse to prepare Form 8949. Recommend engaging a crypto tax specialist with forensic blockchain analysis capability (Chainalysis, CoinTracker integration).  _(R-CRYPTO-1)_
-- **R-CRYPTO-2 — Foreign exchange non-compliance** — If the taxpayer held material amounts on foreign exchanges and has not previously filed FBAR, this requires voluntary disclosure analysis. Refuse and refer to tax attorney specializing in offshore compliance (Streamlined Filing Compliance Procedures or VDP).  _(R-CRYPTO-2)_
-- **R-CRYPTO-3 — Active DeFi trading without records** — If the taxpayer interacted with multiple DeFi protocols without maintaining records (common with dozens of yield farming positions), refuse to estimate. Recommend CoinTracker, Koinly, or TokenTax for reconstruction.  _(R-CRYPTO-3)_
-- **R-CRYPTO-4 — §1256 contract classification dispute** — If the taxpayer traded crypto futures and the classification as §1256 contracts is disputed, flag for reviewer. Do not take a position without CPA signoff.  _(R-CRYPTO-4)_
-
-## Section 19 — Cross-skill references
-
-**Inputs:**
-- Taxpayer intake data (filing status, income level for bracket/NIIT determination)
-- Transaction history from exchanges (CSV or 1099-DA)
-- Staking/mining/DeFi activity records
-
-**Outputs consumed by:**
-- `us-federal-return-assembly` — Form 8949, Schedule D totals, ordinary income items
-- `us-quarterly-estimated-tax` — crypto income affects estimated tax calculations
-- State skills — some states have crypto-specific adjustments
-
-### Example 1: Simple sale
-
-Purchased 1.0 BTC on March 15, 2024 for $65,000. Sold 1.0 BTC on July 20, 2025 for $98,000.
-- Holding period: > 1 year (long-term)
-- Proceeds: $98,000
-- Basis: $65,000
-- Long-term capital gain: $33,000
-- Report on Form 8949 Part II, Box L (no 1099-DA received)
-
-### Example 2: Staking income
-
-Staked 32 ETH on Coinbase. Received 1.2 ETH in staking rewards throughout 2025. Monthly FMV at receipt: average $3,500/ETH.
-- Ordinary income: 1.2 × $3,500 = $4,200 (actual computation uses per-receipt FMV)
-- Report on Schedule 1 Line 8v (delegated staking, not trade or business)
-- Basis in 1.2 ETH received = $4,200
-- Subject to NIIT if AGI > $200,000 (single)
-
-### Example 3: Token swap on Uniswap
-
-Swapped 10 ETH (basis $25,000, acquired February 2025) for 50,000 USDC on August 10, 2025.
-- Holding period: < 1 year (short-term)
-- Proceeds: $50,000 (FMV of USDC received)
-- Basis: $25,000
-- Short-term capital gain: $25,000
-- Report on Form 8949 Part I, Box I
-
-### Example 4: Airdrop
-
-Received 1,000 ARB tokens via airdrop on March 23, 2025. FMV at receipt: $1.15/token.
-- Ordinary income: 1,000 × $1.15 = $1,150
-- Report on Schedule 1 Line 8v
-- Basis in 1,000 ARB = $1,150
-- If later sold for $2.00/token: gain = ($2,000 − $1,150) = $850
-
-## End of Skill
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the 2026 Form 1040, Schedule 1 and Instructions for Form 8949 were not published when read, so the digital asset question wording, the Schedule 1 line (8v on the 2025 form) and the box letters are taken from the 2025 editions; the 2026 recipient statement due date for Form 1099-DA is not quoted; the status of the second Jarrett suit was not checked.

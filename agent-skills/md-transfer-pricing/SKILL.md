@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/md-transfer-pricing"
   jurisdiction: "MD"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Moldova transfer pricing v0.8
+# Moldova transfer pricing v0.9
 
 2026 draft, primary law read 30 October 2026; the current information annex and APA application model read 31 October 2026. The 24 October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
@@ -345,4 +345,4 @@ Not yet confirmed: authenticated portal acceptance, legacy country-code/renamed-
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `md-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/md-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `md-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/md-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
