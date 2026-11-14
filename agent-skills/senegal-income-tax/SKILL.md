@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/senegal-income-tax"
   jurisdiction: "SN"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Senegal personal income tax
@@ -281,16 +281,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Code general des impots, edition January 2025 (DGID): articles cited in this skill read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
-| DGID, Lois et reglements: rates table and recent measures (Loi 2025-17) read | https://www.dgid.sn/loi-reglement | 2026-11-01 |
-| Loi n. 2025-19, finance law for 2026 (scan, read by OCR, all 64 pages searched): no CGI amendment found; art. 19 adds a cashew export duty | https://budget.sec.gouv.sn/documents/public_download/69556841-a9d4-4658-8c1e-fe230a2a028a/telechargement | 2026-11-01 |
-| DGID calendar of annual filings: full table read | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-01 |
-| DGID SENTAX user guide v1.1, 2026: contents and steps read | https://www.dgid.sn/storage/uploads/guide-utilisateur-espace-connecte-1790609363.pdf | 2026-11-01 |
-| DGID communique: SENTAX for CME1, CME2 and CPR from 1 October 2026: full text read | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-01 |
-| DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
+| Code general des impots, edition January 2025 (DGID): articles cited in this skill read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-14 |
+| DGID, Lois et reglements: read for rates table and recent measures (Loi 2025-17) | https://www.dgid.sn/loi-reglement | 2026-11-14 |
+| Loi n. 2025-19, finance law for 2026 (64-page scan): read by OCR on 2026-11-01, all pages searched: no CGI amendment found; art. 19 adds a cashew export duty. Reopened 2026-11-14, not re-read | https://budget.sec.gouv.sn/documents/public_download/69556841-a9d4-4658-8c1e-fe230a2a028a/telechargement | 2026-11-14 (opened, not re-read) |
+| DGID calendar of annual filings: read for full table | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-14 |
+| DGID SENTAX user guide v1.1, 2026: read for contents and steps | https://www.dgid.sn/storage/uploads/guide-utilisateur-espace-connecte-1790609363.pdf | 2026-11-14 |
+| DGID communique, SENTAX for CME1, CME2 and CPR from 1 October 2026: read in full | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-14 |
+| DGID Entreprises page: read for portal descriptions | https://www.dgid.sn/entreprises | 2026-11-14 |
 
 Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. Benefit-in-kind scale (old version relied on PwC, carried above; art. 166 not worked through); statutory travel allowance; 30% rental deduction; IPM, IPRES and CSS rates (sites unreachable, see senegal-social-contributions); property gains; real regime expense rules for individuals; IR return box numbers; old claims that income from land is taxed at 20% and wages at 11% found no support in art. 173.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `senegal-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/senegal-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `senegal-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/senegal-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

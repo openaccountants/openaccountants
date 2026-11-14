@@ -1,14 +1,15 @@
 ---
 name: de-non-resident-tax
 description: "Use this skill when a person or company that does not live in Germany has German income, or when a German resident needs credit for foreign tax. Tax year 2026. Covers unlimited vs limited liability (§ 1 EStG, §§ 8, 9 AO), the § 1(3) option (90% or EUR 12,348 test), § 1a EU/EEA splitting, German-source income under § 49 EStG, how a non-resident is assessed (§ 50: Grundfreibetrag added back, no splitting), wage tax for non-resident employees, § 50a withholding (15%, 30% on supervisory board fees), § 50c exemption and refund at the BZSt, Kapitalertragsteuer on dividends, and the § 34c and § 32d(5) foreign tax credits. Trigger on: beschränkte Steuerpflicht, non-resident Germany, § 1 Abs. 3 EStG, § 50a, Abzugsteuer, Kapitalertragsteuer Erstattung, Anrechnung ausländischer Steuer. Out of scope: rental computation (de-rental-income), resident employees (de-employee-income-tax), payroll mechanics (de-payroll), corporate tax (de-corporate-tax), exit tax (leaving-germany-exit-tax), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Germany: non-residents with German income, and foreign tax credits, tax year 2026

@@ -4,14 +4,15 @@ description: >
   Burkina Faso corporate income tax reference for the 2026 tax year, covering ordinary IS scope, partnership elections, taxable-profit adjustments, the minimum tax, advance payments and the annual return. Use for questions about the 27.5 percent company tax, loss-making companies, the RNI or RSI minimum, CGA reductions, first-year exemptions, head-office fees, donations and distributions. The Guide separates statutory preparation requirements from unverified form boxes and portal actions. It supplies two recomputing cases, including the minimum-tax decision, and identifies the official 2026 CGI articles read. It does not complete specialist exemptions, permanent-establishment attribution, treaty relief or authenticated filing.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Burkina Faso corporate tax (IS) v1.2
+# Burkina Faso corporate tax (IS) v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

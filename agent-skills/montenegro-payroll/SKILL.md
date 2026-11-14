@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/montenegro-payroll"
   jurisdiction: "ME"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Montenegro payroll, tax year 2026
@@ -28,29 +28,29 @@ This skill computes monthly payroll for employees in Montenegro in 2026: salary 
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Salary PIT, monthly gross personal earnings | 0% to EUR 700.00; 9% on EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 (EUR 27 + 15% of the excess over 1,000) | 2026 (art. 10 as replaced by 160/25 from 1 Jan 2026; salary bands unchanged) | [PIT Law art. 10(1)(1)][pit]; [160/25 art. 3, 21][pit160]; [Instruction art. 3][instr] |
-| PIT on principal self-employment income (annual, not payroll) | 0% to EUR 8,400; 9% to EUR 12,000; 15% above | 2026 | [PIT Law art. 10(1)(2)][pit] |
-| PIT on supplementary entrepreneurship, occasional self-employment, property, capital, capital gains and other income (not payroll) | 15% | 2026 | [PIT Law art. 10(1)(3)][pit] |
-| PIO (pension and disability), employee | 10% of gross (15% until 30 Sep 2024) | 2026 | [Contributions Law art. 15(1)][contrib]; [94/24 art. 1, 3][c94]; [Instruction art. 4][instr] |
-| PIO, employer | 0% (5.5% until 30 Sep 2024) | 2026 | [Contributions Law art. 15(1)][contrib]; [94/24 art. 1, 3][c94]; [Instruction art. 5][instr] |
-| Unemployment insurance | 0.5% employee + 0.5% employer | 2026 | [Contributions Law art. 18(1)][contrib]; [Instruction arts. 4-5][instr] |
-| Health insurance contribution | none (the law lists only PIO and unemployment; IOPPD health columns are for periods to December 2021) | 2026 | [Contributions Law art. 2][contrib]; [IOPPD Rulebook, instructions cols. 10, 13][ioppd] |
-| Labour Fund (Fond rada), employer | 0.2% of gross | 2026 | [Instruction art. 5][instr] |
-| Additional PIO for service counted at an increased rate, employer | 6%, 9%, 12%, 18% or 28% by category (12 months counted as 14, 15, 16, 18 or 24) | 2026 | [Contributions Law art. 16][contrib] |
-| Municipal surtax (prirez) | rate set by each municipality, up to 13% of the PIT; up to 15% in Podgorica (Glavni grad) and Cetinje (Prijestonica) | 2026 | [Local Self-Government Financing Law arts. 8-9][local]; [Instruction art. 6][instr] |
-| Chamber of Economy membership dues | 0.27% of the gross salaries reported in IOPPD (entrepreneurs: 0.27% of GPP-FL self-employment income) | 2026 | [Chamber decision 151/25 points 1-3, 6][chamber] |
-| Chamber of Crafts membership dues (persons in the Register of Craftsmen) | 0.27% on the same bases | 2026 (from 6 Mar 2026) | [Chamber of Crafts decision 30/26 arts. 1-3, 6][crafts] |
-| Disability-employment quota | 20 to 50 employees: at least 1 person with disability; over 50: at least 5% of staff (below 0.5 rounds down, 0.5 and above rounds up) | 2026 | [Disability Employment Law art. 21][dis] |
-| Special disability contribution | 20% of the prior-year average monthly salary in Montenegro for each quota place not filled; 5% of that average a month for an employer with more than 10 and fewer than 20 employees and no employee with disability | 2026 | [Disability Employment Law art. 22][dis] |
-| Contribution-free winter supplies payment (zimnica) | up to 70% of the prior-year average monthly gross salary | 2026 (160/25, from 1 Jan 2026) | [Contributions Law art. 18a(2)][contrib]; [160/25 contributions art. 5, 8][c160] |
-| PIO maximum annual base (excess refunded after year end) | EUR 75,453 for 2025; the 2026 amount is set later by Ministry rulebook | 2025 | [Contributions Law arts. 14, 22][contrib]; [Rulebook 134/25 art. 1][cap2025] |
-| Net minimum wage floor | not below EUR 600 net (jobs up to qualification level V) or EUR 800 net (level VI and above); part-time pro rata | 2026 (floors from 1 Oct 2024; pro rata rule from 23 Apr 2026) | [Labour Law art. 101(2) as amended by 86/24 art. 2-3][lab86]; [51/26 art. 31][lab51] |
-| IOPPD monthly report | by the 15th of the month for the previous month, electronically | 2026 | [PIT Law art. 47(3)][pit]; [IOPPD Rulebook arts. 5, 7][ioppd] |
-| Contributions payment | with the salary payment; outer deadline the 15th of the month for the previous month | 2026 | [Instruction art. 7][instr]; [Contributions Law art. 21(1)][contrib] |
-| Annual earnings statement to each employee | by 31 January for the previous year | 2026 | [PIT Law art. 47(1)][pit]; [Instruction art. 9][instr] |
-| Late-payment interest | 0.03% a day to 17 Jul 2026; 5.4% a year from 18 Jul to 31 Dec 2026 | 2026 | [Tax Administration Law art. 95, before 104/26][tal-old]; [104/26 TAL arts. 20, 26][tal104]; [Tax Administration decision, 24 Jul 2026][kamata] |
+| Salary PIT, monthly gross personal earnings | 0% to EUR 700.00; 9% on EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 (EUR 27 + 15% of the excess over 1,000) | 2026 (art. 10 as replaced by 160/25 from 1 Jan 2026; salary bands unchanged) | [PIT Law art. 10(1)(1)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [160/25 art. 3, 21](https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0); [Instruction art. 3](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| PIT on principal self-employment income (annual, not payroll) | 0% to EUR 8,400; 9% to EUR 12,000; 15% above | 2026 | [PIT Law art. 10(1)(2)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| PIT on supplementary entrepreneurship, occasional self-employment, property, capital, capital gains and other income (not payroll) | 15% | 2026 | [PIT Law art. 10(1)(3)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0) |
+| PIO (pension and disability), employee | 10% of gross (15% until 30 Sep 2024) | 2026 | [Contributions Law art. 15(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [94/24 art. 1, 3](https://www.sluzbenilist.me/propisi/373700/download); [Instruction art. 4](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| PIO, employer | 0% (5.5% until 30 Sep 2024) | 2026 | [Contributions Law art. 15(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [94/24 art. 1, 3](https://www.sluzbenilist.me/propisi/373700/download); [Instruction art. 5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| Unemployment insurance | 0.5% employee + 0.5% employer | 2026 | [Contributions Law art. 18(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [Instruction arts. 4-5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| Health insurance contribution | none (the law lists only PIO and unemployment; IOPPD health columns are for periods to December 2021) | 2026 | [Contributions Law art. 2](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [IOPPD Rulebook, instructions cols. 10, 13](https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0) |
+| Labour Fund (Fond rada), employer | 0.2% of gross | 2026 | [Instruction art. 5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| Additional PIO for service counted at an increased rate, employer | 6%, 9%, 12%, 18% or 28% by category (12 months counted as 14, 15, 16, 18 or 24) | 2026 | [Contributions Law art. 16](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Municipal surtax (prirez) | rate set by each municipality, up to 13% of the PIT; up to 15% in Podgorica (Glavni grad) and Cetinje (Prijestonica) | 2026 | [Local Self-Government Financing Law arts. 8-9](https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0); [Instruction art. 6](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| Chamber of Economy membership dues | 0.27% of the gross salaries reported in IOPPD (entrepreneurs: 0.27% of GPP-FL self-employment income) | 2026 | [Chamber decision 151/25 points 1-3, 6](https://www.sluzbenilist.me/propisi/389055/download) |
+| Chamber of Crafts membership dues (persons in the Register of Craftsmen) | 0.27% on the same bases | 2026 (from 6 Mar 2026) | [Chamber of Crafts decision 30/26 arts. 1-3, 6](https://www.sluzbenilist.me/propisi/391034/download) |
+| Disability-employment quota | 20 to 50 employees: at least 1 person with disability; over 50: at least 5% of staff (below 0.5 rounds down, 0.5 and above rounds up) | 2026 | [Disability Employment Law art. 21](https://www.zzzcg.me/wp-content/uploads/2018/01/Zakon-o-profesionalnoj-rehabilitaciji-i.pdf) |
+| Special disability contribution | 20% of the prior-year average monthly salary in Montenegro for each quota place not filled; 5% of that average a month for an employer with more than 10 and fewer than 20 employees and no employee with disability | 2026 | [Disability Employment Law art. 22](https://www.zzzcg.me/wp-content/uploads/2018/01/Zakon-o-profesionalnoj-rehabilitaciji-i.pdf) |
+| Contribution-free winter supplies payment (zimnica) | up to 70% of the prior-year average monthly gross salary | 2026 (160/25, from 1 Jan 2026) | [Contributions Law art. 18a(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 contributions art. 5, 8](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
+| PIO maximum annual base (excess refunded after year end) | EUR 75,453 for 2025; the 2026 amount is set later by Ministry rulebook | 2025 | [Contributions Law arts. 14, 22](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [Rulebook 134/25 art. 1](https://www.sluzbenilist.me/propisi/387933/download) |
+| Net minimum wage floor | not below EUR 600 net (jobs up to qualification level V) or EUR 800 net (level VI and above); part-time pro rata | 2026 (floors from 1 Oct 2024; pro rata rule from 23 Apr 2026) | [Labour Law art. 101(2) as amended by 86/24 art. 2-3](https://www.sluzbenilist.me/propisi/387096/download); [51/26 art. 31](https://www.sluzbenilist.me/propisi/393230/download) |
+| IOPPD monthly report | by the 15th of the month for the previous month, electronically | 2026 | [PIT Law art. 47(3)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [IOPPD Rulebook arts. 5, 7](https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0) |
+| Contributions payment | with the salary payment; outer deadline the 15th of the month for the previous month | 2026 | [Instruction art. 7](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0); [Contributions Law art. 21(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
+| Annual earnings statement to each employee | by 31 January for the previous year | 2026 | [PIT Law art. 47(1)](https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0); [Instruction art. 9](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
+| Late-payment interest | 0.03% a day to 17 Jul 2026; 5.4% a year from 18 Jul to 31 Dec 2026 | 2026 | [Tax Administration Law art. 95, before 104/26](https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0); [104/26 TAL arts. 20, 26](https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0); [Tax Administration decision, 24 Jul 2026](https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0) |
 
-The May 2026 amendment (Official Gazette 70/26, in force 21 May 2026) changed only the rate on gambling winnings to 12% (PIT Law art. 10(1)(4)); the salary bands are unchanged ([70/26 arts. 1, 3][pit70]).
+The May 2026 amendment (Official Gazette 70/26, in force 21 May 2026) changed only the rate on gambling winnings to 12% (PIT Law art. 10(1)(4)); the salary bands are unchanged ([70/26 arts. 1, 3](https://www.sluzbenilist.me/propisi/394390/download)).
 
 ## The taxable base
 
@@ -510,4 +510,4 @@ Not yet confirmed: which General Collective Agreement sets the lowest contributi
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `montenegro-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/montenegro-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `montenegro-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/montenegro-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

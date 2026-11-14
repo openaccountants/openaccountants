@@ -1,14 +1,15 @@
 ---
 name: nl-dividend-withholding
 description: "Dutch dividend tax (dividendbelasting) and the conditional withholding tax (bronbelasting) on interest, royalties and dividends, for tax year 2026, plus how a non-resident company with a Dutch permanent establishment is taxed. Covers the 15% dividend tax, the domestic and EU/EEA/treaty participation exemptions with the anti-abuse test, treaty reductions at source (IB 92 Universeel) and refunds, the one-month return, the 25.8% conditional withholding tax on payments to affiliates in the 2026 low-tax list, the credit of dividend tax against it, the annual return, gross-ups and penalties. Trigger on: dividendbelasting, dividend tax Netherlands, withholding on a BV dividend, IB 92, kwalificatiebeschikking, bronbelasting, conditional withholding tax, low-tax jurisdiction, opgaaf dividendbelasting, buitenlandse belastingplichtige, Dutch permanent establishment. Out of scope: the BV's own corporate tax (nl-corporate-tax), the shareholder's box 2 tax (nl-box2-substantial-interest), residence and emigration (nl-cross-border), transfer pricing (netherlands-transfer-pricing)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
 # Netherlands: dividend tax and conditional withholding tax (2026)

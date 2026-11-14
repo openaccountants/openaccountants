@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/georgia-social-contributions"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Georgia (country): social contributions and the funded pension (2026) v0.2
+# Georgia (country): social contributions and the funded pension (2026) v0.3
 
 Georgia's mandatory contribution on earnings is the funded pension. The employee pays 2%, the employer adds 2%, and the state adds up to 2%. A self-employed person who joins pays 4%. The money goes to the participant's individual account at the Pension Fund of Georgia (pensions.ge). The Tax Code lists the national taxes as income tax, profit tax, VAT, excise and import duty, and property tax as the local tax (Tax Code art. 6(5)-(6)); none of them is a social security, health or unemployment tax on pay. Figures below are from the Law of Georgia on Funded Pension (No 3303, 21 July 2018), Georgian consolidated text to the law of 16 September 2026, and the Tax Code of Georgia, consolidated to the law of 15 October 2026 (publication 247).
 
@@ -29,20 +29,20 @@ Georgia's mandatory contribution on earnings is the funded pension. The employee
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Employer contribution, at its own cost | 2% of the employee's taxable salary | 2026 | Law on Funded Pension art. 3(6)(a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
-| Employee contribution, withheld by the employer | 2% of taxable salary | 2026 | art. 3(6)(b), same URL |
-| Self-employed contribution | 4% of self-employed income for the period | 2026 | art. 3(6)(d), same URL |
-| State contribution, first GEL 24,000 of the calendar year's salary or income | 2% | 2026 | art. 3(6)(e.a), same URL |
-| State contribution, from GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), same URL |
-| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), same URL |
-| Total paid into an employee's account (employee + employer + state) | 6% of salary within the first GEL 24,000 of the year, 5% from GEL 24,000 to GEL 60,000, 4% above GEL 60,000 | 2026 | art. 3(6)(a), (b), (e), (f), same URL |
-| Ceiling on the employee, employer or self-employed contribution | none set | 2026 | art. 3(6)(a), (b), (d), same URL |
-| Age test for mandatory joining | 60 for men, 55 for women, before the Law came into force | 2026 | art. 3(2), 21(1), same URL |
-| Opt-out window (employees 40 or older before the Law) | not earlier than 3 months and within 5 months of enrolment | 2026 | art. 22(1), same URL |
-| Fine for an employer's missed or late contribution | GEL 300 | 2026 | art. 37^3(1), same URL |
-| Fine cancelled if paid in full | within 10 working days of the fine | 2026 | art. 37^3(2), same URL |
-| No breach if a month's total contributions are | GEL 1 or less | 2026 | art. 37^3(3)(c), same URL |
+| Employee contribution, withheld by the employer | 2% of taxable salary | 2026 | art. 3(6)(b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Self-employed contribution | 4% of self-employed income for the period | 2026 | art. 3(6)(d), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, first GEL 24,000 of the calendar year's salary or income | 2% | 2026 | art. 3(6)(e.a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, from GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Total paid into an employee's account (employee + employer + state) | 6% of salary within the first GEL 24,000 of the year, 5% from GEL 24,000 to GEL 60,000, 4% above GEL 60,000 | 2026 | art. 3(6)(a), (b), (e), (f), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Ceiling on the employee, employer or self-employed contribution | none set | 2026 | art. 3(6)(a), (b), (d), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Age test for mandatory joining | 60 for men, 55 for women, before the Law came into force | 2026 | art. 3(2), 21(1), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Opt-out window (employees 40 or older before the Law) | not earlier than 3 months and within 5 months of enrolment | 2026 | art. 22(1), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Fine for an employer's missed or late contribution | GEL 300 | 2026 | art. 37^3(1), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Fine cancelled if paid in full | within 10 working days of the fine | 2026 | art. 37^3(2), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| No breach if a month's total contributions are | GEL 1 or less | 2026 | art. 37^3(3)(c), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
 | Employer and state contributions in the employee's salary | not salary | 2026 | Tax Code art. 101(3)(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Contributions to the individual account, returns on them, pensions paid under arts. 32-34(3) | exempt from income tax, with the exceptions in art. 82(1)(b3.a)-(b3.c) | 2026 | Tax Code art. 82(1)(b3), same URL |
+| Contributions to the individual account, returns on them, pensions paid under arts. 32-34(3) | exempt from income tax, with the exceptions in art. 82(1)(b3.a)-(b3.c) | 2026 | Tax Code art. 82(1)(b3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -171,4 +171,4 @@ Not yet confirmed: the exact date of the 60/55 and 40+ age tests (the Law came i
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

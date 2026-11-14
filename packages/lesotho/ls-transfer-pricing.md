@@ -1,19 +1,20 @@
 ---
 name: ls-transfer-pricing
 description: "Lesotho transfer pricing for the 2026-27 year of assessment (1 April 2026 to 31 March 2027) under section 113 of the Income Tax Act 1993 as amended. Covers who is an associate (the directions or wishes test in section 3), the Commissioner General's power to distribute, apportion or allocate gross income, deductions and credits between associates, the commensurate-with-income rule for intangibles, recharacterisation of source and of revenue or capital, market value on non-arm's length disposals (s.61), disguised distributions taxed as dividends (s.88), the four-year window for amended assessments, records and additional tax, and Article 9 of the South Africa treaty. Lesotho has no transfer pricing regulations, documentation rule or advance pricing agreement in the law read. Trigger on: Lesotho transfer pricing, related party Lesotho, associates section 113, RSL TP adjustment, management fees to parent Lesotho, arm's length Lesotho. Out of scope: treaty mutual agreement procedure in depth, mining agreements."
-version: 0.1
+version: 0.2
 jurisdiction: LS
 category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - ls-corporate-income-tax
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.1
+# Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

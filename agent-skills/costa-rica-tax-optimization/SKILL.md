@@ -1,79 +1,105 @@
 ---
 name: costa-rica-tax-optimization
-description: "Use this skill whenever asked about reducing tax in Costa Rica, tax planning, or legal strategies to minimise tax for a small business or self-employed person in Costa Rica. Trigger on phrases like \"reduce tax Costa Rica\", \"régimen simplificado Costa Rica\", \"RTS\", \"territorial taxation\", \"PYME exemption\", \"Costa Rica dividends 15%\", \"save tax Costa Rica\", \"tax planning Costa Rica\". This skill covers the Régimen de Tributación Simplificada, the territorial system (only CR-source income taxed), the traditional ISR regime and exempt minimum, dividends, and the eligibility/anti-avoidance red lines. ALWAYS read this skill before advising on any Costa Rican tax optimisation."
+description: "Use this skill when someone asks how to lawfully reduce income tax in Costa Rica in 2026. It works the main levers to the figure that decides them: operating in one's own name on the lucrative activity table (not subject to CRC 6,244,000) or through a small company on the 5% to 20% table (gross income up to CRC 119,174,000), the cliff when a company's gross income passes CRC 119,174,000, claiming the family credits, and the red lines (territorial source rules, simplified regime eligibility, substance). Trigger phrases include reduce tax Costa Rica, planificacion fiscal, persona fisica o sociedad, PYME tramos and regimen simplificado."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/costa-rica-tax-optimization"
   jurisdiction: "CR"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Costa Rica Tax Optimization
+# Costa Rica tax planning levers, 2026
 
-## Costa Rica Tax Optimization Skill v0.1
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed by a Costa Rican adviser. Aggressive positions are never advised; every suggestion needs review by a qualified professional in Costa Rica.
 
-**Tier 2 — research-verified. Sources: Ministerio de Hacienda / DGT, PwC Costa Rica. Figures must agree with `costa-rica-income-tax.md` / `costa-rica-social-contributions.md`. NOT yet signed off by a Costa Rican tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
+## Who this applies to
 
-## Section 1 -- Quick Reference
+Self-employed individuals and owner-managed businesses in Costa Rica choosing how to structure income in 2026. The tables are owned by [costa-rica-income-tax](costa-rica-income-tax.md); this skill compares options.
 
-**Quick Reference table**
+Red lines: Costa Rica taxes Costa Rican-source income, so only genuinely foreign-source income is outside scope, and relabelling local income is not planning; the Regimen de Tributacion Simplificada needs its eligibility limits checked before electing; any structure needs real substance.
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Costa Rica |
-| Currency | CRC (colón, ₡) |
-| Headline levers | **Territorial system** (only CR-source income taxed); Régimen Simplificado for small business; exempt minimum |
-| ISR (self-employed/individual) | Progressive; **exempt up to ~₡10,104,000/yr** (~USD 19,800) |
-| Dividends / passive income | 15% |
-| Anti-avoidance | Régimen Simplificado eligibility; substance |
+## Rates, bands and thresholds
 
-> **Costa Rica is TERRITORIAL — only Costa-Rica-source income is taxed.** Genuinely foreign-source income is outside scope. Plus a **Régimen de Tributación Simplificada** for qualifying small businesses and a sizeable exempt minimum.
+| Item | 2026 figure | Source |
+| --- | --- | --- |
+| Lucrative activity, not subject | Up to CRC 6,244,000 of renta neta | Hacienda, Tramos del impuesto sobre la renta 2026: https://www.hacienda.go.cr/docs/TramosRenta2026.pdf |
+| Lucrative activity, top rate | 25% above CRC 20,872,000 | same |
+| Small legal person table | 5% to CRC 5,621,000, 10% to 8,433,000, 15% to 11,243,000, 20% above | same |
+| Gross income ceiling for the small table | CRC 119,174,000 | same |
+| Family credits, annual | CRC 20,520 per child, CRC 31,080 spouse | same |
 
-## Section 2 -- Territorial System (the big lever)
+## The base
 
-- **Territorial taxation scope** — Only Costa-Rica-source income is subject to ISR; genuinely foreign-source income is generally not taxed. Important for residents with international income — but the source rules are fact-specific and increasingly scrutinised (passive-income / shell rules).
+Individuals: renta neta of the activity on the annual table, less credits. Small companies: renta neta on the 5% to 20% table if the period's gross income is not above CRC 119,174,000; otherwise the general corporate rate (see Not yet confirmed). Profit taken out of a company bears a further tax on distribution, not computed here.
 
-**AUDIT FLASH POINT — confirm the income is genuinely foreign-source; "Costa Rican economic structure" can drag income into scope.**
+## Deadlines and filing
 
-## Section 3 -- Régimen de Tributación Simplificada (RTS)
+Annual returns (forms 101 and 102) in TRIBU-CR by mid-March of the following year (16 March 2026 for period 2025, Hacienda CP-11-2026).
 
-**RTS feature table**
+## Penalties and interest
 
-| Feature | Detail |
-| --- | --- |
-| Who | Small taxpayers meeting the limits |
-| Limits (2026) | Annual purchases up to ~₡85,969,200; **max 5 employees**; single establishment; fixed assets ≤ 350 base salaries |
-| VAT | RTS taxpayers **do not charge VAT** on sales |
-| ISR | Computed by applying a "rent factor" to the quarterly purchase base (form D-105-2) |
+Late filing: half a salario base (CRC 231,100); late payment 1% a month up to 20% (Hacienda 2026 summary). Misreporting source or splitting a business artificially exposes the taxpayer to adjustments and fines.
 
-Simple and low-admin for qualifying micro-businesses. (PwC; Hacienda) The 2025 reform took effect 13 Oct 2025.
+## Cross-border points
 
-## Section 4 -- Traditional Regime & Extraction
+Territorial basis: income from Costa Rican sources. Confirm the source of any foreign client income before excluding it; payments abroad bear the remittance tax (not covered).
 
-- **Exempt minimum usage** — Self-employed/individual ISR is progressive with an exempt minimum (~₡10.1m) — ensure it's used.
-- **Dividends / passive income rate** — 15% (A company pays corporate ISR, then 15% on distribution.)
+## Two worked examples that recompute
 
-PYME registration can unlock graduated/SME reliefs. **[RESEARCH GAP — reviewer to confirm current PYME income-tax relief.]**
+### Example 1: own name or small company at CRC 15,000,000
 
-## Section 5 -- Red Lines (do not cross)
+Individual: CRC 1,438,450. Small company: CRC 1,735,150 before distribution tax. The individual route is CRC 296,700 cheaper at this level.
 
-- **Source rules red line** — Foreign-source exemption only applies to genuinely foreign income — don't relabel Costa-Rican-source income.
-- **RTS eligibility red line** — RTS eligibility (purchases, employees, single establishment, asset cap) — confirm before electing.
-- **Substance requirement** — Substance for any structure.
+```oa-check
+name: CR 2026 individual against small company
+inputs:
+  net: 15000000
+steps:
+  - individual: (8329000 - 6244000) * 0.10 + (10414000 - 8329000) * 0.15 + (net - 10414000) * 0.20
+  - company: 5621000 * 0.05 + (8433000 - 5621000) * 0.10 + (11243000 - 8433000) * 0.15 + (net - 11243000) * 0.20
+  - difference: company - individual
+expected:
+  individual: 1438450
+  company: 1735150
+  difference: 296700
+```
 
-## PROHIBITIONS
+### Example 2: the CRC 119,174,000 gross income cliff
 
-- **Territorial exemption unconfirmed** — NEVER assert the territorial exemption without confirming the income is genuinely foreign-source.
-- **RTS limits omission** — NEVER present RTS without its purchase/employee/establishment limits.
-- **Rate contradiction** — NEVER contradict the rates in `costa-rica-income-tax.md` / `costa-rica-social-contributions.md`.
-- **Research gap as fact** — NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice — route to a licensed Costa Rican tax adviser.
+A company with renta neta CRC 20,000,000 pays CRC 2,735,150 on the small table while its gross income stays at or below CRC 119,174,000. One colón more of gross income moves the whole renta neta to the general corporate rate, which was not confirmed on an official page for this version (see Not yet confirmed): compute the cost of crossing the ceiling only once that rate is confirmed. Watch gross income near the ceiling; do not split the business artificially to stay under it.
 
-## Disclaimer
+```oa-check
+name: CR 2026 small company table at renta neta 20 million
+inputs:
+  net: 20000000
+steps:
+  - small_table: 5621000 * 0.05 + (8433000 - 5621000) * 0.10 + (11243000 - 8433000) * 0.15 + (net - 11243000) * 0.20
+  - effective_rate: round(small_table / net, 4)
+expected:
+  small_table: 2735150
+  effective_rate: 0.1368
+```
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Costa Rica) before acting upon.
+## Ask the client first
+
+1. Expected renta neta and gross income for the year.
+2. Individual or company today, and how much profit will be taken out.
+3. Spouse and children who qualify for credits.
+4. Clients abroad and where the work is done.
+5. Interest in the simplified regime (purchases, staff, premises).
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for Hacienda, Tramos del impuesto sobre la renta 2026: lucrative activity and small legal person tables, credits | https://www.hacienda.go.cr/docs/TramosRenta2026.pdf | 2026-11-14 |
+| Read for Hacienda notice CP-11-2026: forms and the 16 March 2026 deadline | https://www.hacienda.go.cr/docs/CP11-2026.pdf | 2026-11-14 |
+| Read for Hacienda, Infracciones y sanciones administrativas mas relevantes (2026) | https://www.hacienda.go.cr/docs/InfraccionesYSancionesAdministrativasMasRelevantes.pdf | 2026-11-14 |
+
+Not yet confirmed: the general corporate rate (30% in the old file); the tax on distributed profits (15% in the old file); the Regimen de Tributacion Simplificada limits (the old file gave purchases up to about CRC 85,969,200, at most 5 employees, one establishment, assets up to 350 base salaries); PYME reliefs; the old file's "exempt up to about CRC 10,104,000" was wrong for 2026 (the 2026 not-subject amount is CRC 6,244,000).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `costa-rica-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/costa-rica-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `costa-rica-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/costa-rica-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

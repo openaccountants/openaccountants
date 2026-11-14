@@ -3,15 +3,16 @@ name: gn-company-formation
 description: "Guinea company-formation and first-year compliance workflow for 2026, based on APIP's current published procedures and the OHADA Uniform Act on commercial companies. Use it to compare an individual business, SARL, SAS and foreign branch, collect the relevant incorporation evidence, distinguish subscribed capital from money paid in, reconcile the published APIP fee routes, and retain RCCM, tax identification and publication outputs. It also sets company-law accounts approval and registry-deposit controls. The statutory basis of Guinea-specific SARL and SA capital guidance remains unresolved; the regional CFA amount must not be relabelled as Guinean francs. Sector permissions, audit appointment, beneficial ownership, tax registration details and full accounting or tax filing methods need separate review."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 1.1
+version: 1.2
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Guinea company formation and entity choice v1.1
+# Guinea company formation and entity choice v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

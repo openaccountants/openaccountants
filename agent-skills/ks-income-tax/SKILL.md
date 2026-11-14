@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ks-income-tax"
   jurisdiction: "US-KS"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # Kansas individual income tax, tax year 2026
@@ -50,14 +50,14 @@ Kansas individual taxpayers filing Form K-40, with this skill focused on sole pr
 | Taxable income | Rate | Tax calculation |
 | --- | --- | --- |
 | $0 to $23,000 | 5.20% | 5.20% of Kansas taxable income ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
-| Over $23,000 | 5.58% | $1,196 + 5.58% of excess over $23,000 |
+| Over $23,000 | 5.58% | $1,196 + 5.58% of excess over $23,000 ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
 
 **Married Filing Jointly bracket table**  _(K.S.A. 79-32,110(B))_
 
 | Taxable income | Rate | Tax calculation |
 | --- | --- | --- |
 | $0 to $46,000 | 5.20% | 5.20% of Kansas taxable income ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
-| Over $46,000 | 5.58% | $2,392 + 5.58% of excess over $46,000 |
+| Over $46,000 | 5.58% | $2,392 + 5.58% of excess over $46,000 ([K.S.A. 79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html)) |
 
 **Note:** These two-bracket rates replaced the prior three-bracket system (3.1% / 5.25% / 5.7%) effective for tax year 2024 under Senate Bill 1 (2024).
 
@@ -168,7 +168,7 @@ Kansas individual taxpayers filing Form K-40, with this skill focused on sole pr
 | Obligation | When | Source |
 | --- | --- | --- |
 | Form K-40, calendar-year filers | The 15th day of the 4th month after year end, so April 15 of the following year (April 15, 2027 for 2026) | [K.S.A. 79-3221(b)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html); [KDOR 2025 booklet](https://www.ksrevenue.gov/incomebook25.html) |
-| Extension | A K-40 filed by the federal due date including any IRS extension is on time; no separate Kansas extension request is needed (tax years after 2019). The extension covers filing only: [K.S.A. 79-3228](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0028.html) penalties are waived when 90% of the liability is paid by the original due date | K.S.A. 79-3221(c)(1), (c)(3) |
+| Extension | A K-40 filed by the federal due date including any IRS extension is on time; no separate Kansas extension request is needed (tax years after 2019). The extension covers filing only: [K.S.A. 79-3228](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0028.html) penalties are waived when 90% of the liability is paid by the original due date | [K.S.A. 79-3221(c)(1), (c)(3)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html) |
 | Estimated tax, Form K-40ES: 1st quarter | April 15 | [K.S.A. 79-32,103](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0103.html); KDOR 2025 booklet |
 | 2nd quarter | June 15 | K.S.A. 79-32,103 |
 | 3rd quarter | September 15 | K.S.A. 79-32,103 |
@@ -273,4 +273,4 @@ Not yet confirmed: whether Kansas decouples from IRC §179 / bonus depreciation 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ks-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ks-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ks-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ks-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
