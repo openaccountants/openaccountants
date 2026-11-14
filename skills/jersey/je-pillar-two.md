@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 statutory snapshot; fiscal years beginning on or after 1 January 2025, with separate 2025 MCIT version"
 tier: 2
-last_updated: 2026-10-15
-version: 1.2
-review_status: pending_review
+type: situation-rules
+last_updated: 2026-11-14
+version: 1.3
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
@@ -27,7 +27,9 @@ depends_on:
 
 # Jersey Pillar Two: enacted rules and administration
 
-## Scope and source periods
+Tax year: fiscal years beginning on or after 1 January 2025, including those ending in 2026 (MCIT consolidation from 1 January 2026). Currency: the ultimate parent's consolidated accounting currency for GloBE amounts; GBP for payment. Authority: Revenue Jersey.
+
+## Who this applies to
 
 Jersey's Multinational Corporate Income Tax (MCIT) is a domestic corporate income tax. Income Inclusion Rule (IIR) tax is a separate parent-entity obligation. MCIT is not a qualified domestic minimum top-up tax (QDMTT); do not apply QDMTT safe-harbour consequences to it or add the two liabilities mechanically. The [technical guidance](https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/PillarTwoGuidance.aspx) explains these distinctions and states that MCIT does not use the substance-based income exclusion.
 
@@ -39,7 +41,7 @@ The current MCIT consolidation applies from 1 January 2026. Its Article 1 names 
 
 The [OECD updated central record](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/updated-central-record-for-purposes-of-the-global-minimum-tax.pdf), approved 11 May 2026 and current to 1 May 2026, lists Jersey's IIR Law with **transitional qualified status effective 1 January 2025**. This is dated recognition, not permanent status or an independently verified October 2026 list. Recheck the applicable jurisdictions and periods for an actual IIR ordering decision.
 
-## MCIT entities and reporting responsibility
+### MCIT entities and reporting responsibility
 
 [MCIT Articles 4 and 7 to 9](https://www.jerseylaw.je/laws/current/l_7_2025) apply modified location rules, including Jersey flow-through/reverse-hybrid and permanent-establishment branches. A Jersey constituent entity is located in Jersey and is not an investment entity, insurance investment entity or securitisation entity under the applicable definitions. Do not equate every Jersey-incorporated entity, fund or trust with a Jersey constituent entity.
 
@@ -47,7 +49,26 @@ Article 8 selects the Jersey constituent entity that is the ultimate parent; oth
 
 [Article 23](https://www.jerseylaw.je/laws/current/l_7_2025) requires the reporting entity of an **in-scope** group to register each Jersey constituent entity, even where an exemption election removes MCIT chargeability. Initial registration is before the first applicable fiscal year ends. A later entrant must be registered before the end of six months beginning on entry; registered-information changes, including departure, must be notified no later than six months after the change. Apply the actual statutory starting wording and prescribed form/manner. Entity exclusion and annual exemption are different branches.
 
-## Annual MCIT exemption and ordinary income tax
+## Rates, bands and thresholds
+
+| Item | Rate or figure | Conditions | Source |
+|---|---|---|---|
+| MCIT rate | 15% of MCIT net GloBE income | Less Article 14 creditable tax; fiscal years beginning on or after 1 January 2025 | [MCIT Law, Arts. 11 to 22](https://www.jerseylaw.je/laws/current/l_7_2025) |
+| Annual exemption Condition A | Average Jersey GloBE revenue below EUR 10 million and average Jersey GloBE income below EUR 1 million (or a loss) | Rule 5.5 averaging over the current and two preceding fiscal years, as modified by Article 5(5) | [MCIT Law, Arts. 5 and 6](https://www.jerseylaw.je/laws/current/l_7_2025) |
+| Annual exemption Condition B | Article 12(1)(d) income less losses before Article 20 relief below GBP 100,000 | Equality fails; from 1 January 2025 | [Minimum Threshold Order, Art. 1](https://www.jerseylaw.je/laws/current/ro_77_2024) |
+| Blended-CFC credit cap | 7.5% of the group's MCIT net GloBE income | Where Article 16 applies; group level, not per entity | [MCIT Law, Art. 17](https://www.jerseylaw.je/laws/current/l_7_2025) |
+| MCIT instalment | 50% of the reasonable estimate, five months after fiscal year end | Reporting entity | [MCIT Law, Arts. 18, 19, 24 and 25](https://www.jerseylaw.je/laws/current/l_7_2025) |
+| MCIT return and balance | Twelve months after fiscal year end | Balance is actual liability less instalment paid | same |
+| IIR notification, GIR and IIR return and payment | 18 months after the first applicable fiscal year ends, then 15 months | Separate from MCIT | [IIR Law, Arts. 13 to 20](https://www.jerseylaw.je/laws/current/l_8_2025) |
+| MCIT registration or change failure | GBP 3,000 | One or more specified failures in a fiscal year | [MCIT Law, Arts. 26 to 38](https://www.jerseylaw.je/laws/current/l_7_2025) |
+| MCIT late return | GBP 300 plus GBP 100 per complete month after the initial one-month period, capped at GBP 1,200 | Per relevant notice | same |
+| IIR notification failure | Up to GBP 3,000 | Comptroller-determined | [IIR Law, Arts. 21 to 33](https://www.jerseylaw.je/laws/current/l_8_2025) |
+| GIR or IIR late return, each failure | GBP 1,000 plus GBP 1,000 per complete month after the initial one-month period, capped at GBP 12,000 | Two filing failures are not merged | same |
+| Inaccurate return penalty | Careless up to 30%; deliberate 30% to 100% of the statutory difference | Qualifying voluntary admission: up to 10%, or 10% to 80% | [MCIT Law, Arts. 26 to 38](https://www.jerseylaw.je/laws/current/l_7_2025) |
+
+## The base
+
+### Annual MCIT exemption and ordinary income tax
 
 [MCIT Articles 5 and 6](https://www.jerseylaw.je/laws/current/l_7_2025) require an annual election and either Condition A or B. No automatic exemption follows from a small tax estimate.
 
@@ -63,7 +84,7 @@ The [current return guidance](https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/
 
 [Income Tax Law Articles 120AB and 120AC](https://www.jerseylaw.je/laws/current/l_29_1961) separately establish relevant-MNE-entity ordinary-tax exemption and disapply specified returns for the qualifying assessment year/period, including part-year apportionment. Establish chargeable-group/entity status and periods before applying them. Generic ordinary-company return guidance and MCIT registration alone do not settle those conditions.
 
-## MCIT income, loss and credit sequence
+### MCIT income, loss and credit sequence
 
 Use [Articles 11 to 22](https://www.jerseylaw.je/laws/current/l_7_2025), with their incorporated Model Rules:
 
@@ -76,7 +97,27 @@ Use [Articles 11 to 22](https://www.jerseylaw.je/laws/current/l_7_2025), with th
 
 The technical page's comparison table can blur credits and income adjustments; the statute supplies their separate steps. These selected rules do not reconstruct all GloBE adjustments, exclusions, deferred taxes, transition rules, restructurings or joint ventures. Unestablished inputs, an apparent negative tax result or a refund require further applicable sources; no unsupported cap, refund or loss attribute is inferred.
 
-## Payments, returns and currency
+### IIR is a separate liability and return
+
+[IIR Articles 6 to 12](https://www.jerseylaw.je/laws/current/l_8_2025) disapply UTPR Rules 2.4 to 2.6 and 9.3. Article 10's Jersey qualifying entity must be non-excluded, own an interest in a non-Jersey constituent entity at some point in the fiscal year and meet the ultimate-parent, intermediate-parent or partially-owned-parent branch. The intermediate-parent branch examines qualified IIR application above it; the partially-owned-parent branch has its own ownership exception. Do not replace the complete statutory test with a general assertion that any parent in a qualified-IIR country removes Jersey obligations.
+
+Article 11 calculates GloBE income, adjusted covered taxes, attributed top-up tax and allocable shares under its specified Rules. Article 12 charges the qualifying entity's total allocable share, payable by the IIR return due date. No IIR amount is derived from MCIT liability alone.
+
+[IIR Articles 13 to 20](https://www.jerseylaw.je/laws/current/l_8_2025) distinguish annual notification, GloBE information return (GIR) and IIR self-assessment. Notification identifies whether the reporting entity is the qualifying entity and, where it is not, the intended GIR filer and relevant jurisdictions. A qualifying entity's GIR duty is subject to Rule 8.1.2. That relief requires a GIR conforming to Rules 8.1.4 to 8.1.6 already filed by the UPE or designated filing entity, located in a jurisdiction with a qualifying automatic-GIR-exchange agreement effective with Jersey for the reporting fiscal year. Intention, agreement signature or foreign qualified-IIR status alone is insufficient. Rule 8.1.3 retains filer identity/location notification; Jersey's separate IIR return/payment and statutory notification must also be checked. Other-language GIRs need an English translation. Article 17 Model Rule elections are made by written notice in the GIR. The separate IIR return includes self-assessment and reasonably required information.
+
+The notification, GIR and IIR return/payment deadlines are **18 months after the first applicable fiscal year ends**, then **15 months** for later fiscal years. These are not the MCIT twelve-month deadline. Verify filing-relief, forms, exchange relationships and date adjustments for the actual period.
+
+### Conditional concessions and remaining technical work
+
+Model Rule 1.5.1 excludes the defined governmental entity, international organisation, nonprofit organisation and pension fund, plus an investment fund or real-estate investment vehicle **that is the UPE**. Rule 1.5.2's ownership extensions require at least 95% of **value** through eligible excluded owners plus the exclusive/almost-exclusive holding/investment or ancillary-activity condition, or at least 85% of value plus substantially all the specified excluded dividend/equity income. Pension services entities are excluded as qualifying owners in these branches. Rule 1.5.3 permits an opt-out for a 1.5.2 entity as a five-year election. Article 10.1's definitions impose further cumulative conditions; a label or percentage alone is insufficient. Trace the ownership path, activities/income and any election. Jersey's Article 7 exclusions are a separate layer.
+
+Its employee-benefit-trust easement keeps registration but dispenses with specified own-income MCIT/ordinary returns only where all registered Jersey constituent entities are EBTs and no MCIT liability arises. Its JPUT concession requires income entitlement as it arises and at least 75% of gross asset value in the specified rental immovable property/ancillary assets. The stated fiscal-year boundary is **ending before 31 December 2026**. Do not include an end date of 31 December 2026 or treat an intention to legislate from January 2027 as enacted law. Other exclusions still need analysis.
+
+Other Model Rule elections require their actual eligibility and duration rules. The technical guidance asks for notification by/with the MCIT return, confirmation of GIR consistency from the ultimate/intermediate parent and supporting analysis. Its listed elections described as unlikely to be required are not categorically prohibited. IIR elections follow its separate Article 17. Complete election, safe-harbour, excluded-entity, restructuring, joint-venture and return-notice mechanics remain open.
+
+## Deadlines and filing
+
+### Payments, returns and currency
 
 [MCIT Articles 18, 19, 24 and 25](https://www.jerseylaw.je/laws/current/l_7_2025) require:
 
@@ -92,17 +133,9 @@ The current return/payment guidance uses the ultimate parent's consolidated acco
 
 The [return guidance](https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/HowToCompleteMCITReturn.aspx) requires constituent-entity income/loss, financial statements and economic-substance details, and identifies supporting calculation, loss, credit, joint-venture and election sections. It specifies financial statements as PDF, maximum 30 MB per entity, and optional calculation support as XLSX, maximum 5 MB. [Submission guidance](https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/CompleteMCITreturn.aspx) routes returns through the Pillar Two Platform. Portal operation, attachments and payment are not tested or performed here.
 
-## IIR is a separate liability and return
+## Penalties and interest
 
-[IIR Articles 6 to 12](https://www.jerseylaw.je/laws/current/l_8_2025) disapply UTPR Rules 2.4 to 2.6 and 9.3. Article 10's Jersey qualifying entity must be non-excluded, own an interest in a non-Jersey constituent entity at some point in the fiscal year and meet the ultimate-parent, intermediate-parent or partially-owned-parent branch. The intermediate-parent branch examines qualified IIR application above it; the partially-owned-parent branch has its own ownership exception. Do not replace the complete statutory test with a general assertion that any parent in a qualified-IIR country removes Jersey obligations.
-
-Article 11 calculates GloBE income, adjusted covered taxes, attributed top-up tax and allocable shares under its specified Rules. Article 12 charges the qualifying entity's total allocable share, payable by the IIR return due date. No IIR amount is derived from MCIT liability alone.
-
-[IIR Articles 13 to 20](https://www.jerseylaw.je/laws/current/l_8_2025) distinguish annual notification, GloBE information return (GIR) and IIR self-assessment. Notification identifies whether the reporting entity is the qualifying entity and, where it is not, the intended GIR filer and relevant jurisdictions. A qualifying entity's GIR duty is subject to Rule 8.1.2. That relief requires a GIR conforming to Rules 8.1.4 to 8.1.6 already filed by the UPE or designated filing entity, located in a jurisdiction with a qualifying automatic-GIR-exchange agreement effective with Jersey for the reporting fiscal year. Intention, agreement signature or foreign qualified-IIR status alone is insufficient. Rule 8.1.3 retains filer identity/location notification; Jersey's separate IIR return/payment and statutory notification must also be checked. Other-language GIRs need an English translation. Article 17 Model Rule elections are made by written notice in the GIR. The separate IIR return includes self-assessment and reasonably required information.
-
-The notification, GIR and IIR return/payment deadlines are **18 months after the first applicable fiscal year ends**, then **15 months** for later fiscal years. These are not the MCIT twelve-month deadline. Verify filing-relief, forms, exchange relationships and date adjustments for the actual period.
-
-## Amendments, defaults, penalties and appeals
+### Amendments, defaults, penalties and appeals
 
 [MCIT Articles 26 to 38](https://www.jerseylaw.je/laws/current/l_7_2025) and [IIR Articles 21 to 33](https://www.jerseylaw.je/laws/current/l_8_2025) create separate routes from ordinary income tax:
 
@@ -117,15 +150,13 @@ The notification, GIR and IIR return/payment deadlines are **18 months after the
 
 MCIT Article 30 and IIR Article 25 condition late-payment simple interest on Regulations specifying a rate. No operative rate instrument is verified here; no amount is calculated and no absence of liability is inferred. MCIT Article 40 enables QRTC Regulations. The technical guidance says no QRTC currently operates, but a complete absence of later legislation is not established by that statement or a search.
 
-## Conditional concessions and remaining technical work
+## Cross-border points
 
-Model Rule 1.5.1 excludes the defined governmental entity, international organisation, nonprofit organisation and pension fund, plus an investment fund or real-estate investment vehicle **that is the UPE**. Rule 1.5.2's ownership extensions require at least 95% of **value** through eligible excluded owners plus the exclusive/almost-exclusive holding/investment or ancillary-activity condition, or at least 85% of value plus substantially all the specified excluded dividend/equity income. Pension services entities are excluded as qualifying owners in these branches. Rule 1.5.3 permits an opt-out for a 1.5.2 entity as a five-year election. Article 10.1's definitions impose further cumulative conditions; a label or percentage alone is insufficient. Trace the ownership path, activities/income and any election. Jersey's Article 7 exclusions are a separate layer.
+IIR ordering depends on the recognition status of other jurisdictions' rules: the OECD updated central record (approved 11 May 2026) lists Jersey's IIR Law with transitional qualified status from 1 January 2025 (see "Who this applies to"). MCIT is not a QDMTT. Article 15 excludes specified PE, CFC, hybrid, reverse-hybrid and distribution taxes from basic covered taxes, and Article 17 allows a capped blended-CFC credit. Ordinary Jersey income tax for relevant MNE group entities is displaced under Income Tax Law Articles 120AB and 120AC; see `je-corporate-income-tax`.
 
-Its employee-benefit-trust easement keeps registration but dispenses with specified own-income MCIT/ordinary returns only where all registered Jersey constituent entities are EBTs and no MCIT liability arises. Its JPUT concession requires income entitlement as it arises and at least 75% of gross asset value in the specified rental immovable property/ancillary assets. The stated fiscal-year boundary is **ending before 31 December 2026**. Do not include an end date of 31 December 2026 or treat an intention to legislate from January 2027 as enacted law. Other exclusions still need analysis.
+## Two worked examples that recompute
 
-Other Model Rule elections require their actual eligibility and duration rules. The technical guidance asks for notification by/with the MCIT return, confirmation of GIR consistency from the ultimate/intermediate parent and supporting analysis. Its listed elections described as unlikely to be required are not categorically prohibited. IIR elections follow its separate Article 17. Complete election, safe-harbour, excluded-entity, restructuring, joint-venture and return-notice mechanics remain open.
-
-## Hypothetical worked positions
+### Hypothetical worked positions
 
 These use established statutory stage inputs and exact arithmetic. They do not validate how accounting data becomes those inputs, operational rounding or consumer execution.
 
@@ -138,7 +169,52 @@ These use established statutory stage inputs and exact arithmetic. They do not v
 
 7. **Condition A uses three years.** Assume the group is in scope, every relevant included entity/year and currency conversion is established, no omission under Rule 5.5.2 or exclusion under 5.5.4 applies, and the comparable current/two-prior-year values are supplied. Jersey GloBE revenue EUR 9 million, EUR 10 million and EUR 8 million averages EUR 9 million. The corresponding Article 12(1)(d) pre-Article-20 income amounts EUR 0.9 million, EUR 1 million and EUR 0.8 million average EUR 0.9 million. Both strict average limits pass; an annual election is still required. This is not the separate two-of-four global revenue test. Sources: MCIT Articles 5 and 6 and Model Rule 5.5.
 
-## Intake, holds and reviewer checks
+**Check of positions 2 and 3: MCIT stages with and without the group CFC cap.**
+
+```oa-check
+name: Jersey MCIT, income GBP 1,000,000 less losses GBP 200,000, basic covered taxes GBP 20,000, CFC amount GBP 70,000
+inputs:
+  income: 1000000
+  losses: 200000
+  basic_covered: 20000
+  cfc_amount: 70000
+steps:
+  - net_globe: max(income - losses, 0)
+  - gross_mcit: net_globe * 0.15
+  - mcit_no_cfc: gross_mcit - basic_covered
+  - cfc_cap: net_globe * 0.075
+  - cfc_credit: min(cfc_amount, cfc_cap)
+  - mcit_with_cfc: gross_mcit - basic_covered - cfc_credit
+expected:
+  net_globe: 800000
+  gross_mcit: 120000
+  mcit_no_cfc: 100000
+  cfc_cap: 60000
+  cfc_credit: 60000
+  mcit_with_cfc: 40000
+```
+
+**Check of positions 4 and 6: changed estimate, and late-return penalties after two further complete months.**
+
+```oa-check
+name: Jersey MCIT instalment on a changed estimate; MCIT and IIR late-return penalties
+inputs:
+  estimate: 100000
+  final_liability: 120000
+  months: 2
+steps:
+  - instalment: estimate * 0.50
+  - balance: final_liability - instalment
+  - mcit_late: min(300 + months * 100, 1200)
+  - iir_late_each: min(1000 + months * 1000, 12000)
+expected:
+  instalment: 50000
+  balance: 70000
+  mcit_late: 500
+  iir_late_each: 3000
+```
+
+## Ask the client first
 
 Obtain group structure and ownership, ultimate-parent accounts/period/currency, revenue history and short-year/restructuring facts, all entity/location/exclusion facts, reporting designation, registration/change dates, ordinary-tax periods, elections, GloBE computations, tax allocations and loss history, payment evidence, notices and service dates. Missing facts and upstream amounts remain unknown, never zero or an assumed exemption.
 
@@ -151,26 +227,23 @@ Obtain group structure and ownership, ultimate-parent accounts/period/currency, 
 
 Every amount and scope/election/filing decision requires reviewer attention, regardless of cash value; this is review policy. Extend the reviewer brief with source versions, entity hierarchy, exemption/ordinary-tax interaction, computation lineage, loss/credit reconciliation, currency dates, registration and separate MCIT/IIR/GIR calendars. Recheck pre-relief thresholds, group-level credit caps, non-duplication, final-liability balance and statutory notice starting dates across all outputs. Required missing rules or outputs hold the complete package.
 
-## Sources and revision
+## Sources
 
 The source library and remaining coverage are in references.md. Current MCIT, its separate 2025 version, IIR Law, Threshold Order and selected official technical/registration/return/payment guidance were read on 15 October 2026. The administrative guide is November 2025 version 1.0 and does not replace later return instructions. Version 1.2 replaces preliminary-only statements with selected enacted mechanics and explicit source conflicts. Selected 2021 Model Rules scope, exclusion, averaging, GIR-relief and definition provisions were checked using native text and targeted OCR for image-based numbering. Complete computation/incorporated Rules, operational outputs, safe harbours, delegated instruments, later recognition and practitioner sign-off remain unverified.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Multinational Corporate Income Tax (Jersey) Law 2025 (consolidation from 1 January 2026), Arts. 1, 3 to 9, 11 to 38: read for scope, entities, exemption, computation, payments and penalties | https://www.jerseylaw.je/laws/current/l_7_2025 | 2026-10-15 |
+| Multinational Corporate Income Tax (Jersey) Law 2025, 2025 version: read for the earlier commentary references | https://www.jerseylaw.je/laws/current/l_7_2025_20251231 | 2026-10-15 |
+| Multinational Taxation (Global Anti-Base Erosion, IIR Tax) (Jersey) Law 2025, Arts. 4, 6 to 33: read for IIR scope, returns and penalties | https://www.jerseylaw.je/laws/current/l_8_2025 | 2026-10-15 |
+| MCIT (Minimum Threshold) (Jersey) Order 2024, Art. 1: read for the GBP 100,000 Condition B threshold | https://www.jerseylaw.je/laws/current/ro_77_2024 | 2026-10-15 |
+| Income Tax (Jersey) Law 1961, Arts. 120AB and 120AC: read for the ordinary-tax exemption | https://www.jerseylaw.je/laws/current/l_29_1961 | 2026-10-15 |
+| Revenue Jersey, Pillar Two technical guidance: read for the MCIT and IIR distinctions | https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/PillarTwoGuidance.aspx | 2026-10-15 |
+| Revenue Jersey, MCIT registration: read for registration duties | https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/MCITRegistration.aspx | 2026-10-15 |
+| Revenue Jersey, How to complete the MCIT return: read for currency conversion and return content | https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/HowToCompleteMCITReturn.aspx | 2026-10-15 |
+| Revenue Jersey, Complete the MCIT return (submission): read for submission | https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/CompleteMCITreturn.aspx | 2026-10-15 |
+| Revenue Jersey, Pay MCIT: read for payment dates and the working-day rule | https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/Pages/PayMultinationalCorporateIncomeTax.aspx | 2026-10-15 |
+| OECD, GloBE Model Rules (2021), Rules 1.1 to 1.5, 5.5 and definitions: read for scope, exclusions and averaging | https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf | 2026-10-15 |
+| OECD, Updated central record for the global minimum tax (current to 1 May 2026): read for Jersey's IIR status | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-minimum-tax/updated-central-record-for-purposes-of-the-global-minimum-tax.pdf | 2026-10-15 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the complete GloBE computation, incorporated Rules, elections, safe harbours, delegated instruments, active exchange relationships, operative interest instruments, rounding, holiday date adjustments to the five- and twelve-month dates, and later recognition status.
