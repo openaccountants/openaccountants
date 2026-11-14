@@ -1,15 +1,16 @@
 ---
 name: switzerland-crypto-tax
 description: Use this skill whenever asked about Switzerland cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax Switzerland", "Bitcoin Switzerland", "cryptocurrency gains Switzerland", "crypto income Switzerland", "staking Switzerland", "mining income Switzerland", "NFT tax Switzerland", "wealth tax crypto", "Vermögenssteuer crypto", "ESTV crypto", "Kursliste crypto", "Kreisschreiben 36", "professional trader crypto Switzerland", "gewerbsmässiger Handel", "Steuererklärung crypto", "Wertschriftenverzeichnis crypto", "canton crypto tax", "Zug crypto", "Swiss crypto valuation", "CARF Switzerland", or any question about the income tax, wealth tax, capital gains, or reporting treatment of cryptocurrency, tokens, or digital assets for Swiss tax residents. Covers tax-free capital gains for private investors, annual wealth tax, ESTV crypto valuations, Kreisschreiben Nr. 36 safe-haven criteria, professional trader classification, and cantonal variations. ALWAYS read this skill before touching any Switzerland crypto work.
-version: 1.0
+version: 1.1
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 depends_on:
   - ch-federal-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: crypto
 ---
 
@@ -155,7 +156,7 @@ Switzerland exchanges financial account data under the Common Reporting Standard
 - **Loss carry-forward.** For tax period 2026, self-employed persons may deduct losses from the seven preceding business years (2019–2025), to the extent the losses were not already used in earlier years (same source).
 - **Private investors.** Keep, for each year, the exchange statements, wallet addresses, the 31 December valuations with their source, the income events with their date and CHF value, and the full trade history. The trade history is the only evidence for the KS 36 holding period and volume tests. Without it, private status cannot be shown if the canton challenges it.
 
-## Figures, with their years
+## Rates, bands and thresholds
 
 | Figure | Value | Year | Source |
 | --- | --- | --- | --- |
@@ -163,11 +164,11 @@ Switzerland exchanges financial account data under the Common Reporting Standard
 | KS 36 criterion 1: minimum holding period | 6 months | Same | Same |
 | KS 36 criterion 2: maximum volume | 5 times the securities and balances at the start of the period | Same | Same |
 | Federal cap on deductible private debt interest | Gross investment income plus CHF 50'000 | Current federal rule quoted in KS 36 | Same |
-| Federal income tax on higher taxable incomes | A flat 11.5% of the whole taxable income | Tax period 2026 tariff | [Wegleitung 2026](https://www.estv.admin.ch/dam/it/sd-web/oQ0wWcDmCJTS/2a-2026-de.pdf) |
+| Federal income tax on higher taxable incomes | A flat 11.5% of the whole taxable income (from CHF 794,000 single, CHF 941,400 married) | Tax period 2026 tariff | [Wegleitung 2026](https://www.estv.admin.ch/dam/it/sd-web/oQ0wWcDmCJTS/2a-2026-de.pdf); [DBG art 36](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
 | Loss carry-forward for the self-employed | 7 preceding years (2019–2025 for 2026) | Tax period 2026 | Same |
 | Retention of self-employment records | 10 years | Tax period 2026 | Same |
-| Cantonal and communal income tax, wealth tax rates and allowances | Set by each canton | Each year | Refer to the canton |
-| Kursliste values at 31 December | Published by the ESTV in ICTax | Each year | **Check** in ICTax |
+
+Not figures this skill can give: cantonal and communal income tax, wealth tax rates and allowances are set by each canton each year (refer to the canton); the 31 December values are published by the ESTV in [ICTax](https://www.estv.admin.ch/de/kurslisten-ictax) each year (check there).
 
 ## Boundaries and exceptions
 
@@ -193,9 +194,42 @@ Switzerland exchanges financial account data under the Common Reporting Standard
 - Gains ratio: CHF 48,000 / CHF 120,000 = 40%, below 50%. Pass. ([KS 36](https://www.estv.admin.ch/dam/de/sd-web/oOz28af293pZ/dbst-ks-2012-1-036-d-de.pdf))
 - All five criteria are met, so the activity is private wealth management and the CHF 48,000 gain is tax-free. Holdings at 31 December go into the securities schedule for wealth tax. ([KS 36](https://www.estv.admin.ch/dam/de/sd-web/oOz28af293pZ/dbst-ks-2012-1-036-d-de.pdf))
 
+```oa-check
+name: Switzerland 2026 crypto KS 36 safe harbour volume and gains tests
+inputs:
+  opening_balance: 200000
+  bought: 150000
+  sold: 350000
+  realised_gain: 48000
+  net_income: 120000
+steps:
+  - volume: bought + sold
+  - volume_limit: opening_balance * 5
+  - volume_headroom: volume_limit - volume
+  - gains_ratio_pct: realised_gain / net_income * 100
+  - gains_headroom_pct: 50 - gains_ratio_pct
+expected:
+  volume: 500000
+  volume_limit: 1000000
+  volume_headroom: 500000
+  gains_ratio_pct: 40
+  gains_headroom_pct: 10
+```
+
 **Case 2: wealth tax valuation.** The client holds 3 BTC on 31 December 2026. **Suppose** the ICTax tax value is CHF 70,000 per BTC (a hypothetical figure; look up the real one). The wealth tax value is 3 × CHF 70,000 = CHF 210,000. It is added to the client's other net wealth and taxed at the canton's tariff after the canton's allowance. ([ESTV Kurslisten](https://www.estv.admin.ch/de/kurslisten-ictax))
 
 **Case 3: pool staking and an airdrop.** In 2026 the client receives staking rewards from a staking pool worth CHF 1,200 in total at the moments of receipt, and an airdrop worth CHF 500 on the day of allocation. Both are taxable income from movable assets: CHF 1,200 + CHF 500 = CHF 1,700 of taxable income. The reward tokens and airdropped tokens held at 31 December are also wealth. A later private sale of them is a tax-free capital gain. ([ESTV working paper](https://www.estv.admin.ch/de/kryptowaehrungen-besteuerung))
+
+```oa-check
+name: Switzerland 2026 crypto staking and airdrop income on receipt
+inputs:
+  staking_rewards: 1200
+  airdrop: 500
+steps:
+  - taxable_income: staking_rewards + airdrop
+expected:
+  taxable_income: 1700
+```
 
 **Case 4: exactly at the volume limit.** Securities and balances at 1 January 2026 are CHF 100,000, and volume in 2026 is CHF 500,000. That is exactly five times, which is "not more than" five times, so criterion 2 passes. The other four criteria must still be checked. ([KS 36](https://www.estv.admin.ch/dam/de/sd-web/oOz28af293pZ/dbst-ks-2012-1-036-d-de.pdf))
 
@@ -241,3 +275,20 @@ Switzerland exchanges financial account data under the Common Reporting Standard
 - [ ] VAT considered for validation, pool or node services
 - [ ] Items marked "check" (CARF date, AHV rate, ICTax values, VAT exemption on exchanges) either confirmed from the official source or left open in the advice
 - [ ] Records kept: 10 years for the self-employed, and the full trade history for private investors
+
+## Sources
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| ESTV, Kreisschreiben Nr. 36 (27 July 2012), professional securities trading | Read for section 3 criteria: 6 months, five times the opening balance, gains below 50% of net income, debt interest cap of gross investment income plus CHF 50,000; sections 4.3 and 5.3 | https://www.estv.admin.ch/dam/de/sd-web/oOz28af293pZ/dbst-ks-2012-1-036-d-de.pdf | 2026-11-14 |
+| ESTV, Wegleitung zur Steuererklärung 2026 (federal) | Read for the 2026 tariff (CHF 800,000 gives CHF 92,000, 11.5%), the seven-year loss carry-forward 2019 to 2025 and the 10-year record retention | https://www.estv.admin.ch/dam/it/sd-web/oQ0wWcDmCJTS/2a-2026-de.pdf | 2026-11-14 |
+| DBG, SR 642.11, version of 2 September 2026 | Read for art 36 (11.5% from CHF 794,000 single and CHF 941,400 married), arts 16 para 3, 17a to 17b, 20 | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html | 2026-11-14 |
+| ESTV, Kryptowährungen: Besteuerung (working paper page) | Read for the classification of payment, asset and utility tokens, staking, airdrops and the valuation fallbacks | https://www.estv.admin.ch/de/kryptowaehrungen-besteuerung | 2026-11-14 |
+| ESTV, Kurslisten (ICTax) | Read for where the 31 December tax values are published | https://www.estv.admin.ch/de/kurslisten-ictax | 2026-11-14 |
+| ESTV, Automatischer Informationsaustausch (AIA) | Read for CRS since 2017, the revised CRS and voluntary disclosure | https://www.estv.admin.ch/de/automatischer-informationsaustausch-aia | 2026-11-14 |
+| ESTV, revised technical guide for AIA (news item) | Read for the revised AIA guide notice | https://www.estv.admin.ch/de/newnsb/b2F6VQ9fb0D6 | 2026-11-14 |
+| ESTV, MWST-Info 04 section 2.7.3.5 | Read for validation and mining of blockchain transactions for VAT | https://www.gate.estv.admin.ch/mwst-webpublikationen/public/pages/displayDocs/cipherPrinterFriendly.xhtml?componentId=1479334&publicationId=1003047&cipherKeyDate=&language=de | 2026-11-14 |
+| ESTV, Leitfaden für neue Steuerpflichtige | Read for "in der Regel 30 Tage" to file, extensions, discretionary assessment and instalments | https://www.estv.admin.ch/dam/de/sd-web/5-fLbzigwEtn/estv-leitfaden-neue-steuerpflichtige-de.pdf | 2026-11-14 |
+| ESTV, Kreisschreiben list (direct federal tax) | Read for the current circulars index | https://www.estv.admin.ch/de/kreisschreiben-direkten-bundessteuer | 2026-11-14 |
+
+Not yet confirmed: the CARF start date in Switzerland; AHV/IV/EO rates for a professional trader (check with the compensation office); ICTax values for 31 December 2025 and 2026; the VAT treatment of exchanging payment tokens beyond MWST-Info 04; cantonal practice on DeFi, NFTs and mining scale.

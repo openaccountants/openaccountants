@@ -1,14 +1,15 @@
 ---
 name: si-corporate-income-tax
 description: "Slovenian corporate income tax (davek od dohodkov pravnih oseb, DDPO) for tax year 2026. Covers who pays (resident companies on worldwide profit, non-residents through a Slovenian PE), the 22% rate for 2024 to 2028 under ZORZFS art. 64 (the ZDDPO-2 art. 60 rate is 19%), the taxable base and non-deductible items, the 50% rules for entertainment and provisions, maximum depreciation rates, the R&D (100%), investment (40%) and digital and green (40%) reliefs, losses (five years, 50% of the base) and the 63% overall cap in art. 59.a, the interest limitation rule (30% of EBITDA or EUR 3 million), advance payments, the return three months after year end, and fines and interest. Trigger phrases: DDPO, davek od dohodkov pravnih oseb, Slovenia corporate tax, d.o.o. tax, akontacija davka, davčna izguba. Out of scope: si-cross-border, si-transfer-pricing, slovenia-income-tax, slovenia-vat-return, slovenia-payroll."
-version: 0.2
+version: 0.4
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Slovenia corporate income tax (DDPO), tax year 2026
@@ -255,4 +256,4 @@ expected:
 
 Not yet confirmed: the 2026 late-payment interest rate (ZDavP-2 art. 96 points to the act on statutory default interest, which was not read); whether FURS requires a particular order between loss relief and other reliefs inside the 63% cap; the Pillar Two minimum tax act, which was not read and is not covered here.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

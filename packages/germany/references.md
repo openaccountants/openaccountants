@@ -1,75 +1,53 @@
 ---
 name: germany-references
 jurisdiction: DE
-last_updated: 2026-06-12
-version: 1.0
-description: Primary source references and related open-source projects for this jurisdiction.
+tax_year: 2026
+last_updated: 2026-11-14
+version: 2.0
+description: Where the official German tax sources are and which Germany skill does which job, tax year 2026, plus the open-source projects earlier Germany skills drew on and how far they can be trusted.
 tier: 2
+type: router
 ---
 
-# Germany — Related Open-Source Projects
+# Germany: official sources and related open-source projects
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-OpenAccountants is AGPL-3.0. All projects below have compatible licenses.
+This file routes. It states no rate or threshold of its own. Every figure the Germany skills use comes from an official page named in that skill.
 
-## LstGen
+## The method, step by step
 
-- Repository: [jenner/LstGen](https://github.com/jenner/LstGen)
-- License: MIT
-- Stars: 65
-- Language: Python (generator), outputs Python/Java/JavaScript/Go/PHP
-- Scope: Code generator that produces working payroll tax (Lohnsteuer) calculators from the official BMF Programmablaufplan (PAP) XML files.
-- Why it matters: The German Federal Ministry of Finance publishes tax calculation logic as XML flowcharts. LstGen turns those into runnable code — the most direct possible source of truth for German wage tax.
-- Data extracted: PAP structure, input/output parameter definitions, usage patterns for all Steuerklassen.
-- Integration: MIT. Formulas and logic adapted into `de-payroll.md` with attribution.
+1. **Find the job, then the skill.** Income tax for the self-employed: `de-einkommensteuer-freelancer`. Employees: `de-employee-income-tax`. Payroll: `de-payroll`, with a UK employer's first hire in `de-uk-employer-first-hire`. VAT: `germany-vat-return` and `de-vat-annual-and-special-schemes`. E-invoicing: `germany-einvoice`. Trade tax: `de-trade-tax`. Corporate tax: `de-corporate-tax`. Social contributions: `de-social-contributions`. Crypto: `de-crypto-tax`. Withholding on payments abroad: `de-treaty-withholding-rates`. Exit tax: `leaving-germany-exit-tax`. Transfer pricing: `germany-transfer-pricing`. Books, accounts and formation: `germany-bookkeeping`, `germany-financial-statements`, `germany-formation`. Planning: `germany-tax-optimization`. The whole freelancer package: `de-return-assembly`.
+2. **Read the statute on gesetze-im-internet.de.** The Federal Ministry of Justice publishes the consolidated federal law: EStG, KStG, GewStG, UStG, UStDV, AO, AStG, HGB, GmbHG, SGB IV. One page per section, for example [§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html), which sets the 2026 tariff.
+3. **Read the ministry's letters for how the law is applied.** BMF letters (BMF-Schreiben) on bundesfinanzministerium.de bind the tax offices, not the courts. Use the letter's own paragraph numbers and its date.
+4. **Use the BZSt for federal procedures:** withholding refunds and exemptions, VAT ID numbers, country-by-country reports.
+5. **Compute wage tax from the official flowchart, never from a copy.** The BMF publishes a Programmablaufplan each year under [§ 39b(6) EStG](https://www.gesetze-im-internet.de/estg/__39b.html), and the [BMF calculator](https://www.bmf-steuerrechner.de/) runs it. A third-party library is at best a convenient implementation of an older or newer flowchart: check its year and version against the BMF's before trusting a figure.
+6. **Treat the projects below as tools, not sources.** None of them is an official source for a figure.
 
-## Lohnsteuer (MarcelLehmann)
+### Related open-source projects
 
-- Repository: [MarcelLehmann/Lohnsteuer](https://github.com/MarcelLehmann/Lohnsteuer)
-- License: Apache-2.0
-- Stars: 35
-- Language: Java (generated from BMF PAP XML)
-- Scope: Java wage tax calculator generated from BMF PAP. Covers 2006–2026 with official BMF XML sources included.
-- Why it matters: Longest-running German payroll tax implementation. Includes test suite validated against BMF's online Steuerrechner API.
-- Data extracted for `de-payroll.md`:
-  - UPTAB25 formula constants (GFB=12,096; zone boundaries 17,444/68,481/277,826; formula coefficients 932.30/176.64/1,400/2,397/1,015.13/10,911.92/19,246.67)
-  - MPARA social insurance parameters (BBGRV=96,600; BBGKVPV=66,150; RVSATZAN=0.093; KVSATZAN base 0.07; PVSATZAN/PVSATZAG rates)
-  - Steuerklasse V/VI thresholds (W1STKL5=13,785; W2STKL5=34,240; W3STKL5=222,260)
-  - SOLZFREI=19,950; SolZ 5.5% rate with 11.9% phase-in
-  - Steuerklasse parameter assignments (ANP, SAP, KFB, EFA, KZTAB per class)
-  - PV Beitragsabschlage rates (0.0025 per additional child)
-  - Sachsen PV exception (PVS=1: AN 2.3%, AG 1.3%)
-- PAP version: Stand 2025-09-17 (September 2025 revision from ITZBund Berlin)
-- Integration: Apache-2.0. All formula constants and computation logic extracted into `de-payroll.md`.
+OpenAccountants is AGPL-3.0. All projects below have compatible licences as stated by their repositories. Star counts are as recorded on 2026-06-12.
 
-## TaxJs (taxcalcs)
+| Project | Licence | Language | What it does | How it was used |
+| --- | --- | --- | --- | --- |
+| [jenner/LstGen](https://github.com/jenner/LstGen) | MIT | Python generator; outputs Python, Java, JavaScript, Go, PHP | Generates wage-tax calculators from the BMF Programmablaufplan XML files | Structure of the flowchart, input and output parameters, Steuerklassen; adapted into `de-payroll` with attribution |
+| [MarcelLehmann/Lohnsteuer](https://github.com/MarcelLehmann/Lohnsteuer) | Apache-2.0 | Java (generated from BMF PAP XML) | Wage-tax calculator for 2006 onwards with the BMF XML files and a test suite against the BMF calculator | The 2025 flowchart constants (tariff, contribution ceilings, Steuerklasse V and VI limits, solidarity surcharge exemption) were taken into `de-payroll`; for 2026 `de-payroll` must use the 2026 flowchart |
+| [taxcalcs/taxjs](https://github.com/taxcalcs/taxjs) | MIT | TypeScript and JavaScript | npm library for German wage tax generated from BMF pseudo-code | Validation of `de-payroll` results |
+| [horstoeko/zugferd](https://github.com/horstoeko/zugferd) | MIT | PHP | ZUGFeRD, XRechnung and Factur-X library with code lists | VAT category codes (UNTDID 5305: S, Z, E, AE, K, G, O, L, M) referenced in `germany-vat-return`; e-invoice patterns |
+| [0-k/netto](https://github.com/0-k/netto) | Not checked | Python | Net income calculator for income tax and social security | Pattern reference only; URL and licence not verified |
 
-- Repository: [taxcalcs/taxjs](https://github.com/taxcalcs/taxjs)
-- License: MIT
-- Stars: 7
-- Language: TypeScript/JavaScript
-- Scope: npm-installable library for German wage tax calculation, generated from BMF pseudo-code.
-- Why it matters: Tested against BMF's own online calculator. Useful for JavaScript-based validation.
-- Integration: MIT. Logic and test values usable for validation of `de-payroll.md`.
+## When to refuse or refer
 
-## horstoeko/zugferd
+- A figure found only in one of the projects above, or in any non-official page: do not use it. Find it on the official page or list it as not confirmed.
+- A wage-tax result from a library whose flowchart year is not 2026: recompute with the 2026 BMF flowchart or calculator.
+- A question no Germany skill covers (gift and inheritance tax, real estate transfer tax, church tax detail by state): say so and refer to a Steuerberater.
 
-- Repository: [horstoeko/zugferd](https://github.com/horstoeko/zugferd)
-- License: MIT
-- Stars: 417
-- Language: PHP
-- Scope: ZUGFeRD/XRechnung/Factur-X e-invoicing library. Implements the German electronic invoicing standard with full codelist support.
-- Data extracted:
-  - VAT category codes (UNTDID 5305): S (standard rate), Z (zero-rated), E (exempt), AE (reverse charge), K (intra-community), G (free export), O (outside scope), L (Canary Islands IGIC), M (Ceuta/Melilla IPSI)
-  - VAT type codes for German invoicing
-  - Example usage confirms German standard VAT rates: 19% (Regelsteuersatz) and 7% (ermaessigter Steuersatz)
-- Integration: MIT. VAT category code definitions referenced in `germany-vat-return.md`. E-invoicing patterns useful for invoice processing workflows.
+## Sources
 
-## 0-k/netto
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 32a(1) EStG, the 2026 tariff (Grundfreibetrag EUR 12,348) as an example of a statute page | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-11-14 |
+| Read for § 39b(6) EStG, the BMF's duty to publish the Programmablaufplan | https://www.gesetze-im-internet.de/estg/__39b.html | 2026-11-14 |
+| Read for the BMF wage-tax calculator and its 2026 year option | https://www.bmf-steuerrechner.de/ | 2026-11-14 |
 
-- Repository: [0-k/netto](https://github.com/0-k/netto) (verify URL)
-- License: check
-- Language: Python
-- Scope: Python calculator for German income tax and social security contributions.
-- Integration: Reference for net income calculation patterns.
+Not yet confirmed: the licences and star counts of the open-source projects were recorded on 2026-06-12 and not re-read; 0-k/netto's URL and licence were never verified.

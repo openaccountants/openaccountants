@@ -1,17 +1,18 @@
 ---
 name: georgia-payroll
 description: "Payroll for employers in the country of Georgia (Sakartvelo, GE, currency GEL; not the US state) for tax year 2026. Covers who must withhold income tax from salary (Tax Code art. 154), the flat 20% rate, the employee's 2% funded pension contribution and why it comes off the income tax base, the employer's 2% contribution on top of pay, the state co-contribution (2% on the first GEL 24,000 a year, 1% up to GEL 60,000, nothing above), who must join the scheme and the age-40 opt-out, benefits in kind and the company car charge, salary paid by small businesses, non-resident employers, gross-to-net, the monthly return and payments by the 15th, and the fines (GEL 300 for a missed pension contribution, GEL 200 per unregistered employee, 0.05% a day interest). Trigger on: Georgia payroll, gross to net Georgia, salary tax Georgia, khelpasi, pension contribution Georgia employer, rs.ge monthly declaration. Out of scope: the annual return and other income (georgia-income-tax), self-employed pension contributions (georgia-social-contributions), VAT (georgia-vat)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: GE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Georgia (country): payroll for employers (2026) v0.2
+# Georgia (country): payroll for employers (2026) v0.3
 
 An employer in Georgia withholds 20% income tax from each salary payment and pays it to the budget when the salary is paid. For staff in the funded pension scheme it also withholds the employee's 2% contribution and adds its own 2%. The state adds up to 2% on top. Both are reported on the monthly return to the Revenue Service by the 15th of the next month. Figures below are from the Tax Code of Georgia, consolidated on matsne.gov.ge to the law of 15 October 2026 (publication 247), and the Law of Georgia on Funded Pension (No 3303, 21 July 2018), Georgian consolidated text to the law of 16 September 2026.
 
@@ -28,20 +29,20 @@ An employer in Georgia withholds 20% income tax from each salary payment and pay
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Income tax on salary | 20% | 2026 | Tax Code art. 81(1), 154(1)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Non-resident's salary from a Georgian source | 20% at source | 2026 | art. 134(1)(f), same URL |
+| Non-resident's salary from a Georgian source | 20% at source | 2026 | art. 134(1)(f), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Employee funded pension contribution, withheld | 2% of taxable salary | 2026 | Law on Funded Pension art. 3(6)(b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
-| Employer funded pension contribution, at its own cost | 2% of taxable salary | 2026 | art. 3(6)(a), same URL |
-| State contribution, first GEL 24,000 of annual salary | 2% | 2026 | art. 3(6)(e.a), same URL |
-| State contribution, GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), same URL |
-| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), same URL |
-| Employer and state pension contributions | not salary of the employee | 2026 | Tax Code art. 101(3)(d) |
-| Employee's pension contribution to the individual account | exempt from income tax | 2026 | Tax Code art. 82(1)(b3) |
-| Personal use of the employer's car: tax a year by engine size | over 3,500 cm3: GEL 300; 2,500-3,500 cm3: GEL 200; under 2,500 cm3: GEL 100; hybrid: GEL 60; electric: none | 2026 | Tax Code art. 101(2^1), (2^3) |
-| Salary paid by a small business, not taxed at source | up to GEL 6,000 in a year in total, if the business got the status this year or had gross income up to GEL 50,000 last year | 2026 | Tax Code art. 94(4) |
-| Salary paid in farming, not taxed | if the employer's gross income from farming is up to GEL 200,000, until 1 January 2028 | 2026 | Tax Code art. 82(1)(z1) |
-| Missed pension contribution | GEL 300 fine per breach | 2026 | Law on Funded Pension art. 37^3(1) |
-| Employee not entered in the Register of Hired Employees | GEL 200 per employee | 2026 | Tax Code art. 288^5 |
-| Penalty interest on late tax | 0.05% a day | 2026 | Tax Code art. 272(4) |
+| Employer funded pension contribution, at its own cost | 2% of taxable salary | 2026 | art. 3(6)(a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, first GEL 24,000 of annual salary | 2% | 2026 | art. 3(6)(e.a), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution, GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Employer and state pension contributions | not salary of the employee | 2026 | Tax Code art. 101(3)(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Employee's pension contribution to the individual account | exempt from income tax | 2026 | Tax Code art. 82(1)(b3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Personal use of the employer's car: tax a year by engine size | over 3,500 cm3: GEL 300; 2,500-3,500 cm3: GEL 200; under 2,500 cm3: GEL 100; hybrid: GEL 60; electric: none | 2026 | Tax Code art. 101(2^1), (2^3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary paid by a small business, not taxed at source | up to GEL 6,000 in a year in total, if the business got the status this year or had gross income up to GEL 50,000 last year | 2026 | Tax Code art. 94(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary paid in farming, not taxed | if the employer's gross income from farming is up to GEL 200,000, until 1 January 2028 | 2026 | Tax Code art. 82(1)(z1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Missed pension contribution | GEL 300 fine per breach | 2026 | Law on Funded Pension art. 37^3(1), https://matsne.gov.ge/ka/document/view/4280127?publication=13 |
+| Employee not entered in the Register of Hired Employees | GEL 200 per employee | 2026 | Tax Code art. 288^5, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax | 0.05% a day | 2026 | Tax Code art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 

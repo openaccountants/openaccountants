@@ -1,10 +1,10 @@
 ---
 name: uy-transfer-pricing
 description: "Uruguay transfer pricing (precios de transferencia) for IRAE, tax year 2026, under Título 4 Capítulo VIII (arts. 46 to 58) of the Texto Ordenado 2023, Decreto 56/009 and Decreto 353/018. Covers who is in scope (IRAE taxpayers dealing with related non-residents, professionals in IRAE, anyone dealing with low or no-tax jurisdictions or low-tax free zones), the control test of related parties, the irrebuttable presumption for low-tax jurisdictions (effective rate under 12% and no information exchange), the five methods, the interquartile range and the median plus or minus 5% adjustment, quoted commodities and foreign intermediaries (30% test), contract registration, advance pricing agreements up to three years, the annual form 3001 and study above UI 50,000,000 due in the ninth month, country-by-country and master file for groups of EUR 750 million within 12 months, and the penalty of up to 1,000 times the maximum contravention fine. Trigger on: precios de transferencia Uruguay, formulario 3001, estudio de precios de transferencia, informe país por país, Uruguay transfer pricing."
-version: 0.1
+version: 0.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: transfer-pricing
 type: computation
 ---
 
-# Uruguay: transfer pricing for IRAE, 2026 v0.1
+# Uruguay: transfer pricing for IRAE, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -186,4 +186,4 @@ expected:
 
 Not yet confirmed: the text of Resolución DGI 2084/009 numeral 10 and its amendments (Res. 2098/009, 745/011), which IMPO did not serve; the DGI guide is cited for the UI 50,000,000 test instead; the current DGI list of low or no-tax jurisdictions; the additional filing and payment periods of Resolución DGI 1881/010; the exact September 2027 day in the deadline table; the UI quotation that converts the UI 50,000,000 test; the CbC notification deadline set by the DGI; the presumed-profit regimes the Executive may set under T4 art. 52.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

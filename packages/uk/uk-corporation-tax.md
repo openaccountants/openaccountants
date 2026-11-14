@@ -1,14 +1,15 @@
 ---
 name: uk-corporation-tax
 description: "UK corporation tax for companies resident in the UK and for non-resident companies trading in the UK through a permanent establishment. Covers the 25% main rate, the 19% small profits rate and marginal relief between GBP 50,000 and GBP 250,000 (limits shared by associated companies and cut for short periods), financial years running from 1 April, the taxable base, capital allowances, trade losses and the GBP 5m deductions allowance, 75% group relief, the dividend exemption and substantial shareholding exemption, corporate interest restriction, CT600 filing with iXBRL accounts, payment 9 months and 1 day after the period end, quarterly instalments for large and very large companies, and penalties. Financial year 2026. Trigger on: UK corporation tax, CT600, marginal relief, small profits rate, associated companies, quarterly instalment payments, group relief, SSE, corporate interest restriction. Out of scope: R&D relief (gb-tax-relief-under-the-merged-scheme), transfer pricing (uk-transfer-pricing), shareholder dividend tax (uk-dividends), accounts (uk-financial-statements), VAT (uk-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # UK corporation tax: rates, marginal relief, CT600, losses and payment dates (financial year 2026)
@@ -44,7 +45,7 @@ The law is mainly the Corporation Tax Act 2009 (CTA 2009), the Corporation Tax A
 | Loss deductions allowance (company not in a group) | £5,000,000 a year, cut for short periods | FY2026 | [CTA 2010 s269ZW](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW) |
 | Loss deductions allowance (group) | one £5,000,000 shared across the group | FY2026 | [CTA 2010 s269ZR](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR) |
 | Profits above the deductions allowance that brought-forward losses can cover | 50% | FY2026 | [CTA 2010 s269ZB](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZB); [s269ZD](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD) |
-| Corporate interest restriction de minimis | £2,000,000 net interest a year for the worldwide group | FY2026 | [TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392) |
+| Corporate interest restriction de minimis | £2 million net interest a year for the worldwide group | FY2026 | [TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392) |
 | Corporate interest restriction fixed ratio | 30% of tax-EBITDA (lower of that and the fixed ratio debt cap) | FY2026 | [TIOPA 2010 s397](https://www.legislation.gov.uk/ukpga/2010/8/section/397) |
 | Annual Investment Allowance | £1,000,000 | since 1 Jan 2019 | [gov.uk AIA](https://www.gov.uk/capital-allowances/annual-investment-allowance) |
 | Full expensing (new main rate plant, companies only) | 100% first-year allowance | expenditure from 1 Apr 2023 | [CAA 2001 s45S](https://www.legislation.gov.uk/ukpga/2001/2/section/45S); [HMRC CA23174AA](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa) |
@@ -203,15 +204,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| HMRC: rates and allowances, Corporation Tax | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax | 2026-10-22 |
-| gov.uk: Corporation Tax rates | https://www.gov.uk/corporation-tax-rates | 2026-10-22 |
-| HMRC: Marginal Relief guidance | https://www.gov.uk/guidance/corporation-tax-marginal-relief | 2026-10-22 |
-| HMRC manual CTM03925 (marginal relief formula and example) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925 | 2026-10-22 |
-| HMRC manual CTM03910 (rates, limits, fractions FY2023 to FY2025) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03910 | 2026-10-22 |
-| HMRC manual CTM03950 (associated companies) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950 | 2026-10-22 |
+| HMRC: rates and allowances, Corporation Tax. Read for the FY2026 main rate, small profits rate and limits. | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax | 2026-10-22 |
+| gov.uk: Corporation Tax rates. Read for the main and small profits rates. | https://www.gov.uk/corporation-tax-rates | 2026-10-22 |
+| HMRC: Marginal Relief guidance. Read for how marginal relief is worked out. | https://www.gov.uk/guidance/corporation-tax-marginal-relief | 2026-10-22 |
+| HMRC manual CTM03925 (marginal relief formula and example). Read for the marginal relief formula and fraction. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925 | 2026-10-22 |
+| HMRC manual CTM03910 (rates, limits, fractions FY2023 to FY2025). Read for the rates, limits and fractions in earlier years. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03910 | 2026-10-22 |
+| HMRC manual CTM03950 (associated companies). Read for who counts as an associated company. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950 | 2026-10-22 |
 | Finance Act 2025 s13 (charge and main rate FY2026) | https://www.legislation.gov.uk/ukpga/2025/8/section/13 | 2026-10-22 |
 | Finance Act 2025 s14 (small profits rate and fraction FY2026) | https://www.legislation.gov.uk/ukpga/2025/8/section/14 | 2026-10-22 |
-| Finance Act 2026 contents | https://www.legislation.gov.uk/ukpga/2026/11/contents | 2026-10-22 |
+| Finance Act 2026 contents. Read for whether the 2026 Act changed the rates. | https://www.legislation.gov.uk/ukpga/2026/11/contents | 2026-10-22 |
 | Finance Act 2026 s11 (charge and main rate FY2027) | https://www.legislation.gov.uk/ukpga/2026/11/section/11 | 2026-10-22 |
 | Finance Act 2026 s12 (small profits rate and fraction FY2027) | https://www.legislation.gov.uk/ukpga/2026/11/section/12 | 2026-10-22 |
 | Finance Act 2026 s2 (basic rate 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-10-22 |
@@ -231,33 +232,33 @@ expected:
 | CTA 2010 s152 (75% group) | https://www.legislation.gov.uk/ukpga/2010/4/section/152 | 2026-10-22 |
 | CTA 2010 s269ZB, s269ZR, s269ZW (loss restriction, deductions allowance) | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW | 2026-10-22 |
 | CTA 2010 s269ZD (restriction on deductions from total profits) | https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD | 2026-10-22 |
-| HMRC manual CTM80150 (group relief: who can claim) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80150 | 2026-10-22 |
+| HMRC manual CTM80150 (group relief: who can claim). Read for who can claim group relief. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80150 | 2026-10-22 |
 | TIOPA 2010 s392 and s397 (corporate interest restriction) | https://www.legislation.gov.uk/ukpga/2010/8/section/392 | 2026-10-22 |
-| TCGA 1992 Sch 7AC (substantial shareholding exemption) | https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC | 2026-10-22 |
+| TCGA 1992 Sch 7AC (substantial shareholding exemption). Read for the substantial shareholding exemption conditions. | https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC | 2026-10-22 |
 | TCGA 1992 s185 (company ceasing to be resident) | https://www.legislation.gov.uk/ukpga/1992/12/section/185 | 2026-10-22 |
-| TMA 1970 Sch 3ZB (exit charge payment plans) | https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZB | 2026-10-22 |
+| TMA 1970 Sch 3ZB (exit charge payment plans). Read for exit charge payment plans. | https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZB | 2026-10-22 |
 | CAA 2001 s45S (full expensing) | https://www.legislation.gov.uk/ukpga/2001/2/section/45S | 2026-10-22 |
-| HMRC manual CA23174AA (full expensing 100%, special rate 50%) | https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa | 2026-10-22 |
-| gov.uk: Annual Investment Allowance | https://www.gov.uk/capital-allowances/annual-investment-allowance | 2026-10-22 |
+| HMRC manual CA23174AA (full expensing 100%, special rate 50%). Read for full expensing and the special rate allowance. | https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa | 2026-10-22 |
+| gov.uk: Annual Investment Allowance. Read for the annual investment allowance limit. | https://www.gov.uk/capital-allowances/annual-investment-allowance | 2026-10-22 |
 | Finance Act 2004 s55 (notice of chargeability) | https://www.legislation.gov.uk/ukpga/2004/12/section/55 | 2026-10-22 |
-| gov.uk: Pay Corporation Tax | https://www.gov.uk/pay-corporation-tax | 2026-10-22 |
-| HMRC: paying Corporation Tax in instalments | https://www.gov.uk/guidance/corporation-tax-paying-in-instalments | 2026-10-22 |
-| HMRC manual CTM92805 (very large company instalment dates) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92805 | 2026-10-22 |
-| HMRC: paying Corporation Tax as a very large company | https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company | 2026-10-22 |
-| SI 2017/1072 (very large companies) | https://www.legislation.gov.uk/uksi/2017/1072/made | 2026-10-22 |
-| gov.uk: Company Tax Returns | https://www.gov.uk/company-tax-returns | 2026-10-22 |
-| gov.uk: CT600 (2026) Version 3 | https://www.gov.uk/government/publications/corporation-tax-company-tax-return-ct600-2015-version-3 | 2026-10-22 |
-| HMRC manual COM60040 (online filing, iXBRL) | https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040 | 2026-10-22 |
-| gov.uk: closure of HMRC's free CT filing service on 31 March 2026 | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-22 |
-| gov.uk: late filing penalties | https://www.gov.uk/company-tax-returns/penalties-for-late-filing | 2026-10-22 |
-| FA 1998 Sch 18 paras 17 and 18 (late filing penalties) | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17 | 2026-10-22 |
-| FA 2007 Sch 24 para 4 (inaccuracy penalties) | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-22 |
-| HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-22 |
-| Bank of England: Bank Rate history | https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp | 2026-10-22 |
+| gov.uk: Pay Corporation Tax. Read for the normal payment date. | https://www.gov.uk/pay-corporation-tax | 2026-10-22 |
+| HMRC: paying Corporation Tax in instalments. Read for the quarterly instalment rules for large companies. | https://www.gov.uk/guidance/corporation-tax-paying-in-instalments | 2026-10-22 |
+| HMRC manual CTM92805 (very large company instalment dates). Read for the very large company instalment dates. | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92805 | 2026-10-22 |
+| HMRC: paying Corporation Tax as a very large company. Read for the very large company threshold. | https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company | 2026-10-22 |
+| SI 2017/1072 (very large companies). Read for the very large company rules. | https://www.legislation.gov.uk/uksi/2017/1072/made | 2026-10-22 |
+| gov.uk: Company Tax Returns. Read for the filing deadline. | https://www.gov.uk/company-tax-returns | 2026-10-22 |
+| gov.uk: CT600 (2026) Version 3. Read for the current CT600 version. | https://www.gov.uk/government/publications/corporation-tax-company-tax-return-ct600-2015-version-3 | 2026-10-22 |
+| HMRC manual COM60040 (online filing, iXBRL). Read for online filing and iXBRL. | https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040 | 2026-10-22 |
+| gov.uk: closure of HMRC's free CT filing service on 31 March 2026. Read for the closure of the free filing service. | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-22 |
+| gov.uk: late filing penalties. Read for the late filing penalty amounts. | https://www.gov.uk/company-tax-returns/penalties-for-late-filing | 2026-10-22 |
+| FA 1998 Sch 18 paras 17 and 18 (late filing penalties). Read for the late filing penalty rules. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17 | 2026-10-22 |
+| FA 2007 Sch 24 para 4 (inaccuracy penalties). Read for the inaccuracy penalty ranges. | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-22 |
+| HMRC interest rates for late and early payments. Read for the late payment interest rate. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-22 |
+| Bank of England: Bank Rate history. Read for the Bank Rate on which interest is set. | https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp | 2026-10-22 |
 | ITA 2007 s874, s903, s906 (deduction from interest and royalties) | https://www.legislation.gov.uk/ukpga/2007/3/section/874 | 2026-10-22 |
-| gov.uk: Income Tax rates (basic rate 2026-27) | https://www.gov.uk/income-tax-rates | 2026-10-22 |
-| HMRC manual SAIM5120 (dividends received by non-residents) | https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5120 | 2026-10-22 |
-| HMRC manual INTM190000 (controlled foreign companies) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm190000 | 2026-10-22 |
-| HMRC manuals MTT01100 and MTT01010 (Pillar Two) | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100 | 2026-10-22 |
+| gov.uk: Income Tax rates (basic rate 2026-27). Read for the basic rate used for withholding. | https://www.gov.uk/income-tax-rates | 2026-10-22 |
+| HMRC manual SAIM5120 (dividends received by non-residents). Read for dividends paid to non-residents. | https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5120 | 2026-10-22 |
+| HMRC manual INTM190000 (controlled foreign companies). Read for the CFC rules. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm190000 | 2026-10-22 |
+| HMRC manuals MTT01100 and MTT01010 (Pillar Two). Read for Pillar Two scope and threshold. | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100 | 2026-10-22 |
 
 Not yet confirmed: whether a tax treaty's non-discrimination article lets a UK permanent establishment of a non-resident company use the small profits rate or marginal relief despite CTA 2010 ss18A and 18B.

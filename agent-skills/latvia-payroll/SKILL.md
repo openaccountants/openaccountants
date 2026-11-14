@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/latvia-payroll"
   jurisdiction: "LV"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Latvia: payroll (2026) v0.2
+# Latvia: payroll (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated Law On Personal Income Tax (PIT Law), the law On State Social Insurance (SI Law), the Solidarity Tax Law, the Law On Taxes and Fees (LTF) and the Administrative Liability Law, and from State Revenue Service (VID) pages. See Sources for how they were read.
 
@@ -179,8 +179,8 @@ likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 Octob
 
 Not yet confirmed: the 2026 amount of the business risk state fee (the Cabinet regulation for 2026 was not read); Cabinet Regulation No. 656 on the minimum wage itself (EUR 780 is taken from VID pages); the Cabinet regulation that splits the reduced rates for pensioners and other groups between employer and employee (taken from the VID table, not the regulation); Cabinet Regulation No. 827 on the employer's report and the exact deadline for registering a new employee; whether the s. 17(5) wage tax deadline moves to the following month when pay is paid out after the 23rd; whether VID treats the employer's report as a tax return under LTF s. 141 or an informative declaration under s. 142; SI Law and PIT Law amendments adopted after the capture dates.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `latvia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/latvia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `latvia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/latvia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

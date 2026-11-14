@@ -3,15 +3,16 @@ name: td-company-formation
 description: "Prepare Chad company formation and annual reporting working papers for 2026 using OHADA company law, accounting law and official ANIE and DGI evidence. Covers SARL, SA and SAS capital commitments, cash payment fractions, contribution valuation, registration dossiers, NIF owner information, statutory auditor thresholds, accounting-system selection and annual close, approval and registry timelines. Use for Chad incorporation, entity choice, company capital, GUCE, RCCM, SYSCOHADA, audit or annual accounts intake. Two cases compare capital funding and strict audit boundaries. Current national capital implementation, fees, registry screens, regulated licences and complete specialist accounting methods remain explicit gaps; the Guide does not promise a filing-ready incorporation."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 1.1
+version: 1.2
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Chad company formation and annual reporting v1.1
+# Chad company formation and annual reporting v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

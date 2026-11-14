@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cz-employee-income-tax"
   jurisdiction: "CZ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Czech Republic: income tax for employees and other non-business income (2026) v0.2
+# Czech Republic: income tax for employees and other non-business income (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the Income Taxes Act as published in e-Sbírka (version in force 1 August to 31 December 2026), the Tax Code, government regulations, MPSV and the Financial Administration, all read on 23 October 2026. It prepares working papers. It is not authority to file or pay.
 
@@ -35,31 +35,31 @@ Tax year: the calendar year. Currency: Czech koruna (CZK). Authority: the Financ
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Rate on the tax base up to 36 times the average wage | 15% | 2026 | [ITA § 16(1)(a)](https://e-sbirka.gov.cz/sb/1992/586/2026-08-01) |
-| Rate on the tax base above 36 times the average wage | 23% | 2026 | ITA § 16(1)(b) |
+| Rate on the tax base above 36 times the average wage | 23% | 2026 | ITA § 16(1)(b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Average wage for tax purposes (the social insurance figure, ITA § 21g(2)) | CZK 48,967: general assessment base for 2024 of CZK 46,278 times coefficient 1.0581, rounded up | 2026 | [Act 589/1992 § 23b(4)](https://e-sbirka.gov.cz/sb/1992/589/2026-07-01); [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365) |
-| 23% threshold, annual (36 × 48,967) | CZK 1,762,812 | 2026 | computed from the two rows above |
-| 23% threshold for monthly advances (3 × 48,967) | CZK 146,901 a month | 2026 | ITA § 38h(2); computed |
-| Basic taxpayer credit (sleva na poplatníka) | CZK 30,840 a year (CZK 2,570 a month in payroll) | 2026 | ITA § 35ba(1)(a), § 35d(2) |
-| Spouse credit (sleva na manžela) | CZK 24,840; double if the spouse holds a ZTP/P card. Only if the couple lives with the taxpayer's child under 3 and the spouse's own income is at most CZK 68,000 | 2026 | ITA § 35bb(1), (2) |
-| Basic disability credit (disability pension, grade 1 or 2) | CZK 2,520 | 2026 | ITA § 35ba(1)(c) |
-| Extended disability credit (grade 3) | CZK 5,040 | 2026 | ITA § 35ba(1)(d) |
-| ZTP/P card holder credit | CZK 16,140 | 2026 | ITA § 35ba(1)(e) |
+| 23% threshold, annual (36 × 48,967) | CZK 1,762,812 | 2026 | computed from the two rows above; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01; https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 |
+| 23% threshold for monthly advances (3 × 48,967) | CZK 146,901 a month | 2026 | ITA § 38h(2); computed; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01; https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 |
+| Basic taxpayer credit (sleva na poplatníka) | CZK 30,840 a year (CZK 2,570 a month in payroll) | 2026 | ITA § 35ba(1)(a), § 35d(2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Spouse credit (sleva na manžela) | CZK 24,840; double if the spouse holds a ZTP/P card. Only if the couple lives with the taxpayer's child under 3 and the spouse's own income is at most CZK 68,000 | 2026 | ITA § 35bb(1), (2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Basic disability credit (disability pension, grade 1 or 2) | CZK 2,520 | 2026 | ITA § 35ba(1)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Extended disability credit (grade 3) | CZK 5,040 | 2026 | ITA § 35ba(1)(d); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| ZTP/P card holder credit | CZK 16,140 | 2026 | ITA § 35ba(1)(e); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Student credit | None for 2026: § 35ba(1) lists no student credit. Act 180/2026 restores it at CZK 4,020 from tax year 2027 (its transitional provision keeps the old text for 2026) | 2026 | ITA § 35ba(1); [Act 180/2026 Part Two, § 31(1), § 36](https://e-sbirka.gov.cz/sb/2026/180) |
-| Child tax benefit (daňové zvýhodnění), first child | CZK 15,204 a year | 2026 | ITA § 35c(1) |
-| Child tax benefit, second child | CZK 22,320 a year | 2026 | ITA § 35c(1) |
-| Child tax benefit, third and each further child | CZK 27,840 a year; doubled for a child with a ZTP/P card | 2026 | ITA § 35c(1), (7) |
-| Minimum annual tax bonus | CZK 100 (monthly bonus: CZK 50) | 2026 | ITA § 35c(3), § 35d(4) |
-| Income needed for a tax bonus | Employment or business income of at least 6 times the minimum wage: CZK 134,400. Monthly bonus in payroll: at least half the minimum wage, CZK 11,200, in the month | 2026 | ITA § 35c(4), § 35d(4), § 21g(1); [MPSV, minimum wage 2026](https://www.mpsv.cz/minimalni-mzda) (CZK 22,400 a month) |
-| Pension products, private life insurance, long-term investment product and long-term care insurance | Deduction of up to CZK 48,000 a year in total | 2026 | ITA § 15(6), (7) |
-| Employer contributions to those products | Exempt for the employee up to CZK 50,000 a year | 2026 | ITA § 6(9)(m) |
+| Child tax benefit (daňové zvýhodnění), first child | CZK 15,204 a year | 2026 | ITA § 35c(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Child tax benefit, second child | CZK 22,320 a year | 2026 | ITA § 35c(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Child tax benefit, third and each further child | CZK 27,840 a year; doubled for a child with a ZTP/P card | 2026 | ITA § 35c(1), (7); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Minimum annual tax bonus | CZK 100 (monthly bonus: CZK 50) | 2026 | ITA § 35c(3), § 35d(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Income needed for a tax bonus | Employment or business income of at least 6 times the minimum wage: CZK 134,400 (computed: 6 x 22,400). Monthly bonus in payroll: at least half the minimum wage, CZK 11,200, in the month | 2026 | ITA § 35c(4), § 35d(4), § 21g(1); [MPSV, minimum wage 2026](https://www.mpsv.cz/minimalni-mzda) (CZK 22,400 a month) |
+| Pension products, private life insurance, long-term investment product and long-term care insurance | Deduction of up to CZK 48,000 a year in total | 2026 | ITA § 15(6), (7); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Employer contributions to those products | Exempt for the employee up to CZK 50,000 a year | 2026 | ITA § 6(9)(m); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Mortgage and building-savings loan interest for own housing | Deduction of up to CZK 150,000 a year per household; CZK 300,000 where the housing was acquired before 1 January 2021; one twelfth of the cap per month if interest is paid for part of the year | 2026 | ITA § 15(3), (4); [Finanční správa, interest cap note](https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/Informace-ke-zmene-vyse-limitu-uhrnne-castky-uroku.pdf) |
-| Donations to qualifying recipients | Deductible if the total is more than 2% of the tax base or at least CZK 1,000; capped at 15% of the tax base | 2026 | ITA § 15(1) |
-| Filing threshold | Return required if income subject to tax (not counting exempt income or income taxed by final withholding) exceeds CZK 50,000, or if there is a tax loss | 2026 | ITA § 38g(1) |
-| Other income an employee may have without filing | Up to CZK 20,000 of income under §§ 7 to 10 | 2026 | ITA § 38g(2) |
+| Donations to qualifying recipients | Deductible if the total is more than 2% of the tax base or at least CZK 1,000; capped at 15% of the tax base | 2026 | ITA § 15(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Filing threshold | Return required if income subject to tax (not counting exempt income or income taxed by final withholding) exceeds CZK 50,000, or if there is a tax loss | 2026 | ITA § 38g(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Other income an employee may have without filing | Up to CZK 20,000 of income under §§ 7 to 10 | 2026 | ITA § 38g(2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Small payments taxed by 15% final withholding when no declaration is signed | DPP pay below CZK 12,000 a month with that payer; other employment pay below CZK 4,500 a month with that payer | 2026 | ITA § 6(4), § 36(2); Act 187/2006 § 6(2) and § 7a(1); [MPSV Communication 396/2025](https://e-sbirka.gov.cz/sb/2025/396) (DPP CZK 12,000 from 1 January 2026); [ČSSZ, key figures for 2026](https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026) (CZK 4,500 unchanged) |
-| Final withholding on dividends and on interest from deposits paid to individuals | 15% | 2026 | ITA § 36(2) |
-| Rental income: expense lump sum | 30% of rent, at most CZK 600,000 | 2026 | ITA § 9(4) |
-| Late payment interest | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026, 11.75% for 1 July to 31 December 2026 | 2026 | [Tax Code § 252(4), § 251a(5)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01); [Government Regulation 351/2013 § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
+| Final withholding on dividends and on interest from deposits paid to individuals | 15% | 2026 | ITA § 36(2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Rental income: expense lump sum | 30% of rent, at most CZK 600,000 | 2026 | ITA § 9(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Late payment interest | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026, 11.75% for 1 July to 31 December 2026 (computed: CNB repo rate plus 8 points, repo 3.50% on 1 January 2026 and 3.75% on 1 July 2026 per the CNB history) | 2026 | [Tax Code § 252(4), § 251a(5)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01); [Government Regulation 351/2013 § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
 The annual tax is worked out on the base after deductions, rounded down to whole hundreds of CZK. It is the sum of each slice times its rate (ITA § 16(2)). The tax is then rounded up to whole CZK (Tax Code § 146(1)), in one step (§ 146(3)).
 
@@ -270,4 +270,4 @@ Not yet confirmed:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

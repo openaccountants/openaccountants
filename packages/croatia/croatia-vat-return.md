@@ -1,17 +1,18 @@
 ---
 name: croatia-vat-return
 description: "Croatian value added tax (porez na dodanu vrijednost, PDV) for 2026 under the Zakon o porezu na dodanu vrijednost as amended to NN 48/2026. Covers who must register (the EUR 60,000 small-business threshold in Article 90 and the EU SME scheme), the 25%, 13% and 5% rates and what each covers, the temporary 5% rate for gas and heating to 31 March 2027, input VAT and the blocked items (entertainment, 50% on passenger cars), monthly and quarterly periods, the PDV return, PDV-S and ZP all due by the last day of the following month from 2026, payment, refunds, domestic and cross-border reverse charge, Fiskalizacija 2.0 e-invoicing and e-reporting from 1 January 2026, and fines. Trigger on: Croatia VAT, PDV Hrvatska, PDV obrazac, PDV-S, Zbirna prijava, eRačun, fiskalizacija 2.0, Croatian reverse charge. Out of scope: income tax (croatia-income-tax), profit tax (hr-corporate-income-tax), payroll (croatia-payroll), contributions (croatia-social-contributions)."
-version: 3.0
+version: 3.2
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Croatia: value added tax (PDV), 2026 (v3.0)
+# Croatia: value added tax (PDV), 2026 (v3.2)
 
 The statute is the Zakon o porezu na dodanu vrijednost (ZPDV), Narodne novine (NN) 73/13 with amendments up to NN 48/26. The Tax Administration (Porezna uprava) keeps the consolidated text in its register of regulations. Article numbers below refer to it. Forms and line rules sit in the Pravilnik o porezu na dodanu vrijednost (VAT Rulebook). E-invoicing sits in a separate law, the Zakon o fiskalizaciji (NN 89/25). Interest and the limitation period sit in the Opći porezni zakon (OPZ, General Tax Act).
 
@@ -206,4 +207,4 @@ expected:
 
 Not yet confirmed: the rate of late-payment interest on tax debts for 2026 (OPZ Art. 130(1) points to a special regulation; the register still lists the Interest Act NN 94/04 and the 15% decree NN 153/04, which predate the Obligations Act Art. 29 formula, and no official text read ties a 2026 rate to tax debts); whether receiving EU services alone counts as an "intra-EU transaction" that rules out quarterly filing under Article 84(3); the exact treatment of the single supply that takes a small business over EUR 60,000 (Article 90.f(2) says the exemption stops "from the moment" the threshold is passed); the Rulebook amendments in NN 11/26 beyond the PDV form lines, which were not read in full.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

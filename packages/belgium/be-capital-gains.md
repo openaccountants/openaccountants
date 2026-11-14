@@ -1,14 +1,15 @@
 ---
 name: be-capital-gains
 description: "Belgium capital gains tax for individuals from 1 January 2026 (income year 2026, assessment year 2027), under the law of 6 April 2026 and Circular 2026/C/74: the 10% tax on gains on shares, bonds, funds, ETFs, derivatives, crypto, investment gold and life insurance; the EUR 10,000 exemption and its carry-forward; the 31 December 2025 value step-up and the cost option to 2030; the 20% substantial interest scale (1.25% to 10%); internal gains (33%); speculation (33%); bank withholding and opt-out; losses; real estate gains. Trigger on: Belgium capital gains tax, meerwaardebelasting, plus-values Belgique, solidariteitsbijdrage, aanmerkelijk belang, Belgian shares gain, fotomoment."
-version: 2.2
+version: 2.4
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Belgium capital gains tax for individuals (income year 2026)
@@ -60,15 +61,15 @@ Out of scope: money on a payment account (so no tax on everyday currency gains),
 | General regime (type C) rate | 10% on the net gain after the exemption, unless taxing it at the progressive scale gives less tax. No municipal surcharge | Gains from 1 January 2026 | [Art. 171, 2°, e) WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21); [art. 466, second paragraph](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/81bf3101-a837-4d89-8b97-713e080f00ac) |
 | Basic exemption (type C) | EUR 10,000 per taxpayer (statutory base EUR 4,855, coefficient 2.0592) | Assessment year 2027 | [Art. 96/2, first paragraph, 2° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737); [indexation table AY 2027](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0) |
 | Supplementary exemption (carry-forward of unused basic exemption) | EUR 1,000 less the part of the basic exemption actually used the year before, if that part was under EUR 1,000 (statutory base EUR 480, to be reset by royal decree so it indexes to exactly EUR 1,000). The first one comes from income year 2026 and is usable in income year 2027 | First usable in assessment year 2028 | [Art. 96/2, first paragraph, 3° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737); [Circular 2026/C/74, nos. 93 to 96](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
-| Cap on supplementary exemptions used in one year | Statutory base EUR 2,426, indexed yearly; oldest used first | From assessment year 2028 | Art. 96/2, third paragraph WIB 92 |
-| Substantial interest (type B) exemption | First EUR 1,000,000 of gains, one "backpack" over 5 consecutive taxable periods; not indexed | Gains from 1 January 2026 | Art. 96/2, first paragraph, 1° and second paragraph WIB 92; Circular 2026/C/74, no. 51 |
+| Cap on supplementary exemptions used in one year | Statutory base EUR 2,426, indexed yearly; oldest used first | From assessment year 2028 | Art. 96/2, third paragraph WIB 92; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737 |
+| Substantial interest (type B) exemption | First EUR 1,000,000 of gains, one "backpack" over 5 consecutive taxable periods; not indexed | Gains from 1 January 2026 | Art. 96/2, first paragraph, 1° and second paragraph WIB 92; Circular 2026/C/74, no. 51; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737 |
 | Substantial interest scale (type B), on the gain after the exemption | 1.25% to EUR 2,500,000; 2.5% from EUR 2,500,000 to EUR 5,000,000; 5% from EUR 5,000,000 to EUR 10,000,000; 10% above EUR 10,000,000. Not indexed. No municipal surcharge | Gains from 1 January 2026 | [Art. 171, 9° to 11° and 2°, f) WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21) |
-| Substantial interest in a Belgian company sold to a legal person established outside the EEA | 16.5% on the gain after the EUR 1,000,000 exemption, instead of the scale | Gains from 1 January 2026 | Art. 171, 4°, l) WIB 92; Circular 2026/C/74, no. 55 |
-| Internal gain (type A) | 33%, no municipal surcharge | Gains from 1 January 2026 | Art. 171, 1°, a) WIB 92; Circular 2026/C/74, no. 31 |
-| Speculation or abnormal management of private wealth | 33% plus municipal surcharge | Income year 2026 | Art. 90, first paragraph, 1° and art. 171, 1°, a) WIB 92; Circular 2026/C/74, no. 191 |
+| Substantial interest in a Belgian company sold to a legal person established outside the EEA | 16.5% on the gain after the EUR 1,000,000 exemption, instead of the scale | Gains from 1 January 2026 | Art. 171, 4°, l) WIB 92; Circular 2026/C/74, no. 55; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21 |
+| Internal gain (type A) | 33%, no municipal surcharge | Gains from 1 January 2026 | Art. 171, 1°, a) WIB 92; Circular 2026/C/74, no. 31; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21 |
+| Speculation or abnormal management of private wealth | 33% plus municipal surcharge | Income year 2026 | Art. 90, first paragraph, 1° and art. 171, 1°, a) WIB 92; Circular 2026/C/74, no. 191; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5e4a1456-519a-415a-942b-060dbf9e842d ; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21 |
 | Withholding tax (roerende voorheffing) by a Belgian intermediary | 10% of the gross gain on financial instruments and insurance contracts, for resident recipients, unless the client opts out. Insurance gains paid from 1 June to 31 August 2026 are deemed opted out (art. 34 law of 6 April 2026) | Gains paid or attributed from 1 June 2026 | [Art. 261, first paragraph, 5° and 269, §1, 5° WIB 92; Circular 2026/C/94](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55) |
 | Undeveloped land in Belgium, sold within 5 years of acquisition | 33% plus municipal surcharge | Income year 2026 | [Art. 90, first paragraph, 8° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5e4a1456-519a-415a-942b-060dbf9e842d); art. 171, 1°, b) |
-| Undeveloped land in Belgium, sold after 5 but within 8 years | 16.5% plus municipal surcharge | Income year 2026 | Art. 90, first paragraph, 8° and art. 171, 4°, d) WIB 92 |
+| Undeveloped land in Belgium, sold after 5 but within 8 years | 16.5% plus municipal surcharge | Income year 2026 | Art. 90, first paragraph, 8° and art. 171, 4°, d) WIB 92; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5e4a1456-519a-415a-942b-060dbf9e842d ; https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21 |
 | Built property in Belgium, sold within 5 years of acquisition | 16.5% plus municipal surcharge; own home exempt | Income year 2026 | Art. 90, first paragraph, 10° and art. 171, 4°, e) WIB 92; [art. 93bis](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/91a62944-b475-4fae-84a6-8986bda09d36) |
 | Stock exchange tax (TOB), per transaction, not deductible from the gain | 0.12% capped at EUR 1,300 (bonds, distribution fund units, regulated real estate companies); 0.35% capped at EUR 1,600 (shares and other securities); 1.32% capped at EUR 4,000 (accumulating fund units) | 2026 | [Art. 121 Code of miscellaneous duties and taxes](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d80a8f94-bc90-45c8-9306-1df94b621018); [art. 124](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d8d56231-7ed6-494e-bcce-e5ad1a49eae7) |
 
@@ -280,4 +281,4 @@ Not yet confirmed:
 - The rules for life insurance contracts (art. 102/1: premiums paid, value at 31 December 2025, the 8-year and 130% tests) are summarised, not worked through; read Circular 2026/C/74, nos. 177 to 189, before advising on a policy.
 - Penalties for an intermediary that misses the art. 326bis report were not checked.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

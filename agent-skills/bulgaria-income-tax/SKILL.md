@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bulgaria-income-tax"
   jurisdiction: "BG"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Bulgaria: personal income tax (ДДФЛ), tax year 2026
@@ -196,8 +196,8 @@ expected:
 
 Not yet confirmed: the gazette text of the 2026 State Budget Act provision that sets the child reliefs and their monthly use in euro (the amounts above come from the NRA page; the ZDDFL itself still reads BGN 200, 400 and 600 and BGN 2,000; the Act was not reachable on dv.parliament.bg or lex.bg on 2026-10-24); the statutory interest rate on late tax after the euro changeover; whether DOPK fines can apply alongside the ZDDFL fines; the full conditions of the art. 13(1)(1) home-sale exemption; and any rate changes the Ministry of Finance has proposed for later years.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

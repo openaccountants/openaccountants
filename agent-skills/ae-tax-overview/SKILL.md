@@ -7,14 +7,16 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ae-tax-overview"
   jurisdiction: "AE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # UAE tax system overview for 2026: Corporate Tax, VAT, excise tax, top-up tax, no personal income tax, tax residency and registration
 
 Tax year 2026. This skill gives the whole picture of federal tax in the United Arab Emirates for 2026 and sends each detailed question to the skill that answers it. For Corporate Tax, "2026" means tax periods (financial years) running in 2026, for most businesses 1 January to 31 December 2026. For VAT and excise tax, it means the monthly or quarterly tax periods that fall in 2026. The rules are the law as published on tax.gov.ae and mof.gov.ae on 25 September 2026. A short dated section covers returns for 2025 that are being filed now.
 
-## Scope and who this is for ([Ministry of Finance: Tax](https://mof.gov.ae/en/public-finance/tax/); [Ministry of Finance: Corporate Tax](https://mof.gov.ae/en/public-finance/tax/corporate-tax/))
+## Scope and who this is for
+
+Sources for this section: [Ministry of Finance: Tax](https://mof.gov.ae/en/public-finance/tax/); [Ministry of Finance: Corporate Tax](https://mof.gov.ae/en/public-finance/tax/corporate-tax/).
 
 This skill is for anyone who needs to know which UAE taxes apply to a person or a business, and roughly how: a founder, a freelancer, an employee moving to the UAE, a foreign group with a UAE subsidiary, or an accountant triaging a new client. It gives the key rule, the key figure and the official source for each tax, then routes the detailed work.
 
@@ -126,7 +128,7 @@ VAT (Federal Decree-Law No. 8 of 2017) has applied since 1 January 2018 at a sta
 **Changes this year** (detail in uae-vat):
 - From 1 January 2026: no self-invoice for the reverse charge, and excess input VAT lapses if not used or reclaimed within five years.
 - From 14 April 2026: a new administrative penalties table applies.
-- From 1 October 2026 ([Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf)): changes to composite supplies, employee benefits, the profit margin scheme and credit note wording.
+- From 1 October 2026 ([Cabinet Decision No. 149 of 2026, as consolidated in the VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf)): changes to composite supplies, employee benefits, the profit margin scheme and credit note wording.
 
 **E-invoicing** ([Ministerial Decision No. 244 of 2025](https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf); [Ministerial Decision No. 66 of 2026](https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf)):
 - A business with revenue of AED 50,000,000 or more appoints an accredited service provider by 30 October 2026 and goes live on 1 January 2027.
@@ -137,16 +139,16 @@ VAT (Federal Decree-Law No. 8 of 2017) has applied since 1 January 2018 at a sta
 
 Excise tax (Federal Decree-Law No. 7 of 2017) is levied on goods considered harmful to the health of the general public, to discourage their consumption. The rates are set by Cabinet Decision No. 197 of 2025.
 
-| Excise good | Rate in 2026 (in force since) | Basis |
-| --- | --- | --- |
-| Tobacco and tobacco products | 100% (since 1 October 2017) | Of the excise price |
-| Energy drinks | 100% (since 1 October 2017) | Of the excise price |
-| Electronic smoking devices and tools | 100% (since 1 December 2019) | Of the excise price |
-| Liquids used in electronic smoking devices and tools | 100% (since 1 December 2019) | Of the excise price |
-| Sweetened drinks, high sugar (8 grams or more of total sugar and other sweeteners per 100ml) | AED 1.09 per litre | Tiered volumetric |
-| Sweetened drinks, moderate sugar (5 grams or more but under 8 grams per 100ml) | AED 0.79 per litre | Tiered volumetric |
-| Sweetened drinks, low sugar (under 5 grams per 100ml) | AED 0 per litre | Tiered volumetric; still registered and reported |
-| Sweetened drinks with artificial sweeteners only (and under 5 grams of total sugar per 100ml) | AED 0 per litre | Tiered volumetric; still registered and reported |
+| Excise good | Rate in 2026 (in force since) | Basis | Source |
+| --- | --- | --- | --- |
+| Tobacco and tobacco products | 100% (since 1 October 2017) | Of the excise price | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Taxable%20Person%20Guide%20for%20Excise%20Tax%20-%20EN%20-%20Jan%202026.pdf |
+| Energy drinks | 100% (since 1 October 2017) | Of the excise price | same |
+| Electronic smoking devices and tools | 100% (since 1 December 2019) | Of the excise price | same |
+| Liquids used in electronic smoking devices and tools | 100% (since 1 December 2019) | Of the excise price | same |
+| Sweetened drinks, high sugar (8 grams or more of total sugar and other sweeteners per 100ml) | AED 1.09 per litre | Tiered volumetric | https://tax.gov.ae/Datafolder/Files/Guides/Excisetax/Excisetax/Taxable%20Person%20Guide%20for%20Excise%20-%20ETGTP2%20-%20EN%20-%2006%2002%202026.pdf |
+| Sweetened drinks, moderate sugar (5 grams or more but under 8 grams per 100ml) | AED 0.79 per litre | Tiered volumetric | same |
+| Sweetened drinks, low sugar (under 5 grams per 100ml) | AED 0 per litre | Tiered volumetric; still registered and reported | same |
+| Sweetened drinks with artificial sweeteners only (and under 5 grams of total sugar per 100ml) | AED 0 per litre | Tiered volumetric; still registered and reported | same |
 
 - **Carbonated drinks** stopped being a separate excise good on 1 January 2026. From 1 October 2017 to 31 December 2025 they were taxed at 50%. From 1 December 2019 to 31 December 2025, sweetened drinks were taxed at 50% of the excise price. From 2026, a drink is taxed only if it is a sweetened drink, at the tiered rates above (from 1 January 2026).
 - **The sugar tier needs a MOIAT certificate.** The tier depends on a certificate from the Ministry of Industry and Advanced Technology (MOIAT), based on an accredited laboratory report showing the total sugar and sweeteners. The certificate is needed to register a sweetened drink or update its registration. Without it the drink is classified as High sugar (AED 1.09 per litre) until a certificate proves a lower tier or that the drink is not taxable. Transitional rule: for tax periods from 1 January 2026 to 30 June 2026, extra tax paid because a drink was classed as High sugar for lack of a certificate may be deducted once a valid certificate is provided, if the required documents are kept.
@@ -188,13 +190,13 @@ A natural person is a UAE tax resident for a 12-month period if they meet **any 
 - A company is resident if it is incorporated in the UAE or, for a foreign company, effectively managed and controlled in the UAE. Residence for Corporate Tax is a separate question from the certificate tests for individuals; see ae-income-tax.
 - **Certificate:** apply on EmaraTax. A domestic certificate applies the tests above. A certificate for a named double tax agreement applies that treaty's residence article. The period is a past or current period of no more than 12 months, never a future one.
 
-| Tax residency certificate fee (current table) | Amount |
-| --- | --- |
-| Application submission, non-refundable | AED 50 |
-| Review and electronic certificate, applicant registered with the FTA | AED 500 |
-| Review and electronic certificate, natural person not registered with the FTA | AED 1,000 |
-| Review and electronic certificate, legal person (company) not registered with the FTA | AED 1,750 |
-| Printed copy, each | AED 250 |
+| Tax residency certificate fee (current table) | Amount | Source |
+| --- | --- | --- |
+| Application submission, non-refundable | AED 50 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf |
+| Review and electronic certificate, applicant registered with the FTA | AED 500 | same |
+| Review and electronic certificate, natural person not registered with the FTA | AED 1,000 | same |
+| Review and electronic certificate, legal person (company) not registered with the FTA | AED 1,750 | same |
+| Printed copy, each | AED 250 | same |
 
 ### Registration on EmaraTax ([FTA Decision No. 3 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf); [VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
 
@@ -213,7 +215,9 @@ Each tax has its own registration and its own Tax Registration Number (TRN) on E
 
 The late registration penalty is AED 10,000 for Corporate Tax and AED 10,000 for VAT. For Corporate Tax, the FTA waives it if the first return is filed within 7 months of the end of the first tax period ([Cabinet Decision No. 75 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf); [CTP006](https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf); [VAT penalties, Cabinet Decision No. 40 of 2017 as amended](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf)).
 
-## Boundaries and exceptions ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
+## Boundaries and exceptions
+
+Sources for this section: [Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf); [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf).
 
 | Situation | Outcome |
 | --- | --- |
@@ -230,7 +234,9 @@ The late registration penalty is AED 10,000 for Corporate Tax and AED 10,000 for
 | Low-sugar sweetened drink | AED 0 per litre only if a MOIAT certificate proves the tier (otherwise taxed as High sugar at AED 1.09 per litre); the importer or producer must still register and report |
 | Non-resident with UAE-sourced income and no UAE permanent establishment | Withholding tax at 0% (Corporate Tax Law, Article 45) |
 
-## Worked cases ([Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Excise Goods Guide ETGTP2](https://tax.gov.ae/Datafolder/Files/Guides/Excisetax/Excisetax/Taxable%20Person%20Guide%20for%20Excise%20-%20ETGTP2%20-%20EN%20-%2006%2002%202026.pdf))
+## Worked cases
+
+Sources for this section: [Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf); [Excise Goods Guide ETGTP2](https://tax.gov.ae/Datafolder/Files/Guides/Excisetax/Excisetax/Taxable%20Person%20Guide%20for%20Excise%20-%20ETGTP2%20-%20EN%20-%2006%2002%202026.pdf).
 
 The amounts are illustrations. Each case uses the calendar year 2026 unless stated.
 
@@ -276,7 +282,9 @@ expected:
 - **Emirate-level fees, customs duty, and pension or labour questions**: not federal taxes administered by the FTA. Refer to the relevant authority.
 - **Unfiled past periods, voluntary disclosures, audits and penalties disputes**: refer to an FTA-registered tax agent.
 
-## Filing and payment ([Corporate Tax Law, Article 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [VAT Executive Regulation, Article 64](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [Excise Tax Taxable Persons Guide ETGTP1](https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Taxable%20Person%20Guide%20for%20Excise%20Tax%20-%20EN%20-%20Jan%202026.pdf); [Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf))
+## Filing and payment
+
+Sources for this section: [Corporate Tax Law, Article 53](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [VAT Executive Regulation, Article 64](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [Excise Tax Taxable Persons Guide ETGTP1](https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Taxable%20Person%20Guide%20for%20Excise%20Tax%20-%20EN%20-%20Jan%202026.pdf); [Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf).
 
 All returns are filed and paid through EmaraTax.
 
@@ -317,38 +325,38 @@ All returns are filed and paid through EmaraTax.
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Ministry of Finance: Tax | https://mof.gov.ae/en/public-finance/tax/ | 2026-10-31, link opened, not re-read |
-| Ministry of Finance: Corporate Tax | https://mof.gov.ae/en/public-finance/tax/corporate-tax/ | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 49 of 2023 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 1,000,000 test, Art. 2 |
-| VAT Executive Regulation | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-10-31, opened, spot-checked only: AED 375,000 and 187,500 thresholds; cash input tax block; Decision 149 footnotes |
-| Ministerial Decision No. 73 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 3,000,000, Art. 2 |
-| Cabinet Decision No. 116 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-10-31, opened, spot-checked only: AED 375,000 band |
-| Cabinet Decision No. 142 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-10-31, link opened, not re-read |
-| Corporate Tax Law, consolidated | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-10-31, opened, spot-checked only: 9% rate on Art. 3 |
-| Ministerial Decision No. 131 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-10-31, opened, spot-checked only: end date 31 December 2029 |
-| Free Zone Persons bulletin | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-10-31, link opened, not re-read |
-| Ministerial Decision No. 229 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-10-31, opened, spot-checked only: 5% or AED 5,000,000 de minimis |
-| FTA Decision No. 12 of 2026 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf | 2026-10-31, link opened, not re-read |
-| VAT Law, consolidated | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-10-31, opened, spot-checked only: 5% rate |
-| Ministry of Finance: VAT | https://mof.gov.ae/en/public-finance/tax/vat/ | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 149 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-10-31, link opened, not re-read |
-| Ministerial Decision No. 244 of 2025 | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-10-31, opened, spot-checked only: pilot 1 July 2026; AED 50,000,000 phase |
-| Ministerial Decision No. 66 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-10-31, opened, spot-checked only: 1 January 2027 date |
-| Excise Tax Taxable Persons Guide ETGTP1, January 2026 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Taxable%20Person%20Guide%20for%20Excise%20Tax%20-%20EN%20-%20Jan%202026.pdf | 2026-10-31, link opened, not re-read |
-| Excise Goods Guide ETGTP2, February 2026 | https://tax.gov.ae/Datafolder/Files/Guides/Excisetax/Excisetax/Taxable%20Person%20Guide%20for%20Excise%20-%20ETGTP2%20-%20EN%20-%2006%2002%202026.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 137 of 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Cabinet%20Decision%20No.%20137%20of%202026%20on%20Excise%20Price%20for%20Tobacco%20Products%20and%20Liquids%20used%20in%20Electronic%20Smoking%20Devices%20and%20Tools%20-%2018%2008%202026.pdf | 2026-10-31, link opened, not re-read |
-| CTGTNP1: Taxation of natural persons | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 85 of 2022 | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf | 2026-10-31, opened, spot-checked only: 183-day test, Art. 4 |
-| Tax Resident and TRC Guide | https://tax.gov.ae/Datafolder/Files/Guides/VAT/VAT%20Guides/Tax-Resident-and-TRC--18-10-2024.pdf | 2026-10-31, link opened, not re-read |
-| FTA services fees, Cabinet Decision No. 65 of 2020 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf | 2026-10-31, opened, spot-checked only: fees AED 50 and 250 |
-| FTA Decision No. 3 of 2024 | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-10-31, link opened, not re-read |
-| Cabinet Decision No. 75 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
-| CTP006 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-10-31, link opened, not re-read |
-| VAT penalties, Cabinet Decision No. 40 of 2017 as amended | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
-| Ministerial Decision No. 84 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-10-31, opened, spot-checked only: AED 50,000,000 audit test |
+| Ministry of Finance, Tax pages: read for the list of UAE federal taxes and the Corporate Tax and VAT summaries | https://mof.gov.ae/en/public-finance/tax/ | 2026-11-14 |
+| Ministry of Finance, Tax pages: read for the list of UAE federal taxes and the Corporate Tax and VAT summaries | https://mof.gov.ae/en/public-finance/tax/corporate-tax/ | 2026-11-14 |
+| Cabinet Decision No. 49 of 2023: read for Art. 2 (natural person Taxable Person above AED 1,000,000 turnover) and the excluded income | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
+| VAT Executive Regulation, consolidated September 2026: read for Art. 7 (AED 375,000, 30 days), Art. 8 (AED 187,500) and the Cabinet Decision No. 149 of 2026 amendments effective 1 October 2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-11-14 |
+| Ministerial Decision No. 73 of 2023: read for Art. 2 (AED 3,000,000 revenue limit) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf | 2026-11-14 |
+| Cabinet Decision No. 116 of 2022: read for Art. 3 (AED 375,000 band) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf | 2026-11-14 |
+| Cabinet Decision No. 142 of 2024 (top-up tax): read for the 15% minimum rate, the EUR 750 million test and fiscal years from 1 January 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-14 |
+| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-14 |
+| Corporate Tax Law, consolidated January 2026: read for Art. 3 (9%), Art. 45 (0% withholding), Art. 53, Art. 56 (7 years records) | https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf | 2026-11-14 |
+| FTA Free Zone Person bulletin: read for the QFZP conditions and free zone branch points | https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf | 2026-11-14 |
+| Ministerial Decision No. 229 of 2025: read for the QFZP qualifying activities | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf | 2026-11-14 |
+| FTA Decision No. 12 of 2026: read for the top-up tax registration and deregistration timelines | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2012%20of%202026%20on%20Registration%20and%20Deregistration%20Timelines%20-%2008%202026.pdf | 2026-11-14 |
+| VAT Law, consolidated November 2025: read for Art. 3 (5%), Arts 13 and 17, Art. 50 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-11-14 |
+| Ministry of Finance, Tax pages: read for the list of UAE federal taxes and the Corporate Tax and VAT summaries | https://mof.gov.ae/en/public-finance/tax/vat/ | 2026-11-14 |
+| Cabinet Decision No. 149 of 2026: link returned 404 on 2026-11-14; its changes were read in the September 2026 consolidated VAT Executive Regulation instead | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-10-31 (earlier read; 404 when retried) |
+| Ministerial Decision No. 244 of 2025: read for Art. 5 e-invoicing phases (AED 50,000,000 revenue line, 1 July 2026 pilot, 1 July 2027 for others) | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-11-14 |
+| Ministerial Decision No. 66 of 2026: read for Art. 1 (30 October 2026 provider appointment, 1 January 2027 go-live at AED 50,000,000 or more) | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-11-14 |
+| FTA Excise Taxable Person guide ETGTP1, January 2026: read for the 100% rates and their start dates | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Taxable%20Person%20Guide%20for%20Excise%20Tax%20-%20EN%20-%20Jan%202026.pdf | 2026-11-14 |
+| FTA Excise Goods guide ETGTP2, February 2026: read for the sweetened drinks tiers (AED 1.09, AED 0.79, AED 0 per litre) | https://tax.gov.ae/Datafolder/Files/Guides/Excisetax/Excisetax/Taxable%20Person%20Guide%20for%20Excise%20-%20ETGTP2%20-%20EN%20-%2006%2002%202026.pdf | 2026-11-14 |
+| Cabinet Decision No. 137 of 2026 (excise price for tobacco and e-liquids): read for its scope and effective date | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Cabinet%20Decision%20No.%20137%20of%202026%20on%20Excise%20Price%20for%20Tobacco%20Products%20and%20Liquids%20used%20in%20Electronic%20Smoking%20Devices%20and%20Tools%20-%2018%2008%202026.pdf | 2026-11-14 |
+| FTA guide CTGTNP1, taxation of natural persons: read for wages, personal investment and real estate investment exclusions and cash basis | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-14 |
+| Cabinet Decision No. 85 of 2022: read for Art. 4 (centre of life, 183 days, 90 days tests) | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%2085%20of%202022%20-%20For%20publishing.pdf | 2026-11-14 |
+| FTA guide TPGTR1, Tax Resident and TRC: read for certificate types, evidence and the 10 business day response | https://tax.gov.ae/Datafolder/Files/Guides/VAT/VAT%20Guides/Tax-Resident-and-TRC--18-10-2024.pdf | 2026-11-14 |
+| Cabinet Decision No. 65 of 2020 and amendments (FTA fees), December 2025: read for items 6 to 10 (AED 50, 500, 1,750, 1,000, 250) | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2065%20of%202020%20on%20FTA%20Services%20Fees%20and%20its%20amendments%20-%20for%20publishing%20%2003%2012%202025.docx.pdf | 2026-11-14 |
+| FTA Decision No. 3 of 2024: read for the registration timelines (3 months, 6 months, 31 March for natural persons) | https://tax.gov.ae/Datafolder/Files/Legislation/RE%20FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20%20-%20For%20publishing.pdf | 2026-11-14 |
+| Cabinet Decision No. 75 of 2023 and amendments (Corporate Tax penalties): read for the late registration (AED 10,000) and other penalty amounts | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2075%20of%202023%20and%20amendments%20-%20For%20Publishing.pdf | 2026-11-14 |
+| FTA public clarification CTP006 (July 2025): read for the late registration penalty waiver conditions | https://tax.gov.ae/Datafolder/Files/Pdf/2025/CTP006-Waiver-of-Late-Registration-Administrative-Penalty-02-07-2025.pdf | 2026-11-14 |
+| Cabinet Decision No. 40 of 2017 and amendments (VAT penalties), November 2025: read for the late registration and late return penalties | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-11-14 |
+| Ministerial Decision No. 84 of 2025: read for the AED 50,000,000 audited financial statements test | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-11-14 |
 
-Not yet confirmed: every figure not named in the Read on column was not re-read on 2026-10-31, and the date of its earlier reading is not recorded.
+Not yet confirmed: the effect of Cabinet Decision No. 149 of 2026 is taken from the September 2026 consolidated VAT Executive Regulation, because the Ministry of Finance link to the Decision itself returned 404 on 14 November 2026. Excise rates on tobacco and e-liquids depend on the excise price under Cabinet Decision No. 137 of 2026, which was opened but its price lists were not checked item by item.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ae-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ae-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ae-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ae-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

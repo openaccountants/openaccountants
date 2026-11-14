@@ -1,10 +1,10 @@
 ---
 name: uruguay-iva
 description: "Uruguay value added tax (IVA, Impuesto al Valor Agregado) for 2026 under Título 10 of the Texto Ordenado 2023 and Decreto 220/998. Covers who is a taxpayer, the 22% basic rate (tasa básica) and the 10% minimum rate (tasa mínima) and what it covers, the main exemptions (property leases and sales, financial interest, newspapers and books), exports of goods and the listed exports of services, imports and the 50% uplift for third-party imports, input credit rules (necessary costs, vehicles, pro-rata, carried-forward credit, independent professionals), the 2-point reduction for debit-card sales to final consumers, the IVA mínimo for small businesses (literal E, UYU 5,910 a month in 2026, capped at 3.3% of sales), annual versus monthly liquidation (CEDE), filing on form 1050, and DGI penalties. Trigger on: IVA Uruguay 2026, tasa básica, tasa mínima, IVA mínimo, literal E, exportación de servicios, crédito fiscal IVA, Uruguay VAT."
-version: 2.1
+version: 2.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: vat-gst
 type: computation
 ---
 
-# Uruguay: IVA (value added tax) for 2026 v2.1
+# Uruguay: IVA (value added tax) for 2026 v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -199,4 +199,4 @@ expected:
 
 Not yet confirmed: the CEDE monthly return form number and its box layout (the old file's forms 2176 / 2178 and lines 1 to 18 were not found in the sources read); the 2026 monthly due dates by RUT ending; the IVA withholding regimes for State bodies and designated large taxpayers (the old file's 100% on services and 60% on goods); the CFE document codes (e-Factura 111, e-Ticket 101 and others); whether the Executive has used its powers to cut the 2-point card reduction further for sales under UI 4,000 (art. 95) or to treat hotel services to non-residents as exports; the regulatory list of "necessary" vehicles; any withholding or reverse-charge mechanism in decrees for services bought from abroad; the 2026 monthly recargo rate; the UI quotation for 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

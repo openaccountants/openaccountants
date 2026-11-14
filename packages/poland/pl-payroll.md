@@ -1,14 +1,15 @@
 ---
 name: pl-payroll
 description: "Polish payroll for employees (umowa o pracę) for tax year 2026: monthly PIT advances under PIT Act art. 31a-32 and 38 (12% and 32% with the PLN 120,000 threshold per payer, standard costs PLN 250 or 300, the PIT-2 reduction of PLN 300 a month), the PLN 85,528 reliefs for under-26s, returners, parents of four and working seniors, employee and employer ZUS contributions (19.52%, 8%, 2.45%, accident 1.67% for small payers, FP and Solidarity Fund 2.45%, FGŚP 0.10%, FEP 1.5%) with the PLN 282,600 annual cap, 9% health contribution, PPK, the PLN 4,806 minimum wage, ZUS DRA and PIT-4R and PIT-11 deadlines, and penalties. Trigger on: wynagrodzenie netto, zaliczka na PIT pracownika, składki ZUS pracodawcy, PIT-11, PIT-4R, koszt pracodawcy. Out of scope: self-employed ZUS in pl-zus-contributions; annual return and business income in pl-income-tax; company tax in pl-cit-corporate-tax."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Poland: payroll for employees (2026)
@@ -33,29 +34,29 @@ domain: payroll
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| PIT scale, first band | 12% up to PLN 120,000, minus the tax-reducing amount PLN 3,600 | 2026 | PIT Act art. 27(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 |
-| PIT scale, second band | PLN 10,800 + 32% of the excess over PLN 120,000 | 2026 | PIT Act art. 27(1) |
-| Tax-free amount (effect of the PLN 3,600 reduction) | PLN 30,000 a year (3,600 / 12%) | 2026 | PIT Act art. 27(1) |
-| Monthly advance rate | 12% until cumulative income from this payer exceeds PLN 120,000; split in the crossing month; 32% after | 2026 | PIT Act art. 32(2) |
-| Monthly reduction with PIT-2 statement | 1/12 of PLN 3,600 = PLN 300 (or 1/24 or 1/36 if split across up to three payers) | 2026 | PIT Act art. 31b(1)-(3) |
-| Standard employee costs (KUP), one job | PLN 250 a month, max PLN 3,000 a year | 2026 | PIT Act art. 22(2)(1) |
-| Standard costs, commuter from another town | PLN 300 a month, max PLN 3,600 a year | 2026 | PIT Act art. 22(2)(3) |
-| Standard costs, several jobs | max PLN 4,500 a year (PLN 5,400 for commuters) | 2026 | PIT Act art. 22(2)(2) and (4) |
-| Author's costs (creative work) | 50% of revenue after employee social contributions; with exempt revenue, capped at PLN 120,000 a year in total | 2026 | PIT Act art. 22(9)(3), 22(9a), 22(9aa) |
-| Reliefs: under 26, relocation to Poland, parents of 4+ children, working seniors | exempt revenue, PLN 85,528 a year in total for all four | 2026 | PIT Act art. 21(1)(148), (152)-(154), 21(44) |
-| Pension insurance (emerytalne) | 19.52%: 9.76% employee, 9.76% employer | 2026 | ZUS Act art. 22(1)(1), 16(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000199 |
-| Disability insurance (rentowe) | 8%: 1.5% employee, 6.5% employer | 2026 | ZUS Act art. 22(1)(2), 16(1b) |
-| Sickness insurance (chorobowe) | 2.45%, all employee | 2026 | ZUS Act art. 22(1)(3), 16(2) |
-| Accident insurance (wypadkowe) | 0.40% to 8.12% range in the Act; payers with 9 or fewer insured: 50% of the highest group rate, 1.67%; all employer | 2026 | ZUS Act art. 22(1)(4), 16(3); Accident Insurance Act art. 28(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Accident rates by activity group (10 or more insured) | group rates from Annex 2 (0.67% to 3.33%), times the payer's correction factor | 2026 | Regulation on accident rates, Dz.U. 2025 poz. 1874, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 |
-| Annual cap on pension and disability base (30 x forecast average wage) | PLN 282,600 (average wage PLN 9,420) | 2026 | ZUS Act art. 19(1); M.P. 2025 poz. 1206, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 |
-| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, employer; base not capped | 2026 | Budget Act 2026 art. 25-26, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062; Labour Market Act art. 259(1), 261-263, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620; Solidarity Fund Act art. 4(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 |
-| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, employer that is a business (przedsiębiorca); base not capped | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 9a-9c, 29(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 |
-| Bridging Pension Fund (FEP) | 1.5%, employer, only for work in special conditions or of a special nature; base is the pension base under ZUS Act art. 18 and 21, with no reference to the art. 19 cap | 2026 | Bridging Pensions Act art. 35-36, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 |
-| Health contribution (zdrowotna) | 9% of gross pay less employee social contributions; no annual cap; employee pays; not deductible from PIT | 2026 | Health Act art. 79(1), 81(1), (5) and (6), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 |
-| PPK basic payments | employee 2% (0.5% to 2% if pay is up to 1.2 x minimum wage), employer 1.5%; extras up to 2% and 2.5% | 2026 | PPK Act art. 26-27, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 |
-| Minimum wage | PLN 4,806 a month; PLN 31.40 an hour | 2026 | Dz.U. 2025 poz. 1242, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 |
-| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8% a year; 10.50% a year from 5 March 2026 (lombard rate 4.25%) | 2026 | Tax Ordinance art. 56 § 1, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622; ZUS Act art. 23(1); M.P. 2026 poz. 269, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 |
+| PIT scale, first band | 12% up to PLN 120,000, minus the tax-reducing amount PLN 3,600 | 2026 | PIT Act art. 27(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| PIT scale, second band | PLN 10,800 + 32% of the excess over PLN 120,000 | 2026 | PIT Act art. 27(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Tax-free amount (effect of the PLN 3,600 reduction) | PLN 30,000 a year (3,600 / 12%) | 2026 | PIT Act art. 27(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Monthly advance rate | 12% until cumulative income from this payer exceeds PLN 120,000; split in the crossing month; 32% after | 2026 | PIT Act art. 32(2); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Monthly reduction with PIT-2 statement | 1/12 of PLN 3,600 = PLN 300 (or 1/24 or 1/36 if split across up to three payers) | 2026 | PIT Act art. 31b(1)-(3); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard employee costs (KUP), one job | PLN 250 a month, max PLN 3,000 a year | 2026 | PIT Act art. 22(2)(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard costs, commuter from another town | PLN 300 a month, max PLN 3,600 a year | 2026 | PIT Act art. 22(2)(3); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard costs, several jobs | max PLN 4,500 a year (PLN 5,400 for commuters) | 2026 | PIT Act art. 22(2)(2) and (4); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Author's costs (creative work) | 50% of revenue after employee social contributions; with exempt revenue, capped at PLN 120,000 a year in total | 2026 | PIT Act art. 22(9)(3), 22(9a), 22(9aa); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Reliefs: under 26, relocation to Poland, parents of 4+ children, working seniors | exempt revenue, PLN 85,528 a year in total for all four | 2026 | PIT Act art. 21(1)(148), (152)-(154), 21(44); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Pension insurance (emerytalne) | 19.52%: half each, 9.76% employee and 9.76% employer (halves computed) | 2026 | ZUS Act art. 22(1)(1), 16(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000199 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) |
+| Disability insurance (rentowe) | 8%: 1.5% employee, 6.5% employer | 2026 | ZUS Act art. 22(1)(2), 16(1b); https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Sickness insurance (chorobowe) | 2.45%, all employee | 2026 | ZUS Act art. 22(1)(3), 16(2); https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Accident insurance (wypadkowe) | Payers with 9 or fewer insured: 50% of the highest group rate, 1.67% (ZUS page); 10 or more: group rate times the payer's correction factor (Act art. 28(2)); all employer | 2026 | ZUS Act art. 22(1)(4), 16(3); Accident Insurance Act art. 28(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf); ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Accident rates by activity group (10 or more insured) | group rates from Annex 2 (0.67% to 3.33%), times the payer's correction factor | 2026 | Regulation on accident rates, Dz.U. 2025 poz. 1874, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1874/text.pdf) |
+| Annual cap on pension and disability base (30 x forecast average wage) | PLN 282,600 (average wage PLN 9,420) | 2026 | ZUS Act art. 19(1); M.P. 2025 poz. 1206, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 (text: https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf) |
+| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45% (total computed), employer; base not capped | 2026 | Budget Act 2026 art. 25-26, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf); Labour Market Act art. 259(1), 261-263, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf); Solidarity Fund Act art. 4(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1848/text.pdf) |
+| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, employer that is a business (przedsiębiorca); base not capped | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 9a-9c, 29(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf) |
+| Bridging Pension Fund (FEP) | 1.5%, employer, only for work in special conditions or of a special nature; base is the pension base under ZUS Act art. 18 and 21, with no reference to the art. 19 cap | 2026 | Bridging Pensions Act art. 35-36, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1696/text.pdf) |
+| Health contribution (zdrowotna) | 9% of gross pay less employee social contributions; no annual cap; employee pays; not deductible from PIT | 2026 | Health Act art. 79(1), 81(1), (5) and (6), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf) |
+| PPK basic payments | employee 2% (0.5% to 2% if pay is up to 1.2 x minimum wage), employer 1.5%; extras up to 2% and 2.5% | 2026 | PPK Act art. 26-27, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/192/text.pdf) |
+| Minimum wage | PLN 4,806 a month; PLN 31.40 an hour | 2026 | Dz.U. 2025 poz. 1242, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf) |
+| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8% a year; 10.50% a year from 5 March 2026 (lombard rate 4.25%) | 2026 | Tax Ordinance art. 56 § 1, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf); ZUS Act art. 23(1); M.P. 2026 poz. 269, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 (text: https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf) |
 
 ## The taxable base
 
@@ -217,25 +218,26 @@ The advances are only prepayments. If the employee has other income or reliefs (
 
 | Source | URL | Read on |
 |---|---|---|
-| PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 21, 22, 27, 31a-32, 38, 39, 42g, 45ba) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 | 2026-10-23 |
-| PIT Act amendments after consolidation: Dz.U. 2026 poz. 779 and 846 (checked, no payroll changes) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000846 | 2026-10-23 |
-| ZUS Act, consolidated text Dz.U. 2026 poz. 199 (art. 16-19, 22-24, 47, 98) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000199 | 2026-10-23 |
-| Cap on pension and disability base for 2026, M.P. 2025 poz. 1206 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 | 2026-10-23 |
-| Accident Insurance Act, Dz.U. 2025 poz. 1644 (art. 28) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644 | 2026-10-23 |
-| Regulation on accident insurance rates, Dz.U. 2025 poz. 1874 (annexes) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 | 2026-10-23 |
+| PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 21, 22, 27, 31a-32, 38, 39, 42g, 45ba) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) | 2026-10-23 |
+| PIT Act amendments after consolidation: Dz.U. 2026 poz. 779 and 846 (checked, no payroll changes) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000846 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/846/text.pdf) | 2026-10-23 |
+| ZUS Act, consolidated text Dz.U. 2026 poz. 199 (art. 16-19, 22-24, 47, 98) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000199 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) | 2026-10-23 |
+| Cap on pension and disability base for 2026, M.P. 2025 poz. 1206 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 (text: https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf) | 2026-10-23 |
+| Accident Insurance Act, Dz.U. 2025 poz. 1644 (art. 28) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf) | 2026-10-23 |
+| Regulation on accident insurance rates, Dz.U. 2025 poz. 1874 (annexes) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1874/text.pdf) | 2026-10-23 |
 | ZUS, contribution rates for 2026 (accident 1.67%) | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne | 2026-10-23 |
-| Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 79, 81, 85) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 | 2026-10-23 |
-| Budget Act 2026, Dz.U. 2026 poz. 62 (art. 24-27) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062 | 2026-10-23 |
-| Labour Market Act, Dz.U. 2025 poz. 620 (art. 259-263) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620 | 2026-10-23 |
-| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9-9c, 29) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 | 2026-10-23 |
-| Bridging Pensions Act, Dz.U. 2024 poz. 1696 (art. 35-36) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 | 2026-10-23 |
-| PPK Act, Dz.U. 2026 poz. 192 (art. 26-28) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 | 2026-10-23 |
-| Minimum wage 2026, Dz.U. 2025 poz. 1242 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 | 2026-10-23 |
-| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 30, 56, 63) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 | 2026-10-23 |
-| Minister of Finance notice on late payment interest rates from 5 March 2026, M.P. 2026 poz. 269 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-10-23 |
+| Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 79, 81, 85) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf) | 2026-10-23 |
+| Budget Act 2026, Dz.U. 2026 poz. 62 (art. 24-27) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf) | 2026-10-23 |
+| Labour Market Act, Dz.U. 2025 poz. 620 (art. 259-263) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf) | 2026-10-23 |
+| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9-9c, 29) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf) | 2026-10-23 |
+| Bridging Pensions Act, Dz.U. 2024 poz. 1696 (art. 35-36) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1696/text.pdf) | 2026-10-23 |
+| PPK Act, Dz.U. 2026 poz. 192 (art. 26-28) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/192/text.pdf) | 2026-10-23 |
+| Minimum wage 2026, Dz.U. 2025 poz. 1242 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf) | 2026-10-23 |
+| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 30, 56, 63) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf) | 2026-10-23 |
+| Minister of Finance notice on late payment interest rates from 5 March 2026, M.P. 2026 poz. 269 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 (text: https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf) | 2026-10-23 |
 | NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
-| Solidarity Fund Act, Dz.U. 2024 poz. 1848 (art. 4) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 | 2026-10-23 |
-| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77-78) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 | 2026-10-23 |
+| Solidarity Fund Act, Dz.U. 2024 poz. 1848 (art. 4) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1848/text.pdf) | 2026-10-23 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77-78) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf) | 2026-10-23 |
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
+| Read for PIT scale, second band, Tax-free amount (effect of the PLN 3,600 reduction), Monthly advance rate, Monthly reduction with PIT-2 statement: official text of Dz.U. 2026 poz. 592 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-11-14 |
 
-Not yet confirmed: whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.
+Not yet confirmed: the overall accident insurance rate range (old file: 0.40% to 8.12%), not found in the Accident Insurance Act text read on 2026-11-14; whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.

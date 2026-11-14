@@ -1,10 +1,11 @@
 ---
 name: new-zealand-crypto-tax
-description: Use this skill whenever asked about New Zealand cryptocurrency or cryptoasset taxation. Trigger on phrases like "crypto tax New Zealand", "crypto tax NZ", "Bitcoin NZ tax", "IRD crypto", "cryptoassets NZ", "cryptocurrency gains NZ", "crypto income NZ", "staking NZ", "mining income NZ", "NFT tax NZ", "DeFi NZ tax", "IR3 crypto", "purpose of disposal crypto", "intention test crypto NZ", "GST crypto NZ", or any question about the income tax or GST treatment of cryptocurrency, tokens, or digital assets for New Zealand tax residents or NZ-source crypto income. Covers IRD cryptoasset guidance, the purpose-of-disposal test under s CB 4, GST exemption, cost basis, DeFi/staking/mining, and IR3 reporting. ALWAYS read this skill before touching any New Zealand crypto work.
-version: 1.2
+description: Use this skill whenever asked about New Zealand cryptocurrency or cryptoasset taxation in the 2027 income year (1 April 2026 to 31 March 2027). Trigger on phrases like "crypto tax New Zealand", "crypto tax NZ", "Bitcoin NZ tax", "IRD crypto", "cryptoassets NZ", "cryptocurrency gains NZ", "crypto income NZ", "staking NZ", "mining income NZ", "NFT tax NZ", "DeFi NZ tax", "IR3 crypto", "purpose of disposal crypto", "intention test crypto NZ", "GST crypto NZ", or any question about the income tax or GST treatment of cryptocurrency, tokens, or digital assets for New Zealand tax residents or NZ-source crypto income. Covers IRD cryptoasset guidance, the purpose-of-disposal test under s CB 4, GST exemption, cost basis, DeFi, staking, mining, airdrops, CARF and IR3 reporting. ALWAYS read this skill before touching any New Zealand crypto work.
+version: "2.0"
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-10-31
+tax_year_notes: "New Zealand income year 1 April 2026 to 31 March 2027, which Inland Revenue calls the 2027 income year. Crypto income is taxed at the ordinary rates; IRD's personal rate table is headed From 1 April 2025 and no later table exists."
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,17 +14,18 @@ category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: situation-rules
 ---
 
-# Crypto tax in New Zealand
+# Crypto tax in New Zealand, 2027 income year
 
-How New Zealand taxes an individual who buys, sells, swaps, stakes, mines or receives cryptoassets, and how GST applies. Figures are for tax year 2026. In New Zealand that is the income year from 1 April 2026 to 31 March 2027, which Inland Revenue calls the 2027 income year. Inland Revenue's crypto pages print no crypto-specific rates or thresholds: crypto income is taxed at the ordinary rates. The personal rate table is headed "From 1 April 2025"; no later table exists. The rules come from Inland Revenue's cryptoasset pages (read 22 September 2026) and its technical publications: QB 21/06 on airdrops (June 2021), Tax Information Bulletin Vol 34 No 5 (June 2022) on GST, issues paper IRRUIP18 on DeFi (29 January 2026, initial views only) and technical decision summary 25/23 (October 2025, not binding). Names in brackets point to Sources.
+> **Source-cited draft.** Built from Inland Revenue's cryptoasset pages, QB 21/06, technical decision summary 25/23, Tax Information Bulletin Vol 34 No 5 and the IRRUIP18 landing page, re-read on 14 November 2026. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+## Scope
+
+How New Zealand taxes an individual who buys, sells, swaps, stakes, mines or receives cryptoassets, and how GST applies. The year covered is the income year from 1 April 2026 to 31 March 2027, which Inland Revenue calls the 2027 income year. Inland Revenue's crypto pages print no crypto-specific rates or thresholds: crypto income is taxed at the ordinary rates. The rules come from Inland Revenue's cryptoasset pages and its technical publications: QB 21/06 on airdrops (June 2021), Tax Information Bulletin Vol 34 No 5 (June 2022) on GST, issues paper IRRUIP18 on DeFi (29 January 2026, initial views only) and technical decision summary 25/23 (October 2025, not binding). Names in square brackets point to Sources.
 
 Not covered: companies, trusts, crypto businesses, crypto paid as salary (binding rulings BR Pub 23/04 to 23/07), non-residents.
-
-## Section 1: Quick Reference
-
-**Section 1: Quick Reference**
 
 | Field | Value |
 | --- | --- |
@@ -34,46 +36,45 @@ Not covered: companies, trusts, crypto businesses, crypto paid as salary (bindin
 | Primary authority | Income Tax Act 2007, ss CA 1(2), CB 3, CB 4, CB 5, DB 23; Goods and Services Tax Act 1985, ss 2(1), 3, 20H |
 | Tax authority | Inland Revenue (Te Tari Taake, IRD) |
 | Filing portal | myIR |
-| Filing deadline | IR3 by 7 July after the year ends, unless you have a tax agent or an extension of time (Section 7) |
+| Filing deadline | IR3 by 7 July after the year ends, unless you have a tax agent or an extension of time (Filing and payment) |
 | Capital gains tax | **No general capital gains tax.** Whether a crypto gain is taxable depends mainly on the PURPOSE of acquisition |
-| Guide version | 2.0 (2026 refresh) |
+| Guide version | 2.0 (world standard rewrite, November 2026) |
 
-### The Central Rule
+### The central rule
 
 **New Zealand has no general capital gains tax**, but Inland Revenue says "In most cases, the amounts you get from selling, trading or exchanging cryptoassets are taxable (this includes when you exchange one type of cryptoasset for another)" [Buying and selling]. The main test is the dominant purpose when the crypto was acquired. If it was acquired to sell or exchange at some point, the profit is income: "It does not matter how long you plan to hold onto your cryptoassets" [Acquiring to sell]. Calling it a "long-term investment" does not change that. Trading and profit-making schemes are also taxable.
 
-### Conservative Defaults
+## Ask the client first
 
-**Conservative Defaults**
+1. Are you a New Zealand tax resident, and when did you arrive or return?
+2. For each holding: why did you buy it, what research did you do, and is anything written down from that time?
+3. Does it give you an income stream, and how does that compare with your sale gains?
+4. How often do you trade, and how much time do you spend on it?
+5. Did you receive airdrops, forks, mining rewards, NFTs or crypto for work?
+6. Which exchanges, wallets and protocols (including overseas), and do you have full exports?
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown purpose at acquisition | Treat as acquired for disposal (taxable). No income stream "strongly suggests" a disposal purpose |
-| Trading vs investment unclear | Taxable until the client has clear and compelling evidence of a non-disposal purpose |
-| Unknown cost method | FIFO or weighted average cost, the two methods Inland Revenue names. Apply one consistently |
-| Staking rewards | Income when received, and taxable again on disposal (cost = value when received) |
-| DeFi transaction | "if you lose possession of your cryptoassets with a DeFi product, you have made a disposal" [Calculating income] |
-| GST on crypto | Buying and selling crypto is NOT subject to GST |
-| Unknown tax residency | STOP. Residents: worldwide income. Non-residents: New Zealand-source only. See `nz-tax-residency` |
+## The method, step by step
 
-## Section 2: Classification Rules
+1. **Residency.** Confirm residency and any transitional resident exemption [Tax residence]; tests in [nz-tax-residency](nz-tax-residency.md). Unknown residency: STOP. Residents are taxed on worldwide income; non-residents on New Zealand-source income only.
+2. **List everything.** List every acquisition and disposal across all wallets and platforms, New Zealand and overseas, and reconcile holdings at 31 March [Calculating income]. Transfers between your own wallets are not disposals [Buying and selling].
+3. **Purpose test (s CB 4).** Test the dominant purpose at acquisition (below). If it fails, test trading and a profit-making scheme under s CB 3 [Acquiring to sell].
+4. **Income on receipt.** Record income when received for staking, DeFi and mining rewards, crypto for services, and airdrops in the taxable cases of QB 21/06 (Boundary table).
+5. **Disposals.** Work out each taxable disposal as sale price less cost less fees, by FIFO or weighted average cost, in NZD [Calculating income].
+6. **GST.** Check GST on NFT sales, mining services and crypto taken as payment [Crypto and GST].
+7. **Return.** Enter net crypto income or loss in the IR3 "other income" box, attach the calculation, file by 7 July unless there is a tax agent or extension of time, and check provisional tax [Declare].
 
-**Section 2: Classification Rules**
-
-### 2.1 Legal Classification
-
-**2.1 Legal Classification**
+### Legal classification
 
 | Term | Definition | Authority |
 | --- | --- | --- |
 | Cryptoasset | "a form of property for tax purposes". Treatment depends on characteristics and use, not the name | [Cryptoassets] |
-| Cryptocurrency vs NFT | An NFT is a cryptoasset but not "cryptocurrency". This matters for GST (3.4) | Tax Information Bulletin Vol 34 No 5 |
+| Cryptocurrency vs NFT | An NFT is a cryptoasset but not "cryptocurrency". This matters for GST | Tax Information Bulletin Vol 34 No 5 |
 | Excepted financial arrangement | Cryptocurrency is excepted under s EW 5(3BA) unless s EW 5(3BAB) applies (economically equivalent to debt). The legacy Guide cited "s EW 5(22B)": wrong | Tax Information Bulletin Vol 34 No 5 |
 | Personal property | "the tax rules that apply to personal property apply to cryptoassets" | IRRUIP18 |
 
-### 2.2 The Purpose-of-Disposal Test (s CB 4)
+### The purpose-of-disposal test (s CB 4)
 
-The **key provision**. Technical decision summary 25/23: "Under s CB 4, an amount that a person derives from disposing of personal property is income of the person if they acquired the property for the purpose of disposing of it."
+The key provision. Technical decision summary 25/23: "Under s CB 4, an amount that a person derives from disposing of personal property is income of the person if they acquired the property for the purpose of disposing of it."
 
 Inland Revenue on purpose [Acquiring to sell]:
 
@@ -84,9 +85,7 @@ Inland Revenue on purpose [Acquiring to sell]:
 - An income stream such as staking is a factor, but does not by itself show a non-disposal purpose.
 - If you expect to earn more from selling than from passive income, "your dominant purpose will most likely be acquiring cryptoassets for disposal."
 
-**Purpose-of-Disposal Test factors table**
-
-| Factor | Indicates Purpose of Disposal (Taxable) | Indicates NOT Purpose of Disposal |
+| Factor | Indicates purpose of disposal (taxable) | Indicates NOT purpose of disposal |
 | --- | --- | --- |
 | Stated intent at purchase | "I'll sell when it goes up" | A documented plan to live on passive income. A statement alone is not enough |
 | Nature of the asset | No income stream while held | An income stream researched and forecast before buying |
@@ -97,9 +96,7 @@ Inland Revenue on purpose [Acquiring to sell]:
 
 Inland Revenue's examples: "Leena" held a "long-term investment" with no income stream and was taxable. "Selina" bought a stablecoin to earn staking income and sold to pay an unexpected bill: rewards were income, but not the profit on the initial stablecoin.
 
-### 2.3 Other Income Provisions
-
-**Other Income Provisions table**
+### Other income provisions
 
 | Provision | Description |
 | --- | --- |
@@ -107,105 +104,24 @@ Inland Revenue's examples: "Leena" held a "long-term investment" with no income 
 | s CB 1, CB 2, CB 5: Business | A trader: many transactions, much time and effort, fairly continuous; crypto is then likely trading stock. A full-time employee is "probably not a trader" unless highly organised [Trading] |
 | s CA 1(2): Ordinary income | Regular, recurrent receipts such as staking rewards (technical decision summary 25/23) |
 
-### 2.4 Burden of Proof
+### Burden of proof
 
-- **Burden of proof.** The onus is on the taxpayer, on the balance of probabilities. In technical decision summary 25/23: "It was up to the taxpayers to prove the cryptoassets were not acquired with the dominant purpose of disposing of them." Not binding. The legacy Guide put "clear and compelling evidence" in that summary; the words come from Inland Revenue's web page: if you sell at a profit and claim no disposal purpose, "you will need clear and compelling evidence to support your claim" [Acquiring to sell].
+The onus is on the taxpayer, on the balance of probabilities. In technical decision summary 25/23: "It was up to the taxpayers to prove the cryptoassets were not acquired with the dominant purpose of disposing of them." Not binding. The summary weighed: "Actions may speak louder than words"; years in the crypto industry; staking not available at purchase; buying low and selling at peaks; sale gains far above staking returns. The legacy Guide put "clear and compelling evidence" in that summary; the words come from Inland Revenue's web page: if you sell at a profit and claim no disposal purpose, "you will need clear and compelling evidence to support your claim" [Acquiring to sell].
 
-## Section 3: Rate Tables
-
-**Section 3: Rate Tables**
-
-### 3.1 Individual Income Tax Rates (2027 income year: 1 April 2026 to 31 March 2027)
-
-**Individual income tax rates, 2027 income year**
-
-| Taxable income | Rate on each dollar in the band | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals |
-| Up to NZD 15,600 | 10.5% | Table headed "From 1 April 2025" |
-| Over NZD 15,600 up to NZD 53,500 | 17.5% | Same table |
-| Over NZD 53,500 up to NZD 78,100 | 30% | Same table |
-| Over NZD 78,100 up to NZD 180,000 | 33% | Same table |
-| From NZD 180,001 | 39% | "and over" |
-
-- **No tax-free threshold.** The first band starts at the first dollar.
-- **Crypto income aggregation.** Taxable crypto income is added to other income; each band rate applies only to income inside that band. Tax credits and codes: `nz-income-tax-ir3`.
-
-### 3.2 Prior Year Rates (2024/25 Tax Year: 1 April 2024 to 31 March 2025)
-
-The legacy Guide printed the current bands for this year. Wrong: the page in 3.1 prints a separate table for it, headed "From 1 April 2024 to 31 March 2025", with composite rates in some bands. Use that only for this year's returns.
-
-### 3.3 Company Tax Rate
-
-**Company rate**
-
-| Entity | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses |
-| Most companies | 28% | "Most companies 28%" |
-
-**Trustee rates**
-
-| Entity | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates |
-| Trust income level that switches the rate | NZD 10,000 | "If your trust earns more than" this |
-| Trustee rate above that level | 39% | "you'll need to pay 39%" |
-| Trustee rate at or below that level | 33% | "you'll pay at a 33% rate" |
-
-### 3.4 GST
-
-**GST treatment table**
-
-| Transaction | GST Treatment | Authority |
-| --- | --- | --- |
-| Buying and selling cryptoassets | **Not subject to GST.** "Cryptoassets are excluded from GST ... you do not need to register for GST." | [Crypto and GST] |
-| Brokering cryptocurrency transfers | Exempt financial service, s 3(1)(lb) GST Act | Tax Information Bulletin Vol 34 No 5 |
-| Crypto received as payment | Charge GST on the goods or services as normal, on the NZD value received. No GST on a later sale of that crypto | [Crypto and GST] |
-| NFT sales | **GST applies** if you are registered or must register (a taxable activity, as for "Phil"). "NFTs are classified as a service for GST." Zero-rated to buyers outside New Zealand; royalties zero-rated | [NFTs] [Crypto and GST] |
-| Mining service | A supply for GST, zero-rated for a blockchain outside New Zealand; input tax claimable | [Mining] |
-
-**GST registration**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/gst/registering-for-gst |
-| Compulsory registration: turnover in the last 12 months, or expected in the next 12 | NZD 60,000 | This page says "at least" this; the NFT page says "more than" this of NFT sales "in a 12-month period" |
-
-**GST rate**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf |
-| Standard rate, for example on NFT sales to New Zealand buyers | 15% | "The current rate is 15%." |
-
-- **GST amendment.** The definitions of "goods" and "services" in s 2(1) GST Act exclude cryptocurrency, retrospectively from 1 January 2009 (Tax Information Bulletin Vol 34 No 5). The legacy Guide named the wrong amending Act (the 2024-25 rates Act). See `nz-gst-return` and `nz-gst-return`.
-
-## Section 4: Cost Basis Methods
-
-**Section 4: Cost Basis Methods**
-
-### 4.1 Accepted Methods
+### Cost basis
 
 "To work out the cost of disposed cryptoassets you can use 1 of the following methods: first-in first-out (FIFO) weighted average cost (WAC)." [Calculating income]
 
-**Accepted Methods table**
-
 | Method | Status |
 | --- | --- |
-| FIFO (First In, First Out) | Named by Inland Revenue |
+| FIFO (first in, first out) | Named by Inland Revenue |
 | Weighted average cost | Named by Inland Revenue |
 | Specific identification | Not named. The legacy Guide said "accepted"; the Inland Revenue page names only FIFO and weighted average cost |
 | LIFO | Not named. Use FIFO or weighted average cost |
 
-- **Consistency requirement.** Apply one method consistently (prudent practice; not stated in those words by Inland Revenue).
+- Apply one method consistently (prudent practice; not stated in those words by Inland Revenue).
 - Part disposal: "calculate the cost of just that part." Unrealised gains and losses "are not taxable or deductible."
-
-### 4.2 Cost Basis Components
-
-Formula: income = sale price less purchase cost less transaction fees [Calculating income].
-
-**Cost Basis Components table**
+- Formula: income = sale price less purchase cost less transaction fees [Calculating income].
 
 | Component | Included? |
 | --- | --- |
@@ -213,24 +129,58 @@ Formula: income = sale price less purchase cost less transaction fees [Calculati
 | Exchange, network and gas fees | Yes (transaction fees) |
 | Fees on disposal | Yes, deducted |
 | Crypto taxed on receipt (mining, staking, payment) and later sold | Cost = value when received |
-| Airdropped crypto taxed only on disposal | Generally no cost apart from transaction fees (QB 21/06) |
+| Airdropped crypto taxed only on disposal | Generally no cost apart from transaction fees (QB 21/06); IRD: "Generally no deduction is available for the cost of acquiring the cryptoassets from an airdrop or a hard fork" [Airdrops and forks] |
 
-### 4.3 Trading Stock Rules
+- **Trading stock.** Cryptoassets are excepted financial arrangements (except those economically equivalent to debt), so "if your cryptoassets are trading stock they are valued at cost at the end of the tax year" [Cryptoassets]. Mining rewards that are trading stock: cost (value on receipt) is deducted in the year the rewards are returned as income [Calculating income].
+- **NZD conversion.** Value each transaction in NZD when it happens. IRRUIP18 says market value "can usually be obtained by looking up the value on a centralised exchange". The legacy "mid-market rate" rule is on no page read. Record a crypto-to-crypto exchange "as both a disposal and an acquisition" [Calculating income], at the market value of the cryptoasset received.
 
-- **Trading stock valuation.** Cryptoassets are excepted financial arrangements (except those economically equivalent to debt), so "if your cryptoassets are trading stock they are valued at cost at the end of the tax year" [Cryptoassets]. Mining rewards that are trading stock: cost (value on receipt) is deducted in the year the rewards are returned as income [Calculating income].
+## Rates, bands and thresholds
 
-### 4.4: NZD Conversion
+| Item | Value | Conditions | Source |
+| --- | --- | --- | --- |
+| Individual rate, up to NZD 15,600 | 10.5% | IRD table "From 1 April 2025", no later table; no tax-free threshold | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals |
+| Individual rate, NZD 15,601 to 53,500 | 17.5% | Each band rate applies only to income inside the band | same |
+| Individual rate, NZD 53,501 to 78,100 | 30% | | same |
+| Individual rate, NZD 78,101 to 180,000 | 33% | | same |
+| Individual rate, NZD 180,001 and over | 39% | | same |
+| Company rate, most companies | 28% | | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses |
+| Trustee rate, trust income NZD 10,000 or less | 33% | Undistributed income, from 1 April 2024 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates |
+| Trustee rate, trust income more than NZD 10,000 | 39% | Exceptions on the same page | same |
+| GST compulsory registration | NZD 60,000 | "at least" this in the last 12 months or expected in the next 12; the NFT page says "more than" this of NFT sales in a 12-month period | https://www.ird.govt.nz/gst/registering-for-gst |
+| GST standard rate (for example NFT sales to New Zealand buyers) | 15% | "The current rate is 15%." | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf |
+| IR3 filing trigger | more than NZD 200 | Income (before tax) IRD was not told about | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 |
+| Provisional tax trigger | more than NZD 5,000 | Tax to pay at the end of the year from the last return | https://www.ird.govt.nz/income-tax/provisional-tax |
+| Record retention | at least 7 years | "even if you no longer have any cryptoassets" | https://www.ird.govt.nz/cryptoassets/taxing/record-keeping |
 
-- **NZD conversion method.** Value each transaction in NZD when it happens. IRRUIP18 says market value "can usually be obtained by looking up the value on a centralised exchange". The legacy "mid-market rate" rule is on no page read. Record a crypto-to-crypto exchange "as both a disposal and an acquisition" [Calculating income], at the market value of the cryptoasset received.
-- Include all wallets and platforms, New Zealand and overseas; reconcile holdings at 31 March [Calculating income].
+Crypto income is added to other income; tax credits and codes are in [nz-income-tax-ir3](nz-income-tax-ir3.md). For the 2025 income year (1 April 2024 to 31 March 2025) IRD prints a separate table headed "From 1 April 2024 to 31 March 2025", with composite rates in some bands; the legacy Guide printed the current bands for that year, which was wrong. Use that table only for that year's returns.
 
-## Section 5: DeFi / Staking / Mining / Airdrop Treatment
+## Boundary and exception table
 
-**Section 5: DeFi, Staking, Mining, Airdrop Treatment**
+### Conservative defaults
 
-### 5.1 Mining
+| Ambiguity | Default |
+| --- | --- |
+| Unknown purpose at acquisition | Treat as acquired for disposal (taxable). No income stream "strongly suggests" a disposal purpose |
+| Trading vs investment unclear | Taxable until the client has clear and compelling evidence of a non-disposal purpose |
+| Unknown cost method | FIFO or weighted average cost, the two methods Inland Revenue names. Apply one consistently |
+| Staking rewards | Income when received, and taxable again on disposal (cost = value when received) |
+| DeFi transaction | "if you lose possession of your cryptoassets with a DeFi product, you have made a disposal" [Calculating income] |
+| GST on crypto | Buying and selling crypto is NOT subject to GST |
+| Unknown tax residency | STOP. Residents: worldwide income. Non-residents: New Zealand-source only. See [nz-tax-residency](nz-tax-residency.md) |
 
-**Mining table**
+### GST
+
+| Transaction | GST treatment | Authority |
+| --- | --- | --- |
+| Buying and selling cryptoassets | **Not subject to GST.** "Cryptoassets are excluded from GST ... you do not need to register for GST." | [Crypto and GST] |
+| Brokering cryptocurrency transfers | Exempt financial service, s 3(1)(lb) GST Act | Tax Information Bulletin Vol 34 No 5 |
+| Crypto received as payment | Charge GST on the goods or services as normal, on the NZD value received. No GST on a later sale of that crypto | [Crypto and GST] |
+| NFT sales | **GST applies** if you are registered or must register (a taxable activity, as for "Phil"). "NFTs are classified as a service for GST." Zero-rated to buyers outside New Zealand; royalties zero-rated | [NFTs] [Crypto and GST] |
+| Mining service | A supply for GST, zero-rated for a blockchain outside New Zealand; input tax claimable | [Mining] |
+
+The definitions of "goods" and "services" in s 2(1) GST Act exclude cryptocurrency, retrospectively from 1 January 2009 (Tax Information Bulletin Vol 34 No 5). The legacy Guide named the wrong amending Act (the 2024-25 rates Act). GST returns: [nz-gst-return](nz-gst-return.md).
+
+### Mining
 
 | Aspect | Treatment |
 | --- | --- |
@@ -238,11 +188,9 @@ Formula: income = sale price less purchase cost less transaction fees [Calculati
 | Classification | Business, profit-making scheme, ordinary income, or mined for disposal. Refer hobby mining claims |
 | Cost basis of mined coins | Value when received, if taxed on receipt |
 | Later sale | May be taxable again; no GST |
-| GST | Zero-rated supply for a blockchain outside New Zealand (3.4) |
+| GST | Zero-rated supply for a blockchain outside New Zealand |
 
-### 5.2 Staking
-
-**Staking table**
+### Staking
 
 | Aspect | Treatment |
 | --- | --- |
@@ -252,9 +200,7 @@ Formula: income = sale price less purchase cost less transaction fees [Calculati
 | Dominant purpose | Staking can support a non-disposal purpose for the ORIGINAL holding only with evidence ("Selina"). It did not in "Pete" or in technical decision summary 25/23 |
 | Buy, stake and sell | A profit-making scheme: rewards and all sale profits taxable ("Tai" [Profit-making scheme]; "Ariana" on the Inland Revenue mining profit-making scheme page) |
 
-### 5.3 Airdrops
-
-**Airdrops table** (QB 21/06)
+### Airdrops and hard forks (QB 21/06)
 
 | Aspect | Treatment |
 | --- | --- |
@@ -266,13 +212,11 @@ Formula: income = sale price less purchase cost less transaction fees [Calculati
 | Cost | Generally only transaction fees. If taxed on receipt AND disposal, cost = value on receipt |
 | Hard forks | QB 21/07 (not read). May be taxable "on either receipt, disposal or both" [Airdrops and forks] |
 
-- **Airdrop citation.** QB 21/06 is the current guidance. The legacy citation mixed up IRRUIP14 (December 2020) with IRRUIP18 (January 2026, DeFi).
+QB 21/06 is the current airdrop guidance. The legacy citation mixed up IRRUIP14 (December 2020) with IRRUIP18 (January 2026, DeFi).
 
-### 5.4 DeFi
+### DeFi (IRRUIP18 initial views, not final)
 
 IRRUIP18 gives initial views only; issues papers "are not authoritative statements". No final statement yet.
-
-**DeFi table (IRRUIP18 initial views, not final)**
 
 | Activity | Treatment |
 | --- | --- |
@@ -280,12 +224,10 @@ IRRUIP18 gives initial views only; issues papers "are not authoritative statemen
 | Lending, yield farming | Rewards "are usually taxable when received"; a deposit into a pool is likely a disposal |
 | Liquidity provision | Deposit = likely disposal; LP tokens received at market value; removing liquidity disposes of LP tokens |
 | Wrapping, bridging (for example ETH to WETH) | Conservative: disposal and new acquisition; close together "there may be no net tax liability" |
-| Impermanent loss | Not addressed by name. A loss arises only on a disposal (for example burning LP tokens), and only if the crypto is held on revenue account (8.1). No loss while still in the pool |
+| Impermanent loss | Not addressed by name. A loss arises only on a disposal (for example burning LP tokens), and only if the crypto is held on revenue account. No loss while still in the pool |
 | Borrowing against crypto | Depends on whether collateral leaves your control; a liquidation is a disposal (if the collateral was not already disposed of) |
 
-## Section 6: NFT Treatment
-
-**NFT Treatment table** [NFTs]
+### NFTs [NFTs]
 
 | Aspect | Treatment |
 | --- | --- |
@@ -293,96 +235,27 @@ IRRUIP18 gives initial views only; issues papers "are not authoritative statemen
 | Bought for personal use and enjoyment | "there is no tax to pay on their disposal"; clear and compelling evidence of purpose needed |
 | Creation and sale | Business or profit-making scheme ("Phil"); costs deductible |
 | Royalties | "income at the time they receive them"; zero-rated for GST [Crypto and GST] |
-| GST on NFT sales | The rate in 3.4 on sales to New Zealand buyers; zero-rated abroad; register above the 3.4 threshold |
+| GST on NFT sales | The standard rate on sales to New Zealand buyers; zero-rated abroad; register above the threshold in the rates table |
 
-- **NFT GST exemption note.** GST "will continue to apply to supplies of non-fungible tokens (NFTs)" (Tax Information Bulletin Vol 34 No 5).
+GST "will continue to apply to supplies of non-fungible tokens (NFTs)" (Tax Information Bulletin Vol 34 No 5).
 
-## Section 7: Reporting Requirements
-
-**Section 7: Reporting Requirements**
-
-### 7.1 Individual Filing
-
-**Individual Filing table**
-
-| Requirement | Detail |
-| --- | --- |
-| Return type | IR3, Individual income tax return |
-| Filing deadline | By 7 July "unless you have a tax agent or an extension of time" [IR3]. For the 2027 income year: 7 July 2027 |
-| Extended deadline (tax agent) | The legacy "31 March of the following year" is on no page read: confirm with the agent (`nz-income-tax-ir3`) |
-| Crypto section | No crypto schedule. If it fits no other box, net crypto income or loss goes in the "other income" box; attach the calculation [Declare] |
-| Loss to claim | "To claim a loss, you need to show that if you'd made a profit it would have been taxable." |
-
-### 7.2 When Must You File an IR3?
-
-**IR3 filing trigger**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 |
-| File if you received more than this (before tax) in income Inland Revenue was not told about | NZD 200 | "more than" this "(before tax)" |
-
-"You need to file an income tax return - IR3 when you have taxable income from a cryptoasset activity" [Taxing].
-
-### 7.3 Provisional Tax
-
-**Provisional Tax table**
-
-| Who | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.ird.govt.nz/income-tax/provisional-tax |
-| Applies if the tax to pay at the end of the year from the last return was more than this | NZD 5,000 | "more than" this "tax at the end of the year" |
-
-Dates and options: `nz-provisional-tax`. A large crypto gain can bring the client into provisional tax the next year.
-
-### 7.4 Record-Keeping
-
-**Record-Keeping table** [Records]
-
-| Requirement | Detail |
-| --- | --- |
-| Retention period | "at least 7 years, even if you no longer have any cryptoassets" |
-| Records | Type of cryptoasset, date, type of transaction, units, NZD value, units held at start and end of year, exchange records and bank statements, wallet addresses |
-| Purpose evidence | Research and forecasts made at acquisition (2.2). Not on the list, but the purpose test turns on it |
-
-## Section 8: Loss Offset and Carry-Forward
-
-**Section 8: Loss Offset and Carry-Forward**
-
-### 8.1 Loss Offset Rules
-
-**Loss Offset Rules table**
+### Losses
 
 | Rule | Detail |
 | --- | --- |
-| Crypto disposal losses | Claimable ONLY if a profit would have been taxable ("Sione") |
+| Crypto disposal losses | Claimable ONLY if a profit would have been taxable ("Sione"). "To claim a loss, you need to show that if you'd made a profit it would have been taxable." |
 | Offset order | "Losses from disposals can offset other cryptoasset profits, and then other income." [Calculating income] |
 | Carry-forward, company continuity, carry-back | General income tax rules, not on the crypto pages and not checked. Confirm before relying on them |
 | Stolen crypto | Separate Inland Revenue pages. Refer |
+| Trading stock losses | Trading stock is valued at cost at year end, so a market fall below cost is not deducted until disposal |
 
-### 8.2 Key Principle
+Key principle: no loss if the profit would have been untaxed.
 
-- **Key principle for claiming loss.** No loss if the profit would have been untaxed.
+### Anti-avoidance
 
-### 8.3 Trading Stock Losses
+Section BG 1 of the Income Tax Act 2007 lets the Commissioner void a tax avoidance arrangement, including structures built to get around the purpose test. (Legacy statement; the statute is on a host that refused script access, see Not yet confirmed.)
 
-- **Trading stock losses.** Trading stock is valued at cost at year end (4.3), so a market fall below cost is not deducted until disposal.
-
-## Section 9: Anti-Avoidance Rules
-
-**Section 9: Anti-Avoidance Rules**
-
-### 9.1 General Anti-Avoidance (s BG 1)
-
-- **General anti-avoidance rule.** Section BG 1 of the Income Tax Act 2007 lets the Commissioner void a tax avoidance arrangement, including structures built to get around the purpose test. (Legacy statement; the statute is on a blocked host.)
-
-### 9.2 Aggressive Position: "Clear and Compelling Evidence"
-
-See 2.4. Technical decision summary 25/23 weighed: "Actions may speak louder than words"; years in the crypto industry; staking not available at purchase; buying low and selling at peaks; sale gains far above staking returns.
-
-### 9.3 Transitional Residents
-
-**Transitional Residents table** [Tax residence] [New residents]
+### Residents, non-residents and transitional residents [Tax residence] [New residents]
 
 | Status | Treatment |
 | --- | --- |
@@ -392,60 +265,52 @@ See 2.4. Technical decision summary 25/23 weighed: "Actions may speak louder tha
 | Not exempt | New Zealand-source income (trading on a New Zealand exchange) and crypto paid for work done overseas |
 | After the exemption | "You do not revalue your cryptoassets at the end of your exemption period." |
 
-- **Transitional resident citation.** Section HR 8 Income Tax Act 2007; technical decision summary 24/22 (December 2024). Residence tests: `nz-tax-residency`.
+Transitional resident citation: section HR 8 Income Tax Act 2007; technical decision summary 24/22 (December 2024). Residence tests: [nz-tax-residency](nz-tax-residency.md).
 
-### 9.4 Information Sharing
-
-**Information Sharing table**
+### Information sharing
 
 | Measure | Detail |
 | --- | --- |
 | CRS (Common Reporting Standard) | New Zealand participates |
-| CARF | **Adopted** (legacy: "expected to adopt"). From 1 April 2026 New Zealand crypto-asset service providers collect user and residency details; first report due by 30 June 2027; data also comes from other countries [CARF] |
+| CARF | **Adopted** (legacy: "expected to adopt"). From 1 April 2026 reporting crypto-asset service providers with a New Zealand nexus collect user and residency details; the first reporting period covers 1 April 2026 to 31 March 2027, with the first report due by 30 June 2027; data also comes from other countries [CARF] |
 | Penalties for users | Possible if users withhold or falsify identifying information |
 
-## Section 10: Worked Examples
+### Prohibitions
 
-The legacy examples used made-up amounts; they are now in words.
+- NEVER say New Zealand has a capital gains tax
+- NEVER treat crypto profits as tax-free because the client calls it a long-term investment
+- NEVER charge GST on buying or selling crypto
+- NEVER ignore staking rewards: income when received
+- NEVER allow a loss whose matching profit would be untaxed
+- NEVER value crypto trading stock at market value at year end
+- NEVER treat transfers between the client's own wallets as disposals
+- NEVER ignore the transitional resident exemption
+- NEVER present a purpose-test answer as final
 
-### Example 1: Crypto Acquired for Purpose of Disposal (Taxable)
+## Worked cases
 
-A resident on a salary bought Ether in July 2026 planning to "sell at a target price" and sold in January 2027 at a profit.
+The legacy examples used made-up amounts; the amounts below are illustrative, the rates are IRD's.
 
-~~~
-Income:    sale price less purchase cost less transaction fees
-Purpose:   bought to sell, so TAXABLE (s CB 4)
-Rate:      added to salary; each dollar taxed at its band rate (3.1)
-Return:    "other income" box of the IR3, due 7 July 2027
-~~~
-
-With illustrative amounts: salary NZD 70,000 and a crypto profit of NZD 12,000. The first NZD 8,100 of profit is in the 30% band, the rest in the 33% band.
+**Case 1: Ether bought to sell, taxed or not? (decision).** A resident on a NZD 70,000 salary bought Ether in July 2026 planning to "sell at a target price" and sold in January 2027 at a NZD 12,000 profit (sale price less cost less fees). Bought to sell, so taxable under s CB 4. The first NZD 8,100 of profit is in the 30% band, the rest in the 33% band. Had the client proved, with clear and compelling evidence, a non-disposal purpose, the tax on the profit would be nil. Return: "other income" box of the IR3, due 7 July 2027.
 
 ```oa-check
 name: Crypto profit on top of salary, 2027 income year
 inputs:
   salary: 70000
   profit: 12000
+  bought_to_sell: 1
 steps:
-  - in_30: min(salary + profit, 78100) - salary
-  - in_33: profit - in_30
+  - taxable_profit: profit * bought_to_sell
+  - in_30: min(salary + taxable_profit, 78100) - salary
+  - in_33: taxable_profit - in_30
   - tax: in_30 * 0.30 + in_33 * 0.33
 expected:
+  taxable_profit: 12000
+  in_30: 8100
   tax: 3717.00
 ```
 
-### Example 2: Staking Rewards with Non-Disposal Purpose on Underlying
-
-A resident bought a staking coin in May 2026 after forecasting staking income against sale gains, and sold some rewards in February 2027.
-
-~~~
-Rewards:          income at NZD value when received
-Rewards sold:     gain = proceeds less value taxed on receipt
-Original coins:   not sold. If sold later, the client may argue a passive
-                  income purpose ("Selina"); the onus is on the client.
-~~~
-
-With illustrative amounts: rewards worth NZD 1,000 when received, later sold for NZD 1,300, in the 33% band. Income is NZD 1,000 plus a NZD 300 gain.
+**Case 2: staking rewards taxed on receipt and on sale.** A resident bought a staking coin in May 2026 after forecasting staking income against sale gains, and sold some rewards in February 2027. Rewards worth NZD 1,000 when received were later sold for NZD 1,300, in the 33% band. Income is NZD 1,000 on receipt plus a NZD 300 gain on sale. The original coins are not sold; if sold later, the client may argue a passive income purpose ("Selina"); the onus is on the client.
 
 ```oa-check
 name: Staking rewards taxed on receipt and on sale
@@ -461,58 +326,7 @@ expected:
   tax: 429.00
 ```
 
-### Example 3: Long-Term Holder (legacy said NOT Taxable)
-
-A resident bought Bitcoin in 2019 as a documented "store of value" and sold in 2026 after a medical emergency.
-
-~~~
-Purpose:  a store of value "usually still" involves eventual disposal, and
-          Bitcoin gives no income stream ("Leena").
-Result:   LIKELY TAXABLE. The legacy Guide said "likely not taxable". A
-          forced sale is one factor Inland Revenue looks at, but it does not
-          change the purpose at ACQUISITION.
-Refer:    only clear and compelling evidence could support a nil position.
-~~~
-
-## Self-Checks
-
-- [ ] Residency and transitional resident status confirmed?
-- [ ] Dominant purpose at acquisition, with evidence beyond the client's word?
-- [ ] One cost method (FIFO or weighted average cost) applied consistently?
-- [ ] Staking, mining and taxable airdrop receipts included as income?
-- [ ] GST: none on crypto trades; NFT sales to New Zealand buyers carry GST if the seller is registered or must register?
-- [ ] Loss claim: would a profit have been taxable?
-
-## PROHIBITIONS
-
-- NEVER say New Zealand has a capital gains tax
-- NEVER treat crypto profits as tax-free because the client calls it a long-term investment
-- NEVER charge GST on buying or selling crypto
-- NEVER ignore staking rewards: income when received
-- NEVER allow a loss whose matching profit would be untaxed
-- NEVER value crypto trading stock at market value at year end
-- NEVER treat transfers between the client's own wallets as disposals
-- NEVER ignore the transitional resident exemption
-- NEVER present a purpose-test answer as final
-
-## The method, step by step
-
-1. Confirm residency and any transitional resident exemption. https://www.ird.govt.nz/cryptoassets/individual/tax-residence
-2. List every acquisition and disposal across all wallets and platforms. Transfers between your own wallets are not disposals. https://www.ird.govt.nz/cryptoassets/individual/buying-selling
-3. Test the dominant purpose at acquisition under s CB 4 of the Income Tax Act 2007; if it fails, test trading and a profit-making scheme under s CB 3. https://www.ird.govt.nz/cryptoassets/individual/buying-selling/acquiring-sell-exchange
-4. Record income on receipt (staking, DeFi and mining rewards, crypto for services, airdrops in the taxable cases of QB 21/06). https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2021/qb-21-06.pdf
-5. Work out each taxable disposal as sale price less cost less fees, by FIFO or weighted average cost, in NZD. https://www.ird.govt.nz/cryptoassets/taxing/income-expenses/calculating-cryptoasset-income
-6. Check GST on NFT sales, mining services and crypto taken as payment. https://www.ird.govt.nz/cryptoassets/taxing/cryptoassets-and-gst
-7. Enter net crypto income or loss in the IR3 "other income" box, attach the calculation, file by 7 July unless there is a tax agent or extension of time, and check provisional tax. https://www.ird.govt.nz/cryptoassets/taxing/declare-cryptoasset-income-or-loss
-
-## Ask the client first
-
-- Are you a New Zealand tax resident, and when did you arrive or return?
-- For each holding: why did you buy it, what research did you do, and is anything written down from that time?
-- Does it give you an income stream, and how does that compare with your sale gains?
-- How often do you trade, and how much time do you spend on it?
-- Did you receive airdrops, forks, mining rewards, NFTs or crypto for work?
-- Which exchanges, wallets and protocols (including overseas), and do you have full exports?
+**Case 3: long-term holder (legacy said not taxable).** A resident bought Bitcoin in 2019 as a documented "store of value" and sold in 2026 after a medical emergency. A store of value "usually still" involves eventual disposal, and Bitcoin gives no income stream ("Leena"). Result: LIKELY TAXABLE. The legacy Guide said "likely not taxable". A forced sale is one factor Inland Revenue looks at, but it does not change the purpose at ACQUISITION. Only clear and compelling evidence could support a nil position: refer.
 
 ## When to refuse or refer
 
@@ -523,26 +337,60 @@ Refer:    only clear and compelling evidence could support a nil position.
 - Non-residents with New Zealand-source income, treaty cases, transitional resident edge cases.
 - Undeclared past income (voluntary disclosure), and clients with no usable records.
 
+## Filing and payment
+
+| Requirement | Detail |
+| --- | --- |
+| Return type | IR3, Individual income tax return. "You need to file an income tax return - IR3 when you have taxable income from a cryptoasset activity" [Taxing] |
+| When an IR3 is needed | More than NZD 200 (before tax) of income IRD was not told about (rates table) |
+| Filing deadline | By 7 July "unless you have a tax agent or an extension of time" [IR3]. For the 2027 income year: 7 July 2027 |
+| Extended deadline (tax agent) | The legacy "31 March of the following year" is on no page read: confirm with the agent ([nz-income-tax-ir3](nz-income-tax-ir3.md)) |
+| Crypto section | No crypto schedule. If it fits no other box, net crypto income or loss goes in the "other income" box; attach the calculation [Declare] |
+| Provisional tax | Applies if the tax to pay at the end of the year from the last return was more than NZD 5,000. A large crypto gain can bring the client into provisional tax the next year. Dates and options: [nz-provisional-tax](nz-provisional-tax.md) |
+| Records | Keep for at least 7 years: type of cryptoasset, date, type of transaction, units, NZD value, units held at start and end of year, exchange records and bank statements, wallet addresses [Records]. Also keep the research and forecasts made at acquisition: not on IRD's list, but the purpose test turns on it |
+
+## Completion checklist
+
+- [ ] Residency and transitional resident status confirmed?
+- [ ] Dominant purpose at acquisition, with evidence beyond the client's word?
+- [ ] One cost method (FIFO or weighted average cost) applied consistently?
+- [ ] Staking, mining and taxable airdrop receipts included as income?
+- [ ] GST: none on crypto trades; NFT sales to New Zealand buyers carry GST if the seller is registered or must register?
+- [ ] Loss claim: would a profit have been taxable?
+
 ## Sources
 
-- [Cryptoassets] https://www.ird.govt.nz/cryptoassets (read 2026-10-31)
-- [Profit-making scheme] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme (read 2026-10-31)
-- [Trading] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading (read 2026-10-31)
-- [Mining] https://www.ird.govt.nz/cryptoassets/individual/mining (read 2026-10-31)
-- [Airdrops and forks] https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks (page text was a stub when tried on 2026-10-31; not read)
-- [New residents] https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning (read 2026-10-31)
-- [Taxing] https://www.ird.govt.nz/cryptoassets/taxing (read 2026-10-31)
-- [Records] https://www.ird.govt.nz/cryptoassets/taxing/record-keeping (read 2026-10-31)
-- [NFTs] https://www.ird.govt.nz/cryptoassets/non-fungible-tokens (read 2026-10-31)
-- [CARF] https://www.ird.govt.nz/international-tax/exchange-of-information/crypto-asset-reporting-framework/crypto-asset-reporting-framework-overview (read 2026-10-31)
-- [IR3] https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 (read 2026-10-31)
-- Linked in the method steps: [Buying and selling], [Acquiring to sell], [Tax residence], [Calculating income], [Crypto and GST], [Declare], QB 21/06
-- Rate, GST, IR3 and provisional tax pages: linked in their tables
-- Technical decision summary 25/23: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051 (read 2026-10-31)
-- IRRUIP18: https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18 (landing page read 2026-10-31; the paper itself not read)
-- Tax Information Bulletin Vol 34 No 5: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927 (read 2026-10-31)
+| Source | URL | Read on |
+| --- | --- | --- |
+| [Cryptoassets] IRD cryptoassets hub: read for "a form of property for tax purposes" and trading stock at cost | https://www.ird.govt.nz/cryptoassets | 2026-11-14 |
+| [Buying and selling] IRD: read for the general rule that selling, trading or exchanging is usually taxable, and own-wallet transfers | https://www.ird.govt.nz/cryptoassets/individual/buying-selling | 2026-11-14 |
+| [Acquiring to sell] IRD: read for the dominant purpose test, "clear and compelling evidence", Leena, Selina, Chen and Pete | https://www.ird.govt.nz/cryptoassets/individual/buying-selling/acquiring-sell-exchange | 2026-11-14 |
+| [Profit-making scheme] IRD: read for s CB 3 and Tai | https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme | 2026-11-14 |
+| [Trading] IRD: read for when a person is a trader | https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading | 2026-11-14 |
+| [Mining] IRD: read for mining rewards and GST on mining services | https://www.ird.govt.nz/cryptoassets/individual/mining | 2026-11-14 |
+| [Airdrops and forks] IRD: read for "taxable on either receipt, disposal or both" and no deduction for cost (section landing page only) | https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks | 2026-11-14 |
+| [Tax residence] IRD: read for residents and non-residents | https://www.ird.govt.nz/cryptoassets/individual/tax-residence | 2026-11-14 |
+| [New residents] IRD: read for the transitional exemption and no revaluation at its end | https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning | 2026-11-14 |
+| [Taxing] IRD: read for when an IR3 is needed for crypto | https://www.ird.govt.nz/cryptoassets/taxing | 2026-11-14 |
+| [Calculating income] IRD: read for FIFO and WAC, the income formula, DeFi possession, exchanges and loss offset | https://www.ird.govt.nz/cryptoassets/taxing/income-expenses/calculating-cryptoasset-income | 2026-11-14 |
+| [Crypto and GST] IRD: read for GST exclusion, crypto as payment, NFT royalties | https://www.ird.govt.nz/cryptoassets/taxing/cryptoassets-and-gst | 2026-11-14 |
+| [Declare] IRD: read for the "other income" box and attaching the calculation | https://www.ird.govt.nz/cryptoassets/taxing/declare-cryptoasset-income-or-loss | 2026-11-14 |
+| [Records] IRD: read for the 7-year retention and the records list | https://www.ird.govt.nz/cryptoassets/taxing/record-keeping | 2026-11-14 |
+| [NFTs] IRD: read for NFT income, GST as a service, the NZD 60,000 "more than" wording and Phil | https://www.ird.govt.nz/cryptoassets/non-fungible-tokens | 2026-11-14 |
+| [CARF] IRD CARF overview: read for the 1 April 2026 start and the 30 June 2027 first report | https://www.ird.govt.nz/international-tax/exchange-of-information/crypto-asset-reporting-framework/crypto-asset-reporting-framework-overview | 2026-11-14 |
+| [IR3] IRD Individual income tax return IR3: read for the NZD 200 trigger and 7 July deadline | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 | 2026-11-14 |
+| IRD Tax rates for individuals: read for the "From 1 April 2025" table and the 2024-25 composite table | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals | 2026-11-14 |
+| IRD Tax rates for businesses: read for "Most companies 28%" | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses | 2026-11-14 |
+| IRD Trustee tax rates: read for the NZD 10,000 switch and 33% / 39% | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates | 2026-11-14 |
+| IRD Registering for GST: read for the NZD 60,000 "at least" threshold | https://www.ird.govt.nz/gst/registering-for-gst | 2026-11-14 |
+| IRD guide IR295 (April 2026): read for "The current rate is 15%" | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf | 2026-11-14 |
+| IRD Provisional tax: read for the NZD 5,000 trigger | https://www.ird.govt.nz/income-tax/provisional-tax | 2026-11-14 |
+| QB 21/06 (June 2021): read for when airdrops are taxable on receipt and disposal, and Beth | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2021/qb-21-06.pdf | 2026-11-14 |
+| Technical decision summary 25/23 (October 2025): read for the s CB 4 quote, onus of proof and the staking facts | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051 | 2026-11-14 |
+| IRRUIP18 (29 January 2026): read for the landing page and status as initial views; the paper itself was not opened | https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18 | 2026-11-14 |
+| Tax Information Bulletin Vol 34 No 5 (June 2022): read for the GST exclusion of cryptocurrency from 1 January 2009, s EW 5(3BA) and NFTs | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927 | 2026-11-14 |
 
-Not yet confirmed: none beyond the points this skill refers out.
+Not yet confirmed: the IRRUIP18 DeFi views as read in the paper itself (only the landing page was opened; the DeFi table rests on the earlier reading and stays labelled initial views); QB 21/07 on hard forks (not read); the statutory text of ss BG 1, CB 4 and HR 8 (legislation.govt.nz refused script access on 14 November 2026); loss carry-forward rules; the tax agent extended filing date.
 
 ## Disclaimer
 

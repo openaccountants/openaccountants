@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/paraguay-cross-border"
   jurisdiction: "PY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Paraguay: non-resident income tax (INR), dividends paid abroad (IDU) and treaties, 2026 v0.1
+# Paraguay: non-resident income tax (INR), dividends paid abroad (IDU) and treaties, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -274,8 +274,8 @@ expected:
 
 Not yet confirmed: any separate DNIT form or prior registration required beyond the residence-certificate procedure in RG 65/2020 arts. 7 and 8, and any refund route after domestic withholding; whether the DNIT treats the INR and the IDU as taxes covered by the five conventions signed before Ley 6380 (Chile, Taiwan, UAE, Uruguay, Qatar), whose art. 2 names the earlier income taxes; the treaty articles other than dividends, interest, royalties and Uruguay's technical fees (permanent establishment, business profits, capital gains, employment, other income), not set out here; any further protocol or most-favoured-nation change beyond the Taiwan exchange of notes checked here; the detailed documentary interaction of current Ley 6984/2022 with Decreto 3181 art. 2; Resolución General 114/2022 (registration and payment by non-resident digital suppliers) and Resoluciones Generales 38/2020 and 42/2020 (notary withholding), named on the DNIT pages but not read; any decree after Decreto 3667/2020 amending Decreto 3181.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

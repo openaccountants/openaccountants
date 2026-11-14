@@ -2,19 +2,20 @@
 name: kosovo-social-contributions
 description: >
   Compute Kosovo employee and self-employed pension contributions for 2026 using the Pension Funds Law, its amendments, and current tax-authority filing guidance. Covers the employee and employer shares, voluntary limits, full-time wage floor, the real-income owner's quarterly cap, presumptive-business contributions, payment and reporting, and foreign employees with temporary stay. Separates pension deductions from wage income tax and identifies the new compulsory healthcare law and its unresolved implementation instruments. Use for Trusti, KPST, social security, pension payroll, owner contributions, IS or IL calculations, and minimum-wage questions. Health-inclusive social contributions remain partial until the applicable phase and collection rules are confirmed.
-version: 0.2
+version: 0.3
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Kosovo social contributions v0.2
+# Kosovo social contributions v0.3
 
 Tax year **2026**. Checked against the law on **30 October 2026** (tier 2); no
 licensed accountant has signed it off.

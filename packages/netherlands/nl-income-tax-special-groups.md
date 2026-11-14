@@ -1,17 +1,18 @@
 ---
 name: nl-income-tax-special-groups
 description: "Dutch individual income tax for three groups the main skill does not compute, tax year 2026. (1) People at state pension (AOW) age: the lower first box 1 band rate (17.85%), the longer first band for people born before 1 January 1946, the month-by-month rate for people reaching AOW age in 2026, and the AOW-age general credit, labour credit, ouderenkorting and alleenstaande ouderenkorting. (2) Non-residents: the qualifying non-resident test (Wet IB 2001 art. 7.8) and which tax credits a non-resident gets, including the tax-part-only rule (art. 2.7 and 8.3). (3) Box 3: the actual-return route (tegenbewijsregeling, art. 5.25 to 5.31) against the 2026 deemed return, and the status of the Wet werkelijk rendement box 3. Trigger on: AOW, pensioner, ouderenkorting, gepensioneerd, non-resident tax credits, kwalificerende buitenlandse belastingplichtige, 90% test, belastingdeel heffingskorting, werkelijk rendement, tegenbewijsregeling, opgaaf werkelijk rendement. Out of scope: ordinary residents under AOW age (nl-income-tax), residence, emigration and treaties (nl-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.2
+# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl, belastingdienst.nl or eerstekamer.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -39,19 +40,19 @@ Tax year: the calendar year 2026.
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Box 1 first band, reached AOW age before 2026, born on or after 1 Jan 1946 | 17.85% to €38,883 (8.10% tax + 0.10% Anw + 9.65% Wlz) | 2026 | [Belastingdienst box 1](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1); [Wet IB 2001 art. 2.10](https://wetten.overheid.nl/BWBR0011353/2026-01-01) |
-| Box 1 first band, born before 1 Jan 1946 | 17.85% to €41,123 | 2026 | same; [Wet IB 2001 art. 2.10a](https://wetten.overheid.nl/BWBR0011353/2026-01-01) |
+| Box 1 first band, reached AOW age before 2026, born on or after 1 Jan 1946 | 17.85% to €38,883 (8.10% tax + 0.10% Anw + 9.65% Wlz) | 2026 | [Belastingdienst box 1](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1); [Wet IB 2001 art. 2.10](https://wetten.overheid.nl/BWBR0011353/2026-01-01) ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
+| Box 1 first band, born before 1 Jan 1946 | 17.85% to €41,123 | 2026 | same; [Wet IB 2001 art. 2.10a](https://wetten.overheid.nl/BWBR0011353/2026-01-01) ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
 | Box 1 second and third band, all AOW-age branches | 37.56% to €78,426; 49.50% above | 2026 | same |
 | First-band rate for someone reaching AOW age in 2026, by month | Jan 17.85%, Feb 19.34%, Mar 20.83%, Apr 22.33%, May 23.82%, Jun 25.31%, Jul 26.80%, Aug 28.29%, Sep 29.78%, Oct 31.28%, Nov 32.77%, Dec 34.26% (band to €38,883). The Toelichting 2026 ch. 29 prints six of these 0.01 point lower: Apr 22.32%, May 23.81%, Jun 25.30%, Oct 31.27%, Nov 32.76%, Dec 34.25% | 2026 | [Belastingdienst box 1](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1); [Belastingdienst, belastingberekening 2026](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/belastingberekening) |
 | Premium income maximum (premie-inkomen) | €38,883; €41,123 if born before 1 Jan 1946 | 2026 | [Belastingdienst, premie volksverzekeringen 2026](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/premie_volksverzekeringen) |
 | General tax credit, AOW age all of 2026 | €1,556, reduced by 3.195% of verzamelinkomen above €29,736; nil above €78,426 | 2026 | [Belastingdienst, heffingskortingen 2026](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen) |
 | Labour credit, AOW age all of 2026 | to €11,965: 4.156%; to €25,845: €498 + 15.483% of excess over €11,965; to €45,592: €2,647 + 0.974% of excess over €25,845; to €132,920: €2,840 − 3.250% of excess over €45,592; nil above | 2026 | same |
 | Income-dependent combination credit (IACK), AOW age all of 2026 | 5.72% of work income above €6,239, maximum €1,514 | 2026 | same |
-| Ouderenkorting (elderly credit) | €2,067 if verzamelinkomen up to €46,002; reduced by 15% of the excess; nil above €59,782 | 2026 | [Wet IB 2001 art. 8.17](https://wetten.overheid.nl/BWBR0011353/2026-01-01); Belastingdienst heffingskortingen 2026 |
+| Ouderenkorting (elderly credit) | €2,067 if verzamelinkomen up to €46,002; reduced by 15% of the excess; nil above €59,782 | 2026 | [Wet IB 2001 art. 8.17](https://wetten.overheid.nl/BWBR0011353/2026-01-01); Belastingdienst heffingskortingen 2026 ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Alleenstaande ouderenkorting (single elderly credit) | €540 | 2026 | [Wet IB 2001 art. 8.18](https://wetten.overheid.nl/BWBR0011353/2026-01-01) |
 | Tax part of a credit (belastingdeel) | 8.10/35.75 of the credit; premium parts 17.90 (AOW), 0.10 (Anw), 9.65 (Wlz) over 35.75 | 2026 | [Wet IB 2001 art. 8.3 to 8.6](https://wetten.overheid.nl/BWBR0011353/2026-01-01); Belastingdienst heffingskortingen 2026, §21.9 |
 | Tax part of ouderenkorting and alleenstaande ouderenkorting | 8.10/17.85 (the AOW premium is left out of the combined rate; the AOW part is nil) | 2026 | [Wet IB 2001 art. 8.7](https://wetten.overheid.nl/BWBR0011353/2026-01-01) |
-| Payout of the general credit to a non-earning partner | Only if born before 1 January 1963 | 2026 | Belastingdienst heffingskortingen 2026, §21.8 |
+| Payout of the general credit to a non-earning partner | Only if born before 1 January 1963 | 2026 | Belastingdienst heffingskortingen 2026, §21.8; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Box 3 deemed return: bank balances | 1.28% (provisional; fixed early 2027) | 2026 | [Belastingdienst, box 3 2026](https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026) |
 | Box 3 deemed return: investments and other assets | 6.00% (fixed) | 2026 | same |
 | Box 3 deemed return: debts | 2.70% (provisional) | 2026 | same |
@@ -208,17 +209,17 @@ expected:
 | Wet inkomstenbelasting 2001 (text valid 1 January 2026), arts. 2.7, 2.10, 2.10a, 2.13, 5.2, 5.3, 5.5, 5.25 to 5.31, 7.8, 8.1 to 8.8, 8.10, 8.11, 8.17, 8.18, 10a.22 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-23 |
 | Wet financiering sociale verzekeringen (text valid 1 January 2026), arts. 9 to 12 | https://wetten.overheid.nl/BWBR0017745/2026-01-01 | 2026-10-23 |
 | Belastingdienst, Box 1 uitleg en tarieven (2026 and 2025, AOW tables) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-23 |
-| Belastingdienst, Toelichting 2026, ch. 21 Heffingskortingen | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-23 |
-| Belastingdienst, Toelichting 2026, ch. 27 Premie volksverzekeringen | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/premie_volksverzekeringen | 2026-10-23 |
+| Belastingdienst, Toelichting 2026, ch. 21 Heffingskortingen. Read for the 2026 tax credits and their payout. | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-23 |
+| Belastingdienst, Toelichting 2026, ch. 27 Premie volksverzekeringen. Read for the national insurance premiums. | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/premie_volksverzekeringen | 2026-10-23 |
 | Belastingdienst, Toelichting 2026, ch. 29 Belastingberekening (box 3 and actual return) | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/belastingberekening | 2026-10-23 |
-| Belastingdienst, Toelichting 2026, ch. 30 U woont buiten Nederland | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/u_woont_buiten_nederland | 2026-10-23 |
+| Belastingdienst, Toelichting 2026, ch. 30 U woont buiten Nederland. Read for the rules for people living abroad. | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/u_woont_buiten_nederland | 2026-10-23 |
 | Belastingdienst, Berekening box 3-inkomen voorlopige aanslag 2026 | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 | 2026-10-23 |
-| Belastingdienst, Werkelijk rendement in belastingaangifte 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/werkelijk-rendement-belastingaangifte | 2026-10-23 |
-| Belastingdienst, Opgaaf werkelijk rendement zonder brief | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/zonder-brief-formulier-opgaaf-werkelijk-rendement-invullen | 2026-10-23 |
-| Belastingdienst, Aangifte als buitenlands belastingplichtige | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/buitenlands-belastingplichtig-hoe-doe-ik-aangifte-inkomstenbelasting | 2026-10-23 |
-| Belastingdienst, Uitstel aanvragen belastingaangifte 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/kan-ik-nog-uitstel-aanvragen-belastingaangifte | 2026-10-23 |
-| Belastingdienst, Uitstel aangifte buitenland | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/uitstel-aanvragen-belastingaangifte-buitenland-hoe-doe-ik-dat | 2026-10-23 |
-| Belastingdienst, Te laat of geen aangifte | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig | 2026-10-23 |
+| Belastingdienst, Werkelijk rendement in belastingaangifte 2025. Read for claiming the actual box 3 return. | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/werkelijk-rendement-belastingaangifte | 2026-10-23 |
+| Belastingdienst, Opgaaf werkelijk rendement zonder brief. Read for the actual return form. | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/zonder-brief-formulier-opgaaf-werkelijk-rendement-invullen | 2026-10-23 |
+| Belastingdienst, Aangifte als buitenlands belastingplichtige. Read for how a non-resident files. | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/buitenlands-belastingplichtig-hoe-doe-ik-aangifte-inkomstenbelasting | 2026-10-23 |
+| Belastingdienst, Uitstel aanvragen belastingaangifte 2025. Read for the extension for residents. | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/kan-ik-nog-uitstel-aanvragen-belastingaangifte | 2026-10-23 |
+| Belastingdienst, Uitstel aangifte buitenland. Read for the extension for non-residents. | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/uitstel-aanvragen-belastingaangifte-buitenland-hoe-doe-ik-dat | 2026-10-23 |
+| Belastingdienst, Te laat of geen aangifte. Read for late or missing returns. | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig | 2026-10-23 |
 | Eerste Kamer, Wet werkelijk rendement box 3 (36.748) | https://www.eerstekamer.nl/wetsvoorstel/36748_wet_werkelijk_rendement_box | 2026-10-23 |
 
 Not yet confirmed: which of the two Belastingdienst monthly first-band tables is exact for April, May, June, October, November and December (the box 1 page and the Toelichting ch. 29 differ by 0.01 point); the general credit, labour credit and IACK amounts for someone who reaches AOW age during 2026 (the Toelichting gives no part-year table); the exact rounding of the tax part of each credit for non-residents; how art. 5.28 to 5.30 treat income that is received into a box 3 bank account and then withdrawn (the worked example counts it once, as a regular benefit); the final 2026 box 3 percentages for bank balances and debts (set early 2027); the 2026 filing date (the 2027 invitation to file is not yet published; 1 May is the usual date); whether and when the Eerste Kamer adopts the Wet werkelijk rendement box 3 and its novelle.

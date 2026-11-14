@@ -1,17 +1,18 @@
 ---
 name: kw-corporate-income-tax
 description: "Corporate income tax, Zakat, National Labour Support Tax and the Domestic Minimum Top-up Tax in Kuwait for tax year 2026. Covers who is taxed at 15%, registration, tax card, Arabic return, instalments, 5% retention, fines, objections, and multinational groups at EUR 750m. Use for questions about a foreign branch or company in Kuwait, Kuwait corporate tax return, Kuwait DMTT, Pillar Two in Kuwait, retention release, tax clearance certificate, Zakat on shareholding companies, or NLST on listed companies. Read from the Ministry of Finance texts. Not signed off by an accountant."
-version: 0.4
+version: 0.5
 jurisdiction: KW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Kuwait Corporate Income Tax v0.4
+# Kuwait Corporate Income Tax v0.5
 
 Tax year 2026.
 

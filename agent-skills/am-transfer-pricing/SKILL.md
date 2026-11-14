@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/am-transfer-pricing"
   jurisdiction: "AM"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Armenia transfer-pricing preparation v0.2
+# Armenia transfer-pricing preparation v0.3
 
 ## Who this applies to
 
@@ -26,11 +26,11 @@ Article 363 distinguishes related resident/nonresident transactions; specified *
 
 | Item | Statutory amount/test | Period and source |
 |---|---|---|
-| Participation limb | At least 20%; practical control can apply independently | 2026, [362][code] |
-| Chapter 73 annual application | All controlled transactions exceed AMD 200 million, excluding VAT, excise and environmental tax | 2026, [363(6)][code] |
-| Annual notification | Exceeds AMD 200 million on its separate population, excluding Article 363(4) PE/head-office transactions | 2026, [375(1)][code] |
-| Liberal-tax definition | Stated 10%-or-lower profit-tax rate or exemption, including qualifying person-specific regimes | 2026, [361(1)(5)][code] |
-| Statutory country-report trigger | Parent organisation's prior-year gross revenue **exceeds** EUR 750 million | 2026 text, [376(1.1)(3)][code] |
+| Participation limb | At least 20%; practical control can apply independently | 2026, [362][code], https://www.arlis.am/hy/acts/215611/latest |
+| Chapter 73 annual application | All controlled transactions exceed AMD 200 million, excluding VAT, excise and environmental tax | 2026, [363(6)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Annual notification | Exceeds AMD 200 million on its separate population, excluding Article 363(4) PE/head-office transactions | 2026, [375(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Liberal-tax definition | Stated 10%-or-lower profit-tax rate or exemption, including qualifying person-specific regimes | 2026, [361(1)(5)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Statutory country-report trigger | Parent organisation's prior-year gross revenue **exceeds** EUR 750 million | 2026 text, [376(1.1)(3)][code], https://www.arlis.am/hy/acts/215611/latest |
 
 The 200-million test is strict: equality does not exceed it. The general application and notification populations differ; do not remove PE/head-office transactions from both merely because Article 375 excludes them from notification. Loan principal/interest valuation, foreign-exchange dates, repeated balances and unusual transactions require classification under the Code and current instructions before aggregation. No blanket netting of sales against purchases. A proposal for a higher threshold or later deadline is not operative law verified here. [Articles 16, 363, 375][code]; [notification instructions][notice]
 
@@ -247,4 +247,4 @@ Read on **24 October 2026**. Targeted current Armenian Chapter 73 and Articles 4
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `am-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/am-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `am-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/am-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

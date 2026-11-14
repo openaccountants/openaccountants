@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/estonia-social-contributions"
   jurisdiction: "EE"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Estonia social contributions, tax year 2026
@@ -229,8 +229,8 @@ expected:
 
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); whether the FIE II pillar contribution is computed on the profit before or after the 1.33 division (KoPS § 11(2¹) refers to the SMS § 2(1) point 5 income; EMTA's calculation not checked); the EMTA page with the 2026 FIE advance due dates (the page read still shows 2025 dates, so the EUR 877.14 figure is computed from SMS § 9(3) and the EUR 886 rate).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `estonia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/estonia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `estonia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/estonia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

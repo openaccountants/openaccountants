@@ -1,17 +1,17 @@
 ---
 name: paraguay-cross-border
 description: "Paraguay cross-border income tax for 2026: the non-resident income tax (Impuesto a la Renta de No Residentes, INR) under Ley N° 6380/2019 Título IV and Decreto N° 3181/2019, and the dividend tax (IDU) on profits paid to non-residents. Covers who is resident (companies under art. 5, individuals with permanent residence under Decreto 3181 art. 2), what Paraguayan-source income a non-resident is taxed on (art. 73), the 15% INR rate on the presumed net income of art. 75 (30%, 50%, 70% or 100% of the gross, so 4.5%, 7.5%, 10.5% or 15% of the payment), the withholding agents, the gross-up rule, digital services, sales of real estate and of Paraguayan shares, the art. 79 exemptions, IDU at 15% on dividends and branch profits paid abroad, monthly Forms 525 and 526, and the six double tax treaties in force with their dividend, interest and royalty caps. Trigger on: INR Paraguay, impuesto a la renta de no residentes, retención a no residentes, pagos al exterior, remesas al exterior, IDU no residentes, dividendos al exterior Paraguay, convenio doble imposición Paraguay, Formulario 525. Out of scope: IRE of resident companies (paraguay-corporate-income-tax), IRP of residents (paraguay-income-tax), IVA on imported services (paraguay-iva), transfer pricing (paraguay-transfer-pricing)."
-version: 0.1
+version: 0.2
 jurisdiction: PY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: cross-border
 type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
-# Paraguay: non-resident income tax (INR), dividends paid abroad (IDU) and treaties, 2026 v0.1
+# Paraguay: non-resident income tax (INR), dividends paid abroad (IDU) and treaties, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -275,4 +275,4 @@ expected:
 
 Not yet confirmed: any separate DNIT form or prior registration required beyond the residence-certificate procedure in RG 65/2020 arts. 7 and 8, and any refund route after domestic withholding; whether the DNIT treats the INR and the IDU as taxes covered by the five conventions signed before Ley 6380 (Chile, Taiwan, UAE, Uruguay, Qatar), whose art. 2 names the earlier income taxes; the treaty articles other than dividends, interest, royalties and Uruguay's technical fees (permanent establishment, business profits, capital gains, employment, other income), not set out here; any further protocol or most-favoured-nation change beyond the Taiwan exchange of notes checked here; the detailed documentary interaction of current Ley 6984/2022 with Decreto 3181 art. 2; Resolución General 114/2022 (registration and payment by non-resident digital suppliers) and Resoluciones Generales 38/2020 and 42/2020 (notary withholding), named on the DNIT pages but not read; any decree after Decreto 3667/2020 amending Decreto 3181.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

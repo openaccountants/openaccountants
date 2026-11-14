@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-secondary-pensions"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Guernsey secondary pensions: enrolment, contributions and reporting
@@ -136,8 +136,8 @@ Not yet confirmed: full underlying-Law notice prerequisites, new-employer commen
 
 General working-paper reference only. A qualified professional must verify current law, scheme documents and the employee's facts before filing, paying or acting on this source-cited draft.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-secondary-pensions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-secondary-pensions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-secondary-pensions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-secondary-pensions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
