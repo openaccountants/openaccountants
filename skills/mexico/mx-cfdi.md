@@ -1,10 +1,11 @@
 ---
 name: mx-cfdi
-version: 2.1
+version: 2.2
 description: Use this skill whenever asked about Mexican CFDI electronic invoicing. Trigger on phrases like "CFDI", "factura electronica", "PAC", "complemento de pago", "comprobante fiscal", "SAT factura", "CFDI 4.0", "timbrado", "cancelacion CFDI", or any question about issuing, receiving, or managing electronic invoices in Mexico. Covers CFDI 4.0 structure, PAC certification, complemento de pago, uso de CFDI, cancellation rules, and SAT obligations. ALWAYS read this skill before touching any Mexican CFDI work.
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: filing-howto
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -18,14 +19,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Jurisdiction** - Mexico
 - **Jurisdiction Code** - MX
 - **Primary Legislation** - Codigo Fiscal de la Federacion (CFF), Art. 29, 29-A
-- **Supporting Legislation** - Resolucion Miscelanea Fiscal (RMF) 2025; Anexo 20 (CFDI technical standard)
+- **Supporting Legislation** - Resolucion Miscelanea Fiscal (RMF) 2026; Anexo 20 (CFDI technical standard)
 - **Tax Authority** - Servicio de Administracion Tributaria (SAT)
 - **Portal** - Portal SAT (sat.gob.mx)
 - **Contributor** - Open Accountants Community
 - **Validated By** - Pending -- requires sign-off by a Mexican contador publico
 - **Validation Date** - Pending
 - **Skill Version** - 1.0
-- **Tax Year** - 2025
+- **Tax Year** - 2026
 - **Confidence Coverage** - Tier 1: CFDI 4.0 mandatory fields, PAC timbrado, uso de CFDI codes, cancellation rules. Tier 2: complemento de pago timing, foreign currency CFDIs, regime-specific codes. Tier 3: CFDI for payroll (nomina), foreign trade complement, audits.
 
 **Skill Metadata**
@@ -35,14 +36,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Jurisdiction | Mexico |
 | Jurisdiction Code | MX |
 | Primary Legislation | Codigo Fiscal de la Federacion (CFF), Art. 29, 29-A |
-| Supporting Legislation | Resolucion Miscelanea Fiscal (RMF) 2025; Anexo 20 (CFDI technical standard) |
+| Supporting Legislation | Resolucion Miscelanea Fiscal (RMF) 2026; Anexo 20 (CFDI technical standard) |
 | Tax Authority | Servicio de Administracion Tributaria (SAT) |
 | Portal | Portal SAT (sat.gob.mx) |
 | Contributor | Open Accountants Community |
 | Validated By | Pending -- requires sign-off by a Mexican contador publico |
 | Validation Date | Pending |
 | Skill Version | 1.0 |
-| Tax Year | 2025 |
+| Tax Year | 2026 |
 | Confidence Coverage | Tier 1: CFDI 4.0 mandatory fields, PAC timbrado, uso de CFDI codes, cancellation rules. Tier 2: complemento de pago timing, foreign currency CFDIs, regime-specific codes. Tier 3: CFDI for payroll (nomina), foreign trade complement, audits. |
 
 ## Confidence Tier Definitions
@@ -71,10 +72,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Figure | Source |
 | --- | --- | --- |
-| CFDI version | 4.0 is the only valid version from 1 April 2023 (coexisted with 3.3 from 1 January 2022 to 31 March 2023) | SAT Anexo 20 vigencia page |
-| Cancellation without recipient acceptance | Totals up to MXN 1,000.00 | RMF 2025 Regla 2.7.1.35 fr. I |
-| Recipient acceptance window | Three days from the cancellation request; silence counts as acceptance | RMF 2025 Regla 2.7.1.34 |
-| Complemento de pago deadline | Fifth natural day of the month immediately following payment receipt | RMF 2025 Regla 2.7.1.32 |
+| Cancellation without recipient acceptance | CFDI with totals up to MXN 1,000.00 | [RMF 2026 rule 2.7.1.35 fr. I ("montos totales de hasta $1,000.00")](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf) |
+| Recipient acceptance window | Three days from the cancellation request; silence counts as acceptance | [RMF 2026 rule 2.7.1.34](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf) |
+| Complemento de pago deadline | Fifth natural day of the month immediately following the payment received | [RMF 2026 rule 2.7.1.32 ("a más tardar al quinto día natural del mes inmediato siguiente")](https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf) |
 
 ## The taxable base
 
@@ -138,34 +138,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Issue complemento de pago | By the fifth natural day of the month immediately following the month the payment(s) were received (RMF 2025, Regla 2.7.1.32) |
 | Late issuance | May trigger SAT queries or penalties |
 
-## Worked examples
-
-```oa-check
-name: Complemento de pago deadline
-inputs:
-  payment_day_of_month: 27
-  days_in_month: 30
-steps:
-  - deadline_day: 5
-  - days_allowed: days_in_month - payment_day_of_month + deadline_day
-expected:
-  deadline_day: 5
-  days_allowed: 8
-```
-
-```oa-check
-name: Early-month payment still due 5th of next month
-inputs:
-  payment_day_of_month: 3
-  deadline_day: 5
-steps:
-  - next_month: 1
-  - days_allowed: deadline_day + next_month * 0
-expected:
-  deadline_day: 5
-  days_allowed: 5
-```
-
 ## Step 3: Common Uso de CFDI Codes [T1]
 
 **Common Uso de CFDI Codes**
@@ -222,7 +194,7 @@ expected:
 
 ## Step 7: Cancellation Rules [T1]
 
-- **Cancellation Rules legislation** - Cancellation rules governed under CFF Art. 29-A, fourth, fifth and sixth paragraphs; RMF 2025 Reglas 2.7.1.34 and 2.7.1.35  _(CFF Art. 29-A, cuarto, quinto y sexto parrafos; RMF 2025, Reglas 2.7.1.34, 2.7.1.35)_
+- **Cancellation Rules legislation** - Cancellation rules governed under CFF Art. 29-A, fourth, fifth and sixth paragraphs; RMF 2026 rules 2.7.1.34 and 2.7.1.35  _(CFF Art. 29-A, cuarto, quinto y sexto parrafos; RMF 2025, Reglas 2.7.1.34, 2.7.1.35)_
 
 ### Cancellation Process [T1]
 
@@ -235,7 +207,7 @@ expected:
 | Reason 02 | Comprobante emitido con errores sin relacion (no replacement) |
 | Reason 03 | No se llevo a cabo la operacion (transaction did not occur) |
 | Reason 04 | Operacion nominativa relacionada en la factura global |
-| Recipient acceptance | Required unless an RMF 2025 Regla 2.7.1.35 exception applies (e.g. totals up to MXN 1,000, payroll, egresos, traslado, public in general, foreign residents, cancellation by the next business day). The recipient must accept or deny via the SAT Portal within three days of the cancellation request; silence after the deadline counts as acceptance (RMF 2025, Regla 2.7.1.34) |
+| Recipient acceptance | Required unless an RMF 2026 rule 2.7.1.35 exception applies (e.g. totals up to MXN 1,000, payroll, egresos, traslado, public in general, foreign residents, cancellation by the next business day). The recipient must accept or deny via the SAT Portal within three days of the cancellation request; silence after the deadline counts as acceptance (RMF 2025, Regla 2.7.1.34) |
 | Cancellation deadline | Must cancel within the same fiscal year of issuance, or by the deadline for the annual return |
 
 ### Cancellation Without Recipient Acceptance [T1]
@@ -291,9 +263,38 @@ No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
 
 - CFDIs to foreign residents: RFC generico XEXX010101000, RegimenFiscalReceptor 616, UsoCFDI S01; Exportacion 02 for definitive exports (see Worked example 3).
 - Foreign-currency CFDIs: ISO 4217 Moneda plus TipoCambio for the date; tax amounts convert to MXN (see Worked example 3).
-- CFDIs issued to foreign residents can be cancelled without recipient acceptance (RMF 2025 Regla 2.7.1.35 fr. VIII, Regla 2.7.1.23).
+- CFDIs issued to foreign residents can be cancelled without recipient acceptance (RMF 2026 rule 2.7.1.35 fr. VIII, Regla 2.7.1.23).
 
 ## Worked examples
+
+**Deadline checks for the payment complement (RMF 2026 rule 2.7.1.32).**
+
+```oa-check
+name: Complemento de pago deadline
+inputs:
+  payment_day_of_month: 27
+  days_in_month: 30
+steps:
+  - deadline_day: 5
+  - days_allowed: days_in_month - payment_day_of_month + deadline_day
+expected:
+  deadline_day: 5
+  days_allowed: 8
+```
+
+```oa-check
+name: Early-month payment still due 5th of next month
+inputs:
+  payment_day_of_month: 3
+  deadline_day: 5
+steps:
+  - next_month: 1
+  - days_allowed: deadline_day + next_month * 0
+expected:
+  deadline_day: 5
+  days_allowed: 5
+```
+
 
 ### Worked example 1: Standard services CFDI (PUE)
 
@@ -355,7 +356,7 @@ Before advising on any CFDI matter, you MUST know:
 - NEVER omit the recipient's RFC, name, regime, or postal code -- all are mandatory in 4.0
 - NEVER issue a PPD CFDI without following up with complemento de pago when payment is received
 - NEVER cancel a CFDI without specifying a valid motivo de cancelacion code
-- NEVER assume cancellation is automatic -- CFDIs above MXN 1,000 generally require recipient acceptance unless an RMF 2025 Regla 2.7.1.35 exception applies
+- NEVER assume cancellation is automatic -- CFDIs above MXN 1,000 generally require recipient acceptance unless an RMF 2026 rule 2.7.1.35 exception applies
 - NEVER use FormaPago 99 with MetodoPago PUE -- 99 is only for PPD
 - NEVER ignore the complemento de pago deadline (5th of the following month)
 - NEVER present guidance as definitive -- always label as estimated and direct client to a Mexican contador publico
@@ -364,11 +365,12 @@ Before advising on any CFDI matter, you MUST know:
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| SAT, RMF 2026 (DOF 28-12-2025), read for rules 2.7.1.32 (payment complement by the fifth natural day of the next month), 2.7.1.34 (three days to accept a cancellation) and 2.7.1.35 fr. I (cancellation of CFDI up to MXN 1,000.00 without acceptance) | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-14 |
 | Codigo Fiscal de la Federacion, texto vigente (Arts. 29, 29-A; ultima reforma DOF 09-04-2026) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | Resolucion Miscelanea Fiscal 2025 (Reglas 2.7.1.32, 2.7.1.34, 2.7.1.35) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/rmf/RMF_2025-30122024.pdf | 2026-11-02 |
 | SAT "Formato de Factura (Anexo 20)" - CFDI 4.0 vigencia (unica version valida desde 1 abril 2023) | https://wwwmatnp.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20) | 2026-11-02 |
 
-Not yet confirmed: Anexo 20 catalog values (uso CFDI, motivo de cancelacion, regimen fiscal codes) - technical standard not archived; RMF 2026 rules (REP/CRP acceptance exceptions) - RMF 2026 text not archived.
+Not yet confirmed: Anexo 20 catalog values (uso CFDI, motivo de cancelacion, regimen fiscal codes) - technical standard not archived; the full list of RMF 2026 rule 2.7.1.35 cases where no recipient acceptance is needed beyond fr. I (only fr. I was read on 2026-11-14).
 
 ## Disclaimer
 

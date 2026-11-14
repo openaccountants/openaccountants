@@ -1,10 +1,11 @@
 ---
 name: mx-income-tax
 description: Use this skill whenever asked about Mexican individual income tax (ISR) for self-employed individuals (personas físicas con actividades empresariales y profesionales). Trigger on phrases like "how much tax do I pay in Mexico", "ISR", "Declaración Anual", "pagos provisionales", "actividades profesionales", "honorarios", "RESICO", "deducciones personales", "deducciones autorizadas", "retenciones", "RFC", "income tax return Mexico", "SAT", "CFDI honorarios", "comprobante fiscal", or any question about filing or computing income tax for a self-employed or freelance client in Mexico. This skill covers the Declaración Anual PF (Personas Físicas), pagos provisionales (monthly estimated payments), progressive ISR brackets, deducciones autorizadas and personales, retenciones on professional CFDI, and the RESICO regime. ALWAYS read this skill before touching any Mexican income tax work.
-version: "2.3"
+version: "2.4"
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: computation
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -31,37 +32,37 @@ Self-employed individuals (personas físicas con actividades empresariales y pro
 
 **ISR Annual Brackets 2026**  _(RMF 2026 Anexo 8, C.II, tarifa Arts. 97 and 152 LISR, DOF 28-12-2025)_
 
-| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Fee | Rate on Excess |
-| --- | --- | --- | --- |
-| 0.01 | 10,135.11 | 0 | 1.92% |
-| 10,135.12 | 86,022.11 | 194.59 | 6.40% |
-| 86,022.12 | 151,176.19 | 5,051.37 | 10.88% |
-| 151,176.20 | 175,735.66 | 12,140.13 | 16.00% |
-| 175,735.67 | 210,403.69 | 16,069.64 | 17.92% |
-| 210,403.70 | 424,353.97 | 22,282.14 | 21.36% |
-| 424,353.98 | 668,840.14 | 67,981.92 | 23.52% |
-| 668,840.15 | 1,276,925.98 | 125,485.07 | 30.00% |
-| 1,276,925.99 | 1,702,567.97 | 307,910.81 | 32.00% |
-| 1,702,567.98 | 5,107,703.92 | 444,116.23 | 34.00% |
-| 5,107,703.93 | and over | 1,601,862.46 | 35.00% |
+| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Fee | Rate on Excess | Source |
+| --- | --- | --- | --- | --- |
+| 0.01 | 10,135.11 | 0 | 1.92% | [RMF 2026 Anexo 8, C.II (SAT)](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) |
+| 10,135.12 | 86,022.11 | 194.59 | 6.40% | same |
+| 86,022.12 | 151,176.19 | 5,051.37 | 10.88% | same |
+| 151,176.20 | 175,735.66 | 12,140.13 | 16.00% | same |
+| 175,735.67 | 210,403.69 | 16,069.64 | 17.92% | same |
+| 210,403.70 | 424,353.97 | 22,282.14 | 21.36% | same |
+| 424,353.98 | 668,840.14 | 67,981.92 | 23.52% | same |
+| 668,840.15 | 1,276,925.98 | 125,485.07 | 30.00% | same |
+| 1,276,925.99 | 1,702,567.97 | 307,910.81 | 32.00% | same |
+| 1,702,567.98 | 5,107,703.92 | 444,116.23 | 34.00% | same |
+| 5,107,703.93 | and over | 1,601,862.46 | 35.00% | same |
 
 ### ISR Annual Brackets 2025 (Personas Físicas: Régimen General)
 
 **ISR Annual Brackets 2025, for 2025 returns filed in April 2026**  _(RMF 2025 Anexo 8; reproduced in RMF 2026 Anexo 8, C.I, which this review checked row by row)_
 
-| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Fee | Rate on Excess |
-| --- | --- | --- | --- |
-| 0.01 | 8,952.49 | 0 | 1.92% |
-| 8,952.50 | 75,984.55 | 171.88 | 6.40% |
-| 75,984.56 | 133,536.07 | 4,461.94 | 10.88% |
-| 133,536.08 | 155,229.80 | 10,723.55 | 16.00% |
-| 155,229.81 | 185,852.57 | 14,194.54 | 17.92% |
-| 185,852.58 | 374,837.88 | 19,682.13 | 21.36% |
-| 374,837.89 | 590,795.99 | 60,049.40 | 23.52% |
-| 590,796.00 | 1,127,926.84 | 110,842.74 | 30.00% |
-| 1,127,926.85 | 1,503,902.46 | 271,981.99 | 32.00% |
-| 1,503,902.47 | 4,511,707.37 | 392,294.17 | 34.00% |
-| 4,511,707.38 | and over | 1,414,947.85 | 35.00% |
+| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Fee | Rate on Excess | Source |
+| --- | --- | --- | --- | --- |
+| 0.01 | 8,952.49 | 0 | 1.92% | [RMF 2026 Anexo 8, C.I (SAT)](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) |
+| 8,952.50 | 75,984.55 | 171.88 | 6.40% | same |
+| 75,984.56 | 133,536.07 | 4,461.94 | 10.88% | same |
+| 133,536.08 | 155,229.80 | 10,723.55 | 16.00% | same |
+| 155,229.81 | 185,852.57 | 14,194.54 | 17.92% | same |
+| 185,852.58 | 374,837.88 | 19,682.13 | 21.36% | same |
+| 374,837.89 | 590,795.99 | 60,049.40 | 23.52% | same |
+| 590,796.00 | 1,127,926.84 | 110,842.74 | 30.00% | same |
+| 1,127,926.85 | 1,503,902.46 | 271,981.99 | 32.00% | same |
+| 1,503,902.47 | 4,511,707.37 | 392,294.17 | 34.00% | same |
+| 4,511,707.38 | and over | 1,414,947.85 | 35.00% | same |
 
 - **ISR calculation formula**: ISR = Fixed Fee + (taxable income after deductions − Lower Limit) × Rate
 
@@ -73,13 +74,13 @@ RESICO eligibility and the annual table: LISR Arts. 113-E and 113-F. Client with
 
 **RESICO rate schedule**
 
-| Annual Income (MXN) | RESICO Rate |
-| --- | --- |
-| Up to 300,000 | 1.00% |
-| 300,001 – 600,000 | 1.10% |
-| 600,001 – 1,000,000 | 1.50% |
-| 1,000,001 – 2,500,000 | 2.00% |
-| 2,500,001 – 3,500,000 | 2.50% |
+| Annual Income (MXN) | RESICO Rate | Source |
+| --- | --- | --- |
+| Up to 300,000 | 1.00% | [LISR Art. 113-F, DOF 12-11-2021](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
+| Over 300,000.00 up to 600,000.00 | 1.10% | same |
+| Over 600,000.00 up to 1,000,000.00 | 1.50% | same |
+| Over 1,000,000.00 up to 2,500,000.00 | 2.00% | same |
+| Over 2,500,000.00 up to 3,500,000.00 | 2.50% | same |
 
 The statute (LISR Art. 113-F, TABLA ANUAL) states each band as "Hasta" (up to) the upper limit shown: Hasta 300,000.00 at 1.00%, Hasta 600,000.00 at 1.10%, Hasta 1,000,000.00 at 1.50%, Hasta 2,500,000.00 at 2.00%, Hasta 3,500,000.00 at 2.50%. The lower bounds in the table above are the complement of the previous row, not separate statutory figures.
 
@@ -96,12 +97,12 @@ Cannot combine RESICO with Régimen General in same year for same activity
 
 **Retenciones (Withholding by Clients)**
 
-| Client Type | Withholding on Honorarios CFDI |
-| --- | --- |
-| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106: "la tasa del 10% sobre el monto de los pagos que les efectúen") + 2/3 of the IVA transferred (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade"; 2/3 x 16% = 10.667% of the invoice amount) |
-| Moral (corporation), payee in RESICO | 1.25% ISR on the payment excluding IVA (LISR Art. 113-J) |
-| Física (individual) with business activity | Same obligations as Moral |
-| Persona Física consumer | No withholding obligation |
+| Client Type | Withholding on Honorarios CFDI | Source |
+| --- | --- | --- |
+| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106: "la tasa del 10% sobre el monto de los pagos que les efectúen") + 2/3 of the IVA transferred (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade"; 2/3 x 16% = 10.667% of the invoice amount, computed) | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
+| Moral (corporation), payee in RESICO | 1.25% ISR on the payment excluding IVA (LISR Art. 113-J) | [LISR Art. 113-J, DOF 12-11-2021 ("la tasa del 1.25%")](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
+| Física (individual) with business activity | Same obligations as Moral | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| Persona Física consumer | No withholding obligation | same |
 
 Retenciones are credited against the annual ISR balance.
 
@@ -640,6 +641,10 @@ Before computing Mexican ISR, collect:
 
 | Source | URL | Read on |
 |---|---|---|
+| SAT, RMF 2026 Anexo 8, read for the 2026 annual tariff (C.II), the 2025 annual tariff (C.I) and the 2026 monthly retention tariff (B.V), row by row | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-11-14 |
+| DOF 12-11-2021, reform decree adding RESICO, read for LISR Arts. 113-E (MXN 3,500,000 and the monthly table), 113-F (annual table) and 113-J (1.25% retention by personas morales) | https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021 | 2026-11-14 |
+| DOF 11-12-2013, decree issuing the LISR, second part, read for Art. 106 (10% retention on fees paid by personas morales) | https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013 | 2026-11-14 |
+| DOF 04-12-2006, Reglamento de la Ley del IVA, read for Art. 3 fr. I (retention of two thirds of the IVA transferred) | https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006 | 2026-11-14 |
 | SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs for 2025 (C.I) and 2026 (C.II), monthly Art. 96 tariff for 2026 (B.V); sat.gob.mx timed out, read from the Internet Archive copy | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 8 (ISR tariffs for 2025, incl. the annual tariff for LISR Art. 152) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 5, 27, 28, 34, 36, 94, 106, 113-E, 113-F, 113-J, 150, 151 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |

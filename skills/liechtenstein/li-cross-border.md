@@ -16,13 +16,14 @@ description: >
 jurisdiction: LI
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.5
+last_updated: 2026-11-14
+version: 0.6
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Liechtenstein cross-border tax preparation v0.5
+# Liechtenstein cross-border tax preparation v0.6
 
 ## Who this applies to
 
@@ -44,16 +45,16 @@ These are domestic screens, not a treaty residence tie-breaker or treaty PE conc
 
 | Item | 2026 rule/figure | Official source |
 |---|---|---|
-| Simplified nonresident state rate | 4%, only article 23(1)(a) categories and gates | [SteG article 23][law] |
-| Mandatory ordinary-assessment threshold | CHF 211,400 or more, with different net/gross/capital-equivalent bases | [SteG article 23(2)][law] |
-| Non-property/PE ordinary surcharge | 150% **of state tax**, article 23(5)(b) cases | [Finance Act 2026 article 2][finance] |
-| Source tax on Austrian cross-border commuters (Grenzgänger) | 4% of employment income, under article 15(4) of the Liechtenstein-Austria treaty of 5 November 1969 | [Finance Act 2026 article 3][finance] |
-| Specified individual board/pension source rate | 12%, only article 25(3) categories | [SteG articles 24–25][law] |
-| Specified nonresident corporate board-function source rate | 12%, own category/application rules | [SteG article 63a][law] |
-| Foreign-credit de minimis | No credit when total relevant annual foreign taxes do not exceed CHF 50 | [SteV articles 18a and 36a][ordinance] |
-| Wealth-income credit yield input | 4% statutory Sollertrag for 2026, after eligible asset/debt allocation | [SteG article 5][law]; [SteV article 18b][ordinance] |
-| Ordinary corporate rate used in retained exit case | 12.5%, before other interacting rules | [SteG article 61][law] |
-| Ordinary tax late-payment interest | 4%, subject to actual maturity/period and statutory exceptions | [SteV article 45][ordinance]; [SteG article 114][law] |
+| Simplified nonresident state rate | 4%, only article 23(1)(a) categories and gates | [SteG article 23](https://www.gesetze.li/konso/pdf/2010340000) |
+| Mandatory ordinary-assessment threshold | CHF 211,400 or more, with different net/gross/capital-equivalent bases | [SteG article 23(2)](https://www.gesetze.li/konso/pdf/2010340000) |
+| Non-property/PE ordinary surcharge | 150% **of state tax**, article 23(5)(b) cases | [Finance Act 2026 article 2](https://www.gesetze.li/konso/pdf/2025556000) |
+| Source tax on Austrian cross-border commuters (Grenzgänger) | 4% of employment income, under article 15(4) of the Liechtenstein-Austria treaty of 5 November 1969 | [Finance Act 2026 article 3](https://www.gesetze.li/konso/pdf/2025556000) |
+| Specified individual board/pension source rate | 12%, only article 25(3) categories | [SteG articles 24–25](https://www.gesetze.li/konso/pdf/2010340000) |
+| Specified nonresident corporate board-function source rate | 12%, own category/application rules | [SteG article 63a](https://www.gesetze.li/konso/pdf/2010340000) |
+| Foreign-credit de minimis | No credit when total relevant annual foreign taxes do not exceed CHF 50 | [SteV articles 18a and 36a](https://www.gesetze.li/konso/pdf/2010437000) |
+| Wealth-income credit yield input | 4% statutory Sollertrag for 2026, after eligible asset/debt allocation | [SteG article 5](https://www.gesetze.li/konso/pdf/2010340000); [SteV article 18b](https://www.gesetze.li/konso/pdf/2010437000) |
+| Ordinary corporate rate used in retained exit case | 12.5%, before other interacting rules | [SteG article 61](https://www.gesetze.li/konso/pdf/2010340000) |
+| Ordinary tax late-payment interest | 4%, subject to actual maturity/period and statutory exceptions | [SteV article 45](https://www.gesetze.li/konso/pdf/2010437000); [SteG article 114](https://www.gesetze.li/konso/pdf/2010340000) |
 
 ## The base
 
