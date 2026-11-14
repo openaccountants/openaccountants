@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: "0.20"
+last_updated: 2026-11-14
+version: "0.21"
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement: Articles 3–5, 7–9, 21 and 28–29"
@@ -38,9 +38,10 @@ sources:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Gibraltar corporate tax and filing v0.20
+# Gibraltar corporate tax and filing v0.21
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 

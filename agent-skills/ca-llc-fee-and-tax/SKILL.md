@@ -1,20 +1,22 @@
 ---
 name: ca-llc-fee-and-tax
-description: "Tier 2 California content skill for Form 568 — the $800 annual minimum tax (R&TC § 17941) plus the tiered LLC fee on gross receipts (§ 17942). Covers every LLC classified as a partnership or disregarded entity that is organized, registered, or doing business in California, the four fee brackets at $250k / $500k / $1M / $5M of total income from all sources reportable to California, the Form 3522 ($800 minimum tax voucher) due April 15 and the Form 3536 (estimated LLC fee voucher) due June 15, disregarded SMLLC treatment, multi-member partnership filings, the corporation election carve-out, and economic / doing-business nexus under the § 23101 factor presence test. Tax year 2025."
+description: "Work out a California LLC's 2026 annual tax and LLC fee. Covers the $800 annual tax under R&TC section 17941 (form FTB 3522, due the 15th day of the 4th month), the $400 first-year tax for first years beginning 2027 to 2029 (SB 180), the LLC fee bands of $900, $2,500, $6,000 and $11,790 on California total income from $250,000 (section 17942), the estimated fee on form FTB 3536 by the 15th day of the 6th month with its 10% underpayment penalty and prior-year safe harbor, the 15-day rule, the section 23101 doing-business tests and cancellation. For LLCs classified as partnerships or disregarded. Trigger on \"California LLC fee\", \"$800 franchise tax\", \"FTB 3522\", \"FTB 3536\", \"Form 568 fee\", \"LLC gross receipts fee\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ca-llc-fee-and-tax"
   jurisdiction: "US-CA"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-13"
 ---
 
 # California LLC annual tax and LLC fee: Form 3522, Form 3536 and Form 568 (tax year 2026)
 
-Figures are for tax year 2026 unless a line says otherwise. A short section near the end covers 2025 returns, including those filed on extension in autumn 2026. Researched on 25 September 2026 from the California Revenue and Taxation Code (R&TC) on leginfo.legislature.ca.gov and from Franchise Tax Board (FTB) pages and form instructions.
+> **Source-cited draft.** Built from R&TC sections 17941, 17942, 17946, 18633.5, 19172 and 23101, the 2026 FTB 3522 and FTB 3536 instructions, the 2025 Form 568 booklet and the FTB LLC and doing-business pages, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Scope and who it is for ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html))
+**Answer first.** For 2026 every LLC organized in California, registered with the Secretary of State, or doing business in California pays the **$800** annual tax by the 15th day of the 4th month of its taxable year (15 April 2026 for a calendar year), on form FTB 3522. On top of that, if its California total income (gross income plus cost of goods sold) is **$250,000** or more, it owes a flat LLC fee: **$900**, **$2,500**, **$6,000** or **$11,790**. The fee is estimated on form FTB 3536 by the 15th day of the 6th month (15 June 2026); paying less than the year's fee costs a **10%** penalty on the shortfall, unless the payment at least equals last year's fee. There is no first-year relief for LLCs formed in 2024 to 2026; first years beginning in 2027 to 2029 pay **$400**.
+
+## Scope and who this is for
 
 This skill covers the two entity-level charges that California imposes on an LLC classified as a **partnership** or as a **disregarded entity**:
 
@@ -23,7 +25,7 @@ This skill covers the two entity-level charges that California imposes on an LLC
 
 Both are reported on **Form 568**. It is for preparers and owners working out who owes, how much, and by when, and how to stop the charges by cancelling.
 
-It does **not** cover forming or registering an LLC, the Statement of Information, or entity choice. Those are in the separate California formation Guide. It also does not cover members' personal income tax, nonresident withholding, or the pass-through entity elective tax.
+It does **not** cover forming or registering an LLC, the Statement of Information, or entity choice. Those are in `ca-formation`. The SMLLC return itself (consent, Schedule IW, owner returns) is in `ca-smllc-form-568`. It also does not cover members' personal income tax, nonresident withholding, or the pass-through entity elective tax (`ca-pte-elective-tax`).
 
 An LLC that is taxed as a **corporation** does not pay either charge. It files as a corporation under the Corporation Tax Law ([R&TC §18633.5(h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)). California and federal classification must be the same.
 
@@ -50,7 +52,30 @@ An LLC that is taxed as a **corporation** does not pay either charge. It files a
 7. **Return.** File Form 568 by the due date for the LLC's classification and owner. Pay any fee balance by the **original** due date. An extension extends only the time to file.
 8. **Stopping.** If the business has ended, file the final Form 568 and the SOS cancellation within the time limits below.
 
-## Who owes the tax and fee ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Annual LLC tax (organized, registered or doing business in California) | USD 800 | [2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf) |
+| Annual tax due date | 15th day of the 4th month of the taxable year (15 April 2026, calendar year) | [2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf) |
+| First-year annual tax, first taxable year beginning 1 January 2027 to 31 December 2029 | USD 400 | [R&TC 17941(g)(2)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.) |
+| Deployed-owner exemption: small business means California total income of no more than | USD 250,000 | [R&TC 17941(f)(3)(C)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.) |
+| LLC fee, California total income below USD 250,000 | USD 0 | [FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| LLC fee, USD 250,000 to USD 499,999 | USD 900 | [FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| LLC fee, USD 500,000 to USD 999,999 | USD 2,500 | [FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| LLC fee, USD 1,000,000 to USD 4,999,999 | USD 6,000 | [FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| LLC fee, USD 5,000,000 or more | USD 11,790 | [FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| Estimated fee due date (form FTB 3536) | 15th day of the 6th month (15 June 2026, calendar year) | [2026 FTB 3536 instructions](https://www.ftb.ca.gov/forms/2026/2026-3536.pdf) |
+| Estimated fee underpayment penalty | 10% of the underpayment | [2026 FTB 3536 instructions](https://www.ftb.ca.gov/forms/2026/2026-3536.pdf) |
+| Per-member late or incomplete return penalty (LLC classified as a partnership) | USD 18 per member per month, up to 12 months | [2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html) |
+| Non-registered, suspended or forfeited LLC doing business | USD 2,000 | [2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html) |
+| Doing-business sales amount (2025 figure, 2025-2026 filing cycle; 2026 not yet published) | USD 757,070 | [FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
+| Doing-business property amount and payroll amount (2025 figure, 2025-2026 filing cycle) | USD 75,707 each | [FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html) |
+| Doing-business share of total sales, property or payroll | 25% | [R&TC 23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.) |
+
+The annual tax and the fee are two separate charges and are added together. Neither is prorated for a short year.
+
+### Who owes the tax and fee ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
 An LLC owes the annual tax for a taxable year if **any** of these is true:
 
@@ -62,7 +87,7 @@ An organized or registered LLC owes the tax "for each taxable year, or part ther
 
 A foreign LLC that is **not** registered and **not** doing business in California, but has California-source income, files Form 565 (if it is a partnership) instead of Form 568, and does not owe these charges. A single-member, nonregistered, disregarded foreign LLC in that position need not file Form 565 or Form 568 ([FTB LLC page](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html); [2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)).
 
-### Doing business: the §23101 tests ([R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.))
+#### Doing business: the §23101 tests ([R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.))
 
 An LLC is doing business in California for a taxable year if **any** one of these is met:
 
@@ -86,9 +111,9 @@ For a 2026 answer that turns on the dollar amount, open the FTB page and use the
 
 Public Law 86-272 protects only against taxes based on **net income**. The FTB says a business it protects "still may be considered to be doing business in California and may be liable for filing and paying the applicable amounts". It does not remove the annual tax or the LLC fee.
 
-## Thresholds and figures, tax year 2026
+### Thresholds and figures, tax year 2026
 
-### Annual LLC tax ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
+#### Annual LLC tax ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
 - **Amount.** The tax equals the minimum franchise tax in §23153(d), which is **$800** ([R&TC §23153](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23153.)). There is no proration for a short year. It is owed in full even when the LLC fee is nil. The two charges are added together.
 - **Due date.** On or before the 15th day of the 4th month of the taxable year (§17941(c)). For a calendar-year LLC in its second and later years, that is 15 April. For 2026, form FTB 3522 is the voucher for the $800 annual tax for taxable year 2026 ([2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf)).
@@ -96,7 +121,7 @@ Public Law 86-272 protects only against taxes based on **net income**. The FTB s
 - **Disregarded LLC.** Its taxable year is the owner's taxable year ([R&TC §18633.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)).
 - **Foreign LLC that starts later.** If the 15th day of the 4th month of an existing foreign LLC's year has already passed when it starts business in California or registers, pay the annual tax immediately (2026 FTB 3522 instructions).
 
-### First-year rules ([R&TC §17941(g)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
+#### First-year rules ([R&TC §17941(g)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
 | When the LLC's first taxable year began (see the foreign LLC rule below) | First-year annual tax | Source |
 |---|---|---|
@@ -112,7 +137,7 @@ SB 180 (Stats. 2026, ch. 85) was approved on 13 July 2026 and took effect immedi
 - It does not change the LLC fee.
 - The FTB had not published 2027 forms or guidance on the $400 rate at the research date. Check the 2027 form 3522 instructions before paying.
 
-### LLC fee ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
+#### LLC fee ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
 | California total income for the taxable year | Fee |
 |---|---|
@@ -129,7 +154,7 @@ SB 180 (Stats. 2026, ch. 85) was approved on 13 July 2026 and took effect immedi
 - **Commonly controlled LLCs.** If the same persons own more than 50% of several LLCs or partnerships doing business in California, and the FTB decides they were formed mainly to reduce the fee, the FTB may measure the fee on their combined total income. The FTB may make that determination for only one LLC in a commonly controlled group, but each LLC in the group is jointly and severally liable for the fee (§17942(b)(2)).
 - **Due.** The fee is due on the date the return is required to be filed under §18633.5, which is the **original** due date (§17942(c)). An extension does not move it.
 
-### Estimated fee and the 10% penalty ([R&TC §17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
+#### Estimated fee and the 10% penalty ([R&TC §17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
 - **Estimate.** Estimate and pay the fee by the 15th day of the 6th month of the current taxable year (§17942(d)(1)). For a calendar-year LLC that is 15 June 2026. Use form FTB 3536. If no fee is owed, do not file form 3536 ([2026 FTB 3536 instructions](https://www.ftb.ca.gov/forms/2026/2026-3536.pdf)).
 - **Short first year.** If the taxable year ends before the 15th day of its 6th month, no estimated payment is due. The fee is then due with the return (2026 FTB 3536 instructions).
@@ -137,7 +162,7 @@ SB 180 (Stats. 2026, ch. 85) was approved on 13 July 2026 and took effect immedi
 - **Safe harbor.** There is no penalty if the amount paid by that date is **equal to or greater than** the LLC's total fee for the **preceding** taxable year (§17942(d)(2)). A new LLC has no preceding year, so it has no safe harbor and must estimate.
 - **Balance.** Any fee not paid as an estimate is still due by the original return due date, with form 3536, or form 3537 if filing on extension ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)).
 
-### Other penalties ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+#### Other penalties ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
 - **Late payment** (§19132). This starts at 5% and rises by 0.5% for each month or part of a month unpaid, up to 25%. For the annual tax it runs from the 15th day of the 4th month. For the unpaid fee it runs from the original return due date.
 - **Late filing** (§19131). This is 5% of the unpaid tax, which includes the LLC fee, for each month or part of a month, up to 25%. If the return is filed after the extended date, the penalty runs from the original due date. Late-filing and late-payment penalties together may not exceed 25% of the unpaid tax.
@@ -145,7 +170,7 @@ SB 180 (Stats. 2026, ch. 85) was approved on 13 July 2026 and took effect immedi
 - **Unregistered foreign LLC or suspended domestic LLC** (§19135). **$2,000** per taxable year is charged when a foreign LLC that has not registered (or whose powers, rights and privileges are forfeited), or a domestic LLC that has been suspended, is doing business in California and fails to file a return within 60 days after the FTB sends a notice and demand, unless it has reasonable cause ([R&TC §19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.)). It is charged in addition to other penalties.
 - Interest runs on unpaid amounts. Use the FTB's current rate. This skill does not quote one.
 
-## Boundary and exception table ([R&TC §17946](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946.))
+## Boundary and exception table
 
 | Situation | Rule | Result |
 |---|---|---|
@@ -160,7 +185,7 @@ SB 180 (Stats. 2026, ch. 85) was approved on 13 July 2026 and took effect immedi
 
 Whether a short year that is exempt under §17946, falling just before 2027, makes 2027 the "first taxable year" for the $400 rate is **not settled**. §17946 exempts the short year but does not say it is not a taxable year. Contrast §23114, which says so expressly for corporations. Do not rely on $400 in that case without FTB guidance. Ask the FTB, or pay $800 and claim the difference once guidance appears.
 
-## Worked cases ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
+## Worked cases
 
 ### Case A: consulting SMLLC, ordinary (2026) ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
@@ -170,18 +195,66 @@ Whether a short year that is exempt under §17946, falling just before 2027, mak
 - **Estimate.** The prior-year fee was nil, so any payment by 15 June 2026, including none, avoids the 10% penalty. The $900 is still due by 15 April 2027, the original due date of the return.
 - **Total entity-level charge for 2026:** $800 + $900 = $1,700.
 
+```oa-check
+name: CA LLC 2026, consulting SMLLC, annual tax plus fee
+inputs:
+  annual_tax: 800
+  ca_total_income: 310000
+  fee_band_900: 900
+steps:
+  - total_charge: annual_tax + fee_band_900
+  - headroom_to_next_band: 500000 - ca_total_income
+expected:
+  total_charge: 1700
+  headroom_to_next_band: 190000
+```
+
 ### Case B: reseller, cost of goods sold added back (boundary) ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
 - **Facts.** An LLC classified as a partnership sells goods delivered only to California buyers. 2026 gross sales are $1,200,000 and cost of goods sold is $900,000, so gross income is $300,000.
 - **Base.** Gross income $300,000 plus cost of goods sold $900,000 gives $1,200,000.
 - **Fee.** $1,200,000 is in the $1,000,000 to $5,000,000 band, so the fee is $6,000, not the $900 that gross profit alone would suggest.
 
+```oa-check
+name: CA LLC 2026, reseller, cost of goods sold added back to the fee base
+inputs:
+  gross_sales: 1200000
+  cogs: 900000
+steps:
+  - gross_income: gross_sales - cogs
+  - fee_base: gross_income + cogs
+  - over_1m_band: fee_base - 1000000
+expected:
+  gross_income: 300000
+  fee_base: 1200000
+  over_1m_band: 200000
+```
+
 ### Case C: underpaid estimate (penalty) ([R&TC §17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
 - **Facts.** The 2025 fee was $2,500. The 2026 fee turns out to be $6,000. By 15 June 2026 the LLC paid $1,000 on form 3536.
 - **Test.** $1,000 is less than the $2,500 prior-year fee, so the safe harbor fails.
-- **Penalty.** The underpayment is $6,000 − $1,000 = $5,000. The penalty is 10% × $5,000 = $500.
+- **Penalty.** The underpayment is $6,000 minus $1,000 = $5,000. The penalty is 10% x $5,000 = $500.
 - **Had it paid $2,500 by 15 June,** there would be no penalty. The $3,500 balance would then be due by the original due date of the return.
+
+**The decision.** Paying the USD 2,500 prior-year fee by 15 June, instead of USD 1,000, costs USD 1,500 more cash in June and saves the USD 500 penalty. Recommend paying at least the prior-year fee whenever the current-year fee is uncertain.
+
+```oa-check
+name: CA LLC 2026, estimate decision, pay USD 1,000 or the USD 2,500 safe harbor
+inputs:
+  fee_2026: 6000
+  fee_2025: 2500
+  paid_low: 1000
+steps:
+  - penalty_low: (fee_2026 - paid_low) * 0.10
+  - penalty_safe_harbor: 0
+  - extra_cash_in_june: fee_2025 - paid_low
+  - saving: penalty_low - penalty_safe_harbor
+expected:
+  penalty_low: 500
+  extra_cash_in_june: 1500
+  saving: 500
+```
 
 ### Case D: year-end formation, 2026 into 2027 (boundary) ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
@@ -205,7 +278,9 @@ Whether a short year that is exempt under §17946, falling just before 2027, mak
 - **First-year $400 after an exempt 15-day year.** Unsettled, as above ([R&TC §17941(g)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.)).
 - **Limited liability partnerships and limited partnerships.** Different sections apply.
 
-## Filing and payment steps with deadlines ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+## Filing and payment
+
+Source for the table: [2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html); the 2026 booklet was not yet published when read.
 
 | Step | Form | Due |
 |---|---|---|
@@ -239,7 +314,7 @@ Whether a short year that is exempt under §17946, falling just before 2027, mak
 - An LLC formed in 2024 or 2025 had no first-year waiver.
 - For a calendar-year 2025 return, the extension runs six or seven months from the original due date, as above. For a partnership-classified LLC and for an individual-owned disregarded LLC, that is generally 15 October 2026. Any fee or tax paid with an extended return is late: the late-payment penalty and interest run from the original due date.
 
-## Completion checklist ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
+## Completion checklist
 
 - [ ] Classification confirmed as disregarded or partnership. A corporation-classified LLC is excluded.
 - [ ] Trigger recorded: organized, registered, or doing business under §23101, with each test run against the lesser of the 25% prong and that year's indexed amount
@@ -251,6 +326,24 @@ Whether a short year that is exempt under §17946, falling just before 2027, mak
 - [ ] Form 568 due date matched to classification and owner; fee balance paid by the original due date
 - [ ] If closing: final return, SOS cancellation within 12 months, and no business afterwards
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| FTB: Limited liability company page. Read for the USD 800 annual tax, first-year due date counted from the SOS filing, short form cancellation and the fee table (USD 900, 2,500, 6,000, 11,790). | https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html | 2026-11-13 |
+| 2026 FTB 3522 instructions (LLC Tax Voucher). Read for "$800 for taxable year 2026", the 15th day of the 4th month, April 15, 2026, and when a first taxable year begins (domestic and foreign LLC). | https://www.ftb.ca.gov/forms/2026/2026-3522.pdf | 2026-11-13 |
+| 2026 FTB 3536 instructions (Estimated Fee for LLCs). Read for June 15, 2026 and the 10% underpayment penalty. | https://www.ftb.ca.gov/forms/2026/2026-3536.pdf | 2026-11-13 |
+| R&TC section 17941 (read through Firecrawl; the site blocks scripts). Read for (a) to (c), (f) deployed owner and USD 250,000, (g)(1) 2021 to 2023 waiver, (g)(2) USD 400 for first years beginning 2027 to 2029, as amended by SB 180 (Stats. 2026, ch. 85). | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941. | 2026-11-13 |
+| R&TC section 17942 (read through Firecrawl). Read for (a) the USD 900, 2,500, 6,000 and 11,790 bands from USD 250,000, (b)(1)(A) gross income plus cost of goods sold, (c) due with the return. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942. | 2026-11-13 |
+| R&TC section 17946 (15-day year). Not reopened today. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946. | 2026-09-25 |
+| R&TC section 23101 (doing business). Not reopened today. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101. | 2026-09-25 |
+| R&TC sections 18633.5, 18567, 19172 and 19135 (return due dates, extension, per-member and non-registered penalties). Not reopened today. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5. | 2026-09-25 |
+| FTB: Doing business in California. Read for the 2025 amounts (USD 757,070, 75,707, 75,707) and that no 2026 row is posted (page last updated 11/07/2025). | https://www.ftb.ca.gov/file/business/doing-business-in-california.html | 2026-11-13 |
+| 2025 Form 568 booklet. Read for the USD 18 per-member penalty, the USD 2,000 non-registered LLC penalty and the USD 3,000,000 Schedule B and K tests. | https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html | 2026-11-13 |
+| FTB: Due dates for businesses. Read for Form 568 due dates by owner and the 15th day of the 6th month estimate. | https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html | 2026-11-13 |
+
+Not yet confirmed: the 2026 doing-business amounts (FTB has posted only 2025, so the 2025 figures are shown and labelled 2025-2026 filing cycle); the 2026 Form 568 booklet (not yet published, so the 2025 booklet is cited for return content and penalties); whether a 15-day exempt year just before 2027 makes 2027 the first taxable year for the USD 400 rate; FTB guidance and 2027 forms for the USD 400 rate.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ca-llc-fee-and-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ca-llc-fee-and-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ca-llc-fee-and-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ca-llc-fee-and-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

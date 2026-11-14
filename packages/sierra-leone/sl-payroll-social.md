@@ -3,16 +3,17 @@ name: sl-payroll-social
 description: "Sierra Leone payroll and social contribution workpaper for the 2026 tax year, covering NASSIT membership, statutory earnings, employee and employer contributions, registration, monthly schedules and payment evidence. Use for Sierra Leone payroll, NASSIT, SS4A, employee deductions, an unpaid salary or an employer taking over an establishment. It reads the actual National Social Security and Insurance Trust Act and Regulations alongside current authority instructions. It distinguishes social contribution earnings from every amount on a payslip, preserves separate duties for concurrent employers and explains the restriction on recovering missed deductions. PAYE computation, minimum wage, later statutory changes and live electronic filing are explicitly unfinished. Two examples compare the contribution split and the effect of misclassifying allowances."
 jurisdiction: SL
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 category: international
 tax_year_notes: "2026 intake; source-bound NASSIT workpaper, later amendments and PAYE reconciliation incomplete"
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Sierra Leone Payroll and Social Contributions v1.2
+# Sierra Leone Payroll and Social Contributions v1.3
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

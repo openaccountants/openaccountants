@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/croatia-vat-return"
   jurisdiction: "HR"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Croatia: value added tax (PDV), 2026 (v3.0)
+# Croatia: value added tax (PDV), 2026 (v3.1)
 
 The statute is the Zakon o porezu na dodanu vrijednost (ZPDV), Narodne novine (NN) 73/13 with amendments up to NN 48/26. The Tax Administration (Porezna uprava) keeps the consolidated text in its register of regulations. Article numbers below refer to it. Forms and line rules sit in the Pravilnik o porezu na dodanu vrijednost (VAT Rulebook). E-invoicing sits in a separate law, the Zakon o fiskalizaciji (NN 89/25). Interest and the limitation period sit in the Opći porezni zakon (OPZ, General Tax Act).
 
@@ -209,4 +209,4 @@ Not yet confirmed: the rate of late-payment interest on tax debts for 2026 (OPZ 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

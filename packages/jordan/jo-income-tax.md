@@ -1,14 +1,15 @@
 ---
 name: jo-income-tax
 description: "Conditional Jordan personal income tax extracts for a 2026 refresh, covering individuals, employees, sole traders and landlords. Includes residence, Jordan-source and specified foreign income, progressive bands, resident personal and dependant exemptions, evidenced expenditure, donations, national contribution, withholding and return timing under Income Tax Law No. 34 of 2014. Amendment currentness and filing procedures remain on hold. Two executable examples illustrate arithmetic under the stated assumptions; they do not clear a filing position. Use for Jordan income tax research, Jordan tax bands, ISTD individual returns and family exemptions. Read the Sources holds before applying any rule."
-version: 1.2
+version: 1.3
 jurisdiction: JO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Jordan Personal Income Tax
