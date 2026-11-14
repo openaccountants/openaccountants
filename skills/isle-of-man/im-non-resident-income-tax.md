@@ -17,14 +17,15 @@ description: >
 jurisdiction: IM
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# Isle of Man: income tax on non-resident individuals (2026/27) v0.4
+# Isle of Man: income tax on non-resident individuals (2026/27) v0.5
 
 This skill covers individuals who are not resident in the Isle of Man and receive Manx income, and the people who pay them. The year is **6 April 2026 to 5 April 2027**. The law is the Income Tax Act 1970 (AT 3 of 1970); the authority is the Income Tax Division of the Treasury. Residence itself is decided under [im-income-tax](im-income-tax.md) (six-month test, 90-day practice, departures); companies and permanent establishments are in [im-corporate-income-tax](im-corporate-income-tax.md); related-party treaty adjustments are in [im-related-party-uk-treaty](im-related-party-uk-treaty.md).
 
@@ -42,15 +43,14 @@ This skill covers individuals who are not resident in the Isle of Man and receiv
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
 | Non-resident rate on all Manx taxable income | 21% | 2026/27 (also 2025/26) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ ; PN 227/26; Budget 2026 page |
-| Non-resident personal allowance | GBP 0 | 2026/27 | rates page; ITA 1970 s.35C(1) |
-| Rate on non-corporate entities other than individuals | 21% | 2026/27 | PN 227/26; Budget 2026 page |
+| Non-resident personal allowance | GBP 0 | 2026/27 | rates page; ITA 1970 s.35C(1): https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf |
+| Rate on non-corporate entities other than individuals | 21% | 2026/27 | PN 227/26; Budget 2026 page: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ |
 | Payer deduction | the prescribed higher rate (21%) | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ ; rates page |
-| Remittance of tax deducted (form N35) | within 14 days of making the payment | 2026/27 | Making payments to non-residents page |
+| Remittance of tax deducted (form N35) | within 14 days of making the payment | 2026/27 | Making payments to non-residents page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ |
 | Non-resident return due | before 6 October after the tax year (ITA 1970 s.62(1)); the Division's page says by 6 October | 2026/27 | ITA 1970 s.62(1); https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ |
 | Late non-resident return penalties | GBP 100; a further GBP 200 if still outstanding six months later | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/ ; Receiving Isle of Man source income page |
-| UK treaty, employment presence limit | 183 days in any twelve-month period starting or ending in the fiscal year | from 6 April 2019 | SI 2018/1347 Article 14(2) |
-| UK treaty, mutual agreement time limit | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Article 25(1) |
-
+| UK treaty, employment presence limit | 183 days in any twelve-month period starting or ending in the fiscal year | from 6 April 2019 | SI 2018/1347 Article 14(2): https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf |
+| UK treaty, mutual agreement time limit | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Article 25(1): https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf |
 The rate was 22% for 2024/25 and 20% for 2023/24 and earlier (rates page, historic table). Practice Note PN 130/06 still shows a GBP 2,000 allowance and 18% rate from 2006; the Division warns those figures are historical (Receiving Isle of Man source income page; Leaving the Island page).
 
 ## The base
@@ -184,19 +184,19 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1(3), 1(3A), 11A, 35C, 35D, 35E, 62 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
-| Income Tax Division, Rates and allowances (current and historic) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
-| Income Tax Division, Budget 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
-| Practice Note PN 227/26, Budget 2026 proposals | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
-| Income Tax Division, Non-residents (late return penalties) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/ | 2026-10-30 |
-| Income Tax Division, Receiving Isle of Man source income | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
-| Income Tax Division, Making payments to non-residents | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ | 2026-10-30 |
-| Income Tax Division, Non-resident pensioners | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/non-residents/non-resident-pensioners/ | 2026-10-30 |
-| Income Tax Division, Leaving the Island | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
-| Income Tax Division, Non-resident employees | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/further-information-for-employers/non-resident-employees/ | 2026-10-30 |
-| Income Tax Division, International agreements and double taxation relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
-| Practice Note PN 130/06, Taxation of non-resident individuals (historic rates) | https://www.gov.im/media/511796/pn13006.pdf | 2026-10-30 |
-| HMRC, Isle of Man tax treaties | https://www.gov.uk/government/publications/isle-of-man-tax-treaties | 2026-10-30 |
+| Income Tax Division, Rates and allowances (current and historic): read for the 2026/27 rates, allowances and limits | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-11-14 |
+| Income Tax Division, Budget 2026: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 proposals: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-11-14 |
+| Income Tax Division, Non-residents: read for late return penalties | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/ | 2026-10-30 |
+| Income Tax Division, Receiving Isle of Man source income: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
+| Income Tax Division, Making payments to non-residents: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents/ | 2026-10-30 |
+| Income Tax Division, Non-resident pensioners: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/non-residents/non-resident-pensioners/ | 2026-10-30 |
+| Income Tax Division, Leaving the Island: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
+| Income Tax Division, Non-resident employees: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/further-information-for-employers/non-resident-employees/ | 2026-10-30 |
+| Income Tax Division, International agreements and double taxation relief: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
+| Practice Note PN 130/06, Taxation of non-resident individuals: read for historic rates | https://www.gov.im/media/511796/pn13006.pdf | 2026-10-30 |
+| HMRC, Isle of Man tax treaties: read for the rules and figures this Guide cites from it | https://www.gov.uk/government/publications/isle-of-man-tax-treaties | 2026-10-30 |
 | UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 6, 14, 15, 17, 18, 21, 23, 25 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
-| HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2 | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
+| HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2: read for the rules and figures this Guide cites from it | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
 
 Not yet confirmed: the payment date of a non-resident assessment; penalties on payers who fail to deduct or remit; which expenses are allowable against non-resident rental income; electronic filing routes for N35 and N37; relief under treaties other than the UK and Ireland; foreign tax credits and permanent-establishment rules for non-resident individuals trading in the Island.

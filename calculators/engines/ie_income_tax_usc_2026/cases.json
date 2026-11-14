@@ -1,6 +1,6 @@
 {
   "engine": "ie_income_tax_usc_2026",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
   "cases": [
     {

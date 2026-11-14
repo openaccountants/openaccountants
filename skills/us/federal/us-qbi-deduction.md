@@ -1,10 +1,10 @@
 ---
 name: us-qbi-deduction
 description: Compute the 2026 section 199A qualified business income (QBI) deduction for a US sole proprietor or single-member LLC disregarded for federal tax, on Form 8995 or Form 8995-A. The rate stays 20% (the One Big Beautiful Bill Act did not adopt 23%). 2026 figures from Rev. Proc. 2025-32 and Public Law 119-21 section 70105, with thresholds of $201,750 (single and head of household), $201,775 (married filing separately) and $403,500 (joint), phase-in ranges widened to $75,000 and $150,000, and the new $400 minimum deduction for at least $1,000 of QBI from a business the taxpayer materially participates in. Covers QBI after the deductible half of self-employment tax, self-employed health insurance and retirement contributions, the specified service trade or business (SSTB) rules and de minimis test, the W-2 wage and UBIA limit, the phase-in, the 20% of taxable income cap and loss carryforwards. Trigger on "QBI", "199A", "pass-through deduction", "Form 8995", "Form 8995-A", "SSTB", "20% deduction". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -67,6 +67,9 @@ This skill loads on top of `us-tax-workflow-base`.
 | End of phase-in range, married filing jointly | USD 553,500 | [Rev. Proc. 2025-32, section 4.26](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Phase-in range width, every return except joint (was USD 50,000 to 2025) | USD 75,000 | [Public Law 119-21, section 70105(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Phase-in range width, joint return (was USD 100,000 to 2025) | USD 150,000 | [Public Law 119-21, section 70105(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Tax year 2025 (prior year, for 2025 returns): Taxable income threshold (single / HoH / QSS) | $197,300 | [Rev. Proc. 2024-40, section 3.27](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+| Tax year 2025 (prior year, for 2025 returns): Taxable income threshold (MFJ) | $394,600 | [Rev. Proc. 2024-40, section 3.27](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
+| Tax year 2025 (prior year, for 2025 returns): Taxable income threshold (MFS) | $197,300 | [Rev. Proc. 2024-40, section 3.27](https://www.irs.gov/pub/irs-drop/rp-24-40.pdf) |
 | Wage limit, first alternative | 50% of W-2 wages | [26 U.S.C. 199A(b)(2)(B)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
 | Wage limit, second alternative | 25% of W-2 wages plus 2.5% of UBIA of qualified property | [26 U.S.C. 199A(b)(2)(B)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |
 | Depreciable period for UBIA | later of 10 years from placed in service or the last full year of the section 168 recovery period (ignoring 168(g)) | [26 U.S.C. 199A(b)(6)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec199A.htm) |

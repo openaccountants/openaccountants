@@ -1,16 +1,17 @@
 ---
 name: uk-crypto-tax
 description: Use this skill whenever asked about UK cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax UK", "Bitcoin UK tax", "HMRC crypto", "cryptoassets UK", "crypto capital gains UK", "staking tax UK", "mining tax UK", "NFT tax UK", "DeFi tax UK", "SA108 crypto", "crypto CGT", "bed and breakfasting crypto", "S104 pool", "crypto loss UK", "Coinbase UK tax", "Binance UK tax", "Revolut crypto UK", "crypto income UK", "DAC8 UK", "CARF crypto", "crypto reporting 2026", "18% 24% crypto", "HMRC cryptoassets manual", or any question about the income tax, capital gains tax, or reporting treatment of cryptocurrency, tokens, or digital assets for UK tax residents. Covers HMRC's Cryptoassets Manual (CRYPTO10000+), S104 pooling, same-day and 30-day matching rules, DeFi lending/staking, NFTs, mining, SA108 reporting, and the Crypto Asset Reporting Framework (CARF) from 2026. ALWAYS read this skill before touching any UK crypto work.
-version: 2.1
+version: 2.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - uk-capital-gains-sa108
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: situation-rules
 ---
 
 # UK tax on cryptoassets for individuals
@@ -54,9 +55,9 @@ Out of scope, refer: companies and other businesses holding tokens (Corporation 
 
 | Disposal date | Individuals: within basic rate band / above | Trustees; personal representatives | Annual exempt amount: individuals / most trustees |
 | --- | --- | --- | --- |
-| 6 April 2026 to 5 April 2027 (2026/27) | 18% / 24% | 24% | £3,000 / £1,500 |
-| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 24% | £3,000 / £1,500 |
-| 30 October 2024 to 5 April 2025 | 18% / 24% | 24% | £3,000 / £1,500 (one allowance for the whole of 2024/25) |
+| 6 April 2026 to 5 April 2027 (2026/27) | 18% / 24% | 24% | £3,000 / £1,500; https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
+| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 24% | £3,000 / £1,500; https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
+| 30 October 2024 to 5 April 2025 | 18% / 24% | 24% | £3,000 / £1,500 (one allowance for the whole of 2024/25); https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
 | 6 April 2024 to 29 October 2024 | 10% / 20% | 20% | (as above) Source: https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (tax year 2026) (read 2026-10-31) |
 
 - Crypto is taxed at the same main rates as other assets. The 2026/27 basic rate band is £37,700 of taxable income (income after the Personal Allowance).

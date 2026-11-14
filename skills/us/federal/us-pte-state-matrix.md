@@ -1,10 +1,10 @@
 ---
 name: us-pte-state-matrix
 description: State pass-through entity elective taxes (PTET) for tax year 2026, with 2025 return notes. One row per state that has one, each linked to that state's own law or guidance, giving status, rate, how and when to elect, who may elect, the owner credit, exclusion or deduction, and nonresident filing relief. Starts from the federal SALT cap under Public Law 119-21 (USD 40,400 for 2026, cut by 30 percent of MAGI over USD 505,000 to a USD 10,000 floor) and IRS Notice 2020-75. Trigger on "PTET", "pass-through entity tax", "SALT cap workaround", "BAIT", "elective entity tax", "Form 3804", "IT-204-PTET". State depth is in each state's PTE skill (ca-pte-elective-tax, ny-pte-tax-ptet, ga-corporate-and-ptet).
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -48,8 +48,8 @@ Figures are for tax year 2026 unless a line says 2025. The federal figures come 
 | Item | 2025 | 2026 | Source |
 | --- | --- | --- | --- |
 | SALT cap (single, joint, head of household) | USD 40,000 | USD 40,400 | [§164(b)(7)(A)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| SALT cap, married filing separately (half) | $20,000 | $20,200 | [§164(b)(6)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
-| MAGI threshold for the phase-down (half if filing separately: $250,000 / $252,500) | USD 500,000 | USD 505,000 | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| SALT cap, married filing separately (half, derived) | $20,000 | $20,200 | [§164(b)(6)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| MAGI threshold for the phase-down (half if filing separately, derived: $250,000 / $252,500) | USD 500,000 | USD 505,000 | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Phase-down rate | 30 percent of MAGI over the threshold | 30 percent of MAGI over the threshold | [§164(b)(7)(B)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Floor after the phase-down (half if filing separately: $5,000) | USD 10,000 | USD 10,000 | [§164(b)(7)(B)(iii)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 

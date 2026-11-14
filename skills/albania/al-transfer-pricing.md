@@ -1,10 +1,11 @@
 ---
 name: al-transfer-pricing
 description: "Albanian transfer pricing for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' (arts. 3(13), 32 to 39, 44) and Instruction No. 29 of 16.11.2023 on transfer pricing and advance pricing agreements. Covers who is a related person (the 50% tests, relatives, de facto control), which transactions are controlled, the five methods, the arm's length range and adjustment to the median, documentation produced within 45 days, the annual controlled transactions notice above ALL 50 million due with the corporate return, APAs (EUR 30 million admission test, fees, five-year term), country-by-country reporting at ALL 105 billion, penalties under Law No. 9920/2008, and how the 30% EBITDA interest cap sits beside transfer pricing. Trigger on 'Albania transfer pricing', 'transferimi i çmimit', 'njoftimi vjetor për transaksionet e kontrolluara', 'Albania APA', 'Albanian related party'. Out of scope: the corporate computation (al-corporate-tax), individuals (albania-income-tax), planning (albania-tax-optimization)."
-version: 0.2
+version: 0.3
+type: situation-rules
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -49,21 +50,21 @@ The listed jurisdictions are in Annex 1 to Instruction 29/2023 (point 3.6), prin
 |---|---|---|---|
 | Related person: ownership test | At least 50% of voting or management, dividend or capital rights, direct or indirect | 2026 | Law 29/2023 art. 3(13)(b), (c): https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf |
 | Annual controlled transactions notice | Required when controlled transactions, including loan balances, exceed ALL 50,000,000 in total in the reporting period | 2026 | Instruction 29/2023 point 14.1: https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf |
-| Notice deadline | The filing date of the corporate income tax return: 31 March 2027 for tax year 2026 | 2026 | Instruction 29/2023 point 14.3; Law 29/2023 art. 61 |
-| Documentation produced on request | Within 45 days of the tax administration's request | 2026 | Law 29/2023 art. 37(1); Instruction 29/2023 point 15.2 |
-| Comparables refresh relief | Below ALL 50,000,000 of controlled transactions, external comparables may be updated once every three reporting periods if nothing material changed | 2026 | Instruction 29/2023 point 15.5 |
-| Adjustment point when outside the range | Median (50th percentile) of the arm's length range | 2026 | Law 29/2023 art. 36(3); Instruction 29/2023 points 12.2, 12.3 |
-| APA admission test | Controlled transactions over the whole APA period above EUR 30,000,000 (lower accepted if complex or of high importance for Albania) | 2026 | Instruction 29/2023 points 19.1, 19.2 |
-| APA application fee | ALL 50,000, non-refundable | 2026 | Instruction 29/2023 point 20.1 |
-| APA administrative fee | ALL 300,000 unilateral; ALL 1,200,000 bilateral or multilateral; 90% refunded if the application is rejected after phases 2 and 3 | 2026 | Instruction 29/2023 points 20.2, 20.3 |
-| APA maximum term | 5 years | 2026 | Instruction 29/2023 point 21.2 |
+| Notice deadline | The filing date of the corporate income tax return: 31 March 2027 for tax year 2026 | 2026 | [Instruction 29/2023 point 14.3](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf); [Law 29/2023 art. 61](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Documentation produced on request | Within 45 days of the tax administration's request | 2026 | [Law 29/2023 art. 37(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); [Instruction 29/2023 point 15.2](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| Comparables refresh relief | Below ALL 50,000,000 of controlled transactions, external comparables may be updated once every three reporting periods if nothing material changed | 2026 | [Instruction 29/2023 point 15.5](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| Adjustment point when outside the range | Median (50th percentile) of the arm's length range | 2026 | [Law 29/2023 art. 36(3)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); [Instruction 29/2023 points 12.2, 12.3](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| APA admission test | Controlled transactions over the whole APA period above EUR 30,000,000 (lower accepted if complex or of high importance for Albania) | 2026 | [Instruction 29/2023 points 19.1, 19.2](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| APA application fee | ALL 50,000, non-refundable | 2026 | [Instruction 29/2023 point 20.1](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| APA administrative fee | ALL 300,000 unilateral; ALL 1,200,000 bilateral or multilateral; 90% refunded if the application is rejected after phases 2 and 3 | 2026 | [Instruction 29/2023 points 20.2, 20.3](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
+| APA maximum term | 5 years | 2026 | [Instruction 29/2023 point 21.2](https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf) |
 | Country-by-country report: group in scope | Multinational group with consolidated revenue of ALL 105,000,000,000 or more in the preceding fiscal year | 2026 | Law 9920/2008 art. 63/1(c): https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf |
-| Country-by-country report deadline | 12 months after the last day of the group's reporting fiscal year | 2026 | Law 9920/2008 art. 63/5 |
-| Penalty: late controlled transactions notice | ALL 10,000 per month late | 2026 | Law 9920/2008 art. 115/1(1) |
-| Penalty on a transfer pricing adjustment | 0.06% of the unpaid tax per day, for at most 365 days; none if documentation was prepared and submitted | 2026 | Law 9920/2008 arts. 114(1), 115/1(2), (3) |
+| Country-by-country report deadline | 12 months after the last day of the group's reporting fiscal year | 2026 | [Law 9920/2008 art. 63/5](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf) |
+| Penalty: late controlled transactions notice | ALL 10,000 per month late | 2026 | [Law 9920/2008 art. 115/1(1)](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf) |
+| Penalty on a transfer pricing adjustment | 0.06% of the unpaid tax per day, for at most 365 days; none if documentation was prepared and submitted | 2026 | [Law 9920/2008 arts. 114(1), 115/1(2), (3)](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf) |
 | Late payment interest | 120% of the Bank of Albania interbank rate; published rate 7.8% from 08.10.2026 | 2026 | Law 9920/2008 art. 76; https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ |
-| Interest deduction cap (sits beside transfer pricing) | 30% of EBITDA; excess carried forward 5 years | 2026 | Law 29/2023 art. 30 |
-| Corporate income tax on an adjustment | 15% | 2026 | Law 29/2023 art. 41; see `al-corporate-tax` |
+| Interest deduction cap (sits beside transfer pricing) | 30% of EBITDA; excess carried forward 5 years | 2026 | [Law 29/2023 art. 30](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Corporate income tax on an adjustment | 15% | 2026 | [Law 29/2023 art. 41](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); see `al-corporate-tax` |
 
 ## The taxable base
 
@@ -215,14 +216,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated (General Directorate of Taxes copy): arts. 3(13), 10(4), 30, 32 to 39, 44, 50(1)(dh), 61, 70 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
-| Instruction No. 29 of 16.11.2023 "Për transferimin e çmimit dhe marrëveshjet e çmimit në avancë", including Annex 1 (listed jurisdictions, PDF page 22) and Annex 2 (annual notice form, PDF pages 23 to 25) | https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf | 2026-10-23 |
-| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat", consolidated: points 30 (interest limitation) and 50.1(f) (interest rate cap) | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
-| Instruction No. 9 of 12.3.2026 amending General Instruction No. 26/2023 (EBITDA wording, point 30) | https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.9-date-12.3.2026-PER-DISA-SHTESA-DHE-NDRYSHIME-NE-UDHEZIMIN-E-PERGJITHSHEM-NR.26-DATE-8.9.2023-PER-TATIMIN-MBI-TE-ARDHURATTE-NDRYSHUAR.pdf | 2026-10-23 |
-| Instruction No. 11 of 23.7.2024 on applying double tax treaties, consolidated | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezim-nr-11-date-23.7.2024.pdf | 2026-10-23 |
-| Law No. 9920/2008 "Për procedurat tatimore", consolidated: arts. 63/1 to 63/6, 76, 114, 115/1, 115/3, 115/4 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
-| Instruction No. 24 of 2.9.2008 "Për procedurat tatimore", consolidated: point 76 (late payment interest) | https://tatime.gov.al/wp-content/uploads/2026/10/Udhezim-Nr24-Dt-02.09.2008-perditesuar-1.pdf | 2026-10-23 |
-| General Directorate of Taxes, late payment interest rates | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-10-23 |
-| General Directorate of Taxes, instructions list | https://tatime.gov.al/legjislacioni/udhezime/ | 2026-10-23 |
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated (General Directorate of Taxes copy): arts. 3(13), 10(4), 30, 32 to 39, 44, 50(1)(dh), 61, 70 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-11-14 |
+| Instruction No. 29 of 16.11.2023 "Për transferimin e çmimit dhe marrëveshjet e çmimit në avancë": read for including Annex 1 (listed jurisdictions, PDF page 22) and Annex 2 (annual notice form, PDF pages 23 to 25) | https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf | 2026-11-14 |
+| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat": read for consolidated: points 30 (interest limitation) and 50.1(f) (interest rate cap) | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-11-14 |
+| Instruction No. 9 of 12.3.2026 amending General Instruction No. 26/2023: read for EBITDA wording, point 30 | https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.9-date-12.3.2026-PER-DISA-SHTESA-DHE-NDRYSHIME-NE-UDHEZIMIN-E-PERGJITHSHEM-NR.26-DATE-8.9.2023-PER-TATIMIN-MBI-TE-ARDHURATTE-NDRYSHUAR.pdf | 2026-11-14 |
+| Instruction No. 11 of 23.7.2024 on applying double tax treaties: read for consolidated | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezim-nr-11-date-23.7.2024.pdf | 2026-11-14 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated: arts. 63/1 to 63/6, 76, 114, 115/1, 115/3, 115/4 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-11-14 |
+| Instruction No. 24 of 2.9.2008 "Për procedurat tatimore": read for consolidated: point 76 (late payment interest) | https://tatime.gov.al/wp-content/uploads/2026/10/Udhezim-Nr24-Dt-02.09.2008-perditesuar-1.pdf | 2026-11-14 |
+| General Directorate of Taxes: read for late payment interest rates | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-11-14 |
+| General Directorate of Taxes: read for instructions list | https://tatime.gov.al/legjislacioni/udhezime/ | 2026-11-14 |
 
 Not yet confirmed: whether the annual notice is now filed only on e-Filing; the Bank of Albania 12-month lending rate figures that cap deductible interest under Law 29/2023 art. 50(1)(dh) (the rule is the rate for the month the loan was taken; the figures were not read); whether the published 7.8% late payment interest rate is an annual rate applied per day (neither Law 9920/2008 art. 76 nor Instruction 24/2008 point 76 says); whether EBITDA starts from taxable income (Law 29/2023 art. 30(2)) or profit before tax (General Instruction 26/2023 point 30.2 as amended) where they differ; how the administration adjusts purely domestic related-party transactions under art. 44 without the art. 32 machinery; the detailed country-by-country report content set by Council of Ministers decision under Law 9920/2008 art. 63/4(2).

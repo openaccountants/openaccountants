@@ -1,20 +1,23 @@
 // US self-employment tax (Schedule SE, regular method), 2025 and 2026.
-// Skills: us-federal-return-assembly (2026 wage base, worked Case A),
-// us-schedule-c-and-se-computation (2025 rows, examples).
+// Skills: us-schedule-c-and-se-computation (rates, the $400 floor, the deductible half; worked
+// Case 2), us-tax-workflow-base (wage base for 2026 and 2025; worked Case 1).
 import { FactReader, taxYearFact, missingRule, money, ok, pct, r2, rule, type Engine, type EngineSpec } from "./types";
 
-const S = "us-federal-return-assembly";
-export const NEF = rule("NET_EARNINGS_FACTOR", 0.9235, S, "Self-employment tax", "Net earnings | Schedule C net profit × 92.35%");
-export const MINNE = rule("MIN_NET_EARNINGS", 400, S, "Self-employment tax", "No SE tax | If net earnings (Schedule SE line 4c) are less than $400");
-export const SS = rule("SS_RATE", 0.124, S, "Self-employment tax", "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed");
-export const BASE = rule<Record<string, number>>("WAGE_BASE", { "2025": 176_100, "2026": 184_500 }, S, "Self-employment tax", "Wage base | $176,100 for 2025; $184,500 for 2026");
-export const MED = rule("MEDICARE_RATE", 0.029, S, "Self-employment tax", "Medicare part | 2.9% of all net earnings, with no cap");
-export const HALF = rule("DEDUCTIBLE_SHARE", 0.5, S, "Self-employment tax", "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15");
+const S = "us-schedule-c-and-se-computation";
+const SEC = "Rates, bands and thresholds";
+const WB = "us-tax-workflow-base";
+export const NEF = rule("NET_EARNINGS_FACTOR", 0.9235, S, SEC, "Net earnings factor (Schedule SE line 4a) | 92.35%");
+export const MINNE = rule("MIN_NET_EARNINGS", 400, S, SEC, "No self-employment tax below this net earnings amount | USD 400");
+export const SS = rule("SS_RATE", 0.124, S, SEC, "Social Security part of self-employment tax | 12.4%");
+export const BASE = rule<Record<string, number>>("WAGE_BASE", { "2025": 176_100, "2026": 184_500 }, WB, "Figures for 2026, with years",
+  "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base");
+export const MED = rule("MEDICARE_RATE", 0.029, S, SEC, "Medicare part of self-employment tax | 2.9%");
+export const HALF = rule("DEDUCTIBLE_SHARE", 0.5, S, SEC, "Deductible share of self-employment tax (Schedule SE line 13) | 50%");
 const CONSTS = [NEF, MINNE, SS, BASE, MED, HALF];
 
 export const spec: EngineSpec = {
   name: "us_se_tax",
-  version: "1.2.0",
+  version: "1.3.0",
   jurisdiction: "US",
   tax_years: ["2025", "2026"],
   summary:
@@ -29,8 +32,8 @@ export const spec: EngineSpec = {
 };
 
 export const anchors = [
-  "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-  "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483",
+  "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+  "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89",
 ];
 
 export function se(profit: number, wages: number, year: string): [number, number, number] {

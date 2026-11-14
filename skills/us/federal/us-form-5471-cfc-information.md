@@ -1,10 +1,10 @@
 ---
 name: us-form-5471-cfc-information
 description: Decide whether a US person must file Form 5471 for a foreign corporation in tax year 2026, which filer category or categories apply (1a to 1c, 2, 3, 4, 5a to 5c), and which schedules follow, using the December 2025 Form 5471 and its instructions. Covers the 10% US shareholder and more-than-50% CFC tests with family and entity attribution, the filing exceptions (constructive owners, joint filers, foreign-controlled CFCs under Rev. Proc. 2019-40, dormant corporations under Rev. Proc. 92-70), the $10,000 penalties under sections 6038 and 6679 with the $50,000 continuing-failure cap, the foreign tax credit reduction, the open statute under section 6501(c)(8), and the routes to fix missed years. Explains the One Big Beautiful Bill Act changes that reach Form 5471 from 2026 (GILTI renamed net CFC tested income, the one-month deferral election repealed, section 958(b)(4) restored with new section 951B, the new pro rata share rule). Trigger on "Form 5471", "CFC", "controlled foreign corporation", "foreign company owner", "5471 penalty", "Category 4", "Category 5", "US shareholder of a foreign corporation". The NCTI (GILTI) computation itself is in us-gilti-fdii-beat. Federal only.
-version: "2.1"
+version: "2.2"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -75,7 +75,7 @@ Out of scope, and where it goes:
 | Section 6046 continuing failure: per 30-day period after 90 days from notice, capped at USD 50,000 | USD 10,000 | [26 U.S.C. 6679(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6679.htm) |
 | Assessment period stays open until this long after the missing information is furnished | 3 years | [26 U.S.C. 6501(c)(8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm) |
 | High-tax exception: foreign effective rate must be greater than this share of the top section 11 rate | 90 percent | [26 U.S.C. 954(b)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
-| Corporate income tax rate (section 11), so the high-tax line is 90% x 21% = 18.9% | 21 percent | [26 U.S.C. 11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm) |
+| Corporate income tax rate (section 11), so the high-tax line is 90% x 21% = 18.9% (derived) | 21 percent | [26 U.S.C. 11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm) |
 | Form 8833 treaty-position disclosure penalty (C corporation: USD 10,000) | USD 1,000 | [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf) |
 | Streamlined foreign offshore procedures: days physically outside the US, with no US abode, in one of the last 3 years | 330 full days | [IRS, U.S. taxpayers residing outside the United States](https://www.irs.gov/individuals/international-taxpayers/u-s-taxpayers-residing-outside-the-united-states) |
 | Streamlined domestic offshore procedures: miscellaneous offshore penalty on the highest aggregate year-end balance | 5 percent | [IRS, U.S. taxpayers residing in the United States](https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-in-the-united-states) |

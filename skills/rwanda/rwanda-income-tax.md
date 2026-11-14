@@ -1,10 +1,11 @@
 ---
 name: rwanda-income-tax
 description: "Rwanda personal income tax for 2026: PAYE bands, casual labour, micro and small business regimes, real regime, capital gains at 10%, the annual declaration by 31 March and how to file it in E-Tax. Use for employees and self-employed individuals in Rwanda."
-version: 0.2
+version: 0.3
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -429,14 +430,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 027/2022 establishing taxes on income (read: arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-01 |
-| Law 051/2023 amending the income tax law (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-01 |
-| Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax) (whole of both) | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-01 |
-| Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
-| Ministerial Order 003/26/10/TC of 29/04/2026 (read: arts 17, 19, 32-33) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-01 |
-| Ministerial Order 009/26/10/TC of 24/09/2026 (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-01 |
-| RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
-| RRA, Calculate PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-01 |
-| RRA, Declare Income Tax page (whole page) | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1 | 2026-11-01 |
+| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
+| Law 051/2023 amending the income tax law: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-14 |
+| Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax): read in full, both laws | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Ministerial Order 003/26/10/TC of 29/04/2026: read for arts 17, 19, 32-33 | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-14 |
+| Ministerial Order 009/26/10/TC of 24/09/2026: read in full | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-14 |
+| RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
+| RRA, Calculate PAYE page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-14 |
+| RRA, Declare Income Tax page: read in full | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1 | 2026-11-14 |
 
 Not yet confirmed: the road transport annex amounts were not captured from the PDF table, so use the annex directly; trading licence declaration by 31 January is carried from the old file and was not re-read; treatment of a home office, vehicle and phone in the real regime is our working practice and not a rule in the law; RRA rounding of monthly PAYE is not stated in the pages read.

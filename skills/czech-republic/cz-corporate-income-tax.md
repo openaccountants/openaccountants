@@ -1,14 +1,15 @@
 ---
 name: cz-corporate-income-tax
 description: "Use this skill for Czech corporate income tax (daň z příjmů právnických osob, DPPO) in tax year 2026. It covers who is a taxpayer and who is resident (Income Taxes Act § 17), the 21% rate and the 5%, 0% and 15% special rates (§ 21), the tax base and the main non-deductible costs (§§ 23 to 25), tax depreciation (§§ 26 to 33), losses (back 2 years, forward 5, § 34), the participation exemption (§ 19), the limit on exceeding borrowing costs (30% of tax EBITDA or CZK 80 million, § 23e), advances (§ 38a), return and payment deadlines for 2026, penalties and late payment interest. Trigger on: Czech corporate tax, DPPO, s.r.o. tax, daňové přiznání právnických osob, zálohy na daň, daňové odpisy, daňová ztráta, úroky 23e. Out of scope: transfer pricing and thin capitalisation (cz-transfer-pricing), withholding on payments abroad and exit tax (cz-cross-border), VAT (cz-vat-return), top-up tax for large groups."
-version: 0.3
+version: 0.4
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Czech Republic: corporate income tax (2026) v0.2
@@ -38,30 +39,30 @@ Law: Act No. 586/1992 Coll., Income Taxes Act ("ITA"), version in force from 1 A
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard corporate income tax rate | 21% | 2026 | [ITA § 21(1)](https://e-sbirka.gov.cz/sb/1992/586/2026-08-01) |
-| Basic investment fund | 5% | 2026 | ITA § 21(2) |
-| Pension company funds and pension institutions | 0% | 2026 | ITA § 21(3) |
-| Separate base: profit shares from abroad that are not exempt | 15% | 2026 | ITA § 20b, § 21(4) |
+| Basic investment fund | 5% | 2026 | ITA § 21(2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Pension company funds and pension institutions | 0% | 2026 | ITA § 21(3); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Separate base: profit shares from abroad that are not exempt | 15% | 2026 | ITA § 20b, § 21(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Rounding | Base (after deductions) rounded down to whole CZK thousands; tax rounded up to whole CZK | 2026 | ITA § 20(11), § 21(1); [TC § 146(1)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01) |
-| Tangible asset threshold for tax depreciation (movable items) | input price over CZK 80,000 and useful life over 1 year | 2026 | ITA § 26(2)(a) |
-| Depreciation groups and minimum periods | Group 1: 3 years; 2: 5; 3: 10; 4: 20; 5: 30; 6: 50 | 2026 | ITA § 30(1) |
-| Passenger car (category M1): depreciation counted for tax | only the share of each charge equal to CZK 2,000,000 divided by the input price | 2026 | ITA § 30e(1), (2) |
-| Zero-emission vehicle bought 2024 to 2028, first user | 100% over 24 months: 60% in the first 12 months, 40% in the next 12 | 2026 | ITA § 30a(1) |
-| Tax loss carry-forward | 5 periods after the loss period | 2026 | ITA § 34(1) |
-| Tax loss carry-back | 2 periods before the loss period, CZK 30,000,000 in total | 2026 | ITA § 34(1) |
-| Loss forfeited on a substantial change in ownership | more than 25% of capital or votes changes hands, unless at least 80% of revenue still comes from the same activity | 2026 | ITA § 38na(1), (3) |
-| Participation exemption: holding | at least 10% of the subsidiary's capital, held for at least 12 months without a break | 2026 | ITA § 19(1)(ze), § 19(3)(b), (c), § 19(4) |
-| Participation exemption: non-EU subsidiary | treaty state, comparable legal form, taxed at a rate of at least 12% | 2026 | ITA § 19(9) |
-| Limit on exceeding borrowing costs | the higher of 30% of tax EBITDA or CZK 80,000,000 | 2026 | ITA § 23e(1) |
-| Thin capitalisation (related-party debt) | interest on debt above 4 times equity (6 times for banks and insurers) not deductible; see cz-transfer-pricing | 2026 | ITA § 25(1)(w) |
-| Gifts deductible from the base | each gift at least CZK 2,000; in total at most 10% of the base after losses | 2026 | ITA § 20(8) |
-| Advances: none due | last known tax up to CZK 30,000 | 2026 | ITA § 38a(2)(a) |
-| Advances: two a year | last known tax over CZK 30,000 up to CZK 150,000: 40% each, by the 15th day of the 6th and 12th month of the period | 2026 | ITA § 38a(3) |
-| Advances: four a year | last known tax over CZK 150,000: 1/4 each, by the 15th day of the 3rd, 6th, 9th and 12th month | 2026 | ITA § 38a(4) |
-| Advance rounding | up to whole CZK hundreds | 2026 | TC § 146(2) |
-| Withholding on dividends, interest, royalties and service fees paid to non-residents | 15%; 35% to residents of states outside the EU and EEA with no treaty, tax information exchange agreement or multilateral information exchange convention in force with the Czech Republic | 2026 | ITA § 36(1)(a) to (c), § 36(2) |
-| Penalty on extra tax assessed by the tax office (penále) | 20% of the extra tax; 1% of a reduced tax loss | 2026 | TC § 251(1) |
-| Late return penalty | 0.05% of the tax a day after 5 working days late, capped at 5% of the tax and CZK 300,000 (0.01% a day of a tax loss) | 2026 | TC § 250(1), (5) |
-| Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points | 11.50% a year for days from 1 January to 30 June 2026; 11.75% for days from 1 July to 31 December 2026 | 2026 | TC § 251a(5), § 252(4); [Government Regulation 351/2013 § 2(1)](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
+| Tangible asset threshold for tax depreciation (movable items) | input price over CZK 80,000 and useful life over 1 year | 2026 | ITA § 26(2)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Depreciation groups and minimum periods | Group 1: 3 years; 2: 5; 3: 10; 4: 20; 5: 30; 6: 50 | 2026 | ITA § 30(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Passenger car (category M1): depreciation counted for tax | only the share of each charge equal to CZK 2,000,000 divided by the input price | 2026 | ITA § 30e(1), (2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Zero-emission vehicle bought 2024 to 2028, first user | 100% over 24 months: 60% in the first 12 months, 40% in the next 12 | 2026 | ITA § 30a(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Tax loss carry-forward | 5 periods after the loss period | 2026 | ITA § 34(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Tax loss carry-back | 2 periods before the loss period, CZK 30,000,000 in total | 2026 | ITA § 34(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Loss forfeited on a substantial change in ownership | more than 25% of capital or votes changes hands, unless at least 80% of revenue still comes from the same activity | 2026 | ITA § 38na(1), (3); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Participation exemption: holding | at least 10% of the subsidiary's capital, held for at least 12 months without a break | 2026 | ITA § 19(1)(ze), § 19(3)(b), (c), § 19(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Participation exemption: non-EU subsidiary | treaty state, comparable legal form, taxed at a rate of at least 12% | 2026 | ITA § 19(9); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Limit on exceeding borrowing costs | the higher of 30% of tax EBITDA or CZK 80,000,000 | 2026 | ITA § 23e(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Thin capitalisation (related-party debt) | interest on debt above 4 times equity (6 times for banks and insurers) not deductible; see cz-transfer-pricing | 2026 | ITA § 25(1)(w); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Gifts deductible from the base | each gift at least CZK 2,000; in total at most 10% of the base after losses | 2026 | ITA § 20(8); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: none due | last known tax up to CZK 30,000 | 2026 | ITA § 38a(2)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: two a year | last known tax over CZK 30,000 up to CZK 150,000: 40% each, by the 15th day of the 6th and 12th month of the period | 2026 | ITA § 38a(3); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: four a year | last known tax over CZK 150,000: 1/4 each, by the 15th day of the 3rd, 6th, 9th and 12th month | 2026 | ITA § 38a(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advance rounding | up to whole CZK hundreds | 2026 | TC § 146(2); https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 |
+| Withholding on dividends, interest, royalties and service fees paid to non-residents | 15%; 35% to residents of states outside the EU and EEA with no treaty, tax information exchange agreement or multilateral information exchange convention in force with the Czech Republic | 2026 | ITA § 36(1)(a) to (c), § 36(2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Penalty on extra tax assessed by the tax office (penále) | 20% of the extra tax; 1% of a reduced tax loss | 2026 | TC § 251(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Late return penalty | 0.05% of the tax a day after 5 working days late, capped at 5% of the tax and CZK 300,000 (0.01% a day of a tax loss) | 2026 | TC § 250(1), (5); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points | 11.50% a year for days from 1 January to 30 June 2026; 11.75% for days from 1 July to 31 December 2026 (computed: CNB repo rate plus 8 points, repo 3.50% on 1 January 2026 and 3.75% on 1 July 2026 per the CNB history) | 2026 | TC § 251a(5), § 252(4); [Government Regulation 351/2013 § 2(1)](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
 Repo rate: 3.50% from 9 May 2025 and 3.75% from 19 June 2026 (CNB repo history). The rate on 1 January 2026 was 3.50%, so 3.50 + 8 = 11.50%; on 1 July 2026 it was 3.75%, so 3.75 + 8 = 11.75%.
 

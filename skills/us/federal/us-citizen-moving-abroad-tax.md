@@ -1,7 +1,7 @@
 ---
 name: us-citizen-moving-abroad-tax
 description: Plan the US federal tax side of a US citizen or green card holder moving abroad in 2026, and route each issue to the skill that computes it. Covers worldwide taxation by citizenship, the choice between the foreign earned income exclusion (USD 132,900 for 2026, 330 full days or bona fide residence) and the foreign tax credit by destination (zero-tax Gulf against high-tax Europe), the reporting web (FBAR, Form 8938, Form 5471, Form 8621, Forms 3520), the PFIC and foreign company traps, self-employment tax and totalization agreements, states that keep taxing leavers, retirement accounts abroad, and renunciation with the section 877A exit tax (covered expatriate threshold USD 211,000, exclusion USD 910,000 for 2026). Trigger on "moving abroad", "American expat taxes", "US citizen living abroad", "FEIE or foreign tax credit", "Dubai US tax", "renounce US citizenship", "exit tax", "accidental American". Federal only.
-version: "1.1"
+version: "1.2"
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-11-14
@@ -59,7 +59,7 @@ Out of scope, and where it goes:
 | --- | --- | --- |
 | Foreign earned income exclusion, maximum per person | USD 132,900 | [Rev. Proc. 2025-32, section 4.39](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Physical presence test: full days in a foreign country in any 12-month period | 330 | [26 U.S.C. 911(d)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm) |
-| Foreign housing: base amount (16% of the exclusion), full year | USD 21,264 | [26 U.S.C. 911(c)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm) |
+| Foreign housing: base amount (16% of the exclusion), full year | USD 21,264 (derived: 16% of the USD 132,900 exclusion) | [26 U.S.C. 911(c)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm) |
 | Foreign housing: expense limit for most locations (30% of the exclusion), full year | USD 39,870 | [Instructions for Form 2555 (2026)](https://www.irs.gov/pub/irs-pdf/i2555.pdf) |
 | Standard deduction, single | USD 16,100 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Self-employment tax rate (not reduced by the exclusion) | 15.3% | [IRS, Self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) |

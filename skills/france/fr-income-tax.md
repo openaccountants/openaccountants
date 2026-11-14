@@ -1,10 +1,10 @@
 ---
 name: fr-income-tax
 description: Use this skill whenever asked about French income tax for self-employed individuals (auto-entrepreneurs, micro-entrepreneurs, or professions libérales). Trigger on phrases like "impôt sur le revenu France", "déclaration 2042", "micro-entrepreneur", "auto-entrepreneur", "BNC", "BIC", "professions libérales France", "abattement forfaitaire", "Urssaf", "cotisations sociales", "régime micro", "régime réel", "IR France", "acomptes provisionnels", "Revenu fiscal de référence", "Crédit d'impôt", "BNP Paribas statement", "Qonto expense", "Shine business", "Stripe France", or any question about filing or computing French income tax for a self-employed individual. This skill covers progressive brackets (0--45%), micro-entrepreneur abattements, BNC/BIC regimes, social charges, tax credits, filing deadlines, and withholding (prélèvement à la source). ALWAYS read this skill before touching any French income tax work.
-version: 3.4
+version: 4.0
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,15 +13,43 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # French income tax for self-employed individuals (impôt sur le revenu)
 
-France taxes the income of the previous calendar year: the scale applied in 2026 is charged on the income of 2025, declared in spring 2026. Figures are for tax year 2026. Where a limit governs income received in 2026 instead, the table row says so. Urssaf social contributions are a separate charge and are not computed here: use `fr-social-contributions`. Local business property tax is in `fr-cfe`, and the full income tax computation for a household that is not self-employed is in `fr-personal-income-tax`. Selected source conditions were checked on29October2026. The2026 assessment scale below concerns2025 income; do not present it as a final enacted2027 assessment of2026 income.
+France taxes the income of the previous calendar year: the scale applied in 2026 is charged on the income of 2025, declared in spring 2026. Figures are for tax year 2026. Where a limit governs income received in 2026 instead, the table row says so. Urssaf social contributions are a separate charge and are not computed here: use `fr-social-contributions`. Local business property tax is in `fr-cfe`, and the full income tax computation for a household that is not self-employed is in `fr-personal-income-tax`. Selected source conditions were checked on 29 October 2026. The 2026 assessment scale below concerns 2025 income; do not present it as a final enacted 2027 assessment of 2026 income.
+
+## Scope
+
+In scope: a French tax resident who works for themselves (micro-entrepreneur, auto-entrepreneur, profession libérale, BIC or BNC under the micro or real regime), alone or in a household with salary or other income, for income tax (impôt sur le revenu) only.
+
+- Income received in 2025 is declared in spring 2026 and taxed on the 2026 scale set by the loi de finances pour 2026. Income received in 2026 is declared in spring 2027; its scale is set by the next finance law and is not yet confirmed. Rows that govern 2026 income (micro thresholds, the flat-payment option) say so.
+- Out of scope here: Urssaf social contributions (`fr-social-contributions`), CFE (`fr-cfe`), a household with no self-employed income (`fr-personal-income-tax`), companies (`fr-corporate-tax`), and non-residents (`fr-cross-border`).
+
+## Ask the client first
+
+- Which regime are you in, and did you ever opt out of micro? The option changes the whole computation.
+- What was your turnover, excluding VAT, in each of the two previous years? One year over a limit does not lose the micro regime; two consecutive years does.
+- Is any part of the turnover furnished letting, and is the property a classified meublé de tourisme? The limit and the allowance both change.
+- Have you opted for the flat income tax payment with Urssaf? If yes, the instalment must be switched off.
+- Establish family situation at 1 January, the relevant year-end increase/change rules and any death-year periods;31 December alone is not the universal household reference date.
+- Are you also employed, and did you keep a household rate or an individualised rate for the withholding?
+- Reconcile the instalments and withholding for the actual income year being assessed, the programmed current instalments and the rate in the espace particulier. Do not substitute another calendar year’s bank debits.
+
+## The method, step by step
+
+1. Fix the income year and the regime, then read the matching pair of micro limits, tested against the two previous years: https://entreprendre.service-public.fr/vosdroits/F23267
+2. Classify the activity: commercial, craft and industrial work is BIC, independent work that is none of those is BNC. BIC boundaries: https://entreprendre.service-public.fr/vosdroits/F32919 . BNC rule: https://entreprendre.service-public.fr/vosdroits/F32105
+3. Compute the professional result under the actual micro or real method and the correct category/form. For covered VFL turnover, follow the separate gross-HT payment and annual RFR/effective-rate method in Section1; do not add the already-liberated result to ordinary taxable income a second time.
+4. Build the household income, divide by the shares, apply the scale, multiply back, then cap the benefit of the extra shares: https://www.service-public.fr/particuliers/vosdroits/F1419
+5. Complete the quotient-cap/special-allowance/DOM/décote and separate CEHR/CDHR methods in `fr-personal-income-tax`, with each tax’s actual reference-income and eligibility conditions, before the eligible credit/advance and withholding reconciliation.
+6. Deduct the instalments already taken and settle the balance on the autumn schedule: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026
+7. File form 2042 with 2042-C-PRO by the deadline for the client's département, and a réel filer's result return by its own earlier deadline.
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | France (République française) |
 | Tax | Impôt sur le revenu (IR) |
@@ -32,7 +60,7 @@ France taxes the income of the previous calendar year: the scale applied in 2026
 | Filing portal | impots.gouv.fr (espace particulier) |
 | Filing deadline | Set by département each year: see Section 5.6 |
 | Contributor | Open Accountants Community |
-| Guide version | 3.2 (October2026 ledger closeout; earlier version labels remain in the historical changelog) |
+| Guide version | 4.0 (14 November 2026 rewrite to the standard) |
 
 ### Progressive Rate Table (2025 Tranches) [T1]
 
@@ -41,11 +69,11 @@ Applied in 2026 to the income of 2025, on taxable income per family-quotient sha
 | Band, per share | Rate | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.fr/particuliers/vosdroits/F1419 |
-| Up to EUR 11,600 | 0% | Jusqu'à 11 600 € |
-| EUR 11,601 to EUR 29,579 | 11% | De 11 601 € à 29 579 € |
-| EUR 29,580 to EUR 84,577 | 30% | De 29 580 € à 84 577 € |
-| EUR 84,578 to EUR 181,917 | 41% | De 84 578 € à 181 917 € |
-| Above EUR 181,917 | 45% | Plus de 181 917 € |
+| Up to EUR 11,600 | 0% | Jusqu'à 11 600 € https://www.service-public.fr/particuliers/vosdroits/F1419 |
+| EUR 11,601 to EUR 29,579 | 11% | De 11 601 € à 29 579 € https://www.service-public.fr/particuliers/vosdroits/F1419 |
+| EUR 29,580 to EUR 84,577 | 30% | De 29 580 € à 84 577 € https://www.service-public.fr/particuliers/vosdroits/F1419 |
+| EUR 84,578 to EUR 181,917 | 41% | De 84 578 € à 181 917 € https://www.service-public.fr/particuliers/vosdroits/F1419 |
+| Above EUR 181,917 | 45% | Plus de 181 917 € https://www.service-public.fr/particuliers/vosdroits/F1419 |
 
 ### Micro-Entrepreneur / Auto-Entrepreneur Abattements [T1]
 
@@ -62,7 +90,7 @@ For the ordinary micro profit, the allowance replaces actual business expenses; 
 | Minimum allowance, any activity | EUR 305 | pas être inférieur à 305 € |
 | Minimum for two applicable allowance categories, each subject to its own EUR305 minimum | EUR 610 in that two-category case | This is not a flat allowance for every business with several activities; identify the statutory categories first. |
 
-Ordinary micro profit is gross eligible turnover/receipts excluding VAT minus the applicable category allowance(s), with the EUR305 minimum applied to the relevant allowance. This method does not create a deficit; do not turn small or nil receipts into a negative taxable micro profit. For mixed activity, apply the relevant rate to each category’s actual slice, not one rate to the whole bank inflow. Declare the gross in the correct2042-C-PRO micro field; the administration applies the allowance. Asset gains/losses remain separate.
+Ordinary micro profit is gross eligible turnover/receipts excluding VAT minus the applicable category allowance(s), with the EUR305 minimum applied to the relevant allowance. This method does not create a deficit; do not turn small or nil receipts into a negative taxable micro profit. For mixed activity, apply the relevant rate to each category’s actual slice, not one rate to the whole bank inflow. Declare the gross in the correct 2042-C-PRO micro field; the administration applies the allowance. Asset gains/losses remain separate.
 
 ### Micro-Entrepreneur Revenue Thresholds (2025) [T1]
 
@@ -71,24 +99,24 @@ Two pairs of limits are live at once: the lower pair governs income received in 
 | Limit | Amount | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23267 |
-| Goods, income of 2025 | EUR 188,700 | pas avoir dépassé 188 700 € |
-| Services and liberal activity, income of 2025 | EUR 77,700 | pas avoir dépassé 77 700 € |
-| Goods, income received in 2026 | EUR 203,100 | n’a pas dépassé 203 100 € |
-| Services and liberal activity, income received in 2026 | EUR 83,600 | n’a pas dépassé 83 600 € |
-| Classified furnished tourist lets and chambres d'hôtes, income of 2025 | EUR 77,700 | de location de meublés de tourisme classés ne doit pas avoir dépassé 77 700 € |
-| Classified furnished tourist lets and chambres d'hôtes, income received in 2026 | EUR 83,600 | Meublé de tourisme classé et chambre d'hôtes (BIC) … n’a pas dépassé 83 600 € |
-| Unclassified furnished tourist lets | EUR 15,000 | n’a pas dépassé 15 000 € |
-| Household RFR2024 for the2026 flat-payment option,1part | EUR 29,315 | Actual DGFiP2026 selector; general condition is not exceeding the ceiling. |
-| Household RFR2024 for the2026 option, jointly taxed couple2parts | EUR 58,630 | Apply the actual N-2 share count. |
-| Household RFR2024 for the2026 option,2.5parts | DGFiP’s published example requires RFR below EUR73,288 | Preserve this published strict example; do not silently replace it with an unqualified rounded or unrounded inequality. |
-| Household RFR2024 for the2026 option,3parts | EUR 87,945 | For the2027 option, RFR2025 ceilings are29,579/59,158/88,737 for1/2/3parts; the published2.5part test is below73,948, versus an exact product73,947.50. |
-| Flat income tax payment, trade, catering and lodging, other than furnished lets | 1% | 1 % pour les activités de commerce, restauration et logement (sauf location de meublés) |
-| Flat income tax payment, other BIC activities, including commercial services and classified furnished lets | 1.7% | 1,7 % pour les autres activités relevant des BIC (notamment prestations de services commerciales, location de meublés classés...) |
-| Flat income tax payment, BNC activities | 2.2% | ce taux est de 2,2 % |
+| Goods, income of 2025 | EUR 188,700 | pas avoir dépassé 188 700 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Services and liberal activity, income of 2025 | EUR 77,700 | pas avoir dépassé 77 700 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Goods, income received in 2026 | EUR 203,100 | n’a pas dépassé 203 100 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Services and liberal activity, income received in 2026 | EUR 83,600 | n’a pas dépassé 83 600 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Classified furnished tourist lets and chambres d'hôtes, income of 2025 | EUR 77,700 | de location de meublés de tourisme classés ne doit pas avoir dépassé 77 700 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Classified furnished tourist lets and chambres d'hôtes, income received in 2026 | EUR 83,600 | Meublé de tourisme classé et chambre d'hôtes (BIC) … n’a pas dépassé 83 600 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Unclassified furnished tourist lets | EUR 15,000 | n’a pas dépassé 15 000 € https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Household RFR2024 for the2026 flat-payment option,1part | EUR 29,315 | Actual DGFiP2026 selector; general condition is not exceeding the ceiling. https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Household RFR2024 for the2026 option, jointly taxed couple2parts | EUR 58,630 | Apply the actual N-2 share count. https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Household RFR2024 for the2026 option,2.5parts | DGFiP’s published example requires RFR below EUR73,288 | Preserve this published strict example; do not silently replace it with an unqualified rounded or unrounded inequality. https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Household RFR2024 for the2026 option,3parts | EUR 87,945 | The 2027 option ceilings (RFR 2025) are on the Not yet confirmed line: this page gives the 2026 option only. https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Flat income tax payment, trade, catering and lodging, other than furnished lets | 1% | 1 % pour les activités de commerce, restauration et logement (sauf location de meublés) https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Flat income tax payment, other BIC activities, including commercial services and classified furnished lets | 1.7% | 1,7 % pour les autres activités relevant des BIC (notamment prestations de services commerciales, location de meublés classés...) https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Flat income tax payment, BNC activities | 2.2% | ce taux est de 2,2 % https://entreprendre.service-public.fr/vosdroits/F23267 |
 
 **Crossing a limit once does not end the regime.** Income from 1 January of year N leaves the micro regime only if a limit was exceeded in **both** previous years, N-1 and N-2: "dépassé pendant 2 années consécutives, en N-1 et en N-2". Before that two-year comparison, adjust each short reference year’s turnover proportionally to its actual time of operation/activity as required by CGI arts. 50-0 and 102 ter. Compare the adjusted reference amounts, not automatically the raw cash totals. For a services case, independently established adjusted N-2 turnover EUR 120,000 (actual short-year receipts EUR 60,000) and full-year N-1 turnover EUR 100,000 both exceed EUR 83,600, so the 2026 micro gate fails; using unadjusted EUR 60,000 would give the wrong result. The EUR 120,000 here is a stipulated valid adjusted input, not a universal 365-day computation rule. This reference-year gate is distinct from the micro allowance/minimum and from VAT startup turnover rules.
 
-The flat payment (versement forfaitaire libératoire) is an option, not the default. Apply the correct option-year/N-2 RFR and share tests above, the eligible micro and micro-social conditions, and the applicable1%/1.7%/2.2% rate to gross qualifying turnover excluding VAT. Tell Urssaf within the actual option/withdrawal timetable. The Service Public page says “before30September”, while the retained DGFiP method expressly permits option or withdrawal by30September for effect the following1January and by the last day of the third month following creation. Use that precise DGFiP deadline, not its dated2024 numerical threshold examples. Declare the turnover annually in the VFL fields even though IR has been paid through Urssaf: the net amount after the statutory allowance still affects RFR, the effective rate on other household income and the pension-saving ceiling. Do not tax that same micro turnover a second time through the ordinary scale.
+The flat payment (versement forfaitaire libératoire) is an option, not the default. Apply the correct option-year/N-2 RFR and share tests above, the eligible micro and micro-social conditions, and the applicable1%/1.7%/2.2% rate to gross qualifying turnover excluding VAT. Tell Urssaf within the actual option/withdrawal timetable. The Service Public page says “before 30 September”, while the retained DGFiP method expressly permits option or withdrawal by 30 September for effect the following1January and by the last day of the third month following creation. Use that precise DGFiP deadline, not its dated 2024 numerical threshold examples. Declare the turnover annually in the VFL fields even though IR has been paid through Urssaf: the net amount after the statutory allowance still affects RFR, the effective rate on other household income and the pension-saving ceiling. Do not tax that same micro turnover a second time through the ordinary scale.
 
 ### Conservative Defaults [T1]
 
@@ -175,87 +203,6 @@ For BNC, start from expenses necessitated by the profession, with actual evidenc
 | CARPIMKO / CARMF / CARCDSF | Social contributions | Mandatory pension for specific professions |
 | PRÉLÈVEMENT À LA SOURCE | Income tax prepayment | Instalment credited against the annual tax |
 
-## Section 4: Worked Examples
-
-The six historical fictional bank-line amounts, dates and balances below are retained from the actual pre-refresh Guide. They are declared example inputs, not official figures or actual client records. The existing explanations are preserved; the added computations distinguish cash reconciliation, annual taxable categories, outdated results and unproved facts.
-
-### Example 1: Freelance Professional Fee (BNC Micro)
-
-`15/03/2025 | VIR SEPA ABC CONSULTING SARL | +3,500.00 | Solde 12,840.50`
-
-Historical fictional amount restored: assume this EUR 3,500 is the entire annual eligible gross micro-BNC receipt, no VAT or fees in this receipt, no other category turnover and no VFL. The 34% allowance is EUR 1,190, above its EUR 305 minimum; taxable micro profit is EUR 2,310. If this were only one receipt among others, compute the allowance/minimum on the annual category total instead of applying an annual minimum separately per bank line. The former approximate EUR 770 social figure is historical and is not a current rate calculation; actual dated social liability is separate.
-
-A supported client settlement for consulting work, taxpayer under micro-BNC. Use gross eligible receipts excluding VAT before fees/Urssaf, then the34% allowance with its minimum and no-deficit rule. Urssaf remains separate and is not deducted again. Declare the gross in the appropriate2042-C-PRO field; a valid VFL option follows its separate method.
-
-### Example 2: Stripe Payout
-
-`22/05/2025 | STRIPE PAYMENTS EUROPE | +4,650.00 | Solde 8,220.00`
-
-Historical fictional reconciliation restored: independently verified eligible client receipts EUR 4,800 less actual platform fees EUR 150 equal the EUR 4,650 bank payout. Assume no separate VAT/refund adjustment on these inputs. The micro turnover input is EUR 4,800, with no additional EUR 150 fee deduction. A real filer still tests that actual fee’s professional purpose and timing; this receipt does not by itself establish the full annual taxable result.
-
-The payout is net of platform fees. Reconcile it to the settlement report, actual client receipts, VAT and refunds; the bank net alone is not turnover. A micro filer declares the gross eligible amount excluding VAT before fees, with no second fee deduction. A real filer applies its actual expense/evidence and timing rules rather than automatically deducting every platform debit.
-
-### Example 3: Loyer Bureau Payment
-
-`01/04/2025 | PRÉLÈVEMENT VIREMENT LOYER BUREAU SARL IMMOPRO | -1,200.00 | Solde 5,640.00`
-
-Historical fictional EUR 1,200 monthly rent is retained. If the full EUR 1,200 is actually paid eligible rent for dedicated professional BNC premises under the applicable recognition method, the potential professional deduction is EUR 1,200. If mixed/private use or another statutory restriction applies, recompute; for a micro filer the separate rent deduction is zero.
-
-Rent on dedicated professional premises is tested as a professional expense under the actual real regime, evidence and recognition period; the payment label alone is not the test. A micro filer cannot deduct the rent again on top of the allowance.
-
-### Example 4: Urssaf Auto-Entrepreneur Contribution
-
-`15/06/2025 | PRÉLÈVEMENT URSSAF AUTO ENT | -528.00 | Solde 4,210.00`
-
-The historical fictional EUR 528 debit remains a cash/social-account reconciliation input. For a micro filer, the additional business-expense deduction from that debit is zero; EUR 528 is not proof of a current contribution rate or of the turnover period that produced it.
-
-A social contribution debit charged on declared turnover. Not deductible from BIC or BNC income for a micro filer: it reduces cash, not taxable income. Exclude it, and reconcile against the Urssaf account.
-
-### Example 5: Salary Credit (Mixed Income)
-
-`28/02/2025 | VIREMENT SALAIRE SOCIÉTÉ XYZ | +2,800.00 | Solde 6,150.00`
-
-The historical fictional EUR 2,800 bank credit and EUR 6,150 balance are retained as cash inputs. They do not establish gross salary or annual net taxable salary. No annual salary deduction or 1AJ/1BJ amount is computed without the actual payroll/annual taxable statement; the old EUR 504/EUR 14,171 salary limits are superseded by the year-specific table above.
-
-Salary is traitements et salaires, separate from BIC/BNC. Reconcile the bank net to the annual net taxable salary before the professional-expense deduction, ordinarily reported in1AJ/1BJ. Apply the10% deduction or the actual-expense election to that taxable base, not gross contractual pay or the cash received after withholding.
-
-### Example 6: Prélèvement à la Source (Monthly Tax Withholding)
-
-`27/01/2025 | PRÉLÈVEMENT FISCAL DGFIP PAS | -420.00 | Solde 7,890.00`
-
-The historical fictional EUR 420 debit is retained. Only if twelve independently reconciled EUR 420 instalments belong to the same assessed income year is the credit total 420 × 12 = EUR 5,040. One January bank debit does not prove that annual total, and none of it is a professional-expense deduction.
-
-The business-income acompte is collected directly by the tax administration; any separate employment still has payer withholding. Use the actual programmed instalments and reconciled annual tax records, including any VFL change. These debits are prepayments, not business expenses; offset the correct income-year amounts against the final bill.
-
-```oa-check
-name: France restored annual microBNC3500 receipt
-inputs:
-  annual_receipts: 3500
-  allowance_rate: 0.34
-  minimum_allowance: 305
-steps:
-  allowance: min(annual_receipts,max(annual_receipts*allowance_rate,minimum_allowance))
-  taxable_micro: max(annual_receipts-allowance,0)
-expected:
-  allowance: 1190
-  taxable_micro: 2310
-```
-
-```oa-check
-name: France restored Stripe reconciliation and evidenced annual PAS
-inputs:
-  verified_gross_receipts: 4800
-  actual_platform_fee: 150
-  reconciled_monthly_PAS: 420
-  verified_same_year_count: 12
-steps:
-  net_bank_payout: verified_gross_receipts-actual_platform_fee
-  annual_tax_prepayments: reconciled_monthly_PAS*verified_same_year_count
-expected:
-  net_bank_payout: 4650
-  annual_tax_prepayments: 5040
-```
-
 ## Section 5: Tier 1 Rules (When Data Is Clear)
 
 ### 5.1 Micro-Entrepreneur / Micro-BNC / Micro-BIC Regime
@@ -266,9 +213,9 @@ expected:
 - **Mixed activity**: Apply each relevant statutory allowance category to its own slice and its own minimum; the two-category minimum illustration is not a universal flat deduction for every multi-activity business. Test global and activity-specific turnover gates as well.
 - **Nil turnover**: For the annual IR declaration, F23267 requires “néant” in the turnover box. Separately, the monthly/quarterly Urssaf turnover declaration remains compulsory even where the period’s turnover is zero; Urssaf instructs the taxpayer to validate it with EUR 0 in the turnover field, not to omit the declaration. These are different returns and periods. Source: https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html
 
-### 5.2 BNC Déclaration Contrôlée (Déclaration2035)
+### 5.2 BNC Déclaration Contrôlée (Déclaration 2035)
 
-A liberal professional falls under déclaration contrôlée if both prior years exceed the applicable micro limit or an effective election applies; one overrun alone is insufficient. Submit the actual2035/2035-A/2035-B route and carry the result to2042-C-PRO, using the stated electronic deadline. Expense deduction requires the actual professional purpose, evidence, timing and specific statutory treatment, including capitalisation/depreciation. CGI154bis separately governs compulsory and qualifying optional contributions; a “Madelin” bank label is not automatic deductibility.
+A liberal professional falls under déclaration contrôlée if both prior years exceed the applicable micro limit or an effective election applies; one overrun alone is insufficient. Submit the actual 2035/2035-A/2035-B route and carry the result to 2042-C-PRO, using the stated electronic deadline. Expense deduction requires the actual professional purpose, evidence, timing and specific statutory treatment, including capitalisation/depreciation. CGI154bis separately governs compulsory and qualifying optional contributions; a “Madelin” bank label is not automatic deductibility.
 
 **Cash or acquired-receivables election (CGI art. 93 A).** For an ordinary continuing déclaration-contrôlée BNC activity, default cash receipts/paid eligible expenses remain distinct from an evidenced art. 93 A option for acquired receivables/incurred eligible expenses. Exercise the option before 1 February of the year for which income tax is established; it continues until denounced within the same timetable. A business starting during the year can elect for its first activity year by the art. 97 results-return deadline. This is not the separate micro-to-déclaration-contrôlée election in Section 6.1. On stipulated continuing-year facts with no transition adjustments, cash receipts EUR 10,000 less paid eligible expenses EUR 1,000 give EUR 9,000; acquired receivables EUR 15,000 less incurred eligible expenses EUR 1,500 give EUR 13,500 only with a valid art. 93 A election. On exit from art. 102 ter into this elected method, art. 93 A separately adds the receivables held on 31 December of the preceding year, excluding VAT and less 34%: EUR 3,000 gives EUR 1,980 to add before the complete transition reconciliation. Obtain the actual election/denunciation, start date and opening balances; these continuing examples do not compute every change-of-method adjustment or an unsupported weekend extension. Source: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048847605/2026-03-15
 
@@ -298,9 +245,9 @@ A BIC réel filer files form 2031 with annexes 2033-A to 2033-G (simplified) or 
 | Standard deduction on salaries | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
-| Rate, unless actual expenses are elected | 10% | Déduction forfaitaire de 10 % |
-| Minimum per person, income of 2025 | EUR 509 | Limited to the relevant declared remuneration if that is smaller |
-| Ceiling per person, income of 2025 | EUR 14,555 | Plafond |
+| Rate, unless actual expenses are elected | 10% | Déduction forfaitaire de 10 % https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 |
+| Minimum per person, income of 2025 | EUR 509 | Limited to the relevant declared remuneration if that is smaller https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
+| Ceiling per person, income of 2025 | EUR 14,555 | Plafond https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
 
 For the ordinary 2025 salary flat deduction, use `min(S, min(max(10% × S, 509), 14555))`, where S is the relevant declared remuneration before professional expenses. Salary EUR 200 therefore gives deduction EUR 200 and salary net EUR 0, not a negative EUR 309 to offset another category. Each household member’s actual-expense election is separate and cannot be combined with the flat deduction. This formula does not turn a bank credit into the taxable salary base. Source: https://www.impots.gouv.fr/particulier/questions/comment-puis-je-beneficier-de-la-deduction-forfaitaire-de-10
 
@@ -309,10 +256,10 @@ The contribution exceptionnelle sur les hauts revenus sits on top of the scale, 
 | Slice of reference income | Rate | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 |
-| Above EUR 250,000, single, widowed, separated, divorced | 3% | fraction de revenu fiscal de référence supérieure à 250 000 € |
-| Above EUR 500,000, single, widowed, separated, divorced | 4% | supérieure à 500 000 € pour les contribuables célibataires |
-| Above EUR 500,000, couple taxed jointly | 3% | 3 % à la fraction de revenu fiscal de référence |
-| Above EUR 1,000,000, couple taxed jointly | 4% | supérieure à 1 000 000 € pour les contribuables soumis à imposition commune |
+| Above EUR 250,000, single, widowed, separated, divorced | 3% | fraction de revenu fiscal de référence supérieure à 250 000 € https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 |
+| Above EUR 500,000, single, widowed, separated, divorced | 4% | supérieure à 500 000 € pour les contribuables célibataires https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 |
+| Above EUR 500,000, couple taxed jointly | 3% | 3 % à la fraction de revenu fiscal de référence https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 |
+| Above EUR 1,000,000, couple taxed jointly | 4% | supérieure à 1 000 000 € pour les contribuables soumis à imposition commune https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 |
 
 A second surcharge, the contribution différentielle sur les hauts revenus, can apply from the same reference-income levels where the household's average rate is low. Its formula is in `fr-personal-income-tax`.
 
@@ -325,16 +272,16 @@ Where no personalised rate exists, a default grid applies to the monthly base. T
 | Monthly base, metropolitan grid from 1 May 2026 | Rate | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
-| Below EUR 1,635 | 0% | Inférieure à 1 635 euros 0 % |
-| EUR 1,635 inclusive to BELOW EUR 1,698 | 0.5% | The upper endpoint is exclusive: inférieure à 1 698 euros 0,5 % |
-| EUR 55,558 and above | 43% | égale à 55 558 euros 43 % |
+| Below EUR 1,635 | 0% | Inférieure à 1 635 euros 0 % https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
+| EUR 1,635 inclusive to BELOW EUR 1,698 | 0.5% | The upper endpoint is exclusive: inférieure à 1 698 euros 0,5 % https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
+| EUR 55,558 and above | 43% | égale à 55 558 euros 43 % https://bofip.impots.gouv.fr/bofip/11255-PGP.html |
 
 A micro-entrepreneur who opted for the flat payment pays the tax with the Urssaf turnover declaration instead, and must switch off any instalment already programmed in the espace particulier.
 
 | Balance after the spring return | Collection | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 |
-| Up to and including EUR300 | One debit in September2026 under the ordinary schedule | The exact300 boundary belongs here. |
+| Up to and including EUR300 | One debit in September 2026 under the ordinary schedule | The exact300 boundary belongs here. |
 | Strictly above EUR300 | Four ordinary monthly debits, September–December | Check the actual notice and any different recovery procedure. |
 
 ### 5.5 Cotisation Foncière des Entreprises (CFE)
@@ -350,7 +297,7 @@ Local business property tax, due by the self-employed including micro-entreprene
 | Online, départements 20 to 54 | Thursday 28 May 2026, 23h59 | jeudi 28 mai au plus tard |
 | Online, départements 55 to 974 and 976 | Thursday 4 June 2026, 23h59 | jeudi 4 juin au plus tard |
 | Paper return, including residents abroad | Tuesday 19 May 2026, midnight | mardi 19 mai 2026 à minuit |
-| Correcting an eligible2026 online return | 29July–30November2026 inclusive | Specific current correction calendar; the annual overview’s generic mid-August/mid-December wording is retained as contrary history, not the operative deadline. |
+| Correcting an eligible 2026 online return | 29 July–30 November 2026 inclusive | Specific current correction calendar; the annual overview’s generic mid-August/mid-December wording is retained as contrary history, not the operative deadline. |
 | Result return of a réel filer (2031, 2035) | 15 days after the second working day following 1 May | au plus tard 15 jours après le 2 e jour ouvré suivant le 1 er mai (F32105, F32919) |
 | Urssaf turnover declaration (micro) | Monthly or quarterly, as opted | déposée auprès de l’Urssaf chaque mois ou trimestre (selon la périodicité choisie) (F23267) |
 | Source | acompte and instalment-option dates below | https://entreprendre.service-public.fr/vosdroits/F32105 |
@@ -365,16 +312,16 @@ Online filing is the ordinary rule where the home has internet access and the ta
 | Offence | Surcharge | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
-| Late filing under CGI1728 | 10% in the ordinary initial branch | The40% notice/30-day branch and80% occult-activity branch have their own triggers; a deadline miss does not establish deliberate fraud. |
+| Late filing under CGI1728 | 10% in the ordinary initial branch | The40% notice/30-day branch and 80% occult-activity branch have their own triggers; a deadline miss does not establish deliberate fraud. |
 | Deliberate breach (manquement délibéré) | 40% | la majoration de 40 % pour manquement délibéré |
-| Abuse of law/fraudulent manoeuvres/specified concealment under CGI1729 | 80% under the actual branch | Abuse falls to40% if the administration does not establish principal initiative or principal benefit; apply the provision’s exact conditions. |
+| Abuse of law/fraudulent manoeuvres/specified concealment under CGI1729 | 80% under the actual branch | Abuse falls to 40% if the administration does not establish principal initiative or principal benefit; apply the provision’s exact conditions. |
 
 | Charge | Rate | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/1458-PGP.html |
-| Late payment interest, per month of delay | 0.2% | intérêt de retard de 0,2 % par mois |
+| Late payment interest, per month of delay | 0.2% | intérêt de retard de 0,2 % par mois https://bofip.impots.gouv.fr/bofip/1458-PGP.html |
 
-CGI1727 interest and statutory surcharges are separate tests. The0.20% monthly rule has its own accrual dates, tolerance and relief provisions, including the specified good-faith spontaneous-correction reduction. Do not add it automatically to every delayed payment; CGI1730 and1729G have distinct conditions and nonduplication rules in `fr-personal-income-tax`.
+CGI1727 interest and statutory surcharges are separate tests. The0.20% monthly rule has its own accrual dates, tolerance and relief provisions, including the specified good-faith spontaneous-correction reduction. Do not add it automatically to every delayed payment; CGI1730 and 1729G have distinct conditions and nonduplication rules in `fr-personal-income-tax`.
 
 ## Section 6: Tier 2 Catalogue (Reviewer Judgement Required)
 
@@ -389,11 +336,11 @@ A single person has 1 share, a couple taxed jointly 2 shares, with extra shares 
 | Cap on the tax saving, income of 2025 | Amount | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
-| Each extra half-share for a dependent child | EUR 1,807 | fixé à 1 807 € par demi-part supplémentaire |
-| Each extra quarter-share for a child in equally shared custody | EUR 903.50 (EUR 1,807 / 2) | DGFiP aide-mémoire: par quart de part lié à un enfant en résidence alternée; two such quarters making an extra half-share have EUR 1,807 total, before any separately qualifying single-parent override. |
-| The whole extra share for the first child of a parent living alone | EUR 4,262 | Son montant est fixé à 4 262 € |
-| Each half-share for the first two children in equally shared custody, taxpayer living alone | EUR 2,131 | soit 2 131 € (4 262 € / 2) |
-| The extra half-share of a person living alone with no dependants who raised a child alone for at least five years | EUR 1,079 | est fixé à 1 079 € |
+| Each extra half-share for a dependent child | EUR 1,807 | fixé à 1 807 € par demi-part supplémentaire https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
+| Each extra quarter-share for a child in equally shared custody | EUR 903.50 (EUR 1,807 / 2) | DGFiP aide-mémoire: par quart de part lié à un enfant en résidence alternée; two such quarters making an extra half-share have EUR 1,807 total, before any separately qualifying single-parent override. https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
+| The whole extra share for the first child of a parent living alone | EUR 4,262 | Son montant est fixé à 4 262 € https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
+| Each half-share for the first two children in equally shared custody, taxpayer living alone | EUR 2,131 | soit 2 131 € (4 262 € / 2) https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
+| The extra half-share of a person living alone with no dependants who raised a child alone for at least five years | EUR 1,079 | est fixé à 1 079 € https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
 
 The number of shares itself is on https://www.service-public.fr/particuliers/vosdroits/F2705
 
@@ -402,11 +349,11 @@ A small bill is then reduced by the décote. It works on the tax, not on the inc
 | Décote, income of 2025 | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
-| Gross tax must be below this, single, divorced, widowed | EUR 1,982 | inférieure à 1 982 € pour les contribuables célibataires |
-| Gross tax must be below this, couple taxed jointly | EUR 3,277 | et à 3 277 € pour les contribuables soumis à imposition commune |
-| Fixed amount in the formula, single, divorced, widowed | EUR 897 | 897 € pour les contribuables célibataires |
-| Fixed amount in the formula, couple taxed jointly | EUR 1,483 | 1 483 € pour les contribuables soumis à imposition commune |
-| Share of the gross tax subtracted from that fixed amount | 45.25% | 45,25 % pour l’imposition des revenus de 2025 |
+| Gross tax must be below this, single, divorced, widowed | EUR 1,982 | inférieure à 1 982 € pour les contribuables célibataires https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
+| Gross tax must be below this, couple taxed jointly | EUR 3,277 | et à 3 277 € pour les contribuables soumis à imposition commune https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
+| Fixed amount in the formula, single, divorced, widowed | EUR 897 | 897 € pour les contribuables célibataires https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
+| Fixed amount in the formula, couple taxed jointly | EUR 1,483 | 1 483 € pour les contribuables soumis à imposition commune https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
+| Share of the gross tax subtracted from that fixed amount | 45.25% | 45,25 % pour l’imposition des revenus de 2025 https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
 
 ### 6.3 Crédits d'Impôt (Tax Credits)
 
@@ -415,32 +362,32 @@ Credits are subtracted from the tax, never from the income.
 | Employing help at home | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.fr/particuliers/vosdroits/F12 |
-| Rate of the credit | 50% | s'élève à 50 % des dépenses supportées |
-| Annual ceiling on the expenses, general case | EUR 12,000 | dans la limite de 12 000 € par an |
-| Maximum credit, general case | EUR 6,000 | un avantage maximal de 6 000 € |
-| General-case uplift per qualifying dependent child, household member over65 or ascendant over65 | EUR1,500 | Apply actual claimant/ascendant conditions; do not read this as an uplift for every ascendant of any age. |
-| Ceiling once the uplifts are counted, general case | EUR 15,000 | sans pouvoir dépasser au total 15 000 € |
-| Uplift per dependent child in equally shared custody | EUR 750 | 750 € en cas de garde alternée |
-| Small handyman work of at most two hours, inside the ceiling above | EUR 500 | Intervention pour petit bricolage d'une durée maximale de 2 heures 500 € |
-| Computer and internet help at home, inside the ceiling above | EUR 3,000 | Assistance informatique et internet à domicile 3 000 € |
-| Small gardening work, inside the ceiling above | EUR 5,000 | Petits travaux de jardinage 5 000 € |
-| Ceiling on the expenses, first year of directly employing someone at home | EUR 15,000 | Pour la 1 re année où vous employez directement un salarié à domicile, les dépenses sont retenues dans la limite de 15 000 € |
-| Maximum credit, first year of directly employing someone at home | EUR7,500 before eligible uplifts | The first-direct-employment expense ceiling can reach18,000 after eligible uplifts, corresponding to9,000 at50%; do not apply this first-year branch to every intermediary contract. |
-| Expense ceiling for the specifically qualifying invalidity cases | EUR20,000 | Actual daily-living-assistance, dependent person living at home, or qualifying child/AEEH-complement conditions; not every disability label. No further uplift in this branch. |
-| Maximum credit, taxpayer or dependant invalid | EUR 10,000 | soit un avantage maximal de 10 000 € |
+| Rate of the credit | 50% | s'élève à 50 % des dépenses supportées https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Annual ceiling on the expenses, general case | EUR 12,000 | dans la limite de 12 000 € par an https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Maximum credit, general case | EUR 6,000 | un avantage maximal de 6 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| General-case uplift per qualifying dependent child, household member over65 or ascendant over65 | EUR1,500 | Apply actual claimant/ascendant conditions; do not read this as an uplift for every ascendant of any age. https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Ceiling once the uplifts are counted, general case | EUR 15,000 | sans pouvoir dépasser au total 15 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Uplift per dependent child in equally shared custody | EUR 750 | 750 € en cas de garde alternée https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Small handyman work of at most two hours, inside the ceiling above | EUR 500 | Intervention pour petit bricolage d'une durée maximale de 2 heures 500 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Computer and internet help at home, inside the ceiling above | EUR 3,000 | Assistance informatique et internet à domicile 3 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Small gardening work, inside the ceiling above | EUR 5,000 | Petits travaux de jardinage 5 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Ceiling on the expenses, first year of directly employing someone at home | EUR 15,000 | Pour la 1 re année où vous employez directement un salarié à domicile, les dépenses sont retenues dans la limite de 15 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Maximum credit, first year of directly employing someone at home | EUR7,500 before eligible uplifts | The first-direct-employment expense ceiling can reach18,000 after eligible uplifts, corresponding to9,000 at50%; do not apply this first-year branch to every intermediary contract. https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Expense ceiling for the specifically qualifying invalidity cases | EUR20,000 | Actual daily-living-assistance, dependent person living at home, or qualifying child/AEEH-complement conditions; not every disability label. No further uplift in this branch. https://www.service-public.fr/particuliers/vosdroits/F12 |
+| Maximum credit, taxpayer or dependant invalid | EUR 10,000 | soit un avantage maximal de 10 000 € https://www.service-public.fr/particuliers/vosdroits/F12 |
 
 Aid received towards the cost, such as the personalised autonomy allowance, the childcare supplement or help from an employer, comes off the expenses before the credit is worked out.
 
 | Childcare outside the home, child under 6 on 1 January of the tax year | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.fr/particuliers/vosdroits/F8 |
-| Rate of the credit | 50% | égal à 50 % des sommes versées |
-| Costs that may be declared, per child | EUR 3,500 | Frais de garde à déclarer 3 500 € maximum |
-| Costs that may be declared, per child in equally shared custody | EUR 1,750 | Frais de garde à déclarer … 1 750 € maximum |
-| Maximum credit, per child | EUR 1,750 | Crédit d'impôt 1 750 € maximum |
-| Maximum credit, per child in shared custody | EUR 875 | 875 € maximum |
+| Rate of the credit | 50% | égal à 50 % des sommes versées https://www.service-public.fr/particuliers/vosdroits/F8 |
+| Costs that may be declared, per child | EUR 3,500 | Frais de garde à déclarer 3 500 € maximum https://www.service-public.fr/particuliers/vosdroits/F8 |
+| Costs that may be declared, per child in equally shared custody | EUR 1,750 | Frais de garde à déclarer … 1 750 € maximum https://www.service-public.fr/particuliers/vosdroits/F8 |
+| Maximum credit, per child | EUR 1,750 | Crédit d'impôt 1 750 € maximum https://www.service-public.fr/particuliers/vosdroits/F8 |
+| Maximum credit, per child in shared custody | EUR 875 | 875 € maximum https://www.service-public.fr/particuliers/vosdroits/F8 |
 
-Only eligible actual childcare costs for the qualifying dependent child and approved care setting enter this credit; food costs are excluded. Deduct the specified CAF/employer aid first. The under-six test is at1January of the relevant income year.
+Only eligible actual childcare costs for the qualifying dependent child and approved care setting enter this credit; food costs are excluded. Deduct the specified CAF/employer aid first. The under-six test is at 1 January of the relevant income year.
 
 **The credit for training a company director has ended**, for training taken after 31 December 2024, with no extension in force: https://entreprendre.service-public.fr/vosdroits/F23460
 
@@ -448,7 +395,7 @@ Only eligible actual childcare costs for the qualifying dependent child and appr
 
 CGI154bis covers qualifying BIC as well as BNC real profits. Micro expenses remain covered by the flat allowance, so this is not an additional micro deduction. Establish the actual compulsory contribution or qualifying insurance/PER component, taxpayer/contract conditions and insurer evidence first. Professional-liability insurance is separate from health/provident/pension coverage.
 
-For the capped optional branches, let P be the applicable annual social-security ceiling and B the statutory professional profit before these same capped contributions/premiums. Include the exempt profits specified by154bis-II, exclude long-term professional gains/losses, and do not reduce B by carried-forward category deficits. For BNC the retained doctrine uses P at1January of the tax year; the cessation/short-period adjustment has its own rule. Establish those actual inputs before using a ceiling.
+For the capped optional branches, let P be the applicable annual social-security ceiling and B the statutory professional profit before these same capped contributions/premiums. Include the exempt profits specified by 154bis-II, exclude long-term professional gains/losses, and do not reduce B by carried-forward category deficits. For BNC the retained doctrine uses P at 1 January of the tax year; the cessation/short-period adjustment has its own rule. Establish those actual inputs before using a ceiling.
 
 | Eligible risk branch | Ceiling under CGI154bis-II | Conditions |
 | --- | --- | --- |
@@ -462,9 +409,9 @@ These expressions describe the ordinary nonnegative-profit ceiling branches, not
 
 For real BNC mixed rented premises, divide total eligible rent, including an applicable professional-use surcharge, between actual professional and private use. BOI4659§70 permits the practical ratio of professional floor area to total area, with the taxpayer retaining the calculation/evidence. Do not allocate the entire rent surcharge automatically to business. Utilities and other mixed costs need their actual professional-use basis; this rent rule is not a universal percentage for every bill. Owned business premises, private-property “rent to oneself”, repairs and depreciation have distinct conditions: neither notional rental value nor a mortgage principal payment is an automatic current deduction.
 
-For the proprietor’s own additional meals in2026, establish that professional work and the actual, not abnormally chosen, distance prevent eating at home; retain proof of the effective expense. The private home-meal value is EUR5.50 TTC and the ordinary excessive-cost boundary is EUR21.40 TTC, so the ordinary additional-cost maximum is EUR15.90. Start from the actual expense and exclude the private component; an amount above21.40 requires the stated exceptional-necessity/nearby-catering justification for a greater deduction. Without proof, no flat deduction is allowed. These2026 values are not asserted as the2025 income-year values. Business/client hospitality follows its own direct-professional-connection and normal-amount rule, rather than automatically applying the proprietor’s personal-meal formula.
+For the proprietor’s own additional meals in 2026, establish that professional work and the actual, not abnormally chosen, distance prevent eating at home; retain proof of the effective expense. The private home-meal value is EUR5.50 TTC and the ordinary excessive-cost boundary is EUR21.40 TTC, so the ordinary additional-cost maximum is EUR15.90. Start from the actual expense and exclude the private component; an amount above21.40 requires the stated exceptional-necessity/nearby-catering justification for a greater deduction. Without proof, no flat deduction is allowed. These 2026 values are not asserted as the 2025 income-year values. Business/client hospitality follows its own direct-professional-connection and normal-amount rule, rather than automatically applying the proprietor’s personal-meal formula.
 
-Professional borrowing must also be split: the borrowed capital repayment is not itself a BNC expense; the qualifying professional interest follows its own rule. Professional order/union subscriptions and current professional study/training have direct provisions in BOI4628. Do not infer that every new qualification or retraining programme qualifies: the same source records the2026 removal of the specified sportsperson insertion/conversion deduction.
+Professional borrowing must also be split: the borrowed capital repayment is not itself a BNC expense; the qualifying professional interest follows its own rule. Professional order/union subscriptions and current professional study/training have direct provisions in BOI4628. Do not infer that every new qualification or retraining programme qualifies: the same source records the 2026 removal of the specified sportsperson insertion/conversion deduction.
 
 ## Section 7: Excel Working Paper Template
 
@@ -654,25 +601,88 @@ Declaration forms for each millésime, including 2042, 2042-C, 2042-C-PRO and 20
 - NEVER advise on non-resident French income: escalate
 - NEVER present a computation as definitive: label it estimated and send the client to an Expert-Comptable
 
-## The method, step by step
+## Worked cases
 
-1. Fix the income year and the regime, then read the matching pair of micro limits, tested against the two previous years: https://entreprendre.service-public.fr/vosdroits/F23267
-2. Classify the activity: commercial, craft and industrial work is BIC, independent work that is none of those is BNC. BIC boundaries: https://entreprendre.service-public.fr/vosdroits/F32919 . BNC rule: https://entreprendre.service-public.fr/vosdroits/F32105
-3. Compute the professional result under the actual micro or real method and the correct category/form. For covered VFL turnover, follow the separate gross-HT payment and annual RFR/effective-rate method in Section1; do not add the already-liberated result to ordinary taxable income a second time.
-4. Build the household income, divide by the shares, apply the scale, multiply back, then cap the benefit of the extra shares: https://www.service-public.fr/particuliers/vosdroits/F1419
-5. Complete the quotient-cap/special-allowance/DOM/décote and separate CEHR/CDHR methods in `fr-personal-income-tax`, with each tax’s actual reference-income and eligibility conditions, before the eligible credit/advance and withholding reconciliation.
-6. Deduct the instalments already taken and settle the balance on the autumn schedule: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026
-7. File form 2042 with 2042-C-PRO by the deadline for the client's département, and a réel filer's result return by its own earlier deadline.
+### Section 4: Worked Examples
 
-## Ask the client first
+The six historical fictional bank-line amounts, dates and balances below are retained from the actual pre-refresh Guide. They are declared example inputs, not official figures or actual client records. The existing explanations are preserved; the added computations distinguish cash reconciliation, annual taxable categories, outdated results and unproved facts.
 
-- Which regime are you in, and did you ever opt out of micro? The option changes the whole computation.
-- What was your turnover, excluding VAT, in each of the two previous years? One year over a limit does not lose the micro regime; two consecutive years does.
-- Is any part of the turnover furnished letting, and is the property a classified meublé de tourisme? The limit and the allowance both change.
-- Have you opted for the flat income tax payment with Urssaf? If yes, the instalment must be switched off.
-- Establish family situation at1January, the relevant year-end increase/change rules and any death-year periods;31December alone is not the universal household reference date.
-- Are you also employed, and did you keep a household rate or an individualised rate for the withholding?
-- Reconcile the instalments and withholding for the actual income year being assessed, the programmed current instalments and the rate in the espace particulier. Do not substitute another calendar year’s bank debits.
+#### Example 1: Freelance Professional Fee (BNC Micro)
+
+`15/03/2025 | VIR SEPA ABC CONSULTING SARL | +3,500.00 | Solde 12,840.50`
+
+Historical fictional amount restored: assume this EUR 3,500 is the entire annual eligible gross micro-BNC receipt, no VAT or fees in this receipt, no other category turnover and no VFL. The 34% allowance is EUR 1,190, above its EUR 305 minimum; taxable micro profit is EUR 2,310. If this were only one receipt among others, compute the allowance/minimum on the annual category total instead of applying an annual minimum separately per bank line. The former approximate EUR 770 social figure is historical and is not a current rate calculation; actual dated social liability is separate.
+
+A supported client settlement for consulting work, taxpayer under micro-BNC. Use gross eligible receipts excluding VAT before fees/Urssaf, then the 34% allowance with its minimum and no-deficit rule. Urssaf remains separate and is not deducted again. Declare the gross in the appropriate 2042-C-PRO field; a valid VFL option follows its separate method.
+
+#### Example 2: Stripe Payout
+
+`22/05/2025 | STRIPE PAYMENTS EUROPE | +4,650.00 | Solde 8,220.00`
+
+Historical fictional reconciliation restored: independently verified eligible client receipts EUR 4,800 less actual platform fees EUR 150 equal the EUR 4,650 bank payout. Assume no separate VAT/refund adjustment on these inputs. The micro turnover input is EUR 4,800, with no additional EUR 150 fee deduction. A real filer still tests that actual fee’s professional purpose and timing; this receipt does not by itself establish the full annual taxable result.
+
+The payout is net of platform fees. Reconcile it to the settlement report, actual client receipts, VAT and refunds; the bank net alone is not turnover. A micro filer declares the gross eligible amount excluding VAT before fees, with no second fee deduction. A real filer applies its actual expense/evidence and timing rules rather than automatically deducting every platform debit.
+
+#### Example 3: Loyer Bureau Payment
+
+`01/04/2025 | PRÉLÈVEMENT VIREMENT LOYER BUREAU SARL IMMOPRO | -1,200.00 | Solde 5,640.00`
+
+Historical fictional EUR 1,200 monthly rent is retained. If the full EUR 1,200 is actually paid eligible rent for dedicated professional BNC premises under the applicable recognition method, the potential professional deduction is EUR 1,200. If mixed/private use or another statutory restriction applies, recompute; for a micro filer the separate rent deduction is zero.
+
+Rent on dedicated professional premises is tested as a professional expense under the actual real regime, evidence and recognition period; the payment label alone is not the test. A micro filer cannot deduct the rent again on top of the allowance.
+
+#### Example 4: Urssaf Auto-Entrepreneur Contribution
+
+`15/06/2025 | PRÉLÈVEMENT URSSAF AUTO ENT | -528.00 | Solde 4,210.00`
+
+The historical fictional EUR 528 debit remains a cash/social-account reconciliation input. For a micro filer, the additional business-expense deduction from that debit is zero; EUR 528 is not proof of a current contribution rate or of the turnover period that produced it.
+
+A social contribution debit charged on declared turnover. Not deductible from BIC or BNC income for a micro filer: it reduces cash, not taxable income. Exclude it, and reconcile against the Urssaf account.
+
+#### Example 5: Salary Credit (Mixed Income)
+
+`28/02/2025 | VIREMENT SALAIRE SOCIÉTÉ XYZ | +2,800.00 | Solde 6,150.00`
+
+The historical fictional EUR 2,800 bank credit and EUR 6,150 balance are retained as cash inputs. They do not establish gross salary or annual net taxable salary. No annual salary deduction or 1AJ/1BJ amount is computed without the actual payroll/annual taxable statement; the old EUR 504/EUR 14,171 salary limits are superseded by the year-specific table above.
+
+Salary is traitements et salaires, separate from BIC/BNC. Reconcile the bank net to the annual net taxable salary before the professional-expense deduction, ordinarily reported in 1AJ/1BJ. Apply the 10% deduction or the actual-expense election to that taxable base, not gross contractual pay or the cash received after withholding.
+
+#### Example 6: Prélèvement à la Source (Monthly Tax Withholding)
+
+`27/01/2025 | PRÉLÈVEMENT FISCAL DGFIP PAS | -420.00 | Solde 7,890.00`
+
+The historical fictional EUR 420 debit is retained. Only if twelve independently reconciled EUR 420 instalments belong to the same assessed income year is the credit total 420 × 12 = EUR 5,040. One January bank debit does not prove that annual total, and none of it is a professional-expense deduction.
+
+The business-income acompte is collected directly by the tax administration; any separate employment still has payer withholding. Use the actual programmed instalments and reconciled annual tax records, including any VFL change. These debits are prepayments, not business expenses; offset the correct income-year amounts against the final bill.
+
+```oa-check
+name: France restored annual microBNC3500 receipt
+inputs:
+  annual_receipts: 3500
+  allowance_rate: 0.34
+  minimum_allowance: 305
+steps:
+  allowance: min(annual_receipts,max(annual_receipts*allowance_rate,minimum_allowance))
+  taxable_micro: max(annual_receipts-allowance,0)
+expected:
+  allowance: 1190
+  taxable_micro: 2310
+```
+
+```oa-check
+name: France restored Stripe reconciliation and evidenced annual PAS
+inputs:
+  verified_gross_receipts: 4800
+  actual_platform_fee: 150
+  reconciled_monthly_PAS: 420
+  verified_same_year_count: 12
+steps:
+  net_bank_payout: verified_gross_receipts-actual_platform_fee
+  annual_tax_prepayments: reconciled_monthly_PAS*verified_same_year_count
+expected:
+  net_bank_payout: 4650
+  annual_tax_prepayments: 5040
+```
 
 ## When to refuse or refer
 
@@ -686,35 +696,40 @@ Declaration forms for each millésime, including 2042, 2042-C, 2042-C-PRO and 20
 
 ## Sources
 
-- https://www.service-public.fr/particuliers/vosdroits/F1419 Selected cited scope read 2026-10-29.
-- https://www.service-public.fr/particuliers/vosdroits/F2705 Selected cited scope read 2026-10-29.
-- https://www.service-public.fr/particuliers/vosdroits/F34009 Selected cited scope read 2026-10-29.
-- https://www.service-public.fr/particuliers/vosdroits/F12 Selected cited scope read 2026-10-29.
-- https://www.service-public.fr/particuliers/vosdroits/F8 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.fr/vosdroits/F23267 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.fr/vosdroits/F32919 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.fr/vosdroits/F32105 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.fr/vosdroits/F23460 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/11255-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/4911-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/1458-PGP.html Selected cited scope read 2026-10-29.
-- https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 Selected cited scope read 2026-10-29.
-- https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement DGFiP2026 return-calendar/annual-reporting quoted source read 2026-10-29.
-- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html Selected cited scope read 2026-10-29.
 
-- https://bofip.impots.gouv.fr/bofip/4628-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/4658-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/4659-PGP.html Selected cited scope read 2026-10-29.
-- https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288764 Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/4627-PGP.html/identifiant=BOI-BNC-BASE-40-60-50-20-20141007 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.gouv.fr/vosdroits/F32105 Selected cited scope read 2026-10-29.
-- https://entreprendre.service-public.gouv.fr/vosdroits/F36249 Selected cited scope read 2026-10-29.
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: read for Household RFR2024 for the2026 flat-payment option,1part; Household RFR2024 for the2026 option, jointly taxed couple2parts; Household RFR2024 for the2026 option,2.5parts; Household RFR2024 for the2026 option,3parts | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur | 2026-11-14 |
+| Comment puis-je bénéficier de la déduction forfaitaire de 10% ?: read for 10%, 50%, EUR 14,555, EUR 509 and the conditions next to them | https://www.impots.gouv.fr/particulier/questions/comment-puis-je-beneficier-de-la-deduction-forfaitaire-de-10 | 2026-11-14 |
+| IR - Prélèvement à la source de l’impôt sur le revenu - Calcul du prélèvement - Taux du pr: read for 10%, 40%, EUR 2,042, EUR 1,000, EUR 200 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/11247-PGP.html/identifiant=BOI-IR-PAS-20-20-10-20260407 | 2026-11-14 |
+| Quel est le barème de l'impôt sur le revenu ?: read for Up to EUR 11,600; EUR 11,601 to EUR 29,579; EUR 29,580 to EUR 84,577; EUR 84,578 to EUR 181,917; Above EUR 181,917 | https://www.service-public.fr/particuliers/vosdroits/F1419 | 2026-11-14 |
+| Impôt sur le revenu - Quotient familial d'un couple marié ou pacsé: read for 11%, 30%, 40%, EUR 29,580, EUR 11,600 and the conditions next to them | https://www.service-public.fr/particuliers/vosdroits/F2705 | 2026-11-14 |
+| Impôt sur le revenu - Prélèvement à la source: read for 10%, 43%, 0%, EUR 1,000, EUR 150 and the conditions next to them | https://www.service-public.fr/particuliers/vosdroits/F34009 | 2026-11-14 |
+| Impôt sur le revenu - Crédit d'impôt pour l'emploi d'un salarié à domicile: read for Rate of the credit; Annual ceiling on the expenses, general case; Ceiling once the uplifts are counted, general case; Uplift per dependent child in equally shared custody; Small handyman work of at most two hours, inside the ceiling above; Computer and internet help at home, inside the ceiling above; and 7 more rows | https://www.service-public.fr/particuliers/vosdroits/F12 | 2026-11-14 |
+| Impôt sur le revenu - Frais de garde d'enfant hors du domicile (crédit d'impôt): read for Rate of the credit; Costs that may be declared, per child; Maximum credit, per child; Costs that may be declared, per child in equally shared custody; Maximum credit, per child in shared custody | https://www.service-public.fr/particuliers/vosdroits/F8 | 2026-11-14 |
+| Régime fiscal de la micro-entreprise: read for Goods, income of 2025; Services and liberal activity, income of 2025; Goods, income received in 2026; Services and liberal activity, income received in 2026; Classified furnished tourist lets and chambres d'hôtes, income of 2025; Classified furnished tourist lets and chambres d'hôtes, income received in 2026; and 4 more rows | https://entreprendre.service-public.fr/vosdroits/F23267 | 2026-11-14 |
+| Bénéfices industriels et commerciaux (BIC) : régime réel d'imposition: read for 40%, 10%, 80%, EUR 203,100, EUR 286,000 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F32919 | 2026-11-14 |
+| Bénéfices non commerciaux (BNC) : régime réel d'imposition: read for 10%, 80%, 40%, EUR 83,600, EUR 1,000 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F32105 | 2026-11-14 |
+| Peut-on encore bénéficier du crédit d'impôt pour la formation des dirigeants d'entreprise: read for EUR 1,000 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F23460 | 2026-11-14 |
+| IR - Liquidation - Calcul de l’impôt - Corrections affectant le montant de l’impôt brut - : read for Each extra half-share for a dependent child; The whole extra share for the first child of a parent living alone; Each half-share for the first two children in equally shared custody, taxpayer l; The extra half-share of a person living alone with no dependants who raised a ch; Each extra quarter-share for a child in equally shared custody | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 | 2026-11-14 |
+| IR - Liquidation - Calcul de l’impôt - Corrections affectant le montant de l’impôt brut - : read for Gross tax must be below this, single, divorced, widowed; Gross tax must be below this, couple taxed jointly; Fixed amount in the formula, single, divorced, widowed; Fixed amount in the formula, couple taxed jointly; Share of the gross tax subtracted from that fixed amount | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 | 2026-11-14 |
+| BAREME - RSA - Limites d’exonération d’impôt sur le revenu applicables à certains revenus : read for Minimum per person, income of 2025; Ceiling per person, income of 2025 | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 | 2026-11-14 |
+| IR - Contribution exceptionnelle sur les hauts revenus: read for Above EUR 250,000, single, widowed, separated, divorced; Above EUR 500,000, single, widowed, separated, divorced; Above EUR 500,000, couple taxed jointly; Above EUR 1,000,000, couple taxed jointly | https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711 | 2026-11-14 |
+| BAREME - IR - Prélèvement à la source de l’impôt sur le revenu - Grilles des taux par défa: read for Below EUR 1,635; EUR 1,635 inclusive to BELOW EUR 1,698; EUR 55,558 and above | https://bofip.impots.gouv.fr/bofip/11255-PGP.html | 2026-11-14 |
+| CF - Infractions et pénalités fiscales communes à tous les impôts et relatives à l'assiett: read for 10%, 80%, 40%, EUR 1,729 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4911-PGP.html | 2026-11-14 |
+| CF - Infractions et sanctions - Infractions et pénalités fiscales communes à tous les impô: read for Late payment interest, per month of delay | https://bofip.impots.gouv.fr/bofip/1458-PGP.html | 2026-11-14 |
+| Les modalités de la déclaration de revenus en 2026: read for Rate, unless actual expenses are elected | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 | 2026-11-14 |
+| DGFiP form 2042 page: read for the form name and the online return route | https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus | 2026-11-14 |
+| Urssaf auto-entrepreneur portal, l'essentiel du statut: read for the micro thresholds and the flat-payment option conditions | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html | 2026-11-14 |
+| BNC - Base d’imposition - Dépenses - Frais généraux - Frais divers de gestion, dons et sub: read for EUR 1,982, EUR 200, EUR 150 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4628-PGP.html | 2026-11-14 |
+| BNC - Base d’imposition - Nature et période des dépenses admises en déduction: read for 30%, EUR 1,980, EUR 1,982, EUR 2,131, EUR 200 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4658-PGP.html | 2026-11-14 |
+| BNC – Base d'imposition – Dépenses - Frais généraux - Travaux, fournitures et services ext: read for 50%, EUR 1,982, EUR 200, EUR 150, EUR 500 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4659-PGP.html | 2026-11-14 |
+| Legifrance CGI article kept from the earlier source list; no figure in this skill rests on it alone (not reopened today: the site refuses scripted reads): read for the procedure and conditions this skill cites from it | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288764 | 2026-10-29 |
+| BNC - Base d'imposition - Dépenses - Frais généraux - Charges sociales personnelles - Moda: read for EUR 200, EUR 150, EUR 154 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4627-PGP.html/identifiant=BOI-BNC-BASE-40-60-50-20-20141007 | 2026-11-14 |
+| Bénéfices non commerciaux (BNC) : régime réel d'imposition: read for 10%, 80%, 40%, EUR 83,600, EUR 1,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F32105 | 2026-11-14 |
+| Revenus du micro-entrepreneur: read for EUR 1,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F36249 | 2026-11-14 |
 
-Not yet confirmed in this companion: the precise2025 own-meal parameters, any treatment requiring an unprovided VAT-inclusive real-BNC accounting election, negative-profit/nonstandard154bis cases, particular insurance/PER contract eligibility, and bank-specific current export layouts. Household, property, nonresident, capital-gain and social-base methods remain in their named companions. A source’s acquisition date is not its effective date or an accountant attestation.
+Not yet confirmed: the micro-entrepreneur versement libératoire ceilings for the 2027 option (RFR 2025: old figures 29,579 / 59,158 / 88,737 for 1 / 2 / 3 parts and below 73,948 for 2.5 parts, not on the impots.gouv.fr page read today, which gives the 2026 option); the 2026 income scale (set by the finance law for 2027, not yet enacted); the RFR 2025 ceilings for the 2027 flat-payment option are computed here as the 2026 scale limit of EUR 29,579 times the number of shares (EUR 59,158 for 2 shares, EUR 88,737 for 3), pending the official 2027 list; and, from the earlier version, the precise 2025 own-meal parameters, any treatment requiring an unprovided VAT-inclusive real-BNC accounting election, negative-profit/nonstandard154bis cases, particular insurance/PER contract eligibility, and bank-specific current export layouts. Household, property, nonresident, capital-gain and social-base methods remain in their named companions. A source’s acquisition date is not its effective date or an accountant attestation.
 
 ## Disclaimer
 
