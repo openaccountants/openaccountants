@@ -4,13 +4,14 @@ description: 'Use this skill for 2026 Azerbaijan transfer-pricing working papers
 jurisdiction: AZ
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Azerbaijan Transfer Pricing v0.1
+# Azerbaijan Transfer Pricing v0.2
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

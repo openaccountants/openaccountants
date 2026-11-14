@@ -3,15 +3,16 @@ name: td-tax-overview
 description: "Route Chad tax and company compliance work for 2026 to the country’s substantive Guides and preserve the jobs that remain unresolved. Covers individual categories, company profit and minimum tax, VAT, payroll and social contributions, foreign related-party documentation, company formation and annual reporting, and the narrow September import-eligibility job. Use for Chad tax overview, country intake, DGI obligations, country-pack completeness or a multi-tax working-paper plan. Figures and deadlines stay in their owning Guide rather than being duplicated here. Two reconciliation cases distinguish remaining payments from potential credits. The pack remains partial and neither this router nor an AI source review establishes a filing-ready return or accountant attestation."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Chad tax working-paper router v1.1
+# Chad tax working-paper router v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

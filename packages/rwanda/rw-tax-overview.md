@@ -1,13 +1,14 @@
 ---
 name: rw-tax-overview
 description: "Rwanda tax system at a glance for 2026: RRA, the income tax, VAT and procedure laws, headline rates and deadlines, and what changed in 2025 and 2026."
-version: 0.2
+version: 0.3
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Rwanda Tax Overview

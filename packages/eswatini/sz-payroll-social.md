@@ -5,14 +5,15 @@ jurisdiction: SZ
 category: payroll
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Eswatini Payroll and Social Contributions v0.2
+# Eswatini Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -106,11 +107,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ENPF home page, public notice reproducing Legal Notice 5 of 2025; whole page read | https://enpf.co.sz/ | 2026-11-01 |
-| ENPF, Employers; whole page read | https://enpf.co.sz/employers/ | 2026-11-01 |
-| National Provident Fund Order 1974, ss 14 to 17; cited sections read | http://enpf.co.sz/wp-content/uploads/2021/03/The-SNPF-Order-of-1974-1.pdf | 2026-11-01 |
-| ERS, PAYE Quick Guide; whole page read | https://www.ers.org.sz/IncomeTax/Paye | 2026-11-01 |
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023); scanned, read by OCR, Third Schedule pages checked by eye; cited sections read | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-01 |
-| ERS, Step-by-Step Guide for New Businesses; whole page read | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-01 |
+| ENPF home page, public notice reproducing Legal Notice 5 of 2025: read in full | https://enpf.co.sz/ | 2026-11-14 |
+| ENPF, Employers: read in full | https://enpf.co.sz/employers/ | 2026-11-14 |
+| National Provident Fund Order 1974, ss 14 to 17: read for the cited sections | http://enpf.co.sz/wp-content/uploads/2021/03/The-SNPF-Order-of-1974-1.pdf | 2026-11-14 |
+| ERS, PAYE Quick Guide: read in full | https://www.ers.org.sz/IncomeTax/Paye | 2026-11-14 |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
 
 Not yet confirmed: The ENPF percentage wording, employee share order and late-payment charge. Whether the National Pension Fund Bill has been enacted. Graded tax from the old pack: no official source found for its current status or amount. Commencement of the 2023 Act rests on the ERS Presumptive Tax page.

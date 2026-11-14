@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gh-payroll-social"
   jurisdiction: "GH"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Ghana Payroll and Social Contributions v0.2
+# Ghana Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -40,7 +40,7 @@ Every employer with at least one worker; registration of workers with SSNIT is m
 | Casual worker | 5% | Seasonal or intermittent, not over six continuous months, paid daily | 2026 | same |
 | Non-resident employee | 25% flat | Chargeable income | 2026 | same |
 | Vehicle with driver and fuel | 12.5% of cash emoluments, cap GHS 1,500 a month | Benefit value | 2026 | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf |
-| Vehicle with fuel | 10%, cap GHS 1,250 a month | Benefit value | 2026 | same |
+| Vehicle with fuel | 10%, cap one thousand two hundred and fifty cedis a month (Act 1094, Fourth Schedule item 2) | Benefit value | 2026 | same |
 | Vehicle only | 5%, cap GHS 625 a month | Benefit value | 2026 | same |
 | Fuel only | 5%, cap GHS 625 a month | Benefit value | 2026 | same |
 
@@ -79,7 +79,7 @@ Temporary workers, employed for at least a month, are taxed as other employees.
 | Failure | Consequence | Official URL |
 |---|---|---|
 | Late PAYE return | GHS 500 plus GHS 10 a day | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf |
-| Late PAYE payment | 125% of the Bank of Ghana policy rate, compounded monthly | same |
+| Late PAYE payment | One hundred and twenty five per cent of the Bank of Ghana monetary policy rate, compounded monthly | same |
 | Failing to withhold | The withholding agent is liable for the tax | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ |
 
 ## Cross-border points
@@ -139,16 +139,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| SSNIT FAQs (contribution rates and remittance), page read in full | https://www.ssnit.org.gh/faqs/ | 2026-11-01 |
-| SSNIT Public Notice, 13 Jan 2026, whole notice | https://www.ssnit.org.gh/wp-content/uploads/2026/01/Public-Notice-Min-Max-Insurable.pdf | 2026-11-01 |
-| GRA, PAYE page (2026 bands, bonus, overtime, casual rules read) | https://gra.gov.gh/domestic-tax/tax-types/paye/ | 2026-11-01 |
-| Income Tax (Amendment) Act, 2023 (Act 1094), whole act | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf | 2026-11-01 |
-| Revenue Administration Act, 2016 (Act 915); ss 27 to 30, 46, 47, 70 to 73 read | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-01 |
-| GRA, Employee Taxes and Pensions Year End Checklist, whole document | https://gra.gov.gh/wp-content/uploads/2025/11/Taxpayer-Checklist.pdf | 2026-11-01 |
-| GRA, Withholding Tax page (rates table, last edited 2022), page read in full | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-01 |
+| SSNIT FAQs: read in full for the contribution rates (13% employer, 5.5% employee, 13.5% of basic remitted to Tier 1) and remittance | https://www.ssnit.org.gh/faqs/ | 2026-11-14 |
+| SSNIT Public Notice, 13 Jan 2026: read in full for the 2026 maximum (GHS 69,000) and minimum (GHS 587.80) insurable earnings | https://www.ssnit.org.gh/wp-content/uploads/2026/01/Public-Notice-Min-Max-Insurable.pdf | 2026-11-14 |
+| GRA, PAYE page: read for the 2026 bands, bonus, overtime and casual worker rules | https://gra.gov.gh/domestic-tax/tax-types/paye/ | 2026-11-14 |
+| Income Tax (Amendment) Act, 2023 (Act 1094): read in full | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf | 2026-11-14 |
+| Revenue Administration Act, 2016 (Act 915): read for ss 27 to 30, 46, 47, 70 to 73 | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-14 |
+| GRA, Employee Taxes and Pensions Year End Checklist: read in full | https://gra.gov.gh/wp-content/uploads/2025/11/Taxpayer-Checklist.pdf | 2026-11-14 |
+| GRA, Withholding Tax page (last edited 2022): read in full for the rates table | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-14 |
 
 Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gh-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gh-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gh-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gh-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

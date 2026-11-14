@@ -1,130 +1,200 @@
 ---
 name: us-tax-return-review-supporting-documents-findings
-description: "Explains what the IRS asks for when it reviews a filed tax return, how long supporting records must be kept, and the deadlines for responding to or appealing the examination findings, for individual and business taxpayers notified that their return is under audit."
+description: "What to do when the IRS selects a filed federal return for examination (audit) in 2026 - how to tell a genuine audit letter, mail, office and field audits, what supporting documents to send (copies only), the one-time 30-day extension for a mail audit, how long records must be kept, the 3-year and 6-year assessment periods, agreeing with the report (Form 4549), the 30-day protest and the $25,000 Small Case Request for Appeals, audit reconsideration, and the 90-day (150-day abroad) Tax Court deadline after a notice of deficiency. Trigger on \"IRS audit\", \"examination letter\", \"IRS wants documents\", \"Form 4549\", \"appeal audit\", \"90-day letter\", \"how long keep tax records\". Federal only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-tax-return-review-supporting-documents-findings"
   jurisdiction: "US"
   tax_year: "2026"
-  last_updated: "2026-09-16"
+  last_updated: "2026-11-13"
 ---
 
-# IRS Audit Review of Supporting Documents and Findings in United States
+# IRS examination of a filed return: supporting documents, findings and deadlines, 2026
 
-This Guide covers the Internal Revenue Service's examination (audit) process: how a taxpayer is notified, what supporting documents the IRS asks for, how long those records must be kept, and the deadlines for agreeing with or disputing the examination findings. Figures are for tax year 2026.
+> **Source-cited draft.** Built from the IRS pages on audits, audit records requests, record keeping, employment tax records (Topic 305), the time the IRS can assess tax, preparing a request for Appeals and audit reconsideration, and 26 U.S.C. 6213, 6501 and 7463, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Who this is for
+**Answer first.** The IRS starts an audit **by mail, never by telephone**. Send **copies, never originals**, of the records that support the items named in the letter. A mail audit can get a **one-time 30-day extension**. The IRS generally assesses within **3 years** of the later of the due date and the filing date, **6 years** if more than 25% of gross income was left off, and without limit for fraud. If you agree, you sign the report (often Form 4549). If not, file a written protest with Appeals within the time in the letter, **generally 30 days**; a **Small Case Request** is enough when the proposed tax and penalty is **USD 25,000 or less per period**. Once a **notice of deficiency** arrives, you have **90 days (150 days if you live outside the United States)** to petition the Tax Court, and that time cannot be extended.
 
-This is for individual and business taxpayers who have been notified that a filed federal income tax return has been selected for examination. 
-The IRS conducts audits either by mail or through an in-person interview to review your records, and the interview may be at an IRS office (office audit) or at the taxpayer's home, place of business, or accountant's/representative's office (field audit).
- 
-Should your account be selected for audit, the IRS will notify you by mail, and it won't initiate an audit by telephone.
- It does not apply to state tax audits, to criminal tax investigations, or to a case already before the U.S. Tax Court.
+## Scope and who this is for
 
-## Rates, thresholds and deadlines
+In scope: individual and business taxpayers (and their advisers) notified that a filed federal income tax return has been selected for examination: how they are notified, what documents the IRS asks for, how long records must be kept, and the deadlines for agreeing with or disputing the findings.
 
-**Statute of limitations and response deadlines**
+Out of scope, and where it goes:
 
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits |
-| General statute of limitations for assessment | a time period established by law when IRS can review, analyze, and resolve your tax-related issues; it is generally three years after a return is due or was filed, whichever is later | applies unless extended or another period applies |
-| Extension to respond to a mail audit | a one-time automatic 30-day extension | requested by fax or mail to the number/address on the IRS letter |
-| Extension after a Notice of Deficiency | not available once a "Notice of Deficiency" is received by certified mail; the time to petition the U.S. Tax Court cannot be extended beyond the original 90 days | |
-
-**Assessment statute detail**
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/filing/time-irs-can-assess-tax |
-| General assessment period (ASED) | within 3 years after your return was due, including extensions, or – if you filed late – within 3 years after the IRS received your return, whichever is later; this is called the Assessment Statute Expiration Date | |
-| Substantial understatement of income | where you reported 25% or less of your income on your tax return, the time the IRS can assess additional tax increases from 3 to 6 years from the date you filed your tax return | |
-| False or fraudulent return | filed a false or fraudulent return with intent to avoid tax; the IRS can assess tax for an unlimited amount of time | |
-| Notice of deficiency (90-day letter) response window | once issued, you have 90 days (150 days if you live outside the United States) to agree with the proposed assessment or to file a petition with the Tax Court before the IRS can assess the amount due | |
-
-**Record retention periods**
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records |
-| General records | 3 years if situations (4), (5), and (6) below do not apply to you | |
-| Claim for credit or refund filed after the return | 3 years from the date you filed your original return or 2 years from the date you paid the tax, whichever is later | |
-| Loss from worthless securities or bad debt deduction | 7 years | |
-| Fraudulent return filed | keep records indefinitely | |
-| Employment tax records | at least 4 years after the date that the tax becomes due or is paid, whichever is later | same period stated at https://www.irs.gov/taxtopics/tc305 |
-| Property records | until the period of limitations expires for the year in which you dispose of the property | needed to figure depreciation, amortization, depletion, gain or loss |
-
-**Disputing the findings**
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/appeals/preparing-a-request-for-appeals |
-| Deadline to file a formal written protest | within the time limit specified in the letter that offers you the right to appeal the proposed changes; generally the time limit is 30 days from the date of the letter | |
-| Small Case Request eligibility threshold | the entire amount of additional tax and penalty proposed for each tax period is $25,000 or less from an examination (audit) | employee plans, exempt organizations, S corporations and partnerships are not eligible for Small Case Requests |
-
-**Audit reconsideration**
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail |
-| Estimated IRS response time to a reconsideration request | a 30-day response time, but it may take longer, potentially several months | can check status online or call the number on the letter |
-
-## The method, step by step
-
-1. Confirm the contact is genuine: 
-the IRS notifies a taxpayer selected for audit by mail and will not initiate an audit by telephone
- (https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits).
-2. Identify the audit type from the letter: 
-the IRS conducts audits either by mail or through an in-person interview, which may be an office audit or a field audit at the taxpayer's home, place of business, or representative's office
- (same page).
-3. Gather and send only what is asked for: 
-the IRS will ask you to present certain documents that support the income, credits or deductions you claimed on your return, documents you would have used to prepare the return
-; 
-never mail original records, send copies
- (https://www.irs.gov/businesses/small-businesses-self-employed/audits-records-request). The likely record types listed on that page include receipts, bills, canceled checks, legal papers, employment documents, and Schedule K-1s.
-4. If more time is needed, use the extension procedure on the IRS letter: for a mail audit this is a fax or mailed request, and the deadlines and extension terms are in the table above (https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits).
-5. Respond to the findings: 
-if you agree with the audit findings, you will be asked to sign the examination report or a similar form depending upon the type of audit conducted
-; 
-if you owe money, there are several payment options available
- (same page).
-6. If you disagree and the case is still open, file a formal written protest within the deadline in the "Disputing the findings" table (https://www.irs.gov/appeals/preparing-a-request-for-appeals).
-7. If the assessment has already been made, credits were disallowed, or you have new information, use audit reconsideration: 
-review your audit report, Form 4549, Report of Income Tax Examination Changes, to identify the specific items you disagree with, and gather supporting documentation
- (https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail).
-8. If a Notice of Deficiency is issued, petition the U.S. Tax Court within the window in the tables above, since 
-the IRS cannot extend the time to petition the Tax Court beyond the original 90 days once that notice has been sent by certified mail
- (https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits).
-9. After the case closes, keep the return and its supporting records for the periods in the "Record retention periods" table in case of a related examination or a future refund claim (https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records).
+| Topic | Where |
+| --- | --- |
+| IRS notices other than audits (CP2000, CP14, CP504), collection (liens, levies, installment agreements, offers), Collection Due Process, penalties and abatement, innocent spouse | `us-irs-collections-and-controversy` |
+| Correcting a return yourself before the IRS asks | `us-amended-return-form-1040-including-capital` |
+| State audits (for example EDD or CDTFA in California, or the Texas Comptroller) | the state's own procedure |
+| Criminal investigations and referrals to IRS Criminal Investigation | refer to tax counsel |
+| A case already petitioned in the Tax Court | refer to tax counsel |
+| Audits of exempt organizations or employee plans | refer; not eligible for Small Case Requests |
 
 ## Ask the client first
 
-- Did the notice arrive by mail, and does it say whether this is a correspondence, office, or field audit?
-- Which tax year and which specific income, expense, or credit line items does the notice say are under review?
-- Has a Notice of Deficiency (90-day letter) already been issued, or is the audit still open with the examiner?
-- Do you agree with the examination report/Form 4549, or do you want to dispute specific adjustments?
-- Is the total additional tax and penalty for each tax period $25,000 or less, which affects Small Case Request eligibility?
-- Do you still have the original documents used to prepare the return, or only reconstructed records?
+1. **Did the notice arrive by mail,** and does it say correspondence (mail), office or field audit?
+2. **Which tax year and which income, expense or credit items** does the letter name?
+3. **Has a notice of deficiency (90-day letter) already been issued,** or is the audit still open with the examiner? Note its date.
+4. **Do you agree with the examination report (Form 4549),** or which adjustments do you dispute?
+5. **Is the additional tax and penalty for each period USD 25,000 or less?** This decides the Small Case Request.
+6. **Do you still have the original documents used to prepare the return,** or only reconstructed records?
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Extension to respond to a mail audit, by fax or mail to the address on the letter | one-time 30 days | [IRS, IRS audits](https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits) |
+| Returns the IRS generally includes in an audit | filed within the last 3 years | [IRS, IRS audits](https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits) |
+| How far back the IRS usually goes when it finds a substantial error | not more than the last 6 years | [IRS, IRS audits](https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits) |
+| General assessment period, from the later of the due date (with extensions) and the date filed | 3 years | [IRS, Time IRS can assess tax](https://www.irs.gov/filing/time-irs-can-assess-tax) |
+| Assessment period when more than 25% of gross income was omitted | 6 years | [26 U.S.C. 6501(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm) |
+| Omitted income share that triggers the 6-year period | in excess of 25 percent of gross income stated | [26 U.S.C. 6501(e)(1)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm) |
+| False or fraudulent return filed with intent to evade | no time limit | [IRS, Time IRS can assess tax](https://www.irs.gov/filing/time-irs-can-assess-tax) |
+| Time to petition the Tax Court after a notice of deficiency (cannot be extended) | 90 days | [26 U.S.C. 6213(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapB-sec6213.htm) |
+| Same, notice addressed to a person outside the United States | 150 days | [26 U.S.C. 6213(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapB-sec6213.htm) |
+| Formal written protest to Appeals: the time in the letter, generally | 30 days from the date of the letter | [IRS, Preparing a request for Appeals](https://www.irs.gov/appeals/preparing-a-request-for-appeals) |
+| Small Case Request: proposed tax and penalty for each period not more than | USD 25,000 | [IRS, Preparing a request for Appeals](https://www.irs.gov/appeals/preparing-a-request-for-appeals) |
+| Tax Court small tax case: deficiency in dispute for any one year not more than | USD 50,000 | [26 U.S.C. 7463(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap76-subchapC-partII-sec7463.htm) |
+| IRS response time to an audit reconsideration request (may take months) | about 30 days | [IRS, Audit reconsideration](https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail) |
+| General records | 3 years | [IRS, How long should I keep records](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) |
+| Records for a claim for credit or refund filed after the return | later of 3 years from filing or 2 years from payment | [IRS, How long should I keep records](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) |
+| Records for a loss from worthless securities or a bad debt deduction | 7 years | [IRS, How long should I keep records](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) |
+| Employment tax records, after the later of the due date and payment | at least 4 years | [IRS Topic 305](https://www.irs.gov/taxtopics/tc305) |
+| Property records | until the period of limitations expires for the year of disposal | [IRS, How long should I keep records](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) |
+
+### Steps, in the order the taxpayer meets them
+
+1. **Confirm the contact is genuine.** The IRS notifies a taxpayer selected for audit by mail and will not start an audit by telephone. Check the letter against the taxpayer's IRS online account or call the number on irs.gov, not the number in an unexpected message.
+2. **Identify the audit type.** By mail (correspondence), or an in-person interview at an IRS office (office audit) or at the taxpayer's home, place of business or representative's office (field audit).
+3. **Note every date.** The letter date, the response date, and for a notice of deficiency the last day to petition the Tax Court (printed on the notice).
+4. **Gather only what is asked for.** The IRS asks for documents that support the income, credits or deductions claimed, the documents used to prepare the return: receipts, bills, canceled checks, legal papers, employment documents, Schedules K-1 and the like. Organize them by year and type of income or expense with a summary of transactions; "No record can stand on its own", so explain the circumstances of each document. Never mail originals; send copies.
+5. **If more time is needed,** ask for the one-time 30-day extension of a mail audit by fax or mail to the number or address on the letter. There is no extension once a notice of deficiency has been received.
+6. **Respond to the findings.** If you agree, sign the examination report (often Form 4549, Report of Income Tax Examination Changes) or the similar form for the audit type; if you owe, choose a payment option (see `us-irs-collections-and-controversy`).
+7. **If you disagree and the case is open,** request Appeals: a formal written protest within the time in the letter (generally 30 days), or a Small Case Request if the proposed tax and penalty is USD 25,000 or less for each period. S corporations, partnerships, employee plans and exempt organizations cannot use a Small Case Request.
+8. **If the assessment has been made, credits were disallowed, or there is new information,** ask for audit reconsideration: review Form 4549 to identify the items you disagree with, and send the supporting documents.
+9. **If a notice of deficiency arrives,** petition the Tax Court within 90 days (150 days if addressed outside the United States). A dispute of USD 50,000 or less for a year can be a small tax case.
+10. **After the case closes,** keep the return and its records for the retention periods above.
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| A call or email claiming to be an audit | Not how the IRS starts an audit; do not give information; verify through irs.gov |
+| Notice of deficiency already received | No extension of the 90 or 150 days; Appeals may still settle, but the petition deadline runs |
+| Proposed tax and penalty of USD 25,000 or less per period | Small Case Request instead of a formal protest (not for S corporations, partnerships, employee plans or exempt organizations) |
+| More than USD 25,000 for any period | Formal written protest |
+| Income omitted of more than 25% of gross income stated | 6-year assessment period |
+| Fraudulent return | No time limit for assessment; refer to tax counsel |
+| Assessment already made and the taxpayer did not respond | Audit reconsideration with new documents |
+| Records lost or destroyed | Reconstruct from third parties (banks, payers, the IRS transcript); say so in the response |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Letter date | Treat the response date as the earliest possible; ask for the letter |
+| Whether a notice of deficiency was issued | Ask for every IRS letter since the return was filed; treat any "Notice of Deficiency" as starting the 90 days |
+| Amount at stake per period | Prepare a formal protest unless the report shows USD 25,000 or less for each period |
+
+### Red flags to raise
+
+| Flag | Why it matters |
+| --- | --- |
+| Client sends original receipts | They may not come back; send copies |
+| Client ignores the letter | The IRS proceeds on what it has, then issues a notice of deficiency |
+| Notice of deficiency more than 60 days old | Petition deadline close; refer to counsel at once |
+| Signs of fraud or a special agent at the door | Stop; refer to tax counsel (criminal exposure) |
+
+## Worked cases
+
+**Case 1, is the 6-year period open?** A sole proprietor's 2022 return, filed on time on 18 April 2023, stated gross income of USD 200,000 and left out USD 60,000 of receipts. 25% of the gross income stated is USD 50,000. The omission of USD 60,000 is more than that, so the IRS has 6 years to assess instead of 3, to 18 April 2029. Had the omission been USD 45,000, the 3-year period would have closed on 18 April 2026.
+
+```oa-check
+name: Six-year assessment period test
+inputs:
+  gross_income_stated: 200000
+  omitted: 60000
+  omitted_smaller: 45000
+steps:
+  - threshold: gross_income_stated * 0.25
+  - six_year_applies: min(floor(omitted / (threshold + 0.01)), 1)
+  - years_open: 3 + 3 * six_year_applies
+  - six_year_if_smaller: min(floor(omitted_smaller / (threshold + 0.01)), 1)
+  - years_if_smaller: 3 + 3 * six_year_if_smaller
+expected:
+  threshold: 50000
+  six_year_applies: 1
+  years_open: 6
+  six_year_if_smaller: 0
+  years_if_smaller: 3
+```
+
+**Case 2, a decision: Small Case Request or formal protest?** An examination report proposes, for two years, additional tax of USD 18,000 and a USD 3,600 accuracy penalty for 2023, and USD 22,000 plus USD 4,400 for 2024. 2023 totals USD 21,600, within USD 25,000; 2024 totals USD 26,400, over it. Because the test is per period and one period is over, prepare a formal written protest for the case, within the 30 days in the letter.
+
+```oa-check
+name: Small Case Request test per period
+inputs:
+  tax_2023: 18000
+  penalty_2023: 3600
+  tax_2024: 22000
+  penalty_2024: 4400
+  limit: 25000
+steps:
+  - total_2023: tax_2023 + penalty_2023
+  - total_2024: tax_2024 + penalty_2024
+  - largest_period: max(total_2023, total_2024)
+  - over_limit_by: max(largest_period - limit, 0)
+expected:
+  total_2023: 21600
+  total_2024: 26400
+  largest_period: 26400
+  over_limit_by: 1400
+```
 
 ## When to refuse or refer
 
-- This Guide does not cover criminal tax fraud investigations or referrals to IRS Criminal Investigation.
-- It does not cover state-level audits (for example, EDD or CDTFA examinations in California, or Comptroller of Texas audits).
-- It does not cover proceedings once a Tax Court petition has been filed and the case is in litigation.
-- It does not cover the separate IRS collection process (liens, levies, installment agreements) that can follow an assessment.
-- It does not cover audits of exempt organizations or employee plans, which the appeals page states are not eligible for Small Case Requests.
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-AUD-CRIM | Criminal investigation, a special agent, or a referral to IRS Criminal Investigation | Refer to tax counsel; say nothing further to the IRS |
+| R-AUD-STATE | State audit | Out of scope |
+| R-AUD-COURT | Tax Court petition already filed | Refer to the representative or counsel |
+| R-AUD-COLL | Collection after assessment (liens, levies, installment agreements, offers) | `us-irs-collections-and-controversy` |
+| R-AUD-EO | Exempt organization or employee plan audit | Refer |
+
+## Filing and payment
+
+There is no form to file to answer an audit: the response goes to the address, fax or portal in the IRS letter by the date in it, with copies of the records requested and a short cover letter listing each item. A representative needs Form 2848 on file. Agreement is by signing Form 4549 (or the form the examiner sends); payment follows the notice and demand. A protest or Small Case Request goes to the office in the letter that offered Appeals. A Tax Court petition goes to the Tax Court, not the IRS, by the last day printed on the notice of deficiency.
+
+## Completion checklist
+
+- Letter verified as genuine and its type identified.
+- Response date, and any notice of deficiency petition date, diarised.
+- Only the requested items sent, as copies, organized by year and type with a summary.
+- Extension asked for in writing if needed, before the response date.
+- Report reviewed item by item; agree, protest (30 days) or Small Case Request (USD 25,000 or less per period) chosen.
+- Reconsideration used for assessed amounts with new documents.
+- Records kept for the retention periods after the case closes.
 
 ## Sources
 
-- https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits
-- https://www.irs.gov/businesses/small-businesses-self-employed/audits-records-request
-- https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records
-- https://www.irs.gov/taxtopics/tc305
-- https://www.irs.gov/filing/time-irs-can-assess-tax
-- https://www.irs.gov/appeals/preparing-a-request-for-appeals
-- https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail
+| Source | URL | Read on |
+| --- | --- | --- |
+| IRS, IRS audits. Read for notice by mail only, audit types, the 30-day extension, 3 and 6 years, signing the report, no extension after a notice of deficiency. | https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits | 2026-11-13 |
+| IRS, Audits records request. Read for the record types, organizing records and copies only. | https://www.irs.gov/businesses/small-businesses-self-employed/audits-records-request | 2026-11-13 |
+| IRS, How long should I keep records. Read for 3 years, 3 or 2 years for refund claims, 7 years, property records and fraud. | https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records | 2026-11-13 |
+| IRS Topic 305, Recordkeeping. Read for employment tax records of at least 4 years. | https://www.irs.gov/taxtopics/tc305 | 2026-11-13 |
+| IRS, Time IRS can assess tax. Read for the assessment statute expiration date, the 25% rule and the 90 and 150 days. | https://www.irs.gov/filing/time-irs-can-assess-tax | 2026-11-13 |
+| IRS, Preparing a request for Appeals. Read for the 30-day protest and the USD 25,000 Small Case Request and who cannot use it. | https://www.irs.gov/appeals/preparing-a-request-for-appeals | 2026-11-13 |
+| IRS, Audit reconsideration process for correspondence examination. Read for Form 4549 and the 30-day response time. | https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail | 2026-11-13 |
+| 26 U.S.C. 6501 (govinfo). Read for (a) 3 years and (e)(1)(A) "in excess of 25 percent". | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm | 2026-11-13 |
+| 26 U.S.C. 6213 (govinfo). Read for (a), 90 days or 150 days outside the United States. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapB-sec6213.htm | 2026-11-13 |
+| 26 U.S.C. 7463 (govinfo). Read for (a)(1), small tax cases of USD 50,000 or less a year. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap76-subchapC-partII-sec7463.htm | 2026-11-13 |
+
+Not yet confirmed: none of these figures is indexed for inflation and none changed for 2026; the exact protest period for a case is the one printed in the letter, which may differ from the general 30 days.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-tax-return-review-supporting-documents-findings` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-tax-return-review-supporting-documents-findings. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-tax-return-review-supporting-documents-findings` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-tax-return-review-supporting-documents-findings. If neither is available, confirm every figure against the official source pages cited above before relying on it.
