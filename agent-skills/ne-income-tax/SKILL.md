@@ -1,248 +1,151 @@
 ---
 name: ne-income-tax
-description: "Use this skill whenever asked about Nebraska individual income tax for self-employed / sole proprietors. Trigger on phrases like \"Nebraska income tax\", \"NE income tax\", \"Form 1040N\", \"Nebraska Department of Revenue\", \"NE self-employment tax\"."
+description: "Nebraska 2026 resident wage and sole-proprietor computation: federal AGI adjustments, state deduction, $176 exemption credit, final bands, federal-tax limit and 1040N estimates. Load us-tax-workflow-base first."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ne-income-tax"
   jurisdiction: "US-NE"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# NE Income Tax
+# Nebraska individual income tax, 2026
 
-## Nebraska Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **Built from the law. Not yet approved.** Written by Codex; this version has not been reviewed by an accountant. General reference only. Under Circular 230 section 10.37, apply the cited authorities to the actual facts and obtain qualified professional review before filing or acting.
 
-> **Scope.** This skill covers Nebraska Form 1040N (Nebraska Individual Income Tax Return) for full-year NE residents who are sole proprietors or single-member LLC owners. Tax year 2025 (returns filed in 2026). Nebraska uses a four-bracket graduated rate structure ranging from 2.46% to 5.20%.
->
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
+**Answer first:** Nebraska uses 2026 rates of 2.46%, 3.51% and 4.55%, with four published bands because the upper two now share the same rate. Nebraska has its own standard deduction and a $176 credit per eligible personal exemption. The old assertion that no state deduction exists was wrong. [final 2026 calculation schedule](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf); [final 2026 Form 1040N](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf).
 
-## Section 1: Metadata
+## Scope
 
-**Metadata table**
+Ordinary full-year Nebraska residents with wages, sole-proprietor/disregarded single-member LLC profit, interest, rents and gains. Partial-year/nonresident allocation, complex K-1, asset/NOL and special credit work remain partial. Corporate and employer owners are `ne-corporate-tax` and `ne-payroll`. Load existing `us-form-1040-individual-return`, `us-schedule-c-and-se-computation`, `us-section-179-and-bonus-depreciation`, `us-self-employed-health-insurance`, `us-self-employed-retirement` and `us-qbi-deduction` for federal computations; do not restate federal tax figures here.
 
-**Metadata table**
+## Ask the client first
 
-| Field | Value |
-| --- | --- |
-| Tax type | Individual income tax |
-| Jurisdiction | Nebraska (US-NE) |
-| Tax year | 2025 (filed 2026) |
-| Primary form | Form 1040N |
-| Supporting schedules | Schedule I (Nebraska Adjustments to Income), Schedule II (Credits), Schedule III (Computation of Nebraska Tax) |
-| Tax structure | Graduated (4 brackets) |
-| Rate range | 2.46% – 5.20% (TY 2025) |
-| Filing deadline | April 15, 2026 |
-| Extension deadline | October 15, 2026 |
-| Tax authority | Nebraska Department of Revenue |
-| Website | https://revenue.nebraska.gov |
-| Statute | Neb. Rev. Stat. §77-2715.03 |
+1. Domicile, permanent home, move dates, days/work in other states, federal filing status and resident-return eligibility?
+2. Completed federal AGI and federal tax liability, wages/Schedule C/K-1/rental/gain statements and prior Nebraska returns?
+3. Age/blindness, taxpayer/spouse dependent status, eligible dependents and federal deduction actually allowed/itemized expenses?
+4. Bond issuers, state-tax refunds, Social Security/RRB/military or civil-service retirement, state depreciation/research/NOL records and any PTE election?
+5. Other-state returns/tax paid, credit certification, Nebraska withholding, estimates, prior-year liability/AGI and extension evidence?
 
-**Sources:**
-- Nebraska Department of Revenue, Individual Income Tax: https://revenue.nebraska.gov/individuals/individual-income-tax
-- Neb. Rev. Stat. §77-2715.03 (rate schedule and future rate reductions)
-- Nebraska 2025 Individual Income Tax Booklet
+## The method, step by step
 
-## Section 2: Quick reference — rates and thresholds
+1. **Establish period and resident route.** Use the actual 2026 return and federal filing status. This computation assumes a full-year resident; move-date, military, nonresident and Schedule III cases require allocation review. Resident tax begins with federal AGI, not federal taxable income. Completed federal Schedule C, half-SE-tax, qualifying health-insurance and retirement deductions are already in AGI; do not deduct them again. QBI is below AGI. [1040N lines 1-5](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf); [77-2715(1)-(3)](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2715).
+2. **Reconcile Nebraska adjustments.** Add non-Nebraska state/local-bond interest excluded federally and apply required related-expense reductions. Subtract qualifying U.S.-obligation interest and qualifying investment-company portions only when included in federal income and exempt under the governing rule. Subtract state income-tax refunds included in AGI where the statutory Nebraska-disallowance condition is met. Social Security benefits included in federal AGI are **100% subtracted from 2024 onward**, including 2026. RRB and qualifying military/civil-service amounts have separate supporting-document requirements; do not subtract all pensions by label. [77-2716(1),(3),(14),(15),(20)](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716); [2026 Schedule I](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n_schs.pdf).
+3. **Reconcile state business deductions.** The old blanket bonus-addback statement is not a current-year rule: section 77-2716(9)-(10) expressly concerns historical pre-2006 assets/years. Current qualified-property/improvement-property and research deductions require section 77-27,242 and Form 27242 reconciliation; no duplicate federal/state deduction. The final 2026 Schedule I separately lists related federal additions and Nebraska deductions. Stop for unresolved elections, basis, NOL or conformity rather than applying an old addback percentage. [historical depreciation provisions](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716); [77-27,242](https://nebraskalegislature.gov/laws/statutes.php?statute=77-27,242); [Schedule I lines 13-14 and 47-48](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n_schs.pdf).
+4. **Deduct the correct state amount.** Basic 2026 deductions are below. The standard deduction is limited by the federal deduction actually allowed; dependency and age/blindness can change it. If federal itemization applies, compare the eligible state standard amount with federal itemized deductions **less state/local income taxes before federal disallowance**, under the statute. The final form shows this comparison on lines 6-10. Taxable income = max(0, federal AGI - allowed Nebraska deduction + additions - subtractions). [77-2716.01(3)-(4)](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716.01); [1040N lines 6-14](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf).
+5. **Compute tax, credits, federal limit and settlement.** Use the final 2026 calculation schedule, then applicable state other taxes. Form 1040N line 16 calculates 29.6% of the specified federal lump-sum/early-distribution tax amounts; ordinary wage examples below assume none. Personal exemption credit = $176 x eligible count, applied as a nonrefundable credit, not an income deduction. Substantiate other credits. A federal-before-credit liability cap can apply under 77-2715(1). The opened **2025-2026 filing cycle** worksheet tests **net adjustments (additions minus subtractions) below $5,000**, then compares state tax after nonrefundable credits with its specified federal-tax result. Final 2026 worksheet details were not found; stop if the cap could reduce tax, rather than treating gross additions alone or an arbitrary federal-tax number as the test. Then reconcile withholding, estimates, refundable credits, use tax and any penalty. [1040N lines 16-60](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf); [77-2715(1)](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2715).
 
-### Tax brackets — Single / Married filing separately (TY 2025)
+## Rates, bands and thresholds
 
-**Tax brackets — Single / Married filing separately (TY 2025)**
+Use Nebraska taxable income T and the exact official base-tax amounts. Although upper rates match, the published band bases include rounding; use the appropriate row rather than silently merging bands. [final 2026 schedule](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf).
 
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $4,030 | 2.46% | $0 |
-| $4,030 | $24,120 | 3.51% | $99.14 |
-| $24,120 | $38,870 | 5.01% | $804.30 |
-| $38,870 | — | 5.20% | $1,543.28 |
+| Status | First band | Second band | Third band | Fourth band | Authority |
+| --- | --- | --- | --- | --- | --- |
+| Single / MFS | T through $4,130: .0246T | $4,130 through $24,760: $101.60+.0351(T-4,130) | $24,760 through $39,900: $825.71+.0455(T-24,760) | Above $39,900: $1,514.58+.0455(T-39,900) | [2026 schedule](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf) |
+| MFJ / qualifying surviving spouse | T through $8,250: .0246T | $8,250 through $49,530: $202.95+.0351(T-8,250) | $49,530 through $79,800: $1,651.88+.0455(T-49,530) | Above $79,800: $3,029.16+.0455(T-79,800) | [2026 schedule](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf) |
+| HOH | T through $7,700: .0246T | $7,700 through $39,620: $189.42+.0351(T-7,700) | $39,620 through $59,160: $1,309.81+.0455(T-39,620) | Above $59,160: $2,198.88+.0455(T-59,160) | [2026 schedule](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf) |
 
-### Tax brackets — Married filing jointly / Qualifying surviving spouse (TY 2025)
-
-**Tax brackets — Married filing jointly / Qualifying surviving spouse (TY 2025)**
-
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $8,040 | 2.46% | $0 |
-| $8,040 | $48,250 | 3.51% | $197.78 |
-| $48,250 | $77,730 | 5.01% | $1,609.15 |
-| $77,730 | — | 5.20% | $3,086.10 |
-
-### Tax brackets — Head of household (TY 2025)
-
-**Tax brackets — Head of household (TY 2025)**
-
-| Taxable income over | But not over | Rate | Tax on lower amount |
-| --- | --- | --- | --- |
-| $0 | $7,510 | 2.46% | $0 |
-| $7,510 | $38,590 | 3.51% | $184.75 |
-| $38,590 | $57,630 | 5.01% | $1,275.66 |
-| $57,630 | — | 5.20% | $2,229.56 |
-
-### Upcoming rate reductions
-
-**Upcoming rate reductions**  _(Neb. Rev. Stat. §77-2715.03)_
-
-| Tax year | Bracket 3 rate | Bracket 4 (top) rate | Source |
-| --- | --- | --- | --- |
-| 2025 | 5.01% | 5.20% | Neb. Rev. Stat. §77-2715.03 |
-| 2026 | 4.55% | 4.55% | Neb. Rev. Stat. §77-2715.03 |
-| 2027+ | 3.99% | 3.99% | Neb. Rev. Stat. §77-2715.03 |
-
-### Standard deduction
-
-Nebraska does **not** have its own standard deduction. The starting point is federal AGI, and Nebraska applies its own adjustments to arrive at Nebraska taxable income.
-
-### Personal exemption credit (TY 2025)
-
-**Personal exemption credit (TY 2025)**
-
-| Filing status | Credit amount |
-| --- | --- |
-| Single | $157 |
-| Married filing jointly | $314 |
-| Each dependent | $157 |
-
-### Local income tax
-
-Nebraska does **not** permit local income taxes.
-
-## Section 3: How this skill works with the federal return
-
-Nebraska taxable income starts with **federal adjusted gross income (AGI)** from federal Form 1040, Line 11.
-
-1. **Start with federal AGI** → Form 1040N, Line 3
-2. **Add NE additions** (Schedule I) — items NE adds back
-3. **Subtract NE subtractions** (Schedule I) — items NE excludes
-4. **Subtract Nebraska standard deduction or itemized deductions** (Nebraska follows federal amounts with modifications)
-5. **Result = Nebraska taxable income**
-6. **Apply the graduated rate schedule** → Nebraska tax
-7. **Subtract personal exemption credit and other credits** (Schedule II)
-8. **Result = final tax due or refund**
-
-### Key addition modifications (Schedule I)
-
-**Key addition modifications (Schedule I)**
-
-| Addition | Description |
-| --- | --- |
-| State/local bond interest | Interest from bonds of states other than NE |
-| Bonus depreciation add-back | NE partially decouples from IRC §168(k) — verify current conformity status |
-
-### Key subtraction modifications (Schedule I)
-
-**Key subtraction modifications (Schedule I)**
-
-| Subtraction | Description |
-| --- | --- |
-| US government bond interest | Interest from US Treasury obligations |
-| State income tax refund | If included in federal AGI |
-| Social Security (partial) | Nebraska is phasing out Social Security taxation — for TY 2025, Social Security benefits are fully exempt |
-
-## Section 4: Self-employed specific rules
-
-### Self-employment income flow
-
-Schedule C net profit flows into federal AGI, which is the starting point for Nebraska. Nebraska conforms to the federal self-employment tax deduction (the deductible half of SE tax is already reflected in federal AGI).
-
-### Estimated tax
-
-- **Estimated tax threshold** — Nebraska requires estimated tax payments if you expect to owe $500 or more in Nebraska income tax after subtracting withholding and credits.
-
-**Estimated tax installment due dates**
-
-| Installment | Due date |
-| --- | --- |
-| 1st quarter | April 15 |
-| 2nd quarter | June 15 |
-| 3rd quarter | September 15 |
-| 4th quarter | January 15 (following year) |
-
-Form 1040N-ES is used for estimated tax payments.
-
-### Depreciation
-
-Nebraska's conformity with federal bonus depreciation under IRC §168(k) should be verified for the current tax year. Nebraska has historically required partial add-backs for bonus depreciation in certain years. Check the 2025 Form 1040N instructions.
-
-### Nebraska inheritance tax
-
-Nebraska is one of six states with an inheritance tax (separate from estate tax). This is administered at the county level and is **not** covered by this income tax skill. Self-employed taxpayers should be aware of this for estate planning purposes.
-
-## Section 5: Tier 1 rules — deterministic
-
-**Tier 1 rules table**
-
-| Rule ID | Rule | Source |
+| 2026 item | Amount/condition | Authority |
 | --- | --- | --- |
-| NE-T1-01 | NE taxable income = federal AGI ± NE modifications − NE standard/itemized deduction | Neb. Rev. Stat. §77-2716 |
-| NE-T1-02 | Tax computed using 4-bracket schedule: 2.46%, 3.51%, 5.01%, 5.20% (TY 2025) | Neb. Rev. Stat. §77-2715.03 |
-| NE-T1-03 | Starting point is federal AGI (Form 1040, Line 11) | Neb. Rev. Stat. §77-2716 |
-| NE-T1-04 | Personal exemption credit: $157 per exemption (TY 2025) | Neb. Rev. Stat. §77-2716.01 |
-| NE-T1-05 | Estimated tax required if expected liability ≥ $500 | Neb. Rev. Stat. §77-2770 |
-| NE-T1-06 | Social Security benefits fully exempt for TY 2025 | Neb. Rev. Stat. §77-2716 (LB 873, 2024) |
-| NE-T1-07 | Top rate drops to 4.55% for TY 2026 and 3.99% for TY 2027 | Neb. Rev. Stat. §77-2715.03 |
+| Basic standard deduction, single/MFS | $8,850, subject to dependency/federal-amount limit | [1040N line 6](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf) |
+| Basic standard deduction, MFJ/QSS | $17,700, subject to eligibility | [1040N line 6](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf) |
+| Basic standard deduction, HOH | $12,950, subject to eligibility | [1040N line 6](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf) |
+| Personal exemption credit | $176 each eligible taxpayer/spouse/dependent; nonrefundable | [1040N lines 4/18](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf) |
+| 2026 estimates ordinary trigger | $500 or more expected balance after withholding/credits; worksheet/safe-harbor conditions apply | [2026 estimates](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf) |
 
-## Section 6: Tier 2 rules — requires judgment
+## Boundary table
 
-**Tier 2 rules table**
-
-| Rule ID | Situation | Guidance |
-| --- | --- | --- |
-| NE-T2-01 | **Multi-state income:** Taxpayer has income from another state | NE allows a credit for taxes paid to other states. Requires allocation review and Schedule II. |
-| NE-T2-02 | **Business vs. hobby determination** | NE follows federal hobby loss rules. If IRS disallows Schedule C, NE deductions are also disallowed. |
-| NE-T2-03 | **Bonus depreciation conformity** | Verify NE's current IRC §168(k) conformity status for TY 2025. Add-backs may be required. |
-| NE-T2-04 | **Nebraska Advantage Act credits** | Business incentive credits under the Nebraska Advantage Act may be available. Requires verification of certification and compliance. |
-| NE-T2-05 | **Community property** | Nebraska is NOT a community property state. Standard federal rules apply for MFS. |
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library table**
-
-| Input needed | Where to find it |
+| Fact | Treatment or stopping point |
 | --- | --- |
-| Federal AGI | Federal Form 1040, Line 11 |
-| NE additions | Schedule I (computed from federal return) |
-| NE subtractions | Schedule I (computed from federal return) |
-| Standard/itemized deduction | Federal amounts with NE modifications |
-| Personal exemption credit | Based on filing status and dependents |
-| Tax credits | Schedule II |
-| Estimated tax payments | 1040N-ES records |
-| NE withholding | W-2 Box 17 / 1099 NE withholding amounts |
+| Age/blind or dependent deduction | The 2026 estimate booklet provides additional Nebraska age/blind amounts of $2,050 per condition for unmarried and $1,700 for married, with detailed spouse rules. Apply the federal-amount limit and final-return instructions; do not substitute federal amounts. Final 2026 full instructions/dependent worksheet were not found. [2026 estimate booklet p.5](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf); [77-2716.01](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716.01). |
+| Other-state income | Schedule II is the full-year-resident other-state credit, not a generic credits list. Credit is the least of total Nebraska tax, proportional Nebraska tax on qualifying income and tax actually due/paid to the other state; attach its complete return and use the conversion chart. Withholding is not the other state's tax. [2026 Schedule II](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n_schs.pdf). |
+| Federal business/hobby or community-property facts | Use the completed federal result and correct federal allocation owner. Nebraska-specific hobby/community-property assertions in the old text were not independently reverified; do not create state rules from them. |
+| Incentives / PTE / special capital gain | Nebraska Advantage and other credits need actual certification and current limits. K-1/PTET, special capital-gain election and asset-basis/NOL computations require specialist review, not automatic ordinary-income treatment. |
+| Local income / inheritance | The old no-local-income-tax assertion was not reverified. County inheritance/property and estate/trust matters remain outside this computation; do not infer their absence from this skill. |
+| Later year | The statute separately provides 2027 rates. Do not use them on 2026 taxable income. [77-2715.03(2)](https://nebraskalegislature.gov/laws/statutes.php?statute=77-2715.03). |
 
-## Section 8: Form mapping
+## Worked cases
 
-**Form mapping table**
+### Single wage earner
 
-| Form 1040N Line | Description | Source |
+Single full-year resident, under 65, not blind/dependent, $60,000 federal AGI, no adjustments/itemization/other tax or credits beyond one personal exemption, and $2,000 withholding. The federal liability limit is assumed not to reduce the result. Taxable income is $51,150; gross state tax is $2,026.455; after the $176 credit, $1,850.455, leaving $149.545 illustrated overpayment before final whole-dollar return rounding.
+
+```oa-check
+name: NE resident wages 2026
+inputs:
+  agi: 60000
+  withheld: 2000
+steps:
+  - taxable: max(0, agi - 8850)
+  - gross: 1514.58 + (taxable - 39900) * 0.0455
+  - tax: max(0, gross - 176)
+  - overpayment: withheld - tax
+expected:
+  taxable: 51150
+  gross: 2026.455
+  tax: 1850.455
+  overpayment: 149.545
+```
+
+### Joint return with Social Security already in federal AGI
+
+MFJ full-year residents, both under 65, not blind/dependents, federal AGI $90,000 including $10,000 taxable Social Security. No other adjustments, itemization, additional taxes or credits except two personal exemptions; the federal tax limit does not reduce the result. Subtract only the $10,000 included in AGI. Taxable income is $62,300; gross tax $2,232.915, less $352 credit gives $1,880.915 before final return rounding.
+
+```oa-check
+name: NE joint taxable Social Security subtraction 2026
+inputs:
+  agi: 90000
+  included_ss: 10000
+  exemptions: 2
+steps:
+  - taxable: max(0, agi - included_ss - 17700)
+  - gross: 1651.88 + (taxable - 49530) * 0.0455
+  - credit: exemptions * 176
+  - tax: max(0, gross - credit)
+expected:
+  taxable: 62300
+  gross: 2232.915
+  credit: 352
+  tax: 1880.915
+```
+
+## When to refuse or refer
+
+Refer disputed residence, part-year/nonresident Schedule III, complex other-state conversion, K-1/PTE, depreciation/research/NOL and certified incentive work, unresolved federal-liability limits, fiduciary/estate/inheritance and corporate matters. Amended returns use current 1040N with the Amended Return box, not an assumed old 1040XN route; this skill does not prepare them. [2026 amended-return page](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf).
+
+## Filing and payment
+
+The final 2026 form map replaces the old incorrect lines: AGI 5; state standard 6; itemized 7-9; selected deduction 10; additions 12/subtractions 13; taxable 14; tax 15/other 16; resident exemption credit 18; other-state credit 19; wages/other/K-1 withholding 36-38; PTET 39; estimates 40; total payments 54; use tax 59; due 60/overpayment 61. Schedule I holds adjustments; II is other-state credit; III is nonresident/partial-year computation. [2026 Form 1040N](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf); [2026 schedules](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n_schs.pdf).
+
+The **2025-2026 filing cycle** booklet states the recurring April 15 calendar-year filing date; final 2027 calendar relief and full 2026 instructions remain unconfirmed. Current Form 4868N grants up to six months to file, with federal-extension and paid-preparer-e-file waiver conditions; otherwise file the state application by the original date. Payment is not extended and unpaid tax accrues interest. [2025 booklet, filing procedures](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_Individual_Income_Tax_Booklet.pdf); [current 4868N instructions](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_4868n.pdf).
+
+Use the actual **2026** Form 1040N-ES booklet despite its 2025 directory: ordinary dates April 15, June 15, September 15, 2026 and January 15, 2027, subject to weekend/holiday relief. Required annual amount generally compares 90% current tax with 100% prior-year tax for a full 12-month year, increased to 110% when prior-year AGI exceeds $150,000 ($75,000 MFS per worksheet). Farming/ranching/fishing, first-time filers, no-prior-liability and annualization rules differ. Do not use the 2027 estimate form merely because its directory says 2026. [2026 estimate instructions/worksheet](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf).
+
+## Completion checklist
+
+Confirm resident/status and actual 2026 sources; reconcile AGI/deduction/state adjustments; count eligible exemptions; apply other tax and federal-liability limit where required; substantiate other-state/other credits; reconcile payments/use tax; resolve every partial area and filing-calendar gap before filing.
+
+## Sources
+
+| Source and reading scope | URL | Read on |
 | --- | --- | --- |
-| Line 3 | Federal adjusted gross income | Federal 1040, Line 11 |
-| Line 4 | Nebraska additions | Schedule I |
-| Line 5 | Nebraska subtractions | Schedule I |
-| Line 7 | Nebraska standard or itemized deduction | Computed |
-| Line 10 | Nebraska taxable income | Computed |
-| Line 11 | Nebraska income tax | From tax table or Schedule III |
-| Line 14 | Personal exemption credit | $157 × number of exemptions |
-| Line 20 | Other credits | Schedule II |
-| Line 26 | Nebraska income tax withheld | W-2s / 1099s |
-| Line 27 | Estimated tax payments | 1040N-ES payments |
-| Line 33 | Amount owed or refund | Computed |
+| Final 2026 calculation schedule; read for all four status-specific bands and official base amounts. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/2026_tax_calculation_schedule.pdf | 2026-11-13 |
+| 77-2715.03; read for 2026 versus neighboring 2025/2027 rates and statutory indexing. | https://nebraskalegislature.gov/laws/statutes.php?statute=77-2715.03 | 2026-11-13 |
+| Final 2026 Form 1040N, updated October 15; read for deduction/exemption values, line map, other tax and amended-return route. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n.pdf | 2026-11-13 |
+| Final 2026 Schedules I-II-III; read for adjustment lines, other-state credit and nonresident routing. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_1040n_schs.pdf | 2026-11-13 |
+| 77-2716.01; read for state deduction/federal cap, itemized income-tax exclusion, eligibility and indexing. | https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716.01 | 2026-11-13 |
+| 77-2716; read for bond/refund/benefit modifications and neighboring historical depreciation provisions. | https://nebraskalegislature.gov/laws/statutes.php?statute=77-2716 | 2026-11-13 |
+| 77-27,242; read for state qualified-property/research deductions and no duplicate federal deduction. | https://nebraskalegislature.gov/laws/statutes.php?statute=77-27,242 | 2026-11-13 |
+| 77-2715; read for resident/nonresident tax and federal-liability limitation. | https://nebraskalegislature.gov/laws/statutes.php?statute=77-2715 | 2026-11-13 |
+| 2026 Form 1040N-ES, in 2025 directory; read for trigger, safe harbor, dates, special cases and additional state deductions; not final-return rate authority. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf | 2026-11-13 |
+| Current Form 4868N; read for application/waiver conditions, six-month filing extension and payment interest. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/f_4868n.pdf | 2026-11-13 |
+| 2025 booklet, 2025-2026 filing cycle; read for recurring filing procedure only; not 2026 amount/line authority. | https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_Individual_Income_Tax_Booklet.pdf | 2026-11-13 |
+| DOR individual form index; read for current general booklet still 2025. | https://revenue.nebraska.gov/about/forms/individual-income-tax-forms | 2026-11-13 |
+| DOR 2026 final forms index; read for actual final 2026 individual form/schedule publication. | https://revenue.nebraska.gov/tax-professionals/2026-final-income-tax-forms | 2026-11-13 |
 
-## Section 9: Refusal catalogue
-
-**Refusal catalogue table**
-
-| Refusal ID | Trigger | Response |
-| --- | --- | --- |
-| R-NE-01 | Part-year or nonresident | "NE part-year and nonresident returns require Schedule III allocation. This is outside the scope of this skill." |
-| R-NE-02 | Corporate return | "This skill covers individual income tax only (Form 1040N). Corporate returns (Form 1120N) are not covered." |
-| R-NE-03 | Fiduciary return | "NE fiduciary returns (Form 1041N) are not covered by this skill." |
-| R-NE-04 | Amended return | "NE amended returns (Form 1040XN) are not covered." |
-| R-NE-05 | Inheritance tax | "Nebraska inheritance tax is administered at the county level and is not covered by this skill." |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: full 2026 return instructions/dependent deduction and federal-tax-liability worksheet, final 2027 calendar relief; specialized asset/PTE/NOL/credit and nonresident calculations; legacy no-local-income/community-property/hobby and county inheritance details. No 2025 rate, credit or deduction is projected into 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ne-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ne-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ne-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ne-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
