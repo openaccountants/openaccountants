@@ -71,12 +71,24 @@ def _value(s):
         return None
 
 
+# A space, no-break space or thin space between digit groups ("1 234,56").
+GROUP_SPACE_RE = re.compile(r"(?<=\d)[ \u00a0\u202f\u2009](?=\d{3}\b)")
+
+
 def page_values(page_text):
+    """Every number on the page, read the English way (1,234.56) and the European way
+    (1.234,56, 1 234,56, 2,25 %), so a page that writes figures with a decimal comma is
+    not reported as a miss."""
     vals = set()
-    for m in NUM_RE.findall(page_text):
+    found_nums = NUM_RE.findall(page_text) + NUM_RE.findall(GROUP_SPACE_RE.sub("", page_text))
+    for m in found_nums:
         v = _value(m)
         if v is not None:
             vals.add(round(v, 6))
+        try:
+            vals.add(round(float(m.replace(".", "").replace(",", ".")), 6))
+        except ValueError:
+            pass
     return vals
 
 
