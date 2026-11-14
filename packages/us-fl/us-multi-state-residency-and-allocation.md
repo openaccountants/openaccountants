@@ -1,17 +1,23 @@
 ---
 name: us-multi-state-residency-and-allocation
-description: Tier 2 US federal-level content skill for multi-state residency, domicile, part-year residency, statutory residency (e.g. NY 183-day + abode rule), nonresident income sourcing, the convenience-of-the-employer rule (NY, NJ, CT, PA, NE, AR — partially), equity compensation allocation (stock options grant-to-exercise, RSU grant-to-vest), §4 USC 114 federal preemption of pension source taxation, resident credit for taxes paid to other states, reciprocal-agreement states (PA-NJ, OH-WV-KY-IN-MI-PA-VA), and post-COVID telework sourcing. Covers tax year 2025.
+description: How to work out which US states tax an individual who lives, moves or works in more than one state, for tax year 2026. Gives the method (domicile, statutory residency with each state's own day and abode test, part-year returns, sourcing wages by workdays, the convenience-of-the-employer rule, wage reciprocity, the resident credit for tax paid to another state, 4 U.S.C. 114 on retirement income, equity pay allocation), with key-state tables for New York, New Jersey, Pennsylvania, Connecticut, Delaware, Maryland, Virginia, California, Georgia, Nebraska, Arkansas, Kentucky, Ohio and Illinois, each row linked to that state's own source. Trigger on "moved states", "part-year resident", "183 days", "statutory resident", "convenience of the employer", "remote worker state tax", "reciprocity", "credit for taxes paid to another state". Federal US or non-US residency is in us-tax-residency.
+version: "3.0"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: cross-country-method
 ---
 
-# US multi-state residency and income allocation
+# US multi-state residency and income allocation, tax year 2026
 
-## Scope
+> **Source-cited draft.** Each state rule links to that state's own form, instructions or statute. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**State skills rewritten on 13 November 2026 own their state's detail:** New York residency in `ny-residency-leaving-new-york` and `ny-it-201-resident-return`, California in `ca-residency-leaving-california` and `ca-540-individual-return`, Florida domicile in `fl-moving-to-florida-domicile`, and the Pennsylvania, Illinois, Michigan, Ohio, Georgia, North Carolina and Massachusetts income tax skills. Where this file and a state skill differ, the state skill wins.
+
+## Scope and who this is for
 
 This skill is a method for US individuals who live, move or work in more than one US state. It covers:
 
@@ -123,11 +129,11 @@ New York, Connecticut, California, Georgia and Delaware appear in none of the li
 - **Reverse credit states.** California does not give its residents the credit for Arizona, Oregon or Virginia tax (except Virginia dual residents); instead, residents of Arizona, Guam, Oregon and Virginia claim the credit on their California nonresident return ([2025 Schedule S instructions](https://www.ftb.ca.gov/forms/2025/2025-540-s-instructions.html)). Virginia's Guide says the same from its side.
 - **Dual residents.** Virginia tells an actual (statutory) resident who is domiciled elsewhere to "claim a credit on the return filed in the state of your legal domicile for taxes paid to Virginia" ([VA Form 760 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf)). Other pairs of states differ, and some leave real double tax. Refer.
 - **Attach the other return.** Maryland, Georgia, Arkansas and others refuse the credit without a copy of the other state's return (see those Guides).
-- **Constitutional floor.** *Comptroller v. Wynne* (2015) held that "Maryland's personal income tax scheme violates the dormant Commerce Clause" for denying a credit against its county tax ([Wynne](https://www.law.cornell.edu/supremecourt/text/13-485)). Do not rely on it on a return.
+- **Constitutional floor.** *Comptroller v. Wynne* (2015) held that "Maryland's personal income tax scheme violates the dormant Commerce Clause" for denying a credit against its county tax ([Wynne](https://tile.loc.gov/storage-services/service/ll/usrep/usrep575/usrep575542/usrep575542.pdf)). Do not rely on it on a return.
 
 ## Retirement income: 4 U.S.C. § 114
 
-- "No State may impose an income tax on any retirement income of an individual who is not a resident or domiciliary of such State (as determined under the laws of such State)" ([4 U.S.C. § 114](https://www.law.cornell.edu/uscode/text/4/114)). Residency itself is therefore still decided by each state's own tests. This has applied to amounts received after 31 December 1995.
+- "No State may impose an income tax on any retirement income of an individual who is not a resident or domiciliary of such State (as determined under the laws of such State)" ([4 U.S.C. § 114](https://www.govinfo.gov/content/pkg/USCODE-2024-title4/html/USCODE-2024-title4-chap4-sec114.htm)). Residency itself is therefore still decided by each state's own tests. This has applied to amounts received after 31 December 1995.
 - **Covered:** qualified trusts under § 401(a); SEPs (§ 408(k)); § 403(a) annuity plans and § 403(b) contracts; individual retirement plans (§ 7701(a)(37), which includes IRAs); eligible deferred compensation plans under § 457; governmental plans (§ 414(d)); § 501(c)(18) trusts; and uniformed-services retired pay.
 - **Nonqualified plans (§ 3121(v)(2)(C)), and written plans paying retirement payments to a retired partner for prior service, are covered only if** the payment is either (i) part of a series of substantially equal periodic payments, made not less often than annually, for the life or life expectancy of the recipient (or joint lives with the beneficiary) **or** for a period of not less than 10 years; **or** (ii) paid after termination of employment under a plan maintained **solely** to provide benefits above the listed qualified-plan limits (an excess benefit plan).
 - **Not covered:** a lump-sum or short-period payment from a nonqualified plan that is not an excess benefit plan; severance; bonuses; stock-option and restricted-stock income. These keep the source they had under the paying state's rules (see equity pay below).
@@ -153,7 +159,7 @@ New York, Connecticut, California, Georgia and Delaware appear in none of the li
 | Nonresident employee in Connecticut on 15 days | No Connecticut-source pay; on 16 days, all Connecticut-day pay is taxed | [Conn. Gen. Stat. § 12-711](https://www.cga.ct.gov/current/pub/chap_229.htm) |
 | Virginia resident working in Kentucky who does not commute daily | Kentucky reciprocity does not apply | [KY 740-NP-R](https://revenue.ky.gov/Forms/740-NP-R%20%282025%29.pdf) |
 | California domiciliary abroad or out of state 546 days under an employment contract, with California visits of 45 days in a year | Treated as outside California for other than a temporary purpose; visits of not more than 45 days are disregarded. Fails if intangible income exceeds $200,000 in any contract year, or if the principal purpose is to avoid California tax | [R&TC § 17014](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014) |
-| Nonqualified deferred pay taken as a lump sum after moving | Not protected by § 114 unless it is from an excess benefit plan paid after termination | [4 U.S.C. § 114](https://www.law.cornell.edu/uscode/text/4/114) |
+| Nonqualified deferred pay taken as a lump sum after moving | Not protected by § 114 unless it is from an excess benefit plan paid after termination | [4 U.S.C. § 114](https://www.govinfo.gov/content/pkg/USCODE-2024-title4/html/USCODE-2024-title4-chap4-sec114.htm) |
 
 ## Worked cases
 
@@ -173,7 +179,44 @@ These are illustrations with assumed facts; amounts are rounded to whole dollars
 
 **Case 7: California 546-day absence ([R&TC § 17014](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014)).** A California domiciliary takes a two-year employment contract in Singapore with 30 days of California visits a year. In the second year a share sale produces $250,000 of gains. Because intangible income exceeded $200,000 in a contract year, the 546-day rule does not apply, and residency falls back to the general "temporary or transitory purpose" test. Refer.
 
-**Case 8: retirement income after a move ([4 U.S.C. § 114](https://www.law.cornell.edu/uscode/text/4/114)).** A New York retiree moves to Florida in March. IRA distributions and 401(k) payments received after the move cannot be taxed by New York. A nonqualified plan pays a single lump sum in June; it is not a series of periodic payments and not an excess benefit plan, so § 114 does not protect it, and New York sources it under its own rules (refer).
+**Case 8: retirement income after a move ([4 U.S.C. § 114](https://www.govinfo.gov/content/pkg/USCODE-2024-title4/html/USCODE-2024-title4-chap4-sec114.htm)).** A New York retiree moves to Florida in March. IRA distributions and 401(k) payments received after the move cannot be taxed by New York. A nonqualified plan pays a single lump sum in June; it is not a series of periodic payments and not an excess benefit plan, so § 114 does not protect it, and New York sources it under its own rules (refer).
+
+Cases 2 and 4 recomputed:
+
+```oa-check
+name: New York convenience rule, Texas remote worker (2026)
+inputs:
+  salary: 150000
+  office_days: 30
+  home_days_by_choice: 180
+  required_client_days: 20
+steps:
+  - total_days: office_days + home_days_by_choice + required_client_days
+  - ny_days: office_days + home_days_by_choice
+  - ny_wages: round(salary * ny_days / total_days, 0)
+expected:
+  total_days: 230
+  ny_days: 210
+  ny_wages: 136957
+```
+
+```oa-check
+name: Georgia small-presence test (2026)
+inputs:
+  total_pay: 120000
+  georgia_pay: 4000
+  dollar_cap: 5000
+steps:
+  - pct_test: total_pay * 0.05
+  - limit: min(pct_test, dollar_cap)
+  - margin: georgia_pay - limit
+expected:
+  pct_test: 6000
+  limit: 5000
+  margin: -1000
+```
+
+A negative margin means Georgia pay does not exceed the limit: no Georgia return.
 
 ## When to refuse or refer
 
@@ -214,3 +257,28 @@ These are illustrations with assumed facts; amounts are rounded to whole dollars
 - [ ] Equity awards allocated over each state's allocation period.
 - [ ] Every state marked **check** confirmed on its own site, or referred.
 - [ ] Withholding refunds claimed in the right state; estimated tax set up for 2026.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| NY Tax Department, nonresident and residency FAQ. Read for the 184-day and permanent place of abode test and "any part of a day is a day". | https://www.tax.ny.gov/pit/file/nonresident-faqs.htm | 2026-10-16 |
+| NY IT-203 instructions and TSB-M-06(5)I. Read for the convenience rule and the bona fide employer office factors. | https://www.tax.ny.gov/pdf/memos/income/m06_5i.pdf | 2026-10-16 |
+| NJ GIT-6. Read for the New Jersey residency test and Pennsylvania reciprocity. | https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git6.pdf | 2026-10-16 |
+| NJ convenience rule FAQ. Read for the 2023 home-state rule. | https://www.nj.gov/treasury/taxation/conveniencerulefaq.shtml | 2026-10-16 |
+| PA 2025 PA-40 instructions. Read for reciprocity states and refunds. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf | 2026-10-16 |
+| Conn. Gen. Stat. chapter 229 (12-701, 12-711). Read for the residency test, the convenience rule and the 15-day rule. | https://www.cga.ct.gov/current/pub/chap_229.htm | 2026-10-16 |
+| Delaware Code title 30, chapter 11. Read for the residency test and the necessity rule. | https://delcode.delaware.gov/title30/c011/sc01/index.html | 2026-10-16 |
+| Maryland 2025 nonresident booklet. Read for the 183-day and six-month abode tests and reciprocity. | https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/nonresident-booklet.pdf | 2026-10-16 |
+| Va. Code 58.1-302 and 2025 Form 760 instructions. Read for the actual resident test and reciprocity. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/ | 2026-10-16 |
+| Cal. R&TC 17014 and 2025 Schedule S instructions. Read for residency, the 546-day rule ($200,000) and the credit. | https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014 | 2026-10-16 |
+| Georgia DOR, residency filing requirements. Read for the 5% and $5,000 test. | https://dor.georgia.gov/residency-filing-requirements | 2026-10-16 |
+| Kentucky Form 740-NP-R (2025). Read for reciprocity states and conditions. | https://revenue.ky.gov/Forms/740-NP-R%20%282025%29.pdf | 2026-10-16 |
+| Ohio employer withholding reciprocity FAQ. Read for the five reciprocity states. | https://tax.ohio.gov/help-center/faqs/employer-withholding-reciprocity/employer-withholding-reciprocity | 2026-10-16 |
+| IL-1040 instructions. Read for the four reciprocity states. | https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-1040-instr.pdf | 2026-10-16 |
+| Arkansas Act 1019 of 2021. Read for the physical-presence rule and the credit cap. | https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2021R%2FPublic%2FACT1019.pdf | 2026-10-16 |
+| Nebraska Circular EN instructions. Read for the LB 1023 seven-day withholding rule. | https://revenue.nebraska.gov/sites/default/files/doc/business/Cir_En_2025/2026_instruct.pdf | 2026-10-16 |
+| 4 U.S.C. 114 (govinfo). Read for the bar on source-state tax of nonresidents' retirement income and its definitions. | https://www.govinfo.gov/content/pkg/USCODE-2024-title4/html/USCODE-2024-title4-chap4-sec114.htm | 2026-11-13 |
+| Comptroller of the Treasury of Maryland v. Wynne, 575 U.S. 542 (2015), U.S. Reports (Library of Congress). Read for the holding on the county tax credit. | https://tile.loc.gov/storage-services/service/ll/usrep/usrep575/usrep575542/usrep575542.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 state forms and instructions were not published when read, so the state rules come from 2025 documents and current statutes; Georgia's statutory residency test (O.C.G.A. 48-7-1); Kentucky's and Arkansas's statutory residency tests; the reciprocity pairs Michigan-Minnesota, Minnesota-North Dakota, North Dakota-Montana and Indiana-Wisconsin; California's equity allocation period in FTB Publication 1004; the convenience rules of states not listed.

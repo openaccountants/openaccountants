@@ -3,15 +3,16 @@ name: mg-vat-gst
 description: "Madagascar 2026 TVA rates, domestic liability, eligible input credit, imported services and statutory monthly return checklist; partial operational scope."
 jurisdiction: MG
 tax_year: 2026
-last_updated: 2026-11-01
-version: 1.1
+last_updated: 2026-11-14
+version: 1.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Madagascar TVA: ordinary monthly computation v1.1
+# Madagascar TVA: ordinary monthly computation v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Madagascar.
 

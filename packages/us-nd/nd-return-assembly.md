@@ -1,973 +1,534 @@
 ---
 name: nd-return-assembly
-description: "Final capstone orchestrator that assembles the complete federal + North Dakota filing package for a full-year North Dakota-resident sole proprietor or single-member LLC disregarded for federal tax. Consumes outputs from every upstream federal and North Dakota content skill (bookkeeping, Schedule C/SE, QBI, retirement, SE health insurance, quarterly estimated tax, federal assembly, 1099-NEC, nd-income-tax, nd-estimated-tax, nd-payroll, nd-corporate-tax routing checks, and nd-sales-tax for closing out the indirect-tax year) to produce a single unified reviewer package: every worksheet, every form, every cross-skill reconciliation, the final taxpayer action list with payment and filing instructions, the next-year ND-1ES voucher schedule, and the reviewer brief. This skill does NOT recompute tax -- it ORCHESTRATES. Trigger on phrases like \"assemble the North Dakota return\", \"final ND package\", \"ND-1 reviewer package\", \"ND return assembly\", or \"package up the Dakota return\". MUST be loaded alongside us-tax-workflow-base v0.2 or later and every content skill listed in Section 5. North Dakota full-year residents only. Sole proprietors and single-member LLCs disregarded for federal tax only."
+description: "Final capstone orchestrator that assembles the complete federal and North Dakota filing package for tax year 2026 for a full-year North Dakota resident sole proprietor or single-member LLC disregarded for federal tax. Consumes the outputs of every upstream federal and North Dakota skill (bookkeeping, Schedule C and SE, QBI, retirement, self-employed health insurance, quarterly estimated tax, federal return assembly, 1099-NEC, nd-income-tax, nd-estimated-tax, nd-payroll, nd-corporate-tax routing checks and nd-sales-tax status) and produces one reviewer package with every worksheet, every cross-skill reconciliation, the taxpayer action list with filing and payment steps, the 2027 ND-1ES schedule and the reviewer brief. It does not recompute tax; it orchestrates and links every figure to the skill that owns it. Trigger on assemble the North Dakota return, final ND package, ND-1 reviewer package, ND return assembly, package up the Dakota return. Load alongside us-tax-workflow-base and every content skill in the loading order. Full-year North Dakota residents only."
+version: "3.1"
 jurisdiction: US-ND
-tax_year: 2025
-last_updated: 2026-11-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. North Dakota indexes its brackets and the 2026 amounts were not published when checked on 2026-11-13.
-version: "2.2"
+type: filing-howto
 ---
 
-# ND Return Assembly
+# North Dakota return assembly, tax year 2026 (capstone orchestrator)
 
-## North Dakota Return Assembly Skill -- Capstone Orchestrator
+> **Source-cited draft.** Built from the 2025 North Dakota individual income tax booklet (the 2025-2026 filing cycle, the latest published), the 2026 Form ND-1ES, the 2025 Schedule ND-1UT, the Tax Commissioner's individual income tax and credit pages and N.D.C.C. chapter 57-38, read on 2026-11-14. No accountant has reviewed it. A qualified professional (Enrolled Agent, CPA or attorney under Circular 230) must review the package before filing.
 
-Scope. This is THE skill that runs LAST. Every other skill in the North Dakota stack feeds into this one. The output is the complete reviewer package that a credentialed reviewer (Enrolled Agent, CPA, or attorney under Circular 230) signs off on before the return goes to the taxpayer or to the North Dakota Office of State Tax Commissioner.
+**Answer first.** This skill runs last. Federal first, North Dakota second: the 2026 Form ND-1 starts from federal taxable income (Form 1040, line 15), entered even when negative, so every federal deduction, including the standard or itemized deduction and the QBI deduction, is already in the starting figure. North Dakota then adds and subtracts its own adjustments, applies the 2026 rate schedules owned by `nd-income-tax`, subtracts credits, withholding and estimates, and adds any Schedule ND-1UT interest. The orchestrator checks that every upstream skill ran, that every figure on the ND-1 equals the figure its owning skill produced, and then writes three files: a master workbook, a reviewer brief and a taxpayer action list. The 2026 Form ND-1 is due by the regular due date, generally 15 April 2027. No figure is restated here; each is linked to the skill that owns it.
 
-This skill does not compute anything new. Its job is to verify that every upstream skill ran, every upstream self-check passed, every cross-skill reconciliation holds, and the package is internally consistent.
+## Scope and who this is for
 
-Quality tier. Q3 -- AI-drafted, not independently verified. Researched 2026-05-29 against the ND Office of State Tax Commissioner, IRS, and the upstream ND content skills in this same package directory. A qualified professional must review before filing.
+In scope: tax year 2026 (returns filed in 2027) for a full-year North Dakota resident, single or married filing jointly with both spouses full-year residents, who is a sole proprietor or owns a single-member LLC disregarded for federal tax, possibly with W-2 wages (including Minnesota or Montana wages under reciprocity), interest, dividends, retirement income, Social Security, military retirement, farm income with averaging, Renaissance Zone income, or enrolled-member reservation income.
 
-## How this workflow runs
+Primary North Dakota outputs: Form ND-1, Schedule ND-1SA (statutory adjustments), Schedule ND-1TC (credits), Schedule ND-1CR (credit for income tax paid to another state), Schedule ND-1FA (farm income averaging) if used, Schedule ND-1UT (underpayment of estimated tax) if needed, and the 2027 Form ND-1ES schedule.
 
-Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
+Refused at this orchestrator: Schedule ND-1NR (nonresident or part-year), amended returns, fiduciary returns (Form 38), corporations (Form 40), partnerships (Form 58), S corporations (Form 60), and incoming North Dakota Schedule K-1s from pass-through entities.
 
-- Do NOT ask the user "how deep do you want me to go". The taxpayer asked for a North Dakota return. Produce it.
-- Do NOT announce tool budgets or token counts. Execute.
-- Do NOT ask which deliverables to prioritize. Produce every deliverable listed in Section 7. If you run out of context, finish the numbers first, then produce whatever formatted outputs you can, and state honestly at the end which deliverables are partial.
-- Do NOT re-validate scope intake already validated. Residency, business structure, filing status, MN/MT reciprocity status, oil & gas income flag, tribal-enrollment flag, Renaissance Zone flag, age, dependents -- all of that came from intake. Cross-check specific numbers during reconciliation but do not re-interrogate the taxpayer.
-- Do NOT pause between content skills to check in. Run them in order (Section 5) without prose updates between each one. One status message at the end is enough.
-- Self-checks are targets, not blockers. A failed self-check is a flag in the reviewer brief, not a workflow halt. The reviewer handles edges.
-- Primary citations live in the final reviewer brief, not in intermediate computation. Don't stop to cite N.D.C.C. §57-38-30.3 mid-bracket-multiplication.
+Who owns what:
 
-Failure mode to avoid: halting mid-execution to ask a meta-question about workflow pacing. That is disqualifying. If you feel the urge to ask "how should I proceed," pick the most defensible path, proceed, and flag the decision for the reviewer.
+| Topic | Skill |
+| --- | --- |
+| 2026 rate schedules, additions, subtractions, credits, Schedule ND-1SA and ND-1TC detail | `nd-income-tax` |
+| 2026 estimated tax tests, Schedule ND-1UT interest, the 2027 ND-1ES schedule | `nd-estimated-tax` |
+| Nonresident sourcing, reciprocity, military residence, credit for tax paid to another state | `nd-cross-border-tax` |
+| Employer withholding and reconciliation (if the taxpayer is also an employer) | `nd-payroll` |
+| Sales and use tax status | `nd-sales-tax` |
+| Corporate and pass-through routing | `nd-corporate-tax` |
+| The federal return, Form 1040 line 15 and every federal figure | `us-federal-return-assembly` and the federal skills it loads |
+| 1099-NEC thresholds and deadlines | `us-1099-nec-issuance` |
 
-## Section 1 -- Metadata
+## Ask the client first
 
-- **Jurisdiction** -- North Dakota (US-ND) -- full-year residents only
-- **Skill type** -- Tier 2 orchestrator (capstone)
-- **Tax year** -- 2025 (filed in 2026)
-- **Primary forms produced** -- Form ND-1, Schedule ND-1SA (additions/subtractions), Schedule ND-1TC (credits), Schedule ND-1CR (credit for taxes paid to other states), Schedule ND-1FA (farm income averaging, if applicable), Schedule ND-1UT (underpayment of estimated tax), ND-1ES (2026 estimated payment vouchers)
-- **Forms refused at this orchestrator** -- Form ND-1NR (non-resident / part-year), Form ND-1X (amended), Form 38 (fiduciary), Form 40 (corporate), Form 58 (partnership), Form 60 (S-corp), inbound ND K-1 from pass-throughs
-- **Authority** -- North Dakota Office of State Tax Commissioner
-- **Statutes** -- N.D.C.C. Chapter 57-38 (Individual Income Tax); N.D.C.C. §57-38-30.3 (rate schedule); N.D.C.C. §57-38-01.18 (Renaissance Zone); N.D.C.C. §57-38-30 (military retirement subtraction)  _(N.D.C.C. Chapter 57-38)_
-- **Filing deadline** -- April 15, 2026
-- **Extension deadline** -- October 15, 2026 (federal Form 4868 grants automatic ND extension; no separate ND form required)
-- **TY 2025 rate structure** -- Graduated 3-bracket: 0% / 1.95% / 2.50% per N.D.C.C. §57-38-30.3  _(N.D.C.C. §57-38-30.3)_
-- **Version** -- 0.1
-- **Last updated** -- 2026-05-29
-- **Validation** -- AI-drafted -- Q3
+Intake and the content skills have already collected the facts. Use what they captured; ask again only where something is missing or contradicts itself. Before assembly, confirm that intake holds:
 
-### Sources consulted
+1. **Identity and status:** taxpayer name, SSN or ITIN (last four digits only in working files), filing status (single, married filing jointly, married filing separately, head of household, qualifying surviving spouse), dates of birth (they drive the federal additional standard deduction already inside line 15), dependents with SSNs.
+2. **Residence:** full-year North Dakota residence for the taxpayer and, if joint, the spouse; days spent outside North Dakota; whether the person is in the armed forces.
+3. **Business structure:** sole proprietor or single-member LLC disregarded federally; no S corporation, partnership or incoming North Dakota Schedule K-1.
+4. **Cross-border wages:** any W-2 wages from Minnesota or Montana employers and whether Minnesota Form MW-R or Montana Form MT-R was given to the employer; any wages from other states.
+5. **Flags:** oil and gas royalty or mineral income; enrolled tribal member with reservation income; Renaissance Zone project; military retirement or military pay; Social Security; farm income and a federal Schedule J election.
+6. **Documents:** Forms W-2, 1099-NEC, 1099-R, SSA-1099, 1095-A, B or C; 2026 North Dakota estimated payment records; the 2025 Form ND-1 (for line 25 and any overpayment applied to 2026).
 
-**Sources consulted**  _(Sources consulted list)_
+If any item is missing, refuse with R-ND-FINAL-5 and name the item.
 
-| # | Source | URL |
+### How this workflow runs
+
+- Do not ask the user "how deep do you want me to go". The taxpayer asked for a North Dakota return. Produce it.
+- Do not announce tool budgets or token counts. Execute.
+- Do not ask which deliverables to prioritize. Produce all three files. If context runs short, finish the numbers first, then produce what formatted output you can, and say at the end which deliverables are partial.
+- Do not re-validate scope intake already validated (residence, business structure, filing status, reciprocity, oil and gas, tribal, Renaissance Zone, age, dependents). Cross-check specific numbers during reconciliation; do not re-interrogate the taxpayer.
+- Do not pause between content skills to check in. Run them in the loading order without prose updates between them. One status message at the end is enough.
+- Self-checks are targets, not blockers. A failed self-check is a flag in the reviewer brief, not a halt. The reviewer handles edges.
+- Primary citations go in the reviewer brief, not in intermediate computation.
+
+Failure mode to avoid: halting mid-run to ask a meta-question about pacing. If you feel the urge to ask "how should I proceed", pick the most defensible path, proceed, and flag the decision for the reviewer.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+None are stated here. The 2026 rate schedules and every North Dakota adjustment and credit figure belong to `nd-income-tax`; estimated tax thresholds and the interest rate belong to `nd-estimated-tax`; every federal figure belongs to the federal skills. The orchestrator compares figures; it does not hold them.
+
+### Step 1: pre-flight checks
+
+| Check | Question | Refusal if it fails |
 | --- | --- | --- |
-| 1 | ND Office of State Tax Commissioner -- Individual Income Tax | https://www.tax.nd.gov/tax-types/individual-income-tax |
-| 2 | ND -- 2025 Individual Income Tax Booklet (Form ND-1 instructions) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| 3 | ND -- Form ND-1 (Individual Income Tax Return) | https://www.tax.nd.gov/forms |
-| 4 | ND -- Schedule ND-1SA (Statutory Adjustments) | https://www.tax.nd.gov/forms |
-| 5 | ND -- Schedule ND-1TC (Tax Credits) | https://www.tax.nd.gov/forms |
-| 6 | ND -- Schedule ND-1CR (Credit for Income Tax Paid to Another State) | https://www.tax.nd.gov/forms |
-| 7 | ND -- Schedule ND-1FA (Farm Income Averaging) | https://www.tax.nd.gov/forms |
-| 8 | ND -- Schedule ND-1UT (Underpayment of Estimated Tax) | https://www.tax.nd.gov/forms |
-| 9 | ND -- Form ND-1ES (Estimated Individual Income Tax) | https://www.tax.nd.gov/forms |
-| 10 | ND Taxpayer Access Point (TAP) -- online filing & payment | https://apps.nd.gov/tax/tap/ |
-| 11 | ND -- Reciprocity Agreement with Minnesota and Montana | https://www.tax.nd.gov/individual/reciprocity |
-| 12 | ND -- Renaissance Zone Program | https://www.tax.nd.gov/business/renaissance-zone |
-| 13 | N.D.C.C. Chapter 57-38 (Income Tax) | https://www.ndlegis.gov/cencode/t57c38.pdf |
-| 14 | IRS Modernized e-File (MeF) -- Federal/State joint filing | https://www.irs.gov/e-file-providers/modernized-e-file-overview |
+| PF-1 | Has `us-federal-return-assembly` computed Form 1040? | R-ND-FINAL-1 |
+| PF-2 | Is federal taxable income (Form 1040, line 15) available as a finite number? If the federal computation is below zero, the federal form shows 0, but Form ND-1, line 1b takes the negative number with a minus sign ([2025 booklet, line 1b](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)). Flag it. | R-ND-FINAL-1 |
+| PF-3 | Is full-year North Dakota residence confirmed, including the statutory 7-month rule and armed forces residence (`nd-cross-border-tax`)? | R-ND-FINAL-6 |
+| PF-4 | Is the business a sole proprietorship or disregarded single-member LLC? | R-ND-FINAL-10 / R-ND-FINAL-11 |
+| PF-5 | Is the tax year 2026? | R-ND-FINAL-12 |
+| PF-6 | If married filing jointly, are both spouses full-year residents? (If either was a nonresident for any part of the year, Schedule ND-1NR is required.) | R-ND-FINAL-13 |
+| PF-7 | Is this an original return, not an amended one? | R-ND-FINAL-14 |
+| PF-8 | Any incoming Schedule K-1 from an S corporation or partnership? | R-ND-FINAL-20 |
+| PF-9 | Wages earned outside North Dakota, Minnesota or Montana? | R-ND-FINAL-16 |
+| PF-10 | Oil, gas or mineral royalty income? Income tax treatment is in scope; extraction and production tax filings are not. | Flag only; R-ND-FINAL-21 for the excise filings |
+| PF-11 | Farm income with a federal Schedule J election? | In scope: confirm `nd-income-tax` produced Schedule ND-1FA |
+| PF-12 | Renaissance Zone income? | In scope: confirm the subtraction on Schedule ND-1SA |
+| PF-13 | Enrolled tribal member with income earned on the reservation? | In scope: confirm the subtraction with enrollment evidence |
 
-## Section 2 -- What this skill is
+### Step 2: confirm the federal skills ran
 
-The final capstone skill. Every other North Dakota skill and every relevant federal skill feeds into this one. The deliverable is the complete reviewer package that a credentialed reviewer signs off on before filing.
+In this order, each with its outputs and self-check log: `us-sole-prop-bookkeeping` (Schedule C classification), `us-schedule-c-and-se-computation` (Schedule C, Form 8829, Schedule SE), `us-self-employed-retirement` (SEP or solo 401(k), Schedule 1), `us-self-employed-health-insurance` (section 162(l), iterated with any premium tax credit), `us-qbi-deduction` (Form 8995 or 8995-A, Form 1040 line 13; it lowers North Dakota tax because North Dakota starts after it), `us-federal-return-assembly` (Form 1040 and schedules; line 15 is the single most important handoff), `us-quarterly-estimated-tax` (Form 2210 and the 2027 Form 1040-ES schedule), and `us-1099-nec-issuance` (contractor list and W-9 gaps; may run in parallel after bookkeeping). If any is missing or its self-checks failed, refuse with R-ND-FINAL-1 or R-ND-FINAL-2 naming the skill.
 
-The skill enforces three things:
+### Step 3: confirm the North Dakota skills ran
 
-1. Order of operations. Federal first, North Dakota second. The order is non-negotiable because federal taxable income (Form 1040 Line 15, NOT federal AGI) flows into ND-1 Line 1 as the ND starting point. This is unusual -- most states start at federal AGI; ND starts after the federal standard/itemized deduction AND after the federal QBI deduction. Every federal adjustment -- Schedule C net profit, ½ SE tax, SE health insurance, retirement contributions, QBI deduction, standard or itemized deduction -- is already baked into the starting figure before ND modifications apply. Unlike Michigan there is no city-level income tax in North Dakota -- N.D.C.C. does not authorize municipal income tax -- so the city step from the MI orchestrator is omitted entirely.
-2. Cross-skill reconciliation. Every figure that appears on the ND-1 must match the corresponding figure produced by the source skill. A mismatch halts assembly with a specific, named refusal.
-3. Reviewer-grade output. The final package is structured for a CPA or EA to review in under 30 minutes: cover summary, brief, exhibits in order, action list, citations.
+1. `nd-income-tax`: Form ND-1 with Schedule ND-1SA, ND-1TC, ND-1CR and ND-1FA as needed; North Dakota taxable income, tax under the 2026 schedule, credits, refund or balance due.
+2. `nd-estimated-tax`: Schedule ND-1UT interest for any short 2026 installment, and the 2027 ND-1ES schedule if the 2026 net tax liability makes estimates required.
+3. `nd-payroll`: flag only. If the taxpayer is also a North Dakota employer, record the status of the withholding returns and annual reconciliation. It does not block the individual return.
+4. `nd-corporate-tax`: routing check only. Any corporate, partnership or S corporation fact refuses with R-ND-FINAL-10, R-ND-FINAL-11 or R-ND-FINAL-18.
 
-## Section 3 -- Orchestration runbook
+Any missing skill or failed self-check refuses with R-ND-FINAL-1 or R-ND-FINAL-2.
 
-When invoked, the agent executes the following steps in order. No step is optional. No step is skipped without an explicit refusal.
+### Step 4: no city or county return step
 
-### Step 1 -- Confirm intake artifact exists
+The North Dakota individual booklet sets out no city or county income tax return, so this workflow has no local return step. If intake flagged a "city return", treat it as an intake error: refuse with R-ND-FINAL-7 and route back to intake. (The credit on Schedule ND-1CR covers income tax paid to another state or a local jurisdiction in that state; that is a different point, handled in Step 5.)
 
-0. **Step 1** -- Verify the intake skill has produced: Taxpayer name, SSN/ITIN (last 4 only in working files); Filing status (Single / MFJ / MFS / HoH / QSS); Residency confirmation (full-year North Dakota); Date of birth for taxpayer and spouse (drives the federal age-65 additional standard deduction, which feeds Line 1 starting point); Dependents list with SSNs (drives federal dependents -- ND has no separate child deduction unlike NC); Business structure (sole prop or SMLLC disregarded); MN/MT reciprocity flag -- taxpayer wages earned in Minnesota or Montana while a ND resident are exempt from those states' income tax under the reciprocity agreements; conversely a ND resident working a W-2 job in MN/MT files no MN/MT return for those wages; Oil & gas / mineral income flag -- flag-only; the orchestrator does not produce ND oil extraction tax filings (out of scope, see R-ND-FINAL-21); Tribal-enrollment flag -- enrolled tribal members earning income on their reservation may take a Schedule ND-1SA subtraction; Renaissance Zone flag -- income from a designated ND Renaissance Zone may be exempt under N.D.C.C. §57-38-01.18; Military retirement flag -- ND fully subtracts military retirement pay per N.D.C.C. §57-38-30(5) `[VERIFY:]` 2025 conformity; Social Security flag -- ND fully subtracts taxable Social Security benefits per N.D.C.C. §57-38-30 `[VERIFY:]` 2025 statute reference; Job Service ND unemployment benefits flag -- taxable federally; subtracted on ND-1SA `[VERIFY:]` 2025 schedule line; Health coverage history (federal Form 1095-A / B / C); W-2s, 1099-NECs, 1099-Rs received. If any item is missing, refuse with R-ND-FINAL-5.
+### Step 5: reciprocity and other-state wages
 
-- **R-ND-FINAL-5** -- Refuse if any required intake item is missing.  _(Step 1)_
+For a North Dakota resident with Minnesota or Montana wages: North Dakota has reciprocity agreements with both states, so compensation for services is taxable only by the state of residence ([2025 booklet, "Reciprocity"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)). Confirm the employer had Minnesota Form MW-R or Montana Form MT-R, so no Minnesota or Montana tax was withheld. If it was withheld, the taxpayer must file in that state to get it back: refuse that filing with R-ND-FINAL-22 and continue the North Dakota return. No Schedule ND-1CR credit is claimed for reciprocity wages, because no tax was due to the other state. Wages from any other state may need that state's nonresident return and a Schedule ND-1CR credit (`nd-cross-border-tax`); simple single-state cases proceed, multi-state apportionment refuses with R-ND-FINAL-16.
 
-### Step 2 -- Confirm federal skills ran and produced outputs
+### Step 6: run the verification matrix
 
-0. **Step 2** -- Verify in order: 1. us-sole-prop-bookkeeping -- Schedule C classification with reconciled bank ledger. 2. us-schedule-c-and-se-computation -- Schedule C bottom line, Form 8829, Schedule SE. 3. us-self-employed-retirement -- SEP / Solo 401(k) contribution and Schedule 1 Line 16 amount. 4. us-self-employed-health-insurance -- §162(l) deduction and Schedule 1 Line 17 amount (with iterative PTC convergence if marketplace coverage). 5. us-qbi-deduction -- Form 8995 or 8995-A, deduction to Form 1040 Line 13. (CRITICAL -- ND starts from federal taxable income, which is AFTER QBI. So QBI value materially reduces ND tax.) 6. us-federal-return-assembly -- Form 1040, Schedules 1, 2, 3, all supporting forms, federal total tax, federal balance due / refund. In particular, Form 1040 Line 15 (federal taxable income) is the single most important upstream output for ND. 7. us-quarterly-estimated-tax -- Form 2210 (if penalty) + 2026 Form 1040-ES schedule. 8. us-1099-nec-issuance -- Parallel; only needs bookkeeping. Contractor list plus W-9 gaps. If any is missing or its self-checks did not pass, refuse with R-ND-FINAL-1 or R-ND-FINAL-2 naming the specific skill.
+Run every check below. Each is an equality between a figure on a final form and the output of the skill that produced it. Tolerance is USD 1 unless noted; a failure halts assembly with R-ND-FINAL-3 naming the check.
 
-- **R-ND-FINAL-1 / R-ND-FINAL-2** -- Refuse naming the specific skill if any federal skill is missing or its self-checks did not pass.  _(Step 2)_
+Form line numbers below are those on the 2025 forms (the 2025-2026 filing cycle). Confirm each against the 2026 Form ND-1, its schedules and the 2026 Form 1040 when published.
 
-### Step 3 -- Confirm North Dakota skills ran
+#### 6A: federal internal consistency (re-verified)
 
-0. **Step 3** -- Execute in order: 1. nd-income-tax -- Form ND-1, Schedule ND-1SA (additions and subtractions including Social Security, military retirement, Renaissance Zone, tribal reservation, US bond interest, Job Service ND unemployment), Schedule ND-1TC (credits), Schedule ND-1CR (credit for taxes paid to another state -- if any wages earned outside MN/MT reciprocity zone). Produces ND taxable income, ND tax via the 0% / 1.95% / 2.50% bracket schedule, credits, refund or balance due. 2. nd-estimated-tax -- Produces a 4-payment ND-1ES voucher schedule for 2026 if expected ND liability after withholding exceeds the $1,000 threshold per N.D.C.C. §57-38-62. Also computes any current-year ND underpayment interest exposure on Schedule ND-1UT. 3. nd-payroll -- Flag-only at this orchestrator stage. If the taxpayer is also a ND withholding agent (employer), confirm quarterly Form 306 and annual Form 307 reconciliation status. Does NOT block the individual return. 4. nd-corporate-tax -- Routing check only. If intake flagged anything corporate (Form 40) or pass-through (Form 58 / Form 60), refuse with R-ND-FINAL-10 / R-ND-FINAL-11 / R-ND-FINAL-18. If any required skill failed or its self-check failed, refuse with R-ND-FINAL-1 or R-ND-FINAL-2.
-
-- **R-ND-FINAL-1 / R-ND-FINAL-2 / R-ND-FINAL-10 / R-ND-FINAL-11 / R-ND-FINAL-18** -- Refuse if any required ND skill or self-check failed, or routing check triggers corporate/pass-through scope violation.  _(Step 3)_
-
-### Step 4 -- No city / local return step
-
-0. **Step 4** -- North Dakota does not authorize municipal or county income tax. Skip the city step entirely. If intake somehow flagged a "city return," that is an intake error -- refuse with R-ND-FINAL-7 and route back to intake for correction.
-
-- **R-ND-FINAL-7** -- Refuse and route back to intake if a "city return" is flagged, since ND has no municipal income tax.  _(Step 4)_
-
-### Step 5 -- MN/MT reciprocity check
-
-0. **Step 5** -- If intake flagged W-2 wages earned in Minnesota or Montana while the taxpayer was a ND resident: Confirm a Form MWR (Minnesota) or equivalent Montana reciprocity exemption certificate was on file with the employer, so MN/MT income tax was NOT withheld. The wages are taxable only in ND. If MN or MT withholding WAS taken (employer error), the taxpayer must file a MN or MT non-resident return to recover the withholding. That filing is out of scope here -- refuse with R-ND-FINAL-22 and route to a multistate preparer. If wages were earned in any OTHER state (not MN, not MT), the taxpayer may need a non-resident return in that state and a ND-1CR credit for tax paid. Single-state simple W-2 cases proceed; complex multistate apportionment refuses with R-ND-FINAL-16.
-
-- **R-ND-FINAL-22 / R-ND-FINAL-16** -- Refuse with R-ND-FINAL-22 if MN/MT withholding was taken in error; refuse with R-ND-FINAL-16 for complex multistate apportionment beyond reciprocity.  _(Step 5)_
-
-### Step 6 -- Run the verification matrix
-
-0. **Step 6** -- Run every check in Section 6. Each check is a specific equality between a number on a final form and the source-of-truth output from the producing skill. A failure halts assembly with R-ND-FINAL-3.
-
-- **R-ND-FINAL-3** -- Halts assembly if any Section 6 reconciliation check fails.  _(Step 6)_
-
-### Step 7 -- Aggregate artifacts
-
-0. **Step 7** -- Pull: Every "Assumed" entry from every upstream skill into the assumption log. Every "Taxpayer input needed" item into the taxpayer input log. Every "Reviewer judgment needed" item into the reviewer flag log. Every refusal that fired anywhere in the chain into the refusal log.
-
-### Step 8 -- Compose the deliverables
-
-0. **Step 8** -- Produce the three output files specified in Section 7. Place them in /mnt/user-data/outputs/. Present them at the end with present_files.
-
-### Step 9 -- Final status message
-
-0. **Step 9** -- A single message stating: which skills ran, which self-checks passed, which deliverables were produced, any partial deliverables and why. Done.
-
-## Section 4 -- Pre-flight checks
-
-**Pre-flight checks table**
-
-| Check | Question | Refusal if fails |
+| Check | Equation | Owning skill |
 | --- | --- | --- |
-| PF-1 | Has federal Form 1040 been computed by `us-federal-return-assembly`? | R-ND-FINAL-1 |
-| PF-2 | Is federal taxable income (Form 1040 Line 15) a finite, non-negative number? (Negative federal taxable income flows as zero into ND-1 Line 1 but flag it.) | R-ND-FINAL-1 |
-| PF-3 | Has the taxpayer's full-year North Dakota residency been confirmed? | R-ND-FINAL-6 |
-| PF-4 | Is the business structure sole prop or SMLLC disregarded? S-corp or partnership? | R-ND-FINAL-10 / R-ND-FINAL-11 |
-| PF-5 | Is the tax year 2025? | R-ND-FINAL-12 |
-| PF-6 | If MFJ: are both spouses full-year ND residents? Mixed-residency couples → refuse. | R-ND-FINAL-13 |
-| PF-7 | Is this a current-year original return (not amended)? | R-ND-FINAL-14 |
-| PF-8 | Did intake report any inbound K-1 from an S-corp or partnership? | R-ND-FINAL-20 |
-| PF-9 | Did intake report wages earned outside ND, MN, or MT? Multi-state apportionment beyond reciprocity is out of scope. | R-ND-FINAL-16 |
-| PF-10 | Did intake report oil/gas/mineral royalty income? Income tax effect is in scope; ND oil extraction tax filings (Form OG-1, etc.) are NOT. | Flag-only; refuse oil-extraction tax with R-ND-FINAL-21 |
-| PF-11 | Did intake report farm income with averaging election (Schedule ND-1FA)? | In scope -- confirm `nd-income-tax` produced Schedule ND-1FA |
-| PF-12 | Did intake report Renaissance Zone income? | In scope -- confirm subtraction documented on ND-1SA |
-| PF-13 | Did intake report tribal-enrolled-member income earned on reservation? | In scope -- confirm subtraction documented on ND-1SA with enrollment evidence |
+| F-1 | Schedule C line 31 = Schedule 1 line 3, carried to Form 1040 | `us-schedule-c-and-se-computation` |
+| F-2 | Schedule SE line 12 = Schedule 2 line 4 | `us-schedule-c-and-se-computation` |
+| F-3 | Schedule SE line 13 = Schedule 1 line 15 | `us-schedule-c-and-se-computation` |
+| F-4 | SEP or solo 401(k) employer plus employee amounts = Schedule 1 line 16 | `us-self-employed-retirement` |
+| F-5 | Section 162(l) deduction = Schedule 1 line 17 | `us-self-employed-health-insurance` |
+| F-6 | QBI deduction = Form 1040 line 13 | `us-qbi-deduction` |
+| F-7 | Form 1040 line 11 (AGI) = line 9 less line 10 | `us-federal-return-assembly` |
+| F-8 | Form 1040 line 14 = line 12 plus line 13 | `us-federal-return-assembly` |
+| F-9 | Form 1040 line 15 = line 11 less line 14 (the North Dakota handoff) | `us-federal-return-assembly` |
+| F-10 | Total tax = Form 1040 line 24 | `us-federal-return-assembly` |
+| F-11 | Form 2210 penalty, if any, = Schedule 2 amount | `us-quarterly-estimated-tax` |
+| F-12 | Total payments = Form 1040 line 33 | `us-federal-return-assembly` |
+| F-13 | Refund or balance due = Form 1040 line 34 or 37 | `us-federal-return-assembly` |
 
-## Section 5 -- Skill-loading order (canonical execution sequence)
+#### 6B: North Dakota internal consistency
 
-This is the immutable order. Do not parallelize; downstream skills consume upstream outputs. The single exception is `us-1099-nec-issuance`, which can run in parallel with anything after `us-sole-prop-bookkeeping`.
-
-```
-1.  us-tax-workflow-base                         (workflow scaffold)
-2.  us-sole-prop-bookkeeping                     (Schedule C classification)
-3.  us-schedule-c-and-se-computation             (C, SE, 8829)
-4.  us-qbi-deduction                             (8995 / 8995-A -- flows into Fed Line 13, then Line 15)
-5.  us-self-employed-health-insurance            (§162(l), iterative w/ PTC)
-6.  us-self-employed-retirement                  (SEP / Solo 401(k))
-7.  us-quarterly-estimated-tax                   (2210, 2026 1040-ES)
-8.  us-federal-return-assembly                   (1040 incl. Line 15 = ND-1 Line 1)
-9.  us-1099-nec-issuance                         (parallel; contractor batch)
-10. nd-income-tax                                (ND-1, ND-1SA, ND-1TC, ND-1CR, ND-1FA)
-11. nd-estimated-tax / ND-1ES (2026)             (next-year vouchers + ND-1UT)
-12. nd-payroll                                   (flag-only if also a withholding agent)
-13. nd-sales-tax                                 (status note; does not block)
-14. nd-return-assembly                           ← THIS SKILL
-```
-
-Each upstream skill is expected to expose, at minimum: (a) the line-item output(s) it produces, (b) the self-check log, (c) any refusals fired, and (d) any reviewer / taxpayer flags. The orchestrator consumes those four artifacts per skill.
-
-Note on `nd-sales-tax`. ND sales and use tax is a separate filing cadence (monthly / quarterly / annual via ND TAP) and does not flow into the individual return. The orchestrator only surfaces an end-of-year sales-tax status line ("all ND sales-tax periods filed through Dec 2025" or "Q4 2025 ND sales-tax return due Jan 31, 2026 -- verify filed") in the action list. It does not block on sales tax.
-
-Note on `nd-corporate-tax`. Pure routing check at the orchestrator level. The sole prop / SMLLC disregarded scope means no Form 40 (corporate) or Form 58 (partnership) or Form 60 (S-corp) is produced. If intake says otherwise, refuse.
-
-0. **us-tax-workflow-base** -- workflow scaffold
-0. **us-sole-prop-bookkeeping** -- Schedule C classification
-0. **us-schedule-c-and-se-computation** -- C, SE, 8829
-0. **us-qbi-deduction** -- 8995 / 8995-A -- flows into Fed Line 13, then Line 15
-0. **us-self-employed-health-insurance** -- §162(l), iterative w/ PTC
-0. **us-self-employed-retirement** -- SEP / Solo 401(k)
-0. **us-quarterly-estimated-tax** -- 2210, 2026 1040-ES
-0. **us-federal-return-assembly** -- 1040 incl. Line 15 = ND-1 Line 1
-0. **us-1099-nec-issuance** -- parallel; contractor batch
-0. **nd-income-tax** -- ND-1, ND-1SA, ND-1TC, ND-1CR, ND-1FA
-0. **nd-estimated-tax / ND-1ES (2026)** -- next-year vouchers + ND-1UT
-0. **nd-payroll** -- flag-only if also a withholding agent
-0. **nd-sales-tax** -- status note; does not block
-0. **nd-return-assembly** -- THIS SKILL
-
-## Section 6 -- Verification matrix (reconciliations)
-
-Every line below is a hard equality. Tolerance is $1 unless noted otherwise. A failure halts assembly with R-ND-FINAL-3 naming the specific check.
-
-### 6A -- Federal internal consistency (re-verified)
-
-**6A table**
-
-| Check | Equation | Source-of-truth skill |
+| Check | Equation | Owning skill |
 | --- | --- | --- |
-| F-1 | Schedule C Line 31 = Schedule 1 Line 3 = Form 1040 Line 8 (via Sch 1 to L10) | us-schedule-c-and-se-computation |
-| F-2 | Schedule SE Line 12 = Schedule 2 Line 4 | us-schedule-c-and-se-computation |
-| F-3 | Schedule SE Line 13 = Schedule 1 Line 15 | us-schedule-c-and-se-computation |
-| F-4 | SEP / Solo 401(k) employer + employee = Schedule 1 Line 16 | us-self-employed-retirement |
-| F-5 | §162(l) deduction = Schedule 1 Line 17 | us-self-employed-health-insurance |
-| F-6 | QBI deduction = Form 1040 Line 13 | us-qbi-deduction |
-| F-7 | Form 1040 Line 11 = Line 9 − Line 10 (AGI) | us-federal-return-assembly |
-| F-8 | Form 1040 Line 14 = Line 12 + Line 13 (standard/itemized + QBI) | us-federal-return-assembly |
-| F-9 | Form 1040 Line 15 = Line 11 − Line 14 (federal taxable income -- KEY ND HANDOFF) | us-federal-return-assembly |
-| F-10 | Total tax = Form 1040 Line 24 | us-federal-return-assembly |
-| F-11 | Form 2210 penalty (if any) = Schedule 2 Line 8 | us-quarterly-estimated-tax |
-| F-12 | Total payments = Form 1040 Line 33 | us-federal-return-assembly |
-| F-13 | Refund / balance due = Form 1040 Line 34 or 37 | us-federal-return-assembly |
+| N-1 | Form ND-1, line 1b = Form 1040 line 15 (federal taxable income, not federal AGI), negative if the federal computation was below zero | `nd-income-tax` |
+| N-2 | Additions on lines 2 to 3 = the additions `nd-income-tax` produced | `nd-income-tax` |
+| N-3 | Subtractions on lines 5 to 16 (line 16 = Schedule ND-1SA total) = the subtractions `nd-income-tax` produced | `nd-income-tax` |
+| N-4 | North Dakota taxable income = line 1b plus additions less subtractions | `nd-income-tax` |
+| N-5 | Line 20 tax = the 2026 schedule for the filing status applied to North Dakota taxable income, as computed by `nd-income-tax` (recompute; do not take a stored figure) | `nd-income-tax` |
+| N-6 | If Schedule ND-1FA is used, its tax replaces the schedule tax on line 20 and is documented | `nd-income-tax` |
+| N-7 | Line 21 = Schedule ND-1CR; credit no more than the lesser of tax actually paid to the other state and the North Dakota tax on that income ([credit page](https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction)) | `nd-cross-border-tax` |
+| N-8 | Line 22 marriage penalty credit only on a joint return meeting the booklet's conditions | `nd-income-tax` |
+| N-9 | Line 23 = Schedule ND-1TC total | `nd-income-tax` |
+| N-10 | Line 25 net tax liability = tax less credits (withholding and estimates are not subtracted) | `nd-income-tax` |
+| N-11 | Line 26 withholding = North Dakota amounts on Forms W-2, 1099 and North Dakota Schedules K-1; no extraction or production tax withheld from royalties | `nd-income-tax` |
+| N-12 | Line 27 = 2026 Form ND-1ES payments plus any Form ND-1EXT payment plus any 2025 overpayment left on deposit | `nd-estimated-tax` |
+| N-13 | Overpayment (line 29) or tax due (line 33) = net tax liability less total payments | `nd-income-tax` |
+| N-14 | Line 37 = Schedule ND-1UT line 17 interest, included in the balance due or deducted from the refund | `nd-estimated-tax` |
+| N-15 | Line 30 overpayment applied to 2027 matches the 2027 ND-1ES first-installment credit | `nd-estimated-tax` |
 
-### 6B -- North Dakota internal consistency
-
-**6B table**
-
-| Check | Equation | Source-of-truth skill |
-| --- | --- | --- |
-| N-1 | Federal taxable income (Form 1040 Line 15) = ND-1 Line 1 (NOT federal AGI -- verify the right line was pulled) | nd-income-tax |
-| N-2 | ND-1SA additions total = ND-1 Line 2 | nd-income-tax |
-| N-3 | ND-1SA subtractions total = ND-1 Line 3 | nd-income-tax |
-| N-4 | ND-1 Line 4 = Line 1 + Line 2 − Line 3 (ND taxable income) | nd-income-tax |
-| N-5 | ND-1 Line 6 (tax) = bracket math against Line 4 using the filing-status-specific schedule (Single 0% / 1.95% / 2.50% with breakpoints at $48,475 and $244,825 for TY 2025) `[VERIFY:]` 2025 brackets | nd-income-tax |
-| N-6 | If MFJ: bracket breakpoints $80,975 and $298,075 (2025 booklet rate schedule) | nd-income-tax |
-| N-7 | If HoH: bracket breakpoints $64,950 and $271,450 `[VERIFY:]` | nd-income-tax |
-| N-8 | If MFS: bracket breakpoints $40,475 and $149,025 `[VERIFY:]` | nd-income-tax |
-| N-9 | ND-1 credits line = Schedule ND-1TC total | nd-income-tax |
-| N-10 | If ND-1CR claimed: credit ≤ lesser of (tax paid to other state) and (ND tax on the same income) | nd-income-tax |
-| N-11 | If Schedule ND-1FA (farm averaging) claimed: averaging tax replaces Line 6 amount and is documented | nd-income-tax |
-| N-12 | ND-1 Line 17 (ND withholding) = sum of W-2 Box 17 ND + 1099 ND withholding | nd-income-tax |
-| N-13 | ND-1 Line 18 (estimated payments) = sum of ND-1ES vouchers paid for TY 2025 + any extension payment | nd-estimated-tax |
-| N-14 | ND-1 Line 22 (refund) OR (balance due) reconciles to total tax − total payments | nd-income-tax |
-| N-15 | If Schedule ND-1UT (underpayment) applies: interest computed and added to balance due | nd-estimated-tax |
-
-### 6C -- Federal-ND coordination
-
-**6C table**
+#### 6C: federal and North Dakota coordination
 
 | Check | Equation |
 | --- | --- |
-| C-1 | Filing status on ND-1 = filing status on Form 1040 |
-| C-2 | Dependents claimed on ND-1 = dependents claimed on Form 1040 (ND has no separate child credit -- verify no duplication on ND-1TC) |
-| C-3 | Schedule C net profit federally = Schedule C net profit reflected in federal taxable income feeding ND-1 Line 1 |
-| C-4 | Federal §168(k) bonus depreciation: ND conforms -- no add-back on ND-1SA. Verify no ghost add-back was entered. |
-| C-5 | Federal §179: ND conforms with no separate cap -- verify no add-back |
-| C-6 | Federal SE tax deduction (½ SE tax, Schedule 1 Line 15) is reflected in federal AGI and therefore federal taxable income; no ND add-back |
-| C-7 | Federal QBI deduction (§199A) IS effectively recognized at ND because ND starts at federal taxable income (post-QBI). No ND adjustment. Verify no double-deduction on ND-1SA. |
-| C-8 | Federal SE health insurance (§162(l)) is in federal AGI; no ND add-back |
-| C-9 | Federal taxable Social Security (Form 1040 Line 6b) → ND Schedule ND-1SA subtraction (ND fully exempts Social Security per `[VERIFY:]` N.D.C.C. §57-38-30) |
-| C-10 | U.S. government bond interest in federal Schedule B → ND-1SA subtraction |
-| C-11 | Non-ND state/muni bond interest in federal Schedule B → ND-1SA addition |
-| C-12 | Federal standard deduction (or federal itemized, whichever taken) is ALREADY embedded in Form 1040 Line 15 -- ND does NOT add or take another deduction. Verify no duplication. |
-| C-13 | Federal age-65 additional standard deduction is embedded in Line 15 -- flows through to ND with no separate ND senior deduction |
-| C-14 | Military retirement pay (1099-R coded for military retirement) → ND-1SA subtraction per `[VERIFY:]` N.D.C.C. §57-38-30(5); confirm only the military retirement portion is subtracted, not other 1099-R amounts |
-| C-15 | Job Service ND unemployment benefits taxable federally on Schedule 1 → ND-1SA subtraction `[VERIFY:]` 2025 schedule line and statutory authority |
-| C-16 | Renaissance Zone income: federal reporting unchanged; ND-1SA subtraction only for documented qualifying RZ income with project certification |
-| C-17 | Tribal reservation income (enrolled member): federal reporting unchanged; ND-1SA subtraction only with enrollment documentation and on-reservation sourcing |
+| C-1 | Filing status on Form ND-1 = filing status on Form 1040 |
+| C-2 | Dependents flow from the federal return; North Dakota has no separate dependent deduction in the Form ND-1 lines read, so nothing is added on Schedule ND-1TC for them |
+| C-3 | Schedule C net profit is inside the federal taxable income on line 1b |
+| C-4 | Bonus depreciation and section 179: no North Dakota addition unless `nd-income-tax` names one; verify no stray addition |
+| C-5 | The deductible half of self-employment tax and the section 162(l) deduction are inside federal AGI; no North Dakota addition |
+| C-6 | The federal QBI deduction is already inside line 1b; verify no second deduction on Schedule ND-1SA |
+| C-7 | The federal standard or itemized deduction (including any age 65 addition) is already inside line 1b; North Dakota takes no second deduction |
+| C-8 | Taxable Social Security from Form 1040 line 6b is subtracted on Form ND-1, line 15; Railroad Retirement Board Tier 1 equivalents go on line 8 instead ([2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)) |
+| C-9 | Interest on US obligations in Schedule B is subtracted on line 5 |
+| C-10 | Interest on other states' municipal bonds: an addition only if `nd-income-tax` produced one |
+| C-11 | Taxable military retirement from Form 1040 line 5b is subtracted on line 14, only the military portion; military pay included in federal taxable income goes on line 11 |
+| C-12 | Renaissance Zone income: federal reporting unchanged; subtraction through Schedule ND-1SA (line 16) only with the zone project documentation |
+| C-13 | Enrolled-member reservation income: federal reporting unchanged; subtraction on line 7 only with enrollment evidence and on-reservation sourcing |
+| C-14 | Net long-term capital gain exclusion on line 6 and qualified dividend exclusion on line 13 match the `nd-income-tax` worksheets |
 
-### 6D -- MN / MT reciprocity coordination
-
-**6D table**
+#### 6D: Minnesota and Montana reciprocity
 
 | Check | Equation |
 | --- | --- |
-| R-1 | If wages earned in MN: Form MWR on file with employer; no MN withholding; wages taxed only in ND |
-| R-2 | If wages earned in MT: equivalent MT reciprocity exemption certificate on file; no MT withholding; wages taxed only in ND |
-| R-3 | If MN/MT withholding WAS taken in error: orchestrator refuses with R-ND-FINAL-22 (taxpayer needs MN/MT non-resident refund return, out of scope) |
-| R-4 | No Schedule ND-1CR credit is claimed for MN/MT wages, because reciprocity means no MN/MT tax was paid |
-| R-5 | If wages were earned in any third state (not ND/MN/MT): Schedule ND-1CR credit may apply; the credit is limited to the lesser of tax paid to the other state OR ND tax on the same income |
+| R-1 | Minnesota wages: Minnesota Form MW-R on file with the employer; no Minnesota withholding; wages taxed only in North Dakota |
+| R-2 | Montana wages: Montana Form MT-R on file; no Montana withholding; wages taxed only in North Dakota |
+| R-3 | Minnesota or Montana tax withheld in error: R-ND-FINAL-22 (the other state's refund return is a separate job) |
+| R-4 | No Schedule ND-1CR credit for reciprocity wages |
+| R-5 | Wages from a third state: Schedule ND-1CR may apply, limited as in N-7 |
 
-### 6E -- 1099-NEC reconciliation
-
-**6E table**
+#### 6E: 1099-NEC reconciliation
 
 | Check | Equation |
 | --- | --- |
-| 9-1 | Sum of NEC payments flagged = Schedule C Line 11 (Contract labor) + any direct labor lines |
-| 9-2 | Each contractor with $600+ has W-9 on file; gaps surfaced in flag log |
-| 9-3 | Federal filing deadline noted (January 31, 2026; if past, late-filing penalty surfaced) |
-| 9-4 | ND annual reconciliation Form 307 status confirmed if taxpayer is also a ND withholding agent (separate from 1099-NEC; flag-only here) |
+| 9-1 | Contractor payments flagged for 1099-NEC = Schedule C contract labor plus any other labor lines |
+| 9-2 | Every contractor over the federal threshold in `us-1099-nec-issuance` has a W-9; gaps go to the flag log |
+| 9-3 | The federal filing deadline from `us-1099-nec-issuance` is noted; if it has passed, the late-filing exposure is surfaced |
+| 9-4 | If the taxpayer is also a North Dakota withholding agent, the annual reconciliation status from `nd-payroll` is recorded (flag only) |
 
-### 6F -- Estimated-tax coordination
-
-**6F table**
+#### 6F: estimated tax
 
 | Check | Equation |
 | --- | --- |
-| E-1 | 2026 federal Q1 voucher = `us-quarterly-estimated-tax` Q1 output |
-| E-2 | 2026 ND-1ES Q1 voucher = `nd-estimated-tax` Q1 output |
-| E-3 | ND safe harbor: lesser of 100% of prior-year ND tax OR 90% of current-year ND tax (no 110% step at the ND level) `[VERIFY:]` N.D.C.C. §57-38-62 |
-| E-4 | Q1 federal + Q1 ND together do not exceed taxpayer's stated cash availability flag (if intake captured one) |
-| E-5 | If current-year ND underpayment interest exposure (Schedule ND-1UT) exists, surface for reviewer |
-| E-6 | 2025 ND estimated payments actually made = ND TAP records / cancelled checks reconcile to ND-1 Line 18 |
+| E-1 | 2027 federal first voucher = `us-quarterly-estimated-tax` output |
+| E-2 | 2027 ND-1ES first voucher = `nd-estimated-tax` output (no voucher if the 2026 net tax liability is below the threshold in `nd-estimated-tax`) |
+| E-3 | The North Dakota prior-year test is 100% of the prior-year net tax liability with no high-income step-up ([2026 Form ND-1ES, line 12](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf)); the federal and state required payments may differ |
+| E-4 | First federal plus first North Dakota voucher fits the cash availability intake recorded, if any |
+| E-5 | Any 2026 Schedule ND-1UT interest is surfaced for the reviewer |
+| E-6 | 2026 North Dakota estimated payments actually made (Tax Commissioner payment confirmations or cancelled checks) = line 27 |
 
-### 6G -- Withholding tie-out
-
-**6G table**
+#### 6G: withholding tie-out
 
 | Check | Equation |
 | --- | --- |
-| W-1 | Sum of W-2 box 17 (ND state income tax withheld) = ND-1 Line 17 W-2 portion |
-| W-2 | Sum of 1099-R / 1099-NEC / 1099-MISC ND withholding = ND-1 Line 17 1099 portion |
-| W-3 | ND withholding total = ND-1 Line 17 |
-| W-4 | Backup detail captured in workbook for reviewer |
-| W-5 | If any wages were tagged MN/MT-sourced under reciprocity: confirm employer withheld ND (not MN/MT) -- if MN/MT was withheld, see R-3 above |
+| W-1 | Sum of Form W-2 North Dakota income tax withheld = the W-2 part of line 26 |
+| W-2 | Sum of Form 1099 and North Dakota Schedule K-1 North Dakota withholding = the rest of line 26 |
+| W-3 | Total North Dakota withholding = line 26 |
+| W-4 | Backup detail captured in the workbook |
+| W-5 | Reciprocity wages: the employer withheld North Dakota tax (not Minnesota or Montana); otherwise see R-3 |
 
-### 6H -- Special-population cross-checks
-
-**6H table**
+#### 6H: special-population cross-checks
 
 | Check | Equation |
 | --- | --- |
-| S-1 | If military retirement subtraction taken: 1099-R distribution code consistent with military retirement; documentation of military service on file |
-| S-2 | If Renaissance Zone subtraction taken: project certification number from ND Commerce; income tied to qualifying zone activity |
-| S-3 | If tribal enrolled-member subtraction taken: enrollment letter / CDIB equivalent on file; income earned ON reservation (not merely by an enrolled member off-reservation) |
-| S-4 | If farm averaging (Schedule ND-1FA) elected federally on Schedule J: ND-1FA mirrors federal averaging; verify ND tax computed on averaged amount |
-| S-5 | If oil/gas royalty income reported: confirm only the income tax treatment is in scope; ND oil extraction tax is a separate filing track and is NOT produced here |
+| S-1 | Military retirement subtraction: Form 1099-R consistent with military retirement; service documentation on file; a copy of Form 1099-R included |
+| S-2 | Renaissance Zone subtraction: zone project documentation on file; income tied to the qualifying activity |
+| S-3 | Enrolled-member subtraction: enrollment evidence on file; income earned on the reservation, not merely by an enrolled member off it |
+| S-4 | Farm averaging: federal Schedule J used; Schedule ND-1FA tax computed and included |
+| S-5 | Oil and gas royalties: only the income tax treatment is in scope; extraction and production taxes withheld are not income tax withholding and are not on line 26 |
 
-## Section 7 -- Deliverable package (what the reviewer sees)
+### Step 7: aggregate the logs
 
-The package is three files, not fifteen. Do not fragment the output.
+Pull every "Assumed" item from every upstream skill into the assumption log; every "Taxpayer input needed" item into the taxpayer input log; every "Reviewer judgment needed" item into the reviewer flag log; every refusal that fired anywhere into the refusal log.
 
-### 7A -- File 1: `{taxpayer_slug}_2025_nd_master.xlsx`
+### Step 8: compose the three deliverables
 
-A single master workbook. Required sheets, in this order:
+The package is three files, not fifteen. Do not fragment the output. Place them in `/mnt/user-data/outputs/` and present them at the end with `present_files`.
 
-1. Cover -- Taxpayer name, filing status, residency, business structure, MN/MT reciprocity flag, oil/gas flag, summary table (federal tax, ND tax, total liability, total payments, net refund/balance due, key 2026 dates).
-2. Assumption Log -- Every "Assumed" item from every upstream skill, tagged with the skill that produced it.
-3. Taxpayer Input Log -- Every item that needs taxpayer confirmation before filing.
-4. Reviewer Flag Log -- Every item that needs reviewer judgment.
-5. Income -- Aggregate income summary (W-2, 1099-NEC, Schedule C, interest, dividends, capital gains, 1099-R, other).
-6. Schedule C -- Parts I-V.
-7. Form 4562 -- Depreciation (if applicable).
-8. Form 8829 -- Home office (if applicable).
-9. Schedule SE -- SE tax.
-10. Retirement -- SEP / Solo 401(k) worksheet.
-11. SE Health Insurance -- §162(l) worksheet, with PTC iteration log if marketplace coverage.
-12. Form 8962 -- PTC reconciliation (if marketplace coverage).
-13. QBI -- Form 8995 or 8995-A.
-14. Schedule 1 (federal) -- Adjustments to income.
-15. Schedule 2 (federal) -- Additional taxes.
-16. Schedule 3 (federal) -- Credits (if applicable).
-17. Form 1040 -- Final federal return line-by-line (with Line 15 highlighted as the ND handoff).
-18. Form 2210 -- Underpayment penalty (if applicable).
-19. ND-1 -- North Dakota return line-by-line.
-20. Schedule ND-1SA -- Additions (Part A) and subtractions (Part B) including Social Security, military retirement, Renaissance Zone, tribal reservation, US bond interest, Job Service ND benefits.
-21. Schedule ND-1TC -- Tax credits worksheet (if applicable).
-22. Schedule ND-1CR -- Credit for income tax paid to another state (if applicable, non-MN/MT only).
-23. Schedule ND-1FA -- Farm income averaging (if applicable).
-24. Schedule ND-1UT -- Underpayment of estimated tax (if applicable).
-25. Reciprocity Worksheet -- MN/MT wage tracker (if applicable).
-26. Military Retirement Worksheet -- Subtraction detail (if applicable).
-27. Renaissance Zone Worksheet -- Subtraction detail (if applicable).
-28. Tribal Reservation Worksheet -- Subtraction detail (if applicable).
-29. ND Withholding Detail -- W-2 + 1099 withholding tie-out.
-30. 2026 Federal 1040-ES -- Voucher schedule.
-31. 2026 ND-1ES -- Voucher schedule.
-32. 1099-NEC Batch -- Contractor batch (if applicable).
-33. ND Sales Tax Status -- End-of-year filing status note (if taxpayer is a ND sales-tax registrant).
-34. Verification Matrix -- Every check in Section 6 with pass/fail/N/A.
+**File 1: `{taxpayer_slug}_2026_nd_master.xlsx`.** One workbook, sheets in this order:
 
-Use the same Excel-builder discipline as `us-federal-return-assembly`: collect anchors as a Python dict before writing cross-sheet formulas; verify no `#REF!` errors; verify computed cells match the Python model within $1 before shipping.
+1. Cover: taxpayer, filing status, residence, business structure, reciprocity flag, oil and gas flag, summary (federal tax, North Dakota tax, total liability, total payments, net refund or balance due, key 2027 dates).
+2. Assumption log. 3. Taxpayer input log. 4. Reviewer flag log.
+5. Income summary (W-2, 1099-NEC, Schedule C, interest, dividends, capital gains, 1099-R, other).
+6. Schedule C. 7. Form 4562 (if any). 8. Form 8829 (if any). 9. Schedule SE.
+10. Retirement worksheet. 11. Self-employed health insurance worksheet with any premium tax credit iteration log. 12. Form 8962 (if marketplace coverage).
+13. QBI (Form 8995 or 8995-A). 14. Schedule 1. 15. Schedule 2. 16. Schedule 3 (if any).
+17. Form 1040 line by line, with line 15 highlighted as the North Dakota handoff. 18. Form 2210 (if any).
+19. Form ND-1 line by line. 20. Schedule ND-1SA. 21. Schedule ND-1TC (if any). 22. Schedule ND-1CR (if any). 23. Schedule ND-1FA (if any). 24. Schedule ND-1UT (if any).
+25. Reciprocity wage tracker (if any). 26. Military retirement and military pay detail (if any). 27. Renaissance Zone detail (if any). 28. Reservation income detail (if any).
+29. North Dakota withholding detail. 30. 2027 federal Form 1040-ES schedule. 31. 2027 Form ND-1ES schedule (if required).
+32. 1099-NEC batch (if any). 33. North Dakota sales tax status (if a registrant). 34. Verification matrix: every Step 6 check with pass, fail or not applicable.
 
-### 7B -- File 2: `reviewer_brief.md`
+Use the same workbook discipline as `us-federal-return-assembly`: collect anchors as a Python dict before writing cross-sheet formulas; verify no `#REF!` errors; verify computed cells match the Python model within USD 1 before shipping.
 
-Structured markdown. Required sections in this order:
-
-1. Executive Summary (≤ 1 page) -- Taxpayer, filing status, residency, federal tax, ND tax, total liability, total payments, net result, action required by April 15, 2026.
-2. Federal Return Brief -- Summary of `us-federal-return-assembly` brief, condensed. Highlight Form 1040 Line 15 (federal taxable income) since it is the ND starting point.
-3. North Dakota Return Brief -- Summary of `nd-income-tax` brief plus any special-population items (military retirement, RZ, tribal, farm averaging).
-4. Bracket Math Audit -- Show ND-1 Line 4, the filing-status bracket schedule applied, and the resulting Line 6 tax. ND's 0% first bracket is material; document whether the taxpayer landed in the 0%, 1.95%, or 2.50% band.
-5. MN/MT Reciprocity -- If applicable: confirm exemption certificates on file and no MN/MT return required.
-6. Estimated Tax for 2026 -- Federal + ND voucher schedule.
-7. 1099-NEC Issuance -- Status of contractor filings.
-8. ND Sales Tax Status -- End-of-year status, if applicable.
-9. Cross-skill Verification -- Pass/fail summary from Section 6.
-10. Reviewer Attention Flags -- Aggregated from all upstream skills.
-11. Refusals Triggered -- Aggregated from all upstream skills.
-12. Positions Taken -- Tax positions requiring judgment, with citations (N.D.C.C. §, IRC §, ND-1 booklet page references).
-13. Planning Notes for 2026 -- ND rate stability watch (any legislative changes from the 69th Legislative Assembly), federal QBI 20% → 23% under OBBBA, federal 1099 threshold change, Renaissance Zone project end dates if applicable, military retirement continuity.
-14. Taxpayer Action List -- Embedded copy of File 3.
-
-### 7C -- File 3: `taxpayer_action_list.md`
-
-Step-by-step action list, structured by date. The taxpayer reads this file and nothing else.
+**File 2: `reviewer_brief.md`.** Readable in under 30 minutes. Sections in this order:
 
 ```markdown
-# Your 2025 North Dakota Tax Filing -- Action List
-
-## This week
-1. Review the reviewer_brief.md document
-2. Sign Form 8879 (federal e-file authorization) -- if e-filing
-3. Sign Form ND-1 e-file authorization -- if e-filing through an
-   approved partner or via ND TAP
-4. Confirm bank account information for direct debit / direct
-   deposit
-
-## Before April 15, 2026 (filing deadline)
-1. Federal Form 1040 -- file via e-file (preferred) or paper to IRS
-   Kansas City address
-2. Federal balance due of $X -- pay via:
-   - IRS Direct Pay (https://www.irs.gov/payments/direct-pay) -- free, ACH
-   - EFTPS (https://www.eftps.gov) -- free, requires enrollment
-   - Debit/credit card (fee applies)
-   - Check + Form 1040-V voucher to IRS Kansas City
-3. North Dakota Form ND-1 -- file via:
-   - ND Taxpayer Access Point (TAP) at
-     https://apps.nd.gov/tax/tap/ -- free, direct from ND Office of
-     State Tax Commissioner
-   - Approved e-file partners (TurboTax, H&R Block, FreeTaxUSA,
-     Drake, etc.)
-   - Paper return mailed to:
-     - Office of State Tax Commissioner, PO Box 5621, Bismarck ND
-       58506-5621
-4. North Dakota balance due of $X -- pay via:
-   - ND TAP online (ACH direct debit, free; credit/debit card with
-     processor fee)
-   - Direct debit at e-file submission
-   - Check + payment voucher mailed to ND Office of State Tax
-     Commissioner
-
-## Before April 15, 2026 (estimated tax for 2026 Q1)
-1. Federal Q1 voucher -- $X via IRS Direct Pay or check + Form 1040-ES
-2. ND Q1 voucher -- $X via ND TAP or check + Form ND-1ES
-
-## Before June 15, 2026 (Q2 estimated tax)
-1. Federal Q2 voucher -- $X
-2. ND Q2 voucher -- $X
-
-## Before September 15, 2026 (Q3 estimated tax)
-1. Federal Q3 voucher -- $X
-2. ND Q3 voucher -- $X
-
-## Before January 15, 2027 (Q4 estimated tax)
-1. Federal Q4 voucher -- $X
-2. ND Q4 voucher -- $X
-
-## Already-passed January 31, 2026 (1099-NEC issuance -- check if done)
-1. File 1099-NEC forms with IRS via IRIS or FIRE
-2. Furnish Copy B to each contractor
-3. File ND Form 307 annual withholding reconciliation with ND Office
-   of State Tax Commissioner (if taxpayer is a ND withholding agent)
-4. If missed: assess penalty exposure ($60-$310 per form federally;
-   ND late-filing penalty also applies) and file ASAP
-
-## Ongoing during 2026
-1. Collect W-9 from every new contractor BEFORE first payment
-2. Track Schedule C income and expenses with receipts
-3. Monitor income against estimated-tax safe harbor mid-year
-4. Track health coverage continuously (federal Form 1095-A from
-   marketplace; 1095-B/C from employer)
-5. If a ND sales-tax registrant: file ND sales/use tax on the
-   assigned cadence (monthly / quarterly / annual) via ND TAP
-6. If MN/MT employer: keep Form MWR / MT reciprocity exemption
-   certificate current with each employer
-
-## How to check your refund
-- Federal: https://www.irs.gov/refunds -- "Where's My Refund?"
-- North Dakota: https://apps.nd.gov/tax/tap/ -- TAP "Where's My
-  Refund?" function
-
-## Need help with anything in this list?
-- Reach out to the reviewer (CPA / EA) listed on the cover sheet.
-- For North Dakota-specific questions: ND Office of State Tax
-  Commissioner, individual income tax helpline 701-328-1247
-```
-
-If execution runs out of context mid-build: produce whatever is complete, then state at the end which files were partial. Three files honest beats fifteen files fragmented.
-
-All files go to `/mnt/user-data/outputs/` and are presented at the end via the `present_files` tool.
-
-## Section 8 -- The reviewer brief (narrative format)
-
-This is the document the CPA reads first. It should be readable in under 30 minutes and give the reviewer enough context to either sign off or identify exactly what needs more work.
-
-The brief follows this fixed structure:
-
-```markdown
-# Complete Return Package -- [Taxpayer Name] -- Tax Year 2025
+# Complete Return Package -- [Taxpayer Name] -- Tax Year 2026
 
 ## Executive Summary
-- **Taxpayer:** [Name], full-year North Dakota resident
-- **Filing status:** [Single / MFJ / MFS / HoH / QSS]
-- **Business:** Sole proprietor / Single-member LLC disregarded
-- **MN/MT reciprocity in play:** [Yes / No]
-- **Special populations:** [military retirement / Renaissance Zone /
-  tribal / farm averaging / none]
-- **Federal total tax (Form 1040 Line 24):** $X
-- **Federal taxable income (Form 1040 Line 15 -- ND starting point):** $X
-- **ND total tax (ND-1 Line 16 or equivalent):** $X
-- **Total 2025 tax liability (federal + ND):** $X
-- **Total payments (withholding + estimates + extension):** $X
-- **Net refund or balance due:** $X
-- **Action required by April 15, 2026:** [one-line summary]
+- Taxpayer: [Name], full-year North Dakota resident
+- Filing status: [Single / MFJ / MFS / HoH / QSS]
+- Business: sole proprietor / single-member LLC disregarded
+- Minnesota or Montana reciprocity in play: [Yes / No]
+- Special populations: [military retirement / military pay / Renaissance Zone /
+  reservation income / farm averaging / none]
+- Federal total tax (Form 1040 line 24): $X
+- Federal taxable income (Form 1040 line 15, the North Dakota starting point): $X
+- North Dakota net tax liability (Form ND-1 net tax liability line): $X
+- Total payments (withholding, estimates, extension payments): $X
+- Net refund or balance due: $X
+- Action required by the 2027 due date: [one line]
 
 ## Federal Return
-[brief from us-federal-return-assembly, condensed; emphasize Line 15]
+[condensed brief from us-federal-return-assembly; emphasise line 15]
 
 ## North Dakota Return
-[brief from nd-income-tax including ND-1SA modifications detail]
+[brief from nd-income-tax, with each addition and subtraction line]
 
-## Bracket Math Audit
-- ND-1 Line 4 (ND taxable income): $X
-- Filing-status bracket schedule: [Single / MFJ / MFS / HoH]
-- Breakpoints: [$48,475 / $244,825] (Single TY 2025, 2025 booklet rate schedule)
-- Tax band landed in: [0% / 1.95% / 2.50%]
-- ND-1 Line 6 (computed tax): $X
+## Rate Schedule Audit
+- North Dakota taxable income: $X
+- Filing-status schedule applied (from nd-income-tax, 2026): [name]
+- Band reached: [0% / 1.95% / 2.50%]
+- Line 20 tax: $X (recomputed, matches nd-income-tax: yes / no)
 
-## MN/MT Reciprocity
-[If applicable: certificate status, wages source state, ND
-treatment; else N/A]
+## Reciprocity
+[form on file with each employer, source state, North Dakota treatment; or N/A]
 
-## Estimated Tax for 2026
-[combined federal 1040-ES + ND-1ES schedule]
+## Estimated Tax for 2027
+[federal Form 1040-ES and Form ND-1ES schedules side by side]
 
 ## 1099-NEC Issuance
-[brief from us-1099-nec-issuance]
+[from us-1099-nec-issuance]
 
-## ND Sales Tax Status
-[from nd-sales-tax if registrant; else N/A]
+## North Dakota Sales Tax Status
+[from nd-sales-tax if a registrant; else N/A]
 
 ## Cross-skill Verification
 - All upstream skills ran: [verified / list missing]
 - All upstream self-checks passed: [verified / list failures]
-- All Section 6 reconciliations passed: [verified / list failures]
+- All Step 6 reconciliations passed: [verified / list failures]
 
 ## Reviewer Attention Flags
 [aggregated, ranked by materiality]
 
 ## Refusals Triggered
-[aggregated; any non-empty entry blocks final signoff]
+[aggregated; any entry blocks final sign-off]
 
 ## Positions Taken
-[items requiring reviewer judgment, with citations]
+[items needing reviewer judgment, with citations to N.D.C.C., the IRC and booklet pages]
 
-## Planning Notes for 2026
-- ND rate stability watch -- `[VERIFY:]` any 69th Legislative
-  Assembly changes to N.D.C.C. §57-38-30.3
-- Federal QBI 20% → 23% under OBBBA (P.L. 119-21) -- flows through
-  to ND because ND starts at federal taxable income
-- 1099 threshold change to $2,000 in 2026 under OBBBA
-- Renaissance Zone project end dates (if applicable)
-- Military retirement continuity (if applicable)
-- ND estimated-tax safe harbor positioning
+## Planning Notes for 2027
+[rate schedule changes from the Legislative Assembly; federal changes that flow
+through line 15; zone end dates; military continuity; estimated-tax positioning]
 
 ## Taxpayer Action List
 [embedded copy of File 3]
 ```
 
-## Section 9 -- Tier 1 deterministic rules
-
-**Tier 1 deterministic rules table**
-
-| Rule ID | Rule |
-| --- | --- |
-| ND-ASM-T1-01 | Federal Form 1040 must be computed before ND-1. No exceptions. |
-| ND-ASM-T1-02 | ND-1 Line 1 = Form 1040 Line 15 (federal **taxable** income, NOT federal AGI). |
-| ND-ASM-T1-03 | ND tax = graduated bracket computation against ND-1 Line 4 using the filing-status schedule (TY 2025: Single 0%/1.95%/2.50% at $48,475/$244,825; MFJ at $80,975/$298,075; HoH at $64,950/$271,450; MFS at $40,475/$149,025) `[VERIFY:]` 2025 brackets per N.D.C.C. §57-38-30.3. |
-| ND-ASM-T1-04 | ND has no city or local individual income tax. Skip any city-return step. |
-| ND-ASM-T1-05 | The April 15, 2026 filing deadline applies. ND grants automatic 6-month extension when a federal Form 4868 is filed -- no separate ND extension form required. |
-| ND-ASM-T1-06 | Extension to file is NOT extension to pay. Any ND balance due is still due April 15. |
-| ND-ASM-T1-07 | ND fully subtracts taxable Social Security benefits (ND-1SA) per `[VERIFY:]` N.D.C.C. §57-38-30. |
-| ND-ASM-T1-08 | ND fully subtracts military retirement pay per `[VERIFY:]` N.D.C.C. §57-38-30(5). |
-| ND-ASM-T1-09 | ND-1ES estimated payments are required if the prior-year ND net tax liability was $1,000 or more and the taxpayer expects to owe at least $1,000 after withholding; pay the lesser of 90% of current-year or 100% of prior-year liability (N.D.C.C. §57-38-62; 2025 booklet). |
-| ND-ASM-T1-10 | ND safe harbor: lesser of 100% of prior-year ND tax OR 90% of current-year ND tax. No 110%-of-AGI step. `[VERIFY:]` |
-| ND-ASM-T1-11 | ND conforms to federal §168(k) bonus depreciation -- no add-back required. |
-| ND-ASM-T1-12 | ND conforms to federal §179 -- no separate cap, no add-back. |
-| ND-ASM-T1-13 | ND effectively recognizes federal §199A QBI deduction because ND starts at federal taxable income (after QBI). No separate ND adjustment. |
-| ND-ASM-T1-14 | ND has NO separate state standard deduction. The federal standard or itemized deduction is already embedded in Form 1040 Line 15. Never apply another deduction at the ND level. |
-| ND-ASM-T1-15 | ND has NO separate child credit / child deduction. Federal dependents flow through but ND-1 does not add a state-level child credit. |
-| ND-ASM-T1-16 | MN/MT wage reciprocity: ND-resident wages earned in MN or MT are taxed only in ND. No MN/MT return required for those wages; no ND-1CR credit allowed. |
-| ND-ASM-T1-17 | ND-1CR credit for taxes paid to another state is limited to the lesser of (a) tax actually paid to the other state, or (b) ND tax computed on the same income. |
-| ND-ASM-T1-18 | Three-file deliverable structure (xlsx + brief.md + actions.md) is mandatory. |
-| ND-ASM-T1-19 | No city-level income tax exists in ND; the orchestrator never emits a city return artifact. |
-| ND-ASM-T1-20 | Oil & gas extraction tax (Form OG-1 family) is NOT produced here. Income tax treatment of royalty income IS handled (ND-1 starts at federal taxable income which already includes royalty income). |
-
-## Section 10 -- Tier 2 judgment rules
-
-**Tier 2 judgment rules table**
-
-| Rule ID | Rule | Guidance |
-| --- | --- | --- |
-| ND-ASM-T2-01 | **Materiality threshold for reconciliation failures.** A $1 rounding gap is not a failure; a $50 gap is. | Reviewer judgment on the threshold; default $5 for federal-ND tie-outs, $1 for intra-form. |
-| ND-ASM-T2-02 | **0% bracket optimization.** A taxpayer landing just over the 0% breakpoint may benefit from accelerating a deductible expense or retirement contribution. | Note in planning section if ND taxable income is within 5% of the upper 0% bracket boundary. |
-| ND-ASM-T2-03 | **Renaissance Zone documentation.** Taxpayer must produce project certification from ND Commerce. | If certification is incomplete, flag for reviewer; do NOT take the subtraction without reviewer signoff. |
-| ND-ASM-T2-04 | **Tribal reservation income sourcing.** Income must be earned ON the reservation by an enrolled member. | Defer the on-reservation determination to `nd-income-tax`; orchestrator verifies enrollment documentation is on file. |
-| ND-ASM-T2-05 | **Military retirement scope.** Only military retirement pay qualifies -- not military disability (which is federally excluded anyway) and not VA benefits (also federally excluded). | Verify 1099-R distribution code and payor consistent with DFAS / military retirement. |
-| ND-ASM-T2-06 | **MN/MT reciprocity certificate missing or stale.** Employer withheld MN or MT tax in error. | Refuse with R-ND-FINAL-22; route taxpayer to a multistate preparer to recover withholding via MN / MT non-resident refund return. |
-| ND-ASM-T2-07 | **Out-of-state work (non-MN/MT) by ND resident.** Self-employment income earned while physically working in another state may also be taxable in that state. ND-1CR may apply. | If material out-of-state work exists, refuse with R-ND-FINAL-16 (multi-state apportionment out of scope). |
-| ND-ASM-T2-08 | **Late-1099 penalty exposure.** January 31 may already be past at the time of orchestrator run. | Surface the penalty exposure in the action list; the reviewer decides whether to file late or wait. |
-| ND-ASM-T2-09 | **PTC iteration convergence.** The marketplace-coverage iteration between SE health and PTC may not converge cleanly within 3 cycles. | If `us-self-employed-health-insurance` flagged non-convergence, escalate the flag to the reviewer brief and document the chosen position. |
-| ND-ASM-T2-10 | **Farm income averaging (Schedule ND-1FA) election.** Election is irrevocable once filed; verify the federal Schedule J election was made first. | Confirm the election produces a lower combined federal+ND tax than the non-averaged path before signing off. |
-| ND-ASM-T2-11 | **Negative federal taxable income.** Form 1040 Line 15 can be negative (NOL carryforward, etc.). ND-1 Line 1 takes the federal figure as-is; an NOL may flow through. | Verify ND treatment of the federal NOL -- ND generally conforms but verify carryforward documentation. Flag for reviewer. |
-| ND-ASM-T2-12 | **Oil & gas royalty interplay.** Royalties are federally taxable as ordinary income and embedded in Line 15. ND oil extraction tax is paid at the wellhead by the operator and is NOT a credit on ND-1. | Document the royalty source on ND-1 working papers; confirm no double-counting; do NOT produce any oil-extraction-tax filing. |
-
-## Section 11 -- Worked example
-
-**Facts.** Sarah Lindgren, single, age 42, full-year Fargo (ND) resident, sole proprietor (freelance software developer). Part of the year she also worked W-2 wages for a Moorhead, MN employer (reciprocity in play). 2025 facts:
-
-- Schedule C gross receipts: $180,000
-- Schedule C deductible expenses (incl. home office): $30,000
-- Schedule C net profit: $150,000
-- W-2 from Moorhead MN employer: $12,000 (Form MWR on file; no MN withholding; ND withholding $360)
-- Q3 2025 income spike: $5,000 unexpected consulting bonus in September; documented in `us-quarterly-estimated-tax`
-- Marketplace health coverage: No -- Sarah is on her spouse's plan (wait -- Sarah is single per intake; she is on COBRA from her previous W-2 employer): $7,200 in COBRA premiums → §162(l) deduction
-- Solo 401(k) contributions: $31,000 (employee deferral $23,500 + employer profit-sharing $7,500 calculated against net SE earnings)
-- Federal withholding: $0
-- Federal estimated payments: $4,000 Q1, $4,000 Q2, $0 Q3, $0 Q4 (Q3 spike not covered) → Form 2210 penalty for Q3/Q4
-- ND withholding: $360 (from MN W-2 employer who withheld ND under reciprocity)
-- ND estimated payments: $200 Q1, $200 Q2, $0 Q3, $0 Q4 → ND Schedule ND-1UT interest exposure
-- No dependents
-- Federal standard deduction (single, TY 2025): $15,750 `[VERIFY:]` OBBBA-updated
-- No Renaissance Zone, no tribal, no military retirement, no farm averaging
-- No ND sales-tax registration
-
-**Orchestrator output (abbreviated reviewer brief -- actual file is longer):**
+**File 3: `taxpayer_action_list.md`.** Step by step, by date. The taxpayer reads this file and nothing else.
 
 ```markdown
-# Complete Return Package -- Sarah Lindgren -- Tax Year 2025
+# Your 2026 North Dakota Tax Filing -- Action List
 
-## Executive Summary
-- Taxpayer: Sarah Lindgren, full-year North Dakota (Fargo) resident
-- Filing status: Single
-- Business: Sole proprietor -- freelance software developer
-- MN/MT reciprocity in play: Yes (Moorhead MN W-2 employer; Form
-  MWR on file; no MN withholding; ND withholding $360)
-- Special populations: none
-- Federal total tax (Form 1040 Line 24): $30,940
-- Federal taxable income (Form 1040 Line 15 -- ND starting point):
-  $90,604
-- ND total tax (ND-1 Line 6): $821
-- Total 2025 tax liability: $31,761
-- Total payments (federal + ND withholding + estimates): $8,760
-- Net balance due: $23,001 across federal + ND
-- Action required by April 15, 2026: file federal Form 1040, ND-1;
-  pay $23,001 balance due across two jurisdictions; pay 2026 Q1
-  estimates of ~$7,930 combined; reviewer to confirm Form 2210
-  (federal) and Schedule ND-1UT (ND) interest amounts
+## This week
+1. Read the reviewer brief.
+2. Sign the federal e-file authorization (Form 8879) if e-filing.
+3. Sign the North Dakota return or its e-file authorization (both spouses on a joint return).
+4. Confirm bank details for direct debit or direct deposit.
 
-## Federal Return (from us-federal-return-assembly)
-- Schedule C Line 31 (net profit): $150,000
-- Schedule SE Line 12 (SE tax): $18,792
-- Schedule 1 Line 15 (½ SE tax): $9,396
-- Schedule 1 Line 16 (retirement, Solo 401(k)): $31,000
-- Schedule 1 Line 17 (SE health insurance, COBRA): $7,200
-- W-2 wages (MN employer): $12,000
-- Form 1040 Line 11 (AGI): $114,404 (after retirement, ½ SE tax,
-  §162(l), and adding W-2 wages)
-- Form 1040 Line 12 (standard deduction, single): $15,750 `[VERIFY:]`
-- Form 8995 QBI deduction: ~$8,050 (non-SSTB software dev; 20% of
-  qualified business income subject to limits)
-- Form 1040 Line 13 (QBI): $8,050
-- Form 1040 Line 14: $23,800
-- Form 1040 Line 15 (federal taxable income -- ND HANDOFF): $90,604
-- Form 1040 Line 16 (federal tax): ~$12,148
-- Schedule 2 Line 4 (SE tax): $18,792
-- Form 2210 penalty (Q3/Q4 spike not covered): ~$240
-- Form 1040 Line 24 (total tax): $30,940
-- Payments: $8,000 federal estimates
-- Balance due federal: $22,940
+## By the 2026 return due date (generally 15 April 2027)
+1. File federal Form 1040 (e-file preferred).
+2. Pay the federal balance due of $X (methods in us-federal-return-assembly).
+3. File North Dakota Form ND-1: e-file with the federal return through the
+   Federal/State e-file program, or mail the paper return with a complete copy of
+   the federal return to Office of State Tax Commissioner, P.O. Box 5621,
+   Bismarck, ND 58506-5621.
+4. Pay the North Dakota balance due of $X: online at tax.nd.gov ("Make A Payment"),
+   or by check payable to "ND State Tax Commissioner" with the last four digits of
+   your SSN and "2026 Form ND-1" on it, with Form ND-1PRV (paper return) or
+   Form ND-1V (e-filed return).
 
-## North Dakota Return (from nd-income-tax)
-- ND-1 Line 1 (federal taxable income -- Form 1040 Line 15): $90,604
-- Schedule ND-1SA Part A (additions): $0 -- no non-ND muni bond
-  interest
-- ND-1 Line 2 (additions): $0
-- Schedule ND-1SA Part B (subtractions): $0 -- no Social Security,
-  no military retirement, no RZ, no tribal, no Job Service ND,
-  no US bond interest
-- ND-1 Line 3 (subtractions): $0
-- ND-1 Line 4 (ND taxable income): $90,604
+## 2027 estimated tax (if required)
+1. 15 April 2027: federal first voucher $X; North Dakota first voucher $X.
+2. 15 June 2027: federal $X; North Dakota $X.
+3. 15 September 2027: federal $X; North Dakota $X.
+4. 15 January 2028: federal $X; North Dakota $X.
 
-## Bracket Math Audit
-- ND-1 Line 4: $90,604
-- Filing status: Single
-- TY 2025 breakpoints: $48,475 / $244,825
-- $0 to $48,475 at 0% = $0
-- $48,475 to $90,604 = $42,129 at 1.95% = $821.52
-- Tax band: 1.95% (middle bracket)
-- ND-1 Line 6 (ND income tax): $821 (rounded)
+## Contractor forms (check if done)
+1. File 1099-NEC forms and furnish copies by the date in us-1099-nec-issuance.
+2. If you are also a North Dakota employer, file the annual withholding
+   reconciliation (see nd-payroll).
 
-## North Dakota Return (continued)
-- ND-1 Line 14 (credits, Schedule ND-1TC): $0
-- ND-1 Line 17 (ND withholding): $360 (from MN employer under
-  reciprocity)
-- ND-1 Line 18 (ND estimated payments): $400 ($200 Q1 + $200 Q2)
-- Schedule ND-1UT interest exposure: ~$15 (Q3/Q4 underpayment)
-- ND total tax + interest: $836
-- ND total payments: $760
-- ND-1 Line 22 (balance due): ~$76 (plus $15 interest = $91)
-- Wait -- exec summary says $821 ND tax and $23,001 net balance.
-  Reconciliation: total balance = $22,940 federal + ~$91 ND ≈
-  $23,031. Within $30 tolerance of the $23,001 exec-summary figure;
-  difference is rounding across penalty/interest computations.
-  Reviewer to lock final numbers.
+## During the year
+1. Collect a W-9 from every new contractor before the first payment.
+2. Keep Schedule C income and expense records with receipts.
+3. Check income against the estimated-tax tests mid-year.
+4. Keep health coverage records (Forms 1095-A, B, C).
+5. If a sales tax registrant, file on your assigned schedule (see nd-sales-tax).
+6. If you work for a Minnesota or Montana employer, give them a new
+   Form MW-R or Form MT-R as that state requires.
 
-## MN/MT Reciprocity
-- MN W-2: $12,000 wages from Moorhead employer
-- Form MWR on file with employer (verified); no MN withholding
-- ND withholding $360 was properly remitted by MN employer to ND
-- No MN return required; no Schedule ND-1CR credit (no MN tax was
-  paid)
-- PASS
+## Checking your refund
+- Federal: "Where's My Refund?" at irs.gov.
+- North Dakota: "Where's My Refund?" at tax.nd.gov.
 
-## Estimated Tax for 2026
-- 2025 federal total tax: $30,940 → Q1 2026 federal estimate
-  ~$7,735 (100% of prior year ÷ 4; AGI < $150K so 100% safe
-  harbor applies federally)
-- 2025 ND total tax: $821 → Q1 2026 ND estimate ~$205 (100% of
-  prior year ÷ 4)
-- Combined Q1 2026 estimate: ~$7,940 due April 15, 2026 -- note
-  this is on TOP of the April 15 balance due
-- Strong recommendation: switch ND-1ES to even quarterly schedule;
-  the Q3/Q4 zero-payment pattern triggered ND-1UT interest in 2025
-
-## 1099-NEC Issuance
-- N/A -- Sarah engaged no subcontractors in 2025
-
-## ND Sales Tax Status
-- N/A -- not a ND sales-tax registrant
-
-## Cross-skill Verification (Section 6 summary)
-- F-1 through F-13: PASS
-- N-1 through N-15: PASS (N-5 bracket math audit verified)
-- C-1 through C-17: PASS (Social Security and military retirement
-  N/A; QBI confirmed flowing through Line 15)
-- R-1 through R-5: PASS (MN reciprocity clean)
-- 9-1 through 9-4: N/A (no contractors)
-- E-1 through E-6: PASS (Q3/Q4 underpayment flagged on both sides)
-- W-1 through W-5: PASS (single $360 W-2 source documented)
-- S-1 through S-5: N/A (no special populations)
-
-## Reviewer Attention Flags
-1. Form 2210 federal underpayment penalty (~$240) -- Q3 spike not
-   covered; reviewer to finalize annualized-income method to
-   reduce penalty.
-2. Schedule ND-1UT interest (~$15) -- minor; reviewer to confirm.
-3. COBRA §162(l) eligibility -- confirm Sarah was not eligible for
-   subsidized employer coverage in any month during 2025.
-4. Solo 401(k) employer portion ($7,500) -- confirm matches the
-   25%-of-net-SE-earnings cap after the circular ½-SE-tax
-   adjustment.
-5. ND withholding via MN employer -- verify the $360 actually
-   landed in ND's account (TAP confirmation).
-
-## Refusals Triggered
-(none -- Sarah's facts fit the in-scope pattern)
-
-## Positions Taken
-- §199A non-SSTB classification of freelance software development:
-  see `us-qbi-deduction`; software dev is explicitly non-SSTB.
-- ND-1 Line 1 = Form 1040 Line 15 (NOT Line 11 AGI): per N.D.C.C.
-  §57-38-01(7) and 2025 ND-1 instructions Step 1.
-- MN reciprocity for $12,000 wages: per ND-MN reciprocity
-  agreement, MN-source wages of a ND resident are taxed only in
-  ND when Form MWR is timely filed.
-
-## Planning Notes for 2026
-- ND rate stability: 0%/1.95%/2.50% schedule projected to continue
-  in 2026 absent 69th Legislative Assembly action `[VERIFY:]`.
-- Federal QBI rate rises 20% → 23% under OBBBA (P.L. 119-21);
-  Sarah's QBI deduction grows materially, reducing both federal
-  taxable income and (because Line 15 = ND Line 1) ND tax.
-- Sarah should switch to even quarterly ND-1ES to avoid another
-  year of ND-1UT interest.
-- If Sarah loses MN W-2 income in 2026, the reciprocity tracking
-  drops out -- simpler return.
-- Federal 1099 threshold rises $600 → $2,000 in 2026 under OBBBA
-  -- relevant only if Sarah hires contractors.
-
-## Taxpayer Action List
-[full action list embedded -- see File 3]
+## Questions
+- Your reviewer (CPA or EA) named on the cover sheet.
+- North Dakota Office of State Tax Commissioner, individual income tax: 701-328-1247.
 ```
 
-This is one ND-resident sole prop with MN W-2 wages under reciprocity, full reviewer package abbreviated to ~3 pages. The actual file is longer and includes the full xlsx workbook, the full brief, and the full action list.
+### Step 9: final status message
 
-## Section 12 -- Refusal catalogue
+One message: which skills ran, which self-checks passed, which deliverables were produced, any partial deliverables and why. Done.
 
-- **R-ND-FINAL-1** -- An upstream skill did not run.  _(Refuse; name the missing skill.)_
-- **R-ND-FINAL-2** -- An upstream skill's self-check failed and was not resolved.  _(Refuse; name the check.)_
-- **R-ND-FINAL-3** -- A Section 6 reconciliation failed beyond the $1 (or T2-01) tolerance.  _(Refuse; name the equation and the discrepancy.)_
-- **R-ND-FINAL-4** -- A refusal fired upstream and was suppressed in the upstream output.  _(Refuse; force resolution.)_
-- **R-ND-FINAL-5** -- Intake artifact is incomplete (missing residency, DOB, filing status, MN/MT flag, oil/gas flag, etc.).  _(Refuse; name the missing item(s).)_
-- **R-ND-FINAL-6** -- Taxpayer is not a full-year North Dakota resident (part-year via Form ND-1NR or non-resident).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-7** -- Intake somehow flagged a ND city or local income tax -- none exists.  _(Refuse; route back to intake.)_
-- **R-ND-FINAL-8** -- (reserved)  _(--)_
-- **R-ND-FINAL-9** -- (reserved)  _(--)_
-- **R-ND-FINAL-10** -- Taxpayer is an S-corp (Form 1120-S federally; ND requires Form 60).  _(Refuse; out of scope for this orchestrator (route to `nd-corporate-tax`).)_
-- **R-ND-FINAL-11** -- Taxpayer is a partnership (Form 1065 federally; ND requires Form 58).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-12** -- Tax year other than 2025.  _(Refuse; rates and brackets may differ.)_
-- **R-ND-FINAL-13** -- MFJ taxpayers with mixed residency (one ND resident, one non-resident).  _(Refuse; routes to Form ND-1NR which is out of scope.)_
-- **R-ND-FINAL-14** -- Amended return (Form ND-1X).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-15** -- (reserved)  _(--)_
-- **R-ND-FINAL-16** -- Multi-state income apportionment (work performed in multiple states beyond simple W-2 MN/MT reciprocity).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-17** -- Foreign income / FEIE / FTC at the state level.  _(Refuse; out of scope.)_
-- **R-ND-FINAL-18** -- ND corporate or pass-through tax (wrong tax type).  _(Refuse; route to `nd-corporate-tax`.)_
-- **R-ND-FINAL-19** -- ND pass-through entity (PTE) tax election handling for SMLLC that elected to be taxed as a corporation.  _(Refuse; out of scope (SMLLCs in scope are disregarded only).)_
-- **R-ND-FINAL-20** -- ND K-1 received from an S-corp or partnership flowing through to this individual.  _(Refuse; orchestrator scope is sole prop / SMLLC disregarded only.)_
-- **R-ND-FINAL-21** -- Taxpayer owes ND oil & gas extraction tax (Form OG-1 family) or coal severance tax.  _(Refuse; out of scope. Royalty income tax treatment proceeds normally via federal Line 15.)_
-- **R-ND-FINAL-22** -- Employer withheld MN or MT tax in error despite reciprocity.  _(Refuse the MN/MT recovery filing; orchestrator continues with the ND return and flags the recovery as a separate engagement.)_
-- **R-ND-FINAL-23** -- Part-year ND residency with mid-year move from / to another state.  _(Refuse; ND-1NR is out of scope.)_
+### Deterministic rules
 
-**Refusal catalogue table**  _(Section 12 -- Refusal catalogue)_
+| Rule | Rule text | Source |
+| --- | --- | --- |
+| ND-ASM-T1-01 | The federal return is completed before Form ND-1; information from it is needed for the North Dakota return. | [2025 booklet, "Federal income tax return"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| ND-ASM-T1-02 | Form ND-1, line 1b = Form 1040 line 15 (federal taxable income, not AGI), entered as a negative number if the federal computation is below zero. | same, line 1b |
+| ND-ASM-T1-03 | Full-year residents compute line 20 from the 2026 tax table or rate schedule in `nd-income-tax`; anyone who was a nonresident for any part of the year needs Schedule ND-1NR (refused here). | same, line 20 |
+| ND-ASM-T1-04 | No city or county income tax return step. | Step 4 |
+| ND-ASM-T1-05 | The return is due by the regular due date, generally 15 April 2027; a date on a Saturday, Sunday or holiday moves to the next day that is not one. | [2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf); 2025 booklet, "When and where to file" |
+| ND-ASM-T1-06 | A federal extension is recognized for North Dakota with no separate form; fill in the "Extension" circle. Without a federal extension, Form 101 must be postmarked by the due date and needs good cause. | 2025 booklet, "Extension of time to file" |
+| ND-ASM-T1-07 | An extension to file is not an extension to pay: interest at 12% per year runs from the original due date to the earlier of filing or the extended due date; prepay with Form ND-1EXT (and then file Form ND-1, not ND-EZ). | 2025 booklet, "Extension interest" and "Prepayment of tax due" |
+| ND-ASM-T1-08 | Taxable Social Security (Form 1040 line 6b) is subtracted on line 15. | 2025 booklet, line 15 |
+| ND-ASM-T1-09 | Taxable military retirement (Form 1040 line 5b) is subtracted on line 14; military pay on line 11. | 2025 booklet, lines 11 and 14 |
+| ND-ASM-T1-10 | 2027 estimated tax follows the four tests and the 90% or 100% required payment in `nd-estimated-tax`; there is no higher prior-year percentage for high incomes, as there is federally. | [2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| ND-ASM-T1-11 | North Dakota takes no second standard or itemized deduction and no second QBI deduction; both are inside line 1b. | 2025 booklet, line 1b |
+| ND-ASM-T1-12 | Reciprocity wages of a North Dakota resident are taxed only in North Dakota; no Schedule ND-1CR credit for them. | 2025 booklet, "Reciprocity" |
+| ND-ASM-T1-13 | The Schedule ND-1CR credit is the lesser of tax actually paid to the other state and the North Dakota tax on the income it taxed. | [credit page](https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction) |
+| ND-ASM-T1-14 | North Dakota extraction or production taxes withheld from royalties are not income tax withholding: never on line 26. | 2025 booklet, line 26 |
+| ND-ASM-T1-15 | A paper return carries a complete copy of the federal return (Form 1040 and all schedules, not depreciation workpapers). | 2025 booklet, "Federal income tax return" |
+| ND-ASM-T1-16 | Use Form ND-1, not ND-EZ, if there are any additions, subtractions or credits, any nonresidence, any amount applied from the prior year, any extension payment, or Schedule ND-1UT interest. | 2025 booklet, "Which form to use" and line 37 |
+| ND-ASM-T1-17 | Three files (workbook, brief, action list) are mandatory. | Step 8 |
+| ND-ASM-T1-18 | Oil and gas extraction tax filings are not produced; royalty income tax treatment is handled through line 1b. | Step 1, PF-10 |
+
+### Judgement rules
+
+| Rule | Situation | Guidance |
+| --- | --- | --- |
+| ND-ASM-T2-01 | Materiality of a reconciliation gap | A USD 1 rounding gap is not a failure; USD 50 is. Default USD 5 for federal and North Dakota tie-outs, USD 1 within a form; the reviewer may set another threshold. North Dakota allows amounts to be rounded to the nearest dollar ([N.D.C.C. 57-38-75](https://ndlegis.gov/cencode/t57c38.pdf)). |
+| ND-ASM-T2-02 | Taxable income just above the top of the 0% band in `nd-income-tax` | Note in planning whether a deductible expense or retirement contribution would keep it in the 0% band. |
+| ND-ASM-T2-03 | Renaissance Zone documentation incomplete | Flag; do not take the subtraction without reviewer sign-off. |
+| ND-ASM-T2-04 | Reservation income sourcing | `nd-income-tax` decides on-reservation status; the orchestrator checks the enrollment evidence is on file. |
+| ND-ASM-T2-05 | Military retirement scope | Only military retirement qualifies on line 14 (plus the dual-status technician retirement the booklet names); disability pay and VA benefits are generally already excluded federally. Check the Form 1099-R payer and code. |
+| ND-ASM-T2-06 | Minnesota or Montana certificate missing or stale | R-ND-FINAL-22; route the other state's refund return to a multistate preparer. |
+| ND-ASM-T2-07 | Self-employment work physically done in another state | It may be taxable there and may earn a Schedule ND-1CR credit; material out-of-state work refuses with R-ND-FINAL-16. |
+| ND-ASM-T2-08 | The 1099-NEC deadline may have passed when the orchestrator runs | Surface the exposure in the action list; the reviewer decides. |
+| ND-ASM-T2-09 | Premium tax credit iteration did not converge | Escalate the flag from `us-self-employed-health-insurance` to the brief and document the position chosen. |
+| ND-ASM-T2-10 | Farm income averaging | Confirm the federal Schedule J election came first and that averaging lowers the combined federal and North Dakota tax. |
+| ND-ASM-T2-11 | Negative federal taxable income or an NOL | Enter the negative figure on line 1b; verify the North Dakota carryforward documentation in `nd-income-tax`; flag for the reviewer. |
+| ND-ASM-T2-12 | Oil and gas royalties | Royalties are ordinary income inside line 1b; severance taxes paid at the well are not a credit on Form ND-1. Document the royalty source; avoid double counting. |
+| ND-ASM-T2-13 | A federal return change later | An amended North Dakota return is due within 90 days of the amended federal return or of the final IRS determination ([2025 booklet, "Change to federal return"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)); record it in the planning notes. |
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Minnesota or Montana resident (not a North Dakota resident) with North Dakota wages | Not this orchestrator: `nd-cross-border-tax` (reciprocity refund return, item F). |
+| Nonresident North Dakota spouse on a joint return | Schedule ND-1NR: refuse (R-ND-FINAL-13). |
+| Statutory 7-month rule: a nonresident with a North Dakota home and more than the booklet's day count in North Dakota | Treated as a full-year resident; confirm with `nd-cross-border-tax` before running. |
+| Taxpayer also an employer | Individual return continues; payroll filings flagged from `nd-payroll`. |
+| Sales tax registrant | Status line only from `nd-sales-tax`; does not block. |
+| Late filing or late payment | Penalties and interest under N.D.C.C. 57-38-45: see Filing and payment. Line 34 may carry them, or the Commissioner will notify. |
+| Overpayment to apply to 2027 | Line 30; the election cannot be changed after filing ([2025 booklet, line 30](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)). |
+| Voluntary contributions from the refund or with a balance due | Lines 31 and 35, at least USD 1.00 to a fund; record the taxpayer's choice. |
+| Direct deposit to a foreign financial institution | Not allowed; a paper check is issued (2025 booklet, line 32). |
+
+## Worked cases
+
+**Kari Halvorson, single, Fargo, tax year 2026.** Full-year resident sole proprietor, no special populations, no additions or subtractions. Upstream outputs: `us-federal-return-assembly` gives Form 1040 line 15 of USD 90,604; `nd-income-tax` gives North Dakota tax on line 20 of USD 800.07 under the 2026 single schedule; no credits. North Dakota withholding USD 360 (a small W-2 job); 2026 ND-1ES payments USD 400 (USD 200 on 15 April and 15 June 2026). Her 2025 net tax liability was USD 780.
+
+Assembly: N-1 line 1b = 90,604; N-4 North Dakota taxable income = 90,604; N-5 recomputed tax = 800.07, matches; N-10 net tax liability = 800.07; payments = 360 + 400 = 760; tax due = USD 40.07. Schedule ND-1UT is not needed: her 2025 net tax liability was below the USD 1,000 floor in `nd-estimated-tax`, so no 2026 estimates were required. For 2027, the 2026 net tax liability of USD 800.07 is also below that floor, so no 2027 ND-1ES schedule is produced. The action list tells her to pay USD 40.07 (or USD 40 if rounded to whole dollars under N.D.C.C. 57-38-75) by the 2027 due date at tax.nd.gov.
+
+```oa-check
+name: ND-1 2026 assembly tie-out, single resident with withholding and estimates
+inputs:
+  federal_taxable_income: 90604
+  nd_additions: 0
+  nd_subtractions: 0
+  nd_tax_from_nd_income_tax: 800.07
+  credits: 0
+  nd_withholding: 360
+  nd_estimates: 400
+  prior_year_net_tax_liability: 780
+  estimate_floor_from_nd_estimated_tax: 1000
+steps:
+  - nd_taxable_income: federal_taxable_income + nd_additions - nd_subtractions
+  - net_tax_liability: nd_tax_from_nd_income_tax - credits
+  - total_payments: nd_withholding + nd_estimates
+  - tax_due: net_tax_liability - total_payments
+  - prior_year_gap_to_floor: estimate_floor_from_nd_estimated_tax - prior_year_net_tax_liability
+  - current_year_gap_to_floor: estimate_floor_from_nd_estimated_tax - net_tax_liability
+expected:
+  nd_taxable_income: 90604
+  net_tax_liability: 800.07
+  total_payments: 760
+  tax_due: 40.07
+  prior_year_gap_to_floor: 220
+  current_year_gap_to_floor: 199.93
+```
+
+Both gaps are positive, so the liability is under the floor in both years and no Schedule ND-1UT or 2027 ND-1ES is needed.
+
+## When to refuse or refer
 
 | ID | Situation | Action |
 | --- | --- | --- |
 | R-ND-FINAL-1 | An upstream skill did not run. | Refuse; name the missing skill. |
-| R-ND-FINAL-2 | An upstream skill's self-check failed and was not resolved. | Refuse; name the check. |
-| R-ND-FINAL-3 | A Section 6 reconciliation failed beyond the $1 (or T2-01) tolerance. | Refuse; name the equation and the discrepancy. |
-| R-ND-FINAL-4 | A refusal fired upstream and was suppressed in the upstream output. | Refuse; force resolution. |
-| R-ND-FINAL-5 | Intake artifact is incomplete (missing residency, DOB, filing status, MN/MT flag, oil/gas flag, etc.). | Refuse; name the missing item(s). |
-| R-ND-FINAL-6 | Taxpayer is not a full-year North Dakota resident (part-year via Form ND-1NR or non-resident). | Refuse; out of scope. |
-| R-ND-FINAL-7 | Intake somehow flagged a ND city or local income tax -- none exists. | Refuse; route back to intake. |
-| R-ND-FINAL-8 | (reserved) | -- |
-| R-ND-FINAL-9 | (reserved) | -- |
-| R-ND-FINAL-10 | Taxpayer is an S-corp (Form 1120-S federally; ND requires Form 60). | Refuse; out of scope for this orchestrator (route to `nd-corporate-tax`). |
-| R-ND-FINAL-11 | Taxpayer is a partnership (Form 1065 federally; ND requires Form 58). | Refuse; out of scope. |
-| R-ND-FINAL-12 | Tax year other than 2025. | Refuse; rates and brackets may differ. |
-| R-ND-FINAL-13 | MFJ taxpayers with mixed residency (one ND resident, one non-resident). | Refuse; routes to Form ND-1NR which is out of scope. |
-| R-ND-FINAL-14 | Amended return (Form ND-1X). | Refuse; out of scope. |
-| R-ND-FINAL-15 | (reserved) | -- |
-| R-ND-FINAL-16 | Multi-state income apportionment (work performed in multiple states beyond simple W-2 MN/MT reciprocity). | Refuse; out of scope. |
-| R-ND-FINAL-17 | Foreign income / FEIE / FTC at the state level. | Refuse; out of scope. |
-| R-ND-FINAL-18 | ND corporate or pass-through tax (wrong tax type). | Refuse; route to `nd-corporate-tax`. |
-| R-ND-FINAL-19 | ND pass-through entity (PTE) tax election handling for SMLLC that elected to be taxed as a corporation. | Refuse; out of scope (SMLLCs in scope are disregarded only). |
-| R-ND-FINAL-20 | ND K-1 received from an S-corp or partnership flowing through to this individual. | Refuse; orchestrator scope is sole prop / SMLLC disregarded only. |
-| R-ND-FINAL-21 | Taxpayer owes ND oil & gas extraction tax (Form OG-1 family) or coal severance tax. | Refuse; out of scope. Royalty income tax treatment proceeds normally via federal Line 15. |
-| R-ND-FINAL-22 | Employer withheld MN or MT tax in error despite reciprocity. | Refuse the MN/MT recovery filing; orchestrator continues with the ND return and flags the recovery as a separate engagement. |
-| R-ND-FINAL-23 | Part-year ND residency with mid-year move from / to another state. | Refuse; ND-1NR is out of scope. |
+| R-ND-FINAL-2 | An upstream self-check failed and was not resolved. | Refuse; name the check. |
+| R-ND-FINAL-3 | A Step 6 reconciliation failed beyond the USD 1 (or T2-01) tolerance. | Refuse; name the equation and the gap. |
+| R-ND-FINAL-4 | A refusal fired upstream and was suppressed in its output. | Refuse; force resolution. |
+| R-ND-FINAL-5 | Intake is incomplete (residence, dates of birth, filing status, reciprocity flag, oil and gas flag and so on). | Refuse; name the missing items. |
+| R-ND-FINAL-6 | Not a full-year North Dakota resident. | Refuse; out of scope (`nd-cross-border-tax`). |
+| R-ND-FINAL-7 | Intake flagged a North Dakota city or county income tax return. | Refuse; route back to intake. |
+| R-ND-FINAL-8, 9, 15 | Reserved. | None. |
+| R-ND-FINAL-10 | S corporation (Form 1120-S federally; North Dakota Form 60). | Refuse; route to `nd-corporate-tax`. |
+| R-ND-FINAL-11 | Partnership (Form 1065 federally; North Dakota Form 58). | Refuse; out of scope. |
+| R-ND-FINAL-12 | A tax year other than 2026. | Refuse; schedules and forms differ. |
+| R-ND-FINAL-13 | Joint filers with mixed residence. | Refuse; Schedule ND-1NR is out of scope. |
+| R-ND-FINAL-14 | Amended return. | Refuse; out of scope. |
+| R-ND-FINAL-16 | Multi-state apportionment beyond simple Minnesota or Montana reciprocity wages. | Refuse; out of scope. |
+| R-ND-FINAL-17 | Foreign income, the foreign earned income exclusion or foreign tax credit at state level. | Refuse; out of scope. |
+| R-ND-FINAL-18 | North Dakota corporate or pass-through tax (wrong tax type). | Refuse; route to `nd-corporate-tax`. |
+| R-ND-FINAL-19 | A single-member LLC that elected to be taxed as a corporation, or any entity-level election. | Refuse; only disregarded LLCs are in scope. |
+| R-ND-FINAL-20 | Incoming North Dakota Schedule K-1 from an S corporation or partnership. | Refuse; out of scope. |
+| R-ND-FINAL-21 | Oil and gas extraction or production tax, or coal severance tax, filings. | Refuse; out of scope. Royalty income tax proceeds through line 1b. |
+| R-ND-FINAL-22 | Minnesota or Montana tax withheld in error despite reciprocity. | Refuse the other state's refund filing; continue the North Dakota return and flag the recovery as separate work. |
+| R-ND-FINAL-23 | Part-year residence with a move to or from another state. | Refuse; Schedule ND-1NR is out of scope. |
 
-## Section 13 -- Self-checks
+## Filing and payment
 
-**Self-checks table**  _(Section 13 -- Self-checks)_
+- **Due date:** the 2026 Form ND-1 is due by the regular due date, generally 15 April 2027 ([2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf)). Fiscal-year filers: the 15th day of the 4th month after year end ([2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+- **E-file:** North Dakota participates in the IRS Federal/State e-file program, so both returns can be filed together ([Tax Commissioner individual income tax page](https://www.tax.nd.gov/individual-income-tax)). A payment can be scheduled when e-filing (2025 booklet).
+- **Paper:** mail to Office of State Tax Commissioner, P.O. Box 5621, Bismarck, ND 58506-5621, with a complete copy of the federal return (2025 booklet, "When and where to file").
+- **Pay:** online at tax.nd.gov ("Make A Payment") by electronic check or card; or by check or money order payable to "ND State Tax Commissioner", with the last four digits of the SSN and the form name and year on it, using Form ND-1PRV with a paper return or Form ND-1V with an e-filed return; the check must be on a US or Canadian bank in US dollars (2025 booklet, line 36).
+- **Late payment and late filing** ([N.D.C.C. 57-38-45](https://ndlegis.gov/cencode/t57c38.pdf); 2025 booklet, "Penalty and interest"): unpaid tax on a timely return, 5% or USD 5, whichever is greater; late return with tax due, 5% (or USD 5) for the first month plus 5% for each further month or part, up to 25%; interest 1% per month or part, except the month the tax was due; the Commissioner may waive for good cause.
+- **Refund status:** "Where's My Refund?" on tax.nd.gov; the Tax Commissioner states about 30 days for refund processing ([individual income tax page](https://www.tax.nd.gov/individual-income-tax)).
+- **Refund claims on an amended return:** generally within three years after filing the original return (2025 booklet, "Changing your return").
+- **Help:** 701-328-1247 ([2026 Form ND-1ES, page 3](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf)).
+
+## Completion checklist
 
 | # | Check |
 | --- | --- |
-| 200 | All upstream content skills executed. |
-| 201 | All upstream self-checks passed (or were explicitly waived with reviewer flag). |
-| 202 | Section 6A (federal internal) reconciliations PASS. |
-| 203 | Section 6B (ND internal) reconciliations PASS. |
-| 204 | Section 6C (federal-ND coordination) reconciliations PASS. |
-| 205 | Section 6D (MN/MT reciprocity) reconciliations PASS or N/A. |
-| 206 | Section 6E (1099-NEC) reconciliations PASS or N/A. |
-| 207 | Section 6F (estimated tax) reconciliations PASS. |
-| 208 | Section 6G (withholding tie-out) reconciliations PASS. |
-| 209 | Section 6H (special-population cross-checks) PASS or N/A. |
-| 210 | Assumption log contains every "Assumed" item from every upstream skill. |
-| 211 | Reviewer flag log contains every "Reviewer judgment" item. |
-| 212 | Taxpayer action list has specific dollar amounts and dates. |
-| 213 | Planning notes for 2026 reference ND rate stability, QBI rate change, military retirement / RZ / tribal continuity where applicable, and 1099 threshold. |
-| 214 | Every refusal in Section 12 was evaluated against the taxpayer's facts. |
-| 215 | Three-file deliverable produced in `/mnt/user-data/outputs/`. |
+| 200 | All upstream content skills ran. |
+| 201 | All upstream self-checks passed, or were waived with a reviewer flag. |
+| 202 | 6A federal internal reconciliations pass. |
+| 203 | 6B North Dakota internal reconciliations pass. |
+| 204 | 6C federal and North Dakota coordination passes. |
+| 205 | 6D reciprocity passes or is not applicable. |
+| 206 | 6E 1099-NEC passes or is not applicable. |
+| 207 | 6F estimated tax passes. |
+| 208 | 6G withholding tie-out passes. |
+| 209 | 6H special populations pass or are not applicable. |
+| 210 | The assumption log holds every "Assumed" item from every upstream skill. |
+| 211 | The reviewer flag log holds every "Reviewer judgment" item. |
+| 212 | The action list has specific dollar amounts and dates. |
+| 213 | Planning notes cover rate schedule changes, federal changes flowing through line 15, military, zone and reservation continuity where they apply, and contractor form thresholds from `us-1099-nec-issuance`. |
+| 214 | Every refusal in the table was tested against the facts. |
+| 215 | Three files produced in `/mnt/user-data/outputs/`. |
 | 216 | `present_files` called with the three files. |
-| 217 | Bracket math audit explicitly documented in the reviewer brief (which band, breakpoints used). |
-| 218 | ND-1 Line 1 verified equal to Form 1040 Line 15 (NOT Line 11). |
+| 217 | The rate schedule audit in the brief names the band and the schedule from `nd-income-tax`. |
+| 218 | Form ND-1, line 1b equals Form 1040 line 15 (not line 11), sign included. |
 
-- **200** -- All upstream content skills executed.  _(Section 13 -- Self-checks)_
-- **201** -- All upstream self-checks passed (or were explicitly waived with reviewer flag).  _(Section 13 -- Self-checks)_
-- **202** -- Section 6A (federal internal) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **203** -- Section 6B (ND internal) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **204** -- Section 6C (federal-ND coordination) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **205** -- Section 6D (MN/MT reciprocity) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_
-- **206** -- Section 6E (1099-NEC) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_
-- **207** -- Section 6F (estimated tax) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **208** -- Section 6G (withholding tie-out) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **209** -- Section 6H (special-population cross-checks) PASS or N/A.  _(Section 13 -- Self-checks)_
-- **210** -- Assumption log contains every "Assumed" item from every upstream skill.  _(Section 13 -- Self-checks)_
-- **211** -- Reviewer flag log contains every "Reviewer judgment" item.  _(Section 13 -- Self-checks)_
-- **212** -- Taxpayer action list has specific dollar amounts and dates.  _(Section 13 -- Self-checks)_
-- **213** -- Planning notes for 2026 reference ND rate stability, QBI rate change, military retirement / RZ / tribal continuity where applicable, and 1099 threshold.  _(Section 13 -- Self-checks)_
-- **214** -- Every refusal in Section 12 was evaluated against the taxpayer's facts.  _(Section 13 -- Self-checks)_
-- **215** -- Three-file deliverable produced in `/mnt/user-data/outputs/`.  _(Section 13 -- Self-checks)_
-- **216** -- `present_files` called with the three files.  _(Section 13 -- Self-checks)_
-- **217** -- Bracket math audit explicitly documented in the reviewer brief (which band, breakpoints used).  _(Section 13 -- Self-checks)_
-- **218** -- ND-1 Line 1 verified equal to Form 1040 Line 15 (NOT Line 11).  _(Section 13 -- Self-checks)_
-
-## Section 14 -- Known gaps
-
-1. PDF form filling is not automated. The reviewer transcribes the
-   worksheets into ND TAP or an approved e-file partner.
-2. E-filing is the reviewer's responsibility. This skill produces the
-   computation; submission happens outside the agent.
-3. Payment execution is the taxpayer's responsibility; the skill
-   provides instructions only.
-4. Multi-state returns are not supported (ND-only, plus MN/MT
-   reciprocity handling).
-5. Foreign income is not supported.
-6. Part-year and non-resident returns (Form ND-1NR) are refused.
-7. The package is complete only for tax year 2025; 2026 appears only
-   as prospective planning.
-8. ND has no city-level income tax; there is no city-return artifact
-   to produce (unlike Michigan / Detroit).
-9. ND oil & gas extraction tax and coal severance tax filings are
-   not produced (income tax treatment of royalty income IS handled
-   because it is already embedded in federal taxable income).
-10. Renaissance Zone, tribal-enrollment, and military-retirement
-    subtractions are consumed from `nd-income-tax`; the orchestrator
-    only verifies documentation flags.
-11. The MN/MT reciprocity check assumes the employer correctly
-    remitted ND withholding when Form MWR / MT certificate was on
-    file. If the employer erred, the recovery filing is out of
-    scope (R-ND-FINAL-22).
-
-### Change log
-
-- **v0.1 (May 2026):** Initial draft. Orchestrates federal + ND
-  stack. Three-file deliverable. Section 6 verification matrix with
-  50+ reconciliations covering federal-internal, ND-internal,
-  federal-ND coordination (especially the Line 15 NOT Line 11
-  starting point), MN/MT reciprocity, 1099-NEC, estimated-tax,
-  withholding tie-out, and special-population cross-checks
-  (military retirement, Renaissance Zone, tribal, farm averaging).
-  Worked example: Fargo ND resident sole prop with $150K Schedule
-  C, Solo 401(k), $12K MN W-2 under reciprocity, Q3 spike causing
-  Form 2210 / Schedule ND-1UT exposure.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and
-computational purposes only and do not constitute tax, legal, or
-financial advice. Open Accountants and its contributors accept no
-liability for any errors, omissions, or outcomes arising from the use
-of this skill. All outputs must be reviewed and signed off by a
-qualified professional (such as a CPA, EA, tax attorney, or
-equivalent licensed practitioner in your jurisdiction) before filing
-or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at
-[openaccountants.com](https://openaccountants.com). Log in to access
-the latest version, request a professional review from a licensed
-accountant, and track updates as tax law changes.
-
-## Worked examples (oa-check)
-
-The bracket math in the worked return above: single, ND-1 taxable income $90,604, TY 2025 schedule. Tax = 1.95% x (90,604 - 48,475) = 821.52. The second block checks the 0% band: ND taxable income at the $48,475 breakpoint owes nothing.
-
-```oa-check
-name: ND-1 2025 single, taxable income 90,604
-inputs:
-  ti: 90604
-steps:
-  - tax: round((min(ti, 244825) - 48475) * 0.0195, 2)
-expected:
-  tax: 821.52
-```
-
-```oa-check
-name: ND-1 2025 single, taxable income at the 0% breakpoint
-inputs:
-  ti: 48475
-steps:
-  - tax: max(min(ti, 244825) - 48475, 0) * 0.0195
-expected:
-  tax: 0
-```
-
+Known gaps: PDF form filling is not automated (the reviewer transcribes the worksheets into tax software or the paper form); e-filing and payment are done outside the agent; multi-state returns, foreign income, part-year and nonresident returns are not supported; oil and gas extraction and coal severance filings are not produced; Renaissance Zone, reservation and military subtractions are computed by `nd-income-tax` and only their documentation is checked here; the reciprocity check assumes the employer correctly withheld North Dakota tax when the other state's certificate was on file.
 
 ## Sources
 
-| # | Source | URL | Read on |
-| --- | --- | --- | --- |
-| 1 | ND Tax Commissioner -- 2025 Individual Income Tax Booklet (rate schedules, estimated tax) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-13 |
-| 2 | N.D.C.C. chapter 57-38 (57-38-30.3, 57-38-62) | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-13 |
+| Source | URL | Read on |
+| --- | --- | --- |
+| 2025 individual income tax booklet, 2025-2026 filing cycle. Read for "Which form to use", reciprocity, residence and the 7-month rule, when and where to file, extensions, extension interest and prepayment, penalty and interest, federal return copy, amended returns, and Form ND-1 lines 1b, 2, 5 to 16, 20 to 23, 26, 27, 30 to 37. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-14 |
+| 2026 Form ND-1ES. Read for the 2026 return due date ("generally, April 15, 2027"), the 100% prior-year test, payment instructions and the help line. | https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf | 2026-11-14 |
+| 2025 Schedule ND-1UT, 2025-2026 filing cycle. Read for the line 1 and line 3 links to Form ND-1 lines 25 and 26 and the line 17 transfer to line 37. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/28704-schedule-nd-1ut-2025.pdf | 2026-11-14 |
+| Tax Commissioner individual income tax page. Read for filing requirements, Federal/State e-file, paper filing, amendment within 90 days, extensions and refund processing time. | https://www.tax.nd.gov/individual-income-tax | 2026-11-14 |
+| Tax Commissioner page, credit for income tax paid to another state or local jurisdiction. Read for qualifications, the lesser-of amount and Schedule ND-1CR. | https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction | 2026-11-14 |
+| N.D.C.C. chapter 57-38. Read for sections 57-38-45 (penalties, interest, waiver) and 57-38-75 (rounding to whole dollars). | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-14 |
+
+Not yet confirmed: the 2026 Form ND-1, schedules and instructions (not yet published; every line number here is from the 2025 forms, 2025-2026 filing cycle); the Form ND-1 line number for North Dakota taxable income, which the 2025 booklet gives as both line 18 and line 19 in different places; the 2026 Form 1040 line numbers in the federal checks; a statutory source for the absence of any city or county individual income tax; North Dakota treatment of bonus depreciation, section 179 and other states' municipal bond interest beyond what `nd-income-tax` states; the federal and North Dakota extended due dates for tax year 2026.

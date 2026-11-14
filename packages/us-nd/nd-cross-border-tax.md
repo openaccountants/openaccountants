@@ -1,187 +1,156 @@
 ---
 name: nd-cross-border-tax
 description: >-
-  Use when a taxpayer or business crosses North Dakota borders (tax year 2025 figures):
-  nonresident and part-year ND filing on Form ND-1, the ND-Minnesota and
-  ND-Montana reciprocity agreements, military-service sourcing, the
-  credit for income tax paid to another state, and the 0%/1.95%/2.50%
-  bracket schedule (single: 0% to $48,475, 1.95% to $244,825, 2.50%
-  above) verified from the Tax Commissioner's individual page. Trigger on
-  North Dakota nonresident, ND-1 part-year, ND Minnesota reciprocity, ND
-  military pay, credit for tax paid another state North Dakota.
-  Source-cited draft; reciprocity and military cites need statute
-  confirmation (ndlegis.nd.gov unreachable 2026-10-25).
+  Use when an individual's income crosses the North Dakota border in tax year 2026, covering
+  nonresident and part-year filing on Form ND-1 and the North Dakota income ratio,
+  the Minnesota and Montana reciprocity agreements and Form NDW-R, the statutory
+  7-month residence rule, military residence and the military pay exclusion,
+  the employer credit for wages paid to a mobilized employee, and the credit for
+  income tax paid to another state. Trigger on North Dakota nonresident, ND-1
+  part-year, ND Minnesota reciprocity, NDW-R, ND military pay, credit for tax
+  paid another state North Dakota.
 jurisdiction: US-ND
 type: decision
 category: cross-border
-tax_year: 2025
-tax_year_notes: Covers the 2025-2026 filing cycle, that is tax year 2025 figures for returns filed in 2026. North Dakota indexes its brackets and the 2026 amounts were not published when checked on 2026-11-13.
+tax_year: 2026
 tier: 2
 verified_by: pending
-last_updated: 2026-11-13
-version: 0.4
+last_updated: 2026-11-14
+version: "1.0"
 ---
 
-# North Dakota cross-border tax (nonresidents, reciprocity, military, credits)
+# North Dakota cross-border tax (nonresidents, reciprocity, military, credits), tax year 2026
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## 1. Who this applies to
-
-- Individuals who work in ND but live elsewhere (ND-source wages), live in ND but work elsewhere, or move in/out of ND mid-year (part-year Form ND-1).
-- Residents of **Minnesota and Montana** working in ND under reciprocity agreements (exempt from ND wage withholding on employment income).
-- Military personnel stationed in ND, and their spouses under federal Military Spouses Residency Relief Act (MSRRA) rules.
-- Businesses with ND nexus but out-of-state owners, and part-year residents of border states (MN, MT, SD, Manitoba).
-
-### 2. Core rules and rates
-
-- **ND individual brackets (verified from the Tax Commissioner's individual income tax page, 2026-10-25):** single -- 0.00% to $48,475; 1.95% over $48,475 to $244,825; 2.50% over $244,825. MFJ/qualifying widow(er) -- 0% to $80,975; 1.95% to $298,075; 2.50% above. MFS -- 0% to $40,475; 1.95% to $149,025; 2.50% above. HOH -- 0% to $64,950; 1.95% to $271,450; 2.50% above. _(tax.nd.gov/individual-income-tax, 200 with text, 2026-10-25; the page presents these as the current schedule -- confirm the tax year against the Form ND-1 booklet before filing.)_
-- **The 0% first bracket is the headline cross-border fact:** a nonresident whose ND-source wages fall entirely under the first bracket owes **zero ND income tax** even though a return may still be required. _(same source)_
-- **Reciprocity.** ND maintains income-tax reciprocity with **Minnesota** and **Montana** (employment income taxable only in the state of residence; no ND withholding with a valid exemption certificate). _(US-ND-dr-ndwr.pdf: "North Dakota has income tax reciprocity agreements with Minnesota and Montana. If you are a resident of one of these states, the agreements provide that you do not have to pay North Dakota income tax on wages you earn for work in North Dakota.")_
-- **Military.** Nonresident military personnel stationed in ND are not ND residents; military pay is sourced to the domicile state. Mobilized-employee relief exists as a **tax credit** against ND tax (Tax Commissioner page "Wages Paid to Mobilized Military Employee Tax Credit," verified 2026-10-25). MSRRA is federal and governs spousal sourcing.
-- **Credit for income tax paid to another state or local jurisdiction** -- ND grants a credit (Form ND-CITP or per the Tax Commissioner page of the same name, verified live 2026-10-25) for tax lawfully paid to another state on the same income; the credit cannot exceed the ND tax attributable to that income.
-- **ND has no state-level exit tax or entry tax.** _(no such levy appears in the Tax Commissioner's tax-type index, read 2026-10-25.)_
-
-### 3. Base and adjustments
-
-- Nonresidents: ND taxable income = ND-source income (wages for services performed in ND, ND business income, ND rental/real-property gains) allocated per the ND-1 instructions, then the bracket schedule applies to the **full** taxable income with a proration of the tax by the ND-source ratio (the exact ND-1 proration computation: see "Not yet confirmed:" in Sources).
-- Reciprocity states: employment income is excluded from ND taxation; **non-employment** ND-source income (contract work, rentals, business) remains ND-taxable.
-- Part-year: two short-period returns or one annual return with the residency split per the ND-1 instructions.
-- The credit for tax paid to another state is claimed after the ND tax computation and is limited to the lesser of tax paid or ND tax on the same income.
-
-### 4. Deadlines
-
-- Form ND-1 (full-year, part-year, and nonresident): due **April 15** (same as federal); extension to October 15 by timely federal extension filing. _(existing `nd-income-tax` / `nd-return-assembly` skills; ND TAP payment mechanics verified on tax.nd.gov 2026-10-25.)_
-- Withholding exemption certificate for reciprocity states: file with the employer before the first pay period of the year to stop ND withholding.
-- Estimated tax (Form ND-1ES) quarterly if the expected balance due exceeds the threshold; interest applies to underpayment (US-ND-dr-nd1es2025.pdf: estimated tax not required where the balance due is under $1,000 -- "you do not have to pay estimated tax"; interest at 12% per year, US-ND-dr-nd1ut2025.pdf: "Interest of 12% per year is charged on" underpayments).
-
-### 5. Penalties and interest
-
-- Underpaid estimates: interest on the shortfall from the installment due date (US-ND-dr-nd1ut2025.pdf: "Interest of 12% per year is charged on" underpayments; US-ND-dr-nd1es2025.pdf: interest "of 12% per year from the installment" due date).
-- Failure to file / failure to pay: Chapter 57-38 penalties; exact 2026 percentages: see "Not yet confirmed:" in Sources.
-- Reciprocity error pattern: a Montana or Minnesota resident who fails to file the exemption certificate has ND withheld and must file an ND return to get it back -- a refund claim, not a penalty, but a common client complaint.
-
-### 6. Cross-border and federal overlay
-
-- SALT cap: ND tax paid (including by nonresidents) counts toward the federal $10,000 state-and-local deduction cap for itemizers (US-ND-dr-plaw119-21.txt, SEC. 70120 amending IRC § 164(b)(6), which carries the "$10,000 ($5,000 in the case of a married individual filing a separate return)" limitation).
-- ND-Manitoba (Canada) border traffic: foreign-tax credit analysis is federal (see federal skills); ND's credit for tax paid to **another state** does not cover foreign tax.
-- Treaty and MSRRA interactions are federal; ND follows the federal sourcing result.
-- Employers: multi-state withholding follows the reciprocity certificate, not the employee's address.
-
-### 7. Worked examples
-
-**Example 1 -- Minnesota resident working in Fargo without reciprocity relief.** MN resident earns $55,000 of Fargo wages, no exemption certificate, so ND withheld; wages exceed the 0% bracket floor.
-
-```oa-check
-name: nd nonresident mn resident wages
-inputs:
-  wages: 55000
-steps:
-  - nd_taxable: wages
-expected:
-  nd_taxable: 55000
-```
-
-(The ND tax itself is then computed on the bracket schedule with the ND-source proration; because the reciprocity agreement makes the wages taxable only in MN, the correct fix is the exemption certificate plus a refund claim -- see §5.)
-
-**Example 2 -- ND-source income of $100,000 for a nonresident, bracket math.** Assume the ND-1 computation applies the bracket schedule to ND taxable income.
-
-```oa-check
-name: nd bracket tax 100k single
-inputs:
-  ti: 100000
-steps:
-  - b1: (min(ti, 244825) - 48475) * 0.0195
-  - tax: b1
-expected:
-  tax: 1004.74
-```
-
-(The 0% first $48,475 is real money for border commuters -- a $48,475-or-less commuter owes nothing.)
-
-### 8. Ask the client first
-
-1. Where is domicile, and did any move cross a state line mid-year?
-2. Is the client a Montana or Minnesota resident working in ND? (Reciprocity certificate on file?)
-3. Military: is the service member stationed in ND, and what is the claimed domicile? Does MSRRA cover the spouse's income?
-4. What other states taxed the same income, and is the ND credit-for-tax-paid claim being made (or the other state's credit)?
-5. Any ND real property, rentals, or business situs that keeps ND in scope even with no ND wages?
-
-### 9. Sources
-
-- ND Office of State Tax Commissioner -- individual income tax (bracket schedules, estimated-tax interest, ND-1ES): <https://www.tax.nd.gov/individual-income-tax> -- 200 with text, 2026-10-25.
-- ND Tax Commissioner -- Credit for Income Tax Paid to Another State or Local Jurisdiction: <https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction> -- 200, 2026-10-25.
-- ND Tax Commissioner -- Wages Paid to Mobilized Military Employee Tax Credit: <https://www.tax.nd.gov/wages-paid-mobilized-military-employee-tax-credit> -- 200, 2026-10-25 (linked from the site root, verified 2026-10-25).
-- Existing `nd-income-tax`, `nd-payroll`, `nd-return-assembly` skills (reciprocity, filing mechanics) -- read 2026-10-25.
-- Reciprocity statute cites, ND-1 nonresident proration mechanics, 2026 penalty/interest percentages: see the "Not yet confirmed:" paragraph below -- ndlegis.nd.gov DNS failure (getaddrinfo) on 2026-10-25; Justia mirror 403.
-
-<!-- openaccountants-cta-block -->
-
----
-
-### Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network -- accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at the OpenAccountants network.
-
-- Use it in your AI: 
-- Talk to a verified accountant: https://calendly.com/openaccountants-info/30min
+**Answer first.** Minnesota and Montana residents who work in North Dakota pay no North Dakota income tax on those wages under reciprocity (a Minnesota resident must return home at least once a month) and stop withholding by giving the employer Form NDW-R each year. Other nonresidents pay North Dakota tax computed on their whole North Dakota taxable income and then multiplied by the share of federal adjusted gross income that comes from North Dakota. A North Dakota resident taxed by another state on the same income claims the credit on Schedule ND-1CR, limited to the lesser of the other state's tax and the North Dakota tax on that income. The 2026 rate schedules are owned by `nd-income-tax`.
 
 ## Who this applies to
 
-No figures stated in this section.
+- Individuals who live elsewhere and have North Dakota-source income (wages for work in North Dakota, North Dakota rental or royalty income, a North Dakota business), and part-year residents who moved in or out during 2026.
+- Residents of **Minnesota and Montana** working in North Dakota under the reciprocity agreements, and North Dakota residents working in those states.
+- People with a home in North Dakota who spend more than 210 days there (the statutory 7-month rule).
+- Members of the US armed forces stationed in or from North Dakota, and their civilian spouses.
+- Employers of National Guard or reserve members mobilized for federal active duty.
+- North Dakota residents who paid income tax to another state or a local jurisdiction in that state on the same income.
+
+Business nexus and corporate apportionment are not here: see `nd-corporate-tax` and `nd-transfer-pricing`.
 
 ## Rates, bands and thresholds
 
-No figures stated in this section.
+The 2026 individual rate schedules (0%, 1.95% and 2.50%) and their breakpoints are owned by `nd-income-tax`; this skill does not restate them. The cross-border figures are:
 
-## The taxable base
+| Item | Amount, tax year 2026 | Official source |
+| --- | --- | --- |
+| Statutory 7-month rule: a nonresident with a permanent place of abode in North Dakota files as a full-year resident above this many days in the state (2025 booklet, 2025-2026 filing cycle) | more than 210 days | [2025 individual booklet, "Statutory 7-month rule"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
+| Reciprocity: North Dakota withholding on covered wages that requires a North Dakota return to claim the refund (2025 booklet, 2025-2026 filing cycle) | USD 5.00 or more | same booklet, "Reciprocity" |
+| Form NDW-R: employee gives it to the employer by this date each year, or within 30 days of starting work or moving | 28 February | [Form NDW-R (SFN 28729)](https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf) |
+| North Dakota income ratio on the 2026 estimate worksheet: rounding | two decimal places, capped at 1.00 | [2026 Form ND-1ES, lines 16 to 18](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Credit for income tax paid to another state | lesser of the tax actually paid to the other state and the North Dakota tax on the income taxed by the other state | [Tax Commissioner, credit for income tax paid to another state](https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction) |
+| Mobilized employee credit (for the employer): rate | 25% of the lesser of continued compensation and the reduction in compensation | [Tax Commissioner, wages paid to a mobilized military employee credit](https://www.tax.nd.gov/wages-paid-mobilized-military-employee-tax-credit) |
+| Mobilized employee credit: maximum per eligible employee | USD 1,000 | same |
+| Mobilized employee credit: carryforward | five taxable years | same |
 
-No figures stated in this section.
+## The base
+
+1. **Residents** are taxed on all income through federal taxable income and the state adjustments in `nd-income-tax`.
+2. **Nonresidents:** North Dakota-source gross income includes wages and fees for services in North Dakota; income from tangible property in North Dakota (rents, oil and gas royalties, gains on that property); income from a trade or business carried on in North Dakota; estate and trust income from those sources; North Dakota gambling income; and unemployment compensation from earlier North Dakota work ([2025 booklet, "Gross income from North Dakota sources"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+3. **Not North Dakota-source for a nonresident:** military pay, interest, dividends, pensions, annuities, gains on intangible property, compensation exempt under the Minnesota or Montana reciprocity, compensation exempt under federal military and interstate commerce laws, and compensation exempt under North Dakota's mobile workforce exemption. Interest, dividends and gains are North Dakota-source if they come from a trade or business carried on in North Dakota (same booklet).
+4. **Proration:** the tax is computed on the full North Dakota taxable income using the 2026 rate schedule, then multiplied by the North Dakota income ratio: North Dakota-source federal adjusted gross income (reduced by the state subtractions) divided by federal adjusted gross income (reduced by US obligation interest), rounded to two decimals ([2026 Form ND-1ES, lines 15 to 19](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf)). On the return the same computation is done on Schedule ND-1NR ([2025 booklet, line 20](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+5. **Reciprocity wages:** a Minnesota resident who keeps a permanent home in Minnesota and returns to it at least once a month owes no North Dakota tax on pay for personal or professional services in North Dakota; a Montana resident owes no North Dakota tax on wages for work in North Dakota. Their non-wage North Dakota income (rentals, a North Dakota business, contract work outside the agreement) stays taxable ([2025 booklet, "Reciprocity"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf); [Form NDW-R instructions](https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf)). The wages remain taxable in the state of residence.
+6. **Military:** a North Dakota resident in the armed forces files as a full-year resident wherever stationed; a nonresident service member stationed in North Dakota files only if they have North Dakota-source income other than military pay. Military pay included in federal taxable income is subtracted on Form ND-1, line 11, and taxable military retirement on line 14 ([2025 booklet](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)). From tax year 2026, military pay that qualifies for the military pay deduction is no longer subject to North Dakota withholding (Senate Bill 2047, 2025), unless the member asks the employer to withhold (same booklet, "Military Updates").
+7. **Credit for tax paid to another state:** a full-year or part-year resident who paid income tax to another state or a local jurisdiction in that state on the same income claims it on Schedule ND-1CR (Form ND-1, line 21). For a part-year resident the income must have been earned or received while a North Dakota resident. A resident included in another state's composite return filed by a pass-through entity also qualifies ([credit page, citing N.D.C.C. 57-38-30.3(4)](https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction)).
 
 ## Deadlines and filing
 
-No figures stated in this section.
+- **Form ND-1 for 2026:** due by the regular due date, generally 15 April 2027 ([2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf)). A federal extension is recognized for North Dakota with no separate form; without one, Form 101 must be postmarked by the due date and needs good cause ([2025 booklet, "Extension of time to file"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+- **Who must file (2025 booklet rules):** a nonresident who must file a federal return and had North Dakota-source gross income. A Minnesota resident need not file if the only North Dakota income was pay for services and they returned home monthly; a Montana resident need not file if the only North Dakota income was wages (same booklet).
+- **Reciprocity refund:** a Minnesota or Montana resident whose employer withheld USD 5.00 or more of North Dakota tax on covered wages files Form ND-1 for the refund and fills in the "MN/MT reciprocity" circle (item F) (same booklet).
+- **Form NDW-R:** a new form every year, given to the employer by 28 February or within 30 days of starting work or changing residence. An incomplete form means the employer must withhold. The employer mails forms received by 28 February to the Office of State Tax Commissioner by 31 March, and others within 30 days ([Form NDW-R](https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf)).
+- **North Dakota residents working in Minnesota or Montana:** give the employer Minnesota Form MW-R or Montana Form MT-R to stop that state's withholding; if it was withheld, file in that state for a refund ([2025 booklet, "Reciprocity"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+- **Estimated tax:** a nonresident or new resident whose North Dakota income starts after the first due date pays in equal amounts over the remaining dates. The tests and dates are in `nd-estimated-tax`.
 
 ## Penalties and interest
 
-No figures stated in this section.
+Under [N.D.C.C. 57-38-45](https://ndlegis.gov/cencode/t57c38.pdf):
+
+- Tax shown on a timely return but not paid: 5% of the unpaid tax or USD 5, whichever is greater.
+- Return filed late: 5% of the tax (or USD 5) for the first month or part month, plus 5% for each further month or part, up to 25% in total.
+- Interest on unpaid tax: 1% per month or part month, except the month the tax was due. With a valid extension: 12% per year from the original due date, and no penalty if the return and tax are in by the extended date ([2025 booklet, "Extension interest" and "Penalty and interest"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)).
+- The Commissioner may waive penalty or interest for good cause (57-38-45(5)).
+- Common reciprocity problem: a Minnesota or Montana resident who did not give the employer Form NDW-R has North Dakota tax withheld and must file to get it back. That is a refund claim, not a penalty.
 
 ## Cross-border points
 
-No figures stated in this section.
+- **Federal deduction for state income tax:** the federal state and local tax cap for 2025 and 2026 was changed by Public Law 119-21 and is owned by `us-schedule-a-itemized-deductions`; do not restate it here. (The old file's USD 10,000 figure is wrong for 2025 and 2026.)
+- **Foreign income and treaties:** income tax treaties do not apply for North Dakota income tax unless the treaty specifically exempts income from tax by a US state, so treaty-exempt income can still be North Dakota-taxable ([2025 booklet, "Nonresident alien"](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf)). The credit on Schedule ND-1CR is described for tax paid to another state or a local jurisdiction in that state; it is not a foreign tax credit. Manitoba and other foreign tax is handled federally.
+- **Military spouses:** a civilian spouse is treated as a resident or nonresident according to an election under the federal Servicemembers Civil Relief Act; a nonresident civilian spouse living in North Dakota only to be with a service member stationed here does not file if all the booklet's conditions are met (same booklet).
+- **Employers:** multi-state withholding follows a valid Form NDW-R, not the employee's address. Withholding mechanics belong to `nd-payroll`.
+- **No exit or entry tax:** no such tax appears among the Tax Commissioner's income tax rules read for this skill; a mover is taxed by residence periods and source.
 
-## Worked examples
+## Two worked examples that recompute
 
-No figures stated in this section.
+**Example 1: South Dakota resident with Fargo wages (no reciprocity).** Single, full-year South Dakota resident. 2026 federal adjusted gross income USD 115,000, of which USD 69,000 is wages for work in Fargo. North Dakota taxable income (worksheet line 5) USD 100,000, no subtractions. Tax on the full USD 100,000 under the 2026 single schedule (owned by `nd-income-tax`: 0% to USD 49,575, 1.95% to USD 250,400) is (100,000 - 49,575) x 1.95% = USD 983.29. Ratio 69,000 / 115,000 = 0.60. North Dakota tax USD 983.29 x 0.60 = USD 589.97.
+
+```oa-check
+name: ND 2026 nonresident, tax prorated by the ND income ratio
+inputs:
+  nd_taxable_income: 100000
+  zero_band_top: 49575
+  rate: 0.0195
+  nd_source_agi: 69000
+  federal_agi: 115000
+steps:
+  - full_tax: round((min(nd_taxable_income, 250400) - zero_band_top) * rate, 2)
+  - ratio: round(min(nd_source_agi / federal_agi, 1), 2)
+  - nd_tax: round(full_tax * ratio, 2)
+expected:
+  full_tax: 983.29
+  ratio: 0.60
+  nd_tax: 589.97
+```
+
+**Example 2: decision, should a Moorhead commuter give the employer Form NDW-R?** Full-year Minnesota resident who returns home every night, earning USD 55,000 of Fargo wages and nothing else from North Dakota. Under reciprocity the North Dakota tax on those wages is zero either way.
+
+- **With Form NDW-R by 28 February:** no North Dakota withholding, no North Dakota return.
+- **Without it:** the employer must withhold North Dakota tax (say USD 640 over the year, an invented figure). North Dakota tax is still zero, so the client must file Form ND-1 (item F) to get all USD 640 back after the year ends.
+- **The figure that decides:** the cash withheld and the cost of an extra return, against nothing. Give the employer Form NDW-R every year.
+
+```oa-check
+name: ND reciprocity, refund when NDW-R was not filed
+inputs:
+  nd_wages: 55000
+  nd_withheld_without_ndwr: 640
+  nd_tax_rate_on_reciprocity_wages: 0
+steps:
+  - nd_tax: nd_wages * nd_tax_rate_on_reciprocity_wages
+  - refund_due: nd_withheld_without_ndwr - nd_tax
+  - cash_held_with_ndwr: 0
+  - cash_held_without_ndwr: refund_due
+expected:
+  nd_tax: 0
+  refund_due: 640
+  cash_held_without_ndwr: 640
+```
 
 ## Ask the client first
 
-No figures stated in this section.
+1. Where was the client domiciled during 2026, did any move cross a state line, and on what dates?
+2. Does the client keep a permanent place of abode in North Dakota, and how many days were spent there?
+3. Is the client a Minnesota or Montana resident working in North Dakota (and, for Minnesota, home at least monthly)? Is Form NDW-R on file with each employer for 2026?
+4. Military: is the client or spouse in the armed forces, where is the permanent duty station, and what residence is claimed (including a Servicemembers Civil Relief Act election by the spouse)?
+5. Which other states taxed the same income, and how much tax was actually paid there?
+6. Any North Dakota rentals, royalties or business that keep North Dakota in scope with no North Dakota wages?
 
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| US-ND-dr-nd-booklet2024.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2024-iit/2024-individual-income-tax-booklet.pdf | 2026-10-28 |
-| US-ND-dr-nd-withholding-2025.pdf | https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf | 2026-10-28 |
-| US-ND-dr-ndwr.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf | 2026-10-28 |
-| US-ND-dr-nd-walsh-county-notice-2026.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/sales-use/local-jurisdiction-rates/2026-jurisdiction/notice-to-walsh-county-permit-holders.pdf | 2026-10-28 |
-| US-ND-dr-t57c51-1.pdf | https://ndlegis.gov/cencode/t57c51-1.pdf | 2026-10-28 |
-| US-ND-dr-usc26-1.txt | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1&num=0&edition=prelim | 2026-10-28 |
-| US-ND-dr-ndcc-57-39-2.pdf | https://ndlegis.gov/cencode/t57c39-2.pdf | 2026-10-28 |
-| US-ND-tap.html | https://tap.tax.nd.gov/?Check=1 | 2026-10-28 |
+| 2025 individual income tax booklet, 2025-2026 filing cycle. Read for residence rules including the 7-month rule, who must file, nonresident North Dakota-source income and exceptions, reciprocity, military updates, extension and penalty pages, and Form ND-1 lines 11, 14, 20, 21 and 26. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-11-14 |
+| 2026 Form ND-1ES. Read for the nonresident and part-year worksheet lines 15 to 19, the North Dakota income ratio and the part-year installment rule. | https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf | 2026-11-14 |
+| Form NDW-R (SFN 28729, 12-2023). Read for the employee and employer instructions: monthly-return condition, 28 February and 30-day deadlines, yearly renewal, mailing by 31 March. | https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf | 2026-11-14 |
+| Tax Commissioner page, credit for income tax paid to another state or local jurisdiction. Read for qualifications, the lesser-of amount, Schedule ND-1CR and the N.D.C.C. 57-38-30.3(4) reference. | https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction | 2026-11-14 |
+| Tax Commissioner page, wages paid to a mobilized military employee credit. Read for who claims it, the 25% rate, USD 1,000 cap and five-year carryforward. Read through Firecrawl after a direct request returned 403. | https://www.tax.nd.gov/wages-paid-mobilized-military-employee-tax-credit | 2026-11-14 |
+| N.D.C.C. chapter 57-38. Read for section 57-38-45 (penalties, interest, good-cause waiver). | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-14 |
 
-Not yet confirmed: figures in this skill lack archived line-citations.
-- Exact ND-1 nonresident proration mechanics (bracket schedule applied to full taxable income with tax prorated by the ND-source ratio).
-- Exact 2026 Chapter 57-38 failure-to-file / failure-to-pay penalty percentages (ndlegis.nd.gov DNS failure 2026-10-25).
-
-
-| Source | URL | Read on |
-| --- | --- | --- |
-| (see "Not yet confirmed:" paragraph) | -- | 2026-10-28 |
-
-No figures stated in this section.
-
-## Talk to a verified accountant
-
-No figures stated in this section.
+Not yet confirmed: the 2026 Form ND-1 and Schedule ND-1NR line numbers and any 2026 change to the 7-month rule or the USD 5.00 reciprocity refund threshold (the 2025 booklet is used, labelled 2025-2026 filing cycle); the text of the Minnesota and Montana reciprocity agreements and their statutory cites; the statutory text of the mobile workforce exemption.

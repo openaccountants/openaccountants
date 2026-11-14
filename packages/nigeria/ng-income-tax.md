@@ -15,18 +15,19 @@ description: >
   is the canonical guide and calls this file deprecated; differences are
   flagged here. This Tier 2 draft supports source checking and reviewer
   questions; it does not authorise filing, payment or a tax position.
-version: 2.2
+version: 2.3
 jurisdiction: NG
 tax_year: 2026
 tax_year_notes: "Income earned in 2026 under the Nigeria Tax Act 2025, reported for the 2027 year of assessment, and, separately, income earned in 2025 under the repealed Personal Income Tax Act, reported for the 2026 year of assessment. Paragraph 10.1.1 of the General Transition Guidelines gives 2025 income to the repealed law. The 2 regimes are shown side by side and never blended."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: computation
 ---
 
-# NG Income Tax v2.2
+# NG Income Tax v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

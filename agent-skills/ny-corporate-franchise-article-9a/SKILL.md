@@ -1,16 +1,20 @@
 ---
 name: ny-corporate-franchise-article-9a
-description: "Tier 2 content skill for New York State Corporate Franchise Tax under Tax Law Article 9-A. Covers C-corporations and S-corporations electing federal status (NY GBC), the three alternative tax bases (business income, capital, fixed dollar minimum), the 6.5% standard rate and the 7.25% rate on business income over $5M, single-sales-factor apportionment with market-based sourcing, MTA surcharge for MCTD activity, mandatory first installment (MFI) rules, and CT-3 / CT-3-A combined filing. Tax year 2025."
+description: "New York State corporation franchise tax under Tax Law Article 9-A (Form CT-3, CT-3-A) for tax year 2026. Covers nexus (the $1,283,000 receipts test, the $12,000 unitary floor, P.L. 86-272), entire net income and the 2025 decoupling from IRC 168(n) and 174/174A, business income and investment capital, the three bases (business income at 6.5%, or 7.25% on a base over $5 million, 4.875% for QETCs, 0% for qualified manufacturers; capital at 0.1875% capped at $5 million; the fixed dollar minimum), single receipts factor apportionment, PNOLC and NOLs, combined reporting, the 30% MTA surcharge, the MFI, estimates, extensions and penalties. Trigger on \"New York corporate tax\", \"CT-3\", \"Article 9-A\", \"NY franchise tax\", \"MTA surcharge\", \"fixed dollar minimum\", \"CT-300\". New York State only; NYC business corporation tax is separate."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ny-corporate-franchise-article-9a"
   jurisdiction: "US-NY"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
-# New York corporation franchise tax (Article 9-A, Form CT-3)
+# New York corporation franchise tax (Article 9-A, Form CT-3), tax year 2026
+
+> **Source-cited draft.** Built from the 2025 instructions for Forms CT-3, CT-3-M, CT-3.1, CT-3.3, CT-3.4, CT-3-A and CT-5, the 2026 instructions for Forms CT-300 and CT-400, the Tax Department's deriving receipts page, Notice N-26-1 and its corporation franchise tax expenditure page, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** A corporation is taxable in New York if it does business, employs capital, owns or leases property or maintains an office there, or has **USD 1,283,000 or more** of New York receipts in the year. Its tax is the largest of three bases: business income times **6.5%** (**7.25%** on the whole base when the apportioned business income base is more than USD 5,000,000; **4.875%** for a QETC; **0%** for a qualified New York manufacturer), business capital times **0.1875%** (capped at USD 5,000,000; 0% for preferred taxpayers), or the **fixed dollar minimum** set by New York receipts. Apportionment is a single receipts factor. A corporation active in the 12-county MCTD adds the **30% MTA surcharge** on its MCTD share of tax before credits. A calendar-year 2026 return is due **15 April 2027**.
 
 ## Scope and who this is for
 
@@ -34,6 +38,41 @@ Banking corporations have been taxed under Article 9-A since the 2015 merger of 
 - What was its franchise tax after credits in each of the last two years? Was its business income **$1 million or more** in any of the last three years? ([CT-400-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct400i.pdf))
 
 ## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Economic nexus: New York receipts in the tax year (tax years beginning 2024 to 2026) | USD 1,283,000 or more | [Tax Department, deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
+| Unitary member's New York receipts counted toward group nexus (2024 to 2026) | at least USD 12,000 | [Tax Department, deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
+| Business income base rate, general | 6.5% | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Business income base rate, general business taxpayer with a business income base of more than USD 5,000,000 (on the whole base) | 7.25% | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Business income base rate, qualified emerging technology company (QETC) | 4.875% | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Business income base rate, qualified New York manufacturer | 0% | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Capital base rate, general business taxpayers (reinstated through tax year 2026) | 0.1875% | [Tax Department, tax expenditure report, corporation franchise tax](https://www.tax.ny.gov/data/stats/ter/fiscal-year27/corporate-franchise-tax.htm) |
+| Capital base rate, qualified manufacturers, QETCs, cooperative housing corporations, small business taxpayers | 0% | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Capital base tax cap | USD 5,000,000 | [Tax Department, Article 9-A definitions](https://www.tax.ny.gov/bus/ct/def_art9a.htm) |
+| Small business taxpayer: entire net income not more than | USD 390,000 | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| MTA surcharge rate on the MCTD share of tax before credits | 30% | [CT-3-M-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3mi.pdf) |
+| Mandatory first installment (MFI) required if the second preceding year's tax after credits exceeds | USD 5,000 | [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf) |
+| MFI amount: second preceding year's tax not more than USD 100,000 / more than USD 100,000 | 25% / 40% | [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf) |
+| Large corporation for estimated tax penalty exceptions: business income in any of the 3 preceding years of at least | USD 1 million | [CT-400-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct400i.pdf) |
+| Fixed dollar minimum, New York receipts Not more than USD 100,000 (2025-2026 filing cycle) | USD 25 general; USD 19 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 100,000, not over USD 250,000 (2025-2026 filing cycle) | USD 75 general; USD 56 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 250,000, not over USD 500,000 (2025-2026 filing cycle) | USD 175 general; USD 131 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 500,000, not over USD 1,000,000 (2025-2026 filing cycle) | USD 500 general; USD 375 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 1,000,000, not over USD 5,000,000 (2025-2026 filing cycle) | USD 1,500 general; USD 1,125 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 5,000,000, not over USD 25,000,000 (2025-2026 filing cycle) | USD 3,500 general; USD 2,625 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 25,000,000, not over USD 50,000,000 (2025-2026 filing cycle) | USD 5,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 50,000,000, not over USD 100,000,000 (2025-2026 filing cycle) | USD 10,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 100,000,000, not over USD 250,000,000 (2025-2026 filing cycle) | USD 20,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 250,000,000, not over USD 500,000,000 (2025-2026 filing cycle) | USD 50,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts More than USD 500,000,000, not over USD 1,000,000,000 (2025-2026 filing cycle) | USD 100,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| Fixed dollar minimum, New York receipts Over USD 1,000,000,000 (2025-2026 filing cycle) | USD 200,000 general; USD 3,750 qualified New York manufacturer or QETC | [CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+
+Non-captive REITs and RICs use a separate fixed dollar minimum table that stops at USD 500 ([CT-3-I (2025)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf)). The 2026 CT-3-I was not yet published when read, so the 2025 fixed dollar minimum amounts are shown, marked 2025-2026 filing cycle. The nexus threshold was USD 1,000,000 for 2015 to 2021 and USD 1,138,000 for 2022 and 2023; for 2027, check the deriving receipts page.
+
+### Steps
 
 ### Step 1: is the corporation taxable in New York? ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm))
 
@@ -81,7 +120,7 @@ Compute all three bases. The tax is the **largest** of them (for a combined grou
 1. **Business income base (Part 3).**
    - Business income after addback × business apportionment factor = apportioned business income (line 15).
    - Subtract the PNOLC subtraction (line 16) and then the NOL deduction (line 18). The result is the **business income base** (line 19).
-   - Multiply the base by the rate for the taxpayer's type (see the figures table).
+   - Multiply the base by the rate for the taxpayer's type (see the rates table).
    - The **7.25%** rate applies when the **business income base itself** (line 19, which is after apportionment and NOLs) is **more than $5,000,000**. It then applies to the whole base, not only the part above $5 million.
 2. **Capital base (Part 4).**
    - Business capital is all assets other than investment capital and the taxpayer's own stock, less liabilities not deducted from investment capital.
@@ -162,66 +201,37 @@ Compute all three bases. The tax is the **largest** of them (for a combined grou
   - **Surcharge = tax × MCTD percentage × 30%.**
 - The surcharge has its own estimated payments and MFI. Pay it with the franchise tax payments.
 
-## Figures with years
-
-| Item | 2025 | 2026 | Source |
-|---|---|---|---|
-| Economic nexus (New York or MCTD receipts) | $1,283,000 or more | $1,283,000 or more | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
-| Unitary member receipts counted toward nexus | at least $12,000 | at least $12,000 | same |
-| Business income rate, general | 6.5% | 6.5% | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [rate history](https://www.tax.ny.gov/data/stats/ter/fiscal-year27/corporate-franchise-tax.htm) |
-| Business income rate, base more than $5,000,000 | 7.25% | 7.25% (tax years 2021-2029; 6.5% from 2030) | Tax Law § 210.1(a); [Financial Plan](https://www.budget.ny.gov/pubs/archive/fy27/en/fy27fp-en.pdf) |
-| Business income rate, QETC | 4.875% | 4.875% | CT-3-I |
-| Business income rate, qualified NY manufacturer | 0% | 0% | CT-3-I |
-| Capital base rate, general | 0.1875% | 0.1875% (tax years 2021-2029; 0% from 2030) | Tax Law § 210.1(b)(1); [rate history](https://www.tax.ny.gov/data/stats/ter/fiscal-year27/corporate-franchise-tax.htm) |
-| Capital base rate, manufacturers, QETCs, co-ops, small business taxpayers | 0% | 0% | CT-3-I |
-| Capital base tax cap | $5,000,000 | $5,000,000 | [Article 9-A definitions](https://www.tax.ny.gov/bus/ct/def_art9a.htm) |
-| MTA surcharge rate | 30% | 30% | [Form CT-3-M](https://www.tax.ny.gov/pdf/current_forms/ct/ct3m.pdf); [tax facts](https://www.tax.ny.gov/data/stats/taxfacts/corporation-tax.htm) |
-| MFI threshold (second preceding year's tax after credits) | more than $5,000 | more than $5,000 | [CT-300-I (2026)](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf) |
-| Large corporation (estimated tax) | business income of at least $1 million in any of the 3 preceding years | same | [CT-400-I (2026)](https://www.tax.ny.gov/pdf/current_forms/ct/ct400i.pdf) |
-
-**2027 to 2029.** Tax Law § 210.1(a) and (b)(1), as amended by the FY 2027 enacted budget (revision dated 5 June 2026), sets the 7.25% rate and the 0.1875% capital base for tax years beginning before 1 January 2030, and a 0% capital base from 2030. Supporting documents: the Division of the Budget [Financial Plan](https://www.budget.ny.gov/pubs/archive/fy27/en/fy27fp-en.pdf) (rate extension enacted) and the [FY 2027 Executive Budget memorandum](https://www.budget.ny.gov/pubs/archive/fy27/ex/artvii/revenue-memo.pdf) (Part E, as proposed). Our fetcher could not capture the statute page on nysenate.gov, so read § 210 there before filing. For 2027, also check the 2027 instructions for any change to the fixed dollar minimum or the nexus threshold.
-
-**Fixed dollar minimum, based on New York receipts** ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf), 2025):
-
-| New York receipts ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf)) | General | Qualified NY manufacturer or QETC |
-|---|---|---|
-| Not more than $100,000 | $25 | $19 |
-| More than $100,000, not over $250,000 | $75 | $56 |
-| More than $250,000, not over $500,000 | $175 | $131 |
-| More than $500,000, not over $1,000,000 | $500 | $375 |
-| More than $1,000,000, not over $5,000,000 | $1,500 | $1,125 |
-| More than $5,000,000, not over $25,000,000 | $3,500 | $2,625 |
-| More than $25,000,000, not over $50,000,000 | $5,000 | $3,750 (for all receipts over $25,000,000) |
-| More than $50,000,000, not over $100,000,000 | $10,000 | $3,750 |
-| More than $100,000,000, not over $250,000,000 | $20,000 | $3,750 |
-| More than $250,000,000, not over $500,000,000 | $50,000 | $3,750 |
-| More than $500,000,000, not over $1,000,000,000 | $100,000 | $3,750 |
-| Over $1,000,000,000 | $200,000 | $3,750 |
-
-Non-captive REITs and RICs use a separate table that stops at $500 ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf)). The 2026 table had not been published when this was written; the 2025 amounts are shown.
-
 ## Boundary and exception table
 
 | Situation | Rule | Source |
 |---|---|---|
 | New York receipts exactly $1,283,000 (2026) | Taxable: the test is "or more" | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
 | Business income base exactly $5,000,000 | 6.5%: 7.25% applies only if the base is **more than** $5,000,000 | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
-| Business income over $5,000,000 before apportionment, base below it after | 6.5%: the test uses line 19 | [Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf) |
+| Business income over $5,000,000 before apportionment, base below it after | 6.5%: the test uses line 19 | [CT-3-I (tax rates schedule and line 19)](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf) |
 | Seller of goods whose only New York activity is soliciting orders, including static website content | Protected by P.L. 86-272; mark box C and enter 0 tax | [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | The same seller, with website chat support or post-sale technical advice | Not protected: interaction beyond static content, or advice after delivery, goes beyond solicitation | same |
-| Services or SaaS seller with $1,283,000 or more of New York receipts | Taxable; P.L. 86-272 never covers services or intangibles | same |
+| Services or SaaS seller with $1,283,000 or more of New York receipts | Taxable; P.L. 86-272 never covers services or intangibles | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm); [20 NYCRR 1-2.10](https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf) |
 | Second preceding year's tax exactly $5,000 | No MFI: it must **exceed** $5,000 | [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf) |
 | Second preceding year's tax exactly $100,000 | 25% MFI; 40% only if it **exceeds** $100,000 | same |
 | No second preceding year return | No MFI, but declare and pay the remaining installments on Form CT-400 | same |
-| ENI $390,000 but $1,200,000 of paid-in capital | Not a small business taxpayer; capital base at 0.1875% | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
+| ENI $390,000 but $1,200,000 of paid-in capital (derived: an example amount above the CT-3-I limit of not more than $1 million) | Not a small business taxpayer; capital base at 0.1875% | [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf) |
 | QETC with product sales over $10 million | Still eligible for 4.875%: the $10 million limit is disregarded | same |
-| Extension paid at 85% of the final tax, when the prior year's tax was higher | Extension invalid, so the late filing penalty runs from the original due date. Pay at least the prior year's tax (for a 12-month year), or 90% of the final tax | [CT-5-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf) |
+| Extension paid at 85% of the final tax, when the prior year's tax was higher (derived: an example below the CT-5-I 90% test) | Extension invalid, so the late filing penalty runs from the original due date. Pay at least the prior year's tax (for a 12-month year), or 90% of the final tax | [CT-5-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf) |
 | Loss year, waiver election left off the original return | The carryback applies; the waiver cannot be made on an amended return | [CT-3.4-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3_4i.pdf) |
 | Unitary sister corporation with $11,000 of New York receipts (2026) | Left out of the group's nexus total and not taxable on that basis | [deriving receipts](https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm) |
 
+### 2025 returns (tax years beginning in 2025)
+
+- Use the **2025** forms (CT-3, CT-3-A, CT-3-M). A calendar-year return on a valid extension is due **15 October 2026**.
+- The rates and fixed dollar minimum are as in the figures table, and the nexus threshold is $1,283,000.
+- **Notice N-26-1.** The 2026-2027 budget decoupled from § 168(n) and from §§ 174/174A with effect from 2025.
+  - If a 2025 return has **already been filed**, an **amended return must be filed** reporting the modifications.
+  - Penalty and interest relief is available if you timely file or amend reporting them.
+- The 2025 MFI (due 17 March 2025) was based on the 2023 tax.
+
 ## Worked cases
 
-All cases are for calendar 2026. Amounts are hypothetical, and rates are taken from the figures table.
+All cases are for calendar 2026. Amounts are hypothetical, and rates are taken from the rates table.
 
 ### Case 1: a New York-only software company ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf))
 
@@ -233,7 +243,33 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 - **MTA surcharge:** all property, payroll and receipts are in Manhattan, so the MCTD percentage is 100%. $55,250 × 30% = **$16,575**. The state-level total is **$71,825**.
 - **MFI:** the 2024 tax was $30,000, so the 2026 MFI was 25% of it, **$7,500**, due 16 March 2026. The MTA MFI was 25% of the 2024 surcharge.
 
-### Case 2: an engineering firm near the $5 million line ([Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf); [CT-3-M-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3mi.pdf))
+
+```oa-check
+name: Article 9-A tax and MTA surcharge, New York-only software company, 2026
+inputs:
+  business_income: 850000
+  apportionment: 1.0
+  business_capital: 1500000
+  fixed_dollar_minimum: 1500
+  mctd_share: 1.0
+  tax_two_years_back: 30000
+steps:
+  - business_income_base_tax: business_income * apportionment * 0.065
+  - capital_base_tax: min(business_capital * apportionment * 0.001875, 5000000)
+  - tax: max(business_income_base_tax, capital_base_tax, fixed_dollar_minimum)
+  - mta_surcharge: tax * mctd_share * 0.30
+  - state_total: tax + mta_surcharge
+  - mfi: tax_two_years_back * 0.25
+expected:
+  business_income_base_tax: 55250.00
+  capital_base_tax: 2812.50
+  tax: 55250.00
+  mta_surcharge: 16575.00
+  state_total: 71825.00
+  mfi: 7500.00
+```
+
+### Case 2, a decision: an engineering firm near the $5 million line ([Form CT-3](https://www.tax.ny.gov/pdf/current_forms/ct/ct3.pdf); [CT-3-M-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3mi.pdf))
 
 - Business income is $5,200,000 and the apportionment factor is 80%, so the business income base is **$4,160,000**. That is not more than $5,000,000, so the rate is 6.5%: **$270,400**.
   - If the factor had been 100%, the base would be $5,200,000 and the whole base would be taxed at 7.25%: $377,000.
@@ -242,6 +278,32 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 - **MCTD percentage:** property 50%, receipts 62.5%, payroll 60%. Sum 172.5% ÷ 3 = **57.5%**.
 - **Surcharge:** $270,400 × 57.5% = $155,480 × 30% = **$46,644**.
 - **MFI:** the 2024 tax was $150,000, which is more than $100,000, so the 2026 MFI was 40% = **$60,000**.
+
+
+```oa-check
+name: Does the 7.25% rate apply, and the MTA surcharge (decision)
+inputs:
+  business_income: 5200000
+  apportionment: 0.80
+  property_factor: 0.50
+  receipts_factor: 0.625
+  payroll_factor: 0.60
+steps:
+  - base: business_income * apportionment
+  - over_5m: min(1, ceil(max(base - 5000000, 0) / 100000000))
+  - rate: 0.065 + over_5m * 0.0075
+  - tax: base * rate
+  - tax_if_full_factor: business_income * 0.0725
+  - mctd_percentage: (property_factor + receipts_factor + payroll_factor) / 3
+  - surcharge: tax * mctd_percentage * 0.30
+expected:
+  base: 4160000.00
+  over_5m: 0
+  tax: 270400.00
+  tax_if_full_factor: 377000.00
+  mctd_percentage: 0.575
+  surcharge: 46644.00
+```
 
 ### Case 3: a combined group that is a qualified manufacturer ([CT-3-A/BC-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3a_bci.pdf))
 
@@ -270,15 +332,6 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 - **No waiver made on the timely 2026 return:** the loss is carried back to 2023 first, then 2024, then 2025. Amend each year within three years of the 2026 return's due date (including extensions), and attach Form CT-3.4.
 - **Waiver made:** the loss is carried forward up to 20 years. In each later year, the deduction cannot reduce the tax below the higher of the capital base tax or the fixed dollar minimum.
 
-## 2025 returns, tax years beginning in 2025 ([Notice N-26-1](https://www.tax.ny.gov/forms/n-notices/n-26-1.htm); [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf))
-
-- Use the **2025** forms (CT-3, CT-3-A, CT-3-M). A calendar-year return on a valid extension is due **15 October 2026**.
-- The rates and fixed dollar minimum are as in the figures table, and the nexus threshold is $1,283,000.
-- **Notice N-26-1.** The 2026-2027 budget decoupled from § 168(n) and from §§ 174/174A with effect from 2025.
-  - If a 2025 return has **already been filed**, an **amended return must be filed** reporting the modifications.
-  - Penalty and interest relief is available if you timely file or amend reporting them.
-- The 2025 MFI (due 17 March 2025) was based on the 2023 tax.
-
 ## When to refuse or refer
 
 - The taxpayer is a New York S corporation, an insurer, an Article 9 corporation, a REIT or RIC, or needs **NYC** business corporation tax figures.
@@ -288,7 +341,7 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 - **P.L. 86-272 positions** that rely on web activity beyond static content.
 - **Voluntary disclosure**, or years with no returns filed.
 
-## Filing and payment ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf); [CT-300-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf); [CT-400-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct400i.pdf))
+## Filing and payment
 
 - **Return:** file Form CT-3 (or CT-3-A for a combined group) and Form CT-3-M if subject to the surcharge. The return is due **3½ months after the end of the year**, which is 15 April for a calendar year (the next business day if that falls on a Saturday, Sunday or legal holiday). Most general business corporations are mandated to e-file ([Article 9-A](https://www.tax.ny.gov/bus/ct/article9a.htm)).
 - **Extension:** file Form CT-5 (CT-5.3 for a combined group) by the original due date for **six months**. You must pay the properly estimated franchise tax and surcharge with it. That amount must be at least the prior year's tax (if that was a 12-month year) or at least **90%** of the final tax. Interest runs from the original due date on anything unpaid. Up to two further extensions are available on Form CT-5.1 ([CT-5-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf); [CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf)). Each taxpayer member of a new combined group, and each taxpayer member newly added to an existing group, also files its own CT-5 for its first combined period.
@@ -319,7 +372,7 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 
 - **Amended returns:** file within 90 days of filing an amended federal return, or of a final federal determination.
 
-## Completion checklist ([CT-3-I](https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf))
+## Completion checklist
 
 - [ ] Nexus tested: physical presence, $1,283,000 receipts (with the $12,000 unitary floor) and P.L. 86-272, with the correct CT-3 boxes marked.
 - [ ] ENI built with CT-225 modifications (including N-26-1); CT-3.1 completed and 40% safe harbor decided; receipts sourced by type.
@@ -330,6 +383,24 @@ All cases are for calendar 2026. Amounts are hypothetical, and rates are taken f
 - [ ] MFI tier from the second preceding year; CT-400 installments; penalty exception documented (large corporation status checked).
 - [ ] Extension payment meets the prior-year or 90% test; returns e-filed; NYC tax referred out.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Instructions for Form CT-3 (2025). Read for nexus, ENI, the tax rates schedule (6.5%, 7.25%, 4.875%, 0%, 0.1875%), the fixed dollar minimum tables, preferred taxpayers, apportionment and penalties. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf | 2026-11-13 |
+| Tax Department, Article 9-A deriving receipts (updated 22 October 2025). Read for USD 1,283,000 and USD 12,000 for tax years beginning 2024 to 2026. | https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm | 2026-11-13 |
+| Tax Department, Notice N-26-1 (updated 3 August 2026). Read for the decoupling from IRC 168(n) and 174/174A from tax years beginning 1 January 2025. | https://www.tax.ny.gov/forms/n-notices/n-26-1.htm | 2026-11-13 |
+| Tax Department, tax expenditure report, corporation franchise tax (fiscal year 2027). Read for the 7.25% rate and the capital base reinstated through tax year 2026 at 0.1875%. | https://www.tax.ny.gov/data/stats/ter/fiscal-year27/corporate-franchise-tax.htm | 2026-11-13 |
+| Instructions for Form CT-3-M. Read for the MCTD three-factor percentage and the 30% rate. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3mi.pdf | 2026-11-13 |
+| Instructions for Form CT-300 (2026). Read for the MFI (USD 5,000, 25%, 40%, USD 100,000). | https://www.tax.ny.gov/pdf/current_forms/ct/ct300i.pdf | 2026-11-13 |
+| Instructions for Form CT-400 (2026). Read for the declaration, installments and the USD 1 million large corporation test. | https://www.tax.ny.gov/pdf/current_forms/ct/ct400i.pdf | 2026-11-13 |
+| Tax Department, Article 9-A definitions. Read for the USD 5,000,000 capital base cap. | https://www.tax.ny.gov/bus/ct/def_art9a.htm | 2026-11-13 |
+| Instructions for Forms CT-3.1, CT-3.3 and CT-3.4. Read for investment capital and the 40% safe harbor, the PNOLC end date (tax years beginning before 1 January 2036), and the NOL carryback, waiver and 20-year carryforward. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3_4i.pdf | 2026-11-13 |
+| Instructions for Form CT-3-A. Read for combined reporting and the commonly owned group election. | https://www.tax.ny.gov/pdf/current_forms/ct/ct3ai.pdf | 2026-11-13 |
+| Instructions for Forms CT-5 and CT-222. Read for the 90% extension test and the 91% annualized exception. | https://www.tax.ny.gov/pdf/current_forms/ct/ct5i.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 CT-3-I (and so the 2026 fixed dollar minimum table, shown at 2025 amounts); whether the 7.25% rate and the 0.1875% capital base were extended past tax year 2026 (the earlier version cited an FY 2027 budget amendment to Tax Law 210.1 through 2029; the Tax Department's expenditure page read today says "through tax year 2026"); 20 NYCRR 1-2.10 (P.L. 86-272 and internet activity) and the CT-3-A/BC instructions were not re-opened today, so the rules taken from them are carried from the earlier version for review.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ny-corporate-franchise-article-9a` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ny-corporate-franchise-article-9a. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ny-corporate-franchise-article-9a` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ny-corporate-franchise-article-9a. If neither is available, confirm every figure against the official source pages cited above before relying on it.
