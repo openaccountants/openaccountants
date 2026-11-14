@@ -1,10 +1,10 @@
 ---
 name: wa-payroll
 description: Washington State employer payroll taxes for 2026. Washington has no state income tax withholding. Covers unemployment insurance from the Employment Security Department (ESD) with the $78,200 taxable wage base, 40 rate classes from 0.27% to 6.03% including the employment administration fund, and the new-employer rate; Paid Family and Medical Leave at 1.13% of wages up to $184,500 with the 71.43% employee and 28.57% employer split and the 50-employee rule; the WA Cares Fund long-term care premium of 0.58% with no wage cap and its exemptions; quarterly reports and due dates; and a pointer to Labor and Industries workers' compensation. Trigger on "Washington payroll", "WA payroll tax", "Washington unemployment tax", "ESD tax rate", "Washington SUI", "Paid Family and Medical Leave premium", "PFML Washington", "WA Cares", "long-term care tax Washington", "Washington new employer". Federal payroll taxes are in us-form-941-940-payroll.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-WA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - us-tax-workflow-base
 category: payroll
@@ -63,11 +63,11 @@ Out of scope, and where it goes:
 | UI total rate, qualified employers, highest classes | 6.03% (class 39); class 40 shows 6.02% | same |
 | UI experience rate cap | 5.4% | [ESD how we determine tax rates](https://esd.wa.gov/employer-requirements/unemployment-taxes/how-we-determine-tax-rates) |
 | UI social cost rate cap | 1.22% | same |
-| Employment administration fund (EAF) | 0.02% to 0.03%, by rate class | same |
+| Employment administration fund (EAF) | 0.02% to .03%, by rate class (as ESD writes it) | same |
 | Experience plus social cost, maximum | 6% | same |
 | New employer UI rate | 115% of the average rate for the employer's industry; federal minimum 1%; new-employer status ends after 2 1/2 to 3 years | same |
 | Delinquent employers | Extra 0.5%, 1.0%, 1.5% or 2.0% tables (for example class 1 at 0.5% delinquency: 1.25% total) | [ESD 2026 tax rates for employers](https://esd.wa.gov/media/pdf/4819/2026-unemployment-tax-rates-employerspdf/download?inline) |
-| PFML premium rate | 1.13% of gross wages, not including tips (2027: 1.2%) | [Paid Leave employer responsibilities](https://paidleave.wa.gov/employer-roles-responsibilities/) |
+| PFML premium rate | 1.13% of gross wages, not including tips (2027: 1.2%) | [Paid Leave employer responsibilities](https://paidleave.wa.gov/employer-roles-responsibilities/); [Paid Leave updates, 2027 premium](https://paidleave.wa.gov/updates/) |
 | PFML wage cap | $184,500 (the 2026 Social Security cap) | same |
 | PFML employee share | Up to 71.43% of the premium | same |
 | PFML employer share | About 28.57%, mandatory for 50 or more employees (counted each September for the next calendar year) | same |

@@ -1,10 +1,10 @@
 ---
 name: mn-income-tax
 description: "Minnesota FormM1: federal AGI base, 2026 brackets and deductions, dependent exemption, state adjustments, independent itemization and annual filing-cycle limits."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-MN
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -26,10 +26,10 @@ Each rate applies only to income in its band. These are taxable-income amounts a
 
 | Filing status | 5.35% band | 6.80% band | 7.85% band | 9.85% band | Official source |
 | --- | --- | --- | --- | --- | --- |
-| Single | 0-33,310 | over 33,310-109,430 | over 109,430-203,150 | over 203,150 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
-| MFJ / qualifying surviving spouse | 0-48,700 | over 48,700-193,480 | over 193,480-337,930 | over 337,930 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
-| MFS | 0-24,350 | over 24,350-96,740 | over 96,740-168,965 | over 168,965 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
-| Head of household | 0-41,010 | over 41,010-164,800 | over 164,800-270,060 | over 270,060 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
+| Single | 0-33,310 | over 33,310-109,430 | over 109,430-203,150 | over 203,150 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets); [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| MFJ / qualifying surviving spouse | 0-48,700 | over 48,700-193,480 | over 193,480-337,930 | over 337,930 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets); [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| MFS | 0-24,350 | over 24,350-96,740 | over 96,740-168,965 | over 168,965 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets); [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Head of household | 0-41,010 | over 41,010-164,800 | over 164,800-270,060 | over 270,060 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets); [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
 
 | Deduction / boundary | 2026 amount in USD | Official source |
 | --- | --- | --- |

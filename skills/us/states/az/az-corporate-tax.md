@@ -1,10 +1,10 @@
 ---
 name: az-corporate-tax
 description: Arizona corporate income tax for tax years beginning in 2026 on Form 120. The rate is 4.9% of Arizona taxable income with a $50 minimum. Covers conformity to the Internal Revenue Code as of 1 January 2026, apportionment by election between the double-weighted sales three-factor formula and the sales factor alone, estimated tax when liability is $1,000 or more (90% of this year or 100% of last year), due dates (15th day of the fourth month, S corporations the 15th day of the third month) and the partnership and S corporation entity-level tax election at the top individual rate. Arizona has no franchise or gross receipts tax. Trigger on "Arizona corporate tax", "AZ Form 120", "Arizona corporate income tax rate", "Arizona apportionment", "Arizona sales factor election", "Arizona PTE tax", "A.R.S. 43-1111". Federal corporate figures live in us-form-1120-c-corp.
-version: "1.0"
+version: "1.2"
 jurisdiction: US-AZ
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -47,14 +47,14 @@ Out of scope, and where it goes:
 | Item | 2026 figure | Source |
 | --- | --- | --- |
 | Corporate rate (tax years beginning after 31 December 2016) | 4.9% of net income | [A.R.S. 43-1111(5)](https://www.azleg.gov/ars/43/01111.htm) |
-| Minimum tax | $50 ("the greater of fifty dollars or" the rate) | [A.R.S. 43-1111](https://www.azleg.gov/ars/43/01111.htm) |
+| Minimum tax | $50 ("the greater of fifty dollars or" the rate) (in words on the page) | [A.R.S. 43-1111](https://www.azleg.gov/ars/43/01111.htm) |
 | Apportionment (tax years beginning after 31 December 2016) | Elect (a) (property + payroll + 2 x sales) / 4, or (b) the sales factor | [A.R.S. 43-1139(A)(7)](https://www.azleg.gov/ars/43/01139.htm) |
-| Estimated tax required | Liability (tax less credits) of $1,000 or more | [A.R.S. 43-582(A)](https://www.azleg.gov/ars/43/00582.htm) |
-| Required annual payment | Lesser of 90% of this year's tax and 100% of last year's (last year's not usable after a short year or no return; large corporations use 90% of this year except for the first installment) | [A.R.S. 43-582(B), (C)](https://www.azleg.gov/ars/43/00582.htm) |
+| Estimated tax required | Liability (tax less credits) of $1,000 or more (in words on the page) | [A.R.S. 43-582(A)](https://www.azleg.gov/ars/43/00582.htm) |
+| Required annual payment | Lesser of 90% of this year's tax and 100% of last year's (last year's not usable after a short year or no return; large corporations use 90% of this year except for the first installment) (in words on the page) | [A.R.S. 43-582(B), (C)](https://www.azleg.gov/ars/43/00582.htm) |
 | Due date, C corporation | 15 April for calendar years; 15th day of the fourth month after a fiscal year end | [A.R.S. 43-501](https://www.azleg.gov/ars/43/00501.htm) |
 | Due date, S corporation | 15th day of the third month after year end | [A.R.S. 43-501(1)](https://www.azleg.gov/ars/43/00501.htm) |
 | Code conformity for tax years beginning in 2026 | The Internal Revenue Code as in effect on 1 January 2026 | [A.R.S. 43-105(A)](https://www.azleg.gov/ars/43/00105.htm) |
-| Partnership or S corporation entity-level tax | Elective, at the highest individual rate under A.R.S. 43-1011 (2.5%) on income of resident owners and Arizona-source income | [A.R.S. 43-1014(A)](https://www.azleg.gov/ars/43/01014.htm) |
+| Partnership or S corporation entity-level tax | Elective, at the highest individual rate under A.R.S. 43-1011 on income of resident owners and Arizona-source income (2.5%, derived: 43-1014 points to the 43-1011 rate, which ADOR states is 2.5% for tax year 2023 and beyond; see `az-income-tax`) | [A.R.S. 43-1014(A)](https://www.azleg.gov/ars/43/01014.htm); [ADOR withholding page](https://azdor.gov/individuals/withholding-tax-individual) |
 
 ### Step 1: start from federal taxable income
 
