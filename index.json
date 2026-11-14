@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-14T19:11:11+00:00",
+ "generated_at": "2026-11-14T19:44:58+00:00",
  "counts": {
-  "guides": 2360,
-  "loadable_skill_names": 2301,
-  "jurisdictions": 264,
+  "guides": 2403,
+  "loadable_skill_names": 2344,
+  "jurisdictions": 273,
   "accountant_reviewed": 126,
-  "held_skill_names": 52
+  "held_skill_names": 53
  },
  "publication_holds": [
   {
@@ -75,6 +75,10 @@
   {
    "name": "japan-transfer-pricing",
    "reason": "status: needs_sources"
+  },
+  {
+   "name": "je-cross-border-withholding",
+   "reason": "required companion unavailable: cross-border-workflow-base"
   },
   {
    "name": "jp-social-insurance",
@@ -947,6 +951,32 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "ai-gst",
+   "mcp_slug": "ai-gst",
+   "path": "skills/anguilla/ai-gst.md",
+   "name": "ai-gst",
+   "jurisdiction": "AI",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ai-payroll",
+   "mcp_slug": "ai-payroll",
+   "path": "skills/anguilla/ai-payroll.md",
+   "name": "ai-payroll",
+   "jurisdiction": "AI",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ag-abst",
    "mcp_slug": "ag-abst",
    "path": "skills/antigua-and-barbuda/ag-abst.md",
@@ -1376,6 +1406,19 @@
    "last_updated": "2026-09-27"
   },
   {
+   "slug": "au-coal-lsl-levy",
+   "mcp_slug": "au-coal-lsl-levy",
+   "path": "skills/australia/au-coal-lsl-levy.md",
+   "name": "au-coal-lsl-levy",
+   "jurisdiction": "AU",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-company-tax",
    "mcp_slug": "au-company-tax",
    "path": "skills/australia/au-company-tax.md",
@@ -1441,6 +1484,19 @@
    "last_updated": "2026-11-12"
   },
   {
+   "slug": "au-director-penalties",
+   "mcp_slug": "au-director-penalties",
+   "path": "skills/australia/au-director-penalties.md",
+   "name": "au-director-penalties",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-div7a",
    "mcp_slug": "au-div7a",
    "path": "skills/australia/au-div7a.md",
@@ -1465,6 +1521,19 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2026",
    "last_updated": "2026-10-23"
+  },
+  {
+   "slug": "au-employee-share-schemes",
+   "mcp_slug": "au-employee-share-schemes",
+   "path": "skills/australia/au-employee-share-schemes.md",
+   "name": "au-employee-share-schemes",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-employment-termination-payments",
@@ -1532,6 +1601,19 @@
    "last_updated": "2026-10-14"
   },
   {
+   "slug": "au-forex-gains-losses",
+   "mcp_slug": "au-forex-gains-losses",
+   "path": "skills/australia/au-forex-gains-losses.md",
+   "name": "au-forex-gains-losses",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-freelance-intake",
    "mcp_slug": "au-freelance-intake",
    "path": "skills/australia/au-freelance-intake.md",
@@ -1543,6 +1625,19 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2025",
    "last_updated": "2026-09-10"
+  },
+  {
+   "slug": "au-fuel-tax-credits",
+   "mcp_slug": "au-fuel-tax-credits",
+   "path": "skills/australia/au-fuel-tax-credits.md",
+   "name": "au-fuel-tax-credits",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-gst-bas",
@@ -1610,6 +1705,19 @@
    "last_updated": "2026-09-22"
   },
   {
+   "slug": "au-managed-funds-amit",
+   "mcp_slug": "au-managed-funds-amit",
+   "path": "skills/australia/au-managed-funds-amit.md",
+   "name": "au-managed-funds-amit",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-medicare-levy",
    "mcp_slug": "au-medicare-levy",
    "path": "skills/australia/au-medicare-levy.md",
@@ -1662,6 +1770,19 @@
    "last_updated": "2026-09-27"
   },
   {
+   "slug": "au-objections",
+   "mcp_slug": "au-objections",
+   "path": "skills/australia/au-objections.md",
+   "name": "au-objections",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-partnerships",
    "mcp_slug": "au-partnerships",
    "path": "skills/australia/au-partnerships.md",
@@ -1712,6 +1833,45 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2026",
    "last_updated": "2026-09-27"
+  },
+  {
+   "slug": "au-primary-production",
+   "mcp_slug": "au-primary-production",
+   "path": "skills/australia/au-primary-production.md",
+   "name": "au-primary-production",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-02"
+  },
+  {
+   "slug": "au-private-rulings",
+   "mcp_slug": "au-private-rulings",
+   "path": "skills/australia/au-private-rulings.md",
+   "name": "au-private-rulings",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "au-property-development",
+   "mcp_slug": "au-property-development",
+   "path": "skills/australia/au-property-development.md",
+   "name": "au-property-development",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "au-psi",
@@ -1777,6 +1937,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-12"
+  },
+  {
+   "slug": "au-restructure-rollovers",
+   "mcp_slug": "au-restructure-rollovers",
+   "path": "skills/australia/au-restructure-rollovers.md",
+   "name": "au-restructure-rollovers",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "au-return-assembly",
@@ -3349,7 +3522,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-11"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bolivia-cross-border",
@@ -3948,6 +4121,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "io-tax-scope-reference",
+   "mcp_slug": "io-tax-scope-reference",
+   "path": "skills/british-indian-ocean-territory/io-tax-scope-reference.md",
+   "name": "io-tax-scope-reference",
+   "jurisdiction": "IO",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bvi-tax",
@@ -9020,6 +9206,19 @@
    "last_updated": "2026-11-11"
   },
   {
+   "slug": "pf-salary-cst-reference",
+   "mcp_slug": "pf-salary-cst-reference",
+   "path": "skills/french-polynesia/pf-salary-cst-reference.md",
+   "name": "pf-salary-cst-reference",
+   "jurisdiction": "PF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ga-annual-property-tax",
    "mcp_slug": "ga-annual-property-tax",
    "path": "skills/gabon/ga-annual-property-tax.md",
@@ -9134,7 +9333,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "gm-company-formation",
@@ -13999,6 +14198,175 @@
    "last_updated": "2026-06-12"
   },
   {
+   "slug": "je-class2-contributions",
+   "mcp_slug": "je-class2-contributions",
+   "path": "skills/jersey/je-class2-contributions.md",
+   "name": "je-class2-contributions",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-company-formation",
+   "mcp_slug": "je-company-formation",
+   "path": "skills/jersey/je-company-formation.md",
+   "name": "je-company-formation",
+   "jurisdiction": "JE",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-corporate-income-tax",
+   "mcp_slug": "je-corporate-income-tax",
+   "path": "skills/jersey/je-corporate-income-tax.md",
+   "name": "je-corporate-income-tax",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-crypto-tax",
+   "mcp_slug": "je-crypto-tax",
+   "path": "skills/jersey/je-crypto-tax.md",
+   "name": "je-crypto-tax",
+   "jurisdiction": "JE",
+   "category": "crypto",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-gst",
+   "mcp_slug": "je-gst",
+   "path": "skills/jersey/je-gst.md",
+   "name": "je-gst",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-income-tax-compliance",
+   "mcp_slug": "je-income-tax-compliance",
+   "path": "skills/jersey/je-income-tax-compliance.md",
+   "name": "je-income-tax-compliance",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-income-tax",
+   "mcp_slug": "je-income-tax",
+   "path": "skills/jersey/je-income-tax.md",
+   "name": "je-income-tax",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-parish-rates",
+   "mcp_slug": "je-parish-rates",
+   "path": "skills/jersey/je-parish-rates.md",
+   "name": "je-parish-rates",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-payroll",
+   "mcp_slug": "je-payroll",
+   "path": "skills/jersey/je-payroll.md",
+   "name": "je-payroll",
+   "jurisdiction": "JE",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-pension-contributions",
+   "mcp_slug": "je-pension-contributions",
+   "path": "skills/jersey/je-pension-contributions.md",
+   "name": "je-pension-contributions",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-pillar-two",
+   "mcp_slug": "je-pillar-two",
+   "path": "skills/jersey/je-pillar-two.md",
+   "name": "je-pillar-two",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-property-transactions",
+   "mcp_slug": "je-property-transactions",
+   "path": "skills/jersey/je-property-transactions.md",
+   "name": "je-property-transactions",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "je-social-contributions",
+   "mcp_slug": "je-social-contributions",
+   "path": "skills/jersey/je-social-contributions.md",
+   "name": "je-social-contributions",
+   "jurisdiction": "JE",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "jo-company-formation",
    "mcp_slug": "jo-company-formation",
    "path": "skills/jordan/jo-company-formation.md",
@@ -16404,6 +16772,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "mh-retirement-contribution-reference",
+   "mcp_slug": "mh-retirement-contribution-reference",
+   "path": "skills/marshall-islands/mh-retirement-contribution-reference.md",
+   "name": "mh-retirement-contribution-reference",
+   "jurisdiction": "MH",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "mq-antilles-goods-movements",
    "mcp_slug": "mq-antilles-goods-movements",
    "path": "skills/martinique/mq-antilles-goods-movements.md",
@@ -17288,6 +17669,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "ms-company-formation",
+   "mcp_slug": "ms-company-formation",
+   "path": "skills/montserrat/ms-company-formation.md",
+   "name": "ms-company-formation",
+   "jurisdiction": "MS",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ms-corporate-income-tax",
    "mcp_slug": "ms-corporate-income-tax",
    "path": "skills/montserrat/ms-corporate-income-tax.md",
@@ -17301,10 +17695,75 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "ms-customs-consumption-tax-hotels-tax",
+   "mcp_slug": "ms-customs-consumption-tax-hotels-tax",
+   "path": "skills/montserrat/ms-customs-consumption-tax-hotels-tax.md",
+   "name": "ms-customs-consumption-tax-hotels-tax",
+   "jurisdiction": "MS",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ms-income-tax-individuals",
+   "mcp_slug": "ms-income-tax-individuals",
+   "path": "skills/montserrat/ms-income-tax-individuals.md",
+   "name": "ms-income-tax-individuals",
+   "jurisdiction": "MS",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ms-investment-incentives",
+   "mcp_slug": "ms-investment-incentives",
+   "path": "skills/montserrat/ms-investment-incentives.md",
+   "name": "ms-investment-incentives",
+   "jurisdiction": "MS",
+   "category": "tax-optimization",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ms-nonresident-withholding",
    "mcp_slug": "ms-nonresident-withholding",
    "path": "skills/montserrat/ms-nonresident-withholding.md",
    "name": "ms-nonresident-withholding",
+   "jurisdiction": "MS",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ms-paye-employer-withholding",
+   "mcp_slug": "ms-paye-employer-withholding",
+   "path": "skills/montserrat/ms-paye-employer-withholding.md",
+   "name": "ms-paye-employer-withholding",
+   "jurisdiction": "MS",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ms-property-tax-landholding-stamp-duty",
+   "mcp_slug": "ms-property-tax-landholding-stamp-duty",
+   "path": "skills/montserrat/ms-property-tax-landholding-stamp-duty.md",
+   "name": "ms-property-tax-landholding-stamp-duty",
    "jurisdiction": "MS",
    "category": "international",
    "tier": 2,
@@ -18185,6 +18644,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "nc-ordinary-irpp-reference",
+   "mcp_slug": "nc-ordinary-irpp-reference",
+   "path": "skills/new-caledonia/nc-ordinary-irpp-reference.md",
+   "name": "nc-ordinary-irpp-reference",
+   "jurisdiction": "NC",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "new-zealand-crypto-tax",
    "mcp_slug": "new-zealand-crypto-tax",
    "path": "skills/new-zealand/new-zealand-crypto-tax.md",
@@ -18224,6 +18696,32 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "nz-employee-share-schemes",
+   "mcp_slug": "nz-employee-share-schemes",
+   "path": "skills/new-zealand/nz-employee-share-schemes.md",
+   "name": "nz-employee-share-schemes",
+   "jurisdiction": "NZ",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nz-employer-payroll",
+   "mcp_slug": "nz-employer-payroll",
+   "path": "skills/new-zealand/nz-employer-payroll.md",
+   "name": "nz-employer-payroll",
+   "jurisdiction": "NZ",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "nz-gst-return",
    "mcp_slug": "nz-gst-return",
    "path": "skills/new-zealand/nz-gst-return.md",
@@ -18247,7 +18745,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-11"
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nz-kiwisaver-esct",
+   "mcp_slug": "nz-kiwisaver-esct",
+   "path": "skills/new-zealand/nz-kiwisaver-esct.md",
+   "name": "nz-kiwisaver-esct",
+   "jurisdiction": "NZ",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nz-motor-vehicle-expenses-logbook-business-use",
@@ -18256,6 +18767,19 @@
    "name": "nz-motor-vehicle-expenses-logbook-business-use",
    "jurisdiction": "NZ",
    "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nz-payroll-notices-filing-penalties",
+   "mcp_slug": "nz-payroll-notices-filing-penalties",
+   "path": "skills/new-zealand/nz-payroll-notices-filing-penalties.md",
+   "name": "nz-payroll-notices-filing-penalties",
+   "jurisdiction": "NZ",
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
@@ -22189,6 +22713,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "sb-npf-contribution-reference",
+   "mcp_slug": "sb-npf-contribution-reference",
+   "path": "skills/solomon-islands/sb-npf-contribution-reference.md",
+   "name": "sb-npf-contribution-reference",
+   "jurisdiction": "SB",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "cancelling-a-vat-registration-and-the-exit-vat-charge",
    "mcp_slug": "cancelling-a-vat-registration-and-the-exit-vat-charge",
    "path": "skills/south-africa/cancelling-a-vat-registration-and-the-exit-vat-charge.md",
@@ -24945,6 +25482,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "tv-npf-contribution-reference",
+   "mcp_slug": "tv-npf-contribution-reference",
+   "path": "skills/tuvalu/tv-npf-contribution-reference.md",
+   "name": "tv-npf-contribution-reference",
+   "jurisdiction": "TV",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ae-company-formation",
    "mcp_slug": "ae-company-formation",
    "path": "skills/uae/ae-company-formation.md",
@@ -25795,6 +26345,19 @@
    "path": "skills/ukraine/ukraine-vat.md",
    "name": "ukraine-vat",
    "jurisdiction": "UA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "um-tax-scope-reference",
+   "mcp_slug": "um-tax-scope-reference",
+   "path": "skills/united-states-minor-outlying-islands/um-tax-scope-reference.md",
+   "name": "um-tax-scope-reference",
+   "jurisdiction": "UM",
    "category": "international",
    "tier": 2,
    "verified_by": null,
@@ -30570,8 +31133,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-corporate-income-tax",
@@ -30583,8 +31146,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-income-tax",
@@ -30596,8 +31159,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-payroll-social",
@@ -30609,8 +31172,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-tax-overview",
@@ -30622,8 +31185,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-vat-gst",
@@ -30635,8 +31198,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "va-italy-remuneration-and-financial-assets",
