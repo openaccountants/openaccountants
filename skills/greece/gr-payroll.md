@@ -226,10 +226,10 @@ expected:
 | Ministry of Finance decision ΠΟΛ 1104/9.4.2014 (ΑΔΑ ΒΙΗΜΗ-ΠΗΦ), art. 1(α): annualisation times 12 or 14, monthly withholding 1/14 or 1/12, AADE e-library | http://elib.aade.gr/elib/view?d=/gr/ap/2014/1104 | 2026-11-14 |
 | Circular ΠΟΛ 1072/2015 (ΑΔΑ 6ΦΙΑΗ-ΝΚ7) on art. 60 withholding: new hires, benefits in kind, 20% extra pay, non-residents, AADE e-library | http://elib.aade.gr/elib/view?d=/gr/egk/2015/1072/ | 2026-11-14 |
 | Circular ΠΟΛ 1179/2015 (ΑΔΑ Ω5ΧΨΗ-ΤΗΤ): read for fixed-term contracts, monthly tax limited to contract months / 12, AADE e-library | http://elib.aade.gr/elib/view?d=/gr/egk/2015/1179/ | 2026-11-14 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53(1), (2), (6) and (7), 54(2) | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
-| AADE: read for withholding returns (deadline, form Α.1099.19, nil returns, closing payroll) | https://www.aade.gr/exypiretisi-enimerosi/hristikoi-odigoi/enarxi-epiheirimatikis-drastiriotitas/ypoboli-diloseon-parakratoymenon-foron | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53(1), (2), (6) and (7), 54(2); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| AADE: read for withholding returns (deadline, form Α.1099.19, nil returns, closing payroll); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/exypiretisi-enimerosi/hristikoi-odigoi/enarxi-epiheirimatikis-drastiriotitas/ypoboli-diloseon-parakratoymenon-foron | 2026-10-23 |
 | AADE home page: read for deadlines calendar (salary withholding for September 2026 due 02/11) | https://www.aade.gr/ | 2026-10-23 |
-| AADE: read for final ΦΜΥ return E7 (abolished from tax year 2014) | https://www.aade.gr/oristiki-fmy | 2026-10-23 |
+| AADE: read for final ΦΜΥ return E7 (abolished from tax year 2014); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/oristiki-fmy | 2026-10-23 |
 | e-EFKA circular 38/2024 and KPK table: read for KPK 101: 13.37% employee, 21.79% employer | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-38-24122024 | 2026-11-14 |
 | e-EFKA circular 4/2026: read for ceiling EUR 7,761.94 from 1.1.2026 | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-42026 | 2026-11-14 |
 | e-EFKA FAQ: read for ordinary businesses (APD periods 2026, payment deadline, RF code) | https://www.e-efka.gov.gr/en/node/129 | 2026-11-14 |

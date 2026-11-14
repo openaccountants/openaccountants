@@ -180,10 +180,10 @@ expected:
 |---|---|---|
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025, arts. 21, 27, 28, 28A, 36, 45, 47, 58, 62, 64, 67, 68, 71 | https://minfin.gov.gr/wp-content/uploads/2026/04/ΚΩΔΙΚΟΠΟΙΗΣΗ-ΤΟΥ-ΚΩΔΙΚΑ-ΦΟΡΟΛΟΓΙΑΣ-ΕΙΣΟΔΗΜΑΤΟΣ-ΜΕΧΡΙ-ΤΟ-Ν-5264-2025.pdf | 2026-10-23 |
 | ν. 4308/2014 (Greek accounting standards), codified text published by the Ministry of Finance, arts. 1, 2, 3, 16 and 30 | https://minfin.gov.gr/wp-content/uploads/2024/02/%CE%9D-4308-2014.pdf | 2026-10-23 |
-| ν. 5162/2024 (ΦΕΚ Α' 198/05.12.2024), art. 3 replacing art. 31 of ν. 3986/2011 (trade fee) | https://www.aade.gr/sites/default/files/2024-12/%CE%9D%205162%202024%20%CE%A6%CE%95%CE%9A%20198.pdf | 2026-10-23 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 52 to 54 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
-| AADE, Q&A manual on tax matters, May 2026 (section 1.2.4 on dividends and profit distribution; Q35 on filing dates; Q7.1 on bad debts; chapter 8 on Greek accounting standards) | https://www.aade.gr/sites/default/files/2026-05/egxeiridio_erotiseon_apantiseon_forologias_may_2026.pdf | 2026-10-23 |
-| AADE, FAQ on the legal entities income tax return (form N), 13 March 2026, Q1, Q17 and Q41 to Q44 | https://www.aade.gr/sites/default/files/2026-03/FAQS_N_13032026_0.pdf | 2026-10-23 |
+| ν. 5162/2024 (ΦΕΚ Α' 198/05.12.2024), art. 3 replacing art. 31 of ν. 3986/2011 (trade fee); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2024-12/%CE%9D%205162%202024%20%CE%A6%CE%95%CE%9A%20198.pdf | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 52 to 54; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| AADE, Q&A manual on tax matters, May 2026 (section 1.2.4 on dividends and profit distribution; Q35 on filing dates; Q7.1 on bad debts; chapter 8 on Greek accounting standards); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2026-05/egxeiridio_erotiseon_apantiseon_forologias_may_2026.pdf | 2026-10-23 |
+| AADE, FAQ on the legal entities income tax return (form N), 13 March 2026, Q1, Q17 and Q41 to Q44; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2026-03/FAQS_N_13032026_0.pdf | 2026-10-23 |
 
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 

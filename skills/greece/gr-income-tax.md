@@ -244,9 +244,9 @@ expected:
 | e-EFKA circular 6/2026: read for 2026 monthly contributions of the self-employed; detail in `gr-efka` | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026 | 2026-11-14 |
 | e-EFKA general document 1811441/13.07.2026, section 7 (category change open December to January) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/geniko-eggrafo-181144113-07-2026 | 2026-11-14 |
 | Ministry of Finance: read for notice of the codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-11-14 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53, 54 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
-| AADE: read for E1 return instructions (2025 income, filed 2026) | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
-| AADE circular Ε.2035/02-07-2026, 30% reduction of the art. 28A minimum for street-market KADs (ν. 5301/2026 art. 41, from tax year 2025) | https://www.aade.gr/egkyklioi-kai-apofaseis/e-2035-02-07-2026 | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53, 54; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| AADE: read for E1 return instructions (2025 income, filed 2026); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
+| AADE circular Ε.2035/02-07-2026, 30% reduction of the art. 28A minimum for street-market KADs (ν. 5301/2026 art. 41, from tax year 2025); not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/egkyklioi-kai-apofaseis/e-2035-02-07-2026 | 2026-10-23 |
 | Ministry of Labour: read for minimum wage (EUR 920 from 1 April 2026, decision 8934/27.3.2026, Β' 1759) | https://ypergasias.gov.gr/en/labour-relations/collective-employment-relations/minimum-wage/ | 2026-11-14 |
 | Ministry of Labour: read for announcement of the new minimum wage in force from 1 April 2026 | https://ypergasias.gov.gr/se-ischy-apo-simera-o-neos-katotatos-misthos-ofelei-15-ekatommyrio-polites/ | 2026-11-14 |
 
