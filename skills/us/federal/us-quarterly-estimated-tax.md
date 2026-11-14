@@ -1,10 +1,10 @@
 ---
 name: us-quarterly-estimated-tax
 description: Work out whether a US individual must pay 2026 federal estimated tax on Form 1040-ES, how much is required each quarter, and what the Form 2210 underpayment penalty costs. Covers the USD 1,000 test, the safe harbours in 26 U.S.C. 6654(d) (90% of 2026 tax, or 100% of 2025 tax, 110% where 2025 AGI was over USD 150,000 or USD 75,000 married filing separately), the four 2026 due dates (15 April, 15 June, 15 September 2026, 15 January 2027), the annualized income installment method (Form 2210 Schedule AI, Pub. 505 Worksheet 2-9), withholding treated as paid evenly, the farmer and fisherman rule, waivers and the 2026 underpayment rates. Trigger on "1040-ES", "estimated tax", "quarterly tax", "safe harbor", "underpayment penalty", "Form 2210", "annualized income", "how much should I pay each quarter". Federal only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -60,6 +60,10 @@ Out of scope, and where it goes:
 | 3rd installment due | 15 September 2026 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
 | 4th installment due | 15 January 2027 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
 | 4th installment not needed if the 2026 return is filed and paid in full by | 1 February 2027 | [Form 1040-ES (2026), Payment Due Dates](https://www.irs.gov/pub/irs-pdf/f1040es.pdf) |
+| Tax year 2025 (prior year) installment due: 1st | April 15, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| Tax year 2025 (prior year) installment due: 2nd | June 16, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| Tax year 2025 (prior year) installment due: 3rd | September 15, 2025 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
+| Tax year 2025 (prior year) installment due: 4th | January 15, 2026 | [Form 1040-ES (2025), Payment Due Dates](https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf) |
 | Annualized method, applicable percentages for installments 1 to 4 | 22.5%, 45%, 67.5%, 90% | [26 U.S.C. 6654(d)(2)(C)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm) |
 | Annualized method, periods and annualization amounts | 1 Jan to 31 Mar 2026: 4; to 31 May: 2.4; to 31 Aug: 1.5; to 31 Dec: 1 | [Pub. 505 (2026), Worksheet 2-9](https://www.irs.gov/pub/irs-pdf/p505.pdf) |
 | Annualized method, prorated Social Security limit for the four periods | USD 46,125; 76,875; 123,000; 184,500 | [Pub. 505 (2026), Worksheet 2-9, line 34](https://www.irs.gov/pub/irs-pdf/p505.pdf) |

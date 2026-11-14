@@ -1,14 +1,15 @@
 ---
 name: ch-transfer-pricing
 description: "Swiss transfer pricing for 2026. Switzerland has no transfer pricing statute: the arm's length principle works through profit tax (DBG art. 58 para. 1 let. b and c, StHG art. 24) and the 35% withholding tax on hidden profit distributions (geldwerte Leistungen, VStG art. 4 para. 1 let. b). Covers related parties, hidden profit distributions and hidden capital contributions, the ESTV safe-harbour interest rates for 2026 (CHF and foreign currency), service companies (Kreisschreiben 4), the burden of proof, rulings, APAs, MAP (StADG), country-by-country reporting (CHF 900 million), penalties, and the 35% withholding with the gross-up when it is not passed on. Trigger on: transfer pricing Switzerland, Verrechnungspreise, geldwerte Leistung, verdeckte Gewinnausschüttung, safe harbour Zinssätze, shareholder loan interest, CbCR Schweiz. Out of scope: ch-corporate-income-tax (rates, base), ch-cross-border (treaty refunds, migration), ch-cantonal-tax."
-version: 0.2
+version: 0.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Switzerland: transfer pricing (2026)
@@ -218,16 +219,16 @@ The edge cases: the canton, not Beta, must first show the mismatch, and in BVGer
 | ALBAG (CbC law), SR 654.1, version of 1 January 2022, art. 6, 8, 10, 11, 12, 25, 26 | https://www.fedlex.admin.ch/eli/cc/2017/645/de | 2026-10-23 |
 | ALBAV (CbC ordinance), SR 654.11, version of 1 November 2024, art. 3 | https://www.fedlex.admin.ch/eli/cc/2017/646/de | 2026-10-23 |
 | StADG, SR 672.2, version of 1 January 2026, art. 3, 5, 8, 15, 17, 22 | https://www.fedlex.admin.ch/eli/cc/2021/703/de | 2026-10-23 |
-| ESTV circular 2-218-DV-2026, steuerlich anerkannte Zinssätze 2026 in Schweizer Franken, 29 January 2026 | https://www.estv.admin.ch/dam/de/sd-web/xY4pH-Qc2lrL/2-218-DV-2026-d.pdf | 2026-10-23 |
-| ESTV circular 2-219-DV-2026, steuerlich anerkannte Zinssätze 2026 in Fremdwährungen, 30 January 2026 | https://www.estv.admin.ch/dam/de/sd-web/04KIslBDT-PZ/2-219-DV-2026-d.pdf | 2026-10-23 |
-| ESTV Kreisschreiben Nr. 4, Besteuerung von Dienstleistungsgesellschaften, 19 March 2004 | https://www.estv.admin.ch/dam/de/sd-web/uTu5sU-zws3F/dbst-ks-2004-1-004-dv-de.pdf | 2026-10-23 |
-| ESTV Kreisschreiben Nr. 6a, verdecktes Eigenkapital, 10 October 2024 | https://www.estv.admin.ch/dam/de/sd-web/37U14bg5Pqqj/dbst-ks-2024-006a-dvs-de.pdf | 2026-10-23 |
-| ESTV Steuerdokumentation, Verrechnungspreise (law as at 1 January 2024) | https://www.estv2.admin.ch/stp/ds/b-verrechnungspreise-de.pdf | 2026-10-23 |
-| ESTV, Allgemeines zu den Verrechnungspreisen | https://www.estv.admin.ch/de/allgemeines-verrechnungspreise | 2026-10-23 |
-| ESTV, Verzugs- und Vergütungszinssätze ab 2026 | https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI | 2026-10-23 |
-| Bundesverwaltungsgericht A-2977/2025, 2 March 2026 (conditions and burden of proof, notification procedure) | https://bvger.weblaw.ch/pdf/A-2977-2025_2026-03-02_4b9bf11e-e7ff-4e3b-9a3b-02f4c90c0c5f.pdf | 2026-10-23 |
-| Bundesverwaltungsgericht A-2782/2022, 30 April 2024 (gross-up, 5% cost mark-up, burden), copy on entscheidsuche.ch | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-2782-2022_2024-04-30.pdf | 2026-10-23 |
-| Bundesgericht 9C_317/2024, 24 March 2025 (confirms A-2782/2022; records the 5% mark-up and the gross-up "ins Hundert") | https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?highlight_docid=aza%3A%2F%2F24-03-2025-9C_317-2024&lang=de&type=show_document | 2026-10-23 |
-| Bundesverwaltungsgericht A-3092/2023, 21 March 2025 (gross-up "ins Hundert"), copy on entscheidsuche.ch | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-3092-2023_2025-03-21.pdf | 2026-10-23 |
+| ESTV circular 2-218-DV-2026, steuerlich anerkannte Zinssätze 2026 in Schweizer Franken, 29 January 2026: read for the 2026 safe-harbour interest rates on CHF loans | https://www.estv.admin.ch/dam/de/sd-web/xY4pH-Qc2lrL/2-218-DV-2026-d.pdf | 2026-10-23 |
+| ESTV circular 2-219-DV-2026, steuerlich anerkannte Zinssätze 2026 in Fremdwährungen, 30 January 2026: read for the 2026 safe-harbour rates on foreign-currency loans | https://www.estv.admin.ch/dam/de/sd-web/04KIslBDT-PZ/2-219-DV-2026-d.pdf | 2026-10-23 |
+| ESTV Kreisschreiben Nr. 4, Besteuerung von Dienstleistungsgesellschaften, 19 March 2004: read for the cost-plus rules for group service companies | https://www.estv.admin.ch/dam/de/sd-web/uTu5sU-zws3F/dbst-ks-2004-1-004-dv-de.pdf | 2026-10-23 |
+| ESTV Kreisschreiben Nr. 6a, verdecktes Eigenkapital, 10 October 2024: read for the hidden-equity safe-harbour percentages | https://www.estv.admin.ch/dam/de/sd-web/37U14bg5Pqqj/dbst-ks-2024-006a-dvs-de.pdf | 2026-10-23 |
+| ESTV Steuerdokumentation, Verrechnungspreise (law as at 1 January 2024): read for the arm's length principle and the documentation practice | https://www.estv2.admin.ch/stp/ds/b-verrechnungspreise-de.pdf | 2026-10-23 |
+| ESTV, Allgemeines zu den Verrechnungspreisen: read for the ESTV's statement of method and the OECD guidelines reference | https://www.estv.admin.ch/de/allgemeines-verrechnungspreise | 2026-10-23 |
+| ESTV, Verzugs- und Vergütungszinssätze ab 2026: read for the 2026 late-payment and refund interest rates | https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI | 2026-10-23 |
+| Bundesverwaltungsgericht A-2977/2025, 2 March 2026: read for conditions and burden of proof, notification procedure | https://bvger.weblaw.ch/pdf/A-2977-2025_2026-03-02_4b9bf11e-e7ff-4e3b-9a3b-02f4c90c0c5f.pdf | 2026-10-23 |
+| Bundesverwaltungsgericht A-2782/2022, 30 April 2024, copy on entscheidsuche.ch: read for the gross-up, the 5% cost mark-up and the burden of proof | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-2782-2022_2024-04-30.pdf | 2026-10-23 |
+| Bundesgericht 9C_317/2024, 24 March 2025: read for its confirmation of A-2782/2022, the 5% mark-up and the gross-up "ins Hundert" | https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?highlight_docid=aza%3A%2F%2F24-03-2025-9C_317-2024&lang=de&type=show_document | 2026-10-23 |
+| Bundesverwaltungsgericht A-3092/2023, 21 March 2025, copy on entscheidsuche.ch: read for the gross-up "ins Hundert" | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-3092-2023_2025-03-21.pdf | 2026-10-23 |
 
 Not yet confirmed: the Zurich cantonal and communal profit tax rate for 2026 (no single official 2026 figure found, so the examples stop at federal tax); whether the "from CHF 1 million" safe-harbour rate for operating loans applies to the whole loan or only to the part above CHF 1 million (circular 2-218 does not say: footnote 1 only sets the 0.5% or 0.25% surcharge and footnote 2 points to hidden equity under Kreisschreiben 6a); the treaty time limits for a MAP request (they differ by treaty); the conditions of the cross-border notification procedure for hidden distributions to foreign group companies (VStG art. 20 para. 2 allows it, the implementing rules were not read); whether each treaty treats a hidden distribution as a dividend for the refund; the official Federal Administrative Court copies of A-2782/2022 and A-3092/2023 (read on the entscheidsuche.ch archive; A-2782/2022 is confirmed by BGer 9C_317/2024 on bger.ch); the circular 2-219 refers to the CHF circular as both 28 and 29 January 2026 (the CHF circular itself is dated 29 January 2026).

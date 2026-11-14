@@ -1,6 +1,6 @@
 {
   "engine": "us_se_tax",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
   "cases": [
     {
@@ -40,23 +40,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -64,23 +64,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -88,8 +88,8 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {
@@ -97,7 +97,7 @@
         },
         "tax_year": "2026"
       },
-      "receipt_id": "015d1aec60027599a4573cc7a4730f373e6b440087adb5f9b7a5c35a00ee06dc"
+      "receipt_id": "ccc0aa315df26b62592972c9712b99233661321503241634d3a6705bc049604c"
     },
     {
       "id": "US-0",
@@ -137,23 +137,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -161,23 +161,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -185,14 +185,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2025"
       },
-      "receipt_id": "2e2f23c4dcf8bde6e47f30768862294de622a780fb35318429c766d907d2d45e"
+      "receipt_id": "7e1e154ecb002b112da4bdeec88df026754e09b23596acc0dfd8d5d0a52872c6"
     },
     {
       "id": "US-1",
@@ -232,23 +232,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -256,23 +256,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -280,14 +280,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2025"
       },
-      "receipt_id": "cca834bb3605ef22263dedbcba81068b3279fbb812f7b23287ad9f66cdbddcdf"
+      "receipt_id": "ece60acb247328e845bb9c9baef87a05262051237260a4afc687655770fc0982"
     },
     {
       "id": "US-2",
@@ -327,23 +327,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -351,23 +351,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -375,14 +375,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "2dbaa1005f4508778db9e60a36810abaf5a1a0f3d8bd56bf95cb493fed559dcf"
+      "receipt_id": "282620787c31d90fc0a7e9a6820bdaca2f78535021d8d02afc268751c6c102f6"
     },
     {
       "id": "US-3",
@@ -422,23 +422,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -446,23 +446,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -470,14 +470,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "fa5f49d137862cbe2dcdb34d57ff53cf7cff849db11eaebcd2a35fc25a3d0b6c"
+      "receipt_id": "41b5753269da10814d591e46d4b985b9314a575df787b9f35fe63083f75863d7"
     },
     {
       "id": "US-4",
@@ -517,23 +517,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -541,23 +541,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -565,14 +565,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "4052a63103d6abefca14cfff7ecfed3c70f4862bab26c3a6d5ab8e869b4ad37e"
+      "receipt_id": "03ad131cd24516293172b043d0d85a140b7c3c4da1ecacee369e0f21c0d41748"
     },
     {
       "id": "US-5",
@@ -612,23 +612,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -636,23 +636,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -660,14 +660,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "0fcbff6a809d41e929633ed857d5c35cc569db10da01008671b877b1eaeb2486"
+      "receipt_id": "0ea4b2706a5f744fb7d5506d7c5ab5ff3f8297452a2d498cc98c555c72c28318"
     },
     {
       "id": "US-6",
@@ -707,23 +707,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -731,23 +731,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -755,14 +755,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "4215f11ee3adbf643ac2ac961b099f29d37f09f3f8c7b1ecac2ac5a964724912"
+      "receipt_id": "514a8042ebb68291f11df631c025f89d2d6480c7672d1e3b70ff92e9bf9343f2"
     },
     {
       "id": "US-7",
@@ -802,23 +802,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -826,23 +826,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -850,14 +850,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "5dcb14a8980187ca9935c1a41abe168c0bf2b9a98c5345389c581c4fce3eb274"
+      "receipt_id": "157fe4d26e49da29e8861492f4179613664c21827be5d7940f42014767ce2a34"
     },
     {
       "id": "US-8",
@@ -897,23 +897,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -921,23 +921,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -945,14 +945,14 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {},
         "tax_year": "2026"
       },
-      "receipt_id": "421a6327338a44fe3226a87adf250595b91859b68965333785691c01aa6362fe"
+      "receipt_id": "0e766780d08e30f9b8ae891e1ecc6074a8d6fc06572c0f80dabc8102bd7cbaef"
     },
     {
       "id": "US-year-number",
@@ -991,23 +991,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -1015,23 +1015,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           }
         ],
         "assumptions": [
@@ -1039,8 +1039,8 @@
           "Additional Medicare Tax (0.9%, Form 8959) not included"
         ],
         "skill_anchors_reproduced": [
-          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+          "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+          "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
         ],
         "notes": [],
         "defaults_assumed": {
@@ -1048,7 +1048,7 @@
         },
         "tax_year": "2025"
       },
-      "receipt_id": "e1feb9cf80c4caf2aa794cd6cbbda3561da748d8d80c245eed15dd42e5831cd0"
+      "receipt_id": "fe254ef8af276ba95b3b295d01501327a97576c3a7704f03026e9983d6cf6889"
     },
     {
       "id": "YEAR-GUARD",
@@ -1069,7 +1069,7 @@
         "constants_used": [],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
       },
-      "receipt_id": "b00e3121f7f8e895a8f7cc8389e3456a7c87c14e5218a05186dcad66f5561d99"
+      "receipt_id": "d2eed6a21352d81ca6d4b36a3a8e98e31d73b0a22529dda71507ed1e8345351e"
     }
   ]
 }

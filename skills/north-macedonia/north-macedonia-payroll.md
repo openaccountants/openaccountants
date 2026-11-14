@@ -3,17 +3,18 @@ name: north-macedonia-payroll
 description: "Use this skill to calculate North Macedonia salary withholding and gross-to-net pay for calendar year 2026. Trigger on payroll, MPIN, salary PIT, employee tax, employer cost, director fees, benefits in kind, contribution cap, personal reduction or denar salary. It covers ordinary employment, separately classified director and service payments, taxable benefits, the 2026 monthly reduction, the July pension/unemployment rate change, monthly filing and payment, employee records and annual PIT reconciliation. Use the social-contributions skill for insured-group classification and special bases, and the cross-border skill for foreign salary and treaty applications. The calculations produce reviewable working papers and do not constitute a licensed accountant’s sign-off."
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.3
+version: 0.4
+type: computation
 tier: 2
 domain: payroll
 ---
 
-# North Macedonia payroll withholding v0.3
+# North Macedonia payroll withholding v0.4
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -27,14 +28,14 @@ This is ordinary withholding. Labour-law minimum pay, overtime, leave entitlemen
 
 | Item | Amount | Period | Official provision |
 |---|---|---|---|
-| Salary PIT | 10% | 2026 | [PIT art. 11][pit] |
-| Salary/pension reduction | 10,932 monthly; published annual 131,184 | 2026 | [PIT arts. 10, 17][pit]; [2026 publication][allowance] |
-| Ordinary employee pension | 18.8% / 19.9% | January-June / July-December wage months | [Contributions Law art. 25][social]; [UJP dated table][rates] |
-| Employee health and additional health | 7.5% and 0.5% | 2026 | [Contributions Law arts. 10-11, 25][social] |
-| Employee unemployment | 1.2% / 0.1% | January-June / July-December wage months | [Contributions Law arts. 12, 25][social]; [dated table][rates] |
-| Employee contribution base floor / ceiling | 34,570 / 1,106,256 per month, UJP-published amounts | 2026 | [Contributions Law arts. 15-16][social]; [2026 bases][bases] |
-| Private-use company vehicle benefit | 1% monthly of prior 31 December book value, less employee consideration; acquisition-year/lease valuation follows its specific rule | 2026 | [PIT art. 16(1)(2-b),(2-v)][pit] |
-| Late-payment interest | 0.03% per overdue day | 2026 | [Tax Procedure Law art. 123][procedure] |
+| Salary PIT | 10% | 2026 | [PIT art. 11](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Salary/pension reduction | 10,932 monthly; published annual 131,184 | 2026 | [PIT arts. 10, 17](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf); [2026 publication](https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje) |
+| Ordinary employee pension | 18.8% / 19.9% | January-June / July-December wage months | [Contributions Law art. 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP dated table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Employee health and additional health | 7.5% and 0.5% | 2026 | [Contributions Law arts. 10-11, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf) |
+| Employee unemployment | 1.2% / 0.1% | January-June / July-December wage months | [Contributions Law arts. 12, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Employee contribution base floor / ceiling | 34,570 / 1,106,256 per month, UJP-published amounts | 2026 | [Contributions Law arts. 15-16](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [2026 bases](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| Private-use company vehicle benefit | 1% monthly of prior 31 December book value, less employee consideration; acquisition-year/lease valuation follows its specific rule | 2026 | [PIT art. 16(1)(2-b),(2-v)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Late-payment interest | 0.03% per overdue day | 2026 | [Tax Procedure Law art. 123](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
 
 Art. 25 expressly switches with the **July wage**; do not change a June arrears calculation merely because it is paid in July. PIT rate/reduction for salary also follow the month to which salary relates (PIT art. 92(2)).
 

@@ -1,10 +1,10 @@
 ---
 name: us-form-1041-trust-and-estate-income
 description: Prepare Form 1041, the US income tax return for estates and non-grantor trusts, for tax year 2026. 2026 figures from Rev. Proc. 2025-32, including the compressed trust brackets (37% above USD 16,000), the 0% and 15% capital gain bands (USD 3,300 and USD 16,250), the 3.8% net investment income tax above USD 16,000, the AMT exemption of USD 31,400 and the USD 5,300 qualified disability trust exemption. Covers who must file, calendar or fiscal year, DNI under section 643(a), simple and complex trust distribution deductions (sections 651 and 661), the 65-day election under section 663(b), the section 645 election to combine a revocable trust with the estate, income in respect of a decedent and the section 691(c) deduction, the section 642(g) choice between Form 706 and Form 1041, Schedule K-1, estimated tax and ESBTs in outline. Trigger on "Form 1041", "trust tax return", "estate income tax", "DNI", "65-day rule", "section 645", "K-1 from a trust", "IRD". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
@@ -67,7 +67,7 @@ Charitable lead trusts, QPRTs, GRATs during the grantor's life and ILITs during 
 | Top rate: over USD 16,000, USD 3,851 plus 37% of the excess | 37% above USD 16,000 | [Rev. Proc. 2025-32, section 3.01, Table 5](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Maximum zero rate amount for qualified dividends and net capital gain, estates and trusts | USD 3,300 | [Rev. Proc. 2025-32, section 3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Maximum 15% rate amount, estates and trusts (20% above) | USD 16,250 | [Rev. Proc. 2025-32, section 3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
-| Net investment income tax: 3.8% of the lesser of undistributed net investment income and AGI (section 67(e)) above the start of the top bracket (USD 16,000 for 2026) | 3.8% | [26 U.S.C. 1411(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| Net investment income tax: 3.8% of the lesser of undistributed net investment income and AGI (section 67(e)) above the start of the top bracket (USD 16,000 for 2026) | 3.8% | [26 U.S.C. 1411(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm); USD 16,000: [Rev. Proc. 2025-32, Table 5](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Exemption (section 642(b)): estate USD 600; trust required to distribute all income USD 300; other trusts USD 100 | USD 600 / 300 / 100 | [26 U.S.C. 642(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartA-sec642.htm) |
 | Qualified disability trust exemption (section 642(b)(2)(C)(i)) | USD 5,300 | [Rev. Proc. 2025-32, section 3.35](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | AMT exemption, estates and trusts (section 55(d)(1)) | USD 31,400 | [Rev. Proc. 2025-32, section 3.10](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |

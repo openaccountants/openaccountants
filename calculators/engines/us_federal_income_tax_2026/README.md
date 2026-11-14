@@ -2,9 +2,9 @@
 
 US federal individual income tax on Form 1040 for tax year 2025 or 2026: AGI, standard or itemized deduction, the simplified QBI deduction, bracket tax with the 0%/15%/20% rates on qualified dividends and long-term gains, the child tax credit, self-employment tax, Additional Medicare Tax and net investment income tax, plus the estimated-tax safe harbour and due dates. Refuses the alternative minimum tax when it cannot be shown to be zero, QBI above the threshold, the child tax credit above its phase-out start, and 2025 married filing separately.
 
-Jurisdiction US. Tax years 2025 and 2026. Engine version 1.0.0.
+Jurisdiction US. Tax years 2025 and 2026. Engine version 1.1.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-federal-income-tax-2026.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-federal-income-tax-2026.ts` in the OpenAccountants platform at commit `c2e3c2b9`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -29,7 +29,7 @@ import { run } from "./calculators/engines/us_federal_income_tax_2026/index.mjs"
 console.log(JSON.stringify(run({"filing_status":"single","wages":60000,"tax_year":"2026"}), null, 2));
 ```
 
-To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("us_federal_income_tax_2026", "1.0.0", facts, run(facts))` equals the `receipt.id` it returned.
+To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("us_federal_income_tax_2026", "1.1.0", facts, run(facts))` equals the `receipt.id` it returned.
 
 ## Inputs
 
@@ -107,42 +107,42 @@ Every figure is quoted from an OpenAccountants skill. The skill is the authority
 | `STANDARD_DEDUCTION_2025` | `{"single":15750,"married_filing_jointly":31500,"married_filing_separately":15750,"head_of_household":23625}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.1 Standard deduction (§63(c)) |
 | `NON_ITEMIZER_CASH_GIFTS_2026` | `{"other":1000,"joint":2000}` | [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040) | Changes made by Public Law 119-21 that apply to a tax year 2026 return |
 | `ITEMIZED_LIMIT_37_PERCENT_BAND_2026` | `0.05405405405405406` | [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040) | Changes made by Public Law 119-21 that apply to a tax year 2026 return |
-| `QBI_RATE` | `0.2` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Section 3 — Year-specific figures table for tax year 2025 |
-| `QBI_SIMPLIFIED_METHOD` | `true` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | QBI deduction: which form, and the thresholds for 2025 |
-| `QBI_DEFINITION` | `true` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | The method, step by step |
-| `QBI_THRESHOLD_2026` | `{"single":201750,"married_filing_jointly":403500,"married_filing_separately":201775,"head_of_household":201750}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Figures for tax year 2026 |
+| `QBI_RATE` | `0.2` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Rates, bands and thresholds |
+| `QBI_SIMPLIFIED_METHOD` | `true` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Rates, bands and thresholds; Step 3: where taxable income sits |
+| `QBI_DEFINITION` | `true` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Step 1: qualified business income for each business; Step 2: taxable income before the QBI deduction |
+| `QBI_THRESHOLD_2026` | `{"single":201750,"married_filing_jointly":403500,"married_filing_separately":201775,"head_of_household":201750}` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Rates, bands and thresholds |
 | `QBI_THRESHOLD_2025` | `{"single":197300,"married_filing_jointly":394600,"married_filing_separately":197300,"head_of_household":197300}` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Section 3 — Year-specific figures table for tax year 2025 |
-| `QBI_MINIMUM_2026` | `{"minimum":400,"qbi_needed":1000}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | What changed for 2026 |
-| `CAPITAL_GAIN_RATES_2026` | `{"rates":[0,0.15,0.2],"ceilings":{"single":[49450,545500],"married_filing_jointly":[98900,613700],"married_filing_separately":[49450,306850],"head_of_household":[66200,579600]}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Rates and thresholds for 2026 |
-| `CAPITAL_GAIN_RATES_2025` | `{"rates":[0,0.15,0.2],"ceilings":{"single":[48350,533400],"married_filing_jointly":[96700,600050],"married_filing_separately":[48350,300000],"head_of_household":[64750,566700]}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | 2025 returns: tax year 2025, extended deadline October 15, 2026 |
-| `CAPITAL_GAIN_STACKING` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | The method, step by step |
+| `QBI_MINIMUM_2026` | `{"minimum":400,"qbi_needed":1000}` | [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction) | Rates, bands and thresholds; Step 7: combine, cap, then the minimum |
+| `CAPITAL_GAIN_RATES_2026` | `{"rates":[0,0.15,0.2],"ceilings":{"single":[49450,545500],"married_filing_jointly":[98900,613700],"married_filing_separately":[49450,306850],"head_of_household":[66200,579600]}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Rates, bands and thresholds |
+| `CAPITAL_GAIN_RATES_2025` | `{"rates":[0,0.15,0.2],"ceilings":{"single":[48350,533400],"married_filing_jointly":[96700,600050],"married_filing_separately":[48350,300000],"head_of_household":[64750,566700]}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | 2025 returns (tax year 2025, extended deadline 15 October 2026) |
+| `CAPITAL_GAIN_STACKING` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Step 5: split the long-term gain into rate groups; Step 6: stack the gain on top of ordinary income |
 | `CHILD_TAX_CREDIT_2026` | `{"per_child":2200,"refundable_per_child":1700}` | [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040) | Tax year 2026 deductions, credits and other amounts |
 | `CHILD_TAX_CREDIT_2025` | `{"per_child":2200,"refundable_per_child":1700}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.9 Other OBBBA changes |
 | `CHILD_TAX_CREDIT_PHASEOUT_START` | `{"joint":400000,"other":200000}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.9 Other OBBBA changes |
-| `CHILD_TAX_CREDIT_PERMANENT` | `true` | [us-2026-federal-tax-changes](https://www.openaccountants.com/skills/us-2026-federal-tax-changes) | Child tax credit (permanent from 2025) |
+| `CHILD_TAX_CREDIT_PERMANENT` | `true` | [us-2026-federal-tax-changes](https://www.openaccountants.com/skills/us-2026-federal-tax-changes) | Boundary and exception table / Families |
 | `AMT_EXEMPTION_2026` | `{"exemption":{"single":90100,"married_filing_jointly":140200,"married_filing_separately":70100,"head_of_household":90100},"phaseout_start":{"single":500000,"married_filing_jointly":1000000,"married_filing_separately":500000,"head_of_household":500000}}` | [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040) | Tax year 2026 deductions, credits and other amounts |
 | `AMT_EXEMPTION_2025` | `{"exemption":{"single":88100,"married_filing_jointly":137000,"married_filing_separately":68500,"head_of_household":88100},"phaseout_start":{"single":626350,"married_filing_jointly":1252700,"married_filing_separately":626350,"head_of_household":626350}}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent) |
 | `AMT_TOP_RATE` | `0.28` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent) |
 | `AMT_COMPUTATION_STEPS` | `true` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 9.2 AMT computation flow |
-| `ADDITIONAL_MEDICARE_2026` | `{"rate":0.009,"threshold":{"single":200000,"married_filing_jointly":250000,"married_filing_separately":125000,"head_of_household":200000}}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Additional taxes on higher income |
+| `ADDITIONAL_MEDICARE_2026` | `{"rate":0.009,"threshold":{"single":200000,"married_filing_jointly":250000,"married_filing_separately":125000,"head_of_household":200000}}` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income |
 | `ADDITIONAL_MEDICARE_2025` | `{"rate":0.009,"threshold":{"single":200000,"married_filing_jointly":250000,"married_filing_separately":125000,"head_of_household":200000}}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 2.6 Additional Medicare Tax — §3101(b)(2) and §1401(b)(2) |
-| `NET_INVESTMENT_INCOME_TAX` | `{"rate":0.038,"threshold":{"single":200000,"married_filing_jointly":250000,"married_filing_separately":125000,"head_of_household":200000}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Net investment income tax |
-| `NET_INVESTMENT_INCOME_ITEMS` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Net investment income tax |
-| `NIIT_SAME_FOR_2025` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | 2025 returns: tax year 2025, extended deadline October 15, 2026 |
-| `SAFE_HARBOUR_2026` | `{"current":0.9,"prior":1,"prior_high":1.1,"agi_limit":150000,"agi_limit_mfs":75000}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Estimated tax and the Form 2210 penalty |
-| `ESTIMATED_TAX_DUE_DATES_2026` | `["2026-04-15","2026-06-15","2026-09-15","2027-01-15"]` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Estimated tax and the Form 2210 penalty |
-| `SAFE_HARBOUR_2025` | `{"current":0.9,"prior":1,"prior_high":1.1,"agi_limit":150000,"agi_limit_mfs":75000}` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Rates and thresholds |
+| `NET_INVESTMENT_INCOME_TAX` | `{"rate":0.038,"threshold":{"single":200000,"married_filing_jointly":250000,"married_filing_separately":125000,"head_of_household":200000}}` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Rates, bands and thresholds; Step 8: the net investment income tax |
+| `NET_INVESTMENT_INCOME_ITEMS` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | Step 8: the net investment income tax |
+| `NIIT_SAME_FOR_2025` | `true` | [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains) | 2025 returns (tax year 2025, extended deadline 15 October 2026) |
+| `SAFE_HARBOUR_2026` | `{"current":0.9,"prior":1,"prior_high":1.1,"agi_limit":150000,"agi_limit_mfs":75000}` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Rates, bands and thresholds; Boundary and exception table |
+| `ESTIMATED_TAX_DUE_DATES_2026` | `["2026-04-15","2026-06-15","2026-09-15","2027-01-15"]` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Rates, bands and thresholds |
+| `SAFE_HARBOUR_2025` | `{"current":0.9,"prior":1,"prior_high":1.1,"agi_limit":150000,"agi_limit_mfs":75000}` | [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return) | 15. Estimated tax — §6654 |
 | `ESTIMATED_TAX_DUE_DATES_2025` | `["2025-04-15","2025-06-16","2025-09-15","2026-01-15"]` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Section 1 -- Quick reference |
-| `QUARTERLY_INSTALMENT_SHARE` | `0.25` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | 5.4 Quarterly instalments |
-| `ZERO_PRIOR_YEAR_TAX` | `true` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | 5.3 Prior year safe harbour requirements |
-| `NET_EARNINGS_FACTOR` | `0.9235` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `MIN_NET_EARNINGS` | `400` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `SS_RATE` | `0.124` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `WAGE_BASE` | `{"2025":176100,"2026":184500}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `MEDICARE_RATE` | `0.029` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `DEDUCTIBLE_SHARE` | `0.5` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
+| `QUARTERLY_INSTALMENT_SHARE` | `0.25` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Rates, bands and thresholds |
+| `ZERO_PRIOR_YEAR_TAX` | `true` | [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax) | Step 1: is anything required? |
+| `NET_EARNINGS_FACTOR` | `0.9235` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `MIN_NET_EARNINGS` | `400` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `SS_RATE` | `0.124` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `WAGE_BASE` | `{"2025":176100,"2026":184500}` | [us-tax-workflow-base](https://www.openaccountants.com/skills/us-tax-workflow-base) | Figures for 2026, with years |
+| `MEDICARE_RATE` | `0.029` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `DEDUCTIBLE_SHARE` | `0.5` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
 
-Skills behind it: [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040), [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return), [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction), [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly), [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains), [us-2026-federal-tax-changes](https://www.openaccountants.com/skills/us-2026-federal-tax-changes), [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax).
+Skills behind it: [us-federal-income-tax-return-1040](https://www.openaccountants.com/skills/us-federal-income-tax-return-1040), [us-form-1040-individual-return](https://www.openaccountants.com/skills/us-form-1040-individual-return), [us-qbi-deduction](https://www.openaccountants.com/skills/us-qbi-deduction), [us-capital-gains](https://www.openaccountants.com/skills/us-capital-gains), [us-2026-federal-tax-changes](https://www.openaccountants.com/skills/us-2026-federal-tax-changes), [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation), [us-quarterly-estimated-tax](https://www.openaccountants.com/skills/us-quarterly-estimated-tax), [us-tax-workflow-base](https://www.openaccountants.com/skills/us-tax-workflow-base).
 
 ## Worked examples it reproduces
 
@@ -163,4 +163,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `c2e3c2b9` (OpenAccountants platform, `src/lib/engines`).

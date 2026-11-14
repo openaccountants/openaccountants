@@ -10,7 +10,6 @@ covered_by:
 partial:
   IT-IND: "za-income-tax carries tax_year 2025 and has not been re-verified for the 2027 year of assessment (1 March 2026 to 28 February 2027)"
   TP: "south-africa-transfer-pricing carries tax_year 2025 and has no Sources section with read dates"
-  XB: "leaving-south-africa-tax-emigration carries tax_year 2025 and has not been re-verified for 2026/27"
 ---
 
 # South Africa: tax pack
@@ -27,7 +26,7 @@ Tax years: not stated (11 skills), 2026 (4 skills), 2025 (6 skills).
 | Social contributions | [Payroll PAYE UIF SDL](za-payroll-paye-uif-sdl.md) | 2026 | Ready |
 | Payroll | [Payroll PAYE UIF SDL](za-payroll-paye-uif-sdl.md) | 2026 | Ready |
 | Transfer pricing | [Transfer pricing](south-africa-transfer-pricing.md) | 2025 | Partly covered: south-africa-transfer-pricing carries tax_year 2025 and has no Sources section with read dates |
-| Cross-border | [Cancelling a VAT registration and the exit VAT charge](cancelling-a-vat-registration-and-the-exit-vat-charge.md), [Leaving south africa tax emigration](leaving-south-africa-tax-emigration.md) | not stated, 2025 | Partly covered: leaving-south-africa-tax-emigration carries tax_year 2025 and has not been re-verified for 2026/27 |
+| Cross-border | [Cancelling a VAT registration and the exit VAT charge](cancelling-a-vat-registration-and-the-exit-vat-charge.md), [Leaving south africa tax emigration](leaving-south-africa-tax-emigration.md) | not stated, 2026 | Ready |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it.
 

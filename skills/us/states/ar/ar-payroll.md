@@ -1,11 +1,11 @@
 ---
 name: ar-payroll
 description: "Arkansas 2026 employer payroll: state wage withholding, AR4EC, registration, deposits, annual reconciliation and state unemployment insurance wage base, rates and quarterly reports."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-AR
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 type: computation
 ---
@@ -42,7 +42,7 @@ Arkansas employees, ordinary wage-withholding employers and contributing unemplo
 | $11,200-$15,999 | 3% minus $223.97 | [DFA formula p.2](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
 | $16,000-$26,399 | 3.4% minus $287.97 | [DFA formula p.2](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
 | $26,400-$94,700 | 3.7% minus $367.16 | [DFA formula p.2](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
-| $94,701-$97,600 transition | 3.7%, adjustment starts at $369.90 and drops $10 per $100 band, ending $89.90 | [DFA formula pp.2-3](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
+| $94,701-$97,600 transition | 3.7%, adjustment starts at $369.90 and drops $10 per $100 band (derived: difference between consecutive bands on the table), ending $89.90 | [DFA formula pp.2-3](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
 | $97,601 and over | 3.7% minus $79.90 | [DFA formula p.3](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf) |
 | UI calendar-year wage base, per employee | $7,000 | [Division 2026 notice](https://reemployment.arkansas.gov/calculating-taxable-wages/) |
 | New contributing employer total UI rate | 2.0%: 1.8% base plus 0.2% administrative assessment | [Division 2026 notice](https://reemployment.arkansas.gov/calculating-taxable-wages/) |

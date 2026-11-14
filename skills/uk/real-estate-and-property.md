@@ -1,11 +1,12 @@
 ---
 name: real-estate-and-property
-description: "Use this skill when an individual or company buys, lets or sells residential property in the United Kingdom. It covers Stamp Duty Land Tax (England and Northern Ireland) in depth, with the slice method, the 5% higher rates for additional dwellings, the 2% non-resident surcharge, first-time buyer relief up to GBP 500,000, the 17% rate for companies and the 14-day return; the Scottish LBTT bands, 8% Additional Dwelling Supplement and Welsh LTT tables; the 2026/27 rules on letting income (property allowance, finance-cost restriction at 20%, property rates from 2027/28); and Capital Gains Tax on residential property at 18%/24% with the 60-day return. Figures are for transactions and tax year 2026/27 as at 30 October 2026. Trigger on SDLT, stamp duty, LBTT, ADS, LTT, buy-to-let, second home surcharge, Section 24, 60-day CGT return. Out of scope: full SA105 work (uk-rental-sa105), PRR and full CGT (uk-capital-gains-sa108), company landlords (uk-corporation-tax), ATED."
+description: "Use this skill when an individual or company buys, lets or sells residential property in the United Kingdom. It covers Stamp Duty Land Tax (England and Northern Ireland) in depth, with the slice method, the 5% higher rates for additional dwellings, the 2% non-resident surcharge, first-time buyer relief up to GBP 500,000, the 17% rate for companies and the 14-day return; the Scottish LBTT bands, 8% Additional Dwelling Supplement and Welsh LTT tables; a short 2026/27 routine for individual landlords (repairs against improvements, replacement of domestic items, the finance-cost restriction at 20%, the GBP 1,000 property allowance, Rent-a-Room GBP 7,500, former furnished holiday lets, Making Tax Digital thresholds, property rates of 22%, 42% and 47% from 2027/28); and Capital Gains Tax on residential property at 18% or 24% with the 60-day return. Transactions and tax year 2026/27. Trigger on SDLT, stamp duty, LBTT, ADS, LTT, buy-to-let, second home surcharge, landlord tax, mortgage interest rental, Section 24, 60-day CGT return. Out of scope (see siblings) full SA105 work (uk-rental-sa105), PRR and full CGT (uk-capital-gains-sa108), company landlords (uk-corporation-tax), ATED."
 jurisdiction: GB
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 1.1
+last_updated: 2026-11-14
+version: 2.0
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
@@ -17,19 +18,19 @@ domain: estate-wealth-tax
 
 This skill covers the tax on buying residential property in England and Northern Ireland, Stamp Duty Land Tax (SDLT), in depth: the standard bands, the higher rates landlords need to plan around, and the reliefs that actually apply versus the ones that get assumed. It also gives the purchase tax tables for Scotland (Land and Buildings Transaction Tax, LBTT) and Wales (Land Transaction Tax, LTT), the headline rules for letting income in 2026/27, and Capital Gains Tax (CGT) when a residential property is sold, including the 60-day return.
 
-SDLT figures are for transactions with an effective date (normally completion) on or after 1 April 2025. They were still the law on 30 October 2026. Income tax and CGT figures are for the tax year 6 April 2026 to 5 April 2027 (2026/27).
+SDLT figures are for transactions with an effective date (normally completion) on or after 1 April 2025. They were still the law when read on 14 November 2026. Income tax and CGT figures are for the tax year 6 April 2026 to 5 April 2027 (2026/27).
 
-## Who this is for
+## Scope
 
 Individual buyers, landlords and sellers of UK residential property, and their advisers. That includes landlords buying an additional property (buy-to-let), first-time buyers, non-UK residents, and companies buying dwellings.
 
 - **Buying:** SDLT in England and Northern Ireland is covered step by step. LBTT (Scotland) and LTT (Wales) are separate taxes with their own bands; this skill gives their rate tables, the second-home charge and the return deadline.
-- **Letting:** the finance-cost restriction and the 2026/27 and 2027/28 rates are here. The full SA105 computation, Rent-a-Room, the Non-resident Landlord Scheme and Making Tax Digital are in uk-rental-sa105.
+- **Letting:** a short routine for individual landlords for 2026/27 (gross rent, repairs against improvements, replacement of domestic items, the finance-cost restriction and its 20% tax reduction, the GBP 1,000 property allowance, Rent-a-Room, former furnished holiday lets, the Making Tax Digital thresholds) and the 2027/28 property rates are here. The full SA105 box map, losses, joint ownership and Form 17 and the Non-resident Landlord Scheme are in uk-rental-sa105 and uk-non-resident-sa109.
 - **Selling:** CGT rates and the 60-day return are here. Private Residence Relief, Letting Relief and the full CGT computation are in uk-capital-gains-sa108.
 
 Not covered: non-residential and mixed-use property beyond the rate tables, the Annual Tax on Enveloped Dwellings, corporation tax for company landlords (see uk-corporation-tax), VAT on property, and Scottish income tax bands (see uk-scottish-income-tax).
 
-## Before you start, ask the client
+## Ask the client first
 
 - Where is the property: England, Northern Ireland, Scotland or Wales? (It decides which purchase tax applies.)
 - After completion, will this be the only residential property worth £40,000 or more they own anywhere in the world?
@@ -39,6 +40,7 @@ Not covered: non-residential and mixed-use property beyond the rate tables, the 
 - Is the buyer an individual, or a company or other non-natural person? (The 17% flat rate can apply to dwellings over £500,000 bought by certain companies.)
 - If letting: the rent, the mortgage interest and other finance costs, and the client's other income.
 - If selling: the completion date, the expected gain, and whether the client is UK resident.
+- If letting: is the property jointly owned, and in what shares? Did any "repair" restore the property, or improve it beyond its original condition? Were furniture or appliances replaced this year, and were they first purchases or replacements? Is gross rental income above or below GBP 1,000? Is qualifying income (self-employment plus property) above the Making Tax Digital thresholds?
 
 ## The method, step by step
 
@@ -51,10 +53,93 @@ Not covered: non-residential and mixed-use property beyond the rate tables, the 
 7. **Companies.** A company pays the higher rates on any residential property it buys for £40,000 or more (unless it is subject to a lease with more than 21 years left), even if it owns no other dwelling. If a dwelling costs more than £500,000, check whether the 17% flat rate for certain non-natural persons applies instead (FA 2003 Sch 4A). That is one rate on the whole price, not a banded calculation. Relief from the 17% rate is available for some uses, such as a property rental business or a property developer or trader; each has its own conditions.
 8. **File and pay within 14 days.** The SDLT return must reach HMRC within 14 days of the effective date (FA 2003 s.76), and the tax is paid by then. In practice the solicitor files and pays on completion. The accountant should confirm it has been done, not assume it.
 9. **Scotland and Wales.** Apply the LBTT or LTT tables below on the same slice basis. The Scottish Additional Dwelling Supplement (ADS) is 8% of the whole price, not a banded addition. The Welsh higher residential rates are a separate table, not the main table plus a fixed addition. Both returns are due within 30 days.
-10. **If the property is let.** Residential mortgage interest is not deducted from rental profit. For 2026/27 it gives a tax reduction at 20% of the lower of the finance costs (with any brought forward) and the property profits, capped by the client's adjusted total income. The unused part carries forward. The full computation is in uk-rental-sa105.
+10. **If the property is let (individual landlord, 2026/27).**
+    1. Total gross rental income for the tax year: rent, deposits retained in the year, and platform payouts. Leave out refundable deposits still held and capital receipts.
+    2. Sort every cost: revenue expense, repair, capital improvement (not deductible against rent), or replacement of a domestic item (only a replacement qualifies, never the first purchase).
+    3. Residential finance costs are not deducted (ITTOIA 2005 s.272A). Instead the landlord gets a tax reduction of 20% of the lowest of: finance costs (plus any brought forward), property profits, and adjusted total income above the Personal Allowance. The unused part carries forward. The reduction cannot create a refund.
+    4. Property allowance: GBP 1,000 a year. It replaces all expenses (never both), cannot create a loss, and cannot be used with the finance cost reduction or on Rent-a-Room income.
+    5. Rent-a-Room: for furnished accommodation in the landlord's own home, up to GBP 7,500 a year is tax-free (GBP 3,750 if the income is shared).
+    6. Former furnished holiday lets: the regime was abolished for income tax from 6 April 2025. These properties now sit in the ordinary property business: finance costs move to the 20% reduction, and FHL losses carried forward are set against the property business.
+    7. Tax the profit at the landlord's 2026/27 rates (20%, 40%, 45% for England, Wales and Northern Ireland; Scotland in uk-scottish-income-tax), then deduct the finance cost reduction. From 2027/28 property income is taxed at 22%, 42% and 47% and the reduction is given at the property basic rate of 22% (enacted, see the letting table). The full computation is in uk-rental-sa105.
 11. **When the property is sold.** Work out the gain and the CGT at 18% or 24%. If CGT is due on a UK residential property, report and pay within 60 days of completion. A non-resident reports every disposal of UK property or land within 60 days, even with no tax to pay. Reliefs and the full computation are in uk-capital-gains-sa108.
 
-## The traps
+### Rates, bands and thresholds
+
+#### Stamp Duty Land Tax: England and Northern Ireland (effective date on or after 1 April 2025)
+
+| What | Value | Source |
+| --- | --- | --- |
+| Standard residential bands | 0% up to £125,000; 2% £125,001 to £250,000; 5% £250,001 to £925,000; 10% £925,001 to £1,500,000; 12% over £1,500,000 | FA 2003 s.55 Table A: https://www.legislation.gov.uk/ukpga/2003/14/section/55 ; https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
+| Higher rates for additional dwellings | 5% up to £125,000; 7% to £250,000; 10% to £925,000; 15% to £1,500,000; 17% above (5 points on every band). Applies at £40,000 or more | FA 2003 Sch 4ZA para 1: https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/1 ; https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property |
+| Refund of higher rates on replacing a main home | Previous main home sold within 3 years of buying the new one; claim within 12 months of the later of the sale and the new return's filing date | https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property |
+| First-time buyer relief | 0% up to £300,000; 5% £300,001 to £500,000; no relief if the price is over £500,000 | FA 2003 Sch 6ZA: https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA ; https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
+| Non-UK resident surcharge | 2% added to each rate, including zero bands, first-time buyer rates and higher rates | FA 2003 s.75ZA: https://www.legislation.gov.uk/ukpga/2003/14/section/75ZA ; https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents |
+| Non-UK resident test and refund | UK resident only if present at least 183 days in a continuous 365-day period within the relevant period; refund if met within the window ending 365 days after the effective date, claimed within 2 years | FA 2003 Sch 9A para 4: https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A ; https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents |
+| Companies buying dwellings | Higher rates on any dwelling of £40,000 or more; 17% flat rate on a dwelling costing more than £500,000 bought by certain non-natural persons | FA 2003 Sch 4A para 1: https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A/paragraph/1 ; https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA ; https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies |
+| New residential lease: rent | 1% on the net present value of the rent above £125,000 | https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
+| Non-residential and mixed-use | 0% up to £150,000; 2% £150,001 to £250,000; 5% above £250,000 | FA 2003 s.55 Table B: https://www.legislation.gov.uk/ukpga/2003/14/section/55 ; https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates |
+| Return and payment | Within 14 days of the effective date (normally completion) | FA 2003 s.76(1): https://www.legislation.gov.uk/ukpga/2003/14/section/76 ; https://www.gov.uk/stamp-duty-land-tax |
+| Multiple Dwellings Relief | Abolished for transactions completing on or after 1 June 2024; contracts exchanged on or before 6 March 2024 keep it if not varied | HMRC SDLTM29901: https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29901 |
+
+#### Land and Buildings Transaction Tax: Scotland
+
+| What | Value | Source |
+| --- | --- | --- |
+| Residential bands (since 1 April 2021) | 0% up to £145,000; 2% £145,001 to £250,000; 5% £250,001 to £325,000; 10% £325,001 to £750,000; 12% over £750,000 | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property |
+| First-time buyer relief | Nil rate band raised to £175,000 (saves up to £600) | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property |
+| Additional Dwelling Supplement | 8% of the whole price where the contract was entered into on or after 5 December 2024 (6% for earlier contracts); applies at £40,000 or more; companies pay it on every dwelling | SSI 2024/367 art. 2: https://www.legislation.gov.uk/ssi/2024/367/article/2/made ; https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads |
+| ADS and replacing a main home | Not due if the previous main residence was sold in the 36 months before; repayment if it is sold within 36 months after | https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads |
+| Non-residential bands | 0% up to £150,000; 1% £150,001 to £250,000; 5% above £250,000 | https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property |
+| Return | Within 30 days beginning with the day after the effective date | LBTT (Scotland) Act 2013 s.29(3): https://www.legislation.gov.uk/asp/2013/11/section/29 |
+
+#### Land Transaction Tax: Wales
+
+| What | Value | Source |
+| --- | --- | --- |
+| Main residential rates (since 10 October 2022) | 0% up to £225,000; 6% over £225,000 up to £400,000; 7.5% over £400,000 up to £750,000; 10% over £750,000 up to £1,500,000; 12% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
+| Higher residential rates (since 11 December 2024) | 5% up to £180,000; 8.5% over £180,000 up to £250,000; 10% over £250,000 up to £400,000; 12.5% over £400,000 up to £750,000; 15% over £750,000 up to £1,500,000; 17% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands ; WSI 2024/1311: https://www.legislation.gov.uk/wsi/2024/1311/contents/made |
+| Non-residential rates (since 22 December 2020) | 0% up to £225,000; 1% over £225,000 up to £250,000; 5% over £250,000 up to £1,000,000; 6% over £1,000,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
+| Return | Within 30 days beginning with the day after the effective date | Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017 s.44: https://www.legislation.gov.uk/anaw/2017/1/section/44 |
+
+#### Letting income: 2026/27, with the 2027/28 change (England and Northern Ireland rates)
+
+| What | Value | Source |
+| --- | --- | --- |
+| Property allowance | £1,000 a year of gross property income; above that, use it instead of expenses, never both | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income |
+| Residential finance costs | No deduction from 2020/21 onwards (individuals, for income tax) | ITTOIA 2005 s.272A(4): https://www.legislation.gov.uk/ukpga/2005/5/section/272A |
+| Finance cost tax reduction, 2026/27 | Basic rate (20%) on the lower of the finance costs (with any brought forward) and the adjusted property profits, capped by adjusted total income; the unused part carries forward | ITTOIA 2005 s.274AA: https://www.legislation.gov.uk/ukpga/2005/5/section/274AA ; Finance Act 2026 s.2: https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
+| Income tax rates, 2026/27 | Basic 20%, higher 40%, additional 45% | Finance Act 2026 s.2: https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
+| Property rates from 2027/28 | Property basic 22%, property higher 42%, property additional 47% (enacted) | Finance Act 2026 s.7: https://www.legislation.gov.uk/ukpga/2026/11/section/7 |
+| Finance cost reduction from 2027/28 | Given at the property basic rate (22%) for 2027/28 and later years (enacted) | ITTOIA 2005 s.274AA(5) as amended by FA 2026 Sch 1 para 40(a): https://www.legislation.gov.uk/ukpga/2005/5/section/274AA ; property basic rate: https://www.legislation.gov.uk/ukpga/2026/11/section/7 |
+| Personal Allowance and bands, 2026/27 (England, Wales, Northern Ireland) | GBP 12,570; 20% to GBP 50,270, 40% to GBP 125,140, 45% above | https://www.gov.uk/income-tax-rates |
+| Rent-a-Room threshold | GBP 7,500 a year (GBP 3,750 if the income is shared) | https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme |
+| Furnished holiday lettings regime | Abolished from 6 April 2025 for income tax (1 April 2025 for corporation tax) | https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition/abolition-of-the-furnished-holiday-lettings-tax-regime |
+| Making Tax Digital for Income Tax | Qualifying income over GBP 50,000 in 2024/25: from 6 April 2026; over GBP 30,000 in 2025/26: from 6 April 2027; over GBP 20,000 in 2026/27: from 6 April 2028 | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax |
+| Self Assessment deadlines | 2025/26 return: paper by 31 October 2026, online by 31 January 2027; tax paid by 31 January 2027 | https://www.gov.uk/self-assessment-tax-returns/deadlines |
+
+#### Capital Gains Tax on residential property: 2026/27
+
+| What | Value | Source |
+| --- | --- | --- |
+| Rates for individuals | 18% on gains within the unused basic rate band, 24% above | TCGA 1992 s.1H(3): https://www.legislation.gov.uk/ukpga/1992/12/section/1H ; https://www.gov.uk/capital-gains-tax/rates |
+| Trustees and personal representatives | 24% | TCGA 1992 s.1H(6) and (8): https://www.legislation.gov.uk/ukpga/1992/12/section/1H |
+| Annual exempt amount | £3,000 for 2026/27 | https://www.gov.uk/capital-gains-tax/rates |
+| 60-day return | On or before the 60th day after completion; UK residents report and pay when CGT is due; non-residents report every disposal of UK property or land, even with no tax | FA 2019 Sch 2 para 3: https://www.legislation.gov.uk/ukpga/2019/1/schedule/2/paragraph/3 ; https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020 |
+
+#### Penalties and interest
+
+| What | Value | Source |
+| --- | --- | --- |
+| SDLT return late | £100 if delivered within 3 months after the filing date; £200 otherwise | FA 2003 Sch 10 para 3: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 |
+| SDLT return more than 12 months late | An extra tax-related penalty of up to the full tax on the transaction | FA 2003 Sch 10 para 4: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 |
+| SDLT records | Keep until the sixth anniversary of the effective date (or until an enquiry ends, if later); penalty up to £3,000 | FA 2003 Sch 10 paras 9 and 11: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/2 |
+| SDLT paid late | Interest on the unpaid tax | FA 2003 s.87: https://www.legislation.gov.uk/ukpga/2003/14/section/87 ; https://www.gov.uk/guidance/penalties-and-interest-on-a-late-stamp-duty-land-tax-return |
+| HMRC late payment interest rate (SDLT, CGT, income tax) | Base rate plus 4%: 7.75% from 9 January 2026; 8.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| 60-day CGT return late | £100; after 6 months the greater of 5% of the tax and £300; a further penalty after 12 months | FA 2009 Sch 55 paras 3, 5 and 6 (table item 2A): https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 |
+
+## Boundary and exception table
+
+### The traps
 
 - Applying the whole purchase price to a single band instead of computing tax on a slice basis. This overstates the liability.
 - Forgetting that the higher rates start at £40,000, not some higher round-number threshold. A modest second property purchase is still caught.
@@ -66,75 +151,12 @@ Not covered: non-residential and mixed-use property beyond the rate tables, the 
 - Deducting residential mortgage interest as an expense on a let property. Since 2020/21 no deduction is allowed for income tax; relief is only the 20% tax reduction (ITTOIA 2005 s.272A(4)).
 - Assuming the 20% finance-cost credit continues. From 2027/28 it is given at the property basic rate of 22%, and property income is taxed at 22%, 42% and 47% (Finance Act 2026 s.7 and Sch 1 para 40).
 - Waiting for the Self Assessment return to report a residential property gain. The 60-day return and payment come first.
+- Treating an improvement as a repair, or a like-for-like repair as capital.
+- Claiming the original purchase of a domestic item: only a replacement qualifies.
+- Combining the property allowance with expenses, with the finance cost reduction, or with Rent-a-Room.
+- Applying the 2027/28 property rates to 2026/27: they start on 6 April 2027.
 
-## Rates, thresholds and deadlines
-
-### Stamp Duty Land Tax: England and Northern Ireland (effective date on or after 1 April 2025)
-
-| What | Value | Source |
-| --- | --- | --- |
-| Standard residential bands | 0% up to £125,000; 2% £125,001 to £250,000; 5% £250,001 to £925,000; 10% £925,001 to £1,500,000; 12% over £1,500,000 | FA 2003 s.55 Table A: https://www.legislation.gov.uk/ukpga/2003/14/section/55 ; https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
-| Higher rates for additional dwellings | 5% up to £125,000; 7% to £250,000; 10% to £925,000; 15% to £1,500,000; 17% above (5 points on every band). Applies at £40,000 or more | FA 2003 Sch 4ZA para 1: https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/1 ; https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property |
-| Refund of higher rates on replacing a main home | Previous main home sold within 3 years of buying the new one; claim within 12 months of the later of the sale and the new return's filing date | https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property |
-| First-time buyer relief | 0% up to £300,000; 5% £300,001 to £500,000; no relief if the price is over £500,000 | FA 2003 Sch 6ZA: https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA ; https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
-| Non-UK resident surcharge | 2% added to each rate, including zero bands, first-time buyer rates and higher rates | FA 2003 s.75ZA: https://www.legislation.gov.uk/ukpga/2003/14/section/75ZA ; https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents |
-| Non-UK resident test and refund | UK resident only if present at least 183 days in a continuous 365-day period within the relevant period; refund if met within the window ending 365 days after the effective date, claimed within 2 years | FA 2003 Sch 9A para 4: https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A ; https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents |
-| Companies buying dwellings | Higher rates on any dwelling of £40,000 or more; 17% flat rate on a dwelling costing more than £500,000 bought by certain non-natural persons | FA 2003 Sch 4A para 1: https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A/paragraph/1 ; https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies |
-| New residential lease: rent | 1% on the net present value of the rent above £125,000 | https://www.gov.uk/stamp-duty-land-tax/residential-property-rates |
-| Non-residential and mixed-use | 0% up to £150,000; 2% £150,001 to £250,000; 5% above £250,000 | FA 2003 s.55 Table B: https://www.legislation.gov.uk/ukpga/2003/14/section/55 ; https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates |
-| Return and payment | Within 14 days of the effective date (normally completion) | FA 2003 s.76(1): https://www.legislation.gov.uk/ukpga/2003/14/section/76 ; https://www.gov.uk/stamp-duty-land-tax |
-| Multiple Dwellings Relief | Abolished for transactions completing on or after 1 June 2024; contracts exchanged on or before 6 March 2024 keep it if not varied | HMRC SDLTM29901: https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29901 |
-
-### Land and Buildings Transaction Tax: Scotland
-
-| What | Value | Source |
-| --- | --- | --- |
-| Residential bands (since 1 April 2021) | 0% up to £145,000; 2% £145,001 to £250,000; 5% £250,001 to £325,000; 10% £325,001 to £750,000; 12% over £750,000 | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property |
-| First-time buyer relief | Nil rate band raised to £175,000 (saves up to £600) | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property |
-| Additional Dwelling Supplement | 8% of the whole price where the contract was entered into on or after 5 December 2024 (6% for earlier contracts); applies at £40,000 or more; companies pay it on every dwelling | SSI 2024/367 art. 2: https://www.legislation.gov.uk/ssi/2024/367/article/2/made ; https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads |
-| ADS and replacing a main home | Not due if the previous main residence was sold in the 36 months before; repayment if it is sold within 36 months after | https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads |
-| Non-residential bands | 0% up to £150,000; 1% £150,001 to £250,000; 5% above £250,000 | https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property |
-| Return | Within 30 days beginning with the day after the effective date | LBTT (Scotland) Act 2013 s.29(3): https://www.legislation.gov.uk/asp/2013/11/section/29 |
-
-### Land Transaction Tax: Wales
-
-| What | Value | Source |
-| --- | --- | --- |
-| Main residential rates (since 10 October 2022) | 0% up to £225,000; 6% £225,001 to £400,000; 7.5% £400,001 to £750,000; 10% £750,001 to £1,500,000; 12% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
-| Higher residential rates (since 11 December 2024) | 5% up to £180,000; 8.5% £180,001 to £250,000; 10% £250,001 to £400,000; 12.5% £400,001 to £750,000; 15% £750,001 to £1,500,000; 17% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands ; WSI 2024/1311: https://www.legislation.gov.uk/wsi/2024/1311/contents/made |
-| Non-residential rates (since 22 December 2020) | 0% up to £225,000; 1% £225,001 to £250,000; 5% £250,001 to £1,000,000; 6% over £1,000,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
-| Return | Within 30 days beginning with the day after the effective date | Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017 s.44: https://www.legislation.gov.uk/anaw/2017/1/section/44 |
-
-### Letting income: 2026/27, with the 2027/28 change (England and Northern Ireland rates)
-
-| What | Value | Source |
-| --- | --- | --- |
-| Property allowance | £1,000 a year of gross property income; above that, use it instead of expenses, never both | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income |
-| Residential finance costs | No deduction from 2020/21 onwards (individuals, for income tax) | ITTOIA 2005 s.272A(4): https://www.legislation.gov.uk/ukpga/2005/5/section/272A |
-| Finance cost tax reduction, 2026/27 | Basic rate (20%) on the lower of the finance costs (with any brought forward) and the adjusted property profits, capped by adjusted total income; the unused part carries forward | ITTOIA 2005 s.274AA: https://www.legislation.gov.uk/ukpga/2005/5/section/274AA ; Finance Act 2026 s.2: https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
-| Income tax rates, 2026/27 | Basic 20%, higher 40%, additional 45% | Finance Act 2026 s.2: https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
-| Property rates from 2027/28 | Property basic 22%, property higher 42%, property additional 47%; the finance cost reduction moves to the property basic rate | Finance Act 2026 s.7: https://www.legislation.gov.uk/ukpga/2026/11/section/7 ; ITTOIA 2005 s.274AA(5) as amended by FA 2026 Sch 1 para 40 |
-
-### Capital Gains Tax on residential property: 2026/27
-
-| What | Value | Source |
-| --- | --- | --- |
-| Rates for individuals | 18% on gains within the unused basic rate band, 24% above | TCGA 1992 s.1H(3): https://www.legislation.gov.uk/ukpga/1992/12/section/1H ; https://www.gov.uk/capital-gains-tax/rates |
-| Trustees and personal representatives | 24% | TCGA 1992 s.1H(6) and (8): https://www.legislation.gov.uk/ukpga/1992/12/section/1H |
-| Annual exempt amount | £3,000 for 2026/27 | https://www.gov.uk/capital-gains-tax/rates |
-| 60-day return | On or before the 60th day after completion; UK residents report and pay when CGT is due; non-residents report every disposal of UK property or land, even with no tax | FA 2019 Sch 2 para 3: https://www.legislation.gov.uk/ukpga/2019/1/schedule/2/paragraph/3 ; https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020 |
-
-### Penalties and interest
-
-| What | Value | Source |
-| --- | --- | --- |
-| SDLT return late | £100 if delivered within 3 months after the filing date; £200 otherwise | FA 2003 Sch 10 para 3: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 |
-| SDLT return more than 12 months late | An extra tax-related penalty of up to the full tax on the transaction | FA 2003 Sch 10 para 4: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 |
-| SDLT records | Keep until the sixth anniversary of the effective date (or until an enquiry ends, if later); penalty up to £3,000 | FA 2003 Sch 10 paras 9 and 11: https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/2 |
-| SDLT paid late | Interest on the unpaid tax | FA 2003 s.87: https://www.legislation.gov.uk/ukpga/2003/14/section/87 ; https://www.gov.uk/guidance/penalties-and-interest-on-a-late-stamp-duty-land-tax-return |
-| 60-day CGT return late | £100; after 6 months the greater of 5% of the tax and £300; a further penalty after 12 months | FA 2009 Sch 55 paras 3, 5 and 6 (table item 2A): https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 |
-
-## Worked examples
+## Worked cases
 
 ### Example 1: buy-to-let in England, buyer already owns a home
 
@@ -192,47 +214,110 @@ expected:
   surcharge: 9000.00
 ```
 
+### Example 3: basic rate landlord, finance cost reduction (2026/27)
+
+A landlord with a GBP 30,000 salary (which uses her Personal Allowance) lets one flat in England in 2026/27. Rent GBP 12,000. Mortgage interest GBP 4,000. Agent fees GBP 1,200. Insurance GBP 300. Repairs GBP 800.
+
+Profit is rent less agent fees, insurance and repairs: GBP 9,700. The mortgage interest is not deducted. All the profit falls in her basic rate band, so tax at 20% is GBP 1,940. The finance cost reduction is 20% of the lowest of GBP 4,000 (finance costs), GBP 9,700 (property profit) and GBP 27,130 (adjusted total income of GBP 39,700 less the GBP 12,570 Personal Allowance): 20% of GBP 4,000, GBP 800. Tax on the rental profit: GBP 1,140.
+
+For comparison only: the same figures in 2027/28 at the enacted 22% property basic rate, with the reduction also at 22%, give GBP 2,134 less GBP 880, GBP 1,254.
+
+```oa-check
+name: Basic rate landlord, finance cost reduction (2026/27)
+inputs:
+  rent: 12000
+  mortgage_interest: 4000
+  agent_fees: 1200
+  insurance: 300
+  repairs: 800
+  salary: 30000
+  personal_allowance: 12570
+steps:
+  - profit: rent - agent_fees - insurance - repairs
+  - tax_before_reduction: profit * 0.20
+  - ati_above_pa: salary + profit - personal_allowance
+  - reduction_base: min(mortgage_interest, profit, ati_above_pa)
+  - reduction: reduction_base * 0.20
+  - tax_due: tax_before_reduction - reduction
+  - tax_2027_28: profit * 0.22 - reduction_base * 0.22
+expected:
+  profit: 9700.00
+  tax_before_reduction: 1940.00
+  ati_above_pa: 27130.00
+  reduction: 800.00
+  tax_due: 1140.00
+  tax_2027_28: 1254.00
+```
+
 *Working paper aid only. Confirm every figure against the law and the gov.uk, Revenue Scotland or Welsh Government page cited before filing, and have it reviewed by a chartered accountant or licensed tax adviser before acting on it.*
+
+## When to refuse or refer
+
+- Non-residential and mixed-use purchases beyond the rate tables, and the Annual Tax on Enveloped Dwellings: refer.
+- A company claiming relief from the 17% rate (property rental business, developer or trader): each relief has its own conditions and a clawback; refer.
+- Multiple Dwellings Relief on a contract exchanged on or before 6 March 2024: confirm the contract was not varied, then refer.
+- Welsh first-time buyer and multiple dwellings questions (WSI 2025/119 not read): refer.
+- Corporation tax for company landlords (uk-corporation-tax), VAT on property, and Scottish income tax bands (uk-scottish-income-tax): load the sibling skill.
+- Full SA105 computation, losses, joint ownership and Form 17 (uk-rental-sa105); non-resident landlords (uk-non-resident-sa109); Private Residence Relief, Letting Relief and the full CGT computation (uk-capital-gains-sa108).
+- Any request to file an SDLT, LBTT or LTT return or a 60-day CGT return without a named person reviewing it.
+
+## Filing and payment
+
+- **SDLT (England and Northern Ireland):** return and payment within 14 days of the effective date (FA 2003 s.76). The solicitor normally files on completion; confirm it was done.
+- **LBTT (Scotland) and LTT (Wales):** return within 30 days beginning with the day after the effective date.
+- **Higher rates refund (SDLT):** claim within 12 months of the later of the sale of the old main home and the filing date of the new return; the old home must be sold within 3 years.
+- **Non-resident surcharge refund (SDLT):** amend the return within 2 years of the effective date.
+- **Letting income:** Self Assessment for 2025/26 by 31 October 2026 (paper) or 31 January 2027 (online), tax paid by 31 January 2027; Making Tax Digital for Income Tax from 6 April 2026 for qualifying income over GBP 50,000 in 2024/25.
+- **Sale:** 60-day CGT return and payment where CGT is due on a UK residential property; non-residents report every disposal of UK land.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Finance Act 2003 s.55 (SDLT Tables A and B) | https://www.legislation.gov.uk/ukpga/2003/14/section/55 | 2026-10-30 |
-| Finance Act 2003 Sch 4ZA para 1 (higher rates) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/1 | 2026-10-30 |
-| Finance Act 2003 Sch 6ZA (first-time buyer relief) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA | 2026-10-30 |
-| Finance Act 2003 s.75ZA (2% surcharge) | https://www.legislation.gov.uk/ukpga/2003/14/section/75ZA | 2026-10-30 |
-| Finance Act 2003 Sch 9A (non-resident test) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A | 2026-10-30 |
-| Finance Act 2003 Sch 4A para 1 (17% rate) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A/paragraph/1 | 2026-10-30 |
-| Finance Act 2003 s.76 (return within 14 days) | https://www.legislation.gov.uk/ukpga/2003/14/section/76 | 2026-10-30 |
-| Finance Act 2003 s.87 (interest) | https://www.legislation.gov.uk/ukpga/2003/14/section/87 | 2026-10-30 |
-| Finance Act 2003 Sch 10 Part 1 (late return penalties) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 | 2026-10-30 |
-| Finance Act 2003 Sch 10 Part 2 (records) | https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/2 | 2026-10-30 |
-| GOV.UK, SDLT: residential property rates | https://www.gov.uk/stamp-duty-land-tax/residential-property-rates | 2026-10-30 |
-| GOV.UK, SDLT: non-residential and mixed rates | https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates | 2026-10-30 |
-| GOV.UK, SDLT: buying an additional residential property | https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property | 2026-10-30 |
-| GOV.UK, Rates of SDLT for non-UK residents | https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents | 2026-10-30 |
-| GOV.UK, SDLT: corporate bodies | https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies | 2026-10-30 |
-| GOV.UK, Stamp Duty Land Tax overview | https://www.gov.uk/stamp-duty-land-tax | 2026-10-30 |
-| GOV.UK, Penalties and interest on a late SDLT return | https://www.gov.uk/guidance/penalties-and-interest-on-a-late-stamp-duty-land-tax-return | 2026-10-30 |
-| HMRC SDLT Manual SDLTM29901 (abolition of MDR) | https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29901 | 2026-10-30 |
-| Revenue Scotland, LBTT residential property | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property | 2026-10-30 |
-| Revenue Scotland, Additional Dwelling Supplement | https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads | 2026-10-30 |
-| Revenue Scotland, LBTT non-residential property | https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property | 2026-10-30 |
-| SSI 2024/367 art. 2 (ADS 8%) | https://www.legislation.gov.uk/ssi/2024/367/article/2/made | 2026-10-30 |
-| LBTT (Scotland) Act 2013 s.29 | https://www.legislation.gov.uk/asp/2013/11/section/29 | 2026-10-30 |
-| Welsh Government, LTT rates and bands | https://www.gov.wales/land-transaction-tax-rates-and-bands | 2026-10-30 |
-| WSI 2024/1311 (LTT higher rates) | https://www.legislation.gov.uk/wsi/2024/1311/contents/made | 2026-10-30 |
-| LTT and Anti-avoidance of Devolved Taxes (Wales) Act 2017 s.44 | https://www.legislation.gov.uk/anaw/2017/1/section/44 | 2026-10-30 |
-| ITTOIA 2005 s.272A (finance cost restriction) | https://www.legislation.gov.uk/ukpga/2005/5/section/272A | 2026-10-30 |
-| ITTOIA 2005 s.274AA (tax reduction) | https://www.legislation.gov.uk/ukpga/2005/5/section/274AA | 2026-10-30 |
-| Finance Act 2026 s.2 (2026/27 rates) | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-10-30 |
-| Finance Act 2026 s.7 (2027/28 property rates) | https://www.legislation.gov.uk/ukpga/2026/11/section/7 | 2026-10-30 |
-| GOV.UK, Tax-free allowances on property and trading income | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income | 2026-10-30 |
-| TCGA 1992 s.1H (CGT rates) | https://www.legislation.gov.uk/ukpga/1992/12/section/1H | 2026-10-30 |
-| GOV.UK, Capital Gains Tax rates | https://www.gov.uk/capital-gains-tax/rates | 2026-10-30 |
-| Finance Act 2019 Sch 2 para 3 (60-day return) | https://www.legislation.gov.uk/ukpga/2019/1/schedule/2/paragraph/3 | 2026-10-30 |
-| GOV.UK, Report and pay CGT on UK property | https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020 | 2026-10-30 |
-| Finance Act 2009 Sch 55 (late return penalties) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-30 |
+| Source | What was read | URL | Read on |
+| --- | --- | --- | --- |
+| Finance Act 2003 s.55 (SDLT Tables A and B) | Read for SDLT Tables A and B | https://www.legislation.gov.uk/ukpga/2003/14/section/55 | 2026-11-14 |
+| Finance Act 2003 Sch 4ZA para 1 (higher rates) | Read for higher rates | https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/1 | 2026-11-14 |
+| Finance Act 2003 Sch 6ZA (first-time buyer relief) | Read for first-time buyer relief | https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA | 2026-11-14 |
+| Finance Act 2003 s.75ZA (2% surcharge) | Read for 2% surcharge | https://www.legislation.gov.uk/ukpga/2003/14/section/75ZA | 2026-11-14 |
+| Finance Act 2003 Sch 9A (non-resident test) | Read for non-resident test | https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A | 2026-11-14 |
+| Finance Act 2003 Sch 4A para 1 (17% rate) | Read for 17% rate | https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A/paragraph/1 | 2026-11-14 |
+| Finance Act 2003 s.76 (return within 14 days) | Read for return within 14 days | https://www.legislation.gov.uk/ukpga/2003/14/section/76 | 2026-11-14 |
+| Finance Act 2003 s.87 (interest) | Read for interest | https://www.legislation.gov.uk/ukpga/2003/14/section/87 | 2026-11-14 |
+| Finance Act 2003 Sch 10 Part 1 (late return penalties) | Read for late return penalties | https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1 | 2026-11-14 |
+| Finance Act 2003 Sch 10 Part 2 (records) | Read for records | https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/2 | 2026-11-14 |
+| GOV.UK, SDLT: residential property rates | Read for the rules this skill cites from this page | https://www.gov.uk/stamp-duty-land-tax/residential-property-rates | 2026-11-14 |
+| GOV.UK, SDLT: non-residential and mixed rates | Read for the rules this skill cites from this page | https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates | 2026-11-14 |
+| GOV.UK, SDLT: buying an additional residential property | Read for the rules this skill cites from this page | https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property | 2026-11-14 |
+| GOV.UK, Rates of SDLT for non-UK residents | Read for the rules this skill cites from this page | https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents | 2026-11-14 |
+| GOV.UK, SDLT: corporate bodies | Read for the rules this skill cites from this page | https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies | 2026-11-14 |
+| GOV.UK, Stamp Duty Land Tax overview | Read for the rules this skill cites from this page | https://www.gov.uk/stamp-duty-land-tax | 2026-11-14 |
+| GOV.UK, Penalties and interest on a late SDLT return | Read for the rules this skill cites from this page | https://www.gov.uk/guidance/penalties-and-interest-on-a-late-stamp-duty-land-tax-return | 2026-11-14 |
+| HMRC SDLT Manual SDLTM29901 (abolition of MDR) | Read for abolition of MDR | https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29901 | 2026-11-14 |
+| Revenue Scotland, LBTT residential property | Read for the rules this skill cites from this page | https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property | 2026-11-14 |
+| Revenue Scotland, Additional Dwelling Supplement | Read for the rules this skill cites from this page | https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads | 2026-11-14 |
+| Revenue Scotland, LBTT non-residential property | Read for the rules this skill cites from this page | https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property | 2026-11-14 |
+| SSI 2024/367 art. 2 (ADS 8%) | Read for ADS 8% | https://www.legislation.gov.uk/ssi/2024/367/article/2/made | 2026-11-14 |
+| LBTT (Scotland) Act 2013 s.29 | Read for Scotland) Act 2013 s.29 | https://www.legislation.gov.uk/asp/2013/11/section/29 | 2026-11-14 |
+| Welsh Government, LTT rates and bands | Read for the rules this skill cites from this page | https://www.gov.wales/land-transaction-tax-rates-and-bands | 2026-11-14 |
+| WSI 2024/1311 (LTT higher rates) | Read for LTT higher rates | https://www.legislation.gov.uk/wsi/2024/1311/contents/made | 2026-11-14 |
+| LTT and Anti-avoidance of Devolved Taxes (Wales) Act 2017 s.44 | Read for Wales) Act 2017 s.44 | https://www.legislation.gov.uk/anaw/2017/1/section/44 | 2026-11-14 |
+| ITTOIA 2005 s.272A (finance cost restriction) | Read for finance cost restriction | https://www.legislation.gov.uk/ukpga/2005/5/section/272A | 2026-11-14 |
+| ITTOIA 2005 s.274AA (tax reduction) | Read for tax reduction | https://www.legislation.gov.uk/ukpga/2005/5/section/274AA | 2026-11-14 |
+| Finance Act 2026 s.2 (2026/27 rates) | Read for 2026/27 rates | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-11-14 |
+| Finance Act 2026 s.7 (2027/28 property rates) | Read for 2027/28 property rates | https://www.legislation.gov.uk/ukpga/2026/11/section/7 | 2026-11-14 |
+| GOV.UK, Tax-free allowances on property and trading income | Read for the rules this skill cites from this page | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income | 2026-11-14 |
+| TCGA 1992 s.1H (CGT rates) | Read for CGT rates | https://www.legislation.gov.uk/ukpga/1992/12/section/1H | 2026-11-14 |
+| GOV.UK, Capital Gains Tax rates | Read for the rules this skill cites from this page | https://www.gov.uk/capital-gains-tax/rates | 2026-11-14 |
+| Finance Act 2019 Sch 2 para 3 (60-day return) | Read for 60-day return | https://www.legislation.gov.uk/ukpga/2019/1/schedule/2/paragraph/3 | 2026-11-14 |
+| GOV.UK, Report and pay CGT on UK property | Read for the rules this skill cites from this page | https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020 | 2026-11-14 |
+| Finance Act 2009 Sch 55 (late return penalties) | Read for late return penalties | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-11-14 |
+| ITTOIA 2005 s.274A (tax reduction for finance costs) | Read for the tax reduction for individuals' finance costs | https://www.legislation.gov.uk/ukpga/2005/5/section/274A | 2026-11-14 |
+| GOV.UK, Changes to tax relief for residential landlords | Read for how the 20% finance cost reduction is worked out, with case studies | https://www.gov.uk/guidance/changes-to-tax-relief-for-residential-landlords-how-its-worked-out-including-case-studies | 2026-11-14 |
+| GOV.UK, Income Tax rates | Read for the 2026/27 Personal Allowance, bands and rates | https://www.gov.uk/income-tax-rates | 2026-11-14 |
+| GOV.UK, Rent a Room Scheme | Read for the GBP 7,500 threshold and GBP 3,750 if shared | https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme | 2026-11-14 |
+| GOV.UK, Abolition of the furnished holiday lettings tax regime | Read for the 6 April 2025 operative date | https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition/abolition-of-the-furnished-holiday-lettings-tax-regime | 2026-11-14 |
+| HM Treasury, Changes to tax rates for property, savings and dividend income | Read for the 2027/28 property rates policy | https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income | 2026-11-14 |
+| GOV.UK, Self Assessment deadlines | Read for 31 October 2026 and 31 January 2027 | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-11-14 |
+| GOV.UK, Making Tax Digital for Income Tax, if and when | Read for the GBP 50,000, GBP 30,000 and GBP 20,000 thresholds and start dates | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-11-14 |
+| HMRC interest rates for late and early payments | Read for 7.75% from 9 January 2026 and 8.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-14 |
 
-Not yet confirmed: the day SDLT late-payment interest starts (FA 2003 s.87(1) says 30 days after the relevant date, while HMRC's penalties page says the day after the 14-day deadline, so the skill says only that interest is charged); HMRC's late payment interest rate in force on 30 October 2026; whether Wales has any first-time buyer relief, and how Wales now treats multiple dwellings (WSI 2025/119 modifies its relief; not read); LBTT and LTT penalties and interest.
+Not yet confirmed: the day SDLT late-payment interest starts (FA 2003 s.87(1) says 30 days after the relevant date, while HMRC's penalties page says the day after the 14-day deadline, so the skill says only that interest is charged); whether Wales has any first-time buyer relief, and how Wales now treats multiple dwellings (WSI 2025/119 modifies its relief; not read); LBTT and LTT penalties and interest; whether the Scottish and Welsh property rates for 2027/28 follow the same figures.
