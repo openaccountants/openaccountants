@@ -1,58 +1,108 @@
 ---
 name: vu-vat-gst
-description: "Vanuatu VAT rates, registration, returns and import charges, checked in November 2026 against legislation and Customs guidance. Pending local-accountant review."
+description: "Vanuatu VAT, tax year 2026: 15% standard rate and 0% Schedule 3 supplies, exempt supplies, the VT 4 million registration test and 21-day application, monthly and quarterly periods, returns by the 27th (5 January for November), accounting basis, import VAT base, from the VAT Act [Cap 247] and DCIR."
+version: 1.3
 jurisdiction: VU
-category: international
 tax_year: 2026
-last_updated: 2026-11-11
-version: 1.2
-review_status: pending_review
-tier: 2
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
+type: computation
 ---
 
 # Vanuatu VAT / GST
 
-## Rates and scope
+> **General reference only.** Source-cited draft, not reviewed by an accountant. Do not use it to file or take a position without professional review.
 
-The standard rate is 15%. Section 10 sets out the charge on domestic supplies and imports. Section 11(2) applies 0% to supplies in Schedule 3 made in Vanuatu by a registered person. These rules appear in the 2020 consolidation. The Department of Customs and Inland Revenue (DCIR) still showed 15% when checked on 11 November 2026. [Value Added Tax Act, ss 10–11 and Sch 3](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [DCIR VAT guidance](https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html)
+## Who this applies to
 
-Schedule 3 covers exports that meet its conditions, goods situated outside Vanuatu at supply, specified international transport and services physically performed abroad. A transfer of a taxable activity or part of one as a going concern qualifies under paragraph 9 where the recipient is registered and both parties agree in writing that it is a going concern. [Value Added Tax Act, Sch 3 paras 1–4 and 9](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf)
+Anyone carrying on a taxable activity in Vanuatu and every importer. VAT is administered by the Department of Customs and Inland Revenue (DCIR) under the Value Added Tax Act [Cap 247] (2020 consolidation) and the Tax Administration Act No. 37 of 2018. DCIR's guide notes that activities carried on by international companies, employment and exempt-supply activities are not taxable activities.
 
-For services performed for a person outside Vanuatu under Schedule 3 paragraph 5, check the recipient's statutory non-resident status and the fixed place of business condition. The provision excludes services directly connected with tangible property in Vanuatu and services received in Vanuatu by another person who is unregistered. From 22 July 2021, use the Tax Administration Act's definitions when applying the amended Schedule 3. [Value Added Tax Act, Sch 3 para 5](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [VAT Amendment Act No. 13 of 2021, s 2 and Sch items 1–2 and 10](https://doft.gov.vu/images/2021/TaxPolicy/Tax/Value_Added_Tax_Amendment_Act_No_13_of_2021.pdf), [Tax Administration Amendment Act No. 14 of 2021, Sch items 2–3](https://doft.gov.vu/images/2021/TaxPolicy/Tax/Tax_Administration_Amendment_Act_No_14_of_2021.pdf)
+## Rates, bands and thresholds
 
-Exemptions include the financial services specified in Schedule 1, hire of accommodation in a residential dwelling, qualifying leasehold rent, education by a defined educational institution and qualifying donated goods or services supplied by a non-profit body. The exemption for certain property sales requires at least 5 years of exclusive use for the specified exempt rentals. From 22 July 2021, the Tax Administration Act definition applies to non-profit bodies. [Value Added Tax Act, Sch 1 paras 1–6 and 10](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [VAT Amendment Act No. 13 of 2021, s 2 and Sch item 3](https://doft.gov.vu/images/2021/TaxPolicy/Tax/Value_Added_Tax_Amendment_Act_No_13_of_2021.pdf), [Tax Administration Amendment Act No. 14 of 2021, Sch item 3](https://doft.gov.vu/images/2021/TaxPolicy/Tax/Tax_Administration_Amendment_Act_No_14_of_2021.pdf)
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Standard rate | 15% (s 11(1)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
+| Zero rate | 0% on Schedule 3 supplies made in Vanuatu by a registered person (s 11(2)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
+| Compulsory registration | Taxable supplies in any 12-month period exceed, or are expected to exceed, VT4 million | 2026 | https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html |
+| Quarterly (Category B) periods, on written application | Taxable supplies less than VT8 million a year | 2026 | https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html |
+| Application to register once liable | Within 21 days (s 12(3)) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
+| Interest the Director pays on a late refund | 15% per annum after 15 working days (s 42) | 2026 | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf |
 
-## Registration, returns and payment
+The Act tests registration at the end of each month over the past twelve months and at the start of each month over the coming twelve (s 12(1)), disregarding exempt supplies and supplies caused only by winding down or replacing capital assets (s 12(2)). For Category B the Act's words are "has not ... exceeded eight million vatu", so exactly VT 8 million still qualifies (s 15(3)); the Minister may change the limit by order.
 
-- **Compulsory registration.** Test supplies made in Vanuatu in the course of taxable activities at the end of each month over the preceding 12 months and at the start of each month over the coming 12 months. Register if past supplies exceeded VUV 4 million or there are reasonable grounds to expect future supplies to exceed that amount. Exclude exempt supplies and apply the statutory exceptions for certain disposals. Apply in the approved form within 21 days of becoming liable. A person carrying on or intending to carry on a taxable activity can also apply voluntarily. [Value Added Tax Act, s 12](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [DCIR VAT guidance, checked 11 November 2026](https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html)
-- **Taxable periods.** Category A is monthly. The Director can approve a written application for 3-month Category B periods where taxable supplies have not exceeded VUV 8 million over the relevant 12-month windows. Exactly VUV 8 million meets that amount test. The Act allows a different limit by ministerial order and disregards certain disposals. [Value Added Tax Act, s 15](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf)
-- **Ordinary filing and payment.** For a taxable period ending 30 November, file and pay by 5 January. For other periods, file and pay by the 27th of the following month. If that date is a non-working day, use the next working day. A creditor's sale of a registered debtor's goods under section 3(1) has a separate special-return rule in section 16(2). [Value Added Tax Act, ss 16 and 20](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf)
-- **Extensions.** An individual filing extension under Tax Administration Act section 11 leaves the original payment date in place. A filing extension the Director grants on their own initiative to all taxpayers or a class under section 11(7) also extends payment. [Tax Administration Act, s 11](https://vanuatucustoms.gov.vu/images/TAA/Tax_Administration_Act_No_37_of_2018.pdf)
-- **Accounting basis.** A registered person can elect the invoice basis or payments basis and must notify the Director in the approved form. The payments basis is the default if the person makes no election. [Value Added Tax Act, s 17](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf)
+## The base
 
-## Imports
+- **Domestic supplies.** VAT on the value of the supply (s 10, s 11(1)(a)).
+- **Imports.** VAT on the customs value, plus customs duty, plus excise, plus the cost of transport to Vanuatu and insurance for it (s 11(1)(b)). DCIR's no-excise clearance calculation takes the cost, insurance and freight value once and adds duty before applying 15%.
+- **Zero-rated (Sch 3).** Exports meeting the conditions, goods outside Vanuatu at supply, international transport, services physically performed outside Vanuatu, services to a non-resident outside Vanuatu (para 5: not services directly connected with Vanuatu land or goods, and not services received in Vanuatu by an unregistered person), supplies to approved educational institutions and aid projects, and a going concern sold to a registered person where both agree in writing (para 9). From 22 July 2021 the Tax Administration Act definitions apply to Schedule 3 (VAT Amendment Act No. 13 of 2021).
+- **Exempt (Sch 1).** Financial services, hire of accommodation in a residential dwelling, qualifying leasehold rent, education by an approved institution, donated goods and services sold by a non-profit body, and the sale of a property used for exempt residential rental for at least 5 years. No input credit on exempt supplies.
+- **Input credit.** Only against a valid tax invoice; a registered supplier must issue one within 28 days of a registered customer's request (DCIR guide).
 
-DCIR identifies customs duty, excise and VAT as separate charges. Use the applicable tariff classification and establish the value for duty under the Customs valuation rules. The 2020 VAT consolidation lists the customs duty value, payable duty and excise and the specified transport and insurance costs in the ordinary 15% import VAT base. The 2006 import duty consolidation includes freight and insurance in the transaction valuation where incurred by the buyer and outside the price. DCIR's no-excise clearance calculation uses the cost, insurance and freight value once, then adds duty before applying 15%. The statutory interaction and calculations involving excise remain to be verified. [Value Added Tax Act, ss 10–11](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [Import Duties Act, s 2 and Sch 2 cl 4](https://vanuatucustoms.gov.vu/images/legislations/Customs/Import_Duties/Import_DutiesConsolidationCAP_91.pdf), [DCIR cargo clearance, checked 11 November 2026](https://vanuatucustoms.gov.vu/index.php/customs/customs-revenue/customs-clearance)
+## Deadlines and filing
 
-Schedule 2 of the 2020 VAT consolidation refers to parts of the import duty tariff that Act No. 24 of 2023 repealed on 29 December 2023. That Act added a new Schedule 3 to the import duty law with separate duty, excise and VAT columns. Check the applicable concession and its VAT treatment for the date of entry. Individual tariff rates and exemption eligibility remain to be verified. [Value Added Tax Act, Sch 2](https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf), [Import Duties Amendment Act No. 24 of 2023, s 2 and Sch items 3–4](https://vanuatucustoms.gov.vu/images/Customs_Tariff/2024/IMPORT%20DUTIES%20CONSOLIDATION%20AMENDMENT%20ACT%20NO.%2024%20OF%202023.pdf)
+- **Periods.** Category A is monthly; Category B is three-monthly on written application (s 15).
+- **Returns and payment.** For a period ending 30 November, by 5 January; for any other period, by the 27th of the following month; a non-working day moves the date to the next working day (ss 16 and 20). A creditor selling a registered debtor's goods files a special return by the 27th (s 16(2)).
+- **Extensions.** An individual filing extension under Tax Administration Act s 11 leaves the payment date unchanged; a general extension the Director grants to all taxpayers or a class under s 11(7) also extends payment.
+- **Accounting basis.** Invoice or payments basis, elected in the approved form; with no election, the payments basis applies (s 17).
 
-<!-- openaccountants-cta-block -->
+## Penalties and interest
 
----
+DCIR's guide says late payment penalties are assessed; the amounts sit in the Tax Administration Act No. 37 of 2018 and were not read for this guide. The Director pays interest at 15% a year on a refund not made within 15 working days (s 42).
 
-## Talk to a verified accountant
+## Cross-border points
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+Imports bear VAT at the border on the duty-inclusive base above. Act No. 24 of 2023 repealed, from 29 December 2023, the parts of the import duty tariff that VAT Schedule 2 refers to, and added a new tariff schedule with separate duty, excise and VAT columns; check the concession and its VAT treatment for the entry date. Services to non-residents are zero-rated only within Schedule 3 para 5.
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+## Two worked examples that recompute
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+**1. Monthly return.** Standard-rated sales VT 1,000,000 (VAT exclusive); input VAT on valid tax invoices VT 60,000. Output VAT 150,000; payable VT 90,000 by the 27th of the next month (derived).
+
+```oa-check
+name: Vanuatu monthly VAT
+inputs:
+  sales: 1000000
+  input_vat: 60000
+steps:
+  - output_vat: sales * 0.15
+  - payable: output_vat - input_vat
+expected:
+  output_vat: 150000
+  payable: 90000
+```
+
+**2. Import, no excise.** Customs value including freight and insurance VT 2,000,000; customs duty VT 200,000. Import VAT is 15% of 2,200,000 = VT 330,000 (derived).
+
+```oa-check
+name: Vanuatu import VAT no excise
+inputs:
+  cif: 2000000
+  duty: 200000
+steps:
+  - base: cif + duty
+  - vat: base * 0.15
+expected:
+  base: 2200000
+  vat: 330000
+```
+
+## Ask the client first
+
+- Taxable supplies in the last 12 months and expected in the next 12?
+- Monthly or quarterly filer, and invoice or payments basis?
+- Any exports, services to non-residents, or a business sale?
+- Imports: tariff line, customs value, duty and excise?
+- Any residential rent, financial services or education supplies?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Value Added Tax Act [Cap 247], Consolidated Edition 2020, ss 10 to 17, 20, 42, Sch 1 and 3 (Read for rates, registration, periods and dates) | https://vanuatucustoms.gov.vu/images/Laws_Regulations/VAT/247_Value_Added_Tax_Consolidated_2020.pdf | 2026-11-14 |
+| DCIR, Introduction to VAT (Read for VT4 million, VT8 million, due dates, tax invoices) | https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/value-added-tax-vat/introduction.html | 2026-11-14 |
+| VAT Amendment Act No. 13 of 2021 (Read by Ryan Duguid for the 22 July 2021 Schedule 3 change) | https://doft.gov.vu/images/2021/TaxPolicy/Tax/Value_Added_Tax_Amendment_Act_No_13_of_2021.pdf | 2026-11-11 |
+| Tax Administration Act No. 37 of 2018, s 11 (Read by Ryan Duguid for extensions) | https://vanuatucustoms.gov.vu/images/TAA/Tax_Administration_Act_No_37_of_2018.pdf | 2026-11-11 |
+| Import Duties Amendment Act No. 24 of 2023 (Read by Ryan Duguid for the new tariff schedule) | https://vanuatucustoms.gov.vu/images/Customs_Tariff/2024/IMPORT%20DUTIES%20CONSOLIDATION%20AMENDMENT%20ACT%20NO.%2024%20OF%202023.pdf | 2026-11-11 |
+
+Not yet confirmed: late filing and payment penalty amounts under the Tax Administration Act; import VAT where excise also applies; individual tariff rates and concession eligibility after Act No. 24 of 2023; whether any order has changed the VT 8 million Category B limit.
