@@ -1,10 +1,10 @@
 ---
 name: ny-payroll
 description: New York employer payroll for 2026. State, New York City and Yonkers withholding (2026 NYS-50-T tables, supplemental rates 11.70% state, 4.25% city, 1.95975% Yonkers resident, 0.50% Yonkers nonresident), NYS-1 deposits under the $700 rule and the 3-day or 5-day rule, the quarterly NYS-45, unemployment insurance (2026 wage base $17,600, new employer total rate 4.1%, rated range 1.7% to 9.5%, 0.075% re-employment service fund), Paid Family Leave (0.432% to an annual cap of $411.91), disability benefits (one-half of one percent up to 60 cents a week), the general minimum wage ($17.00 New York City, Long Island and Westchester; $16.00 elsewhere) and Wage Theft Prevention Act notices. MCTMT figures live in ny-mctmt. Trigger on "New York payroll", "NYS-45", "NYS-1", "IT-2104", "NY unemployment insurance", "NY PFL", "NY disability", "Wage Theft Prevention Act". New York only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -48,7 +48,7 @@ type: situation-rules
 | NYS-1 needed after the payroll that brings accumulated withholding to | USD 700 or more | [Tax Department, withholding due dates](https://www.tax.ny.gov/bus/wt/duedates.htm) |
 | 3-business-day filer if withholding in the calendar year before the previous year was | USD 15,000 or more (less: 5 business days) | [Tax Department, withholding due dates](https://www.tax.ny.gov/bus/wt/duedates.htm) |
 | UI taxable wage base per employee | USD 17,600 | [NYS-45-I (1/26)](https://www.tax.ny.gov/pdf/current_forms/wt/nys45i.pdf) |
-| UI new employer total rate (normal 3.4% plus subsidiary 0.625%, plus 0.075% re-employment service fund) | 4.1% | [DOL, UI rate information](https://dol.ny.gov/unemployment-insurance-rate-information) |
+| UI new employer total rate (normal rate capped at 3.4% per NYS-50, plus subsidiary 0.625% (derived: 4.1% less 3.4% less 0.075%), plus 0.075% re-employment service fund) | 4.1% | [DOL, UI rate information](https://dol.ny.gov/unemployment-insurance-rate-information); [NYS-50](https://www.tax.ny.gov/forms/publications/wt/nys50.htm) |
 | UI total rate range for rated employers | 1.7% to 9.5% | [DOL, UI rate information](https://dol.ny.gov/unemployment-insurance-rate-information) |
 | New employer normal rate cap | 3.4% | [NYS-50](https://www.tax.ny.gov/forms/publications/wt/nys50.htm) |
 | Re-employment service fund, on taxable wages | 0.075% | [NYS-45-I (1/26)](https://www.tax.ny.gov/pdf/current_forms/wt/nys45i.pdf) |

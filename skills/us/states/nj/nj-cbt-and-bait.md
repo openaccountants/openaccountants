@@ -1,7 +1,7 @@
 ---
 name: nj-cbt-and-bait
 description: New Jersey Corporation Business Tax (CBT) and the elective Pass-Through Business Alternative Income Tax (BAIT, also called PTE) for tax year 2026. Covers nexus (more than 100,000 dollars of receipts or 200 transactions), mandatory unitary combined reporting, entire net income and the dividend exclusion, single sales factor allocation, PNOL and NOL with the 80% limit, the 6.5%, 7.5% and 9% rates on the whole base, the minimum tax tables, the 2.5% Corporate Transit Fee above 10 million dollars (periods beginning 2024 to 2028), CBT-150 estimates and extensions, and the BAIT election, brackets (5.675%, 6.52%, 10.9%), estimates and the owner's refundable credit. Trigger on "New Jersey corporate tax", "NJ CBT", "CBT-100", "CBT-100U", "CBT-100S", "Corporate Transit Fee", "NJ BAIT", "NJ PTE", "PTE-100", "New Jersey pass-through entity tax".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-NJ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -159,13 +159,13 @@ The 2025 instructions are the latest published. The statutory rates, the minimum
 
 #### BAIT ([2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf); [2025 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte100instr.pdf); [2021 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2021/pte100instr.pdf))
 
-The brackets are the same for 2025 and 2026. Tax = distributive proceeds × rate − subtraction.
+The brackets are the same for 2025 and 2026. Tax = distributive proceeds × rate − subtraction. Rates are written as decimals, the way the PTE-100 instructions print them (.05675 = 5.675%).
 
 | Distributive proceeds (line 1) | Rate | Subtract | Source |
 |---|---|---|---|
-| Over $0, not over $250,000 | 5.675% | $0 | [2026 PTE-100 instructions, tax computation](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf) |
-| Over $250,000, not over $1,000,000 | 6.52% | $2,112.50 | same |
-| $1,000,000 and over | 10.9% | $45,912.50 | same |
+| Over $0, not over $250,000 | .05675 | $0 | [2026 PTE-100 instructions, tax computation](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf) |
+| Over $250,000, not over $1,000,000 | .0652 | $2,112.50 | same |
+| $1,000,000 and over | .109 | $45,912.50 | same |
 
 - The subtraction amounts make the table work like marginal brackets: 5.675% on the first $250,000, 6.52% on the next $750,000, and 10.9% above $1,000,000.
 - **Before 2022** (2020 and 2021) there were four bands: 9.12% from $1,000,000 to $5,000,000 and 10.9% only above $5,000,000. Do not use the 9.12% band for 2022 or later.
@@ -176,13 +176,13 @@ The brackets are the same for 2025 and 2026. Tax = distributive proceeds × rate
 | Situation | Rule | Source |
 |---|---|---|
 | Tax base exactly $100,000 | 7.5% on all of it; 9% needs **more than** $100,000 | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
-| Tax base $100,001 | 9% on the whole base: the rates are not marginal | same |
-| Taxable net income exactly $10,000,000 | No Corporate Transit Fee: it must be **over** $10 million | [Transit Fee notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml) |
-| Taxable net income $10,000,001 | Fee is 2.5% of the whole amount | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
-| Allocated income $14,000,000, NOLs bring taxable net income to $8,000,000 | No fee: the test is after NOLs | same |
+| Tax base $100,001 (derived: example input) | 9% on the whole base: the rates are not marginal | same |
+| Taxable net income exactly $10,000,000 (derived: example input at the USD 10 million line) | No Corporate Transit Fee: it must be **over** $10 million | [Transit Fee notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml) |
+| Taxable net income $10,000,001 (derived: example input) | Fee is 2.5% of the whole amount | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
+| Allocated income $14,000,000, NOLs bring taxable net income to $8,000,000 (derived: example inputs) | No fee: the test is after NOLs | same |
 | Remote seller with $100,000 of New Jersey receipts and 150 transactions | No bright-line nexus: neither test is met (receipts must be **more than** $100,000, **or** transactions 200 or more) | [TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf) |
 | Prior-year CBT liability exactly $1,500 | Installments not required; may instead pay 50% of that liability with the prior-year return | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
-| Extension paid at 85% of the final tax | Extension denied retroactively; penalties and interest from the original due date | [CBT-200-T instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt-200-t.pdf) |
+| Extension paid at 85% of the final tax (derived: example input below the 90% the CBT-200-T requires) | Extension denied retroactively; penalties and interest from the original due date | [CBT-200-T instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt-200-t.pdf) |
 | BAIT election attempted with the extended PTE-100 | Too late: the original due date is the deadline | [2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf) |
 | Estimated BAIT paid before the election is filed | Not accepted: elect first | [Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml) |
 | Partnership with an overall loss but some profitable partners | No BAIT; cannot pay for some partners only; still file PTE-100 | [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml) |
