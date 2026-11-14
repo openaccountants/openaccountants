@@ -1,495 +1,144 @@
 ---
 name: panama-social-contributions
-description: Use this skill whenever asked about Panama social security and payroll contributions (Caja de Seguro Social / CSS) for employees, employers, or self-employed independent professionals. Trigger on phrases like "Panama CSS contributions", "Caja de Seguro Social", "cuota obrero-patronal", "seguro educativo", "how much social security do I pay in Panama", "Panama payroll taxes", "Law 462 / Ley 462 CSS reform", "Panama employer contribution rate", "self-employed CSS Panama", "IVM contribution", "Panama planilla", or any question about Panama CSS, educational insurance tax, or payroll obligations. Also trigger when classifying bank-statement transactions that relate to CSS debits, seguro educativo, planilla payments, or DGI tax payments from Banco General, Banistmo, BAC, or other Panamanian banks. Also trigger when Panama personal income tax (Impuesto sobre la Renta) withholding or the territorial-income rules are relevant. This skill covers employee/employer CSS rates, the Law 462 staggered employer-rate increase, educational insurance tax, self-employed IVM/health rates, the (lack of) contribution ceiling, late-payment surcharges, interaction with territorial income tax, the 13th month, minimum wage context, bank-statement classification patterns, and edge cases. ALWAYS read this skill before touching any Panama CSS or payroll work.
-version: 0.1
+description: >
+  Use this skill for Panama social security contributions to the Caja de Seguro Social
+  (CSS) in 2026. It gives the rates of Ley 51 of 2005 as reformed by Ley 462 of 2025
+  (consolidated text, Gaceta Oficial 30284-B of 22 May 2025): employee 9.75% of salary,
+  employer 13.25% until 28 February 2027 (14.25% to February 2029, 15.25% from March
+  2029), the special contribution on each of the three 13th-month instalments (employer
+  10.75%, employee 7.25%), independent workers (9.36% for IVM, 8.5% voluntary health on
+  at least B/.800 a month), pensioners 6.75%, and the late payment surcharges (2%, 5%,
+  10%, 15% plus 1% a month interest). Trigger phrases include CSS Panama, cuota obrero
+  patronal, Ley 462, decimotercer mes cuota, trabajador independiente CSS and planilla CSS.
+version: "1.0"
 jurisdiction: PA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
+type: computation
 ---
 
-# Panama Social Security Contributions (CSS) -- Payroll & Self-Employed
+# Panama social security contributions (CSS), 2026
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed by a Panamanian accountant. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Panama.
 
-**Quick reference field table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Panama (Republic of Panama) |
-| Currency | US Dollar (USD); local unit "Balboa" (B/.) pegged 1:1 to USD — figures interchangeable |
-| Primary Legislation | Ley 51 (CSS organic law); **Ley 462 of 18 Mar 2025** (CSS reform) |
-| Supporting Legislation | Educational Insurance Tax (Seguro Educativo); Código Fiscal (Impuesto sobre la Renta) |
-| Social-insurance authority | Caja de Seguro Social (CSS) |
-| Tax authority | Dirección General de Ingresos (DGI), Ministerio de Economía y Finanzas (MEF) |
-| Minimum-wage authority | Ministerio de Trabajo y Desarrollo Laboral (MITRADEL) |
-| Employee CSS rate | **9.75%** of gross (unchanged by Ley 462) [PwC; Ley 462] |
-| Employee educational insurance | **1.25%** of gross [PwC] |
-| Employer CSS rate (1 Apr 2025) | **13.25%** of gross [Ley 462; MEF] |
-| Employer educational insurance | **1.50%** of gross [PwC] |
-| Contribution ceiling | **None** — no maximum taxable amount for CSS or educational insurance [PwC] |
-| Self-employed IVM (mandatory) | **9.36%** of declared income [Ley 462; Morgan & Morgan] |
-| Personal income tax | Territorial — Panama-source income only; 0% / 15% / 25% bands [PwC] |
-| 13th month (Décimo) | Mandatory; paid 15 Apr, 15 Aug, 15 Dec [Código de Trabajo] |
-| Validation date | Pending |
+Employers, employees, independent workers and pensioners covered by the Caja de Seguro Social in 2026, under Ley 51 of 2005 as reformed by Ley 462 of 18 March 2025 (Gaceta Oficial 30238; consolidated text in Gaceta Oficial 30284-B of 22 May 2025). Income tax withholding is in [panama-payroll](panama-payroll.md).
 
-**Cuota obrero-patronal overview (current period, from 1 Apr 2025)**
+Refusal catalogue:
+- **R-PA-CSS-1 Worker status unknown.** Employees and independents are entirely different regimes; stop until the status is known.
+- **R-PA-CSS-2 Professional risk premium.** The riesgos profesionales premium depends on the employer's risk class; refer.
+- **R-PA-CSS-3 Educational insurance on salaries** (seguro educativo, employee and employer): rates not in this law and not confirmed in this pass; refer.
+- Arrears, payment agreements, audits of planillas (CSS may review planillas at any time, art. 3-A): refer.
 
-| Component | Employee | Employer |
-| --- | --- | --- |
-| CSS social security (Seguro Social) | 9.75% | 13.25% [Ley 462; MEF] |
-| Educational Insurance Tax (Seguro Educativo) | 1.25% | 1.50% [PwC] |
-| **Total** | **11.00%** | **14.75%** |
+## Rates, bands and thresholds
 
-*Arithmetic check: employee 9.75 + 1.25 = 11.00%. Employer 13.25 + 1.50 = 14.75%. Combined obrero-patronal load = 11.00 + 14.75 = 25.75% of gross, with no ceiling.*
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown payroll period (which Ley 462 employer rate applies) | Use the rate in force for the actual payroll month; for current work use 13.25% employer CSS |
-| Unknown worker status (employee vs independent) | Ask — do NOT assume; employee and self-employed regimes differ entirely |
-| Unknown whether self-employed opted into health coverage | Apply mandatory IVM 9.36% only; flag health 8.5% as optional |
-| Décimo (13th month) CSS treatment | STOP — do not compute CSS on the décimo without confirmation [RESEARCH GAP — reviewer to confirm] |
-| Income source unclear (Panama-source vs foreign) | Treat as foreign-source EXEMPT only with evidence; otherwise flag for reviewer |
-| Late-payment surcharge schedule | Flag for reviewer — verify live CSS Reglamento; relief periods may suspend surcharges |
-
-## Section 2 -- Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** -- worker status (employee vs self-employed independent) and gross monthly remuneration. Without worker status, STOP. The employee and self-employed CSS regimes are entirely different.
-
-**Recommended** -- the payroll month/period (because the employer CSS rate changes under Ley 462 over time), and whether a self-employed worker has opted into voluntary health coverage.
-
-**Ideal** -- the CSS planilla (payroll filing), bank statements showing CSS and seguro educativo debits, and (for income tax) the RUC registration and source classification of income (Panama-source vs foreign-source).
-
-### Refusal catalogue
-
-- **R-PA-CSS-1 -- Worker status unknown** — Trigger: not stated whether the person is an employee or a self-employed independent. Message: "Worker status is mandatory. Employees pay 9.75% CSS + 1.25% educational insurance with a matching employer contribution; self-employed independents pay 9.36% IVM (mandatory) with optional 8.5% health. Cannot proceed without confirming status."
-- **R-PA-CSS-2 -- Décimo Tercer Mes (13th month) CSS treatment** — Trigger: request to compute CSS on the 13th-month payment. Message: "The CSS/withholding treatment of the décimo differs from ordinary wages and was not confirmed from a single authoritative source in research [RESEARCH GAP — reviewer to confirm]. Do not compute CSS on the décimo. Escalate to a Panamanian accountant."
-- **R-PA-CSS-3 -- Late-payment surcharges / mora** — Trigger: delinquent employer contributions, recargos, or mora quantification. Message: "CSS surcharge escalation (2/5/10/15%) and 1%/month interest under Ley 51 come from secondary summaries; relief periods have at times suspended surcharges. Do not quantify mora without the live CSS Reglamento General de Ingresos and a CSS statement. Non-payment can be a criminal offense. Escalate immediately."
-- **R-PA-CSS-4 -- Income-tax penalties / return form** — Trigger: request for the exact income-tax return form number or late-filing/late-payment income-tax penalties. Message: "The specific Declaración Jurada de Rentas form number and income-tax penalty percentages were not confirmed from DGI in research [RESEARCH GAP — reviewer to confirm]. Source these from dgi.mef.gob.pa before advising."
-- **R-PA-CSS-5 -- Future-dated employer rates** — Trigger: a computation for a payroll period on/after 1 Mar 2027 or 1 Mar 2029. Message: "Employer CSS rates of 14.25% (from 1 Mar 2027) and 15.25% (from 1 Mar 2029) are scheduled future rates under Ley 462. Confirm no further legislative change before applying. Flag for reviewer."
-
-## Section 3 -- Payment pattern library
-
-This is the deterministic pre-classifier for bank-statement transactions related to Panama social insurance and payroll tax. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. CSS and educational-insurance payments EXCLUDE from any ITBMS (VAT) return — they are statutory payroll/personal obligations, not taxable supplies.
-
-### 3.1 CSS contribution debits (cuota obrero-patronal)
-
-**CSS contribution debits table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CSS, CAJA DE SEGURO SOCIAL | EXCLUDE -- CSS payment | Monthly obrero-patronal contribution |
-| SEGURO SOCIAL, SEG SOCIAL | EXCLUDE -- CSS payment | Same |
-| CUOTA OBRERO PATRONAL, OBRERO-PATRONAL | EXCLUDE -- CSS payment | Combined employee+employer remittance |
-| PLANILLA CSS, PLANILLA | EXCLUDE -- CSS payroll filing payment | Monthly payroll remittance |
-| IVM | EXCLUDE -- CSS (self-employed IVM) | Independent-worker mandatory contribution |
-
-### 3.2 Educational insurance tax (Seguro Educativo)
-
-**Educational insurance tax table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SEGURO EDUCATIVO, SEG EDUCATIVO | EXCLUDE -- educational insurance tax | 1.25% employee / 1.50% employer |
-| EDUCATIVO | EXCLUDE -- educational insurance tax | Abbreviated reference |
-
-### 3.3 DGI / income-tax payments (NOT CSS -- do not confuse)
-
-**DGI / income-tax payments table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DGI, DIRECCION GENERAL DE INGRESOS | EXCLUDE -- income tax, not CSS | DGI tax remittance |
-| IMPUESTO SOBRE LA RENTA, ISR | EXCLUDE -- income tax | Not social security |
-| ITBMS | EXCLUDE -- VAT (ITBMS), not CSS | Indirect tax, separate return |
-| RETENCION, RETENCIÓN | EXCLUDE -- withholding (likely income tax) | Confirm — not CSS |
-
-### 3.4 Salary and payroll (exclude from CSS classification)
-
-**Salary and payroll table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARIO, SUELDO, PLANILLA NETA (outgoing) | EXCLUDE -- payroll expense | Net wage, not a CSS payment |
-| DECIMO, DÉCIMO, DECIMO TERCER MES | EXCLUDE -- 13th-month payment | Statutory; CSS treatment flagged separately |
-| SALARIO, SUELDO (incoming) | EXCLUDE -- employment income received | Not a CSS payment |
-
-### 3.5 Pension payments (received -- not CSS contributions)
-
-**Pension payments table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PENSION CSS, JUBILACION | EXCLUDE -- pension income received | Not a contribution payment |
-| PENSION VEJEZ, IVM PENSION | EXCLUDE -- pension income | Not a contribution |
-
-## Section 4 -- Worked examples
-
-Six bank-statement classifications and payroll computations for a hypothetical Panama City employer and a self-employed consultant. All figures in USD/Balboa (1:1).
-
-### Example 1 -- Standard employee CSS + educational insurance (employer remittance)
-
-**Scenario:** Employee gross salary B/.1,500.00/month, payroll period May 2025 (employer rate 13.25%).
-
-**Computation:**
-- Employee CSS 9.75% × 1,500 = **146.25**
-- Employee educational 1.25% × 1,500 = **18.75**
-- Employee total withheld = 146.25 + 18.75 = **165.00**
-- Employer CSS 13.25% × 1,500 = **198.75**
-- Employer educational 1.50% × 1,500 = **22.50**
-- Employer total = 198.75 + 22.50 = **221.25**
-- Total remitted to CSS/DGI for this employee = 165.00 + 221.25 = **386.25**
-
-**Input line:**
-`31.05.2025 ; CAJA DE SEGURO SOCIAL ; DEBITO ; PLANILLA MAYO ; -386.25 ; USD`
-
-**Classification:** EXCLUDE -- CSS + educational insurance remittance. No ceiling applies.
-
-### Example 2 -- Higher-salary employee (no ceiling)
-
-**Scenario:** Employee gross salary B/.2,000.00/month, payroll period 2025.
-
-**Computation:**
-- Employee CSS 9.75% × 2,000 = **195.00**; educational 1.25% × 2,000 = **25.00**; employee total = **220.00**
-- Employer CSS 13.25% × 2,000 = **265.00**; educational 1.50% × 2,000 = **30.00**; employer total = **295.00**
-
-Because Panama has **no contribution ceiling** [PwC], the same percentages apply no matter how high the salary rises — there is no cap on the taxable base.
-
-**Classification:** EXCLUDE -- CSS payroll. Note the absence of a ceiling distinguishes Panama from capped systems.
-
-### Example 3 -- Self-employed independent, mandatory IVM only
-
-**Scenario:** Independent consultant declares B/.3,000.00/month, opts NOT to take voluntary health coverage. Affiliation mandatory under Ley 462.
-
-**Computation:**
-- IVM 9.36% × 3,000 = **280.80/month** (mandatory) [Ley 462; Morgan & Morgan]
-- Health & maternity 8.5% — NOT elected (voluntary; requires min declared income B/.800)
-
-**Input line:**
-`30.06.2025 ; CAJA DE SEGURO SOCIAL ; DEBITO ; IVM INDEPENDIENTE ; -280.80 ; USD`
-
-**Classification:** EXCLUDE -- self-employed CSS (IVM). Health 8.5% not applied (voluntary, not elected).
-
-### Example 4 -- Self-employed independent, with voluntary health coverage
-
-**Scenario:** Same consultant, declares B/.3,000.00/month, ELECTS voluntary health & maternity coverage.
-
-**Computation:**
-- IVM 9.36% × 3,000 = **280.80**
-- Health & maternity 8.5% × 3,000 = **255.00**
-- Total self-employed CSS = 280.80 + 255.00 = **535.80/month**
-
-**Classification:** EXCLUDE -- self-employed CSS (IVM + voluntary health). Confirm the declared-income base on which the worker elected to contribute.
-
-### Example 5 -- DGI income-tax payment (NOT CSS)
-
-**Scenario:** Self-employed taxpayer pays estimated income tax (3 installments: 30 Jun, 30 Sep, 31 Dec). Panama-source net income B/.30,000/year.
-
-**Computation (annual PIT, 2025 bands):**
-- Band 0–11,000: 0
-- Band 11,000–50,000 at 15%: (30,000 − 11,000) × 15% = 19,000 × 15% = **2,850.00** [PwC]
-- One estimated installment ≈ 2,850 / 3 = **950.00**
-
-**Input line:**
-`30.06.2025 ; DIRECCION GENERAL DE INGRESOS ; DEBITO ; ISR ESTIMADO ; -950.00 ; USD`
-
-**Classification:** EXCLUDE -- income tax (DGI), NOT CSS. Income tax is territorial and separate from social insurance.
-
-### Example 6 -- Ambiguous CSS debit (possible mora / surcharge)
-
-**Input line:**
-`15.09.2025 ; CAJA DE SEGURO SOCIAL ; DEBITO ; CONVENIO DE PAGO ; -1,250.00 ; USD`
-
-**Reasoning:**
-Matches "CAJA DE SEGURO SOCIAL" (3.1) but reference says "CONVENIO DE PAGO" (payment agreement for delinquent contributions). The amount may include surcharges (2/5/10/15%) and 1%/month interest under Ley 51 [La Estrella; CSS Reglamento — RESEARCH GAP, verify schedule]. Cannot separate principal from surcharge without a CSS statement.
-
-**Classification:** EXCLUDE from ITBMS. Flag for reviewer -- request CSS breakdown to split contribution principal from surcharge/interest. Non-payment can be a criminal offense under Ley 51.
-
-## Section 5 -- Tier 1 rules
-
-Apply these when data is clear and all required inputs are available.
-
-### Rule 1 -- Employee contribution formula
-
-- **Employee withholding formula** — Employee withholding = gross × (9.75% CSS + 1.25% educational) = gross × 11.00%. No ceiling on the base.  _([PwC; Ley 462])_
-
-### Rule 2 -- Employer contribution formula (Ley 462 staggered)
-
-- **Employer load formula** — Employer load = gross × (CSS rate for the period + 1.50% educational)
-
-**Employer CSS staggered schedule**
-
-| Period | Employer CSS | + Educational | = Employer total |
+| Contribution | Rate | Base and period | Source |
 | --- | --- | --- | --- |
-| 1 Apr 2025 – 28 Feb 2027 | 13.25% | 1.50% | **14.75%** [Ley 462; MEF] |
-| 1 Mar 2027 – 28 Feb 2029 | 14.25% | 1.50% | **15.75%** (future-dated) [Ley 462] |
-| From 1 Mar 2029 | 15.25% | 1.50% | **16.75%** (future-dated) [Ley 462] |
+| Employee (art. 96.1) | 9.75% | Salary | Gaceta Oficial 30284-B, Ley 51 consolidated (Procuraduria de la Administracion): http://gacetas.procuraduria-admon.gob.pa/30284-B_64831.pdf |
+| Employer (art. 96.2 a) | 13.25% | Salaries, from Ley 462 in force to 28 February 2027 | same |
+| Employer (art. 96.2 b) | 14.25% | 1 March 2027 to 28 February 2029 | same |
+| Employer (art. 96.2 c) | 15.25% | From 1 March 2029 | same |
+| Employer special contribution on the 13th month (art. 96.4) | 10.75% | Each of the three 13th-month instalments | same |
+| Employee special contribution on the 13th month (art. 96.5) | 7.25% | Each of the three instalments | same |
+| Independent workers, IVM (arts. 76, 96.3) | 9.36% | Ingreso cotizable | same |
+| Independent workers, voluntary health and maternity (art. 76) | 8.5% | Declared income, not below B/.800 a month | same |
+| Pensioners (art. 96.6) | 6.75% | Monthly pension | same |
+| Insured receiving subsidies (art. 96.7) | 9.75% | Subsidy | same |
+| State contribution (art. 96.9) | 0.8% | Salaries and contribution bases | same |
+| Late payment surcharge, days 1 to 10 (art. 121) | 2% | Amount owed | same |
+| Late payment surcharge, days 11 to 20 | 5% | | same |
+| Late payment surcharge, days 21 to 30 | 10% | | same |
+| Late payment surcharge, after 30 days | 15% | | same |
+| Late payment interest | 1% a month or part | In addition to surcharges | same |
+| Refusing information to CSS (art. 120) | B/.1,000 to B/.50,000 | Employers | same |
 
-*The employer CSS rate was 12.25% before Ley 462; the reform raises it by 3 points in three steps. Employee rate unchanged at 9.75%.*
+## The base
 
-### Rule 3 -- No contribution ceiling
+- Employee and employer contributions are on salaries (sueldos); no ceiling appears in art. 96.
+- The 13th month (decimotercer mes) is paid in three instalments; each bears the special contributions of 10.75% (employer) and 7.25% (employee) instead of the ordinary rates.
+- Independent workers pay their own IVM contribution of 9.36% of ingreso cotizable and may join health and maternity at 8.5% of a declared income of at least B/.800 a month (CSS may update it by regulation).
+- Contributions are paid monthly within the periods the CSS board sets by regulation (art. 121).
 
-- **No contribution ceiling** — There is no maximum taxable amount for either CSS or the educational insurance tax. The percentage applies to the full gross, however high.  _([PwC])_
+## Deadlines and filing
 
-### Rule 4 -- Self-employed independents (Ley 462)
-
-- **Self-employed affiliation and rates** — Affiliation is mandatory for independent workers and professional-service providers. IVM (Invalidez, Vejez y Muerte) = 9.36% of declared income (mandatory). Health & maternity = 8.5% (voluntary; minimum declared monthly income B/.800 to opt in).  _([Ley 462; Morgan & Morgan; Pension Policy International])_
-
-### Rule 5 -- Educational insurance is separate from CSS
-
-- **Educational insurance separate levy** — Seguro Educativo (1.25% employee / 1.50% employer) is a distinct payroll levy from the CSS social-security contribution but is remitted on the same gross base with no ceiling.  _([PwC])_
-
-### Rule 6 -- Personal income tax is territorial
-
-- **Territorial income tax** — Only Panama-source income is taxed. Foreign-source income is exempt for residents and non-residents alike. There are no local/municipal income taxes.  _([PwC])_
-
-### Rule 7 -- Income-tax bands (2025)
-
-**Income-tax bands table (Rule 7)**  _([PwC])_
-
-| Taxable income (USD) | Cumulative tax at top of band | Rate on excess |
+| Obligation | Deadline | Channel |
 | --- | --- | --- |
-| 0 – 11,000 | 0 | 0% |
-| 11,000 – 50,000 | 5,850 | 15% (on amount over 11,000) |
-| Over 50,000 | — | 25% |
+| Monthly planilla and payment | Within the periods set by CSS regulation (not confirmed in this pass) | CSS SIPE system |
+| New employer registration | Within the first six working days of starting operations | CSS |
+| DGI Planilla 03 (income tax) | Within 60 calendar days after the CSS planilla is filed | DGI e-Tax 2.0 (https://dgi.mef.gob.pa/DInforme/Planilla03.php) |
 
-*Cumulative check: at 50,000 → (50,000 − 11,000) × 15% = 39,000 × 15% = 5,850. ✓* [PwC]
+## Penalties and interest
 
-### Rule 8 -- Who must file income tax
+Late payment: 2% in the first 10 days, 5% in the next 10, 10% to day 30, 15% after 30 days, plus 1% interest a month (art. 121). Contributions deducted from salaries and not paid to CSS within 90 days may be reported to the Public Ministry. Refusing information: B/.1,000 to B/.50,000 (art. 120).
 
-- **Filing requirement** — All taxpayers EXCEPT employees with a single source of wage income whose tax is fully withheld monthly by the employer. Self-employed/independent professionals must file. Filing via DGI eTax 2; taxpayers hold a RUC (Registro Único de Contribuyente).  _([PwC])_
+## Cross-border points
 
-### Rule 9 -- Income-tax deadlines
+Foreign employees working in Panama under a Panamanian employment relationship contribute like nationals. Totalisation agreements were not checked.
 
-**Income-tax deadlines table**
+## Two worked examples that recompute
 
-| Item | Date |
-| --- | --- |
-| Tax year | Calendar year (1 Jan – 31 Dec) [PwC] |
-| Return due | **15 March** following year; 2-month extension to **15 May** generally available [PwC] |
-| Estimated tax (filers) | 3 equal installments: **30 Jun, 30 Sep, 31 Dec** [PwC] |
+### Example 1: monthly salary of B/.2,000, and a 13th-month instalment of B/.666.67
 
-### Rule 10 -- 13th month (Décimo Tercer Mes)
+Ordinary month: employee 9.75% = B/.195.00, employer 13.25% = B/.265.00. On the 13th-month instalment: employee 7.25% = B/.48.33, employer 10.75% = B/.71.67.
 
-- **13th month payment schedule and CSS treatment** — Mandatory under the Código de Trabajo, paid in three installments: 15 April, 15 August, 15 December. The décimo is subject to its own CSS/withholding rules that differ from ordinary wages. The exact CSS rate on the décimo is [RESEARCH GAP — reviewer to confirm]; do not compute it here.  _([Código de Trabajo])_
-
-### Rule 11 -- CSS late-payment surcharges (mora)
-
-**CSS late-payment surcharge schedule**  _([CSS Reglamento; La Estrella — verify, RESEARCH GAP])_
-
-| Delinquency period | Surcharge |
-| --- | --- |
-| First 10 calendar days | 2% |
-| Days 11–20 | 5% |
-| After 30 days | 10% |
-| Day 31 | 15% |
-
-Non-payment can become a criminal offense under Ley 51; convenios de pago are available. Do not quantify without the live CSS Reglamento and a CSS statement.
-
-## Section 6 -- Tier 2 catalogue
-
-Flag these for reviewer confirmation when data is ambiguous or circumstances are unclear.
-
-### T2-1 -- Payroll spanning a Ley 462 rate-change boundary
-
-- **T2-1** — Trigger: Payroll period straddles 1 Mar 2027 or 1 Mar 2029. Issue: Employer CSS rate steps from 13.25% → 14.25% → 15.25%. Future rates are scheduled, not yet in force. Action: Flag for reviewer; confirm the rate in force for the exact payroll month and that no further legislative change has occurred.
-
-### T2-2 -- Self-employed health-coverage election
-
-- **T2-2** — Trigger: Independent worker unclear on whether they opted into voluntary 8.5% health coverage. Issue: IVM 9.36% is mandatory; health 8.5% is voluntary and needs minimum declared income B/.800. Action: Flag for reviewer; apply mandatory IVM only until election is confirmed.
-
-### T2-3 -- Declared-income base for independents
-
-- **T2-3** — Trigger: Independent worker voluntarily declares the income on which they contribute. Issue: The declared base (within CSS rules) drives the contribution; it may differ from actual earnings. Action: Flag for reviewer to confirm the declared base used.
-
-### T2-4 -- Income source classification (Panama-source vs foreign)
-
-- **T2-4** — Trigger: Income may be foreign-source (exempt) or Panama-source (taxable). Issue: Panama's territorial system exempts foreign-source income; misclassification mis-states income tax. Action: Flag for reviewer. Do not treat income as exempt without evidence of foreign source.
-
-### T2-5 -- CSS arrears / convenio de pago
-
-- **T2-5** — Trigger: Delinquent contributions, surcharges, or a payment agreement appear. Issue: Surcharge schedule and 1%/month interest require the live CSS Reglamento; relief periods may suspend surcharges; non-payment can be criminal. Action: Do not quantify. Escalate to a Panamanian accountant immediately.
-
-### T2-6 -- Décimo Tercer Mes CSS treatment
-
-- **T2-6** — Trigger: 13th-month payment in scope for CSS. Issue: Décimo CSS/withholding differs from ordinary wages; exact rate unconfirmed [RESEARCH GAP]. Action: Flag for reviewer; source from CSS / Código de Trabajo before computing.
-
-## Section 7 -- Excel working paper template
-
-```
-PANAMA CSS / PAYROLL COMPUTATION -- WORKING PAPER
-Client: [name]                    RUC: [____]
-Period: [month/year]              Prepared: [date]
-
-INPUT DATA
-  Worker status:                 [Employee / Self-employed independent]
-  Gross monthly remuneration:    USD [____]
-  Payroll month (Ley 462 rate):  [____]   Employer CSS rate: [13.25 / 14.25 / 15.25]%
-  Self-employed health elected:  [YES / NO / N/A]
-  Declared base (if independent): USD [____]
-
-EMPLOYEE COMPUTATION (if employee)
-  CSS 9.75% × gross:             USD [____]
-  Educational 1.25% × gross:     USD [____]
-  Employee total (11.00%):       USD [____]
-
-EMPLOYER COMPUTATION (if employee)
-  CSS [rate]% × gross:           USD [____]
-  Educational 1.50% × gross:     USD [____]
-  Employer total:                USD [____]
-
-SELF-EMPLOYED COMPUTATION (if independent)
-  IVM 9.36% × declared base:     USD [____]   (mandatory)
-  Health 8.5% × declared base:   USD [____]   (voluntary, if elected)
-  Self-employed total:           USD [____]
-
-CEILING CHECK
-  Contribution ceiling:          NONE — full gross taxed
-
-INCOME TAX (territorial; if applicable)
-  Panama-source taxable income:  USD [____]
-  PIT (0% / 15% / 25% bands):    USD [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here — décimo, arrears, source, future rates]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+```oa-check
+name: PA 2026 CSS salary and 13th-month instalment
+inputs:
+  salary: 2000
+  decimo_instalment: 666.67
+steps:
+  - employee: salary * 0.0975
+  - employer: salary * 0.1325
+  - decimo_employee: round(decimo_instalment * 0.0725, 2)
+  - decimo_employer: round(decimo_instalment * 0.1075, 2)
+expected:
+  employee: 195
+  employer: 265
+  decimo_employee: 48.33
+  decimo_employer: 71.67
 ```
 
-## Section 8 -- Bank statement reading guide
+### Example 2: the March 2027 step (budget decision)
 
-### How CSS / payroll debits appear on Panamanian bank statements
+A payroll of B/.100,000 a month costs B/.13,250 in employer CSS to February 2027 and B/.14,250 from March 2027: B/.1,000 more a month, B/.10,000 over March to December 2027. An employer budgeting 2027 must use both rates.
 
-**Banco General:**
-- Description: "CSS", "CAJA DE SEGURO SOCIAL", "SEGURO SOCIAL", "PLANILLA CSS"
-- Timing: Monthly (planilla remittance)
-- Amount: Combined obrero-patronal for all employees, OR per-employee figure
+```oa-check
+name: PA employer CSS step in March 2027
+inputs:
+  payroll: 100000
+steps:
+  - to_feb_2027: payroll * 0.1325
+  - from_mar_2027: payroll * 0.1425
+  - extra_month: from_mar_2027 - to_feb_2027
+  - extra_mar_to_dec: extra_month * 10
+expected:
+  to_feb_2027: 13250
+  from_mar_2027: 14250
+  extra_month: 1000
+  extra_mar_to_dec: 10000
+```
 
-**Banistmo:**
-- Description: "CAJA DE SEGURO SOCIAL", "SEG SOCIAL", "SEGURO EDUCATIVO"
-- Timing: Monthly
-- Amount: CSS and/or educational insurance
+## Ask the client first
 
-**BAC Credomatic:**
-- Description: "CSS", "IVM" (for independents), "DGI" (income tax — NOT CSS)
-- Timing: Monthly (CSS); quarterly estimated installments (DGI income tax)
+1. Is the worker an employee or an independent?
+2. Monthly salary and the 13th-month instalments paid.
+3. For independents: ingreso cotizable and whether health cover is wanted.
+4. Payroll month (the employer rate changes on 1 March 2027).
+5. Any arrears or payment agreement with CSS.
 
-**Key identification tips:**
-1. CSS debits are outgoing (DEBITO), recurring monthly.
-2. "SEGURO EDUCATIVO" is the educational insurance tax — exclude alongside CSS, but it is a distinct levy.
-3. "IVM" on an independent's statement is the mandatory self-employed contribution.
-4. Do NOT confuse CSS with "DGI" / "ISR" (income tax) or "ITBMS" (VAT) debits.
-5. "DECIMO" / "DÉCIMO" debits are 13th-month wage payments, not CSS.
-6. "CONVENIO DE PAGO" indicates delinquent-contribution arrangements — flag for reviewer.
+## Sources
 
-### Currency note
-
-Statements may show "B/." (Balboa) or "USD". They are the same value (1:1 peg). Treat interchangeably.
-
-## Section 9 -- Onboarding fallback
-
-If the client provides only a bank statement and no other information:
-
-1. **Confirm worker status** -- employer payroll (CSS planilla, employee+employer) vs independent (IVM). If unclear, STOP and ask.
-2. **Scan for CSS debits** -- identify outgoing payments matching Section 3 patterns (CSS, SEGURO SOCIAL, SEGURO EDUCATIVO, IVM, PLANILLA).
-3. **Separate the levies** -- CSS social security vs educational insurance vs income tax (DGI) vs VAT (ITBMS).
-4. **Reverse-check employee figures** -- employee withholding should be ~11.00% of gross; employer ~14.75% (from 1 Apr 2025). If amounts imply a ceiling, flag — Panama has none.
-5. **Flag for reviewer:** "CSS classification derived from bank-statement amounts only. Worker status, payroll period (Ley 462 rate), declared base, and income source have not been independently verified. Reviewer must confirm before filing."
-
-## Section 10 -- Reference material
-
-### Contribution rate summary
-
-**Contribution rate summary table**
-
-| Regime | Component | Rate | Source |
-| --- | --- | --- | --- |
-| Employee | CSS social security | 9.75% | PwC; Ley 462 |
-| Employee | Educational insurance | 1.25% | PwC |
-| Employee | **Total** | **11.00%** | (9.75 + 1.25) |
-| Employer (1 Apr 2025) | CSS social security | 13.25% | Ley 462; MEF |
-| Employer | Educational insurance | 1.50% | PwC |
-| Employer | **Total (current)** | **14.75%** | (13.25 + 1.50) |
-| Employer (from 1 Mar 2027) | **Total** | **15.75%** (future) | Ley 462 |
-| Employer (from 1 Mar 2029) | **Total** | **16.75%** (future) | Ley 462 |
-| Self-employed | IVM (mandatory) | 9.36% | Ley 462; Morgan & Morgan |
-| Self-employed | Health & maternity (voluntary) | 8.5% | Ley 462; min declared B/.800 |
-
-### Income tax bands (2025)
-
-**Income tax bands (2025) reference table**
-
-| Taxable income (USD) | Cumulative tax | Rate on excess | Source |
-| --- | --- | --- | --- |
-| 0 – 11,000 | 0 | 0% | PwC |
-| 11,000 – 50,000 | 5,850 | 15% | PwC |
-| Over 50,000 | — | 25% | PwC |
-
-### Pension & retirement context
-
-**Pension & retirement context table**
-
-| Item | Value | Source |
+| Source | URL | Read on |
 | --- | --- | --- |
-| Retirement age — women | 57 | Ley 462 (unchanged) |
-| Retirement age — men | 62 | Ley 462 (unchanged) |
-| Minimum (solidarity) pension | B/.144.00 | Morgan & Morgan |
+| Read for Gaceta Oficial 30284-B (22 May 2025), Ley 51 of 2005 consolidated with Ley 462: arts. 3-A, 76, 96, 120, 121, 127 | http://gacetas.procuraduria-admon.gob.pa/30284-B_64831.pdf | 2026-11-14 |
+| Read for Gaceta Oficial 30238 (18 March 2025), Ley 462 as published (scanned; used to confirm date and number) | http://gacetas.procuraduria-admon.gob.pa/30238_64368.pdf | 2026-11-14 |
+| Read for DGI, Planilla 03: 60-day link to the CSS planilla | https://dgi.mef.gob.pa/DInforme/Planilla03.php | 2026-11-14 |
 
-### Minimum wage context (MITRADEL)
-
-- Decree: Executive Decree No. 13 of 31 Dec 2025 (Gaceta Oficial 30438), effective **16 Jan 2026**, 2-year term [EY; MITRADEL].
-- **No single national figure** — 59 differentiated rates across 74 economic activities, split by Region 1 (major urban districts) and Region 2 (remaining districts).
-- Simple average ≈ **USD 636.80/month** [La Prensa].
-- Example hourly rates (2026) [La Prensa; MITRADEL]: Construction $3.51 (R1) / $3.30 (R2); large-firm manufacturing up to $3.13 (R1) / $2.58 (R2); large wholesale/retail $3.02 (R1) / $2.48 (R2); banana agriculture $2.58 nationally.
-- Domestic workers (monthly): B/.350 (R1), B/.320 (R2) [La Prensa; MITRADEL].
-
-### Test suite
-
-**Test 1:** Employee gross B/.1,500, May 2025. → Employee 11.00% = **165.00** (CSS 146.25 + educ 18.75). Employer 14.75% = **221.25** (CSS 198.75 + educ 22.50).
-
-**Test 2:** Employee gross B/.2,000, 2025. → Employee = **220.00**. Employer = **295.00**. No ceiling applied.
-
-**Test 3:** Self-employed declares B/.3,000, no health. → IVM 9.36% = **280.80**. Health not applied.
-
-**Test 4:** Self-employed declares B/.3,000, with health. → IVM 280.80 + health 8.5% (255.00) = **535.80**.
-
-**Test 5:** Panama-source taxable income B/.30,000. → PIT = (30,000 − 11,000) × 15% = **2,850.00**.
-
-**Test 6:** Panama-source taxable income B/.80,000. → PIT = 5,850 + (80,000 − 50,000) × 25% = 5,850 + 7,500 = **13,350.00**.
-
-**Test 7:** Employee with single wage source, tax fully withheld monthly. → No income-tax return filing required [PwC].
-
-**Test 8:** Foreign-source income only, Panama resident. → Income-tax = **0** (territorial; foreign-source exempt). CSS still applies to any Panama employment.
-
-**Test 9:** Payroll month March 2027. → Employer CSS 14.25% + educ 1.50% = **15.75%** (future-dated; confirm no change). Flag for reviewer.
-
-### Prohibitions
-
-- NEVER compute CSS without confirming worker status (employee vs self-employed independent).
-- NEVER apply a contribution ceiling — Panama has none on CSS or educational insurance.
-- NEVER apply the employee rate as if it changed under Ley 462 — only the employer rate increases.
-- NEVER apply the 14.25% or 15.25% employer rate to a current (pre-1 Mar 2027) payroll — those are scheduled future rates.
-- NEVER apply voluntary 8.5% health to a self-employed worker without confirming election.
-- NEVER compute CSS on the 13th-month (décimo) — its treatment is unconfirmed [RESEARCH GAP]; escalate.
-- NEVER quantify CSS arrears/surcharges without the live CSS Reglamento and a CSS statement.
-- NEVER treat foreign-source income as taxable, nor Panama-source income as exempt, without evidence.
-- NEVER confuse CSS / SEGURO EDUCATIVO with DGI income tax or ITBMS (VAT).
-- NEVER present figures as definitive — label as estimated and direct the client to CSS/DGI records.
-- NEVER quote an income-tax return form number or penalty percentage not confirmed from DGI [RESEARCH GAP].
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: educational insurance (seguro educativo) on salaries, employee and employer (the old file gave 1.25% and 1.50%); the riesgos profesionales premium; the monthly CSS payment due date; the old file's statement that there is no contribution ceiling (none is in art. 96, but the regulations were not read).

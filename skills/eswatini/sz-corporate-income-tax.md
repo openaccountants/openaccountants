@@ -5,14 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Corporate Income Tax v0.2
+# Eswatini Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -108,15 +109,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ERS, Public Notice, returns for tax year end 2025 (scanned, OCR); cited sections read | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-01 |
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023); scanned, read by OCR, Third Schedule pages checked by eye; cited sections read | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-01 |
-| ERS, Rates and Thresholds; whole page read | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-01 |
-| ERS, Withholding Taxes; whole page read | https://www.ers.org.sz/IncomeTax/Withholding | 2026-11-01 |
-| ERS, Presumptive Tax; whole page read | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-01 |
-| Income Tax Order 1975, ERS consolidated copy to the 2013 amendments; sections cited were read; cited sections read | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-01 |
-| Eswatini and South Africa tax treaty, art. 10; cited sections read | https://www.ers.org.sz/documents/SouthAfrica.pdf | 2026-11-01 |
-| ERS, Self Assessment; whole page read | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-01 |
-| ERS, Step-by-Step Guide for New Businesses; whole page read | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-01 |
-| ERS, Income Tax Returns; whole page read | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-01 |
+| ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| ERS, Rates and Thresholds: read in full | https://www.ers.org.sz/IncomeTax/RatesandThres | 2026-11-14 |
+| ERS, Withholding Taxes: read in full | https://www.ers.org.sz/IncomeTax/Withholding | 2026-11-14 |
+| ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
+| Income Tax Order 1975, ERS consolidated copy to the 2013 amendments: read for the cited sections | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-14 |
+| Eswatini and South Africa tax treaty, art. 10: read for the cited sections | https://www.ers.org.sz/documents/SouthAfrica.pdf | 2026-11-14 |
+| ERS, Self Assessment: read in full | https://www.ers.org.sz/IncomeTax/SelfAssessment | 2026-11-14 |
+| ERS, Step-by-Step Guide for New Businesses: read in full | https://www.ers.org.sz/documents/Step-ByStepGuideforNewBusinesses.pdf | 2026-11-14 |
+| ERS, Income Tax Returns: read in full | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-14 |
 
 Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 notice gives 4 months and 31 October. The old pack's routine 60-day filing extension: no official source found. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.

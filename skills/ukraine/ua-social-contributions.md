@@ -1,10 +1,11 @@
 ---
 name: ua-social-contributions
 description: "Ukrainian unified social contribution (єдиний соціальний внесок, ЄСВ) for tax year 2026 under the Law on the unified social contribution (No. 2464-VI) and the 2026 State Budget Law. Covers who pays: employers, sole proprietors on the general system and the single tax, independent professionals, voluntary payers; the 22% rate and the 8.41% rate for employees with disabilities; the minimum contribution of UAH 1,902.34 a month, due even with no income; the maximum base of 20 minimum wages (UAH 172,940; 15 for service members); exemptions for pensioners, people with disabilities, employed proprietors and mobilised proprietors; the suspended martial-law right not to pay; quarterly payment and annual reporting; fines and penalty interest. Trigger on: ЄСВ Ukraine, єдиний внесок ФОП, unified social contribution, USC Ukraine, social security Ukraine. Out of scope: employer payroll steps (ua-payroll), PIT (ua-income-tax), single tax (ua-single-tax)."
-version: 1.1
+version: 1.2
+type: computation
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -34,18 +35,16 @@ The unified social contribution (єдиний соціальний внесок,
 | ЄСВ rate | 22% of the base | 2026 | https://zakon.rada.gov.ua/laws/show/2464-17 (art. 8 part 5) |
 | Rate on pay of employees with disabilities | 8.41% | 2026 | same, art. 8 part 13 |
 | Minimum wage from 1 January 2026 | UAH 8,647 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
-| Minimum contribution (22% x minimum wage) | UAH 1,902.34 a month | 2026 | ЄСВ law art. 1 point 5, art. 8 part 5; Budget art. 8 |
-| Minimum for a quarter / a year | UAH 5,707.02 / UAH 22,828.08 | 2026 | computed from the line above |
+| Minimum contribution (22% x minimum wage) | UAH 1,902.34 a month (computed) | 2026 | ЄСВ law art. 1 point 5, art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
+| Minimum for a quarter / a year | UAH 5,707.02 / UAH 22,828.08 | 2026 | computed from the line above, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
 | Maximum monthly base (except service members and police) | 20 minimum wages, UAH 172,940 | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 32) |
-| Maximum monthly contribution | UAH 38,046.80 (22% x 172,940) | 2026 | computed from the two lines above |
-| Maximum monthly base for pay of service members, police and similar ranks | 15 minimum wages, UAH 129,705 | 2026 | Budget art. 32 |
-| Maximum base in the ЄСВ law itself | 15 minimum wages; suspended for 2026 by the Budget Law | 2026 | ЄСВ law art. 1 point 4 |
-| Payment by proprietors and professionals for themselves | by the 20th of the month after each quarter | 2026 | ЄСВ law art. 9 part 8 |
-| Payment by employers | with each salary payment, and for the month by the 20th of the next month | 2026 | ЄСВ law art. 9 part 8 |
-| Fine for late or unpaid ЄСВ | 20% of the amount not paid on time | 2026 | ЄСВ law art. 25 part 11 point 2 |
-| Fine for under-accrual found later | 10% for each full or part reporting period, at most 50% | 2026 | art. 25 part 11 point 3 |
-| Fine for not paying with the salary | 10% | 2026 | art. 25 part 11 point 6 |
-| Penalty interest | 0.1% of the unpaid amount a day | 2026 | art. 25 part 10 |
+| Maximum monthly contribution | UAH 38,046.80 (22% x 172,940) | 2026 | computed from the two lines above, https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html |
+| Maximum monthly base for pay of service members, police and similar ranks | 15 minimum wages, UAH 129,705 | 2026 | Budget art. 32, https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html |
+| Payment by proprietors and professionals for themselves | by the 19th of the month after each quarter (the law says "до 20 числа", which the State Tax Service reads as the 19th at the latest) | 2026 | ЄСВ law art. 9 part 8, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=36453 |
+| Fine for late or unpaid ЄСВ | 20% of the amount not paid on time | 2026 | ЄСВ law art. 25 part 11 point 2, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=28087 |
+| Fine for under-accrual found later | 10% for each full or part reporting period, at most 50% | 2026 | art. 25 part 11 point 3, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=44152 |
+| Fine for not paying with the salary | 10% | 2026 | art. 25 part 11 point 6, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=28087 |
+| Penalty interest | 0.1% of the unpaid amount a day | 2026 | art. 25 part 10, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=28087 |
 
 ## The taxable base
 
@@ -174,6 +173,12 @@ expected:
 | Law No. 4697-IX of 3 Dec 2025, amending the ЄСВ law on forced absence | https://zakon.rada.gov.ua/laws/show/4697-20 | 2026-10-30 (via web.archive.org capture of 8 Aug 2026) |
 | Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 8 and 32, and the suspensions of ЄСВ law art. 1 point 4 and section VIII point 9-19 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
 | Tax Code of Ukraine, Law No. 2755-VI, arts. 49.18.4, 49.20, 176.2, 177.4.3 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (via web.archive.org capture of 12 Oct 2026) |
-| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
+| DPS, rates sheet: unified social contribution (ЄСВ) | https://zir.tax.gov.ua/docs/stavki/esv.pdf | 2026-11-14, read for the 22% and 8.41% rates |
+| DPS, tax social benefit (ПСП) amounts for 2026 | https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf | 2026-11-14, read for the UAH 8,647 minimum wage for 2026 |
+| DPS Zhytomyr region, ЄСВ in 2026 (3 March 2026) | https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html | 2026-11-14, read for the 2026 maximum base of 20 minimum wages (15 for service members) and the suspension of ЄСВ law art. 1 point 4 |
+| DPS knowledge base (ЗІР), question 28087 | https://zir.tax.gov.ua/main/bz/view/?src=ques&id=28087 | 2026-11-14, read for art. 25: the 20% and 10% fines and 0.1% a day penalty interest |
+| DPS knowledge base (ЗІР), question 44152 | https://zir.tax.gov.ua/main/bz/view/?src=ques&id=44152 | 2026-11-14, read for art. 25: the 10% a period fine for under-accrual, capped at 50% |
+| DPS knowledge base (ЗІР), question 36453 | https://zir.tax.gov.ua/main/bz/view/?src=ques&id=36453 | 2026-11-14, read for art. 9 part 8: proprietors pay by the 19th of the month after the quarter |
+| State Tax Service of Ukraine, main site | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
-Not yet confirmed: how a proprietor who registers or deregisters mid-month counts that month; how a general-system proprietor spreads annual net income across months for the minimum and the cap (the Ministry of Finance instruction was not read); whether a payment date on a weekend moves (none of the 2026 quarterly dates falls on one); the proportional floor for employees hired or leaving mid-month; the amount of the tax-free minimum income of citizens for the records fine; how insurance length of service (страховий стаж) is counted (pension insurance law not read); the Cabinet of Ministers list of payments free of ЄСВ; social security agreements with other countries; any amendment after the 18 October 2026 archive capture.
+Not yet confirmed: how a proprietor who registers or deregisters mid-month counts that month; how a general-system proprietor spreads annual net income across months for the minimum and the cap (the Ministry of Finance instruction was not read); whether a payment date on a weekend moves (none of the 2026 quarterly dates falls on one); the proportional floor for employees hired or leaving mid-month; the amount of the tax-free minimum income of citizens for the records fine; how insurance length of service (страховий стаж) is counted (pension insurance law not read); the Cabinet of Ministers list of payments free of ЄСВ; social security agreements with other countries; any amendment after the 18 October 2026 archive capture. The ЄСВ law's own cap of 15 minimum wages (art. 1 point 4) is suspended for 2026; the State Tax Service notice confirms the suspension but does not restate the 15, so that row was taken out of the rates table. The employer deadline (with each salary payment, and by the 20th of the next month for the month) was not re-read on an official page on 14 November 2026, so it was taken out of the rates table; check ЄСВ law art. 9 part 8 before relying on it.
