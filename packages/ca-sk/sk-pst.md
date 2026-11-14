@@ -1,223 +1,204 @@
 ---
 name: sk-pst
-description: Use this skill for Saskatchewan Provincial Sales Tax — 6% non-harmonized sales tax. Triggers "Saskatchewan PST", "SK PST 6%", "SETS Saskatchewan", "Saskatchewan eTaxBC equivalent", "SK PST online sales".
-jurisdiction: CA
-tax_year: 2025
-last_updated: 2026-07-13
+description: >
+  Prepare a Saskatchewan provincial sales tax workpaper for 2026: actual vendor,
+  consumer and platform registration, limited home small-trader guidance,
+  goods/services and own-use scope, corrected clothing treatment, tax-exclusive
+  bases, assigned reporting, electronic versus non-electronic deadlines,
+  exemptions, adjustments and sector-specific referrals. Keep liquor consumption,
+  insurance premiums and federal GST/HST as separate legal jobs.
+version: 2.0
+jurisdiction: CA-SK
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: computation
 ---
 
-# SK PST
-
-## Saskatchewan — Provincial Sales Tax (PST) — Skill v1.0
-
-## 1. Quick reference
-
-**Quick reference table**
-
-| Item | Value |
-| --- | --- |
-| Standard PST rate | **6%** |
-| Liquor consumption tax | 10% |
-| Tobacco tax | Specific per-unit rates (not ad valorem) |
-| Passenger vehicle PST | 6% (with valuation rules for used vehicles) |
-| Registration threshold | **None** — any business making taxable retail sales in SK must register |
-| Federal GST also applies | Yes — 5% GST + 6% PST = effective 11% on most taxable supplies |
-| Administering body | Saskatchewan Ministry of Finance, Revenue Division |
-| Filing portal | **SETS** — Saskatchewan eTax Services |
-| Legal basis | *The Provincial Sales Tax Act* (Saskatchewan), and regulations thereunder |
-
-Saskatchewan is a **non-harmonized** PST jurisdiction (alongside BC and Manitoba). It is **not** part of the HST system. PST stacks on top of GST and is calculated on the GST-exclusive price of the supply.
-
-## 2. Required inputs + refusal catalogue
-
-### Required inputs
-
-Before preparing or advising on a SK PST return / position, collect:
-
-1. **Vendor permit number** (PST account number issued by SK Ministry of Finance).
-2. **Filing frequency** (monthly / quarterly / annually) as assigned at registration.
-3. **Reporting period** (start and end dates).
-4. **Gross sales** for the period, broken down by:
-   - Taxable tangible personal property (TPP) sold to SK customers
-   - Taxable services rendered in SK (lawn care, telecom, accommodation, legal/accounting, computer services, etc.)
-   - Insurance contracts subject to PST
-   - Exempt sales (groceries, prescription drugs, children's clothing, agricultural inputs, residential rent)
-   - Out-of-province sales (no SK PST — but watch for nexus into BC/MB/QC)
-5. **PST collected** during the period.
-6. **PST self-assessed** on taxable goods/services purchased without PST charged (e.g., out-of-province purchases for own use in SK).
-7. **Commission** entitlement (vendors may retain a small collection commission — confirm current rate via SETS portal).
-8. **Bad debt write-offs** for which PST was previously remitted.
-9. **Refunds / credits** to customers during the period.
-
-### Refusal catalogue (route elsewhere)
-
-- **R-SK-1** — Quebec QST or any other provincial sales tax (route to `qc-qst`, `bc-pst`, `mb-rst`).  _(R-SK-1)_
-- **R-SK-2** — Federal GST/HST mechanics (route to `canada-gst-hst`).  _(R-SK-2)_
-- **R-SK-3** — Liquor, tobacco, fuel, cannabis-specific commodity taxes (route to dedicated commodity-tax skills; this skill mentions liquor 10% only for rate awareness).  _(R-SK-3)_
-- **R-SK-4** — Real-property transactions (PST does not apply to real property itself; PST applies to **services** to real property such as construction materials and certain contractor services — handle with care and route complex construction contract questions to a credentialed SK practitioner).  _(R-SK-4)_
-- **R-SK-5** — Indigenous tax exemptions on reserve land — fact-specific, route to a credentialed practitioner.  _(R-SK-5)_
-- **R-SK-6** — Insurance premium tax (a separate tax administered by Finance — not the PST on insurance contracts; do not conflate).  _(R-SK-6)_
-- **R-SK-7** — Audit defence, voluntary disclosure, ruling requests — these require credentialed reviewer signoff.  _(R-SK-7)_
-- **R-SK-8** — Pre-2017 reporting periods — rules expanded materially in 2017 and again 2018–2022; this skill is scoped to current law for 2025.  _(R-SK-8)_
-
-## 3. Rate
-
-**Rate table**
-
-| Category | Rate | Notes |
-| --- | --- | --- |
-| **Standard PST** | 6% | Applies to taxable TPP, listed services, and insurance contracts |
-| **Liquor consumption tax** | 10% | Replaced the previous 10% Liquor Consumption Tax structure; applied in lieu of standard PST on beverage alcohol |
-| **Tobacco tax** | Specific (per cigarette / per gram) | Not ad valorem; refer to current Ministry rate schedule |
-| **Passenger vehicles** | 6% | Used vehicles have valuation rules (greater of purchase price or Red Book / Black Book value, subject to thresholds) |
-
-- **PST base and combined burden** — PST applies on the GST-exclusive consideration. Effective combined burden on a typical taxable supply: 5% GST + 6% PST = 11%.
-
-## 4. Registration
-
-### Who must register
-
-- **Who must register** — A person must hold a Vendor's Licence (PST registration) if they: Regularly make retail sales of taxable goods or services in Saskatchewan, OR Are an out-of-province seller meeting the economic nexus tests (see §6), OR Operate as a contractor consuming taxable goods in SK, OR Provide taxable services in SK (lawn care, computer services, accommodation, legal, accounting, etc.).
-- **Registration threshold** — None CAD (Unlike the federal GST $30,000 small-supplier threshold, SK PST registration is required from the first dollar of taxable sales in SK.)
-
-### How to register
-
-- **How to register** — Register via the SETS portal (Saskatchewan eTax Services) at sets.saskatchewan.ca. A vendor permit number is issued; this must appear on invoices where PST is charged.
-
-### Casual / one-off sellers
-
-- **Casual sellers** — A taxpayer who makes only a single isolated sale (e.g., private sale of a used personal item) generally is not required to register. The buyer may, however, owe PST self-assessed on the purchase (e.g., used-vehicle PST collected at registration with SGI).
-
-## 5. Taxable supplies
-
-Saskatchewan's PST base is broader than BC's or Manitoba's following the 2017 and 2018–2022 expansions.
-
-### Taxable
-
-- **Taxable items list** — Tangible personal property sold for consumption in SK (default rule — all TPP is taxable unless specifically exempt). Listed taxable services, including (non-exhaustive): Lawn care, snow removal, landscaping; Telecommunication services (including streaming and digital subscriptions — expanded 2022); Accommodation (hotels, short-term rentals); Legal services; Accounting and bookkeeping services; Computer services and software (including SaaS — expanded 2017); Engineering, architectural, and surveying services; Repair and installation services to TPP and to certain real property; Veterinary services for non-livestock animals; Dry cleaning and laundry; Credit reporting and collection services. Insurance contracts (most general insurance — life and health insurance are excluded; agricultural insurance and certain specified contracts have exemptions). Admissions to places of amusement (where applicable).
-
-### Self-assessment
-
-- **Self-assessment rule** — Where a SK resident or business purchases taxable goods or services from an out-of-province vendor that did not charge SK PST, the purchaser must self-assess and remit PST on its next return.
-
-## 6. Online platforms / out-of-province sellers
-
-Saskatchewan has had economic nexus rules since 2018, expanded materially in 2020.
-
-### Who is caught
-
-- **Who is caught** — Electronic distribution platforms (marketplaces) facilitating sales to SK customers. Online accommodation platforms (e.g., short-term rental marketplaces). Out-of-province sellers of TPP or taxable services to SK customers where the seller makes retail sales for consumption in SK.
-
-### Threshold
-
-- **Nexus threshold** — None — no dollar safe harbour CAD (The test is whether the seller is causing taxable goods/services to enter SK for consumption. A pattern of regular sales triggers the duty to register and collect.)
-
-### Practical implication
-
-- **Practical implication** — A non-Canadian or non-SK e-commerce seller shipping into SK should register for a SK Vendor's Licence as soon as it is clear sales into SK are regular. Marketplace facilitators are generally responsible for collecting PST on third-party seller transactions on their platform.
-
-## 7. Exemptions
-
-- **PST does not apply to** — Basic groceries (aligned conceptually with the GST zero-rating list, but defined under SK law). Prescription drugs and many medical devices. Children's clothing and footwear (subject to size / specification rules). Agricultural inputs — most farm machinery, fertilizer, seed, feed for livestock, and qualifying farm-use goods. Used goods sold privately between individuals (not in the course of business) — but PST may be self-assessed at registration (e.g., used vehicles via SGI). Residential rent and most residential real property transactions. Books (printed books with an ISBN — subject to current rules). Direct agents consumed in manufacturing (incorporated into the final product). Goods purchased for resale by a registered vendor providing a valid PST number to the supplier. Goods shipped out of province by the seller to a non-SK destination.
-- **Exemption certificate requirement** — Exemption certificates / declarations must generally be obtained and retained for vendors not charging PST on exempt sales.
-
-## 8. Filing
-
-### Portal
-
-- **Portal** — SETS — Saskatchewan eTax Services (sets.saskatchewan.ca). All registered vendors must file electronically via SETS unless granted an exemption.
-
-### Frequency
-
-**Filing frequency table**
-
-| Annual PST collected | Filing frequency |
-| --- | --- |
-| > $7,200 / year (approx.) | Monthly |
-| $1,200 – $7,200 / year (approx.) | Quarterly |
-| < $1,200 / year (approx.) | Annually |
-
-*Confirm current thresholds on SETS — the Ministry adjusts these from time to time.*
-
-### Due dates
-
-- **Due dates** — Returns and payment are due by the 20th day of the month following the reporting period end.
-
-### Vendor commission
-
-- **Vendor commission** — Vendors that file and pay on time may retain a small commission (a percentage of PST collected, capped per return). Verify the current commission rate and cap on the SETS portal as part of any return preparation.
-
-### Penalties
-
-- **Penalties** — Late filing and late payment attract penalties and interest. Persistent non-compliance can result in licence revocation and director liability for unremitted PST.
-
-## 9. Coordination with federal GST
-
-- **Non-harmonized coordination** — Saskatchewan is non-harmonized: 5% federal GST and 6% provincial PST apply separately and are both calculated on the GST-exclusive sale price.
-
-### Worked rate example
-
-- **Worked rate example** — Sale price (PST/GST exclusive): $100.00 - GST 5%: $5.00 - PST 6%: $6.00 - Total to customer: $111.00 Note: SK PST is not calculated on top of GST (no tax-on-tax). The two taxes are parallel, both applied to the base price.
-
-### Input tax credits / refunds
-
-- **ITC comparison** — GST: Registered businesses recover input GST via ITCs on the GST34 federal return. PST: There is no general input tax credit mechanism. PST is a true retail sales tax — businesses generally pay PST on their inputs as a final cost, except where a specific exemption applies (resale, direct agents in manufacturing, qualifying farm inputs, etc.).
-
-This is a major contrast with GST/HST and is the single most common error among first-time SK PST advisors: do not assume PST paid on business inputs is recoverable. It generally is not.
-
-## 10. Worked example — Regina e-commerce with SK + national customers
-
-Prairie Threads Inc., a Regina-based online clothing retailer, in Q2 2025:
-
-- Sells children's clothing $40,000 (national mix) — assume $5,000 to SK customers, $35,000 elsewhere in Canada.
-- Sells adult clothing $60,000 — assume $10,000 to SK customers, $50,000 elsewhere in Canada.
-- Sells SaaS subscriptions to an inventory-tracking app $20,000 — assume $3,000 to SK customers, $17,000 elsewhere (mostly AB).
-- Purchases $2,000 of office supplies from an Alberta vendor with no PST charged.
-- Purchases $4,000 of packaging materials from a SK wholesaler — packaging is consumed in the business (not resold separately).
-
-**SK PST analysis table**
-
-| Item | Amount | Taxable in SK? | PST collected |
-| --- | --- | --- | --- |
-| Children's clothing to SK customers | $5,000 | **Exempt** (children's clothing exemption) | $0 |
-| Children's clothing to non-SK customers | $35,000 | Out of province — no SK PST | $0 |
-| Adult clothing to SK customers | $10,000 | Taxable @ 6% | **$600** |
-| Adult clothing to non-SK customers | $50,000 | Out of province — no SK PST (check destination PST) | $0 |
-| SaaS to SK customers | $3,000 | Taxable @ 6% (computer services / telecom services expansion) | **$180** |
-| SaaS to non-SK customers | $17,000 | Out of province — no SK PST | $0 |
-
-**Self-assessment.** Alberta office supplies $2,000 purchased without PST and consumed in SK → self-assess **$120** SK PST.
-
-**Inputs not recoverable.** The $4,000 packaging materials purchased from the SK wholesaler — PST of $240 was charged at the till. **No ITC mechanism** — this is a final cost (unless the packaging is incorporated into and sold with the product, in which case the "direct agent" / packaging exemption may apply; check current Ministry guidance and obtain a resale declaration).
-
-**Q2 return summary (PST only)**
-
-| Line | Amount |
-| --- | --- |
-| PST collected on sales | $780 |
-| PST self-assessed | $120 |
-| **Total PST payable** | **$900** |
-| Less: vendor commission (if eligible) | (small amount per SETS schedule) |
-| Net remittance | ~$900 |
-
-**Federal GST.** Separately, Prairie Threads files a GST34 reporting GST collected on adult clothing nationally (children's clothing is GST zero-rated), and claims ITCs on GST paid on inputs.
-
-## 11. Conservative defaults
-
-- **Conservative defaults list** — When the facts are unclear, default conservatively: 1. When in doubt, register. SK has no dollar threshold; any pattern of regular SK sales argues for registration. A late registration is more painful than an early one. 2. When in doubt, charge PST. The expanded services base (post-2017 / 2022) means software, telecom, accommodation, and many professional services are taxable. If you cannot find a clear exemption, default to taxable. 3. When in doubt, self-assess. Out-of-province purchases consumed in SK without PST charged → self-assess on the next return. 4. Do not assume an input credit. Unlike GST, PST paid on business inputs is generally a final cost. Only claim a resale or direct-agent exemption where you have documentation supporting it. 5. Get a fresh rate confirmation from SETS before filing — rates and thresholds (especially filing-frequency cutoffs and vendor commission) are adjusted periodically. 6. Route complex construction, real property, indigenous, and audit-defence issues to a credentialed SK practitioner (refusals R-SK-4, R-SK-5, R-SK-7). 7. Document exemption claims — retain customer declarations, PST resale numbers, and shipping documentation for at least the statutory record-retention period.
-
-## 12. Sources
-
-- *The Provincial Sales Tax Act*, Saskatchewan (RSS 1978, c P-34.1, as amended) — primary legislation.
-- *The Provincial Sales Tax Regulations* — regulations under the PST Act.
-- **Saskatchewan Ministry of Finance, Revenue Division** — administrative bulletins ("Information Bulletins") and notices, especially:
-  - Bulletins on taxable services (post-2017 expansion)
-  - Bulletins on electronic distribution platforms and out-of-province sellers (2018, 2020 amendments)
-  - Bulletin on exemption certificates and resale documentation
-- **SETS — Saskatchewan eTax Services portal**: sets.saskatchewan.ca — current filing, registration, rate schedules, vendor commission, and filing-frequency thresholds.
-- *Government of Saskatchewan — Finance — Taxes — Provincial Sales Tax* policy pages.
-
-**Verification status.** `verified_by: pending` — this skill must be reviewed and signed off by a Saskatchewan-credentialed practitioner before being relied upon for a client engagement. Conservative defaults are applied throughout, but rates, thresholds, and the scope of taxable services are subject to legislative and administrative change; always reconcile against the current SETS portal and Ministry bulletins at the time of filing.
+# Saskatchewan provincial sales tax v2.0
+
+## Scope
+
+Prepare the provincial retail-sales-tax workpaper for goods/services consumed or used in Saskatchewan under The Provincial Sales Tax Act, R.S.S.1978,c.P-34.1, as amended. Saskatchewan has its own tax and return; it is not an HST province. Ordinary PST has no general input-tax-credit mechanism. Actual resale/production exemptions, statutory refunds and corrections are distinct from federal GST/HST input credits. [Act ss.3-5,8](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download).
+
+`canada-gst-hst` owns the separate federal supply/place, registration, tax, zero-rating and input-credit workpaper. Other provincial owners include `bc-pst`, `mb-rst` and `qc-qst-return`; do not send a Quebec question to a nonexistent shorthand slug. Supported Saskatchewan work can continue while a specialised other-province or legal issue is referred. [CRA taxable/zero-rated distinction](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
+
+| Quick reference | Entry |
+|---|---|
+| Currency/administrator | CAD; Saskatchewan Ministry of Finance, Revenue Division |
+| Account | Actual vendor's licence or registered consumer number, with representative authority and filing assignment |
+| Portal | Saskatchewan Electronic Tax Service, SETS; paper/mail options exist under actual current instructions |
+| Core return workpaper | Sales/collectable tax, supported exemption/location evidence, own-use purchases, prior tax/refund/write-off/recovery and account reconciliation |
+| Preserved original example | Prairie Threads Inc., Regina, all original customer groups and amounts retained |
+
+## Ask the client first
+
+1. Obtain legal/entity/trade name, licence/consumer account, actual start/registration/closure, current assigned period and any variation, premises/other provinces and authorised representative. An account/payment and a filed return are different evidence.
+2. Obtain dated invoices and actual goods/services, consideration, discounts, charges, GST/PST-inclusive presentation, customer/delivery and consumption/use facts. Get transaction dates for historic-rule changes rather than assuming current law applies to old periods.
+3. For remote/platform sales, obtain seller/platform role, payment collection, actual platform licence/remittance evidence, orders/solicitation/delivery/consumption and direct-channel sales. No local office does not itself establish an exemption.
+4. For a claimed small trader, obtain individual/home status, actual annual sales, production/service/delivery location, non-commercial customer and competition/advertising facts and tax paid on inputs. Do not apply it to a non-resident vendor or online marketplace merely because sales are small.
+5. Reconcile taxable/exempt/outside-province sales, collectable tax, own-use imports/inventory withdrawals, supporting resale/exemption evidence, bad-debt/write-off/recovery/refund records and tax already remitted.
+6. Obtain the actual professional-service Saskatchewan relationship, software/cloud/access/users and mixed-jurisdiction allocation, insurance category, contractor/property/security/clearance, private vehicle/value, Indigenous recipient/reserve/delivery, farm/manufacturing and other commodity-tax facts before finalising a specialist claim.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Supported rate, amount and conditions | Official source |
+|---|---|---|
+| General taxable goods/services | 6% of actual taxable value, with statutory scope/exceptions | [Act s.5](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [current government](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins) |
+| Ordinary taxable passenger vehicle | General 6% framework, subject to actual private/used, fair-value, trade-in and specific valuation/exemption rules; not a blanket exemption for used goods | [Act s.5 and vehicle provisions](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download) |
+| Taxable insurance contracts | 6% under the separate PST insurance provisions, category/exemptions and actual fee base; distinct from tax paid by an insurer under another statute | [Act s.5.9](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-73](https://sets.saskatchewan.ca/rptp/wcm/connect/b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1/PST.073%2BInsurance%2BContracts.pdf?CACHEID=ROOTWORKSPACE-b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1-oVY6hcZ&MOD=AJPERES) |
+| Beer/wine/spirits | Separate 10% Liquor Consumption Tax where applicable; not a special PST rate replacing every other tax | [Act s.8(1)(d)](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [government tax catalogue](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins) |
+| Registration | No general revenue safe harbour for nonresident vendors, but actual marketplace-only and limited home small-trader rules can change obligations | [Act ss.3.1,4](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true) |
+| Small-trader administrative guideline | Annual sales **less than** CAD 10,000 plus the actual home/non-commercial/tax-paid and other restrictions; not a universal small-supplier threshold | [PST-5 sectionC](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true) |
+| Filing frequency guide | Annual tax 0throughCAD 4,800: annual;4,800through 12,000: quarterly;over 12,000: monthly. Government summary overlaps at exactly 4,800; follow actual account assignment and hold any unresolved boundary rather than choose it | [Current government table](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return) |
+| Electronic return and payment | Last day of the month following period end where **both** filing and payment are electronic | [Government filing instruction](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true) |
+| Non-electronic filing or payment | Twentieth of the month following period end; using only one electronic leg does not give the later deadline | [Government filing instruction](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true) |
+
+### Establish the actual vendor, consumer, remote or platform route
+
+1. Apply the statutory vendor/licence and taxable retail-sale requirements before accepting a collection position. The definition reaches the actual Saskatchewan consumption/relationship and remote supplier, not just an office address. A person purchasing untaxed goods/services for own use can have a consumer/self-assessment obligation even without retail output sales. [Act ss.3-5,14](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 vendor/consumer instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+2. General remote taxable-sales obligations do not have a universal dollar safe harbour, but “every sale by anyone must register” is also too broad. Examine actual retail/non-business facts and the statutory marketplace-only exception and limited administrative small-trader guideline. A single private sale can still have buyer tax or a special vehicle registration collection route. [Act ss.4-5](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+3. Under the limited home small-trader guidance, an individual producing and selling small-scale/non-commercial goods from the residence has specific annual sales, location and tax-paid input conditions. The guidance extends specified home services to non-commercial customers. It excludes outside-home/marketplace/commercial-customer/competitive-advertising cases and nonresident vendors. Treat it as a bounded administrative guideline, not an automatic exemption for any company below the amount. Preserve the actual evidence and ruling if facts are near the boundary. [PST-5 sectionC](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+4. A marketplace facilitator or online accommodation platform can be a deemed vendor where the actual statutory facilitation/payment conditions apply, whether or not it operates physically in the province. A seller retailing exclusively through the appropriately licensed platform has the stated licence exception; own direct sales and its own untaxed consumption remain separate. Obtain actual licence/collection/remittance evidence, not just a marketplace brand. [Act ss.3.1,4(2.1)](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 platform instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+5. Prepare the actual SETS/registration application or permitted paper route with real business identity, activities, location and dates. A vendor licence and registered consumer account are not interchangeable. The actual bulletin says businesses are **not required** to state their vendor licence number on all sales invoices; that old universal invoice requirement was false. Preserve any licence display/inspection and valid resale evidence duties separately. [Act s.4](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 actual licence/invoice instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+6. Notify actual business/entity/location/ownership/closure changes and complete outstanding periods through valid cancellation. A licence is not automatically transferred with a corporation/asset sale. Obtain the specific current account determination rather than treating a changed trading name as new or closed without evidence. [PST-5 account duties](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+
+### Classify the supply, Saskatchewan relationship and taxable base
+
+7. Start from the actual statutory tangible-property, service and insurance categories. The Act's service list includes accounting, advertising, architectural, engineering, legal, commercial cleaning, employment placement and real-property services in addition to other defined services. Telecommunication/computer/software/accommodation, repair/install, lawn/garden, veterinary, laundry, credit-reporting/collection, admissions and insurance each need their actual source, definition and current exceptions. This guide retains all original category investigations but does not certify every industry transaction from a list alone. [Act s.3 definitions and s.5](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [official bulletin catalogue](https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/).
+8. For accounting, obtain the actual service and Saskatchewan relationship. PST-62 includes financial statements/bookkeeping/payroll/tax documents/audit and directly related consulting, but also has exempt service/disbursement and mixed-jurisdiction rules. Do not tax every accountant's charge simply by job title, or treat every out-of-province client as exempt without checking its actual local connection. [PST-62 bounded scope and relationship](https://sets.saskatchewan.ca/rptp/wcm/connect/b764c11e-b557-4dfa-a25b-9e59797533d0/PST.062%2BAccounting.pdf?MOD=AJPERES).
+9. Software/cloud, downloaded versus accessed product, services, subscriptions, telecom and digital platform fees require actual customer/use/device/service facts and current definitions. Do not import Manitoba's2026 start date or BC's software test into Saskatchewan. Where current product-specific classification was not established, keep the question and amount explicit instead of defaulting all services to taxable.
+10. Compute the actual value including statutory taxable delivery/service/processing and other consideration, less supported discounts and exclusions. GST is excluded under the stated parallel-tax rules; GST-inclusive displayed prices require removing the federal component before the correct PST calculation. Do not calculate PST on a post-GST total or apply a rounded conversion factor where an exact supported base is available. [Act consideration/value provisions](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 invoice/base instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+11. Collect and account for tax at the applicable transaction time; reconcile credit sales, bundled charges, price adjustments, related-party/noncash values and any actual approved special method. Unknown documentation does not justify a highest-tax guess. An invoice tax charged in error requires proper correction/remittance handling, not unilateral retention of the customer's money. [Act collection/refund provisions](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+12. Retain the original out-of-province delivery and goods-use investigation. A customer's mailing address or IP log alone is not the complete legal supply/location determination. Obtain actual shipment/common-carrier/use evidence and allocate multi-jurisdiction services on an appropriate documented basis. Do not require all federal and provincial sales lines to agree when their scope legitimately differs. [Act s.8(1)(jj) and scope](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [accounting mixed-jurisdiction instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/b764c11e-b557-4dfa-a25b-9e59797533d0/PST.062%2BAccounting.pdf?MOD=AJPERES).
+
+### Exemptions, clothing, own-use and industry boundaries
+
+13. Apply actual statutory exemptions rather than federal assumptions or an old province comparison. Preserve the original groceries, prescription/medical, farm/fertilizer/seed/feed, books/reading material, residential rent/property, manufacturing/direct agents/raw materials, resale and export work. Each needs its actual product/use/recipient and certificate/document conditions; a federal zero-rated item, ISBN, business account or verbal intended use is not automatically sufficient. [Act s.8](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [official subject catalogue](https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/).
+14. **Children's clothing:** the old blanket Saskatchewan exemption is wrong. Current Act general retail tax and its exemption list do not supply the old exemption, and the official current-hosted tax notice explicitly taxes adult **and children's** clothing. Historical 2011 material described an earlier exemption and is not a current rule. Preserve child/product classification and any genuine specialised medical/other exemption, but do not exempt an ordinary garment just by the purchaser's age. [Act ss.5,8](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [official current-hosted notice](https://sets.saskatchewan.ca/rptp/wcm/connect/008a66cd-3674-42f3-824c-e7525bfa0f32/IN%2B2017-09%2BTradeshows.pdf?MOD=AJPERES&attachment=true&id=1701375168654).
+15. **Private used goods:** do not claim all non-business used goods are exempt. The actual vendor guidance describes a limited deduction for eligible used personal goods and exclusions for vehicles/commercial use; actual valuation/trade-in/registration rules need the current vehicle or used-goods workpaper. A tax-paid input history does not automatically mean no tax on its next retail sale. [Act s.5](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 used goods instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+16. **Manufacturing, farm and packaging:** a qualifying resale/raw-material/direct-agent exemption does not exempt every business input. Obtain actual transformation/use, customer transfer, disposable versus returnable packaging, separately sold versus retained item, certificate and supplier tax. The old rule that all packaging is a final cost unless separately resold is too broad. Keep a potentially mischarged tax as an exemption/refund investigation, not a general input credit. [Act s.8(1)(kk),(2)-(3)](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [official manufacturing/used-goods catalogue](https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/).
+17. **Own-use imports:** where the supplier did not collect applicable PST, self-assess the supported taxable value for actual local use, including actual laid-down/foreign-currency charges where required. Examine inventory withdrawals, promotions, business assets, untaxed repairs/services and prior tax. A purchase for a taxable business does not automatically create resale relief; tax properly paid is not a GST-style credit. [Act s.5(5),(9)-(11)](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 own-use/consumer rules](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+18. **Real property/contractors:** a sale of land and services relating to its construction/alteration/repair are separate questions. Saskatchewan's statute expressly taxes defined real-property services and has specific supply/install, builder, security and clearance requirements; do not apply the BC ordinary contractor-input treatment blindly. Obtain contract date, total charges, materials, PE/site and actual clearance/security facts for the specialist. [Act ss.3(1)(k),5(6)-(6.3),29-29.01](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download).
+19. **Indigenous/reserve:** obtain the actual qualifying recipient, location/service connection, delivery and documentation, applying the particular exemption/ruling. Neither status alone nor any reserve-address billing is an automatic result. Keep the old referral with the actual legal gap and records. [Official First Nations subject route](https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/).
+20. **Commodity/insurance:** beer/wine/spirits are exempt from PST where the separate Liquor Consumption Tax applies; that remains a separate 10%tax and return, not renamed PST. Tobacco/fuel/cannabis/vapour and their other taxes need actual category-specific interaction, not a blanket replacement assertion. PST on taxable insurance contracts differs from the insurer's Insurance Premiums Tax; policy/category/exemption and fees require the actual law/bulletin. [Act ss.5.9,8(1)(d)](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [government tax catalogue](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins), [PST-73](https://sets.saskatchewan.ca/rptp/wcm/connect/b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1/PST.073%2BInsurance%2BContracts.pdf?CACHEID=ROOTWORKSPACE-b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1-oVY6hcZ&MOD=AJPERES).
+21. **Mixed bundles:** identify the taxable/exempt components and actual value and rule; a single price does not make every possible supply taxable by an invented default. The current grocery/gift-package guidance uses the taxable portion's actual value and distinguishes disposable packaging from a valuable decorative container. Refer the actual unresolved bundle, not a universal all-or-nothing rule. [Official bundle guidance](https://sets.saskatchewan.ca/rptp/wcm/connect/94a41317-34b9-46bf-9758-c27b18ee4b31/PST.002%20Grocery%2C%20Convenience%20and%20Drug%20Stores.pdf?MOD=AJPERES).
+
+### Filing, adjustments, payments and records
+
+22. Obtain the actual assigned period and tax population. The current public table replaces the old approximate 1,200/7,200bands with 4,800/12,000bands, but its summary overlaps at exactly 4,800. Use the actual account assignment and obtain the controlling regulation/variation for a disputed exact boundary; don't choose one by guess. [Current filing table](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return).
+23. Registered nil periods still need a nil return. Both return and payment must be electronic to use the government's later month-end deadline. A paper return with online banking, or an electronic return with non-electronic payment, falls under the stated earlier twentieth rule. Paper filing is still listed, so a blanket all-SETS-only requirement is wrong. Obtain applicable weekend/holiday/receipt and operational bank timing for the actual due date, not an unexplained default. [Current filing methods and dates](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return), [PST-5](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+24. Reconcile actual Saskatchewan gross sales, taxable/exempt/place rows and tax collectable, purchases for own use, supported previous remittance, refunds/credit and bad-debt/recovery work. The bulletin says actual return BoxA is total Saskatchewan taxable **and exempt** sales. Use the actual account form/portal fields and adjustment instructions; don't invent a universal net-remittance field or commission. [PST-5 return instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+25. The old description promised a vendor commission without a source or usable current formula. No such entitlement is established by the current sources read here. Do not deduct a guessed amount; keep any claimant-specific asserted commission for a controlling-law determination. This is not a claim that all historic collection schemes have been researched or repealed.
+26. For tax paid in error, establish the actual purchaser/amount, source, invoice and overpayment time. The statutory refund rules and current official catalogue describe a four-year claim window and refund scope. Preserve bad-debt/write-off evidence, prior remittance, actual proportion and later recovery, checking the applicable legal method and period before claiming. A GST input credit or a tax-paid business input is not sufficient. [Act s.8.11](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [current official refund guidance](https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/), [accounting bad-debt subject](https://sets.saskatchewan.ca/rptp/wcm/connect/b764c11e-b557-4dfa-a25b-9e59797533d0/PST.062%2BAccounting.pdf?MOD=AJPERES).
+27. Preserve tax/interest/penalty, licence, director and enforcement investigations but obtain the actual failure type, notice and current legal rate. A blanket late fine or promised relief is not established here. The Act's collection/enforcement cross-reference to The Revenue and Financial Services Act is not a substitute for reading an actual disputed penalty. Refer audit, voluntary disclosure and ruling work with authority, facts and deadlines. [Act ss.8.1,43.2](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download).
+28. Keep sufficient invoices, prices/taxes, own-use purchases, licence/exemption/registry checks, delivery/use/allocation, platform evidence, refund/debt/recovery and actual filing/payment records. A record-age or account closure does not authorise deleting evidence needed for an unresolved claim/audit. Obtain the exact statutory retention and any direction for the case; no unverified number is inserted here.
+29. Complete the return only after reconciling tax and account balances. Obtain authorised sign-off, accepted return acknowledgement and actual payment/credit receipt; bank payment alone does not prove the return was filed. Keep the separate federal return and other provincial statements. This method prepares work for a human; it does not register, submit or pay.
+
+## Boundary and exception table
+
+| Original refusal/default | Correct response |
+|---|---|
+| R-SK-1 other provincial tax | Use `bc-pst`, `mb-rst` or `qc-qst-return` for that jurisdiction, not a nonexistent Quebec shorthand |
+| R-SK-2 federal tax | Use `canada-gst-hst`, retain separate classification, place and input-credit mechanics |
+| R-SK-3 commodity taxes | Keep liquor/tobacco/fuel/cannabis/vapour actual separate-statute interaction and rates |
+| R-SK-4 property/construction | Obtain actual statutory service, materials, date, security/clearance and specialist work |
+| R-SK-5 Indigenous/reserve | Obtain recipient, actual land/delivery/service connection and controlling exemption, not status alone |
+| R-SK-6 insurance premiums tax | Distinguish insurer tax from PST on a taxable contract and its actual exemption/base |
+| R-SK-7 audit/disclosure/ruling | Preserve the authorised legal/administrative referral with records and deadlines |
+| R-SK-8 historic years | Use actual period's law; no universal current 2017-plus shortcut or retroactive new rule |
+| Unknown registration | Apply actual vendor/consumer/platform and bounded small-trader tests; no speculative signup |
+| Unknown service/location | Research actual category/use and isolate unresolved rows; no default overcharge |
+| Untaxed input | Assess supported liability only; no invented input credit or tax-on-every-uncertain-purchase default |
+| Rate/period | Current official amount and actual assignment; don't claim a fresh portal read that was not performed |
+| Exempt sale | Obtain actual required evidence and law; do not preserve a retired child-clothing exemption |
+| Marketplace | Verify role/licence/payment/collection evidence; direct/own-use jobs remain separate |
+
+## Worked cases
+
+### Case 1: ordinary parallel-tax sale
+
+For a supported ordinary taxable CAD 100sale with federal standard 5% and provincial 6% both applicable to the stated tax-exclusive base, federal tax 5and PST 6give total 111. This is a stated classification, not a rule that all Saskatchewan supplies bear both taxes. If the selling price already includes GST/PST, back out the appropriate components instead of compounding them. [PST-5 parallel-tax instruction](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true), [CRA](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
+
+```oa-check
+name: Saskatchewan supported ordinary parallel taxes
+inputs:
+  tax_exclusive_price: 100
+steps:
+  - pst: tax_exclusive_price * 0.06
+  - federal_gst_given_standard_scope: tax_exclusive_price * 0.05
+  - total: tax_exclusive_price + pst + federal_gst_given_standard_scope
+expected:
+  pst: 6
+  federal_gst_given_standard_scope: 5
+  total: 111
+```
+
+### Case 2: preserve Prairie Threads Inc., correct children's clothing
+
+The original Regina business **Prairie Threads Inc.** has the same original Q2 2025records: children's clothing 40,000of which 5,000Saskatchewan/35,000elsewhere; adult clothing 60,000of which 10,000Saskatchewan/50,000elsewhere; inventory-app SaaS 20,000of which 3,000Saskatchewan/17,000elsewhere; untaxed Alberta office supplies 2,000; Saskatchewan packaging 4,000with 240tax charged. The original child's exemption was already unsupported for that stated period; preserve the actual historical return and correct its law rather than default it to an old 2011exemption. [Actual current-hosted tax notice includes child clothing](https://sets.saskatchewan.ca/rptp/wcm/connect/008a66cd-3674-42f3-824c-e7525bfa0f32/IN%2B2017-09%2BTradeshows.pdf?MOD=AJPERES&attachment=true&id=1701375168654), [Act general rate/exemption list](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download).
+
+For a **calendar 2026 workpaper using those figures**, explicitly assume ordinary taxable clothing, a supported taxable Saskatchewan software/service component, actual outside-Saskatchewan delivery/use on the other rows, taxable untaxed office supplies, no supported other adjustment and one actual assigned period. Saskatchewan taxable output base is 18,000, not 13,000: PST on child clothing 300, adult 600, software 180, total 1,080; own-use tax 120; total liability 1,200before any actual separately supported adjustment. No source-supported commission is assumed. [Act](https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download), [PST-5 base/own-use instructions](https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true).
+
+```oa-check
+name: Saskatchewan 2026 Prairie Threads corrected taxable clothing
+inputs:
+  sk_children_clothing: 5000
+  sk_adult_clothing: 10000
+  supported_sk_taxable_software: 3000
+  untaxed_taxable_office_supplies: 2000
+steps:
+  - taxable_sales: sk_children_clothing + sk_adult_clothing + supported_sk_taxable_software
+  - children_tax: sk_children_clothing * 0.06
+  - adult_tax: sk_adult_clothing * 0.06
+  - software_tax: supported_sk_taxable_software * 0.06
+  - collectable: children_tax + adult_tax + software_tax
+  - own_use: untaxed_taxable_office_supplies * 0.06
+  - liability_before_supported_adjustments: collectable + own_use
+expected:
+  taxable_sales: 18000
+  children_tax: 300
+  adult_tax: 600
+  software_tax: 180
+  collectable: 1080
+  own_use: 120
+  liability_before_supported_adjustments: 1200
+```
+
+Keep the original packaging expense and 240tax-paid facts. Determine actual packaging transfer/use and exemption before treating it as final cost or seeking a specific correction; there is no general 240PST input credit. Likewise, ordinary children's clothing is **not federally zero-rated solely because it is for a child**. CRA describes clothing as taxable and some provinces' specific provincial HST rebates separately; any temporary historic relief needs its actual dates. Prepare the federal workpaper on those facts rather than omitting the child's whole national sales stream. [CRA taxable and point-of-sale rebate distinction](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html).
+
+## When to refuse or refer
+
+Do not finalise an unsupported material registration, supply/base/place, exemption, platform or adjustment result. Preserve and continue supported rows, naming the actual missing law/evidence. Refer the original eight specialist/historic issues as above. Don't charge, self-assess, register or promise a credit merely because a broad conservative default sounded safer.
+
+## Completion checklist
+
+- Actual vendor/consumer/platform and bounded home-small-trader route, not an unconditional first-dollar or revenue slogan.
+- Actual transaction date, Saskatchewan connection and current service/product/base determined.
+- Clothing, private used goods, resale/production/packaging and other exemption jobs correctly tested.
+- Own-use tax, marketplace collector, bad debt/refund/recovery and account records reconciled.
+- Separate liquor/insurance/commodity/property/Indigenous and federal workpapers retained.
+- Actual period and both electronic legs considered; exact ambiguous filing-band boundary held rather than guessed.
+- No fictional commission or general PST input credit.
+- Human authority, accepted return and actual payment/statement kept separate.
+
+## Sources
+
+| Source actually read and scope | Official URL | Read on |
+|---|---|---|
+| Read for statutory definitions/service list, vendor/platform/licence, general rate/own-use, property, insurance, exemption list, collection/refund and security/clearance provisions; not every regulation or enforcement rule | https://publications.saskatchewan.ca/api/v1/products/779/formats/1196/download | 2026-11-14 |
+| Read for current reporting table, actual electronic/non-electronic dates, nil requirement and paper/electronic methods; exact 4,800 summary overlap retained as gap | https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax/file-your-pst-return | 2026-11-14 |
+| Read for actual PST-5 vendor/consumer, nonresident, platform and small-trader conditions, invoices, own-use and return/deadline instructions; direct download failed, official web text was read | https://sets.saskatchewan.ca/rptp/wcm/connect/559aa7c9-984d-405a-8ddf-c91848dd8dd7/PST.005%2BRegistration%2Band%2BReporting%2BRequirements.pdf?CACHE=NONE&CONTENTCACHE=NONE&MOD=AJPERES&attachment=true | 2026-11-14 |
+| Read for current government programme/bulletin catalogue and general refund/application conditions, not every linked industry bulletin | https://sets.saskatchewan.ca/rptp/portal/footer/taxinformation/provincial-sales-tax/ | 2026-11-14 |
+| Read for bounded accounting services, relationship/partial allocation and preserved exemption/disbursement/debt subject routes | https://sets.saskatchewan.ca/rptp/wcm/connect/b764c11e-b557-4dfa-a25b-9e59797533d0/PST.062%2BAccounting.pdf?MOD=AJPERES | 2026-11-14 |
+| Read for official current-hosted notice's explicit ordinary adult/child clothing tax statement and separate liquor/period distinctions; not a new 2026amending Act | https://sets.saskatchewan.ca/rptp/wcm/connect/008a66cd-3674-42f3-824c-e7525bfa0f32/IN%2B2017-09%2BTradeshows.pdf?MOD=AJPERES&attachment=true&id=1701375168654 | 2026-11-14 |
+| Read for bounded PST-73 taxable insurance premium/fee base and unlicensed supplier's own-use payment route; not a complete policy exemption audit | https://sets.saskatchewan.ca/rptp/wcm/connect/b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1/PST.073%2BInsurance%2BContracts.pdf?CACHEID=ROOTWORKSPACE-b9fd728b-b4fc-4a9e-a59e-c542fb87d6f1-oVY6hcZ&MOD=AJPERES | 2026-11-14 |
+| Read for current general PST and separate liquor/insurance/commodity tax catalogue; rates not copied across regimes | https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins | 2026-11-14 |
+| Read for taxable versus zero-rated clothing/exports, federal input credits and specific provincial point-of-sale rebate distinction | https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html | 2026-11-14 |
+| Read for actual gift-package taxable portion/decorative versus disposable-container discussion and liquor separation | https://sets.saskatchewan.ca/rptp/wcm/connect/94a41317-34b9-46bf-9758-c27b18ee4b31/PST.002%20Grocery%2C%20Convenience%20and%20Drug%20Stores.pdf?MOD=AJPERES | 2026-11-14 |
+
+Not yet confirmed: controlling filing regulation/assignment at exactly CAD 4,800 annual tax, which overlaps in the current government summary; any claimant-specific current commission entitlement, all specialised software/cloud, vehicle/value, contractor/property, Indigenous, insurance, medical/farm/manufacturing/direct-agent/packaging and mixed-bundle determinations; exact current record-retention direction, failure-specific penalty/interest and holiday/receipt rules. The old approximate 1,200/7,200 filing bands, universal 20th electronic deadline, compulsory invoice licence number, blanket child-clothing/private-used exemption, speculative commission, federal zero-rating of all child clothing and automatic all-services tax defaults are corrected. The official consolidation read lists amendments through 2025; no claim is made that every subsequently proposed industry rule was reviewed. No accountant approval is added or inferred.

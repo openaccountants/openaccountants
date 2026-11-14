@@ -1,14 +1,15 @@
 ---
 name: pt-transfer-pricing
 description: "Use this skill for Portuguese transfer pricing (preços de transferência) under article 63 of the IRC Code and Portaria 268/2021. It covers related parties (relações especiais, the 20% holding test), domestic and cross-border dealings, permanent establishments, the arm's length rule and methods, intra-group services, self-adjustments in the Modelo 22, the documentation file (Dossier Principal and Dossier Específico), the EUR 10 million exemption and the EUR 100,000 / EUR 500,000 transaction exemption, the SME simplified file, disclosure in the IES, country-by-country reporting (EUR 750 million) and its notification, advance pricing agreements (art. 138 CIRC, Portaria 267/2021), penalties under RGIT art. 117(6), and corresponding adjustments and the EU dispute procedure (Lei 120/2019). Tax year 2026. Trigger on: transfer pricing Portugal, preços de transferência, dossier fiscal, relações especiais, CbCR Portugal, APPT, Portaria 268/2021. Out of scope: IRC rates and the base in general (pt-corporate-tax), treaty relief for individuals (pt-foreign-source-treaties), VAT (portugal-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Portugal transfer pricing (preços de transferência), 2026
@@ -46,13 +47,13 @@ Indirect holdings are measured under article 483(2) of the Commercial Companies 
 |---|---|---|---|
 | Related-party holding test | at least 20% of capital or voting rights, direct or indirect | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc63.aspx |
 | Exemption from the transfer pricing documentation file: total annual income (rendimentos) in the period below | EUR 10,000,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf (art. 17(3)) |
-| Start-up year: the EUR 10,000,000 test uses the annualised estimated income in the start-of-activity declaration | annualised | 2026 | Portaria 268/2021 art. 17(4) |
-| Exemption for small related dealings even above EUR 10,000,000: value per counterparty, measured at market value, not above | EUR 100,000 | 2026 | Portaria 268/2021 art. 17(5) |
-| Same exemption: value in aggregate not above | EUR 500,000 | 2026 | Portaria 268/2021 art. 17(5) |
-| Exemptions do not cover dealings with residents of listed preferential tax regimes (art. 63-D(1) or (5) LGT) | no exemption | 2026 | Portaria 268/2021 art. 17(6) |
-| SME not exempt and not followed by the Large Taxpayers Unit | simplified file (Dossier simplificado); it must also hold full arm's length evidence for any dealing with a listed preferential regime, business transfers, unlisted shares, restructurings, real estate or intangibles | 2026 | Portaria 268/2021 art. 19(1) and (2) |
-| Comparability studies stay valid, if facts have not changed substantially (financial data updated each year) | 3 years | 2026 | Portaria 268/2021 art. 17(12) |
-| Disclosure of related-party dealings in the annual return (IES) | every IRC taxpayer, yes or no, with detail if yes | 2026 | art. 63(7) CIRC |
+| Start-up year: the EUR 10,000,000 test uses the annualised estimated income in the start-of-activity declaration | annualised | 2026 | Portaria 268/2021 art. 17(4) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| Exemption for small related dealings even above EUR 10,000,000: value per counterparty, measured at market value, not above | EUR 100,000 | 2026 | Portaria 268/2021 art. 17(5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| Same exemption: value in aggregate not above | EUR 500,000 | 2026 | Portaria 268/2021 art. 17(5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| Exemptions do not cover dealings with residents of listed preferential tax regimes (art. 63-D(1) or (5) LGT) | no exemption | 2026 | Portaria 268/2021 art. 17(6) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| SME not exempt and not followed by the Large Taxpayers Unit | simplified file (Dossier simplificado); it must also hold full arm's length evidence for any dealing with a listed preferential regime, business transfers, unlisted shares, restructurings, real estate or intangibles | 2026 | Portaria 268/2021 art. 19(1) and (2) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| Comparability studies stay valid, if facts have not changed substantially (financial data updated each year) | 3 years | 2026 | Portaria 268/2021 art. 17(12) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf |
+| Disclosure of related-party dealings in the annual return (IES) | every IRC taxpayer, yes or no, with detail if yes | 2026 | art. 63(7) CIRC https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc63.aspx |
 | Country-by-country report: group consolidated revenue in the previous period at or above | EUR 750,000,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx |
 | Advance pricing agreement: maximum term | 4 years | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc138.aspx (art. 138(6)) |
 | APA fee: set by Portaria 923/99 arts. 1 and 2 on average turnover of the 3 prior periods; renewal or revision cut by 50%; further cut of 25% for a micro, small or medium enterprise mainly trading internationally | see Not yet confirmed | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_267_2021.pdf (art. 18) |
