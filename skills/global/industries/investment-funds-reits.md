@@ -1,151 +1,161 @@
 ---
 name: investment-funds-reits
-description: "Use this skill whenever a regulated investment fund, hedge fund, private equity fund, real estate investment trust (REIT), UCITS, AIF, mutual fund, or fund manager asks about sector-specific tax. Trigger on phrases like \"UCITS tax\", \"AIFMD\", \"RAIF\", \"SIF\", \"SICAR\", \"FCP\", \"FCPR\", \"SLP\", \"ELTIF\", \"PE fund\", \"carried interest tax\", \"carry\", \"promote\", \"GP / LP allocation\", \"K-1\", \"PFIC\", \"QEF election\", \"CFC for funds\", \"REIT\", \"Section 856-860\", \"PID\", \"UK REIT\", \"SOCIMI\", \"S-REIT Singapore\", \"J-REIT Japan\", \"Master fund / feeder fund\", \"Investment Tax Act Germany\", \"tax-transparent fund\", \"blockers\", or any question on fund / REIT-specific tax. Covers UCITS / AIF tax interaction, fund-level vs investor-level taxation, REIT regimes globally (US, UK, France, Germany, Netherlands, Spain SOCIMI, Australia AREIT, Singapore S-REIT, Japan J-REIT), carried interest tax (US, UK, France, Italy), and PFIC vs QEF mechanics for US-taxable investors. Does NOT cover: fund formation, AIFMD authorisation, MIFID II compliance, or investment management agreement drafting."
-version: 0.1
+description: "Cross-country fund, manager and investor tax method for 2026, including enacted UK carried-interest changes, UK REIT distributions, PFIC handoffs and explicit limits on unconfirmed country figures."
+version: 1.0
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - corporate-income-tax-workflow-base
 category: vertical
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: sector-guidance
+domain: tax
+type: cross-country-method
 ---
 
-# Investment Funds REITS
+# Investment funds and REITs v1.0
 
-## What this file is
+## Scope
 
-A sector overlay for investment funds and REITs covering fund-level, GP-level, and investor-level taxation.
+A cross-country method for an accountant considering a regulated investment fund, hedge fund, private equity fund, mutual fund, real estate investment trust or fund manager in 2026. Separate the vehicle, manager, general partner and each investor. Regulation as UCITS or an AIF does not itself determine tax transparency, exemption, treaty entitlement or investor reporting.
 
-## Section 1 — Fund taxation principles
+Use `corporate-income-tax-workflow-base` and the current country jobs for the actual return. This is not fund formation, AIFMD authorisation, MIFID II compliance, investment advice or an investment management agreement. No global table establishes eligibility for a tax concession.
 
-**[T1] Two foundational models**
+## Quick reference
 
-| Model | Fund-level tax | Investor-level tax |
+| Question | Required distinction | Source |
 | --- | --- | --- |
-| **Tax-transparent** | None (the fund "looks through" to investors) | Investor taxed on its share of fund income as if directly held |
-| **Tax-opaque (blocker)** | Fund pays CIT (usually with offset for distributions) | Investor taxed only on distributions / dispositions |
+| Is UK carried interest still governed only by the old capital-gains description? | For 2026-27 and later, apply the enacted deemed-trade provisions; qualification changes the amount included, not a universal final tax rate | [ITTOIA 2005, sections 23I-23R, inserted by Finance Act 2026 section 58](https://www.legislation.gov.uk/ukpga/2005/5/part/2) |
+| What must a UK REIT distribute? | Separate PIDs received from other UK REITs from the rest of its relevant property-rental profits | [HMRC IFM22050, CTA 2010 section 530](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm22050) |
+| Are UK PIDs always paid gross? | Ordinary PIDs are subject to deduction at the basic rate; an applicable exception needs its own evidence | [HMRC IFM28005](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm28005) |
+| Is every investment entity outside top-up tax? | Identify the exact excluded-entity category and parent status; do not equate an investment entity with an excluded investment-fund parent | [HMRC MTT10210, Finance (No. 2) Act 2023 section 127](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt10210) |
 
-- US LP / LLC
-- UK Partnership
-- Cayman Exempted LP
-- Luxembourg RAIF as SIF / SCSp (partnership)
-- Irish ILP (Investment Limited Partnership)
+## Ask the client first
 
-### 2.1 UCITS
+- What are the complete ownership chart, governing documents, regulatory permissions, residence, fiscal year and tax classifications in every relevant country?
+- Which entity owns each asset, bears its risks, signs contracts, receives distributions and performs investment-management services?
+- Which investors are individuals, companies, pension funds, charities, sovereign bodies or other funds? Obtain their residence, beneficial-owner and tax-status evidence.
+- Are any investors subject to US tax or another country's anti-deferral rules? Are there PFIC, CFC, hybrid or treaty concerns?
+- What elections, rulings, investor declarations, withholding exemptions, information statements and prior returns exist? Obtain the actual conditions and dates rather than the product's marketing description.
+- How are management fees, performance allocations, carried interest, co-investment returns, expenses, capital contributions, equalisation, redemptions and clawbacks distinguished?
+- For a property vehicle, what are the income and asset composition, development activity, distribution obligations and actual distributions?
 
-**[T1]** UCITS funds (Undertaking for the Collective Investment in Transferable Securities) under Directive 2009/65/EC are usually structured as:
-- **Investment company with variable capital** (SICAV in Luxembourg, ICAV in Ireland)
-- **Common contractual fund** (FCP in Luxembourg / France)
-- **Unit trust** (UK)
+## The method, step by step
 
-- **Luxembourg UCITS fund-level tax** — Subscription tax (taxe d'abonnement) — 0.05% / 0.01% (annual on NAV); no CIT on UCITS profits  _(Luxembourg fund-level tax)_
-- **Ireland UCITS fund-level tax** — ICAV / UCITS exempt CIT under TCA s.739D — Investment Undertaking Tax (IUT) only on Irish resident investors  _(TCA s.739D)_
-- **France UCITS fund-level tax** — FCP transparent; SICAV with specific regime  _(Fund-level tax)_
-- **UK UCITS fund-level tax** — Authorised funds with specific UK fund tax regime  _(Fund-level tax)_
+1. Build the legal and cash-flow map. Keep fund-level income, manager fees, partner allocations, investor distributions and withholding in separate schedules. A feeder and master do not become a single taxpayer merely because they invest together.
+2. Classify the legal vehicle separately under each relevant tax law. A transparent partnership can allocate taxable income before cash is distributed. An opaque company can face entity tax as well as investor tax. An investor may have current anti-deferral income without receiving a distribution. Neither label alone proves the final timing, exemption or rate.
+3. Establish whether the fund qualifies for a particular exemption or special regime. Check legal form, regulated status, eligible investments, investor restrictions, filing duties, elections and continuing conditions. Do not infer tax exemption from UCITS, AIF, REIT or an exchange listing.
+4. Reconcile accounting results to the vehicle's taxable or reportable amounts. Separate interest, dividends, rents, disposals, derivatives, foreign exchange, expenses and capital transactions. Apply the particular country's treatment and current year; do not reuse another country's distribution deduction.
+5. Determine each investor's classification, allocation, withholding and reporting separately. Check source-country taxation, treaty eligibility, beneficial ownership, residence-country credits and relief, anti-deferral and hybrid rules. Non-residence does not by itself prove that no exit or withholding tax applies.
+6. Analyse management compensation independently of investor returns. Identify services, employment/securities treatment, a genuine investment return, carried interest and disguised fixed remuneration. A payment called carry is not necessarily statutory carried interest. Match the applicable date, residence, work locations, holding-period tests and elections before computing tax.
+7. Test every REIT's entry and continuing conditions using that country's law. Distinguish income and asset tests, permitted development, shareholder/ownership restrictions, listing or institutional-investor alternatives, distribution categories and deadlines. Compute actual tax-measure profits rather than multiplying accounting cash flow by a generic percentage.
+8. Run the top-up-tax scope analysis for each group member. Record whether an exclusion depends on ultimate-parent status and whether subsidiaries qualify independently. Separate excluded entities, investment-entity computation rules, consolidation and domestic top-up differences.
+9. Prepare reconciliations to filed returns, withholding certificates and investor statements. Record unconfirmed conditions before presenting a relief as available. Obtain review by an appropriately credentialed fund-sector practitioner before a filing or restructuring recommendation.
 
-### 2.2 AIF (Alternative Investment Fund)
+## Fund forms and regulatory routes
 
-**[T1]** AIFs under AIFMD (Directive 2011/61/EU) have wider product range:
-- Hedge funds
-- Private equity funds
-- Real estate funds
-- Infrastructure funds
-- Hybrid funds
+Retain the following as classification questions, not automatic tax outcomes:
 
-Tax treatment depends on legal form and jurisdiction; typically tax-transparent or low-tax-blocker.
-
-### 2.3 Specific Luxembourg vehicles
-
-**Specific Luxembourg vehicles**
-
-| Vehicle | Tax |
+| Structure or regime | What to establish before using a tax treatment |
 | --- | --- |
-| **SIF (Specialised Investment Fund)** | Subscription tax 0.01% NAV; no CIT (Lux Law 13 February 2007) |
-| **RAIF (Reserved Alternative Investment Fund)** | Choice of SIF-style or SICAR-style; flexible (Law 23 July 2016) |
-| **SICAR (Société d'Investissement en Capital à Risque)** | Subscription tax-exempt; CIT but with extensive participation exemption; capital risk |
-| **SCSp (Special Limited Partnership)** | Tax-transparent (partnership) (Law 12 July 2013) |
+| US LP or LLC, UK partnership, Cayman exempted LP, Irish ILP | Legal entity and tax classification in the fund and investor jurisdictions; elections and anti-deferral interaction |
+| Luxembourg SCSp, SIF, RAIF and SICAR | Partnership or corporate form, actual elected regime, eligible assets, subscriptions, distributions and the conditions of each exemption |
+| Luxembourg SICAV or FCP, Irish ICAV, French FCP or SICAV, UK unit trust | Regulatory status, legal form and separate fund/investor tax rules; a common contractual fund is not automatically treated identically abroad |
+| UCITS under Directive 2009/65/EC | Confirm the current regulatory route and local tax law. The directive's name is not a tax exemption certificate |
+| AIF under Directive 2011/61/EU, including hedge, private equity, property, infrastructure and hybrid funds | Confirm the applicable definition, authorisation or registration and separate tax regime. Do not assume all AIFs are transparent or low-tax |
+| French FCPR or SLP, ELTIF, German Investment Tax Act arrangements | Obtain the actual law, eligible-investor and investment conditions for the relevant year before applying special treatment |
 
-## Section 3 — Carried interest tax
+Current vehicle-specific country figures in the prior edition have not been re-established for this global method. They are explicitly held below, so they cannot silently become a 2026 filing calculation.
 
-**[T1] By jurisdiction**
+## United Kingdom: carried interest from 2026-27
 
-| Country | Treatment | Effective rate |
+The enacted rule in ITTOIA 2005 section 23I treats the relevant individual as carrying on a trade. Subject to the statutory definitions and exclusions, the included profit is the non-qualifying profit plus **72.5% of qualifying profit**. This is a taxable-profit inclusion factor, not a capital-gains rate or the person's complete tax and National Insurance bill. The Finance Act 2026 commencement applies for **2026-27 and subsequent years**, including services performed before that year. [ITTOIA sections 23I-23R and commencement annotation](https://www.legislation.gov.uk/ukpga/2005/5/part/2).
+
+Apply the permitted-deduction rule in section 23N, including allocation between qualifying and non-qualifying amounts and amounts already used. Do not deduct ordinary management expenses indiscriminately: section 23N restricts what can reduce this deemed profit. Earnings and employment-related-securities taxation, the irrevocable section 23J election, deceased-individual rules, temporary non-residence, anti-avoidance and double-taxation provisions require separate review where relevant.
+
+Qualification is determined under Schedule A1, not by calling every private-equity return qualifying. Work-location and residence facts are also separate. Section 23K apportions the deemed trade using applicable workdays, with specific non-resident exclusions. Do not assume UK residence, UK source or an employment classification from a supplied tax pack.
+
+The HMRC page IFM37120 still describes the capital-gains framework despite its recent manual update date. It does not override the later operative law. Use the actual year and enacted provisions, not the freshness of a web page's header. [HMRC IFM37120, historical framework](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm37120).
+
+### Worked case: included profit, not final tax
+
+Fabricated pounds. Assume the legal classification, period, permitted deductions, source and full qualifying status have already been established. Qualifying carry is 100,000 and the permitted deduction attributable to it is 4,000. Non-qualifying carry is 20,000 with a separately attributable permitted deduction of 1,000. The resulting included profit is 88,600. Compute the person's actual income tax and applicable contributions separately, with their other income and reliefs. This example does not determine qualification.
+
+```oa-check
+name: UK carried interest included profit after allocated permitted deductions
+inputs:
+  qualifying_carry: 100000
+  qualifying_deduction: 4000
+  nonqualifying_carry: 20000
+  nonqualifying_deduction: 1000
+  qualifying_factor: 0.725
+steps:
+  qualifying_profit: qualifying_carry - qualifying_deduction
+  nonqualifying_profit: nonqualifying_carry - nonqualifying_deduction
+  included_profit: qualifying_profit * qualifying_factor + nonqualifying_profit
+expected:
+  qualifying_profit: 96000
+  nonqualifying_profit: 19000
+  included_profit: 88600
+```
+
+Boundary: non-qualifying profit is not multiplied by the qualifying factor. Before using the deduction inputs, verify section 23N and its allocation rule. A loss, clawback, earlier election or foreign workday can require additional analysis; this case supplies none of those facts.
+
+## United Kingdom: REIT distributions
+
+The general distribution condition requires **100% of PIDs received from other UK REITs** and **at least 90% of the rest of the relevant UK property-rental profits**, using the statutory tax measure. Capital gains do not have a general compulsory-distribution requirement. The condition is tested for each accounting period and ordinarily met by the CTSA filing date. The principal company, rather than every subsidiary separately, has the group distribution obligation. Legal impediment and other specific exceptions need evidence. [HMRC IFM22050](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm22050).
+
+Distinguish a PID from an ordinary company dividend. PIDs are generally paid under deduction of basic-rate income tax; a valid gross-payment exception must be established, not assumed for all investors. A PID may include property gains as well as rental profits, and investors' eventual liabilities can differ. [HMRC IFM28005](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm28005).
+
+The former claim of a universal non-resident-investor cap is not established and must not be used. The old shorthand about a particular institutional ownership percentage, listing, asset composition and rental-income tests is held for a full current UK REIT eligibility check. Distribution compliance does not prove that all other REIT conditions are met.
+
+## United States: investor and REIT handoff
+
+This global method preserves the US questions but does not expand the US library or provide a new numeric US computation:
+
+- Determine whether a non-US corporation is a PFIC under the current income or asset test, including applicable exceptions and overlap rules. Do not assume that every foreign fund is a corporation or that holding an interest through a partnership eliminates the issue.
+- Compare the default excess-distribution/disposition regime with an available QEF or mark-to-market election. Check eligibility, timing, annual information, basis adjustments, loss limits and prior taint. Do not promise that a late election erases every earlier charge.
+- Obtain an actual PFIC Annual Information Statement where required for QEF reporting; a marketing factsheet is not a substitute. Review active-insurance exceptions with the insurance-sector job.
+- Review section 1061 carried-interest holding periods and exceptions against actual assets and dispositions. Do not label all short-term returns ordinary employment income or quote a single individual's final marginal rate.
+- For a US REIT, check the separate qualifying income, asset, distribution, ownership and election tests under the current Internal Revenue Code, not the former compressed percentage string. Investor dividend treatment, section 199A and a fund-level distribution deduction require separate current analysis.
+
+All numeric US tests and rates from the former edition are held pending the relevant current US job and sources. The former references to sections of an “ITA” are not usable statutory citations for the US Internal Revenue Code.
+
+## Other REIT and investor regimes
+
+- **France:** preserve SIIC and OPCI classification, rental/gain distribution conditions, exemption scope and investor taxation. Do not use the former SIIC percentages without current official law.
+- **Germany and Netherlands:** identify the actual domestic property-investment regime, eligibility and taxation. Remove the unsupported German listed-vehicle census as an eligibility fact; the size of a market does not establish a tax result.
+- **Spain:** preserve SOCIMI listing, asset/income, distribution, reinvestment and special-levy questions. Different levies can have different triggers; do not label one historic rate a universal charge on every dividend.
+- **Singapore:** identify S-REIT tax transparency, the actual distribution condition, relevant income and unitholder categories. A listing and a distribution alone do not prove that every receipt or investor is exempt.
+- **Japan:** preserve J-REIT investment-corporation status, distribution-deduction conditions and investor treatment. “Zero corporate tax” is not the starting conclusion.
+- **Australia:** preserve listed or stapled trust/company analysis, managed-investment-trust eligibility and AMIT attribution. A stapled company does not become transparent simply because the trust is, and attribution can differ from cash paid.
+
+## Blockers, anti-deferral and hybrid structures
+
+Draw the actual structure before advising. A US corporate blocker below a partnership, a Cayman or BVI company above offshore assets, a Luxembourg SICAV/SCSp structure and a master/feeder can create different tax, withholding and reporting results. Do not interchange them.
+
+Treat blocking effectively connected income, tax-exempt-investor exposure, CFC and PFIC analysis as questions to test. Inserting an opaque company does **not** automatically convert ordinary income into capital gains, prevent CFC attribution or avoid PFIC status. It may create additional entity tax, withholding, reporting or anti-avoidance exposure. Substantiate commercial purpose and analyse treaty benefits, substance, beneficial ownership, ATAD II/hybrid mismatches and exit consequences using current country law. No restructuring recommendation is made by this global file.
+
+For UK top-up-tax scope, investment funds and REITs have an excluded-entity route linked to ultimate-parent status, including the specified case where consolidation statements are not produced. Subsidiaries do not inherit a blanket exclusion. Revenue of an excluded entity can still matter to the group threshold. Separate the domestic top-up rules and any elections. [HMRC MTT10210](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt10210).
+
+## Output and self-checks
+
+- Provide the ownership/classification chart, vehicle-level computation, manager/carry analysis, investor-by-investor allocation/withholding and reporting schedule.
+- Record regulatory status separately from tax eligibility. Name the law and year beside each relief, election and country figure.
+- Reconcile statutory distribution profits to accounting profit, cash and actual distributions. Distinguish PIDs received, own rental profits, gains and non-PID dividends.
+- Check PFIC, QEF, mark-to-market and CFC issues only after classifying both the investor and entity. Record missing statements and election deadlines.
+- Do not complete a client return, certify exemption or recommend a blocker while material conditions remain unresolved. Flag every held or judgment-dependent item for the sector reviewer.
+- Preserve supporting statements, source dates, rulings and computations. Explain the effect of an unconfirmed condition rather than silently supplying an old percentage.
+
+## Sources
+
+| Official source | Read date | Read scope |
 | --- | --- | --- |
-| **United States** | §1061 ITA: carried interest classified as long-term capital gain only if 3-year holding period (raised from 1 year by TCJA 2017); otherwise short-term ordinary | ~20% LTCG vs 37% short-term/ordinary |
-| **United Kingdom** | Carried Interest from April 2025: 32% effective rate (reformed from CGT-only treatment); Disguised Investment Management Fees (DIMF) since 2015 | 32% (proposed from April 2025; consultation ongoing) |
-| **France** | Carried interest treated as employment income (and capital gain on disposal) for managers; specific holding period requirement | Effective marginal rate close to top income tax |
-| **Italy** | Carried interest classified as investment income if specific conditions met (commitment / employment) | 26% capital gain rate possible |
-| **Germany** | 60% of carried interest treated as employment income (Halbeinkünfteverfahren) — favourable | Reduced rate |
-| **Spain** | New 2025 rules characterise carried interest as employment income absent specific conditions | Up to ~50% |
+| [UK ITTOIA 2005, Part 2](https://www.legislation.gov.uk/ukpga/2005/5/part/2) | 2026-11-14 | Read for sections 23I-23R, permitted deductions, work-location rules and the Finance Act 2026 commencement annotation; Schedule A1 qualification requires a separate facts-specific check |
+| [HMRC IFM37120](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm37120) | 2026-11-14 | Read for the older capital-gains description and its conflict with the operative 2026-27 legislation; not treated as overriding law |
+| [HMRC IFM22050](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm22050) | 2026-11-14 | Read for the two UK REIT distribution categories, timing, capital gains and exceptions, not every REIT eligibility condition |
+| [HMRC IFM28005](https://www.gov.uk/hmrc-internal-manuals/investment-funds/ifm28005) | 2026-11-14 | Read for PID versus non-PID distributions and basic-rate deduction; individual gross-payment exceptions not established here |
+| [HMRC MTT10210](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt10210) | 2026-11-14 | Read for excluded entities, ultimate-parent investment funds/REITs, subsidiary conditions, revenue inclusion and domestic-tax distinction |
 
-## Section 4 — PFIC mechanics (US investors)
-
-- **§1297 ITA — Passive Foreign Investment Company** — A foreign corporation is a PFIC if: ≥75% of gross income is passive (income test), OR ≥50% of average assets produce passive income (asset test)  _(§1297 ITA)_
-- **Tax consequences without election** — Excess distributions and dispositions taxed at maximum ordinary rate for prior years held; interest charge for deemed deferral  _([T1])_
-- **QEF (Qualified Electing Fund) election** — US investor includes pro-rata share of fund's ordinary earnings and net capital gain annually; Annual PFIC Annual Information Statement required from fund; avoids excess distribution / interest charge regime  _([T1])_
-- **MTM (Mark-to-Market) election** — Annual gain/loss recognised on PFIC shares treated as ordinary income; available for "marketable" PFIC shares  _([T1])_
-- **PFIC exception — Active insurance corporation** — PFIC exception — Active insurance corporation under §1297(f) — see `insurance-sector.md`.  _(§1297(f))_
-
-### 5.1 US REIT (§§856-860 ITA)
-
-- **Requirements** — 75% gross income from real estate (rents, mortgages, gains on real estate); 95% gross income passive (75% real estate + interest, dividends, gains); 75% asset test (real estate, mortgages, cash, government securities); Distribute at least 90% of taxable income to shareholders; ≥ 100 shareholders; not closely held (5-or-fewer test); Operated as REIT election (§856)  _(§§856-860 ITA)_
-- **Tax effect** — Distribution deduction at REIT level — effectively no CIT on distributed income; shareholders taxed on dividends at ordinary rate (except qualified REIT dividends get 20% §199A deduction post-TCJA — now confirmed permanent in OBBBA)  _(§199A; OBBBA)_
-
-### 5.2 UK REIT
-
-- **FA 2006 (now CTA 2010 Part 12) requirements** — 75% gross income from rental of UK property; 75% asset value in property rental business; Listed on recognised stock exchange (or with 35% rule for institutional ownership); 90% distribution requirement; 75% non-resident-investor cap during 3 years from entry; Property Income Distributions (PID) — gross-paid; income tax at 20% basic; 40% higher; 45% additional  _(FA 2006 (now CTA 2010 Part 12))_
-
-### 5.3 French SIIC / OPCI
-
-- **SIIC** — SIIC: listed real estate companies, 85% rental income distribution, 50% gain distribution; CIT exemption on rental and capital gains  _([T1])_
-- **OPCI** — OPCI: non-listed open-ended collective investment in real estate  _([T1])_
-
-### 5.4 German G-REIT
-
-**[T1]** Less popular than other markets; ~5 G-REITs listed.
-
-### 5.5 Spanish SOCIMI
-
-- **SOCIMI requirements** — Sociedad Anónima Cotizada de Inversión en el Mercado Inmobiliario: Listed on recognised market; 80% asset and gross income in real estate; 80% distribution of rental income; 100% distribution of REIT-source distributions; 50% of capital gains over 3 years; 0% CIT but 19% specific levy on dividend distributions  _([T1])_
-
-### 5.6 Singapore S-REIT
-
-- **S-REIT requirements** — Tax-transparent for distributions to qualifying unitholders (no S-REIT corporate tax); 90% distribution requirement; Listed on SGX; Cross-border property investment common  _([T1])_
-
-### 5.7 Japanese J-REIT
-
-- **J-REIT requirements** — Investment corporations under Investment Trust Act; 90% distribution requirement; Reduced or zero CIT on distributed income  _([T1])_
-
-### 5.8 Australian A-REIT
-
-- **A-REIT structure** — Listed stapled trust + corporation structures common; Mostly tax-transparent at trust level; AMIT (Attribution Managed Investment Trust) regime since 2016  _([T1])_
-
-## Section 6 — Blocker structures
-
-- **Blocker entity purposes** — "Blocker" entities interpose tax-opaque vehicles to: Convert ordinary income to capital gains for US investors; Block US ECI for foreign LP investors; Prevent CFC consequences for US shareholders; Avoid PFIC exposure for US-taxable investors  _([T1])_
-
-- US-blocker (C-corp) below partnership / LLC
-- Cayman or BVI blocker above offshore investments
-- Luxembourg SICAV/SCSp for EU fund families
-- Multi-tier structures with hybrid mismatches (now constrained by ATAD II)
-
-## Section 7 — Self-checks
-
-- [ ] Fund legal form classified for tax (transparent vs opaque)
-- [ ] UCITS / AIF status verified for regulatory regime
-- [ ] Local fund-level tax computed (subscription tax / IUT / CIT)
-- [ ] Investor-level tax mechanics documented per investor country
-- [ ] PFIC test applied for US-taxable investors with appropriate election
-- [ ] Carried interest classification per jurisdiction
-- [ ] REIT distribution requirements met (75/95/90/etc.)
-- [ ] Property Income Distribution (UK PID) gross-up treatment correct
-- [ ] Blocker structures support business purpose
-- [ ] Pillar Two GloBE Income excludes "Investment Entity" income per Article 7
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement
-
-## Section 8 — Disclaimer
-
-Fund and REIT taxation is highly specialised and varies dramatically by structure. Outputs must be reviewed by credentialed fund-sector practitioners. The most up-to-date version is at [openaccountants.com](https://openaccountants.com).
+Not yet confirmed: Luxembourg UCITS subscription-tax rates/exemptions, SIF/RAIF/SICAR/SCSp elections and investor treatment; Irish ICAV/UCITS/ILP exit-tax exemptions and declarations under current TCA provisions; French FCP/SICAV/FCPR/SLP and SIIC/OPCI figures; UK fund and full REIT listing/ownership/asset conditions and gross-PID exceptions; German and Dutch regimes; Spanish SOCIMI percentages and special levies; Singapore S-REIT and Japanese J-REIT distribution/eligibility figures; Australian MIT/AMIT and stapled-company details; US section 1061, PFIC/QEF/mark-to-market and REIT/section 199A numeric tests and current exceptions; France/Italy/Germany/Spain carried-interest treatment; detailed UK Schedule A1 carried-interest qualification, contribution liabilities and any final effective rate; jurisdiction-specific treaty, blocker, CFC, hybrid and non-UK top-up-tax treatment. The former German market census is unsupported and is not a tax rule. These are held topics, not confirmed 2026 rates or instructions to claim relief.
