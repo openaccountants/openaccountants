@@ -55,17 +55,17 @@ The [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pa
 
 | 2026 limit or rate | Monthly GBP | Annual equivalent GBP | Source |
 |---|---:|---:|---|
-| Lower earnings limit, LEL or L | 1,296 | 15,552 | [LTIA guidance](https://www.gov.je/Benefits/SicknessInjury/pages/longtermincapacityallowance.aspx) |
-| Standard earnings limit, SEL or S | 6,062 | 72,744 | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) |
-| Upper earnings limit, UEL or U | 27,632 | 331,584 | same |
-| Rate on the lower band (2% Health Insurance Fund plus 10.5% Social Security) | 12.5% | 12.5% | [Social Security Law, Sch. 1B paras. 3 and 4](https://www.jerseylaw.je/laws/current/l_22_1974) |
+| Lower earnings limit, LEL or L | 1,296 | 15,552 (derived: 12 x 1,296) | [LTIA guidance](https://www.gov.je/Benefits/SicknessInjury/pages/longtermincapacityallowance.aspx) |
+| Standard earnings limit, SEL or S | 6,062 | 72,744 | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx); monthly figure: [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Upper earnings limit, UEL or U | 27,632 | 331,584 | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx); monthly figure: [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Rate on the lower band (2% Health Insurance Fund plus 10.5% Social Security) | 12.5% (derived: 2% + 10.5%) | 12.5% (derived) | [Social Security Law, Sch. 1B paras. 3 and 4](https://www.jerseylaw.je/laws/current/l_22_1974) |
 | Rate between SEL and UEL | 2.5% | 2.5% | same |
 | Published full monthly amount | 1,297 | 15,564 (derived) | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) |
 | Published amount at SEL | 757.75 | 9,093 (derived) | same |
 | Startup concession monthly amount | 252.58 | 3,030.96 (derived, twelve payments) | same |
-| Article 12 low-income limit (S/3) | | 24,248 | [Contributions Order, Art. 12](https://www.jerseylaw.je/laws/current/ro_6108) |
-| Article 13 special exception limit (2S/3) | | 48,496 | [Contributions Order, Art. 13](https://www.jerseylaw.je/laws/current/ro_6108) |
-| Article 13A branch limit (4S/3) | | 96,992 | [Contributions Order, Art. 13A](https://www.jerseylaw.je/laws/current/ro_6108) |
+| Article 12 low-income limit (S/3) | | 24,248 (derived: 72,744 / 3) | [Contributions Order, Art. 12](https://www.jerseylaw.je/laws/current/ro_6108) |
+| Article 13 special exception limit (2S/3) | | 48,496 (derived: 2 x 72,744 / 3) | [Contributions Order, Art. 13](https://www.jerseylaw.je/laws/current/ro_6108) |
+| Article 13A branch limit (4S/3) | | 96,992 (derived: 4 x 72,744 / 3) | [Contributions Order, Art. 13A](https://www.jerseylaw.je/laws/current/ro_6108) |
 
 [Law, Schedule 1B paragraphs 3 and 4](https://www.jerseylaw.je/laws/current/l_22_1974) combine 2% for the Health Insurance Fund and 10.5% for Social Security on the lower band, plus 2.5% for Social Security between SEL and UEL. The combined lower rate is 12.5%. The printed nominal limits in paragraph 2 are subject to annual indexation; use the dated 2026 figures.
 

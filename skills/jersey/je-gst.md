@@ -76,7 +76,6 @@ Schedule 6 paragraph 5 requires the actual international-service category. Its o
 | Supplier bad-debt relief | At least six months since supply; claim within twelve months after the last writing-off by default | Article 54 | [GST Law, Art. 54](https://www.jerseylaw.je/laws/current/l_27_2007) |
 | Credit time limit | Three years after the accounting period in which GST became chargeable | Exceptional Comptroller extension; GST Regulations 14 to 16 | [GST Regulations](https://www.jerseylaw.je/laws/current/ro_133_2007) |
 | Personal-use import de minimis | GBP 60 | Unaccompanied personal imports from unregistered retailers, from 11 May 2026; whole value taxed above it | [Direction 2026/03](https://www.gov.je/TaxesMoney/GST/Businesses/LawRegulationDirection/Pages/GSTDirection202304MovementofGoods.aspx) |
-| ISE special-provision exclusion | Taxable supplies valued below GBP 1,000 | Article 57 relief exclusion | [GST Law, Art. 57](https://www.jerseylaw.je/laws/current/l_27_2007) |
 | Record retention | Six years after supply or importation | GST Regulation 18 | [GST Regulations](https://www.jerseylaw.je/laws/current/ro_133_2007) |
 
 ## The base
@@ -250,4 +249,4 @@ The source library and remaining coverage are in references.md. Current statutor
 | Jersey Customs, Import, export and postal procedures: read for classification, valuation and origin evidence | https://www.gov.je/Travel/InformationAdvice/ImportsExports/CustomsTradersAgents/Pages/ImportExportAndPostalProcedures.aspx | 2026-10-15 |
 | Jersey Customs, Classifications: read for tariff code changes | https://www.gov.je/travel/informationadvice/importsexports/customstradersagents/pages/classifications.aspx | 2026-10-15 |
 
-Not yet confirmed: the partial-exemption percentage rounding (the HTML says nearest whole number; the 2010 booklet says round up but rounds 58.77% to 58%); complete attribution and prescription instruments; operational special schemes; GST penalties and enforcement; customs tariff and excise mechanics.
+Not yet confirmed: the Article 57 GBP 1,000 special-provision value was not re-found on the law page on 14 November 2026 (kept in the body as read on 15 October 2026); the partial-exemption percentage rounding (the HTML says nearest whole number; the 2010 booklet says round up but rounds 58.77% to 58%); complete attribution and prescription instruments; operational special schemes; GST penalties and enforcement; customs tariff and excise mechanics.

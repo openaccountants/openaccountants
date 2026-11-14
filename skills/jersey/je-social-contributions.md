@@ -43,7 +43,7 @@ First establish insured status, relevant earnings and any exemption or contribut
 | Standard earnings limit (SEL) | GBP 6,062 | Monthly | same |
 | Upper earnings limit (UEL) | GBP 27,632 | Monthly; secondary upper band stops here | same |
 | Employee primary contribution | 6% up to SEL | On whole relevant earnings once MET is reached | same |
-| Employer secondary contribution | 6.5% up to SEL plus 2.5% between SEL and UEL | Not recoverable from the employee (Art. 7) | [Social Security Law, Sch. 1A](https://www.jerseylaw.je/laws/current/l_22_1974) |
+| Employer secondary contribution | 6.5% up to SEL plus 2.5% between SEL and UEL | Not recoverable from the employee (Art. 7) | [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx); [Social Security Law, Sch. 1A](https://www.jerseylaw.je/laws/current/l_22_1974) |
 | Class 2 annual bands | 12.5% up to GBP 72,744; 2.5% from there to GBP 331,584 | Full monthly amount GBP 1,297; detail in `je-class2-contributions` | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) |
 | Long-term care contribution | Maximum rate 1.5%; marginal rate 1.95% | Upper income limit linked to the social security UEL; assessed by Revenue Jersey | [How long-term care is funded](https://www.gov.je/Benefits/LongTermCareScheme/pages/funding.aspx) |
 
