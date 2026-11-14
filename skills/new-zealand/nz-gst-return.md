@@ -1,7 +1,7 @@
 ---
 name: nz-gst-return
 description: Use this skill whenever asked about New Zealand GST returns, or to prepare, review, or classify transactions for a New Zealand GST return (GST101A form), for a self-employed individual or small business. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
-version: 2.3
+version: 2.4
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -260,7 +260,8 @@ On a paper return, read and sign the declaration (IR375).
 | Personal or business | Personal, no claim |
 | Customer overseas, evidence missing | Standard rate |
 | Restaurant, cafe or bar | No claim until business purpose is confirmed |
-| Bank fees, interest, loan principal, tax payments, ACC levies, wages, drawings, transfers, residential rent | Exclude |
+| Bank fees, interest, loan principal, tax payments, wages, drawings, transfers, residential rent | Exclude |
+| ACC levy payment | Hold, no claim yet: do not exclude it as a blanket rule. Check the ACC invoice for GST and confirm the claim first (see `nz-acc-levies`) |
 | Marketplace payouts to a registered seller | Zero-rated sale (Boxes 5 and 6) |
 | Sale of the owner's private goods | Exclude |
 
