@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-paye-rental-nonresident"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland: PAYE-only returns (Form 12), rental income (Case V) and non-residents (2026)
@@ -43,7 +43,7 @@ Whether someone is resident at all (183 days, or 280 days over two years) is dec
 | Single person tax credit | EUR 2,000 (married or civil partners EUR 4,000) | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
 | Employee (PAYE) tax credit | EUR 2,000 | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
 | Rent Tax Credit (for tenants, not landlords) | Up to EUR 1,000 single; EUR 2,000 jointly assessed | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
-| USC | 0.5% on the first EUR 12,012; 2% on the next EUR 16,688; 3% on the next EUR 41,344; 8% on the balance. No USC if total income is EUR 13,000 or less | 2026 | [Revenue: USC rates and thresholds](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx) |
+| USC | 0.5% on the first EUR 12,012; 2% on the next EUR 16,688; 3% on the next EUR 41,344; 8% on the balance. No USC if total income is EUR 13,000 or less | 2026 | [Revenue: USC rates and thresholds](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx ; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf) |
 | USC surcharge on non-PAYE income | Extra 3% where non-PAYE income is more than EUR 100,000 | 2026 | [Revenue: other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx) |
 | Form 12 limit on side income | Taxable non-PAYE income EUR 5,000 or less, and gross non-PAYE income EUR 30,000 or less | 2026 | [Revenue: who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx) |
 | Mortgage interest on a residential letting | 100% deductible (full deductibility restored from 1 January 2019), only if every tenancy is registered with the RTB | 2026 | [Notes for Guidance, Part 4, section 97(2I) and (2J)](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part04.pdf) |
@@ -232,36 +232,36 @@ expected:
 | TCA 1997, section 18 (Schedule D) | https://www.irishstatutebook.ie/eli/1997/act/39/section/18/enacted/en/html | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Finance Act 2025 edition, Part 4 (sections 75, 97, 97A, 97B) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part04.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Finance Act 2025 edition, Part 45 (sections 1032, 1034, 1041) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part45.pdf | 2026-10-23 |
-| Revenue, tax rates, bands and reliefs (2026 chart) | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-23 |
-| Revenue, USC standard rates and thresholds | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-23 |
-| Revenue, USC overview | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx | 2026-10-23 |
+| Revenue, tax rates, bands and reliefs (2026 chart). Read for the 2026 income tax rates, bands and credits. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-23 |
+| Revenue, USC standard rates and thresholds. Read for the 2026 USC rates and bands. | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-23 |
+| Revenue, USC overview. Read for who pays USC. | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx | 2026-10-23 |
 | Revenue, TDM Part 18D-00-01, Universal Social Charge (reviewed January 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18d/18d-00-01.pdf | 2026-10-23 |
-| Revenue, who should register for self-assessment (published 15 October 2026) | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-23 |
-| Revenue, do you need to submit a tax return? | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx | 2026-10-23 |
-| Revenue, PAYE Income Tax Return | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/paye-income-tax-return.aspx | 2026-10-23 |
-| Revenue, underpayment position | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/underpayment-position.aspx | 2026-10-23 |
-| Revenue, four year rule | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx | 2026-10-23 |
-| Revenue, pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-23 |
-| Revenue, do you need to pay PRSI? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-23 |
-| Revenue, Guide to completing 2025 tax returns | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-23 |
+| Revenue, who should register for self-assessment (published 15 October 2026). Read for who must register for self-assessment. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-23 |
+| Revenue, do you need to submit a tax return?. Read for when a PAYE taxpayer must file a return. | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx | 2026-10-23 |
+| Revenue, PAYE Income Tax Return. Read for the PAYE income tax return (Form 12). | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/paye-income-tax-return.aspx | 2026-10-23 |
+| Revenue, underpayment position. Read for how an underpayment is collected. | https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/underpayment-position.aspx | 2026-10-23 |
+| Revenue, four year rule. Read for the four year time limit on claims. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx | 2026-10-23 |
+| Revenue, pay and file system. Read for the pay and file dates. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-23 |
+| Revenue, do you need to pay PRSI?. Read for who pays PRSI on rental income. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-23 |
+| Revenue, Guide to completing 2025 tax returns. Read for the panels for rental income. | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-23 |
 | Social Welfare Consolidation Act 2005, revised (sections 21, 30E, 30F) | https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html | 2026-10-23 |
-| Department of Social Protection, PRSI contribution rates SW 14, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
-| Revenue, how do you declare your rental income? | https://www.revenue.ie/en/property/rental-income/irish-rental-income/how-do-you-declare-your-rental-income.aspx | 2026-10-23 |
-| Revenue, what expenses are allowed? | https://www.revenue.ie/en/property/rental-income/irish-rental-income/what-expenses-are-allowed.aspx | 2026-10-23 |
-| Revenue, what expenses are not allowed? | https://www.revenue.ie/en/property/rental-income/irish-rental-income/what-expenses-are-not-allowed.aspx | 2026-10-23 |
-| Revenue, rental profit and losses | https://www.revenue.ie/en/property/rental-income/irish-rental-income/rental-profit-and-losses.aspx | 2026-10-23 |
+| Department of Social Protection, PRSI contribution rates SW 14, January 2026. Read for the 2026 PRSI rates. | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
+| Revenue, how do you declare your rental income?. Read for how to declare rental income. | https://www.revenue.ie/en/property/rental-income/irish-rental-income/how-do-you-declare-your-rental-income.aspx | 2026-10-23 |
+| Revenue, what expenses are allowed?. Read for the deductible rental expenses. | https://www.revenue.ie/en/property/rental-income/irish-rental-income/what-expenses-are-allowed.aspx | 2026-10-23 |
+| Revenue, what expenses are not allowed?. Read for the expenses that are not deductible. | https://www.revenue.ie/en/property/rental-income/irish-rental-income/what-expenses-are-not-allowed.aspx | 2026-10-23 |
+| Revenue, rental profit and losses. Read for rental losses and how they carry forward. | https://www.revenue.ie/en/property/rental-income/irish-rental-income/rental-profit-and-losses.aspx | 2026-10-23 |
 | Revenue, TDM Part 04-08-08, Case V capital allowances and losses (reviewed February 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-04/04-08-08.pdf | 2026-10-23 |
 | Revenue, TDM Part 04-08-10, RTB registration and interest deduction | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-04/04-08-10.pdf | 2026-10-23 |
 | Revenue, TDM Part 04-08-11, pre-letting expenditure | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-04/04-08-11.pdf | 2026-10-23 |
 | Revenue, TDM Part 15-03-04, Residential Premises Rental Income Relief (updated March 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-15/15-03-04.pdf | 2026-10-23 |
-| Revenue, RPRIR clawback | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rprir/clawback.aspx | 2026-10-23 |
-| Revenue, Rent-a-Room Relief | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-a-room-relief/index.aspx | 2026-10-23 |
-| Revenue, tax and tax credits for non-residents | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx | 2026-10-23 |
+| Revenue, RPRIR clawback. Read for the rented residential relief clawback. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rprir/clawback.aspx | 2026-10-23 |
+| Revenue, Rent-a-Room Relief. Read for the Rent-a-Room limit and conditions. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-a-room-relief/index.aspx | 2026-10-23 |
+| Revenue, tax and tax credits for non-residents. Read for tax credits for non-residents. | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx | 2026-10-23 |
 | Revenue, TDM Part 45-01-01, non-residents and tax credits (reviewed May 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-45/45-01-01.pdf | 2026-10-23 |
 | Revenue, TDM Part 45-01-04A, Non-resident Landlord Withholding Tax (updated October 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-45/45-01-04a.pdf | 2026-10-23 |
-| Revenue, NLWT for non-resident landlords | https://www.revenue.ie/en/property/rental-income/nlwt/non-resident-landlords.aspx | 2026-10-23 |
-| Revenue, if a tenant withholds tax | https://www.revenue.ie/en/property/rental-income/non-resident-landlords/tenant-withholds-tax.aspx | 2026-10-23 |
-| Revenue, guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-23 |
+| Revenue, NLWT for non-resident landlords. Read for how non-resident landlord withholding tax works. | https://www.revenue.ie/en/property/rental-income/nlwt/non-resident-landlords.aspx | 2026-10-23 |
+| Revenue, if a tenant withholds tax. Read for the 20% tenant withholding. | https://www.revenue.ie/en/property/rental-income/non-resident-landlords/tenant-withholds-tax.aspx | 2026-10-23 |
+| Revenue, guidelines for charging interest on late payment (updated May 2025). Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-23 |
 
 Not yet confirmed: (1) whether a non-resident gets the full standard rate band or a share of it (Revenue's section 1032 examples stay within the band, so Example 2 is not affected); (2) whether the EUR 13,000 USC exemption for a non-resident is tested on Irish income only; (3) the ROS pay-and-file date for 2026 returns, announced each year; (4) changes announced in Budget 2027 on 6 October 2026 are not reflected; they are for 2027 onwards and the Finance Bill is not yet enacted; (5) which treaties cover USC.
 
@@ -269,4 +269,4 @@ Not yet confirmed: (1) whether a non-resident gets the full standard rate band o
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-paye-rental-nonresident` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-paye-rental-nonresident. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-paye-rental-nonresident` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-paye-rental-nonresident. If neither is available, confirm every figure against the official source pages cited above before relying on it.

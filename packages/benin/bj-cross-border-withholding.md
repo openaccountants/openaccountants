@@ -4,13 +4,14 @@ description: "Prepare a Benin domestic withholding schedule for dividends, ordin
 jurisdiction: BJ
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# Benin cross-border withholding working paper v0.2
+# Benin cross-border withholding working paper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

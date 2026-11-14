@@ -4,14 +4,15 @@ description: >
   Burkina Faso VAT reference for the 2026 tax year, covering ordinary domestic supplies, the reduced hospitality and domestic-air rates, imported services, input-tax allocation, monthly returns and statutory VAT withholding. Use for TVA, eSINTAX preparation, export deduction rights, goods-exporter refund eligibility, mixed taxable and exempt activity, platform sales and the evidence needed to credit withholding. It corrects blanket turnover and exemption assumptions by stating the statutory conditions and linking business-regime thresholds to their existing home. Two executable cases cover the monthly balance and the refund-versus-carry-forward decision. Commodity classification, exemption certificates, refund execution and authenticated portal steps remain expressly limited.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Burkina Faso VAT (TVA) v1.1
+# Burkina Faso VAT (TVA) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

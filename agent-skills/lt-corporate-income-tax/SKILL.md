@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lt-corporate-income-tax"
   jurisdiction: "LT"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Lithuania: corporate income tax (2026) v0.1
+# Lithuania: corporate income tax (2026) v0.2
 
 This skill sets out how a Lithuanian company computes, files and pays corporate income tax (pelno mokestis) for tax year 2026. The law is the Law on Corporate Income Tax No. IX-675 (Pelno mokesčio įstatymas, PMĮ), in its consolidated version in force from 19 May 2026 to 31 December 2026. Procedure, fines and interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
@@ -265,4 +265,4 @@ Not yet confirmed: the late payment interest rate after 31 October 2026 (it is r
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,13 +1,14 @@
 ---
 name: ug-cross-border
 description: "Uganda cross-border income tax for the 2026-27 year of income under Part IX of the Income Tax Act (Chapter 338, Revised Edition 2024) and the Income Tax (Amendment) Act 2026. Covers residence of individuals (permanent home, 183 days, 122-day average) and companies (incorporation, management and control, majority of operations), the branch definition and its 90-day tests, Ugandan-source income rules, the 15% final withholding on dividends, interest, royalties, rent, management charges and payments to non-resident contractors and entertainers, government securities at 20% or 10%, the 5% digital services tax the non-resident files for itself, 2% on non-resident transport, branch profits tax on repatriated income, the foreign tax credit and foreign employment exemption, and the treaty override with its beneficial-owner and substance test. Trigger on: Uganda non-resident tax, Uganda withholding tax non-resident, branch profits tax Uganda, Uganda digital services tax, Uganda tax residence, foreign tax credit Uganda, Uganda double tax treaty. Out of scope: treaty rates, mining and petroleum, VAT on imported services."
-version: 0.1
+version: 0.2
 jurisdiction: UG
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Uganda cross-border: residence, source, withholding on non-residents, branch profits and foreign tax credit (2026-27)

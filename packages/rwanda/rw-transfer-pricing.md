@@ -1,18 +1,19 @@
 ---
 name: rw-transfer-pricing
 description: "Rwanda transfer pricing for the 2026 tax period under Article 32 of Law 027/2022 establishing taxes on income (as amended by Laws 051/2023 and 014/2025) and Ministerial Order 003/26/10/TC of 29/04/2026 on transfer pricing. Covers related persons (no percentage threshold in the Law), controlled transactions including deemed controlled dealings with beneficial tax regimes (15% test), the arm's length principle, the five methods and the tested party, the interquartile range with adjustment to the median, services and intangibles, the transfer pricing policy, local file and master file, the controlled transactions schedule, country-by-country report within 12 months, the FRW 600 million documentation waiver, advance pricing agreements (FRW 100 million, FRW 600 million, FRW 6 million fee, 3 years), corresponding adjustments, the 5% fine on controlled transaction information and the secondary dividend rule. Trigger on: Rwanda transfer pricing, RRA TP audit, related party Rwanda, local file master file Rwanda, APA Rwanda, arm's length Rwanda. Out of scope: treaty rates, mining."
-version: 0.1
+version: 0.2
 jurisdiction: RW
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - rw-corporate-income-tax
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Rwanda transfer pricing: related persons, arm's length, documentation and APAs (2026) v0.1
+# Rwanda transfer pricing: related persons, arm's length, documentation and APAs (2026) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
