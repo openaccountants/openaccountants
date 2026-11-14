@@ -1,13 +1,14 @@
 ---
 name: rw-company-formation
 description: "Rwanda company formation for 2026: online RDB registration, free and within six working hours, shareholders, registered address, TIN, and tax obligations after incorporation."
-version: 0.2
+version: 0.3
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Rwanda Company Formation and Entity Choice

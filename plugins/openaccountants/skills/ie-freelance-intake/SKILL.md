@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-freelance-intake"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland freelance and small business tax intake
@@ -641,28 +641,28 @@ The legacy Guide cited sections of the 1997 Taxes Consolidation Act, the Value-A
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Revenue, Who should register for Income Tax self-assessment? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-31 |
-| Revenue, What forms do you need to complete? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx | 2026-10-31 |
-| Revenue, Pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-31 |
-| Revenue, What is preliminary tax? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-31 |
-| Revenue, eBrief No. 034/26 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-31 |
-| Revenue, What are the VAT thresholds? | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
-| Revenue, Who should register for VAT? | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx | 2026-10-31 |
-| Revenue, How to know if you are resident for tax purposes | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx | 2026-10-31 |
-| Revenue, How to know if you are ordinarily resident for tax purposes | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx | 2026-10-31 |
-| Revenue, What is domicile and the domicile levy? | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx | 2026-10-31 |
+| Revenue, Who should register for Income Tax self-assessment?. Read for who must register for self-assessment. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-31 |
+| Revenue, What forms do you need to complete?. Read for which return form a freelancer files. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/forms-to-complete.aspx | 2026-10-31 |
+| Revenue, Pay and file system. Read for the pay and file dates. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-31 |
+| Revenue, What is preliminary tax?. Read for the preliminary tax rule. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-31 |
+| Revenue, eBrief No. 034/26. Read for the 2026 ROS extension date. | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-31 |
+| Revenue, What are the VAT thresholds?. Read for the VAT registration thresholds. | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
+| Revenue, Who should register for VAT?. Read for when VAT registration is required. | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx | 2026-10-31 |
+| Revenue, How to know if you are resident for tax purposes. Read for the 183 and 280 day residence tests. | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx | 2026-10-31 |
+| Revenue, How to know if you are ordinarily resident for tax purposes. Read for ordinary residence. | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx | 2026-10-31 |
+| Revenue, What is domicile and the domicile levy?. Read for domicile and the domicile levy. | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx | 2026-10-31 |
 | Revenue, Tax and Duty Manual Part 05-01-21 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf | 2026-10-31 |
 | Revenue, Tax and Duty Manual Part 42-04-13 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf | 2026-10-31 |
-| Revenue, Moving to or from Ireland during the tax year | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/moving-to-from-ireland.aspx | 2026-10-31 |
-| Revenue, Split-year treatment in your year of arrival | https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx | 2026-10-31 |
-| Revenue, Registering your business | https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx | 2026-10-31 |
-| Revenue, Relevant Contracts Tax | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/index.aspx | 2026-10-31 |
-| Revenue, RCT for principal contractors | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/rct-principal-contractors.aspx | 2026-10-31 |
-| Revenue, When and how do you pay and file CGT? | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | 2026-10-31 |
-| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-31 |
-| DSP, PRSI and Family Employment | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-31 |
-| Revenue, Other VAT thresholds | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-10-31 |
-| Revenue, Non-established businesses | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/option-to-tax-lettings.aspx | 2026-10-31 |
+| Revenue, Moving to or from Ireland during the tax year. Read for moving to or from Ireland mid-year. | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/moving-to-from-ireland.aspx | 2026-10-31 |
+| Revenue, Split-year treatment in your year of arrival. Read for split-year treatment on arrival. | https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx | 2026-10-31 |
+| Revenue, Registering your business. Read for registering a business with Revenue. | https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx | 2026-10-31 |
+| Revenue, Relevant Contracts Tax. Read for when RCT applies. | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/index.aspx | 2026-10-31 |
+| Revenue, RCT for principal contractors. Read for principal contractor duties under RCT. | https://www.revenue.ie/en/self-assessment-and-self-employment/rct/rct-principal-contractors.aspx | 2026-10-31 |
+| Revenue, When and how do you pay and file CGT?. Read for the CGT pay and file dates. | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | 2026-10-31 |
+| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026. Read for the 2026 PRSI rates. | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-31 |
+| DSP, PRSI and Family Employment. Read for PRSI on family members working in the business. | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-31 |
+| Revenue, Other VAT thresholds. Read for the other VAT thresholds. | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-10-31 |
+| Revenue, Non-established businesses. Read for VAT for non-established businesses. | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/option-to-tax-lettings.aspx | 2026-10-31 |
 
 Not yet confirmed: nothing in the routing tables; rates and computations belong to the sibling skills named above and are not restated here.
 
@@ -674,4 +674,4 @@ The most up-to-date version of this skill is maintained on the OpenAccountants w
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -5,12 +5,13 @@ jurisdiction: BJ
 category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026; original LF effective 1 January 2026; local rate and valuation evidence required"
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
+type: computation
 ---
 
-# Benin annual property TFU working paper v0.1
+# Benin annual property TFU working paper v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-payroll"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Ireland payroll: PAYE, USC, PRSI and auto-enrolment, tax year 2026 (v0.2)
+# Ireland payroll: PAYE, USC, PRSI and auto-enrolment, tax year 2026 (v0.3)
 
 > **Source-cited draft.** Drafted from the Taxes Consolidation Act 1997 Part 42 Chapter 4 (Revenue's Notes for Guidance, Finance Act 2025 edition), Finance Act 2025, the Social Welfare Consolidation Act 2005 s.13 and the Acts that amend it, the National Training Fund Act 2000, the Automatic Enrolment Retirement Savings System Act 2024, and Revenue, Department of Social Protection and Department of Enterprise pages, all read on 2026-10-24. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Irish payroll professional.
 
@@ -246,4 +246,4 @@ Not yet confirmed: (1) whether the pay date or the week worked decides the PRSI 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

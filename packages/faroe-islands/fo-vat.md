@@ -12,17 +12,18 @@ description: >
   regulation. Records the Q2 payment-date source conflict rather than assuming
   the return deadline changes the statutory payment clause. Specialist refunds
   and unresolved foreign-service implementation need separate evidence.
-version: 0.4
+version: 0.5
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Faroe Islands VAT registration and returns v0.4
+# Faroe Islands VAT registration and returns v0.5
 
 > **Checked against the law for 2026.** This Guide has no professional attestation
 > for the revised content. It prepares classification and calculation working

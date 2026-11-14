@@ -3,16 +3,17 @@ name: bi-transfer-pricing
 description: "Identify a Burundi company’s foreign related-party transactions and prepare the statutory profit-adjustment and supporting-documentation analysis for 2026. This Guide covers the income law’s control tests, transfers to privileged or noncooperative jurisdictions, the obligation to justify a pricing policy, and the separate restrictions on related-party interest. It distinguishes the first-half financing exception from the additional July budget conditions and shows how a documented price difference or financing limit changes taxable profit. It does not invent a safe-harbor markup, documentation threshold, country-by-country deadline or approved pricing agreement. The currently operative implementing-order details and cross-period financing application need further confirmation. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: transfer-pricing
-version: 1.1
+version: 1.2
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Burundi: related-party profit adjustments and financing for 2026 v1.1
+# Burundi: related-party profit adjustments and financing for 2026 v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

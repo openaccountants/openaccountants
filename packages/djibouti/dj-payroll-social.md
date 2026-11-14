@@ -1,10 +1,11 @@
 ---
 name: dj-payroll-social
 description: "Use for Djibouti payroll for tax year 2026: CNSS 21.7% (employer 15.7%, employee 6%), the 400,000 ceiling, filing by the 10th, ITS withholding and penalties."
-version: 2.0
+version: 2.1
 jurisdiction: DJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -25,7 +26,7 @@ Every employer with staff, public or private, and domestic employers. Employers 
 | Pension | 8% | Employer 4%, employee 4%. No ceiling | same |
 | Care | 7% | Employer 5%, employee 2% | same |
 | Work injury | 1.2% | Employer only. Derived: page states 8.2% for care and injury, 7% care. The CNSS table on the financing page shows 1%; see below |  same |
-| Employer total | 15.7% | 5.5 + 4 + 5 + 1.2 | same |
+| Employer total | 15.7% | Computed: 5.5 + 4 + 5 + 1.2 | same |
 | Employee total | 6% | 4 + 2 | same |
 | Self-employed | 7% | Care only | https://cnss.dj/financement-de-la-cnss/ |
 | Ceiling | 400,000 a month | All schemes except pension (Arrete 2015-605 art. 1) | https://www.journalofficiel.dj/texte-juridique/arrete-n2015-605-pr-mtra-portant-modification-du-plafonnement-des-remunerations-entrant-en-compte-pour-la-determination-de-lassiette-des-cotisations-dues-a-la-cnss-et-revalorisation-du-bareme/ |
@@ -106,12 +107,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CNSS, Declaration et versement des cotisations: full page read | https://cnss.dj/declaration-et-versement-des-cotisations/ | 2026-11-01 |
-| CNSS, Financement: rate table read | https://cnss.dj/financement-de-la-cnss/ | 2026-11-01 |
-| CNSS, Penalites, sanctions et poursuites: full page read | https://cnss.dj/penalites-sanctions-et-poursuites/ | 2026-11-01 |
-| CNSS, Affiliation employeur: full page read | https://cnss.dj/affiliation-employeur/ | 2026-11-01 |
-| Arrete 2015-605/PR/MTRA on the CNSS ceiling: articles 1 and 2 read | https://www.journalofficiel.dj/texte-juridique/arrete-n2015-605-pr-mtra-portant-modification-du-plafonnement-des-remunerations-entrant-en-compte-pour-la-determination-de-lassiette-des-cotisations-dues-a-la-cnss-et-revalorisation-du-bareme/ | 2026-11-01 |
-| Loi de finances 142/AN/21/8eme L, budget 2022: Titre II read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ | 2026-11-01 |
-| Loi de finances 64/AN/23/9eme L, budget 2024: Titre II tax articles read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ | 2026-11-01 |
+| CNSS, Declaration et versement des cotisations: read in full | https://cnss.dj/declaration-et-versement-des-cotisations/ | 2026-11-14 |
+| CNSS, Financement: read for rate table | https://cnss.dj/financement-de-la-cnss/ | 2026-11-14 |
+| CNSS, Penalites, sanctions et poursuites: read in full | https://cnss.dj/penalites-sanctions-et-poursuites/ | 2026-11-14 |
+| CNSS, Affiliation employeur: read in full | https://cnss.dj/affiliation-employeur/ | 2026-11-14 |
+| Arrete 2015-605/PR/MTRA on the CNSS ceiling: articles 1 and 2 read | https://www.journalofficiel.dj/texte-juridique/arrete-n2015-605-pr-mtra-portant-modification-du-plafonnement-des-remunerations-entrant-en-compte-pour-la-determination-de-lassiette-des-cotisations-dues-a-la-cnss-et-revalorisation-du-bareme/ | 2026-11-14 |
+| Loi de finances 142/AN/21/8eme L, budget 2022: read for Titre II | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n142-an-21-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2022/ | 2026-11-14 |
+| Loi de finances 64/AN/23/9eme L, budget 2024: read for Titre II tax articles | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ | 2026-11-14 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. The CNSS pages are undated (site copyright 2022) and no 2026 text confirms the rates. CNSS's own two pages differ on work injury: 1.2% (implied by 8.2% and the 21.7% total) against 1%. The 2015 ceiling is the latest found. Minimum wage not confirmed.
