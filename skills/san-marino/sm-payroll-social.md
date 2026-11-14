@@ -41,7 +41,6 @@ Coverage for workers posted to or from another State follows the applicable soci
 | FONDISS, employee (on the pensionable base) | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
 | FONDISS, employer | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
 | Employee forfait in the taxable wage | 7% of gross pay, capped at 2,800 | 2026 | [IGR art 24(4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
-| Default deductible contributions in the Tax Office calculator | 9.9% (pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%) | 2026 | [Tax Office IGR calculator](https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1) |
 | Employer IGR G certification to the Tax Office | By 15 April following the year | 2026 | [IGR art 85(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 | Remittance of IGR withheld on wages | By the end of the two-month period after the month of withholding or accrual | 2026 | [IGR art 125(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
@@ -195,7 +194,7 @@ The same rules give: a professional declaring 40,000 pays pension 9,600, social 
 | Delegated Decree 156/2026 of 12 October 2026, art 8 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 | Tax Office public 2026 IGR calculator (Law 141/2025) | https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1 | 2026-10-24 |
 
-Not yet confirmed: employer contributions beyond pension and FONDISS (the earlier version's unemployment 1.9%, health 4.0% and social services fund 1.0%, and its 27.4% employer total); any contribution ceiling for employees; the monthly ISS contribution payment date for employers; the self-employed second advance date; the current sanctions under Law 179/2005 article 44 and the legal interest rate.
+Not yet confirmed: the default deductible contributions used by the Tax Office IGR calculator (earlier text: 9.9%, made of pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%); the calculator builds them in its later steps and they could not be read by script on 14 Nov 2026; employer contributions beyond pension and FONDISS (the earlier version's unemployment 1.9%, health 4.0% and social services fund 1.0%, and its 27.4% employer total); any contribution ceiling for employees; the monthly ISS contribution payment date for employers; the self-employed second advance date; the current sanctions under Law 179/2005 article 44 and the legal interest rate.
 
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [iss4295]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html
