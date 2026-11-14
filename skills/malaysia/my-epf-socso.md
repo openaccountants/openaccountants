@@ -64,7 +64,7 @@ Figures are for 2026 contribution months (calendar year 2026) unless a line says
    - **Foreign workers:** mandatory.
    - **Local employees:** the voluntary change on 8 July 2026 had a closed opt-out window. Existing locals who did not opt out by 31 August remain in; first-time entrants are mandatory and the employer registers them on ASSIST and deducts from the first salary month ([PERKESO LINDUNG 24 Jam FAQ](https://www.perkeso.gov.my/images/lindung/lindung-24-jam/FAQ_LINDUNG24Jam_v_2.3%20.pdf), Q 25 to Q 29).
    - The contribution is the employee's alone, but the employer deducts it and pays it to PERKESO. There is no age limit.
-4. **Classify each employee for EIS (Act 800).** Employees aged 18 to 60 contribute. Anyone aged 57 or over with no EIS contributions before 57 is exempt. Government employees, domestic workers and self-employed persons are excluded in PERKESO's contributions guidance. PERKESO's general FAQ, EIS question1, limits eligibility to citizens and permanent residents and excludes local-authority and statutory-body workers too. Resolve the employer's spouse and casual-worker exceptions against the First Schedule, which was not reopened. [EIS eligibility FAQ](https://www.perkeso.gov.my/en/contact-us/pejabat-perkeso-new/frequently-asked-question).
+4. **Classify each employee for EIS (Act 800).** Employees aged 18 to 60 contribute. Anyone aged 57 or over with no EIS contributions before 57 is exempt. Government employees, domestic workers and self-employed persons are excluded in PERKESO's contributions guidance. PERKESO's general FAQ, EIS question 1, limits eligibility to citizens and permanent residents and excludes local-authority and statutory-body workers too. Resolve the employer's spouse and casual-worker exceptions against the First Schedule, which was not reopened. [EIS eligibility FAQ](https://www.perkeso.gov.my/en/contact-us/pejabat-perkeso-new/frequently-asked-question).
 5. **Work out wages for SOCSO/EIS.** Include:
    - salary, overtime, commission, service charge and leave pay;
    - allowances (shift, meal, cost of living, housing, etc.).
@@ -75,7 +75,7 @@ Figures are for 2026 contribution months (calendar year 2026) unless a line says
    - gratuity or termination payments;
    - the annual bonus ([PERKESO employer registration, "Definition Of Wages"](https://perkeso.gov.my/en/our-services/employer-employee/employer-registration/)).
 6. **Read the amount from the schedule, not a percentage.** SOCSO and EIS are fixed ringgit amounts per scheduled wage band; the lowest bands are narrower than RM 100. The percentages describe the design, and the table decides the amount. Wages above RM 6,000 use the top band.
-7. **Apply EPF separately.** Classify the employee under Third Schedule Part A (under 60 citizen/PR/pre-August 1998 member), Part C (older PR/pre-August 1998 member), Part E (citizen 60+) or Part F (other non-citizens), with the actual wage period and membership history. Read that part's ringgit wage band, not a payroll-wide flat percentage. Part F has applied from October 2025 wages. Contributions are not capped at the SOCSO/EIS ceiling. Do not assume EPF excludes an annual bonus merely because SOCSO does. [Third Schedule](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025); [KWSP mandatory contributions](https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution).
+7. **Apply EPF separately.** Classify the employee under Third Schedule Part A (under 60 citizen/PR/pre-August 1998 member), Part C (older PR/pre-August 1998 member), Part E (citizen 60+) or Part F (other non-citizens), with the actual wage period and membership history. KWSP states that contributions run up to age 75; resolve the boundary month with KWSP rather than extending these categories indefinitely. Read that part's ringgit wage band, not a payroll-wide flat percentage. Part F has applied from October 2025 wages. Contributions are not capped at the SOCSO/EIS ceiling. Do not assume EPF excludes an annual bonus merely because SOCSO does. [Third Schedule](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025); [KWSP mandatory contributions](https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution).
 
 8. **Pay by the 15 th of the following month.** Pay SOCSO and EIS through ASSIST (FPX, direct debit, internet banking or a bank counter) ([PERKESO contribution payment](https://www.perkeso.gov.my/en/contribution-payment.html)). Pay EPF through KWSP's employer channel by the 15 th of the following month ([KWSP non-citizen contribution guidance](https://www.kwsp.gov.my/en/employer/responsibilities/non-malaysian-citizen-employees)).
 9. **Keep records.** For each employee, keep a monthly record of:
@@ -125,14 +125,14 @@ These extracts are for checking only. Use the full table for any other band.
 - **Local employee who opted out of LINDUNG 24 Jam:** leave out the LINDUNG 24 Jam column. The total is then the employer amount plus the Invalidity amount (First Category), or the employer amount alone (Second Category).
 - **Maximum monthly SOCSO without LINDUNG 24 Jam:** RM 104.15 employer + RM 29.75 employee = RM 133.90.
 
-### EIS (Act 800) ([PERKESO contributions](https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html); [Act A 1725, Second Schedule amendment](https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf); [Act 800](https://www.perkeso.gov.my/images/imej/akta_dan_peraturan/EMPLOYMENT_INSURANCE_SYSTEM_ACT_2017_Act_800.pdf))
+### EIS (Act 800) ([PERKESO contributions](https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html); [Act A1725, Second Schedule amendment](https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf); [Act 800](https://www.perkeso.gov.my/images/imej/akta_dan_peraturan/EMPLOYMENT_INSURANCE_SYSTEM_ACT_2017_Act_800.pdf))
 
 | Item | Employer | Employee | Total |
 | --- | --- | --- | --- |
 | Rate (on assumed monthly wage) | 0.2% | 0.2% | 0.4% [Source](https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html) |
 | Wages over RM 5,900 (top band, ceiling RM 6,000) | RM 11.90 | RM 11.90 | RM 23.80  [Source](https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf) |
 
-Act A 1725 raised the EIS ceiling from "five thousand ringgit" to "six thousand ringgit" and added the bands above RM 5,000. Under the Act, EIS contributions stop when the employee reaches the minimum retirement age.
+Act A1725 raised the EIS ceiling from "five thousand ringgit" to "six thousand ringgit" and added the bands above RM 5,000. Under the Act, EIS contributions stop when the employee reaches the minimum retirement age.
 
 ### Self-employed and housewives' SOCSO schemes
 
@@ -158,8 +158,8 @@ These are separate from employee Act 4/EIS contributions. Their former plan amou
 | Citizen 60+ | Employee 0%; employer 4%, Part E | [Third Schedule Part E](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025) |
 | PR or pre-August 1998 non-citizen member 60+; wages up to RM 5,000 | Employee 5.5%; employer 6.5%, Part C | [Third Schedule Part C](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025) |
 | Same older PR/member category; wages over RM 5,000 | Employee 5.5%; employer 6%, Part C | [Third Schedule Part C](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025) |
-| Other non-citizen employees, fromOctober 2025 wages | Employee 2%; employer 2%, Part F; domestic-servant and work-pass coverage must follow KWSP's actual scope | [Third Schedule Part F](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025); [KWSP foreign-worker scope](https://www.kwsp.gov.my/en/employer/responsibilities/non-malaysian-citizen-employees) |
-| Part A worked wage band RM 3,980.01 to RM 4,000 | Employer RM 520; employee RM 440; total RM 960 | [Third Schedule Part A printedp 10](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025) |
+| Other non-citizen employees, from October 2025 wages | Employee 2%; employer 2%, Part F; domestic-servant and work-pass coverage must follow KWSP's actual scope | [Third Schedule Part F](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025); [KWSP foreign-worker scope](https://www.kwsp.gov.my/en/employer/responsibilities/non-malaysian-citizen-employees) |
+| Part A worked wage band RM 3,980.01 to RM 4,000 | Employer RM 520; employee RM 440; total RM 960 | [Third Schedule Part A printed page 10](https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025) |
 
 The statutory schedule decides the wage bands and rounding. Its Part F para 2 requires rounding the **total** contribution to the next ringgit; the foreign-worker FAQ's RM 1,751 example instead rounds each share up. This conflict is not resolved by applying the higher employee deduction. Whole-ringgit, exact-percentage cases below avoid that difference; a fractional Part F payroll needs KWSP confirmation of the employee/employer allocation under the statute.
 
@@ -184,7 +184,7 @@ The employer late-payment charge uses the lower of the relevant year's declared 
 
 **Opt-out mechanics (local employees).**
 - **Who acts (existing employees, 2026 window):** the employee, through the LINDUNG Faedah Portal, or with a paper liability release notice if the portal is offline.
-- **New first-time local entrants:** register on ASSIST and deduct from the first salary month. They must contribute, and there is no new opt-out after 31 August 2026 (FAQ Q 26 toQ 29).
+- **New first-time local entrants:** register on ASSIST and deduct from the first salary month. They must contribute, and there is no new opt-out after 31 August 2026 (FAQ Q 26 to Q 29).
 - **Window:** 13 July to 31 August 2026.
 - **Default:** anyone who did not opt out stays covered ("Once In, Always In"). An employee who opted out can later opt in at any time; cover starts at the date/time of election, but the contribution uses the full wages of that month (FAQ Q 6,Q 7,Q 45).
 - **June 2026:** mandatory for everyone, and not refundable. Any shortfall in June 2026 deductions must be made up from the employee's wages.
@@ -204,7 +204,7 @@ In these cases, "employee total" means the SOCSO and EIS deducted from pay; EPF 
 - **SOCSO totals before EIS and EPF:** employee RM 49.40; employer RM 69.15. With EPF wages also RM 4,000, the separate Part A amounts are employee RM 440 and employer RM 520. Final EIS remains a gap below.
 - **Participation decision:** a recorded, valid historical opt-out removes RM 29.65 from this employee's SOCSO deduction. It does not remove ordinary Invalidity or EIS obligations. A newly proposed opt-out is not available after 31 August.
 
-### Case 2: citizen aged 40, wages RM 8,000, opted out of LINDUNG 24 Jam ([PERKESO contribution schedule](https://www.perkeso.gov.my/images/lindung/lindung-24-jam/NewContributionRateIncludingSKBBK.pdf); [Act A 1725](https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf))
+### Case 2: citizen aged 40, wages RM 8,000, opted out of LINDUNG 24 Jam ([PERKESO contribution schedule](https://www.perkeso.gov.my/images/lindung/lindung-24-jam/NewContributionRateIncludingSKBBK.pdf); [Act A1725](https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf))
 
 - **Ceiling:** wages are above the RM 6,000 ceiling, so the top band applies.
 - **SOCSO:** employer RM 104.15; employee RM 29.75.
@@ -237,7 +237,7 @@ In these cases, "employee total" means the SOCSO and EIS deducted from pay; EPF 
 
 ### Recomputing the participation decision and top-band case
 
-Case 1 assumes a valid historical opt-out is available as an alternative fact, not as a new election in November. The employee's SOCSO difference is RM 29.65. Case 2 uses the statutory EIS top band that was reopened in Act A 1725; it gives RM 41.65 deducted and RM 116.05 employer cost before EPF.
+Case 1 assumes a valid historical opt-out is available as an alternative fact, not as a new election in November. The employee's SOCSO difference is RM 29.65. Case 2 uses the statutory EIS top band that was reopened in Act A1725; it gives RM 41.65 deducted and RM 116.05 employer cost before EPF.
 
 ```oa-check
 name: July4000 SOCSO participation decision and separate EPF
@@ -292,7 +292,7 @@ expected:
 
 - **EPF registration timing, i-Saraan and disputed fractional Part F allocation:** refer to KWSP or a Malaysian payroll professional. The sourced contribution categories and whole-ringgit examples are usable; do not quote an unconfirmed registration deadline or resolve the rounding conflict by guessing.
 - **HRD Corp levy:** whether an employer must register and pay the levy depends on its industry and headcount under the Pembangunan Sumber Manusia Berhad Act 2001. This skill does not state the rates. Refer to HRD Corp.
-- **Foreign workers and EIS:** citizens and PRs are the eligible population. Resolve an unclear citizenship/PR record before classifying the employee; do not withhold EIS merely because Act4 applies.
+- **Foreign workers and EIS:** citizens and PRs are the eligible population. Resolve an unclear citizenship/PR record before classifying the employee; do not withhold EIS merely because Act 4 applies.
 - **Domestic workers, public-sector staff, and employees with several employers:** refer to PERKESO.
 - **Prosecution or compound notices, and disputes over arrears:** refer to a lawyer or a PERKESO/KWSP office.
 
@@ -326,17 +326,17 @@ expected:
 |---|---|---|
 | PERKESO contributions. Read for category ages, first-entry exception, EIS ages and 0.4% split. | https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html | 2026-11-14 |
 | PERKESO current LINDUNG page. Read for voluntary-local versus mandatory-foreign scope and non-employment exclusions. | https://www.perkeso.gov.my/en/?Itemid=2019&id=990&option=com_content&view=article | 2026-11-14 |
-| LINDUNG FAQv 2.3. Read for Q 1 to 48 and 50 to 56 for current opt-out closure, first entrants, phased rates, wages, multi-employer, refunds, grace, penalties and no-wage continuity. | https://www.perkeso.gov.my/images/lindung/lindung-24-jam/FAQ_LINDUNG24Jam_v_2.3%20.pdf | 2026-11-14 |
+| LINDUNG FAQ v2.3. Read for Q 1 to 48 and 50 to 56 for current opt-out closure, first entrants, phased rates, wages, multi-employer, refunds, grace, penalties and no-wage continuity. | https://www.perkeso.gov.my/images/lindung/lindung-24-jam/FAQ_LINDUNG24Jam_v_2.3%20.pdf | 2026-11-14 |
 | PERKESO Act 4 new schedule. Read for bands over 2400 to 2500, over 3900 to 4000 and over 5900/upwards, including both categories. | https://www.perkeso.gov.my/images/lindung/lindung-24-jam/NewContributionRateIncludingSKBBK.pdf | 2026-11-14 |
-| Act A 1725. Read for s.2 and Second Schedule amendments for RM 6,000 ceiling and RM 11.90 top-band EIS shares. | https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf | 2026-11-14 |
+| Act A1725. Read for s.2 and Second Schedule amendments for RM 6,000 ceiling and RM 11.90 top-band EIS shares. | https://www.perkeso.gov.my/images/akta/ACT%20800/ACT%20A1725%20%28BI%29_EMPLOYMENT%20INSURANCE%20SYSTEM%20%28AMENDMENT%29%20ACT%202024.pdf | 2026-11-14 |
 | PERKESO employer registration. Read for registration forms and foreign exception, wage inclusions/exclusions, seven-year records, accident and cessation duties. | https://perkeso.gov.my/en/our-services/employer-employee/employer-registration/ | 2026-11-14 |
 | PERKESO payment. Read for 15 th deadline,6% daily late interest and available payment channels. | https://www.perkeso.gov.my/en/contribution-payment.html | 2026-11-14 |
 | PERKESO general FAQ. Read for employment questions 9 to 21 for ASSIST stages, receipt, actual-month wages and RM 5 monthly interest minimum. | https://www.perkeso.gov.my/en/contact-us/pejabat-perkeso-new/frequently-asked-question | 2026-11-14 |
 | P.U.(A)452/2017. Read for English regs.2 to 9 for employer 30-day application, employee-register cross-reference, cessation, seven-year records and 15 th deadline. | https://perkeso.gov.my/images/akta/ACT%20800/P.U%28A%29/P.U.%20%28A%29%20452%20-%20PP%20SIP%20%28Pendaftaran%20dan%20Caruman%29%202017_PERATURAN-PERATURAN%20SISTEM%20INSURANS%20PEKERJAAN%20%28PENDAFTARAN%20DAN%20CARUMAN%29%202017.pdf | 2026-11-14 |
-| KWSP Third Schedule effectiveOctober 2025. Read for Part A coverage and RM 4,000 band, Part C/E category conditions andPart F including para 2 total rounding. | https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025 | 2026-11-14 |
+| KWSP Third Schedule effective October 2025. Read for Part A coverage and RM 4,000 band, Part C/E category conditions and Part F including para 2 total rounding. | https://www.kwsp.gov.my/documents/d/guest/third_schedule_from_-1-october-2025 | 2026-11-14 |
 | KWSP mandatory contributions. Read for current category table, band-versus-percentage examples and overdue charge/dividend method. | https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution | 2026-11-14 |
 | KWSP non-citizen employees. Read for October 2025 commencement, category exceptions, coverage and 15 th deadline; fractional example conflicts with statutory total rounding. | https://www.kwsp.gov.my/en/employer/responsibilities/non-malaysian-citizen-employees | 2026-11-14 |
 | LHDN 2026 MTD specification. Read for EPF bucket insectiond andSOCSO optional deductionk and contributions examples. | https://www.hasil.gov.my/wp-content/uploads/spesifikasi-kaedah-pengiraan-berkomputer-pcb-2026.pdf | 2026-11-14 |
-| LHDN 2026 TP 1 notes. Read for C 11 andC 14 for shared RM 3,000/RM 4,000 buckets and RM 350 Act 4/800 relief. | https://www.hasil.gov.my/wp-content/uploads/bi-explanatory-notes-for-from-tp1-2026-1.pdf | 2026-11-14 |
+| LHDN 2026 TP 1 notes. Read for C 11 and C 14 for shared RM 3,000/RM 4,000 buckets and RM 350 Act 4/800 relief. | https://www.hasil.gov.my/wp-content/uploads/bi-explanatory-notes-for-from-tp1-2026-1.pdf | 2026-11-14 |
 
-Not yet confirmed: the full current Act 800 First Schedule and s.16(1)(b), including spouse/casual-worker scope and later-hire registration timing; EIS lower-band shares formerly RM 4.90 at RM 2,500 and RM 7.90 at RM 4,000, and their complete totals in old cases 1 and 5, because the full base Act and standalone schedule did not reopen; self-employed plans formerly RM 13.10/RM 19.40/RM 36.90/RM 49.40 on RM 1,050/RM 1,550/RM 2,950/RM 3,950 and housewife RM 120 for 12 months because the linked rate page did not expose those tables; EPF fractional Part F employee/employer allocation where the Third Schedule rounds the total but KWSP FAQ rounds each share; EPF employer registration deadline, i-Saraan details andthe applicable declared dividend/period for an individual arrears assessment. These gaps do not prevent the sourced Act 4 andEIS top-band or whole-ringgit EPF computations above.
+Not yet confirmed: the full current Act 800 First Schedule and s.16(1)(b), including spouse/casual-worker scope and later-hire registration timing; EIS lower-band shares formerly RM 4.90 at RM 2,500 and RM 7.90 at RM 4,000, and their complete totals in old cases 1 and 5, because the full base Act and standalone schedule did not reopen; self-employed plans formerly RM 13.10/RM 19.40/RM 36.90/RM 49.40 on RM 1,050/RM 1,550/RM 2,950/RM 3,950 and housewife RM 120 for 12 months because the linked rate page did not expose those tables; EPF fractional Part F employee/employer allocation where the Third Schedule rounds the total but KWSP FAQ rounds each share; EPF employer registration deadline, i-Saraan details and the applicable declared dividend/period for an individual arrears assessment. These gaps do not prevent the sourced Act 4 and EIS top-band or whole-ringgit EPF computations above.
