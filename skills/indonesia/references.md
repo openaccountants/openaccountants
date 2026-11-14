@@ -33,7 +33,7 @@ The earlier bibliography recorded `steevenz/id-payroll-calculator` (MIT) and `Ke
 ## When to refuse or refer
 
 - The official amount, taxpayer category, applicable period or current legal text cannot be confirmed: withhold that conclusion and name the exact missing confirmation.
-- An existing approved skill conflicts with another file: preserve the approval and record the source-backed discrepancy for its accountable owner; do not infer approval of an AI rewrite.
+- An existing approved skill conflicts with another file: preserve the approval and record the source-backed discrepancy for the approving accountant; do not infer approval of an AI rewrite.
 - A route names a skill that is absent: say it is missing and record the uncovered job. Do not silently switch to another country's method or invent a successful lookup.
 - Residence, treaty, specialised-sector or professional-service classification needs facts outside the supported method: refer the specific issue to a Konsultan Pajak while continuing independently supported work.
 
