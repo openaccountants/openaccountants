@@ -129,7 +129,7 @@ VAT (Federal Decree-Law No. 8 of 2017) has applied since 1 January 2018 at a sta
 **Changes this year** (detail in uae-vat):
 - From 1 January 2026: no self-invoice for the reverse charge, and excess input VAT lapses if not used or reclaimed within five years.
 - From 14 April 2026: a new administrative penalties table applies.
-- From 1 October 2026 ([Cabinet Decision No. 149 of 2026](https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf)): changes to composite supplies, employee benefits, the profit margin scheme and credit note wording.
+- From 1 October 2026 ([Cabinet Decision No. 149 of 2026, as consolidated in the VAT Executive Regulation](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf)): changes to composite supplies, employee benefits, the profit margin scheme and credit note wording.
 
 **E-invoicing** ([Ministerial Decision No. 244 of 2025](https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf); [Ministerial Decision No. 66 of 2026](https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf)):
 - A business with revenue of AED 50,000,000 or more appoints an accredited service provider by 30 October 2026 and goes live on 1 January 2027.
