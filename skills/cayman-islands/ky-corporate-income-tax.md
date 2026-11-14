@@ -40,9 +40,9 @@ Companies, limited liability companies, limited liability partnerships and forei
 | Tax undertaking | Up to 30 years from approval of the application | Exempted company, or other company in the national interest; may also cover tax on shares and debentures, estate duty, and withholding on dividends, distributions, principal and interest | Tax Concessions Act (2018 Revision), s. 6(1) to (5): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0164/1964-0164_2018%20Revision.pdf |
 | Economic substance notification | Every entity, annually | Whether it carries on a relevant activity, whether it is a relevant entity, and for foreign tax residents parent and owner details and year end (s. 7(1)) | International Tax Co-operation (Economic Substance) Act (2026 Revision), s. 7: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf |
 | Economic substance report | No later than 12 months after the end of each financial year | Relevant entity carrying on a relevant activity and required to meet the test (s. 7(3)) | same |
-| Late report penalty | CI$5,000 plus CI$500 for each day the failure continues | s. 7(8A); not imposed after the earlier of one year after the Authority knows or six years after the failure | same |
-| Failing the substance test, first year | CI$10,000 | s. 8(2); due at least 28 days after the notice | same |
-| Failing the test, following year | CI$100,000 | s. 8(4); the Authority also reports to the Registrar | same |
+| Late report penalty | five thousand dollars plus five hundred dollars (CI$) for each day the failure continues | s. 7(8A); not imposed after the earlier of one year after the Authority knows or six years after the failure | same |
+| Failing the substance test, first year | ten thousand dollars (CI$) | s. 8(2); due at least 28 days after the notice | same |
+| Failing the test, following year | one hundred thousand dollars (CI$) | s. 8(4); the Authority also reports to the Registrar | same |
 | Relevant activities | Banking, distribution and service centre, financing and leasing, fund management, headquarters, holding company, insurance, intellectual property, shipping | Not investment fund business | ES Act, s. 2 definition: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf |
 
 ## The base

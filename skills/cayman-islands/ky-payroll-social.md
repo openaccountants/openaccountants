@@ -40,10 +40,10 @@ There is no income tax, so no PAYE is withheld, and there is no government socia
 | Exception | Non-Caymanian, non-permanent-resident employees working in the Islands for a continuous period of nine months or less, and household domestics | s. 25(2); the 2016 change to six months has not commenced | same |
 | Employer contribution, defined contribution plan | At least 5% of earnings | Up to the year's maximum pensionable earnings, s. 47(3)(b) | same |
 | Employee contribution | Not more than 5% without consent | If the employer pays more than 5%, the employee pays only what brings the total to 10%, s. 47(3)(a), (c) | same |
-| Year's maximum pensionable earnings | CI$87,000 | Or another amount prescribed; s. 2 definition | same |
+| Year's maximum pensionable earnings | eighty-seven thousand dollars (CI$) | Or another amount prescribed; s. 2 definition | same |
 | Self-employed | 10% of earnings to the year's maximum | s. 47(2) | same |
 | Contribution date deadline | 15th day of the month after the month of service | Regardless of pay period, s. 48(2) | same |
-| Health insurance, employee recovery | Employer may recover not more than 50% of the premium | Standard health insurance contract, s. 7 | Health Insurance Act (2021 Revision): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf |
+| Health insurance, employee recovery | Employer may recover not more than fifty per cent of the premium | Standard health insurance contract, s. 7 | Health Insurance Act (2021 Revision): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf |
 | National minimum basic wage | CI$8.75 an hour | From 1 January 2026 (was CI$6) | Labour (National Minimum Basic Wage) (Amendment) Order 2025, SL 60 of 2025: https://legislation.gov.ky/cms/images/LEGISLATION/AMENDING/2025/2025-0060S/2025-0060S.pdf |
 | Minimum wage, gratuity-earning employees | CI$6.56 an hour | From 1 January 2026 (was CI$4.50) | same |
 | Benefits counted towards minimum wage | No more than CI$2.19 an hour | Para 3(1) and (2), from 1 January 2026 (was CI$1.50) | same |
@@ -137,8 +137,8 @@ The enhanced deal costs the employer CI$1,740 more and gives the employee CI$1,7
 
 | Source | URL | Read on |
 |---|---|---|
-| National Pensions Act (2024 Revision): read for ss. 2, 25, 47 and 48 (membership, 9-month exception, 5% and 10% rates, CI$87,000 maximum, 15th day deadline, delinquent contributions) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0010/1996-0010_2024%20Revision.pdf | 2026-11-14 |
-| Health Insurance Act (2021 Revision): read for s. 7, the employer's right to recover at most 50% of the premium | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf | 2026-11-14 |
+| National Pensions Act (2024 Revision): read for ss. 2, 25, 47 and 48 (membership, 9-month exception, 5% and 10% rates, eighty-seven thousand dollars maximum, 15th day deadline, delinquent contributions) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0010/1996-0010_2024%20Revision.pdf | 2026-11-14 |
+| Health Insurance Act (2021 Revision): read for s. 7, the employer's right to recover at most fifty per cent of the premium | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf | 2026-11-14 |
 | Labour (National Minimum Basic Wage) (Amendment) Order 2025, SL 60 of 2025: read for CI$8.75, CI$6.56 and CI$2.19 from 1 January 2026 | https://legislation.gov.ky/cms/images/LEGISLATION/AMENDING/2025/2025-0060S/2025-0060S.pdf | 2026-11-14 |
 | Cayman legislation, current by title: read to confirm no income tax or social security Act | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
 

@@ -41,7 +41,7 @@ Businesses and individuals buying, selling or importing in the Cayman Islands in
 | Import duty, higher lines | 42% | For example cigarette paper 4813.00.00, lighter fuel containers 3606.10.00 | same |
 | Other ad valorem rates | 12%, 17%, 29.50% on particular lines | Read the line for the item | same |
 | Beer | CI$1.95 a litre | 2203.00.00, specific duty | same |
-| Tourist accommodation tax | 13% of the charges for each tourist | Paid by the proprietor; timeshare owners, their guests and exchangers: US$10 a room a day | Tourist Accommodation (Taxation) Act (2013 Revision), s. 3: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf |
+| Tourist accommodation tax | thirteen per cent of the charges for each tourist | Paid by the proprietor; timeshare owners, their guests and exchangers: US$10 a room a day | Tourist Accommodation (Taxation) Act (2013 Revision), s. 3: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf |
 
 ## The base
 
@@ -144,6 +144,6 @@ The tax applies only to tourists, so the proprietor needs evidence of each guest
 |---|---|---|
 | Cayman legislation, current by title: read to confirm no VAT, GST or sales tax Act is in force | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
 | Customs Tariff Act (2026 Revision, revised as at 31 December 2025): read for the Schedule rates (22% on most lines, 0%, 12%, 17%, 27%, 29.50%, 42%, beer CI$1.95 a litre) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2012/2012-0001/2012-0001_2026%20Revision.pdf | 2026-11-14 |
-| Tourist Accommodation (Taxation) Act (2013 Revision): read for ss. 2 to 4, the 13% rate, timeshare rule, tourist definition and records | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf | 2026-11-14 |
+| Tourist Accommodation (Taxation) Act (2013 Revision): read for ss. 2 to 4, the thirteen per cent rate, timeshare rule, tourist definition and records | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0168/1964-0168_2013%20Revision.pdf | 2026-11-14 |
 
 Not yet confirmed: the value for duty (the old files said CIF value; the Customs and Border Control Act was not read); the old ranges "food 15% to 22%", "motor vehicles 29.5%, luxury 42%" (vehicle lines were not checked line by line); the accommodation tax payment date and penalties; visitor and returning resident allowances; fuel duties per gallon.
