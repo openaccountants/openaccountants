@@ -1,17 +1,18 @@
 ---
 name: tn-tax-overview
 description: "Tunisia tax overview for tax year 2026: a short map of income tax, company tax, VAT, wealth tax, authority, currency and residence basis, linking to the skill that owns each figure. Use first for general questions on how tax works in Tunisia, which taxes apply, or which authority to deal with."
-version: 1.1
+version: 1.2
 jurisdiction: TN
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Tunisia Tax Overview v1.1
+# Tunisia Tax Overview v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

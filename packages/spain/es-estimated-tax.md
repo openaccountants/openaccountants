@@ -1,10 +1,10 @@
 ---
 name: es-estimated-tax
 description: Calculates 2026 Spanish quarterly IRPF advances for ordinary common-territory self-employed taxpayers. Covers Modelo 130 cumulative direct assessment, quarter-only agricultural receipts, activity-specific withholding exemptions, low-prior-income reductions, negative-result utilisation and the legacy home-loan adjustment. Explains Modelo 131 payment mechanics and the need for an activity-specific module worksheet, distinguishing the ordinary statutory baseline from AEAT's expressly preserved 2026 post-repeal entry and election route. Includes Ceuta and Melilla rate reductions and the Q3/Q4 La Palma extension, filing windows, annual crediting and sourced penalties. Use for pagos fraccionados, IRPF trimestral, Modelo 130, Modelo 131, autonomous-worker estimated tax, a 70% withholding test, quarterly losses or prior-quarter payments. Foral and non-resident computations remain separate.
-version: 2.4
+version: 2.5
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,6 +13,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Spain: quarterly IRPF advances, 2026
