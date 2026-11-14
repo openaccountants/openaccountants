@@ -1,10 +1,11 @@
 ---
 name: algeria-income-tax
 description: "Use this skill whenever asked about Algeria personal income tax (IRG - Impôt sur le Revenu Global) for employees and self-employed individuals. Trigger on phrases like 'how much IRG do I pay', 'barème IRG', 'Algeria income tax', 'IFU', 'impôt forfaitaire unique', 'G50', 'G12', 'G12 bis', 'CNAS', 'CASNOS', 'auto-entrepreneur Algérie', 'DZD tax', 'salaire net', 'self-employed tax Algeria', 'déclaration revenu global', or any question about filing or computing income tax for an Algerian employee, sole trader, or micro-operator. Also trigger when preparing or reviewing an IRG payroll computation, an IFU turnover declaration, social contribution (CNAS/CASNOS) calculations, or advising on filing deadlines. This skill covers the IRG progressive scale, schedular/investment rates, the IFU micro regime, CNAS/CASNOS social contributions, the SNMG minimum wage, filing forms and deadlines, and penalties. ALWAYS read this skill before touching any Algerian income tax work."
-version: 0.2
+version: 0.3
 jurisdiction: DZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: income-tax
 ---
 
-# Algeria Income Tax (IRG): Employee and Self-Employed v0.2
+# Algeria Income Tax (IRG): Employee and Self-Employed v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -69,7 +70,6 @@ Residents and non-residents earning salary, business, professional, rental or in
 | IFU minimum | 30,000 DA a year | Art. 365 bis, LF 2025 art. 29; was 20,000 in the old skill; paid in full by 30 June | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf |
 | IFU minimum, auto-entrepreneur | 10,000 DA a year | Same article | 2026 | same |
 | Professional activity tax (TAP) | Removed | DGI circular of 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |
-| Interest | unverified: 10% in the old skill | Not read in the law | 2026 | unverified |
 
 ## The base
 
