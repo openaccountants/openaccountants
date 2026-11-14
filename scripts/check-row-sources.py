@@ -27,7 +27,8 @@ import subprocess
 import sys
 import zipfile
 
-LINK_RE = re.compile(r"https?://[^\s)|>\"\]]+")
+# A URL may hold balanced brackets (gibraltarlaws.gov.gi/...(01-07-24).pdf).
+LINK_RE = re.compile(r"https?://(?:[^\s()|>\"\]]|\([^\s()|>\"\]]*\))+")
 # Identifiers that look like numbers but are not figures (statute and form numbers).
 IDENT_RE = re.compile(
     r"(?i)\b(section|sec\.|§|art\.|article|rcw|a\.r\.s\.|ilcs|mcl|g\.s\.|r\.c\.|k\.s\.a\.|n\.d\.c\.c\.|nrs|cite=|"
@@ -114,7 +115,9 @@ def read_bytes(raw):
         try:
             z = zipfile.ZipFile(io.BytesIO(raw))
             xml = " ".join(z.read(n).decode("utf-8", "ignore") for n in z.namelist() if n.endswith(".xml"))
-            return re.sub(r"<[^>]+>", " ", xml)
+            # Some law sites (consigliograndeegenerale.sm) serve a ZIP of PDFs.
+            pdfs = " ".join(read_bytes(z.read(n)) for n in z.namelist() if n.lower().endswith(".pdf"))
+            return re.sub(r"<[^>]+>", " ", xml) + " " + pdfs
         except zipfile.BadZipFile:
             return ""
     t = raw.decode("utf-8", "replace")
@@ -145,13 +148,42 @@ def next_flight_text(page):
 
 _cache = {}
 
+# FisconetPlus (Belgium) pages are a script shell; the same document is served as JSON,
+# with base64 content (a PDF or HTML), by the public REST endpoint.
+FISCONET_RE = re.compile(r"fisconet[^/]*/document/([0-9a-fA-F-]{8,})")
+
+
+def fisconet_text(doc_id):
+    import base64
+    r = subprocess.run(["curl", "-sL", "-m", "90", "-A", "Mozilla/5.0", "-H", "Accept: application/json",
+                        "https://eservices.minfin.fgov.be/myminfin-rest/fisconetPlus/public/document/" + doc_id],
+                       capture_output=True)
+    try:
+        content = json.loads(r.stdout)["data"]["content"]["content"]
+    except (ValueError, KeyError, TypeError):
+        return ""
+    if content.lstrip().startswith("<"):
+        return html.unescape(re.sub(r"<[^>]+>", " ", content))
+    try:
+        return read_bytes(base64.b64decode(content))
+    except ValueError:
+        return ""
+
 
 def fetch(url):
     """Return page text, or None when the page cannot be read."""
     if url in _cache:
         return _cache[url]
+    fisco = FISCONET_RE.search(url)
+    if fisco:
+        text = fisconet_text(fisco.group(1))
+        _cache[url] = text if len(text) >= 400 else None
+        return _cache[url]
+    headers = []
+    if "boe.es/datosabiertos/" in url:  # the BOE open-data API answers 400 without it
+        headers = ["-H", "Accept: application/xml"]
     r = subprocess.run(["curl", "-sL", "-m", "45", "-A", "Mozilla/5.0 (OpenAccountants figure check)",
-                        "-w", "\n%{http_code}", url], capture_output=True)
+                        *headers, "-w", "\n%{http_code}", url], capture_output=True)
     raw, code = r.stdout[:-4], r.stdout[-3:].decode("ascii", "replace")
     text = read_bytes(raw) if code.startswith("2") else ""
     _cache[url] = text if len(text) >= 400 else None
