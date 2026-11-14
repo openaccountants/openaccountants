@@ -1,10 +1,10 @@
 ---
 name: ct-corporate-tax
 description: Use for Connecticut corporate income/capital base tax, CT-1120, surtax, estimated payments and state modifications.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-CT
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 category: state-tax
@@ -46,7 +46,7 @@ Ordinary Connecticut corporation business tax, Form CT-1120, including wage-busi
 | Component | 2026 rate/amount and operation | Official source |
 |---|---|---|
 | Net-income tax | 7.5% of Connecticut taxable net income | [corp](https://portal.ct.gov/drs/corporation-tax/tax-information) |
-| Capital-base tax | 1.6 mills = 0.16%; statutory 2027 rate 1.1 mills and 2028 onward zero | [corplaw](https://www.cga.ct.gov/current/pub/chap_208.htm) |
+| Capital-base tax | 1.6 mills = 0.16% (derived: 1.6 mills per dollar); statutory 2027 rate 1.1 mills and 2028 onward zero | [corplaw](https://www.cga.ct.gov/current/pub/chap_208.htm) |
 | Minimum / capital ceiling | $250 minimum; capital-base tax at most $1 million before surtax | [corplaw](https://www.cga.ct.gov/current/pub/chap_208.htm) |
 | Surtax | 10% for federal Form 1120 line 11 total income at least $100 million, or combined unitary filers; not imposed on the $250 minimum | [corp](https://portal.ct.gov/drs/corporation-tax/tax-information) |
 | Surtax period | Applies for income year 2026; official sources differ on the future terminal year, as recorded below | [corp](https://portal.ct.gov/drs/corporation-tax/tax-information), [2026 supplement](https://www.cga.ct.gov/2026/sup/chap_208.htm) |

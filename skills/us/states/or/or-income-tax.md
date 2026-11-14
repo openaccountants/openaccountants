@@ -7,8 +7,8 @@ domain: tax
 tax_year: 2026
 tier: 2
 type: computation
-version: "0.2"
-last_updated: 2026-11-13
+version: "0.3"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -68,7 +68,7 @@ The 2025 federal tax liability subtraction uses federal income tax after credits
 | 2025 federal liability subtraction, single; also MFS phase-out bands | Federal AGI below $125,000: $8,500 cap; $125,000-<130,000: $6,800; $130,000-<135,000: $5,100; $135,000-<140,000: $3,400; $140,000-<145,000: $1,700; at least $145,000: zero. MFS caps are half these amounts. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf |
 | 2025 federal liability subtraction, joint/HOH/qualifying surviving spouse | AGI below $250,000: $8,500; $250,000-<260,000: $6,800; $260,000-<270,000: $5,100; $270,000-<280,000: $3,400; $280,000-<290,000: $1,700; at least $290,000: zero. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf |
 | 2025 ordinary standard deduction | Single/MFS $2,835; joint/qualifying surviving spouse $5,670; HOH $4,560, subject to dependent, age/blindness, immigration and separate-spouse exceptions. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf |
-| Published 2026 ordinary standard deduction, later combined-payroll publication | Single/MFS $2,910; joint/qualifying surviving spouse $5,820; HOH $4,685. These replace the earlier estimated $2,900/$5,800/$4,650 amounts. | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
+| Published 2026 ordinary standard deduction, later combined-payroll publication | Single/MFS $2,910; joint/qualifying surviving spouse $5,820; HOH $4,685. These replace the earlier estimated $2,900/$5,800/$4,650 amounts in the 2026 estimate publication. | https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf; https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf |
 | 2025 exemption credit | Eligible exemptions x $256. Zero above federal AGI $100,000 for single/MFS or $200,000 for other statuses. Additional disability credit has its own $100,000 limit. | https://www.oregon.gov/dor/programs/individuals/pages/credits.aspx |
 
 ### 3. Choose the Oregon deduction and calculate tax
@@ -98,7 +98,7 @@ The exemption credit has an income cutoff, not a gradual phase-out beginning at 
 | Item / condition | Rate, amount or threshold | Official source |
 |---|---|---|
 | 2025 Oregon refundable EIC | 9% of qualifying federal EITC; 12% if the taxpayer has a dependent younger than 3 at year-end. Part-year/nonresident credit is multiplied by Oregon percentage. | https://www.oregon.gov/dor/programs/individuals/pages/credits.aspx |
-| 2025 higher education savings plan contribution credit | Refundable up to $180, or $360 joint, subject to contribution and income-percentage rules. It is a credit, not a $300/$600 subtraction. | https://www.oregon.gov/dor/programs/individuals/pages/credits.aspx |
+| 2025 higher education savings plan contribution credit | Refundable up to $180, or $360 joint, subject to contribution and income-percentage rules. It is a credit, not a subtraction. | https://www.oregon.gov/dor/programs/individuals/pages/credits.aspx |
 | 2025 kicker | 9.863% of qualifying 2024 Oregon personal income tax liability, using the worksheet and status-change rules. This is not a 2026 recurring credit. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-40-inst_101-040-1_2025.pdf |
 | 2026 individual estimated-payment trigger | Generally at least $1,000 tax after withholding and all credits, with required-payment tests. | https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf |
 | 2026 regular estimate alternatives | Lesser of 90% current-year tax after all credits or 100% qualifying prior-year tax after all credits, less withholding; annualized method is separate. | https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf |
