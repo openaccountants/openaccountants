@@ -62,7 +62,7 @@ Norfolk Island is an Australian external territory and, since 1 July 2016, Austr
 
 | Item | Figure | Applies to | Source |
 |---|---|---|---|
-| FBT rate | 47% | FBT year 1 April 2026 to 31 March 2027 | [TAX](https://www.legislation.gov.au/C2004A03281/2018-06-19/text) |
+| FBT rate | 47% | FBT year 1 April 2026 to 31 March 2027 (s 6) | [TAX](https://www.legislation.gov.au/C2004A03281/2018-06-19/2018-06-19/text/original/epub/OEBPS/document_1/document_1.html) |
 | Type 1 / Type 2 gross-up | 2.0802 / 1.8868 | Type 1 where the provider is entitled to a GST credit, otherwise Type 2 | [CALCULATING](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/calculating-your-fbt) |
 | Reportable fringe benefits trigger | Individual fringe benefits amount more than A$2,000 | Each employee, FBT year ending 31 March 2027 | [REPORTING](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/reportable-fringe-benefits) |
 
@@ -367,10 +367,11 @@ waive the payroll workflow's required outputs or professional review.
 
 ## Sources
 
-Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026), except rows dated 2026-11-14, which were re-read on import. Each label is the reference tag used in the text above.
 
 | Source | URL | Read on |
 |---|---|---|
+| Fringe Benefits Tax (Rates) Act 1986 s 6, re-read on import. Read for the 47% rate | https://www.legislation.gov.au/C2004A03281/2018-06-19/2018-06-19/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 |
 | NI-BUSINESS. Read for: Norfolk application and the correct year; Taxable value and GST-credit classification; Primary sources and provenance | https://www.ato.gov.au/norfolk-island/tax-for-businesses | 2026-10-18 |
 | ASSESS. Read for: Norfolk application and the correct year; Taxable value and GST-credit classification; Minor benefits and work items: conditions before exemption; Electric cars and plug-in hybrids; Employee reporting is a separate calculation; Returns, instalments and records; Primary sources and provenance | https://www.legislation.gov.au/C2004A03280/2026-07-01/text | 2026-10-18 |
 | PREVIOUS. Read for: Minor benefits and work items: conditions before exemption; Primary sources and provenance | https://www.legislation.gov.au/C2004A03280/2025-04-01/text | 2026-10-18 |

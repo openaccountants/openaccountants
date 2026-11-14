@@ -61,8 +61,8 @@ Norfolk Island is an Australian external territory and, since 1 July 2016, Austr
 
 | Item | Figure | Applies to | Source |
 |---|---|---|---|
-| Company tax rate, base rate entity | 25% | Aggregated turnover under A$50 million and base rate entity passive income no more than 80% of assessable income, 2026-27 | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/text) |
-| Company tax rate, other companies | 30% | Companies that are not base rate entities | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/text) |
+| Company tax rate, base rate entity | 25% | Aggregated turnover less than $50 million and no more than 80% of assessable income is base rate entity passive income, 2026-27 (ss 23(2), 23AA) | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
+| Company tax rate, other companies | 30% | Companies that are not base rate entities (s 23(2)(b)) | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
 ### Residence, income and tax profit
 
@@ -373,10 +373,11 @@ expected:
 
 ## Sources
 
-Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026), except rows dated 2026-11-14, which were re-read on import. Each label is the reference tag used in the text above.
 
 | Source | URL | Read on |
 |---|---|---|
+| Income Tax Rates Act 1986 ss 23(2) and 23AA, re-read on import. Read for the 25% and 30% rates and the base rate entity test ($50 million, 80%) | https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 |
 | ASSESS. Read for: Residence, income and tax profit; Sources, currency and remaining coverage | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
 | CORE. Read for: Residence, income and tax profit; Tax losses and carryforward restrictions; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
 | RATES. Read for: Ordinary company rates and base-rate entity tests; Keep three size tests and minimum taxes separate; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A03348/2026-07-01/text | 2026-10-17 |

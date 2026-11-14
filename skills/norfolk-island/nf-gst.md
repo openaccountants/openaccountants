@@ -54,7 +54,7 @@ Norfolk Island is an Australian external territory and, since 1 July 2016, Austr
 | Item | Figure | Applies to | Source |
 |---|---|---|---|
 | GST rate | 10% of value | Taxable supplies connected with the mainland | [ACT1](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html) |
-| Registration turnover threshold | AUD 75,000; AUD 150,000 for non-profit bodies | Current or projected GST turnover from connected supplies | [REG](https://www.legislation.gov.au/F2019L00417/2025-11-01/text) |
+| Registration turnover threshold | $75,000; $150,000 for non-profit bodies | Current or projected GST turnover from connected supplies (GST Regulations 23-15.01, 23-15.02) | [REG](https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
 ### Establish the territory and connection for each supply
 
@@ -295,10 +295,11 @@ expected:
 
 ## Sources
 
-Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026), except rows dated 2026-11-14, which were re-read on import. Each label is the reference tag used in the text above.
 
 | Source | URL | Read on |
 |---|---|---|
+| GST Regulations 2019 ss 23-15.01 and 23-15.02, re-read on import. Read for the $75,000 and $150,000 registration thresholds | https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 |
 | ACT1. Read for: Establish the territory and connection for each supply; Registration and turnover boundaries; Mainland goods exported to Norfolk; Tax amount, purchase credits and timing; Primary sources and limits | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
 | ACT2. Read for: Establish the territory and connection for each supply; Registration and turnover boundaries; Primary sources and limits | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-17 |
 | REG. Read for: Registration and turnover boundaries; Tax amount, purchase credits and timing; Primary sources and limits | https://www.legislation.gov.au/F2019L00417/2025-11-01/text | 2026-10-17 |
