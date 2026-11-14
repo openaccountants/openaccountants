@@ -62,7 +62,7 @@ Contributions to the Antigua and Barbuda Medical Benefits Scheme (MBS) in 2026, 
 |---|---|---|
 | Employee aged exactly 16 | The table says "over 16" for employees but "aged 16" for the self-employed; not resolved, ask the Scheme | [MBS contribution rates](https://www.mbs.gov.ag/v2/contribution-rates/) |
 | Employee aged 60 to 69 earning under EC$400 a month | Age and low-earnings categories overlap; priority not published, ask the Scheme | same |
-| High earner | No MBS ceiling is published; do not apply the social security EC$6,500 cap | same |
+| High earner | No MBS ceiling is published; do not apply the social security ceiling | same |
 | Combined payroll deduction for both schemes | Not enough evidence that each agency was paid; reconcile each separately | [MBS business account services](https://www.mbs.gov.ag/v2/services/business-account-services/) |
 
 ## Worked cases
