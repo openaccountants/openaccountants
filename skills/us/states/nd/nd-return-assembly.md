@@ -1,7 +1,7 @@
 ---
 name: nd-return-assembly
 description: "Final capstone orchestrator that assembles the complete federal and North Dakota filing package for tax year 2026 for a full-year North Dakota resident sole proprietor or single-member LLC disregarded for federal tax. Consumes the outputs of every upstream federal and North Dakota skill (bookkeeping, Schedule C and SE, QBI, retirement, self-employed health insurance, quarterly estimated tax, federal return assembly, 1099-NEC, nd-income-tax, nd-estimated-tax, nd-payroll, nd-corporate-tax routing checks and nd-sales-tax status) and produces one reviewer package with every worksheet, every cross-skill reconciliation, the taxpayer action list with filing and payment steps, the 2027 ND-1ES schedule and the reviewer brief. It does not recompute tax; it orchestrates and links every figure to the skill that owns it. Trigger on assemble the North Dakota return, final ND package, ND-1 reviewer package, ND return assembly, package up the Dakota return. Load alongside us-tax-workflow-base and every content skill in the loading order. Full-year North Dakota residents only."
-version: "3.0"
+version: "3.1"
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-14
@@ -379,7 +379,7 @@ One message: which skills ran, which self-checks passed, which deliverables were
 | ND-ASM-T1-07 | An extension to file is not an extension to pay: interest at 12% per year runs from the original due date to the earlier of filing or the extended due date; prepay with Form ND-1EXT (and then file Form ND-1, not ND-EZ). | 2025 booklet, "Extension interest" and "Prepayment of tax due" |
 | ND-ASM-T1-08 | Taxable Social Security (Form 1040 line 6b) is subtracted on line 15. | 2025 booklet, line 15 |
 | ND-ASM-T1-09 | Taxable military retirement (Form 1040 line 5b) is subtracted on line 14; military pay on line 11. | 2025 booklet, lines 11 and 14 |
-| ND-ASM-T1-10 | 2027 estimated tax follows the four tests and the 90% or 100% required payment in `nd-estimated-tax`; there is no 110% step-up. | [2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| ND-ASM-T1-10 | 2027 estimated tax follows the four tests and the 90% or 100% required payment in `nd-estimated-tax`; there is no higher prior-year percentage for high incomes, as there is federally. | [2026 Form ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 | ND-ASM-T1-11 | North Dakota takes no second standard or itemized deduction and no second QBI deduction; both are inside line 1b. | 2025 booklet, line 1b |
 | ND-ASM-T1-12 | Reciprocity wages of a North Dakota resident are taxed only in North Dakota; no Schedule ND-1CR credit for them. | 2025 booklet, "Reciprocity" |
 | ND-ASM-T1-13 | The Schedule ND-1CR credit is the lesser of tax actually paid to the other state and the North Dakota tax on the income it taxed. | [credit page](https://www.tax.nd.gov/credit-income-tax-paid-another-state-or-local-jurisdiction) |

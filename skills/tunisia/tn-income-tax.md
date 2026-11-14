@@ -1,17 +1,18 @@
 ---
 name: tn-income-tax
 description: "Tunisia personal income tax (IRPP) for tax year 2026: residence test, eight-band scale, family deductions, employee expenses, minimum tax, optional flat tax from the 2026 finance law, return deadlines by income type and advance payments. Use for any question on how much income tax an individual, employee, trader or professional pays in Tunisia, IRPP, baremes, declaration annuelle, forfait, or when a Tunisian return is due. Figures come from the DGI texts; items that could not be opened are marked unverified."
-version: 1.1
+version: 1.2
 jurisdiction: TN
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Tunisia Personal Income Tax v1.1
+# Tunisia Personal Income Tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -46,8 +47,6 @@ Excluded: companies (see [corporate income tax](tn-corporate-income-tax.md)). Th
 | Optional flat tax, TND 50,001 to 100,000 | TND 5,000 a year | 2026 | same | same |
 | Basic flat tax, turnover up to TND 10,000 | TND 400 a year | 2026 | Half outside pre-2015 communal zones. Art. 44 ter | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf |
 | Basic flat tax, turnover TND 10,000 to 100,000 | 3% of turnover | 2026 | +50% if filed over 30 days late. Art. 44 ter | same |
-| Social Solidarity Contribution | unverified: 0.5% in the old file | 2026 | LF 2026 art. 87 keeps the exceptional rule for income whose return falls due in 2023 to 2026. The rate sits in LF 2018 art. 53, not opened | unverified |
-| Non-resident short-stay employees | unverified: 20% on gross in the old file | 2026 | Stays up to 6 months; article not traced | unverified |
 
 ## The base
 
@@ -131,4 +130,4 @@ expected:
 | Loi n° 2025-17 du 12 decembre 2025, loi de finances 2026, JORT n° 148, archived copy of the DGI file; tax articles read | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf | 2026-11-01 |
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
-Not yet confirmed: Social Solidarity Contribution rate and 5,000 exemption (LF 2018 art. 53; Note commune 1 of 2026 PDF not opened). Non-resident short-stay 20% rate from the old file. Employer monthly remittance from the old file (form exists; rule not re-read). The old 9.68% employee CNSS figure (see payroll skill). Return form boxes. Any change to the code by LF 2026 not named here: LF 2026 was searched for references to the code, the 2026 consolidated edition was not read.
+Not yet confirmed: Social Solidarity Contribution rate and 5,000 exemption (LF 2018 art. 53; Note commune 1 of 2026 PDF not opened). Non-resident short-stay 20% rate from the old file. Employer monthly remittance from the old file (form exists; rule not re-read). The old 9.68% employee CNSS figure (see payroll skill). Return form boxes. Any change to the code by LF 2026 not named here: LF 2026 was searched for references to the code, the 2026 consolidated edition was not read; rows moved out of the rates table on 2026-11-14: Social Solidarity Contribution 0.5% (old file) and non-resident short-stay employees 20% on gross (old file, stays up to 6 months).

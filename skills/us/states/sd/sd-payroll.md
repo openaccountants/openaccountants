@@ -1,11 +1,11 @@
 ---
 name: sd-payroll
 description: "Compute South Dakota 2026 employer reemployment assistance contributions, taxable wage base, new and construction rates, investment and administrative fees, Form 21 quarterly filing and no state income-tax withholding. Trigger on South Dakota payroll, SUI, RA tax, UI rate notice and quarterly wages."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-SD
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: payroll
 type: computation
@@ -38,10 +38,10 @@ Ordinary contributory employers for 2026, including state income-tax withholding
 | Individual income-tax withholding | Not applicable; no state individual income tax | [DOR tax basics](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf) |
 | RA annual wage base | USD 15,000 per employee per employer; report gross wages above base | [DLR 2026 statement](https://dlr.sd.gov/ra/businesses/default.aspx) |
 | Employee RA deduction | Zero; employer-financed | [DLR benefits FAQ](https://dlr.sd.gov/ra/individuals/faq.aspx) |
-| New nonconstruction first year |1.20% contribution +0.55% investment fee =1.75% | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
-| New construction first year |6.00% contribution +0.55% investment =6.55% | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
-| New years 2/3, positive balance and not yet experience-rated | Nonconstruction 1.00% +0.55%=1.55%; construction 3.00% +0.55%=3.55% | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
-| Experience-eligible administrative fee |0.08% on taxable wages for 2026 onward, regardless of the old low-reserve test; not deducted from employee wages | [61-5-28.1](https://sdlegislature.gov/api/Statutes/61-5-28.1.html) |
+| New nonconstruction first year |1.20% contribution +0.55% investment fee =1.75% (derived: sum of the two) | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
+| New construction first year |6.00% contribution +0.55% investment =6.55% (derived: sum of the two) | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
+| New years 2/3, positive balance and not yet experience-rated | Nonconstruction 1.00% +0.55%=1.55%; construction 3.00% +0.55%=3.55% (totals derived: sum of the two) | [61-5-24](https://sdlegislature.gov/api/Statutes/61-5-24.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
+| Experience-eligible administrative fee |0.08% (in words on the page) on taxable wages for 2026 onward, regardless of the old low-reserve test; not deducted from employee wages | [61-5-28.1](https://sdlegislature.gov/api/Statutes/61-5-28.1.html) |
 | Not experience-eligible investment fee |0.55%; no experience-only administrative fee | [61-5-29](https://sdlegislature.gov/api/Statutes/61-5-29.html); [DLR](https://dlr.sd.gov/ra/businesses/default.aspx) |
 | Experienced contribution | Assigned notice from 2026 schedule A/B/C and reserve ratio; not the old handbook 2020 table | [61-5-25.7](https://sdlegislature.gov/api/Statutes/61-5-25.7.html); [61-5-25](https://sdlegislature.gov/api/Statutes/61-5-25.html) |
 | Experienced investment fee | Reserve ratio below 1%:0.53%;1%-<1.2%:0.50%;1.2%-<1.3%:0.40%;1.3%-<1.4%:0.30%;1.4%-<1.5%:0.20%;1.5%-<1.6%:0.10%;1.6%+:0%; statutory hold-harmless can apply | [61-5-29](https://sdlegislature.gov/api/Statutes/61-5-29.html) |

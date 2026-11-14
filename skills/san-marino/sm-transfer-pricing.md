@@ -5,14 +5,15 @@ description: >
 jurisdiction: SM
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# San Marino transfer pricing and international advance agreements v0.4
+# San Marino transfer pricing and international advance agreements v0.5
 
 Tax year: the taxpayer's tax period in 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office). The corporate rate on any adjustment for 2026 is 18% ([Law 141/2025, art 54(6)][l141]).
 
@@ -27,15 +28,15 @@ Tax year: the taxpayer's tax period in 2026. Currency EUR. Authority: UO Ufficio
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Corporate rate on an upward adjustment | 18% (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)][l141] |
-| Sole trader and professional rate on an upward adjustment | 18% separate rate (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)][l141] |
-| Significant influence | 20% or more of voting rights, directly or indirectly | 2026 | [IGR art 2][igr] |
-| APA fee, group turnover below 50 million | 10,000 per application or counterparty State | 2026 | [DD 116/2026, art 3(1)(a)][dd116] |
-| APA fee, group turnover 50 million to below 100 million | 30,000 | 2026 | [DD 116/2026, art 3(1)(b)][dd116] |
-| APA fee, group turnover 100 million or more | 50,000 | 2026 | [DD 116/2026, art 3(1)(c)][dd116] |
-| APA fee reductions | Halved for a unilateral agreement; halved for a renewal | 2026 | [DD 116/2026, art 3(2)-(3)][dd116] |
-| APA duration | Five tax periods from the period in which the taxpayer signs | 2026 | [DD 116/2026, art 5(2)][dd116] |
-| Ordinary tax ruling (interpello) reply | Within 60 days of receipt | 2026 | [IGR art 123][igr] |
+| Corporate rate on an upward adjustment | 18% (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Sole trader and professional rate on an upward adjustment | 18% separate rate (tax years 2026-2030) | 2026 | [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Significant influence | 20% or more of voting rights, directly or indirectly | 2026 | [IGR art 2](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| APA fee, group turnover below 50 million | 10,000 per application or counterparty State | 2026 | [DD 116/2026, art 3(1)(a)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0) |
+| APA fee, group turnover 50 million to below 100 million | 30,000 | 2026 | [DD 116/2026, art 3(1)(b)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0) |
+| APA fee, group turnover 100 million or more | 50,000 | 2026 | [DD 116/2026, art 3(1)(c)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0) |
+| APA fee reductions | Halved for a unilateral agreement; halved for a renewal | 2026 | [DD 116/2026, art 3(2)-(3)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0) |
+| APA duration | Five tax periods from the period in which the taxpayer signs | 2026 | [DD 116/2026, art 5(2)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0) |
+| Ordinary tax ruling (interpello) reply | Within 60 days of receipt | 2026 | [IGR art 123](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 The fee bands are not documentation or country-by-country reporting thresholds.
 
