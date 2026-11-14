@@ -8,7 +8,7 @@ description: >
   Articles of Incorporation for TT$520, certificate collection), then the BIR
   file number, PAYE, health surcharge, VAT above TT$600,000 and NIS registrations.
   Trigger on Trinidad company formation, incorporate in Trinidad, Companies
-  Registry Trinidad, CRA account, BIR number company. Built from the Registrar
+  Registry Trinidad, registry account, BIR number company. Built from the Registrar
   General and IRD pages; not reviewed by an accountant.
 version: 1.0
 jurisdiction: TT
@@ -36,7 +36,7 @@ Out of scope: non-profit companies, external (foreign) companies, business name 
 | Item | Amount | Conditions | Source |
 |---|---|---|---|
 | Name search and reservation | TT$25 | Processing three working days; name reserved 45 days | Registrar General, Companies Registry, incorporate a company: https://legalaffairs.gov.tt/incorpcompany.php |
-| Incorporation (Articles of Incorporation) | TT$520 | Filed online through the CRA; must be done within the 45-day reservation | same |
+| Incorporation (Articles of Incorporation) | TT$520 | Filed online through the registry account; must be done within the 45-day reservation | same |
 | VAT registration threshold | Commercial supplies over TT$600,000 in 12 months | See `trinidad-vat` | IRD, VAT page: https://www.ird.gov.tt/VAT |
 | Business levy exemption | First twelve months after registration | See `tt-corporate-income-tax` | Corporation Tax Act, Chap. 75:02: https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.02-Corporation-Tax-Act--2024.pdf |
 
@@ -51,11 +51,11 @@ Out of scope: non-profit companies, external (foreign) companies, business name 
 
 | Step | Where | What | After |
 |---|---|---|---|
-| 1 | Companies Registry Online System | Every director, incorporator and attorney-at-law creates a Companies Registry Account (CRA): personal details, birth certificate, two photo IDs and a headshot holding one ID | CRA active |
+| 1 | Companies Registry Online System | Every director, incorporator and attorney-at-law creates a Companies Registry account: personal details, birth certificate, two photo IDs and a headshot holding one ID | registry account active |
 | 2 | CROS search | Check the name is not the same as or similar to an existing business name, corporation name or trademark | Shortlist |
-| 3 | CRA, Name Reservation | Apply and pay TT$25 | Approved (reserved 45 days), queried or rejected (new fee) |
-| 4 | Each CRA | Directors, incorporators and statement signatories approve their inclusion using the name reservation number; companies approve through a director or secretary | Surname and Account PIN given to the applicant |
-| 5 | CRA, Registration/Incorporation | File Articles of Incorporation and pay TT$520 | Emailed confirmation; Articles, Notice of Address and Notice of Directors to download |
+| 3 | registry account, Name Reservation | Apply and pay TT$25 | Approved (reserved 45 days), queried or rejected (new fee) |
+| 4 | Each registry account | Directors, incorporators and statement signatories approve their inclusion using the name reservation number; companies approve through a director or secretary | Surname and Account PIN given to the applicant |
+| 5 | registry account, Registration/Incorporation | File Articles of Incorporation and pay TT$520 | Emailed confirmation; Articles, Notice of Address and Notice of Directors to download |
 | 6 | Companies Registry counter | Print two copies, sign with wet signatures and deliver | Certificate of Incorporation |
 | 7 | IRD | BIR file number for the company; set the Established Accounting Terminal Date | BIR number |
 | 8 | IRD | PAYE and health surcharge accounts if hiring; VAT registration if over TT$600,000; withholding tax account if paying abroad | See the tax skills |
@@ -67,7 +67,7 @@ Penalties after incorporation belong to the tax skills (late corporation tax ret
 
 ## Cross-border points
 
-Foreign directors need the same CRA identity documents. Payments abroad need a withholding tax account (see `tt-corporate-income-tax`).
+Foreign directors need the same registry account identity documents. Payments abroad need a withholding tax account (see `tt-corporate-income-tax`).
 
 ## Two worked examples that recompute
 
@@ -90,7 +90,7 @@ expected:
 ## Ask the client first
 
 1. Company name options, and has a CROS search been run?
-2. Who are the directors, incorporators and the statement signatory, and do they all have CRAs?
+2. Who are the directors, incorporators and the statement signatory, and do they all have registry accounts?
 3. Expected turnover in the first year (VAT TT$600,000)?
 4. Employees from the start?
 5. Payments to non-residents expected?
