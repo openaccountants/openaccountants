@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gq-cross-border"
   jurisdiction: "GQ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Equatorial Guinea Cross-Border Tax v0.2
+# Equatorial Guinea Cross-Border Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,8 +28,6 @@ Non-residents earning here, and local payers. Residence of individuals: see [Inc
 | Non-resident salary | 15% of gross (art 130.3) | 2026 | same |
 | Hydrocarbon sector non-residents | 10% of gross (art 312.1.a) | 2026 | same |
 | Rent | 5% (art 117) | 2026 | same |
-| Royalties | unverified: 10% from the old skill as a separate rate; art 76 covers licences in its section title at 10% | 2026 | unverified |
-| CEMAC cap on dividends and interest | unverified: 10% in the old skill, not in art 105 | 2026 | unverified |
 
 ## The base
 
@@ -98,8 +96,8 @@ expected:
 
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
-Not yet confirmed: the treaty list and rates (the UK manual lists unilateral relief only and was not used); royalties; CEMAC cap; whether art 76 is final; whether a CEMAC convention changes these rates; resident company rate under art 105.
+Not yet confirmed: the treaty list and rates (the UK manual lists unilateral relief only and was not used); royalties; CEMAC cap; whether art 76 is final; whether a CEMAC convention changes these rates; resident company rate under art 105; royalties 10% as a separate rate (old skill; art 76 covers licences at 10% in its section title) and the CEMAC 10% cap on dividends and interest (old skill, not in art 105), both moved out of the rates table.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

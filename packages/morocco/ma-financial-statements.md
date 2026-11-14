@@ -1,10 +1,11 @@
 ---
 name: ma-financial-statements
 description: "Use this skill whenever asked about financial statements, statutory accounts, or financial reporting obligations for self-employed people and small businesses in Morocco for tax year 2026: who has to prepare formal accounts and who does not, the etats de synthese (Bilan, CPC, ESG, Tableau de financement, ETIC), how accounts go to the DGI with the return, deposit at the court registry (depot legal), and when a statutory auditor (commissaire aux comptes) is required. Trigger on phrases like \"Morocco financial statements\", \"états de synthèse\", \"bilan CPC Maroc\", \"do I file accounts Morocco\", \"comptes annuels Maroc\", \"CGNC états de synthèse\", \"tableau de financement\", \"ETIC\", \"commissaire aux comptes Maroc\", \"dépôt des comptes Maroc\", \"القوائم المالية المغرب\", \"الميزانية المغرب\". Auto-entrepreneur and CPU taxpayers fall outside CGI Art. 145; RNS keeps the Art. 145-VI registers; RNR taxpayers and companies keep accounts under Art. 145-I. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-bookkeeping, morocco-professional-income-tax, ma-cpu, and ma-auto-entrepreneur."
-version: 1.1
+version: 2.0
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: filing-howto
 depends_on:
   - income-tax-workflow-base
 category: financial-statements
@@ -13,19 +14,17 @@ tier: 2
 domain: financial-statements
 ---
 
-# MA Financial Statements v1.1
+# Morocco financial statements, tax year 2026
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Tax year 2026. Law: Code General des Impots (CGI), 2026 edition; Law 17-95 (SA); Law 5-96 (SARL and other companies). Currency: MAD.
 
-## What this file is
+## Scope
 
 This skill tells an AI agent who has to prepare formal financial statements in Morocco, what those statements are, and how they are filed, by tax regime and legal form. It loads on top of `income-tax-workflow-base`. It does not compute tax (`morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`) and does not govern day-to-day books and invoices (`ma-bookkeeping`). It governs the output: the etats de synthese. The reviewer is the customer: the skill produces a working paper and a brief, not a filing.
 
 Reply in the user's language. Moroccan users mix English, French and Darija; keep the native terms (CGNC, etats de synthese, bilan, CPC, ESG, tableau de financement, ETIC, commissaire aux comptes, depot legal, DGI) and explain them.
-
-## Scope statement
 
 Covered: auto-entrepreneur (AE), contribution professionnelle unique (CPU), resultat net simplifie (RNS), resultat net reel (RNR), and commercial companies (SARL, SA, SNC, SCS, SCA). Out of scope: tax computation, invoice rules, and bank, insurer or listed-group consolidated reporting, which go to a licensed Moroccan professional.
 
@@ -46,23 +45,18 @@ Do not tell an RNS taxpayer the old line that a fixed "reduced set" of statement
 3. **RNR.** Applies if the CPU limits are passed for two consecutive years, from 1 January of the following year (Art. 41-II), and to an AE in the same position unless RNS or CPU is chosen (Art. 43-4). Accounts now go with the IR return.
 4. **Company.** Etats de synthese, IS return, court deposit, and an auditor if it is an SA or passes the turnover test. Incorporation is not freelancing with a logo: it brings deposited accounts and possibly audit, all absent for AE and CPU.
 
-## Filing requirements
+## Ask the client first
 
-| Who | What | Deadline | Source |
-|---|---|---|---|
-| Company | Tax result return with annexes and sales statement by client | Within 3 months of year end | CGI Art. 20-I |
-| Nil or loss-making company | Explanatory statement with the return; MAD 2,000 fine if still missing 15 days after a letter | With the return | CGI Art. 20-IV, 198 bis |
-| RNR or RNS individual | Annual income return | Before 1 May | CGI Art. 82-I |
-| Nil or loss-making RNR or RNS | Explanatory statement | With the return | CGI Art. 82-IV |
-| SARL | Accounts approved by the members | Within 6 months of year end | Law 5-96 Art. 70 |
-| SA | Ordinary general meeting; one extension by court order | Within 6 months of year end | Law 17-95 Art. 115 |
-| SA | Two copies of the etats de synthese and the auditor's report to the court registry; electronic deposit allowed | Within 2 months of approval | Law 17-95 Art. 158 |
-| SARL, SNC, SCS, SCA | Two copies of the etats de synthese and any auditor's report to the court registry | Within 30 days of approval | Law 5-96 Art. 95 |
-| All taxpayers | Keep accounting documents | 10 years; electronically if accounts must be electronic | CGI Art. 211 |
+1. Is the person an individual or a company? If a company, which form: SARL, SA, SNC, SCS or SCA?
+2. Which tax regime: auto-entrepreneur, CPU, RNS, RNR, or corporate tax?
+3. Turnover for the last two years, and is the activity commercial or services?
+4. Year-end date, and the date the members or shareholders approved (or will approve) the accounts.
+5. Is an auditor (commissaire aux comptes) already appointed, or required by the statutes?
+6. Is the company listed, a bank, an insurer, or part of a group preparing consolidated accounts?
 
-E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were not read; see Not yet confirmed.
+## The method, step by step
 
-## Rates and thresholds
+### Rates, bands and thresholds
 
 | Item | Amount | Source | URL |
 |---|---|---|---|
@@ -76,7 +70,7 @@ E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were n
 | No etats de synthese, SARL managers | MAD 2,000 to 40,000 | Law 5-96 Art. 109 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
 | No etats de synthese, SA directors | MAD 20,000 to 200,000 | Law 17-95 Art. 386 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf |
 
-## Computation rules
+### The steps
 
 1. Identify the regime and legal form. If unknown, assume accounts are required until AE or CPU status is confirmed (CGI Art. 145-XI). Never call someone exempt on a guess.
 2. AE or CPU confirmed: say no bilan or CPC is required by the CGI, and route records to `ma-bookkeeping`.
@@ -97,7 +91,7 @@ The official model 100/IS/N annex set (normal accounting model), as filed by a M
 
 The turnover line and content of the simplified model were not confirmed. Until they are, prepare the normal model and flag it. The statements are approved by members or shareholders, and the SA auditor certifies them as regular and fair (Law 17-95 Art. 175).
 
-## Edge cases and special rules
+## Boundary and exception table
 
 - **Auditor v accountant:** the commissaire aux comptes certifies; the expert-comptable prepares or reviews. An auditor must be on the roll of the Ordre des Experts-Comptables (Law 17-95 Art. 160).
 - **Term:** three financial years (Law 17-95 Art. 163). A company calling on public savings cannot keep the same auditor certifying for more than 12 years (Art. 163 as amended by Law 19-20).
@@ -109,17 +103,59 @@ The turnover line and content of the simplified model were not confirmed. Until 
 - **IFRS:** a self-employed person or ordinary SARL is not told to use IFRS; bank, insurer and listed-group questions go to a professional. Consolidated accounts are where the old file placed IFRS (see Not yet confirmed).
 - **Lost documents:** inform the inspector by registered letter within 15 days, 30 for force majeure (CGI Art. 211).
 
-## Worked examples
+## Worked cases
 
-### Example 1: Freelance developer, auto-entrepreneur
+### Case 1: Freelance developer, auto-entrepreneur
 
 Software services, turnover collected MAD 190,000, under the MAD 200,000 limit (Art. 42 ter). **Result:** no bilan, no CPC, no court deposit, no auditor. Records go to `ma-bookkeeping`, returns to `ma-auto-entrepreneur`. Flag that RNR or incorporation changes this.
 
-### Example 2: IT consultant on RNR, thinking of incorporating
+### Case 2: IT consultant on RNR, thinking of incorporating
 
 Consultancy, turnover MAD 3,000,000, above the MAD 500,000 services limit for two years, so RNR. **As an individual:** accounts under Art. 145-I, return before 1 May, no auditor. **As a SARL closing 31 December 2026:** IS return by 31 March 2027, approval by 30 June 2027, deposit within 30 days of approval. MAD 3,000,000 is below MAD 50,000,000, so no mandatory auditor. Model: flag as unconfirmed and prepare the normal model.
 
-## Self-checks
+```oa-check
+name: IT consultant, services limit and audit line
+inputs:
+  turnover: 3000000
+  services_limit: 500000
+  audit_line: 50000000
+steps:
+  - over_services_limit: turnover - services_limit
+  - audit_headroom: audit_line - turnover
+expected:
+  over_services_limit: 2500000
+  audit_headroom: 47000000
+```
+
+## When to refuse or refer
+
+- Do not tell an AE or CPU taxpayer they must prepare a bilan.
+- Do not let an RNR taxpayer or company skip accounts.
+- Do not state the simplified model as settled.
+- Do not tell a sole proprietor they need an auditor.
+- Do not compute tax here.
+- Do not replace a licensed Moroccan expert-comptable or commissaire aux comptes.
+- Bank, insurer, listed-group or consolidated reporting, and IFRS questions: refer to a licensed Moroccan professional.
+
+## Filing and payment
+
+| Who | What | Deadline | Source |
+|---|---|---|---|
+| Company | Tax result return with annexes and sales statement by client | Within 3 months of year end | CGI Art. 20-I |
+| Nil or loss-making company | Explanatory statement with the return; MAD 2,000 fine if still missing 15 days after a letter | With the return | CGI Art. 20-IV, 198 bis |
+| RNR or RNS individual | Annual income return | Before 1 May | CGI Art. 82-I |
+| Nil or loss-making RNR or RNS | Explanatory statement | With the return | CGI Art. 82-IV |
+| SARL | Accounts approved by the members | Within 6 months of year end | Law 5-96 Art. 70 |
+| SA | Ordinary general meeting; one extension by court order | Within 6 months of year end | Law 17-95 Art. 115 |
+| SA | Two copies of the etats de synthese and the auditor's report to the court registry; electronic deposit allowed | Within 2 months of approval | Law 17-95 Art. 158 |
+| SARL, SNC, SCS, SCA | Two copies of the etats de synthese and any auditor's report to the court registry | Within 30 days of approval | Law 5-96 Art. 95 |
+| All taxpayers | Keep accounting documents | 10 years; electronically if accounts must be electronic | CGI Art. 211 |
+
+E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were not read; see Not yet confirmed.
+
+## Completion checklist
+
+Test questions and the answers the skill must give:
 
 1. *"I'm an auto-entrepreneur, do I file financial statements?"* No (Art. 145-XI).
 2. *"CPU, do I prepare a bilan?"* No under the CGI.
@@ -132,21 +168,15 @@ Consultancy, turnover MAD 3,000,000, above the MAD 500,000 services limit for tw
 
 Also check: inputs trace to documents; regime confirmed; figures match 2026; output names unconfirmed items.
 
-**Prohibitions.** Do not tell an AE or CPU taxpayer they must prepare a bilan. Do not let an RNR taxpayer or company skip accounts. Do not state the simplified model as settled. Do not tell a sole proprietor they need an auditor. Do not compute tax here. Do not replace a licensed Moroccan expert-comptable or commissaire aux comptes.
-
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| CGI 2026 (DGI), Art. 20, 38, 39, 41, 42 ter, 43, 82, 145, 155, 184, 198 bis, 211, read in the DGI PDF text | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
-| Law 17-95 consolidated to Law 78-12 (AMMC), Art. 115, 156, 158, 159, 160, 163, 175, 386, 403, 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf | 2026-11-01 |
-| Law 19-20, BO 7014, amending Art. 163 of Law 17-95 | https://www.ammc.ma/sites/default/files/LOI%20N%C2%B019-20.pdf | 2026-11-01 |
-| Law 96-21, BO 7376, amends Law 17-95 Art. 12, 130, 245 only as far as read (share form) | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf | 2026-11-01 |
-| Law 5-96, Art. 12, 21, 34, 70, 80, 95, 108, 109, archived copy of Adala dated 22 Feb 2020 (live page refused, later amendments not checked) | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm | 2026-11-01 |
-| Model 100/IS/N annexes, normal model, CFG Marches 2024 filing on AMMC | https://www.ammc.ma/sites/default/files/CFG%20MARCHES%20ETATS%20FINANCIERS%202024.pdf | 2026-11-01 |
+| CGI 2026 (DGI), French edition. Read for Art. 145 (accounts duty, the Art. 145-VI RNS registers, the Art. 145-XI carve-out), Art. 39 RNS limits (MAD 2,000,000 and 500,000), Art. 41-II and 42 ter regime limits, Art. 20 and 82 returns and annexes, Art. 184 surcharges, Art. 198 bis, Art. 211 retention | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-14 |
+| Law 17-95 on SA, consolidated to Law 78-12, as published by the AMMC. Read for Art. 115 meeting, 156, 158 deposit, 159 and 160 auditors, 163 term, 175, and the fines at Art. 386 (MAD 20,000 to 200,000), 403 and 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf | 2026-11-14 |
+| Law 19-20, BO 7014, as published by the AMMC. Read for the amended Art. 163 of Law 17-95 (no auditor beyond 12 years for companies calling on public savings) | https://www.ammc.ma/sites/default/files/LOI%20N%C2%B019-20.pdf | 2026-11-14 |
+| Law 96-21, BO 7376, SGG. Read for its amendments to Law 17-95 Art. 12, 130 and 245 (share form); nothing on accounts or deposit | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf | 2026-11-14 |
+| Law 5-96, archived copy of Adala dated 22 Feb 2020. Read on 1 Nov 2026 for Art. 12, 21, 34, 70, 80 (MAD 50,000,000 audit line), 95 deposit, 108 and 109 fines; not reopened (web.archive.org refused with 429 on 14 Nov 2026; later amendments not checked) | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm | 2026-11-01 |
+| Model 100/IS/N annexes, normal model, CFG Marches 2024 filing on the AMMC site. Read for the five statements filed together (bilan, CPC, ESG, tableau de financement, ETIC) | https://www.ammc.ma/sites/default/files/CFG%20MARCHES%20ETATS%20FINANCIERS%202024.pdf | 2026-11-14 |
 
 Not yet confirmed: simplified model turnover line (old file: MAD 10,000,000) and its component list (old file: ESG dropped, tableau de financement and ETIC disputed); the old file's CGNC points that the five statements form an inseparable whole and that individual accounts stay under the CGNC with IFRS only for consolidated accounts; an auditor required by the statutes; text of Law 9-88 and the CGNC, including any Law 9-88 duties of traders on RNS, AE and CPU; whether Law 19-20, Law 24-10 or later laws changed Law 5-96 Art. 12, 70, 80, 95, 108, 109; the electronic deposit platform; the list of return annexes set by regulation; SIMPL-IS and SIMPL-IR screens; IFRS scope (Bank Al-Maghrib Circular 56/G/2007 for banks, insurers from 2022, the AMMC option for listed groups); the AE and CPU register contents. Art. 145 bis, cited by the old files, is repealed in the 2026 CGI.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).

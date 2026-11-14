@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-regime-forfettario"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Italy: the regime forfettario (flat-rate regime), tax year 2026
@@ -54,31 +54,31 @@ Related skills, not repeated here:
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Entry: previous-year revenue or fees, annualised, all ATECO codes together | not above EUR 85,000 | 2026 | L. 190/2014 art. 1 c. 54(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
-| Entry: previous-year gross staff and collaborator costs | not above EUR 20,000 | 2026 | c. 54(b), same URL |
-| Same-year exit: receipts in the year above | EUR 100,000 | 2026 | c. 71, same URL |
-| Exclusion: previous-year employment income above (standing figure) | EUR 30,000 | standing | c. 57(d-ter), same URL |
+| Entry: previous-year gross staff and collaborator costs | not above EUR 20,000 | 2026 | c. 54(b), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Same-year exit: receipts in the year above | EUR 100,000 | 2026 | c. 71, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Exclusion: previous-year employment income above (standing figure) | EUR 30,000 | standing | c. 57(d-ter), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
 | The same limit, regime years 2025 and 2026 (tested on 2024 and 2025 employment income) | EUR 35,000 | 2025, 2026 | L. 207/2024 art. 1 c. 12, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 ; extended to 2026 by L. 199/2025 art. 1 c. 27, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 |
-| Non-resident EU/EEA: share of total income earned in Italy | at least 75% | 2026 | c. 57(b), L. 190/2014 URL above |
-| Substitute tax (replaces IRPEF, regional and municipal surcharges, IRAP) | 15% | 2026 | c. 64, L. 190/2014 URL above |
-| Start-up rate, year activity starts and the next four | 5% | 2026 | c. 65, L. 190/2014 URL above |
-| INPS cut for artigiani and commercianti who opt in | 35% off the contributions due | 2026 | c. 77, L. 190/2014 URL above |
-| Deadline to opt in to the INPS cut (businesses already active) | 28 February each year | 2026 | c. 83, L. 190/2014 URL above |
+| Non-resident EU/EEA: share of total income earned in Italy | at least 75% | 2026 | c. 57(b), L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Substitute tax (replaces IRPEF, regional and municipal surcharges, IRAP) | 15% | 2026 | c. 64, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Start-up rate, year activity starts and the next four | 5% | 2026 | c. 65, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| INPS cut for artigiani and commercianti who opt in | 35% off the contributions due | 2026 | c. 77, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Deadline to opt in to the INPS cut (businesses already active) | 28 February each year | 2026 | c. 83, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
 | Stamp duty on an invoice without VAT above EUR 77.47 | EUR 2 per invoice | 2026 | Agenzia, stamp duty on e-invoices (June 2026), https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
 | Penalty: start-up form silent on the regime, or opt-out not shown in the VAT return | EUR 250 to 2,000 | 2026 | Agenzia, https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/modalita-di-accesso-al-regime |
 
 **Coefficienti di redditivita (L. 190/2014 allegato 4, as replaced by L. 145/2018 allegato 2).** Taxable income = receipts times the coefficient of the activity's ATECO 2007 group.
 
-| No. | Sector group | ATECO 2007 codes | Coefficient |
-|---|---|---|---|
-| 1 | Food and beverage manufacturing | 10-11 | 40% |
-| 2 | Wholesale and retail trade | 45; 46.2 to 46.9; 47.1 to 47.7; 47.9 | 40% |
-| 3 | Street trade in food and drink | 47.81 | 40% |
-| 4 | Street trade in other goods | 47.82-47.89 | 54% |
-| 5 | Construction and real estate | 41-42-43; 68 | 86% |
-| 6 | Trade intermediaries (agents) | 46.1 | 62% |
-| 7 | Accommodation and food service | 55-56 | 40% |
-| 8 | Professional, scientific, technical, health, education, financial and insurance services | 64-65-66; 69-70-71-72-73-74-75; 85; 86-87-88 | 78% |
-| 9 | Other economic activities | 01-02-03; 05-06-07-08-09; 12 to 33; 35; 36-37-38-39; 49-50-51-52-53; 58-59-60-61-62-63; 77-78-79-80-81-82; 84; 90-91-92-93; 94-95-96; 97-98; 99 | 67% |
+| No. | Sector group | ATECO 2007 codes | Coefficient | Source |
+|---|---|---|---|---|
+| 1 | Food and beverage manufacturing | 10-11 | 40% | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 |
+| 2 | Wholesale and retail trade | 45; 46.2 to 46.9; 47.1 to 47.7; 47.9 | 40% | same |
+| 3 | Street trade in food and drink | 47.81 | 40% | same |
+| 4 | Street trade in other goods | 47.82-47.89 | 54% | same |
+| 5 | Construction and real estate | 41-42-43; 68 | 86% | same |
+| 6 | Trade intermediaries (agents) | 46.1 | 62% | same |
+| 7 | Accommodation and food service | 55-56 | 40% | same |
+| 8 | Professional, scientific, technical, health, education, financial and insurance services | 64-65-66; 69-70-71-72-73-74-75; 85; 86-87-88 | 78% | same |
+| 9 | Other economic activities | 01-02-03; 05-06-07-08-09; 12 to 33; 35; 36-37-38-39; 49-50-51-52-53; 58-59-60-61-62-63; 77-78-79-80-81-82; 84; 90-91-92-93; 94-95-96; 97-98; 99 | 67% | same |
 
 Source: the Gazzetta Ufficiale page of L. 145/2018 allegato 2, published by the Agenzia (https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218), and the same table in the Redditi PF 2026 instructions, Fascicolo 3, Quadro LM.
 
@@ -147,7 +147,7 @@ The forecast method, the minimum below which no acconto is due, the instalment p
 
 | Breach | Penalty | Source |
 |---|---|---|
-| Return not filed | 120% of the tax due, minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22 |
+| Return not filed | 120% ("centoventi per cento", in words on the page) of the tax due, minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22 |
 | Income or tax understated | 70% of the extra tax, minimum EUR 150 | D.Lgs. 471/1997 art. 1(2), same URL |
 | Tax paid late or not paid | 25% of the unpaid amount; halved if paid within 90 days; within 15 days, a further cut of one fifteenth per day of delay | D.Lgs. 471/1997 art. 13(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-22 |
 | False statement of the comma 54, 57 or 65 conditions, where the income assessed is more than 10% above the income declared | the minimum and maximum penalties of D.Lgs. 471/1997 go up by 10% | L. 190/2014 art. 1 c. 74 |
@@ -267,7 +267,7 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | L. 190/2014, art. 1, commi 54-89, as in force 22 October 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 | 2026-10-22 |
 | L. 190/2014, art. 1, as in force 2 January 2027 (commi 54-89 repealed by D.Lgs. 117/2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2027-01-02 | 2026-10-22 |
 | L. 207/2024, art. 1, c. 12 (EUR 35,000 employment-income limit) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 | 2026-10-22 |
-| L. 199/2025, art. 1, c. 27 (extends the EUR 35,000 limit to 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 | 2026-10-22 |
+| L. 199/2025, art. 1, c. 27 (extends to 2026 the employment-income limit of L. 207/2024 art. 1 c. 12) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 | 2026-10-22 |
 | D.Lgs. 81/2025, art. 1 (ATECO 2007 coefficients continue) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-06-12;81~art1!vig=2026-10-22 | 2026-10-22 |
 | D.Lgs. 117/2026, index (Capo XXI "Regime forfetario", from art. 232) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 | 2026-10-22 |
 | L. 145/2018 allegato 2 (coefficient table), Agenzia copy | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 | 2026-10-22 |
@@ -294,4 +294,4 @@ Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which emp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-regime-forfettario` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-regime-forfettario. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-regime-forfettario` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-regime-forfettario. If neither is available, confirm every figure against the official source pages cited above before relying on it.

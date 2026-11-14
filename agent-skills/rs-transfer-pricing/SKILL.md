@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/rs-transfer-pricing"
   jurisdiction: "RS"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Serbia: transfer pricing (transferne cene), tax year 2026
@@ -35,12 +35,12 @@ Law 80/2026 (in force 8 September 2026) does not change Articles 59 to 61v. It d
 |---|---|---|---|
 | Related party: capital or vote holding | at least 25%, direct or indirect | 2026 | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx (ZPDPL Art. 59) |
 | Short-form report allowed (except loans) | one-off transaction, or total with one related party in the year, not above the VAT registration turnover | 2026 | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx (ZPDPL Art. 60(4)); https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx (Rulebook Art. 2(3)) |
-| VAT registration turnover used for that test | RSD 8,000,000 in the previous 12 months | 2026 | https://www.purs.gov.rs/sr/pravna-lica/pdv/zakon/202/zakon-o-porezu-na-dodatu-vrednost.html (VAT Law Art. 38(1)) |
-| Left out of the short-form test value | interest on loans, advances given or received, VAT | 2026 | ZPDPL Art. 60(5) |
-| Arm's length range (TNMM) | interquartile range, first to third quartile; weighted average of 3 to 5 years of comparables | 2026 | Rulebook Art. 26(1), (3) and (4) |
-| Price outside the range | adjusted to the midpoint of the range | 2026 | ZPDPL Art. 60(10); Rulebook Art. 31(6) |
-| Activity analysis can be skipped | activity is not the main one and earns under 10% of total income | 2026 | Rulebook Art. 4(2) |
-| Fixed asset bought from a related party | depreciation base is the lower of transfer price and arm's length price; 20% of the difference goes into the adjustment in the year and the next four years | 2026 | ZPDPL Art. 10a; Rulebook Art. 31(3) |
+| VAT registration turnover used for that test | RSD 8,000,000 in the previous 12 months | 2026 | https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx (VAT Law Art. 38(1)) |
+| Left out of the short-form test value | interest on loans, advances given or received, VAT | 2026 | [ZPDPL Art. 60(5)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Arm's length range (TNMM) | interquartile range, first to third quartile; weighted average of 3 to 5 years of comparables | 2026 | [Rulebook Art. 26(1), (3) and (4)](https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx) |
+| Price outside the range | adjusted to the midpoint of the range | 2026 | [ZPDPL Art. 60(10)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); [Rulebook Art. 31(6)](https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx) |
+| Activity analysis can be skipped | activity is not the main one and earns under 10% of total income | 2026 | [Rulebook Art. 4(2)](https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx) |
+| Fixed asset bought from a related party | depreciation base is the lower of transfer price and arm's length price; 20% of the difference goes into the adjustment in the year and the next four years | 2026 | [ZPDPL Art. 10a](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); [Rulebook Art. 31(3)](https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx) |
 | Arm's length interest, other companies: RSD short-term | 7.13% | 2026 | https://www.mfin.gov.rs/upload/media/aatf8h_69f0810128819.docx (Rulebook Sl. glasnik 36/2026, Art. 2) |
 | Arm's length interest, other companies: RSD long-term | 7.21% | 2026 | same |
 | Arm's length interest, other companies: EUR or EUR-indexed, short-term | 4.75% | 2026 | same |
@@ -49,9 +49,9 @@ Law 80/2026 (in force 8 September 2026) does not change Articles 59 to 61v. It d
 | Arm's length interest, other companies: USD or USD-indexed, long-term | 4.43% | 2026 | same |
 | Arm's length interest, banks and financial leasing: RSD short-term / RSD long-term | 4.40% / 0.33% | 2026 | same |
 | Arm's length interest, banks and financial leasing: EUR / USD / CHF / SEK / GBP / RUB (and dinar loans indexed to them) | 4.87% / 4.98% / 3.05% / 4.12% / 1.50% / 10.73% | 2026 | same |
-| Country-by-country report | Serbian ultimate parent of a group with consolidated revenue of at least EUR 750 million in the prior period | 2026 | ZPDPL Art. 61v |
-| Thin capitalisation (interacts with related-party loans) | interest on related-party debt deductible up to 4 × equity (10 × for banks and leasing) | 2026 | ZPDPL Art. 62; see rs-corporate-tax |
-| Corporate income tax rate on an adjustment | 15% | 2026 | ZPDPL Art. 39; see rs-corporate-tax |
+| Country-by-country report | Serbian ultimate parent of a group with consolidated revenue of at least EUR 750 million in the prior period | 2026 | [ZPDPL Art. 61v](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Thin capitalisation (interacts with related-party loans) | interest on related-party debt deductible up to 4 × equity (10 × for banks and leasing) | 2026 | [ZPDPL Art. 62](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); see rs-corporate-tax |
+| Corporate income tax rate on an adjustment | 15% | 2026 | [ZPDPL Art. 39](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); see rs-corporate-tax |
 
 The 2026 interest rulebook was signed on 23 April 2026 and applies to loans and credits between related parties "for 2026" (Art. 1). It lists no short-term USD rate for other companies. The rates apply to loans as well as credits (Art. 2(2)).
 
@@ -193,7 +193,7 @@ expected:
 | Tax Administration: Rulebook on transfer prices and arm's length methods (Sl. glasnik 61/13, 8/14, 94/19, 95/21), page and .docx | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/7721/pravilnik-o-transfernim-cenama-i-metodama-koje-se-po-principu-van-dohvata-ruke-primenjuju-kod-utvrdjivanja-cene-transakcija-medju-povezanim-licima-.html ; https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx | 2026-10-23 |
 | Ministry of Finance: Rulebook on arm's length interest rates for 2026 (Sl. glasnik 36/2026), page and .docx | https://www.mfin.gov.rs/propisi/pravilnik-o-kamatnim-stopama-za-koje-se-smatra-da-su-u-skladu-sa-principom-van-dohvata-ruke-za-2026-godinu-slubeni-glasnik-rs-br-362026 ; https://www.mfin.gov.rs/upload/media/aatf8h_69f0810128819.docx | 2026-10-23 |
 | Tax Administration: Rulebook on arm's length interest rates for 2025 (Sl. glasnik 17/25), for comparison | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/4608137/pravilnik-o-kamatnim-stopama-za-koje-se-smatra-da-su-u-skladu-sa-principom-van-dohvata-ruke-za-2025-godinu.html | 2026-10-23 |
-| Tax Administration: Law on VAT, consolidated to 80/26 (Art. 38(1), RSD 8,000,000 registration turnover), page and PDF | https://www.purs.gov.rs/sr/pravna-lica/pdv/zakon/202/zakon-o-porezu-na-dodatu-vrednost.html | 2026-10-23 |
+| Tax Administration: Law on VAT, consolidated to 80/26 (Art. 38(1), RSD 8,000,000 registration turnover), page and PDF | https://www.purs.gov.rs/sr/pravna-lica/pdv/zakon/202/zakon-o-porezu-na-dodatu-vrednost.html ; https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated to 80/2026 (Arts. 75, 114, 178, 178a, 179) | https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 | Tax Administration: corporate income tax secondary legislation list | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp.html | 2026-10-23 |
 
@@ -201,4 +201,4 @@ Not yet confirmed: whether "midpoint" (средишња вредност) in Art
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rs-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rs-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rs-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rs-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

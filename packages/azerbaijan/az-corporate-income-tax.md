@@ -3,15 +3,16 @@ name: az-corporate-income-tax
 description: 'Use this skill for 2026 Azerbaijan corporate profit tax working papers for resident enterprises, permanent establishments and commercial income of non-profit organisations. It covers residence, ordinary taxable profit, documented business deductions, depreciation and repairs, losses, micro relief, the general simplified turnover alternative, catering turnover taxation, advances and annual settlement. Trigger on Azerbaijan corporate income tax, profit tax, company losses, tax depreciation, micro company, quarterly advances, simplified tax and PE remittance. Cross-border, CFC and treaty matters also require the dedicated cross-border skill. Sector, territorial and investment incentives require separate eligibility analysis. Checked against the law (tier 2); no accountant has signed it off.'
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 category: international
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Azerbaijan Corporate Income Tax v0.1
+# Azerbaijan Corporate Income Tax v0.2
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

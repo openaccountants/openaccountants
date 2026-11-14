@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-property-transfer-tax"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland property transfer tax v0.5
+# Finland property transfer tax v0.7
 
 ## Who this applies to
 
@@ -20,14 +20,14 @@ Use for an ordinary buyer of Finnish land, a qualifying leasehold/building or ho
 
 | Item | Rule for 2026 contracts | Official source |
 |---|---|---|
-| Direct real estate and qualifying building/leasehold | 3% of purchase price or other consideration | Act §§5–6 [text][law] |
-| Housing/real-estate-company shares and other taxable securities | 1.5% of statutory consideration; include applicable company debt | Act §20 [text][law] |
-| Direct property ordinary payment | By title/leasehold registration application; otherwise within 6 months of contract | Act §7 [text][law] |
-| Securities ordinary payment | Within 2 months of contract; agent/new-construction exceptions below | Act §21 [text][law] |
-| Later contingent consideration | Separate 2 months after both obligation and amount confirmed after ordinary deadline | Act §§7(2),21(5), Act 1143/2025 transition [text][law] |
-| Late title application | 20% of tax for each started 6-month delay, maximum 100% | Act §8 [text][law] |
-| Voluntary late filing within 60 days | EUR 50 individual/estate; EUR 100 other taxpayer, per return, subject to statutory exceptions | Act §36b [text][law] |
-| Tax increase | Ordinary 10% of added tax; statutory minimum EUR 75 individual/estate, EUR 150 other | Act §36a [text][law] |
+| Direct real estate and qualifying building/leasehold | 3% of purchase price or other consideration | Act §§5–6 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Housing/real-estate-company shares and other taxable securities | 1.5% of statutory consideration; include applicable company debt | Act §20 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Direct property ordinary payment | By title/leasehold registration application; otherwise within 6 months of contract | Act §7 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Securities ordinary payment | Within 2 months of contract; agent/new-construction exceptions below | Act §21 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Later contingent consideration | Separate 2 months after both obligation and amount confirmed after ordinary deadline | Act §§7(2),21(5), Act 1143/2025 transition [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Late title application | 20% of tax for each started 6-month delay, maximum 100% | Act §8 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Voluntary late filing within 60 days | EUR 50 individual/estate; EUR 100 other taxpayer, per return, subject to statutory exceptions | Act §36b [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Tax increase | Ordinary 10% of added tax; statutory minimum EUR 75 individual/estate, EUR 150 other | Act §36a [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
 
 ## The base
 
@@ -155,8 +155,8 @@ Not yet confirmed: none for the ordinary acquisition computation above. Reorgani
 [stock]: https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/
 [late]: https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/if-your-transfer-tax-return-or-your-payment-is-overdue/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-property-transfer-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-property-transfer-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-property-transfer-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-property-transfer-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

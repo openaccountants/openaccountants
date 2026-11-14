@@ -1,13 +1,15 @@
 ---
 name: at-tax-overview
-description: "Source-cited draft: tax overview for Austria (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Austria tax overview for tax year 2026. A map of the main Austrian taxes for a person or a small business (residence, income tax bands, capital income, corporate tax, VAT rates and the small business exemption, SVS, the GmbH minimum capital and return deadlines), each linked to the Guide that computes it. Source-cited draft pending local-accountant review."
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 1.0
 tier: 2
+type: situation-rules
 domain: income-tax
 ---
 
@@ -15,11 +17,13 @@ domain: income-tax
 
 A map of the main Austrian taxes for a person or a small business: who is taxed, the headline rates, the returns and their deadlines, and which OpenAccountants Guide holds the detail. It does not compute anything; each section points to the Guide that does. Figures are for tax year 2026. The pages used are the business service portal (USP) pages of the Finance Ministry, dated 1 January 2026, and the USP VAT rate page, updated 1 July 2026.
 
-## Austrian tax system at a glance
+## Scope
+
+The Austrian tax system at a glance, for tax year 2026.
 
 **The basics**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Tax year | Calendar year. A company can have a financial year that differs from the calendar year |
 | Currency | Euro |
@@ -34,11 +38,10 @@ A person with a home (Wohnsitz) or habitual abode (gewöhnlicher Aufenthalt) in 
 
 **Residence of individuals**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html |
-| Home or habitual abode in Austria | Unlimited liability, worldwide income | "Unbeschränkt steuerpflichtig sind Personen, die in Österreich ihren Wohnsitz oder ihren gewöhnlichen Aufenthalt haben." |
-| Stay of six months | Unlimited liability in any case, backdated | "Nach sechs Monaten Aufenthalt in Österreich tritt die unbeschränkte Steuerpflicht auf jeden Fall ein" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Home or habitual abode in Austria | Unlimited liability, worldwide income | "Unbeschränkt steuerpflichtig sind Personen, die in Österreich ihren Wohnsitz oder ihren gewöhnlichen Aufenthalt haben." | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html |
+| Stay of six months | Unlimited liability in any case, backdated | "Nach sechs Monaten Aufenthalt in Österreich tritt die unbeschränkte Steuerpflicht auf jeden Fall ein" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html |
 
 Treaty tie-breaker rules and moves to or from Austria are outside this overview.
 
@@ -48,12 +51,11 @@ Individuals pay progressive income tax. Each person is taxed alone. The bracket 
 
 **Income tax headline figures, 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html |
-| Taxable yearly income taxed at 0%: up to and including | EUR 13,539 | "13.539  und darunter 0 Prozent" |
-| Top threshold, not indexed | EUR 1,000,000 | "über  104.859  bis  1.000.000 50 Prozent" |
-| Rate on income above EUR 1,000,000, temporary to 2029 | 55% | "ein höherer Steuersatz von 55 Prozent zur Anwendung" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Taxable yearly income taxed at 0%: up to and including | EUR 13,539 | "13.539  und darunter 0 Prozent" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html |
+| Top threshold, not indexed | EUR 1,000,000 | "über  104.859  bis  1.000.000 50 Prozent" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html |
+| Rate on income above EUR 1,000,000, temporary to 2029 | 55% | "ein höherer Steuersatz von 55 Prozent zur Anwendung" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html |
 
 Each rate taxes only its own slice of income. Employees have wage tax (Lohnsteuer) withheld by the employer and may file an employee assessment; this overview does not cover payroll.
 
@@ -63,11 +65,10 @@ Most capital income of individuals is taxed at a special flat rate, withheld at 
 
 **Special rates on capital income**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html |
-| Interest on savings and current accounts | 25% | "mit einem besonderen Steuersatz von 25 Prozent (für Zinsen aus Sparbüchern und Girokonten)" |
-| All other capital income, such as dividends | 27.5% | "einem besonderen Steuersatz von 27,5 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Interest on savings and current accounts | 25% | "mit einem besonderen Steuersatz von 25 Prozent (für Zinsen aus Sparbüchern und Girokonten)" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html |
+| All other capital income, such as dividends | 27.5% | "einem besonderen Steuersatz von 27,5 Prozent" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html |
 
 Withholding by companies, and the rates on payments to foreign recipients, are in `at-corporate-income-tax`.
 
@@ -77,10 +78,9 @@ A GmbH, an AG and other legal persons pay corporate income tax at a flat rate, p
 
 **Corporate income tax rate**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html |
-| Rate from 2024, flat | 23% | "Die Körperschaftsteuer beträgt 23 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Rate from 2024, flat | 23% | "Die Körperschaftsteuer beträgt 23 Prozent" | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html |
 
 A partnership (OG, KG) does not pay corporate income tax; its partners pay income tax on their share.
 
@@ -90,20 +90,18 @@ VAT is charged on supplies of goods and services in Austria. Since 1 July 2026 t
 
 **VAT rates from 1 July 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html |
-| Standard rate | 20% | "Der Normalsteuersatz der Umsatzsteuer beträgt 20 Prozent." |
-| Reduced rate, for example live animals and plants, firewood, artists, film, sports tickets | 13% | "Der 13-prozentige Steuersatz gilt z.B. für Die Lieferung von lebenden Tieren" |
-| Reduced rate, for example residential letting, accommodation, books, food | 10% | "Der 10-prozentige Steuersatz gilt z.B. für: Die Vermietung zu Wohnzwecken" |
-| Selected basic foods listed by customs code, deliveries only, from 1 July 2026 | 4.9% | "Der 4,9-prozentige Steuersatz gilt für ausgewählte Nahrungsmittel, wie z.B. Brot, Butter, Eier, Milch." |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Standard rate | 20% | "Der Normalsteuersatz der Umsatzsteuer beträgt 20 Prozent." | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html |
+| Reduced rate, for example live animals and plants, firewood, artists, film, sports tickets | 13% | "Der 13-prozentige Steuersatz gilt z.B. für Die Lieferung von lebenden Tieren" | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html |
+| Reduced rate, for example residential letting, accommodation, books, food | 10% | "Der 10-prozentige Steuersatz gilt z.B. für: Die Vermietung zu Wohnzwecken" | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html |
+| Selected basic foods listed by customs code, deliveries only, from 1 July 2026 | 4.9% | "Der 4,9-prozentige Steuersatz gilt für ausgewählte Nahrungsmittel, wie z.B. Brot, Butter, Eier, Milch." | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html |
 
 **Small business exemption (Kleinunternehmerregelung)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html |
-| Yearly turnover limit, gross, regime since 1 January 2025 | EUR 55,000 | "Kleinunternehmergrenze in Höhe von 55.000 Euro". Must not be exceeded in the previous year nor in the current year; tolerance and the rest in `at-vat-return` |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Yearly turnover limit, gross, regime since 1 January 2025 | EUR 55,000 | "Kleinunternehmergrenze in Höhe von 55.000 Euro". Must not be exceeded in the previous year nor in the current year; tolerance and the rest in `at-vat-return` | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html |
 
 ### Social insurance of the self-employed (SVS)
 
@@ -115,10 +113,9 @@ For a GmbH, the minimum share capital also sets the minimum corporate tax. Found
 
 **GmbH minimum capital**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html |
-| Minimum share capital of a GmbH | EUR 10,000 | "Das Stammkapital einer GmbH muss mindestens 10.000 Euro betragen." In principle half must be paid in cash at formation |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Minimum share capital of a GmbH | EUR 10,000 | "Das Stammkapital einer GmbH muss mindestens 10.000 Euro betragen." In principle half must be paid in cash at formation | https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html |
 
 ### Return deadlines
 
@@ -126,16 +123,23 @@ Income tax, corporate income tax and the annual VAT return share the same deadli
 
 **Annual returns and deadlines**
 
-| Return | Form | Due | Detail |
-| --- | --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html | |
-| Income tax | E 1 (with E 1a for business income) | 30 April on paper, 30 June via FinanzOnline | `at-income-tax`. "Abgabe der Steuererklärung in Papierform 30. April des Folgejahres" |
-| Corporate income tax | K 1, K 2 or K 3 | 30 April on paper, 30 June via FinanzOnline | `at-corporate-income-tax`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuererklaerung.html |
-| VAT, annual | U 1 | 30 April on paper, 30 June via FinanzOnline | `at-vat-return`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html |
-| VAT, advance | U 30 | 15th of the second month after the period | `at-vat-return`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html |
-| SVS contributions | Charged by the SVS | Quarterly; dates in the Guide | `at-svs-contributions` |
+| Return | Form | Due | Detail | Source |
+| --- | --- | --- | --- |---|
+| Income tax | E 1 (with E 1a for business income) | 30 April on paper, 30 June via FinanzOnline | `at-income-tax`. "Abgabe der Steuererklärung in Papierform 30. April des Folgejahres" | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html |
+| Corporate income tax | K 1, K 2 or K 3 | 30 April on paper, 30 June via FinanzOnline | `at-corporate-income-tax`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuererklaerung.html | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html |
+| VAT, annual | U 1 | 30 April on paper, 30 June via FinanzOnline | `at-vat-return`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html |
+| VAT, advance | U 30 | 15th of the second month after the period | `at-vat-return`; USP page: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html |
+| SVS contributions | Charged by the SVS | Quarterly; dates in the Guide | `at-svs-contributions` | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html |
 
 Who must file an income tax return at all (the income limits) is in `at-income-tax`.
+
+## Ask the client first
+
+- Do you live in Austria, and since when? Do you have a home here or elsewhere as well?
+- Are you employed, self-employed, or do you run a company (GmbH, AG) or a partnership?
+- What was your turnover last year and so far this year? This decides the VAT small business exemption and the filing period.
+- Are you insured with the SVS, and as a trader (Gewerbetreibender) or a new self-employed person (Neuer Selbständiger)?
+- Do you have income from abroad, or pay anyone abroad?
 
 ## The method, step by step
 
@@ -145,13 +149,47 @@ Who must file an income tax return at all (the income limits) is in `at-income-t
 4. **Check SVS insurance** for a self-employed person under the GSVG, in `at-svs-contributions`.
 5. **File each return through FinanzOnline** by the dates in the deadlines table: E 1, K 1 and U 1 each have their own USP page linked there.
 
-## Ask the client first
+## Worked cases
 
-- Do you live in Austria, and since when? Do you have a home here or elsewhere as well?
-- Are you employed, self-employed, or do you run a company (GmbH, AG) or a partnership?
-- What was your turnover last year and so far this year? This decides the VAT small business exemption and the filing period.
-- Are you insured with the SVS, and as a trader (Gewerbetreibender) or a new self-employed person (Neuer Selbständiger)?
-- Do you have income from abroad, or pay anyone abroad?
+### Case 1: small business exemption or not? (a decision)
+
+A self-employed designer had gross turnover of EUR 48,000 in 2025 and expects EUR 70,000 net in 2026. The exemption needs gross turnover of no more than EUR 55,000 in the previous year and in the current year. 2025 passes; 2026 does not, so VAT is charged once the limit is passed in 2026 (the 10% tolerance and the exact switch point are in `at-vat-return`). On EUR 70,000 net at the 20% standard rate, output VAT for a full year would be EUR 14,000, recoverable input VAT against it. The figure that decides is EUR 55,000 gross, tested in both years.
+
+```oa-check
+name: Austria 2026 small business exemption decision
+inputs:
+  turnover_2025: 48000
+  turnover_2026_net: 70000
+  limit: 55000
+  standard_rate: 0.20
+steps:
+  - headroom_2025: limit - turnover_2025
+  - excess_2026: turnover_2026_net - limit
+  - output_vat_full_year: turnover_2026_net * standard_rate
+expected:
+  headroom_2025: 7000
+  excess_2026: 15000
+  output_vat_full_year: 14000
+```
+
+### Case 2: KESt on bank interest and dividends
+
+A resident has EUR 1,000 of interest on a current account and EUR 1,000 of dividends from an Austrian company in 2026. The bank withholds 25% on the interest (EUR 250) and 27.5% on the dividends (EUR 275); that normally settles the tax.
+
+```oa-check
+name: Austria 2026 KESt interest and dividends
+inputs:
+  interest: 1000
+  dividends: 1000
+steps:
+  - kest_interest: interest * 0.25
+  - kest_dividends: dividends * 0.275
+  - total: kest_interest + kest_dividends
+expected:
+  kest_interest: 250
+  kest_dividends: 275
+  total: 525
+```
 
 ## When to refuse or refer
 
@@ -163,17 +201,25 @@ Who must file an income tax return at all (the income limits) is in `at-income-t
 
 ## Sources
 
-- USP, Einkommensteuerpflicht: https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html
-- USP, Tarifstufen: https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html
-- USP, Einkommensteuererklärung: https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html
-- USP, Kapitalertragsteuer-Anmeldung: https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html
-- USP, Körperschaftsteuer: https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html
-- USP, Körperschaftsteuererklärung: https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuererklaerung.html
-- USP, VAT rates: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html
-- USP, Kleinunternehmen: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html
-- USP, UVA and annual VAT return: https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html
-- USP Lexikon, GmbH: https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html
+Every page below was opened on 14 November 2026 and the quoted figures in the tables above were found on it that day.
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| USP, Einkommensteuerpflicht | Read for home, habitual abode and the six-month rule | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html | 2026-11-14 |
+| USP, Tarifstufen | Read for the 2026 bands: 0% to EUR 13,539, 50% to EUR 1,000,000, 55% above, to 2029 | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html | 2026-11-14 |
+| USP, Einkommensteuererklärung | Read for the 30 April (paper) and 30 June (FinanzOnline) deadlines | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html | 2026-11-14 |
+| USP, Kapitalertragsteuer-Anmeldung | Read for the 25% and 27.5% special rates | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html | 2026-11-14 |
+| USP, Körperschaftsteuer | Read for the 23% rate from 2024 | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html | 2026-11-14 |
+| USP, Körperschaftsteuererklärung | Read for the 30 April and 30 June deadlines | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuererklaerung.html | 2026-11-14 |
+| USP, VAT rates | Read for 20%, 13%, 10% and 4.9% from 1 July 2026 | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html | 2026-11-14 |
+| USP, Kleinunternehmen | Read for the EUR 55,000 gross limit and the 10% tolerance | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html | 2026-11-14 |
+| USP, UVA and annual VAT return | Read for the U 1 deadlines | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html | 2026-11-14 |
+| USP, Umsatzsteuervoranmeldung | Read for the U 30 due date, the 15th of the second following month | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html | 2026-11-14 |
+| USP Lexikon, GmbH | Read for the EUR 10,000 minimum share capital | https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html | 2026-11-14 |
+
+Not yet confirmed: SVS contribution rates and the quarterly due dates (in `at-svs-contributions`, not read for this file).
 
 This Guide is a source-cited draft. It is not tax advice. Confirm each figure on the official page before relying on it.
 
 > Contributed by OpenAccountants.
+

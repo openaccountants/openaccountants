@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/tunisia-vat"
   jurisdiction: "TN"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Tunisia VAT v2.1
+# Tunisia VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,8 +33,6 @@ Minimum input for classification: a bank statement from any Tunisian bank. Out o
 | State withholding | 25% of the VAT | 2026 | Payments of TND 1,000 or more incl. VAT by State, local bodies, public entities; phone, water, power exempt. Art. 19 bis | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf |
 | Non-established supplier | Customer withholds all VAT | 2026 | Art. 19 | same |
 | Cash purchase block | TND 5,000 excl. VAT | 2026 | No deduction if paid in cash. Art. 10 | same |
-| Late filing | unverified: 1% a month, min TND 50, old file | 2026 | Tax Procedures Code not opened | unverified |
-| Late payment | unverified: 0.75% a month, old file | 2026 | same | unverified |
 
 Hotels at 13% and legal or accounting services at 13% in the old file are wrong against art. 7: lodging is in Table B and professional services take the default rate. Table B also covers finished pharmaceutical products (no. 4). Exempt lines include bread, flours and pasta (Table A no. 41) and insurance under the single tax; finance, education and medical exemptions are in Table A and must be checked line by line.
 
@@ -127,8 +125,8 @@ expected:
 | DGI professional space with tax calendar, archived 8 June 2026; calendar entries read | https://web.archive.org/web/20260608115736/https://jibaya.tn/ar/espace-professionnel/ | 2026-11-01 |
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
-Not yet confirmed: Late penalties. Old-file blocks on staff accommodation, entertainment and gifts, and invoices without a tax number, not found in art. 10 as read. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file.
+Not yet confirmed: Late penalties. Old-file blocks on staff accommodation, entertainment and gifts, and invoices without a tax number, not found in art. 10 as read. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file; rows moved out of the rates table on 2026-11-14 (old file): late filing 1% a month, minimum TND 50; late payment 0.75% a month.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tunisia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tunisia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tunisia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tunisia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

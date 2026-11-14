@@ -1,17 +1,18 @@
 ---
 name: hr-transfer-pricing
 description: "Use this skill for Croatian transfer pricing (transferne cijene) in tax year 2026. It covers who counts as a related person (Profit Tax Act art. 13(2) and General Tax Act art. 49), when purely domestic deals are caught (art. 13(5): tax-privileged party or losses carried forward), the arm's length rule and the five methods (art. 13(1) and (3)), documentation and the compensating adjustment (Profit Tax Rulebook art. 40), the PD-IPO related-party form filed with the PD return and its 2026 e-invoice carve-out, the Minister of Finance interest rate for related-party loans (2.65% for 2026), thin capitalisation (art. 8), APAs (art. 14.a and the APA rulebook fees), country-by-country reporting and fines. Trigger on: transfer pricing Croatia, transferne cijene, povezane osobe, PD-IPO, kamatna stopa povezane osobe 2026, prethodni sporazum o transfernim cijenama, CbCR Croatia. Out of scope: corporate tax in general (hr-corporate-income-tax), withholding and treaties in depth, VAT (croatia-vat-return)."
-version: 0.1
+version: 0.3
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Croatia: transfer pricing (2026) v0.1
+# Croatia: transfer pricing (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts published by the Tax Administration (Porezna uprava) and from Narodne novine, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -240,4 +241,4 @@ expected:
 
 Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law. The Tax Administration's register lists the Zakon o kamatama (NN 94/04, kept in force by the Obligations Act art. 1164), which treats taxes as money obligations (art. 1(2)), and the Croatian National Bank published, under Obligations Act art. 29(9), an ECB rate of 2.40% in force on 1 July 2026 (NN 68/2026). The provision that sets the margin over that rate for tax debts was not read, so no rate is given; whether the Tax Administration expects a corresponding downward adjustment by the domestic counterparty in a case like Example 2; how Rulebook art. 37(5) computes the proportional reduction for withholding tax; any time limit for producing documentation after a request; and the content of the Tax Administration's TP audit manual (Priručnik za nadzor transfernih cijena), which was not read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

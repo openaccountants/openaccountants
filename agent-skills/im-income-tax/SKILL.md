@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/im-income-tax"
   jurisdiction: "IM"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Isle of Man: personal income tax for residents (2026/27) v0.3
+# Isle of Man: personal income tax for residents (2026/27) v0.4
 
 This skill covers income tax on resident individuals in the Isle of Man for the 2026/27 year of assessment, which runs from 6 April 2026 to 5 April 2027. The law is the Income Tax Act 1970 (AT 3 of 1970), with the rates and the lower-rate threshold set by Treasury order under section 1(3A). The authority is the Income Tax Division of the Treasury. Amounts are in pounds sterling (GBP).
 
@@ -34,19 +34,19 @@ Read [im-non-resident-income-tax](im-non-resident-income-tax.md) for individuals
 |---|---|---|---|
 | Personal allowance, single | GBP 17,000 | 2026/27 | ITA 1970 s.35 as varied by Tynwald resolution under s.119, 17 February 2026 (Hansard, item 6); rates page https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ ; PN 227/26 |
 | Personal allowance, jointly assessed couple | GBP 34,000 | 2026/27 | same |
-| Allowance taper | reduced by GBP 1 for every GBP 2 of total income above GBP 100,000 (GBP 200,000 joint); nil at GBP 134,000 (GBP 268,000 joint) | 2026/27 | ITA 1970 s.35(3), (4); rates page; Budget 2026 page |
-| Lower (standard) rate | 10% on the first GBP 6,500 of taxable income (GBP 13,000 joint) | 2026/27 | rates page; PN 227/26 |
-| Higher rate | 21% on taxable income above the threshold | 2026/27 | rates page; PN 227/26 |
-| Single parent additional allowance | GBP 6,400 | 2026/27 | rates page; PN 227/26 |
-| Co-habiting couple's maximum addition | GBP 6,400 | 2026/27 | PN 227/26 |
-| Blind person allowance; disabled person allowance | GBP 2,900 each | 2026/27 | rates page; PN 227/26 |
-| Mortgage and loan interest limit | GBP 5,000 (doubled for a jointly assessed couple) | 2026/27 | rates page |
-| Charitable donations limit | GBP 7,000 | 2026/27 | rates page |
-| Private medical insurance limit | GBP 1,800 | 2026/27 | rates page |
-| Nursing expenses limit | GBP 15,000 | 2026/27 | ITA 1970 s.39AA(1), sum prescribed by SD 2026/0035; rates page; PN 227/26 |
-| Benefit in kind exemption (not car benefit) | GBP 600 | 2026/27 | rates page |
-| TT Homestay Allowance | GBP 2,500 | 2026/27 | ITA 1970 s.58AA as amended by SD 2026/0036; rates page; PN 227/26 |
-| Income tax cap (election) | GBP 220,000 individual; GBP 440,000 jointly assessed couple | elections from 2025/26 onwards | ITA 1970 s.2ZB(1A); rates page |
+| Allowance taper | reduced by GBP 1 for every GBP 2 of total income above GBP 100,000 (GBP 200,000 joint); nil at GBP 134,000 (GBP 268,000 joint) | 2026/27 | ITA 1970 s.35(3), (4); rates page; Budget 2026 page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ |
+| Lower (standard) rate | 10% on the first GBP 6,500 of taxable income (GBP 13,000 joint) | 2026/27 | rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Higher rate | 21% on taxable income above the threshold | 2026/27 | rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Single parent additional allowance | GBP 6,400 | 2026/27 | rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Co-habiting couple's maximum addition | GBP 6,400 | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Blind person allowance; disabled person allowance | GBP 2,900 each | 2026/27 | rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Mortgage and loan interest limit | GBP 5,000 (doubled for a jointly assessed couple) | 2026/27 | rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Charitable donations limit | GBP 7,000 | 2026/27 | rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Private medical insurance limit | GBP 1,800 | 2026/27 | rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| Nursing expenses limit | GBP 15,000 | 2026/27 | ITA 1970 s.39AA(1), sum prescribed by SD 2026/0035; rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/regulations-and-orders |
+| Benefit in kind exemption (not car benefit) | GBP 600 | 2026/27 | rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ |
+| TT Homestay Allowance | GBP 2,500 | 2026/27 | ITA 1970 s.58AA as amended by SD 2026/0036; rates page; PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/regulations-and-orders |
+| Income tax cap (election) | GBP 220,000 individual; GBP 440,000 jointly assessed couple | elections from 2025/26 onwards | ITA 1970 s.2ZB(1A); rates page: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf |
 | Payment on account factor | 105% of the previous year's liability less tax deducted at source | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/payment-on-account/ |
 | Late return penalties | GBP 100; a further GBP 200 if still outstanding 6 months after the due date | 2026/27 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/income-tax-returns-and-penalties/ |
 | Late payment interest | 5% (the prescribed rate under ITA 1970 s.111A) | as stated on 30 October 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ |
@@ -171,23 +171,23 @@ expected:
 |---|---|---|
 | Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.1, 2ZA, 2ZB, 2ZC, 9, 10, 35, 35C, 39AA, 57, 58AA, 62, 111A, 119 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
 | Tynwald Court Official Report (Hansard), 17 February 2026, item 6: Income Tax Act 1970, personal allowance, resolution under s.119 carried | https://tynwald.org.im/index.php/spfile?file=%2Fbusiness%2Fhansard%2F20202040%2Ft260217.pdf | 2026-10-30 |
-| Income Tax Division, Regulations and orders (SD 2026/0035 nursing expenses, SD 2026/0036 TT Homestay) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/regulations-and-orders | 2026-10-30 |
-| Income Tax Division, Rates and allowances (current and historic, 2026/27) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-10-30 |
-| Income Tax Division, Budget 2026 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
-| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026) | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
-| Practice Note PN 144/07, Tax residence in the Isle of Man | https://www.gov.im/media/97083/pn14407taxresidenceintheisl.pdf | 2026-10-30 |
-| Guidance Note GN 51, Income tax cap | https://www.gov.im/media/1384454/gn51-income-tax-cap-uploaded-270624.pdf | 2026-10-30 |
-| Guidance Note GN3, Basis of assessment and payment on account (17 December 2024) | https://www.gov.im/media/1390241/gn3-basis-of-assessment-and-payment-on-account-uploaded-23925.pdf | 2026-10-30 |
-| Income Tax Division, Income tax returns and penalties | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/income-tax-returns-and-penalties/ | 2026-10-30 |
-| Income Tax Division, Payment on account | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/payment-on-account/ | 2026-10-30 |
-| Income Tax Division, Assessments | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/assessments/ | 2026-10-30 |
-| Income Tax Division, Personal tax frequently asked questions | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ | 2026-10-30 |
-| Income Tax Division, Tax relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/tax-relief/ | 2026-10-30 |
-| Income Tax Division, Marriage/civil partnership | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/marriagecivil-partnership/ | 2026-10-30 |
-| Income Tax Division, Moving to the Island: new residents (its allowance line still shows the 2025/26 GBP 14,750; not used for the allowance) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/moving-to-the-island-new-residents/ | 2026-10-30 |
-| Income Tax Division, Leaving the Island | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
-| Income Tax Division, Receiving Isle of Man source income | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
-| Income Tax Division, International agreements and double taxation relief | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
+| Income Tax Division, Regulations and orders: read for SD 2026/0035 nursing expenses, SD 2026/0036 TT Homestay | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/tax-practitioners-and-technical-information/regulations-and-orders | 2026-10-30 |
+| Income Tax Division, Rates and allowances: read for the 2026/27 rates, allowances and limits | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/rates-and-allowances/ | 2026-11-14 |
+| Income Tax Division, Budget 2026: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/budget/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 income tax and National Insurance proposals (17 February 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-11-14 |
+| Practice Note PN 144/07, Tax residence in the Isle of Man: read for the rules and figures this Guide cites from it | https://www.gov.im/media/97083/pn14407taxresidenceintheisl.pdf | 2026-10-30 |
+| Guidance Note GN 51, Income tax cap: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1384454/gn51-income-tax-cap-uploaded-270624.pdf | 2026-10-30 |
+| Guidance Note GN3, Basis of assessment and payment on account (17 December 2024): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1390241/gn3-basis-of-assessment-and-payment-on-account-uploaded-23925.pdf | 2026-10-30 |
+| Income Tax Division, Income tax returns and penalties: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/income-tax-returns-and-penalties/ | 2026-10-30 |
+| Income Tax Division, Payment on account: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/payment-on-account/ | 2026-10-30 |
+| Income Tax Division, Assessments: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/assessments/ | 2026-10-30 |
+| Income Tax Division, Personal tax frequently asked questions: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/personal-tax/personal-tax-frequently-asked-questions/ | 2026-10-30 |
+| Income Tax Division, Tax relief: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/tax-relief/ | 2026-10-30 |
+| Income Tax Division, Marriage/civil partnership: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/marriagecivil-partnership/ | 2026-10-30 |
+| Income Tax Division, Moving to the Island: new residents: read for its allowance line still shows the 2025/26 GBP 14,750; not used for the allowance | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/moving-to-the-island-new-residents/ | 2026-10-30 |
+| Income Tax Division, Leaving the Island: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/leaving-the-island/ | 2026-10-30 |
+| Income Tax Division, Receiving Isle of Man source income: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/receiving-isle-of-man-source-income/ | 2026-10-30 |
+| Income Tax Division, International agreements and double taxation relief: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
 | UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 6, 10, 11, 14, 17 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
 
 Note: the consolidated Income Tax Act 1970 [62] read on 30 October 2026 still prints GBP 14,750 / GBP 29,500 in s.35 (as substituted by SD 2025/0060); it has not yet taken in the 17 February 2026 Tynwald resolution under s.119, which sets GBP 17,000 / GBP 34,000 from 6 April 2026.
@@ -196,4 +196,4 @@ Not yet confirmed: the order prescribing the 5% late-payment interest rate under
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

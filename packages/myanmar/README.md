@@ -8,10 +8,10 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `mm-company-formation.md`
+4. `mm-corporate-income-tax.md`
 5. `mm-income-tax.md`
-6. `mm-tax-overview.md`
-7. `mm-vat-gst.md`
+6. `mm-payroll-social.md`
+7. `mm-tax-overview.md`
 8. `myanmar-company-formation-entity-choice.md`
 9. `myanmar-ct.md`
 10. `payroll-workflow-base.md`

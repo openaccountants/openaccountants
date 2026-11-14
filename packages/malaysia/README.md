@@ -19,7 +19,8 @@
 12. `einvoice-workflow-base.md`
 13. `company-formation-workflow-base.md`
 14. `workflow-base.md`
-15. `income-tax-workflow-base.md`
+15. `vat-workflow-base.md`
+16. `income-tax-workflow-base.md`
 
 ## Also known as
 

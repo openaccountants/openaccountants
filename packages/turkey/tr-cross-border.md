@@ -4,13 +4,14 @@ description: "Turkish cross-border tax for tax year 2026: payments to non-reside
 jurisdiction: TR
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
-# Türkiye: cross-border tax (2026) v0.1
+# Türkiye: cross-border tax (2026) v0.2
 
 This skill covers what a Turkish business must do when it pays a foreign person, and how Türkiye taxes a Turkish company's foreign subsidiaries and foreign tax. The rules are in the Corporate Tax Law no. 5520 (KVK) arts. 3, 7, 30 and 33, the Income Tax Law no. 193 (GVK) arts. 7, 8 and 94, the Tax Procedure Law no. 213 (VUK) art. 156 and the VAT Law no. 3065 (KDV) arts. 6, 9 and 29. The withholding rates are set by Presidential (formerly Council of Ministers) Decisions 2009/14593 (companies) and 2009/14592 (individuals), as changed; the Revenue Administration (GİB) publishes the current rates in two tables. Corporate tax itself is in [tr-corporate-income-tax](tr-corporate-income-tax.md), individuals in [turkey-pit](turkey-pit.md), VAT in [turkey-vat](turkey-vat.md) and related-party pricing in [tr-transfer-pricing](tr-transfer-pricing.md).
 
@@ -29,31 +30,31 @@ Domestic rates on payments to non-resident companies (KVK art. 30, Decision 2009
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Professional (self-employment) fees to a non-resident company | 20% (5% for oil exploration) | 2026 | KVK art. 30(1)(b); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
-| Rent for property or rights used in Türkiye, non-resident company | 20% (1% under financial leasing) | 2026 | KVK art. 30(1)(c); GİB KVK 30 table |
-| Royalties for the use of rights (copyright, patent, know-how, trade name, trade mark: rent of rights under GVK art. 70(5)-(6)), non-resident company | 20% | 2026 | KVK art. 30(1)(c); GİB KVK 30 table |
-| Proceeds from selling or transferring intangible rights, non-resident company | 20% | 2026 | KVK art. 30(2); GİB KVK 30 table |
+| Rent for property or rights used in Türkiye, non-resident company | 20% (1% under financial leasing) | 2026 | KVK art. 30(1)(c); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Royalties for the use of rights (copyright, patent, know-how, trade name, trade mark: rent of rights under GVK art. 70(5)-(6)), non-resident company | 20% | 2026 | KVK art. 30(1)(c); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Proceeds from selling or transferring intangible rights, non-resident company | 20% | 2026 | KVK art. 30(2); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
 | Dividends from a Turkish company to a non-resident company | 15% | 2026 | KVK art. 30(3); Decision 9286, https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf; GİB KVK 30 table |
-| Branch profit remitted to head office | 15% | 2026 | KVK art. 30(6); GİB KVK 30 table |
-| Interest on loans from foreign states, international bodies, foreign banks and lenders that lend to the public | 0% | 2026 | KVK art. 30(1)(ç); GİB KVK 30 table |
-| Late-payment charges on supplies of goods (vade farkı) | 5% | 2026 | GİB KVK 30 table |
-| Other loan interest to a non-resident company | 10% | 2026 | GİB KVK 30 table |
-| Payments for online advertising services | 15% | 2026 | KVK art. 30(1)(d); GİB KVK 30 table |
+| Branch profit remitted to head office | 15% | 2026 | KVK art. 30(6); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Interest on loans from foreign states, international bodies, foreign banks and lenders that lend to the public | 0% | 2026 | KVK art. 30(1)(ç); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Late-payment charges on supplies of goods (vade farkı) | 5% | 2026 | GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Other loan interest to a non-resident company | 10% | 2026 | GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Payments for online advertising services | 15% | 2026 | KVK art. 30(1)(d); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
 | Construction and repair spread over more than one year (general) | 5% (1% for rail and shipbuilding; 1% for nuclear plants on payments from 1 June 2026, 5% before) | 2026 | KVK art. 30(1)(a); Decision 9707; Decision 11344 art. 3 and art. 4, https://www.resmigazete.gov.tr/eskiler/2026/05/20260519-3.pdf; GİB KVK 30 table |
-| Profits at authorised trade fairs | 0% | 2026 | KVK art. 30(5); GİB KVK 30 table |
-| Any payment to a company in a country listed by the President | 30% | 2026 | KVK art. 30(7) |
+| Profits at authorised trade fairs | 0% | 2026 | KVK art. 30(5); GİB KVK 30 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Any payment to a company in a country listed by the President | 30% | 2026 | KVK art. 30(7), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Professional fees to a non-resident individual | 20% (17% for GVK art. 18 work such as authors and inventors) | 2026 | GVK art. 94(2); GİB GVK 94 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
-| Sale of copyright and patent rights by a non-resident individual | 20% | 2026 | GVK art. 94(4); GİB GVK 94 table |
-| Rent to an individual for property and rights under GVK art. 70 | 20% | 2026 | GVK art. 94(5)(a); GİB GVK 94 table |
-| Dividends to a non-resident individual | 15% | 2026 | GVK art. 94(6)(b)(ii); Decision 9286 art. 1; GİB GVK 94 table |
-| VAT on services bought from abroad (reverse charge), general rate | 20% | 2026 | KDV arts. 6(b), 9(1), 28; see [turkey-vat](turkey-vat.md) |
+| Sale of copyright and patent rights by a non-resident individual | 20% | 2026 | GVK art. 94(4); GİB GVK 94 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
+| Rent to an individual for property and rights under GVK art. 70 | 20% | 2026 | GVK art. 94(5)(a); GİB GVK 94 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
+| Dividends to a non-resident individual | 15% | 2026 | GVK art. 94(6)(b)(ii); Decision 9286 art. 1; GİB GVK 94 table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
+| VAT on services bought from abroad (reverse charge), general rate | 20% | 2026 | KDV arts. 6(b), 9(1), 28; see [turkey-vat](turkey-vat.md), https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf |
 | CFC: control | At least 50% of capital, profit or votes | 2026 | KVK art. 7(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| CFC: passive income share of gross revenue | 25% or more | 2026 | KVK art. 7(1)(a) |
-| CFC: foreign tax burden on commercial profit | Below 10% | 2026 | KVK art. 7(1)(b) |
-| CFC: gross revenue of the subsidiary | Above TRY 100,000 equivalent (YTL 100,000 in the law) | 2026 | KVK art. 7(1)(c) |
-| Deduction for profit on goods bought and sold abroad without entering Türkiye, or on brokering such sales | 95% of the profit (100% in approved industrial zones and for Istanbul Financial Centre participants), from 2026 periods | 2026 | KVK art. 10(1)(i) as changed by Law 7582 art. 7 |
-| Deduction for a qualified service centre's foreign earnings | 95% (100% in approved industrial zones and the Istanbul Financial Centre), for 20 periods | 2026 | KVK art. 10(1)(j) as added by Law 7582 art. 7 |
-| Foreign tax credit carry-forward | 3 periods | 2026 | KVK art. 33(4) |
-| Indirect foreign tax credit on dividends | Holding of at least 25% | 2026 | KVK art. 33(3) |
+| CFC: passive income share of gross revenue | 25% or more | 2026 | KVK art. 7(1)(a), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| CFC: foreign tax burden on commercial profit | Below 10% | 2026 | KVK art. 7(1)(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| CFC: gross revenue of the subsidiary | Above TRY 100,000 equivalent (YTL 100,000 in the law) | 2026 | KVK art. 7(1)(c), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Deduction for profit on goods bought and sold abroad without entering Türkiye, or on brokering such sales | 95% of the profit (100% in approved industrial zones and for Istanbul Financial Centre participants), from 2026 periods | 2026 | KVK art. 10(1)(i) as changed by Law 7582 art. 7, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Deduction for a qualified service centre's foreign earnings | 95% (100% in approved industrial zones and the Istanbul Financial Centre), for 20 periods | 2026 | KVK art. 10(1)(j) as added by Law 7582 art. 7, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Foreign tax credit carry-forward | 3 periods | 2026 | KVK art. 33(4), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Indirect foreign tax credit on dividends | Holding of at least 25% | 2026 | KVK art. 33(3), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Late-payment surcharge and late interest | 3.7% a month | 2026 | Law 6183 art. 51, Decision 10556, https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf; VUK art. 112(3) |
 
 ## The taxable base

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hr-corporate-income-tax"
   jurisdiction: "HR"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Croatia: profit tax (2026) v0.2
+# Croatia: profit tax (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts published by the Tax Administration (Porezna uprava) and from Narodne novine, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -251,8 +251,8 @@ expected:
 
 Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

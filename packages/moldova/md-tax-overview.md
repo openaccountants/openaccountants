@@ -3,14 +3,15 @@ name: md-tax-overview
 description: "Route Moldova tax questions for 2026 to the correct taxpayer, source, base, period and connected Guide. Covers the ordinary individual and legal-person income-tax rates, standard VAT, current resident and nonresident income populations, income-tax and VAT periods, annual income-tax and ordinary VAT deadlines, separate annual accounts and payer reporting, and two assumed computations. Use for Moldova tax overview, personal or corporate tax, worldwide income, tax year, annual return, SFS, MDL, VAT and first-year compliance. This source-cited draft corrects blanket scope and deadline assumptions and makes remaining specialist and implementation gaps explicit. A bounded source-review record is linked under Sources; accountant attestation remains open."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: "0.7"
+version: "0.8"
 tier: 2
+type: situation-rules
 ---
 
-# Moldova tax overview, 2026 v0.7
+# Moldova tax overview, 2026 v0.8
 
 ## Who this applies to
 

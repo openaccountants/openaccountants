@@ -1,14 +1,15 @@
 ---
 name: it-impatriati
 description: "Italy's tax regimes for people who move to Italy, tax year 2026. Covers the impatriati regime for workers who moved from 2024 (D.Lgs. 209/2023 art. 5: 50% of qualifying income taxed, 40% with a minor child, EUR 600,000 yearly cap, three years abroad or six or seven with the same employer or group, high qualification, four-year stay and recapture with interest), the old regime for moves up to 31 December 2023 (D.Lgs. 147/2015 art. 16: 30% or 10% taxed, five-year extensions), how to claim it through the employer or the return, and pointers to the art. 24-bis flat tax (EUR 300,000 for moves from 2026) and the 7% pensioners' option (art. 24-ter). Trigger on: impatriati, regime impatriati, rientro cervelli, moving to Italy tax break, Italy inbound worker, Italy flat tax 300,000, Italy non-dom. Out of scope: residence tests and leaving Italy (it-cross-border), IRPEF computation (it-irpef-employees, it-income-tax), payroll (italy-payroll)."
-version: 1.2
+version: 1.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Italy: tax regimes for people moving to Italy (impatriati, flat tax, pensioners), 2026

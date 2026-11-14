@@ -1,10 +1,11 @@
 ---
 name: rs-cross-border
 description: "Serbian cross-border tax for tax year 2026. Covers tax residence of individuals (domicile, centre of business and vital interests, the 183-day test, arrival and departure in the year) and of companies (incorporation or place of effective management); how non-resident individuals and companies are taxed on Serbian income; withholding on dividends, interest, royalties, rent and services paid to non-residents, including the 25% rate for companies on the preferential tax jurisdictions list; claiming treaty relief with a residence certificate; permanent establishment; the foreign tax credit; the 90-day exemption; the newly settled employee relief; and leaving Serbia. Trigger on: Serbian tax resident, 183 days Serbia, non-resident Serbia, withholding tax Serbia, porez po odbitku, nerezident, potvrda o rezidentnosti, PDPO, tax haven list Serbia, moving to or leaving Serbia. Out of scope: rates and returns for residents (serbia-income-tax), corporate tax balance (rs-corporate-tax), payroll (serbia-payroll), contributions (serbia-social-contributions), VAT on cross-border supplies (serbia-vat)."
-version: 0.3
+version: 0.4
+type: situation-rules
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -62,25 +63,25 @@ If the payer is not a withholding agent, for example a private individual or a f
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Individual residence: days test | 183 days or more in any 12-month period starting or ending in the tax year | 2026 | [ZPDG Art. 7(2)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Non-resident individual, short stay exemption | Income exempt if in Serbia no more than 90 days in a 12-month period and paid by a non-resident principal with no Serbian activity (or whose Serbian activity the service does not serve) | 2026 | [ZPDG Art. 9b](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: dividends and interest paid by a Serbian legal entity | 15% of gross | 2026 | [ZPDG Arts. 63 and 64](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: interest on dinar savings deposits and on Serbian government, provincial, municipal or NBS debt securities | Exempt | 2026 | [ZPDG Art. 65](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: rent from Serbian immovable property | 20% of gross less 25% standard costs (or actual costs on request) | 2026 | [ZPDG Arts. 65v and 65g](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: royalties (copyright, related rights, industrial property) | 20%, after standard costs of 50%, 43% or 34% of gross for authors by type of work; actual listed costs for industrial property | 2026 | [ZPDG Arts. 56 to 58](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: other income (contract for work, board fees, other services) | 20% of gross less 20% standard costs | 2026 | [ZPDG Arts. 85(3) and 86](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Individual: capital gains on Serbian real estate, shares, securities, IP | 15%; no gain if held 10 years or more without a break | 2026 | [ZPDG Arts. 72a(1)(5), 76 and 77](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Individual residence: days test | 183 days or more in any 12-month period starting or ending in the tax year | 2026 | [ZPDG Art. 7(2)](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Non-resident individual, short stay exemption | Income exempt if in Serbia no more than 90 days in a 12-month period and paid by a non-resident principal with no Serbian activity (or whose Serbian activity the service does not serve) | 2026 | [ZPDG Art. 9b](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: dividends and interest paid by a Serbian legal entity | 15% of gross | 2026 | [ZPDG Arts. 63 and 64](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: interest on dinar savings deposits and on Serbian government, provincial, municipal or NBS debt securities | Exempt | 2026 | [ZPDG Art. 65](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: rent from Serbian immovable property | 20% of gross less 25% standard costs (or actual costs on request) | 2026 | [ZPDG Arts. 65v and 65g](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: royalties (copyright, related rights, industrial property) | 20%, after standard costs of 50%, 43% or 34% of gross for authors by type of work; actual listed costs for industrial property | 2026 | [ZPDG Arts. 56 to 58](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: other income (contract for work, board fees, other services) | 20% of gross less 20% standard costs | 2026 | [ZPDG Arts. 85(3) and 86](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Individual: capital gains on Serbian real estate, shares, securities, IP | 15%; no gain if held 10 years or more without a break | 2026 | [ZPDG Arts. 72a(1)(5), 76 and 77](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
 | Company: dividends, royalties, interest, rent in Serbia, market research, accounting, audit, legal and business consulting | 20% withholding unless a treaty gives less | 2026 | [ZPDPL Art. 40(1)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
-| Company: performers' and sportsmen's fees not taxed as an individual's income | 20% withholding | 2026 | ZPDPL Art. 40(3) |
+| Company: performers' and sportsmen's fees not taxed as an individual's income | 20% withholding | 2026 | [ZPDPL Art. 40(3)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
 | Company on the preferential tax jurisdictions list: royalties, interest, rent and any service wherever performed | 25% withholding | 2026 | [ZPDPL Art. 40(4)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
-| Company on the list: dividends | 20% (Article 40(4) does not raise dividends) | 2026 | ZPDPL Art. 40(1) and (4) |
+| Company on the list: dividends | 20% (Article 40(4) does not raise dividends) | 2026 | [ZPDPL Art. 40(1) and (4)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
 | Preferential tax jurisdictions list | 49 jurisdictions in force (51 entries, items 22 and 43 deleted) | 2026 | [Rulebook, Sl. glasnik 122/12, 104/18, 161/20](https://www.purs.gov.rs/upload/media/2025/2/4/369483/Pravilnikolistijurisdikcijasapreferencijalnimporeskimsistemom.docx) |
-| Company: capital gains on Serbian assets | 20% by assessment unless a treaty says otherwise; return within 30 days through a tax proxy | 2026 | ZPDPL Art. 40(7) and (10) |
-| Withholding on payments to secondary raw materials and waste sellers | 1% (2026 only; repealed from 1 January 2027) | 2026 | ZPDPL Art. 40(15); see rs-corporate-tax |
+| Company: capital gains on Serbian assets | 20% by assessment unless a treaty says otherwise; return within 30 days through a tax proxy | 2026 | [ZPDPL Art. 40(7) and (10)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
+| Withholding on payments to secondary raw materials and waste sellers | 1% (2026 only; repealed from 1 January 2027) | 2026 | [ZPDPL Art. 40(15)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx); see rs-corporate-tax |
 | Corporate foreign withholding credit cap (Art. 53a) | Credit up to 15% of 40% of the grossed-up foreign income | 2026 | [ZPDPL Art. 53a(3)](https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx) |
-| Newly settled employee: tax base reduction | 70% of salary from a qualifying employer, for 5 years | 2026 | [ZPDG Art. 15v](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Newly settled employee: monthly salary floor | Over RSD 439,692 (general case); over RSD 293,128 (under 40, returned from study abroad) | 2026 (Sl. glasnik 115/2025) | [ZPDG Art. 15v(5) and (6)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
-| Late payment interest | NBS reference rate plus 10 percentage points, simple interest | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809) |
+| Newly settled employee: tax base reduction | 70% of salary from a qualifying employer, for 5 years | 2026 | [ZPDG Art. 15v](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Newly settled employee: monthly salary floor | Over RSD 439,692 (general case); over RSD 293,128 (under 40, returned from study abroad) | 2026 (Sl. glasnik 115/2025) | [ZPDG Art. 15v(5) and (6)](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
+| Late payment interest | NBS reference rate plus 10 percentage points, simple interest | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx) |
 
 The ZPDG has no higher rate for individuals resident in a preferential tax jurisdiction. The 25% rate is only in the ZPDPL and only for companies.
 
@@ -249,15 +250,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Ministry of Finance: Zakon o porezu na dohodak građana, consolidated text with amendments up to 80/2026 (page and .docx; the publisher's note gives the 80/2026 application dates) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-10-23 |
-| Tax Administration: Personal Income Tax Act page (lists amendments up to 80/26) | https://www.purs.gov.rs/fizicka-lica/pregled-propisa/zakoni/9941/zakon-o-porezu-na-dohodak-gradjana.html | 2026-10-23 |
-| Ministry of Finance: Zakon o porezu na dobit pravnih lica, consolidated text with amendments up to 94/2024 (the text for tax year 2026) | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx | 2026-10-23 |
-| Ministry of Finance: the same law with amendments up to 80/2026 (page and .docx, for the application dates) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica ; https://www.mfin.gov.rs//upload/media/SByOge_6aa127acd2250.docx | 2026-10-23 |
-| Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 14, 41, 75, 159a, 177 to 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
-| Tax Administration: Rulebook on the list of jurisdictions with a preferential tax system (Sl. glasnik 122/12, 104/18, 161/20) | https://www.purs.gov.rs/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/6863/pravilnik-o-listi-jurisdikcija-sa-preferencijalnim-poreskim-sistemom.html ; https://www.purs.gov.rs/upload/media/2025/2/4/369483/Pravilnikolistijurisdikcijasapreferencijalnimporeskimsistemom.docx | 2026-10-23 |
-| Tax Administration: Rulebook on types of services subject to withholding for non-resident companies (Sl. glasnik 18/18) | https://www.purs.gov.rs/upload/media/2025/2/4/357539/pravilnikuslugenerezidenti.pdf | 2026-10-23 |
-| Tax Administration: Rulebook on the content of the corporate withholding return, Form PDPO/S (Sl. glasnik 97/15 to 27/21) | https://www.purs.gov.rs/nerezidenti/pregled-propisa/pravilnici/3319/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-po-odbitku-na-prihode-i-naknade-koje-ostvaruju-nerezidentna-i-rezidentna-pravna-lica.html ; https://www.purs.gov.rs/upload/media/2025/2/4/370080/Pravilnikosadrajuporeskeprijavezaobraunporezanadobitpoodbitkunaprihodeinaknadekojeostvarujunerezidentnairezidentnapravnalica.docx | 2026-10-23 |
-| Ministry of Finance: list of double tax treaties, with MLI combined texts | https://www.mfin.gov.rs/propisi/ugovori-o-izbegavanju-dvostrukog-oporezivanja | 2026-10-23 |
-| Ministry of Finance: Serbia-Germany (Yugoslavia-Germany) double tax treaty, Serbian text (Arts. 6 and 24) | https://www.mfin.gov.rs//upload/media/Ab5pBR_6012ebef63504.pdf | 2026-10-23 |
+| Ministry of Finance: Zakon o porezu na dohodak građana: read for consolidated text with amendments up to 80/2026 (page and .docx; the publisher's note gives the 80/2026 application dates) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-11-14 |
+| Tax Administration: Personal Income Tax Act page: read for the list of amendments up to 80/26 | https://www.purs.gov.rs/fizicka-lica/pregled-propisa/zakoni/9941/zakon-o-porezu-na-dohodak-gradjana.html | 2026-11-14 |
+| Ministry of Finance: Zakon o porezu na dobit pravnih lica: read for consolidated text with amendments up to 94/2024 (the text for tax year 2026) | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx | 2026-11-14 |
+| Ministry of Finance: the same law with amendments up to 80/2026 (page and .docx): read for the application dates | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica ; https://www.mfin.gov.rs//upload/media/SByOge_6aa127acd2250.docx | 2026-11-14 |
+| Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 14, 41, 75, 159a, 177 to 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-11-14 |
+| Tax Administration: Rulebook on the list of jurisdictions with a preferential tax system (Sl. glasnik 122/12, 104/18, 161/20): read for the list of jurisdictions | https://www.purs.gov.rs/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/6863/pravilnik-o-listi-jurisdikcija-sa-preferencijalnim-poreskim-sistemom.html ; https://www.purs.gov.rs/upload/media/2025/2/4/369483/Pravilnikolistijurisdikcijasapreferencijalnimporeskimsistemom.docx | 2026-11-14 |
+| Tax Administration: Rulebook on types of services subject to withholding for non-resident companies (Sl. glasnik 18/18): read for the listed services | https://www.purs.gov.rs/upload/media/2025/2/4/357539/pravilnikuslugenerezidenti.pdf | 2026-11-14 |
+| Tax Administration: Rulebook on the content of the corporate withholding return (Sl. glasnik 97/15 to 27/21): read for Form PDPO/S | https://www.purs.gov.rs/nerezidenti/pregled-propisa/pravilnici/3319/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-po-odbitku-na-prihode-i-naknade-koje-ostvaruju-nerezidentna-i-rezidentna-pravna-lica.html ; https://www.purs.gov.rs/upload/media/2025/2/4/370080/Pravilnikosadrajuporeskeprijavezaobraunporezanadobitpoodbitkunaprihodeinaknadekojeostvarujunerezidentnairezidentnapravnalica.docx | 2026-11-14 |
+| Ministry of Finance: list of double tax treaties, with MLI combined texts: read for which treaties are in force | https://www.mfin.gov.rs/propisi/ugovori-o-izbegavanju-dvostrukog-oporezivanja | 2026-11-14 |
+| Ministry of Finance: Serbia-Germany (Yugoslavia-Germany) double tax treaty, Serbian text (Arts. 6 and 24) | https://www.mfin.gov.rs//upload/media/Ab5pBR_6012ebef63504.pdf | 2026-11-14 |
 
 Not yet confirmed: the 2026 average annual salary that sets the non-resident annual tax threshold (published after year end); the current NBS reference rate used for late payment interest; whether the Ministry of Finance treaty page shows every treaty in force (it may not list all of them), and so whether a given listed jurisdiction falls under the Article 3a(3) carve-out; the form code of the Serbian residence certificate under the Minister's rulebook; how social contributions apply to a non-resident's contract income (left to serbia-social-contributions).
