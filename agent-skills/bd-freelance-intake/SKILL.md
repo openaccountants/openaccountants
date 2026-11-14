@@ -1,48 +1,51 @@
 ---
 name: bd-freelance-intake
-description: "ALWAYS USE THIS SKILL when a user asks for help with their Bangladesh taxes AND mentions freelancing, self-employment, sole proprietorship, IT/ITES exports, or being a business individual in Bangladesh. Trigger on phrases like \"help me with my Bangladesh taxes\", \"I'm a freelancer in Bangladesh\", \"I do IT export from Bangladesh\", \"file my NBR return\", \"I'm self-employed in Bangladesh\". REQUIRED entry point for the Bangladesh self-employed workflow — downstream skills (bd-it-freelancer-tax, bangladesh-pit, bd-social-contributions, bangladesh-vat, bd-return-assembly) depend on it. Upload-first; Bangladesh-resident individuals only."
+description: "Bangladesh resident freelancer and sole-proprietor intake for 2026: collect documents, establish residence and activity, and route to the current tax computations without guessing relief or filing dates."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bd-freelance-intake"
   jurisdiction: "BD"
   tax_year: "2026"
-  last_updated: "2026-06-12"
+  last_updated: "2026-11-14"
 ---
 
-# Bangladesh Self-Employed Intake — Orchestrator v0.1
+# Bangladesh self-employed intake v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
-Intake orchestrator for Bangladesh-resident self-employed individuals (freelancers, IT/ITES exporters, sole proprietors). Collects facts, parses documents, confirms, hands off a structured package. Computes nothing.
+## Scope
 
-## Step 1 — Refusal sweep (route correctly)
-1. **Foreign clients (IT/ITES export) or domestic income?** → bd-it-freelancer-tax vs bangladesh-pit.
-2. **Income above the tax-free threshold (~৳350,000)?** → whether a return/tax is due (minimum tax may still apply if you have a TIN and cross thresholds).
-3. **Do you have a TIN / file an e-Return?** → registration status.
-4. **VAT-registered / turnover over the VAT threshold?** → bangladesh-vat.
-5. **Resident this year (≥182 days, or 90 days + 365 over 4 years)?** → non-residents escalate.
+Entry point for resident individual freelancers, IT/ITES exporters and sole proprietors. Produces a confirmed fact package, not tax or a filed return. The income year and assessment year must both be recorded; downstream rules depend on the period.
 
-Defaults if unanswered: resident sole proprietor, assume IT/ITES income now taxable (post-June-2024), encourage TIN + e-Return.
+## Ask the client first
 
-## Step 2 — Collect
-- Bank statements for the full tax year (1 Jul–30 Jun), incl. foreign remittances.
-- Platform statements (Upwork/Fiverr/direct invoices); remittance proof / cash-incentive records.
-- TIN, prior e-Return, trade licence.
+- Residence and presence history, citizenship and the income/assessment periods.
+- Exact services, domestic/export customers, employment versus independent business, and entity form.
+- TIN, prior returns, BIN/enlistment status and turnover evidence.
+- Bank/platform statements, invoices, remittance and encashment certificates, expenses, investments and withholding certificates.
 
-## Step 3 — Infer & confirm
-- Separate **export income** (banking-channel remittances → bd-it-freelancer-tax) from **domestic income** (→ bangladesh-pit).
-- Note any ICT/ITES **cash incentive** on remittances.
-- Confirm VAT exposure and minimum-tax position.
+## The method, step by step
 
-## Step 4 — Hand off
-- **IT/freelance exporter:** bd-it-freelancer-tax + bangladesh-pit (slabs) → bd-return-assembly.
-- **Domestic business:** bangladesh-pit + bangladesh-vat (if registered) + bd-social-contributions (voluntary pension) → bd-return-assembly.
+1. Complete the residence and entity sweep before applying individual rules. Route non-residents, companies and permanent establishments for separate analysis using [tax overview](bd-tax-overview.md). Do not assume residence or a sole proprietorship when facts are missing.
+2. Request the full-period bank and platform records first, including Upwork/Fiverr statements, direct invoices, prior return, TIN and trade licence. Separate export proceeds, domestic receipts, owner transfers and any export incentive. Confirm the resulting reconciliation with the taxpayer.
+3. Route eligible services to [IT/freelancer relief](bd-it-freelancer-tax.md), other individual income and all bands/filing windows to [PIT](bangladesh-pit.md). Do not default IT/ITES income to taxable merely because the old relief period ended. The successor list and its conditions must be applied; Finance Act section 157 changes the list (https://bdlaws.minlaw.gov.bd/act-1725/section-59531.html).
+4. Route registration, turnover tax and VAT to [VAT](bangladesh-vat.md); use [social contributions](bd-social-contributions.md) for pension choice and [payroll](bd-payroll.md) if there are staff.
+5. Hand off the confirmed facts and unresolved documents to [return assembly](bd-return-assembly.md). Relief does not itself remove filing: check section 166's exempt-income and other filing triggers (https://bdlaws.minlaw.gov.bd/act-1429/section-51996.html).
 
-## Disclaimer
-Intake only; computes no tax. All downstream outputs must be reviewed and signed off by a qualified Bangladeshi tax practitioner before filing. Maintained at [openaccountants.com](https://www.openaccountants.com).
+## When to refuse or refer
+
+Stop computation where residence, legal entity, relevant period or the nature of services is unknown. Refer non-resident and company matters. Do not invent missing amounts or recommend informal remittance channels.
+
+## Sources
+
+| Source and sections actually read | Official URL | Read on |
+|---|---|---|
+| Read for filing triggers and exceptions, Income Tax Act section 166 | https://bdlaws.minlaw.gov.bd/act-1429/section-51996.html | 2026-11-14 |
+| Read for successor freelancing list, Finance Act section 157 | https://bdlaws.minlaw.gov.bd/act-1725/section-59531.html | 2026-11-14 |
+
+Not yet confirmed: Client-specific residence, relief qualification, bank reconciliation and registration facts until documents establish them; current cash-incentive eligibility/rate is not established here and must not be promised.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bd-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bd-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bd-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bd-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

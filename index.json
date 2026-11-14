@@ -1,28 +1,20 @@
 {
- "generated_at": "2026-11-14T20:53:50+00:00",
+ "generated_at": "2026-11-14T21:48:18+00:00",
  "counts": {
-  "guides": 2454,
-  "loadable_skill_names": 2395,
-  "jurisdictions": 285,
+  "guides": 2498,
+  "loadable_skill_names": 2439,
+  "jurisdictions": 289,
   "accountant_reviewed": 126,
-  "held_skill_names": 50
+  "held_skill_names": 55
  },
  "publication_holds": [
   {
-   "name": "bd-corporate-income-tax",
-   "reason": "status: needs_sources"
+   "name": "bq-double-tax-relief",
+   "reason": "required companion unavailable: cross-border-workflow-base"
   },
   {
-   "name": "bd-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "bd-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "bd-social-contributions",
-   "reason": "status: needs_sources"
+   "name": "bq-inheritance-gifts",
+   "reason": "required companion unavailable: bq-double-tax-relief"
   },
   {
    "name": "cameroon-social-contributions",
@@ -123,6 +115,34 @@
   {
    "name": "ne-vat-gst",
    "reason": "status: needs_sources"
+  },
+  {
+   "name": "nf-foreign-income",
+   "reason": "required companion unavailable: cross-border-workflow-base"
+  },
+  {
+   "name": "nf-return-filing",
+   "reason": "required companion unavailable: nf-foreign-income"
+  },
+  {
+   "name": "nf-tax-amendments-objections",
+   "reason": "required companion unavailable: nf-foreign-income, nf-return-filing"
+  },
+  {
+   "name": "nf-tax-interest",
+   "reason": "required companion unavailable: nf-return-filing, nf-tax-amendments-objections"
+  },
+  {
+   "name": "nf-tax-penalties-remission",
+   "reason": "required companion unavailable: nf-return-filing, nf-tax-amendments-objections"
+  },
+  {
+   "name": "nf-tax-records",
+   "reason": "required companion unavailable: nf-return-filing, nf-tax-amendments-objections"
+  },
+  {
+   "name": "nf-uk-treaty-relief",
+   "reason": "required companion unavailable: cross-border-workflow-base, nf-foreign-income"
   },
   {
    "name": "pg-corporate-income-tax",
@@ -573,6 +593,32 @@
    "reviewed_by": null,
    "tax_year": null,
    "last_updated": "2025-11-15"
+  },
+  {
+   "slug": "ax-income-tax",
+   "mcp_slug": "ax-income-tax",
+   "path": "skills/aland/ax-income-tax.md",
+   "name": "ax-income-tax",
+   "jurisdiction": "AX",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ax-tax-scope",
+   "mcp_slug": "ax-tax-scope",
+   "path": "skills/aland/ax-tax-scope.md",
+   "name": "ax-tax-scope",
+   "jurisdiction": "AX",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "al-corporate-tax",
@@ -2716,8 +2762,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2024",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bangladesh-vat",
@@ -2725,12 +2771,12 @@
    "path": "skills/bangladesh/bangladesh-vat.md",
    "name": "bangladesh-vat",
    "jurisdiction": "BD",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-bookkeeping",
@@ -2743,7 +2789,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-company-formation",
@@ -2751,12 +2797,25 @@
    "path": "skills/bangladesh/bd-company-formation.md",
    "name": "bd-company-formation",
    "jurisdiction": "BD",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bd-corporate-income-tax",
+   "mcp_slug": "bd-corporate-income-tax",
+   "path": "skills/bangladesh/bd-corporate-income-tax.md",
+   "name": "bd-corporate-income-tax",
+   "jurisdiction": "BD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-crypto-tax",
@@ -2764,12 +2823,12 @@
    "path": "skills/bangladesh/bd-crypto-tax.md",
    "name": "bd-crypto-tax",
    "jurisdiction": "BD",
-   "category": "international",
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-einvoice",
@@ -2782,7 +2841,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-financial-statements",
@@ -2795,7 +2854,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-formation",
@@ -2808,7 +2867,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-freelance-intake",
@@ -2821,7 +2880,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-it-freelancer-tax",
@@ -2834,7 +2893,33 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bd-payroll-social",
+   "mcp_slug": "bd-payroll-social",
+   "path": "skills/bangladesh/bd-payroll-social.md",
+   "name": "bd-payroll-social",
+   "jurisdiction": "BD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bd-payroll",
+   "mcp_slug": "bd-payroll",
+   "path": "skills/bangladesh/bd-payroll.md",
+   "name": "bd-payroll",
+   "jurisdiction": "BD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-return-assembly",
@@ -2847,7 +2932,20 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bd-social-contributions",
+   "mcp_slug": "bd-social-contributions",
+   "path": "skills/bangladesh/bd-social-contributions.md",
+   "name": "bd-social-contributions",
+   "jurisdiction": "BD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-tax-optimization",
@@ -2860,7 +2958,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-06-12"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bd-tax-overview",
@@ -2868,12 +2966,12 @@
    "path": "skills/bangladesh/bd-tax-overview.md",
    "name": "bd-tax-overview",
    "jurisdiction": "BD",
-   "category": null,
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "references",
@@ -2881,12 +2979,12 @@
    "path": "skills/bangladesh/references.md",
    "name": "bangladesh-references",
    "jurisdiction": "BD",
-   "category": null,
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "barbados-vat",
@@ -5586,6 +5684,279 @@
    "name": "cv-vat-gst",
    "jurisdiction": "CV",
    "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-abb",
+   "mcp_slug": "bq-abb",
+   "path": "skills/caribbean-netherlands/bq-abb.md",
+   "name": "bq-abb",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-bonaire-ground-tax",
+   "mcp_slug": "bq-bonaire-ground-tax",
+   "path": "skills/caribbean-netherlands/bq-bonaire-ground-tax.md",
+   "name": "bq-bonaire-ground-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-corporate-tax",
+   "mcp_slug": "bq-corporate-tax",
+   "path": "skills/caribbean-netherlands/bq-corporate-tax.md",
+   "name": "bq-corporate-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-customs-clearance",
+   "mcp_slug": "bq-customs-clearance",
+   "path": "skills/caribbean-netherlands/bq-customs-clearance.md",
+   "name": "bq-customs-clearance",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-customs-debt-remedies",
+   "mcp_slug": "bq-customs-debt-remedies",
+   "path": "skills/caribbean-netherlands/bq-customs-debt-remedies.md",
+   "name": "bq-customs-debt-remedies",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-customs-valuation",
+   "mcp_slug": "bq-customs-valuation",
+   "path": "skills/caribbean-netherlands/bq-customs-valuation.md",
+   "name": "bq-customs-valuation",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-excise",
+   "mcp_slug": "bq-excise",
+   "path": "skills/caribbean-netherlands/bq-excise.md",
+   "name": "bq-excise",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-financial-statements",
+   "mcp_slug": "bq-financial-statements",
+   "path": "skills/caribbean-netherlands/bq-financial-statements.md",
+   "name": "bq-financial-statements",
+   "jurisdiction": "BQ",
+   "category": "financial-statements",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-formation",
+   "mcp_slug": "bq-formation",
+   "path": "skills/caribbean-netherlands/bq-formation.md",
+   "name": "bq-formation",
+   "jurisdiction": "BQ",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-gambling-tax",
+   "mcp_slug": "bq-gambling-tax",
+   "path": "skills/caribbean-netherlands/bq-gambling-tax.md",
+   "name": "bq-gambling-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-income-tax",
+   "mcp_slug": "bq-income-tax",
+   "path": "skills/caribbean-netherlands/bq-income-tax.md",
+   "name": "bq-income-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-payroll",
+   "mcp_slug": "bq-payroll",
+   "path": "skills/caribbean-netherlands/bq-payroll.md",
+   "name": "bq-payroll",
+   "jurisdiction": "BQ",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-penalties-corrections",
+   "mcp_slug": "bq-penalties-corrections",
+   "path": "skills/caribbean-netherlands/bq-penalties-corrections.md",
+   "name": "bq-penalties-corrections",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-personal-import-relief",
+   "mcp_slug": "bq-personal-import-relief",
+   "path": "skills/caribbean-netherlands/bq-personal-import-relief.md",
+   "name": "bq-personal-import-relief",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-property-tax",
+   "mcp_slug": "bq-property-tax",
+   "path": "skills/caribbean-netherlands/bq-property-tax.md",
+   "name": "bq-property-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-social-contributions",
+   "mcp_slug": "bq-social-contributions",
+   "path": "skills/caribbean-netherlands/bq-social-contributions.md",
+   "name": "bq-social-contributions",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-statia-tourist-tax",
+   "mcp_slug": "bq-statia-tourist-tax",
+   "path": "skills/caribbean-netherlands/bq-statia-tourist-tax.md",
+   "name": "bq-statia-tourist-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-tax-compliance",
+   "mcp_slug": "bq-tax-compliance",
+   "path": "skills/caribbean-netherlands/bq-tax-compliance.md",
+   "name": "bq-tax-compliance",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-tax-system",
+   "mcp_slug": "bq-tax-system",
+   "path": "skills/caribbean-netherlands/bq-tax-system.md",
+   "name": "bq-tax-system",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-transfer-tax",
+   "mcp_slug": "bq-transfer-tax",
+   "path": "skills/caribbean-netherlands/bq-transfer-tax.md",
+   "name": "bq-transfer-tax",
+   "jurisdiction": "BQ",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "bq-warehouses-hde",
+   "mcp_slug": "bq-warehouses-hde",
+   "path": "skills/caribbean-netherlands/bq-warehouses-hde.md",
+   "name": "bq-warehouses-hde",
+   "jurisdiction": "BQ",
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
@@ -12470,6 +12841,19 @@
    "last_updated": "2026-11-11"
   },
   {
+   "slug": "hm-tax-scope-reference",
+   "mcp_slug": "hm-tax-scope-reference",
+   "path": "skills/heard-island-and-mcdonald-islands/hm-tax-scope-reference.md",
+   "name": "hm-tax-scope-reference",
+   "jurisdiction": "HM",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "hn-company-formation",
    "mcp_slug": "hn-company-formation",
    "path": "skills/honduras/hn-company-formation.md",
@@ -13689,7 +14073,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-crypto-tax",
@@ -13702,7 +14086,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-customs-duty",
@@ -13715,7 +14099,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-employee-tax-refund",
@@ -13728,7 +14112,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-freelancer-ops",
@@ -13741,7 +14125,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-income-tax-returns",
@@ -13754,7 +14138,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-new-immigrant",
@@ -13767,7 +14151,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-tax-withholding",
@@ -13780,7 +14164,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "israel-vat",
@@ -13793,7 +14177,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "references",
@@ -13805,8 +14189,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "it-cross-border",
@@ -19626,6 +20010,214 @@
    "name": "nu-company-reporting",
    "jurisdiction": "NU",
    "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-annual-rates",
+   "mcp_slug": "nf-annual-rates",
+   "path": "skills/norfolk-island/nf-annual-rates.md",
+   "name": "nf-annual-rates",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-cgt",
+   "mcp_slug": "nf-cgt",
+   "path": "skills/norfolk-island/nf-cgt.md",
+   "name": "nf-cgt",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-company-administration",
+   "mcp_slug": "nf-company-administration",
+   "path": "skills/norfolk-island/nf-company-administration.md",
+   "name": "nf-company-administration",
+   "jurisdiction": "NF",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-company-tax",
+   "mcp_slug": "nf-company-tax",
+   "path": "skills/norfolk-island/nf-company-tax.md",
+   "name": "nf-company-tax",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-employment-pay",
+   "mcp_slug": "nf-employment-pay",
+   "path": "skills/norfolk-island/nf-employment-pay.md",
+   "name": "nf-employment-pay",
+   "jurisdiction": "NF",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-fbt",
+   "mcp_slug": "nf-fbt",
+   "path": "skills/norfolk-island/nf-fbt.md",
+   "name": "nf-fbt",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-gst",
+   "mcp_slug": "nf-gst",
+   "path": "skills/norfolk-island/nf-gst.md",
+   "name": "nf-gst",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-imports",
+   "mcp_slug": "nf-imports",
+   "path": "skills/norfolk-island/nf-imports.md",
+   "name": "nf-imports",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-income-tax",
+   "mcp_slug": "nf-income-tax",
+   "path": "skills/norfolk-island/nf-income-tax.md",
+   "name": "nf-income-tax",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-investment-withholding",
+   "mcp_slug": "nf-investment-withholding",
+   "path": "skills/norfolk-island/nf-investment-withholding.md",
+   "name": "nf-investment-withholding",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-medicare",
+   "mcp_slug": "nf-medicare",
+   "path": "skills/norfolk-island/nf-medicare.md",
+   "name": "nf-medicare",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-payg-withholding",
+   "mcp_slug": "nf-payg-withholding",
+   "path": "skills/norfolk-island/nf-payg-withholding.md",
+   "name": "nf-payg-withholding",
+   "jurisdiction": "NF",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-property-transfers",
+   "mcp_slug": "nf-property-transfers",
+   "path": "skills/norfolk-island/nf-property-transfers.md",
+   "name": "nf-property-transfers",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-super-guarantee",
+   "mcp_slug": "nf-super-guarantee",
+   "path": "skills/norfolk-island/nf-super-guarantee.md",
+   "name": "nf-super-guarantee",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-tax-system",
+   "mcp_slug": "nf-tax-system",
+   "path": "skills/norfolk-island/nf-tax-system.md",
+   "name": "nf-tax-system",
+   "jurisdiction": "NF",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nf-transfer-pricing",
+   "mcp_slug": "nf-transfer-pricing",
+   "path": "skills/norfolk-island/nf-transfer-pricing.md",
+   "name": "nf-transfer-pricing",
+   "jurisdiction": "NF",
+   "category": "transfer-pricing",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
