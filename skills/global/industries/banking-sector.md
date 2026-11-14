@@ -54,7 +54,7 @@ Accounting steps use [AASB 9, chapters 3-5 and section 5.5](https://standards.aa
 
 | Portfolio or event | Treatment to establish | Source |
 | --- | --- | --- |
-| General approach, no significant credit-risk increase | Measure the applicable allowance on a 12-month expected-credit-loss basis; do not read that as only defaults expected to result in loss during that period | [AASB 9, paragraphs 5.5.5 and Appendix A](https://standards.aasb.gov.au/aasb-9-feb-2025) |
+| General approach, no significant credit-risk increase | Measure the applicable allowance on a 12-month expected-credit-loss basis; do not read that as only defaults expected to result in loss during that period | [AASB 9, paragraphs 5.5.5 and B5.5.43](https://standards.aasb.gov.au/aasb-9-feb-2025) |
 | Significant credit-risk increase since origination | Lifetime expected losses apply under the general approach. Consider forward-looking information and the change in lifetime default risk | [AASB 9, paragraphs 5.5.3-5.5.11](https://standards.aasb.gov.au/aasb-9-feb-2025) |
 | Past due indicator | More than 30 days past due creates a rebuttable significant-increase presumption; it does not delay earlier recognition supported by information | [AASB 9, paragraph 5.5.11](https://standards.aasb.gov.au/aasb-9-feb-2025) |
 | Purchased or originated credit-impaired assets | Recognise cumulative changes in lifetime expected losses since initial recognition under this separate approach | [AASB 9, paragraphs 5.5.13-5.5.14](https://standards.aasb.gov.au/aasb-9-feb-2025) |
@@ -155,7 +155,7 @@ expected:
 
 | Source | URL | Read on | Read for |
 | --- | --- | --- | --- |
-| AASB 9, February 2025 compilation, operative 2026 | https://standards.aasb.gov.au/aasb-9-feb-2025 | 2026-11-14 | Read for Sections on derecognition and expected credit losses, paragraphs 3.2.6-3.2.23 and 5.5.1-5.5.20; exceptions and forward-looking information |
+| AASB 9, February 2025 compilation, operative 2026 | https://standards.aasb.gov.au/aasb-9-feb-2025 | 2026-11-14 | Read for Sections on derecognition and expected credit losses, paragraphs 3.2.6-3.2.23, 5.5.1-5.5.20 and B5.5.43; exceptions, twelve-month-loss meaning and forward-looking information |
 | HMRC BKLM160000 | https://www.gov.uk/hmrc-internal-manuals/bank-levy-manual/bklm160000 | 2026-11-14 | Read for Current rate row and separate long/short-term categories |
 | HMRC BKLM154500 | https://www.gov.uk/hmrc-internal-manuals/bank-levy-manual/bklm154500 | 2026-11-14 | Read for Schedule 19 paragraph 6(2), allowance and proportional allocation |
 | HMRC BKM403100 | https://www.gov.uk/hmrc-internal-manuals/banking-manual/bkm403100 | 2026-11-14 | Read for Surcharge profit bridge under CTA 2010 section 269DA, not a rate confirmation |
