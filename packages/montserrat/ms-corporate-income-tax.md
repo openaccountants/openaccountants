@@ -1,54 +1,137 @@
 ---
 name: ms-corporate-income-tax
 description: >
-  Montserrat corporate income tax reference checked for 2026 against the official Income and Corporation Tax Act consolidation. Covers the standard company rate, the distinction between accounting profit and chargeable income, selected expense restrictions, annual return requirements and instalment payments. Includes an illustrative tax reconciliation and a separate prior-assessment instalment example. Use after company residence, taxable scope and the relevant accounting period have been established. Identifies remitted branch profits as a separate withholding issue. Incentives, capital allowances, losses, treaty relief and later legislative changes require further review. This source-cited draft is not accountant-attested.
-version: 0.2
+  Montserrat company income tax for 2026 under the Income and Corporation Tax Act,
+  Chapter 17.01 (revised to 1 January 2025). Covers the 30% rate on chargeable income
+  (section 36), deductible and non-deductible expenses (sections 13 to 16), the return
+  by 31 March with a tax calculation (section 43), payment by 30 June or 45 days after
+  assessment, the three equal instalments in February, April and June (section 50), the
+  15% deduction from Government contract payments (section 37), company-specific rate
+  orders and the branch remitted-profit charge. Trigger phrases include Montserrat
+  corporation tax, Montserrat company tax 30%, Montserrat tax instalments.
+version: 1.0
 jurisdiction: MS
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
+type: computation
+domain: corporate-tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: corporate-tax
 ---
 
-# Montserrat corporate income tax
+# Montserrat company income tax
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-Source-cited draft checked 22 October 2026. References below are to the [Income and Corporation Tax Act, Chapter 17.01, revised 1 January 2025](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf). This Guide applies the standard company framework after taxable status and the relevant basic year have been established. It does not decide residence, source, exemptions or eligibility for a special incentive.
+Company income tax in Montserrat for the 2026 year of assessment under the Income and Corporation Tax Act, Cap. 17.01, revised edition showing the law at 1 January 2025. Covers the rate, the base, the return and payments once residence and the basic year are settled. Amounts are EC$. Withholding on payments to nonresidents: [ms-nonresident-withholding](ms-nonresident-withholding.md). Residence, incentives, capital allowances, losses and treaties are outside it.
 
-## Rate and tax base
+## Ask the client first
 
-Section 36 sets a 30% rate on the chargeable income of companies, building societies and bodies of persons. The tax base is chargeable income, not revenue and not automatically the accounting profit. [Section 36](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
+1. Is the company resident, or a nonresident company carrying on business in Montserrat (branch)?
+2. Accounting profit for the basic year and each adjustment to chargeable income, with evidence.
+3. Tax last assessed (for the instalments).
+4. Any rate or exemption order made for the company?
+5. Payments received from Government under contracts (15% deducted at source)?
 
-Section 13 permits qualifying expenses incurred wholly and exclusively in producing income, subject to its detailed conditions. For example, the interest provision requires satisfaction that the borrowed capital was used to acquire the income. Section 16 excludes private expenditure, expenditure not incurred for the qualifying income purpose, and capital amounts described there. Sections 14–15 contain separate capital deduction rules that require asset-specific analysis. [Sections 13–16](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
+## The method, step by step
 
-Maintain a reconciliation that starts with accounts profit, identifies each tax adjustment, cites the applicable provision and retains the underlying evidence. Do not use the following illustration to decide whether a disputed cost is deductible.
+### Rates, bands and thresholds
 
-## Illustrative computation
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Company rate, s.36 | 30% of chargeable income of any company, building society or body of persons | [Income and Corporation Tax Act Cap. 17.01](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
+| Return, s.43 | By 31 March each year (or another prescribed date), with a calculation of the tax payable; may be filed online | same |
+| Payment, s.50(1) | By 30 June in the year of assessment or within 45 days of service of the assessment, whichever is later | same |
+| Instalments, s.50(2) | A trader pays tax equal to that last assessed in three equal instalments in February, April and June; the Comptroller may adjust where a loss or lower profit is likely | same |
+| Government contract payments, s.37 | The Accountant General deducts 15% (or a lesser sum the Comptroller sets), credited against the year's tax | same |
+| Company-specific orders | For example SRO 36/2023: Ring Centre Ltd 5% for 2023 to 2025 and 10% for 2026 and 2027; SRO 25/2021: Phoenix Group International Ltd 10% for five years | same |
+| Branch remitted profits, s.39(4) | A nonresident company carrying on business is liable to withholding tax on remitted profits in addition to income tax | same |
 
-Assume the company has already established the following amounts, with no other reliefs or adjustments:
+### Steps
 
-| Reconciliation item | EC$ |
-|---|---:|
-| Accounting profit before tax | 80,000 |
-| Add back established non-deductible private expenditure included in accounts | 5,000 |
-| Chargeable income | 85,000 |
-| Tax at 30% | 25,500 |
+1. **Chargeable income:** start from accounting profit; deduct only expenses wholly and exclusively incurred in producing the income (s.13), with the capital rules in ss.14 and 15; add back private, non-qualifying and capital amounts (s.16).
+2. **Tax:** chargeable income x 30%, unless an order sets a different rate for the company.
+3. **Instalments:** one third of the last assessed tax in each of February, April and June.
+4. **Return** by 31 March with the tax calculation; **pay** the balance by 30 June or 45 days after assessment.
+5. **Credits:** instalments and any s.37 deductions.
 
-The example isolates the effect of one agreed disallowance. It does not model depreciation, capital allowances, losses or tax credits. If those items exist, complete the relevant statutory analysis before treating the result as final.
+## Boundary and exception table
 
-## Return and payment
+| Situation | Treatment | Source |
+|---|---|---|
+| Forecast shows a lower profit | Instalments stay at last assessed tax unless the Comptroller adjusts them | [Cap. 17.01, s.50(2)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
+| Overpaid instalments | Repaid; underpaid, recovered under the Act | same |
+| Nonresident company with a branch | 30% tax plus withholding on remitted profits; not due on profits shown not remitted | [Cap. 17.01, s.39(4)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
+| Interest on borrowed money | Deductible only if the capital was used to acquire the income (s.13 conditions) | same |
 
-Section 43 requires the income return by 31 March in the year of assessment, unless another date is prescribed, and requires a calculation of the tax payable. The employment/pension exception in subsection (4) is not the ordinary company deadline. Check any applicable current extension or prescribed date before filing. [Section 43](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
+## Worked cases
 
-Section 50(1) sets the balance-payment deadline at the later of 30 June in the assessment year and 45 days after service of the assessment notice, excluding the separately governed source deductions. Section 50(2) requires a person carrying on a trade to pay an amount equal to the last assessed tax in three equal instalments during February, April and June. The Comptroller can adjust this where a loss or reduced profit is demonstrated to their satisfaction. [Section 50](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
+### Case 1: tax and balance
 
-For last assessed tax of EC$24,000, the three equal instalments are EC$8,000 each. If final tax is EC$25,500 and those are the only payments or credits, the remaining balance is EC$1,500. A lower accounting forecast alone is not the statutory approval for reducing instalments.
+Accounting profit 80,000 plus 5,000 of private expenditure added back gives chargeable income of 85,000 and tax of 25,500. Instalments based on last assessed tax of 24,000 are 8,000 each; the balance is 1,500.
 
-## Branch and unresolved issues
+```oa-check
+name: Montserrat company tax on 85,000, instalments on 24,000
+inputs:
+  profit: 80000
+  addback: 5000
+  last_assessed: 24000
+steps:
+  - chargeable: profit + addback
+  - tax: chargeable * 0.30
+  - instalment: last_assessed / 3
+  - balance: tax - instalment * 3
+expected:
+  chargeable: 85000
+  tax: 25500
+  instalment: 8000
+  balance: 1500
+```
 
-Section 39(4) separately addresses withholding on remitted Montserrat business profits of non-resident companies, in addition to income tax, with a provision for amounts shown not to have been remitted. Do not assume payment of the 30% company tax settles that obligation. [Section 39(4)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
+### Case 2 (decision): ask the Comptroller to cut instalments?
 
-Residence, special regimes, related-party payments, capital deductions, losses, group structures and international relief need separate Guides and verification. A post-consolidation amendment audit and independent accountant review remain outstanding; this is not comprehensive corporate coverage.
+Last assessed tax was 24,000 but a downturn means this year's tax will be about 9,000. Paying as assessed costs 8,000 in each of February, April and June and leaves 15,000 to be repaid. If the Comptroller agrees an adjustment to 9,000, each instalment is 3,000 and 15,000 stays in the business. Apply early with evidence of the expected loss or lower profit.
+
+```oa-check
+name: Montserrat instalment adjustment, 24,000 against 9,000
+inputs:
+  last_assessed: 24000
+  expected: 9000
+steps:
+  - assessed_instalment: last_assessed / 3
+  - adjusted_instalment: expected / 3
+  - cash_kept: last_assessed - expected
+expected:
+  assessed_instalment: 8000
+  adjusted_instalment: 3000
+  cash_kept: 15000
+```
+
+## When to refuse or refer
+
+- Residence, source, related-party payments, groups and international relief.
+- Capital allowances, losses and incentives beyond the orders listed.
+- Amendments after the 1 January 2025 revision.
+
+## Filing and payment
+
+1. File the return of the basic year's income with the tax calculation by 31 March, online if wished (s.43).
+2. Pay instalments in February, April and June, and the balance by 30 June or 45 days after assessment (s.50).
+3. Keep the profit-to-chargeable-income reconciliation with each adjustment, its section and evidence.
+
+## Completion checklist
+
+- Chargeable income reconciled; 30% (or the order rate) applied.
+- Instalments one third of last assessed tax.
+- Return by 31 March; balance by 30 June or 45 days.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income and Corporation Tax Act Cap. 17.01, revised to 1 January 2025: read for ss.13 to 16, 36 (30%), 37 (15% on Government contracts), 39(4), 43 (31 March return), 50 (payment and instalments) and the list of rate and exemption orders | https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf | 2026-11-14 |
+
+Not yet confirmed: amendments made after 1 January 2025; penalties and interest for late returns and payments (not read); capital allowance rates.

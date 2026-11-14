@@ -3,15 +3,16 @@ name: bj-tax-overview
 description: "Use this Benin 2026 tax preparation map to select the appropriate country Guide and assemble a cash and filing evidence checklist. It routes salary ITS, corporate IS, VAT, employer VPS, transfer pricing, domestic cross-border withholding and company formation to their separate working papers. It explains why the original finance law and June rectifying law must be read together and provides two executable reconciliations of known obligations. All seven country domains remain partial. Current CNSS rules, certain threshold instruments, specialist calculations, treaty entitlements and authenticated submission procedures remain open. This map does not certify complete coverage, a completed filing or professional attestation. Trigger phrases include Benin tax overview, country pack and compliance preparation."
 jurisdiction: BJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Benin tax preparation map v0.2
+# Benin tax preparation map v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

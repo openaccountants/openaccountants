@@ -4,14 +4,15 @@ description: >
   Burkina Faso social contribution workpaper for the 2026 tax year, covering the ordinary CNSS employee branches, individual contribution ceiling, remuneration and benefits in kind, expense exclusions, employer and employee splits, declaration fields and the public monthly or quarterly payment instructions. Use for CNSS contribution calculations, the twenty-worker reporting boundary, company vehicles, voluntary pension contributions and separating social contributions from payroll taxes. Two executable cases test the ceiling and payment-frequency decision. The Guide identifies which statements come from signed orders and which rely on current CNSS authority guidance. Unreadable statutes, current social penalties, AMU activation and authenticated filing remain explicit source gaps.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Burkina Faso social contributions (CNSS) v1.1
+# Burkina Faso social contributions (CNSS) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

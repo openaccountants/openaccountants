@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ng-pension-nhf-social-contributions"
   jurisdiction: "NG"
   tax_year: "2026"
-  last_updated: "2026-11-02"
+  last_updated: "2026-11-14"
 ---
 
 # Nigerian social contributions: pension, NHF, NSITF and ITF (2026)
@@ -205,4 +205,4 @@ Not yet confirmed:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-02. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ng-pension-nhf-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ng-pension-nhf-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ng-pension-nhf-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ng-pension-nhf-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
