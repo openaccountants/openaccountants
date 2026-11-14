@@ -4,20 +4,22 @@ description: "Use for selected New Zealand domestic company incorporation prereq
 jurisdiction: NZ
 category: formation
 tier: 2
-review_status: pending_review
-tax_year: 2026
-tax_year_notes: "Register requirements checked on 13 November 2026; address-information transition requires revalidation from 18 November 2026. This is not an income-tax year."
-last_updated: 2026-11-13
-version: 0.1
+domain: advisory
+type: filing-howto
+checked_on: 2026-11-14
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - company-formation-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company incorporation and register annual return v0.1
+# New Zealand company incorporation and register annual return v0.2
 
-## Scope and source period
+## Scope
+
+**Checked on:** 2026-11-14 (company law, not an income-tax year). Register requirements were checked by the writer on 13 November 2026; the address-information transition requires revalidation from 18 November 2026.
 
 Prepare selected register working papers for an ordinary domestic company limited by shares under the Companies Act 1993, after the entity choice has been confirmed. 'Private company' here describes the engagement's ordinary ownership and activities; it is not an assertion that every company with private owners has the same reporting, tax or regulatory status. Overseas-company registration, public offers, financial markets participants, co-operatives, unlimited companies, restructurings and special regimes need separate analysis.
 
@@ -27,7 +29,7 @@ The Companies Act consolidation reviewed is dated 1 July 2025; the regulations r
 
 The Companies Office procedural pages were checked on 13 November 2026. Their fee table states an effective date of 1 July 2022. Recheck the actual service, channel, fee and notices for the proposed transaction. No processing estimate is a guaranteed incorporation date. Do not collect identity documents, tax identifiers, bank details, passwords or signing credentials; the authorised professional retains them and performs any submission or payment.
 
-## Establish the engagement and missing country slots
+## Ask the client first
 
 Confirm the intended activities, domestic or overseas entity, owners, funding, liability objectives, employees, cross-border features, intended date and actual register status. For an existing company obtain a redacted register summary, incorporation year, assigned annual-return month, last return, current notices and prescribed return information, with separate reporting-status work where relevant. For a proposed company obtain a redacted reservation notice, proposed share allocations, director eligibility review, address arrangements, constitution decision, ultimate holding company assessment and consent status. Do not infer facts from a name or an absence of trading.
 
@@ -46,7 +48,9 @@ Confirm the intended activities, domestic or overseas entity, owners, funding, l
 
 Record missing evidence as Needs Input with the affected output and evidence needed. Do not turn a missing slot into 'not applicable', a zero fee, no-audit status or a complete first-year calendar. Follow any loaded refusal if the engagement requires a prohibited act or the professional reviewer is removed.
 
-## Incorporation prerequisites and sequence
+## The method, step by step
+
+### Incorporation prerequisites and sequence
 
 1. **Confirm the selected entity and prerequisites.** Section 10 requires a name, one or more shares, one or more shareholders and one or more directors. At least one director must live in New Zealand, or live in an enforcement country and be a director of a body corporate incorporated there under equivalent law. Regulation 12 prescribes Australia. An Australian address alone is insufficient: establish that Australian directorship and the prescribed information; Companies Office asks for the Australian company number. Citizenship does not establish where a director lives. [Section 10][S1], [section 12][S24], [regulation 12][S8], [director guidance][S6].
 2. **Check every director.** Section 151 requires a natural person who is not disqualified. Check age of at least 18, undischarged bankruptcy, applicable insolvency prohibitions, company/limited-partnership prohibitions, Financial Markets Conduct Act or Takeovers Act prohibitions, employer-officer prohibitions where the company is an employer, prescribed overseas company/limited-partnership prohibitions, relevant property orders and any constitution qualifications. The exact subsection and underlying order matter. Regulation 10 prescribes Australia for section 151(2)(eb); do not treat that as a complete interpretation of every overseas prohibition, including paragraph (ec). A declaration alone cannot cure an actual disqualification. Missing, conflicting or unreviewed eligibility facts stop the appointment. [Section 151][S5], [regulation 10][S30].
@@ -59,19 +63,19 @@ Record missing evidence as Needs Input with the affected output and evidence nee
 
 Use official working-day rules and the actual notice for calendar calculations. This guide does not supply a complete holiday or non-working-day engine. Hold a derived deadline if its calendar assumptions are unverified.
 
-## Selected online fees
+### Selected online fees
 
 These are the Companies Office page's published NZD totals, effective from 1 July 2022 and observed on 13 November 2026. The total includes the listed levies where applicable. Do not quote the Companies Office component alone as the total. [Fee schedule][S14].
 
-| Ordinary online service | Total excluding GST | Published total including GST |
-| --- | --- | --- |
-| Company name reservation | $10.00 | $11.50 |
-| Company incorporation | $118.74 | $136.55 |
-| Company annual return | $49.74 | $57.20 |
+| Ordinary online service | Total excluding GST | Published total including GST | Source |
+| --- | --- | --- | --- |
+| Company name reservation | $10.00 | $11.50 | https://companies-register.companiesoffice.govt.nz/help-centre/managing-your-online-account/schedule-of-fees/ |
+| Company incorporation | $118.74 | $136.55 | same |
+| Company annual return | $49.74 | $57.20 | same |
 
 The incorporation total excluding GST comprises $90 Companies Office fee, $21.74 FMA levy, $6 XRB levy and $1 IP levy. The annual-return total comprises $21, $21.74, $6 and $1 respectively. The page lists a separate API annual-return fee; do not apply the ordinary online amount to a different channel. The figures above do not establish total formation cost, recoverable GST or a refund entitlement after an unsuccessful application.
 
-## Separate Companies Office annual return
+### Separate Companies Office annual return
 
 An annual return confirms register information; it does not replace the company income-tax return, statutory financial statements or an audit. Section 214 requires the prescribed information drawn from Schedule 4. Regulation 4 prescribes the Schedule 1 forms and their particulars; Form 12 is the annual-return form for section 214(1). Its published fields do not include the Schedule 4 financial-reporting, audit or resolution questions. Do not add those catalogue items as mandatory Form 12 answers merely because they appear in the Schedule. Keep each separate reporting obligation and its completion status open until independently resolved. [Section 214][S15], [Schedule 4][S23], [regulation 4][S31], [Form 12][S32], [Companies Office guidance][S20].
 
@@ -95,13 +99,13 @@ Schedule 4 also lists reporting-status, code-company, financial-product-offer an
 
 Record the actual assigned month and year, registration-year exception or approved extension, current due/overdue state and the professional’s action. Companies Office allows a filing-month change only whilst the current return is neither due nor overdue; December and January cannot be selected. An extension can be requested during the filing month. If granted, its guidance allows 20 working days from grant, with the new deadline confirmed by email. A request alone is not approval. Missing the return may lead to removal and section 214(10) separately creates a directors’ offence for non-compliance with subsections (1) or (2), with the penalty in section 374(2). No penalty amount is adopted here. Removal is not automatic at month end; refer actual notices promptly for professional action. An inactive business is not, by itself, evidence that the register return is excused. [Section 214][S15], [annual-return guidance][S18], [month changes][S21], [extensions][S22].
 
-## Tax and other compliance handoffs
+### Tax and other compliance handoffs
 
 Companies Office permits a combined application for an IRD number, GST and employer registration. The convenience of that route does not itself establish tax residence, ordinary company tax treatment, GST liability, an accepted non-active declaration or employment obligations. Route the applicable facts to nz-company-income-tax-ir4, nz-gst and nz-employer-payroll with their own source periods and limits. Do not submit identifiers or bank details through this workflow. [Tax registration][S19].
 
 Preserve separately outstanding capital/share-rights work, industry permissions, ownership disclosures, event-driven register changes, record keeping, financial statements, audit and tax obligations. Obtain applicable primary authority before marking a stream inapplicable. No complete company-formation or reporting topic is claimed by this selected core.
 
-## Worked controls
+## Worked cases
 
 All cases are synthetic. Eligibility, applicable law, channel and calendar facts are independently established inputs unless the case expressly leaves them unresolved. Numeric checks test the stated arithmetic only; they do not establish legal eligibility or exercise a live portal.
 
@@ -219,13 +223,66 @@ expected:
 tolerance: 0
 ```
 
+## When to refuse or refer
+
+These points restate the refusals and holds in the method and cases above; they add no new rule.
+
+- Refer overseas-company registration, public offers, financial markets participants, co-operatives, unlimited companies, restructurings and special regimes: this guide covers an ordinary domestic company limited by shares only (Scope).
+- Refuse to collect identity documents, tax identifiers, bank details, passwords or signing credentials, to sign for a director, or to infer shareholder-agent authority. The authorised professional performs any submission or payment.
+- Stop a director appointment on any actual disqualification (for example a director under 18) and hold it on any missing, conflicting or unreviewed eligibility fact (section 151).
+- Hold an alternative-address application under the Companies (Address Information) Amendment Act 2025 for the operative amended law and qualified review; this version does not approve one.
+- Hold an entity recommendation, a complete formation package or a complete annual return while a country slot or prescribed item lacks current evidence; never record a missing slot as "not applicable", a zero fee or no-audit status.
+- Refer reporting-status, audit and tax conclusions to their own skills (nz-company-income-tax-ir4, nz-gst-return, nz-employer-payroll); a register filing never proves them.
+- Refer actual Companies Office notices (overdue return, removal) promptly to the professional; no penalty amount is adopted here.
+- Follow any loaded refusal from workflow-base or company-formation-workflow-base if the engagement requires a prohibited act or the professional reviewer is removed.
+
 ## Outputs and self-checks
 
 Retain the workflow-base working paper, reviewer brief, checklist and unresolved-item record. For a formation engagement, preserve the formation base's 5-output requirement and entity-choice checkpoint: this guide alone cannot discharge its missing country slots. Give the professional an evidence-linked register checklist, separate register/tax/reporting calendar rows, selected fee subtotal, both actual incorporation clocks and all unresolved items. Mark preparatory records as incomplete wherever a required condition remains open.
 
 Before delivery check: correct domestic entity and date; current sources and amendments; all directors' actual eligibility and residence/directorship conditions; every required consent and written shareholder-agent authority; reserved name and both deadlines; valid office/service arrangements and address transition; actual certificate; correct fee/channel; established annual-return year/month/exception, every prescribed field and any evidenced additional applicable response; separate tax/accounts/audit statuses; all mandatory formation slots; consistent outputs and qualified review. Reject malformed counts. Reconcile director consents and certificates by unique named director; a distinct-director consent count cannot exceed the named directors. Reconcile shareholder consents to every required, verified share allocation: one shareholder may require multiple forms, and a duplicate form cannot replace another required allocation’s form. No executable arithmetic block proves a filing, identity check or practitioner sign-off.
 
-## Primary sources and revision
+## Sources
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| [S1] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320108/ | Read for ss10–15; navigate to each selected provision | 2026-11-13 |
+| [S2] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320125/ | Read for ss20/22 name reservation | 2026-11-13 |
+| [S3] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320131/ | Read for ss26–28 constitution | 2026-11-13 |
+| [S4] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-directors/filing-director-and-shareholder-consent-forms/ | Read for Filing director and shareholder consent forms | 2026-11-13 |
+| [S5] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320690/ | Read for ss151/152 director qualifications and consent | 2026-11-13 |
+| [S6] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-directors/who-can-be-a-director/ | Read for Who can be a director | 2026-11-13 |
+| [S7] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320858/ | Read for ss186/192 office and address for service | 2026-11-13 |
+| [S8] Companies Act 1993 Regulations 1994 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM6462000/ | Read for regs10/12 | 2026-11-13 |
+| [S9] Companies (Address Information) Amendment Act 2025 | https://www.legislation.govt.nz/act/public/2025/67/en/latest/ | Read for ss2/4–12 | 2026-11-13 |
+| [S10] Companies Act 1993 (Address Information) Amendment Regulations 2026 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ | Read for reg2 | 2026-11-13 |
+| [S11] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/starting-a-company/company-address/ | Read for Company addresses | 2026-11-13 |
+| [S12] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/starting-a-company/ultimate-holding-companies/ | Read for Ultimate holding companies | 2026-11-13 |
+| [S13] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/starting-a-company/incorporating-a-company/ | Read for Incorporating a company | 2026-11-13 |
+| [S14] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/managing-your-online-account/schedule-of-fees/ | Read for Schedule of fees | 2026-11-14 |
+| [S15] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321131/ | Read for s214 and Schedule4 register annual return | 2026-11-13 |
+| [S16] Deposit Takers Act 2023 | https://www.legislation.govt.nz/act/public/2023/35/en/latest/ | Read for s495 and Schedule3 Companies Act amendments | 2026-11-13 |
+| [S17] Employment Leave Act 2026 | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS1506038/ | Read for Schedule2 Companies Act amendments; see s2 commencement | 2026-11-13 |
+| [S18] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-annual-returns/why-annual-returns-matter/ | Read for Why annual returns matter and linked filing guidance | 2026-11-13 |
+| [S31] Companies Act 1993 Regulations 1994 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190588/ | Read for reg4 prescribed forms and particulars | 2026-11-13 |
+| [S32] Companies Act 1993 Regulations 1994 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190846/ | Read for Schedule1 Form12 annual return | 2026-11-13 |
+| [S33] Companies Act 1993 Regulations 1994 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190598/ | Read for reg7A online email requirements | 2026-11-13 |
+| [S24] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320111/ | Read for s12 application | 2026-11-13 |
+| [S25] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320112/ | Read for s13 registration | 2026-11-13 |
+| [S26] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320113/ | Read for s14 certificate | 2026-11-13 |
+| [S27] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320115/ | Read for s15 separate legal personality | 2026-11-13 |
+| [S28] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320694/ | Read for s152 consent | 2026-11-13 |
+| [S29] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320868/ | Read for s192 address for service | 2026-11-13 |
+| [S30] Companies Act 1993 Regulations 1994 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190804/ | Read for reg10 | 2026-11-13 |
+| [S23] Companies Act 1993 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM323519/ | Read for Schedule4 statutory annual-return information catalogue | 2026-11-13 |
+| [S20] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-annual-returns/completing-an-annual-return/ | Read for Completing an annual return | 2026-11-13 |
+| [S21] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-annual-returns/changing-your-annual-return-filing-month/ | Read for Changing your annual return filing month | 2026-11-13 |
+| [S22] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/company-annual-returns/requesting-an-extension-to-complete-an-annual-return/ | Read for Requesting an extension | 2026-11-13 |
+| [S19] Companies Office | https://companies-register.companiesoffice.govt.nz/help-centre/starting-a-company/tax-registration/ | Read for Tax registration; registration handoff only | 2026-11-13 |
+
+Not yet confirmed: the fee schedule (S14) was re-read on 2026-11-14 and its figures match; every other source was read by the writer on 2026-11-13 and was not re-opened in this conforming pass. The Companies (Address Information) Amendment Act 2025 and its 2026 regulations commence on or before 18 November 2026, after this check, so address disclosure and protection rules must be revalidated. No Gazette prescription or approved alternative annual-return form was located, and no authenticated portal flow was inspected. Audit thresholds are not established here. No accountant has reviewed this draft.
+
+### Revision note and link references
 
 Checked 13 November 2026. Act references below use the selected current sections of the 1 July 2025 consolidation, with the scoped unincorporated-amendment review described above. Regulations references use the 1 July 2023 consolidation. Companies Office procedure observations are dated by this check; the tax-registration page displays 22 July 2025. The fees page states 1 July 2022 effectiveness. Refresh affected rules for later work, especially the 18 November 2026 address transition.
 
@@ -266,23 +323,3 @@ Checked 13 November 2026. Act references below use the selected current sections
 ## Disclaimer
 
 This is a source-cited draft for a qualified New Zealand professional's review. It does not establish full formation, reporting, audit or tax compliance. Verify the company's actual facts, operative law, notices and filing requirements before acting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

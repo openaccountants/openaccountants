@@ -1,23 +1,30 @@
 ---
 name: nz-company-financial-reporting-core
-description: "Use for selected reporting readiness work for an ordinary New Zealand domestic company limited by shares. Trigger on financial reporting size tests, shareholder reporting elections, audit, registration of financial statements or annual reports to shareholders. Requires confirmed entity status, actual accounting periods, group perimeter, voting rights and applicable standards. Separates statutory size from accounting tier and each reporting duty. Produces selected working papers for qualified review; it cannot complete financial statement preparation, classify a financial markets participant, approve an audit exemption or submit accounts."
+description: "Use for selected reporting readiness work for an ordinary New Zealand domestic company limited by shares. Trigger on financial reporting size tests, large company, shareholder reporting elections, audit, registration of financial statements or annual reports to shareholders. Requires confirmed entity status, actual accounting periods, group perimeter, voting rights and applicable standards. Separates statutory size (Financial Reporting Act 2013 s 45) from the XRB accounting tier and each Companies Act 1993 Part 11 duty. Produces selected working papers for qualified review; it cannot complete financial statement preparation, classify a financial markets participant, approve an audit exemption or submit accounts."
 jurisdiction: NZ
 category: financial-statements
 tier: 2
-review_status: pending_review
 tax_year: 2026
-tax_year_notes: "Reporting controls checked on 14 November 2026. Statutory size and XRB standards have separate period-start and early-adoption conditions. This is not an income-tax year."
+tax_year_notes: "Not an income-tax year. Dated by standard and effective_date: Companies Act 1993 Part 11 and Financial Reporting Act 2013 s 45 as amended from 29 September 2025, and XRB A1 2025 Amendments effective 17 July 2026; controls checked on 14 November 2026"
 last_updated: 2026-11-14
-version: 0.1
+version: 0.2
+domain: financial-reporting
+standard: "Companies Act 1993 Part 11 subpart 2, Financial Reporting Act 2013 ss 45-47, XRB A1 Application of the Accounting Standards Framework and XRB A2"
+effective_date: 2026-07-17
+type: situation-rules
 depends_on:
   - workflow-base
   - financial-statements-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company reporting, audit and annual reports v0.1
+# New Zealand company reporting, audit and annual reports v0.2
 
-## Scope and source period
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. **Standard:** Companies Act 1993 Part 11 subpart 2, Financial Reporting Act 2013 ss 45 to 47 (size rule as amended from 29 September 2025, with the former rule saved for periods beginning before that date), XRB A1 and XRB A2. **Effective date of the latest version covered:** 17 July 2026 (XRB A1 2025 Amendments, mandatory for periods beginning on or after 1 January 2027, early adoption permitted). This is not an income-tax year.
+
+## Scope
 
 Prepare selected reporting-readiness working papers for an already selected ordinary domestic company limited by shares. Load [workflow-base](../../foundation/workflow-base.md) and [financial-statements-workflow-base](../../foundation/financial-statements-workflow-base.md). Retain their confirmation sequence, source conditions, refusals, mandatory country slots, outputs and qualified-review controls. This selected core is an incomplete country companion for preparing a set of financial statements.
 
@@ -29,7 +36,39 @@ The FRA consolidation is dated 5 April 2026. Its live warning identifies the Leg
 
 Use redacted summaries and synthetic labels. The professional retains private registers, identity documents, tax identifiers, banking details, credentials and signature authority and performs any authorised filing. No actual accounts, company classification, shareholder agreement, audit, signature or filing is established by these examples.
 
-## Engagement and financial-statement completion gates
+## Ask the client first
+
+Get these facts before classifying; each one changes the answer.
+
+- Is the company a domestic company limited by shares and a private sector for-profit entity, outside FMC Part 7 subpart 3, FRA s 55 and the other special regimes listed in Scope?
+- What are the actual dates of the period under review and of the 2 preceding accounting periods and balance dates (first, short or changed periods included)? Did the period begin before or on or after 29 September 2025?
+- Total assets and revenue, measured on the XRB A2 basis, of the company and its subsidiaries at each of the 2 preceding balance dates and periods; is it a subsidiary of an overseas company?
+- How many holders of voting shares were there at the close of the first day of the period, and who holds them (overseas bodies corporate, their subsidiaries, persons not ordinarily resident)?
+- Any opt-in or opt-out notice or resolution for this period, any parent-group statements, any inactivity declaration?
+- Does the company have public accountability, and has it elected Tier 2 or adopted the 2025 Amendments early?
+
+### Intake and confirmation
+
+Add the engagement facts listed above to the universal structured question form. Record legal form/registration; for-profit and private sector status; any FMC/FRA55 or other special regime; current and preceding actual periods/balance dates; all subsidiary/control relationships; the source and accounting basis of each measured amount; first-day voting-shareholders and joint parcels; actual meeting/service dates; constitution and provision-specific notices/resolutions; parent reports and lodgements; public accountability, tier election/adoption; proposed auditor; report recipients and outstanding documents. Do not collect private credentials or identifiers for these working papers.
+
+Present the evidenced regime/framework determination and open matters with the bases' combined profile/framework confirmation. Wait for the required confirmation before trial-balance review. A missing fact does not authorise a guessed classification. The fuller statement-preparation contract remains incomplete until all country slots above are supported.
+
+## The method, step by step
+
+Record a separate evidenced conclusion for each decision, rather than carrying a single 'small', 'large' or 'exempt' label through the workflow:
+
+1. Confirm the legal entity, reporting regime and actual accounting period. Resolve the section 197 alternative-regime exclusion first.
+2. Establish the subsidiary/control perimeter and which version of section 45 applies. Reconcile the 2 preceding balance dates and accounting periods to the actual period under review.
+3. Establish size using the applicable XRB A2 measurement basis. Test the specific subsidiary route and inactivity override separately.
+4. Count voting shareholders under section 199 and establish any valid period-specific opt-in or opt-out.
+5. Determine individual or group preparation and any parent-group exception. Determine the applicable XRB reporting tier/election separately.
+6. Determine audit, qualified auditor, appointment/report duties and registration. A preparation exception does not by itself establish a registration exception.
+7. Determine annual-report preparation, permitted omissions and shareholder distribution. An annual report is distinct from the Companies Office annual return.
+8. Build the evidence-linked calendar and reviewer brief. Show each missing decision, responsible person, required evidence and next action. Never certify submission from a draft or deadline calculation alone.
+
+Retain the applicable sources/versions, period calculation, measured size schedule, shareholder/voting reconciliation, each notice/resolution, parent-report evidence, decision matrix and calendar. Recheck the source chain when dates, facts, law or an election changes.
+
+### Engagement and financial-statement completion gates
 
 Obtain the actual constitution, company status, purpose/sector and financial markets status, accounting-period dates, balance-date history, group/control chart, relevant prior-period statements and accounting policies, current ownership/voting rights, first-day voting-shareholder count, meeting dates, notices, elections and parent-group reports. Establish their dates and legal effect. Missing or conflicting facts are Needs Input, with the affected decision and evidence required.
 
@@ -52,25 +91,6 @@ Do not proceed from this readiness review to statement preparation until every m
 
 For a financial-statement preparation engagement, retain all 6 mandatory outputs: income statement, balance sheet, notes, year-end adjustment schedule, filing checklist and reviewer brief, plus the universal outputs of workflow-base. These reporting-readiness papers cannot replace that set. Hold statement drafting, filing-ready status and completion whilst any required slot, fact, reconciliation, confirmation or professional review is missing.
 
-## Universal companion controls
-
-### Intake and confirmation
-
-Add the engagement facts listed above to the universal structured question form. Record legal form/registration; for-profit and private sector status; any FMC/FRA55 or other special regime; current and preceding actual periods/balance dates; all subsidiary/control relationships; the source and accounting basis of each measured amount; first-day voting-shareholders and joint parcels; actual meeting/service dates; constitution and provision-specific notices/resolutions; parent reports and lodgements; public accountability, tier election/adoption; proposed auditor; report recipients and outstanding documents. Do not collect private credentials or identifiers for these working papers.
-
-Present the evidenced regime/framework determination and open matters with the bases' combined profile/framework confirmation. Wait for the required confirmation before trial-balance review. A missing fact does not authorise a guessed classification. The fuller statement-preparation contract remains incomplete until all country slots above are supported.
-
-### Topical refusal catalogue
-
-Apply every loaded catalogue, including the universal R-REVIEWER-MISSING and R-CONTENT-MISMATCH triggers and their exact loaded messages. Include each code's cleared/fired result and reason in the refusal trace. The following additional codes are defined for this selected core. When one fires, reproduce its message verbatim, explain the affected work and state the evidence/content needed. A hold on one decision does not establish another decision.
-
-| Code | Trigger | Verbatim message |
-|---|---|---|
-| R-NZ-REPORT-REGIME | The requested company/period requires an out-of-scope or unverified reporting regime or applicable standard. | This company or reporting period requires reporting content outside this guide's verified scope. I cannot determine the affected duties from this guide. Load the applicable source-verified content and obtain qualified review before continuing that work. |
-| R-NZ-REPORT-EVIDENCE | A requested size, election, exception, tier, audit, registration or report conclusion depends on missing/conflicting period, amount, rights, authority or delivery evidence. | Needs Input: the evidence required for this reporting decision is missing or conflicting. I cannot classify the company or apply the affected election or exception until the identified evidence is resolved. |
-| R-NZ-FS-INCOMPLETE | Statement preparation or financial-statement workflow completion is requested whilst any mandatory country slot or required output is unsupported. | This selected reporting core is an incomplete companion for financial statement preparation. Do not begin statement drafting or mark the workflow complete. Load source-verified content for all mandatory country slots and retain every required output and professional review. |
-| R-NZ-REPORT-CERTIFICATION | The user asks these working papers to establish an actual exemption, audit, signature or filing without the required professional authority, final documents or evidence. | I cannot certify an exemption, audit, signature or filing from these working papers. A qualified professional must verify the actual authority, final documents and evidence. |
-
 ### Defaults and reviewer attention
 
 These are workflow holds, not additional statutory rules or elections. No factual ambiguity here authorises a guessed monetary value, legal status or supposedly conservative exemption.
@@ -86,55 +106,13 @@ These are workflow holds, not additional statutory rules or elections. No factua
 
 The reviewer attention threshold for this core is **NZ$0**: flag every reporting-duty, exemption, election, audit, tier, signature or filing position regardless of stated cash effect or certainty. Flag every non-zero monetary reconciliation difference, including NZ$0.01, and every unresolved date or condition. This is an internal review policy, not a statutory materiality, audit threshold, currency determination or permission to ignore non-monetary defects. Record unquantified impacts as unquantified, not zero. Qualified review remains mandatory for every output.
 
-### Period-specific figure reference
-
-This table gathers the selected figures; apply their full conditions and period gates in the substantive sections, not the numbers alone.
-
-| Figure/control | Selected amount or period | Primary authority |
-|---|---|---|
-| Direct ordinary-category size | Assets exceed $66m at each of 2 preceding balance dates, or revenue exceeds $33m in each of 2 preceding periods | [Section45(1)][FRA45], [former s45][FRA-PREV45] |
-| Direct overseas-company/subsidiary size | Corresponding $22m assets or $11m revenue, with the same strict 2-observation test | [Section45(2)][FRA45], [former s45][FRA-PREV45] |
-| New subsidiary size route | Periods commencing on/after 29 September 2025; exact (1)/(2) child test | [Schedule saving][REGSYSTEMS2025], [s45(2A)][FRA45] |
-| Minimal inactive costs/interest | Paragraph (b) costs no more than $50; interest disregarded only up to those costs | [Section45(5)][FRA45] |
-| Inactive declaration | Within 5 months after period end | [Section45(3)][FRA45] |
-| Shareholder-count split | 10+ versus fewer than 10, counted at close of period's first day | [Sections199/200][C199], [preparation][C200] |
-| Opting period | Earliest 6 months after start, annual meeting in period or qualifying short-period balance date | [Section207H][C207H] |
-| Opt-out votes | At least 95% of entitled votes cast; eligibility and meeting conditions apply | [Sections207I][C207I], [207J][C207J] |
-| Opt-in holding/timing | At least 5% voting shares; no later than 5 working days before opting-period end | [Section207K][C207K] |
-| Financial statements/signature | Complete/date/sign within 5 months after balance date; 2 directors or sole director | [Sections201][C201], [202][C202] |
-| Registration voting power/deadline | At least 25% meeting voting power in specified holder categories, plus large status; deliver within 5 months after balance date | [Sections207D][C207D], [207E][C207E] |
-| Ordinary-residence limb for registration | Domicile, or specified living/usual-place test over immediately preceding 12 months | [Section207D(3)][C207D] |
-| Registrar auditor-appointment notification | Casual vacancy unfilled for 1 month is one appointment-power route; notify within 5 working days after power arises | [Section207Q][C207Q] |
-| Auditor's non-compliance report | Within 7 working days after signing, to Registrar and XRB | [Section207C][C207C] |
-| Annual report | Prepare within 5 months after balance date; required board signatures by 2 directors or sole director | [Sections208][C208], [211][C211] |
-| Annual-report waiver/permitted omissions | At least 95% voting shares, with the separate statutory conditions | [Sections208(4)][C208], [211(3)][C211] |
-| Employee remuneration/benefits disclosure | At least $100,000 per annum, in $10,000 bands, excluding directors from that employee count | [Section211(1)(g)][C211] |
-| Shareholder distribution/copy request | 20-working-day dispatch rules; 15-working-day request window; fulfil timely request as soon as practicable | [Sections209][C209], [209A][C209A] |
-| Tax statements on written request | Free within 10 working days, report if any | [Section207F][C207F] |
-| XRB A1 June2026 amendment | Effective 17 July 2026; mandatory periods beginning on/after 1 January 2027, qualified early adoption | [XRB2026/55][XRB-A1-AMEND] |
-
-## Decision order and working papers
-
-Record a separate evidenced conclusion for each decision, rather than carrying a single 'small', 'large' or 'exempt' label through the workflow:
-
-1. Confirm the legal entity, reporting regime and actual accounting period. Resolve the section 197 alternative-regime exclusion first.
-2. Establish the subsidiary/control perimeter and which version of section 45 applies. Reconcile the 2 preceding balance dates and accounting periods to the actual period under review.
-3. Establish size using the applicable XRB A2 measurement basis. Test the specific subsidiary route and inactivity override separately.
-4. Count voting shareholders under section 199 and establish any valid period-specific opt-in or opt-out.
-5. Determine individual or group preparation and any parent-group exception. Determine the applicable XRB reporting tier/election separately.
-6. Determine audit, qualified auditor, appointment/report duties and registration. A preparation exception does not by itself establish a registration exception.
-7. Determine annual-report preparation, permitted omissions and shareholder distribution. An annual report is distinct from the Companies Office annual return.
-8. Build the evidence-linked calendar and reviewer brief. Show each missing decision, responsible person, required evidence and next action. Never certify submission from a draft or deadline calculation alone.
-
-Retain the applicable sources/versions, period calculation, measured size schedule, shareholder/voting reconciliation, each notice/resolution, parent-report evidence, decision matrix and calendar. Recheck the source chain when dates, facts, law or an election changes.
-
-## Accounting periods, subsidiaries and statutory size
+### Accounting periods, subsidiaries and statutory size
 
 Use actual accounting periods and balance dates, including a first, short or changed period. Do not replace '2 preceding accounting periods' with 2 calendar years or automatically use the current year's trial balance. FRA definitions and sections 41–43 govern the accounting period/balance date. Confirm any non-default balance date and necessary authority. [FRA, ss5/41–43][FRA-CURRENT].
 
 Establish subsidiary status under the applicable definitions. The Companies Act includes sections 5–8 and, except for section 207D, entities classified as subsidiaries under applicable financial reporting standards. The FRA also addresses subsidiary/control classification under standards. Board control, voting rights, relevant share/dividend rights, indirect chains and the section 8 qualifications can matter. Do not equate a percentage of issued shares with every control test, or carry the standards extension into section 207D where it is expressly excluded. [Companies Act, s198][C198], [ss5–8][CA-DEFINITIONS], [FRA, ss5/19][FRA-CURRENT].
 
-### Select the size rule by period start
+#### Select the size rule by period start
 
 The 2025 amendment commenced on 29 September 2025, but FRA Schedule clause 8 saves the former sections 45/46 for accounting periods commencing before that date. The new subsidiary route is not applied retrospectively merely because the period ends after commencement. The corresponding XRB A2 amendment also applies to periods beginning on or after 29 September 2025. [Amendment Act, ss2/108/111 and Schedule6][REGSYSTEMS2025], [FRA, Schedule cl8][FRA-CURRENT], [former s45][FRA-PREV45], [XRB A2, para27][XRB-A2-CURRENT].
 
@@ -145,7 +123,7 @@ The 2025 amendment commenced on 29 September 2025, but FRA Schedule clause 8 sav
 
 For example, an ordinary 1 April 2025–31 March 2026 period uses the former rule. For an established annual 31 March cycle, its 2 preceding periods are the years ending 31 March 2024 and 31 March 2025. Verify the actual dates rather than assuming that cycle.
 
-### Direct 2-period tests
+#### Direct 2-period tests
 
 | Entity category | Assets test | Revenue test |
 |---|---|---|
@@ -156,7 +134,7 @@ Either the complete assets test or the complete revenue test suffices. Equality 
 
 For periods beginning on or after 29 September 2025, section 45(2A) adds a separate route: an entity has, at its balance date, at least 1 subsidiary that is large **under subsection (1)** for that same accounting period if the entity is within the subsection (1) category, or large **under subsection (2)** for that same period if the entity is within the subsection (2) category. Establish the subsidiary's applicable test and evidence. Do not simplify this to 'any large subsidiary', and do not assume that a subsidiary large solely under subsection (2A) satisfies the specified (1)/(2) condition. [Current s45(2A)][FRA45], [XRB A2, para6A][XRB-A2-HTML].
 
-### Measure before comparing
+#### Measure before comparing
 
 FRA section 47 requires the relevant threshold standard to be applied. Under XRB A2 paragraphs 8–13:
 
@@ -168,7 +146,7 @@ FRA section 47 requires the relevant threshold standard to be applied. Under XRB
 
 Retain the reconciliation from source records to each measured amount, basis and adjustments. An unexplained amount is Needs Input rather than an assumed zero. [FRA, s47][FRA-CURRENT], [XRB A2, paras8–13][XRB-A2-HTML], [prior A2, paras8–13][XRB-A2-PRIOR].
 
-## Inactive-entity override
+### Inactive-entity override
 
 An entity is not large for a period under FRA section 45(3) only if it is inactive for that period **and** delivers the prescribed declaration to the Registrar within 5 months after period end. Inactivity requires, during the period, no derived/deemed income, no expenses and no disposed/deemed-disposed assets, plus no subsidiaries at period end or all subsidiaries inactive. Apply all conditions. [FRA, s45(3)–(5)][FRA45].
 
@@ -178,7 +156,7 @@ Regulation 9 prescribes the Schedule declaration form. It requires 2 directors o
 
 This override removes the **large** route. Recheck independent public-entity, shareholder-count, opt-in and other-enactment duties. It does not waive section 194 accounting records, tax obligations or the separate Companies Office annual return. [Companies Act, ss194/200/206/208][C194], [preparation][C200], [audit][C206], [annual report][C208].
 
-## Voting shareholders and period-specific choices
+### Voting shareholders and period-specific choices
 
 Count holders of voting shares at the close of the first day of the accounting period. Joint holders of a parcel count as 1 shareholder. Section 198 requires a currently exercisable meeting-voting right and excludes rights exercisable only on the specified default, class-right, liquidation or inconsequential-control matters. Reconcile the register and actual rights; a later register snapshot or headcount of all investors is insufficient. [Companies Act, ss198/199][C198], [count][C199].
 
@@ -194,7 +172,7 @@ The opting period runs from period start to the earliest of: 6 months after that
 
 Keep eligibility, voting entitlement, meeting validity, notice/service and the exact provision/period in the working paper. A generic 75% resolution, a bare email agreement or a prior year's election is not sufficient evidence for these statutory conditions. Hold any proposed substitute mechanism for separately verified authority. Do not import the votes-cast denominator into section 207K's voting-share test, section 208(4)'s annual-report agreement or section 211(3)'s permitted-omission agreement.
 
-## Preparation and parent-group exceptions
+### Preparation and parent-group exceptions
 
 For the ordinary domestic scope, sections 201/202 apply where the company is large or a public entity, where it has 10+ shareholders without a valid relevant section 207I opt-out, or where a relevant section 207K opt-in applies. An out-of-scope regime must be resolved first. [Sections197/200][C197], [preparation gate][C200].
 
@@ -207,7 +185,7 @@ The parent-group exceptions have conditions of their own:
 
 Retain the parent's status, actual completed full-group statements, balance-date match and opt-in search. A parent promise, partial subgroup report or merely having an overseas parent cannot establish the exception. Check section 207D's distinct registration exception separately; it adds completion/signature timing and actual group-statement/auditor-report registration or lodgement conditions. [Sections200/202][C200], [group exception][C202], [registration exception][C207D].
 
-## XRB accounting tier is a separate decision
+### XRB accounting tier is a separate decision
 
 XRB A1 applies when the entity prepares or opts under an enactment to prepare GPFR under XRB standards. Confirm the actual for-profit/public-benefit classification, public accountability, sector, period and election. Public accountability includes the specified publicly traded/in-process instruments and broad fiduciary holding as a primary business; the NZ FMC rules and qualifications also matter. Incidental holding does not by itself settle public accountability. Refer uncertain status for qualified determination. [XRB A1, paras2–13][XRB-A1-CURRENT].
 
@@ -219,7 +197,7 @@ Record the applicable version and any early adoption. The official A1 index iden
 
 The instrument titled '2025 Amendments' was issued in June 2026, published on 19 June 2026 and took effect on 17 July 2026. Its mandatory application begins with the first period **beginning on/after 1 January 2027**, continuing thereafter. Early adoption requires a period beginning before that mandatory date which does not end before 17 July 2026, first application in that period's report and disclosure that the standard was applied. It applies in following periods too. The new public-accountability wording cannot be selected merely because today's date is after 17 July 2026. The public sector expense-threshold amendment is distinct from FRA's statutory assets/revenue tests. [XRB2026/55, paras0.5/0.6 and amendments][XRB-A1-AMEND].
 
-## Audit, auditor and report controls
+### Audit, auditor and report controls
 
 For the ordinary domestic scope, section 207 applies through section 206 to large companies, public entities, 10+ shareholder companies without a valid relevant section 207I opt-out and fewer-than-10 companies with a relevant section 207K opt-in, subject to the valid section 207J large-company opt-out. It requires a qualified auditor to audit the statements prepared under sections 201/202/204, **if any**. Do not invent an audit of nonexistent statements merely from a selected audit provision, or treat an exemption from this section as an exemption from every enactment. [Sections206][C206], [207][C207], [207J][C207J].
 
@@ -231,7 +209,7 @@ Where an enactment requires audit, section 207P governs appointment at the annua
 
 Audit and report must follow applicable auditing/assurance standards; the auditor reports to shareholders. If the auditor's report indicates Companies Act non-compliance, the auditor must send the report and relevant statements to **both** the Registrar and XRB within 7 working days after signing. This is a separate reporting duty, not a general extension to the filing deadline. [Sections207A][C207A], [207B][C207B], [207C][C207C].
 
-## Registration of financial statements
+### Registration of financial statements
 
 For a domestic company, section 207D(1)(b) requires **large** status and shares carrying, in aggregate, the right to exercise/control at least **25% of meeting voting power**, held by the listed categories: a body corporate incorporated outside NZ, its subsidiary or a person not ordinarily resident in NZ. Reconcile the actual holders, categories and powers without double counting. This is not investor headcount, a generic beneficial-ownership percentage or the separate section 45 overseas-subsidiary test. [Section207D][C207D].
 
@@ -241,13 +219,13 @@ Section 207D(2)'s parent exception requires the specified NZ-incorporated/regist
 
 Where section 207E applies, deliver for registration within 5 months after balance date the statements completed under sections 201/202/204, **if any**, and auditor's report, **if any**, with any prescribed fee. Resolve the actual document set and filing mechanics before claiming readiness, especially where a parent preparation exception applies but the parent registration exception is not evidenced. No generic requirement to create an otherwise exempt standalone statement is inferred here. [Section207E][C207E].
 
-## Annual report to shareholders
+### Annual report to shareholders
 
 Section 208 has its own gate: large company, public entity, company subject to the specified FMC/FRA reporting, 10+ shareholders without a valid relevant section 207I opt-out or fewer than 10 with a relevant section 207K opt-in. The board must prepare the annual report within 5 months after balance date. It is distinct from the Companies Office annual return and from a copy of financial statements alone. [Section208][C208].
 
 For a **large company**, section 208(4) removes the annual-report preparation duty only where no company/group statements are required under Part 11, FMC Part 7 **or any other enactment**, and holders of at least **95% of voting shares** agree for that period. A parent preparation exception alone, an audit opt-out or 95% of votes cast is insufficient. [Section208(4)][C208].
 
-### Contents and permitted omissions
+#### Contents and permitted omissions
 
 The annual report must be written and dated. Subject to the precise section 211(3) agreement, it includes:
 
@@ -258,7 +236,7 @@ The annual report must be written and dated. Subject to the precise section 211(
 
 Holders of at least **95% of voting shares** may agree to omit **only** section 211(1)(a), (e)–(j) and subsection (2). This does not remove the written/dated requirement, required financials/audit/climate matters or signature. It does not waive preparation of the whole annual report. Section 211A is repealed and supplies no blanket inactive-company waiver. [Sections211][C211], [211A][C211A].
 
-### Distribution and electronic access
+#### Distribution and electronic access
 
 Under section 209, send every shareholder a copy of the annual report **or** the prescribed notice at least **20 working days before the annual meeting**. If no annual meeting is required under section 120(5) or 122(4), send it within **20 working days after the report is prepared**. Establish the actual no-meeting authority; choosing not to meet is insufficient. Section 209(1) does not apply when section 208 does not require the annual report, subject to the actual conditions. [Section209][C209].
 
@@ -270,7 +248,7 @@ Maintain electronic availability as described in the notice at all reasonable ti
 
 A shareholder may give/revoke a written document waiver, but purporting to waive **both** the annual-report copy and notice is invalid where the duty applies. Retain each actual waiver and check its scope. The accidental-omission rule concerning validity of proceedings is not a substitute for compliant delivery. The FMC-specific alternative in section 209C requires separate work. [Sections212][C212], [213][C213], [209C][C209C].
 
-## Tax statements, records and calendar
+### Tax statements, records and calendar
 
 If no company/group statements are prepared under the Companies Act or FMC Part 7 but statements are prepared under/for Inland Revenue Acts, a shareholder may request them in writing at any time. Section 207F requires a free copy within **10 working days**, with auditor's report if any. This is not an audit-request power under section 207G. Maintain section 194 accounting records and separately establish tax-statement obligations, which this guide does not compute. [Sections207F][C207F], [207G][C207G], [194][C194], [195][C195].
 
@@ -287,7 +265,34 @@ If no company/group statements are prepared under the Companies Act or FMC Part 
 
 The calendar does not replace eligibility, document or authority checks. Apply actual statutory time-calculation rules, holidays and service facts. No deadline is certified from the synthetic offsets below.
 
-## Synthetic worked cases and self-checks
+## Rates, bands and thresholds
+
+This table gathers the selected figures; apply their full conditions and period gates in the substantive sections, not the numbers alone.
+
+| Figure/control | Selected amount or period | Source |
+|---|---|---|
+| Direct ordinary-category size | Assets exceed $66m at each of 2 preceding balance dates, or revenue exceeds $33m in each of 2 preceding periods | [Section45(1)](https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/), [former s45](https://www.legislation.govt.nz/act/public/2013/101/en/2022-10-27/sections/DLM5206501/); [Companies Office, who needs to submit financial statements](https://companies-register.companiesoffice.govt.nz/help-centre/financial-reporting/who-needs-to-submit-financial-statements/) |
+| Direct overseas-company/subsidiary size | Corresponding $22m assets or $11m revenue, with the same strict 2-observation test | [Section45(2)](https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/), [former s45](https://www.legislation.govt.nz/act/public/2013/101/en/2022-10-27/sections/DLM5206501/); [Companies Office, who needs to submit financial statements](https://companies-register.companiesoffice.govt.nz/help-centre/financial-reporting/who-needs-to-submit-financial-statements/) |
+| New subsidiary size route | Periods commencing on/after 29 September 2025; exact (1)/(2) child test | [Schedule saving](https://www.legislation.govt.nz/act/public/2025/11/en/latest/), [s45(2A)](https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/) |
+| Minimal inactive costs/interest | Paragraph (b) costs no more than $50; interest disregarded only up to those costs | [Section45(5)](https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/) |
+| Inactive declaration | Within 5 months after period end | [Section45(3)](https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/); [Companies Office, who needs to submit financial statements](https://companies-register.companiesoffice.govt.nz/help-centre/financial-reporting/who-needs-to-submit-financial-statements/) |
+| Shareholder-count split | 10+ versus fewer than 10, counted at close of period's first day | [Sections199/200](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320887/), [preparation](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320893/) |
+| Opting period | Earliest 6 months after start, annual meeting in period or qualifying short-period balance date | [Section207H](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041581/) |
+| Opt-out votes | At least 95% of entitled votes cast; eligibility and meeting conditions apply | [Sections207I](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041583/), [207J](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041584/) |
+| Opt-in holding/timing | At least 5% voting shares; no later than 5 working days before opting-period end | [Section207K](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041585/) |
+| Financial statements/signature | Complete/date/sign within 5 months after balance date; 2 directors or sole director | [Sections201](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320894/), [202](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320895/) |
+| Registration voting power/deadline | At least 25% meeting voting power in specified holder categories, plus large status; deliver within 5 months after balance date | [Sections207D](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041571/), [207E](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041575/) |
+| Ordinary-residence limb for registration | Domicile, or specified living/usual-place test over immediately preceding 12 months | [Section207D(3)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041571/) |
+| Registrar auditor-appointment notification | Casual vacancy unfilled for 1 month is one appointment-power route; notify within 5 working days after power arises | [Section207Q](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041592/) |
+| Auditor's non-compliance report | Within 7 working days after signing, to Registrar and XRB | [Section207C](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041569/) |
+| Annual report | Prepare within 5 months after balance date; required board signatures by 2 directors or sole director | [Sections208](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321105/), [211](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/) |
+| Annual-report waiver/permitted omissions | At least 95% voting shares, with the separate statutory conditions | [Sections208(4)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321105/), [211(3)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/) |
+| Employee remuneration/benefits disclosure | At least $100,000 per annum, in $10,000 bands, excluding directors from that employee count | [Section211(1)(g)](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/) |
+| Shareholder distribution/copy request | 20-working-day dispatch rules; 15-working-day request window; fulfil timely request as soon as practicable | [Sections209](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321107/), [209A](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321111/) |
+| Tax statements on written request | Free within 10 working days, report if any | [Section207F](https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041577/) |
+| XRB A1 June2026 amendment | Effective 17 July 2026; mandatory periods beginning on/after 1 January 2027, qualified early adoption | [XRB2026/55](https://www.xrb.govt.nz/dmsdocument/6091/) |
+
+## Worked cases
 
 These cases use invented facts, no client data and independently assumed legal/calendar facts where stated. The executable blocks check arithmetic only; they do not establish statutory classification, valid resolutions, GAAP amounts or working-day calendars. Complete the accompanying decision trace and obtain qualified review.
 
@@ -550,7 +555,20 @@ tolerance: 0
 
 Assume no Companies Act/FMC statements are prepared, but tax statements are prepared under/for Inland Revenue Acts. A shareholder's written section 207F request requires a free copy within 10 working days, with an auditor's report if any. A reporting opt-out does not eliminate this access duty or section 194 records. A Companies Office annual-return obligation must be checked separately, not marked satisfied by tax-statement delivery.
 
-## Reviewer handoff and completion record
+## When to refuse or refer
+
+Apply every loaded catalogue, including the universal R-REVIEWER-MISSING and R-CONTENT-MISMATCH triggers and their exact loaded messages. Include each code's cleared/fired result and reason in the refusal trace. The following additional codes are defined for this selected core. When one fires, reproduce its message verbatim, explain the affected work and state the evidence/content needed. A hold on one decision does not establish another decision.
+
+| Code | Trigger | Verbatim message |
+|---|---|---|
+| R-NZ-REPORT-REGIME | The requested company/period requires an out-of-scope or unverified reporting regime or applicable standard. | This company or reporting period requires reporting content outside this guide's verified scope. I cannot determine the affected duties from this guide. Load the applicable source-verified content and obtain qualified review before continuing that work. |
+| R-NZ-REPORT-EVIDENCE | A requested size, election, exception, tier, audit, registration or report conclusion depends on missing/conflicting period, amount, rights, authority or delivery evidence. | Needs Input: the evidence required for this reporting decision is missing or conflicting. I cannot classify the company or apply the affected election or exception until the identified evidence is resolved. |
+| R-NZ-FS-INCOMPLETE | Statement preparation or financial-statement workflow completion is requested whilst any mandatory country slot or required output is unsupported. | This selected reporting core is an incomplete companion for financial statement preparation. Do not begin statement drafting or mark the workflow complete. Load source-verified content for all mandatory country slots and retain every required output and professional review. |
+| R-NZ-REPORT-CERTIFICATION | The user asks these working papers to establish an actual exemption, audit, signature or filing without the required professional authority, final documents or evidence. | I cannot certify an exemption, audit, signature or filing from these working papers. A qualified professional must verify the actual authority, final documents and evidence. |
+
+## Completion checklist
+
+### Reviewer handoff and completion record
 
 For each company/period, show the evidence and decision for: legal regime; period/version; subsidiary/control perimeter; both size tests and any (2A)/inactive route; first-day shareholder count; each election; individual/group preparation and parent exceptions; accounting tier and adoption; audit/qualified auditor/appointment; registration; annual report, permitted omissions and distribution; tax-statement access; and each calendar event. Cross-reference contrary evidence and unresolved matters rather than silently choosing a convenient answer.
 
@@ -558,7 +576,7 @@ The professional must review the actual source conditions, GAAP basis, resolutio
 
 Related selected company work: [register and annual return](nz-company-register-core.md), [capital, records and shareholder decisions](nz-company-capital-records-core.md) and [ordinary company IR4](nz-company-income-tax-ir4.md). Each retains its own scope, periods and completion gates.
 
-## Topical self-check and revision record
+### Topical self-check and revision record
 
 Before delivering any permitted working paper, complete the universal and domain checks and record these additions:
 
@@ -573,9 +591,83 @@ Before delivering any permitted working paper, complete the universal and domain
 
 Revision: v0.1, 14 November 2026. Initial selected reporting-readiness core, period-specific size/standards controls and synthetic cases; source-cited tier 2 pending practitioner review. No full reporting-topic completion is recorded.
 
-## Primary sources
+## Sources
 
-Sources were checked on 14 November 2026. 'Latest' statute links can change; retain the consolidation, amendment/application and period evidence used. XRB compilations and the 2026 amendment have distinct effective/application conditions described above.
+The author (Ryan Duguid) checked every source on 14 November 2026. The conformer re-read the Companies Office financial-statements page and the XRB A1 index on 14 November 2026; legislation.govt.nz refused automated fetches that day (HTTP 403), so the statute rows rest on the author's reading.
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| C197: Companies Act 1993, s 197. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320884/ | Scope, Preparation and parent-group exceptions | 2026-11-14 |
+| FRA-CURRENT: Financial Reporting Act 2013 (consolidation 5 April 2026). Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/ | Scope, Accounting periods, subsidiaries and statutory size, Audit, auditor and report controls | 2026-11-14 |
+| XRB-A1-CURRENT: XRB A1, February 2025 compilation. Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/5470/ | Scope, XRB accounting tier is a separate decision | 2026-11-14 |
+| CA-VERSION: Companies Act 1993, version and warnings tab. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320887/?active_tab=version | Scope | 2026-11-14 |
+| B126V5: Deposit Takers Act 2023, amendments to the Companies Act. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469579/ | Scope | 2026-11-14 |
+| B126V3: Deposit Takers Act 2023, commencement. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469452/ | Scope | 2026-11-14 |
+| B126V6: Employment Leave Act 2026, amendments. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS1506038/ | Scope | 2026-11-14 |
+| B126V4: Employment Leave Act 2026, commencement. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS737990/ | Scope | 2026-11-14 |
+| B126V2: Address information Act 2025 No 67. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2025/67/en/latest/ | Scope | 2026-11-14 |
+| B126V7: Address information regulations 2026/319. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ | Scope | 2026-11-14 |
+| FRA-VERSION: Financial Reporting Act 2013, s 45 version and warnings tab. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/?active_tab=version | Scope | 2026-11-14 |
+| LAA2026: Legislation Amendment Act 2026, s 2 and Schedule 4. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2026/7/en/latest/ | Scope | 2026-11-14 |
+| C198: Companies Act 1993, s 198. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320886/ | Accounting periods, subsidiaries and statutory size, Voting shareholders and period-specific choices, Registration of financial statements | 2026-11-14 |
+| CA-DEFINITIONS: Companies Act 1993, ss 5 to 8 (consolidation 1 July 2025). Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/ | Accounting periods, subsidiaries and statutory size, Registration of financial statements | 2026-11-14 |
+| REGSYSTEMS2025: Regulatory Systems (Economic Development) Amendment Act 2025, ss 2, 108, 111 and Schedule 6. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2025/11/en/latest/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| FRA-PREV45: Financial Reporting Act 2013, former s 45 (version of 27 October 2022). Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/2022-10-27/sections/DLM5206501/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| XRB-A2-CURRENT: XRB A2 (current). Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/5793/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| FRA45: Financial Reporting Act 2013, s 45. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM5206501/ | Accounting periods, subsidiaries and statutory size, Inactive-entity override | 2026-11-14 |
+| INFLATION2021: Financial reporting threshold (inflation adjustment) regulations 2021/307. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2021/307/en/latest/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| XRB-A2-HTML: XRB A2, Standards Navigator. Read for the provision as cited (author's reading) | https://standards.xrb.govt.nz/standards-navigator/xrb-a2/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| XRB-A2-PRIOR: XRB A2 (prior). Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/4303/ | Accounting periods, subsidiaries and statutory size | 2026-11-14 |
+| INACTIVE-REGS: Financial Reporting Regulations 2015, reg 9 and Schedule. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/regulation/public/2015/0117/latest/DLM6479993.html | Inactive-entity override | 2026-11-14 |
+| INACTIVE-GUIDANCE: Companies Office, who needs to submit financial statements. Read for the $66m/$33m and $22m/$11m tests in force from 29 September 2025, the large-subsidiary route, the 5-month deadline and the inactive declaration | https://companies-register.companiesoffice.govt.nz/help-centre/financial-reporting/who-needs-to-submit-financial-statements/ | Inactive-entity override | 2026-11-14 |
+| LODGE-DOCUMENTS: Companies Office, lodging other documents. Read for the provision as cited (author's reading) | https://companies-register.companiesoffice.govt.nz/help-centre/managing-your-online-account/lodging-other-documents/ | Inactive-entity override | 2026-11-14 |
+| C194: Companies Act 1993, s 194. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320874/ | Inactive-entity override, Tax statements, records and calendar | 2026-11-14 |
+| C200: Companies Act 1993, s 200. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320893/ | Inactive-entity override, Preparation and parent-group exceptions | 2026-11-14 |
+| C206: Companies Act 1993, s 206. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321101/ | Inactive-entity override, Audit, auditor and report controls | 2026-11-14 |
+| C208: Companies Act 1993, s 208. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321105/ | Inactive-entity override, Annual report to shareholders | 2026-11-14 |
+| C199: Companies Act 1993, s 199. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320887/ | Voting shareholders and period-specific choices | 2026-11-14 |
+| C207H: Companies Act 1993, s 207H. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041581/ | Voting shareholders and period-specific choices | 2026-11-14 |
+| C207I: Companies Act 1993, s 207I. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041583/ | Voting shareholders and period-specific choices | 2026-11-14 |
+| C207J: Companies Act 1993, s 207J. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041584/ | Voting shareholders and period-specific choices, Audit, auditor and report controls | 2026-11-14 |
+| C207K: Companies Act 1993, s 207K. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041585/ | Voting shareholders and period-specific choices | 2026-11-14 |
+| C201: Companies Act 1993, s 201. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320894/ | Preparation and parent-group exceptions | 2026-11-14 |
+| C202: Companies Act 1993, s 202. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320895/ | Preparation and parent-group exceptions | 2026-11-14 |
+| C207D: Companies Act 1993, s 207D. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041571/ | Preparation and parent-group exceptions, Registration of financial statements | 2026-11-14 |
+| XRB-A1-INDEX: XRB A1 index page. Read for the A1 compilations and application dates (1 January 2026 and 1 January 2027) | https://www.xrb.govt.nz/standards/accounting-standards/for-profit-entities/xrb-a1/ | XRB accounting tier is a separate decision | 2026-11-14 |
+| XRB-A1-PRIOR: XRB A1, March 2024 compilation. Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/5156/ | XRB accounting tier is a separate decision | 2026-11-14 |
+| XRB-A1-NEXT: XRB A1, June 2026 compilation. Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/5969/ | XRB accounting tier is a separate decision | 2026-11-14 |
+| XRB-A1-AMEND: XRB 2026/55, 2025 Amendments to XRB A1. Read for the provision as cited (author's reading) | https://www.xrb.govt.nz/dmsdocument/6091/ | XRB accounting tier is a separate decision | 2026-11-14 |
+| C207: Companies Act 1993, s 207. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321102/ | Audit, auditor and report controls | 2026-11-14 |
+| C207E: Companies Act 1993, s 207E. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041575/ | Audit, auditor and report controls, Registration of financial statements | 2026-11-14 |
+| C211: Companies Act 1993, s 211. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321118/ | Audit, auditor and report controls, Annual report to shareholders | 2026-11-14 |
+| FRA35: Financial Reporting Act 2013, s 35. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM4632944/ | Audit, auditor and report controls | 2026-11-14 |
+| FRA37: Financial Reporting Act 2013, s 37. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2013/101/en/latest/sections/DLM4632947/ | Audit, auditor and report controls | 2026-11-14 |
+| C207P: Companies Act 1993, s 207P. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041591/ | Audit, auditor and report controls | 2026-11-14 |
+| C207Q: Companies Act 1993, s 207Q. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041592/ | Audit, auditor and report controls | 2026-11-14 |
+| C207R: Companies Act 1993, s 207R. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041593/ | Audit, auditor and report controls | 2026-11-14 |
+| C207T: Companies Act 1993, s 207T. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041595/ | Audit, auditor and report controls | 2026-11-14 |
+| C207A: Companies Act 1993, s 207A. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041565/ | Audit, auditor and report controls | 2026-11-14 |
+| C207B: Companies Act 1993, s 207B. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041568/ | Audit, auditor and report controls | 2026-11-14 |
+| C207C: Companies Act 1993, s 207C. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041569/ | Audit, auditor and report controls | 2026-11-14 |
+| C211A: Companies Act 1993, s 211A. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321125/ | Annual report to shareholders | 2026-11-14 |
+| C209: Companies Act 1993, s 209. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321107/ | Annual report to shareholders | 2026-11-14 |
+| C209A: Companies Act 1993, s 209A. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321111/ | Annual report to shareholders | 2026-11-14 |
+| C209B: Companies Act 1993, s 209B. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321113/ | Annual report to shareholders | 2026-11-14 |
+| C212: Companies Act 1993, s 212. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321127/ | Annual report to shareholders | 2026-11-14 |
+| C213: Companies Act 1993, s 213. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321130/ | Annual report to shareholders | 2026-11-14 |
+| C209C: Companies Act 1993, s 209C. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM7077722/ | Annual report to shareholders | 2026-11-14 |
+| C207F: Companies Act 1993, s 207F. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041577/ | Tax statements, records and calendar | 2026-11-14 |
+| C207G: Companies Act 1993, s 207G. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041579/ | Tax statements, records and calendar | 2026-11-14 |
+| C195: Companies Act 1993, s 195. Read for the provision as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320875/ | Tax statements, records and calendar | 2026-11-14 |
+
+Author's source note, kept as written: Sources were checked on 14 November 2026. 'Latest' statute links can change; retain the consolidation, amendment/application and period evidence used. XRB compilations and the 2026 amendment have distinct effective/application conditions described above.
+
+
+<!-- openaccountants-cta-block -->
+
+---
+
+Not yet confirmed: the Companies Act 1993 and Financial Reporting Act 2013 rows could not be opened on 14 November 2026 and rest on the author's reading of the 1 July 2025 and 5 April 2026 consolidations; the issue and publication dates of the XRB A1 2025 Amendments (19 June 2026 publication, 17 July 2026 effect) are the author's reading of XRB 2026/55, and the XRB A1 index read on 14 November 2026 shows the 1 January 2027 application date but no issue date; the address-information transition from 18 November 2026; working-day calendars, fees and penalties for registration. No accountant has reviewed this draft.
 
 [C197]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320884/
 [FRA-CURRENT]: https://www.legislation.govt.nz/act/public/2013/101/en/latest/
@@ -639,23 +731,3 @@ Sources were checked on 14 November 2026. 'Latest' statute links can change; ret
 [C207F]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041577/
 [C207G]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041579/
 [C195]: https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320875/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

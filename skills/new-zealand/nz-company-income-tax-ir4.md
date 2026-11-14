@@ -1,49 +1,92 @@
 ---
 name: nz-company-income-tax-ir4
-description: "Use for an ordinary New Zealand resident company’s 2025-26 income-tax reconciliation and 2026 IR4 filing handoff. Trigger on company tax, IR4, company income tax, residual income tax, company withholding credits or accounting profit to taxable income. Covers an evidenced ordinary company-rate base, selected return boxes, credit ordering, actual provisional payments and refund limitations. It requires confirmed company status, residence, balance date and supported adjustments. It does not determine special regimes, loss eligibility, cross-border treatment, full imputation-account operations or Companies Office reporting. Produce working papers for qualified review, not an automatically filed return."
+description: "Use for an ordinary New Zealand resident company's income-tax reconciliation and IR4 filing handoff: the 2025-26 year on the 2026 IR4 (being filed now, to 31 March 2027 with an extension of time) and the 2026-27 year (IRD's 2027 income year) at the same 28% rate. Trigger on company tax, IR4, company income tax, residual income tax, company withholding credits or accounting profit to taxable income. Covers an evidenced ordinary company-rate base, selected return boxes, credit ordering, actual provisional payments and refund limitations. It requires confirmed company status, residence, balance date and supported adjustments. It does not determine special regimes, loss eligibility, cross-border treatment, full imputation-account operations or Companies Office reporting. Produce working papers for qualified review, not an automatically filed return."
 jurisdiction: NZ
 category: international
 tier: 2
-review_status: pending_review
 tax_year: 2026
-tax_year_notes: "2025-26 ordinary resident company; standard year 1 April 2025 to 31 March 2026; 2026 IR4"
-last_updated: 2026-11-13
-version: 0.1
+tax_year_notes: "2026-27 income year (1 April 2026 to 31 March 2027, IRD's 2027 income year) for the rate and dates; the box mapping is the 2026 IR4 for the 2025-2026 filing cycle (1 April 2025 to 31 March 2026), because IRD has not published a 2027 IR4"
+last_updated: 2026-11-14
+version: 0.2
+domain: tax
+type: computation
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company income tax and IR4 v0.1
+# New Zealand company income tax and IR4 v0.2
 
-## Scope and period
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This source-cited working-paper guide covers an ordinary New Zealand resident company’s 2026 IR4 for 1 April 2025 to 31 March 2026, with a confirmed 31 March balance date. Confirm the entity, tax residence, ordinary company-rate status and every material income, deduction, credit and payment. A company name or incorporation alone does not establish all tax conditions. Load both workflow bases; their intake, source gates, refusals, outputs and qualified-review requirements apply.
+Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. Tax year 2026 here means the New Zealand 2026-27 income year, 1 April 2026 to 31 March 2027, which IRD calls the 2027 income year. The return being filed now is the 2026 IR4 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle); IRD's IR4 page lists the 2026 return and guide and no 2027 return yet ([IR4 page](https://www.ird.govt.nz/ir4), read 2026-11-14). The box mapping below is therefore the 2026 form. Use it for a 2026-27 return only after checking the 2027 IR4 when IRD publishes it.
+
+## Scope
+
+This source-cited working-paper guide covers an ordinary New Zealand resident company's 2026 IR4 for 1 April 2025 to 31 March 2026, with a confirmed 31 March balance date. Confirm the entity, tax residence, ordinary company-rate status and every material income, deduction, credit and payment. A company name or incorporation alone does not establish all tax conditions. Load both workflow bases; their intake, source gates, refusals, outputs and qualified-review requirements apply.
 
 The selected core reconciles supported accounting-to-tax adjustments, ordinary business income, established NZ interest/dividend amounts, losses already verified as available, permitted credits and actual provisional payments. An accounts entry, supplier name or bank narration does not prove treatment. Keep unresolved items and amounts in the reconciliation. Do not silently omit them, use unproved zeros or present incomplete figures as a complete return.
 
-The Income Tax Act consolidation checked is dated 4 September 2026. BB 1, BC 4–6, Schedule 1 Part A clause 2 and the annual-rates Act’s section 3 establish the selected 2025-26 charge, base and ordinary rate. The live 13-source unincorporated-amendment set was matched to retained texts screened for these provisions. This is a scoped check, not whole-Act assurance. The currently served form and guide are IR4 2026 and April 2026 IR4GU. [ITA core][S6], [Schedule 1][S7], [annual rates][S8], [IR4][S1], [IR4GU][S2].
+The Income Tax Act consolidation checked is dated 4 September 2026. BB 1, BC 4–6, Schedule 1 Part A clause 2 and the annual-rates Act's section 3 establish the selected 2025-26 charge, base and ordinary rate. The live 13-source unincorporated-amendment set was matched to retained texts screened for these provisions. This is a scoped check, not whole-Act assurance. The currently served form and guide are IR4 2026 and April 2026 IR4GU. [ITA core][S6], [Schedule 1][S7], [annual rates][S8], [IR4][S1], [IR4GU][S2].
 
 Non-residents, dual residence, branches, LTCs, Māori authorities, PIEs/funds, charities, qualifying-company regimes, groups/subventions, property regimes, financial-arrangement determinations, foreign/CFC/FIF income, FITC, R&D/other incentives, restructuring, Pillar Two, full ICA operations and deferred-tax recognition require separate current analysis. Unknown applicability requires Needs Input. This guide supplies no zero-rate or inapplicability conclusion for them. Companies Office incorporation, annual returns and statutory financial reporting remain separate obligations.
 
-## Filing, payment and schedule handoffs
+**Years covered.**
+
+- **2025-26 (2026 IR4, the 2025-2026 filing cycle):** 1 April 2025 to 31 March 2026. Return due 7 July 2026, or 31 March 2027 for a tax agent's client with a valid extension of time; end-of-year (terminal) tax due 7 February 2027 ([IR328 2026-27 calendar][S12]).
+- **2026-27 (IRD's 2027 income year):** 1 April 2026 to 31 March 2027. The 28% ordinary company rate is unchanged on IRD's business rates page, which states no year ([business rates][S4]). Return and payment dates follow the same rules one year on (see the rates table). The 2027 IR4 and its guide are not published, so no 2027 box mapping is given.
+
+
+## Ask the client first
+
+Get these facts before computing; each one changes the answer.
+
+- Is the company a New Zealand resident ordinary company (not an LTC, Maori authority, PIE, charity or other special regime), and what is its balance date?
+- Which income year is the return for: 2025-26 (2026 IR4) or 2026-27 (2027 IR4)?
+- Does it have a tax agent with an extension of time, and is it actually linked to that agent's list?
+- Approved accounts or trial balance showing profit before tax, and the supported list of add-backs and deductions?
+- Any losses brought forward, donations, NZ interest or dividends with RWT or imputation credits, and foreign income?
+- Which provisional tax payments were actually made for this year, on what dates?
+
+Complete both bases' corporate intake and establish:
+
+- Entity, tax residence, ordinary status, year/balance date, agent and extension evidence.
+- Approved accounts/trial balance, business ledger, GST treatment and a complete profit-before-tax bridge to each return income category.
+- Each adjustment's amount, direction, legal source, operative period and record; donations, current/prior losses and group/subvention amounts, including evidenced absence where appropriate.
+- Gross interest/dividend statements and recognition analysis; RWT/imputation schedules and each credit's allowed amount/year. Company financial-arrangement timing is not established by cash receipt or withholding alone. [IR4GU pp 12–14,30][S2].
+- Return-year tax-account payments, reversals, transfers and allocations. An assessed or scheduled liability is not proof of payment.
+- ICA opening/movements/closing, required annual/interim returns and refund conditions; shareholder/director remuneration, current accounts and additional schedules.
+- Foreign/property/group/special-regime/incentive/audit/notice/restructuring/overlay facts. Run the bases' refusals first.
+
+Demonstrations use hypothetical data. They need no credentials, ID documents or bank-account details.
+
+## The method, step by step
+
+1. **Confirm the company and the year** (Scope, Ask the client first). Stop under NZ-CIT-STATUS if the regime, residence, year or balance date is unknown.
+2. **Diary filing and payment** for the year (Filing, payment and schedule handoffs, and the rates table).
+3. **Bridge accounting profit to taxable income** (Reconcile income and deductions), one supported adjustment at a time.
+4. **Apply 28% and the credits in the form's order** (Apply tax and credits in order), then deduct actual provisional tax paid.
+5. **Check refund and schedule conditions** (Complete refund and schedule checks), including the imputation return on IR4 page 7.
+6. **Run the refusals and the completion checklist** before handing the working papers to a qualified reviewer.
+
+### Filing, payment and schedule handoffs
 
 Active resident companies generally file IR4 each year; LTCs file IR7. Zero tax does not make a company non-active. An accepted non-active declaration and all applicable conditions must be established before treating filing as excused. IRD identifies income, deductions, asset disposals, relevant transactions, GST cessation and group-withdrawal conditions. Do not infer an exemption, stop returns or cease another registration merely from no sales. [IR4GU p 5][S2], [Non-active companies][S5].
 
 | Item | Selected standard-year rule | Condition |
 | --- | --- | --- |
 | 2026 IR4 filing | 7 July 2026 | Unless a valid extension applies |
-| Agent filing extension | May extend to 31 March 2027 | Confirm the company’s actual extension; agent engagement is not itself proof |
+| Agent filing extension | May extend to 31 March 2027 | Confirm the company's actual extension; agent engagement is not itself proof |
 | 2026 terminal income tax | Nominal 7 February 2027; 9 February 2027 after the Sunday and observed 8 February holiday | Calendar derivation; confirm actual myIR conditions |
 | Extended terminal payment | May extend to 7 April 2027 | Confirm applicable agent/extension conditions |
 | Ordinary 2027 provisional dates | Generally 28 August 2026, 15 January 2027 and 7 May 2027 | Dates alone do not establish liability/options. Six-monthly GST, ratio/AIM, initial liability and changed balance dates need separate schedules |
 
-Sources: [IR4GU pp 5,39–40][S2], [IRD payment-day rule][S9], [government 2027 calendar][S10]. Working-day adjustment applies; provincial anniversary days have a separate electronic-payment rule. Record the actual account period, deadline and extension evidence. Filing and payment are distinct. Q32/Q33 provisional completion is a separate company handoff; do not copy the individual-only 'nz-provisional-tax' guide into a company return or infer an instalment schedule from annual RIT.
+Sources: [IR4GU pp 5,39–40][S2], [IRD payment-day rule][S9], [government 2027 calendar][S10]. Working-day adjustment applies; provincial anniversary days have a separate electronic-payment rule. Record the actual account period, deadline and extension evidence. Filing and payment are distinct. Q32/Q33 provisional completion is a separate company handoff; use `nz-provisional-tax` (which covers companies as well as individuals) for options and instalment dates, and do not infer an instalment schedule from annual RIT.
 
-File in the company’s myIR income-tax account or use the applicable paper form. The public steps establish no logged-in access, portal behaviour or successful submission. A working paper is not a filed return. [File IR4][S3].
+File in the company's myIR income-tax account or use the applicable paper form. The public steps establish no logged-in access, portal behaviour or successful submission. A working paper is not a filed return. [File IR4][S3].
 
-## Rate and corporate content slots
+### Rate and corporate content slots
 
 | Slot | Supported rule or required stop |
 | --- | --- |
@@ -57,25 +100,9 @@ File in the company’s myIR income-tax account or use the applicable paper form
 | R&D, investment/IP incentives, foreign tax credit and FITC | No eligibility/cap/ordering analysis for these regimes is supplied. Obtain it separately; tax paid alone proves no foreign-credit entitlement. |
 | Filing support, reporting and audit thresholds | Complete applicable IR4 questions and IR10/accounts, shareholder and imputation handoffs. Reporting/audit exemptions and thresholds are not established here. |
 | GAAR, CFC, hybrid mismatch and other cross-border overlays | No local conclusion is verified. Relevant facts require current specialist analysis before a result. |
-| Pillar Two IIR, UTPR, QDMTT/domestic top-up | No applicability/commencement finding. Confirm the group and overlay profile; unknown is not ‘not applicable’. |
+| Pillar Two IIR, UTPR, QDMTT/domestic top-up | No applicability/commencement finding. Confirm the group and overlay profile; unknown is not 'not applicable'. |
 
 The public rate page also gives 28% for most companies; it cannot replace statutory status confirmation. [Business rates][S4]. The table states the boundaries of this limited companion; it does not establish comprehensive corporate coverage.
-
-## Intake and evidence
-
-Complete both bases’ corporate intake and establish:
-
-- Entity, tax residence, ordinary status, year/balance date, agent and extension evidence.
-- Approved accounts/trial balance, business ledger, GST treatment and a complete profit-before-tax bridge to each return income category.
-- Each adjustment’s amount, direction, legal source, operative period and record; donations, current/prior losses and group/subvention amounts, including evidenced absence where appropriate.
-- Gross interest/dividend statements and recognition analysis; RWT/imputation schedules and each credit’s allowed amount/year. Company financial-arrangement timing is not established by cash receipt or withholding alone. [IR4GU pp 12–14,30][S2].
-- Return-year tax-account payments, reversals, transfers and allocations. An assessed or scheduled liability is not proof of payment.
-- ICA opening/movements/closing, required annual/interim returns and refund conditions; shareholder/director remuneration, current accounts and additional schedules.
-- Foreign/property/group/special-regime/incentive/audit/notice/restructuring/overlay facts. Run the bases’ refusals first.
-
-Demonstrations use hypothetical data. They need no credentials, ID documents or bank-account details.
-
-## Computation and return mapping
 
 ### Reconcile income and deductions
 
@@ -85,7 +112,7 @@ Box 23 adds 12B, 13B, 14B, 15B, 16B, 18B, 19H, 20B, 21B and 22B once. Excluded i
 
 For established ordinary NZ interest, 13B holds gross taxable interest and 13A the allowed RWT/NRWT; lawful timing remains a separate condition. Gross taxable NZ dividends include cash, imputation and RWT. Apply the 28% credit ceiling to each dividend, rather than pooling credits against other income. Establish permitted allocations to Box 14 imputation and 14A RWT before populating those fields. Exempt group dividends, PIEs or uncertain allocations need separate analysis. [IR4GU pp 12–14][S2].
 
-Deduct the separately established eligible donation at 24B once, within the Box 23 income limit, to reach 25. Only a separately verified available-loss claim at 26B reduces 27. Group/subvention items at 28/28A also require verified treatment. A historical loss ledger proves no availability. Box 29 is the form’s income/loss result; preserve loss signs where required. BC 4–6 give zero net income/basic tax for a current net loss, rather than a negative income-tax charge. [IR4 p 3][S1], [IR4GU pp 30–33][S2], [BC 4–6][S6].
+Deduct the separately established eligible donation at 24B once, within the Box 23 income limit, to reach 25. Only a separately verified available-loss claim at 26B reduces 27. Group/subvention items at 28/28A also require verified treatment. A historical loss ledger proves no availability. Box 29 is the form's income/loss result; preserve loss signs where required. BC 4–6 give zero net income/basic tax for a current net loss, rather than a negative income-tax charge. [IR4 p 3][S1], [IR4GU pp 30–33][S2], [BC 4–6][S6].
 
 ### Apply tax and credits in order
 
@@ -103,7 +130,7 @@ Ordinary basic tax is established non-negative taxable income × 0.28. Determine
 | 30K | Actual properly allocated 2026 provisional tax paid, supported by the tax account. |
 | 30L | Signed workpaper balance = signed RIT − 30K. Negative indicates overpayment; the form uses absolute amount plus Refund/Tax to pay. Zero is a reconciled zero balance. |
 
-Source: [IR4 pp 2–4][S1]. Every non-zero credit requires eligibility, limit, year and allocation evidence. Unknown foreign/imputation/withholding/property fields cannot be set to zero. Never deduct a credit again after RIT, substitute assessed provisional liability for payments or use another year’s payment in 30K.
+Source: [IR4 pp 2–4][S1]. Every non-zero credit requires eligibility, limit, year and allocation evidence. Unknown foreign/imputation/withholding/property fields cannot be set to zero. Never deduct a credit again after RIT, substitute assessed provisional liability for payments or use another year's payment in 30K.
 
 Where permitted imputation exceeds 30F, (30G − 30F) ÷ 0.28 gives the arithmetic potential increase in tax loss. It establishes neither loss availability/carryforward/group use nor a cash refund. Verify the associated loss and ICA requirements separately. [IR4GU p 34][S2].
 
@@ -117,28 +144,27 @@ Determine IR10/accounts support and separate IRD financial reporting. This guide
 
 Q32/Q33 company provisional options/liability, instalments, interest, penalties and rounding need a separately verified handoff. The annual reconciliation never deducts a future provisional amount. It resolves no disputed statutory instalment allocation.
 
-## Topical refusals
-
-Base refusals remain binding. Use these additional messages verbatim and record affected amounts where known:
-
-| Code | Trigger | Message |
-| --- | --- | --- |
-| NZ-CIT-STATUS | Unknown regime, residence, year, balance date or overlay | ‘Needs Input: confirm the company’s applicable regime and period before using the ordinary IR4 calculation.’ |
-| NZ-CIT-BASE | Unsupported material income, expense, timing or adjustment | ‘Needs Input: the tax base is incomplete. Record the affected items and obtain their treatment and evidence; do not omit or zero them.’ |
-| NZ-CIT-LOSS | Unproved loss availability, continuity or group treatment | ‘Needs Input: establish the available loss and permitted use before reducing company taxable income.’ |
-| NZ-CIT-CREDIT | Unknown entitlement, per-dividend limit, allocation or year | ‘Needs Input: establish the allowable credit and its correct return field before calculating the overall tax balance.’ |
-| NZ-CIT-PAYMENT | Unreconciled payments, year, transfers or reversals | ‘Needs Input: reconcile actual return-year payments to the tax account; a scheduled liability is not a paid amount.’ |
-| NZ-CIT-REFUND | Unresolved ICA or release conditions | ‘Needs Input: the calculation shows an indicated overpayment only. Do not promise a cash refund until the imputation and account conditions are established.’ |
-| NZ-CIT-HANDOFF | Incomplete provisional, shareholder, imputation or other schedule | ‘Needs Input: complete the separately verified company schedule and reviewer handoff before treating this as a complete IR4 filing.’ |
-| NZ-CIT-SPECIAL | Excluded regime or unsupported legal question | ‘Needs Input: obtain the applicable current specialist analysis; this ordinary company core cannot decide that treatment.’ |
-
-## Defaults and reviewer controls
+### Defaults and reviewer controls
 
 No missing tax fact has a numerical or classification default. Permitted mechanical conventions are a signed workpaper balance, an evidenced zero shown as zero and a proved debit/credit mapped to the form indicator. They supply no evidence or entitlement and waive no material item.
 
 The workflow reviewer threshold is NZD 0: every financial position, including zero/loss, needs qualified review. This is a workflow control, not a statutory threshold. Unresolved law, facts and amounts always receive flags. Conditional arithmetic illustrations supply no engagement conclusion.
 
-## Worked positions
+## Rates, bands and thresholds
+
+| Item | Value | Source |
+| --- | --- | --- |
+| Ordinary company basic rate, 2025-26 and 2026-27 | 28% of taxable income ("Most companies 28%"); only where Schedule 1 Part A clause 2 applies | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses |
+| Dividend credit ceiling per dividend | 28% of the gross dividend (imputation plus RWT credits) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4gu/ir4gu-2026.pdf?modified=20260331185400 |
+| 2026 IR4 (2025-26) return due, no extension | 7 July 2026 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf |
+| 2026 IR4 return due, tax agent client with a valid extension of time | 31 March 2027 | same |
+| 2026 end-of-year (terminal) tax, no tax agent | 7 February 2027 (a Sunday, and 8 February 2027 is the observed Waitangi Day, so payment on 9 February 2027 is on time: derived from the next-business-day note on the calendar) | same |
+| 2026 end-of-year tax, tax agent client with a valid extension of time | 7 April 2027 (derived: the calendar shows 7 April 2026 for the 2025 year, the same rule one year on) | same |
+| 2027 IR4 (2026-27) return due | 7 July 2027, or 31 March 2028 with an extension of time (derived: "7 July each year" and "up to 31 March the following year") | https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements |
+| 2027 end-of-year tax (2026-27) | 7 February 2028, or 7 April 2028 with an extension of time (derived from the IR328 pattern above; 7 February 2028 is the observed Waitangi Day, so the next business day applies) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf |
+| 2026-27 provisional tax instalments, standard or estimation option, March balance date, not a 6-monthly GST filer | 28 August 2026, 15 January 2027, 7 May 2027 (the ratio option uses these as its 2nd, 4th and 6th of 6 instalments) | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax/payment-dates-for-provisional-tax |
+
+## Worked cases
 
 These hypothetical NZD cases use the 2025-26 ordinary standard-year core. Eligibility, classification, timing, adjustments and absence of other items are independently established inputs except where a diagnostic expressly stops. Arithmetic checks do not test those inputs, portal filing or practitioner approval. All indicated overpayments retain the ICA/account conditions above.
 
@@ -369,11 +395,26 @@ expected:
   signed_balance: 2400
 ```
 
-If a prior-year loss appears in the accounts but availability is unconfirmed, issue NZ-CIT-LOSS before producing a tax figure. If trading stopped but an accepted non-active exemption is not evidenced, obtain the return obligation and declaration status; do not infer that filing ceased.
+## When to refuse or refer
 
-## Output extension and self-checks
+Base refusals remain binding. Use these additional messages verbatim and record affected amounts where known:
 
-Deliver the bases’ required outputs and these company working papers:
+| Code | Trigger | Message |
+| --- | --- | --- |
+| NZ-CIT-STATUS | Unknown regime, residence, year, balance date or overlay | 'Needs Input: confirm the company's applicable regime and period before using the ordinary IR4 calculation.' |
+| NZ-CIT-BASE | Unsupported material income, expense, timing or adjustment | 'Needs Input: the tax base is incomplete. Record the affected items and obtain their treatment and evidence; do not omit or zero them.' |
+| NZ-CIT-LOSS | Unproved loss availability, continuity or group treatment | 'Needs Input: establish the available loss and permitted use before reducing company taxable income.' |
+| NZ-CIT-CREDIT | Unknown entitlement, per-dividend limit, allocation or year | 'Needs Input: establish the allowable credit and its correct return field before calculating the overall tax balance.' |
+| NZ-CIT-PAYMENT | Unreconciled payments, year, transfers or reversals | 'Needs Input: reconcile actual return-year payments to the tax account; a scheduled liability is not a paid amount.' |
+| NZ-CIT-REFUND | Unresolved ICA or release conditions | 'Needs Input: the calculation shows an indicated overpayment only. Do not promise a cash refund until the imputation and account conditions are established.' |
+| NZ-CIT-HANDOFF | Incomplete provisional, shareholder, imputation or other schedule | 'Needs Input: complete the separately verified company schedule and reviewer handoff before treating this as a complete IR4 filing.' |
+| NZ-CIT-SPECIAL | Excluded regime or unsupported legal question | 'Needs Input: obtain the applicable current specialist analysis; this ordinary company core cannot decide that treatment.' |
+
+If a prior-year loss appears in the accounts but availability is unconfirmed, issue NZ-CIT-LOSS before producing a tax figure. If trading stopped but an accepted non-active exemption is not evidenced, obtain the return obligation and declaration status (IRD's Non active company declaration, IR433, is made only after every condition has been met for a whole income year: [Non-active companies][S5]); do not infer that filing ceased.
+
+## Completion checklist
+
+Deliver the bases' required outputs and these company working papers:
 
 1. Confirmed profile, period, source library/currency, exclusions/refusals and missing-evidence register.
 2. Accounts-to-tax bridge, non-duplicated 12B–29 income/deduction map, adjustment citations and documentary index.
@@ -383,7 +424,28 @@ Deliver the bases’ required outputs and these company working papers:
 
 Complete every base self-check. Confirm the entity/year, supported base, loss availability, ordinary rate, credit cap/year/field, gross-income allocation, no duplicate donations/credits/payments, actual 30K payments, balance sign/indicator, ICA/schedules and actual deadlines/extensions. Cross-check totals with the form and accounts. Passing arithmetic cannot clear a source or evidence stop.
 
-## Primary sources and revision
+## Sources
+
+The author (Ryan Duguid) read the IRD and legislation pages on 13 November 2026; the conformer re-opened the IRD pages marked 2026-11-14. legislation.govt.nz refused automated fetches on 14 November 2026 (HTTP 403), so the statute rows rest on the author's reading.
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| S1: IR4 2026 return. Read for pp 2-4 and 6-7, the income, credit, payment, shareholder and imputation boxes | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4/ir4-2026.pdf?modified=20260331185611 | Box mapping 12B to 30L, Q32/Q33, Q40, imputation return page 7 | 2026-11-13 |
+| S2: IR4GU April 2026 guide. Read for pp 5, 8, 12-14, 27, 30-34, 39-40, 45, 49 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4gu/ir4gu-2026.pdf?modified=20260331185400 | Filing duty, dividend credit ceiling, donations, losses, refunds and ICA hold | 2026-11-13 |
+| S3: IRD, file an IR4. Read for the myIR steps and the years listed (2026 listed, 2027 not) | https://www.ird.govt.nz/ir4 | Filing route; no 2027 IR4 yet | 2026-11-14 |
+| S4: IRD, tax rates for businesses. Read for "Most companies 28%" | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses | The 28% rate (page states no year) | 2026-11-14 |
+| S5: IRD, non-active companies. Read for the non-active conditions and the IR433 declaration | https://www.ird.govt.nz/roles/companies/non-active-companies | Non-active exemption conditions | 2026-11-14 |
+| S6: Income Tax Act 2007, ss BB 1, BC 4 to BC 6 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/parts/DLM1512313/ | Charge, net income and net loss, basic tax (author's reading; page refused a fetch on 2026-11-14) | 2026-11-13 |
+| S7: Income Tax Act 2007, Schedule 1 Part A clause 2 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/parts/DLM1523173/#DLM1523192 | 28% company rate (author's reading; page refused a fetch on 2026-11-14) | 2026-11-13 |
+| S8: Annual rates Act 2026 No 8, s 3 | https://www.legislation.govt.nz/act/public/2026/8/en/latest/ | Adoption of the 2025-26 rates (author's reading; page refused a fetch on 2026-11-14) | 2026-11-13 |
+| S9: IRD, when to pay. Read for the next-business-day rule (author's capture, reused) | https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay | Weekend and holiday payment rule | 2026-11-13 |
+| S10: govt.nz public holidays. Read for the 2027 Waitangi Day observed date (author's capture, reused) | https://www.govt.nz/browse/work/public-holidays-and-work/public-holidays-and-anniversary-dates/ | 2027 holiday dates | 2026-11-13 |
+| S11: IRD, financial reporting requirements for companies. Read for the IR10 and accounts handoff only | https://www.ird.govt.nz/managing-my-tax/record-keeping/financial-reporting-for-companies/financial-reporting-requirements-for-companies | Reporting handoff | 2026-11-13 |
+| S12: IRD IR328 2026-27 tax calendar. Read for the 7 July 2026, 31 March 2027, 7 February 2027 and 7 April 2026 rows | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf | Return and end-of-year tax dates | 2026-11-14 |
+| S13: IRD extension of time arrangements. Read for "7 July each year" and "up to 31 March the following year" | https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements | 2027 IR4 dates | 2026-11-14 |
+| S14: IRD provisional tax payment dates. Read for the 2026-27 instalment dates | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax/payment-dates-for-provisional-tax | Provisional tax dates | 2026-11-14 |
+
+Author's source notes, kept as written:
 
 - [S1: IR4 2026][S1], pp 2–4 and 6–7: selected income, credit, payment, shareholder and imputation fields. All 7 pages captured; pp 3–4 visually inspected.
 - [S2: April 2026 IR4GU][S2], selected pp 5,8,12–14,27,30–34,39–40,45,49. The full 53-page guide is not substantively verified. The p 14 dividend-credit worksheet was visually inspected.
@@ -392,6 +454,8 @@ Complete every base self-check. Confirm the entity/year, supported base, loss av
 - [S9: IRD payment-day rule][S9] and [S10: government 2027 holidays][S10]: exact matching captures checked in the preceding NZ batch are reused. The selected 9 February 2027 date is a calendar derivation, subject to actual myIR conditions.
 
 Version 0.1, checked 13 November 2026. Initial bounded IR4 working-paper core, tier 2 and pending review. No whole corporate-tax/reporting completion or practitioner approval is recorded. Wider regimes, deduction/credit eligibility, full losses/ICA, company provisional calculations, tax provision, reporting thresholds, rounding and end-to-end filing remain outstanding.
+
+Not yet confirmed: the box mapping and every page reference are the 2026 IR4 and April 2026 IR4GU, kept for the 2025-2026 filing cycle because IRD has not published the 2027 IR4 or guide; the annual-rates Act adopting the 28% rate for 2026-27 (the 2026 No 8 Act adopts 2025-26 rates; no 2026-27 adoption was found, and the IRD rate page states no year); the statute rows (S6 to S8) could not be opened on 14 November 2026 and rest on the author's 13 November reading; the 2027-28 calendar dates are derived from the IR328 2026-27 pattern, not read from a 2027-28 calendar; filing rounding and filed-value conventions; reporting and audit thresholds. No accountant has reviewed this draft.
 
 [S1]: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4/ir4-2026.pdf?modified=20260331185611
 [S2]: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4gu/ir4gu-2026.pdf?modified=20260331185400
@@ -404,6 +468,7 @@ Version 0.1, checked 13 November 2026. Initial bounded IR4 working-paper core, t
 [S9]: https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay
 [S10]: https://www.govt.nz/browse/work/public-holidays-and-work/public-holidays-and-anniversary-dates/
 [S11]: https://www.ird.govt.nz/managing-my-tax/record-keeping/financial-reporting-for-companies/financial-reporting-requirements-for-companies
+[S12]: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf
 
 ## Disclaimer
 
@@ -412,19 +477,3 @@ This source-cited draft produces conditional working papers for an appropriately
 <!-- openaccountants-cta-block -->
 
 ---
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

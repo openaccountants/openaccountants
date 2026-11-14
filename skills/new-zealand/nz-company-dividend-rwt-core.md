@@ -4,20 +4,23 @@ description: "Use for selected New Zealand company cash dividends to resident sh
 jurisdiction: NZ
 category: international
 tier: 2
-review_status: pending_review
-tax_year: 2027
-tax_year_notes: "Selected 2026-27 payment rules, checked 14 November 2026. Establish actual payment/income periods. No 2027 annual IR4/IR4J return or future-law assurance."
+tax_year: 2026
+tax_year_notes: "2026-27: dividends paid 1 April 2026 to 31 March 2027 (Inland Revenue's 2027 income year). Selected payment rules checked 14 November 2026. Establish actual payment/income periods. No 2027 annual IR4/IR4J return or future-law assurance."
 last_updated: 2026-11-14
-version: 0.1
+version: 0.2
+domain: tax
+type: computation
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company cash dividends and RWT v0.1
+# New Zealand company cash dividends and RWT v0.2
 
-## Scope and source period
+## Scope
+
+**Tax year:** 2026, meaning dividends paid in the New Zealand 2026-27 year, 1 April 2026 to 31 March 2027 (Inland Revenue calls it the 2027 income year). Monthly RWT and dividend information run by the month of payment, not by income year. Where this guide says "2027 IR4" or "2027 ICA return" it means the annual returns for that 2027 income year.
 
 This selected corporate companion addresses an ordinary domestic New Zealand resident company paying a cash dividend in NZD to an established New Zealand resident shareholder. Establish the legal dividend, payer, recipient capacity, source, dates, ICA status, valid attached credits and relevant exclusions before computing. Incorporation, an accounts label or a shareholder address does not establish the tax result. Separate professional clearance of distribution authority, share rights and solvency is required; this guide supplies no company-law approval.
 
@@ -27,23 +30,26 @@ The selected Income Tax Act consolidation is dated **4 September 2026** and the 
 
 The warning review retains special branches: 2023 DRCD changes, 2024 co-operative/top-up-credit provisions, 2025 partnership/custodian changes and the 2026 repeal of CW 39(3)'s exclusion for amounts received in trust are not general ordinary-company permissions. The 2026 Budget family-residence definition change is future and limited; it does not replace the general residence test used here. Named SOE schedule changes, insurance, greyhound, deposit-taker, employment, minimum-family-credit and planning amendments establish no ordinary eligibility. The TAA Gambling amendment concerns confidentiality. Do not describe whole Acts as uncommenced because selected consequential items await commencement. [W01], [W02], [W03], [W04], [W05], [W06], [W07], [W08], [W09], [W10], [W11], [W12], [W13], [W14], [CW 39][P05].
 
-## Period figures and clocks
+## Rates, bands and thresholds
 
 These selected 2026-27 figures remain conditional on the source scope below. They are not a complete corporate rate or annual-return table.
 
-| Item | Selected figure or rule | Authority/condition |
-| --- | --- | --- |
-| Ordinary cash-dividend RWT | 33% within RE 13's formula | [RE 13][A03], [Schedule 1 Part D clause 5][A06] |
-| Ordinary attachment basis/ceiling | 28%; exact I/D ≤ 28/72 or I/G ≤ 28% | Ordinary company-rate status, valid credits and other attachment conditions required. [OA 18][A11], [OB 60][A04], [Schedule 1 Part A clause 2][A06] |
-| Dividend information/remittance | Monthly; nominal 20th of following month | Distinct information and payment duties and special timing/working-day conditions. [TAA 25G][R01], [RE 20][R02], [RE 21][R03], [RA 15][P10] |
-| Ordinary section 29 statement | At payment when its RWT-or-imputation trigger applies | [TAA 29][R01] |
-| Section 22AAB records | Generally 7 years after payment; its own notified extension up to 3 further years | Liability, record scope and statutory extension grounds required. [TAA][R01] |
-| Section 22 business records | Generally at least 7 years after the relevant income-year end | Retain statutory conditions/exceptions and possible notified extension up to 3 further years. [TAA 22][R01] |
-| Section 22(2)(k) memorandum-account/attached-credit records | At least 7 years after the relevant tax or income-year end, as applicable | Identify the ICA tax year separately from the company income year; retain statutory conditions/exceptions and possible notified extension. [TAA 22][R01], [OB 1][P08], [ICA year][I05] |
-| Reviewer attention floor | NZ$0 | Internal policy in this guide, not a statutory threshold |
-| 2027 IR4/annual ICA return dates | Not established here | Obtain a current period-specific companion; do not reuse IR4JG 2026 |
+| Item | Selected figure or rule | Authority/condition | Source |
+| --- | --- | --- | --- |
+| Ordinary cash-dividend RWT | 33% within RE 13's formula | [RE 13][A03], [Schedule 1 Part D clause 5][A06]. IRD: "The RWT rate for dividend payments is 33%." | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/using-the-right-rwt-tax-rate https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520231/ |
+| Ordinary attachment basis/ceiling | 28%; exact I/D ≤ 28/72 or I/G ≤ 28% (derived: IRD states up to 28 cents of imputation credit per $1 of gross dividend) | Ordinary company-rate status, valid credits and other attachment conditions required. [OA 18][A11], [OB 60][A04], [Schedule 1 Part A clause 2][A06] | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518852/ |
+| Dividend information/remittance | Monthly; nominal 20th of following month | Distinct information and payment duties and special timing/working-day conditions. [TAA 25G][R01], [RE 20][R02], [RE 21][R03], [RA 15][P10]. IRD: reports and withheld tax are due "by the 20th of the month after the month the dividend was paid" | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/payers/investment-income-reporting/reporting-requirements/payers-of-dividends---reporting-requirements |
+| Ordinary section 29 statement | At payment when its RWT-or-imputation trigger applies | [TAA 29][R01] | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
+| Section 22AAB records | Generally 7 years after payment; its own notified extension up to 3 further years | Liability, record scope and statutory extension grounds required. [TAA][R01] | same |
+| Section 22 business records | Generally at least 7 years after the relevant income-year end | Retain statutory conditions/exceptions and possible notified extension up to 3 further years. [TAA 22][R01] | same |
+| Section 22(2)(k) memorandum-account/attached-credit records | At least 7 years after the relevant tax or income-year end, as applicable | Identify the ICA tax year separately from the company income year; retain statutory conditions/exceptions and possible notified extension. [TAA 22][R01], [OB 1][P08], [ICA year][I05] | same |
 
-## Engagement and completion gates
+Two further items sit outside the statutory figures:
+
+- **Reviewer attention floor: NZ$0.** Internal policy in this guide, not a statutory threshold.
+- **2027 IR4/annual ICA return dates: not established here.** Obtain a current period-specific companion; do not reuse IR4JG 2026.
+
+## Ask the client first
 
 Use redacted summaries and stable fictional or reviewer-held references. The professional retains legal identities, tax numbers, addresses, bank details, authentication and signing credentials and performs any submission/payment. Do not query a real exemption register through this guide.
 
@@ -80,20 +86,9 @@ These are T3 holds, not authorised T2 defaults. The universal base mentions an e
 
 Retain all 4 universal outputs: recalculated Excel working paper, reviewer brief, action list and review checklist. Retain every corporate domain output and supporting component, including return/forms, tax provision, payment schedules and documentation index. This guide alone is an incomplete corporate companion. Missing mandatory source conditions, country slots or outputs prevent a deliverable company financial result or completion claim. A supported dividend schedule may contribute to the eventual package; it cannot certify remaining work.
 
-### Refusals and holds
+## The method, step by step
 
-Run all loaded refusal catalogues before classification/computation. A current tax audit or notice of deficiency fires R-CIT-6; a related-party dividend alone does not establish that trigger. Use each base's canonical code/message verbatim and follow its stop. A reviewer flag cannot override a refusal.
-
-| Code | Trigger | Exact message |
-| --- | --- | --- |
-| R-NZ-DIV-SPECIAL | Requested result requires unsupported non-cash/combined, foreign, DRCD/dual-resident, special-entity, intermediary or other special dividend treatment | This selected cash-dividend guide cannot compute the requested special treatment. Obtain the applicable current source chain and qualified specialist review before continuing. |
-| R-NZ-DIV-INCOMPLETE | Complete company tax, IR4 or ICA result requested whilst mandatory applicable companion content or outputs remain unsupported | This selected dividend schedule is an incomplete corporate companion. Do not deliver a complete company result or mark the workflow complete. Establish every mandatory source condition, country slot and required output first. |
-
-A missing fact or fractional-cent authority gap is Needs Input, not a new refusal code. Hold the affected result. If a loaded refusal fires, follow its full stop and do not produce partial computed work. Record cleared/fired codes and exact messages in the reviewer brief, or the reply when refusal precedes a brief.
-
-The reviewer attention threshold is **NZ$0**: flag every classification, credit, exemption, reporting, date and rounding condition, every non-zero discrepancy including NZ$0.01 and every unquantified impact. This is internal review policy, not statutory materiality or permission to ignore non-monetary defects.
-
-## Classify the payment first
+### Classify the payment first
 
 CD 1/CD 3 lead into the dividend rules. CD 4's transfer-of-company-value framework, CD 5's transfer rules and CD 6's shareholding connection need actual facts. [CD 4(1)(b)][A19] requires that none of the CD 22–37 exclusions applies. A capital distribution, shareholder current-account entry, repayment, bonus issue or benefit is not automatically an ordinary cash dividend. The complete exclusion/transaction analysis is not supplied here; hold the affected payment until its source chain is established. [CD 1][A17], [CD 3][A18], [CD 4][A19], [CD 5][P01], [CD 6][P02].
 
@@ -103,7 +98,7 @@ RE 3 links withholding/payment to RE 4 and RE 5/6 exceptions. RE 4 requires rele
 
 RE 13 addresses dividends other than non-cash dividends, with a specific combined-payment election exception. Non-cash/combined arrangements need the relevant RE 14-series analysis. Foreign-company dividends also have a foreign-tax limb in RE 13. Do not omit those facts and reuse this ordinary domestic computation. [RE 13][A03].
 
-## Ordinary formula and exact denominators
+### Ordinary formula and exact denominators
 
 After the scope and credit gates are established:
 
@@ -121,13 +116,13 @@ For an established ordinary **28%** company-rate basis, OA 18/OB 60 cap I/D at *
 
 Within that valid ordinary ceiling W is non-negative; at maximum attachment it is 5% of G. This is an algebraic consequence, not a new rate or exemption. If supplied amounts exceed the ceiling or produce a negative result, stop and reconcile classification, inputs and credit authority. No general max(W, 0) correction is established. [RE 13][A03], [OA 18][A11].
 
-### Fractional cents remain held
+#### Fractional cents remain held
 
 The sources do **not** establish a dividend RWT rounding/truncation mode, tie rule or per-payment versus aggregate method. RE 13 supplies the formula. The February 2026 V1.6 specification encodes money as integer cents; a format does not supply a computation rule. A current Part R search located provisional-tax truncation and related GST-ratio rounding provisions, not adopted as dividend authority. [RE 13][A03], [specification][R07], [Part R][PART-R].
 
 Keep exact algebra and source precision. Do not round D, use a rounded ceiling, invent a policy or silently convert fractional W/C into payable/filed cents. Record Needs Input and obtain current primary authority/applicable treatment before finalising affected amounts. Cent-exact examples do not resolve this for other values. An unestablished rule is not a finding that none exists.
 
-## ICA and benchmark gates
+### ICA and benchmark gates
 
 Establish ICA-company status under OB 1, attachment rules, credit provenance and transactions/effective dates. An accounts credit or company tax payment alone does not prove a valid attachment. Consolidated/Australian accounts, sector entities, top-up tax and special credit sources need separate analysis. Do not derive shareholder credit entitlement or an ICA refund from payer attachment. [OB 1][P08], [OA 5][P07], [OB 60][A04], [CD 16][P03], [CD 17][P04], [IR274][I08].
 
@@ -135,7 +130,7 @@ OB 61 identifies the benchmark dividend and ratio rules. Reconcile the first rel
 
 Reconcile ICA opening, evidenced credits/debits, effective dates, dividend debit and closing. IR274 distinguishes an in-year debit from year-end consequences; do not invent a blanket positive-balance-at-payment test. That distinction does not validate credits or excuse benchmark, closing or further-income-tax duties. Annual/interim returns and cessation require separate verified periods/application. IR4JG 2026 covers 2025-26; its dates do not establish 2026-27 annual completion. IR274's old section 67 company-statement procedure supplies no current duty: TAA section 67 is repealed. [ICA][I03], [memorandum accounts][I05], [annual return][I06], [interim return][I07], [IR274][I08], [IR4JG 2026][I09], [TAA][R01].
 
-## Registration, monthly information and payment
+### Registration, monthly information and payment
 
 IRD distinguishes company dividends from the interest threshold: companies paying dividends are automatically registered as RWT payers. Verify actual account readiness; do not import the interest threshold to avoid a dividend duty. Public exemption instructions establish no actual recipient exemption. [Registration][D4], [exemption information][D5].
 
@@ -148,7 +143,7 @@ IRD distinguishes company dividends from the interest threshold: companies payin
 
 A no-dividend month differs from a dividend month with zero RWT. IR284's blanket no-RWT/no-investment-information instruction is not adopted. Do not skip 25C/25E/25G solely because W = 0 or assert every RE 2-excluded/exempt payment is a taxable reportable dividend. Establish that branch's reporting scope separately. No payment due does not itself remove a statement/record duty. [TAA][R01], [IR284][R04], [dividend reporting][D2].
 
-### Information readiness and file mapping
+#### Information readiness and file mapping
 
 Under 25G, Schedule 6 rows 1–11, 14 and 16–22 apply as appropriate. Retain payer/payee identity/contact readiness, period income/withholding, credits, rate/ratio, shares, dates and applicable bonus/exchange fields. Preserve the investor IRD-number/birth-date qualifications and 25D's joint-owner/pre-April-2018 conditions; they do not make every field optional. [TAA 25D/25G and Schedule 6][R01].
 
@@ -158,7 +153,7 @@ The current upload page links **February 2026 V1.6**. Its 'Gross dividend' is G 
 
 The field named 'Date Dividend Declared' requests the **record date where available**, otherwise declaration date. Preserve actual record, declaration, derivation and payment dates separately with evidence and the approved mapping. Do not overwrite the statutory declaration date, invent a record date or treat upload acceptance as Schedule 6 compliance. Missing/conflicting dates remain held; special custodian zeros/blanks do not generalise. [Specification][R07], [Schedule 6][R01].
 
-## Shareholder statement and records
+### Shareholder statement and records
 
 Section 29 applies to a company dividend, other than one treated as interest, where **RWT was withheld OR an imputation credit attached**. Ordinary timing is at payment; emigration/DRCD cases have separate provisions and remain outside this core. Zero RWT with a credit can still require a statement. IR284's RWT-only instruction is incomplete. With neither condition, no universal section 29 trigger is established here; assess other requirements separately. [TAA 29][R01], [IR284][R04].
 
@@ -166,7 +161,7 @@ Use a Commissioner-approved form with section 29 particulars: company/shareholde
 
 Keep record clocks separate. Section 22AAB applies to a person liable to withhold and generally retains relevant investment-income records **7 years after payment**. Section 22 business records generally require at least **7 years after the relevant income-year end**. Section 22(2)(k) memorandum-account and attached-credit records require at least **7 years after the relevant tax or income-year end, as applicable**. Identify the ICA tax year, **1 April to 31 March**, separately from the company's income year/balance date. Retain section 22's statutory exceptions and possible notified extension up to **3 further years**. Section 22AAB(4) has its own extension power: notice before the initial 7 years end can require specified records for up to **3 further years**, on its audit/investigation grounds. Those grounds include the affairs of a person to whom the records relate and the Commissioner's intended or actively considered investigation; do not confine them to an audit of the payer alone. Do not replace the separate clocks with seven-years-from-filing or infer early destruction authority. Preserve applicable ICA/attached-credit, statement, payment and reporting records under their own conditions. [TAA 22/22AAB][R01], [OB 1][P08], [ICA year][I05].
 
-## Synthetic controls for the selected 2026-27 core
+## Worked cases
 
 These fictional NZD cases assume ordinary legal, credit and period gates are independently established unless a diagnostic holds. They test arithmetic and boundaries, not actual classification, lawful distributions, filing or professional approval. Cent-exact examples do not resolve rounding for other values.
 
@@ -325,6 +320,21 @@ expected:
 
 These are conditional expected controls, not a recorded live workflow trial. The zero-RWT intercompany case is a separately established exclusion, not a zero produced by the ordinary RE 13 examples. Do not invent I = 33% of G to force an ordinary dividend's W to zero.
 
+## When to refuse or refer
+
+Run all loaded refusal catalogues before classification/computation. A current tax audit or notice of deficiency fires R-CIT-6; a related-party dividend alone does not establish that trigger. Use each base's canonical code/message verbatim and follow its stop. A reviewer flag cannot override a refusal.
+
+| Code | Trigger | Exact message |
+| --- | --- | --- |
+| R-NZ-DIV-SPECIAL | Requested result requires unsupported non-cash/combined, foreign, DRCD/dual-resident, special-entity, intermediary or other special dividend treatment | This selected cash-dividend guide cannot compute the requested special treatment. Obtain the applicable current source chain and qualified specialist review before continuing. |
+| R-NZ-DIV-INCOMPLETE | Complete company tax, IR4 or ICA result requested whilst mandatory applicable companion content or outputs remain unsupported | This selected dividend schedule is an incomplete corporate companion. Do not deliver a complete company result or mark the workflow complete. Establish every mandatory source condition, country slot and required output first. |
+
+A missing fact or fractional-cent authority gap is Needs Input, not a new refusal code. Hold the affected result. If a loaded refusal fires, follow its full stop and do not produce partial computed work. Record cleared/fired codes and exact messages in the reviewer brief, or the reply when refusal precedes a brief.
+
+The reviewer attention threshold is **NZ$0**: flag every classification, credit, exemption, reporting, date and rounding condition, every non-zero discrepancy including NZ$0.01 and every unquantified impact. This is internal review policy, not statutory materiality or permission to ignore non-monetary defects.
+
+Also refer, per the Scope above: separate professional clearance of distribution authority, share rights and solvency; non-cash, combined, foreign, DRCD/dual-resident, special-entity, intermediary and other special dividends; and any complete company computation, IR4 or ICA return, which needs complete period-appropriate country companions.
+
 ## Working-paper additions and checks
 
 Retain a per-payment schedule with source references for D/I/G/W/C, exact ceiling cross-products, benchmark/change evidence, ICA movement references, period and separate date fields. Reconcile recipient rows to approved totals, statements, monthly information and remittance; no aggregate guess replaces a missing item. Mark each source item T1, an expressly authorised factual-default T2 or unresolved T3. This guide authorises no new T2 defaults.
@@ -354,7 +364,78 @@ Native PDF extraction is not whole-document visual/legal assurance. IR274's empt
 
 - **0.1, 14 November 2026:** Initial selected 2026-27 domestic cash-dividend RWT reference, with exact credit/withholding controls, separate reporting/statement/record gates and an unresolved fractional-cent hold. Source-cited draft awaiting accountant review.
 
-## Primary sources
+## Sources
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| Inland Revenue, How imputation credits work | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work | Read for the 28 cents per $1 of gross dividend attachment limit (rates table) | 2026-11-14 |
+| [A03] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520231/ | Read for ITA; RE 13 | 2026-11-14 |
+| [R01] Tax Administration Act 1994 | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ | Read for TAA; TAA 25G; TAA 29; TAA 22 | 2026-11-14 |
+| [W01] Act 1999 No 65 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/1999/65/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W02] Act 2012 No 44 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2012/44/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W03] Act 2024 No 11 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2024/11/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W04] Act 2024 No 47 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2024/47/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W05] Act 2026 No 12 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2026/12/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W06] Act 2023 No 35 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2023/35/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W07] Act 2026 No 8 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2026/8/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W08] Act 2026 No 25 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2026/25/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W09] Act 2026 No 48 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2026/48/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W10] Act 2023 No 5 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2023/5/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W11] Act 2025 No 9 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2025/9/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W12] Secondary legislation 2026/340 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/340/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W13] Act 2026 No 70 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2026/70/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [W14] Act 2003 No 51 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2003/51/en/latest/ | Read for the Act's amendments listed in the Income Tax Act / TAA warning lists (Scope, warning review) | 2026-11-14 |
+| [A17] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512540/ | Read for CD 1 | 2026-11-14 |
+| [A18] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512545/ | Read for CD 3 | 2026-11-14 |
+| [A19] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512548/ | Read for CD 4(1)(b); CD 4 | 2026-11-14 |
+| [P01] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512550/ | Read for CD 5 | 2026-11-14 |
+| [P02] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512553/ | Read for CD 6 | 2026-11-14 |
+| [A02] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520194/ | Read for RE 2 | 2026-11-14 |
+| [A15] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520294/ | Read for RE 27 | 2026-11-14 |
+| [P05] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1513263/ | Read for CW 39 | 2026-11-14 |
+| [P06] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517160/ | Read for HA 15 | 2026-11-14 |
+| [A07] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520198/ | Read for RE 3 | 2026-11-14 |
+| [A13] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520200/ | Read for RE 4 | 2026-11-14 |
+| [A08] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520202/ | Read for RE 5 | 2026-11-14 |
+| [A14] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520206/ | Read for RE 6 | 2026-11-14 |
+| [A16] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520298/ | Read for RE 29 | 2026-11-14 |
+| [P12] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/LMS1427089/ | Read for RE 31 | 2026-11-14 |
+| [A06] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523192/ | Read for Schedule 1 Part D clause 5; Schedule 1 Part A clause 2; Schedule 1 | 2026-11-14 |
+| [A12] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512572/ | Read for CD 15 | 2026-11-14 |
+| [D3] Inland Revenue web page | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/using-the-right-rwt-tax-rate | Read for IRD rates | 2026-11-14 |
+| [R04] Inland Revenue guide/specification (PDF) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir284/ir284.pdf?modified=20251030195459 | Read for IR284 | 2026-11-14 |
+| [A11] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518689/ | Read for OA 18 | 2026-11-14 |
+| [A04] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518852/ | Read for OB 60 | 2026-11-14 |
+| [R07] Inland Revenue guide/specification (PDF) | https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/iir-file-upload-specification/investment-income-reporting-file-upload-specification.pdf?modified=20260205005514 | Read for specification; Specification | 2026-11-14 |
+| [PART-R] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/parts/DLM1519723/ | Read for Part R | 2026-11-14 |
+| [P08] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518696/ | Read for OB 1 | 2026-11-14 |
+| [P07] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518642/ | Read for OA 5 | 2026-11-14 |
+| [P03] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512574/ | Read for CD 16 | 2026-11-14 |
+| [P04] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1512580/ | Read for CD 17 | 2026-11-14 |
+| [I08] Inland Revenue guide/specification (PDF) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir274/ir274-2024.pdf?modified=20240604223621 | Read for IR274 | 2026-11-14 |
+| [A05] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518861/ | Read for OB 61 | 2026-11-14 |
+| [I01] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/benchmark-dividend | Read for benchmark | 2026-11-14 |
+| [I04] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/declare-a-ratio-change | Read for ratio change | 2026-11-14 |
+| [I03] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/imputation-credit-accounts | Read for ICA | 2026-11-14 |
+| [I05] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/memorandum-accounts | Read for ICA year; memorandum accounts | 2026-11-14 |
+| [I06] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-annual-imputation-return-ir4j | Read for annual return | 2026-11-14 |
+| [I07] Inland Revenue web page | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-interim-imputation-return---ir4j | Read for interim return | 2026-11-14 |
+| [I09] Inland Revenue guide/specification (PDF) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 | Read for IR4JG 2026 | 2026-11-14 |
+| [D4] Inland Revenue web page | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/payers/registering-as-a-payer-of-resident-withholding-tax | Read for Registration | 2026-11-14 |
+| [D5] Inland Revenue web page | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/resident-withholding-tax-exemption-register | Read for exemption information | 2026-11-14 |
+| [R02] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520277/ | Read for RE 20 | 2026-11-14 |
+| [R03] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520279/ | Read for RE 21 | 2026-11-14 |
+| [P10] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519761/ | Read for RA 15 | 2026-11-14 |
+| [P11] Income Tax Act 2007 | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519764/ | Read for RA 16 | 2026-11-14 |
+| [P14] Inland Revenue web page | https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay | Read for Payment days | 2026-11-14 |
+| [R05] Inland Revenue web page | https://www.ird.govt.nz/key-dates | Read for key-date rule | 2026-11-14 |
+| [D2] Inland Revenue web page | https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/payers/investment-income-reporting/reporting-requirements/payers-of-dividends---reporting-requirements | Read for dividend reporting | 2026-11-14 |
+| [R06] Inland Revenue web page | https://www.ird.govt.nz/file-upload-investment-income | Read for Upload page | 2026-11-14 |
+| [A20] Act 2022 No 10 (legislation.govt.nz) | https://www.legislation.govt.nz/act/public/2022/10/en/latest/sections/LMS544158/ | Read for 2022 Act section 160 | 2026-11-14 |
+
+Not yet confirmed: legislation.govt.nz refused automated fetches in this conforming pass (2026-11-14), so the Income Tax Act 2007 and Tax Administration Act 1994 provisions were not re-opened; their read dates are the writer's check of 14 November 2026. Three IRD pages were re-read on 2026-11-14 and match: the 33% dividend RWT rate, the 28 cents per $1 of gross dividend attachment limit, and the 20th-of-the-following-month reporting and payment date. The fractional-cent rounding rule for dividend RWT is not established (see "Fractional cents remain held"). The 2027 income year IR4 and annual ICA return dates are not established. No accountant has reviewed this draft.
+
+### Link references
 
 [A03]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520231/
 [R01]: https://www.legislation.govt.nz/act/public/1994/166/en/latest/
@@ -419,23 +500,3 @@ Native PDF extraction is not whole-document visual/legal assurance. IR274's empt
 [D2]: https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/payers/investment-income-reporting/reporting-requirements/payers-of-dividends---reporting-requirements
 [R06]: https://www.ird.govt.nz/file-upload-investment-income
 [A20]: https://www.legislation.govt.nz/act/public/2022/10/en/latest/sections/LMS544158/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

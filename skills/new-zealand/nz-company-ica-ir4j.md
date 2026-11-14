@@ -1,14 +1,15 @@
 ---
 name: nz-company-ica-ir4j
-description: "Use for an ordinary New Zealand resident company's imputation credit account reconciliation, original credit lots, ownership continuity, further income tax, imputation penalty tax and 2026 IR4J handoff. Trigger on ICA, imputation account, IR4J, credit continuity, year-end debit or further income tax. Primary annual examples cover 1 April 2025 to 31 March 2026. Refunds, transfers and later transactions require event-specific law. This component requires complete dated records and qualified review; it supplies no complete company return, unsupported special-branch computation or 2027 annual form mapping."
+description: "Use for an ordinary New Zealand resident company's imputation credit account reconciliation, original credit lots, ownership continuity, further income tax, imputation penalty tax and IR4J handoff. Trigger on ICA, imputation account, IR4J, credit continuity, year-end debit or further income tax. Primary annual examples cover 1 April 2025 to 31 March 2026 (IR4J 2026, the return being filed now); the 2026-27 imputation year (1 April 2026 to 31 March 2027) follows the same rates and rules, with no 2027 form mapping yet. Refunds, transfers and later transactions require event-specific law. This component requires complete dated records and qualified review; it supplies no complete company return, unsupported special-branch computation or 2027 annual form mapping."
 jurisdiction: NZ
 category: international
 tier: 2
-review_status: pending_review
 tax_year: 2026
-tax_year_notes: "2025-26 ICA and IR4J2026; selected later events require their own operative dates; no annual 2027 form mapping"
+tax_year_notes: "2026-27 imputation year (1 April 2026 to 31 March 2027) for the rates and rules; form mapping is IR4J 2026 for the 2025-2026 filing cycle (1 April 2025 to 31 March 2026), because IRD has not published a 2027 IR4J"
 last_updated: 2026-11-14
-version: 0.2
+version: 0.3
+domain: tax
+type: computation
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
@@ -17,9 +18,13 @@ depends_on:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company ICA and IR4J v0.2
+# New Zealand company ICA and IR4J v0.3
 
-## Scope and source periods
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. Tax year 2026 here means the 2026-27 imputation and income year, 1 April 2026 to 31 March 2027 (IRD's 2027 income year). The annual imputation return being filed now is IR4J 2026 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle). IRD's imputation page lists the April 2026 IR4J and no 2027 form, and says to use the IR4 company return where an IR4J is needed ([IRD annual imputation return][IRD-annual], read 2026-11-14). The worked examples stay on 2025-26.
+
+## Scope
 
 Reconcile an eligible ordinary resident company's ICA from statutory events and original credit lots, then prepare its period-correct return and qualified-review handoff. ICA balance, income tax payable, cash available, shareholder credit entitlement and tax-loss continuity are separate results. A bank balance, incorporation record or journal label does not establish them. [OB1], [OB3], [OA3], [OA8].
 
@@ -41,26 +46,22 @@ The selected Income Tax Act consolidation is dated **4 September 2026** and Tax 
 | LA5(2) TSWT exception | Starts 1 April 2026; obtain the period-specific branch if relevant. [LA5], [W11] |
 | Ownership/look-through | Retrospective/application provisions can affect earlier lot periods. Current ownership alone is insufficient. [YC4], [YC11], [YC20], [W07], [W11] |
 
-## Figures and filing/payment clocks
+**Years covered.**
 
-| Item | Rule and condition |
-| --- | --- |
-| Ordinary continuity | At least **66%** aggregate minimum voting interests throughout the credit period, plus at least **66%** minimum market-value interests where required. [OA8], [YC2], [YC3] |
-| Annual ICA return | TAA69 generally links the deadline to the last date permitted under TAA37 for the income return. Establish the actual extension/route; the Australian no-income-return branch has its own July rule. [TAA], [IRD-annual] |
-| Consolidated-member exception | TAA69(3) requires membership and nil individual ICA **at all times** during the year; nil closing alone is insufficient. [TAA] |
-| Voluntary interim return | TAA70(3): period begins on the tax-year first day and ends no more than **7 days** before furnishing. [TAA], [IRD-interim] |
-| Cessation return | TAA70(2): furnish within **2 calendar months** after the last day of ICA status for the statutory stub period. Liquidation/insolvency also engages corporate refusals. [TAA] |
-| Specified retrospective pooling adjustment | TAA70(2B): revised return within **2 calendar months** of refund/transfer if its stated balance trigger is met. [TAA] |
-| Ordinary year-end FIT | Nominal **20 June** following tax-year end, subject to OB65's exclusion and other applicable provisions. [OB65] |
-| IPT | **10%** of qualifying FIT/additional tax under TAA140B; TAA142E supplies payment treatment. Do not apply it automatically to an unadjusted display balance. [TAA] |
-| Working day/receipt | Apply actual statutory, channel and next-working-day conditions. Printed 20 June 2026 does not establish an overdue account balance. [IRD-pay], [IR4J2026], [TAA] |
-| Reviewer attention floor | **NZ$0**, internal policy. Flag every non-zero difference including NZ$0.01, unquantified impact and status/source/date/continuity/notice/election/rounding condition. |
+- **2025-26 (IR4J 2026):** 1 April 2025 to 31 March 2026. A debit closing balance is further income tax payable by 20 June 2026, and imputation penalty tax of 10% of the debit closing balance is also payable by that date ([IR4JG 2026][IR4JG2026], questions 9 and 10).
+- **2026-27:** 1 April 2026 to 31 March 2027. The same rules give further income tax and imputation penalty tax by 20 June 2027 (derived; 20 June 2027 is a Sunday, so the next business day applies). No 2027 IR4J or guide is published; do not map a 2026-27 result to IR4J 2026 boxes.
 
-TAA70(1) permits a Commissioner-required return for its specified period and allowed time. A voluntary-interim rule does not replace a notice. Do not infer that a filing extension defers a separate payment duty. TAA37's 31 March 2026 publication amendment does not itself create a new ordinary deadline. [TAA], [W07].
 
-TAA22(2)(k) memorandum-account/attached-credit records generally require at least **7 years** after the relevant tax or income-year end, with statutory conditions and a possible notified extension of up to **3 further years**. Retain the evidence needed to support original lots; this period is not a rule that an old unconsumed credit acquires a new date. [TAA].
+## Ask the client first
 
-## Intake, defaults and completion gates
+Get these facts before reconciling; each one changes the result.
+
+- Is the company a New Zealand resident company that must keep an ICA? IRD lists bodies that do not file imputation returns: non-resident companies, LTCs, trustee companies (but not group investment funds with Category A income), companies whose constitution prohibits distributions, fully exempt companies, local authorities, Crown research institutes, non-active companies, Maori authorities and multi-rate PIEs ([IR4JG 2026][IR4JG2026], p 4).
+- Which ICA year: 2025-26 (IR4J 2026) or 2026-27? What was the signed closing balance on the last filed return?
+- Every credit and debit event in the year, with its legal date: tax paid, refunds, RWT, dividends paid with imputation credits attached, transfers.
+- The shareholders and their voting (and, where needed, market-value) interests for the whole period of each credit lot.
+- Any imputation group, qualifying company, Australian ICA company, tax pooling or consolidated group?
+- Any notice, election (OB67 notification, OB69 application of FIT) or Commissioner decision already made?
 
 Use redacted schedules and fictional or reviewer-held references. The professional retains legal identities, tax numbers, addresses, bank details, authentication/signing credentials and performs any authorised submission or payment. Establish both bases' authority-to-provide-data and qualified-review conditions.
 
@@ -69,6 +70,25 @@ Record requested obligation, ICA tax year/accounting income year, currency, bala
 Obtain and reconcile prior filed/revised/interim returns, opening sign/amount, tax-account allocations and original credit lots. Collect every payment/refund/transfer/distribution, its legal and book dates, source amount and statutory class. Obtain all persons' decision rights/interests throughout each lot period, ownership changes, options/fixed-rate securities, market-value circumstances, look-through relationships and any concession/arrangement. Establish assessment/refund chronology, applicable return/extension, earlier refunds/offsets, requests/notices/statements, elections, form/channel and actual delivery/payment evidence.
 
 Infer and confirm both bases' profile before substantive computation. Every source item remains in the working paper, including excluded, disputed and held items. Unknown is not zero or inapplicable.
+
+## The method, step by step
+
+1. **Confirm eligibility, status and year** (Scope, Ask the client first). Stop under R-NZ-ICA-SPECIAL for a branch this skill does not compute.
+2. **Diary the return and payment dates** (Figures and filing/payment clocks, and the rates table).
+3. **Reconcile the account event by event** (Establish dates and signed balances), keeping original credit lots.
+4. **Test continuity lot by lot at 66%** (Preserve lots and test continuity), oldest credits consumed first.
+5. **Work out FIT, IPT and any election** (FIT, IPT and elected application), then any refund cap and offset (Refund entitlement, cap, offset and cash).
+6. **Map a supported 2025-26 result to IR4J 2026** and run the refusals, holds and completion checklist.
+
+### Figures and filing/payment clocks
+
+The figures are in the rates table below. Two internal controls sit outside it: apply actual statutory, channel and next-working-day conditions to every date (a printed 20 June 2026 does not establish an overdue account balance: [IRD-pay], [IR4J2026], [TAA]); and the reviewer attention floor is **NZ$0**, an internal policy: flag every non-zero difference including NZ$0.01, unquantified impact and status, source, date, continuity, notice, election or rounding condition.
+
+TAA70(1) permits a Commissioner-required return for its specified period and allowed time. A voluntary-interim rule does not replace a notice. Do not infer that a filing extension defers a separate payment duty. TAA37's 31 March 2026 publication amendment does not itself create a new ordinary deadline. [TAA], [W07].
+
+TAA22(2)(k) memorandum-account/attached-credit records generally require at least **7 years** after the relevant tax or income-year end, with statutory conditions and a possible notified extension of up to **3 further years**. Retain the evidence needed to support original lots; this period is not a rule that an old unconsumed credit acquires a new date. [TAA].
+
+### Missing facts and holds
 
 | Missing/conflicting condition | Permitted treatment |
 | --- | --- |
@@ -81,16 +101,7 @@ Infer and confirm both bases' profile before substantive computation. Every sour
 
 These are T3 holds. This companion grants no new T2 missing-fact defaults or higher-tax default for unknown law. Use the bases' shared ambiguity checkpoint and prescribed T2 question/cash-impact ranking. If more than 10 grouped factual questions remain and no applicable loaded catalogue supplies the excessive-ambiguity code/message, retain Needs Input for that configuration gap; invent no code or deliverable result.
 
-Run every applicable universal/R-CIT refusal first, retaining its exact canonical trigger/message/action. R-CIT-6 concerns a current audit or notice of deficiency. Disputed/dual residence, regulated funds and liquidation have separate triggers. An ordinary related-party relationship alone does not establish an audit trigger. Intake confirmation or a reviewer flag cannot override a fired refusal.
-
-| Additional code | Trigger | Exact message |
-| --- | --- | --- |
-| R-NZ-ICA-SPECIAL | Requested computation requires an unsupported special entity, transaction, group, tax-pooling, historical or other ICA branch | This ICA companion cannot compute the requested special treatment. Establish its applicable primary sources, conditions and qualified review before continuing. |
-| R-NZ-ICA-INCOMPLETE | A complete company or ICA result is requested whilst mandatory applicable content, source conditions or outputs remain unsupported | This ICA schedule is an incomplete corporate companion. Do not deliver a complete company result or mark the workflow complete. Establish every mandatory source condition, country slot and required output first. |
-
-Follow a fired refusal's full stop; do not issue partial computed work through it. Record fired/cleared codes and exact messages in the brief, or the reply if refusal precedes a brief. A missing ordinary fact remains Needs Input unless a catalogue trigger actually applies.
-
-## Corporate country requirements remain binding
+### Corporate country requirements remain binding
 
 | Required group | Contribution here and remaining requirement |
 | --- | --- |
@@ -105,8 +116,6 @@ Follow a fired refusal's full stop; do not issue partial computed work through i
 | Cross-references | Load applicable income/dividend/withholding/transfer-pricing/MDR/IP/R&D/free-zone companions; missing authority is not inapplicability |
 
 Retain all 4 universal outputs and every corporate domain output. A supported ICA schedule contributes to the package; missing mandatory slots, sources or outputs prevents a complete company financial result or workflow-completion claim.
-
-## Reconcile the account mechanically
 
 ### Establish dates and signed balances
 
@@ -164,7 +173,7 @@ LA5/LA6 preserve underlying credit conditions. LA6(2) orders earlier income liab
 
 Record assessment/entitlement, request/decision and actual payment dates, applicable law, reference return, earlier refunds, cap adjustments, offsets and ICA dates. Current RM2/RM4-only references cannot simply govern an event before 31 March 2026. Unsupported chronology/entitlement prevents a final refund result. [W07], [RM10], [RM13], [RM17], [OB32].
 
-## Map a supported 2025-26 result to IR4J2026
+### Map a supported 2025-26 result to IR4J2026
 
 Confirm standalone ICA filing versus combined IR4 and actual channel. Australian/new-group form labels do not establish eligibility. Carry TAA69 information for the correct annual or TAA70 period. [IR4J2026], [IR4JG2026], [IRD-annual], [IRD-interim], [TAA].
 
@@ -179,7 +188,24 @@ Confirm standalone ICA filing versus combined IR4 and actual channel. Australian
 
 This is a 2-page form readback, not an implemented filing specification. Zero-sign, display precision, rounding/truncation and interactive-field behaviour remain unverified. Keep exact calculations/source precision and obtain authority before an affected final conversion/field selection. Whole-dollar examples avoid those unresolved representation choices. [IR4J2026], [IR4JG2026].
 
-## Worked examples
+## Rates, bands and thresholds
+
+| Item | Value and condition | Source |
+| --- | --- | --- |
+| Ordinary continuity | At least 66% aggregate minimum voting interests throughout the credit period, plus at least 66% minimum market-value interests where required (OA 8, YC 2, YC 3); the 66% test does not apply to qualifying companies except in the year they cease to qualify | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518664/ ; https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Annual ICA return deadline | TAA s 69 generally links it to the last date permitted under TAA s 37 for the income return; IRD now takes the imputation return on the IR4 company return. Establish the actual extension and route | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ ; https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-annual-imputation-return-ir4j |
+| Australian (trans-Tasman) ICA company, 2026 IR4J | Due 31 July 2026; a $250 penalty may be charged where the return is not completed on time; only fields 1 to 10A are completed | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Consolidated-member exception | TAA s 69(3): membership and nil individual ICA at all times during the year; nil closing alone is insufficient | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
+| Voluntary interim return | TAA s 70(3): period begins on the tax-year first day and ends no more than 7 days before furnishing | same |
+| Cessation return | TAA s 70(2): within 2 calendar months after the last day of ICA status, for the statutory stub period | same |
+| Specified retrospective pooling adjustment | TAA s 70(2B): revised return within 2 calendar months of the refund or transfer if its balance trigger is met | same |
+| Year-end further income tax (FIT), 2025-26 | Debit closing balance paid by 20 June 2026, subject to the OB 65 exclusion and other applicable provisions (20 June 2026 is a Saturday: next business day, derived) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 ; https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518870/ |
+| Year-end FIT, 2026-27 | 20 June 2027 (derived: same rule one year on; a Sunday, so the next business day) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518870/ |
+| Imputation penalty tax (IPT) | 10% of the debit closing balance (qualifying FIT or additional tax under TAA s 140B), payable by the same date; TAA s 142E supplies payment treatment | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 ; https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
+| Late payment penalties on unpaid FIT and IPT | 1% the day after the due date, a further 4% if tax (including penalties) is unpaid 7 days after; interest and late payment penalties are not charged on $100 or less | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 |
+| Record retention | TAA s 22(2)(k): at least 7 years after the relevant year end, with a possible notified extension of up to 3 further years | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ |
+
+## Worked cases
 
 All amounts are **NZD** and hypothetical. Stipulate ordinary ICA eligibility throughout, complete records, no unsupported group/sector/QC/Australian/DRCD/top-up/pooling branch, no dispute and all applicable conditions. These are explicit example facts, never missing-client-data defaults. Annual arithmetic covers **1 April 2025–31 March 2026**; later events are separately dated. Checks demonstrate arithmetic after classification, not eligibility, source completeness or professional approval.
 
@@ -433,7 +459,20 @@ expected:
 
 **Unresolved-condition control.** If the refund ground, the Commissioner's satisfaction or the remitted amount is not established, retain the **$30 gross IPT** and mark net IPT and FIT-plus-net-IPT **Needs Input**. Do not assume the $10 remission or substitute zero for an unknown decision. This is a required manual control, not a claim that the arithmetic block tests a missing-evidence workflow. [TAA].
 
-## Outputs and reviewer handoff
+## When to refuse or refer
+
+Run every applicable universal/R-CIT refusal first, retaining its exact canonical trigger/message/action. R-CIT-6 concerns a current audit or notice of deficiency. Disputed/dual residence, regulated funds and liquidation have separate triggers. An ordinary related-party relationship alone does not establish an audit trigger. Intake confirmation or a reviewer flag cannot override a fired refusal.
+
+| Additional code | Trigger | Exact message |
+| --- | --- | --- |
+| R-NZ-ICA-SPECIAL | Requested computation requires an unsupported special entity, transaction, group, tax-pooling, historical or other ICA branch | This ICA companion cannot compute the requested special treatment. Establish its applicable primary sources, conditions and qualified review before continuing. |
+| R-NZ-ICA-INCOMPLETE | A complete company or ICA result is requested whilst mandatory applicable content, source conditions or outputs remain unsupported | This ICA schedule is an incomplete corporate companion. Do not deliver a complete company result or mark the workflow complete. Establish every mandatory source condition, country slot and required output first. |
+
+Follow a fired refusal's full stop; do not issue partial computed work through it. Record fired/cleared codes and exact messages in the brief, or the reply if refusal precedes a brief. A missing ordinary fact remains Needs Input unless a catalogue trigger actually applies.
+
+## Completion checklist
+
+### Outputs and reviewer handoff
 
 Produce all 4 actual universal outputs when an authorised engagement is run:
 
@@ -444,7 +483,7 @@ Produce all 4 actual universal outputs when an authorised engagement is run:
 
 Retain every corporate domain deliverable, including return/forms, current/deferred tax provision, payment/instalment schedules and documentation index. Reading these examples creates no actual workbook, recalculation, engagement output, submission, payment or practitioner sign-off.
 
-## Self-checks before delivery
+### Self-checks before delivery
 
 Run both bases' complete checks, including all **18 corporate self-checks**, without replacing them with ICA checks. Confirm residence/currency/financial statements/PBT, cited adjustments/exemptions/depreciation, losses/foreign credits, transfer pricing/PE, Pillar Two/deferred-tax/recapture, GAAR/disclosures, complete calendar and every T2/T3 reviewer position as those bases require. Evidence must establish applicable/inapplicable conclusions.
 
@@ -463,19 +502,100 @@ Run both bases' complete checks, including all **18 corporate self-checks**, wit
 - [ ] Form signs/precision and overdue interest/penalty/remission conditions are established or held.
 - [ ] Every mandatory country slot, output, formula/recalculation, source trace and professional review is complete before a completed-company or filing-ready claim.
 
-## Provenance and limitations
+## Sources
+
+The author (Ryan Duguid) read every source on 14 November 2026. The conformer re-read IR4JG 2026 and IRD's annual imputation return page on 14 November 2026; legislation.govt.nz refused automated fetches that day (HTTP 403), so the statute rows rest on the author's reading.
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| GB34: Income Tax Act 2007 (consolidation 4 September 2026), s GB 34. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1516995/ | Preserve lots and test continuity | 2026-11-14 |
+| GC13: Income Tax Act 2007 (consolidation 4 September 2026), s GC 13. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517112/ | Refund entitlement, cap, offset and cash | 2026-11-14 |
+| HA18: Income Tax Act 2007 (consolidation 4 September 2026), s HA 18. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517176/ | Preserve lots and test continuity | 2026-11-14 |
+| IR274: IRD IR274 (April 2024), supplementary. Read for the rule as cited (author's reading) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir274/ir274-2024.pdf?modified=20240604223621 | FIT, IPT and elected application | 2026-11-14 |
+| IR4J2026: IRD IR4J 2026 annual imputation return form. Read for the rule as cited (author's reading) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4j/ir4j-2026.pdf?modified=20260331190002 | Scope, Figures and filing/payment clocks, Map a supported 2025-26 result to IR4J2026, 1. Signed opening and ordinary movements, 2. Debit opening and year-end liability | 2026-11-14 |
+| IR4JG2026: IRD IR4JG April 2026 annual imputation return guide. Read for the who-files list (p 4), the 1 April 2025 to 31 March 2026 period, Australian companies' 31 July 2026 date and $250 penalty, the 66% qualifying-company note, 20 June 2026, 10% IPT and late payment penalties | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir4jg/ir4jg.pdf?modified=20260331224857 | Scope, Ask the client first, FIT, IPT and elected application, Map a supported 2025-26 result to IR4J2026 | 2026-11-14 |
+| IRD-annual: IRD, file an annual imputation return. Read for the forms listed (April 2026, no 2027) and the instruction to use the IR4 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-annual-imputation-return-ir4j | Map a supported 2025-26 result to IR4J2026 | 2026-11-14 |
+| IRD-interim: IRD, file an interim imputation return. Read for the rule as cited (author's reading) | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/imputation-for-companies/how-imputation-credits-work/file-an-interim-imputation-return---ir4j | Map a supported 2025-26 result to IR4J2026 | 2026-11-14 |
+| IRD-pay: IRD, when to pay. Read for the rule as cited (author's reading) | https://www.ird.govt.nz/managing-my-tax/make-a-payment/when-to-pay | Figures and filing/payment clocks | 2026-11-14 |
+| LA5: Income Tax Act 2007 (consolidation 4 September 2026), s LA 5. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517901/ | Scope, Establish dates and signed balances, Refund entitlement, cap, offset and cash | 2026-11-14 |
+| LA6: Income Tax Act 2007 (consolidation 4 September 2026), s LA 6. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517903/ | Establish dates and signed balances, Refund entitlement, cap, offset and cash | 2026-11-14 |
+| LB4: Income Tax Act 2007 (consolidation 4 September 2026), s LB 4. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517921/ | Refund entitlement, cap, offset and cash | 2026-11-14 |
+| OA3: Income Tax Act 2007 (consolidation 4 September 2026), s OA 3. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518637/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| OA5: Income Tax Act 2007 (consolidation 4 September 2026), s OA 5. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518642/ | Establish dates and signed balances | 2026-11-14 |
+| OA6: Income Tax Act 2007 (consolidation 4 September 2026), s OA 6. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518651/ | Establish dates and signed balances | 2026-11-14 |
+| OA7: Income Tax Act 2007 (consolidation 4 September 2026), s OA 7. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518661/ | Scope, Establish dates and signed balances, Preserve lots and test continuity, 1. Signed opening and ordinary movements, 9. Consume the oldest lot once | 2026-11-14 |
+| OA8: Income Tax Act 2007 (consolidation 4 September 2026), s OA 8. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518664/ | Scope, Establish dates and signed balances, Preserve lots and test continuity, 5. Continuity fails at 65%, 6. Exactly 66% passes the stipulated test, 9. Consume the oldest lot once | 2026-11-14 |
+| OB1: Income Tax Act 2007 (consolidation 4 September 2026), s OB 1. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518696/ | Scope, Ask the client first | 2026-11-14 |
+| OB2: Income Tax Act 2007 (consolidation 4 September 2026), s OB 2. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518700/ | Ask the client first | 2026-11-14 |
+| OB25: Income Tax Act 2007 (consolidation 4 September 2026), s OB 25. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518751/ | Establish dates and signed balances, FIT, IPT and elected application | 2026-11-14 |
+| OB3: Income Tax Act 2007 (consolidation 4 September 2026), s OB 3. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518702/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| OB30: Income Tax Act 2007 (consolidation 4 September 2026), s OB 30. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518762/ | Establish dates and signed balances, 1. Signed opening and ordinary movements | 2026-11-14 |
+| OB32: Income Tax Act 2007 (consolidation 4 September 2026), s OB 32. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518766/ | Establish dates and signed balances, Refund entitlement, cap, offset and cash, 1. Signed opening and ordinary movements | 2026-11-14 |
+| OB33: Income Tax Act 2007 (consolidation 4 September 2026), s OB 33. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518772/ | Establish dates and signed balances, FIT, IPT and elected application | 2026-11-14 |
+| OB34: Income Tax Act 2007 (consolidation 4 September 2026), s OB 34. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518774/ | Establish dates and signed balances | 2026-11-14 |
+| OB35: Income Tax Act 2007 (consolidation 4 September 2026), s OB 35. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518776/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| OB37: Income Tax Act 2007 (consolidation 4 September 2026), s OB 37. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518780/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| OB4: Income Tax Act 2007 (consolidation 4 September 2026), s OB 4. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518705/ | Establish dates and signed balances, FIT, IPT and elected application, 1. Signed opening and ordinary movements, 8. FIT allocation supplies no extra ICA credit | 2026-11-14 |
+| OB41: Income Tax Act 2007 (consolidation 4 September 2026), s OB 41. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518791/ | Establish dates and signed balances, Preserve lots and test continuity, 5. Continuity fails at 65%, 6. Exactly 66% passes the stipulated test, 9. Consume the oldest lot once | 2026-11-14 |
+| OB46: Income Tax Act 2007 (consolidation 4 September 2026), s OB 46. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518820/ | Preserve lots and test continuity, FIT, IPT and elected application | 2026-11-14 |
+| OB5: Income Tax Act 2007 (consolidation 4 September 2026), s OB 5. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518708/ | Establish dates and signed balances | 2026-11-14 |
+| OB54: Income Tax Act 2007 (consolidation 4 September 2026), s OB 54. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518839/ | Establish dates and signed balances, FIT, IPT and elected application | 2026-11-14 |
+| OB56: Income Tax Act 2007 (consolidation 4 September 2026), s OB 56. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518843/ | Establish dates and signed balances | 2026-11-14 |
+| OB6: Income Tax Act 2007 (consolidation 4 September 2026), s OB 6. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518710/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| OB65: Income Tax Act 2007 (consolidation 4 September 2026), s OB 65. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518870/ | FIT, IPT and elected application, 1. Signed opening and ordinary movements, 2. Debit opening and year-end liability | 2026-11-14 |
+| OB67: Income Tax Act 2007 (consolidation 4 September 2026), s OB 67. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518874/ | FIT, IPT and elected application, 2. Debit opening and year-end liability, 3. Consecutive-year reduction needs notification, 4. Credits equal to the previous debit | 2026-11-14 |
+| OB69: Income Tax Act 2007 (consolidation 4 September 2026), s OB 69. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518881/ | FIT, IPT and elected application, 8. FIT allocation supplies no extra ICA credit | 2026-11-14 |
+| OB8: Income Tax Act 2007 (consolidation 4 September 2026), s OB 8. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518714/ | Establish dates and signed balances, 1. Signed opening and ordinary movements | 2026-11-14 |
+| OB9: Income Tax Act 2007 (consolidation 4 September 2026), s OB 9. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1518716/ | Establish dates and signed balances, 1. Signed opening and ordinary movements | 2026-11-14 |
+| OP2: Income Tax Act 2007 (consolidation 4 September 2026), s OP 2. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519412/ | Establish dates and signed balances | 2026-11-14 |
+| RA6: Income Tax Act 2007 (consolidation 4 September 2026), s RA 6. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519737/ | Establish dates and signed balances | 2026-11-14 |
+| RA9: Income Tax Act 2007 (consolidation 4 September 2026), s RA 9. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519743/ | Establish dates and signed balances | 2026-11-14 |
+| RC32: Income Tax Act 2007 (consolidation 4 September 2026), s RC 32. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519904/ | Establish dates and signed balances | 2026-11-14 |
+| RC35: Income Tax Act 2007 (consolidation 4 September 2026), s RC 35. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1519914/ | FIT, IPT and elected application, 8. FIT allocation supplies no extra ICA credit | 2026-11-14 |
+| RM10: Income Tax Act 2007 (consolidation 4 September 2026), s RM 10. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520433/ | Scope, Establish dates and signed balances, Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RM13: Income Tax Act 2007 (consolidation 4 September 2026), s RM 13. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520441/ | Scope, Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RM14: Income Tax Act 2007 (consolidation 4 September 2026), s RM 14. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520443/ | Refund entitlement, cap, offset and cash | 2026-11-14 |
+| RM15: Income Tax Act 2007 (consolidation 4 September 2026), s RM 15. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520445/ | Scope, Establish dates and signed balances, Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RM16: Income Tax Act 2007 (consolidation 4 September 2026), s RM 16. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520447/ | Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RM17: Income Tax Act 2007 (consolidation 4 September 2026), s RM 17. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520449/ | Scope, FIT, IPT and elected application, Refund entitlement, cap, offset and cash, 8. FIT allocation supplies no extra ICA credit | 2026-11-14 |
+| RM2: Income Tax Act 2007 (consolidation 4 September 2026), s RM 2. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520416/ | Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RM32: Income Tax Act 2007 (consolidation 4 September 2026), s RM 32. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520489/ | Refund entitlement, cap, offset and cash | 2026-11-14 |
+| RM4: Income Tax Act 2007 (consolidation 4 September 2026), s RM 4. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520420/ | Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| RP17B: Income Tax Act 2007 (consolidation 4 September 2026), s RP 17B. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM2630341/ | Scope, Establish dates and signed balances | 2026-11-14 |
+| RP19: Income Tax Act 2007 (consolidation 4 September 2026), s RP 19. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520541/ | Establish dates and signed balances | 2026-11-14 |
+| RZ6: Income Tax Act 2007 (consolidation 4 September 2026), s RZ 6. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520562/ | Refund entitlement, cap, offset and cash | 2026-11-14 |
+| TAA: Tax Administration Act 1994 (consolidation 1 October 2026). Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/1994/166/en/latest/ | Scope, Figures and filing/payment clocks, Establish dates and signed balances, FIT, IPT and elected application, Refund entitlement, cap, offset and cash, Map a supported 2025-26 result to IR4J2026, 2. Debit opening and year-end liability, 3. Consecutive-year reduction needs notification, 4. Credits equal to the previous debit, 10. Evidenced partial IPT remission | 2026-11-14 |
+| W03: Taxation Act 2024 No 11 (multinational tax), commencement and application provisions. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2024/11/en/latest/ | Scope | 2026-11-14 |
+| W07: Taxation Act 2026 No 8 (compliance), commencement and application provisions. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2026/8/en/latest/ | Scope, Figures and filing/payment clocks, Preserve lots and test continuity, Refund entitlement, cap, offset and cash, 7. Later refund request, separate chronology | 2026-11-14 |
+| W10: Taxation Act 2023 No 5 (platform economy), commencement and application provisions. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2023/5/en/latest/ | Scope | 2026-11-14 |
+| W11: Taxation Act 2025 No 9 (remedial), commencement and application provisions. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2025/9/en/latest/ | Scope, Preserve lots and test continuity | 2026-11-14 |
+| YA1: Income Tax Act 2007 (consolidation 4 September 2026), s YA 1. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1520575/ | Scope, Ask the client first, Preserve lots and test continuity | 2026-11-14 |
+| YC11: Income Tax Act 2007 (consolidation 4 September 2026), s YC 11. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523090/ | Scope, Preserve lots and test continuity | 2026-11-14 |
+| YC15: Income Tax Act 2007 (consolidation 4 September 2026), s YC 15. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523108/ | Preserve lots and test continuity | 2026-11-14 |
+| YC2: Income Tax Act 2007 (consolidation 4 September 2026), s YC 2. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523060/ | Preserve lots and test continuity, 5. Continuity fails at 65% | 2026-11-14 |
+| YC20: Income Tax Act 2007 (consolidation 4 September 2026), s YC 20. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523128/ | Scope, Preserve lots and test continuity | 2026-11-14 |
+| YC3: Income Tax Act 2007 (consolidation 4 September 2026), s YC 3. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523063/ | Preserve lots and test continuity | 2026-11-14 |
+| YC4: Income Tax Act 2007 (consolidation 4 September 2026), s YC 4. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523065/ | Scope, Preserve lots and test continuity | 2026-11-14 |
+| YD2: Income Tax Act 2007 (consolidation 4 September 2026), s YD 2. Read for the rule as cited (author's reading; legislation.govt.nz refused automated fetches on 2026-11-14) | https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523137/ | Scope, Ask the client first | 2026-11-14 |
+
+Author's provenance notes, kept as written:
 
 Version 0.2 was prepared on 14 November 2026 from selected primary sources below. Independent preparation checks covered source bindings/boundaries, operative-period distinctions, form/native/visual mapping and hypothetical arithmetic. They are not practitioner sign-off, complete historical/current-law assurance, an executed engagement or corporate-topic completion. This tier 2 guide remains pending licensed practitioner review; its examples establish no actual taxpayer result.
 
 The 2026 form's 2 pages were read natively without OCR and visually checked. Font-rendering warnings, zero-sign, precision and interactive-field limits remain. IR2742024 has column-layout/example-year limitations and does not establish general intraday order or blanket interest relief. Use operative provisions and period-specific evidence for a relied-on result.
-
-## Primary sources
 
 - Income Tax Act 2007: selected OA/OB/OP account, RA/RC payment, RM refund and YA/YC/YD definition/ownership/residence provisions, consolidation 4 September 2026.
 - Tax Administration Act 1994: selected record, return, assessment, transfer, penalty and interest provisions, consolidation 1 October 2026.
 - IR4J2026 and April 2026 IR4JG: 2025-26 annual form/instructions, with the representation limits above.
 - IRD annual/interim return and payment guidance; IR274 April 2024 is supplementary with its stated layout/period limits.
 - Selected commencement/application provisions in the 2024 multinational-tax, 2026 compliance, 2023 platform-economy and 2025 remedial Acts. No source below establishes every later amendment or every special branch.
+
+
+<!-- openaccountants-cta-block -->
+
+---
+
+Not yet confirmed: the form mapping (IR4J 2026 boxes 6 to 10A) and the worked examples are for the 2025-2026 filing cycle, because IRD has not published a 2027 IR4J or guide; the 2026-27 FIT and IPT date of 20 June 2027 is derived from the rule, not read on a 2027 form; every Income Tax Act and Tax Administration Act row could not be opened on 14 November 2026 and rests on the author's reading of the 4 September 2026 and 1 October 2026 consolidations; zero-sign, display precision, rounding and interactive-field behaviour on the form; general intraday ordering. No accountant has reviewed this draft.
 
 [GB34]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1516995/
 [GC13]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1517112/
@@ -546,23 +666,3 @@ The 2026 form's 2 pages were read natively without OCR and visually checked. Fon
 [YC3]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523063/
 [YC4]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523065/
 [YD2]: https://www.legislation.govt.nz/act/public/2007/97/en/latest/sections/DLM1523137/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

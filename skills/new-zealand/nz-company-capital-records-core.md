@@ -4,11 +4,11 @@ description: "Use for selected New Zealand ordinary company share issues, share 
 jurisdiction: NZ
 category: formation
 tier: 2
-review_status: pending_review
-tax_year: 2026
-tax_year_notes: "Company-law controls checked on 14 November 2026; revalidate the address-information transition from 18 November 2026. This is not an income-tax year."
+domain: advisory
+type: situation-rules
+checked_on: 2026-11-14
 last_updated: 2026-11-14
-version: 0.1
+version: 0.2
 depends_on:
   - workflow-base
   - company-formation-workflow-base
@@ -16,9 +16,11 @@ depends_on:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# New Zealand company capital, records and shareholder decisions v0.1
+# New Zealand company capital, records and shareholder decisions v0.2
 
-## Scope and source period
+## Scope
+
+**Checked on:** 2026-11-14 (company law, not an income-tax year). Revalidate the address-information transition from 18 November 2026.
 
 Prepare selected working papers for an already selected ordinary domestic company limited by shares. Load workflow-base, company-formation-workflow-base and nz-company-register-core. Retain their confirmation sequence, entity-choice gates, mandatory country slots, required outputs, refusals and qualified-review controls. This guide adds selected capital, records and shareholder-decision rules; it does not complete the formation or financial-reporting topic.
 
@@ -30,7 +32,7 @@ At the check date the Address Information Amendment Act remains labelled 'Not ye
 
 Use redacted summaries and synthetic labels in these working papers. The professional retains personal addresses, identity documents, tax identifiers, bank details, authentication and signing credentials, and performs any authorised submission or payment. Public-inspection duties below do not authorise this workflow to collect or publish private records.
 
-## Engagement and formation completion gates
+## Ask the client first
 
 Obtain the actual constitution and issue terms, current share register, class rights, existing offers and agreements, proposed consideration, board/shareholder authority, transaction date, balance date, meeting history and record locations. Establish voting eligibility for each resolution, rather than equating issued shares, shareholders, voting rights and votes actually cast. Record missing or conflicting evidence as Needs Input, with the affected output and next evidence required.
 
@@ -49,7 +51,9 @@ Obtain the actual constitution and issue terms, current share register, class ri
 
 For a formation advisory engagement retain all 5 mandatory outputs: entity comparison, registration checklist, cost breakdown, first-year compliance calendar and reviewer brief. Retain the universal outputs as well. Put these selected facts into the relevant outputs without marking a whole output complete whilst a mandatory slot is unresolved. A standalone existing-company capital, records or decision engagement may prepare its scoped working papers once its applicable facts and sources are verified; it does not thereby complete formation or reporting. Keep evidence, calculations, unresolved facts and qualified-review status consistent.
 
-## Share rights and initial capital
+## The method, step by step
+
+### Share rights and initial capital
 
 Section 36 supplies default rights to one vote per share on a poll on any company resolution, an equal share of authorised dividends and an equal share of surplus assets. Under section 36(2), those rights may be negated, altered or added to by the constitution or the terms of issue under sections 41(b), 42, 44 or 107(2), subject to section 53. Section 37 permits different classes and rights, including limited or no voting rights, subject to the constitution. Establish actual rights before any proportional or voting calculation. Section 38 says shares have no nominal or par value. It does not establish a NZ$1 minimum, an obligation to pay NZ$1 per share, a solvency conclusion or exemption from a special regime. [Sections 36/37/38][S36], [section 37][S37], [section 38][S38].
 
@@ -57,7 +61,7 @@ Under section 41(a), forthwith after registration the company must issue to each
 
 For section 41(a) initial shares, section 46A says the shareholder is not liable to pay consideration unless the constitution specifies it or a pre- or post-incorporation contract provides for it. Read the actual constitution and contract. Do not infer either a free issue or an unpaid capital liability from the number of shares alone. Section 97 limits a shareholder's liability for company obligations solely by reason of being a shareholder, but preserves specified company liabilities and independent contractual, tortious or other liability. Do not describe limited liability as universal personal immunity. [Section 46A][S46A], [section 97][S97].
 
-## Ordinary later share issue working papers
+### Ordinary later share issue working papers
 
 Keep the legal route, authority and each filing clock distinct. The professional must verify all applicable requirements before issue.
 
@@ -72,7 +76,7 @@ Keep the legal route, authority and each filing clock distinct. The professional
 
 Section 47(8) excludes issue on conversion or exercise of an option from section 47, but section 49 separately addresses consideration, board findings, certificates and filing when convertible financial products or options are granted. Do not treat the conversion exclusion as permission to omit the grant-stage requirements. Keep those instruments outside this ordinary issue workflow until separately reviewed. Section 107 also permits specified unanimous written assent routes, with their own conditions and notice requirements; a 75% written resolution is not unanimous assent and is not a blanket waiver of capital rules. [Sections 47/49][S47], [section 49][S49], [section 107][S107].
 
-## Share register, transfers and certificates
+### Share register, transfers and certificates
 
 The company's own share register is distinct from information filed with the Registrar. Under section 87, record issued shares and transfer restrictions, including where a restriction document can be inspected. For each class keep an alphabetical record of current holders and those who held shares within the last 10 years, their latest known addresses, holdings and the required dated issue, repurchase, redemption and transfer entries and counterparties. Directors must take reasonable steps to supervise maintenance and prompt transfer entry under section 90. Section 89 makes registration prima facie evidence of legal title, subject to rectification, and section 91 provides court remedies. Record disputes as unresolved rather than deciding ownership from a spreadsheet alone. Section 92 prohibits entering notice of a trust; personal-representative and bankruptcy cases in sections 93/94 have their own rules. [Section 87][S87], [sections 89/90][S89], [section 90][S90], [section 91][S91], [sections 92–94][S92], [section 93][S93], [section 94][S94].
 
@@ -82,7 +86,7 @@ For a section 84 transfer, obtain the transfer signed by the current holder or p
 
 For an ordinary unlisted company outside section 95(1)/(2), a shareholder may request a certificate for some or all shares. Within 20 working days after receipt, send the certificate showing company name, class and number, separating parcels in the register if the request covers only some shares. Do not apply the listed-company automatic certificate rule to every ordinary company. Where a certificate has been issued, section 95(5) requires it with the transfer, or evidence of loss/destruction and any indemnity required by the board, subject to the statutory exceptions. Cancel a surrendered certificate; under the ordinary route issue a replacement to the transferee only on request. [Section 95][S95].
 
-## Company and accounting records
+### Company and accounting records
 
 Section 189 is subject to the separate share-register and accounting-location rules. Keep a record inventory and the legal basis for each period rather than labelling every item '7 years'. [Section 189][S189].
 
@@ -98,7 +102,7 @@ A shorter period needs the Registrar's written approval under section 189(2); it
 
 Section 190 permits written records or an easily accessible form convertible into writing. The board must have adequate measures both to prevent and to detect falsification. Section 194 requires correct transaction records at all times and a satisfactory accounting-record control system. The records must be in written English or easily accessible and convertible into written English. GAAP and audit capability in section 194(1)(b)/(c) are conditional on the company's applicable statement and audit requirements. They do not establish that every ordinary company requires an audit, or that no-audit status removes transaction-record duties. Section 194(1A) expressly includes transactions of the type described in Crimes Act section 105C(3); keeping a record does not approve the underlying conduct. No criminal-law defence is assessed here. [Section 190][S190], [section 194][S194].
 
-## Inspection and copies
+### Inspection and copies
 
 Before responding, the professional must classify the request, actual entitlement, service date, records and applicable address protection. Keep personal data outside this workflow. Under section 215, a person serving written notice may inspect the incorporation certificate, any constitution, share register, ultimate holding company information, directors' full names/residential addresses and office/service addresses in the prescribed manner. Section 216 gives shareholders and their written authorised representatives additional access on written notice to shareholder minutes/resolutions, specified communications during the preceding 10 years, director certificates and the interests register. Its minutes/resolutions and certificate categories do not repeat section 189's 7-year limit; do not import that limit automatically. Revalidate the address transition described above. [Section 215][S215], [section 216][S216], [Address Act][V2].
 
@@ -106,7 +110,7 @@ Section 217 requires availability at the records location from 9 am to 5 pm on e
 
 Section 191 separately permits a director, on reasonable notice, to inspect company records in writing without charge at a reasonable time specified by the director. Restriction under that section is a court order on the company's application and stated grounds, not an unrestricted board power to deny access. [Section 191][S191].
 
-## Annual meetings and shareholder resolutions
+### Annual meetings and shareholder resolutions
 
 The register annual return is separate from the annual shareholder meeting, statutory statements, annual reports and income-tax return. Track each stream independently. Section 120(1) requires an annual meeting both within 6 months after balance date and within 15 months after the previous annual meeting. Section 120(2) says the first annual meeting need not be held in the registration calendar year but must be held within 18 months after registration. Preserve that distinction; do not use one deadline as a general replacement for another. Hold a calculated date until the actual dates, applicable exception and calendar are verified. [Section 120][S120].
 
@@ -114,18 +118,18 @@ Section 120(5) dispenses with calling/holding the annual meeting only if all 3 c
 
 For an actual meeting, section 124 applies Schedule 1, except matters the Schedule expressly lets the constitution regulate. Clause 2 requires written notice at least 10 working days beforehand to every shareholder entitled to notice, every director and an auditor. Include sufficiently detailed business, the special-resolution text, any sections 207I/207J resolution text and applicable section 110 rights. The Schedule also governs waiver/irregularity, quorum, proxies, polls, postal votes, electronic participation and minutes. Verify those provisions and the constitution before counting a meeting result. Subject to its exceptions and the constitution, clause 4 requires a quorum able to exercise a majority of votes on the business; clause 12, subject to the constitution, removes the voting right on a share where a sum due to the company in respect of that share remains unpaid, at a shareholder meeting other than an interest-group meeting. Consideration payable later does not remove that right merely because the share is not fully paid. Do not infer eligibility from the total share count alone. [Section 124][S124], [Schedule 1][SCH1].
 
-| Decision route | Threshold and denominator |
-| --- | --- |
-| Ordinary resolution at a meeting | Section 105: simple majority of votes of those entitled to vote and voting, unless the Act or constitution requires otherwise |
-| Special resolution at a meeting | Section 2: at least 75% of votes of those entitled to vote and voting, or the constitution's higher majority |
-| General section 122 written resolution | At least 75%, or the constitution's higher special-resolution percentage, of eligible shareholders, together holding at least that percentage of all votes entitled to be cast. Both headcount and voting tests apply |
-| Section 122(2)/(3)(a) written resolution for sections 207I/207J | At least 95% of all votes entitled to be cast on the resolution, subject to the underlying section's eligibility, constitution and timing requirements. It is not the general written-resolution test |
+| Decision route | Threshold and denominator | Source |
+| --- | --- | --- |
+| Ordinary resolution at a meeting | Section 105: simple majority of votes of those entitled to vote and voting, unless the Act or constitution requires otherwise | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320482/ |
+| Special resolution at a meeting | Section 2: at least 75% of votes of those entitled to vote and voting, or the constitution's higher majority | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM319576/ |
+| General section 122 written resolution | At least 75%, or the constitution's higher special-resolution percentage, of eligible shareholders, together holding at least that percentage of all votes entitled to be cast. Both headcount and voting tests apply | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320619/ |
+| Section 122(2)/(3)(a) written resolution for sections 207I/207J | At least 95% of all votes entitled to be cast on the resolution, subject to the underlying section's eligibility, constitution and timing requirements. It is not the general written-resolution test | same |
 
 A meeting's votes actually cast and a written resolution's all-eligible-votes denominator are different. Verify polls, proxies, joint holders, unpaid amounts and the actual constitution before using those thresholds. Sections 207I/207J also have distinct meeting opt-out rules, and section 207H defines the opting period. This guide does not classify a company as eligible, large, public, subject to section 207E or exempt from statements/audit/annual reports. Obtain that separate reporting chain before using either opt-out. [Sections 105/2][S105], [special-resolution definition][S2], [section 122][S122], [sections 207H/207I/207J][S207H], [section 207I][S207I], [section 207J][S207J].
 
 Section 122(3A) permits similar-form documents, including electronic communications, signed or assented to by or for the relevant shareholders. No prior notice is required under section 122(6), but within 5 working days after passing send a copy to every shareholder who did not sign personally or have it signed on their behalf. For a special resolution required by section 106(1)(a) or (b), also send the section 110 rights statement. Actual purchase rights are conditional, including the relevant activity-restricting constitutional alteration or major transaction and the shareholder's position; not every constitutional change automatically grants a buy-out. Resolve the full procedure separately. [Section 122][S122], [section 106][S106], [section 110][S110].
 
-## Worked controls
+## Worked cases
 
 All cases are synthetic. The numeric checks test stated arithmetic only. Legal eligibility, actual values, authority, calendars and professional conclusions remain independent inputs. Do not use a passing block as a certificate, filing or approval.
 
@@ -364,13 +368,94 @@ expected:
 tolerance: 0
 ```
 
+## When to refuse or refer
+
+These points restate the limits and holds in the method and cases above; they add no new rule.
+
+- Refer listed companies, public offers, financial markets participants, co-operatives, overseas companies, amalgamations, buy-backs, redemptions, distributions, financial assistance, insolvency, restructurings, disputed rights, options and convertible instruments: each needs its own source chain (Scope).
+- Refer section 118 dissenting-holder purchase rights and the section 110 buy-out procedure for separate qualified review.
+- Do not appraise property or future services offered as non-cash consideration; obtain support for the section 47 value.
+- Do not decide a share-ownership dispute from a spreadsheet; record it as unresolved (sections 89 to 91).
+- Do not classify a company as eligible, large, public, subject to section 207E or exempt from statements, audit or annual reports; obtain the separate reporting chain before using a section 207I or 207J opt-out.
+- Hold any alternative-address application or post-transition disclosure until the Companies (Address Information) Amendment Act 2025 has commenced and been revalidated.
+- Do not collect personal addresses, identity documents, tax identifiers, bank details or signing credentials; the professional performs any submission or payment.
+- Do not mark a filing, meeting exemption or transaction approved without its actual result and qualified review. No criminal-law defence is assessed here.
+
 ## Delivery and self-check
 
 For a formation advisory engagement deliver the inherited mandatory outputs together. For a standalone existing-company engagement deliver the agreed scoped working papers and universal outputs. Attach the redacted capital/authority schedule, separate notice calendar, register reconciliation, record inventory/location map and decision-status evidence where relevant. Show sources and check date, actual terms, calculations, missing evidence, professional decisions and completion limits. Do not mark a filing, meeting exemption or transaction approved without its actual result and qualified review.
 
 Before delivery verify: scope and date; current amendments; complete inherited country slots; issue route and actual rights; constitution/pre-emption/interest groups/major transaction; supported consideration and certificates; new-liability consents; share-register entry and separate statutory clocks; prescribed form and channel; transfer/certificate conditions; each retention unit and independent access duty; locations and notices; accessible English accounting records and prevention/detection controls; actual decision eligibility, denominators, meeting procedure, annual business and non-signer notices; separate reporting, audit, tax and register-return statuses. Reject malformed, negative or duplicate counts, zero eligible denominators and signing counts exceeding the verified eligible population. Joint holders and class entitlements require their actual statutory treatment. A passing arithmetic block cannot validate those inputs.
 
-## Primary sources and revision
+## Sources
+
+| Source | URL | Read for | Read on |
+| --- | --- | --- | --- |
+| [V1] Fresh Companies Act version warnings | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320614/?active_tab=version | Read for Fresh Companies Act version warnings (cited as: Version warnings) | 2026-11-14 |
+| [V5] Deposit Takers Act 2023 | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469579/ | Read for Schedule 3 (cited as: Deposit Takers amendments) | 2026-11-14 |
+| [V3] Fresh Deposit Takers commencement | https://www.legislation.govt.nz/act/public/2023/35/en/latest/sections/LMS469452/ | Read for Fresh Deposit Takers commencement (cited as: commencement) | 2026-11-14 |
+| [V6] Employment Leave Act 2026 | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS1506038/ | Read for Schedule 2 (cited as: Employment Leave amendments) | 2026-11-14 |
+| [V4] Fresh Employment Leave commencement | https://www.legislation.govt.nz/act/public/2026/48/en/latest/sections/LMS737990/ | Read for Fresh Employment Leave commencement (cited as: commencement) | 2026-11-14 |
+| [V2] Fresh Address Information Amendment Act | https://www.legislation.govt.nz/act/public/2025/67/en/latest/ | Read for Fresh Address Information Amendment Act (cited as: Address Act, ss2/6/7; Address Act) | 2026-11-14 |
+| [V7] Companies Act 1993 (Address Information) Amendment Regulations 2026 address-regulations-2026.txt | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/319/en/latest/ | Read for Companies Act 1993 (Address Information) Amendment Regulations 2026 address-regulations-2026.txt (cited as: address regulations) | 2026-11-14 |
+| [S36] Companies Act s36 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320143/ | Read for Companies Act s36 (cited as: Sections 36/37/38) | 2026-11-14 |
+| [S37] Companies Act s37 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320147/ | Read for Companies Act s37 (cited as: section 37) | 2026-11-14 |
+| [S38] Companies Act s38 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320149/ | Read for Companies Act s38 (cited as: section 38) | 2026-11-14 |
+| [S41] Companies Act s41 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320154/ | Read for Companies Act s41 (cited as: Section 41; Sections 41/46A) | 2026-11-14 |
+| [S51] Companies Act s51 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320168/ | Read for Companies Act s51 (cited as: section 51) | 2026-11-14 |
+| [S46A] Companies Act s46A | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320162/ | Read for Companies Act s46A (cited as: Section 46A; section 46A) | 2026-11-14 |
+| [S97] Companies Act s97 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320464/ | Read for Companies Act s97 (cited as: section 97) | 2026-11-14 |
+| [S42] Companies Act s42 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320156/ | Read for Companies Act s42 (cited as: Section 42) | 2026-11-14 |
+| [S44] Companies Act s44 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320159/ | Read for Companies Act s44 (cited as: section 44) | 2026-11-14 |
+| [S45] Companies Act s45 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320160/ | Read for Companies Act s45 (cited as: Section 45) | 2026-11-14 |
+| [S116] Companies Act s116 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320603/ | Read for Companies Act s116 (cited as: sections 116/117) | 2026-11-14 |
+| [S117] Companies Act s117 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320609/ | Read for Companies Act s117 (cited as: section 117) | 2026-11-14 |
+| [S118] Companies Act s118 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320611/ | Read for Companies Act s118 (cited as: section 118) | 2026-11-14 |
+| [S129] Companies Act s129 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320644/ | Read for Companies Act s129 (cited as: Section 129) | 2026-11-14 |
+| [S46] Companies Act s46 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320161/ | Read for Companies Act s46 (cited as: Section 46) | 2026-11-14 |
+| [S47] Companies Act s47 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320164/ | Read for Companies Act s47 (cited as: section 47(1); Section 47; Sections 47/49; section 47) | 2026-11-14 |
+| [S48] Companies Act s48 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320165/ | Read for Companies Act s48 (cited as: section 48) | 2026-11-14 |
+| [S50] Companies Act s50 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320167/ | Read for Companies Act s50 (cited as: Section 50) | 2026-11-14 |
+| [S43] Companies Act s43 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320157/ | Read for Companies Act s43 (cited as: Sections 43/51; Sections 43/44/47) | 2026-11-14 |
+| [R4] Companies Act Regulations reg4 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190588/ | Read for Companies Act Regulations reg4 (cited as: Regulation 4) | 2026-11-14 |
+| [F7] Regulations Schedule1 Form7 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190829/ | Read for Regulations Schedule1 Form7 (cited as: Form 7) | 2026-11-14 |
+| [R7] Companies Act Regulations reg7 | https://www.legislation.govt.nz/secondary-legislation/pco-drafted/1994/118/en/latest/sections/DLM190596/ | Read for Companies Act Regulations reg7 (cited as: regulation 7) | 2026-11-14 |
+| [S49] Companies Act s49 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320166/ | Read for Companies Act s49 (cited as: section 49) | 2026-11-14 |
+| [S107] Companies Act s107 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320484/ | Read for Companies Act s107 (cited as: section 107) | 2026-11-14 |
+| [S87] Companies Act s87 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320447/ | Read for Companies Act s87 (cited as: Section 87) | 2026-11-14 |
+| [S89] Companies Act s89 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320450/ | Read for Companies Act s89 (cited as: sections 89/90) | 2026-11-14 |
+| [S90] Companies Act s90 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320451/ | Read for Companies Act s90 (cited as: section 90) | 2026-11-14 |
+| [S91] Companies Act s91 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320452/ | Read for Companies Act s91 (cited as: section 91) | 2026-11-14 |
+| [S92] Companies Act s92 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320453/ | Read for Companies Act s92 (cited as: sections 92–94) | 2026-11-14 |
+| [S93] Companies Act s93 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320454/ | Read for Companies Act s93 (cited as: section 93) | 2026-11-14 |
+| [S94] Companies Act s94 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320455/ | Read for Companies Act s94 (cited as: section 94) | 2026-11-14 |
+| [S88] Companies Act s88 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320448/ | Read for Companies Act s88 (cited as: Section 88; Sections 88/195) | 2026-11-14 |
+| [S84] Companies Act s84 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320442/ | Read for Companies Act s84 (cited as: Section 84; Sections 84/95) | 2026-11-14 |
+| [S95] Companies Act s95 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320457/ | Read for Companies Act s95 (cited as: Section 95; section 95) | 2026-11-14 |
+| [S189] Companies Act s189 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320862/ | Read for Companies Act s189 (cited as: Section 189; Sections 189/195; section 189) | 2026-11-14 |
+| [S195] Companies Act s195 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320875/ | Read for Companies Act s195 (cited as: section 195) | 2026-11-14 |
+| [S190] Companies Act s190 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320865/ | Read for Companies Act s190 (cited as: Section 190) | 2026-11-14 |
+| [S194] Companies Act s194 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320874/ | Read for Companies Act s194 (cited as: section 194) | 2026-11-14 |
+| [S215] Companies Act s215 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321136/ | Read for Companies Act s215 (cited as: Section 215) | 2026-11-14 |
+| [S216] Companies Act s216 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321137/ | Read for Companies Act s216 (cited as: section 216) | 2026-11-14 |
+| [S217] Companies Act s217 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321139/ | Read for Companies Act s217 (cited as: Sections 217/218) | 2026-11-14 |
+| [S218] Companies Act s218 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM321141/ | Read for Companies Act s218 (cited as: section 218) | 2026-11-14 |
+| [S191] Companies Act s191 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320866/ | Read for Companies Act s191 (cited as: Section 191) | 2026-11-14 |
+| [S120] Companies Act s120 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320614/ | Read for Companies Act s120 (cited as: Section 120; Sections 120/122) | 2026-11-14 |
+| [S122] Companies Act s122 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320619/ | Read for Companies Act s122 (cited as: section 122; Section 122) | 2026-11-14 |
+| [S124] Companies Act s124 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320624/ | Read for Companies Act s124 (cited as: Section 124) | 2026-11-14 |
+| [SCH1] Companies Act Schedule1 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM323288/ | Read for Companies Act Schedule1 (cited as: Schedule 1; Schedule 1, clause 12) | 2026-11-14 |
+| [S105] Companies Act s105 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320482/ | Read for Companies Act s105 (cited as: Sections 105/2; Section 105) | 2026-11-14 |
+| [S2] Companies Act s2 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM319576/ | Read for Companies Act s2 (cited as: special-resolution definition) | 2026-11-14 |
+| [S207H] Companies Act s207H | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041581/ | Read for Companies Act s207H (cited as: sections 207H/207I/207J) | 2026-11-14 |
+| [S207I] Companies Act s207I | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041583/ | Read for Companies Act s207I (cited as: section 207I; sections 207I/207J) | 2026-11-14 |
+| [S207J] Companies Act s207J | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM6041584/ | Read for Companies Act s207J (cited as: section 207J) | 2026-11-14 |
+| [S106] Companies Act s106 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320483/ | Read for Companies Act s106 (cited as: section 106) | 2026-11-14 |
+| [S110] Companies Act s110 | https://www.legislation.govt.nz/act/public/1993/105/en/latest/sections/DLM320496/ | Read for Companies Act s110 (cited as: section 110) | 2026-11-14 |
+
+Not yet confirmed: legislation.govt.nz refused automated fetches on 2026-11-14 in this conforming pass, so the section pages were not re-opened; the read dates above are the writer's check of 14 November 2026. The Companies (Address Information) Amendment Act 2025 commences by 18 November 2026 at the latest and must be revalidated then. Audit thresholds, the share-issue filing fee and any authenticated portal or electronic-signature rule are not established here. No accountant has reviewed this draft.
+
+### Revision note and link references
 
 Checked 14 November 2026. Selected Act provisions use the 1 July 2025 consolidation, regulations use 1 July 2023 and the scoped amendment/currentness review is described above. Refresh affected provisions for later work, especially the 18 November 2026 address transition. No complete financial-reporting, audit, beneficial-ownership or special-capital regime is claimed.
 
@@ -439,23 +524,3 @@ Checked 14 November 2026. Selected Act provisions use the 1 July 2025 consolidat
 ## Disclaimer
 
 This is a source-cited draft for a qualified New Zealand professional's review. It does not establish complete formation, reporting, audit or tax compliance. Verify actual facts, operative law, authority, notices and filing requirements before acting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
