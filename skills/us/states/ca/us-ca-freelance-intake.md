@@ -33,7 +33,7 @@ In scope: a full-year California resident who works for themselves as a sole pro
 | California estimates | `ca-estimated-tax-540es` |
 | California health coverage penalty | `ca-form-3853-coverage` |
 | LLC annual tax, fee and Form 568 | `ca-llc-fee-and-tax`, `ca-smllc-form-568` |
-| Sales and use tax | `ca-sales-use-tax` |
+| Sales and use tax | `california-sales-tax` |
 | Employees | `ca-payroll` |
 
 ## Ask the client first
@@ -58,7 +58,7 @@ Then also ask, before the documents: other income and assets (wages, rental, K-1
    - Federal Form 1099-NEC: threshold, corporation exception, card and payment-app exclusion and the January 31 due date are in `us-1099-nec-issuance`. A bank-to-bank transfer (Zelle, an app from the client's bank) is not a third party settlement organization payment, so it is treated like a check.
    - California DE 542: report to the EDD when **all** hold: the client must file a federal Form 1099-NEC or 1099-MISC for the services; it paid $600 or more, or entered into a contract for $600 or more, in a calendar year; and the contractor is an individual, sole proprietor or single-member LLC. Due within 20 calendar days of the payment or contract reaching $600. Penalty $24 per failure without good cause, $490 if intentional or false.
    - The DE 542 condition (a) depends on the federal filing requirement. The EDD page still prints $600; where the federal 1099-NEC threshold for 2026 payments is higher than the amount paid (`us-1099-nec-issuance`), confirm with the EDD before concluding that no DE 542 is due.
-7. **Seller's permit.** "If you are doing business in California and intend to sell or lease tangible personal property subject to sales tax sold at retail, you are required to have a seller's permit" (CDTFA). A services-only freelancer does not meet that trigger. Goods sellers route to `ca-sales-use-tax`; do not decide at intake whether a digital product or bundle is taxable.
+7. **Seller's permit.** "If you are doing business in California and intend to sell or lease tangible personal property subject to sales tax sold at retail, you are required to have a seller's permit" (CDTFA). A services-only freelancer does not meet that trigger. Goods sellers route to `california-sales-tax`; do not decide at intake whether a digital product or bundle is taxable.
 8. **Local permits.** City and county business licences and business taxes are local; the CDTFA points to CalGold. Record the city and licence number.
 9. **Single-member LLC.** An LLC doing business in California, organized here or registered with the Secretary of State pays the $800 annual tax by the 15th day of the 4th month of its tax year, may owe the LLC fee, and files Form 568. Route all of it to `ca-llc-fee-and-tax`; a sole proprietor with no LLC owes none of it.
 10. **California differences to flag.** "In general, California R&TC does not conform to the OBBBA" (Schedule CA (540) instructions). Flag for `ca-540-individual-return`: any asset expensed federally under bonus depreciation or section 179 (separate California depreciation record), HSA contributions and earnings, and the QBI deduction (none in California).
