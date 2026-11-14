@@ -49,7 +49,7 @@ jobs:
         run: |
           HEAD_SHA="$(git rev-parse HEAD)"
           if [ "${DELIVERY_EVENT:-}" = "schedule" ]; then
-            python3 scripts/deliver-to-platform.py --lookback-days 7 --head "$HEAD_SHA" --batch-size 20 --work-list --send
+            python3 scripts/deliver-to-platform.py --lookback-days 7 --head "$HEAD_SHA" --batch-size 5 --work-list --send
           else
-            python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --batch-size 20 --work-list --send
+            python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --batch-size 5 --work-list --send
           fi
