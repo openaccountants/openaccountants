@@ -3,13 +3,13 @@ name: mn-corporate-and-pte
 description: "Minnesota M4/M3/M8, 2026 minimum fee, corporate AMT/NOL, unitary and foreign income corrections, PTE election/credits and separate estimate calendars."
 jurisdiction: US-MN
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
 type: computation
 category: state-tax
-version: "0.2"
+version: "0.3"
 ---
 
 # Minnesota corporate franchise and pass-through entity tax, 2026
@@ -28,7 +28,7 @@ Corporations transacting business or owning property in Minnesota must test M4 f
 | --- | --- | --- |
 | C-corporation franchise tax | 9.8% of Minnesota taxable net income | [290.06 subd. 1](https://www.revisor.mn.gov/statutes/cite/290.06); [M4](https://www.revenue.state.mn.us/sites/default/files/2026-07/m4-inst-25.pdf) |
 | Corporate AMT | 5.8%; compute AMTI/AMTT separately and credit regular tax as prescribed | [290.0921](https://www.revisor.mn.gov/statutes/cite/290.0921) |
-| Corporate AMT exemption | 40,000 reduced 25% of AMTI over 150,000; zero at 310,000; statutory exceptions apply | [290.0921 subd. 2](https://www.revisor.mn.gov/statutes/cite/290.0921) |
+| Corporate AMT exemption | 40,000 reduced 25% of AMTI over 150,000; zero at 310,000 (derived: 150,000 plus 40,000 / 25%); statutory exceptions apply | [290.0921 subd. 2](https://www.revisor.mn.gov/statutes/cite/290.0921) |
 | Regular corporate NOL limit/carry | 70% of taxable net income;15 succeeding taxable years; no carryback | [290.095 subds. 2-3](https://www.revisor.mn.gov/statutes/cite/290.095) |
 | PTE ordinary income rate | 9.85% for qualifying owners' state base; no owner standard deduction/exemption at entity level | [289A.08 subd. 7a](https://www.revisor.mn.gov/statutes/cite/289A.08); [PTE page](https://www.revenue.state.mn.us/pass-through-entity-pte-tax) |
 | C-corporation estimate trigger | Estimated tax more than 500 | [289A.26](https://www.revisor.mn.gov/statutes/cite/289A.26); [M4](https://www.revenue.state.mn.us/sites/default/files/2026-07/m4-inst-25.pdf) |
