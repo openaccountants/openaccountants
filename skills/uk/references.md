@@ -42,6 +42,7 @@ OpenAccountants is AGPL-3.0. The projects below have licences that can be used w
 
 | Source | What was read | URL | Read on |
 | --- | --- | --- | --- |
+| GOV.UK, Income Tax rates and Personal Allowances | Read for the 2026/27 tax year (6 April 2026 to 5 April 2027) and the bands a project's output is checked against | https://www.gov.uk/income-tax-rates | 2026-11-14 |
 | GitHub, hmrc/tax-kalculator | Read for the licence (Apache-2.0), language, scope and last push date | https://github.com/hmrc/tax-kalculator | 2026-11-14 |
 | GitHub, SavingTool/hmrc-income-tax | Read for the licence (MIT), scope and the README default tax year 2026/27 | https://github.com/SavingTool/hmrc-income-tax | 2026-11-14 |
 | GitHub, hmrc/paye-estimator | Read for the licence (Apache-2.0) and the last push date (March 2023) | https://github.com/hmrc/paye-estimator | 2026-11-14 |
