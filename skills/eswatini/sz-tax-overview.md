@@ -25,7 +25,7 @@ Anyone needing the map of Eswatini tax before opening a specific skill. Tax year
 
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Top personal rate | 33% above E200,000 | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| Top personal rate | 33% above E200,000 | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
 | Company rate | 25% | 2026 | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf |
 | VAT standard rate | 15% | 2026 | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf |
 | VAT registration | See [VAT](sz-vat-gst.md); official pages conflict | 2026 | https://www.ers.org.sz/Registration |

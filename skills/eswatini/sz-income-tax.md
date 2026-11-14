@@ -25,12 +25,12 @@ Natural persons with Eswatini-source income. Tax year: the year of assessment 1 
 
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Up to E100,000 | 20% | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| E100,000 to E150,000 | E20,000 + 25% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| E150,000 to E200,000 | E32,500 + 30% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
-| Above E200,000 | E47,500 + 33% of the excess | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| Up to E100,000 | 20% | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| E100,000 to E150,000 | E20,000 + 25% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| E150,000 to E200,000 | E32,500 + 30% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
+| Above E200,000 | E47,500 + 33% of the excess | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
 | Rebate | E8,200 a year, apportioned for a part year. Effective threshold E41,000 of taxable income | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
-| Extra rebate, over 60 on the last day of the year | E2,700, total E10,900 | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
+| Extra rebate, over 60 on the last day of the year | E2,700, total E10,900 | 2026 | https://www.ers.org.sz/IncomeTax/RatesandThres |
 | Redundancy or retirement lump sum above the exempt amount | 25% to E330,000, then E82,500 + 30% of the excess. No rebate. The ERS page still shows older bands; the Act wins | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Resident dividends, natural person | 10%, final per ERS guide | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
 | Resident interest, natural person | 10%, final, no deduction, no refund (s 32C) | 2026 | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf |
