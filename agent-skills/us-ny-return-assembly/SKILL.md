@@ -1,418 +1,198 @@
 ---
 name: us-ny-return-assembly
-description: "Final orchestrator skill that assembles the complete federal and New York State filing package for New York resident sole proprietors and single-member LLCs disregarded for federal tax. Consumes outputs from all federal content skills (bookkeeping, Schedule C/SE, QBI, retirement, SE health insurance, quarterly estimated tax, federal assembly, 1099-NEC) and all New York content skills (IT-201 individual return, NYC UBT Form NYC-202 where applicable, NY estimated tax IT-2105, MCTMT) to produce a single unified reviewer package. Handles reconciliation between federal AGI and NY AGI adjustments, NY itemized vs standard deduction election, NYC income tax surcharge, NYC UBT credit against personal income tax, and MCTMT computation. New York full-year residents only."
+description: "Final step of the New York freelancer workflow for tax year 2026. Runs the federal and New York skills in order for a full-year New York resident sole proprietor or single-member LLC, checks that the figures agree across Form 1040, Form IT-201 and IT-225, Form NYC-202 and Form IT-219, the MCTMT lines and the estimated tax schedules, and produces the reviewer brief, the working paper and the client's action list with 2027 dates. Carries no rates of its own; every figure is in the skill that owns it. Trigger after us-ny-freelance-intake hands off, or on \"assemble my New York return\", \"NY return package\", \"reviewer brief New York\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-ny-return-assembly"
   jurisdiction: "US-NY"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# US Ny Return Assembly
+# New York freelancer return assembly, tax year 2026
 
-## How this workflow runs
+> **Source-cited draft.** Routing and cross-checks built from the 2025 Form IT-201, IT-225 and IT-219 instructions, the 2026 Form IT-2105 instructions and the 2025 Form NYC-202 instructions, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
+**Answer first.** Run the skills in the order below, then check the links between returns: federal AGI is the starting point of Form IT-201; any UBT or MCTMT deducted on Schedule C is added back on Form IT-225 (codes A-201 and A-214); the UBT on Form NYC-202 feeds the IT-219 credit on Form IT-201 line 53, capped at the city tax; estimated payments for each tax are matched to the right return. Then write the reviewer brief and the client's action list. This skill states no tax figures.
 
-- Do NOT ask "how deep do you want me to go" or "do you want the full package." Produce it.
-- Do NOT announce token counts or tool calls.
-- Do NOT ask which deliverables to prioritize. Produce all deliverables listed in Section 6.
-- Do NOT re-validate scope that intake already validated.
-- Do NOT pause between content skills to check in.
-- Self-checks are targets, not blockers. If one fails, flag it for reviewer and continue.
-- If you feel the urge to ask "how should I proceed," pick the most defensible path and flag the decision in the reviewer brief.
+## Scope and who this is for
 
-## Section 1 — Scope
+In scope: the complete 2026 federal and New York filing package for a full-year New York State resident (including New York City and Yonkers residents) who is a sole proprietor or a single-member LLC disregarded for federal tax: Form 1040, Form IT-201 with IT-225 and IT-219, and Form NYC-202 or NYC-202S where the UBT applies.
 
-Produces the complete federal + New York filing package for:
-- Full-year New York State residents (including NYC residents)
-- Sole proprietors or single-member LLCs disregarded for federal tax
-- Tax year 2025
-- Filing Form 1040 (federal), IT-201 (NY State), NYC-202 (NYC UBT, if applicable)
+Out of scope: anything `us-ny-freelance-intake` refused (part-year or nonresident returns, partnerships, corporations, multi-state income, open audits). If such a fact appears in the documents now, stop (see "When to refuse or refer").
 
-## Section 2 — Execution order
+## Ask the client first
 
-0. **Step 1** — us-sole-prop-bookkeeping
-0. **Step 2** — us-schedule-c-and-se-computation
-0. **Step 3** — us-self-employed-retirement
-0. **Step 4** — us-self-employed-health-insurance
-0. **Step 5** — us-qbi-deduction
-0. **Step 6** — us-federal-return-assembly
-0. **Step 7** — us-quarterly-estimated-tax
-0. **Step 8** — us-1099-nec-issuance
-0. **Step 9** — ny-it-201-individual-return
-0. **Step 10** — nyc-ubt-form-202
-0. **Step 11** — ny-estimated-tax-it-2105
-0. **Step 12** — ny-mctmt
-0. **Step 13** — THIS SKILL — final assembly and verification
+Intake has already collected the facts. Ask again only where a fact is missing or the documents contradict each other:
 
-### Federal internal consistency
+1. Any income, entity or move that intake did not record.
+2. Whether any UBT or MCTMT was deducted on the federal Schedule C.
+3. Where the business is carried on, if any work was done outside New York City or outside the MCTD.
+4. Whether the client wants the 2027 estimates on the prior-year or the current-year route.
 
-- **Schedule C net profit flow** — Schedule C net profit → Schedule 1 Line 3 → Form 1040 Line 8
-- **Schedule SE tax flow** — Schedule SE tax → Schedule 2 Line 4 → Form 1040 Line 23
-- **Half of SE tax flow** — Half of SE tax → Schedule 1 Line 15 → Form 1040 Line 10
-- **SE retirement flow** — SE retirement → Schedule 1 Line 16 → Form 1040 Line 10
-- **SE health insurance flow** — SE health insurance → Schedule 1 Line 17 → Form 1040 Line 10
-- **QBI deduction flow** — QBI deduction → Form 1040 Line 13
-- **Total tax flow** — Total tax → Form 1040 Line 24
-- **Form 2210 penalty** — Form 2210 penalty (if applicable)
-- **Total payments flow** — Total payments → Form 1040 Line 33
+## The method, step by step
 
-### New York internal consistency
+### How this workflow runs
 
-- **Federal AGI starting point** — Federal AGI → IT-201 Line 19 (starting point)
-- **NY additions** — NY additions (IT-201 Lines 20-23): interest income on non-NY state/local bonds, QBI deduction add-back (NY does not allow QBI deduction)
-- **NY subtractions** — NY subtractions (IT-201 Lines 24-32): interest on US government obligations, NY state/local pension exclusion
-- **NY AGI flow** — NY AGI → IT-201 Line 33
-- **NY standard deduction** — $8,000 single / $16,050 MFJ vs NY itemized deduction (IT-201 Line 34-35)  _(IT-201 Line 34-35)_
-- **NY itemized deduction limitation threshold** — 50% limitation on charitable contributions and other adjustments if NY AGI > $525,000
-- **NY taxable income flow** — NY taxable income → IT-201 Line 38
-- **NY tax computation** — NY tax → IT-201 Line 39 (from tax computation worksheet or tax table)
-- **NYC resident tax flow** — NYC resident tax → IT-201 Lines 47-51 (if NYC resident)
-- **NYC UBT credit flow** — NYC UBT credit → IT-201 Line 51 (partial credit against NYC personal income tax)
-- **NY household credit** — NY household credit → IT-201 Line 40 (if income below threshold)
-- **Total NY tax flow** — Total NY tax → IT-201 Line 62
-- **NY estimated tax payments flow** — NY estimated tax payments → IT-201 Line 67
-- **NY refund or balance due flow** — NY refund or balance due → IT-201 Line 78 or 80
+- Produce the full package; do not ask how deep to go, which deliverables to prioritize, or whether to continue between skills.
+- Do not re-check scope that intake already checked.
+- Self-checks are targets, not blockers: if one fails, flag it for the reviewer and continue.
+- Where a choice is needed, pick the most defensible path and record it under "Positions taken" in the reviewer brief.
 
-### NYC UBT consistency (if applicable)
+### Order of skills
 
-- **Gross income from NYC business flow** — Gross income from NYC business → Form NYC-202 Line 1
-- **NYC UBT deductions flow** — NYC UBT deductions → Form NYC-202 Lines 2-12
-- **NYC UBT taxable income flow** — NYC UBT taxable income → Form NYC-202 Line 13
-- **NYC UBT exemption calculation** — $95,000, phaseout $95K-$150K USD  _(Form NYC-202 Line 14-16)_
-- **UBT tax rate** — 4% (of taxable income after exemption)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **UBT credits available** — UBT credits available → NYC-202 Line 18+
-- **UBT estimated payments** — UBT estimated payments → NYC-202 Schedule F
-- **UBT balance due or refund** — UBT balance due or refund
+1. `us-sole-prop-bookkeeping`
+2. `us-schedule-c-and-se-computation`
+3. `us-self-employed-retirement`
+4. `us-self-employed-health-insurance`
+5. `us-qbi-deduction`
+6. `us-federal-return-assembly`
+7. `us-quarterly-estimated-tax`
+8. `us-1099-nec-issuance` (if contractors were paid)
+9. `ny-it-201-resident-return`
+10. `nyc-ubt` (if the business is carried on in New York City)
+11. `ny-estimated-tax`
+12. `ny-mctmt` (if self-employment earnings are allocated to the MCTD)
+13. `ny-llc-filing-fee-it-204-ll` (single-member LLC)
+14. This skill: cross-checks and output
 
-### Federal-NY coordination
+If an upstream skill did not run, name it and stop until it does (R-NYA-1).
 
-- **Federal AGI as NY starting point** — Federal AGI used correctly as NY starting point
-- **QBI add-back for NY** — QBI deduction properly added back for NY (NY does not conform to §199A)
-- **Filing status consistency** — Filing status consistent
-- **Dependents consistency** — Dependents consistent
-- **NY itemized deductions basis** — NY itemized deductions use federal Schedule A as starting point but apply NY modifications: - State/local tax deduction: included for NY purposes (no $10,000 SALT cap at state level) - College tuition deduction (IT-201 Line 30): up to $10,000 per student  _(IT-201 Line 30)_
-- **Depreciation conformity** — NY generally conforms to federal MACRS but has modifications for bonus depreciation (NY decoupled from 100% bonus; add-back required, then NY allows its own depreciation deduction)
+### Cross-checks: federal
 
-### MCTMT verification
+- Schedule C net profit to Schedule 1 line 3; Schedule SE tax to Schedule 2 line 4; half of SE tax, SE retirement and SE health insurance to Schedule 1 (lines 15, 16 and 17); the QBI deduction to Form 1040 line 13; total tax and total payments tie to the federal assembly working paper.
+- Form 2210 run if federal estimates fell short.
 
-- **MCTMT threshold** — $50,000 USD (only taxed if net SE earnings in MCTD exceed $50,000)
-- **MCTMT rate** — 0.34% (on net SE earnings > $50,000 allocated to MCTD)  _(Section 7 — NY-specific tax framework > Metropolitan Commuter Transportation Mobility Tax (MCTMT))_
-- **Net SE earnings allocation to MCTD** — Net self-employment earnings allocated to MCTD
-- **MCTMT amount flow** — MCTMT amount → Form MTA-6
+### Cross-checks: New York State (Form IT-201)
 
-### Estimated tax reconciliation
+- Lines 1 to 19 equal the finished federal return, ending at federal AGI ([IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+- **No QBI add-back.** New York starts from federal AGI, and the section 199A deduction is taken after AGI, so it never reaches Form IT-201. The older version of this skill told the preparer to add the QBI deduction back with code A-201; that was wrong. A-201 is the add-back of income taxes and unincorporated business taxes deducted in computing federal AGI ([IT-225-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf)).
+- UBT deducted on Schedule C: added back with A-201. MCTMT deducted federally: added back with A-214.
+- Bonus depreciation, section 168(n) property and R&E expenditures: the Notice N-26-1 codes (A-209 and S-213; A-225, S-221 and S-222) as set out in `ny-it-201-resident-return`. The older version gave codes A-110, S-103, S-106 and S-110; use the codes in the current IT-225 instructions.
+- Interest on US government obligations is a line 28 subtraction; other states' municipal bond interest is a line 20 addition.
+- Standard or itemized deduction chosen for New York on its own merits (New York allows a different choice from the federal one) and taxable income on line 38.
+- Tax on line 39 from the table, the rate schedule or the recapture worksheet, with the 2026 rates.
+- New York City residents: city tax on lines 47 and 47a, household credit, IT-219 UBT credit on line 53 (via Form IT-201-ATT line 8), school tax credits, city earned income credit.
+- MCTMT on lines 54a and 54b where a zone's earnings are over the threshold for the year; Yonkers surcharge on line 55.
+- Payments: withholding, IT-2105 estimates and any IT-370 extension payment, then the refund or balance due; Form IT-2105.9 if estimates fell short.
 
-- **Federal safe harbor** — Federal: 4 quarterly payments cross-checked against safe harbor (100% prior year tax if AGI ≤ $150K, 110% if AGI > $150K)
-- **NY State safe harbor** — NY State: payments on IT-2105 cross-checked against NY safe harbor (100% prior year NY tax or 90% current year)
-- **UBT estimated tax quarterly payment threshold** — $3,400 USD (quarterly payments required if UBT liability expected to exceed this amount)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **IT-2105.9 underpayment penalty** — Form IT-2105.9 (NY underpayment penalty) if applicable
+### Cross-checks: New York City UBT (Form NYC-202 or NYC-202S)
 
-### Additions to federal AGI (common for freelancers)
+- Schedule B starts from the same Schedule C net profit as the federal return; income taxes and UBT deducted federally are added back on Schedule B line 9.
+- Schedule A: allowance for services, the exemption, the 4% tax, the business tax credit, the UBT on line 19, other credits, estimated payments on line 22 ([NYC-202 instructions (2025)](https://www.nyc.gov/assets/finance/downloads/pdf/25pdf/business_tax_forms/nyc-202-instr_2025.pdf)). The figures are in `nyc-ubt`.
+- The UBT carried to Form IT-219 equals Form NYC-202 line 21 (or NYC-202S line 8), and the IT-219 credit does not exceed the city tax less the city household credit ([IT-219-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)).
+- The older version said the UBT is not deductible on Schedule C and that the IT-219 credit equals the full UBT; both were wrong. The UBT is deducted federally and added back for New York, and the IT-219 credit is a percentage of the UBT that falls as city income rises.
 
-- **QBI deduction add-back** — NY does not allow the §199A deduction. Full federal QBI deduction amount added back on IT-225 Line 1 (code A-201)  _(IT-225 Line 1 (code A-201))_
-- **Bonus depreciation add-back** — If federal return claimed bonus depreciation, NY requires add-back of the federal bonus amount, then allows NY depreciation (generally MACRS without bonus). IT-225 code A-110.  _(IT-225 code A-110)_
-- **Other states' municipal bond interest** — Interest from non-NY state/local bonds is added to NY income
+### Cross-checks: MCTMT
 
-### Subtractions from federal AGI (common for freelancers)
+- The base is net earnings from self-employment allocated to each zone, tested per person and per zone. Self-employed individuals report the MCTMT on Form IT-201 lines 54a to 54e, not on a separate return; the older version pointed to Form MTA-6, which is not the individual's form ([IT-201-I (2025), lines 54a to 54e](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf); [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf)).
 
-- **US government obligation interest** — Interest on US Treasury securities subtracted from NY income (IT-225 code S-103)  _(IT-225 code S-103)_
-- **College tuition subtraction** — Up to $10,000 per eligible student (IT-225 code S-106) USD  _(IT-225 code S-106)_
-- **NY depreciation subtraction** — Replacement depreciation deduction for assets where bonus depreciation was added back (IT-225 code S-110)  _(IT-225 code S-110)_
+### Cross-checks: estimated tax
 
-### NYC UBT credit mechanism
+- Federal 2026 payments matched to the federal safe harbour (`us-quarterly-estimated-tax`).
+- New York 2026 payments (Form IT-2105) matched to the required annual payment (`ny-estimated-tax`); UBT estimates (Form NYC-5UBTI) kept apart from IT-2105 payments (`nyc-ubt`).
+- 2027 estimates set up for federal, New York State (including MCTMT) and New York City UBT.
 
-- **NYC UBT not deductible on Schedule C** — The taxpayer cannot deduct NYC UBT as a business expense on the federal Schedule C (it is a tax, not a deductible business expense).
-- **NYC UBT credit generation** — NYC UBT paid generates a partial credit against NYC personal income tax (IT-201 Line 51)  _(IT-201 Line 51)_
-- **NYC UBT credit amount** — The credit equals the lesser of: (a) the UBT tax, or (b) the NYC personal income tax before the credit
-- **Double-taxation prevention** — Effectively prevents double-taxation of NYC business income at both UBT and personal income tax levels, but the credit is not always dollar-for-dollar
+### The documents to produce
 
-## Section 5 — Refusals
+1. Executive summary: filing status, income, federal tax, New York State tax, New York City tax, UBT, MCTMT, total liability, refund or balance due.
+2. Federal Form 1040 working paper, line by line, with Schedules C, SE, 1, 2 and 3, Form 8995 or 8995-A, and Form 2210 if needed.
+3. Federal 2027 estimated tax schedule (Form 1040-ES).
+4. Form IT-201 working paper, line by line, with IT-225, IT-219 and IT-201-ATT where they apply.
+5. Form NYC-202 or NYC-202S working paper (if the UBT applies).
+6. New York 2027 estimated tax schedule (Form IT-2105) and Form IT-2105.9 if needed.
+7. The 1099-NEC batch, if contractors were paid.
+8. The reviewer brief and the client's action list (below).
 
-- **R-NY-1** — Upstream skill did not run. Name the specific skill and refuse until it executes.  _(R-NY-1)_
-- **R-NY-2** — Multi-state allocation required. If income sourced to states other than NY was not identified at intake and appears in documents, refuse. Multi-state allocation requires IT-203/credit for taxes paid analysis.  _(R-NY-2)_
-- **R-NY-3** — NYC UBT allocation dispute. If the taxpayer performed significant business activity outside NYC but is a NYC resident, allocation percentage is complex. Flag for reviewer if allocation is not clearly 100%.  _(R-NY-3)_
-- **R-NY-4** — Partnership/S-corp income discovered. K-1 income appearing in documents that was not disclosed at intake. Refuse and recommend CPA.  _(R-NY-4)_
-- **R-NY-5** — NY PTET (Pass-Through Entity Tax) election. If the SMLLC elected into NY PTET, different treatment applies. Refuse unless PTET skill is available.  _(R-NY-5)_
+Output files: a master workbook (sheets for each form above), `reviewer_brief.md` and `taxpayer_action_list.md` with dates, amounts and payment links.
 
-### Documents
-
-1. **Executive summary** — filing status, income, federal tax, NY tax, NYC tax, NYC UBT, MCTMT, total liability, refund/balance due
-2. **Federal Form 1040 worksheet** — line-by-line
-3. **Schedule C** — sole prop P&L
-4. **Schedule SE** — SE tax
-5. **Schedule 1, 2, 3** — adjustments, additional taxes, credits
-6. **Form 8995 or 8995-A** — QBI
-7. **Form 2210** — federal underpayment penalty (if applicable)
-8. **Form 1040-ES** — 2026 federal estimated tax schedule
-9. **NY IT-201 worksheet** — line-by-line state return
-10. **IT-225** — NY addition and subtraction modifications
-11. **NYC-202 worksheet** — UBT computation (if NYC resident)
-12. **IT-2105** — 2026 NY estimated tax schedule
-13. **IT-2105.9** — NY underpayment penalty (if applicable)
-14. **Form MTA-6** — MCTMT (if applicable)
-15. **1099-NEC batch** — contractor information returns (if applicable)
-16. **Reviewer brief** — comprehensive narrative
-17. **Taxpayer action list** — deadlines, amounts, payment methods
-
-### Reviewer brief structure
+### Reviewer brief: structure
 
 ```markdown
-# Complete Return Package: [Taxpayer Name] — Tax Year 2025
+# Return package: [client] - tax year 2026
 
-## Executive Summary
-- Filing status: [X]
-- Residence: New York ([NYC / rest of state])
-- Business: Sole proprietor / SMLLC disregarded
-- Federal total tax: $X
-- NY State tax: $X
-- NYC personal income tax: $X
-- NYC UBT: $X
-- MCTMT: $X
-- Total 2025 tax liability: $X
-- Total payments (federal + NY + NYC): $X
-- Net refund or balance due: $X
+## Executive summary
+- Filing status; residence (New York City, Yonkers or rest of state); business type
+- Federal total tax; New York State tax; New York City tax; UBT; MCTMT
+- Total 2026 liability; total payments; refund or balance due
 
-## Federal Return
-[Federal assembly content]
-
-## New York State Return (IT-201)
-- Federal AGI: $X
-- NY additions: $X (QBI add-back $X, bonus depreciation $X, other $X)
-- NY subtractions: $X
-- NY AGI: $X
-- NY deduction (standard/itemized): $X
-- NY taxable income: $X
-- NY tax (from table/worksheet): $X
-- NYC personal income tax: $X
-- NYC UBT credit applied: $X
-- NY household credit: $X (if applicable)
-- Net NY/NYC tax: $X
-- NY estimated payments applied: $X
-- NY balance due or refund: $X
-
-## NYC Unincorporated Business Tax (if applicable)
-- Gross business income in NYC: $X
-- Allocable deductions: $X
-- NYC UBT taxable income: $X
-- Exemption applied: $X
-- UBT at 4%: $X
-- UBT credits: $X
-- Net UBT: $X
-- UBT estimated payments: $X
-- UBT balance due or refund: $X
-
-## MCTMT (if applicable)
-- Net SE earnings in MCTD: $X
-- MCTMT (0.34%): $X
-
+## Federal return
+## New York State return (IT-201)
+- Federal AGI; additions (by IT-225 code); subtractions; New York AGI
+- Deduction (standard or itemized); taxable income; tax and method used
+- City tax; IT-219 credit; household credits; net state and city tax; payments; balance
+## New York City UBT (if it applies)
+- Business income; allowance for services; exemption; tax; business tax credit; UBT; estimates; balance
+## MCTMT (if it applies)
+- Earnings by zone; tax by zone
 ## Cross-jurisdiction reconciliation
-- Federal AGI matches IT-201 starting point: [verified]
-- QBI add-back computed correctly: [verified]
-- NYC UBT credit does not exceed NYC personal income tax: [verified]
-- All estimated payments allocated correctly: [verified]
-
+- Federal AGI equals IT-201 line 19
+- UBT and MCTMT add-backs match the Schedule C deductions
+- IT-219 credit within the city tax
+- Each estimated payment applied to the right return
 ## Reviewer attention flags
-[Aggregated flags]
-
-## Positions taken
-[With citations to IRC, NY Tax Law, NYC Admin Code]
-
-## Planning notes for 2026
-- NY PTET election consideration (if beneficial)
-- NYC UBT estimated tax adjustment
-- Federal/NY/NYC estimated tax coordination
-- S-corp election analysis (potential NYC UBT savings)
+## Positions taken (with citations)
+## Planning notes for 2027
+- PTET, NYC UBT estimates, estimated tax coordination, S corporation question (`us-s-corp-election-decision`)
 ```
 
-## Executive Summary
-
-- Filing status: [X]
-- Residence: New York ([NYC / rest of state])
-- Business: Sole proprietor / SMLLC disregarded
-- Federal total tax: $X
-- NY State tax: $X
-- NYC personal income tax: $X
-- NYC UBT: $X
-- MCTMT: $X
-- Total 2025 tax liability: $X
-- Total payments (federal + NY + NYC): $X
-- Net refund or balance due: $X
-
-## Federal Return
-
-[Federal assembly content]
-
-## New York State Return (IT-201)
-
-- Federal AGI: $X
-- NY additions: $X (QBI add-back $X, bonus depreciation $X, other $X)
-- NY subtractions: $X
-- NY AGI: $X
-- NY deduction (standard/itemized): $X
-- NY taxable income: $X
-- NY tax (from table/worksheet): $X
-- NYC personal income tax: $X
-- NYC UBT credit applied: $X
-- NY household credit: $X (if applicable)
-- Net NY/NYC tax: $X
-- NY estimated payments applied: $X
-- NY balance due or refund: $X
-
-## NYC Unincorporated Business Tax (if applicable)
-
-- Gross business income in NYC: $X
-- Allocable deductions: $X
-- NYC UBT taxable income: $X
-- Exemption applied: $X
-- UBT at 4%: $X
-- UBT credits: $X
-- Net UBT: $X
-- UBT estimated payments: $X
-- UBT balance due or refund: $X
-
-## MCTMT (if applicable)
-
-- Net SE earnings in MCTD: $X
-- MCTMT (0.34%): $X
-
-## Cross-jurisdiction reconciliation
-
-- Federal AGI matches IT-201 starting point: [verified]
-- QBI add-back computed correctly: [verified]
-- NYC UBT credit does not exceed NYC personal income tax: [verified]
-- All estimated payments allocated correctly: [verified]
-
-## Reviewer attention flags
-
-[Aggregated flags]
-
-## Positions taken
-
-[With citations to IRC, NY Tax Law, NYC Admin Code]
-
-## Planning notes for 2026
-
-- NY PTET election consideration (if beneficial)
-- NYC UBT estimated tax adjustment
-- Federal/NY/NYC estimated tax coordination
-- S-corp election analysis (potential NYC UBT savings)
-
-## Section 7 — Taxpayer action list structure
+### Client action list: structure
 
 ```markdown
+## Action list
 
-## Taxpayer Action List
+### By 15 April 2027
+1. Review and sign the return package
+2. Pay the federal balance (EFTPS or IRS Direct Pay)
+3. Pay the New York balance (Tax Department Online Services)
+4. Pay the New York City UBT balance (NYC e-Services), if any
+5. Pay the first 2027 installment of federal, New York (IT-2105) and UBT (NYC-5UBTI) estimates
+6. File Form IT-370, Form NYC-EXT and federal Form 4868 if more time is needed (each extends filing only; NYC needs its own form)
 
-### Before April 15, 2026:
-1. Review and sign return package
-2. Pay federal balance due: $X via EFTPS / IRS Direct Pay
-3. Pay NY balance due: $X via NY DTF Online Services
-4. Pay NYC UBT balance due: $X via NYC DOF eFiling (if applicable)
-5. Pay 2026 Q1 federal estimated tax: $X
-6. Pay 2026 Q1 NY estimated tax: $X (25% of annual estimate)
-7. Pay 2026 Q1 NYC UBT estimated tax: $X (if applicable)
-8. File MCTMT annual return (if applicable)
+### By 15 June 2027, 15 September 2027 and 15 January 2028
+1. Pay the 2027 federal, New York and UBT installments
 
-### Before June 16, 2026:
-1. Pay 2026 Q2 federal estimated tax: $X
-2. Pay 2026 Q2 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q2 NYC UBT estimated tax: $X (if applicable)
-
-### Before September 15, 2026:
-1. Pay 2026 Q3 federal estimated tax: $X
-2. Pay 2026 Q3 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q3 NYC UBT estimated tax: $X (if applicable)
-
-### Before January 15, 2027:
-1. Pay 2026 Q4 federal estimated tax: $X
-2. Pay 2026 Q4 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q4 NYC UBT estimated tax: $X (if applicable)
-
-### Ongoing:
-1. Collect W-9 from new contractors before payment
-2. Track business expenses with receipts
-3. Monitor income for UBT exemption phaseout
-4. Consider S-corp election if net SE income exceeds $150K+ (reduces SE tax and eliminates UBT)
+### All year
+1. Get a W-9 from each new contractor before paying them
+2. Keep receipts for business expenses
+3. Watch income against the UBT and MCTMT thresholds
+4. Revisit the S corporation question with `us-s-corp-election-decision`
 ```
 
-### Before April 15, 2026:
+Due dates for 2027 are those that apply when each date falls on a weekday; confirm them against the 2027 Form 1040-ES, IT-2105 and NYC-5UBTI when published.
 
-1. Review and sign return package
-2. Pay federal balance due: $X via EFTPS / IRS Direct Pay
-3. Pay NY balance due: $X via NY DTF Online Services
-4. Pay NYC UBT balance due: $X via NYC DOF eFiling (if applicable)
-5. Pay 2026 Q1 federal estimated tax: $X
-6. Pay 2026 Q1 NY estimated tax: $X (25% of annual estimate)
-7. Pay 2026 Q1 NYC UBT estimated tax: $X (if applicable)
-8. File MCTMT annual return (if applicable)
+## When to refuse or refer
 
-### Before June 16, 2026:
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-NYA-1 | An upstream skill did not run | Name it and stop until it runs |
+| R-NYA-2 | Income from another state appears that intake did not record | Stop: multi-state allocation and the IT-112-R credit need a professional |
+| R-NYA-3 | Business carried on both inside and outside New York City | Flag: UBT business allocation is referred (`nyc-ubt`) |
+| R-NYA-4 | K-1 income from a partnership or S corporation appears | Stop and refer |
+| R-NYA-5 | The LLC elected PTET, or the client asks about it | Use `ny-pte-tax-ptet`; refer the election |
+| R-NYA-6 | A move into or out of New York State or New York City appears | Stop: part-year return (`ny-residency-leaving-new-york`) |
 
-1. Pay 2026 Q2 federal estimated tax: $X
-2. Pay 2026 Q2 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q2 NYC UBT estimated tax: $X (if applicable)
+### Known gaps
 
-### Before September 15, 2026:
+1. The PTET election is not automated; it is an entity election made by its own deadline.
+2. UBT allocation for work inside and outside New York City needs reviewer judgment.
+3. The New York depreciation modifications need asset-by-asset records (Form IT-398).
+4. The New York City school tax credit is claimed on Form IT-201 line 69 itself, at the amounts in `ny-it-201-resident-return`; the older version gave amounts twice the published ones and a separate form, which was wrong.
+5. The New York State and New York City earned income credits are checked in `ny-it-201-resident-return`.
 
-1. Pay 2026 Q3 federal estimated tax: $X
-2. Pay 2026 Q3 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q3 NYC UBT estimated tax: $X (if applicable)
+## Sources
 
-### Before January 15, 2027:
+| Source | URL | Read on |
+| --- | --- | --- |
+| IT-201-I (2025). Read for lines 1 to 19, 20 to 31, 38, 39, 47 to 55 and the payment lines. | https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf | 2026-11-13 |
+| IT-225-I (2025). Read for codes A-201, A-214, A-209 and S-213. | https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf | 2026-11-06 |
+| IT-219-I (2025). Read for the source of the UBT figure and the credit limit. | https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf | 2026-11-13 |
+| IT-2105-I (2026). Read for the MCTMT on Form IT-201 and estimated MCTMT. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-13 |
+| Instructions for Form NYC-202 (2025). Read for Schedule A and Schedule B. | https://www.nyc.gov/assets/finance/downloads/pdf/25pdf/business_tax_forms/nyc-202-instr_2025.pdf | 2026-11-13 |
 
-1. Pay 2026 Q4 federal estimated tax: $X
-2. Pay 2026 Q4 NY estimated tax: $X (25% of annual estimate)
-3. Pay 2026 Q4 NYC UBT estimated tax: $X (if applicable)
-
-### Ongoing:
-
-1. Collect W-9 from new contractors before payment
-2. Track business expenses with receipts
-3. Monitor income for UBT exemption phaseout
-4. Consider S-corp election if net SE income exceeds $150K+ (reduces SE tax and eliminates UBT)
-
-## Section 8 — Self-checks
-
-**Check NY-A1 — All upstream skills executed.**
-**Check NY-A2 — Federal AGI correctly flows to IT-201 Line 19.**
-**Check NY-A3 — QBI deduction added back on IT-225 (NY does not allow §199A).**
-**Check NY-A4 — NYC UBT computed if NYC resident with business income.**
-**Check NY-A5 — NYC UBT credit does not exceed NYC personal income tax.**
-**Check NY-A6 — MCTMT computed for MCTD-area self-employed with earnings > $50K.**
-**Check NY-A7 — NY estimated tax underpayment penalty evaluated (IT-2105.9).**
-**Check NY-A8 — Bonus depreciation add-back and replacement NY depreciation computed.**
-**Check NY-A9 — NY standard vs itemized deduction: correct election made (NY allows different election than federal).**
-**Check NY-A10 — Payment instructions include all four jurisdictions where applicable (federal, NY, NYC personal, NYC UBT).**
-
-## Section 9 — Output files
-
-Three files:
-
-1. **`[taxpayer_slug]_2025_master.xlsx`** — Sheets: Cover, Income, Schedule C, Schedule SE, Retirement, SE Health, QBI, Schedule 1, Form 1040, Form 2210, IT-201, IT-225, NYC-202, IT-2105.9, MTA-6, 1099-NEC batch, 2026 Est Tax (Fed+NY+NYC).
-
-2. **`reviewer_brief.md`** — Full narrative covering federal, NY State, NYC, MCTMT, cross-jurisdiction reconciliation, flags, citations, planning.
-
-3. **`taxpayer_action_list.md`** — Step-by-step with dates, amounts, and payment URLs (EFTPS, NY DTF, NYC DOF).
-
-## Section 10 — Known gaps
-
-1. NY PTET election analysis not automated (requires entity-level election before filing deadline)
-2. NYC UBT allocation for taxpayers performing work both inside and outside NYC is complex and may require reviewer judgment
-3. NY bonus depreciation add-back computation requires detailed asset-by-asset tracking
-4. Form IT-2658 (group estimated tax for partnerships) not applicable but flagged to avoid confusion
-5. NYC-210 (Claim for NYC School Tax Credit) automatically claimed on IT-201 if eligible — verify $125 (single) or $250 (MFJ) credit
-6. NY Earned Income Credit (30% of federal EIC) — verify if applicable
-
-## End of Skill
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the 2026 Form IT-201, IT-225, IT-219 and NYC-202 and their instructions are not published, so the line numbers are those of the 2025 forms (2025-2026 filing cycle); the 2027 installment dates in the action list are not yet published.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-ny-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-ny-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-ny-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-ny-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
