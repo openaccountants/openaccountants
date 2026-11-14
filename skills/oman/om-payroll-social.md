@@ -11,7 +11,7 @@ domain: payroll
 type: computation
 ---
 
-# Oman Payroll & Social Contributions v1.3
+# Oman Payroll & Social Contributions v1.4
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
