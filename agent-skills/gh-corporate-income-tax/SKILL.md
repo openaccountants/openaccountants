@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Ghana Corporate Income Tax v0.3
+# Ghana Corporate Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,8 +28,8 @@ Companies incorporated in Ghana or elsewhere, and bodies taxed like them: societ
 | Hotels | 22% | Principally in the hotel industry | 2026 | same |
 | Non-traditional exports | 8% | Income from those exports | 2026 | same |
 | Bank loans to farming, loans to leasing companies | 20% | That income only | 2026 | same |
-| Manufacturing in regional capitals | 18.5% | Except Accra and Tema | 2026 | same |
-| Manufacturing elsewhere | 12.5% | Outside Accra, Tema and regional capitals | 2026 | same |
+| Manufacturing in regional capitals | 18.75% (derived: 75% of the 25% rate, Act 896 First Schedule para 3(6)(a)) | Except Accra and Tema. GRA's exemptions page shows 18.75; its CIT page prints 18.5%, which does not match the formula | 2026 | https://gra.gov.gh/domestic-tax/tax-types/tax-exemptions-for-businesses/ |
+| Manufacturing elsewhere | 12.5% (derived: 50% of the 25% rate, para 3(6)(b)) | Outside Accra, Tema and regional capitals | 2026 | https://gra.gov.gh/domestic-tax/tax-types/tax-exemptions-for-businesses/ |
 | Free zone, domestic sales | 25% | After the 10-year holiday | 2026 | same |
 | Free zone, exports | 15% | After the 10-year holiday | 2026 | same |
 | Petroleum, minerals | 35% | Income from those operations | 2026 | same |
@@ -77,6 +77,8 @@ Gains on assets of a business go into the annual return and are taxed at the bus
 | GSL estimate | By the first instalment; pay quarterly on the same dates | GRA form | https://gra.gov.gh/wp-content/uploads/2023/04/GROWTH-AND-SUSTAINABILITY-LEVY-ACT-2023-ACT-1095.pdf |
 | Annual return | Four months after year end: 30 April 2027 for 2026 | DT 101 | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf |
 | Transfer pricing return | Four months after year end | See [gh-transfer-pricing](gh-transfer-pricing.md) | https://gra.gov.gh/wp-content/uploads/2023/12/Transfer-Pricing-Regulations-2020-LI-24121-_231207_142107.pdf |
+
+An extension to file can be asked for in writing, with reasons, before the due date. Extensions in total cannot exceed 60 days, and they do not move the payment date ([Act 915 s.30](https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf)).
 
 A non-December basis period pays on the last day of months 3, 6, 9 and 12 of that period (s.121(2)(a)). Section 124 counts the return from year of assessment; confirm with GRA the due date for a non-December period.
 
@@ -160,6 +162,9 @@ expected:
 | Revenue Administration Act, 2016 (Act 915); ss 27 to 30, 46, 47, 70 to 73 read | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-01 |
 | Ministry of Finance, 2025 Annual Tax Revenue Performance Report; GSL passages and Appendix Table 9 read | https://www.mofep.gov.gh/sites/default/files/reports/revenue/2025%20Annual%20Tax%20Revenue%20Performance%20Report.pdf | 2026-11-01 |
 | Growth and Sustainability Levy Act, 2023 (Act 1095), whole act | https://gra.gov.gh/wp-content/uploads/2023/04/GROWTH-AND-SUSTAINABILITY-LEVY-ACT-2023-ACT-1095.pdf | 2026-11-01 |
+| GRA, Tax Exemptions for Businesses page: read for the manufacturing location rates (18.75, 12.50) and the concession table | https://gra.gov.gh/domestic-tax/tax-types/tax-exemptions-for-businesses/ | 2026-11-14 |
+| Income Tax Act, 2015 (Act 896), OCR: First Schedule para 3(6) (p 117) read for the manufacturing formula | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-14 |
+| Revenue Administration Act, 2016 (Act 915): s.30 read for the filing extension | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-14 |
 | GRA, Capital Allowance page, page read in full | https://gra.gov.gh/domestic-tax/capital-allowance/ | 2026-11-01 |
 | GRA, Withholding Tax page (rates table, last edited 2022), page read in full | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-01 |
 | GRA, Capital Gains Tax page, page read in full | https://gra.gov.gh/domestic-tax/tax-types/capital-gains-tax/ | 2026-11-01 |
@@ -168,7 +173,7 @@ expected:
 | GRA, ITAS FAQs, page read in full | https://gra.gov.gh/itas-faqs/ | 2026-11-01 |
 | Transfer Pricing Regulations, 2020 (L.I. 2412); regs 11, 12, 13, 16 read | https://gra.gov.gh/wp-content/uploads/2023/12/Transfer-Pricing-Regulations-2020-LI-24121-_231207_142107.pdf | 2026-11-01 |
 
-Not yet confirmed: (1) The GRA CIT page says businesses pay 1% during holidays; Act 1094 sets 5%, and the Act is followed. (2) Text of the GSL amendment Act 1131 and of a 2026 GSL amendment for gold was not opened; the Finance Ministry report confirms the 3% rate and the sunset to 2028, but the current gold rate is not confirmed. The Category A and C rates are from Act 1095 as enacted; the amendment was not read to confirm they are unchanged. Example figures here leave GSL out. (3) Act 896 is the 2015 scan; later amendments other than Act 1094 and the Act 1178 notice were not read, including Acts 1066 and 1071. (4) Financial Sector Recovery Levy status for 2026. (5) DT 101 screen layout on ETAX.
+Not yet confirmed: (1) The GRA CIT page says businesses pay 1% during holidays; Act 1094 sets 5%, and the Act is followed. (2) Text of the GSL amendment Act 1131 and of a 2026 GSL amendment for gold was not opened; the Finance Ministry report confirms the 3% rate and the sunset to 2028, but the current gold rate is not confirmed. The Category A and C rates are from Act 1095 as enacted; the amendment was not read to confirm they are unchanged. Example figures here leave GSL out. (3) Act 896 is the 2015 scan; later amendments other than Act 1094 and the Act 1178 notice were not read, including Acts 1066 and 1071. (4) Financial Sector Recovery Levy status for 2026. (5) DT 101 screen layout on ETAX. (6) The regional-capital manufacturing rate was 18.5% in the old version, taken from the GRA CIT page; the Act's formula and GRA's exemptions page give 18.75%, now used. Whether para 3(6) was amended after Act 1094 was not checked.
 
 ## Today's figures and who stands behind this skill
 

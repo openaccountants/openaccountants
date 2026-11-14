@@ -256,7 +256,8 @@ On a paper return, read and sign the declaration (IR375).
 | Personal or business | Personal, no claim |
 | Customer overseas, evidence missing | Standard rate |
 | Restaurant, cafe or bar | No claim until business purpose is confirmed |
-| Bank fees, interest, loan principal, tax payments, ACC levies, wages, drawings, transfers, residential rent | Exclude |
+| Bank fees, interest, loan principal, tax payments, wages, drawings, transfers, residential rent | Exclude |
+| ACC levy payment | Hold, no claim yet: do not exclude it as a blanket rule. Check the ACC invoice for GST and confirm the claim first (see `nz-acc-levies`) |
 | Marketplace payouts to a registered seller | Zero-rated sale (Boxes 5 and 6) |
 | Sale of the owner's private goods | Exclude |
 
