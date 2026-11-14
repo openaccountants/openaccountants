@@ -99,12 +99,12 @@ The 22% in the prior version is a sum of 3 rates on the same base, and its parts
 
 | Item | 2025 | 2026 | Official source |
 | --- | --- | --- | --- |
-| Fellesskatt, general | 6.6% | 8.25% | Stortingets skattevedtak 2025 and 2026 § 3-2 (FOR-2024-12-13-3203; FOR-2025-12-18-2747): https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Fellesskatt, Finnmark county and Karlsøy, Kvænangen, Kåfjord, Lyngen, Nordreisa, Skjervøy and Storfjord municipalities | 3.1% | 4.75% | Skattevedtak 2025 and 2026 § 3-2: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Municipal income tax, maximum | 12.75% | 11.35% | Skattevedtak 2025 and 2026 § 3-8: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| County income tax, maximum | 2.65% | 2.40% | Skattevedtak 2025 and 2026 § 3-8: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Total at the maximum, general | 22.00% | 22.00% | Sum of the rows above: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Total at the maximum, Finnmark and the named municipalities | 18.50% | 18.50% | Sum of the rows above: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
+| Fellesskatt, general | 6.6% | 8.25% | Stortingets skattevedtak 2025 and 2026 § 3-2 (FOR-2024-12-13-3203; FOR-2025-12-18-2747): https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Fellesskatt, Finnmark county and Karlsøy, Kvænangen, Kåfjord, Lyngen, Nordreisa, Skjervøy and Storfjord municipalities | 3.1% | 4.75% | Skattevedtak 2025 and 2026 § 3-2: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Municipal income tax, maximum | 12.75% | 11.35% | Skattevedtak 2025 and 2026 § 3-8: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| County income tax, maximum | 2.65% | 2.40% | Skattevedtak 2025 and 2026 § 3-8: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Total at the maximum, general | 22.00% | 22.00% | Sum of the rows above (computed): https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Total at the maximum, Finnmark and the named municipalities | 18.50% | 18.50% | Sum of the rows above (computed): https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 
 The municipal and county rates are maxima, which Stortinget sets each year (skatteloven § 15-2). The rates that apply are those the municipality and county adopt under § 15-3, which may be changed by the end of April after the income year; confirm them where the result depends on them. The resolution excludes owner income that is scaled up under the listed sections from these rates, so dividends and share gains are outside this table and go to `no-capital-gains` and the reviewer.
 
@@ -114,11 +114,11 @@ Trinnskatt applies to personinntekt under skatteloven chapter 12 for class 0 and
 
 | Trinn | Income year | Above (NOK) | Rate | Official source |
 | --- | --- | --- | --- | --- |
-| 1 | 2025 | 217,400 | 1.7% | Skattevedtak 2025 § 3-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| 2 | 2025 | 306,050 | 4.0% | Skattevedtak 2025 § 3-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| 3 | 2025 | 697,150 | 13.7% | Skattevedtak 2025 § 3-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| 4 | 2025 | 942,400 | 16.7% | Skattevedtak 2025 § 3-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| 5 | 2025 | 1,410,750 | 17.7% | Skattevedtak 2025 § 3-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
+| 1 | 2025 | 217,400 | 1.7% | Skattevedtak 2025 § 3-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 |
+| 2 | 2025 | 306,050 | 4.0% | Skattevedtak 2025 § 3-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 |
+| 3 | 2025 | 697,150 | 13.7% | Skattevedtak 2025 § 3-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 |
+| 4 | 2025 | 942,400 | 16.7% | Skattevedtak 2025 § 3-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 |
+| 5 | 2025 | 1,410,750 | 17.7% | Skattevedtak 2025 § 3-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 |
 | 1 | 2026 | 226,100 | 1.7% | Skattevedtak 2026 § 3-1 and Skatteetaten: https://www.skatteetaten.no/satser/trinnskatt/ |
 | 2 | 2026 | 318,300 | 4.0% | Skattevedtak 2026 § 3-1 and Skatteetaten: https://www.skatteetaten.no/satser/trinnskatt/ |
 | 3 | 2026 | 725,050 | 13.7% | Skattevedtak 2026 § 3-1 and Skatteetaten: https://www.skatteetaten.no/satser/trinnskatt/ |
@@ -129,15 +129,15 @@ Trinnskatt applies to personinntekt under skatteloven chapter 12 for class 0 and
 
 | Item | 2025 | 2026 | Official source |
 | --- | --- | --- | --- |
-| Personfradrag, class 1 | NOK 108,550 | NOK 114,540 | Skattevedtak 2025 and 2026 § 6-3, skatteloven § 15-4, and Skatteetaten: https://www.skatteetaten.no/satser/personfradrag/ |
-| Class 0 | No personfradrag | No personfradrag | Skatteloven § 15-4(6): https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| Minstefradrag, wages | 46%, maximum NOK 92,000 | 46%, maximum NOK 95,700 | Skatteloven § 6-32, skattevedtak § 6-1, and Skatteetaten: https://www.skatteetaten.no/satser/minstefradrag/ |
-| Minstefradrag, pension | 40%, maximum NOK 73,150 | 40%, maximum NOK 75,400 | Skatteloven § 6-32, skattevedtak § 6-1: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Wage and pension together | Sum, capped at NOK 92,000 | Sum, capped at NOK 95,700 | Skatteloven § 6-32(1): https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| Finnmark and named municipalities deduction, on tax computation only | NOK 30,000 (Practice) | NOK 45,000 | 2026: skatteloven § 15-5(2) as amended by lov 22 Dec 2025 nr. 119, https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2. 2025: Skatte-ABC 2025 T-12-1, https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/t-12-tiltakssonen-i-finnmark-og-nord-troms/T-12.001/ |
-| Skattebegrensning limits (single, each spouse, couple) | NOK 157,450, 145,550 and 291,100 | NOK 163,750, 151,350 and 302,700 | Skattevedtak 2025 and 2026 § 6-4: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Pension credit (amount, trinn 1, trinn 2) | NOK 36,000, 276,400 and 422,950 | NOK 39,100, 294,200 and 437,100 | Skattevedtak 2025 and 2026 § 6-5: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Trial work deduction | None | NOK 125,000, tapered 40% above NOK 345,000 | Skattevedtak 2026 § 6-6, skatteloven § 6-86: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
+| Personfradrag, class 1 | NOK 108,550 | NOK 114,540 | Skattevedtak 2025 and 2026 § 6-3, skatteloven § 15-4, and Skatteetaten: https://www.skatteetaten.no/satser/personfradrag/ https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Class 0 | No personfradrag | No personfradrag | Skatteloven § 15-4(6): https://lovdata.no/lov/1999-03-26-14/§15-4 |
+| Minstefradrag, wages | 46%, maximum NOK 92,000 | 46%, maximum NOK 95,700 | Skatteloven § 6-32, skattevedtak § 6-1, and Skatteetaten: https://www.skatteetaten.no/satser/minstefradrag/ https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Minstefradrag, pension | 40%, maximum NOK 73,150 | 40%, maximum NOK 75,400 | Skatteloven § 6-32, skattevedtak § 6-1: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Wage and pension together | Sum, capped at NOK 92,000 | Sum, capped at NOK 95,700 | Skatteloven § 6-32(1): https://lovdata.no/lov/1999-03-26-14/§6-32 https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Finnmark and named municipalities deduction, on tax computation only | NOK 30,000 (Practice) | NOK 45,000 | 2026: skatteloven § 15-5(2) as amended by lov 22 Dec 2025 nr. 119, https://lovdata.no/lov/1999-03-26-14/§15-5. 2025: Skatte-ABC 2025 T-12-1, https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/t-12-tiltakssonen-i-finnmark-og-nord-troms/T-12.001/ |
+| Skattebegrensning limits (single, each spouse, couple) | NOK 157,450, 145,550 and 291,100 | NOK 163,750, 151,350 and 302,700 | Skattevedtak 2025 and 2026 § 6-4: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Pension credit (amount, trinn 1, trinn 2) | NOK 36,000, 276,400 and 422,950 | NOK 39,100, 294,200 and 437,100 | Skattevedtak 2025 and 2026 § 6-5: https://lovdata.no/dokument/STV/forskrift/2024-12-13-3203 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Trial work deduction | None | NOK 125,000, tapered 40% above NOK 345,000 | Skattevedtak 2026 § 6-6, skatteloven § 6-86: https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 
 The Finnmark deduction goes to a person tax resident in that area who has personfradrag, unless a child under 17 at the end of the year. It is given in the tax computation, does not change alminnelig inntekt as fixed, and has no effect on trygdeavgift or trinnskatt (§ 15-5(1) to (3)). Skattebegrensning and the pension credit are not computed in this file: where a client's income is near those limits, or the client has pension, mark Needs Input. The trial deduction applies only to the persons drawn at random: 8% of those born from 1991 to 2006 on the 31 October 2025 register, for 5 income years. It reaches beregnet personinntekt under § 12-2 g and cannot create a loss to carry forward.
 
@@ -147,11 +147,11 @@ The base is personinntekt under skatteloven § 12-2 (folketrygdloven § 23-3). S
 
 | Income type | 2025 | 2026 | Official source |
 | --- | --- | --- | --- |
-| Høy sats: beregnet personinntekt from an enkeltpersonforetak (næringsinntekt) | 10.9% | 10.8% | Folketrygd resolutions 2025 §§ 6 to 8 (FOR-2024-12-13-3204): https://api.lovdata.no/v1/publicData/get/lovtidend-avd1-2001-2025.tar.bz2 and 2026 (FOR-2025-12-18-2748) with Skatteetaten: https://www.skatteetaten.no/satser/trygdeavgift/ |
-| Mellomsats: lønnsinntekt (employment) | 7.7% | 7.6% | Same resolutions: https://www.skatteetaten.no/satser/trygdeavgift/ |
+| Høy sats: beregnet personinntekt from an enkeltpersonforetak (næringsinntekt) | 10.9% | 10.8% | Folketrygd resolutions 2025 §§ 6 to 8 (FOR-2024-12-13-3204): https://lovdata.no/dokument/LTI/forskrift/2024-12-13-3204 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 and 2026 (FOR-2025-12-18-2748) with Skatteetaten: https://www.skatteetaten.no/satser/trygdeavgift/ |
+| Mellomsats: lønnsinntekt (employment) | 7.7% | 7.6% | Same resolutions: https://www.skatteetaten.no/satser/trygdeavgift/ https://lovdata.no/dokument/LTI/forskrift/2024-12-13-3204 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
 | Lav sats: pensjonsinntekt (pension), and personinntekt of a person under 17 or over 69 | 5.1% | 5.1% | Same resolutions, folketrygdloven § 23-3(2): https://www.skatteetaten.no/satser/trygdeavgift/ |
-| Mellomsats on business income: care of a child in the carer's own home, where the child has not turned 12 before the end of the year or has a special need for care | 7.7% | 7.6% | Folketrygdloven § 23-3(2) nr. 2: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| No contribution | Income up to NOK 99,650 | Income up to NOK 99,650 | 2026: folketrygdloven § 23-3(4), https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2. 2025: Skatte-ABC 2025 P-16-4.3 (Practice), https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/p-16-personinntekt--trygdeavgiftpensjonspoengpensjonsbeholdning/P-16.027/P-16.035/ |
+| Mellomsats on business income: care of a child in the carer's own home, where the child has not turned 12 before the end of the year or has a special need for care | 7.7% | 7.6% | Folketrygdloven § 23-3(2) nr. 2: https://lovdata.no/lov/1997-02-28-19/§23-3 https://lovdata.no/dokument/LTI/forskrift/2024-12-13-3204 https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| No contribution | Income up to NOK 99,650 | Income up to NOK 99,650 | 2026: folketrygdloven § 23-3(4), https://lovdata.no/lov/1997-02-28-19/§23-3. 2025: Skatte-ABC 2025 P-16-4.3 (Practice), https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/p-16-personinntekt--trygdeavgiftpensjonspoengpensjonsbeholdning/P-16.027/P-16.035/ |
 | Maximum | 25% of the income above NOK 99,650 | 25% of the income above NOK 99,650 | Same sources: https://www.skatteetaten.no/satser/trygdeavgift/ |
 
 The age test runs by year: the middle and high rates apply from the year a person turns 17 to the year they turn 69 (Skatte-ABC 2025 P-16-4.2.2, Practice), so ask the year of birth. The floor and the cap apply to total personinntekt across the low, middle and high bases, not to each type (Skatte-ABC 2025 P-16-4.3). Mellomsats also applies to § 12-10 personinntekt in a trade paying product levy, which R-NO-7 refuses. The rows name only the limbs this file uses: folketrygdloven § 23-3(2) also lists benefits at the low and middle rates, including overgangsstønad, arbeidsavklaringspenger and uføretrygd, so any NAV benefit is Needs Input.
@@ -173,16 +173,16 @@ The rates are maxima in skatteloven § 14-43(1), read in the current consolidate
 
 | Group | Assets | Maximum rate | Official source |
 | --- | --- | --- | --- |
-| a | Office machines | 30% | Skatteloven §§ 14-41 and 14-43: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| b | Acquired goodwill | 20% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| c | Trailers, lorries, buses, vans, taxis and vehicles for transporting disabled people | 24% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| d | Passenger cars, tractors, machinery, tools, instruments, fixtures and fittings | 20% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| e | Ships, vessels and rigs | 14% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| f | Aircraft and helicopters | 12% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| g | Electric power transmission and distribution installations and electrotechnical equipment in power undertakings, and such assets used in other business | 5% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| h | Buildings and structures, hotels, lodging houses and eating places | 4% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| i | Commercial buildings | 2% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| j | Fixed technical installations in buildings | 10% | Same: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
+| a | Office machines | 30% | Skatteloven §§ 14-41 and 14-43: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| b | Acquired goodwill | 20% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| c | Trailers, lorries, buses, vans, taxis and vehicles for transporting disabled people | 24% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| d | Passenger cars, tractors, machinery, tools, instruments, fixtures and fittings | 20% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| e | Ships, vessels and rigs | 14% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| f | Aircraft and helicopters | 12% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| g | Electric power transmission and distribution installations and electrotechnical equipment in power undertakings, and such assets used in other business | 5% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| h | Buildings and structures, hotels, lodging houses and eating places | 4% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| i | Commercial buildings | 2% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
+| j | Fixed technical installations in buildings | 10% | Same: https://lovdata.no/lov/1999-03-26-14/§14-43 |
 
 Other limits in § 14-43: simple buildings up to 10%, livestock buildings 6%, fruit plantings 10%, and berry plantings 20%.
 
@@ -190,13 +190,13 @@ Other limits in § 14-43: simple buildings up to 10%, livestock buildings 6%, fr
 
 | Item | 2025 | 2026 | Official source |
 | --- | --- | --- | --- |
-| Representation, outside service (uteservering) limit per person per occasion | NOK 579 | NOK 592 | Satsforskrift 2025 § 10 (FOR-2024-11-27-2889) and 2026 § 10 (FOR-2025-11-07-2216): https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Branded gift item | NOK 317 | NOK 324 | Satsforskrift § 10: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Attention to a business contact, per occasion | NOK 317 | NOK 324 | Satsforskrift § 10: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Private car, per km of business driving | NOK 3.50 | Held: see note and Sources, Not yet confirmed (2) | 2025 deduction: takseringsregler 2025 § 1-3-20 (FOR-2025-12-01-2404), https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2. 2026: satsforskrift 2026 § 4 |
-| Home office standard deduction | NOK 2,192 | NOK 2,240 (Practice) | 2025: takseringsregler 2025 § 1-3-26. 2026: satsforskrift 2026 § 14 and Skatteetaten: https://www.skatteetaten.no/en/rates/home-office-standard-deduction/ |
-| Private use of electronic communication | NOK 4,392 per year | NOK 4,392 per year | Skatteloven §§ 6-14 and 5-12(5), and FSFIN § 5-12-21 in the current text, unamended since income year 2014: https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2. Application to a sole trader: Skatte-ABC 2025 E-3-2.1 (Practice), https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/e-3-elektronisk-kommunikasjon-telefon-mv/E-3.019/E-3.020/ |
-| Membership of a national trade body, sole trader | Held: see Sources, Not yet confirmed (5) | Up to NOK 8,700, or up to 2 per mille of total wages paid; see Expenses for the other limits | Skatteloven § 6-19(2) and (3), (2) as amended with effect from income year 2026: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
+| Representation, outside service (uteservering) limit per person per occasion | NOK 579 | NOK 592 | Satsforskrift 2025 § 10 (FOR-2024-11-27-2889) and 2026 § 10 (FOR-2025-11-07-2216): https://lovdata.no/dokument/SF/forskrift/2024-11-27-2889 https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 |
+| Branded gift item | NOK 317 | NOK 324 | Satsforskrift § 10: https://lovdata.no/dokument/SF/forskrift/2024-11-27-2889 https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 |
+| Attention to a business contact, per occasion | NOK 317 | NOK 324 | Satsforskrift § 10: https://lovdata.no/dokument/SF/forskrift/2024-11-27-2889 https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 |
+| Private car, per km of business driving | NOK 3.50 | Held: see note and Sources, Not yet confirmed (2) | 2025 deduction: takseringsregler 2025 § 1-3-20 (FOR-2025-12-01-2404), https://lovdata.no/dokument/SF/forskrift/2025-12-01-2404. 2026: satsforskrift 2026 § 4 |
+| Home office standard deduction | NOK 2,192 | NOK 2,240 (Practice) | 2025: takseringsregler 2025 § 1-3-26, https://lovdata.no/dokument/SF/forskrift/2025-12-01-2404. 2026: satsforskrift 2026 § 14 and Skatteetaten: https://www.skatteetaten.no/en/rates/home-office-standard-deduction/ |
+| Private use of electronic communication | NOK 4,392 per year | NOK 4,392 per year | Skatteloven §§ 6-14 and 5-12(5), and FSFIN § 5-12-21 in the current text, unamended since income year 2014: https://lovdata.no/forskrift/1999-11-19-1158/§5-12-21. Application to a sole trader: Skatte-ABC 2025 E-3-2.1 (Practice), https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2025/e-3-elektronisk-kommunikasjon-telefon-mv/E-3.019/E-3.020/ |
+| Membership of a national trade body, sole trader | Held: see Sources, Not yet confirmed (5) | Up to NOK 8,700, or up to 2 per mille of total wages paid; see Expenses for the other limits | Skatteloven § 6-19(2) and (3), (2) as amended with effect from income year 2026: https://lovdata.no/lov/1999-03-26-14/§6-19 |
 
 No takseringsregler for 2026 appeared in the data read. The NOK 3.50 in satsforskrift 2026 § 4 is an allowance rate. It does not confirm a deduction rate, so a 2026 deduction per km is Needs Input and stays held under Sources.
 
@@ -204,9 +204,9 @@ No takseringsregler for 2026 appeared in the data read. The NOK 3.50 in satsfors
 
 | Item | Figure | Official source |
 | --- | --- | --- |
-| MVA registration | Taxable turnover and withdrawals above NOK 50,000 in a 12 month period | Merverdiavgiftsloven § 2-1(1): https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
-| MVA general rate, 2025 and 2026 | 25%, with reduced rates of 15%, 12% and 11.11% | Stortingsvedtak om merverdiavgift 2025 (FOR-2024-12-13-3208), https://api.lovdata.no/v1/publicData/get/lovtidend-avd1-2001-2025.tar.bz2, and 2026 (FOR-2025-12-18-2752), https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2 |
-| Bank payment rule | A cost is deductible only if paid through a bank or payment institution, unless the total payment is under NOK 10,000 | Skatteloven § 6-51: https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 |
+| MVA registration | Taxable turnover and withdrawals above NOK 50,000 in a 12 month period | Merverdiavgiftsloven § 2-1(1): https://lovdata.no/lov/2009-06-19-58/§2-1 |
+| MVA general rate, 2025 and 2026 | 25%, with reduced rates of 15%, 12% and 11.11% | Stortingsvedtak om merverdiavgift 2025 (FOR-2024-12-13-3208), https://lovdata.no/dokument/LTI/forskrift/2024-12-13-3208, and 2026 (FOR-2025-12-18-2752), https://lovdata.no/dokument/STV/forskrift/2025-12-18-2752 |
+| Bank payment rule | A cost is deductible only if paid through a bank or payment institution, unless the total payment is under NOK 10,000 | Skatteloven § 6-51: https://lovdata.no/lov/1999-03-26-14/§6-51 |
 
 ## The base
 
@@ -867,10 +867,11 @@ Ask these as one message before classifying a line, and do not ask what the docu
 
 ## Sources
 
-Legal text was read from Lovdata's public data bundles. The Skatte-ABC 2025 rows are one Skatteetaten handbook, read on section pages. Each links the first section page of its chapter, and the other pages it names sit under the same chapter path. Each row states what was read. The budget for 2027 was not read, and no figure in this file comes from it.
+Legal text was read from Lovdata's public data bundles. On 2026-11-14 the same instruments were reopened as Lovdata web pages, and each rates row now links the page that carries its figure. The Skatte-ABC 2025 rows are one Skatteetaten handbook, read on section pages. Each links the first section page of its chapter, and the other pages it names sit under the same chapter path. Each row states what was read. The budget for 2027 was not read, and no figure in this file comes from it.
 
 | Source | URL | Read on | What was read |
 | --- | --- | --- | --- |
+| Lovdata web pages for the instruments in the rates tables: skattevedtak 2025 and 2026, folketrygd resolutions 2025 and 2026, satsforskrift 2025 and 2026, takseringsregler 2025, merverdiavgift resolutions 2025 and 2026; skatteloven §§ 6-19, 6-32, 6-51, 14-43, 15-4 and 15-5; folketrygdloven § 23-3; merverdiavgiftsloven § 2-1; FSFIN § 5-12-21 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-11-14 | Read for every rates-row figure linked to a lovdata.no page (bands, rates, personfradrag, minstefradrag caps, skattebegrensning, pension credit, trygdeavgift rates, depreciation rates, satsforskrift amounts, MVA rates and threshold); each figure found on its page |
 | Skatteloven (LOV-1999-03-26-14) | https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 | 2026-11-05 | Member nl/nl-19990326-014.xml, current text, in part: §§ 2-1, 2-10, 2-11, 6-1, 6-3, 6-12, 6-14, 6-15, 6-18 to 6-21, 6-31, 6-32, 6-51, 6-86, 12-1, 12-2, 12-10 to 12-13, 14-1, 14-2, 14-6, 14-7, 14-40 to 14-47, 15-2 to 15-5 |
 | Skatteforvaltningsloven (LOV-2016-05-27-14) | https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 | 2026-11-05 | Member nl/nl-20160527-014.xml, in part: §§ 8-1, 8-2, 14-1, 14-3 to 14-6 |
 | Skattebetalingsloven (LOV-2005-06-17-67) | https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2 | 2026-11-05 | Member nl/nl-20050617-067.xml, in part: §§ 6-1, 6-3, 6-4, 10-2, 10-20, 10-21, 11-1, 11-5, 11-6 |
