@@ -63,7 +63,7 @@ Preserve started and completed timestamps, actual pending/settled status and per
 
 ## Worked case
 
-The eight retained rows reconcile separately to GBP7,954.27 and EUR1,128.80 on the stated illustrative openings. Jane Smith Contractor, the GBP25 plan charge and all other narratives remain sample facts, not evidence of current prices, deductibility or service-provider status.
+The eight retained rows reconcile separately to GBP 7,954.27 and EUR 1,128.80 on the stated illustrative openings. Jane Smith Contractor, the GBP 25 plan charge and all other narratives remain sample facts, not evidence of current prices, deductibility or service-provider status.
 
 ```oa-check
 name: Revolut Business account and currency reconciliation
@@ -111,10 +111,10 @@ This skill and its outputs are provided for informational and computational purp
 | Official source | Read on | Read scope |
 |---|---|---|
 | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
-| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
-| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections2-6 and13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
-| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
-| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs20-23 and27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
 
 Not yet confirmed: the live revolut-business API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
 
@@ -196,3 +196,12 @@ Historical item Cross-currency card payment. How It Appears: Single row. Orig cu
 Historical item Implicit exchange rate. How It Appears: Not shown as a column. Calculate: Amount ÷ Orig amount = effective rate.
 Historical item Weekend/out-of-hours FX. How It Appears: Revolut applies a markup (0.4 to 1%) on weekends. The rate is worse but appears the same way in the CSV , only the effective rate reveals the markup.
 ```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- Orig currency / Payment currency; retain as an investigation field, not proof of tax treatment.
+- Fee; retain as an investigation field, not proof of tax treatment.
+- Type = INTEREST; retain as an investigation field, not proof of tax treatment.
+- Type = TAX; retain as an investigation field, not proof of tax treatment.
+- Beneficiary details; retain as an investigation field, not proof of tax treatment.
+- Account; retain as an investigation field, not proof of tax treatment.

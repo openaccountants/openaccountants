@@ -1,202 +1,227 @@
 ---
 name: global-payment-processors
-description: Classification rules for payment processor transactions — the number one source of bank statement classification errors. Covers Stripe, PayPal, Wise, Square, SumUp, iZettle, Revolut, GoCardless, Paddle, Gumroad, and LemonSqueezy with worked examples for reconstructing gross revenue from net payouts.
-version: 0.1
+description: "Use the 2026 payment-processor classification and reconciliation method to investigate supplied transactions, reconcile supporting documents, distinguish fees and transfers and apply the actual country rules. Historical merchant strings are lookup hints, not current tax or integration certification."
+version: 1.0
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
-category: patterns
+tax_year: 2026
+last_updated: 2026-11-14
+category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+type: cross-country-method
+checked_on: 2026-11-14
 ---
 
-# Global Payment Processors
+# Payment-processor classification and reconciliation v1.0
 
-## What this file is
+## Scope
 
-**Functional role:** Transaction classification rules for payment processor entries
-**Status:** Active reference data
+Use the method for the actual entity, period, accounting basis and supported documents. Checked on 2026-11-14. No merchant brand, payment currency or bank narrative establishes a tax result by itself.
 
-Payment processor transactions are the single largest source of classification errors in freelancer bookkeeping. The core problem: **a payout from Stripe/PayPal/etc. is NOT your revenue. It is your revenue MINUS their fees.** If you book the payout as revenue, you understate revenue AND miss a deductible expense.
+## Ask the client first
 
-This file provides deterministic rules for every major payment processor, explains what each transaction type actually represents, and includes worked examples for reconstructing the correct accounting entries.
+Obtain legal entity, country, reporting period, accounting framework and cash/accrual basis; platform account and legal contract; principal/agent/merchant-of-record role; customer invoices, sales tax, refunds, disputes, reserves, fee documents and all payout/activity statements. Determine which invoices/receivables are already booked, which accounts are owned by the client, currencies/rate policy and who paid any fee. A bank line alone cannot resolve these facts.
 
-## The golden rule
+## The method, step by step
 
-- **Golden rule for processor payouts** — Bank deposit from a payment processor = Net payout = Gross revenue - Processing fees. You must record: 1. Gross revenue (what the customer paid) 2. Processing fee (deductible expense) 3. Net payout (what hit your bank — this is NOT a revenue figure). If you only have the bank statement (no processor dashboard), you are missing data. You MUST obtain the processor's transaction report to book correctly.  _(The golden rule section)_
+1. Identify what the specific entry represents. A payout, own transfer, supplier purchase, SaaS subscription, incorporation service, hardware purchase, loan or fee can share the same brand. Match actual IDs, direction, account owner, invoice and contract. A bank descriptor and debit/credit direction cannot establish deductibility, revenue or an incorporation-cost election.
+2. Reconcile opening processor funds plus actual gross cash activity, refunds/reversals, taxes/third-party collections, fees, retained/released reserves and funding transfers to the closing balance and bank payout. Gross less fees equals payout only in the simple case with no other movements or unsettled balance. Do not estimate current fees from historical percentage pricing. Separate a bank payout from the commercial sale; match an existing receivable rather than booking sales twice. [HMRC accurate transaction records](https://www.gov.uk/self-employed-records/what-records-to-keep).
+3. Decide the financial-reporting role from each actual contract/specified supply. Under an applicable AASB 15/IFRS-equivalent policy, test control before transfer, not merely who issues the customer invoice or calls itself MoR. Principal revenue and agent commission differ; transaction price excludes amounts collected on behalf of others. A contract may contain more than one role. Net cash received is not automatically revenue, and a platform fee may still need separate treatment. [AASB 15 paragraphs 47,B34-B38](https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf).
+4. Resolve VAT/GST/sales tax separately for the customer's supply, the client's supply to a reseller/MoR, and the platform's fee. An MoR handling retail tax does not mean the client has no VAT reporting or fee expense. UK VAT Notice 700 sections 22.1-22.6 distinguishes actual agency, separate agent/principal supplies and own-name agents; another jurisdiction needs its own law. Notice 741A supplies the UK cross-border-service conditions, not an all-country exemption. [Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700); [Notice 741A](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a).
+5. Treat fees only when evidenced and economically borne by the client. Distinguish processor commissions, subscription, direct-debit service, card-reader hardware, incorporation/legal/start-up costs, connected-platform charges and supplier purchases collected through a platform. UK business financial charges have specific eligible-cost rules; loan principal is not one. Other countries and capital costs need their owning methods. [HMRC financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial).
+6. Pair owned transfers and conversion legs, retain each currency, document direction/units/rates and separate any genuine settlement difference. Under an applicable AASB 121 policy, translate initial recognition at the appropriate transaction-date rate and monetary balances/settlement as required; do not universally declare every difference taxable/deductible or every FX spread a fee. A sender-borne fee is not a recipient's expense merely because its amount appears in transfer details. [AASB 121 paragraphs 21-23,27-30](https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf).
+7. Produce the source-linked commercial entry, fee/tax/clearing/FX workpapers and payout reconciliation, with duplicate controls and unresolved differences. If the ledger is read-only, output proposed postings or an import file for human approval. Do not silently post a reconciliation difference or call a payout-only reconstruction complete. Detailed supplied-file parsers are in the assigned brand integration methods; this lookup does not certify a live schema.
 
-## Processor lookup table
+## Processor-specific investigation jobs
 
-**Processor lookup table**  _(Processor lookup table)_
+- Stripe standard/Connect/Billing: separate a merchant's customer receipts from platform-to-seller contracts and own-account settlement. Atlas is an incorporation/legal-service investigation, not a card fee. Pricing and capitalisation depend on actual documents and country rules.
+- PayPal transfer versus merchant purchase versus receipt versus ambiguous PP reference: trace the underlying event; a purchase can be private, capital, a refund or liability settlement. Own-account transfers do not create income. Keep actual fee cells and separate fee rows.
+- Wise currency conversions and transfers: distinguish receipt against an existing invoice, owned balance transfer, supplier payment and client-paid versus sender-paid charge. Do not assume every incoming Wise amount is a sale or every fee is a separate row.
+- Square, SumUp and iZettle/Zettle: reconcile card activity/fees/refunds/payout; separate hardware and subscriptions from settlement. Exact ownership, current prices and fee-return policies are unconfirmed.
+- Revolut: owned transfers, supplier card purchases, business/private plans and actual account/service charges require distinct evidence. A Premium/Metal narrative does not prove a business subscription.
+- GoCardless: distinguish collections for the client from a vendor's direct debit taken from the client. Link customer invoices or supplier bills before posting.
+- Paddle, Gumroad and LemonSqueezy: examine the actual MoR/reseller/agency contract and client's own supply. Do not use the old universal net-revenue/no-fee/no-VAT instruction. Retail tax collection does not settle every client obligation.
+- Shopify Payments, Amazon Pay, Klarna, Adyen and Mollie: retain gross activity, refund/fee/reserve and bank links. Buy-now-pay-later payment timing does not alone establish revenue recognition or release of customer credit risk; test contract/performance under the applicable policy.
 
-| Processor | Bank statement text | What it IS | What it is NOT | Classification rule |
-| --- | --- | --- | --- | --- |
-| **Stripe** | `STRIPE PAYMENTS`, `STRIPE TRANSFER`, `STRIPE PAYOUT` | Net payout after Stripe fees (typically 2.9% + 30c per transaction, varies by country/product) | NOT gross revenue. NOT a Stripe subscription fee. | Book gross revenue from Stripe dashboard. Book Stripe fees as "Bank charges / Payment processing fees". The bank deposit is merely the settlement. |
-| **Stripe** | `STRIPE CONNECT` | Payout from a Stripe Connect platform (e.g., marketplace payout) | NOT revenue from YOUR customers. The platform is paying you. | Revenue = payout + platform fees withheld. Check platform dashboard for gross amounts. |
-| **Stripe** | `STRIPE ATLAS` | Stripe Atlas incorporation service fee ($500 one-time + optional ongoing) | NOT a payment processing charge. | One-time: Capitalize as incorporation cost or expense as startup cost. Ongoing: Office expenses / Legal services. |
-| **Stripe** | `STRIPE *INVOICE`, `STRIPE BILLING` | Stripe's invoicing/billing product collecting payment on your behalf | NOT revenue — same net-payout rule applies. | Same as standard Stripe payout rule. |
-| **PayPal** | `PAYPAL TRANSFER`, `PAYPAL INST XFER` | Net payout from PayPal balance to bank account | NOT revenue. This is a transfer between your own accounts. | The revenue was already recorded when the customer paid into your PayPal account. This transfer is a balance movement, not income. |
-| **PayPal** | `PAYPAL *[MERCHANT]` | Payment TO a merchant via PayPal (expense) | NOT revenue. NOT a PayPal fee. | Classify based on the merchant name after the asterisk. This is an expense paid via PayPal. |
-| **PayPal** | `PAYPAL PAYMENT` | A payment received via PayPal (shows on PayPal statement, not always on bank) | The net amount (after PayPal's fee of ~2.9% + fixed). | Gross revenue = net received + PayPal fee. Obtain PayPal transaction report for exact fee breakdown. |
-| **PayPal** | `PP*[CODE]` | PayPal charge — could be incoming or outgoing | Ambiguous — must check direction and reference. | Check debit/credit. If debit: expense. If credit: net payout (not revenue). |
-| **Wise** | `WISE`, `TRANSFERWISE` | Currency conversion / international transfer | NOT revenue. NOT an expense (unless the Wise fee itself). | If sending money: the transfer is a payment for an expense (classify the underlying expense). If receiving: it is a client payment arriving via Wise. The Wise fee is a separate deductible "Bank charges / FX fees" expense. |
-| **Wise** | `WISE *FEE`, `TRANSFERWISE FEE` | Wise's transfer fee | NOT the transfer amount itself. | Deductible as "Bank charges / Transfer fees". |
-| **Wise** | `WISE CURRENCY` | FX conversion within Wise multi-currency account | NOT revenue or expense. It is a balance conversion. | Book the FX gain/loss. The conversion itself is not income or expense — only the exchange rate difference matters. |
-| **Square** | `SQ *`, `SQUARE`, `SQUAREUP` | Net payout from Square card reader | NOT gross revenue. | Same pattern as Stripe. Gross revenue = payout + Square processing fee (typically 2.6% + 10c US). Obtain Square dashboard report. |
-| **Square** | `SQUARE HARDWARE` | Purchase of Square card reader hardware | NOT a payment processing fee. | Capitalize as equipment (if material) or expense as office supplies. |
-| **SumUp** | `SUMUP`, `SUMUP *` | Net payout from SumUp card reader | NOT gross revenue. | Same pattern. SumUp fee varies by country (1.69% EU typical). Check SumUp dashboard. |
-| **iZettle** | `IZETTLE`, `ZETTLE`, `PAYPAL ZETTLE` | Net payout from Zettle (now PayPal Zettle) card reader | NOT gross revenue. | Same pattern. Now owned by PayPal. Fee typically 1.75% EU. |
-| **Revolut Business** | `REVOLUT`, `REVOLUT *` | Transfer between Revolut and external bank, or Revolut account fee | NOT revenue. NOT an expense (unless it is the account fee). | If a transfer to/from your own account: ignore for P&L (balance movement). If a fee: "Bank charges". If a payment to a supplier: classify by supplier. |
-| **Revolut Business** | `REVOLUT *PREMIUM`, `REVOLUT *METAL` | Revolut subscription fee | NOT a transfer. | "Bank charges / Account fees". Verify business vs. personal plan. |
-| **GoCardless** | `GOCARDLESS`, `GOCARDLESS LTD` | Direct debit collection payout | NOT gross revenue. GoCardless deducts its fee before payout. | Gross revenue = payout + GoCardless fees (1% + 20p typical UK). Obtain GoCardless report. |
-| **GoCardless** | `GOCARDLESS *[CLIENT]` | A direct debit payment collected FROM you by a vendor using GoCardless | This is an EXPENSE, not revenue. | Classify based on the vendor name. Common for recurring SaaS bills collected via DD. |
-| **Paddle** | `PADDLE.NET`, `PADDLE COM` | Payout from Paddle as Merchant of Record (MoR) | NOT your gross revenue. Paddle invoiced the customer, not you. YOUR revenue is the net payout from Paddle. | Paddle is the legal seller. They handle VAT, refunds, chargebacks. Your revenue = Paddle payout. Paddle's cut includes their fee + taxes they remitted. Do NOT also record the customer's gross payment as your revenue. |
-| **Gumroad** | `GUMROAD`, `GUMROAD INC` | Payout from Gumroad as MoR | NOT your gross revenue. Same MoR pattern as Paddle. | Revenue = Gumroad payout. Gumroad handles sales tax/VAT and takes their commission. |
-| **LemonSqueezy** | `LEMONSQUEEZY`, `LEMON SQUEEZY`, `LMSQUEEZY` | Payout from LemonSqueezy as MoR | NOT your gross revenue. Same MoR pattern. | Revenue = LemonSqueezy payout. They handle all tax obligations as MoR. |
-| **Shopify Payments** | `SHOPIFY *PAYMT`, `SHOPIFY PAYOUT` | Net payout from Shopify Payments | NOT gross revenue. | Same as Stripe pattern. Shopify Payments fee is separate. Note: Shopify subscription fee is a different charge (SaaS expense). |
-| **Amazon Pay** | `AMZN *PAY`, `AMAZON PAY` | Payout from Amazon Pay | NOT gross revenue. | Revenue = payout + Amazon Pay fees. |
-| **Klarna** | `KLARNA`, `KLARNA AB` | Payout from Klarna (buy-now-pay-later) | NOT gross revenue. Klarna pays you in full (minus fee) even though customer pays in installments. | Revenue = Klarna payout + Klarna merchant fee. You recognize full revenue at sale, not when customer completes installments. |
-| **Adyen** | `ADYEN`, `ADYEN N.V.` | Payout from Adyen payment platform | NOT gross revenue. | Same net-payout pattern. Adyen fees deducted. |
-| **Mollie** | `MOLLIE`, `MOLLIE B.V.` | Payout from Mollie payment platform | NOT gross revenue. | Same pattern. Common in NL/EU. |
+## When to refuse or refer
 
-## Worked examples
+Hold missing commercial agreements, complete activity reports, unconfirmed gross/fee units, mixed currencies, reserve balances, client fee responsibility or payout gaps. No automatic gross-up from a bank line, MoR netting, universal input VAT deduction or current vendor price is supplied. Refer complex platform principal/agent, connected funds, related-party, withholding or cross-border tax treatment to its country/framework method.
 
-### Example 1: Stripe payout reconstruction
+## Worked cases
 
-**Bank statement shows:**
-```
-2025-03-15  STRIPE TRANSFER  +$4,721.50
-```
+### Stripe, supported principal receipts
 
-**Stripe dashboard shows for the same payout period**  _(Example 1: Stripe payout reconstruction)_
+The old three invoices provide gross USD 2,500/1,800/575, actual fees 75.30/54.60/23.60 and net 2,424.70/1,745.40/551.40. Total gross 4,875 less fees 153.50 equals payout 4,721.50. If the invoices were already recognised, the commercial receipt clears receivables rather than recreating revenue. On the simple assumed same-period/no-other-adjustments facts, booking net only understates gross sales and expenses equally; it does not automatically overstate taxable profit by 153.50.
 
-| Customer | Gross amount | Stripe fee | Net |
-| --- | --- | --- | --- |
-| Client A invoice #42 | $2,500.00 | $75.30 | $2,424.70 |
-| Client B invoice #18 | $1,800.00 | $54.60 | $1,745.40 |
-| Client C invoice #7 | $575.00 | $23.60 | $551.40 |
-| **Total** | **$4,875.00** | **$153.50** | **$4,721.50** |
-
-**Correct bookkeeping entries**  _(Example 1: Stripe payout reconstruction)_
-
-| Date | Account | Debit | Credit | Description |
-| --- | --- | --- | --- | --- |
-| 2025-03-15 | Revenue |  | $4,875.00 | Gross client payments (3 invoices) |
-| 2025-03-15 | Bank charges - Processing fees | $153.50 |  | Stripe processing fees |
-| 2025-03-15 | Bank (checking) | $4,721.50 |  | Stripe payout received |
-
-**WRONG approach (common error)**  _(Example 1: Stripe payout reconstruction)_
-
-| Date | Account | Debit | Credit |
-| --- | --- | --- | --- |
-| 2025-03-15 | Revenue |  | $4,721.50 |
-| 2025-03-15 | Bank (checking) | $4,721.50 |  |
-
-This understates revenue by $153.50 AND misses $153.50 in deductible expenses. The tax impact compounds: the missed deduction means the freelancer overpays tax on $153.50 of phantom income.
-
-### Example 2: PayPal with embedded fees
-
-**Bank statement shows:**
-```
-2025-04-01  PAYPAL INST XFER  +EUR 1,890.00
+```oa-check
+name: Stripe gross and fees, no invented phantom profit
+inputs:
+  client_a: 2500
+  client_b: 1800
+  client_c: 575
+  fee_a: 75.3
+  fee_b: 54.6
+  fee_c: 23.6
+steps:
+  - gross: client_a + client_b + client_c
+  - fees: fee_a + fee_b + fee_c
+  - payout: gross - fees
+  - profit_if_net_only: payout
+  - profit_if_gross_less_fees: gross - fees
+expected:
+  gross: 4875
+  fees: 153.5
+  payout: 4721.5
+  profit_if_net_only: 4721.5
+  profit_if_gross_less_fees: 4721.5
 ```
 
-**PayPal transaction report shows**  _(Example 2: PayPal with embedded fees)_
+### PayPal, explicit signed fees and conversion charge
 
-| Date | Type | Gross | Fee | Net |
-| --- | --- | --- | --- | --- |
-| 2025-03-28 | Payment received | EUR 1,000.00 | -EUR 29.20 | EUR 970.80 |
-| 2025-03-29 | Payment received | EUR 950.00 | -EUR 27.85 | EUR 922.15 |
-| **Subtotal** |  | **EUR 1,950.00** | **-EUR 57.05** | **EUR 1,892.95** |
-| 2025-03-30 | Currency conversion fee |  | -EUR 2.95 | -EUR 2.95 |
-| **Transfer total** |  |  |  | **EUR 1,890.00** |
+The old report supplies EUR 1,000 and 950 receipts, fees 29.20 and 27.85 and an additional documented EUR 2.95 charge. Net payout is EUR 1,890. Keep the fee amounts as supplied assumptions, not a current PayPal price or evidence of universal VAT exemption.
 
-**Correct entries**  _(Example 2: PayPal with embedded fees)_
-
-| Date | Account | Debit | Credit |
-| --- | --- | --- | --- |
-| 2025-04-01 | Revenue |  | EUR 1,950.00 |
-| 2025-04-01 | Bank charges - PayPal fees | EUR 57.05 |  |
-| 2025-04-01 | Bank charges - FX fees | EUR 2.95 |  |
-| 2025-04-01 | Bank (checking) | EUR 1,890.00 |  |
-
-### Example 3: Paddle as Merchant of Record
-
-**Bank statement shows:**
-```
-2025-05-10  PADDLE.NET  +$3,200.00
+```oa-check
+name: PayPal report to bank bridge
+inputs:
+  one: 1000
+  two: 950
+  fee_one: 29.2
+  fee_two: 27.85
+  fx_charge: 2.95
+steps:
+  - gross: one + two
+  - payment_fees: fee_one + fee_two
+  - payout: gross - payment_fees - fx_charge
+expected:
+  gross: 1950
+  payment_fees: 57.05
+  payout: 1890
 ```
 
-**Paddle dashboard shows**  _(Example 3: Paddle as Merchant of Record)_
+### Paddle, unresolved report versus bank
 
-| Customer | Country | Gross sale | VAT collected | Paddle fee (5%) | Net to you |
-| --- | --- | --- | --- | --- | --- |
-| Customer DE | Germany | $1,200.00 | $228.00 | $60.00 | $912.00 |
-| Customer US | USA | $1,500.00 | $0.00 | $75.00 | $1,425.00 |
-| Customer UK | UK | $1,100.00 | $220.00 | $55.00 | $825.00 |
-| **Total** |  | **$3,800.00** | **$448.00** | **$190.00** | **$3,162.00** |
+Retain the old supplied customer gross 1,200/1,500/1,100, stated tax 228/0/220 and fees 60/75/55 as report facts, not computed country VAT or certified current fees. Their net is USD 3,162, while the bank is USD 3,200. The unexplained USD 38 blocks the old proposed bank entry for 3,162. Do not invent income or post a mismatching bank amount. Neither this arithmetic nor the brand proves principal/agent or eliminates the client's own VAT reporting.
 
-Wait — the bank shows $3,200.00 but the table shows $3,162.00? Check if Paddle bundles multiple payouts or if there is a timing difference. Always reconcile.
-
-**Key difference from Stripe/PayPal:** Paddle is the Merchant of Record. Paddle invoiced the customers, collected VAT, and remitted it. YOU do not report the $3,800 gross or the $448 VAT. Your revenue is the $3,162 payout. Paddle's fee is already deducted — you do NOT separately claim a Paddle fee expense.
-
-**Correct entries**  _(Example 3: Paddle as Merchant of Record)_
-
-| Date | Account | Debit | Credit |
-| --- | --- | --- | --- |
-| 2025-05-10 | Revenue |  | $3,162.00 |
-| 2025-05-10 | Bank (checking) | $3,162.00 |  |
-
-That is it. No fee expense. No VAT. Paddle handled everything.
-
-### Example 4: Wise international transfer with FX
-
-**Bank statement shows:**
+```oa-check
+name: MoR arithmetic does not authorise a mismatching journal
+inputs:
+  gross_de: 1200
+  gross_us: 1500
+  gross_uk: 1100
+  stated_tax_de: 228
+  stated_tax_uk: 220
+  fee_de: 60
+  fee_us: 75
+  fee_uk: 55
+  bank: 3200
+steps:
+  - gross: gross_de + gross_us + gross_uk
+  - tax_collections: stated_tax_de + stated_tax_uk
+  - fees: fee_de + fee_us + fee_uk
+  - report_net: gross - tax_collections - fees
+  - unresolved_bank_gap: bank - report_net
+expected:
+  gross: 3800
+  tax_collections: 448
+  fees: 190
+  report_net: 3162
+  unresolved_bank_gap: 38
 ```
-2025-06-01  WISE  +GBP 7,850.00
+
+### Wise, rate direction and fee bearer
+
+For the supplied USD 10,000 receipt and quotation1GBP=1.2739USD, division gives GBP 7,849.91 to two decimals, not the old GBP 7,850.03. The stated bank amount GBP 7,850 differs by GBP 0.09 from that rounded ratio; obtain the actual settlement calculation instead of naming it a fee. If the recipient rather than sender bore a separately evidenced USD 45 charge, the dollar amount after that charge would be9,955, but its sterling settlement must still come from the actual contract/rate. Invoice recognition and genuine FX settlement differences remain separate.
+
+```oa-check
+name: Wise supplied quotation and rounding control
+inputs:
+  usd: 10000
+  usd_per_gbp: 1.2739
+  bank_gbp: 7850
+  recipient_fee_usd: 45
+steps:
+  - quoted_gbp: round(usd / usd_per_gbp, 2)
+  - quoted_bank_gap: bank_gbp - quoted_gbp
+  - recipient_net_usd: usd - recipient_fee_usd
+expected:
+  quoted_gbp: 7849.91
+  quoted_bank_gap: 0.09
+  recipient_net_usd: 9955
 ```
 
-**Wise transfer details**  _(Example 4: Wise international transfer with FX)_
+## Historical recognition hints
 
-| Field | Value |
-| --- | --- |
-| Client paid | USD 10,000.00 |
-| Exchange rate | 1 GBP = 1.2739 USD |
-| GBP equivalent at mid-market rate | GBP 7,850.03 |
-| Wise fee (paid by sender) | USD 45.00 |
-| Amount received | GBP 7,850.00 |
+These are search candidates from the old library, not verified current merchant identities, fees or tax rules. Confirm the invoice, account and transaction before selecting an account.
+- **Stripe**; candidate statement text `STRIPE PAYMENTS`, `STRIPE TRANSFER`, `STRIPE PAYOUT`. Investigate the actual purpose and direction.
+- **Stripe**; candidate statement text `STRIPE CONNECT`. Investigate the actual purpose and direction.
+- **Stripe**; candidate statement text `STRIPE ATLAS`. Investigate the actual purpose and direction.
+- **Stripe**; candidate statement text `STRIPE *INVOICE`, `STRIPE BILLING`. Investigate the actual purpose and direction.
+- **PayPal**; candidate statement text `PAYPAL TRANSFER`, `PAYPAL INST XFER`. Investigate the actual purpose and direction.
+- **PayPal**; candidate statement text `PAYPAL *[MERCHANT]`. Investigate the actual purpose and direction.
+- **PayPal**; candidate statement text `PAYPAL PAYMENT`. Investigate the actual purpose and direction.
+- **PayPal**; candidate statement text `PP*[CODE]`. Investigate the actual purpose and direction.
+- **Wise**; candidate statement text `WISE`, `TRANSFERWISE`. Investigate the actual purpose and direction.
+- **Wise**; candidate statement text `WISE *FEE`, `TRANSFERWISE FEE`. Investigate the actual purpose and direction.
+- **Wise**; candidate statement text `WISE CURRENCY`. Investigate the actual purpose and direction.
+- **Square**; candidate statement text `SQ *`, `SQUARE`, `SQUAREUP`. Investigate the actual purpose and direction.
+- **Square**; candidate statement text `SQUARE HARDWARE`. Investigate the actual purpose and direction.
+- **SumUp**; candidate statement text `SUMUP`, `SUMUP *`. Investigate the actual purpose and direction.
+- **iZettle**; candidate statement text `IZETTLE`, `ZETTLE`, `PAYPAL ZETTLE`. Investigate the actual purpose and direction.
+- **Revolut Business**; candidate statement text `REVOLUT`, `REVOLUT *`. Investigate the actual purpose and direction.
+- **Revolut Business**; candidate statement text `REVOLUT *PREMIUM`, `REVOLUT *METAL`. Investigate the actual purpose and direction.
+- **GoCardless**; candidate statement text `GOCARDLESS`, `GOCARDLESS LTD`. Investigate the actual purpose and direction.
+- **GoCardless**; candidate statement text `GOCARDLESS *[CLIENT]`. Investigate the actual purpose and direction.
+- **Paddle**; candidate statement text `PADDLE.NET`, `PADDLE COM`. Investigate the actual purpose and direction.
+- **Gumroad**; candidate statement text `GUMROAD`, `GUMROAD INC`. Investigate the actual purpose and direction.
+- **LemonSqueezy**; candidate statement text `LEMONSQUEEZY`, `LEMON SQUEEZY`, `LMSQUEEZY`. Investigate the actual purpose and direction.
+- **Shopify Payments**; candidate statement text `SHOPIFY *PAYMT`, `SHOPIFY PAYOUT`. Investigate the actual purpose and direction.
+- **Amazon Pay**; candidate statement text `AMZN *PAY`, `AMAZON PAY`. Investigate the actual purpose and direction.
+- **Klarna**; candidate statement text `KLARNA`, `KLARNA AB`. Investigate the actual purpose and direction.
+- **Adyen**; candidate statement text `ADYEN`, `ADYEN N.V.`. Investigate the actual purpose and direction.
+- **Mollie**; candidate statement text `MOLLIE`, `MOLLIE B.V.`. Investigate the actual purpose and direction.
 
-- **If the client paid the Wise fee** — Your revenue is USD 10,000.00 (or GBP equivalent at invoice date rate). The Wise fee is the client's cost, not yours. Book revenue at the invoiced amount and any FX gain/loss between invoice date rate and settlement date rate.  _(Example 4: Wise international transfer with FX)_
-- **If you paid the Wise fee** — Revenue = USD 10,000.00. Wise fee = USD 45.00 (deductible as bank charges). Net received = USD 9,955.00 equivalent.  _(Example 4: Wise international transfer with FX)_
-
-## Merchant of Record vs. Payment Processor — critical distinction
-
-**Merchant of Record vs. Payment Processor — critical distinction**  _(Merchant of Record vs. Payment Processor — critical distinction)_
-
-|  | Payment Processor (Stripe, PayPal, Square) | Merchant of Record (Paddle, Gumroad, LemonSqueezy) |
-| --- | --- | --- |
-| **Who invoices the customer?** | YOU do | THEY do |
-| **Who collects sales tax/VAT?** | YOU must | THEY handle it |
-| **Who handles refunds/chargebacks?** | YOU handle them, they process | THEY handle everything |
-| **Your gross revenue** | Customer's full payment amount | The net payout you receive |
-| **Fee treatment** | Separate deductible expense | Already deducted from your payout — do NOT double-deduct |
-| **VAT on your sales** | You report and remit | MoR reports and remits — you do NOT include in your VAT return |
-| **Your invoice** | Issued to customer | Issued to the MoR (or not needed — check your contract) |
-
-## Common mistakes
-
-- **1. Booking net payouts as gross revenue** — This is the most common error. It understates revenue AND misses deductible fees. The net tax effect can be zero in simple cases, but it corrupts financial statements and can trigger issues if audited.  _(Common mistakes)_
-- **2. Double-counting MoR revenue** — If Paddle/Gumroad pays you $3,000 and you ALSO record the customer's $3,500 gross payment as revenue, you have double-counted. The MoR already invoiced the customer.  _(Common mistakes)_
-- **3. Missing the VAT obligation** — When using a payment processor (not MoR), YOU are responsible for collecting and remitting VAT/sales tax. When using an MoR, they handle it. Confusing the two creates VAT compliance failures.  _(Common mistakes)_
-- **4. Treating inter-account transfers as income** — Moving money from PayPal to your bank account is NOT income. The income occurred when the customer paid. The transfer is just a balance movement.  _(Common mistakes)_
-- **5. Ignoring FX gains/losses** — When you invoice in USD but receive in EUR (via Wise, PayPal, etc.), the exchange rate difference between invoice date and settlement date creates a taxable FX gain or deductible FX loss. This must be recorded.  _(Common mistakes)_
-- **6. Not reconciling to processor reports** — Bank statements alone are insufficient for correct payment processor accounting. You MUST obtain and reconcile against the processor's own transaction reports (Stripe dashboard, PayPal activity download, etc.).  _(Common mistakes)_
-
-## Disclaimer
-
-This file provides general guidance for classifying payment processor transactions. Processing fees, payout schedules, and MoR arrangements change frequently. Always verify against the processor's actual reports and invoices. This is not tax advice. A qualified professional should review all classifications before filing.
-
-## Disclaimer
+## Existing review requirement
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Sources
+
+| Official source | Read on | Read scope |
+|---|---|---|
+| https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for eligible UK business financial charges, non-deductible loan principal and bad-debt distinction by accounting basis. |
+| https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-11-14 | Read for Notice 700 sections 22.1-22.6 for actual agency, separate underlying/agent supplies and own-name agents. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38,B44-B47 for third-party collections, contracts, principal-agent control and unexercised rights; conditional reporting scope. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+
+Not yet confirmed: Vendor-specific MoR/reseller contracts, current fee tables, legal billing entities, settlement timings and country deductions/tax returns cannot be inferred from a descriptor. The historical examples are supplied-data controls, not certification of country tax rates or current platform terms.  Current platform billing identities, prices, plans, live descriptors and automatic tax arrangements are not certified. Old row claims below are historical comparison only, not usable tax or fee guidance. No vendor source was used.
+
+- Historical claim, not usable guidance, **Stripe**: What it IS: Net payout after Stripe fees (typically 2.9% + 30c per transaction, varies by country/product); What it is NOT: NOT gross revenue. NOT a Stripe subscription fee.; Classification rule: Book gross revenue from Stripe dashboard. Book Stripe fees as "Bank charges / Payment processing fees". The bank deposit is merely the settlement.
+- Historical claim, not usable guidance, **Stripe**: What it IS: Payout from a Stripe Connect platform (e.g., marketplace payout); What it is NOT: NOT revenue from YOUR customers. The platform is paying you.; Classification rule: Revenue = payout + platform fees withheld. Check platform dashboard for gross amounts.
+- Historical claim, not usable guidance, **Stripe**: What it IS: Stripe Atlas incorporation service fee ($500 one-time + optional ongoing); What it is NOT: NOT a payment processing charge.; Classification rule: One-time: Capitalize as incorporation cost or expense as startup cost. Ongoing: Office expenses / Legal services.
+- Historical claim, not usable guidance, **Stripe**: What it IS: Stripe's invoicing/billing product collecting payment on your behalf; What it is NOT: NOT revenue , same net-payout rule applies.; Classification rule: Same as standard Stripe payout rule.
+- Historical claim, not usable guidance, **PayPal**: What it IS: Net payout from PayPal balance to bank account; What it is NOT: NOT revenue. This is a transfer between your own accounts.; Classification rule: The revenue was already recorded when the customer paid into your PayPal account. This transfer is a balance movement, not income.
+- Historical claim, not usable guidance, **PayPal**: What it IS: Payment TO a merchant via PayPal (expense); What it is NOT: NOT revenue. NOT a PayPal fee.; Classification rule: Classify based on the merchant name after the asterisk. This is an expense paid via PayPal.
+- Historical claim, not usable guidance, **PayPal**: What it IS: A payment received via PayPal (shows on PayPal statement, not always on bank); What it is NOT: The net amount (after PayPal's fee of ~2.9% + fixed).; Classification rule: Gross revenue = net received + PayPal fee. Obtain PayPal transaction report for exact fee breakdown.
+- Historical claim, not usable guidance, **PayPal**: What it IS: PayPal charge , could be incoming or outgoing; What it is NOT: Ambiguous , must check direction and reference.; Classification rule: Check debit/credit. If debit: expense. If credit: net payout (not revenue).
+- Historical claim, not usable guidance, **Wise**: What it IS: Currency conversion / international transfer; What it is NOT: NOT revenue. NOT an expense (unless the Wise fee itself).; Classification rule: If sending money: the transfer is a payment for an expense (classify the underlying expense). If receiving: it is a client payment arriving via Wise. The Wise fee is a separate deductible "Bank charges / FX fees" expense.
+- Historical claim, not usable guidance, **Wise**: What it IS: Wise's transfer fee; What it is NOT: NOT the transfer amount itself.; Classification rule: Deductible as "Bank charges / Transfer fees".
+- Historical claim, not usable guidance, **Wise**: What it IS: FX conversion within Wise multi-currency account; What it is NOT: NOT revenue or expense. It is a balance conversion.; Classification rule: Book the FX gain/loss. The conversion itself is not income or expense , only the exchange rate difference matters.
+- Historical claim, not usable guidance, **Square**: What it IS: Net payout from Square card reader; What it is NOT: NOT gross revenue.; Classification rule: Same pattern as Stripe. Gross revenue = payout + Square processing fee (typically 2.6% + 10c US). Obtain Square dashboard report.
+- Historical claim, not usable guidance, **Square**: What it IS: Purchase of Square card reader hardware; What it is NOT: NOT a payment processing fee.; Classification rule: Capitalize as equipment (if material) or expense as office supplies.
+- Historical claim, not usable guidance, **SumUp**: What it IS: Net payout from SumUp card reader; What it is NOT: NOT gross revenue.; Classification rule: Same pattern. SumUp fee varies by country (1.69% EU typical). Check SumUp dashboard.
+- Historical claim, not usable guidance, **iZettle**: What it IS: Net payout from Zettle (now PayPal Zettle) card reader; What it is NOT: NOT gross revenue.; Classification rule: Same pattern. Now owned by PayPal. Fee typically 1.75% EU.
+- Historical claim, not usable guidance, **Revolut Business**: What it IS: Transfer between Revolut and external bank, or Revolut account fee; What it is NOT: NOT revenue. NOT an expense (unless it is the account fee).; Classification rule: If a transfer to/from your own account: ignore for P&L (balance movement). If a fee: "Bank charges". If a payment to a supplier: classify by supplier.
+- Historical claim, not usable guidance, **Revolut Business**: What it IS: Revolut subscription fee; What it is NOT: NOT a transfer.; Classification rule: "Bank charges / Account fees". Verify business vs. personal plan.
+- Historical claim, not usable guidance, **GoCardless**: What it IS: Direct debit collection payout; What it is NOT: NOT gross revenue. GoCardless deducts its fee before payout.; Classification rule: Gross revenue = payout + GoCardless fees (1% + 20p typical UK). Obtain GoCardless report.
+- Historical claim, not usable guidance, **GoCardless**: What it IS: A direct debit payment collected FROM you by a vendor using GoCardless; What it is NOT: This is an EXPENSE, not revenue.; Classification rule: Classify based on the vendor name. Common for recurring SaaS bills collected via DD.
+- Historical claim, not usable guidance, **Paddle**: What it IS: Payout from Paddle as Merchant of Record (MoR); What it is NOT: NOT your gross revenue. Paddle invoiced the customer, not you. YOUR revenue is the net payout from Paddle.; Classification rule: Paddle is the legal seller. They handle VAT, refunds, chargebacks. Your revenue = Paddle payout. Paddle's cut includes their fee + taxes they remitted. Do NOT also record the customer's gross payment as your revenue.
+- Historical claim, not usable guidance, **Gumroad**: What it IS: Payout from Gumroad as MoR; What it is NOT: NOT your gross revenue. Same MoR pattern as Paddle.; Classification rule: Revenue = Gumroad payout. Gumroad handles sales tax/VAT and takes their commission.
+- Historical claim, not usable guidance, **LemonSqueezy**: What it IS: Payout from LemonSqueezy as MoR; What it is NOT: NOT your gross revenue. Same MoR pattern.; Classification rule: Revenue = LemonSqueezy payout. They handle all tax obligations as MoR.
+- Historical claim, not usable guidance, **Shopify Payments**: What it IS: Net payout from Shopify Payments; What it is NOT: NOT gross revenue.; Classification rule: Same as Stripe pattern. Shopify Payments fee is separate. Note: Shopify subscription fee is a different charge (SaaS expense).
+- Historical claim, not usable guidance, **Amazon Pay**: What it IS: Payout from Amazon Pay; What it is NOT: NOT gross revenue.; Classification rule: Revenue = payout + Amazon Pay fees.
+- Historical claim, not usable guidance, **Klarna**: What it IS: Payout from Klarna (buy-now-pay-later); What it is NOT: NOT gross revenue. Klarna pays you in full (minus fee) even though customer pays in installments.; Classification rule: Revenue = Klarna payout + Klarna merchant fee. You recognize full revenue at sale, not when customer completes installments.
+- Historical claim, not usable guidance, **Adyen**: What it IS: Payout from Adyen payment platform; What it is NOT: NOT gross revenue.; Classification rule: Same net-payout pattern. Adyen fees deducted.
+- Historical claim, not usable guidance, **Mollie**: What it IS: Payout from Mollie payment platform; What it is NOT: NOT gross revenue.; Classification rule: Same pattern. Common in NL/EU.

@@ -65,7 +65,7 @@ Exact menu paths, accepted headings, maximum columns, file sizes, row limits, cl
 
 ## Worked case
 
-Both retained CSV layouts describe the same negative USD1,794.55 movement. With an independently evidenced illustrative USD10,000 opening, closing is USD8,205.45. Importing both layouts would duplicate the movements. The period and currency remain supplied case assumptions; the file alone does not establish taxable income.
+Both retained CSV layouts describe the same negative USD 1,794.55 movement. With an independently evidenced illustrative USD 10,000 opening, closing is USD 8,205.45. Importing both layouts would duplicate the movements. The period and currency remain supplied case assumptions; the file alone does not establish taxable income.
 
 ```oa-check
 name: QuickBooks Online import and ledger reconciliation
@@ -124,10 +124,10 @@ This skill and its outputs are provided for informational and computational purp
 | Official source | Read on | Read scope |
 |---|---|---|
 | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
-| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
-| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections2-6 and13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
-| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
-| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs20-23 and27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
 
 Not yet confirmed: the live quickbooks API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
 
@@ -198,3 +198,10 @@ Historical item Refund. Meaning: Refund issued to customer
 ```text
 QBO Settings > Export Data produces a ZIP file containing Excel workbooks for: Reports (P&L, Balance Sheet, A/R Ageing, A/P Ageing, etc.) and Lists (Chart of Accounts, Customers, Vendors, Products, Employees).
 ```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- Tax (historical location Report exports); retain as an investigation field, not proof of tax treatment.
+- Tax Rate (historical location Invoice detail exports); retain as an investigation field, not proof of tax treatment.
+- Tax Agency (historical location Sales Tax Liability report); retain as an investigation field, not proof of tax treatment.
+- Tax Code (historical location International QBO (UK, AU)); retain as an investigation field, not proof of tax treatment.

@@ -63,7 +63,7 @@ Keep invoice references, original/refund reference IDs, balance impact and separ
 
 ## Worked case
 
-In the supplied fixture, an independently supported illustrative GBP3,100 opening balance gives GBP2,927.23 closing; the EUR balance separately returns to zero. The GBP415 conversion leg is not new sales revenue. Do not combine GBP and EUR totals into one balance.
+In the supplied fixture, an independently supported illustrative GBP 3,100 opening balance gives GBP 2,927.23 closing; the EUR balance separately returns to zero. The GBP 415 conversion leg is not new sales revenue. Do not combine GBP and EUR totals into one balance.
 
 ```oa-check
 name: PayPal activity and multi-currency reconciliation
@@ -110,10 +110,10 @@ This skill and its outputs are provided for informational and computational purp
 | Official source | Read on | Read scope |
 |---|---|---|
 | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
-| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
-| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections2-6 and13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
-| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
-| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs20-23 and27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
 
 Not yet confirmed: the live paypal API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
 
@@ -225,3 +225,13 @@ Historical item Withdrawal in non-default currency. How It Appears: PayPal conve
 ```text
 The Activity Download CSV is accessed via: Activity page > Statements > Activity Download > Select date range > Choose CSV format > Download.
 ```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- Sales Tax; retain as an investigation field, not proof of tax treatment.
+- Country / Country Code; retain as an investigation field, not proof of tax treatment.
+- Invoice Number; retain as an investigation field, not proof of tax treatment.
+- Gross vs Net; retain as an investigation field, not proof of tax treatment.
+- Currency; retain as an investigation field, not proof of tax treatment.
+- 1099-K reporting (US); retain as an investigation field, not proof of tax treatment.
+- DAC7 reporting (EU); retain as an investigation field, not proof of tax treatment.

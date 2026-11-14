@@ -63,11 +63,11 @@ Do not count amount lines as separate orders or deduplicate them by order ID. Pr
 
 A marketplace suffix or currency does not establish the seller's tax jurisdiction. Stock location, seller/customer establishments, destination, product and marketplace role all matter. A tax-withheld label does not establish that every seller filing/registration/payment obligation is discharged. Cross-reference actual marketplace tax reports and owning country law. Under an applicable reporting framework, separate own revenue, agency collections and the settlement transfer. Do not automatically classify every `ItemPrice` amount as revenue or every `Adjustment` as non-revenue.
 
-The retained TSV has a 24-field header but rows of 14, 18 or 22 fields. It must be rejected before field-position mapping. The visible illustrative amount components also do not bridge to the stated GBP1,847.32 settlement. Do not pad shifted columns, guess missing identifiers, invent sales or certify a balanced import.
+The retained TSV has a 24-field header but rows of 14, 18 or 22 fields. It must be rejected before field-position mapping. The visible illustrative amount components also do not bridge to the stated GBP 1,847.32 settlement. Do not pad shifted columns, guess missing identifiers, invent sales or certify a balanced import.
 
 ## Worked case
 
-These are manually identified illustrative amounts in a malformed retained fixture, not a successful parse. Visible activity is negative GBP16.32, leaving GBP1,863.64 unexplained against the header settlement. One order row is two fields short. The import must stop and request a complete, correctly aligned export.
+These are manually identified illustrative amounts in a malformed retained fixture, not a successful parse. Visible activity is negative GBP 16.32, leaving GBP 1,863.64 unexplained against the header settlement. One order row is two fields short. The import must stop and request a complete, correctly aligned export.
 
 ```oa-check
 name: Amazon Seller settlement and order-component reconciliation
@@ -98,7 +98,7 @@ These are the original illustrations, retained byte-for-byte inside their code b
 
 ```tsv
 settlement-id	settlement-start-date	settlement-end-date	deposit-date	total-amount	currency	transaction-type	order-id	merchant-order-id	adjustment-id	shipment-id	marketplace-name	amount-type	amount-description	amount	fulfillment-id	posted-date	posted-date-time	order-item-code	merchant-order-item-id	merchant-adjustment-item-id	sku	quantity-purchased	promotion-id
-18906543210	2026-03-01T00:00:00+00:00	2026-03-15T00:00:00+00:00	2026-03-17	1847.32	GBP
+18906543210	2026-03-01T00:00:00+00:00	2026-03-15T00:00:00+00:00	2026-03-17	1847.32	GBP								
 18906543210	2026-03-01T00:00:00+00:00	2026-03-15T00:00:00+00:00	2026-03-17		GBP	Order	206-1234567-8901234			FBA12345	amazon.co.uk	ItemPrice	Principal	29.99	AFN	2026-03-02	2026-03-02T14:23:00+00:00	12345678901234		WIDGET-001	1
 18906543210	2026-03-01T00:00:00+00:00	2026-03-15T00:00:00+00:00	2026-03-17		GBP	Order	206-1234567-8901234			FBA12345	amazon.co.uk	ItemPrice	Shipping	3.99	AFN	2026-03-02	2026-03-02T14:23:00+00:00	12345678901234		WIDGET-001	1
 18906543210	2026-03-01T00:00:00+00:00	2026-03-15T00:00:00+00:00	2026-03-17		GBP	Order	206-1234567-8901234			FBA12345	amazon.co.uk	ItemFees	Commission	-4.50	AFN	2026-03-02	2026-03-02T14:23:00+00:00	12345678901234		WIDGET-001	1
@@ -118,10 +118,10 @@ This skill and its outputs are provided for informational and computational purp
 | Official source | Read on | Read scope |
 |---|---|---|
 | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
-| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
-| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections2-6 and13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
-| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
-| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs20-23 and27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
 
 Not yet confirmed: the live amazon-seller API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
 
@@ -224,3 +224,12 @@ Historical item Multiple marketplaces. How It Appears: Separate settlement repor
 Historical item Amazon Currency Converter. How It Appears: If enabled, Amazon converts foreign marketplace revenue to the seller's home currency. Settlement total-amount is in home currency. Individual rows are in marketplace currency.
 Historical item Cross-border FBA. How It Appears: Inventory in one country, sold in another. Settlement reports are per-marketplace regardless of inventory location.
 ```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- amount-description = Tax; retain as an investigation field, not proof of tax treatment.
+- amount-description = ShippingTax; retain as an investigation field, not proof of tax treatment.
+- amount-type = ItemWithheldTax; retain as an investigation field, not proof of tax treatment.
+- marketplace-name; retain as an investigation field, not proof of tax treatment.
+- currency; retain as an investigation field, not proof of tax treatment.
+- Shipping address (not in settlement); retain as an investigation field, not proof of tax treatment.

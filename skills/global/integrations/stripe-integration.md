@@ -63,7 +63,7 @@ The old assertion that every fee is positive conflicts with its own dispute row.
 
 ## Worked case
 
-The seven-row historical fixture has six non-payout net movements totalling USD2,354.82, against a USD2,831.82 payout. The USD477 gap and USD30 signed-fee formula contradiction must stop posting; they are not extra revenue or an invented fee.
+The seven-row historical fixture has six non-payout net movements totalling USD 2,354.82, against a USD 2,831.82 payout. The USD 477 gap and USD 30 signed-fee formula contradiction must stop posting; they are not extra revenue or an invented fee.
 
 ```oa-check
 name: Stripe balance, payout and invoice reconciliation
@@ -107,10 +107,10 @@ This skill and its outputs are provided for informational and computational purp
 | Official source | Read on | Read scope |
 |---|---|---|
 | https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
-| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
-| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections2-6 and13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
-| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
-| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs20-23 and27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB 15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47,105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB 121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
 
 Not yet confirmed: the live stripe API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
 
@@ -231,3 +231,11 @@ type
 Stripe provides two main CSV export paths: **Dashboard exports** (Balance > Download CSV) and **Reporting API exports** (programmatic, customisable columns). Most users export from the Dashboard.
 3. **Amounts in major units.** Stripe CSV exports amounts in dollars/pounds (100.00), but the API uses minor units/cents (10000). Ensure consistency when mixing sources.
 ```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- currency; retain as an investigation field, not proof of tax treatment.
+- customer_facing_currency; retain as an investigation field, not proof of tax treatment.
+- customer_email / customer_name; retain as an investigation field, not proof of tax treatment.
+- Stripe Tax; retain as an investigation field, not proof of tax treatment.
+- Stripe-issued invoices; retain as an investigation field, not proof of tax treatment.
