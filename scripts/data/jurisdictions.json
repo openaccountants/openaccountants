@@ -602,6 +602,13 @@
   "dir": "skills/india"
  },
  {
+  "code": "IO",
+  "name": "British Indian Ocean Territory",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/british-indian-ocean-territory"
+ },
+ {
   "code": "IS",
   "name": "Iceland",
   "region": "europe",
@@ -614,6 +621,13 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/italy"
+ },
+ {
+  "code": "JE",
+  "name": "Jersey",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/jersey"
  },
  {
   "code": "JM",
@@ -931,6 +945,13 @@
   "dir": "skills/namibia"
  },
  {
+  "code": "NC",
+  "name": "New Caledonia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/new-caledonia"
+ },
+ {
   "code": "NE",
   "name": "Niger",
   "region": "africa",
@@ -999,6 +1020,13 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/peru"
+ },
+ {
+  "code": "PF",
+  "name": "French Polynesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/french-polynesia"
  },
  {
   "code": "PG",
