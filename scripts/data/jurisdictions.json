@@ -441,6 +441,13 @@
   "dir": "skills/falkland-islands"
  },
  {
+  "code": "FM",
+  "name": "Micronesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/micronesia"
+ },
+ {
   "code": "FO",
   "name": "Faroe Islands",
   "region": "europe",
