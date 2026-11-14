@@ -1,10 +1,10 @@
 ---
 name: wa-sales-tax
 description: Washington State retail sales and use tax for tax year 2026, for sellers of goods, digital products and retail services and for buyers owing use tax. Covers the 6.5% state rate plus local rates, the more-than-$100,000 economic nexus test for remote sellers, marketplace sellers and facilitators, destination sourcing, the services made retail sales on 1 October 2025 by ESSB 5814 and the 1 July 2026 exclusions and school and library exemption, food and digital product rules, use tax, reseller permits, the combined excise tax return, due dates and penalties. Trigger on "Washington sales tax", "WA sales tax", "Washington DOR", "Washington use tax", "Washington digital goods", "Washington resale certificate", "reseller permit", "ESSB 5814", "Washington remote seller". For Washington B&O tax load wa-bo-tax.
-version: "2.0"
+version: "2.1"
 jurisdiction: US-WA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - us-tax-workflow-base
 category: state
@@ -75,14 +75,16 @@ The statute taxes retail sales of tangible personal property, digital goods, dig
 
 #### Sample combined rates, 1 October to 31 December 2026 ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf))
 
+Rates are written as the DOR flyer prints them, as decimals (.1055 means 10.55%).
+
 | Location | Location code | Local rate | State rate | Combined rate | Source |
 | --- | --- | --- | --- | --- | --- |
-| Seattle | 1726 | 4.05% | 6.5% | 10.55% | [DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf) |
-| Tacoma | 2717 | 4.0% | 6.5% | 10.5% | same |
-| Olympia | 3403 | 3.5% | 6.5% | 10% | same |
-| Spokane (city) | 3210 | 2.6% | 6.5% | 9.1% | same |
-| Vancouver | 0605 | 2.4% | 6.5% | 8.9% | same |
-| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | 4.2% | 6.5% | 10.7% | same |
+| Seattle | 1726 | .0405 | .0650 | .1055 | [DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf) |
+| Tacoma | 2717 | .0400 | .0650 | .1050 | same |
+| Olympia | 3403 | .0350 | .0650 | .1000 | same |
+| Spokane (city) | 3210 | .0260 | .0650 | .0910 | same |
+| Vancouver | 0605 | .0240 | .0650 | .0890 | same |
+| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | .0420 | .0650 | .1070 | same |
 
 Combined rates across the state run from 7.6% to 10.7% this quarter. The same rates applied from 1 July 2026. Never hard-code these: DOR publishes new rates each quarter, and a single address can sit in a transit or benefit area with its own code. Use the lookup tool for every address.
 

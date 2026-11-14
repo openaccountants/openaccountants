@@ -1,11 +1,11 @@
 ---
 name: sc-corporate-tax
 description: "South Carolina ordinary C corporation 5 percent income tax, federal/state reconciliation, allocation/apportionment, separate capital licence fee and minimum, SC1120 filing, estimates and entity boundaries."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-SC
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: income-tax
 type: computation
@@ -39,7 +39,7 @@ Ordinary C corporations doing business or earning income in SC, including LLCs f
 | Item | Rate, amount and condition | Official source |
 |---|---|---|
 | Ordinary C corporation income | 5% of SC taxable income | [12-6-530](https://www.scstatehouse.gov/code/t12c006.php) |
-| Annual licence fee | USD 15 +USD 1 per USD 1,000 or fraction of applicable capital stock/paid-in surplus; minimum USD 25 | [12-20-50(A)](https://www.scstatehouse.gov/code/t12c020.php) |
+| Annual licence fee | USD 15 plus USD 1 for each USD 1,000, or fraction of USD 1,000, of applicable capital stock and paid-in or capital surplus; minimum USD 25 (in words on the page) | [12-20-50(A)](https://www.scstatehouse.gov/code/t12c020.php) |
 | Initial CL-1 licence fee | USD 25, within 60 days of doing business/using capital if not already filed/paid with Secretary of State | [account setup](https://dor.sc.gov/business-income-taxes/corporate/c-corporation) |
 | Electronic filing/payment | Liability USD 15,000 or more per filing period | [filing mandate](https://dor.sc.gov/business-income-taxes/corporate/c-corporation) |
 | Corporate estimated tax | Income tax less credits USD 100 or more under verified instructions | [Extensions and Estimated Payments](https://dor.sc.gov/sites/dor/files/forms/SC1120I.pdf) |
