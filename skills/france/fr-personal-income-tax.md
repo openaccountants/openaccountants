@@ -14,14 +14,15 @@ description: >
   results in depth (fr-income-tax), social contributions (fr-social-contributions),
   gains on securities (fr-capital-gains), rental income (fr-rental-income), crypto
   (fr-crypto-tax), leaving France (leaving-france-exit-tax), audits (fr-tax-audit).
-version: "1.10"
+version: "1.11"
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # France: personal income tax for a household (impôt sur le revenu)
@@ -75,7 +76,7 @@ Self-employed results in depth are in `fr-income-tax`; social contributions in `
 | Social levies on general investment income collected at source under CSS art. L136-7 during 2025 (CSG 9.2%, CRDS 0.5%, solidarity levy 7.5%) | 17.2% total | Source-collected payments in 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 | CSG on general investment and patrimony income (CSS art. L136-8, I-2°; LFSS 2026, loi n° 2025-1403 art. 12 II) | 10.6%, so 18.6% total levies | L136-6 assessed income from 2025; L136-7 source-collected payments from 1 January 2026, subject to the statutory exceptions below | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-24 |
 | CSG kept at 9.2% (CSS art. L136-8, IV): rental income, gains on real property, and the PEL, CEL and life-insurance products covered by IV | 17.2% total | Protected categories; check the product and applicable collection rules | same, and https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Flat tax on dividends and interest, total (12.8% plus levies) | 30% where the levies are 17.2%; 31.4% where they are 18.6% | For general L136-7 source-collected dividends: 30% in 2025; 31.4% from 1 January 2026. Assessed L136-6 income follows its separate commencement rule | computed from the two rows above |
+| Flat tax on dividends and interest, total (12.8% plus levies) | 30% where the levies are 17.2%; 31.4% where they are 18.6% | For general L136-7 source-collected dividends: 30% in 2025; 31.4% from 1 January 2026. Assessed L136-6 income follows its separate commencement rule | computed from the two rows above; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896/2026-10-24 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-24 |
 | Dividend allowance, only if the household opts for the scale | 40% | 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 |
 | Deductible CSG, income taxed at the scale | 6.8% | Income of 2025 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf |
 | Salary deduction for expenses (CGI art. 83, 3°) | 10%, min EUR 509, max EUR 14,555 per person; never more than the relevant declared remuneration | Income of 2025 | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
