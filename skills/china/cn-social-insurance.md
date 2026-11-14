@@ -3,12 +3,13 @@ name: cn-social-insurance
 description: 处理中国大陆员工社会保险与住房公积金（五险一金）相关工作时必读本技能。涉及"中国社保"、"五险一金"、"养老保险"、"医疗保险"、"失业保险"、"生育保险"、"工伤保险"、"住房公积金"、"社保基数"、"缴费比例"、"社保申报"、"公积金缴存"、"社保税务征收"、"金税四期"、"外籍员工社保"、"延迟退休"等中文表述时触发；同时在英文场景下出现 "China social insurance"、"five insurances and one fund"、"Chinese pension"、"housing fund"、"China shebao gongjijin"、"China payroll statutory deductions"、"PRC social security"、"China provident fund" 等表述时也应触发。本技能为编排器（orchestrator），按月编制中国员工五险一金的缴费基数、单位与个人缴费金额、申报与缴纳节奏，并给出与个人所得税专项扣除的衔接口径。涵盖《社会保险法》《住房公积金管理条例》及各省/直辖市/计划单列市实施细则的通用框架；具体比例与基数上下限以"参保地"最新文件为准。
 jurisdiction: CN
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 category: international
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # China social insurance and housing provident fund: 2026 national method and dated local calculations
@@ -151,20 +152,20 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| Social Insurance Law (2018 amended text) | https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html | 2026-10-29 |
-| Housing Provident Fund Regulations, 2026 amended text | https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html | 2026-10-29 |
-| Shanghai employer-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html | 2026-10-29 |
-| Shanghai employee-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html | 2026-10-29 |
-| Shanghai 2025 policy explanation | https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html | 2026-10-29 |
-| Shanghai medical notice 2026 No.2 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html | 2026-10-29 |
-| Shanghai 2025 base notice | https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html | 2026-10-29 |
-| Shanghai 2026 base notice | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html | 2026-10-29 |
-| Shanghai base Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html | 2026-10-29 |
-| Shanghai housing-fund notice 2026 No.3 | https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435 | 2026-10-29 |
-| Shanghai annual declaration notice 2026 No.1 | https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html | 2026-10-29 |
-| Shanghai payment guidance | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html | 2026-10-29 |
-| 2024 retirement-age decision and implementing measures | https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml | 2026-10-29 |
-| Foreign-worker social-insurance measures,2024 revision | https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html | 2026-10-29 |
+| Social Insurance Law (2018 amended text). Read for Who this applies to, Rates, bands and thresholds, The base | https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html | 2026-11-14 |
+| Housing Provident Fund Regulations, 2026 amended text. Read for Who this applies to, Rates, bands and thresholds, The base | https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html | 2026-11-14 |
+| Shanghai employer-rate guidance. Read for Rates, bands and thresholds, The base | https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html | 2026-11-14 |
+| Shanghai employee-rate guidance. Read for Rates, bands and thresholds, The base | https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html | 2026-11-14 |
+| Shanghai 2025 policy explanation. Read for Rates, bands and thresholds | https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html | 2026-11-14 |
+| Shanghai medical notice 2026 No.2. Read for Rates, bands and thresholds, The base, Benefits, retirement and non-payroll decisions retained from the earlier Guide | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html | 2026-11-14 |
+| Shanghai 2025 base notice. Read for Rates, bands and thresholds | https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html | 2026-11-14 |
+| Shanghai 2026 base notice. Read for Rates, bands and thresholds | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html | 2026-11-14 |
+| Shanghai base Q&A. Read for Rates, bands and thresholds, The base | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html | 2026-11-14 |
+| Shanghai housing-fund notice 2026 No.3. Read for Rates, bands and thresholds, The base, Deadlines and filing | https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435 | 2026-11-14 |
+| Shanghai annual declaration notice 2026 No.1. Read for The base, Deadlines and filing | https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html | 2026-11-14 |
+| Shanghai payment guidance. Read for Deadlines and filing | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html | 2026-11-14 |
+| 2024 retirement-age decision and implementing measures. Read for Benefits, retirement and non-payroll decisions retained from the earlier Guide | https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml | 2026-11-14 |
+| Foreign-worker social-insurance measures,2024 revision. Read for Cross-border points | https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html | 2026-11-14 |
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 

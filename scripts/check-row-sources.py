@@ -20,6 +20,7 @@ Writes a markdown report to $GITHUB_STEP_SUMMARY when set.
 """
 import html
 import io
+import json
 import os
 import re
 import subprocess
@@ -71,12 +72,24 @@ def _value(s):
         return None
 
 
+# A space, no-break space or thin space between digit groups ("1 234,56").
+GROUP_SPACE_RE = re.compile(r"(?<=\d)[ \u00a0\u202f\u2009](?=\d{3}\b)")
+
+
 def page_values(page_text):
+    """Every number on the page, read the English way (1,234.56) and the European way
+    (1.234,56, 1 234,56, 2,25 %), so a page that writes figures with a decimal comma is
+    not reported as a miss."""
     vals = set()
-    for m in NUM_RE.findall(page_text):
+    found_nums = NUM_RE.findall(page_text) + NUM_RE.findall(GROUP_SPACE_RE.sub("", page_text))
+    for m in found_nums:
         v = _value(m)
         if v is not None:
             vals.add(round(v, 6))
+        try:
+            vals.add(round(float(m.replace(".", "").replace(",", ".")), 6))
+        except ValueError:
+            pass
     return vals
 
 
@@ -104,8 +117,29 @@ def read_bytes(raw):
         except zipfile.BadZipFile:
             return ""
     t = raw.decode("utf-8", "replace")
+    flight = next_flight_text(t)
+    # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
+    attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
     t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
-    return html.unescape(re.sub(r"<[^>]+>", " ", t))
+    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + (" " + attrs if attrs else "")
+
+
+# Next.js sites (finlex.fi and others) ship the page text inside
+# <script>self.__next_f.push([1,"..."])</script> blocks, not in the HTML body.
+NEXT_F_RE = re.compile(r'self\.__next_f\.push\(\[\d+,("(?:[^"\\]|\\.)*")\]\)')
+
+
+def next_flight_text(page):
+    """The text carried in Next.js data blocks, or "" when the page has none."""
+    parts = []
+    for lit in NEXT_F_RE.findall(page):
+        try:
+            parts.append(json.loads(lit))
+        except ValueError:
+            continue
+    if not parts:
+        return ""
+    return " " + html.unescape(re.sub(r"<[^>]+>", " ", "".join(parts)))
 
 
 _cache = {}
