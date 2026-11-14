@@ -1,10 +1,10 @@
 ---
 name: de-income-tax
 description: "Delaware Individual Income Tax Return (Form PIT-RES) for sole proprietors and single-member LLCs. Covers the seven-bracket graduated system (0%–6.6%), Delaware standard deduction, modifications to federal AGI, and personal credits. Trigger: taxpayer is a Delaware resident with gross income exceeding filing thresholds."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-DE
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
@@ -216,11 +216,11 @@ Spouses who both must file may itemize only if both elect to.
 
 | At | Tax | Official source |
 |---|--- | --- |
-| $5,000 | $66 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| $10,000 | $261 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| $20,000 | $741 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| $25,000 | $1,001 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| $60,000 | $2,943.50 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $5,000 | $66 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $10,000 | $261 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $20,000 | $741 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $25,000 | $1,001 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $60,000 | $2,943.50 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 
 **No 2026 rate change is in the Code.** Bills to add higher brackets were introduced in the 2025–2026 session, but § 1102 as published on delcode.delaware.gov still shows paragraph (a)(14) as the current schedule. Re-check § 1102 before filing if the client has income well above $60,000.
 
@@ -321,14 +321,14 @@ Everyone who is not a resident is a **nonresident** (§ 1104).
 | Abode in Delaware, domiciled elsewhere, exactly 183 days in Delaware | Statutory residency needs **more than 183 days** | Nonresident | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 | Same, 184 days | More than 183 days, with an abode | Resident for the whole year | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 | Domiciliary abroad 495+ days in 18 months, 45 or fewer days in Delaware, no family abode in use over 45 days, not a US employee | § 1103(1) exception | Not a resident for that period | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| Taxable income exactly $60,000 | Instructions: "$60,000 or greater, use the tax schedule" | $2,943.50 | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| Expected tax after withholding and credits exactly $800 | A declaration is required only if it "can reasonably be expected to exceed $800" | No estimated tax declaration required | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| Turns 60 on 31 December 2026 | Age is tested at year end ("60 years of age or over on December 31") | 60+ exclusion and extra $110 credit apply, if the domicile condition is met | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| Turns 65 on 31 December 2026 | § 1108(b): "attained the age of 65 before the close of the taxable year" | Extra $2,500, standard deduction only | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Taxable income exactly $60,000 | Instructions: "$60,000 or greater, use the tax schedule" | $2,943.50 (derived: sum of the § 1102(a)(14) slices to $60,000) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html); [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
+| Expected tax after withholding and credits exactly $800 | A declaration is required only if it "can reasonably be expected to exceed $800" | No estimated tax declaration required | [§ 1169(a)](https://delcode.delaware.gov/title30/c011/sc08/index.html) |
+| Turns 60 on 31 December 2026 | Age is tested at year end ("60 years of age or over on December 31") | 60+ exclusion and extra $110 credit apply, if the domicile condition is met | [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf); [§ 1110(b)](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Turns 65 on 31 December 2026 | § 1108(b): "attained the age of 65 before the close of the taxable year" | Extra $2,500, standard deduction only | [§ 1108(b)](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Under 60 with an early IRA distribution (1099-R code 1) | Not a qualifying pension | No exclusion for that distribution | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| DE529 contribution, single filer with federal AGI just over $100,000 | Denied if AGI is "greater than $100,000" | No subtraction | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| DE529 contribution, single filer with federal AGI just over $100,000 | Denied if AGI is "greater than $100,000" | No subtraction | [§ 1106](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Nonresident spouse of a resident | § 1162(a)(4) | Separate returns unless both elect to file jointly as residents | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
-| 2026 equipment, 100% bonus depreciation federally | HB 255, § 1106(d) | Delaware allows 20% bonus plus regular depreciation; add back the difference | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| 2026 equipment, 100% bonus depreciation federally | HB 255, § 1106(d) | Delaware allows 20% bonus plus regular depreciation; add back the difference | [Technical Information Memorandum on HB 255](https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf); [§ 1106](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 | Nonresident with a Delaware job, working some days at home by choice | § 1124(b)(1)b; the PIT-NON instructions say "Working from home does not qualify for an exclusion on Form PIT-SCW" ([instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf)) | Home days remain Delaware-source wages | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 | Same, but the employer requires out-of-state client work on some days | [Form PIT-SCW](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf): allowance for days worked outside Delaware out of necessity | Exclude wages × (required days outside ÷ total days worked) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 | City wage tax withheld | Not Delaware tax | Leave it out of Delaware tax withheld | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |

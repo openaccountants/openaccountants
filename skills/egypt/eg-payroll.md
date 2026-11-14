@@ -1,10 +1,11 @@
 ---
 name: eg-payroll
 description: Use this skill for running payroll for an employer in Egypt for tax year 2026, including a sole proprietor who hires staff. It covers salary tax withholding, the unified payroll system, monthly calculation form, Form 4 and annual settlement, gross to net, employer cost and employee versus freelancer. Trigger on "Egypt payroll", "salary tax Egypt", "ضريبة كسب العمل", "payroll tax Egypt", "hiring employees Egypt", "withholding tax on salaries Egypt", "Form 4 Egypt", "نموذج 4", "gross to net salary Egypt", "employer cost Egypt", "end of service Egypt" or "employee vs freelancer Egypt". Read this skill before any Egypt payroll work. Social insurance computation sits in eg-social-insurance.
-version: 1.1
+version: 1.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: payroll
 ---
 
-# Egypt Payroll v1.1
+# Egypt Payroll v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,7 +34,7 @@ Tax year: calendar 2026 (the annual settlement runs January to December whatever
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
 | Personal exemption | EGP 20,000 a year | 2026 | Each employee; prorated if days worked in a month are under 30 (FAQ q.93). Law 91 art. 13(1) as replaced by Law 7/2024 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
-| Exemption, disabled worker or carer | 150% of the personal exemption (EGP 30,000) | 2026 | Integrated services card from Social Solidarity; treatment code 4 (Law 10/2018 art. 23(1)) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
+| Exemption, disabled worker or carer | Personal exemption raised by 50% (EGP 30,000, computed: EGP 20,000 plus 50%) | 2026 | Integrated services card from Social Solidarity; treatment code 4 (Law 10/2018 art. 23(1)) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Annual net income rounding | Down to the nearest EGP 10 | 2026 | Applied before the bands. Law 91 art. 8 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
 | Withholding by a non-original employer | 10% on account | 2026 | Treatment code 2; a payment on account, no longer final (art. 72 bis, Law 30/2023, from January 2024) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Economic zone treatment | 5% of the annual base | 2026 | Suez Canal zone companies set up before 24 June 2015 whose status still runs; codes 6 and 7 | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
@@ -235,16 +236,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 7/2024, arts. 8 and 13(1) of Law 91, Gazette 21 Feb 2024, both pages read | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-01 |
-| Law 91/2005, arts. 10, 12 to 16, 110, original 2005 text from OCR | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
-| ETA FAQ on the payroll system, 4th edition, March 2026, all 44 pages | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf | 2026-11-01 |
-| ETA Form 4 guide v1.2, whole | https://eta.gov.eg/sites/default/files/2025-11/UPTCP_Quarterly_Payroll_Form_Submission_Guide_v.1.2.pdf | 2026-11-01 |
-| ETA annual settlement guide for 2025, overview, steps and first field tables (pages 1 to 11) | https://eta.gov.eg/sites/default/files/2026-01/uptcp_annual_payroll_claculation_form_guide_v_2.2_1.pdf | 2026-11-01 |
-| ETA monthly form guide, overview and steps to page 9 | https://eta.gov.eg/sites/default/files/2026-01/uptcp_submitting_payroll_claculation_form_guide_v_1.7_highlights.pdf | 2026-11-01 |
-| ETA 2026 private sector monthly form, all column headers | https://eta.gov.eg/sites/default/files/2026-03/nmwdhj_alqta_alkhas_2026.xlsx | 2026-11-01 |
-| Law 53/2014, art. 1, art. 13 last para. (OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-01 |
-| Law 151/2026, art. 2 page read | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
-| NOSI notice on 2026 band, 30 Nov 2025, whole page | https://www.nosi.gov.eg/ar/news/Pages/2025-11-30.aspx | 2026-11-01 |
-| National Wages Council, Ministry of Planning, 2025, headline decision | https://mped.gov.eg/singlenews?id=6009 | 2026-11-01 |
+| Law 7/2024 replacing arts. 8 and 13(1) of Law 91, Gazette 21 Feb 2024: read for the art. 8 rate table (10% to 27.5%, columns by income), rounding down to the nearest EGP 10 and the EGP 20,000 exemption. The PDF is damaged for local tools; read through Firecrawl | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-14 |
+| Law 91/2005, original 2005 text, scanned: read for arts. 10, 12 to 16 and 110 by OCR on 2026-11-01. Reopened 2026-11-14: the file answers but is a scan, and the articles were not re-read | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-14 (opened, not re-read) |
+| ETA FAQ on the payroll system, 4th edition, March 2026: read for the exemptions, treatment codes and proration (44 pages) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf | 2026-11-14 |
+| ETA Form 4 guide v1.2: read in full for the quarterly return steps | https://eta.gov.eg/sites/default/files/2025-11/UPTCP_Quarterly_Payroll_Form_Submission_Guide_v.1.2.pdf | 2026-11-14 |
+| ETA annual settlement guide for 2025: read for the overview, steps and first field tables (pages 1 to 11) | https://eta.gov.eg/sites/default/files/2026-01/uptcp_annual_payroll_claculation_form_guide_v_2.2_1.pdf | 2026-11-14 |
+| ETA monthly form guide: read for the overview and steps to page 9 | https://eta.gov.eg/sites/default/files/2026-01/uptcp_submitting_payroll_claculation_form_guide_v_1.7_highlights.pdf | 2026-11-14 |
+| ETA 2026 private sector monthly form: read for all column headers | https://eta.gov.eg/sites/default/files/2026-03/nmwdhj_alqta_alkhas_2026.xlsx | 2026-11-14 |
+| Law 53/2014, scanned: read for art. 1 and the last paragraph of art. 13 by OCR on 2026-11-01. Reopened 2026-11-14: the file answers but is a scan, and the articles were not re-read | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-14 (opened, not re-read) |
+| Law 151/2026: read for the art. 2 page | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-14 |
+| NOSI notice of 30 Nov 2025: read in full for the 2026 insurance wage band (EGP 2,700 to 16,700) | https://www.nosi.gov.eg/ar/news/Pages/2025-11-30.aspx | 2026-11-14 |
+| National Wages Council, Ministry of Planning, 2025: read for the headline decision (EGP 7,000 minimum wage, 3% and EGP 250 periodic raise) | https://mped.gov.eg/singlenews?id=6009 | 2026-11-14 |
 
 Not yet confirmed: the private sector minimum wage after March 2025; delay charge rate under art. 110 as amended and the Unified Tax Procedures Law penalties (the old "up to 80%" could not be traced); the exact annual settlement due date (old text said end January) and the day of the month for Form 4; whether the martyrs contribution base is gross pay and who bears it (the form has an employee and a company field); whether the old 0.05% wording matches EGP 5 per 10,000 on every run type; Law 91 arts. 12 to 16 as amended since 2005 where only the original text was read; Labour Law 14 of 2025 end-of-service formulas (half a month a year for five years, then a full month), not read in the law; Civil Code Law 131/1948 as the contractor test; employee comprehensive health insurance rate; the commencement date of Labour Law 14 of 2025 (old text: 1 September 2025).
