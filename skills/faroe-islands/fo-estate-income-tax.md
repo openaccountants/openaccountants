@@ -332,7 +332,7 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
-| Current Tax Act 109/2023, current through 2026 amendments; §§1–2,11–20,24,39–41,46–47,54,80–81,100–104,127,135,141–142 | https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt | 2026-10-31 |
+| Current Tax Act 109/2023, current through 2026 amendments; §§ 1–2, 11–20, 24, 39–41, 46–47, 54, 80–81, 100–104, 127, 135, 141–142 | https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt | 2026-10-31 |
 | Assessment Act 87/1983, current §6 | https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170 | 2026-10-31 |
 | Capital Income Act 164/2001 current through 127/2024, §§9–12,14,16 | https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173 | 2026-10-31 |
 | Current court-linked D03, all six pages; original delivery and asset/debt fields: read for the rules and figures this Guide cites from it | https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf | 2026-10-31 |
