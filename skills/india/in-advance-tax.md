@@ -41,7 +41,7 @@ This skill covers advance tax in India: who must pay it during the year, the ins
 6. Pay each instalment through e-Pay Tax with a CRN under the 2025 Act, tax year 2026-27, advance tax; keep the Challan Receipt (https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax).
 7. Re-estimate before each date and adjust the remaining instalments (section 406(2)). If an Assessing Officer's order arrives, follow section 407 and use Form No. 152 for a lower estimate (https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 8. After the year: prepare a conditional section 425 interest working on the tax due on returned income for professional confirmation of the constructions in section 4.4; compute section 424 interest on assessed tax if advance tax paid by 31 March is below the share in the Section 1 table. Pay any balance with interest as self-assessment tax under section 266 before filing (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
-9. File by the section 263(1)(c) due date that fits the client, or section 423 interest runs (https://egazette.gov.in/WriteReadData/2026/271439.pdf).
+9. File by the section 263(1)(c) due date that fits the client, or section 423 interest applies where its statutory tax base remains positive after the tax-paid reductions (https://egazette.gov.in/WriteReadData/2026/271439.pdf).
 
 
 ### Section 1: Quick reference
@@ -83,7 +83,7 @@ Read this whole section before computing anything. Internal Tier 1/2/3 reference
 | Presumptive business, section 58(2) serial 1: turnover or gross receipts limit | INR 20,000,000 (in words on the page) | "exceed two crore rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive business, serial 1: higher limit where cash receipts do not exceed 5% of the total; non-account-payee cheques/drafts count as cash under section 58(9) | INR 30,000,000 (in words on the page) | "exceed three crore rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive business, serial 1: cash receipts share for the higher limit | 5% | "does not exceed 5%" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive business, serial 1: minimum profit on turnover received by specified banking/online mode during the tax year or by the section 263(1) return due date; compare with higher actual profit claimed | 6% | "6% of total turnover or gross receipts" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive business, serial 1: minimum profit on turnover received by specified banking/online mode during the tax year or before the section 263(1) return due date; compare with higher actual profit claimed | 6% | "6% of total turnover or gross receipts" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive business, serial 1: minimum profit on the rest of the turnover; compare aggregate computed profit with higher actual profit claimed | 8% | "8% of total turnover or gross receipts" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive profession, serial 3 (specified profession, section 62(4)): gross receipts limit | INR 5,000,000 (in words on the page) | "not exceed fifty lakh rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive profession, serial 3: higher limit where cash does not exceed 5% of gross receipts; non-account-payee cheques/drafts count as cash under section 58(9) | INR 7,500,000 (in words on the page) | "seventy-five lakh rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -93,11 +93,11 @@ The Gazette prints multi-column tables. Quotes above follow the operative column
 
 **Return due dates (section 263(1)(c) as substituted by the Finance Act, 2026)**
 
-For tax year 2026-27 these dates fall in 2027. They matter here because section 266 self-assessment tax is paid before the return, and section 423 interest runs from the due date.
+For tax year 2026-27 these dates fall in 2027. They matter here because section 266 self-assessment tax is paid before the return, and section 423 interest runs from the due date where its statutory tax base remains positive after tax-paid reductions.
 
 | Who | Due date | Note (verbatim) | Official source |
 | --- | --- | --- |---|
-| Company; assessee with accounts audited under this Act or any other law; partner of an audited firm, or that partner's spouse if section 10 applies; where section 172 does not apply | 31 October | "31st October." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Company; assessee whose accounts are required to be audited under this Act or any other law; partner of a firm whose accounts are required to be audited, or that partner's spouse if section 10 applies; where section 172 does not apply | 31 October | "31st October." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Business/profession assessee whose accounts need no audit under this Act or other law; partner of such an unaudited firm, or that partner's spouse if section 10 applies; where section 172 does not apply | 31 August | "31st August." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Any other assessee, after excluding the preceding partner/spouse, audit, business and section 172 categories | 31 July | "31st July." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Where section 172 applies, including partners of the firm and a partner's spouse if section 10 applies | 30 November | "30th November." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
@@ -185,7 +185,7 @@ Advance tax is payable during the financial year on the "current income" of that
 | Presumptive taxpayer under section 58(2) Table serial 1 or 3, at or above the threshold | YES, one payment by 15 March (section 408(2)) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Goods carriage owner under section 58(2) Table serial 2, at or above the threshold | YES, four instalments (section 408(2) names only serial 1 and 3) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Resident individual, 60 or more at any time in the tax year, with NO business or profession income | NO (section 403(3)) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Resident individual, 60 or more, WITH any business or profession income | YES | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Resident individual, 60 or more, WITH any business or profession income | YES if at or above the threshold | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Non-resident individual of any age | YES if at or above the threshold (section 403(3) covers residents only) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Anyone whose tax for the year after TDS/TCS is below the threshold | NO | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
@@ -407,7 +407,7 @@ Expected: one payment of the whole advance tax by 15 March 2027. No June, Septem
 #### Test 5: Senior citizen exempt
 
 Input: resident, turns 60 in February 2027, income only from house property and bank interest.
-Expected: section 403(3) applies (sixty at any time during the tax year, no business or profession income). No advance tax.
+Expected: section 403(3) applies (60 at any time during the tax year, no business or profession income). No advance tax.
 
 #### Test 6: Senior citizen not exempt
 
