@@ -1,19 +1,20 @@
 ---
 name: azerbaijan-social-contributions
 description: 'Use this skill for 2026 Azerbaijan compulsory social, medical and unemployment contribution working papers. It covers employee and employer schedules, private non-oil employer classification, the social band above AZN 8000, the medical band at AZN 2500, ordinary entrepreneur floors and ceilings, civil-contract providers, professional and fixed social categories, payment dates and quarterly reporting. Trigger on Azerbaijan social contributions, DSMF, SSPF, medical insurance, unemployment insurance, entrepreneur social tax and payroll deductions. Use the payroll skill for income tax and net pay. Technology-park elections and foreign-worker exclusions require eligibility evidence. Subsidy claims and informal-worker medical assessments are outside implemented scope. Checked against the law (tier 2); no accountant has signed it off.'
-version: 0.2
+version: 0.3
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Azerbaijan Social, Medical and Unemployment Contributions v0.2
+# Azerbaijan Social, Medical and Unemployment Contributions v0.3
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
