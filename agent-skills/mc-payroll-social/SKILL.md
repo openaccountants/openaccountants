@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mc-payroll-social"
   jurisdiction: "MC"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Monaco payroll and social contributions
@@ -197,8 +197,8 @@ expected:
 
 The earlier official PDFs were read and visually checked from dated archive captures because their live download IDs now return 2026 documents. They are not claimed as fresh live 2025 downloads. Original source URLs, capture dates, hashes, corroborating instruments and exceptions are recorded in the country research receipts. The January to September 2026 (social year 2025-26) CCSS, CAR and CMRC caps, the 0.88% CAR variable employer rate and the 2025-26 CAMTI and CARTI quarterly amounts are confirmed from the official October 2025 CSM circulars themselves (headed "au 1er octobre 2025"; the social year runs to 30 September), re-read 27 October 2026 from the dated archive captures; no live official page now states them. **Not yet confirmed:** special occupational flat bases, derogatory CMRC contracts and sector-specific employment costs. These require their own schedule; do not apply the ordinary examples to those cases without classification.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mc-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mc-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mc-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mc-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

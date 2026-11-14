@@ -3,16 +3,17 @@ name: sl-income-tax
 description: "Sierra Leone personal income and PAYE workpaper for the 2026 research year. Use for resident employee withholding, a taxable benefit, documented expense reimbursement, redundancy payment, an allowance or a non-resident employment question. It traces the annual band table to the signed Finance Act copy, records the official currency conversion and distinguishes a steady monthly allocation from a complete live payroll method. The workpaper reconciles employment receipts, statutory exclusions and eligible pension deductions before applying a rate. It routes residence and foreign-income questions to the country cross-border Guide. All predecessor topics are mapped to a correction, source rule or explicit hold. Two cases recompute ordinary withholding and the treatment of a qualifying termination payment. Current forms and the complete amendment chain remain unfinished."
 jurisdiction: SL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 tax_year_notes: "2026 intake; read historical statutory baseline and specific enacted amendments, with current NRA corroboration; full law/forms not closed"
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Sierra Leone Personal Income Tax and PAYE v1.0
+# Sierra Leone Personal Income Tax and PAYE v1.1
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

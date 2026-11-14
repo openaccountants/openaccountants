@@ -7,30 +7,66 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/italy-financial-statements"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Annual financial statements in Italy (bilancio d'esercizio)
 
-How an Italian company prepares, approves and files its annual financial statements under the Civil Code: which form it may use (ordinary, abbreviated or micro), what each form must contain, the approval and filing deadlines, and when an S.r.l. must appoint a control body or auditor. For S.r.l. and S.p.A. companies and their accountants. Figures are for tax year 2026, from the Civil Code text in force on Normattiva on 22 September 2026. D.Lgs. 125/2024 raised the size limits; the first year they apply from is not stated plainly on any page read (Section 3).
+How an Italian company prepares, approves and files its annual financial statements under the Civil Code: which form it may use (ordinary, abbreviated or micro), what each form must contain, the approval and filing deadlines, and when an S.r.l. must appoint a control body or auditor. For S.r.l. and S.p.A. companies and their accountants. Figures are for tax year 2026, from the Civil Code text in force on Normattiva on 22 September 2026. D.Lgs. 125/2024 raised the size limits; the first year they apply from is not stated plainly on any page read (section "Size Thresholds").
 
-## Section 1: Quick Reference
+## Scope
+
+This skill covers the annual financial statements (bilancio d'esercizio) of an Italian S.r.l. or S.p.A. for financial years in 2026: which form the company may use (ordinary, abbreviated or micro), what each form contains, year-end adjustments, the approval and filing deadlines, the late filing fine, and when an S.r.l. must appoint a control body or auditor. Figures are the Civil Code limits in force on Normattiva.
+
+Who is in: companies that are not listed and report under the Civil Code and OIC principles. Who is out: consolidated accounts (D.Lgs. 127/1991), IFRS reporters (D.Lgs. 38/2005), banks, insurers and other public interest entities, and sustainability reporting. Books and registers are in `italy-bookkeeping`; corporate income tax is in `it-ires-corporate-tax`; IRAP is in `it-irap`.
+
+### Quick reference
 
 | Field | Value | Source |
 | --- | --- |---|
-| Country | Italy (Repubblica Italiana) | same |
-| Currency | EUR | same |
 | Filing authority | Registro delle Imprese (via Camera di Commercio) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= |
 | Primary legislation | Codice Civile, Articles 2423 to 2435-ter; for S.r.l. also Articles 2477 and 2478-bis | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
 | Supporting legislation | D.Lgs. 127/1991 (consolidated); D.Lgs. 39/2010 (audit); D.Lgs. 139/2015 (EU transposition, years from 1 January 2016); D.Lgs. 38/2005 (IFRS); D.Lgs. 125/2024 (raised size limits) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12 |
-| Accounting standards | OIC (Organismo Italiano di Contabilità): Italian GAAP. OIC standards are not published on an official host this Guide may cite |  |
-| Financial year | Usually calendar year (January to December) |  |
+| Accounting standards | OIC principles, issued by the Organismo Italiano di Contabilità (D.Lgs. 38/2005 art. 9-bis). The standards themselves are not published on an official host this Guide may cite | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art9bis!vig=2026-06-30 |
 | Approval deadline | By the date in the bylaws, not more than 120 days from year-end; up to 180 days if the bylaws allow it and the case qualifies (art. 2364). For an S.r.l., art. 2478-bis sets the same limits for presenting the accounts to the members | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= |
 | Filing deadline | Within 30 days of approval (art. 2435; art. 2478-bis) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= |
 | Filing fee | Not stated on an allowed host. The legacy amounts were removed; ask the Camera di Commercio | same |
 | Digital filing | Electronic processable format (XBRL) required by D.L. 223/2006 art. 37(21-bis); taxonomy version set by the business register, not an allowed host | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig= |
 
-## Section 2: Reporting Framework
+## Ask the client first
+
+- Is it an S.r.l. or an S.p.A., and does it have securities traded on a regulated market?
+- What were total assets, revenue and average employees for this year and the last two years?
+- Is the company part of a group that prepares consolidated accounts, or does it control an audited company?
+- What do the bylaws say about the approval deadline, and is there a reason for the 180-day extension?
+- Does the company already have a sindaco, collegio sindacale or auditor, and since when?
+- Has the company opted for IFRS, or is it a bank, insurer or listed company?
+
+## The method, step by step
+
+1. Test the size of the company against art. 2435-ter and art. 2435-bis for the current and previous year (two-of-three rule), and note the start-date question in section "Size Thresholds": https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=
+2. Prepare the balance sheet and P&L in the art. 2424 and art. 2425 layouts (abbreviated where allowed), with the year-end adjustments in section "Year-End Adjustments Checklist": https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2425!vig=
+3. Write the nota integrativa (art. 2427, or the reduced art. 2435-bis list) and, unless exempt, the management report: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig=
+4. Give the draft to the collegio sindacale and auditor at least thirty days before the meeting, and deposit it at the seat for the fifteen days before (art. 2429): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2429!vig=
+5. Hold the approval within 120 days of year-end, or 180 days where the bylaws allow and the case qualifies (art. 2364; art. 2478-bis): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2478bis!vig=
+6. File the approved accounts in XBRL with the Registro delle Imprese within 30 days of approval, with the reports, the minutes and, for companies without listed shares, the shareholder list (art. 2435): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig=
+7. For an S.r.l., check the art. 2477 limits for the last two years; if exceeded, appoint a control body or auditor at the approving meeting or within thirty days: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig=
+
+### Rates, bands and thresholds
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Micro company (art. 2435-ter), not above two of: total assets / revenue / average staff | EUR 220,000 / EUR 440,000 / 5 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
+| Abbreviated accounts (art. 2435-bis), not above two of: total assets / revenue / average staff | EUR 5,500,000 / EUR 11,000,000 / 50 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
+| Limits replaced by D.Lgs. 125/2024 art. 16: abbreviated total assets / revenue | EUR 4,400,000 / EUR 8,800,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= |
+| Limits replaced by D.Lgs. 125/2024 art. 16: micro total assets / revenue | EUR 175,000 / EUR 350,000 | 2026 | same |
+| S.r.l. control body or auditor (art. 2477), at least one exceeded for two years: total assets / revenue / average staff | EUR 4 million / EUR 4 million / 20 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= |
+| Approval of the accounts, from year end | 120 days (180 where the bylaws allow and the case qualifies) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= |
+| Filing with the Registro delle Imprese, from approval | 30 days | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= |
+| Late filing fine per person obliged (art. 2630), cut to one third if filed within 30 days of the deadline | EUR 103 to EUR 1,032 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= |
+| IRES rate (for deferred tax) | 24% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
+
+### Reporting Framework
 
 | Entity type | Applicable standard |
 | --- | --- |
@@ -43,7 +79,7 @@ How an Italian company prepares, approves and files its annual financial stateme
 
 D.Lgs. 38/2005 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig=
 
-## Section 3: Size Thresholds
+### Size Thresholds
 
 The Civil Code in force prints the limits below. A company qualifies if, in its first financial year or afterwards for two consecutive years, it did not exceed two of the three limits. It must switch to the larger form when it exceeds two limits for the second consecutive year. Companies with securities traded on regulated markets cannot use the abbreviated form.
 
@@ -75,7 +111,7 @@ The Civil Code in force prints the limits below. A company qualifies if, in its 
 | Micro, total assets, replaced | EUR 175,000 | Art. 16(1)(b): "175.000" replaced by "220.000" | same |
 | Micro, revenue, replaced | EUR 350,000 | "350.000" replaced by "440.000" | same |
 
-**Section 3: Size Thresholds**  _(Art. 2435-ter; Art. 2435-bis Codice Civile)_
+**Size thresholds table**  _(Art. 2435-ter; Art. 2435-bis Codice Civile)_
 
 | Criterion | Micro (Art. 2435-ter) | Abbreviato (Art. 2435-bis) | Ordinario (two of three exceeded) |
 | --- | --- | --- | --- |
@@ -88,7 +124,7 @@ This table uses the raised limits printed in the Civil Code in force. Until the 
 - **Threshold exceedance rule**: must not exceed 2 of the 3 limits in the first financial year, or for two consecutive financial years afterwards (art. 2435-bis, first paragraph).
 - **When the raised limits start**: Read literally, art. 17 is a closed list: it does not name small or micro companies whose securities are not listed, so it gives them no start year at all. Whether the raised limits already apply to such a company's 2026 accounts, and to the earlier year used in the two-year test, is therefore not settled by the Italian text. Confirm before relying on the raised limits; a company between the old and new limits should get advice. Art. 17: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art17!vig=
 
-## Section 4: Required Financial Statements
+### Required Financial Statements
 
 | Document | Micro | Abbreviato | Ordinario |
 | --- | --- | --- | --- |
@@ -97,13 +133,13 @@ This table uses the raised limits printed in the Civil Code in force. Until the 
 | Rendiconto Finanziario (Cash flow statement) | Not required | Not required | Required |
 | Nota Integrativa (Notes) | Not required if the information in art. 2427 numbers 9 and 16 is given at the foot of the balance sheet | Required (reduced list) | Required (full) |
 | Relazione sulla gestione (Management report) | Not required if the information in art. 2428 numbers 3 and 4 is given at the foot of the balance sheet | Not required if that information is given in the nota integrativa | Required |
-| Relazione del revisore (Audit report) | If an auditor is appointed or required | If an auditor is appointed or required | If an auditor is appointed or required (Section 10) |
+| Relazione del revisore (Audit report) | If an auditor is appointed or required | If an auditor is appointed or required | If an auditor is appointed or required (section "Audit Requirements") |
 
-Sources: art. 2435-bis and art. 2435-ter (Section 3).
+Sources: art. 2435-bis and art. 2435-ter (section "Size Thresholds").
 
-A micro company is a company that could use the abbreviated form (no securities traded on a regulated market). It may not depart from a rule under art. 2423 fifth paragraph and may not apply art. 2426 number 11-bis (derivatives at fair value). The micro rules do not apply to investment entities and financial holding companies. The micro "Exempt" entries in Section 8 hold only when numbers 9 and 16 of art. 2427 are given at the foot of the balance sheet.
+A micro company is a company that could use the abbreviated form (no securities traded on a regulated market). It may not depart from a rule under art. 2423 fifth paragraph and may not apply art. 2426 number 11-bis (derivatives at fair value). The micro rules do not apply to investment entities and financial holding companies. The micro "Exempt" entries in section "Nota Integrativa" hold only when numbers 9 and 16 of art. 2427 are given at the foot of the balance sheet.
 
-## Section 5: Year-End Adjustments Checklist
+### Year-End Adjustments Checklist
 
 | # | Adjustment | Italy-specific notes |
 | --- | --- | --- |
@@ -138,7 +174,7 @@ The OIC numbers are legacy content. OIC standards are published by the Organismo
 
 For the tax computations behind these rates, see `it-irap`. Art. 2424-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424bis!vig= and art. 2426: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2426!vig=
 
-## Section 6: Conto Economico Format (P&L)
+### Conto Economico Format (P&L)
 
 Art. 2425 Codice Civile, classification by nature, for years starting from 1 January 2016. Source: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2425!vig=
 
@@ -187,7 +223,7 @@ D) RETTIFICHE DI VALORE DI ATTIVITA E PASSIVITA FINANZIARIE
    21) Utile (perdite) dell'esercizio
 ~~~
 
-## Section 7: Stato Patrimoniale Format (Balance Sheet)
+### Stato Patrimoniale Format (Balance Sheet)
 
 Art. 2424 Codice Civile. Source: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424!vig=
 
@@ -232,7 +268,7 @@ D) Debiti (Liabilities)
 E) Ratei e risconti passivi
 ~~~
 
-## Section 8: Nota Integrativa (Notes to Accounts)
+### Nota Integrativa (Notes to Accounts)
 
 The ordinary notes follow art. 2427. The abbreviated notes give only the items listed in art. 2435-bis (art. 2427 numbers 1, 2, 6 for debts only, 8, 9, 13, 15, 16, 22-bis, 22-ter, 22-quater, 22-sexies, and art. 2427-bis number 1). A micro company needs no notes if numbers 9 and 16 appear at the foot of the balance sheet.
 
@@ -251,9 +287,9 @@ The ordinary notes follow art. 2427. The abbreviated notes give only the items l
 | 11 | Intercompany transactions | Exempt | Through n. 22-bis (related parties) | Required |
 | 12 | Share capital and equity movements | Exempt | Not in the abbreviated list (n. 4 and n. 7-bis not listed) | Required |
 
-Source: art. 2435-bis (link in Section 3); art. 2427: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig=
+Source: art. 2435-bis (link in section "Size Thresholds"); art. 2427: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig=
 
-## Section 9: Filing Requirements
+### Filing Requirements
 
 Before the meeting, the directors give the draft accounts and their report to the collegio sindacale and the auditor at least thirty days before the meeting date, and the accounts stay deposited at the company's seat for the fifteen days before the meeting (art. 2429). After approval, the directors file a copy with the Registro delle Imprese within thirty days, with the management report, the auditors' reports and the approval minutes (art. 2435).
 
@@ -281,9 +317,9 @@ The fine is set for each person who was obliged to file because of their office.
 
 Art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= · art. 2435: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= · art. 2429: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2429!vig= · D.L. 223/2006 art. 37: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=
 
-## Section 10: Audit Requirements
+### Audit Requirements
 
-### Mandatory appointment of revisore legale or società di revisione
+#### Mandatory appointment of revisore legale or società di revisione
 
 - **Control body or auditor for S.r.l.**: an S.r.l. must appoint a control body (organo di controllo, one member unless the bylaws say otherwise) or an auditor (revisore) if it exceeded at least one of the limits below for two consecutive financial years. The meeting that approves the accounts in which the limits are exceeded must appoint within thirty days; otherwise the court appoints on request of any interested party or on report of the business register. _(Art. 2477 CC)_
 
@@ -299,62 +335,109 @@ Art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:19
 - **Obligation cessation rule**: the obligation ends when none of the limits is exceeded for three consecutive years.
 - These are not the art. 2435-bis limits. An S.r.l. can use the abbreviated form and still have to appoint a control body or auditor.
 
-### Other mandatory cases
+#### Other mandatory cases
 
 - **S.p.A. audit**: from 29 April 2026 the rule is in art. 2396-novies of the Civil Code, added by D.Lgs. 27 marzo 2026 n. 47, which also repealed the first paragraph of art. 2409-bis: the statutory audit of the company is carried out by a registered revisore legale or società di revisione. The remaining paragraph of art. 2409-bis still lets an S.p.A. that does not prepare consolidated accounts give the audit to the collegio sindacale, made up of registered auditors. Art. 2396-novies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2396novies!vig= ; art. 2409-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2409bis!vig=
 - **S.r.l. preparing consolidated accounts**: appointment mandatory (art. 2477(2)(a))
 - **S.r.l. controlling audited company**: appointment mandatory if it controls a company that must have a statutory audit (art. 2477(2)(b))
 - **Public interest entities**: full audit with extra oversight under D.Lgs. 39/2010 (unchecked)
 
-### Auditor qualification
+#### Auditor qualification
 
 - **Auditor qualification**: revisore legale registered in the Registro dei Revisori Legali (kept by the Ministry of Economy and Finance) or a società di revisione registered in the same register (legacy, unchecked).
 
-## The method, step by step
+## Worked cases
 
-1. Test the size of the company against art. 2435-ter and art. 2435-bis for the current and previous year (two-of-three rule), and note the start-date question in Section 3: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=
-2. Prepare the balance sheet and P&L in the art. 2424 and art. 2425 layouts (abbreviated where allowed), with the year-end adjustments in Section 5: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2425!vig=
-3. Write the nota integrativa (art. 2427, or the reduced art. 2435-bis list) and, unless exempt, the management report: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig=
-4. Give the draft to the collegio sindacale and auditor at least thirty days before the meeting, and deposit it at the seat for the fifteen days before (art. 2429): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2429!vig=
-5. Hold the approval within 120 days of year-end, or 180 days where the bylaws allow and the case qualifies (art. 2364; art. 2478-bis): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2478bis!vig=
-6. File the approved accounts in XBRL with the Registro delle Imprese within 30 days of approval, with the reports, the minutes and, for companies without listed shares, the shareholder list (art. 2435): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig=
-7. For an S.r.l., check the art. 2477 limits for the last two years; if exceeded, appoint a control body or auditor at the approving meeting or within thirty days: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig=
+### Case 1 (decision): which form for the 2026 accounts?
 
-## Ask the client first
+Facts. Gamma S.r.l. had, in both 2025 and 2026, total assets of EUR 300,000, revenue of EUR 500,000 and an average of 4 employees.
 
-- Is it an S.r.l. or an S.p.A., and does it have securities traded on a regulated market?
-- What were total assets, revenue and average employees for this year and the last two years?
-- Is the company part of a group that prepares consolidated accounts, or does it control an audited company?
-- What do the bylaws say about the approval deadline, and is there a reason for the 180-day extension?
-- Does the company already have a sindaco, collegio sindacale or auditor, and since when?
-- Has the company opted for IFRS, or is it a bank, insurer or listed company?
+Rule. A company may use a smaller form if it did not exceed two of the three limits for two consecutive years (art. 2435-ter for micro, art. 2435-bis for abbreviated).
+
+Answer. Against the micro limits it exceeds two (assets above EUR 220,000, revenue above EUR 440,000), so it cannot use the micro form. Against the abbreviated limits it exceeds none, so it may prepare abbreviated accounts. Under the old limits (EUR 175,000 and EUR 350,000 for micro) the answer is the same, so the start-date question does not matter here.
+
+```oa-check
+name: Italy 2026, micro or abbreviated accounts by the two-of-three test
+inputs:
+  assets: 300000
+  revenue: 500000
+  staff: 4
+steps:
+  - micro_over_assets: min(max(assets - 220000, 0), 1)
+  - micro_over_revenue: min(max(revenue - 440000, 0), 1)
+  - micro_over_staff: min(max(staff - 5, 0), 1)
+  - micro_exceeded: micro_over_assets + micro_over_revenue + micro_over_staff
+  - abbr_exceeded: min(max(assets - 5500000, 0), 1) + min(max(revenue - 11000000, 0), 1) + min(max(staff - 50, 0), 1)
+expected:
+  micro_exceeded: 2
+  abbr_exceeded: 0
+```
+
+### Case 2: abbreviated accounts, but a control body is still needed, and a late filing
+
+Facts. Delta S.r.l. had, in 2025 and 2026, total assets of EUR 4,500,000, revenue of EUR 3,800,000 and 22 employees. Its three directors approve the 2026 accounts on time but file them 20 days after the 30-day filing deadline.
+
+Working. Against art. 2435-bis it exceeds none of the limits, so abbreviated accounts are allowed. Against art. 2477 it exceeds two (assets above EUR 4 million, staff above 20) for two years; one is enough, so the meeting approving the 2026 accounts must appoint a control body or auditor. The late filing fine is EUR 103 to EUR 1,032 for each director, cut to one third because the filing came within 30 days of the deadline: at most EUR 344 each, EUR 1,032 for the three.
+
+```oa-check
+name: Italy 2026, art. 2477 test and reduced late filing fine for three directors
+inputs:
+  assets: 4500000
+  revenue: 3800000
+  staff: 22
+  directors: 3
+  fine_max: 1032
+  fine_min: 103
+steps:
+  - srl_exceeded: min(max(assets - 4000000, 0), 1) + min(max(revenue - 4000000, 0), 1) + min(max(staff - 20, 0), 1)
+  - fine_max_each: fine_max / 3
+  - fine_min_each: round(fine_min / 3, 2)
+  - fine_max_total: fine_max_each * directors
+expected:
+  srl_exceeded: 2
+  fine_max_each: 344.00
+  fine_min_each: 34.33
+  fine_max_total: 1032.00
+```
 
 ## When to refuse or refer
 
 - Consolidated accounts (D.Lgs. 127/1991) and IFRS financial statements.
 - Banks, insurers, investment firms and other public interest entities.
 - Sustainability reporting under D.Lgs. 125/2024.
-- A company between the old and new size limits whose form depends on the start-date question in Section 3.
+- A company between the old and new size limits whose form depends on the start-date question in section "Size Thresholds".
 - S.p.A. governance and control questions after the April 2026 reform (D.Lgs. 47/2026).
 - Revaluations under a special law, extraordinary transactions, going-concern doubts, or accounts not approved or filed on time.
 
 ## Sources
 
-- Civil Code arts. 2364, 2396-novies, 2424, 2424-bis, 2425, 2426, 2427, 2429, 2435, 2435-bis, 2435-ter, 2409-bis, 2477, 2478-bis, 2630 on Normattiva (links above)
-- D.Lgs. 125/2024 arts. 16 and 17: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= (read 2026-10-31)
-- D.Lgs. 38/2005 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig= (read 2026-10-31)
-- D.L. 223/2006 art. 37: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig= (read 2026-10-31)
-- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= (read 2026-10-31)
-- IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 (read 2026-10-31)
-- Civil Code art. 2435-ter: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= (read 2026-10-31)
-- D.Lgs. 139/2015 art. 12: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12 (read 2026-10-31)
-- Civil Code art. 2364: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= (read 2026-10-31)
-- Civil Code art. 2435: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= (read 2026-10-31)
-- Civil Code art. 2435-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= (read 2026-10-31)
-- Civil Code art. 2630: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= (read 2026-10-31)
-- Civil Code art. 2477: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= (read 2026-10-31)
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text.
 
-Not yet confirmed: OIC standards and the claim about where they are published; that the financial year is usually the calendar year (no official page says so).
+| Source | URL | Read on |
+| --- | --- | --- |
+| Civil Code art. 2396-novies. Read for the S.p.A. statutory audit rule from 29 April 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2396novies!vig= | 2026-11-14 |
+| Civil Code art. 2409-bis. Read for the remaining paragraph after D.Lgs. 47/2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2409bis!vig= | 2026-11-14 |
+| Civil Code art. 2424. Read for the balance sheet layout | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424!vig= | 2026-11-14 |
+| Civil Code art. 2425. Read for the profit and loss layout | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2425!vig= | 2026-11-14 |
+| Civil Code art. 2426. Read for valuation rules | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2426!vig= | 2026-11-14 |
+| Civil Code art. 2427. Read for the notes | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig= | 2026-11-14 |
+| Civil Code art. 2429. Read for the 30-day and 15-day steps before the meeting | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2429!vig= | 2026-11-14 |
+| Civil Code art. 2478-bis. Read for the S.r.l. approval and filing deadlines | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2478bis!vig= | 2026-11-14 |
+| D.Lgs. 125/2024 arts. 16 and 17. Read for the replaced limits (art. 16) and the start provision (art. 17) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig= | 2026-11-14 |
+| D.Lgs. 38/2005 art. 4. Read for who may or must use IFRS | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig= | 2026-11-14 |
+| D.L. 223/2006 art. 37. Read for the XBRL filing duty (art. 37(21-bis)) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig= | 2026-11-14 |
+| TUIR art. 77. Read for the 24% IRES rate | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= | 2026-11-14 |
+| IRAP 2026 instructions. Read for the 3.9% ordinary IRAP rate | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-11-14 |
+| Civil Code art. 2435-ter. Read for the micro limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= | 2026-11-14 |
+| D.Lgs. 139/2015 art. 12. Read for the start of the 2016 rules | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12 | 2026-11-14 |
+| Civil Code art. 2364. Read for the 120 and 180-day approval limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig= | 2026-11-14 |
+| Civil Code art. 2435. Read for the provisions named (Civil Code art. 2435) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig= | 2026-11-14 |
+| Civil Code art. 2435-bis. Read for the abbreviated limits and the two-of-three rule | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= | 2026-11-14 |
+| Civil Code art. 2630. Read for the EUR 103 to EUR 1,032 fine | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig= | 2026-11-14 |
+| Civil Code art. 2477. Read for the S.r.l. control body limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig= | 2026-11-14 |
+| D.Lgs. 38/2005 art. 9-bis. Read for the OIC as the body that issues the national accounting principles | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art9bis!vig=2026-06-30 | 2026-11-14 |
+
+Not yet confirmed: the OIC standards themselves (not on an official host this skill may cite); that most companies use the calendar year (no official page says so).
 
 ## Disclaimer
 
@@ -364,4 +447,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,21 +1,22 @@
 ---
 name: nl-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing their Netherlands tax returns AND mentions freelancing, self-employment, ZZP, eenmanszaak, or sole proprietorship. Trigger on phrases like "help me do my taxes", "prepare my IB-aangifte", "I'm a ZZP'er in the Netherlands", "I'm a freelancer in the Netherlands", "do my taxes as a contractor", "prepare my BTW return and income tax", or any similar phrasing where the user is a Netherlands-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Netherlands self-employed tax workflow -- every other skill in the stack (nl-btw-return, nl-income-tax, nl-zvw, nl-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Netherlands full-year residents only; self-employed individuals and sole proprietors.
-version: 1.0
+description: ALWAYS USE THIS SKILL when a user asks for help preparing their Netherlands tax returns AND mentions freelancing, self-employment, ZZP, eenmanszaak, or sole proprietorship. Trigger on phrases like "help me do my taxes", "prepare my IB-aangifte", "I'm a ZZP'er in the Netherlands", "I'm a freelancer in the Netherlands", "do my taxes as a contractor", "prepare my BTW return and income tax", or any similar phrasing where the user is a Netherlands-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Netherlands self-employed tax workflow, and every other skill in the stack (nl-vat-return, nl-income-tax, nl-zzp-deductions, nl-social-contributions, nl-return-assembly) depends on this skill running first to produce a structured intake package. Uses an upload-first workflow, where the user shares all their documents and the skill infers as much as possible before asking grouped questions. Built for speed. Netherlands full-year residents only; self-employed individuals and sole proprietors.
+version: 2.0
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
+type: router
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Netherlands freelance tax intake — 2025 returns and 2026 records
+# Netherlands freelance tax intake: 2025 returns and 2026 records
 
 ## Scope and who this is for
 
-Figures are for tax year 2025 or tax year 2026 as explicitly labelled; do not mix columns.
+Tax year 2026, with the 2025 return (being prepared now) labelled separately. Figures are for tax year 2025 or tax year 2026 as explicitly labelled; do not mix columns.
 
 Use this intake to collect and assess the records of a full-year Netherlands-resident individual working on their own account, including someone with employment alongside an eenmanszaak. It prepares a documented handoff; it does not calculate a complete return or submit anything. Being called a freelancer or ZZP'er, having a trade registration, or sending invoices does not settle income-tax entrepreneur status. Assess the actual activity. [Income sources and entrepreneur assessment](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/wanneer_bent_u_ondernemer_voor_de_inkomstenbelasting/)
 
@@ -35,6 +36,22 @@ Ask related questions together, reuse answers already supported by documents, an
 - What is the VAT position, including the authority's KOR start/end confirmation and periods for which a return is ready? A zero-VAT invoice alone does not establish KOR participation. [KOR conditions](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden) [KOR effects](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling)
 - What records support business hours, profit, investments, private use, prior relief and carryforwards? Unknown does not mean zero or ineligible.
 - Is there a possible fiscal partner, jointly occupied property, children, annuity contributions, personal assets, foreign income or another tax matter? Capture dates and documents for separate assessment; do not infer fiscal partnership from a casual description of the relationship. [Fiscal partnership](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/fiscaal_partnerschap)
+
+## Rates, bands and thresholds
+
+These are routing checks, not prefilled awards. The computation belongs to `nl-zzp-deductions`.
+
+| Item | 2025 | 2026 | Condition | Source |
+| --- | --- | --- | --- | --- |
+| Ordinary zelfstandigenaftrek, 2025 | EUR 2,470 | | Entrepreneur, meets the hours test, below AOW age at 1 January; capped at profit before ondernemersaftrek unless the startersaftrek applies; 50% at AOW age | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 |
+| Ordinary zelfstandigenaftrek, 2026 | | EUR 1,200 | Same conditions | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 |
+| Startersaftrek supplement | EUR 2,123 | EUR 2,123 | Not an entrepreneur in 1 or more of the 5 preceding years and zelfstandigenaftrek used no more than twice in that period | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek |
+| MKB profit exemption, share of profit after ondernemersaftrek | 12.7% | 12.7% | Qualifying enterprise profit; no hours test; also reduces a loss | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling |
+| Ordinary business-hours threshold | 1,225 hours | 1,225 hours | Calendar year, not prorated; usually also more than half of working time unless not an entrepreneur in 1 of the 5 preceding years | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium |
+| Pregnancy interruption counted as hours | 16 weeks | 16 weeks | Interruption of work as entrepreneur through pregnancy | same |
+| Unused zelfstandigenaftrek carry-forward | 9 years | 9 years | Only against later profit above that year's zelfstandigenaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 |
+
+The hours threshold does not itself establish entrepreneur status. The MKB exemption has no hours-test condition but requires qualifying enterprise profit and also reduces an enterprise loss. Details, age adjustments and limitations belong in the deductions method (`nl-zzp-deductions`).
 
 ## The method, step by step
 
@@ -101,19 +118,6 @@ The handoff must distinguish:
 
 Record a remaining action, owner and consequence for every material gap. Continue independent record reconciliation while a gap is resolved, but do not mark dependent figures ready to file. Client confirmation corrects facts; it does not validate the tax treatment.
 
-## Figures by year
-
-These are routing checks, not prefilled awards. [2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025) [2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026) [MKB exemption](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling)
-
-| Item | 2025 | 2026 |
-| --- | --- | --- |
-| Ordinary zelfstandigenaftrek before pension-age adjustment, where eligible ([2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025), [2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026)) | €2,470 | €1,200 |
-| Standard startersaftrek supplement, where eligible | €2,123 | €2,123 |
-| MKB profit exemption after ondernemersaftrek | 12.7% | 12.7% |
-| Ordinary business-hours threshold | 1,225 hours | 1,225 hours |
-
-The hours threshold does not itself establish entrepreneur status. The MKB exemption has no hours-test condition but requires qualifying enterprise profit and also reduces an enterprise loss. Details, age adjustments and limitations belong in the deductions method. [Hours](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium) [MKB exemption](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling)
-
 ## Boundary and exception table
 
 | Situation | Intake action |
@@ -139,9 +143,28 @@ These are illustrative decision checks, not client determinations.
 - **An old reserve:** the client requests a new FOR contribution for 2026 and cannot find the prior balance. Result: no new contribution; request the historical ledger and assess any existing reserve's release conditions separately. [FOR](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/fiscale_reserves/oudedagsreserve)
 - **Filing-year confusion:** preparation takes place in 2026 for the 2025 income year. Result: use the 2025 deduction source and data; do not substitute the 2026 allowance. [2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025) [2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026)
 
+### Handoff sanity check (2026)
+
+Once the evidence supports entrepreneur status, the hours test and no starter relief, the deductions skill should return these figures for a 2026 profit of EUR 50,000. The intake uses this only to check that the handoff reached the right year's figures (EUR 1,200, not the 2025 EUR 2,470).
+
+```oa-check
+name: Handoff check, 2026 profit 50000, ordinary zelfstandigenaftrek, no starter
+inputs:
+  profit: 50000
+  zelfstandigenaftrek: 1200
+steps:
+  - after_ondernemersaftrek: profit - zelfstandigenaftrek
+  - mkb_exemption: after_ondernemersaftrek * 0.127
+  - taxable_profit: after_ondernemersaftrek - mkb_exemption
+expected:
+  after_ondernemersaftrek: 48800
+  mkb_exemption: 6197.60
+  taxable_profit: 42602.40
+```
+
 ## When to refuse or refer
 
-- Pause the affected tax conclusion for unresolved source-of-income or employment status, foreign residence/work, company or partnership allocations, a disputed hours record, inherited business, cessation, historic reserve conversion, or a specialist personal-tax issue. Do not turn the employment-enforcement transition into a promise of immunity: normal enforcement resumed in 2025 and deliberate/default penalty treatment differs in 2026. [Enforcement](https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving)
+- Pause the affected tax conclusion for unresolved source-of-income or employment status, foreign residence/work, company or partnership allocations, a disputed hours record, inherited business, cessation, historic reserve conversion, or a specialist personal-tax issue. Do not turn the employment-enforcement transition into a promise of immunity: normal enforcement resumed on 1 January 2025 (back-assessments no earlier than 1 January 2025 unless bad faith); no penalties were imposed in 2025, and from 1 January 2026 the Belastingdienst can impose penalties for intent or gross fault (vergrijpboetes) but not yet default penalties (verzuimboetes). [Enforcement](https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving)
 
 Downstream Skills are inputs to inspect, not permission to import stale figures. Before using `nl-income-tax`, `nl-deductions` or `nl-return-assembly`, check the actual year and each relevant source. If a dependent method conflicts with this evidence or remains unreviewed, retain the handoff and isolate that calculation; do not claim the complete return is ready.
 
@@ -155,3 +178,27 @@ Downstream Skills are inputs to inspect, not permission to import stale figures.
 - [ ] Personal deductions, partner allocation and mixed-use issues routed separately.
 - [ ] Correct-year deduction method selected; unresolved dependencies remain visible.
 - [ ] Handoff identifies what is ready, what is provisional and what needs specialist review; no submission implied.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Belastingdienst, when are you an entrepreneur for income tax | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/wanneer_bent_u_ondernemer_voor_de_inkomstenbelasting/ | 2026-11-14. Read for the entrepreneur criteria (independence, capital, size and time, customers, risk) and the other-work route |
+| Belastingdienst, zelfstandigenaftrek 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 | 2026-11-14. Read for EUR 2,470, the profit cap, startersaftrek EUR 2,123, the 9-year carry-forward and the AOW-age halving |
+| Belastingdienst, zelfstandigenaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 | 2026-11-14. Read for EUR 1,200 in 2026 and startersaftrek EUR 2,123 |
+| Belastingdienst, startersaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek | 2026-11-14. Read for EUR 2,123 and the 5-preceding-years and BV-return conditions |
+| Belastingdienst, MKB profit exemption | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling | 2026-11-14. Read for 12.7% in 2025 and 2026 of profit after ondernemersaftrek |
+| Belastingdienst, hours criterion | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium | 2026-11-14. Read for 1,225 hours, the more-than-half test and its 5-year exception, 16 weeks pregnancy, availability not counting, the 70% supporting-work exclusion |
+| Belastingdienst, KOR conditions | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-11-14. Read for KOR participation conditions |
+| Belastingdienst, what joining the KOR means | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling | 2026-11-14. Read for the KOR effects on invoicing, returns and input VAT |
+| Belastingdienst, fiscal partnership 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/fiscaal_partnerschap | 2026-11-14. Read for who is a fiscal partner and which common items can be allocated |
+| Belastingdienst, when is there employment | https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/wanneer-is-sprake-van-loondienst | 2026-11-14. Read for the employment tests (authority, personal work, pay) and the circumstances weighed |
+| Belastingdienst, consequences of employment for the contractor | https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/werken-in-loondienst-gevolgen-opdrachtnemer | 2026-11-14. Read for the income-tax consequences when work is employment |
+| Belastingdienst, enforcement of working relationships | https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving | 2026-11-14. Read for the end of the moratorium on 1 January 2025, no penalties in 2025, vergrijpboetes possible from 2026 |
+| Belastingdienst, business costs | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijke_kosten | 2026-11-14. Read for the business-purpose test for costs |
+| Belastingdienst, investment scheme conditions | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/voorwaarden_investeringsregelingen | 2026-11-14. Read for commitment, payment and first-use timing of investments |
+| Belastingdienst, oudedagsreserve (FOR) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/fiscale_reserves/oudedagsreserve | 2026-11-14. Read for no new FOR from 2023 and release of an existing reserve |
+| Belastingdienst, unused zelfstandigenaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/zelfstandigenaftrek1/verrekenen_niet_gerealiseerde_zelfstandigenaftrek | 2026-11-14. Read for the carry-forward of unused zelfstandigenaftrek |
+| Belastingdienst, workspace in the home | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/werkruimte_in_de_woning | 2026-11-14. Read for the independent-workspace conditions |
+
+Not yet confirmed: none for the figures in the table; the outcome of any individual entrepreneur or employment assessment always rests on the facts and is not settled by this intake.

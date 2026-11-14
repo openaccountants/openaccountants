@@ -2,18 +2,19 @@
 name: bw-corporate-income-tax
 description: >
   Botswana company tax for 2026-27 under the Income Tax Act, 2026: 24.5% rate, IFSC, mining formula, withholding rates, interest cap, loss limit, depreciation, returns and instalments. Use for company tax in Botswana.
-version: 1.0
+version: 1.1
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Botswana Corporate Income Tax v1.0
+# Botswana Corporate Income Tax v1.1
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 

@@ -1,14 +1,15 @@
 ---
 name: it-employer-contributions
 description: "Italian employer social contributions on employees and the full cost of an employee, tax year 2026. Covers the employer and employee INPS rates for private industry and commerce, component by component (pension IVS 23.81% and 9.19%, NASpI, CUAF, maternity, sickness, Fondo di garanzia TFR, CIGO, CIGS and the FIS by headcount), the extra 1% above EUR 56,224, the 2026 minimum and maximum bases, apprentices in summary, the INAIL premium (voce, tasso, 1% addizionale, autoliquidazione), TFR accrual and the INPS Fondo di Tesoreria with the 2026 headcount rule, UniEmens and F24, sanzioni civili and the 2026 hiring reliefs. Trigger on: contributi INPS datore di lavoro, costo del lavoro, costo azienda dipendente, aliquote contributive industria commercio, FIS, CIGS, INAIL premio, TFR Fondo Tesoreria. Out of scope, see: italy-payroll (IRPEF withholding, payslip, CU), it-irpef-employees (trattamento integrativo, family detrazioni), it-inps-contributions, it-inps-artigiani-commercianti, it-irap, it-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Italy: employer INPS and INAIL contributions and the cost of an employee (2026)
@@ -30,7 +31,7 @@ Percentages are of the employee's taxable pay for contributions (retribuzione im
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Pension (IVS), FPLD total | 33% | 2026 | https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html |
-| Pension, employee share (so 23.81% employer) | 9.19% | 2026 | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm |
+| Pension, employee share (so 23.81% employer, computed: 33% - 9.19%) | 9.19% | 2026 | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm |
 | Extra employee pension contribution on pay above the first band | 1% | 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf |
 | First pension band, yearly (monthly EUR 4,685) | EUR 56,224 | 2026 | same, Circolare 6/2026 para. 5 |
 | Massimale, insured from 1996 only | EUR 122,295 | 2026 | same, para. 6 |
@@ -38,38 +39,38 @@ Percentages are of the employee's taxable pay for contributions (retribuzione im
 | NASpI (unemployment), employer | 1.31% | 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf |
 | Training levy (L. 845/1978 art. 25), employer | 0.30% | 2026 | same, Circolare 53/2024 |
 | NASpI addizionale on fixed-term contracts, employer; plus 0.5 points at each renewal | 1.4% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-06-28;92~art2!vig=2026-10-23 |
-| Fondo di garanzia TFR, employer (0.40% for industrial dirigenti) | 0.20% | 2026 | Circolare 53/2024 |
-| Maternity, employer: industry | 0.46% | 2026 | Circolare 53/2024 |
+| Fondo di garanzia TFR, employer (0.40% for industrial dirigenti) | 0.20% | 2026 | Circolare 53/2024 https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf |
+| Maternity, employer: industry | 0.46% | 2026 | Circolare 53/2024 https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf |
 | Maternity, employer: commerce and services (terziario) | 0.24% | 2026 | Circolare 53/2024; https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf |
-| Sickness, employer: industry, operai only | 2.22% | 2026 | Circolare 53/2024 |
+| Sickness, employer: industry, operai only | 2.22% | 2026 | Circolare 53/2024 https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf |
 | Sickness, employer: terziario (operai and impiegati in commerce) | 2.44% | 2026 | Circolare 53/2024; INPS 2010 rate tables (commerce rows) https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf |
-| CUAF (family allowances fund), employer, net of the 1.80-point legal cut (2.48 less 1.80) | 0.68% | 2026 | Circolare 117/2022 Allegato 1; INPS 2010 rate tables (industry and commerce rows) |
+| CUAF (family allowances fund), employer, net of the 1.80-point legal cut (2.48 less 1.80) | 0.68% | 2026 | Circolare 117/2022 Allegato 1; INPS 2010 rate tables (industry and commerce rows) https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf; https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf |
 | CIGO, industrial firms up to 50 employees, employer | 1.70% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art13!vig=2026-10-23 |
 | CIGO, industrial firms over 50 employees, employer | 2.00% | 2026 | same, art. 13 |
 | CIGS, firms in scope, total (0.60% employer, 0.30% Ee) | 0.90% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art23!vig=2026-10-23 |
-| FIS, employers with up to 5 employees (of which 0.17% Ee) | 0.50% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art29!vig=2026-10-23; split in Circolare 117/2022 Allegato 1 |
-| FIS, employers with more than 5 employees (of which 0.27% Ee) | 0.80% | 2026 | same |
-| FIS, up to 5 employees with no claim for 24 months: cut in the rate | 40% | 2026 | D.Lgs. 148/2015 art. 29 c. 8-bis |
-| Apprentices: employer rate (plus NASpI 1.31% and 0.30%, total 11.61%, plus CIG or FIS where the employer is liable) | 10% | 2026 | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm |
+| FIS, employers with up to 5 employees (of which 0.17% Ee) | 0.50% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art29!vig=2026-10-23; split in Circolare 117/2022 Allegato 1, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf |
+| FIS, employers with more than 5 employees (of which 0.27% Ee) | 0.80% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art29!vig=2026-10-23; https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf |
+| FIS, up to 5 employees with no claim for 24 months: cut in the rate | 40% | 2026 | D.Lgs. 148/2015 art. 29 c. 8-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art29!vig=2026-11-14 |
+| Apprentices: employer rate (plus NASpI 1.31% and 0.30%, total 11.61% computed, plus CIG or FIS where the employer is liable) | 10% | 2026 | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm |
 | Apprentices: employee rate | 5.84% | 2026 | https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Libretto_INPS_giovani.pdf |
-| Apprentices, employers with up to 9 staff: employer rate in year 1 and year 2 | 1.5% and 3% | 2026 | INPS messaggio 1478/2019 (L. 296/2006 art. 1 c. 773) |
-| TFR accrual: yearly pay divided by 13.5 | 7.41% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23 |
-| Contribution deducted from the TFR accrual (net accrual 6.91%) | 0.50% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-23 |
-| TFR revaluation each 31 December: fixed part plus 75% of the ISTAT price rise | 1.5% | 2026 | Civil Code art. 2120 |
+| Apprentices, employers with up to 9 staff: employer rate in year 1 and year 2 | 1.5% and 3% (computed: 10% less the 8.5 and 7 points in the message) | 2026 | INPS messaggio 1478/2019 (L. 296/2006 art. 1 c. 773) https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm |
+| TFR accrual: yearly pay divided by 13.5 | 7.41% (computed: 1 / 13.5) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23 |
+| Contribution deducted from the TFR accrual (computed: 0.30% + 0.20%; net accrual 6.91%) | 0.50% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-23 |
+| TFR revaluation each 31 December: fixed part plus 75% of the ISTAT price rise | 1.5% | 2026 | Civil Code art. 2120 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23 |
 | Fondo di Tesoreria: average headcount that triggers it for 2026 and 2027 pay (firms that grew after their first year) | 60 | 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15160/Allegati/16559_Circolare-numero-12-del-05-02-2026.pdf |
 | Fondo di Tesoreria: average headcount in the first year of activity (unchanged rule) | 50 | 2026 | same, Circolare 12/2026 para. 2 |
-| Relief when TFR goes to the Fondo di Tesoreria or a pension fund: cut in art. 24 L. 88/1989 contributions | 0.28 points | 2026 | Circolare 12/2026 para. 5 |
+| Relief when TFR goes to the Fondo di Tesoreria or a pension fund: cut in art. 24 L. 88/1989 contributions | 0.28 points | 2026 | Circolare 12/2026 para. 5 https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15160/Allegati/16559_Circolare-numero-12-del-05-02-2026.pdf |
 | INAIL voce 0722 (office work), tasso medio: Terziario | 4 per mille | 2026 | https://www.inail.it/content/dam/inail-hub-site/documenti/circolari/2025/06/Circolare%20n%2038_24%20giugno%202025.pdf |
 | INAIL voce 0722, tasso medio: Industria | 5 per mille | 2026 | same, Circolare INAIL 38/2025 |
 | INAIL addizionale ex ANMIL on the premium | 1% | 2026 | https://www.inail.it/content/dam/assicurazione/documenti/2025/12/Guida%20autoliquidazione%202025-2026.pdf |
 
 **Totals for an impiegato, 2026, built from the components above:**
 
-| Employer class | Employer INPS | Employee INPS |
-|---|---|---|
-| Commerce, 6 to 15 employees (FIS 0.80%) | 29.51% (23.81 + 1.31 + 0.30 + 0.20 + 0.68 + 0.24 + 2.44 + 0.53) | 9.46% (9.19 + 0.27) |
-| Industry, 16 to 50 employees | 29.06% (23.81 + 1.31 + 0.30 + 0.20 + 0.68 + 0.46 + 1.70 + 0.60) | 9.49% (9.19 + 0.30) |
-| Industry, over 50 employees | 29.36% (as above with CIGO 2.00) | 9.49% |
+| Employer class | Employer INPS | Employee INPS | Source |
+|---|---|---|---|
+| Commerce, 6 to 15 employees (FIS 0.80%) | 29.51% (computed: 23.81 + 1.31 + 0.30 + 0.20 + 0.68 + 0.24 + 2.44 + 0.53) | 9.46% (9.19 + 0.27) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf; https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf; https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf |
+| Industry, 16 to 50 employees | 29.06% (computed: 23.81 + 1.31 + 0.30 + 0.20 + 0.68 + 0.46 + 1.70 + 0.60) | 9.49% (9.19 + 0.30) | same |
+| Industry, over 50 employees | 29.36% (as above with CIGO 2.00) | 9.49% | same |
 
 An industrial operaio adds sickness 2.22% to the employer total. These totals are before the Tesoreria relief and before any hiring relief.
 
@@ -237,32 +238,32 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| INPS, "Aliquote contributive" (IVS 33%, who pays, what drives the rates) | https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html | 2026-10-23 |
-| INPS Circolare 40/2011 (employee share 9.19%) | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm | 2026-10-23 |
-| INPS Circolare 6 of 30 January 2026 (minimum pay, first band, extra 1%, massimale) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf | 2026-10-23 |
-| INPS Circolare 53 of 3 April 2024 (NASpI, training levy, Fondo di garanzia, maternity and sickness by sector, FIS, CIGS) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf | 2026-10-23 |
-| INPS Circolare 117 of 20 October 2022, Allegato 1 (terziario rate table, CUAF 0.68%, FIS employee shares) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf | 2026-10-23 |
-| INPS, "Aliquote contributive in vigore dal 1 gennaio 2010" (Circolare 25/2010, Allegato 14: industry and commerce rows by grade) | https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf | 2026-10-23 |
+| INPS, "Aliquote contributive": read for IVS 33%, who pays, what drives the rates | https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html | 2026-10-23 |
+| INPS Circolare 40/2011: read for employee share 9.19% | https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm | 2026-10-23 |
+| INPS Circolare 6 of 30 January 2026: read for minimum pay, first band, extra 1%, massimale | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf | 2026-10-23 |
+| INPS Circolare 53 of 3 April 2024: read for NASpI, training levy, Fondo di garanzia, maternity and sickness by sector, FIS, CIGS | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf | 2026-11-14 |
+| INPS Circolare 117 of 20 October 2022, Allegato 1: read for terziario rate table, CUAF 0.68%, FIS employee shares | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf | 2026-11-14 |
+| INPS, "Aliquote contributive in vigore dal 1 gennaio 2010": read for Circolare 25/2010, Allegato 14: industry and commerce rows by grade | https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf | 2026-10-23 |
 | D.Lgs. 148/2015 arts. 10, 13, 20, 23, 29, 33 (CIGO, CIGS, FIS) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art13!vig=2026-10-23 | 2026-10-23 |
 | L. 92/2012 art. 2 (NASpI financing, addizionale 1.4% on fixed-term) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-06-28;92~art2!vig=2026-10-23 | 2026-10-23 |
 | L. 153/1969 art. 12 (contribution base) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-04-30;153~art12!vig=2026-10-23 | 2026-10-23 |
-| Civil Code art. 2120 (TFR) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23 | 2026-10-23 |
-| L. 297/1982 arts. 2 and 3 (Fondo di garanzia; 0.50% deducted from TFR) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-23 | 2026-10-23 |
-| INPS Circolare 12 of 5 February 2026 (Fondo di Tesoreria after L. 199/2025; 7.41% less 0.50%; reliefs; deadline) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15160/Allegati/16559_Circolare-numero-12-del-05-02-2026.pdf | 2026-10-23 |
-| INPS, "TFR a carico del Fondo di Tesoreria" (60, 50 and 40 thresholds) | https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50018.tfr-a-carico-del-fondo-di-tesoreria.html | 2026-10-23 |
-| INPS messaggio 1478/2019 (apprentices: 10%, 1.31%, 0.30%; cuts for up to 9 staff) | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm | 2026-10-23 |
-| INPS, "Insieme per il tuo futuro" booklet (apprentice 10% and 5.84%) | https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Libretto_INPS_giovani.pdf | 2026-10-23 |
-| INPS Circolare 32 of 30 January 2025 (Decontribuzione Sud PMI, 2026 at 20%, EUR 125) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/01/Circolare_14812/Allegati/15880_Circolare-numero-32-del-30-01-2025.pdf | 2026-10-23 |
-| INPS Circolare 55 of 14 May 2026 (Bonus Giovani, D.L. 62/2026 art. 2; contributions not exempt; the 0.50% L. 297/1982 contribution) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.05.circolare-numero-55-del-14-05-2026_15258.html | 2026-10-23 |
+| Civil Code art. 2120 (TFR) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23 | 2026-11-14 |
+| L. 297/1982 arts. 2 and 3 (Fondo di garanzia; 0.30% + 0.20% = 0.50% deducted from TFR, computed) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-23 | 2026-10-23 |
+| INPS Circolare 12 of 5 February 2026: read for Fondo di Tesoreria after L. 199/2025; 7.41% less 0.50%; reliefs; deadline | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15160/Allegati/16559_Circolare-numero-12-del-05-02-2026.pdf | 2026-11-14 |
+| INPS, "TFR a carico del Fondo di Tesoreria": read for 60, 50 and 40 thresholds | https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50018.tfr-a-carico-del-fondo-di-tesoreria.html | 2026-10-23 |
+| INPS messaggio 1478/2019: read for apprentices: 10%, 1.31%, 0.30%; cuts for up to 9 staff | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm | 2026-11-14 |
+| INPS, "Insieme per il tuo futuro" booklet: read for apprentice 10% and 5.84% | https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Libretto_INPS_giovani.pdf | 2026-10-23 |
+| INPS Circolare 32 of 30 January 2025: read for Decontribuzione Sud PMI, 2026 at 20%, EUR 125 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/01/Circolare_14812/Allegati/15880_Circolare-numero-32-del-30-01-2025.pdf | 2026-10-23 |
+| INPS Circolare 55 of 14 May 2026 (Bonus Giovani, D.L. 62/2026 art. 2; contributions not exempt; the L. 297/1982 contribution) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.05.circolare-numero-55-del-14-05-2026_15258.html | 2026-10-23 |
 | INPS Circolare 56 of 14 May 2026 (Bonus ZES, D.L. 62/2026 art. 3) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.05.circolare-numero-56-del-14-05-2026_15259.html | 2026-10-23 |
-| INPS news, 14 May 2026 (Circolari 55, 56 and 57/2026: 2026 hiring bonuses) | https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.05.giovani-donne-e-zes-incentivi-per-la-stabilizzazione-professionale.html | 2026-10-23 |
-| INAIL Circolare 38 of 24 June 2025 (voce 0722 tassi medi) | https://www.inail.it/content/dam/inail-hub-site/documenti/circolari/2025/06/Circolare%20n%2038_24%20giugno%202025.pdf | 2026-10-23 |
-| INAIL, Guida autoliquidazione 2025/2026 (dates, premium formula, 1% addizionale, penalties) | https://www.inail.it/content/dam/assicurazione/documenti/2025/12/Guida%20autoliquidazione%202025-2026.pdf | 2026-10-23 |
+| INPS news, 14 May 2026: read for Circolari 55, 56 and 57/2026: 2026 hiring bonuses | https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.05.giovani-donne-e-zes-incentivi-per-la-stabilizzazione-professionale.html | 2026-10-23 |
+| INAIL Circolare 38 of 24 June 2025: read for voce 0722 tassi medi | https://www.inail.it/content/dam/inail-hub-site/documenti/circolari/2025/06/Circolare%20n%2038_24%20giugno%202025.pdf | 2026-10-23 |
+| INAIL, Guida autoliquidazione 2025/2026: read for dates, premium formula, 1% addizionale, penalties | https://www.inail.it/content/dam/assicurazione/documenti/2025/12/Guida%20autoliquidazione%202025-2026.pdf | 2026-10-23 |
 | D.Lgs. 241/1997 art. 18 (payment by the 16th) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art18!vig=2026-10-23 | 2026-10-23 |
 | D.L. 269/2003 art. 44 c. 9 (UniEmens monthly) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-23 | 2026-10-23 |
 | L. 388/2000 art. 116 c. 8 (sanzioni civili) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-23 | 2026-10-23 |
-| INPS Circolare 98 of 11 September 2026 (reference rate 2.65%) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-10-23 |
+| INPS Circolare 98 of 11 September 2026: read for the reference rate (figure checked on the PDF row) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-10-23 |
 | D.L. 463/1983 art. 2 c. 1-bis (withheld contributions not paid) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art2!vig=2026-10-23 | 2026-10-23 |
-| INPS, "Certificato di distacco del lavoratore in paesi Ue" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-10-23 |
+| INPS, "Certificato di distacco del lavoratore in paesi Ue": read for the figures cited from it | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-10-23 |
 
 Not yet confirmed: no INPS publication for 2026 prints the full rate set for industry and commerce, so the totals are built from the 2022 and 2024 INPS circulars, the INPS 2010 rate tables (CUAF 0.68% for industry and commerce, sickness 2.44% for commerce impiegati) and the statutes; L. 199/2025 was not read line by line for changes to these smaller contributions. The 0.50% of L. 297/1982 is an increase in the employer's FPLD pension rate (art. 3, and INPS Circolare 55/2026 para. 5 calls it the employer's "contributo aggiuntivo IVS"), so it sits inside the 23.81%; no INPS table prints that split. The INAIL rate a given firm pays (its tasso applicato after oscillation and prevention cuts) and any general INAIL premium cut for 2026 were not read; the examples use the voce 0722 tasso medio. The 2026/2027 INAIL autoliquidazione dates, the decree text of D.L. 62/2026 and Circolare 57/2026 on the Bonus donne (read only from the INPS news item; Circolari 55 and 56/2026 were read) and the 2026 rules for foreign employers registering with INPS were not read.

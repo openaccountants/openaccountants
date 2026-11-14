@@ -2,10 +2,10 @@
 name: gg-company-accounts-and-reporting
 description: >
   Guernsey company accounting and reporting reference for ordinary local trading companies limited by shares. Covers transaction records, retention, annual accounts, financial periods, member circulation, audit-waiver timing and the separate annual validation. Includes December-incorporation and advance-waiver examples, a document workflow and explicit gaps for audit-excluded companies and specialised entities. Prepared for 2026 from Guernsey Registry primary guidance, including the current annual-validation page and directors handbook. Current consolidated accounts, validation and audit-waiver provisions and the audit-exclusion regulations were recovered and checked on 27 October 2026. Specialised entities and the detailed civil-penalty boundary rules remain outside the established ordinary methods; this draft requires professional review before reliance.
-version: 0.5
+version: 0.6
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -170,4 +170,4 @@ expected:
 
 Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

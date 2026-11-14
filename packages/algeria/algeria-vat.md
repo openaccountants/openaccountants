@@ -1,16 +1,17 @@
 ---
 name: algeria-vat
 description: "Use this skill whenever asked to prepare, review, or classify transactions for an Algeria TVA (Taxe sur la Valeur Ajoutee) return (G50 declaration) for any client. Trigger on phrases like 'prepare TVA return', 'Algeria VAT', 'G50 declaration', 'declaration TVA', 'DGI return', or any request involving Algeria VAT filing. Also trigger when classifying transactions for TVA purposes from bank statements, invoices, or other source data. This skill covers Algeria only and standard TVA-registered businesses under the regime reel. IFU (forfaitaire) taxpayers, hydrocarbon-sector entities, military procurement, and special conventions are in the refusal catalogue. ALWAYS read this skill before touching any Algeria TVA work."
-version: 2.1
+version: 2.2
 jurisdiction: DZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Algeria VAT v2.1
+# Algeria VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gi-property-stamp-duty"
   jurisdiction: "GI"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Gibraltar property conveyance and mortgage stamp duty v0.6
+# Gibraltar property conveyance and mortgage stamp duty v0.7
 
 **Source-cited draft. Independent review pending.** Scope: ordinary conveyances, the stated buyer relief, specified special duty and principal mortgage security. This is not a complete property-tax Guide. The official index identifies 23 December 2024 as the current consolidation on the access date.
 
@@ -184,4 +184,4 @@ Find the current Guide and professional-review status at [OpenAccountants](https
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gi-property-stamp-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gi-property-stamp-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gi-property-stamp-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gi-property-stamp-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.

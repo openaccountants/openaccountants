@@ -12,17 +12,18 @@ description: >
   recomputable examples. Corporate residence, permanent establishments, outbound
   withholding, foreign credits and exit taxation are addressed in the linked
   corporate cross-border skill.
-version: 1.5
+version: 1.7
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Finland corporate income tax v1.5
+# Finland corporate income tax v1.7
 **Tax year:** 2026. Ordinary company computations; independent source-review evidence is in the [pack README](README.md). Tier 2 is not a licensed accountant's attestation.
 
 ## Who this applies to
@@ -35,17 +36,17 @@ Treat each accounting period ending in 2026 as part of tax year 2026, but file i
 
 | Item | 2026 rule | Statutory / official source |
 |---|---|---|
-| Corporate income tax | 20% of taxable income | [Income Tax Act, section 124][income-law] |
-| Confirmed business losses | Following ten tax years; ownership/source restrictions apply | [Income Tax Act, sections 119, 122][income-law] |
-| Machinery/equipment pool | Maximum annual depreciation 25% of residual cost; residual balance at most EUR 1,200 can be written off | [Business Income Tax Act, section 30][business-law] |
-| Low-value movable item / integrated whole | Cost at most EUR 1,200; total immediate low-value deductions at most EUR 3,600/year; separate full deduction for useful life at most three years | [Business Income Tax Act, section 33][business-law] |
-| Buildings | Maximum 7% shop/factory/warehouse etc.; 4% residential/office; 20% specified light structures, tanks and exclusive research buildings | [Business Income Tax Act, section 34][business-law] |
-| Representation costs | 50% deductible, after correctly separating business marketing and private costs | [Business Income Tax Act, sections 7–8][business-law] |
-| Net interest safe amount | At most EUR 500,000; exceeding it tests the whole net amount against the rules, not just the excess | [Business Income Tax Act, section 18a(3)][business-law] |
-| Ordinary interest limitation | 25% of statutory adjusted result; separate unrelated-party route up to EUR 3 million | [Business Income Tax Act, section 18a(3)–(4)][business-law] |
-| Group contribution ownership | At least 90%, with the full-year and other conditions below | [Group Contribution Act, sections 2–7][group-law] |
-| Corporate broadcasting tax | If taxable income is at least EUR 50,000: EUR 140 + 0.35% of excess over EUR 50,000, capped at EUR 3,000 | [Broadcasting Tax Act, sections 1, 3][yle-law] |
-| Ordinary prepayments | Minimum EUR 500; EUR 500–2,000 in two equal instalments in period months three/nine; over EUR 2,000 in twelve instalments under the decision | [Vero instalment rules][instalments] |
+| Corporate income tax | 20% of taxable income | [Income Tax Act, section 124](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Confirmed business losses | Following ten tax years; ownership/source restrictions apply | [Income Tax Act, sections 119, 122](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Machinery/equipment pool | Maximum annual depreciation 25% of residual cost; residual balance at most EUR 1,200 can be written off | [Business Income Tax Act, section 30](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Low-value movable item / integrated whole | Cost at most EUR 1,200; total immediate low-value deductions at most EUR 3,600/year; separate full deduction for useful life at most three years | [Business Income Tax Act, section 33](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Buildings | Maximum 7% shop/factory/warehouse etc.; 4% residential/office; 20% specified light structures, tanks and exclusive research buildings | [Business Income Tax Act, section 34](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Representation costs | 50% deductible, after correctly separating business marketing and private costs | [Business Income Tax Act, sections 7–8](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Net interest safe amount | At most EUR 500,000; exceeding it tests the whole net amount against the rules, not just the excess | [Business Income Tax Act, section 18a(3)](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Ordinary interest limitation | 25% of statutory adjusted result; separate unrelated-party route up to EUR 3 million | [Business Income Tax Act, section 18a(3)–(4)](https://www.finlex.fi/fi/lainsaadanto/1968/360) |
+| Group contribution ownership | At least 90%, with the full-year and other conditions below | [Group Contribution Act, sections 2–7](https://www.finlex.fi/fi/lainsaadanto/1986/825) |
+| Corporate broadcasting tax | If taxable income is at least EUR 50,000: EUR 140 + 0.35% of excess over EUR 50,000, capped at EUR 3,000 | [Broadcasting Tax Act, sections 1, 3](https://www.finlex.fi/fi/lainsaadanto/2012/484) |
+| Ordinary prepayments | Minimum EUR 500; EUR 500–2,000 in two equal instalments in period months three/nine; over EUR 2,000 in twelve instalments under the decision | [Vero instalment rules](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
 
 The special new-machinery 50% depreciation regime covered 2020–2025, not an ordinary 2026 acquisition. Åland corporations use the regional media fee instead of mainland broadcasting tax; exempt entities listed in section 3 do not pay it. [Vero depreciation][depreciation]; [Broadcasting Tax Act][yle-law]; [Vero broadcasting/media fee][yle].
 
@@ -190,4 +191,4 @@ Not yet confirmed: proposals only, not 2026 law and not to be applied: an announ
 [calendar]: https://www.vero.fi/en/businesses-and-corporations/important_dates_and_deadlines_for_corporate_taxpayers/
 [interest-guide]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

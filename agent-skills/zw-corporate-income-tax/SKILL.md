@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/zw-corporate-income-tax"
   jurisdiction: "ZW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Zimbabwe corporate income tax
@@ -21,7 +21,7 @@ Companies, trusts and pension funds with income from a Zimbabwe source or deemed
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
 | Company or trust | 25% | 2026 | s.14(2c) | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates |
-| AIDS levy | 3% of tax | 2026 | Effective 25.75% | same |
+| AIDS levy | 3% of tax | 2026 | Effective 25.75% (computed: 25% plus 3% of it) | same |
 | Pension fund, trade or investment | 15% | 2026 | s.14(2)d | same |
 | Licensed investor | 0%, then 25% | 2026 | First five years, then after | same |
 | Special mining lease | 15% | 2026 | s.14(2)(f) | same |
@@ -38,10 +38,8 @@ Companies, trusts and pension funds with income from a Zimbabwe source or deemed
 | Top-up tax | to 15% | 2026 | Combined effective rate below 15% | same |
 | Levy on coal, lithium, granite, stone | 3% | 2026 | Gross value | same |
 | Gaming operators tax | 20% | 2026 | Gross monthly takings, final tax | same |
-| Sports credit | up to USD 10,000 | 2026 | Registered, tax compliant, NSSA compliant | same |
+| Sports credit | up to ten thousand United States dollars | 2026 | Registered, tax compliant, NSSA compliant | same |
 | Special capital gains tax | 20% | 2026 | Offshore transfer of land-holding entity interests | same |
-| Dividend WHT, ZSE, VFEX, unlisted | unverified: 10%, 5%, 15% | 2026 | Earlier version, not reconfirmed | unverified |
-| Royalties and interest to non-residents | unverified: 15% | 2026 | Earlier version, not reconfirmed | unverified |
 
 ## The base
 
@@ -107,8 +105,8 @@ expected:
 | ZIMRA Tax Rates page, whole table; undated | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 
-Not yet confirmed: payment days of QPDs 1 to 3; whether the ZIMRA rates table reflects all 2026 changes; withholding rates; the 2026 start date of non-residents' tax on interest; mining rate notes; treaty rates; penalties and interest; approved SEZ terms beyond the table.
+Not yet confirmed: payment days of QPDs 1 to 3; whether the ZIMRA rates table reflects all 2026 changes; withholding rates; the 2026 start date of non-residents' tax on interest; mining rate notes; treaty rates; penalties and interest; approved SEZ terms beyond the table; rows moved out of the rates table on 2026-11-14 (earlier version, not reconfirmed): dividend withholding 10% ZSE, 5% VFEX, 15% unlisted; royalties and interest to non-residents 15%.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

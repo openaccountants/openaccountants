@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-corporate-tax"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Portugal: corporate income tax (IRC), tax year 2026 v0.2
+# Portugal: corporate income tax (IRC), tax year 2026 v0.3
 
 This skill computes Portuguese corporate income tax (Imposto sobre o Rendimento das Pessoas Coletivas, IRC) for a 2026 tax period. It covers the rates, the two surcharges (derrama municipal and derrama estadual), autonomous taxation, losses, the interest limit, the participation exemption, payments on account, the Modelo 22 and the IES, fines and interest, and the two main investment credits (SIFIDE II and RFAI). Every figure comes from the consolidated Código do IRC (CIRC) and other codes on the Portal das Finanças, read on 24 October 2026, or from the Diário da República.
 
@@ -224,4 +224,4 @@ Not yet confirmed: the Madeira and Azores derrama regional rates and the Madeira
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
