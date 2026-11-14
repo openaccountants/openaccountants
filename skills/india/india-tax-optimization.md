@@ -13,18 +13,19 @@ description: >
   before giving Indian tax optimization advice. It has no accountant sign-off,
   holds payroll contribution rates and scheme terms it could not read, and does
   not authorise filing, payment or a tax position.
-version: 1.2
+version: 1.3
 jurisdiction: IN
 tax_year: 2026
 tax_year_notes: "Tax year 2026-27 (1 April 2026 to 31 March 2027) under the Income-tax Act 2025 as amended by the Finance Act 2026, read at 5 November 2026. Assessment year 2026-27 (previous year 2025-26) stays under the Income-tax Act 1961 and appears only for dates still running. GST figures are as read on the dated copies named on each row."
-last_updated: 2026-11-07
+last_updated: 2026-11-14
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: tax-optimization
+type: decision
 ---
 
-# India Tax Optimization v1.2
+# India Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -249,8 +250,8 @@ The composition rates are central tax. State or Union territory tax is charged u
 | ESI coverage wage limit | ₹21,000 a month, pending rules | Ministry of Labour FAQ of 16 March 2026, reply 12 | https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf |
 | Employer contribution taxable in employee's hands | Aggregate over ₹7,50,000 a year to recognised provident fund, s 124(1) scheme and approved superannuation fund | Income-tax Act 2025 s 17(1)(h) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Provident fund interest, taxable part | Interest on own contributions from 1 April 2021 above ₹2,50,000 a year, or ₹5,00,000 where the employer does not contribute | Schedule II Sl. Nos. 3 and 4 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| EPF 12%, EPS 8.33%, EPF balance 3.67% | unverified: held | Not read in a primary source. EPFO refused direct access. Use `in-pf-esi-employer` and check | unverified |
-| ESI 0.75% employee, 3.25% employer | unverified: held | Not read in a primary source. ESIC was unreachable. Use `in-pf-esi-employer` and check | unverified |
+
+EPF, EPS and ESI contribution rates are not given here: EPFO refused access and ESIC was unreachable on 14 Nov 2026, so no rate was read in a primary source. Use `in-pf-esi-employer` and check its source before applying any rate. They are listed under Not yet confirmed.
 
 ### Reporting thresholds
 
