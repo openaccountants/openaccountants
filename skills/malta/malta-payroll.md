@@ -74,7 +74,7 @@ The 2026 Main Tax Deduction Tables are published by the Commissioner, not in the
 | Other Emoluments | 20% | Payee may direct higher; pensioners and full-time students may direct nil or lower; others need written approval | FSS rule 9: https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 |
 | Qualifying overtime | 15 cents per euro, final | Rule 7A; not chargeable income, not creditable, not refundable | same |
 | Overtime eligibility | Basic weekly wage not over EUR 375; not managerial; full-time employment registered with Jobsplus | Up to the lower of EUR 10,000 and hours x maxrate (twice the hourly equivalent of basic; hourly = basic / 40) | Tax on Overtime Rules, S.L. 123.200: https://legislation.mt/getpdf/62026ae5c9c73a144cfb58eb |
-| Deduction cap | 50% of the cash part of the emoluments | Unless the payee consents or the listed exceptions apply; not on termination payments | FSS rule 11: https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 |
+| Deduction cap | Fifty per cent of the cash part of the emoluments (as the rule words it) | Unless the payee consents or the listed exceptions apply; not on termination payments | FSS rule 11: https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 |
 | Class 1, Category A (under 18) | EUR 6.62 employee and employer; Maternity EUR 0.20 | Basic weekly wage EUR 0.10 to EUR 229.44 | MTCA Class 1 rates 2026: https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026 |
 | Class 1, Category B (18+) | EUR 22.94 each, or 10% if the employee chooses; Maternity EUR 0.69 | Basic weekly wage EUR 0.10 to EUR 229.44 | same |
 | Class 1, Category C, born by 31 December 1961 | 10% each; Maternity 0.3% | EUR 229.45 to EUR 490.38 | same |

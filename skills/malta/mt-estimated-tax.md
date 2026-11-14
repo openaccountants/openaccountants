@@ -51,11 +51,11 @@ Built from the law: not yet approved by an accountant.
 | Item | Figure | Conditions | Source |
 |---|---|---|---|
 | Due dates | 30 April, 31 August and 21 December of each basis period | All provisional tax payers | S.L. 372.18 rule 4(1): https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 |
-| Instalments | At least 20%, a further 30% and a further 50% of the PT benchmark | Benchmark applicable when each payment falls due | S.L. 372.18 rule 5: https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 |
+| Instalments | At least twenty percent, a further thirty percent and a further fifty percent of the PT benchmark (the rule writes them in words) | Benchmark applicable when each payment falls due | S.L. 372.18 rule 5: https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 |
 | PT benchmark | Tax payable in the benchmark-year self-assessment plus PT taken into account | Rule 6(1); fallbacks in rule 7 | same |
 | First year, not an individual | Nil benchmark | Rule 8(1) | same |
 | Additional tax on late PT | 0.6% of the unpaid PT for each calendar month or part | Periods from 1 June 2022 | S.L. 372.18 rule 14(1): https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 |
-| Cut where actual tax is below the benchmark | Additional tax on the difference reduced by 90% | Rule 14(1), last proviso | same |
+| Cut where actual tax is below the benchmark | Additional tax on the difference reduced by ninety percent (as the rule words it) | Rule 14(1), last proviso | same |
 | Additional tax stops | No further additional tax for any month starting after the tax settlement date | Rule 14(2) | same |
 | Tax settlement date, individual | 30 June of the year of assessment (30 June 2027) | Online return by 31 July (MTCA) | MTCA Tax Return Cycle: https://mtca.gov.mt/personal-tax/individual/tax-return-cycle |
 | Interest on tax unpaid after the settlement date | 0.6% for every month or part, capped at the tax | Tax payable on 31 August 2022 or later | S.L. 372.28 rule 2: https://legislation.mt/eli/sl/372.28/eng/pdf |
