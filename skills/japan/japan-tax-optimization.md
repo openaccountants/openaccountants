@@ -13,20 +13,21 @@ description: >
   2026 year, with filing through e-Tax. ALWAYS read this skill before giving
   Japanese tax optimization advice. It has no accountant sign-off and does not
   authorise filing, payment or a tax position.
-version: 1.2
+version: 1.3
 jurisdiction: JP
 tax_year: 2026
 tax_year_notes: "The 2026 year (令和8年分, filed in 2027), read at 6 November 2026. Some enacted 2027 and later changes are recorded, not all of them, and no later year is computed. The 2026 basic deduction was read in text in force from 1 December 2026. The announced food consumption tax cut is a proposal on the text read. No 令和9年度 tax reform outline had been published when the Ministry of Finance page was read on 5 November 2026."
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: tax-optimization
+type: decision
 ---
 
-# Japan Tax Optimization v1.2
+# Japan Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -290,7 +291,8 @@ On income up to JPY 4,000,000 the layers add to 22.39% before any deduction for 
 | Employees' pension (厚生年金) rate | 18.3%, split between employer and employee | Current | 厚生年金保険法 art. 81(4): https://laws.e-gov.go.jp/law/329AC0000000115 |
 | Employees' pension, cap on standard monthly remuneration | 650,000 now; 680,000 from September 2027, 710,000 from September 2028, 750,000 from September 2029 | Stated dates | Ministry of Health, Labour and Welfare: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00024.html |
 | Health insurance, cap on standard monthly remuneration | 1,390,000, grade 50 | Current | 健康保険法 art. 40(1): https://laws.e-gov.go.jp/law/211AC0000000070 |
-| Health insurance rate | Set by each insurer and, for 協会けんぽ, by prefecture. Not read here. Includes 子ども・子育て支援金 and, for ages 40 to 64, long-term care | Needs Input | unverified: no health rate was obtained. 健康保険法 arts 160, 160-2: https://laws.e-gov.go.jp/law/211AC0000000070 |
+
+Health insurance rate: not given in this table. Each insurer sets it, and for 協会けんぽ it varies by prefecture; it includes 子ども・子育て支援金 and, for ages 40 to 64, long-term care (健康保険法 arts 160, 160-2: https://laws.e-gov.go.jp/law/211AC0000000070). No rate was read, so it is listed under Not yet confirmed.
 
 The prior version said health insurance has no cap after JPY 1,390,000. It is the reverse: JPY 1,390,000 is the cap. Its '~30%' is unproved and is not used. The 厚生年金保険法 table in art. 20 at 5 November 2026 stops at JPY 620,000, and the JPY 650,000 grade comes from the ministry page; the order that adds it was not read.
 
