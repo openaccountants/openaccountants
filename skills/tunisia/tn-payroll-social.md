@@ -1,17 +1,18 @@
 ---
 name: tn-payroll-social
 description: "Tunisia payroll and social contributions for tax year 2026: job-loss fund, State relief on employer contributions for graduates hired from 2026, salary tax base and CNSS filing route. Use for questions on CNSS, retenue a la source on pay, or employer cost in Tunisia. The main CNSS percentages could not be checked at an official source and are marked unverified, so confirm them before use."
-version: 1.1
+version: 1.2
 jurisdiction: TN
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Tunisia Payroll and Social Contributions v1.1
+# Tunisia Payroll and Social Contributions v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -23,9 +24,6 @@ Private-sector employers and employees in the CNSS general scheme. Tax year 2026
 
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
-| Employer contribution | unverified: 17.07% in the old file, 16.57% for industrial full exporters | 2026 | Includes the job-loss share | unverified |
-| Employee contribution | unverified: 9.68% in the old file | 2026 | Includes the job-loss share | unverified |
-| Work accident | unverified: 0.4% to 4%, employer | 2026 | By sector | unverified |
 | Job-loss fund | 0.5% employer, 0.5% employee | 2026 | On payroll declared to CNSS. LF 2025 fund article | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf |
 | State relief on employer share | 100%, 80%, 60%, 40%, 20% over years 1 to 5 | 2026 | Higher-education graduates hired by private firms from 1 Jan 2026. LF 2026 art. 13 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
 | Employee flat expenses | 10%, cap TND 2,000 | 2026 | Art. 26 I | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf |
@@ -93,4 +91,4 @@ expected:
 | Loi n° 2024-48 du 9 decembre 2024, loi de finances 2025, archived copy of the DGI file; arts. 31, 64 and the job-loss fund article read | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf | 2026-11-01 |
 | Code IRPP-IS, French text updated to LF 2025, archived copy of the DGI file; articles cited in this skill read. The 2026 edition page exists but its PDF could not be opened | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf | 2026-11-01 |
 
-Not yet confirmed: All CNSS rates above marked unverified, base, ceiling, remittance frequency, penalties. The law setting contribution rates was not found on an openable official page.
+Not yet confirmed: All CNSS rates above marked unverified, base, ceiling, remittance frequency, penalties. The law setting contribution rates was not found on an openable official page; rows moved out of the rates table on 2026-11-14 (old file figures): employer CNSS 17.07%, 16.57% for industrial full exporters; employee 9.68%; work accident 0.4% to 4% by sector.

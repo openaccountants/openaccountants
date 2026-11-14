@@ -3,7 +3,9 @@ jurisdiction: LC
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  VAT: lc-vat
   SC: lc-national-insurance
+  XB: lc-imported-services-vat
 partial: {}
 ---
 

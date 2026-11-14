@@ -5,14 +5,15 @@ description: >
 jurisdiction: SM
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.5
+last_updated: 2026-11-14
+version: 0.6
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# San Marino cross-border tax v0.5
+# San Marino cross-border tax v0.6
 
 Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
@@ -27,20 +28,20 @@ Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Ta
 
 | Payment by a San Marino payer | Rate | Tax year | Source |
 |---|---|---|---|
-| Capital income (including interest) paid by economic operators, the State and public or private bodies to anyone other than San Marino banks, financial and management companies | 13% final | 2026 | [IGR art 103(1)][igr] |
-| Interest on San Marino bonds and similar debt of 36 months or more, not repaid early | 11% final | 2026 | [IGR art 103(1)][igr] |
-| Bank and financial-company interest: current and deposit accounts | 13% | 2026 | [IGR art 103(2)(a)][igr] |
-| Bank and financial-company: repurchase agreements | 6% | 2026 | [IGR art 103(2)(b)][igr] |
-| Bank and financial-company: certificates of deposit under 18 months / 18 months or more | 6% / 5% | 2026 | [IGR art 103(2)(c)][igr] |
-| Bank and financial-company: bonds issued by authorised entities | 5% | 2026 | [IGR art 103(2)(d)][igr] |
-| Dividends paid by a resident capital company to individuals | 5% final | 2026 | [IGR art 103(6)][igr] |
-| Dividends paid to non-individuals | Nil, if the recipient declares it does not act for an individual | 2026 | [IGR art 103(6)][igr] |
-| Self-employed and assimilated services (article 27) paid to non-residents, including when supplied by a business | 20% final | 2026 | [IGR art 102(1)][igr] |
-| Royalties for trademarks, works of ingenuity, copyright and industrial inventions, and fees of directors, statutory auditors and coordinated collaborators, paid to non-residents (article 27(6) income) | 20% final | 2026 | [IGR arts 27(6), 102(1)][igr] |
-| Artistic, cultural or sports services as defined by Tax Office circular; airport and naval services abroad for aviation or shipping operators | 3% final | 2026 | [IGR art 102(2)][igr] |
-| Use of industrial, commercial or scientific equipment and vehicles situated in San Marino, including finance leases, paid to non-residents | 10% final | 2026 | [IGR art 104(5)][igr] |
-| Non-resident B2C recipient (circular 1/2026 route) | 18% on the return for tax years 2026-2030; an Italian recipient applies the treaty rates of 13% (capital income) or 10% (rentals) | 2026 | [Finance circular 1/2026, pp. 2-3][circ1]; [Law 141/2025, art 54(6)][l141] |
-| Construction or installation site as a permanent establishment | Only if it lasts more than three months | 2026 | [IGR art 4][igr] |
+| Capital income (including interest) paid by economic operators, the State and public or private bodies to anyone other than San Marino banks, financial and management companies | 13% final | 2026 | [IGR art 103(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Interest on San Marino bonds and similar debt of 36 months or more, not repaid early | 11% final | 2026 | [IGR art 103(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Bank and financial-company interest: current and deposit accounts | 13% | 2026 | [IGR art 103(2)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Bank and financial-company: repurchase agreements | 6% | 2026 | [IGR art 103(2)(b)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Bank and financial-company: certificates of deposit under 18 months / 18 months or more | 6% / 5% | 2026 | [IGR art 103(2)(c)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Bank and financial-company: bonds issued by authorised entities | 5% | 2026 | [IGR art 103(2)(d)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Dividends paid by a resident capital company to individuals | 5% final | 2026 | [IGR art 103(6)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Dividends paid to non-individuals | Nil, if the recipient declares it does not act for an individual | 2026 | [IGR art 103(6)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Self-employed and assimilated services (article 27) paid to non-residents, including when supplied by a business | 20% final | 2026 | [IGR art 102(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Royalties for trademarks, works of ingenuity, copyright and industrial inventions, and fees of directors, statutory auditors and coordinated collaborators, paid to non-residents (article 27(6) income) | 20% final | 2026 | [IGR arts 27(6), 102(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Artistic, cultural or sports services as defined by Tax Office circular; airport and naval services abroad for aviation or shipping operators | 3% final | 2026 | [IGR art 102(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Use of industrial, commercial or scientific equipment and vehicles situated in San Marino, including finance leases, paid to non-residents | 10% final | 2026 | [IGR art 104(5)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Non-resident B2C recipient (circular 1/2026 route) | 18% on the return for tax years 2026-2030; an Italian recipient applies the treaty rates of 13% (capital income) or 10% (rentals) | 2026 | [Finance circular 1/2026, pp. 2-3](https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf); [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Construction or installation site as a permanent establishment | Only if it lasts more than three months | 2026 | [IGR art 4](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 Documented travel, board and lodging reimbursements and costs incurred in the client's name are not subject to the 20% withholding ([IGR art 102(3)][igr]). Withholding on interest paid to resident companies is on account, not final ([IGR art 103(8)][igr]).
 
@@ -67,10 +68,10 @@ The circular covers interest paid by San Marino residents (businesses and privat
 
 | Obligation | Deadline | Source |
 |---|---|---|
-| Remit tax withheld | By the end of the two-month period after the month of payment | [IGR art 125(1)][igr] |
-| Financial-institution payers | 50% advance on prior-year withholding by 31 July; balance in the first two months of the following year | [IGR art 125(2)][igr] |
-| Non-resident return (where no final withholding) | 31 July following the tax year | [IGR art 93(1)][igr] |
-| B2C non-resident return and payment for 2026 income (circular 1/2026 route) | 31 July 2027 | [Finance circular 1/2026, p. 3][circ1] |
+| Remit tax withheld | By the end of the two-month period after the month of payment | [IGR art 125(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Financial-institution payers | 50% advance on prior-year withholding by 31 July; balance in the first two months of the following year | [IGR art 125(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Non-resident return (where no final withholding) | 31 July following the tax year | [IGR art 93(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| B2C non-resident return and payment for 2026 income (circular 1/2026 route) | 31 July 2027 | [Finance circular 1/2026, p. 3](https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf) |
 
 The payer's withholding return frees the recipient from filing for income under final withholding ([IGR art 125(3)][igr]). Keep certificates of tax withheld, stamped by the Tax Office, for the recipient's foreign credit claim ([Finance circular 1/2026][circ1]).
 
