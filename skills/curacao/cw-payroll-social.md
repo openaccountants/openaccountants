@@ -110,7 +110,7 @@ Premium percentages are of income; ceilings are in XCG for 2026 ([SVB Tabel 2026
 |---|---|---|---|---|---|
 | AOV (old-age pension) | 15% | 9,00% | 6,00% | premium income XCG 100,000, shared with AWW; above it the employee pays 1% | [SVB Tabel 2026](https://svbcur.org/wp-content/uploads/2026/01/Tabel-2026.pdf) |
 | AWW (widows and orphans) | 1% | 0,5% | 0,5% | XCG 100,000, shared with AOV | same |
-| BVZ (basic health insurance), employee | 13,6% | 9,3% | 4,3% | premium income XCG 150,000 | same |
+| BVZ (basic health insurance), employee | 13.6% | 9.3% | 4.3% | premium income XCG 150,000 | same |
 | BVZ, pensioner | 6,5% | none | 6,5% | XCG 150,000 | same |
 | BVZ, self-employed | 13,6% | none | 13,6% | XCG 150,000 | same |
 | AVBZ (exceptional medical costs) | 2% | 0.5% | 1.5% | premium income XCG 606,247.08 | same |
