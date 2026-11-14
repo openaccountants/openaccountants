@@ -1,11 +1,12 @@
 ---
 name: jo-payroll-social
 description: "Conditional Jordan payroll and social security extracts for a 2026 refresh. Covers ordinary full-coverage employment, employer and employee contributions, insured wage limits, legacy wage protection, hazardous-work additions, payment timing and the distinction between source-text penalties and a current assessment. Reads Social Security Law No. 1 of 2014 through its stated 2023 consolidation and the SSC 2026 ceiling announcement. Later amendment currentness, PAYE instructions, reduction rates and portal procedures remain on hold. Use for Jordan payroll research, SSC contribution calculations, employer cost and wage ceilings. Examples require their stated coverage assumptions and do not clear payroll implementation."
-version: 1.1
+version: 1.2
+type: computation
 jurisdiction: JO
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -37,7 +38,6 @@ Ordinary employment covered by all four insurances under the Social Security Law
 | Wage ceiling 2026 | JOD 3,733 | Set from 1.77% inflation; JOD 3,668 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
 | Older insured ceiling | JOD 5,000 base | Insured covered before 15 Oct 2009, art. 20(c)(1); qualifying higher pre-date wages stay frozen under art. 20(c)(2), subject to the inflation catch-up in art. 20(c)(3) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
 | Maximum net unemployment benefit 2026 | JOD 623 | JOD 612 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
-| Minimum wage | unverified | No Ministry of Labour text read | unverified |
 
 ## The base
 
