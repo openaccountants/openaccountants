@@ -33,14 +33,14 @@ Related skills in this pack: hu-income-tax (individuals and sole traders), hu-so
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Corporate tax rate (társasági adó) | 9% of the positive tax base | 2017 onwards, unchanged for 2026 | [NAV info sheet 41](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02) (Tao. tv. 19. §) |
-| Income (profit) minimum | 2% of adjusted total revenue | 2026 | NAV info sheet 41, section 7 (Tao. tv. 6. § (7)-(11)) |
-| Loss carry-forward | 5 tax years, set-off up to 50% of the tax base before losses | 2026 | NAV info sheet 41, section 5.1 (Tao. tv. 17. § (2)) |
+| Income (profit) minimum | 2% of adjusted total revenue | 2026 | NAV info sheet 41, section 7 (Tao. tv. 6. § (7)-(11)); https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 |
+| Loss carry-forward | 5 tax years, set-off up to 50% of the tax base before losses | 2026 | NAV info sheet 41, section 5.1 (Tao. tv. 17. § (2)); https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 |
 | Interest limitation | Net borrowing cost above the greater of 30% of tax EBITDA and HUF 939,810,000 is added back | 2026 (same figure in the version in force from 1 January 2027) | [NAV guide to form 2529](https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato); [Act text on njt.jog.gov.hu](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) (Tao. tv. 8. § (1) j)) |
-| Advance payments | Monthly if prior-year tax above HUF 20 million; quarterly if HUF 20 million or less | Advances based on 2025 tax onward | NAV info sheet 41, section 15 (Tao. tv. 26. §) |
+| Advance payments | Monthly if prior-year tax above HUF 20 million; quarterly if HUF 20 million or less | Advances based on 2025 tax onward | NAV info sheet 41, section 15 (Tao. tv. 26. §); https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 |
 | Local business tax (helyi iparűzési adó, HIPA) | Set by each municipality, at most 2% | 2026 | [NAV English summary](https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations) |
 | Innovation contribution (innovációs járulék) | 0.3% of the HIPA-type base; micro and small enterprises exempt | 2026 | [NAV info sheet 68](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/68.-Az-innovacios-jarulek-legfontosabb-szabalyai-2026.-02.-02) (Inno. tv. 16. § (2)) |
 | KIVA (small business tax), alternative regime | 10% of the KIVA base | 2026 | [NAV info sheet 92](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18) |
-| Withholding on dividends paid to companies | None, resident or non-resident recipient | 2026 | NAV English summary, section 2.6 |
+| Withholding on dividends paid to companies | None, resident or non-resident recipient | 2026 | NAV English summary, section 2.6; https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations |
 | Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 percentage points, per day (1/365) | 2026 | [NAV press notice](https://nav.gov.hu/print/sajtoszoba/hirek/A_napokban_csaknem_400_ezren_kapnak_potlekertesitest_a_NAV-tol) |
 | Central bank base rate | 5.50% from 26 August 2026 (so late interest 10.50% a year) | 2026 | [MNB base rate history](https://www.mnb.hu/Jegybanki_alapkamat_alakulasa); [NAV base rate page](https://nav.gov.hu/ugyfeliranytu/jegybank) |
 
@@ -204,20 +204,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| NAV information sheet 41: key rules of corporate tax (published 2 February 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02 | 2026-10-22 |
-| NAV information sheet 24: return and payment information (26 January 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-10-22 |
-| NAV guide to the 2529 return (tax year 2025) | https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato | 2026-10-22 |
-| NAV information sheet 68: innovation contribution (2 February 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/68.-Az-innovacios-jarulek-legfontosabb-szabalyai-2026.-02.-02 | 2026-10-22 |
-| NAV information sheet 92: KIVA from 2026 (18 May 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18 | 2026-10-22 |
-| NAV information sheet 23: self-revision (22 January 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/23._informacios_fuzet_-_Onellenorzes | 2026-10-22 |
-| NAV: a short summary on the taxation of business associations (English, January 2026) | https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations | 2026-10-22 |
-| NAV: the top-up obligation has ended (5 December 2019, archived) | https://nav.gov.hu/ado/tarsasagi/Megszunt_a_feltoltesi20191205 | 2026-10-22 |
-| NAV press notice on late payment interest | https://nav.gov.hu/print/sajtoszoba/hirek/A_napokban_csaknem_400_ezren_kapnak_potlekertesitest_a_NAV-tol | 2026-10-22 |
-| NAV: central bank base rate (notice of 25 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-22 |
-| NAV guidance 3011/2025 on fining practice (30 September 2025) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2F3011-2025_20250930_m.pdf | 2026-10-22 |
-| NAV guidance 3006/2018 on fining practice (consolidated) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2Fe3006-2018 | 2026-10-22 |
-| Tao. tv. (Act LXXXI of 1996), 2/A. §, 7. § (1) f) and (15), 8. § (1) j), 17. §, 19. §, 26. §; Nemzeti Jogszabálytár (official), version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 | 2026-10-23 (njt.hu refused connections on 2026-10-22) |
-| Tao. tv. consolidated text, version in force from 1 January 2027 (net.jogtar.hu, commercial reprint; used only for the 2027 interest limitation figure) | https://net.jogtar.hu/jogszabaly?docid=99600081.tv | 2026-10-22 |
-| MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-10-22 |
+| Read for Corporate tax rate (társasági adó): NAV information sheet 41: key rules of corporate tax (published 2 February 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 24: return and payment information (26 January 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-11-14 |
+| Read for Interest limitation: NAV guide to the 2529 return (tax year 2025) | https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato | 2026-11-14 |
+| Read for Innovation contribution (innovációs járulék): NAV information sheet 68: innovation contribution (2 February 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/68.-Az-innovacios-jarulek-legfontosabb-szabalyai-2026.-02.-02 | 2026-11-14 |
+| Read for KIVA (small business tax), alternative regime: NAV information sheet 92: KIVA from 2026 (18 May 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 23: self-revision (22 January 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/23._informacios_fuzet_-_Onellenorzes | 2026-11-14 |
+| Read for Local business tax (helyi iparűzési adó, HIPA), Withholding on dividends paid to companies: NAV: a short summary on the taxation of business associations (English, January 2026) | https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations | 2026-11-14 |
+| Read for the points the body cites to it: NAV: the top-up obligation has ended (5 December 2019, archived) | https://nav.gov.hu/ado/tarsasagi/Megszunt_a_feltoltesi20191205 | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): NAV press notice on late payment interest | https://nav.gov.hu/print/sajtoszoba/hirek/A_napokban_csaknem_400_ezren_kapnak_potlekertesitest_a_NAV-tol | 2026-11-14 |
+| Read for Central bank base rate: NAV: central bank base rate (notice of 25 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-11-14 |
+| Read for the points the body cites to it: NAV guidance 3011/2025 on fining practice (30 September 2025) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2F3011-2025_20250930_m.pdf | 2026-11-14 |
+| Read for the points the body cites to it: NAV guidance 3006/2018 on fining practice (consolidated) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2Fe3006-2018 | 2026-11-14 |
+| Tao. tv. (Act LXXXI of 1996), 2/A. §, 7. § (1) f) and (15), 8. § (1) j), 17. §, 19. §, 26. §; Nemzeti Jogszabálytár (official), version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 | 2026-11-14 (njt.hu refused connections on 2026-11-14) |
+| Read for the points the body cites to it: Tao. tv. consolidated text, version in force from 1 January 2027 (net.jogtar.hu, commercial reprint; used only for the 2027 interest limitation figure) | https://net.jogtar.hu/jogszabaly?docid=99600081.tv | 2026-11-14 |
+| Read for Central bank base rate: MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-11-14 |
 
 Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.

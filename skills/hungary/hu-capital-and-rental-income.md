@@ -35,32 +35,32 @@ See also, in this pack: `hu-income-tax` (sole traders: átalányadó, vállalkoz
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Personal income tax rate, unless the act says otherwise | 15% of the base | 2026 | Szja tv. 8. § (1), https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
-| Interest income (kamatjövedelem) | 15% szja; the payer (bank, investment firm) withholds | 2026 | Szja tv. 8. § (1), 65. § (2) |
-| Interest on Hungarian state retail bonds (lakossági állampapír) | Not income: no szja and no szocho | 2026 | Szja tv. 65. § (3) a) ab); NAV information sheet 49 |
-| Dividend (osztalék) | 15% szja; the paying company withholds | 2026 | Szja tv. 8. § (1), 66. § (3) |
-| Capital gain on securities outside a controlled transaction (árfolyamnyereség) | 15% szja | 2026 | Szja tv. 8. § (1), 67. § |
-| Controlled capital market transactions (ellenőrzött tőkepiaci ügylet) | 15% szja on the net gain of the year; no szocho | 2026 | Szja tv. 67/A. § (1); Szocho tv. 1. § (5) |
-| TBSZ long-term investment account (tartós befektetés) | 0% szja after the five-year period; 10% if closed at the end of the three-year period or broken in years four and five; 15% if broken within three years | 2026 | Szja tv. 67/B. § (5) |
-| TBSZ minimum first deposit | HUF 25,000 | 2026 | Szja tv. 67/B. § (2) |
+| Interest income (kamatjövedelem) | 15% szja; the payer (bank, investment firm) withholds | 2026 | Szja tv. 8. § (1), 65. § (2); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Interest on Hungarian state retail bonds (lakossági állampapír) | Not income: no szja and no szocho | 2026 | Szja tv. 65. § (3) a) ab); NAV information sheet 49; https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Dividend (osztalék) | 15% szja; the paying company withholds | 2026 | Szja tv. 8. § (1), 66. § (3); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Capital gain on securities outside a controlled transaction (árfolyamnyereség) | 15% szja | 2026 | Szja tv. 8. § (1), 67. §; https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Controlled capital market transactions (ellenőrzött tőkepiaci ügylet) | 15% szja on the net gain of the year; no szocho | 2026 | Szja tv. 67/A. § (1); Szocho tv. 1. § (5); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| TBSZ long-term investment account (tartós befektetés) | 0% szja after the five-year period; 10% if closed at the end of the three-year period or broken in years four and five; 15% if broken within three years | 2026 | Szja tv. 67/B. § (5); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| TBSZ minimum first deposit | HUF 25,000 | 2026 | Szja tv. 67/B. § (2); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
 | Szocho on interest, dividends, capital gains (67. §) | 13% | 2026 | Szocho tv. 1. § (5) c), d), f), 2. § (1), https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 |
-| Szocho on TBSZ yield (contracts made or renewed after 31 December 2024) | 0% after five years; 8% at three to five years; 13% under three years. A TBSZ made before 1 January 2025 and not renewed bears no szocho | 2026 | Szocho tv. 1. § (5) g), 2. § (1a), 36/I. § (1) |
+| Szocho on TBSZ yield (contracts made or renewed after 31 December 2024) | 0% after five years; 8% at three to five years; 13% under three years. A TBSZ made before 1 January 2025 and not renewed bears no szocho | 2026 | Szocho tv. 1. § (5) g), 2. § (1a), 36/I. § (1); https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 |
 | Szocho cap (adófizetési felső határ) | 24 times the monthly minimum wage: 24 x HUF 322,800 = HUF 7,747,200. Applies to dividends and 67. § gains (with wages and other consolidated income counted first). Does **not** apply to interest or TBSZ yield | 2026 | Szocho tv. 2. § (2); 426/2025. (XII. 23.) Korm. rendelet 2. § (1), https://njt.jog.gov.hu/jogszabaly/2025-426-20-22; NAV information sheet 49, section 2 |
-| Szocho on dividends of securities listed on an EEA regulated market | Exempt | 2026 | Szocho tv. 5. § (3) |
-| Szocho on rental income | None | 2026 | Szocho tv. 5. § (2) h); NAV information sheet 10 |
-| Rental income: flat cost (10 százalék költséghányad) | Income = 90% of rent received | 2026 | Szja tv. 17. § (3) b) |
-| Rental income: quarterly advance | 15%, by the 12th of the month after the quarter, once the year's total due passes HUF 10,000 | 2026 | Szja tv. 46. § (9) |
-| Real estate sale: share of the computed gain that is taxable | Year of purchase and next year 100%; 2nd year after 90%; 3rd 60%; 4th 30%; 5th and later 0% | 2026 | Szja tv. 62. § (4) |
-| Real estate sale: purchase cost unknown | Revenue reduced by 75%, no other costs | 2026 | Szja tv. 62. § (3) |
-| Real estate sale: tax | 15%, self-assessed in the return | 2026 | Szja tv. 63. § (1); NAV information sheet 9, section 8 |
-| NYESZ pension savings account credit | 20% of payments in the year, up to HUF 100,000 (HUF 130,000 for someone who reached pension age before 1 January 2020) | 2026 | Szja tv. 44/B. § (1) |
-| NYESZ non-pension withdrawal | Credits already paid back with a 20% uplift; the gain over payments is other income | 2026 | Szja tv. 44/B. § (4), 28. § (17) |
-| Annual return and payment deadline | 20 May 2027 for tax year 2026 | 2026 | Szja tv. 12/C. § (4), (6), 63. § (1); NAV information sheet 9, section 8 |
-| NAV return proposal (bevallási tervezet) available | From 15 March 2027 | 2026 | Szja tv. 12/C. § (1) |
+| Szocho on dividends of securities listed on an EEA regulated market | Exempt | 2026 | Szocho tv. 5. § (3); https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 |
+| Szocho on rental income | None | 2026 | Szocho tv. 5. § (2) h); NAV information sheet 10; https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 |
+| Rental income: flat cost (10 százalék költséghányad) | Income = 90% of rent received | 2026 | Szja tv. 17. § (3) b); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Rental income: quarterly advance | 15%, by the 12th of the month after the quarter, once the year's total due passes HUF 10,000 | 2026 | Szja tv. 46. § (9); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Real estate sale: share of the computed gain that is taxable | Year of purchase and next year 100%; 2nd year after 90%; 3rd 60%; 4th 30%; 5th and later 0% | 2026 | Szja tv. 62. § (4); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Real estate sale: purchase cost unknown | Revenue reduced by 75%, no other costs | 2026 | Szja tv. 62. § (3); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Real estate sale: tax | 15%, self-assessed in the return | 2026 | Szja tv. 63. § (1); NAV information sheet 9, section 8; https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| NYESZ pension savings account credit | 20% of payments in the year, up to HUF 100,000 (HUF 130,000 for someone who reached pension age before 1 January 2020) | 2026 | Szja tv. 44/B. § (1); https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F25SZJA%2F25szja-kitoltesi-utmutato |
+| NYESZ non-pension withdrawal | Credits already paid back with a 20% uplift; the gain over payments is other income | 2026 | Szja tv. 44/B. § (4), 28. § (17); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| Annual return and payment deadline | 20 May 2027 for tax year 2026 | 2026 | Szja tv. 12/C. § (4), (6), 63. § (1); NAV information sheet 9, section 8; https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
+| NAV return proposal (bevallási tervezet) available | From 15 March 2027 | 2026 | Szja tv. 12/C. § (1); https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 |
 | Failure-to-file penalty (mulasztási bírság), individual | Up to HUF 400,000 | 2026 | Art. 220. § (1), https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
-| Tax penalty (adóbírság) | 50% of the shortfall; 200% where income was hidden or records falsified | 2026 | Art. 215. § (3), (4) |
+| Tax penalty (adóbírság) | 50% of the shortfall; 200% where income was hidden or records falsified | 2026 | Art. 215. § (3), (4); https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
 | Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 percentage points, divided by 365, per day. With the base rate at 5.50% (unchanged by the MNB Monetary Council on 20 October 2026), 10.50% a year | 2026 | Art. 209. § (1); MNB press release of 20 October 2026, https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026 |
-| Self-revision surcharge (önellenőrzési pótlék) | Central bank base rate divided by 365, per day (5.50% a year at the 20 October 2026 rate); 1.5 times on a repeat self-revision of the same return | 2026 | Art. 212. § (1), (1a); MNB press release of 20 October 2026 |
-| Szocho cap declared but not reached | Szocho due with a 6% uplift, in the annual return | 2026 | Szocho tv. 29. § (2) |
+| Self-revision surcharge (önellenőrzési pótlék) | Central bank base rate divided by 365, per day (5.50% a year at the 20 October 2026 rate); 1.5 times on a repeat self-revision of the same return | 2026 | Art. 212. § (1), (1a); MNB press release of 20 October 2026; https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
+| Szocho cap declared but not reached | Szocho due with a 6% uplift, in the annual return | 2026 | Szocho tv. 29. § (2); https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 |
 
 ## The taxable base
 
@@ -202,14 +202,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| 1995. évi CXVII. törvény a személyi jövedelemadóról (Szja tv.), state 2026-10-01: 3. §, 8. §, 11.-12/C. §, 16.-18. §, 28. §, 44/B. §, 46.-48. §, 57/A. §, 62.-63. §, 65.-67/B. §, 7. számú melléklet (annex read via the njtGetBlock service) | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
-| 2018. évi LII. törvény a szociális hozzájárulási adóról (Szocho tv.), state 2026-10-01: 1. §, 2. §, 5. §, 27. §, 29. §, 36/I. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
-| 2017. évi CL. törvény az adózás rendjéről (Art.), state 2026-10-01: 209.-212. §, 215.-216. §, 220. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Magyar Nemzeti Bank, press release on the Monetary Council meeting of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026 | 2026-10-23 |
-| NAV, kitöltési útmutató a 25SZJA jelű bevalláshoz (szocho cap, lines 286-292) | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F25SZJA%2F25szja-kitoltesi-utmutato | 2026-10-23 |
-| 426/2025. (XII. 23.) Korm. rendelet, 2026 minimum wage, 2. § (1) | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-10-23 |
-| NAV information sheet 10, Ingatlan bérbeadásának és egyéb hasznosításának adózása (published 2026-02-03) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/10.-Ingatlan-berbeadasanak-es-egyeb-hasznositasanak-adozasa-2026.02.03 | 2026-10-23 |
-| NAV information sheet 9, Az ingatlanértékesítésből és a vagyoni értékű jog átruházásából származó jövedelem (2026-02-04) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/09.-Az-ingatlanertekesitesbol-es-a-vagyoni-erteku-jog-atruhazasabol-szarmazo-jovedelem-2026.02.04 | 2026-10-23 |
-| NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-10-23 |
+| 1995. évi CXVII. törvény a személyi jövedelemadóról (Szja tv.), state 2026-10-01: 3. §, 8. §, 11.-12/C. §, 16.-18. §, 28. §, 44/B. §, 46.-48. §, 57/A. §, 62.-63. §, 65.-67/B. §, 7. számú melléklet (annex read via the njtGetBlock service) | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-11-14 |
+| 2018. évi LII. törvény a szociális hozzájárulási adóról (Szocho tv.), state 2026-10-01: 1. §, 2. §, 5. §, 27. §, 29. §, 36/I. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-11-14 |
+| 2017. évi CL. törvény az adózás rendjéről (Art.), state 2026-10-01: 209.-212. §, 215.-216. §, 220. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): Magyar Nemzeti Bank, press release on the Monetary Council meeting of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026 | 2026-11-14 |
+| Read for NYESZ pension savings account credit: NAV, kitöltési útmutató a 25SZJA jelű bevalláshoz (szocho cap, lines 286-292) | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F25SZJA%2F25szja-kitoltesi-utmutato | 2026-11-14 |
+| 426/2025. (XII. 23.) Korm. rendelet, 2026 minimum wage, 2. § (1) | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 10, Ingatlan bérbeadásának és egyéb hasznosításának adózása (published 2026-02-03) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/10.-Ingatlan-berbeadasanak-es-egyeb-hasznositasanak-adozasa-2026.02.03 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 9, Az ingatlanértékesítésből és a vagyoni értékű jog átruházásából származó jövedelem (2026-02-04) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/09.-Az-ingatlanertekesitesbol-es-a-vagyoni-erteku-jog-atruhazasabol-szarmazo-jovedelem-2026.02.04 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-11-14 |
 
 Not yet confirmed: whether rental income, which bears no szocho, still counts towards the HUF 7,747,200 szocho cap. Szocho tv. 2. § (2) counts income under 1. § (1)-(3); rental income is consolidated-base income under 1. § (1), but 5. § (2) h) takes it out of the 1. § (1)-(3) liability, and neither the act, NAV information sheet 49 nor the 25SZJA guide (line 286) says whether exempt income still counts. Also not read: the depreciation rates for let property in the Szja tv. 11. számú melléklet and the cost list in the 3. számú melléklet; the definition of a tax-free NYESZ pension payout in the NYESZ act (2005. évi CLVI. törvény) and whether szocho applies to the other income from a non-pension NYESZ withdrawal.

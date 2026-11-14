@@ -208,18 +208,18 @@ The edge case: from his third year, if business income ever fell below 2% of rev
 
 | Source | URL | Read on |
 |---|---|---|
-| Szja tv., Act CXVII of 1995 (personal income tax), 3. §, 8. §, 29.-29/F. §, 46. §, 47. §, 49. §, 49/B.-49/C. §, 50.-56. §, 1., 8., 10., 11. and 13. számú melléklet, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
-| Act LXXXIV of 2025, 35. § (entry into force of the 45% cost ratio) | https://njt.jog.gov.hu/jogszabaly/2025-84-00-00 | 2026-10-23 |
-| Kata tv., Act XIII of 2022 (small-taxpayer fixed tax), 2. §, 5. §, 7.-8. §, 10. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-10-23 |
-| Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-10-23 |
-| Act XIV of 2025 (mothers of two children) | https://njt.jog.gov.hu/jogszabaly/2025-14-00-00 | 2026-10-23 |
-| Act XV of 2025 (mothers of three children) | https://njt.jog.gov.hu/jogszabaly/2025-15-00-00 | 2026-10-23 |
-| Art., Act CL of 2017 (tax procedure), 209. §, 212. §, 215. §, 220.-221. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-10-23 |
+| Szja tv., Act CXVII of 1995 (personal income tax), 3. §, 8. §, 29.-29/F. §, 46. §, 47. §, 49. §, 49/B.-49/C. §, 50.-56. §, 1., 8., 10., 11. and 13. számú melléklet, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-11-14 |
+| Act LXXXIV of 2025, 35. § (entry into force of the 45% cost ratio) | https://njt.jog.gov.hu/jogszabaly/2025-84-00-00 | 2026-11-14 |
+| Kata tv., Act XIII of 2022 (small-taxpayer fixed tax), 2. §, 5. §, 7.-8. §, 10. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-11-14 |
+| Read for Mothers under 30; mothers of two children (in 2026 only if she turns 40 after 2025-12-31); mothers of three children; mothers of four or more: Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-11-14 |
+| Read for Mothers under 30; mothers of two children (in 2026 only if she turns 40 after 2025-12-31); mothers of three children; mothers of four or more: Act XIV of 2025 (mothers of two children) | https://njt.jog.gov.hu/jogszabaly/2025-14-00-00 | 2026-11-14 |
+| Read for Mothers under 30; mothers of two children (in 2026 only if she turns 40 after 2025-12-31); mothers of three children; mothers of four or more: Act XV of 2025 (mothers of three children) | https://njt.jog.gov.hu/jogszabaly/2025-15-00-00 | 2026-11-14 |
+| Art., Act CL of 2017 (tax procedure), 209. §, 212. §, 215. §, 220.-221. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-11-14 |
+| Read for Minimum wage (minimálbér) / guaranteed minimum wage (garantált bérminimum), monthly: Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-11-14 |
 | NAV information sheet 3, Egyéni vállalkozók szja- és járulékkötelezettsége (2026-08-31) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31. | 2026-10-23 |
-| NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-10-23 |
-| NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-10-23 |
-| NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
-| MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
+| Read for Annual minimum wage (12 times the monthly minimum wage on 1 January), Flat-rate revenue ceiling, general (10 times annual minimum wage), Tax-free part of flat-rate income (half the annual minimum wage), Under-25 allowance (25 év alatti fiatalok kedvezménye): NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-11-14 |
 
 Not yet confirmed: the form number of the 2026 annual szja return (NAV had not published the 2026 form when read); the full list of revenue-reducing items and the small-business investment allowance conditions (read only in NAV sheet 3, not each paragraph of 49/B. § (6)); the 49/C. § adjustments to the dividend base other than investment spending; the treatment of a sole trader who switches regime during the year; local business tax (helyi iparűzési adó), which is not covered here.
