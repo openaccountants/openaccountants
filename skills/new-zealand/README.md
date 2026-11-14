@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by:
   IT-CORP: nz-company-income-tax-ir4
   SC: nz-acc-levies
-  PR: nz-employer-payroll
   XB: nz-tax-residency
 partial:
   XB: "residence rules only; no non-resident withholding, treaty or exit rules"
