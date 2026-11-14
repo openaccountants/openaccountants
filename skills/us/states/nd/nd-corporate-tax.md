@@ -1,11 +1,11 @@
 ---
 name: nd-corporate-tax
 description: "Compute ordinary North Dakota 2026 corporate income tax under the 1.41%, 3.55% and 4.31% statutory bands, federal starting point and state adjustments. Apply default equal three-factor or valid single-sales election, state NOL, Form 40 estimates and filing; distinguish financial institutions, pass-throughs and severance taxes."
-version: "0.3"
+version: "0.4"
 jurisdiction: US-ND
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: corporate-tax
 type: computation
@@ -38,9 +38,9 @@ Current statutory rates apply to the ordinary **2026** computation. Operational 
 
 | Item / condition | Rate or rule | Official source |
 | --- | --- | --- |
-| ND taxable income through USD 25,000 | 1.41% | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf) |
-| Over 25,000 through 50,000 | 352.50 + 3.55% of excess over 25,000 | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf) |
-| Over 50,000 | 1,240 + 4.31% of excess over 50,000 | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf) |
+| ND taxable income through USD 25,000 | 1.41% | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf); [Tax Commissioner rate table](https://www.tax.nd.gov/corporate-income-tax) |
+| Over 25,000 through 50,000 | 352.50 + 3.55% of excess over 25,000 | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf); [Tax Commissioner rate table](https://www.tax.nd.gov/corporate-income-tax) |
+| Over 50,000 | 1,240 + 4.31% of excess over 50,000 | [57-38-30](https://ndlegis.gov/cencode/t57c38.pdf); [Tax Commissioner rate table](https://www.tax.nd.gov/corporate-income-tax) |
 | Water's-edge election | Additional 3.5% of ND taxable income; five consecutive years | [57-38.4](https://ndlegis.gov/cencode/t57c38-4.pdf); [Form 40 p3-4](https://www.tax.nd.gov/sites/default/files/documents/forms/business/corporate-income/2025-corp/28714-corp-income-tax-booklet-2025.pdf) |
 | Default apportionment | Equally weighted property, payroll and sales; not double-weighted sales | [57-38.1-09(1)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
 | Optional single-sales factor | Original timely return; binding five years; renewal or default-period conditions | [57-38.1-09(4)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
