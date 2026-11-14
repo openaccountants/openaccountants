@@ -1,10 +1,11 @@
 ---
 name: kenya-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Kenya VAT return (VAT-3), classify transactions for Kenyan VAT purposes, or advise on VAT registration and filing in Kenya. Trigger on phrases like "Kenya VAT", "KRA VAT", "VAT-3 Kenya", "input tax Kenya", "output tax Kenya", "Kenya Revenue Authority VAT", or any Kenya VAT request. Also covers the former ke-vat-return slug. ALWAYS read this skill before touching any Kenya VAT work.
-version: 3.0
+version: 3.1
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
+type: situation-rules
 depends_on:
   - vat-workflow-base
 category: international
@@ -14,7 +15,7 @@ domain: vat-gst
 ---
 
 
-# Kenya VAT v3.0
+# Kenya VAT v3.1
 
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
@@ -302,13 +303,13 @@ Never claim input tax without the document, never zero-rate without evidence, ne
 
 | Source | URL | Read |
 | --- | --- | --- |
-| VAT Act, Cap. 476, legislation as at 1 July 2026 (Legal Notice 128 of 2026), KRA copy | https://www.kra.go.ke/images/publications/Value-Added-Tax-Act-2026.pdf | 2026-10-31 (ss. 2, 10, 17, 31, 34, 44 and the Schedule paragraphs cited, by passage in extracted text, not cover to cover) |
-| VAT Act, Cap. 476, version of 1 July 2025 (cited in the tables above) | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31 by keyword passages; on review the page would not render, so check against the KRA copy |
-| Finance Act 2026, No. 19 of 2026, ss. 25 to 33, 48 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-10-31 |
-| Tax Procedures Act, Cap. 469B, legislation as at 1 September 2026, KRA copy | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-10-31 (ss. 38, 42A, 83, 83A, 84, by passage in extracted text, not cover to cover) |
-| Tax Procedures Act, Cap. 469B, version of 1 July 2025 (cited in the tables above) | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31 by keyword passages; check against the KRA copy |
-| KRA VAT page | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax | 2026-10-31 |
-| KRA, Finance Act 2026 summary | https://www.kra.go.ke/popular-links/finance-act-2026-what-it-means-for-you | 2026-10-31 |
+| VAT Act, Cap. 476, legislation as at 1 July 2026 (Legal Notice 128 of 2026), KRA copy: read for ss. 2, 10, 17, 31, 34, 44 and the Schedule paragraphs cited, by passage in extracted text, not cover to cover | https://www.kra.go.ke/images/publications/Value-Added-Tax-Act-2026.pdf | 2026-11-14 |
+| VAT Act, Cap. 476, version of 1 July 2025 (cited in the tables above): read for keyword passages on 2026-10-31; check against the KRA copy | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31; tried again 2026-11-14, the page would not render (202) |
+| Finance Act 2026, No. 19 of 2026: read for ss. 25 to 33 and 48 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
+| Tax Procedures Act, Cap. 469B, legislation as at 1 September 2026, KRA copy: read for ss. 38, 42A, 83, 83A, 84, by passage in extracted text, not cover to cover | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
+| Tax Procedures Act, Cap. 469B, version of 1 July 2025 (cited in the tables above): read for keyword passages on 2026-10-31; check against the KRA copy | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31; tried again 2026-11-14, the page would not render (202) |
+| KRA VAT page: read for the 16% standard rate and the KES 5,000,000 registration threshold | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax | 2026-11-14 |
+| KRA, Finance Act 2026 summary: read for the VAT changes | https://www.kra.go.ke/popular-links/finance-act-2026-what-it-means-for-you | 2026-11-14 |
 
 Not yet confirmed: the earlier skill's 100% withholding on foreign entities; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; any 2026 petroleum rate change; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
 

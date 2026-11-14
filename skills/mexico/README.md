@@ -7,8 +7,6 @@ partial:
   IT-IND: "covers self-employed personas físicas only, not employees or rental income; bank-statement walkthroughs use the 2025 tariff"
   SC: "excludes the 2026 in-kind fixed quota, transitional cesantía y vejez employer rates and state payroll tax rates, pending archived sources"
   PR: "excludes penalties and savings-fund limits, pending archived sources"
-  VAT: "tax year 2025; skills not yet rebuilt to the deep-tax shape"
-  TP: "tax year 2025; skill not yet rebuilt to the deep-tax shape"
 ---
 
 # Mexico: tax pack
@@ -21,7 +19,7 @@ Mexico taxes income under the Ley del Impuesto Sobre la Renta (LISR), administer
 |---|---|---|
 | IT-IND, individual income tax | mx-income-tax | sourced from the law |
 | IT-CORP, corporate income tax | mx-corporate-income-tax | sourced from the law |
-| VAT (IVA) | mexico-iva, mx-vat-return | sourced from the law |
+| VAT (IVA) | mexico-iva | sourced from the law |
 | SC, social contributions | mx-social-contributions | sourced from the law |
 | PR, payroll withholding | mx-payroll-withholding | sourced from the law |
 | TP, transfer pricing | mexico-transfer-pricing | sourced from the law |

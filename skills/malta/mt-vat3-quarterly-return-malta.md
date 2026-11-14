@@ -6,8 +6,8 @@ tax_year: 2026
 last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-version: 1.2
-type: situation-rules
+version: 1.3
+type: filing-howto
 ---
 
 # Malta VAT returns: Article 10, Article 11 and Article 12
