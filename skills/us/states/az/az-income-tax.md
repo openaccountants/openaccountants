@@ -1,7 +1,7 @@
 ---
 name: az-income-tax
 description: Compute Arizona individual income tax for tax year 2026 on Form 140, 140PY or 140NR for residents, part-year residents and nonresidents, including sole proprietors. Covers the 2.5% flat rate, the Arizona standard deduction and its new charitable increase (actual contributions up to $1,000 single or $2,000 joint from 2026), the Arizona subtractions for Social Security, US government interest, federal tips, overtime and senior deductions, the dependent credit of $125 and $25, and the estimated tax rule (Arizona gross income over $75,000 or $150,000 joint in both this year and last). Trigger on "Arizona income tax", "AZ income tax", "Form 140", "Arizona estimated tax", "140ES", "Arizona flat tax", "A.R.S. 43-1011". Federal figures live in the federal skills.
-version: "1.1"
+version: "1.2"
 jurisdiction: US-AZ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -55,9 +55,9 @@ Out of scope, and where it goes:
 | Charitable increase to the standard deduction (2026 on) | Total charitable contributions under IRC 170(c), up to $1,000 single or separate, $2,000 joint | [A.R.S. 43-1041(I)(2)](https://www.azleg.gov/ars/43/01041.htm) |
 | Exemption for age 65 or over, or blind | $1,500 each | [A.R.S. 43-1023(A)](https://www.azleg.gov/ars/43/01023.htm) |
 | Dependent credit, federal AGI under $200,000 ($400,000 joint) | $125 per dependent under 17; $25 per dependent 17 or older | [A.R.S. 43-1073.01(B)](https://www.azleg.gov/ars/43/01073-01.htm) |
-| Dependent credit phase-out | Each credit reduced by five percent for each $1,000 (or part) of federal AGI over the threshold | [A.R.S. 43-1073.01(C)](https://www.azleg.gov/ars/43/01073-01.htm) |
+| Dependent credit phase-out | Each credit reduced 5% for each $1,000 (or part) of federal AGI over the threshold (in words on the page) | [A.R.S. 43-1073.01(C)](https://www.azleg.gov/ars/43/01073-01.htm) |
 | Estimated tax required | Arizona gross income over $75,000 ($150,000 joint) in 2026 **and** over that amount in 2025 | [A.R.S. 43-581(A)](https://www.azleg.gov/ars/43/00581.htm) |
-| Estimated tax safe harbour | Payments plus withholding of at least ninety percent of 2026 tax or one hundred percent of 2025 tax | [A.R.S. 43-581(A)](https://www.azleg.gov/ars/43/00581.htm) |
+| Estimated tax safe harbour | Payments plus withholding of at least 90% of 2026 tax or 100% of 2025 tax (in words on the page) | [A.R.S. 43-581(A)](https://www.azleg.gov/ars/43/00581.htm) |
 | No underpayment penalty | Tax due on the return (after withholding and credits) under $1,000 | [A.R.S. 43-581(E)(2)](https://www.azleg.gov/ars/43/00581.htm) |
 | Internal Revenue Code conformity for 2026 | The Code as in effect on 1 January 2026, so the July 2025 federal law is included unless Arizona decouples | [A.R.S. 43-105(A)](https://www.azleg.gov/ars/43/00105.htm) |
 
