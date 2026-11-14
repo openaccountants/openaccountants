@@ -63,7 +63,7 @@ National Insurance Board (NIB) contributions in the Turks and Caicos Islands for
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Employee earning USD 6,000 a month | Base capped at 4,000: USD 220 employee, 260 employer | [NIB contribution rates](https://www.tcinib.tc/contribution-rates/) |
+| Employee earning USD 6,000 a month | Base capped at 4,000: USD 220 employee, 260 employer (example, computed from the cap and the rates above) | [NIB contribution rates](https://www.tcinib.tc/contribution-rates/) |
 | Self-employed rate shown as 10% in some Board pages | 10% is the voluntary contributor rate and the April 2024 self-employed rate; from 1 April 2026 the self-employed rate is 11% | [LN 3 of 2026](https://www.gov.tc/agc/component/edocman/3-of-2026-national-insurance-contributions-amendment-regulations-2026/fdocument?Itemid=9999); [NIB about us](https://www.tcinib.tc/about-us/) |
 | Self-employed person who pays late in the year | Allowed until the end of the contribution year, but short-term benefits depend on the qualifying sum for the previous year | LN 3 of 2026 regs.14B, 16 |
 | Health insurance | Separate NHIP charge, 3% plus 3% to USD 7,800 | [tc-national-health-insurance](tc-national-health-insurance.md) |
