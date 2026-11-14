@@ -1,10 +1,11 @@
 ---
 name: cyprus-social-contributions
 description: "Cyprus Social Insurance and General Healthcare System (GHS) contributions for tax year 2026, under the Social Insurance Law 59(I)/2010, the Contributions Regulations K.D.P. 289/2010 and the GHS Law 89(I)/2001. Covers employees, employers, the self-employed, voluntary contributors, pensioners and people with rent, interest or dividends: Social Insurance at 8.8% plus 8.8%, 16.6% self-employed on the 16 occupational category minimums or on actual earnings, the 2026 maximum insurable earnings (EUR 5,742 a month, EUR 1,325 a week), the 2026 self-employed quarters and their 10 May, 10 August, 10 November and 10 February due dates, GHS at 2.65%, 2.90% and 4.00% with the EUR 180,000 maximum, the Redundancy, HRDA (0.5% for the self-employed in 2026), Social Cohesion and Central Holiday funds, late charges of 3% to 27%, and the one-fifth cap. Trigger on: Cyprus social insurance 2026, GESY contribution, GHS on dividends, self-employed category Cyprus, quarterly social insurance Cyprus, insurable earnings ceiling, employer on-cost Cyprus. Out of scope: cyprus-payroll, cyprus-income-tax, cy-non-dom, cy-cross-border."
-version: 0.4
+version: 0.5
+type: computation
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -39,20 +40,20 @@ Sibling skills: PAYE and the payroll run in `cyprus-payroll`; income tax and the
 | Voluntary contributor, own share | 15% of declared earnings (state 4.7%, total 19.7%) | 2026 | Same URL |
 | Voluntary contributor working abroad for a Cypriot employer | 17.6% on either basic insurable earnings or normal earnings, as agreed in the contract of employment, up to the maximum insurable earnings (state 5.2%) | 2026 | Same URL |
 | Rates printed in the Social Insurance Law from 2024 (employee / employer / state; self-employed / state; voluntary / state) | 8.9% / 8.9% / 5.3%; 16.8% / 5.3%; 15.2% / 4.8%, each subject to the actuarial-study proviso | 2024 on | SIL arts. 5(1)(στ), 12(ζ), 15(1)(στ), https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html |
-| Next legislated step | 9.5% / 9.5% / 5.7% employees; 18% self-employed | 2029 | SIL arts. 5(1)(ζ), 12(η), same URL |
+| Next legislated step | 9.5% / 9.5% / 5.7% employees; 18% self-employed | 2029 | [SIL arts. 5(1)(ζ), 12(η)](https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html)|
 | Maximum insurable earnings, monthly-paid employees | EUR 5,742 a month from 1 January 2026 | 2026 | Social Insurance Services notice, https://sisweb.mlsi.gov.cy/anotato2025/ |
 | Maximum insurable earnings, weekly-paid employees | EUR 1,325 a week from 5 January 2026 | 2026 | Same URL |
 | Basic insurable earnings (weekly) | EUR 220.76, from 5 January 2026 to 3 January 2027 | 2026 | Social Insurance Services, 2026 Table I, https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/E3FAA841210065C3C2258E37002C0420?OpenDocument |
 | Self-employed weekly minimum by category | EUR 220.76 times the category coefficient (1.50 to 4.45), so EUR 331.14 to EUR 982.38 a week; full list under The taxable base | 2026 | K.D.P. 289/2010 Reg. 16(2) and Table I, https://www.cylaw.org/KDP/data/2010_1_289.pdf; Social Insurance Services 2026 Table I, same URL as above |
 | Self-employed weekly maximum | EUR 1,325 a week (EUR 2,859.35 Social Insurance a quarter) | 2026 | Social Insurance Services 2026 Table I note; 2026 contributions table, https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/CC73852B37301B20C2258E37002C21E4?OpenDocument |
-| Self-employed contribution quarters | Four quarters of 13 weeks: 5 Jan to 5 Apr, 6 Apr to 5 Jul, 6 Jul to 4 Oct, 5 Oct 2026 to 3 Jan 2027 | 2026 | Social Insurance Services 2026 contributions table, same URL |
+| Self-employed contribution quarters | Four quarters of 13 weeks: 5 Jan to 5 Apr, 6 Apr to 5 Jul, 6 Jul to 4 Oct, 5 Oct 2026 to 3 Jan 2027 | 2026 | [Social Insurance Services 2026 contributions table](https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/CC73852B37301B20C2258E37002C21E4?OpenDocument) |
 | Funds under that ceiling | Social Insurance, Annual Paid Leave (Central Holiday), Redundancy, Human Resource Development | 2026 | Social Insurance Services notice, https://sisweb.mlsi.gov.cy/anotato2025/ |
 | GHS, employee; pensioner; office holder; income earner (rent, interest, dividends) | 2.65% | 2026 | GHS Law art. 19(1)(α), (δ), (ε), (ζ), https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html |
-| GHS, employer; payer of an office holder | 2.90% | 2026 | GHS Law art. 19(1)(β), (στ), same URL |
-| GHS, self-employed | 4.00% | 2026 | GHS Law art. 19(1)(γ), same URL |
-| GHS, state | 4.70% on pay, self-employed earnings, office holders' pay and pensions | 2026 | GHS Law art. 19(1)(η), same URL |
-| GHS annual maximum per person | EUR 180,000 of all earnings, pensions and income added | 2026 | GHS Law art. 19(4)(α), same URL |
-| Redundancy Fund (employer only) | 1.2% of insurable earnings | 2026 | Business in Cyprus page above |
+| GHS, employer; payer of an office holder | 2.90% | 2026 | [GHS Law art. 19(1)(β), (στ)](https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html)|
+| GHS, self-employed | 4.00% | 2026 | [GHS Law art. 19(1)(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html)|
+| GHS, state | 4.70% on pay, self-employed earnings, office holders' pay and pensions | 2026 | [GHS Law art. 19(1)(η)](https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html)|
+| GHS annual maximum per person | EUR 180,000 of all earnings, pensions and income added | 2026 | [GHS Law art. 19(4)(α)](https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html)|
+| Redundancy Fund (employer only) | 1.2% of insurable earnings | 2026 | [Business in Cyprus page above](https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/) |
 | Human Resources Development Fund, employer | 0.5% of insurable earnings | 2026 | Same URL |
 | Human Resources Development Fund, self-employed | 0.5% of weekly income, from 5 January 2026 | 2026 | Social Insurance Services 2026 contributions table, note, https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/CC73852B37301B20C2258E37002C21E4?OpenDocument |
 | Social Cohesion Fund (employer only) | 2% of total earnings, no maximum | 2026 | Business in Cyprus page above; Social Insurance Services contributions, https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/EA4F396F80C4BAA8C22586A10042659F?OpenDocument |

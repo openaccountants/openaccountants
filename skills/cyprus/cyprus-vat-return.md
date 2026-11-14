@@ -1,10 +1,11 @@
 ---
 name: cyprus-vat-return
 description: "Use this skill for Cyprus VAT (Φ.Π.Α.) in tax year 2026 (law at 24 October 2026). It covers the 19% standard rate, the 9%, 5% and 3% reduced rates, the temporary 0% on basic goods (baby milk, nappies, feminine hygiene products and listed fruit and vegetables to 31 December 2027; meat and fish 6 April 2026 to 31 May 2027; bread, milk, coffee, sugar and baby food 12 October 2026 to 31 May 2027), household electricity and home solar rates, property VAT, partial exemption, cash accounting, the EUR 15,600 registration threshold, the EUR 10,000 EU distance-sales threshold, quarterly returns and payment by the 10th of the second month, return boxes 1 to 11B, VIES by the 15th, domestic reverse charge (construction, scrap, phones and laptops, precious metals, property in loan restructuring), TFA filing, the EUR 100 late-return charge, 10% additional tax and interest. Trigger on: Cyprus VAT, Φ.Π.Α., VAT return Cyprus, TFA VAT, Cyprus reverse charge, VIES Cyprus. Out of scope: corporate tax (cy-corporate-tax), income tax (cyprus-income-tax), payroll (cyprus-payroll), cross-border income tax (cy-cross-border)."
-version: 2.1
+version: 2.2
+type: filing-howto
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -63,7 +64,6 @@ What changed for 2026:
 | EU small business scheme (SME-SS): EU-wide turnover cap | EUR 100,000 | 2026 | https://www.cylaw.org/nomoi/arith/2025_1_104.pdf |
 | Retailer must issue a VAT invoice if a taxable customer asks and the price passes | EUR 85 | 2026 | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ |
 | Errors in past returns that may be corrected in the current return (net total, periods under three years old) | Up to EUR 1,708.60 | 2026 | https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/ |
-| Gifts of goods: output VAT due when cost per gift passes | EUR 17 | 2026 | Tax Department return guide (URL in Sources) |
 
 ## The taxable base
 
@@ -304,4 +304,4 @@ expected:
 | Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 
-Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
+Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format; rates row taken out of the table until read on the official page: Gifts of goods, output VAT due when cost per gift passes EUR 17 (Tax Department VAT return guide on gov.cy, which refuses scripted reads; the VAT Law text on CyLaw still states the business-gift limit as CYP 10).
