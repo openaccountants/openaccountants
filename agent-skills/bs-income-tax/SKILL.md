@@ -1,806 +1,283 @@
 ---
 name: bs-income-tax
-description: "Use this skill whenever asked about Bahamas tax obligations for individuals, self-employed persons, or sole traders. Trigger on phrases like \"do I pay income tax in the Bahamas\", \"NIB contributions\", \"National Insurance Board\", \"business licence fee\", \"VAT registration Bahamas\", \"real property tax Bahamas\", \"stamp duty Bahamas\", \"self-employed tax Bahamas\", \"payroll Bahamas\", or any question about tax filing or obligations for a person living or working in the Bahamas. Also trigger when computing NIB contribution amounts, preparing a business licence application, determining VAT registration thresholds, or advising on property taxes and stamp duty. This skill covers the full Bahamas tax reality: no personal income tax of any kind, NIB social contributions (the primary individual obligation), VAT, Business Licence, Real Property Tax, and Stamp Duty. ALWAYS read this skill before touching any Bahamas tax or compliance work."
+description: "Bahamas individuals, employees, self-employed persons and sole traders for 2026. The Bahamas has no personal income tax, so this skill works out what an individual does pay - National Insurance (NIB) contributions at the 2024 rates (employee 4.65%, employer 6.65%, self-employed 10.3%, voluntary 6.5%), the business licence tax on turnover (none up to BSD 100,000, then 0.5%, 0.75%, 1.25% and from July 2026 1.5% above BSD 175 million), VAT registration at BSD 100,000, real property tax and VAT on property conveyances. Trigger on do I pay income tax in the Bahamas, NIB contributions, business licence Bahamas, self-employed Bahamas, real property tax Bahamas. Built from Bahamian legislation and DIR pages; not reviewed by an accountant."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bs-income-tax"
   jurisdiction: "BS"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# bahamas-income-tax
+# Bahamas individuals: no income tax, and what is paid instead
 
-## Section 1 -- Quick Reference
-
-**Section 1 -- Quick Reference**
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 | Field | Value |
-| --- | --- |
+|---|---|
 | Country | Commonwealth of The Bahamas |
-| Personal Income Tax | **NONE** -- The Bahamas levies no personal income tax of any kind |
-| Currency | Bahamian Dollar (BSD), pegged 1:1 to USD |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary individual obligation | National Insurance Board (NIB) contributions |
-| Revenue authority (VAT, Business Licence, RPT) | Department of Inland Revenue (DIR) |
-| NIB authority | National Insurance Board (nib-bahamas.com) |
-| Filing portal (VAT) | https://vat.revenue.gov.bs/ |
-| Annual income tax return | **Does not exist** -- no PIT return to file |
-| Validation date | Pending |
-| Skill version | 0.1 |
-
-### There Is No Personal Income Tax
-
-The Bahamas has **no personal income tax** of any kind. This is not a low rate or a zero band -- the tax itself does not exist. Confirmed absent (Source: PwC Worldwide Tax Summaries -- Bahamas Individual, last reviewed 24 February 2026):
-
-**Confirmed absent taxes**  _(PwC Worldwide Tax Summaries -- Bahamas Individual, last reviewed 24 February 2026)_
-
-| Tax | Status |
-| --- | --- |
-| Income tax on employment or self-employment income | Does not exist |
-| Capital gains tax | Does not exist |
-| Inheritance, estate, or gift tax | Does not exist |
-| Wealth or net worth tax | Does not exist |
-| Transfer taxes on securities | Does not exist |
-| Payroll income tax | Does not exist (NIB social contributions exist separately) |
-
-### NIB Contribution Rates (Effective 1 July 2024)
-
-A 1.5 percentage-point increase was implemented 1 July 2024 to address Pensions Branch fund sustainability. (Source: nibrateincrease.com; PwC Tax Summaries -- Bahamas Individual Other Taxes)
-
-**NIB contribution rates**  _(nibrateincrease.com; PwC Tax Summaries -- Bahamas Individual Other Taxes)_
-
-| Category | Rate from 1 Jul 2024 | Previous rate |
-| --- | --- | --- |
-| Employee | **4.65%** | 3.9% |
-| Employer | **6.65%** | 5.9% |
-| Combined (employee + employer) | **11.30%** | 9.8% |
-| Self-employed | **10.30%** | 8.8% |
-| Voluntarily insured | **6.50%** | 5.0% |
-
-### NIB Insurable Wage Ceiling
-
-(Source: NIB 2024 Adjustments -- nib-bahamas.com/2024-adjustments-to-the-insurable-wage-ceiling-pensions-and-grants/)
-
-**NIB insurable wage ceiling**  _(nib-bahamas.com/2024-adjustments-to-the-insurable-wage-ceiling-pensions-and-grants/)_
-
-| Period | Weekly ceiling | Monthly ceiling |
-| --- | --- | --- |
-| Previous (to 30 Jun 2024) | BSD 740 | BSD 3,207 |
-| **Current (1 Jul 2024 -- 30 Jun 2026)** | **BSD 810** | **BSD 3,510** |
-| Upcoming (from 1 Jul 2026) | BSD 830 | BSD 3,597 |
-
-- **Earnings above ceiling and biennial adjustment** — Earnings above the weekly ceiling are not subject to NIB contributions. The ceiling is adjusted biennially based on the retail price index over the preceding two years plus 2%.  _(nib-bahamas.com/biennial-adjustments-to-pensions-grants-and-the-wage-ceiling)_
-
-### Maximum Weekly and Annual NIB Contributions at Current Ceiling (BSD 810/week)
-
-**Maximum weekly and annual NIB contributions**
-
-| Party | Rate | Weekly max | Annual max (52 weeks) |
-| --- | --- | --- | --- |
-| Employee | 4.65% | BSD 37.67 | BSD 1,958 |
-| Employer | 6.65% | BSD 53.87 | BSD 2,801 |
-| Combined (employee + employer) | 11.30% | BSD 91.53 | BSD 4,760 |
-| Self-employed (full both shares) | 10.30% | BSD 83.43 | BSD 4,338 |
-
-*Arithmetic check: 37.67 + 53.87 = BSD 91.53/week combined. 91.53 × 52 = BSD 4,759.56 ≈ BSD 4,760. Self-employed: 810 × 10.30% = BSD 83.43/week × 52 = BSD 4,338.36.*
-
-### VAT Rates (as of 1 September 2025)
-
-(Source: Inland Revenue VAT -- inlandrevenue.finance.gov.bs/value-added-tax/; Higgs & Johnson 2025 Tax Legislative Updates)
-
-**VAT rates**  _(inlandrevenue.finance.gov.bs/value-added-tax/; Higgs & Johnson 2025 Tax Legislative Updates)_
-
-| Category | Rate | Applies to |
-| --- | --- | --- |
-| Standard | **10%** | Most goods and services |
-| Reduced | **5%** | Unprepared groceries, medications, medical supplies, baby/adult diapers, feminine hygiene products (effective 1 Sep 2025) |
-| Zero | **0%** | Exports; certain financial services |
-| Exempt | Exempt | Residential rent; certain education; certain financial products |
-
-- **Sweets/gum/sodas rate change** — From 1 Sep 2025, sweets, chewing gum, and sodas were moved back to 10% (from prior reduced-rate treatment).  _(PM Davis announcement -- bahamas.gov.bs)_
-
-### Business Licence Fee Schedule
-
-(Source: Inland Revenue -- inlandrevenue.finance.gov.bs/tax-incentives/business-licence-new-rates-1/; PwC Corporate Other Taxes)
-
-**Business Licence Fee Schedule**  _(inlandrevenue.finance.gov.bs/tax-incentives/business-licence-new-rates-1/; PwC Corporate Other Taxes)_
-
-| Annual turnover | Licence tax |
-| --- | --- |
-| ≤ BSD 50,000 | BSD 100 flat fee |
-| BSD 50,001 -- BSD 500,000 | 0.50% of turnover |
-| BSD 500,001 -- BSD 5,000,000 | 0.75% of turnover |
-| > BSD 5,000,000 | 1.25% of turnover |
-
-### Conservative Defaults
-
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Client asks about income tax | State clearly: there is no personal income tax in the Bahamas |
-| Unknown NIB registration status | STOP -- instruct client to register with NIB if self-employed and not yet registered |
-| Unknown business turnover (VAT threshold) | Assume VAT registration required; escalate to confirm |
-| Unknown property ownership | Skip RPT section; note it for reviewer |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction for Business Licence cost purposes |
-| Unknown expense category (Business Licence deductibility) | Not deductible until confirmed |
-| Client asks about capital gains on property | No CGT in Bahamas; stamp duty applies on conveyance |
-
-### Required Inputs
-
-**Minimum viable** -- client's employment status (employed / self-employed / both), approximate annual earnings or turnover, and confirmation they are resident in or operating from the Bahamas.
-
-**Recommended** -- NIB registration number (nine-digit), whether a Business Licence has been obtained, VAT registration status and number if applicable, property ownership details for RPT, any recent real estate transactions for stamp duty.
-
-**Ideal** -- NIB Smart Card, Business Licence certificate, VAT registration certificate, DIR taxpayer file number, complete annual turnover figure, payroll records (for employers), bank statements for the full year.
-
-**Refusal if minimum is missing -- SOFT WARN.** If employment status is unknown, issue a hard stop: "Employment and self-employment status is required to determine NIB contribution rates and obligations. Please confirm before proceeding."
-
-### Refusal Catalogue
-
-- **R-BS-1** — "The Bahamas levies no personal income tax. There is no tax return to file, no income to declare to a tax authority, and no income tax due. If you are asking about social contributions, see the NIB section. If you are a business paying corporate tax, this skill does not cover corporate tax -- escalate to a qualified Bahamian practitioner." (Client asks for a personal income tax computation.)
-- **R-BS-2** — "The Bahamas has no capital gains tax. If you are selling real estate, stamp duty applies on the conveyance -- see Section 6. If you are selling securities, no transfer taxes apply." (Capital gains computation requested.)
-- **R-BS-3** — "There is no inheritance, estate, or gift tax in the Bahamas. Estate planning and probate costs are legal/probate fees, not taxes. Escalate to a Bahamian attorney for estate planning." (Inheritance or estate planning.)
-- **R-BS-4** — "This skill covers individuals and self-employed sole traders only. The Bahamas does not impose corporate income tax on profits, but companies face Business Licence fees, VAT registration obligations, and payroll NIB obligations. Escalate to a qualified Bahamian practitioner for company compliance." (Corporate / company tax.)
-- **R-BS-5** — "Non-residents and expatriates face the same absence of income tax. However, work permit requirements, specific benefit-in-kind rules, and social security totalization agreements may apply. For complex expatriate situations, escalate to a Bahamian HR compliance specialist." (Non-resident / expatriate complex situations.)
-- **R-BS-6** — "Client has outstanding NIB contributions, surcharges, or is subject to NIB enforcement. The 10% surcharge plus 1.5% compound monthly interest accumulates rapidly. Do not advise. Escalate to a Bahamian accountant or NIB-registered agent immediately." (NIB arrears or enforcement.)
-- **R-BS-7** — "From July 2025, businesses with less than 50% zero or reduced-rated supplies cannot claim VAT refunds. Escalate to a DIR-registered VAT practitioner." (VAT refund claims.)  _(Higgs & Johnson 2025 Tax Legislative Updates)_
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier for bank statement lines. When a transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description. If multiple patterns match, use the most specific. NIB obligations are the primary personal tax cost in the Bahamas; VAT is relevant only if the client is VAT-registered.
-
-### 3.1 NIB-Related Transactions
-
-**NIB-Related Transactions**
-
-| Pattern | Classification | Treatment | Notes |
-| --- | --- | --- | --- |
-| NIB CONTRIBUTION, NIB PAYMENT, NATIONAL INSURANCE | NIB contribution | Self-employed: deductible cost of doing business | Employee share is not a tax -- it funds social benefits |
-| NIB C10, C10 FORM | NIB employer payment | Employer's NIB liability | C10 = monthly employer contribution form |
-| NIB SURCHARGE, NIB PENALTY, NIB INTEREST | NIB penalty | NOT deductible | Penalties are not a business expense |
-| NIB BENEFIT, NIB SICKNESS, NIB MATERNITY | NIB benefit received | Exclude from income analysis | These are social benefit receipts, not business income |
-
-### 3.2 Business Licence Transactions
-
-**Business Licence Transactions**
-
-| Pattern | Classification | Treatment | Notes |
-| --- | --- | --- | --- |
-| BUSINESS LICENCE, BL RENEWAL, INLAND REVENUE BL | Business Licence fee | Deductible operating expense | Annual compliance cost |
-| BUSINESS LICENCE PENALTY, LATE BL FEE | Business Licence penalty | NOT deductible |  |
-| DIR PAYMENT, INLAND REVENUE PAYMENT | Regulatory payment | Verify type: BL tax, VAT, or RPT | Classify by supporting reference |
-
-### 3.3 VAT-Related Transactions (VAT-Registered Clients)
-
-**VAT-Related Transactions**
-
-| Pattern | Classification | Treatment | Notes |
-| --- | --- | --- | --- |
-| VAT PAYMENT, DIR VAT, VAT RETURN PAYMENT | VAT liability payment | EXCLUDE | VAT liability payment, not an expense |
-| VAT REFUND, DIR VAT REFUND | VAT refund received | EXCLUDE | VAT asset recovery, not income |
-| [Invoice line] + 10% VAT | Sales invoice | Extract net (excl. VAT) as revenue | VAT collected is not income |
-| [Invoice line] + 5% VAT | Reduced-rate sale | Extract net (excl. VAT) as revenue | Essentials category at 5% |
-
-### 3.4 Income Patterns (Credits)
-
-**Income Patterns (Credits)**
-
-| Pattern | Classification | Treatment | Notes |
-| --- | --- | --- | --- |
-| CLIENT PAYMENT, INVOICE PAYMENT, TRANSFER IN [client name] | Business revenue | Self-employment income | If VAT-registered, extract net |
-| ZELLE, PAYPAL TRANSFER, STRIPE PAYOUT, WIRE TRANSFER | Business revenue | Self-employment income | Confirm invoices match |
-| SALARY, PAYROLL [employer name], WAGES | Employment income | Not self-employment | Covered by employer NIB; no income tax |
-| RENTAL INCOME, RENT RECEIVED | Rental income | No income tax; RPT applies to the property | Report separately for Business Licence if above threshold |
-| BANK INTEREST, INTEREST EARNED | Investment income | No income tax |  |
-| GOVERNMENT GRANT, BAHAMAS INVEST GRANT | Check nature | Capital grants: exclude; revenue grants: include in Business Licence turnover |  |
-| NIB BENEFIT, MATERNITY BENEFIT, RETIREMENT PENSION | Benefit payment | Exclude from business analysis | Social benefit, not taxable income |
-
-### 3.5 Business Operating Expense Patterns (Debits) -- Deductible for Business Licence Purposes
-
-**Business Operating Expense Patterns (Debits)**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| OFFICE RENT, COMMERCIAL RENT [address] | Office rent | Deductible | Dedicated business premises |
-| ACCOUNTANT FEES, CPA FEES, BOOKKEEPING | Professional fees | Deductible |  |
-| ATTORNEY, LAWYER, LEGAL FEES (business) | Legal fees | Deductible | Must be business-related |
-| OFFICE SUPPLIES, STATIONERY, PAPER, PRINTER INK | Office supplies | Deductible |  |
-| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing | Deductible |  |
-| BUSINESS INSURANCE, PROFESSIONAL LIABILITY | Insurance | Deductible | Business-related only |
-| DOMAIN, HOSTING, AWS, DIGITALOCEAN, CLOUDFLARE | IT infrastructure | Deductible (operating) | Recurring subscription = expense |
-| GOOGLE WORKSPACE, MICROSOFT 365, QUICKBOOKS | Software subscription | Deductible | Recurring = expense |
-| BANK FEE, SERVICE CHARGE, WIRE FEE (business account) | Bank charges | Deductible | Business account only |
-| TRAINING, CPD, COURSE, SEMINAR | Training | Deductible | Must relate to current business |
-
-### 3.6 Expense Patterns -- NOT Deductible
-
-**Expense Patterns -- NOT Deductible**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, DINING, CLIENT MEAL, ENTERTAINMENT | Entertainment | NOT deductible | Personal/entertainment |
-| PERSONAL WITHDRAWAL, DRAWINGS, ATM (personal) | Drawings | NOT deductible | Owner drawings |
-| GROCERIES, SUPERMARKET, PERSONAL SHOPPING | Personal | NOT deductible |  |
-| FINE, COURT FINE, TRAFFIC VIOLATION | Fines | NOT deductible | Public policy |
-| INCOME TAX PAYMENT | N/A | There is no income tax | If seen, verify it is not a VAT, BL, or RPT payment |
-
-### 3.7 Exclusions (Neither Income nor Expense)
-
-**Exclusions (Neither Income nor Expense)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| INTERNAL TRANSFER, OWN ACCOUNT | EXCLUDE | Between own accounts |
-| LOAN REPAYMENT, MORTGAGE PRINCIPAL | EXCLUDE | Loan principal is not an expense |
-| VAT PAYMENT, DIR VAT | EXCLUDE | VAT liability settlement |
-| PROVISIONAL TAX, ADVANCE TAX | N/A -- no income tax in Bahamas | If seen, classify carefully; may be VAT instalment |
-| STAMP DUTY PAYMENT | EXCLUDE from operating expenses | One-time property transaction cost, not recurring |
-
-### 3.8 Bahamian Banks -- Statement Format Reference
-
-**Bahamian Banks -- Statement Format Reference**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Commonwealth Bank | TRANSFER, DD, PAYMENT, DEBIT CARD | Most common retail bank; PDF and online export |
-| Bank of The Bahamas | TRANSFER, DIRECT DEBIT, DRAFT | Government-linked; PDF statements |
-| Scotiabank Bahamas | PAYMENT, TFR, DD, CARD | Canadian bank; CSV available |
-| FirstCaribbean (CIBC) | TRANSFER, PAYMENT, CHARGE | PDF; limited CSV |
-| Fidelity Bank Bahamas | TRANSFER, WIRE, DEBIT | Business accounts common |
-| Wise / Revolut Business | TRANSFER, CONVERSION, CARD PAYMENT | Clean CSV; multi-currency -- use BSD or USD amounts (1:1 peg) |
-
-### Example 1 -- Employed Individual, Annual Salary BSD 45,000
-
-**Scenario:** Maria is employed full-time at a Nassau hotel. Annual salary BSD 45,000.
-
-**Step 1 -- Personal income tax:** BSD 0. No personal income tax exists in the Bahamas.
-
-**Step 2 -- NIB contributions:**
-- Weekly salary: 45,000 ÷ 52 = BSD 865.38 -- ABOVE the weekly ceiling of BSD 810
-- Insurable wage = ceiling: BSD 810/week
-- Employee NIB: 4.65% × BSD 810 = BSD 37.67/week × 52 = **BSD 1,958/year**
-- Employer NIB: 6.65% × BSD 810 = BSD 53.87/week × 52 = **BSD 2,801/year**
-- Take-home: BSD 45,000 − BSD 1,958 = **BSD 43,042/year** (no income tax deducted)
-
-**Step 3 -- No other obligations:** No Business Licence (employed). No VAT (not in business). No income tax return to file.
-
-**Summary:**
-```
-Annual salary:            BSD 45,000
-Less: Employee NIB:       BSD (1,958)
-Net take-home:            BSD 43,042
-Income tax:               BSD 0
+| Personal income tax | None. There is no income tax law, no return and no tax on salary, fees, rent, dividends, interest or gains |
+| Tax year | Calendar 2026 |
+| What individuals pay | NIB contributions; business licence tax if in business; VAT if registered; real property tax if owning property; VAT on property conveyances |
+| Authorities | National Insurance Board (NIB); Department of Inland Revenue (DIR) for business licence, VAT and real property tax |
+| Currency | BSD, at par with USD; treat amounts as equal, no conversion |
+
+## Who this applies to
+
+Employees, self-employed persons and sole traders living or working in The Bahamas, and individuals owning or buying Bahamian property. Companies go to `bs-corporate-income-tax`; employer payroll detail to `bs-payroll-social`; VAT returns to `bahamas-vat`; registering a business to `bs-company-formation`.
+
+The basic answer to "do I pay income tax in the Bahamas" is no. No Bahamian law imposes an income tax on individuals, whether resident or not, so there is no income tax return to file. Do not invent one.
+
+## Rates, bands and thresholds
+
+| Item | 2026 figure | Conditions | Source |
+|---|---|---|---|
+| Personal income tax | None | No income tax Act exists in the Bahamian statute list | Bahamas legislation, Acts by year and index: https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html |
+| NIB employee rate | 4.65% of insurable wages (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 3.9% plus half of the 1.5 point increase from 1 July 2024 | National Insurance (Contributions) (Amendment) Regulations 2024, regs 4 and 9: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| NIB employer rate | 6.65% of insurable wages (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 5.9% plus half of the 1.5 point increase | same |
+| NIB combined, employed person | 11.30% (computed from the Fifth Schedule rates and the 1.5 point increase) | 9.8% plus 1.5 points | same |
+| NIB self-employed rate | 10.30% of insurable income (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 8.8% plus 1.5 points (reg. 30(1A)), self-employed under 65 not receiving retirement benefit | same |
+| NIB voluntarily insured | 6.50% (computed from the Fifth Schedule rates and the 1.5 point increase) | 5.0% plus 1.5 points (reg. 35(1A)) | same |
+| NIB, employed person 65 or over in receipt of retirement benefit, or earning under 50% of the ceiling while receiving it | Employer 2.0% only | Fifth Schedule rows | same |
+| NIB insurable wage ceiling | BSD 810 a week | Effective July 2024 | NIB, contributions: https://www.nib-bahamas.com/contributions |
+| NIB payment deadline | By the 15th of the following month | | same |
+| Business licence tax, turnover not over BSD 100,000 | Exempt | s. 38(1)(i); not for a family office, financial services entity, IBC or proprietary trading business (s. 38(2)) | Business Licence (Amendment) Act 2024, s. 8: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf |
+| Business licence tax, turnover over BSD 100,000 to 500,000 | 0.5% of turnover | General businesses, Second Schedule Part I para (1)(a) | same |
+| Business licence tax, turnover over BSD 500,000 to 5 million | 0.75% of turnover | Para (1)(b) | same |
+| Business licence tax, turnover over BSD 5 million | 1.25% of turnover | Para (1)(c) | same |
+| Business licence tax, turnover over BSD 175 million | 1.5% of turnover | New para (1)(d) from 1 July 2026 | Business Licence (Amendment) Act 2026, s. 8: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0022A/2026-0022A.pdf |
+| Farming, fishing, food processing | 0% to BSD 100,000; 0.5% over 100,000 to 500,000; 0.75% above | Not salt exporters | Business Licence (Amendment) Act 2024, s. 9: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf |
+| Accountant's report with renewal | Turnover BSD 250K or more: independent accountant's report; BSD 250K to 4.99M: review report by a BICA member; BSD 5 million or more: audited statements | DIR renewal facts | DIR, renewing a business licence: https://inlandrevenue.finance.gov.bs/business-licence/renewing-business-licence/ |
+| VAT registration | Taxable activity over BSD 100,000 | Past or next 12 months; see `bahamas-vat` | DIR VAT FAQs: https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ |
+| Real property tax, owner-occupied | First BSD 300,000 exempt; next BSD 200,000 at 0.625%; balance at 1% | Owner lives there and uses it only as a dwelling | DIR, RPT FAQs: https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ |
+| Real property tax, owner-occupied cap | one hundred and fifty thousand dollars a year | s. 3(2) proviso as replaced | Real Property Tax (Amendment) Act 2026, s. 3: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf |
+| Real property tax, foreign owner-occupied | five-eighths of one per centum on the part up to one million dollars; one per centum on the part above; cap two hundred thousand dollars | New s. 3(2)(aa), Act in force 1 July 2026 | same |
+| Real property tax, residential of 4 units or fewer, not owner-occupied | BSD 300 flat up to BSD 75,000; 0.625% above | DIR FAQ | DIR, RPT FAQs: https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ |
+| Real property tax, commercial or foreign-owned rental | 0.75% on the first BSD 500,000; 1% on the next BSD 1.5 million; 1.5% on the balance | DIR FAQ | same |
+| Real property tax, due date and discount | Due 31 March; 10% discount if paid in full by 31 March | | same |
+| Real property tax, late | 5% surcharge on 1 January if unpaid at 31 December; 5% interest on tax unpaid at the end of each tax year | | same |
+| Pensioner discount | 50% of the balance after the BSD 300,000 exemption, on home value not over BSD 1 million | Bahamian, 65 or over, NIB senior citizen card | same |
+| VAT on property conveyances | Third Schedule rates (2.5% to 10%) | Replaces the stamp duty bands in the previous version; see `bahamas-vat` | VAT Act reprint, Third Schedule: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf |
+
+## The base
+
+### NIB
+
+1. Find the weekly insurable wage or income: actual weekly earnings, capped at the NIB ceiling of BSD 810 a week (BSD 42,120 a year over 52 weeks).
+2. Employed: employee share 4.65%, employer share 6.65%; the employer deducts the employee share and pays both.
+3. Self-employed: 10.30% of insurable income, paid by the person.
+4. Voluntary: 6.50%.
+5. Earnings above the ceiling attract no NIB. NIB is a social insurance contribution, not income tax.
+
+Ten NIB benefits are funded by contributions (sickness, maternity, funeral, retirement, invalidity, survivors, unemployment, industrial injury, disablement, death). A contribution paid late but within 12 months after the end of the year it was due counts as paid on time for retirement and invalidity benefit (reg. 16 as replaced in 2024).
+
+### Business licence tax
+
+Turnover is total revenue from business activities, in money and money's worth, without deductions (DIR renewal page). The tax is on turnover, not profit, so home office and vehicle allocations do not reduce it; they matter only for VAT input recovery. Use the band rate for the business's turnover. Each year:
+
+- **Estimated tax** for the year = rate × prior year's turnover (s. 35(7)).
+- **Unpaid tax** for the prior year = actual tax less estimated tax paid; an overpayment is a credit for the next year (s. 35(3)).
+
+### Real property tax
+
+Owner-occupied property: exempt to BSD 300,000, 0.625% on the next BSD 200,000, 1% on the rest, capped at BSD 150,000 a year. Partly owner-occupied: the exemption is in proportion to the space occupied, not over BSD 300,000 (DIR FAQ). RPT carries no VAT.
+
+### Bank-statement patterns (kept from the previous version)
+
+| Pattern | Classification | Treatment |
+|---|---|---|
+| NIB CONTRIBUTION, NIB PAYMENT, NATIONAL INSURANCE | NIB contribution | Self-employed: business cost; employee share: social insurance |
+| NIB C10 | Employer NIB payment | Employer liability |
+| NIB SURCHARGE, NIB PENALTY, NIB INTEREST | NIB penalty | Not a business expense |
+| NIB BENEFIT, SICKNESS, MATERNITY, RETIREMENT PENSION | Benefit received | Exclude from business income |
+| BUSINESS LICENCE, BL RENEWAL | Business licence tax | Operating cost |
+| BL PENALTY, LATE BL FEE | Penalty | Not deductible |
+| DIR PAYMENT, INLAND REVENUE | Tax payment | Check reference: BL, VAT or RPT |
+| VAT PAYMENT, VAT REFUND | VAT settlement | Exclude from income and expense |
+| [Invoice] + 10% VAT, + 5% VAT | Sale | Revenue is the net amount |
+| CLIENT PAYMENT, ZELLE, PAYPAL, STRIPE, WIRE IN | Business revenue | Confirm against invoices; counts as turnover |
+| SALARY, PAYROLL, WAGES | Employment income | No income tax; NIB by employer |
+| RENT RECEIVED | Rental income | No income tax; RPT on the property; counts in business turnover if the renting is a business |
+| BANK INTEREST | Investment income | No income tax |
+| GOVERNMENT GRANT | Check nature | Revenue grants count as turnover; capital grants do not |
+| OFFICE RENT, PROFESSIONAL FEES, LEGAL, SUPPLIES, MARKETING, INSURANCE, HOSTING, SOFTWARE, BANK FEES, TRAINING | Business costs | Relevant to profit and VAT input, not to BL tax |
+| RESTAURANT, ENTERTAINMENT, DRAWINGS, GROCERIES, FINES | Personal or penalty | Not business costs |
+| INTERNAL TRANSFER, LOAN PRINCIPAL | Exclude | Not income or expense |
+| "INCOME TAX", "PROVISIONAL TAX" | No such tax | Find out what it really is (VAT, BL or RPT) |
+| STAMP DUTY, VAT ON CONVEYANCE | Property transaction cost | One-off, not operating |
+
+### Banks and terms
+
+| Bank | Statement format |
+|---|---|
+| Commonwealth Bank | PDF, online export |
+| Bank of The Bahamas | PDF |
+| Scotiabank Bahamas | PDF, CSV |
+| CIBC FirstCaribbean | PDF |
+| Fidelity Bank Bahamas | PDF, CSV |
+| Wise, Revolut Business | CSV, multi-currency |
+
+| Term | Meaning |
+|---|---|
+| C10 | NIB monthly employer contribution form |
+| R1 | NIB self-employed or voluntary registration form |
+| DIR | Department of Inland Revenue |
+| BL | Business licence |
+| RPT | Real property tax |
+| BICA | Bahamas Institute of Chartered Accountants |
+| BLAE, BLAA | Business Licence Annual Estimate and Annual Actual returns |
+
+## Deadlines and filing
+
+| Obligation | When | Source of the rule |
+|---|---|---|
+| Business licence renewal application | On or before 31 January of the year after trading | Business Licence Act 2023, s. 26(3)(a) |
+| Prior year turnover return and unpaid tax | On or before 31 March | s. 26(3)(b) |
+| Estimated tax for the current year | By 31 March in full, or four equal instalments on 31 March, 30 June, 30 September and 31 December if notified at renewal | ss. 26(3)(c), 35(4) to (6) |
+| Cessation notice | Within 14 days, no later than 31 December | DIR penalties page |
+| Real property tax | 31 March | DIR RPT FAQ |
+| VAT returns | 21 days after each period | `bahamas-vat` |
+| NIB contributions | By the 15th of the following month | NIB contributions page |
+
+## Penalties and interest
+
+| Item | Penalty | Source of the rule |
+|---|---|---|
+| Late licence renewal or return | BSD 100 | Business Licence Act 2023, Fourth Schedule (a) |
+| Late notice of cessation | BSD 100 | Fourth Schedule (b) |
+| Late payment of business licence tax | 10% of the tax liability | Fourth Schedule (c) |
+| Business licence interest | 5% a year on payments 30 days or more late | Fourth Schedule (d) |
+| BL instalments after 31 March | 5% a year interest | s. 35(4) as amended by the 2025 No. 2 Act |
+| RPT | 5% surcharge on 1 January plus 5% interest | DIR RPT FAQ |
+| VAT | Greater of BSD 100 or 2% (late return); 10% (late payment) | `bahamas-vat` |
+
+## Cross-border points
+
+- Non-residents and expatriates pay no Bahamian income tax either. Work permits, benefits in kind and any social security agreement can still matter: refer complex expatriate cases.
+- A foreign person needs Bahamas Investment Authority approval to carry on business (DIR annual licence page) and pays 10% VAT on buying real property.
+- The home country may tax a Bahamian resident's income; the absence of Bahamian tax gives no foreign tax credit.
+
+### Refusal catalogue (kept)
+
+- R-BS-1, asked for a personal income tax computation: "The Bahamas levies no personal income tax. There is no return to file and no income tax due. NIB, business licence tax and VAT may apply."
+- R-BS-2, capital gains: "There is no capital gains tax. A property sale bears VAT on the conveyance; see `bahamas-vat`."
+- R-BS-3, inheritance or gifts: "There is no inheritance, estate or gift tax. Probate and estate planning go to a Bahamian attorney." A gift of property between parents, children, grandparents and spouses can be zero rated for VAT on approval (DIR First home FAQs).
+- R-BS-4, company tax: use `bs-corporate-income-tax`.
+- R-BS-5, complex expatriate cases: refer to a Bahamian practitioner.
+- R-BS-6, NIB arrears or enforcement: do not advise; refer to a Bahamian accountant.
+- R-BS-7, VAT refund claims: see `bahamas-vat`; refer if under audit.
+
+### Prohibitions (kept)
+
+- Never compute or imply a personal income tax, or prepare an income tax return, for a Bahamian individual.
+- Never treat NIB as income tax; they are separate systems with separate authorities.
+- Never skip NIB and business licence registration for a new self-employed person.
+- Never allow entertainment as a business cost without a reviewer.
+- Never omit the Provisional VAT Invoice step on a property transaction.
+- Never present these figures as final without a reviewer; label them estimated.
+- Never apply a first-home VAT relief without confirming it is a dwelling, the buyer is a Bahamian first-time buyer and the value is within the limit.
+
+## Two worked examples that recompute
+
+### Self-employed web developer, BSD 30,000
+
+James earns BSD 30,000 in 2026 (BSD 576.92 a week). Income tax: none. NIB at 10.30% on BSD 30,000 = BSD 3,090 (his weekly income is under the BSD 810 ceiling). Business licence tax: turnover is not over BSD 100,000, so exempt under s. 38(1)(i); he still renews the licence by 31 January. VAT: below BSD 100,000, no registration required.
+
+```oa-check
+name: BS self-employed 2026, income 30000
+inputs:
+  income: 30000
+  nib_rate: 0.103
+  bl_rate_exempt_band: 0
+steps:
+  - income_tax: 0
+  - nib: income * nib_rate
+  - nib_monthly: round(nib / 12, 2)
+  - bl_tax: income * bl_rate_exempt_band
+  - total_cost: income_tax + nib + bl_tax
+expected:
+  nib: 3090
+  nib_monthly: 257.50
+  bl_tax: 0
+  total_cost: 3090
 ```
 
-### Example 2 -- Self-Employed Freelancer, Annual Revenue BSD 30,000
+The previous version charged him BSD 100 of business licence tax: since 1 July 2024 businesses up to BSD 100,000 are exempt.
 
-**Scenario:** James is a self-employed web developer. Annual revenue BSD 30,000. Below VAT threshold.
+### Decision: pay the business licence tax in full or in instalments
 
-**Step 1 -- Personal income tax:** BSD 0.
+Sandra's consultancy had turnover of BSD 180,000 in 2025, so her 2026 estimated tax is 0.5% × 180,000 = BSD 900. Her actual 2026 turnover is BSD 240,000, an actual tax of BSD 1,200, so BSD 300 of unpaid 2026 tax is due by 31 March 2027.
 
-**Step 2 -- NIB contributions (self-employed rate 10.30%):**
-- Weekly earnings: 30,000 ÷ 52 = BSD 576.92/week -- BELOW the ceiling of BSD 810
-- Insurable wage = actual earnings: BSD 576.92/week
-- Annual NIB: 10.30% × BSD 30,000 = **BSD 3,090/year**
-- Monthly NIB payment (due 15th of following month): 3,090 ÷ 12 = **BSD 257.50/month**
+- **In full:** BSD 900 by 31 March 2026.
+- **Instalments:** notify DIR at renewal; BSD 225 on each of 31 March, 30 June, 30 September and 31 December 2026, with 5% a year interest on amounts paid after 31 March. The cash spreads over the year; the total tax is the same.
 
-**Step 3 -- Business Licence:**
-- Turnover ≤ BSD 50,000: flat fee **BSD 100**
-- Renewal filing by 31 January; payment by 31 March
-
-**Step 4 -- VAT:** BSD 30,000 < BSD 100,000 threshold. **No VAT registration required** (voluntary registration available).
-
-**Step 5 -- No RPT** (renting; does not own property).
-
-**Summary:**
-```
-Annual revenue:           BSD 30,000
-NIB (10.30%):             BSD (3,090)
-Business Licence fee:     BSD (100)
-Income tax:               BSD 0
-Approximate net:          BSD 26,810
+```oa-check
+name: BS business licence estimate vs actual, 2026
+inputs:
+  turnover_2025: 180000
+  turnover_2026: 240000
+  rate: 0.005
+steps:
+  - estimated_2026: turnover_2025 * rate
+  - instalment: estimated_2026 / 4
+  - actual_2026: turnover_2026 * rate
+  - unpaid_due_2027: actual_2026 - estimated_2026
+expected:
+  estimated_2026: 900
+  instalment: 225
+  actual_2026: 1200
+  unpaid_due_2027: 300
 ```
 
-### Example 3 -- Self-Employed at NIB Ceiling, BSD 60,000 Revenue
+Both turnovers sit in the BSD 100,000 to 500,000 band. Turnover is under BSD 250,000, so no accountant's report is needed with the renewal; from BSD 250,000 one is.
 
-**Scenario:** Sandra is a self-employed accountant, revenue BSD 60,000/year.
-
-**Step 1 -- Personal income tax:** BSD 0.
-
-**Step 2 -- NIB contributions:**
-- Weekly earnings: 60,000 ÷ 52 = BSD 1,153.85/week -- ABOVE ceiling of BSD 810
-- Insurable wage = ceiling: BSD 810/week
-- Annual NIB: 10.30% × BSD 810 × 52 = 10.30% × BSD 42,120 = **BSD 4,338/year**
-- Earnings above ceiling (BSD 1,153.85 − BSD 810 = BSD 343.85/week) attract NO additional NIB
-
-**Step 3 -- Business Licence:**
-- Turnover BSD 60,000 (in band BSD 50,001 -- BSD 500,000): 0.50% × BSD 60,000 = **BSD 300**
-
-**Step 4 -- VAT:** BSD 60,000 < BSD 100,000 threshold. Not required; may register voluntarily.
-
-**Summary:**
-```
-Annual revenue:           BSD 60,000
-NIB (at ceiling):         BSD (4,338)
-Business Licence fee:     BSD (300)
-Income tax:               BSD 0
-Approximate net:          BSD 55,362
-```
-
-### Example 4 -- VAT-Registered Consultant, BSD 180,000 Revenue
-
-**Scenario:** David is a self-employed management consultant, revenue BSD 180,000/year including VAT charged at 10%. VAT registered.
-
-**Step 1 -- Revenue (net of VAT):**
-- BSD 180,000 includes 10% VAT. Net revenue = BSD 180,000 ÷ 1.10 = **BSD 163,636**
-- VAT collected = BSD 163,636 × 10% = BSD 16,364 (liability to DIR, not income)
-
-**Step 2 -- Personal income tax:** BSD 0.
-
-**Step 3 -- NIB:**
-- Weekly net earnings: 163,636 ÷ 52 = BSD 3,146 -- ABOVE ceiling
-- NIB = 10.30% × BSD 810 × 52 = **BSD 4,338/year**
-
-**Step 4 -- Business Licence:**
-- Turnover BSD 163,636 (band BSD 50,001 -- BSD 500,000): 0.50% × BSD 163,636 = **BSD 818**
-- Certified turnover statement by accountant required (>BSD 100,000)
-
-**Step 5 -- VAT obligations:**
-- Quarterly VAT return (turnover ≤ BSD 5M)
-- Due within 21 days of end of each quarter
-- Pay net VAT (output VAT collected minus input VAT on business purchases)
-
-**Summary:**
-```
-Gross revenue invoiced:   BSD 180,000
-Less: VAT collected:      BSD (16,364)
-Net business revenue:     BSD 163,636
-NIB (at ceiling):         BSD (4,338)
-Business Licence fee:     BSD (818)
-Income tax:               BSD 0
-```
-
-### Example 5 -- Property Purchase, Stamp Duty Calculation
-
-**Scenario:** Nicole purchases a residential property in Nassau for BSD 250,000.
-
-**Step 1 -- Personal income tax on transaction:** BSD 0.
-
-**Step 2 -- Stamp duty (graduated, shared 50/50 buyer/seller by default):**
-- First BSD 20,000 at 4%: BSD 20,000 × 4% = BSD 800
-- Next BSD 30,000 (BSD 20,001 -- BSD 50,000) at 6%: BSD 30,000 × 6% = BSD 1,800
-- Next BSD 50,000 (BSD 50,001 -- BSD 100,000) at 8%: BSD 50,000 × 8% = BSD 4,000
-- Remaining BSD 150,000 (above BSD 100,000) at 10%: BSD 150,000 × 10% = BSD 15,000
-- **Total stamp duty: BSD 21,600**
-- Nicole's share (buyer, 50%): **BSD 10,800**
-- Seller's share (50%): **BSD 10,800**
-
-*Arithmetic check: 800 + 1,800 + 4,000 + 15,000 = BSD 21,600 ✓*
-
-**Step 3 -- First-time buyer exemption:** If Nicole is a first-time buyer purchasing a dwelling up to BSD 500,000, she is **exempt** from stamp duty. (Source: Churchill & Jones Realty stamp duty guide)
-
-**Step 4 -- VAT provisional invoice (from July 2025):** Before executing conveyance, parties must obtain a provisional VAT invoice from DIR. (Source: Higgs & Johnson 2025 Tax Legislative Updates)
-
-**Step 5 -- Payment deadline:** Stamp duty due **within 6 months** of transaction closing.
-
-### Example 6 -- Employer Payroll NIB (3 Employees)
-
-**Scenario:** Small business with 3 employees, all earning BSD 600/week.
-
-**NIB per employee per week:**
-- Employee share: 4.65% × BSD 600 = BSD 27.90
-- Employer share: 6.65% × BSD 600 = BSD 39.90
-- Combined per employee: BSD 67.80/week
-
-**NIB for all 3 employees per month (≈4.333 weeks):**
-- Total employee NIB: BSD 27.90 × 3 × 4.333 = BSD 362.95/month
-- Total employer NIB: BSD 39.90 × 3 × 4.333 = BSD 518.74/month
-- **Total monthly NIB (C10 form): BSD 881.70**
-- Due: **15th of the following month** via C10 form
-
-*BSD 600/week is below the BSD 810 ceiling, so full earnings are insurable. Arithmetic: 27.90 + 39.90 = BSD 67.80/employee/week. 67.80 × 3 = 203.40/week × 4.333 = BSD 881.51 ≈ BSD 882/month ✓*
-
-### 5.1 The Fundamental Rule -- No Personal Income Tax
-
-- **No personal income tax legislation** — There is no personal income tax legislation in the Bahamas. No individual is required to: File an annual income tax return with any authority; Declare employment or self-employment income to a tax collector; Pay tax on salary, professional fees, rental income, dividends, interest, or capital gains. The primary fiscal obligation for individuals is NIB contributions, which are social insurance premiums, not income tax.
-
-### 5.2 NIB Contribution Calculation Rules
-
-- **Employed individuals calculation steps** — 1. Determine weekly insurable wage: the lower of (a) actual weekly gross earnings or (b) the weekly ceiling (currently BSD 810). 2. Employee share: insurable wage × 4.65%. 3. Employer share: insurable wage × 6.65%. 4. Employer remits both shares monthly via C10 form by the 15th of the following month.
-- **Self-employed individuals calculation steps** — 1. Determine weekly insurable earnings: the lower of (a) actual weekly net self-employment earnings or (b) the weekly ceiling (BSD 810). 2. Self-employed rate: insurable earnings × 10.30% (covers both employee and employer shares). 3. Register using Form R1 within 10 working days of commencing self-employment. 4. Pay monthly by the 15th of the following month.  _(nib-bahamas.com/Registration)_
-- **Earnings above the weekly ceiling** — No NIB is payable on earnings above BSD 810/week. The ceiling applies per week, not per year.
-
-### 5.3 NIB Benefits Funded by Contributions
-
-(Source: nib-bahamas.com/about-nib/benefits-and-assistance/)
-
-Ten cash benefits are funded: Sickness, Maternity, Funeral, Retirement (Pensions), Invalidity, Survivorship, Unemployment, Industrial Injury, Disablement, and Death.
-
-**NIB Benefits (2025)**  _(nib-bahamas.com/about-nib/benefits-and-assistance/)_
-
-| Benefit (2025) | Amount |
-| --- | --- |
-| Minimum retirement pension | ~BSD 364/month |
-| Maternity grant (from Jul 2025) | BSD 570 |
-| Funeral benefit | BSD 2,060 (rising to BSD 2,100 from Jul 2026) |
-
-- **Qualification for benefits** — To qualify for most benefits, the claimant must have accumulated sufficient contribution weeks. Contributions must be current (no arrears).
-
-### 5.4 VAT: When It Applies to Individuals
-
-- **VAT applicability** — VAT is relevant to individuals only if they are carrying on a business (self-employed, sole trader). Pure employees have no VAT obligation.
-- **VAT registration threshold** — BSD 100,000 in annual taxable supplies. Must register within 14 days of becoming liable.  _(inlandrevenue.finance.gov.bs/value-added-tax/faqs/)_
-- **Filing and payment** — General (turnover ≤ BSD 5M): quarterly return, due 21 days after end of quarter. Large taxpayer (turnover > BSD 5M): monthly return, due 14 days after end of month. E-commerce businesses, hotels, and vacation rental services: must register regardless of turnover.
-- **Record-keeping** — Maintain accounting records for at least 5 years.  _(Inland Revenue VAT FAQs)_
-
-### 5.5 Business Licence: Who Needs One
-
-- **Who needs a licence** — Every person carrying on business in the Bahamas must hold a Business Licence -- including self-employed individuals and sole traders.  _(Inland Revenue Business Licence)_
-- **Key deadlines** — New business: obtain licence before commencing operations. Annual renewal application: 31 January (for the current year). Licence tax payment: 31 March. Business cessation notification to DIR: within 14 days, no later than 31 December.
-- **Financial statement requirements by turnover threshold** — > BSD 100,000: certified turnover statement by qualified accountant. BSD 250,000 -- BSD 5,000,000: review engagement report. > BSD 5,000,000: audited financial statements.  _(Inland Revenue Business Licence rates)_
-
-### 5.6 Real Property Tax (RPT): Rules
-
-- **RPT applicability** — RPT applies to owners of real property. Rates depend on classification.  _(inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/)_
-
-**Owner-Occupied Residential**  _(inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/)_
-
-| Assessed value | Rate |
-| --- | --- |
-| First BSD 300,000 | Exempt |
-| BSD 300,001 -- BSD 500,000 | 0.625% |
-| Above BSD 500,000 | 1.0% |
-| Annual cap | BSD 150,000 |
-
-**Residential (4 units or fewer, not owner-occupied)**  _(inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/)_
-
-| Assessed value | Rate |
-| --- | --- |
-| Up to BSD 75,000 | BSD 300 flat |
-| Above BSD 75,000 | 0.625% |
-
-**Commercial / 5+ units / Foreign-Owned Rentals**  _(inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/)_
-
-| Assessed value | Rate |
-| --- | --- |
-| First BSD 500,000 | 0.75% |
-| BSD 500,001 -- BSD 2,000,000 | 1.0% |
-| Above BSD 2,000,000 | 1.5% |
-| Annual cap (from 2025 amendment) | BSD 150,000 |
-
-**Vacant Land -- Foreign-Owned Only**  _(inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/)_
-
-| Assessed value | Rate |
-| --- | --- |
-| First BSD 7,000 | BSD 100 flat |
-| Above BSD 7,000 | 2.0% |
-
-- **RPT deadlines and discounts** — Annual payment deadline: 31 March. Early payment discount: 10% if paid by 31 March. Pensioner discount (Bahamian citizen, 65+): 50% off balance. Annual surcharge if unpaid by 31 December: 5% surcharge, plus 5% interest on outstanding amounts. Property declaration to DIR: by 31 December each year.
-
-### 5.7 Stamp Duty on Real Estate Conveyances
-
-**Stamp Duty on Real Estate Conveyances**  _(Churchill & Jones Realty stamp duty guide; Higgs & Johnson 2025 Tax Legislative Updates)_
-
-| Consideration | Stamp duty rate |
-| --- | --- |
-| Up to BSD 20,000 | 4% |
-| BSD 20,001 -- BSD 50,000 | 6% |
-| BSD 50,001 -- BSD 100,000 | 8% |
-| Above BSD 100,000 | 10% |
-
-- **Split, exemption, and deadlines** — Normally split equally (50/50) between buyer and seller unless otherwise agreed. First-time buyer exemption: Exempt on a dwelling house or vacant land for a dwelling up to BSD 500,000. Stamp duty on mortgage instruments: approximately 1% of mortgage amount [RESEARCH GAP -- reviewer to confirm exact current rate]. Leases < 5 years: 2.5% of annual rent. Payment deadline: within 6 months of transaction closing. From 1 July 2025: Parties must obtain a provisional VAT invoice from DIR before executing conveyance instruments. Failure: 3% of consideration penalty (joint and several: transferor + agent).  _(Higgs & Johnson 2025 Tax Legislative Updates)_
-
-### 5.8 Non-Deductible Items
-
-**Non-Deductible Items**
-
-| Item | Reason |
-| --- | --- |
-| Entertainment, client meals | Personal/entertainment; not wholly for business |
-| Owner drawings | Not an expense |
-| NIB surcharges and penalties | Penalties are not operating costs |
-| Business Licence late penalties | Penalties |
-| Personal living expenses | Not business-related |
-| Court fines, traffic violations | Public policy |
-| Income tax payments | There is no income tax; if a payment is seen, verify its nature |
-
-### 6.1 Home Office Deduction (Business Licence Cost Basis)
-
-There is no income tax deduction system in the Bahamas, but Business Licence fees are based on turnover (not profit), so home-office cost allocation is relevant for understanding profitability rather than for reducing a declared tax base.
-
-For VAT-registered clients, the business-use proportion of home utilities may affect which input VAT is creditable.
-
-**Flag for reviewer:** Confirm whether client's business address is home or commercial, and confirm what proportion of home expenses are genuinely attributable to the business. The Bahamas has no statutory guidance on this proportion -- reviewer must apply judgment.
-
-**Conservative default:** 0% home office allocation until reviewer confirms.
-
-### 6.2 Vehicle Business Use
-
-Relevant for VAT input tax recovery (if VAT-registered) and for understanding true business costs.
-
-- Client must document approximate business vs personal mileage
-- No statutory mileage rate exists in the Bahamas [RESEARCH GAP -- reviewer to confirm any DIR guidance]
-
-**Conservative default:** 0% business use until confirmed.
-
-### 6.3 NIB Contribution Status Verification
-
-Before advising a client, confirm:
-- Are they registered with NIB? (nine-digit NIB number assigned on registration)
-- Are contributions current? (check with NIB directly)
-- Is the client voluntarily insured (if not employed or self-employed in the traditional sense)?
-
-Arrears with NIB accumulate rapidly (10% surcharge + 1.5%/month compound). If arrears are suspected, escalate immediately.
-
-### 6.4 VAT Input Tax Apportionment (Mixed-Use Businesses)
-
-If a VAT-registered business makes both taxable and exempt supplies, input VAT must be apportioned. Partial exemption calculation:
-
-- Standard method: proportion of taxable to total supplies (by value)
-- From July 2025: businesses with < 50% zero/reduced-rated supplies cannot claim VAT refunds (Source: Higgs & Johnson 2025)
-
-**Flag for reviewer:** Confirm supply mix and apportionment method for VAT-registered clients with exempt supplies.
-
-### 6.5 Real Property Tax Assessment Disputes
-
-The assessed value (used for RPT rate bands) is set by DIR and may differ from market value. A property owner may dispute the assessment.
-
-**Flag for reviewer:** If client believes assessed value is overstated, escalate to a Bahamian real property attorney or appraiser before filing.
-
-### 6.6 Business Licence Turnover Definition
-
-The turnover figure used for Business Licence purposes is gross revenue (not net profit, not value-added). For VAT-registered businesses, confirm whether turnover is inclusive or exclusive of VAT for Business Licence computation purposes. [RESEARCH GAP -- reviewer to confirm whether DIR uses gross or VAT-exclusive turnover for Business Licence rate band computation]
-
-## Section 7 -- Working Paper Template
+### Working paper (compact)
 
 ```
-BAHAMAS TAX COMPLIANCE -- WORKING PAPER
-Tax Year: 2025
-Client: ___________________________
-Employment Status: Employed / Self-Employed / Both
-NIB Number: ___________________________
-VAT Registration Number (if applicable): ___________________________
-Business Licence Number (if applicable): ___________________________
-
-A. PERSONAL INCOME TAX
-   A1. PIT due:    BSD 0 (no PIT in the Bahamas)
-   A2. PIT return to file:    NONE
-
-B. NIB CONTRIBUTIONS
-   B1. Employment type:    Employed / Self-Employed / Voluntary
-   B2. Annual gross earnings / net self-employment earnings:    BSD ___________
-   B3. Weekly earnings:    BSD ___________
-   B4. Weekly insurable wage (lesser of B3 and BSD 810 ceiling):    BSD ___________
-   B5. Rate: Employed-employee 4.65% / Self-employed 10.30%:    ___%
-   B6. Annual NIB contribution:    BSD ___________
-      (= B4 × B5 × 52 weeks)
-   B7. Monthly NIB payment (B6 ÷ 12):    BSD ___________
-   B8. Payment due date: 15th of each following month    [ ]
-   B9. Employer NIB (if applicable, 6.65% × B4 × 52):    BSD ___________
-
-C. BUSINESS LICENCE (Self-Employed / Sole Traders Only)
-   C1. Annual gross turnover:    BSD ___________
-   C2. Licence tax rate (from rate schedule):    ___%  or  BSD 100 flat
-   C3. Annual licence tax:    BSD ___________
-   C4. Renewal application filed by 31 January:    [ ]
-   C5. Licence tax paid by 31 March:    [ ]
-   C6. Financial statement requirement:
-       [ ] > BSD 100k: certified turnover statement
-       [ ] BSD 250k -- BSD 5M: review engagement report
-       [ ] > BSD 5M: audited financial statements
-
-D. VAT (VAT-Registered Clients Only)
-   D1. VAT registration number:    ___________
-   D2. Annual taxable supplies:    BSD ___________
-   D3. Filing frequency: Quarterly (≤ BSD 5M) / Monthly (> BSD 5M):    ___________
-   D4. Output VAT collected (period):    BSD ___________
-   D5. Input VAT creditable (period):    BSD ___________
-   D6. Net VAT due (D4 - D5):    BSD ___________
-   D7. Return and payment due (21 days / 14 days after period end):    ___________
-
-E. REAL PROPERTY TAX (Property Owners Only)
-   E1. Property classification:    Owner-Occupied / Non-Owner-Occupied / Commercial / Vacant
-   E2. Assessed value:    BSD ___________
-   E3. RPT computed per rate table:    BSD ___________
-   E4. Early payment discount (10% if paid by 31 March):    BSD ___________
-   E5. Net RPT payable:    BSD ___________
-   E6. Payment due: 31 March    [ ]
-   E7. Property declaration to DIR by 31 December:    [ ]
-
-F. STAMP DUTY (Real Estate Transactions Only)
-   F1. Consideration (property value):    BSD ___________
-   F2. Stamp duty (graduated per rate table):    BSD ___________
-   F3. Client's share (typically 50%):    BSD ___________
-   F4. First-time buyer exemption applies?    Yes / No
-   F5. Provisional VAT invoice obtained from DIR?    [ ] (required from Jul 2025)
-   F6. Payment due within 6 months of closing:    [ ]
-
-REVIEWER FLAGS:
-   [ ] NIB registration confirmed and contributions current?
-   [ ] Employment / self-employment status confirmed?
-   [ ] Business Licence obtained before operations commenced?
-   [ ] VAT registration status confirmed (above/below BSD 100k threshold)?
-   [ ] RPT assessed value verified?
-   [ ] Any stamp duty transaction in period -- provisional VAT invoice obtained?
-   [ ] No PIT return required -- confirmed with client?
-   [ ] All T2 items flagged for reviewer?
+BAHAMAS INDIVIDUAL, TAX YEAR 2026
+A. Income tax: none, no return
+B. NIB: status (employed / self-employed / voluntary); weekly earnings; insurable (capped at BSD 810 a week);
+   rate 4.65% (employee) + 6.65% (employer) / 10.30% / 6.50%; annual = insurable x rate x 52
+C. Business licence: prior year turnover; band rate; estimated tax; actual tax; unpaid or credit;
+   renewal by 31 Jan; return and payment by 31 Mar or instalments; accountant's report if turnover >= 250k
+D. VAT: registered? turnover vs BSD 100,000; period; output, input, net (see bahamas-vat)
+E. RPT: class; assessed value; tax per band; cap; 10% discount if paid by 31 Mar
+F. Property bought or sold: VAT on conveyance per Third Schedule; Provisional VAT Invoice obtained?
+Reviewer flags: NIB registered and current; licence held before trading; first-home claim checked
 ```
 
-### Bahamian Bank Statement Formats
+## Ask the client first
 
-**Bahamian Bank Statement Formats**
+1. Employee, self-employed, or both, and weekly or annual earnings.
+2. NIB number, and are contributions up to date?
+3. Business licence held? Prior year and current year turnover; is the business an IBC, family office or financial services entity (no BSD 100,000 exemption)?
+4. VAT registered? Taxable turnover for the last and next 12 months.
+5. Property owned: class (owner-occupied, rental, commercial, vacant), assessed value, Bahamian or foreign owner, age 65 or over?
+6. Any property bought or sold in 2026, and was a Provisional VAT Invoice obtained?
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Commonwealth Bank (Bahamas) | PDF, online export | Date, Description, Debit, Credit, Balance | Most common retail bank; description contains counterparty |
-| Bank of The Bahamas | PDF | Date, Particulars, Withdrawals, Deposits | Government-linked bank; less structured descriptions |
-| Scotiabank Bahamas | PDF, CSV | Value Date, Description, Amount, Balance | Canadian multinational; clean CSV export |
-| FirstCaribbean (CIBC) | PDF | Date, Description, Debit, Credit | Caribbean regional bank |
-| Fidelity Bank Bahamas | PDF, CSV | Date, Description, Amount, Balance | Common for business accounts |
-| Wise / Revolut Business | CSV | Date, Counterparty, Amount, Currency, Reference | Clean data; multi-currency; note BSD = USD (1:1 peg) |
+## Sources
 
-### Key Bahamian Banking and Tax Terms
+| Source | URL | Read on |
+|---|---|---|
+| NIB, contributions page (opened with Firecrawl, built by script): read for the BSD 810 weekly ceiling and the 15th day deadline | https://www.nib-bahamas.com/contributions | 2026-11-14 |
+| Bahamas legislation, Acts by year 2026: read for the 2026 amending Acts (VAT, Business Licence, Real Property Tax, Stamp, DMTT) and to confirm no income tax Act | https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html | 2026-11-14 |
+| National Insurance (Contributions) (Amendment) Regulations 2024, S.I. 37 of 2024: read for the Fifth Schedule rates and the 1.5 point increase from 1 July 2024 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf | 2026-11-14 |
+| Business Licence Act 2023: read for ss. 26, 35, 36 and the Fourth Schedule late fees | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2023/07/Business-Licence-Act-2023.pdf | 2026-11-14 |
+| Business Licence (Amendment) Act 2024: read for the BSD 100,000 exemption, its exclusions and the new Second Schedule rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf | 2026-11-14 |
+| Business Licence (Amendment) (No. 2) Act 2025: read for 5% interest on instalments after 31 March | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2025/08/BUSINESS-LICENCE-AMENDMENT-NO.-2-ACT-2025.pdf | 2026-11-14 |
+| Business Licence (Amendment) Act 2026: read for the 1.5% rate above BSD 175 million from 1 July 2026 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0022A/2026-0022A.pdf | 2026-11-14 |
+| DIR, renewing a business licence: read for the turnover definition and the accountant's report thresholds | https://inlandrevenue.finance.gov.bs/business-licence/renewing-business-licence/ | 2026-11-14 |
+| DIR, annual business licence: read for eligibility and the Bahamas Investment Authority approval for non-Bahamians | https://inlandrevenue.finance.gov.bs/business-licence/business-licenceannual-business-licence/ | 2026-11-14 |
+| DIR, business licence fines and penalties: read for the cessation notice deadline | https://inlandrevenue.finance.gov.bs/business-licence/fees-fines-and-penalties-bl/ | 2026-11-14 |
+| DIR, RPT FAQs: read for the property classes and rates, 31 March, 10% discount, surcharge, interest and pensioner discount | https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ | 2026-11-14 |
+| Real Property Tax (Amendment) Act 2026: read for the cap of one hundred and fifty thousand dollars and the foreign owner-occupied class | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf | 2026-11-14 |
+| VAT Act reprint 1 July 2024: read for the Third Schedule conveyance rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf | 2026-11-14 |
+| DIR VAT FAQs: read for the BSD 100,000 registration threshold | https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ | 2026-11-14 |
+| DIR First home FAQs: read for inter vivos gifts zero rated for VAT | https://inlandrevenue.finance.gov.bs/faqs-first-home/ | 2026-11-14 |
 
-**Key Bahamian Banking and Tax Terms**
-
-| Term | Meaning | Classification Hint |
-| --- | --- | --- |
-| C10 FORM | Monthly NIB employer contribution form | NIB payment -- business expense |
-| R1 FORM | NIB self-employed / voluntary registration form | Registration, not a payment |
-| DIR | Department of Inland Revenue | VAT / BL / RPT authority |
-| NIB | National Insurance Board | Social contributions authority |
-| BL | Business Licence | Annual licence fee |
-| RPT | Real Property Tax | Annual property tax |
-| STAMP DUTY | Conveyance tax | Property transaction tax |
-| BSD / B$ | Bahamian Dollar | Pegged 1:1 to USD; treat as USD equivalent |
-| WIRE / TT | Telegraphic Transfer / Wire | International payment -- check invoices |
-| CONCH, WALK-IN PAYMENT | In-person DIR/NIB payment | Often for BL or RPT |
-| NASSAU, FREEPORT | City references | No tax difference by island for NIB/BL/VAT |
-
-### USD vs BSD Amounts
-
-- **USD vs BSD equivalence** — The Bahamian Dollar is pegged 1:1 to the US Dollar and freely exchangeable. Bank statements may show USD amounts interchangeably. For all tax computations, treat BSD and USD as equivalent. Do not apply any currency conversion.
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Confirm immediately: "There is no personal income tax in the Bahamas. No income tax return is required."
-6. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- BAHAMAS TAX COMPLIANCE
-1. Are you an employee, self-employed, or both?
-2. What is your approximate annual gross income (or annual turnover if self-employed)?
-3. Are you registered with the National Insurance Board (NIB)?
-   If yes, what is your NIB number?
-   If self-employed, do you pay your monthly NIB contributions by the 15th?
-4. Do you hold a Business Licence?
-   If yes, when is your renewal due and have you filed/paid for 2025?
-5. Are you registered for VAT with the Department of Inland Revenue?
-   If yes, what is your annual turnover?
-6. Do you own any real property in the Bahamas?
-   If yes, what classification (owner-occupied / rental / commercial)?
-   Have you paid your 2025 Real Property Tax?
-7. Did you buy or sell any real estate in 2025?
-   If yes, has stamp duty been paid within 6 months of closing?
-8. Do you employ any staff?
-   If yes, are you filing C10 forms and paying NIB by the 15th monthly?
-```
-
-### Key Legislation and Authority References
-
-**Key Legislation and Authority References**
-
-| Topic | Reference / Authority |
-| --- | --- |
-| No personal income tax | PwC Worldwide Tax Summaries -- Bahamas Individual (reviewed 24 Feb 2026); no enabling legislation exists |
-| NIB contribution rates | National Insurance Board -- nibrateincrease.com; nib-bahamas.com; PwC Individual Other Taxes |
-| NIB insurable wage ceiling | nib-bahamas.com/2024-adjustments-to-the-insurable-wage-ceiling-pensions-and-grants/ |
-| NIB biennial review mechanism | nib-bahamas.com/biennial-adjustments-to-pensions-grants-and-the-wage-ceiling |
-| NIB registration (Form R1) | nib-bahamas.com/Registration |
-| NIB employer obligations (C10) | Workzoom Bahamas Payroll NIB Compliance Guide; NIB Contributions FAQ |
-| VAT rates and administration | Inland Revenue -- inlandrevenue.finance.gov.bs/value-added-tax/about-vat/ |
-| VAT reduced rate (5%, from Sep 2025) | PM Davis announcement -- bahamas.gov.bs; Higgs & Johnson 2025 |
-| VAT registration thresholds | inlandrevenue.finance.gov.bs/value-added-tax/faqs/ |
-| VAT penalties | inlandrevenue.finance.gov.bs/value-added-tax/fees-fines-and-penalties/ |
-| Business Licence rates | inlandrevenue.finance.gov.bs/tax-incentives/business-licence-new-rates-1/ |
-| Business Licence penalties | inlandrevenue.finance.gov.bs/business-licence/fees-fines-and-penalties-bl/ |
-| Real Property Tax rates | inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ |
-| RPT 2025 amendments (BSD 150k cap) | Real Property Tax Amendment Bill 2025 -- laws.bahamas.gov.bs |
-| Stamp duty rates | Churchill & Jones Realty -- churchilljonesrealty.com/stamp-duties-taxes/ |
-| Stamp duty + VAT invoice rule (Jul 2025) | Higgs & Johnson 2025 Tax Legislative Updates |
-| Customs duties (general) | PwC Corporate Other Taxes; Bahamas Customs -- bahamascustoms.gov.bs |
-| Minimum wage (BSD 6.50/hr from Jan 2023) | WageIndicator; Playroll Bahamas minimum wage guide |
-| Procedural obligations overview | Higgs & Johnson -- higgsjohnson.com/principal-procedural-obligations-of-a-taxpayer-in-the-bahamas/ |
-
-### Penalties Summary Table
-
-**Penalties Summary Table**
-
-| Obligation | Penalty |
-| --- | --- |
-| NIB late payment | 10% surcharge + 1.5% compound interest/month (Source: NIB Contributions FAQ) |
-| NIB failure to register (employer) | Fines up to BSD 5,000 + prosecution (Source: Workzoom; Higgs & Johnson) |
-| VAT late filing | BSD 100 fixed + 10% of unpaid tax (Source: Inland Revenue VAT Fines) |
-| VAT monthly interest | 1.5% per month on outstanding balance |
-| VAT late registration | Retroactive back-tax + penalties imposed by DIR |
-| Business Licence late application | BSD 100 (Source: inlandrevenue.finance.gov.bs/business-licence/fees-fines-and-penalties-bl/) |
-| Business Licence late tax payment | 10% of tax liability |
-| Business Licence interest (30+ days) | 5% per annum |
-| RPT annual surcharge (unpaid by 31 Dec) | 5% surcharge + 5% interest |
-| Stamp duty -- no provisional VAT invoice | 3% of consideration (joint/several: transferor + agent) (Source: Higgs & Johnson 2025) |
-| Operating without Business Licence | Prosecution |
-
-### Test Suite
-
-**Test 1 -- Employee, salary at ceiling.**
-Input: Employed, weekly salary BSD 950 (above BSD 810 ceiling).
-Expected: Insurable wage = BSD 810/week. Employee NIB = 4.65% × BSD 810 = BSD 37.67/week = BSD 1,958/year. No income tax. Take-home ≈ BSD 950 × 52 − BSD 1,958 = BSD 49,400 − BSD 1,958 = BSD 47,442/year.
-
-**Test 2 -- Employee, salary below ceiling.**
-Input: Employed, weekly salary BSD 500 (below BSD 810 ceiling).
-Expected: Insurable wage = BSD 500/week. Employee NIB = 4.65% × BSD 500 = BSD 23.25/week = BSD 1,209/year. Employer NIB = 6.65% × BSD 500 = BSD 33.25/week = BSD 1,729/year. No income tax.
-
-**Test 3 -- Self-employed, below ceiling.**
-Input: Self-employed, annual net earnings BSD 25,000.
-Expected: Weekly = BSD 480.77 (below BSD 810). Annual NIB = 10.30% × BSD 25,000 = BSD 2,575. Monthly payment = BSD 214.58. Business Licence: BSD 100 flat (below BSD 50k). No income tax.
-
-**Test 4 -- Self-employed, above ceiling.**
-Input: Self-employed, annual net earnings BSD 100,000.
-Expected: Weekly = BSD 1,923 (above BSD 810). Insurable = BSD 810/week. Annual NIB = 10.30% × BSD 810 × 52 = BSD 4,338. Business Licence: 0.50% × BSD 100,000 = BSD 500. No income tax.
-
-**Test 5 -- VAT registration threshold.**
-Input: Self-employed, annual taxable supplies BSD 95,000.
-Expected: Below BSD 100,000 threshold. VAT registration NOT required (but voluntary registration available). No VAT return to file.
-
-**Test 6 -- Stamp duty, first-time buyer.**
-Input: First-time buyer, purchasing a dwelling for BSD 400,000.
-Expected: Normally stamp duty would be: BSD 800 (first BSD 20k) + BSD 1,800 (next BSD 30k) + BSD 4,000 (next BSD 50k) + BSD 30,000 (remaining BSD 300k at 10%) = BSD 36,600 total. BUT first-time buyer exemption applies (dwelling ≤ BSD 500k). Stamp duty = BSD 0.
-
-**Test 7 -- Stamp duty, non-exempt buyer.**
-Input: Second-property buyer, purchasing for BSD 75,000.
-Expected: BSD 800 (4% × 20k) + BSD 1,800 (6% × 30k) + BSD 2,000 (8% × 25k) = BSD 4,600 total. Split equally: each party pays BSD 2,300.
-*Arithmetic check: 20,000 × 4% = 800; 30,000 × 6% = 1,800; 25,000 × 8% = 2,000. Sum = BSD 4,600. Each party BSD 2,300 ✓*
-
-**Test 8 -- No income tax return.**
-Input: Any individual (employed or self-employed) asks if they need to file an income tax return in the Bahamas.
-Expected: No. There is no personal income tax and no tax return to file. The only individual compliance obligations are NIB (social contributions), Business Licence (if in business), and VAT (if turnover ≥ BSD 100,000).
-
-**Test 9 -- Employer NIB (C10 Form).**
-Input: Employer with 2 employees, each earning BSD 700/week.
-Expected: BSD 700 < BSD 810 ceiling; full earnings are insurable. Per employee/week: employee 4.65% × 700 = BSD 32.55; employer 6.65% × 700 = BSD 46.55. Combined per employee: BSD 79.10/week. For 2 employees monthly ≈ BSD 79.10 × 2 × 4.333 = BSD 685.78 ≈ BSD 686/month. Due 15th of following month via C10 form.
-
-**Test 10 -- RPT, owner-occupied property.**
-Input: Owner-occupied residential property, assessed value BSD 450,000.
-Expected: First BSD 300,000 exempt. Next BSD 150,000 at 0.625%: BSD 150,000 × 0.625% = BSD 937.50. Total RPT = BSD 937.50. If paid by 31 March: 10% early-payment discount = BSD 93.75 saving; net BSD 843.75.
-
-## PROHIBITIONS
-
-- NEVER compute, estimate, or imply that the Bahamas levies personal income tax on individuals
-- NEVER generate an income tax return or income declaration form for a Bahamian individual
-- NEVER confuse NIB contributions (social insurance) with income tax -- they are separate systems with separate authorities
-- NEVER skip NIB compliance guidance -- it is the primary individual tax obligation and penalties accumulate rapidly
-- NEVER advise a self-employed client to start business without first addressing Business Licence and NIB registration
-- NEVER allow entertainment expenses as deductible without reviewer confirmation
-- NEVER omit the provisional VAT invoice warning for real estate transactions (required from July 2025)
-- NEVER present these computations as definitive without reviewer sign-off -- always label as estimated
-- NEVER confuse BSD (Bahamian Dollar) with a different currency -- it is pegged 1:1 to USD
-- NEVER apply a stamp duty first-time buyer exemption without confirming it is a dwelling (not commercial) and consideration ≤ BSD 500,000
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: any NIB ceiling change from July 2026 (old file: BSD 830 a week; the NIB page read shows BSD 810 effective July 2024) and the monthly ceiling (old: BSD 3,510); NIB late surcharge and interest (old: 10% plus 1.5% a month compound) and the 10 working day R1 registration rule; NIB benefit amounts (old: minimum pension BSD 364, maternity grant BSD 570, funeral BSD 2,060); whether the 2024 wording "on the proportion of turnover" makes the business licence bands marginal rather than a rate on the whole turnover (this skill applies the band rate to the whole turnover, as the 2023 Act did); which RPT class the 2026 Act's repealed s. 3(2)(e) was, and whether the DIR FAQ rates for vacant land of foreigners (BSD 100 to BSD 7,000, then 2%) still apply; the first RPT bill year for the 2026 changes; stamp duty on mortgages and leases under the Stamp Act 2024 (its schedule did not extract cleanly); the BSD 6.50 an hour minimum wage.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bs-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bs-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bs-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bs-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

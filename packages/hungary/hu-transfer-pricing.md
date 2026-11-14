@@ -1,14 +1,15 @@
 ---
 name: hu-transfer-pricing
 description: "Hungarian transfer pricing (szokásos piaci ár, transzferár) for tax year 2026: companies and Hungarian branches that deal with related parties. Covers who is related (more than 50% majority influence, common control, PEs, shared management), the arm's length adjustment both ways under Tao. tv. 18. §, the interquartile range and median rule, the new documentation decree 45/2025 (XII. 23.) NGM that replaced 32/2017 from tax year 2026 (local file above HUF 150 million, master file above HUF 500 million, simplified file for low-value services at 5%), the small-enterprise exemption, the ATP data sheets in the corporate tax return, the local business tax (HIPA) follow-on, penalties up to HUF 5 million per missing record, APA fees, country-by-country reporting at EUR 750 million, and MAP. Trigger phrases: transzferár, szokásos piaci ár, kapcsolt vállalkozás, transfer pricing Hungary, fődokumentum, helyi dokumentum, ATP-01. Out of scope: hu-corporate-tax (rate, base, filing), hu-income-tax, hungary-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Hungary transfer pricing (szokásos piaci ár): 2026

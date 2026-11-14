@@ -1,14 +1,15 @@
 ---
 name: be-employee-income-tax
 description: "Belgian personal income tax (personenbelasting / impot des personnes physiques) for employees and pensioners who are Belgian residents, for income 2026 (assessment year 2027). Covers the art. 130 scale (25%, 40%, 45%, 50%), the tax-free amount of EUR 11,550 and its supplements for children and dependants, the 30% lump sum for employee expenses capped at EUR 6,070 versus actual costs, the fiscal work bonus, the pension and replacement income reduction, the main federal reductions (pension savings, long-term savings, gifts, childcare), the municipal surcharge, joint assessment and the marital quotient, the credit for payroll withholding (bedrijfsvoorheffing), the refund or balance, Tax-on-web filing, the simplified proposal, tax increases and late interest. Trigger on: Belgian tax return employee, aangifte personenbelasting, Tax-on-web, belastingvrije som, forfaitaire beroepskosten, huwelijksquotient, bedrijfsvoorheffing refund, voorstel vereenvoudigde aangifte, gemeentebelasting. Out of scope: be-income-tax (self-employed), belgium-payroll, be-capital-gains, be-cross-border, be-social-contributions, belgium-crypto-tax."
-version: 0.2
+version: 0.3
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Belgium: income tax for employees and pensioners (income 2026, assessment year 2027)

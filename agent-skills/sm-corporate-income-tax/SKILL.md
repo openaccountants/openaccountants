@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sm-corporate-income-tax"
   jurisdiction: "SM"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# San Marino corporate income tax v0.5
+# San Marino corporate income tax v0.6
 
 Tax year: the company's tax period in 2026 (calendar year for most companies). Currency EUR. Authority: UO Ufficio Tributario (Tax Office).
 
@@ -28,27 +28,27 @@ Out of scope: special regimes for banks, insurers and financial companies, reorg
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Corporate IGR rate, tax years 2026 to 2030 | 18% of taxable income | 2026 | [Law 141/2025, art 54(6)][l141] |
-| Statutory corporate rate (applies again from 2031 unless changed) | 17% | 2026 | [IGR art 43(1); Annex C, art C2][igr] |
-| Loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 46(5)][igr] |
-| New-activity incentive (qualifying new company) | 50% cut in the rate for the first five tax periods: 9% in 2026 | 2026 | [IGR art 73(1)(c), (2)][igr]; [Law 141/2025, art 54(6)][l141] |
-| New-activity licence-fee relief | No first licence fee; no annual licence fee for the next three years | 2026 | [IGR art 73(1)(a)-(b)][igr] |
-| Own-capital (equity) increase deduction | 10% of the year's increase in own capital, net of the year's result; unused amounts lapse | 2026 | [IGR art 74(1)-(3)][igr] |
-| Accelerated depreciation (tangible assets, not buildings) | Allowed in the first two tax periods, at most 20% | 2026 | [IGR Annex D, art D3(3)][igr] |
-| Higher depreciation for intensive use or obsolescence | Up to 50% above the ordinary coefficient, buildings excluded, only after a ruling request to the Tax Office | 2026 | [IGR Annex D, art D3(1)-(2)][igr] |
-| Intangible assets | Up to 20% a year | 2026 | [IGR Annex D, art D4(1)][igr] |
-| Advertising and sponsorship costs | Deductible up to 8% of operating revenue | 2026 | [IGR art 50(1)(a)][igr] |
-| Data-processing and market-research costs | Deductible up to 10% of operating revenue (not for banks and financial operators) | 2026 | [IGR art 50(1)(b), (3)][igr] |
-| Entertainment (rappresentanza) costs | Deductible up to 5% of operating revenue | 2026 | [IGR art 50(1)(c)][igr] |
-| Cars and motorcycles not used directly as business assets, not for public use and not assigned to employees for mixed use | 60% of costs deductible; purchase cost counted up to 50,000 per car and 10,000 per motorcycle | 2026 | [IGR art 50(4-bis)][igr]; [DD 156/2026, art 20(1)][dd156] |
-| Dividends from non-resident companies | 95% excluded from income if the holding is kept 12 months without a break (the period can be completed after the distribution) and shown in the accounts and at least one balance sheet | 2026 | [IGR art 59(1)-(2)][igr] |
-| Dividends from resident companies | Fully excluded from income | 2026 | [IGR art 59(3)][igr] |
-| Gains on shareholdings | Exempt if held from the first day of the 12th month before disposal and booked as financial fixed assets in the first balance sheet; 50% exempt for San Marino real-estate companies | 2026 | [IGR art 56(1)-(3)][igr] |
-| Hiring credit | IGR credit of 10% (prior-year average under 5 employees) or 5% (5 or more) of the tax for each unit of increase in average staff, at least half hired from the job-placement lists; capped at 25% of the tax; suspended when the prior year's average unemployment rate is under 3% | 2026 | [IGR arts 69-70][igr]; [DD 156/2026, art 12][dd156] |
-| First advance | 35% of prior-year IGR (net of foreign tax credits on business income), by 31 August | 2026 | [IGR art 124(2)][igr] |
-| Second advance | 55% of the same basis, by 30 November | 2026 | [IGR art 124(2)][igr] |
-| Return and balance | 31 July following the tax year | 2026 | [IGR arts 93(1), 124(1)][igr] |
-| Late payment interest | Legal rate plus 2 points | 2026 | [IGR art 128(2)][igr] |
+| Corporate IGR rate, tax years 2026 to 2030 | 18% of taxable income | 2026 | [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Statutory corporate rate (applies again from 2031 unless changed) | 17% | 2026 | [IGR art 43(1); Annex C, art C2](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 46(5)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| New-activity incentive (qualifying new company) | 50% cut in the rate for the first five tax periods: 9% in 2026 | 2026 | [IGR art 73(1)(c), (2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html); [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| New-activity licence-fee relief | No first licence fee; no annual licence fee for the next three years | 2026 | [IGR art 73(1)(a)-(b)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Own-capital (equity) increase deduction | 10% of the year's increase in own capital, net of the year's result; unused amounts lapse | 2026 | [IGR art 74(1)-(3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Accelerated depreciation (tangible assets, not buildings) | Allowed in the first two tax periods, at most 20% | 2026 | [IGR Annex D, art D3(3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Higher depreciation for intensive use or obsolescence | Up to 50% above the ordinary coefficient, buildings excluded, only after a ruling request to the Tax Office | 2026 | [IGR Annex D, art D3(1)-(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Intangible assets | Up to 20% a year | 2026 | [IGR Annex D, art D4(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Advertising and sponsorship costs | Deductible up to 8% of operating revenue | 2026 | [IGR art 50(1)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Data-processing and market-research costs | Deductible up to 10% of operating revenue (not for banks and financial operators) | 2026 | [IGR art 50(1)(b), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Entertainment (rappresentanza) costs | Deductible up to 5% of operating revenue | 2026 | [IGR art 50(1)(c)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Cars and motorcycles not used directly as business assets, not for public use and not assigned to employees for mixed use | 60% of costs deductible; any cap on the purchase cost counted is not confirmed (see Not yet confirmed) | 2026 | [IGR art 50(4-bis)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html); [DD 156/2026, art 20(1)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Dividends from non-resident companies | 95% excluded from income if the holding is kept 12 months without a break (the period can be completed after the distribution) and shown in the accounts and at least one balance sheet | 2026 | [IGR art 59(1)-(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Dividends from resident companies | Fully excluded from income | 2026 | [IGR art 59(3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Gains on shareholdings | Exempt if held from the first day of the 12th month before disposal and booked as financial fixed assets in the first balance sheet; 50% exempt for San Marino real-estate companies | 2026 | [IGR art 56(1)-(3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Hiring credit | IGR credit of 10% (prior-year average under 5 employees) or 5% (5 or more) of the tax for each unit of increase in average staff, at least half hired from the job-placement lists; capped at 25% of the tax; suspended when the prior year's average unemployment rate is under 3% | 2026 | [IGR arts 69-70](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html); [DD 156/2026, art 12](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| First advance | 35% of prior-year IGR (net of foreign tax credits on business income), by 31 August | 2026 | [IGR art 124(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Second advance | 55% of the same basis, by 30 November | 2026 | [IGR art 124(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Return and balance | 31 July following the tax year | 2026 | [IGR arts 93(1), 124(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Late payment interest | Legal rate plus 2 points | 2026 | [IGR art 128(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 ## 3. The base
 
@@ -70,11 +70,11 @@ The 50% rate cut applies to a newly formed capital company whose shareholders an
 
 | Obligation | Deadline | Source |
 |---|---|---|
-| Annual electronic return, transmitted by 24:00 | 31 July following the tax year (31 July 2027 for 2026) | [IGR art 93(1), (4)][igr] |
-| Balance of tax | Same date as the return | [IGR art 124(1)][igr] |
-| First advance (35%) | 31 August of the tax year | [IGR art 124(2)][igr] |
-| Second advance (55%) | 30 November of the tax year | [IGR art 124(2)][igr] |
-| Withholding remittance as payer | By the two-month period after the one in which tax was withheld | [IGR art 125(1)][igr] |
+| Annual electronic return, transmitted by 24:00 | 31 July following the tax year (31 July 2027 for 2026) | [IGR art 93(1), (4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Balance of tax | Same date as the return | [IGR art 124(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| First advance (35%) | 31 August of the tax year | [IGR art 124(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Second advance (55%) | 30 November of the tax year | [IGR art 124(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Withholding remittance as payer | By the two-month period after the one in which tax was withheld | [IGR art 125(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 Advances are not due if the activity is suspended or ceased before the due date ([IGR art 124(2)][igr]). Amounts owed can be set off against IGR, import-tax or other Tax Office credits on the taxpayer's fiscal account ([IGR art 126][igr]). Keep the payment receipt until the assessment period ends ([IGR arts 124(1), 127][igr]).
 
@@ -84,10 +84,10 @@ A return filed within 30 days after 31 July is valid with the late-filing charge
 
 | Item | Amount | Source |
 |---|---|---|
-| Late return (art 137(2)(a)) | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16][dd156] |
-| Late return filed within 30 days of the deadline | 200 | [DD 156/2026, art 16][dd156] |
-| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128][igr] |
-| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129][igr] |
+| Late return (art 137(2)(a)) | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Late return filed within 30 days of the deadline | 200 | [DD 156/2026, art 16](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 Articles 138 and 139 set separate penalties for non-payment, late payment, failure to withhold and false or omitted returns ([IGR arts 137-139][igr]).
 
@@ -173,7 +173,7 @@ The same rules give: a qualifying own-capital increase of 100,000 gives a 10,000
 | Law 141/2025 of 12 November 2025, art 54 (commencement, 18% rate 2026-2030) | https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html | 2026-10-30 |
 | Delegated Decree 156/2026 of 12 October 2026, arts 12-14, 16, 19-20 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 
-Not yet confirmed: the 2026 legal interest rate; the full Annex D coefficient table by asset group; whether the 20% accelerated depreciation is on top of the ordinary coefficient (Annex D3(3) says only "at most 20%"); the current implementing circular for article 73; the 2027 return forms.
+Not yet confirmed: the purchase-cost caps for non-business cars and motorcycles (earlier text: 50,000 per car and 10,000 per motorcycle), not printed on the IGR art. 50 text or DD 156/2026 read on 14 Nov 2026, and DD 156/2026 art. 20 repeals art. 50(4-bis)(b); the 2026 legal interest rate; the full Annex D coefficient table by asset group; whether the 20% accelerated depreciation is on top of the ordinary coefficient (Annex D3(3) says only "at most 20%"); the current implementing circular for article 73; the 2027 return forms.
 
 [igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
@@ -181,4 +181,4 @@ Not yet confirmed: the 2026 legal interest rate; the full Annex D coefficient ta
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sm-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sm-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sm-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sm-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

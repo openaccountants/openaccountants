@@ -1,704 +1,440 @@
 ---
 name: us-form-1065-partnership
-description: "US federal content skill for preparing Form 1065 — the US partnership return. Covers tax year 2025 including the March 15 due date and Form 7004 6-month extension, the $245-per-partner-per-month §6698 penalty even for no-tax-due returns, the tax basis capital account reporting requirement, the Centralized Partnership Audit Regime (CPAR/BBA) and the Schedule B-2 election out, Schedule K-1 preparation including §199A passthrough codes, Schedules K-2 and K-3 for international items, §704(b) special allocations, §704(c) contributed property, §752 liability share, basis/at-risk/passive limits, and the post-Soroban scrutiny on limited-partner SE exemption."
+description: "Prepare the 2026 Form 1065, the US partnership return, with Schedules K and K-1, for general and limited partnerships, LLPs and multi-member LLCs taxed as partnerships. Covers who files, the K-1 items (tax basis capital, liabilities, section 704(c), section 199A code Z), guaranteed payments against distributive share under section 707(c), partner self-employment earnings and the limited partner exclusion in section 1402(a)(13) after Soroban and the Fifth Circuit's Sirius Solutions opinion of August 2026, pointers to the partner's basis, at-risk, passive and excess business loss limits, the Schedules K-2 and K-3 domestic filing exception and the small partnership exception, the BBA centralized partnership audit regime with the Schedule B-2 election out and the partnership representative, and the section 6698 late-filing penalty of USD 260 per partner per month for returns due in 2027 (Rev. Proc. 2025-32 section 4.55). A calendar 2026 return is due 15 March 2027, or 15 September 2027 wit"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-form-1065-partnership"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# US Form 1065 Partnership
+# US Form 1065 partnership return, tax year 2026
 
-## US Form 1065 — Partnership Return (Tax Year 2025)
+> **Source-cited draft.** Built from 26 U.S.C. 704, 707, 1402, 6221, 6223, 6226 and 6698, Rev. Proc. 2025-32, the Instructions for Form 1065 (2025), the Partner's Instructions for Schedule K-1 (2025), the Partnership Instructions for Schedules K-2 and K-3 (2025), the Instructions for Form 7004, Treas. Reg. 1.707-1(c), the IRS First Time Abate page and the Fifth Circuit's substituted opinion in Sirius Solutions (No. 24-60240, 12 August 2026), read on 2026-11-13. The 2026 editions of Form 1065 and its instructions were not yet published on that date; line and box references are from the 2025 editions and must be checked against the 2026 forms. No accountant has reviewed this skill. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Tier 2 federal content skill.** MUST be loaded alongside `us-tax-workflow-base` v0.2+. This skill provides the partnership-return rules; the workflow base provides the intake, runbook, and reviewer-package scaffolding. Federal only. State pass-through entity (PTE) filings are deferred to the relevant state skill.
+**Answer first.** Every partnership, including a multi-member LLC that has not elected corporate treatment, files Form 1065 for 2026 even if it owes no tax. A calendar-year return is due **15 March 2027** (a Monday); Form 7004 filed by that date extends filing six months, to **15 September 2027**. Filing late costs **USD 260 per partner per month or part of a month, for up to 12 months**, under section 6698 as adjusted for returns required to be filed in 2027. A payment to a partner fixed without regard to partnership income is a **guaranteed payment** (section 707(c)): deductible by the partnership, ordinary income to the partner even in a loss year, self-employment income when paid for services (also for limited partners), and not qualified business income. A payment that depends on partnership income is a **distributive share**. A domestic partnership with no foreign activity and only US individual-type partners can skip Schedules K-2 and K-3 if it tells its partners and no partner asks by the 1-month date. A partnership with 100 or fewer eligible partners (individuals, C and S corporations, eligible foreign entities, estates of deceased partners) can elect out of the BBA audit regime on Schedule B-2; otherwise it must name a partnership representative.
 
-### 1.1 In scope
+## Scope and who this is for
 
-This skill prepares **Form 1065 — U.S. Return of Partnership Income** for tax year 2025 for the following entity types treated as partnerships for federal tax purposes:
+In scope: Form 1065 for tax year 2026 (calendar year 2026, or a fiscal year beginning in 2026) for an entity treated as a partnership for federal tax:
 
-- General partnerships (GP)
-- Limited partnerships (LP) — including family limited partnerships (FLPs)
-- Limited liability partnerships (LLPs) and limited liability limited partnerships (LLLPs)
-- Limited liability companies (LLCs) with **two or more members** that have not elected to be taxed as a corporation (the default classification under Treas. Reg. §301.7701-3)
-- Joint ventures that rise to the level of a partnership under §761 and Treas. Reg. §1.761-1(a)
-- "Investment clubs" treated as partnerships
-- Foreign partnerships with US-source income or US partners — only to the extent that Form 1065 (rather than Form 8865) is the correct return; see §1.2
+- general partnerships, limited partnerships (including family limited partnerships), LLPs and LLLPs;
+- LLCs with two or more members that have not elected to be taxed as a corporation (default classification, Treas. Reg. 301.7701-3(b)(1)(i));
+- joint ventures and investment clubs that are partnerships under section 761 and Treas. Reg. 1.761-1(a);
+- a foreign partnership with US-source income or income effectively connected with a US trade or business, to the extent Form 1065 is its return (see step 1).
 
-The skill produces:
+What the skill produces: Form 1065 with Schedules B, K, L, M-1 and M-2; Schedule B-1 (owners of 50% or more) when triggered; Schedule B-2 (election out of the centralized audit regime) when made; one Schedule K-1 per partner; Schedules K-2 and K-3 unless an exception applies; Schedule M-3 when required; the common attached forms; and a reviewer brief covering the audit-regime choice, section 704(b) and 704(c) points, section 752 liability shares, each partner's loss-limit flags and each partner's self-employment classification.
 
-- Form 1065 (5 pages including Schedules B, K, L, M-1, M-2 on the form itself)
-- Schedule B-1 (50%+ owner disclosure) when triggered
-- Schedule B-2 (election out of CPAR) when triggered
-- Schedule K-1 for each partner (the most important deliverable — partners cannot file their own 1040 without it)
-- Schedules K-2 and K-3 when international activity or foreign partners exist, OR when the Domestic Filing Exception under the K-2/K-3 instructions does **not** apply
-- Schedule M-3 when total assets at year-end are ≥ $10 million, adjusted total assets are $10 million or more, total receipts are $35 million or more, or a reportable entity partner owns 50% or more
-- Common attached forms: 4562, 4797, 8825, 8990, 6765 (where indicated by the taxpayer's facts)
-- Reviewer brief covering CPAR election decision, §704(b)/(c) issues, §752 liability allocation, partner basis/at-risk/passive limit indicators, and SE tax classification per partner
+Out of scope, and where it goes:
 
-### 1.2 Out of scope (refuse and route)
-
-- **LLCs that have elected C-corp treatment** — file Form 1120 (route to us-form-1120-c-corporation skill, when available)  _(Form 8832)_
-- **LLCs that have elected S-corp treatment** — file Form 1120-S (route to us-form-1120s-s-corporation skill)  _(Form 2553)_
-- **Single-member LLCs, no corporate election** — disregarded entity, owner files Schedule C / E / F on Form 1040 (route to us-sole-prop-bookkeeping, us-schedule-c-and-se-computation)
-- **Qualified joint ventures (QJV) between spouses** — each spouse files own Schedule C; not a partnership return  _(§761(f))_
-- **Foreign partnerships requiring Form 8865** — refer out; this skill does not prepare Form 8865, but flags the trigger  _(Form 8865, categories 1–4 controlled foreign partnerships)_
-- **Publicly traded partnerships (PTPs)** — out of scope; their compliance burden (passive activity per-PTP rules, withholding on transfers) requires a specialized skill  _(§7704; §1446(f))_
-- **Tiered partnerships with upper-tier partnership partners** — Schedule B-2 election out is unavailable; specialized CPAR handling required; refuse for v0.1
-- **Real estate partnerships with reverse §704(c) layers, §734/§743/§754 step-ups, or disguised-sale issues** — flag and refer to a senior tax attorney; this skill identifies but does not compute these  _(§704(b)/(c); §734; §743; §754; §707(a)(2)(B))_
-- **Section 1061 carried-interest holding-period adjustments** — out of scope for v0.1; flag and refer  _(§1061)_
-- **State pass-through entity tax (PTET) elections** — deferred to the state skill (e.g., ca-540-pte-election)
-- **Section 6226 push-out elections following an IRS audit** — partially covered as concept; mechanics of preparing the statement and partner notifications are out of scope for v0.1  _(§6226)_
-- **Withholding under §1446 on ECI for foreign partners** — flag and refer; this skill does not prepare the §1446 withholding return  _(§1446; Forms 8804/8805/8813)_
-
-### 1.3 Conservative defaults
-
-- **K-2/K-3 conservative default** — If the taxpayer's facts could plausibly trigger Schedules K-2/K-3 and the Domestic Filing Exception conditions are not all clearly met from the intake, prepare K-2/K-3.
-- **CPAR election-out caution** — If a partner could plausibly be a disregarded entity owned by a non-eligible owner, do not elect out of CPAR on Schedule B-2 without explicit reviewer confirmation.
-- **Soroban-style SE flag** — If a partner is a "limited partner" in form but materially participates (Soroban-style fact pattern), flag for SE tax and surface to reviewer.
-- **Tax basis capital reporting default** — Tax basis capital account reporting on K-1 Item L is never GAAP, §704(b) book, or "other" — always tax basis.
-
-### 2.1 Statutory rule
-
-- **Filing requirement and informational nature** — §6031(a) requires every partnership to file an information return. The return is informational — the partnership itself does not pay federal income tax (other than certain BBA imputed underpayments after an audit; see §10). All tax flows through to the partners on Schedule K-1, who report it on their own returns.  _(§6031(a))_
-
-### 2.2 Entity classification mechanics
-
-**Entity classification table**  _(Treas. Reg. §301.7701-3(b)(1)(i))_
-
-| Entity type | Default federal classification | Form 1065 required? |
-| --- | --- | --- |
-| Two-member LLC (no election) | Partnership | **Yes** |
-| Two-member LLC, Form 8832 to C-corp | Corporation | No (files 1120) |
-| Two-member LLC, Form 2553 to S-corp | S corporation | No (files 1120-S) |
-| General partnership | Partnership | **Yes** |
-| LP | Partnership | **Yes** |
-| LLP / LLLP | Partnership | **Yes** |
-| Single-member LLC, no election | Disregarded entity | No (Schedule C/E/F) |
-| Spousal LLC in community-property state, election under Rev. Proc. 2002-69 | Disregarded entity (single owner) | No |
-| Spousal QJV under §761(f), non-LLC | Two Schedules C | No |
-| Tenants-in-common with rental only, no joint marketing | Co-ownership, not a partnership | No (separate Schedule E) |
-| Investment club | Usually partnership | **Yes** unless §761(a) election out |
-
-### 2.3 The §761(a) election out
-
-- **§761(a) election out** — A partnership may elect under §761(a) and Treas. Reg. §1.761-2 to be excluded from Subchapter K if it is used only for investment or for the joint production, extraction, or use of property (and certain other narrow categories), and the partners can compute income without computing partnership taxable income. This is rare in practice. If asserted by the taxpayer, verify that the election was properly made on a timely Form 1065 for the first year and that no Form 1065 has been filed since.  _(§761(a); Treas. Reg. §1.761-2)_
-
-### 2.4 Foreign partnerships
-
-- **Foreign partnership filing trigger** — A foreign partnership is required to file Form 1065 if it has either: Gross income effectively connected with a US trade or business (ECI), OR Gross income (including gains) from US sources — subject to the exceptions in Treas. Reg. §1.6031(a)-1(b)(3) (no US partners, no ECI, etc.). A US person who owns a foreign partnership at the controlling level may also need Form 8865. Form 8865 is not a substitute for Form 1065 when the foreign partnership itself has a Form 1065 filing obligation — both can apply. This skill flags the Form 8865 trigger but defers preparation.  _(Treas. Reg. §1.6031(a)-1(b)(3))_
-
-### 3.1 Original due date
-
-- **Original due date** — Form 1065 is due on the 15th day of the 3rd month following the close of the partnership's tax year (§6072(b)). For a calendar-year partnership (the overwhelming majority — §706(b) generally requires the partners' required taxable year), the due date is: March 15, 2026 for tax year 2025. This is one month earlier than the Form 1120 (C corporation) due date of April 15, and the same day as Form 1120-S (S corporation). The March 15 deadline exists so that partners receive their K-1s in time to file their own April 15 returns. If March 15, 2026 falls on a Sunday (it does — 2026-03-15 is a Sunday), the due date moves to the next business day: Monday, March 16, 2026. Reviewer should always confirm the calendar week in the working papers.  _(§6072(b); §706(b))_
-
-### 3.2 Fiscal-year partnerships
-
-- **Required taxable year and fiscal-year due date** — §706(b) requires a partnership to use its "required taxable year" — generally the majority-interest taxable year, then the principal-partners year, then the least-aggregate-deferral year. A partnership may use a different fiscal year only via §444 election (limited to ~3-month deferral, with a §7519 required payment) or an approved business-purpose year under Rev. Proc. 2002-39. For a fiscal-year partnership, due date = 15th day of 3rd month after year-end (e.g., June 30 year-end → September 15 due date).  _(§706(b); §444; §7519; Rev. Proc. 2002-39)_
-
-### 3.3 Extension — Form 7004
-
-- **Form 7004 6-month extension** — Form 7004 (Application for Automatic Extension of Time to File Certain Business Income Tax, Information, and Other Returns) provides a 6-month automatic extension for Form 1065. It must be filed on or before the original due date (March 15 for calendar-year). Extended due date for 2025 calendar-year partnerships: September 15, 2026 (or the next business day if September 15 is a weekend/holiday). Form 7004 is automatic — no reason needs to be stated. But: It extends time to file, not time to pay. Partnerships generally don't owe income tax, but they may owe the §7519 required payment for §444 fiscal years and certain other amounts. A late Form 7004 is not an extension at all and exposes the return to the §6698 late-filing penalty from day one past March 15. Each partner's K-1 should still be furnished as soon as available; partners commonly need to extend their own 1040 to October 15 because their K-1 is not ready until September.  _(Form 7004; §7519; §6698)_
-
-### 3.4 Reviewer checklist on due dates
-
-- [ ] Tax year confirmed (calendar vs §444 fiscal vs natural)
-- [ ] Original due date computed
-- [ ] If extending, Form 7004 filed by original due date (capture postmark / e-file acknowledgment)
-- [ ] Extended due date computed and calendared
-- [ ] Partners notified of K-1 delivery target date
-
-### 4.1 Statutory rule
-
-- **§6698 penalty amount** — $255 per partner, per month (or fraction thereof), for up to 12 months (2025; Instructions for Form 1065 (2025), Penalties) USD per partner per month  _(§6698(b)(1); §6698(e))_
-- **§6698 base amount history** — The base amount was set at $195 by the Tax Increase Prevention Act of 2014 and is adjusted annually for inflation under §6698(e). Historical recent values (verify against Rev. Proc. 2024-40 or successor for the exact 2025 figure):  _(§6698(e); Tax Increase Prevention Act of 2014)_
-
-**Per-partner per-month penalty by tax year**  _(Rev. Proc. 2024-40 §3.61)_
-
-| Tax year | Per-partner / per-month |
+| Topic | Skill or action |
 | --- | --- |
-| 2023 | $220 |
-| 2024 | $235 |
-| 2025 | $245 (verify; ~$245 per Rev. Proc. 2024-40 §3.61) |
-
-- **Penalty applies even with no tax due** — The penalty applies even when the partnership owes no tax — which it almost never does. This is the most common compliance failure cost in partnership practice.  _(§6698)_
-
-### 4.2 Examples
-
-- **3-partner LLC, return filed 2 months late, no extension:** 3 partners × $255 × 2 months = **$1,530**.
-- **3-partner LLC, return filed 13 months late:** 3 × $255 × 12 (capped) = **$9,180**.
-- **20-partner LP, return filed 6 months late:** 20 × $255 × 6 = **$30,600**.
-
-The penalty scales linearly with partner count. A 50-partner FLP filed 12 months late owes **$153,000** in §6698 penalties — for a return showing zero tax.
-
-### 4.3 Reasonable cause relief — Rev. Proc. 84-35
-
-- **Rev. Proc. 84-35 safe harbor** — Rev. Proc. 84-35 has long provided a "safe harbor" for small partnerships (10 or fewer partners, all individuals or estates of deceased partners, each partner reporting their share). The IRS has periodically suggested this safe harbor is outdated post-CPAR, but as of 2025 it remains administratively available in practice. Do not rely on it without documenting reasonable cause (e.g., illness, records destroyed, reasonable reliance on a return preparer).  _(Rev. Proc. 84-35)_
-- **First-Time Abatement limitation** — The First-Time Abatement (FTA) administrative waiver is generally not available for §6698 because the partnership does not have a "tax" balance for FTA purposes (FTA applies to assessable penalties on returns showing tax). However, some IRS units have granted it; document any request carefully.  _(§6698)_
-
-### 4.4 Other related penalties
-
-- **§6699 late Form 1120-S penalty** — $255/shareholder/month for late Form 1120-S for 2025 (not applicable here, but reviewer should not confuse the two)  _(§6699)_
-- **§6722 failure to furnish correct K-1 to partner** — graduated penalties ($60 / $130 / $340 per K-1 for 2025, depending on lateness; verify against current §6721/§6722 schedule)  _(§6722)_
-- **§6721 failure to file correct K-1 with IRS** — same graduated structure  _(§6721)_
-- **§6707A listed-transaction disclosure failures** — rare  _(§6707A)_
-- **§6722 exposure despite timely 1065** — A partnership that files Form 1065 on time but fails to furnish K-1s to partners can still be hit with §6722 penalties. Best practice: K-1s out the same day as the return is filed.  _(§6722)_
-
-### 5.1 The 2020+ requirement
-
-- **Tax basis method requirement on Item L** — Beginning with tax year 2020 (Notice 2020-43 → final instructions for 2020 Form 1065), partnerships must report each partner's capital account on Schedule K-1 Item L using the tax basis method. GAAP, §704(b) book, and "other" methods are no longer permitted on Item L. (A partnership may still maintain §704(b) capital accounts internally to track substantial economic effect — see §11 — but Item L itself must be tax basis.)  _(Notice 2020-43)_
-
-### 5.2 What is a tax basis capital account
-
-- **Tax basis capital account vs outside basis** — A partner's tax basis capital account ≠ the partner's outside basis. The two differ by: The partner's share of partnership liabilities under §752 (included in outside basis, not in tax basis capital); §743(b) basis adjustments (in outside basis only); Built-in gain/loss inherited from contributing partner under §704(c) (the contributing partner's capital reflects FMV at contribution net of §704(c) gain not yet recognized; outside basis reflects historic carryover)  _(§752; §743(b); §704(c))_
-- **K-1 Item L rollforward** — Beginning capital account + Capital contributed during the year (cash + tax basis of contributed property) + Current year net income (loss) — tax basis + Other increases (e.g., §734(b) adjustments to common basis on certain distributions) − Withdrawals and distributions (cash + tax basis of distributed property) − Other decreases = Ending capital account  _(§734(b))_
-
-### 5.3 Transition for partnerships still on §704(b)/GAAP
-
-- **Three transition methods** — If a partnership is being prepared for the first time post-2020 and historical capital was tracked on §704(b) or GAAP, the 2020 instructions provided three transition methods: 1. Modified outside basis method — partner's outside basis minus their share of liabilities minus §743(b) adjustments; 2. Modified previously taxed capital method — based on the §743(b) hypothetical liquidation; 3. §704(b) method — §704(b) capital minus §704(c) built-in gain/loss layers. For 2025 returns, the partnership should have completed the transition years ago. If the working papers still show §704(b) capital and no tax basis rollforward exists, stop and surface to reviewer — this is not a v0.1 automation case.  _(§743(b); §704(b); §704(c))_
-
-### 5.4 Negative tax basis capital
-
-- **Negative tax basis capital disclosure and gain trigger** — A negative tax basis capital account does not by itself mean a partner has gain; outside basis (which includes liability share) can still be positive. But it is a flag. Since 2018 (for tax years 2018+), partnerships have had to disclose negative tax capital on Item L (or on a separate statement in earlier years). For 2025, negative tax capital is reported directly on K-1 Item L line "Current year net income (loss)" and "Ending capital account." A partner with negative tax basis capital and a distribution that exceeds outside basis recognizes gain under §731(a)(1). The skill flags this for the reviewer when distributions in Item J/L exceed the available basis.  _(§731(a)(1))_
-
-### 6.1 Conceptual difference
-
-- **Schedule K vs K-1 concept and reconciliation** — Schedule K is the partnership-level summary of all separately stated items. Lines 1–21 of Schedule K aggregate every partner's share of ordinary business income, separately stated items (interest, dividends, §1231 gain, §179, charitable contributions, etc.), credits, foreign items, and other. Schedule K-1 is each individual partner's share of those Schedule K items, allocated according to the partnership agreement (subject to §704(b) substantial economic effect). The sum of all K-1s for any given line must equal the corresponding Schedule K line. Reviewer reconciliation: K-1 line totals === K line totals, partner by partner. Any discrepancy is a preparer error.  _(§704(b))_
-
-### 6.2 K-1 boxes (2025 layout)
-
-The 2025 Schedule K-1 (Form 1065) has the following major sections:
-
-- **Part I** — Partnership information (EIN, name, address, IRS Service Center, PTP indicator)
-- **Part II** — Partner information:
-  - Item E: Partner's identifying number
-  - Item F: Partner's name and address
-  - Item G: General partner / LLC member-manager **vs** Limited partner / other LLC member (Critical for SE — see §13)
-  - Item H1/H2: Domestic / Foreign partner
-  - Item I1/I2: Entity type (Individual / Corporation / Partnership / Trust / DRE / Estate / Exempt org / Foreign government / Nominee / IRA)
-  - Item J: Partner's share of profit / loss / capital — beginning and ending percentages
-  - Item K: Partner's share of liabilities (nonrecourse / qualified nonrecourse / recourse) — §752
-  - Item L: Capital account analysis — tax basis (see §5)
-  - Item M: Did partner contribute property with built-in gain or loss? (§704(c) flag)
-  - Item N: Partner's share of net unrecognized §704(c) gain or loss — beginning and ending
-- **Part III** — Partner's share of income, deductions, credits:
-  - Box 1: Ordinary business income (loss)
-  - Box 2: Net rental real estate income (loss)
-  - Box 3: Other net rental income (loss)
-  - Box 4a/4b/4c: Guaranteed payments (services / capital / total)
-  - Box 5: Interest income
-  - Box 6a/6b/6c: Ordinary / qualified / dividend equivalents
-  - Box 7: Royalties
-  - Box 8: Net short-term capital gain (loss)
-  - Box 9a/9b/9c: Long-term capital gain (loss) / collectibles / unrecaptured §1250
-  - Box 10: Net §1231 gain (loss)
-  - Box 11: Other income (loss) — coded
-  - Box 12: §179 deduction
-  - Box 13: Other deductions — coded (includes charitable contributions, investment interest, etc.)
-  - Box 14: SE earnings (loss) — A: net SE earnings, B: gross farming, C: gross non-farm
-  - Box 15: Credits — coded
-  - Box 16: Schedule K-3 attached indicator (replaced the old foreign-transactions box)
-  - Box 17: AMT items — coded
-  - Box 18: Tax-exempt income & nondeductible expenses — coded
-  - Box 19: Distributions — coded (A: cash & marketable securities; B: distribution of property subject to §737; C: other property)
-  - Box 20: Other information — coded (the catch-all; includes §199A QBI codes Z/AA/AB/AC/AD, §163(j) interest limit info, §453A interest, §704(c) information, etc.)
-  - Box 21: Foreign taxes paid or accrued — new for 2023+; carried to Schedule K-3
-  - Box 22: More than one activity for at-risk purposes (check box)
-  - Box 23: More than one activity for passive activity purposes (check box)
-
-### 6.3 §199A QBI codes (Box 20)
-
-- **§199A codes and Box 20 content** — For 2025 returns, §199A items flow to partners through Box 20 under Code Z: QBI, W-2 wages, UBIA of qualified property, REIT dividends, PTP income, the SSTB indicator, and aggregation information are all reported in a single attached statement. The legacy AA/AB/AC/AD §199A sub-codes no longer apply; for 2025, Box 20 Code AA carries §704(c) information for non-PTP partnerships. Box 20 must carry, in a clear statement attached to the K-1: QBI from the partnership's trade or business (for each separate trade or business if the partnership has multiple); W-2 wages allocated to that trade or business; UBIA (unadjusted basis immediately after acquisition) of qualified property; Whether the trade or business is an SSTB (Specified Service Trade or Business under §199A(d)(2)); Aggregation under Reg. §1.199A-4 if the partnership has made an aggregation election; Section 199A REIT dividends received; Section 199A PTP income received (from any underlying PTPs the partnership invested in). New for 2025: Box 20 Code ZZ reports the information partners need to elect to pay tax on gain from the sale of qualified farmland property in four equal annual installments, including a copy of the required covenant (new IRC § 1062, added by OBBBA § 70437). Defer the partner-level QBI computation to us-qbi-deduction. The partnership's job is to supply complete and accurate Box 20 statements; the partner's 1040 preparer takes it from there.  _(§199A(d)(2); Reg. §1.199A-4)_
-
-### 6.4 Self-Employment Earnings — Box 14
-
-- **Box 14 SE earnings mechanics by partner type** — Box 14, code A, reports net SE earnings allocable to the partner. This is the most aggressively examined K-1 line in 2024–2025 IRS practice — see §13. For a general partner (Item G "General partner or LLC member-manager"): Box 14A typically equals the partner's distributive share of ordinary business income (Box 1) plus guaranteed payments for services (Box 4a), adjusted for items not subject to SE (e.g., rental real estate, portfolio income, §1231 gain). For a limited partner (Item G "Limited partner or other LLC member"): historically Box 14A includes only guaranteed payments for services, per §1402(a)(13). Post-Soroban (see §13.3), this position is under attack for LLC member-managers and limited partners who materially participate.  _(§1402(a)(13))_
-
-### 6.5 Reconciliation check
-
-- **Reviewer per-line reconciliation test** — Reviewer test: Σ over all K-1s of (Box 1 + Box 4a + Box 4b + Box 5 + Box 6a + Box 7 + Box 8 + Box 9a + Box 10 + Box 11 + …) − (Box 12 + Box 13 +  …) should reconcile to Schedule K. The skill produces a per-line reconciliation table in the reviewer brief.
-
-### 7.1 What they are
-
-- **Schedules K-2 and K-3 overview** — Schedules K-2 and K-3 were introduced for tax year 2021 to replace the old K-1 Box 16 free-text reporting of international items. They are voluminous (Schedule K-2 ran ~19 pages in 2021; the partner-by-partner K-3 ran similarly per partner). Schedule K-2 — partnership-level summary of international items. Filed with Form 1065. Schedule K-3 — per-partner detail. One K-3 per partner who needs international information. Furnished to the partner. Schedule K-2 has twelve parts (I-XII) and Schedule K-3 has thirteen (I-XIII) in 2025: Part I — Partnership's other current-year international information; Part II — Foreign tax credit limitation (categories of income, source-of-income); Part III — Other information for preparation of Form 1116 or 1118 (deductions allocable to foreign income); Part IV — §250 deduction (FDII / GILTI / §163(j) interactions); Part V — Distributions from foreign corporations (§959, §961, etc.); Part VI — Information on partners' §951(a) inclusions; Part VII — §965 transition tax (mostly residual / closing accounts); Part VIII — Section 871(m) / dividend equivalents; Part IX — Section 1446 withholding (foreign partners); Part X — Foreign partners' character & source of income; Part XI — Section 871(m), Schedule K-3 supplemental.  _([§250; §959; §961; §951(a); §965; §871(m); §1446](https://www.irs.gov/instructions/i1065s23))_
-
-### 7.2 Who must file K-2/K-3
-
-- **K-2/K-3 filing triggers** — A partnership must file K-2/K-3 if it has any of the following: 1. Items of international tax relevance — foreign-source income, foreign taxes paid, foreign assets, foreign branch operations, CFC interests, PFIC interests, §250 items, etc. 2. Foreign partners — even with zero foreign-source activity, a foreign partner needs K-3 for their own US filing. 3. A US partner who is eligible to claim a foreign tax credit and requests K-3 information (see §7.3 Domestic Filing Exception).
-
-### 7.3 The Domestic Filing Exception
-
-- **Four conditions of Domestic Filing Exception** — Beginning with tax year 2022 (and refined for 2023+ in the K-2/K-3 instructions), partnerships meeting all four of the following do not need to file K-2/K-3: 1. No or limited foreign activity — the partnership has no foreign-source income, no foreign taxes paid or accrued, and no ownership in any foreign entity, OR foreign activity is limited to passive category foreign income on which not more than $300 of foreign income taxes are treated as paid or accrued, shown on a payee statement furnished to the partnership. 2. All direct partners are eligible US persons — US citizens, resident aliens, domestic decedents' estates, certain domestic trusts, S corporations with eligible shareholders, single-member LLCs whose sole owner is one of the above. No foreign partners. Domestic partnerships may be partners only if their own direct partners are all of the eligible types above (criterion 2 was broadened for 2025). 3. Partner notification — at the latest when the partnership furnishes the Schedule K-1 to the partner, the partnership has notified each partner that it will not provide a Schedule K-3 unless requested. Notification can be embedded in the K-1 footer in many practice templates. 4. No partner has requested K-3 — by the "1-month date" (1 month before the date the partnership files Form 1065; for tax year 2025 calendar year partnerships, the latest 1-month date is August 17, 2026, if the partnership files an extension), no partner has requested a K-3 from the partnership in writing. If all four are met, the partnership may omit K-2/K-3. If any one fails, K-2/K-3 must be filed.  _(https://www.irs.gov/instructions/i1065s23)_
-
-### 7.4 The "1-month date" trap
-
-- **1-month date timing rule** — If a partner requests K-3 information after the 1-month date, the partnership must provide that partner's K-3 no later than 1 month from the date it receives the request but is not required to file Schedules K-2 and K-3 with the IRS. If a partner requests K-3 on or before the 1-month date, the partnership must file Schedules K-2 and K-3, completed only for the parts and sections relevant to the requesting partner. Practitioners should solicit K-3 requests early (e.g., in November/December of the tax year) to know what they're filing.  _(https://www.irs.gov/instructions/i1065s23)_
-
-### 7.5 Practical guidance
-
-- **Default to preparing K-2/K-3** — Even a fully domestic two-person LLC may need K-2/K-3 if it owns a foreign mutual fund through a brokerage account that pays foreign withholding. The Domestic Filing Exception is narrower than it first appears. Default to preparing K-2/K-3 unless the intake form affirmatively confirms all four conditions of the Domestic Filing Exception.
-
-### 8.1 Statutory background
-
-- **CPAR origin and codification** — The Bipartisan Budget Act of 2015 (BBA) repealed the TEFRA partnership audit rules and the Electing Large Partnership rules and replaced them with the Centralized Partnership Audit Regime (CPAR), effective for tax years beginning after December 31, 2017. CPAR is codified in §§6221–6241.  _(§§6221–6241)_
-
-### 8.2 Default mechanics
-
-- **CPAR default audit mechanics** — Under CPAR, an IRS audit of a partnership return results in: 1. Determination of an "imputed underpayment" at the partnership level for the reviewed year (the year being audited). 2. The imputed underpayment is assessed against and collected from the partnership in the adjustment year (the year the audit concludes), at the highest individual or corporate rate (37% for individuals in 2025 / 21% for C corps; the partnership default uses the highest applicable rate). 3. Current-year partners bear the economic burden — even if they were not partners in the reviewed year. This is the default. It is harsh and often inappropriate when the partner roster has changed. The statute provides two safety valves: Section 6226 push-out election — within 45 days of the final partnership adjustment, the partnership can elect to push the adjustment out to the reviewed-year partners, who report the adjustment on their own returns for the adjustment year (with interest at the §6621(a)(2) underpayment rate determined by substituting 5 percentage points for 3 percentage points). The reviewed-year partners then pay, not the partnership. Modification of imputed underpayment under §6225(c) — e.g., tax-exempt partners' allocable share is removed, lower rates for C corp partners' share, etc. Election out of CPAR entirely — Schedule B-2 (see §9).  _([§6226; §6225(c)](https://www.law.cornell.edu/uscode/text/26/6226))_
-
-### 8.3 Partnership Representative (PR) — §6223
-
-- **PR designation and authority** — Every BBA partnership must designate a Partnership Representative (PR) for each tax year on Form 1065. The PR replaces the old TEFRA Tax Matters Partner (TMP). Differences: The PR does not have to be a partner. Any person (or entity) with a substantial US presence may serve. If the PR is an entity, the partnership must also name a Designated Individual to act on behalf of the entity. The PR's authority is absolute — the PR's actions bind the partnership and all partners for the relevant tax year. Other partners do not have a statutory right to participate in or contest the PR's actions in the audit. The PR is designated on Form 1065, Schedule B, page 3 (2025 layout), with name, US TIN, US address, and US daytime phone. If the PR is an entity, the Designated Individual's info goes alongside. The PR for one year can be different from the PR for another year. Changes mid-cycle require Form 8979.  _(§6223)_
-
-### 8.4 Audit-year vs reviewed-year — terminology
-
-- **Reviewed year, adjustment year, partnership-level resolution** — Reviewed year = the tax year the IRS is examining. Adjustment year = the year the audit is finalized and the imputed underpayment is assessed. Partnership-level resolution = audit outcome before any push-out election. These terms are statutory and the reviewer brief should use them consistently.
-
-### 9.1 Who can elect out
-
-- **§6221(b) election-out eligibility** — Under §6221(b), a partnership may elect out of CPAR for a tax year if it has 100 or fewer partners at any point during the tax year and every partner is an "eligible partner." Eligible partners are: Individuals; C corporations (and foreign entities that would be C corporations if domestic); S corporations (each S-corp shareholder is counted toward the 100-partner limit); Estates of deceased partners; Certain other eligible categories per the regulations (Reg. §301.6221(b)-1). Ineligible partners (any one of which destroys election-out eligibility): Partnerships (any tier — no upper-tier partnerships allowed; this is the most common disqualifier); Trusts (including grantor trusts, in most cases — verify against Reg. §301.6221(b)-1 for the limited exceptions); Disregarded entities (DREs), including an SMLLC owned by an eligible individual (Reg. §301.6221(b)-1(b)(3)(ii)(D)); Nominees and similar agents that are not the beneficial owner; IRAs (treated as exempt trusts); Foreign entities that are not C-corp-equivalent.  _([§6221(b); Reg. §301.6221(b)-1](https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.6221(b)-1))_
-
-### 9.2 Counting partners
-
-- **S-corp partner and spousal counting rule** — S-corporation partners count as one partner + one for each shareholder of the S-corporation for the 100-partner threshold under §6221(b)(2). Spouses each count separately. A husband-and-wife LLC is two partners (one for each spouse), not one.  _(§6221(b)(2))_
-
-### 9.3 Schedule B-2 mechanics
-
-- **Schedule B-2 content and annual re-election** — Schedule B-2 is a one-page statement filed with Form 1065. It lists, by partner: Partner name; Partner US TIN; Partner type (individual / C corp / S corp / estate / eligible foreign entity); For S corp partners, the number and identity of S-corp shareholders. The election out is annual — it must be re-made every year on each year's Form 1065. A partnership that elected out for 2024 must elect out again for 2025 by attaching Schedule B-2.
-
-### 9.4 When to elect out
-
-**Pros of electing out:**
-
-- Audits go partner-by-partner under pre-TEFRA rules
-- No PR with absolute authority
-- No imputed underpayment at partnership level
-- Each partner gets their own statute of limitations
-
-**Cons of electing out:**
-
-- Each partner audited separately — more administrative burden if multiple partners are examined
-- No push-out election available (the entity isn't in CPAR to begin with)
-- Refunds for over-payments must be claimed by each partner on amended 1040s, not by the partnership
-
-**Reviewer recommendation framework:**
-
-- Small, stable partnership (≤10 individual partners, no S-corp partners, no foreign partners, no trusts): elect out
-- Partnership with frequent partner changes: lean CPAR (push-out available)
-- Partnership with any ineligible partner: cannot elect out
-- Partnership with state PTET election: confirm state rules don't depend on CPAR status
-
-### 10.1 Designation requirements
-
-- **PR designation requirements** — §6223 and Reg. §301.6223-1(b)(2): Must have a substantial presence in the United States — a US address, a US phone, and reasonable availability to meet with the IRS in the US. Must have the capacity to act — not a minor, not incapacitated, not deceased. Must be designated on Form 1065 each tax year (separately from the PR designation for any other year).  _(§6223; Reg. §301.6223-1(b)(2))_
-
-### 10.2 Designated Individual
-
-- **Designated Individual (DI) requirement** — If the PR is an entity (e.g., a CPA firm, the LLC's parent entity, a designated PR-services company), the partnership must also designate a Designated Individual (DI) who will act on behalf of the entity PR. The DI must meet the same substantial-presence requirements.
-
-### 10.3 Changing the PR
-
-- **Form 8979 PR change** — The partnership can change the PR by filing Form 8979 with the IRS. The change is generally effective only prospectively — it cannot be done in the middle of an audit to escape an unfavorable PR's decisions. The IRS can also designate a PR if the partnership has not done so or the designated PR is not eligible.  _(Form 8979)_
-
-### 10.4 Reviewer brief content
-
-The reviewer brief should include:
-
-- PR name, TIN, address, phone (and DI if applicable)
-- Confirmation that the PR has signed an internal acknowledgment of duties (best practice — not statutorily required)
-- Whether the partnership agreement addresses PR appointment, indemnification, and procedure
-- Whether the partnership has made the Schedule B-2 election out (in which case PR designation is still required on Form 1065 but the PR's CPAR authority does not apply because the partnership is not in CPAR for that year)
-
-### 11.1 The allocation problem
-
-- **§704(a)/(b) allocation reallocation rule** — §704(a) says that a partner's distributive share of income, gain, loss, deduction, or credit is determined by the partnership agreement. But §704(b)(2) provides that if the allocation doesn't have substantial economic effect (or otherwise lack a permissible basis), it will be reallocated according to the partner's interest in the partnership (PIP). §704(b) and Reg. §1.704-1(b)(2) lay out the safe harbor for "substantial economic effect":  _(§704(a); §704(b)(2); Reg. §1.704-1(b)(2))_
-
-### 11.2 The three-part test for "economic effect"
-
-- **Three-part economic effect test** — To have economic effect, an allocation must satisfy all three of the basic test under Reg. §1.704-1(b)(2)(ii)(b): 1. Capital accounts maintained per Reg. §1.704-1(b)(2)(iv) — the §704(b) "book" capital account rules. (Distinct from tax basis capital — see §5.) 2. Liquidation by capital account balances — upon liquidation of the partnership (or of a partner's interest), distributions must be made in accordance with positive §704(b) capital account balances. 3. Deficit restoration obligation (DRO) — a partner with a negative §704(b) capital account at liquidation must be unconditionally obligated to restore the deficit. If a partner has no DRO, allocations can still have economic effect under the alternate test if the partnership agreement contains a qualified income offset (QIO) — a provision that allocates income to that partner as quickly as possible to restore a negative capital account caused by certain "unexpected" events.  _(Reg. §1.704-1(b)(2)(ii)(b); Reg. §1.704-1(b)(2)(iv))_
-
-### 11.3 Substantiality
-
-- **Substantiality test elements** — Even an allocation with economic effect must be substantial — meaning it must have a non-tax economic consequence to the partners independent of tax effects. Reg. §1.704-1(b)(2)(iii) outlines: Overall tax effect — the allocation must have a reasonable possibility of substantially affecting the dollar amounts to be received by the partners apart from tax consequences; Shifting — allocations that merely shift tax burden among partners with offsetting non-tax economic effects (e.g., character of income shifting) are presumed non-substantial; Transitory — allocations whose effects are offset within five years are presumed non-substantial.  _(Reg. §1.704-1(b)(2)(iii))_
-
-### 11.4 PIP fallback
-
-- **Partner's interest in the partnership fallback factors** — If allocations fail substantial economic effect, the IRS reallocates per partner's interest in the partnership (PIP), considering: Partners' relative contributions; Partners' interests in economic profits and losses; Partners' interests in cash flow and other non-liquidating distributions; Partners' rights to distributions of capital upon liquidation.
-
-### 11.5 What this skill does and doesn't do
-
-- **Scope of §704(b) allocation flagging** — This skill does not redesign allocation provisions. It accepts the partnership agreement as given and applies allocations. But it does flag: Allocations that lack the three-part economic effect test (e.g., LLC operating agreement liquidates by units owned rather than by capital account); Special allocations that lack a stated business purpose; Loss allocations that drive a partner below zero §704(b) capital without a DRO and without a QIO; §704(b) capital accounts that have not been maintained at all (very common in small LLC practice — needs reviewer attention). When any flag fires, the skill surfaces the issue to the reviewer for partnership counsel input. It does not "fix" the allocation silently.
-
-### 12.1 The rule
-
-- **§704(c) built-in gain/loss allocation requirement** — §704(c) requires that income, gain, loss, and deduction with respect to property contributed by a partner to a partnership be allocated among the partners so as to take account of the variation between the basis of the property to the partnership and its fair market value at the time of contribution. In short: built-in gain or loss attaches to the contributing partner.  _(§704(c))_
-
-### 12.2 The three §704(c) methods
-
-- **Traditional, curative, and remedial methods** — Reg. §1.704-3 allows partnerships to choose, on a property-by-property basis, among: 1. Traditional method — depreciation and disposition gain/loss are allocated to "true up" the contributor and the non-contributors, but only to the extent of tax items. The "ceiling rule" caps allocations at the actual tax depreciation or gain available — meaning if tax depreciation is less than book depreciation, the non-contributing partner is shortchanged and the contributing partner gets a windfall. 2. Traditional method with curative allocations — same as traditional, but the partnership can make a "curative" allocation of other items (e.g., unrelated ordinary income) to make the non-contributing partner whole. 3. Remedial method — the partnership creates "remedial" items (notional income to the contributing partner, notional deduction to the non-contributing partner) to fully eliminate the ceiling rule effects. The most accurate, the most complex.  _(Reg. §1.704-3)_
-
-### 12.3 §704(c) layers and "forward" / "reverse" §704(c)
-
-- **Forward vs reverse §704(c)** — Forward §704(c) — property contributed at inception or by a new partner; built-in gain/loss as of contribution date. Reverse §704(c) — when the partnership revalues its books (a "book-up" or "book-down") under Reg. §1.704-1(b)(2)(iv)(f) — e.g., on a new partner entering at FMV, on a non-pro-rata distribution, on a grant of a profits interest under Rev. Proc. 93-27 — the §704(b) book values change but tax basis does not. The resulting variation creates a "reverse" §704(c) layer with respect to the historic partners. Multiple layers accumulate over the life of a partnership. Real estate partnerships with multiple book-ups can have very complex §704(c) accounting.  _(Reg. §1.704-1(b)(2)(iv)(f); Rev. Proc. 93-27)_
-
-### 12.4 Disclosure on K-1
-
-- **§704(c) K-1 disclosure items** — Item M asks whether the partner contributed property with a built-in gain or loss. Item N reports the partner's share of net unrecognized §704(c) gain or loss at both the beginning and the end of the tax year (required for 2025). If the partnership's taxable income is affected by §704(c) allocations, the sum of those items is reported in Box 20 with Code AA for non-PTP partnerships (Instructions for Form 1065 (2025), Item N and Box 20 Code AA).
-
-### 12.5 What this skill does
-
-- **Scope of §704(c) flagging** — This skill flags contributions of appreciated or depreciated property and reports Item M, Item N, and the Box 20 §704(c) statement at the level supported by the working papers. It does not select among methods — that's a partnership-agreement decision. If the working papers indicate property was contributed at a basis differing from §704(b) book value and no §704(c) method has been documented, the skill stops and surfaces to the reviewer.
-
-### 13.1 Why it matters
-
-- **§752(a)/(b) basis and distribution treatment** — §752(a) treats an increase in a partner's share of partnership liabilities as a contribution of cash by that partner (increasing outside basis). §752(b) treats a decrease as a deemed distribution of cash (decreasing outside basis, potentially triggering gain under §731). Without liability sharing, a partner could never deduct losses funded by partnership debt.  _(§752(a); §752(b); §731)_
-
-### 13.2 The three categories
-
-- **Recourse, nonrecourse, and QNF liability categories** — Reg. §1.752-1 through -3: 1. Recourse liabilities — a partnership liability is recourse to the extent any partner (or related person) bears the economic risk of loss (EROL). The partner who bears EROL is allocated 100% of the recourse liability for §752 purposes. EROL is determined by a constructive liquidation analysis under Reg. §1.752-2. 2. Nonrecourse liabilities — no partner bears EROL. Allocated under the three-tier rule of Reg. §1.752-3: Tier 1: Partner's share of partnership minimum gain (§704(b) book gain that would result from a §752(b) deemed disposition of property securing the nonrecourse debt); Tier 2: §704(c) built-in gain on contributed property secured by the debt (to the contributing partner); Tier 3: Excess nonrecourse liabilities — allocated per the partnership agreement (subject to certain constraints). 3. Qualified nonrecourse financing (QNF) under §465(b)(6) — nonrecourse debt from a qualified lender (a bank, etc., not the seller or a related person) secured by real property held in the trade or business of holding real property. Treated as "at-risk" for §465 purposes (see §14.2).  _(Reg. §1.752-1; Reg. §1.752-2; Reg. §1.752-3; §465(b)(6))_
-
-### 13.3 LLC practice — almost everything is nonrecourse
-
-- **LLC debt classification and guarantee planning** — Because LLC members are not personally liable for LLC debts, most LLC debt is nonrecourse for §752 purposes — even when commercial-law recourse. The exception is when a member guarantees the debt (creating EROL for the guaranteeing member). For a typical two-member LLC with bank financing where neither member guarantees, the debt is allocated 50/50 (Tier 3 — per the partnership agreement profit-sharing ratio, absent a special allocation). For a guaranteed loan, the guaranteeing member is allocated 100% of the debt. This is a common "basis planning" technique — one partner takes a personal guarantee specifically to get the outside basis to deduct losses.
-
-### 13.4 K-1 Item K
-
-- **Item K liability reporting** — Item K on K-1 reports each partner's share of: Nonrecourse liabilities; Qualified nonrecourse financing; Recourse liabilities. …at the beginning and end of the year. Reviewer reconciliation: Σ over all K-1s of each category = the partnership's total of that category.
-
-### 13.5 What this skill does
-
-- **§752 skill scope** — The skill: Classifies each partnership liability as recourse / nonrecourse / QNF based on the loan documents and EROL analysis; Allocates recourse debt to the partner(s) bearing EROL; Allocates nonrecourse debt under the three-tier rule; Reports Item K; Flags any partner whose outside basis (including §752 share) is insufficient to absorb the year's allocated loss — see §14.
-
-### 14.1 §704(d) — outside basis limit
-
-- **Outside basis limit and components** — A partner cannot deduct partnership losses in excess of their outside basis at the end of the tax year. Excess loss is suspended and carried forward until basis is restored. Outside basis components (a partial list): Initial contributions (cash + adjusted basis of property contributed); Share of partnership liabilities under §752 (added); Allocable share of partnership income (including tax-exempt income); Less: distributions (cash + adjusted basis of property distributed); Less: allocable share of partnership loss and nondeductible expenses; Less: §743(b) basis adjustments (in/out depending on direction). The partnership itself does not track partner outside basis (that's the partner's job). But the partnership produces all the inputs on K-1. Best practice: include a partner-outside-basis worksheet with the K-1 package as a service to the partner, even though it is not statutorily required. For 2018+, the IRS requires partners with outside basis loss limitation issues to file Form 7203 (for S corps) — no equivalent partnership form exists, but Form 6198 (at-risk) and Form 8582 (passive) interact.  _(§704(d); §752; §743(b))_
-
-### 14.2 §465 — at-risk limit
-
-- **At-risk limit and nonrecourse debt exclusion** — §465 further limits losses to the amount the partner is "at risk" — generally cash contributed + adjusted basis of contributed property + recourse debt allocated under §752 + qualified nonrecourse financing. Nonrecourse debt (other than QNF) is NOT at-risk. Result: an LLC member can have outside basis (because nonrecourse debt is included under §752) but no at-risk amount (because nonrecourse debt other than QNF is not at-risk). The loss clears §704(d) but is suspended under §465. Box 22 on K-1 — "more than one activity for at-risk purposes" — is checked when the partnership has more than one activity. The partner must compute at-risk on Form 6198 separately for each activity.  _(§465; §752; §704(d))_
-
-### 14.3 §469 — passive activity loss limit
-
-- **Passive activity loss limit and participation tests** — §469 limits passive activity losses to passive activity income. A loss that clears §704(d) and §465 may still be suspended under §469 if the activity is "passive" with respect to the partner. A limited partner's interest in a partnership is presumptively passive (Reg. §1.469-5T(e)(3)) — though three exceptions allow limited partners to qualify as materially participating in specific factual circumstances. An LLC member's interest — the case law is mixed (Garnett, Thompson, etc.). The IRS abandoned its strict "all LLC members are limited partners" position after losing in Garnett. Today, LLC members can demonstrate material participation under any of the seven tests in Reg. §1.469-5T(a). Rental activities are per se passive under §469(c)(2), with two exceptions: real estate professionals (§469(c)(7)) and short-term rentals (where average customer use is ≤ 7 days, taking it out of the rental category). Box 23 on K-1 — "more than one activity for passive activity purposes" — is checked when the partnership has more than one activity. The partner aggregates on Form 8582.  _(§469; Reg. §1.469-5T(e)(3); Reg. §1.469-5T(a); §469(c)(2); §469(c)(7))_
-
-### 14.4 §461(l) — excess business loss
-
-- **§461(l) excess business loss threshold for 2025** — approximately $313,000 single / $626,000 MFJ — verify against Rev. Proc. 2024-40 USD  _(§461(l); P.L. 119-21 (OBBBA); Rev. Proc. 2024-40)_
-
-### 14.5 Ordering rules
-
-- **Loss limitation ordering** — Losses are tested in the following order at the partner level: 1. §704(d) outside basis limit; 2. §465 at-risk limit; 3. §469 passive activity limit; 4. §461(l) excess business loss limit. The partnership produces the K-1; the partner runs through the ordering on their own 1040.  _(§704(d); §465; §469; §461(l))_
-
-### 15.1 General partners
-
-- **SE tax rates on general partner distributive share** — 12.4% OASDI up to the SS wage base of $176,100 for 2025, 2.9% Medicare on all SE earnings, plus 0.9% Additional Medicare on SE earnings above the §1401(b)(2) thresholds percent (2025 SS wage base $176,100)  _(§1402(a); §1401(b)(2))_
-- **Guaranteed payments subject to SE tax** — Guaranteed payments under §707(c) for services are also subject to SE tax — for general partners and limited partners alike (see §15.2).  _(§707(c))_
-
-### 15.2 Limited partners — §1402(a)(13)
-
-- **Limited partner SE exclusion** — §1402(a)(13) excludes from net SE earnings: the distributive share of any item of income or loss of a limited partner, as such, other than guaranteed payments described in §707(c) to that partner for services actually rendered to or on behalf of the partnership to the extent that those payments are established to be in the nature of remuneration for those services. So a limited partner has: SE tax YES on guaranteed payments for services; SE tax NO on distributive share. This rule was enacted in 1977 when "limited partner" had a clear meaning under state law (a non-managing investor with limited liability). It has not been updated to reflect modern LLCs, LLPs, and LP-with-active-LP structures.  _(§1402(a)(13); §707(c))_
-
-### 15.3 The Soroban Capital Partners case (2023)
-
-- **Soroban functional test for limited partner exception** — In Soroban Capital Partners LP v. Commissioner, 161 T.C. No. 12 (November 28, 2023), the Tax Court held that the §1402(a)(13) "limited partner" exception is functional, not formal. A partner labeled a "limited partner" under state law is not automatically a limited partner for §1402(a)(13) purposes if they actively participate in the partnership's business. The Court applied a facts-and-circumstances test focused on the partner's actual role. In Soroban itself, the LPs of an investment-management LP performed substantial services (managing the funds, sourcing investments, client-facing work) and the Court held their distributive shares were subject to SE tax. The IRS has since pursued similar positions against fund managers and operating LPs.  _(Soroban Capital Partners LP v. Commissioner, 161 T.C. No. 12 (November 28, 2023))_
-
-### 15.4 Post-Soroban posture for 2025 returns
-
-- **Recommended conservative SE position and alternatives** — The IRS treats §1402(a)(13) as available only to truly passive limited partners. For working LP/LLC members: Conservative position (recommended for 2025 returns): subject the distributive share to SE tax to the extent it reflects compensation for services. This may mean a partial inclusion — e.g., the portion in excess of a reasonable return on capital is SE income. Aggressive position: continue to rely on §1402(a)(13) for state-law limited partners. High risk of audit; reviewer must confirm and document. Hybrid position (proposed Regs. 1.1402(a)-2, never finalized — the "1997 proposed regulations"): treat a partner as a "limited partner" only if (i) the partner has no personal liability for partnership debts, (ii) the partner has no authority to contract for the partnership, and (iii) the partner does not provide more than 500 hours of service per year. Many practitioners follow this informally. This skill flags any partner labeled limited but apparently providing material services and asks the reviewer to confirm SE treatment. The default Box 14A computation for limited partners includes only guaranteed payments for services; any deviation requires reviewer sign-off and documentation.  _(§1402(a)(13); proposed Regs. 1.1402(a)-2)_
-
-### 15.5 LLC member-managers
-
-- **LLC member-manager SE treatment** — LLC member-managers are treated more like general partners for SE purposes. The IRS position (and most practitioner consensus) is that an LLC member who participates in management has SE income on their distributive share.
-
-### 15.6 Box 14 mechanics
-
-- **Box 14 codes and SE exclusions** — Box 14, code A: net SE earnings (loss) — the partner's share of partnership SE income. Box 14, code B: gross farming or fishing income (for §1402 optional method). Box 14, code C: gross non-farm income (for §1402 optional method). Excluded from SE income (regardless of partner type): Rental real estate income (§1402(a)(1)); Dividends and interest not derived in the ordinary course of trade or business (§1402(a)(2)); Gain or loss on disposition of property other than inventory (§1402(a)(3)); §1231 gain; Capital gain.  _(§1402(a)(1); §1402(a)(2); §1402(a)(3))_
-
-## 16. §199A QBI Passthrough on K-1
-
-### 16.1 Background
-
-- **§199A QBI deduction rate for tax year 2025** — 20% percent (tax years beginning after Dec 31, 2024)  _(§199A, OBBBA P.L. 119-21 §70105)_
-- **§199A QBI deduction rate for tax year 2026+** — 20% (OBBBA § 70105 made § 199A permanent at 20%; the enacted law did not adopt the proposed 23% rate. From 2026 it also adds a $400 minimum deduction, inflation-adjusted, for applicable taxpayers with at least $1,000 of aggregate active QBI) percent (tax years beginning after Dec 31, 2025)  _(OBBBA P.L. 119-21 §70105)_
-- **§199A deduction** — Provides a deduction up to 20% of qualified business income (QBI) from a domestic trade or business operated as a sole proprietorship, partnership, S corporation, trust, or estate. For partnerships, QBI flows out to partners on K-1.  _(§199A (enacted by TCJA, made permanent at 20% by OBBBA P.L. 119-21 §70105))_
-
-### 16.2 What the partnership reports
-
-- **Partnership §199A reporting items** — The partnership must report, separately for each trade or business it operates (and for each underlying RPE it invests in): QBI (net qualified items of income, gain, deduction, loss); W-2 wages properly allocable, computed under Notice 2018-64 method (1, 2, or 3); UBIA of qualified property; SSTB indicator (health, law, accounting, actuarial, performing arts, consulting, athletics, financial services, investing/investment management, trading, dealing in securities, or any business where principal asset is reputation or skill of employees/owners); REIT dividends; PTP income; Aggregation if aggregated under Reg. §1.199A-4. These flow to K-1 Box 20 under Code Z in a single attached statement (Instructions for Form 1065 (2025); the legacy AA/AB/AC/AD §199A sub-codes no longer apply, and Code AA now carries §704(c) information).  _(Reg. §1.199A-4; Notice 2018-64)_
-
-### 16.3 What the partner does
-
-- **Partner-level §199A computation** — The partner computes the §199A deduction on their own Form 1040 using Form 8995 (simplified — under threshold) or Form 8995-A (full method — over threshold). See `us-qbi-deduction` skill. The partnership does not compute the partner's QBI deduction. It only supplies the inputs.  _(Form 8995 / Form 8995-A)_
-
-### 16.4 Aggregation election
-
-- **§1.199A-4(b)(1) aggregation election requirements** — If the partnership operates multiple trades or businesses, it may elect under Reg. §1.199A-4(b)(1) to aggregate them at the partnership level. The aggregation must satisfy: Same person or group owns ≥ 50% of each trade or business; All trades or businesses operate in the same tax year; None is an SSTB; Two of three 'factors of integration' — same products/services, shared facilities or centralized support, operated in coordination with or reliance on each other. Once made, the election is binding and must be disclosed each year on a §1.199A-4(c)(2) statement attached to the partnership return. The partner can also aggregate at their own level — but cannot disaggregate items the partnership has already aggregated.  _(Reg. §1.199A-4(b)(1), §1.199A-4(c)(2))_
-
-## 17. Common Attached Forms
-
-**Common Attached Forms**  _(https://www.irs.gov/instructions/i1065)_
-
-| Form | Trigger | Notes |
+| LLC that elected C corporation treatment (Form 8832) | `us-form-1120-c-corp` |
+| LLC that elected S corporation treatment (Form 2553) | the S corporation return skill (Form 1120-S); refer if none is loaded |
+| Single-member LLC with no election (disregarded) | `us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation` |
+| Partner-level self-employment tax computation (Schedule SE, wage base, rates) | `us-schedule-c-and-se-computation` |
+| Partner-level qualified business income deduction and its 2026 thresholds | `us-qbi-deduction` |
+| Section 179 and bonus depreciation figures | `us-section-179-and-bonus-depreciation` |
+| Real estate professional status and short-term rentals | `us-real-estate-professional-and-short-term-rentals` |
+| State partnership returns, pass-through entity tax elections, nonresident withholding | `us-pte-state-matrix` and the state's skill |
+| Partners' estimated tax | `us-quarterly-estimated-tax` |
+| Other 2026 federal changes | `us-2026-federal-tax-changes` |
+
+## Ask the client first
+
+1. **Who were the partners at any time in 2026?** Names, TINs, entity type of each (individual, C corporation, S corporation, partnership, trust, disregarded entity, IRA, estate, foreign), domestic or foreign, and anyone who joined or left during the year. This drives K-1 count, the Schedule B-2 test, the K-2/K-3 exceptions and the section 6698 penalty count.
+2. **What does the agreement say about payments to partners?** Each fixed amount (salary, draw, interest on capital, health insurance) and each profit-based amount, and whether any payment has a minimum. This decides guaranteed payment against distributive share (step 4).
+3. **What does each partner actually do?** Manager or not, hours, authority to sign contracts, personal liability. This decides Item G and Box 14 self-employment earnings (step 5).
+4. **Any foreign activity at all?** Foreign customers paid from abroad, foreign taxes on a broker 1099, foreign funds, foreign accounts, branches, or interests in foreign entities. This decides Schedules K-2 and K-3 (step 11).
+5. **Year-end balance sheet and receipts:** total receipts and total assets, prior-year tax basis capital for each partner, all loans with their guarantees and lenders, and any property contributed or distributed. This decides Schedules L, M-1, M-2, M-3, Item K1 to K3, Item L and Items M and N.
+6. **Was the 2025 return filed on time, and was a Form 7004 filed for 2026?** Needed for the due date, any penalty exposure and the penalty relief history (Filing and payment).
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| **4562** Depreciation and Amortization | Any depreciation, amortization, §179, listed property, or property placed in service this year | §179 expense flows out separately on K-1 (subject to §179(d)(8) partner-level limit) |
-| **4797** Sales of Business Property | §1231 gain/loss, §1245/1250 recapture, ordinary gain on §1239 sales | §1231 gain flows to K-1 Box 10 |
-| **8825** Rental Real Estate Income and Expenses | Any rental real estate activity | Replaces Schedule E logic for partnerships; output flows to K Line 2 / K-1 Box 2 |
-| **8990** §163(j) Limitation on Business Interest Expense | Partnership not eligible for §163(j) small-business exemption (average annual gross receipts > $31 million for 2025 under §448(c)) | Excess business interest is allocated to partners and carried at the partner level; complex 11-step §163(j) partner-level rule |
-| **6765** Credit for Increasing Research Activities | Qualified research expenses | Credit flows on K-1 Box 15 |
-| **8283** Noncash Charitable Contributions | Property contribution > $500 | Special partnership rules apply for partner-level deduction |
-| **8332** Release of Claim to Exemption | Not applicable to partnerships, but partners may need at their level | n/a |
-| **8082** Notice of Inconsistent Treatment or AAR | Filing an Administrative Adjustment Request, or partner is taking a position inconsistent with K-1 | For AAR — see §18 |
-| **8893** Election of Partnership-Level Tax Treatment | Legacy TEFRA — rarely used post-CPAR | Verify if old |
-| **8804/8805/8813** §1446 ECI Withholding for Foreign Partners | Any foreign partner with allocable share of ECI | **Out of scope for v0.1 — refer out** |
-| **8865** Return of US Persons With Respect to Certain Foreign Partnerships | US person owns ≥10% of a foreign partnership | **Out of scope for v0.1 — refer out** |
-| **8918** Material Advisor Disclosure | Material advisor to a reportable transaction | Rare; reviewer attention |
-| **8275 / 8275-R** Disclosure Statement | Any position requiring disclosure to avoid §6662 penalty | Attach when needed |
-| **Schedule M-3** | Total assets ≥ $10M at end of year (or other §1.6011-4 triggers) | Much more detailed than M-1; can be very time-intensive |
+| Late-filing penalty per partner per month, returns required to be filed in 2027 (section 6698(b)(1) as adjusted) | USD 260 | [Rev. Proc. 2025-32, section 4.55](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum months the section 6698 penalty runs | 12 | [26 U.S.C. 6698(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6698.htm) |
+| Late S corporation return penalty per shareholder per month, returns due in 2027 (do not confuse with 6698) | USD 260 | [Rev. Proc. 2025-32, section 4.56](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Failure to furnish a correct K-1 (section 6722), general rule, per statement required to be furnished in 2027 | USD 340 | [Rev. Proc. 2025-32, section 4.58](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Same, corrected within 30 days of the furnishing date | USD 60 | [Rev. Proc. 2025-32, section 4.58](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Due date, calendar-year return | 15th day of 3rd month after year end: 15 March 2027 | [Instructions for Form 1065 (2025), When To File](https://www.irs.gov/pub/irs-pdf/i1065.pdf) |
+| Form 7004 automatic extension of time to file | 6 months: 15 September 2027 | [Instructions for Form 7004](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Election out of the centralized audit regime: K-1s the partnership must furnish (plus S corporation partners' shareholders) | 100 or fewer | [26 U.S.C. 6221(b)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partI-sec6221.htm) |
+| Push-out election window after notice of final partnership adjustment | 45 days | [26 U.S.C. 6226(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partII-sec6226.htm) |
+| Push-out interest: underpayment rate with this substitution | 5 percentage points for 3 | [26 U.S.C. 6226(c)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partII-sec6226.htm) |
+| K-2/K-3 domestic filing exception: most creditable foreign tax on passive income shown on a payee statement | USD 300 | [Instructions for Schedules K-2 and K-3 (2025)](https://www.irs.gov/pub/irs-pdf/i1065s23.pdf) |
+| Schedule B question 4 (no Schedules L, M-1, M-2, Item L; small partnership K-2/K-3 exception): total receipts less than | USD 250,000 | [Instructions for Schedules K-2 and K-3 (2025), Small Partnership Filing Exception](https://www.irs.gov/pub/irs-pdf/i1065s23.pdf) |
+| Same test: total assets at year end less than | USD 1 million | [Instructions for Schedules K-2 and K-3 (2025), Small Partnership Filing Exception](https://www.irs.gov/pub/irs-pdf/i1065s23.pdf) |
+| Schedule M-3 required: total assets at year end, or adjusted total assets, of | USD 10 million or more | [Instructions for Form 1065 (2025), Item J](https://www.irs.gov/pub/irs-pdf/i1065.pdf) |
+| Schedule M-3 required: total receipts of | USD 35 million or more | [Instructions for Form 1065 (2025), Item J](https://www.irs.gov/pub/irs-pdf/i1065.pdf) |
+| Schedule M-3 required: a reportable entity partner owns | 50% or more | [Instructions for Form 1065 (2025), Item J](https://www.irs.gov/pub/irs-pdf/i1065.pdf) |
+| Mandatory e-filing of Form 1065 and K-1s: partners more than | 100 | [Instructions for Form 1065 (2025), Electronic Filing](https://www.irs.gov/pub/irs-pdf/i1065.pdf) |
+| Gross receipts test, 2026 (section 448(c); section 163(j) small business exemption, Form 8990 trigger) | USD 32,000,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Excess business loss threshold, 2026 (section 461(l)), single (partner level) | USD 256,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Excess business loss threshold, 2026 (section 461(l)), joint returns (partner level) | USD 512,000 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 
-## 18. Push-Out Election and Administrative Adjustment Request (AAR)
+The statutory base of the section 6698 penalty is USD 195, indexed under section 6698(e) and rounded down to a multiple of USD 5. The adjusted amount is keyed to the calendar year the return is **required to be filed**, not the tax year: USD 255 applied to 2025 returns filed in 2026 (Instructions for Form 1065 (2025), Penalties); USD 260 applies to 2026 returns filed in 2027. The Social Security wage base, the self-employment rates and the qualified business income thresholds are owned by `us-schedule-c-and-se-computation` and `us-qbi-deduction`.
 
-### 18.1 §6226 push-out election
+### Step 1: does the entity file Form 1065?
 
-- **§6226 push-out election window and mechanics** — After an IRS audit finalizes an imputed underpayment under CPAR, the partnership has 45 days from the date of the final partnership adjustment to elect under §6226 to push out the adjustment to reviewed-year partners. Mechanics: Partnership prepares 'Statements' (one per reviewed-year partner) showing each partner's share of the adjustments; Partnership files Form 8985 (Pass-Through Statement) with the IRS and furnishes Form 8986 (Partner's Share of Adjustments) to each reviewed-year partner; Each reviewed-year partner reports the adjustment on their own return for the year that includes the date the statement was furnished (the 'reporting year'); Interest accrues at the §6621(a)(2) underpayment rate determined by substituting 5 percentage points for 3 percentage points (i.e., 2 points above the standard underpayment rate). The push-out election is irrevocable once made.  _([IRC §6226; §6621; §6226(c)](https://www.law.cornell.edu/uscode/text/26/6226))_
-- **Push-out election deadline** — 45 days (from date of final partnership adjustment)  _(IRC §6226)_
+Section 6031(a) requires every partnership to file a return. It is an information return: the partnership pays no income tax (except an imputed underpayment after a BBA audit, step 13, and a section 7519 required payment for a section 444 fiscal year). Partners report their shares whether or not distributed.
 
-### 18.2 Administrative Adjustment Request (AAR) — §6227
-
-- **AAR mechanics and restrictions** — A partnership cannot file an 'amended Form 1065' the way a corporation files an amended 1120. Instead, the partnership files an Administrative Adjustment Request (AAR) to correct a previously filed BBA partnership return. Mechanics: Use Form 1065 with the 'Amended Return' or 'AAR' box appropriately checked (the 2025 form has a dedicated AAR indicator); Compute the imputed underpayment for the year of the original return (the 'reviewed year'); The partnership can elect to push out the adjustment to reviewed-year partners (similar to §6226), or pay the imputed underpayment at the partnership level; AAR cannot be filed after the IRS has mailed a Notice of Administrative Proceeding to the partnership; AAR is the BBA-era equivalent of the old 'Amended K-1' practice; partners cannot generally amend their own returns to reflect K-1 corrections without an AAR being filed (with very narrow exceptions). For BBA partnerships that have elected out of CPAR on Schedule B-2, AAR does not apply — the partnership files an amended Form 1065 and amended K-1s in the conventional manner, and partners amend their own 1040s.  _(IRC §6227)_
-
-### 18.3 Reviewer brief content
-
-- Confirm whether the partnership is in CPAR or has elected out
-- If in CPAR and corrections are needed → AAR (not amended return)
-- If elected out → amended return and amended K-1s
-- For AAR with push-out: confirm 45-day window from final adjustment / file the §6226 election timely / track partner-level reporting in the partner's reporting year
-
-## 19. LLC vs Partnership — Classification Reminder
-
-Reviewer should never confuse: LLC (state-law entity) — flexible default federal classification; Partnership (federal-tax classification) — the result of the default rules or a §761 / §301.7701-3 path. A multi-member LLC is a partnership for federal tax unless it has elected otherwise. An LLC that has elected C-corp or S-corp treatment files 1120 / 1120-S, not 1065. An SMLLC is disregarded, not a partnership. The two-spouse LLC in a community property state has an additional wrinkle. Under Rev. Proc. 2002-69, if (i) the LLC is wholly owned by a husband and wife as community property under state law, (ii) no person other than the spouses is considered an owner for federal tax purposes, and (iii) the business is not treated as a corporation, the spouses may elect to treat it as a disregarded entity (one Schedule C, one owner). This is not the same as the §761(f) Qualified Joint Venture election (which is for non-LLC ventures between spouses in any state). Both are alternatives to Form 1065 for spousal-owned businesses.
-
-- **Rev. Proc. 2002-69 disregarded entity election for spousal community-property LLC** — If (i) the LLC is wholly owned by a husband and wife as community property under state law, (ii) no person other than the spouses is considered an owner for federal tax purposes, and (iii) the business is not treated as a corporation, the spouses may elect to treat it as a disregarded entity (one Schedule C, one owner).  _(Rev. Proc. 2002-69)_
-
-## 20. Worked Examples
-
-### 20.1 Example 1 — Simple two-member LLC, services business, no foreign activity
-
-- Cetta Cutajar Consulting LLC, Maltese-American consultancy operating in Texas
-- Two members: Alice Cetta (50%) and Bob Cutajar (50%), both US citizens, individuals
-- Both members manage the business; LLC operating agreement labels both as "managing members"
-- 2025 results: Revenue $400,000, expenses $250,000, ordinary income $150,000
-- No foreign partners, no foreign-source income, no foreign assets, no foreign taxes
-- No property contributions (only cash at formation)
-- Bank loan of $50,000, neither member guaranteed, secured by accounts receivable (nonrecourse for §752)
-- Total assets at year-end: $180,000
-- Both members materially participate (full-time)
-
-*Form 1065:*
-- Page 1, Line 22 Ordinary business income: $150,000
-- Schedule B: Domestic LLC; cash method; two partners; no foreign activity
-- Schedule B-1: required (each individual owns 50% of profit, loss, or capital, so the partnership answers "Yes" to Schedule B, question 2b)
-- Schedule B-2: **Elect out of CPAR** — two individual eligible partners, well under 100
-- Partnership Representative: Alice Cetta (managing partner, US citizen, US address); DI not required (PR is an individual)
-- Schedule K Line 1: $150,000
-- Schedule L: not required (assets $180K < $1M and receipts $400K > $250K — actually triggered by receipts; **Schedule L is required**); reviewer to confirm
-- Schedule M-1 / M-2: required (because L is required)
-- Schedule K-2 / K-3: **Not required** — Domestic Filing Exception satisfied (no foreign activity, all US individual partners, partner notifications sent by Jan 15, 2026, no partner requested K-3 by 1-month date)
-
-- Part II, Item G: General partner or LLC member-manager (because she manages and has unlimited management authority within the LLC; SE-exempt status under §1402(a)(13) is not available)
-- Item J: Profit/loss/capital 50% / 50% / 50%
-- Item K: Nonrecourse $25,000 (50% of $50K Tier-3 allocation)
-- Item L (tax basis):
-  - Beginning capital: $0 (formation, first year)
-  - Capital contributed: cash contributed at formation
-  - Current year net income: $75,000
-  - Withdrawals: per partnership records
-- Part III:
-  - Box 1: $75,000 ordinary business income
-  - Box 14, code A: $75,000 net SE earnings (full distributive share — Alice is a managing LLC member, fully subject to SE)
-  - Box 20, code Z: §199A statement — QBI $75,000, no W-2 wages (no employees), no UBIA (services business, minimal qualified property), SSTB indicator: **YES** (consulting is an SSTB under §199A(d)(2)(A))
-  - Box 22: not checked (one activity)
-  - Box 23: not checked (one activity, both members material participants — non-passive)
-- Same for Bob.
-
-- Consulting is an SSTB → at Alice and Bob's individual level, their QBI deduction phases out if taxable income exceeds the 2025 §199A SSTB phase-in threshold ($197,300 single / $394,600 MFJ for 2025; fully phased out at $247,300 / $494,600). This is a partner-level computation; the partnership only flags.
-- SE tax: $75,000 each at full SE rates. Approximately 14.13% net effective SE rate (taking into account the 92.35% adjustment, the 12.4% OASDI up to $176,100 and 2.9% Medicare). See `us-schedule-c-and-se-computation` for partner-level numbers.
-- §6698 calendar: file by March 16, 2026 (March 15 is Sunday). Reminder set.
-
-- **2025 §199A SSTB phase-in threshold, single** — $197,300 (2025, Rev. Proc. 2024-40; fully phased out at $247,300; OBBBA § 70105 widens the phase-in range to $75,000, $150,000 joint, from 2026) USD (verify against Rev. Proc. 2024-40)  _(Rev. Proc. 2024-40)_
-- **2025 §199A SSTB phase-in threshold, MFJ** — $394,600 (2025, Rev. Proc. 2024-40; fully phased out at $494,600; OBBBA § 70105 widens the joint phase-in range to $150,000 from 2026) USD (verify against Rev. Proc. 2024-40)  _(Rev. Proc. 2024-40)_
-- **OASDI portion of SE tax rate up to wage base** — 12.4 percent (up to $176,100)  _(see `us-schedule-c-and-se-computation`)_
-- **OASDI wage base** — $176,100 USD  _(see `us-schedule-c-and-se-computation`)_
-- **Medicare portion of SE tax rate** — 2.9 percent  _(see `us-schedule-c-and-se-computation`)_
-- **SE tax net earnings adjustment factor** — 92.35 percent  _(see `us-schedule-c-and-se-computation`)_
-- **Form 1065 filing deadline reminder 2026** — March 16, 2026 (March 15 is a Sunday)  _(§6698)_
-
-### 20.2 Example 2 — Partnership with one foreign partner, triggering K-3
-
-- Global Software Partners LLP, Delaware LLP
-- Three partners: US Corp Inc. (40%, C-corporation, Delaware), Marie Dubois (30%, French citizen and tax resident of France, individual), Tomas Kowalski (30%, US resident alien with green card, individual)
-- 2025 ordinary business income: $1,200,000
-- Two foreign customers paid the partnership: customer X (German GmbH) paid €200,000, customer Y (Japanese KK) paid ¥10,000,000. No physical presence in those countries; no permanent establishment under treaties; no foreign taxes withheld at source.
-- The partnership has a brokerage account that holds $500,000 in international mutual funds — produced $25,000 of foreign dividends with $3,500 of foreign tax withheld (reported on broker 1099-DIV).
-- Marie does not work in the US; she is a passive investor.
-- US Corp Inc and Tomas are active.
-
-- **Schedule B-2 election out?** — No. The partnership has a foreign partner (Marie). Foreign individuals are not eligible partners under §6221(b). The partnership stays in CPAR. Partnership Representative: US Corp Inc. (entity), with a Designated Individual (a US employee of US Corp Inc.).  _(§6221(b))_
-- **K-2/K-3 required?** — Yes, both triggers fire: Foreign partner (Marie) — automatic K-3 requirement; Foreign-source income (foreign dividends, foreign tax). Domestic Filing Exception does not apply because (1) there is a foreign partner, (2) there is foreign-source income with foreign taxes.  _(Domestic Filing Exception)_
-
-- Part I — basic international information
-- Part II — FTC limitation: split foreign-source vs US-source; the $25,000 foreign dividends are passive-category income
-- Part III — allocable deductions
-- Part X — foreign partners' character & source (Marie's income — what is and is not US-source ECI)
-- Part IX — §1446 withholding (Marie's allocable share of ECI is subject to §1446; partnership must withhold; this is **out of scope** for v0.1 — refer to a §1446 specialist; the partnership likely owes withholding on Marie's $360,000 distributive share of the $1.2M business income to the extent ECI)
-
-- Item G: Limited partner / other LLC member (she is a non-managing passive investor)
-- Item H1: Foreign
-- Item I1: Individual
-- Box 1: $360,000 ordinary business income (30%)
-- Box 14: Marie's SE earnings — **zero** for §1402(a)(13) limited-partner exclusion **even if Soroban applied**, because as a non-US person she is not subject to SE tax in any case (§1402(b) — net earnings from SE include earnings only of a "United States citizen or resident"; Marie is neither, assuming she is not a US tax resident)
-- Box 16: K-3 attached — Yes
-- Box 21: foreign tax — Marie's allocable share of $3,500 foreign tax
-- K-3 attached covers Marie's portion of foreign-source income, deductions, FTC info, and §1446 ECI withholding statement
-
-- Item G: General partner (as a C-corp partner, the SE question is moot)
-- Item H1: Domestic
-- Item I1: Corporation
-- Box 1: $480,000 (40%)
-- Box 14: not applicable (C-corp partner)
-- K-3 attached with C-corp specific items (no FTC limitation for individual purposes; instead, §901/§902 treatment at the C-corp level for the corp's own 1120)
-
-- Item G: General partner or LLC member-manager
-- Item H1: Domestic (US resident alien)
-- Item I1: Individual
-- Box 1: $360,000 (30%)
-- Box 14, code A: $360,000 (fully SE — Tomas is a managing partner who materially participates)
-- Box 20: §199A statement — partnership is in software development (non-SSTB under §199A); reviewer should confirm
-- K-3 with FTC info for Tomas's $7,500 share of foreign dividends and $1,050 share of foreign taxes
-
-- §1446 withholding on Marie — partnership owes 37% (highest individual rate) on Marie's allocable share of ECI; partnership must file Forms 8804/8805/8813 quarterly. **Out of scope for v0.1.** Refer to §1446 specialist before finalizing.
-- Marie's foreign-status W-8BEN must be in the file (verify)
-- Schedule M-3 required if assets ≥ $10M — verify (likely yes for a $1.2M income company with international ops)
-- Schedule K-2 / K-3 production — many hours of preparer time; budget accordingly
-
-- **§1446 withholding rate on Marie's ECI** — 37 percent (highest individual rate)  _(§1446)_
-- **§1446 ECI withholding — out of scope** — Out of scope for v0.1. Refer to §1446 specialist before finalizing.  _(§1446; Forms 8804/8805/8813)_
-
-### 20.3 Example 3 — Family LP with §704(c) contributed property and limited-partner SE issue
-
-- Cutajar Family Real Estate Limited Partnership (FLP), formed 2020 under Texas law
-- General Partner: Cutajar Management LLC (a Texas SMLLC wholly owned by Michael Cutajar, individual)
-- Limited Partners: Michael Cutajar (49%, founder), Sofia Cutajar (his adult daughter, 25%), Marcus Cutajar (his adult son, 25%); the GP holds 1%
-- 2020 — at formation, Michael contributed a Houston rental property with:
-  - FMV at contribution: $1,000,000
-  - Adjusted tax basis at contribution: $200,000
-  - Mortgage assumed by partnership: $400,000 (qualified nonrecourse — commercial bank, secured by the property, real-property trade or business)
-- 2025 — partnership operates the rental, has additional properties acquired with bank financing
-- Michael actively manages the FLP (he is the operating brain), through the GP LLC
-- Sofia and Marcus are pure passive investors; neither provides services
-- 2025 results:
-  - Net rental real estate income: $80,000 (after depreciation)
-  - Net §1231 gain on sale of one property: $200,000 (built-in gain layer attributable to Michael's 2020 contribution — see below)
-  - Interest income on operating cash: $5,000
-- §704(c) accounting: partnership uses **traditional method with curative allocations** under Reg. §1.704-3(c)
-
-**§704(c) layer analysis (2020 contribution)**  _(Reg. §1.704-3(c))_
-
-| Item | Tax basis | §704(b) book |
+| Entity | Default federal classification | Form 1065? |
 | --- | --- | --- |
-| Property at contribution | $200,000 | $1,000,000 |
-| Built-in gain layer (FMV − basis) | $800,000 | — |
+| LLC with two or more members, no election | Partnership | Yes |
+| Same LLC, Form 8832 election to corporation | Corporation | No: Form 1120 |
+| Same LLC, Form 2553 S election | S corporation | No: Form 1120-S |
+| General partnership, LP, LLP, LLLP | Partnership | Yes |
+| Single-member LLC, no election | Disregarded | No: Schedule C, E or F |
+| LLC owned only by spouses as community property, Rev. Proc. 2002-69 treatment chosen | Disregarded (one owner) | No |
+| Spouses' qualified joint venture under section 761(f), not held through a state-law entity | Two Schedules C | No |
+| Co-owners of rental property only, no business beyond customary services | Co-ownership, not a partnership | No: each files Schedule E |
+| Investment club | Usually a partnership | Yes, unless a valid section 761(a) election |
 
-Through 2024, depreciation has been allocated under §704(c) traditional+curative method. In 2025, the property is sold. Gain on disposition: Sale price: $1,300,000; Adjusted tax basis at sale (after depreciation): $120,000; Total tax gain: $1,180,000; Of which: built-in gain attributable to Michael under §704(c) = $800,000 (less recapture already allocated through depreciation); Remaining "common" gain split per partnership shares: ~$380,000
+- **Section 761(a) election out of subchapter K.** Available only for investment-only arrangements, joint production, extraction or use of property, and a few narrow cases, where partners can compute their income without a partnership computation (Treas. Reg. 1.761-2). Rare. If claimed, check it was made on a timely Form 1065 for the first year and that no Form 1065 has been filed since.
+- **Rev. Proc. 2002-69 and section 761(f) are different.** The first is for an LLC held by spouses as community property under state law with no other owner; the second is for spouses' joint ventures not held through a state-law entity, in any state. Both replace Form 1065 with Schedule C reporting.
+- **Foreign partnerships.** A foreign partnership files Form 1065 if it has income effectively connected with a US business or US-source gross income, subject to the exceptions in Treas. Reg. 1.6031(a)-1(b)(3). A US person with a large interest in a foreign partnership may also owe Form 8865; both can apply. This skill flags Form 8865 but does not prepare it (R-1065-8865).
 
-- **Schedule B-2 election out eligibility** — Possible. Eligibility check: 4 partners (1 GP + 3 LPs). Under 100. ✓ Cutajar Management LLC (the GP) — this is an SMLLC owned by Michael (an eligible individual). A disregarded entity is not an eligible partner, so the SMLLC GP is ineligible. ✗ Michael, Sofia, Marcus — individuals. ✓ → Schedule B-2 election out is NOT available while the SMLLC is a partner; the partnership stays in CPAR and must designate a Partnership Representative.  _([Reg. §301.6221(b)-1(b)(3)(ii)](https://www.irs.gov/instructions/i1065))_
-- **§1402(a)(13) limited-partner SE issue analysis** — Cutajar Management LLC (the GP): the GP receives a 1% allocation. The GP itself is a partnership-tax disregarded entity (SMLLC), so its allocation flows through to Michael. But Michael's distributive share via the GP is a general-partner allocation, subject to SE tax. Net rental real estate income is excluded from SE under §1402(a)(1) regardless — so Michael's GP-routed share of $80,000 is not SE income. The §1231 gain is also excluded (§1402(a)(3)). The interest income is excluded (§1402(a)(2)). Michael's LP share (49%) — Michael is labeled an LP but he actively manages through the GP. Under Soroban (2023), a labeled-LP who provides material services is not necessarily an LP for §1402(a)(13). But: Rental real estate income is excluded from SE in any case (§1402(a)(1)); §1231 gain is excluded (§1402(a)(3)); Interest is excluded; Net SE income at the partnership level = $0 regardless of LP/GP characterization. So in this fact pattern, the LP/GP characterization for §1402 is moot because the income items are all per-se non-SE.  _(§1402(a)(13); §1402(a)(1); §1402(a)(2); §1402(a)(3); Soroban Capital Partners LP v. Commissioner)_
+### Step 2: tax year and due date
 
-However: if the FLP also had a side business of "property management services" charged at fair market value to third parties, that service revenue would be ordinary trade-or-business income subject to SE rules and the Soroban question would matter. Reviewer to confirm no service business is being conducted alongside the rental.
+1. **Tax year.** Section 706(b) requires the partnership's required taxable year: the majority-interest year, then the principal partners' year, then least aggregate deferral. Another year needs a section 444 election (with the section 7519 required payment) or a business-purpose year under Rev. Proc. 2002-39. Most partnerships are calendar year.
+2. **Original due date:** 15th day of the 3rd month after year end. Calendar 2026: **Monday 15 March 2027**. Fiscal year ending 30 June 2027: 15 September 2027. When the date is a Saturday, Sunday or legal holiday, the next business day.
+3. **Extension:** Form 7004, filed by the original due date, gives an automatic 6 months (calendar 2026: Wednesday 15 September 2027). No reason is needed. A Form 7004 filed late is no extension, and the penalty runs from the original due date.
+4. **K-1s** go to partners by the return due date, including extensions. Partners waiting for a September K-1 usually extend their own return to 15 October 2027.
 
-1. §704(c) — built-in gain on sale of contributed property — verify the historic depreciation allocations under traditional+curative, confirm the remaining built-in gain layer is fully recognized in 2025, and ensure Item M / Item N on the 2025 K-1s reflect the closing-out of Michael's §704(c) layer.
-2. §752 — qualified nonrecourse financing — the original $400K mortgage and the additional bank loans (assume all real-property QNF). Allocate per Reg. §1.752-3 three-tier rule:
-   - Tier 1 (partnership minimum gain): based on depreciation that exceeds book depreciation
-   - Tier 2 (§704(c) gain): Michael gets first allocation
-   - Tier 3 (excess): per partnership agreement, typically per profit-sharing ratio
-3. §469 passive activity — Sofia and Marcus are clearly passive (rental is per se passive; no real estate professional status). Their net rental income is passive income but the §1231 gain is portfolio/§1231 not passive (Box 10 on K-1; partner-level §469 grouping rule applies).
-4. Michael's real estate professional status (§469(c)(7)) — verify; if he qualifies, his rental income/loss is non-passive at his level.
-5. Schedule B-2: not available (the SMLLC GP is a disregarded entity, an ineligible partner).
-6. K-3: Domestic Filing Exception likely applies (all US individual/SMLLC partners, no foreign activity). Confirm partner notifications and no K-3 requests.
-7. Schedule L: required (assets very likely > $1M for a $1M+ contribution + appreciation + multiple properties).
-8. Schedule M-3: required if year-end assets ≥ $10M — verify against rollforward.
+### Step 3: ordinary business income and separately stated items
 
-- Item G: Limited partner / other LLC member (labeled LP; reviewer documents the management activity is via the GP, not the LP interest)
-- Item L tax basis capital — full rollforward including the §704(c) closing out
-- Item M: Yes (contributed property with built-in gain)
-- Item N: net §704(c) remaining gain/loss — starts at the 1/1/2025 balance, ends at zero (property fully sold)
-- Box 2: net rental real estate income, his share
-- Box 10: §1231 gain, his share (including the §704(c) curative allocation to Michael)
-- Box 14: $0 (rental and §1231 excluded from SE)
-- Box 16: K-3 not attached (DFE)
-- Box 20: §199A — net rental real estate may or may not be QBI depending on Rev. Proc. 2019-38 safe harbor; reviewer determines
+1. Compute page 1 ordinary business income (loss), line 23 in the 2025 layout: receipts less deductions, with guaranteed payments to partners on line 10 (step 4).
+2. Move every separately stated item to Schedule K: rental real estate (Form 8825, line 2), other rental, guaranteed payments (line 4a services, 4b capital, 4c total), interest, dividends, royalties, capital gains, section 1231 gain (Form 4797), section 179 (Form 4562), charitable contributions, investment interest, credits, self-employment earnings (line 14), and other items.
+3. Allocate each Schedule K line among the partners under the agreement (subject to section 704(b), step 7) and enter each share on the K-1. **Reconcile:** the sum of every K-1 box equals the matching Schedule K line, partner by partner. Any difference is a preparer error. Put the reconciliation table in the reviewer brief.
 
-**Property at contribution**
+### Step 4: guaranteed payment or distributive share
 
-| Item | Value |
+This is the decision most often got wrong on partnership returns.
+
+1. **The test (section 707(c)).** A payment to a partner for services or for the use of capital is a guaranteed payment **to the extent it is determined without regard to the income of the partnership**. It is treated as made to a non-partner only for gross income (section 61(a)) and, subject to section 263, for the deduction (section 162(a)).
+2. **If the amount depends on partnership income** (a percentage of profits, a priority allocation of profits), it is part of the distributive share, not a guaranteed payment. The Form 1065 instructions say plainly: do not include distributive shares of partnership profits on line 10.
+3. **Minimum guarantees (Treas. Reg. 1.707-1(c), Example 2).** A partner entitled to a share of income but not less than a fixed sum has a guaranteed payment only for the shortfall: 30% of income with a USD 10,000 floor, income of USD 20,000, gives a USD 6,000 distributive share and a USD 4,000 guaranteed payment; with income of USD 60,000 there is no guaranteed payment.
+4. **Fixed payment plus a share (Example 3).** A partner paid USD 10,000 plus 30% of income or loss, where the partnership has a USD 9,000 loss after the payment, reports the USD 10,000 as ordinary income and separately a USD 2,700 share of the loss (subject to section 704(d)).
+5. **Where it goes:**
+   - Partnership: deduct on page 1, line 10, if allocable to a trade or business and not capitalized. Payments for syndication are guaranteed payments but capital expenditures: not deductible on line 10, still reported on Schedule K line 4b and K-1 box 4b. Health insurance paid for a partner (and spouse, dependents, children under 27) is a guaranteed payment on line 10.
+   - Schedule K line 4a (services), 4b (capital), 4c (total); K-1 boxes 4a, 4b, 4c.
+   - Partner: ordinary income in the partner's tax year in which the partnership year ends, whether or not paid, and even when the partnership has a loss.
+6. **Consequences that make the choice matter:**
+   - **Self-employment:** guaranteed payments for services are net earnings from self-employment for general and limited partners alike (section 1402(a)(13), step 5).
+   - **Qualified business income:** guaranteed payments under section 707(c) and payments under section 707(a) for services are not QBI (Instructions for Form 1065 (2025), section 199A list). A profit share from the same business is QBI.
+   - **Passive activity:** guaranteed payments for services are not passive income; guaranteed payments for capital are treated as interest for section 469.
+   - **Property in satisfaction:** a transfer of partnership property to pay a guaranteed payment is a sale or exchange, not a distribution (Rev. Rul. 2007-40).
+7. **Section 707(a) payments** to a partner acting other than as a partner (an arm's-length fee, rent, a loan) are third-party transactions, not guaranteed payments. Disguised payments for services and disguised sales (section 707(a)(2)) are flagged for the reviewer (R-1065-707A).
+
+### Step 5: self-employment earnings, Schedule K line 14 and K-1 box 14
+
+1. **General partners and LLC member-managers:** box 14, code A is the partner's distributive share of trade or business ordinary income plus guaranteed payments, using the worksheet in the Form 1065 instructions. Excluded for everyone (section 1402(a)(1) to (3)): rentals from real estate (unless a dealer, or significant services to occupants), dividends and interest not received in a dealer business or on business receivables, royalties not received in a trade or business, and gains on property other than inventory, which takes out section 1231 and capital gains. A group investment program's earnings are generally not self-employment earnings for any partner.
+2. **Limited partners:** the distributive share is excluded; only guaranteed payments for services actually rendered are included (section 1402(a)(13)). The instructions add that whether a partner is a limited partner for this purpose depends on section 1402(a)(13), not the label.
+3. **Who is a limited partner for section 1402(a)(13)?** The law is moving:
+   - *Soroban Capital Partners LP v. Commissioner*, 161 T.C. 310 (2023): a functional test; the exclusion is for passive investors, and the partners of an investment manager who ran the business were not limited partners.
+   - *Sirius Solutions, L.L.L.P. v. Commissioner*, No. 24-60240 (5th Cir.), substituted opinion filed 12 August 2026 on rehearing: the earlier opinion (165 F.4th 374) was withdrawn. The court held the original public meaning of "limited partner" is **a partner who plays no significant role in managing or running a business**, rejected the Tax Court's reliance on Soroban's passive-investor standard without that analysis, and vacated and remanded. It binds courts in the Fifth Circuit (Texas, Louisiana, Mississippi); elsewhere the Tax Court follows Soroban.
+   - The 1997 proposed regulations (proposed Treas. Reg. 1.1402(a)-2) were never finalized: limited partner only if no personal liability, no authority to contract, and no more than 500 hours of service a year. Some practitioners still use them as a guide.
+4. **The default in this skill:** a state-law limited partner or non-managing LLC member who plays no significant management role gets box 14 code A of guaranteed payments for services only. A partner labeled limited who manages, signs contracts or works substantially in the business is flagged (R-1065-SE), and the reviewer decides and documents the position; the conservative position subjects the distributive share to self-employment tax to the extent it pays for services. LLC member-managers are treated as general partners.
+5. **Codes B and C** carry gross farming or fishing income and gross nonfarm income for the partner's optional method. Do not complete box 14 for a partner that is an estate, trust, corporation, exempt organization or IRA.
+6. **Nonresident alien partners** have no net earnings from self-employment, whatever their role (section 1402(b), unless a totalization agreement says otherwise).
+7. The partner computes the tax on Schedule SE: see `us-schedule-c-and-se-computation`.
+
+### Step 6: the K-1 items, 2025 layout
+
+| Item or box | What goes there | Watch for |
+| --- | --- | --- |
+| G | General partner or LLC member-manager, or limited partner or other LLC member | Drives box 14 (step 5) |
+| H1, H2 | Domestic or foreign; the owner's TIN and name if the partner is a disregarded entity | Never use a disregarded entity's TIN in item E |
+| I1, I2 | Entity type; retirement plan box | IRA partners: an EIN is required after 2025 for an IRA receiving UBTI (box 20 code AR) |
+| J | Profit, loss and capital percentages, beginning and end; box if a decrease is from a sale or exchange | |
+| K1 | Share of liabilities: nonrecourse, qualified nonrecourse financing, recourse, beginning and end | Sum over K-1s equals partnership totals (step 8) |
+| K2, K3 | K2: liabilities include lower-tier partnerships. K3: any liability subject to the partner's guarantee or other payment obligation | |
+| L | Capital account, **tax basis method only**: beginning, contributed (cash plus tax basis of property), current-year net income (loss), other increase (decrease), withdrawals and distributions, ending | Not required if Schedule B question 4 is "Yes" |
+| M | Did the partner contribute property with built-in gain or loss | Attach a statement if "Yes" |
+| N | Share of net unrecognized section 704(c) gain or loss, beginning and end | |
+| Boxes 1 to 3 | Ordinary business income; net rental real estate; other net rental | |
+| 4a, 4b, 4c | Guaranteed payments for services, for capital, total | Step 4 |
+| 5 to 10 | Interest; dividends (6a ordinary, 6b qualified, 6c dividend equivalents); royalties; short-term gain; long-term gain (9a, collectibles 9b, unrecaptured section 1250 9c); net section 1231 gain | |
+| 11, 12, 13 | Other income (coded); section 179 deduction; other deductions (coded) | Section 179 is limited at partner level |
+| 14 | Self-employment earnings: A net earnings, B gross farming or fishing, C gross nonfarm | Step 5 |
+| 15 | Credits (coded) | |
+| 16 | Schedule K-3 attached | Step 11 |
+| 17, 18, 19 | AMT items; tax-exempt income and nondeductible expenses; distributions (additional codes active for 2025) | |
+| 20 | Other information: code Z section 199A, code AA section 704(c), code ZZ other (including section 1062 farmland sale information), code AR, code AZ preformation expenditure reimbursement | Step 10 |
+| 21 | Foreign taxes paid or accrued | |
+| 22, 23 | More than one activity for at-risk purposes; for passive activity purposes | Partner computes per activity |
+
+**Tax basis capital (Item L).** Required since tax year 2020 (Notice 2020-43, then the 2020 instructions). GAAP, section 704(b) book and "other" methods are not allowed on Item L, although the partnership may keep section 704(b) accounts internally. Tax basis capital is not outside basis: outside basis also includes the partner's section 752 share of liabilities and any section 743(b) adjustment, and a contributor's capital and outside basis differ by section 704(c) items. A partnership still showing section 704(b) or GAAP capital and no tax basis roll-forward has not done the 2020 transition (modified outside basis, modified previously taxed capital, or section 704(b) less section 704(c) methods): stop and refer (R-1065-CAPITAL). Negative tax basis capital is shown as a negative figure on Item L; it is not by itself gain, but a distribution above outside basis is gain under section 731(a)(1), so flag it.
+
+### Step 7: allocations, section 704(b) and section 704(c)
+
+1. **Section 704(a) and (b).** The agreement sets distributive shares, but an allocation without substantial economic effect is reallocated by the partner's interest in the partnership.
+2. **Economic effect (Treas. Reg. 1.704-1(b)(2)(ii)(b)):** capital accounts kept under Treas. Reg. 1.704-1(b)(2)(iv); liquidating distributions follow positive capital accounts; a partner with a deficit at liquidation must restore it. Without a deficit restoration obligation, the alternate test needs a qualified income offset.
+3. **Substantiality (Treas. Reg. 1.704-1(b)(2)(iii)):** the allocation must have a real chance of changing what the partners get apart from tax. Shifting allocations and transitory allocations (offset within five years) are presumed not substantial.
+4. **Partner's interest in the partnership:** relative contributions, interests in economic profit and loss, in cash flow, and in liquidation proceeds.
+5. **What this skill does:** applies the agreement as written and flags (R-1065-704B) an agreement that liquidates by units rather than capital accounts, a special allocation with no stated business reason, a loss that pushes a partner below zero section 704(b) capital with neither restoration obligation nor qualified income offset, and section 704(b) accounts never kept. It does not redesign allocations.
+6. **Section 704(c).** Income, gain, loss and deduction on contributed property must take account of the difference between its tax basis and its value at contribution: built-in gain or loss stays with the contributor. Methods (Treas. Reg. 1.704-3), chosen property by property: traditional (limited by the ceiling rule), traditional with curative allocations, or remedial. Forward section 704(c) arises on contribution; reverse section 704(c) layers arise on a revaluation under Treas. Reg. 1.704-1(b)(2)(iv)(f) (a new partner, a non-pro-rata distribution, a profits-interest grant under Rev. Proc. 93-27). Report Item M, Item N and box 20 code AA. If property came in at a value different from basis and no method is documented, stop and refer (R-1065-704C).
+
+### Step 8: liabilities, section 752
+
+1. An increase in a partner's share of liabilities is a deemed cash contribution (section 752(a)); a decrease is a deemed distribution (section 752(b)) and can trigger gain under section 731.
+2. **Recourse:** the partner (or related person) bearing the economic risk of loss, by constructive liquidation (Treas. Reg. 1.752-2), takes 100% of it.
+3. **Nonrecourse** (Treas. Reg. 1.752-3): tier 1, share of partnership minimum gain; tier 2, section 704(c) gain on the property securing the debt, to the contributor; tier 3, excess nonrecourse liabilities by the agreement (usually profit shares).
+4. **Qualified nonrecourse financing** (section 465(b)(6)): nonrecourse debt from a qualified lender, secured by real property used in the activity of holding real property. It counts as at-risk.
+5. **LLCs:** members are not personally liable, so LLC debt is usually nonrecourse for section 752 even if commercially recourse to the LLC, unless a member guarantees it; the guarantor then takes it. A guarantee is a common way to give a partner basis for losses. Tick K3 when any liability is subject to a partner's guarantee.
+6. Classify every loan from the documents, allocate, report Item K1, and flag any partner whose outside basis including the section 752 share is too low for the year's allocated loss.
+
+### Step 9: the partner's loss limits (pointers; the partner applies them)
+
+Losses are tested at partner level in this order:
+
+1. **Outside basis, section 704(d).** A loss above year-end outside basis is suspended and carried forward. Basis: contributions (cash and adjusted basis of property), plus the section 752 share, plus allocated income including tax-exempt income, minus distributions, minus allocated losses and nondeductible expenses, adjusted for section 743(b). The partnership does not track outside basis, but supplying a basis worksheet with the K-1s is good practice.
+2. **At-risk, section 465 (Form 6198).** Cash and property contributed, recourse debt allocated, and qualified nonrecourse financing. Other nonrecourse debt is not at risk: an LLC member can clear section 704(d) and still be stopped here. Box 22 is checked when there is more than one activity.
+3. **Passive activity, section 469 (Form 8582).** A limited partner's interest is presumptively passive (Treas. Reg. 1.469-5T(e)(3)), with three tests that still let a limited partner materially participate. LLC members may use all seven tests in Treas. Reg. 1.469-5T(a) (*Garnett*, 132 T.C. 368 (2009); *Thompson*, 87 Fed. Cl. 728 (2009)). Rentals are passive per se (section 469(c)(2)) except for real estate professionals (section 469(c)(7)) and rentals with average customer use of 7 days or less. Box 23 is checked when there is more than one activity. See `us-real-estate-professional-and-short-term-rentals`.
+4. **Excess business loss, section 461(l).** For 2026, net business losses above USD 256,000 (USD 512,000 for joint returns) are disallowed and carried forward as a net operating loss. The partner applies it.
+
+### Step 10: section 199A information, box 20 code Z
+
+The partnership reports, for each trade or business (and each one it holds through another entity): qualified business income items, W-2 wages allocable to it (Notice 2018-64 methods), unadjusted basis of qualified property, whether it is a specified service trade or business, any aggregation, section 199A REIT dividends and PTP income. In the 2025 layout all of this is one statement under **code Z**; code AA is now section 704(c) information, not a section 199A code. Guaranteed payments are not QBI (step 4).
+
+**Aggregation at partnership level** (Treas. Reg. 1.199A-4(b)(1)): the same person or group owns 50% or more of each business, same tax year, none is a specified service business, and two of three integration factors (same or customary products or services, shared facilities or centralized functions, operated in coordination). Once made it binds and must be disclosed every year (Treas. Reg. 1.199A-4(c)(2)). The partner can aggregate further but cannot split what the partnership aggregated. The partner's deduction, the 2026 thresholds and phase-in, and the 2026 minimum deduction are in `us-qbi-deduction`.
+
+### Step 11: Schedules K-2 and K-3
+
+1. **What they are.** Schedule K-2 is the partnership-level summary of international tax items; Schedule K-3 is each partner's share, furnished on the K-1 timetable. Since tax year 2021 they replace free-text foreign reporting on the K-1. A partnership completes only the parts relevant to its items or the requesting partner.
+2. **Who must file.** Any partnership with items relevant to partners' US international tax, withholding or reporting: foreign-source income, foreign taxes, foreign entities or branches, foreign partners, and so on.
+3. **Domestic filing exception** (2025 instructions). A domestic partnership (not a QDD partnership) need not file K-2 or furnish K-3 if all four hold for the tax year:
+   1. *No or limited foreign activity.* No foreign income taxes, no foreign-source income or loss, no interest in a foreign partnership, foreign corporation, foreign branch or foreign disregarded entity; or foreign activity limited to passive category income with not more than USD 300 of creditable foreign tax, shown on a payee statement (a broker or fund 1099).
+   2. *Eligible direct partners only.* US citizen or resident alien individuals; domestic decedents' estates, domestic grantor trusts and domestic non-grantor trusts with only US citizen or resident alien individual grantors and beneficiaries; S corporations; single-member LLCs disregarded into one of these; and (broadened for 2025) domestic partnerships whose direct partners are all of these types. No foreign partner, no C corporation partner.
+   3. *Notification.* By the time the K-1 is furnished, each partner is told (an attachment to the K-1 is enough) that it will not get a K-3 unless it asks.
+   4. *No request by the 1-month date.* No partner asks for K-3 information on or before the date 1 month before the partnership files Form 1065. From 2025 a request covers only that year unless the partner asks for later years specifically.
+4. **Small partnership filing exception** (new for 2025). A partnership answering "Yes" to Schedule B question 4 (receipts under USD 250,000, assets under USD 1 million, K-1s filed and furnished on time, no Schedule M-3) is also excepted from K-2 and K-3, with the same partner notification and the same 1-month request rule.
+5. **The 1-month date trap.** A request received on or before the 1-month date means the partnership must file K-2 and K-3 for the parts the requesting partner needs and give that partner the filed K-3 on the filing date. A request after the 1-month date does not take away the exception, but the partnership must give that partner a K-3 within 1 month of the request. For 2025 calendar returns on extension, the instructions put the latest 1-month date at 17 August 2026. Ask partners early (November or December).
+6. **Default.** Prepare K-2 and K-3 unless the intake confirms every condition of an exception in writing. A two-person domestic LLC holding an international mutual fund that pays more than USD 300 of foreign tax already fails criterion 1. If neither exception applies, the Form 1116 exemption exception in the same instructions may.
+
+### Step 12: Schedules B, B-1, L, M-1, M-2, M-3 and attached forms
+
+- **Schedule B-1** when question 2a or 2b is "Yes": an entity, or an individual or estate, owning 50% or more of profit, loss or capital directly or indirectly.
+- **Schedule B, question 4:** "Yes" only if receipts are under USD 250,000, assets under USD 1 million, K-1s are filed and furnished on time, and no Schedule M-3 is required. Then Schedules L, M-1, M-2, page 1 item F and K-1 Item L are not required. Any one condition failing means they are.
+- **Schedule M-3** instead of M-1 when year-end assets or adjusted total assets reach USD 10 million, receipts reach USD 35 million, or a reportable entity partner owns 50% or more on any day.
+
+| Form | When | Note |
+| --- | --- | --- |
+| 4562 | Depreciation, amortization, section 179 | Section 179 passes to partners in box 12; partner-level limit applies |
+| 4797 | Sales of business property, recapture | Section 1231 gain to box 10 |
+| 8825 | Rental real estate | To Schedule K line 2 and box 2 |
+| 8990 | Business interest limit, unless the section 448(c) test is met (2026: USD 32,000,000) | Excess business interest is allocated to partners and tracked by them |
+| 6765 | Research credit | Credit through box 15 |
+| 8283 | Noncash charitable contributions over USD 500 | |
+| 8082 | Paper AAR, or a partner's inconsistent position | Step 13 |
+| 8804, 8805, 8813 | Section 1446 withholding for foreign partners with effectively connected income | Refer (R-1065-1446) |
+| 8865 | US persons with interests in foreign partnerships | Refer (R-1065-8865) |
+| 8918, 8275, 8275-R | Material advisor disclosure; disclosure statements | Reviewer attention |
+| 1062 and Schedule A | Partners electing section 1062 instalments on qualified farmland sold to qualified farmers | Partnership supplies information and the covenant under box 20 code ZZ |
+
+### Step 13: the BBA centralized partnership audit regime
+
+1. **Default.** Since tax years beginning after 2017 (Bipartisan Budget Act of 2015, sections 6221 to 6241), an audit is run at partnership level for the reviewed year, and an imputed underpayment, at the highest section 1 or section 11 rate unless modified, is assessed against the partnership in the adjustment year. The adjustment-year partners bear it economically, even if they were not partners in the reviewed year. Terms: reviewed year (the year examined), adjustment year (the year the adjustment becomes final).
+2. **Relief inside the regime.** Modification of the imputed underpayment under section 6225(c) (tax-exempt partners, lower rates, amended partner returns). The push-out election under section 6226: within **45 days** of the notice of final partnership adjustment, the partnership furnishes Form 8986 statements to reviewed-year partners and files Form 8985; each takes the adjustment into account in the year the statement is furnished, with interest at the underpayment rate using 5 percentage points instead of 3. Irrevocable once made.
+3. **Election out (Schedule B-2, Schedule B question 33 in 2025).** Allowed for a year only if the partnership must furnish 100 or fewer K-1s (counting each shareholder of an S corporation partner), every partner is an individual, C corporation, S corporation, foreign entity that would be a C corporation if domestic, or estate of a deceased partner, the election is on a **timely** return including extensions, every partner's name and TIN is disclosed (and each S corporation partner's shareholders), and partners are notified. **Any one** of these partners blocks it: a partnership, a trust (including a grantor trust), a disregarded entity (including a single-member LLC owned by an eligible individual), an IRA, a nominee holding for another person, an estate of someone other than a deceased partner, or a foreign entity not like a C corporation. Spouses are two partners. The election is annual: it must be made again on each year's return.
+4. **Whether to elect out.** Small, stable partnership of a few individuals with no ineligible partner: elect out (audits partner by partner, no representative with sole authority, no partnership-level tax). Partnerships with changing partners: the regime keeps push-out available. Check whether a state pass-through entity tax election depends on the audit regime. Against electing out: separate audits of each partner, no push-out, refunds claimed partner by partner.
+5. **Partnership representative (section 6223).** Unless a valid election out is made, the partnership designates on each year's Form 1065 a partner or other person with substantial presence in the US: a US street address, a US TIN, a phone number with a US area code, and availability to meet the IRS in the US. If the representative is an entity, a designated individual meeting the same test is appointed. The representative has **sole authority**; the partnership and every partner are bound by its actions and any final decision. Designations last until a valid resignation, a revocation with a successor named, or an IRS determination; changes use Form 8979 (see its instructions for when it may be filed, including during an examination). Without a designation the IRS may pick anyone. A partnership that elects out does not designate one for that year.
+6. **Correcting a filed return.** Inside the regime a partnership cannot file an ordinary amended return: it files an administrative adjustment request (section 6227), electronically on Form 1065 with the box checked, or Form 8082 on paper, and either pays the imputed underpayment or pushes the adjustments out to reviewed-year partners. Partners generally cannot amend their own returns for a K-1 change without it. No AAR once the IRS has mailed a notice of administrative proceeding. A partnership that elected out files an amended Form 1065 and amended K-1s, and partners amend.
+7. **Reviewer brief:** in or out of the regime; representative and designated individual details, an internal acceptance of duties, and whether the agreement covers appointment, indemnity and procedure; for corrections, AAR or amended return; for push-out, the 45-day date.
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| Property at contribution | $200,000 |
-| Built-in gain layer (FMV − basis) | $1,000,000 |
+| Fixed draw paid whatever the profit | Guaranteed payment: deduct on line 10, box 4a, ordinary income to the partner even in a loss year |
+| Percentage of profits, or a priority share of profits | Distributive share, not line 10 |
+| Share of profits with a guaranteed minimum | Guaranteed payment only for the shortfall below the minimum (Treas. Reg. 1.707-1(c), Example 2) |
+| Interest on capital fixed by rate, payable regardless of profit | Guaranteed payment for capital, box 4b; interest for section 469 |
+| Health insurance paid for a partner | Guaranteed payment; the partner may take the self-employed health insurance deduction |
+| Syndication fees paid to a partner | Guaranteed payment, but capitalized: box 4b, not deducted |
+| Limited partner paid for services | Guaranteed payments for services are self-employment income; distributive share is not, if the partner is a limited partner under section 1402(a)(13) |
+| Partner labeled limited who runs the business | Flag (R-1065-SE): Soroban (Tax Court) and Sirius Solutions (5th Cir., 12 August 2026) both look past the label |
+| Nonresident alien partner | No self-employment earnings (section 1402(b)) |
+| Corporate, trust, estate, exempt or IRA partner | Box 14 left blank |
+| Partner with a single-member LLC, or a trust, or another partnership | Election out of BBA not available |
+| Foreign individual partner | Still an eligible partner for the election out (an individual); no domestic filing exception |
+| S corporation partner | Eligible; its shareholders count toward the 100 |
+| Partner who left during 2026 | Gets a K-1 and counts in the section 6698 penalty |
+| Return filed after an extension's due date | Penalty runs from the extended due date; Form 7004 filed late gives no extension |
+| Investment fund on a broker 1099 with up to USD 300 of foreign tax on passive income | Domestic filing exception still possible if the other three criteria hold |
+| Any foreign partner | No domestic filing exception; K-3 for that partner; section 1446 referral |
+| Request for K-3 after the 1-month date | Exception kept; that partner's K-3 within 1 month of the request |
+| Receipts USD 250,000 or more, or assets USD 1 million or more | Schedules L, M-1, M-2 and Item L required; small partnership K-2/K-3 exception not available |
 
-## 21. Provenance and Disclaimer
+### Defaults when a fact is missing
 
-### 21.1 Primary statutory and regulatory sources
+| Missing fact | Default |
+| --- | --- |
+| Whether all four K-2/K-3 exception criteria are met | Prepare Schedules K-2 and K-3 |
+| Whether a partner is a disregarded entity, trust or nominee | Do not elect out on Schedule B-2 without written reviewer confirmation; name a partnership representative |
+| What a partner labeled limited actually does | Box 14 of guaranteed payments for services only, flagged R-1065-SE for the reviewer |
+| Whether a payment to a partner depends on profits | Read the agreement; if it is silent and the amount was paid in a loss year, treat it as a guaranteed payment and flag it |
+| Capital account method | Item L on tax basis, always; never GAAP, section 704(b) book or "other" |
+| Whether Form 7004 was filed on time | Treat the original due date as the deadline until the acknowledgement is in the file |
 
-- IRC §§701–777 (Subchapter K)
-- IRC §6031 (return requirement); §6072 (due dates); §6698 (penalty)
-- IRC §§704, 707, 752 (allocation, capital accounts, liabilities)
-- IRC §§465, 469, 461(l) (loss limits)
-- IRC §1402 (self-employment tax); §1402(a)(13) (limited partner exclusion)
-- IRC §199A (QBI deduction); made permanent at 20% by OBBBA P.L. 119-21 §70105
-- IRC §§6221–6241 (Centralized Partnership Audit Regime / BBA)
-- Treas. Reg. §301.7701-1 through -3 (entity classification)
-- Treas. Reg. §1.704-1, -2, -3 (substantial economic effect; §704(c) methods)
-- Treas. Reg. §1.752-1, -2, -3 (recourse / nonrecourse allocation)
-- Treas. Reg. §1.469-5T (material participation; LLC member-manager question)
-- Treas. Reg. §301.6221(b)-1 (election out of CPAR)
-- Treas. Reg. §1.199A-1 through -6 (QBI mechanics)
-- Reg. §1.6031(a)-1 (foreign partnership filing)
+### Red flags for the reviewer brief
 
-### 21.2 Case law
+| Flag | Why |
+| --- | --- |
+| Limited partner or non-managing member who works full time | Soroban and Sirius Solutions: box 14 may be understated |
+| Fixed "draws" booked as distributions | Probably guaranteed payments: line 10, box 4a and self-employment income |
+| Operating agreement liquidates by units, not capital accounts | Allocations may fail economic effect (R-1065-704B) |
+| Loss allocated past zero section 704(b) capital, no restoration obligation or qualified income offset | Reallocation risk |
+| Distribution above a partner's outside basis, or negative tax basis capital | Gain under section 731(a)(1) |
+| Member guarantee of LLC debt | Moves the liability to the guarantor (Item K1, K3) and changes at-risk |
+| Broker 1099 showing any foreign tax | Check the USD 300 limit and the domestic filing exception |
+| Single-member LLC, trust or partnership among the partners | No Schedule B-2 election out |
 
-- *Soroban Capital Partners LP v. Commissioner*, 161 T.C. No. 12 (Nov 28, 2023) — functional test for "limited partner" under §1402(a)(13)
-- *Garnett v. Commissioner*, 132 T.C. 368 (2009) — LLC members not automatically limited partners for §469 purposes
-- *Thompson v. United States*, 87 Fed. Cl. 728 (2009) — similar
-- *Renkemeyer, Campbell & Weaver, LLP v. Commissioner*, 136 T.C. 137 (2011) — LLP partners providing services were not §1402(a)(13) limited partners
+### Two more fact patterns (not recomputed)
 
-### 21.3 IRS guidance
+**Foreign partner.** A Delaware LLP has a US C corporation partner (40%, active), a French resident individual (30%, passive investor) and a US resident alien individual (30%, managing). Two foreign customers pay it with no foreign tax withheld, and a brokerage fund pays foreign dividends with foreign tax withheld. Outcome: the election out is available (section 6221(b)(1)(C) lists "an individual" with no residence condition, so a foreign individual, a C corporation and a resident alien are all eligible, and there are only three K-1s), if the other step 13 conditions are met; if the partnership stays in the regime, the C corporation can be representative with a US designated individual. There is no domestic filing exception (a foreign partner and foreign-source income both fail it), so K-2 and K-3 are prepared: Part II and III for the foreign tax credit inputs, Part X for the foreign partner's effectively connected income. The French partner has box 14 of zero (nonresident alien, section 1402(b)); the corporation has no box 14; the resident alien manager has box 14 code A of his full share. Section 1446 withholding on the foreign partner's share of effectively connected income is referred (R-1065-1446), and her Form W-8BEN must be in the file. The corporate partner's foreign tax credit is figured on its own return under section 901 (section 902 deemed-paid credit was repealed for years after 2017).
 
-- Rev. Proc. 84-35 (small partnership §6698 reasonable cause safe harbor)
-- Rev. Proc. 93-27 (profits-interest grants)
-- Rev. Proc. 2002-69 (spousal community-property LLC)
-- Rev. Proc. 2024-40 (2025 inflation adjustments; verify §6698 figure)
-- Notice 2018-64 (§199A W-2 wages methods)
-- Notice 2020-43 (tax basis capital account reporting)
-- Notice 2021-39 (good-faith transition relief for K-2/K-3)
-- 2025 Form 1065 Instructions (verify against IRS final release for exact line references and 2025 indexed figures)
-- Final K-2/K-3 Instructions for tax year 2025 (verify Domestic Filing Exception language)
+**Family limited partnership with contributed property.** A Texas FLP: general partner is a single-member LLC owned by the founder (1%); limited partners are the founder (49%) and two adult children (25% each). In 2020 the founder contributed a rental building worth USD 1,000,000 with a tax basis of USD 200,000 (USD 800,000 of built-in gain), subject to a USD 400,000 bank mortgage. The building is sold in 2026. Outcome: the remaining section 704(c) built-in gain goes to the founder under the documented method (Item M "Yes", Item N closes to zero, box 20 code AA); the mortgage and other bank loans are qualified nonrecourse financing, shared by the three tiers with tier 2 to the founder; box 14 is zero for everyone because rentals, section 1231 gain and interest are excluded under section 1402(a)(1) to (3), so the label of the founder's interest does not matter unless the FLP also runs a services business; the children are passive; the founder's real estate professional status is checked at his level; no election out (the single-member LLC general partner is a disregarded entity); the domestic filing exception is likely met if notices are sent; Schedule L is required (assets over USD 1 million).
 
-### 21.4 Statutory changes from OBBBA (P.L. 119-21, July 4, 2025) potentially affecting this skill
+## Worked cases
 
-- §199A made permanent at 20% — confirmed
-- §461(l) excess business loss limit made permanent
-- §163(j) interest limitation — small business exemption threshold (gross receipts) — verify Rev. Proc. 2024-40 for 2025 threshold
-- §6698 penalty amount — verify 2025 indexed figure
-- §1402 self-employment tax — no statutory change; Soroban case law continues to develop
+**Case 1, a decision: fixed payment or profit priority for the working member?** Two-member LLC, both US citizens. B manages full time; A is an investor with no role in running the business (a limited partner under section 1402(a)(13) on any of the tests in step 5). They want B to receive USD 90,000 a year for her work before the rest is split 50/50. Option 1: a fixed USD 90,000 regardless of profits (a guaranteed payment). Option 2: 30% of partnership income before any payment, then 50/50. Test a normal year (income before the payment USD 300,000) and a bad year (USD 60,000).
 
-### 21.5 Disclaimer
+Normal year. Option 1: line 23 income is USD 210,000, box 1 USD 105,000 each; B also has box 4a USD 90,000, total USD 195,000. Option 2: B's box 1 is 30% x 300,000 = USD 90,000 plus half of USD 210,000 = USD 195,000; A's box 1 USD 105,000. B's total and B's self-employment earnings (USD 195,000, as a member-manager) are the same, but her **qualified business income** is USD 105,000 under option 1 and USD 195,000 under option 2: USD 90,000 more QBI, because guaranteed payments are not QBI.
 
-This skill produces a reviewer-oriented draft of Form 1065 and supporting schedules. A credentialed tax practitioner under Circular 230 (Enrolled Agent, CPA, or attorney) must review and sign the return before it is filed. The skill is conservative by default; it flags rather than auto-decides on ambiguous allocations, SE tax characterizations, §704(c) methods, and CPAR election questions. The 2025 indexed amounts (§6698 penalty, §199A thresholds, §461(l) thresholds, §163(j) small-business gross-receipts threshold) must be verified against the final Rev. Proc. 2024-40 (or its successor) before final filing. This skill is federal-only. State partnership returns, state pass-through entity tax (PTET) elections, and state withholding on nonresident partners are out of scope and must be handled by the relevant state skill or a state-licensed practitioner. The skill does not, and cannot, replace partnership counsel for drafting allocation provisions, DRO clauses, QIO provisions, partnership-representative indemnification, or §704(c) method elections. Where the skill flags a structural issue, the reviewer should refer to qualified partnership-law counsel.
+Bad year. Option 1: ordinary loss of USD 30,000, USD 15,000 each; B still reports USD 90,000 guaranteed payment, net USD 75,000; A reports a USD 15,000 loss (subject to his loss limits). Option 2: B 30% x 60,000 = USD 18,000 plus half of USD 42,000 = USD 39,000; A USD 21,000. The guaranteed payment protects B and shifts the downside to A.
 
-— End of skill —
+Advise: if the partners want B paid whatever the result, option 1 (guaranteed payment) is the honest description and must be reported that way. If B can bear profit risk, option 2 gives B more QBI in a good year (her deduction is then figured in `us-qbi-deduction`, subject to the 2026 thresholds and the specified service rules there). Either way the agreement, not the label on the bank transfer, decides: the test is whether the amount is fixed without regard to partnership income. Self-employment earnings do not change for B; they would change only for a partner who is a limited partner, since a guaranteed payment for services is self-employment income even for that partner.
+
+```oa-check
+name: Guaranteed payment against profit priority, normal and bad year (2026)
+inputs:
+  income_good: 300000
+  income_bad: 60000
+  payment: 90000
+  priority: 0.30
+  share: 0.5
+steps:
+  - gp_box1_each_good: (income_good - payment) * share
+  - gp_b_total_good: payment + gp_box1_each_good
+  - gp_b_qbi_good: gp_box1_each_good
+  - alloc_b_good: income_good * priority + (income_good - income_good * priority) * share
+  - alloc_b_qbi_good: alloc_b_good
+  - qbi_difference: alloc_b_qbi_good - gp_b_qbi_good
+  - gp_box1_each_bad: (income_bad - payment) * share
+  - gp_b_total_bad: payment + gp_box1_each_bad
+  - alloc_b_bad: income_bad * priority + (income_bad - income_bad * priority) * share
+  - alloc_a_bad: (income_bad - income_bad * priority) * share
+expected:
+  gp_box1_each_good: 105000.00
+  gp_b_total_good: 195000.00
+  alloc_b_good: 195000.00
+  qbi_difference: 90000.00
+  gp_box1_each_bad: -15000.00
+  gp_b_total_bad: 75000.00
+  alloc_b_bad: 39000.00
+  alloc_a_bad: 21000.00
+```
+
+**Case 2, late-filing penalty with a partner who left.** A calendar-year LLC had three members at 31 December 2026; a fourth member sold out in June 2026. No Form 7004 was filed. The return is filed on 2 June 2027.
+
+Persons who were partners during any part of 2026: 4. Months or parts of months from 15 March 2027 to 2 June 2027: 3 (to 15 April, to 15 May, and part of the third). Penalty: 4 x USD 260 x 3 = USD 3,120. Filed 14 months late, the 12-month cap gives 4 x USD 260 x 12 = USD 12,480. Had Form 7004 been filed on time and the return filed on 1 October 2027, one part-month after 15 September: 4 x USD 260 x 1 = USD 1,040. Before paying, check relief (Filing and payment): the partnership may qualify for First Time Abate or the new automatic exemption if its prior three years were filed on time.
+
+```oa-check
+name: Section 6698 penalty, four partners (returns due in 2027)
+inputs:
+  partners: 4
+  rate: 260
+  months_late: 3
+  months_very_late: 14
+  months_after_extension: 1
+steps:
+  - penalty: partners * rate * min(months_late, 12)
+  - penalty_capped: partners * rate * min(months_very_late, 12)
+  - penalty_extended: partners * rate * min(months_after_extension, 12)
+expected:
+  penalty: 3120.00
+  penalty_capped: 12480.00
+  penalty_extended: 1040.00
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-1065-CORP | LLC elected corporate or S corporation status | Wrong return: Form 1120 or 1120-S |
+| R-1065-SMLLC | Single member, no election | Disregarded: Schedule C, E or F |
+| R-1065-PTP | Publicly traded partnership (section 7704; section 1446(f) on transfers) | Refer to a specialist |
+| R-1065-TIER | An upper-tier partnership is a partner and the audit-regime position needs handling beyond the default | Refer; the election out is not available |
+| R-1065-743 | Section 754 election, section 734 or 743 basis adjustments, reverse section 704(c) layers, disguised sales | Flag and refer to a partnership tax specialist; identify, do not compute |
+| R-1065-707A | Possible disguised payment for services or disguised sale (section 707(a)(2)) | Flag for reviewer |
+| R-1065-1061 | Carried interest, section 1061 holding-period recharacterization | Refer |
+| R-1065-1446 | Foreign partner with effectively connected income (section 1446, Forms 8804, 8805, 8813) | Refer; do not finalize without the withholding work |
+| R-1065-8865 | US partner with a reportable interest in a foreign partnership | Flag; Form 8865 out of scope |
+| R-1065-PUSH | Preparing a section 6226 push-out statement or a full AAR imputed underpayment computation | Concepts covered here; mechanics refer |
+| R-1065-PTET | State pass-through entity tax election | `us-pte-state-matrix` and the state skill |
+| R-1065-SE | Partner labeled limited who manages or works substantially in the business | Reviewer decides box 14 and documents the position |
+| R-1065-704B | Allocations that may lack substantial economic effect, or no section 704(b) capital accounts kept | Reviewer and partnership counsel |
+| R-1065-704C | Contributed property with no documented section 704(c) method | Stop and refer |
+| R-1065-CAPITAL | No tax basis capital roll-forward | Stop and refer |
+| R-1065-BBA | A partner might be a disregarded entity, trust or nominee and the client wants to elect out | Do not attach Schedule B-2 without written reviewer confirmation |
+
+## Filing and payment
+
+- **Due:** calendar 2026 return, Schedules K-1 and any K-2 and K-3, **15 March 2027**; with Form 7004 filed by then, **15 September 2027**. Furnish K-1s (and any K-3s) to partners by the same date. A section 444 fiscal-year partnership makes any section 7519 required payment; otherwise no tax is paid with the return.
+- **E-filing:** required for a partnership with more than 100 partners; under Treas. Reg. 301.6011-3 (T.D. 9972) partnerships filing 10 or more returns of any type in the year must also e-file unless a hardship waiver is granted.
+- **Late or incomplete return, section 6698:** USD 260 per person who was a partner at any time in the year, per month or part of a month, up to 12 months, unless the failure is due to reasonable cause. It applies with no tax due and is assessed against the partnership without deficiency procedures. Do not attach a reasonable-cause statement to the return; answer the penalty notice.
+- **Relief:**
+  - *First Time Abate* covers partnership returns under section 6698(a)(1) when the same return was filed on time for the prior three years with no penalties (or penalties abated for reasonable cause or IRS error). Ask by phone or on Form 843.
+  - *Automatic Exemption from Penalty* begins in summer 2026 for Form 1065, starting with 2025 tax-year returns: with three prior years of timely compliance the IRS does not assess the failure-to-file penalty and sends a letter saying so.
+  - *Reasonable cause* (illness, destroyed records, reliance on an adviser): document it. Rev. Proc. 84-35 relief for small partnerships was written for the pre-BBA rules; do not rely on it without confirming the IRS still applies it.
+- **K-1 penalties:** failing to furnish a correct K-1, section 6722, USD 340 per statement required to be furnished in 2027 (USD 60 if corrected within 30 days); the same amounts apply to filing them with the IRS under section 6721. A timely Form 1065 does not protect against late K-1s: send K-1s the day the return is filed.
+- **Other:** section 6707A for undisclosed listed transactions; section 6662 disclosure on Form 8275 where needed.
+
+## Completion checklist
+
+- Classification confirmed (no Form 8832 or 2553; more than one owner; not a qualified joint venture or Rev. Proc. 2002-69 case).
+- Every person who was a partner at any time in 2026 has a K-1; count recorded for the penalty.
+- Each payment to a partner classed as guaranteed payment or distributive share against the agreement; line 10 and boxes 4a to 4c agree.
+- Item G and box 14 decided per partner, with any R-1065-SE position documented.
+- Sum of K-1s equals Schedule K, line by line.
+- Item L on tax basis; Item K1 equals the partnership's liabilities; K3 ticked for guaranteed debt; Items M and N complete.
+- Box 20 code Z statement for each business; code AA if section 704(c) applies.
+- K-2/K-3 exception tested against all four criteria (or the small partnership test), partner notices sent, request log kept.
+- Schedule B question 4 answered on all four conditions; Schedules L, M-1, M-2 or M-3 as required.
+- Schedule B-2 made only if every partner is eligible, on a timely return; otherwise representative and designated individual named.
+- Return and Form 7004 dates calendared; e-file acknowledgement kept.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Rev. Proc. 2025-32. Read for section 4.55 (USD 260 for section 6698(b)(1), returns required to be filed in 2027), section 4.56 (section 6699), sections 4.57 and 4.58 (sections 6721 and 6722 per-return amounts USD 340 and USD 60), the 2026 section 448(c) test (USD 32,000,000) and section 461(l) thresholds (USD 256,000, USD 512,000). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Instructions for Form 1065 (2025), dated 14 January 2026, the current edition. Read for When To File (15th day of the 3rd month), Extension of Time To File, Penalties (USD 255 for 2025 returns, 12-month cap, partner count), Electronic Filing (more than 100 partners), Item J and Schedule M-3 triggers, line 10 and Schedule K line 4 guaranteed payments, the self-employment worksheet and limited partner text, the section 199A exclusion of guaranteed payments, Schedule B question 33 election out and the partnership representative rules, and What's New (codes ZZ, AR, AZ, line 19). | https://www.irs.gov/pub/irs-pdf/i1065.pdf | 2026-11-13 |
+| Schedule K-1 (Form 1065) 2025. Read for the item and box layout (G to N, K1 to K3, boxes 1 to 23). | https://www.irs.gov/pub/irs-pdf/f1065sk1.pdf | 2026-11-13 |
+| Partner's Instructions for Schedule K-1 (Form 1065) (2025). Read for box 20 code Z (section 199A) and code AA (section 704(c)) and code ZZ. | https://www.irs.gov/pub/irs-pdf/i1065sk1.pdf | 2026-11-13 |
+| Form 1065 (2025). Read to confirm that the posted form is still the 2025 edition. | https://www.irs.gov/pub/irs-pdf/f1065.pdf | 2026-11-13 |
+| Partnership Instructions for Schedules K-2 and K-3 (Form 1065) (2025). Read for the domestic filing exception (four criteria, USD 300, broadened criterion 2, annual requests), the 1-month date and examples, and the new small partnership filing exception (USD 250,000, USD 1 million). | https://www.irs.gov/pub/irs-pdf/i1065s23.pdf | 2026-11-13 |
+| Instructions for Form 7004 (Rev. December 2025). Read for the 6-month automatic extension. | https://www.irs.gov/pub/irs-pdf/i7004.pdf | 2026-11-13 |
+| 26 U.S.C. 6698 (govinfo). Read for (a) the 12-month cap and reasonable cause, (b) USD 195 times partners during any part of the year, (c) and (d) assessment, (e) indexing and rounding. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6698.htm | 2026-11-13 |
+| 26 U.S.C. 707 (govinfo). Read for (c), guaranteed payments determined without regard to partnership income. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapK-partI-sec707.htm | 2026-11-13 |
+| 26 U.S.C. 704 (govinfo). Read for (a) to (d), allocations, contributed property and the basis limit on losses. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapK-partI-sec704.htm | 2026-11-13 |
+| 26 U.S.C. 1402 (govinfo). Read for (a)(1) to (3) exclusions, (a)(13) limited partners, and (b) nonresident aliens. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm | 2026-11-13 |
+| 26 U.S.C. 6221 (govinfo). Read for (b), the election out: 100 or fewer statements, eligible partners, timely return, disclosure, notice, S corporation shareholders. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partI-sec6221.htm | 2026-11-13 |
+| 26 U.S.C. 6223 (govinfo). Read for (a) designation, substantial presence and sole authority, and (b) binding effect. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partI-sec6223.htm | 2026-11-13 |
+| 26 U.S.C. 6226 (govinfo). Read for (a) the 45-day push-out election and (c)(2) interest with 5 points for 3. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap63-subchapC-partII-sec6226.htm | 2026-11-13 |
+| Treas. Reg. 1.707-1 (eCFR). Read for (c), Examples 1 to 3 on guaranteed payments, minimums and loss years. | https://www.ecfr.gov/current/title-26/section-1.707-1 | 2026-11-13 |
+| Sirius Solutions, L.L.L.P. v. Commissioner, No. 24-60240 (5th Cir.), substituted opinion on rehearing filed 12 August 2026 (govinfo). Read for the withdrawal of 165 F.4th 374, the holding on "limited partner" in section 1402(a)(13), and the vacatur and remand; also for its citation of Soroban, 161 T.C. 310 (2023). | https://www.govinfo.gov/content/pkg/USCOURTS-ca5-24-60240/pdf/USCOURTS-ca5-24-60240-0.pdf | 2026-11-13 |
+| IRS, Penalty relief due to First Time Abate or other administrative waiver. Read for section 6698(a)(1) eligibility and the Automatic Exemption from Penalty for Form 1065 from summer 2026. | https://www.irs.gov/payments/penalty-relief-due-to-first-time-abate-or-other-administrative-waiver | 2026-11-13 |
+
+Not yet confirmed: the 2026 Form 1065, Schedule K-1 and their instructions, and the 2026 Schedules K-2 and K-3 instructions, were not published when read, so form line and box numbers, Schedule B question numbers, and the latest 1-month date for 2026 returns on extension (the 2025 instructions gave 17 August 2026) are taken from the 2025 editions and must be checked against the 2026 releases. Rev. Proc. 2025-32 sections 4.57 and 4.58 print "August 1, 2026" for the middle correction tier of statements due in 2027, which looks like a misprint; the USD 130 middle tier is therefore left out. Whether the IRS still applies Rev. Proc. 84-35 after the BBA rules was not checked on an official page. The Treasury regulations cited by number other than Treas. Reg. 1.707-1 (sections 1.704-1 to 1.704-3, 1.752-1 to 1.752-3, 1.469-5T, 1.199A-4, 301.6221(b)-1, 301.6011-3, 301.7701-3, 1.761-1 and 1.761-2, 1.6031(a)-1) were carried from the earlier version and not reopened on 2026-11-13. Further proceedings on remand in Sirius Solutions, and any appeal from the Tax Court's Soroban decision, were not checked.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-form-1065-partnership` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-form-1065-partnership. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-form-1065-partnership` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-form-1065-partnership. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-foral-income-tax-navarra-credits"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
 # Spain: Navarra personal income tax credits and housing benefits, 2026
@@ -57,11 +57,11 @@ Art 68 widow/contributory-retirement/SOVI relief targets the 2026 annual thresho
 
 New ordinary purchases after the repeal do not acquire the old credit. For continuing mortgage payments or other preserved commitments, establish the investment date and **which transition actually applies**, before calculating a 2026 deduction. A loan refinance does not create a new qualifying acquisition date. Current Navarra's own consolidated text retains DT 15, DT 17 and DT 24. Its DT 17 is the 2013–2015 home-investment transition. The current BOE consolidation instead duplicates the unrelated 2022 direct-estimation renunciation under DT 17; this is a documented consolidation discrepancy, not evidence that the housing transition disappeared. Use the official Navarra provision together with its amending enactments. [L](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) DT 15, 17, 24; [P](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) DT 24; [H17](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1) arts 62.1, 75.
 
-| Qualifying preserved investment | Calculation in 2026 |
-| --- | --- |
-| DT 15: home acquired/rehabilitated before 1 January 2013; rehabilitation/extension/accessibility works begun before that date; construction begun or promoter advances paid before that date; corresponding qualifying former matrimonial home | Apply 31 December 2012 substantive conditions, with the DT 15 override of **7,000 annual base individually /15,000 jointly**. The later DT 17 income test is not imposed on this branch. |
-| DT 17: corresponding acquisition/rehabilitation, works commencement or construction/promoter payments between 1 January 2013 and 31 December 2015 | Apply 31 December 2015 substantive conditions and annual base **7,000 individual /15,000 joint**, but the transition expressly replaces the old income test with the **31 December 2017** art 62.1(h)/75 thresholds described below. |
-| DT 24: qualifying investments actually made in 2016 or 2017, with amounts outstanding for those same concepts paid from 2018 onwards; applicant has no DT 15/17 entitlement | Preserve art 62.1 as at 31 December 2017: protected housing with a surviving sale-price limitation, or the expressly permitted housing in municipalities below 10,000 outside Territorial Strategy subarea 10.4 where protected housing is unavailable; the certified disability-adaptation branch has its stated exception to protected status. Apply annual base **7,000 individual /15,000 joint** and the 2017 income test. |
+| Qualifying preserved investment | Calculation in 2026 | Source |
+| --- | ---|---|
+| DT 15: home acquired/rehabilitated before 1 January 2013; rehabilitation/extension/accessibility works begun before that date; construction begun or promoter advances paid before that date; corresponding qualifying former matrimonial home | Apply 31 December 2012 substantive conditions, with the DT 15 override of **7,000 annual base individually /15,000 jointly**. The later DT 17 income test is not imposed on this branch. | [Navarra DFL4/2008 consolidated (LexNavarra)](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) |
+| DT 17: corresponding acquisition/rehabilitation, works commencement or construction/promoter payments between 1 January 2013 and 31 December 2015 | Apply 31 December 2015 substantive conditions and annual base **7,000 individual /15,000 joint**, but the transition expressly replaces the old income test with the **31 December 2017** art 62.1(h)/75 thresholds described below. | [Navarra DFL4/2008 consolidated (LexNavarra)](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) |
+| DT 24: qualifying investments actually made in 2016 or 2017, with amounts outstanding for those same concepts paid from 2018 onwards; applicant has no DT 15/17 entitlement | Preserve art 62.1 as at 31 December 2017: protected housing with a surviving sale-price limitation, or the expressly permitted housing in municipalities below 10,000 outside Territorial Strategy subarea 10.4 where protected housing is unavailable; the certified disability-adaptation branch has its stated exception to protected status. Apply annual base **7,000 individual /15,000 joint** and the 2017 income test. | [Navarra DFL4/2008 consolidated (LexNavarra)](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) |
 
 Sources for this table: [L](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) DT 15, 17, 24; [H12](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20120620&tn=1) art 62.1; [H15](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20150331&tn=1) art 62.1; [H17](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1) arts 62.1, 75. Use each preserved version only through its current transition. The 2012 version's old 9,015/21,035 annual limits do not override DT 15's express 7,000/15,000 replacement.
 
@@ -69,11 +69,11 @@ The preserved rate is **15%**, **18%** for a family unit including at least two 
 
 For DT 17/24, calculate `income_test = general taxable base + savings taxable base − qualifying compensatory spousal pension` under arts 53, 54, 55.2. It must be **strictly below** the following preserved 2017 thresholds. Do not continue using the old 2015 20,000/22,000 test after the current DT 17 replacement. [L](https://www.lexnavarra.navarra.es/detalle.asp?r=29657) DT 17.2; [H17](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1) arts 62.1(h), 75.1.
 
-| Deductible descendants /status | Individual ceiling | Joint family ceiling |
-| --- | --- | --- |
-| General | 24,000 | 48,000 |
-| One or two descendants qualifying for deduction | 27,000 | 54,000 |
-| Three or more qualifying descendants, or qualifying large family, including accredited LF 5/2019 single-parent status | 30,000 | 60,000 |
+| Deductible descendants /status | Individual ceiling | Joint family ceiling | Source |
+| --- | --- | ---|---|
+| General | 24,000 | 48,000 | [DFL4/2008 as at 19 May 2017, arts 62.1(h), 75.1](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1) |
+| One or two descendants qualifying for deduction | 27,000 | 54,000 | same |
+| Three or more qualifying descendants, or qualifying large family, including accredited LF 5/2019 single-parent status | 30,000 | 60,000 | same |
 
 Increase an individual ceiling by 3,000 for the taxpayer's disability≥33% and<65%, or 7,000 at≥65%; add 1,500/3,500 respectively per qualifying disabled descendant. For joint assessment add 3,000/7,000 respectively for **each taxpayer or deductible descendant**, rather than the individual descendant amounts. Equality to the final ceiling fails. [H17](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20170519&tn=1) arts 62.1(h), 75.1.
 
@@ -99,24 +99,24 @@ For **DAVID**, calculate the household's weighted income `IFP=BI×N×0.94`; calc
 
 For a widowed/separated/divorced applicant or dissolved registered partnership where the last return still covered the relationship, use only the applicant's income under separation of property; otherwise use the greater of own individual income and50% of the couple's joint income. Family membership follows the PIT family-unit definition with the regulation's shared-parental-authority presumption, not every economically dependent adult child. The wider inclusion of every cohabitant in AnnexII is expressly for protected-rent subsidy art 28; do not indiscriminately add unrelated housemates to the ordinary DAVID family unit. [HR](https://www.lexnavarra.navarra.es/detalle.asp?r=32564) art 7, AnnexII.
 
-| Family members | N |
-| --- | --- |
-| One | 1 |
-| Two | 0.75 |
-| Three | 0.70 |
-| Four | 0.66 |
-| Each additional member | Subtract0.04 from the four-person factor |
+| Family members | N | Source |
+| --- | ---|---|
+| One | 1 | [DF housing regulation, Annex II](https://www.lexnavarra.navarra.es/detalle.asp?r=32564) |
+| Two | 0.75 | same |
+| Three | 0.70 | same |
+| Four | 0.66 | same |
+| Each additional member | Subtract0.04 from the four-person factor | same |
 
 AnnexII moves to the next family-size band if one or more members have disability≥33%, and to the next band if one or more are aged≥65%; both circumstances give the second next band. Housing-law art 25 bis.3 extends the same weighting treatment to recognised gender-violence victims. Use evidence of the recognised circumstance. The official calculator summarises these as counting qualifying people twice, but its summary uses strict wording “over65/over33%” and does not explain the AnnexII “one or more” category treatment. At those boundaries or with multiple overlapping persons/categories, use the law/regulation and retain the official calculation/decision rather than multiplying every category without support. An ordinary four-member household with no such circumstance hasN0.66; a one-member household with a single disability≥33% hasN0.75. [HR](https://www.lexnavarra.navarra.es/detalle.asp?r=32564) AnnexII; [HL](https://www.lexnavarra.navarra.es/detalle.asp?r=29980) art 25 bis.3; [HC](https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados).
 
 The ordinary DAVID access minimum follows the protected-rental census minimum, currently **5,000 weighted household income** under housing-law art 18, as confirmed by OF 187E/2026's preamble. The upper credit condition remains **r<1.7**. The applicant must have been registered in the protected-housing applicant census before1January of the application year, or hold the alternative protected-housing lease administratively visaed before that date. Do not require a rolling full twelve months where the statute says before1January. [P](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) art 68 quinquies B.1/C.2; [HL](https://www.lexnavarra.navarra.es/detalle.asp?r=29980) arts18,21; [E](https://www.lexnavarra.navarra.es/detalle.asp?r=58954).
 
-| Ordinary DAVID ratio r | Monthly benefit |
-| --- | --- |
-| r<1 | `min(50%×rent,340)` |
-| 1≤r<1.4 | `min(50%×rent,280)` |
-| 1.4≤r<1.7 | `min(50%×rent,220)` |
-| r≥1.7 | No entitlement under this route |
+| Ordinary DAVID ratio r | Monthly benefit | Source |
+| --- | ---|---|
+| r<1 | `min(50%×rent,340)` | [DFL4/2008 art 68 quinquies](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) |
+| 1≤r<1.4 | `min(50%×rent,280)` | same |
+| 1.4≤r<1.7 | `min(50%×rent,220)` | same |
+| r≥1.7 | No entitlement under this route | same |
 
 At income-year 2025 SARA, the thresholds are10,919.71;15,287.594;18,563.507. At income-year 2026 SARA they are11,201.44;15,682.016;19,042.448. Compare unrounded IFP/threshold values before assigning a band; do not round a claimant below a strict boundary. With BI20,000 and two members, IFP14,100: it is in the280 band under either year's denominator. At rent 650, the monthly amount is280. With BI10,000, one ordinary member, IFP9,400, the amount is325, below the340 cap. [P](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) art 68 quinquies B; [HC](https://www.navarra.es/es/tramites/on/-/line/calcular-los-ingresos-familiares-ponderados); [S26](https://bon.navarra.es/es/anuncio/-/texto/2026/179/7).
 
@@ -172,4 +172,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-income-tax-navarra-credits` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-income-tax-navarra-credits. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-income-tax-navarra-credits` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-income-tax-navarra-credits. If neither is available, confirm every figure against the official source pages cited above before relying on it.

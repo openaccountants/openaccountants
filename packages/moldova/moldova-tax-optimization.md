@@ -1,17 +1,18 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited draft corrects unsupported savings and blanket prohibitions and states remaining form, procedure and case-specific gaps. A bounded source-review record is linked under Sources; accountant attestation remains pending."
-version: "0.8"
+version: "0.9"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: situation-rules
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.8
+# Moldova tax planning and regime comparison, 2026 v0.9
 
 ## Who this applies to
 

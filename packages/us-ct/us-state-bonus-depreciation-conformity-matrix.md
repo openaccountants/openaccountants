@@ -1,12 +1,14 @@
 ---
 name: us-state-bonus-depreciation-conformity-matrix
-description: Tier 2 US federal-level reference skill providing the 50-state matrix of conformity to federal §168(k) bonus depreciation and §179 expensing. Covers tax year 2025 including state-by-state add-back requirements (CA never conforms with $25k §179 cap, NY decoupled since 2003, NJ partial, PA decoupled bonus with §179 conformity, etc.), recovery mechanisms for state add-backs (typically over 5 years or via decoupled MACRS lifetime), §163(j) interest limit conformity, NOL post-TCJA conformity, and the OBBBA-era bonus depreciation status with the TCJA phase-down (60% 2024 → 0% 2027 absent extension).
+description: State conformity to federal bonus depreciation (section 168(k) and the new 168(n)) and section 179 expensing for individuals, tax year 2026 with notes for 2025 returns. A row for every state with a personal income tax, each linked to that state's own instructions, statute or notice, giving whether it follows or decouples, the add-back and recovery method (Connecticut 100% and 25% a year, Minnesota 80% and one-fifth, North Carolina 85% and 20%, Ohio 5/6 and one-fifth, Michigan pre-2025 law), and the state section 179 limit (California and others $25,000). Trigger on "state bonus depreciation", "decouple from 168(k)", "state add-back", "section 179 state conformity", "California 3885A", "IL-4562". Federal bonus and 179 figures live in us-section-179-and-bonus-depreciation.
+version: "3.0"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: cross-country-method
 ---
 
 # US state conformity to federal bonus depreciation (§168(k)) and §179: 2026 matrix, with 2025 return notes
@@ -23,7 +25,7 @@ Figures are for tax year 2026 unless a line says 2025. Federal amounts come from
 
 - Which tax year is being prepared (2025 or 2026), and in which states does the client file (residence, and every state where the business or a pass-through has income)?
 - For each asset: the date it was **acquired** (the date of any written binding contract), the date it was placed in service, its cost, its MACRS class and life, and whether it is new or used.
-- Did the federal return claim §168(k) bonus depreciation, the §168(n) allowance, or §179? Was the 40% (or 60%) transition election made for the first tax year ending after January 19, 2025 ([26 U.S.C. §168(k)(10)](https://www.law.cornell.edu/uscode/text/26/168))? Was an election out of bonus made for any class?
+- Did the federal return claim §168(k) bonus depreciation, the §168(n) allowance, or §179? Was the 40% (or 60%) transition election made for the first tax year ending after January 19, 2025 ([26 U.S.C. §168(k)(10)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))? Was an election out of bonus made for any class?
 - The fixed-asset register from prior years, with each state's separate basis and depreciation, and any add-backs still being recovered (Connecticut, Minnesota, North Carolina and Ohio spread recoveries over later years).
 - For pass-through owners: the state K-1 schedules showing the entity's bonus and §179 amounts, and whether the entity already made the adjustment (some states adjust at entity level, others at owner level).
 - Any disposal of an asset that had a state adjustment, since state gain or loss differs from federal.
@@ -40,28 +42,21 @@ Figures are for tax year 2026 unless a line says 2025. Federal amounts come from
 
 ## Federal figures with years
 
-### Bonus depreciation, §168(k) ([Pub. 946 (2025)](https://www.irs.gov/publications/p946); [26 U.S.C. §168](https://www.law.cornell.edu/uscode/text/26/168); [IR-2026-06, Notice 2026-11](https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill))
+### Bonus depreciation, §168(k) ([Pub. 946 (2025)](https://www.irs.gov/publications/p946); [26 U.S.C. §168](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [P.L. 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm); [IR-2026-06, Notice 2026-11](https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill))
 
 | Property | Bonus rate | Conditions |
 | --- | --- | --- |
-| Acquired after January 19, 2025 (2025 and 2026) | 100% | Permanent under OBBBA. Property is not treated as acquired after the date a written binding contract for it was entered into ([§168 note](https://www.law.cornell.edu/uscode/text/26/168)). |
-| Same property, first tax year ending after January 19, 2025 | 40% by election (60% for long production period property and certain aircraft) | Election instead of 100% |
+| Acquired after January 19, 2025 (2025 and 2026) | 100% | Permanent under OBBBA. Property is not treated as acquired after the date a written binding contract for it was entered into ([§168 note](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). |
+| Same property, first tax year ending after January 19, 2025 | 40% by election (60% for long production period property and certain aircraft) | Election instead of 100% ([P.L. 119-21, section 70301](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)) |
 | Acquired after September 27, 2017 and before January 20, 2025, placed in service in 2025 | 40% (60% for long production period property and certain aircraft) | Pre-OBBBA phase-down ([Pub. 946](https://www.irs.gov/publications/p946)) |
-| Qualified production property, §168(n) | 100% | Elective; the portion of nonresidential real property used as an integral part of a qualified production activity, original use beginning with the taxpayer, placed in service in the United States or a US possession; construction begins after January 19, 2025 and before January 1, 2029; placed in service after July 4, 2025 and before January 1, 2031 |
+| Qualified production property, §168(n) | 100% | Elective; the portion of nonresidential real property used as an integral part of a qualified production activity, original use beginning with the taxpayer, placed in service in the United States or a US possession; construction begins after January 19, 2025 and before January 1, 2029; placed in service after July 4, 2025 and before January 1, 2031 ([P.L. 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)) |
 
 - **Qualified property** is generally tangible property depreciated under MACRS with a recovery period of 20 years or less, certain computer software, water utility property, and qualified film, television, live theatrical and sound recording productions ([Pub. 946](https://www.irs.gov/publications/p946)).
-- **Election out:** made for a whole class of property for the year, and covers all qualified property in that class placed in service that year. It is made on a timely filed return (including extensions) and can be revoked only with IRS consent ([26 U.S.C. §168(k)(7)](https://www.law.cornell.edu/uscode/text/26/168); [Pub. 946](https://www.irs.gov/publications/p946)). Electing out avoids the state bonus add-back, at a federal cost.
+- **Election out:** made for a whole class of property for the year, and covers all qualified property in that class placed in service that year. It is made on a timely filed return (including extensions) and can be revoked only with IRS consent ([26 U.S.C. §168(k)(7)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm); [Pub. 946](https://www.irs.gov/publications/p946)). Electing out avoids the state bonus add-back, at a federal cost.
 
-### §179 expensing ([Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Pub. 946 (2025)](https://www.irs.gov/publications/p946))
+### §179 expensing
 
-| Item | 2026 | 2025 |
-| --- | --- | --- |
-| Maximum deduction | $2,560,000 | $2,500,000 |
-| Reduced dollar for dollar once §179 property placed in service in the year costs more than | $4,090,000 | $4,000,000 |
-| Sport utility vehicle cap | $32,000 | $31,300 |
-
-- The 2025 amounts apply to property placed in service in tax years beginning after December 31, 2024 ([Rev. Proc. 2025-32 §3.02](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)). The old $1,220,000 and $3,050,000 figures are 2024 amounts.
-- §179 is also limited to taxable income from the active conduct of a trade or business (the business income limit), and applies to each taxpayer, not each business ([Pub. 946](https://www.irs.gov/publications/p946)).
+The federal 2026 and 2025 §179 limits, phase-out amounts and the SUV cap are in `us-section-179-and-bonus-depreciation` (from Rev. Proc. 2025-32). §179 is also limited to taxable income from the active conduct of a trade or business, and applies to each taxpayer, not each business ([Pub. 946](https://www.irs.gov/publications/p946)). The state §179 limits below are the states' own figures.
 
 ## State matrix, tax year 2026
 
@@ -98,6 +93,7 @@ Read the row for the year you are preparing. "Follows" means no state adjustment
 | Kentucky | IRC as of December 31, 2024 | Property placed in service after September 10, 2001: §168 as in effect on December 31, 2001 (no bonus) | Kentucky Form 4562; Schedule M add-back and subtraction | Property placed in service on or after January 1, 2020: §179 as in effect on December 31, 2003, no phase-out | OBBBA not adopted | [740 instructions](https://revenue.ky.gov/Forms/740%20Packet%20Instructions.pdf) |
 | Maine | Selective | Add back the net increase from §168(k) | Later years: subtract the extra depreciation that would have been allowed without §168(k); adjust gain or loss on disposal | Full conformity for property placed in service in 2020 or later | **Check** 2026 conformity | [MRS guidance](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Bonusdep_guidance_2022.pdf) |
 | Maryland | Decoupled by statute | No §168(k) (Form 500DM, code l; later subtraction code bb); §168(n): decoupled for 2025 (code dc); 2026: **check** | Recompute without bonus. Neither the bonus nor the §179 decoupling applies to property placed in service by a manufacturing entity on or after January 1, 2019 | $25,000, phase-out from $200,000 | 2025: automatically decoupled from §168(n); 2026 position: **check** the 2026 Form 500DM instructions | [Tax-General §10-210.1](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=10-210.1&enactments=false); [2025 resident booklet](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf) |
+| Michigan | Decoupled by 2025 PA 24 | Uses §168(k) as in effect on December 31, 2024; §168(n) decoupled | Schedule 1 addition = federal depreciation minus the pre-2025-law depreciation; deduct the Michigan depreciation in later years (see `mi-income-tax`) | Pre-2025 limit, $1,250,000, reduced above $3,130,000 of property (as indexed) | 2025 PA 24 | [Michigan Treasury decoupling notice, 25 February 2026](https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions) |
 | Minnesota | IRC as amended through May 1, 2026, retroactive to federal effective dates (Laws 2026, ch. 128) | Add back 80% of the §168(k) deduction (§290.0131 subd. 9) | Subtract one-fifth of the addition in each of the five following years (§290.0132 subd. 9). The addition is written for §168(k) only; for §168(n) property, **check** the department's 2026 guidance | No addition for property placed in service in taxable years beginning after 2019 (the §179 addition applies only before January 1, 2020) | Conformity advanced in 2026 | [§290.0131](https://www.revisor.mn.gov/statutes/cite/290.0131); [§290.0132](https://www.revisor.mn.gov/statutes/cite/290.0132); [Laws 2026 ch. 128](https://www.revisor.mn.gov/laws/2026/0/Session+Law/Chapter/128/) |
 | New Jersey (Gross Income Tax) | Own depreciation rules | Only a 30% allowance, and only if taken federally; 50% and higher not permitted | Worksheet GIT-DEP; same method and life as federal; disposal adjustment | Maximum $25,000; the federal reduced dollar limitation for asset cost applies, computed with the $25,000; no business income limit; unused amounts cannot be carried forward | None | [GIT-DEP](https://www.nj.gov/treasury/taxation/pdf/current/gitdep.pdf); [NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf) |
 | New York | Rolling, with decouplings | No §168(k) for property placed in service on or after June 1, 2003 (except resurgence zone and Liberty Zone property); §168(n) decoupled from 2025 | Add back (A-209); subtract New York depreciation (S-213); disposal adjustment (S-214); Form IT-398 | Generally follows; SUVs have their own modification (A-208) | Notice N-26-1 | [IT-225 instructions](https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf); [N-26-1](https://www.tax.ny.gov/forms/n-notices/n-26-1.htm) |
@@ -106,7 +102,7 @@ Read the row for the year you are preparing. "Follows" means no state adjustment
 | Oregon | IRC updated to December 31, 2025 or January 1, 2026 (SB 1507, Laws 2026 ch. 142) | 2025: follows. 2026 and later: bonus disallowed | Add back; recover through Oregon depreciation without bonus. Form line: **check** the 2026 Oregon instructions | Not addressed in the department's summary: **check** | A referendum petition (filed April 10, 2026) seeks to repeal the disconnection: **check** its status | [Oregon 2026 legislation summary](https://www.oregon.gov/dor/Pages/2026-summary-of-legislation.aspx) |
 | Pennsylvania (PIT) | Own rules | Not allowed | Recompute without bonus; where PA and federal basis differ, PA requires straight-line depreciation | Follows federal limits for tax years beginning on or after January 1, 2023 | None | [PA PIT Guide](https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/net-income-loss-from-the-operation-of-a-business,-profession-or-farm) |
 | South Carolina | IRC as amended through December 31, 2024 (2025 returns) | Not recognized | Add back the excess in the first year; extra SC depreciation in later years; same life | **Check** (the fixed date means OBBBA §179 changes are not adopted for 2025) | Not adopted for 2025 | [SC1040 instructions](https://dor.sc.gov/sites/dor/files/forms/SC1040Instr_2025.pdf) |
-| Vermont | Own add-back for bonus | Not allowed: Vermont has never conformed to federal bonus (disallowance dates from Act 190 of 2008) | Recompute as if no bonus; form line: **check** the Vermont instructions | Conforms to pre-OBBBA law; OBBBA update: **check** | "Never conformed" to bonus | [TB-44](https://tax.vermont.gov/sites/tax/files/documents/TB44.pdf); [Joint Fiscal Office presentation](https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Ways%20and%20Means/Corporate%20Income%20Tax/W~Michael%20Hackett~Vermont%20Tax%20Link-Up%20Presentation~2-5-2026.pdf) |
+| Vermont | Own add-back for bonus | Not allowed: Vermont has never conformed to federal bonus (disallowance dates from Act 190 of 2008) | Add back §168(k) or (n) bonus and subtract Vermont depreciation on bonus property, on Schedule IN-112, Part I (32 V.S.A. §5811(21), per `vt-income-tax`) | Conforms to pre-OBBBA law; OBBBA update: **check** | "Never conformed" to bonus | [TB-44](https://tax.vermont.gov/sites/tax/files/documents/TB44.pdf); [Joint Fiscal Office presentation](https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Ways%20and%20Means/Corporate%20Income%20Tax/W~Michael%20Hackett~Vermont%20Tax%20Link-Up%20Presentation~2-5-2026.pdf) |
 | Virginia | IRC as of December 31, 2025 (fixed date from 2025 returns) | Continues to deconform from bonus; deconforms from §168(n) | Fixed-date conformity addition; later subtractions; separate Virginia records | Deconforms from the OBBBA increases | Tax Bulletin 26-1 | [TB 26-1](https://www.tax.virginia.gov/sites/default/files/inline-files/tb-26-1-date-of-irc-conformity-advanced.pdf) |
 | Wisconsin | Federal law amended to December 31, 2022 (2025 returns) | Not allowed | Schedule I adjustment each year until fully depreciated or disposed | **Check** | Later federal laws apply only if adopted | [2025 Form 1 instructions](https://www.revenue.wi.gov/TaxForms2025/2025-Form1-Inst.pdf) |
 
@@ -119,18 +115,17 @@ Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington and Wyoming 
 
 ### States we could not verify (check)
 
-Idaho, Kansas, Massachusetts, Michigan, Mississippi, New Mexico, Rhode Island, Utah and West Virginia: **check**. On 25 September 2026 their revenue department or legislature pages either refused our requests or did not state the rule. Do not assume they follow federal law. Read the state's 2025 individual instructions and any 2026 conformity act. Points to confirm:
+Idaho, Kansas, Massachusetts, Mississippi, New Mexico, Rhode Island, Utah and West Virginia: **check** (Michigan was filled on 13 November 2026 from `mi-income-tax`; the 13 November Massachusetts and Mississippi skills also leave their conformity unconfirmed). On 25 September 2026 their revenue department or legislature pages either refused our requests or did not state the rule. Do not assume they follow federal law. Read the state's 2025 individual instructions and any 2026 conformity act. Points to confirm:
 
 - Idaho, New Mexico: confirm any 2026 conformity act and its treatment of §168(k) and §168(n).
 - West Virginia: the Governor proposed restoring full bonus depreciation for the 2026 session ([Governor's release](https://governor.wv.gov/article/governor-patrick-morrisey-proposes-tax-relief-package-upcoming-legislative-session-build)); confirm what was enacted.
-- Michigan: confirm its IRC conformity date and its treatment of §168(k) and §168(n).
 - Massachusetts, Rhode Island, Mississippi, Kansas, Utah: confirm whether the state decouples from §168(k) and whether it has its own §179 limit.
 
 ## Boundaries and exceptions
 
 | Situation | Rule | Source |
 | --- | --- | --- |
-| Asset under a written binding contract signed before January 20, 2025, placed in service in 2025 | Federal bonus is 40% (60% for long production period property and certain aircraft), not 100%; the state add-back base is the 40% | [Pub. 946](https://www.irs.gov/publications/p946); [§168 note](https://www.law.cornell.edu/uscode/text/26/168) |
+| Asset under a written binding contract signed before January 20, 2025, placed in service in 2025 | Federal bonus is 40% (60% for long production period property and certain aircraft), not 100%; the state add-back base is the 40% | [Pub. 946](https://www.irs.gov/publications/p946); [§168 note](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Ohio employer that increased Ohio withholding by at least 10% over the previous year | Add back 2/3 instead of 5/6; deduct 1/2 of the 2/3 add-back in each later year | [Ohio instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf) |
 | Ohio federal net operating loss caused by §168(k) or §179 | Add back 6/6; deduct 1/6 each later year | same |
 | Ohio employer whose withholding increase is at least the total §168(k) and §179, or owner of less than 5% of a pass-through | No Ohio add-back | same |
@@ -179,9 +174,42 @@ Property costing $225,000 is expensed in full under federal §179. Indiana allow
 
 Equipment was bought under a written binding contract signed on January 10, 2025 and placed in service in March 2025. It counts as acquired before January 20, 2025, so federal bonus is 40%, not 100%. Every state add-back in this skill starts from that 40% figure.
 
+Cases 1 and 5 recomputed:
+
+```oa-check
+name: Connecticut bonus and 179 add-back and yearly recovery (2026)
+inputs:
+  bonus: 100000
+  s179: 40000
+steps:
+  - bonus_addback: bonus
+  - s179_addback: s179 * 0.80
+  - yearly_bonus_recovery: bonus_addback * 0.25
+  - yearly_s179_recovery: s179_addback * 0.25
+expected:
+  bonus_addback: 100000
+  s179_addback: 32000
+  yearly_bonus_recovery: 25000
+  yearly_s179_recovery: 8000
+```
+
+```oa-check
+name: California 179 limit on 210,000 of machinery (2026)
+inputs:
+  cost: 210000
+  ca_limit: 25000
+  ca_threshold: 200000
+steps:
+  - ca_179: max(ca_limit - max(cost - ca_threshold, 0), 0)
+  - ca_depreciable: cost - ca_179
+expected:
+  ca_179: 15000
+  ca_depreciable: 195000
+```
+
 ## 2025 returns (tax year 2025; extended federal deadline October 15, 2026)
 
-- Federal: 100% bonus for property acquired after January 19, 2025; 40% for property acquired earlier; §179 limit $2,500,000, reduction above $4,000,000, SUV cap $31,300 ([Pub. 946](https://www.irs.gov/publications/p946)).
+- Federal: 100% bonus for property acquired after January 19, 2025; 40% for property acquired earlier ([Pub. 946](https://www.irs.gov/publications/p946)). Federal 2025 §179 amounts: see `us-section-179-and-bonus-depreciation`.
 - **Delaware and Oregon follow federal bonus for 2025**; their decouplings start in 2026.
 - **Hawaii 2025:** no bonus and the $25,000 §179 limit under the earlier conformity law ([N-11 instructions](https://files.hawaii.gov/tax/forms/2025/n11ins.pdf)).
 - **Arizona:** the 2026 Act adopted the P.L. 119-21 changes retroactively for 2025 ([enacted fact sheet](https://www.azleg.gov/legtext/57leg/2R/summary/S.1861-4168ATT_ASENACTED.DOCX.htm)).
@@ -217,3 +245,17 @@ Equipment was bought under a written binding contract signed on January 10, 2025
 - [ ] Disposals: state gain or loss computed on state basis.
 - [ ] Pass-through K-1 state amounts reconciled, with no double adjustment.
 - [ ] State estimated payments reviewed.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Each state's instructions, statute or notice, as linked in its row. Read for conformity date, add-back, recovery and state §179 limit. Rows not named below were read on 25 September 2026 and their links checked on 13 November 2026. | https://www.ftb.ca.gov/forms/2025/2025-3885a-instructions.html | 2026-09-25 |
+| Michigan Treasury, decoupling notice of 25 February 2026 (via `mi-income-tax`). Read for 2025 PA 24: §168(k) as of 31 December 2024, §168(n), and the pre-2025 §179 limit. | https://www.michigan.gov/treasury/reference/taxpayer-notices/2026/02/25/decoupling-michigan-income-taxes-from-certain-internal-revenue-code-provisions | 2026-11-13 |
+| Vermont 32 V.S.A. 5811(21) (via `vt-income-tax`). Read for the bonus addition and Vermont depreciation subtraction on Schedule IN-112. | https://legislature.vermont.gov/statutes/section/32/151/05811 | 2026-11-13 |
+| Arkansas 2025 AR1000F/AR1000NR instructions (via `ar-income-tax`). Read for no §168(k) and §179 as of 1 January 2022. | https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf | 2026-11-13 |
+| Public Law 119-21 (govinfo). Read for section 70301, 100% bonus for property acquired after January 19, 2025, the 40% transition election, and section 168(n). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| 26 U.S.C. 168 (govinfo, 2024 edition). Read for the election out in (k)(7). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec168.htm | 2026-11-13 |
+| IRS Pub. 946. Read for qualified property, the election out and the business income limit. | https://www.irs.gov/publications/p946 | 2026-11-13 |
+
+Not yet confirmed: Idaho, Kansas, Massachusetts, Mississippi, New Mexico, Rhode Island, Utah and West Virginia conformity for 2026; Georgia, Arkansas and Wisconsin 2026 §179 limits; Oregon's 2026 form line and the SB 1507 referendum; Maryland's 2026 §168(n) position; Nebraska 2026 legislation on §168(n); Minnesota's §168(n) treatment; Maine 2026 conformity; DC's rule for Form D-40 individuals; the New Hampshire business profits tax, Texas franchise tax, Tennessee franchise and excise tax and Washington B&O treatment.
