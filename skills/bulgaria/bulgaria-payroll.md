@@ -31,7 +31,7 @@ Tax year: the calendar year. Authorities: the National Revenue Agency (NRA, НА
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Minimum monthly wage | EUR 620.20 (BGN 1,213); hourly EUR 3.74 | 2026 | Decree 243/2025, ДВ 98/2025, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961) |
-| Maximum monthly insurable income, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130) | 2026 | State Social Insurance Budget Act 2026 (ZBDOO) art. 9(1)(c), [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
+| Maximum monthly insurable income, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130, computed at the fixed rate 1.95583) | 2026 | State Social Insurance Budget Act 2026 (ZBDOO) art. 9(1)(c), [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
 | Maximum monthly insurable income, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Minimum insurable income by activity and job group, 1 Jan to 31 Jul | EUR 550.66 to EUR 901.41 (Appendix 1) | 2026 | ZBDOO 2026 art. 9(1)(a), Appendix 1, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Minimum insurable income by activity and job group, 1 Aug to 31 Dec | EUR 620.20 to EUR 1,532.00 (Appendix 1A) | 2026 | ZBDOO 2026 art. 9(2)(a), Appendix 1A, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
@@ -42,7 +42,7 @@ Tax year: the calendar year. Authorities: the National Revenue Agency (NRA, НА
 | Unemployment | 1%: employer 0.6%, employee 0.4% (60:40) | 2026 | KSO art. 6(1)(6), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
 | Work accident and occupational disease | 0.4% to 1.1% by economic activity, employer only (e.g. IT and accounting 0.4%, retail 0.5%, building construction 1.1%) | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2 and 2A, https://lex.bg/laws/ldoc/1597824512 |
 | Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
-| Health insurance | 8%: employer 4.8%, employee 3.2% (60:40) | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
+| Health insurance | 8%: employer 4.8%, employee 3.2% (computed from the 60:40 split) | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
 | Total, standard employee | Employee 13.78%; employer 18.52% plus the work accident rate | 2026 | Sum of the rows above, https://lex.bg/laws/ldoc/1597824512 |
 | Wage tax | 10% of gross pay less the employee's own mandatory contributions | 2026 | ZDDFL arts. 42(2), (4), 48(1), [lex.bg](https://lex.bg/laws/ldoc/2135538631) |
 | Teachers' pension fund (teachers only) | 4.3%, employer only | 2026 | KSO art. 6(7), https://lex.bg/laws/ldoc/1597824512 |
