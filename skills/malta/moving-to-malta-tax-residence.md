@@ -73,7 +73,7 @@ In scope: which residence route fits, what each route taxes, the remittance-basi
 | HSI end date, rule 7(3) | no benefit on income earned after 31 December 2040 | same | same |
 | HSI step-up years (guidance) | EUR 75,000 from basis year 2031, EUR 85,000 from basis year 2036 | MTCA guidance | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/hqpr-new-amalgamated-rules---guidelines---branded-06-04-(002).pdf?sfvrsn=b605473e_1 |
 | Nomad Residence Permit, S.L. 123.210 rule 3(1) and 3(3) | 10% on chargeable income from authorised work; no tax in the first 12 months from the later of the permit date and 1 Jan 2024, unless the holder declares residence is not casual | Current | https://legislation.mt/eli/sl/123.210/eng/pdf |
-| Malta Retirement Programme, S.L. 123.134 rule 5(1) | 15% on foreign income received in Malta; minimum EUR 7,500 for the beneficiary plus EUR 500 for every dependant and every special carer | Current | https://legislation.mt/eli/sl/123.134/eng/pdf |
+| Malta Retirement Programme, S.L. 123.134 rule 5(1) | 15% on foreign income received in Malta; minimum seven thousand five hundred euro for the beneficiary (as the rule writes it) plus EUR 500 for every dependant and every special carer | Current | https://legislation.mt/eli/sl/123.134/eng/pdf |
 | MRP pension condition, rule 4(d) | the pension is all received in Malta and is at least 75% of chargeable income | Current | same |
 | MRP application fee, rule 3(1) | EUR 2,500 | Current | same |
 | Duty on buying Malta property, Cap. 364 art. 32(1) | EUR 5 per EUR 100 (5%) of the higher of price and value | Current | https://legislation.mt/eli/cap/364/eng/pdf |

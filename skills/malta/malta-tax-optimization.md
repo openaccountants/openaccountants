@@ -212,7 +212,7 @@ Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTC
 | Wear and tear minimum years, S.L. 123.01 Schedule | computers 4, motor vehicles 5, catering 6, furniture 10, electrical and plumbing 15 | Current | https://legislation.mt/eli/sl/123.1/eng/pdf |
 | Pension income exemption, S.L. 123.204 rule 3 | 100% up to EUR 37,104 (basis year 2026); 80% up to EUR 13,309 (basis year 2025) | YA 2027 / YA 2026 | https://legislation.mt/eli/sl/123.204/eng/pdf |
 | Pensioner rebate, S.L. 123.204 rule 4 | (chargeable income less 15,000) x 15%, capped at EUR 540 | From YA 2027 | same |
-| Provisional tax, S.L. 372.18 rule 4 | 20% by 30 April, 30% by 31 August, 50% by 21 December of the basis year | Each basis year | https://legislation.mt/eli/sl/372.18/eng/pdf |
+| Provisional tax, S.L. 372.18 rule 4 | Twenty per cent by 30 April, a further thirty per cent by 31 August, a further fifty per cent by 21 December of the basis year (the rule writes the percentages in words) | Each basis year | https://legislation.mt/eli/sl/372.18/eng/pdf |
 | Interest on late tax, Cap. 372 art. 44(2A) | 0.6% a month or part, capped at the tax | Current | https://legislation.mt/eli/cap/372/eng/pdf |
 | Small enterprise VAT exemption, Cap. 406 art. 11 | domestic annual turnover not above the "domestic threshold" of EUR 35,000 (schedule definition read with art. 11) | Current | https://legislation.mt/eli/cap/406/eng/pdf |
 | Capital goods for VAT, S.L. 406.12 | movable goods of EUR 1,160 or more, and immovable property; adjusted over 5 or 20 years | Current | https://legislation.mt/eli/sl/406.12/eng/pdf |
