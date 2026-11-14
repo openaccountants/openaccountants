@@ -1,26 +1,30 @@
 ---
 name: as-oasdi-annual-wage-base-reference
-version: 0.1
+version: "1.0"
 description: Bounded American Samoa ordinary private-employee federal OASDI annual wage-base reference for 2026. Uses independently stipulated covered remuneration, separate employee and employer shares and the published annual ceiling. Holds wage classification, exceptions, other programmes, actual withholding, precision, payments and complete outputs. Requires the universal, social-contributions and scope-neutral US Circular 230 disclosure bases; guide presence and component checks do not establish comprehensive acceptance.
 category: international
 jurisdiction: AS
 tax_year: 2026
 tax_year_notes: "Calendar-year 2026 published OASDI ceiling and ordinary employee/employer rates only. Selected current US Code text is published through Public Law 119-124, 15 October 2026; this does not establish the absence or effect of later law. Territorial income tax is separate."
+last_updated: 2026-11-14
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-last_updated: 2026-10-25
-review_status: pending_review
-verified_by: pending
+domain: payroll
+type: computation
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
-  - us-circular-230-disclosure
 ---
 
-# American Samoa 2026 OASDI annual wage-base reference
+# American Samoa: 2026 OASDI annual wage-base reference, v1.0
+
+> **Source-cited draft.** Written by Ryan Duguid; brought to the 2026 standard by Claude. Built from IRC sections 3101, 3111 and 3121, the SSA determination of the 2026 contribution and benefit base (90 FR 49047) and IRS Publication 15 (2026). No accountant has reviewed it.
+
+**Answer first.** For an ordinary private employee in American Samoa, federal social security (OASDI) applies because IRC section 3121(e) includes American Samoa in "State" and "United States". In 2026 the employee and the employer each owe **6.2%** of covered wages up to the **USD 184,500** annual wage base (per employee, per employer, calendar year), so each share is at most **USD 11,439** (derived). Medicare, Additional Medicare Tax and territorial income tax are separate and are not capped by this base.
+
+## Scope
 
 > **General reference only.** This Tier 2 draft illustrates the selected federal Old-Age, Survivors and Disability Insurance (OASDI) annual wage-base profile. It does not establish actual covered wages, complete FICA, territorial income tax, lawful withholding, a remittance or accepted financial outputs. Guide presence and component checks do not establish comprehensive jurisdiction acceptance.
-
-## Scope and source gates
 
 Load all declared bases in full. Preserve the 4 universal outputs and 18 checks, the 5 social-contributions outputs and 12 checks, every mandatory country slot, shared refusals and the exact topical refusals below. This reference leaves the social-contributions country contract incomplete. Actual payroll also requires payroll-workflow-base and a complete American Samoa payroll companion; no output or country acceptance transfers by implication.
 
@@ -30,7 +34,27 @@ Federal FICA's territorial link is independent of American Samoa's territorial i
 
 Government cases are outside the fictional private-employment branch. Do not infer a universal American Samoa government exemption from section 3121(b)(7)'s opening State-service exclusion: paragraph (7)(B) expressly excepts American Samoa government service from that exclusion. Resolve the actual branch, retirement-system facts and complete law separately.
 
-## Primary evidence and reading limits
+## Ask the client first
+
+1. **Who the legal employer and employee are**, and the actual service, location and status (private, government, household, agricultural or other special service).
+2. **Every remuneration component paid and received in calendar 2026**, with inclusions and exclusions.
+3. **Other employers, predecessor or successor and common-paymaster history**, and any international agreement.
+4. **Corrections, prior wages, actual withholding and remittances so far.**
+5. **Whether the reviewer is ready**: identifiers, bank details and signatures stay with the reviewer.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Figure, 2026 | Source |
+|---|---|---|
+| OASDI employee rate | 6.2% of covered wages (IRC 3101(a)) | [IRS Publication 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| OASDI employer rate | 6.2% of covered wages (IRC 3111(a)) | same |
+| OASDI wage base (contribution and benefit base) | $184,500 for remuneration paid in 2026, per employee and employer, calendar year (IRC 3121(a)(1)) | [SSA determination, 90 FR 49047](https://www.govinfo.gov/content/pkg/FR-2025-11-03/pdf/2025-19763.pdf) |
+| Maximum share at the base | USD 11,439 each (derived: 184,500 x 6.2%) | [IRS Publication 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Territorial link | American Samoa is in "State" (3121(e)(1)) and "United States" (3121(e)(2)) | [IRC section 3121](https://uscode.house.gov/us/usc/119-124/t26/s3121/) |
+
+### Primary evidence and reading limits
 
 | Authority | Selected support and limits |
 |---|---|
@@ -42,7 +66,7 @@ Government cases are outside the fictional private-employment branch. Do not inf
 
 The retained Code responses are complete retrievals; only selected contexts were substantively reviewed. No absence of a later amendment, exclusion, local obligation or filing requirement is inferred from a search, index or administrative summary. Actual application remains held until the full relevant chain and facts are established.
 
-## Intake and conditional mechanics
+### Intake and conditional mechanics
 
 Reuse relevant redacted evidence before grouped questions. Establish the legal employer and employee, actual service/locations/status, the calendar year in which each amount was paid and received, every remuneration component and exclusion, all employers and predecessor/successor/common-paymaster history, international coverage, corrections, prior wages, actual withholding/remittances and reviewer readiness. Keep identifiers, bank information and signatures with the reviewer. Present and confirm the profile before actual classification; confirmation cannot supply missing law.
 
@@ -53,7 +77,7 @@ Reuse relevant redacted evidence before grouped questions. Establish the legal e
 5. **Preserve exact precision.** Retain W, C, E, R and T exactly for these illustrations. No rounding, truncation to cents, per-pay-period allocation or adjustment is authorised by this reference. Fractional results below are not lawful withholding or filing amounts. Do not turn the annual reference into a per-payment deduction by subtracting an unevidenced prior total.
 6. **Keep payment and return completion held.** No reference total establishes actual withholding, recovery, credits, refunds, deposits, filing form, channel, deadline or accepted reconciliation. A payment reference is not evidence of the relevant programme/year split. No remittance is credited without evidence.
 
-## Worked and held positions
+## Boundary and exception table
 
 All monetary inputs below are fictional source-scale dollars for 2026. Exact arithmetic remains distinct from actual liability and rounding. A zero stipulated W is an arithmetic case, not a missing-fact default or a determination of a worker's coverage.
 
@@ -78,7 +102,7 @@ All monetary inputs below are fictional source-scale dollars for 2026. Exact ari
 | P17 | Actual deductions, deposits, credits, refunds, remittance or filing-ready outputs are requested. | Hold complete law/facts, prescribed outputs, verified tools and reviewer acceptance. No static or incomplete substitute. |
 | P18 | A fractional illustration is rounded to cents or turned into a per-payment amount without established authority. | Hold the lawful precision and sequence. Exact reference arithmetic supplies no withholding rule. |
 
-## Held-case register
+### Held-case register
 
 | Hold | Evidence required before the affected actual result |
 |---|---|
@@ -95,7 +119,57 @@ All monetary inputs below are fictional source-scale dollars for 2026. Exact ari
 | H11 | Qualified local reviewer, professional sign-off and disposition of every material discrepancy without a cash/materiality floor. |
 | H12 | Evidence reuse, confirmed profile and no more than 10 unresolved grouped factual questions. |
 
-## Exact topical refusals
+## Worked cases
+
+**Case A: at and just above the ceiling (P06, P07).** One employee, one private employer, covered remuneration W of USD 184,500 and USD 184,500.01 in 2026. C = min(W, 184,500); each share is 6.2% of C.
+
+```oa-check
+name: American Samoa OASDI 2026, W at and above the USD 184,500 base
+inputs:
+  w_at: 184500
+  w_above: 184500.01
+  base: 184500
+  rate: 0.062
+steps:
+  - c_at: min(w_at, base)
+  - c_above: min(w_above, base)
+  - employee_at: c_at * rate
+  - employee_above: c_above * rate
+  - total_above: employee_above * 2
+expected:
+  c_at: 184500
+  c_above: 184500
+  employee_at: 11439
+  employee_above: 11439
+  total_above: 22878
+```
+
+**Case B: two components, one cap (P08).** One employee, same employer and year, two covered components of USD 150,000 and USD 50,000. Aggregate first, then cap once; capping each component would wrongly give a base of USD 200,000.
+
+```oa-check
+name: American Samoa OASDI 2026, USD 150,000 plus USD 50,000 aggregated before the cap
+inputs:
+  component_1: 150000
+  component_2: 50000
+  base: 184500
+  rate: 0.062
+steps:
+  - w: component_1 + component_2
+  - c: min(w, base)
+  - employee: c * rate
+  - employer: c * rate
+  - wrong_per_component_base: min(component_1, base) + min(component_2, base)
+expected:
+  w: 200000
+  c: 184500
+  employee: 11439
+  employer: 11439
+  wrong_per_component_base: 200000
+```
+
+Result: each share USD 11,439 (derived). These are exact reference figures, not withholding or filing amounts.
+
+## When to refuse or refer
 
 Preserve R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exact messages and full scope trace. Apply these additional triggers before actual calculation or assembly and deliver no incomplete financial artifact.
 
@@ -104,7 +178,9 @@ Preserve R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exa
 - **R-AS-OASDI-RUNTIME.** Trigger: verified recalculation, zero-error checks, complete output generation or delivery is unavailable. Message: 'The required verified contribution calculation and output tools are unavailable. I cannot substitute chat arithmetic, static values or an incomplete file for the required financial outputs.'
 - **R-AS-OASDI-AMBIGUITY.** Trigger: more than 10 grouped factual questions remain after evidence reuse. Message: 'More than 10 grouped factual questions remain unresolved. Obtain the missing records with the reviewer before continuing.'
 
-## Outputs, checks and incomplete country contract
+Refer Medicare and Additional Medicare Tax to the pack's Medicare skills, and territorial income tax withholding to the territory's payroll or income tax skill.
+
+## Completion checklist
 
 Preserve the universal working paper, reviewer brief, action list and practitioner checklist and all 5 social-contributions outputs: contribution computation schedule, remittance reconciliation, filing and payment calendar, reviewer brief and contribution register. Every logical output must remain identifiable. No output may be omitted or replaced with static values or mock files. This reference establishes no deployed engine or complete financial artifact.
 
@@ -127,28 +203,22 @@ Run all 18 universal and 12 domain checks. Add independent checks for the territ
 
 Optional voluntary, cross-border, sector, benefit and integration slots remain incomplete. No comprehensive country or domain acceptance follows.
 
-## Revision and disclaimer
-
 2026-10-25, v0.1: selected 2026 ordinary private-employee OASDI annual wage-base reference, 10 numeric positions, 8 held positions and 12 held-case rows. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional must establish applicable law, verify the facts and complete and sign off every required output before filing, paying or relying on a result.
 
-<!-- openaccountants-cta-block -->
+2026-11-14, v1.0: brought to the 2026 standard (headings, rates rows linked, sources dated, worked cases); figures re-read, unchanged.
 
----
+## Sources
 
-## Talk to a verified accountant
+| Source | URL | Read on |
+|---|---|---|
+| IRS Publication 15 (2026). Read for social security 6.2% each for employee and employer and the $184,500 wage base limit; Medicare 1.45% each. | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-14 |
+| SSA, 2026 cost-of-living increase and other determinations, 90 FR 49047 to 49053 (3 November 2025). Read for "$184,500 for remuneration paid in 2026". | https://www.govinfo.gov/content/pkg/FR-2025-11-03/pdf/2025-19763.pdf | 2026-11-14 |
+| IRC section 3121 (House, through Public Law 119-124). Read for (a)(1), (b), (b)(7), (e)(1) and (e)(2). | https://uscode.house.gov/us/usc/119-124/t26/s3121/ | 2026-11-14 |
+| IRC sections 3101 and 3111 (same edition). Read for subsection (a), 6.2% each. | https://uscode.house.gov/us/usc/119-124/t26/s3101/ | 2026-10-25 |
+| SSA contribution and benefit base table. Read for the 2026 row, $184,500. | https://www.ssa.gov/OACT/COLA/cbb.html | 2026-10-25 |
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+Rows dated 2026-10-25 were read by Ryan Duguid on that day; the SSA table refused an automated fetch on 2026-11-14 and the same figure was confirmed in the Federal Register and Publication 15.
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: later amendments after Public Law 119-124; the complete exclusions in 3121(b) for special service; American Samoa registration, forms, deposit schedules and deadlines for the employer; penalties and interest; rounding and per-period collection rules.

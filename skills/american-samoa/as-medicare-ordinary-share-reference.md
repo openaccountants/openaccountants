@@ -1,27 +1,30 @@
 ---
 name: as-medicare-ordinary-share-reference
-version: 0.1
+version: "1.0"
 description: Bounded American Samoa ordinary private-employee federal Medicare share reference for 2026. Uses independently stipulated Medicare-covered remuneration and separate 1.45% employee and employer shares without an OASDI wage ceiling. Holds Additional Medicare, actual coverage, withholding, precision, payments and complete outputs. Requires the universal, social-contributions and scope-neutral US Circular 230 disclosure bases; component checks do not establish comprehensive acceptance.
-category: international
+category: payroll
 jurisdiction: AS
 tax_year: 2026
 tax_year_notes: "Selected ordinary Medicare component only. Retained Code snapshots are published through Public Law 119-124, 15 October 2026; retained collection/deposit regulations are as at 22 October 2026. These do not establish absence/effect of later law or complete operational intake. Territorial income tax and Additional Medicare are separate."
+last_updated: 2026-11-14
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-last_updated: 2026-10-25
-review_status: pending_review
-verified_by: pending
+domain: payroll
+type: computation
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
-  - us-circular-230-disclosure
 ---
 
-# American Samoa 2026 ordinary Medicare share reference
+# American Samoa: 2026 ordinary Medicare share reference, v1.0
+
+> **Source-cited draft.** Written by Ryan Duguid; brought to the 2026 standard by Claude. Built from IRC sections 3101, 3102, 3111, 3121 and 6302, 26 CFR 31.3102-1 and 31.3102-4 and IRS Publication 15 (2026). No accountant has reviewed it.
+
+**Answer first.** For an ordinary private employee in American Samoa, federal Medicare (hospital insurance) applies because IRC section 3121(e) includes American Samoa in "State" and "United States". In 2026 the employee and the employer each owe **1.45%** of all Medicare-covered wages, with **no wage base limit**: the USD 184,500 OASDI base does not cap Medicare. The employee's **Additional Medicare Tax of 0.9%** and the employer's duty to withhold it on wages over **USD 200,000** are separate tests, not part of the ordinary shares.
+
+## Scope
 
 > **General reference only.** This Tier 2 draft illustrates ordinary federal Medicare hospital-insurance shares on independently stipulated covered remuneration. It establishes neither actual covered wages, Additional Medicare, complete FICA, territorial income tax, lawful withholding, a remittance nor accepted financial outputs. Guide presence and component checks do not establish comprehensive jurisdiction acceptance.
-
-## Scope and source gates
-
 
 Load all declared bases in full. Preserve the 4 universal outputs and 18 checks, the 5 social-contributions outputs and 12 checks, every mandatory country slot, shared refusals and the exact topical refusals below. This reference leaves the social-contributions country contract incomplete. Actual payroll also requires payroll-workflow-base and a complete American Samoa payroll companion; no output or country acceptance transfers by implication.
 
@@ -37,7 +40,27 @@ The [IRS possession FICA summary](https://www.irs.gov/individuals/international-
 
 Government hospital-insurance coverage also requires the separate IRC section 3121(u) analysis. An OASDI exemption or State/territorial government label alone does not establish Medicare coverage or exclusion. No government result is computed here.
 
-## Primary evidence and reading limits
+## Ask the client first
+
+1. **Who the legal employer and employee are**, and the actual service, location and status (private, government, household, agricultural or other special service, section 3121(u)).
+2. **Every Medicare-covered remuneration component paid and received in calendar 2026**, with inclusions and exclusions.
+3. **Other employers, predecessor or successor and common-paymaster history**, and any international agreement.
+4. **Corrections, prior wages, actual withholding and remittances so far.**
+5. **Whether the reviewer is ready**: identifiers, bank details and signatures stay with the reviewer.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Figure, 2026 | Source |
+|---|---|---|
+| Medicare employee rate | 1.45% of all Medicare-covered wages (IRC 3101(b)(1)) | [IRS Publication 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Medicare employer rate | 1.45% of all Medicare-covered wages (IRC 3111(b)) | same |
+| Medicare wage base limit | None: the 3121(a)(1) ceiling applies only to 3101(a) and 3111(a) (OASDI) | [IRC section 3121](https://uscode.house.gov/us/usc/119-124/t26/s3121/) |
+| Additional Medicare Tax, employee only | 0.9%; employer withholds on wages paid to the employee over ,000 in the calendar year (IRC 3101(b)(2), 3102(f)) | [IRS Publication 15 (2026)](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Territorial link | American Samoa is in "State" (3121(e)(1)) and "United States" (3121(e)(2)) | [IRC section 3121](https://uscode.house.gov/us/usc/119-124/t26/s3121/) |
+
+### Primary evidence and reading limits
 
 | Authority | Selected support and limits |
 |---|---|
@@ -51,7 +74,7 @@ Government hospital-insurance coverage also requires the separate IRC section 31
 
 The retained Code and regulation responses are complete retrievals; substantive reading is limited to the stated contexts. The eCFR title metadata available at retrieval lists 22 October 2026 as its up-to-date date. Subsidiary rules, original/later amendments, actual classifications, current forms and the complete withholding, correction, deposit and territorial reporting chain remain open. No absence of an obligation is inferred from a search, index or administrative summary.
 
-## Intake and conditional mechanics
+### Intake and conditional mechanics
 
 Reuse relevant redacted evidence before grouped questions. Establish legal employer and employee, actual service/locations/status, every remuneration component, coverage and exclusion, calendar year of payment and receipt, every employer and predecessor/successor/common-paymaster history, international coverage, corrections, actual deductions/remittances and reviewer readiness. Keep identifiers, bank information and signatures with the reviewer. Present and confirm the profile before actual classification; confirmation cannot supply missing law.
 
@@ -62,7 +85,7 @@ Reuse relevant redacted evidence before grouped questions. Establish legal emplo
 5. **Preserve exact illustration precision.** Retain M, E, R and T exactly below. Fractional shares are not lawful per-payment withholding, filing or remittance amounts. The identified employee collection fraction-of-a-cent rule does not complete annual allocation, employer-share precision, reconciliation or adjustment authority. No rounding, truncation, invented pay-period allocation or subtraction of unevidenced prior deductions is authorised by these illustrations.
 6. **Keep payment and return completion held.** No reference establishes actual withholding/recovery, credits, refunds, deposits, form, channel, deadline or accepted reconciliation. A cash deduction or payment reference alone does not prove its programme/year split. No remittance is credited without evidence.
 
-## Worked and held positions
+## Boundary and exception table
 
 All monetary inputs are fictional source-scale dollars for 2026. Exact ordinary Medicare arithmetic remains separate from actual liability and precision. A zero stipulated M is an arithmetic case, never a missing-fact default or coverage determination. Additional Medicare and every other programme remain unresolved in all positions, including amounts below 200000.
 
@@ -94,7 +117,7 @@ All monetary inputs are fictional source-scale dollars for 2026. Exact ordinary 
 | P24 | American Samoa government service is treated as universally exempt from the opening State-service wording, or the DC/Guam branches are substituted. | Hold the complete section 3121(b)(7)(B) branch and retirement-system facts and separate section 3121(u) hospital-insurance rules. Paragraph (C) concerns DC and paragraph (D) specifically concerns Guam; no private-employment illustration becomes a government determination. |
 | P25 | American Samoa is conflated with independent Samoa, or the Puerto Rico citizen sentence or AS residence is offered as proof that every worker is a US citizen and covered. | Hold the actual jurisdiction, service, status and coverage evidence. American Samoa (AS) is distinct from independent Samoa (WS); no citizenship deeming or coverage determination follows from residence alone. |
 
-## Held-case register
+### Held-case register
 
 | Hold | Evidence required before the affected actual result |
 |---|---|
@@ -111,7 +134,52 @@ All monetary inputs are fictional source-scale dollars for 2026. Exact ordinary 
 | H11 | Qualified local reviewer, professional sign-off and disposition of every material discrepancy without a cash/materiality floor. |
 | H12 | Evidence reuse, confirmed profile and no more than 10 unresolved grouped factual questions. |
 
-## Exact topical refusals
+## Worked cases
+
+**Case A: no ceiling (P10).** One employee, one private employer, Medicare-covered remuneration M of USD 1,000,000 in 2026. Each ordinary share is 1.45% of M with no cap; capping at the OASDI base would wrongly give USD 2,675.25.
+
+```oa-check
+name: American Samoa Medicare 2026, M of USD 1,000,000, no wage base limit
+inputs:
+  m: 1000000
+  rate: 0.0145
+  oasdi_base: 184500
+steps:
+  - employee: m * rate
+  - employer: m * rate
+  - total: employee + employer
+  - wrong_capped_employee: min(m, oasdi_base) * rate
+expected:
+  employee: 14500
+  employer: 14500
+  total: 29000
+  wrong_capped_employee: 2675.25
+```
+
+**Case B: two components (P11).** One employee, same employer and year, components of USD 150,000 and USD 50,000. M is USD 200,000; each ordinary share is USD 2,900. Additional Medicare is a separate test: the employer's withholding duty starts only on wages over USD 200,000, so here the wages above that point are nil (derived).
+
+```oa-check
+name: American Samoa Medicare 2026, USD 150,000 plus USD 50,000
+inputs:
+  component_1: 150000
+  component_2: 50000
+  rate: 0.0145
+  addl_withholding_threshold: 200000
+steps:
+  - m: component_1 + component_2
+  - employee: m * rate
+  - employer: m * rate
+  - wages_over_threshold: max(0, m - addl_withholding_threshold)
+expected:
+  m: 200000
+  employee: 2900
+  employer: 2900
+  wages_over_threshold: 0
+```
+
+Result: USD 2,900 each (derived). These are exact reference figures, not withholding or filing amounts; the employee's annual Additional Medicare liability is tested separately on the return.
+
+## When to refuse or refer
 
 Preserve R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exact messages and full scope trace. Apply these additional triggers before actual calculation or assembly and deliver no incomplete financial artefact.
 
@@ -120,7 +188,9 @@ Preserve R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exa
 - **R-AS-MEDICARE-RUNTIME.** Trigger: verified recalculation, zero-error checks, complete output generation or delivery is unavailable. Message: 'The required verified contribution calculation and output tools are unavailable. I cannot substitute chat arithmetic, static values or an incomplete file for the required financial outputs.'
 - **R-AS-MEDICARE-AMBIGUITY.** Trigger: more than 10 grouped factual questions remain after evidence reuse. Message: 'More than 10 grouped factual questions remain unresolved. Obtain the missing records with the reviewer before continuing.'
 
-## Outputs, checks and incomplete country contract
+Refer the OASDI wage base and Additional Medicare Tax to the pack's other skills, and territorial income tax withholding to the territory's payroll or income tax skill.
+
+## Completion checklist
 
 Preserve the universal working paper, reviewer brief, action list and practitioner checklist and all 5 social-contributions outputs: contribution computation schedule, remittance reconciliation, filing and payment calendar, reviewer brief and contribution register. Every logical output must remain identifiable. No output may be omitted or replaced with static values or mock files. This reference establishes no deployed engine or complete financial artefact.
 
@@ -143,28 +213,23 @@ Run all 18 universal and 12 domain checks. Add independent checks for the territ
 
 Optional voluntary, cross-border, sector, benefit and integration slots remain incomplete. No comprehensive country or domain acceptance follows.
 
-## Revision and disclaimer
-
 2026-10-25, v0.1: selected 2026 ordinary private-employee Medicare reference, 13 numeric positions, 12 held positions and 12 held-case rows. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional must establish applicable law, verify the facts and complete and sign off every required output before filing, paying or relying on a result.
 
-<!-- openaccountants-cta-block -->
+2026-11-14, v1.0: brought to the 2026 standard (headings, rates rows linked, sources dated, worked cases); figures re-read, unchanged.
 
----
+## Sources
 
-## Talk to a verified accountant
+| Source | URL | Read on |
+|---|---|---|
+| IRS Publication 15 (2026). Read for Medicare 1.45% each for employee and employer, no wage base limit, Additional Medicare Tax 0.9% withheld on wages over ,000. | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-14 |
+| IRC section 3121 (House, through Public Law 119-124). Read for (a)(1) (ceiling applies to 3101(a) and 3111(a) only), (b), (e), (u). | https://uscode.house.gov/us/usc/119-124/t26/s3121/ | 2026-11-14 |
+| IRC sections 3101 and 3111 (same edition). Read for 3101(b)(1) and (b)(2), 3111(b). | https://uscode.house.gov/us/usc/119-124/t26/s3101/ | 2026-10-25 |
+| IRC sections 3102 and 6302 (same edition). Read for collection, employer liability, Additional Medicare withholding and deposit authority. | https://uscode.house.gov/us/usc/119-124/t26/s3102/ | 2026-10-25 |
+| 26 CFR 31.3102-1 and 31.3102-4 (eCFR, 22 October 2026). Read for the fraction-of-a-cent rule and the Additional Medicare withholding examples. | https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-26.xml?part=31&section=31.3102-1 | 2026-10-25 |
+| 26 CFR 31.6302-1 (eCFR, 22 October 2026). Read for deposit rules context. | https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-26.xml?part=31&section=31.6302-1 | 2026-10-25 |
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+Rows dated 2026-10-25 were read by Ryan Duguid on that day.
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: later amendments after Public Law 119-124; complete 3121(b) and 3121(u) branches for special and government service; American Samoa employer registration, forms, deposit schedules and deadlines; penalties and interest; rounding and per-period collection rules.
