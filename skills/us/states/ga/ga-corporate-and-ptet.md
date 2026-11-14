@@ -1,10 +1,10 @@
 ---
 name: ga-corporate-and-ptet
 description: Compute Georgia corporate income tax on Form 600 for tax year 2026, and the election by an S corporation (Form 600S) or partnership (Form 700) to pay Georgia income tax at the entity level (the pass-through entity tax). Covers the 4.99% rate tied to the individual rate, the start-of-year rate rule for fiscal years, HB 1199 conformity and bonus depreciation addback, related-member addbacks, single gross receipts apportionment, NOLs with the 80% limit, Georgia consolidated returns, Form 600S-CA nonresident consent, Public Law 86-272, the owner's PTEDED and PTEADD lines, due dates, extensions and penalties, with 2025 returns still open. Trigger on "Georgia corporate income tax", "Form 600", "Georgia PTET", "Georgia entity level election", "Form 700", "Form 600S". Net worth tax is in ga-net-worth-tax; estimated tax in ga-estimated-tax-depth.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-GA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -54,7 +54,7 @@ Out of scope, and where it goes:
 | --- | --- | --- |
 | Corporate income tax rate, taxable years beginning on or after 1 January 2026 | 4.99% | [HB 463 (2026)](https://gov.georgia.gov/document/2026-signed-legislation/hb-463/download) |
 | Corporate income tax rate, taxable years beginning on or after 1 January 2025 | 5.19% | [HB 111 (2025), O.C.G.A. § 48-7-20(a.1)](https://gov.georgia.gov/document/2025-signed-legislation/hb-111/download); [2025 IT-611 booklet](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download) |
-| Rate for an electing S corporation or partnership | the individual rate for the corresponding year (4.99% for 2026) | [HB 1023 (2024), O.C.G.A. §§ 48-7-21(b)(7)(C)(ii), 48-7-23(b)(3)](https://gov.georgia.gov/document/2024-signed-legislation/hb-1023/download) |
+| Rate for an electing S corporation or partnership | the individual rate for the corresponding year (4.99% for 2026) | [HB 1023 (2024), O.C.G.A. §§ 48-7-21(b)(7)(C)(ii), 48-7-23(b)(3)](https://gov.georgia.gov/document/2024-signed-legislation/hb-1023/download); [HB 463 (2026), 4.99% rate](https://gov.georgia.gov/document/2026-signed-legislation/hb-463/download) |
 | Apportionment factor, tax years beginning on or after 1 January 2008 | gross receipts only (100%) | [2025 IT-611 booklet](https://dor.georgia.gov/document/document/2025-it611-corporate-income-tax-instruction-booklet/download) |
 | NOLs from years beginning on or after 1 January 2018, maximum share of Georgia income before NOLs | 80% | same |
 | Addback of payments to unauthorized employees, per year | more than $600 | same |
