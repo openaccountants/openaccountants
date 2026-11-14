@@ -526,26 +526,26 @@ expected:
 
 | Source and what was read | Official URL | Read on |
 |---|---|---|
-| BOI-CF-PGR-20-10, notice of audit, appeals and the charte: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/236-PGP.html | 2026-11-14 |
-| BOI-CF-PGR-20-30, length of on-site audits: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/243-PGP.html | 2026-11-14 |
+| BOI-CF-PGR-20-10, notice of audit, appeals and the charte: read for EUR 3,923 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/236-PGP.html | 2026-11-14 |
+| BOI-CF-PGR-20-30, length of on-site audits: read for EUR 2,013, EUR 2,126, EUR 3,953, EUR 500 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/243-PGP.html | 2026-11-14 |
 | BOI-CF-IOR-60-40-10, FEC hand-over and the fine: read for Fine where no tax is adjusted; Where tax is adjusted: increase of the duties charged, if higher than the fine; Duties recalled over the period above which the increase applies instead of the | https://bofip.impots.gouv.fr/bofip/9026-PGP.html | 2026-11-14 |
-| BOI-CF-IOR-60-40-20, FEC format: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/9028-PGP.html | 2026-11-14 |
-| BOI-CF-IOR-10-50-10, effects of the proposition de rectification: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/5510-PGP.html | 2026-11-14 |
+| BOI-CF-IOR-60-40-20, FEC format: read for EUR 10,000, EUR 2,013 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/9028-PGP.html | 2026-11-14 |
+| BOI-CF-IOR-10-50-10, effects of the proposition de rectification: read for the procedure and conditions this skill cites from it | https://bofip.impots.gouv.fr/bofip/5510-PGP.html | 2026-11-14 |
 | BOI-CF-CMSS-20-10, competence of the departmental commission: read for Turnover excluding VAT above which the departmental commission is NOT competent,; The same limit for other businesses | https://bofip.impots.gouv.fr/bofip/873-PGP.html | 2026-11-14 |
-| BOI-CF-CMSS-20-30, referral to the departmental commission: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/4355-PGP.html | 2026-11-14 |
-| BOI-CF-PGR-10, reassessment periods: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/937-PGP.html | 2026-11-14 |
-| BOI-CF-PGR-10-20, reassessment periods for IR and IS: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/1396-PGP.html | 2026-11-14 |
-| BOI-CF-PGR-10-50, extensions of the reassessment period: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/1479-PGP.html | 2026-11-14 |
+| BOI-CF-CMSS-20-30, referral to the departmental commission: read for the procedure and conditions this skill cites from it | https://bofip.impots.gouv.fr/bofip/4355-PGP.html | 2026-11-14 |
+| BOI-CF-PGR-10, reassessment periods: read for the procedure and conditions this skill cites from it | https://bofip.impots.gouv.fr/bofip/937-PGP.html | 2026-11-14 |
+| BOI-CF-PGR-10-20, reassessment periods for IR and IS: read for 15%, EUR 2,013, EUR 1,649, EUR 223 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/1396-PGP.html | 2026-11-14 |
+| BOI-CF-PGR-10-50, extensions of the reassessment period: read for 10%, EUR 50,000, EUR 1,649 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/1479-PGP.html | 2026-11-14 |
 | BOI-CF-INF-10-10-20, late payment interest: read for Rate per month of delay; Reduction of the interest where the taxpayer regularises during an audit (LPF ar | https://bofip.impots.gouv.fr/bofip/1458-PGP.html | 2026-11-14 |
 | BOI-CF-INF-10-20-30-10, surcharges: read for Return filed late, spontaneously or within thirty days of a formal notice (CGI a; Return filed more than thirty days after a formal notice (mise en demeure), even; Deliberate breach (manquement délibéré, CGI art. 1729), on the additional tax; Abuse of law where principal initiative or principal benefit is established; fra | https://bofip.impots.gouv.fr/bofip/4911-PGP.html | 2026-11-14 |
-| BOI-BIC-CHG-50-50-30, current account interest reference rate: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/5505-PGP.html | 2026-11-14 |
+| BOI-BIC-CHG-50-50-30, current account interest reference rate: read for EUR 2,013, EUR 212 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/5505-PGP.html | 2026-11-14 |
 | BOI-BIC-CHG-20-30-10, small equipment expensed: read for Unit value excluding VAT up to which tools and equipment (PCG accounts 2154 and | https://bofip.impots.gouv.fr/bofip/2109-PGP.html | 2026-11-14 |
 | Impôt sur les sociétés, taux: read for Standard rate; Reduced rate; Slice of profit the reduced rate covers; Turnover condition, for the financial year, brought to twelve months where neede; Ownership condition, with the capital fully paid up | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 | 2026-11-14 |
 | Franchise en base de TVA: read for Services: prior-year turnover limit; Services: current-year higher limit; Goods and accommodation: prior-year turnover limit; Goods and accommodation: current-year higher limit | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 | 2026-11-14 |
-| Notice 3310-NOT-CA3-SD, 2026 (DES): read for the rules this skill cites from it | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf | 2026-11-14 |
-| Charte des droits et obligations du contribuable vérifié: read for the rules this skill cites from it | https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie | 2026-11-14 |
-| Current abuse-of-law 80%/40% conditions (not reopened today: the site refuses scripted reads) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29 | 2026-10-29 |
-| Remote-examination procedure and separate FEC fine: read for the rules this skill cites from it | https://bofip.impots.gouv.fr/bofip/3750-PGP.html | 2026-11-14 |
+| Notice 3310-NOT-CA3-SD, 2026 (DES): read for 0.2%, 10%, 80%, 15%, EUR 10,000 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf | 2026-11-14 |
+| Charte des droits et obligations du contribuable vérifié: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie | 2026-11-14 |
+| Current abuse-of-law 80%/40% conditions (not reopened today: the site refuses scripted reads): read for the procedure and conditions this skill cites from it | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29 | 2026-10-29 |
+| Remote-examination procedure and separate FEC fine: read for 75%, EUR 5,000, EUR 2,006, EUR 1,729, EUR 2,126 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/3750-PGP.html | 2026-11-14 |
 
 - Selected current statutory rate, twelve-month reduced slice and tax exclusion: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-10-29 and https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373444/2026-10-29
 - General charge conditions and mixed expenses: https://bofip.impots.gouv.fr/bofip/3848-PGP.html and https://bofip.impots.gouv.fr/bofip/468-PGP.html Selected cited scope read 2026-10-29.
