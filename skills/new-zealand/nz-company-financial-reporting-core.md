@@ -19,7 +19,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # New Zealand company reporting, audit and annual reports v0.2
-
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. **Standard:** Companies Act 1993 Part 11 subpart 2, Financial Reporting Act 2013 ss 45 to 47 (size rule as amended from 29 September 2025, with the former rule saved for periods beginning before that date), XRB A1 and XRB A2. **Effective date of the latest version covered:** 17 July 2026 (XRB A1 2025 Amendments, mandatory for periods beginning on or after 1 January 2027, early adoption permitted). This is not an income-tax year.

@@ -17,7 +17,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # New Zealand company capital, records and shareholder decisions v0.2
-
 ## Scope
 
 **Checked on:** 2026-11-14 (company law, not an income-tax year). Revalidate the address-information transition from 18 November 2026.

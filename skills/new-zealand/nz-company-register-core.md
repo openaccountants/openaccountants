@@ -16,7 +16,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # New Zealand company incorporation and register annual return v0.2
-
 ## Scope
 
 **Checked on:** 2026-11-14 (company law, not an income-tax year). Register requirements were checked by the writer on 13 November 2026; the address-information transition requires revalidation from 18 November 2026.

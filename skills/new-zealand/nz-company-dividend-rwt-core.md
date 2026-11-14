@@ -17,7 +17,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # New Zealand company cash dividends and RWT v0.2
-
 ## Scope
 
 **Tax year:** 2026, meaning dividends paid in the New Zealand 2026-27 year, 1 April 2026 to 31 March 2027 (Inland Revenue calls it the 2027 income year). Monthly RWT and dividend information run by the month of payment, not by income year. Where this guide says "2027 IR4" or "2027 ICA return" it means the annual returns for that 2027 income year.
