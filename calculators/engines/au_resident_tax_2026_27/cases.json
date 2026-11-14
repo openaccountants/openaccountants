@@ -1,6 +1,6 @@
 {
   "engine": "au_resident_tax_2026_27",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
   "cases": [
     {
@@ -32,7 +32,7 @@
           "take_home_pay": 77800
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 100,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 100,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 99,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 20,220.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 20,220.00",
@@ -45,7 +45,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 100000
         },
         "constants_used": [
           {
@@ -103,14 +104,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -124,14 +125,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -145,7 +147,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "f53f09ad889c9015e9494065cbda52adeae3e060e07ade695fc7c13e8f106374"
+      "receipt_id": "34c8926708cf7f14cd556e2d97796b554c4a5d0c1468c9a1bf14293f16cad632"
     },
     {
       "id": "AU-0",
@@ -160,8 +162,8 @@
       "expected": {
         "status": "missing_rule",
         "engine": "au_resident_tax_2026_27",
-        "what": "Medicare levy low-income thresholds 2026-27",
-        "why": "Only 2025-26 thresholds are served; 2026-27 index with CPI (skill says confirm at ATO QC 27031).",
+        "what": "Medicare levy reduction in the low-income range",
+        "why": "Taxable income AUD 35,013.00 is at or under AUD 35,013.00, where the 2026-27 levy is reduced or nil (single threshold AUD 28,011.00, phase-in to AUD 35,013.00); this engine does not compute the reduction or the family and SAPTO thresholds.",
         "partial": {},
         "inputs_used": {
           "gross_income": 36013,
@@ -169,7 +171,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 36013
         },
         "constants_used": [
           {
@@ -227,14 +230,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -248,7 +251,7 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
@@ -258,7 +261,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "57ae88e6427cb1706b77c7a70413191c09f8acfe23be4990a230cca50236e3be"
+      "receipt_id": "582c47171210ea8f6c43ce5136a5ac956ba6db893f43cd56eb141ca900f97ef1"
     },
     {
       "id": "AU-1",
@@ -289,7 +292,7 @@
           "take_home_pay": 33491.62
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 36,014.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 36,014.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 35,014.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 2,522.10",
           "Low income tax offset = AUD 700.00; income tax after offsets = AUD 1,822.10",
@@ -302,7 +305,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 36014
         },
         "constants_used": [
           {
@@ -360,14 +364,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -381,14 +385,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -402,7 +407,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "b983a4f69d949fc67658ef98740a84d8d7d82d56a333dc419b08b9fcd758018e"
+      "receipt_id": "d010907b5427b4a2ba2744c48794d07d16284a0cbfff35b09dc2d90c56fb779f"
     },
     {
       "id": "AU-2",
@@ -433,7 +438,7 @@
           "take_home_pay": 35555
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 38,500.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 38,500.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 37,500.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 2,895.00",
           "Low income tax offset = AUD 700.00; income tax after offsets = AUD 2,195.00",
@@ -446,7 +451,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 38500
         },
         "constants_used": [
           {
@@ -504,14 +510,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -525,14 +531,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -546,7 +553,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "61c5206013e2a29c4ee3f0ef5f39d57e8ae5249c0572cd8cd71ba51500302c20"
+      "receipt_id": "bcc840879fe9f5b193c6efb84ae37effacc74dcc4984eacd08f84a82dd3e65e7"
     },
     {
       "id": "AU-3",
@@ -577,7 +584,7 @@
           "take_home_pay": 41405
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 46,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 46,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 45,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 4,020.00",
           "Low income tax offset = AUD 325.00; income tax after offsets = AUD 3,695.00",
@@ -590,7 +597,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 46000
         },
         "constants_used": [
           {
@@ -648,14 +656,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -669,14 +677,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -690,7 +699,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "a288e56a66551ad082aa90f162de016e8eb10096e24e5c73d6f994ea6fd589b8"
+      "receipt_id": "ee7959df026433494caa45b0e2b740d4bf47de17543a34bc09b56fcba89a1d7e"
     },
     {
       "id": "AU-4",
@@ -721,7 +730,7 @@
           "take_home_pay": 41405.67
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 46,001.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 46,001.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 45,001.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 4,020.30",
           "Low income tax offset = AUD 324.99; income tax after offsets = AUD 3,695.32",
@@ -734,7 +743,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 46001
         },
         "constants_used": [
           {
@@ -792,14 +802,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -813,14 +823,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -834,7 +845,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "5c0fc3aa51fef00928b794352a0f2b644f8e701d8f614bb346539f8a890569ad"
+      "receipt_id": "c6fc58ae4b22bb9e6564bd44bd45afa5f100037dd32b1c2fd75dffc83e1f03e1"
     },
     {
       "id": "AU-5",
@@ -865,7 +876,7 @@
           "take_home_pay": 55813.56
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 67,667.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 67,667.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 66,667.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 10,520.10",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 10,520.10",
@@ -878,7 +889,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 67667
         },
         "constants_used": [
           {
@@ -936,14 +948,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -957,14 +969,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -978,7 +991,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "352d499ddcd60625f94527fcb90e42e4715b247683943ebebf999e8d3e1c5ed9"
+      "receipt_id": "2e7504aff800e35aa42160ad27fae098c72c8c9ec448c7b1f5bbbbe82679d3a9"
     },
     {
       "id": "AU-6",
@@ -1009,7 +1022,7 @@
           "take_home_pay": 55814.24
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 67,668.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 67,668.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 66,668.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 10,520.40",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 10,520.40",
@@ -1022,7 +1035,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 67668
         },
         "constants_used": [
           {
@@ -1080,14 +1094,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1101,14 +1115,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1122,7 +1137,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "4aaa20aaf6cd34d3fbde5f90e3554027c84aa7a90d108080c297a20ebc835eed"
+      "receipt_id": "3cf2ab95f263ccbf1b225d251e958b7e0b6eb2ba5a00f62d8a5f297738c6dd4f"
     },
     {
       "id": "AU-7",
@@ -1153,7 +1168,7 @@
           "take_home_pay": 102280
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 136,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 136,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 135,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 31,020.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 31,020.00",
@@ -1166,7 +1181,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 136000
         },
         "constants_used": [
           {
@@ -1224,14 +1240,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1245,14 +1261,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1266,7 +1283,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "8ad22889ac81264b89c2feaf8f9a37fba0b144bcf9547061c7037a441246544d"
+      "receipt_id": "4f8e2be5a1d59edbf06fe78399e54bf14043c97ef05fbbb4ae290f074e6001ec"
     },
     {
       "id": "AU-8",
@@ -1297,7 +1314,7 @@
           "take_home_pay": 102280.61
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 136,001.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 136,001.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 135,001.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 31,020.37",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 31,020.37",
@@ -1310,7 +1327,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 136001
         },
         "constants_used": [
           {
@@ -1368,14 +1386,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1389,14 +1407,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1410,7 +1429,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "860e38c34370f39df49cab7bff4b57c4238571f60ce29e5c240f8a071db43258"
+      "receipt_id": "7eecc2a6273bf0e737aa7071063f66552cf2d558c0edc3a1a1fcd926b037005a"
     },
     {
       "id": "AU-9",
@@ -1441,7 +1460,7 @@
           "take_home_pay": 135830
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 191,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 191,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 190,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 51,370.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 51,370.00",
@@ -1454,7 +1473,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 191000
         },
         "constants_used": [
           {
@@ -1512,14 +1532,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1533,14 +1553,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1554,7 +1575,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "963a02e02d8b11cb0b784575361e86406778738d4e5af8d64e9c1199839c00ee"
+      "receipt_id": "b8b5bf02b5fe2b9f24d8caa73143fbabc4e2b2070de5e52d8974199d82ebab78"
     },
     {
       "id": "AU-10",
@@ -1585,7 +1606,7 @@
           "take_home_pay": 135830.53
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 191,001.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 191,001.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 190,001.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 51,370.45",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 51,370.45",
@@ -1598,7 +1619,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 191001
         },
         "constants_used": [
           {
@@ -1656,14 +1678,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1677,14 +1699,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1698,7 +1721,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "e3d6066e302216a1fa3a2c2bb1fdee62a0eeb877c831ca1785b642618c7bf771"
+      "receipt_id": "456be515ea7284c3a5b074f39eed2c7bbcc4b16347ca68c075d867b5f9e8edb9"
     },
     {
       "id": "AU-11",
@@ -1729,7 +1752,7 @@
           "take_home_pay": 167100
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 250,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 250,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 249,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 77,920.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 77,920.00",
@@ -1742,7 +1765,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 250000
         },
         "constants_used": [
           {
@@ -1800,14 +1824,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1821,14 +1845,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1842,7 +1867,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "1dc16321e43b6bf59144d5c16166bb81ce920b03dbbfecbe3ecdec2f7ce783fe"
+      "receipt_id": "1c8c808edb780ead3b6b6c8f11119845a1a4264ef11b783d8ff900618d5eab75"
     },
     {
       "id": "AU-12",
@@ -1873,7 +1898,7 @@
           "take_home_pay": 70551.2
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 89,340.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 89,340.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 88,340.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 17,022.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 17,022.00",
@@ -1886,7 +1911,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 89340
         },
         "constants_used": [
           {
@@ -1944,14 +1970,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -1965,14 +1991,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -1986,7 +2013,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "ec01e916f087cc0afefdcd84d2e3fd8c3a62dc98e2de9bbb0909915408a1a4ff"
+      "receipt_id": "30c91b1774462fb29c3f72fbe82e385b0658ea239431c058b6be21721e368d21"
     },
     {
       "id": "AU-nophi-101000",
@@ -2017,7 +2044,7 @@
           "take_home_pay": 79160
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 0.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 102,000.00) less work expenses AUD 0.00) = AUD 1,000.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 102,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 101,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 20,820.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 20,820.00",
@@ -2030,7 +2057,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": false,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 102000
         },
         "constants_used": [
           {
@@ -2088,14 +2116,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2109,14 +2137,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -2130,7 +2159,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "f345405ee6cbe0ed68465d93bb4492740dc3da5309c4754171908a67bad546be"
+      "receipt_id": "5a0257e56f33acb29a6f34eb7039080f27942898637d61f727c91dd8048c906e"
     },
     {
       "id": "AU-nophi-mls",
@@ -2154,7 +2183,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": false,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 102001
         },
         "constants_used": [
           {
@@ -2212,14 +2242,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2233,7 +2263,7 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
@@ -2243,7 +2273,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "32e8cb4769110cedb9128203f33544c57f15e2e86c9b6bde6cc90988fae59692"
+      "receipt_id": "233c7da73f61060ee09831f08bb620a99a87e3755220d2234d0aa8864f247e77"
     },
     {
       "id": "AU-nolabour",
@@ -2274,7 +2304,7 @@
           "take_home_pay": 77480
         },
         "steps": [
-          "Work deductions = actual work expenses AUD 0.00 (no salary or wage income, so no standard deduction)",
+          "Work deductions = actual work expenses AUD 0.00 (no salary or wage income, so no standard deduction top-up)",
           "Taxable income = AUD 100,000.00 less other deductions AUD 0.00 less work deductions AUD 0.00 = AUD 100,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 20,520.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 20,520.00",
@@ -2345,14 +2375,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2366,14 +2396,14 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -2387,7 +2417,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "4989557846a68a55b39c39263c770e8a1adeb77447bb37aff48f56352068dea0"
+      "receipt_id": "ac42fa1e7419a44e8e7a179cf7e23292889eb88d8e2863674a38e3dcc15fb288"
     },
     {
       "id": "AU-work550",
@@ -2419,7 +2449,7 @@
           "take_home_pay": 77800
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 550.00 and the standard AUD 1,000.00 = AUD 1,000.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 100,000.00) less work expenses AUD 550.00) = AUD 450.00; work deductions = AUD 1,000.00",
           "Taxable income = AUD 100,000.00 less other deductions AUD 0.00 less work deductions AUD 1,000.00 = AUD 99,000.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 20,220.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 20,220.00",
@@ -2432,7 +2462,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 550,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 100000
         },
         "constants_used": [
           {
@@ -2490,14 +2521,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2511,14 +2542,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -2531,7 +2563,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "a69e4effe80001ad13d3aea733d63816d6aec3b764143c90693faba77b4b4205"
+      "receipt_id": "e4ba57e15be0645a1d7701a969bc2972429bc2774ac5eed02b8238182f2f163a"
     },
     {
       "id": "AU-work2500",
@@ -2564,7 +2596,7 @@
           "take_home_pay": 78664
         },
         "steps": [
-          "Work deductions = the larger of actual work expenses AUD 2,500.00 and the standard AUD 1,000.00 = AUD 2,500.00 (applied automatically for salary or wage income)",
+          "Standard work deduction top-up = max(0, min(AUD 1,000.00, labour income AUD 100,000.00) less work expenses AUD 2,500.00) = AUD 0.00; work deductions = AUD 2,500.00",
           "Taxable income = AUD 100,000.00 less other deductions AUD 1,200.00 less work deductions AUD 2,500.00 = AUD 96,300.00",
           "Tax on taxable income at the 2026-27 resident rates = AUD 19,410.00",
           "Low income tax offset = AUD 0.00; income tax after offsets = AUD 19,410.00",
@@ -2577,7 +2609,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 2500,
           "has_private_hospital_cover": true,
-          "has_help_debt": false
+          "has_help_debt": false,
+          "labour_income": 100000
         },
         "constants_used": [
           {
@@ -2635,14 +2668,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2656,14 +2689,15 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "assumptions": [
           "Resident for the full year",
           "No Medicare levy reduction (income above the low-income range)",
           "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-          "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger"
+          "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+          "Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"
         ],
         "skill_anchors_reproduced": [
           "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
@@ -2674,7 +2708,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "258ed89b9df826dac980c39f9385f09dd27e755a347c813be29fe7d15ed5ed94"
+      "receipt_id": "bc19a2960f99716c2b7999bd27e2b28595b47b2b737aa8ed929324f074b52663"
     },
     {
       "id": "AU-help",
@@ -2698,7 +2732,8 @@
           "has_salary_or_wage_income": true,
           "actual_work_expenses_claimed": 0,
           "has_private_hospital_cover": true,
-          "has_help_debt": true
+          "has_help_debt": true,
+          "labour_income": 100000
         },
         "constants_used": [
           {
@@ -2756,14 +2791,14 @@
             "quote": "Levy | 2% of taxable income"
           },
           {
-            "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+            "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
             "value": [
               28011,
               35013
             ],
             "slug": "au-rates-2026-27",
             "section": "Medicare",
-            "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031"
+            "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013."
           },
           {
             "name": "MLS_BASE_TIER_SINGLE",
@@ -2777,7 +2812,7 @@
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners"
+            "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify"
           }
         ],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
@@ -2787,7 +2822,7 @@
         },
         "tax_year": "2026-27"
       },
-      "receipt_id": "8f658ec50faad3ba910d7b101177259c47fbc83b5f8c2acbb6c1ac004f599a4b"
+      "receipt_id": "61873f876464e0f79ed7891f4174e4b11e579c0283405a7bc71331b11b3499fe"
     },
     {
       "id": "AU-missing-labour",
@@ -2815,7 +2850,11 @@
             },
             "has_salary_or_wage_income": {
               "type": "boolean",
-              "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself"
+              "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction top-up itself"
+            },
+            "labour_income": {
+              "type": "number",
+              "description": "AUD qualifying labour income (salary and wages) within gross_income; business or PSI income does not count. Taken as gross_income when not given"
             },
             "actual_work_expenses_claimed": {
               "type": "number",
@@ -2876,7 +2915,11 @@
             },
             "has_salary_or_wage_income": {
               "type": "boolean",
-              "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself"
+              "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction top-up itself"
+            },
+            "labour_income": {
+              "type": "number",
+              "description": "AUD qualifying labour income (salary and wages) within gross_income; business or PSI income does not count. Taken as gross_income when not given"
             },
             "actual_work_expenses_claimed": {
               "type": "number",
@@ -2931,7 +2974,7 @@
         "constants_used": [],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
       },
-      "receipt_id": "c1393da495584fa3dbebf37bba4467f56426f60c5e6f2cc2bd1a04ad3e2d5884"
+      "receipt_id": "501144ccea0d6d0b038e2095612192cb9f8c1d7e18eafac419a35130838bf317"
     }
   ]
 }

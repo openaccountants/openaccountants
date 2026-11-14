@@ -1,11 +1,11 @@
 ---
 name: hi-corporate-tax
 description: "Compute Hawaii corporate income tax under HRS 235-71, the net-capital-gain alternative and sales-only election; prepare N-30 state adjustments, estimates and payment workflow for ordinary C corporations."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-HI
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 
 tier: 2
 domain: income-tax
@@ -45,7 +45,7 @@ The **2025-2026 filing cycle** N-30 instructions and HRS compilation through 31 
 | Ordinary taxable income over USD 25,000 through USD 100,000 | 5.4% of taxable income minus USD 250 | [Schedule J line 15](https://files.hawaii.gov/tax/forms/current/n30ins.pdf) |
 | Ordinary taxable income over USD 100,000 | 6.4% of taxable income minus USD 1,250 | [Schedule J line 15](https://files.hawaii.gov/tax/forms/current/n30ins.pdf) |
 | Net-capital-gain alternative | Ordinary tax on taxable income less net capital gain, plus 4% of eligible net capital gain, only if less than ordinary tax on all income | [HRS 235-71.5](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
-| Narrow sales-only election | 0.5% of annual Hawaii gross sales, no more than USD 100,000 gross sales, only in-state activity sales, no owned/rented real or tangible property, and other statutory conditions | [HRS 235-71(e)](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
+| Narrow sales-only election | 0.5% (in words on the page: ".5 per cent") of annual Hawaii gross sales, no more than USD 100,000 gross sales, only in-state activity sales, no owned/rented real or tangible property, and other statutory conditions | [HRS 235-71(e)](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
 | Estimated-tax floor | Tax liability below USD 500 excused from estimated tax | [HRS 235-97(a)(6)](https://files.hawaii.gov/tax/legal/hrs/hrs_235.pdf) |
 | Post-2017 NOL deduction, verified filing-cycle rule | Generally capped at 80% of taxable income; indefinite carryforward, with farming carryback exception | [Amended Return and Schedule J loss instructions](https://files.hawaii.gov/tax/forms/current/n30ins.pdf) |
 
