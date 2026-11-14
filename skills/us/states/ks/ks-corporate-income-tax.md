@@ -10,10 +10,10 @@ description: >
   "KDOR corporate". Use the APEX-adjusted 3.5% normal rate plus 3% surtax over USD50,000;
   Notice23-10 effective2024 controls the earlier reduction. Notice25-06
   announces no additional revenue-triggered reduction for2026.
-version: "0.3"
+version: "0.4"
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - ks-income-tax
 category: state-tax
@@ -52,7 +52,7 @@ See also: `ks-income-tax`, `ks-transfer-pricing`, `ks-cross-border`.
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Normal tax | **3.5%** of Kansas taxable income, after the APEX reduction effective tax years beginning 2024 | 2026 current continuing rate | [KDOR Notice 23-10](https://www.ksrevenue.gov/taxnotices/notice23-10.pdf); [74-50,321](https://ksrevisor.gov/statutes/chapters/ch74/074_050_0321.html); [2025 booklet](https://www.ksrevenue.gov/corpbook25.html) |
+| Normal tax | **3.5%** of Kansas taxable income (derived: the 4% normal tax in K.S.A. 79-32,110(c)(1) less the one-time 0.5% APEX reduction under 74-50,321(b), announced in Notice 23-10), effective tax years beginning 2024 | 2026 current continuing rate | [KDOR Notice 23-10](https://www.ksrevenue.gov/taxnotices/notice23-10.pdf); [74-50,321](https://ksrevisor.gov/statutes/chapters/ch74/074_050_0321.html); [79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html); [2025 booklet](https://www.ksrevenue.gov/corpbook25.html) |
 | Surtax | **3%** of Kansas taxable income **in excess of $50,000** (one surtax exemption per corporate taxpayer) | 2026 | [K.S.A. 79-32,110(c)(2)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html); [2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html), line 30 instructions |
 | TY2026 rate reduction | **No additional revenue-triggered reduction**: FY2025 collections failed the test. This does not reverse the APEX reduction already effective 2024 | 2026 | [KDOR Notice 25-06](https://www.ksrevenue.gov/taxnotices/notice25-06.pdf) |
 | Future reductions | 79-32,110c (Senate Bill 269 (2025), L. 2025 ch. 116): individual rates are cut first; the corporate surtax is cut only after both individual rates reach 4%, and only until **combined normal + surtax = 4%**. K.S.A. 79-32,110d (L. 2025 ch. 123) adds a separate test at the end of fiscal 2028 that can cut the normal tax for tax years after 2028 | 2027 on | [K.S.A. 79-32,110c](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110c.html); [K.S.A. 79-32,110d](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110d.html) |
@@ -78,7 +78,7 @@ See also: `ks-income-tax`, `ks-transfer-pricing`, `ks-cross-border`.
 | Obligation | When | Source |
 |---|---|---|
 | Form K-120 (corporate return) | **One month after the federal due date**, including any IRS extension; no separate Kansas extension request is needed (tax years after 2019). Obtain the actual federal deadline from `us-form-1120-c-corp` and apply Kansas's calendar-month/business-day rule; do not confuse return timing with tax-payment timing | [K.S.A. 79-3221(c)(2)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0021.html) |
-| Payment | **15th day of the fourth month after year-end**, under 79-3225(a), separately from the one-month-after-federal return rule. The 2025 booklet's April 15,2026 is the **2025-2026 filing cycle** example; calendar 2026 tax is payable April 15,2027. Extension relief requires 90% by the original payment date; interest still accrues on unpaid tax | [2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html); [79-3225(a)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0025.html) |
+| Payment | **15th day of the fourth month after year-end**, under 79-3225(a), separately from the one-month-after-federal return rule. The 2025 booklet's April 15,2026 is the **2025-2026 filing cycle** example; calendar 2026 tax is payable April 15,2027. Extension relief needs the payment set out in the Extension row below; interest still accrues on unpaid tax | [2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html); [79-3225(a)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0025.html) |
 | Extension | "Kansas accepts the federal extension of time and will follow accordingly. The extension of time is to file the return not pay the tax. **Ninety percent of the tax must be paid by the due date to avoid late payment penalty**" | [KDOR Corporate Income page](https://www.ksrevenue.gov/bustaxtypescorp.html) |
 | Estimated tax (Form K-120ES) | Installments **April 15, June 15, September 15 and December 15** (the corporate 4th installment is Dec 15, not Jan 15). First-year Kansas filers are exempt from estimates and the underpayment penalty | [K.S.A. 79-32,103(a)(1)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0103.html); Booklet |
 
