@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uy-corporate-income-tax"
   jurisdiction: "UY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Uruguay: corporate income tax (IRAE) for 2026 v0.1
+# Uruguay: corporate income tax (IRAE) for 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -202,8 +202,8 @@ expected:
 
 Not yet confirmed: the notional "trading" regime (3% of gross) carried by the old file, which was not found in Decreto 150/007 as read; the IMCD start date and its computation rules (Título 21 arts. 7 onward and Decreto 206/026 not read); the monthly recargo rate for 2026; the 2026 UI quotation used to convert the UI thresholds; the minimum years an IRAE option binds; the notional owner's salary amounts under art. 32 G; whether the fictitious-profit 48% / 60% / 72% professional scale applies by tranche; the exact April 2027 day in the deadline table; IRNR rates on interest by instrument for non-residents beyond the table; the reduced rates and exemptions for promoted investment, free zones and software; Monotributo (BPS) as the alternative for very small businesses, which the old file mentioned without figures.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uy-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uy-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uy-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uy-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

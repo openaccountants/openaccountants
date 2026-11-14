@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lt-corporate-income-tax"
   jurisdiction: "LT"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Lithuania: corporate income tax (2026) v0.1
+# Lithuania: corporate income tax (2026) v0.3
 
 This skill sets out how a Lithuanian company computes, files and pays corporate income tax (pelno mokestis) for tax year 2026. The law is the Law on Corporate Income Tax No. IX-675 (Pelno mokesčio įstatymas, PMĮ), in its consolidated version in force from 19 May 2026 to 31 December 2026. Procedure, fines and interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
@@ -261,8 +261,8 @@ expected:
 
 Not yet confirmed: the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing the annual or advance return late (Code of Administrative Offences, not read); the VMI form codes for the annual and advance returns; the text of Government Resolution No. 1575 itself (the 4:1 rule is taken from the VMI commentary, not from the resolution); whether interest is charged when past tax is recomputed under art. 18(13) or 46-1(5); the list of non-taxable income in art. 12 and the R&D extra deduction in art. 17-1 (not read for this skill); group loss transfers under art. 56-1; and the PMĮ version in force from 1 January 2027.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

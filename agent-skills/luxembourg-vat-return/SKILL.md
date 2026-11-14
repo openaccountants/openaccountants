@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/luxembourg-vat-return"
   jurisdiction: "LU"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Luxembourg: VAT (TVA), periodic and annual returns (2026)
@@ -161,18 +161,18 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | AED, coordinated LTVA at 1 January 2026 (arts. 39, 40, 54, 55, 57 to 57quater, 61, 64, 64bis, 73 to 80, 85; annexes A to C) | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-10-23 |
-| AED, publication page for the 2026 coordinated text | https://pfi.public.lu/fr/publications/textes-de-loi/tva010126.html | 2026-10-23 |
-| Legilux, law of 20 December 2024 amending the LTVA (Mémorial A 574) | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a574/jo | 2026-10-23 |
-| AED, SME franchise from 1 January 2025 | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
-| AED, national rates | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
-| AED, who owes the tax | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/debiteur-taxe.html | 2026-10-23 |
-| AED, VAT returns (frequency and deadlines) | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/declarations-tva.html | 2026-10-23 |
-| AED, payment of the tax | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/au-sujet-paiement-taxe.html | 2026-10-23 |
-| AED, recapitulative statement | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/etat-recapitulatif.html | 2026-10-23 |
-| Guichet.lu, VAT return frequency and deadlines | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
+| AED, publication page for the 2026 coordinated text. Read for the 2026 consolidated VAT law. | https://pfi.public.lu/fr/publications/textes-de-loi/tva010126.html | 2026-10-23 |
+| Legilux, law of 20 December 2024 amending the LTVA (Mémorial A 574). Read for the 2024 VAT law changes. | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a574/jo | 2026-10-23 |
+| AED, SME franchise from 1 January 2025. Read for the SME franchise. | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
+| AED, national rates. Read for the national VAT rates. | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
+| AED, who owes the tax. Read for who owes the VAT. | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/debiteur-taxe.html | 2026-10-23 |
+| AED, VAT returns (frequency and deadlines). Read for the return frequency and deadlines. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/declarations-tva.html | 2026-10-23 |
+| AED, payment of the tax. Read for how VAT is paid. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/au-sujet-paiement-taxe.html | 2026-10-23 |
+| AED, recapitulative statement. Read for the recapitulative statement. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/etat-recapitulatif.html | 2026-10-23 |
+| Guichet.lu, VAT return frequency and deadlines. Read for the return frequency and deadlines. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
 
 Not yet confirmed: the AED coordinated text is not binding and the consolidated text on Legilux was not available, so article wording should be checked against the Mémorial before a dispute; the grand-ducal regulation that sets the EUR 112,000 and EUR 620,000 filing bands was not read (the figures come from the AED and Guichet.lu pages).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `luxembourg-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/luxembourg-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `luxembourg-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/luxembourg-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ad-corporate-income-tax"
   jurisdiction: "AD"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Andorra corporate income tax, 2026
@@ -194,8 +194,8 @@ expected:
 
 Not yet confirmed: historic pre-July-2017 holding gain allocations require the actual old authorisation/acquisition workpaper; the precise article 13 client-cost average for a new, short-period or loss-history case and interaction of a particular donation expense with its separate credit require a supported case-specific treatment. No current new-company 5%-on-EUR-50,000 incentive is established. Treaty-by-treaty rates, consolidation/CFC/reorganisation and sector-specific calculations are outside this ordinary standalone method. Portal consolidations are not the official gazette; retain their amendment/application annotations and check the operative act where a historical transition matters.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ad-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ad-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

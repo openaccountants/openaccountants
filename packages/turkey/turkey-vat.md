@@ -1,10 +1,11 @@
 ---
 name: turkey-vat
 description: "Turkish value added tax (katma değer vergisi, KDV) for tax year 2026 under the VAT Law no. 3065 and the KDV General Implementation Communiqué, for companies, sole traders and foreign suppliers. Covers what is taxable, who must register (no threshold), place of supply and services used in Türkiye, the 20% general rate and the 10% and 1% list rates, export and other exemptions, input VAT deduction and its time limit, blocked VAT on passenger cars, excess VAT carried forward, refunds for exempt supplies, reverse charge on services bought from abroad (return no. 2), electronic services sold to consumers by foreign suppliers, monthly returns by the 28th, payment, penalties and late-payment interest. Trigger on: KDV, Turkish VAT, KDV beyannamesi, 1 No.lu, 2 No.lu, sorumlu sıfatıyla KDV, KDV iadesi, ihracat istisnası. Out of scope: income tax (turkey-pit), company tax (tr-corporate-income-tax), payroll (tr-payroll-social), special consumption tax (ÖTV), customs duty."
-version: 2.1
+version: 2.2
+type: situation-rules
 jurisdiction: TR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: vat-gst
 ---
 
-# Türkiye: VAT (katma değer vergisi, KDV) (2026) v2.1
+# Türkiye: VAT (katma değer vergisi, KDV) (2026) v2.2
 
 Turkish VAT is charged under the Katma Değer Vergisi Kanunu no. 3065 and collected by the Revenue Administration (GİB). The KDV General Implementation Communiqué (KDV Genel Uygulama Tebliği, KDVGUT) sets the detailed rules. Figures below come from the consolidated law on mevzuat.gov.tr, which includes the 2026 amending laws 7573, 7577, 7578, 7587 and 7590, from the consolidated KDVGUT, and from GİB's current table of filing and payment dates.
 
@@ -31,21 +32,21 @@ Turkish VAT is charged under the Katma Değer Vergisi Kanunu no. 3065 and collec
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | General rate (goods and services on no list) | 20% | 2026 | Decision 2007/13033 art. 1(1)(a) as amended by Presidential Decision 7346, in force 10 July 2023, https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-11.pdf |
-| Reduced rate, list (II) | 10% | 2026 | Decision 2007/13033 art. 1(1)(c) as amended by Decision 7346 |
+| Reduced rate, list (II) | 10% | 2026 | Decision 2007/13033 art. 1(1)(c) as amended by Decision 7346, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf |
 | Reduced rate, list (I) | 1% | 2026 | Decision 2007/13033 art. 1(1)(b); GİB consolidated text of Decision 2007/13033 with lists (I) and (II), https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf |
-| Food and non-alcoholic drink served in restaurants, cafés, patisseries and takeaways (not bars, casinos, discos and similar) | 10% (alcoholic drinks 20%) | 2026 | Decision 2007/13033 list (II) item 24; KDVGUT, reduced-rate section |
+| Food and non-alcoholic drink served in restaurants, cafés, patisseries and takeaways (not bars, casinos, discos and similar) | 10% (alcoholic drinks 20%) | 2026 | Decision 2007/13033 list (II) item 24; KDVGUT, reduced-rate section, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf |
 | Partial withholding (kısmi tevkifat) by the buyer, main ratios | Construction 4/10; consulting, design and audit 9/10; labour supply 9/10; cleaning and garden care 9/10; repairs of machinery and vehicles 7/10; catering and events 5/10; freight transport 2/10; commercial advertising 3/10; scrap and waste 7/10; other services listed 5/10; other goods listed 2/10 | 2026 | KDVGUT I/C-2.1.3.2 and 2.1.3.3; GİB table of partial withholding ratios, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdvde-kismi-tevkifat-uygulamasinda-tevkifat-oranlari.pdf |
-| Partial withholding does not apply if the VAT-inclusive amount does not exceed | TRY 12,000 (the 2026 invoice limit in VUK art. 232) | 2026 | KDVGUT I/C-2.1.3.4.1; VUK art. 232 with Communiqué 588 |
+| Partial withholding does not apply if the VAT-inclusive amount does not exceed | TRY 12,000 (the 2026 invoice limit in VUK art. 232) | 2026 | KDVGUT I/C-2.1.3.4.1; VUK art. 232 with Communiqué 588, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf |
 | Statutory rate the President may vary | 10% in the law, range 1% to four times | 2026 | KDV Law art. 28, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
-| Registration threshold | None | 2026 | KDV Law art. 1, 8 |
-| Tax period | Calendar month for real-method taxpayers (quarters for some transport businesses, housing co-operatives and simple-method opt-ins) | 2026 | KDV Law art. 39; KDVGUT V/B-1 |
+| Registration threshold | None | 2026 | KDV Law art. 1, 8, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
+| Tax period | Calendar month for real-method taxpayers (quarters for some transport businesses, housing co-operatives and simple-method opt-ins) | 2026 | KDV Law art. 39; KDVGUT V/B-1, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
 | Return no. 1 (KDV 1) | Filed by the 24th and paid by the 26th of the following month. Note: GİB's table gives the 28th, 23:59, for both (VUK Circular 149) | 2026 | KDV Law art. 41(1), 46(1); GİB filing table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf |
-| Return no. 2 (reverse charge and withholding, sorumlu sıfatıyla) | Filed by the 21st and paid by the 23rd of the following month. Note: GİB's table gives the 25th for both (VUK Circular 164) | 2026 | KDV Law art. 41(1), 46(1) as amended by Law 7491; KDVGUT; GİB filing table |
-| Return no. 3 (foreign electronic service providers) | Filed by the 24th of the following month. Note: GİB's table gives the 28th, paid in the same period (VUK Circular 149) | 2026 | KDVGUT I/C-2.1.2.1.2.3; GİB filing table |
-| Input VAT time limit | By the end of the calendar year after the year of the tax point | 2026 | KDV Law art. 29(3) |
-| Refund claim for exempt supplies with deduction | By the end of the second calendar year after the transaction | 2026 | KDV Law art. 32 |
-| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, Presidential Decision 10556, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf |
-| Missing invoice | 10% of the amount, at least TRY 17,000 for the first finding | 2026 | VUK art. 353(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf |
+| Return no. 2 (reverse charge and withholding, sorumlu sıfatıyla) | Filed by the 21st and paid by the 23rd of the following month. Note: GİB's table gives the 25th for both (VUK Circular 164) | 2026 | KDV Law art. 41(1), 46(1) as amended by Law 7491; KDVGUT; GİB filing table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf |
+| Return no. 3 (foreign electronic service providers) | Filed by the 24th of the following month. Note: GİB's table gives the 28th, paid in the same period (VUK Circular 149) | 2026 | KDVGUT I/C-2.1.2.1.2.3; GİB filing table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf |
+| Input VAT time limit | By the end of the calendar year after the year of the tax point | 2026 | KDV Law art. 29(3), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
+| Refund claim for exempt supplies with deduction | By the end of the second calendar year after the transaction | 2026 | KDV Law art. 32, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
+| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, Presidential Decision 10556, https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf |
+| Missing invoice | 10% of the amount, at least TRY 17,000 for the first finding | 2026 | VUK art. 353(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf |
 
 ## The taxable base
 
@@ -155,13 +156,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Katma Değer Vergisi Kanunu no. 3065, consolidated (to Law 7590): arts. 1, 6, 8, 9, 11, 12, 17(4), 28, 29, 30, 32, 39, 40, 41, 46 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf | 2026-10-31 |
-| GİB, Güncel KDV oranları: consolidated Decision 2007/13033 with lists (I) and (II), latest change shown Decision 9126 (in force 15 November 2024) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf | 2026-10-31 |
-| GİB, KDV'de kısmi tevkifat uygulamasında tevkifat oranları (partial withholding ratios) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdvde-kismi-tevkifat-uygulamasinda-tevkifat-oranlari.pdf | 2026-10-31 |
-| KDV Genel Uygulama Tebliği, consolidated: I/C-2.1 (withholding and reverse charge, including 2.1.2.1.2.3 and 2.1.3), III/C-1 (deduction), V/B-1 (tax period), reduced-rate section | https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=19631&mevzuatTur=Teblig&mevzuatTertip=5 | 2026-10-31 |
-| Presidential Decision 7346 amending Decision 2007/13033 (18% to 20%, 8% to 10%), Official Gazette 7 July 2023 no. 32241 | https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-11.pdf | 2026-10-31 |
-| GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated: arts. mükerrer 28, 232, 344, 352, 353, table 1 (2026 amounts, Communiqué 588) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
-| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
+| Katma Değer Vergisi Kanunu no. 3065, consolidated (to Law 7590): arts. 1, 6, 8, 9, 11, 12, 17(4), 28, 29, 30, 32, 39, 40, 41, 46 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf | 2026-11-14, read for arts. 1, 29(3), 32 and 39: scope, the input VAT time limit, the refund deadline and the tax period |
+| GİB, Güncel KDV oranları: consolidated Decision 2007/13033 with lists (I) and (II), latest change shown Decision 9126 (in force 15 November 2024) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf | 2026-11-14, read for the 20%, 10% and 1% rates and list (II) item 24 |
+| GİB, KDV'de kısmi tevkifat uygulamasında tevkifat oranları (partial withholding ratios) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdvde-kismi-tevkifat-uygulamasinda-tevkifat-oranlari.pdf | 2026-11-14, read for the partial withholding ratios |
+| KDV Genel Uygulama Tebliği, consolidated: I/C-2.1 (withholding and reverse charge, including 2.1.2.1.2.3 and 2.1.3), III/C-1 (deduction), V/B-1 (tax period), reduced-rate section | https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=19631&mevzuatTur=Teblig&mevzuatTertip=5 | 2026-11-14, read for sections I/C-2.1, III/C-1 and V/B-1 |
+| Presidential Decision 7346 amending Decision 2007/13033 (18% to 20%, 8% to 10%), Official Gazette 7 July 2023 no. 32241 | https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-11.pdf | 2026-10-31 (the PDF gives no text to a script on 14 November 2026; the 20% and 10% rates were read in the GİB rates file, which cites Decision 7346) |
+| GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-11-14, read for the VAT return no. 1, 2 and 3 filing and payment days |
+| Vergi Usul Kanunu no. 213, consolidated: arts. mükerrer 28, 232, 344, 352, 353, table 1 (2026 amounts, Communiqué 588) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-11-14, read for art. 232: the TRY 12,000 invoice limit for 2026 (Communiqué 588) |
+| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-11-14, read for art. 51: the 3.7% monthly surcharge |
 
 Not yet confirmed: whether any Presidential Decision after Decision 9126 (November 2024) changed lists (I) or (II) (GİB's consolidated table shows none); the rate on domestic flights and city transport (the old version gave 10% and 1% without a source; neither is on the lists as read, which would put them at 20%); the e-invoice (e-Fatura) and e-archive thresholds under VUK Communiqué 509 (the old version said TRY 3 million); the return boxes on KDV 1 (the old version listed boxes 101 to 113 without a source); the full list of buyers and conditions for each partial withholding item, and full withholding (tam tevkifat); the export refund procedure, documents and the role of a YMM report; the input VAT rule for entertainment (the old version gave a 50% block without a source); exemptions for education, health, land and residential first sales; the transitional rules for dwellings with building permits before 1 April 2022 (Decision 5359); the capital goods adjustment; special bases (özel matrah) for used cars and gold; the tourism VAT refund to foreigners; the text of VUK Circulars 149 and 164 behind GİB's 28th and 25th dates (the power to move the dates is VUK mükerrer art. 28).

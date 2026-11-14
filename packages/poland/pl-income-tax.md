@@ -1,14 +1,15 @@
 ---
 name: pl-income-tax
 description: "Polish personal income tax (PIT) for individuals and the self-employed for tax year 2026. Covers residence, the three tax forms for a sole trader (the 12% and 32% scale with the PLN 30,000 tax-free amount and PLN 120,000 threshold; the 19% flat tax with the PLN 14,100 health deduction limit; ryczałt on revenue at 2% to 17% with the 2026 eligibility limit of EUR 2 million, PLN 8,517,200), the 4% solidarity levy above PLN 1 million, IP Box at 5%, joint filing for spouses and single parents, the main reliefs (child relief, the PLN 85,528 reliefs, losses), the PIT-36, PIT-36L, PIT-28 and PIT-37 returns due 30 April 2027, and monthly or quarterly advances. Trigger on: PIT 2026, skala podatkowa, podatek liniowy, ryczałt, danina solidarnościowa, wspólne rozliczenie, zaliczki PIT, PIT-36. Out of scope: ZUS in pl-zus-contributions; employee withholding in pl-payroll; mandate contracts in pl-civil-law-contracts; non-residents and foreign income in pl-cross-border; shares, crypto and property gains in pl-capital-gains."
-version: 2.2
+version: 2.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Poland: personal income tax for individuals and the self-employed (2026)
@@ -39,16 +40,16 @@ This skill covers the annual PIT for an individual resident in Poland, and the c
 | Scale, income over PLN 120,000 | PLN 10,800 + 32% of the excess | 2026 | same, art. 27 ust. 1 |
 | Flat tax on business income (podatek liniowy) | 19%, no tax-free amount | 2026 | same, art. 30c ust. 1 |
 | Flat tax: health contribution deductible from income or as a cost | up to PLN 14,100 | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2025/1274/text.pdf |
-| IP Box: qualified income from qualified IP rights | 5% | 2026 | PIT Act art. 30ca ust. 1 |
-| Solidarity levy (danina solidarnościowa) | 4% of income above PLN 1,000,000 | 2026 | PIT Act art. 30h |
+| IP Box: qualified income from qualified IP rights | 5% | 2026 | PIT Act art. 30ca ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Solidarity levy (danina solidarnościowa) | 4% of income above PLN 1,000,000 | 2026 | PIT Act art. 30h; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
 | Ryczałt rates on revenue (main ones) | 17% liberal professions; 15% listed services (for example legal, accounting, advertising, management consulting); 14% health care, architecture and engineering services; 12% IT services; 10% buying and selling real estate on own account; 8.5% other services, and private rental up to PLN 100,000 (12.5% above); 5.5% production and construction; 3% trade and catering; 2% own processed farm produce | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/843/text.pdf (art. 12 ust. 1) |
 | Ryczałt eligibility: prior-year revenue not over EUR 2,000,000 | PLN 8,517,200 (EUR rate 4.2586 of 1 October 2025) | 2026 | Ryczałt Act art. 4 ust. 2, art. 6 ust. 4; https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json |
 | Ryczałt: quarterly payment allowed if prior-year revenue not over EUR 200,000 | PLN 851,720 | 2026 | https://www.podatki.gov.pl/podatki-osobiste/pit/stawki-i-limity |
-| Small taxpayer (quarterly advances): prior-year sales not over EUR 2,000,000 | EUR 2,000,000 | 2026 | PIT Act art. 5a pkt 20 |
-| Child relief (scale only), per month | PLN 92.67 each for the first and second child; PLN 166.67 for the third; PLN 225 for the fourth and each next | 2026 | PIT Act art. 27f ust. 2 |
-| Child relief, one child only: income limit | PLN 112,000 (married couple or single parent); PLN 56,000 (other) | 2026 | PIT Act art. 27f ust. 2 pkt 1 |
-| Reliefs for under-26s, returners, parents of four or more, working seniors | exempt up to PLN 85,528 a year | 2026 | PIT Act art. 21 ust. 1 pkt 148, 152-154 |
-| Internet deduction | up to PLN 760 | 2026 | PIT Act art. 26 ust. 1 pkt 6a |
+| Small taxpayer (quarterly advances): prior-year sales not over EUR 2,000,000 | EUR 2,000,000 | 2026 | PIT Act art. 5a pkt 20; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Child relief (scale only), per month | PLN 92.67 each for the first and second child; PLN 166.67 for the third; PLN 225 for the fourth and each next | 2026 | PIT Act art. 27f ust. 2; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Child relief, one child only: income limit | PLN 112,000 (married couple or single parent); PLN 56,000 (other) | 2026 | PIT Act art. 27f ust. 2 pkt 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Reliefs for under-26s, returners, parents of four or more, working seniors | exempt up to PLN 85,528 a year | 2026 | PIT Act art. 21 ust. 1 pkt 148, 152-154; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Internet deduction | up to PLN 760 | 2026 | PIT Act art. 26 ust. 1 pkt 6a; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
 | Late payment interest | 10.50% a year from 5 March 2026 | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf |
 
 ## The taxable base

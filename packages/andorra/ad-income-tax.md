@@ -1,16 +1,17 @@
 ---
 name: ad-income-tax
 description: "Compute Andorra resident personal income tax for calendar 2026, including employment, pensions, direct or objective sole-trader income, rental income, investments and capital gains. Use for fiscal residence, IRPF allowances and proportional bonus, family and housing reductions, loss pools, property sale and reinvestment, foreign-tax credits, advances and annual return reconciliation. This Guide distinguishes employment expense relief from business deductions, general income from savings and resident property taxation from IRNR. Read the payroll and social Guide for the actual 2026 CASS category and wage period, the IGI Guide for indirect tax, and the corporate and cross-border Guides for their separate computations. Figures require the cited facts and documents. Source-cited draft, without accountant attestation."
-version: 0.3
+version: 0.5
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Andorra individual income tax (IRPF), 2026 v0.3
+# Andorra individual income tax (IRPF), 2026 v0.5
 
 ## Who this applies to
 
@@ -22,20 +23,20 @@ Compute the general and savings bases separately. Use the combined payroll/socia
 
 | Item | 2026 rule | Primary authority |
 |---|---|---|
-| Statutory rate | 10% on positive general and savings liquidation bases | [Arts. 43–44][law] |
-| Personal reduction | 24,000; 30,000 for qualifying incapacity; conditional household/spouse rule up to 40,000 | [Art. 35(1)][law] |
-| Family reduction | 1,000 per qualifying descendant under 25, ascendant over 65, or ward/foster dependant who lives with or depends on the taxpayer and whose annual income is not above the minimum wage (salari mínim interprofessional); circumstances are taken at accrual (31 December, or the date of death if the taxpayer dies during the year) | [Art. 35(2)][law]; [arts. 36(2), 40–41][law] |
-| Minimum wage for the dependant-income test, 2026 | Monthly 1,525.33 from 1 January 2026 (Decret 8/2026, BOPA núm. 3, 14 January 2026); monthly 1,568.67 from 1 July 2026 (Decret 253/2026, BOPA núm. 77, 8 July 2026). Annual test: 18,564.00 or less qualifies; above 18,824.04 fails; 18,564.01 to 18,824.04 is not settled (method below) | [Labour Inspection circular, January 2026][smi1]; [Labour Inspection circular, July 2026][smi7] |
-| Annual figure the Govern used in earlier years | 17,367.96 for 2025 and 16,515.24 for 2024 (monthly minimum wage × 12) | [Guia IRPF 2025][g25]; [Guia IRPF 2024][g24] |
-| Disability/dependency and tuition | Family amount multiplied by 1.5 for the specified recognised cases, without the ordinary age test; actual qualifying higher-education tuition up to 300 per descendant | [Art. 35(2)–(3)][law] |
-| Employment expenses | Employee public social-security contributions plus 3% of eligible gross employment receipts, capped at 2,500; specified receipt classes excluded | [Arts. 12–13][law] |
-| General-income bonus | 50% of 10% of general income after the first-paragraph personal reduction, maximum 800 | [Art. 46][law] |
-| Savings reduction | 3,000; liquidation base cannot become negative | [Arts. 34, 37][law] |
-| Home acquisition | 50% of qualifying payments, maximum 5,000/year; conditions and reinvestment coordination below | [Art. 38][law] |
-| Affordable-rental acquisition | 50% of qualifying payments, maximum 5,000/year, for the specified affordable permanent-home rental | [Art. 38 bis][law] |
-| Pension contributions | Lesser of 30% of net employment/business income and 5,000/year; qualifying instrument required | [Art. 39(1)][law]; [regulation art. 18][reg] |
-| Objective business option | Prior-year turnover at most 300,000, or 150,000 for professionals; estimated expenses 80% strictly commercial, 3% directors, 40% other | [Art. 17][law] |
-| Ordinary tax late interest | 4.05% annually for 2026 under the statutory period/base rules; distinct from the 3.24% legal rate | [General Tax Law art. 23][general]; [Budget Law 1/2026 art. 17][budget] |
+| Statutory rate | 10% on positive general and savings liquidation bases | [Arts. 43–44](https://www.portaljuridicandorra.ad/L2014005) |
+| Personal reduction | 24,000; 30,000 for qualifying incapacity; conditional household/spouse rule up to 40,000 | [Art. 35(1)](https://www.portaljuridicandorra.ad/L2014005) |
+| Family reduction | 1,000 per qualifying descendant under 25, ascendant over 65, or ward/foster dependant who lives with or depends on the taxpayer and whose annual income is not above the minimum wage (salari mínim interprofessional); circumstances are taken at accrual (31 December, or the date of death if the taxpayer dies during the year) | [Art. 35(2)](https://www.portaljuridicandorra.ad/L2014005); [arts. 36(2), 40–41](https://www.portaljuridicandorra.ad/L2014005) |
+| Minimum wage for the dependant-income test, 2026 | Monthly 1,525.33 from 1 January 2026 (Decret 8/2026, BOPA núm. 3, 14 January 2026); monthly 1,568.67 from 1 July 2026 (Decret 253/2026, BOPA núm. 77, 8 July 2026). Annual test (computed: six months at each monthly rate, and twelve at the July rate): 18,564.00 or less qualifies; above 18,824.04 fails; 18,564.01 to 18,824.04 is not settled (method below) | [Labour Inspection circular, January 2026](https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20Salari%20m%C3%ADnim%202026.pdf); [Labour Inspection circular, July 2026](https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20salari%20m%C3%ADnim%20a%20partir%20de%20l%271%20de%20juliol%20del%202026_0.pdf) |
+| Annual figure the Govern used in earlier years | 17,367.96 for 2025 and 16,515.24 for 2024 (monthly minimum wage × 12) | [Guia IRPF 2025](https://www.govern.ad/documents/d/guest/guia_irpf); [Guia IRPF 2024](https://www.govern.ad/documents/d/guest/Guia_IRPF_2024) |
+| Disability/dependency and tuition | Family amount multiplied by 1.5 for the specified recognised cases, without the ordinary age test; actual qualifying higher-education tuition up to 300 per descendant | [Art. 35(2)–(3)](https://www.portaljuridicandorra.ad/L2014005) |
+| Employment expenses | Employee public social-security contributions plus 3% of eligible gross employment receipts, capped at 2,500; specified receipt classes excluded | [Arts. 12–13](https://www.portaljuridicandorra.ad/L2014005) |
+| General-income bonus | 50% of 10% of general income after the first-paragraph personal reduction, maximum 800 | [Art. 46](https://www.portaljuridicandorra.ad/L2014005) |
+| Savings reduction | 3,000; liquidation base cannot become negative | [Arts. 34, 37](https://www.portaljuridicandorra.ad/L2014005) |
+| Home acquisition | 50% of qualifying payments, maximum 5,000/year; conditions and reinvestment coordination below | [Art. 38](https://www.portaljuridicandorra.ad/L2014005) |
+| Affordable-rental acquisition | 50% of qualifying payments, maximum 5,000/year, for the specified affordable permanent-home rental | [Art. 38 bis](https://www.portaljuridicandorra.ad/L2014005) |
+| Pension contributions | Lesser of 30% of net employment/business income and 5,000/year; qualifying instrument required | [Art. 39(1)](https://www.portaljuridicandorra.ad/L2014005); [regulation art. 18](https://www.portaljuridicandorra.ad/R20231229D) |
+| Objective business option | Prior-year turnover at most 300,000, or 150,000 for professionals; estimated expenses 80% strictly commercial, 3% directors, 40% other | [Art. 17](https://www.portaljuridicandorra.ad/L2014005) |
+| Ordinary tax late interest | 4.05% annually for 2026 under the statutory period/base rules; distinct from the 3.24% legal rate | [General Tax Law art. 23](https://www.portaljuridicandorra.ad/L2014021); [Budget Law 1/2026 art. 17](https://www.portaljuridicandorra.ad/L2026001) |
 
 The 24,000 amount is a base reduction. The bonus is proportional before its cap: do not deduct a flat 800 whenever income enters the next band. Eligibility for an enhanced household reduction depends on general-base income, not an unsupported requirement that the partner receives no income of any kind. [Arts. 35, 43–46][law].
 
@@ -201,4 +202,4 @@ Not yet confirmed: The old share-gain 50% relief for five-to-ten-year holdings i
 [g25]: https://www.govern.ad/documents/d/guest/guia_irpf
 [g24]: https://www.govern.ad/documents/d/guest/Guia_IRPF_2024
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-freelance-intake"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Spain: intake for a self-employed client (autónomo)
@@ -339,21 +339,20 @@ The tables in this section carry the figures that decide which of these question
 
 **Income tax regime, the simplified deduction, withholding on invoices and the quarterly payment (Reglamento del IRPF, RD 439/2007)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Prior year net turnover of all the activities together above which estimación directa simplificada cannot be used (art. 28.1.b) | EUR 600,000 | "no supere los 600.000 euros anuales en el año inmediato anterior" |
-| Hard-to-justify expenses and provisions in simplificada: percentage of net income before this item (art. 30, rule 2.ª) | 5% | "se cuantificará aplicando el porcentaje del 5 por ciento sobre el rendimiento neto" |
-| Yearly cash cap on that deduction | EUR 2,000 | "sin que la cuantía resultante pueda superar 2.000 euros anuales" |
-| Quarterly payment on account in direct estimation, on net income from 1 January to the end of the quarter (art. 110.1.a) | 20% | "el 20 por ciento del rendimiento neto correspondiente al período de tiempo transcurrido" |
-| Share of the prior year's activity income that must have borne withholding for a professional to be released from filing the quarterly return (art. 109.2) | 70% | "al menos el 70 por ciento de los ingresos de la actividad fueron objeto de retención" |
-| Ordinary withholding rate on a professional invoice paid by a payer obliged to withhold (art. 95.1) | 15% | "se aplicará el tipo de retención del 15 por ciento sobre los ingresos íntegros satisfechos" |
-| Professional who starts an activity: the tax period of the start and the two following periods, only where no professional activity was carried on in the year before the start date, and only once the payer has been told in writing | 7% | "el tipo de retención será del 7 por ciento en el período impositivo de inicio de actividades" |
-| Municipal collectors, insurance intermediaries who use external auxiliaries, and commercial delegates of the state lottery company, under letters a, b and c of art. 95.1. No income test applies to these three | 7% | "El tipo de retención será del 7 por ciento en el caso de rendimientos satisfechos a" |
-| The activities in letter d of art. 95.1, named there by their business tax group numbers and by the performing arts cases, but only where the prior year gross income of those activities was below this amount | EUR 15,000 | "correspondiente al ejercicio inmediato anterior sea inferior a 15.000 euros" |
-| And, for letter d only, where that income was more than this share of the person's total business and employment income in the same year. Both tests must be met | 75% | "represente más del 75 por ciento de la suma de los rendimientos íntegros de actividades económicas y del trabajo obtenidos por el contribuyente en dicho ejercicio" |
-| The professional rates in art. 95.1 are cut by this share where the income qualifies for the Ceuta and Melilla credit in art. 68.4 of the Ley del IRPF, so an invoice from a Ceuta or Melilla professional shows a lower rate and is not evidence of anything else (art. 95.1, last paragraph) | 60% | "Estos porcentajes se reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto" |
-| No withholding on rent for urban premises where the rents paid by the tenant to the same landlord in the year are no more than this amount (art. 75.3.g.2.º) | EUR 900 | "Cuando las rentas satisfechas por el arrendatario a un mismo arrendador no superen los 900 euros anuales" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Prior year net turnover of all the activities together above which estimación directa simplificada cannot be used (art. 28.1.b) | EUR 600,000 | "no supere los 600.000 euros anuales en el año inmediato anterior" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Hard-to-justify expenses and provisions in simplificada: percentage of net income before this item (art. 30, rule 2.ª) | 5% | "se cuantificará aplicando el porcentaje del 5 por ciento sobre el rendimiento neto" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Yearly cash cap on that deduction | EUR 2,000 | "sin que la cuantía resultante pueda superar 2.000 euros anuales" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Quarterly payment on account in direct estimation, on net income from 1 January to the end of the quarter (art. 110.1.a) | 20% | "el 20 por ciento del rendimiento neto correspondiente al período de tiempo transcurrido" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Share of the prior year's activity income that must have borne withholding for a professional to be released from filing the quarterly return (art. 109.2) | 70% | "al menos el 70 por ciento de los ingresos de la actividad fueron objeto de retención" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Ordinary withholding rate on a professional invoice paid by a payer obliged to withhold (art. 95.1) | 15% | "se aplicará el tipo de retención del 15 por ciento sobre los ingresos íntegros satisfechos" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Professional who starts an activity: the tax period of the start and the two following periods, only where no professional activity was carried on in the year before the start date, and only once the payer has been told in writing | 7% | "el tipo de retención será del 7 por ciento en el período impositivo de inicio de actividades" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Municipal collectors, insurance intermediaries who use external auxiliaries, and commercial delegates of the state lottery company, under letters a, b and c of art. 95.1. No income test applies to these three | 7% | "El tipo de retención será del 7 por ciento en el caso de rendimientos satisfechos a" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| The activities in letter d of art. 95.1, named there by their business tax group numbers and by the performing arts cases, but only where the prior year gross income of those activities was below this amount | EUR 15,000 | "correspondiente al ejercicio inmediato anterior sea inferior a 15.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| And, for letter d only, where that income was more than this share of the person's total business and employment income in the same year. Both tests must be met | 75% | "represente más del 75 por ciento de la suma de los rendimientos íntegros de actividades económicas y del trabajo obtenidos por el contribuyente en dicho ejercicio" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| The professional rates in art. 95.1 are cut by this share where the income qualifies for the Ceuta and Melilla credit in art. 68.4 of the Ley del IRPF, so an invoice from a Ceuta or Melilla professional shows a lower rate and is not evidence of anything else (art. 95.1, last paragraph) | 60% | "Estos porcentajes se reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| No withholding on rent for urban premises where the rents paid by the tenant to the same landlord in the year are no more than this amount (art. 75.3.g.2.º) | EUR 900 | "Cuando las rentas satisfechas por el arrendatario a un mismo arrendador no superen los 900 euros anuales" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
 
 The hard-to-justify deduction is a cap, not an allowance: it is the percentage of net income, up to the cash cap. For an activity carried on in Ceuta in 2026 the percentage is the one in the Ley del IRPF table below, not the one above; disposición adicional 64 names only the percentage and says nothing about the cash cap in the row above; whether that cap still applies to the raised percentage is for the accountant to settle. It cannot be taken by a taxpayer who opts for the reduction in art. 26.1 of the same Reglamento, which is the reduction for a single-client or economically dependent self-employed person in art. 32.2 of the Ley del IRPF (Q10 above). The computation is `es-income-tax`; the quarterly return is `es-estimated-tax`.
 
@@ -363,102 +362,92 @@ Art. 75.3.g lists two more cases with no rent withholding, which carry no figure
 
 **Withholding the client applies to rent, and expenses that need a client answer (Ley del IRPF, Ley 35/2006)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Withholding on rent paid for urban property, declared on Modelo 115 (art. 101.8) | 19% | "subarrendamiento de bienes inmuebles urbanos, cualquiera que sea su calificación, será del 19 por ciento" |
-| That rate is cut by this share where the let property is in Ceuta or Melilla, on the terms of art. 68.4 of the same Law (art. 101.8) | 60% | "Este porcentaje se reducirá en un 60 por ciento cuando el inmueble esté situado en Ceuta o Melilla" |
-| Where the main home is partly used for the activity: the deductible share of water, gas, electricity, telephone and internet is this percentage applied to the proportion of square metres used, unless a higher or lower share is proved (art. 30.2.5.ª.b) | 30% | "en el porcentaje resultante de aplicar el 30 por ciento a la proporción existente entre los metros cuadrados" |
-| Health insurance for the worker, the spouse and children under twenty-five living with them, per insured person per year (art. 30.2.5.ª.a) | EUR 500 | "El límite máximo de deducción será de 500 euros por cada una de las personas" |
-| The same limit for each of those insured people who has a disability | EUR 1,500 | "o de 1.500 euros por cada una de ellas con discapacidad" |
-| Ceuta only, tax year 2026: the hard-to-justify percentage in simplificada for activities carried on in Ceuta whose income qualifies for the art. 68.4 credit (disposición adicional 64, added by Real Decreto-ley 22/2026, convalidated 16 September 2026) | 10% | "será, durante el período impositivo 2026, del 10 por ciento" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Withholding on rent paid for urban property, declared on Modelo 115 (art. 101.8) | 19% | "subarrendamiento de bienes inmuebles urbanos, cualquiera que sea su calificación, será del 19 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| That rate is cut by this share where the let property is in Ceuta or Melilla, on the terms of art. 68.4 of the same Law (art. 101.8) | 60% | "Este porcentaje se reducirá en un 60 por ciento cuando el inmueble esté situado en Ceuta o Melilla" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Where the main home is partly used for the activity: the deductible share of water, gas, electricity, telephone and internet is this percentage applied to the proportion of square metres used, unless a higher or lower share is proved (art. 30.2.5.ª.b) | 30% | "en el porcentaje resultante de aplicar el 30 por ciento a la proporción existente entre los metros cuadrados" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Health insurance for the worker, the spouse and children under twenty-five living with them, per insured person per year (art. 30.2.5.ª.a) | EUR 500 | "El límite máximo de deducción será de 500 euros por cada una de las personas" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| The same limit for each of those insured people who has a disability | EUR 1,500 | "o de 1.500 euros por cada una de ellas con discapacidad" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Ceuta only, tax year 2026: the hard-to-justify percentage in simplificada for activities carried on in Ceuta whose income qualifies for the art. 68.4 credit (disposición adicional 64, added by Real Decreto-ley 22/2026, convalidated 16 September 2026) | 10% | "será, durante el período impositivo 2026, del 10 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 
 **Pension contributions, the reduction limit (Ley del IRPF, art. 52)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| The reduction is the lower of this share of the net employment and business income earned individually in the year, and the cash limit below | 30% | "El 30 por 100 de la suma de los rendimientos netos del trabajo y de actividades económicas" |
-| Cash limit | EUR 1,500 | "b) 1.500 euros anuales" |
-| Increase where it comes from employer contributions, or from the worker's own contributions to the same instrument within the amounts the article sets against the employer contribution | EUR 8,500 | "En 8.500 euros anuales, siempre que tal incremento provenga de contribuciones empresariales" |
-| Increase where it comes from a self-employed person's contributions to a sectoral plan, to a simplified employment plan for the self-employed, or from the individual entrepreneur's or professional's own contributions to an employment plan they promote and belong to, or to a provident society of which they are a member | EUR 4,250 | "En 4.250 euros anuales, siempre que tal incremento provenga de aportaciones a los planes de pensiones sectoriales" |
-| The two increases taken together cannot exceed this amount | EUR 8,500 | "la cuantía máxima de reducción por aplicación de los incrementos previstos en los números 1.º y 2.º anteriores será de 8.500 euros" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| The reduction is the lower of this share of the net employment and business income earned individually in the year, and the cash limit below | 30% | "El 30 por 100 de la suma de los rendimientos netos del trabajo y de actividades económicas" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Cash limit | EUR 1,500 | "b) 1.500 euros anuales" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Increase where it comes from employer contributions, or from the worker's own contributions to the same instrument within the amounts the article sets against the employer contribution | EUR 8,500 | "En 8.500 euros anuales, siempre que tal incremento provenga de contribuciones empresariales" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Increase where it comes from a self-employed person's contributions to a sectoral plan, to a simplified employment plan for the self-employed, or from the individual entrepreneur's or professional's own contributions to an employment plan they promote and belong to, or to a provident society of which they are a member | EUR 4,250 | "En 4.250 euros anuales, siempre que tal incremento provenga de aportaciones a los planes de pensiones sectoriales" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| The two increases taken together cannot exceed this amount | EUR 8,500 | "la cuantía máxima de reducción por aplicación de los incrementos previstos en los números 1.º y 2.º anteriores será de 8.500 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 
 For an autónomo the relevant increase is usually the sectoral or self-employed plan one, not the employer one. Ask which plan the contributions went to, not just the amount.
 
 **Value added tax: the rates, the retailer test and the vehicle presumption (Ley del IVA, Ley 37/1992)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| General rate (art. 90.Uno) | 21% | "El Impuesto se exigirá al tipo del 21 por ciento" |
-| Reduced rate (art. 91.Uno) | 10% | "Se aplicará el tipo del 10 por ciento a las operaciones siguientes" |
-| Super-reduced rate (art. 91.Dos) | 4% | "Se aplicará el tipo del 4 por ciento a las operaciones siguientes" |
-| Recargo de equivalencia on goods at the general rate (art. 161) | 5.2% | "Con carácter general, el 5,2 por ciento" |
-| Recargo de equivalencia on goods at the reduced rate | 1.4% | "el 1,4 por ciento" |
-| Recargo de equivalencia on goods at the super-reduced rate | 0.5% | "el 0,50 por ciento" |
-| Recargo de equivalencia on manufactured tobacco | 1.75% | "Para las entregas de bienes objeto del Impuesto Especial sobre las Labores del Tabaco, el 1,75 por ciento" |
-| Retailer test: a trader is a retailer only if, among the other conditions of art. 149.Uno, the prior year's supplies of those goods to non-business customers and to the Social Security system were more than this share of all supplies of them. The same article lifts this test for some traders classed as retailers under the business tax rules | 80% | "hubiese excedido del 80 por 100 del total de las entregas realizadas" |
-| Share of a car, its trailer, a moped or a motorcycle presumed used in the business, for deducting input VAT (art. 95.Tres.2.ª) | 50% | "se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 50 por 100" |
-| Share presumed for the vehicles the same rule lists: mixed vehicles carrying goods, passenger transport for consideration, driver and pilot instruction for consideration, manufacturers' testing and sales promotion, the professional travel of commercial representatives and agents, and security services | 100% | "los vehículos que se relacionan a continuación se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 100 por 100" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| General rate (art. 90.Uno) | 21% | "El Impuesto se exigirá al tipo del 21 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Reduced rate (art. 91.Uno) | 10% | "Se aplicará el tipo del 10 por ciento a las operaciones siguientes" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Super-reduced rate (art. 91.Dos) | 4% | "Se aplicará el tipo del 4 por ciento a las operaciones siguientes" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Recargo de equivalencia on goods at the general rate (art. 161) | 5.2% | "Con carácter general, el 5,2 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Recargo de equivalencia on goods at the reduced rate | 1.4% | "el 1,4 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Recargo de equivalencia on goods at the super-reduced rate | 0.5% | "el 0,50 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Recargo de equivalencia on manufactured tobacco | 1.75% | "Para las entregas de bienes objeto del Impuesto Especial sobre las Labores del Tabaco, el 1,75 por ciento" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Retailer test: a trader is a retailer only if, among the other conditions of art. 149.Uno, the prior year's supplies of those goods to non-business customers and to the Social Security system were more than this share of all supplies of them. The same article lifts this test for some traders classed as retailers under the business tax rules | 80% | "hubiese excedido del 80 por 100 del total de las entregas realizadas" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Share of a car, its trailer, a moped or a motorcycle presumed used in the business, for deducting input VAT (art. 95.Tres.2.ª) | 50% | "se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 50 por 100" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Share presumed for the vehicles the same rule lists: mixed vehicles carrying goods, passenger transport for consideration, driver and pilot instruction for consideration, manufacturers' testing and sales promotion, the professional travel of commercial representatives and agents, and security services | 100% | "los vehículos que se relacionan a continuación se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 100 por 100" | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 
 Both shares are presumptions, and rule 3 of the same article requires the deduction to be adjusted, either way, once the real degree of business use is proved. The presumption is a VAT rule only. For income tax a car counts as used in the activity only if it is used exclusively for it, with the narrow list of exceptions in art. 22.4 of the Reglamento del IRPF, which names much the same kinds of vehicle. Never carry one answer across to the other tax. The VAT work is `es-vat-return`.
 
 **Module method limits, the statute (art. 31.1.3.ª Ley 35/2006)**
 
-| Limit | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Prior year income from all activities except farming, livestock and forestry, above which the module method cannot be used | EUR 150,000 | "excepto las agrícolas, ganaderas y forestales, 150.000 euros anuales" |
-| Of that, income from operations invoiced to businesses and professionals, above which the module method cannot be used | EUR 75,000 | "supere 75.000 euros" |
-| Prior year purchases of goods and services, capital assets excluded, above which the module method cannot be used | EUR 150,000 | "excluidas las adquisiciones de inmovilizado, en el ejercicio anterior supere la cantidad de 150.000 euros" |
+| Limit | Value | Note | Source |
+| --- | --- | --- |---|
+| Prior year income from all activities except farming, livestock and forestry, above which the module method cannot be used | EUR 150,000 | "excepto las agrícolas, ganaderas y forestales, 150.000 euros anuales" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Of that, income from operations invoiced to businesses and professionals, above which the module method cannot be used | EUR 75,000 | "supere 75.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Prior year purchases of goods and services, capital assets excluded, above which the module method cannot be used | EUR 150,000 | "excluidas las adquisiciones de inmovilizado, en el ejercicio anterior supere la cantidad de 150.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 
 **Module method limits, the Agencia Tributaria page (page dated 13 October 2026)**
 
-| Limit | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html |
-| Prior year income from all activities except farming, on that page | EUR 250,000 | "Desde 2016 hasta 2026 inclusive los límites de 150.000 € y 75.000 € pasan a ser 250.000 € y 125.000 € respectivamente" |
-| Of that, invoiced to businesses and professionals, on that page | EUR 125,000 | "pasan a ser 250.000 € y 125.000 € respectivamente" |
-| Prior year purchases, capital assets excluded, on that page | EUR 250,000 | "Desde 2016 hasta 2026 inclusive el volumen de compras en bienes y servicios en el año inmediato anterior no puede superar los 250.000 €" |
+| Limit | Value | Note | Source |
+| --- | --- | --- |---|
+| Prior year income from all activities except farming, on that page | EUR 250,000 | "Desde 2016 hasta 2026 inclusive los límites de 150.000 € y 75.000 € pasan a ser 250.000 € y 125.000 € respectivamente" | https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html |
+| Of that, invoiced to businesses and professionals, on that page | EUR 125,000 | "pasan a ser 250.000 € y 125.000 € respectivamente" | https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html |
+| Prior year purchases, capital assets excluded, on that page | EUR 250,000 | "Desde 2016 hasta 2026 inclusive el volumen de compras en bienes y servicios en el año inmediato anterior no puede superar los 250.000 €" | https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html |
 
 The two official sources disagree. The higher limits sit in disposición transitoria 32 of Ley 35/2006, whose heading still reads "en los ejercicios 2016 a 2024"; three Real Decreto-ley tried to extend them and each was left without effect. The Agencia Tributaria page still states the higher limits for 2016 to 2026 inclusive. **Never place a client inside or outside the module method on one of these sources alone.** If the client's prior year income or purchases fall between the two, stop the intake and say so. Tell the client in plain words that two official sources set different limits for this year, that which one governs decides whether they are taxed under the module method or under direct estimation, and that a gestor or asesor fiscal has to settle it with the Agencia Tributaria before any return is prepared. Name the two limits the client sits between. Do not pick a side and do not carry on under either method.
 
 **Reporting thresholds the intake has to test (RD 1065/2007)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
-| Operations with one other person or entity in the calendar year: there is no Modelo 347 duty for a taxpayer whose operations with each of them, taken together, were no more than this amount (art. 32.c) | EUR 3,005.06 | "3.005,06 euros durante el año natural correspondiente" |
-| Accounts held abroad (Modelo 720): no duty to report any account where both the 31 December balances and the average balances, taken together, are no more than this figure; passing either means reporting every account (art. 42 bis.4.e) | EUR 50,000 | "no superen, conjuntamente, los 50.000 euros, y la misma circunstancia concurra en relación con los saldos medios" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Operations with one other person or entity in the calendar year: there is no Modelo 347 duty for a taxpayer whose operations with each of them, taken together, were no more than this amount (art. 32.c) | EUR 3,005.06 | "3.005,06 euros durante el año natural correspondiente" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
+| Accounts held abroad (Modelo 720): no duty to report any account where both the 31 December balances and the average balances, taken together, are no more than this figure; passing either means reporting every account (art. 42 bis.4.e) | EUR 50,000 | "no superen, conjuntamente, los 50.000 euros, y la misma circunstancia concurra en relación con los saldos medios" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
 
 **Territory: the Canary Islands indirect tax (art. 51 Ley 4/2012, wording in force since 1 January 2024)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282 |
-| Canary Islands general IGIC rate, charged instead of VAT on supplies not covered by any other IGIC rate | 7% | "El tipo general del 7 por ciento, aplicable a las entregas de bienes y prestaciones de servicios" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Canary Islands general IGIC rate, charged instead of VAT on supplies not covered by any other IGIC rate | 7% | "El tipo general del 7 por ciento, aplicable a las entregas de bienes y prestaciones de servicios" | https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282 |
 
 **Territory: the Ceuta and Melilla income tax credit (art. 68.4 Ley 35/2006)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
-| Credit against the tax on income earned in Ceuta or Melilla by someone habitually and effectively resident there | 60% | "se deducirán el 60 por ciento de la parte de la suma de las cuotas íntegras" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Credit against the tax on income earned in Ceuta or Melilla by someone habitually and effectively resident there | 60% | "se deducirán el 60 por ciento de la parte de la suma de las cuotas íntegras" | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 
 **Territory: the Ceuta and Melilla contribution bonification before 1 October 2026 (art. 36 Ley 20/2007 as worded by Real Decreto-ley 1/2023)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2023-625 |
-| Bonification of the common contingencies contribution, listed sectors, for self-employed workers who live and work in Ceuta or Melilla | 50% | "tendrán derecho a una bonificación del 50 por ciento de la cuota por contingencias comunes" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Bonification of the common contingencies contribution, listed sectors, for self-employed workers who live and work in Ceuta or Melilla | 50% | "tendrán derecho a una bonificación del 50 por ciento de la cuota por contingencias comunes" | https://www.boe.es/buscar/act.php?id=BOE-A-2023-625 |
 
 **Territory: the Ceuta and Melilla contribution bonification from 1 October 2026 (art. 36 Ley 20/2007 as worded by Real Decreto-ley 22/2026)**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 |
-| Bonification of the common contingencies contribution, listed sectors, for cuotas accrued from 1 October 2026 | 75% | "tendrán derecho a una bonificación del 75 por ciento de la cuota por contingencias comunes" |
+| Item | Value | Note | Source |
+| --- | --- | --- |---|
+| Bonification of the common contingencies contribution, listed sectors, for cuotas accrued from 1 October 2026 | 75% | "tendrán derecho a una bonificación del 75 por ciento de la cuota por contingencias comunes" | https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409 |
 
 A Ceuta or Melilla intake in this tax year therefore spans two contribution periods and two wordings of the sector list. The earlier wording, in the services item, reads "excepto el transporte aéreo de ala fija, construcción de edificios"; the later wording ends that item at "excepto el transporte aéreo de ala fija". Whether building construction is in or out of the earlier bonification is not settled by the text alone, so flag it for the reviewer for any client in that sector. Collect the RETA recibos for the whole year and let `es-social-contributions` split them. No IPSI rate is stated anywhere in this skill: those rates are set by each city and are on no site this skill may cite.
 
@@ -744,6 +733,7 @@ The VAT return is `es-vat-return` and nothing else: never route VAT work to any 
 - **v0.1 (April 2026):** initial draft. Upload first, infer, then confirm.
 - **v0.2 (September 2026):** refreshed against the official pages. Tax year moved to 2026. Modelo 037 removed: it was suppressed with effect from 3 February 2025 and only Modelo 036 exists. A retired VAT routing target replaced by `es-vat-return`. The monthly amount for the reduced starting contribution removed, because no allowed official page states one for this year. The invented worked example replaced by a template. Questions added for the IAE heading, the VAT position including recargo de equivalencia and exempt activities, employees and withholding obligations, and the territory.
 - **v0.3 (October 2026):** the residence question rewritten to the two tests in art. 9.1 Ley 35/2006 (more than 183 days, or the centre of economic interests); the part-year resident route removed, because the tax period is the calendar year. Section three of the IAE tariffs added as professional income for withholding. The art. 26.1 reduction correctly identified as the single-client or dependent self-employed reduction, with a new question for it. The Ceuta and Melilla withholding cut limited to the rules that grant it. The exempt-only filing rule tied to art. 71 of the Reglamento del IVA. Contribution bonification rows dated to the two 2026 periods. Non-resident routing added.
+- **v0.5 (14 November 2026):** declared as a router; every figure row now carries its official URL, and every quoted figure was found again on the consolidated BOE and Agencia Tributaria pages on 14 November 2026; Sources say what each page was read for.
 
 ## End of the intake skill
 
@@ -826,20 +816,22 @@ expected:
 
 ## Sources
 
+Every page below was opened on 2026-11-14 and the quoted words in the tables above were found on it that day (consolidated BOE texts in force on that date).
+
 | Official source | Scope read | Read on |
 |---|---|---|
-| [Ley 35/2006, Ley del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Arts. 30, 68.4, 101.8 | 2026-10-31 |
-| [RD 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 30, 95, 109, 110 | 2026-10-31 |
-| [Ley 37/1992, Ley del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Art. 107 only | 2026-10-31 |
-| [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Art. 81 | 2026-10-31 |
-| [RD 1065/2007, gestión e inspección](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | EUR 3,005.06 | 2026-10-31 |
-| [Orden HAC/1526/2024, suppressing Modelo 037](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) | Page opened only | 2026-10-31 |
-| [Ley 20/2007, Estatuto del trabajo autónomo](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409) | Page opened only | 2026-10-31 |
-| [Real Decreto-ley 1/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-625) | Page opened only | 2026-10-31 |
-| [Ley 4/2012 de Canarias, IGIC rates](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282) | Page opened only | 2026-10-31 |
-| [Agencia Tributaria, who the module method applies to](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Module limits 150,000, 75,000, 250,000, 125,000 | 2026-10-31 |
+| [Ley 35/2006, Ley del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Read for arts. 9, 30, 32.2, 51, 68.4, 101.8 and disposición adicional 64 (quotes above) | 2026-11-14 |
+| [RD 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Read for arts. 28, 30, 75.3, 95, 109, 110 (quotes above) | 2026-11-14 |
+| [Ley 37/1992, Ley del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Read for arts. 3, 20.Uno, 90, 91, 95.Tres, 107, 148 to 163 (rates and recargo de equivalencia quotes above) | 2026-11-14 |
+| [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Read for art. 81 (retailer conditions) | 2026-11-14 |
+| [RD 1065/2007, gestión e inspección](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | Read for arts. 32.c and 42 bis (Modelo 347 EUR 3,005.06 and Modelo 720 limit) | 2026-11-14 |
+| [Orden HAC/1526/2024, suppressing Modelo 037](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) | Read for the suppression of Modelo 037 and its entry into force | 2026-11-14 |
+| [Ley 20/2007, Estatuto del trabajo autónomo](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409) | Read for art. 38 ter and the 75% Ceuta and Melilla bonification from 1 October 2026 | 2026-11-14 |
+| [Real Decreto-ley 1/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-625) | Read for the 50% Ceuta and Melilla bonification of common contingencies | 2026-11-14 |
+| [Ley 4/2012 de Canarias, IGIC rates](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282) | Read for art. 27, the 7% general IGIC rate | 2026-11-14 |
+| [Agencia Tributaria, who the module method applies to](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Read for the module limits 250,000 and 125,000 that apply to 2016 to 2026 | 2026-11-14 |
 
-Not yet confirmed: figures from sources marked "Page opened only" and table rows not named in the scope column were not re-read on 2026-10-31; they carry the skill's October 2026 refresh, whose exact read date is not recorded.
+Not yet confirmed: the monthly amount of the reduced starting RETA contribution (tarifa plana) for 2026, which this skill deliberately does not state; the module limits for 2027, which depend on the next extension.
 
 ## Disclaimer
 
@@ -847,4 +839,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

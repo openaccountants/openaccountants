@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/paraguay-social-contributions"
   jurisdiction: "PY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Paraguay IPS social security contributions, 2026 v0.2
+# Paraguay IPS social security contributions, 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -202,8 +202,8 @@ expected:
 
 Not yet confirmed: whether bank employees also contribute to IPS for medical care alongside the Caja Bancaria; the IPS late-payment surcharge and interest rates (the earlier skill gave 1% to 50% from secondary sources, not used); the current text of Decreto-Ley 1860/50 arts. 20 and 76 (read only as IPS quotes them); the 2026 value of a día-multa as fixed by the IPS board; the special minimum bases for listed occupations (cooks, drivers, rural day workers, maritime stevedores) on the IPS table, which date from 2023; social security agreements for posted workers; the valuation of pay in kind for the base.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `paraguay-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/paraguay-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

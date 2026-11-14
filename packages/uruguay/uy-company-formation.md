@@ -1,10 +1,10 @@
 ---
 name: uy-company-formation
 description: "Company formation and entity choice in Uruguay for 2026, each rule tied to the law on IMPO. Covers the SAS (Ley 19.820: one or more founders, 10% of cash capital paid in at signing, full payment within 24 months, registration within 30 days, digital constitution), the SRL (Ley 16.060: up to 50 partners, 50% of cash contributions at signing, the rest within two years) and the SA (25% paid in and 50% subscribed at signing, capital in pesos, bank account for cash contributions), registration at the Registro Nacional de Comercio, BPS registration and the first-hire steps, the beneficial owner rules (Ley 19.484: 15% threshold, reporting to the Banco Central), approval and registration of annual accounts, and the yearly tax calendar. Trigger on: abrir empresa Uruguay, SAS Uruguay, SRL, sociedad anónima, constituir sociedad, beneficiario final, company formation Uruguay 2026. Out of scope: free-zone users, cooperatives, trusts, branches of foreign companies."
-version: 0.1
+version: 0.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: formation
 type: filing-howto
 ---
 
-# Uruguay: company formation and entity choice, 2026 v0.1
+# Uruguay: company formation and entity choice, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -162,4 +162,4 @@ expected:
 
 Not yet confirmed: whether an SA or SRL can be formed online like an SAS; registry, publication and notary costs and typical timings (the old file's "days" for an SAS and "around 30 days" for an SA or SRL had no official source); the DGI registration (RUT) procedure and forms; the asset and income levels and terms for registering accounts with the AIN (set by regulation, not read); the SA shareholder liability and balance-payment rules, and whether an SA may continue with a single shareholder; whether the bearer share rules of Ley 18.930 still apply; the 2026 UI value for converting the SAS thresholds; whether the company must file the annual Impuesto al Patrimonio (net wealth tax) return (carried from the old file, Texto Ordenado 1996, not read); the publication channels (Diario Oficial and a newspaper) for an SA or SRL extract (carried from the old file, not read).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

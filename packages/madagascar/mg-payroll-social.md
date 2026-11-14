@@ -3,12 +3,13 @@ name: mg-payroll-social
 description: "Madagascar 2026 employer IRSA withholding and remittance workflow, permitted frequency exceptions and social-contribution verification controls; contribution rates remain partial."
 jurisdiction: MG
 tax_year: 2026
-last_updated: 2026-11-01
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Madagascar employer payroll: IRSA remittance and social-control checklist

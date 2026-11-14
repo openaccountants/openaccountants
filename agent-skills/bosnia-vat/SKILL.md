@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bosnia-vat"
   jurisdiction: "BA"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Bosnia and Herzegovina: VAT (PDV) 2026
@@ -32,21 +32,21 @@ Related skills: entity income and payroll taxes in [bosnia-income-tax](bosnia-in
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate | 17% on taxable supplies and imports | 2026 | [VAT Law art. 23](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
-| Reduced rates | none | 2026 | VAT Law art. 23 |
-| Exports and international transport | exempt with right to deduct (zero-rated) | 2026 | VAT Law arts. 27, 28 and 32(5) |
+| Reduced rates | none | 2026 | [VAT Law art. 23](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Exports and international transport | exempt with right to deduct (zero-rated) | 2026 | [VAT Law arts. 27, 28 and 32(5)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
 | Registration threshold | 100,000 KM of taxable and zero-rated supplies in the previous year, or likely in the current year | from 2 Dec 2023 | [VAT Law art. 57(1) as amended by 80/23](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-5-Z-o-PDV-sl-list-80-23-24-11-23.pdf) |
-| Voluntary registration, minimum period | 60 months (small business); two calendar years (letting, farming) | 2026 | VAT Law arts. 44(7) and 61 |
-| Farmers outside VAT | household cadastral income below 15,000 KM | 2026 | VAT Law art. 44(3) |
-| Construction special scheme | works on new or existing buildings worth more than 25,000 KM | 2026 | VAT Law art. 40 |
-| Capital goods adjustment | equipment costing over 10,000 KM: 5 years; buildings: 10 years; no adjustment below 5% | 2026 | VAT Law art. 36 |
-| Residential letting exempt | lets of houses and flats for more than 60 days | 2026 | VAT Law art. 25(3) |
-| Refund deadline | 60 days after the return deadline; 30 days after filing for a business whose main activity is exporting and that is in credit on consecutive returns | 2026 | VAT Law art. 52 |
-| Unused credit | refunded after six months | 2026 | VAT Law art. 52 |
+| Voluntary registration, minimum period | 60 months (small business); two calendar years (letting, farming) | 2026 | [VAT Law arts. 44(7) and 61](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Farmers outside VAT | household cadastral income below 15,000 KM | 2026 | [VAT Law art. 44(3)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Construction special scheme | works on new or existing buildings worth more than 25,000 KM | 2026 | [VAT Law art. 40](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Capital goods adjustment | equipment costing over 10,000 KM: 5 years; buildings: 10 years; no adjustment below 5% | 2026 | [VAT Law art. 36](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Residential letting exempt | lets of houses and flats for more than 60 days | 2026 | [VAT Law art. 25(3)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Refund deadline | 60 days after the return deadline; 30 days after filing for a business whose main activity is exporting and that is in credit on consecutive returns | 2026 | [VAT Law art. 52](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
+| Unused credit | refunded after six months | 2026 | [VAT Law art. 52](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
 | First-home refund | citizens with BiH domicile buying a newly built first home (none owned in the last seven years): VAT on up to 40 m² plus 15 m² per household member; cap = 14.5299% of (the average flat price including VAT in the latest quarterly report of the BiH Statistics Agency before the contract date × 55 m²); claim by 30 June of the year after the sale is registered (sales registered between 20/25 taking effect and the rulebook taking effect: within six months of the rulebook) | from the eighth day after 30 Jun 2026 | [VAT Law art. 54a (20/25)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-6-Z-o-izmj-i-dop-Z-o-PDV-sl-list-20-25-04-04-2025.pdf); [Rulebook art. 105a (45/26)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/2_Pravilnici/B/B-1-24-P-o-izmj-i-dop-Praviln-o-primj-Z-o-PDV-sl-list-45-26-30-06-2026.pdf) |
 | Currency | returns and payments in convertible marks (KM); fixed rate 1 EUR = 1.95583 KM | 2026 | [Central Bank of BiH, official exchange rate notice](https://www.cbbh.ba/press/ShowNews/321?lang=en) |
 | Late payment interest | 0.04% a day | 2026 | [Procedure Law art. 10(1) as amended by 100/13](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf) |
-| Enforcement surcharge | 5% of the debt when enforced collection starts | 2026 | Procedure Law art. 11(1) as amended by 100/13 |
-| Late or missing return | 300 KM fine, except when the return shows a credit (negativna prijava) | 2026 | VAT Law art. 67(1)(4) |
+| Enforcement surcharge | 5% of the debt when enforced collection starts | 2026 | [Procedure Law art. 11(1) as amended by 100/13](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf) |
+| Late or missing return | 300 KM fine, except when the return shows a credit (negativna prijava) | 2026 | [VAT Law art. 67(1)(4)](https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf) |
 
 ## The taxable base
 
@@ -206,21 +206,21 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Zakon o porezu na dodatu vrijednost, Službeni glasnik BiH 9/05 (base text), arts. 3 to 67 | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf | 2026-10-30 |
-| VAT Law amendments 35/05 and 100/08 (UIO file labels are swapped; content checked) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-2-Zakon-izmjene-PDV-100-08.pdf | 2026-10-30 |
-| VAT Law amendment 33/17 (art. 26 imports) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-3-Izmj-Zako-o-PDV-B-sl-glasnik-33-17.pdf | 2026-10-30 |
-| VAT Law amendment 46/23 (food donations) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-4-D-Zakona-o-PDV-s-list-46-23-30-06-2023.pdf | 2026-10-30 |
-| VAT Law amendment 80/23 (threshold 100,000 KM) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-5-Z-o-PDV-sl-list-80-23-24-11-23.pdf | 2026-10-30 |
-| VAT Law amendment 20/25 (art. 54a first-home refund, art. 67 fine) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-6-Z-o-izmj-i-dop-Z-o-PDV-sl-list-20-25-04-04-2025.pdf | 2026-10-30 |
-| Pravilnik o dopuni Pravilnika o primjeni Zakona o PDV, Službeni glasnik BiH 45/26 (art. 105a) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/2_Pravilnici/B/B-1-24-P-o-izmj-i-dop-Praviln-o-primj-Z-o-PDV-sl-list-45-26-30-06-2026.pdf | 2026-10-30 |
-| Uputstvo za popunjavanje PDV prijave, Službeni glasnik BiH 47/22 | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/2_Pravilnici/B/B-1-2-Uputstvo-o-popunjavanju-PDV-prijave-Sglasnik-47-22-19-07-22.pdf | 2026-10-30 |
-| Zakon o postupku indirektnog oporezivanja 89/05, arts. 9 to 11 | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-Zakon-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-8905.pdf | 2026-10-30 |
-| Zakon o izmjenama Zakona o postupku indirektnog oporezivanja 100/13 (0.04%, 5%) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf | 2026-10-30 |
-| Central Bank of BiH, notice on the official exchange rate (1 EUR = 1.95583 KM) | https://www.cbbh.ba/press/ShowNews/321?lang=en | 2026-10-30 |
-| UIO, list of tax regulations | https://www.uino.gov.ba/portal/bs/propisi/porezi/ | 2026-10-30 |
+| Zakon o porezu na dodatu vrijednost, Službeni glasnik BiH 9/05 (base text), arts. 3 to 67 | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf | 2026-11-14 |
+| VAT Law amendments 35/05 and 100/08 (UIO file labels are swapped; content checked): read for the amended articles | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-2-Zakon-izmjene-PDV-100-08.pdf | 2026-11-14 |
+| VAT Law amendment 33/17 (art. 26 imports) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-3-Izmj-Zako-o-PDV-B-sl-glasnik-33-17.pdf | 2026-11-14 |
+| VAT Law amendment 46/23: read for food donations | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-4-D-Zakona-o-PDV-s-list-46-23-30-06-2023.pdf | 2026-11-14 |
+| VAT Law amendment 80/23: read for threshold 100,000 KM | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-5-Z-o-PDV-sl-list-80-23-24-11-23.pdf | 2026-11-14 |
+| VAT Law amendment 20/25 (art. 54a first-home refund, art. 67 fine) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-6-Z-o-izmj-i-dop-Z-o-PDV-sl-list-20-25-04-04-2025.pdf | 2026-11-14 |
+| Pravilnik o dopuni Pravilnika o primjeni Zakona o PDV, Službeni glasnik BiH 45/26 (art. 105a) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/2_Pravilnici/B/B-1-24-P-o-izmj-i-dop-Praviln-o-primj-Z-o-PDV-sl-list-45-26-30-06-2026.pdf | 2026-11-14 |
+| Uputstvo za popunjavanje PDV prijave, Službeni glasnik BiH 47/22: read for the return boxes | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/2_Pravilnici/B/B-1-2-Uputstvo-o-popunjavanju-PDV-prijave-Sglasnik-47-22-19-07-22.pdf | 2026-11-14 |
+| Zakon o postupku indirektnog oporezivanja 89/05, arts. 9 to 11 | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-Zakon-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-8905.pdf | 2026-11-14 |
+| Zakon o izmjenama Zakona o postupku indirektnog oporezivanja 100/13: read for 0.04%, 5% | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf | 2026-11-14 |
+| Central Bank of BiH: read for notice on the official exchange rate (1 EUR = 1.95583 KM) | https://www.cbbh.ba/press/ShowNews/321?lang=en | 2026-11-14 |
+| UIO, list of tax regulations: read for which VAT laws and amendments are in force | https://www.uino.gov.ba/portal/bs/propisi/porezi/ | 2026-11-14 |
 
 Not yet confirmed: the consolidated VAT rulebook (93/05 to 25/25) beyond the 2026 first-home article, including invoice content and cash-register rules; the electronic supply and purchase records referred to in rulebook 45/26 (eIsporuke); the travellers' refund conditions (Instruction 48/25); the conditions for refunds to foreign businesses (PDV SL 1); the special schemes for travel agents, second-hand goods and auctions (arts. 46 to 51); the yearly farmers' flat-rate compensation; the average price per m² that sets the first-home cap; whether a later consolidated text of the VAT Law exists (the Parliament site was not read).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bosnia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bosnia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bosnia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bosnia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

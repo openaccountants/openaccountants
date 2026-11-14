@@ -1,14 +1,15 @@
 ---
 name: it-ires-corporate-tax
 description: "Italian corporate income tax (IRES) for tax year 2026: resident companies (S.p.A., S.r.l., cooperatives, commercial entities) and Italian permanent establishments of foreign companies. Covers the 24% rate, the 2025-only reduced 20% rate (IRES premiale) and why it does not apply to 2026, the bank surcharge, the taxable base and main add-backs, the 30% ROL interest limit, the 95% participation exemption and dividend exclusion, the 80% loss carry-forward limit, the domestic tax group (consolidato nazionale), Modello Redditi SC filing, acconti and saldo dates, penalties and ravvedimento operoso, outbound withholding (26%, 1.2%, parent-subsidiary exemption), CFC and exit tax. Trigger on: IRES, imposta sul reddito delle società, Italian corporate tax, Redditi SC, acconto IRES, PEX Italy, consolidato fiscale, perdite pregresse, ROL. Out of scope: IRAP (it-irap), individuals (it-income-tax), transfer pricing (italy-transfer-pricing), VAT (italy-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Italian corporate income tax (IRES): tax year 2026

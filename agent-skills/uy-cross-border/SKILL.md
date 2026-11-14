@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uy-cross-border"
   jurisdiction: "UY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Uruguay: non-resident income tax (IRNR) and treaties, 2026 v0.1
+# Uruguay: non-resident income tax (IRNR) and treaties, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -213,8 +213,8 @@ expected:
 
 Not yet confirmed: the IRNR rate on foreign-currency interest over one and up to three years (blank in the consolidated text); the DGI list of low or no-tax jurisdictions; the monthly due dates for paying IRNR withholdings and the lines of form 1246; the form and certificate DGI requires to apply a treaty rate at source outside fictitious dividends; the rules of the Programa de Fomento para la Atracción de Personas con Talento Calificado; whether any treaty entered into force after the DGI table of April 2024; the rates in the other 24 treaties.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

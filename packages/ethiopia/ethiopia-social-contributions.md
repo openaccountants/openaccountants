@@ -1,16 +1,17 @@
 ---
 name: ethiopia-social-contributions
 description: Use this skill whenever asked about Ethiopia payroll taxes, social security / pension contributions, or employment income tax (PAYE) for employees or employers. Trigger on phrases like "Ethiopia pension contribution", "POESSA", "how much PAYE in Ethiopia", "Ethiopian payroll tax", "employee pension deduction", "employer social security Ethiopia", "11% pension", "7% pension", "Ethiopia income tax bracket", "Birr salary tax", "net pay Ethiopia", "Proclamation 1395/2025", or any question about Ethiopian payroll/PAYE/pension obligations. Also trigger when classifying bank statement transactions that relate to POESSA pension remittances, Ministry of Revenue PAYE remittances, or salary debits from Commercial Bank of Ethiopia (CBE), Awash Bank, Dashen Bank, or other Ethiopian banks. This skill covers the post-July-2025 PAYE brackets, the 7%/11% pension split, contribution base, remittance deadlines, eligibility (citizens vs foreign nationals), bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any Ethiopian payroll, PAYE, or pension work.
-version: 0.2
+version: 0.3
 jurisdiction: ET
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Ethiopia Social Security

@@ -2,17 +2,18 @@
 name: sj-svalbard-company-income-tax
 description: >
   Compute ordinary Svalbard company income tax for tax year 2026 for locally managed companies and nonresident businesses operating on Svalbard. Covers the office and management residence test, continuous business duration, local property, taxable profit reconciliation, deductions, depreciation, losses and mainland allocation. Calculates the sixteen-percent ordinary rate and the higher profit slice using qualifying payroll and physical capital. Includes return and payment dates, penalties, distribution and related-party cross-references, and two reproducible examples. Use for Svalbard corporation tax, company profit, nonresident business and split mainland projects. Svalbard only; Jan Mayen and specialist regimes are outside scope. This source-cited draft awaits licensed professional review.
-version: 0.3
+version: 0.4
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Svalbard: company income tax in 2026 v0.3
+# Svalbard: company income tax in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
@@ -28,7 +29,7 @@ A nonresident company is liable on Svalbard business income if its activity last
 |---|---:|---|
 | Ordinary company profit | 16% | [2026 Svalbard decision §3(c)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Higher profit slice | 22% | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Higher slice floor | NOK 15,000,000 | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
+| Higher slice floor | NOK 15,000,000 ("15 mill. kroner", in words on the page) | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Substance threshold | 10 × qualifying payroll + 20% × qualifying physical-asset tax value | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Capitalisation test | Cost at least NOK 30,000 and expected life at least 3 years | [Income Tax Act §14-40](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |
 | Ordinary machine/furniture balance depreciation | Up to 20% | [Income Tax Act §14-43(1)(d)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |

@@ -1,13 +1,14 @@
 ---
 name: at-cross-border
 description: "Use this skill for Austrian tax when a person or company crosses the Austrian border. Covers unlimited and limited tax liability for individuals (home, habitual abode, the six-month rule, the 70-day second-home rule) and for companies (seat or place of management); the inbound Zuzugsbegünstigung for researchers (30% allowance for five years); the exit tax on leaving (Wegzugsbesteuerung) with deferral or instalments for EU/EEA moves; non-residents with Austrian employment, rental or capital income and the add-on of EUR 11,077; withholding on outbound payments (KESt 27.5% and 25%, the § 99 EStG withholding of 20%); treaty relief and the refund route; tax year 2026 (calendar year). Trigger phrases: moving to Austria, leaving Austria, non-resident Austria, expat, exit tax, Wegzug, Zuzug, digital nomad, beschränkte Steuerpflicht. Out of scope: the full tariff and E 1 return (at-income-tax), corporate tax (at-corporate-income-tax), SVS contributions (at-svs-contributions), VAT (at-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: cross-border
 ---
 
@@ -195,36 +196,39 @@ expected:
 
 ## Sources
 
-All read on 2026-10-22.
+Every page below was opened again on 14 November 2026 and the figures in the rates table were found on it that day (RIS consolidated texts, tagesaktuelle Fassung).
 
-- EStG 1988 § 1 (tax liability; EU/EEA option): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=1
-- EStG § 6 (Z 6, exit for business assets, instalments): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=6
-- EStG § 27 (para. 6 no. 1, exit tax on capital assets): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27
-- EStG § 27a (27.5% and 25% special rates): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a
-- EStG § 33 (2026 tariff, indexation): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33
-- EStG § 98 (income of non-residents): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=98
-- EStG § 99 (withholding cases): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=99
-- EStG § 100 (withholding rates, liability): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=100
-- EStG § 101 (paying over § 99 tax): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=101
-- EStG § 102 (assessment of non-residents, EUR 11,077 add-on): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=102
-- EStG § 103 (Zuzugsbegünstigung): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=103
-- Zuzugsbegünstigungsverordnung 2016: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009641
-- Zweitwohnsitzverordnung (BGBl. II Nr. 528/2003): https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003027
-- KStG 1988 § 1 (corporate residence): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=1
-- KStG § 7 (income determined under the EStG): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=7
-- BAO § 26 (home, habitual abode, six months): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=26
-- BAO § 134 (return deadlines): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=134
-- BAO § 135 (late filing surcharge): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=135
-- BAO § 205 (Anspruchszinsen): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=205
-- BAO § 217 (late payment surcharges): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=217
-- BAO § 240 (refund of tax withheld, five-year limit): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=240
-- MeldeG §§ 3 and 4 (registration and deregistration): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005799&Paragraf=4
-- Austria-UK double tax treaty (BGBl. III Nr. 32/2019), Art. 13: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20010606
-- BMF, refund of Austrian withholding tax: https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/rueckerstattung/rueckerstattung-oesterreichischer-abzugsteuer.html
-- BMF, double tax treaties, general: https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/doppelbesteuerungsabkommen/dba-allgemeines.html
-- BMF, press release on the Austria-Switzerland protocol, 30 July 2026: https://www.bmf.gv.at/presse/pressemeldungen/2026/juli-2026/dba-schweiz.html
-- BMF, E 7 guide for 2025 (non-resident return): https://formulare.bmf.gv.at/service/formulare/inter-Steuern/pdfd/2025/E8.pdf
-- BMF-AV Nr. 171/2026, interest rates from 16 September 2026 (findok): https://findok.bmf.gv.at/findok/iwg/84/84659/84659.1.pdf
-- USP, social insurance when posting to EU/EEA states: https://www.usp.gv.at/themen/mitarbeiter-und-gesundheit/einstellung-mitarbeiter-und-arten-der-beschaeftigung/weitere-informationen-einstellen-von-personal/arbeiten-im-ausland/entsendung-in-eu-ewr-staaten-aus-oesterreich/sozialversicherung--entsendung-.html
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| EStG 1988 § 1 | Read for tax liability; EU/EEA option | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=1 | 2026-11-14 |
+| EStG § 6 | Read for Z 6, exit for business assets, instalments | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=6 | 2026-11-14 |
+| EStG § 27 | Read for para. 6 no. 1, exit tax on capital assets | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27 | 2026-11-14 |
+| EStG § 27a | Read for 27.5% and 25% special rates | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a | 2026-11-14 |
+| EStG § 33 | Read for 2026 tariff, indexation | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 | 2026-11-14 |
+| EStG § 98 | Read for income of non-residents | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=98 | 2026-11-14 |
+| EStG § 99 | Read for withholding cases | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=99 | 2026-11-14 |
+| EStG § 100 | Read for withholding rates, liability | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=100 | 2026-11-14 |
+| EStG § 101 | Read for paying over § 99 tax | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=101 | 2026-11-14 |
+| EStG § 102 | Read for assessment of non-residents, EUR 11,077 add-on | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=102 | 2026-11-14 |
+| EStG § 103 | Read for Zuzugsbegünstigung | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=103 | 2026-11-14 |
+| Zuzugsbegünstigungsverordnung 2016 | Read for § 2 (scientific activity, public interest, qualification) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009641 | 2026-11-14 |
+| Zweitwohnsitzverordnung, BGBl. II Nr. 528/2003 | Read for § 1 (five calendar years abroad, more than 70 days of use) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003027 | 2026-11-14 |
+| KStG 1988 § 1 | Read for corporate residence | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=1 | 2026-11-14 |
+| KStG § 7 | Read for income determined under the EStG | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=7 | 2026-11-14 |
+| BAO § 26 | Read for home, habitual abode, six months | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=26 | 2026-11-14 |
+| BAO § 134 | Read for return deadlines | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=134 | 2026-11-14 |
+| BAO § 135 | Read for late filing surcharge | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=135 | 2026-11-14 |
+| BAO § 205 | Read for Anspruchszinsen | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=205 | 2026-11-14 |
+| BAO § 217 | Read for late payment surcharges | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=217 | 2026-11-14 |
+| BAO § 240 | Read for refund of tax withheld, five-year limit | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=240 | 2026-11-14 |
+| MeldeG §§ 3 and 4 | Read for registration and deregistration | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005799&Paragraf=4 | 2026-11-14 |
+| Austria-UK double tax treaty, BGBl. III Nr. 32/2019 | Read for Art. 13 (capital gains) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20010606 | 2026-11-14 |
+| BMF, refund of Austrian withholding tax | Read for the refund procedure and the 15% treaty example (12.5 points refunded) | https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/rueckerstattung/rueckerstattung-oesterreichischer-abzugsteuer.html | 2026-11-14 |
+| BMF, double tax treaties, general | Read for how treaties apply and the treaty list | https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/doppelbesteuerungsabkommen/dba-allgemeines.html | 2026-11-14 |
+| BMF, press release on the Austria-Switzerland protocol, 30 July 2026 | Read for the signing and content of the protocol | https://www.bmf.gv.at/presse/pressemeldungen/2026/juli-2026/dba-schweiz.html | 2026-11-14 |
+| BMF, E 7 guide for 2025 | Read for non-resident return | https://formulare.bmf.gv.at/service/formulare/inter-Steuern/pdfd/2025/E8.pdf | 2026-11-14 |
+| BMF-AV Nr. 171/2026, interest rates from 16 September 2026 | Read for findok | https://findok.bmf.gv.at/findok/iwg/84/84659/84659.1.pdf | 2026-11-14 |
+| USP, social insurance when posting to EU/EEA states | Read for the posting rules (A1, 24 months) | https://www.usp.gv.at/themen/mitarbeiter-und-gesundheit/einstellung-mitarbeiter-und-arten-der-beschaeftigung/weitere-informationen-einstellen-von-personal/arbeiten-im-ausland/entsendung-in-eu-ewr-staaten-aus-oesterreich/sozialversicherung--entsendung-.html | 2026-11-14 |
 
-Not yet confirmed: the text of Regulation (EC) No 883/2004 itself (EUR-Lex blocked the fetch; the posting rules above come from the USP page); the E 7 guide for 2026 (only the 2025 guide was published at the fetch); the current KESt rate that § 93(1a) EStG lets a payer withhold for a corporate recipient (see `at-corporate-income-tax`); a statutory split-year rule (none found); the entry into force of the 2026 Austria-Switzerland protocol; any named form for the Zuzugsbegünstigung application.
+Not yet confirmed: the text of Regulation (EC) No 883/2004 itself (EUR-Lex blocked the fetch; the posting rules above come from the USP page); the E 7 guide for 2026 (not yet published on 14 Nov 2026; only the 2025 guide exists); the current KESt rate that § 93(1a) EStG lets a payer withhold for a corporate recipient (see `at-corporate-income-tax`); a statutory split-year rule (none found); the entry into force of the 2026 Austria-Switzerland protocol; any named form for the Zuzugsbegünstigung application.
+

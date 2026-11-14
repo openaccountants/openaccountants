@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/slovenia-social-contributions"
   jurisdiction: "SI"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Slovenia social security contributions (2026)
@@ -29,27 +29,27 @@ Contribution period: the calendar month. Authority: the Financial Administration
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Pension and disability, insured person / employer | 15.50% / 8.85% | 2026 | ZPSV art. 8, [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO984) |
-| Health, insured person / employer | 6.36% / 6.56% | 2026 | ZPSV art. 11(1) |
-| Injury at work, employer (the self-employed pay it too) | 0.53% | 2026 | ZPSV art. 12(1) |
-| Parental care, insured person / employer | 0.10% / 0.10% | 2026 | ZPSV art. 13 |
-| Employment, insured person / employer | 0.14% / 0.06% | 2026 | ZPSV art. 14 |
-| Total, employee / employer | 22.10% / 16.10% | 2026 | ZPSV arts. 8, 11 to 14 |
-| Total paid by a self-employed person or owner-manager (both shares) | 38.20% of the base, plus long-term care and the OZP | 2026 | ZPSV arts. 8, 11 to 14; FURS SZ tables |
+| Health, insured person / employer | 6.36% / 6.56% | 2026 | ZPSV art. 11(1); https://pisrs.si/api/datoteke/integracije/356720143 |
+| Injury at work, employer (the self-employed pay it too) | 0.53% | 2026 | ZPSV art. 12(1); https://pisrs.si/api/datoteke/integracije/356720143 |
+| Parental care, insured person / employer | 0.10% / 0.10% | 2026 | ZPSV art. 13; https://pisrs.si/api/datoteke/integracije/356720143 |
+| Employment, insured person / employer | 0.14% / 0.06% | 2026 | ZPSV art. 14; https://pisrs.si/api/datoteke/integracije/356720143 |
+| Total, employee / employer | 22.10% / 16.10% (computed: sum of the ZPSV rates) | 2026 | ZPSV arts. 8, 11 to 14; https://pisrs.si/api/datoteke/integracije/356720143 |
+| Total paid by a self-employed person or owner-manager (both shares) | 38.20% (computed: both shares) of the base, plus long-term care and the OZP | 2026 | ZPSV arts. 8, 11 to 14; FURS SZ tables; https://pisrs.si/api/datoteke/integracije/356720143; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx |
 | Long-term care, employee / employer | 1% / 1% | from 1 July 2025 | ZDOsk-1 arts. 56(1) and 137, [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO8819) |
-| Long-term care, self-employed, owner-manager, farmer | 2% | from 1 July 2025 | ZDOsk-1 art. 56(2) |
+| Long-term care, self-employed, owner-manager, farmer | 2% | from 1 July 2025 | ZDOsk-1 art. 56(2); https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf |
 | Long-term care, pensioners | 1% of the net pension | from 1 July 2025 | ZDOsk-1 arts. 56(1) and (10); ZZZS table, [zzzs.si](https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf) |
 | Compulsory health contribution (OZP) | EUR 39.36 a month from 1 March 2026; EUR 37.17 before | 2026 | ZZVZZ art. 48; Uradni list RS 16/26 as cited by FURS, [fu.gov.si](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx) |
-| Average monthly gross wage, 2025 (used from the February 2026 contributions) | EUR 2,536.03 | 2026 | FURS SZ tables, [fu.gov.si](https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/) |
-| Average monthly gross wage, 2024 (used for January 2026) | EUR 2,394.92 | 2026 | FURS table SZ 1/2026 |
+| Average monthly gross wage, 2025 (used from the February 2026 contributions) | EUR 2,536.03 | 2026 | FURS SZ tables, [FURS SZ 10/2026](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx) |
+| Average monthly gross wage, 2024 (used for January 2026) | EUR 2,394.92 | 2026 | FURS table SZ 1/2026; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_01_2026.xlsx |
 | Minimum base, employees (60%) | EUR 1,521.62 | 2026 | ZPIZ-2 art. 144(4), [pisrs.si](https://pisrs.si/pregledPredpisa?id=ZAKO6280) |
-| Minimum base, self-employed and farmers (60%) | EUR 1,521.62 (January 2026: EUR 1,436.95) | 2026 | ZPIZ-2 art. 145(4); FURS SZ tables |
-| Minimum base, owner-managers (90%) | EUR 2,282.43 | 2026 | ZPIZ-2 art. 145(4); FURS table LZP 10/2026 |
-| Maximum base, self-employed and owner-managers (3.5 times) | EUR 8,876.11 (January 2026: EUR 8,382.22) | 2026 | ZPIZ-2 art. 145(5); FURS SZ tables |
-| Maximum base, employees | none | 2026 | ZPIZ-2 art. 144(1) |
-| Monthly total for an s.p. on the minimum base / maximum base | EUR 651.04 / 3,607.57 (from March 2026) | 2026 | FURS table SZ 10/2026 |
-| Monthly total for an owner-manager on the minimum base | EUR 956.91 (from March 2026) | 2026 | FURS table LZP 10/2026 |
-| New s.p. relief | 50% of the pension contributions in the first 12 months, 30% in the next 12; the state pays the relieved part | 2026 | ZPIZ-2 art. 145(14) and (15) |
-| Late payment interest | 10.15% a year from 1 January 2026; 10.40% from 1 July 2026 | 2026 | ZDavP-2 art. 96; ZPOMZO-1 art. 2; [Uradni list RS 2/2026](https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011); [Uradni list RS 1124/2026](https://pisrs.si/api/uradni-list/objava/u20261124.pdf) |
+| Minimum base, self-employed and farmers (60%) | EUR 1,521.62 (January 2026: EUR 1,436.95) | 2026 | ZPIZ-2 art. 145(4); FURS SZ tables; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_01_2026.xlsx |
+| Minimum base, owner-managers (90%) | EUR 2,282.43 | 2026 | ZPIZ-2 art. 145(4); FURS table LZP 10/2026; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Druzbeniki-lastniki_zasebnih_podjetij/LZP_10_2026.xlsx |
+| Maximum base, self-employed and owner-managers (3.5 times) | EUR 8,876.11 (January 2026: EUR 8,382.22) | 2026 | ZPIZ-2 art. 145(5); FURS SZ tables; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_01_2026.xlsx |
+| Maximum base, employees | none | 2026 | ZPIZ-2 art. 144(1); https://pisrs.si/api/datoteke/integracije/404402718 |
+| Monthly total for an s.p. on the minimum base / maximum base | EUR 651.04 / 3,607.57 (from March 2026) | 2026 | FURS table SZ 10/2026; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx |
+| Monthly total for an owner-manager on the minimum base | EUR 956.91 (from March 2026) | 2026 | FURS table LZP 10/2026; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Druzbeniki-lastniki_zasebnih_podjetij/LZP_10_2026.xlsx |
+| New s.p. relief | 50% of the pension contributions in the first 12 months, 30% in the next 12; the state pays the relieved part | 2026 | ZPIZ-2 art. 145(14) and (15); https://pisrs.si/api/datoteke/integracije/356720143 |
+| Late payment interest | 10.15% a year from 1 January 2026 (computed: ECB main refinancing rate 2.15% plus 8 points, ZPOMZO-1 art. 2); 10.40% from 1 July 2026 | 2026 | ZDavP-2 art. 96; ZPOMZO-1 art. 2; [Uradni list RS 2/2026](https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011); [Uradni list RS 1124/2026](https://pisrs.si/api/uradni-list/objava/u20261124.pdf) |
 
 ## The taxable base
 
@@ -187,11 +187,14 @@ expected:
 | FURS, self-employed table October 2026 (SZ 10/2026); also January, February and March 2026 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_10_2026.xlsx | 2026-10-24 |
 | FURS, owner-manager table October 2026 (LZP 10/2026) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Druzbeniki-lastniki_zasebnih_podjetij/LZP_10_2026.xlsx | 2026-10-24 |
 | ZZZS, long-term care contribution table for insured persons supervised by FURS | https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf | 2026-10-24 |
+| Read for Health, insured person / employer, Injury at work, Parental care, Employment, Total, employee / employer, Total paid by a self-employed person or owner-manager (both shares), New s.p. relief: ZPSV (ZAKO984) consolidated text, PISRS file served by pisrs.si/api | https://pisrs.si/api/datoteke/integracije/356720143 | 2026-11-14 |
+| Read for Average monthly gross wage, 2024 (used for January 2026), Minimum base, self-employed and farmers (60%), Maximum base, self-employed and owner-managers (3.5 times): FURS file SZ_01_2026.xlsx | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Prispevki_za_socialno_varnost/Samozaposleni/SZ_01_2026.xlsx | 2026-11-14 |
+| Read for Maximum base, employees: ZPIZ-2 (ZAKO6280) consolidated text, PISRS file served by pisrs.si/api | https://pisrs.si/api/datoteke/integracije/404402718 | 2026-11-14 |
 
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); how FURS computes the new s.p. relief in practice (ZPIZ-2 art. 145(14) applies it to contributions on the art. 145(2) base; no FURS worked figure was read); the rules for part-time self-employment alongside a job (dopolnilna dejavnost) and for farmers; the parental care and employment acts (ZSDP-1, ZUTD) were not read for their own base rules, so this skill relies on the ZPSV rates and the FURS tables.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovenia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovenia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `slovenia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/slovenia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,10 +1,11 @@
 ---
 name: albania-income-tax
 description: "Albanian personal income tax (tatimi mbi të ardhurat personale) for tax year 2026 under Law No. 29/2023 as amended to Law No. 81/2025. Covers employees (13% and 23% scale, monthly payroll, the ALL 600,000 / 420,000 / 360,000 personal deductions), the self-employed and individual traders (15% and 23% scale, the 0% rate to 2029 for gross income up to ALL 14 million, presumed expenses, instalments), the disguised-employment rule in art. 12(1)(ç) and its two exceptions, investment income (dividends 8%; interest, rent and gains 15%), gifts and inheritances, the 31 March DVAP return, and penalties and interest. Trigger on 'Albanian income tax', 'DVAP', 'TAP Albania', 'self-employed Albania 0%', 'disguised employment Albania', 'tax on rent Albania'. Out of scope: companies (al-corporate-tax), VAT (albania-vat), payroll mechanics (albania-payroll), contributions (albania-social-contributions), treaties (al-cross-border), planning (albania-tax-optimization)."
-version: 0.3
+version: 0.4
+type: computation
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -45,26 +46,26 @@ From the Law 81/2025 amendment, foreign artists are not resident for 24 months f
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Employment income, annual taxable base ALL 0 to 2,040,000 | 13% | 2026 | Law 29/2023 art. 24(1), [tatime.gov.al consolidated law](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
-| Employment income, taxable base above ALL 2,040,000 | 23% | 2026 | Law 29/2023 art. 24(1) |
+| Employment income, taxable base above ALL 2,040,000 | 23% | 2026 | [Law 29/2023 art. 24(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 | Same bands in monthly payroll | 13% up to ALL 170,000 of monthly base, 23% above | 2026 | [Instruction 26/2023 para. 24.1](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
-| Business net income (taxable profit) of traders and self-employed, ALL 0 to 14,000,000 | 15% | 2026 | Law 29/2023 art. 24(2) |
-| Business taxable profit above ALL 14,000,000 | 23% | 2026 | Law 29/2023 art. 24(2) |
-| Traders and self-employed with gross income up to ALL 14,000,000 a year | 0% on the whole business profit, until 31 Dec 2029 (all or nothing) | 2026 | Law 29/2023 art. 69(1)(dh) |
-| Personal deduction, annual income up to ALL 600,000 | ALL 600,000 a year (ALL 50,000 a month for monthly income up to ALL 50,000) | 2026 | Law 29/2023 art. 22(1)(a) |
-| Personal deduction, annual income ALL 600,001 to 720,000 | ALL 420,000 a year (ALL 35,000 a month for monthly income ALL 50,001 to 60,000) | 2026 | Law 29/2023 art. 22(1)(b) |
-| Personal deduction, annual income above ALL 720,000 | ALL 360,000 a year (ALL 30,000 a month for monthly income above ALL 60,000) | 2026 | Law 29/2023 art. 22(1)(c) |
-| Each dependent child under 18 | ALL 48,000 a year, claimed on the annual return by the higher earner | 2026 | Law 29/2023 arts. 22(1)(ç), 23(1) |
-| Children's education costs | Up to ALL 100,000 a year, only if annual taxable employment and/or business income is under ALL 1,200,000 | 2026 | Law 29/2023 art. 22(2) |
-| Private pension contributions | Deductible up to the national minimum wage each month | 2026 | Law 29/2023 art. 20(1), (4) |
-| Dividends | 8% | 2026 | Law 29/2023 art. 24(3)(a) |
-| Interest, royalties, rent, capital gains on securities and real estate, crypto, other investment income | 15%, no costs deducted unless the law says so | 2026 | Law 29/2023 art. 24(3)(b), (4) |
-| Inheritances, gifts, gambling winnings | 15%, no costs deducted | 2026 | Law 29/2023 art. 60(9) |
-| Gift and inheritance exemption (first and second degree heirs and siblings are fully exempt) | Others: ALL 5,000,000 of immovable property and ALL 1,000,000 of movable property per taxpayer | 2026 | Law 29/2023 art. 60(7) |
-| Presumed-expense regime | Annual turnover up to ALL 10,000,000; 30% of income for the self-employed, 50% services and crafts, 60% production and bars/restaurants, 70% retail and individual transport, 90% wholesale | 2026 | Law 29/2023 art. 14(1) |
-| Payment to a person who has not signed a status declaration and is not in employment | 15% withheld | 2026 | Law 29/2023 art. 65(1)(b) |
-| Withholding on dividends | 8%, final | 2026 | Law 29/2023 arts. 58(1), 59 |
-| Withholding on interest, royalties, gambling, and rent paid to an individual | 15%, final | 2026 | Law 29/2023 arts. 58(1), 59 |
-| Annual return required | Gross income above ALL 1,200,000 from all sources; or more than one employer; or more than ALL 50,000 of other income not taxed by final withholding | 2026 | Law 29/2023 art. 67(1); Instruction 26 para. 67(a) |
+| Business net income (taxable profit) of traders and self-employed, ALL 0 to 14,000,000 | 15% | 2026 | [Law 29/2023 art. 24(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Business taxable profit above ALL 14,000,000 | 23% | 2026 | [Law 29/2023 art. 24(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Traders and self-employed with gross income up to ALL 14,000,000 a year | 0% on the whole business profit, until 31 Dec 2029 (all or nothing) | 2026 | [Law 29/2023 art. 69(1)(dh)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Personal deduction, annual income up to ALL 600,000 | ALL 600,000 a year (ALL 50,000 a month for monthly income up to ALL 50,000) | 2026 | [Law 29/2023 art. 22(1)(a)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Personal deduction, annual income ALL 600,001 to 720,000 | ALL 420,000 a year (ALL 35,000 a month for monthly income ALL 50,001 to 60,000) | 2026 | [Law 29/2023 art. 22(1)(b)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Personal deduction, annual income above ALL 720,000 | ALL 360,000 a year (ALL 30,000 a month for monthly income above ALL 60,000) | 2026 | [Law 29/2023 art. 22(1)(c)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Each dependent child under 18 | ALL 48,000 a year, claimed on the annual return by the higher earner | 2026 | [Law 29/2023 arts. 22(1)(ç), 23(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Children's education costs | Up to ALL 100,000 a year, only if annual taxable employment and/or business income is under ALL 1,200,000 | 2026 | [Law 29/2023 art. 22(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Private pension contributions | Deductible up to the national minimum wage each month | 2026 | [Law 29/2023 art. 20(1), (4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Dividends | 8% | 2026 | [Law 29/2023 art. 24(3)(a)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Interest, royalties, rent, capital gains on securities and real estate, crypto, other investment income | 15%, no costs deducted unless the law says so | 2026 | [Law 29/2023 art. 24(3)(b), (4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Inheritances, gifts, gambling winnings | 15%, no costs deducted | 2026 | [Law 29/2023 art. 60(9)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Gift and inheritance exemption (first and second degree heirs and siblings are fully exempt) | Others: ALL 5,000,000 of immovable property and ALL 1,000,000 of movable property per taxpayer | 2026 | [Law 29/2023 art. 60(7)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Presumed-expense regime | Annual turnover up to ALL 10,000,000; 30% of income for the self-employed, 50% services and crafts, 60% production and bars/restaurants, 70% retail and individual transport, 90% wholesale | 2026 | [Law 29/2023 art. 14(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Payment to a person who has not signed a status declaration and is not in employment | 15% withheld | 2026 | [Law 29/2023 art. 65(1)(b)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on dividends | 8%, final | 2026 | [Law 29/2023 arts. 58(1), 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on interest, royalties, gambling, and rent paid to an individual | 15%, final | 2026 | [Law 29/2023 arts. 58(1), 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Annual return required | Gross income above ALL 1,200,000 from all sources; or more than one employer; or more than ALL 50,000 of other income not taxed by final withholding | 2026 | [Law 29/2023 art. 67(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); [Instruction 26 para. 67(a)](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
 | Late-payment interest rate (art. 76) | 8.1% from 22.07.2025; 7.8% from 11.04.2026, confirmed again from 08.10.2026 | 2026 | [tatime.gov.al: Normat e interesit](https://tatime.gov.al/institucioni/publikime/normat-e-interesit/) |
 
 **No 2026 change to the scales.** The consolidated law read today (amended up to Law 81/2025 of 11.12.2025) does not amend arts. 22 or 24. The Law 81/2025 changes that touch individuals are the self-declaration exception in art. 12(1)(ç), the foreign-artist rule in art. 8(dh), sponsorship received (art. 11(g)) and the crypto-asset definition (art. 3(24)).
@@ -241,16 +242,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy), arts. 2 to 26, 56 to 69 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
-| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat", consolidated to Instruction No. 9 of 12.3.2026, paras. 12 to 26, 61 to 67 and payroll form notes | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
-| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 112 to 118 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
-| General Directorate of Taxes, interest rates for late-payment interest (art. 76(3)) | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-10-23 |
-| General Directorate of Taxes, DVAP filing obligation and deadline | https://tatime.gov.al/individ/?artikull=deklarimi | 2026-10-23 |
-| General Directorate of Taxes, residents | https://tatime.gov.al/individ/?artikull=rezident | 2026-10-23 |
-| General Directorate of Taxes, non-residents | https://tatime.gov.al/individ/?artikull=jo-rezident | 2026-10-23 |
-| General Directorate of Taxes, payment of tax | https://tatime.gov.al/individ/?artikull=pagesa-e-tatimit | 2026-10-23 |
-| General Directorate of Taxes, filing form and e-Filing | https://tatime.gov.al/individ/?artikull=formulari-i-deklarimit | 2026-10-23 |
-| General Directorate of Taxes, self-employed individual | https://tatime.gov.al/person-fizik/?artikull=individi-i-vetepunesuar | 2026-10-23 |
-| General Directorate of Taxes, tax returns of natural persons in business | https://tatime.gov.al/person-fizik/?artikull=deklaratat-tatimore | 2026-10-23 |
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy), arts. 2 to 26, 56 to 69 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-11-14 |
+| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat": read for consolidated to Instruction No. 9 of 12.3.2026, paras. 12 to 26, 61 to 67 and payroll form notes | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-11-14 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 112 to 118 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-11-14 |
+| General Directorate of Taxes, interest rates for late-payment interest (art. 76(3)) | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-11-14 |
+| General Directorate of Taxes, DVAP page: read for the annual return filing obligation and deadline | https://tatime.gov.al/individ/?artikull=deklarimi | 2026-11-14 |
+| General Directorate of Taxes: read for residents | https://tatime.gov.al/individ/?artikull=rezident | 2026-11-14 |
+| General Directorate of Taxes: read for non-residents | https://tatime.gov.al/individ/?artikull=jo-rezident | 2026-11-14 |
+| General Directorate of Taxes: read for payment of tax | https://tatime.gov.al/individ/?artikull=pagesa-e-tatimit | 2026-11-14 |
+| General Directorate of Taxes: read for filing form and e-Filing | https://tatime.gov.al/individ/?artikull=formulari-i-deklarimit | 2026-11-14 |
+| General Directorate of Taxes: read for self-employed individual | https://tatime.gov.al/person-fizik/?artikull=individi-i-vetepunesuar | 2026-11-14 |
+| General Directorate of Taxes: read for tax returns of natural persons in business | https://tatime.gov.al/person-fizik/?artikull=deklaratat-tatimore | 2026-11-14 |
 
 Not yet confirmed: the payment date for the balance on DVAP and on the annual business return (Law 29/2023 art. 61 sets only the filing date, and tatime.gov.al refers to "official instructions"); whether a self-employed person's or trader's late business return is fined ALL 3,000 (art. 113(c), individuals) or ALL 5,000 (art. 113(b)); how "gross income" is measured for the ALL 14,000,000 test in art. 69(1)(dh); the tatime.gov.al self-employed page says "three or fewer clients" for the 90% test while art. 12(1)(ç) says "fewer than 3" (this skill follows the law); how employment income from a foreign employer with no Albanian payroll agent is taxed during the year; the Council of Ministers decision classifying activities for the art. 14 presumed-expense rates; the 2026 national minimum wage that caps the private pension deduction under art. 20(4) (see `albania-social-contributions`).

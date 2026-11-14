@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-national-insurance"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # UK National Insurance contributions (2026/27)
@@ -32,7 +32,7 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027. Use this ski
 | Primary threshold (PT) | GBP 242 a week (GBP 1,048 a month, GBP 12,570 a year) | 2026/27 | SSCR 2001 reg.10(c), [link](https://www.legislation.gov.uk/uksi/2001/1004/regulation/10); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Secondary threshold (ST) | GBP 96 a week (GBP 417 a month, GBP 5,000 a year), unchanged since 6 April 2025 | 2026/27 | SSCR 2001 reg.10(d), [link](https://www.legislation.gov.uk/uksi/2001/1004/regulation/10); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Upper earnings limit (UEL) | GBP 967 a week (GBP 4,189 a month, GBP 50,270 a year) | 2026/27 | SSCR 2001 reg.10(b), [link](https://www.legislation.gov.uk/uksi/2001/1004/regulation/10); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
-| Upper secondary threshold, under 21 and apprentice under 25 | GBP 967 a week (GBP 50,270 a year) | 2026/27 | SSCR 2001 reg.10(e) and (f), [link](https://www.legislation.gov.uk/uksi/2001/1004/regulation/10) |
+| Upper secondary threshold, under 21 and apprentice under 25 | GBP 967 a week (GBP 50,270 a year) | 2026/27 | SSCR 2001 reg.10(e) and (f), [link](https://www.legislation.gov.uk/uksi/2001/1004/regulation/10); annual figure, [HMRC rates for employers 2026 to 2027](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Veterans upper secondary threshold | GBP 967 a week (GBP 4,189 a month, GBP 50,270 a year) | 2026/27 | National Insurance Contributions Act 2022 (NICA 2022) s.8(2), [link](https://www.legislation.gov.uk/ukpga/2022/9/section/8) |
 | Freeport and Investment Zone upper secondary threshold | GBP 481 a week (GBP 2,083 a month, GBP 25,000 a year) | 2026/27 | NICA 2022 s.8(1), [link](https://www.legislation.gov.uk/ukpga/2022/9/section/8); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Employee Class 1, main rate (PT to UEL) | 8% | 2026/27 | SSCBA s.8(2)(a), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/8) |
@@ -46,7 +46,7 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027. Use this ski
 | Employment Allowance, per employer per tax year | GBP 10,500, or the employer's secondary Class 1 liability if less | 2026/27 | National Insurance Contributions Act 2014 (NICA 2014) s.1(2), [link](https://www.legislation.gov.uk/ukpga/2014/7/section/1); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Class 1A on benefits in kind | 15% (equal to the secondary percentage) | 2026/27 | SSCBA s.10(5), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/10); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
 | Class 1A on termination awards over GBP 30,000 and sporting testimonials over GBP 100,000 | 15% on the excess | 2026/27 | SSCBA s.10(1A) and (4A), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/10); [HMRC employer rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
-| Class 1B on a PAYE Settlement Agreement | 15% (equal to the secondary percentage) | 2026/27 | SSCBA s.10A(6), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/10A) |
+| Class 1B on a PAYE Settlement Agreement | 15% (equal to the secondary percentage) | 2026/27 | SSCBA s.10A(6), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/10A); secondary percentage in SSCBA s.9(2), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/9) |
 | Small profits threshold (Class 2) | GBP 7,105 a year | 2026/27 | SSCBA s.11(4)(b), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/11) |
 | Voluntary Class 2 | GBP 3.65 a week | 2026/27 | SSCBA s.11(6), [link](https://www.legislation.gov.uk/ukpga/1992/4/section/11) |
 | Special Class 2: share fishermen / volunteer development workers | GBP 4.30 / GBP 6.45 a week | 2026/27 | [HMRC rates and allowances NIC](https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions) |
@@ -194,46 +194,46 @@ expected:
 | SSCBA 1992 s.11 (Class 2, small profits threshold, voluntary rate) | https://www.legislation.gov.uk/ukpga/1992/4/section/11 | 2026-10-24 |
 | SSCBA 1992 s.13 (Class 3) | https://www.legislation.gov.uk/ukpga/1992/4/section/13 | 2026-10-24 |
 | SSCBA 1992 s.15 (Class 4) | https://www.legislation.gov.uk/ukpga/1992/4/section/15 | 2026-10-24 |
-| Social Security (Contributions) Regulations 2001 reg.8 (directors' earnings periods) | https://www.legislation.gov.uk/uksi/2001/1004/regulation/8 | 2026-10-24 |
-| Social Security (Contributions) Regulations 2001 reg.10 (limits and thresholds) | https://www.legislation.gov.uk/uksi/2001/1004/regulation/10 | 2026-10-24 |
-| Social Security (Contributions) Regulations 2001 reg.91 (Class 4 exceptions) | https://www.legislation.gov.uk/uksi/2001/1004/regulation/91 | 2026-10-24 |
-| Social Security (Contributions) (Rates, Limits and Thresholds Amendments, National Insurance Funds Payments and Extension of Veteran's Relief) Regulations 2026 (SI 2026/231) regs.3 to 6 | https://www.legislation.gov.uk/uksi/2026/231/made | 2026-10-24 |
+| Social Security (Contributions) Regulations 2001 reg.8 (directors' earnings periods). Read for directors' annual earnings periods. | https://www.legislation.gov.uk/uksi/2001/1004/regulation/8 | 2026-10-24 |
+| Social Security (Contributions) Regulations 2001 reg.10 (limits and thresholds). Read for the limits and thresholds. | https://www.legislation.gov.uk/uksi/2001/1004/regulation/10 | 2026-10-24 |
+| Social Security (Contributions) Regulations 2001 reg.91 (Class 4 exceptions). Read for the Class 4 exceptions. | https://www.legislation.gov.uk/uksi/2001/1004/regulation/91 | 2026-10-24 |
+| Social Security (Contributions) (Rates, Limits and Thresholds Amendments, National Insurance Funds Payments and Extension of Veteran's Relief) Regulations 2026 (SI 2026/231) regs.3 to 6. Read for the 2026-27 rates, limits and thresholds. | https://www.legislation.gov.uk/uksi/2026/231/made | 2026-10-24 |
 | National Insurance Contributions Act 2022 s.1 (Freeport and Investment Zone relief) | https://www.legislation.gov.uk/ukpga/2022/9/section/1 | 2026-10-24 |
 | National Insurance Contributions Act 2022 s.6 and s.7 (veterans relief and conditions) | https://www.legislation.gov.uk/ukpga/2022/9/section/6 | 2026-10-24 |
 | National Insurance Contributions Act 2022 s.8 (upper secondary thresholds for special tax sites and veterans) | https://www.legislation.gov.uk/ukpga/2022/9/section/8 | 2026-10-24 |
 | National Insurance Contributions Act 2014 s.1 (Employment Allowance amount) | https://www.legislation.gov.uk/ukpga/2014/7/section/1 | 2026-10-24 |
 | National Insurance Contributions Act 2014 s.2 (excluded liabilities and excluded companies) | https://www.legislation.gov.uk/ukpga/2014/7/section/2 | 2026-10-24 |
 | Income Tax (Trading and Other Income) Act 2005 s.53 (NIC not deductible) | https://www.legislation.gov.uk/ukpga/2005/5/section/53 | 2026-10-24 |
-| HMRC NIM12001 (directors: introduction) | https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim12001 | 2026-10-24 |
-| HMRC NIM01297 (upper secondary threshold, under 21) | https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim01297 | 2026-10-24 |
-| HMRC, Rates and thresholds for employers 2026 to 2027 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-10-24 |
-| HMRC, Rates and allowances: National Insurance contributions | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | 2026-10-24 |
-| GOV.UK, Self-employed National Insurance rates | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-24 |
-| GOV.UK, Voluntary National Insurance: rates | https://www.gov.uk/voluntary-national-insurance-contributions/rates | 2026-10-24 |
-| GOV.UK, Voluntary National Insurance: who can pay | https://www.gov.uk/voluntary-national-insurance-contributions | 2026-10-24 |
-| GOV.UK, Voluntary National Insurance: if you live or work abroad | https://www.gov.uk/voluntary-national-insurance-contributions/if-you-live-or-work-abroad | 2026-10-24 |
-| GOV.UK, Defer National Insurance | https://www.gov.uk/defer-national-insurance | 2026-10-24 |
-| GOV.UK, National Insurance credits | https://www.gov.uk/national-insurance-credits | 2026-10-24 |
-| GOV.UK, The new State Pension | https://www.gov.uk/new-state-pension | 2026-10-24 |
-| GOV.UK, Voluntary National Insurance: deadlines | https://www.gov.uk/voluntary-national-insurance-contributions/deadlines | 2026-10-24 |
-| GOV.UK, NI category letters | https://www.gov.uk/national-insurance-rates-letters/category-letters | 2026-10-24 |
-| GOV.UK, Employment Allowance and eligibility | https://www.gov.uk/claim-employment-allowance/eligibility | 2026-10-24 |
-| GOV.UK, NIC for company directors | https://www.gov.uk/employee-directors | 2026-10-24 |
-| GOV.UK, Reporting to HMRC: FPS | https://www.gov.uk/running-payroll/reporting-to-hmrc | 2026-10-24 |
-| GOV.UK, Pay employers' PAYE | https://www.gov.uk/pay-paye-tax | 2026-10-24 |
-| GOV.UK, Pay Class 1A | https://www.gov.uk/pay-class-1a-national-insurance | 2026-10-24 |
-| GOV.UK, Expenses and benefits deadlines | https://www.gov.uk/employer-reporting-expenses-benefits/deadlines | 2026-10-24 |
-| GOV.UK, PSA deadlines and payment | https://www.gov.uk/paye-settlement-agreements/deadlines-and-payment | 2026-10-24 |
-| HMRC, Late reporting penalties (RTI) | https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time | 2026-10-24 |
-| HMRC, Late payment penalties for PAYE and NIC | https://www.gov.uk/guidance/what-happens-if-you-dont-pay-paye-and-national-insurance-on-time | 2026-10-24 |
-| GOV.UK, Self Assessment deadlines and penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
-| HMRC, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
-| HMRC, Interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
-| GOV.UK, National Insurance if you go abroad | https://www.gov.uk/national-insurance-if-you-go-abroad | 2026-10-24 |
-| GOV.UK, Pay voluntary Class 2 if you work or live abroad | https://www.gov.uk/pay-class-2-national-insurance/if-you-work-or-live-abroad | 2026-10-24 |
+| HMRC NIM12001 (directors: introduction). Read for how directors' NIC works. | https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim12001 | 2026-10-24 |
+| HMRC NIM01297 (upper secondary threshold, under 21). Read for the upper secondary threshold for under 21s. | https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim01297 | 2026-10-24 |
+| HMRC, Rates and thresholds for employers 2026 to 2027. Read for the 2026-27 employer rates and thresholds. | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-10-24 |
+| HMRC, Rates and allowances: National Insurance contributions. Read for the 2026-27 NIC rates. | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | 2026-10-24 |
+| GOV.UK, Self-employed National Insurance rates. Read for the Class 2 and Class 4 rates. | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-24 |
+| GOV.UK, Voluntary National Insurance: rates. Read for the voluntary Class 2 and Class 3 rates. | https://www.gov.uk/voluntary-national-insurance-contributions/rates | 2026-10-24 |
+| GOV.UK, Voluntary National Insurance: who can pay. Read for who can pay voluntary contributions. | https://www.gov.uk/voluntary-national-insurance-contributions | 2026-10-24 |
+| GOV.UK, Voluntary National Insurance: if you live or work abroad. Read for voluntary contributions from abroad. | https://www.gov.uk/voluntary-national-insurance-contributions/if-you-live-or-work-abroad | 2026-10-24 |
+| GOV.UK, Defer National Insurance. Read for deferring NIC. | https://www.gov.uk/defer-national-insurance | 2026-10-24 |
+| GOV.UK, National Insurance credits. Read for NI credits. | https://www.gov.uk/national-insurance-credits | 2026-10-24 |
+| GOV.UK, The new State Pension. Read for the qualifying years for the State Pension. | https://www.gov.uk/new-state-pension | 2026-10-24 |
+| GOV.UK, Voluntary National Insurance: deadlines. Read for the deadlines for voluntary contributions. | https://www.gov.uk/voluntary-national-insurance-contributions/deadlines | 2026-10-24 |
+| GOV.UK, NI category letters. Read for the category letters. | https://www.gov.uk/national-insurance-rates-letters/category-letters | 2026-10-24 |
+| GOV.UK, Employment Allowance and eligibility. Read for the Employment Allowance amount and eligibility. | https://www.gov.uk/claim-employment-allowance/eligibility | 2026-10-24 |
+| GOV.UK, NIC for company directors. Read for NIC for company directors. | https://www.gov.uk/employee-directors | 2026-10-24 |
+| GOV.UK, Reporting to HMRC: FPS. Read for FPS reporting. | https://www.gov.uk/running-payroll/reporting-to-hmrc | 2026-10-24 |
+| GOV.UK, Pay employers' PAYE. Read for the PAYE payment dates. | https://www.gov.uk/pay-paye-tax | 2026-10-24 |
+| GOV.UK, Pay Class 1A. Read for the Class 1A payment date. | https://www.gov.uk/pay-class-1a-national-insurance | 2026-10-24 |
+| GOV.UK, Expenses and benefits deadlines. Read for the P11D deadlines. | https://www.gov.uk/employer-reporting-expenses-benefits/deadlines | 2026-10-24 |
+| GOV.UK, PSA deadlines and payment. Read for the PSA deadlines. | https://www.gov.uk/paye-settlement-agreements/deadlines-and-payment | 2026-10-24 |
+| HMRC, Late reporting penalties (RTI). Read for the RTI late reporting penalties. | https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time | 2026-10-24 |
+| HMRC, Late payment penalties for PAYE and NIC. Read for the PAYE late payment penalties. | https://www.gov.uk/guidance/what-happens-if-you-dont-pay-paye-and-national-insurance-on-time | 2026-10-24 |
+| GOV.UK, Self Assessment deadlines and penalties. Read for the Self Assessment penalties. | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
+| HMRC, Penalties for Making Tax Digital for Income Tax. Read for the Making Tax Digital penalties. | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
+| HMRC, Interest rates for late and early payments. Read for the late payment interest rate. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
+| GOV.UK, National Insurance if you go abroad. Read for NIC when working abroad. | https://www.gov.uk/national-insurance-if-you-go-abroad | 2026-10-24 |
+| GOV.UK, Pay voluntary Class 2 if you work or live abroad. Read for paying voluntary Class 2 from abroad. | https://www.gov.uk/pay-class-2-national-insurance/if-you-work-or-live-abroad | 2026-10-24 |
 
 Not yet confirmed: whether an under-21 employee paid at the 0% age-related rate makes a second "payment of earnings" for the single-director Employment Allowance exclusion (NICA 2014 s.2(4A)); the PAYE payment rule in SSCR 2001 Sch.4 (GOV.UK page used); the statutory basis of the MTD for Income Tax late payment penalty rates (GOV.UK page used).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-national-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-national-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-national-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-national-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-cfe"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # France: the CFE, with the CVAE and the CET cap (2026)
@@ -61,12 +61,12 @@ This skill works out whether a business owes the cotisation foncière des entrep
 
 **CVAE rate worksheet, 2026 and 2027.** Let CA be the turnover determined for CVAE, adjusted to the calendar year and including exempt activities or consolidation where required by CGI art. 1586 quater. Below EUR 500,000 the rate is zero. For the other bands, calculate the following percentage rate, then round the percentage to the nearest hundredth for CA up to EUR 50 million:
 
-| CVAE turnover CA | Rate before percentage rounding, 2026 and 2027 |
-|---|---|
-| EUR 500,000 to EUR 3,000,000 inclusive | 0.094% x (CA - 500,000) / 2,500,000 |
-| More than EUR 3,000,000 to EUR 10,000,000 inclusive | 0.094% + 0.169% x (CA - 3,000,000) / 7,000,000 |
-| More than EUR 10,000,000 to EUR 50,000,000 inclusive | 0.263% + 0.019% x (CA - 10,000,000) / 40,000,000 |
-| More than EUR 50,000,000 | 0.28% |
+| CVAE turnover CA | Rate before percentage rounding, 2026 and 2027 | Source |
+|---|---|---|
+| EUR 500,000 to EUR 3,000,000 inclusive | 0.094% x (CA - 500,000) / 2,500,000 | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
+| More than EUR 3,000,000 to EUR 10,000,000 inclusive | 0.094% + 0.169% x (CA - 3,000,000) / 7,000,000 | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
+| More than EUR 10,000,000 to EUR 50,000,000 inclusive | 0.263% + 0.019% x (CA - 10,000,000) / 40,000,000 | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
+| More than EUR 50,000,000 | 0.28% | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
 
 Multiply the independently established eligible value added by the rounded rate, before the separately applicable flat relief, franchise and additional taxes. For CA EUR 6.2 million, the calculated rate is 0.171257...%, rounded to 0.17%; eligible value added EUR 1 million gives EUR 1,700 before those separate adjustments. Source: CGI art. 1586 quater, BOI-CVAE-LIQ-10 §§ 40–65, https://bofip.impots.gouv.fr/bofip/839-PGP.html. The minimum-base figures for CFE are bases, not tax: the commune's rate is applied to them.
 
@@ -188,4 +188,4 @@ Not yet confirmed: the late-payment surcharge rate for the CFE (CGI art. 1730; L
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-cfe` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-cfe. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-cfe` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-cfe. If neither is available, confirm every figure against the official source pages cited above before relying on it.
