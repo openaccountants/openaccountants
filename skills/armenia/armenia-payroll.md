@@ -1,10 +1,11 @@
 ---
 name: armenia-payroll
 description: "Use for Armenian ordinary 2026 salary payroll, distinct accrued salary and paid contract-income bases, PIT, pension participation and caps, stamp and health entry/continuation. Reconcile employee net pay, employer-funded exceptions, registration, the published monthly calculation and separate health obligations. Includes two conditional examples with supplementary controls preserved in the research record and the qualifying voluntary-pension deduction method. Trigger on Armenia payroll, salary tax, gross to net, SRC monthly calculation, employee registration or payroll corrections. Read alongside the individual and social-payment methods. Checked against the law; ordinary labour entitlements and current statutory health timing are supplied, with the statutory benefit minimum and Service assessment/payment method supplied. The separate health payment-error implementation, specialist R&D branches, actual portal discrepancies, independent country review and accountant attestation remain open."
-version: 0.3
+version: 0.4
+type: computation
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -25,13 +26,13 @@ Ordinary salary withholding does not replace the worker's annual declaration obl
 
 | Component | Ordinary 2026 branch | Source |
 |---|---|---|
-| Salary PIT | 20% of established taxable salary base | [Tax Code 143, 147, 150, 152][code] |
-| Mandatory pre-retirement pension | 5% through 500,000 monthly base; above, 10% less 25,000; ordinary cap 87,500 | [Pension 5–6][pension] |
-| Pre-1974 elected / continuing pension-age branch | Status-specific 5%, with statutory start/cessation rules | [Pension 5–6][pension] |
-| Military stamp | Eligible monthly base through 1 million: 1,000; from 1,000,001: 15,000 | [Stamp 9–14][stamp] |
-| Health, established eligible 2026 employee payer | 4,800 through 500,000 salary; 10,800 from 500,001; entry/continuation/funding conditions are separate | [Health 45–46][health] |
-| Ordinary monthly PIT/social calculation and PIT payment | Following month's 20th, subject to applicable deadline rules | [Tax Code 156/158][code], [Pension 7][pension] |
-| Statutory minimum monthly wage | 75,000, **excluding** the taxes/mandatory amounts and additions specified in wage Article 4 | [Minimum wage 1/4][wage] |
+| Salary PIT | 20% of established taxable salary base | [Tax Code 143, 147, 150, 152][code], https://www.arlis.am/hy/acts/215611/latest |
+| Mandatory pre-retirement pension | 5% through 500,000 monthly base; above, 10% less 25,000; ordinary cap 87,500 | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
+| Pre-1974 elected / continuing pension-age branch | Status-specific 5%, with statutory start/cessation rules | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
+| Military stamp | Eligible monthly base through 1 million: 1,000; from 1,000,001: 15,000 | [Stamp 9–14][stamp], https://www.arlis.am/hy/acts/230046 |
+| Health, established eligible 2026 employee payer | 4,800 through 500,000 salary; 10,800 from 500,001; entry/continuation/funding conditions are separate | [Health 45–46][health], https://www.arlis.am/hy/acts/230432 |
+| Ordinary monthly PIT/social calculation and PIT payment | Following month's 20th, subject to applicable deadline rules | [Tax Code 156/158][code], [Pension 7][pension], https://www.arlis.am/hy/acts/215611/latest |
+| Statutory minimum monthly wage | 75,000, **excluding** the taxes/mandatory amounts and additions specified in wage Article 4 | [Minimum wage 1/4][wage], https://www.arlis.am/hy/acts/172160 |
 
 AMD amounts throughout. The wage law's 75,000 is not proof that a gross salary of 75,000 meets minimum-pay obligations. Check contractual base pay, working time, statutory exclusions, leave and applicable labour rules. The ordinary working-time, minimum-pay and entitlement method below supplies the calculation; specialist employment categories require their stated separate rules. [1–4][wage]
 
