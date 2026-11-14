@@ -41,14 +41,14 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| IRS band 1: taxable income up to EUR 8,342 | 12.50% (average 12.500%) | 2026 | CIRS art. 68(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
-| Band 2: over 8,342 to 12,587 | 15.70% (average 13.579%) | 2026 | same |
-| Band 3: over 12,587 to 17,838 | 21.20% (average 15.823%) | 2026 | same |
-| Band 4: over 17,838 to 23,089 | 24.10% (average 17.705%) | 2026 | same |
-| Band 5: over 23,089 to 29,397 | 31.10% (average 20.579%) | 2026 | same |
-| Band 6: over 29,397 to 43,090 | 34.90% (average 25.130%) | 2026 | same |
-| Band 7: over 43,090 to 46,566 | 43.10% (average 26.472%) | 2026 | same |
-| Band 8: over 46,566 to 86,634 | 44.60% (average 34.856%) | 2026 | same |
+| IRS band 1: taxable income up to EUR 8,342 | 12.20% (average 12.200%) | 2026 | CIRS art. 68(1), wording of Decreto-Lei 212/2026 (effect from 1 January 2026): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Band 2: over 8,342 to 12,587 | 15.20% (average 13.212%) | 2026 | same |
+| Band 3: over 12,587 to 17,838 | 20.70% (average 15.416%) | 2026 | same |
+| Band 4: over 17,838 to 23,089 | 23.60% (average 17.277%) | 2026 | same |
+| Band 5: over 23,089 to 29,397 | 30.60% (average 20.136%) | 2026 | same |
+| Band 6: over 29,397 to 43,090 | 34.60% (average 24.732%) | 2026 | same |
+| Band 7: over 43,090 to 46,566 | 43.10% (average 26.103%) | 2026 | same |
+| Band 8: over 46,566 to 86,634 | 44.60% (average 34.658%) | 2026 | same |
 | Band 9: over 86,634 | 48.00% | 2026 | same |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% over 250,000 | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
 | IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2 and 4: https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 |
@@ -71,7 +71,7 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 | Gains on shares of unlisted micro and small companies | 50% of the net gain included, then taxed at the 28% autonomous rate unless the resident opts to aggregate | 2026 | CIRS art. 43(3), art. 72(1)(c) and (13) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Return filing exemption for low salary or pension | Total EUR 8,500 or less with no withholding | 2026 | CIRS art. 58(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58.aspx |
 
-The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026.
+The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026. Decreto-Lei 212/2026 of 4 November 2026 then cut the rates of bands 1 to 6 to 12.20%, 15.20%, 20.70%, 23.60%, 30.60% and 34.60% for income obtained in 2026, with effect from 1 January 2026; the table above shows those rates.
 
 Pillar Two and other company-level measures do not apply to individuals.
 
@@ -167,9 +167,9 @@ Ana is single, resident all year, aged 40, with no dependants. Her 2026 gross sa
 
 1. Specific deduction: social security (EUR 3,300) is below 8.54 x IAS (EUR 4,587.09), so she deducts EUR 4,587.09.
 2. Taxable income: 30,000 - 4,587.09 = EUR 25,412.91. The minimum existence rule does not apply: her gross is over EUR 16,543.60.
-3. Tax by band (art. 68(2) method): EUR 25,412.91 is in band 5. Tax = 23,089 x 17.705% + (25,412.91 - 23,089) x 31.10% = 4,087.91 + 722.74 = EUR 4,810.64.
+3. Tax by band (art. 68(2) method): EUR 25,412.91 is in band 5. Tax = 23,089 x 17.277% + (25,412.91 - 23,089) x 30.60% = EUR 4,700.20.
 4. Deductions from the tax: general family expenses EUR 250 (the maximum). Health 15% x 600 = EUR 90. The overall cap for health and the other capped items is 1,000 + 1,500 x (80,000 - 25,412.91) / (80,000 - 8,342) = EUR 2,142.66, so the EUR 90 is allowed in full.
-5. Tax after deductions: 4,810.64 - 250 - 90 = EUR 4,470.64. Her monthly withholding is then credited against this.
+5. Tax after deductions: 4,700.20 - 250 - 90 = EUR 4,360.20. Her monthly withholding is then credited against this.
 
 ```oa-check
 name: PT single employee, gross EUR 30,000, 2026 bands
@@ -178,8 +178,8 @@ inputs:
   ias: 537.13
   ss_rate: 0.11
   band4_top: 23089
-  band4_avg: 0.17705
-  band5_rate: 0.311
+  band4_avg: 0.17277
+  band5_rate: 0.306
   general_expenses_cap: 250
   health_spend: 600
   health_rate: 0.15
@@ -195,9 +195,9 @@ steps:
 expected:
   specific_deduction: 4587.09
   taxable: 25412.91
-  tax: 4810.64
+  tax: 4700.20
   cap: 2142.66
-  net_tax: 4470.64
+  net_tax: 4360.20
 ```
 
 ### Example 2: employee with residential rent, 25% autonomous rate or aggregation
@@ -205,9 +205,9 @@ expected:
 Rui is single and resident. His 2026 gross salary is EUR 18,000 (social security EUR 1,980). He lets a flat under a residential lease of 2 years for EUR 9,000 in the year and paid EUR 1,000 of IMI and condominium charges. His net Category F income is 9,000 - 1,000 = EUR 8,000. The lease is under 5 years, so no reduced rate applies.
 
 1. Salary: specific deduction EUR 4,587.09 (above his EUR 1,980 social security). Category A taxable income = 18,000 - 4,587.09 = EUR 13,412.91.
-2. Option A, autonomous rate: tax on salary = 12,587 x 13.579% + (13,412.91 - 12,587) x 21.20% = 1,709.19 + 175.09 = EUR 1,884.28. Rent at 25% x 8,000 = EUR 2,000. Total EUR 3,884.28.
-3. Option B, aggregation (art. 72(13)): taxable income = 13,412.91 + 8,000 = EUR 21,412.91, in band 4. Tax = 17,838 x 15.823% + (21,412.91 - 17,838) x 24.10% = 2,822.51 + 861.55 = EUR 3,684.06.
-4. Aggregation saves EUR 200.22, because his top band rate on the rent (21.20% to 24.10%) is below 25%. With a 10-year lease (10% rate, art. 72(4)) the autonomous rate would win.
+2. Option A, autonomous rate: tax on salary = 12,587 x 13.212% + (13,412.91 - 12,587) x 20.70% = EUR 1,833.96. Rent at 25% x 8,000 = EUR 2,000. Total EUR 3,833.96.
+3. Option B, aggregation (art. 72(13)): taxable income = 13,412.91 + 8,000 = EUR 21,412.91, in band 4. Tax = 17,838 x 15.416% + (21,412.91 - 17,838) x 23.60% = EUR 3,593.58.
+4. Aggregation saves EUR 240.38, because his top band rate on the rent (20.70% to 23.60%) is below 25%. With a 10-year lease (10% rate, art. 72(4)) the autonomous rate would win.
 5. Check two side effects before choosing. Aggregation raises taxable income, which lowers the overall cap on deductions from the tax (step 7 above). And all of his Category F income must be aggregated, not only this flat (art. 22(5)). Deductions from the tax are left out of the comparison here because they are the same in both options unless the cap bites.
 
 ```oa-check
@@ -221,19 +221,19 @@ inputs:
 steps:
   - cat_a: gross_salary - specific_deduction
   - cat_f: rent_gross - rent_costs
-  - tax_salary_only: round(12587 * 0.13579 + (cat_a - 12587) * 0.212, 2)
+  - tax_salary_only: round(12587 * 0.13212 + (cat_a - 12587) * 0.207, 2)
   - tax_rent_autonomous: cat_f * rent_rate
   - option_a: tax_salary_only + tax_rent_autonomous
   - aggregated: cat_a + cat_f
-  - option_b: round(17838 * 0.15823 + (aggregated - 17838) * 0.241, 2)
+  - option_b: round(17838 * 0.15416 + (aggregated - 17838) * 0.236, 2)
   - saving: option_a - option_b
 expected:
   cat_a: 13412.91
-  tax_salary_only: 1884.28
-  option_a: 3884.28
+  tax_salary_only: 1833.96
+  option_a: 3833.96
   aggregated: 21412.91
-  option_b: 3684.06
-  saving: 200.22
+  option_b: 3593.58
+  saving: 240.38
 ```
 
 ## Ask the client first
@@ -249,7 +249,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CIRS art. 68, IRS bands (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-22 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-22 |
 | CIRS art. 69, joint taxation divisor | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs69.aspx | 2026-10-22 |
 | CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-10-22 |
