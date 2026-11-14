@@ -26,7 +26,7 @@ Out of scope, and where it goes:
 | Topic | Skill |
 | --- | --- |
 | The foreign earned income exclusion and housing exclusion on Form 2555, line by line | `us-foreign-earned-income-2555` |
-| Choosing between the exclusion and the credit, and combining them | `us-feie-ftc` |
+| Choosing between the exclusion and the credit, and combining them | `us-foreign-earned-income-2555` and `us-foreign-tax-credit-1116` |
 | The foreign tax credit on Form 1116 | `us-foreign-tax-credit-1116` |
 | FBAR and Form 8938 thresholds and filing | `us-fbar-and-fatca-8938` |
 | A foreign company the client owns: Form 5471 and the inclusions | `us-form-5471-cfc-information`, `us-gilti-fdii-beat` |
@@ -82,7 +82,7 @@ The FBAR and Form 8938 thresholds are owned by `us-fbar-and-fatca-8938` and are 
 3. **Foreign tax credit** (Form 1116): a dollar-for-dollar credit for foreign income tax actually paid, by category, with unused credit carried back 1 year and forward 10 years. Computation: `us-foreign-tax-credit-1116`.
 4. **Zero-tax landing (UAE, most of the Gulf):** there is no foreign tax to credit, so the exclusion is the only shield; everything above it is taxed in the US as if the person lived in the US. High earners are often surprised by the bill (Case 1).
 5. **High-tax landing (Germany, France, the UK):** local tax usually exceeds the US tax on the same income, so the credit wipes out the US tax and builds carryforwards. Advisers often prefer the credit alone there, partly because a person who revokes the exclusion cannot choose it again for 5 years without IRS consent. Source: [Instructions for Form 2555](https://www.irs.gov/pub/irs-pdf/i2555.pdf).
-6. **Mixed lives** (Gulf salary, European rent, US portfolio) use both, income type by income type: `us-feie-ftc`.
+6. **Mixed lives** (Gulf salary, European rent, US portfolio) use both, income type by income type: `us-foreign-earned-income-2555` and `us-foreign-tax-credit-1116`.
 7. **Timing:** a citizen living abroad on the due date gets an automatic 2-month extension to **15 June** (interest still runs from 15 April) and can extend to 15 October; Form 2350 gives more time to meet the presence or residence test in the first year. Source: [Publication 54](https://www.irs.gov/publications/p54).
 
 ### Step 3: the reporting web

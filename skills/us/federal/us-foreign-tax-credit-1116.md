@@ -37,7 +37,7 @@ Out of scope, and where it goes:
 | --- | --- |
 | The foreign earned income exclusion and housing, and the choice between exclusion and credit | `us-foreign-earned-income-2555` |
 | The rest of Form 1040 and the 2026 tax brackets | `us-form-1040-individual-return` |
-| CFCs, GILTI or net CFC tested income, section 962 elections and Form 1118 | `us-cfc-gilti`, `us-form-5471-cfc-information` |
+| CFCs, GILTI or net CFC tested income, section 962 elections and Form 1118 | `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
 | FBAR and Form 8938 | `us-fbar-and-fatca-8938` |
 | Moving abroad, the wider checklist | `us-citizen-moving-abroad-tax` |
 | Nonresident aliens | `us-form-1040-nr-nonresident-return` |
@@ -353,7 +353,7 @@ expected:
 | Code | Situation | Action |
 | --- | --- | --- |
 | R-FTC-1 | Corporations, estates and trusts, or nonresident aliens | Refer: this skill is for individual US citizens and residents |
-| R-FTC-2 | Section 962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, or Forms 5471, 8865, 8858 or 8621 | Refer: `us-cfc-gilti`, `us-form-5471-cfc-information` |
+| R-FTC-2 | Section 962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, or Forms 5471, 8865, 8858 or 8621 | Refer: `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
 | R-FTC-3 | Treaty re-sourcing (box f), treaty-based credits needing Form 8833, or the additional credit for US citizens resident in treaty countries | Refer |
 | R-FTC-4 | Section 901(m) covered asset acquisitions, foreign tax credit splitting events, foreign oil and gas income | Refer |
 | R-FTC-5 | Recapture of overall foreign loss, separate limitation loss or overall domestic loss accounts beyond a single simple year | Refer |

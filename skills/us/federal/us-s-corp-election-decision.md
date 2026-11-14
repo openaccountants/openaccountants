@@ -134,10 +134,10 @@ If any test fails, stop: the S election is not available (see the refusal table)
 | --- | --- | --- |
 | California | An S corporation owes California tax at entity level as well as the shareholder's personal tax; compare it with the LLC fee and tax the LLC pays now | `ca-llc-fee-and-tax`; no OpenAccountants skill yet holds the California S corporation rate (refer) |
 | New York State | A federal S corporation is taxed as a New York C corporation unless it also makes the New York S election | `ny-corporate-franchise-article-9a` |
-| New York City | The city does not recognise S status: a sole proprietor pays the unincorporated business tax, an S corporation pays the city's business corporation tax | `nyc-ubt`, `nyc-unincorporated-business-tax` |
+| New York City | The city does not recognise S status: a sole proprietor pays the unincorporated business tax, an S corporation pays the city's business corporation tax | `nyc-ubt` |
 | New Hampshire | Business profits tax and business enterprise tax apply to the entity | `nh-bpt-bet` |
 | New Jersey | A federal S corporation must also elect New Jersey S status, or it is taxed as a New Jersey C corporation | `nj-cbt-and-bait` |
-| Texas | Franchise (margin) tax applies to the LLC whether or not it elects S status; check the no-tax-due threshold | `tx-franchise-tax`, `tx-margin-tax` |
+| Texas | Franchise (margin) tax applies to the LLC whether or not it elects S status; check the no-tax-due threshold | `tx-franchise-tax` |
 | Tennessee | Franchise and excise tax applies to LLCs and corporations alike | no OpenAccountants skill yet (refer) |
 | Every state | State unemployment insurance on the new salary; some states require workers' compensation for an owner-employee | `us-state-payroll-matrix` |
 

@@ -13,7 +13,7 @@ type: situation-rules
 
 # Texas sales and use tax, tax year 2026
 
-Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Public Accounts (comptroller.texas.gov) and Texas Tax Code Chapter 151 (statutes.capitol.texas.gov). Texas has no state personal income tax; it has sales and use tax (this skill) and a franchise tax on businesses (`tx-margin-tax`). This skill replaces the older `tx-sales-tax` and `tx-sales-use-tax` files.
+Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Public Accounts (comptroller.texas.gov) and Texas Tax Code Chapter 151 (statutes.capitol.texas.gov). Texas has no state personal income tax; it has sales and use tax (this skill) and a franchise tax on businesses (`tx-franchise-tax`). This skill replaces the older `tx-sales-tax` and `tx-sales-use-tax` files.
 
 ## Scope and who this is for
 

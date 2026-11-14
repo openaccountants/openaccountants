@@ -5,11 +5,12 @@ not_applicable:
   TP: no Ohio transfer pricing documentation regime; related-party rules sit in the federal skills
   XB: residency, contact periods and the reciprocity states are in oh-income-tax
 covered_by:
+  IT-IND: oh-income-tax
+  IT-CORP: oh-cat-tax
+  VAT: oh-sales-tax
   SC: oh-payroll
   PR: oh-payroll
 partial:
-  IT-CORP: "Commercial Activity Tax skills (oh-cat-tax, oh-cat) are being rewritten for 2026 in a separate change"
-  VAT: "sales and use tax skills (oh-sales-tax, ohio-sales-tax) are being rewritten for 2026 in a separate change"
   IT-IND: "2026 IT 1040 instructions not yet published: per-person exemption amounts and credit limits not yet confirmed"
 ---
 
@@ -24,8 +25,8 @@ Calendar tax year for individuals. Authorities: the Ohio Department of Taxation 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | oh-income-tax | sourced from the law (2026 rate from R.C. 5747.02; partial) |
-| IT-CORP, Commercial Activity Tax (gross receipts) | oh-cat-tax, oh-cat | being rewritten in a separate change |
-| VAT / sales and use tax | oh-sales-tax, ohio-sales-tax | being rewritten in a separate change |
+| IT-CORP, Commercial Activity Tax (gross receipts) | oh-cat-tax | rewritten for 2026 |
+| VAT / sales and use tax | oh-sales-tax | rewritten for 2026 |
 | SC, social contributions (unemployment insurance) | oh-payroll | sourced from ODJFS 2026 rates |
 | PR, payroll withholding | oh-payroll | sourced from the Department's 2025 and 2026 withholding tables |
 | TP, transfer pricing | not applicable, see above | |

@@ -1,8 +1,10 @@
 ---
 jurisdiction: US-TX
 covered_by:
-  IT-CORP: tx-margin-tax
+  IT-CORP: tx-franchise-tax
   VAT: texas-sales-tax
+  SC: tx-payroll
+  PR: tx-payroll
 ---
 
 # Texas: OpenAccountants Tax Skills
@@ -21,8 +23,8 @@ covered_by:
 | File | What it covers |
 |---|---|
 | `texas-sales-tax.md` | Sales and use tax, tax year 2026: rates, local sourcing, remote sellers and marketplaces, taxable services, certificates, Form 01-114, discounts, penalties. The one sales tax skill (the older `tx-sales-tax` and `tx-sales-use-tax` were folded into it on 13 Nov 2026) |
-| `tx-margin-tax.md` | Franchise (margin) tax |
 | `tx-franchise-tax.md` | Franchise (margin) tax for taxable entities |
+| `tx-payroll.md` | Payroll: no state income tax withholding; Texas unemployment tax (TWC) |
 | `tx-formation.md` | Forming a Texas entity |
 | `us-tx-freelance-intake.md` | Intake for a Texas freelancer |
 | `us-tx-return-assembly.md` | Assembling a Texas freelancer's filings |
