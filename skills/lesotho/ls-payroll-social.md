@@ -98,4 +98,4 @@ expected:
 | Income Tax Act 1993, RSL copy updated to 1 April 2012; read the sections cited; later amendments are not in this copy | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf | 2026-11-01 |
 | RSL FBT Public Ruling; read the rate and example parts | https://www.rsl.org.ls/sites/default/files/2024-07/FBT%20Public%20Ruling.pdf | 2026-11-01 |
 
-Not yet confirmed: mandatory social security for private employers, the old-age pension statute, occupational pension rates, the annual reconciliation form name and any wage cap; the older skill's points on these are carried here unverified.
+Not yet confirmed: mandatory social security for private employers, the old-age pension statute, occupational pension rates, the annual reconciliation form name and any wage cap; the older skill's points on these are carried here unverified; rows moved out of the rates table on 2026-11-14: national social security (older skill: no compulsory contributory scheme for private employers) and occupational pension contributions (older figure about 5% each side, from a secondary site).
