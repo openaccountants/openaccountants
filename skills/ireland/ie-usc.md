@@ -35,10 +35,10 @@ See also: `ie-payroll` (running a payroll, the RPN, emergency basis), `ie-income
 | Standard band 1 (s.531AN, Table Part 1) | 0.5% on the first EUR 12,012 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
 | Standard band 2 | 2% on the next EUR 16,688 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
 | Standard band 3 | 3% on the next EUR 41,344 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
-| Balance | 8% on the remainder (above EUR 70,044) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
+| Balance | 8% on the remainder (above EUR 70,044) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html ; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 | Exemption: no USC if aggregate income does not exceed (s.531AM(2)); above it, USC on the full income | EUR 13,000 | 2026 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 | Reduced rates, aged 70 or over, aggregate income EUR 60,000 or less (s.531AN, Table Part 2) | 0.5% on the first EUR 12,012, 2% on the balance | 2026 | https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx |
-| Reduced rate, full medical card holder under 70, aggregate income EUR 60,000 or less (s.531AN(3)) | Standard bands up to EUR 28,700, then 2% at most on the excess (same result as the reduced rates) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
+| Reduced rate, full medical card holder under 70, aggregate income EUR 60,000 or less (s.531AN(3)) | Standard bands up to EUR 28,700, then 2% at most on the excess (same result as the reduced rates) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html ; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 | Medical card reduced rate ends (s.531AN(4), "2028" substituted by FA 2025 s.2(1)(b)) | From the 2028 year of assessment | 2026, 2027 apply | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
 | Surcharge on relevant (non-PAYE) income over EUR 100,000 (s.531AN(2)) | 3% on the excess, so 11% in total on it | 2026 | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx |
 | Encashed private pension rights ring-fenced under s.787TA (s.531AN(3A)) | 2% on the full amount, not counted for the surcharge | 2026 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
@@ -112,7 +112,7 @@ Exempt payments are outside "aggregate income", so they do not count toward the 
 | Self-employed and other chargeable persons | USC is due and payable as income tax is: with preliminary tax by 31 October 2026 for 2026, and the balance with the 2026 Form 11 by 31 October 2027 (s.531AS; Tax and Duty Manual 18D-00-01, para 5.2). USC can be in one assessment with income tax, even if no income tax is due (s.531AS(3), (4)) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18d/18D-00-01.pdf |
 | ROS extension, 2026 | For the 2025 Form 11 balance and 2026 preliminary tax, the date is Wednesday 18 November 2026 only if the person both pays and files through ROS; if only one is done on ROS, 31 October 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
 | Preliminary tax | Covers income tax, PRSI and USC; the 90% / 100% / 105% tests are in `ie-preliminary-tax` | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
-| PAYE-only worker owed a refund (for example maintenance, or income of EUR 13,000 or less) | Claim on Form 12 in myAccount (s.531AW) | https://www.revenue.ie/en/jobs-and-pensions/usc/married-couples-civil-partners.aspx |
+| PAYE-only worker owed a refund (for example maintenance, or income of EUR 13,000 or less) | Claim on Form 12 in myAccount (s.531AW) | https://www.revenue.ie/en/jobs-and-pensions/usc/married-couples-civil-partners.aspx ; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 
 ## Penalties and interest
 
