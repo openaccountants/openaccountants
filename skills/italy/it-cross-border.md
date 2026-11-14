@@ -1,10 +1,11 @@
 ---
 name: it-cross-border
-description: "Italy cross-border tax for tax year 2026: who is resident (TUIR art. 2 as reformed from 2024, 183 days counting part days, civil-law residence, domicile as the centre of personal and family relations, physical presence; company residence under art. 73), AIRE registration, arriving under the impatriati regime, the EUR 300,000 flat tax on foreign income and the 7% pensioners' option, leaving (exit tax under art. 166 for companies and anyone carrying on a business), non-residents with Italian income, withholding on outbound dividends, interest, royalties and fees, and the foreign tax credit (art. 165). Trigger on: moving to Italy, leaving Italy, non-resident Italy, expat Italy, Italian tax residence, AIRE, exit tax Italy, imposizione in uscita, digital nomad Italy, ritenuta non residenti. Out of scope, see sibling skills: it-impatriati (full regime rules), it-income-tax, italy-payroll, it-inps-contributions, italy-transfer-pricing, italy-crypto-tax."
-version: 0.2
+description: "Italy cross-border tax for tax year 2026: who is resident (TUIR art. 2 as reformed from 2024, 183 days counting part days, civil-law residence, domicile as the centre of personal and family relations, physical presence; company residence under art. 73), AIRE registration, arriving under the impatriati regime, the EUR 300,000 flat tax on foreign income and the 7% pensioners' option, leaving (exit tax under art. 166 for companies and anyone carrying on a business), non-residents with Italian income, withholding on outbound dividends, interest, royalties and fees, and the foreign tax credit (art. 165). Trigger on moving to Italy, leaving Italy, non-resident Italy, expat Italy, Italian tax residence, AIRE, exit tax Italy, imposizione in uscita, digital nomad Italy, ritenuta non residenti. Out of scope (see sibling skills) it-impatriati (full regime rules), it-income-tax, italy-payroll, it-inps-contributions, italy-transfer-pricing, italy-crypto-tax."
+version: 1.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -66,18 +67,18 @@ Foreign companies that control an Italian company are presumed resident (rebutta
 | Exit tax (art. 166) | No separate rate: the gain is taxed at the taxpayer's normal rate (IRES 24% for a company). For sole traders and partnerships, comma 13 applies the separate-taxation rules of TUIR art. 17 comma 1 letters g) and l) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art166!vig=2026-06-30 |
 | Exit tax instalments (move to an EU or listed EEA state) | 5 equal annual instalments, interest on instalments after the first | 2026 | same |
 | Dividends paid to non-residents (final withholding) | 26% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 (sets 26% for art. 44 capital income); https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30 |
-| Dividends paid to companies subject to corporate tax in an EU or listed EEA state | 1.20% | 2026 | D.P.R. 600/1973 art. 27 comma 3-ter, same URL |
+| Dividends paid to companies subject to corporate tax in an EU or listed EEA state | 1.20% | 2026 | D.P.R. 600/1973 art. 27 comma 3-ter, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30 |
 | Dividends to an EU parent company holding at least 10% of the capital directly and without interruption for at least one year (Parent-Subsidiary Directive) | Exempt: no withholding if the payer has the documents by payment date, otherwise full refund | 2026 | D.P.R. 600/1973 art. 27-bis commi 1 to 3 (text shows 20%), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27bis!vig=2026-06-30 ; the 20% is reduced to 10% for profits distributed from 1 January 2009 by D.Lgs. 49/2007 art. 2 comma 2, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;49~art2!vig=2026-06-30 |
-| Dividends to EU and listed EEA pension funds | 11% | 2026 | D.P.R. 600/1973 art. 27 comma 3, same URL |
-| Interest and other capital income paid to non-residents (final withholding) | 26% (not for Italian government bonds and bonds of white-list states, excluded by D.L. 66/2014 art. 3 comma 2) | 2026 | D.L. 66/2014 art. 3 comma 1 (URL above); https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26!vig=2026-06-30 |
+| Dividends to EU and listed EEA pension funds | 11% | 2026 | D.P.R. 600/1973 art. 27 comma 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30 |
+| Interest and other capital income paid to non-residents (final withholding) | 26% (not for Italian government bonds and bonds of white-list states, excluded by D.L. 66/2014 art. 3 comma 2) | 2026 | D.L. 66/2014 art. 3 comma 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 ; https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26!vig=2026-06-30 |
 | Interest and royalties paid to an associated EU company (25% of voting rights, held without interruption for at least one year) | Exempt | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26quater!vig=2026-06-30 |
 | Fees for self-employed work done in Italy, paid to non-residents (final withholding) | 30% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30 |
-| Royalties (intellectual property, patents, trade marks, know-how) paid to non-residents | 30% of the taxable part | 2026 | D.P.R. 600/1973 art. 25, same URL |
-| Rent for industrial, commercial or scientific equipment located in Italy, paid to non-residents | 30% | 2026 | D.P.R. 600/1973 art. 25, same URL |
+| Royalties (intellectual property, patents, trade marks, know-how) paid to non-residents | 30% of the taxable part | 2026 | D.P.R. 600/1973 art. 25, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30 |
+| Rent for industrial, commercial or scientific equipment located in Italy, paid to non-residents | 30% | 2026 | D.P.R. 600/1973 art. 25, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30 |
 
 Treaty rates replace these where the treaty gives a lower rate and the paperwork is in place. Dividend withholding at 26% can be partly refunded to non-resident shareholders (up to eleven twenty-sixths of the withholding) if they prove tax paid on the same dividends abroad (art. 27 comma 3).
 
-## The taxable base
+## The base
 
 **Residents: worldwide income.** A resident individual or company is taxed on income from anywhere. There is no remittance basis. The nearest thing is the art. 24-bis flat tax, which replaces tax on foreign income with a fixed yearly amount.
 
@@ -156,7 +157,7 @@ The impatriati regime has its own clawback: if the worker does not keep Italian 
 - Crypto held by people who move in or out: `italy-crypto-tax`.
 - For IRES itself (rate, base, losses, dividends) see it-ires-corporate-tax; this skill covers only the exit tax and outbound withholding.
 
-## Worked examples
+## Two worked examples that recompute
 
 ### Example 1: an engineer moves to Milan under the impatriati regime
 
@@ -239,32 +240,36 @@ A short outbound withholding check: an Italian company pays a non-resident consu
 
 ## Sources
 
-All read on 2026-10-22. Normattiva texts are the versions in force on 30 June 2026 unless stated.
+Normattiva texts are the versions in force on 30 June 2026 unless stated. Every page below was opened again on 2026-11-14 and the figures this skill takes from it were found in the text (first read 2026-10-22).
 
-- TUIR art. 2 (individual residence): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2!vig=2026-06-30
-- TUIR art. 23 (Italian-source income of non-residents): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art23!vig=2026-06-30
-- TUIR art. 24 (tax of non-residents, 75% rule): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24!vig=2026-06-30
-- TUIR art. 24-bis (flat tax): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2026-06-30
-- TUIR art. 24-ter (pensioners' 7% option): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24ter!vig=2026-06-30
-- TUIR art. 54-octies (royalties reduced by 25% for expenses): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54octies!vig=2026-06-30
-- TUIR art. 73 (company residence): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art73!vig=2026-06-30
-- TUIR art. 77 (IRES 24%): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=2026-06-30
-- TUIR art. 165 (foreign tax credit): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art165!vig=2026-06-30
-- TUIR art. 166 (exit tax): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art166!vig=2026-06-30
-- D.Lgs. 117/2026 (new TUIR, applies from 1 January 2027 under its art. 377), read as in force on 22 October 2026: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117
-- D.Lgs. 209/2023 art. 5 (impatriati): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30
-- L. 199/2025 art. 1 commi 25 and 26 (flat tax raised to EUR 300,000): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199
-- D.P.R. 600/1973 art. 25 (fees and royalties to non-residents): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30
-- D.P.R. 600/1973 art. 26 (interest): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26!vig=2026-06-30
-- D.P.R. 600/1973 art. 26-quater (EU interest and royalties exemption): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26quater!vig=2026-06-30
-- D.P.R. 600/1973 art. 27 (dividends): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30
-- D.P.R. 600/1973 art. 27-bis (EU parent-subsidiary refund or exemption): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27bis!vig=2026-06-30
-- D.Lgs. 49/2007 art. 2 comma 2 (art. 27-bis threshold 10% for profits distributed from 1 January 2009; Normattiva shows this comma repealed from 2027 by D.Lgs. 33/2025 as amended by D.L. 200/2025): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;49~art2!vig=2026-06-30
-- D.L. 66/2014 art. 3 (26% rate on capital income): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30
-- D.P.R. 322/1998 art. 2 (return deadlines): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30
-- L. 470/1988 art. 6 (AIRE): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-10-27;470~art6!vig=2026-06-30
-- D.Lgs. 471/1997 art. 1, 13 and 14 (penalties): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30 , https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30 , https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art14!vig=2026-06-30
-- D.L. 167/1990 art. 5 (RW penalties): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-06-30
-- Agenzia delle Entrate, IRPEF rates and the 2026 change to 33%: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for TUIR art. 2 (individual residence) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 23 (Italian-source income of non-residents) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art23!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 24 (tax of non-residents, 75% rule) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 24-bis (flat tax) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 24-ter (pensioners' 7% option) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24ter!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 54-octies (royalties reduced by 25% for expenses) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54octies!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 73 (company residence) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art73!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 77 (IRES 24%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 165 (foreign tax credit) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art165!vig=2026-06-30 | 2026-11-14 |
+| Read for TUIR art. 166 (exit tax) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art166!vig=2026-06-30 | 2026-11-14 |
+| Read for D.Lgs. 117/2026 (new TUIR, applies from 1 January 2027 under its art. 377), read as in force on 22 October 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 | 2026-11-14 |
+| Read for D.Lgs. 209/2023 art. 5 (impatriati) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30 | 2026-11-14 |
+| Read for L. 199/2025 art. 1 commi 25 and 26 (flat tax raised to EUR 300,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 | 2026-11-14 |
+| Read for D.P.R. 600/1973 art. 25 (fees and royalties to non-residents) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30 | 2026-11-14 |
+| Read for D.P.R. 600/1973 art. 26 (interest) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26!vig=2026-06-30 | 2026-11-14 |
+| Read for D.P.R. 600/1973 art. 26-quater (EU interest and royalties exemption) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26quater!vig=2026-06-30 | 2026-11-14 |
+| Read for D.P.R. 600/1973 art. 27 (dividends) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30 | 2026-11-14 |
+| Read for D.P.R. 600/1973 art. 27-bis (EU parent-subsidiary refund or exemption) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27bis!vig=2026-06-30 | 2026-11-14 |
+| Read for D.Lgs. 49/2007 art. 2 comma 2 (art. 27-bis threshold 10% for profits distributed from 1 January 2009; Normattiva shows this comma repealed from 2027 by D.Lgs. 33/2025 as amended by D.L. 200/2025) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;49~art2!vig=2026-06-30 | 2026-11-14 |
+| Read for D.L. 66/2014 art. 3 (26% rate on capital income) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 | 2026-11-14 |
+| Read for D.P.R. 322/1998 art. 2 (return deadlines) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 | 2026-11-14 |
+| Read for L. 470/1988 art. 6 (AIRE) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-10-27;470~art6!vig=2026-06-30 | 2026-11-14 |
+| Read for D.Lgs. 471/1997 art. 1, 13 and 14 (penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30 | 2026-11-14 |
+| Read for D.Lgs. 471/1997 art. 1, 13 and 14 (penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30 | 2026-11-14 |
+| Read for D.Lgs. 471/1997 art. 1, 13 and 14 (penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art14!vig=2026-06-30 | 2026-11-14 |
+| Read for D.L. 167/1990 art. 5 (RW penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-06-30 | 2026-11-14 |
+| Read for Agenzia delle Entrate, IRPEF rates and the 2026 change to 33% | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-11-14 |
 
 Not yet confirmed: the taxable part of royalties paid to non-resident companies (TUIR art. 54-octies reduces royalties by 25% for individual authors and inventors, which would give 22.5% of the gross, but we did not confirm the same base for companies); the late-payment interest rate and the interest rate on exit tax instalments (D.Lgs. 241/1997 art. 20); any AIRE non-registration penalty; and the Regulation (EC) 883/2004 text, which we could not fetch from EUR-Lex today.
