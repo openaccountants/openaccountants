@@ -26,7 +26,7 @@ Taxpayers assessing ЭСФ electronic invoices, online ККМ and ОФД receipt
 
 | Item and conditions | Rule for 2026 | Official source |
 |---|---|---|
-| Ordinary invoice issuance | Default: not before turnover and no later than 15 calendar days after it; art. 493 expressly allows earlier issuance for the full turnover within the calendar year; 15 in words on the page | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Ordinary invoice issuance | Default: not before turnover and no later than 15 calendar days after it; the specific periodical-publication/media rule in art. 493(5) contains an early-issue option for the full calendar-year turnover; do not assume that option covers other supply categories; 15 in words on the page | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Specified monthly utilities/communication/transport and other listed supplies | Invoice after month-end by the 20th of the following month under art. 493(2); check the full listed category | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Goods placed under the customs export procedure | Within 20 calendar days after turnover; 20 in words on the page (art. 493) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Buyer-request invoice in statutory receipt exceptions | Buyer demand within 15 calendar days, supplier issue within 30 calendar days after turnover; figures in words on the page (arts. 208, 493) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
@@ -106,4 +106,4 @@ expected:
 | Read for Tax Code arts. 19, 110–111, 207–209, 480–482, 491–493 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
 | Read for Ministry invoice form and issuance rules: operative issuance/status/form portions | https://www.gov.kz/org/minfin/documents/details/917390 | 2026-11-14 |
 
-Not yet confirmed: Exact fiscal-receipt content and QR requirements; Current СНТ/Virtual Warehouse goods lists and issue deadlines, exact new 2026 ESF field, all special supply-category deadlines, machine firmware/model detail and numerical penalties. Do not assert a blanket nonVAT services exemption or a universal paper-invoice recovery rule.
+Not yet confirmed: Availability of the early-issue option outside the specific periodical/media provision; exact fiscal-receipt content and QR requirements; Current СНТ/Virtual Warehouse goods lists and issue deadlines, exact new 2026 ESF field, all special supply-category deadlines, machine firmware/model detail and numerical penalties. Do not assert a blanket nonVAT services exemption or a universal paper-invoice recovery rule.
