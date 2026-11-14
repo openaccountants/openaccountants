@@ -28,11 +28,11 @@ Individuals with Uganda tax to pay. Residents are taxed on worldwide income and 
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
-| Resident, annual, up to UGX 4,020,000 | Nil | 2026-27 | https://ura.go.ug/en/domestic-taxes/paye-rates/ (UGX 335,000 a month x 12) |
-| Resident, UGX 4,020,001 to 4,920,000 | 20% over 4,020,000 | 2026-27 | same |
-| Resident, UGX 4,920,001 to 5,820,000 | UGX 180,000 + 25% over 4,920,000 | 2026-27 | same |
-| Resident, UGX 5,820,001 to 120,000,000 | UGX 405,000 + 30% over 5,820,000 | 2026-27 | same |
-| Resident, above UGX 120,000,000 | As above + additional 10% over 120,000,000 | 2026-27 | same |
+| Resident, annual, up to UGX 4,020,000 | Nil | 2026-27 | https://ura.go.ug/en/domestic-taxes/paye-rates/ (computed: UGX 335,000 a month x 12) |
+| Resident, UGX 4,020,001 to 4,920,000 | 20% over 4,020,000 (computed: the monthly URA band x 12) | 2026-27 | same |
+| Resident, UGX 4,920,001 to 5,820,000 | UGX 180,000 + 25% over 4,920,000 (computed: the monthly URA band x 12) | 2026-27 | same |
+| Resident, UGX 5,820,001 to 120,000,000 | UGX 405,000 + 30% over 5,820,000 (computed: the monthly URA band x 12) | 2026-27 | same |
+| Resident, above UGX 120,000,000 | As above + additional 10% over 120,000,000 (computed: the monthly URA band x 12) | 2026-27 | same |
 | Resident, monthly equivalent | 335,000 / 410,000 / 485,000 / 10,000,000 | 2026-27 | https://ura.go.ug/en/changes-to-paye-return-form-following-the-income-tax-amendment-act-2026/ |
 | Non-resident, monthly, to 335,000 | 10% | 2026-27 | https://ura.go.ug/en/domestic-taxes/paye-rates/ |
 | Non-resident, monthly, 335,000 to 410,000 | 33,500 + 20% over 335,000 | 2026-27 | same |
