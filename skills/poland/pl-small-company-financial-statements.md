@@ -15,14 +15,15 @@ category: financial-statements
 tax_year: 2026
 tax_year_notes: "2026 accounts. Accounting Act consolidation at 26 March 2026, with selected later amendments checked on 1 November 2026; conditional 2027 approval and filing rules."
 tier: 2
-last_updated: 2026-11-02
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
 depends_on:
   - financial-statements-workflow-base
   - workflow-base
-  - pl-corporate-income-tax
+  - pl-cit-corporate-tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+domain: financial-statements
+type: situation-rules
 ---
 
 # Poland: small company financial statements, Annex 5, 2026
@@ -33,13 +34,11 @@ Article references are to the Accounting Act of 29 September 1994, [Dz.U. 2026 p
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
-
 This is a template migration of retained research, not a new law-reading exercise or whole-guide current-law verification. The dated events below identify historical source checks with their actual retained extents. Acquisition times, legal cutoffs and this migration date are not reading dates. Every retained table row is explicitly unverified in this migration; the source index does not independently qualify every statement on that row. Resolve all applicable holds before using a figure.
 
 It produces the retained accounting base workflow working papers and reviewer brief for the qualified 2026 Annex 5 case. It does not issue an audit opinion, establish a distribution entitlement or validate a filing.
 
-## Scope statement
+## Scope
 
 ### 1. Framework, eligibility and responsibilities
 
@@ -53,9 +52,9 @@ Article 3(1)(1b) defines small as **not micro** and not exceeding at least 2 of 
 
 | Measure | Small limit | Micro limit, for the exclusion screen | Source or qualification |
 |---|---:|---:| --- |
-| Balance-sheet assets at year end | PLN 33,000,000 | PLN 2,000,000 | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Annual net sales of goods and products | PLN 66,000,000 | PLN 4,000,000 | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Average annual full-time equivalent employment | 50 | 10 | unverified: retained statement; scoped source checks below do not qualify this whole row |
+| Balance-sheet assets at year end | PLN 33,000,000 | PLN 2,000,000 | Accounting Act Article 3(1)(1a)-(1b), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Annual net sales of goods and products | PLN 66,000,000 | PLN 4,000,000 | Accounting Act Article 3(1)(1a)-(1b), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Average annual full-time equivalent employment | 50 | 10 | Accounting Act Article 3(1)(1a)-(1b), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 
 Read the complete status rules before classifying: the small definition tests the reporting and preceding year, uses the reporting year for a new activity or commencement of statutory books and separately preserves status until at least 2 limits are exceeded in **both** the reporting and preceding year. Apply the corresponding micro status and loss-of-status rules first. An election to use Annex 5 does not turn a micro entity into a small entity. Net sales have the Article 3(1)(30a)(a) definition, including discounts, grants and other adjustments and excluding VAT and other turnover taxes. These PLN size limits are distinct from the EUR audit thresholds.
 
@@ -71,19 +70,32 @@ For this qualified Annex 5 case, Article 45(2) requires **balance sheet, P&L and
 
 Obtain the reporting period, prior statements, adjusted and unadjusted trial balances, actual chart and policies, asset register, inventory evidence, receivable/payable detail, bank and loan records, payroll/accrual support, tax working papers, events after year end, company agreement, size evidence, elections, audit assessment and all preparation/signature/approval dates. Missing necessary evidence produces **Needs Input**, with the affected statement or computation held.
 
+## Ask the client first
+
+- Total assets, net sales of goods and products and average full-time employment for 2025 and 2026 (both years count), and whether the company is a micro entity.
+- Whether the owners' body has resolved to use Annex 5, and for which year.
+- Whether the company is in a group, has a foreign branch, or is in liquidation, bankruptcy or restructuring.
+- Whether an audit is required this year (the Article 64 test on the preceding year) and who the auditor is.
+- The closing trial balance, fixed-asset register, inventory count and tax computation.
+- Planned approval date and who will sign the statements.
+
+## The method, step by step
+
+Work through the filing timetable, the thresholds, the statement formats and the closing rules below, in that order.
+
 ## Filing requirements
 
 ### 8. Preparation, signatures, approval and filing
 
 | Act | Responsible body and ordinary rule | Source or qualification |
 |---|---| --- |
-| Prepare annual statements | Management ensures preparation within 3 months from balance-sheet date and presents them to the competent bodies, Article 52(1) | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Sign | Bookkeeper responsible for keeping the books and management sign, with signing dates; preserve refusals and written reasons. Apply the complete multi-person procedure below | unverified: retained statement; scoped source checks below do not qualify this whole row |
+| Prepare annual statements | Management ensures preparation within 3 months from balance-sheet date and presents them to the competent bodies, Article 52(1) | Accounting Act Article 52(1), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Sign | Bookkeeper responsible for keeping the books and management sign, with signing dates; preserve refusals and written reasons. Apply the complete multi-person procedure below | Accounting Act Article 52(2), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 | Make documents available | For the sp. z o.o., provide annual statements and management report, and mandatory audit report where relevant, at least 15 days before the meeting, Article 68 | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Audit, if required | Complete the required audit before approval, Article 53(1a); selection and contract must occur early enough for significant inventory attendance, Article 66 | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Approve | Competent shareholders approve within 6 months of balance-sheet date, Article 53(1); ordinary meeting within 6 months after financial year end, KSH 231 §1 | unverified: retained statement; scoped source checks below do not qualify this whole row |
+| Audit, if required | Complete the required audit before approval, Article 53(1a); selection and contract must occur early enough for significant inventory attendance, Article 66 | Accounting Act Article 53(1a), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Approve | Competent shareholders approve within 6 months of balance-sheet date, Article 53(1); ordinary meeting within 6 months after financial year end, KSH 231 §1 | Accounting Act Article 53(1), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 | Allocate profit/cover loss | Separate competent decision. For a mandatory-audit entity, Article 53(3) requires approval preceded by an unmodified or qualified audit opinion; allocation/coverage without that condition is void by law. The unaudited route under 53(4) requires prior approval. Apply KSH/company-agreement distribution restrictions separately | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| File approved package | Management files with the competent court register within 15 days of approval, Article 69(1) | unverified: retained statement; scoped source checks below do not qualify this whole row |
+| File approved package | Management files with the competent court register within 15 days of approval, Article 69(1) | Accounting Act Article 69(1), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 | If not approved on time | File within 15 days after the Article 53 approval deadline, then again within 15 days after subsequent approval, Article 69(2) | unverified: retained statement; scoped source checks below do not qualify this whole row |
 
 KSH 231 §4¹ separately lets shareholders request the corresponding meeting documents from convening; provide them promptly and within 2 ordinary working days, electronically on request. Check those rights alongside Article 68's advance availability requirement.
@@ -110,9 +122,9 @@ Article 79 includes failure to submit required documents to the court register, 
 
 | Item | Amount or rule | Conditions and official source |
 |---|---|---|
-| Small/micro size classification | See the complete PLN size table and both-year/new-activity/status rules in Scope statement | unverified in this migration; Accounting Act Article 3(1)(1a)/(1b)/(30a), with all exclusions retained: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
-| Mandatory audit | See the complete preceding-year 2-of-3 EUR/assets/sales/employment test under Audit assessment | unverified in this migration; distinguish at-least audit limits and Article 3(2) conversion from small-size not-exceeding limits: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
-| Book depreciation | No universal life, rate, value threshold or next-month start is established | unverified in this migration; company-supported Article 32/33/44b rules and capital-company exclusions remain under Computation rules: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Small/micro size classification | See the complete PLN size table and both-year/new-activity/status rules in Scope | Accounting Act Article 3(1)(1a)/(1b)/(30a), with all exclusions retained: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Mandatory audit | See the complete preceding-year 2-of-3 EUR/assets/sales/employment test under Audit assessment | distinguish at-least audit limits and Article 3(2) conversion from small-size not-exceeding limits: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Book depreciation | No universal life, rate, value threshold or next-month start is established | company-supported Article 32/33/44b rules and capital-company exclusions remain under Computation rules: https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 
 ## Computation rules
 
@@ -267,7 +279,7 @@ Under Article 54, material information received after preparation but before app
 
 ### 7. Current and deferred tax
 
-Establish Polish tax residence, ordinary CIT status, accounting/tax periods and the complete applicable computation before calculating current tax. Use the qualified period rules and holds in `pl-corporate-income-tax`, then reconcile accounting profit to the separate tax-source bases, timing/permanent differences, losses, deductions, credits and advances. Do not equate small accounting status with 9% CIT eligibility, or apply a headline rate to book profit. Its minimum-tax, Estonian CIT, group, financial-sector and Pillar Two refusals continue to hold the affected entry here.
+Establish Polish tax residence, ordinary CIT status, accounting/tax periods and the complete applicable computation before calculating current tax. Use the qualified period rules and holds in `pl-cit-corporate-tax`, then reconcile accounting profit to the separate tax-source bases, timing/permanent differences, losses, deductions, credits and advances. Do not equate small accounting status with 9% CIT eligibility, or apply a headline rate to book profit. Its minimum-tax, Estonian CIT, group, financial-sector and Pillar Two refusals continue to hold the affected entry here.
 
 Articles 37 and 42 distinguish the income-tax charge from payment and payable balances. Separate current expense, advance payments, settlement payable/receivable and items recognised outside P&L. Do not book a tax payment itself as this year's P&L charge without the reconciliation.
 
@@ -286,8 +298,8 @@ For an ordinary entity in the remaining-entity route, mandatory audit applies wh
 | Measure | At least | Source or qualification |
 |---|---:| --- |
 | Average annual full-time equivalent employment | 50 | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Balance-sheet assets | EUR 3,125,000 equivalent in PLN | unverified: retained statement; scoped source checks below do not qualify this whole row |
-| Net sales of goods and products | EUR 6,250,000 equivalent in PLN | unverified: retained statement; scoped source checks below do not qualify this whole row |
+| Balance-sheet assets | EUR 3,125,000 equivalent in PLN | Accounting Act Article 64(1)(4), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
+| Net sales of goods and products | EUR 6,250,000 equivalent in PLN | Accounting Act Article 64(1)(4), https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf |
 
 Use Article 3(2)'s NBP average EUR rate at the relevant balance-sheet date. Do not import the first-working-day-of-October conversion applicable to a different books threshold. The amended financial thresholds first apply to financial years beginning after 31 December 2024, using the stated preceding-year transition. Test actual figures and all category/special-route requirements before recording the conclusion. Annex 5 eligibility and audit liability can coexist.
 
@@ -305,7 +317,7 @@ Management assesses all information available when preparing the statements unde
 
 State the going concern basis and threats in the introduction and supply all material explanations. A threat is not resolved by writing a standard confirmation. If that basis is inappropriate, stop this going concern workflow and qualify the alternative measurement/reporting route; Article 29 and insolvency procedures are not established here.
 
-## Self-checks
+## Worked cases
 
 ### 12. Currency, presentation and delivery
 
@@ -375,6 +387,16 @@ expected:
   net_with_valid_omission: 270000
   net_difference: 10000
 ```
+## When to refuse or refer
+
+| Situation | Action |
+| --- | --- |
+| S.A., simple joint stock company, financial or regulated activity, ASI, group member, consolidation, foreign branch, public or non-profit body | Refer: outside this skill |
+| Liquidation, bankruptcy, restructuring, succession, or accounts under MSR/IFRS | Refer |
+| Micro entity, or no valid owners' resolution for Annex 5 | Use the applicable annex; do not apply this skill |
+| Audit required and no audit report before approval | Hold approval and any profit allocation (Article 53(1a) and (3)) |
+| Any fact, policy or tax figure unsupported | Hold the affected statement; never insert an estimate |
+
 ## Sources
 
 This is a template migration of retained research, not a new law-reading exercise or whole-guide current-law verification. The dated events below identify historical source checks with their actual retained extents. Acquisition times, legal cutoffs and this migration date are not reading dates. Every retained table row is explicitly unverified in this migration; the source index does not independently qualify every statement on that row. Resolve all applicable holds before using a figure.
@@ -395,12 +417,12 @@ This is a template migration of retained research, not a new law-reading exercis
 
 ### Sources and temporal limits
 
-- [Accounting Act consolidation, Dz.U. 2026 poz. 522](https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf): selected complete provisions identified above and complete Annex 5, with its 26 March 2026 legal cutoff. The reproduced 2024 poz. 1863 Article 14 distinguishes first-year application from commencement: the listed revised classifications/simplifications and Annex 5 first apply for years beginning after 31 December 2023; the audit financial thresholds have their separate later transition.
-- [Dz.U. 2026 poz. 640](https://api.sejm.gov.pl/eli/acts/DU/2026/640/text.pdf): complete Act, including Accounting Act Article 66(6)(1), audit transition and commencement on 28 May 2026.
-- [Dz.U. 2026 poz. 644](https://api.sejm.gov.pl/eli/acts/DU/2026/644/text.pdf): complete Accounting Act-changing Article 1 and relevant transition/commencement. Current classification/reporting changes start 29 May 2026; the selected ESAP collection changes start 10 January 2028 and are not a 2026 ESAP duty. KSH-changing Article 6 starts 10 January 2030.
-- [Dz.U. 2026 poz. 1206](https://api.sejm.gov.pl/eli/acts/DU/2026/1206/text.pdf): complete Accounting Act-changing Article 2 and commencement Article 57. Article 2 starts **11 January 2027**, changing excluded bank/financial/insurance branch and upper-parent routes. It does not extend ordinary Article 69(1)/(2) 15-day periods to 60 days. This is not a review of the entire 51-page Act.
-- [KSH consolidation, Dz.U. 2024 poz. 18](https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.pdf), legal cutoff 5 December 2023: complete Articles 4, 151, 156, 191–197, 227, 228 and 231 for the scoped company-law link. Selected relevant later units in [2024 poz. 96](https://api.sejm.gov.pl/eli/acts/DU/2024/96/text.pdf), [2026 poz. 176](https://api.sejm.gov.pl/eli/acts/DU/2026/176/text.pdf), [2026 poz. 187](https://api.sejm.gov.pl/eli/acts/DU/2026/187/text.pdf) and 2026 poz. 644 do not change that ordinary sp. z o.o. approval link or 6-month meeting rule. This does not establish a complete future KSH chain or the validity of actual meeting procedure.
-- Ministry of Finance [electronic statements guidance](https://podatki.gov.pl/e-sprawozdania-finansowe), [KRS package guidance](https://www.gov.pl/web/finanse/jakie-dokumenty-i-w-jakim-formacie-zgodnie-z-ustawa-o-rachunkowosci-jednostka-majaca-siedzibe-na-terytorium-rp-powinna-zlozyc-do-krs) and [schema list](https://www.gov.pl/web/kas/struktury-e-sprawozdan), checked 1 November 2026. Selected requirements do not attest to a completed file's acceptance or future portal availability.
+- Read 2026-11-14 (Articles 3, 52, 53, 64, 69) and 2026-11-01: [Accounting Act consolidation, Dz.U. 2026 poz. 522](https://api.sejm.gov.pl/eli/acts/DU/2026/522/text.pdf): selected complete provisions identified above and complete Annex 5, with its 26 March 2026 legal cutoff. The reproduced 2024 poz. 1863 Article 14 distinguishes first-year application from commencement: the listed revised classifications/simplifications and Annex 5 first apply for years beginning after 31 December 2023; the audit financial thresholds have their separate later transition.
+- Read 2026-11-01: [Dz.U. 2026 poz. 640](https://api.sejm.gov.pl/eli/acts/DU/2026/640/text.pdf): complete Act, including Accounting Act Article 66(6)(1), audit transition and commencement on 28 May 2026.
+- Read 2026-11-01: [Dz.U. 2026 poz. 644](https://api.sejm.gov.pl/eli/acts/DU/2026/644/text.pdf): complete Accounting Act-changing Article 1 and relevant transition/commencement. Current classification/reporting changes start 29 May 2026; the selected ESAP collection changes start 10 January 2028 and are not a 2026 ESAP duty. KSH-changing Article 6 starts 10 January 2030.
+- Read 2026-11-01: [Dz.U. 2026 poz. 1206](https://api.sejm.gov.pl/eli/acts/DU/2026/1206/text.pdf): complete Accounting Act-changing Article 2 and commencement Article 57. Article 2 starts **11 January 2027**, changing excluded bank/financial/insurance branch and upper-parent routes. It does not extend ordinary Article 69(1)/(2) 15-day periods to 60 days. This is not a review of the entire 51-page Act.
+- Read 2026-11-01: [KSH consolidation, Dz.U. 2024 poz. 18](https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.pdf), legal cutoff 5 December 2023: complete Articles 4, 151, 156, 191–197, 227, 228 and 231 for the scoped company-law link. Selected relevant later units in [2024 poz. 96](https://api.sejm.gov.pl/eli/acts/DU/2024/96/text.pdf), [2026 poz. 176](https://api.sejm.gov.pl/eli/acts/DU/2026/176/text.pdf), [2026 poz. 187](https://api.sejm.gov.pl/eli/acts/DU/2026/187/text.pdf) and 2026 poz. 644 do not change that ordinary sp. z o.o. approval link or 6-month meeting rule. This does not establish a complete future KSH chain or the validity of actual meeting procedure.
+- Read 2026-11-01: Ministry of Finance [electronic statements guidance](https://podatki.gov.pl/e-sprawozdania-finansowe), [KRS package guidance](https://www.gov.pl/web/finanse/jakie-dokumenty-i-w-jakim-formacie-zgodnie-z-ustawa-o-rachunkowosci-jednostka-majaca-siedzibe-na-terytorium-rp-powinna-zlozyc-do-krs) and [schema list](https://www.gov.pl/web/kas/struktury-e-sprawozdan), checked 1 November 2026. Selected requirements do not attest to a completed file's acceptance or future portal availability.
 
 The retained sources were read for the selected units, not as a whole-law, all-regulations, case-law or administrative-practice review. Specific transaction policies, entity evidence, legal changes after the check and actual tax/filing implementation require further qualification before reliance.
 
@@ -409,23 +431,3 @@ Not yet confirmed: all retained fact, scope, measurement, amendment-chain, schem
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The upstream project is maintained at [openaccountants.com](https://www.openaccountants.com). This fork's migrated version and recorded review status are maintained in [ryanduguid/openaccountants](https://github.com/ryanduguid/openaccountants); upstream services do not publish or verify this fork's changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
