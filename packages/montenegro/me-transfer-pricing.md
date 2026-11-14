@@ -1,14 +1,15 @@
 ---
 name: me-transfer-pricing
 description: "Montenegro transfer pricing for tax year 2026 under the Corporate Profit Tax Law (Articles 38 to 38c) and the Ministry of Finance instruction 121/22. Covers who is a related person (25% of shares, votes or profit, actual control, family members, and any company from a listed low-tax territory), the arm's-length rule and its upward-only adjustment, the seven pricing methods and their margin formulas, the 4.97% prescribed interest rate for related-party loans in 2026, the large-taxpayer criteria, the contents of full and shortened documentation, the EUR 75,000 shortened-file threshold, delivery with the return or within 45 days of a request, the 30 June transitional date, country-by-country reporting for groups with EUR 750 million revenue, fines and late-payment interest. Trigger phrases: transferne cijene, van dohvata ruke, povezana lica, Montenegro transfer pricing, related-party loan interest rate Montenegro, CbCR Montenegro."
-version: 0.2
+version: 0.3
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Montenegro transfer pricing, tax year 2026

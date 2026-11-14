@@ -3,12 +3,13 @@ name: mg-income-tax
 description: "Madagascar 2026 monthly salary IRSA computation including new top band, taxable benefits, dependent relief and foreign-employer payment; partial personal-tax scope."
 jurisdiction: MG
 tax_year: 2026
-last_updated: 2026-11-01
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Madagascar personal income tax: ordinary salary IRSA
