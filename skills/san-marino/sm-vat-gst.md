@@ -4,15 +4,16 @@ description: >
   San Marino indirect tax for 2026. San Marino has no VAT; it charges a single-stage import tax (imposta monofase) on goods and connected services brought into the Republic, under Law 40/1972. Covers who pays, the taxable base, the ordinary 17% rate, the Decree 108/1997 reduced and increased tables (2%, 6%, 10% and 21%) and the 5% energy-saving Table E, the network-utility exemption, the separate special import tax on fuels, the services tax on private customers (imposta complementare sui servizi), the 1% capital-goods rate and its vehicle, rental and retention rules, used goods, export refunds, the Italy-San Marino electronic invoicing exchange through SDI under the Italian decree of 21 June 2021, and the domestic e-invoicing transition under Delegated Decree 133/2026 (optional from 1 October 2026, required from 1 January 2027, penalties from 2028). Use for San Marino VAT, monofase rate, import tax, trading with Italy, San Marino e-invoice and capital-goods questions.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.4
+version: 0.5
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# San Marino monofase import tax and the VAT interface with Italy v0.4
+# San Marino monofase import tax and the VAT interface with Italy v0.5
 
 Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Tax Office). San Marino has no value added tax. The Finance department lists the single-stage import tax (monofase) and related levies as the domestic indirect-tax system ([Finance department][finance]). The `vat-gst` file name is kept for compatibility.
 
@@ -28,25 +29,25 @@ Tax year: calendar year 2026. Currency EUR. Authority: UO Ufficio Tributario (Ta
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Ordinary import tax rate | 17% of the taxable base, for operations from 1 January 2012 | 2026 | [DD 183/2011, arts 1-2][dd183] |
-| Table A goods (listed basic foods and other items) | 2% | 2026 | [Decree 108/1997, art 1 and Table A][d108] |
-| Table A item 23-ter added: feminine hygiene pads, tampons and cups | 2%, on imports from 1 August 2026 (Table B item 95-bis repealed) | 2026 | [DD 98/2026, arts 1-2][dd98] |
-| Table B goods (listed foods and other items) | 6% | 2026 | [Decree 108/1997, art 1 and Table B][d108] |
-| Table C petroleum products, lower band (agricultural fuel, domestic LPG 10-20 kg, industrial heating oil) | 10% | 2026 | [Decree 108/1997, Table C][d108] |
-| Table C petroleum products, upper band (road and heating diesel, automotive LPG, petrol, lubricants and all other petroleum products) | 21% (raised from 20%) | 2026 | [DD 183/2011, art 1][dd183] |
-| Table E goods (listed energy-saving and renewable-energy goods, such as photovoltaic panels and inverters, solar thermal panels, condensing boilers) | 5% from 1 July 2009 (9% when the table was created in 2008) | 2026 | [DD 133/2007, art 1 and Table E][dd133e]; [DD 87/2009, art 3][dd87] |
-| Natural gas, electricity and drinking water supplied through the public network | Exempt from import tax from 1 January 2012 | 2026 | [Decree-Law 124/2011, art 2, as ratified by Decree-Law 149/2011][dl149] |
-| Fixed tax per document (commissions, free samples, newspapers and books, collector coins, listed scrap metal bought in the EU) | 4,000 lire per document (euro amount not stated in the text read) | 2026 | [Decree 108/1997, art 3][d108] |
-| Used goods, art and antiques bought in the EU by a business | Tax on 50% of the base | 2026 | [Decree 108/1997, art 4][d108] |
-| Used vehicles taken from private persons, when registered in San Marino; collector items and coins | Tax on 10% of the base | 2026 | [Decree 108/1997, art 4][d108] |
-| Capital goods directly used in business by licensed operators | 1%, if unit value over 250, or homogeneous purchases with a base over 500 | 2026 | [Decree 135/2003, arts 1-3][d135] |
-| Business cars for mixed use | 7%, one car per licence (plus one per co-holder and per 5 permanent staff, up to 20); not open cars over 2,000 cc or closed cars over 2,000 cc with fewer than 5 seats | 2026 | [Decree 135/2003, art 4][d135] |
-| Goods for rental without driver | 9% motor vehicles, 2% aircraft, 6% boats | 2026 | [Decree 135/2003, art 5][d135] |
-| Building works and installations for new hotel and restaurant projects | 6% (other property is excluded from the capital-goods rates) | 2026 | [Decree 135/2003, art 6][d135] |
-| Capital-goods retention period | 12 months from delivery or registration; 2 years for mixed-use cars | 2026 | [Decree 135/2003, art 7][d135] |
-| Domestic e-invoicing exclusion | Operators with prior-year declared revenue below 100,000 (they can opt in) | 2027 | [DD 133/2026, art 2(2)][dd133] |
-| Domestic e-invoicing penalty | 100 per violation, from 1 January 2028 | 2028 | [DD 133/2026, arts 6, 11(4)][dd133] |
-| Italian supplier's invoice not validated by the San Marino Tax Office | Italian supplier issues a credit note within 30 days after 4 months from issue | 2026 | [Italian DM 21 June 2021, art 3(3)][italy] |
+| Ordinary import tax rate | 17% of the taxable base, for operations from 1 January 2012 | 2026 | [DD 183/2011, arts 1-2](https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html) |
+| Table A goods (listed basic foods and other items) | 2% | 2026 | [Decree 108/1997, art 1 and Table A](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Table A item 23-ter added: feminine hygiene pads, tampons and cups | 2%, on imports from 1 August 2026 (Table B item 95-bis repealed) | 2026 | [DD 98/2026, arts 1-2](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=e54431a0e32f941616323ba3300c13a32828e853) |
+| Table B goods (listed foods and other items) | 6% | 2026 | [Decree 108/1997, art 1 and Table B](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Table C petroleum products, lower band (agricultural fuel, domestic LPG 10-20 kg, industrial heating oil) | 10% | 2026 | [Decree 108/1997, Table C](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Table C petroleum products, upper band (road and heating diesel, automotive LPG, petrol, lubricants and all other petroleum products) | 21% (raised from 20%) | 2026 | [DD 183/2011, art 1](https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html) |
+| Table E goods (listed energy-saving and renewable-energy goods, such as photovoltaic panels and inverters, solar thermal panels, condensing boilers) | 5% from 1 July 2009 (9% when the table was created in 2008) | 2026 | [DD 133/2007, art 1 and Table E](https://faolex.fao.org/docs/pdf/smr76724.pdf); [DD 87/2009, art 3](https://faolex.fao.org/docs/pdf/smr89742.pdf) |
+| Natural gas, electricity and drinking water supplied through the public network | Exempt from import tax from 1 January 2012 | 2026 | [Decree-Law 124/2011, art 2, as ratified by Decree-Law 149/2011](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17045584.html) |
+| Fixed tax per document (commissions, free samples, newspapers and books, collector coins, listed scrap metal bought in the EU) | 4,000 lire per document (euro amount not stated in the text read) | 2026 | [Decree 108/1997, art 3](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Used goods, art and antiques bought in the EU by a business | Tax on 50% of the base | 2026 | [Decree 108/1997, art 4](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Used vehicles taken from private persons, when registered in San Marino; collector items and coins | Tax on 10% of the base | 2026 | [Decree 108/1997, art 4](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html) |
+| Capital goods directly used in business by licensed operators | 1%, if unit value over 250, or homogeneous purchases with a base over 500 | 2026 | [Decree 135/2003, arts 1-3](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html) |
+| Business cars for mixed use | 7%, one car per licence (plus one per co-holder and per 5 permanent staff, up to 20); not open cars over 2,000 cc or closed cars over 2,000 cc with fewer than 5 seats | 2026 | [Decree 135/2003, art 4](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html) |
+| Goods for rental without driver | 9% motor vehicles, 2% aircraft, 6% boats | 2026 | [Decree 135/2003, art 5](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html) |
+| Building works and installations for new hotel and restaurant projects | 6% (other property is excluded from the capital-goods rates) | 2026 | [Decree 135/2003, art 6](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html) |
+| Capital-goods retention period | 12 months from delivery or registration; 2 years for mixed-use cars | 2026 | [Decree 135/2003, art 7](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html) |
+| Domestic e-invoicing exclusion | Operators with prior-year declared revenue below 100,000 (they can opt in) | 2027 | [DD 133/2026, art 2(2)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
+| Domestic e-invoicing penalty | 100 per violation, from 1 January 2028 | 2028 | [DD 133/2026, arts 6, 11(4)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
+| Italian supplier's invoice not validated by the San Marino Tax Office | Italian supplier issues a credit note within 30 days after 4 months from issue | 2026 | [Italian DM 21 June 2021, art 3(3)](https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf) |
 
 ## 3. The base
 
@@ -76,10 +77,10 @@ The San Marino seller's e-invoice goes through the San Marino Tax Office to SDI 
 
 | Period | Rule | Source |
 |---|---|---|
-| 1 October to 31 December 2026 | Covered operators can choose to transmit domestic business invoices and credit notes electronically instead of on paper | [DD 133/2026, art 11(1)][dd133] |
-| From 1 January 2027 | Electronic invoices required between economic operators (COE to COE), unless revenue in the prior calendar year was below 100,000; paper-invoice rules also start | [DD 133/2026, arts 2, 11(2)-(3)][dd133] |
-| From 1 January 2028 | The article 6 and 7 penalties apply | [DD 133/2026, art 11(4)][dd133] |
-| State, public administration and public bodies | When the implementing regulation enters into force | [DD 133/2026, art 11][dd133] |
+| 1 October to 31 December 2026 | Covered operators can choose to transmit domestic business invoices and credit notes electronically instead of on paper | [DD 133/2026, art 11(1)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
+| From 1 January 2027 | Electronic invoices required between economic operators (COE to COE), unless revenue in the prior calendar year was below 100,000; paper-invoice rules also start | [DD 133/2026, arts 2, 11(2)-(3)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
+| From 1 January 2028 | The article 6 and 7 penalties apply | [DD 133/2026, art 11(4)](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
+| State, public administration and public bodies | When the implementing regulation enters into force | [DD 133/2026, art 11](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=4d7f1ffcf645b166ffc567d328d888e43fcdd538) |
 
 An operator that exceeded 100,000 or opted in must keep using e-invoices in later years ([DD 133/2026, art 2(3)][dd133]). The invoice is prepared and transmitted by the second month after delivery or shipment (goods), completion (services) or payment (advances), with special rules for continuous supplies ([DD 133/2026, art 3][dd133]). An invoice rejected by HUB SM is treated as not issued ([DD 133/2026, art 4(3)][dd133]). The 100,000 test is an invoice-format rule, not a registration or tax threshold.
 

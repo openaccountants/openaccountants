@@ -1,83 +1,82 @@
 ---
 name: mt-freelance-intake
-description: "Neutral document intake and routing for Malta personal-tax research. Does not compute tax, assemble a filing-ready package, map official return boxes, file, pay or certify compliance."
-version: 0.3
+description: "Document intake and routing for a Malta self-employed or personal-tax client, basis year 2026. Collects the facts and documents, keeps the TA24, VAT, social security and provisional tax papers apart, and routes each question to the Malta skill that owns it (income tax, provisional tax, social security, payroll, VAT, rent, non-dom, crypto, capital gains). It does not compute tax, map return boxes, file, pay or certify compliance."
+version: "1.0"
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
-# Malta personal-tax intake v0.3
-
-**Source-cited draft. Restricted to neutral document collection and routing.** The former automated filing workflow is quarantined because it used the rental TA24 as the annual business return, unsupported box mappings, the wrong provisional-tax benchmark and quarterly Class 2 scheduling. This router does not produce filing instructions, return-box values, payment amounts or a filing-ready package.
+# Malta personal-tax intake and routing, basis year 2026
 
 ## Scope
 
-Collect facts and documents for a specific basis year and route questions to the relevant Malta Guide. Basis year 2026 is assessment year 2027. Do not assume the taxpayer is domiciled in Malta, entitled to a family table or exempt from a contribution merely because they are resident.
+This router collects facts and documents for one basis year and sends each question to the Malta skill that owns it. Basis year 2026 is year of assessment 2027. It carries no rates, no amounts and no return box numbers: each destination skill holds its own figures and sources.
+
+It replaced `mt-return-assembly` on 14 November 2026: the two files had the same body, so one was retired. The former automated filing workflow behind both stays withdrawn, because it used the rental TA24 as the annual business return, return-box mappings with no official source, the wrong provisional-tax benchmark year and quarterly Class 2 scheduling.
+
+Do not assume a resident is domiciled, entitled to a family rate table, or exempt from a contribution.
+
+Built from the law: not yet approved by an accountant.
 
 ## Ask the client first
 
-- Which basis year, and which returns or notices have already been issued?
-- Individual or entity; residence, domicile, ordinary residence and any special legal residence status?
-- Employment, own business, rent, investment income, foreign income or capital gains?
-- Relevant marital status, children, custody/maintenance and citizenship/status facts?
-- Actual business start/cessation date, employment/contribution history, date of birth, VAT registration and cross-border supplies?
+- Which basis year, and which returns or notices have already been issued (tax statement, PT notice, SSC bills)?
+- Individual or entity; residence, domicile, ordinary residence and any special residence status (permanent residence, programmes)?
+- Income types: employment, own business, rent, investment income, foreign income, capital gains, crypto?
+- Marital status, children, custody and maintenance, for the rate table.
+- Business start or cessation date, employment and contribution history, date of birth, VAT registration and cross-border supplies.
 
-Read provided documents first. Ask only for missing facts that affect the computation or route. An uploaded bank debit is not proof of its tax allocation.
+Read the documents supplied first. Ask only for missing facts that change the computation or the route. An uploaded bank debit is not proof of its tax allocation.
 
 ## The method, step by step
 
-1. Record source documents, periods and missing items without inventing tax facts.
-2. Keep income records, expenses, capital assets, employment statements, tax notices, VAT returns and SSC bills as separate schedules. Keep private data outside the public repository.
-3. Obtain the actual PT notice and benchmark-year self-assessment. Ordinarily 2026 PT refers to basis 2024 / assessment 2025, not basis 2025. An override or missing-return history needs the detailed PT Guide.
-4. Class 2 is reconciled by contribution weeks and three four-monthly periods, not four quarterly totals. Obtain the actual bills and allocations.
-5. Route using the table below. Do not manufacture return box numbers or require VAT turnover to equal income without an explained timing/scope bridge.
-6. List unresolved questions and source discrepancies. A source-cited draft is not a professional approval or permission to file/pay. A qualified practitioner must determine the actual return and review any eventual computation outside this neutral router.
+1. Record each source document, its period and what is missing, without inventing tax facts.
+2. Keep income records, expenses, capital assets, employment statements (FS3), tax notices, VAT returns and SSC bills as separate schedules. Keep private data out of the public repository.
+3. Provisional tax: obtain the PT notice and the benchmark-year self-assessment (for 2026, normally basis 2024, year of assessment 2025), not the latest profit figure. Route to [mt-estimated-tax](mt-estimated-tax.md).
+4. Class 2 contributions: reconcile by contribution weeks and the actual bills and allocations, not by four quarterly totals. Route to [malta-ssc](malta-ssc.md).
+5. Rent: a TA24 is the 15% final tax on rent, not the self-employed annual return. Route to [mt-rental-income](mt-rental-income.md).
+6. Route every other question using the table below. Do not create return box numbers, and do not require VAT turnover to equal income without an explained timing or scope bridge.
+7. List open questions and source conflicts for the practitioner. A route is not permission to file or pay.
 
-## Topic routing
+### Topic routing
 
 | Question | Destination | Boundary |
 |---|---|---|
-| Personal business/employment income, deductions, family table | [Malta income tax](../malta/malta-income-tax.md) | Parent with one qualifying child above €60,000: compute with the Act's €10,270 and say that MTCA's table shows €10,275 ([Act III of 2026, art. 19](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430)) |
-| Provisional tax | [Estimated tax](../malta/mt-estimated-tax.md) | Actual benchmark-year return and notice, not the latest profit figure |
-| Personal contributions | [Social security](../malta/malta-ssc.md) | No unsupported personal SSC deduction or fictitious return box |
-| Payroll records | [Payroll](../malta/malta-payroll.md) | Actual FS forms and applicable annual tables |
-| VAT | [VAT return](../malta/malta-vat-return.md) | VAT regime, place of supply and periods need their own analysis |
-| Rent at final tax | [Rental income](../malta/mt-rental-income.md) | TA24 is rental final tax, not the annual self-employed return |
-| Residence, remittances and foreign income | [Non-dom](../malta/mt-non-dom.md) | Apply legal-status and spouse exclusions before remittance treatment |
-| Crypto | [Crypto](../malta/mt-crypto-tax.md) | Held DeFi and recognition questions cannot be filled by a default |
+| Business or employment income, deductions, rate tables | [malta-income-tax](malta-income-tax.md) | Where the Act and MTCA's published table differ, that skill says which governs |
+| Provisional tax | [mt-estimated-tax](mt-estimated-tax.md) | The benchmark-year return and notice, not the latest profit |
+| Social security, Class 1 and Class 2 | [malta-ssc](malta-ssc.md) | No personal SSC deduction or return box that the law does not give |
+| Employer payroll, FSS forms | [malta-payroll](malta-payroll.md) | The actual FS forms and that year's tables |
+| VAT | [malta-vat-return](malta-vat-return.md) | Registration article, place of supply and periods need their own analysis |
+| Rent | [mt-rental-income](mt-rental-income.md) | TA24 is the rental final tax |
+| Selling Malta property | [mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md) | Notary collects; final tax |
+| Shares and other capital gains | [mt-capital-gains](mt-capital-gains.md) | 7% provisional tax within fifteen days |
+| Residence, remittances, foreign income | [mt-non-dom](mt-non-dom.md) | Check the status and spouse exclusions before the remittance basis |
+| Crypto | [mt-crypto-tax](mt-crypto-tax.md) | Held receipt classes are not filled by a default |
+| Company, formation or accounts | [mt-corporate-tax](mt-corporate-tax.md), [malta-formation](malta-formation.md), [malta-financial-statements](malta-financial-statements.md) | Entity work is outside personal intake |
 
-## Worked cases
+### Routing examples
 
-**Document-routing example 1.** A taxpayer supplies a TA24 rental submission and business invoices. Record the rental submission separately and request the actual personal income tax return or notice for the business year. Do not enter business fees into a fictional TA24 Box 1.
-
-**Document-routing example 2.** A 2026 PT request arrives with a basis-2025 profit schedule. Record that document but request the PT notice and basis-2024 self-assessment before routing to the PT computation. Do not use basis-2025 profit as the 2026 benchmark.
-
-## Deadlines and filing boundary
-
-This router gives no filing or payment instructions. Calendar context only: MTCA's 3 June 2026 notice extended both manual/electronic individual assessment-2026 returns and the related tax to **31 July 2026**. The general statutory assessment-2027 individual date is **30 June 2027**, subject to any later notice. Confirm the actual year and notice before a practitioner prepares instructions.
+- A client supplies a TA24 and business invoices. Record the TA24 under rent, and ask for the personal return or tax statement for the business year. Do not put business fees into a TA24.
+- A 2026 PT request arrives with a basis-2025 profit schedule. Record it, and ask for the PT notice and the basis-2024 self-assessment before routing to provisional tax.
 
 ## When to refuse or refer
 
-Hold any requested filing package until the genuine form, computation, source evidence and independent review exist. Refer entity, disputed residence, complex cross-border, historic arrears and unresolved authority discrepancies to the appropriate practitioner. Never treat self-check failure as a reason to publish a complete filing-ready output anyway.
-
-## Archive and old-topic destinations
-
-The complete superseded body is retained at [personal archive](../../evidence/malta-deep-audit-20261104/personal-archive/mt-freelance-intake.md). The [changed-claim ledger and full old-topic destination table](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-freelance-intake.md) preserves every former section and identifies its safe route or quarantine. Archive content is historical research, not operative instructions.
+- Hold any request for a filing package until the real form, the computation from the owning skill, the source evidence and an independent review exist.
+- Refer entities, disputed residence, complex cross-border cases, historic arrears and unresolved conflicts between authorities to a practitioner.
+- Do not give filing or payment instructions, return-box values or payment amounts from this router; the owning skill gives them.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| MTCA TA24 rental service | https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-%28ta24%29 | 2026-11-04 |
-| PT Rules, S.L. 372.18, rules 2–7 | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
-| Social Security Act, article 11 | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-04 |
-| MTCA assessment-2026 filing/payment extension | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
-| Statutory Dates Rules, S.L. 372.16, rules 2 and 5 | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
-| Act III of 2026, art. 19: ITA art. 56(1)(b)(iv)(d), subtraction €10,270 | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-08 |
+| Read for the TA24 service (myTax for residents, separate form for non-residents and companies): TA24 is the rental final tax | https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-(ta24) | 2026-11-14 |
+| Read for S.L. 372.18 rules 2 and 6 (benchmark year of assessment and benchmark) | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-14 |
+| Read for S.L. 372.16 rule 2(c) (return dates, used only to fix the year of assessment) | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-14 |
 
-Not yet confirmed: no official personal-return box mapping, complete tax computation, payment allocation or professional approval is supplied by this neutral router. Do not treat it as a filing package.
+Not yet confirmed: none for routing. This router supplies no return-box mapping, computation, payment allocation or approval.
