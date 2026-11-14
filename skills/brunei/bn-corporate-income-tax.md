@@ -35,8 +35,8 @@ Out of this skill:
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
 | Corporate income tax rate | 18.5% of chargeable income, YA 2015 and every later YA | YA 2026 | https://www.mof.gov.bn/div_revenue_faq_corporatetax/ |
-| Tax threshold, existing company, first BND 100,000 of chargeable income | Taxed at 25% of the applicable rate (effective 4.625%), section 35(4), YA 2011 onward | YA 2026 | https://www.mof.gov.bn/div_revenue_typesoftaxes_incometax/ |
-| Tax threshold, existing company, next BND 150,000 (BND 100,001 to 250,000) | Taxed at 50% of the applicable rate (effective 9.25%), section 35(4) | YA 2026 | same |
+| Tax threshold, existing company, first BND 100,000 of chargeable income | Taxed at 25% of the applicable rate (effective 4.625%, computed: 25% of 18.5%), section 35(4), YA 2011 onward | YA 2026 | https://www.mof.gov.bn/div_revenue_typesoftaxes_incometax/ |
+| Tax threshold, existing company, next BND 150,000 (BND 100,001 to 250,000) | Taxed at 50% of the applicable rate (effective 9.25%, computed: 50% of 18.5%), section 35(4) | YA 2026 | same |
 | Chargeable income above BND 250,000 | Full applicable rate, 18.5% | YA 2026 | same |
 | Newly incorporated company, first BND 100,000 | Exempt, for the first 3 consecutive YAs (the YA of the basis period in which it was incorporated and the next 2), section 35(5) | YA 2026 | same |
 | Newly incorporated company, next BND 150,000 | Taxed at 50% of the applicable rate, same 3 YAs | YA 2026 | same |
