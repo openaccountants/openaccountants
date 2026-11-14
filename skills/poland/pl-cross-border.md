@@ -112,7 +112,7 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 | PIT-8AR annual return of flat-rate tax withheld (filed electronically, art. 45ba; so is the IFT-1R) | Payer | End of January 2027 | PIT Act art. 42 ust. 1a; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
 | IFT-1R information on income of a non-resident individual | Payer, to the taxpayer and to the tax office for foreign persons; also where a treaty means nothing was withheld | End of February 2027; within 14 days of the taxpayer's written request | PIT Act art. 42 ust. 2 pkt 2, 4 and 6 |
 | PIT-11 for revenue covered by the return relief | Employer | With the usual PIT-11 | PIT Act art. 42 ust. 5 |
-| PIT-NZ exit tax return and payment | Taxpayer | By the 7th of the month after the month in which the assets moved pass PLN 4,000,000 | PIT Act art. 30da ust. 14; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
+| PIT-NZ exit tax return and payment | Taxpayer | By the 7th of the month after the month in which the assets moved pass PLN 4,000,000 (PIT Act text: https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) | PIT Act art. 30da ust. 14; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
 
 ## Penalties and interest
 

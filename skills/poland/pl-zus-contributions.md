@@ -38,11 +38,11 @@ This skill covers what a sole trader in Poland pays to ZUS on themself in 2026: 
 | Minimum wage (monthly) | PLN 4,806 | 2026 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Forecast average wage | PLN 9,420 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 24) |
 | Standard minimum base: 60% of the forecast wage (ZUS Act art. 18 ust. 8) | PLN 5,652 a month | 2026 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Pension (emerytalne) | 19.52% (PLN 1,103.27 on the standard base) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (art. 22) |
+| Pension (emerytalne) | 19.52% (PLN 1,103.27 on the standard base, computed) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (art. 22) |
 | Disability (rentowe) | 8.00% (PLN 452.16) | 2026 | same, art. 22 |
 | Sickness (chorobowe), voluntary | 2.45% (PLN 138.47) | 2026 | same, art. 22 |
 | Accident (wypadkowe), up to 9 insured persons | 1.67% (PLN 94.39) | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Labour Fund (FP) 1.0% + Solidarity Fund (FS) 1.45% | 2.45% (PLN 138.47), only if the base is at least the minimum wage | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 25, 26) |
+| Labour Fund (FP) 1.0% + Solidarity Fund (FS) 1.45% | 2.45% (PLN 138.47; total and amount computed), only if the base is at least the minimum wage | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf (art. 25, 26) |
 | Total on the standard base, with sickness / without | PLN 1,926.76 / PLN 1,788.29 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Preferential base: 30% of the minimum wage, first 24 months (art. 18a) | PLN 1,441.80 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Total on the preferential base, with sickness / without (no FP or FS) | PLN 456.18 / PLN 420.86 a month | 2026 | zus.pl page above; https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
