@@ -1,14 +1,15 @@
 ---
 name: slovakia-vat-registration-4-7-7a
 description: "Which Slovak VAT registration a client needs in 2026 under Act No. 222/2004 Coll.: § 4 (VAT payer, EUR 50,000 calendar-year turnover for payer status from 1 January of the next year, EUR 62,500 for payer status at the crossing supply, application within five working days), voluntary § 4 registration, § 7 (goods from other member states, EUR 14,000) and § 7a (cross-border services, no threshold), and why a § 7 or § 7a registrant self-assesses VAT but cannot deduct it. Covers the 2025 change from EUR 49,790 over 12 months to the calendar-year test, decision times, and the fine for late registration. Trigger on: Slovak VAT registration, registracia DPH, platitel dane, § 7a, IC DPH, Meta or Google Ireland invoices Slovakia. Out of scope: the periodic return, rates, control statement and penalties (slovakia-vat-return), income tax (slovakia-pit)."
-version: 1.3
+version: 1.4
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Slovakia VAT registration (§4, §7, §7a), 2026
@@ -102,7 +103,7 @@ A §7/§7a registrant keeps records of its EU acquisitions, outgoing §15(1) ser
 
 ### Actual registration form and statutory selection
 
-The [official active catalog](https://www.financnasprava.sk/sk/katalog-formularov) identifies **REGDPv24**, valid from 1 January 2025, as the common registration/change/cancellation form. Its actual [electronic form589](https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html) distinguishes individual/legal person, registration/change/cancellation and the VAT tax type. In **Annex 1 — VAT**, select the statutory ground that actually applies, retaining the event date and supporting evidence:
+The [official active catalog](https://www.financnasprava.sk/sk/katalog-formularov) identifies **REGDPv24**, valid from 1 January 2025, as the common registration/change/cancellation form. Its actual [electronic form589](https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html) distinguishes individual/legal person, registration/change/cancellation and the VAT tax type. In **Annex 1: VAT**, select the statutory ground that actually applies, retaining the event date and supporting evidence:
 
 - Mandatory §4(2), with the applicable §4(1)(a)–(i) event; later payer-status notices under §4(5) or §4(7) have separate selections. The form distinguishes exceeding EUR 50,000 without exceeding EUR 62,500 from exceeding EUR 62,500, as well as the other statutory events.
 - Ordinary voluntary application under §4(7), including the before-EUR-50,000 §4(6)(a) selection; the two early-status elections use the separate §4(8) notice and its §4(8)(a)/(b) choice. A checkbox does not displace the status date, decision-delivery condition or notice deadline established above.
@@ -226,7 +227,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | VAT Act 222/2004, full 2026 version: §§3,4,5a,7,7a,11,15,19,22,27,49,51,55,70,72–74,76–78a,80–82,85kn | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-27 |
-| Tax Procedure Code 563/2009, full version September to December 2026: §§27,154–156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-27 |
+| Tax Procedure Code 563/2009, full version September to December 2026: §§ 27, 154–156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-27 |
 | Tax Procedure Code, full version January to August 2026: same relevant fine/first-breach and timing rules checked | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260101.html | 2026-10-27 |
 | FS SR registration method 2/DPH/2025/MP, 22 September 2025: economic activity/preparatory acts, turnover, status, voluntary timing, credit-note and appeal treatment | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf | 2026-10-27 |
 | Historical VAT Act, 2024 version: §4(1), §7(3), §7a(3), §27(1); not used as current law | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html | 2026-10-27 |

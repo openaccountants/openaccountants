@@ -1,50 +1,25 @@
 ---
 name: pt-return-assembly
-description: "Utilizar esta skill sempre que for solicitada a montagem, finalização ou consolidação de um pacote fiscal anual português do período de tributação de 2026 (campanha de entrega em 2027): IRS (pessoas singulares, Modelo 3 e anexos, entregue de 1 de abril a 30 de junho de 2027) e/ou IRC (sociedades, Modelo 22 até 31 de maio de 2027, IES até 15 de julho de 2027). Acionar com expressões como \"preparar declaração IRS final\", \"preparar Modelo 22 final\", \"pacote contabilista certificado\", \"working paper Portugal\", \"submissão Portal das Finanças\", \"consolidação fiscal Portugal\", \"fechar a declaração\", \"montar dossier fiscal\", \"review final antes de submeter no Portal das Finanças\", \"pacote OCC para revisão\", \"encerramento do ano fiscal português\", \"preparar IES\", \"preparar SAF-T anual\", \"consolidar Modelo 3 e Anexos\", \"consolidar Modelo 22 e Anexos\", ou pedidos equivalentes em inglês: \"Portugal return assembly\", \"Portugal final tax package\", \"Portugal working paper\", \"Portugal IRS/IRC submission package\", \"Portuguese tax return capstone\". Esta é a skill capstone orquestradora que consolida os outputs de pt-income-tax, pt-irs-employees-investment, pt-nhr-ifici, pt-foreign-source-treaties, pt-corporate-tax, portugal-vat-return, pt-social-contributions, portugal-payroll, portugal-bookkeeping, portugal-financial-statements e portugal-crypto-tax num único working paper unificado, com reconciliações cross-skill, instruções de pagamento via Portal das Finanças, instruções de submissão (Modelo 3 / Modelo 22 / IES / SAF-T) e lista final de ações do contribuinte. Não recalcula nada: apenas reconcilia, monta e empacota para o revisor. O mapa de inputs por anexo, os campos do Modelo 22 e as instruções de submissão, prazos e coimas estão na skill filha pt-return-assembly-filing, que se carrega junto com esta. Fora do âmbito: não-residentes (pt-cross-border), preços de transferência em detalhe (pt-transfer-pricing). LER SEMPRE este skill em ÚLTIMO LUGAR: é o capstone que consolida todos os outputs upstream."
-version: 1.2
+description: "Utilizar esta skill sempre que for solicitada a montagem, finalização ou consolidação de um pacote fiscal anual português do período de tributação de 2026 (campanha de entrega em 2027), IRS (pessoas singulares, Modelo 3 e anexos, entregue de 1 de abril a 30 de junho de 2027) e/ou IRC (sociedades, Modelo 22 até 31 de maio de 2027, IES até 15 de julho de 2027). Acionar com expressões como \"preparar declaração IRS final\", \"preparar Modelo 22 final\", \"pacote contabilista certificado\", \"working paper Portugal\", \"submissão Portal das Finanças\", \"consolidação fiscal Portugal\", \"fechar a declaração\", \"montar dossier fiscal\", \"review final antes de submeter no Portal das Finanças\", \"pacote OCC para revisão\", \"encerramento do ano fiscal português\", \"preparar IES\", \"preparar SAF-T anual\", \"consolidar Modelo 3 e Anexos\", \"consolidar Modelo 22 e Anexos\", ou pedidos equivalentes em inglês, \"Portugal return assembly\", \"Portugal final tax package\", \"Portugal working paper\", \"Portugal IRS/IRC submission package\", \"Portuguese tax return capstone\". Esta é a skill capstone orquestradora que consolida os outputs de pt-income-tax, pt-irs-employees-investment, pt-nhr-ifici, pt-foreign-source-treaties, pt-corporate-tax, portugal-vat-return, pt-social-contributions, portugal-payroll, portugal-bookkeeping, portugal-financial-statements e portugal-crypto-tax num único working paper unificado, com reconciliações cross-skill, instruções de pagamento via Portal das Finanças, instruções de submissão (Modelo 3 / Modelo 22 / IES / SAF-T) e lista final de ações do contribuinte. Não recalcula nada, apenas reconcilia, monta e empacota para o revisor. O mapa de inputs por anexo, os campos do Modelo 22 e as instruções de submissão, prazos e coimas estão na skill filha pt-return-assembly-filing, que se carrega junto com esta. Fora do âmbito, não-residentes (pt-cross-border), preços de transferência em detalhe (pt-transfer-pricing). LER SEMPRE este skill em ÚLTIMO LUGAR, é o capstone que consolida todos os outputs upstream."
+version: 2.0
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: filing-howto
 ---
 
 # PT Return Assembly
 
-## Portugal: Montagem Final da Declaração (Capstone), Skill v1.2 (período de tributação 2026)
+## Scope
 
-## DIRETIVA DE EXECUÇÃO CRÍTICA: LER PRIMEIRO
+This capstone assembles the Portuguese annual tax package for tax period 2026 (filed in 2027): it collects the outputs of the domain skills, runs the cross-skill reconciliations, builds the working paper for the contabilista certificado, produces the headline liability block, payment and submission instructions, the 2027 action calendar and the 2027 planning notes, and holds the reviewer sign-off block, conservative defaults and refusal catalogue. The annex-by-annex input map and the submission steps are in its child `pt-return-assembly-filing`.
 
-**Quando esta skill é invocada, o contribuinte já passou pelo intake e pelas skills de conteúdo relevantes. Pretende o working paper final pronto para revisão pelo Contabilista Certificado (OCC). Executar todos os passos sem parar para pedir autorização.**
+Who is in: Portuguese-resident individuals (Modelo 3) and companies (Modelo 22, IES) whose figures come from the pack's domain skills. Who is out: computing any tax itself (domain skills), non-residents beyond pointers, and filing without the taxpayer's approval or, for organised accounts, the contabilista certificado's signature. The 2026 IRS bands are those cut by Decreto-Lei 212/2026.
 
-Em concreto:
-
-- **Não perguntar "quer que monte o pacote completo?".** O utilizador pediu a montagem. Produzir.
-- **Não voltar a interrogar sobre NIF, residência fiscal, NIPC, CAE, ou estrutura do negócio.** O intake já capturou estes dados; confiar nos packages upstream.
-- **Não pausar entre passos de reconciliação para confirmar.** Executar todas as verificações cruzadas em sequência; sinalizar falhas no brief do revisor e continuar.
-- **As auto-verificações são alvos, não bloqueadores.** Se uma verificação falhar, registar em "Sinalizações para o Revisor" e continuar.
-- **Não submeter nada no Portal das Finanças, no e-fatura, no portal da Segurança Social, ou em qualquer outro portal.** Esta skill produz um working paper e instruções de submissão. Um **Contabilista Certificado** (membro da OCC, Ordem dos Contabilistas Certificados) tem de rever e assinar quando a declaração assenta em contabilidade organizada, e o contribuinte (ou o CC, no seu acesso) submete via Portal das Finanças.
-
-**Se sentir necessidade de perguntar "como devo proceder?", escolha o caminho mais defensável, prossiga, e sinalize a decisão para o revisor.**
-
-## O que este ficheiro é
-
-A skill capstone final para a campanha fiscal portuguesa do **período de tributação de 2026**, cujas declarações anuais são entregues em 2027. Consome os outputs de todas as outras skills Portugal e monta um único working paper unificado que cobre, conforme aplicável:
-
-- **Modelo 3 do IRS**: declaração anual de rendimentos das pessoas singulares (trabalhadores por conta de outrem, pensionistas, trabalhadores independentes / Categoria B, sócios-gerentes que recebam remuneração, sujeitos passivos com rendimentos prediais ou de mais-valias), entregue por transmissão eletrónica no **Portal das Finanças** de 1 de abril a 30 de junho de 2027 (CIRS art. 60.º, n.º 1), com o rosto e os anexos A, B, C, D, E, F, G, G1, H, I, J e L (Portaria n.º 104/2026/1, art. 1.º) e o Anexo SS quando aplicável.
-- **Modelo 22 do IRC**: declaração periódica de rendimentos das sociedades e outras entidades sujeitas a IRC, enviada até ao último dia de maio de 2027 (CIRC art. 120.º, n.º 1), com os anexos aplicáveis (Despacho n.º 320/2026): A (derrama municipal), C (regiões autónomas), D (benefícios fiscais), E (regime simplificado), F (organismos de investimento coletivo), G (regime especial do transporte marítimo) e AIMI. O Anexo B só se usa para períodos anteriores a 2011.
-- **IES (Informação Empresarial Simplificada)**: declaração anual de informação contabilística e fiscal (CIRC art. 117.º, n.º 1, al. c), e art. 121.º), enviada até 15 de julho de 2027.
-- **SAF-T (PT)**: ficheiro normalizado criado pela Portaria n.º 321-A/2007; a comunicação das faturas à AT é feita até ao dia 5 do mês seguinte ao da emissão (Decreto-Lei n.º 198/2012, art. 3.º, n.º 2).
-- **Declaração periódica de IVA**: mensal (volume de negócios do ano anterior igual ou superior a €650.000) ou trimestral, até ao dia 20 do 2.º mês seguinte (CIVA art. 41.º, n.º 1).
-- **DMR (Declaração Mensal de Remunerações)**: obrigação dos empregadores, até ao dia 10 do mês seguinte ao do pagamento (CIRS art. 119.º, n.º 1, al. c), subal. i)).
-- **Declaração trimestral da Segurança Social** dos trabalhadores independentes: até ao último dia de janeiro, abril, julho e outubro (ISS, Guia Prático dos Trabalhadores Independentes).
-
-**Skill filha.** Esta skill tem uma filha, `pt-return-assembly-filing`, com as Secções 2 (inputs por anexo e campos dos formulários) e 7 (instruções de submissão, prazos, coimas e substituição). Carregar as duas.
-
-O output é um pacote pronto para o revisor: working paper linha-a-linha, tabela de reconciliação cross-skill, instruções de pagamento (referência para pagamento gerada pelo Portal das Finanças), instruções de submissão para Portal das Finanças e Segurança Social Direta, checklist do revisor, e lista final de ações do contribuinte.
-
-## Secção 1: Referência Rápida
+### Quick reference
 
 **Referência Rápida**
 
@@ -75,22 +50,85 @@ O output é um pacote pronto para o revisor: working paper linha-a-linha, tabela
 | Prazo declaração trimestral SS (independentes) | Até ao **último dia de janeiro, abril, julho e outubro** (ISS, Guia Prático) |
 | Recibo / comprovativo | Comprovativo de entrega emitido pelo Portal das Finanças |
 | Legislação fundamental | Código do IRS (Decreto-Lei n.º 442-A/88), Código do IRC (Decreto-Lei n.º 442-B/88), Código do IVA (Decreto-Lei n.º 394-B/84), Lei Geral Tributária (LGT, Decreto-Lei n.º 398/98), Regime Geral das Infrações Tributárias (RGIT, Lei n.º 15/2001), Código Contributivo (Lei n.º 110/2009), Estatuto dos Benefícios Fiscais (EBF, Decreto-Lei n.º 215/89), Lei n.º 64/2025 (taxas de IRC 2026 e 2027), Orçamento do Estado para 2026 (Lei n.º 73-A/2025), Estatuto da OCC |
-| Versão da skill | 1.2 |
+| Versão da skill | 2.0 |
 | Validada por | Pendente: requer assinatura por **Contabilista Certificado** membro da OCC quando a declaração assenta em contabilidade organizada (Estatuto da OCC, art. 10.º, n.º 1, al. b)) |
 
 **Prazos em dia não útil.** Os prazos do Modelo 3, do Modelo 22 e da IES correm "independentemente de esse dia ser útil ou não útil". Para os prazos de IVA, a regra de transição para o dia útil seguinte e as datas concretas de 2027 estão em `portugal-vat-return`.
 
-## Secção 2: Entradas Obrigatórias dos Skills Upstream
+## Ask the client first
+
+- Individual, company, or both, and for which period?
+- Which domain skills apply (employment, self-employed, investments, rents, crypto, VAT, payroll, social security, IFICI, foreign income)?
+- Are the upstream outputs final and reconciled to the books, e-fatura and Segurança Social records?
+- Who is the contabilista certificado, and has the taxpayer approved the figures?
+- Any replacement returns, open AT notices or payment plans?
+
+## Rates, bands and thresholds
+
+Figures below were found on 2026-11-14 on the Portal das Finanças. Rates and computations are owned by the domain skills; this capstone only uses them.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| IRS return (Modelo 3) for 2026 income | 1 April to 30 June 2027, working day or not | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx |
+| IRC return (Modelo 22), calendar-year period | 31 May 2027 (last day of May, working day or not) | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx |
+| IES, calendar-year period | 15 July 2027 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx |
+| Invoice data communication | by the 5th of the following month | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf |
+| Periodic VAT return (monthly or quarterly) | by the 20th of the 2nd month after the period | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx |
+| VAT payment | by the 25th of the 2nd month after the period | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva27.aspx |
+| Monthly pay declaration (DMR) | by the 10th of the month after payment | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx |
+| IRS bands 5 and 6 used in the worked case: normal rate / average rate of band 5 (to EUR 29,397) | 34.60% / 20.136% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf |
+
+## The method, step by step
+
+
+1. **Read the execution directive below** and load `pt-return-assembly-filing`.
+2. **Run each upstream skill** listed under "Entradas Obrigatórias dos Skills Upstream" and collect its output.
+3. **Reconcile across skills** (turnover, withholdings, DMR against annual returns, social security, VAT pro-rata, autonomous taxes, derramas) under "Workflow de Montagem".
+4. **Build the working paper** and the headline block; compute the balance due or refund from the domain skills' figures.
+5. **Prepare payment and submission instructions** and the 2027 calendar, using the deadlines in the table above.
+6. **Get sign-off**: the taxpayer approves; for organised accounts the contabilista certificado signs before submission.
+
+### DIRETIVA DE EXECUÇÃO CRÍTICA: LER PRIMEIRO
+
+**Quando esta skill é invocada, o contribuinte já passou pelo intake e pelas skills de conteúdo relevantes. Pretende o working paper final pronto para revisão pelo Contabilista Certificado (OCC). Executar todos os passos sem parar para pedir autorização.**
+
+Em concreto:
+
+- **Não perguntar "quer que monte o pacote completo?".** O utilizador pediu a montagem. Produzir.
+- **Não voltar a interrogar sobre NIF, residência fiscal, NIPC, CAE, ou estrutura do negócio.** O intake já capturou estes dados; confiar nos packages upstream.
+- **Não pausar entre passos de reconciliação para confirmar.** Executar todas as verificações cruzadas em sequência; sinalizar falhas no brief do revisor e continuar.
+- **As auto-verificações são alvos, não bloqueadores.** Se uma verificação falhar, registar em "Sinalizações para o Revisor" e continuar.
+- **Não submeter nada no Portal das Finanças, no e-fatura, no portal da Segurança Social, ou em qualquer outro portal.** Esta skill produz um working paper e instruções de submissão. Um **Contabilista Certificado** (membro da OCC, Ordem dos Contabilistas Certificados) tem de rever e assinar quando a declaração assenta em contabilidade organizada, e o contribuinte (ou o CC, no seu acesso) submete via Portal das Finanças.
+
+**Se sentir necessidade de perguntar "como devo proceder?", escolha o caminho mais defensável, prossiga, e sinalize a decisão para o revisor.**
+
+### O que este ficheiro é
+
+A skill capstone final para a campanha fiscal portuguesa do **período de tributação de 2026**, cujas declarações anuais são entregues em 2027. Consome os outputs de todas as outras skills Portugal e monta um único working paper unificado que cobre, conforme aplicável:
+
+- **Modelo 3 do IRS**: declaração anual de rendimentos das pessoas singulares (trabalhadores por conta de outrem, pensionistas, trabalhadores independentes / Categoria B, sócios-gerentes que recebam remuneração, sujeitos passivos com rendimentos prediais ou de mais-valias), entregue por transmissão eletrónica no **Portal das Finanças** de 1 de abril a 30 de junho de 2027 (CIRS art. 60.º, n.º 1), com o rosto e os anexos A, B, C, D, E, F, G, G1, H, I, J e L (Portaria n.º 104/2026/1, art. 1.º) e o Anexo SS quando aplicável.
+- **Modelo 22 do IRC**: declaração periódica de rendimentos das sociedades e outras entidades sujeitas a IRC, enviada até ao último dia de maio de 2027 (CIRC art. 120.º, n.º 1), com os anexos aplicáveis (Despacho n.º 320/2026): A (derrama municipal), C (regiões autónomas), D (benefícios fiscais), E (regime simplificado), F (organismos de investimento coletivo), G (regime especial do transporte marítimo) e AIMI. O Anexo B só se usa para períodos anteriores a 2011.
+- **IES (Informação Empresarial Simplificada)**: declaração anual de informação contabilística e fiscal (CIRC art. 117.º, n.º 1, al. c), e art. 121.º), enviada até 15 de julho de 2027.
+- **SAF-T (PT)**: ficheiro normalizado criado pela Portaria n.º 321-A/2007; a comunicação das faturas à AT é feita até ao dia 5 do mês seguinte ao da emissão (Decreto-Lei n.º 198/2012, art. 3.º, n.º 2).
+- **Declaração periódica de IVA**: mensal (volume de negócios do ano anterior igual ou superior a €650.000) ou trimestral, até ao dia 20 do 2.º mês seguinte (CIVA art. 41.º, n.º 1).
+- **DMR (Declaração Mensal de Remunerações)**: obrigação dos empregadores, até ao dia 10 do mês seguinte ao do pagamento (CIRS art. 119.º, n.º 1, al. c), subal. i)).
+- **Declaração trimestral da Segurança Social** dos trabalhadores independentes: até ao último dia de janeiro, abril, julho e outubro (ISS, Guia Prático dos Trabalhadores Independentes).
+
+**Skill filha.** Esta skill tem uma filha, `pt-return-assembly-filing`, com as Secções 2 (inputs por anexo e campos dos formulários) e 7 (instruções de submissão, prazos, coimas e substituição). Carregar as duas.
+
+O output é um pacote pronto para o revisor: working paper linha-a-linha, tabela de reconciliação cross-skill, instruções de pagamento (referência para pagamento gerada pelo Portal das Finanças), instruções de submissão para Portal das Finanças e Segurança Social Direta, checklist do revisor, e lista final de ações do contribuinte.
+
+### Entradas Obrigatórias dos Skills Upstream
 
 A skill de montagem **não recalcula nada**. Espera outputs estruturados das skills upstream. Se uma skill upstream não tiver corrido, a montagem sinaliza a lacuna e continua com os dados disponíveis.
 
 O detalhe desta secção está na skill filha `pt-return-assembly-filing`, Secção 2: o mapa de inputs do Modelo 3 por anexo (2.1), o mapa de inputs do Modelo 22, os anexos em vigor e os campos do Quadro 10 (2.2), os identificadores exigidos pelo intake (2.3) e a coordenação AT + Segurança Social + e-fatura (2.4). Carregar `pt-return-assembly-filing` junto com esta skill sempre que se monta um pacote.
 
-## Secção 3: Workflow de Montagem, Reconciliações Cross-Skill
+### Workflow de Montagem, Reconciliações Cross-Skill
 
 - **Regra geral de tolerância**: a skill de montagem verifica que os números das skills upstream são mutuamente consistentes. Se uma verificação cruzada falhar por mais de €1,00, a discrepância é levantada no brief do revisor, nunca arredondada silenciosamente. Regra interna de trabalho desta skill, não uma regra legal.
 
-### 3.1 Verificação cruzada 1: Reconciliação de volume de negócios
+#### 3.1 Verificação cruzada 1: Reconciliação de volume de negócios
 
 **Reconciliação volume de negócios**
 
@@ -105,7 +143,7 @@ O detalhe desta secção está na skill filha `pt-return-assembly-filing`, Secç
 
 Os elementos das declarações de IRC e da IES "devem, sempre que for caso disso, concordar exactamente com os obtidos na contabilidade" (CIRC art. 120.º, n.º 10, e art. 121.º, n.º 5).
 
-### 3.2 Verificação cruzada 2: Créditos de imposto e retenções
+#### 3.2 Verificação cruzada 2: Créditos de imposto e retenções
 
 **Créditos e retenções: pessoas singulares (Modelo 3)**
 
@@ -131,7 +169,7 @@ Os elementos das declarações de IRC e da IES "devem, sempre que for caso disso
 
 - **Regra de créditos**: o total dos créditos não gera reembolso para além do que a lei preveja. O IRC é reembolsado quando o valor apurado, líquido das deduções, for negativo ou inferior aos pagamentos por conta (CIRC art. 104.º, n.º 2); não há pagamento nem reembolso inferior a €25 (art. 104.º, n.º 7). Cada retenção tem de estar suportada pelo documento comprovativo que a entidade devedora entrega ao titular até 20 de janeiro (CIRS art. 119.º, n.º 1, al. b)) e pelas declarações do substituto tributário (Modelo 10, Modelo 39).
 
-### 3.3 Verificação cruzada 3: DMR mensal vs declaração anual
+#### 3.3 Verificação cruzada 3: DMR mensal vs declaração anual
 
 **DMR vs Modelo 10**
 
@@ -144,7 +182,7 @@ Os elementos das declarações de IRC e da IES "devem, sempre que for caso disso
 
 **Se houver divergência:** verificar subsídios de férias e de Natal ou duodécimos não capturados na DMR mensal; benefícios em espécie reconhecidos apenas em fecho; correções salariais retroativas.
 
-### 3.4 Verificação cruzada 4: Contribuições Segurança Social, empregadores e independentes
+#### 3.4 Verificação cruzada 4: Contribuições Segurança Social, empregadores e independentes
 
 **Contribuições SS**
 
@@ -161,7 +199,7 @@ Os elementos das declarações de IRC e da IES "devem, sempre que for caso disso
 
 - **Incentivos à contratação**: reduções ou isenções contributivas de incentivo ao emprego (por exemplo, contratação de jovens) são verificadas em `pt-social-contributions`; a montagem apenas confirma que o upstream aplicou o regime com documentação de suporte.
 
-### 3.5 Verificação cruzada 5: IVA suportado e dedutível, pro-rata
+#### 3.5 Verificação cruzada 5: IVA suportado e dedutível, pro-rata
 
 **IVA suportado e dedutível**
 
@@ -176,7 +214,7 @@ Os elementos das declarações de IRC e da IES "devem, sempre que for caso disso
 
 **Se houver divergência superior a €1:** as causas mais comuns são correção pro-rata em falta, faturas comunicadas no e-fatura sem reflexo nas declarações periódicas, ou notas de crédito não regularizadas.
 
-### 3.6 Verificação cruzada 6: Tributações autónomas (Modelo 22)
+#### 3.6 Verificação cruzada 6: Tributações autónomas (Modelo 22)
 
 Para sociedades, as tributações autónomas (CIRC art. 88.º) são calculadas sobre encargos específicos e acrescem ao imposto, mesmo em situação de prejuízo. Taxas de 2026:
 
@@ -201,7 +239,7 @@ O agravamento de "10 pontos percentuais" aplica-se aos sujeitos passivos que apr
 
 - **Confirmação TA**: a skill de montagem confirma que pt-corporate-tax calculou todas as TA aplicáveis e que a TA total foi acrescida ao imposto no Modelo 22. Tolerância: €1 (regra interna).
 
-### 3.7 Verificação cruzada 7: Derramas (municipal + estadual)
+#### 3.7 Verificação cruzada 7: Derramas (municipal + estadual)
 
 **Derramas**
 
@@ -213,7 +251,7 @@ O agravamento de "10 pontos percentuais" aplica-se aos sujeitos passivos que apr
 
 - **Total**: IRC + derrama municipal + derrama estadual + tributações autónomas formam o total a pagar no Modelo 22, deduzido dos pagamentos por conta e retenções. As derramas incidem sobre o **lucro tributável** (antes da dedução de prejuízos), não sobre a matéria coletável (ver `pt-corporate-tax`).
 
-### 3.8 Verificação cruzada 8: Adicional de solidariedade (IRS)
+#### 3.8 Verificação cruzada 8: Adicional de solidariedade (IRS)
 
 **Adicional de solidariedade** (CIRS art. 68.º-A)
 
@@ -224,18 +262,18 @@ O agravamento de "10 pontos percentuais" aplica-se aos sujeitos passivos que apr
 
 - **Regra do adicional de solidariedade**: o adicional incide apenas sobre a parte do rendimento coletável que excede cada limiar. Em tributação conjunta, aplica-se ao rendimento dividido por dois e o resultado é multiplicado por dois (ver `pt-income-tax`). A skill de montagem cruza com pt-income-tax para confirmar que foi corretamente aplicado.
 
-### 3.9 Verificação cruzada 9: Disciplina de tolerância
+#### 3.9 Verificação cruzada 9: Disciplina de tolerância
 
 - **Disciplina de tolerância**: para cada verificação cruzada acima, o limiar é €1,00. Se uma diferença estiver entre €1 e €100, documentar a variação e prosseguir com sinalização ao revisor. Acima de €100, levantar como "Necessita Input": o revisor deve resolver antes da assinatura. Regra interna de trabalho desta skill, não uma regra legal.
 
-## Secção 4: Estrutura do Working Paper para o Contabilista Certificado (OCC)
+### Estrutura do Working Paper para o Contabilista Certificado (OCC)
 
 O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contabilistas Certificados)**. A inscrição na Ordem permite, em exclusivo, "a assinatura das demonstrações financeiras e das declarações fiscais que tenham por base informação contabilística" das entidades que possuam ou devam possuir contabilidade organizada (Estatuto da OCC, art. 10.º, n.º 1, al. b)). O brief é um único ficheiro markdown que o CC lê antes de assinar.
 
 ```markdown
 # Pacote de Declaração Anual: [Nome do contribuinte], Período 2026
 
-## Sumário Executivo
+### Sumário Executivo
 - Entidade declarante: [Singular / ENI / Sociedade por Quotas / SA / Unipessoal / Outro]
 - NIF: [_____]
 - NIPC (se aplicável): [_____]
@@ -262,7 +300,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Total das retenções e pagamentos por conta: €X
 - Saldo a pagar / reembolsar: €X / (€X)
 
-## Apuramento de IRC (sociedades)
+### Apuramento de IRC (sociedades)
 [De pt-corporate-tax]
 - Resultado contabilístico antes de impostos
 - Correções fiscais ao resultado
@@ -275,7 +313,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Tributações autónomas
 - Total a pagar
 
-## Apuramento de IRS (singulares)
+### Apuramento de IRS (singulares)
 [De pt-income-tax, pt-irs-employees-investment, pt-nhr-ifici, pt-foreign-source-treaties]
 - Rendimentos por categoria (A, B, E, F, G, H)
 - Deduções específicas (Categoria A: 8,54 × IAS = €4.587,09, CIRS art. 25.º, n.º 1, al. a))
@@ -289,7 +327,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - IRS Jovem (CIRS art. 12.º-B), se optado
 - Imposto a pagar / reembolso
 
-## IVA Anual
+### IVA Anual
 [De portugal-vat-return]
 - Resumo das 12 (ou 4) declarações periódicas
 - IVA liquidado, IVA dedutível, IVA entregue
@@ -297,7 +335,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Regularizações
 - Verificação cruzada com volume de negócios da contabilidade
 
-## Segurança Social
+### Segurança Social
 [De pt-social-contributions]
 - Contribuições da entidade empregadora e dos trabalhadores (sociedades)
 - Contribuições do sujeito passivo como trabalhador independente (singulares)
@@ -305,28 +343,28 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Membros de órgãos estatutários
 - Entidades contratantes
 
-## Folha de Pagamentos
+### Folha de Pagamentos
 [De portugal-payroll]
 - Resumo anual de remunerações
 - Retenções na fonte IRS Categoria A
 - Contribuições para a Segurança Social
 - DMR / folha salarial cross-check
 
-## Contabilidade e Demonstrações Financeiras
+### Contabilidade e Demonstrações Financeiras
 [De portugal-bookkeeping, portugal-financial-statements]
 - Balancete final pós-encerramento
 - Balanço, DR, DACP, DFC, Anexo
 - Mapas de depreciações e amortizações (Modelo 32)
 - SAF-T (PT) da contabilidade (exportação, CIRC art. 123.º, n.º 8)
 
-## Criptoativos
+### Criptoativos
 [De portugal-crypto-tax]
 - Ganhos de criptoativos detidos menos de 365 dias: tributação autónoma de 28% ou englobamento (CIRS art. 72.º, n.º 1, al. c))
 - Detenção igual ou superior a 365 dias: ganhos e perdas excluídos (CIRS art. 10.º, n.º 22)
 - Mineração e outras operações empresariais: Categoria B (coeficientes 0,95 e 0,15 do art. 31.º)
 - Criptoativos detidos por sociedades: tratamento contabilístico-fiscal
 
-## Reconciliações Cross-Skill
+### Reconciliações Cross-Skill
 - Volume de negócios contabilidade vs IVA vs Modelo 22/Modelo 3: [pass/fail]
 - Retenções na fonte declaradas vs créditos reclamados: [pass/fail]
 - DMR mensal vs folha salarial anual: [pass/fail]
@@ -336,7 +374,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Derramas (municipal + estadual): corretamente computadas: [pass/fail]
 - Adicional de solidariedade: escalão correto: [pass/fail]
 
-## Sinalizações para o Revisor
+### Sinalizações para o Revisor
 - Itens que requerem confirmação adicional pelo CC
 - Despesas borderline (representação, donativos fora do EBF)
 - Benefícios fiscais reclamados (RFAI, SIFIDE II, outros): documentação
@@ -352,7 +390,7 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - Fatura simplificada vs fatura completa: limites
 - e-fatura: desfasamento entre faturas comunicadas e contabilidade
 
-## Posições Adotadas
+### Posições Adotadas
 [Lista com referências legais]
 - e.g., "Coeficiente 0,75 do regime simplificado aplicado à atividade [____] da tabela do art. 151.º: CIRS art. 31.º, n.º 1, al. b)"
 - e.g., "Taxa de IRC de 15% sobre os primeiros €50.000: a sociedade qualifica-se como PME (anexo ao Decreto-Lei n.º 372/2007); CIRC art. 87.º, n.º 2"
@@ -360,15 +398,15 @@ O revisor é um **Contabilista Certificado** inscrito na **OCC (Ordem dos Contab
 - e.g., "Pagamentos a [jurisdição] abrangidos pelo CIRC art. 23.º-A: prova de operação efetiva e normal anexa"
 - e.g., "Crédito por dupla tributação internacional: Convenção PT-[país]; limitado nos termos do CIRS art. 81.º / CIRC art. 91.º"
 
-## Notas de Planeamento para 2027
+### Notas de Planeamento para 2027
 [Ver Secção 9]
 ```
 
-## Secção 5: Resumo da Liquidação Fiscal (Bloco Headline)
+### Resumo da Liquidação Fiscal (Bloco Headline)
 
 Este bloco é o cabeçalho que o revisor e o contribuinte leem primeiro.
 
-### 5.1 Bloco Headline: IRS (singulares)
+#### 5.1 Bloco Headline: IRS (singulares)
 
 ```markdown
 # IRS 2026: Liquidação Headline (€)
@@ -393,7 +431,7 @@ Portal: Portal das Finanças
 Pagamento: referência indicada na nota de liquidação
 ```
 
-### 5.2 Bloco Headline: IRC (sociedades)
+#### 5.2 Bloco Headline: IRC (sociedades)
 
 ```markdown
 # IRC 2026: Liquidação Headline (€)
@@ -428,7 +466,7 @@ Portal: Portal das Finanças
 Pagamento: até 31 maio 2027 (CIRC art. 104.º, n.º 1, al. b))
 ```
 
-## Secção 6: Instruções de Pagamento, Portal das Finanças
+### Instruções de Pagamento, Portal das Finanças
 
 Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para pagamento que a AT emite (no documento de cobrança, na nota de liquidação ou após a submissão da declaração de autoliquidação). O contribuinte paga:
 
@@ -436,7 +474,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 - **Home banking**, na opção de pagamentos ao Estado
 - **Outros canais** (débito direto, transferência) apenas conforme indicado no próprio documento de cobrança ou no Portal das Finanças. Não usar IBAN da AT copiado de documentos antigos: confirmar sempre no documento de cobrança do pagamento em causa.
 
-### 6.1 Tipos de tributo e prazos de pagamento
+#### 6.1 Tipos de tributo e prazos de pagamento
 
 **Tipos de tributo e prazos**
 
@@ -455,7 +493,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 | IMI (Imposto Municipal sobre Imóveis) | AT | Portal das Finanças | Uma prestação em maio (até €100); duas prestações em maio e novembro (mais de €100 até €500); três prestações em maio, agosto e novembro (mais de €500) (CIMI art. 120.º, n.º 1) |
 | IUC (Imposto Único de Circulação) | AT | Portal das Finanças | Anual, por veículo (prazo a confirmar no Portal das Finanças) |
 
-### 6.2 Fluxo Portal das Finanças: pagamento
+#### 6.2 Fluxo Portal das Finanças: pagamento
 
 1. Aceder ao Portal das Finanças com NIF e senha (ou Chave Móvel Digital / Cartão de Cidadão)
 2. Submeter a declaração (Modelo 3, Modelo 22, declaração periódica de IVA)
@@ -464,7 +502,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 5. Pagar com a referência indicada: Multibanco, home banking, ou outro canal indicado no documento
 6. Após o pagamento, descarregar o comprovativo de pagamento no Portal das Finanças
 
-### 6.3 Pagamentos por conta de IRC (CIRC arts. 104.º, 105.º e 107.º)
+#### 6.3 Pagamentos por conta de IRC (CIRC arts. 104.º, 105.º e 107.º)
 
 **Pagamentos por conta IRC**  _(CIRC art. 104.º, n.º 1, al. a), e art. 105.º)_
 
@@ -479,7 +517,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 - **Atraso**: se um pagamento por conta não for feito no prazo, "começam a correr imediatamente juros compensatórios" (CIRC art. 104.º, n.º 5).
 - **Pagamentos adicionais por conta** (derrama estadual): nos mesmos prazos, se houve derrama estadual no período anterior (CIRC arts. 104.º-A e 105.º-A; taxas em pt-corporate-tax).
 
-### 6.4 Pagamentos por conta de IRS (CIRS art. 102.º)
+#### 6.4 Pagamentos por conta de IRS (CIRS art. 102.º)
 
 **Pagamentos por conta IRS**  _(CIRS art. 102.º)_
 
@@ -492,7 +530,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 - Só os titulares de rendimentos da Categoria B estão obrigados (art. 102.º, n.º 1). Os pagamentos de 2026 resultam da liquidação de 2024; os de 2027 resultam da liquidação de 2025.
 - Cessam quando as retenções e os pagamentos já feitos igualarem ou excederem o imposto do ano, ou quando deixam de ser auferidos rendimentos da Categoria B (art. 102.º, n.º 4). Podem ser reduzidos (n.º 5); se a redução deixar por pagar mais de 20% do normal, há juros compensatórios (n.º 6).
 
-### 6.5 Comprovativos de pagamento a conservar
+#### 6.5 Comprovativos de pagamento a conservar
 
 **Comprovativos a conservar**
 
@@ -504,18 +542,18 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 | Comprovativo de pagamento no Portal das Finanças | AT | Idem |
 | Certidões de situação tributária e contributiva regularizada (AT e SS) | AT / SS | Renovar conforme a validade indicada na própria certidão |
 
-## Secção 7: Instruções de Submissão
+### Instruções de Submissão
 
 O detalhe desta secção está na skill filha `pt-return-assembly-filing`, Secção 7: canais de submissão (7.1), passos do Modelo 3 e anexos (7.2), do Modelo 22 e anexos (7.3), da IES (7.4), da declaração periódica de IVA (7.5), comunicação de faturas e SAF-T (7.6), Segurança Social Direta (7.7), resumo de prazos do período 2026 (7.8), coimas por atraso (7.9) e substituição de declaração (7.10). Os prazos principais estão também na Secção 1 desta skill.
 
-## Secção 8: Lista Final de Ações do Contribuinte (Calendar)
+### Lista Final de Ações do Contribuinte (Calendar)
 
 ```markdown
 # Lista de Ações: [Nome do contribuinte], Período 2026
 
 Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seguem a regra descrita em portugal-vat-return. O Modelo 3, o Modelo 22 e a IES não transitam ("independentemente de esse dia ser útil").
 
-## Janeiro 2027
+### Janeiro 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
@@ -529,7 +567,7 @@ Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seg
 | 31 jan | Declaração trimestral SS (outubro a dezembro 2026) | Trabalhador independente |
 | 31 jan | Comunicação do inventário a 31 dezembro 2026 | Sociedade com inventário |
 
-## Fevereiro 2027
+### Fevereiro 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
@@ -541,7 +579,7 @@ Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seg
 | final fev | **Modelo 39: rendimentos de 2026 sujeitos a retenção liberatória** | Entidade pagadora |
 | final fev | Faturas de 2026 comunicadas contam para as deduções à coleta; Categoria B indica no Portal as faturas afetas à atividade (CIRS art. 78.º-B, n.º 5; art. 31.º, n.º 15, al. a)) | Singular |
 
-## Março 2027
+### Março 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
@@ -551,27 +589,27 @@ Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seg
 | 20 mar | Declaração periódica de IVA de janeiro 2027 (mensal) | CC |
 | 31 mar | Prazo para reclamar das deduções à coleta apuradas (CIRS art. 78.º-B, n.º 7) | Singular |
 
-## Abril 2027
+### Abril 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | 1 abr | Início da entrega do Modelo 3 dos rendimentos de 2026 | Singular |
 | 30 abr | Declaração trimestral SS (janeiro a março 2027) | Trabalhador independente |
 
-## Maio 2027
+### Maio 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | maio | IMI: prestação única (até €100) ou 1.ª prestação | Proprietário |
 | **31 mai** | **MODELO 22 IRC + Anexos: envio e pagamento** | CC |
 
-## Junho 2027
+### Junho 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | **30 jun** | **MODELO 3 IRS + Anexos: último dia de entrega** | Singular (CC se contabilidade organizada) |
 
-## Julho 2027
+### Julho 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
@@ -580,33 +618,33 @@ Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seg
 | julho | 1.º pagamento por conta de IRC de 2027 (e adicional, se aplicável) | Sociedade |
 | 31 jul | Declaração trimestral SS (abril a junho 2027) | Trabalhador independente |
 
-## Agosto 2027
+### Agosto 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | agosto | IMI: 2.ª prestação (só quando o imposto é superior a €500) | Proprietário |
 
-## Setembro 2027
+### Setembro 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | 20 set | 2.º pagamento por conta de IRS de 2027 | Singular |
 | setembro | 2.º pagamento por conta de IRC de 2027 | Sociedade |
 
-## Novembro 2027
+### Novembro 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | novembro | IMI: última prestação (imposto superior a €100) | Proprietário |
 
-## Dezembro 2027
+### Dezembro 2027
 
 | Data | Ação | Responsável |
 |---|---|---|
 | 15 dez | 3.º pagamento por conta de IRC de 2027 | Sociedade |
 | 20 dez | 3.º pagamento por conta de IRS de 2027 | Singular |
 
-## Obrigações contínuas durante 2027
+### Obrigações contínuas durante 2027
 
 | Item | Autoridade | Periodicidade |
 |---|---|---|
@@ -621,7 +659,7 @@ Nota: datas legais. Os prazos de IVA e outros que terminem em dia não útil seg
 | IMI | AT | Maio; maio e novembro; ou maio, agosto e novembro |
 | IUC (por veículo) | AT | Anual |
 
-## Conservação de documentos
+### Conservação de documentos
 
 Os sujeitos passivos são obrigados a arquivar e conservar "durante os 10 anos civis subsequentes todos os registos e respetivos documentos de suporte" (CIVA art. 52.º, n.º 1). Para efeitos de liquidação, o direito da AT caduca em 4 anos, quando a lei não fixar outro prazo (LGT art. 45.º, n.º 1); quando houve dedução ou crédito de imposto, o prazo é o do exercício desse direito (art. 45.º, n.º 3). Os prejuízos fiscais de IRC não têm limite temporal de dedução (CIRC art. 52.º, n.º 1), pelo que a prova da sua origem deve ser conservada enquanto forem deduzidos.
 
@@ -641,7 +679,7 @@ Conservar pelo menos:
 - Atas de assembleias-gerais e órgãos de administração (sociedades)
 ```
 
-## Secção 2: Entradas Obrigatórias dos Skills Upstream
+### Entradas Obrigatórias dos Skills Upstream
 
 0. **Mapa de inputs por anexo**: ver `pt-return-assembly-filing`, Secção 2
 0. **Invocar pt-income-tax**: consumir output da Categoria B para Modelo 3 (Anexo B / C), retenções, pagamentos por conta, IRS Jovem
@@ -657,35 +695,35 @@ Conservar pelo menos:
 0. **Invocar portugal-crypto-tax**: consumir ganhos e rendimentos de criptoativos
 0. **Invocar pt-transfer-pricing** (sociedades com entidades relacionadas): consumir ajustamentos e o estado do dossier
 
-## Secção 3: Workflow de Montagem, Reconciliações Cross-Skill
+### Workflow de Montagem, Reconciliações Cross-Skill
 
 0. **Executar verificações cruzadas 1-9**: reconciliar volume de negócios, créditos e retenções, DMR vs declarações anuais, contribuições SS, IVA e pro-rata, tributações autónomas, derramas, adicional de solidariedade, e aplicar disciplina de tolerância
 
-## Secção 4: Estrutura do Working Paper para o Contabilista Certificado (OCC)
+### Estrutura do Working Paper para o Contabilista Certificado (OCC)
 
 0. **Montar working paper**: consolidar todos os outputs upstream no template markdown do working paper para o CC
 
-## Secção 5: Resumo da Liquidação Fiscal (Bloco Headline)
+### Resumo da Liquidação Fiscal (Bloco Headline)
 
 0. **Gerar bloco headline**: produzir bloco headline IRS e/ou IRC conforme aplicável
 
-## Secção 6: Instruções de Pagamento, Portal das Finanças
+### Instruções de Pagamento, Portal das Finanças
 
 0. **Gerar instruções de pagamento**: produzir instruções de pagamento com a referência do Portal das Finanças
 
-## Secção 7: Instruções de Submissão
+### Instruções de Submissão
 
 0. **Gerar instruções de submissão**: produzir instruções de submissão para Portal das Finanças, e-fatura / SAF-T e Segurança Social Direta, seguindo `pt-return-assembly-filing`, Secção 7
 
-## Secção 8: Lista Final de Ações do Contribuinte (Calendar)
+### Lista Final de Ações do Contribuinte (Calendar)
 
 0. **Gerar lista final de ações**: produzir calendário de ações mensal do contribuinte para 2027
 
-## Secção 9: Notas para o Exercício de 2027 (Planeamento)
+### Notas para o Exercício de 2027 (Planeamento)
 
 A capstone produz uma secção prospetiva para que o contribuinte chegue à próxima campanha consciente das alterações já legisladas e das que estão por legislar.
 
-### 9.1 O que mudou em 2026 e o que já está legislado para 2027
+#### 9.1 O que mudou em 2026 e o que já está legislado para 2027
 
 **Alterações em vigor no período de 2026 e já legisladas para 2027**  _(Lei n.º 64/2025; Lei n.º 73-A/2025; CIRS e CIRC)_
 
@@ -694,13 +732,13 @@ A capstone produz uma secção prospetiva para que o contribuinte chegue à pró
 | Taxa geral IRC (CIRC art. 87.º, n.º 1) | 19% para períodos iniciados em 2026 (Lei n.º 64/2025, art. 3.º, n.º 2) | 18% para períodos iniciados em 2027 (art. 3.º, n.º 3); 17% a partir de 2028 (art. 87.º, n.º 1) | Recalcular pagamentos por conta e impostos diferidos |
 | Taxa IRC PME / Small Mid Cap (primeiros €50.000) | 15% (CIRC art. 87.º, n.º 2; Lei n.º 64/2025, art. 3.º, n.º 4) | 15% enquanto a lei não mudar | Confirmar qualificação PME (anexo ao DL 372/2007) |
 | Adicional de solidariedade IRS | 2,5% de €80.000 a €250.000; 5% acima (CIRS art. 68.º-A) | Sem alteração legislada conhecida | Nenhuma |
-| Escalões IRS | Tabela de 2026 (CIRS art. 68.º, redação da Lei n.º 73-A/2025; primeiro escalão até €8.342) | A tabela de 2027 depende do Orçamento do Estado para 2027 | Reforecast quando a lei for publicada |
+| Escalões IRS | Tabela de 2026 (CIRS art. 68.º, limites da Lei n.º 73-A/2025 e taxas dos escalões 1 a 6 do Decreto-Lei n.º 212/2026, de 4 de novembro; primeiro escalão até €8.342 a 12,20%) | A tabela de 2027 depende do Orçamento do Estado para 2027 | Reforecast quando a lei for publicada |
 | Dedução específica Categoria A | 8,54 × IAS = €4.587,09 (CIRS art. 25.º, n.º 1, al. a)) | Acompanha o IAS de 2027 | Atualizar payroll |
 | IAS (Indexante dos Apoios Sociais) | €537,13 em 2026 | IAS de 2027 por portaria | Atualizar contribuições e limiares |
 | Tributação autónoma: viaturas | 8% / 25% / 32% com limiares €37.500 e €45.000 (CIRC art. 88.º, n.º 3) | Sem alteração legislada conhecida | Verificar o Orçamento do Estado para 2027 |
 | Benefícios fiscais: RFAI / SIFIDE II | Em vigor (detalhe em pt-corporate-tax) | Monitorizar prorrogações e revisões | Monitorizar |
 
-### 9.2 Regime RNH (transitório) e IFICI
+#### 9.2 Regime RNH (transitório) e IFICI
 
 O regime de Residente Não Habitual (RNH) foi revogado pela Lei n.º 82/2023 (Orçamento do Estado para 2024), com regime transitório para quem já estava inscrito ou reunia as condições de transição. A duração e as condições exatas do regime transitório estão em `pt-nhr-ifici`. Não há novas adesões ao RNH.
 
@@ -708,13 +746,13 @@ Em substituição, existe o **IFICI** (EBF art. 58.º-A), aplicável a atividade
 
 **Para 2027:** confirmar inscrição e elegibilidade IFICI dos contribuintes singulares; reportar no Anexo L do Modelo 3.
 
-### 9.3 Pilar Dois (imposto mínimo global): grupos multinacionais
+#### 9.3 Pilar Dois (imposto mínimo global): grupos multinacionais
 
 Portugal transpôs a Diretiva (UE) 2022/2523 (imposto mínimo global). Aplica-se a grupos multinacionais e grupos nacionais de grande dimensão, com uma taxa efetiva mínima por jurisdição e as regras IIR, UTPR e imposto complementar nacional.
 
 **Para 2027:** se o cliente fizer parte de grupo abrangido, exige análise específica e potencial declaração GloBE. **A skill `pt-corporate-tax` deve cobrir os detalhes; a montagem apenas sinaliza.** Os limiares, a taxa mínima e o diploma de transposição estão na linha "Not yet confirmed" das fontes.
 
-### 9.4 Cripto: regime em vigor
+#### 9.4 Cripto: regime em vigor
 
 O regime em vigor (CIRS art. 10.º, n.º 1, al. k); numeração do n.º 22 dada pelo DL 97/2026):
 - Ganhos com criptoativos detidos menos de 365 dias: Categoria G, taxa autónoma de 28% (CIRS art. 72.º, n.º 1, al. c)) ou englobamento
@@ -723,31 +761,31 @@ O regime em vigor (CIRS art. 10.º, n.º 1, al. k); numeração do n.º 22 dada 
 
 **Para 2027:** monitorizar a aplicação do **Regulamento MiCA (UE)** e da troca automática de informação sobre criptoativos (DAC8), que alimentará a informação disponível à AT. Detalhe e datas em `portugal-crypto-tax`.
 
-### 9.5 SAF-T da contabilidade: entrega à AT
+#### 9.5 SAF-T da contabilidade: entrega à AT
 
 Está prevista a entrega do ficheiro SAF-T (PT) da contabilidade à AT, sucessivamente adiada. A obrigação atual em vigor é a de dispor de capacidade de exportação do ficheiro (CIRC art. 123.º, n.º 8). **Monitorizar** o diploma que fixe a data de entrada em vigor da entrega.
 
-### 9.6 Pagamentos por conta para 2027
+#### 9.6 Pagamentos por conta para 2027
 
 Calcular os pagamentos por conta de 2027 com base nas regras da Secção 6:
 - PPC IRC: 80% (ou 95% se o volume de negócios de 2026 for superior a €500.000) do imposto de 2026, líquido de retenções, em três prestações (julho / setembro / 15 de dezembro de 2027); dispensa abaixo de €200
 - PPC IRS Categoria B: 65% da fórmula do art. 102.º, n.º 2, com base no penúltimo ano (2025), até 20 julho, 20 setembro e 20 dezembro de 2027
 
-### 9.7 Preços de transferência (CIRC art. 63.º + Portaria n.º 268/2021)
+#### 9.7 Preços de transferência (CIRC art. 63.º + Portaria n.º 268/2021)
 
 Para sociedades com operações com entidades relacionadas:
 - **Dossier de preços de transferência**: dispensado para sujeitos passivos com rendimentos totais no período inferiores a €10.000.000 (Portaria n.º 268/2021); acima disso, dispensa para operações de valor não superior a €100.000 por contraparte e €500.000 no total. Detalhe em `pt-transfer-pricing`
 - **Dossier principal e dossier específico** para entidades de grupos multinacionais
 - **IES**: informação sobre operações com entidades relacionadas (CIRC art. 63.º)
 
-### 9.8 Continuidade no e-fatura e SAF-T
+#### 9.8 Continuidade no e-fatura e SAF-T
 
 Confirmar que a contabilidade e a faturação estão a alimentar o e-fatura:
 - Faturas emitidas comunicadas em tempo real, por SAF-T ou no Portal, até dia 5 do mês seguinte (DL 198/2012, art. 3.º, n.º 2)
 - Faturas recebidas com NIF do adquirente comunicadas até ao final de fevereiro do ano seguinte contam para as deduções à coleta do Modelo 3 (CIRS art. 78.º-B, n.º 5)
 - Para Categoria B: faturas-recibo emitidas no Portal das Finanças ou por software certificado; indicar até ao final de fevereiro as faturas afetas à atividade (CIRS art. 31.º, n.º 15)
 
-## Secção 10: Bloco de Atestação do Revisor (OCC Sign-off)
+### Bloco de Atestação do Revisor (OCC Sign-off)
 
 O working paper final inclui um bloco de atestação que o **Contabilista Certificado** assina antes de qualquer submissão.
 
@@ -803,7 +841,7 @@ Seguro de Responsabilidade Civil, Apólice: ____________________ / Validade: ___
 
 Para o **Modelo 22 (IRC)** e para a **IES**, a declaração assenta em contabilidade organizada (CIRC art. 123.º, n.º 1) e é assinada pelo CC (Estatuto da OCC, art. 10.º, n.º 1, al. b)). Para o **Modelo 3 (IRS)** com Categoria B em contabilidade organizada, a declaração é igualmente assinada pelo CC (Portaria n.º 104/2026/1, art. 2.º, n.º 2). Para o IRS Categoria B em regime simplificado e para o IRS sem rendimentos empresariais e profissionais, o contribuinte pode submeter diretamente.
 
-## Secção 11: Defaults Conservadores
+### Defaults Conservadores
 
 Quando os inputs das skills upstream forem ambíguos ou estiverem em falta, aplicar os seguintes defaults e sinalizar para o revisor:
 
@@ -832,7 +870,7 @@ Quando os inputs das skills upstream forem ambíguos ou estiverem em falta, apli
 
 - **Regra de tolerância (reforço)**: tolerância de €1. Qualquer discrepância superior é escalada, não absorvida.
 
-## Secção 12: Catálogo de Recusas
+### Catálogo de Recusas
 
 - **R-PT-ASM-1**: Skill upstream não correu. Nomear a skill em falta. Continuar com os dados disponíveis; sinalizar a lacuna; não fabricar a computação em falta.
 - **R-PT-ASM-2**: Auto-verificação upstream falhou. Registar a verificação específica; continuar mas sinalizar.
@@ -849,7 +887,7 @@ Quando os inputs das skills upstream forem ambíguos ou estiverem em falta, apli
 - **R-PT-ASM-13**: Fora do âmbito: regimes setoriais especiais (banca, seguros, exploração de jogos, atividades extrativas, agricultura e silvicultura com regime especial), SIGI e OIC, SGPS, fusões/cisões com regime de neutralidade fiscal complexa, reorganizações empresariais transfronteiriças, fiscalidade verde (carbono, plástico). Encaminhar para especialista.
 - **R-PT-ASM-14**: Pedido envolve criptoativos / NFTs / DeFi com perfil ambíguo. Sinalizar para análise especializada (a skill `portugal-crypto-tax` cobre os casos standard; perfis complexos exigem opinião escrita).
 
-## Secção 13: Auto-verificações
+### Auto-verificações
 
 - **Verificação PT-ASM-1**: Todas as skills upstream exigidas para o tipo de declaração escolhido produziram output, ou a lacuna está sinalizada.
 - **Verificação PT-ASM-2**: O volume de negócios reconcilia entre `portugal-bookkeeping`, `portugal-vat-return`, e a skill de imposto sobre o rendimento aplicável (`pt-income-tax` / `pt-corporate-tax`) dentro de €1.
@@ -872,7 +910,7 @@ Quando os inputs das skills upstream forem ambíguos ou estiverem em falta, apli
 - **Verificação PT-ASM-19**: Notas de planeamento para 2027 (IRC 18%, RNH transitório, IFICI, Pilar Dois, DAC8 cripto, evolução do SAF-T) incluídas no brief; regras de 2027 NÃO aplicadas a 2026.
 - **Verificação PT-ASM-20**: IBAN do contribuinte registado no Portal das Finanças para reembolso (se aplicável); confirmado coincidir com a titularidade do NIF.
 
-## Secção 14: Output Files (PDF / Excel package)
+### Output Files (PDF / Excel package)
 
 O output final é um conjunto de três ficheiros, colocados em `/mnt/user-data/outputs/`:
 
@@ -900,9 +938,9 @@ Os três ficheiros são apresentados ao utilizador no final.
 
 Se a execução esgotar o contexto a meio da construção, completar primeiro o trabalho de cálculo / reconciliação e produzir os outputs formatados que forem possíveis, indicando claramente quais os deliverables que ficaram parciais.
 
-## Secção 15: Limitações Conhecidas + Change Log
+### Limitações Conhecidas + Change Log
 
-### 15.1 Limitações conhecidas
+#### 15.1 Limitações conhecidas
 
 1. O preenchimento direto dos formulários oficiais da AT não é automatizado; o CC ou o contribuinte introduz os valores no Portal das Finanças usando o working paper como guia.
 2. O Portal das Finanças aceita ficheiros gerados por software de contabilidade; esta skill não gera o ficheiro, gera os valores que o alimentam.
@@ -918,13 +956,13 @@ Se a execução esgotar o contexto a meio da construção, completar primeiro o 
 12. A skill assume um único CC vinculado; se houver mudança de CC durante o exercício, há obrigações de comunicação ao Portal das Finanças que ficam fora do âmbito desta capstone.
 13. Os campos do Modelo 22 indicados (Quadro 10, em `pt-return-assembly-filing`, Secção 2.2) são os do impresso do Despacho n.º 320/2026, e da declaração periódica de IVA só os campos 40, 41 e 93 a 96; confirmar no impresso aprovado para a campanha de 2027 e em `portugal-vat-return`.
 
-### 15.2 Change log
+#### 15.2 Change log
 
 - v1.2 (2026-10-31): Skill dividida em duas para caber no limite de tamanho da plataforma. As Secções 2 (inputs por anexo, anexos em vigor, Quadro 10 do Modelo 22, identificadores, coordenação AT + SS + e-fatura) e 7 (instruções de submissão, resumo de prazos, coimas, substituição) passaram, sem alterações, para a skill filha `pt-return-assembly-filing`. Ficam aqui ponteiros com o mesmo número de secção. Nenhum valor mudou.
 - v1.1 (2026-10-30): Período de tributação 2026 (campanha 2027). Prazos movidos para 2027 a partir dos códigos (CIRS art. 60.º, CIRC arts. 104.º, 120.º e 121.º, CIVA arts. 27.º e 41.º, CIRS art. 119.º). Anexos do Modelo 3 alinhados com a Portaria n.º 104/2026/1 (G1, I e SS acrescentados) e do Modelo 22 com o Despacho n.º 320/2026 (Anexo B só para períodos anteriores a 2011; F, G e AIMI acrescentados). Taxas de IRC 19% / 15% (Lei n.º 64/2025), tributações autónomas de 2026, prejuízos a 65% sem limite temporal, retenções da Categoria B a 23% / 16,5% / 11,5% / 20%, pagamentos por conta de IRS a 65%, Modelo 10 e Modelo 39 até ao final de fevereiro (DL 49/2025), pagamento do IVA até dia 25, coimas do RGIT corrigidas, base legal do CC corrigida para o Estatuto da OCC, conservação de 10 anos pelo CIVA art. 52.º. Removidos valores sem fonte oficial lida (IBAN da AT, número de dígitos de referências, números de campos); ver a linha "Not yet confirmed". Revisão independente (2026-10-30): títulos dos anexos F, G1, I e L confirmados (Portarias 72-B/2025/1 e 39-B/2024); campos do Quadro 10 do Modelo 22 (Despacho 320/2026) e nota de que esse impresso ainda traz as taxas de 2025; taxas e prazos da Segurança Social do empregador (Código Contributivo arts. 40.º, 43.º, 53.º e 69.º); juros de mora de 7,221% (Aviso 18/2026/2); campos 40, 41 e 93 a 96 da declaração de IVA e novo modelo de julho de 2027; prazo da declaração por país (CIRC art. 121.º-A); IVA mensal de dezembro de 2026 até 22 de fevereiro de 2027.
 - v1.0 (2026-05): Versão inicial. Modelada sobre `ng-return-assembly`, `id-return-assembly`, `mt-return-assembly` e `us-ca-return-assembly`. Adaptada para Modelo 3 IRS + Anexos, Modelo 22 IRC + Anexos, IES, SAF-T (PT), DMR, declaração periódica de IVA, submissão via Portal das Finanças e impacto prospetivo do OE 2026. Coordena as skills upstream Portugal. Atestação requer Contabilista Certificado membro da OCC.
 
-## Secção 16: Fontes
+### Fontes
 
 **Tabela de fontes (legislação de base)**
 
@@ -938,7 +976,7 @@ Se a execução esgotar o contexto a meio da construção, completar primeiro o 
 | Código do IMI | Art. 120.º (prestações) |
 | Decreto-Lei n.º 198/2012 | Art. 3.º (comunicação de faturas, dia 5), art. 3.º-A (comunicação de inventários) |
 | Lei n.º 64/2025 | Taxas de IRC 2026 (19%) e 2027 (18%); taxa PME de 15% |
-| Lei n.º 73-A/2025 (Orçamento do Estado para 2026) | Escalões de IRS de 2026 |
+| Lei n.º 73-A/2025 (Orçamento do Estado para 2026) e Decreto-Lei n.º 212/2026 | Escalões de IRS de 2026 (limites; taxas dos escalões 1 a 6 reduzidas pelo DL 212/2026) |
 | Portaria n.º 104/2026/1 e Portaria n.º 136-C/2026/1 | Modelo 3 e anexos |
 | Despacho n.º 320/2026 | Modelo 22 e anexos |
 | Portaria n.º 268/2021 | Preços de transferência: dossier e dispensas |
@@ -948,52 +986,89 @@ Se a execução esgotar o contexto a meio da construção, completar primeiro o 
 | Portarias n.º 72-B/2025/1 e n.º 39-B/2024 | Anexos F, G1, L e I do Modelo 3 |
 | Ofício-Circulado n.º 25119/2026 (AT) e Portaria n.º 298/2026/1 | Declaração periódica de IVA: campos 40, 41, 93 a 96; novo modelo a partir de julho de 2027 |
 
+## Worked cases
+
+### Case 1: headline IRS for an employee, 2026 bands
+
+Facts. Ana, resident, single, has 2026 taxable income (rendimento coletável) of EUR 35,000 from `pt-irs-employees-investment` and EUR 7,000 of IRS withheld by her employer. Deductions from the tax are left out to keep the case short.
+
+Working. With the art. 68(2) method on the Decreto-Lei 212/2026 bands: EUR 29,397 at the band 5 average rate of 20.136% = EUR 5,919.38, plus the excess EUR 5,603 at the band 6 normal rate of 34.60% = EUR 1,938.64; tax EUR 7,858.02. Less EUR 7,000 withheld, the headline block shows EUR 858.02 to pay, due with the Modelo 3 filed between 1 April and 30 June 2027 (payment by the date on the assessment).
+
+```oa-check
+name: Portugal 2026, headline IRS on EUR 35,000 with the Decreto-Lei 212/2026 bands
+inputs:
+  taxable: 35000
+  withheld: 7000
+steps:
+  - band5_part: 29397 * 0.20136
+  - band6_part: (taxable - 29397) * 0.346
+  - tax: band5_part + band6_part
+  - balance_due: tax - withheld
+expected:
+  band5_part: 5919.38
+  band6_part: 1938.64
+  tax: 7858.02
+  balance_due: 858.02
+```
+
+## When to refuse or refer
+
+- Filing without the taxpayer's written approval, or without the contabilista certificado where accounts are organised: refuse.
+- Any figure a domain skill has not produced: do not invent it; go back to the domain skill.
+- Disputes, AT inspections, fines already notified: refer.
+- Non-residents, IFICI and treaty claims beyond the domain skills: refer.
+
 ## Sources
+
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text.
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| CIRS art. 60 (Modelo 3, 1 April to 30 June; foreign tax credit extension) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-30 |
-| CIRS art. 57 (return and annexes; two residence statuses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-10-30 |
-| Portaria n.º 104/2026/1 (Modelo 3 annexes, electronic filing, CC password, 30-day correction) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-104-2026-1.pdf | 2026-10-30 |
-| Portaria n.º 136-C/2026/1 (Anexo H instructions) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-136-c-2026-1.pdf | 2026-10-30 |
-| Despacho n.º 320/2026 (Modelo 22 and annexes in force in 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-320-2026.pdf | 2026-10-30 |
-| AT, Modelo 22 annex forms A, C, D, E, F, G (form titles) | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/M22ANA.PDF (and M22ANC, M22AND, M22ANE, M22ANF, M22ANG) | 2026-10-30 |
-| CIRC art. 87 and Lei 64/2025 art. 3 (19% 2026, 18% 2027, 17%, 15% SME, 12.5% startups) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
-| CIRC art. 87-A (derrama estadual) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx | 2026-10-30 |
-| CIRC art. 88 (autonomous taxation) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx | 2026-10-30 |
-| CIRC art. 52 (losses 65%, no time limit, change of ownership) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx | 2026-10-30 |
-| Lei n.º 27-A/2020 art. 11(2) (extra 10 points for 2020 and 2021 losses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_27_A_2020.pdf | 2026-10-30 |
-| CIRC arts. 104, 105, 106, 107 (payment rules, payments on account, PEC repealed, limits) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx (and irc105, irc106, irc107) | 2026-10-30 |
-| CIRC arts. 117, 120, 121, 122, 123 (returns, Modelo 22 and IES deadlines, substitution, organised accounts, SAF-T export) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx (and irc117, irc121, irc122, irc123) | 2026-10-30 |
-| CIRS art. 68-A (solidarity surcharge) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-30 |
-| CIRS art. 25 (Category A deduction 8.54 x IAS) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-30 |
-| CIRS arts. 28 and 31 (EUR 200,000 limit; coefficients; invoices by end February) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx (and irs28) | 2026-10-30 |
-| CIRS arts. 71, 72, 10 (28% and 35% final withholding; 28% special rate; crypto 365 days) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx (and irs72, irs10) | 2026-10-30 |
-| CIRS art. 78-B (invoices by end February, 15 March, 31 March) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-10-30 |
-| CIRS arts. 98 and 101 (withholding paid by the 20th; Category B 23% / 16.5% / 11.5% / 20%, Category F 25% / 10%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx (and irs98) | 2026-10-30 |
-| CIRS art. 102 (payments on account: 20 July, September, December; 65%; penultimate year) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-10-30 |
-| CIRS art. 119 (20 January statement, DMR by the 10th, Modelo 10 and Modelo 39 by end February, Modelo 30, end of July return) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx | 2026-10-30 |
-| CIRS art. 12-B (IRS Jovem bar for NHR / IFICI) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-10-30 |
-| CIVA arts. 41, 27, 52 (return by the 20th, payment by the 25th, 10-year retention) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx (and iva27, iva52) | 2026-10-30 |
-| CIVA art. 53 (EUR 15,000 exemption) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-30 |
-| Decreto-Lei n.º 198/2012, arts. 3 and 3-A (invoice reporting by the 5th; inventory by 31 January) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-10-30 |
-| RGIT arts. 26, 29, 114, 116, 117 (fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx (and rgit26, rgit29, rgit114, rgit117) | 2026-10-30 |
-| LGT arts. 35, 44, 45 (compensatory interest, late interest, 4-year limitation) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt45.aspx (and lgt35, lgt44) | 2026-10-30 |
-| CIMI art. 120 (IMI instalments) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimi/Pages/cimi120.aspx | 2026-10-30 |
-| ISS, Guia Prático, Trabalhadores Independentes (21.4%, 25.2%, 70% / 20%, EUR 20, IAS 2026 EUR 537.13, quarterly declaration, payment 10th to 20th, Anexo SS) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
-| Portaria n.º 268/2021 (transfer pricing file: EUR 10,000,000, EUR 100,000 / EUR 500,000) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf | 2026-10-30 |
-| Estatuto da Ordem dos Contabilistas Certificados (2024 edition), art. 10 | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-10-30 |
-| Portaria n.º 72-B/2025/1 (Modelo 3 annexes F, G1, L and their titles) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_72_B_2025_1.pdf | 2026-10-30 |
-| Portaria n.º 39-B/2024 (Modelo 3 Anexo I, rendimentos de herança indivisa) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_39_B_2024.pdf | 2026-10-30 |
-| Despacho n.º 320/2026, Modelo 22 form, Quadro 10 (field numbers; field 347 still at 20% / 16%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-320-2026.pdf | 2026-10-30 |
+| CIRS art. 60 (Modelo 3, 1 April to 30 June; foreign tax credit extension) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-11-14 |
+| CIRS art. 57 (return and annexes; two residence statuses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-11-14 |
+| Portaria n.º 104/2026/1 (Modelo 3 annexes, electronic filing, CC password, 30-day correction) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-104-2026-1.pdf | 2026-11-14 |
+| Portaria n.º 136-C/2026/1 (Anexo H instructions) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-136-c-2026-1.pdf | 2026-11-14 |
+| Despacho n.º 320/2026 (Modelo 22 and annexes in force in 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-320-2026.pdf | 2026-11-14 |
+| AT, Modelo 22 annex forms A, C, D, E, F, G (form titles) | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/M22ANA.PDF (and M22ANC, M22AND, M22ANE, M22ANF, M22ANG) | 2026-11-14 |
+| CIRC art. 87 and Lei 64/2025 art. 3 (19% 2026, 18% 2027, 17%, 15% SME, 12.5% startups) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-11-14 |
+| CIRC art. 87-A (derrama estadual) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx | 2026-11-14 |
+| CIRC art. 88 (autonomous taxation) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx | 2026-11-14 |
+| CIRC art. 52 (losses 65%, no time limit, change of ownership) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx | 2026-11-14 |
+| Lei n.º 27-A/2020 art. 11(2) (extra 10 points for 2020 and 2021 losses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_27_A_2020.pdf | 2026-11-14 |
+| CIRC arts. 104, 105, 106, 107 (payment rules, payments on account, PEC repealed, limits) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx (and irc105, irc106, irc107) | 2026-11-14 |
+| CIRC arts. 117, 120, 121, 122, 123 (returns, Modelo 22 and IES deadlines, substitution, organised accounts, SAF-T export) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx (and irc117, irc121, irc122, irc123) | 2026-11-14 |
+| CIRS art. 68-A (solidarity surcharge) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-11-14 |
+| CIRS art. 25 (Category A deduction 8.54 x IAS) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-11-14 |
+| CIRS arts. 28 and 31 (EUR 200,000 limit; coefficients; invoices by end February) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx (and irs28) | 2026-11-14 |
+| CIRS arts. 71, 72, 10 (28% and 35% final withholding; 28% special rate; crypto 365 days) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx (and irs72, irs10) | 2026-11-14 |
+| CIRS art. 78-B (invoices by end February, 15 March, 31 March) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-11-14 |
+| CIRS arts. 98 and 101 (withholding paid by the 20th; Category B 23% / 16.5% / 11.5% / 20%, Category F 25% / 10%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx (and irs98) | 2026-11-14 |
+| CIRS art. 102 (payments on account: 20 July, September, December; 65%; penultimate year) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-11-14 |
+| CIRS art. 119 (20 January statement, DMR by the 10th, Modelo 10 and Modelo 39 by end February, Modelo 30, end of July return) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx | 2026-11-14 |
+| CIRS art. 12-B (IRS Jovem bar for NHR / IFICI) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-11-14 |
+| CIVA arts. 41, 27, 52 (return by the 20th, payment by the 25th, 10-year retention) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx (and iva27, iva52) | 2026-11-14 |
+| CIVA art. 53 (EUR 15,000 exemption) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-11-14 |
+| Decreto-Lei n.º 198/2012, arts. 3 and 3-A (invoice reporting by the 5th; inventory by 31 January) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-11-14 |
+| RGIT arts. 26, 29, 114, 116, 117 (fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx (and rgit26, rgit29, rgit114, rgit117) | 2026-11-14 |
+| LGT arts. 35, 44, 45 (compensatory interest, late interest, 4-year limitation) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt45.aspx (and lgt35, lgt44) | 2026-11-14 |
+| CIMI art. 120 (IMI instalments) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimi/Pages/cimi120.aspx | 2026-11-14 |
+| ISS, Guia Prático, Trabalhadores Independentes (21.4%, 25.2%, 70% / 20%, EUR 20, IAS 2026 EUR 537.13, quarterly declaration, payment 10th to 20th, Anexo SS) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-11-14 |
+| Portaria n.º 268/2021 (transfer pricing file: EUR 10,000,000, EUR 100,000 / EUR 500,000) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf | 2026-11-14 |
+| Estatuto da Ordem dos Contabilistas Certificados (2024 edition), art. 10 | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-11-14 |
+| Portaria n.º 72-B/2025/1 (Modelo 3 annexes F, G1, L and their titles) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_72_B_2025_1.pdf | 2026-11-14 |
+| Portaria n.º 39-B/2024 (Modelo 3 Anexo I, rendimentos de herança indivisa) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_39_B_2024.pdf | 2026-11-14 |
+| Despacho n.º 320/2026, Modelo 22 form, Quadro 10 (field numbers; field 347 still at 20% / 16%) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-320-2026.pdf | 2026-11-14 |
 | Código dos Regimes Contributivos (Lei 110/2009), arts. 40(8), 43, 53, 69(2), 155(2), 168 (34.75% = 23.75% + 11%; declaration by the 20th; employer payment 1st to 25th from 1 January 2026, DL 127/2025) | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 | 2026-10-30 |
 | IGCP, Aviso n.º 18/2026/2 (late-payment interest 7.221% from 1 January 2026) | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-30 |
-| AT, Ofício-Circulado n.º 25119/2026 (VAT return: fields 40, 41, 93 to 96; Portaria 298/2026/1 new model for periods from 1 July 2027; VAT groups box from 1 July 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio-Circulado-25119-2026.pdf | 2026-10-30 |
-| CIRC art. 121-A (country-by-country report: EUR 750,000,000, 12 months, notification by the Modelo 22 deadline) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx | 2026-10-30 |
+| AT, Ofício-Circulado n.º 25119/2026 (VAT return: fields 40, 41, 93 to 96; Portaria 298/2026/1 new model for periods from 1 July 2027; VAT groups box from 1 July 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio-Circulado-25119-2026.pdf | 2026-11-14 |
+| CIRC art. 121-A (country-by-country report: EUR 750,000,000, 12 months, notification by the Modelo 22 deadline) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the 2026 rates of IRS bands 1 to 6 (12.20% to 34.60%) and the average rates used in the worked case | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
+| CIVA arts 41 and 27. Read for the 20th and 25th of the 2nd month deadlines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-11-14 |
+| CIRS art. 119. Read for the DMR by the 10th | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx | 2026-11-14 |
 
-Not yet confirmed: the act approving Anexo SS to the Modelo 3 (the ISS guide describes it, the approving act was not read); the Modelo 22 form and Quadro 10 field numbers for the 2027 campaign (the 2026 period), because that form is not yet approved: the field map in Section 2.2 of pt-return-assembly-filing is from the Despacho 320/2026 form; the other Modelo 22 quadros and the periodic VAT return field numbers other than 40, 41 and 93 to 96 (an earlier version listed Modelo C fields 1, 4, 5, 7 and 22); the Modelo 22 annex subjects of B (pre-2011 only) beyond what the AT form titles show; the IES annex letters and contents (an earlier version said Anexo L related parties, R intra-EU, Q offshore); the 18.4% rate an earlier version gave for self-employed pensioners (not found in the consolidated Contributions Code); the first-job youth hiring relief (Decreto-Lei 72/2017) an earlier version cited; RFAI and SIFIDE II percentages and the SIFIDE carry-forward period an earlier version gave as 8 years (see pt-corporate-tax); whether CFEI II and DLRR can still be claimed for 2026; the treatment of unused special payments on account (PEC) paid before 2022; the Pillar Two transposing act (an earlier version said Lei 41/2024), the EUR 750 million group threshold for Pillar Two and the 15% minimum rate; the DAC8 start date for crypto reporting; the date for direct filing of the accounting SAF-T; the IUC payment month rule; the validity period of tax and social security clearance certificates (an earlier version said 3 months); the 15-day Social Security deadline for start, cessation or suspension of activity and the January "Folha de Férias / Mapa de Encargos" an earlier version listed; the AT IBAN and the digit counts of NIF, NISS and Multibanco references an earlier version gave; the IRS deduction caps and band table, which this skill takes from pt-income-tax and pt-irs-employees-investment.
+Not yet confirmed: the act approving Anexo SS to the Modelo 3 (the ISS guide describes it, the approving act was not read); the Modelo 22 form and Quadro 10 field numbers for the 2027 campaign (the 2026 period), because that form is not yet approved: the field map in Section 2.2 of pt-return-assembly-filing is from the Despacho 320/2026 form; the other Modelo 22 quadros and the periodic VAT return field numbers other than 40, 41 and 93 to 96 (an earlier version listed Modelo C fields 1, 4, 5, 7 and 22); the Modelo 22 annex subjects of B (pre-2011 only) beyond what the AT form titles show; the IES annex letters and contents (an earlier version said Anexo L related parties, R intra-EU, Q offshore); the 18.4% rate an earlier version gave for self-employed pensioners (not found in the consolidated Contributions Code); the first-job youth hiring relief (Decreto-Lei 72/2017) an earlier version cited; RFAI and SIFIDE II percentages and the SIFIDE carry-forward period an earlier version gave as 8 years (see pt-corporate-tax); whether CFEI II and DLRR can still be claimed for 2026; the treatment of unused special payments on account (PEC) paid before 2022; the Pillar Two transposing act (an earlier version said Lei 41/2024), the EUR 750 million group threshold for Pillar Two and the 15% minimum rate; the DAC8 start date for crypto reporting; the date for direct filing of the accounting SAF-T; the IUC payment month rule; the validity period of tax and social security clearance certificates (an earlier version said 3 months); the 15-day Social Security deadline for start, cessation or suspension of activity and the January "Folha de Férias / Mapa de Encargos" an earlier version listed; the AT IBAN and the digit counts of NIF, NISS and Multibanco references an earlier version gave; the IRS deduction caps and band table, which this skill takes from pt-income-tax and pt-irs-employees-investment; the late-payment interest rate of 7.221% (IGCP Aviso 18/2026/2) and the Código Contributivo consolidated text were not re-read today: the Diário da República pages serve only a script shell.
 
-## Disclaimer final
+## Disclaimer
 
 OpenAccountants: skills de contabilidade open-source para IA.
 Isto não constitui aconselhamento fiscal. Todos os outputs devem ser revistos e, quando a declaração assenta em contabilidade organizada, assinados por um Contabilista Certificado inscrito na OCC (Ordem dos Contabilistas Certificados), antes de submissão no Portal das Finanças, na Segurança Social Direta, ou em qualquer outra plataforma oficial.

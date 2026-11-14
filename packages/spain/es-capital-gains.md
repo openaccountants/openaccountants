@@ -1,19 +1,20 @@
 ---
 name: es-capital-gains
 description: Use this Guide to compute Spanish common-territory individual capital gains and losses for 2026. It covers transfer versus non-transfer classification, acquisition and disposal values, fees, improvements, depreciation, homogeneous-security identification, main-home reinvestment, over-65 relief, insured life annuities, pre-1994 abatement, repurchase-deferred losses, annual savings-pool integration and the current savings scale. Trigger phrases include capital gains Spain, ganancia patrimonial, sell shares, property gain, reinversión vivienda habitual, coeficientes de abatimiento, pérdida por recompra and compensación de pérdidas. Obtain the actual residence, asset and lot records, prices, eligible costs, prior-loss and repurchase history and relief evidence. The computation uses the taxpayer’s whole annual savings position and minimum allocation rather than taxing each sale through fresh first bands. Non-resident and special incoming-worker cases follow their companion routes.
-version: 1.4
+version: 1.5
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Spain: individual capital gains and losses v1.4
+# Spain: individual capital gains and losses v1.5
 
 Compute common-territory resident gains for 2026, then integrate losses, exemptions and the annual savings tax. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/iceland-income-tax"
   jurisdiction: "IS"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Iceland income tax: employees and self-employed individuals, 2026
+# Iceland income tax: employees and self-employed individuals, 2026 v2.0
 
 This method covers a resident individual's employment income, sole-trader income and ordinary private capital income for calendar 2026. Amounts are ISK. A return filed in 2026 reports 2025 income; the return for 2026 income is filed in 2027. Keep those periods separate. The published 2026 filing deadline is 13 March 2026 for the earlier income year; a 2027 filing deadline is not established by that notice. [Official source](https://www.skatturinn.is/english/individuals/filing-a-tax-return/)
 
@@ -140,7 +140,7 @@ Foreign income is not omitted because no Icelandic withholding occurred. Report 
 
 Use the [cross-border skill](is-cross-border.md) for residence, treaty, source-payment and departure screening. The cross-border skill supplies the resident foreign-relief workpaper and a full-year individual progressive-tax credit example, alongside the separate company example. Establish the actual treaty branch, covered taxes, supported earned-income bases, personal credit and foreign tax paid; a company's flat-rate example does not determine the individual result. The stated individual method excludes unused-credit, spouse, part-year and multiple-country/category cases pending their own determination.
 
-## Worked examples that recompute
+## Two worked examples that recompute
 
 All amounts below are explicit hypothetical facts, not client data. Calculations retain decimals to show the method; use the portal's required rounding for filing.
 
@@ -367,7 +367,7 @@ expected:
 - For business, collect invoices and credit notes, platform gross-sales/fees reports, bank and card statements, cash sales, receivables/payables, inventory, VAT registration/returns, asset register, pension/payroll returns and prior losses. Establish whether the relationship is employment or independent business. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 - Obtain domestic and foreign interest/dividend statements, investment purchase and disposal costs, year-end balances, capital tax withheld, rental contracts/registration and property use. Confirm whether securities qualify for the listed-market allowance. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/)
 
-## When to refuse or refer
+### When to refuse or refer
 
 - Do not give a final filing figure when residence, the municipality, gross remuneration, pension eligibility, prior losses or investment basis is missing. Identify the exact missing evidence and continue the supported parts.
 - Obtain specialist resolution for conflicting treaty residence, foreign social-security coverage, cross-border business establishments, business incorporation/cessation, special pension arrangements or disputed remuneration classification.
@@ -383,37 +383,40 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
+Pages dated 2026-11-14 were opened again today and the figures named in each row were found on them. Alþingi's consolidated-law pages returned HTTP 403 to every request on 14 Nov 2026, so the statute rows keep their earlier read date and say so; the same figures were found on the Skatturinn pages listed where they repeat them.
+
 | Source | URL | Read on |
 | --- | --- | --- |
-| Income Tax Act 90/2003 (Alþingi consolidated text 158a, 1 Oct 2026), Articles 1, 3, 7, 30, 31, 33–42, 45, 56, 58, 58a, 61, 62, 66, 67, 69, 95–99, 108, 109 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
-| Municipal Revenue Act 4/1995, Articles 21–24 (municipal rate 12.44% to 14.97%, apportionment by residence time) | https://www.althingi.is/lagas/nuna/1995004.html | 2026-10-30 |
-| Social Security Levy Act 113/1990, Articles 2, 6–8 and 15 (components, own-remuneration floor 748,224, 504,000 annual filing) | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
-| Advertisement 1521/2025, Stjórnartíðindi B: 2026 bands 5,977,470 / 16,781,397, rates, personal credit 869,898 / 72,492 | https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d | 2026-10-30 |
-| Regulation 591/1987 on payments outside withholding, version in force from 1 January 2026, Article 2(8) (700,000) | https://files.reglugerd.is/pdf/0591-1987/current | 2026-10-30 |
-| Ministry of Finance, tax changes for 2026 (23 Dec 2025) | https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/ | 2026-10-30 |
-| Skatturinn, withholding 2026 (rates, child rate, personal credit, pension deduction, levy breakdown) | https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026 | 2026-10-30 |
-| Skatturinn, key figures 2026 (helstu tölur) | https://www.skatturinn.is/einstaklingar/helstutolur/2026 | 2026-10-30 |
-| Skatturinn, personal credit (persónuafsláttur) | https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/ | 2026-10-30 |
-| Skatturinn, pension contribution deduction (iðgjald í lífeyrissjóði) | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/ | 2026-10-30 |
-| Skatturinn, employer notice RSK 6.01 no. 1/2026 | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
-| Skatturinn, calculated remuneration 2026 (reiknað endurgjald, categories B5, B9, other-job reduction) | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026 | 2026-10-30 |
-| Skatturinn, starting a business (registration, costs, car, travel, RSK 4.10 conditions, retention) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/ | 2026-10-30 |
-| Skatturinn, business filing (RSK 4.10, 4.11, 1.04, 4.05, 4.01) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/ | 2026-10-30 |
-| Skatturinn, social security levy (tryggingagjald) | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-10-30 |
-| Skatturinn, capital income tax (fjármagnstekjuskattur) | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/ | 2026-10-30 |
-| Skatturinn, rental income (leigutekjur, home accommodation conditions) | https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/ | 2026-10-30 |
-| Skatturinn, assessment notice and assumptions 2026 (álagningarseðill og forsendur) | https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026 | 2026-10-30 |
-| Skatturinn, broadcasting fee (útvarpsgjald) | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/utvarpsgjald/ | 2026-10-30 |
-| Skatturinn, dispute procedure (ferill ágreiningsmála) | https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala | 2026-10-30 |
-| Skatturinn, wage income and benefits, share options (launatekjur og hlunnindi) | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/ | 2026-10-23 |
-| Skatturinn, form RSK 2.085 option report (discrepancy recorded in the payroll skill) | https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf | 2026-10-23 |
-| Skatturinn (English), filing a tax return | https://www.skatturinn.is/english/individuals/filing-a-tax-return/ | 2026-10-30 |
-| Skatturinn (English), tax liability | https://www.skatturinn.is/english/individuals/tax-liability/ | 2026-10-30 |
-| Skatturinn (English), posted workers | https://www.skatturinn.is/english/individuals/posted-workers/ | 2026-10-30 |
-| Skatturinn, return form RSK 1.10 2026 (English) | https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf | 2026-10-23 |
+| Read for Income Tax Act 90/2003 (consolidated text 158a, 1 Oct 2026), Articles 1, 3, 7, 30, 31, 33 to 42, 45, 56, 58, 58a, 61, 62, 66, 67, 69, 95 to 99, 108, 109; not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Read for Municipal Revenue Act 4/1995, Articles 21 to 24 (municipal rate 12.44% to 14.97%, apportionment by residence time); not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/1995004.html | 2026-10-30 |
+| Read for Social Security Levy Act 113/1990, Articles 2, 6 to 8 and 15; not reopened 14 Nov 2026 (403); the 748,224 floor and 504,000 annual filing line were found today on the Skatturinn levy page below | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
+| Read for Advertisement 1521/2025, Stjórnartíðindi B: 2026 bands 5,977,470 and 16,781,397, rates 16.55%, 23.05%, 31.35%, average municipal 14.94%, personal credit 869,898 and 72,492 | https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d | 2026-11-14 |
+| Read for Regulation 591/1987 on payments outside withholding, version in force from 1 January 2026, Article 2(8) (700,000) | https://files.reglugerd.is/pdf/0591-1987/current | 2026-11-14 |
+| Read for Ministry of Finance, tax changes for 2026 (23 Dec 2025): bands, personal credit, end of spouse middle-band transfer, capital-income credit change | https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/ | 2026-11-14 |
+| Read for Skatturinn, withholding 2026: rates 31.49%, 37.99%, 46.29%, child rate 6% over 300,000, personal credit, pension deduction, levy breakdown | https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026 | 2026-11-14 |
+| Read for Skatturinn, key figures 2026 (helstu tölur): personal credit, capital income tax 22%, broadcasting fee 22,200, Senior Citizens' fee 14,614 | https://www.skatturinn.is/einstaklingar/helstutolur/2026 | 2026-11-14 |
+| Read for Skatturinn, personal credit (persónuafsláttur): accumulation in the year, spouse transfer | https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/ | 2026-11-14 |
+| Read for Skatturinn, pension contribution deduction (4% plus 4%, regular payment condition) | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/ | 2026-11-14 |
+| Read for Skatturinn, employer notice RSK 6.01 no. 1/2026: withholding bands, credit per pay period, levy 6.35% and its parts, 11.5% employer pension default | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-11-14 |
+| Read for Skatturinn, calculated remuneration 2026 (reiknað endurgjald, categories B5, B9, other-job reduction) | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026 | 2026-11-14 |
+| Read for Skatturinn, starting a business: registration, costs, car, travel, RSK 4.10 conditions, retention, 20,000,000 and 30,000,000 accounts lines | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/ | 2026-11-14 |
+| Read for Skatturinn, business filing (RSK 4.10, 4.11 for turnover 2,000,000 to 30,000,000, 1.04 above 30,000,000, 4.05, 4.01) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/ | 2026-11-14 |
+| Read for Skatturinn, social security levy (tryggingagjald): 748,224 floor, 504,000 annual filing line, A1 rates 0.425% (2014 to 2023) and 0.293% (2024, 2025) | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-11-14 |
+| Read for Skatturinn, capital income tax (fjármagnstekjuskattur) 22% and its pointer to Article 66(3) for the allowance | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/ | 2026-11-14 |
+| Read for Skatturinn, rental income (leigutekjur): 25% exempt share, home accommodation conditions | https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/ | 2026-11-14 |
+| Read for Skatturinn, assessment notice and assumptions 2026 (álagningarseðill og forsendur): fee threshold 2,617,618 and the 300,000 capital-income allowance (frítekjumark, 22% capital income tax) | https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026 | 2026-11-14 |
+| Read for Skatturinn, broadcasting fee (útvarpsgjald) 22,200 and threshold 2,617,618 | https://www.skatturinn.is/einstaklingar/skattar-og-gjold/utvarpsgjald/ | 2026-11-14 |
+| Read for Skatturinn, dispute procedure (ferill ágreiningsmála) | https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala | 2026-11-14 |
+| Read for Skatturinn, wage income and benefits, share options (launatekjur og hlunnindi) | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/ | 2026-11-14 |
+| Read for Skatturinn, form RSK 2.085 option report (discrepancy recorded in the payroll skill) | https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf | 2026-11-14 |
+| Read for Skatturinn (English), filing a tax return: 2026 return for income year 2025, deadline 13 March | https://www.skatturinn.is/english/individuals/filing-a-tax-return/ | 2026-11-14 |
+| Read for Skatturinn (English), tax liability: residence and limited liability | https://www.skatturinn.is/english/individuals/tax-liability/ | 2026-11-14 |
+| Read for Skatturinn (English), posted workers: day-based credit | https://www.skatturinn.is/english/individuals/posted-workers/ | 2026-11-14 |
+| Read for Skatturinn, return form RSK 1.10 2026 (English) | https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf | 2026-11-14 |
+| Read for Skatturinn (English), key rates and amounts 2026: monthly bands 498,122 and 1,398,450, credit 72,492 and 869,898, capital gains 22%, levy 6.35% | https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/ | 2026-11-14 |
 
-Not yet confirmed: the reduced social security levy rate for employees covered by an A1 certificate for 2026 (Skatturinn's levy page gives 0.425% for 2014 to 2023 and 0.293% for 2024 and 2025 only); the broadcasting fee, Senior Citizens' Construction Fund fee and their income threshold for the 2027 assessment (2026 income); the 2027 filing deadline for 2026 income; whether Skatturinn applies the 20,000,000 or the 30,000,000 turnover line for annual accounts in 2026 (its own pages disagree).
+Not yet confirmed: the text of the Alþingi consolidated acts (Income Tax Act 90/2003, Act 4/1995, Act 113/1990) as at 14 Nov 2026, which returned 403 today, including the ordinary municipal range 12.44% to 14.97%, which no Skatturinn page repeats; the reduced social security levy rate for employees covered by an A1 certificate for 2026 (Skatturinn's levy page gives 0.425% for 2014 to 2023 and 0.293% for 2024 and 2025 only); the broadcasting fee, Senior Citizens' Construction Fund fee and their income threshold for the 2027 assessment (2026 income); the 2027 filing deadline for 2026 income; whether Skatturinn applies the 20,000,000 or the 30,000,000 turnover line for annual accounts in 2026 (its own pages disagree).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `iceland-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/iceland-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `iceland-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/iceland-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

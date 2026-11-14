@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/armenia-social-contributions"
   jurisdiction: "AM"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Armenia social payments, stamp payments and health insurance
@@ -22,17 +22,17 @@ Do not treat bank references or an unknown employment status as proof of a statu
 
 | Obligation | Ordinary 2026 method | Primary source |
 |---|---|---|
-| Pension, mandatory pre-retirement salary branch | 5% through AMD 500,000 monthly; above that, 10% less AMD 25,000, subject to cap/elections | [Pension 5–6][pension] |
-| Pension ordinary monthly base ceiling | 15 × statutory monthly minimum wage; AMD 1,125,000 using AMD 75,000 | [Pension 6(6)][pension], [wage 1][wage] |
-| Ordinary mandatory monthly pension ceiling | AMD 87,500 under the preceding branch, absent cap waiver/special case | [Pension 6(7)][pension] |
-| Ordinary annual pension base ceiling | 180 × minimum wage on 1 January; AMD 13,500,000 for 2026 | [Pension 6(6)][pension], [wage 1][wage] |
-| Ordinary mandatory annual pension ceiling | AMD 1,050,000 under the annual 10%-less-300,000 branch, subject to status and aggregate reconciliation | [Pension 6(7)–(9)][pension] |
-| Pension actual-business annual income | 5% through AMD 6 million; above, 10% less AMD 300,000, with applicable caps | [Pension 2(27), 6(2)(2)][pension] |
-| Pension specified turnover-tax activities | AMD 5,000 monthly, separate from the ordinary actual-income method | [Pension 6(2)(3), (5)][pension] |
-| Military stamp, eligible monthly agent population | AMD 1,000 through AMD 1 million base; AMD 15,000 from AMD 1,000,001 | [Stamp 9–12][stamp] |
-| Military stamp, eligible annual population | AMD 12,000 through AMD 12 million base; AMD 120,000 from AMD 12,000,001 | [Stamp 9–12][stamp] |
-| Health statutory full premium | AMD 129,600 annually / AMD 10,800 monthly | [Health 13][health] |
-| Health 2026 eligible employee contribution | AMD 4,800 through AMD 500,000 salary; full AMD 10,800 from AMD 500,001, after entry/status tests | [Health 45–46][health] |
+| Pension, mandatory pre-retirement salary branch | 5% through AMD 500,000 monthly; above that, 10% less AMD 25,000, subject to cap/elections | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
+| Pension ordinary monthly base ceiling | 15 × statutory monthly minimum wage; AMD 1,125,000 using AMD 75,000 (computed) | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
+| Ordinary mandatory monthly pension ceiling | AMD 87,500 (computed) under the preceding branch, absent cap waiver/special case | [Pension 6(7)][pension], https://www.arlis.am/hy/acts/224823 |
+| Ordinary annual pension base ceiling | 180 × minimum wage on 1 January; AMD 13,500,000 for 2026 (computed) | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
+| Ordinary mandatory annual pension ceiling | AMD 1,050,000 (computed) under the annual 10%-less-300,000 branch, subject to status and aggregate reconciliation | [Pension 6(7)–(9)][pension], https://www.arlis.am/hy/acts/224823 |
+| Pension actual-business annual income | 5% through AMD 6 million; above, 10% less AMD 300,000, with applicable caps | [Pension 2(27), 6(2)(2)][pension], https://www.arlis.am/hy/acts/224823 |
+| Pension specified turnover-tax activities | AMD 5,000 monthly, separate from the ordinary actual-income method | [Pension 6(2)(3), (5)][pension], https://www.arlis.am/hy/acts/224823 |
+| Military stamp, eligible monthly agent population | AMD 1,000 through AMD 1 million base; AMD 15,000 from AMD 1,000,001 | [Stamp 9–12][stamp], https://www.arlis.am/hy/acts/230046 |
+| Military stamp, eligible annual population | AMD 12,000 through AMD 12 million base; AMD 120,000 from AMD 12,000,001 | [Stamp 9–12][stamp], https://www.arlis.am/hy/acts/230046 |
+| Health statutory full premium | AMD 129,600 annually / AMD 10,800 monthly | [Health 13][health], https://www.arlis.am/hy/acts/230432 |
+| Health 2026 eligible employee contribution | AMD 4,800 through AMD 500,000 salary; full AMD 10,800 from AMD 500,001, after entry/status tests | [Health 45–46][health], https://www.arlis.am/hy/acts/230432 |
 
 ## The base
 
@@ -238,4 +238,4 @@ Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -2,18 +2,19 @@
 name: na-tax-overview
 description: >
   Namibia tax overview for 2026: the taxes, authority, years, top rates and where each is covered. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Namibia Tax Overview v0.2
+# Namibia Tax Overview v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 

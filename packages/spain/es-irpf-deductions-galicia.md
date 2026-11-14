@@ -2,10 +2,10 @@
 name: es-irpf-deductions-galicia
 description: >
   Calculate Galicia regional credits for ordinary Spanish resident IRPF in 2026, for a taxpayer whose community of residence under LIRPF art. 72 is Galicia. Covers claim year, income measure and family relief; home works, previously empty rentals and aid; investment and research gifts. Each row gives the credit's amount, cap, income gate, sharing rule and article, with incompatibilities and any carry-forward the law allows. Use for deducciones autonómicas Galicia, regional IRPF credits, alquiler, nacimiento, family, housing and gift relief in Galicia. Load es-irpf-deductions first for the residence test, the deduction ledger, the state and regional order of credits, the attributable-tax worksheet, national credits, deadlines and penalties, and es-income-tax for the bases and scales. Split unchanged from es-irpf-deductions on 6 November 2026.
-version: 2.5
+version: 2.6
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 depends_on:
   - es-irpf-deductions
   - es-income-tax
@@ -105,11 +105,11 @@ For a fresh year in which works relief450 and market-entry relief500 both qualif
 
 A sole claimant has only three rentable homes A/B/C, each wholly owned, and no public aid. All qualifying works, vacancy, value, tenancy and continuing-rental facts are documented. A and B each incur 9,000 eligible costs, complete works and first let in 2025. C incurs 3,000 eligible costs, completes works and first lets in 2026. All rents initially exceed 700, isolating works relief from fixed 500 relief. There is enough regional quota to absorb every nominal works credit in this expense-base example. The 2025 two-home calculation admitted 3,000 for A and 3,000 for B; their remaining 6,000 each are genuine expense balances excluded by the combined ceiling, with 2029 expiry under 22.5. In 2026 each old home has a 3,000 annual tranche and current C has 3,000, so 9,000 competes for 6,000 capacity:
 
-|2026 property tranche|Origin/last expense-use year|Eligible before combined ceiling|Base selected|Expense excluded by combined ceiling|
-|---|---|---:|---:|---:|
-|A, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|
-|B, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|
-|C, current cost|2026/2030|3,000|0|3,000|
+|2026 property tranche|Origin/last expense-use year|Eligible before combined ceiling|Base selected|Expense excluded by combined ceiling|Source|
+|---|---|---:|---:|---:|---|
+|A, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|[Art. 5.Veintidós.3/5](https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161#a5)|
+|B, earlier balance|2025/2029|3,000|3,000|0 of this annual tranche|same|
+|C, current cost|2026/2030|3,000|0|3,000|same|
 
 The selected 2026 base 6,000 generates **900** credit, fully used. After that use, A and B each retain 3,000 expense with the original 2029 expiry; C retains 3,000 expense expiring 2030. A current-first allocation would instead select C 3,000 and only 3,000 of A/B, leaving 9,000 of older expense expiring 2029. It would produce the same 900 current credit but a different expense ledger. In the supplied chronological selection, using A/B's last 3,000 each in 2027 and C’s 3,000 in 2028 gives 900 and 450 nominal credits, respectively; the total base across all years is 21,000 and total relief 3,150. None of the individual 9,000 lifetime property ceilings is exceeded. If the allowed 2028 C-base credit cannot be absorbed for quota, it is a **2028 credit** with 2032 last use; the original expense amount does not remain deductible a second time.
 

@@ -1,14 +1,15 @@
 ---
 name: lv-corporate-income-tax
 description: "Latvian corporate income tax for tax year 2026 under the Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums) in force from 1 January 2026. Latvia taxes a company only when it distributes profit: 20% of the amount divided by 0.8. Covers who pays, the optional 15% rate with a 0.85 divisor for dividends of companies owned only by individuals (plus 6% personal income tax), deemed distributions (non-business expenses, bad debts, excess interest, loans to related persons, transfer pricing adjustments), dividends received, the 36-month share disposal relief, pre-2018 profits and losses, the monthly return by the 20th and payment by the 23rd, the EUR 50 minimum, fines and 0.05% a day late interest. Trigger on: Latvia corporate tax, SIA dividend tax, 20/80, UIN deklarācija, uzņēmumu ienākuma nodoklis. Out of scope: payments to non-residents (lv-cross-border), transfer pricing documentation (lv-transfer-pricing), individuals (latvia-income-tax), micro-enterprise tax and planning (latvia-tax-optimization)."
-version: 0.3
+version: 0.4
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Latvia: corporate income tax (2026)

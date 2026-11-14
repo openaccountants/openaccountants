@@ -1,13 +1,14 @@
 ---
 name: ng-non-resident-cross-border
 description: "Nigerian cross-border tax under the Nigeria Tax Act 2025 and the Nigeria Tax Administration Act 2025, in force from 1 January 2026. Covers residence of individuals (domicile, home, habitual abode, ties, 183 days) and companies (incorporation or central or effective management), how non-residents are taxed (permanent establishment, significant economic presence, services and insurance payments from Nigeria, gains on Nigerian assets), the PE profit rules and the profit-margin fallback, the 4% minimum where income is not liable to deduction at source, final tax on deducted amounts, dividends to non-residents, the 2% shipping and airline minimum, double taxation relief (unilateral and treaty credits, beneficial ownership, two-year claim), and non-resident company returns. Trigger on: Nigeria non-resident tax, permanent establishment Nigeria, significant economic presence, Nigeria double taxation agreement, foreign tax credit Nigeria, NTA section 17, Nigeria tax residence 183 days. Out of scope: withholding tax rates (regulations), transfer pricing methods, VAT on imported services."
-version: 0.1
+version: 0.2
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: cross-border
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Nigeria cross-border: residence, non-residents, permanent establishment and double tax relief (2026)

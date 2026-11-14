@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-country-by-country-reporting"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland country-by-country reporting v0.6
+# Finland country-by-country reporting v0.7
 
 ## Who this applies to
 
@@ -20,10 +20,10 @@ Apply Assessment Procedure Act 1558/1995 §14d to Finnish ultimate-parent groups
 
 | Item | Rule | Official source |
 |---|---|---|
-| Revenue threshold | At least EUR 750 million preceding accounting period | Act §14d(1),(4),(5) [text][law] |
-| Notification | By final day of reported accounting period | Act §14d(11) [text][law] |
-| Full report / parent-refusal notification | Within 12 months after period end | Act §14d(11) [text][law] |
-| CbCR-specific tax increase | Up to EUR 25,000 for specified failures | Act §§32(1)(3),32a [text][law] |
+| Revenue threshold | At least EUR 750 million preceding accounting period | Act §14d(1),(4),(5) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Notification | By final day of reported accounting period | Act §14d(11) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Full report / parent-refusal notification | Within 12 months after period end | Act §14d(11) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| CbCR-specific tax increase | Up to EUR 25,000 for specified failures | Act §§32(1)(3),32a [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
 
 ## The base
 
@@ -150,4 +150,4 @@ Not yet confirmed: no taxpayer-specific foreign exchange relationship or filing 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-country-by-country-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-country-by-country-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-country-by-country-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-country-by-country-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.
