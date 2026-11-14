@@ -1,16 +1,17 @@
 ---
 name: at-income-tax
 description: "Austrian income tax (Einkommensteuer) for resident individuals, tax year 2026: employees, pensioners, sole traders, freelancers and private landlords. Covers the 2026 bands (0/20/30/40/48/50/55%) as indexed by two thirds of 2.6% inflation, the credits (Verkehrsabsetzbetrag, sole-earner and single-parent, pensioner, Pendlereuro), Familienbonus Plus and Kindermehrbetrag, the Gewinnfreibetrag (15% on the first EUR 33,000), the Basispauschalierung (6% or 15%, EUR 420,000 limit), the 2026 investment allowance, special and extraordinary expenses, losses, the E 1 and L 1 returns, deadlines (30 April paper, 30 June FinanzOnline), prepayments, Anspruchszinsen and surcharges. Trigger on: Einkommensteuer, ESt, E 1, Arbeitnehmerveranlagung, L 1, Gewinnfreibetrag, Basispauschalierung, Familienbonus Plus, Absetzbeträge, Austrian income tax, self-employed tax Austria. Out of scope: SVS contributions in at-svs-contributions; payroll in at-payroll-and-social-insurance; VAT in at-vat-return; companies in at-corporate-income-tax; non-residents in at-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Austrian income tax for individuals (Einkommensteuer): the E 1 return, the employee assessment (L 1) and prepayments (2026)
@@ -39,49 +40,49 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 | Item | 2026 rate or amount | Year | Source |
 |---|---|---|---|
 | Taxable income up to EUR 13,539 | 0% | 2026 | EStG § 33 Abs 1, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 |
-| Over EUR 13,539 up to EUR 21,992 | 20% | 2026 | EStG § 33 Abs 1 (same URL) |
-| Over EUR 21,992 up to EUR 36,458 | 30% | 2026 | EStG § 33 Abs 1 |
-| Over EUR 36,458 up to EUR 70,365 | 40% | 2026 | EStG § 33 Abs 1 |
-| Over EUR 70,365 up to EUR 104,859 | 48% | 2026 | EStG § 33 Abs 1 |
-| Over EUR 104,859 up to EUR 1,000,000 | 50% | 2026 | EStG § 33 Abs 1 |
-| Over EUR 1,000,000 | 55% (calendar years 2016 to 2029) | 2026 | EStG § 33 Abs 1, last sentence |
-| Familienbonus Plus, child up to the month of the 18th birthday | EUR 166.68 a month (EUR 2,000.16 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit a |
-| Familienbonus Plus, older child while family allowance is paid | EUR 58.34 a month (EUR 700.08 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit b |
-| Kinderabsetzbetrag (paid with the family allowance) | EUR 70.90 a month per child | 2025 to 2028 | EStG § 33 Abs 3 Z 1 (RIS note 1: EUR 70.90 for 2025 under BGBl. II Nr. 314/2024) and § 124b Z 475 (no indexation 2026 to 2028) |
-| Kindermehrbetrag | EUR 700 per child, less tariff tax | 2026 | EStG § 33 Abs 7 |
-| Alleinverdiener- or Alleinerzieherabsetzbetrag | EUR 612 (one child), EUR 828 (two), plus EUR 273 for each further child | 2026 | EStG § 33 Abs 4 Z 1 and 2 |
-| Sole earner: partner's income limit | EUR 7,411 | 2026 | EStG § 33 Abs 4 Z 1 |
-| Unterhaltsabsetzbetrag | EUR 38 a month (first child), EUR 56 (second), EUR 75 (each further) | 2026 | EStG § 33 Abs 4 Z 3 |
-| Verkehrsabsetzbetrag (employees) | EUR 496 | 2026 | EStG § 33 Abs 5 Z 1 |
-| Increased Verkehrsabsetzbetrag with a Pendlerpauschale | EUR 853 up to income EUR 15,069, falling to EUR 496 at EUR 16,056 | 2026 | EStG § 33 Abs 5 Z 2 |
-| Zuschlag zum Verkehrsabsetzbetrag | EUR 804 up to income EUR 19,761, falling to nil at EUR 30,259 | 2026 | EStG § 33 Abs 5 Z 3 |
-| Pendlerpauschale, public transport reasonable (at least 20 km one way) | EUR 696 (20 to 40 km), EUR 1,356 (over 40 to 60 km), EUR 2,016 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit c |
-| Pendlerpauschale, public transport not reasonable for at least half the way | EUR 372 (2 to 20 km), EUR 1,476 (over 20 to 40 km), EUR 2,568 (over 40 to 60 km), EUR 3,672 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit d |
-| Pendlereuro | EUR 6 a year per km of one-way commute (with a Pendlerpauschale) | from 2026 | EStG § 33 Abs 5 Z 4; § 124b Z 476 |
-| Pensionistenabsetzbetrag | EUR 1,020, falling to nil between pension income EUR 21,614 and EUR 31,494 | 2026 | EStG § 33 Abs 6 Z 3 |
-| Increased Pensionistenabsetzbetrag | EUR 1,502 up to pension income EUR 24,616, falling to nil at EUR 31,494; spouse income at most EUR 2,720 | 2026 | EStG § 33 Abs 6 Z 1 and 2 |
-| SV-Rückerstattung (refund of social insurance where tax is below nil) | 55% of contributions, at most EUR 496 (EUR 750 with a Pendlerpauschale), plus EUR 804 (SV-Bonus) where the Zuschlag applies | 2026 | EStG § 33 Abs 8 Z 2 |
-| SV-Rückerstattung for pensioners | 80% of contributions, at most EUR 723 | 2026 | EStG § 33 Abs 8 Z 3 |
-| Werbungskostenpauschale (employees) | EUR 132 a year | 2026 | EStG § 16 Abs 3 |
-| Gewinnfreibetrag | 15% of the first EUR 33,000 (Grundfreibetrag, at most EUR 4,950); 13% of the next EUR 145,000; 7% of the next EUR 175,000; 4.5% of the next EUR 230,000; at most EUR 46,400 | 2026 | EStG § 10 Abs 1 Z 2 and 3 |
-| Basispauschalierung | 15% of turnover, at most EUR 63,000; 6% (at most EUR 25,200) for consulting, § 22 Z 2 activities, writing, lecturing, science, teaching and education | from the 2026 assessment | EStG § 17 Abs 1 |
-| Basispauschalierung: prior-year turnover limit | EUR 420,000 | from the 2026 assessment | EStG § 17 Abs 2 Z 2 |
-| Investitionsfreibetrag | 20% (22% for green assets) of cost falling from 1 November 2025 to 31 December 2026; otherwise 10% (15%); on at most EUR 1,000,000 of cost a year | 2026 | EStG § 11 Abs 1; § 124b Z 480 |
+| Over EUR 13,539 up to EUR 21,992 | 20% | 2026 | EStG § 33 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Over EUR 21,992 up to EUR 36,458 | 30% | 2026 | EStG § 33 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Over EUR 36,458 up to EUR 70,365 | 40% | 2026 | EStG § 33 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Over EUR 70,365 up to EUR 104,859 | 48% | 2026 | EStG § 33 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Over EUR 104,859 up to EUR 1,000,000 | 50% | 2026 | EStG § 33 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Over EUR 1,000,000 | 55% (calendar years 2016 to 2029) | 2026 | EStG § 33 Abs 1, last sentence: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Familienbonus Plus, child up to the month of the 18th birthday | EUR 166.68 a month (EUR 2,000.16 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit a: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Familienbonus Plus, older child while family allowance is paid | EUR 58.34 a month (EUR 700.08 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit b: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Kinderabsetzbetrag (paid with the family allowance) | EUR 70.90 a month per child | 2025 to 2028 | EStG § 33 Abs 3 Z 1 (RIS note 1: EUR 70.90 for 2025 under BGBl. II Nr. 314/2024) and § 124b Z 475 (no indexation 2026 to 2028): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b |
+| Kindermehrbetrag | EUR 700 per child, less tariff tax | 2026 | EStG § 33 Abs 7: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Alleinverdiener- or Alleinerzieherabsetzbetrag | EUR 612 (one child), EUR 828 (two), plus EUR 273 for each further child | 2026 | EStG § 33 Abs 4 Z 1 and 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Sole earner: partner's income limit | EUR 7,411 | 2026 | EStG § 33 Abs 4 Z 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Unterhaltsabsetzbetrag | EUR 38 a month (first child), EUR 56 (second), EUR 75 (each further) | 2026 | EStG § 33 Abs 4 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Verkehrsabsetzbetrag (employees) | EUR 496 | 2026 | EStG § 33 Abs 5 Z 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Increased Verkehrsabsetzbetrag with a Pendlerpauschale | EUR 853 up to income EUR 15,069, falling to EUR 496 at EUR 16,056 | 2026 | EStG § 33 Abs 5 Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Zuschlag zum Verkehrsabsetzbetrag | EUR 804 up to income EUR 19,761, falling to nil at EUR 30,259 | 2026 | EStG § 33 Abs 5 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Pendlerpauschale, public transport reasonable (at least 20 km one way) | EUR 696 (20 to 40 km), EUR 1,356 (over 40 to 60 km), EUR 2,016 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit c: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=16 |
+| Pendlerpauschale, public transport not reasonable for at least half the way | EUR 372 (2 to 20 km), EUR 1,476 (over 20 to 40 km), EUR 2,568 (over 40 to 60 km), EUR 3,672 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit d: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=16 |
+| Pendlereuro | EUR 6 a year per km of one-way commute (with a Pendlerpauschale) | from 2026 | EStG § 33 Abs 5 Z 4; § 124b Z 476: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b |
+| Pensionistenabsetzbetrag | EUR 1,020, falling to nil between pension income EUR 21,614 and EUR 31,494 | 2026 | EStG § 33 Abs 6 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Increased Pensionistenabsetzbetrag | EUR 1,502 up to pension income EUR 24,616, falling to nil at EUR 31,494; spouse income at most EUR 2,720 | 2026 | EStG § 33 Abs 6 Z 1 and 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| SV-Rückerstattung (refund of social insurance where tax is below nil) | 55% of contributions, at most EUR 496 (EUR 750 with a Pendlerpauschale), plus EUR 804 (SV-Bonus) where the Zuschlag applies | 2026 | EStG § 33 Abs 8 Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| SV-Rückerstattung for pensioners | 80% of contributions, at most EUR 723 | 2026 | EStG § 33 Abs 8 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33 |
+| Werbungskostenpauschale (employees) | EUR 132 a year | 2026 | EStG § 16 Abs 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=16 |
+| Gewinnfreibetrag | 15% of the first EUR 33,000 (Grundfreibetrag, at most EUR 4,950); 13% of the next EUR 145,000; 7% of the next EUR 175,000; 4.5% of the next EUR 230,000; at most EUR 46,400 | 2026 | EStG § 10 Abs 1 Z 2 and 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=10 |
+| Basispauschalierung | 15% of turnover, at most EUR 63,000; 6% (at most EUR 25,200) for consulting, § 22 Z 2 activities, writing, lecturing, science, teaching and education | from the 2026 assessment | EStG § 17 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=17 |
+| Basispauschalierung: prior-year turnover limit | EUR 420,000 | from the 2026 assessment | EStG § 17 Abs 2 Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=17 |
+| Investitionsfreibetrag | 20% (22% for green assets) of cost falling from 1 November 2025 to 31 December 2026; otherwise 10% (15%); on at most EUR 1,000,000 of cost a year | 2026 | EStG § 11 Abs 1; § 124b Z 480: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=11 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b |
 | Arbeitsplatzpauschale (self-employed working from home) | EUR 1,200, or EUR 300 if other active income over EUR 13,539 with a workplace elsewhere | 2026 | EStG § 4 Abs 4 Z 8 as in force on 30 June 2026, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&FassungVom=2026-06-30 |
-| Low-value assets (GWG) expensed at once | Cost up to EUR 1,000 | 2026 | EStG § 13 |
-| Special rate, capital income | 25% (bank deposits), 27.5% (other) | 2026 | EStG § 27a Abs 1 |
-| Special rate, private real estate gains | 30% | 2026 | EStG § 30a Abs 1 |
-| Church contributions (Sonderausgabe) | At most EUR 600 a year | 2026 | EStG § 18 Abs 1 Z 5 |
-| Donations (Sonderausgabe) | At most 10% of total income after loss offset | 2026 | EStG § 18 Abs 1 Z 7 |
-| Selbstbehalt for extraordinary expenses | 6% (income up to EUR 7,300), 8% (to EUR 14,600), 10% (to EUR 36,400), 12% above | 2026 | EStG § 34 Abs 4 |
-| Filing duty, no wage-taxed income | Income over EUR 13,539 | 2026 | EStG § 42 Abs 1 Z 3 |
-| Filing duty, wage-taxed income plus other income over EUR 730 (and the other § 41 Abs 1 cases named in § 42) | Income over EUR 14,769 | 2026 | EStG § 41 Abs 1 Z 1; § 42 Abs 1 Z 3 |
-| Prepayment uplift | Last assessed tax plus 4% (first following year), plus 5% for each later year; rounded down to full euros; set at nil if the year's total would be EUR 300 or less | 2026 | EStG § 45 Abs 1 |
-| Rounding of the assessed tax | To full euros (below EUR 0.50 down, from EUR 0.50 up) | 2026 | EStG § 39 Abs 3 |
+| Low-value assets (GWG) expensed at once | Cost up to EUR 1,000 | 2026 | EStG § 13: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=13 |
+| Special rate, capital income | 25% (bank deposits), 27.5% (other) | 2026 | EStG § 27a Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a |
+| Special rate, private real estate gains | 30% | 2026 | EStG § 30a Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=30a |
+| Church contributions (Sonderausgabe) | At most EUR 600 a year | 2026 | EStG § 18 Abs 1 Z 5: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=18 |
+| Donations (Sonderausgabe) | At most 10% of total income after loss offset | 2026 | EStG § 18 Abs 1 Z 7: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=18 |
+| Selbstbehalt for extraordinary expenses | 6% (income up to EUR 7,300), 8% (to EUR 14,600), 10% (to EUR 36,400), 12% above | 2026 | EStG § 34 Abs 4: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=34 |
+| Filing duty, no wage-taxed income | Income over EUR 13,539 | 2026 | EStG § 42 Abs 1 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=42 |
+| Filing duty, wage-taxed income plus other income over EUR 730 (and the other § 41 Abs 1 cases named in § 42) | Income over EUR 14,769 | 2026 | EStG § 41 Abs 1 Z 1; § 42 Abs 1 Z 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=41 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=42 |
+| Prepayment uplift | Last assessed tax plus 4% (first following year), plus 5% for each later year; rounded down to full euros; set at nil if the year's total would be EUR 300 or less | 2026 | EStG § 45 Abs 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=45 |
+| Rounding of the assessed tax | To full euros (below EUR 0.50 down, from EUR 0.50 up) | 2026 | EStG § 39 Abs 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=39 |
 | Anspruchszinsen | 2% a year above the base rate, from 1 October 2027 for 2026; not set below EUR 50; at most 48 months | 2026 | BAO § 205 Abs 1 and 2, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
 | Base rate (Basiszinssatz), so the Anspruchszinsen rate | 2.03% from 16 September 2026, so 4.03% a year; 1.53% from 11 June 2025 to 15 September 2026, so 3.53%. The rate in force on each day applies | as at 24 October 2026 | OeNB, Basis- und Referenzzinssätze, https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE |
-| Säumniszuschlag | 2%, then 1% and 1% | 2026 | BAO § 217 Abs 2 and 3 |
-| Verspätungszuschlag | Up to 10% of the tax assessed | 2026 | BAO § 135 |
+| Säumniszuschlag | 2%, then 1% and 1% | 2026 | BAO § 217 Abs 2 and 3: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=217 |
+| Verspätungszuschlag | Up to 10% of the tax assessed | 2026 | BAO § 135: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=135 |
 
 **2025 figures, for 2025 returns still being filed.** Bands EUR 13,308 / 21,617 / 35,836 / 69,166 / 103,072. Sole-earner credits EUR 601 / 813 / 268, partner limit EUR 7,284. Verkehrsabsetzbetrag EUR 487, increased EUR 838, Zuschlag EUR 790. Pensioner credits EUR 1,002 and EUR 1,476. Filing limits EUR 13,308 and EUR 14,517. These are the amounts that BGBl. I Nr. 97/2025 replaced with the 2026 figures. Never apply one year's bands to another year.
 
@@ -272,26 +273,26 @@ expected:
 |---|---|---|
 | Einkommensteuergesetz 1988, RIS consolidated text as of 24.10.2026 (§§ 1, 2, 4 Abs 5, 7, 8, 10, 11, 13, 16, 17, 18, 20, 26 Z 4, 27a, 30, 30a, 33, 33a, 34, 39, 41, 42, 45, 46, 102, 124b Z 475 to 497) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
 | Einkommensteuergesetz 1988, RIS text as in force on 30.06.2026 (§ 4 Abs 4 Z 8, § 16 Abs 1 Z 7a, § 17 Abs 1, § 26 Z 9 for 2026) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&FassungVom=2026-06-30 | 2026-10-24 |
-| Inflationsanpassungsverordnung 2026, BGBl. II Nr. 191/2025 | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_II_191/BGBLA_2025_II_191.html | 2026-10-24 |
+| Inflationsanpassungsverordnung 2026, BGBl. II Nr. 191/2025: read for the rules and figures this Guide cites from it | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_II_191/BGBLA_2025_II_191.html | 2026-10-24 |
 | Abgabenänderungsgesetz 2025, BGBl. I Nr. 97/2025 (2026 amounts in § 33; the 2025 amounts it replaced) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_I_97/BGBLA_2025_I_97.html | 2026-10-24 |
-| Budgetbegleitgesetz 2027-2028, BGBl. I Nr. 62/2026 (2027 changes; Kinderabsetzbetrag freeze to 2028) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_62/BGBLA_2026_I_62.html | 2026-10-24 |
-| Inflationsanpassungsverordnung 2027, BGBl. II Nr. 260/2026 | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_II_260/BGBLA_2026_II_260.html | 2026-10-24 |
+| Budgetbegleitgesetz 2027-2028, BGBl. I Nr. 62/2026: read for 2027 changes; Kinderabsetzbetrag freeze to 2028 | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_62/BGBLA_2026_I_62.html | 2026-10-24 |
+| Inflationsanpassungsverordnung 2027, BGBl. II Nr. 260/2026: read for the rules and figures this Guide cites from it | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_II_260/BGBLA_2026_II_260.html | 2026-10-24 |
 | Bundesabgabenordnung, RIS consolidated text as of 24.10.2026 (§§ 134, 134a, 135, 205, 210, 211, 217, 245) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-24 |
-| OeNB, Basis- und Referenzzinssätze (base rate 2.03% from 16.09.2026) | https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE | 2026-10-24 |
+| OeNB, Basis- und Referenzzinssätze: read for base rate 2.03% from 16.09.2026 | https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE | 2026-10-24 |
 | PKW-Angemessenheitsverordnung, BGBl. II Nr. 466/2004, RIS consolidated text (§ 1, EUR 40,000) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003797 | 2026-10-24 |
 | Reisegebührenvorschrift 1955, RIS consolidated text (§ 10 Abs 3 Z 2, EUR 0.50 per km) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008156 | 2026-10-24 |
 | FinanzOnline-Erklärungsverordnung, RIS consolidated text (§ 2, when electronic filing is required) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 | 2026-10-24 |
 | Verordnung über die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen, RIS consolidated text (§ 1, EUR 55,000) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 | 2026-10-24 |
-| USP, Tarifstufen (2026 tariff and the official EUR 40,000 example) | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html | 2026-10-24 |
-| USP, Steuerabsetzbeträge (2026 credits, Kinderabsetzbetrag) | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html | 2026-10-24 |
-| USP, Gewinnfreibetrag | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html | 2026-10-24 |
-| USP, Basispauschalierung Einkommensteuer | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html | 2026-10-24 |
-| USP, Einkommensteuererklärung (2026 filing limits) | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html | 2026-10-24 |
-| USP, Einreichen von Steuererklärungen (deadlines, paper filing) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html | 2026-10-24 |
-| USP, Einkommensteuervorauszahlungen | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuervorauszahlungen.html | 2026-10-24 |
-| USP, Fristen und Fälligkeiten (surcharges, three-day grace) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/fristen-und-faelligkeiten.html | 2026-10-24 |
-| USP, Reisekosten (25 km rule, EUR 0.50 per km) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html | 2026-10-24 |
-| USP, Steuerrechtsreihe Teil 7, Kfz (50% rule for running costs) | https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html | 2026-10-24 |
-| BMF, Familienbonus Plus (schedules L 1k, L 1k-bF, E 30) | https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html | 2026-10-24 |
+| USP, Tarifstufen: read for 2026 tariff and the official EUR 40,000 example | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html | 2026-10-24 |
+| USP, Steuerabsetzbeträge: read for 2026 credits, Kinderabsetzbetrag | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html | 2026-10-24 |
+| USP, Gewinnfreibetrag: read for the rules and figures this Guide cites from it | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html | 2026-10-24 |
+| USP, Basispauschalierung Einkommensteuer: read for the rules and figures this Guide cites from it | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html | 2026-10-24 |
+| USP, Einkommensteuererklärung: read for 2026 filing limits | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html | 2026-10-24 |
+| USP, Einreichen von Steuererklärungen: read for deadlines, paper filing | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html | 2026-10-24 |
+| USP, Einkommensteuervorauszahlungen: read for the rules and figures this Guide cites from it | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuervorauszahlungen.html | 2026-10-24 |
+| USP, Fristen und Fälligkeiten: read for surcharges, three-day grace | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/fristen-und-faelligkeiten.html | 2026-10-24 |
+| USP, Reisekosten: read for 25 km rule, EUR 0.50 per km | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html | 2026-10-24 |
+| USP, Steuerrechtsreihe Teil 7, Kfz: read for 50% rule for running costs | https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html | 2026-10-24 |
+| BMF, Familienbonus Plus: read for schedules L 1k, L 1k-bF, E 30 | https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html | 2026-10-24 |
 
 Not yet confirmed: the 25 km minimum distance for a business trip and the rule that car running costs are business costs only above 50% business use, both read on USP and not found in the EStG or a regulation; the bookkeeping-duty thresholds that decide Basispauschalierung eligibility (§ 125 BAO, § 189 UGB) for 2026; the old version's BMF example of a home computer written off over three years with a 40% private share (Steuerbuch, 2025 assessment), not re-checked and left out; the 10% limit on donations from business assets (§ 4a), not re-read; Liebhaberei (hobby activities produce no tax loss, Liebhabereiverordnung), covered in the old version and not re-checked.
