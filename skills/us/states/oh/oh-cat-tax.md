@@ -1,10 +1,10 @@
 ---
 name: oh-cat-tax
 description: Ohio commercial activity tax (CAT) for calendar year 2026, a gross receipts tax under R.C. Chapter 5751. Who owes it (bright-line presence and Ohio taxable gross receipts over the $6,000,000 exclusion amount for 2025 and later), what counts as taxable gross receipts, excluded receipts, situsing to Ohio, combined and consolidated groups, the 0.26% rate on receipts above the exclusion applied quarterly with carry-forward inside the year, registration within 30 days, quarterly returns on the Ohio Business Gateway due the 10th of the second month after the quarter, penalties and 7% interest for 2026. Trigger on "Ohio CAT", "commercial activity tax", "Ohio gross receipts tax", "R.C. 5751", "CAT exclusion", "Ohio Business Gateway CAT return". Not Ohio sales tax (see oh-sales-tax) or income tax.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-OH
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -86,7 +86,7 @@ Sources: [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commerc
 | 2026 | TGR more than $6,000,000 | $6,000,000 | 0.26% | None | Quarterly only | [R.C. 5751.01(R)](https://codes.ohio.gov/ohio-revised-code/section-5751.01); [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023) |
 | 2025 | TGR more than $6,000,000 | $6,000,000 | 0.26% | None | Quarterly only | [R.C. 5751.01(R)](https://codes.ohio.gov/ohio-revised-code/section-5751.01); [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023) |
 | 2024 | TGR more than $3,000,000 | $3,000,000 | 0.26% | None (eliminated) | Quarterly only | [R.C. 5751.01(R)](https://codes.ohio.gov/ohio-revised-code/section-5751.01); [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023) |
-| 2014 to 2023 | TGR more than $150,000, with bright-line presence | $1,000,000 | 0.26% | $150 to $2,600 (below) | Annual if TGR under $1 million; otherwise quarterly | [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023) |
+| 2014 to 2023 | TGR more than $150,000, with bright-line presence | $1 million | 0.26% | $150 to $2,600 (below) | Annual if TGR under $1 million; otherwise quarterly | [CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023) |
 
 - "Effective for tax periods beginning on and after January 1, 2024, the CAT annual minimum tax is eliminated." The minimum tax is repealed from 2024, not from 2025.
 - "The CAT rate of 0.26% remains unchanged" ([CAT 2023-01](https://tax.ohio.gov/business/ohio-business-taxes/commercial-activities/information-releases/cat2023-01-iss-aug-2023)).
@@ -126,8 +126,8 @@ Sources: [Department CAT page](https://tax.ohio.gov/business/commercial-activity
 | Failure to register on time | "a penalty of up to $100 per month, not to exceed $1,000" | [ODT CAT page](https://tax.ohio.gov/business/commercial-activity-tax) |
 | Interest on late tax, calendar year 2026 | 7% (2027 certified at 7%) | [ODT interest rates](https://tax.ohio.gov/individual/resources/interest-rates) |
 | Interest on late tax, calendar year 2025 | 8% | [ODT interest rates](https://tax.ohio.gov/individual/resources/interest-rates) |
-| Statutory estimate tolerance | each quarter's estimated TGR between 95% and 105% of actual | [CAT 2005-13](https://tax.ohio.gov/static/commercial_activities/information_releases/CAT_2005-13_EstimatedPaymentsforCalendarQuarterTaxpayers-UpdatedMay2020.pdf) |
-| Rule estimate | estimated TGR of at least 95% of the previous quarter's TGR; the payment is never less than 70% of the quarter's actual tax | [CAT 2005-13](https://tax.ohio.gov/static/commercial_activities/information_releases/CAT_2005-13_EstimatedPaymentsforCalendarQuarterTaxpayers-UpdatedMay2020.pdf) |
+| Statutory estimate tolerance | each quarter's estimated TGR between 95% and 105% of actual | [ODT CAT page](https://tax.ohio.gov/business/commercial-activity-tax) |
+| Rule estimate | estimated TGR of at least 95% of the previous quarter's TGR; the payment is never less than 70% of the quarter's actual tax (in words on the page) | [CAT 2005-13](https://tax.ohio.gov/static/commercial_activities/information_releases/CAT_2005-13_EstimatedPaymentsforCalendarQuarterTaxpayers-UpdatedMay2020.pdf) |
 
 ### Situsing: where receipts are sourced
 

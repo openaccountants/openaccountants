@@ -2,7 +2,7 @@
   "engine": "mt_household_comparison_2026",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/mt_household_comparison_2026",
   "generated_from": "src/lib/engines/mt-household-comparison-2026.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "mt_household_comparison_2026",
