@@ -43,7 +43,7 @@ Every employer with at least one worker; registration of workers with SSNIT is m
 | Casual worker | 5% | Seasonal or intermittent, not over six continuous months, paid daily | 2026 | same |
 | Non-resident employee | 25% flat | Chargeable income | 2026 | same |
 | Vehicle with driver and fuel | 12.5% of cash emoluments, cap GHS 1,500 a month | Benefit value | 2026 | https://gra.gov.gh/wp-content/uploads/2023/04/INCOME-TAX-AMENDMENT-ACT-2023-ACT-1094.pdf |
-| Vehicle with fuel | 10%, cap GHS 1,250 a month | Benefit value | 2026 | same |
+| Vehicle with fuel | 10%, cap one thousand two hundred and fifty cedis a month (Act 1094, Fourth Schedule item 2) | Benefit value | 2026 | same |
 | Vehicle only | 5%, cap GHS 625 a month | Benefit value | 2026 | same |
 | Fuel only | 5%, cap GHS 625 a month | Benefit value | 2026 | same |
 
@@ -82,7 +82,7 @@ Temporary workers, employed for at least a month, are taxed as other employees.
 | Failure | Consequence | Official URL |
 |---|---|---|
 | Late PAYE return | GHS 500 plus GHS 10 a day | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf |
-| Late PAYE payment | 125% of the Bank of Ghana policy rate, compounded monthly | same |
+| Late PAYE payment | One hundred and twenty five per cent of the Bank of Ghana monetary policy rate, compounded monthly | same |
 | Failing to withhold | The withholding agent is liable for the tax | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ |
 
 ## Cross-border points
