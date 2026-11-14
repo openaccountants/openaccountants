@@ -52,18 +52,18 @@ type: decision
 | 企业所得税基本税率 | 25% | 居民企业（《企业所得税法》第四条） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html |
 | 高新技术企业税率 | 15% | 第二十八条 | same |
 | 企业所得税年度汇算 | 年度终了之日起 5 个月内 | 第五十四条 | same |
-| 小型微利企业 | 减按 25% 计入、按 20% 缴纳（实际 5%） | 应纳税所得额 ≤ 300 万元、从业人数 ≤ 300 人、资产总额 ≤ 5000 万元，至 2027-12-31 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html |
+| 小型微利企业 | 减按 25% 计入、按 20% 缴纳（实际 5%，computed: 25% × 20%） | 应纳税所得额 ≤ 300 万元、从业人数 ≤ 300 人、资产总额 ≤ 5000 万元，至 2027-12-31 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html |
 | 个体工商户减半征收 | 200 万元以内部分减半征收个人所得税 | 2023-01-01 至 2027-12-31 | same |
 | 经营所得税率 | 5% 至 35% | 个体工商户、个人独资（个人所得税法税率表二） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html |
 | 非居民企业股息预提 | 10% | 《企业所得税法实施条例》第九十一条；协定可能更低 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html |
 | 外籍个人自外商投资企业取得股息 | 20% | 自 2026-09-01 起，公司代扣代缴（公告 2026 年第 27 号） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202609/t481448.html |
 | 研发费用加计扣除 | 加计 100% | 所有符合条件的企业，自 2023-01-01（公告 2023 年第 7 号） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html |
-| 增值税税率 | 13% / 9% / 6% / 0 | 《增值税法》第十条 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html |
+| 增值税税率 | 百分之十三 / 百分之九 / 百分之六 / 零 (13, 9, 6 and 0 per cent) | 《增值税法》第十条 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html |
 | 小规模纳税人门槛 | 年应征增值税销售额 500 万元 | 第九条 | same |
 | 小规模纳税人征收率 | 3% 减按 1% | 2026-01-01 至 2027-12-31（公告 2026 年第 10 号） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html |
 | 小规模纳税人起征点 | 月 10 万元；季 30 万元 | 同公告 | same |
 | 跨境服务零税率 | 0 | 向境外单位销售、完全在境外消费的研发、软件、信息系统等服务（《增值税法实施条例》第九条） | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html |
-| 城市维护建设税 | 7% / 5% / 1% | 市区 / 县城、镇 / 其他（《城市维护建设税法》第四条） | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202008/t20200812_3566258.htm |
+| 城市维护建设税 | 百分之七 / 百分之五 / 百分之一 (7, 5 and 1 per cent) | 市区 / 县城、镇 / 其他（《城市维护建设税法》第四条） | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202008/t20200812_3566258.htm |
 
 ## Ask the client first
 

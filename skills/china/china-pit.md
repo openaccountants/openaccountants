@@ -56,12 +56,12 @@ All figures are for tax year 2026. Conditions sit in the third column.
 | Business income, band 4 | 30% | Over 300,000 to 500,000 yuan | same |
 | Business income, band 5 | 35% | Over 500,000 yuan | same |
 | Interest, dividends, rental, property transfer, incidental income | 20% flat | IIT Law art. 3(3) | same |
-| Basic deduction (基本减除费用) | 60,000 yuan a year | Resident individual, comprehensive income (art. 6(1)) | same |
-| Labour remuneration, author's remuneration, royalties: income amount | Receipts less 20% | Annual computation; author's remuneration then counted at 70% (art. 6) | same |
-| Property rental expense deduction | 800 yuan, or 20% | 800 yuan if each receipt is 4,000 yuan or less; 20% if more (art. 6(4)) | same |
+| Basic deduction (基本减除费用) | 六万元 (sixty thousand yuan) a year | Resident individual, comprehensive income (art. 6(1)) | same |
+| Labour remuneration, author's remuneration, royalties: income amount | Receipts less 20% | Annual computation; author's remuneration then counted at 百分之七十 (seventy per cent) (art. 6) | same |
+| Property rental expense deduction | 800 yuan, or 20% | 800 yuan if each receipt is 四千元 (four thousand yuan) or less; 20% if more (art. 6(4)) | same |
 | Charitable donations | Up to 30% of declared taxable income | Full deduction where the State Council so provides (art. 6) | same |
 | Residence test | 183 days | A person without domicile is resident if in China 183 days or more in the tax year (art. 1) | same |
-| Children's education (子女教育) | 2,000 yuan a month per child | From 1 January 2023; full-time education from age 3 to doctorate; one parent 100% or each 50% | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202308/t20230831_3905100.htm |
+| Children's education (子女教育) | 2,000 yuan a month per child | From 1 January 2023; full-time education from age 3 to doctorate; one parent takes the whole amount or each parent half (split rule from the 2018 Interim Measures, not on this notice) | https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202308/t20230831_3905100.htm |
 | Infant care (3岁以下婴幼儿照护) | 2,000 yuan a month per child | Child under 3; same split options | same |
 | Elderly care (赡养老人) | 3,000 yuan a month | Only child takes all 3,000; siblings share 3,000 with at most 1,500 each | same |
 | Continuing education, degree (学历继续教育) | 400 yuan a month | During the degree course, at most 48 months | https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html |
@@ -76,9 +76,9 @@ All figures are for tax year 2026. Conditions sit in the third column.
 | Labour remuneration prepayment, band 1 | 20%, quick deduction 0 | Per-payment taxable amount up to 20,000 yuan | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml |
 | Labour remuneration prepayment, band 2 | 30%, quick deduction 2,000 | Over 20,000 to 50,000 yuan | same |
 | Labour remuneration prepayment, band 3 | 40%, quick deduction 7,000 | Over 50,000 yuan | same |
-| Labour, author's, royalty prepayment expense | 800 yuan, or 20% | 800 yuan if each payment is 4,000 yuan or less; 20% if more | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html |
-| Settlement exemption | Income up to 120,000 yuan with tax due, or tax due up to 400 yuan | Years 2024 to 2027; not where a withholding agent failed to withhold | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html |
-| Late payment surcharge (滞纳金) | 0.05% a day | From the day the tax is overdue (Tax Collection Law art. 32) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html |
+| Labour, author's, royalty prepayment expense | 800 yuan, or 20% | 800 yuan if each payment is 四千元 (four thousand yuan) or less; 20% if more | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html |
+| Settlement exemption | Income up to 12万 yuan (120 thousand) with tax due, or tax due up to 400 yuan | Years 2024 to 2027; not where a withholding agent failed to withhold | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html |
+| Late payment surcharge (滞纳金) | 万分之五 (five ten-thousandths, that is 0.05 per cent) a day | From the day the tax is overdue (Tax Collection Law art. 32) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html |
 
 Business income quick deductions (computed from the Table 2 bands, not printed in the law): 0; 1,500; 10,500; 40,500; 65,500.
 
