@@ -2,11 +2,11 @@
   "engine": "au_resident_tax_2026_27",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/au_resident_tax_2026_27",
   "generated_from": "src/lib/engines/au-resident-tax-2026-27.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "au_resident_tax_2026_27",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "jurisdiction": "AU",
     "tax_years": [
       "2026-27"
@@ -27,7 +27,12 @@
       "has_salary_or_wage_income": {
         "type": "boolean",
         "required": true,
-        "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself"
+        "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction top-up itself"
+      },
+      "labour_income": {
+        "type": "number",
+        "required": false,
+        "description": "AUD qualifying labour income (salary and wages) within gross_income; business or PSI income does not count. Taken as gross_income when not given"
       },
       "actual_work_expenses_claimed": {
         "type": "number",
@@ -130,14 +135,14 @@
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     },
     {
-      "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+      "name": "MEDICARE_LOW_INCOME_SINGLE_2026_27",
       "value": [
         28011,
         35013
       ],
       "slug": "au-rates-2026-27",
       "section": "Medicare",
-      "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031",
+      "quote": "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013.",
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     },
     {
@@ -153,7 +158,7 @@
       "value": 1000,
       "slug": "au-rates-2026-27",
       "section": "Individual income tax / Offsets and deductions",
-      "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners",
+      "quote": "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify",
       "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
     }
   ]

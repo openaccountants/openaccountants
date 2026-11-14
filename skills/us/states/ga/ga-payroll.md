@@ -1,10 +1,10 @@
 ---
 name: ga-payroll
 description: Run Georgia employer payroll taxes for tax year 2026, state income tax withholding administered by the Department of Revenue and state unemployment insurance administered by the Department of Labor. Covers the 4.99% withholding rate from 11 May 2026 (5.19% before), the Table E percentage method with its standard deduction and $5,000 dependent allowance, Form G-4 and the single-zero default, the payer classes and deposit dates (semi-weekly, monthly, quarterly, annual, the one-day rule over $100,000), Form G-7 and GA-V, Form G-1003 due 1 February 2027, the EFT rule above $500, overtime and tips reporting, the withholding penalties, and unemployment insurance (the $9,500 taxable wage base, the 2.70% new employer rate, liability tests, quarterly tax and wage reports, late report and interest charges) and new hire reporting within 10 days. Trigger on "Georgia payroll", "Georgia withholding", "Form G-7", "G-4", "G-1003", "Georgia SUTA", "Georgia unemployment tax".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-GA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -64,7 +64,7 @@ Out of scope, and where it goes:
 | UI liability: quarterly payroll of at least, or one worker in 20 calendar weeks | $1,500 | same |
 | UI liability, domestic employers: cash wages in a calendar quarter of | $1,000 or more | same |
 | UI liability, agricultural employers: gross quarterly payroll of at least | $20,000 | same |
-| UI late report penalty, per month or part month | greater of $20 or 0.05% of gross payroll | same |
+| UI late report penalty, per month or part month | greater of $20 or 0.05% of gross payroll (in words on the page: ".05 percent") | same |
 | UI interest on late contributions, per month or part month | 1.5% | same |
 | UI cost of collection fee on a deficiency | 20% | same |
 | New hire report deadline after hire, rehire or return to work | 10 days | [GDOL employer newsletter DOL-5137](https://dol.georgia.gov/document/unemployment-benefits/employer-newsletter-dol-5137/download) |
