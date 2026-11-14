@@ -83,17 +83,17 @@ For the full Schedule C computation, see `us-schedule-c-and-se-computation`.
 
 | Item | Value | Condition and official source |
 | --- | --- | --- |
-| 25 to 50 hours of business use in the month | GBP 10 | "25 to 50 £10"  https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-| 51 to 100 hours in the month | GBP 18 | "51 to 100 £18"  https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
-| 101 hours or more in the month | GBP 26 | "101 and more £26"  https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| 25 to 50 hours of business use in the month | GBP 10 | HMRC monthly band, 25-50 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| 51 to 100 hours in the month | GBP 18 | HMRC monthly band, 51-100 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
+| 101 hours or more in the month | GBP 26 | HMRC monthly band, at least 101 hours. https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home |
 
-- The rate is per month, set by that month's hours. "You can only use simplified expenses if you work for 25 hours or more a month from home" ([GOV.UK simplified expenses, working from home](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home)). A month under 25 hours gives nothing under this method.
-- "The flat rate does not include telephone or internet expenses. You can claim the business proportion of these bills by working out the actual costs" (same page). Phone and internet are claimed on top, at their business share.
-- The flat rate needs no exclusive-use room. GOV.UK: "This means you do not have to work out the proportion of personal and business use for your home" (same page).
+- Select the monthly amount from that month's business-use hours. Fewer than 25 hours in a month do not qualify for the flat rate ([GOV.UK simplified expenses, working from home](https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home)).
+- Telephone and internet are outside the household flat rate. Work out and claim their actual business share separately (same page).
+- This flat-rate method does not require calculating a business/private room allocation (same page).
 
 ### Self-employed: actual costs
 
-GOV.UK says a self-employed person working from home may claim a proportion of costs such as heating, electricity, Council Tax, mortgage interest or rent, and internet and telephone use, using "a reasonable method of dividing your costs, for example by the number of rooms you use for business or the amount of time you spend working from home" ([GOV.UK, expenses if you're self-employed](https://www.gov.uk/expenses-if-youre-self-employed)). Mortgage interest is listed; capital repayments are not. Choose either the flat rate or the actual split for the household running costs, not both.
+For a self-employed person working at home, HMRC lists heating, electricity, Council Tax, mortgage interest or rent, internet and telephone as possible shared costs. Allocate reasonably using the business rooms, working time and actual circumstances ([GOV.UK, expenses if you're self-employed](https://www.gov.uk/expenses-if-youre-self-employed)). Mortgage principal is not interest. For household running costs, choose actual allocation or the flat rate without claiming both.
 
 For the wider self-employed return, see `uk-freelance-intake`.
 
@@ -101,17 +101,17 @@ For the wider self-employed return, see `uk-freelance-intake`.
 
 | Item | Value | Condition and official source |
 | --- | --- | --- |
-| Weekly amount an employee could claim relief on, earlier years | GBP 6 | "You can either claim tax relief on: £6 a week the exact amount you’ve spent"  https://www.gov.uk/tax-relief-for-employees/working-at-home |
+| Weekly amount an employee could claim relief on, earlier years | GBP 6 | Earlier-year flat amount or evidenced actual additional costs, subject to employee eligibility. https://www.gov.uk/tax-relief-for-employees/working-at-home |
 
-- For the tax year 6 April 2026 to 5 April 2027 this relief is gone. GOV.UK states: "From the tax year 6 April 2026 to 5 April 2027, you will not be able to claim tax relief for working from home. You can still claim for the 4 previous tax years" ([GOV.UK, working from home relief](https://www.gov.uk/tax-relief-for-employees/working-at-home)).
-- For those earlier years the employee had to work from home, not choose to. "You cannot claim tax relief if you choose to work from home", including where the contract lets you work from home some or all of the time, or the office exists but is sometimes full (same page). Costs used for both private and business use, such as rent or broadband, could not be claimed.
+- The employee's own homeworking relief ends from the tax year 6 April 2026 to 5 April 2027. Eligible claims for the previous four tax years remain possible ([GOV.UK, working from home relief](https://www.gov.uk/tax-relief-for-employees/working-at-home)).
+- Earlier-year relief required homeworking rather than a personal choice, including hybrid arrangements chosen by the employee or occasional office-capacity constraints. Shared private/business costs such as rent or broadband were excluded (same page).
 
 ### Employees: payments from the employer
 
 | Item | Value | Condition and official source |
 | --- | --- | --- |
-| Weekly limit, 2020 to 2021 onwards | GBP 6 | "2020 to 2021 onwards £6.00 (or £26 a month for employees paid monthly)"  https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
-| Monthly limit for employees paid monthly, 2020 to 2021 onwards | GBP 26 | "£26 a month for employees paid monthly"  https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
+| Weekly limit, 2020 to 2021 onwards | GBP 6 | Separate employer payment exemption, subject to the conditions below. https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
+| Monthly limit for employees paid monthly, 2020 to 2021 onwards | GBP 26 | Monthly payroll equivalent of the weekly employer exemption. https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax |
 
 - This is a separate rule from the employee's own claim above. An employer that covers additional household expenses does not report or pay tax if both apply: the employee is working at home as agreed with the employer and regularly works from home under those arrangements, AND the amount is not more than the employee's additional household expenses or not more than the weekly limit in the table above ([GOV.UK homeworking expenses exempt from tax](https://www.gov.uk/expenses-and-benefits-homeworking/homeworking-expenses-and-benefits-that-are-exempt-from-tax)). This page does not say the employer exemption ended in April 2026.
 - Reimbursed broadband is exempt only if all apply: a connection was not already available, the employee needs it to work from home, and it is mainly used for business (same page).
@@ -122,15 +122,15 @@ For the wider self-employed return, see `uk-freelance-intake`.
 
 | Item | Value | Condition and official source |
 | --- | --- | --- |
-| Temporary flat rate per day, 2020, 2021 and 2022 only | CAD 2 | "temporary flat rate of $2 for each day you worked from home in 2020, 2021, or 2022"  https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim.html |
+| Temporary flat rate per day, 2020, 2021 and 2022 only | CAD 2 | Historical daily method restricted to these three years. https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim.html |
 
-The CRA states: "Eligible employees who worked from home in 2023 or later tax years will be required to use the detailed method to claim home office expenses. The temporary flat rate method does not apply to the 2023 and later tax years" ([CRA, what the changes are](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html)). For 2026 there is no flat rate.
+Eligible Canadian employees must use the detailed method for 2023 and later tax years. The temporary daily flat rate is unavailable for 2026 ([CRA, what the changes are](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/what-changes.html)).
 
 ### Employees: detailed method
 
 | Item | Value | Condition and official source |
 | --- | --- | --- |
-| Share of time worked from the home work space | 50% | "You worked more than 50% of the time from the work space in your home for a period of at least 4 consecutive weeks in the year"  https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html |
+| Share of time worked from the home work space | 50% | More than 50% for at least four consecutive weeks, or the exclusive-use/in-person-meeting alternative below. https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html |
 
 An employee must meet all of these ([CRA detailed method eligibility](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html)):
 - the employer required the employee to work from home (a written or verbal agreement is enough, and a voluntary formal telework arrangement counts as required); AND
@@ -142,6 +142,8 @@ An employee must meet all of these ([CRA detailed method eligibility](https://ww
 Amounts the employer reimbursed or will reimburse cannot be claimed (same page).
 
 Apportionment for employees: workspace area divided by home area. For a common (shared) area, multiply also by hours worked in the space over the 168 hours in a week; a designated room used only for work is not reduced for hours ([CRA, determine your work space use](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html)).
+
+For employees, do not use the self-employed cost list below. Eligible actual costs can include the employment share of electricity, heat, water, internet access, minor maintenance and rent; commissioned employees have additional specified categories. Neither salaried nor commissioned employees can claim mortgage interest/principal, home internet connection fees, furniture or capital home improvements through this workspace claim. Expenses are limited to the relevant employment income after other employment expenses; an unused amount can carry forward against the same employer's income, subject to the same no-loss limit. Keep reimbursements and a spouse's overlapping claim out. [CRA employee expenses and limits](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html).
 
 ### Self-employed: business-use-of-home expenses
 
@@ -172,7 +174,7 @@ If no country Guide covers home office costs, say so and refer the client to a l
 ## What never counts
 
 - A space used for private life as well, under the US exclusive-use test (except storage and daycare as above).
-- A US employee's home office, on the federal return, for 2026.
+- An ordinary unreimbursed US employee home-office claim on the federal return for 2026; the specified statutory employee exceptions above require their own method.
 - A UK employee's own claim for working from home, for the tax year 6 April 2026 to 5 April 2027.
 - The Canadian temporary flat rate, for 2023 and later years.
 - Mortgage capital repayments. Interest is a potentially eligible actual-method cost for the relevant self-employed person; this does not make employee mortgage interest deductible or override country limits.
@@ -291,5 +293,6 @@ This skill and its outputs are provided for informational and computational purp
 | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/who-claim/detailed-method.html | 2026-11-14 | Read for all current eligibility conditions and neighbouring2025 worked arrangements, employer requirement/telework, more-than 50%/4weeks or exclusive in-person alternative, reimbursement exclusion and signed T2200. |
 | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/work-space-use.html | 2026-11-14 | Read for finished home area, designated/shared areas,40/168hours, multiple workers, workspace changes and moves; intermediate rounding in the printed example. |
 | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html | 2026-11-14 | Read for principal-place/meeting tests, eligible costs, area/time, part-period reduction, CCA sale consequences, no-loss/carryforward and T2125 Part 7/line 9945. |
+| https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22900-other-employment-expenses/work-space-home-expenses/expenses-can-claim.html | 2026-11-14 | Read for employee eligible/excluded home costs, commissioned employee distinction, reimbursement, employment-income limitation and same-employer carryforward. |
 
 Not yet confirmed: IRS2026 Publication 587/Form 8829 and final2026 return line updates were not published/read in the sources used here; use the identified2025 edition for the structural method and verify the 2026 form before filing. The full current US section 280A text could not be reopened, so Cornell/private databases were removed as citations. No home-office rates for countries beyond the three worked countries are supplied.
