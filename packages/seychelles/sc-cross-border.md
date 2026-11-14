@@ -1,16 +1,17 @@
 ---
 name: sc-cross-border
 description: "Seychelles cross-border business tax for tax year 2026 under the Business Tax Act 2009 (Cap 20) as amended. Covers residence of individuals (183 days, domicile, normal residence) and entities (incorporation, management and control), the permanent establishment test in section 2A (90-day construction and services tests, dependent agents, preparatory or auxiliary exclusions), Seychelles-source rules in section 5 including the foreign passive income and economic substance rule for members of multinational groups, the final withholding tax on dividends, interest, royalties, natural resource amounts, technical services fees and insurance premiums paid to non-residents, the 33% rate on managerial fees paid by financial institutions, the 3% tax on non-resident ships and aircraft, treaty precedence and the MLI principal purpose test. Trigger on: Seychelles withholding tax non-resident, Seychelles permanent establishment, Seychelles tax residence, Seychelles foreign passive income, Seychelles DTA. Out of scope: treaty rates."
-version: 0.1
+version: 0.2
 jurisdiction: SC
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Seychelles cross-border: residence, permanent establishment, source and withholding on non-residents (2026) v0.1
+# Seychelles cross-border: residence, permanent establishment, source and withholding on non-residents (2026) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

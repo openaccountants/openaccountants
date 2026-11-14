@@ -1,16 +1,17 @@
 ---
 name: de-capital-gains
 description: "German tax on private investment income and gains for a resident individual, tax year 2026. Covers the 25% flat tax (Abgeltungsteuer) with the 5.5% solidarity surcharge and the church-tax formula, bank withholding (Kapitalertragsteuer), the Sparer-Pauschbetrag of EUR 1,000 or EUR 2,000, the share-loss pot and the general pot, loss certificates, funds and ETFs (Teilfreistellung, Vorabpauschale, Basiszins), large holdings of 1% or more under § 17 with the partial-income method, private sales under § 23 (one-year and ten-year rules, the EUR 1,000 Freigrenze), the Günstigerprüfung and Anlage KAP. Trigger on: Abgeltungsteuer, Kapitalertragsteuer, Sparer-Pauschbetrag, Freistellungsauftrag, Verlustbescheinigung, Teilfreistellung, Vorabpauschale, Spekulationsfrist, sell shares Germany, German capital gains. Out of scope: crypto detail (de-crypto-tax), the exit tax (leaving-germany-exit-tax), non-residents (de-non-resident-tax), treaty withholding (de-treaty-withholding-rates), assets in a business (de-einkommensteuer-freelancer)."
-version: 1.4
+version: 1.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 depends_on:
   - de-einkommensteuer-freelancer
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Capital gains tax in Germany (Abgeltungsteuer and private sales), 2026

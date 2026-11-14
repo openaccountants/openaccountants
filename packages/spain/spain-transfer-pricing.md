@@ -1,19 +1,20 @@
 ---
 name: spain-transfer-pricing
 description: Use this Guide for Spanish common-territory transfer pricing in tax periods beginning in 2026. It covers related-party identification, arm's-length valuation, group and taxpayer documentation, the separate Modelo 232 disclosure tests, private country-by-country reporting on Modelo 231, advance pricing agreements, and documentation penalties. Apply it to Spanish corporate taxpayers and the Spanish permanent establishments identified in the cited rules. Trigger phrases include operaciones vinculadas, precios de transferencia, master file, local file, Modelo 232, Modelo 231, professional shareholder remuneration and intercompany services. Obtain the ownership chart, transaction ledger, turnover and group reporting arrangements first. Documentation exemptions do not remove market-value pricing or automatically exempt information returns. Foral taxes and public corporate-reporting obligations need separate territorial or accounting analysis.
-version: 1.2
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Spain transfer pricing v1.2
+# Spain transfer pricing v1.3
 
 Tax periods beginning in 2026. Common-territory corporate tax rules, checked against the official texts on 25 October 2026. Independent pack review is pending; no accountant has signed off this revision.
 

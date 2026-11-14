@@ -2,17 +2,18 @@
 name: ghana-vat
 description: >
   Use this skill to prepare or review a Ghana VAT return for tax year 2026 under the Value Added Tax Act, 2025 (Act 1151), in force from 1 January 2026. It covers the 15% VAT plus 2.5% NHIL and 2.5% GETFund on one base (20% in total, all recoverable), the GHS 750,000 goods threshold, registration of all service providers, zero-rated and exempt supplies, imported services, digital services, 7% VAT withholding, upfront payment, E-VAT invoicing, the monthly return boxes, the ETAX portal, deadlines and penalties. The flat rate scheme is abolished. Trigger on "Ghana VAT", "NHIL", "GETFund", "VAT return Ghana", "withholding VAT", "VAT registration Ghana", or any Ghana VAT classification request. Payroll and income tax sit in other Ghana skills.
-version: 2.1
+version: 2.2
 jurisdiction: GH
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Ghana VAT v2.1
+# Ghana VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

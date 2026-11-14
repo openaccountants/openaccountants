@@ -3,16 +3,17 @@ name: bi-company-formation
 description: "Choose between a Burundi sole-member company, a private limited company and a foreign branch using the national company code and the development agency’s published registration procedure. This Guide covers founder numbers, capital subscription and payment, articles, bank evidence, the public application inputs and official registration fees. It distinguishes commercial registration by ADB from the tax identification number reserved to OBR and routes post-registration income tax, VAT and employer compliance to the relevant Guides. Public-company capital requirements, regulated activities, beneficial-owner filing, authenticated portal completion and a guaranteed incorporation timeline are not established here. Accountant review is pending and no filing should rely on the old nominal-dollar capital claim."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: company-formation
-version: 1.2
+version: 1.3
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Burundi: ordinary company formation and entity choice for 2026 v1.2
+# Burundi: ordinary company formation and entity choice for 2026 v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

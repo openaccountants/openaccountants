@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-prsi-class-s"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland PRSI Class S for the self-employed
@@ -162,23 +162,23 @@ expected:
 |---|---|---|
 | Social Welfare Consolidation Act 2005, revised to 1 October 2026: s.2(1) reckonable income, s.20, s.21, s.23, s.26, s.38BA, Sch. 1 Pt. 3 | https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html | 2026-10-24 |
 | Social Welfare (Miscellaneous Provisions) Act 2024 (No. 24 of 2024), s.3 and Table, s.5, s.6, s.9 (new s.38BA) | https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf | 2026-10-24 |
-| Social Welfare and Automatic Enrolment Retirement Savings System (Amendment) Act 2025 (No. 19 of 2025), the Budget 2026 social welfare act: no change to Class S | https://www.irishstatutebook.ie/eli/2025/act/19/enacted/en/html | 2026-10-24 |
+| Social Welfare and Automatic Enrolment Retirement Savings System (Amendment) Act 2025 (No. 19 of 2025), the Budget 2026 social welfare act: no change to Class S. Read for whether Budget 2026 changed Class S. | https://www.irishstatutebook.ie/eli/2025/act/19/enacted/en/html | 2026-10-24 |
 | S.I. No. 684 of 2010, art. 6 (EUR 5,000 floor in art. 92 of S.I. 312 of 1996) | https://www.irishstatutebook.ie/eli/2010/si/684/made/en/print | 2026-10-24 |
-| DSP, PRSI Class S rates (updated 20 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
-| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-24 |
-| DSP, SW74 A Guide to PRSI for the Self-Employed, January 2025 (used for who pays and what counts, not for rates) | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-24 |
-| DSP, Operational Guidelines: PRSI for the Self-Employed (updated 6 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/ | 2026-10-24 |
-| DSP, PRSI and family employment (updated 15 April 2025) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-24 |
-| Revenue, do you need to pay PRSI? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
-| Revenue, who should register for income tax self-assessment? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
-| Revenue, what is preliminary tax? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
-| Revenue, pay and file (deadlines, late filing surcharge) | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
-| Revenue, eBrief No. 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
-| Revenue, TDM 38-01-04J, Income tax return form 2025, ROS Form 11, para. 10.2 (Form 11 PRSI rate 4.125% for 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf | 2026-10-24 |
-| Revenue, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
+| DSP, PRSI Class S rates (updated 20 January 2026). Read for the 2026 Class S rates. | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
+| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026. Read for the 2026 PRSI rates. | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-24 |
+| DSP, SW74 A Guide to PRSI for the Self-Employed, January 2025 (used for who pays and what counts, not for rates). Read for who pays Class S and what income counts. | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-24 |
+| DSP, Operational Guidelines: PRSI for the Self-Employed (updated 6 January 2026). Read for the self-employed PRSI rules. | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-the-self-employed/ | 2026-10-24 |
+| DSP, PRSI and family employment (updated 15 April 2025). Read for PRSI on family members. | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | 2026-10-24 |
+| Revenue, do you need to pay PRSI?. Read for who pays PRSI. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
+| Revenue, who should register for income tax self-assessment?. Read for who must register for self-assessment. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
+| Revenue, what is preliminary tax?. Read for the preliminary tax rule. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
+| Revenue, pay and file (deadlines, late filing surcharge). Read for the pay and file dates and the surcharge. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
+| Revenue, eBrief No. 034/26 (ROS extension to 18 November 2026). Read for the 2026 ROS extension date. | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, TDM 38-01-04J, Income tax return form 2025, ROS Form 11, para. 10.2 (Form 11 PRSI rate 4.125% for 2025). Read for the 2025 Form 11 PRSI rate. | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf | 2026-10-24 |
+| Revenue, Guidelines for charging interest on late payment (updated May 2025). Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: (1) whether Class S is deductible in computing taxable income for income tax (no source read says so either way); (2) whether pension contribution relief reduces reckonable income; (3) how the EUR 650 minimum is collected for a director whose only Class S is through PAYE and whose pay gives less than EUR 650; (4) the part-year treatment for someone awarded the State Pension (Contributory) between 66 and 70 during the year; (5) how a mid-year start or finish is treated beyond the annual floor and minimum (the law read has no pro-rating rule); (6) the full list of "prescribed relatives" in art. 94 of S.I. 312 of 1996 (taken from the DSP leaflet, not the regulation); (7) whether interest also runs on the late filing surcharge; (8) the text of arts. 81 to 84 of S.I. 312 of 1996 (para. 5 exceptions), not read; (9) the Social Welfare Bill for Budget 2027 was not enacted on 24 October 2026 and was not read.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-prsi-class-s` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-prsi-class-s. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-prsi-class-s` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-prsi-class-s. If neither is available, confirm every figure against the official source pages cited above before relying on it.
