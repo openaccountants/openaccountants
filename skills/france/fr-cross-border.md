@@ -1,17 +1,18 @@
 ---
 name: fr-cross-border
 description: "France cross-border income tax for individuals, tax year 2026: residence tests (CGI art. 4 A, 4 B), non-residents with French income (the 20%/30% minimum rate of art. 197 A and the average-rate option), withholding on salaries (art. 182 A) and on fees and royalties (art. 182 B), the levy on property gains (art. 244 bis A), social levies for non-residents (17.2%, 18.6%, or 7.5% when covered by another EU scheme), the impatriate regime (art. 155 B), treaty credits, A1 postings and penalties. Trigger on: non-résident France, impatrié, article 155 B, prime d'impatriation, taux minimum 20 %, taux moyen, retenue à la source 182 A, 244 bis A, prélèvement de solidarité 7,5 %, crédit d'impôt conventionnel. Out of scope: leaving France and exit tax (leaving-france-exit-tax), company outbound withholding and CFC (fr-corporate-tax), the resident computation (fr-personal-income-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.4
+# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.5
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not file, pay or take a tax position on it without review by a qualified professional in France.
 
@@ -70,7 +71,7 @@ One test is enough. A treaty overrides them: a person who meets a French test bu
 | CSG on other patrimony income, including furnished letting income (CSS art. L136-8, I, 2°) | 10.6% | Income of 2025 onward (patrimony contribution, art. L136-6); payments from 1 Jan 2026 (investment income taxed at source, art. L136-7) | https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 |
 | CRDS | 0.5% | 2026 | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 |
 | Solidarity levy (prélèvement de solidarité, CGI art. 235 ter) | 7.5% | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
-| Total social levies: unfurnished rents and property gains / other patrimony income | 17.2% / 18.6% | 2026 | Sum of the three rows above |
+| Total social levies: unfurnished rents and property gains / other patrimony income | 17.2% / 18.6% | 2026 | Sum of the three rows above; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623 ; https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 ; https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
 | Holding-period allowance on property gains for the social levies | 1.65% a year from year 6 to 21; 1.60% for year 22; 9% a year from year 23 (exempt after 30 years) | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053584839 |
 | Person covered for health by a scheme under Regulation 883/2004 (EU, EEA, Switzerland) and not by a French scheme | 7.5% only (no CSG or CRDS) | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051218166 |
 | Late filing surcharge (art. 1728) | 10%; 40% after formal notice; 80% for hidden activity | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546784 |

@@ -1,10 +1,10 @@
 ---
 name: wa-bo-tax
 description: Washington State business and occupation (B&O) tax for 2026 reporting periods, the gross receipts tax Washington levies instead of an income tax on business profit. Covers registration and the $12,000 threshold, economic nexus over $100,000 for out-of-state businesses, the Retailing 0.471%, Wholesaling and Manufacturing 0.484% and Service and Other Activities 1.5%, 1.75% and 2.1% rates, affiliate aggregation, the small business credit ($55 or $160 a month), apportionment, the multiple activities tax credit, active non-reporting, filing frequency, due dates and penalties, the enacted 2027 rates, and 2025 periods. For sole proprietors, freelancers and small companies. Trigger on "B&O tax", "Washington B&O", "business and occupation tax", "small business credit", "Washington gross receipts tax", "Service and Other Activities", "combined excise tax return". For sales tax load wa-sales-tax.
-version: "2.0"
+version: "2.1"
 jurisdiction: US-WA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -100,7 +100,7 @@ The tier depends on gross income subject to Service and Other Activities in the 
 | Prior-year Service and Other income | Rate | Source |
 | --- | --- | --- |
 | Less than $1,000,000 | 1.5% | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a) |
-| $1,000,000 to $4,999,999.99 (at least $1,000,000 and less than $5,000,000) | 1.75% | same |
+| At least $1,000,000 and less than $5,000,000 | 1.75% | same |
 | $5,000,000 or more | 2.1% | same |
 
 Conditions:
@@ -114,7 +114,7 @@ Conditions:
 | Item | Figure | Source |
 | --- | --- | --- |
 | Registration not required below (all conditions in Step 1) | $12,000 per year of B&O gross income | [RCW 82.32.030](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.030)(2); [WAC 458-20-101](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-101) |
-| Economic nexus (out-of-state) | more than $100,000 of Washington receipts, current or prior year | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067); DOR |
+| Economic nexus (out-of-state) | more than $100,000 of cumulative Washington receipts, current or immediately preceding year (in words on the page) | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067); DOR |
 | Return filing relief (active non-reporting), until 31 Dec 2028 | under $125,000 per year of B&O gross income, **and** under $24,000 per year of public utility tax income, **and** no other tax or fee payable to DOR (see note) | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5) |
 | Return filing relief from 1 Jan 2029 | B&O limit rises to under $250,000 per year; the other two conditions are unchanged | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5), version effective January 1, 2029 |
 | High-grossing business surcharge (1 Jan 2026 to 31 Dec 2029) | 0.5% of certain Washington taxable income over $250,000,000 | [RCW 82.04.288](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.288); DOR special notice |
@@ -157,8 +157,8 @@ The credit is claimed on the return's MATC schedule. Anything beyond a simple "m
 | Prior-year Service and Other income exactly $1,000,000 | 1.75% tier ("equal to or greater than") | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a)(i) |
 | Prior-year Service and Other income exactly $5,000,000 | 2.1% tier | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a) |
 | Own income under $1,000,000 but affiliates' aggregate at least $1,000,000 | Not the 1.5% tier | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a)(ii)(B) |
-| Out-of-state business with exactly $100,000 of Washington receipts, no physical presence | No economic nexus ("more than") | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1)(c)(i) |
-| Receipts over $100,000 in the prior year but not this year | Nexus continues through the current year | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1) |
+| Out-of-state business with exactly $100,000 of Washington receipts, no physical presence | No economic nexus ("more than") (in words on the page) | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1)(c)(i) |
+| Receipts of more than $100,000 in the prior year but not this year | Nexus continues through the current year (in words on the page) | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1) |
 | Out-of-state business first passes $100,000 partway through this year, not met last year | Taxable only on activity on and after the date nexus arose; earlier activity this year is not taxed; next year fully taxable | [RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2); [WAC 458-20-19401](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-19401)(3)(c) |
 | Out-of-state business passed the test last year | Whole current year taxable, from 1 January | [RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2)(b) |
 | Custom software, IT support or website development for a Washington customer from 1 Oct 2025 | Retailing B&O plus retail sales tax, not Service and Other (contracts signed before 1 Oct 2025: see the transition rule in the wa-sales-tax skill) | DOR special notice, July 2025 (ESSB 5814) |

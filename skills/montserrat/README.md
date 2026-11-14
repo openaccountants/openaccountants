@@ -2,7 +2,10 @@
 jurisdiction: MS
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  IT-CORP: ms-corporate-income-tax
+  SC: ms-social-security-contributions
+  XB: ms-nonresident-withholding
 partial: {}
 ---
 
