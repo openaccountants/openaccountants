@@ -148,7 +148,7 @@ The forecast method, the minimum below which no acconto is due, the instalment p
 
 | Breach | Penalty | Source |
 |---|---|---|
-| Return not filed | 120% of the tax due, minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22 |
+| Return not filed | 120% ("centoventi per cento", in words on the page) of the tax due, minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22 |
 | Income or tax understated | 70% of the extra tax, minimum EUR 150 | D.Lgs. 471/1997 art. 1(2), same URL |
 | Tax paid late or not paid | 25% of the unpaid amount; halved if paid within 90 days; within 15 days, a further cut of one fifteenth per day of delay | D.Lgs. 471/1997 art. 13(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-22 |
 | False statement of the comma 54, 57 or 65 conditions, where the income assessed is more than 10% above the income declared | the minimum and maximum penalties of D.Lgs. 471/1997 go up by 10% | L. 190/2014 art. 1 c. 74 |
@@ -268,7 +268,7 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | L. 190/2014, art. 1, commi 54-89, as in force 22 October 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 | 2026-10-22 |
 | L. 190/2014, art. 1, as in force 2 January 2027 (commi 54-89 repealed by D.Lgs. 117/2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2027-01-02 | 2026-10-22 |
 | L. 207/2024, art. 1, c. 12 (EUR 35,000 employment-income limit) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 | 2026-10-22 |
-| L. 199/2025, art. 1, c. 27 (extends the EUR 35,000 limit to 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 | 2026-10-22 |
+| L. 199/2025, art. 1, c. 27 (extends to 2026 the employment-income limit of L. 207/2024 art. 1 c. 12) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 | 2026-10-22 |
 | D.Lgs. 81/2025, art. 1 (ATECO 2007 coefficients continue) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-06-12;81~art1!vig=2026-10-22 | 2026-10-22 |
 | D.Lgs. 117/2026, index (Capo XXI "Regime forfetario", from art. 232) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 | 2026-10-22 |
 | L. 145/2018 allegato 2 (coefficient table), Agenzia copy | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 | 2026-10-22 |
