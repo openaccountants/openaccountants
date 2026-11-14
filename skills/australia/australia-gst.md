@@ -5,7 +5,7 @@ version: 2.6
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-11-15
-tax_year_notes: "Worked periods vary. The GST credit attribution check applies the current 2026 compilation."
+tax_year_notes: "Worked examples include 2025-26; periods vary. GST credit attribution uses the current 2026 compilation."
 type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 review_status: pending_review
