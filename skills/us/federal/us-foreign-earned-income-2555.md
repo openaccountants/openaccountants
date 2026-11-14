@@ -1,10 +1,10 @@
 ---
 name: us-foreign-earned-income-2555
 description: Work out a US citizen's or green card holder's 2026 foreign earned income exclusion and foreign housing exclusion or deduction on Form 2555, and decide between the exclusion, the foreign tax credit, or both. Covers the tax home test, the bona fide residence and physical presence (330 full days) tests, the 2026 maximum exclusion of USD 132,900, the housing base of USD 21,264 and the general housing limit of USD 39,870 with the Notice 2026-25 city limits, the stacking rule, the credits the election blocks, the revocation bar, self-employment tax and totalization, and the June 15 extension for people abroad. Trigger on "FEIE", "Form 2555", "foreign earned income exclusion", "housing exclusion", "physical presence test", "bona fide residence", "expat US tax", "FEIE or foreign tax credit". Load us-foreign-tax-credit-1116 for the credit itself. Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -38,7 +38,7 @@ Out of scope, and where it goes:
 | The rest of Form 1040, the 2026 tax brackets and the standard deduction | `us-form-1040-individual-return` |
 | Self-employment tax computation (Schedule SE) | `us-schedule-c-and-se-computation` |
 | FBAR (FinCEN Form 114) and Form 8938 | `us-fbar-and-fatca-8938` |
-| PFIC, CFC and GILTI or net CFC tested income, Form 5471 | `us-cfc-gilti`, `us-form-5471-cfc-information` |
+| PFIC, CFC and GILTI or net CFC tested income, Form 5471 | `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
 | Foreign trusts (Forms 3520 and 3520-A) | `us-foreign-trust-reporting` |
 | Moving abroad: the wider checklist (state ties, pensions, PFIC funds) | `us-citizen-moving-abroad-tax` |
 | Renouncing citizenship or giving up a long-held green card (section 877A, Form 8854) | `us-expatriation-exit-tax` |
@@ -382,7 +382,7 @@ expected:
 | --- | --- | --- |
 | R-FEIE-1 | Bona fide resident of Puerto Rico or another US territory | Refer: section 933 or the territory's own rules, not section 911 |
 | R-FEIE-2 | Has expatriated or plans to renounce or give up a long-held green card | Refer: `us-expatriation-exit-tax` |
-| R-FEIE-3 | Holds PFIC funds or CFC shares | Refer: `us-cfc-gilti`, `us-form-5471-cfc-information` and a PFIC (Form 8621) specialist |
+| R-FEIE-3 | Holds PFIC funds or CFC shares | Refer: `us-gilti-fdii-beat`, `us-form-5471-cfc-information` and a PFIC (Form 8621) specialist |
 | R-FEIE-4 | Foreign trust grantor or beneficiary | Refer: `us-foreign-trust-reporting` |
 | R-FEIE-5 | FBAR or Form 8938 exposure | Note it; refer to `us-fbar-and-fatca-8938` |
 | R-FEIE-6 | Unfiled returns for three or more years, or in the Streamlined procedures | Refer to a back-filing specialist; the late-election rules in Step 10 decide whether the exclusion survives |

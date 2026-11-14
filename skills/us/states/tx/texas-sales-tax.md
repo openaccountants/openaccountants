@@ -1,10 +1,10 @@
 ---
 name: texas-sales-tax
 description: Texas sales and use tax for 2026, from the Texas Comptroller of Public Accounts and Tax Code Chapter 151. Covers the 6.25% state rate and up to 2% local tax (8.25% maximum), local sourcing by place of business, the $500,000 remote seller safe harbor and the 1.75% single local use tax rate, marketplace providers, taxable services including the 80% base for data processing and SaaS, resale and exemption certificates (Form 01-339), the manufacturing exemption, occasional sales, use tax, monthly, quarterly and yearly filing on Form 01-114, the 0.5% timely filing and 1.25% prepayment discounts, penalties and 2026 interest at 7.75%. Trigger on "Texas sales tax", "TX sales tax", "Comptroller", "Texas use tax", "Form 01-114", "Texas sales tax permit", "Texas resale certificate", "Texas SaaS tax". Not franchise tax.
-version: "2.0"
+version: "2.1"
 jurisdiction: US-TX
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -13,7 +13,7 @@ type: situation-rules
 
 # Texas sales and use tax, tax year 2026
 
-Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Public Accounts (comptroller.texas.gov) and Texas Tax Code Chapter 151 (statutes.capitol.texas.gov). Texas has no state personal income tax; it has sales and use tax (this skill) and a franchise tax on businesses (`tx-margin-tax`). This skill replaces the older `tx-sales-tax` and `tx-sales-use-tax` files.
+Figures are for 2026, read on 13 November 2026 from the Texas Comptroller of Public Accounts (comptroller.texas.gov) and Texas Tax Code Chapter 151 (statutes.capitol.texas.gov). Texas has no state personal income tax; it has sales and use tax (this skill) and a franchise tax on businesses (`tx-franchise-tax`). This skill replaces the older `tx-sales-tax` and `tx-sales-use-tax` files.
 
 ## Scope and who this is for
 

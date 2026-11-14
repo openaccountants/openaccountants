@@ -1,10 +1,10 @@
 ---
 name: us-foreign-tax-credit-1116
 description: Work out a US individual's 2026 foreign tax credit on Form 1116, or the no-Form-1116 election, for a citizen or resident alien who paid foreign income tax. Covers credit or deduction, creditable taxes and the Notice 2023-55 and 2023-80 relief, the separate categories, sourcing, the section 904(a) limit, the USD 300 or USD 600 de minimis election under section 904(j), the 1-year carryback and 10-year carryforward, cash or accrual and currency, the line 12 reduction for income excluded on Form 2555, the AMT credit, later changes in foreign tax, and the 2026 One Big Beautiful Bill Act changes for section 951A (net CFC tested income). Trigger on "foreign tax credit", "Form 1116", "FTC", "foreign taxes paid", "1099-DIV foreign tax", "FTC carryover", "excess foreign tax credit", "high-taxed income". Load us-foreign-earned-income-2555 when the person also excludes foreign earned income. Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -37,7 +37,7 @@ Out of scope, and where it goes:
 | --- | --- |
 | The foreign earned income exclusion and housing, and the choice between exclusion and credit | `us-foreign-earned-income-2555` |
 | The rest of Form 1040 and the 2026 tax brackets | `us-form-1040-individual-return` |
-| CFCs, GILTI or net CFC tested income, section 962 elections and Form 1118 | `us-cfc-gilti`, `us-form-5471-cfc-information` |
+| CFCs, GILTI or net CFC tested income, section 962 elections and Form 1118 | `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
 | FBAR and Form 8938 | `us-fbar-and-fatca-8938` |
 | Moving abroad, the wider checklist | `us-citizen-moving-abroad-tax` |
 | Nonresident aliens | `us-form-1040-nr-nonresident-return` |
@@ -353,7 +353,7 @@ expected:
 | Code | Situation | Action |
 | --- | --- | --- |
 | R-FTC-1 | Corporations, estates and trusts, or nonresident aliens | Refer: this skill is for individual US citizens and residents |
-| R-FTC-2 | Section 962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, or Forms 5471, 8865, 8858 or 8621 | Refer: `us-cfc-gilti`, `us-form-5471-cfc-information` |
+| R-FTC-2 | Section 962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, or Forms 5471, 8865, 8858 or 8621 | Refer: `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
 | R-FTC-3 | Treaty re-sourcing (box f), treaty-based credits needing Form 8833, or the additional credit for US citizens resident in treaty countries | Refer |
 | R-FTC-4 | Section 901(m) covered asset acquisitions, foreign tax credit splitting events, foreign oil and gas income | Refer |
 | R-FTC-5 | Recapture of overall foreign loss, separate limitation loss or overall domestic loss accounts beyond a single simple year | Refer |
