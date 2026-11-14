@@ -355,6 +355,7 @@ expected:
 | NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-11-14, read for the list of treaties in force and signed |
 | NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-11-14, read for the MAP request route and the 3-year default time limit |
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1, 2, 4, 7, 8, 9, 12 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
+| Legislative Decree No. 22 of 1979, Income Tax Law, LLOC text page: read for art. 2, income tax at forty-six per cent (46%) | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-14 |
 
 Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
 (no published procedure); the deadline the NBR sets when it requests a local

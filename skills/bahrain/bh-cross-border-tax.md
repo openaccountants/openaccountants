@@ -268,6 +268,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1-13 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
+| Legislative Decree No. 22 of 1979, Income Tax Law, LLOC text page: read for art. 2, income tax at forty-six per cent (46%) | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-14 |
 | Decree-Law No. 11 of 2024 (DMTT Law), arts. 1, 3, 5, 7, 9, 18, 22, 28, 44 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | Decision No. 172 of 2024, DMTT Executive Regulations, arts. 4, 29, 62, 63 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | NBR DMTT FAQs 2.4 and 2.5 | https://www.nbr.gov.bh/dmtt_faqs/2 | 2026-11-14, read for FAQs 2.4 and 2.5: which groups are in scope |
