@@ -1,14 +1,15 @@
 ---
 name: se-income-tax
 description: "Use for Swedish personal income tax for income year 2026 (return filed in 2027), with the full computation for a sole trader (enskild firma, enskild näringsidkare). Covers municipal and regional tax (2026 average 32.38%), state tax of 20% above the SEK 643,000 skiktgräns, the basic deduction (grundavdrag) and the higher amount from 66, the job tax credit (jobbskatteavdrag), the 7% pension contribution and its credit, capital income at 30%, ISK and capital insurance standard income with the SEK 300,000 tax-free amount, ROT and RUT, business income on the NE form (schablonavdrag for egenavgifter, räntefördelning, expansionsfond, depreciation, home office, representation), F-tax instalments, the 2 May deadline (3 May 2027), final tax dates, late-filing fees, tax surcharge and cost interest. Trigger on: Swedish income tax, kommunalskatt, statlig inkomstskatt, grundavdrag, jobbskatteavdrag, NE-bilaga, enskild firma, F-skatt, ISK, rot, rut, kvarskatt. Out of scope: se-employee-income-tax, se-social-contributions, sweden-payroll, se-capital-gains, se-closely-held-company-312, se-corporate-tax, se-cross-border."
-version: 2.3
+version: 2.4
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # SE Income Tax

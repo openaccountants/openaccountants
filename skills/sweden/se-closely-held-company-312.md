@@ -1,13 +1,14 @@
 ---
 name: se-closely-held-company-312
 description: "Use for the Swedish 3:12 rules for an individual who owns qualified shares (kvalificerade andelar) in a closely held company (fåmansföretag) for income year 2026, filed on form K10 with the 2027 return. Covers what a fåmansföretag and a qualified share are, the new single gränsbelopp rule from 2026 (grundbelopp of four income base amounts, SEK 322,400; wage-based amount of 50% of the payroll above eight income base amounts; interest of 11.55% on cost above SEK 100,000; saved dividend space with no uplift), dividends within the limit taxed at 20%, the excess taxed as earned income up to SEK 7,506,000, gains on qualified shares, losses, and the 3 May 2027 deadline. Trigger on: 3:12, fåmansföretag, K10, gränsbelopp, grundbelopp, lönebaserat utrymme, sparat utdelningsutrymme, utdelning aktiebolag, kvalificerade andelar. Out of scope: se-corporate-tax, se-employee-income-tax, se-capital-gains, sweden-payroll, se-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Sweden: the 3:12 rules for owners of closely held companies (income year 2026)

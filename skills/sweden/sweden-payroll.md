@@ -1,16 +1,17 @@
 ---
 name: sweden-payroll
 description: "Use for running Swedish payroll in 2026: preliminary tax withheld from pay (preliminärskatt) under the 2026 tax tables (skattetabeller), the 30% rate, jämkning and SINK decisions; employer contributions (arbetsgivaravgifter) of 31.42%, 10.21% from age 67, the youth reduction for those born 2003-2007 from 1 April 2026 (20.81% up to SEK 25,000 a month) and the växa refund for a first or second employee; taxable benefits (förmåner) in the base; the monthly employer return (arbetsgivardeklaration, AGI) and payment by the 12th (17th in January and August; 26th filing for large VAT payers); late-filing fees, tax surcharges and cost interest. Trigger on: Swedish payroll, preliminärskatt, skattetabell, arbetsgivaravgifter, AGI, arbetsgivardeklaration, net salary Sweden, växa-stöd, semesterlön, sjuklön. Out of scope: se-employee-income-tax (the employee's annual return), se-social-contributions (egenavgifter), se-income-tax (sole traders), se-benefits-and-allowances (benefit valuation), se-cross-border (residence, SINK and expert relief)."
-version: 1.1
+version: 1.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Sweden payroll and PAYE

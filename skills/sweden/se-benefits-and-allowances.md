@@ -1,13 +1,14 @@
 ---
 name: se-benefits-and-allowances
 description: "Swedish taxable employee benefits (förmåner) and tax-free travel allowances, income year 2026. Covers valuation under Inkomstskattelagen 61 kap.: car benefit (0.29 price base amount + interest part + 13% of new-car price + vehicle tax, environmental-car reductions, 3,000-mil and part-year rules), fuel benefit (market value x 1.2; market value for contributions), meal benefit (SEK 62 / 124 / 310), housing; tax-free items (friskvårdsbidrag up to SEK 5,000, gifts SEK 600 / 1,800 / 15,000, bicycle, workplace charging); per diem (traktamente SEK 300 a day, meal reductions) and mileage (SEK 25 / 12 / 9.50 a mil); reporting in the arbetsgivardeklaration and employer contributions. Trigger on: förmånsvärde, bilförmån, kostförmån, traktamente, milersättning, friskvårdsbidrag, julgåva, company car Sweden. Out of scope: the payroll run and withholding tables (sweden-payroll), the employee's annual return (se-employee-income-tax), self-employed (se-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Sweden: taxable benefits and tax-free travel allowances, income year 2026

@@ -1,14 +1,15 @@
 ---
 name: se-corporate-tax
 description: "Swedish corporate income tax (bolagsskatt) for aktiebolag, ekonomiska föreningar and other legal persons resident in Sweden, and for foreign companies with a permanent establishment (fast driftställe) in Sweden. Covers the 20.6% rate under Inkomstskattelagen 65 kap. 10 §, the taxable base, periodiseringsfond (25%, six years, schablonintäkt), inventarier depreciation, tax-exempt dividends and gains on näringsbetingade andelar, the interest limitation rule (30% of tax EBITDA, SEK 5 million), loss carry-forward and the ownership-change restrictions, koncernbidrag, Inkomstdeklaration 2 deadlines, preliminärskatt, kostnadsränta, förseningsavgift, skattetillägg and kupongskatt. Tax year 2026. Trigger on: bolagsskatt, Swedish corporate tax, aktiebolag tax, INK2, periodiseringsfond, koncernbidrag, näringsbetingade andelar, ränteavdragsbegränsning, underskottsavdrag, kupongskatt. Out of scope: sole traders (se-income-tax), egenavgifter (se-social-contributions), payroll (sweden-payroll), VAT (sweden-vat-return), individual capital gains (se-capital-gains)."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Sweden: corporate income tax (bolagsskatt), tax year 2026

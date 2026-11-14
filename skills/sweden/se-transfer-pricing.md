@@ -1,14 +1,15 @@
 ---
 name: se-transfer-pricing
 description: "Swedish transfer pricing (internprissättning) for companies with cross-border related-party transactions, tax year 2026. Covers the arm's length rule in Inkomstskattelagen 14 kap. 19-20 §§ (korrigeringsregeln) and what counts as ekonomisk intressegemenskap; the documentation duty in Skatteförfarandelagen 39 kap. 15-16 f §§ and Skatteförfarandeförordningen 9 kap. 9-19 §§ (group part and company part, the 250 employees / SEK 450 million / SEK 400 million exemption, the SEK 5 million immaterial-transaction rule, timing, language, seven-year retention); country-by-country reports (SFL 33 a kap., SEK 7 billion, twelve months, notification); prissättningsbesked (APA) fees; MAP and the EU dispute law 2019:601; skattetillägg and reopening periods. Trigger on: internprissättning, transfer pricing Sweden, armlängdsprincipen, korrigeringsregeln, master file, local file, land-för-land-rapport, CbCR Sweden, prissättningsbesked, APA Sweden, ömsesidig överenskommelse. Out of scope: corporate tax computation and interest limitation (se-corporate-tax), cross-border individuals and exit tax (se-cross-border), VAT (sweden-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Sweden: transfer pricing (internprissättning), tax year 2026

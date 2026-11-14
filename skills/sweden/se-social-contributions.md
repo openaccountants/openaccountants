@@ -1,14 +1,15 @@
 ---
 name: se-social-contributions
 description: "Use for Swedish social contributions of the self-employed in 2026: egenavgifter of 28.97% on active business income of a sole trader or a partner in a handelsbolag, and their components; 10.21% for those born 1938-1958 or on full pension or sickness compensation; särskild löneskatt of 24.26% on passive business; the 25% schablonavdrag and its NE or N3A reconciliation; the 7.5% special deduction and the regional deduction; waiting-period sickness rates; the 7% allmän pensionsavgift, its ceiling and tax credit; payment through F-skatt and settlement in the final tax decision; penalties and interest. Also lists the employer rates (31.42%, 10.21% from 67, youth reduction, växa refund) a sole trader with staff needs. Trigger on: egenavgifter, särskild löneskatt, schablonavdrag, allmän pensionsavgift, karensdagar, enskild firma avgifter. Out of scope: sweden-payroll, se-income-tax, se-employee-income-tax, se-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Sweden: self-employed social contributions (egenavgifter)

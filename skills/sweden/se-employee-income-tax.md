@@ -1,14 +1,15 @@
 ---
 name: se-employee-income-tax
 description: "Use for the Swedish personal income tax return (Inkomstdeklaration 1) of an employee or a pensioner for income year 2026, filed in 2027. Covers who must file and the pre-filled return, the 3 May 2027 deadline, municipal tax (2026 average 32.38%, set by each kommun), state tax of 20% above SEK 643,000, the basic deduction (grundavdrag) and the higher amount from age 66, the job tax credit (jobbskatteavdrag), the 7% general pension contribution and its full credit, commuting and other work expense deductions, ROT and RUT credits, capital income at 30% and the deficit credit, the ISK standard income with the new SEK 300,000 tax-free amount, late-filing fees and cost interest. Trigger on: Swedish tax return, deklaration, kvarskatt, grundavdrag, jobbskatteavdrag, allmän pensionsavgift, reseavdrag, ROT, RUT, ISK tax, Sweden pensioner tax. Out of scope: se-income-tax (sole traders), se-social-contributions, sweden-payroll, se-capital-gains, se-cross-border, se-corporate-tax."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Sweden: income tax for employees and pensioners (income year 2026)
