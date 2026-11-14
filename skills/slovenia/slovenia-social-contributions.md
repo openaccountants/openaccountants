@@ -195,4 +195,4 @@ expected:
 
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); how FURS computes the new s.p. relief in practice (ZPIZ-2 art. 145(14) applies it to contributions on the art. 145(2) base; no FURS worked figure was read); the rules for part-time self-employment alongside a job (dopolnilna dejavnost) and for farmers; the parental care and employment acts (ZSDP-1, ZUTD) were not read for their own base rules, so this skill relies on the ZPSV rates and the FURS tables.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

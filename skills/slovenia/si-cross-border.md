@@ -308,4 +308,4 @@ expected:
 
 Not yet confirmed: the late payment interest rate for 2026 (ZDavP-2 art. 96 points to the statutory default interest law, not read); the EC reference rate that may lift exit-tax deferral interest above 2%; whether the art. 8.a order of 28 February 2022 has been amended since (FURS still publishes it as the current list); the average annual salary figure behind the 7% new-resident relief and the 2026 indexed income tax bands; the ministerial lists of company forms and taxes for arts. 71 and 72; individual treaty rates and tie-breakers; the detail of REK withholding for non-resident individuals, which belongs to the payroll and income tax skills.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

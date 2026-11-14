@@ -195,4 +195,4 @@ expected:
 
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
