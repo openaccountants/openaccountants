@@ -44,13 +44,13 @@ This skill covers Polish VAT for a business registered in Poland: when to regist
 | Intra-EU supply of goods; export of goods | 0% (export needs proof of exit before the return deadline) | 2026 | same, art. 41 ust. 3, 4, 6 |
 | Small-business exemption: sales without VAT, previous and current year | PLN 240,000 | 2026 | same, art. 113 ust. 1; https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity |
 | Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263; https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf |
-| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
+| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Small taxpayer: previous-year sales including VAT | EUR 2,000,000 = PLN 8,517,000 | 2026 | VAT Act art. 2 pkt 25; https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json |
-| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
+| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Payment between businesses must go through a bank account if one transaction is over | PLN 15,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf (Business Law art. 19) |
 | Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
-| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
-| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
+| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
+| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Late payment interest | 10.50% a year from 5 March 2026; reduced 5.25%; higher 15.75% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf; Tax Ordinance art. 56 § 1; https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml |
 
