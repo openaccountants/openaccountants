@@ -84,6 +84,11 @@ class RowSources(unittest.TestCase):
         _, misses, _ = rs.check_text(t, pages(**{A: "10,000 joint 250,000 " * 30}))
         self.assertEqual(misses, [])
 
+    def test_in_words_marker_and_dot_leaders(self):
+        t = skill(f"| Rate | 6% (in words on the page) | [a]({A}) |", f"| Tax | $3,916.09 | [b]({B}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "six percent " * 40, B: "over 250,400.....3,916.09 plus " * 20}))
+        self.assertEqual(misses, [])
+
     def test_worked_cases_are_skipped(self):
         t = skill(f"| Rate | 2% | [a]({A}) |", worked=f"| Tax | $9,999 | [a]({A}) |")
         _, misses, _ = rs.check_text(t, pages(**{A: "2% " * 200}))
