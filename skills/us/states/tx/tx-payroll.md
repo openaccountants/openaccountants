@@ -64,7 +64,7 @@ Out of scope, and where it goes:
 | Liable employer: wages paid in a calendar quarter of the current or preceding year | USD 1,500 or more | [Labor Code 201.021(a)(1)](https://tcss.legis.texas.gov/resources/LA/htm/LA.201.htm) |
 | Liable employer: weeks with at least one employee in the current or preceding year | 20 or more different calendar weeks | [Labor Code 201.021(a)(2)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.201.htm) |
 | Register with the TWC after becoming liable | Within 10 days | [TWC, Unemployment Tax Registration](https://www.twc.texas.gov/businesses/unemployment-tax-registration) |
-| Interest on late tax | one and one-half percent of the tax for each month or part month, capped at 37-1/2 percent of the tax due (1.5 and 37.5 in decimals) | [Labor Code 213.021(a)](https://tcss.legis.texas.gov/resources/LA/htm/LA.213.htm) |
+| Interest on late tax | 1.5% of the tax for each month or part month, capped at 37.5% of the tax due (in words on the page) | [Labor Code 213.021(a)](https://tcss.legis.texas.gov/resources/LA/htm/LA.213.htm) |
 | Late report penalty, filed within 15 days of the due date | USD 15 | [Labor Code 213.022(1)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.213.htm) |
 
 The wage base is set by statute and has been USD 9,000 every year since at least 2017 (TWC rates table). The 2026 minimum rate equals the three flat parts that every experience-rated employer pays: 0.21% + 0.01% + 0.10% = 0.32%.
