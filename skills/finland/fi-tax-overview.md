@@ -63,8 +63,8 @@ Classify the question with the Scope table, open the named skill, and take the c
 | Individual rates | Progressive state tax on earned income plus municipal/parish tax; capital income 30% up to EUR 30,000, 34% above | [Individual income tax](fi-income-tax.md); [Income Tax Act, section 124][ita] | same |
 | Corporate rate | 20% | [Corporate income tax](fi-corporate-income-tax.md); [Income Tax Act, section 124][ita] | same |
 | VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] | https://www.finlex.fi/fi/lainsaadanto/1993/1501 |
-| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) | The linked skill |
-| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) | The linked skill |
+| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/ |
+| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/ |
 
 ## Workpaper handoff
 
@@ -127,5 +127,7 @@ The independent source review, corrections and remaining gaps are recorded in th
 | VAT Act 1501/1993, sections 84, 85 and 85a | https://www.finlex.fi/fi/lainsaadanto/1993/1501 | 2026-10-31 |
 | Vero, VAT rates | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/ | 2026-10-31 |
 | Vero, tax rates on capital income | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/ | 2026-10-31 |
+| Read for the individual return: Vero, pre-completed tax return (2026 correction due dates 1, 14, 21 or 28 April, shown on the return and in MyTax) | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/ | 2026-11-14 |
+| Read for the corporate return: Vero, limited companies tax return ("within 4 months after the end of the last calendar month" of the accounting year) | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/ | 2026-11-14 |
 
-Not yet confirmed: the individual and corporate return dates in the table were not re-read here and belong to the linked skills.
+Not yet confirmed: none. The individual and corporate return dates were re-read on Vero on 2026-11-14; the full filing rules stay in the linked skills.
