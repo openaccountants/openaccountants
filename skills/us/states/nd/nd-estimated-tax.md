@@ -1,7 +1,7 @@
 ---
 name: nd-estimated-tax
 description: Work out whether a North Dakota individual must pay 2026 estimated income tax on Form ND-1ES, how much to pay on each of the four due dates, and the 12% a year interest on Schedule ND-1UT when an installment is short or late. For full-year residents who are sole proprietors, single-member LLC owners, S corporation shareholders or employees with too little withholding, plus the nonresident and part-year worksheet lines. Built from the 2026 Form ND-1ES, the 2025 Schedule ND-1UT, N.D.C.C. 57-38-45, 57-38-62 and 57-38-63 and N.D. Admin. Code 81-03-04. Trigger on ND-1ES, North Dakota estimated tax, ND quarterly payments, ND-1UT, underpayment interest North Dakota, ND safe harbor.
-version: "1.1"
+version: "1.2"
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-14
@@ -55,7 +55,7 @@ Out of scope, and where it goes:
 | Share of the minimum annual payment due on each due date | 25% (one-fourth) | [N.D.C.C. 57-38-63](https://ndlegis.gov/cencode/t57c38.pdf); [2026 Form ND-1ES, "Payment amounts and due dates"](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 | Calendar-year due dates | 15 April 2026, 15 June 2026, 15 September 2026, 15 January 2027 | same form, page 1 and voucher record |
 | Interest on an underpaid or late installment | 12% per year | [2026 Form ND-1ES, "Underpayment or late payment interest"](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf); [N.D.C.C. 57-38-62(3) and 57-38-45(1)](https://ndlegis.gov/cencode/t57c38.pdf) |
-| No interest at all if the estimated tax is below this per return | One thousand dollars ("less than one thousand dollars per income tax return filed") | [N.D.C.C. 57-38-62(3)](https://ndlegis.gov/cencode/t57c38.pdf) |
+| No interest at all if the estimated tax is below this per return | USD 1,000 ("less than one thousand dollars per income tax return filed") (in words on the page) | [N.D.C.C. 57-38-62(3)](https://ndlegis.gov/cencode/t57c38.pdf) |
 | Interest waived if current-year liability exceeds withholding by less than this per return and no estimates were paid | USD 500 | [N.D. Admin. Code 81-03-04-02(3)(d)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
 | Farmer waiver: share of gross income from farming that must be exceeded | two-thirds | [N.D. Admin. Code 81-03-04-02(3)(a) and (b)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
 | Schedule ND-1UT interest that must be paid with the return when there is no overpayment or tax due (2025 form, 2025-2026 filing cycle) | USD 5.00 or more | [2025 Schedule ND-1UT, line 17 instructions](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/28704-schedule-nd-1ut-2025.pdf) |
@@ -144,7 +144,7 @@ Part 1 exceptions on the 2025 schedule: A, qualified farmer (whole required paym
 | Situation | Rule | Source |
 | --- | --- | --- |
 | Liability exceeds withholding by less than USD 500 and no estimates paid | Interest must be waived (per return) | [N.D. Admin. Code 81-03-04-02(3)(d)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
-| Estimated tax below one thousand dollars per return | No interest is due | [N.D.C.C. 57-38-62(3)](https://ndlegis.gov/cencode/t57c38.pdf) |
+| Estimated tax below USD 1,000 per return | No interest is due (in words on the page) | [N.D.C.C. 57-38-62(3)](https://ndlegis.gov/cencode/t57c38.pdf) |
 | Farmer (over two-thirds of gross income from farming) files the federal return by 1 March and pays the federal tax in full by then, with no state estimates | Interest must be waived; the state return need not be filed or paid by 1 March | [N.D. Admin. Code 81-03-04-02(3)(a)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
 | Farmer makes the single federal installment on 15 January, files federally after 1 March, and pays the state estimate due on 15 January | Interest must be waived; the April, June and September state payments are not required | [N.D. Admin. Code 81-03-04-02(3)(b)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
 | Client uses the federal annualized income installment method and pays the state estimates based on it | Interest must be waived | [N.D. Admin. Code 81-03-04-02(3)(c)](https://ndlegis.gov/prod/acdata/pdf/81-03-04.pdf) |
