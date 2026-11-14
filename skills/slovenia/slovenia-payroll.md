@@ -1,14 +1,15 @@
 ---
 name: slovenia-payroll
 description: "Slovenian payroll for employees for tax year 2026. Covers the monthly gross-to-net: employee contributions of 22.1% plus 1% long-term care, employer contributions of 16.1% plus 1% long-term care, the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum contribution base (60% of the average wage, EUR 1,521.62) against the 2026 minimum wage of EUR 1,481.88, withholding on the monthly scale with the 2026 general allowance (EUR 462.66 a month plus the low-income taper), the REK-O return filed on the pay date, and fines and late interest. Trigger phrases: Slovenia payroll, gross to net Slovenia, bruto neto plača, akontacija dohodnine, REK-O, REK-1, minimalna plača 2026, najnižja osnova za prispevke, OZP, prispevek za dolgotrajno oskrbo. Out of scope: the self-employed (s.p.) and contribution bases in depth (slovenia-social-contributions), the annual return (slovenia-income-tax), residence and treaties (si-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Slovenia payroll (2026)

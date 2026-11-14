@@ -1,17 +1,18 @@
 ---
 name: si-cross-border
 description: "Hub skill for crossing the Slovenian border in tax year 2026. Covers tax residence of individuals (registered permanent residence, habitual abode or centre of interests, more than 183 days; ZDoh-2 arts. 6 and 7) and companies (seat or place of effective management; ZDDPO-2 art. 5); permanent establishment (art. 6 and 7); non-residents taxed on Slovenian-source income; 15% withholding on dividends, interest, royalties, Slovenian rent, artists' fees and listed services paid to listed jurisdictions (ZDDPO-2 art. 70); EU directive exemptions (arts. 71 and 72); treaty relief on the KIDO forms; the foreign tax credit; corporate exit tax with five-year instalments (arts. 54.a and 54.b); the 7% relief for new residents. Corporate rate 22% for 2024 to 2028. Trigger on: moving to Slovenia, leaving Slovenia, non-resident, davčni odtegljaj, KIDO, izstopna obdavčitev. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, slovenia-social-contributions, slovenia-vat-return."
-version: 0.1
+version: 0.2
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Slovenia: cross-border tax for people and companies (2026) v0.1
+# Slovenia: cross-border tax for people and companies (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Corporate Income Tax Act (ZDDPO-2), the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2) as consolidated on pisrs.si, and from guidance of the Financial Administration (FURS) on fu.gov.si, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 

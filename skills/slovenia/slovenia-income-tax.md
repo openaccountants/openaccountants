@@ -1,17 +1,18 @@
 ---
 name: slovenia-income-tax
 description: "Slovenian personal income tax (dohodnina) for tax year 2026 under ZDoh-2 as amended to ZINR (Uradni list RS 40/25). Covers residents and non-residents, the five-band scale (16%, 26%, 33%, 39%, 50%) with the 2026 indexed bands, the general allowance of EUR 5,551.93 and its taper for total income up to EUR 17,766.18, dependants and other allowances, capital income at 25% with 20% and 15% after 5 and 10 years and exemption after 15, rent at 25% with 10% standard costs, sole proprietors (s.p.) on normed expenses under ZPZR for 2026 (two-year average revenue tests of EUR 120,000, 85,000 or 50,000; final tax 20% then 35%) as a pointer, the informative calculation (informativni izračun) and its 15-day objection, advance tax and fines. Trigger on: dohodnina, informativni izračun, ugovor, splošna olajšava, Doh-KDVP, Doh-Div, rent tax Slovenia. Out of scope: si-cross-border (7% new-resident relief, non-residents), slovenia-payroll, slovenia-social-contributions, si-corporate-income-tax, slovenia-tax-optimization."
-version: 0.4
+version: 0.5
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Slovenia: personal income tax (dohodnina) 2026 v0.4
+# Slovenia: personal income tax (dohodnina) 2026 v0.5
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2) as consolidated on pisrs.si, the amending act ZDoh-2AB (Uradni list RS 104/24), and the Financial Administration (FURS) notice of the 2026 scale and allowances, all read on 24 October 2026. The 2026 normed-expense rules for sole proprietors come from ZPZR (Uradni list RS 91/25, amended by ZPZR-A 32/26), read on 30 October 2026. It prepares working papers; it is not authority to file or pay.
 

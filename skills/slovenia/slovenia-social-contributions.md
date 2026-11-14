@@ -1,14 +1,15 @@
 ---
 name: slovenia-social-contributions
 description: "Slovenian social security contributions (prispevki za socialno varnost) for tax year 2026. Covers the rates for employees (22.1%) and employers (16.1%), the long-term care contribution in force since 1 July 2025 (1% + 1% on wages, 2% for the self-employed), the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum base for employees (EUR 1,521.62), and the self-employed (s.p.) and owner-manager bases: profit less 25%, at least 60% (90% for owner-managers) and at most 3.5 times the 2025 average wage of EUR 2,536.03, the relief for new s.p., the monthly OPSV return and payment by the 20th, and fines. Trigger phrases: Slovenia social security, prispevki s.p. 2026, zavarovalna osnova, OPSV, POPSV, prispevek za dolgotrajno oskrbo, OZP, minimalna osnova samozaposleni. Out of scope: the monthly gross-to-net and REK-O (slovenia-payroll), income tax on the s.p. profit and normed expenses (slovenia-income-tax), postings and A1 (si-cross-border)."
-version: 0.4
+version: 0.5
 jurisdiction: SI
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Slovenia social security contributions (2026)
