@@ -1,6 +1,6 @@
 ---
 name: mt-residence-programmes-for-wealthy-families
-description: "Compare Malta residence routes for wealthy, internationally mobile families and family offices: non-domiciled ordinary residence and the remittance basis with its minimum tax, the Global Residence Programme and the EU/EEA/Swiss Residence Programme (flat rate on remitted foreign income, minimum tax, property and rent thresholds, dependants, the day rule, cessation), the Malta Permanent Residence Programme as an immigration status with its fees, contribution, property and capital tests and due diligence, and the nomad residence permit tax rule. Includes a worked family example and referral points."
+description: "Compare Malta residence routes for wealthy, internationally mobile families and family offices, non-domiciled ordinary residence and the remittance basis with its minimum tax, the Global Residence Programme and the EU/EEA/Swiss Residence Programme (flat rate on remitted foreign income, minimum tax, property and rent thresholds, dependants, the day rule, cessation), the Malta Permanent Residence Programme as an immigration status with its fees, contribution, property and capital tests and due diligence, and the nomad residence permit tax rule. Includes a worked family example and referral points."
 version: 2.0
 jurisdiction: MT
 tax_year: 2026
