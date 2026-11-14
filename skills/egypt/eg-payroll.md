@@ -238,7 +238,7 @@ expected:
 |---|---|---|
 | Law 7/2024 replacing arts. 8 and 13(1) of Law 91, Gazette 21 Feb 2024: read for the art. 8 rate table (10% to 27.5%, columns by income), rounding down to the nearest EGP 10 and the EGP 20,000 exemption. The PDF is damaged for local tools; read through Firecrawl | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-14 |
 | Law 91/2005, original 2005 text, scanned: read for arts. 10, 12 to 16 and 110 by OCR on 2026-11-01. Reopened 2026-11-14: the file answers but is a scan, and the articles were not re-read | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-14 (opened, not re-read) |
-| ETA FAQ on the payroll system, 4th edition, March 2026: read for all 44 pages (exemptions, treatment codes, proration) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf | 2026-11-14 |
+| ETA FAQ on the payroll system, 4th edition, March 2026: read for the exemptions, treatment codes and proration (44 pages) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf | 2026-11-14 |
 | ETA Form 4 guide v1.2: read in full for the quarterly return steps | https://eta.gov.eg/sites/default/files/2025-11/UPTCP_Quarterly_Payroll_Form_Submission_Guide_v.1.2.pdf | 2026-11-14 |
 | ETA annual settlement guide for 2025: read for the overview, steps and first field tables (pages 1 to 11) | https://eta.gov.eg/sites/default/files/2026-01/uptcp_annual_payroll_claculation_form_guide_v_2.2_1.pdf | 2026-11-14 |
 | ETA monthly form guide: read for the overview and steps to page 9 | https://eta.gov.eg/sites/default/files/2026-01/uptcp_submitting_payroll_claculation_form_guide_v_1.7_highlights.pdf | 2026-11-14 |
