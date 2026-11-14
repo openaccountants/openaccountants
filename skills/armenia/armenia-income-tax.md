@@ -14,7 +14,7 @@ tier: 2
 domain: income-tax
 ---
 
-# Armenia individual income tax preparation v0.5
+# Armenia individual income tax preparation v0.6
 
 ## Who this applies to
 
