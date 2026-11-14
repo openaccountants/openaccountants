@@ -52,12 +52,12 @@ The March 2026 amendment widens the bands retrospectively from 1 January 2026. D
 
 | Annual taxable slice (NIS) | Monthly equivalent (NIS, derived) | Rate | Official source |
 |---|---|---|---|
-| First 84,120 | First 7,010 | 10% | ITO s.121(b)(1)(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
-| Above 84,120 to 120,720 | Above 7,010 to 10,060 | 14% | ITO s.121(b)(1)(b), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
-| Above 120,720 to 228,000 | Above 10,060 to 19,000 | 20% | ITO s.121(b)(1)(c), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
-| Above 228,000 to 301,200 | Above 19,000 to 25,100 | 31% | ITO s.121(b)(1)(d), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
-| Above 301,200 to 560,280 | Above 25,100 to 46,690 | 35% | ITO s.121(a)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
-| Above 560,280 | Above 46,690 | 47% before surtax | ITO s.121(a)(3), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| First 84,120 | First 7,010 (derived: annual endpoints / 12) | 10% | ITO s.121(b)(1)(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 84,120 to 120,720 | Above 7,010 to 10,060 (derived: annual endpoints / 12) | 14% | ITO s.121(b)(1)(b), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 120,720 to 228,000 | Above 10,060 to 19,000 (derived: annual endpoints / 12) | 20% | ITO s.121(b)(1)(c), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 228,000 to 301,200 | Above 19,000 to 25,100 (derived: annual endpoints / 12) | 31% | ITO s.121(b)(1)(d), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 301,200 to 560,280 | Above 25,100 to 46,690 (derived: annual endpoints / 12) | 35% | ITO s.121(a)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Above 560,280 | Above 46,690 (derived: annual endpoints / 12) | 47% before surtax | ITO s.121(a)(3), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
 Income outside personal exertion generally starts at 31% up to NIS 301,200, then 35% up to NIS 560,280, then 47%; s.121(b) also extends the lower bands to a person who reached age 60 in the tax year. The lower bands do not apply to income requiring books where acceptable books were not maintained, under s.121(b)(2). Special-rate income and exemptions require their own provisions. The 2025-2027 indexation freeze does not cancel the express 2026 band amendment (2026 booklet pp.3-4).
 
