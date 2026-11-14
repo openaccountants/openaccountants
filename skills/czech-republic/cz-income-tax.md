@@ -1,14 +1,15 @@
 ---
 name: cz-income-tax
 description: "Czech personal income tax for the self-employed (OSVČ), tax year 2026. Covers business and professional income under § 7 of the Income Taxes Act, the expense lump sums (80%, 60%, 40% and 30% of income, capped at CZK 1,600,000, 1,200,000, 800,000 and 600,000), actual expenses and tax records, the 15% and 23% rates with the 2026 threshold of CZK 1,762,812, credits and the child tax benefit, losses, tax advances (zálohy), the flat-rate regime (paušální daň) with its three bands and 2026 monthly payments, and the return deadlines for 2026. Trigger on: OSVČ, živnostník, DPFO, daňové přiznání, výdajové paušály, výdaje procentem z příjmů, paušální daň, paušální režim, zálohy na daň, Czech freelancer tax, self-employed tax Czech Republic. Out of scope: employees and non-business income (cz-employee-income-tax), social and health insurance (cz-social-health), non-residents and treaties (cz-cross-border), companies (cz-corporate-income-tax), VAT (cz-vat-return)."
-version: 2.2
+version: 2.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Czech Republic: income tax for the self-employed (OSVČ) (2026) v2.1

@@ -1,14 +1,15 @@
 ---
 name: cz-payroll
 description: "Use for running Czech payroll as an employer in 2026. Covers registration with ČSSZ, the tax office and health insurers under the new single monthly employer report (JMHZ), the monthly gross-to-net sequence (employee social insurance 7.1%, health insurance 4.5%, the 15% and 23% tax advance, the signed prohlášení k dani, the CZK 2,570 monthly taxpayer credit and child credits), DPP and DPČ agreements and the 15% withholding tax below CZK 12,000 and CZK 4,500, the 2026 minimum wage of CZK 22,400, the CZK 129.50 tax-free meal contribution, sick pay for the first 14 days (náhrada mzdy), the annual reconciliation and vyúčtování, payslips, record keeping and penalties. Trigger on: Czech payroll, mzdy, výplatní páska, záloha na daň, srážková daň, DPP, DPČ, prohlášení poplatníka, JMHZ, stravenkový paušál, náhrada mzdy, roční zúčtování. Out of scope: cz-employee-income-tax (the employee's own return), cz-employee-contributions (contribution rules in depth), cz-social-health (self-employed), cz-cross-border."
-version: 0.3
+version: 0.4
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Czech Republic: running payroll (2026)

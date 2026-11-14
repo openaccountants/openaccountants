@@ -1,17 +1,18 @@
 ---
 name: cz-transfer-pricing
 description: "Use this skill for Czech transfer pricing (převodní ceny) in tax year 2026. It covers the arm's length rule and the definition of related persons (spojené osoby, the 25% capital or voting test and other links) in Income Taxes Act § 23(7), the self-adjustment in § 23(3)(a)(17), the related-party transactions annex to the corporate return (Přehled transakcí se spojenými osobami, 25 5404/E) and who must file it (CZK 40 million assets, CZK 80 million turnover or 50 employees, plus a foreign related party, a tax loss or an investment incentive), documentation under Tax Code § 92 and Financial Administration guidance D-334 and GFŘ D-34, binding rulings on prices (APAs, § 38nc and § 38nd, guidance GFŘ D-32), country-by-country reporting (EUR 750 million), penalties and late payment interest. Trigger on: transfer pricing Czech Republic, převodní ceny, spojené osoby, cena obvyklá, závazné posouzení ceny, Local File Czech. Out of scope: corporate tax in general (cz-corporate-income-tax), withholding and exit tax (cz-cross-border), VAT (cz-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Czech Republic: transfer pricing (2026) v0.2
+# Czech Republic: transfer pricing (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-Sbírka (the official Collection of Laws), and the guidance and forms from financnisprava.gov.cz, all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 

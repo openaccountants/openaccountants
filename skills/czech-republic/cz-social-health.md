@@ -1,14 +1,15 @@
 ---
 name: cz-social-health
 description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employee and employer contributions (cz-employee-contributions), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
-version: 2.2
+version: 2.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Czech Republic: social and health insurance for the self-employed (OSVČ), 2026 v2.1

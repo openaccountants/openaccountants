@@ -1,17 +1,18 @@
 ---
 name: cz-employee-income-tax
 description: "Czech personal income tax for employees and other non-business income, tax year 2026. Covers the 15% and 23% rates and the 2026 threshold of CZK 1,762,812 (36 times the average wage), the employment income base (gross pay, no super-gross), monthly advances withheld by the employer, the signed tax declaration, tax credits (taxpayer, spouse, disability, ZTP/P), the child tax benefit and bonus, deductions (pension and life insurance products, mortgage interest, donations), the employer's annual reconciliation versus filing a return, and rental and capital income at a high level. Trigger on: zaměstnanec, mzda, záloha na daň, prohlášení poplatníka, roční zúčtování, sleva na poplatníka, daňové zvýhodnění, daňový bonus, Czech salary tax, employee tax return Czech Republic. Out of scope: self-employed (OSVČ) income tax (cz-income-tax), social and health insurance (cz-social-health), residence and non-residents (cz-cross-border), corporate tax (cz-corporate-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Czech Republic: income tax for employees and other non-business income (2026) v0.2
+# Czech Republic: income tax for employees and other non-business income (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the Income Taxes Act as published in e-Sbírka (version in force 1 August to 31 December 2026), the Tax Code, government regulations, MPSV and the Financial Administration, all read on 23 October 2026. It prepares working papers. It is not authority to file or pay.
 

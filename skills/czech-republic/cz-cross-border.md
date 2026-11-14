@@ -1,17 +1,18 @@
 ---
 name: cz-cross-border
 description: "Hub skill for crossing the Czech border in tax year 2026. Covers tax residence for individuals (domicile or 183 days in the calendar year, Income Tax Act section 2) and companies (seat or place of management, section 17); arriving (no special inbound regime); leaving (no exit tax for individuals; corporate exit tax under section 23g, payable over up to 5 years inside the EU and EEA); non-residents taxed on Czech-source income (section 22); 15% withholding on dividends, interest, royalties and service fees, 35% to non-cooperative states (section 36); the 10% and 1% tax security (section 38e); treaty relief (section 38f). Tax year is the calendar year. Trigger on: moving to the Czech Republic, leaving Czechia, non-resident, expat, exit tax, digital nomad, srážková daň, zajištění daně. Out of scope: self-employed income tax (cz-income-tax), corporate tax (cz-corporate-income-tax), social and health insurance (cz-social-health), VAT (cz-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Czech Republic: cross-border tax for people and companies (2026) v0.2
+# Czech Republic: cross-border tax for people and companies (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Income Tax Act and the Tax Code as published on zakonyprolidi.cz (versions in force for 2026), financnisprava.gov.cz, cssz.gov.cz and cnb.cz, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 

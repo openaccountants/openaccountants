@@ -1,14 +1,15 @@
 ---
 name: czech-republic-vat-return
 description: "Czech VAT (DPH) for tax year 2026 under the VAT Act (235/2004 Coll.) as in force from 1 January 2026. Covers who must register (calendar-year turnover over CZK 2,000,000 makes a payer from 1 January next year, over CZK 2,536,500 from the next day, 10 working days to apply), the 21% and 12% rates and what each covers, books exempt with credit, input VAT limits, the VAT return (přiznání k DPH), control statement (kontrolní hlášení) and EC sales list (souhrnné hlášení), monthly and quarterly periods and the 25-day deadlines, domestic and cross-border reverse charge, intra-EU supplies, unreliable payers and recipient liability, and penalties including control statement fines. Trigger on: DPH, přiznání k DPH, kontrolní hlášení, souhrnné hlášení, plátce DPH, registrace k DPH, nespolehlivý plátce, přenesení daňové povinnosti, Czech VAT. Out of scope: income tax (cz-income-tax, cz-corporate-income-tax) and non-residents generally (cz-cross-border). cz-vat-return points here."
-version: 2.2
+version: 2.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Czech Republic: VAT (DPH) (2026) v2.1

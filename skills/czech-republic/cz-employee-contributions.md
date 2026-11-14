@@ -1,17 +1,18 @@
 ---
 name: cz-employee-contributions
 description: "Czech social security and public health insurance contributions on employment income for tax year 2026. Covers the employee social rate of 7.1% (6.5% pension, 0.6% sickness) and the employer rate of 24.8%, health insurance of 13.5% split one third employee (4.5%) and two thirds employer (9%), the 2026 annual cap on the social base of CZK 2,350,416 (48 times the average wage), the health minimum base of CZK 22,400, the CZK 4,500 small-scope threshold and the CZK 12,000 threshold for work agreements (DPP), employer discounts, monthly payment by the 20th, the new single monthly employer report (JMHZ), penalties and EU posting rules. Trigger on: Czech payroll contributions, sociální pojištění zaměstnance, zdravotní pojištění zaměstnavatel, DPP, DPČ, JMHZ, maximální vyměřovací základ. Out of scope: self-employed contributions (cz-social-health), income tax withholding, residence and treaties (cz-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Czech Republic: employee and employer social and health contributions (2026) v0.2
+# Czech Republic: employee and employer social and health contributions (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Czech Social Security Administration (ČSSZ), the General Health Insurance Company (VZP), the Czech National Bank and the statutes in the Collection of Laws (e-Sbírka), read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
