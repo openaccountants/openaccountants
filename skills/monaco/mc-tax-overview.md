@@ -1,10 +1,10 @@
 ---
 name: mc-tax-overview
 description: "Monaco tax overview for 2026 routing individual, business profits, VAT, payroll, social contribution, transfer pricing, cross border and formation questions to the detailed country Guides. Highlights the inclusive foreign turnover boundary, separate rights income scope, French national residence rules, dated October contribution changes and company reform transition limits. Use as the country entry point before preparing a working paper. Names specialist, formation implementation and professional review boundaries and avoids a general zero tax promise. Source cited draft with no named Monaco professional sign off."
-version: 1.4
+version: 1.3
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-10-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -58,4 +58,4 @@ The earlier government personal-tax retrieval and failed recheck remain in the h
 
 **Not yet confirmed:** the specialist schemes listed in the README, complete formation/accounts/audit implementation, operative multinational minimum-tax calculations and named professional sign-off. Ordinary filing procedures are documented; no taxpayer return was filed or account accessed. Arithmetic checks establish arithmetic only.
 
-> Contributed by OpenAccountants.
+> Contributed by Michael Cutajar.

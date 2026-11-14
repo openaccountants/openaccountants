@@ -1,11 +1,11 @@
 ---
 name: lt-tax-overview
 description: "Tax overview for Lithuania, tax year 2026: the main taxes and their headline figures in one place, each tied to the Lithuanian law or the authority's own page. Covers the tax year, the two authorities (VMI and Sodra), residence (183 days, or 280 days over two years with 90 in one), personal income tax at 20%, 25% and 32% with the 2026 band amounts, the 15% rate on dividends, corporate income tax at 17% with the 0% and 7% small-company rates, VAT at 21%, 12% and 5% with the EUR 45,000 registration limit, 2026 Sodra rates, and the main return dates. Trigger phrases: Lithuania tax overview, how is Lithuania taxed, Lithuanian tax rates 2026, VMI, Sodra. Out of scope (detail lives in the sibling skills): lithuania-pit, lt-corporate-income-tax, lithuania-vat-return, lt-payroll-social, lt-cross-border, lt-transfer-pricing, lt-company-formation."
-version: 0.3
+version: 0.2
 jurisdiction: LT
 category: international
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-10-30
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
@@ -54,4 +54,4 @@ This page is the summary. Each line points to the skill that holds the full rule
 
 Not yet confirmed: the full lists of goods and services at the 12% and 5% VAT rates (see lithuania-vat-return); the law changes taking effect from 1 January 2027 (Law No. XV-488 on PMĮ, noted in lt-corporate-income-tax), which this page does not cover.
 
-> Contributed by OpenAccountants.
+> Contributed by Michael Cutajar.

@@ -1,10 +1,10 @@
 ---
 name: romania-einvoice
 description: Use this skill whenever asked about e-invoicing in Romania, RO e-Factura, ANAF electronic invoice system, SPV (Spațiul Privat Virtual), B2B e-invoice clearance model, UBL 2.1 Romania, CIUS-RO, XML invoice validation, or any question about issuing, transmitting, validating, or archiving electronic invoices under Romanian law. Trigger on phrases like "e-Factura", "RO e-Factura", "ANAF invoice", "SPV portal", "CIUS-RO", "B2B clearance Romania", "B2C e-invoice Romania", "OUG 115/2023", "EN 16931 Romania", or "invoice validation ANAF". ALWAYS read this skill before touching any Romania invoicing compliance work.
-version: 1.2
+version: 1.1
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-10-23
 depends_on:
   - einvoice-workflow-base
 category: invoicing
@@ -255,4 +255,4 @@ Sources for the B2B fines: OUG 115/2023, ANAF copy (https://static.anaf.ro/stati
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-> Contributed by OpenAccountants.
+> Contributed by Michael Cutajar.
