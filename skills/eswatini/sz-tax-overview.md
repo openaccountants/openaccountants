@@ -5,14 +5,15 @@ jurisdiction: SZ
 category: international
 tax_year: 2026
 tax_year_notes: "Year of assessment to 30 June 2026"
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Eswatini Tax Overview v0.2
+# Eswatini Tax Overview v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -89,11 +90,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) Act 2023 (Act 20 of 2023); scanned, read by OCR, Third Schedule pages checked by eye; cited sections read | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-01 |
-| ERS, Public Notice, returns for tax year end 2025 (scanned, OCR); cited sections read | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-01 |
-| Legal Notice 112 of 2018, VAT rate; cited sections read | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf | 2026-11-01 |
-| ERS, VAT Registration; whole page read | https://www.ers.org.sz/Registration | 2026-11-01 |
-| ERS, Presumptive Tax; whole page read | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-01 |
-| ENPF home page, public notice reproducing Legal Notice 5 of 2025; whole page read | https://enpf.co.sz/ | 2026-11-01 |
+| Income Tax (Amendment) Act 2023 (Act 20 of 2023), scanned: read by OCR on 2026-11-01 for the Third Schedule and cited sections. Reopened 2026-11-14 (38-page scan), not re-read; the rates also stand on the ERS Rates and Thresholds page read today | https://www.ers.org.sz/documents/IncomeTaxAmendmentAct2023.pdf | 2026-11-14 (opened, not re-read) |
+| ERS, Public Notice, returns for tax year end 2025 (scan): read in full for the filing deadlines and the 25% and 1.75% rates | https://www.ers.org.sz/whatsnew-file/1753959572719-FULL_PAGE___Income_Tax_Returns_Notice_2025.pdf | 2026-11-14 |
+| Legal Notice 112 of 2018, VAT rate (scan): read in full, both pages, for the 15% rate from 1 August 2018 | https://www.ers.org.sz/documents/VATRateAmendmentRegulation2018.pdf | 2026-11-14 |
+| ERS, VAT Registration: read in full | https://www.ers.org.sz/Registration | 2026-11-14 |
+| ERS, Presumptive Tax: read in full | https://www.ers.org.sz/IncomeTax/PresumptiveTax | 2026-11-14 |
+| ENPF home page, public notice reproducing Legal Notice 5 of 2025: read in full | https://enpf.co.sz/ | 2026-11-14 |
 
 Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The lilangeni and rand peg: the Central Bank source was not opened.
