@@ -16,7 +16,7 @@ type: situation-rules
 
 # UK payments on account (2026-27)
 
-## UK payments on account: Self Assessment skill v3.4
+## UK payments on account: Self Assessment skill v3.5
 
 > **Source-cited draft.** Built from the Taxes Management Act 1970 (TMA 1970) ss. 59A, 59B and 86, the Income Tax (Payments on Account) Regulations 1996 (SI 1996/1654) as amended in 1997 and 2008, Finance Act 2009 Schedule 56 and HMRC pages on GOV.UK, all read on 2026-10-24 or 2026-10-26. No accountant has reviewed it. Do not file from it without review by a qualified UK professional.
 
