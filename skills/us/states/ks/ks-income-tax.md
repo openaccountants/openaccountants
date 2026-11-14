@@ -1,7 +1,7 @@
 ---
 name: ks-income-tax
 description: Use this skill whenever asked about Kansas individual income tax. Trigger on phrases like "Kansas income tax", "KS income tax", "K-40", "KDOR income tax", "K.S.A. 79-32,110". Kansas has a two-bracket progressive system (5.20% to 5.58%) effective 2024+; Social Security is fully exempt for tax years 2024+ regardless of AGI (K.S.A. 79-32,117(c)(xviii)(B)). ALWAYS load us-tax-workflow-base first.
-version: "0.7"
+version: "0.6"
 jurisdiction: US-KS
 tax_year: 2026
 last_updated: 2026-11-14
