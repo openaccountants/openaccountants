@@ -1,220 +1,133 @@
 ---
 name: mn-income-tax
-description: Use this skill whenever asked about Minnesota individual income tax for self-employed persons, sole proprietors, or single-member LLCs. Trigger on phrases like "Minnesota income tax", "MN income tax", "Form M1", "Minnesota DOR", "Minn. Stat. § 290.06".
-version: "0.1"
+description: "Minnesota FormM1: federal AGI base, 2026 brackets and deductions, dependent exemption, state adjustments, independent itemization and annual filing-cycle limits."
+version: "0.2"
 jurisdiction: US-MN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
+category: state-tax
 ---
 
-# MN Income Tax
+# Minnesota individual income tax, 2026
 
-## Minnesota Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **General reference only.** Source-cited draft, not approved by an accountant. For US Treasury Circular 230 §10.37 purposes this is general reference material; a qualified professional must check the facts, current law and forms before filing or taking a position.
 
-> **Scope.** This skill covers Minnesota Form M1 for full-year Minnesota residents who are sole proprietors or single-member LLC owners. Minnesota imposes a four-bracket graduated income tax with rates of 5.35%, 6.80%, 7.85%, and 9.85%.
->
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All rates and thresholds were researched on 2026-05-22 from official Minnesota Department of Revenue publications. A qualified professional must review before filing.
+## Who this applies to
 
-## Section 1: Metadata
+Full-year Minnesota resident individuals, including employees, sole proprietors and disregarded single-member LLC owners, preparing Form M1. Use `us-form-1040-individual-return`, `us-schedule-c-and-se-computation` and `us-section-179-and-bonus-depreciation` for federal inputs. Minnesota begins with **federal adjusted gross income**, not federal taxable income. The old federal-taxable-income starting point and automatic QBI add-back workflow were wrong for this return. The published **2026** rate/indexing release supplies the amounts below. Annual line mapping and filing mechanics retained from the final **2025-2026 filing cycle** must be checked against final 2026 forms; the November 3,2026 M1 booklet is marked FINAL DRAFT and is not treated as final filing instructions. [Final 2025 booklet](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf); [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf).
 
-**Section 1: Metadata**
+## Rates, bands and thresholds
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Minnesota (US-MN) |
-| Tax type | Individual income tax |
-| Primary form | Form M1 |
-| Tax year | 2026 (filed in 2027) |
-| Authority | Minnesota Department of Revenue |
-| Statute | Minn. Stat. § 290.06 |
-| Version | 0.1 |
-| Last updated | 2026-05-22 |
-| Validation | AI-drafted — Q3 |
+Each rate applies only to income in its band. These are taxable-income amounts after state deductions/exemptions, not gross receipts.
 
-### Sources consulted
+| Filing status | 5.35% band | 6.80% band | 7.85% band | 9.85% band | Official source |
+| --- | --- | --- | --- | --- | --- |
+| Single | 0-33,310 | over 33,310-109,430 | over 109,430-203,150 | over 203,150 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
+| MFJ / qualifying surviving spouse | 0-48,700 | over 48,700-193,480 | over 193,480-337,930 | over 337,930 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
+| MFS | 0-24,350 | over 24,350-96,740 | over 96,740-168,965 | over 168,965 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
+| Head of household | 0-41,010 | over 41,010-164,800 | over 164,800-270,060 | over 270,060 | [2026 rates](https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets) |
 
-**Sources consulted**
-
-| # | Source | URL |
+| Deduction / boundary | 2026 amount in USD | Official source |
 | --- | --- | --- |
-| 1 | Minnesota DOR — Income Tax Rates and Brackets (2026) | https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets |
-| 2 | Minnesota DOR — 2026 Bracket Announcement | https://www.revenue.state.mn.us/press-release/2025-12-16/minnesota-income-tax-brackets-standard-deduction-and-dependent-exemption |
-| 3 | Minn. Stat. § 290.06 | https://www.revisor.mn.gov/statutes/cite/290.06 |
-| 4 | Minnesota Form M1 Instructions | https://www.revenue.state.mn.us/form-m1-individual-income-tax |
+| Standard deduction single/MFS | 15,300 | [2026 indexing,290.0123](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Standard deduction MFJ/QSS | 30,600 | [2026 indexing,290.0123](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Standard deduction HOH | 23,000 | [2026 indexing,290.0123](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Additional standard deduction for each qualifying age/blind condition | 1,600 married/QSS;2,000 single/HOH | [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Dependent taxpayer's standard-deduction inputs | Greater of 1,300 or earned income+350, limited to applicable standard deduction under worksheet | [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf); [annual worksheet](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf) |
+| Dependent exemption | 5,300 per qualifying dependent; reduces income, not tax; no taxpayer/spouse personal exemption | [2026 indexing,290.0121](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Exemption reduction starts above AGI | Single 244,500; MFJ/QSS366,700; HOH305,600; MFS183,350 | [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Deduction limitation AGI thresholds | First 244,400; second 337,800; MFS122,200/168,900;80% limitation at 1,107,750 | [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf) |
+| Estimate trigger | Expected tax due after withholding/credits 500 or more | [Final annual booklet, p.22](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf) |
 
-## Section 2: Quick reference — rates and thresholds
+## The base
 
-### Tax rates — 2026 tax year (Single)
+Begin with FAGI. Schedule C/1099-NEC profit, rents, interest and capital gains flow through the federal computation; federal SE-tax and self-employed health-insurance deductions already reflected in FAGI are not deducted a second time. The federal QBI deduction is below FAGI, so it is not a deduction to subtract again or add back to FAGI. Minnesota uses its own standard or itemized deduction and dependent exemptions. A federal standard deduction does not prohibit Minnesota itemization; MFS standard deduction is unavailable if the spouse itemizes. [Final annual instructions, lines 1-6](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-**Tax rates — 2026 tax year (Single)**
+Use Schedule M1M for additions/subtractions and applicable nonconformity schedules. Non-Minnesota municipal bond interest excluded federally can require an addition; U.S.-obligation interest and an included state income-tax refund may qualify for subtraction. Do not say non-Minnesota municipal interest is already in federal taxable income. Track actual bond/fund composition. Minnesota itemized deductions are computed on Schedule M1SA rather than by automatically carrying federal ScheduleA or adding every state tax to FAGI. [M1M/M1SA instructions in final annual booklet](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-| Taxable income | Rate |
-| --- | --- |
-| $0 – $33,310 | 5.35% |
-| $33,311 – $109,430 | 6.80% |
-| $109,431 – $203,150 | 7.85% |
-| $203,151+ | 9.85% |
+Federal bonus depreciation requires the applicable Minnesota addition and subsequent recovery, not a wholesale replacement with straight-line MACRS. Maintain vintage schedules and suspended-loss adjustments; `us-section-179-and-bonus-depreciation` owns federal amounts. State conformity changed during the 2026 session and requires current Minnesota nonconformity schedules, not an assumed historical USD25,000 section 179 cap. Final 2026 details are pending below. [2025 annual booklet, lines 2/7](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf); [updated corporate booklet for entity distinction](https://www.revenue.state.mn.us/sites/default/files/2026-07/m4-inst-25.pdf).
 
-### Tax rates — 2026 tax year (MFJ / Qualifying Surviving Spouse)
+Choose the larger allowed Minnesota standard deduction or M1SA deduction after limitations. In the indexed standard-deduction worksheet the first AGI layer above 244,400 through 337,800 is reduced at 3%, the next excess at 10%, limited to 80% of the deduction; use half the first two AGI boundaries for MFS. At the indexed upper limitation of 1,107,750 the statutory 80% limit applies. Use the current worksheet for boundaries, additions for age/blindness and dependent restrictions. Exemption reduction uses its own filing-status thresholds, not these deduction thresholds. [2026 indexing](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf); [annual worksheets](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-**Tax rates — 2026 tax year (MFJ / Qualifying Surviving Spouse)**
+Tax the resulting taxable income, then check Schedule M1MT state alternative minimum tax, Schedule NIIT if applicable, nonrefundable credits and refundable credits separately. Capital gains have no preferential ordinary Minnesota rate, but the separate net-investment-income tax is not eliminated by using the ordinary brackets. Do not claim a USD5,300 “personal credit” or compute a state credit simply as a percentage of federal EIC. Working Family/Child credits use Minnesota Schedule M1CWFC; K-12 education uses M1ED and the education-subtraction rules; dependent-care credit uses M1CD; marriage credit uses M1MA. Each needs actual qualifying children, expenses, income and residency facts. State credit formulas and 2026 changes are unresolved below rather than guessed. [Annual booklet](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-| Taxable income | Rate |
-| --- | --- |
-| $0 – $48,700 | 5.35% |
-| $48,701 – $193,480 | 6.80% |
-| $193,481 – $337,930 | 7.85% |
-| $337,931+ | 9.85% |
+Social Security subtraction is not automatic for every recipient and is not the old one-line provisional-income assertion. Minnesota has simplified and alternate methods; choose the allowable result using M1M. Published 2026 simplified phase-out thresholds are 110,780 MFJ/QSS,86,410 single/HOH,55,390 MFS. Alternate maximum inputs are 5,840/4,560/2,920, with their own 88,630/69,250/44,315 phase-out thresholds. These are state subtraction amounts, not federal benefit limits. [2026 indexing,290.0132 subd. 26](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf).
 
-### Tax rates — 2026 tax year (MFS)
+## Deadlines and filing
 
-**Tax rates — 2026 tax year (MFS)**
+Ordinary calendar-year M1 filing/payment is April 15 following the tax year, adjusted for closed days or published relief. For the verified 2025-2026 filing cycle, 2025 payment was due April 15,2026 and filing by October 15,2026 avoided the ordinary late-filing penalty. Filing later does not extend payment; a federal extension is not a condition for the state's ordinary six-month filing allowance. Final 2026 instructions are pending, so April 15,2027 is the ordinary statutory date, subject to official changes. [Annual instructions, p.10](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-| Taxable income | Rate |
-| --- | --- |
-| $0 – $24,350 | 5.35% |
-| $24,351 – $96,740 | 6.80% |
-| $96,741 – $168,965 | 7.85% |
-| $168,966+ | 9.85% |
+Use Minnesota e-Services/payment system or the authorized return channel; paper filing includes required federal return and state schedules. Reconcile M1W withholding, estimated payments/extension payments and M1REF refundable credits against actual records. Use M15 for estimate underpayment; “M14” is not the current all-purpose quarterly return. The usual individual estimate schedule is April 15, June 15, September 15, January 15 following year, subject to closed days and special annualization/farmer rules; use the actual-year voucher and M15 instructions. Do not apply corporation installment dates. Retain confirmations and receipts for deduction/credit claims. [Annual booklet, pp.10,18,21-23](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf); [individual estimates statute](https://www.revisor.mn.gov/statutes/cite/289A.25).
 
-### Tax rates — 2026 tax year (Head of Household)
+## Penalties and interest
 
-**Tax rates — 2026 tax year (Head of Household)**
+The verified 2025-2026 annual booklet gives 4% late-payment penalty,5% late-filing penalty after the filing allowance, and an additional 5% extended-delinquency charge under its conditions. Its worksheet can waive the first late-payment charge where less than 10% remains unpaid and filing is timely within the allowance; apply the exact worksheet, not a generic filing-extension rule. Interest in calendar 2026 is 7% on the relevant unpaid tax/penalty balance; later calendar rates must be obtained separately. Estimate underpayment is a separate M15 computation and can arise despite a refund. [Annual booklet, pp.21-23](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf).
 
-| Taxable income | Rate |
-| --- | --- |
-| $0 – $41,010 | 5.35% |
-| $41,011 – $164,800 | 6.80% |
-| $164,801 – $270,060 | 7.85% |
-| $270,061+ | 9.85% |
+## Cross-border points
 
-### Standard deduction — 2026
+Minnesota domicile and statutory residency are distinct tests. A nondomiciliary can be resident when maintaining a Minnesota abode and physically present 183 days or more, subject to actual statutory exceptions;183 days alone is not a universal presumption. Full-year residents generally report worldwide income. M1CR credit for tax paid to another state needs the other return and limitations. Michigan and North Dakota wage reciprocity exists; Wisconsin reciprocity has not been reinstated. [Annual booklet, pp.6-8](https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf); [2026 withholding booklet, pp.4-5](https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf).
 
-**Standard deduction — 2026**
+Refer full M1NR part-year/nonresident allocation, M1X amendments, military/split-residence cases, M706 estate tax, MinnesotaCare and specialized state AMT/NIIT or business credits beyond supported facts. Entity/PTE work belongs to `mn-corporate-and-pte`; employer collections belong to `mn-payroll`. Referrals preserve these distinct jobs rather than inventing missing slugs.
 
-| Filing status | Amount |
-| --- | --- |
-| Single / MFS | $15,300 |
-| MFJ / Surviving Spouse | $30,600 |
-| Head of Household | $23,000 |
+## Two worked examples that recompute
 
-### Dependent exemption — 2026
+**Resident standard-deduction estimate.** Invented single resident, FAGI100,000, no additions/subtractions/dependents, no credits or preferences, standard deduction 15,300. Taxable income 84,700; bracket arithmetic is 1,782.085+(84,700-33,310)x.068=5,276.605, approximately 5,276.61. Annual filing uses the published tax table below the table cutoff, so this rate-schedule planning illustration can differ slightly from return-table tax. It is not payroll withholding.
 
-- **Personal exemption per taxpayer/spouse** — $5,300 USD
+```oa-check
+name: Minnesota single 2026 rate schedule estimate
+inputs:
+  agi: 100000
+  standard: 15300
+steps:
+  - taxable: agi - standard
+  - first_band: 33310 * 0.0535
+  - tax: round(first_band + (taxable - 33310) * 0.068, 2)
+expected:
+  taxable: 84700
+  tax: 5276.61
+```
 
-### Key thresholds
+**State itemization decision independent of federal choice.** Same single taxpayer, allowed Minnesota itemized expenses 20,000 after applicable limits. Assume federal standard deduction was chosen. Minnesota can still itemize. State taxable income becomes 80,000, bracket tax 4,957.01 versus 5,276.61 with the state standard deduction, saving 319.60 before credits. The USD5,300 dependent exemption is not claimed merely for the taxpayer themselves.
 
-**Key thresholds**
+```oa-check
+name: Minnesota independent itemization decision
+inputs:
+  agi: 100000
+  standard: 15300
+  allowed_itemized: 20000
+steps:
+  - standard_taxable: agi - standard
+  - itemized_taxable: agi - allowed_itemized
+  - standard_tax: round(33310 * 0.0535 + (standard_taxable - 33310) * 0.068, 2)
+  - itemized_tax: round(33310 * 0.0535 + (itemized_taxable - 33310) * 0.068, 2)
+  - saving: standard_tax - itemized_tax
+expected:
+  itemized_taxable: 80000
+  itemized_tax: 4957.01
+  saving: 319.6
+```
 
-| Item | Value | Source |
+## Ask the client first
+
+1. Tax year, domicile/abode/day count, moves and all states where income arose?
+2. Filing status, spouse's itemization, ages/blindness, dependent eligibility and FAGI?
+3. Federal return and Schedule C/E/K-1, Minnesota additions/subtractions, depreciation vintages and nonconformity records?
+4. Allowed Minnesota itemized expenses, benefits/pensions, children/education/care costs and supporting credit documents?
+5. Other-state returns, Minnesota withholding, dated estimates, prior-year liability, notices and PTE credits actually paid?
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| Filing deadline | April 15, 2027 (for TY 2026) | Minn. Stat. § 289A.18 |
-| Extension | Automatic 6-month with federal extension | Minn. Stat. § 289A.19 |
-| Estimated tax threshold | Liability of $500 or more after withholding and credits | Minn. Stat. § 289A.25 |
+| 2026 inflation-adjusted amounts. Read for all individual brackets/deduction/exemption/phase-out and Social Security state inputs. | https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf | 2026-11-13 |
+| 2026 rate schedules. Read for four filing-status marginal-rate schedules. | https://www.revenue.state.mn.us/minnesota-income-tax-rates-and-brackets | 2026-11-13 |
+| Final 2025 M1 booklet. Read for 2025-2026 filing cycle: residency, federal AGI, deductions, schedules, credits, filing, payments, penalties and estimates. | https://www.revenue.state.mn.us/sites/default/files/2026-10/m1-inst-25.pdf | 2026-11-13 |
+| 2026 withholding booklet. Read for Michigan/North Dakota reciprocity and withholding versus return distinction. | https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf | 2026-11-13 |
+| Individual estimates statute. Read for individual estimate rule and distinction from corporations. | https://www.revisor.mn.gov/statutes/cite/289A.25 | 2026-11-13 |
+| Updated 2025 corporate booklet. Read for 2026-session conformity update and entity distinction only. | https://www.revenue.state.mn.us/sites/default/files/2026-07/m4-inst-25.pdf | 2026-11-13 |
 
-## Section 3: How this skill works with the federal return
-
-Minnesota taxable income begins with **federal taxable income** (Form 1040, Line 15 — after the federal standard or itemized deduction).
-
-1. **Additions (Schedule M1M)** — Add back items Minnesota does not allow (e.g., state income tax deducted federally on Schedule A, certain bonus depreciation, IRC § 199A QBI deduction).
-2. **Subtractions (Schedule M1M)** — Subtract items Minnesota excludes (e.g., state income tax refund included in federal income, U.S. government bond interest, Social Security subtraction for qualifying taxpayers, K-12 education credit subtraction).
-3. **Minnesota taxable income** — Federal taxable income + additions − subtractions.
-4. **Tax** — Apply the four graduated rates to Minnesota taxable income.
-5. **Credits** — Apply applicable credits.
-
-**Key difference from many states:** Minnesota starts from federal **taxable income** (after the standard/itemized deduction), not from federal AGI. This means the federal standard deduction and itemized deductions are already factored in. Minnesota then applies its own standard deduction or uses the federal amounts depending on the schedule.
-
-## Section 4: Self-employed specific rules
-
-1. **Self-employment income** flows through federal Schedule C → federal AGI → federal taxable income → Minnesota taxable income (with additions/subtractions).
-2. **Federal SE tax deduction** — Already reflected in federal AGI and thus in federal taxable income. No separate Minnesota adjustment.
-3. **QBI deduction add-back** — Minnesota requires an addition for the federal qualified business income deduction (IRC § 199A) if it was claimed on the federal return.
-4. **Estimated taxes** — Self-employed taxpayers must make quarterly estimated payments (Form M1, Schedule M14) if expected liability exceeds $500 after withholding and credits. Due dates: April 15, June 15, September 15, January 15.
-5. **Business equipment depreciation** — Minnesota requires addition of federal bonus depreciation (IRC § 168(k)) and substitution of straight-line MACRS depreciation (§ 168(a)). This creates a timing difference tracked on Schedule M1AR.
-6. **Health insurance deduction** — Self-employed health insurance deduction is in federal AGI. No Minnesota add-back.
-7. **No local income tax** — Minnesota does not have any local or city income taxes.
-
-## Section 5: Tier 1 rules — deterministic
-
-**Section 5: Tier 1 rules — deterministic**
-
-| Rule ID | Rule | Source |
-| --- | --- | --- |
-| MN-T1-01 | Start with federal taxable income (Form 1040, Line 15) | Minn. Stat. § 290.01 |
-| MN-T1-02 | Add back state/local tax deduction claimed on federal Schedule A | Minn. Stat. § 290.0131 |
-| MN-T1-03 | Add back IRC § 199A QBI deduction | Minn. Stat. § 290.0131 |
-| MN-T1-04 | Add back federal bonus depreciation (IRC § 168(k)) and replace with straight-line MACRS | Minn. Stat. § 290.0131 |
-| MN-T1-05 | Subtract U.S. government bond interest | Minn. Stat. § 290.0132 |
-| MN-T1-06 | Subtract state income tax refund included in federal taxable income | Minn. Stat. § 290.0132 |
-| MN-T1-07 | Apply graduated rates: 5.35%, 6.80%, 7.85%, 9.85% to the 2026 brackets | Minn. Stat. § 290.06 |
-| MN-T1-08 | Dependent exemption: $5,300 per qualifying dependent (2026) — reduces tax, not income | Minn. Stat. § 290.0674 |
-| MN-T1-09 | Minnesota Working Family Credit (state EITC): percentage of federal EIC (refundable) | Minn. Stat. § 290.0671 |
-| MN-T1-10 | K-12 Education Credit: credit for qualifying education expenses (income-limited) | Minn. Stat. § 290.0674 |
-| MN-T1-11 | Child and Dependent Care Credit: percentage of federal credit | Minn. Stat. § 290.067 |
-
-## Section 6: Tier 2 rules — requires judgment
-
-**Section 6: Tier 2 rules — requires judgment**
-
-| Rule ID | Rule | Guidance |
-| --- | --- | --- |
-| MN-T2-01 | **Residency determination** — Minnesota uses a domicile test. A person domiciled in Minnesota is a resident. Spending 183+ days in MN creates a presumption of residency. | If taxpayer has homes in multiple states, flag for professional review. |
-| MN-T2-02 | **Bonus depreciation add-back** — Track multi-year timing differences between federal and Minnesota depreciation on Schedule M1AR. | Maintain a depreciation schedule parallel to federal. |
-| MN-T2-03 | **Social Security subtraction** — Minnesota taxes Social Security for higher-income taxpayers but provides a partial subtraction. Phase-out applies based on provisional income. | Compute the subtraction using the worksheet in M1 instructions. |
-| MN-T2-04 | **Credit for taxes paid to other states (Schedule M1CR)** — Non-refundable credit to prevent double taxation. | Requires the other state's return to compute. |
-| MN-T2-05 | **Marriage credit** — Reduces the marriage penalty for two-earner MFJ couples. Income-based calculation. | Compute using Schedule M1MA. |
-| MN-T2-06 | **Alternative minimum tax** — Minnesota imposes a state AMT (Schedule M1MT). Self-employed with large § 179 or depreciation differences should check. | Compute AMT if federal AMT preferences are significant. |
-
-## Section 7: Supplier pattern library
-
-**Section 7: Supplier pattern library**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| W-2 wages from Minnesota employer | MN withholding applies; include on M1 | Most common |
-| Schedule C net profit (sole prop) | Flows through federal taxable income → MN taxable income | QBI deduction add-back required |
-| Rental income (Schedule E) | Included in federal taxable income → MN taxable income | MN-source if property in MN |
-| Interest on U.S. government bonds | Subtract from MN taxable income | Minn. Stat. § 290.0132 |
-| Interest on non-MN muni bonds | No addition needed (already in federal taxable income if taxed federally) | Check if exempt at federal level |
-| Social Security benefits | Partial subtraction available (income-limited) | Use worksheet in M1 instructions |
-| Capital gains from asset sale | Included in federal taxable income → MN taxable income | No special MN rate |
-| 1099-NEC freelance income | Flows through Schedule C → federal taxable income | Estimated payments likely needed |
-
-## Section 8: Form mapping
-
-**Section 8: Form mapping**
-
-| Minnesota form / schedule | What it covers | Federal counterpart |
-| --- | --- | --- |
-| Form M1 | Minnesota Individual Income Tax Return | Form 1040 |
-| Schedule M1M | Income Additions and Subtractions | Schedule 1 (Form 1040) |
-| Schedule M1W | Minnesota Withholding | W-2/1099 withholding summary |
-| Schedule M1CR | Credit for Taxes Paid to Other States | N/A |
-| Schedule M1MA | Marriage Credit | N/A |
-| Schedule M1MT | Alternative Minimum Tax | Form 6251 |
-| Schedule M1AR | Accelerated Depreciation Adjustment | N/A |
-| Schedule M1WFC | Working Family Credit (state EITC) | Schedule EIC |
-| Schedule M1ED | K-12 Education Credit | N/A |
-| Form M14 | Estimated Tax Instructions | Form 1040-ES |
-
-## Section 9: Refusal catalogue
-
-**Section 9: Refusal catalogue**
-
-| ID | Situation | Action |
-| --- | --- | --- |
-| MN-R-01 | Part-year or non-resident return (Schedule M1NR) | Refuse — out of scope |
-| MN-R-02 | Corporate franchise tax (Form M4) | Refuse — out of scope |
-| MN-R-03 | Estate tax (Form M706) | Refuse — out of scope |
-| MN-R-04 | Partnership / S-corp pass-through returns | Refuse — out of scope |
-| MN-R-05 | Multi-state income apportionment | Refuse — flag for professional review |
-| MN-R-06 | Amended returns (Form M1X) | Refuse — out of scope |
-| MN-R-07 | Tax year other than current | Refuse — rates and thresholds may differ |
-| MN-R-08 | MinnesotaCare provider tax | Refuse — different tax type |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: final 2026 M1/M1M/M1SA/M1MT/M1CWFC/M1CD/M1ED/M1MA/M15 forms and all credit/NIIT/AMT computations, detailed 2026 nonconformity, final return-table amounts and 2027 interest rate; full nonresident/part-year/military/amended cases. Draft 2026 form line numbers are not final filing instructions.
