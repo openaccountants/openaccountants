@@ -42,11 +42,11 @@ type: computation
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Standard CIT rate | 19% of the tax base | 2026 | [CIT Act art. 19(1)(1)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554) |
+| Standard CIT rate | 19% of the tax base | 2026 | [CIT Act art. 19(1)(1)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf)) |
 | Reduced rate, small taxpayers and start-ups | 9% of the base, on income other than capital gains (capital gains stay at 19%) | 2026 | art. 19(1)(2), (1a)-(1e); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Revenue limit for the 9% rate, in the tax year | EUR 2,000,000 at the NBP rate on the first working day of the tax year: PLN 8,431,000 for a calendar year 2026 (EUR 1 = PLN 4.2156 on 2 January 2026). Prorated for a tax year longer or shorter than 12 months, from 2026 | 2026 | art. 19(1)(2)(a)-(b); [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity); [NBP table 001/A/NBP/2026](https://api.nbp.pl/api/exchangerates/rates/a/eur/2026-01-02/?format=json) |
 | Small taxpayer (mały podatnik) limit | Prior-year sales revenue including VAT not above EUR 2,000,000 at the NBP rate on the first working day of October of the prior year: PLN 8,517,000 for 2026 (EUR 1 = PLN 4.2586 on 1 October 2025) | 2026 | art. 4a pkt 10; [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity) |
-| Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank | 30% for a tax year starting in 2026; 26% in the following year; 23% after that | 2026 | art. 19(1)(3) and art. 38aa, added by [Dz.U. 2025 poz. 1658](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658) |
+| Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank | 30% for a tax year starting in 2026; 26% in the following year; 23% after that | 2026 | art. 19(1)(3) and art. 38aa, added by [Dz.U. 2025 poz. 1658](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1658/text.pdf)) |
 | Cooperative banks and SKOKs | 27% for a tax year starting in 2026; 23% in the following year; 21% after that | 2026 | art. 19(1)(4) and art. 38ab (as corrected by Dz.U. 2026 poz. 779); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Banks and SKOKs that meet the 9% rate conditions | 17% for a tax year starting in 2026; 13% in the following year; 11% after that | 2026 | art. 19(1)(5) and art. 38ac; https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Estonian CIT (ryczałt od dochodów spółek) | 10% for a small taxpayer or a start-up; 20% otherwise | 2026 | art. 28o(1); [podatki.gov.pl, Estonian CIT rates](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/stawki-i-limity-w-estonskim-cit) |
@@ -58,8 +58,8 @@ type: computation
 | Low-value assets | Initial value up to PLN 10,000 may be expensed at once | 2026 | art. 16f(3); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Passenger car value cap for depreciation | PLN 225,000 electric or hydrogen; PLN 150,000 if CO2 below 50 g/km; PLN 100,000 if 50 g/km or more (cars entered in the asset register before 1 January 2026 keep the 2025 caps) | 2026 | art. 16(1)(4); [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity) |
 | Tax capital group (PGK) | At least PLN 250,000 average share capital per company; parent holds at least 75% directly | 2026 | art. 1a(2); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
-| Late payment interest (odsetki za zwłokę) | 10.50% a year (reduced 5.25%) | from 5 March 2026 | [MF notice, M.P. 2026 poz. 269](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269); Tax Ordinance art. 56 |
-| Pillar Two | 15% global and domestic minimum tax for groups with consolidated revenue of at least EUR 750,000,000; in force from 1 January 2025 | 2026 | [Dz.U. 2024 poz. 1685](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685) |
+| Late payment interest (odsetki za zwłokę) | 10.50% a year (reduced 5.25%) | from 5 March 2026 | [MF notice, M.P. 2026 poz. 269](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 (text: https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf)); Tax Ordinance art. 56 |
+| Pillar Two | 15% global and domestic minimum tax for groups with consolidated revenue of at least EUR 750,000,000; in force from 1 January 2025 | 2026 | [Dz.U. 2024 poz. 1685](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1685/text.pdf)) |
 
 **Who can use 9%.** All of these must hold (art. 19(1)(2), (1a)-(1e)):
 1. The company is a small taxpayer (prior-year gross sales up to PLN 8,517,000 for 2026), or it is in its first year of business.
@@ -251,7 +251,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CIT Act, consolidated text Dz.U. 2026 poz. 554 (ISAP record) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 | 2026-10-22 |
+| CIT Act, consolidated text Dz.U. 2026 poz. 554 (ISAP record) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf) | 2026-10-22 |
 | CIT Act, Sejm unified text including Dz.U. 2026 poz. 554, 779, 846, 912, 1123 (arts. 1, 1a, 3, 4a, 7, 7a, 8, 9, 15c, 16, 16f, 16k, 19, 20, 21, 22, 24a, 24aa, 24ca, 24f, 25, 26, 27, 28c-28t, 38aa-38ad, 38ec) | https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf | 2026-11-14 |
 | Read for the points the body cites to it: Amending act Dz.U. 2025 poz. 1658 (bank rates, 9% revenue test, from 1 January 2026) | https://api.sejm.gov.pl/eli/acts/DU/2025/1658/text.pdf | 2026-11-14 |
 | Amending act Dz.U. 2026 poz. 779 (JPK_CIT deadline, from 1 July 2026; corrects art. 38ab(1)(2)(b)) | https://api.sejm.gov.pl/eli/acts/DU/2026/779/text.pdf | 2026-11-14 |

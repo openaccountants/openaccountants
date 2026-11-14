@@ -41,28 +41,28 @@ type: situation-rules
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Significant influence | 25% of capital, votes or profit rights, direct or indirect | 2026 | [CIT Act art. 11a(2)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554) |
+| Significant influence | 25% of capital, votes or profit rights, direct or indirect | 2026 | [CIT Act art. 11a(2)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf)) |
 | Local file threshold, goods | above PLN 10,000,000 per homogeneous transaction, per side | 2026 | art. 11k(2)(1), (3); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Local file threshold, financial | above PLN 10,000,000 (loan capital, bond face value, guarantee amount) | 2026 | art. 11k(2)(2), art. 11l(1); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Local file threshold, services | above PLN 2,000,000 | 2026 | art. 11k(2)(3); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Local file threshold, other transactions | above PLN 2,000,000 | 2026 | art. 11k(2)(4); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Thresholds with a tax-haven party, related or not | above PLN 2,500,000 financial; above PLN 500,000 other | 2026 | art. 11k(2a), art. 11o(1); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Master file | attach where the group has consolidated accounts and consolidated revenue above PLN 200,000,000 in the prior financial year | 2026 | art. 11p(1); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
-| Loan safe harbour, base rate | PLN: WIBOR 3M, WIRON 3M compounded or POLSTR 3M compounded; USD: 90-day Average SOFR; EUR: EURIBOR 3M; CHF: SARON 3M compound; GBP: SONIA 3M compound | from 1 January 2026 | [MF notice, M.P. 2025 poz. 1249](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249); art. 11g(1)(1) |
-| Loan safe harbour, margin | borrower: at most 2.6 points; lender: at least 2.0 points (if the base rate is below zero, add its absolute value) | from 1 January 2026 | [MF notice, M.P. 2025 poz. 1249](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249) |
+| Loan safe harbour, base rate | PLN: WIBOR 3M, WIRON 3M compounded or POLSTR 3M compounded; USD: 90-day Average SOFR; EUR: EURIBOR 3M; CHF: SARON 3M compound; GBP: SONIA 3M compound | from 1 January 2026 | [MF notice, M.P. 2025 poz. 1249](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 (text: https://api.sejm.gov.pl/eli/acts/MP/2025/1249/text.pdf)); art. 11g(1)(1) |
+| Loan safe harbour, margin | borrower: at most 2.6 points; lender: at least 2.0 points (if the base rate is below zero, add its absolute value) | from 1 January 2026 | [MF notice, M.P. 2025 poz. 1249](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 (text: https://api.sejm.gov.pl/eli/acts/MP/2025/1249/text.pdf)) |
 | Loan safe harbour, size and term | total related-party loan capital up to PLN 20,000,000, counted separately for loans given and taken; term up to 5 years | 2026 | art. 11g(1)(3)-(4); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Low-value services safe harbour | mark-up at most 5% of costs when buying; at least 5% when providing | 2026 | art. 11f(1)(1); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
-| Additional tax liability (dodatkowe zobowiązanie podatkowe) | 10% of the understated income or overstated loss | 2026 | [Tax Ordinance art. 58b § 1](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622) |
+| Additional tax liability (dodatkowe zobowiązanie podatkowe) | 10% of the understated income or overstated loss | 2026 | [Tax Ordinance art. 58b § 1](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf)) |
 | Doubled rate | 20% on the part of the base above PLN 15,000,000, or on the part linked to a transaction whose documentation was not submitted | 2026 | Tax Ordinance art. 58c § 1(1), (3); https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
 | Tripled rate | 30% where both doubling grounds apply | 2026 | Tax Ordinance art. 58c § 2; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
-| Fiscal penal fine, no local file, no master file attached, or untrue file | up to 720 daily rates | 2026 | [Kodeks karny skarbowy art. 56c § 1-2](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633) |
+| Fiscal penal fine, no local file, no master file attached, or untrue file | up to 720 daily rates | 2026 | [Kodeks karny skarbowy art. 56c § 1-2](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf)) |
 | Fiscal penal fine, local file late | up to 240 daily rates | 2026 | KKS art. 56c § 3; https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf |
 | Fiscal penal fine, no TPR or untrue TPR / late TPR | up to 720 / up to 240 daily rates | 2026 | KKS art. 80e § 1-2; https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf |
 | Fine for a minor case (fiscal petty offence) | 1/10 to 20 times the minimum wage: PLN 480.60 to PLN 96,120 with the 2026 minimum wage | 2026 | KKS art. 48 § 1, art. 56c § 4, art. 80e § 3; https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf |
-| One daily rate | from 1/30 of the minimum wage to 400 times that: PLN 160.20 to PLN 64,080 with the 2026 minimum wage of PLN 4,806 | 2026 | KKS art. 23 § 3; [minimum wage 2026, Dz.U. 2025 poz. 1242](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242) |
-| APA application fee | 1% of the transaction value; unilateral, domestic parties only: PLN 5,000 to PLN 50,000; unilateral with a foreign party: PLN 20,000 to PLN 100,000; bilateral or multilateral: PLN 50,000 to PLN 200,000; renewal: half | 2026 | [APA and dispute act, Dz.U. 2023 poz. 948, art. 98](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230000948) |
+| One daily rate | from 1/30 of the minimum wage to 400 times that: PLN 160.20 to PLN 64,080 with the 2026 minimum wage of PLN 4,806 | 2026 | KKS art. 23 § 3; [minimum wage 2026, Dz.U. 2025 poz. 1242](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf)) |
+| APA application fee | 1% of the transaction value; unilateral, domestic parties only: PLN 5,000 to PLN 50,000; unilateral with a foreign party: PLN 20,000 to PLN 100,000; bilateral or multilateral: PLN 50,000 to PLN 200,000; renewal: half | 2026 | [APA and dispute act, Dz.U. 2023 poz. 948, art. 98](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230000948 (text: https://api.sejm.gov.pl/eli/acts/DU/2023/948/text.pdf)) |
 | APA term | at most 5 tax years; renewable for further periods of up to 5 years | 2026 | Dz.U. 2023 poz. 948, art. 95(2), (4); https://api.sejm.gov.pl/eli/acts/DU/2023/948/text.pdf |
-| Country-by-country report threshold | consolidated revenue of PLN 3,250,000,000 (groups reporting in PLN) or EUR 750,000,000 | 2026 | [Exchange of tax information act, Dz.U. 2025 poz. 1379, art. 82(2)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001379) |
+| Country-by-country report threshold | consolidated revenue of PLN 3,250,000,000 (groups reporting in PLN) or EUR 750,000,000 | 2026 | [Exchange of tax information act, Dz.U. 2025 poz. 1379, art. 82(2)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001379 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1379/text.pdf)) |
 | CbC penalty | up to PLN 1,000,000 | 2026 | Dz.U. 2025 poz. 1379, art. 90-91; https://api.sejm.gov.pl/eli/acts/DU/2025/1379/text.pdf |
 
 ## The taxable base
@@ -267,20 +267,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CIT Act, consolidated text Dz.U. 2026 poz. 554 (art. 11a to 11t) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 | 2026-10-23 |
+| CIT Act, consolidated text Dz.U. 2026 poz. 554 (art. 11a to 11t) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/554/text.pdf) | 2026-10-23 |
 | Act of 18 September 2026 amending the PIT and CIT Acts, Dz.U. 2026 poz. 1371 (TPR, art. 11e) | https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf | 2026-10-23 |
-| PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 23m to 23zf) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 | 2026-10-23 |
-| Tax Ordinance, consolidated text Dz.U. 2026 poz. 622 (art. 12 § 5, art. 58a to 58e); later amendments Dz.U. 2026 poz. 825, 846 and 1154 do not change art. 58a to 58e | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 | 2026-10-23 |
-| Fiscal Penal Code, consolidated text Dz.U. 2025 poz. 633 (art. 23, 24, 48, 56c, 80e) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 | 2026-10-23 |
-| Public holidays act (ustawa o dniach wolnych od pracy), consolidated text Dz.U. 2025 poz. 296 (art. 1) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000296 | 2026-10-23 |
-| Minimum wage for 2026, Dz.U. 2025 poz. 1242 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 | 2026-10-23 |
-| MF notice on base rates and margins for 2026, M.P. 2025 poz. 1249 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 | 2026-10-23 |
-| Act on resolving double taxation disputes and APAs, consolidated text Dz.U. 2023 poz. 948 (art. 11, 66, 72-79, 81-105) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230000948 | 2026-10-23 |
-| Act on exchange of tax information, consolidated text Dz.U. 2025 poz. 1379 (art. 82 to 91, CbC) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001379 | 2026-10-23 |
-| Amending act Dz.U. 2026 poz. 347 (exchange of information act; art. 91 cross-references only) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000347 | 2026-10-23 |
-| MF regulation on transfer pricing documentation (CIT), consolidated text Dz.U. 2023 poz. 1783 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230001783 | 2026-10-23 |
-| MF regulation on the TPR (CIT), amendment Dz.U. 2025 poz. 1744 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001744 | 2026-10-23 |
-| MF regulation listing harmful tax competition states (CIT), Dz.U. 2024 poz. 1928 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001928 | 2026-10-23 |
+| PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 23m to 23zf) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) | 2026-10-23 |
+| Tax Ordinance, consolidated text Dz.U. 2026 poz. 622 (art. 12 § 5, art. 58a to 58e); later amendments Dz.U. 2026 poz. 825, 846 and 1154 do not change art. 58a to 58e | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf) | 2026-10-23 |
+| Fiscal Penal Code, consolidated text Dz.U. 2025 poz. 633 (art. 23, 24, 48, 56c, 80e) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf) | 2026-10-23 |
+| Public holidays act (ustawa o dniach wolnych od pracy), consolidated text Dz.U. 2025 poz. 296 (art. 1) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000296 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/296/text.pdf) | 2026-10-23 |
+| Minimum wage for 2026, Dz.U. 2025 poz. 1242 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf) | 2026-10-23 |
+| MF notice on base rates and margins for 2026, M.P. 2025 poz. 1249 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 (text: https://api.sejm.gov.pl/eli/acts/MP/2025/1249/text.pdf) | 2026-10-23 |
+| Act on resolving double taxation disputes and APAs, consolidated text Dz.U. 2023 poz. 948 (art. 11, 66, 72-79, 81-105) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230000948 (text: https://api.sejm.gov.pl/eli/acts/DU/2023/948/text.pdf) | 2026-10-23 |
+| Act on exchange of tax information, consolidated text Dz.U. 2025 poz. 1379 (art. 82 to 91, CbC) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001379 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1379/text.pdf) | 2026-10-23 |
+| Amending act Dz.U. 2026 poz. 347 (exchange of information act; art. 91 cross-references only) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000347 (text: https://api.sejm.gov.pl/eli/acts/DU/2026/347/text.pdf) | 2026-10-23 |
+| MF regulation on transfer pricing documentation (CIT), consolidated text Dz.U. 2023 poz. 1783 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20230001783 (text: https://api.sejm.gov.pl/eli/acts/DU/2023/1783/text.pdf) | 2026-10-23 |
+| MF regulation on the TPR (CIT), amendment Dz.U. 2025 poz. 1744 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001744 (text: https://api.sejm.gov.pl/eli/acts/DU/2025/1744/text.pdf) | 2026-10-23 |
+| MF regulation listing harmful tax competition states (CIT), Dz.U. 2024 poz. 1928 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001928 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1928/text.pdf) | 2026-10-23 |
 | podatki.gov.pl, Ceny transferowe (TPR-C(6), 2026 safe harbour notice) | https://www.podatki.gov.pl/ceny-transferowe/ | 2026-10-23 |
 | Read for Local file threshold, goods, Local file threshold, financial, Local file threshold, services, Local file threshold, other transactions: official text of the CIT Act, Dz.U. 2026 poz. 554 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf | 2026-11-14 |
 | Read for Master file, Loan safe harbour, size and term: official text of the CIT Act, Dz.U. 2026 poz. 554 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf | 2026-11-14 |
