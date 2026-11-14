@@ -1,16 +1,17 @@
 ---
 name: luxembourg-income-tax
 description: "Luxembourg personal income tax for resident individuals and self-employed people (indépendants) for tax year 2026: the 23-band scale (0% to 42%), tax classes 1, 1a and 2, the employment fund surcharge (7%, or 9% above EUR 150,000 / 300,000), the CIS, CII, CI-CO2, CISSM and single-parent credits, expenses, depreciation (arts. 32 and 34), special expenses and CCSS contributions, Form 100 and Form 163 annual adjustment, quarterly advances, penalties and interest. Trigger on: impôt sur le revenu Luxembourg, modèle 100, décompte annuel 163, classe d'impôt, barème 2026, indépendant Luxembourg, avances trimestrielles. Out of scope: lu-cross-border, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax."
-version: 0.5
+version: 0.6
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Luxembourg personal income tax: residents and the self-employed (2026) v0.4
@@ -41,39 +42,39 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 
 **Income tax scale, all classes (art. 118 LIR; taxable income first rounded down to a multiple of EUR 50, art. 126(2)).** Source: [LIR, consolidated text in force on 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf). Tax years 2025 and 2026.
 
-| Taxable income (EUR) | Rate | Cumulative tax at top of band (EUR) |
-|---|---|---|
-| 0 to 13,230 | 0% | 0.00 |
-| 13,230 to 15,435 | 8% | 176.40 |
-| 15,435 to 17,640 | 9% | 374.85 |
-| 17,640 to 19,845 | 10% | 595.35 |
-| 19,845 to 22,050 | 11% | 837.90 |
-| 22,050 to 24,255 | 12% | 1,102.50 |
-| 24,255 to 26,550 | 14% | 1,423.80 |
-| 26,550 to 28,845 | 16% | 1,791.00 |
-| 28,845 to 31,140 | 18% | 2,204.10 |
-| 31,140 to 33,435 | 20% | 2,663.10 |
-| 33,435 to 35,730 | 22% | 3,168.00 |
-| 35,730 to 38,025 | 24% | 3,718.80 |
-| 38,025 to 40,320 | 26% | 4,315.50 |
-| 40,320 to 42,615 | 28% | 4,958.10 |
-| 42,615 to 44,910 | 30% | 5,646.60 |
-| 44,910 to 47,205 | 32% | 6,381.00 |
-| 47,205 to 49,500 | 34% | 7,161.30 |
-| 49,500 to 51,795 | 36% | 7,987.50 |
-| 51,795 to 54,090 | 38% | 8,859.60 |
-| 54,090 to 117,450 | 39% | 33,570.00 |
-| 117,450 to 176,160 | 40% | 57,054.00 |
-| 176,160 to 234,870 | 41% | 81,125.10 |
-| above 234,870 | 42% | |
+| Taxable income (EUR) | Rate | Cumulative tax at top of band (EUR) | Source |
+|---|---|---|---|
+| 0 to 13,230 | 0% | 0.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 13,230 to 15,435 | 8% | 176.40 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 15,435 to 17,640 | 9% | 374.85 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 17,640 to 19,845 | 10% | 595.35 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 19,845 to 22,050 | 11% | 837.90 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 22,050 to 24,255 | 12% | 1,102.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 24,255 to 26,550 | 14% | 1,423.80 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 26,550 to 28,845 | 16% | 1,791.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 28,845 to 31,140 | 18% | 2,204.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 31,140 to 33,435 | 20% | 2,663.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 33,435 to 35,730 | 22% | 3,168.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 35,730 to 38,025 | 24% | 3,718.80 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 38,025 to 40,320 | 26% | 4,315.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 40,320 to 42,615 | 28% | 4,958.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 42,615 to 44,910 | 30% | 5,646.60 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 44,910 to 47,205 | 32% | 6,381.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 47,205 to 49,500 | 34% | 7,161.30 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 49,500 to 51,795 | 36% | 7,987.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 51,795 to 54,090 | 38% | 8,859.60 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 54,090 to 117,450 | 39% | 33,570.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 117,450 to 176,160 | 40% | 57,054.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 176,160 to 234,870 | 41% | 81,125.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| above 234,870 | 42% | | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 
 **How each class uses the scale.**
 
 | Class | Computation | Source |
 |---|---|---|
 | 1 | Scale applied to adjusted taxable income | [LIR art. 120](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| 1a | Scale applied to income reduced by a quarter of its shortfall below EUR 79,380, with the marginal rate capped at 39% from EUR 51,804 to 117,450, then 40%, 41% and 42% as in the scale | LIR art. 120bis (same URL) |
-| 2 | Twice the tax on half the income (splitting) | LIR art. 121 (same URL) |
+| 1a | Scale applied to income reduced by a quarter of its shortfall below EUR 79,380, with the marginal rate capped at 39% from EUR 51,804 to 117,450, then 40%, 41% and 42% as in the scale | LIR art. 120bis; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 2 | Twice the tax on half the income (splitting) | LIR art. 121; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 
 **Other figures (tax year 2026).**
 
@@ -81,17 +82,17 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 |---|---|---|
 | Employment fund surcharge | 7% of the income tax; 9% where adjusted taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2) | [ACD, fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html) |
 | Employee credit (CIS) | EUR 300 + (gross - 936) x 0.029 for gross EUR 936 to 11,265; EUR 600 for 11,266 to 40,000; 600 - (gross - 40,000) x 0.015 for 40,001 to 79,999; nil from 80,000 | [LIR art. 154quater](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| CO2 credit (CI-CO2), employees and self-employed | EUR 216 for income EUR 936 to 40,000; 216 - (income - 40,000) x 0.0054 for 40,001 to 79,999; nil from 80,000 | LIR arts. 152ter and 154quater (same URL) |
-| Self-employed credit (CII) | Same bands as the CIS, on net profit; EUR 300 where net profit is under EUR 936; needs compulsory social-security affiliation for that profit; not combined with the CIS or the pensioner credit; granted once a year for all self-employed profit; CII and CI-CO2 are deducted from the tax on assessment, and the ACD pays out any part the tax does not absorb | LIR art. 152ter(1), (3) and (4) (same URL) |
-| Minimum-wage credit (CISSM), employees | EUR 81 a month for monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | LIR art. 139quater (same URL) |
-| Single-parent credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 from 60,000 to 105,000; EUR 750 above 105,000; reduced by 50% of child maintenance above EUR 2,712 a year | LIR art. 154ter (same URL) |
-| Child tax reduction as a rebate (no family allowance paid) | EUR 922.50 per child | LIR art. 122(3) (same URL) |
-| Flat deduction, employment expenses | EUR 540 (pensions EUR 300; investment income EUR 25) | LIR art. 107 (same URL) |
-| Flat home-to-work deduction (employees) | EUR 99 per distance unit above 4 units, maximum EUR 2,574 | LIR art. 105bis (same URL) |
-| Flat deduction, special expenses | EUR 480 (art. 113(1)); does not cover compulsory social contributions, which are deducted in full | LIR arts. 110 and 113 (same URL) |
-| Extra-professional abatement, couples both working | EUR 4,500 | LIR art. 129b (same URL) |
-| Immediate write-off of low-value assets | EUR 870 per item (owner-user) | LIR art. 34 (same URL) |
-| Declining-balance cap | Lower of 3 x the linear rate and 30% (4 x and 40% for research equipment) | LIR art. 32(3) (same URL) |
+| CO2 credit (CI-CO2), employees and self-employed | EUR 216 for income EUR 936 to 40,000; 216 - (income - 40,000) x 0.0054 for 40,001 to 79,999; nil from 80,000 | LIR arts. 152ter and 154quater; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Self-employed credit (CII) | Same bands as the CIS, on net profit; EUR 300 where net profit is under EUR 936; needs compulsory social-security affiliation for that profit; not combined with the CIS or the pensioner credit; granted once a year for all self-employed profit; CII and CI-CO2 are deducted from the tax on assessment, and the ACD pays out any part the tax does not absorb | LIR art. 152ter(1), (3) and (4); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Minimum-wage credit (CISSM), employees | EUR 81 a month for monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | LIR art. 139quater; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Single-parent credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 from 60,000 to 105,000; EUR 750 above 105,000; reduced by 50% of child maintenance above EUR 2,712 a year | LIR art. 154ter; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Child tax reduction as a rebate (no family allowance paid) | EUR 922.50 per child | LIR art. 122(3); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Flat deduction, employment expenses | EUR 540 (pensions EUR 300; investment income EUR 25) | LIR art. 107; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Flat home-to-work deduction (employees) | EUR 99 per distance unit above 4 units, maximum EUR 2,574 | LIR art. 105bis; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Flat deduction, special expenses | EUR 480 (art. 113(1)); does not cover compulsory social contributions, which are deducted in full | LIR arts. 110 and 113; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Extra-professional abatement, couples both working | EUR 4,500 | LIR art. 129b; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Immediate write-off of low-value assets | EUR 870 per item (owner-user) | LIR art. 34; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Declining-balance cap | Lower of 3 x the linear rate and 30% (4 x and 40% for research equipment) | LIR art. 32(3); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Building components (lifts, heating, sanitary, lighting, air-conditioning, IT cabling) | Up to 10% linear, no declining balance | [ACD circular L.I.R. n° 32/2](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf) |
 | Late-payment interest | 0.6% a month; 0.1% or 0.2% a month under an agreed payment plan | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
 | Late-filing surcharge | Up to 10% of the tax | same URL |
@@ -100,8 +101,8 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 
 | Item | Amount | Source |
 |---|---|---|
-| Employee share | Pension 8.50%, sickness 2.80%, cash-benefit surcharge 0.25%, dependency 1.40% (total 12.95%) | [CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) |
-| Self-employed | Pension 17.00%, sickness 5.60%, cash benefits 0.50% where covered, dependency 1.40% (24.50% before accident insurance); accident 0.65% x factor | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
+| Employee share | Pension 8.50%, sickness 2.80%, cash-benefit surcharge 0.25%, dependency 1.40% (total 12.95%, computed) | [CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) |
+| Self-employed | Pension 17.00%, sickness 5.60%, cash benefits 0.50% where covered, dependency 1.40% (24.50% computed, before accident insurance); accident 0.65% x factor | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
 | Monthly ceiling (5 x SSM) | EUR 13,518.68 from 1 January 2026; EUR 13,856.63 from 1 June 2026 | CCSS notices of [16 January](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) and [14 August 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf) |
 | Social minimum wage, unskilled, 18+ | EUR 2,703.74 a month from 1 January 2026; EUR 2,771.33 from 1 June 2026 | same notices |
 | Dependency abatement | EUR 675.93 a month from 1 January 2026; EUR 692.83 from 1 June 2026; the dependency contribution has no ceiling | same notices |
@@ -274,21 +275,21 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | LIR, consolidated text in force on 1 January 2026 (ACD, updated 8 May 2026): arts. 1, 2, 12, 31, 32, 34, 45, 46, 48, 105bis, 107, 110, 113, 114, 118 to 123, 126, 129b, 134, 135, 139quater, 145, 152ter, 153, 154ter, 154quater | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
-| ACD circular L.I.R. n° 32/1 of 15 May 2018 (deferred depreciation) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi18/circulairelir32-1du15052018-amortissement-differe.pdf | 2026-10-23 |
-| ACD circular L.I.R. n° 32/2 of 30 May 2022 (building components, 10%) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf | 2026-10-23 |
-| ACD circular L.I.R. n° 34/1 of 19 June 1998 (low-value assets, acquisition price) | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lir-n-34-1-du-19-juin-1998.pdf | 2026-10-23 |
-| Guichet.lu, résultat d'exploitation d'une entreprise individuelle (year-of-acquisition simplification; page last changed 11 June 2018) | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/entreprise-individuelle-societe-personne/calcul-resultat-exploitation.html | 2026-10-23 |
-| ACD, fonds pour l'emploi (7% / 9%) | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
-| ACD, délais de dépôt (31 December of the following year) | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
-| ACD, formulaires personnes physiques (Form 100, MyGuichet) | https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html | 2026-10-23 |
-| ACD, décompte annuel (Forms 163 R and 163 NR, deadline) | https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html | 2026-10-23 |
-| ACD, prélèvements supplémentaires (10% supplement, astreinte, 0.6% interest) | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
-| CCSS, avis aux employeurs, taux de cotisation au 1 January 2026 (abatement EUR 675.93) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf | 2026-10-23 |
-| CCSS, avis aux employeurs, minima et maximum au 1 June 2026 (abatement EUR 692.83) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-23 |
-| CCSS, paramètres sociaux (rates, SSM, ceiling) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
-| AED, régime de franchise (EUR 50,000 / 55,000 from 2025) | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
-| AED, taux nationaux (17 / 14 / 8 / 3%) | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
+| ACD circular L.I.R. n° 32/1 of 15 May 2018 (deferred depreciation). Read for deferred depreciation. | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi18/circulairelir32-1du15052018-amortissement-differe.pdf | 2026-10-23 |
+| ACD circular L.I.R. n° 32/2 of 30 May 2022 (building components, 10%). Read for building component depreciation. | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf | 2026-10-23 |
+| ACD circular L.I.R. n° 34/1 of 19 June 1998 (low-value assets, acquisition price). Read for the low-value asset rule. | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lir-n-34-1-du-19-juin-1998.pdf | 2026-10-23 |
+| Guichet.lu, résultat d'exploitation d'une entreprise individuelle (year-of-acquisition simplification; page last changed 11 June 2018). Read for the year-of-acquisition simplification. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/entreprise-individuelle-societe-personne/calcul-resultat-exploitation.html | 2026-10-23 |
+| ACD, fonds pour l'emploi (7% / 9%). Read for the employment fund surcharge. | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
+| ACD, délais de dépôt (31 December of the following year). Read for the filing deadline. | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
+| ACD, formulaires personnes physiques (Form 100, MyGuichet). Read for the return forms. | https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html | 2026-10-23 |
+| ACD, décompte annuel (Forms 163 R and 163 NR, deadline). Read for the annual adjustment forms and deadline. | https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html | 2026-10-23 |
+| ACD, prélèvements supplémentaires (10% supplement, astreinte, 0.6% interest). Read for the late filing surcharge and late interest. | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
+| CCSS, avis aux employeurs, taux de cotisation au 1 January 2026 (abatement EUR 675.93). Read for the 2026 contribution rates and abatement. | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf | 2026-10-23 |
+| CCSS, avis aux employeurs, minima et maximum au 1 June 2026 (abatement EUR 692.83). Read for the minimum and maximum from 1 June 2026. | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-23 |
+| CCSS, paramètres sociaux (rates, SSM, ceiling). Read for the social security parameters. | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
+| AED, régime de franchise (EUR 50,000 / 55,000 from 2025). Read for the VAT franchise threshold. | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
+| AED, taux nationaux (17 / 14 / 8 / 3%). Read for the national VAT rates. | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
 
 Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

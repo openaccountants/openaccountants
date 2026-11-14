@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-efka"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Greece: social insurance contributions of the self-employed (e-EFKA), 2026
@@ -172,19 +172,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| e-EFKA circular 6/2026, 2026 contributions of freelancers, the self-employed and farmers (all category tables, EUR 10 unemployment, EUR 2 health professionals, in force 1.1.2026) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026 | 2026-10-23 |
-| e-EFKA circular 3/2020, new contributions of freelancers, the self-employed and farmers (free choice, special category rules, parallel insurance, payment deadline, mothers, late-payment interest) | https://www.e-efka.gov.gr/sites/default/files/2021-08/%CE%95%CE%93%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9F%CE%A3%203-2020.pdf | 2026-10-23 |
-| e-EFKA FAQ, contributions of freelancers, the self-employed and farmers (category choice, special category, payment, late payment, KEAO transfer) | https://www.e-efka.gov.gr/el/nees-eisphores-eleytheron-epaggelmation-aytotelos-apascholoymenon-kai-agroton | 2026-10-23 |
-| e-EFKA FAQ, supplementary contributions of the non-salaried | https://www.e-efka.gov.gr/el/eisphores-0 | 2026-10-23 |
-| e-EFKA FAQ, lump-sum contributions of the non-salaried | https://www.e-efka.gov.gr/el/sychnes-eroteseis/asphalisi-eisphores/asphalismenoi/me-misthotoi-0/epikoyrike-asphalise-kai-ephapax-paroche-pronoia-sychnes-erotapan/ephapax-paroche-pronoia/ephapax-paroche-pronoia-eisphores | 2026-10-23 |
-| e-EFKA FAQ, reduced contributions for mothers | https://www.e-efka.gov.gr/el/sychnes-eroteseis/asphalisi-eisphores/asphalismenoi/me-misthotoi-0/meiomenes-eisphores-gia-meteres-me-misthotes | 2026-10-23 |
-| e-EFKA general document 1811441/13.07.2026, new non-salaried online services (category choice window December to January) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/geniko-eggrafo-181144113-07-2026 | 2026-10-23 |
-| e-EFKA circular 15/2026, 72-instalment settlement under art. 22 ν. 5313/2026 | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-152026 | 2026-10-23 |
-| e-EFKA FAQ for debtors, KEAO (settlement surcharges) | https://www.e-efka.gov.gr/el/sychnes-eroteseis/opheiletes-keao/themata-diakanonismoy-opheilon-sychn-erotapan-keao/genika | 2026-10-23 |
-| Income Tax Code (ν. 4172/2013), Ministry of Finance codification to ν. 5264/2025, arts. 22 and 23 | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
+| e-EFKA circular 6/2026: read for 2026 contributions of freelancers, the self-employed and farmers (all category tables, EUR 10 unemployment, EUR 2 health professionals, in force 1.1.2026) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026 | 2026-11-14 |
+| e-EFKA circular 3/2020: read for new contributions of freelancers, the self-employed and farmers (free choice, special category rules, parallel insurance, payment deadline, mothers, late-payment interest) | https://www.e-efka.gov.gr/sites/default/files/2021-08/%CE%95%CE%93%CE%9A%CE%A5%CE%9A%CE%9B%CE%99%CE%9F%CE%A3%203-2020.pdf | 2026-11-14 |
+| e-EFKA FAQ: read for contributions of freelancers, the self-employed and farmers (category choice, special category, payment, late payment, KEAO transfer) | https://www.e-efka.gov.gr/el/nees-eisphores-eleytheron-epaggelmation-aytotelos-apascholoymenon-kai-agroton | 2026-11-14 |
+| e-EFKA FAQ: read for supplementary contributions of the non-salaried | https://www.e-efka.gov.gr/el/eisphores-0 | 2026-11-14 |
+| e-EFKA FAQ: read for lump-sum contributions of the non-salaried | https://www.e-efka.gov.gr/el/sychnes-eroteseis/asphalisi-eisphores/asphalismenoi/me-misthotoi-0/epikoyrike-asphalise-kai-ephapax-paroche-pronoia-sychnes-erotapan/ephapax-paroche-pronoia/ephapax-paroche-pronoia-eisphores | 2026-11-14 |
+| e-EFKA FAQ: read for reduced contributions for mothers | https://www.e-efka.gov.gr/el/sychnes-eroteseis/asphalisi-eisphores/asphalismenoi/me-misthotoi-0/meiomenes-eisphores-gia-meteres-me-misthotes | 2026-11-14 |
+| e-EFKA general document 1811441/13.07.2026: read for new non-salaried online services (category choice window December to January) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/geniko-eggrafo-181144113-07-2026 | 2026-11-14 |
+| e-EFKA circular 15/2026, 72-instalment settlement under art. 22 ν. 5313/2026 | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-152026 | 2026-11-14 |
+| e-EFKA FAQ for debtors: read for KEAO (settlement surcharges) | https://www.e-efka.gov.gr/el/sychnes-eroteseis/opheiletes-keao/themata-diakanonismoy-opheilon-sychn-erotapan-keao/genika | 2026-11-14 |
+| Income Tax Code (ν. 4172/2013), Ministry of Finance codification to ν. 5264/2025, arts. 22 and 23 | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-11-14 |
 
 Not yet confirmed: the text of art. 2(4) ν. 4158/2013 itself (the late-payment rate is taken from e-EFKA circular 3/2020, section 6, and the law was not fetched), and the ECB refinancing rate in force on any given day; the exact dates of the December 2026 to January 2027 window for choosing 2027 categories; which professions are compulsorily insured in the supplementary and lump-sum branches beyond the former OAEE groups the e-EFKA FAQ lists (check the client's e-EFKA record); whether an engineer such as the one in Example 2 is compulsorily insured in both branches (the example assumes it).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-efka` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-efka. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-efka` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-efka. If neither is available, confirm every figure against the official source pages cited above before relying on it.

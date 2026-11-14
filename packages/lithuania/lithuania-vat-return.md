@@ -1,17 +1,18 @@
 ---
 name: lithuania-vat-return
 description: "Use this skill for Lithuanian VAT (pridėtinės vertės mokestis, PVM) in tax year 2026. It covers the 21% standard rate, the 12% and 5% reduced rates and the end of the 9% rate on 31 December 2025 (heating, firewood, books, accommodation, transport and culture moved), the EUR 45,000 small business scheme and when VAT starts once it is passed, the EU cross-border small business scheme, the EUR 14,000 acquisitions threshold, tax periods, the FR0600 return and payment by the 25th, i.SAF invoice data by the 20th, the EU sales list (FR0564), reverse charge on services and goods from foreign suppliers and on construction work, blocked input VAT on representation and cars, fines and 0.027% a day late payment interest. Trigger on: Lithuanian VAT, PVM, FR0600, i.SAF, PVM mokėtojas, Lithuania VAT registration, 12% PVM. Out of scope: corporate income tax (lt-corporate-income-tax), personal income tax (lithuania-pit), payroll (lt-payroll-social), cross-border income tax (lt-cross-border)."
-version: 2.2
+version: 2.4
 jurisdiction: LT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Lithuania: VAT (2026) v2.2
+# Lithuania: VAT (2026) v2.4
 
 This skill sets out who must charge Lithuanian VAT (pridėtinės vertės mokestis, PVM), at what rate, and how to file and pay it for 2026. The law is the Law on VAT No. IX-751 (Pridėtinės vertės mokesčio įstatymas, PVMĮ), in its consolidated version in force from 1 July 2026 to 31 December 2026. Art. 19 (rates) is the same in the version in force from 1 January 2026: its last changes are laws XV-287 and XV-366 of June 2025. Fines and late payment interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
@@ -178,14 +179,14 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law on VAT No. IX-751, consolidated version from 1 July 2026 to 31 December 2026: art. 2(32), 19, 62(2), 71, 71-1, 71-2, 74-1, 76, 78, 84, 85, 86, 87(1), 88-1, 90(1), 95, 96 | https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr | 2026-10-24 |
-| VMI, reduced 9% VAT rate, "relevant until 2025-12-31", with the 2026 rates for each item | https://www.vmi.lt/evmi/lengvatinis-9-proc.-pvm-tarifas-19-str.- | 2026-10-24 |
-| VMI, i.SAF data submission and correction | https://www.vmi.lt/evmi/duomenu-teikimas-tikslinimas | 2026-10-24 |
-| VMI, VAT payers: answers KM0738 (when to apply for registration; decision within 3 working days) and KM3566 (registration when buying services from foreign platforms) | https://www.vmi.lt/evmi/pvm-moketojai | 2026-10-24 |
-| VMI, VAT payer registration, deregistration and data changes | https://www.vmi.lt/evmi/pvm-moketojo-registravimas-isregistravimas-duomenu-keitimas | 2026-10-24 |
+| Read for the 2026 rate of each reduced-rate item: VMI, reduced 9% VAT rate page (marked "relevant until 2025-12-31") | https://www.vmi.lt/evmi/lengvatinis-9-proc.-pvm-tarifas-19-str.- | 2026-10-24 |
+| Read for i.SAF data submission and correction: VMI page | https://www.vmi.lt/evmi/duomenu-teikimas-tikslinimas | 2026-10-24 |
+| Read for answers KM0738 (when to apply for registration; decision within 3 working days) and KM3566 (registration when buying services from foreign platforms): VMI, VAT payers | https://www.vmi.lt/evmi/pvm-moketojai | 2026-10-24 |
+| Read for VAT payer registration, deregistration and data changes: VMI page | https://www.vmi.lt/evmi/pvm-moketojo-registravimas-isregistravimas-duomenu-keitimas | 2026-10-24 |
 | Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 68(4), 96, 99, 139 to 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
-| Law on VAT No. IX-751, list of consolidated versions (2026-01-01, 2026-07-01 and 2027-01-01 versions and the amending laws) | https://www.e-tar.lt/portal/lt/legalActEditions/TAR.ED68997709F5 | 2026-10-24 |
-| VMI, late payment interest, answer KM2633 (0.027% a day from 1 August 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
+| Read for the list of consolidated versions (2026-01-01, 2026-07-01 and 2027-01-01) and the amending laws: Law on VAT No. IX-751, e-tar editions page | https://www.e-tar.lt/portal/lt/legalActEditions/TAR.ED68997709F5 | 2026-10-24 |
+| Read for answer KM2633 (0.027% a day from 1 August 2026): VMI, late payment interest | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
 Not yet confirmed: how VAT is computed on a supply that crossed the EUR 45,000 limit where the price was agreed without VAT and cannot be increased (on top of, or within, the price); the rate for accommodation booked and paid in 2025 but supplied in 2026 (VMI answer KM3670, title only read); the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing FR0600, FR0564 or i.SAF late (Code of Administrative Offences, not read); the Government list of extra domestic reverse charge cases under art. 96(1)(4); the exemptions in art. 20 to 40 and the zero-rate evidence rules (not read in detail); the OSS and IOSS rules and the EUR 10,000 distance sales limit; VAT refunds to foreign businesses (art. 116 to 119); and the PVMĮ version in force from 1 January 2027 (law XV-1036 of 18 June 2026 changes art. 78, 88-1 and others from 2027; not read in detail).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

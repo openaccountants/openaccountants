@@ -1,10 +1,10 @@
 ---
 name: paraguay-payroll
 description: "Paraguay payroll for private-sector employees in 2026: the two minimum wages of the year (G 2,899,048 a month to 30 June under Decreto N° 4122/2025 and G 3,044,000 from 1 July 2026 under Decreto N° 6225/2026 and Resolución MTESS N° 670/2026), the daily, hourly, night, part-time and apprentice minimums, working hours, overtime at 50%, night work at 30%, night overtime and holidays at 100%, the aguinaldo (13th salary, one twelfth of the year's pay, before 31 December, free of IPS and IRP), the family allowance (5% of the minimum wage per child), the payslip, permitted deductions, gross-to-net with the 9% IPS withholding, the employer's cost, and why a private employer withholds no income tax (IRP) from salaries. Also holidays, notice and the dismissal indemnity. Trigger on: Paraguay payroll, planilla de sueldos, salario mínimo 2026 Paraguay, aguinaldo, sueldo neto, horas extras Paraguay, bonificación familiar, asignación familiar, costo del empleado Paraguay. Out of scope: IPS rates in detail (paraguay-social-contributions), the employee's own IRP return (paraguay-income-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: PY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 type: computation
@@ -12,7 +12,7 @@ tier: 2
 domain: payroll
 ---
 
-# Paraguay payroll: minimum wage, overtime, aguinaldo and gross-to-net, 2026 v0.3
+# Paraguay payroll: minimum wage, overtime, aguinaldo and gross-to-net, 2026 v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -189,4 +189,4 @@ expected:
 
 Not yet confirmed: the text of Decreto 4122/2025 and Decreto 6225/2026 themselves (read through the MTESS resolution and news pages); the occupation-specific minimums in the annex of Resolución 670/2026; whether the hourly rate for overtime of a monthly worker on more than the minimum must use 30 days and 8 hours as for the minimum (the Code says only "salario convenido para la jornada ordinaria"); Labour Code fines for unpaid wages and the labour inspection procedure; whether any law after Ley 496/1995 changed the articles used here (the BACN texts are the original laws, not a consolidation; Ley 1416 and Ley 3384 change other articles); the next minimum-wage adjustment; whether the 2026 IPS contributions table on the IPS portal has been updated for the July minimum wage. The earlier skill's IRP rate table and G 80,000,000 threshold are moved to [paraguay-income-tax](paraguay-income-tax.md), which owns them.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

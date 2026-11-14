@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lv-cross-border"
   jurisdiction: "LV"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Latvia: cross-border tax for people and companies (2026) v0.1
+# Latvia: cross-border tax for people and companies (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the consolidated texts of the Corporate Income Tax Law, the Law On Personal Income Tax and the Law On Taxes and Fees published on likumi.lv, in the versions in force for 2026 (including the amendments of 3 December 2025 in force from 1 January 2026). It prepares working papers; it is not authority to file or pay.
 
@@ -63,26 +63,26 @@ A treaty can give a narrower definition; read the treaty article before relying 
 |---|---|---|---|
 | Corporate income tax rate on distributed and deemed distributed profit | 20% of the base; the taxable object is first divided by 0.8 | 2026 | [CIT Law ss. 3(1), 4(9)](https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums) |
 | Alternative rate on dividends of a company whose members are all individuals in the tax period in which the dividends are calculated (by choice) | 15%; object divided by 0.85; PIT of 6% withheld from the dividend. Covers calculated dividends only (s. 4(2)(1)(a)); deemed distributions stay at 20% after the 0.8 gross-up | 2026 (new, in force 1 January 2026) | CIT Law ss. 3(5), 4.2, 16(5); [PIT Law s. 15(5.1)](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
-| Withholding on fees for management and consulting services paid to a non-resident | 20% of the fee | 2026 | CIT Law s. 5(1)(1), (5) |
-| Withholding on payment for sale of Latvian real estate by a non-resident (includes shares in a company more than 50% of whose assets are Latvian real estate) | 3% of the payment | 2026 | CIT Law s. 5(1)(2), (2) |
-| Withholding on rent or lease of Latvian real estate paid to a non-resident | 5% of the payment | 2026 | CIT Law s. 5(1)(4) |
-| Withholding on all payments and dividends to persons in low-tax or no-tax jurisdictions (except goods and listed EU or EEA securities bought at market price) | 20% | 2026 | CIT Law s. 5(6) |
-| Withholding on interest and on intellectual property payments to persons in low-tax or no-tax jurisdictions | 20% each | 2026 | CIT Law s. 5(8) |
-| Payer that failed to withhold: its own extra CIT | base ÷ 0.8 × the withholding rate | 2026 | CIT Law s. 5(11) |
-| Non-resident's optional net-basis report on management fees, real estate sale or rent | 20% on income less proven costs; report within 12 months of the transaction | 2026 | CIT Law ss. 5(4), 17(17) |
-| Personal income tax rate, annual income up to the maximum social insurance contribution base | 25.5% | 2026 | PIT Law s. 15(2)(1) |
-| Personal income tax rate, annual income above that base | 33% | 2026 | PIT Law s. 15(2)(2) |
-| Additional rate on total annual income above EUR 200,000 | 3% | 2026 | PIT Law s. 15.1(1) |
-| PIT on capital income and capital gains | 25.5% | 2026 | PIT Law s. 15(5) |
-| PIT withheld from a non-resident individual's sale of Latvian real estate, where the payer withholds | 3% of the payment | 2026 | PIT Law ss. 3(3)(7.1), 15(7), 17(12) |
-| PIT on a non-resident artist's, athlete's or coach's income, and on author's fees for literary, scientific or artistic works, discoveries, inventions and industrial designs | 25.5% | 2026 | PIT Law ss. 3(3)(3), (12)(a), 15(7.1) |
-| PIT on other intellectual property payments to a non-resident individual | 5% | 2026 | PIT Law ss. 3(3)(12)(b), 15(8) |
-| PIT withheld by individuals from payments to low-tax or no-tax jurisdictions | 25.5% | 2026 | PIT Law s. 17(17) |
-| Optional rate for a foreign remote worker on a long-stay visa under Immigration Law s. 11(5), working for an employer or business registered in an OECD state | 15%, for 365 days from becoming resident | 2026 | PIT Law s. 15(19.2) |
+| Withholding on fees for management and consulting services paid to a non-resident | 20% of the fee | 2026 | CIT Law s. 5(1)(1), (5); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Withholding on payment for sale of Latvian real estate by a non-resident (includes shares in a company more than 50% of whose assets are Latvian real estate) | 3% of the payment | 2026 | CIT Law s. 5(1)(2), (2); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Withholding on rent or lease of Latvian real estate paid to a non-resident | 5% of the payment | 2026 | CIT Law s. 5(1)(4); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Withholding on all payments and dividends to persons in low-tax or no-tax jurisdictions (except goods and listed EU or EEA securities bought at market price) | 20% | 2026 | CIT Law s. 5(6); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Withholding on interest and on intellectual property payments to persons in low-tax or no-tax jurisdictions | 20% each | 2026 | CIT Law s. 5(8); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Payer that failed to withhold: its own extra CIT | base ÷ 0.8 × the withholding rate | 2026 | CIT Law s. 5(11); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Non-resident's optional net-basis report on management fees, real estate sale or rent | 20% on income less proven costs; report within 12 months of the transaction | 2026 | CIT Law ss. 5(4), 17(17); https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
+| Personal income tax rate, annual income up to the maximum social insurance contribution base | 25.5% | 2026 | PIT Law s. 15(2)(1); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| Personal income tax rate, annual income above that base | 33% | 2026 | PIT Law s. 15(2)(2); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| Additional rate on total annual income above EUR 200,000 | 3% | 2026 | PIT Law s. 15.1(1); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| PIT on capital income and capital gains | 25.5% | 2026 | PIT Law s. 15(5); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| PIT withheld from a non-resident individual's sale of Latvian real estate, where the payer withholds | 3% of the payment | 2026 | PIT Law ss. 3(3)(7.1), 15(7), 17(12); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| PIT on a non-resident artist's, athlete's or coach's income, and on author's fees for literary, scientific or artistic works, discoveries, inventions and industrial designs | 25.5% | 2026 | PIT Law ss. 3(3)(3), (12)(a), 15(7.1); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| PIT on other intellectual property payments to a non-resident individual | 5% | 2026 | PIT Law ss. 3(3)(12)(b), 15(8); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| PIT withheld by individuals from payments to low-tax or no-tax jurisdictions | 25.5% | 2026 | PIT Law s. 17(17); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
+| Optional rate for a foreign remote worker on a long-stay visa under Immigration Law s. 11(5), working for an employer or business registered in an OECD state | 15%, for 365 days from becoming resident | 2026 | PIT Law s. 15(19.2); https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli |
 | Permanent establishment through services | more than 30 days in any 6-month period | 2026 | [LTF s. 14(8)(3)](https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam) |
-| Individual residence day count | 183 days in any 12-month period starting or ending in the tax year | 2026 | LTF s. 14(2)(2) |
-| Late payment interest | 0.05% of the unpaid principal per day | 2026 | LTF s. 29(2) |
-| Penalty on tax understated, found in a tax audit | 20% if the understatement is 15% or less of the tax due; 30% if more; halved if conditions in s. 32(7) are met | 2026 | LTF s. 32(4), (5), (7) |
+| Individual residence day count | 183 days in any 12-month period starting or ending in the tax year | 2026 | LTF s. 14(2)(2); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Late payment interest | 0.05% of the unpaid principal per day | 2026 | LTF s. 29(2); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Penalty on tax understated, found in a tax audit | 20% if the understatement is 15% or less of the tax due; 30% if more; halved if conditions in s. 32(7) are met | 2026 | LTF s. 32(4), (5), (7); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
 
 ## The taxable base
 
@@ -240,8 +240,8 @@ likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) 
 
 Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); whether Latvia gives the ATAD article 5(2) exit-tax instalments anywhere outside the CIT Law and LTF section 24 (none found in those texts); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lv-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lv-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lv-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lv-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

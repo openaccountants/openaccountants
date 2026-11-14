@@ -1,13 +1,13 @@
 ---
 name: ma-social-contributions
-description: "Morocco social contributions for tax year 2026: CNSS, AMO and pension cover for self-employed workers (TNS), auto-entrepreneurs, CPU payers and those who hire. Covers the flat income base set by category decree, the multiples for traders, artisans and accounts-keeping individuals, registration, payment, refunds of over-paid contributions, and the employer and employee split. Use for CNSS auto-entrepreneur, AMO Maroc, cotisation CNSS indépendant, TNS, retraite TNS, couverture sociale. CNSS rates are the latest we could read and are marked unverified for 2026. Out of scope: payslips and IR on salaries (morocco-payroll), auto-entrepreneur tax (ma-auto-entrepreneur), CPU (ma-cpu)."
+description: "Morocco social contributions for tax year 2026, CNSS, AMO and pension cover for self-employed workers (TNS), auto-entrepreneurs, CPU payers and those who hire. Covers the flat income base set by category decree, the multiples for traders, artisans and accounts-keeping individuals, registration, payment and refunds of over-paid contributions. The 2026 TNS AMO and pension rates and SMIG could not be read on a Moroccan official page, so they are taken from the CNSS notice the client holds. Use for CNSS auto-entrepreneur, AMO Maroc, cotisation CNSS independant, TNS, retraite TNS, couverture sociale. Payslips and IR on salaries are in morocco-payroll, auto-entrepreneur tax in ma-auto-entrepreneur, CPU in ma-cpu."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ma-social-contributions"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Morocco social contributions, tax year 2026
@@ -24,14 +24,11 @@ Morocco is extending cover to all workers under framework Law 09-21. Three group
 
 ## Rates, bands and thresholds
 
+The multiples below come from the category decrees as published in the Bulletin officiel. The value they multiply is SMIG times the normal annual non-agricultural hours.
+
 | Item | Rate or amount | Conditions | Year | Source URL |
 |---|---|---|---|---|
-| TNS AMO, active | unverified for 2026: 6.37% | On flat income | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| TNS pension | unverified for 2026: 10% | On flat income | 2024 | same |
-| TNS AMO, pensioners | unverified for 2026: 4.52% of base pensions | Taken by the payer of the pension | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| SMIG, non-agricultural | unverified for 2026: MAD 16.29 an hour, 3,111.39 a month for 191 hours | Rises of 5% agreed for January 2025 and January 2026. Decree text not read. This is the value the multiples below use | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Flat income, general band | unverified for 2026: 1.75 to 2.75 times SMIG | CLEISS summary. The decrees below show other multiples for some categories, so use the decree | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Traders, artisans keeping accounts, simplified net result | 1 times the value | Value = SMIG times normal annual non-agricultural hours. Decree 2-21-751 art. 4 as amended by 2-22-859 | 2026 | https://www.sgg.gov.ma/BulletinOfficiel.aspx |
+| Traders, artisans keeping accounts, simplified net result | 1 times the value | Value = SMIG times normal annual non-agricultural hours. Decree 2-21-751 art. 4 as amended by 2-22-859 | 2026 | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf |
 | Same, real net result, profit to MAD 50,000 | 2 times | Decree 2-22-859, for tax returns filed from 1 January 2023. Replaces the 3.2 and 6 scale of 2-22-338 | 2026 | same |
 | Same, profit 50,001 to 100,000 | 3 times | Same. The BO text reads "ne dépassent pas 50.000" here, a misprint: decree 2-22-858 has "supérieurs à" | 2026 | same |
 | Same, profit 100,001 to 150,000 | 4 times | Same | 2026 | same |
@@ -44,22 +41,10 @@ Morocco is extending cover to all workers under framework Law 09-21. Three group
 | Same, profit 150,001 to 200,000 | 5 times | Same | 2026 | same |
 | Same, profit above 200,000 | 6 times | Same | 2026 | same |
 | Artisanal fishing-boat owners | 0.75 times the value | Decree 2-22-337 art. 4; not those under the employee scheme | 2026 | same |
-| Pension base opt-up | Higher base at registration; change once a year; ask 60 days before it takes effect | Pension only (CLEISS); return to the category base is also allowed in the yearly change | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Refund after over-estimate | Within 3 months of CNSS receiving the tax return from the DGI | Where 6 times was charged and the return shows less | 2026 | https://www.sgg.gov.ma/BulletinOfficiel.aspx |
+| Refund after over-estimate | Within 3 months of CNSS receiving the tax return from the DGI | Where 6 times was charged and the return shows less | 2026 | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf |
 | Auto-entrepreneur start | First day of the month after the month the first turnover return is due | Decree 2-21-928 art. 2 as amended. Registered by 31 Dec 2021: 1 Feb 2022 | 2026 | same |
-| Short-term benefits, sickness, maternity, death, job loss, employer | unverified for 2026: 1.05% (of which job-loss indemnity 0.38%) | Capped at MAD 6,000 a month | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Same branch, employee | unverified for 2026: 0.52% (of which job-loss indemnity 0.19%) | Capped at MAD 6,000 | 2024 | same |
-| Pension, employer | unverified for 2026: 7.93% | Capped at MAD 6,000 | 2024 | same |
-| Pension, employee | unverified for 2026: 3.96% | Capped at MAD 6,000 | 2024 | same |
-| Family benefits, employer only | unverified for 2026: 6.40% | No cap | 2024 | same |
-| AMO base, employer | unverified for 2026: 2.26% | No cap. Employers with group medical cover from before 1 March 2006 pay only the solidarity rate, on a yearly application | 2024 | same |
-| AMO solidarity, employer | unverified for 2026: 1.85% | No cap | 2024 | same |
-| AMO, employee | unverified for 2026: 2.26% | No cap | 2024 | same |
-| Vocational training tax (TFP), employer only | unverified for 2026: 1.60% | No cap | 2024 | same |
-| Total | unverified for 2026: employer 21.09%, employee 6.74%, together 27.83% | | 2024 | same |
-| Employee ceiling | unverified for 2026: MAD 6,000 a month | Capped branches only | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
 
-The old table figures for auto-entrepreneurs (base 50% of services turnover, 20% of commercial turnover, MAD 300 a quarter minimum, range 1,200 to 14,400, T1 to T8 brackets, 3-month AMO waiting period) could not be read at source. They are on the last line of Sources. Do not quote them as settled and never invent a bracket amount.
+**Not stated here, and why.** The TNS AMO rate, the TNS pension rate, the pensioner AMO rate, the 2026 SMIG and the general flat-income band could not be read on a Moroccan official page on 14 Nov 2026 (cnss.ma does not answer; the decrees read fix the base, not the rate). Take the rate from the CNSS notice or statement the client holds and say so. The employer and employee rates on salaries belong to `morocco-payroll` (one figure, one home), which has the same gap. The old auto-entrepreneur figures (base 50% of services turnover, 20% of commercial turnover, MAD 300 a quarter minimum, range 1,200 to 14,400, T1 to T8 brackets, 3-month AMO waiting period) could not be read at source either. All are on the last line of Sources. Do not quote them as settled and never invent a bracket amount.
 
 ## The base
 
@@ -81,11 +66,11 @@ AMO and pension are separate schemes with separate decrees. Confirm the category
 
 **Auto-entrepreneurs.** 1. Registration in the national register brings CNSS affiliation. 2. Contributions go with the turnover return, including nil returns; dates in `ma-auto-entrepreneur`.
 
-**Employers.** 1. Register the business with CNSS, get the affiliation number. 2. Each month, file on Damancom and pay, taking the employee share from pay. Steps and the unverified deadline are in `morocco-payroll`.
+**Employers.** 1. Register the business with CNSS, get the affiliation number. 2. Each month, file on Damancom and pay, taking the employee share from pay. Steps, and the deadline still to confirm, are in `morocco-payroll`.
 
 ## Penalties and interest
 
-No official text on CNSS surcharges for TNS or auto-entrepreneurs was read, so no figure is given here. For employers see the unverified row in `morocco-payroll`. Arrears and loss of benefit rights go to a Moroccan expert-comptable.
+No official text on CNSS surcharges for TNS or auto-entrepreneurs was read, so no figure is given here. For employers see `morocco-payroll`, which has no confirmed figure either. Arrears and loss of benefit rights go to a Moroccan expert-comptable.
 
 ## Cross-border points
 
@@ -93,17 +78,19 @@ Work abroad, foreign self-employed people in Morocco, detachment and social secu
 
 ## Two worked examples that recompute
 
-Rates are those marked unverified above. Bases are inputs, not 2026 SMIG figures.
+The multiples are from the decrees above. The AMO and pension rates are inputs taken from the client's CNSS notice, because no 2026 rate is confirmed here; the 6.37% and 10% used below are the last rates seen (CLEISS table at 1 January 2024) and are illustrations only. The monthly value is an input, not a 2026 SMIG figure.
 
-**Example 1: TNS with a monthly flat income of MAD 6,000 from the category decree.** AMO 382.20, pension 600, monthly 982.20, or 2,946.60 a quarter.
+**Example 1: TNS with a monthly flat income of MAD 6,000 from the category decree, AMO rate 6.37% and pension rate 10% from the CNSS notice.** AMO 382.20, pension 600, monthly 982.20, or 2,946.60 a quarter.
 
 ```oa-check
 name: TNS on flat income 6000
 inputs:
   base: 6000
+  amo_rate: 0.0637
+  pension_rate: 0.10
 steps:
-  - amo: base * 0.0637
-  - pension: base * 0.10
+  - amo: base * amo_rate
+  - pension: base * pension_rate
   - monthly: amo + pension
   - quarter: monthly * 3
 expected:
@@ -111,7 +98,7 @@ expected:
   quarter: 2946.60
 ```
 
-**Example 2, a decision: an individual on real net result, charged at 6 times, whose return shows profit of MAD 120,000. Should they chase CNSS or wait?** With a monthly value of 3,000 as a stand-in, 6 times costs 2,946.60 a month and 4 times costs 1,964.40. The gap is 982.20 a month. CNSS refunds without a request within 3 months of getting the return from the DGI, so file the return first. If the refund has not arrived after that, follow up.
+**Example 2, a decision: an individual on real net result, charged at 6 times, whose return shows profit of MAD 120,000 (the 4 times band, 100,001 to 150,000). Should they chase CNSS or wait?** With a monthly value of 3,000 as a stand-in and a combined rate of 16.37% from the notice, 6 times costs 2,946.60 a month and 4 times costs 1,964.40. The gap is 982.20 a month. CNSS refunds without a request within 3 months of getting the return from the DGI, so file the return first. If the refund has not arrived after that, follow up.
 
 ```oa-check
 name: Six times against four times
@@ -128,11 +115,11 @@ expected:
   refund_month: 982.20
 ```
 
-**Case 3: owner hires an assistant at MAD 8,000.** Employee: capped 268.80 plus AMO 180.80. Employer: capped 8.98% of 6,000 is 538.80, family 512, AMO 328.80, TFP 128: 1,507.60. Filed monthly. The owner's own cover stays on its own track.
+**Case 3: owner hires an assistant at MAD 8,000.** The employee and employer shares run on real salary at the rates on the employer's CNSS statement, computed in `morocco-payroll`. The owner's own cover stays on its own track.
 
 Rules for every answer in this skill:
 
-- Do not apply the MAD 6,000 ceiling to AMO, family benefits or TFP.
+- Do not apply the CNSS salary ceiling to AMO, family benefits or TFP.
 - Do not mix TNS or auto-entrepreneur self-cover with the employer and employee computation. A person who hires has both, computed separately.
 - Do not assume that no income means no contribution.
 - Do not advise on payroll mechanics, IR withholding, VAT or company forms here. Route to `morocco-payroll`, `morocco-professional-income-tax` or `morocco-vat`.
@@ -140,10 +127,10 @@ Rules for every answer in this skill:
 - If the activity mix of an auto-entrepreneur is unknown, ask. Do not choose a base.
 - If the category or flat income is unknown, give the formula and ask for the decree. Do not guess the band.
 - If the person has any staff, assume employer CNSS registration and the monthly Damancom filing are due, separately from the owner's own cover.
-- Whether a category is in AMO only or in both AMO and pension decides the rate: AMO alone is 6.37%, both are 16.37%, on the unverified rates above. Check which applies before quoting a total.
+- Whether a category is in AMO only or in both AMO and pension decides the rate: AMO alone or AMO plus pension changes the total rate on the notice. Check which applies before quoting a total.
 - Present every computation with its assumptions and open items, so the reader can see what still rests on an unverified rate.
 
-**Case 4: test answers.** Employee on MAD 10,000: only the capped branches stop at 6,000. CPU payer who hires: own CPU cover plus employer CNSS. Auto-entrepreneur at nil turnover: still files; amount from the portal.
+**Case 4: test answers.** Employee on MAD 10,000: only the capped branches stop at the ceiling. CPU payer who hires: own CPU cover plus employer CNSS. Auto-entrepreneur at nil turnover: still files; amount from the portal.
 
 ## Ask the client first
 
@@ -160,12 +147,10 @@ Escalate to a Moroccan expert-comptable: unclear roll-out or start date, opting 
 
 | Source | URL | Read on |
 |---|---|---|
-| Bulletin officiel 7376, 6 Feb 2025 (French translation), decrees 2-22-208, 2-22-337, 2-22-338, 2-22-858, 2-22-859 read (some amended text elided in the BO, so the original 2-21-751 was not seen); found from the listing page, PDF held locally | https://www.sgg.gov.ma/BulletinOfficiel.aspx | 2026-11-01 |
-| CLEISS, Les cotisations au Maroc, table at 1 January 2024 (French public body, not a Moroccan source) | https://www.cleiss.fr/docs/cotisations/maroc.html | 2026-11-01 |
-| cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
+| Bulletin officiel 7376, 6 Feb 2025 (French translation), SGG. Read for decrees 2-22-208, 2-22-337 (fishing-boat owners 0.75 times), 2-22-338, 2-22-858 and 2-22-859 (the 1 to 6 times multiples for accounts-keeping traders, artisans and individuals, the 2 times start base, the 6 times default and the refund rule), and the registration and monthly payment articles (some amended text elided in the BO, so the original 2-21-751 was not seen) | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf | 2026-11-14 |
 
-Not yet confirmed: every rate and the ceiling for 2026; SMIG for 2026 (reported at MAD 17.92 an hour by press, decree text not read) and the annual hours; whether Finance Law 2026 or later decrees changed any multiple; decree list per profession and each profession's start date (doctors, pharmacists, dentists, midwives, physiotherapists, nurses, opticians, notaries, adouls, lawyers, bailiffs, accountants, architects, engineers); TNS pensioner rate; TNS portal steps and penalty; auto-entrepreneur 50% and 20% bases, MAD 300 minimum, 1,200 to 14,400 range, T1 to T8 brackets, 3-month AMO waiting period, decree 2.21.477 reference; pension vesting at 3,240 days; decree numbers 2-18-622 and 2-18-623 as the rate source.
+Not yet confirmed: the 2026 TNS AMO rate, TNS pension rate and pensioner AMO rate (last seen 6.37%, 10% and 4.52% on the French CLEISS table at 1 January 2024, not a Moroccan source; cnss.ma did not answer on 14 Nov 2026); the employee salary rates and ceiling (see `morocco-payroll`); SMIG for 2026 (reported at MAD 17.92 an hour by press, decree text not read) and the annual hours; the general flat-income band (1.75 to 2.75 times SMIG on CLEISS); the pension base opt-up (higher base at registration, one change a year, 60 days notice, on CLEISS only); whether Finance Law 2026 or later decrees changed any multiple; decree list per profession and each profession's start date (doctors, pharmacists, dentists, midwives, physiotherapists, nurses, opticians, notaries, adouls, lawyers, bailiffs, accountants, architects, engineers); TNS portal steps and penalty; auto-entrepreneur 50% and 20% bases, MAD 300 minimum, 1,200 to 14,400 range, T1 to T8 brackets, 3-month AMO waiting period, decree 2.21.477 reference; pension vesting at 3,240 days; decree numbers 2-18-622 and 2-18-623 as the rate source.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

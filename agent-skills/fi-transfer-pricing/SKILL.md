@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-transfer-pricing"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Finland transfer-pricing documentation v0.7
+# Finland transfer-pricing documentation v0.9
 
 ## Who this applies to
 
@@ -26,12 +26,12 @@ Section 31 covers direct/indirect majority capital or votes, majority appointmen
 
 | Item | 2026 rule | Official source |
 |---|---|---|
-| SME employee condition | Fewer than 250 employees; this and the other SME conditions must all hold. | [Act, section 14a][law] |
-| SME financial condition | Turnover at most EUR 50 million **or** balance-sheet total at most EUR 43 million; apply the Commission recommendation's independence and aggregation rules too. | [Act, section 14a][law] |
-| Documentation simplification | At most EUR 500,000 of annual arm's-length transactions per counterparty; specified Master/Local File information is relieved, not the pricing obligation. | [Act, section 14b(5)][law] |
-| Documentation request | 60 days, subject to the six-month earliest presentation rule. | [Act, section 14c][law] |
-| Supplement request | 90 days. | [Act, section 14c][law] |
-| Documentation penalty maximum | EUR 25,000 for the specified failures; separate from substantive tax. | [Act, sections 32 and 32a][law] |
+| SME employee condition | Fewer than 250 employees; this and the other SME conditions must all hold. | [Act, section 14a](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| SME financial condition | Turnover at most EUR 50 million **or** balance-sheet total at most EUR 43 million; apply the Commission recommendation's independence and aggregation rules too. | [Act, section 14a](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Documentation simplification | At most EUR 500,000 of annual arm's-length transactions per counterparty; specified Master/Local File information is relieved, not the pricing obligation. | [Act, section 14b(5)](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Documentation request | 60 days, subject to the six-month earliest presentation rule. | [Act, section 14c](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Supplement request | 90 days. | [Act, section 14c](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Documentation penalty maximum | EUR 25,000 for the specified failures; separate from substantive tax. | [Act, sections 32 and 32a](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
 
 The detailed guidance defines the SME exclusion using all three requirements: fewer than 250 employees; turnover at most EUR 50 million **or** balance sheet at most EUR 43 million; and compliance with the Commission recommendation's SME criteria. Group and linked/partner-enterprise relationships matter. A small Finnish subsidiary cannot determine its status using its standalone figures alone. [Detailed guidance, section 4.3][detailed]
 
@@ -192,8 +192,8 @@ Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustmen
 [services]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-of-sale-of-services/
 [loans]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

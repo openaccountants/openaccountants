@@ -1,295 +1,231 @@
 ---
 name: us-sales-tax
-description: "Use this skill whenever asked about United States sales tax, use tax, sales tax nexus, multi-state tax compliance, sales tax returns, exemption certificates, taxability of goods or services, economic nexus, or any request involving US state-level consumption taxes. Trigger on phrases like \"sales tax\", \"use tax\", \"nexus\", \"Wayfair\", \"sales tax return\", \"exemption certificate\", \"resale certificate\", \"taxability\", \"sales tax rate\", \"marketplace facilitator\", \"Streamlined Sales Tax\", \"SST\", or any request involving US state sales and use tax filing, classification, or compliance. This skill contains the complete US sales and use tax framework. ALWAYS read this skill before touching any US sales tax work."
+description: "The US sales and use tax framework for tax year 2026, read before any state sales tax work. Covers how sales tax and use tax fit together, physical and economic nexus after Wayfair, marketplace facilitators, the five states with no general sales tax, the statewide base rate of each of the 45 sales tax states and DC (each linked to that state's own source), sourcing, exemption and resale certificates, taxability patterns for SaaS, food, clothing and digital goods, Streamlined Sales Tax registration and voluntary disclosure. Trigger on \"sales tax\", \"use tax\", \"nexus\", \"Wayfair\", \"resale certificate\", \"exemption certificate\", \"sales tax rate\", \"marketplace facilitator\", \"Streamlined Sales Tax\". Load the state's own sales tax skill for that state's base and filing, and us-sales-tax-nexus-50-state-matrix for thresholds."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-sales-tax"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# US Sales Tax
+# US sales and use tax: the framework, tax year 2026
 
-## United States Sales and Use Tax Framework Skill v2.0
+> **Source-cited draft.** Built from each state's own revenue department page or statute for its base rate, and from the 13 November 2026 state sales tax skills where they exist, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Rates and thresholds
+**Answer first.** There is no federal sales tax. 45 states and DC charge a statewide sales tax; Alaska, Delaware, Montana, New Hampshire and Oregon do not (see `no-sales-tax-states`). Each state sets its own base, rate, nexus test and returns, and most add local taxes. A seller must collect in a state once it has physical presence or passes that state's economic nexus threshold. A buyer owes use tax at the same rate when no sales tax was charged. Never carry one state's rule into another.
 
-Reviewed against the cited tax authorities by a licensed accountant on 2026-06-03.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
+## Scope and who this is for
 
-### US Sales Tax
+In scope: the shared US framework and the statewide base rate of every sales tax state for 2026. Out of scope, and where it goes:
 
-- **States w/ tax** — 45 states + DC impose a statewide sales tax; 5 (NOMAD) do not  _(State statutes; Streamlined Sales Tax.)_
-- **IL rate** — 6.25% state  _(35 ILCS 120/2-10.)_
-- **Nexus most** — $100,000 is the common post-Wayfair economic-nexus sales threshold; the '200 transactions' prong has been dropped by many states (and some, e.g., CA/TX, never used it). Verify per state.  _(South Dakota v. Wayfair; state statutes.)_
-- **CA/TX** — CA and TX economic-nexus threshold = $500,000 (no transaction-count test)  _(Cal. RTC 6203; Texas Comptroller Rule 3.286.)_
-
-## Section 1 -- Quick reference
-
-**Quick reference**
-
-| Field | Value |
+| Topic | Skill |
 | --- | --- |
-| Jurisdiction | United States of America |
-| Tax type | Sales and Use Tax (state-level; no federal equivalent) |
-| States with general sales tax | 45 states + DC |
-| States with NO general sales tax | Alaska (AK), Delaware (DE), Montana (MT), New Hampshire (NH), Oregon (OR) |
-| Key federal precedent | South Dakota v. Wayfair, Inc., 585 U.S. ___ (2018) |
-| Industry body | Streamlined Sales Tax Governing Board (SSTGB) |
-| Approximate tax jurisdictions | ~13,000 distinct (state + county + city + special district) |
-| Typical state rate range | 2.9% (Colorado) -- 7.25% (California) |
-| Maximum combined rates | 10%+ in some jurisdictions |
-| Federal framework skill | This IS the framework skill |
-| Skill version | 2.0 |
+| Economic nexus threshold of each state | `us-sales-tax-nexus-50-state-matrix` |
+| The five states with no general sales tax | `no-sales-tax-states` |
+| A state's own base, local rates, exemptions and returns | that state's sales tax skill (for example `texas-sales-tax`, `california-sales-tax`, `ny-sales-tax`, `wa-sales-tax`) |
+| State income tax nexus for remote sellers | `us-pl-86-272-income-tax-nexus` |
 
-### Required inputs for multi-state analysis
+Refused outright: customs duties (R-US-1), federal excise taxes on fuel, alcohol, tobacco and firearms (R-US-2), and property tax (R-US-3).
 
-**Required inputs for multi-state analysis**
+## Ask the client first
 
-| # | Question | Why it matters |
+1. Which states do you sell into, and which do you ship from? (Which state skills to load; origin or destination sourcing.)
+2. What do you sell: goods, services, digital goods, SaaS? (Taxability differs by state.)
+3. Sales in dollars and number of transactions per state, by year and by month. (Economic nexus.)
+4. Where do you or related companies have employees, offices, warehouses or inventory, including marketplace fulfilment centres? (Physical nexus.)
+5. How much goes through marketplaces such as Amazon, eBay, Etsy or Walmart? (Facilitators collect on those sales.)
+6. Are you registered anywhere already, and since when?
+7. Do your buyers give you resale or exemption certificates?
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+Statewide base rate only. Local rates are added in most states; the state's own skill or rate lookup gives the combined rate for an address.
+
+| State | Statewide base rate, 2026 | Source |
 | --- | --- | --- |
-| 1 | Which states do you sell into? | Determines which state skills to load |
-| 2 | What do you sell (TPP, services, digital goods)? | Taxability varies dramatically by state |
-| 3 | Annual revenue by state? | Determines economic nexus in each state |
-| 4 | Transaction counts by state? | Some states use transaction thresholds |
-| 5 | Physical presence in which states? | Creates nexus independent of economic thresholds |
-| 6 | Use marketplace facilitators? | Facilitators collect in most states |
-| 7 | Ship from which locations? | Affects sourcing rules (origin vs. destination) |
+| Arizona (transaction privilege tax, retail) | 5.6% (derived: 5% plus the 0.6% increment, both in words on the page) | [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm), [A.R.S. 42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) |
+| Arkansas | 6.5% | [Arkansas 2026 Tax Handbook, section 1.7](https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly%2F2027%2FSummary+Budget+Manuals%2F2026+Tax+Handbook.pdf) |
+| California | 7.25% | [CDTFA, rate description](https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm) |
+| Connecticut | 6.35% | [CT DRS, sales tax information](https://portal.ct.gov/drs/sales-tax/tax-information) |
+| District of Columbia | 6% | [DC OTR, sales and use tax FAQ](https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs) |
+| Florida | 6% | [Florida DOR, sales tax](https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx) |
+| Georgia | 4% | [Georgia DOR, rate chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download) |
+| Hawaii (general excise tax) | 4% | [Hawaii DOTAX, GET brochure](https://files.hawaii.gov/tax/legal/brochures/GE_brochure-25.pdf) |
+| Idaho | 6% | [Idaho State Tax Commission, sales and use tax guide](https://tax.idaho.gov/taxes/sales-use/online-guide/) |
+| Illinois (general merchandise) | 6.25% | [IDOR PIO-115](https://tax.illinois.gov/research/publications/pio-115.html) |
+| Indiana | 7% | [Indiana DOR, sales tax](https://www.in.gov/dor/business-tax/sales-tax/) |
+| Iowa | 6% | [Iowa DOR, sales and use tax guide](https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/sales-use-tax-guide) |
+| Kansas | 6.5% | [K.S.A. 79-3603](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/) |
+| Kentucky | 6% | [Kentucky DOR, sales and use tax](https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx) |
+| Louisiana | 5% | [Louisiana DOR, general sales and use tax](https://revenue.louisiana.gov/businesses/general-sales-and-use-taxes/general-sales-use-tax) |
+| Maine (general sales) | 5.5% | [Maine Revenue Services, rates and due dates](https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates) |
+| Maryland | 6% (6 cents for each exact dollar) | [Md. Tax-General 11-104](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false) |
+| Massachusetts | 6.25% | [Mass. DOR, sales and use tax guide](https://www.mass.gov/guides/sales-and-use-tax) |
+| Michigan | 6% | [Michigan Treasury, sales and use tax](https://www.michigan.gov/taxes/business-taxes/sales-use-tax) |
+| Minnesota | 6.875% (derived: 6.5% plus the 0.375% constitutional tax) | [Minn. Stat. 297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
+| Mississippi (general retail) | 7% | [Mississippi DOR, sales tax rates](https://www.dor.ms.gov/business/sales-use-tax/sales-tax-rates) |
+| Missouri | 4.225% | [Missouri DOR, sales and use tax](https://dor.mo.gov/taxation/business/tax-types/sales-use/) |
+| Nebraska | 5.5% | [Nebraska DOR, sales and use tax](https://revenue.nebraska.gov/businesses/sales-and-use-tax) |
+| Nevada | 6.85% | [Nevada Department of Taxation, sales and use tax](https://tax.nv.gov/tax-types/sales-use-tax/) |
+| New Jersey | 6.625% | [NJ Division of Taxation, sales tax rate history](https://www.nj.gov/treasury/taxation/salestax.shtml) |
+| New Mexico (gross receipts tax, state part) | 4.875% | [New Mexico TRD, FYI-105](https://realfile.tax.newmexico.gov/FYI-105.pdf) |
+| New York | 4% | [NY Tax Department, sales tax rates](https://www.tax.ny.gov/bus/st/rates.htm) |
+| North Carolina | 4.75% | [N.C.G.S. 105-164.4(a)](https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-164.4.html) |
+| North Dakota | 5% | [N.D.C.C. 57-39.2-02.1](https://ndlegis.gov/cencode/t57c39-2.pdf) |
+| Ohio | 5.75% | [Ohio DOT, sales and use tax](https://tax.ohio.gov/business/sales-and-use-tax) |
+| Pennsylvania | 6% | [Pennsylvania DOR, sales, use and hotel occupancy tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax) |
+| Rhode Island | 7% | [RI Division of Taxation, sales and use tax](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax) |
+| South Carolina | 6% | [SCDOR, sales tax](https://dor.sc.gov/sales-use-tax-index/sales-tax) |
+| South Dakota | 4.2% (in words on the page) | [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html) |
+| Tennessee | 7% | [Tennessee DOR, sales and use tax](https://www.tn.gov/revenue/taxes/sales-and-use-tax.html) |
+| Texas | 6.25% | [Texas Comptroller, sales and use tax](https://comptroller.texas.gov/taxes/sales/) |
+| Vermont | 6% | [32 V.S.A. 9771](https://legislature.vermont.gov/statutes/section/32/233/09771) |
+| Virginia (combined state and statewide local rate, outside the regions with extra regional tax) | 5.3% | [Virginia Tax, retail sales and use tax](https://www.tax.virginia.gov/retail-sales-and-use-tax) |
+| Washington | 6.5% (in words on the page) | [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020) |
+| West Virginia | 6% | [West Virginia Tax Division, sales and use tax](https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx) |
+| Wisconsin | 5% | [Wisconsin DOR, tax rates FAQ](https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx) |
+| Wyoming | 4% | [Wyo. Stat. 39-15-104](https://wyoleg.gov/statutes/compress/title39.pdf) |
 
-### Refusal catalogue
+Alabama, Colorado, Oklahoma and Utah: base rate not confirmed for this version (see "Not yet confirmed:"). Use the state's own skill or revenue page.
 
-- **R-US-1 -- Import duties and customs** — Federal customs duties are outside scope. Refer to customs broker.
-- **R-US-2 -- Excise taxes** — Federal excise taxes (fuel, alcohol, tobacco, firearms) are separate. Outside scope.
-- **R-US-3 -- Property tax** — Real and personal property taxes are separate. Outside scope.
+### The framework, in order
 
-## Section 3 -- Transaction pattern library (cross-state reference)
+1. **Sales tax or use tax.** Sales tax is collected by the seller at the sale. Use tax is owed by the buyer when no sales tax was collected, at the same rate. One or the other is due on a transaction, never both. Most states credit sales tax paid to another state against their use tax (Michigan, for example: a $1,000 item with 4% paid elsewhere owes 2% Michigan use tax; see `mi-sales-tax`).
+2. **Nexus.** A seller must register where it has physical nexus (employees, offices, inventory, property, representatives, including inventory in a marketplace warehouse) or economic nexus. Since *South Dakota v. Wayfair* (2018) every sales tax state and DC has an economic nexus rule; the threshold, the period and which sales count differ by state (see `us-sales-tax-nexus-50-state-matrix`). Affiliate and click-through rules can still create nexus in some states.
+3. **Marketplace facilitators.** Every sales tax state and DC requires marketplace facilitators to collect on the sales they facilitate. The seller still files for its direct sales and, in some states, must register once its total including marketplace sales passes the threshold.
+4. **The tax base.** Sales tax mainly applies to retail sales of tangible personal property. Services, digital goods and SaaS are taxed differently in each state: check the state skill.
+5. **Sourcing.** Most states source an interstate sale to the delivery address (destination). Some source intrastate sales to the seller's location (origin). Check the state skill.
+6. **Rate.** State base rate (table above) plus any local rates for the sourced address.
+7. **Certificates.** A sale for resale, or to an exempt buyer, is exempt only with a valid certificate in the form the state accepts, kept on file.
+8. **Registration and returns.** Each state has its own registration and return. Streamlined Sales Tax (SST) member states can be registered at once through the SST registration system ([Streamlined Sales Tax Governing Board](https://www.streamlinedsalestax.org/Shared-Pages/faqs/faqs---about-streamlined)).
+9. **Past exposure.** Most states offer voluntary disclosure agreements, usually with a penalty waiver and a limited lookback. Terms differ by state: refer.
 
-This table provides the default taxability pattern across US states. Always verify with the state-specific skill.
+### Taxability patterns to check
 
-### 3.1 SaaS / cloud software
+These are starting points only. They were not re-read state by state for 2026: confirm in the state's own skill before advising.
 
-**SaaS taxability by state group**
-
-| State group | SaaS taxable? |
+| Item | Pattern |
 | --- | --- |
-| TAXABLE: NY, TX, WA, PA, CT, OH, SC, TN, UT, SD, ND, HI, NM, WV, RI, DC, AZ, IA, KY, MS, NE | Yes |
-| NOT TAXABLE: CA, IL, CO, GA, MO, VA, MN, NC, MI, OK, OR, IN, WI, AR, KS, ME, VT | No or unclear |
-| 20% EXEMPT: TX | Data processing services 80% taxable |
+| SaaS | Taxed in some states and not in others (California treats hosted software as not a sale of goods, per `california-sales-tax`; Illinois refers SaaS, per `illinois-sales-tax`). Never assume one answer |
+| Grocery food | Exempt in most states; taxed at a reduced rate in some (Mississippi 5% on qualifying groceries, per `ms-sales-tax`; Virginia 1% statewide, per [Virginia Tax](https://www.tax.virginia.gov/retail-sales-and-use-tax)); Arkansas state rate 0% from 1 January 2026 with local tax remaining, per `ar-sales-tax` |
+| Clothing | Taxable in most states; exempt or partly exempt in some (Massachusetts exempts up to $175 per item, per [Mass. DOR](https://www.mass.gov/guides/sales-and-use-tax)) |
+| Digital goods | Varies widely; check the state skill |
+| Professional services | Not taxed in most states; broadly taxed in a few (Hawaii GET and New Mexico GRT reach most services) |
+| Manufacturing equipment | Exempt or partly exempt in most states |
 
-### 3.2 Food (grocery, unprepared)
+## Boundary and exception table
 
-**Food taxability by treatment**  _(https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html)_
-
-| Treatment | States |
+| Situation | Treatment |
 | --- | --- |
-| EXEMPT | Most states (CA, NY, FL, TX, PA, OH, NJ, MA, etc.) |
-| TAXABLE at reduced rate | IL (state 1% eliminated January 1, 2026; local 1% only where a municipality or county imposes it), VA (1%), AR (state 0% from 01/01/2026; local tax only), MO (1.225%), TN (4%), KS (varying) |
-| FULLY TAXABLE | AL (reduced state food rate: 2 percent from September 1, 2025), MS (groceries at 5%), SD, OK (local only; state rate on food and food ingredients 0% from August 29, 2024), HI |
+| Seller ships to all 50 states | Test nexus state by state; never use one national total |
+| Seller has inventory in an Amazon warehouse | Physical nexus in that state, whatever the sales |
+| Oregon or other no-sales-tax seller ships elsewhere | Collects where it has nexus |
+| Drop shipment (seller in A, supplier in B, buyer in C) | Depends on nexus of each party and the certificates given: check state C's rules; refer if material |
+| Marketplace sales plus own website | Facilitator collects on marketplace sales; the seller collects on direct sales once it has nexus |
+| Buyer charged no tax by a remote seller | Buyer owes use tax |
+| Exempt sale with no certificate | Treat as taxable until a valid certificate is on file |
+| Past sales in a state where nexus existed and nothing was filed | Voluntary disclosure: refer |
 
-### 3.3 Clothing
+### Defaults when a fact is missing
 
-**Clothing taxability by treatment**  _(https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm)_
-
-| Treatment | States |
+| Missing fact | Default, and flag it |
 | --- | --- |
-| EXEMPT (all clothing) | PA, NJ, MN |
-| EXEMPT under threshold | NY (under $110/item; state 4% only, local tax applies unless the county or city elects the exemption), MA (under $175/item), VT (under $110), RI (under $250) |
-| FULLY TAXABLE | CA, TX, FL, IL, WA, OH, GA, NC, and most other states |
-| Holiday exemption only | TX, FL, and several other states with temporary sales tax holidays |
+| Product type | Treat as taxable tangible goods until classified |
+| Delivery address | Do not choose a rate; ask |
+| Marketplace share of sales | Treat all as direct for the nexus count; ask |
+| Certificate on file | None; tax applies |
 
-### 3.4 Digital goods (downloads)
+## Worked cases
 
-**Digital goods taxability by state group**
+**Case 1, Massachusetts clothing.** A Massachusetts store sells a $200 jacket. The first $175 is exempt; tax is 6.25% on the $25 excess = $1.5625, rounded to $1.56. A $150 shirt is fully exempt.
 
-| State group | Taxable? |
-| --- | --- |
-| TAXABLE: WA, NY, TX, NJ, CT, TN, UT, WI, KY, NE, SD, ND, HI, NM | Yes |
-| NOT TAXABLE: CA (streaming), IL (streaming), GA, MO, OR | Generally no |
+```oa-check
+name: Massachusetts 200 jacket, 175 clothing exemption (2026)
+inputs:
+  price: 200
+  exempt_amount: 175
+  rate: 0.0625
+steps:
+  - taxable: max(price - exempt_amount, 0)
+  - tax: round(taxable * rate, 2)
+expected:
+  taxable: 25
+  tax: 1.56
+```
 
-### 3.5 Professional services
+**Case 2, a decision: collect Michigan tax or leave the buyer to pay use tax?** A Michigan business buys a $1,000 machine from a seller who charged 4% tax for another state. Michigan use tax is 6% less the 4% already paid: $60 - $40 = $20. Had nothing been charged, the full $60 would be due. Paying another state's tax does not remove Michigan use tax; it reduces it.
 
-**Professional services taxability**
+```oa-check
+name: Michigan use tax after 4 percent paid elsewhere (2026)
+inputs:
+  price: 1000
+  michigan_rate: 0.06
+  other_state_rate: 0.04
+steps:
+  - michigan_tax: price * michigan_rate
+  - credit: min(price * other_state_rate, michigan_tax)
+  - use_tax_due: michigan_tax - credit
+expected:
+  michigan_tax: 60.00
+  credit: 40.00
+  use_tax_due: 20.00
+```
 
-| Treatment | Notes |
-| --- | --- |
-| NOT TAXABLE | Vast majority of states do not tax professional services |
-| BROADLY TAXABLE | HI, NM, SD, WV tax most services including professional |
+## When to refuse or refer
 
-### 3.6 Manufacturing equipment
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-US-1 | Import duties and customs | Refer to a customs broker |
+| R-US-2 | Federal excise taxes (fuel, alcohol, tobacco, firearms) | Outside scope |
+| R-US-3 | Real and personal property tax | Outside scope |
+| R-US-4 | Voluntary disclosure for past exposure | Refer |
+| R-US-5 | SaaS or digital goods taxability where the amount matters | Use the state skill; refer or seek a ruling if the state has not spoken |
 
-**Manufacturing equipment taxability**
+## Filing and payment
 
-| Treatment | States |
-| --- | --- |
-| FULLY EXEMPT | Most states provide full or substantial exemption |
-| PARTIAL EXEMPTION | CA (state rate reduced, district tax applies) |
+Each state sets its own return, frequency and due dates, usually based on the tax collected. Common contents: gross sales, exempt sales, taxable sales, tax by local jurisdiction, and use tax. File through the state's portal; SST states share registration but keep their own returns. Penalties and interest are set by each state. See the state skill for its return and dates.
 
-### 4.1 State base rates
+## Completion checklist
 
-**State base rates**  _(https://dam.ldr.la.gov/lawspolicies/RIB%2025-007%20-%20State%20Sales%20Tax%20Rate.pdf)_
+- Physical presence checked in every state, including warehouses.
+- Economic nexus tested per state with that state's measure (`us-sales-tax-nexus-50-state-matrix`).
+- Product taxability confirmed in each state skill.
+- Rate = state base plus local for the sourced address.
+- Certificates on file for every exempt sale.
+- Use tax accrued on untaxed purchases.
 
-| State | Rate | State | Rate | State | Rate |
-| --- | --- | --- | --- | --- | --- |
-| AL | 4.00% | KY | 6.00% | ND | 5.00% |
-| AZ | 5.60% | LA | 5% | NE | 5.50% |
-| AR | 6.50% | ME | 5.50% | NV | 6.85% |
-| CA | 7.25% | MD | 6.00% | NH | None |
-| CO | 2.90% | MA | 6.25% | NJ | 6.625% |
-| CT | 6.35% | MI | 6.00% | NM | 4.875% |
-| DC | 6.00% | MN | 6.875% | NY | 4.00% |
-| DE | None | MS | 7.00% | NC | 4.75% |
-| FL | 6.00% | MO | 4.225% | OH | 5.75% |
-| GA | 4.00% | MT | None | OK | 4.50% |
-| HI | 4.00% | OR | None | PA | 6.00% |
-| ID | 6.00% | RI | 7.00% | SC | 6.00% |
-| IL | 6.25% | SD | 4.2% | TN | 7.00% |
-| IN | 7.00% | TX | 6.25% | UT | 6.10% |
-| IA | 6.00% | VT | 6.00% | VA | 5.30% |
-| KS | 6.50% | WA | 6.50% | WV | 6.00% |
-| WI | 5.00% | WY | 4.00% | AK | None (local only) |
-| MN | 6.875% |  |  |  |  |
+## Sources
 
-### 4.2 Sourcing rules overview
+| Source | URL | Read on |
+| --- | --- | --- |
+| CDTFA, rate description. Read for the 7.25% statewide base rate. The rates for AZ, AR, CA, GA, HI, ID, IL, IA, LA, MA, MI, MS, NM, NY, NC, OH, PA, RI, TX, VT and WA are taken from the 13 Nov 2026 state skills and the links in their rows; ND and SD from the state skills on main. | https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm | 2026-11-13 |
+| CT DRS, sales tax information. Read for "The sales tax rate of 6.35% applies to the retail sale, lease, or rental of most goods". | https://portal.ct.gov/drs/sales-tax/tax-information | 2026-11-13 |
+| DC OTR FAQ. Read for "General Sale ... Tax Rate: 6%". | https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs | 2026-11-13 |
+| Florida DOR. Read for "Florida's general state sales tax rate is 6%". | https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx | 2026-11-13 |
+| Indiana DOR. Read for "register to collect a seven percent sales tax". | https://www.in.gov/dor/business-tax/sales-tax/ | 2026-11-13 |
+| K.S.A. 79-3603. Read for "a tax at the rate of 6.5%". | https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_036_0000_article/079_036_0003_section/079_036_0003_k/ | 2026-11-13 |
+| Kentucky DOR. Read for "imposed at the rate of 6 percent of gross receipts". | https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx | 2026-11-13 |
+| Maine Revenue Services. Read for General Sales 5.5% effective 01/01/2026. | https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/rates-due-dates | 2026-11-13 |
+| Md. Tax-General 11-104. Read for "6 cents for each exact dollar". | https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false | 2026-11-13 |
+| Minn. Stat. 297A.62. Read for "a sales tax of 6.5 percent" and "an additional sales tax of 0.375 percent". | https://www.revisor.mn.gov/statutes/cite/297A.62 | 2026-11-13 |
+| Missouri DOR. Read for "The state sales tax rate is 4.225%". | https://dor.mo.gov/taxation/business/tax-types/sales-use/ | 2026-11-13 |
+| Nebraska DOR. Read for "The Nebraska state sales and use tax rate is 5.5%". | https://revenue.nebraska.gov/businesses/sales-and-use-tax | 2026-11-13 |
+| Nevada Department of Taxation. Read for "The base state sales tax rate in Nevada is 6.85%". | https://tax.nv.gov/tax-types/sales-use-tax/ | 2026-11-13 |
+| NJ Division of Taxation. Read for "6.625% on January 1, 2018". | https://www.nj.gov/treasury/taxation/salestax.shtml | 2026-11-13 |
+| SCDOR. Read for "The statewide Sales & Use Tax rate is 6%". | https://dor.sc.gov/sales-use-tax-index/sales-tax | 2026-11-13 |
+| Tennessee DOR. Read for "The general state tax rate is 7%". | https://www.tn.gov/revenue/taxes/sales-and-use-tax.html | 2026-11-13 |
+| Virginia Tax. Read for "5.3% Everywhere else" and "Grocery Tax ... 1% statewide". | https://www.tax.virginia.gov/retail-sales-and-use-tax | 2026-11-13 |
+| West Virginia Tax Division. Read for "in lieu of the 6% sales tax". | https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx | 2026-11-13 |
+| Wisconsin DOR FAQ. Read for "The Wisconsin sales tax is a 5% tax". | https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx | 2026-11-13 |
+| Wyo. Stat. 39-15-104. Read for the 3% plus additional 1% (4%). | https://wyoleg.gov/statutes/compress/title39.pdf | 2026-11-13 |
+| Streamlined Sales Tax Governing Board FAQ. Read for central registration. | https://www.streamlinedsalestax.org/Shared-Pages/faqs/faqs---about-streamlined | 2026-11-13 |
 
-**Sourcing rules overview**
-
-| Type | States |
-| --- | --- |
-| Destination-based | Most states (CA for district taxes, NY, FL, WA, and SST states) |
-| Origin-based (intrastate) | TX, IL, OH, PA, VA, MS, MO, TN, AZ |
-| Mixed | Some states use origin for intrastate, destination for interstate |
-
-### 5.1 Sales tax vs. use tax
-
-- **Sales tax vs use tax** — Sales tax: collected by seller at point of sale. Use tax: owed by buyer when sales tax was not collected. Rates are identical within a jurisdiction. You pay one or the other, never both.
-
-### 5.2 Tax base
-
-- **Tax base** — Sales tax generally applies to retail sale of tangible personal property (TPP). Service taxation varies enormously by state. Digital goods and SaaS are evolving and inconsistent.
-
-### 5.3 Nexus types
-
-**Nexus types**
-
-| Type | Description |
-| --- | --- |
-| Physical nexus | Offices, employees, inventory, property, representatives in the state |
-| Economic nexus (post-Wayfair) | Revenue and/or transaction thresholds met |
-| Click-through nexus | Referral agreements with in-state entities |
-| Affiliate nexus | Related entities with in-state presence |
-| Marketplace nexus | Selling through marketplace facilitator |
-
-### 5.4 Economic nexus thresholds (common patterns)
-
-**Economic nexus thresholds (common patterns)**  _(https://tax.nv.gov/faqs/marketplace-facilitator-seller-faqs/)_
-
-| Threshold | States |
-| --- | --- |
-| $100K OR 200 transactions | Some states (e.g. KY; IN, SD, IA and ME have dropped the 200-transaction test) |
-| $100K only (no transaction count) | FL, WA, TX (uses $500K), CA ($500K) |
-| $500K | CA, TX |
-| $500K AND 100 transactions | NY (AND test -- unique) |
-
-### 6.1 Filing overview
-
-- **Filing overview** — Each state has its own return form. Common elements: gross sales, exempt sales, taxable sales, tax collected, local tax breakdown, use tax.
-
-### 6.2 Marketplace facilitator impact
-
-- **Marketplace facilitator impact** — In all states with marketplace facilitator laws (all 45 + DC as of 2024), the marketplace collects on facilitated sales. Sellers file for direct sales only.
-
-### 6.3 SST centralized registration
-
-- **SST centralized registration** — Remote sellers can register in all SST member states through a single application at https://www.sstregister.org.  _(https://www.streamlinedsalestax.org/Shared-Pages/faqs/faqs---about-streamlined)_
-
-### 7.1 Wayfair decision (2018)
-
-- **Wayfair decision (2018)** — States may require remote sellers to collect sales tax if they meet economic nexus thresholds, even without physical presence. All 45 sales tax states + DC have enacted post-Wayfair economic nexus laws.
-
-### 7.2 Common penalty patterns
-
-**Common penalty patterns**
-
-| Penalty type | Typical range |
-| --- | --- |
-| Late filing | 5-10% of tax due |
-| Late payment | 5-10% of tax due |
-| Fraud | 25-100% of deficiency |
-| Interest | State-set rates, adjusted periodically |
-
-### 7.3 Voluntary disclosure agreements (VDA)
-
-- **Voluntary disclosure agreements (VDA)** — Most states offer VDAs for sellers who discover past-due nexus obligations. Benefits: penalty waiver, limited lookback (typically 3-4 years).
-
-### EC1 -- Multi-state seller nexus analysis
-
-Situation: E-commerce seller with $2M in national sales ships to all 50 states.
-Resolution: Must analyze economic nexus in each state individually. Revenue/transaction thresholds differ by state. Marketplace sales (Amazon, etc.) typically handled by the marketplace.
-
-### EC2 -- SaaS taxability varies by state
-
-Situation: SaaS company sells nationwide.
-Resolution: SaaS is taxable in approximately 20+ states. Must determine taxability state by state. TX provides 20% exemption. CA and IL generally do not tax pure SaaS.
-
-### EC3 -- Drop shipments
-
-Situation: Retailer in State A directs supplier in State B to ship to customer in State C.
-Resolution: Three-party arrangement. Taxability depends on where nexus exists and which exemption certificates are provided. Complex area requiring state-specific analysis.
-
-### EC4 -- No-sales-tax state sellers
-
-Situation: Oregon seller ships to customers in other states.
-Resolution: Oregon's lack of sales tax does NOT relieve the seller of collection obligations in states where they have nexus.
-
-### Test 1 -- Economic nexus determination
-
-Input: Seller has $150K in FL sales, $90K in NY sales, $80K in CA sales.
-Expected: FL: nexus ($100K met). NY: no nexus (need $500K AND 100 transactions). CA: no nexus (need $500K).
-
-### Test 2 -- SaaS multi-state
-
-Input: SaaS company with customers in NY, CA, and IL.
-Expected: NY: taxable. CA: not taxable (pure SaaS). IL: not taxable (pure cloud, no download).
-
-### Test 3 -- Food taxability
-
-Input: Grocery food sold in IL, TX, and AL.
-Expected: IL: state rate eliminated January 1, 2026 (local 1% only where imposed). TX: exempt. AL: taxable at the reduced state food rate (2 percent from September 1, 2025).
-
-### Test 4 -- Clothing taxability
-
-Input: $200 jacket sold in NY, PA, and CA.
-Expected: NY: taxable (over $110). PA: exempt. CA: taxable.
-
-### Test 5 -- Marketplace facilitator
-
-Input: Seller makes $80K on Amazon, $30K direct, in a $100K nexus state.
-Expected: Amazon collects on $80K. Seller must analyze if $30K direct creates separate nexus.
-
-## Section 10 -- Prohibitions
-
-- NEVER assume a single federal sales tax rate -- there is no federal sales tax.
-- NEVER apply one state's rules to another state -- each state is independent.
-- NEVER assume SaaS taxability is uniform across states.
-- NEVER assume food is always exempt -- several states tax it.
-- NEVER assume clothing is always taxable -- several states exempt it.
-- NEVER ignore local taxes -- they can add 0.5% to 5%+ to the state rate.
-- NEVER assume marketplace sellers have no obligations -- direct sales may still require collection.
-- NEVER forget use tax -- buyers owe it when sales tax was not collected.
-- NEVER treat economic nexus thresholds as uniform -- they range from $100K to $500K with varying tests.
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
-
-## Disclaimer
-
-This skill is provided for informational and computational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional (CPA, EA, or tax attorney) before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the statewide base rates of Alabama (old file 4%), Colorado (2.9%), Oklahoma (4.5%) and Utah (old file 6.10%, which is a combined figure); the state-group taxability lists for SaaS, digital goods and clothing in the old file (NY under $110, VT under $110, RI under $250 clothing thresholds; Texas 20% data processing exemption; Alabama 2% food rate; Missouri 1.225% and Tennessee 4% food rates); the old file's typical penalty ranges (5% to 10% late filing, 25% to 100% fraud) and the 3 to 4 year voluntary disclosure lookback.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

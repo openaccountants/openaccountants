@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-corporate-cross-border-tax"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland Corporate Cross-Border Tax v0.1
+# Finland Corporate Cross-Border Tax v0.3
 
 **Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. Independent source-review evidence and remaining publication gates are recorded in the [pack README](README.md); this skill does not establish worldwide-goal completion.
 
@@ -26,14 +26,14 @@ Foreign funds require separate treatment, including the current section 9a manag
 
 | Item | 2026 domestic rule | Primary source |
 |---|---|---|
-| Ordinary corporation / Finnish PE | 20% of taxable income; PE-attributable income is assessed on a net basis. | [Income Tax Act, section 124][ita]; [Nonresident Income Tax Act 627/1978, section 15][source-act] |
-| Ordinary dividend or taxable interest/royalty to a nonresident corporation | 20% gross starting rate, subject to statutory exemptions, special recipient categories and treaties. | [Nonresident Income Tax Act, sections 3 and 7(1)(2)][source-act] |
-| Unidentified recipient of listed-company nominee-registered dividend | 35% where the payer/intermediary lacks the required recipient information. | [Nonresident Income Tax Act, section 7(2)][source-act] |
-| Nonwage compensation to a foreign corporation / partnership | 13% where withholding is required; determine Finnish work, register/card and treaty conditions first. | [Nonresident Income Tax Act, sections 7(1)(6), 10f][source-act] |
-| Qualifying nonresident interest | Exempt under section 9(2), including specified deposits, debt securities and loans from abroad that are not equity-equivalent capital investments. | [Income Tax Act, section 9(2)][ita] |
-| Foreign-tax-credit ceiling | Finnish tax attributable to eligible taxable foreign income, calculated by income source from net income after related costs/interest. | [Double Taxation Relief Act 1552/1995, sections 3–4][relief-act] |
-| Unused eligible credit | Carry forward into the following five tax years; use oldest first, before current-year credit. | [Double Taxation Relief Act, section 5][relief-act] |
-| Corporate exit income | Exit value less undepreciated tax acquisition cost, plus relevant reserve recapture; not a separate flat exit-tax percentage. | [Business Income Tax Act 360/1968, section 51e][business-act] |
+| Ordinary corporation / Finnish PE | 20% of taxable income; PE-attributable income is assessed on a net basis. | [Income Tax Act, section 124](https://www.finlex.fi/fi/lainsaadanto/1992/1535); [Nonresident Income Tax Act 627/1978, section 15](https://finlex.fi/fi/lainsaadanto/1978/627) |
+| Ordinary dividend or taxable interest/royalty to a nonresident corporation | 20% gross starting rate, subject to statutory exemptions, special recipient categories and treaties. | [Nonresident Income Tax Act, sections 3 and 7(1)(2)](https://finlex.fi/fi/lainsaadanto/1978/627) |
+| Unidentified recipient of listed-company nominee-registered dividend | 35% where the payer/intermediary lacks the required recipient information. | [Nonresident Income Tax Act, section 7(2)](https://finlex.fi/fi/lainsaadanto/1978/627) |
+| Nonwage compensation to a foreign corporation / partnership | 13% where withholding is required; determine Finnish work, register/card and treaty conditions first. | [Nonresident Income Tax Act, sections 7(1)(6), 10f](https://finlex.fi/fi/lainsaadanto/1978/627) |
+| Qualifying nonresident interest | Exempt under section 9(2), including specified deposits, debt securities and loans from abroad that are not equity-equivalent capital investments. | [Income Tax Act, section 9(2)](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Foreign-tax-credit ceiling | Finnish tax attributable to eligible taxable foreign income, calculated by income source from net income after related costs/interest. | [Double Taxation Relief Act 1552/1995, sections 3–4](https://finlex.fi/fi/lainsaadanto/1995/1552) |
+| Unused eligible credit | Carry forward into the following five tax years; use oldest first, before current-year credit. | [Double Taxation Relief Act, section 5](https://finlex.fi/fi/lainsaadanto/1995/1552) |
+| Corporate exit income | Exit value less undepreciated tax acquisition cost, plus relevant reserve recapture; not a separate flat exit-tax percentage. | [Business Income Tax Act 360/1968, section 51e](https://finlex.fi/fi/lainsaadanto/1968/360) |
 
 The source-tax table is a starting classification. Section 7 includes special rates for specified investment-asset/pension recipients. Section 3 provides exemptions, including the qualifying EU parent-subsidiary route; sections 3b–3f address qualifying EU associated-company interest/royalty relief. A certificate showing an EU address does not establish every exemption condition. [Nonresident Income Tax Act][source-act].
 
@@ -203,8 +203,8 @@ Not yet confirmed: transaction-specific treaty/MLI entitlement and nonordinary f
 [ir-deadline]: https://vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [payment]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/paying-self-assessed-taxes/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-corporate-cross-border-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-corporate-cross-border-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-corporate-cross-border-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-corporate-cross-border-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ee-cross-border"
   jurisdiction: "EE"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Estonia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)
@@ -209,8 +209,8 @@ Out of scope: treaty withholding rates for individual countries; use the treaty 
 
 Not yet confirmed: the number of the act that cancelled the 24% rate. The Ministry of Finance confirms the cancellation, and the consolidated § 4(1) in force for 2026 still carries the 22% wording from RT I, 30.06.2023, 107; the cancelling act itself was not read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ee-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ee-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ee-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ee-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

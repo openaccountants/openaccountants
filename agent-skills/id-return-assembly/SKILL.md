@@ -1,700 +1,308 @@
 ---
 name: id-return-assembly
-description: "Use this skill whenever asked to assemble, finalize, or package an Indonesian annual tax return. Trigger on phrases like \"assemble Indonesian return\", \"prepare SPT 1770\", \"prepare SPT 1771\", \"Indonesia annual tax return\", \"Indonesian working paper\", \"Indonesian tax filing package\", \"finalize SPT Tahunan\", or \"Coretax filing package\". This is the capstone orchestrator that pulls together outputs from id-pph-final-umkm, id-income-tax, id-corporate-tax, id-payroll-pph21, indonesia-vat, id-withholding, and id-bookkeeping into a single SPT working paper plus payment and filing instructions. It does not recompute anything itself — it reconciles upstream outputs, builds the line-by-line SPT working paper, generates kode billing payment instructions for Coretax, and produces a reviewer brief and taxpayer action list. ALWAYS read this skill last when finalizing an Indonesian tax return."
+description: "Assemble an Indonesian calendar-2026 annual-return working paper from documented bookkeeping, ordinary/final income-tax, payroll, VAT and withholding outputs. Reconcile credits, payments and reporting before producing a workbook, reviewer brief and taxpayer action list. Trigger on SPT Tahunan, annual return, Coretax filing package, prepare SPT 1770 or 1771 and Indonesian return assembly. Never submit a return or load the US Idaho id-income-tax skill for Indonesia."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/id-return-assembly"
   jurisdiction: "ID"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# ID Return Assembly
+# Indonesia Annual Return Assembly v2.0
 
-## How this workflow runs
+## Scope
 
-Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
+Prepare a calendar-2026 Indonesian resident individual's or ordinary resident entity's annual-return package. Consume intake and calculation outputs, reconcile them and produce a master workbook, reviewer brief and taxpayer action list. This method is a capstone, not a substitute for missing tax computations and not a permission to file, pay, activate an account or post a ledger. The original required review and taxpayer/authorised-filer submission remain in place.
 
-Specifically:
+The old individual forms 1770/1770S/1770SS and corporate 1771 remain useful historical search names. Their copied line numbers and attachment labels are not a certified 2026 Coretax field map. Use the actual current annual form and its attachments under the applicable reporting rules before making a filing-ready mapping. For tax year 2025 onward, distinguish the original PER-11/2025 forms, current submission/receipt rules in PER-3/2026 and the applicable PER-12/2026 correction regime. [PER-3/PJ/2026 arts. 2-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0); [PER-12/PJ/2026 art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-- Do NOT ask "do you want me to assemble the full package". The user asked for the return. Produce it.
-- Do NOT re-interrogate the user about residency, NPWP, or business structure — intake already captured this; trust the upstream packages.
-- Do NOT pause between reconciliation steps to check in. Run all cross-checks in sequence; flag failures in the reviewer brief and continue.
-- Self-checks are targets, not blockers. If a check fails, note it under "Reviewer Attention Flags" and continue.
-- Do NOT submit anything to Coretax. This skill produces a working paper plus filing instructions. A qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) must review and the taxpayer (or authorised filer) submits via Coretax.
+This ordinary route excludes non-residents, mixed-residence/treaty years, permanent-establishment branch-profits tax, banking/insurance, oil/gas/mining contracts, controlled foreign companies, specialist expatriate facilities, consolidated/group computations, tax holidays, KEK/free-zone facilities and VAT margin/refund special regimes. Keep those income/credit rows in the data inventory, label the missing specialist computation and refer; never drop the underlying receipt from the return package merely because its tax is out of scope.
 
-If you feel the urge to ask "how should I proceed", pick the most defensible path, proceed, and flag the decision for the reviewer.
+## Ask the client first
 
-## What this file is
+Read all existing intake and upstream evidence first. Do not repeat questions already answered or ask whether to assemble the package when the user requested a return. Collect only a missing fact, document or reconciliation explanation. Required identity/period data are taxpayer legal type/name, residence/subjection period, NPWP/NIK mapping, actual NITKU/location where relevant, KLU and activity, KPP, accounting year, family/PTKP status and signer/authority. Never substitute a default consulting or holding-company code for a missing activity code. A missing identifier produces a labelled placeholder in the draft and blocks a filing-ready claim, not all useful reconciliation work.
 
-The final capstone skill for Indonesian annual tax returns. It consumes the outputs of every other Indonesia skill and assembles a single unified working paper covering either:
+### Upstream packages and their destinations
 
-- SPT 1770 / 1770S / 1770SS — annual return for resident individuals (Orang Pribadi), including sole proprietors operating under UMKM PPh Final (PP 55/2022) or the progressive regime
-- SPT 1771 — annual return for resident corporates (Badan), including PT, CV, and Koperasi
-
-The output is a reviewer-ready package: line-by-line SPT working paper, cross-skill reconciliation table, payment instructions (kode billing for Coretax), filing instructions, reviewer checklist, and taxpayer action list.
-
-## Section 1 — Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Indonesia (Republik Indonesia) |
-| Tax authority | Direktorat Jenderal Pajak (DJP) — Directorate General of Taxes |
-| Filing portal | Coretax DJP (https://coretaxdjp.pajak.go.id) — successor to DJP Online/e-Filing as of 1 January 2025 |
-| Currency | IDR (Indonesian Rupiah / Rp) |
-| Tax year | Calendar year (1 January – 31 December) |
-| Current tax year | 2025 (filing window opens 1 January 2026) |
-| Individual return | SPT Tahunan PPh Orang Pribadi — Form 1770 / 1770S / 1770SS |
-| Corporate return | SPT Tahunan PPh Badan — Form 1771 |
-| Individual deadline | 31 March 2026 (3 months after year-end) |
-| Corporate deadline | 30 April 2026 (4 months after year-end) |
-| Confirmation receipt | BPE — Bukti Penerimaan Elektronik (electronic filing receipt) |
-| Governing law | UU KUP No. 6/1983 (as amended); UU PPh No. 36/2008; UU HPP No. 7/2021; PMK 81/2024 (Coretax implementation) |
-| Skill version | 1.0 |
-
-## Section 2 — Required inputs from upstream skills
-
-The assembly skill does not recompute anything. It expects structured outputs from the following upstream skills. If an upstream skill did not run, the assembly notes the gap and continues with available data.
-
-### 2.1 Individual return (SPT 1770) — inputs
-
-**Individual return inputs table**
-
-| Upstream skill | Output consumed | Where it lands on the SPT |
-| --- | --- | --- |
-| `id-bookkeeping` | General ledger trial balance; income/expense detail | Source for Lampiran I (business income) |
-| `id-income-tax` | Progressive PPh OP computation: PKP, PPh terutang, PTKP applied | Form 1770 Induk Part B & C |
-| `id-pph-final-umkm` | UMKM Final 0.5% computation; monthly SSP records; cumulative gross turnover; verification turnover is ≤ IDR 4.8 billion | Lampiran III-A (PPh Final & Bersifat Final) |
-| `id-payroll-pph21` | Employment income from Bukti Potong 1721-A1; PPh 21 already withheld | Form 1770 Induk Part A; Lampiran I Bagian B |
-| `indonesia-vat` | If individual is PKP: VAT input/output position; nothing flows to PPh return but reviewer checks consistency of revenue figures | Cross-check only, not a line on 1770 |
-| `id-withholding` | Bukti Potong PPh 22 / 23 / 4(2) received as a recipient; PPh 22 / 23 / 4(2) paid as a withholder | Lampiran I & III (credits); separate SPT Masa for amounts withheld |
-
-### 2.2 Corporate return (SPT 1771) — inputs
-
-**Corporate return inputs table**
-
-| Upstream skill | Output consumed | Where it lands on the SPT |
-| --- | --- | --- |
-| `id-bookkeeping` | Full audited or management financial statements: Neraca (balance sheet), Laporan Laba Rugi (P&L) | Lampiran V (financial statements); Lampiran I (fiscal reconciliation) |
-| `id-corporate-tax` | Fiscal profit (laba fiskal); PPh Badan computation at 22% (or facility-eligible rates per UU HPP); deferred tax | Form 1771 Induk Part B & C |
-| `id-pph-final-umkm` | If entity qualifies for PP 55/2022 0.5% Final regime and is within the 3-year UMKM Badan window (PT) or 4-year window (CV/Firma/Koperasi) | Lampiran IV (PPh Final & Bersifat Final) |
-| `id-payroll-pph21` | Employee payroll cost classification; PPh 21 employer obligations reconciled | Lampiran II (cost of employment) |
-| `indonesia-vat` | If PKP: VAT input/output reconciled; PPN paid is not deductible for PPh; cross-check revenue figures match | Cross-check; PPN Masukan that becomes a cost flows to fiscal P&L |
-| `id-withholding` | PPh 22/23/4(2)/15/26 withheld by counterparties (credits on 1771); withholding made by entity on suppliers (SPT Masa obligations) | Lampiran III (kredit pajak); separate SPT Masa monthly |
-
-### 2.3 Intake-required identifiers
-
-**Intake-required identifiers table**
-
-| Identifier | Required for |
-| --- | --- |
-| NPWP (Nomor Pokok Wajib Pajak) — 16-digit (post-Coretax merge with NIK for individuals) | All returns |
-| NITKU (Nomor Identitas Tempat Kegiatan Usaha) — branch/location identifier introduced under Coretax | All returns post-PMK 81/2024 |
-| KLU (Klasifikasi Lapangan Usaha) — business classification code | Determines JKK class, applicability of UMKM regime |
-| KPP code (Kantor Pelayanan Pajak / tax office) | Filing location, kode billing routing |
-| Marital status & dependents (for individuals) | PTKP determination |
-
-### 2.3 Intake-required identifiers
-
-If any identifier is missing, the assembly skill flags it as "Needs Input" and produces the working paper with placeholders rather than halting.
-
-## Section 3 — Tax computation reconciliation
-
-The assembly skill verifies that numbers from the upstream skills are mutually consistent. If a cross-check fails by more than IDR 1,000, the discrepancy is raised in the reviewer brief — never silently rounded.
-
-### Cross-check 1 — Revenue reconciliation (turnover ties across skills)
-
-**Revenue reconciliation table**
-
-| Source | Figure | Rule |
-| --- | --- | --- |
-| `id-bookkeeping` P&L gross revenue | Total operating revenue | Anchor figure |
-| `indonesia-vat` annual DPP (Dasar Pengenaan Pajak) on output VAT | Sum of monthly SPT Masa PPN Faktur Pajak Keluaran | Must reconcile to bookkeeping revenue ± permitted timing differences |
-| `id-pph-final-umkm` cumulative gross turnover | Sum of monthly UMKM gross | Must equal bookkeeping revenue for the UMKM-eligible portion |
-| `id-income-tax` or `id-corporate-tax` gross income | Top line of fiscal P&L | Must equal bookkeeping ± fiscal-vs-commercial adjustments (Lampiran I) |
-
-### Cross-check 1 — Revenue reconciliation (turnover ties across skills)
-
-If mismatch: Likely causes are (i) VAT-exempt revenue (PPN dibebaskan) not in VAT output, (ii) accrual vs cash timing differences, (iii) intra-group eliminations, (iv) revenue that is itself PPh Final at source (rental, construction).
-
-### Cross-check 2 — PPh credits add up correctly
-
-For individuals (SPT 1770):
-
-### Cross-check 2 — PPh credits add up correctly
-
-**PPh credits table (individuals)**
-
-| Line | Source skill | Description |
-| --- | --- | --- |
-| PPh 21 withheld by employer(s) | id-payroll-pph21 (Bukti Potong 1721-A1) | Credit |
-| PPh 22 withheld at import / state purchase | id-withholding | Credit |
-| PPh 23 withheld on services / royalties / dividends | id-withholding | Credit |
-| PPh 24 — foreign tax credit | id-income-tax (if applicable) | Credit, capped |
-| PPh 25 — monthly installments paid during the year | id-income-tax | Credit |
-| PPh Final paid (UMKM 0.5%, rental, etc.) | id-pph-final-umkm | NOT a credit against progressive PPh — separate column |
-
-### Cross-check 2 — PPh credits add up correctly
-
-- **Corporate credit list and credit cap rule** — For corporates (SPT 1771): same list except no PPh 21 employment credit (employer does not personally claim PPh 21 against PPh Badan). Total credits cannot exceed PPh terutang (tax liable) for refund purposes unless the excess is properly recognised in Lampiran III with supporting Bukti Potong.
-
-### Cross-check 3 — PPh Final UMKM matches monthly SSPs (Surat Setoran Pajak)
-
-**UMKM SSP reconciliation table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Sum of monthly UMKM 0.5% paid via SSP | id-pph-final-umkm monthly log | Must equal 0.5% × cumulative gross turnover for UMKM-eligible months |
-| Coretax billing receipts (NTPN — Nomor Transaksi Penerimaan Negara) | Bank statements / Coretax history | Each monthly payment must have an NTPN |
-| Threshold guard: cumulative turnover ≤ IDR 4.8 billion for the year | id-pph-final-umkm | If exceeded mid-year, switch to progressive PPh from the month following the breach |
-
-### Cross-check 3 — PPh Final UMKM matches monthly SSPs (Surat Setoran Pajak)
-
-If mismatch: Investigate missing months (UMKM is monthly, due 15th of the following month under PMK 164/2023), incorrect NTPN, or threshold breach not actioned.
-
-### Cross-check 4 — PPh 21 reconciliation between annual and monthly returns
-
-**PPh 21 reconciliation table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| Sum of monthly SPT Masa PPh 21 filed (Jan–Nov via TER) | id-payroll-pph21 | Should match total TER withholding for the year |
-| December true-up (annual recalculation under PP 58/2023) | id-payroll-pph21 | Reconciled to annual PPh 21 terutang |
-| Total PPh 21 borne by entity | id-payroll-pph21 employer cost | Cross-checked to Form 1721 A1 (employer's annual PPh 21 return), due 31 March 2026 |
-
-### Cross-check 4 — PPh 21 reconciliation between annual and monthly returns
-
-If mismatch: Likely cause is mid-year joiners/leavers, bonus or THR not included in the correct month's TER, or December true-up not booked.
-
-### Cross-check 5 — Withholding compliance as a withholding agent
-
-If the taxpayer (especially a Badan) is required to withhold PPh on its suppliers:
-
-### Cross-check 5 — Withholding compliance as a withholding agent
-
-**Withholding agent compliance table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| PPh 23 withheld on services and royalties paid | id-withholding | Sum of monthly SPT Masa PPh 23/26 |
-| PPh 4(2) withheld on rent, construction, prizes | id-withholding | Sum of monthly SPT Masa PPh 4(2) |
-| PPh 21/26 withheld on consultants and non-employees | id-payroll-pph21 + id-withholding | Sum of monthly SPT Masa PPh 21/26 |
-| Bukti Potong issued to counterparties | id-withholding e-Bupot Unifikasi | Should match the SPT Masa filings |
-
-### Cross-check 5 — Withholding compliance as a withholding agent
-
-- **Withholding obligation rule** — Withholding is the entity's obligation, not its own tax credit. Failure to withhold is corrected with Surat Setoran Pajak plus 2% per month interest (UU HPP). Flag any apparent failure for the reviewer.  _(UU HPP)_
-
-### Cross-check 6 — VAT-to-PPh consistency (for PKP)
-
-**VAT-to-PPh consistency table**
-
-| Item | Source | Rule |
-| --- | --- | --- |
-| PPN Masukan that was creditable | indonesia-vat | NOT a cost in fiscal P&L |
-| PPN Masukan that was non-creditable (per Pasal 9(8) UU PPN) | indonesia-vat | IS a cost in fiscal P&L |
-| PPN on capital goods | indonesia-vat | Either credited (PKP) or capitalised into asset cost (non-PKP) |
-
-### Cross-check 6 — VAT-to-PPh consistency (for PKP)
-
-If inconsistency: An expense net of PPN in the P&L while the PPN was also not claimed on the VAT return means the PPN is lost. Flag for reviewer.
-
-### Cross-check 7 — Tolerance discipline
-
-- **Reconciliation tolerance thresholds** — For every cross-check above, the threshold is IDR 1,000. If a difference is between IDR 1,000 and IDR 100,000, document the variance and proceed with a reviewer flag. If above IDR 100,000, raise as "Needs Input" — the reviewer should resolve before sign-off.
-
-## Section 4 — Working paper template: individual SPT 1770
-
-The working paper is built around the structure of Form 1770 (the full form for individuals with business or multiple income sources). Form 1770S applies to individuals with single-employer income above IDR 60 million but no business income; Form 1770SS applies to single-employer income ≤ IDR 60 million. The assembly skill picks the correct form based on intake.
-
-### 4.1 Induk Form 1770 — line-by-line
-
-**Induk Form 1770 line-by-line table**
-
-| Bagian (Part) | Line | Description | Source |
-| --- | --- | --- | --- |
-| **Identitas** | NPWP, NIK, NITKU, name, KLU, address, marital status | All | Intake |
-| **A. Penghasilan Neto** | 1 | Net income from business (usaha) — progressive regime | id-income-tax |
-|  | 2 | Net income from independent profession (pekerjaan bebas) | id-income-tax |
-|  | 3 | Net income from employment | id-payroll-pph21 (sum of Bukti Potong 1721-A1) |
-|  | 4 | Net income from other sources (dalam negeri lainnya) | id-bookkeeping (interest, royalties, sewa non-final) |
-|  | 5 | Net foreign income (luar negeri) | id-income-tax (if applicable) |
-|  | 6 | **Total penghasilan neto** | Sum 1–5 |
-| **B. Penghasilan Tidak Kena Pajak (PTKP)** | 7 | PTKP based on K/0, K/1, …, TK/0, etc. | id-payroll-pph21 PTKP table |
-| **C. Penghasilan Kena Pajak (PKP)** | 8 | Line 6 − Line 7 | Computed |
-| **D. PPh Terutang** | 9 | Apply progressive brackets to Line 8 | id-income-tax |
-| **E. Kredit Pajak** | 10 | PPh 21 withheld | id-payroll-pph21 |
-|  | 11 | PPh 22 / 23 / 24 / 25 | id-withholding + id-income-tax (PPh 25) |
-|  | 12 | Total credits | Sum |
-| **F. PPh Kurang/Lebih Bayar** | 13 | Line 9 − Line 12 (positive = balance due; negative = refund / kompensasi) | Computed |
-| **G. Angsuran PPh 25 tahun berikutnya** | 14 | Monthly installment for 2026 = PPh terutang ÷ 12 (subject to adjustments per PMK 215/2018) | id-income-tax |
-
-### 4.2 Lampiran (Schedules) checklist
-
-**Lampiran checklist table (1770)**
-
-| Lampiran | Title | When used |
-| --- | --- | --- |
-| Lampiran I | Penghasilan Neto Dalam Negeri Lainnya & Penghasilan Neto Luar Negeri | If non-employment, non-business income exists |
-| Lampiran II | Daftar Pemotongan / Pemungutan PPh oleh Pihak Lain dan PPh Yang Ditanggung Pemerintah | List every Bukti Potong received |
-| Lampiran III | Penghasilan yang Dikenakan PPh Final dan/atau Bersifat Final | UMKM 0.5%, deposito interest 20%, dividend 10%, rental 10%, etc. |
-| Lampiran IV | Harta pada Akhir Tahun & Kewajiban / Utang pada Akhir Tahun | Net worth disclosure (mandatory) |
-| Lampiran V | Daftar Susunan Anggota Keluarga | Family members for PTKP support |
-
-### 4.3 UMKM PPh Final treatment on 1770
-
-- **UMKM treatment on 1770** — If the taxpayer used PP 55/2022 UMKM 0.5% during 2025: Business gross turnover that was UMKM-final goes to Lampiran III, NOT Part A line 1. PPh Final UMKM paid via monthly SSP is reported on Lampiran III; it is not a credit against progressive PPh — it is a separate final settlement. If the IDR 4.8 billion cumulative threshold was breached mid-year, the months after the breach revert to progressive regime; the working paper must split the year cleanly.  _(PP 55/2022)_
-
-## Section 5 — Working paper template: corporate SPT 1771
-
-### 5.1 Induk Form 1771 — line-by-line
-
-**Induk Form 1771 line-by-line table**
-
-| Bagian | Line | Description | Source |
-| --- | --- | --- | --- |
-| **Identitas** | NPWP, NITKU, name, KLU, address, accounting period | All | Intake |
-| **A. Penghasilan Kena Pajak** | 1a | Peredaran usaha (gross revenue) | id-bookkeeping |
-|  | 1b | HPP / cost of goods sold | id-bookkeeping |
-|  | 1c | Laba bruto | Computed |
-|  | 1d | Operating expenses (biaya usaha lainnya) | id-bookkeeping |
-|  | 1e | Laba neto komersial | Computed |
-|  | 2 | Fiscal adjustments (koreksi fiskal positif / negatif) | id-corporate-tax (Lampiran I) |
-|  | 3 | Penghasilan neto fiskal | Computed |
-|  | 4 | Kompensasi kerugian (loss carryforward, up to 5 years per UU PPh Pasal 6) | id-corporate-tax |
-|  | 5 | **Penghasilan Kena Pajak** | Line 3 − Line 4 |
-| **B. PPh Terutang** | 6 | Tax rate applied: 22% standard (UU HPP Pasal 17); or 11% facility on PKP up to IDR 4.8B for entities with revenue ≤ IDR 50B (UU HPP Pasal 31E) | id-corporate-tax |
-|  | 7 | PPh terutang | Line 5 × rate |
-| **C. Kredit Pajak** | 8a | PPh 22 withheld | id-withholding |
-|  | 8b | PPh 23 withheld | id-withholding |
-|  | 8c | PPh 24 foreign tax credit (capped) | id-corporate-tax |
-|  | 8d | PPh 25 monthly installments paid | id-corporate-tax |
-|  | 8e | PPh 26 (if applicable) | id-withholding |
-|  | 8f | Total | Sum |
-| **D. PPh Kurang/Lebih Bayar** | 9 | Line 7 − Line 8f | Computed |
-| **E. Angsuran PPh 25 tahun berikutnya** | 10 | Monthly installment for 2026 | id-corporate-tax |
-
-### 5.2 Lampiran (Schedules) checklist
-
-**Lampiran checklist table (1771)**
-
-| Lampiran | Title | When used |
-| --- | --- | --- |
-| Lampiran I — 1771-I | Penghitungan Penghasilan Neto Fiskal (fiscal reconciliation) | Always |
-| Lampiran II — 1771-II | Perincian Harga Pokok Penjualan, Biaya Usaha Lainnya, dan Biaya dari Luar Usaha | Always |
-| Lampiran III — 1771-III | Kredit Pajak Dalam Negeri | If domestic withholding credits exist |
-| Lampiran IV — 1771-IV | PPh Final dan Penghasilan Yang Tidak Termasuk Objek Pajak | If UMKM Final or non-objek income |
-| Lampiran V — 1771-V | Daftar Pemegang Saham/Pemilik Modal dan Daftar Susunan Pengurus/Komisaris | Always |
-| Lampiran VI — 1771-VI | Daftar Penyertaan Modal Pada Perusahaan Afiliasi, Daftar Pinjaman Antar Pihak Berelasi | If related-party transactions exist (transfer pricing trigger) |
-| Lampiran khusus | Transfer pricing documentation summary (Lampiran 3A / 3B) | If related-party transactions exceed thresholds in PMK 213/2016 |
-
-### 5.3 UMKM PPh Final treatment on 1771
-
-- **UMKM treatment on 1771 and window durations** — If the entity used PP 55/2022 UMKM 0.5% during 2025: The UMKM window is time-limited: 3 years for PT, 4 years for CV/Firma/Koperasi, 7 years for individuals (Orang Pribadi) measured from the start year of UMKM utilisation (PP 55/2022 Pasal 59). Revenue under UMKM goes to Lampiran IV (PPh Final), not the main PKP computation. The reviewer must confirm the entity is within its UMKM window. If 2025 is the final eligible year, this must be flagged so 2026 planning reflects the switch to standard 22% regime.  _(PP 55/2022 Pasal 59)_
-
-## Section 6 — Payment instructions: kode billing & SSP via Coretax
-
-Under PMK 81/2024 (Coretax implementation), all PPh payments are settled by generating a kode billing (15-digit billing code) in Coretax DJP, then paying via bank channel (teller, ATM, internet banking, m-banking) or authorised payment processor. The successful payment generates an NTPN (Nomor Transaksi Penerimaan Negara) which is the proof of payment.
-
-### 6.1 Kode Akun Pajak (MAP) — common codes
-
-**MAP codes table**  _(PMK 81/2024)_
-
-| MAP code | Description | Used for |
-| --- | --- | --- |
-| 411125 | PPh Pasal 25/29 Orang Pribadi | Individual annual settlement (Line 13 on 1770) + monthly PPh 25 |
-| 411126 | PPh Pasal 25/29 Badan | Corporate annual settlement (Line 9 on 1771) + monthly PPh 25 |
-| 411128 | PPh Final | UMKM 0.5% (PP 55/2022); rental 10%; deposit interest 20%; etc. — Kode Jenis Setoran (KJS) sub-code disambiguates |
-| 411121 | PPh Pasal 21 | Monthly employment withholding |
-| 411124 | PPh Pasal 23 | Monthly withholding on services, royalties, etc. |
-| 411127 | PPh Pasal 26 | Withholding on non-residents |
-| 411122 | PPh Pasal 22 | Import / state purchases / pertamina |
-| 411211 | PPN Dalam Negeri | Monthly PPN settlement |
-| 411221 | PPN Impor | Import VAT |
-
-### 6.1 Kode Akun Pajak (MAP) — common codes
-
-TBC — verify current MAP code in Coretax before generating the billing. The list below is the conventional set; Coretax may have introduced new MAP codes since 1 January 2025 transition. Always confirm against the Coretax dropdown at billing time.
-
-### 6.2 KJS (Kode Jenis Setoran) — sub-code
-
-- **KJS sub-code rule** — For each MAP code, a KJS specifies the nature of the payment (e.g., MAP 411125 with KJS 200 = "Tahunan" / annual; KJS 100 = "Masa" / monthly). The reviewer must confirm the correct KJS pairing. Coretax surfaces only the valid combinations once the MAP is selected.
-
-### 6.3 Billing-to-payment flow
-
-1. Log into Coretax DJP with NPWP + password (or DJP-issued certificate for businesses)
-2. Navigate to "Pembuatan Kode Billing" (Generate Billing Code)
-3. Select Jenis Pajak (MAP), KJS, Masa Pajak (tax period), and amount
-4. Generate billing — receives 15-digit ID-Billing valid for 30 days
-5. Pay via authorised channel (bank transfer / Virtual Account / Tokopedia / Bukalapak / Pos Indonesia / etc.)
-6. Receive NTPN (printable / downloadable in Coretax) — this is the legal proof of payment
-7. NTPN auto-feeds into Coretax taxpayer ledger; appears as a credit on the relevant SPT
-
-### 6.4 Payment timing relative to filing
-
-**Payment timing table**
-
-| Payment | Due date | Filing reference |
-| --- | --- | --- |
-| PPh kurang bayar — Individuals (1770) | **Before** filing the SPT 1770 and **no later than 31 March 2026** | Line 13 on 1770 |
-| PPh kurang bayar — Corporates (1771) | **Before** filing the SPT 1771 and **no later than 30 April 2026** | Line 9 on 1771 |
-| Monthly PPh 21 (December 2025) | 10 January 2026 (PMK 81/2024 Article 60) | SPT Masa PPh 21 December |
-| Monthly PPh 25 (December 2025) | 15 January 2026 | Monthly installment |
-| Monthly UMKM Final (December 2025) | 15 January 2026 | SSP via Coretax |
-| Monthly PPN (December 2025) | End of January 2026 | SPT Masa PPN December |
-
-### 6.4 Payment timing relative to filing
-
-- **NTPN existence rule** — The NTPN must exist before SPT submission, otherwise the credit cannot be claimed on the return.
-
-## Section 7 — Filing instructions: Coretax DJP
-
-### 7.1 Filing channels
-
-**Filing channels table**
-
-| Channel | Description | Best for |
-| --- | --- | --- |
-| **Coretax Web — Form Upload** | Generate XML from Coretax Form (preview / fill in browser), download, re-upload | Standard returns |
-| **Coretax Web — Direct Entry** | Fill the SPT directly in the browser | Simple returns (1770SS, 1770S without business income) |
-| **Coretax Web — Bulk XML Upload** | For taxpayers using third-party software that exports the DJP-compliant XML | Corporates with ERP integration |
-| **Coretax Mobile App** | Limited subset (1770SS / simple individual) | Salaried individuals with single employer |
-
-### 7.2 Submission steps
-
-1. Pay first — all kurang bayar amounts must be settled (NTPN issued) before submission
-2. Log into Coretax (NPWP + password; or sertifikat elektronik for badan)
-3. Navigate to "SPT Tahunan" → select form type (1770 / 1770S / 1770SS / 1771)
-4. Upload supporting documents:
-   - Form 1721-A1 (employer's PPh 21 statement) for individuals with employment income
-   - Bukti Potong PPh 22 / 23 / 4(2) for any withholding credits claimed
-   - Laporan Keuangan (financial statements) for individuals using progressive regime with business income AND for all corporates
-   - Audit report (Laporan Auditor Independen) for corporates required to audit (revenue / assets thresholds per UU PT)
-5. Validate — Coretax runs schema and arithmetic checks; resolve any errors
-6. Submit — receive BPE (Bukti Penerimaan Elektronik) with a 19-digit BPE number and timestamp
-7. Save BPE — this is the legal proof of filing and must be retained
-
-### 7.3 Deadlines (tax year 2025)
-
-**Deadlines table**
-
-| Filer type | SPT form | Deadline |
-| --- | --- | --- |
-| Individual (Orang Pribadi) | 1770 / 1770S / 1770SS | **31 March 2026** (UU KUP Pasal 3 ayat 3 huruf b) |
-| Corporate (Badan) | 1771 | **30 April 2026** (UU KUP Pasal 3 ayat 3 huruf c) |
-| Extension request | Form 1770-Y or 1771-Y | Filed before the original deadline; extension is max 2 months; interest accrues on any underpayment |
-
-### 7.4 Late filing penalties
-
-**Late filing penalties table**
-
-| Filer | Penalty | Basis |
-| --- | --- | --- |
-| Individual | IDR 100,000 (administrative fine) | UU KUP Pasal 7 |
-| Corporate | IDR 1,000,000 (administrative fine) | UU KUP Pasal 7 |
-| Late payment | 2% interest per month (capped at 24 months), now linked to MoF benchmark interest rate under UU HPP | UU KUP Pasal 9 ayat 2a |
-
-## Section 8 — Reviewer brief contents
-
-The reviewer brief is a single markdown file the warranted reviewer (Konsultan Pajak bersertifikat) reads before sign-off.
-
-```markdown
-# Complete Return Package — [Taxpayer Name] — Tax Year 2025
-
-## Executive Summary
-- Filing entity: [Orang Pribadi / Badan (PT / CV / Koperasi)]
-- NPWP: [16-digit]
-- NITKU: [if applicable]
-- KLU: [code + description]
-- Tax regime: [Progressive PPh OP / PPh Badan 22% / UMKM PP 55/2022 0.5% Final]
-- VAT status: [PKP / non-PKP]
-- SPT form: [1770 / 1770S / 1770SS / 1771]
-- PPh terutang: IDR X
-- Total kredit pajak: IDR X
-- PPh kurang/lebih bayar: IDR X
-- Filing deadline: [31 March 2026 / 30 April 2026]
-
-## Income Tax Computation
-[From id-income-tax or id-corporate-tax]
-- Line-by-line working paper of the Induk form
-- Fiscal reconciliation (Lampiran I-1771) for corporates
-- Loss carryforward schedule for corporates
-- Foreign tax credit computation (PPh 24) if applicable
-
-## UMKM Final Tax (if applicable)
-[From id-pph-final-umkm]
-- Monthly SSP register with NTPN
-- Cumulative turnover tracker
-- UMKM window remaining (years left under PP 55/2022)
-- IDR 4.8B threshold guard
-
-## Payroll & PPh 21
-[From id-payroll-pph21]
-- Form 1721 A1 summary (annual employer return)
-- Monthly TER reconciliation
-- December true-up
-- BPJS reconciliation
-
-## VAT (if PKP)
-[From indonesia-vat]
-- Annual SPT Masa PPN summary
-- Output / input VAT reconciliation
-- Cross-check to PPh revenue
-
-## Withholding (PPh 22 / 23 / 4(2) / 26)
-[From id-withholding]
-- As recipient: list of Bukti Potong claimed as credits
-- As withholding agent: monthly SPT Masa compliance
-
-## Cross-Skill Reconciliation
-- Revenue reconciliation: [pass/fail]
-- PPh credits add up: [pass/fail]
-- UMKM monthly SSPs reconcile: [pass/fail]
-- PPh 21 annual vs monthly: [pass/fail]
-- Withholding agent compliance: [pass/fail]
-- VAT-to-PPh consistency: [pass/fail]
-
-## Reviewer Attention Flags
-- Items requiring Konsultan Pajak confirmation
-- Mixed-use expenses; entertainment with no nominatif list (UU PPh Pasal 6 - non-deductible if no list)
-- Related-party transactions (transfer pricing trigger per PMK 213/2016)
-- UMKM window expiring
-- Approaching IDR 4.8B threshold
-- Bukti Potong without matching NTPN
-
-## Positions Taken
-[List with legislation citations]
-- e.g., "UMKM 0.5% applied on IDR X turnover — PP 55/2022 Pasal 56"
-- e.g., "Article 31E facility applied: 11% on PKP up to IDR 4.8B — UU HPP Pasal 17(2b)"
-- e.g., "Entertainment expenses included in nominatif list — UU PPh Pasal 6 ayat 1(a)"
-
-## Planning Notes for 2026
-- Monthly PPh 25 installments for 2026
-- UMKM window monitoring
-- VAT threshold (IDR 4.8B PKP threshold)
-- Anticipated transfer pricing documentation requirements
-- Legislative changes effective 1 January 2026 (if any)
-```
-
-## Section 9 — Final taxpayer action list
-
-```markdown
-# Action List — [Taxpayer Name] — Tax Year 2025
-
-## Immediate (before SPT filing deadline)
-
-### For individuals — deadline 31 March 2026:
-1. Generate kode billing for PPh kurang bayar of IDR X (MAP 411125, KJS 200) in Coretax
-2. Pay via bank channel; obtain NTPN
-3. Confirm all monthly PPh 21 (Dec 2025) settled (MAP 411121)
-4. Confirm December PPh 25 installment (MAP 411125, KJS 100) settled
-5. Confirm December UMKM Final (MAP 411128) settled, if applicable
-6. Upload documents in Coretax → submit SPT 1770 → save BPE
-
-### For corporates — deadline 30 April 2026:
-1. Generate kode billing for PPh Badan kurang bayar of IDR X (MAP 411126, KJS 200)
-2. Pay via bank channel; obtain NTPN
-3. Confirm all monthly PPh 21 (Dec 2025) settled (MAP 411121)
-4. Confirm December PPh 25 installment (MAP 411126, KJS 100) settled
-5. Confirm December UMKM Final (MAP 411128) settled, if applicable
-6. Attach audited financial statements (if revenue / asset thresholds breached)
-7. Upload documents in Coretax → submit SPT 1771 → save BPE
-8. File Form 1721 A1 (annual PPh 21 employer return) — deadline 31 March 2026
-
-## Monthly compliance through 2026
-
-| Item | MAP | Due |
+| Package | Consume | Working-paper destination |
 |---|---|---|
-| PPh 21 (monthly) | 411121 | 10th of following month |
-| PPh 25 (monthly installment) | 411125/126 KJS 100 | 15th of following month |
-| UMKM Final 0.5% (if applicable) | 411128 | 15th of following month |
-| PPh 23 / 4(2) withheld | 411124 / 411128 | 10th of following month |
-| SPT Masa PPN (if PKP) | 411211 | End of following month |
+| `id-bookkeeping` | Trial balance, income/cost records, financial statements, fixed assets, NPPN notice/classification and supporting gross/net evidence | Commercial accounts, business/professional income, fiscal reconciliation and asset/liability evidence |
+| Indonesian ordinary individual computation | Separately documented ordinary net-income, permitted loss, PTKP, PKP, progressive tax and foreign-credit calculation | Ordinary individual tax calculation and credit schedule; a missing computation is an explicit gap |
+| `id-corporate-tax` | Commercial-to-fiscal bridge, losses by year, Article 31E/other lawful rate and instalment basis | Ordinary company tax, fiscal adjustment, losses and next-year instalment schedules |
+| `id-pph-final-umkm` | Eligibility, actual activity, connected-taxpayer ceiling, election/transition history, monthly turnover, individual relief and final deposits/collections | Final-income schedule, monthly reconciliation and following-year regime decision |
+| `id-payroll-pph21` | Employment gross/net and final-period withholding evidence as recipient; payroll costs and obligations as employer | Individual employment income/credit schedule OR employer expense/agent compliance, never the same tax credit twice |
+| `indonesia-vat` | Monthly output/input, exempt/non-taxable/export supplies, actual invoice bases, payment/collection and compensation history | Separate VAT reconciliation and revenue bridge; only supported non-recoverable costs affect income-tax profit |
+| `id-withholding` | Recipient slips and separately agent returns, payee evidence and payment register | Eligible own non-final credit register, final-income settlement and separate agent-compliance schedule |
+| `id-einvoice-coretax` | Applicable return/certificate/invoice process, billing and accepted-return evidence | Ready-to-file checklist, unresolved portal fields and payment/filing evidence |
 
-## Record retention
+**Routing safeguard:** `id-income-tax` is a US Idaho skill in this repository. Never load it for Indonesia. There is no verified Indonesian companion with that slug. If an ordinary individual computation is absent, name that gap and obtain a computation under Indonesian law, rather than substituting another jurisdiction. The protected accountant-approved `id-withholding` is not rewritten here; its old deposit-day, VAT and UMKM statements must not override the current primary rules below.
 
-Per UU KUP Pasal 28 ayat 11, accounting records must be retained for 10 years in Indonesia. This includes:
-- General ledger and supporting documents
-- Bukti Potong issued and received
-- Faktur Pajak (PPN invoices)
-- SSP / NTPN receipts
-- BPE filing receipts
+### Document packet
 
-Records must be kept in Indonesia (Pasal 28 ayat 11) — offshore storage requires DJP approval.
+For individuals collect business/professional income by method, employment slips, domestic non-final withholding, permitted foreign credits, final/exempt income, assets at year end, liabilities, family members, loss/instalment evidence and any separate-spouse computation. For entities collect management/statutory accounts and audit report only where required, fiscal reconciliation, costs, depreciation/amortisation, losses, shareholdings, owners/directors/commissioners, connected-party investments/loans/transactions and TP disclosures. An absent prior return may be legitimate for a new entity; obtain registration evidence and use its correct instalment category instead of fabricating a prior-year basis.
+
+## The method, step by step
+
+## Rates, bands and thresholds
+
+| Item | Supported rule and limits | Official source |
+|---|---|---|
+| Individual annual deadline | Three months after tax-year/part-year end; calendar 2026 ordinarily 31 March 2027 | [KUP art. 3(3)(b); PER-3 art. 4](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-3](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Entity annual deadline | Four months after tax-year/part-year end; calendar 2026 ordinarily 30 April 2027 | [KUP art. 3(3)(c); PER-3 art. 4](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-3](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Annual extension | Up to two months by timely valid notification with the required provisional computation, statements and payment evidence, not an automatic payment deferral | [KUP art. 3(4)-(5)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-3 arts. 5-6](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Ordinary monthly income-tax deposit | Fifteenth of following month for the listed PPh categories, with stated exceptions and actual holiday adjustment | [PMK 81 arts. 94 and 100](https://pajak.go.id/en/node/113110) |
+| Ordinary monthly withholding return | Twenty days after period end, with applicable specific/exception rules | [KUP art. 3(3)(a)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Monthly VAT balance | End of following month and before return submission, with its own applicable holiday/period rule | [PMK 81 art. 94(3)(e)-(f)](https://pajak.go.id/en/node/113110) |
+| Final turnover tax | 0.5% qualifying monthly gross; individual annual untaxed portion IDR 500,000,000, no company allowance | [PP 55 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164 art. 6](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau) |
+| Final-tax ceiling | IDR 4,800,000,000 under the actual eligibility and connected-taxpayer test; current-year crossing and permanent-exit rules differ | [PP 20 amended arts. 57-58](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PP 55 art. 61](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan) |
+| Ordinary company rate | 22%; Article 31E fifty-percent rate reduction relates to income PROPORTIONAL to qualifying turnover, not an untaxed or low-rate first slice of profit | [Income Tax Law arts. 17,31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Article 31E boundaries | Turnover at most IDR 50,000,000,000; first IDR 4,800,000,000 of turnover determines the proportional eligible income | [Income Tax Law art. 31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Ordinary loss carryforward | Five consecutive following tax years, with separate granted extensions if applicable | [Income Tax Law art. 6(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late annual return fine | Individual IDR 100,000; entity IDR 1,000,000, subject to statutory exceptions and period-specific relief | [KUP art. 7](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late-payment interest | Actual ministerial monthly rate, at most twenty-four months where art. 9 applies, part-month in full; no fixed percentage or daily proration | [KUP art. 9(2a)-(2c)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Records | Ten years in Indonesia for books, records and supporting electronic data | [KUP art. 28(11)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+
+### 1. Build the status and evidence register
+
+Each upstream output receives taxpayer, period, currency, preparation date, source/method version, confirmed facts, assumptions, missing facts and reviewer status. Identify whether an output is original, replacement or amended. A prefill is a starting point, not proof of completeness. Keep blank values distinct from nil, unavailable documents distinct from no transaction, and an unverified credit distinct from an invalid credit. Maintain copies and document IDs for every return, slip, state receipt, assessment, compensation/refund and extension used.
+
+Do not silently absorb a failed upstream check or invent its missing calculation. Continue assembling supported sections and produce a gap list. A balance or filing-ready statement dependent on an unresolved material fact stays blocked until resolved, even if the workbook can be built. This preserves the original run-through workflow while correcting its instruction to treat every failed check as merely advisory.
+
+### 2. Reconcile revenue across books, VAT and each income-tax base
+
+Start from total commercial income and bridge by actual income category, entity, cash/accrual timing, advances, foreign exchange, returns/discounts, exemptions, final/non-final separation, branches and related-party flows. VAT annual DPP is not automatically annual bookkeeping turnover. Under the ordinary PMK 131 method the VAT base can be eleven-twelfths of actual price; special bases/rates and exports create further differences. Reconcile to commercial selling price before comparing the totals. [PMK 131 arts. 2-4](https://jdih.kemenkeu.go.id/api/download/f128868e-3cf6-4596-8407-c34eeca0e7be/2024pmkeuangan131.pdf).
+
+Final-tax monthly gross is received or accrued qualifying business turnover before discounts, with its own statutory exclusions and individual untaxed portion. The eligibility ceiling uses the wider business/professional and connected-taxpayer test. Do not equate the ceiling, the final-tax base, general-rate gross income and VAT DPP. Construction/final rental and other separately taxed items stay in their own schedules, with supporting classification. Intra-group movements are not automatically eliminable in a resident company's separate return. [PP 55 arts. 60-61](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20 amended arts. 56-58](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+Record every variance and its documentary reason. The old IDR 1,000/100,000 bands were internal workflow thresholds, not a legal rounding allowance. A reviewer may set operational triage levels, but no unexplained difference is silently written off and a material unresolved variance blocks a filing-ready total. Preserve actual required form rounding separately from reconciliation errors.
+
+### 3. Reconcile the taxpayer's own credits and annual balance
+
+Create separate columns for tax due, eligible own non-final PPh 21/22/23, permitted art. 24 foreign credit, own PPh 25 instalments, final income/settlement, and tax deducted by the taxpayer as an agent from someone else's income. A resident company does not claim employee PPh 21 as its own corporate credit. Withholding/remittance on a supplier payment is an agent liability, not the company's own credit. PPh 26 credits have limited statutory exceptions and need separate legal analysis; do not add them universally to resident-company credits. [Income Tax Law arts. 21-26](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+Reconcile each own credit to a valid slip, taxpayer, income, year/period and prefill/confirmation. A recipient should not automatically lose a valid credit merely because the withholding agent's own NTPN was not supplied to them. Investigate the actual evidence rule and missing slip; leave a provisional credit visibly pending rather than permanently disallow it or invent a receipt. Self-paid instalments and annual balances require the payer's own state-receipt evidence. Foreign credits need actual income/category/country, tax evidence and the permitted cap; absence of a certificate of residence alone does not establish universal denial. The detailed foreign-credit computation is upstream specialist work.
+
+Annual ordinary balance = ordinary tax liability minus lawful own non-final credits and own instalments. Final turnover tax is not another ordinary credit. If credits exceed liability, show the supported negative balance and apply the lawful overpayment/refund process; do not cap credits at tax liability to conceal the excess. Do not promise a refund or automatically carry it forward without the proper return and procedure. Preserve final and exempt income disclosure separately.
+
+### 4. Reconcile final turnover tax and its transitions
+
+Use the monthly tracker, cumulative individual allowance, certificate/turnover statements, final-tax slips and actual self-deposits. Do not demand a self-deposit for tax already validly collected by a customer, and do not require 0.5% of ALL individual annual turnover when the untaxed portion applies. A company does not borrow the individual's allowance. Reconcile a tax-not-due refund request separately from ordinary credits. [PP 55 arts. 60,62-63](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164 arts. 6-9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+A taxpayer whose current-year turnover exceeds the ordinary ceiling can continue the statutory final treatment through the crossing year under art. 61, then apply the following-year rule. It does not switch to progressive/corporate tax in the next month merely because the ceiling was crossed. Apply the new owner/company aggregation, permanent election/exit and exact art. II transitions separately. [PP 55 art. 61](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20 amended arts. 57-59 and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+The old annual package's universal PT-three/CV-four/individual-seven-year grid is not a 2026 eligibility rule. Article 59 is deleted; qualifying individuals and single-founder companies have the amended general rule, cooperatives have the stated period and historical transition, and ordinary PT/CV/firma/BUMDes retain only the exact earlier entitlement allowed by art. II. Preserve registration, initial clock, earlier notices and certificate history. Do not treat unknown history as the final eligible year, manufacture a new election or prescribe automatic bookkeeping without checking possible NPPN eligibility. The complete calculation/transition analysis belongs to `id-pph-final-umkm`.
+
+### 5. Reconcile employment and employer obligations
+
+As an employee, reconcile employment gross, permitted deductions, final-period liability, earlier TER withholding, any employee refund and the actual employer-issued annual/final-period certificate. As employer, reconcile payroll expense, taxable benefits, contribution liabilities, employee withholding, monthly returns, tax receipts and certificates issued. Include the last employment period's true-up, which may be earlier than December; do not insist that every employee stayed to year end. [PMK 168 arts. 5-10,15,20-22](https://www.pajak.go.id/id/peraturan/petunjuk-pelaksanaan-pemotongan-pajak-atas-penghasilan-sehubungan-dengan-pekerjaan-jasa-1).
+
+An annual salary-withholding certificate, historically called 1721-A1/A2, is not a separate annual employer tax return due on the individual's annual deadline. Do not instruct the employer to file a new March annual return based solely on that slip name. Current PER-12 amended arts. 6-7 name BPA1 for the specified permanent/periodic-pension employees and BPA2 for the specified public-service category; these final-period certificates are provided within one month after the final period ends. BP21 and BP26 cover other resident and non-resident personnel payments and are delivered whenever made under the prescribed transaction/period process. [PER-12 arts. 6-7](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan). Withholding from consultants/non-employees and non-residents is classified separately, not slipped into employee wages or a resident company's own credit.
+
+### 6. Reconcile the business as a withholding agent
+
+For wages, professional fees, service/royalty/interest payments, rentals, construction and non-resident payments, obtain actual contract, payer status, recipient/category/residence, gross/base/VAT components, tax point, treaty or certificate where relevant, tax withheld, slip issued, deposit and monthly return. Keep PPh 21/26 personnel returns distinct from PPh Unifikasi and any special collection rule. Do not assume every individual payer is a withholding agent or every consultant is subject to supplier-company PPh 23.
+
+Missing withholding is a compliance issue, but the remedy, payment and sanction depend on its actual legal provision and period. The old fixed two-percent monthly interest instruction is not current art. 9 guidance. Use the current deposit and applicable correction rule and compute interest from the official ministerial rate if required. Do not file or pay automatically. [PMK 168 arts. 2,19-22](https://www.pajak.go.id/id/peraturan/petunjuk-pelaksanaan-pemotongan-pajak-atas-penghasilan-sehubungan-dengan-pekerjaan-jasa-1); [PMK 81 arts. 94 and 100](https://pajak.go.id/en/node/113110); [KUP art. 9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+### 7. Reconcile VAT and fiscal costs without double claims
+
+Reconcile each period's output tax, creditable input, non-creditable input, imports, foreign services/PMSE evidence, government/other collector evidence, advances, exports, exempt/non-taxable supplies and prior compensation. A credited input tax is not also an expense or asset cost. Non-recoverable input is considered for cost/capitalisation under the underlying income-tax/business-purpose rules; it is not universally deductible merely because VAT credit was unavailable. Capital goods follow their actual credit/cost treatment and depreciation. Final-tax or exempt-income expenses must not automatically shelter ordinary taxable income. Keep the original P&L-to-VAT and asset checks; obtain the correct source and explanation where a difference exists.
+
+For corrections submitted from 1 October 2026, apply PER-12's amended rules to the tax periods/years it covers. VAT corrections account for prior deposits/refunds and adjust compensation balances; the next unfiled normal period may receive a positive or negative adjustment. Do not force every intervening month to be amended or pay a second time merely because a replacement return shows the full liability. Distinguish earlier pending filings covered by the transition and legacy periods. [PER-12 amended arts. 29A-29E and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
+
+### 8. Assemble the individual ordinary and final schedules
+
+The workbook preserves the old working-paper components without pretending they are current form line numbers:
+
+| Working schedule | Components retained and checks |
+|---|---|
+| Identity/period | Taxpayer, actual residence/subjection year, legal type, NPWP/NIK, relevant location/NITKU, actual KLU, address, family/PTKP and signer [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Ordinary net-income bridge | Business net profit OR permitted NPPN result; professional net income; employment net income; other ordinary domestic income; foreign net income and underlying documents [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Taxable-income bridge | Supported income aggregation, permissible loss/adjustment, applicable PTKP, zero floor and statutory rounding, then the documented progressive computation [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Own credit register | PPh 21/22/23 and allowed foreign credit, taxpayer/year/slip, actual own instalments and annual balance; final withholding separate [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Final and exempt income | Qualifying final-business receipts, specific rental/construction/interest/dividend/gain treatment and actual exemption evidence, not universal copied passive-income rates [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Assets and liabilities | Year-end assets/debts and their documentary/cash-flow bridge, including changes and ownership/location, not only balances visible in the bank [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Family/spouse | Family members, actual dependant support and joint/separate spouse treatment with necessary supporting computation [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Following-year instalments | Actual ordinary/special taxpayer basis and effective period; do not subtract own instalments again [Filing framework; current field mapping not yet confirmed](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+
+
+Old labels such as Lampiran I-IV/V and 1770 Induk Parts A-G are preserved only in the source-to-destination record. The old precise ordering/line numbers and 60-million salaried-form shortcut are retired as current instructions because the actual 2026 form map was not read. Pick the applicable current return from its official instructions and map each verified component before sign-off. Do not drop an asset, final receipt or family disclosure because the old form label changed. [PER-3 arts. 2-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+
+### 9. Assemble the entity ordinary and final schedules
+
+The company workbook preserves commercial turnover, COGS, gross profit, operating/other costs, commercial profit, positive/negative fiscal adjustments, net fiscal income, year-by-year losses, PKP, applicable ordinary/facility tax, lawful credits, instalments and annual balance. Article 31E is a turnover-proportional reduction, not eleven percent on the first IDR 4.8 billion of profit. A listed-company reduction or incentive needs its separately supported interaction/grant; do not stack an old recipe by default. [Income Tax Law arts. 6,9,17,25,31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+Keep schedules for COGS/cost details, domestic-credit evidence, final/exempt income, shareholders/owners and directors/commissioners, investments in affiliates, related-party loans/transactions, assets/depreciation/amortisation, losses and applicable TP summaries. An audit report attaches only where legally required; management statements are not automatically unacceptable. The old 1771-I through VI and special 1A/1B/2A/3A references are historical component names, not a certified 2026 Coretax map. Keep the actual effective form and source beside the final mapping.
+
+Final-tax company income goes to the final schedule, not ordinary PKP and not an ordinary credit. Use the company's actual PP 20 transition and no individual's untaxed-turnover allowance. Employment tax paid as employer is its own liability/expense issue, not its own PPh 21 tax credit. Do not claim PPh 26 paid to a supplier as a resident-company credit without a specific applicable exception.
+
+### 10. Prepare billing/payment instructions from confirmed current codes
+
+Prepare a draft payment schedule, not a live billing code. Record taxpayer, actual tax article, payment type, period/year, original/correction/assessment reference, amount and source. The original MAP catalogue retained these historical mappings: 411125 individual PPh 25/29, 411126 entity PPh 25/29, 411128 final income tax, 411121 PPh 21, 411124 PPh 23, 411127 PPh 26, 411122 PPh 22, 411211 domestic VAT and 411221 import VAT. The earlier KJS 100/monthly and 200/annual examples and fifteen-digit code description are historical, not validated current pairings. **Not yet confirmed:** the exact applicable 2026 KAP/MAP-KJS combinations, current billing-code length and each portal field for this transaction. Do not generate a code or prescribe a thirty-day expiry from that old catalogue. Amended billing art. 5 provides 336 hours, or fourteen times twenty-four hours from issue; this does not extend the legal payment deadline. [PER-8/PJ/2026](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan).
+
+The authorised filer selects the correct obligation/current combination, generates or uses the valid bill through the supported channel, checks payee/state destination and amount, pays once and retains the BPN/NTPN/equivalent state receipt plus ledger allocation. A bank debit or marketplace receipt alone is not the state-payment identifier. Prevent duplication when a customer/collector already settled tax. Confirm the actual receipt and the correct liability/year/period rather than assume every payment automatically becomes a credit in the next return. Current payment-code detail belongs to `id-einvoice-coretax` and the official operative annex used for the actual transaction.
+
+For an annual underpayment, settlement is before submission and not beyond the applicable deadline, subject to any lawful extension/payment arrangement. For monthly obligations use their own payment/filing rules. VAT and import collections can differ from ordinary PPh deposits. A recipient withholding credit does not universally require that recipient to possess the agent's NTPN. Keep those distinct. [PMK 81 arts. 94-100](https://pajak.go.id/en/node/113110).
+
+### 11. Prepare submission and receipt evidence
+
+The taxpayer or authorised filer checks current account/signer authority, correct period and original/corrected status, current form, supported portal/integrated application, and actual required attachments. Assemble employment/other slips, financial statements where required, any required audit report, losses/fixed-asset/TP disclosures and statutory statements. Do not advertise every old form on a generic mobile/XML/offline channel or promise an unconfirmed current upload schema. PER-3 permits current electronic/integrated channels and has distinct paper rules; a taxpayer required to file electronically does not meet the obligation by an unauthorised paper substitute. [PER-3 arts. 7-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+
+Run the return's schema and arithmetic validation, resolve substantive blockers, have the original professional review completed, then the authorised person submits. Retain the actual accepted receipt, timestamp, return version and all attachments. A saved draft, invoice, tax bill, payment receipt or generic upload-success message is not an accepted annual return. Do not hard-code the old nineteen-digit BPE number claim as a validation rule. Save the actual evidence required by the current channel and check acceptance/status rather than inventing success.
+
+Extensions require the actual timely notification, provisional computation/statements, relevant payment and authority evidence. A PDF named extension is not proof that the requested period was accepted. Track original due date, valid extended due date, provisional/full liability and any interest separately. [PER-3 arts. 5-6](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
+
+For an annual correction in PER-12's scope, account for prior PPh 29 payments and specified refunds/decisions before determining a further balance. The latest accepted correction governs under art. 129A; art. 129B has a specific consequence for an earlier annual payment-instalment/deferral decision. Preserve every earlier return, receipt, refund and decision, and refer where an audit/investigation limits correction. Do not prepare an extra annual payment simply by comparing the corrected return's full tax to zero. [PER-12 amended arts. 80A,129A-129B and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
+
+### 12. Prepare following-year planning without changing the return
+
+Ordinary PPh 25 uses prior liability less the eligible withholding/foreign credits, not less prior PPh 25 again. The number of applicable year/part-year months and actual filing/extension/correction date matter; it does not universally start in January or May on a newly invented basis. Carry forward the final preceding-year instalment where art. 25(2) applies. Ordinary new taxpayers, periodic-statement entities, OPPT and mergers/splits/conversions have separate PMK 81 arts. 226-237 rules; first ordinary-rate years after final tax also need PMK 164 art. 16. [Income Tax Law art. 25](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PMK 81](https://pajak.go.id/en/node/113110); [PMK 164](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+Re-evaluate final-tax eligibility/elections, connected turnover, cooperative/legacy transition and permanent exclusion from the actual amended law. Consider NPPN notice and bookkeeping duties separately. Reconcile VAT status and registration/effective period under PMK 164 independently of the income-tax choice; it is not always registration before crossing or an immediate VAT-start rule. Keep a dated action list and identify any rule not yet published for the future period.
+
+For related-party work, PMK 172 art. 16 master/local thresholds use preceding-year gross turnover and related-party categories, plus the lower-tax-jurisdiction trigger; being below the thresholds does not remove arm's-length duties. Domestic-parent CbCR uses an inclusive consolidated threshold. Files' availability, summaries, notification and submission are distinct. Use `id-corporate-tax` and the actual source, not PMK 213/2016 copied deadlines. Master/local files are available within four months, CbCR within twelve; art. 19 treats annual-return summaries/reporting separately. A cash transfer to an affiliate is not exempt just because no documentation threshold is met. [PMK 172 arts. 16-19](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan).
+
+## Boundary and exception table
+
+| Retained refusal/check | Action and completion condition |
+|---|---|
+| R-ID-ASM-1: upstream method missing | Name the missing method/computation, continue supported sections, do not invent a result or load Idaho |
+| R-ID-ASM-2: upstream self-check failed | Preserve the exact failure and dependent schedules; block a filing-ready claim if the tax result is unresolved |
+| R-ID-ASM-3: reconciliation discrepancy | Document every difference and evidence; internal triage thresholds never authorise an unexplained write-off |
+| R-ID-ASM-4: special VAT, extractive contracts, BUT, CFC, tax holiday or KEK | Preserve the data and named specialist gap; no unsupported special computation |
+| R-ID-ASM-5: non-resident, part-year or expatriate-special/treaty facts | Refer the actual residence/source/period computation; no full-year assumptions silently imposed |
+| R-ID-ASM-6: identifier or intake fact missing | Label draft fields; no invented KLU/NITKU/NPWP, family status or filing-ready completion |
+| R-ID-ASM-7: asked to submit | Produce instructions and workpapers only; submission belongs to the taxpayer/authorised filer after required review |
+| Missing slip, receipt or credit cap evidence | Keep provisional claim and document request separate from a legally invalid claim; no automatic confiscation of supported excess credits |
+| Unclear audit requirement | Obtain actual legal category/threshold and financials; do not make every company audit or invent a current threshold |
+| Missing current form/code | Continue conceptual schedule assembly, but hold field mapping/payment instructions until official period-specific confirmation |
+
+## Worked cases
+
+### Case 1. Final individual turnover is not an ordinary-income tax credit
+
+Assume the upstream final-tax method has established full eligibility, no opt-out, individual turnover IDR 1,200,000,000 evenly over the year and the annual untaxed portion IDR 500,000,000. Its computed final tax is 3,500,000. Actual final amounts are 1,000,000 collected by customers and 2,500,000 self-deposited, so final settlement reconciles with no extra payment. Separately the supplied ordinary employment/professional computation has tax 29,550,000 and lawful ordinary credits 20,000,000, leaving 9,550,000; subtracting final tax again would wrongly show 6,050,000. These are upstream supported case inputs, not proof that any unclassified worker qualifies for final business tax. [PP 55 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164 arts. 6-9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+```oa-check
+name: Separate final settlement from ordinary annual credits
+inputs:
+  final_turnover: 1200000000
+  individual_untaxed: 500000000
+  final_rate: 0.005
+  final_collected: 1000000
+  final_self_paid: 2500000
+  ordinary_tax: 29550000
+  ordinary_credits: 20000000
+steps:
+  - final_due: max(final_turnover - individual_untaxed, 0) * final_rate
+  - final_settled: final_collected + final_self_paid
+  - final_remaining: final_due - final_settled
+  - ordinary_balance: ordinary_tax - ordinary_credits
+  - incorrect_ordinary_balance: ordinary_balance - final_due
+expected:
+  final_due: 3500000
+  final_settled: 3500000
+  final_remaining: 0
+  ordinary_balance: 9550000
+  incorrect_ordinary_balance: 6050000
 ```
 
-## Section 9 — Final taxpayer action list
+### Case 2. Company annual settlement and next-year instalment bases differ
 
-**Monthly compliance through 2026**
+The supplied ordinary PT computation establishes turnover 6,000,000,000, PKP 1,500,000,000, Article 31E proportional slice 1,200,000,000 at eleven percent and remaining 300,000,000 at twenty-two percent, tax 198,000,000. PPh 22/23 total 40,000,000 and own instalments total 80,000,000. Annual balance is 78,000,000. The ordinary following-year instalment numerator is 158,000,000, not 78,000,000: the earlier instalments are not deducted again. The exact monthly rounding/effective period needs the actual return/filing history and current rule. [Income Tax Law arts. 25,31E](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
 
-| Item | MAP | Due |
-| --- | --- | --- |
-| PPh 21 (monthly) | 411121 | 10th of following month |
-| PPh 25 (monthly installment) | 411125/126 KJS 100 | 15th of following month |
-| UMKM Final 0.5% (if applicable) | 411128 | 15th of following month |
-| PPh 23 / 4(2) withheld | 411124 / 411128 | 10th of following month |
-| SPT Masa PPN (if PKP) | 411211 | End of following month |
+```oa-check
+name: Company final settlement versus ordinary instalment numerator
+inputs:
+  turnover: 6000000000
+  eligible_turnover: 4800000000
+  taxable: 1500000000
+  ordinary_rate: 0.22
+  reduced_rate: 0.11
+  own_withholding: 40000000
+  own_instalments: 80000000
+steps:
+  - reduced_slice: taxable * eligible_turnover / turnover
+  - remaining_slice: taxable - reduced_slice
+  - tax: reduced_slice * reduced_rate + remaining_slice * ordinary_rate
+  - annual_balance: tax - own_withholding - own_instalments
+  - following_numerator: tax - own_withholding
+  - incorrect_numerator: following_numerator - own_instalments
+expected:
+  reduced_slice: 1200000000
+  remaining_slice: 300000000
+  tax: 198000000
+  annual_balance: 78000000
+  following_numerator: 158000000
+  incorrect_numerator: 78000000
+```
 
-## Section 9 — Final taxpayer action list
+## When to refuse or refer
 
-- **Record retention period** — Per UU KUP Pasal 28 ayat 11, accounting records must be retained for 10 years in Indonesia, including general ledger and supporting documents, Bukti Potong issued and received, Faktur Pajak (PPN invoices), SSP/NTPN receipts, and BPE filing receipts. Records must be kept in Indonesia (Pasal 28 ayat 11) — offshore storage requires DJP approval.  _(UU KUP Pasal 28 ayat 11)_
+Apply R-ID-ASM-1 to 7 above. Continue useful draft preparation but do not manufacture a completed computation, acceptance receipt, authority, code or accountant sign-off. If the user asks how to resolve an open tax fact, search the actual cited Indonesian law and document first; refer the bounded unanswered question with its evidence where necessary. A bank-only package with unsupported gross, credits, residence, method or material reconciliation cannot become filing ready merely because every worksheet tab exists.
 
-## Section 10 — 2026 planning notes
+## Completion checklist and reviewer brief
 
-The capstone produces a forward-looking section so the taxpayer arrives at next year's filing with no surprises.
+Retain all original ID-ASM-1 through 13 checks, corrected as follows:
 
-### 10.1 Monthly PPh 25 for 2026
+1. Every required upstream computation is present or explicitly missing, including ordinary individual income tax where needed.
+2. Commercial revenue, VAT price/base and income-tax bases reconcile through explicit documented adjustments, without an invented tolerance write-off.
+3. Own non-final credits, foreign cap and instalments reconcile to the appropriate evidence; agent taxes and final settlement stay separate.
+4. Final-tax monthly turnover, individual untaxed portion and actual customer collections/self-deposits reconcile; no duplicated payment or instant crossing-month regime switch.
+5. Payroll final-period liability and employment certificates reconcile to monthly withholding/refunds; no fictitious annual employer return.
+6. Entity fiscal reconciliation and loss year/usage schedule support PKP and the actual ordinary/facility computation.
+7. The actual amended final-tax eligibility, transition/election and following-year position are named, with unresolved facts preserved.
+8. Current payment article/code/period and annual balance are confirmed, or clearly marked unconfirmed with no code generated.
+9. The actual annual deadline/extension and payment-before-submission rule are stated; monthly tax, BPJS, certificate and return obligations are separated.
+10. Retention of books and supporting electronic evidence for ten years in Indonesia is recorded, without inventing an offshore-storage approval route. [KUP art. 28(11)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+11. Every tax position has its operative legal source, period, method/version and actual assumption/evidence.
+12. Accepted-return receipt, complete return and attachments are retained separately from payment receipts and drafts.
+13. The original professional review and taxpayer/authorised-filer submission responsibility remain clear; no success/sign-off is invented.
 
-- **PPh 25 monthly installment formula** — Individuals (PMK 215/PMK.03/2018): PPh 25 monthly = (PPh terutang 2025 − all kredit pajak 2025) ÷ 12, paid by the 15th of each month from January 2026 via MAP 411125 KJS 100. Corporates: Same formula; MAP 411126 KJS 100. New businesses / first year of progressive regime: PPh 25 = 0 for the months before the first full assessment year; first installment is the month after registration / breach of UMKM threshold.  _(PMK 215/PMK.03/2018)_
+The reviewer brief contains: executive summary with identity/period/regimes/PKP and supported balances; ordinary income-tax computation and fiscal bridge; loss and foreign-credit schedules; final-tax monthly/transition evidence; employment/payroll and BPJS reconciliation with pending portions; VAT reconciliation including compensation/corrections; own-versus-agent withholding; all seven cross-checks and their failures; legal positions and sources; missing facts/documents; related-party and special-regime flags; and following-year instalment, NPPN, final-regime, VAT and TP actions. Entertainment/nominatif lists, mixed-use costs and related-party reasonableness remain checks, not an unsupported universal deduction prohibition.
 
-### 10.2 UMKM regime planning
+## Taxpayer action list and output files
 
-- **UMKM regime planning rules** — If the taxpayer is using UMKM 0.5% in 2025: Check the UMKM window remaining (3y for PT / 4y for CV / 7y for Orang Pribadi from start year under PP 55/2022). If 2025 is the final year, 2026 reverts to: Individual — Progressive PPh OP with bookkeeping (pembukuan), switch from norma penghitungan if applicable; Corporate — Standard PPh Badan 22% (or Article 31E facility for SME). Even if window is not closing, monitor cumulative gross turnover. If 2026 turnover is expected to exceed IDR 4.8B, plan the regime switch and PKP-VAT registration.  _(PP 55/2022)_
+Produce the original three deliverables, using calendar 2026 in filenames and actual working directory/output support rather than an assumed platform-only directory:
 
-### 10.3 VAT planning
+1. `[taxpayer_slug]_2026_id_master.xlsx`: Cover, identity/status, ordinary individual OR entity computation, actual current return mapping, commercial/fiscal schedules, final-tax tracker, income/credit/slip register, own payment/NTPN register, payroll/BPJS, VAT/compensation, cross-check summary and confirmed/provisional billing schedule. Add assets/liabilities/family or owners/directors/affiliates as appropriate. Use formulas, retain source inputs and verify no broken references or hidden hard-coded total.
+2. `reviewer_brief.md`: the complete evidence/position/gap brief above, including named material blockers and what would close them.
+3. `taxpayer_action_list.md`: dated pre-filing payment and confirmation actions, annual submission/receipt retention, required monthly corrections, applicable audit/TP attachments, and following-year compliance.
 
-- **VAT PKP registration planning** — PKP registration threshold: cumulative gross turnover IDR 4.8 billion in a year (PMK 197/PMK.03/2013). If approaching threshold during 2026, register as PKP before crossing — issue Faktur Pajak from registration date.  _(PMK 197/PMK.03/2013)_
+The action list tells the individual to settle the supported annual balance before the ordinary March deadline and the entity before the ordinary April deadline, subject to its actual period/extension. It separately lists outstanding monthly payroll, ordinary instalment and final-tax settlement, VAT and supplier withholding, with current rules and receipt evidence. Never demand all categories from a taxpayer who has no such duty, never instruct an unconfirmed payment code and never file an employee certificate as a standalone annual employer return.
 
-### 10.4 Coretax compliance updates
+Record retention includes general ledger, supporting invoices/documents, slips issued/received, VAT invoices, state-payment receipts, accepted-return receipts, amendments/refunds/compensation and the complete signed/approved return package. If work is interrupted, save the workbook inputs/formulas, completed reconciliations, draft brief and exact remaining gaps; present partial deliverables as partial. Do not prioritise formatting over completing the core calculation checks.
 
-PMK 81/2024 introduced Coretax DJP as the single integrated tax system. Reviewers should monitor DJP circulars (Surat Edaran Direktur Jenderal Pajak) through 2026 for transitional easements, form revisions, and new MAP / KJS combinations. TBC — confirm the active list at filing time.
+## Known gaps retained from the original scope
 
-### 10.5 Transfer pricing planning
+PDF filling, live filing, Coretax XML generation, ERP integration, CbCR XML, audit performance, TP file drafting, non-resident branch/foreign-credit specialist calculations, tax holidays, KEK and special facilities are not supplied by this assembly method. Current form fields, certificate details, payment-code combinations and channel availability require the official version for that actual filing. A gap in these operations does not permit a wrong line map or a claimed successful live action.
 
-- **Transfer pricing planning rules** — For corporates with related-party transactions (under PMK 213/PMK.03/2016 thresholds): Local file & master file due by SPT 1771 filing deadline (30 April 2026). CbCR (Country-by-Country Reporting) for groups with consolidated revenue ≥ IDR 11 trillion — 12 months after fiscal year-end. Flag if 2025 related-party gross transactions exceeded IDR 50 billion or any single counterparty exceeded IDR 5 billion.  _(PMK 213/PMK.03/2016)_
+## Sources
 
-## Section 11 — Conservative defaults
+| Official source | Read for and read date |
+|---|---|
+| [DJP consolidated Income Tax/KUP laws](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) | KUP arts. 3,7,9,28; Income Tax arts. 6,9,17,21,25,31E, with relevant explanations: liability, records, deadlines, loss/fiscal/instalment boundaries. Read 2026-11-14. |
+| [PP 55/2022](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan) | Arts. 59-63 and historical art. 69, monthly base, individual allowance, crossing year and collections. Read 2026-11-14. |
+| [PP 20/2026](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) | Amended arts. 56-58/deleted art. 59, permanent exits and exact art. II entity/household transitions. Read 2026-11-14. |
+| [PMK 164/2023](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau) | Arts. 5-9,16-19: election, monthly/annual evidence, instalment transition and independent PKP reporting. Read 2026-11-14. |
+| [PMK 168/2023](https://www.pajak.go.id/id/peraturan/petunjuk-pelaksanaan-pemotongan-pajak-atas-penghasilan-sehubungan-dengan-pekerjaan-jasa-1) | Arts. 2-3,5-16,19-22: employee/agent classifications, final period, documentation and refunds. Read 2026-11-14. |
+| [PMK 81/2024](https://pajak.go.id/en/node/113110) | Arts. 94-100 and 226-237: actual deposit/payment timing and ordinary/special instalments; no current-code/expiry assumption inferred. Read 2026-11-14. |
+| [PMK 131/2024](https://jdih.kemenkeu.go.id/api/download/f128868e-3cf6-4596-8407-c34eeca0e7be/2024pmkeuangan131.pdf) | Arts. 2-4 VAT price-to-base bridge and separately regulated supplies. Read 2026-11-14. |
+| [PMK 172/2023](https://pajak.go.id/index.php/id/peraturan/penerapan-prinsip-kewajaran-dan-kelaziman-usaha-dalam-transaksi-yang-dipengaruhi-hubungan) | Arts. 16-19 prior-year/documentation/CbCR triggers, availability and annual reporting distinctions. Read 2026-11-14. |
+| [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) | Arts. 2-8 annual/part-year deadlines, extension, electronic/paper channel and receipt conditions. Read 2026-11-14. |
+| [PER-12/PJ/2026 operative DJP text](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan) | Amended arts. 29A-29E,80A,129A-129B and art. II, correction accounting and transition from 1 October 2026. The JDIH metadata's downloaded wrong printer-regulation PDF was rejected as evidence. Read 2026-11-14. |
 
-**Conservative defaults table**
+- Read 2026-11-14: [PER-12/PJ/2026](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan): actual amended arts. 6-7 certificate names, final period and delivery timing.
+- Read 2026-11-14: [PER-8/PJ/2026](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan): amended billing art. 5, 336-hour validity separate from legal payment due date.
 
-| Situation | Conservative default |
-| --- | --- |
-| Cross-skill reconciliation differs by > IDR 1,000 | Flag as "Needs Input"; do not silently round |
-| MAP / KJS code uncertain for a payment | Use "TBC — verify current MAP code in Coretax" and DO NOT generate billing |
-| UMKM window status unclear | Treat as final year; default 2026 to progressive regime |
-| KLU code missing | Flag; use 70209 (General consulting) as placeholder for individuals; 64200 (Holding) for badan — note it must be corrected before filing |
-| NITKU missing post-Coretax | Flag; cannot submit without it |
-| Bukti Potong missing for a claimed credit | Exclude the credit; flag for taxpayer to obtain the Bukti Potong |
-| Audit requirement unclear (Badan revenue near threshold) | Recommend audit (UU PT thresholds: revenue ≥ IDR 50B or assets ≥ IDR 50B) |
-| December PPh 21 true-up not yet booked | Treat year as incomplete; cannot finalise SPT until December payroll closed |
-| Foreign income with no certificate of residency | Disallow PPh 24 credit; flag for documentation |
-| Related-party transactions undocumented | Flag transfer pricing risk; do not silently assume arm's-length |
-| Payment due but no NTPN | Mark SPT credit as "pending payment"; advise taxpayer to settle before filing |
-
-## Section 11 — Conservative defaults
-
-- **Tolerance rule (repeated for emphasis)** — IDR 1,000 reconciliation tolerance. Any larger discrepancy is escalated, not absorbed.
-
-## Section 12 — Refusals
-
-- **R-ID-ASM-1** — Upstream skill did not run. Name the missing skill. Continue with available data; flag the gap; do not fabricate the missing computation.  _(R-ID-ASM-1)_
-- **R-ID-ASM-2** — Upstream self-check failed. Note the specific check; continue but flag.  _(R-ID-ASM-2)_
-- **R-ID-ASM-3** — Cross-skill reconciliation > IDR 1,000. Raise as "Needs Input"; do not silently round.  _(R-ID-ASM-3)_
-- **R-ID-ASM-4** — Out of scope: VAT margin scheme, oil & gas / mining special regimes, branch profit tax (BPT) under PPh 26(4) for permanent establishments, controlled foreign company (CFC) rules under PMK 93/2019, tax holidays under PP 78/2019, special economic zone (KEK) facilities. Flag for human specialist; do not attempt.  _(R-ID-ASM-4)_
-- **R-ID-ASM-5** — Out of scope: non-resident individuals, mixed-residency years, expatriate package taxation under PMK 18/2021. Refer to a specialist; this skill assumes full-year Indonesian tax residency.  _(R-ID-ASM-5)_
-- **R-ID-ASM-6** — Intake incomplete. Name the missing intake field (NPWP, NITKU, KLU, marital status, dependents). Cannot finalise the SPT until provided.  _(R-ID-ASM-6)_
-- **R-ID-ASM-7** — Asked to submit to Coretax. This skill produces a working paper. Submission is the taxpayer's (or their authorised filer's) action, after Konsultan Pajak review and sign-off. Decline politely; provide the filing instructions instead.  _(R-ID-ASM-7)_
-
-## Section 13 — Self-checks
-
-- **Check ID-ASM-1** — All upstream skills required for the chosen form have produced output, or the gap is flagged.  _(Check ID-ASM-1)_
-- **Check ID-ASM-2** — Revenue reconciles between id-bookkeeping, indonesia-vat, and the chosen PPh skill within IDR 1,000.  _(Check ID-ASM-2)_
-- **Check ID-ASM-3** — PPh credits sum correctly across PPh 21/22/23/24/25/26, with each credit backed by a Bukti Potong + NTPN.  _(Check ID-ASM-3)_
-- **Check ID-ASM-4** — UMKM monthly SSPs (if applicable) sum to 0.5% of cumulative UMKM-eligible turnover; each month has an NTPN.  _(Check ID-ASM-4)_
-- **Check ID-ASM-5** — PPh 21 annual employer return (1721 A1) ties to sum of monthly TER plus December true-up.  _(Check ID-ASM-5)_
-- **Check ID-ASM-6** — For corporates: fiscal reconciliation (Lampiran I-1771) ties commercial profit to fiscal profit; loss carryforward used does not exceed 5-year limit (UU PPh Pasal 6).  _(Check ID-ASM-6)_
-- **Check ID-ASM-7** — UMKM window status is verified and 2026 regime is named.  _(Check ID-ASM-7)_
-- **Check ID-ASM-8** — All MAP / KJS codes used in the kode billing instructions are flagged "TBC — verify in Coretax" if not directly confirmed against current PMK 81/2024 annexes.  _(Check ID-ASM-8)_
-- **Check ID-ASM-9** — Filing deadline (31 March or 30 April 2026) is explicitly stated in the action list with the correct date.  _(Check ID-ASM-9)_
-- **Check ID-ASM-10** — Record retention period (10 years per UU KUP Pasal 28) is stated.  _(Check ID-ASM-10)_
-- **Check ID-ASM-11** — Reviewer brief contains legislation citations for every position taken (UU KUP, UU PPh, UU HPP, UU PPN, relevant PP / PMK).  _(Check ID-ASM-11)_
-- **Check ID-ASM-12** — BPE (Bukti Penerimaan Elektronik) retention is included in the action list.  _(Check ID-ASM-12)_
-- **Check ID-ASM-13** — Konsultan Pajak sign-off requirement is stated in the executive summary and action list.  _(Check ID-ASM-13)_
-
-## Section 14 — Output files
-
-The final output is three files:
-
-1. `[taxpayer_slug]_2025_id_master.xlsx` — Master workbook. Sheets: Cover, Identitas, 1770 Induk (or 1771 Induk), Lampiran I-V (or I-VI for corporate), UMKM Final Tracker, Bukti Potong Register, NTPN Register, Cross-Check Summary, Kode Billing Schedule. Use live formulas where possible; verify no `#REF!` errors.
-
-2. `reviewer_brief.md` — Markdown file with all Section 8 contents.
-
-3. `taxpayer_action_list.md` — Markdown file with all Section 9 contents.
-
-All three files are placed in `/mnt/user-data/outputs/` and presented to the user at the end.
-
-If execution runs out of context mid-build, complete the computation work first and produce whichever formatted outputs are finished, then state clearly which deliverables are partial.
-
-## Section 15 — Known gaps
-
-1. PDF form filling is not automated; the reviewer or taxpayer enters values into Coretax using the working paper.
-2. Coretax XML generation is not produced by this skill; integrations with ERP / third-party software handle that.
-3. Audit report attachment is the taxpayer's responsibility; this skill only flags when audit is required.
-4. Transfer pricing local file / master file content is referenced but not assembled here (separate skill needed).
-5. PPh 26 (non-resident withholding) computations are not part of UMKM and are referenced via id-withholding only.
-6. Tax holidays, KEK, and special facility regimes (PP 78/2019, PMK 130/2020, etc.) are out of scope.
-7. CbCR XML is not assembled here.
-8. Coretax MAP / KJS combinations are subject to change in 2025–2026 transition; every code in this skill should be verified against the live Coretax dropdown.
-
-### Change log
-
-v1.0 (May 2026): Initial release. Modelled on mt-return-assembly and us-ca-return-assembly, adapted for Indonesian SPT 1770 / 1771, Coretax DJP filing, and PMK 81/2024 transition. Coordinates seven upstream Indonesia skills.
-
-## Section 16 — Sources
-
-**Sources table**
-
-| Source | Reference |
-| --- | --- |
-| UU KUP No. 6/1983 (as amended through UU HPP) | General tax administration: deadlines, penalties, retention |
-| UU PPh No. 36/2008 (as amended) | Income tax framework |
-| UU HPP No. 7/2021 | Harmonisasi Peraturan Perpajakan — updated brackets, Pasal 17, Article 31E facility |
-| UU PPN No. 42/2009 (as amended through UU HPP) | VAT framework, PKP threshold |
-| PP 55/2022 | UMKM PPh Final 0.5%; window durations by entity type |
-| PP 58/2023 | TER PPh 21 (employment withholding scheme effective 1 Jan 2024) |
-| PMK 81/2024 | Coretax DJP implementation (effective 1 January 2025) |
-| PMK 168/2023 | TER implementation rules |
-| PMK 215/PMK.03/2018 | PPh 25 monthly installment computation |
-| PMK 213/PMK.03/2016 | Transfer pricing documentation thresholds |
-| PMK 197/PMK.03/2013 | VAT PKP threshold IDR 4.8 billion |
-| PMK 164/2023 | UMKM Final monthly payment due dates |
-| DJP — Direktorat Jenderal Pajak | https://www.pajak.go.id |
-| Coretax DJP | https://coretaxdjp.pajak.go.id |
-| Skill version | 1.0 |
+Not yet confirmed: exact calendar-2026 Coretax form field/attachment mapping, annual/mobile/offline/XML eligibility, current payment-code pairings/code length, detailed certificate field mapping and accepted-receipt format; taxpayer-specific audit/foreign-credit/special-regime obligations; ministerial interest and permitted payment rounding; any missing upstream ordinary individual computation. Each blocks only the dependent filing-ready assertion, not supported draft work. No future extension or relief is assumed.
 
 ## Footer disclaimer
 
-OpenAccountants — open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed and signed off by a qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) before filing via Coretax DJP.
-
-### 2.1 Individual return (SPT 1770) — inputs
-
-0. **Consume id-bookkeeping output** — General ledger trial balance; income/expense detail feeding Lampiran I
-0. **Consume id-income-tax output** — Progressive PPh OP computation feeds Form 1770 Induk Part B & C
-0. **Consume id-pph-final-umkm output** — UMKM Final 0.5% computation feeds Lampiran III-A
-0. **Consume id-payroll-pph21 output** — Employment income and withheld PPh21 feed Form 1770 Induk Part A; Lampiran I Bagian B
-0. **Consume indonesia-vat output** — VAT position cross-checked against revenue figures
-0. **Consume id-withholding output** — Bukti Potong PPh 22/23/4(2) as recipient and as withholder feed Lampiran I & III
-
-### 2.2 Corporate return (SPT 1771) — inputs
-
-0. **Consume id-bookkeeping output** — Full financial statements feed Lampiran V and Lampiran I
-0. **Consume id-corporate-tax output** — Fiscal profit and PPh Badan computation feed Form 1771 Induk Part B & C
-0. **Consume id-pph-final-umkm output** — UMKM Final regime data feeds Lampiran IV
-0. **Consume id-payroll-pph21 output** — Employee payroll cost classification feeds Lampiran II
-0. **Consume indonesia-vat output** — VAT input/output reconciled; PPN Masukan cost treatment cross-checked
-0. **Consume id-withholding output** — Withholding credits and SPT Masa obligations feed Lampiran III
-
-## Section 3 — Tax computation reconciliation
-
-0. **Run all cross-checks in sequence** — Execute Cross-checks 1 through 7 across upstream outputs, flagging failures in the reviewer brief without pausing
-
-## Section 14 — Output files
-
-0. **Produce final output files** — Generate master workbook, reviewer_brief.md, and taxpayer_action_list.md and place them in /mnt/user-data/outputs/
+OpenAccountants: open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed and signed off by a qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) before filing via Coretax DJP.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `id-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/id-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `id-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/id-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

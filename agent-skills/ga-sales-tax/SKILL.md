@@ -1,252 +1,271 @@
 ---
 name: ga-sales-tax
-description: "Use this skill whenever asked about Georgia sales and use tax. Trigger on phrases like \"Georgia sales tax\", \"GA sales tax\", \"O.C.G.A. 48-8\", \"Georgia DOR\". ALWAYS load us-sales-tax first."
+description: "Apply Georgia sales and use tax for 2026, for sellers in Georgia, remote sellers, marketplace facilitators and buyers owing use tax. Covers the 4% state rate plus local taxes by delivery jurisdiction code from the quarterly rate chart (6% to 9% from 1 October 2026), remote seller registration (over $100,000 or 200 or more sales), the $100,000 marketplace facilitator test, what is taxed and exempt (groceries at local rate only, electronic software against digital products), Form ST-5 certificates, use tax reason codes, Form ST-3 due on the 20th, the $500 electronic filing trigger, prepaid estimated tax over $60,000, vendor's compensation (3% of the first $3,000, 0.5% above) and penalties. Trigger on \"Georgia sales tax\", \"GA sales tax\", \"Georgia use tax\", \"Form ST-3\", \"Georgia economic nexus\", \"Georgia ST-5\". Load us-sales-tax first for the general method."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ga-sales-tax"
   jurisdiction: "US-GA"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
-# Georgia sales and use tax: 2026 rates, nexus, marketplaces, exemptions and filing
+# Georgia sales and use tax, 2026
 
-Figures are for tax year 2026, as they stand on 25 September 2026. They come from the Georgia Department of Revenue at dor.georgia.gov: its pages, forms, rate charts and policy bulletins. A policy bulletin is the Department's position, but it "does not have the force or effect of law". A short section near the end covers 2025 periods.
+> **Source-cited draft.** Built from the Georgia Department of Revenue's sales and use tax pages, the general rate charts for July to September 2026 and from 1 October 2026, policy bulletins SUT-2019-02, SUT-2020-01 and SUT-2025-02, the Form ST-3 instructions, Form ST-5, the 2020 list of exemptions and DOR's due date and penalty pages, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Scope and who this is for ([DOR sales and use tax](https://dor.georgia.gov/taxes/sales-use-tax))
+**Answer first.** Georgia's state sales and use tax is **4%**, and local taxes are added by the jurisdiction where the customer takes delivery: on the chart from 1 October 2026 combined rates run from **6% to 9%** (City of Atlanta 8.9%). Rates change quarterly, so always use the chart for the quarter of the sale. A seller outside Georgia must register once its Georgia retail sales of goods exceed **$100,000** or number **200 or more** in the previous or current year, leaving out sales a marketplace facilitator handled. Returns (Form ST-3) are due on the **20th** of the month after the period, even with no sales. A policy bulletin is DOR's position but "does not have the force or effect of law".
 
-- Businesses that sell goods or taxable services in Georgia or to Georgia customers, and must decide whether to register, what to charge, which local rate applies and how to file.
-- Out-of-state sellers deciding whether they must register (remote sellers), and marketplace facilitators and the sellers who use them.
-- Businesses and individuals who owe use tax because no Georgia tax was charged on a purchase.
-- Sellers accepting, and buyers giving, Form ST-5 resale and exemption certificates.
-- Georgia is a full member of the Streamlined Sales and Use Tax Agreement, from 1 July 2011 ([Streamlined Sales Tax](https://dor.georgia.gov/taxes/tax-rules-and-policies/streamlined-sales-tax)).
-- **Out of scope:** Georgia income tax. For individuals see the skill `ga-income-tax`; for corporations, partnerships and the pass-through entity tax election see `ga-corporate-and-ptet`. Also out of scope: motor vehicles (most pay title ad valorem tax, TAVT, instead of sales tax), motor fuel and prepaid local tax, lodging charges beyond the marketplace rules, alcohol and tobacco excise, and the detail of agricultural (GATE) and industry-specific exemptions.
+## Scope and who this is for
+
+- Businesses selling goods or taxable services in Georgia or to Georgia customers: whether to register, what to charge, which local rate, how to file.
+- Out-of-state sellers deciding whether they must register, and marketplace facilitators and their sellers.
+- Businesses and individuals owing use tax because no Georgia tax was charged.
+- Sellers accepting, and buyers giving, Form ST-5 certificates.
+- Georgia is a full member of the Streamlined Sales and Use Tax Agreement from 1 July 2011 ([Streamlined Sales Tax](https://dor.georgia.gov/taxes/tax-rules-and-policies/streamlined-sales-tax)).
+
+Out of scope: Georgia income tax (`ga-income-tax`, `ga-corporate-and-ptet`); motor vehicles (most pay title ad valorem tax, TAVT, instead of sales tax); motor fuel and prepaid local tax; lodging beyond the marketplace rules; alcohol and tobacco excise; the detail of agricultural (GATE) and industry-specific exemptions.
 
 ## Ask the client first
 
-- Is the business physically located in Georgia (office, store, warehouse, employees, inventory)? Does it attend trade shows here, or hold a contract with a Georgia state agency?
-- If it is outside Georgia: in 2025 and so far in 2026, what were its gross revenue and its number of separate retail sales of tangible goods delivered into Georgia, counting only its own direct sales and leaving out sales made through a marketplace facilitator ([SUT-2019-02](https://dor.georgia.gov/media/35301/download); [SUT-2020-01](https://dor.georgia.gov/media/35306/download))?
-- Does it sell through a marketplace, or run one? If it runs one, what were its total facilitated Georgia sales plus its own?
-- What exactly does it sell: goods, groceries, prepared food, downloaded software, digital products (e-books, music, video, digital codes), repair or installation labor, lodging, admissions, amusement, or other services?
-- Where do customers take delivery (which county, and is it inside the City of Atlanta)?
-- Is it registered, and what filing frequency has the Department assigned? Did it owe more than $500 on any return ([file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay))? Was its state tax liability last year more than $60,000?
-- Does it hold a properly completed Form ST-5 (or other certificate) for every sale it did not tax? Has it bought taxable items for its own use without paying Georgia tax?
-- Were any returns or payments late, or periods not filed at all? Has the Department contacted it?
+1. **Is the business physically in Georgia** (office, store, warehouse, employees, inventory), at Georgia trade shows, or holding a contract with a Georgia state agency?
+2. **If outside Georgia:** in 2025 and so far in 2026, its gross revenue from, and number of, its own direct retail sales of goods delivered into Georgia, leaving out marketplace-facilitated sales ([SUT-2019-02](https://dor.georgia.gov/media/35301/download); [SUT-2020-01](https://dor.georgia.gov/media/35306/download)). Does it sell through, or run, a marketplace?
+3. **What exactly does it sell:** goods, groceries, prepared food, downloaded software, digital products (e-books, music, video, digital codes), repair or installation labour, lodging, admissions, amusement or other services?
+4. **Where do customers take delivery:** which county, and is it inside the City of Atlanta or another city with its own code?
+5. **Is it registered, at what filing frequency,** did any return exceed $500, and was last year's state tax over $60,000?
+6. **Paperwork and history:** a Form ST-5 for every untaxed sale? Purchases for own use without Georgia tax? Late or unfiled periods, or contact from DOR?
 
 ## The method, step by step
 
-1. **Decide whether the seller is a dealer that must register.** A business physically located in Georgia must register unless all its sales are made through a marketplace. A remote seller must register once, in the previous or current calendar year, its Georgia retail sales of tangible goods are more than $100,000 or number 200 or more ([SUT-2019-02](https://dor.georgia.gov/media/35301/download)). A marketplace facilitator must register once its facilitated plus own Georgia sales are $100,000 or more ([SUT-2020-01](https://dor.georgia.gov/media/35306/download)).
-2. **Classify each sale.** Tangible goods are taxable unless an exemption applies. Services are generally not taxable; the taxed ones are accommodations, in-state transportation of individuals, admissions and amusement charges ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax)). Check the exemption list ([list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download)).
-3. **Check the paperwork for every untaxed sale.** A sale is taxable "until the contrary is established". Hold a properly completed Form ST-5 or other certificate taken in good faith ([nontaxable sales FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/nontaxable-sales)).
-4. **Find the rate where the customer takes delivery.** The state rate is 4%. Add the local taxes of the place where the customer takes delivery, using that place's jurisdiction code on the rate chart and Form ST-3, not just the county. Some cities have their own codes and rates: the City of Atlanta (044A, 060A), Fulton County inside Hapeville, College Park or East Point (800 to 802) and Clayton County inside College Park (804). Use the chart for the quarter of the sale; rates change quarterly ([rate FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/tax-rates); [general rate charts](https://dor.georgia.gov/sales-tax-rates-general)).
-5. **Charge tax on the full sales price**, including delivery charges and mandatory gratuities on a taxable sale. Separately stated installation charges and itemized repair labor are not taxed ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax)).
-6. **Accrue use tax** on taxable goods and services bought or brought into Georgia without Georgia tax, and on items taken from resale stock for your own use ([ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download)).
-7. **File Form ST-3 through the Georgia Tax Center by the 20th** of the month after the period, even with no sales. File and pay electronically once you owe more than $500 on any return. Take vendor's compensation only if both the return and the payment are on time ([file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay); [due dates](https://dor.georgia.gov/sales-use-tax-due-dates)).
-8. **Keep records for at least three years**: sales and purchase records, books of account, and invoices ([file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay)).
+### Rates, bands and thresholds
 
-## Rates for 2026 ([general rate charts](https://dor.georgia.gov/sales-tax-rates-general); [chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download))
-
-| Item | 2026 position | Condition |
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| State sales and use tax | 4% | Included in every jurisdiction's chart rate except two special Fulton County districts (codes 803 and 805) |
-| Combined state and local rates | 6% to 9% on the chart from 1 October 2026 | For example Cobb and Gwinnett 6%, many counties 9%. Never guess: read the chart for the quarter and the delivery county |
-| City of Atlanta (DeKalb or Fulton part) | 8.9% on the same chart | Codes 044A and 060A; the 1% Municipal Option Sales Tax (MOST) applies inside city limits ([MOST](https://dor.georgia.gov/1-city-atlanta-municipal-option-sales-tax)) |
-| Fulton County inside Hapeville, College Park or East Point; Clayton County inside College Park | 8.75% (codes 800 to 802) and 9% (code 804) on the same chart | Separate codes from the county: Fulton outside these cities and Atlanta (060) is 7.75% and Clayton (031) is 8%. Report on the city code ([ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download)) |
-| Special Fulton districts 803 and 805 | 3.9% shown | The chart says the 4% state rate is not included in these two codes. Confirm with the Department before charging there |
-| Use tax | Same state and local rates | Local use tax at the rate where the item is first used or received |
+| State sales and use tax, included in every jurisdiction's chart rate except codes 803 and 805 | 4% | [General rate chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download) |
+| Combined state and local rates on the chart from 1 October 2026 | 6% to 9% | same |
+| Cobb County (033) and Gwinnett County (067), from 1 October 2026 | 6% | same |
+| City of Atlanta, DeKalb part (044A) and Fulton part (060A), from 1 October 2026 | 8.9% | same |
+| Fulton County outside Atlanta, Hapeville, College Park and East Point (060), from 1 October 2026 | 7.75% | same |
+| Fulton County inside Hapeville, College Park or East Point (800 to 802), from 1 October 2026 | 8.75% | same |
+| Clayton County outside College Park (031), from 1 October 2026 | 8% | same |
+| Clayton County inside College Park (804), from 1 October 2026 | 9% | same |
+| Special Fulton districts Central Yards (803) and South Downtown (805), from 1 October 2026; the 4% state rate is not included | 3.9% shown | same |
+| Richmond County (121), 1 July to 30 September 2026 | 8.5% | [General rate chart, July to September 2026](https://dor.georgia.gov/document/document/general-rate-chart-effective-july-1-2026-through-september-30-2026pdf/download) |
+| Richmond County (121), from 1 October 2026 | 9% | [General rate chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download) |
+| Appling County (001), from 1 October 2026 | 8% | same |
+| Remote seller test, gross revenue from retail sales of goods into Georgia, previous or current year | exceeding $100,000 | [SUT-2019-02](https://dor.georgia.gov/media/35301/download) |
+| Remote seller test, number of separate retail sales | 200 or more | same |
+| Marketplace facilitator test, facilitated plus own Georgia sales, previous or current year | $100,000 or more | [SUT-2020-01](https://dor.georgia.gov/media/35306/download) |
+| State agency contract that requires registration | exceeding $100,000 | [DOR out-of-state sellers FAQ](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers) |
+| Electronic filing and payment required once any return owes more than | $500 | [DOR file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay) |
+| Prepaid estimated tax: prior-year state tax liability more than | $60,000 | same |
+| Prepaid estimated tax, share of estimated tax | 50% | same |
+| Vendor's compensation on the first $3,000 of tax on a timely return | 3% | [Form ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download) |
+| Vendor's compensation on tax above $3,000 | 0.5% | same |
+| Late return or payment penalty, per month or part month (O.C.G.A. § 48-8-66) | greater of 5% or $5, up to the greater of 25% or $25 | [DOR penalty and interest rates](https://dor.georgia.gov/penalty-and-interest-rates) |
 
-Rates change on the first day of a quarter. Richmond County, for example, was 8.5% on the chart for July to September 2026 ([chart from 1 July 2026](https://dor.georgia.gov/document/document/general-rate-chart-effective-july-1-2026-through-september-30-2026pdf/download)) and is 9% from 1 October 2026. The Department's rate charts "are updated each quarter" ([rate FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/tax-rates)).
+The chart's key names each local tax: L (LOST), E (ELOST), S (SPLOST), H (HOST or EHOST), M and m (MARTA), O (other: MOST, second LOST, constitutional, coliseum SPLOST), T, T2, Tf, Ta (the four TSPLOSTs, see [TSPLOSTs](https://dor.georgia.gov/tsplosts)) and P (PTRLOST). The 1% City of Atlanta Municipal Option Sales Tax applies inside city limits ([MOST](https://dor.georgia.gov/1-city-atlanta-municipal-option-sales-tax)). Special Fulton districts 803 and 805 show 3.9% and the chart says the 4% state rate is not included in them; confirm with DOR before charging there. Some local taxes do not apply to some sales (food, energy to manufacturers, jet fuel, some motor vehicles); those sales are reported with an indicator added to the jurisdiction code ([tips for the return](https://dor.georgia.gov/tips-completing-sales-and-use-tax-return)).
 
-**Which local taxes make up the rate.** The chart's key names each local tax a county levies. This skill does not list local rates; read the chart.
+### Who must register
 
-| Chart code | Local tax |
-| --- | --- |
-| L | LOST (local option sales tax) |
-| E | Educational (ELOST) |
-| S | SPLOST (special purpose local option sales tax) |
-| H | HOST or EHOST (homestead taxes) |
-| M, m | MARTA; local MARTA in Atlanta |
-| O | Other: MOST, second LOST, constitutional, coliseum SPLOST |
-| T, T2, Tf, Ta | The four TSPLOSTs (regional, single-county, Fulton, Atlanta) ([TSPLOSTs](https://dor.georgia.gov/tsplosts)) |
-| P | PTRLOST |
+1. **Physically located in Georgia:** must register "unless all your sales are made through a marketplace". Every dealer registers "regardless of whether all sales will be online, out of state, wholesale, or exempt from tax". Register on the Georgia Tax Center; the number usually arrives by email in about 15 minutes; display the certificate at the place of business ([registration FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq)).
+2. **Remote sellers** (from 1 January 2020, [SUT-2019-02](https://dor.georgia.gov/media/35301/download)): a seller outside Georgia making retail sales of goods delivered electronically or physically into Georgia is a dealer once, in the previous or current calendar year, its gross revenue from those sales is "exceeding $100,000" or it makes "200 or more separate retail sales". It "may exclude" marketplace-facilitated sales when testing. It collects state and local tax at the delivery location's rate. Once met in 2025, it is a dealer for 2026; met during 2026, for the rest of 2026 and, on the previous-year test, 2027. No grace period is given.
+   - **Exactly $100,000 or exactly 200 sales: check.** DOR's current [How do I know](https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax) page asks about "over 200 separate sales transactions" or "at least $100,000 in total sales" in "the last calendar year", the reverse of the bulletin at both edges. A seller at either figure should get written confirmation.
+3. **Marketplace facilitators** (from 1 April 2020, [SUT-2020-01](https://dor.georgia.gov/media/35306/download); [marketplace facilitators](https://dor.georgia.gov/marketplace-facilitators)): a person that contracts with sellers and both processes payment and lists, markets or takes orders (payment processing alone is not enough) is a dealer if facilitated plus own taxable Georgia sales "equals or exceeds $100,000.00" in the previous or current year; there is no transaction count. A franchisor is not a facilitator for a franchisee, nor a platform for a large seller, only if all three hold: the franchise system's US gross sales (or the large seller's own Georgia-sourced sales) were at least $500 million in the prior year, the seller holds a Georgia certificate, and a contract makes it collect. The facilitator collects state and local tax on the total sales price of facilitated sales, including delivery and service fees, and is liable for the greater of the tax due and the tax collected. It is relieved for errors caused by a non-related seller's wrong information if it made a reasonable effort. The seller does not collect on those sales. Facilitated sales go on a separate marketplace account.
+4. **Other rules** ([registration FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq); [out-of-state sellers](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers)): a vendor with a contract exceeding $100,000 with a Georgia state agency must register and collect (counties and cities are not state agencies). No registration if trade shows are the only presence, last no more than 5 days in any 12 months and produced no more than $100,000 of net income in Georgia in the prior year, but tax is still collected on sales and orders at the show. Sales tax is a trust fund tax: a person who controls collection and willfully fails to pay is personally liable (O.C.G.A. § 48-2-52).
 
-Some local taxes do not apply to some sales (for example food, energy sold to manufacturers, jet fuel and some motor vehicles). Those sales are reported with an indicator added to the jurisdiction code ([tips for the return](https://dor.georgia.gov/tips-completing-sales-and-use-tax-return)).
+### Charging and accruing tax
 
-## Nexus, registration and marketplaces ([SUT-2019-02](https://dor.georgia.gov/media/35301/download); [SUT-2020-01](https://dor.georgia.gov/media/35306/download); [How do I know if I need to collect](https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax))
+1. **Classify each sale** (table below). A sale is taxable "until the contrary is established".
+2. **Find the rate** for the place of delivery, by jurisdiction code on the chart for that quarter (rates "are updated each quarter", [rate FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/tax-rates)), not just the county.
+3. **Tax the full sales price**, including delivery charges and mandatory gratuities on a taxable sale; separately stated installation and itemized repair labour are not taxed.
+4. **Hold a good-faith certificate for every untaxed sale** (Form ST-5 rules below).
+5. **Accrue use tax** on taxable goods and services bought or brought in without Georgia tax, and on stock taken for own use, on Part B of Form ST-3: base is the purchase price if used outside Georgia six months or less, otherwise the lower of price and fair market value; like taxes paid to another state are credited; property brought in on a change of domicile is generally exempt unless for business use. Reason codes: 01 (bought tax-paid in Georgia, used in a higher-rate jurisdiction), 02 (withdrawal from inventory), 03 (import, state tax), 04 (import, local tax).
+6. **Keep records** (sales and purchase records, books of account, invoices) for at least three years.
 
-### Remote sellers ([SUT-2019-02](https://dor.georgia.gov/media/35301/download); [How do I know if I need to collect](https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax))
+## Boundary and exception table
 
-| Rule | Position from 1 January 2020 |
-| --- | --- |
-| Who | A seller outside Georgia making retail sales of tangible goods delivered electronically or physically into Georgia |
-| Revenue test | Gross revenue "exceeding $100,000" from those sales |
-| Transaction test | "200 or more separate retail sales" |
-| Period | The previous or current calendar year. Once either test is met in 2025, the seller is a dealer for 2026; meeting it during 2026 makes it a dealer for the rest of 2026 and, on the previous-year test, for 2027. The bulletin gives no grace period |
-| Marketplace sales | A remote seller "may exclude" sales facilitated by a marketplace facilitator when testing its duty |
-| What to collect | State tax and local tax, with the local rate based on the delivery location |
-
-**Exactly $100,000 or exactly 200 sales: check.** The Department's pages do not agree. The bulletin says revenue "exceeding $100,000" and "200 or more" sales. The Department's current "How do I know" page asks whether the seller had "over 200 separate sales transactions" or "at least $100,000 in total sales" in "the last calendar year". On the bulletin, $100,000 exactly is not over the line and 200 sales exactly is. On the web page it is the other way round. A seller at either figure should get written confirmation from the Department. The 200-sale test is not only in the 2019 bulletin: the current web page still asks about it. Check for later law changes before relying on it.
-
-### Sellers with a Georgia presence, and other registration rules ([registration FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq); [out-of-state sellers](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers))
-
-- **Physically located in Georgia.** Must register "unless all your sales are made through a marketplace".
-- **Every dealer registers**, "regardless of whether all sales will be online, out of state, wholesale, or exempt from tax".
-- **How.** Online through the Georgia Tax Center; the account number usually arrives by email within about 15 minutes. The certificate must be displayed at the place of business.
-- **Officers.** Sales tax is a trust fund tax. A person who controls collecting and paying it and willfully fails to do so is personally liable (O.C.G.A. § 48-2-52).
-- **State agency contracts.** A vendor with a contract exceeding $100,000 with a Georgia state agency must register and collect, even with no presence. Counties and cities are not state agencies for this rule.
-- **Trade shows.** No registration if trade shows are the only presence, last no more than 5 days in any 12 months, and produced no more than $100,000 of net income in Georgia in the prior calendar year. Tax must still be collected on sales made at the show and on orders taken there.
-
-### Marketplace facilitators ([marketplace facilitators](https://dor.georgia.gov/marketplace-facilitators); [SUT-2020-01](https://dor.georgia.gov/media/35306/download))
-
-- **Who.** A person that contracts with sellers to facilitate taxable retail sales by both processing the payment and providing a service such as listing, marketing or taking orders. Merely processing payments does not make a facilitator.
-- **Threshold.** From 1 April 2020 a facilitator is a dealer if its taxable Georgia retail sales, combined across all its marketplace sellers and itself, "equals or exceeds $100,000.00" in the previous or current calendar year. There is no transaction count.
-- **Carve-outs.** A franchisor is not a facilitator for a franchisee, and a platform is not one for a large seller, only if all three conditions are met: the franchisor and all its franchisees combined had gross sales in the United States of at least $500 million in the prior calendar year (for a large seller: its own gross sales sourced to Georgia of at least $500 million); the franchisee or seller holds a Georgia sales tax certificate; and a contract makes it collect the tax.
-- **What it collects.** State and local tax on the total sales price of facilitated sales sourced to Georgia, including delivery charges and service fees. It is liable for the greater of the full tax due and the tax it collected.
-- **Relief.** It is not liable for tax missed because of wrong or incomplete seller information only if it shows the error came from the seller's information, it made a reasonable effort to get correct information, and the two are not related members. The seller is then solely liable.
-- **The seller.** A marketplace seller does not collect or remit on sales its facilitator must collect on.
-- **Reporting.** Facilitated sales go on a separate marketplace facilitator account. The facilitator's own direct sales go on a different account, or both on a master account.
-
-## Boundary and exception table ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax); [list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download))
-
-### What is taxed ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax); [list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download))
+Sources: [what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax); [2020 list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download).
 
 | Item | Treatment | Condition or exception |
 | --- | --- | --- |
 | Tangible goods | Taxable, state and local | Unless an exemption in O.C.G.A. § 48-8-3 applies |
-| Services | Generally not taxable | Taxed: accommodations, in-state transportation of individuals (taxis, limos), admissions, and charges for games and amusement activities. |
-| Delivery, freight, shipping and handling | Taxable when the item is taxable | Not taxable when not tied to a taxable sale |
-| Installation charges | Not taxable if separately stated | Otherwise part of the taxable sales price |
-| Repair labor | Not taxable if itemized | Parts are taxable |
+| Services | Generally not taxable | Taxed: accommodations, in-state transportation of individuals (taxis, limos), admissions, games and amusement charges |
+| Delivery, freight, shipping and handling | Taxable with a taxable item | Not taxable when not tied to a taxable sale |
+| Installation charges | Not taxable if separately stated | Otherwise part of the price |
+| Repair labour | Not taxable if itemized | Parts taxable |
 | Mandatory gratuities | Taxable | Voluntary tips are not |
-| Grocery food ("food and food ingredients") | Exempt from the 4% state tax only | Subject to all local taxes except the SPLOST levied with an EHOST. Only for off-premises consumption by an individual; not when bought for any use in a business. Prepared food, alcoholic beverages, dietary supplements, tobacco, drugs, OTC drugs and items for medical or hygiene purposes (cough drops, breath strips) are taxed at the full state and local rate |
-| Prescription drugs | Exempt | Drugs dispensable only by prescription for people, insulin, and prescription eyeglasses and contact lenses; keep the prescription record |
-| Prewritten software delivered electronically or by load and leave | Exempt | From 1 January 2024 the exemption excludes "specified digital products", "other digital goods" and "digital codes", which are taxable |
-| Software on a physical medium | Taxable | Outside the electronic-delivery exemption |
-| SaaS | Not addressed on the pages cited here | Refer; ask the Department for a letter ruling if the amount matters |
-| Clothing | Taxable | The sales tax holidays on the exemption list were for past dates only |
-| Newspapers and magazines | Taxable | Subscriptions are taxed on the subscription price |
-| Casual (occasional) sales | Not taxable | Only if the sale meets the casual sale definition in Rule 560-12-1-.07 |
+| Grocery food ("food and food ingredients") | Exempt from the 4% state tax only | Subject to local taxes except the SPLOST levied with an EHOST; only for off-premises consumption by an individual, not for business use. Prepared food, alcohol, dietary supplements, tobacco, drugs, OTC drugs and medical or hygiene items are fully taxed |
+| Prescription drugs | Exempt | Prescription-only drugs for people, insulin, prescription eyeglasses and contact lenses |
+| Prewritten software delivered electronically or by load and leave | Exempt | From 1 January 2024 not "specified digital products", "other digital goods" or "digital codes", which are taxable |
+| Software on a physical medium | Taxable | |
+| SaaS | Not addressed on these pages | Refer; seek a letter ruling if material |
+| Clothing | Taxable | The listed sales tax holidays were for past dates |
+| Newspapers and magazines | Taxable | Subscriptions on the subscription price |
+| Casual sales | Not taxable | Only within Rule 560-12-1-.07 |
+| Manufacturing machinery and equipment "necessary and integral", with parts, industrial materials, packaging and consumable supplies | Exempt from all sales and use tax | Buyer gives Form ST-5M; mixed-use detail refer |
+| Energy necessary and integral to manufacturing at a Georgia plant | Exempt except educational taxes (ELOST and local constitutional educational) | Not for producers of electricity for resale; report with the "E" indicator |
+| Governments | Exempt | United States, State of Georgia, Georgia counties and cities, qualifying fire districts, paid directly by warrant on appropriated funds; not other states' governments |
+| Nonprofits | Generally no exemption | "Georgia statute grants no sales or use tax exemption to churches, religious, charitable, civic and other nonprofit organizations" except named groups ([nonprofits](https://dor.georgia.gov/taxes/sales-use-tax/tax-exempt-nonprofit-organizations)) |
 
-### Manufacturing ([list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download))
+### Form ST-5 and other certificates
 
-- **Machinery and equipment** "necessary and integral to the manufacture of tangible personal property", with components and repair or replacement parts, and industrial materials, packaging supplies and consumable supplies, are exempt from all sales and use tax. The buyer gives Form ST-5M.
-- **Energy** necessary and integral to manufacturing at a Georgia plant is exempt, except from the educational sales taxes (ELOST and local constitutional educational taxes). It does not cover energy bought by a manufacturer primarily engaged in producing electricity for resale. Report it with the "E" indicator.
-- Detailed eligibility (what is "necessary and integral", mixed-use equipment) is not covered here; refer.
+Sources: [Form ST-5](https://dor.georgia.gov/document/form/st-5-sales-tax-certificate-exemption/download); [nontaxable sales FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/nontaxable-sales); [out-of-state sellers](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers).
+- The seller carries the burden unless it takes a valid certificate in good faith: fully completed (name, address, sales tax number and signature where required), the right form, an exemption that existed on the date and in the jurisdiction, could apply to the item, and reasonable for the buyer's business.
+- Resale protects the seller only if the buyer sells goods, holds a valid Georgia number at purchase and lists it, and the seller has no reason to think the item will not be resold. A few named buyers need no number (churches, K-12 private schools, parent-teacher organizations, Scout councils and some others).
+- Tax-free treatment does not cover anything the buyer uses, "including items the purchaser will donate".
+- One properly completed certificate per buyer; check numbers with the Sales Tax ID Verification Tool. Most certificates do not expire; the GATE certificate expires each year.
+- Drop shipments: a Georgia dealer shipping to a Georgia customer of an out-of-state reseller with no Georgia presence need not collect if it holds the Multi-Jurisdictional Certificate of Exemption or the buyer's home-state resale certificate.
 
-### Who can buy tax free ([nonprofits](https://dor.georgia.gov/taxes/sales-use-tax/tax-exempt-nonprofit-organizations); [Form ST-5](https://dor.georgia.gov/document/form/st-5-sales-tax-certificate-exemption/download))
+### Defaults when a fact is missing
 
-- **Governments.** The United States, the State of Georgia, Georgia counties and cities, qualifying fire districts, and their departments, but only when paid directly to the seller by warrant on appropriated government funds. The list does not include other states' governments.
-- **Nonprofits.** "In general, Georgia statute grants no sales or use tax exemption to churches, religious, charitable, civic and other nonprofit organizations." Only named groups qualify (for example licensed nonprofit hospitals and nursing homes, nonprofit private schools, food banks, health centers and volunteer clinics), each with its own paperwork. Nonprofits that sell goods must collect tax, apart from limited fundraising exemptions.
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Delivery address | Do not guess the rate; get the address and its jurisdiction code |
+| Quarter of the sale | Use the chart for the delivery date's quarter |
+| Certificate for an untaxed sale | Treat as taxable until a valid ST-5 is in hand |
+| Remote seller's exact count at 200 or revenue at $100,000 | Register, or get DOR's written confirmation |
 
-### Resale and exemption certificates: Form ST-5 ([Form ST-5](https://dor.georgia.gov/document/form/st-5-sales-tax-certificate-exemption/download); [nontaxable sales FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/nontaxable-sales))
+## Worked cases
 
-- **Burden on the seller.** "All sales are subject to sales tax until the contrary is established." The seller carries the burden of proof unless it takes a valid certificate in good faith.
-- **Good faith.** The certificate must be fully completed (name, address, sales tax number and signature where required), in the right form for the exemption, claim an exemption that existed on the date and in the jurisdiction of the sale, could apply to the item, and is reasonable for the buyer's type of business.
-- **Resale.** The certificate protects the seller only if the buyer is in the business of selling tangible goods, has a valid Georgia sales tax number at the time of purchase and lists it, and the seller has no reason to believe the item will not be resold. A number is not needed for a few named buyers (churches, K-12 private schools, parent-teacher organizations, Scout councils and some others).
-- **Own use.** Tax-free treatment does not extend to anything the buyer uses, "including items the purchaser will donate". A retailer who takes stock for its own use owes tax.
-- **One certificate per buyer.** The supplier must get and keep one properly completed certificate from each buyer. Check numbers with the Sales Tax ID Verification Tool.
-- **Expiry.** Most certificates do not expire; the Georgia Agricultural Tax Exemption (GATE) certificate expires each year.
-- **Out-of-state buyers (drop shipments).** When a buyer with no Georgia presence or number buys for resale and has the Georgia dealer ship to its customer in Georgia, the dealer need not collect if it holds the Multi-Jurisdictional Certificate of Exemption or the buyer's home-state resale certificate ([out-of-state sellers](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers)).
+Amounts are illustrations; rates are from DOR's charts for the quarter named.
 
-### Use tax ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax); [ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download))
+**Case 1, a decision: which quarter's rate?** A Cobb County seller delivers a $1,000 table to a customer in Richmond County. Tax follows the delivery county, not the seller's. Delivered in September 2026, the chart rate is 8.5%: $85.00. Delivered in October 2026, it is 9%: $90.00. A seller deciding whether to ship before or after 1 October changes the customer's tax by $5.00; charging the seller's own Cobb rate of 6% ($60.00) would under-collect.
 
-- **When.** On the first use, storage or consumption in Georgia of taxable goods bought without Georgia tax, and on taxable goods or services bought in Georgia without tax.
-- **Base.** The purchase price if the item was used outside Georgia for six months or less; the lower of purchase price and fair market value if used there longer.
-- **Credit.** Like taxes paid to another state reduce the Georgia use tax.
-- **Moving in.** Property brought in on a change of domicile is generally exempt, unless brought in for use in a trade, business or profession.
-- **Reporting.** On Part B of Form ST-3, by jurisdiction and reason code: 01 (bought tax-paid in Georgia, used in a higher-rate jurisdiction), 02 (withdrawal from inventory), 03 (import, state tax), 04 (import, local tax).
+```oa-check
+name: GA 2026 Richmond County delivery, quarter rate change
+inputs:
+  price: 1000
+  rate_q3: 0.085
+  rate_q4: 0.09
+  cobb_rate: 0.06
+steps:
+  - tax_september: price * rate_q3
+  - tax_october: price * rate_q4
+  - difference: tax_october - tax_september
+  - under_collected_if_seller_rate: tax_october - price * cobb_rate
+expected:
+  tax_september: 85.00
+  tax_october: 90.00
+  difference: 5.00
+  under_collected_if_seller_rate: 30.00
+```
 
-## Worked cases ([rate FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/tax-rates); [SUT-2020-01](https://dor.georgia.gov/media/35306/download); [ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download))
+**Case 2: groceries, use tax and vendor's compensation.** A grocer delivers $200 of food and $50 of cleaning supplies to a household in Appling County (8%). Food carries only the local part, 8% less 4% = 4%: $8.00; the supplies carry 8%: $4.00; total $12.00. A Cobb County business (6%, local part 2%) buys an $800 item online with no tax: state use tax $32.00 (reason 03) and local $16.00 (reason 04). If it buys a $900 item in a state that charged 5%, the 5% exceeds Georgia's 4%, so no state use tax is due, but local use tax is: $18.00. A contractor who buys a $600 item where the rate is 6% and uses it on a job where it is 8% owes 2% more: $12.00 (reason 01). A monthly filer whose state and local tax is $10,000, filed and paid electronically by the 20th, takes vendor's compensation of 3% of $3,000 ($90.00) plus 0.5% of $7,000 ($35.00) = $125.00, and remits $9,875.00. Late or on paper when e-filing is required, compensation is $0.
 
-Amounts are illustrations. Rates are from the Department's charts for the quarter named; cases 3 and 7 are the Department's own examples.
+```oa-check
+name: GA 2026 groceries at local rate, use tax and vendor's compensation
+inputs:
+  food: 200
+  supplies: 50
+  appling_rate: 0.08
+  state_rate: 0.04
+  online_item: 800
+  cobb_rate: 0.06
+  tax_on_return: 10000
+steps:
+  - grocery_tax: food * (appling_rate - state_rate) + supplies * appling_rate
+  - state_use_tax: online_item * state_rate
+  - local_use_tax: online_item * (cobb_rate - state_rate)
+  - vendor_comp: min(tax_on_return, 3000) * 0.03 + max(tax_on_return - 3000, 0) * 0.005
+  - remit: tax_on_return - vendor_comp
+expected:
+  grocery_tax: 12.00
+  state_use_tax: 32.00
+  local_use_tax: 16.00
+  vendor_comp: 125.00
+  remit: 9875.00
+```
 
-1. **Quarterly rate change.** A seller in Cobb County delivers a $1,000 table to a customer in Richmond County. Tax follows the delivery county, not the seller's. Delivered in September 2026, the chart rate is 8.5%: $1,000 × 8.5% = $85.00. Delivered in October 2026, the rate is 9%: $1,000 × 9% = $90.00 ([chart from 1 July 2026](https://dor.georgia.gov/document/document/general-rate-chart-effective-july-1-2026-through-september-30-2026pdf/download); [chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download)).
-2. **Remote seller using a marketplace.** An online store with no Georgia presence made 300 retail sales into Georgia totalling $120,000. A facilitator handled 280 of them ($110,000); the store made 20 directly ($10,000). It counts only its 20 direct sales and $10,000, so it has no duty to register ([SUT-2020-01](https://dor.georgia.gov/media/35306/download)). If instead it had made 200 or more direct sales in the year, even of small value, it would meet the bulletin's transaction test; at exactly 200, confirm with the Department.
-3. **Marketplace delivery order.** A delivery platform that is a dealer processes a food order: burger $8.00, fries $2.00, drink $2.00, delivery $4.00 and service fee $2.50, a sales price of $18.50. Delivery and service fees are part of the price. At 8%, tax is $18.50 × 8% = $1.48, and the total is $19.98. The platform collects and remits; the restaurant is not liable for that tax ([SUT-2020-01](https://dor.georgia.gov/media/35306/download)).
-4. **Groceries at the local rate only.** A grocer delivers $200 of food and $50 of cleaning supplies to a household in Appling County, where the chart rate is 8%. Food is exempt from the 4% state tax but not from local tax, so it carries 8% − 4% = 4%: $200 × 4% = $8.00. The cleaning supplies carry 8%: $50 × 8% = $4.00. Total tax $12.00. If an office bought the same $200 of food as snacks for its staff, the grocery exemption would not apply, because the food is for use in a business: $200 × 8% = $16.00. A restaurant buying ingredients to resell as meals is different: it buys for resale on Form ST-5 and pays no tax ([list of exemptions](https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download); [chart from 1 October 2026](https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download)).
-5. **Vendor's compensation.** A monthly filer's state and local tax (excluding motor fuel) is $10,000, filed and paid electronically by the 20th. Compensation is 3% of the first $3,000 ($90.00) plus 0.5% of the $7,000 above it ($35.00): $125.00, so it remits $9,875.00. If the return or the payment is late, or it files on paper when it must file electronically, compensation is $0 ([ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download)).
-6. **Late return.** A monthly filer owes $2,000 for September 2026, due 20 October 2026. It files and pays on 5 December 2026, in the second month after the due date. The penalty is 5% for each month or fraction of a month: 10%, or $200.00. It also owes interest from 20 October 2026 and loses vendor's compensation. For a small return the $5 minimum matters, and the penalty is "calculated separately for state and local taxes in aggregate". A filer owing $40 ($25 state and $15 local) and one month late has 5% of each part below $5 (5% of the whole $40 is only $2.00). If the minimum applies to each part, the penalty is $5 + $5 = $10; if once to the return, $5. Check the bill ([penalty and interest](https://dor.georgia.gov/penalty-and-interest-rates); [ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download)).
-7. **Delivery charge.** A seller charges $20 for a shirt and $5 to deliver it. Tax is due on $25 ([what is subject to tax](https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax)).
-8. **Use tax.** A Cobb County business (6%, of which 4% state and 6% − 4% = 2% local) buys an $800 item online and is charged no tax: state use tax $800 × 4% = $32.00 (reason 03) and local use tax $800 × 2% = $16.00 (reason 04). It buys a $900 item in a state that charged 5%: the 5% exceeds Georgia's 4%, so no state use tax is due, but local use tax is: $900 × 2% = $18.00. A contractor who buys a $600 item where the rate is 6% and uses it on a job where it is 8% owes 8% − 6% = 2% more: $12.00 (reason 01) ([ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download)).
+Other DOR examples kept for reference: a delivery platform's $18.50 order (burger $8, fries $2, drink $2, delivery $4, service fee $2.50) at 8% carries $1.48, collected by the platform ([SUT-2020-01](https://dor.georgia.gov/media/35306/download)); a $20 shirt with $5 delivery is taxed on $25.
 
 ## When to refuse or refer
 
-- **Georgia income tax.** Individuals: `ga-income-tax`. Corporations, partnerships, S corporations and the pass-through entity tax: `ga-corporate-and-ptet`.
-- **The nexus boundary.** A remote seller at or near $100,000 or 200 sales; the Department's bulletin and web page point different ways. Get written confirmation ([How do I know](https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax)).
-- **SaaS, digital products and digital codes.** Where the line between exempt prewritten software and taxable digital products matters, refer or ask the Department for a letter ruling.
-- **Special districts** (Fulton codes 803 and 805) and sales that are exempt from some local taxes but not others (energy to manufacturers, jet fuel, TSPLOST-exempt fuels, motor vehicles).
-- **Manufacturing, agricultural (GATE), data center and other certificate-based exemptions** in detail.
-- **Motor vehicles, motor fuel, alcohol and tobacco.**
-- **Unfiled past periods.** A business that should have registered and has not been contacted may qualify for a Voluntary Disclosure Agreement: penalties are usually waived, interest is still due, and the look-back for sales tax is usually thirty-six months, longer where tax was collected but not paid ([VDA program](https://dor.georgia.gov/voluntary-disclosure-agreements)).
-- **Audits, assessments, appeals and refund claims.** Refer to a Georgia CPA, EA or tax attorney.
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-GAST-NEXUS | Remote seller at or near $100,000 or 200 sales | Get DOR's written confirmation; bulletin and web page differ |
+| R-GAST-DIGITAL | SaaS, digital products and digital codes where the line matters | Refer or seek a letter ruling |
+| R-GAST-LOCAL | Special districts 803 and 805, and sales exempt from some local taxes but not others | Refer |
+| R-GAST-CERT | Manufacturing, GATE, data center and other certificate-based exemptions in detail | Refer |
+| R-GAST-EXCISE | Motor vehicles, motor fuel, alcohol and tobacco | Refer |
+| R-GAST-VDA | Unfiled past periods with no DOR contact | Consider a Voluntary Disclosure Agreement: penalties usually waived, interest due, look-back usually 36 months, longer where tax was collected and not paid ([VDA program](https://dor.georgia.gov/voluntary-disclosure-agreements)) |
+| R-GAST-AUDIT | Audits, assessments, appeals and refund claims | Refer to a Georgia CPA, EA or tax attorney |
 
-## Filing and payment ([file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay); [due dates](https://dor.georgia.gov/sales-use-tax-due-dates); [ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download))
+## Filing and payment
 
-### Frequency, returns and electronic filing ([file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay); [ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download))
+Sources: [file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay); [due dates](https://dor.georgia.gov/sales-use-tax-due-dates); [Form ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download); [penalty and interest](https://dor.georgia.gov/penalty-and-interest-rates).
 
-- **Frequency.** Returns are due monthly for most dealers. Quarterly and annual periods exist; a dealer may ask in writing to change its frequency (Rule 560-12-1-.22).
-- **Due date.** The 20th of the month after the period (O.C.G.A. § 48-8-49). A return is due even with no sales or no tax.
-- **Form ST-3.** Excess tax collected is added to the amount due. A dealer with four or more locations files on the Georgia Tax Center under a master account.
-- **Electronic filing and payment.** Required once you owe more than $500 on any return, and it continues even if later payments fall below $500. Anyone paying electronically must also file electronically. Paper filers use Form ST-3.
-- **Prepaid estimated tax.** A dealer whose state tax liability (excluding local taxes) in the previous calendar year was more than $60,000 must prepay 50% of its estimated tax. Estimated tax is its average monthly state tax payment for last year, adjusted for any rate change. The prepayment appears on lines 11 and 12 of Form ST-3; follow the Department's annual prepaid estimated tax letter.
-- **Amended returns.** File a new ST-3 with the Amended Return box ticked, showing changed and unchanged figures.
-- **Cash rounding.** If pennies are short, a dealer may round a cash total to a nickel, but tax is due on the unrounded price, and rounding may never be more than 4 pennies ([SUT-2025-02](https://dor.georgia.gov/document/document/sut-2025-02-federal-government-end-production-penny/download)).
+1. **Log in to the Georgia Tax Center** (gtc.dor.ga.gov). Most dealers file monthly; quarterly and annual periods exist, and a dealer may ask in writing to change (Rule 560-12-1-.22). A dealer with four or more locations files under a master account.
+2. **Complete Form ST-3** by jurisdiction code: Part A sales, Part B use tax with reason codes, excess tax collected added to the amount due; prepaid estimated tax on lines 11 and 12 for a dealer whose prior-year state tax exceeded $60,000 (50% of its average monthly state tax, adjusted for rate changes, per DOR's annual letter).
+3. **File by the 20th** of the month after the period (O.C.G.A. § 48-8-49), even with no sales. Once any return owes more than $500, file and pay electronically for every later period; anyone paying electronically must file electronically.
+4. **Take vendor's compensation** only if both return and payment are on time: "Vendor's compensation is only given when both the payment and return are submitted timely."
+5. **After filing:** amend with a new ST-3 ticking Amended Return; a mailed return and payment are on time if postmarked by the due date; cash totals may be rounded to a nickel (never more than 4 pennies) with tax on the unrounded price ([SUT-2025-02](https://dor.georgia.gov/document/document/sut-2025-02-federal-government-end-production-penny/download)).
 
-### 2026 due dates ([due dates](https://dor.georgia.gov/sales-use-tax-due-dates))
+**2026 due dates** ([due dates](https://dor.georgia.gov/sales-use-tax-due-dates)):
 
 | Period | Due |
 | --- | --- |
 | Monthly: January to December 2026 | 20 Feb, 20 Mar, 20 Apr, 20 May, 22 Jun, 20 Jul, 20 Aug, 21 Sep, 20 Oct, 20 Nov, 21 Dec 2026, 20 Jan 2027 |
-| Quarterly: Q1 to Q4 2026 | 20 Apr 2026, 20 Jul 2026, 20 Oct 2026, 20 Jan 2027 |
+| Quarterly: Q1 to Q4 2026 | 20 Apr, 20 Jul, 20 Oct 2026, 20 Jan 2027 |
 | Annual 2026 | 20 Jan 2027 |
 
-### Vendor's compensation ([ST-3 instructions](https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download))
-
-| Tax base (state and local, excluding motor fuel) | Rate | Condition |
-| --- | --- | --- |
-| First $3,000 of tax on the return | 3% | Both the return and the payment are on time |
-| Tax above $3,000 | 0.5% | Same |
-| Prepaid local tax on on-road motor fuel; off-road motor fuel | 3% | Motor fuel is out of scope here |
-
-"Vendor's compensation is only given when both the payment and return are submitted timely." A dealer required to file electronically gets none if it files or pays on paper.
-
-### Penalties and interest ([penalty and interest](https://dor.georgia.gov/penalty-and-interest-rates))
+2025 periods (late, amended or audited returns): use the chart for the 2025 quarter. Monthly 2025 returns fell due 20 Feb, 20 Mar, 21 Apr, 20 May, 20 Jun, 21 Jul, 20 Aug, 22 Sep, 20 Oct, 20 Nov, 22 Dec 2025 and 20 Jan 2026; quarterly 21 Apr, 21 Jul, 20 Oct 2025 and 20 Jan 2026; annual 20 Jan 2026.
 
 | Charge | Rule | Cap |
 | --- | --- | --- |
-| Late return or late payment (O.C.G.A. § 48-8-66) | Greater of 5% of the tax or $5, plus 5% or $5 for each further month or fraction of a month | Greater of 25% of the tax or $25 |
-| False or fraudulent return | 50% of the tax due | None stated |
-| Not filing electronically when required | Greater of $25 or 5% of the tax due | None stated |
-| Not paying electronically when required | 10% of the tax due | None stated |
-| Interest | Federal Reserve prime rate plus 3% a year, set each January, from the due date until paid | None |
+| Late return or payment (O.C.G.A. § 48-8-66) | Greater of 5% of the tax or $5, plus 5% or $5 each further month or part month, "calculated separately for state and local taxes in aggregate" | Greater of 25% or $25 |
+| False or fraudulent return | 50% of the tax due | none stated |
+| Not filing electronically when required | Greater of $25 or 5% of the tax due | none stated |
+| Not paying electronically when required | 10% of the tax due | none stated |
+| Interest | Prime rate plus 3% a year, set each January, from the due date | none |
 
-- **One penalty or two?** The Department's table lists failure to file and failure to pay as separate rows under the same section. The ST-3 instructions describe one penalty billed "for each month, or fraction of a month, for which the return is delinquent", calculated separately for state and local taxes in aggregate. If both are late, check the bill against the section.
-- **Timeliness.** A mailed return and payment are on time if postmarked by the due date. The return must be completed and signed to count as filed.
-- **Waiver.** The Department may waive penalties in whole or part for reasonable cause (O.C.G.A. § 48-2-43); request it through the Georgia Tax Center. Voluntary disclosure also waives penalties but not interest.
-- **Officers.** Unpaid trust fund tax can be collected from responsible officers personally.
+DOR's penalty table lists failure to file and failure to pay as separate rows under the same section, while the ST-3 instructions describe one penalty for each month the return is late; check a bill where both were late. For example, $2,000 due 20 October 2026 and paid 5 December 2026 (second month) costs 10%, $200.00, plus interest and lost vendor's compensation. For a small return the $5 minimum matters: a filer owing $40 ($25 state, $15 local) one month late has 5% of each part below $5; the penalty is $10 if the minimum applies to each part, $5 if once per return. Check the bill. DOR may waive penalties for reasonable cause (O.C.G.A. § 48-2-43), requested on the Georgia Tax Center.
 
-## 2025 periods (for late, amended or audited 2025 returns) ([due dates](https://dor.georgia.gov/sales-use-tax-due-dates); [general rate charts](https://dor.georgia.gov/sales-tax-rates-general))
+## Completion checklist
 
-- **Rates.** Use the chart for the quarter of the 2025 sale; the Department keeps each 2025 quarterly chart.
-- **Due dates.** Monthly 2025 returns fell due on 20 Feb, 20 Mar, 21 Apr, 20 May, 20 Jun, 21 Jul, 20 Aug, 22 Sep, 20 Oct, 20 Nov and 22 Dec 2025, and 20 Jan 2026. Quarterly: 21 Apr, 21 Jul and 20 Oct 2025, and 20 Jan 2026. The 2025 annual return was due 20 Jan 2026.
-- **Nexus.** A remote seller's 2025 sales count toward the "previous calendar year" test for 2026.
-- **Unchanged rules.** The Department's current pages describe the state rate, the vendor's compensation rates, the $500 electronic filing trigger and the penalty rates as standing rules, with no 2026 change.
+- Dealer status decided: physical presence; or remote seller over $100,000 or 200 or more direct sales in 2025 or 2026; or facilitator at $100,000 or more. Edge cases confirmed in writing.
+- Registered on the Georgia Tax Center; facilitated sales on their own account.
+- Each sale classified; groceries at local rate only and not for business use; electronic software against digital products checked.
+- Rate from the chart for the quarter and the delivery jurisdiction code.
+- Delivery charges and mandatory gratuities taxed; installation and repair labour separately stated.
+- Good-faith ST-5 (or ST-5M, or multi-state certificate) for every untaxed sale.
+- Use tax on Part B with the right reason code.
+- Return by the 20th, zero returns included; electronic once over $500; prepaid estimated tax if last year's state tax exceeded $60,000.
+- Vendor's compensation only on a timely return and payment.
+- Records kept at least three years.
 
-## Completion checklist ([DOR sales and use tax](https://dor.georgia.gov/taxes/sales-use-tax))
+## Sources
 
-- [ ] Dealer status decided: physical presence; or remote seller over $100,000 or 200 or more direct retail sales in 2025 or 2026 (facilitated sales left out); or facilitator at $100,000 or more. Exactly $100,000 or 200 sales confirmed with the Department.
-- [ ] Registered through the Georgia Tax Center; marketplace facilitator sales on their own account.
-- [ ] Each sale classified: goods, taxed services, food at local rate only (not for business use), exempt electronic software versus taxable digital products.
-- [ ] Rate taken from the chart for the quarter, using the jurisdiction code for the place of delivery (county, or city code such as Atlanta, Hapeville, College Park or East Point).
-- [ ] Delivery charges and mandatory gratuities taxed with the item; installation and repair labor separately stated.
-- [ ] A good-faith Form ST-5 (or ST-5M, or multi-state certificate) on file for every untaxed sale.
-- [ ] Use tax accrued on Part B with the right reason code.
-- [ ] Return filed by the 20th, including zero returns; filed and paid electronically if any return was over $500; prepaid estimated tax paid if last year's state tax was over $60,000.
-- [ ] Vendor's compensation (3% of the first $3,000, 0.5% above) taken only on a timely return and payment.
-- [ ] Any late period costed: 5% or $5 a month up to 25% or $25, plus interest at prime plus 3%.
-- [ ] Records kept for at least three years.
+| Source | URL | Read on |
+| --- | --- | --- |
+| DOR sales tax rates, general. Read for the list of quarterly charts. | https://dor.georgia.gov/sales-tax-rates-general | 2026-11-13 |
+| General rate chart effective 1 October 2026. Read for the 4% note, codes 803 and 805, and the Appling, Cobb, Gwinnett, Fulton, Atlanta, Hapeville, College Park, East Point, Clayton and Richmond rates. | https://dor.georgia.gov/document/document/httpsdorgeorgiagovdocumentdocumentgeneral-rate-chart-effective-october-1-2026/download | 2026-11-13 |
+| General rate chart, 1 July to 30 September 2026. Read for Richmond County at 8.5%. | https://dor.georgia.gov/document/document/general-rate-chart-effective-july-1-2026-through-september-30-2026pdf/download | 2026-11-13 |
+| SUT-2019-02 remote sellers. Read for the over $100,000 and 200 or more tests. | https://dor.georgia.gov/media/35301/download | 2026-11-13 |
+| SUT-2020-01 marketplace facilitators. Read for the $100,000 test, carve-outs, liability and the delivery order example. | https://dor.georgia.gov/media/35306/download | 2026-11-13 |
+| DOR "How do I know if I need to collect". Read for the "over 200" and "at least $100,000" wording. | https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax | 2026-11-13 |
+| DOR marketplace facilitators page. Read for the page as a whole. | https://dor.georgia.gov/marketplace-facilitators | 2026-11-13 |
+| DOR registration FAQ. Read for who registers, trade shows and trust fund liability. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq | 2026-11-13 |
+| DOR out-of-state sellers. Read for drop shipments, trade shows and the over-$100,000 state agency contract registration rule. | https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers | 2026-11-13 |
+| DOR what is subject to sales and use tax. Read for taxed goods and services, delivery, installation, repair labour, gratuities and use tax. | https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax | 2026-11-13 |
+| DOR 2020 list of sales and use tax exemptions. Read for food, drugs, software, manufacturing and energy. | https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download | 2026-11-13 |
+| DOR nontaxable sales FAQ. Read for the burden of proof and good faith. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/nontaxable-sales | 2026-11-13 |
+| Form ST-5. Read for resale and exemption certificate conditions. | https://dor.georgia.gov/document/form/st-5-sales-tax-certificate-exemption/download | 2026-11-13 |
+| DOR tax-exempt nonprofit organizations. Read for the no-general-exemption rule. | https://dor.georgia.gov/taxes/sales-use-tax/tax-exempt-nonprofit-organizations | 2026-11-13 |
+| DOR tax rates FAQ. Read for quarterly updates. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/tax-rates | 2026-11-13 |
+| DOR 1% City of Atlanta MOST. Read for the page as a whole. | https://dor.georgia.gov/1-city-atlanta-municipal-option-sales-tax | 2026-11-13 |
+| DOR TSPLOSTs. Read for the four TSPLOST types. | https://dor.georgia.gov/tsplosts | 2026-11-13 |
+| DOR tips for completing the return. Read for the local tax indicators. | https://dor.georgia.gov/tips-completing-sales-and-use-tax-return | 2026-11-13 |
+| Form ST-3 instructions (sales from 1 October 2022). Read for Parts A and B, use tax reason codes, vendor's compensation, penalty and interest. | https://dor.georgia.gov/document/document/st-3-sales-and-use-tax-returns-effective-sales-beginning-october-1-2022/download | 2026-11-13 |
+| DOR file and pay FAQ. Read for frequency, the $500 electronic trigger, prepaid estimated tax and record keeping. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay | 2026-11-13 |
+| DOR sales and use tax due dates. Read for the 2025 and 2026 dates. | https://dor.georgia.gov/sales-use-tax-due-dates | 2026-11-13 |
+| SUT-2025-02, end of penny production. Read for cash rounding. | https://dor.georgia.gov/document/document/sut-2025-02-federal-government-end-production-penny/download | 2026-11-13 |
+| DOR penalty and interest rates. Read for the sales and use tax and mandatory electronic filing penalties. | https://dor.georgia.gov/penalty-and-interest-rates | 2026-11-13 |
+| DOR voluntary disclosure agreements. Read for penalty waiver and look-back. | https://dor.georgia.gov/voluntary-disclosure-agreements | 2026-11-13 |
+| DOR Streamlined Sales Tax. Read for full membership from 1 July 2011. | https://dor.georgia.gov/taxes/tax-rules-and-policies/streamlined-sales-tax | 2026-11-13 |
+
+Not yet confirmed: the rate chart for January to March 2027 was not yet published; whether the $5 minimum penalty applies to each of the state and local parts or once per return; SaaS treatment; whether a remote seller at exactly $100,000 or exactly 200 sales is in or out (bulletin and web page differ).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

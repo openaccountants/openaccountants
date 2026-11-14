@@ -1,11 +1,12 @@
 ---
 name: ba-cross-border
 description: "Cross-border tax in Bosnia and Herzegovina for tax year 2026: payments to non-residents, non-residents working in BiH, and residents with income from abroad. Set out separately for the Federation of BiH (FBiH), Republika Srpska (RS) and Brčko District (BD), with VAT at state level. Covers withholding tax on dividends, interest, royalties and services (FBiH 5% and 10%, RS 10%, BD 10% with dividends exempt); treaty relief, residence certificates and forms (OP-820, POD-815 to 819, RS Form 10); the 38 treaty partners; permanent establishment tests; non-residents selling BiH property or shares; non-resident individuals; VAT on services bought from abroad (17%, reverse charge); foreign tax credits for companies and individuals. Trigger phrases: porez po odbitku nerezident, withholding tax Bosnia, ugovor o izbjegavanju dvostrukog oporezivanja, potvrda o rezidentnosti, stalno mjesto poslovanja, reverse charge BiH. Out of scope: transfer pricing (ba-transfer-pricing), profit tax (ba-corporate-income-tax), personal income tax (bosnia-income-tax), VAT returns (bosnia-vat)."
-version: 0.1
+version: 0.2
+type: situation-rules
 jurisdiction: BA
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -37,10 +38,10 @@ Between the entities and BD, the same credits apply as for foreign tax (FBiH art
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | FBiH withholding: dividends | 5% of gross (lower under a treaty) | 2026 | FBiH profit tax law art. 38(6), (7): https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf |
-| FBiH withholding: interest, royalties, management, technical and training services (including market research, tax advice, audit and consulting), rent, entertainment and sport, insurance, telecoms; other services only to non-treaty countries | 10% of gross (lower under a treaty) | 2026 | FBiH art. 38(1), (7) |
+| FBiH withholding: interest, royalties, management, technical and training services (including market research, tax advice, audit and consulting), rent, entertainment and sport, insurance, telecoms; other services only to non-treaty countries | 10% of gross (lower under a treaty) | 2026 | [FBiH art. 38(1), (7)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
 | RS withholding: dividends, interest, royalties, entertainment and sport, professional, scientific, technical and educational services, insurance, telecoms, movable rent; other services only to non-treaty countries | 10% (the separate 5% dividend rate was deleted from 2017) | 2026 | RS law art. 44 and art. 45 as amended by 1/17 arts. 15, 16: https://www.poreskaupravars.org/dokumenti/zakoni/ZakonoizmdopDobit.pdf |
 | BD withholding: interest, entertainment and sport, management, consulting, financial, technical and administrative services, insurance, royalties, movable rent | 10% of the gross payment; dividends exempt | 2026 | BD profit tax law arts. 29, 30: https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf |
-| Residence certificate for treaty relief | No older than one year | 2026 | FBiH art. 40(1); RS art. 52(1) as amended by 1/17 art. 19; FBiH Rulebook 39/26 art. 110(3) |
+| Residence certificate for treaty relief | No older than one year | 2026 | [FBiH art. 40(1)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [RS art. 52(1) as amended by 1/17 art. 19](https://www.poreskaupravars.org/dokumenti/zakoni/ZakonoizmdopDobit.pdf); [FBiH Rulebook 39/26 art. 110(3)](https://pufbih.ba/v1/public/upload/zakoni/03062026%20Pravilnik%20o%20primjeni%20Zakona%20o%20porezu%20na%20dobit%2039-26.pdf) |
 | Treaty partners in force | 38 states (MFT list) | 2026 | https://www.mft.gov.ba/Content/Read/sporazumi-u-primjeni |
 | Example treaty: Croatia | Dividends 5% (company holding at least 25% directly) or 10%; interest 10%; royalties 10%; building site PE after 12 months | 2026 | Treaty arts. 5(3), 10, 11, 12: https://chj.mft.gov.ba/data/Fiskala/BiH-Hrvatska_-_Komb._tekst_-__bos_-_28.12..pdf |
 | Example treaty: Serbia | Dividends 5% (company holding at least 25% directly) or 10%; interest 10%; royalties 10% | 2026 | Treaty arts. 10, 11, 12: https://chj.mft.gov.ba/data/Fiskalni%20sporazumi%202/fiskala%20sporazumi/BiH_-_Srbija_-_bos._verzija.pdf |
@@ -51,10 +52,10 @@ Between the entities and BD, the same credits apply as for foreign tax (FBiH art
 | Treaty: Slovenia | Dividends 5% (company holding at least 25% directly) or 10%; interest 7%, nil when paid by or to the government, a political subdivision, a local authority or the central bank, or on loans granted, guaranteed or insured by the institution authorised under domestic law to insure and finance international business transactions; royalties 5% | 2026 | Agreement arts. 10(2), 11(2), (3), 12(2), MFT combined text with the MLI: https://chj.mft.gov.ba/data/Fiskalni%20sporazumi%202/BiH_-_Slovenija_-_bos._verzija_.pdf |
 | Treaty: Turkey | Dividends 5% (company, not a partnership, holding at least 25% directly) or 15%; interest 10%; royalties 10% | 2026 | Convention arts. 10(2), 11(2), 12(2): https://chj.mft.gov.ba/data/Datoteke/PDF/Fiskala%20sporazumi/Turkey_eng.pdf |
 | PE: building or installation site | FBiH more than 6 months; RS more than 12 months (from 2026); BD no minimum in the law | 2026 | FBiH art. 6(3); RS art. 41(1)(2) as amended by 114/25 art. 13: https://poreskaupravars.org/wp-content/uploads/2025/12/Dobit-1.pdf; BD art. 2(p) |
-| PE: services, FBiH | More than 3 months in any 12-month period on the same or connected project | 2026 | FBiH art. 6(4); Rulebook 39/26 art. 11(2)(c) |
+| PE: services, FBiH | More than 3 months in any 12-month period on the same or connected project | 2026 | [FBiH art. 6(4)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [Rulebook 39/26 art. 11(2)(c)](https://pufbih.ba/v1/public/upload/zakoni/03062026%20Pravilnik%20o%20primjeni%20Zakona%20o%20porezu%20na%20dobit%2039-26.pdf) |
 | Non-resident individual, occasional independent work | 10% final, no allowance | 2026 | FBiH PIT art. 30(1): https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf; RS PIT art. 61a (110/24): https://poreskaupravars.org/wp-content/uploads/2025/01/Scan29012025.pdf; BD PIT art. 31(1) |
 | VAT on services from abroad | 17% paid by the BiH business customer | 2026 | VAT Law arts. 13(1)(3), 23: https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-1-Zakon_o_PDV-b.pdf |
-| Late-payment interest | FBiH 0.04% a day; RS 0.03% a day; BD 0.03% a day capped at principal; VAT 0.04% a day | 2026 | FBiH: https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf; RS ZPP art. 60; BD ZPU art. 68; VAT: https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf |
+| Late-payment interest | FBiH 0.04% a day; RS 0.03% a day; BD 0.03% a day capped at principal; VAT 0.04% a day | 2026 | FBiH: https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf; RS ZPP art. 60: https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf; BD ZPU art. 68; VAT: https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/1_UIO/3_Zakon_o_postupku_indirektnog_oporeivanja/1_Zakon/B/B-1-1-Zakon-o-izmjenama-Zakona-o-postupku-indirektnog-oporezivanja-Sluzbeni-glasnik-BiH-broj-10013.pdf |
 
 ## The taxable base
 

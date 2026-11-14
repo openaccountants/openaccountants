@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ba-corporate-income-tax"
   jurisdiction: "BA"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Bosnia and Herzegovina corporate income tax (2026)
@@ -37,35 +37,35 @@ Find out first where the company has its seat and where it has branches. That de
 | Profit tax rate, FBiH | 10% of the tax base in the tax balance | 2026 | FBiH Zakon o porezu na dobit art. 31: https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf |
 | Profit tax rate, RS | 10% | 2026 | RS Zakon o porezu na dobit art. 36(1): https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf |
 | Profit tax rate, BD | 10% | 2026 | BD Zakon o porezu na dobit art. 20(1): https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf |
-| Withholding tax, FBiH: dividends | 5% (lower under a treaty) | 2026 | FBiH art. 38(7) (URL above) |
-| Withholding tax, FBiH: interest, royalties, services, rent and other listed payments | 10% (lower under a treaty) | 2026 | FBiH art. 38(1), (7) |
+| Withholding tax, FBiH: dividends | 5% (lower under a treaty) | 2026 | [FBiH art. 38(7) (URL above)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Withholding tax, FBiH: interest, royalties, services, rent and other listed payments | 10% (lower under a treaty) | 2026 | [FBiH art. 38(1), (7)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
 | Withholding tax, RS: all listed payments including dividends | 10% (lower under a treaty); the separate 5% dividend rate was deleted from 2017 | 2026 | RS art. 44, as amended by 1/17 art. 15: https://www.poreskaupravars.org/dokumenti/zakoni/ZakonoizmdopDobit.pdf |
-| Withholding tax, BD | 10% of the gross payment; dividends exempt | 2026 | BD arts. 29(2)(d), 30(1) |
-| Representation (business entertainment), all three | 30% deductible | 2026 | FBiH art. 12(1); RS art. 15; BD art. 8(2)(a) |
-| Donations, FBiH | Up to 3% of total revenue | 2026 | FBiH art. 12(3) |
-| Sponsorship, FBiH | Up to 3% of total revenue | 2026 | FBiH art. 12(4) |
-| Donations, RS | Up to 3% of total revenue | 2026 | RS art. 16 |
-| Sponsorship, RS | Up to 2% of total revenue | 2026 | RS art. 17 |
-| Product and service complaints, RS | Up to 3% of operating revenue | 2026 | RS art. 18 |
+| Withholding tax, BD | 10% of the gross payment; dividends exempt | 2026 | [BD arts. 29(2)(d), 30(1)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Representation (business entertainment), all three | 30% deductible | 2026 | [FBiH art. 12(1)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [RS art. 15](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf); [BD art. 8(2)(a)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Donations, FBiH | Up to 3% of total revenue | 2026 | [FBiH art. 12(3)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Sponsorship, FBiH | Up to 3% of total revenue | 2026 | [FBiH art. 12(4)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Donations, RS | Up to 3% of total revenue | 2026 | [RS art. 16](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf) |
+| Sponsorship, RS | Up to 2% of total revenue | 2026 | [RS art. 17](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf) |
+| Product and service complaints, RS | Up to 3% of operating revenue | 2026 | [RS art. 18](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf) |
 | Donations, BD | Up to 3% of total revenue (public institutions, humanitarian, cultural, educational, scientific); sport up to 10% | 2026 | BD art. 8(2)(f), (g), as amended by 38/22: https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/06B38-22%20Zakon%20o%20izmjeni%20i%20dopunama%20Zakona%20o%20porezu%20na%20dobit.pdf |
-| Sponsorship, BD | Up to 2% of total revenue | 2026 | BD art. 8(2) (sponsorship point, renumbered by 38/22) |
-| Chamber membership fees, BD | Up to 0.2% of total revenue | 2026 | BD art. 8(2) (membership point) |
-| Warranty provisions, FBiH | Up to 4% of annual turnover of the guaranteed products | 2026 | FBiH art. 13(3) |
-| Environmental provision, FBiH | Up to 30% of taxable profit before the provision; total never above registered capital | 2026 | FBiH art. 13(2) |
-| Related-party financing, FBiH | Interest on debt above 4:1 debt to registered capital is not deductible (not for banks, leasing and insurance companies) | 2026 | FBiH art. 18(2), (4) |
+| Sponsorship, BD | Up to 2% of total revenue | 2026 | [BD art. 8(2) (sponsorship point, renumbered by 38/22)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/06B38-22%20Zakon%20o%20izmjeni%20i%20dopunama%20Zakona%20o%20porezu%20na%20dobit.pdf) |
+| Chamber membership fees, BD | Up to 0.2% of total revenue | 2026 | [BD art. 8(2) (membership point)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Warranty provisions, FBiH | Up to 4% of annual turnover of the guaranteed products | 2026 | [FBiH art. 13(3)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Environmental provision, FBiH | Up to 30% of taxable profit before the provision; total never above registered capital | 2026 | [FBiH art. 13(2)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Related-party financing, FBiH | Interest on debt above 4:1 debt to registered capital is not deductible (not for banks, leasing and insurance companies) | 2026 | [FBiH art. 18(2), (4)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
 | Net interest cap, RS | Net interest expense above 30% of the tax base (calculated without interest income and expense) is not deductible | 2026 | RS art. 14a, as added by 1/17 and amended by 114/25 art. 7: https://poreskaupravars.org/wp-content/uploads/2025/12/Dobit-1.pdf |
-| Depreciation, FBiH (straight line) | Buildings 5%; roads, utilities, railways 10%; equipment, vehicles, plant 15%; water systems equipment 15%; hardware, software, environmental equipment 33.3%; perennial crops 15%; basic herd 40%; intangibles 20% | 2026 | FBiH art. 19(2) |
-| Accelerated depreciation, FBiH | Up to 50% above the art. 19 rates for pollution-prevention assets | 2026 | FBiH art. 20 |
-| Depreciation, RS | Real estate and plant 3%, intangibles other than software 10% (straight line, per asset); computers, IT systems, software and servers 40%, equipment and other assets 20% (declining balance, per pool) | 2026 | RS art. 12, as replaced by 1/17 art. 5 |
-| Depreciation, BD (machines and equipment) | Accelerated: 40% year 1, 30% year 2, 30% year 3; computer hardware and software fully deductible in the year of purchase | 2026 | BD art. 11(4), (6) |
-| Small asset write-off | FBiH and BD: asset costing under KM 1,000 deducted in full in the year of purchase; RS: a pool base under KM 1,000 deducted in full | 2026 | FBiH art. 19(5); BD art. 11(5); RS art. 12(7) |
-| Tax loss carry-forward | 5 years, oldest first, all three | 2026 | FBiH art. 25; RS art. 25(2), (3); BD art. 13(2), (3) |
-| Investment incentive, FBiH | Tax reduced by 30% if own-funds investment in production equipment is above 50% of the year's profit; or by 50% for KM 20 million invested over five years with KM 4 million in year one | 2026 | FBiH art. 36(2), (4) |
-| Employment incentive, FBiH | Double deduction of gross wages of new full-time hires on contracts of at least 12 months | 2026 | FBiH art. 37(1) |
+| Depreciation, FBiH (straight line) | Buildings 5%; roads, utilities, railways 10%; equipment, vehicles, plant 15%; water systems equipment 15%; hardware, software, environmental equipment 33.3%; perennial crops 15%; basic herd 40%; intangibles 20% | 2026 | [FBiH art. 19(2)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Accelerated depreciation, FBiH | Up to 50% above the art. 19 rates for pollution-prevention assets | 2026 | [FBiH art. 20](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Depreciation, RS | Real estate and plant 3%, intangibles other than software 10% (straight line, per asset); computers, IT systems, software and servers 40%, equipment and other assets 20% (declining balance, per pool) | 2026 | [RS art. 12, as replaced by 1/17 art. 5](https://www.poreskaupravars.org/dokumenti/zakoni/ZakonoizmdopDobit.pdf) |
+| Depreciation, BD (machines and equipment) | Accelerated: 40% year 1, 30% year 2, 30% year 3; computer hardware and software fully deductible in the year of purchase | 2026 | [BD art. 11(4), (6)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Small asset write-off | FBiH and BD: asset costing under KM 1,000 deducted in full in the year of purchase; RS: a pool base under KM 1,000 deducted in full | 2026 | [FBiH art. 19(5)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [BD art. 11(5)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf); [RS art. 12(7)](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf) |
+| Tax loss carry-forward | 5 years, oldest first, all three | 2026 | [FBiH art. 25](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf); [RS art. 25(2), (3)](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20od%2001_01_2016.pdf); [BD art. 13(2), (3)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Investment incentive, FBiH | Tax reduced by 30% if own-funds investment in production equipment is above 50% of the year's profit; or by 50% for KM 20 million invested over five years with KM 4 million in year one | 2026 | [FBiH art. 36(2), (4)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Employment incentive, FBiH | Double deduction of gross wages of new full-time hires on contracts of at least 12 months | 2026 | [FBiH art. 37(1)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
 | Investment incentive, RS | Tax base reduced by the value of production equipment and plant invested in the RS | 2026 | RS art. 26, as replaced by 58/19: https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20porezu%20na%20dobit%20SG%202019.pdf |
-| Investment incentive, BD | Tax base reduced by the year's investment, capped at 50% of the base; no cap for production land, buildings, plant and machinery | 2026 | BD art. 38(1), (2) |
-| Transfer pricing transaction overview, FBiH | Filed with the return when related-party transactions exceed KM 500,000 in the year | 2026 | FBiH art. 49(3) |
-| Transfer pricing documentation, RS | Needed for related-party transactions over KM 50,000 in the year; filed electronically within 9 months after year end | 2026 | RS art. 34, as amended by 114/25 art. 10 |
+| Investment incentive, BD | Tax base reduced by the year's investment, capped at 50% of the base; no cap for production land, buildings, plant and machinery | 2026 | [BD art. 38(1), (2)](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dobit/05B17-22%20Zakon%20o%20porezu%20na%20dobit%20-%20prec--is--eni%20tekst.pdf) |
+| Transfer pricing transaction overview, FBiH | Filed with the return when related-party transactions exceed KM 500,000 in the year | 2026 | [FBiH art. 49(3)](https://ik.imagekit.io/9qcwbg8wl/15-16_i_15-20-zakon-o-porezu-na-dobit-precisceni_07YP9wNd9.pdf) |
+| Transfer pricing documentation, RS | Needed for related-party transactions over KM 50,000 in the year; filed electronically within 9 months after year end | 2026 | [RS art. 34, as amended by 114/25 art. 10](https://poreskaupravars.org/wp-content/uploads/2025/12/Dobit-1.pdf) |
 | Late-payment interest, FBiH | 0.04% a day | 2026 | Zakon o visini stope zatezne kamate na javne prihode art. 2: https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf |
 | Late-payment interest, RS | 0.03% a day | 2026 | Zakon o poreskom postupku RS art. 60(1): https://poreskaupravars.org/wp-content/uploads/2020/11/Zakon-o-poreskom-postupku.pdf |
 | Late-payment interest, BD | 0.03% a day, capped at the principal | 2026 | Zakon o Poreznoj upravi BD art. 68: https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf |
@@ -261,4 +261,4 @@ Not yet confirmed: treaty withholding rates (the old version said 0% with Irelan
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ba-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ba-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ba-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ba-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
