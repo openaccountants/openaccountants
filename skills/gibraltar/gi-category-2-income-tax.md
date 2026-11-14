@@ -7,8 +7,8 @@ description: >
   Prepare Gibraltar Category 2 certificate applications, annual income classification, capped ABS calculations, part-year minimum-tax working papers and the published IT1C filing/payment workflow. Covers individuals and Rule 11 family elections, previous presence and activity tests, permitted Gibraltar work, property income outside the cap, foreign-income exclusions and elections, certificate continuation and surrender. Uses the current June 2026 Rules and application pack, the 2025-26 return and 2026-27 payment dates. Distinguishes the application fee, certificate advance tax, payments on account and actual bank transfer. Announced wealth-policy implementation, cash allocation and named source conflicts remain explicit; this source-cited draft is not professional attestation.
 tax_year: 2026
 tax_year_notes: "2025-26 IT1C return; 2026-27 certificate and payments"
-last_updated: 2026-10-31
-version: "0.1"
+last_updated: 2026-11-14
+version: "0.2"
 depends_on:
   - gi-individual-income-tax
   - gi-foreign-tax-relief
@@ -54,9 +54,10 @@ sources:
     as_of: "2026-10-31"
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Gibraltar Category 2 certificate, income tax and IT1C v0.1
+# Gibraltar Category 2 certificate, income tax and IT1C v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -259,18 +260,18 @@ All linked sources were read for this job on **2026-10-31**. The figure ledger d
 
 | Source | Scope and read date |
 |---|---|
-| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf | Rules 2–14, 2026-10-31 |
-| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf | Published fee change and commencement, 2026-10-31 |
-| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf | Current ordinary bands and dated overrides, 2026-10-31 |
-| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf | Charging/deductions, return/payment, credits and penalties, 2026-10-31 |
-| https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf | June 2026 application fields/declarations, 2026-10-31 |
-| https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf | June 2026 submission, property and medical requirements, 2026-10-31 |
-| https://www.gibraltarfinance.gi/uploads/forms/CAT%202%20Approval%20of%20Residential%20Accommodation%20Form.pdf | Actual property-approval fields, 2026-10-31 |
-| https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf | Current return, attachments and payment boxes, 2026-10-31 |
-| https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals | Current headline tax limits; assessable/taxable wording difference retained, 2026-10-31 |
-| https://www.gibraltar.gov.gi/income-tax-office/report-changes | Official payment entry route, 2026-10-31 |
-| https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf | Payment-plan/reference/bank-transfer distinction, 2026-10-31 |
-| https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107 | Announced wealth policy and grandfathering, not implementation proof, 2026-10-31 |
-| https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf | May 2011 source conflict only, read 2026-10-31 |
+| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf | Read for: Rules 2–14, 2026-10-31 |
+| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf | Read for: Published fee change and commencement, 2026-10-31 |
+| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf | Read for: Current ordinary bands and dated overrides, 2026-10-31 |
+| https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf | Read for: Charging/deductions, return/payment, credits and penalties, 2026-10-31 |
+| https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf | Read for: June 2026 application fields/declarations, 2026-10-31 |
+| https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf | Read for: June 2026 submission, property and medical requirements, 2026-10-31 |
+| https://www.gibraltarfinance.gi/uploads/forms/CAT%202%20Approval%20of%20Residential%20Accommodation%20Form.pdf | Read for: Actual property-approval fields, 2026-10-31 |
+| https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf | Read for: Current return, attachments and payment boxes, 2026-10-31 |
+| https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals | Read for: Current headline tax limits; assessable/taxable wording difference retained, 2026-10-31 |
+| https://www.gibraltar.gov.gi/income-tax-office/report-changes | Read for: Official payment entry route, 2026-10-31 |
+| https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf | Read for: Payment-plan/reference/bank-transfer distinction, 2026-10-31 |
+| https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107 | Read for: Announced wealth policy and grandfathering, not implementation proof, 2026-10-31 |
+| https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf | Read for: May 2011 source conflict only, read 2026-10-31 |
 
 Not yet confirmed: effective implementation/measurement of the announced wealth-policy change; application-fee remittance instructions for a particular applicant; certificate-advance versus statutory/form instalment allocation in the actual account; the ordinary part-year band/reference and deduction issues for non-zero income; shared-deduction allocation and minimum/credit ordering in mixed cases; disputed income/election/credit allocations and legacy HNWI cases requiring the preserved earlier rules. No live application, return, payment plan, bank transfer or refund was submitted. These limits remain work to resolve, not comprehensive-job acceptance or a cleared country partial.

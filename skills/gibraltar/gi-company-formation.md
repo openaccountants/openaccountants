@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: formation
 tax_year: 2026
-last_updated: 2026-10-31
-version: "0.7"
+last_updated: 2026-11-14
+version: "0.8"
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
     title: "UBO, Nominators and Appointors Regulations 2017, 15 July 2026 consolidation"
@@ -46,6 +46,7 @@ sources:
     as_of: "2026-10-22"
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Gibraltar: formation of a private company limited by shares
@@ -288,17 +289,17 @@ The dates below preserve the source reads recorded in the existing Guide. This s
 
 | Source | Official URL | Recorded read date |
 |---|---|---|
-| UBO, Nominators and Appointors Regulations 2017, 15 July 2026 consolidation | https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf | 2026-10-22 |
-| GFSC registrar transition and new UBO submission route, 4 September 2026 | https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590 | 2026-10-22 |
-| Gibraltar: Companies Act version index | https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106 | 2026-10-22 |
-| Gibraltar: Application to register a company: FINC01 | https://www.companieshouse.gi/publications/FINC01.pdf | 2026-10-22 |
-| Gibraltar: Secretary consent: FINC02 | https://www.companieshouse.gi/publications/FINC02.pdf | 2026-10-22 |
-| Gibraltar: Statement of compliance: FINC23 | https://www.companieshouse.gi/publications/FINC23.pdf | 2026-10-22 |
-| Gibraltar: Directors and secretaries: Guidance Note 10 | https://www.companieshouse.gi/publications/C0010.pdf | 2026-10-22 |
-| Gibraltar: Registered office: Guidance Note 2 | https://www.companieshouse.gi/publications/C0002.pdf | 2026-10-22 |
-| Gibraltar: Companies Act Fees Amendment Regulations 2025 | https://gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2025=211.pdf | 2026-10-22 |
-| Gibraltar: Table of fees: Guidance Note 19 | https://www.companieshouse.gi/publications/C0019.pdf | 2026-10-22 |
-| Gibraltar: Government company incorporation overview | https://www.gibraltar.gov.gi/business/companies-house/companies | 2026-10-22 |
-| Gibraltar: Companies Act 2014: consolidation dated 1 August 2025 | https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf | 2026-10-22 |
+| UBO, Nominators and Appointors Regulations 2017, 15 July 2026 consolidation: read for the rules and figures this Guide cites from it | https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf | 2026-10-22 |
+| GFSC registrar transition and new UBO submission route, 4 September 2026: read for the rules and figures this Guide cites from it | https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590 | 2026-10-22 |
+| Gibraltar: Companies Act version index: read for the rules and figures this Guide cites from it | https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106 | 2026-10-22 |
+| Gibraltar: Application to register a company: FINC01: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/FINC01.pdf | 2026-10-22 |
+| Gibraltar: Secretary consent: FINC02: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/FINC02.pdf | 2026-10-22 |
+| Gibraltar: Statement of compliance: FINC23: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/FINC23.pdf | 2026-10-22 |
+| Gibraltar: Directors and secretaries: Guidance Note 10: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/C0010.pdf | 2026-10-22 |
+| Gibraltar: Registered office: Guidance Note 2: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/C0002.pdf | 2026-10-22 |
+| Gibraltar: Companies Act Fees Amendment Regulations 2025: read for the rules and figures this Guide cites from it | https://gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2025=211.pdf | 2026-10-22 |
+| Gibraltar: Table of fees: Guidance Note 19: read for the rules and figures this Guide cites from it | https://www.companieshouse.gi/publications/C0019.pdf | 2026-10-22 |
+| Gibraltar: Government company incorporation overview: read for the rules and figures this Guide cites from it | https://www.gibraltar.gov.gi/business/companies-house/companies | 2026-10-22 |
+| Gibraltar: Companies Act 2014: consolidation dated 1 August 2025: read for the rules and figures this Guide cites from it | https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf | 2026-10-22 |
 
 Not yet confirmed: Special-name approvals, alternative entities/sector permissions, historical nominee/appointor cases, section 12 cross-reference and live submission/authority receipts remain unresolved. Current source/editorial review of this structural continuation and professional attestation remain separate. The country remains partial; this continuation does not grant professional attestation.

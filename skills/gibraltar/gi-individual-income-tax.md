@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: "0.12"
+last_updated: 2026-11-14
+version: "0.13"
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
     title: "Inheritance Tax (Qualifying Non-UK Pension Schemes) Regulations 2010, revised regulations 2–7 and Schedule"
@@ -74,9 +74,10 @@ sources:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.12
+# Gibraltar individual income tax: ordinary assessment v0.13
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -401,12 +402,12 @@ Earlier reads and completed review scopes remain recorded on their actual dates.
 
 | Instrument | Official source | Read date |
 |---|---|---|
-| Energy (Deductions) Rules 2015, rules 3–7 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download) | 2026-10-28 |
-| Energy Performance (Deductions) Rules 2018, rules 3–8 and Schedule | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) | 2026-10-28 |
-| Electric Vehicle Charger (Deductions) Rules 2018, rules 3–7 as amended 2022 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download) | 2026-10-28 |
-| Disabled Access to Property (Deductions) Rules 2020, rules 3–6 as amended 18 June 2026 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download) | 2026-10-28 |
-| LN 2026/125, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download) | 2026-10-28 |
-| LN 2022/170, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download) | 2026-10-28 |
+| Energy (Deductions) Rules 2015, rules 3–7: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download) | 2026-10-28 |
+| Energy Performance (Deductions) Rules 2018, rules 3–8 and Schedule: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) | 2026-10-28 |
+| Electric Vehicle Charger (Deductions) Rules 2018, rules 3–7 as amended 2022: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download) | 2026-10-28 |
+| Disabled Access to Property (Deductions) Rules 2020, rules 3–6 as amended 18 June 2026: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download) | 2026-10-28 |
+| LN 2026/125, rules 2–3: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download) | 2026-10-28 |
+| LN 2022/170, rules 2–3: read for the rules and figures this Guide cites from it | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download) | 2026-10-28 |
 
 The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](../../evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved.
 

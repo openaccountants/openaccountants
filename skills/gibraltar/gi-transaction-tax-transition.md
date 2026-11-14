@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: "0.10"
+last_updated: 2026-11-14
+version: "0.11"
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf"
     title: "HM Customs Goods Transit Process, sections 2 and 4.2"
@@ -40,10 +40,11 @@ sources:
     as_of: "2026-10-28"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
 
-# Gibraltar goods transaction-tax transition v0.10
+# Gibraltar goods transaction-tax transition v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -267,7 +268,7 @@ The preserved production, cost-floor and rate-sensitivity illustrations and the 
 
 | TGEU Act, commencement, ss 6, 10, 68, 98–102, 130–131; Schedules 1–2 | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf) | 2026-10-28 |
 
-| Deductions Rules 2–6 | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf) | 2026-10-28 |
+| Read for: Deductions Rules 2–6 | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf) | 2026-10-28 |
 
 | HM Customs transit sections 2–4.2 | [Official source](https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf) | 2026-10-28 |
 
@@ -275,19 +276,19 @@ The preserved production, cost-floor and rate-sensitivity illustrations and the 
 
 | Council register; read in normal browser after script HTTP 403 | [Official source](https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009) | 2026-10-28 |
 
-| Official deduction-period explanation | [Official source](https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358) | 2026-10-28 |
+| Read for: Official deduction-period explanation | [Official source](https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358) | 2026-10-28 |
 
-| LN 2026/188: Annex 19 transit, special-procedure periods and discharge | [Official source](https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-annex-19-regulations-2026-8553/download) | 2026-10-28 |
+| Read for: LN 2026/188: Annex 19 transit, special-procedure periods and discharge | [Official source](https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-annex-19-regulations-2026-8553/download) | 2026-10-28 |
 
-| LN 2026/211: Union-goods special-procedure law and replacements | [Official source](https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-special-customs-procedures-concerning-union-goods-regulations-2026-8575/download) | 2026-10-28 |
+| Read for: LN 2026/211: Union-goods special-procedure law and replacements | [Official source](https://www.gibraltarlaws.gov.gi/legislations/tgeu-implementation-special-customs-procedures-concerning-union-goods-regulations-2026-8575/download) | 2026-10-28 |
 
-| HM Customs Annex 19 special-procedure guidance | [Official source](https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Annex%2019%20Special%20Customs%20Procedures%20GN%20FINAL.pdf) | 2026-10-28 |
+| Read for: HM Customs Annex 19 special-procedure guidance | [Official source](https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Annex%2019%20Special%20Customs%20Procedures%20GN%20FINAL.pdf) | 2026-10-28 |
 
-| Imports and Exports Act: residual entry rules and offences | [Official source](https://www.gibraltarlaws.gov.gi/legislations/imports-and-exports-act-1986-423/download) | 2026-10-28 |
+| Read for: Imports and Exports Act: residual entry rules and offences | [Official source](https://www.gibraltarlaws.gov.gi/legislations/imports-and-exports-act-1986-423/download) | 2026-10-28 |
 
-| EU Regulation 2023/2831: aid scope, aggregation and ceiling | [Official source](https://eur-lex.europa.eu/eli/reg/2023/2831/oj/eng) | 2026-10-28 |
+| Read for: EU Regulation 2023/2831: aid scope, aggregation and ceiling | [Official source](https://eur-lex.europa.eu/eli/reg/2023/2831/oj/eng) | 2026-10-28 |
 
-| Treaty Volume II: Annexes 18 and 24 | [Official source](https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf) | 2026-10-28 |
+| Read for: Treaty Volume II: Annexes 18 and 24 | [Official source](https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf) | 2026-10-28 |
 
 **Not yet confirmed:** a deduction extension after 12 October 2026; actual aid grant-equivalent/currency/headroom and sector-specific treatment; incorporated commodity/traveller classifications and remaining transitional-stock conditions/boundaries; the exact one-/nine-month warehousing boundary wording; the separate section 102 export-refund form/deadline and operational receipts; application of all retained entry rules to each treaty movement; a numerical special-procedure arrears interest rate and any separate transaction-tax penalty. No live declaration, payment, approval or refund claim has been tested. Special-procedure debt remedies above do not resolve the separate export-refund route.
 
