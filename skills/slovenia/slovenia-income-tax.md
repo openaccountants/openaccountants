@@ -58,20 +58,20 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 | Employee up to and including the year they turn 29 | EUR 1,443.50 a year, pro rata per full month employed | 2026 | same FURS notice; ZDoh-2 art. 113(6) |
 | Voluntary supplementary pension premium | up to 24% of employee pension contributions (5.844% of a pension), max EUR 3,224.18 | 2026 | same FURS notice; ZDoh-2 art. 117 |
 | Pension credit | 13.5% of the pension, off the tax | 2026 | ZDoh-2 art. 112(3), https://pisrs.si/pregledPredpisa?id=ZAKO4697 |
-| New residents under 40 | 7% of salary off the tax, up to 5 years | tax years from 2025 | ZDoh-2 art. 113.a; see [si-cross-border](si-cross-border.md) |
-| Interest, dividends, capital gains | 25%, final | 2026 | ZDoh-2 art. 132(1) |
-| Capital gains after 5 / 10 years held | 20% / 15% | 2026 | ZDoh-2 art. 132(2) |
-| Capital gains after 15 years held | exempt | 2026 | ZDoh-2 art. 96(1) |
-| Interest on EU bank deposits and Slovenian retail bonds issued 2024 to 2026 | first EUR 1,000 a year exempt | 2026 | ZDoh-2 art. 133 |
-| Individual investment account (INR) payout | 15%, final; exempt for a payout made at least 15 years after opening (or after the last payout) | from 5 March 2026 | ZDoh-2 arts. 104.b and 132(3); ZINR art. 45 |
-| Rent | 25% final, on rent less 10% standard costs | 2026 | ZDoh-2 arts. 77 and 135.č |
-| Royalties | 10% standard costs; 25% advance tax | 2026 | ZDoh-2 arts. 79 and 130 |
+| New residents under 40 | 7% of salary off the tax, up to 5 years | tax years from 2025 | ZDoh-2 art. 113.a; see [si-cross-border](si-cross-border.md); https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html |
+| Interest, dividends, capital gains | 25%, final | 2026 | ZDoh-2 art. 132(1); https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
+| Capital gains after 5 / 10 years held | 20% / 15% | 2026 | ZDoh-2 art. 132(2); https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
+| Capital gains after 15 years held | exempt | 2026 | ZDoh-2 art. 96(1); https://pisrs.si/api/datoteke/integracije/358727637 |
+| Interest on EU bank deposits and Slovenian retail bonds issued 2024 to 2026 | first EUR 1,000 a year exempt | 2026 | ZDoh-2 art. 133; https://pisrs.si/api/uradni-list/objava/u20261692.pdf |
+| Individual investment account (INR) payout | 15%, final; exempt for a payout made at least 15 years after opening (or after the last payout) | from 5 March 2026 | ZDoh-2 arts. 104.b and 132(3); ZINR art. 45; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
+| Rent | 25% final, on rent less 10% standard costs | 2026 | ZDoh-2 arts. 77 and 135.č; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
+| Royalties | 10% standard costs; 25% advance tax | 2026 | ZDoh-2 arts. 79 and 130; https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
 | s.p. on normed expenses, full-time self-insured for at least 9 months of 2026 | 20% of a base up to EUR 72,000; EUR 14,400 plus 35% above; final | 2026 | ZPZR art. 7(1) and (3) (replaces ZDoh-2 art. 135.a for 2026), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
 | s.p. on normed expenses, other | 20% of a base up to EUR 33,000; EUR 6,600 plus 35% above; final | 2026 | ZPZR art. 7(1) and (3), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
-| Normed expenses, full-time self-insured s.p. | 80% of revenue up to EUR 60,000; none on revenue above | from 2025 | ZDoh-2 art. 59(1) |
-| Normed expenses, other s.p. | 80% up to EUR 12,500; 40% from 12,500 to 30,000; none above | from 2025 | ZDoh-2 art. 59(2) |
+| Normed expenses, full-time self-insured s.p. | 80% of revenue up to EUR 60,000; none on revenue above | from 2025 | ZDoh-2 art. 59(1); https://pisrs.si/api/datoteke/integracije/358727637 |
+| Normed expenses, other s.p. | 80% up to EUR 12,500; 40% from 12,500 to 30,000; none above | from 2025 | ZDoh-2 art. 59(2); https://pisrs.si/api/datoteke/integracije/358727637 |
 | Entry and exit test for normed expenses | average revenue of the two previous years (2024 and 2025 for 2026) up to EUR 120,000 if full-time self-insured for 9 months in each of those years; EUR 50,000 if in neither; EUR 85,000 otherwise | 2026 | ZPZR art. 6(3) and (13) (replace ZDoh-2 art. 48(3) and (14) for 2026), https://pisrs.si/pregledPredpisa?id=ZAKO9359 |
-| Advance tax at a secondary employer; contract work | 25% | 2026 | ZDoh-2 art. 127(6) and (10) |
+| Advance tax at a secondary employer; contract work | 25% | 2026 | ZDoh-2 art. 127(6) and (10); https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx |
 
 ## The taxable base
 
@@ -276,6 +276,7 @@ expected:
 | Social Security Contributions Act (ZPSV) art. 1 and arts. 8 to 13 rates, and Long-Term Care Act (ZDOsk-1) arts. 51(2), 56 and 56.a(1), for the example contribution rates and their deduction | https://pisrs.si/pregledPredpisa?id=ZAKO984 and https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Health Care and Health Insurance Act (ZZVZZ) art. 48 (OZP), and FURS self-employed contribution tables SZ 1/2026 and SZ 3/2026 for the OZP of EUR 37.17 and EUR 39.36 | https://pisrs.si/pregledPredpisa?id=ZAKO213 and https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/ | 2026-10-24 |
 | Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 (art. 308 re-read 2026-10-30) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
+| Read for Capital gains after 15 years held, Normed expenses, full-time self-insured s.p., Normed expenses, other s.p.: ZDoh-2 (ZAKO4697) consolidated text, PISRS file served by pisrs.si/api | https://pisrs.si/api/datoteke/integracije/358727637 | 2026-11-14 |
 
 Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published. The content of ZIURS and whether it enters into force: it goes to a referendum on 6 December 2026, and if it enters into force it changes the 2026 normed-expense rules from 1 January 2026 (FURS, 16 October 2026); its text was not read.
 
