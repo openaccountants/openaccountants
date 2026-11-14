@@ -53,7 +53,7 @@ Anyone setting up a business in The Bahamas in 2026: sole proprietors, home-base
 | Late filing fee | BSD 100 | Fourth Schedule | same |
 | Liquor establishment endorsement | BSD 250 per establishment | Before the first licence; for renewal by 30 September of the prior year | Business Licence (Amendment) Act 2026, s. 7: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0022A/2026-0022A.pdf |
 | VAT registration | Taxable activity over BSD 100,000 in the past or next 12 months; apply within 14 days | Online at vat.revenue.gov.bs | DIR VAT FAQs: https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ |
-| Accountant's report at renewal | From BSD 250,000 turnover | BICA review to BSD 4.99 million; audit from BSD 5 million | DIR, renewing a business licence: https://inlandrevenue.finance.gov.bs/business-licence/renewing-business-licence/ |
+| Accountant's report at renewal | From BSD 250K turnover | BICA review to BSD 4.99 million; audit from BSD 5 million | DIR, renewing a business licence: https://inlandrevenue.finance.gov.bs/business-licence/renewing-business-licence/ |
 
 ### Steps in order
 
