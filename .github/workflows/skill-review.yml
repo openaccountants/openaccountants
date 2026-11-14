@@ -549,8 +549,8 @@ jobs:
           case "$verdict" in
             FIX)
               if [ "$ROUND" -ge "$MAX_FIX_ROUNDS" ]; then
-                label needs-michael d93f0b "Automated review stopped: a person decides"
-                next="Both automatic fix rounds are used. Over to Michael."
+                label needs-figure-check d93f0b "Automated review stopped: Claude runs the row-by-row figure check, then fixes or merges"
+                next="Both automatic fix rounds are used. Over to the figure check (Claude), then a fix or a merge."
               else
                 next_round=$((ROUND + 1))
                 label "review-round-$next_round" c5def5 "Automatic fix round $next_round of $MAX_FIX_ROUNDS"
@@ -559,8 +559,8 @@ jobs:
               fi
               ;;
             HOLD)
-              label needs-michael d93f0b "Automated review stopped: a person decides"
-              next="Held for a person."
+              label needs-figure-check d93f0b "Automated review stopped: Claude runs the row-by-row figure check, then fixes or merges"
+              next="Held for the figure check (Claude): every figure is checked against its linked page, then fixed or merged."
               ;;
             MERGE)
               next="No blocking fault found. This comment does not approve or merge; a maintainer does."
@@ -808,9 +808,9 @@ jobs:
           fi
           PATCH="$RUNNER_TEMP/fix/fix.patch"
           refuse() {
-            printf 'Automatic fix (round %s) not committed: %s\n\nOver to Michael.\n' "$ROUND" "$1" > "$RUNNER_TEMP/refuse.md"
-            gh label create needs-michael --repo "$REPO" --color d93f0b --description "Automated review stopped: a person decides" >/dev/null 2>&1 || true
-            gh api -X POST "repos/$REPO/issues/$PR/labels" -f "labels[]=needs-michael" >/dev/null
+            printf 'Automatic fix (round %s) not committed: %s\n\nOver to the figure check (Claude).\n' "$ROUND" "$1" > "$RUNNER_TEMP/refuse.md"
+            gh label create needs-figure-check --repo "$REPO" --color d93f0b --description "Automated review stopped: Claude runs the row-by-row figure check, then fixes or merges" >/dev/null 2>&1 || true
+            gh api -X POST "repos/$REPO/issues/$PR/labels" -f "labels[]=needs-figure-check" >/dev/null
             gh api -X POST "repos/$REPO/issues/$PR/comments" -F body=@"$RUNNER_TEMP/refuse.md" >/dev/null
             echo "::warning::$1"
             exit 0
