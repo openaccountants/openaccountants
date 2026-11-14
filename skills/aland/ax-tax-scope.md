@@ -22,7 +22,6 @@ depends_on:
 ---
 
 # Åland: tax-law scope for 2026 v1.1
-
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Written by Ryan Duguid; imported from his fork and brought to the repository standard. Built from the law. Not yet approved by an accountant. Tax year 2026.
