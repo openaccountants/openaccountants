@@ -48,7 +48,7 @@ Headline figures only; each owning skill carries the conditions and full tables.
 | Business tax, professions and vocations | 6% of gross receipts | bz-corporate-income-tax | same |
 | Withholding on dividends | 15% | bz-corporate-income-tax | same |
 | General Sales Tax | 12.5% standard; 0% zero-rated | bz-vat-gst | [GST Act, Cap. 63, s.9](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
-| GST registration limit | BZD 75,000 of supplies in twelve months | bz-vat-gst | [GST Act, s.23](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
+| GST registration limit | Supplies of seventy-five thousand dollars or more in twelve months | bz-vat-gst | [GST Act, s.23](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Social security | 10% of weekly insurable earnings in total, wage ceiling BZD 520 a week | bz-payroll-social | [SSB Contribution and Benefit Schedule](https://socialsecurity.org.bz/wp-content/uploads/2022/03/Cont_Ben_Schedule.jpg) |
 
 ## The base
@@ -140,7 +140,7 @@ expected:
 |---|---|---|
 | Income and Business Tax (Amendment) Act No. 40 of 2024, read for s.6 (charge only on employed persons, 25%) and s.16 (BZD 29,000 and BZD 20,000) and s.47 | https://media.bts.gov.bz/uploads/Act_No_40_of_2024_Income_and_Business_Tax_Amendment_Act_2024_b6bf496b66.pdf | 2026-11-14 |
 | BTS Business Tax Guide (September 2025), read for business tax rates, the 15th-day deadline, penalties, refunds, the 60-day employee rule and withholding | https://media.bts.gov.bz/uploads/Business_Tax_Guide_20250929_fc95296232.pdf | 2026-11-14 |
-| General Sales Tax Act, Cap. 63, Revised Edition 2011, read for s.9 (12.5% and 0%), s.23 (BZD 75,000) and the fifteen-day return | https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf | 2026-11-14 |
+| General Sales Tax Act, Cap. 63, Revised Edition 2011, read for s.9 (12.5% and 0%), s.23 (seventy-five thousand dollars) and the fifteen-day return | https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf | 2026-11-14 |
 | SSB Contribution and Benefit Schedule effective 4 April 2022, read for the 10% total and the BZD 520 wage ceiling | https://socialsecurity.org.bz/wp-content/uploads/2022/03/Cont_Ben_Schedule.jpg | 2026-11-14 |
 | SSB contributions page, read for the fourteen-day payment deadline | https://www.socialsecurity.org.bz/contributions/ | 2026-11-14 |
 | Income and Business Tax Act, Cap. 55, Revised Edition 2011, read for s.31 (annual return date) | https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf | 2026-11-14 |

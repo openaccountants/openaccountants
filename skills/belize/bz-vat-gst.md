@@ -38,11 +38,11 @@ category: international
 | Standard rate | 12.5% | Every taxable supply or importation not zero-rated; the Minister may vary the rate by Order (s.9(2)) | [GST Act, Cap. 63, s.9(1)(b)](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Zero rate | 0% | Supplies and imports under the First Schedule (exported goods), Second Schedule (exported services) and Third Schedule (other zero-rated supplies and imports) | [GST Act, s.9(1)(a) and Schedules 1 to 3](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Exempt supplies | No GST, no input credit | Fourth Schedule, for example financial services and other intermediation, and supplies by educational institutions; Fifth Schedule lists exempt imports | [GST Act, Schedules 4 and 5](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
-| Registration limit | BZD 75,000 of supplies in twelve months | Tested on the last day of each month, looking back and forward (s.23(1)) | [GST Act, s.23](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
+| Registration limit | Supplies of seventy-five thousand dollars or more in twelve months | Tested on the last day of each month, looking back and forward (s.23(1)) | [GST Act, s.23](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Tax period | One calendar month | Definition of "tax period" | [GST Act, s.2](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Return due | Within fifteen days after the end of the tax period; within fourteen days after ceasing to be registered | Or later if the Commissioner allows in writing | [GST Act, return section](https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf) |
 | Late payment penalty on the return | 10% of the tax due for the period | BTS210 line 330, if paying after the due date | [BTS210 GST return](https://media.bts.gov.bz/uploads/BTS_210_GST_RETURN_MANUAL_d6b6eaa77c.pdf) |
-| Late payment interest on the return | 1.5% of the tax due per month | BTS210 line 340 | same |
+| Late payment interest on the return | 1 1/2% of the tax due per month | BTS210 line 340 | same |
 
 ## The base
 
@@ -131,7 +131,7 @@ expected:
 |---|---|---|
 | General Sales Tax Act, Cap. 63, Revised Edition 2011, read for s.2 (tax period), s.8 and s.9 (imposition, 12.5% and 0%), s.23 (registration limits), the return section (fifteen days) and the headings of Schedules 1 to 5 | https://media.bts.gov.bz/uploads/General_Sales_Tax_Act_2011_f573a52314.pdf | 2026-11-14 |
 | General Sales Tax (Amendment) Act No. 34 of 2024, read for the arrangement of sections and the new definitions of invoice (structured electronic data) and profession | https://media.bts.gov.bz/uploads/Act_No_34_of_2024_General_Sales_Tax_Amendment_Act_2024_5aa922a419.pdf | 2026-11-14 |
-| BTS210 General Sales Tax Return, read for every line from 100 to 420, the 10% penalty and 1.5% monthly interest lines | https://media.bts.gov.bz/uploads/BTS_210_GST_RETURN_MANUAL_d6b6eaa77c.pdf | 2026-11-14 |
+| BTS210 General Sales Tax Return, read for every line from 100 to 420, the 10% penalty and 1 1/2% monthly interest lines | https://media.bts.gov.bz/uploads/BTS_210_GST_RETURN_MANUAL_d6b6eaa77c.pdf | 2026-11-14 |
 | BTS registration guide, read for TIN registration on IRIS Belize | https://bts.gov.bz/guide/registration | 2026-11-14 |
 | BTS tax resources page, read for the GST Acts, forms 210, 210a and 210b | https://bts.gov.bz/tax_resources | 2026-11-14 |
 | BTS home page, read for the notice of the orientation manual for issuers of electronic tax documents | https://bts.gov.bz/ | 2026-11-14 |

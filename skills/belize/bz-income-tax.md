@@ -47,7 +47,7 @@ category: international
 | Credit for gifts to sports or education | Lesser of BZD 30,000 or 1% of the tax payable | s.108B | same |
 | Annual return due | Last day of the third month after the basis year (31 March 2027 for 2026) | Employees with only emoluments need not file unless claiming a refund, asked by the Commissioner, or tax is unpaid | [Cap. 55 s.31(1) and (2)](https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf) |
 | Late return penalty | 3% of the unpaid tax for each month or part month, for up to 20 months | Not levied on a return filed only to claim a refund | [Cap. 55 s.31(5) and (7)](https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf) |
-| Late payment | 1.5% of the unpaid tax per month | From the day after the prescribed period until payment | [Cap. 55 s.55(a)](https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf) |
+| Late payment | 1½ per cent of the unpaid tax per month | From the day after the prescribed period until payment | [Cap. 55 s.55(a)](https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf) |
 
 ## The base
 
@@ -136,7 +136,7 @@ expected:
 |---|---|---|
 | Income and Business Tax (Amendment) Act No. 40 of 2024, read for the new s.6 (charge only on employed persons, 25%, 40% petroleum, 3% DPA, foreign-derived income, UK pension election), s.16 (BZD 29,000, BZD 20,000, tax credit), s.21, s.47, s.108B and commencement 1 January 2025 | https://media.bts.gov.bz/uploads/Act_No_40_of_2024_Income_and_Business_Tax_Amendment_Act_2024_b6bf496b66.pdf | 2026-11-14 |
 | BTS203 Income Tax Return for Employees, effective 2025 (spreadsheet), read for the line order and the formulas for chargeable income, 25% and the tax credit | https://media.bts.gov.bz/uploads/BTS_203_Income_Tax_Return_For_Employees_Fillable_Effective2025_c69fde410f.xlsx | 2026-11-14 |
-| Income and Business Tax Act, Cap. 55, Revised Edition 2011, read for s.31 (returns, 3% late penalty) and s.55 (1.5% interest) and the PAYE provisions | https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf | 2026-11-14 |
+| Income and Business Tax Act, Cap. 55, Revised Edition 2011, read for s.31 (returns, 3% late penalty) and s.55 (1½ per cent interest) and the PAYE provisions | https://media.bts.gov.bz/uploads/Income_and_Business_Tax_Act_2011_13d48a3c6e.pdf | 2026-11-14 |
 | Payment of Income Tax (Amendment) Rules 2010 (SI 73 of 2010), read for medical and dental insurance premiums not being emoluments | https://media.bts.gov.bz/uploads/2010_Statutory_Instrument_No_73_of_2010_1c910fbfaa.pdf | 2026-11-14 |
 | BTS Business Tax Guide (September 2025), read for FAQ 4 and 5 (employment and business receipts, the 60-day consultant rule) | https://media.bts.gov.bz/uploads/Business_Tax_Guide_20250929_fc95296232.pdf | 2026-11-14 |
 | BTS tax resources page, read for the list of income tax forms (BTS200, BTS203) | https://bts.gov.bz/tax_resources | 2026-11-14 |
