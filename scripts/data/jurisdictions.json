@@ -1092,6 +1092,13 @@
   "dir": "skills/saudi-arabia"
  },
  {
+  "code": "SB",
+  "name": "Solomon Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/solomon-islands"
+ },
+ {
   "code": "SC",
   "name": "Seychelles",
   "region": "africa",
