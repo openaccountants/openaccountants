@@ -7,13 +7,13 @@ category: international
 type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+version: 0.3
 tier: 2
 domain: income-tax
 ---
 
-# Gabon individual income tax v0.1
+# Gabon individual income tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -37,6 +37,7 @@ IRPP applies through habitual residence or the day-count gateway, and to nonresi
 | Annual taxable income per share Q: 11,000,001 and above | 35% Q minus 1,669,000 | 2025 statutory baseline; 2026 currency hold | [CGI art174](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-BAND8) |
 | Basic family shares | Single without dependent: 1; married without child: 2. Further shares and exceptions require articles 170-173. | 2025 statutory baseline; 2026 currency hold | [CGI art170](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-SHARES) |
 | Ordinary salary professional expenses | 20%, annual cap 10,000,000; timely declaration condition. Actual expenses and specified officeholders differ. | 2025 statutory baseline; 2026 currency hold | [CGI art94](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-FEES) |
+| Rent withholding | 10% of taxable rent, withheld by a tenant that is a company, a professional-income individual (rent booked in its accounts), a property agent or manager, or the State or a public body; not due if the landlord pays IS in Gabon; excess refunded by the Treasury; pay within the first 15 days of the next calendar quarter | Initial 2026 law; art 193 deleted | [LF041/2025 art4, CGI art178bis](https://journal-officiel.ga/22265-041-2025-/) |
 | Professional-income floor | 1% reference turnover and 500,000 minimum; synthétique regime excluded and qualifying start-up relief separately tested. | 2025 statutory baseline; 2026 currency hold | [CGI arts175-175bis](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-MIN) |
 
 ## The base
@@ -104,7 +105,8 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
+| Journal Officiel: Law 041/2025, replacement art 178 bis read | https://journal-officiel.ga/22265-041-2025-/ | 2026-11-14 |
 | CGI: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read. | https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf | 2026-11-01 |
-| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
+| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis, 91bis, 178bis, 202-204, 208ter, 210, 211ter, 215, 221-224, 227, 230, 243bis, 248septies-nonies, 401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
 
 Not yet confirmed: Full BIC/BNC/agricultural computation, exemptions, pensions, capital gains, movable-income exceptions, family special cases and the complete rent-withholding transition. This is not yet a full annual personal-return workflow. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).

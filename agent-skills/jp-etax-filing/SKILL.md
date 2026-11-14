@@ -6,482 +6,140 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/jp-etax-filing"
   jurisdiction: "JP"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# JP Etax Filing
+# Japan e-Tax filing v1.1
 
-## Japan e-Tax Filing (電子申告) -- Self-Employed Skill v1.0
+> **General reference only.** This skill prepares AI-assisted working papers. A qualified 税理士 must review the facts, elections, computations and current forms before filing, paying or taking a tax position.
 
 > Based on work by [Kazuki Nagata (@kazukinagata)](https://github.com/kazukinagata/shinkoku), licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1 -- Quick Reference
+## Scope
 
-**Quick Reference**
+Guide the taxpayer/reviewer through electronic individual business-income and consumption-tax return preparation, saved data, signature, receipt and payment. This is 2026 workflow readiness, using final 2025 forms in the 2025-2026 filing cycle for screen orientation. Do not enter 2026 figures in a 2025 return. Current 2026 law must come from the computation skills; screens and form numbers can change. Contributor: Open Accountants Community.
 
-| Field | Value |
-| --- | --- |
-| Country | Japan (日本) |
-| System | e-Tax (国税電子申告・納税システム) |
-| Portal URL | https://www.keisan.nta.go.jp/ |
-| Portal Name | 確定申告書等作成コーナー (Tax Return Preparation Corner) |
-| Authentication | My Number Card (マイナンバーカード) via smartphone QR code or IC card reader |
-| Tax Authority | National Tax Agency (国税庁 NTA) |
-| Filing Deadline (Income Tax) | 15 March of the following year |
-| Filing Deadline (Consumption Tax) | 31 March of the following year |
-| Contributor | Open Accountants Community |
-| Skill version | 1.0 |
+### Quick reference
 
-## Section 2 -- Prerequisites
+| Item | Condition/value | Official source |
+|---|---|---|
+| Start portal | `確定申告書等作成コーナー`; choose `決算書・収支内訳書(＋所得税)` for business statements followed by income tax | [e-Tax selection FAQ](https://www.e-tax.nta.go.jp/toiawase/faq/gaiyo/07.htm) |
+| Blue-return special deduction | JPY 550,000 (source: 55万円) requires eligible business, regular books, statements and timely return; JPY 650,000 (source: 65万円) additionally timely e-Tax return/statements OR qualifying excellent electronic books plus required notice; other eligible blue filers up to JPY 100,000 (source: 10万円), limited by relevant positive income | [Special Measures Act art.25-2; NTA 2072](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm) |
+| Authentication PINs, taxpayer enters personally | User authentication 4 numeric digits; signature 6-16 alphanumeric characters | [NTA e-Tax PIN FAQ](https://www.e-tax.nta.go.jp/toiawase/faq/zizen/10.htm) |
+| Calendar 2026 income tax final due/debit | 2027-03-15 /2027-04-23 if valid transfer arrangement | [NTA tax calendar](https://www.nta.go.jp/taxes/nozei/nofu/24200042/noufu_kigen.htm) |
+| Calendar 2026 individual JCT final due/debit | 2027-03-31 /2027-04-30 if valid transfer arrangement | [NTA tax calendar](https://www.nta.go.jp/taxes/nozei/nofu/24200042/noufu_kigen.htm) |
+| Final 2025 return,2025-2026 filing cycle | Income tax due 2026-03-16, debit 2026-04-23; JCT due 2026-03-31, debit 2026-04-30 | [NTA tax calendar](https://www.nta.go.jp/taxes/nozei/nofu/24200042/noufu_kigen.htm) |
+|2026 estimated-tax notice calendar | First period 2026-07-31; second 2026-11-30; use assessed notice and `jp-estimated-tax`, not prior final balance alone | [NTA tax calendar](https://www.nta.go.jp/taxes/nozei/nofu/24200042/noufu_kigen.htm) |
+| Consumer-app/convenience payment in opened 2025 JCT manual | Total tax <=JPY 300,000 (source: 30万円); options disappear above that amount; app option not offered for paper submissions | [NTA manual payment section](https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/kisairei/pdf/0023010-154_04.pdf) |
 
-Before starting the e-Tax filing process, ensure:
+## Ask the client first
 
-1. **Income tax calculations are complete** -- use the `jp-income-tax` skill to compute all figures
-2. **Financial statements (決算書) are prepared** -- P/L (損益計算書) and B/S (貸借対照表) for blue return filers
-3. **Consumption tax calculations are complete** (if applicable) -- use the `jp-consumption-tax` skill
-4. **Taxpayer profile is ready** -- name, address, My Number (マイナンバー), tax office name, business type, trade name (屋号)
-5. **Authentication method is available** -- My Number Card + smartphone with マイナポータル app, or IC card reader
+- Exact return year, return type, blue approval and filing history.
+- Reviewed computation, financial statements, expense/asset and withholding/deduction schedules.
+- Consumption-tax status, method/election proof and gross/net classification schedules.
+- Taxpayer's available My Number Card/smartphone/card-reader or existing supported alternate method.
+- Tax office/address, name/kana/trade name, own refund account and chosen payment method.
+- Unresolved discrepancies, missing attachments and explicit confirmation of final figures.
 
-### Required Documents at Hand
+## The method, step by step
 
-**Required Documents at Hand**
+1. Load `jp-income-tax`, `jp-consumption-tax`, `jp-return-assembly`. Obtain reviewed financial statements, income/credit schedules and JCT workpaper first. At [the official portal](https://www.keisan.nta.go.jp/) choose the actual tax year, new preparation or saved data, and submission method supported by that year's system. Never automatically answer Yes to card/smartphone questions.
+2. Select `決算書・収支内訳書(＋所得税)`, then `青色申告決算書`, `収支内訳書`, or eligible elected `青色申告決算書（現金主義用）`. The official FAQ confirms statements can lead into income-tax preparation. [NTA e-Tax FAQ](https://www.e-tax.nta.go.jp/toiawase/faq/gaiyo/07.htm).
+3. My Number Portal linkage is optional: ask whether configured and desired, review imported certificates and remove duplicates. Read displayed terms, then taxpayer accepts them and authenticates personally. For a QR flow the taxpayer scans using the official app/card and enters the appropriate PIN; never collect, store, infer or type it. Check live environment guidance rather than assuming a browser/OS is supported.
+4. Enter statement period, monthly sales/purchases, personal consumption and miscellaneous receipts, opening/closing inventory and cost of goods sold. Enter expenses by Japanese label:租税公課,荷造運賃,水道光熱費,旅費交通費,通信費,広告宣伝費,接待交際費,損害保険料,修繕費,消耗品費,減価償却費,福利厚生費,給料賃金,外注工賃,利子割引料,地代家賃,貸倒金,任意科目/税理士等報酬 and雑費. Use dedicated depreciation, payroll, interest and rent subforms where displayed. Expense labels and statement structure are read from the final 2025 general blue form; do not assume the old expense-line numbering is correct. [NTA blue form](https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r07/10.pdf).
+5. Check pre-deduction income, approved blue deduction and resulting business income. Paper filing can still support JPY 650,000 under the excellent-electronic-books route when all notice/other conditions hold; do not automatically reduce every paper filer. Enter opening/closing balance sheets with cash/deposits, receivables, inventory, prepayments, property/equipment/vehicles/tools, land and custom accounts; payables, loans, accruals, deposits, allowance,元入金 and事業主借. `事業主貸` is on the asset side, not liabilities/equity. Reconcile balance using the form including pre-deduction income. [NTA 2072](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm), [NTA blue form](https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r07/10.pdf).
+6. Enter the 12-digit individual My Number only through the authorised filing screen when required, distinguish it from the e-Tax identification number and corporate number, and never store PINs. [NTA identity-verification guide, individual-number definition](https://www.nta.go.jp/taxes/tetsuzuki/mynumberinfo/pdf/kakunin.pdf). Enter postal/residential and business addresses, tax office, kanji/kana name, occupation,屋号, contact and filing date. Continue to income-tax return. Select all actual income categories: employment, business/commercial, agriculture only if separately supported, rental, miscellaneous/business-other including crypto, pension, retirement, stocks/dividends and temporary income. Business income can transfer from statements, but verify the amount. Enter employment from源泉徴収票, miscellaneous receipts/expenses/payer details, and all independently prepared schedules. No automatic business-income classification solely from occupation or opening notice.
+7. Enter certificate-supported social insurance, mutual aid/iDeCo, life/earthquake insurance, casualty losses, medical expenses and donations; spouse/dependents, widow/single parent, student, disability, basic deduction, housing loan, estimated tax and eligible loss carryforward. Never reuse a fixed basic deduction:2025 and 2026 reforms differ. Import exact eligibility and computed values from `jp-income-tax`; do not let an old saved default override them. [NTA 1199](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm).
+8. On calculation confirmation reconcile total income, deductions, taxable income, computed income tax, tax credits, reconstruction tax, withholding, estimated-tax credits and final due/refund against the working paper. Investigate every discrepancy before submission. Select payment method: authorised account transfer, direct payment/internet banking, credit card with displayed fee, eligible app/convenience payment or bank counter; taxpayer performs payment. For refund use the taxpayer's eligible bank details. Resident-tax settings need the taxpayer's actual facts, not a default.
+9. Prepare a separate consumption-tax return when applicable. On `一般課税・簡易課税の条件判定等`, enter base-period sales, invoice registration, mid-year taxable start, eligible 2割 choice, simplified election and gross/net books. On `所得区分の選択` select all relevant activities; enter `売上（収入）金額（雑収入を含む）`, expand export/exempt/outside-scope deductions, reduced-rate portion, returns, bad debts and recoveries, then `中間納付税額等`, `計算結果の確認` and `納税地等入力`. For the 2025 form base period is 2023; for 2026 use the appropriate 2024 facts on the 2026 form. Input only taxable-period transactions after registration if liability starts midyear. Some statement carry-forward is unavailable for simplified method/midyear starts: reconcile manually. [NTA JCT screen manual,2025-2026 cycle](https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/kisairei/pdf/0023010-154_04.pdf).
+10. Save resumable input data after statements and before sending, then review PDF/forms/attachments and actual year. Taxpayer gives explicit confirmation of figures, electronically signs and clicks the final submission personally. The taxpayer retains card/PIN control at all times. If interrupted, preserve data and resume via the offered saved-data route; do not treat a saved draft as filed.
+11. After each return, retain the sent return/PDF and electronic data plus receipt. Open e-Tax message box `受信通知`; check name, tax office, tax type, year, receipt date/time and number. Receipt proves arrival, not payment or substantive acceptance. A `.data` file alone is insufficient evidence of arrival. Archive receipts before expiry. Finish any separate JCT return and payment workflow, and retain confirmations. [NTA receipt FAQ](https://www.e-tax.nta.go.jp/toiawase/qa/yokuaru01/13.htm).
 
-| Document | Japanese Name | Purpose |
-| --- | --- | --- |
-| My Number Card | マイナンバーカード | Authentication + electronic signature |
-| Withholding certificates | 源泉徴収票 | Employment income data |
-| Payment records | 支払調書 | Business withholding data |
-| Insurance premium certificates | 控除証明書 | Deduction claims |
-| Prior year return (optional) | 前年の確定申告書 | Reference for estimated tax |
-| Bank account details | 口座情報 | Refund account or payment method |
+## Boundary and exception table
 
-## Section 3 -- e-Tax Screen Flow Overview
+| Event | Action |
+|---|---|
+| QR missing or authentication failure | Stop at authentication; inspect current supported environment, card validity and displayed help. Taxpayer handles PIN/reset; do not retry blindly or bypass controls |
+| Balance-sheet mismatch | Reconcile underlying accounts and drawings/contributions; never force a balancing expense |
+| Required field missing or intentional-reset warning | Identify the actual displayed message, preserve checkpoint, correct evidence or cancel reset; never acknowledge blindly |
+| Different deduction result | Test timely filing, bookkeeping, statements, electronic route and income cap; do not infer a legal error solely from a historic error code |
+| Consumer-app/convenience limit or bank transfer not arranged | Choose a genuinely available method and independently confirm payment deadline and transfer eligibility |
+| Corrected return | Preserve original data/receipt and refer amended-return/reassessment procedure; do not overwrite filing evidence |
 
-The 確定申告書等作成コーナー follows this overall flow:
+## Worked cases
 
-```
-Step 1: Submission Method Selection (CC-AA-010)
-    ↓
-Step 2: Return Type Selection (CC-AE-090)
-    ↓
-Step 3: My Number Portal Linkage (CC-AE-600)
-    ↓
-Step 4: Pre-submission Confirmation (CC-AA-024)
-    ↓
-Step 5: QR Code Authentication (CC-AA-440) ★ Manual step
-    ↓
-Step 6: Financial Statements Entry (決算書コーナー)
-    ├── P/L Entry (損益計算書)
-    ├── Blue Return Deduction (青色申告特別控除)
-    ├── B/S Entry (貸借対照表)
-    ├── Income Confirmation (所得確認)
-    └── Address/Name Entry (住所・氏名)
-    ↓
-Step 7: Income Tax Return Entry (所得税コーナー)
-    ├── Income Type Selection (所得選択)
-    ├── Income Entry by Type (収入入力)
-    ├── Deductions Entry -- Part 1 (控除入力1/2)
-    ├── Deductions Entry -- Part 2 (控除入力2/2)
-    ├── Calculation Result Confirmation (計算結果確認)
-    ├── Payment Method (納付方法)
-    ├── Resident Tax Settings (住民税)
-    ├── Personal Information (基本情報)
-    └── My Number Entry (マイナンバー)
-    ↓
-Step 8: Consumption Tax Return (消費税コーナー) -- if applicable
-    ├── Method Determination (条件判定)
-    ├── Income Category Selection (所得区分選択)
-    ├── Sales Entry (売上入力)
-    └── Calculation Result (計算結果)
-    ↓
-Step 9: Electronic Signature & Submission ★ Manual step
-    ↓
-Step 10: Data File Save (.data)
+Case 1, e-Tax data reconciliation: hypothetical balance sheet assets JPY 4,200,000, liabilities JPY 1,100,000, opening capital JPY 2,000,000, business profit JPY 1,500,000, owner's contributions JPY 100,000 and drawings JPY 500,000. Closing balancing equity is JPY 3,100,000; imbalance JPY 0. Drawings reduce equity for this reconciliation and appear as asset-side事業主貸 on the form. The computation tests the accounting identity, not a tax rate.
+
+```oa-check
+name: Blue statement balance reconciliation before send
+inputs:
+  assets: 4200000
+  liabilities: 1100000
+  capital: 2000000
+  profit: 1500000
+  contributions: 100000
+  drawings: 500000
+steps:
+  equity: capital + profit + contributions - drawings
+  imbalance: assets - liabilities - equity
+expected:
+  equity: 3100000
+  imbalance: 0
 ```
 
-## Section 4 -- Step-by-Step Filing Workflow
-
-### 4.1 Submission Method Selection (提出方法の選択)
-
-**Submission Method Selection (Screen: CC-AA-010)**  _(Screen: CC-AA-010)_
-
-| Question | Answer |
-| --- | --- |
-| Do you have a My Number Card (マイナンバーカード)? | Yes (はい) |
-| Do you have a compatible smartphone or IC card reader? | Yes (はい) |
-| Method | Select "Use Smartphone" (スマートフォンを使用する) |
-
-### 4.2 Return Type Selection (申告書等の選択)
-
-**Return Type Selection (Screen: CC-AE-090)**  _(Screen: CC-AE-090)_
-
-| Option | When to Select |
-| --- | --- |
-| Income Tax (所得税) | Salary income only, no business income |
-| Financial Statements + Income Tax (決算書・収支内訳書＋所得税) | **Self-employed with business income** -- most common |
-| Consumption Tax (消費税) | File separately after income tax |
-| Gift Tax (贈与税) | Gift tax only |
-
-**For self-employed taxpayers, select "Financial Statements + Income Tax".**
-
-### 4.3 My Number Portal Linkage
-
-Select "Do not use My Number Portal linkage" (マイナポータル連携を利用しない) unless you have already configured the linkage.
-
-### 4.4 Pre-submission Confirmation
-
-Review the terms of use and click "Agree and proceed" (利用規約に同意して次へ).
-
-### 4.5 QR Code Authentication (QRコード認証)
-
-**This requires manual action by the taxpayer:**
-
-1. A QR code appears on screen
-2. Open the マイナポータル app on your smartphone
-3. Scan the QR code displayed on the computer screen
-4. Authenticate with your My Number Card (hold card to phone's NFC reader)
-5. Enter your 4-digit PIN (利用者証明用電子証明書の暗証番号)
-6. The screen will automatically proceed after successful authentication
-
-**Troubleshooting:** If the QR code does not display, ensure you are using a supported browser (Chrome or Edge on Windows, Safari on macOS). Linux is not officially supported.
-
-## Section 5 -- Financial Statements Entry (決算書コーナー)
-
-This section applies to self-employed taxpayers filing a blue return (青色申告).
-
-### 5.1 Select Statement Type
-
-**Select Statement Type**
-
-| Option | When to Select |
-| --- | --- |
-| Blue Return Financial Statements (青色申告決算書) | Blue return filers (most common) |
-| Income/Expense Statement (収支内訳書) | White return filers |
-| Blue Return -- Cash Basis (青色申告決算書・現金主義用) | Cash-basis filers (rare) |
-
-### 5.2 Profit & Loss Statement (損益計算書) Entry
-
-Enter the fiscal period (typically January 1 -- December 31) and the following data:
-
-**Revenue Section:**
-- Monthly sales breakdown (月別売上) -- 12 months
-- Monthly cost of goods sold (月別仕入) -- if applicable
-- Personal consumption (家事消費等)
-- Miscellaneous income (雑収入)
-
-**Expense Section (経費)**
-
-| Line | Expense Category | Japanese Name |
-| --- | --- | --- |
-| 8 | Taxes and public charges | 租税公課 |
-| 9 | Packing and shipping | 荷造運賃 |
-| 10 | Utilities | 水道光熱費 |
-| 11 | Travel and transportation | 旅費交通費 |
-| 12 | Communication | 通信費 |
-| 13 | Advertising | 広告宣伝費 |
-| 14 | Entertainment | 接待交際費 |
-| 15 | Insurance | 損害保険料 |
-| 16 | Repairs | 修繕費 |
-| 17 | Consumables | 消耗品費 |
-| 18 | Depreciation | 減価償却費 (sub-form entry) |
-| 19 | Welfare | 福利厚生費 |
-| 20 | Salaries | 給料賃金 (sub-form entry) |
-| 21 | Subcontracting | 外注工賃 |
-| 22 | Interest | 利子割引料 (sub-form entry) |
-| 23 | Rent | 地代家賃 (sub-form entry) |
-| 24 | Bad debts | 貸倒金 |
-| 25 | Tax adviser fees | 税理士等の報酬 |
-| 26-30 | Custom expense categories | 任意科目 |
-| 31 | Miscellaneous | 雑費 |
-
-### 5.3 Blue Return Special Deduction (青色申告特別控除)
-
-**Blue Return Special Deduction Q&A**
-
-| Deduction | Conditions |
-| --- | --- |
-| JPY 650,000 | Double-entry bookkeeping + e-Tax submission (required for this amount) |
-| JPY 550,000 | Double-entry bookkeeping + paper submission |
-| JPY 100,000 | Simplified bookkeeping |
-
-- **KS-E10089** — If filing via e-Tax and selecting JPY 650,000, the system will verify e-Tax submission is being used. Paper filing with this selection will trigger error KS-E10089.  _(KS-E10089)_
-
-### 5.4 Balance Sheet (貸借対照表) Entry
-
-Enter opening and closing balances for:
-
-**Assets (資産の部):**
-Cash, deposits, accounts receivable, securities, inventory, prepayments, buildings, equipment, vehicles, tools/fixtures, land, and custom asset accounts.
-
-**Liabilities & Equity (負債・資本の部):**
-Notes payable, accounts payable, borrowings, accrued expenses, deposits received, allowance for bad debts, capital (元入金), owner's draws (事業主貸), owner's contributions (事業主借), and pre-deduction income.
-
-**The system will reject the entry (error KS-E40003) if total assets ≠ total liabilities + equity at year-end.**
-
-- **KS-E40003** — The system will reject the entry (error KS-E40003) if total assets ≠ total liabilities + equity at year-end.  _(KS-E40003)_
-
-### 5.5 Address and Name Entry (住所・氏名等)
-
-**Address and Name Entry**
-
-| Field | Details |
-| --- | --- |
-| Postal code | 7-digit postal code |
-| Prefecture and address | Full residential address |
-| Business address | If different from home |
-| Tax office | Submitting tax office name (所轄税務署) |
-| Full name | In kanji |
-| Business type | e.g., IT consultant, designer, writer |
-| Trade name (屋号) | If applicable |
-| Submission date | Date of filing |
-
-## Section 6 -- Income Tax Return Entry (所得税コーナー)
-
-After completing financial statements, the system transitions to the income tax return.
-
-### 6.1 Income Type Selection (所得種類の選択)
-
-**Income Type Selection**
-
-| Income Type | Japanese | Typical Selection |
-| --- | --- | --- |
-| Employment | 給与 | If also employed |
-| Business (commercial) | 事業（営業等） | **Self-employed: always check** |
-| Business (agriculture) | 事業（農業） | If applicable |
-| Real estate | 不動産 | If rental income |
-| Miscellaneous (business/other) | 雑（業務・その他） | Side income, crypto |
-| Public pension | 公的年金等 | If receiving pension |
-| Retirement | 退職金 | If received |
-| Stocks/dividends | 株式等 | If applicable |
-| Temporary income | 一時 | Insurance payouts, prizes |
-
-### 6.2 Income Entry by Type
-
-For each selected income type, enter the relevant data through dedicated sub-forms:
-
-**Employment income (給与所得):** Enter data from withholding certificates (源泉徴収票) -- payment amount, withheld tax, social insurance premiums, and employer details.
-
-**Business income (事業所得):** Automatically populated from the financial statements entered in Step 5.
-
-**Miscellaneous income (雑所得):** Enter revenue, expenses, and payer details for each item.
-
-### 6.3 Deductions Entry -- Part 1 (支出系控除)
-
-**Deductions Entry -- Part 1**
-
-| Deduction | Japanese | Data Source |
-| --- | --- | --- |
-| Social insurance premiums | 社会保険料控除 | Partially from withholding certificate |
-| Small enterprise mutual aid | 小規模企業共済等掛金控除 | iDeCo, mutual aid contribution certificates |
-| Life insurance premiums | 生命保険料控除 | Insurance premium certificates |
-| Earthquake insurance | 地震保険料控除 | Insurance certificates |
-| Casualty losses | 雑損控除 | If applicable |
-| Medical expenses | 医療費控除 | Medical expense summary |
-| Charitable donations | 寄附金控除 | Furusato nozei + other donation receipts |
-
-### 6.4 Deductions Entry -- Part 2 (人的控除・住宅控除等)
-
-**Deductions Entry -- Part 2**
-
-| Deduction | Japanese | Notes |
-| --- | --- | --- |
-| Spouse deduction | 配偶者（特別）控除 | Based on spouse's income |
-| Dependent deduction | 扶養控除 | By age category |
-| Widow/single parent | 寡婦・ひとり親控除 | If applicable |
-| Working student | 勤労学生控除 | If applicable |
-| Disability | 障害者控除 | If applicable |
-| Basic deduction | 基礎控除 | Calculated automatically |
-| Housing loan deduction | 住宅借入金等特別控除 | First year requires details |
-| Estimated tax paid | 予定納税額 | If advance payments were made |
-| Loss carryforward | 繰越損失額 | Blue return only, up to 3 years |
-
-### 6.5 Calculation Result Confirmation (計算結果の確認)
-
-**Calculation Result Confirmation**
-
-| Item | What to Verify |
-| --- | --- |
-| Total income (合計所得金額) | Matches your working paper |
-| Total deductions (所得控除合計) | Matches your calculations |
-| Taxable income (課税所得金額) | Rounded down to nearest JPY 1,000 |
-| Computed tax (算出税額) | Rate table correctly applied |
-| Tax credits | Housing loan, dividend credits |
-| Reconstruction surtax (復興特別所得税) | 2.1% of base income tax |
-| Total tax (所得税及び復興特別所得税) | Sum of income tax + reconstruction tax |
-| Withholding credits (源泉徴収税額) | All withholding properly credited |
-| Tax due or refund (申告納税額/還付) | Final amount to pay or receive |
-
-**Cross-check all figures against your income tax working paper. Any discrepancy should be investigated before proceeding.**
-
-### 6.6 Payment Method (納付方法)
-
-**Payment Method**
-
-| Method | Japanese | Notes |
-| --- | --- | --- |
-| Account transfer | 振替納税 | Auto-debit from bank account |
-| Electronic payment | 電子納税 | Direct debit or internet banking |
-| Credit card | クレジットカード納付 | Fee applies |
-| Convenience store | コンビニ納付 | For amounts under JPY 300,000 |
-| Bank counter | 金融機関等での窓口納付 | Traditional method |
-
-If a refund is due, enter bank account details (bank name, branch, account number, account holder).
-
-### 6.7 Personal Information & My Number
-
-Enter personal details (name in kana and kanji, phone number, address, tax office, occupation, trade name) and your 12-digit My Number (マイナンバー). The system validates the check digit.
-
-## Section 7 -- Consumption Tax Return (消費税コーナー)
-
-If you are a taxable business (課税事業者) for consumption tax, file the consumption tax return after completing the income tax return.
-
-### 7.1 Method Determination (条件判定)
-
-**Method Determination Fields**
-
-| Field | What to Enter |
-| --- | --- |
-| Base period taxable sales (基準期間の課税売上高) | Sales from 2 years prior |
-| Qualified invoice issuer (インボイス発行事業者) | Yes/No |
-| Simplified taxation elected (簡易課税) | Yes/No |
-| Accounting method | Tax-inclusive (税込) or tax-exclusive (税抜) |
-
-**Computation Route Determination**
-
-| Condition | Route |
-| --- | --- |
-| Invoice registrant + 20% special measure elected | 2割特例 route |
-| Simplified taxation elected + base sales ≤ JPY 50M | 簡易課税 route |
-| All other cases | 本則課税 (general) route |
-
-### 7.2 Sales Entry
-
-Enter total sales broken down by:
-- Taxable sales amount (tax-inclusive total)
-- Reduced rate (8%) portion (軽減税率適用分)
-- Tax-exempt sales (免税売上)
-- Non-taxable sales (非課税売上)
-- Returns/allowances by rate category
-
-### 7.3 Calculation Result (計算結果)
-
-**Calculation Result**
-
-| Item | Description |
-| --- | --- |
-| Taxable base amount (課税標準額) | Sales ÷ 1.10 (or 1.08), rounded down to JPY 1,000 |
-| National consumption tax (消費税額) | Base × 7.8% (standard) or 6.24% (reduced) |
-| Input tax credit (控除税額) | Varies by method |
-| Differential tax (差引税額) | Output tax − input tax credit, rounded down to JPY 100 |
-| Local consumption tax (地方消費税) | Differential × 22/78, rounded down to JPY 100 |
-| Total tax due (合計納付税額) | National + local |
-
-### 7.4 Taxpayer Information
-
-Enter address, tax office, name, My Number, and payment method for the consumption tax return.
-
-## Section 8 -- Electronic Signature and Submission
-
-### 8.1 Save Input Data (Strongly Recommended)
-
-Before submitting, save input data as a `.data` file using the "Save input data" (入力データの一時保存) button. This file allows you to:
-- Resume filing if interrupted
-- Reference data for next year's return
-- Restore data if a correction filing (修正申告) is needed
-
-### 8.2 Electronic Signature
-
-Sign the return electronically using your My Number Card:
-1. Enter your signature PIN (署名用パスワード -- 6-16 alphanumeric characters)
-2. Hold your My Number Card to the smartphone's NFC reader
-3. Wait for confirmation
-
-### 8.3 Submission
-
-**Review the final confirmation page carefully before submitting.**
-
-After confirming all figures are correct, click the submit button. Record the receipt number (受付番号) displayed after successful submission.
-
-### 8.4 Post-Submission
-
-1. **Save the post-submission `.data` file** -- it contains the receipt number and submission timestamp
-2. **Check your e-Tax message box** for the receipt notification (受信通知)
-3. **If consumption tax return is pending**, proceed to file it after the income tax submission
-4. **Note payment deadlines:** Income tax by March 15, consumption tax by March 31
-
-## Section 9 -- Common Errors and Troubleshooting
-
-**Common Errors and Troubleshooting**
-
-| Error Code | Description | Resolution |
-| --- | --- | --- |
-| KS-E10089 | e-Tax submission required for JPY 650,000 deduction | Must submit electronically, not on paper |
-| KS-E10001 | Required field missing | Check all mandatory fields are filled |
-| KS-E40003 | Balance sheet does not balance | Verify total assets = total liabilities + equity |
-| KS-W10035 | Print confirmation | Acknowledge with OK to proceed |
-| KS-W90011 | Data will be reset | Acknowledge with OK if intentional |
-
-### QR Code Not Displaying
-
-If the QR code does not appear on the authentication screen:
-- Ensure you are using a supported browser (Chrome/Edge on Windows, Safari on macOS)
-- Linux is not officially supported by the NTA
-- Try refreshing the page
-
-### Authentication Failures
-
-- Ensure the My Number Card is not expired
-- Check that the correct PIN is being used (4-digit user authentication PIN, not the 6-16 digit signature PIN)
-- Hold the card steady against the phone's NFC reader for several seconds
-
-## Section 10 -- Key Deadlines and Calendar
-
-**Key Deadlines and Calendar**
-
-| Item | Deadline | Notes |
-| --- | --- | --- |
-| Income tax filing | March 15 | 確定申告 deadline |
-| Income tax payment | March 15 | Same as filing |
-| Consumption tax filing | March 31 | Sole proprietors |
-| Consumption tax payment | March 31 | Same as filing |
-| Account transfer (振替納税) date | Late April (income tax), late April (consumption tax) | Exact date announced annually |
-| Estimated tax 1st instalment | July 31 | If prior year tax > JPY 150,000 |
-| Estimated tax 2nd instalment | November 30 | If prior year tax > JPY 150,000 |
-
-## Section 11 -- Data File Management
-
-The 確定申告書等作成コーナー allows saving and loading `.data` files at any point during the process.
-
-### The `.data` File
-
-**The `.data` File**
-
-| Action | When to Use |
-| --- | --- |
-| Save during entry | To create a checkpoint before complex sections |
-| Save before submission | To preserve a pre-submission backup |
-| Save after submission | To preserve receipt number and submission details |
-| Load saved data | To resume from a previous session via "保存データを利用して作成" |
-
-**Best practice:** Save `.data` files at three points: (1) after completing financial statements, (2) before electronic submission, and (3) after successful submission.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — NEVER submit a tax return without the taxpayer's explicit confirmation of all figures; NEVER enter the electronic signature PIN -- this must be done by the taxpayer personally; NEVER click the final submission button -- this must be done by the taxpayer personally; NEVER select the JPY 650,000 blue return deduction for paper filing (will cause error KS-E10089); NEVER skip the balance sheet balance check -- assets must equal liabilities + equity; NEVER proceed past the QR code authentication step without confirmation that authentication succeeded; NEVER present e-Tax filing as a substitute for professional review -- all returns should be reviewed by a 税理士
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a 税理士 or equivalent licensed practitioner in Japan) before filing or acting upon.
-
-The 確定申告書等作成コーナー screen layout and form fields are maintained by the National Tax Agency and may change without notice. Always verify against the live system.
-
-## Section 4 -- Step-by-Step Filing Workflow
-
-0. **Prerequisite step: income tax calculations** — Use jp-income-tax skill to compute all figures before starting e-Tax filing
-0. **Prerequisite step: consumption tax calculations** — Use jp-consumption-tax skill to compute consumption tax figures if applicable
-0. **Submission Method Selection** — Select submission method (My Number Card + smartphone or IC card reader)
+Case 2, transfer from JCT computation: confirmed standard-rate gross sales JPY 11,000,000, eligible invoice purchases JPY 2,200,000, national interim JPY 156,000 and local interim JPY 44,000. National annual balance JPY 624,000, local JPY 176,000; residual national JPY 468,000, local JPY 132,000, total JPY 600,000. Match both interim fields before submission. [NTA 6351](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6351.htm), [NTA 6609](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm).
+
+```oa-check
+name: Separate national and local interim fields
+inputs:
+  gross_sales: 11000000
+  gross_purchases: 2200000
+  national_interim: 156000
+  local_interim: 44000
+steps:
+  national_annual: (gross_sales - gross_purchases) / 1.10 * 0.078
+  local_annual: national_annual * 22 / 78
+  national_due: national_annual - national_interim
+  local_due: local_annual - local_interim
+  total_due: national_due + local_due
+expected:
+  national_due: 468000
+  local_due: 132000
+  total_due: 600000
+```
+
+## When to refuse or refer
+
+Never submit without explicit confirmation, enter taxpayer PINs, click final submission, bypass unsuccessful authentication, omit balance reconciliation or substitute e-Tax for professional review. Refer unsupported schedules, residence/treaty disputes, unresolved election/deduction eligibility and altered live screens whose meaning cannot be established. Work may continue on separable drafts while filing stays blocked.
+
+## Filing and payment
+
+The calendar in Quick reference distinguishes 2026 returns from 2025-2026 filing-cycle returns. Tax submission and payment are separate. Set up chosen payment route before the relevant due date; never promise that a new direct-debit arrangement works immediately. Use the actual transfer notice for dates and maintain sufficient funds. Extensions, departure/death and late returns require separate review. Penalty/interest amounts are not computed by this workflow.
+
+## Completion checklist
+
+Prepared computations; correct year and forms; all statements/schedules; balanced accounts; blue eligibility including electronic-book alternative; deductions and source certificates; national/local interims; final taxpayer confirmation; taxpayer-owned authentication/signature/submission; both returns' receipts; payment/refund route and deadlines; saved input checkpoints and filed data archived. Report incomplete items explicitly.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| NTA entry: Read for statement-selection flow | https://www.e-tax.nta.go.jp/toiawase/faq/gaiyo/07.htm | 2026-11-14 |
+| NTA blueform: Read for all statement pages and expense/balance labels | https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r07/10.pdf | 2026-11-14 |
+| NTA blue: Read for 55/65/10 deduction conditions including timely submission and electronic-book alternative | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm | 2026-11-14 |
+| NTA auth: Read for authentication/signature PINs and lock warning | https://www.e-tax.nta.go.jp/toiawase/faq/zizen/10.htm | 2026-11-14 |
+| NTA basic: Read for 2025/2026 reform and effective-date boundaries | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm | 2026-11-14 |
+| NTA jctmanual: Read for 2025 condition/sales/interim/payment screens and neighbors | https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/kisairei/pdf/0023010-154_04.pdf | 2026-11-14 |
+| NTA 6351: Read for national computation | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6351.htm | 2026-11-14 |
+| NTA 6609: Read for national/local interims | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6609.htm | 2026-11-14 |
+| NTA receipt: Read for receipt fields and archive necessity | https://www.e-tax.nta.go.jp/toiawase/qa/yokuaru01/13.htm | 2026-11-14 |
+| NTA dates: Read for 2025 and 2026 due/debit calendar | https://www.nta.go.jp/taxes/nozei/nofu/24200042/noufu_kigen.htm | 2026-11-14 |
+
+| NTA identity guide: Read for individual-number definition and statutory purpose/security limits, printed pages3-6 | https://www.nta.go.jp/taxes/tetsuzuki/mynumberinfo/pdf/kakunin.pdf | 2026-11-14 |
+
+Not yet confirmed: Final 2026 screens/form box numbers and current supported browser/OS list are not checked here. The old screen IDs CC-AA-010,CC-AE-090,CC-AE-600,CC-AA-024,CC-AA-440 and error IDs KS-E10089,KS-E10001,KS-E40003,KS-W10035,KS-W90011 remain unconfirmed historical identifiers, not operative instructions. The keisan 2025 full screen manuals returned 403 to ordinary fetch and a blank ordinary-browser PDF; recovered the statement route from official e-Tax FAQ and form PDF, and JCT route from the official NTA-hosted 2025 manual. Do not infer 2026 availability from these older screens.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `jp-etax-filing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/jp-etax-filing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `jp-etax-filing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/jp-etax-filing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

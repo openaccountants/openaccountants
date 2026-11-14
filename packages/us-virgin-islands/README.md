@@ -9,9 +9,12 @@
 2. `intake.md`
 3. `README.md`
 4. `vi-bona-fide-residence.md`
-5. `vi-gross-receipts-tax.md`
-6. `vi-individual-income-tax-filing.md`
-7. `workflow-base.md`
+5. `vi-federal-payroll-taxes.md`
+6. `vi-gross-receipts-tax.md`
+7. `vi-individual-income-tax-filing.md`
+8. `payroll-workflow-base.md`
+9. `workflow-base.md`
+10. `us-form-941-940-payroll.md`
 
 ## How to use
 

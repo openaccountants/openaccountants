@@ -6,101 +6,120 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/set-up-your-company-in-kenya-we-handle-it-from-abroad"
   jurisdiction: "KE"
-  tax_year: "2025"
-  last_updated: "2026-07-22"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Setting up a company in Kenya from abroad: how I do it
+# Setting up a company in Kenya from abroad (2026)
 
-## Setting up a company in Kenya from abroad: how I do it
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This covers incorporating a wholly foreign-owned Kenyan private company, or registering a Kenyan branch of an existing foreign company, for a founder who is outside the country. You run the filings on a power of attorney, so the founder does not have to fly in. Incorporation itself takes about five working days once the name is reserved and the papers are complete; the tax PIN, bank account, and any work permit are separate steps that follow.
+## Scope
 
-## Who this is for
+This is the execution workflow for a foreign founder establishing a Kenyan private subsidiary or registering an existing foreign company as a branch. It preserves the distinction between incorporation, bank KYC, tax registration and permission to work. Do not promise remote completion of every step: representative authority, identity verification and any in-person bank/immigration requirement must be established first. A branch extends the parent; a subsidiary is a separate incorporated person.
 
-This guide is for foreign founders and investors setting up a Kenyan entity from abroad: either a private company they own directly, or a branch of a company already incorporated elsewhere. It is not for a resident Kenyan doing a standard local incorporation, which is simpler. Send to a specialist any regulated sector that carries local-equity or licensing conditions (insurance, telecommunications, mining, private security, and similar), any nominee-director arrangement, and any cross-border tax structuring. Those need bespoke advice, not a template.
+Use [ke-company-formation](ke-company-formation.md) for legal-form/member/director/capital rules and registry/BO/annual-return deadlines. Use [ke-corporate-income-tax](ke-corporate-income-tax.md) for subsidiary/branch rates and repatriated-income tax; the old claim that a branch simply pays a higher ordinary rate is stale.
 
-## Before you start, ask the client
+## Ask the client first
 
-- New company or branch? A subsidiary is a separate legal entity taxed at the resident rate; a branch is an extension of the parent, carries the parent's liability, and is taxed at the higher non-resident rate.
-- Which sector? Check for local-equity caps or sector licences before you promise 100% ownership.
-- How many directors and shareholders, and what are their nationalities and residency?
-- Will anyone live in Kenya and run the company on the ground? That decides whether you also need an investor permit.
-- Do you plan to raise money or bring in investors later? That shapes the share structure and nominal capital you set now.
-- Do you have notarised or apostilled passports and proof of address ready?
-- Three proposed company names, a registered office, and a postal address in Kenya.
+- New subsidiary or existing-parent branch; parent liability, future investors and tax structure.
+- Sector, licences and any local-equity restriction, especially insurance, telecommunications, mining or private security.
+- Directors/shareholders, nationalities, residence, beneficial owners and control.
+- Whether a founder will work/live in Kenya and their immigration status.
+- Names, Kenyan office/postal address, passport/address documents and any foreign company constitution/certificate.
+- Authority for an agent to act, available authenticated documents, bank requirements and proposed funding.
 
 ## The method, step by step
 
-1. **Fix the structure first: subsidiary or branch.** Get this wrong and it is expensive. A branch pays corporate tax at 37.5% against a subsidiary's 30%, carries parent liability because it is not a separate legal person, and files on a different set of forms (FC forms, not CR forms). Changing your mind later means registering again.
+### Execution order and government charges
 
-2. **Reserve the name on eCitizen / BRS.** Submit up to three names, pay KES 150, and the approved name is reserved for 30 days. Choose names that are not close to existing ones, or the search bounces.
+| Item | Amount/condition | Official source |
+|---|---|---|
+| Foreign-company registry | KES 7,550; FC2,FC4,FC6, incorporation certificate, constitution, notarized memorandum/articles and local representative acceptance; certificate of compliance | https://brs.go.ke/fee-schedule-companies-registry/ |
+| Published foreign/private registration processing | 3-5 days in BRS schedule; estimate, not full-launch guarantee | https://brs.go.ke/fee-schedule-companies-registry/ |
+| Local representative | At least 1 for foreign-company registration, Companies Act s979, in words on the page; obtain prescribed requirements | https://brs.go.ke/wp-content/uploads/2023/03/CompaniesAct17of2015.pdf |
+| Class G processing fee | KES 20,000 non-refundable; actual business/consultancy permit, not incorporation fee | https://immigration.go.ke/class-g-specific-trade-business-or-consultancy/ |
+| Class G issuance | KES 250,000 per year; EAC Member States gratis as authority states | https://immigration.go.ke/class-g-specific-trade-business-or-consultancy/ |
+| Class G capital evidence | At least USD 100,000 to be invested; proof of capital, not fee | https://fns.immigration.go.ke/infopack/permits/classG/ |
 
-3. **Notarise or apostille the foreign documents before you file.** For non-resident directors and shareholders, BRS expects a notarised passport bio-data page and notarised proof of address less than three months old. File without them and the Registrar rejects the application.
+1. **Choose structure before filing.** Establish business substance, legal liability, intended investors, distribution plans and tax/treaty facts. Do not choose a subsidiary merely by comparing the old ordinary-rate figures; the current branch treatment includes repatriated-income tax.
+2. **Use BRS/eCitizen and the correct application.** Private incorporation uses the forms in [ke-company-formation](ke-company-formation.md). Foreign-company registration uses the BRS foreign row above. Verify proposed names against BRS restrictions, including similarity and restricted names; s48 gives a 30-day reservation or an extended period not exceeding 60 days for a special reason (in words on the page). Do not assume the old separate KES 150 reservation charge survives the live flow.
+3. **Collect and authenticate the right documents.** For a branch BRS expressly lists notarized memorandum/articles. Obtain clear foreign passport/identity, addresses, corporate records and agent authority appropriate to the live application. Do not treat a general power of attorney as proof every bank/registry/immigration step can be completed without the founder. Foreign-language immigration documents need authorised English translation per eFNS.
+4. **Confirm the local representative.** A foreign company needs the representative under s979 and prescribed foreign-company regulations. Under s981, the representative answers for compliance and is personally liable to a company penalty only if the court is satisfied they should be liable; it is not automatic liability for every parent debt. Subsidiary director requirements are ss128-129. Under the 2023 s243A insertion, a private/guarantee company with neither secretary nor resident director must appoint and register a natural-person contact permanently resident in Kenya; see the formation skill for notices and records. A contact person is distinct from a resident nominee director. Check bank/PIN practical requirements separately.
+5. **Submit, pay and verify registration.** Review the live government invoice, authenticate/sign required forms, pay, retain submission/payment acknowledgements, obtain the correct certificate, and reconcile registered shareholders, directors, office and beneficial owners. A certificate of incorporation and a foreign certificate of compliance are different outcomes.
+6. **Prepare and lodge beneficial ownership.** For a new subsidiary, lodge with incorporation documents under the replaced s93A; use [ke-company-formation](ke-company-formation.md) for later amendments and retention. The [2023 Gazette](https://brs.go.ke/wp-content/uploads/2023/09/AntiMoneyLaunderingandCombatingofTerrorismFinancingLawsAmendmentAct2023.pdf) also inserts s975(1A), applying s93A to registered foreign companies except subsections(5)-(6), and requires BO particulars in foreign registration under s975(3)(h). Do not apply the domestic amendment deadline to a foreign registration without its own rule. Obtain the current foreign-company BO regulations/forms; the old preparation-based first filing deadline is obsolete.
+7. **Verify KRA PINs and obligations.** Confirm company and relevant individual/director PIN requirements and links through iTax (https://itax.kra.go.ke), retaining certificates and authorised representation. Do not assume the current BRS integration or a separate manual application without inspecting what has actually issued.
+8. **Obtain bank acceptance.** Assemble the incorporation/compliance certificate, CR12/registered ownership information, directors' identity/PINs, office, beneficial ownership and source-of-funds evidence requested by the bank. The bank makes its own decision and may require attendance; do not promise the old 2-week completion estimate.
+9. **Obtain immigration permission where needed.** Class G covers a person intending a specific trade, business, consultancy or profession other than a prescribed profession. Use the current Directorate/eFNS checklist: Form25, signed cover letter, passport, immigration status, photo, capital evidence, registration documents, PIN/CR12 and Form27. Company TCC applies for new cases; renewal requires company/individual TCCs and additional accounts/employment evidence. Log in via eCitizen single sign-on, choose Permit Issuance/Renewal, complete, submit, use the generated invoice, retain receipts and monitor official notifications. Do not work without the requisite permit/pass.
+10. **Calendar continuing compliance.** Set annual registry return, beneficial-owner updates, tax return/balance payment and any VAT/payroll obligations. The [2023 insertion s894(1A)](https://brs.go.ke/wp-content/uploads/2023/09/AntiMoneyLaunderingandCombatingofTerrorismFinancingLawsAmendmentAct2023.pdf) makes failure to file returns/financial statements for 5 or more years, or BO non-compliance after a s93A directive, grounds for reasonable belief of inactivity (period in words on the page). Section894 still requires inquiry, notice and Gazette procedure; strike-off is not automatic. For manufacturing objects, the 2024 s91A insertion also provides registrar-to-KEBS information sharing; confirm sector permissions separately.
 
-4. **File incorporation on eCitizen / BRS.** Complete CR1, CR2, CR8, the Statement of Nominal Capital, the Articles (or the BRS Model Articles), and the beneficial ownership details. The government invoice runs to roughly KES 10,000 to 10,650 depending on nominal capital and stamp duty. A clean file clears in 3 to 5 working days; allow 5 to 10 where foreign directors, corporate shareholders, or beneficial-ownership review are involved.
+## Boundary and exception table
 
-5. **Sort the local representative correctly, and only as the law actually requires.** For a branch, you must appoint a Kenya-resident local representative under section 979; that person is personally liable for the company's compliance failures. For a subsidiary, there is no residency requirement in law, only one director who is a natural person. In practice you still need a resident director or a local company secretary so KRA PIN linking and bank KYC clear. Do not sell a founder a nominee director they do not legally need, and never let a branch file without a representative.
+| Situation | Response |
+|---|---|
+| Branch/local representative | Establish prescribed eligibility and scope of court-determined penalty liability |
+| Subsidiary/resident nominee proposed | Separate legal director requirement from bank/PIN practice; refer nominees |
+| Class G investment evidence | Capital proof is distinct from government fees; employment may require a different permit, not automatic waiver of Class G capital |
+| EAC nationality | Check the Directorate's gratis treatment and correct permit route |
+| Regulated/foreign ownership or layered controls | Specialist licence, equity and beneficial-ownership review before promises |
 
-6. **File the beneficial ownership register (Form BOF1).** Lodge it with the Registrar within 30 days, and update it within 14 days of any change in ownership. This is actively enforced; non-filing puts the company on the strike-off list.
+## Worked cases
 
-7. **Apply for KRA PINs on iTax.** The company needs a PIN, and so does every director. This is a separate application from incorporation, filed on iTax, not eCitizen. Nothing downstream moves without it: no invoicing, no bank account, no work permit.
+Permit budget: on a hypothetical approved Class G case for 1 year, published processing KES 20,000 plus issuance KES 250,000 totals KES 270,000, before other actual fees. USD 100,000 capital evidence is not added to KES fees or treated as a payment to government.
 
-8. **Open the corporate bank account.** Assemble the KYC pack (Certificate of Incorporation, CR12, director passports and PINs), introduce the client to a bank, and follow up. The bank gives final approval, usually in about two weeks.
+```oa-check
+name: Class G government fee distinction
+inputs:
+  processing: 20000
+  annual_issuance: 250000
+  years: 1
+steps:
+  - fees: processing + annual_issuance * years
+expected:
+  fees: 270000
+```
 
-9. **Apply for the Class G investor permit if a founder will be resident.** File on the eFNS portal: KES 20,000 processing (non-refundable) plus KES 250,000 per year issuance, with documentary proof of at least USD 100,000 capital to be invested, and tax compliance certificates for both the company and the individual. Endorsement is done in person. EAC nationals are exempt from the fee.
+Registry decision: BRS publishes KES 10,650 for a private company and KES 7,550 for a foreign registration. Difference KES 3,100 does not decide the structure: a branch retains parent liability and requires a local representative, and tax/bank/permit costs are separate. Use the legal/tax analysis before selecting the application.
 
-10. **Set the compliance calendar on day one.** File the annual return each year within the statutory window after the anniversary of incorporation. Register and track corporate tax, VAT if registered, and PAYE if employing. Five years of unfiled annual returns leads to strike-off under section 894.
+```oa-check
+name: Registry fees do not decide structure
+inputs:
+  private_fee: 10650
+  foreign_fee: 7550
+steps:
+  - difference: private_fee - foreign_fee
+expected:
+  difference: 3100
+```
 
-Before you hand the file over, these must reconcile: the CR12 matches the shareholding the founder intended, the beneficial ownership register matches the CR12, the company and director PINs are issued and linked, and the registered office and postal address are on record.
+## When to refuse or refer
 
-## The traps
+Refer sector equity/licensing, nominee directors, remote identity/authority uncertainty, layered ownership, tax treaties, parent guarantees and immigration-category doubts. Never promise full foreign ownership across all sectors, bank acceptance or a permit merely from registration.
 
-- **Picking a branch when a subsidiary was right.** The branch rate is 37.5% against 30%, and because a branch is not a separate legal person, the parent's liability reaches into Kenya. Founders rarely un-pick this without re-registering.
-- **Believing a subsidiary legally needs a resident director.** It does not. That is a banking and KRA reality, not a statute. Paying for an unnecessary nominee wastes money, and giving a nominee real authority creates governance risk. A branch is different: section 979 genuinely requires a local representative, and that person carries personal liability.
-- **Skipping the beneficial ownership filing.** This is a newer obligation and the Registrar enforces it, striking off companies that ignore it. File BOF1 within 30 days and update within 14 days of any change.
-- **Treating the KRA PIN as part of eCitizen.** It is a separate iTax step. Miss it and the bank account and permit both stall.
-- **Filing foreign documents that are not notarised or apostilled.** BRS rejects them and the clock restarts.
-- **Missing annual returns.** Five years of non-filing strikes the company off under section 894. Founders lose the entity they built over a filing that takes minutes.
-- **Reading the USD 100,000 as a fee.** It is proof of capital to be invested, not a payment, and it falls away entirely if a Kenyan company employs the applicant.
-- **Setting nominal capital carelessly.** Too low limits you later; too high raises stamp duty at incorporation and complicates restructuring.
+## Filing and payment
 
-## Rates, thresholds and deadlines
+BRS/eCitizen registration, KRA tax obligations, bank KYC and eFNS immigration are separate tracks. Keep each invoice, receipt, acknowledgement and final approval in the handover file. Follow the issued immigration instructions on presenting printouts/endorsement; do not assume the founder can remain abroad throughout.
 
-**Rates, thresholds and deadlines**  _(eCitizen / BRS; BRS benchmark; Companies (Beneficial Ownership Information) Regulations, 2020, s.93A; Companies Act, 2015, s.705 and s.894; Income Tax Act; VAT Act, 2013; Directorate of Immigration Services (immigration.go.ke); Companies Act, 2015, s.243)_
+## Completion checklist
 
-| What | Value | Source |
-| --- | --- | --- |
-| Name reservation | KES 150; name reserved 30 days | eCitizen / BRS |
-| Private company incorporation (government) | ~KES 10,000 to 10,650, varies with nominal capital and stamp duty; confirm on the live invoice | BRS / eCitizen |
-| Incorporation timeline | 3 to 5 working days for a clean file; longer with foreign directors or beneficial-ownership review | BRS benchmark |
-| Beneficial ownership register (BOF1) | Lodge within 30 days of incorporation; update within 14 days of any change | Companies (Beneficial Ownership Information) Regulations, 2020, s.93A |
-| Annual return | Each year after the anniversary of incorporation; five years unfiled leads to strike-off. Confirm the current filing window | Companies Act, 2015, s.705 and s.894 |
-| Resident company corporate tax | 30% | Income Tax Act; confirm each Finance Act |
-| Branch (non-resident) corporate tax | 37.5% | Income Tax Act; confirm each Finance Act |
-| VAT (standard) | 16% | VAT Act, 2013 |
-| Class G investor permit | KES 20,000 processing (non-refundable) + KES 250,000 per year issuance | Directorate of Immigration Services (immigration.go.ke) |
-| Class G investment proof | At least USD 100,000 capital to be invested | Directorate of Immigration Services |
-| Company secretary | Mandatory once paid-up capital reaches the statutory threshold (commonly cited as KES 5 million); confirm before relying | Companies Act, 2015, s.243 |
-
-Confirm the incorporation invoice, the tax rates each Finance Act, and the permit fees against the live portal on the filing date.
-
-## Worked example
-
-A founder abroad wants a wholly foreign-owned Kenyan private company: one director, one shareholder, the same person, trading into East Africa. You set it up as a subsidiary, not a branch, so it is taxed at 30% rather than 37.5% and stands as its own legal entity. Reserve the name for KES 150. Notarise the passport and proof of address. Incorporate on BRS with CR1, CR2, CR8, the Statement of Nominal Capital, the Model Articles, and the beneficial ownership details; the government invoice comes to about KES 10,650, and the Certificate and CR12 issue in roughly five working days. Lodge BOF1 within 30 days. Apply for the company PIN and the director's PIN on iTax. Open the bank account with the KYC pack, allowing about two weeks for the bank. No resident director is required in law, so you appoint a local company secretary or resident contact to clear the bank and KRA linking rather than an unnecessary nominee. If the founder later relocates to run the company, apply for the Class G permit: KES 20,000 plus KES 250,000 per year, with proof of USD 100,000 capital. Set the annual-return reminder against the incorporation anniversary from day one.
+Reconcile intended structure to certificate and registered details; beneficial owners to control evidence; tax/PIN obligations to issued certificates; agent authority to each action; bank approval to its conditions; permit to intended activity; calendars to the relevant legal dates.
 
 ## Sources
 
-- Companies Act, 2015 (No. 17 of 2015): s.128 (a company needs at least one director who is a natural person, no residency requirement), s.243 (company secretary), s.705 (annual returns), s.894 (strike-off), Part XXXVII and s.979 (a foreign company must appoint a resident local representative)
-- Companies (Beneficial Ownership Information) Regulations, 2020, s.93A and Form BOF1 (Kenya Law)
-- Business Registration Service and eCitizen: name reservation, incorporation forms, government fees, and timeline (ecitizen.go.ke, brs.go.ke)
-- Kenya Revenue Authority, iTax: company and director PIN registration (kra.go.ke)
-- Directorate of Immigration Services: Class G investor permit fees and requirements (immigration.go.ke)
-- Income Tax Act (corporate tax 30% resident, 37.5% branch) and VAT Act, 2013 (16% standard rate)
-- FFP Consult, Set up your company in Kenya from abroad: https://ffp.co.ke/services/starting-a-company-in-kenya-as-a-foreigner
+| Source and passages actually read | Official URL | Read on |
+|---|---|---|
+| Read for BRS private/foreign registration fee, forms, certificates and processing rows | https://brs.go.ke/fee-schedule-companies-registry/ | 2026-11-14 |
+| Read for Companies Act BRS 2021 revision ss13-19,93A,128-129,243,705,894,979-981, legal distinction and representative liability | https://brs.go.ke/wp-content/uploads/2023/03/CompaniesAct17of2015.pdf | 2026-11-14 |
+| Read for Directorate Class G requirements, fees, EAC gratis treatment and renewal evidence | https://immigration.go.ke/class-g-specific-trade-business-or-consultancy/ | 2026-11-14 |
+| Read for eFNS Class G application steps, translation, investment evidence, TCC distinction and presentation instructions | https://fns.immigration.go.ke/infopack/permits/classG/ | 2026-11-14 |
+| Read for the 2023 Gazette Schedule, printed pp329-339: Companies Act ss13-16A,93A,138A,243A,706,894,904A,975,992A,1006A; current BO, contact-person, foreign-registration and inactivity amendments | https://brs.go.ke/wp-content/uploads/2023/09/AntiMoneyLaunderingandCombatingofTerrorismFinancingLawsAmendmentAct2023.pdf | 2026-11-14 |
+| Read for Business Laws Act2024 s37, Companies Act91A manufacturing-registration information sharing | https://investmentpromotion.go.ke/sites/default/files/2026-07/Business-Laws-%28Amendment%29-Act%2C-2024.pdf | 2026-11-14 |
+| Read for TPA ss8-13 taxpayer/PIN requirements | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
+
+Not yet confirmed: Current foreign-company regulations/local-representative eligibility and foreign BO amendment deadlines; the 2021 consolidation has been read together with the 2023 Gazette and 2024 s91A insertion, with the obsolete preparation-based BO deadline corrected. The old KES 150 name-reservation fee (distinct from the sourced s48 reservation period), universal passport/address notarisation and address age under 3 months, 5-10-day foreign completion, 2-week banking, guaranteed power-of-attorney remote completion, compulsory resident subsidiary director/secretary for bank/PIN linking and automatic strike-off after 5 years are not established by the official texts opened. The claim that Class G capital proof disappears merely because a Kenyan company employs the applicant is unsupported; determine the correct employment permit. Nominal-capital stamp duty and current BOF1 requirements need the live filing rules.
 
 > Contributed by Julian Njoroge Maina, 25241.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `set-up-your-company-in-kenya-we-handle-it-from-abroad` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/set-up-your-company-in-kenya-we-handle-it-from-abroad. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `set-up-your-company-in-kenya-we-handle-it-from-abroad` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/set-up-your-company-in-kenya-we-handle-it-from-abroad. If neither is available, confirm every figure against the official source pages cited above before relying on it.
