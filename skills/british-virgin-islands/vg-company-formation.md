@@ -46,10 +46,10 @@ Forming a BVI business company (BC) under the BVI Business Companies Act, Revise
 | Notice of objection; application opposing disclosure; notice of intent to appeal | USD 0 each | same |
 | Application for exemption from disclosure of beneficial ownership information, or its renewal | USD 50 each | same |
 | Certified copy of an entry in the Register of Beneficial Ownership (s.233) | USD 75 | same |
-| Incorporation fee, company authorised to issue no more than 50,000 shares | USD 550 (was USD 450 before 1 January 2023) | [SI 89 of 2022, s. 2(a)(i)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf) |
-| Incorporation fee, company authorised to issue more than 50,000 shares | USD 1,350 (was USD 1,200) | same |
-| Annual fee, company authorised to issue no more than 50,000 shares | USD 550 | Schedule 1 Part I, s. 236, as amended from 1 January 2023 ([SI 89 of 2022, s. 2(a)(xiii)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf)) |
-| Annual fee, company authorised to issue more than 50,000 shares | USD 1,350 | same |
+| Incorporation fee, company authorised to issue no more than 50,000 shares | USD 550 (was USD 450 before 1 January 2023) | [SI 89 of 2022, s. 2(a)(i)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf); 50,000 share band: [Act (Revised Edition 2020), Schedule 1 Part I, s. 7(1)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
+| Incorporation fee, company authorised to issue more than 50,000 shares | USD 1,350 (was USD 1,200) | same two sources |
+| Annual fee, company authorised to issue no more than 50,000 shares | USD 550 | Schedule 1 Part I, s. 236, as amended from 1 January 2023 | [SI 89 of 2022, s. 2(a)(xiii)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf); [Act (Revised Edition 2020), Schedule 1 Part I, s. 236](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
+| Annual fee, company authorised to issue more than 50,000 shares | USD 1,350 | same two sources |
 | Annual fee due date | 31 May each year if incorporated or continued between 1 January and 30 June; 30 November if between 1 July and 31 December; starting in the year after incorporation | [BVI Business Companies Act (Revised Edition 2020), Schedule 1 Part III para 5](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
 | Late annual fee penalty | 10% of the annual fee if paid within 2 months after the due date; 50% if paid 2 months or more after it | [Act (Revised Edition 2020), Schedule 1 Part II para 1](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
 | Annual financial return deadline | Within 9 months after the end of the company's financial year, filed with the registered agent | [BVI Business Companies (Amendment) Act 2022, s. 17 (new s. 98A(2))](https://www.bvifsc.vg/sites/default/files/act_no_6_of_2022-_bvi_business_companies_amendment_act_2022_1.pdf) |
@@ -85,6 +85,28 @@ expected:
   exemption_total: 100
   total: 175
 ```
+
+### Case 2: late annual fee for a company incorporated in March
+
+A company with 50,000 authorised shares, incorporated in March 2025, owes its USD 550 annual fee on 31 May 2026. Paid on 15 July 2026 (within 2 months), the penalty is 10%; paid in September 2026, it is 50% (where exactly the 2 months end is for the registered agent to confirm).
+
+```oa-check
+name: BVI late annual fee penalty, 50,000 shares, 2026
+inputs:
+  annual_fee: 550
+steps:
+  - penalty_within_2_months: annual_fee * 0.10
+  - total_within_2_months: annual_fee + penalty_within_2_months
+  - penalty_after_2_months: annual_fee * 0.50
+  - total_after_2_months: annual_fee + penalty_after_2_months
+expected:
+  penalty_within_2_months: 55
+  total_within_2_months: 605
+  penalty_after_2_months: 275
+  total_after_2_months: 825
+```
+
+Paying late by more than 2 months costs USD 825 instead of USD 605 (derived).
 
 ## When to refuse or refer
 
