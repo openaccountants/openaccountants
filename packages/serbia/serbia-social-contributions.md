@@ -1,14 +1,15 @@
 ---
 name: serbia-social-contributions
 description: "Serbian mandatory social insurance contributions for tax year 2026. Covers who pays pension and disability (PIO), health and unemployment contributions; the rates (24%, 10.3% and 0.75%, split 14% and 10% for pension and 5.15% each for health when an employer pays); the 2026 minimum monthly base of RSD 51,297, maximum monthly base of RSD 732,820 and maximum annual base of RSD 8,793,840; the base for employees, company founders, entrepreneurs on actual profit, flat-rate (paušal) entrepreneurs and contract income; the new-hire contribution refunds in force for 2026; when contributions are due; and penalties. Trigger on: doprinosi za obavezno socijalno osiguranje, PIO, zdravstveno osiguranje, najniža osnovica, najviša osnovica, doprinosi paušalac, doprinosi preduzetnik, osnivač doprinosi. Out of scope: salary tax and the employer's monthly gross-to-net (serbia-payroll), income tax (serbia-income-tax), non-residents and treaties (rs-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Serbia: social contributions (2026)

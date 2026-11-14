@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sk-corporate-income-tax"
   jurisdiction: "SK"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.4
+# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.5
 
 The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov). This skill reads the consolidated version in force from 1 January 2026 on slov-lex.sk, which includes the consolidation package Act No. 261/2025 Coll. Penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The Financial Administration (Finančná správa) runs the return and the portal at financnasprava.sk. Figures are for the 2026 tax period: the calendar year 2026, or a fiscal year (hospodársky rok) that ends in 2026 or 2027. Where a rule applies only to periods that start on or after 1 January 2026, the skill says so.
 
@@ -51,7 +51,7 @@ Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individual
 | No advances, prior-year tax up to EUR 5,000 (§ 42(3)(a)) | None, unless the tax office orders them | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Withholding tax, standard (§ 43(1)(b)) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Withholding tax, payee in a non-cooperating state (§ 43(1)(c)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
-| Late payment interest (Tax Procedure Code § 156(2)) | 4 times the ECB main rate a year, at least 15% a year, for at most 4 years. At the ECB main refinancing rate of 2.65% (from 16 September 2026) the 15% floor applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |
+| Late payment interest (Tax Procedure Code § 156(2)) (figures computed from the rates, the subsistence minimum or the EUR 1,524 average wage) | 4 times the ECB main rate a year, at least 15% a year, for at most 4 years. At the ECB main refinancing rate of 2.65% (from 16 September 2026) the 15% floor applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |
 
 ## The taxable base
 
@@ -364,8 +364,11 @@ expected:
 
 The current form and matching instructions are verified from the actual Ministry packages above. The [31 December 2026 Income Tax Act text](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was compared with the earlier 2026 text: the corporate provisions used here are unchanged. Its §52zzzm directs the specified new §9/§11 rules to 2027 returns; the fact a2026 return is filed in 2027 does not itself move it to those rules. Future ECB rates still require the actual statutory reference date.
 
+
+Not yet confirmed: the ECB main refinancing rate for any date after this read (it sets penalty and late-interest floors); use the rate in force on the statutory reference date.
+
 > Contributed by Michael Cutajar.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

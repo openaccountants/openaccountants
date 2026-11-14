@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sm-payroll-social"
   jurisdiction: "SM"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# San Marino payroll and social contributions v0.4
+# San Marino payroll and social contributions v0.5
 
 Tax year: calendar year 2026. Currency EUR. Authorities: ISS (Istituto per la Sicurezza Sociale, Ufficio Contributi) for contributions; UO Ufficio Tributario for IGR withholding.
 
@@ -31,34 +31,33 @@ Coverage for workers posted to or from another State follows the applicable soci
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Employee pension fund contribution | 6.90% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
-| Employee contributions in total (including the 6.90% pension) | 7.80% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
-| Employer pension fund contribution | 17.60% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
-| Total pension fund contribution | 24.50% | 2026 | [ISS circular 2187/UC/2026, p. 1][iss] |
-| FONDISS, employee (on the pensionable base) | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10][iss] |
-| FONDISS, employer | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10][iss] |
-| Employee forfait in the taxable wage | 7% of gross pay, capped at 2,800 | 2026 | [IGR art 24(4)][igr] |
-| Default deductible contributions in the Tax Office calculator | 9.9% (pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%) | 2026 | [Tax Office IGR calculator][calc] |
-| Employer IGR G certification to the Tax Office | By 15 April following the year | 2026 | [IGR art 85(2)][igr] |
-| Remittance of IGR withheld on wages | By the end of the two-month period after the month of withholding or accrual | 2026 | [IGR art 125(1)][igr] |
+| Employee pension fund contribution | 6.90% | 2026 | [ISS circular 2187/UC/2026, p. 1](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Employee contributions in total (including the 6.90% pension) | 7.80% | 2026 | [ISS circular 2187/UC/2026, p. 1](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Employer pension fund contribution | 17.60% | 2026 | [ISS circular 2187/UC/2026, p. 1](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Total pension fund contribution | 24.50% | 2026 | [ISS circular 2187/UC/2026, p. 1](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| FONDISS, employee (on the pensionable base) | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| FONDISS, employer | 2.50% | 2026 | [ISS circular 2187/UC/2026, p. 10](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Employee forfait in the taxable wage | 7% of gross pay, capped at 2,800 | 2026 | [IGR art 24(4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Employer IGR G certification to the Tax Office | By 15 April following the year | 2026 | [IGR art 85(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Remittance of IGR withheld on wages | By the end of the two-month period after the month of withholding or accrual | 2026 | [IGR art 125(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 ### Self-employed and separate management (2026 minimum incomes and rates)
 
-| Category | Minimum income | Pension | Social security | Family allowances |
-|---|---:|---|---|---|
-| Merchants | 30,164.57 | 24% | 2% on declared income up to 50,294.28 | Not liable |
-| Artisans | 30,164.57 | 24% | 2% up to 50,294.28 | 3.60% |
-| Artisans' family helpers | 17,500.00 | 24% | 2% up to 50,294.28 | 3.60% |
-| Professionals (libero professionista) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
-| Entrepreneurs | 30,164.57 | 24% | Not liable | Not liable |
-| Agents and commercial representatives | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
-| Autonomous workers (DD 214/2021) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable |
-| Farmers | 15,000.00 | 11% | 4% on the minimum income | Not liable |
-| Farmers' family helpers | 5,800.00 | 11% | 4% on the minimum income | Not liable |
-| Separate management, ordinary director or president | 30,164.57 | 19% (17% if already in another pension fund and only a director) | Not liable | Not liable |
-| Separate management, operating director or operating member (collaborator) | 30,164.57 | 19% (an ordinary director who becomes operating owes an extra 1% on the self-employed minimum income) | 2% | Not liable |
-| Separate management, project collaborators (CO.CO.PRO.) | Per DD 162/2024 art 2 | 19% | Not liable | Not liable |
-| Separate management, pensioner director, president or member | 30,164.57 | 30.50% solidarity rate, on 20% of income (sole director or president) or 60% of income (operating director or collaborating member) | Not liable | Not liable |
+| Category | Minimum income | Pension | Social security | Family allowances | Source |
+|---|---:|---|---|---|---|
+| Merchants | 30,164.57 | 24% | 2% on declared income up to 50,294.28 | Not liable | [ISS circular 2187/UC/2026](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Artisans | 30,164.57 | 24% | 2% up to 50,294.28 | 3.60% | same |
+| Artisans' family helpers | 17,500.00 | 24% | 2% up to 50,294.28 | 3.60% | same |
+| Professionals (libero professionista) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable | same |
+| Entrepreneurs | 30,164.57 | 24% | Not liable | Not liable | same |
+| Agents and commercial representatives | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable | same |
+| Autonomous workers (DD 214/2021) | 30,164.57 | 24% (1) | 2% up to 50,294.28 | Not liable | same |
+| Farmers | 15,000.00 | 11% | 4% on the minimum income | Not liable | same |
+| Farmers' family helpers | 5,800.00 | 11% | 4% on the minimum income | Not liable | same |
+| Separate management, ordinary director or president | 30,164.57 | 19% (17% if already in another pension fund and only a director) | Not liable | Not liable | same |
+| Separate management, operating director or operating member (collaborator) | 30,164.57 | 19% (an ordinary director who becomes operating owes an extra 1% on the self-employed minimum income) | 2% | Not liable | same |
+| Separate management, project collaborators (CO.CO.PRO.) | Per DD 162/2024 art 2 | 19% | Not liable | Not liable | same |
+| Separate management, pensioner director, president or member | 30,164.57 | 30.50% solidarity rate, on 20% of income (sole director or president) or 60% of income (operating director or collaborating member) | Not liable | Not liable | same |
 
 (1) For professionals, agents and autonomous workers only: 2% on income above 50,294.28. Directors registered in another pension fund pay on 30% of the income from the second registration (DD 162/2024, art 1). Source for the whole table: [ISS circular 2187/UC/2026, pp. 4-6][iss].
 
@@ -66,9 +65,9 @@ FONDISS for the self-employed, separate management and farmers is 4% of business
 
 | Self-employed deadline | Date | Source |
 |---|---|---|
-| Contribution and FONDISS balance (self-employed, sole traders) | 31 July each year, from 2026 | [ISS circular 2187/UC/2026, p. 6][iss] |
-| First contribution and FONDISS advance (self-employed, sole traders) | 31 August each year, from 2026 | [ISS circular 2187/UC/2026, p. 6][iss] |
-| Separate management contributions | 31 January of the year after the reference year | [ISS circular 2187/UC/2026, p. 6][iss] |
+| Contribution and FONDISS balance (self-employed, sole traders) | 31 July each year, from 2026 | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| First contribution and FONDISS advance (self-employed, sole traders) | 31 August each year, from 2026 | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Separate management contributions | 31 January of the year after the reference year | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
 
 ## 3. The base
 
@@ -88,13 +87,13 @@ FONDISS for the self-employed, separate management and farmers is 4% of business
 
 | Obligation | Deadline | Source |
 |---|---|---|
-| Remit IGR withheld from wages | Within the two-month period after the month of withholding or accrual | [IGR art 125(1)][igr] |
-| Transmit IGR G (income and withholding per employee) | 15 April following the year | [IGR art 85(2)][igr] |
-| Year-end withholding adjustment | By February of the following year | [IGR art 101(5)][igr] |
-| Self-employed contribution balance | 31 July | [ISS circular 2187/UC/2026, p. 6][iss] |
-| Self-employed first advance | 31 August | [ISS circular 2187/UC/2026, p. 6][iss] |
-| Separate management contributions | 31 January of the following year | [ISS circular 2187/UC/2026, p. 6][iss] |
-| Self-employed refund requests | Only through the CONTRISS portal, from 1 March 2026 | [ISS circular 2187/UC/2026, pp. 6-9][iss] |
+| Remit IGR withheld from wages | Within the two-month period after the month of withholding or accrual | [IGR art 125(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Transmit IGR G (income and withholding per employee) | 15 April following the year | [IGR art 85(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Year-end withholding adjustment | By February of the following year | [IGR art 101(5)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Self-employed contribution balance | 31 July | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Self-employed first advance | 31 August | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Separate management contributions | 31 January of the following year | [ISS circular 2187/UC/2026, p. 6](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
+| Self-employed refund requests | Only through the CONTRISS portal, from 1 March 2026 | [ISS circular 2187/UC/2026, pp. 6-9](https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html) |
 
 An employee with one employer and no other income does not file a return if the employer transmits IGR G on time ([IGR arts 84-85][igr]).
 
@@ -192,7 +191,7 @@ The same rules give: a professional declaring 40,000 pays pension 9,600, social 
 | Delegated Decree 156/2026 of 12 October 2026, art 8 | https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33 | 2026-10-30 |
 | Tax Office public 2026 IGR calculator (Law 141/2025) | https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1 | 2026-10-24 |
 
-Not yet confirmed: employer contributions beyond pension and FONDISS (the earlier version's unemployment 1.9%, health 4.0% and social services fund 1.0%, and its 27.4% employer total); any contribution ceiling for employees; the monthly ISS contribution payment date for employers; the self-employed second advance date; the current sanctions under Law 179/2005 article 44 and the legal interest rate.
+Not yet confirmed: the default deductible contributions used by the Tax Office IGR calculator (earlier text: 9.9%, made of pension 6.9%, FONDISS 2.5%, unemployment and solidarity 0.5%); the calculator builds them in its later steps and they could not be read by script on 14 Nov 2026; employer contributions beyond pension and FONDISS (the earlier version's unemployment 1.9%, health 4.0% and social services fund 1.0%, and its 27.4% employer total); any contribution ceiling for employees; the monthly ISS contribution payment date for employers; the self-employed second advance date; the current sanctions under Law 179/2005 article 44 and the legal interest rate.
 
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [iss4295]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html
@@ -203,4 +202,4 @@ Not yet confirmed: employer contributions beyond pension and FONDISS (the earlie
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sm-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sm-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sm-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sm-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

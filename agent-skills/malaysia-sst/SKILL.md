@@ -1,357 +1,191 @@
 ---
 name: malaysia-sst
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Malaysia Sales and Service Tax (SST) return (SST-02) for any client. Trigger on phrases like \"Malaysia SST\", \"Sales Tax Malaysia\", \"Service Tax Malaysia\", \"SST-02\", \"MySST\", \"RMCD\", or any request involving Malaysia SST. This is NOT a VAT — there is NO input tax credit. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Malaysia SST work."
+description: "Use this skill whenever asked to prepare, review or classify transactions for a Malaysia Sales and Service Tax (SST) return SST-02 in 2026. Trigger on phrases like Malaysia SST, sales tax Malaysia, service tax Malaysia, SST-02, SST-02A, MySST, RMCD, JKDM, Kastam, imported taxable service, rental service tax, construction service tax, or any request involving Malaysian sales tax or service tax. SST is not a VAT and gives no input tax credit. Covers sales tax at 5% and 10% on manufacturers, service tax at 8% with the 6% services and the RM25 card charge, the July 2025 scope expansion (rental, construction, financial, healthcare, education, beauty), registration thresholds, the bi-monthly SST-02 return, imported services, late payment penalties, bad debts and records. Calendar 2026."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/malaysia-sst"
   jurisdiction: "MY"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Malaysia Sst
+# Malaysia Sales and Service Tax (SST), 2026
 
-## Section 1 — Quick reference
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Malaysia.
 
-**Quick reference fields**
+## Scope
 
-| Field | Value |
-| --- | --- |
-| Country | Malaysia |
-| Tax type | Sales and Service Tax (SST) — NOT a VAT. No input tax credit. |
-| Sales Tax rate | 10% (standard); 5% (specific goods); specific rates (petroleum) |
-| Service Tax rate | 8% (standard, from 1 March 2024); 6% (retained: F&B, telecoms, parking, logistics) |
-| Exempt goods | Basic foodstuffs, live animals, certain agriculture, medical devices |
-| Return form | SST-02 (bimonthly for both Sales Tax and Service Tax) |
-| Filing portal | https://mysst.customs.gov.my (MySST) |
-| E-invoice portal | https://myinvois.hasil.gov.my (IRBM, from August 2024) |
-| Authority | Royal Malaysian Customs Department (RMCD / JKDM) |
-| Currency | MYR (Malaysian Ringgit) |
-| Filing frequency | Bimonthly (Jan-Feb, Mar-Apr, May-Jun, Jul-Aug, Sep-Oct, Nov-Dec) |
-| Deadline | Last day of month following the bimonthly period |
-| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+Malaysia has no VAT or GST (GST was repealed in 2018). It has two single-stage taxes administered by the Royal Malaysian Customs Department (RMCD, JKDM) on the MySST portal, https://mysst.customs.gov.my:
 
-**Key SST-02 fields**
+- **Sales tax** (Sales Tax Act 2018, Act 806): charged by registered manufacturers on taxable goods they make and sell, and on imports. Retailers and wholesalers do not charge it.
+- **Service tax** (Service Tax Act 2018, Act 807): charged by registered providers of the taxable services listed in the First Schedule of the Service Tax Regulations 2018, and accounted for by business recipients of imported taxable services.
 
-| Part | Field | Meaning |
-| --- | --- | --- |
-| A1/A2 | Sales Tax 10% | Taxable goods at standard rate |
-| A3/A4 | Sales Tax 5% | Taxable goods at reduced rate |
-| A7 | Exempt goods | Including exports |
-| A9 | Total Sales Tax | A2 + A4 + A6 |
-| B1/B2 | Service Tax 8% | Standard rate services |
-| B3/B4 | Service Tax 6% | Retained rate services (F&B, telecoms, parking, logistics) |
-| B6 | Total Service Tax | B2 + B4 |
-| C5 | Net SST payable | A9 + B6 - adjustments |
+**There is no input tax credit.** SST paid on purchases is a cost. Manufacturers reduce sales tax on inputs through exemptions applied at purchase (Schedules A, B and C of the exemption order), not through a credit.
 
-- **No input tax credit** — CRITICAL: NO INPUT TAX CREDIT under SST. SST paid on inputs is a cost. Manufacturers use Schedule A/B exemptions on raw materials (exemption at purchase, not credit after payment).
+Out of scope: e-invoicing (`malaysia-einvoice`); income tax (`my-income-tax`); Free Zones and licensed manufacturing warehouses, petroleum specific rates, foreign digital service providers' own registration (see "When to refuse or refer").
 
-**Conservative defaults**
+## Ask the client first
+
+1. **Which tax?** Registered for sales tax, service tax, or both; registration numbers.
+2. **Manufacturer?** Does the business manufacture taxable goods (sales tax), or only trade them (no sales tax on output)?
+3. **Which services?** Map each service to the First Schedule group and item, including the July 2025 additions (rental or leasing, construction, financial, private healthcare, education, beauty).
+4. **Value of taxable sales or services** for the last 12 months and the next 12 months (registration threshold test).
+5. **Exemption approvals** (Schedule A, B or C certificates) held.
+6. **Taxable period**: the standard two months, or a period approved by the Director General.
+
+Conservative defaults:
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown Sales Tax rate | 10% |
-| Unknown Service Tax rate | 8% |
-| Unknown whether manufacturer or trader | Trader (no Sales Tax obligation on output) |
-| Unknown service classification | Not prescribed (no Service Tax) |
-| Unknown SST paid on inputs | Cost (no credit) |
+| Sales tax rate unknown for a taxable good | 10% (goods not in the rate order or the exemption order are at 10%) |
+| Service tax rate unknown for a taxable service | 8% |
+| Manufacturer or trader unknown | Trader: no sales tax on output |
+| Service not mapped to the First Schedule | Not taxable, flag it |
+| SST paid on inputs | Cost, no credit |
+| Supplier billing entity (Malaysian or foreign) unknown | Treat as imported, account for service tax, flag it |
 
-**Red flag thresholds**
+Flag for review any single transaction over RM50,000 or any default that moves tax by more than RM2,000.
 
-| Threshold | Value |
+## The method, step by step
+
+1. **Classify each sale.** Taxable goods made by the client (sales tax), a taxable service (service tax), an export of goods (exempt from sales tax), or outside SST (salaries, dividends, loans, internal transfers, government fees).
+2. **Apply the rate** from the table below to the sale value (sales tax on the sale value of the goods; service tax on the price, value, premium or takaful contribution under section 9 of Act 807).
+3. **Imported taxable services.** A registered person accounts for service tax on services bought from outside Malaysia in its SST-02 for the taxable period; a business that is not registered declares on SST-02A through MySST. The tax is a cost.
+4. **Adjust** for credit notes, and claim bad debt relief within 6 years of the sale where the Director General's conditions are met; repay it if the debt is later recovered.
+5. **File SST-02** for each taxable period by the last day of the month after the period ends, even if no tax is due, and pay by the same date by FPX.
+6. **Late payment** adds 10% for the first 30 days, a further 15% for each of the next two 30-day periods, up to 40% after 90 days.
+7. **Records**: keep for 7 years, in Malay or English, in Malaysia unless the Director General permits otherwise.
+
+### Rates, bands and thresholds
+
+| Item | Figure | Source |
+| --- | --- | --- |
+| Service tax, general rate (from 1 March 2024) | 8% | https://mysst.customs.gov.my/faq-services-tax/ |
+| Service tax on food and beverage, telecommunications, parking and logistics | 6% | same |
+| Service tax on credit card or charge card | RM25 a card | same |
+| Service tax on construction work services (from 1 July 2025) | 6% | https://mysst.customs.gov.my/faq-expansion-of-service-tax-scope-2025/ |
+| Service tax on private healthcare, traditional and complementary medicine and allied health services (from 1 July 2025) | 6% | same |
+| Service tax on rental or leasing services (from 1 July 2025) | 8% | same |
+| Service tax on beauty treatment services | 8% | same |
+| Registration threshold, rental or leasing | RM500,000 in 12 months | same |
+| Registration threshold, financial services | RM500,000 in 12 months | same |
+| Registration threshold, beauty treatment | RM500,000 in 12 months | same |
+| Registration threshold, construction work (excluding residential buildings) | RM1,500,000 in 12 months | same |
+| Registration threshold, private healthcare and related services | RM1,500,000 in 12 months | same |
+| Sales tax rates (from 1 July 2025) | 5%, 10%, or specific rates; goods not listed in the rate or exemption orders at 10% | https://mysst.customs.gov.my/faq-transition-of-sales-tax-rate-changes-2025/ |
+| Registration threshold, manufacturer of taxable goods | RM500,000 in 12 months | same |
+| SST-02 due date | Last day of the month after the taxable period | https://mysst.customs.gov.my/faq-services-tax/ |
+| Late payment penalty | 10% first 30 days; 15% second; 15% third; maximum 40% | same |
+| Bad debt relief window | 6 years from the sale | same |
+| Record keeping | 7 years | same |
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| HIGH single-transaction size | RM 50,000 |
-| HIGH tax-delta on a single default | RM 2,000 |
+| Threshold test | Historical: this month plus the 11 before. Future: this month plus the 11 after. Either reaching the threshold triggers registration |
+| Manufacturer sells goods for export | Exempt from sales tax; report as exempt in SST-02 |
+| Subcontract processing for another manufacturer | Manufacturing or a service? Flag and ask |
+| Goods and services on one invoice | Can they be separately invoiced? Flag and ask |
+| SaaS or cloud bought online | Check the billing entity: a Malaysian entity charging service tax is a cost; a foreign entity means an imported taxable service |
+| Streaming or apps for staff from a foreign provider | The foreign digital service provider may already charge service tax; check the invoice |
+| Bank fees | Fee-based financial services became taxable at 8% from 1 July 2025 unless excluded; for the client it is a cost either way, never a credit |
+| Electricity, water, telecoms, insurance, professional fees, platform commissions (Shopee, Lazada, Grab, Foodpanda) | Cost, with any service tax embedded; nothing goes into the client's return |
+| Salaries, EPF, SOCSO, EIS, LHDN, RMCD, SSM payments, dividends, loans, own transfers | Outside SST, exclude |
+| Cash withdrawal | Ask; default exclude |
+| Residential building construction | Excluded from the construction service tax |
+| GST refunds from before September 2018 | Refer |
 
-## Section 2 — Required inputs and refusal catalogue
+## Worked cases
 
-### Required inputs
+Case 1, SST-02 for January and February 2026, filed late. A registered manufacturer that also provides consultancy and runs a cafe has, for the period: goods at 10% RM80,000; goods at 5% RM20,000; consultancy RM30,000 (8%); cafe sales RM5,000 (6%). Sales tax RM8,000 + RM1,000 = RM9,000. Service tax RM2,400 + RM300 = RM2,700. Total due RM11,700 by 31 March 2026. Paid 45 days late: 10% + 15% = 25% penalty, RM2,925.
 
-- **Minimum viable and recommended inputs** — Minimum viable — bank statement for the bimonthly period. Acceptable from: Maybank, CIMB, Public Bank, RHB, Hong Leong, AmBank, Bank Islam, Bank Rakyat, OCBC Malaysia, UOB Malaysia, or any other. Recommended — sales invoices, Schedule A/B approval letters, SST registration certificates (separate for Sales Tax and Service Tax).
+```oa-check
+name: SST-02 Jan to Feb 2026, paid 45 days late
+inputs:
+  goods_10: 80000
+  goods_5: 20000
+  consultancy: 30000
+  cafe: 5000
+steps:
+  - sales_tax: goods_10 * 0.10 + goods_5 * 0.05
+  - service_tax: consultancy * 0.08 + cafe * 0.06
+  - total: sales_tax + service_tax
+  - penalty: total * (0.10 + 0.15)
+expected:
+  sales_tax: 9000.00
+  service_tax: 2700.00
+  total: 11700.00
+  penalty: 2925.00
+```
 
-### Malaysia-specific refusal catalogue
+Case 2, decision: must a landlord register for service tax now? A company letting commercial units had rental income of RM520,000 in the 12 months to the end of May 2026 (historical method) and expects RM480,000 in the next 12 months. The historical test alone is over the RM500,000 rental threshold, so it must register even though the future test is under. Once registered, rent of RM90,000 for July and August 2026 carries 8% service tax, RM7,200, due by 30 September 2026. Had the trailing 12 months been RM499,000, and the next 12 months also under RM500,000, it would not have to register and would charge nothing.
 
-- **R-MY-1 — Free Zone / Licensed Manufacturing Warehouse** — Trigger: client in Free Zone or LMW. Message: "Free Zone and LMW operations have special SST treatment. Please escalate to a licensed tax agent."
-- **R-MY-2 — Petroleum and crude oil taxation** — Trigger: client in petroleum sector with specific-rate Sales Tax. Message: "Petroleum-specific Sales Tax rates require specialist analysis. Please escalate."
-- **R-MY-3 — Foreign digital service provider registration** — Trigger: foreign entity providing digital services to Malaysian consumers under Section 56C. Message: "Foreign DSP registration under Section 56C has specific obligations. Please escalate."
-- **R-MY-4 — GST transitional claims** — Trigger: client has unclaimed GST input credits from pre-September 2018. Message: "GST transitional provisions have largely expired. Please escalate for assessment of any remaining claims."
+```oa-check
+name: Rental service tax registration test and first period
+inputs:
+  trailing_12: 520000
+  forward_12: 480000
+  threshold: 500000
+  period_rent: 90000
+steps:
+  - over_historical: max(trailing_12 - threshold, 0)
+  - over_future: max(forward_12 - threshold, 0)
+  - service_tax: period_rent * 0.08
+expected:
+  over_historical: 20000
+  over_future: 0
+  service_tax: 7200.00
+```
 
-## Section 3 — Supplier pattern library
+## When to refuse or refer
 
-### 3.1 Malaysian banks (fees — cost, no credit)
-
-**Malaysian banks table**
-
-| Pattern | Treatment | Notes |
+| Code | Trigger | Message |
 | --- | --- | --- |
-| MAYBANK, MALAYAN BANKING | EXCLUDE for bank charges | No SST on exempt financial services |
-| CIMB, CIMB BANK | EXCLUDE for bank charges | Same |
-| PUBLIC BANK, PBB | EXCLUDE for bank charges | Same |
-| RHB, HONG LEONG, AMBANK | EXCLUDE for bank charges | Same |
-| BANK ISLAM, BANK RAKYAT | EXCLUDE for bank charges | Same |
-| OCBC MY, UOB MY, STANDARD CHARTERED MY | EXCLUDE for bank charges | Same |
-| INTEREST, LOAN, REPAYMENT | EXCLUDE | Out of scope |
+| R-MY-1 | Client in a Free Zone or licensed manufacturing warehouse | "Free Zone and LMW operations have special SST treatment. Please escalate to a licensed tax agent." |
+| R-MY-2 | Petroleum or other specific-rate sales tax | "Specific sales tax rates need specialist analysis. Please escalate." |
+| R-MY-3 | Foreign entity supplying digital services to Malaysian consumers | "Foreign digital service provider registration has its own rules. Please escalate." |
+| R-MY-4 | Unclaimed GST input credits from before September 2018 | "GST transitional provisions have largely expired. Please escalate for any remaining claim." |
+| R-MY-5 | Designated areas (Labuan, Langkawi, Tioman) or special areas | "Designated and special areas have their own orders. Please escalate." |
 
-### 3.2 Government and statutory bodies (exclude)
+## Filing and payment
 
-**Government and statutory bodies table**
+| Step | Detail |
+| --- | --- |
+| Register | MySST, once a threshold is reached (or voluntarily where allowed) |
+| Taxable period | Two months, or a period approved by the Director General (for example aligned to the financial year) |
+| Return | SST-02 on MySST, by the last day of the month after the period, including nil returns |
+| Imported services, not registered | SST-02A on MySST |
+| Payment | FPX on MySST, or cheque to the Customs Processing Centre |
+| Working paper | Per `vat-workflow-base`: sales tax by rate and exempt; service tax by rate; imported services; adjustments; net payable |
 
-| Pattern | Treatment | Notes |
+Bank statements (Maybank, CIMB, Public Bank and others, DD/MM/YYYY, MYR): exclude internal transfers and payroll; split platform settlements (Grab, Shopee) into platform fee and underlying sale.
+
+## Completion checklist
+
+- Each sale mapped to sales tax, service tax (with First Schedule item), export or outside scope.
+- Threshold tested both ways for every service type the client provides.
+- Rates checked against the table, including the 6% services and construction.
+- Imported services declared on the right form.
+- No input credit claimed.
+- Due date and any late payment penalty stated.
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| RMCD, CUSTOMS, JKDM | EXCLUDE | Tax/duty payment |
-| LHDN, IRBM, INLAND REVENUE | EXCLUDE | Income tax |
-| SSM, COMPANIES COMMISSION | EXCLUDE | Registration fee |
-| EPF, KWSP, SOCSO, PERKESO, EIS | EXCLUDE | Employee contributions |
-| LEMBAGA HASIL | EXCLUDE | Tax authority |
-
-### 3.3 Utilities
-
-**Utilities table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TENAGA NASIONAL, TNB | Cost (includes 6% Service Tax) | Electricity — SST embedded, no credit |
-| SYABAS, AIR SELANGOR, SAJ | Cost | Water |
-| TM, TELEKOM MALAYSIA, MAXIS, DIGI, CELCOM, U MOBILE | Cost (includes 6% Service Tax) | Telecoms — retained 6% rate |
-| UNIFI, TIME INTERNET | Cost (includes 6% Service Tax) | Broadband |
-
-### 3.4 Insurance
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GREAT EASTERN, AIA, PRUDENTIAL, ALLIANZ MY | Cost (Service Tax embedded) | Insurance services taxable at 8% |
-| TAKAFUL, ETIQA | Cost | Same |
-
-### 3.5 SaaS and international services
-
-**SaaS and international services table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, META, FACEBOOK | Self-account 8% via SST-02A | Imported service — Section 26 |
-| AWS, AMAZON, ZOOM, SLACK | Self-account 8% via SST-02A | Same |
-| CANVA, FIGMA, NOTION, OPENAI | Self-account 8% via SST-02A | Same |
-| NETFLIX, SPOTIFY, DISNEY+ | Should be collected by provider (Section 56C) | Check if SST included |
-
-### 3.6 E-commerce platforms
-
-**E-commerce platforms table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SHOPEE, LAZADA, GRAB | Platform fees are cost | Service Tax embedded in platform commission |
-| FOODPANDA, DELIVEREAT | Cost | Same |
-
-### 3.7 Professional services
-
-**Professional services table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AUDIT FIRM, ACCOUNTING, CONSULTANT | Cost (8% Service Tax embedded) | Group C prescribed service |
-| LAW FIRM, LEGAL, PEGUAM | Cost (8% Service Tax embedded) | Same |
-| ARCHITECT, ENGINEER, SURVEYOR | Cost (8% Service Tax embedded) | Same |
-
-### 3.8 Payroll and exclusions
-
-**Payroll and exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, GAJI, WAGES | EXCLUDE | Outside SST scope |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal movement |
-| DIVIDEND | EXCLUDE | Out of scope |
-| CASH WITHDRAWAL | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-### Example 1 — Manufacturer domestic sale at 10% Sales Tax
-
-**Input line:** `05.04.2026 ; FURNITURE RETAILER SDN BHD ; CREDIT ; Invoice MY-041 ; RM 88,000`
-
-**Reasoning:** Registered manufacturer sells taxable goods. Sales Tax at 10%. Net = RM 80,000, Sales Tax = RM 8,000. SST-02 Part A1/A2.
-
-**Example 1 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | FURNITURE RETAILER | +88,000 | +80,000 | 8,000 | 10% | A1/A2 | N | — |
-
-### Example 2 — Professional service at 8% Service Tax
-
-**Input line:** `10.04.2026 ; CONSULTANCY FEES ; CREDIT ; Advisory April ; RM 32,400`
-
-**Reasoning:** Prescribed taxable service (Group C). Service Tax at 8%. Net = RM 30,000, Tax = RM 2,400. SST-02 Part B1/B2.
-
-**Example 2 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | CLIENT SDN BHD | +32,400 | +30,000 | 2,400 | 8% | B1/B2 | N | — |
-
-### Example 3 — Restaurant at retained 6% Service Tax
-
-**Input line:** `15.04.2026 ; FOOD SALES ; CREDIT ; F&B revenue ; RM 5,300`
-
-**Reasoning:** F&B retains 6% rate. Net = RM 5,000, Tax = RM 300. SST-02 Part B3/B4.
-
-**Example 3 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | F&B REVENUE | +5,300 | +5,000 | 300 | 6% | B3/B4 | N | — |
-
-### Example 4 — Imported cloud service (self-account)
-
-**Input line:** `18.04.2026 ; AWS ; DEBIT ; Cloud hosting ; RM -2,350`
-
-**Reasoning:** Imported service. Self-account 8% via SST-02A. Service Tax = RM 188. This is a COST — no credit.
-
-**Example 4 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | AWS | -2,350 | -2,350 | 188 | 8% | SST-02A | N | — |
-
-### Example 5 — Export, exempt from Sales Tax
-
-**Input line:** `22.04.2026 ; AUSTRALIAN BUYER PTY ; CREDIT ; Exported textiles ; RM 500,000`
-
-**Reasoning:** Export of manufactured goods. Exempt from Sales Tax. SST-02 Part A7.
-
-**Example 5 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | AUSTRALIAN BUYER | +500,000 | +500,000 | 0 | Exempt | A7 | N | — |
-
-### Example 6 — Bank charges, excluded
-
-**Input line:** `30.04.2026 ; MAYBANK ; DEBIT ; Service charge ; RM -30`
-
-**Example 6 transaction table**
-
-| Date | Counterparty | Gross | Net | Tax | Rate | SST-02 field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 30.04.2026 | MAYBANK | -30 | — | — | — | — | N | "Exempt financial service" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Sales Tax — manufacturers only
-
-- **Sales Tax manufacturers only** — Only registered manufacturers of taxable goods are liable. Retailers/wholesalers do NOT charge Sales Tax. 10% standard, 5% specific goods.
-
-### 5.2 Service Tax — prescribed services only
-
-- **Service Tax prescribed services only** — Only services in First Schedule of Service Tax Regulations 2018. 8% standard (from 1 March 2024). 6% retained for F&B, telecoms, parking, logistics.
-
-### 5.3 NO INPUT TAX CREDIT
-
-- **No input tax credit** — SST is single-stage. No offset mechanism. Manufacturers use Schedule A/B/C exemptions on raw materials (applied at purchase, not as credit).
-
-### 5.4 Imported services — self-account (Section 26)
-
-- **Imported services self-account** — All persons in Malaysia receiving prescribed taxable services from non-resident: self-account at 8% (or 6% retained rate) via SST-02A. Pay within 30 days. This is a COST.  _(Section 26)_
-
-### 5.5 Exports — exempt
-
-- **Exports exempt** — Manufactured goods exported: exempt from Sales Tax. Report in SST-02 Part A7.
-
-### 5.6 Registration thresholds
-
-- **Sales Tax registration threshold** — RM 500,000 MYR (manufacturer turnover)
-- **Service Tax registration threshold — general** — RM 500,000 MYR
-- **Service Tax registration threshold — F&B** — RM 1,500,000 MYR
-
-### 5.7 E-invoicing
-
-- **E-invoicing phases** — Phase 1 (Aug 2024): > RM 100M. Phase 2 (Jan 2025): > RM 25M. Phase 3 (Jul 2025): all. IRBM MyInvois system.
-
-### 5.8 Credit notes
-
-- **Credit notes treatment** — Excess SST from returned goods/reduced consideration: deduct from next SST-02 Part C4. Within 6 years.
-
-### 5.9 Bad debt relief
-
-- **Bad debt relief** — SST portion of debt outstanding > 6 months and written off: claim via Part C3. If recovered, repay.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Manufacturing vs service boundary
-
-- **Manufacturing vs service boundary** — Pattern: subcontractor processing. Default: flag. Question: "Is the activity manufacturing (Sales Tax) or a service (Service Tax)?"
-
-### 6.2 Mixed supply (goods + services)
-
-- **Mixed supply** — Default: flag. Question: "Can goods and services be separately invoiced?"
-
-### 6.3 SaaS billing entities
-
-- **SaaS billing entities** — Default: self-account 8%. Question: "Check invoice entity — Malaysian or foreign?"
-
-### 6.4 Schedule A/B exemption status
-
-- **Schedule A/B exemption status** — Default: no exemption. Question: "Do you have RMCD approval for Schedule A/B input exemption?"
-
-### 6.5 Service scope expansion (July 2025)
-
-- **Service scope expansion** — Default: check if newly prescribed. Question: "Confirm service type against expanded First Schedule."
-
-### 6.6 E-invoicing compliance
-
-- **E-invoicing compliance** — Default: required. Question: "What is annual turnover? Which phase applies?"
-
-## Section 7 — Excel working paper template
-
-Per vat-workflow-base Section 3, with Malaysia fields: Part A (Sales Tax 10%, 5%, specific, exempt), Part B (Service Tax 8%, 6%), Part C (totals, adjustments, net payable).
-
-## Section 8 — Bank statement reading guide
-
-Maybank, CIMB, Public Bank exports CSV/PDF with DD/MM/YYYY. MYR primary. Internal transfers between Maybank/CIMB/Public Bank: exclude. EPF/SOCSO/EIS deductions: exclude (payroll). Grab/Shopee settlements: separate platform fee from underlying revenue.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Registration type — "Are you registered for Sales Tax, Service Tax, or both?"
-
-### 9.2 SST registration numbers — "Provide Sales Tax and/or Service Tax registration numbers."
-
-### 9.3 Manufacturer status — "Are you a manufacturer of taxable goods?"
-
-### 9.4 Prescribed services — "Which services do you provide from the First Schedule?"
-
-### 9.5 Schedule A/B approval — "Do you hold RMCD exemption approvals?"
-
-### 9.6 Filing period — Bimonthly. "Which period?"
-
-### 9.7 E-invoicing phase — "What is your annual turnover?"
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Sales Tax Act 2018 (Act 806). 2. Service Tax Act 2018 (Act 807). 3. Sales Tax Regulations 2018. 4. Service Tax Regulations 2018 (and 2025 amendment). 5. RMCD MySST portal. 6. IRBM e-Invoice Guidelines v4.1.
-
-### Known gaps
-
-1. Free Zone/LMW refused. 2. Petroleum specific rates refused. 3. Supplier library covers major banks and utilities only. 4. Service scope expansion (July 2025) partially mapped.
-
-### Change log
-
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure. Critical "no input credit" distinction emphasized throughout.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
-
-The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| Read for the service tax rates (8%, 6% services, RM25 card), threshold methods, SST-02 due date, late payment penalty steps, records and bad debts | https://mysst.customs.gov.my/faq-services-tax/ | 2026-11-14 |
+| Read for the July 2025 expansion: rental 8% and RM500,000, construction 6% and RM1,500,000, healthcare 6% and RM1,500,000, financial services RM500,000, beauty 8% and RM500,000 | https://mysst.customs.gov.my/faq-expansion-of-service-tax-scope-2025/ | 2026-11-14 |
+| Read for the sales tax rates of 5%, 10% and specific rates from 1 July 2025 and the RM500,000 manufacturer threshold | https://mysst.customs.gov.my/faq-transition-of-sales-tax-rate-changes-2025/ | 2026-11-14 |
+| Read for the Service Tax (Rate of Tax) (Amendment) Order 2024, P.U. (A) 64/2024: 8% from 1 March 2024 with 6% kept for F&B, telecoms, parking and logistics | https://mysst.customs.gov.my/wp-content/uploads/2025/03/PERINTAH-CUKAI-PERKHIDMATAN-KADAR-CUKAI-PINDAAN-2024.pdf | 2026-11-14 |
+| Read for the Service Tax (Amendment) Regulations 2025, P.U. (A) 172/2025: thresholds in the First Schedule items | https://mysst.customs.gov.my/wp-content/uploads/2025/07/Peraturan-Peraturan-CP-Pindaan-2025.pdf | 2026-11-14 |
+| Read for the Sales Tax (Rate of Sales Tax) (Amendment) Order 2025, P.U. (A) 199/2025, in force 1 July 2025 | https://mysst.customs.gov.my/wp-content/uploads/2025/07/2-PUA-199.2025.pdf | 2026-11-14 |
+| Read for imported taxable services: registered persons declare in SST-02, others on SST-02A | https://mysst.customs.gov.my/wp-content/uploads/2025/02/Information-about-Imported-Taxable-Services.pdf | 2026-11-14 |
+| Read for the list of 2026 orders, regulations and policies issued by RMCD | https://mysst.customs.gov.my/announcements/ | 2026-11-14 |
+
+Not yet confirmed: whether a Budget 2026 change altered the rental or leasing threshold after the July 2025 FAQ (the 2026 orders listed on MySST, such as the Service Tax (Rate of Tax) (Amendment) Order 2026 of 17 March 2026, were not opened); the general RM500,000 service tax threshold and the RM1,500,000 F&B threshold in the old file (in the Service Tax Regulations First Schedule, not checked item by item); the SST-02 box labels (A1 to C5 in the old file) against the current SST-02 guideline; the 30-day payment period for imported services in the old file; the 6-year limit for credit note adjustments in the old file.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malaysia-sst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malaysia-sst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malaysia-sst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malaysia-sst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

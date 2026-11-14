@@ -1,17 +1,18 @@
 ---
 name: am-transfer-pricing
 description: "Prepare Armenia transfer-pricing workpapers for 2026: identify related persons, controlled cross-border and specified domestic transactions, separate the annual regulation and notification thresholds, select a supported pricing method, calculate a range and reconcile adjustments. Covers local/master documentation, the statutory country-reporting trigger, notification form structure, deadlines and sanctions. Includes two reproducible examples and preserved supplementary research controls for aggregation, CUP, cost-plus, resale, net margin, financing and missing documentation. Use for Armenian related-party pricing, permanent-establishment allocations, market margins and controlled-transaction notices. Supplies the actual local/master documentation and country-report forms, contents, reporting-entity notice, currencies, languages and delivery clocks. Specialist transactions, large-group statutory/order scope mismatches, remedies, actual portal acceptance and independent accountant review remain separate boundaries. Checked against the law."
-version: 0.2
+version: 0.3
+type: situation-rules
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
 ---
 
-# Armenia transfer-pricing preparation v0.2
+# Armenia transfer-pricing preparation v0.3
 
 ## Who this applies to
 
@@ -27,11 +28,11 @@ Article 363 distinguishes related resident/nonresident transactions; specified *
 
 | Item | Statutory amount/test | Period and source |
 |---|---|---|
-| Participation limb | At least 20%; practical control can apply independently | 2026, [362][code] |
-| Chapter 73 annual application | All controlled transactions exceed AMD 200 million, excluding VAT, excise and environmental tax | 2026, [363(6)][code] |
-| Annual notification | Exceeds AMD 200 million on its separate population, excluding Article 363(4) PE/head-office transactions | 2026, [375(1)][code] |
-| Liberal-tax definition | Stated 10%-or-lower profit-tax rate or exemption, including qualifying person-specific regimes | 2026, [361(1)(5)][code] |
-| Statutory country-report trigger | Parent organisation's prior-year gross revenue **exceeds** EUR 750 million | 2026 text, [376(1.1)(3)][code] |
+| Participation limb | At least 20%; practical control can apply independently | 2026, [362][code], https://www.arlis.am/hy/acts/215611/latest |
+| Chapter 73 annual application | All controlled transactions exceed AMD 200 million, excluding VAT, excise and environmental tax | 2026, [363(6)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Annual notification | Exceeds AMD 200 million on its separate population, excluding Article 363(4) PE/head-office transactions | 2026, [375(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Liberal-tax definition | Stated 10%-or-lower profit-tax rate or exemption, including qualifying person-specific regimes | 2026, [361(1)(5)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Statutory country-report trigger | Parent organisation's prior-year gross revenue **exceeds** EUR 750 million | 2026 text, [376(1.1)(3)][code], https://www.arlis.am/hy/acts/215611/latest |
 
 The 200-million test is strict: equality does not exceed it. The general application and notification populations differ; do not remove PE/head-office transactions from both merely because Article 375 excludes them from notification. Loan principal/interest valuation, foreign-exchange dates, repeated balances and unusual transactions require classification under the Code and current instructions before aggregation. No blanket netting of sales against purchases. A proposal for a higher threshold or later deadline is not operative law verified here. [Articles 16, 363, 375][code]; [notification instructions][notice]
 

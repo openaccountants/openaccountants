@@ -1,14 +1,15 @@
 ---
 name: ie-foreign-tax-and-withholding
 description: "Use this skill for Irish double tax relief and withholding on cross-border payments in tax year 2026. It covers the foreign tax credit under Schedule 24 TCA 1997 (credit limited to the Irish tax on the same income, the effective-rate cap and regrossing for individuals, the corporation tax cap for companies, unilateral relief for companies, and pooling of surplus credit on dividends, branch profits, interest and royalties), how treaties take effect (section 826), how a non-resident company is taxed on Irish income (section 25 and section 1034), Irish withholding on dividends (25%), interest and patent royalties (20%) and the domestic exemptions, and a treaty rate table for 12 partners. Trigger on: foreign tax credit Ireland, Schedule 24, double taxation relief, treaty rate, DWT exemption, interest withholding, non-resident company Ireland. Out of scope: ie-cross-border (residence, SARP, exit tax), ie-non-dom, ie-corporation-tax, ie-income-tax-form11, ie-transfer-pricing."
-version: 0.2
+version: 0.3
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
 # Ireland: foreign tax credit, treaty withholding rates and non-resident companies (2026)
@@ -257,37 +258,37 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Revenue, Notes for Guidance TCA 1997, Schedules (Schedule 24, Schedule 24A), Finance Act 2025 edition | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf | 2026-10-23 |
+| Revenue, Notes for Guidance TCA 1997, Schedules (Schedule 24, Schedule 24A), Finance Act 2025 edition. Read for the foreign tax credit rules in Schedules 24 and 24A. | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Part 35 (sections 826 to 829), Finance Act 2025 edition | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part35.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Part 2 (sections 15, 25, 25A) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part02.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Part 6 (sections 172A, 172B, 172D) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part06.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Part 8 (sections 238, 239, 242A, 246) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part08.pdf | 2026-10-23 |
 | Revenue, Notes for Guidance TCA 1997, Part 45 (sections 1032 to 1040) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part45.pdf | 2026-10-23 |
-| Taxes Consolidation Act 1997 | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-10-23 |
-| Revenue, double taxation relief (unilateral relief) | https://www.revenue.ie/en/tax-professionals/tax-agreements/double-taxation-treaties/relief.aspx | 2026-10-23 |
+| Taxes Consolidation Act 1997. Read for the text of the sections cited in this skill. | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-10-23 |
+| Revenue, double taxation relief (unilateral relief). Read for unilateral relief where no treaty applies. | https://www.revenue.ie/en/tax-professionals/tax-agreements/double-taxation-treaties/relief.aspx | 2026-10-23 |
 | TDM Part 35-02-06, foreign branch double taxation relief (last reviewed May 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35/35-02-06.pdf | 2026-10-23 |
 | TDM Part 35-01-05, certification of tax residence | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35/35-01-05.pdf | 2026-10-23 |
 | TDM Part 08-03-06, interest and royalties without deduction of tax (last reviewed May 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf | 2026-10-23 |
-| Revenue, tax rates, bands and reliefs | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-23 |
-| Revenue, guidelines for charging interest on late payment | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-10-23 |
-| Ireland-UK convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/u/synthesised-text-mli-ireland-uk-dtc.pdf | 2026-10-23 |
-| Ireland-US convention 1997 | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/u/usa-1997.pdf | 2026-10-23 |
-| Ireland-Germany convention 2011 and 2021 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-2011.pdf | 2026-10-23 |
-| Ireland-Germany 2021 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-protocol-2021.pdf | 2026-10-23 |
-| Revenue, dates of effect of Ireland's tax treaties | https://www.revenue.ie/en/tax-professionals/tax-agreements/dates-of-effect/index.aspx | 2026-10-23 |
-| S.I. No. 508 of 2021, Double Taxation Relief (Federal Republic of Germany) Order 2021 | https://www.irishstatutebook.ie/eli/2021/si/508/made/en/print | 2026-10-23 |
-| Finance Act 2026 (No. 24 of 2026) | https://www.irishstatutebook.ie/eli/2026/act/24/enacted/en/html | 2026-10-23 |
-| Finance (No. 2) Bill 2026, as initiated | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-23 |
-| Ireland-France convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/f/synthesised-text-mli-ireland-france-dtc.pdf | 2026-10-23 |
-| Ireland-Netherlands convention 2019 | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/n/netherlands-2.pdf | 2026-10-23 |
-| Netherlands treaty database, Ireland convention 2019 (entry into force) | https://verdragenbank.overheid.nl/en/Treaty/Details/012626 | 2026-10-23 |
-| Ireland-Luxembourg convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/l/synthesised-text-mli-ireland-luxembourg-dtc.pdf | 2026-10-23 |
-| Ireland-Spain convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/synthesised-text-mli-ireland-spain-dtc.pdf | 2026-10-23 |
-| Ireland-Italy convention | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/italy.pdf | 2026-10-23 |
-| Ireland-Switzerland convention | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland.pdf | 2026-10-23 |
-| Ireland-Switzerland 2012 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland-protocol-2.pdf | 2026-10-23 |
-| Ireland-Japan convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/j/synthesised-text-of-the-mli-and-the-ireland-japan-double-taxation-convention.pdf | 2026-10-23 |
-| Ireland-China agreement | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/c/china.pdf | 2026-10-23 |
-| Ireland-India convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/synthesised-text-mli-ireland-india-dtc.pdf | 2026-10-23 |
+| Revenue, tax rates, bands and reliefs. Read for the 2026 income tax rates and bands. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-23 |
+| Revenue, guidelines for charging interest on late payment. Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-10-23 |
+| Ireland-UK convention, synthesised text with MLI. Read for the dividend, interest and royalty articles of the UK treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/u/synthesised-text-mli-ireland-uk-dtc.pdf | 2026-10-23 |
+| Ireland-US convention 1997. Read for the dividend, interest and royalty articles of the US treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/u/usa-1997.pdf | 2026-10-23 |
+| Ireland-Germany convention 2011 and 2021 Protocol. Read for the withholding articles of the German treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-2011.pdf | 2026-10-23 |
+| Ireland-Germany 2021 Protocol. Read for the changes made by the 2021 German protocol. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-protocol-2021.pdf | 2026-10-23 |
+| Revenue, dates of effect of Ireland's tax treaties. Read for the date each treaty takes effect. | https://www.revenue.ie/en/tax-professionals/tax-agreements/dates-of-effect/index.aspx | 2026-10-23 |
+| S.I. No. 508 of 2021, Double Taxation Relief (Federal Republic of Germany) Order 2021. Read for the commencement of the 2021 German protocol. | https://www.irishstatutebook.ie/eli/2021/si/508/made/en/print | 2026-10-23 |
+| Finance Act 2026 (No. 24 of 2026). Read for changes to withholding and foreign tax credit rules. | https://www.irishstatutebook.ie/eli/2026/act/24/enacted/en/html | 2026-10-23 |
+| Finance (No. 2) Bill 2026, as initiated. Read for proposed changes not yet enacted. | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-23 |
+| Ireland-France convention, synthesised text with MLI. Read for the withholding articles of the French treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/f/synthesised-text-mli-ireland-france-dtc.pdf | 2026-10-23 |
+| Ireland-Netherlands convention 2019. Read for the withholding articles of the Dutch treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/n/netherlands-2.pdf | 2026-10-23 |
+| Netherlands treaty database, Ireland convention 2019 (entry into force). Read for the entry into force date of the Dutch treaty. | https://verdragenbank.overheid.nl/en/Treaty/Details/012626 | 2026-10-23 |
+| Ireland-Luxembourg convention, synthesised text with MLI. Read for the withholding articles of the Luxembourg treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/l/synthesised-text-mli-ireland-luxembourg-dtc.pdf | 2026-10-23 |
+| Ireland-Spain convention, synthesised text with MLI. Read for the withholding articles of the Spanish treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/synthesised-text-mli-ireland-spain-dtc.pdf | 2026-10-23 |
+| Ireland-Italy convention. Read for the withholding articles of the Italian treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/italy.pdf | 2026-10-23 |
+| Ireland-Switzerland convention. Read for the withholding articles of the Swiss treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland.pdf | 2026-10-23 |
+| Ireland-Switzerland 2012 Protocol. Read for the changes made by the 2012 Swiss protocol. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland-protocol-2.pdf | 2026-10-23 |
+| Ireland-Japan convention, synthesised text with MLI. Read for the withholding articles of the Japanese treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/j/synthesised-text-of-the-mli-and-the-ireland-japan-double-taxation-convention.pdf | 2026-10-23 |
+| Ireland-China agreement. Read for the withholding articles of the Chinese treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/c/china.pdf | 2026-10-23 |
+| Ireland-India convention, synthesised text with MLI. Read for the withholding articles of the Indian treaty. | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/synthesised-text-mli-ireland-india-dtc.pdf | 2026-10-23 |
 
 Not yet confirmed: how an individual's foreign tax on income from a country with no treaty is relieved (Revenue's unilateral relief list covers companies and CGT only, and Notes for Guidance say Revenue extends a practice to individuals without stating its terms); the Irish treaty rates for Irish-source dividends to France, Italy, Luxembourg and Japan, where the treaty names only "Irish sur-tax" and relief comes from section 172D; whether Finance (No. 2) Bill 2026 is enacted as initiated.

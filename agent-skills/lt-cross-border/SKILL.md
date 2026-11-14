@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lt-cross-border"
   jurisdiction: "LT"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Lithuania: cross-border tax for people and companies (2026)
@@ -46,25 +46,24 @@ VMI's commentary lists what counts for test 2: where most of the person's proper
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Corporate income tax, Lithuanian entities and PEs | 17% (16% in 2025) | 2026 | [PMĮ art. 5(1)(1)](https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr), amended by Law XV-285 |
-| Dividends paid to a foreign entity | 17% at source, paid by the 15th of the month after payment | 2026 | PMĮ art. 34(1) |
-| Dividend exemption for a foreign parent | 0% if it holds at least 10% of the voting shares for 12 months without a break, including the distribution date, and is not in a target territory | 2026 | PMĮ art. 34(2) |
-| Interest paid to a foreign entity registered in the EEA or a treaty state | 0% | 2026 | PMĮ art. 5(1)(2) |
-| Interest paid to any other foreign entity | 10% of the gross amount | 2026 | PMĮ art. 5(1)(2) |
-| Interest not taxed at source in any case | Government securities, deposit interest, qualifying subordinated loans | 2026 | PMĮ art. 4(4)(1) |
-| Royalties and compensation for breach of copyright, paid to a foreign entity | 10% of the gross amount | 2026 | PMĮ art. 5(1)(2), 4(4)(3) and (5) |
-| Royalties to an associated EU company | 0% if a 25% direct holding (either way, or a common EU parent) has run without a break for at least 2 years up to the payment and the recipient is the beneficial owner | 2026 | PMĮ art. 37-1(1) to (3) |
-| Lithuanian real estate income (sale or rent), performers' and sports income, supervisory board payments, paid to a foreign entity | 17% of the gross amount | 2026 | PMĮ art. 5(1)(2), 4(4)(4), (6), (7) |
-| Foreign dividends received by a Lithuanian entity | Exempt from an EEA entity taxed on its profits; exempt from another taxed entity outside target territories after a 10% holding for 12 months; otherwise 17% | 2026 | PMĮ art. 35(1) to (3) |
-| Profits of a Lithuanian entity's PE in the EEA or a treaty state | Not taxed in Lithuania if taxed there | 2026 | PMĮ art. 4(1) |
-| Exit tax on assets moved abroad | Market value less tax cost, taxed at 17%; the gain can be spread in equal parts over 5 years for moves within the EEA | 2026 | PMĮ art. 40-2(2) and (4) |
+| Dividends paid to a foreign entity | 17% at source, paid by the 15th of the month after payment | 2026 | PMĮ art. 34(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Dividend exemption for a foreign parent | 0% if it holds at least 10% of the voting shares for 12 months without a break, including the distribution date, and is not in a target territory | 2026 | PMĮ art. 34(2); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Interest paid to a foreign entity registered in the EEA or a treaty state | 0% | 2026 | PMĮ art. 5(1)(2); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Interest paid to any other foreign entity | 10% of the gross amount | 2026 | PMĮ art. 5(1)(2); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Interest not taxed at source in any case | Government securities, deposit interest, qualifying subordinated loans | 2026 | PMĮ art. 4(4)(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Royalties and compensation for breach of copyright, paid to a foreign entity | 10% of the gross amount | 2026 | PMĮ art. 5(1)(2), 4(4)(3) and (5); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Royalties to an associated EU company | 0% if a 25% direct holding (either way, or a common EU parent) has run without a break for at least 2 years up to the payment and the recipient is the beneficial owner | 2026 | PMĮ art. 37-1(1) to (3); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Lithuanian real estate income (sale or rent), performers' and sports income, supervisory board payments, paid to a foreign entity | 17% of the gross amount | 2026 | PMĮ art. 5(1)(2), 4(4)(4), (6), (7); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Foreign dividends received by a Lithuanian entity | Exempt from an EEA entity taxed on its profits; exempt from another taxed entity outside target territories after a 10% holding for 12 months; otherwise 17% | 2026 | PMĮ art. 35(1) to (3); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Profits of a Lithuanian entity's PE in the EEA or a treaty state | Not taxed in Lithuania if taxed there | 2026 | PMĮ art. 4(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Exit tax on assets moved abroad | Market value less tax cost, taxed at 17%; the gain can be spread in equal parts over 5 years for moves within the EEA | 2026 | PMĮ art. 40-2(2) and (4); https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
 | Personal income tax on annual income up to 36 average wages (EUR 83,237.40) | 20% | 2026 | [GPMĮ art. 6(1)](https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+(aktuali+redakcija+2026-10-13)+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1791918859615); figures from the VMI commentary |
-| Personal income tax, 36 to 60 average wages (EUR 83,237.40 to 138,729) | 25% | 2026 | GPMĮ art. 6(1) |
-| Personal income tax above 60 average wages (EUR 138,729) | 32% | 2026 | GPMĮ art. 6(1) |
-| Non-employment income up to 12 average wages (EUR 27,745.80) | 15% | 2026 | GPMĮ art. 6(2) |
-| Dividends received by an individual | 15% | 2026 | GPMĮ art. 6(6)(1) |
+| Personal income tax, 36 to 60 average wages (EUR 83,237.40 to 138,729) | 25% | 2026 | GPMĮ art. 6(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr; https://www.vmi.lt/evmi/documents/20142/391071/Mokes%C4%8Di%C5%B3+%C4%AFstatymo+pakeitimai+nuo+2026-01-01.pdf/ |
+| Personal income tax above 60 average wages (EUR 138,729) | 32% | 2026 | GPMĮ art. 6(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr; https://www.vmi.lt/evmi/documents/20142/391071/Mokes%C4%8Di%C5%B3+%C4%AFstatymo+pakeitimai+nuo+2026-01-01.pdf/ |
+| Non-employment income up to 12 average wages (EUR 27,745.80) | 15% | 2026 | GPMĮ art. 6(2); https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr; https://www.vmi.lt/evmi/documents/20142/391071/Mokes%C4%8Di%C5%B3+%C4%AFstatymo+pakeitimai+nuo+2026-01-01.pdf/ |
+| Dividends received by an individual | 15% | 2026 | GPMĮ art. 6(6)(1); https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr |
 | Interest, royalties and Lithuanian real estate sale income paid to a non-resident individual (withheld by the payer) | 15% on the first EUR 27,745.80 of the payment; 20% on the part up to EUR 83,237.40; 25% up to EUR 138,729; 32% above. The bands apply to that one payment alone | 2026 | [GPMĮ](https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr) art. 6(1), (2) and (11), 23(7) |
-| Residence day counts | 183 days in the year; or 280 days over two years with 90 in one | 2026 | GPMĮ art. 4(1)(3), (4) |
-| Treaties no longer applied | Russia and Belarus, from 1 January 2026 | 2026 | VMI GPMĮ commentary, art. 37 |
+| Residence day counts | 183 days in the year; or 280 days over two years with 90 in one | 2026 | GPMĮ art. 4(1)(3), (4); https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr |
 | Late payment interest (delspinigiai) | 0.027% a day from 1 August 2026 | 2026 | [VMI, late payment interest](https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.-) |
 | Fine on tax found short in an audit (including a lower rate applied without grounds) | 20% to 100% of the shortfall | 2026 | [Law on Tax Administration](https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr) art. 139(1) |
 
@@ -233,21 +232,22 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| PMĮ (Law No. IX-675 on Corporate Income Tax), consolidated version 2026-05-19 to 2026-12-31, arts. 2, 4, 5, 34, 35, 37, 37-1, 40-2, 52, 53, 55, and its list of amendments (Law XV-488 changes arts. 12 and 30 only, from 2027-01-01); Register of Legal Acts (e-tar) | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-23 |
+| PMĮ (Law No. IX-675 on Corporate Income Tax), consolidated version 2026-05-19 to 2026-12-31, arts. 2, 4, 5, 34, 35, 37, 37-1, 40-2, 52, 53, 55, and its list of amendments (Law XV-488 changes arts. 12 and 30 only, from 2027-01-01); Register of Legal Acts (e-tar) | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-11-14 |
 | VMI, commentary on the PMĮ (link labelled 2026-09-28; the file served is titled current as of 2026-10-23), arts. 2, 4, 5, 34, 37-1, 40-2, 52, 53, 55 | https://www.vmi.lt/evmi/documents/20142/751579/Pelno+mokes%C4%8Dio+komentaras+(aktualus+2026-09-28).pdf/c9688bd6-8557-df3a-c0a3-e4032cfff2b6?t=1790570493065 | 2026-10-24 |
 | VMI, tax on income paid to a foreign entity (PMĮ arts. 37, 53(2), 54) | https://www.vmi.lt/evmi/pelno-mokestis-nuo-pajam%C5%B3-sum%C5%B3-i%C5%A1mok%C4%97t%C5%B3-u%C5%BEsienio-vienetui-37-str.-53-str.-2-d.-54-str.- | 2026-10-23 |
-| GPMĮ (Law No. IX-1007 on Personal Income Tax), consolidated version 2026-06-11 to 2026-12-31, arts. 4, 6, 22, 23, 24, 27, 29, 30, 31, 32, 37; Register of Legal Acts (e-tar) | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-10-24 |
+| GPMĮ (Law No. IX-1007 on Personal Income Tax), consolidated version 2026-06-11 to 2026-12-31, arts. 4, 6, 22, 23, 24, 27, 29, 30, 31, 32, 37; Register of Legal Acts (e-tar) | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-11-14 |
 | Law on Tax Administration (No. IX-2112), consolidated version from 2026-07-01, art. 139; Register of Legal Acts (e-tar) | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
 | VMI, commentary on the GPMĮ (Law No. IX-1007 on Personal Income Tax), 2026-10-19 edition, arts. 4, 6, 22, 37 | https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+(aktuali+redakcija+2026-10-13)+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1791918859615 | 2026-10-23 |
 | VMI, GPMĮ in English (unofficial translation), version 2026-01-01 to 2026-12-31, arts. 6, 23, 24, 27, 29, 30, 31, 32, 37 | https://www.vmi.lt/evmi/documents/20142/390999/GPM%C4%AE+angl%C5%B3+kalba+2026-01-01-2026-12-31.pdf/648a3aaa-6e7f-27d8-7aec-73f091a2a12f?t=1770030676856 | 2026-10-23 |
+| Read for the 2026 euro bands (36 VDU EUR 83,237.40; 60 VDU EUR 138,729; 12 VDU EUR 27,745.80; one VDU EUR 2,312.15): VMI, Mokesčių įstatymo pakeitimai nuo 2026-01-01 | https://www.vmi.lt/evmi/documents/20142/391071/Mokes%C4%8Di%C5%B3+%C4%AFstatymo+pakeitimai+nuo+2026-01-01.pdf/ | 2026-11-14 |
 | VMI, personal income tax page (links to the law, translation and commentary) | https://www.vmi.lt/evmi/gyventoju-pajamu-mokestis | 2026-10-23 |
 | VMI, late payment interest, fines and relief (Law on Tax Administration arts. 88, 96 to 100, 138 to 143), KM2633 and KM0584 | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-23 |
 | Seimas register, PMĮ (direct page; behind a human check on 2026-10-23, not read) | https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.157066/asr | 2026-10-23: not read |
 
-Not yet confirmed: whether DAS-1 forms go to VMI with the annual financial statements and CIT return or only on request (VMI's PMĮ commentary says the first under article 52 and the second under article 34; VMI order No. 159 was not read); the rate and interest charged when the small-company 0% rate is lost under PMĮ article 5(2); the current list of target territories (Minister of Finance order No. 344) and VMI's own treaty list page (the PMĮ commentary's treaty lists still name Russia and Belarus; the GPMĮ commentary of 2026-10-19 marks both as no longer applied from 2026-01-01); the CFC rules (PMĮ article 39), which this skill does not cover.
+Not yet confirmed: whether DAS-1 forms go to VMI with the annual financial statements and CIT return or only on request (VMI's PMĮ commentary says the first under article 52 and the second under article 34; VMI order No. 159 was not read); the rate and interest charged when the small-company 0% rate is lost under PMĮ article 5(2); the current list of target territories (Minister of Finance order No. 344) and VMI's own treaty list page (the PMĮ commentary's treaty lists still name Russia and Belarus; the GPMĮ commentary of 2026-10-19 marks both as no longer applied from 2026-01-01); the CFC rules (PMĮ article 39), which this skill does not cover. Also not confirmed today: that Lithuania no longer applies its tax treaties with Russia and Belarus from 1 January 2026 (the VMI commentary link now opens the VMI home page; the row was taken out of the rates table).
 
 > Contributed by Michael Cutajar.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

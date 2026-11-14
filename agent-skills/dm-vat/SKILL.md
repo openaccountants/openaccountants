@@ -1,41 +1,146 @@
 ---
 name: dm-vat
-description: "Dominica VAT registration, rates and return preparation reference checked for 2026. Covers the standard and accommodation or diving rates, the annual registration threshold, the three-month forward-looking registration test, monthly filing and payment, and illustrative output-tax arithmetic. Use for Dominica VAT, EC$250,000 registration, tax-inclusive pricing or nil returns. It flags inconsistent official wording at the exact annual threshold and cites the 2016 regulation changing threshold amounts. This draft does not determine every exemption, input deduction, special-sector registration rule, import liability or place-of-supply question, and does not assert comprehensive VAT coverage."
+description: "Commonwealth of Dominica VAT for 2026. Covers the 15% standard rate and the 10% rate for accommodation and diving activity, registration at EC$250,000 of annual taxable supplies, the three-month test (over EC$62,500 in three months with the next nine months taking the total past EC$250,000, apply within 21 calendar days) under SRO 49 of 2016, the return within 20 calendar days after each period, payment by the 20th, the 10% late payment penalty, and the tax fraction. Trigger phrases include Dominica VAT, Dominica VAT registration, Dominica VAT return, 15% VAT Dominica."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/dm-vat"
   jurisdiction: "DM"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Dominica VAT
 
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
 ## Scope
 
-Source-cited draft checked 22 October 2026. Separate registration, supply classification and deduction eligibility before calculating a return. The annual threshold's exact boundary is unresolved in this draft because official guidance uses inconsistent wording.
+Value Added Tax in the Commonwealth of Dominica for 2026, under the VAT Act and the VAT Regulations (SRO 9 of 2006) as amended by SRO 49 of 2016, as published by the Inland Revenue Division (IRD). Covers rates, registration, returns and payment, and output tax arithmetic. Amounts are EC$. It does not settle every exemption, input deduction rule, import liability or place-of-supply question.
 
-## Registration
+## Ask the client first
 
-IRD's [2018 registration guide, Part I](https://ird.gov.dm/phocadownload/guides/VAT%20-%20Registration%20Guide%202018.pdf) describes annual standard-rated, accommodation and zero-rated supplies of EC$250,000 **or more**. Its [FAQ](https://ird.gov.dm/f-a-q) instead says **in excess of** EC$250,000. Do not advise a taxpayer exactly at the boundary that registration is unnecessary; resolve the operative Act wording and amendments first. Do not wait until year-end to monitor turnover.
+1. Taxable supplies (standard-rated, accommodation and zero-rated) for the last 12 months and the last 3 months, and a supportable forecast for the next 9 months.
+2. What is supplied: ordinary goods and services, accommodation or diving activity, zero-rated or exempt supplies?
+3. Is the business a promoter of public entertainment or an auctioneer (special rules)?
+4. Are prices quoted including VAT?
+5. Tax period, output VAT and supported input VAT for the period.
 
-A separate test applies where taxable supplies exceed EC$62,500 in three months and reasonable grounds indicate supplies for those months plus the next nine will exceed EC$250,000. Apply within 21 calendar days after that three-month period. These figures follow regulation 6(4) of [SRO 9 of 2006](https://www.dominica.gov.dm/laws/2006/sro9-2006.pdf), amended by regulation 3 of [SRO 49 of 2016](https://www.dominica.gov.dm/laws/2016/Value%20Added%20Tax%20%28Amendment%29%20Regulations%2C%202016%2C%20SRO%2049%20of%202016.pdf), effective 1 September 2016.
+## The method, step by step
 
-Example: taxable supplies of EC$70,000 over three months and a supportable EC$200,000 forecast for the next nine meet both parts: 70,000 > 62,500 and 270,000 > 250,000. Keep forecast evidence, not merely an annualized sales guess.
+### Rates, bands and thresholds
 
-Special registration rules, including public entertainment and auctioneers, require separate checking; the ordinary turnover test is not universal.
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Standard rate | 15% of the value of every taxable supply | [IRD value added tax](https://ird.gov.dm/tax-laws/value-added-tax) |
+| Accommodation and diving activity | 10% | same |
+| Return | Within 20 calendar days after the end of each tax period, whether or not tax is payable | same |
+| Payment | By the 20th of the following month; an extension to file does not extend payment | same |
+| Late payment penalty | 10% | same |
+| Annual registration test | Standard-rated, accommodation and zero-rated supplies of EC$250,000 or more (registration guide); the FAQ says "in excess of" | [IRD VAT registration guide 2018](https://ird.gov.dm/phocadownload/guides/VAT%20-%20Registration%20Guide%202018.pdf) |
+| Three-month test, reg.6(4) as amended | Taxable supplies over EC$62,500 in 3 months and reasonable grounds that those 3 months plus the next 9 will exceed EC$250,000; from 1 September 2016 | [SRO 49 of 2016](https://www.dominica.gov.dm/laws/2016/Value%20Added%20Tax%20%28Amendment%29%20Regulations%2C%202016%2C%20SRO%2049%20of%202016.pdf) |
+| Applying under the three-month test | Within 21 calendar days after the end of that 3-month period | [SRO 9 of 2006](https://www.dominica.gov.dm/laws/2006/sro9-2006.pdf) |
+| Public entertainment without approval | Fine EC$10,000 or two years' imprisonment or both, plus 15% of the value of tickets printed | [IRD value added tax](https://ird.gov.dm/tax-laws/value-added-tax) |
 
-## Rates and return
+### Steps
 
-IRD states a standard 15% rate and 10% for qualifying accommodation and diving activity. Registered persons file for each period even with no tax due, within 20 calendar days after period-end; monthly payment is due by the 20th. A filing extension does not extend payment. [IRD VAT guidance](https://ird.gov.dm/tax-laws/value-added-tax).
+1. **Monitor turnover** monthly against both tests; do not wait for the year end.
+2. **Register** when either test is met; apply within 21 calendar days for the three-month test.
+3. **Classify** each supply: 15%, 10% (qualifying accommodation or diving only, not a whole mixed package), zero-rated or exempt.
+4. **Output tax:** net value x rate; on an inclusive price, price x 15/115 (or 10/110).
+5. **Input tax:** only on supported invoices for taxable business use; do not treat all purchase VAT as recoverable.
+6. **Return** within 20 calendar days, nil returns included; **pay** by the 20th.
 
-For an established standard-rated supply worth EC$10,000 before VAT, output tax is EC$1,500 and the total EC$11,500. Conversely, EC$11,500 including 15% VAT contains EC$1,500 tax: 11,500 × 15/115. A qualifying EC$10,000 accommodation supply before VAT yields EC$1,000 tax. These are arithmetic examples, not eligibility determinations.
+## Boundary and exception table
 
-## Controls and exclusions
+| Situation | Treatment | Source |
+|---|---|---|
+| Annual supplies exactly EC$250,000 | Guide says "or more", FAQ says "in excess of"; treat as registrable until the Act wording is checked | [IRD registration guide](https://ird.gov.dm/phocadownload/guides/VAT%20-%20Registration%20Guide%202018.pdf); [IRD FAQ](https://ird.gov.dm/f-a-q) |
+| Filing extension granted | Payment date unchanged | [IRD value added tax](https://ird.gov.dm/tax-laws/value-added-tax) |
+| Hotel package with meals and tours | The 10% rate is for accommodation and diving activity only; split the package | same |
+| Public entertainment promoter or auctioneer | Special registration rules; check separately | same |
+| Imports, reverse charge, refunds, deregistration, apportionment | Not covered; refer | not covered |
 
-Classify standard-rated, reduced-rate, zero-rated and exempt supplies separately. Reconcile sales to output tax and retain support for every claimed deduction. Do not treat all purchase tax as recoverable or extend an accommodation rate to an entire mixed package. Input apportionment, blocked deductions, imports, reverse charge, refunds, deregistration and sector exemptions require further sourced work. Independent legal/source review remains pending; this is not a complete filing instruction.
+## Worked cases
+
+### Case 1: output tax both ways and the reduced rate
+
+A standard-rated supply of EC$10,000 before VAT: VAT 1,500, total 11,500. The tax inside 11,500 inclusive is 11,500 x 15/115 = 1,500. A qualifying accommodation supply of 10,000: VAT 1,000. If the 1,500 is paid late, the late payment penalty is 150.
+
+```oa-check
+name: Dominica VAT 15% and 10% on 10,000, and the tax fraction
+inputs:
+  net: 10000
+steps:
+  - standard_vat: net * 0.15
+  - gross: net + standard_vat
+  - fraction_vat: gross * 0.15 / 1.15
+  - accommodation_vat: net * 0.10
+  - late_penalty: standard_vat * 0.10
+expected:
+  standard_vat: 1500
+  gross: 11500
+  fraction_vat: 1500
+  accommodation_vat: 1000
+  late_penalty: 150
+```
+
+### Case 2 (decision): must a new business register now?
+
+A business had taxable supplies of EC$70,000 in its first three months and a supportable forecast of 200,000 for the next nine. Both parts of the three-month test are met: 70,000 is 7,500 over 62,500, and 270,000 is 20,000 over 250,000. It must apply within 21 calendar days after the three months end. With a forecast of 170,000 instead, the 12-month total is 240,000, under 250,000, and the test is not met yet; keep monitoring.
+
+```oa-check
+name: Dominica three-month VAT registration test
+inputs:
+  three_months: 70000
+  next_nine: 200000
+  low_nine: 170000
+steps:
+  - over_quarter: three_months - 62500
+  - twelve_months: three_months + next_nine
+  - over_year: twelve_months - 250000
+  - low_twelve: three_months + low_nine
+  - low_margin: low_twelve - 250000
+expected:
+  over_quarter: 7500
+  twelve_months: 270000
+  over_year: 20000
+  low_twelve: 240000
+  low_margin: -10000
+```
+
+## When to refuse or refer
+
+- The exact annual threshold boundary: resolve from the VAT Act before advising a business at exactly EC$250,000.
+- Exemptions, zero-rating, blocked inputs, apportionment, imports, refunds and deregistration.
+- Interest on late payment and late filing penalties: not on the IRD pages read.
+
+## Filing and payment
+
+1. Apply for registration on the IRD form (see the 2018 registration guide).
+2. File the return for each tax period within 20 calendar days after it ends, even if nil.
+3. Pay by the 20th of the following month to avoid the 10% late payment penalty ([IRD value added tax](https://ird.gov.dm/tax-laws/value-added-tax)).
+4. Reconcile sales to output tax and keep support for every input claim.
+
+## Completion checklist
+
+- Both registration tests checked monthly.
+- Each supply at 15%, 10%, zero or exempt; packages split.
+- Return within 20 days; paid by the 20th.
+- Inputs supported.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| IRD value added tax page: read for the 15% and 10% rates, the 20-day return, payment by the 20th, extensions, the 10% late payment penalty and the public entertainment rule | https://ird.gov.dm/tax-laws/value-added-tax | 2026-11-14 |
+| IRD VAT registration guide 2018, Part I: read for the EC$250,000 or more annual test and the three-month test | https://ird.gov.dm/phocadownload/guides/VAT%20-%20Registration%20Guide%202018.pdf | 2026-11-14 |
+| IRD FAQ: read for "in excess of $250,000" | https://ird.gov.dm/f-a-q | 2026-11-14 |
+| SRO 9 of 2006, VAT Regulations: read for regulation 6(4), applying within 21 calendar days after the 3-month period | https://www.dominica.gov.dm/laws/2006/sro9-2006.pdf | 2026-11-14 |
+| SRO 49 of 2016, VAT (Amendment) Regulations: read for regulation 3 substituting EC$62,500 and EC$250,000 in regulation 6, in force 1 September 2016 | https://www.dominica.gov.dm/laws/2016/Value%20Added%20Tax%20%28Amendment%29%20Regulations%2C%202016%2C%20SRO%2049%20of%202016.pdf | 2026-11-14 |
+
+Not yet confirmed: the VAT Act wording at exactly EC$250,000; interest and late filing penalties; any 2026 rate change (none shown on the IRD VAT page); special registration rules for auctioneers.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dm-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dm-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dm-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dm-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
