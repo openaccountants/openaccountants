@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2361,
+ "count": 2382,
  "publication_holds": [
   {
    "name": "bd-corporate-income-tax",
@@ -17,6 +17,14 @@
   {
    "name": "bd-social-contributions",
    "reason": "status: needs_sources"
+  },
+  {
+   "name": "bq-double-tax-relief",
+   "reason": "required companion unavailable: cross-border-workflow-base"
+  },
+  {
+   "name": "bq-inheritance-gifts",
+   "reason": "required companion unavailable: bq-double-tax-relief"
   },
   {
    "name": "cameroon-social-contributions",
@@ -230,6 +238,7 @@
   "BM",
   "BN",
   "BO",
+  "BQ",
   "BR",
   "BS",
   "BT",
@@ -3123,6 +3132,195 @@
    "name": "bosnia-vat",
    "jurisdiction": "BA",
    "path": "skills/bosnia/bosnia-vat.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-abb",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-abb.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-bonaire-ground-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-bonaire-ground-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-corporate-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-clearance",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-clearance.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-debt-remedies",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-debt-remedies.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-valuation",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-valuation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-excise",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-excise.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-financial-statements",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-financial-statements.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-formation",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-formation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-gambling-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-gambling-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-income-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-payroll",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-penalties-corrections",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-penalties-corrections.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-personal-import-relief",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-personal-import-relief.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-property-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-property-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-social-contributions",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-social-contributions.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-statia-tourist-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-statia-tourist-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-tax-compliance",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-tax-compliance.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-tax-system",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-tax-system.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-transfer-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-transfer-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-warehouses-hde",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-warehouses-hde.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
