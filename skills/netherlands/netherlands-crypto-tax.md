@@ -41,14 +41,14 @@ Collect the following before producing a filing-ready result:
 
 | Item | 2026 | 2025 return | Condition | Source |
 |---|---:|---:|---|---|
-| Deemed return, bank balances | 1.28% (provisional) | 1.37% (final) | 2026 figure is the provisional-assessment percentage; the final 2026 bank percentage is set after the year | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
-| Deemed return, investments and other assets (crypto is here) | 6.00% | 5.88% | Wet IB 2001 art. 5.2(2); crypto counts as "beleggingen en andere bezittingen", not as a bank balance | https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Deemed return, bank balances | 1.28% (provisional) | 1.37% (final) | 2026 figure is the provisional-assessment percentage; the final 2026 bank percentage is set after the year | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 ; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 |
+| Deemed return, investments and other assets (crypto is here) | 6.00% | 5.88% | Wet IB 2001 art. 5.2(2); crypto counts as "beleggingen en andere bezittingen", not as a bank balance | https://wetten.overheid.nl/BWBR0011353/2026-01-01 ; https://wetten.overheid.nl/BWBR0011353/2025-01-01 |
 | 2025 other-assets percentage | | 5.88% | Wet IB 2001 art. 5.2(2), version in force in 2025 | https://wetten.overheid.nl/BWBR0011353/2025-07-01 |
 | Deemed return, debts | 2.70% (provisional) | 2.70% (final) | Wet IB 2001 art. 5.2(2) as amended by Stcrt. 2026, 3708, retroactive to 1 January 2025 | https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
 | 2025 final bank and debt percentages | | 1.37% and 2.70% | Belastingdienst table of final percentages per year | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/ |
-| Tax-free assets (heffingvrij vermogen), individual | EUR 59,357 | EUR 57,684 | Wet IB 2001 art. 5.5 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Tax-free assets (heffingvrij vermogen), individual | EUR 59,357 | EUR 57,684 | Wet IB 2001 art. 5.5 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 ; https://wetten.overheid.nl/BWBR0011353/2025-01-01 |
 | 2025 tax-free assets | | EUR 57,684 | Wet IB 2001 art. 5.5, 2025 version | https://wetten.overheid.nl/BWBR0011353/2025-07-01 |
-| Tax-free assets, fiscal partners together | EUR 118,714 | EUR 115,368 | Whole-year partners (or the whole-year election); art. 5.2(5) adds both allowances | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
+| Tax-free assets, fiscal partners together (partner amounts computed: twice the individual amount) | EUR 118,714 | EUR 115,368 | Whole-year partners (or the whole-year election); art. 5.2(5) adds both allowances | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 ; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 |
 | Debt threshold, individual | EUR 3,800 | EUR 3,800 | Wet IB 2001 art. 5.3(3); only debts above the threshold count | https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Debt threshold, fiscal partners together | EUR 7,600 | EUR 7,600 | Whole-year partners; art. 5.3(3) | same |
 | Box 3 tax rate | 36% | 36% | Wet IB 2001 art. 2.13 | same |

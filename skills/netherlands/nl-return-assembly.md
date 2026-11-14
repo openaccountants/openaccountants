@@ -50,13 +50,13 @@ The figures the assembly checks its inputs against. The calculations themselves 
 | Box 1 second band | 37.48% to EUR 76,817 | 37.56% to EUR 78,426 | Same | same |
 | Box 1 top band | 49.50% | 49.50% | Above the second band | same |
 | General tax credit, maximum, 2025 | EUR 3,068 | | Reduced by 6.337% of aggregate income above EUR 28,406; EUR 1,536 at AOW age all year | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/heffingskortingen |
-| Box 3 tax-free assets per person | EUR 57,684 | EUR 59,357 | Fiscal partners together EUR 115,368 (2025) and EUR 118,714 (2026); `netherlands-crypto-tax` and `nl-income-tax` hold the method | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 |
+| Box 3 tax-free assets per person (partner amounts computed: twice the individual amount) | EUR 57,684 | EUR 59,357 | Fiscal partners together EUR 115,368 (2025) and EUR 118,714 (2026); `netherlands-crypto-tax` and `nl-income-tax` hold the method | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 ; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
 | 2026 Box 3 tax-free assets | | EUR 59,357 | Same | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026 |
 | Box 3 tax rate | 36% | 36% | On the calculated return, not on the assets | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2025 |
-| Zvw income-related contribution (by assessment) | 5.26% | 4.85% | Self-employed profit and other income without employer levy | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
-| Zvw maximum contribution income | EUR 75,864 | EUR 79,409 | Cap shared with income already under employer levy | same |
+| Zvw income-related contribution (by assessment) | 5.26% | 4.85% | Self-employed profit and other income without employer levy | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/inkomensafhankelijke_bijdrage_zorgverzekeringswet ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
+| Zvw maximum contribution income | EUR 75,864 | EUR 79,409 | Cap shared with income already under employer levy | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/inkomensafhankelijke_bijdrage_zorgverzekeringswet ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
 | 2026 Zvw rate and cap | | 4.85% and EUR 79,409 | Same | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
-| Zvw employer levy (for reference, not the self-employed charge) | 6.51% | 6.10% | Paid by the employer on wages | same |
+| Zvw employer levy (for reference, not the self-employed charge) | 6.51% | 6.10% | Paid by the employer on wages | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/inkomensafhankelijke_bijdrage_zorgverzekeringswet ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet |
 | New FOR additions | none from 2023 | none | Existing reserves stay and are released under their own rules | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/fiscale_reserves/oudedagsreserve |
 
 ## The method, step by step
