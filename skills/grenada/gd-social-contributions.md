@@ -3,7 +3,7 @@ name: gd-social-contributions
 description: >
   Grenada National Insurance Scheme (NIS) contributions for 2026. Covers the 13.5%
   combined rate for 2026 under the reform timetable (rising 0.25% a side each year to
-  16% in 2031), the employer and employee split, the EC$5,200 monthly and EC$1,200
+  16% in 2031), the 2024 employer and employee split (the 2026 split is not yet confirmed), the EC$5,200 monthly and EC$1,200
   weekly insurable earnings ceilings, insurable earnings, payment at month end with the
   14-day grace, the 10% surcharge and 1% a month interest, and the self-employed rules
   (13.5%, 1% employment injury over 65, EC$907 to EC$8,424 a year). Trigger phrases
@@ -58,14 +58,14 @@ National Insurance Scheme (NIS) contributions in Grenada for 2026, as published 
 1. **Register** each employee (birth certificate, picture ID, supporting documents).
 2. **Insurable earnings:** all earnings including overtime, cost of living bonus, dependant payments, long service supplements, commission, employer-paid gratuities, night or shift pay, service charges, liabilities paid by the employer, holiday pay and danger money.
 3. **Cap** at EC$5,200 a month or EC$1,200 a week; use the weekly rule for weekly pay, not four weeks a month.
-4. **Contributions:** employee 6.25% and employer 7.25% of capped earnings. This 2026 split is derived: the archived 2024 split (employer 6.75%, employee 5.75%) plus the two yearly steps of 0.25% a side for 2025 and 2026 in the [NIS 2023 adjustments](https://nisgrenada.org/2023-adjustments/) table, which gives the 13.5% total.
+4. **Contributions:** 13.5% combined of capped earnings for 2026 ([NIS 2023 adjustments](https://nisgrenada.org/2023-adjustments/)). How the 13.5% splits between employer and employee in 2026 is not on a current NIS page read: confirm it with NIS before deducting the employee share (see Not yet confirmed).
 5. **Remit** through the NIS web portal (my.nisgrenada.org) by month end, listing each employee's earnings (weekly amounts for weekly workers) and contributions.
 
 ## Boundary and exception table
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Archived contributors page shows 6.75% and 5.75% (12.5%) | 2024 rates; use 7.25% and 6.25% for 2026 | [NIS 2023 adjustments](https://nisgrenada.org/2023-adjustments/) |
+| Archived contributors page shows 6.75% and 5.75% (12.5%) | 2024 split only; the 2026 split is not yet confirmed (see Not yet confirmed) | [NIS contributors page, archived 23 January 2025](https://web.archive.org/web/20250123161437/https://www.nisgrenada.org/contributors/) |
 | Paid within the 14-day grace | Penalty and interest still apply; pay by month end | [NIS contributors, archived](https://web.archive.org/web/20250123161437/https://www.nisgrenada.org/contributors/) |
 | Self-employed person also employed elsewhere | May still make self-employed payments, up to EC$8,424 a year in total | [NIS home page](https://nisgrenada.org/) |
 | Self-employed in 2026 wanting benefits in 2027 | Must contribute in 2026 | same |
@@ -75,25 +75,21 @@ National Insurance Scheme (NIS) contributions in Grenada for 2026, as published 
 
 ### Case 1: employee at and above the ceiling
 
-At EC$4,000 a month: employee 250, employer 290, total 540. At EC$6,000 the base is capped at 5,200: employee 325, employer 377, total 702.
+At EC$4,000 a month the combined 13.5% is 540. At EC$6,000 the base is capped at 5,200 and the combined contribution is 702. The split between employee and employer waits for the 2026 split (see Not yet confirmed).
 
 ```oa-check
-name: Grenada NIS 2026, 4,000 and 6,000 a month
+name: Grenada NIS 2026 combined, 4,000 and 6,000 a month
 inputs:
   pay_low: 4000
   pay_high: 6000
   ceiling: 5200
 steps:
-  - low_employee: min(pay_low, ceiling) * 0.0625
-  - low_employer: min(pay_low, ceiling) * 0.0725
-  - high_employee: min(pay_high, ceiling) * 0.0625
-  - high_employer: min(pay_high, ceiling) * 0.0725
-  - high_total: high_employee + high_employer
+  - low_total: min(pay_low, ceiling) * 0.135
+  - high_base: min(pay_high, ceiling)
+  - high_total: high_base * 0.135
 expected:
-  low_employee: 250
-  low_employer: 290
-  high_employee: 325
-  high_employer: 377
+  low_total: 540
+  high_base: 5200
   high_total: 702
 ```
 
@@ -132,7 +128,7 @@ expected:
 ## Completion checklist
 
 - All earnings components in; ceiling applied by pay period.
-- 6.25% and 7.25% applied for 2026.
+- 13.5% combined applied for 2026; the employee and employer shares confirmed with NIS.
 - Remitted by month end.
 
 ## Sources
@@ -143,4 +139,4 @@ expected:
 | NIS home page: read for the self-employed 13.5% rate, the 1% over 65, the EC$5,200 monthly maximum, the 1 July 2023 rules (EC$907 to EC$8,424), the voluntary contributor ages and the online portal | https://nisgrenada.org/ | 2026-11-14 |
 | NIS contributors page (web.archive.org copy of 23 January 2025; the live page did not load): read for the 2024 split (6.75% employer, 5.75% employee), the EC$5,200 and EC$1,200 maxima, insurable earnings, the month-end due date, the 14-day grace, the 10% surcharge and 1% interest | https://web.archive.org/web/20250123161437/https://www.nisgrenada.org/contributors/ | 2026-11-14 |
 
-Not yet confirmed: the 2026 employer and employee split on a current NIS page (derived from the 2024 archived split plus the published yearly steps); the weekly ceiling for 2026 (only the January 2025 copy shows it); the National Insurance Act and regulations (not opened); rules for multiple employers.
+Not yet confirmed: the 2026 employer and employee split (no current NIS page read shows it; the archived 2024 split of 6.75% employer and 5.75% employee plus the published 0.25% a side yearly steps would give 7.25% and 6.25%, but that is a derivation from a 2024 archive, not a published 2026 figure); the weekly ceiling for 2026 (only the January 2025 copy shows it); the National Insurance Act and regulations (not opened); rules for multiple employers.
