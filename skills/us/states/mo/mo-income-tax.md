@@ -37,7 +37,7 @@ USD, 2026; same schedule for each taxpayer. On a married combined Missouri retur
 | Over 8,088-9,436 | 202 + 4.5% of excess over 8,088 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Over 9,436 | 263 + 4.7% of excess over 9,436 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Individual estimate trigger | Expected Missouri tax after credits/withholding **100 or more** | [2026 MO-1040ES, item 1](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
-| Missouri-source business income subtraction | 20% of qualifying positive combined business income, no duplicate subtraction | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
+| Missouri-source business income subtraction | 20% of qualifying positive combined business income, no duplicate subtraction (in words on the page in 143.022) | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
 | State HOH / qualifying widow(er) additional exemption | 1,400; same filing status as federal return | [2026 estimate line 5](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Federal-income-tax deduction cap | 5,000 other returns; 10,000 married combined, after income-based percentage (in words on the page) | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
 
