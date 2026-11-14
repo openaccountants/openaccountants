@@ -20,7 +20,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. Tax year 2026 here means the New Zealand 2026-27 income year, 1 April 2026 to 31 March 2027, which IRD calls the 2027 income year. The return being filed now is the 2026 IR4 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle); IRD's IR4 page lists the 2026 return and guide and no 2027 return yet ([IR4 page](https://www.ird.govt.nz/ir4), read 2026-11-14). The box mapping below is therefore the 2026 form. Use it for a 2026-27 return only after checking the 2027 IR4 when IRD publishes it.
+Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026.
+
+Tax year 2026 here means the New Zealand 2026-27 income year, 1 April 2026 to 31 March 2027, which IRD calls the 2027 income year. The return being filed now is the 2026 IR4 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle); IRD's IR4 page lists the 2026 return and guide and no 2027 return yet ([IR4 page](https://www.ird.govt.nz/ir4), read 2026-11-14). The box mapping below is therefore the 2026 form. Use it for a 2026-27 return only after checking the 2027 IR4 when IRD publishes it.
 
 ## Scope
 

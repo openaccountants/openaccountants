@@ -1,18 +1,13 @@
 ---
 name: nz-employer-payroll
 description: >
-  Use this guide for ordinary New Zealand employer payroll paid from 1 April
-  2026 to 31 March 2027. Covers ordinary and selected extra-pay PAYE and
-  student-loan calculations, tailored certificates, recovery notices, child support
-  and selected court-attachment calculations, tax-arrears notices,
-  the ACC earners' levy, payday filing, selected correction/penalty rules, payment
-  schedules and tax records. KiwiSaver, ESCT and employee share schemes are in the
-  companion skill nz-employer-payroll-kiwisaver-esct-ess. Trigger on NZ payroll,
-  PAYE, payday filing, tax codes, student loan deductions and employer
-  deductions. Distinguishes the electronic filing threshold from the large
-  employer payment threshold. Requires actual pay dates, employee declarations
-  and notices. Unresolved special payments, cross-border employment, leave entitlements
-  and employer ACC invoice calculations require separate checks.
+  New Zealand employer payroll paid 1 April 2026 to 31 March 2027: PAYE and
+  extra pays, student loan, tailored certificates, recovery, child support,
+  court-attachment and tax-arrears notices, ACC earners' levy, payday filing,
+  corrections, penalties, payment and records. KiwiSaver, ESCT and ESS are in
+  nz-employer-payroll-kiwisaver-esct-ess. Trigger on NZ payroll, PAYE, payday
+  filing, tax codes, student loan or employer deductions. Needs actual pay dates,
+  declarations and notices; cross-border work, leave and ACC invoices are referred.
 jurisdiction: NZ
 category: payroll
 tax_year: 2026
@@ -44,8 +39,7 @@ Obtain the following before calculating:
 - Employer registration, actual payday, pay frequency and period covered. [Register as an employer as soon as you start employing staff][S3].
 - Employee classification, completed IR330 tax-code declaration and any Inland Revenue tax-code, tailored-rate, student-loan, child-support or arrears notice. Resolve conflicting instructions before using a rate.
 - Gross pay and each payment's character. Determine PAYE income and KiwiSaver gross salary or wages separately; allowances, reimbursements and special payments need their own treatment.
-- KiwiSaver membership and eligibility, valid deduction-rate instruction, employer contribution agreement (including whether it promises a gross or net-of-ESCT amount) and any valid opt-out, savings-suspension or temporary-rate-reduction notice.
-- For ESCT, employment start date, whether the employee worked for this employer throughout the preceding tax year and the relevant salary/wages plus gross employer superannuation contributions.
+- KiwiSaver membership, rates and ESCT facts: ask the questions in `nz-employer-payroll-kiwisaver-esct-ess` (Ask the client first).
 - Annual PAYE and ESCT figures, any connected employers and the established filing and payment schedules. The $50,000 electronic filing test and $500,000 remittance test serve different purposes.
 
 An unknown classification, contribution base or notice is an input gap. Do not invent a resident tax code, a pension exemption or a flat PAYE percentage. Ordinary salary rules do not establish the treatment of contractors, non-residents, offshore employers, IR56 workers, benefits or paid parental leave. The selected extra-pay methods below require an established payment classification; they do not determine employment-law entitlements.

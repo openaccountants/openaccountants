@@ -22,7 +22,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026. Tax year 2026 here means the 2026-27 imputation and income year, 1 April 2026 to 31 March 2027 (IRD's 2027 income year). The annual imputation return being filed now is IR4J 2026 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle). IRD's imputation page lists the April 2026 IR4J and no 2027 form, and says to use the IR4 company return where an IR4J is needed ([IRD annual imputation return][IRD-annual], read 2026-11-14). The worked examples stay on 2025-26.
+Written by Ryan Duguid; conformed to the OpenAccountants skill standard on 14 November 2026.
+
+Tax year 2026 here means the 2026-27 imputation and income year, 1 April 2026 to 31 March 2027 (IRD's 2027 income year). The annual imputation return being filed now is IR4J 2026 for 1 April 2025 to 31 March 2026 (the 2025-2026 filing cycle). IRD's imputation page lists the April 2026 IR4J and no 2027 form, and says to use the IR4 company return where an IR4J is needed ([IRD annual imputation return][IRD-annual], read 2026-11-14). The worked examples stay on 2025-26.
 
 ## Scope
 
