@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/st-company-formation"
   jurisdiction: "ST"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Sao Tome and Principe Company Formation v0.2
+# Sao Tome and Principe Company Formation v0.3
 
 > **Sourced from the law, in part.** Tax year 2026. The Finance Ministry site refused access on 1 November 2026, so the tax codes themselves were not read. Rows marked unverified carry older figures that no official page has confirmed. No accountant has signed this version and it has had no independent review yet.
 
@@ -24,8 +24,6 @@ Founders choosing an entity in STP. Older points, unverified: Lda (quotas, liabi
 |---|---|---|---|
 | Lda minimum capital | Dbs. 150,000,000 in the text of 2009; old dobras, before the later re-denomination. Current-dobra value unverified | 2009, no later change seen | [Law 17/2009](https://dgrn.gov.st/leis/Lei/Altera_Lei_Socieades_quotas.pdf) |
 | Minimum members | Capital equals the sum of partners' quotas, except in single-member companies, so single-member companies exist. Older two-member point: unverified | 2026 | [Law 17/2009](https://dgrn.gov.st/leis/Lei/Altera_Lei_Socieades_quotas.pdf) |
-| EUR equivalent | unverified: older source said about EUR 6,000. The 2009 gazette set a buying rate of 24,500 dobras per euro | 2026 | [same gazette](https://dgrn.gov.st/leis/Lei/Altera_Lei_Socieades_quotas.pdf) |
-| Timeline | unverified: older World Bank source, several days to weeks | 2026 | unverified |
 
 ## The base
 
@@ -87,8 +85,8 @@ expected:
 
 The Assembly of Sao Tome and Principe publishes its Diario on www2.camara.leg.br, hosted by the Brazilian Chamber of Deputies. The Ministry of Finance site (financas.gov.st) answered 403 by fetch and in a browser tab on 2026-11-01 and was not read.
 
-Not yet confirmed: Commercial code text; capital in current dobras; registry fees; one-stop steps; timeline; SA capital.
+Not yet confirmed: Commercial code text; capital in current dobras; registry fees; one-stop steps; timeline; SA capital; rows moved out of the rates table on 2026-11-14: EUR equivalent of the capital (older source about EUR 6,000; the 2009 gazette set 24,500 dobras per euro) and timeline (older World Bank source, several days to weeks).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `st-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/st-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `st-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/st-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

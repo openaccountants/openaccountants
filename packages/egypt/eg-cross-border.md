@@ -1,16 +1,17 @@
 ---
 name: eg-cross-border
 description: "Egypt cross-border income tax for tax year 2026 under Income Tax Law 91 of 2005 as amended by Law 30 of 2023 and Law 151 of 2026, and Unified Tax Procedures Law 206 of 2020. Covers residence of individuals (permanent home, more than 183 days, Egyptians paid abroad from an Egyptian treasury) and legal persons (Egyptian incorporation, main or actual management in Egypt, more than 50% state ownership), Egyptian-source income (art. 3), the permanent establishment definition and its 90-day tests (arts. 4 and 4 bis), the 20% withholding on interest, royalties, services and sport or artist fees paid to non-residents (art. 56) and its exemptions, the 10% or 5% dividend tax and the deemed distribution of branch profits (art. 56 bis), capital gains of non-residents on Egyptian shares after Law 151 of 2026, the foreign tax credit (art. 54), treaty refunds and residence certificates. Trigger on: Egypt non-resident tax, Egypt withholding non-resident, Egypt permanent establishment, Egypt branch profits, Egypt tax residence, Egypt foreign tax credit, Egypt double tax treaty refund, ضريبة غير المقيمين, المنشأة الدائمة. Out of scope: treaty rates, VAT on imported services, transfer pricing."
-version: 0.1
+version: 0.2
 jurisdiction: EG
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Egypt cross-border: residence, source, permanent establishment, non-resident withholding and foreign tax credit v0.1
+# Egypt cross-border: residence, source, permanent establishment, non-resident withholding and foreign tax credit v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

@@ -1,16 +1,17 @@
 ---
 name: ma-auto-entrepreneur
 description: Use this skill whenever asked about Morocco's auto-entrepreneur regime for tax year 2026, the turnover-based income tax option for individuals running a small commercial, industrial, artisanal or service activity. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers the MAD 500,000 and 200,000 ceilings, the 0.5% and 1% liberatory rates, the droit complémentaire bands, the 30% client withholding above MAD 80,000 from one client, excluded professions, monthly or quarterly declarations, penalties and exit after two years over a ceiling. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and morocco-professional-income-tax for alternatives.
-version: 1.1
+version: 1.2
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Morocco: auto-entrepreneur regime, tax year 2026
