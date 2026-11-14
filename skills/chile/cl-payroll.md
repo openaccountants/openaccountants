@@ -1,10 +1,10 @@
 ---
 name: cl-payroll
 description: "Chile employer payroll for tax year 2026: the monthly contributions an employer withholds from a dependent employee and pays itself, and the Impuesto Único de Segunda Categoría (IUSC) withheld from wages. Covers the AFP pension contribution of 10% plus the AFP commission (DL 3.500 arts. 16 to 19), the 7% health contribution to Fonasa or an Isapre (art. 84), the taxable ceiling of 90 UF for 2026 and 135.2 UF for unemployment insurance (Superintendencia de Pensiones), seguro de cesantía under Ley 19.728 (0.6% employee, 2.4% or 3% employer, the 11-year rule), the new employer pension contribution of Ley 21.735 (1% from August 2025, 3.5% from August 2026, SIS included from August 2026), the SIS rate of 1.78%, work-accident insurance under Ley 16.744 (0.90% plus the risk rate) and the 0.03% SANNA contribution, the IUSC base and monthly table, Previred and F29 deadlines, DJ 1887 and penalties. Trigger on: liquidación de sueldo, cotizaciones previsionales empleador, Previred, tope imponible 2026, AFP comisión, seguro de cesantía, cotización empleador reforma previsional, SIS, Chile payroll. Out of scope: self-employed cotizaciones (cl-social-contributions) and the annual IGC (cl-income-tax)."
-version: 1.0
+version: 1.1
 jurisdiction: CL
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: payroll
 type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,7 +12,7 @@ tier: 2
 domain: payroll
 ---
 
-# Chile: employer payroll and wage withholding (2026) v1.0
+# Chile: employer payroll and wage withholding (2026) v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -44,7 +44,6 @@ Linked skills, not repeated here:
 | AFP pension contribution | 10% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 (DL 3.500 art. 17) |
 | AFP commission (cotización adicional), by AFP | Capital 1.44%; Cuprum 1.44%; Habitat 1.27%; Modelo 0.58%; PlanVital 1.16%; Provida 1.45%; Uno 0.46% | worker | 2026 | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9897.html (DL 3.500 arts. 17, 29) |
 | Disability and survivors insurance (SIS), from August 2026 | 1.78% of taxable pay, women and men; part of the employer's 3.5% below | employer | Aug-Dec 2026 | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9917.html |
-| SIS, January to July 2026 | unverified: the SP pages read show only the rate from August 2026. Paid by the employer on top of the 1% below (DL 3.500 art. 17; Ley 21.735 art. 8 transitorio) | employer | Jan-Jul 2026 | unverified |
 | Health contribution (Fonasa, or the Isapre plan with this as the minimum) | 7% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 (DL 3.500 art. 84) |
 | Employer pension contribution, Ley 21.735, 1 August 2025 to 31 July 2026 | 1.0% (0.1% to the worker's AFP account, 0.9% to the Fondo Autónomo de Protección Previsional) | employer | Jan-Jul 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1212060 (Ley 21.735 art. 4 transitorio a)) |
 | Employer pension contribution, Ley 21.735, from 1 August 2026 | 3.5% (0.1% AFP account, 0.9% Cotización con Rentabilidad Protegida, 2.5% Seguro Social Previsional, which includes the SIS and the life-expectancy compensation) | employer | Aug 2026-Jul 2027 | same, art. 4 transitorio b); https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-10906.html |
@@ -56,6 +55,8 @@ Linked skills, not repeated here:
 | Work-accident insurance, additional rate | By activity and risk, set by decree; up to 3.4% | employer | 2026 | same, art. 15 b) |
 | SANNA (insurance for parents of seriously ill children) | 0.03% | employer | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1113014 (Ley 21.063 art. 24 a)) |
 | IUSC, monthly table for October 2026 (used in the examples) | Exempt to CLP 974,038.50; 4% to 2,164,530 (deduct 38,961.54); 8% to 3,607,550 (125,542.74); 13.5% to 5,050,570 (323,957.99); 23% to 6,493,590 (803,762.14); 30.4% to 8,658,120 (1,284,287.80); 35% to 22,366,810 (1,682,561.32); 40% above (2,800,901.82) | worker (withheld) | Oct 2026 | https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm (LIR art. 43 No. 1) |
+
+For January to July 2026 pay, the SIS is paid by the employer on top of the 1% Ley 21.735 contribution (DL 3.500 art. 17; Ley 21.735 art. 8 transitorio). Its rate for those months is not confirmed: the SP pages read on 14 Nov 2026 give only the 1.78% from August 2026.
 
 The IUSC tables for the other months of 2026, and the UTM behind each, are in [cl-income-tax](cl-income-tax.md); use the table of the month the pay is earned.
 
