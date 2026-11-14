@@ -1,18 +1,22 @@
 ---
 name: pa-income-tax
-description: "Triggers when the taxpayer is a Pennsylvania resident sole proprietor or single-member LLC needing to file Pennsylvania Form PA-40. Covers Pennsylvania's flat 3.07% income tax on eight classes of income, the unique PA rules that disallow many federal deductions, net profits computation for self-employed, and interaction with local earned income taxes. Must be loaded alongside us-tax-workflow-base and us-federal-return-assembly."
+description: "Use this skill for the Pennsylvania personal income tax return, Form PA-40, for tax year 2026 (with 2025 returns filed in 2026). It covers residents, part-year residents and nonresidents, sole proprietors and single-member LLCs on PA Schedule C, the flat 3.07% rate on eight classes of income, no netting of losses between classes or spouses, Schedule O deductions, tax forgiveness (Schedule SP), the Working Pennsylvanians Tax Credit, the resident credit and reciprocal states, retirement income, PA depreciation and section 179 rules, estimated tax ($14,000 and $430 tests for 2026), extensions and penalties. Trigger on \"Pennsylvania income tax\", \"PA-40\", \"PA personal income tax\", \"PA Schedule C\", \"tax forgiveness\", \"PA estimated tax\". Local earned income tax is in pa-local-eit."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pa-income-tax"
   jurisdiction: "US-PA"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-13"
 ---
 
 # Pennsylvania personal income tax (Form PA-40), including sole proprietors
 
-## Scope and who this is for ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
+> **Built from the law, not yet approved by an accountant.** Review by a qualified professional before filing.
+
+**Quick reference.** Tax year 2026 (returns filed in 2027); 2025 returns were due 15 April 2026. Flat **3.07%** on Line 11 ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf)). Eight classes, no netting between classes or spouses, no carryover. Estimated tax for 2026 if at least $430 of tax ($14,000 of income not subject to withholding) is expected. Tax forgiveness, resident credit and the Working Pennsylvanians Tax Credit (10% of the federal EITC, at most $805) reduce the bill ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf)). Ask first: residency and days, each spouse's income by class, retirement plan type and age, other-state tax, federal EITC.
+
+## Scope and who this is for
 
 This skill covers the Pennsylvania personal income tax return for individuals, **Form PA-40**, for **tax year 2026** (returns filed in 2027), with a dated section for **2025 returns** (due 15 April 2026, or 15 October 2026 on a six-month extension). It is written for full-year Pennsylvania residents, including sole proprietors and owners of a single-member LLC that is disregarded for federal tax (they file PA Schedule C). Part-year residents and nonresidents use the same PA-40; the points where their rules differ are flagged.
 
@@ -57,36 +61,36 @@ Line numbers are from the 2025 PA-40 ([2025 PA-40 instructions](https://www.pa.g
 11. **Working Pennsylvanians Tax Credit (2025 returns).** Not a line on the 2025 PA-40. The department computes it from the federal earned income credit, so include a copy of federal Form 1040 (see below).
 12. **Finish.** Line 25 use tax (0 if none), Line 27 penalties and interest (with Form REV-1630 for estimated underpayment), then Line 26 or Line 28 tax due, or Line 29 overpayment.
 
-## Rates, thresholds and figures by year
+### Rates, bands and thresholds
 
-### Rate and filing threshold ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
+#### Rate and filing threshold ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
 
-| Item | 2025 | 2026 |
-| --- | --- | --- |
-| Tax rate | 3.07% flat | 3.07% flat ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf)) |
-| Must file if PA gross taxable income is | more than $33, or any loss from a transaction | 2026 instructions not yet published; the 2025 test is the reference |
-| Estimated tax: income not subject to PA withholding | $11,000 ($338 of tax) | $14,000 ($430 of tax) |
+| Item | 2025 | 2026 | Source |
+| --- | --- | --- | --- |
+| Tax rate | 3.07% flat | 3.07% flat | [2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf): "The state income tax rate for 2025 is 3.07 percent (0.0307)"; [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf): "Multiply Line 1 by 3.07 percent (0.0307)" |
+| Must file if PA gross taxable income is | more than $33, or any loss from a transaction | 2026 instructions not yet published; the 2025 test is the reference | [2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Estimated tax: income not subject to PA withholding | $11,000 ($338 of tax) | $14,000 ($430 of tax) | [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf) |
 
 The estimated tax income threshold is set to rise to $17,000 for 2027 and $20,000 for 2028 ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf)). It is **not** a filing threshold.
 
-### Tax forgiveness, Schedule SP (2025 tables) ([2025 PA-40 instructions, pages 36 to 39](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
+#### Tax forgiveness, Schedule SP (2025 tables) ([2025 PA-40 instructions, pages 36 to 39](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
 
 Who is eligible: the person is subject to PA tax, is **not** a dependent on another person's federal return, and meets the income test. Eligibility income is PA taxable income (Line 9) **plus** nontaxable income: tax-exempt interest and gains, alimony, insurance proceeds and inheritances, gifts and prizes, non-PA income of part-year residents and nonresidents, nontaxable military pay, excluded home-sale gain, nontaxable education grants, and cash support from outside the home. It does **not** include Social Security, retirement benefits from eligible plans after retiring, child support (except in a dependent child's own claim), workers' compensation, or sick and disability pay.
 
 Married claimants use joint eligibility income and Table 2 **even if filing separately**; a married person cannot claim forgiveness independently of their spouse. "Married" includes spouses who lived apart for less than the last six months of 2025, or apart without a written separation agreement.
 
-| Eligibility income not more than (2025) | 100% | 90% | 50% | 10% (last step) |
-| --- | --- | --- | --- | --- |
-| Table 1, unmarried, no dependent children | $6,500 | $6,750 | $7,750 | $8,750 |
-| Table 1, unmarried, 1 dependent child | $16,000 | $16,250 | $17,250 | $18,250 |
-| Table 1, unmarried, 2 dependent children | $25,500 | $25,750 | $26,750 | $27,750 |
-| Table 2, married, no dependent children | $13,000 | $13,250 | $14,250 | $15,250 |
-| Table 2, married, 1 dependent child | $22,500 | $22,750 | $23,750 | $24,750 |
-| Table 2, married, 2 dependent children | $32,000 | $32,250 | $33,250 | $34,250 |
+| Eligibility income not more than (2025) | 100% | 90% | 50% | 10% (last step) | Source |
+| --- | --- | --- | --- | --- | --- |
+| Table 1, unmarried, no dependent children | $6,500 | $6,750 | $7,750 | $8,750 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Table 1, unmarried, 1 dependent child | $16,000 | $16,250 | $17,250 | $18,250 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Table 1, unmarried, 2 dependent children | $25,500 | $25,750 | $26,750 | $27,750 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Table 2, married, no dependent children | $13,000 | $13,250 | $14,250 | $15,250 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Table 2, married, 1 dependent child | $22,500 | $22,750 | $23,750 | $24,750 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Table 2, married, 2 dependent children | $32,000 | $32,250 | $33,250 | $34,250 | [2025 PA-40 instructions, Schedule SP](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
 
 Each dependent child adds **$9,500** to every column. Each **$250** step above the 100% amount cuts forgiveness by 10 points, so there are ten columns from 100% down to 10%; above the last column there is no forgiveness. A dependent child must be the claimant's child, stepchild, grandchild or foster child **and** claimable as a dependent on the claimant's federal return; no other adult can be a dependent. Credit: Schedule SP Line 16 = (Line 12 tax less Line 22 resident credit) x the percentage. The 2026 Schedule SP had not been published at writing; confirm the 2026 table before filing a 2026 return.
 
-### Working Pennsylvanians Tax Credit ([PA Tax Update No. 240](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/news-and-statistics/taxupdate/documents/taxupdate_240.pdf); [DFO-02, What's new](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/dfo-02.pdf))
+#### Working Pennsylvanians Tax Credit ([PA Tax Update No. 240](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/news-and-statistics/taxupdate/documents/taxupdate_240.pdf); [DFO-02, What's new](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/dfo-02.pdf))
 
 Created in the 2025-26 state budget, signed in November 2025, and first claimed on **2025** PA-40s filed in 2026. "The state credit will be equal to 10% of the federal Earned Income Tax Credit (EITC)", and "The maximum state credit is $805."
 
@@ -95,20 +99,20 @@ Created in the 2025-26 state budget, signed in November 2025, and first claimed 
 - 2025 maximums by qualifying children (federal EITC maximum, then state maximum): zero, $649 and $65; one, $4,328 and $433; two, $7,152 and $715; three or more, $8,046 and $805.
 - Not confirmed from a department PDF at writing: how the credit applies to part-year residents and nonresidents, and where it goes on the 2026 PA-40. Check the 2026 PA-40 instructions, or ask the department, before relying on either.
 
-### Estimated tax (2026) ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf))
+#### Estimated tax (2026) ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf))
 
 Estimated payments are required if **both**: the individual "can reasonably expect to owe at least $430 ($14,000 of income not subject to employer withholding) in tax after subtracting withholding and credits"; **and** withholding and credits will be less than the smaller of 90% of the 2026 tax, or 100% of the 2025 PA-40 net taxable income (Line 11) x 3.07%. The prior-year method is available only if a full-year 2025 PA-40 was filed. For 2025 the figures were $338 and $11,000 ([2025 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_rev-413i.pdf)).
 
 Due dates for 2026: 15 April 2026, 15 June 2026, 15 September 2026 and 15 January 2027, **25%** each if the requirement is first met before 1 April 2026. If first met later, there are fewer, larger installments (for example 50%, 25%, 25% if first met from 1 April to 31 May 2026). A farmer (at least two-thirds of gross income from farming) may instead pay all by 15 January 2027, or file and pay in full by 1 March 2027. A PA resident working in a reciprocal state whose employer does not withhold PA tax must count those wages as income not subject to withholding, and must make estimated payments if the $14,000 income and $430 tax tests above are met.
 
-### Retirement income ([2025 PA-40 instructions, pages 8 and 11 to 14](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
+#### Retirement income ([2025 PA-40 instructions, pages 8 and 11 to 14](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
 
 - **Not taxable:** Social Security and Railroad Retirement; "Commonly recognized pension, old age, or retirement benefits paid after becoming eligible to retire, and retiring"; military pensions; distributions from SERS, PSERS, PMRS and the U.S. Civil Service Commission Retirement Disability Plan, whatever the Box 7 code.
 - **Employer plans:** a distribution is exempt only if the plan is an **eligible employer-sponsored plan** under PA rules **and** the person retired after meeting the plan's age or years-of-service conditions. Otherwise, the excess over the person's previously taxed contributions (cost recovery) is compensation on Line 1a. Ask the plan administrator whether the plan is eligible.
 - **IRAs (including Roth IRAs):** exempt if received on or after age **59½**, or paid to an estate or beneficiary on death. Before 59½, the amount over the person's contributions is taxable even if the person retired, and "PA law does not have any exceptions similar to the federal exceptions for withdrawal before age 591/2". Full rollovers within 60 days, or trustee to trustee, are not taxable.
 - **Contributions are not deductible:** employee contributions to an employer plan are PA-taxable compensation even when not federally taxable, and "PA law does not allow you to deduct your contributions to any IRA". A sole proprietor may not deduct their own pension or profit-sharing participation ([PA Schedule C instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40c.pdf)).
 
-### Resident credit for tax paid to other states ([PA Schedule G-L instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40_pa-41g-l.pdf))
+#### Resident credit for tax paid to other states ([PA Schedule G-L instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40_pa-41g-l.pdf))
 
 - Available to residents, and to part-year residents for the resident part of the year only. Nonresidents cannot claim it.
 - "State" means a US state, the District of Columbia, Puerto Rico, or a US territory or possession. "A resident credit may not be obtained for taxes paid to any foreign government or for any local tax subdivision within a state."
@@ -116,7 +120,7 @@ Due dates for 2026: 15 April 2026, 15 June 2026, 15 September 2026 and 15 Januar
 - One Schedule G-L per state, and separate schedules for each spouse even on a joint return. Include the other state's return.
 - **Reciprocal agreements** ([2025 PA-40 instructions, page 11](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf)): Indiana, Maryland, New Jersey, Ohio, Virginia and West Virginia. They cover employee compensation only, not "miscellaneous and non-employee compensation", and not compensation paid to Ohio resident shareholder-employees owning 20% or more of a PA S corporation. A PA resident working there claims a refund of that state's withholding from that state; no PA resident credit is allowed on that compensation unless the other state taxed the person as a resident ([DFO-02](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/dfo-02.pdf)).
 
-### Business income: Pennsylvania differences ([PA Schedule C instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40c.pdf))
+#### Business income: Pennsylvania differences ([PA Schedule C instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40c.pdf))
 
 | Item | Federal | Pennsylvania (PA Schedule C) |
 | --- | --- | --- |
@@ -134,18 +138,18 @@ Due dates for 2026: 15 April 2026, 15 June 2026, 15 September 2026 and 15 Januar
 
 Keep a separate PA basis and depreciation record for every asset where federal bonus depreciation or a different section 179 amount was used, and track any unused PA section 179 carryforward separately from the federal one.
 
-### Penalties and interest ([PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf))
+#### Penalties and interest ([PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf))
 
-| Penalty | Amount |
-| --- | --- |
-| Late filing | 5% of the unpaid tax for each month or fraction of a month late, maximum 25%, minimum $5, unless reasonable cause |
-| Underpayment (tax not paid in full with the return or extension) | 5% |
-| Unreported income more than 25% of the taxable income shown | Additional 25% of the tax due on the unreported income |
-| Fraud | 50% of the underpayment |
-| Frivolous return | $500 |
-| Dishonoured check or EFT | 10% of the payment, not more than $100 or less than $25 ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf)) |
-| Estimated underpayment | Form REV-1630, per installment |
-| Interest | From the due date to payment, at the federal rate set by the U.S. Secretary of the Treasury in effect on 1 January of each year |
+| Penalty | Amount | Source |
+| --- | --- | --- |
+| Late filing | 5% of the unpaid tax for each month or fraction of a month late, maximum 25%, minimum $5, unless reasonable cause | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Underpayment (tax not paid in full with the return or extension) | 5% | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Unreported income more than 25% of the taxable income shown | Additional 25% of the tax due on the unreported income | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Fraud | 50% of the underpayment | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Frivolous return | $500 | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Dishonoured check or EFT | 10% of the payment, not more than $100 or less than $25 | [2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
+| Estimated underpayment | Form REV-1630, per installment | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
+| Interest | From the due date to payment, at the federal rate set by the U.S. Secretary of the Treasury in effect on 1 January of each year | [PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf) |
 
 Penalties can be abated only for reasonable cause, by a petition for reassessment to the Board of Appeals within **90 days** of the mailing date of the assessment. "Act 123 of 2024 changed the time period in which a taxpayer may file a Petition for Reassessment for any tax imposed under Article III from 60 days to 90 days" ([PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf); [DFO-02](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/dfo-02.pdf)). The 2025 PA-40 instructions still print the old 60 days; do not treat 60 days as the limit. The other route is to pay the assessment and file a petition for refund with the Board of Appeals; check the start date of its six-month window in the PIT Guide.
 
@@ -172,15 +176,61 @@ Penalties can be abated only for reasonable cause, by a petition for reassessmen
 | Federal bonus depreciation on a 2026 asset | Add back for PA; use PA section 179 or straight-line PA depreciation instead |
 | Extension with 90% paid by 15 April | No underpayment penalty if the rest is paid by the extended date; interest still runs on the unpaid part |
 
-## Worked cases ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf); [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf))
+## Worked cases
 
 Illustrations with assumed facts.
 
-**Case 1: sole proprietor, 2026, with estimated tax.** Single, full-year resident. PA Schedule C net profit $60,000 (after PA adjustments); bank interest $1,000; HSA contribution $4,000, deductible federally. Line 4 $60,000 + Line 2 $1,000 = Line 9 $61,000. Line 10 is $4,000, so Line 11 is $57,000. **Line 12: $57,000 x 3.07% = $1,749.90.** No withholding, non-withheld income is over $14,000 and tax is over $430, so estimates are due. The 2025 PA-40 was a full-year return with Line 11 of $50,000, so the prior-year amount is $50,000 x 3.07% = $1,535, which is less than 90% of the 2026 tax ($1,574.91). Pay four installments of $383.75 on 15 April, 15 June, 15 September 2026 and 15 January 2027.
+**Case 1: sole proprietor, 2026, and which estimated tax method to use (a decision).** Single, full-year resident. PA Schedule C net profit $60,000 (after PA adjustments); bank interest $1,000; HSA contribution $4,000, deductible federally. Line 4 $60,000 + Line 2 $1,000 = Line 9 $61,000. Line 10 is $4,000, so Line 11 is $57,000. **Line 12: $57,000 x 3.07% = $1,749.90.** No withholding, non-withheld income is over $14,000 and tax is over $430, so estimates are due. The client can pay 90% of the 2026 tax ($1,574.91) or 100% of the 2025 Line 11 times 3.07%. The 2025 PA-40 was a full-year return with Line 11 of $50,000, so the prior-year amount is $50,000 x 3.07% = $1,535. The prior-year method is lower, so it decides: pay four installments of $383.75 on 15 April, 15 June, 15 September 2026 and 15 January 2027. Had 2025 Line 11 been $55,000 ($1,688.50), the 90% current-year amount would be the lower one.
+
+```oa-check
+name: PA 2026 tax and estimated tax method choice
+inputs:
+  line9: 61000
+  line10: 4000
+  prior_line11: 50000
+steps:
+  - line11: line9 - line10
+  - tax: line11 * 0.0307
+  - current_90: tax * 0.90
+  - prior_100: prior_line11 * 0.0307
+  - required: min(current_90, prior_100)
+  - installment: required / 4
+expected:
+  line11: 57000
+  tax: 1749.90
+  current_90: 1574.91
+  prior_100: 1535.00
+  required: 1535.00
+  installment: 383.75
+```
 
 **Case 2: business loss does not reduce wages, 2025.** Single. W-2 PA wages $80,000; PA Schedule C loss $20,000; net rental income $5,000. Line 1c $80,000, Line 4 a loss (oval filled), Line 6 $5,000. **Line 9 = $85,000** (the loss is ignored). **Tax: $85,000 x 3.07% = $2,609.50.** The $20,000 loss is not carried to 2026.
 
 **Case 3: tax forgiveness and the Working Pennsylvanians Tax Credit, 2025.** Married, filing jointly, two dependent children. PA taxable wages $31,000; tax-exempt interest $2,000. Eligibility income is $33,000. Table 2, two children: $33,000 is in the 60% column. Tax: $31,000 x 3.07% = $951.70. No resident credit. **Forgiveness: 60% x $951.70 = $571.02**, leaving $380.68. The family's federal EITC on Form 1040 is $5,000 (assumed), so the **WPTC is 10% = $500**, computed by the department from the attached Form 1040.
+
+```oa-check
+name: PA 2025 tax forgiveness, married, two children, 60% column
+inputs:
+  wages: 31000
+  exempt_interest: 2000
+  limit_100: 32000
+  fed_eitc: 5000
+steps:
+  - eligibility_income: wages + exempt_interest
+  - steps_over: ceil((eligibility_income - limit_100) / 250)
+  - pct: 1 - steps_over * 0.10
+  - tax: wages * 0.0307
+  - forgiveness: tax * pct
+  - net_tax: tax - forgiveness
+  - wptc: min(fed_eitc * 0.10, 805)
+expected:
+  eligibility_income: 33000
+  pct: 0.60
+  tax: 951.70
+  forgiveness: 571.02
+  net_tax: 380.68
+  wptc: 500.00
+```
 
 **Case 4: resident credit, 2025.** PA resident commutes to New York. New York wages $50,000, taxed by New York; New York tax due and paid $2,000 (assumed). Schedule G-L: income taxed in both states $50,000; 3.07% x $50,000 = $1,535. **Resident credit: the lesser, $1,535.**
 
@@ -202,7 +252,7 @@ Illustrations with assumed facts.
 - Department notices, assessments, penalty abatement petitions and Board of Appeals matters.
 - Any request to hide income, invent expenses or take an aggressive position.
 
-## Filing and payment ([PA PIT Guide, Brief Overview](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf))
+## Filing and payment
 
 - **2025 returns:** due midnight, Wednesday, 15 April 2026. File free on myPATH, or by approved software or paper.
 - **Extension:** up to six months (to 15 October 2026 for 2025 returns); longer only for people outside the US. "An extension of time for filing will not extend the time for the payment of tax." If the client has an approved federal extension and owes **no** PA tax, the department grants the same extension; no form is needed. Otherwise file Form REV-276 by the due date, with payment if tax is owed, or pay the extension payment by EFT or card on myPATH (not available to someone who never filed a PA return or made an estimated payment before). Fill in the extension oval on the PA-40, and attach federal Form 4868 if REV-276 was not filed ([2025 PA-40 instructions, page 40](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf)).
@@ -211,7 +261,7 @@ Illustrations with assumed facts.
 - **Estimated payments for 2026:** 15 April, 15 June, 15 September 2026 and 15 January 2027 (see "Estimated tax (2026)").
 - **Amended returns:** a PA-40 marked amended, with Schedule PA-40 X. Underreported income must be corrected within 30 days of discovery. Refund claims within three years of the original due date or payment of tax ([2025 PA-40 instructions, page 41](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf)).
 
-## Completion checklist ([2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf))
+## Completion checklist
 
 - [ ] Residency tested: domicile, or permanent place of abode **and** more than 183 days; the 30-day exception only if all three conditions are met.
 - [ ] Every item in one of the eight classes, per spouse; no loss used across classes or across spouses; no carryover.
@@ -227,6 +277,22 @@ Illustrations with assumed facts.
 - [ ] 2026 estimated payments set up if the $14,000 income and $430 tax tests are met.
 - [ ] Local earned income tax handled separately (pa-local-eit skill).
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| 2025 PA-40 instructions (PA-40 IN). Read for the 3.07% rate, the $33 filing test, the eight classes and Line 9 rule, Schedule O limits ($19,000 529 and ABLE, $2,500 student loan interest), retirement income, reciprocal states, Schedule SP tables, extension and amended returns. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf | 2026-11-13 |
+| 2026 REV-413 (I), estimated tax instructions. Read for 3.07%, $14,000 and $430, the 90% and 100% tests, the four 2026 due dates and the farmer rule. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf | 2026-11-13 |
+| 2025 REV-413 (I). Read for the 2025 $11,000 and $338 figures. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_rev-413i.pdf | 2026-11-13 |
+| PA PIT Guide, Brief Overview and Requirements. Read for residency, statutory residency (more than 183 days), penalties, interest and the 90-day petition period. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf | 2026-11-13 |
+| DFO-02, Personal Income Tax Preparation Guide. Read for the WPTC conditions, the 30-day domicile exception and Act 123 of 2024. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/dfo-02.pdf | 2026-11-13 |
+| PA Tax Update No. 240. Read for the Working Pennsylvanians Tax Credit (10% of the federal EITC, maximum $805). | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/news-and-statistics/taxupdate/documents/taxupdate_240.pdf | 2026-11-13 |
+| PA Schedule G-L instructions. Read for the resident credit limit at 3.07% and the bar on foreign and local taxes. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40_pa-41g-l.pdf | 2026-11-13 |
+| PA Schedule C instructions. Read for bonus depreciation, owner benefits, home office, start-up costs and business losses. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/pa-40c.pdf | 2026-11-13 |
+| PIT Bulletin 2023-02. Read for section 179 under Act 53 of 2022, the PA net profits limit and the carryforward. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/taxlawpoliciesbulletinsnotices/taxbulletins/pit/documents/pit_bulletin_2023-02.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 PA-40 instructions and the 2026 Schedule SP were not published when read (the 2026 PA-40 instructions link returned no PDF), so the 2026 filing test, the 2026 forgiveness tables, the 2026 Schedule O dollar limits, the 2026 return due date and where the Working Pennsylvanians Tax Credit sits on the 2026 PA-40 use the 2025 material; how the WPTC applies to part-year residents and nonresidents; the exactly-183-day case (the PIT Guide and DFO-02 word it differently).
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pa-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pa-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pa-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pa-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
