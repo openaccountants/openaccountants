@@ -15,15 +15,16 @@ description: >
   trusts and foundations, capital-payment taxation and treaty cases.
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.4
+version: 0.5
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Liechtenstein individual income and wealth tax v0.4
+# Liechtenstein individual income and wealth tax v0.5
 
 ## Who this applies to
 
@@ -35,15 +36,15 @@ Before using the tariff, screen the separate **Existenzminimum exemption** in St
 
 SteV article 8 sets these monthly gross minima, with the amended base amounts first applying to tax year 2025 and continuing in the current 2026 text:
 
-| Established category | CHF per month | CHF for a full twelve months |
-|---|---:|---:|
-| Single | 2,100 | 25,200 |
-| Qualifying single parent | 2,600 | 31,200 |
-| Jointly assessed spouses/registered partners | 3,200 | 38,400 |
-| Separately assessed spouses/registered partners in the same household, or factual cohabiting partners | 1,600 each | 19,200 each |
-| Each child aged up to 5, additional | 300 | 3,600 |
-| Each child aged 6–11, additional | 450 | 5,400 |
-| Each child aged 12 or older, additional | 600 | 7,200 |
+| Established category | CHF per month | CHF for a full twelve months | Source |
+|---|---:|---:|---|
+| Single | 2,100 | 25,200 | [SteV art. 8 (Existenzminimum)](https://www.gesetze.li/konso/pdf/2010437000) |
+| Qualifying single parent | 2,600 | 31,200 | same |
+| Jointly assessed spouses/registered partners | 3,200 | 38,400 | same |
+| Separately assessed spouses/registered partners in the same household, or factual cohabiting partners | 1,600 each | 19,200 each | same |
+| Each child aged up to 5, additional | 300 | 3,600 | same |
+| Each child aged 6–11, additional | 450 | 5,400 | same |
+| Each child aged 12 or older, additional | 600 | 7,200 | same |
 
 Establish the actual family/child category, article 14 total income including relevant deemed wealth yield, and liability period before deciding eligibility. Resolve changing family circumstances or disputed attribution separately; do not replace this gross-income test with post-deduction taxable income **x**. [SteV, article 8 and its amendment notes][ordinance]
 
@@ -51,45 +52,45 @@ For income not exempt under that screen, the following reproduces article 19(1).
 
 ### Ordinary tariff, article 19(1)(a)
 
-| Taxable income x | State tax |
-|---|---|
-| Up to 15,855 | 0 |
-| 15,856–21,140 | 1% × x − 159 |
-| 21,141–42,280 | 3% × x − 581 |
-| 42,281–73,990 | 4% × x − 1,004 |
-| 73,991–105,700 | 5% × x − 1,744 |
-| 105,701–137,410 | 6% × x − 2,801 |
-| 137,411–169,120 | 6.5% × x − 3,488 |
-| 169,121–211,400 | 7% × x − 4,334 |
-| 211,401 or more | 8% × x − 6,448 |
+| Taxable income x | State tax | Source |
+|---|---|---|
+| Up to 15,855 | 0 | [SteG art. 19](https://www.gesetze.li/konso/pdf/2010340000) |
+| 15,856–21,140 | 1% × x − 159 | same |
+| 21,141–42,280 | 3% × x − 581 | same |
+| 42,281–73,990 | 4% × x − 1,004 | same |
+| 73,991–105,700 | 5% × x − 1,744 | same |
+| 105,701–137,410 | 6% × x − 2,801 | same |
+| 137,411–169,120 | 6.5% × x − 3,488 | same |
+| 169,121–211,400 | 7% × x − 4,334 | same |
+| 211,401 or more | 8% × x − 6,448 | same |
 
 ### Qualifying single parent, article 19(1)(b)
 
-| Taxable income x | State tax |
-|---|---|
-| Up to 23,783 | 0 |
-| 23,784–31,710 | 1% × x − 238 |
-| 31,711–63,420 | 3% × x − 872 |
-| 63,421–110,985 | 4% × x − 1,506 |
-| 110,986–158,550 | 5% × x − 2,616 |
-| 158,551–206,115 | 6% × x − 4,202 |
-| 206,116–253,680 | 6.5% × x − 5,232 |
-| 253,681–317,100 | 7% × x − 6,501 |
-| 317,101 or more | 8% × x − 9,672 |
+| Taxable income x | State tax | Source |
+|---|---|---|
+| Up to 23,783 | 0 | [SteG art. 19](https://www.gesetze.li/konso/pdf/2010340000) |
+| 23,784–31,710 | 1% × x − 238 | same |
+| 31,711–63,420 | 3% × x − 872 | same |
+| 63,421–110,985 | 4% × x − 1,506 | same |
+| 110,986–158,550 | 5% × x − 2,616 | same |
+| 158,551–206,115 | 6% × x − 4,202 | same |
+| 206,116–253,680 | 6.5% × x − 5,232 | same |
+| 253,681–317,100 | 7% × x − 6,501 | same |
+| 317,101 or more | 8% × x − 9,672 | same |
 
 ### Joint spouses, article 19(1)(c)
 
-| Combined taxable income x | State tax |
-|---|---|
-| Up to 31,710 | 0 |
-| 31,711–42,280 | 1% × x − 317 |
-| 42,281–84,560 | 3% × x − 1,163 |
-| 84,561–147,980 | 4% × x − 2,008 |
-| 147,981–211,400 | 5% × x − 3,488 |
-| 211,401–274,820 | 6% × x − 5,602 |
-| 274,821–338,240 | 6.5% × x − 6,976 |
-| 338,241–422,800 | 7% × x − 8,667 |
-| 422,801 or more | 8% × x − 12,895 |
+| Combined taxable income x | State tax | Source |
+|---|---|---|
+| Up to 31,710 | 0 | [SteG art. 19](https://www.gesetze.li/konso/pdf/2010340000) |
+| 31,711–42,280 | 1% × x − 317 | same |
+| 42,281–84,560 | 3% × x − 1,163 | same |
+| 84,561–147,980 | 4% × x − 2,008 | same |
+| 147,981–211,400 | 5% × x − 3,488 | same |
+| 211,401–274,820 | 6% × x − 5,602 | same |
+| 274,821–338,240 | 6.5% × x − 6,976 | same |
+| 338,241–422,800 | 7% × x − 8,667 | same |
+| 422,801 or more | 8% × x − 12,895 | same |
 
 Source for every threshold/rate/subtraction: [SteG, article 19][law]. Apply the statutory wealth/income rounding below before the printed tariff; do not interpolate across the endpoints. Final tax rounding and special-assessment application still need the current return instructions.
 
