@@ -197,8 +197,8 @@ If the engagement lacks key data:
 |---|---|---|---|---|
 | To 31 December 2024 | 6% | 3% | 3% | unverified: old file |
 | 1 January 2025 | 12% | 6% | 6% | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution |
-| 1 January 2027 | 14% | unverified: 7% | unverified: 7% | Order 086/01 sets the total only |
-| 1 January 2028 | 16% | unverified: 8% | unverified: 8% | same |
+| 1 January 2027 | 14% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01 sets the total only: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
+| 1 January 2028 | 16% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
 | 1 January 2029 | 18% | unverified: 9% | unverified: 9% | same |
 | 1 January 2030 | 20% | unverified: 10% | unverified: 10% | same |
 

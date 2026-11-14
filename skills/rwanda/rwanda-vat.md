@@ -25,7 +25,7 @@ Anyone making taxable supplies in Rwanda, importers, public bodies that withhold
 |---|---|---|---|
 | Standard rate | 18% | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/penalties-and-interest |
 | Zero rate | 0% on art 7 supplies | 2026 | same |
-| Registration, 12 months | Over FRW 20,000,000 | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/default-title-1 |
+| Registration, 12 months | Over 20 million Rwf | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/value-added-tax/default-title-1 |
 | Registration, 3 consecutive months | FRW 5,000,000 | 2026 | same |
 | Quarterly filing | Annual turnover at or below FRW 200,000,000; may opt monthly (art 28) | 2026 | https://www.rra.gov.rw/fileadmin/user_upload/VAT_Law_of_2023_ok.pdf |
 | Non-deductible share of inseparable costs | 40% of the VAT (art 20) | 2026 | same |
