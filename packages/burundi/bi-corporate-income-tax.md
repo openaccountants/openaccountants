@@ -3,16 +3,17 @@ name: bi-corporate-income-tax
 description: "Compute ordinary corporate business income tax for a Burundi resident company or a nonresident permanent establishment during calendar 2026. Use this Guide to bridge accounting profit to taxable profit, compare the turnover minimum, track loss use, calculate provisional payments and prepare the published OBR corporate return. It separates ordinary trading gains from the individual capital-gains regime and routes dividends, interest, royalties and foreign service payments to the withholding Guide. It also identifies the budget rules governing profit allocation and related-party financing. Investment incentives, free-zone qualification, financial institutions, restructurings and the authenticated filing completion screens remain outside the completed scope. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: corporate-income-tax
-version: 1.2
+version: 1.3
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Burundi: ordinary corporate income tax for 2026 v1.2
+# Burundi: ordinary corporate income tax for 2026 v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

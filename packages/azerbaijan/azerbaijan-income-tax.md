@@ -1,19 +1,20 @@
 ---
 name: azerbaijan-income-tax
 description: 'Use this skill for 2026 Azerbaijan individual income tax working papers for residents, non-residents, employees and individual entrepreneurs. It covers ordinary business profit, annual non-business income, final dividend, interest and rental taxation, the general simplified turnover alternative, micro and listed-service exemptions, business losses, advances and the temporary social-payment credit. Trigger on Azerbaijan personal tax, entrepreneur tax, simplified tax, software developer exemption, rent, dividends, foreign income and annual income return. Use the payroll skill for monthly salaries and the contributions skill for insurance. Property-transfer and fixed-receipt computations are expressly incomplete. Checked against the law (tier 2); no accountant has signed it off.'
-version: 0.2
+version: 0.3
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Azerbaijan Individual Income Tax v0.2
+# Azerbaijan Individual Income Tax v0.3
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

@@ -2,18 +2,19 @@
 name: bw-payroll-social
 description: >
   Botswana payroll for 2026-27: PAYE tables from 1 July 2026, 27.5% monthly top band, benefits, allowances, remittance in 14 days, annual return, no state social security. Use for Botswana payroll.
-version: 1.0
+version: 1.1
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Botswana Payroll and Social Contributions v1.0
+# Botswana Payroll and Social Contributions v1.1
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 
