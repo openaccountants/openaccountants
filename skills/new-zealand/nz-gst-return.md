@@ -1,7 +1,7 @@
 ---
 name: nz-gst-return
 description: Use this skill whenever asked about New Zealand GST returns, or to prepare, review, or classify transactions for a New Zealand GST return (GST101A form), for a self-employed individual or small business. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
-version: 2.4
+version: "2.5"
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-11-14
