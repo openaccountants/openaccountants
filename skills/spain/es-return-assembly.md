@@ -63,6 +63,7 @@ These are the only figures the assembly itself applies; every other figure belon
 | Car, moped or motorcycle, input VAT presumed business share | 50% | Art. 95.Tres.2.ª LIVA | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 | Modelo 303 deadlines | 1 to 20 of the month after the quarter; 1 to 30 January for the last quarter | Art. 71.4 RIVA | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
 | Modelo 349 quarterly instead of monthly | Neither the quarter nor any of the four prior quarters above EUR 50,000 of reportable supplies, VAT excluded | Art. 81.2 RIVA; July monthly return may be filed in August or the first 20 days of September | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Modelo 390 annual VAT summary | First 30 days of January after the year | AEAT filing period page; four more days if a technical fault blocks online filing | https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html |
 | Modelo 347 counterpart test | Above EUR 3,005.06 with one person in the year | Art. 32.c RD 1065/2007 | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
 | Simplified depreciation, equipment for information processing (Group 5) | 26% maximum, 10 years maximum | AEAT simplified depreciation table | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
 
@@ -389,9 +390,10 @@ expected:
 | [Ley 37/1992, Ley del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Read for art. 95.Tres.2.ª (50% vehicle presumption) | 2026-11-14 |
 | [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Read for art. 71.4 (Modelo 303 deadlines) and art. 81 (Modelo 349 periods, EUR 50,000) | 2026-11-14 |
 | [RD 1065/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | Read for art. 32.c (EUR 3,005.06 Modelo 347 test) | 2026-11-14 |
+| [AEAT Modelo 390 filing period](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html) | Read for the Modelo 390 period, first 30 days of January | 2026-11-14 |
 | [AEAT simplified depreciation table](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html) | Read for Group 5 (26%, 10 years), page updated 30 April 2026 | 2026-11-14 |
 
-Not yet confirmed: the 2027 IRPF campaign dates and second-instalment date (that year's order is not yet published); whether AEAT moves the 30 January 2027 deadline, a Saturday; the Modelo 347 February date, the Modelo 390 date and the RETA regularisation timing; LGT art. 66 was not re-read. Other figures are inherited from the content skills and were not re-read here.
+Not yet confirmed: the 2027 IRPF campaign dates and second-instalment date (that year's order is not yet published); whether AEAT moves the 30 January 2027 deadline, a Saturday; the Modelo 347 February date and the RETA regularisation timing; LGT art. 66 was not re-read. Other figures are inherited from the content skills and were not re-read here.
 
 ## Disclaimer
 
