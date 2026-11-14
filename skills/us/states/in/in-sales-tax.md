@@ -1,12 +1,12 @@
 ---
 name: in-sales-tax
 description: "Indiana sales and use tax in 2026. Covers the 7% state rate, remote-seller threshold, software, food and medical boundaries, manufacturing, sourcing and filing. Load us-sales-tax for the multistate framework."
-version: 2.1
+version: "2.2"
 jurisdiction: US-IN
 category: state-tax
 type: situation-rules
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -29,7 +29,7 @@ Indiana retailers, remote sellers, marketplace businesses and purchasers with un
 | State sales/use rate | 7%; no general local sales-tax addition | [DOR sales page](https://www.in.gov/dor/i-am-a/business-corp/sales-tax/), [FAQ](https://www.in.gov/dor/i-am-a/business-corp/business-faq/) |
 | Remote economic nexus | Gross revenue exceeding $100,000 in the current or preceding calendar year; statutory scope and marketplace exclusions matter | [Bulletin 89; IC 6-2.5-2-1](https://secure.in.gov/dor/files/sib89.pdf) |
 | Transaction count | Separate 200-transaction test repealed from January 1, 2024 | [Bulletin 89](https://secure.in.gov/dor/files/sib89.pdf) |
-| Additional taxes | Food/beverage, county innkeeper and other activity taxes are separate; 7% is not a universal all-tax maximum | [DOR sales page](https://www.in.gov/dor/i-am-a/business-corp/sales-tax/) |
+| Additional taxes | Food/beverage, county innkeeper and other activity taxes are separate; 7% (in words on the page) is not a universal all-tax maximum | [DOR sales page](https://www.in.gov/dor/i-am-a/business-corp/sales-tax/) |
 | Streamlined Sales Tax | Full member; state legislation still controls | [Bulletin 90](https://www.in.gov/dor/files/sib90.pdf) |
 
 For remote revenue, include the categories specified in Bulletin 89, including relevant exempt/wholesale transactions. A provider of solely nontaxable services is not automatically within the rule merely because revenue is large. Facilitators and marketplace sellers have different counting rules; determine which qualifying facilitated sales are excluded from a seller's calculation.
