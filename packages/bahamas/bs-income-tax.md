@@ -11,7 +11,7 @@ description: >
   pay income tax in the Bahamas, NIB contributions, business licence Bahamas,
   self-employed Bahamas, real property tax Bahamas. Built from Bahamian
   legislation and DIR pages; not reviewed by an accountant.
-version: 1.0
+version: 1.1
 jurisdiction: BS
 tax_year: 2026
 last_updated: 2026-11-14
@@ -52,7 +52,8 @@ The basic answer to "do I pay income tax in the Bahamas" is no. No Bahamian law 
 | NIB self-employed rate | 10.30% of insurable income (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 8.8% plus 1.5 points (reg. 30(1A)), self-employed under 65 not receiving retirement benefit | same |
 | NIB voluntarily insured | 6.50% (computed from the Fifth Schedule rates and the 1.5 point increase) | 5.0% plus 1.5 points (reg. 35(1A)) | same |
 | NIB, employed person 65 or over in receipt of retirement benefit, or earning under 50% of the ceiling while receiving it | Employer 2.0% only | Fifth Schedule rows | same |
-| NIB insurable wage ceiling | BSD 810 a week | Effective July 2024 | NIB, contributions: https://www.nib-bahamas.com/contributions |
+| NIB insurable wage ceiling to June 2026 | BSD 810 a week; BSD 3,510 a month | Effective July 2024; weekly payroll uses BSD 810 for the work week beginning 29 June 2026 | NIB, 2026 biennial adjustments notice: https://www.nib-bahamas.com/uploads/2026_biennial_adjustments_f9ad1d917d.pdf |
+| NIB insurable wage ceiling from 1 July 2026 | BSD 830 a week; BSD 3,597 a month | Weekly payroll from work weeks starting 6 July 2026; rates unchanged | same |
 | NIB payment deadline | By the 15th of the following month | | same |
 | Business licence tax, turnover not over BSD 100,000 | Exempt | s. 38(1)(i); not for a family office, financial services entity, IBC or proprietary trading business (s. 38(2)) | Business Licence (Amendment) Act 2024, s. 8: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf |
 | Business licence tax, turnover over BSD 100,000 to 500,000 | 0.5% of turnover | General businesses, Second Schedule Part I para (1)(a) | same |
@@ -76,7 +77,7 @@ The basic answer to "do I pay income tax in the Bahamas" is no. No Bahamian law 
 
 ### NIB
 
-1. Find the weekly insurable wage or income: actual weekly earnings, capped at the NIB ceiling of BSD 810 a week (BSD 42,120 a year over 52 weeks).
+1. Find the weekly insurable wage or income: actual weekly earnings, capped at the NIB ceiling: BSD 810 a week for weeks up to the one beginning 29 June 2026, BSD 830 a week from the week beginning 6 July 2026; apply the ceiling week by week.
 2. Employed: employee share 4.65%, employer share 6.65%; the employer deducts the employee share and pays both.
 3. Self-employed: 10.30% of insurable income, paid by the person.
 4. Voluntary: 6.50%.
@@ -249,7 +250,7 @@ Both turnovers sit in the BSD 100,000 to 500,000 band. Turnover is under BSD 250
 ```
 BAHAMAS INDIVIDUAL, TAX YEAR 2026
 A. Income tax: none, no return
-B. NIB: status (employed / self-employed / voluntary); weekly earnings; insurable (capped at BSD 810 a week);
+B. NIB: status (employed / self-employed / voluntary); weekly earnings; insurable (capped at BSD 810 a week to the week beginning 29 June 2026, BSD 830 from the week beginning 6 July 2026);
    rate 4.65% (employee) + 6.65% (employer) / 10.30% / 6.50%; annual = insurable x rate x 52
 C. Business licence: prior year turnover; band rate; estimated tax; actual tax; unpaid or credit;
    renewal by 31 Jan; return and payment by 31 Mar or instalments; accountant's report if turnover >= 250k
@@ -272,7 +273,9 @@ Reviewer flags: NIB registered and current; licence held before trading; first-h
 
 | Source | URL | Read on |
 |---|---|---|
-| NIB, contributions page (opened with Firecrawl, built by script): read for the BSD 810 weekly ceiling and the 15th day deadline | https://www.nib-bahamas.com/contributions | 2026-11-14 |
+| Ministry of Finance, Bahamas-Japan MAP guidance (July 2024), "Scope of the MAP: Limitations": read for "The Bahamas does not have a domestic personal income tax regime" | https://cdn.bahamas.gov.bs/tenant/tenantministryoffinance/documents/All%20Documents/BAHAMAS-JAPANMAPGUIDANCEDOCUMENT-20240718120503.pdf | 2026-11-14 |
+| NIB, 2026 biennial adjustments notice: read for the BSD 830 weekly and BSD 3,597 monthly ceilings from 1 July 2026 | https://www.nib-bahamas.com/uploads/2026_biennial_adjustments_f9ad1d917d.pdf | 2026-11-14 |
+| NIB, contributions page (opened with Firecrawl, built by script): read for the BSD 810 weekly ceiling to June 2026 and the 15th day deadline | https://www.nib-bahamas.com/contributions | 2026-11-14 |
 | Bahamas legislation, Acts by year 2026: read for the 2026 amending Acts (VAT, Business Licence, Real Property Tax, Stamp, DMTT) and to confirm no income tax Act | https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html | 2026-11-14 |
 | National Insurance (Contributions) (Amendment) Regulations 2024, S.I. 37 of 2024: read for the Fifth Schedule rates and the 1.5 point increase from 1 July 2024 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf | 2026-11-14 |
 | Business Licence Act 2023: read for ss. 26, 35, 36 and the Fourth Schedule late fees | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2023/07/Business-Licence-Act-2023.pdf | 2026-11-14 |
@@ -288,4 +291,4 @@ Reviewer flags: NIB registered and current; licence held before trading; first-h
 | DIR VAT FAQs: read for the BSD 100,000 registration threshold | https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ | 2026-11-14 |
 | DIR First home FAQs: read for inter vivos gifts zero rated for VAT | https://inlandrevenue.finance.gov.bs/faqs-first-home/ | 2026-11-14 |
 
-Not yet confirmed: any NIB ceiling change from July 2026 (old file: BSD 830 a week; the NIB page read shows BSD 810 effective July 2024) and the monthly ceiling (old: BSD 3,510); NIB late surcharge and interest (old: 10% plus 1.5% a month compound) and the 10 working day R1 registration rule; NIB benefit amounts (old: minimum pension BSD 364, maternity grant BSD 570, funeral BSD 2,060); whether the 2024 wording "on the proportion of turnover" makes the business licence bands marginal rather than a rate on the whole turnover (this skill applies the band rate to the whole turnover, as the 2023 Act did); which RPT class the 2026 Act's repealed s. 3(2)(e) was, and whether the DIR FAQ rates for vacant land of foreigners (BSD 100 to BSD 7,000, then 2%) still apply; the first RPT bill year for the 2026 changes; stamp duty on mortgages and leases under the Stamp Act 2024 (its schedule did not extract cleanly); the BSD 6.50 an hour minimum wage.
+Not yet confirmed: any NIB late surcharge on top of the s. 55 interest compounded annually at the prime rate (old file: 10% plus 1.5% a month compound; see `bs-payroll-social`); NIB benefit amounts (old: minimum pension BSD 364, maternity grant BSD 570, funeral BSD 2,060); whether the 2024 wording "on the proportion of turnover" makes the business licence bands marginal rather than a rate on the whole turnover (this skill applies the band rate to the whole turnover, as the 2023 Act did); which RPT class the 2026 Act's repealed s. 3(2)(e) was, and whether the DIR FAQ rates for vacant land of foreigners (BSD 100 to BSD 7,000, then 2%) still apply; the first RPT bill year for the 2026 changes; stamp duty on mortgages and leases under the Stamp Act 2024 (its schedule did not extract cleanly); the BSD 6.50 an hour minimum wage.

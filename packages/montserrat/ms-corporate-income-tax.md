@@ -9,7 +9,7 @@ description: >
   15% deduction from Government contract payments (section 37), company-specific rate
   orders and the branch remitted-profit charge. Trigger phrases include Montserrat
   corporation tax, Montserrat company tax 30%, Montserrat tax instalments.
-version: 1.0
+version: 1.1
 jurisdiction: MS
 tax_year: 2026
 last_updated: 2026-11-14
@@ -65,6 +65,11 @@ Company income tax in Montserrat for the 2026 year of assessment under the Incom
 | Forecast shows a lower profit | Instalments stay at last assessed tax unless the Comptroller adjusts them | [Cap. 17.01, s.50(2)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
 | Overpaid instalments | Repaid; underpaid, recovered under the Act | same |
 | Nonresident company with a branch | 30% tax plus withholding on remitted profits; not due on profits shown not remitted | [Cap. 17.01, s.39(4)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
+| Late return, Cap. 17.26 s.58 | Greater of (a) 5% of the tax owing plus 1% a month or part, and (b) EC$500 plus EC$100 a month or part; capped at EC$100 if filed within one month, EC$1,000 within six months, EC$10,000 otherwise; not due for reasonable cause | [Cap. 17.26, ss.57 to 59](https://www.gov.ms/wp-content/uploads/2026/02/17.26-Tax-Administration-Act.pdf) |
+| Late payment, Cap. 17.26 ss.57 and 59 | Late payment fee of 5% of the tax unpaid (withholding tax and instalments included), plus interest at 6% simple a year (variable by Gazette order); Cap. 17.26 s.4(2) gives the revenue law precedence where they conflict | same |
+| Representative of a company in business, Cap. 17.26 s.46(4) | Notify the Comptroller of the resident principal officer or authorised agent within one month of starting business or of the representative ceasing to qualify | [Cap. 17.26, s.46](https://www.gov.ms/wp-content/uploads/2026/02/17.26-Tax-Administration-Act.pdf#page=35) |
+| MCRS company return IRD 17 | Applies 30% to adjusted chargeable income but prints a 90-day filing instruction and older section numbers; follow s.43 and any prescription, and confirm the date with MCRS | [MCRS IRD 17](https://mcrs.ms/wp-content/uploads/2020/06/company-income-tax-return.pdf) |
+| Surcharge reference in s.5 | s.5 still refers to a surcharge under s.41, which in the 2025 revision governs rulemaking (s.41 of the 2019 revision is about appointments); no surcharge is applied here until its history is resolved | [Cap. 17.01](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf) |
 | Interest on borrowed money | Deductible only if the capital was used to acquire the income (s.13 conditions) | same |
 
 ## Worked cases
@@ -133,5 +138,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income and Corporation Tax Act Cap. 17.01, revised to 1 January 2025: read for ss.13 to 16, 36 (30%), 37 (15% on Government contracts), 39(4), 43 (31 March return), 50 (payment and instalments) and the list of rate and exemption orders | https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf | 2026-11-14 |
+| Tax Administration Act Cap. 17.26, revised to 1 January 2025: read for ss.4(2), 46(4), 57 (6% interest), 58 (late return penalty) and 59 (5% late payment fee) | https://www.gov.ms/wp-content/uploads/2026/02/17.26-Tax-Administration-Act.pdf | 2026-11-14 |
+| MCRS company income tax return IRD 17: read for the 30% computation and the 90-day instruction (Ryan Duguid's reading) | https://mcrs.ms/wp-content/uploads/2020/06/company-income-tax-return.pdf | 2026-11-11 |
 
-Not yet confirmed: amendments made after 1 January 2025; penalties and interest for late returns and payments (not read); capital allowance rates.
+Not yet confirmed: amendments made after 1 January 2025; the operative company return date (s.43 against the IRD 17 90-day instruction); the s.5 surcharge history; capital allowance rates.

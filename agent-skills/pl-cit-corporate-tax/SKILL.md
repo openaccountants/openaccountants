@@ -34,6 +34,7 @@ metadata:
 **Out of scope here.**
 - Individuals and sole traders (PIT): see [pl-income-tax](pl-income-tax.md).
 - Family foundations, the IP Box (5%), the holding company regime (art. 24m and following), special economic zones and investment-support decisions, insurers and investment funds. Refer these.
+- The extra deductions (R&D, prototype, sales growth, venture investment, CSR, robotisation) are listed with their percentages and caps in the rates table, but each needs its own eligibility test, cost records and return annex (CIT/BR and the others); they are not computed here.
 - Banks and credit unions: their rates are listed below, but their bases are not covered.
 
 ## Rates, bands and thresholds
@@ -58,6 +59,12 @@ metadata:
 | Tax capital group (PGK) | At least PLN 250,000 average share capital per company; parent holds at least 75% directly | 2026 | art. 1a(2); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Late payment interest (odsetki za zwłokę) | 10.50% a year (reduced 5.25%) | from 5 March 2026 | [MF notice, M.P. 2026 poz. 269](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 (text: https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf)); Tax Ordinance art. 56 |
 | Pillar Two | 15% global and domestic minimum tax for groups with consolidated revenue of at least EUR 750,000,000; in force from 1 January 2025 | 2026 | [Dz.U. 2024 poz. 1685](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 (text: https://api.sejm.gov.pl/eli/acts/DU/2024/1685/text.pdf)) |
+| R&D relief (ulga badawczo-rozwojowa) | Extra deduction from the base of qualifying R&D costs: 200 % of R&D staff costs (by share of working time) and 100 % of other listed costs for an ordinary taxpayer; capped at income other than capital gains; unused amount carried into the next 6 years | 2026 | CIT Act art. 18d(1), (2), (7), (8), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
+| Prototype relief | 30 % of trial-production and market-launch costs of a new product, at most 10 % of income other than capital gains | 2026 | CIT Act art. 18ea(1), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
+| Sales-growth relief | Costs incurred to increase sales of own products to unrelated buyers, up to income other than capital gains and at most 1 000 000 zł a year | 2026 | CIT Act art. 18eb(1), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
+| Venture investment relief | Share purchases in a qualifying company, up to income other than capital gains and at most 250 000 zł a year | 2026 | CIT Act art. 18ec(1), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
+| Sport, culture and higher-education relief (CSR) | 50 % of the qualifying costs, up to income other than capital gains | 2026 | CIT Act art. 18ee(1), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
+| Robotisation relief | 50 % of qualifying robotisation costs, up to income other than capital gains | 2026 | CIT Act art. 38eb(1), https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf |
 
 **Who can use 9%.** All of these must hold (art. 19(1)(2), (1a)-(1e)):
 1. The company is a small taxpayer (prior-year gross sales up to PLN 8,517,000 for 2026), or it is in its first year of business.
@@ -256,6 +263,7 @@ expected:
 | Read for the points the body cites to it: MF regulation Dz.U. 2026 poz. 188 (seventh-month JPK_CIT deadline for tax years ending before 1 April 2026) | https://api.sejm.gov.pl/eli/acts/DU/2026/188/text.pdf | 2026-11-14 |
 | Act Dz.U. 2021 poz. 2105, art. 66 (JPK_CIT phase-in), as amended by Dz.U. 2023 poz. 1059 | https://api.sejm.gov.pl/eli/acts/DU/2023/1059/text.pdf | 2026-11-14 |
 | Read for the points the body cites to it: Amending act Dz.U. 2026 poz. 1371 (transfer pricing information, cash payments) | https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf | 2026-11-14 |
+| Read for R&D relief, Prototype, Sales-growth, Venture investment, CSR and Robotisation reliefs: CIT Act consolidated text Dz.U. 2025 poz. 278, arts. 18d, 18ea, 18eb, 18ec, 18ee, 38eb | https://api.sejm.gov.pl/eli/acts/DU/2025/278/text.pdf | 2026-11-14 |
 | Read for the points the body cites to it: Act on top-up taxation (Pillar Two), Dz.U. 2024 poz. 1685 | https://api.sejm.gov.pl/eli/acts/DU/2024/1685/text.pdf | 2026-11-14 |
 | Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 56, 56a, 56b, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-11-14 |
 | Fiscal Penal Code, Sejm unified text of Dz.U. 2025 poz. 633 (arts. 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text/U/D20250633Lj.pdf | 2026-11-14 |

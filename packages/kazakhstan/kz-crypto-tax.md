@@ -1,77 +1,109 @@
 ---
 name: kz-crypto-tax
-description: >
-  Use this skill whenever asked about taxation of cryptocurrency and digital mining in Kazakhstan.
-  Trigger on phrases like "Kazakhstan crypto tax", "crypto mining tax Kazakhstan", "майнинг налог
-  Казахстан", "AIFC crypto", "digital asset tax Kazakhstan", "плата за цифровой майнинг". Covers the
-  digital-mining fee on electricity, taxation of mining income, the AIFC (Astana) regulated-exchange
-  framework, and how individuals' gains on digital assets are taxed under the 2026 Tax Code. ALWAYS
-  read this before any Kazakhstan crypto work.
-version: 1.0
+description: "Kazakhstan 2026 digital assets and mining: licensing boundaries, recognised income, acquisition cost, electricity charges and quarterly obligations."
+version: 1.1
 jurisdiction: KZ
 tax_year: 2026
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
-domain: crypto
+domain: tax
+
+type: situation-rules
 ---
 
-# Kazakhstan Cryptocurrency & Digital Mining Tax — Skill v1.0
+# Kazakhstan digital assets and mining tax v1.1
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-## Section 1 — Quick Reference
+## Who this applies to
 
-| Field | Value |
-|---|---|
-| Country | Kazakhstan |
-| Topic | Digital mining + digital-asset taxation |
-| Currency | KZT (₸); many amounts indexed to MRP (МРП) = ₸4,325 for 2026 (verify against the 2026 budget law) |
-| Individual income tax (ИПН) | Flat 10% |
-| Mining electricity fee | Plata za tsifrovoy mayning (плата за цифровой майнинг) — a per-kWh charge on power used for mining, banded by the electricity price (verify current ₸/kWh band table) |
-| Regulated trading | Only via exchanges licensed in the Astana International Financial Centre (AIFC / МФЦА); trading outside the AIFC is restricted |
-| Tax authority | State Revenue Committee (КГД, kgd.gov.kz); AIFC for licensing |
-| Legislation | Tax Code of Kazakhstan (2026); Law "On Digital Assets in the Republic of Kazakhstan" |
-| Skill version | 1.0 |
+Kazakhstan individuals disposing of digital assets and lawful mining businesses assessing income tax plus the separate electricity-based mining charge. Determine resident/non-resident, individual/ИП/legal-entity status, activity and period first. The regulatory perimeter changed during 2026; a trading licence or a tax computation does not itself authorise mining or an unregulated venue.
 
-### Conservative defaults
-| Ambiguity | Default |
-|---|---|
-| Whether the user is a licensed miner | Assume unlicensed → flag licensing requirement |
-| Trading venue unknown | Assume non-AIFC → flag the restriction |
-| Cost basis of disposed crypto unknown | Cannot compute gain — request acquisition records |
-| Mining electricity band unknown | Flag for reviewer; do not guess the ₸/kWh fee |
+## Rates, bands and thresholds
 
-## Section 2 — Legal & Regulatory Status
+| Item and conditions | Rule for 2026 | Official source |
+|---|---|---|
+| Individual disposal gain | Positive sale/capital-contribution value less statutory original cost (art. 389); ordinary personal annual rate schedule is in kz-income-tax | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Mining income | Pool-distributed asset quantity × prescribed value, excluding value retained as pool commission (art. 325); not simply cash sales less every expense | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Ordinary mining electricity fee | KZT 2 per 1 kWh consumed in the reporting period (art. 659) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Qualifying own renewable/off-grid generation | KZT 1 per 1 kWh under the precise generation conditions in art. 659 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| No mining licence or absent/faulty control meters | KZT 25 per 1 kWh; missing/faulty meters use continuous maximum-capacity consumption computation (art. 659) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Mining fee period/deadlines | Quarterly; declaration by the 15th and payment by the 25th of the second month after the quarter (arts. 660–661) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 
-- **Two categories of digital assets:** *secured* (backed/tokenised real assets) and *unsecured* (e.g. Bitcoin). Issuance and "white-listed" trading are channelled through the **AIFC**.
-- **Mining is legal but licensed.** Miners must be registered/licensed and buy power within the regulated framework; a dedicated **digital-mining fee** applies to the electricity consumed.
-- **Exchange/trading** of unsecured digital assets by residents is intended to run through **AIFC-licensed exchanges**; peer-to-peer/offshore trading sits in a grey/restricted zone — flag it.
+## The base
 
-## Section 3 — Taxation (Tier 1)
+Digital Assets Law art. 9 requires a mining licence and distinguishes the licensed data-centre-owning/other-lawful-possession route from the hardware-at-a-data-centre route. Do not assume a home setup is legal or licence-exempt. Check the actual licence/subtype, location, electricity supply, pool and meter evidence. The electricity fee is separate from business income tax; the old price-banded charge description is superseded by the current art. 659 rates/conditions.
 
-### Mining income
-- Income from mining (whether realised in crypto or fiat) is **business income** → corporate income tax (КПН, 20%) for entities or individual income tax (ИПН, 10%) for individuals, on the net result.
-- The **digital-mining fee** on electricity is a **separate** charge on top of income tax, scaled to the price paid per kWh (cheaper power → higher fee). Verify the current band table.
+From 1 May 2026, the national regulated perimeter extends beyond AIFC. Digital Assets Law art. 12-1 permits specified licensed/registered National Bank providers, AIFC licensed participants, regulatory-sandbox and other listed cases. The National Bank’s official 30 April release explains the licensing/registration outside AIFC and its separate relationship with AIFC regulation. The old AIFC-only rule and old secured/unsecured shorthand are incomplete: distinguish unsecured crypto from the current digital-financial-asset categories. Do not assume P2P/offshore activity is unrestricted; establish the actual provider’s permission and applicable rule.
 
-### Individuals' gains on digital assets
-- A gain on **disposal** of a digital asset (sale proceeds − documented acquisition cost) is **taxable income** for an individual at **ИПН 10%**, declared in the annual individual declaration. Losses and undocumented cost basis → flag.
-- Crypto-to-crypto and timing rules under the 2026 Tax Code: **verify** (treat disposal-for-value as the taxable event by default).
+Individual art. 389 cost ordinarily uses documented acquisition value, with specific values for distributions, income already recognised, receivable settlement, previously taxed gifts, inheritance/charity and prescribed valuation evidence. Preferential-tax-state-source assets and cases where the statutory cost provisions cannot determine a cost can have zero original cost. Do not invent a cost, treat every missing statement as legal proof of zero, or apply an unverified loss offset. Corporate/business asset disposal uses art. 326, with different loss and reorganisation provisions; mining-income recognition under art. 325 is not replaced by that disposal formula. Art. 327 denies a second deduction for mining-pool service costs.
 
-## Section 4 — Worked Examples
+Apply `kz-income-tax` for the relevant individual/ИП annual schedule and `kz-corporate-income-tax` for companies; neither an unconditional individual flat rate nor one corporate headline decides every fact pattern. General ИП rules require eligible deductions and the appropriate income category. VAT treatment, crypto-to-crypto characterisation, staking/airdrops and special valuation implementation need their own check; no guessed disposal date or rate is substituted.
 
-**Example 1 — Individual sells BTC.** Buys BTC for ₸4,000,000, sells for ₸6,000,000. Gain ₸2,000,000 × 10% ИПН = **₸200,000**, declared in the annual return. (Requires acquisition proof.)
+## Deadlines and filing
 
-**Example 2 — Home miner.** Mines and sells coins for ₸3,000,000 in the year; documented costs ₸1,200,000. Net ₸1,800,000 taxed at ИПН 10% = ₸180,000, **plus** the digital-mining fee on the electricity consumed (separate). Licensing required.
+Mining fee: identify actual quarterly kWh and conditions, compute the correct art. 659 branch, use the current mining-fee declaration in the taxpayer cabinet, validate, retain acceptance and pay/verify allocation by arts. 660–661 deadlines. No current electronic line map is invented. Individual gains/assets can trigger income/property and asset disclosure obligations; use `kz-income-tax` and current arts. 417–424 for the applicable job rather than assuming cash-out is the only taxable/reportable event. Keep wallet/exchange statements, acquisition/disposal documents, valuation and fund movements linked to the return.
 
-## Section 10 — Prohibitions
-- NEVER assert that offshore/P2P crypto trading by residents is unrestricted — it is channelled through the AIFC.
-- NEVER compute a gain without documented acquisition cost.
-- NEVER omit the digital-mining fee for miners — it is separate from income tax.
-- NEVER state a specific ₸/kWh mining fee or VAT treatment without verifying the current 2026 figures.
-- NEVER present a figure as final — direct the client to a Kazakhstan accountant.
+## Penalties and interest
 
-## Disclaimer
-This skill is informational only and not tax, legal, or financial advice. Kazakhstan's digital-asset and mining rules are evolving (new Tax Code 2026, AIFC rules) — verify current rates, the digital-mining fee bands, and licensing status with the КГД and AIFC. All outputs must be reviewed and signed off by a qualified Kazakhstan accountant before filing. The most up-to-date version is maintained at [openaccountants.com](https://www.openaccountants.com).
+The KZT 25 mining-fee branch is a statutory fee calculation, not a licence to operate or an exhaustive penalty. Licensing, unregulated activity, tax understatement and late payment can have separate consequences requiring the current applicable provision.
+
+## Cross-border points
+
+Confirm residence, foreign providers and source of assets. AIFC versus national-provider regulation and tax treatment are separate questions. Do not present offshore/P2P trading as automatically lawful, apply treaty relief without entitlement, or assume assets held abroad escape declaration.
+
+## Two worked examples that recompute
+
+Case 1: preserved individual BTC disposal, documented purchase KZT 4,000,000 and sale KZT 6,000,000, no other adjustments and ordinary annual income still below its higher-rate threshold. Gain KZT 2,000,000 gives KZT 200,000 under the owning lower-band schedule. This does not establish regulatory permission.
+
+```oa-check
+name: Documented individual digital-asset disposal
+inputs:
+  sale: 6000000
+  documented_cost: 4000000
+steps:
+  - gain: max(sale - documented_cost, 0)
+  - lower_band_tax: gain * 0.10
+expected:
+  gain: 2000000
+  lower_band_tax: 200000
+```
+
+Case 2: hypothetical licensed miner consumes 10,000 kWh. Ordinary fee is KZT 20,000; if the precise own-generation conditions apply it is KZT 10,000; missing licence/meter conditions produce KZT 250,000 on the determined consumption base. Do not choose the low branch solely from an electricity invoice label.
+
+```oa-check
+name: Mining electricity condition comparison
+inputs:
+  kwh: 10000
+steps:
+  - ordinary_fee: kwh * 2
+  - qualifying_generation_fee: kwh * 1
+  - noncompliant_fee: kwh * 25
+expected:
+  ordinary_fee: 20000
+  qualifying_generation_fee: 10000
+  noncompliant_fee: 250000
+```
+
+Preserved former “home miner” case: KZT 3,000,000 sale receipts less KZT 1,200,000 claimed costs arithmetically leaves KZT 1,800,000, and a hypothetical applicable lower-band ИП tax would be KZT 180,000 before the separate mining fee. This is not a valid automatic tax result: first establish lawful licensed status, art. 325 recognised mining value, allowable costs (without double-deducting pool costs), income category and the separate measured fee. If those are absent, refuse the old shortcut.
+
+## Ask the client first
+
+- Residence and individual/ИП/company status; trading versus mining activity and dates?
+- Provider permission/AIFC or national perimeter and actual mining licence/subtype?
+- Complete acquisition/disposal, wallet/pool and valuation evidence?
+- Electricity generation/source, kWh, control meter and licence condition?
+- Other annual taxable income, costs, already recognised income and declaration history?
+
+## Sources
+
+| Source and operative sections actually read | URL | Read on |
+|---|---|---|
+| Read for Tax Code arts. 325–327, 363, 389, 417–424 and 657–661 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
+| Read for current Digital Assets Law arts. 9–10 and 12-1, ordinary browser | https://adilet.zan.kz/rus/docs/Z2300000193 | 2026-11-14 |
+| Read for National Bank 30 April release: categories and regulatory perimeter from 1 May 2026 | https://nationalbank.kz/ru/news/informacionnye-soobshcheniya/19193 | 2026-11-14 |
+
+Not yet confirmed: Crypto-to-crypto and staking/airdrop classification, specific valuation implementation, individual loss offsets, asset-specific VAT and current electronic form boxes. Do not reuse the old AIFC-only restriction, price-banded electricity charge or unqualified home-miner net-profit shortcut.
