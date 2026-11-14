@@ -8,11 +8,11 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `cayman-tax.md`
-5. `ky-company-formation.md`
-6. `ky-corporate-income-tax.md`
-7. `ky-payroll-social.md`
-8. `ky-tax-overview.md`
+4. `ky-company-formation.md`
+5. `ky-corporate-income-tax.md`
+6. `ky-payroll-social.md`
+7. `ky-tax-overview.md`
+8. `ky-vat-gst.md`
 9. `payroll-workflow-base.md`
 10. `company-formation-workflow-base.md`
 11. `workflow-base.md`
