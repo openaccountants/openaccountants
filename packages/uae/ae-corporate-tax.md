@@ -1,14 +1,15 @@
 ---
 name: ae-corporate-tax
 description: "Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \"how much tax do I pay in UAE\", \"corporate tax UAE\", \"CT return\", \"FTA\", \"small business relief\", \"free zone tax\", \"qualifying free zone person\", \"AED 375,000\", \"9% tax\", \"taxable income UAE\", \"corporate tax registration\", \"UAE tax return\", \"self-employed tax UAE\", \"freelancer tax Dubai\", \"EmaraTax\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue not exceeding AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Wages are outside Corporate Tax; natural-person business scope has a turnover test. ALWAYS read this skill before touching any UAE corporate tax work."
-version: 2.4
+version: 2.5
 category: IT-CORP
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # UAE Corporate Tax: 2026 rates, scope, Small Business Relief, free zones and filing

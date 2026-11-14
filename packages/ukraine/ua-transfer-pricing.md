@@ -1,14 +1,15 @@
 ---
 name: ua-transfer-pricing
 description: "Ukrainian transfer pricing (трансфертне ціноутворення) for tax year 2026 under article 39 of the Tax Code of Ukraine. Covers controlled deals (related non-residents, commission agents, Cabinet of Ministers low-tax states and entity forms, a non-resident and its Ukrainian PE), the UAH 150 million income and UAH 10 million per-counterparty thresholds, related persons (25% and art. 14.1.159), the five methods, the range and median rule, self-adjustment, the controlled transactions report and group notice due 1 October, the local file in 30 days, the master file (EUR 50 million) in 90 days, the country-by-country report (EUR 750 million), APAs and the art. 120 fines. Trigger on: transfer pricing Ukraine, контрольовані операції, звіт про контрольовані операції, ТЦУ, master file Ukraine, CbCR Ukraine. Out of scope: corporate tax generally (ua-corporate-income-tax), withholding, treaties and CFC rules (ua-cross-border), VAT (ukraine-vat)."
-version: 0.1
+version: 0.2
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Ukraine: transfer pricing (2026)

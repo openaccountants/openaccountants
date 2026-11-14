@@ -1,17 +1,18 @@
 ---
 name: pt-corporate-tax
 description: "Portuguese corporate income tax (IRC) for tax year 2026: resident companies in mainland Portugal and permanent establishments. Covers the 19% rate for periods starting in 2026 (20% in 2025, 18% in 2027, 17% from 2028), the 15% SME and 12.5% startup rate on the first EUR 50,000, derrama municipal (up to 1.5%) and derrama estadual (3%, 5%, 9%), autonomous taxation, losses (no time limit, 65% cap, 75% for 2020-2021 losses), the interest limit, participation exemption, CFC, payments on account, the repealed PEC, Modelo 22 by 31 May, IES by 15 July, fines, 7.221% late interest, SIFIDE II and RFAI. Trigger on: IRC Portugal, Modelo 22, derrama, tributação autónoma, pagamentos por conta, prejuízos fiscais. Also states the Madeira and Azores 2026 rates (13.3%, 10.5% on the first EUR 50,000) and the CINM 5% rate. Out of scope: regional surcharges and income allocation between regions; banks, insurers, funds; transfer pricing (pt-transfer-pricing); non-residents and withholding (pt-cross-border); VAT (portugal-vat-return); shareholders' IRS (pt-irs-employees-investment)."
-version: 0.2
+version: 0.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Portugal: corporate income tax (IRC), tax year 2026 v0.2
+# Portugal: corporate income tax (IRC), tax year 2026 v0.3
 
 This skill computes Portuguese corporate income tax (Imposto sobre o Rendimento das Pessoas Coletivas, IRC) for a 2026 tax period. It covers the rates, the two surcharges (derrama municipal and derrama estadual), autonomous taxation, losses, the interest limit, the participation exemption, payments on account, the Modelo 22 and the IES, fines and interest, and the two main investment credits (SIFIDE II and RFAI). Every figure comes from the consolidated Código do IRC (CIRC) and other codes on the Portal das Finanças, read on 24 October 2026, or from the Diário da República.
 

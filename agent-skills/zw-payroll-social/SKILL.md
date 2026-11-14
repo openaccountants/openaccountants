@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/zw-payroll-social"
   jurisdiction: "ZW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Zimbabwe payroll
@@ -22,13 +22,13 @@ ZIMRA lists no 2026 table as read on 1 November 2026. The 2025 tables are the la
 
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
-| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables |
+| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables |
 | USD monthly 100.01 to 300 | 20%, deduct 20 | 2026 | Same | same |
 | USD monthly 300.01 to 1,000 | 25%, deduct 35 | 2026 | Same | same |
 | USD monthly 1,000.01 to 2,000 | 30%, deduct 85 | 2026 | Same | same |
 | USD monthly 2,000.01 to 3,000 | 35%, deduct 185 | 2026 | Same | same |
 | USD monthly above 3,000 | 40%, deduct 335 | 2026 | Same | same |
-| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | same |
+| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables |
 | ZWG monthly 2,800.01 to 8,400 | 20%, deduct 560 | 2026 | Same | same |
 | ZWG monthly 8,400.01 to 28,000 | 25%, deduct 980 | 2026 | Same | same |
 | ZWG monthly 28,000.01 to 56,000 | 30%, deduct 2,380 | 2026 | Same | same |
@@ -39,8 +39,6 @@ ZIMRA lists no 2026 table as read on 1 November 2026. The 2025 tables are the la
 | NSSA pension, employer | 4.5% | 2026 | Same | same |
 | NSSA insurable ceiling | USD 700 a month | 2026 | NSSA says it is gazetted quarterly; the page carries no date | same |
 | Workers compensation, example IC 0110 | 1.38% | 2026 | Employer only; rate depends on industry code and NSSA notice | same |
-| ZIMDEF levy | unverified: 1% of wage bill | 2026 | Not reconfirmed on an official page | unverified |
-| National minimum wage | unverified: USD 150 a month | 2026 | SI 186 of 2024 not opened | unverified |
 
 ## The base
 
@@ -50,7 +48,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-payroll
 
-### Zimbabwe Payroll Skill v1.0
+### Zimbabwe Payroll Skill v1.1
 
 > **Verification status:** Tier 2. `verified_by: pending`  -  this skill has NOT yet been signed off by a registered Zimbabwean tax accountant or ZIMRA-registered tax agent. Every output must be labelled as an estimate and routed to a qualified professional.
 
@@ -562,8 +560,8 @@ expected:
 | ZIMRA Tax Tables page and 2025 PDFs, monthly and annual tables | https://www.zimra.co.zw/domestic-taxes/tax-tables | 2026-11-01 |
 | NSSA Contributions page, whole page, in a browser | https://www.nssa.org.zw/contributions/ | 2026-11-01 |
 
-Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE.
+Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE; rows moved out of the rates table on 2026-11-14: ZIMDEF levy 1% of wage bill (earlier version) and national minimum wage USD 150 a month (SI 186 of 2024 not opened).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

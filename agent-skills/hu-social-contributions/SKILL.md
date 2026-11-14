@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-social-contributions"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Hungary: social contributions for the self-employed (2026)
@@ -192,21 +192,21 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tbj., Act CXXII of 2019 (social security), 4. §, 10. §, 23.-27. §, 34. §, 38.-40. §, 42. §, 77. §, 80.-81. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-10-23 |
-| Szocho tv., Act LII of 2018 (social contribution tax), 1. §, 2. §, 5. §, 6. §, 8.-9. §, 13. §, 19. §, 34. §; 8. § (1) and (3) as amended by Act LXXXIV of 2025, 28. § (no 112.5% multiplier from 2026-01-01) | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
-| Szja tv., Act CXVII of 1995 (personal income tax), 1. számú melléklet 4.48. | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
-| Kata tv., Act XIII of 2022, 8. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-10-23 |
-| Art., Act CL of 2017 (tax procedure), 50. §, 52. §, 209. §, 212. §, 215. §, 220.-221. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-10-23 |
+| Tbj., Act CXXII of 2019 (social security), 4. §, 10. §, 23.-27. §, 34. §, 38.-40. §, 42. §, 77. §, 80.-81. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-11-14 |
+| Szocho tv., Act LII of 2018 (social contribution tax), 1. §, 2. §, 5. §, 6. §, 8.-9. §, 13. §, 19. §, 34. §; 8. § (1) and (3) as amended by Act LXXXIV of 2025, 28. § (no 112.5% multiplier from 2026-01-01) | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-11-14 |
+| Read for the points the body cites to it: Szja tv., Act CXVII of 1995 (personal income tax), 1. számú melléklet 4.48. | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-11-14 |
+| Kata tv., Act XIII of 2022, 8. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-11-14 |
+| Art., Act CL of 2017 (tax procedure), 50. §, 52. §, 209. §, 212. §, 215. §, 220.-221. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-11-14 |
+| Read for Monthly floor for TB and szocho, full-time sole trader: Government Decree 426/2025. (XII. 23.) on the 2026 minimum wage and guaranteed minimum wage | https://njt.jog.gov.hu/jogszabaly/2025-426-20-22 | 2026-11-14 |
 | NAV information sheet 3, Egyéni vállalkozók szja- és járulékkötelezettsége (2026-08-31) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31. | 2026-10-23 |
-| NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-10-23 |
-| NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-10-23 |
-| NAV information sheet 91, Az egészségügyi szolgáltatási járulék (2026-01-09) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09 | 2026-10-23 |
-| NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
-| MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
+| Read for Tax-free flat-rate income, outside the TB and szocho base, Pensioner using a mothers' allowance: szocho on flat-rate income above four times the annual average wage: NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-11-14 |
+| Read for the points the body cites to it: NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-11-14 |
+| Read for Health service contribution (egészségügyi szolgáltatási járulék), for an uninsured person, for example during suspension: NAV information sheet 91, Az egészségügyi szolgáltatási járulék (2026-01-09) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09 | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-11-14 |
+| Read for Late payment interest (késedelmi pótlék): MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-11-14 |
 
 Not yet confirmed: NAV information sheet 12 on company members (társas vállalkozó) was not read, so their part-month, multiple-company and suspension rules are left out; voluntary pension top-ups and agreements for extra insurance (megállapodás) are not covered.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

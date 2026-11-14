@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sj-svalbard-coal-export-duty"
   jurisdiction: "SJ"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Svalbard: coal-export duty in 2026 v0.1
+# Svalbard: coal-export duty in 2026 v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,12 +32,12 @@ All bands below are from the [complete 2026 coal-duty decision](https://lovdata.
 | Over 100,000 through 300,000 | 200,000 tonnes | 0.9% | same |
 | Over 300,000 through 600,000 | 300,000 tonnes | 0.8% | same |
 | Over 600,000 through 1,000,000 | 400,000 tonnes | 0.7% | same |
-| Over 1,000,000 through 1,500,000 | 500,000 tonnes | 0.6% | same |
-| Over 1,500,000 through 2,100,000 | 600,000 tonnes | 0.5% | same |
-| Over 2,100,000 through 2,800,000 | 700,000 tonnes | 0.4% | same |
-| Over 2,800,000 through 3,600,000 | 800,000 tonnes | 0.3% | same |
-| Over 3,600,000 through 4,500,000 | 900,000 tonnes | 0.2% | same |
-| Over 4,500,000 through 5,500,000 | 1,000,000 tonnes | 0.1% | same |
+| Over 1,000,000 through 1,500,000 (computed: running total of the slices) | 500,000 tonnes | 0.6% | same |
+| Over 1,500,000 through 2,100,000 (computed: running total of the slices) | 600,000 tonnes | 0.5% | same |
+| Over 2,100,000 through 2,800,000 (computed: running total of the slices) | 700,000 tonnes | 0.4% | same |
+| Over 2,800,000 through 3,600,000 (computed: running total of the slices) | 800,000 tonnes | 0.3% | same |
+| Over 3,600,000 through 4,500,000 (computed: running total of the slices) | 900,000 tonnes | 0.2% | same |
+| Over 4,500,000 through 5,500,000 (computed: running total of the slices) | 1,000,000 tonnes | 0.1% | same |
 | Exporter/producer records | Submit by 31 December | Record and evidence obligation | [Act §3](https://lovdata.no/dokument/NL/lov/1925-07-17-2) |
 | Payment and ordinary appeal | Each within six weeks from the statutory dispatch/availability event | An appeal does not suspend payment | [Act §§5–6](https://lovdata.no/dokument/NL/lov/1925-07-17-2) |
 
@@ -146,4 +146,4 @@ Not yet confirmed: Current coal-specific electronic filing channel/departmental 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-coal-export-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-coal-export-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-coal-export-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-coal-export-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.

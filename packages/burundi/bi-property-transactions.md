@@ -5,12 +5,13 @@ jurisdiction: BI
 category: international
 tax_year: 2026
 tax_year_notes: "Calendar 2026: modified 2025/26 budget from 1 January; 2026/27 budget from 1 July. Principal registration text and stated budget overlays only; unresolved implementing instruments and operational steps remain held."
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
+type: computation
 ---
 
-# Burundi: property transactions and electronic-title charges for 2026 v0.1
+# Burundi: property transactions and electronic-title charges for 2026 v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 

@@ -1,14 +1,15 @@
 ---
 name: se-social-contributions
 description: "Use for Swedish social contributions of the self-employed in 2026: egenavgifter of 28.97% on active business income of a sole trader or a partner in a handelsbolag, and their components; 10.21% for those born 1938-1958 or on full pension or sickness compensation; särskild löneskatt of 24.26% on passive business; the 25% schablonavdrag and its NE or N3A reconciliation; the 7.5% special deduction and the regional deduction; waiting-period sickness rates; the 7% allmän pensionsavgift, its ceiling and tax credit; payment through F-skatt and settlement in the final tax decision; penalties and interest. Also lists the employer rates (31.42%, 10.21% from 67, youth reduction, växa refund) a sole trader with staff needs. Trigger on: egenavgifter, särskild löneskatt, schablonavdrag, allmän pensionsavgift, karensdagar, enskild firma avgifter. Out of scope: sweden-payroll, se-income-tax, se-employee-income-tax, se-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Sweden: self-employed social contributions (egenavgifter)
@@ -34,26 +35,26 @@ F-skatt, FA-skatt and special A-skatt govern how tax is collected. The absence o
 | Egenavgifter (SAL part) | 16.35% of the contribution base: sickness 3.64%, parental 2.00%, old-age pension 10.21%, survivor's pension 0.30%, labour market 0.10%, work injury 0.10% | 2026 | SAL 3 kap. 13 § (Lag 2025:1362); https://data.riksdagen.se/dokument/sfs-2000-980.text |
 | Allmän löneavgift on the egenavgift base | 12.62% (a tax, not an insurance charge) | 2026 | Lag (1994:1920) om allmän löneavgift 2-3 §§ (Lag 2025:1360); https://data.riksdagen.se/dokument/sfs-1994-1920.text |
 | Full egenavgifter, active business, born 1959 or later, 7 waiting days | 28.97% (16.35% + 12.62%) | 2026 | SAL 3 kap. 13 §; Lag 1994:1920 3 §; https://www.skatteverket.se/egenavgifter |
-| Aged 67 at 1 January 2026 (born 1938-1958) | 10.21% old-age pension contribution only; no allmän löneavgift | 2026 | SAL 3 kap. 15 § (Lag 2022:889, in force 1 January 2026); Lag 1994:1920 2 § third paragraph |
-| Born 1959 or later with full old-age pension (income and premium pension) all of 2026, or full sickness or activity compensation for any part of 2026 | 10.21% | 2026 | SAL 3 kap. 16 §; Lag 1994:1920 2 § |
-| Born 1937 or earlier | 0% | 2026 | SAL transitional rules (2000:980) point 6 |
+| Aged 67 at 1 January 2026 (born 1938-1958) | 10.21% old-age pension contribution only; no allmän löneavgift | 2026 | SAL 3 kap. 15 § (Lag 2022:889, in force 1 January 2026); Lag 1994:1920 2 § third paragraph; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Born 1959 or later with full old-age pension (income and premium pension) all of 2026, or full sickness or activity compensation for any part of 2026 | 10.21% | 2026 | SAL 3 kap. 16 §; Lag 1994:1920 2 §; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Born 1937 or earlier | 0% | 2026 | SAL transitional rules (2000:980) point 6; https://www.skatteverket.se/egenavgifter |
 | Särskild löneskatt, passive business or estate | 24.26%, no age reduction | 2026 | SLF 2 §; https://data.riksdagen.se/dokument/sfs-1990-659.text |
-| No egenavgifter or särskild löneskatt | Contribution base under SEK 1,000 | 2026 | SAL 3 kap. 14 §; SLF 2 § second paragraph |
+| No egenavgifter or särskild löneskatt | Contribution base under SEK 1,000 | 2026 | SAL 3 kap. 14 §; SLF 2 § second paragraph; https://data.riksdagen.se/dokument/sfs-2000-980.text |
 | Sickness rate by chosen waiting period, on income up to 10 price base amounts (SEK 592,000) | 1 day 3.75%; 7 days 3.64%; 14 days 3.54%; 30 days 3.34%; 60 days 3.08%; 90 days 2.90%; 3.64% above SEK 592,000 | 2026 | SAL 3 kap. 17 §; https://www.skatteverket.se/egenavgifter |
 | Schablonavdrag (provisional deduction in the return) | Law: at most 25% of the base, at most 20% for passive business and estates. Skatteverket's 2026 table: 25% born 1959 or later; 10% born 1938-1958 or on full pension or sickness compensation; 0% born 1937 or earlier | 2026 | IL 16 kap. 29-30 §§; https://www.skatteverket.se/egenavgifter |
-| Special deduction (särskilt avdrag) | 7.5% of the business part of the base, at most SEK 15,000 a year; only if that part exceeds SEK 40,000; not if 67 at 1 January or paying only 10.21% under SAL 3 kap. 16 §; never below the 10.21% part | 2026 | Lag (2023:748) 3 § (Lag 2023:754, in force 1 January 2026); https://data.riksdagen.se/dokument/sfs-2023-748.text |
-| Regional deduction (fixed establishment in the support area) | 10% of the base from that establishment, at most SEK 18,000 a year; first from allmän löneavgift; never below the 10.21% part; SEK 85,200 cap per handelsbolag and per person combining employer and own relief | 2026 | Lag (2001:1170) 2, 4, 6, 6 a §§ (Lag 2025:1338); https://data.riksdagen.se/dokument/sfs-2001-1170.text |
+| Special deduction (särskilt avdrag) | 7.5% of the business part of the base, at most SEK 15,000 a year; only if that part exceeds SEK 40,000; not if 67 at 1 January or paying only 10.21% under SAL 3 kap. 16 §; never below the 10.21% part | 2026 | Lag (2023:748) 3 § (Lag 2023:754, in force 1 January 2026); https://data.riksdagen.se/dokument/sfs-2023-748.text; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Regional deduction (fixed establishment in the support area) | 10% of the base from that establishment, at most SEK 18,000 a year; first from allmän löneavgift; never below the 10.21% part; SEK 85,200 cap per handelsbolag and per person combining employer and own relief | 2026 | Lag (2001:1170) 2, 4, 6, 6 a §§ (Lag 2025:1338); https://data.riksdagen.se/dokument/sfs-2001-1170.text; https://data.riksdagen.se/dokument/sfs-2000-980.text |
 | Allmän pensionsavgift | 7% of earned income (employment and active business), each type rounded down to the nearest SEK 100 | 2026 | Lag (1994:1744) om allmän pensionsavgift 2-3 §§; https://data.riksdagen.se/dokument/sfs-1994-1744.text |
 | Pension fee ceiling | Income above 8.07 income base amounts is ignored: SEK 673,038, so the fee is at most SEK 47,100; business income is cut first | 2026 | Lag 1994:1744 3 § third paragraph; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
-| Pension fee floor | No fee if earned income is under 42.3% of the price base amount (SEK 25,041.60) | 2026 | Lag 1994:1744 4 § |
-| Tax credit for the pension fee | 100% of the fee, set against municipal and state income tax and property tax and fee; a self-employed person must have paid the fee in time | 2026 | IL 67 kap. 4 §; SFL 62 kap. 17 § |
-| Income base amount (inkomstbasbelopp) | SEK 83,400 | 2026 | Socialförsäkringsbalk (2010:110) 58 kap. 26-27 §§; Skatteverket belopp och procent 2026 |
-| Price base amount (prisbasbelopp) | SEK 59,200 (higher amount SEK 60,500) | 2026 | Socialförsäkringsbalk 2 kap. 6-7 §§; Skatteverket belopp och procent 2026 |
-| Employer contributions (staff of a sole trader) | 31.42% = 18.80% (sickness 3.55%, parental 2.00%, old-age pension 10.21%, survivor's 0.30%, labour market 2.64%, work injury 0.10%) + 12.62% allmän löneavgift | 2026 | SAL 2 kap. 26 §; Lag 1994:1920 1 and 3 §§ |
-| Employer: employee aged 67 at 1 January 2026 | 10.21%; 0% for employees born 1937 or earlier | 2026 | SAL 2 kap. 27 §; SAL transitional rules point 5 |
+| Pension fee floor | No fee if earned income is under 42.3% of the price base amount (SEK 25,041.60) | 2026 | Lag 1994:1744 4 §; https://data.riksdagen.se/dokument/sfs-1994-1744.text |
+| Tax credit for the pension fee | 100% of the fee, set against municipal and state income tax and property tax and fee; a self-employed person must have paid the fee in time | 2026 | IL 67 kap. 4 §; SFL 62 kap. 17 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Income base amount (inkomstbasbelopp) | SEK 83,400 | 2026 | Socialförsäkringsbalk (2010:110) 58 kap. 26-27 §§; Skatteverket belopp och procent 2026; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Price base amount (prisbasbelopp) | SEK 59,200 (higher amount SEK 60,500) | 2026 | Socialförsäkringsbalk 2 kap. 6-7 §§; Skatteverket belopp och procent 2026; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Employer contributions (staff of a sole trader) | 31.42% = 18.80% (sickness 3.55%, parental 2.00%, old-age pension 10.21%, survivor's 0.30%, labour market 2.64%, work injury 0.10%) + 12.62% allmän löneavgift | 2026 | SAL 2 kap. 26 §; Lag 1994:1920 1 and 3 §§; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Employer: employee aged 67 at 1 January 2026 | 10.21%; 0% for employees born 1937 or earlier | 2026 | SAL 2 kap. 27 §; SAL transitional rules point 5; https://data.riksdagen.se/dokument/sfs-2000-980.text |
 | Employer: youth reduction, employee aged 18-22 at 1 January 2026 (born 2003-2007), pay from 1 April 2026 to 30 September 2027 | 20.81% on pay up to SEK 25,000 a calendar month; 31.42% above | 2026 | Lag (2026:100) 2 §; https://data.riksdagen.se/dokument/sfs-2026-100.text |
-| Employer: växa refund (first and second employee; sole traders qualify) | Refund of all employer contributions except the 10.21% part, on pay up to SEK 35,000 a month, for the first 24 months; employment of at least three months and at least 20 hours a week; can be combined with the youth reduction (10 § bars only the old växa rules and Lag 2021:423) | 2026 | Lag (2025:1334) 3, 7-8, 10 §§; https://data.riksdagen.se/dokument/sfs-2025-1334.text |
-| Employer: no contributions on small pay | Pay to one person under SEK 1,000 in the year | 2026 | SAL 2 kap. 14 § |
+| Employer: växa refund (first and second employee; sole traders qualify) | Refund of all employer contributions except the 10.21% part, on pay up to SEK 35,000 a month, for the first 24 months; employment of at least three months and at least 20 hours a week; can be combined with the youth reduction (10 § bars only the old växa rules and Lag 2021:423) | 2026 | Lag (2025:1334) 3, 7-8, 10 §§; https://data.riksdagen.se/dokument/sfs-2025-1334.text; https://data.riksdagen.se/dokument/sfs-2000-980.text |
+| Employer: no contributions on small pay | Pay to one person under SEK 1,000 in the year | 2026 | SAL 2 kap. 14 §; https://data.riksdagen.se/dokument/sfs-2000-980.text |
 
 The 2026 components of egenavgifter changed from 2025 (parental 2.60% to 2.00%, survivor's 0.60% to 0.30%, work injury 0.20% to 0.10%, allmän löneavgift 11.62% to 12.62%), but the total stays 28.97%. From 1 January 2026 the age for the 10.21% rate is 67 at the start of the year, not 66. Someone born 1959 turns 67 during 2026 and pays the full rate for the whole year.
 

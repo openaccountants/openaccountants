@@ -1,13 +1,14 @@
 ---
 name: se-closely-held-company-312
 description: "Use for the Swedish 3:12 rules for an individual who owns qualified shares (kvalificerade andelar) in a closely held company (fåmansföretag) for income year 2026, filed on form K10 with the 2027 return. Covers what a fåmansföretag and a qualified share are, the new single gränsbelopp rule from 2026 (grundbelopp of four income base amounts, SEK 322,400; wage-based amount of 50% of the payroll above eight income base amounts; interest of 11.55% on cost above SEK 100,000; saved dividend space with no uplift), dividends within the limit taxed at 20%, the excess taxed as earned income up to SEK 7,506,000, gains on qualified shares, losses, and the 3 May 2027 deadline. Trigger on: 3:12, fåmansföretag, K10, gränsbelopp, grundbelopp, lönebaserat utrymme, sparat utdelningsutrymme, utdelning aktiebolag, kvalificerade andelar. Out of scope: se-corporate-tax, se-employee-income-tax, se-capital-gains, sweden-payroll, se-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Sweden: the 3:12 rules for owners of closely held companies (income year 2026)
@@ -45,16 +46,16 @@ A shareholder whose shares are not qualified reports a dividend from a fåmansf�
 | Income base amount used for the gränsbelopp (the year before the income year) | SEK 80,600 (2025) | 2026 | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/andradereglerinforinkomstdeklarationen2027.4.4a54dc8b19aa6175a152359.html; IL 57 kap. 9 § |
 | Grundbelopp (4 income base amounts), split equally over all shares in the company; one per owner across all companies | SEK 322,400 | 2026 | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/beloppochprocentsatser.4.34f3b0b713e2cf5455b7288.html; IL 57 kap. 11 and 11 a §§ |
 | Grundbelopp for income year 2027 | SEK 333,600 | 2027 | same K10 page |
-| Wage-based amount (lönebaserat utrymme) | 50% of the owner's share of last year's payroll above 8 income base amounts | 2026 | IL 57 kap. 16 § |
-| Deduction from the payroll (8 income base amounts) | SEK 644,800 | 2026 | Skatteverket, ändrade regler page |
-| Cap on the wage-based amount | 50 times the cash pay the owner or a close relative took from the company and its subsidiaries in 2025 | 2026 | IL 57 kap. 16 § |
-| Interest on cost basis | Government borrowing rate at 30 November 2025 (2.55%) plus 9 points = 11.55%, on the part of the cost above SEK 100,000 | 2026 | K10 page; IL 57 kap. 8 and 11 §§ |
-| Saved dividend space (sparat utdelningsutrymme) | Carried forward at face value; no uplift from income year 2026 (2025: uplift of 104.96%) | 2026 | Skatteverket, ändrade regler and K10 pages; IL 57 kap. 13 § |
+| Wage-based amount (lönebaserat utrymme) | 50% of the owner's share of last year's payroll above 8 income base amounts | 2026 | IL 57 kap. 16 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Deduction from the payroll (8 income base amounts) | SEK 644,800 | 2026 | Skatteverket, ändrade regler page; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/andradereglerinforinkomstdeklarationen2027.4.4a54dc8b19aa6175a152359.html |
+| Cap on the wage-based amount | 50 times the cash pay the owner or a close relative took from the company and its subsidiaries in 2025 | 2026 | IL 57 kap. 16 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Interest on cost basis | Government borrowing rate at 30 November 2025 (2.55%) plus 9 points = 11.55%, on the part of the cost above SEK 100,000 | 2026 | K10 page; IL 57 kap. 8 and 11 §§; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/andradereglerinforinkomstdeklarationen2027.4.4a54dc8b19aa6175a152359.html |
+| Saved dividend space (sparat utdelningsutrymme) | Carried forward at face value; no uplift from income year 2026 (2025: uplift of 104.96%) | 2026 | Skatteverket, ändrade regler and K10 pages; IL 57 kap. 13 §; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/beloppochprocentsatser.4.34f3b0b713e2cf5455b7288.html |
 | Dividend within the gränsbelopp | Two thirds taken up as capital income at 30%: 20% of the dividend | 2026 | IL 57 kap. 20 §; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/raknautskattenpadinutdelning.4.b1014b415f3321c0de27ce.html |
-| Dividend above the gränsbelopp | Earned income (tjänst) at municipal and state rates | 2026 | IL 57 kap. 20 § |
-| Cap on dividends taxed as earned income (90 income base amounts of the income year), per company, owner and close relatives together | SEK 7,506,000; the rest is capital income at 30% in full | 2026 | K10 page; IL 57 kap. 20 a §; 42 kap. 15 a § |
-| Cap on gains taxed as earned income (100 income base amounts), year of sale and five years before, owner and close relatives together | SEK 8,340,000 | 2026 | K10 page; IL 57 kap. 22 § |
-| Loss on qualified shares | Two thirds deductible against gains on shares; any rest two thirds of 70% against other capital income | 2026 | IL 48 kap. 20 and 20 a §§ |
+| Dividend above the gränsbelopp | Earned income (tjänst) at municipal and state rates | 2026 | IL 57 kap. 20 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Cap on dividends taxed as earned income (90 income base amounts of the income year), per company, owner and close relatives together | SEK 7,506,000; the rest is capital income at 30% in full | 2026 | K10 page; IL 57 kap. 20 a §; 42 kap. 15 a §; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/raknautskattenpadinutdelning.4.b1014b415f3321c0de27ce.html |
+| Cap on gains taxed as earned income (100 income base amounts), year of sale and five years before, owner and close relatives together | SEK 8,340,000 | 2026 | K10 page; IL 57 kap. 22 §; https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/forsaljningavkvalificeradeaktierkonkursellerlikvidation.4.b1014b415f3321c0de2820.html |
+| Loss on qualified shares | Two thirds deductible against gains on shares; any rest two thirds of 70% against other capital income | 2026 | IL 48 kap. 20 and 20 a §§; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Late filing fee (individual) | SEK 1,250; a second after three months; a third after two more | 2026 | SFL 48 kap. 6-7 §§, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 
 ## The taxable base
@@ -207,14 +208,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393: 56 kap. 2-6 §§; 57 kap. 2-24, 36 §§; 42 kap. 15 a §; 48 kap. 20-20 a §§; 63 kap. 5 §; transitional provisions to Lag (2025:1361) | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-23 |
-| Skatteförfarandelag (2011:1244): 32 kap. 1 §; 48 kap. 6-7 §§; 49 kap. 11 § | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-23 |
-| Skatteverket: Ändrade regler för delägare i fåmansföretag inför inkomstdeklarationen 2027 | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/andradereglerinforinkomstdeklarationen2027.4.4a54dc8b19aa6175a152359.html | 2026-10-23 |
-| Skatteverket: Belopp och procentsatser (blankett K10) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/beloppochprocentsatser.4.34f3b0b713e2cf5455b7288.html | 2026-10-23 |
-| Skatteverket: Räkna ut skatten på din utdelning (20% within the limit, takbelopp; describes the 2025 rules) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/raknautskattenpadinutdelning.4.b1014b415f3321c0de27ce.html | 2026-10-23 |
-| Skatteverket: Fåmansföretag och kvalificerade andelar (close relatives, five-year test, outsider rule) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/famansforetagochkvalificeradeandelar.4.6efe6285127ab4f1d2580001532.html | 2026-10-23 |
-| Skatteverket: Utdelning från ditt fåmansföretag (dividend date, K10 or K12, KU31 box 061) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/utdelningfrandittfamansforetag.4.b1014b415f3321c0de27b1.html | 2026-10-23 |
-| Skatteverket: Försäljning av kvalificerade aktier, konkurs eller likvidation | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/forsaljningavkvalificeradeaktierkonkursellerlikvidation.4.b1014b415f3321c0de2820.html | 2026-10-23 |
-| Skatteverket: Belopp och procent inkomstår 2026 (statslåneränta 2.55%, income base amount 2026 SEK 83,400) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-23 |
+| Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393: 56 kap. 2-6 §§; 57 kap. 2-24, 36 §§; 42 kap. 15 a §; 48 kap. 20-20 a §§; 63 kap. 5 §; transitional provisions to Lag (2025:1361) | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-11-14 |
+| Skatteförfarandelag (2011:1244): 32 kap. 1 §; 48 kap. 6-7 §§; 49 kap. 11 § | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-14 |
+| Read for Income base amount used for the gränsbelopp (the year before the income year), Deduction from the payroll (8 income base amounts), Interest on cost basis: Skatteverket: Ändrade regler för delägare i fåmansföretag inför inkomstdeklarationen 2027 | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/andradereglerinforinkomstdeklarationen2027.4.4a54dc8b19aa6175a152359.html | 2026-11-14 |
+| Read for Grundbelopp (4 income base amounts), split equally over all shares in the company; one per owner across all companies, Saved dividend space (sparat utdelningsutrymme): Skatteverket: Belopp och procentsatser (blankett K10) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/beloppochprocentsatser.4.34f3b0b713e2cf5455b7288.html | 2026-11-14 |
+| Read for Dividend within the gränsbelopp, Cap on dividends taxed as earned income (90 income base amounts of the income year), per company, owner and close relatives together: Skatteverket: Räkna ut skatten på din utdelning (20% within the limit, takbelopp; describes the 2025 rules) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/raknautskattenpadinutdelning.4.b1014b415f3321c0de27ce.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Fåmansföretag och kvalificerade andelar (close relatives, five-year test, outsider rule) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/famansforetagochkvalificeradeandelar.4.6efe6285127ab4f1d2580001532.html | 2026-11-14 |
+| Skatteverket: Utdelning från ditt fåmansföretag (dividend date, K10 or K12, KU31 box 061) | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/utdelningfrandittfamansforetag.4.b1014b415f3321c0de27b1.html | 2026-11-14 |
+| Read for Cap on gains taxed as earned income (100 income base amounts), year of sale and five years before, owner and close relatives together: Skatteverket: Försäljning av kvalificerade aktier, konkurs eller likvidation | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/famansforetag/forsaljningavkvalificeradeaktierkonkursellerlikvidation.4.b1014b415f3321c0de2820.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Belopp och procent inkomstår 2026 (statslåneränta 2.55%, income base amount 2026 SEK 83,400) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-11-14 |
 
 Not yet confirmed: the wording of the repealed 57 kap. 12 § second paragraph, 21 § second paragraph and 25-35 §§ that still apply until 2028 (data.riksdagen.se shows only the current text; Skatteverket calls them the index and capital-base rules for shares bought before 1990 or 1992); the new wording of the outsider rule in 57 kap. 5 § beyond the shorter four-year period from 2027; whether the 30% outsider threshold stays Skatteverket's practice under the new wording; whether a foreign company can be a fåmansföretag for a Swedish resident owner; that the part of a dividend taxed in tjänst carries no social contributions and is not pensionable income (socialavgiftslagen and socialförsäkringsbalken not read); the K10 form version for income year 2026, not yet published on 23 October 2026.
