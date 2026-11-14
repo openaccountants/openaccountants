@@ -44,7 +44,7 @@ Contributions under the Social Security Act, Cap. 18.09 (revised to 1 January 20
 | Employer, from 1 January 2026 | 8% (7% + 1% employment injury) | same |
 | Ceiling | EC$4,000 a month or EC$923 a week, earnings calculated to the nearest dollar | same |
 | 2026 monthly table | Employee 7%, employer 8%; for example 4,000 gives 280.00, 320.00, total 600.00 | [Social Security Fund monthly rate tables 2026](https://socialsecurity.ms/wp-content/uploads/2025/12/Monthly-Rates-2026.pdf) |
-| Self-employed, 1 January 2026 and after | 12% (11.5% in 2025) | [Social Security Act Cap. 18.09, Contributions Regulations reg.6(2)](https://parliament.ms/wp-content/uploads/2026/05/18.09-Social-Security-Act.pdf) |
+| Self-employed, 1 January 2026 and after | 12% (11½% in 2025) | [Social Security Act Cap. 18.09, Contributions Regulations reg.6(2)](https://parliament.ms/wp-content/uploads/2026/05/18.09-Social-Security-Act.pdf) |
 | Self-employed income categories, reg.7 | EC$600, 1,200, 1,800, 2,400, 3,000, 3,600 or 4,000 | same |
 | Pensionable age | 65 | [Social Security Act Cap. 18.09, s.2](https://parliament.ms/wp-content/uploads/2026/05/18.09-Social-Security-Act.pdf) |
 | Payment, reg.12 | At the end of the month wages are paid, or within one month after | same |
