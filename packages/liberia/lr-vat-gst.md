@@ -3,15 +3,16 @@ name: lr-vat-gst
 description: "Reads Liberia’s enacted GST rate changes and unresolved VAT transition for the 2026 tax year, distinguishing the old 12 percent regime from the 13 percent amendment and telecom surtax. Use for Liberia GST, a VAT registration, a manufacturer, taxable imports, service tax, invoice tax or the announced January 2027 rollout. The Guide records a published commencement conflict instead of declaring it solved, and uses conditional GST examples only after the applicable regime is established. Registration, base, returns and limited manufacturing-import relief are traced to the Code. The full VAT Act, commencement exception and deferral instrument remain missing, so this is not authority to issue an operative 2026 tax invoice or file a return."
 jurisdiction: LR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Liberia GST and VAT Transition v0.1
+# Liberia GST and VAT Transition v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
