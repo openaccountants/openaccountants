@@ -1,17 +1,18 @@
 ---
 name: es-modelo-111
 description: Use this Guide to compute and reconcile Spanish common-territory Modelo 111 withholding remittances for payments made in 2026. It covers payer and recipient classification, professional standard and startup rates, employee withholding inputs, in-kind payments, distinct recipient counts, the numbered form boxes, complementary returns, filing frequency, payment dates, negative returns, annual Modelo 190 reconciliation and certificates. Trigger phrases include Modelo 111, retenciones profesionales, retención siete por ciento, retención quince por ciento, certificado de retenciones, perceptor, ingreso a cuenta, declaración negativa and autoliquidación complementaria. Obtain the paid-income register, recipient tax status, signed reduced-rate evidence, payroll calculations and accepted earlier filings. Corporate service invoices, property rents, capital income and ordinary non-resident payments require their own correctly classified route.
-version: "1.2"
+version: "1.3"
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Spain: Modelo 111 and recipient reconciliation v1.2
+# Spain: Modelo 111 and recipient reconciliation v1.3
 
 Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 

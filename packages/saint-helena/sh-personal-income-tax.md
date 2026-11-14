@@ -2,17 +2,18 @@
 name: sh-personal-income-tax
 description: >
   Saint Helena island personal income tax for tax year 2026 (1 April 2026 to 31 March 2027). Covers the £7,000 personal allowance, the 26% and 31% bands, the 21% and 26% production rates, dividends, capital gains, pension allowance, who must file, the P50 individual return, instalments and penalties. Records that the 2026 bill for a £7,150 allowance did not pass. Use for income tax, tax-free allowance, self-employed or refund questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
-version: 0.3
+version: 0.4
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Saint Helena island: personal income tax v0.3
+# Saint Helena island: personal income tax v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 

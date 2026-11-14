@@ -1,16 +1,17 @@
 ---
 name: de-trade-tax
 description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-einkommensteuer-freelancer, germany-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
-version: 1.4
+version: 1.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Trade tax in Germany (Gewerbesteuer): collection period 2026

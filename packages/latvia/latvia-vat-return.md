@@ -1,14 +1,15 @@
 ---
 name: latvia-vat-return
 description: "Latvian value added tax (pievienotās vērtības nodoklis, PVN) for tax year 2026 under the VAT Law (Pievienotās vērtības nodokļa likums) as in force from 1 January 2026. Covers who must register (EUR 50,000 domestic threshold, the EUR 5,000 tolerance, the EUR 10,000 limit for EU acquisitions), the EU small-enterprise scheme (EUR 100,000 EU turnover), the 21%, 12% and 5% rates and what sits at each, including bread, milk, poultry and eggs at 12% from 1 July 2026 to 30 June 2027, input VAT limits for cars and entertainment, the domestic reverse charges, monthly and quarterly periods, the return by the 20th and payment by the 23rd, the EU sales list, structured e-invoices, late-filing fines and 0.05% a day late interest. Trigger on: Latvia VAT, PVN deklarācija, PVN return, register for VAT in Latvia. Out of scope: corporate income tax (lv-corporate-income-tax), individuals (latvia-income-tax), payroll (latvia-payroll), cross-border hub (lv-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Latvia: VAT (PVN) for 2026
