@@ -3,15 +3,16 @@ name: lr-company-formation
 description: "Routes a 2026 Liberia business formation through the Liberia Business Registry, distinguishes sole trader, partnership, corporation and limited liability company documents, and links registration to tax and social-security compliance. Use for Liberia company incorporation, a business registration certificate, RF-001, TIN registration, name reservation, an LLC or a foreign company. The Guide relies on published regulator and investment-agency instructions, preserves discrepancies between their document lists and removes unsupported agent prices and processing promises. It is an administrative starting point, not a complete Associations Law opinion or a guarantee of approval. Capital rules, current statutory fees, foreign investment restrictions and live forms remain explicit gaps in this partial pack."
 jurisdiction: LR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.1
+version: 0.2
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Liberia Company Formation and Entity Choice v0.1
+# Liberia Company Formation and Entity Choice v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

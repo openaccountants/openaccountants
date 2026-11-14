@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/georgia-vat"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Georgia (country): value added tax (2026) v2.1
+# Georgia (country): value added tax (2026) v2.2
 
 Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next month. A business must register once its taxable supplies pass GEL 100,000 in any 12 months in a row. Figures below are from Section VI (arts. 156-181^1) of the Tax Code of Georgia, consolidated on matsne.gov.ge to the law of 15 October 2026 (publication 247), read in English and checked against the Georgian text. Article letters follow the English translation.
 
@@ -31,19 +31,19 @@ Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | VAT rate | 18% | 2026 | Tax Code art. 166, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Compulsory registration threshold | GEL 100,000 of taxable supplies in any 12 calendar months in a row | 2026 | art. 165(1), same URL |
-| Time to apply after passing the threshold | 2 business days | 2026 | art. 165(1), same URL |
-| Cancelling registration on request | supplies not more than GEL 100,000 in the last 12 months and at least a year since registration | 2026 | art. 165^1(1), same URL |
-| Reorganisation or contribution in kind from a VAT payer | register before the first taxable supply, at the latest 10 days after | 2026 | art. 165(4)-(5), same URL |
-| Accounting period | calendar month | 2026 | art. 167, same URL |
-| Return and payment | by the 15th of the next month | 2026 | art. 168(1), same URL |
-| Import VAT on listed goods (codes 8401-9033) | within 45 days of release | 2026 | art. 168(3), same URL |
-| Proportional deduction, small exempt share | ignore if exempt supplies are under 5% of turnover | 2026 | art. 177(7), same URL |
-| Fixed assets used for mixed supplies: adjustment period | 10 years for immovable property, 5 years for other assets | 2026 | art. 177(6), same URL |
-| Time limit to deduct VAT on an invoice | 3 years from the end of the year of the supply | 2026 | art. 178(d), same URL |
-| VAT refund to foreign tourists | goods over GEL 200 a receipt (excluding VAT), taken out within 3 months | 2026 | art. 181(6)(b), same URL |
-| Trading while unregistered | fine of 5% of taxable supplies in the period | 2026 | art. 282(1), same URL |
-| Penalty interest | 0.05% of the unpaid tax a day | 2026 | art. 272(4), same URL |
+| Compulsory registration threshold | GEL 100,000 of taxable supplies in any 12 calendar months in a row | 2026 | art. 165(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Time to apply after passing the threshold | 2 business days | 2026 | art. 165(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Cancelling registration on request | supplies not more than GEL 100,000 in the last 12 months and at least a year since registration | 2026 | art. 165^1(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Reorganisation or contribution in kind from a VAT payer | register before the first taxable supply, at the latest 10 days after | 2026 | art. 165(4)-(5), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Accounting period | calendar month | 2026 | art. 167, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Return and payment | by the 15th of the next month | 2026 | art. 168(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Import VAT on listed goods (codes 8401-9033) | within 45 days of release | 2026 | art. 168(3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Proportional deduction, small exempt share | ignore if exempt supplies are under 5% of turnover | 2026 | art. 177(7), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Fixed assets used for mixed supplies: adjustment period | 10 years for immovable property, 5 years for other assets | 2026 | art. 177(6), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Time limit to deduct VAT on an invoice | 3 years from the end of the year of the supply | 2026 | art. 178(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| VAT refund to foreign tourists | goods over GEL 200 a receipt (excluding VAT), taken out within 3 months | 2026 | art. 181(6)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Trading while unregistered | fine of 5% of taxable supplies in the period | 2026 | art. 282(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest | 0.05% of the unpaid tax a day | 2026 | art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -177,4 +177,4 @@ Not yet confirmed: arts. 170-172 were amended by laws of June and November 2025 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

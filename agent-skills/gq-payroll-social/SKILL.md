@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gq-payroll-social"
   jurisdiction: "GQ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Equatorial Guinea Payroll and Social Contributions v0.2
+# Equatorial Guinea Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -24,12 +24,6 @@ Anyone paying taxable pay, including State bodies, local bodies, companies, indi
 |---|---|---|---|
 | Salary tax | Scale in the income tax skill (art 130) | 2026 | https://boe.gob.gq/files/LEY%20TRIBUTARIA.pdf |
 | Non-resident pay | 15% of gross (art 130.3) | 2026 | same |
-| Employer INSESO | unverified: 21.5% of gross salary, carried from the old skill | 2026 | unverified |
-| Employer Work Protection Fund | unverified: 1% of gross salary | 2026 | unverified |
-| Employee INSESO | unverified: 4.5% of net salary; deductible for salary tax (art 129.2) | 2026 | unverified |
-| Employee Work Protection Fund | unverified: 0.5% of net salary; deductible for salary tax (art 129.3) | 2026 | unverified |
-| Totals | unverified: 22.5% employer, 5% employee | 2026 | unverified |
-| Contribution ceiling | unverified: none found | 2026 | unverified |
 
 ## The base
 
@@ -110,8 +104,8 @@ expected:
 
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
-Not yet confirmed: all INSESO and Work Protection Fund rates, ceilings and deadlines (carried from the old skill, no official text found; boe.gob.gq searches returned none; the INSESO site did not open); minimum wage; employee base of net against gross.
+Not yet confirmed: all INSESO and Work Protection Fund rates, ceilings and deadlines (carried from the old skill, no official text found; boe.gob.gq searches returned none; the INSESO site did not open); minimum wage; employee base of net against gross; rows moved out of the rates table: employer INSESO 21.5% of gross, employer Work Protection Fund 1%, employee INSESO 4.5% of net and Work Protection Fund 0.5% of net (deductible for salary tax under art 129.2 and 129.3), totals 22.5% employer and 5% employee, no ceiling found.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gq-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gq-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ao-vat-gst"
   jurisdiction: "AO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Angola VAT (IVA) v0.2
+# Angola VAT (IVA) v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,11 +27,6 @@ The AGT page still describes the 2020 regimes (USD 250,000 limit, 3% transitiona
 | Standard rate | 14% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado |
 | Industrial equipment, import or transfer by the manufacturer | 5% after AGT procedure proving industrial nature and purpose. Lei 14/25 art 23(1) | 2026 | https://www.ucm.minfin.gov.ao/cs/groups/public/documents/document/aw41/mje2/~edisp/minfin5216784.pdf |
 | Cabinda, imports and goods | AGT page: 2%. Old version: 1%, and 2% for port and water services. The two disagree | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado |
-| Simplified regime | 7% on turnover (old version) | 2026 | unverified: Lei 14/23 code text not opened |
-| Simplified range | Kz 25,000,000 to 350,000,000 (old version) | 2026 | unverified: Lei 14/23 code text not opened |
-| General regime above | Kz 350,000,000 (old version) | 2026 | unverified: Lei 14/23 code text not opened |
-| Hotel and restaurant | 7% subject to conditions (old version) | 2026 | unverified: no official text opened |
-| Certain food and farm inputs | 5% (old version); the AGT page lists Annex I foods as exempt | 2026 | unverified: no current annex opened |
 | Mobile payment platforms authorised by BNA | Exempt from IVA and stamp duty. Lei 14/25 art 35 | 2026 | https://www.ucm.minfin.gov.ao/cs/groups/public/documents/document/aw41/mje2/~edisp/minfin5216784.pdf |
 | Captive VAT: oil investors, State | 100% of invoiced IVA withheld by buyer; public enterprises excepted | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado |
 | Captive VAT: BNA, banks, insurers, telecoms | 50% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado |
@@ -111,8 +106,8 @@ expected:
 | AGT, IVA page (whole page read; undated, regime text is out of date, still describes 2020 rules) | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-valor-acrescentado | 2026-11-01 |
 | AGT quick guide, IVA periodic return (read in part: steps) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/iva/novos-guias/guia-rapido-declaracao-periodica-do-regime-geral-do-iva.pdf | 2026-11-01 |
 
-Not yet confirmed: Republished IVA Code (Lei 14/23), not opened: current regime limits, 7% simplified rate and its input deduction, hotel 7% and food 5% rows, Cabinda rate, which period the 15th covers (old version mentioned the 15th of the second following month), penalties.
+Not yet confirmed: Republished IVA Code (Lei 14/23), not opened: current regime limits, 7% simplified rate and its input deduction, hotel 7% and food 5% rows, Cabinda rate, which period the 15th covers (old version mentioned the 15th of the second following month), penalties; simplified regime 7% on turnover, its range Kz 25,000,000 to 350,000,000 and the general regime above Kz 350,000,000 (old version; the AGT IVA page still shows the 2020 regimes, so Lei 14/23 code text is needed); hotel and restaurant 7%; certain food and farm inputs 5%.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ao-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ao-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ao-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ao-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

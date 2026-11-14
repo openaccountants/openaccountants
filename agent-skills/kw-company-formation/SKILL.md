@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/kw-company-formation"
   jurisdiction: "KW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Kuwait Company Formation and Entity Choice v0.4
+# Kuwait Company Formation and Entity Choice v0.5
 
 Tax year 2026.
 
@@ -28,10 +28,6 @@ Founders and foreign investors choosing a vehicle in Kuwait.
 | Licensed investment exemption | A granted exemption covers its specified taxes and duration, up to ten years from actual operation (arts. 27 and 29). A licence alone is not an exemption; Law 157/2024 art. 12 disallows tax exemptions against DMTT | 2026 | same; https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
 | Expansion | Licensed expansion: exemption grant under arts. 27(2) and 29, for no less than the original exemption period, from actual production/operation of the expansion | 2026 | same |
 | Imports for the investment | Granted relief can wholly/partly exempt qualifying direct-investment imports (art. 27(3)); five-year restrictions on disposal/other use and payment of duties on permitted disposal apply. This is not the general customs tariff | 2026 | same |
-| WLL | unverified: NON-OPERATIVE HOLD. WLL characteristics, shareholder numbers and capital are not established | 2026 | unverified |
-| Closed KSC and public KSCP | unverified: NON-OPERATIVE HOLD. Capital, liability and listing status require current company-law evidence | 2026 | unverified |
-| Kuwaiti partner | unverified: NON-OPERATIVE HOLD. Do not impose the historical partner percentage | 2026 | unverified |
-| Incorporation time | unverified: NON-OPERATIVE HOLD. No incorporation timeline is established | 2026 | unverified |
 
 ## The base
 
@@ -109,4 +105,4 @@ Not yet confirmed: NON-OPERATIVE HOLDS. WLL liability limited to capital, one sh
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

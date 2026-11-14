@@ -1,14 +1,15 @@
 ---
 name: mc-cross-border
 description: "Monaco cross border tax working paper for 2026. Separates business profits tax scope, foreign operation exclusions and evidenced foreign income tax credits, including gross up and the same income limit. Covers French national residence screening and the statutory cessation treatment of a seat or establishment transfer. Use for Monaco foreign royalties, withholding credits, relocation, treaties and business departure questions. Includes two reproducible ordinary credit illustrations. Routes participation relief, cessation computations, cross border employment and social coverage, financial account self certification and country by country reporting. Source cited draft awaiting named Monaco professional review. Specialist treaty rates and multinational minimum tax calculations need their own determination."
-version: 1.2
+version: 1.3
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Monaco cross-border tax, residence and foreign credits

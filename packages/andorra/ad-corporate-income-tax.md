@@ -1,14 +1,15 @@
 ---
 name: ad-corporate-income-tax
 description: "Andorra corporate income tax for resident companies and other entities in tax year 2026. Covers accounting-profit reconciliation, depreciation, impairments, provisions, financing limits, ordinary participation and foreign permanent-establishment exemptions, authorised holding and intellectual-property relief, loss carryforwards, the combined minimum settlement, foreign and domestic credits, advances, property transfers and filing. Includes corporate residence, migration valuation and the 2026 tax-administration ruling on departure gains, plus penalties and source-linked working papers. Use for Andorra IS, company tax, holding-company exemption, loss relief, September instalments, July returns and corporate exit-tax questions. Source-cited draft requiring professional review of the actual facts, records, authorisations and operative treaties."
-version: 0.7
+version: 0.8
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Andorra corporate income tax, 2026

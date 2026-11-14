@@ -1,17 +1,18 @@
 ---
 name: es-beckham
 description: Use this Guide to assess and compute Spain’s incoming-worker special tax regime under article 93 for 2026, commonly called the Beckham regime. It covers qualifying employment, remote employment, administrators, entrepreneurs, highly qualified professionals and associated family members, the prior non-residence test, election evidence, income-source and service-period rules, annual ordinary and savings scales, foreign-tax relief, withholding, Modelo 149 and Modelo 151. Trigger phrases include Ley Beckham, régimen de impatriados, trabajadores desplazados, incoming-worker tax, digital nomad tax election, 24 percent regime and Spanish special residence taxation. Obtain the move and activity dates, residence history, actual election, service-period income, source evidence and payer certificates. A visa, foreign employer or foreign bank account alone does not settle eligibility or tax treatment.
-version: 1.3
+version: 1.4
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Spain: incoming-worker special tax regime v1.3
+# Spain: incoming-worker special tax regime v1.4
 
 Calculate the 2026 art. 93 special regime, commonly called the Beckham regime, only after documenting eligibility and election. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
