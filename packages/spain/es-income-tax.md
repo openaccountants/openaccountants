@@ -1,19 +1,20 @@
 ---
 name: es-income-tax
 description: Use this Guide for 2026 Spanish resident personal income tax in the fifteen common-territory autonomous communities. It computes ordinary employment and self-employment income, general and savings bases, loss offsets, state and regional scales, separate personal and family minima, the employment-income reduction, the 2026 low-pay credit, prepayments and the annual balance. Trigger phrases include IRPF, Modelo 100, autónomo tax, estimación directa, salary income, base del ahorro, mínimo personal, cuota autonómica and regional tax bands. Obtain residence, community, family facts, income schedules and certificates before computing. Regional credits require a separate eligibility schedule; the country README records unfinished coverage. Foral systems, Ceuta/Melilla territorial relief, special incoming-worker elections and módulos calculations need their own verified treatment. No community, method or business-use percentage is assumed.
-version: 2.3
+version: 2.4
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Spain resident personal income tax (IRPF) v2.3
+# Spain resident personal income tax (IRPF) v2.4
 
 Calculate resident IRPF from classified income, then apply the state and community scales with their separate personal and family minima. This Guide covers income earned in **calendar year 2026**, returned in 2027 under the campaign rules published for that return. It is sourced from the law; independent whole-pack review is pending and no accountant has signed off this revision.
 

@@ -7,12 +7,14 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-vat-return"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Netherlands VAT return (aangifte omzetbelasting, btw-aangifte)
 
-## Scope and who this is for ([Belastingdienst: notes to the 2026 VAT return](https://download.belastingdienst.nl/belastingdienst/docs/toelichting_bij_btw_aangifte_ob0731t62fd.pdf))
+## Scope and who this is for
+
+Main source: [Belastingdienst, notes to the 2026 VAT return](https://download.belastingdienst.nl/belastingdienst/docs/toelichting_bij_btw_aangifte_ob0731t62fd.pdf).
 
 This skill covers preparing and filing the Dutch VAT return (btw-aangifte, also called aangifte omzetbelasting) for a business **established in the Netherlands**. It covers a sole trader (eenmanszaak), a partnership (vof, maatschap) or a company (bv, nv) that is registered for VAT and uses the normal rules. The primary year is **2026** (calendar year). There is a dated section for the **2025** returns and corrections that are being dealt with now.
 
@@ -89,11 +91,11 @@ Boxes 1a to 1d, 2a, 4a and 4b each have a turnover column and a VAT column. In 4
 
 ### Rates ([Wet OB 1968, article 9](https://wetten.overheid.nl/BWBR0002629/2026-01-01))
 
-| Rate | 2026 | 2025 | What it covers |
-| --- | --- | --- | --- |
-| Standard | 21% | 21% | Everything not exempt and not in the 9% or 0% lists |
-| Reduced | 9% | 9% | Goods and services in Table I of the Wet OB 1968 (see below) |
-| Zero | 0% | 0% | Table II: mainly exports, intra-EU supplies of goods and some cross-border services |
+| Rate | 2026 | 2025 | What it covers | Source |
+| --- | --- | --- | --- | --- |
+| Standard | 21% | 21% | Everything not exempt and not in the 9% or 0% lists | https://wetten.overheid.nl/BWBR0002629/2026-01-01 |
+| Reduced | 9% | 9% | Goods and services in Table I of the Wet OB 1968 (see below) | same |
+| Zero | 0% | 0% | Table II: mainly exports, intra-EU supplies of goods and some cross-border services, if the conditions set by decree are met | same |
 
 Article 9 says: "De belasting bedraagt 21 percent", with 9% for Table I (art. 9(2)(a)) and nil for Table II (art. 9(2)(b)) ([wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002629/2026-01-01)).
 
@@ -492,7 +494,7 @@ This skill is not tax advice. Check the linked Belastingdienst pages for the per
 
 | Source | URL | Read on |
 |---|---|---|
-| Wet op de omzetbelasting 1968, text in force 1 January 2026 (art. 1, 9, 11, 12, 15, 17a, 25, 25a, 25c, 25e, 37a) | https://wetten.overheid.nl/BWBR0002629/2026-01-01 | 2026-10-30 |
+| Wet op de omzetbelasting 1968, text in force 1 January 2026 (art. 1, 9, 11, 12, 15, 17a, 25, 25a, 25c, 25e, 37a) | https://wetten.overheid.nl/BWBR0002629/2026-01-01 | 2026-11-14, read for the art. 9 rates (21%, 9% for Table I, nil for Table II); the other articles listed were read on 2026-10-30 |
 | Wet op de omzetbelasting 1968, Tabel I (posts b3, b4, b10, b11 vervallen, b12, b14) | https://wetten.overheid.nl/BWBR0002629/2026-01-01/0/BijlageI | 2026-10-30 |
 | Uitvoeringsbesluit omzetbelasting 1968, text in force 1 January 2026 (art. 15, 15a, 24b, 24ba, 24bb) | https://wetten.overheid.nl/BWBR0002633/2026-01-01 | 2026-10-30 |
 | Uitvoeringsbeschikking omzetbelasting 1968, text in force 1 January 2026 (art. 12, 13, 13a, 33b) | https://wetten.overheid.nl/BWBR0002634/2026-01-01 | 2026-10-30 |
@@ -547,4 +549,4 @@ Not yet confirmed: the decree that sets the 5% belastingrente for 2026 (only the
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cv-vat-gst"
   jurisdiction: "CV"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Cape Verde VAT v0.2
+# Cape Verde VAT v0.3
 
 ## Who this applies to
 
@@ -27,7 +27,7 @@ Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 Janu
 | Ice for licensed fish preservation | Exempt | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Water for irrigated farming | Exempt | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Goods moved out of the exempt list (Budget art. 32, Anexo I) | 15%, for the listed tariff codes | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
-| REMPE, micro turnover | Up to CVE 5,000,000: no IVA charged | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
+| REMPE, micro turnover | Up to 5 mil contos (CVE 5,000,000, computed: 1 conto = CVE 1,000): no IVA charged | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
 
 ## The base
 
@@ -97,16 +97,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 21/VI/2003, IVA Code and Regulation, BO I 21, 14 Jul 2003 (original text): arts 17, 26 to 30, 47 to 54 read | https://boe.incv.cv/Bulletins/Download/12387 | 2026-11-01 |
-| Lei 35/X/2023, Budget 2024: amendments to IRPC, REMPE and IVA read | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-01 |
-| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: all months read | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-01 |
-| DNRE, REMPE leaflet, 2015: all read | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-01 |
-| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 21/VI/2003, IVA Code and Regulation, BO I 21, 14 Jul 2003 (original text): arts 17, 26 to 30, 47 to 54 read | https://boe.incv.cv/Bulletins/Download/12387 | 2026-11-14 |
+| Lei 35/X/2023, Budget 2024: read for amendments to IRPC, REMPE and IVA | https://boe.incv.cv/Bulletins/Download/5549 | 2026-11-14 |
+| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: read for all months | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-14 |
+| DNRE, REMPE leaflet, 2015: read in full | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-14 |
+| DNRE, forms and leaflets page: read for the list of forms and leaflets | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-14 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. VAT registration threshold outside REMPE and the current art. 47 exemption; tourism at 8% (old skill); zero-rated exports and the imports listed in the old skill; current reverse charge wording on services from non-residents (art. 26 is the 2003 text); the Modelo 106 box numbers; refund procedure.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

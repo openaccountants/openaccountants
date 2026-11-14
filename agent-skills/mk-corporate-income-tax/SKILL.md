@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mk-corporate-income-tax"
   jurisdiction: "MK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# North Macedonia corporate income tax v0.3
+# North Macedonia corporate income tax v0.4
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -24,19 +24,19 @@ This is ordinary company tax. Minimum global top-up tax, regulated financial-sec
 
 | Item | Amount | Tax year | Official provision |
 |---|---|---|---|
-| Ordinary profit tax | 10% | 2026 | [Profit Tax Law art. 2][cit] |
-| Eligible small/micro company's exempt annual revenue band | Total revenue not above 3,000,000 | 2026 | [Arts. 31-32][cit] |
-| Eligible turnover-tax election band and rate | 3,000,001-6,000,000 total revenue; 1% on total revenue | 2026 | [Arts. 33-34][cit] |
-| Election consistency | 3 years including election year while within the election band | 2026 | [Art. 33(2)][cit] |
-| Qualifying nonprofit economic revenue | 1% on amount above 1,000,000 | 2026 | [Art. 4-a(3)-(4)][cit] |
-| Entertainment disallowance | 90% | 2026 | [Art. 9(1)(8)][cit] |
-| Qualifying public-interest donations / sponsorship deduction caps | 5% / 3% of total annual revenue | 2026 | [Art. 9(1)(9)-(10)][cit] |
-| Loss carryforward | Maximum 3 years counted from loss year; oldest first, UJP approval | 2026 | [Art. 19][cit] |
-| Nonresident shareholder thin capitalisation | At least 20% holding; loans exceeding 3 times shareholder's capital share; first 3 operating years excluded | 2026 | [Art. 15][cit] |
-| Reinvested-profit asset retention | 5 years; actual qualifying reinvestment of prior-year profit reduces base | 2026 | [Art. 28][cit] |
-| Foreign legal-person WHT | 10% of listed gross income, treaty relief conditional | 2026 | [Arts. 20-23][cit] |
-| Late-payment interest | 0.03% daily | 2026 | [Tax Procedure Law art. 123][procedure] |
-| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55][procedure] |
+| Ordinary profit tax | 10% | 2026 | [Profit Tax Law art. 2](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Eligible small/micro company's exempt annual revenue band | Total revenue not above 3,000,000 | 2026 | [Arts. 31-32](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Eligible turnover-tax election band and rate | 3,000,001-6,000,000 total revenue; 1% on total revenue | 2026 | [Arts. 33-34](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Election consistency | 3 years including election year while within the election band | 2026 | [Art. 33(2)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Qualifying nonprofit economic revenue | 1% on amount above 1,000,000 | 2026 | [Art. 4-a(3)-(4)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Entertainment disallowance | 90% | 2026 | [Art. 9(1)(8)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Qualifying public-interest donations / sponsorship deduction caps | 5% / 3% of total annual revenue | 2026 | [Art. 9(1)(9)-(10)](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Loss carryforward | Maximum 3 years counted from loss year; oldest first, UJP approval | 2026 | [Art. 19](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Nonresident shareholder thin capitalisation | At least 20% holding; loans exceeding 3 times shareholder's capital share; first 3 operating years excluded | 2026 | [Art. 15](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Reinvested-profit asset retention | 5 years; actual qualifying reinvestment of prior-year profit reduces base | 2026 | [Art. 28](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Foreign legal-person WHT | 10% of listed gross income, treaty relief conditional | 2026 | [Arts. 20-23](https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf) |
+| Late-payment interest | 0.03% daily | 2026 | [Tax Procedure Law art. 123](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
+| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
 
 ## The base
 
@@ -135,4 +135,4 @@ Not yet confirmed: None within the stated scope.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

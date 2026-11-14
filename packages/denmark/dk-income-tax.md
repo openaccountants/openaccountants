@@ -1,16 +1,17 @@
 ---
 name: dk-income-tax
 description: "Danish personal income tax for income year 2026, for residents who are employees or self-employed (selvstændig erhvervsdrivende). Covers AM-bidrag at 8% and the under-18 rule, bundskat 12.01%, kommuneskat and kirkeskat (2026 averages), the new 2026 bands from the personal tax reform: mellemskat 7.5% over DKK 641,200, topskat 7.5% over DKK 777,900 and toptopskat 5% over DKK 2,592,700, personfradrag DKK 54,100, beskæftigelsesfradrag, jobfradrag, senior and single-parent allowances, skatteloft 44.57% and 42%, share income at 27% and 42% over DKK 79,400, business deductions, depreciation, private car, virksomhedsordningen and kapitalafkastordningen, B-skat, årsopgørelse, the 1 July deadline, restskat and skattetillæg. Trigger on: Danish income tax, topskat 2026, mellemskat, toptopskat, AM-bidrag, personfradrag, beskæftigelsesfradrag, B-skat, årsopgørelse, restskat, self-employed tax Denmark. Out of scope: companies (dk-corporate-tax), share and property gains in depth (dk-capital-gains), non-residents and treaties (dk-cross-border), payroll withholding (dk-payroll), ATP and other contributions (dk-social-contributions), VAT (denmark-vat-return)."
-version: 2.2
+version: 2.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Denmark: personal income tax, income year 2026
@@ -220,27 +221,27 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Skatte- og Vækstministeriet, Personskatteloven rates and thresholds 2026 and 2027 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven | 2026-10-26 |
-| Skatte- og Vækstministeriet, amounts indexed under PSL § 20, 2025-2026 | https://svmn.dk/tal-og-metode/satser/regulering-af-beloebsgraenser/beloebsgraenser-i-skattelovgivningen-der-reguleres-efter-personskattelovens-20-2025-2026 | 2026-10-26 |
-| Skatte- og Vækstministeriet, average municipal and church tax 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 | 2026-10-26 |
-| Lov nr. 482 af 22. maj 2024 | https://www.retsinformation.dk/eli/lta/2024/482 | 2026-10-26 |
-| Personskatteloven, LBK nr. 1284 af 14. juni 2021 (current consolidation) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-26 |
-| Skattestyrelsen, restskat for 2025 (5.7%, DKK 25,368) | https://skat.dk/restskat | 2026-10-26 |
-| Folketinget, L 138 (2023-24) as adopted: reform of personal tax (PSL §§ 5, 7, 7 a, 8, 9, 19; LL § 9 J) | https://folketingstidende.dk/samling/20231/lovforslag/L138/20231_L138_som_vedtaget.pdf | 2026-10-26 |
-| Skattestyrelsen, bundskat, mellemskat, topskat and toptopskat 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat | 2026-10-26 |
-| Skattestyrelsen, beskæftigelses- og jobfradrag 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag | 2026-10-26 |
-| Skattestyrelsen, tax card and personal allowance | https://skat.dk/en-us/individuals/tax-card | 2026-10-26 |
-| Skattestyrelsen, B-income, AM-bidrag and B-skat instalments | https://skat.dk/en-us/individuals/b-income | 2026-10-26 |
-| Skattestyrelsen, tax on own business (fields, VSO, KAO, 1 July) | https://skat.dk/en-us/businesses/own-business/tax-on-own-business | 2026-10-26 |
-| Skattestyrelsen, deduction for business expenses | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses | 2026-10-26 |
-| Skattestyrelsen, share income rates 2026 | https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities | 2026-10-26 |
-| Skattestyrelsen, tax liability | https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability | 2026-10-26 |
-| Den juridiske vejledning, skatteloft (PSL § 19) | https://info.skat.dk/data.aspx?oid=1948928 | 2026-10-26 |
-| Den juridiske vejledning, skattetillæg under Skattekontrolloven § 73 | https://info.skat.dk/data.aspx?oid=2284578 | 2026-10-26 |
-| Den juridiske vejledning, 1 July deadline for individuals | https://info.skat.dk/data.aspx?oid=2284485 | 2026-10-26 |
-| Den juridiske vejledning, payment of restskat (KSL § 61) | https://info.skat.dk/data.aspx?oid=2169090 | 2026-10-26 |
-| Den juridiske vejledning, spouses' tax calculation (KSL § 25 A) | https://info.skat.dk/data.aspx?oid=1976883 | 2026-10-26 |
-| Den juridiske vejledning, depreciation of buildings | https://info.skat.dk/data.aspx?oid=2083987 | 2026-10-26 |
-| Den juridiske vejledning, depreciation of goodwill | https://info.skat.dk/data.aspx?chk=220619&oid=2083994 | 2026-10-26 |
+| Read for Bundskat (PSL § 6), Bundskat on Christiansø, Personfradrag (PSL § 10), age 18 and over, Mellemskat (PSL § 7), rate: Skatte- og Vækstministeriet, Personskatteloven rates and thresholds 2026 and 2027 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven | 2026-11-14 |
+| Skatte- og Vækstministeriet, amounts indexed under PSL § 20, 2025-2026 | https://svmn.dk/tal-og-metode/satser/regulering-af-beloebsgraenser/beloebsgraenser-i-skattelovgivningen-der-reguleres-efter-personskattelovens-20-2025-2026 | 2026-11-14 |
+| Read for Kommuneskat, national average, Kirkeskat, average for Folkekirken members: Skatte- og Vækstministeriet, average municipal and church tax 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 | 2026-11-14 |
+| Read for the points the body cites to it: Lov nr. 482 af 22. maj 2024 | https://www.retsinformation.dk/eli/lta/2024/482 | 2026-11-14 |
+| Read for the points the body cites to it: Personskatteloven, LBK nr. 1284 af 14. juni 2021 (current consolidation) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-11-14 |
+| Read for Restskat surcharge (KSL § 61, stk. 2): Skattestyrelsen, restskat for 2025 (5.7%, DKK 25,368) | https://skat.dk/restskat | 2026-11-14 |
+| Folketinget, L 138 (2023-24) as adopted: reform of personal tax (PSL §§ 5, 7, 7 a, 8, 9, 19; LL § 9 J) | https://folketingstidende.dk/samling/20231/lovforslag/L138/20231_L138_som_vedtaget.pdf | 2026-11-14 |
+| Read for Mellemskat threshold (personal income after AM-bidrag, plus capital income over the amount below), Topskat (PSL § 7 a), rate and threshold (personal income after AM-bidrag), Toptopskat (PSL § 8), rate and threshold (personal income after AM-bidrag): Skattestyrelsen, bundskat, mellemskat, topskat and toptopskat 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat | 2026-11-14 |
+| Read for Beskæftigelsesfradrag (LL § 9 J), Jobfradrag, Senior beskæftigelsesfradrag (1 or 2 years before state pension age), Single-parent beskæftigelsesfradrag (receives ekstra børnetilskud): Skattestyrelsen, beskæftigelses- og jobfradrag 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, tax card and personal allowance | https://skat.dk/en-us/individuals/tax-card | 2026-11-14 |
+| Read for AM-bidrag (labour market contribution) on salary, B-income and business profit, AM-bidrag age rule, B-skat instalments: Skattestyrelsen, B-income, AM-bidrag and B-skat instalments | https://skat.dk/en-us/individuals/b-income | 2026-11-14 |
+| Read for Virksomhedsskat on profit kept in VSO: Skattestyrelsen, tax on own business (fields, VSO, KAO, 1 July) | https://skat.dk/en-us/businesses/own-business/tax-on-own-business | 2026-11-14 |
+| Read for Minor assets, immediate deduction, Plant and equipment pool, diminishing balance, Write-off of a small mixed-use asset balance, Green asset uplift (new, no private use, bought 1 Jan 2025 to 31 Dec 2026): Skattestyrelsen, deduction for business expenses | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses | 2026-11-14 |
+| Read for Share income (aktieindkomst, PSL § 8 a): Skattestyrelsen, share income rates 2026 | https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, tax liability | https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability | 2026-11-14 |
+| Den juridiske vejledning, skatteloft (PSL § 19) | https://info.skat.dk/data.aspx?oid=1948928 | 2026-11-14 |
+| Den juridiske vejledning, skattetillæg under Skattekontrolloven § 73 | https://info.skat.dk/data.aspx?oid=2284578 | 2026-11-14 |
+| Read for Return filing deadline, self-employed: Den juridiske vejledning, 1 July deadline for individuals | https://info.skat.dk/data.aspx?oid=2284485 | 2026-11-14 |
+| Den juridiske vejledning, payment of restskat (KSL § 61) | https://info.skat.dk/data.aspx?oid=2169090 | 2026-11-14 |
+| Den juridiske vejledning, spouses' tax calculation (KSL § 25 A) | https://info.skat.dk/data.aspx?oid=1976883 | 2026-11-14 |
+| Read for Buildings bought from 1 Jan 2023 / earlier: Den juridiske vejledning, depreciation of buildings | https://info.skat.dk/data.aspx?oid=2083987 | 2026-11-14 |
+| Read for Purchased goodwill: Den juridiske vejledning, depreciation of goodwill | https://info.skat.dk/data.aspx?chk=220619&oid=2083994 | 2026-11-14 |
 
 Not yet confirmed: the restskat surcharge percent for income year 2026 (published by 15 December 2026); the indexed restskat carry-over amount for income year 2026; the date in 2027 the 2026 årsopgørelse opens; the PSL § 13 loss order; fine levels for under-reporting; AM-bidrag for limited-liability persons; the voluntary-payment (frivillig indbetaling) rules for restskat; the rule from the old version that losses from a non-commercial (hobby) activity are not deductible against other income (case law and Skattestyrelsen guidance, not read today).

@@ -1,14 +1,15 @@
 ---
 name: fr-rental-income
 description: "French rental income taxation: revenus fonciers, LMNP, LMP, and SCI à l'IR. Trigger on phrases like \"revenus fonciers\", \"location nue\", \"location meublée\", \"LMNP\", \"LMP\", \"meublé de tourisme\", \"micro-foncier\", \"régime réel foncier\", \"déficit foncier\", \"micro-BIC location\", \"amortissement LMNP\", \"SCI à l'IR\", \"SCI transparence fiscale\", \"Airbnb France impôts\", \"déclaration 2044\", \"déclaration 2031\", \"liasse BIC meublé\", \"charges déductibles location\", \"travaux déductibles foncier\", \"bascule LMP LMNP\", \"loi Le Meur meublé tourisme\", \"location saisonnière fiscalité\", \"déficit imputable revenu global\". Covers bare rental (micro-foncier and réel), furnished rental (LMNP micro-BIC and réel with amortisation), LMP status, SCI à l'IR, and déficit foncier rules."
-version: 1.3
+version: 2.0
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # France: rental income (revenus fonciers, LMNP, LMP, SCI à l'IR)
@@ -17,11 +18,46 @@ domain: income-tax
 
 This skill covers how an individual resident in France is taxed on letting property: unfurnished lets (revenus fonciers, micro-foncier or régime réel), furnished lets by a non-professional (LMNP, micro-BIC or réel), professional furnished letting (LMP), and property companies taxed at income tax (SCI à l'IR). Figures are for tax year 2026. France taxes the previous year's income, so each table says which figures govern rents received in 2025 and declared in 2026, and which govern rents received during 2026, declared in 2027; where a page prints no separate 2026 figure, the table says so. The rules stated are those printed on the official pages read between 19 September and 19 October 2026.
 
+## Scope
+
+In scope: an individual taxed in France who lets residential or commercial property, unfurnished (revenus fonciers, micro-foncier or réel) or furnished (LMNP or LMP, micro-BIC or réel), directly or through an SCI taxed at income tax, for income tax and the social levies on that income.
+
+- Rents received in 2025 are declared in spring 2026 under the loi de finances pour 2026; rents received in 2026 are declared in spring 2027. Rows that apply to 2026 receipts say so.
+- Out of scope here: the household income tax computation (`fr-personal-income-tax`), the gain on selling the property (`fr-capital-gains`), CFE (`fr-cfe`), an SCI taxed at corporation tax (`fr-corporate-tax`) and a non-resident landlord's treaty position (`fr-cross-border`).
+
+## Ask the client first
+
+- Is each property let furnished or bare, and for a tourist let, is it classified (ask for the classification decision)? The answer changes the income category, the micro limit and the allowance.
+- What were the gross rents or receipts for each type of let in 2025 and in 2024 (and in 2026 so far)? The micro tests look at those years.
+- Does anyone in the tax household own a historic monument, a property under an art. 31 deduction (Périssol, Besson, Robien, Borloo, Cosse) or Loc'Avantages, or SCI or SCPI parts? Any of these can shut micro-foncier.
+- What are the household's salaries, pensions, other BIC, BNC and agricultural income? This decides LMP or LMNP.
+- Is there a rental deficit from earlier years, or energy renovation works with a before-and-after energy certificate, and has a property that produced a deficit been sold or stopped being let within three years?
+- Is any let already registered as a micro-enterprise with Urssaf, or already bearing social contributions through a social security body?
+
+## The method, step by step
+
+1. **Sort each let.** For each property, decide furnished or bare (impots.gouv.fr "Location meublée", https://www.impots.gouv.fr/particulier/location-meublee), and whether it is a classified tourist let, an unclassified tourist let, a chambre d'hôtes, or another furnished let. Bare lets go to steps 2 to 4; furnished lets to steps 5 to 7.
+2. **Bare lets: micro-foncier or réel.** Reconcile the household's statutory gross input in Section 3.1, including ancillary receipts, contractual landlord expenses, qualifying grants/indemnities and eligible proportional gross SCI/FPI shares and check the exclusions (BOFiP BOI-RFPI-DECLA-10, https://bofip.impots.gouv.fr/bofip/3973-PGP.html). Within the limit and no exclusion: micro-foncier, box 4BE of form 2042, unless the client prefers the réel (three-year option).
+3. **Bare lets, réel: form 2044.** Compute receipts, deductible charges and loan interest on form 2044 or 2044 spéciale (2026 Brochure pratique, chapter on form 2044, https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf). Leave out construction, reconstruction and extension works.
+4. **Bare lets: deficit.** Split any deficit between the loan interest part and the rest. Set the rest against global income up to the limit in Section 3.3, or the raised limit where the energy renovation conditions are proved (nouveautés, https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf). Carry the remainder forward ten years against rental income. Record the date until which the property must stay let. Track origin-year expiry and use oldest eligible losses first against current positive net rental income, including surviving réel losses after the micro allowance; no-prior-loss examples do not establish a bar on old losses.
+5. **Furnished lets: LMP or LMNP.** Test the two LMP conditions for the whole household (Section 5, impots.gouv.fr "Location meublée").
+6. **LMNP or LMP: micro-BIC or réel.** Check receipts of the previous two years against the limit for the right type and year (Section 4.1; F23267, https://entreprendre.service-public.gouv.fr/vosdroits/F23267). Micro: use the allowance/minimum for the actual letting category and the dated LMNP/LMP filing route in Section 4.1; do not also deduct actual charges/depreciation or invent 2027 form boxes. Réel: prepare form 2031 and the applicable schedules (2033 under the simplified real regime), apply the art. 39 C limit to depreciation, and carry the result to 2042-C-PRO (BOFiP BOI-BIC-CHAMP-40-20, https://bofip.impots.gouv.fr/bofip/3610-PGP.html).
+7. **CFE and VAT.** A furnished landlord, professional or not, is liable to the CFE (cotisation foncière des entreprises) and must obtain a SIRET number (impots.gouv.fr "Location meublée"). See `fr-cfe` for the receipts threshold and the conditional home-letting exemptions. F23547's general summary broadly excludes a let inside the owner's main home, but its detailed list requires the actual branch: occasional reasonable-price letting of part of the personal home, or furnished letting as the subtenant's main home; classified tourism/chambres d'hôtes in the personal home have the stated commune-decision and tenant-home conditions. Location inside the main home alone does not establish the exemption (F23547, https://entreprendre.service-public.gouv.fr/vosdroits/F23547). See `france-vat-return` if VAT applies.
+8. **Social levies.** Apply the right rate: Section 3.4 for bare rental income, Section 4.3 for LMNP income (F2329, https://www.service-public.gouv.fr/particuliers/vosdroits/F2329). For LMP, go to `fr-social-contributions`.
+9. **Assemble the return.** Carry every result to form 2042 and 2042-C-PRO and run the household computation with `fr-personal-income-tax`.
+
+**CFE threshold for furnished letting (entreprendre.service-public.gouv.fr F23547)**
+
+| Item | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |
+| Furnished letting is within the CFE once turnover or gross receipts excluding VAT exceed | EUR 5,000 | "recettes brutes hors taxes doivent être supérieurs à 5 000 €"; general summary excludes a let inside the main home, but apply the conditional detailed home-letting branches in step 7 rather than infer exemption from that location alone https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |
+
 ## Section 1: Quick reference
 
 **Quick reference**
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | France |
 | Taxes covered | Income tax (impôt sur le revenu) on rental income, and the social levies (prélèvements sociaux) on it |
@@ -54,8 +90,8 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Parameter | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
-| Annual statutory gross bare-rental receipts, including the additions and eligible proportional gross shares below, whole tax household, must not exceed | EUR 15,000 | "revenu brut foncier annuel n’excède pas 15 000 €"; the Brochure chapters print it for rents received in 2025 and the pages read print no different limit for rents of 2026 |
-| Flat allowance, applied automatically | 30% | "l’application d’un abattement de 30 %"; it stands for every charge |
+| Annual statutory gross bare-rental receipts, including the additions and eligible proportional gross shares below, whole tax household, must not exceed | EUR 15,000 | "revenu brut foncier annuel n’excède pas 15 000 €"; the Brochure chapters print it for rents received in 2025 and the pages read print no different limit for rents of 2026 https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
+| Flat allowance, applied automatically | 30% | "l’application d’un abattement de 30 %"; it stands for every charge https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
 
 - **Who and when.** Micro-foncier applies by right (de plein droit) to a household whose total gross rents from unfurnished letting in the year do not exceed the limit in the table above, and which does not let property under one of the special regimes listed below (BOFiP, linked above, § 20). The 2026 Brochure pratique, chapter on revenus fonciers (linked in Sources), says the limit is tested on rents received in the year, "charges non comprises", "quelle que soit la durée de la location", and is not applied pro rata. The statutory gross input also includes ancillary receipts, normally-landlord expenses contractually put on the tenant, and grants or indemnities financing deductible charges; exclude tenant payments for charges legally borne by the tenant. Where eligible under the direct-bare-property and other tests below, add the proportional **gross** SCI or FPI receipts, not merely the net distribution. If VAT applies, test the limit excluding VAT. Direct rents EUR 10,000 plus an eligible SCI gross share EUR 7,000 gives EUR 17,000 and fails micro, even if the SCI net taxable share is below EUR 5,000.
 - **Cliff, not allowance.** If gross rents exceed the limit, the whole of the rental income goes to the régime réel; there is no partial micro regime.
@@ -89,14 +125,14 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Rule | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf |
-| Yearly limit for setting the part of a deficit that does not come from loan interest against global income | EUR 10,700 | "est imputable sur le revenu global dans la limite de 10 700 €" |
+| Yearly limit for setting the part of a deficit that does not come from loan interest against global income | EUR 10,700 | "est imputable sur le revenu global dans la limite de 10 700 €" https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf |
 
 **Raised limit for energy renovation works (2026 Brochure pratique, "Principales nouveautés")**
 
 | Rule | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf |
-| Raised yearly limit where the deficit comes from energy renovation works moving a dwelling from class E, F or G to class A, B, C or D | EUR 21,400 | "global à hauteur de 21 400 € en cas de dépenses de rénovation"; the chapter on form 2044 ties it to works with a quote accepted from 5.11.2022 and paid from 1.1.2023 to 31.12.2025, and the nouveautés page says the limit is extended (prorogée) to 31.12.2027 (loi de finances 2026, art. 47) |
+| Raised yearly limit where the deficit comes from energy renovation works moving a dwelling from class E, F or G to class A, B, C or D | EUR 21,400 | "global à hauteur de 21 400 € en cas de dépenses de rénovation"; the chapter on form 2044 ties it to works with a quote accepted from 5.11.2022 and paid from 1.1.2023 to 31.12.2025, and the nouveautés page says the limit is extended (prorogée) to 31.12.2027 (loi de finances 2026, art. 47) https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf |
 
 - **Which part goes where.** Only the part of the deficit made up of charges other than loan interest goes against global income, up to the limit in the first table above. The surplus over that limit, and the whole part that comes from loan interest, can be set only against rental income of the following 10 years (chapter on form 2044, deficits section). Keep each remaining loss by origin year and use the oldest eligible loss first, only against positive net rental income and never below zero. The ten following years include the tenth year: a 2016 rental-income carry remains usable in 2026, while a 2015 carry has expired before 2026. This also applies to still-live earlier réel losses after switching to micro: EUR 12,000 gross less 30% gives EUR 8,400, then a qualifying EUR 2,000 carried loss leaves EUR 6,400. The brochure's prior-year loss table is for 2025 income declared in 2026; preserve the legal vintage/expiry calculation separately for 2026 income, without assuming the 2027 box layout.
 - **The letting condition.** Setting a deficit against global income is conditional on the property staying let until 31 December of the third year after that set-off. If the property is sold, or the letting stops, within that period, the rental income and global income of the years concerned are recomputed without the set-off. The chapter on form 2044 names the exceptions: dismissal, invalidity or death of the taxpayer or of the spouse, and expropriation of the property.
@@ -111,7 +147,7 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Total social levies on rental income from unfurnished letting (revenus fonciers) | 17.2% | "Revenus fonciers ... TOTAL 17,2 %"; rental income was NOT moved to the higher rate |
+| Total social levies on rental income from unfurnished letting (revenus fonciers) | 17.2% | "Revenus fonciers ... TOTAL 17,2 %"; rental income was NOT moved to the higher rate https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 
 - Revenus fonciers stay at the rate in the table above for income of 2025 declared in 2026 and for income of 2026. The 2026 Brochure pratique "Principales nouveautés" says the CSG rise on wealth income leaves "Les revenus fonciers, les plus-values immobilières, l’assurance-vie, l’épargne logement" at the old CSG rate. The higher rate that applies to furnished letting income is in Section 4.3. Never quote one rate for "rental income" without naming which kind.
 - A French resident who works in another EEA state or in Switzerland and is affiliated to that country's compulsory social security owes only the solidarity levy, not CSG or CRDS (F2329, "À savoir").
@@ -127,20 +163,20 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Type of furnished let | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/particulier/location-meublee |
-| Receipts limit, chambres d'hôtes, classified tourist lets and other furnished lets (long-term) | EUR 77,700 | "77 700 € pour les locations de chambres d'hôtes et de meublés de tourisme classés ainsi que les autres activités de location meublée (location meublée de longue durée)" |
-| Receipts limit, unclassified tourist lets | EUR 15,000 | "15 000 € pour les locations de meublés de tourisme non classés" |
-| Flat allowance, chambres d'hôtes, classified tourist lets, and other furnished lets | 50% | "Un abattement forfaitaire de 50 % (avec un minimum de 305 €)" |
-| Flat allowance, unclassified tourist lets | 30% | "Un abattement forfaitaire de 30 % (avec un minimum de 305 €)" |
-| Minimum allowance in every case | EUR 305 | "minimum de 305 €" |
+| Receipts limit, chambres d'hôtes, classified tourist lets and other furnished lets (long-term) | EUR 77,700 | "77 700 € pour les locations de chambres d'hôtes et de meublés de tourisme classés ainsi que les autres activités de location meublée (location meublée de longue durée)" https://www.impots.gouv.fr/particulier/location-meublee |
+| Receipts limit, unclassified tourist lets | EUR 15,000 | "15 000 € pour les locations de meublés de tourisme non classés" https://www.impots.gouv.fr/particulier/location-meublee |
+| Flat allowance, chambres d'hôtes, classified tourist lets, and other furnished lets | 50% | "Un abattement forfaitaire de 50 % (avec un minimum de 305 €)" https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Flat allowance, unclassified tourist lets | 30% | "Un abattement forfaitaire de 30 % (avec un minimum de 305 €)" https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Minimum allowance in every case | EUR 305 | "minimum de 305 €" https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
 
 **Micro-BIC limits for income received in 2026, declared in 2027 (entreprendre.service-public.gouv.fr F23267, Vérifié le 13 mai 2026)**
 
 | Type of furnished let | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
-| Turnover limit, classified tourist lets and chambres d'hôtes, tested on 2025 or 2024 | EUR 83,600 | "Meublé de tourisme classé et chambre d'hôtes (BIC) ... n’a pas dépassé 83 600 €" |
-| Turnover limit, unclassified tourist lets, tested on 2025 or 2024 | EUR 15,000 | "Meublé de tourisme non classé (BIC) ... n’a pas dépassé 15 000 €"; unchanged from 2025 |
-| Turnover limit, other furnished lets including long-term furnished lets (location meublée longue durée), tested on 2025 or 2024 | EUR 83,600 | "Activité de prestation de services, dont la location meublée longue durée (BIC) ... n’a pas dépassé 83 600 €" |
+| Turnover limit, classified tourist lets and chambres d'hôtes, tested on 2025 or 2024 | EUR 83,600 | "Meublé de tourisme classé et chambre d'hôtes (BIC) ... n’a pas dépassé 83 600 €" https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Turnover limit, unclassified tourist lets, tested on 2025 or 2024 | EUR 15,000 | "Meublé de tourisme non classé (BIC) ... n’a pas dépassé 15 000 €"; unchanged from 2025 https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Turnover limit, other furnished lets including long-term furnished lets (location meublée longue durée), tested on 2025 or 2024 | EUR 83,600 | "Activité de prestation de services, dont la location meublée longue durée (BIC) ... n’a pas dépassé 83 600 €" https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
 
 - **The test, and the two-year rule.** The impots.gouv.fr page says the micro regime applies when the receipts of the previous year "ou de l'avant-dernière année" do not exceed the limit. F23267 says crossing a limit in one year only does not end the regime: income of year N leaves micro-BIC only if the limit was exceeded in both N-1 and N-2. The allowances in the first table above apply from income of 2025 (nouveautés page: "À compter du 1.1.2025"); F23267 prints no different rate for 2026. BOFiP § 55 expressly makes this test depend on the type of letting, not whether the landlord is LMP or LMNP; annualise the receipts where its time-in-operation condition requires it.
 - **Long-term furnished lets in 2026.** F23267 puts long-term furnished letting under its services tab: the micro regime applies to income received in 2026 if turnover in 2025 or in 2024 did not exceed the limit in the second table above.
@@ -168,15 +204,15 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Total social levies on wealth income (revenus du patrimoine), general case | 18.6% | "Revenus du patrimoine ... Cas général ... TOTAL 18,6 %"; F2329 lists "Revenus d'une location meublée (non professionnelle)" among the wealth income subject to the levies |
-| Same total as printed for non-professional furnished letting income in the page's tab for people who live abroad | 18.6% | "Revenus de location meublée (non professionnelle) ... TOTAL 18,6 %" |
+| Total social levies on wealth income (revenus du patrimoine), general case | 18.6% | "Revenus du patrimoine ... Cas général ... TOTAL 18,6 %"; F2329 lists "Revenus d'une location meublée (non professionnelle)" among the wealth income subject to the levies https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
+| Same total as printed for non-professional furnished letting income in the page's tab for people who live abroad | 18.6% | "Revenus de location meublée (non professionnelle) ... TOTAL 18,6 %" https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 
 **Start date of the rise (2026 Brochure pratique, "Principales nouveautés")**
 
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf |
-| CSG on wealth income, new rate, from income of 2025 for wealth income | 10.6% | "Le taux de la CSG est porté de 9,2 % à 10,6 % sur les revenus du patrimoine"; the same page says the rise applies from income of 2025 declared in 2026 for wealth income, and from 1.1.2026 for investment income (produits de placement) |
+| CSG on wealth income, new rate, from income of 2025 for wealth income | 10.6% | "Le taux de la CSG est porté de 9,2 % à 10,6 % sur les revenus du patrimoine"; the same page says the rise applies from income of 2025 declared in 2026 for wealth income, and from 1.1.2026 for investment income (produits de placement) https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 
 - **Rule.** LMNP income, micro or réel, bears the general wealth income rate in the first table above, from income of 2025 declared in 2026 (loi de financement de la sécurité sociale 2026, art. 12). The exception list in the nouveautés page names revenus fonciers, property gains, life insurance and housing savings, not furnished letting income. Bare rental income stays at the rate in Section 3.4.
 - **No double charge.** The impots.gouv.fr page says LMNP income is charged the levies automatically, unless it has already borne social contributions through the social security bodies; in that case declare the profit on lines 5NM to 5PM (réel), or the micro receipts on lines 5NJ to 5PL, and the tax office does not charge the levies.
@@ -188,7 +224,7 @@ This skill covers how an individual resident in France is taxed on letting prope
 | Condition | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/particulier/location-meublee |
-| Annual furnished letting receipts of all members of the tax household must exceed | EUR 23,000 | "les recettes annuelles retirées de cette activité par l'ensemble des membres du foyer fiscal excèdent 23 000 €" |
+| Annual furnished letting receipts of all members of the tax household must exceed | EUR 23,000 | "les recettes annuelles retirées de cette activité par l'ensemble des membres du foyer fiscal excèdent 23 000 €" https://www.impots.gouv.fr/particulier/location-meublee |
 
 ### Conditions (both required)
 
@@ -269,26 +305,9 @@ An SCI liable to corporation tax is taxed as a company. See `fr-business-account
 
 These references are as named on the linked BOFiP and impots.gouv.fr pages. On 29 October 2026, selected current CGI art. 150 VB III and its effect note, and CGI art. 39 C I/II-2/II-3, were also read from the official Légifrance web extract; this is not a claim that every cited code article was read in full.
 
-## The method, step by step
+## Worked cases
 
-1. **Sort each let.** For each property, decide furnished or bare (impots.gouv.fr "Location meublée", https://www.impots.gouv.fr/particulier/location-meublee), and whether it is a classified tourist let, an unclassified tourist let, a chambre d'hôtes, or another furnished let. Bare lets go to steps 2 to 4; furnished lets to steps 5 to 7.
-2. **Bare lets: micro-foncier or réel.** Reconcile the household's statutory gross input in Section 3.1, including ancillary receipts, contractual landlord expenses, qualifying grants/indemnities and eligible proportional gross SCI/FPI shares and check the exclusions (BOFiP BOI-RFPI-DECLA-10, https://bofip.impots.gouv.fr/bofip/3973-PGP.html). Within the limit and no exclusion: micro-foncier, box 4BE of form 2042, unless the client prefers the réel (three-year option).
-3. **Bare lets, réel: form 2044.** Compute receipts, deductible charges and loan interest on form 2044 or 2044 spéciale (2026 Brochure pratique, chapter on form 2044, https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf). Leave out construction, reconstruction and extension works.
-4. **Bare lets: deficit.** Split any deficit between the loan interest part and the rest. Set the rest against global income up to the limit in Section 3.3, or the raised limit where the energy renovation conditions are proved (nouveautés, https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf). Carry the remainder forward ten years against rental income. Record the date until which the property must stay let. Track origin-year expiry and use oldest eligible losses first against current positive net rental income, including surviving réel losses after the micro allowance; no-prior-loss examples do not establish a bar on old losses.
-5. **Furnished lets: LMP or LMNP.** Test the two LMP conditions for the whole household (Section 5, impots.gouv.fr "Location meublée").
-6. **LMNP or LMP: micro-BIC or réel.** Check receipts of the previous two years against the limit for the right type and year (Section 4.1; F23267, https://entreprendre.service-public.gouv.fr/vosdroits/F23267). Micro: use the allowance/minimum for the actual letting category and the dated LMNP/LMP filing route in Section 4.1; do not also deduct actual charges/depreciation or invent 2027 form boxes. Réel: prepare form 2031 and the applicable schedules (2033 under the simplified real regime), apply the art. 39 C limit to depreciation, and carry the result to 2042-C-PRO (BOFiP BOI-BIC-CHAMP-40-20, https://bofip.impots.gouv.fr/bofip/3610-PGP.html).
-7. **CFE and VAT.** A furnished landlord, professional or not, is liable to the CFE (cotisation foncière des entreprises) and must obtain a SIRET number (impots.gouv.fr "Location meublée"). See `fr-cfe` for the receipts threshold and the conditional home-letting exemptions. F23547's general summary broadly excludes a let inside the owner's main home, but its detailed list requires the actual branch: occasional reasonable-price letting of part of the personal home, or furnished letting as the subtenant's main home; classified tourism/chambres d'hôtes in the personal home have the stated commune-decision and tenant-home conditions. Location inside the main home alone does not establish the exemption (F23547, https://entreprendre.service-public.gouv.fr/vosdroits/F23547). See `france-vat-return` if VAT applies.
-8. **Social levies.** Apply the right rate: Section 3.4 for bare rental income, Section 4.3 for LMNP income (F2329, https://www.service-public.gouv.fr/particuliers/vosdroits/F2329). For LMP, go to `fr-social-contributions`.
-9. **Assemble the return.** Carry every result to form 2042 and 2042-C-PRO and run the household computation with `fr-personal-income-tax`.
-
-**CFE threshold for furnished letting (entreprendre.service-public.gouv.fr F23547)**
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |
-| Furnished letting is within the CFE once turnover or gross receipts excluding VAT exceed | EUR 5,000 | "recettes brutes hors taxes doivent être supérieurs à 5 000 €"; general summary excludes a let inside the main home, but apply the conditional detailed home-letting branches in step 7 rather than infer exemption from that location alone |
-
-## Worked examples
+### Worked examples
 
 **Example 1. Ordinary micro-foncier.** A resident household has EUR 12,000 of gross bare rents in 2026, excluding tenant charges, no excluded property and no réel election. The EUR 15,000 limit is met. The 30% allowance is EUR 3,600, leaving EUR 8,400 taxable rental income. Social levies at 17.2% are EUR 1,444.80; income tax still requires the household computation.
 
@@ -328,15 +347,6 @@ expected:
   not_deducted_currently: 3000.00
 ```
 
-## Ask the client first
-
-- Is each property let furnished or bare, and for a tourist let, is it classified (ask for the classification decision)? The answer changes the income category, the micro limit and the allowance.
-- What were the gross rents or receipts for each type of let in 2025 and in 2024 (and in 2026 so far)? The micro tests look at those years.
-- Does anyone in the tax household own a historic monument, a property under an art. 31 deduction (Périssol, Besson, Robien, Borloo, Cosse) or Loc'Avantages, or SCI or SCPI parts? Any of these can shut micro-foncier.
-- What are the household's salaries, pensions, other BIC, BNC and agricultural income? This decides LMP or LMNP.
-- Is there a rental deficit from earlier years, or energy renovation works with a before-and-after energy certificate, and has a property that produced a deficit been sold or stopped being let within three years?
-- Is any let already registered as a micro-enterprise with Urssaf, or already bearing social contributions through a social security body?
-
 ## When to refuse or refer
 
 - SCI or any company liable to corporation tax (SCI à l'IS): refer.
@@ -350,20 +360,27 @@ expected:
 
 ## Sources
 
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| BOFiP, revenus fonciers, régime micro-foncier (BOI-RFPI-DECLA-10): read for Annual statutory gross bare-rental receipts, including the additions and eligibl; Flat allowance, applied automatically | https://bofip.impots.gouv.fr/bofip/3973-PGP.html | 2026-11-14 |
+| BOFiP, location meublée, régime fiscal (BOI-BIC-CHAMP-40-20): read for EUR 15,000, EUR 7,000, EUR 199, EUR 250, EUR 400 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/3610-PGP.html | 2026-11-14 |
+| impots.gouv.fr, Location meublée (modified 23/04/2026): read for Receipts limit, chambres d'hôtes, classified tourist lets and other furnished le; Receipts limit, unclassified tourist lets; Annual furnished letting receipts of all members of the tax household must excee | https://www.impots.gouv.fr/particulier/location-meublee | 2026-11-14 |
+| Brochure pratique 2026, revenus fonciers: read for 17.2%, 30%, EUR 15,000, EUR 2,044, EUR 2,042 and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/10-rev_fonciers_157a160.pdf | 2026-11-14 |
+| Brochure pratique 2026, déclaration des revenus fonciers no 2044: read for Yearly limit for setting the part of a deficit that does not come from loan inte; Raised yearly limit where the deficit comes from energy renovation works moving | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf | 2026-11-14 |
+| Brochure pratique 2026, revenus et plus-values des professions non salariées: read for 10.6%, 30%, 50%, EUR 23,000, EUR 77,700 and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf | 2026-11-14 |
+| Brochure pratique 2026, principales nouveautés: read for 10.6%, 9.2%, 30%, 50%, EUR 21,400 and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf | 2026-11-14 |
+| Régime fiscal de la micro-entreprise (F23267): read for Flat allowance, chambres d'hôtes, classified tourist lets, and other furnished l; Flat allowance, unclassified tourist lets; Turnover limit, classified tourist lets and chambres d'hôtes, tested on 2025 or; Turnover limit, other furnished lets including long-term furnished lets (locatio; Minimum allowance in every case; Turnover limit, unclassified tourist lets, tested on 2025 or 2024 | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 | 2026-11-14 |
+| Prélèvements sociaux sur les revenus du patrimoine et de placements (F2329): read for Same total as printed for non-professional furnished letting income in the page'; Total social levies on rental income from unfurnished letting (revenus fonciers); Total social levies on wealth income (revenus du patrimoine), general case; CSG on wealth income, new rate, from income of 2025 for wealth income | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 | 2026-11-14 |
+| Plus-value immobilière (F10864): read for 17.2%, 30%, 50%, EUR 20,000, EUR 10,000 and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F10864 | 2026-11-14 |
+| Cotisation foncière des entreprises (F23547): read for Furnished letting is within the CFE once turnover or gross receipts excluding VA | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 | 2026-11-14 |
+
 - Selected source checks, 29 October 2026: current CGI art. 150 VB III (cost reduction, specified exceptions and effect note): https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785 . Original agency shorthand is retained above as countertext. Other selected administrative clauses are recorded in the figure ledger. Selected current art. 39 C: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029355753 ; simplified-real2033 scope: https://www.impots.gouv.fr/formulaire/2033-sd/liasse-bicsi-regime-rsi-tableaux-ndeg-2033-sd-2033-g-sd . Selected cited scope read 2026-10-29.
 
-- BOFiP, revenus fonciers, régime micro-foncier (BOI-RFPI-DECLA-10): https://bofip.impots.gouv.fr/bofip/3973-PGP.html Selected cited scope read 2026-10-29.
-- BOFiP, location meublée, régime fiscal (BOI-BIC-CHAMP-40-20): https://bofip.impots.gouv.fr/bofip/3610-PGP.html Selected cited scope read 2026-10-29.
-- impots.gouv.fr, Location meublée (modified 23/04/2026): https://www.impots.gouv.fr/particulier/location-meublee Selected cited scope read 2026-10-29.
-- Brochure pratique 2026, revenus fonciers: https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/10-rev_fonciers_157a160.pdf Selected cited scope read 2026-10-29.
-- Brochure pratique 2026, déclaration des revenus fonciers no 2044: https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf Selected cited scope read 2026-10-29.
-- Brochure pratique 2026, revenus et plus-values des professions non salariées: https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf Selected cited scope read 2026-10-29.
-- Brochure pratique 2026, principales nouveautés: https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf Selected cited scope read 2026-10-29.
-- Régime fiscal de la micro-entreprise (F23267): https://entreprendre.service-public.gouv.fr/vosdroits/F23267 Selected cited scope read 2026-10-29.
-- Prélèvements sociaux sur les revenus du patrimoine et de placements (F2329): https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 Selected cited scope read 2026-10-29.
-- Plus-value immobilière (F10864): https://www.service-public.gouv.fr/particuliers/vosdroits/F10864 Selected cited scope read 2026-10-29.
-- Cotisation foncière des entreprises (F23547): https://entreprendre.service-public.gouv.fr/vosdroits/F23547 Selected cited scope read 2026-10-29.
+
 - Selected repair reads, 31 October 2026: actual gross-receipt and eligible gross-share inclusions, prior-loss micro/vintage rules, EUR 20 management-unit definition, full copropriété reconciliation, professional micro and narrow first-letting exception were read in the retained official clauses. The 2026 brochure is a 2025-income filing source, not a 2027 layout guarantee. The deficit page's two-column native extraction is kept distinct from its actually inspected printed page 363; source identity alone is not a reading claim.
+
+Not yet confirmed: whether the loi de finances pour 2026 created any new depreciation or allowance scheme for private landlords of unfurnished housing that applies to 2026 rents (not found on the official pages read today; check before advising on a 2026 purchase); the micro-foncier and micro-BIC limits for rents received in 2026 beyond the rows above; and the 2027 return forms for 2026 rents.
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
 ---
 name: italy-vat-return
 description: "Italian periodic VAT (IVA) for tax year 2026 under the regime ordinario: the 22%, 10%, 5% and 4% rates and what Tabella A puts in each, monthly settlement by the 16th, the quarterly option (EUR 500,000 services and professions, EUR 800,000 other activities) with 1% interest, the LIPE quarterly communication and its VP rows, the annual return window to 30 April, reverse charge (art. 17), split payment for public bodies (extended to 30 June 2029), SdI e-invoicing (forfettari included since 2024) and the esterometro, blocked input VAT, and the penalties after D.Lgs. 87/2024 (25% late payment, ravvedimento, legal interest 1.60%). Trigger on: LIPE, liquidazione IVA, IVA trimestrale, versamento IVA F24, inversione contabile, scissione dei pagamenti, esterometro, ravvedimento IVA. Out of scope: the annual return and December acconto in depth (it-dichiarazione-iva-annuale), invoicing rules (italy-einvoice), the flat-rate regime (it-regime-forfettario), income tax (it-income-tax, it-ires-corporate-tax), payroll (italy-payroll)."
-version: 2.2
+version: 2.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -12,9 +12,10 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.2
+# Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.3
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Italy.
 
 **What this skill does.** It takes an Italian business under the regime ordinario from its invoices and bank lines to a settled VAT period: which rate applies, which VP row each amount goes in, when the tax is paid by F24, when the LIPE is sent, and what a late or wrong payment costs. Figures come from D.P.R. 633/1972 (the VAT decree) and its Tabella A, D.P.R. 100/1998, D.P.R. 542/1999, D.L. 78/2010, D.Lgs. 127/2015, and the penalty decrees D.Lgs. 471/1997 and 472/1997 as reformed by D.Lgs. 87/2024, all read on Normattiva on 24 October 2026, plus Agenzia delle Entrate pages.

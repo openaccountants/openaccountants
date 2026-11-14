@@ -1,198 +1,156 @@
 ---
 name: mo-income-tax
-description: Use this skill whenever asked about Missouri individual income tax for self-employed persons, sole proprietors, or single-member LLCs. Trigger on phrases like "Missouri income tax", "MO income tax", "Form MO-1040", "Missouri DOR", "RSMo § 143".
-version: "0.1"
+description: "Missouri MO-1040: 2026 brackets, separate spouse computation, business and capital-gain subtractions, federal tax deduction, estimates and filing-cycle limits."
+version: "0.3"
 jurisdiction: US-MO
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
+category: state-tax
 ---
 
-# MO Income Tax
+# Missouri individual income tax, 2026
 
-## Missouri Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **General reference only.** Source-cited draft, not approved by an accountant. For US Treasury Circular 230 §10.37 purposes this is general reference material; a qualified professional must check the facts, current law and forms before filing or taking a position.
 
-> **Scope.** This skill covers Missouri Form MO-1040 for full-year Missouri residents who are sole proprietors or single-member LLC owners. Missouri uses an eight-bracket graduated income tax with rates from 0% to 4.7% (TY 2025–2026). Same brackets apply to all filing statuses.
->
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All rates and thresholds were researched on 2026-05-22 from official Missouri Department of Revenue publications. A qualified professional must review before filing.
+## Who this applies to
 
-## Section 1: Metadata
+Missouri resident individuals, including sole proprietors and disregarded single-member LLC owners, preparing Form MO-1040. Federal inputs belong to `us-form-1040-individual-return`, `us-schedule-c-and-se-computation` and `us-section-179-and-bonus-depreciation`. Missouri starts with federal adjusted gross income (FAGI). Published **2026 MO-1040ES** supplies the 2026 brackets and estimate rules. Annual return line references below describe the final **2025-2026 filing cycle**, pending final 2026 instructions. [2026 estimates](https://dor.mo.gov/forms/MO-1040ES_2026.pdf); [final annual booklet](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf).
 
-**Section 1 Metadata**
+A Missouri domiciliary is generally resident, but a domiciliary with no permanent Missouri living quarters, permanent quarters elsewhere and no more than 30 Missouri days meets the stated exception. A nondomiciliary with permanent Missouri living quarters and **more than 183 days** can be resident. These are combined tests, not a day-count-only rule. The final annual booklet exempts from filing people not required to file federally and certain low-income filers: resident Missouri AGI below 1,200, nonresident Missouri income below 600, or Missouri AGI below the applicable standard deduction plus exemption. A return can still be needed for a withholding refund. [Annual booklet, pp.3-5](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf).
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Missouri (US-MO) |
-| Tax type | Individual income tax |
-| Primary form | Form MO-1040 |
-| Tax year | 2025 (filed April 2026) and 2026 |
-| Authority | Missouri Department of Revenue |
-| Statute | RSMo § 143.011 et seq. |
-| Version | 0.1 |
-| Last updated | 2026-05-22 |
-| Validation | AI-drafted — Q3 |
+## Rates, bands and thresholds
 
-### Sources consulted
+USD, 2026; same schedule for each taxpayer. On a married combined Missouri return, compute **each spouse's tax separately**, then combine. Never apply this schedule once to combined taxable income or double the band boundaries.
 
-**Sources consulted**
-
-| # | Source | URL |
+| Missouri taxable income | Tax computation | Official source |
 | --- | --- | --- |
-| 1 | Missouri DOR — Individual Income Tax Year Changes | https://dor.mo.gov/taxation/individual/tax-types/income/year-changes/ |
-| 2 | RSMo § 143.011 (tax rate) | https://revisor.mo.gov/main/OneSection.aspx?section=143.011 |
-| 3 | Missouri Form MO-1040 Instructions | https://dor.mo.gov/taxation/individual/tax-types/income/forms/ |
-| 4 | RSMo § 143.121 (Missouri adjusted gross income) | https://revisor.mo.gov/main/OneSection.aspx?section=143.121 |
+| 0-1,348 | 0 | [2026 MO-1040ES chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 1,348-2,696 | 2% of excess over 1,348 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 2,696-4,044 | 27 + 2.5% of excess over 2,696 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 4,044-5,392 | 61 + 3% of excess over 4,044 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 5,392-6,740 | 101 + 3.5% of excess over 5,392 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 6,740-8,088 | 148 + 4% of excess over 6,740 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 8,088-9,436 | 202 + 4.5% of excess over 8,088 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Over 9,436 | 263 + 4.7% of excess over 9,436 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Individual estimate trigger | Expected Missouri tax after credits/withholding **100 or more** | [2026 MO-1040ES, item 1](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Missouri-source business income subtraction | 20% of qualifying positive combined business income, no duplicate subtraction (in words on the page in 143.022) | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
+| State HOH / qualifying widow(er) additional exemption | 1,400; same filing status as federal return | [2026 estimate line 5](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
+| Federal-income-tax deduction cap | 5,000 other returns; 10,000 married combined, after income-based percentage (in words on the page) | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
 
-## Section 2: Quick reference — rates and thresholds
+Published bracket constants are rounded whole-dollar amounts. Do not substitute an independently accumulated 262.86 for the published 263. Annual tax-table lookup and whole-dollar rounding can differ from a rate-schedule estimate. Federal standard-deduction amounts have their home in the federal skill; obtain the applicable 2026 federal input and apply Missouri's rules, rather than copying old 2025 amounts.
 
-### Tax rates — TY 2025 / 2026 (all filing statuses)
+## The base
 
-**Tax rates — TY 2025 / 2026 (all filing statuses)**
+Begin with FAGI, splitting jointly reported income between spouses using the adjusted-gross-income worksheet. Apply Form MO-A additions/subtractions separately. Household deduction allocation uses the spouses' Missouri income percentages; where one spouse has negative income and the other positive, the annual instructions use zero/100%. Do not blindly halve deductions. Non-Missouri municipal-bond interest can require addition; qualifying U.S.-obligation interest and state income-tax refunds included federally can qualify for subtraction, with the actual related-expense rules. A federal tax refund that previously produced a Missouri benefit may require an addition. [Annual booklet, pp.6-8, MO-A](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.121](https://revisor.mo.gov/main/OneSection.aspx?section=143.121).
 
-| Missouri taxable income | Tax |
-| --- | --- |
-| $0 – $1,313 | $0 (0%) |
-| Over $1,313 – $2,626 | 2.0% of excess over $1,313 |
-| Over $2,626 – $3,939 | $26 + 2.5% of excess over $2,626 |
-| Over $3,939 – $5,252 | $59 + 3.0% of excess over $3,939 |
-| Over $5,252 – $6,565 | $98 + 3.5% of excess over $5,252 |
-| Over $6,565 – $7,878 | $144 + 4.0% of excess over $6,565 |
-| Over $7,878 – $9,191 | $197 + 4.5% of excess over $7,878 |
-| Over $9,191 | $256 + 4.7% of excess over $9,191 |
+**Business deduction.** Combine Missouri-source Schedule C net profits, Schedule E Part II partnership/S corporation income or loss and Schedule F/Form 4835 combined profits under the worksheet. Deduct 20% of the eligible positive total to the extent included in FAGI and not already subtracted. Remove agricultural-disaster relief already excluded. This is Missouri's business-income subtraction under 143.022, distinct from federal QBI; ordinary Schedule E rental income outside Part II is not automatically eligible. Federal SE-tax and self-employed health-insurance deductions already in FAGI are not deducted again. [MO-A line 17 and worksheet](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022).
 
-Missouri uses the **same brackets for all filing statuses**. The standard deduction varies by filing status, which determines how much income is subject to tax.
+**Capital gains.** Section 143.121.3(14)(a) allows an individual 100% of income federally reported as capital gain beginning in **2025**. The current DOR FAQ contradicts itself: its opening and combined-return example say 2025, while one answer says first claim 2026. The statute and final 2025 MO-A line 18 resolve that conflict in favour of 2025 commencement. Both short- and long-term capital gain included federally can qualify; ordinary business-asset recapture is not automatically capital gain. A capital loss is not an extra subtraction. For spouses with a net combined gain 10,000 made up of one spouse's 15,000 gain and the other's 5,000 loss, the annual allocation puts 10,000 on the gaining spouse's MO-A, zero on the losing spouse's, not 15,000. Section 143.022 owns business income, not this capital-gain provision. [Statute](https://revisor.mo.gov/main/OneSection.aspx?section=143.121); [final MO-A line 18](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [FAQ conflict/example](https://dor.mo.gov/faq/taxation/individual/capital-gains-subtraction.html).
 
-### Standard deduction — TY 2025
+The 2026 gold/silver-specie subtraction is already encompassed by the individual's general capital-gain subtraction: do not claim it twice. Corporations, trusts and elected PTEs have different eligibility; use `mo-corporate-tax`. [DOR specie FAQ](https://dor.mo.gov/faq/taxation/individual/specie_subtraction.html).
 
-**Standard deduction — TY 2025**
+**Federal income tax deduction.** Use same-year federal **income tax liability after the specified credits**, not payroll withholding, estimates paid, a prior-year proxy, self-employment tax, FICA or railroad tax. In the verified 2025 annual mapping, lines 9-11 derive the eligible amount from federal return tax and the listed credits/other-tax adjustments. The base is not simply federal total tax. Multiply that eligible base by the percentage below, then apply the 5,000/10,000 cap. Use the total Missouri AGI on the combined return to select the percentage, not separate spouse AGI. [Annual lines 9-13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171).
 
-| Filing status | Amount |
-| --- | --- |
-| Single | $15,750 |
-| MFJ / Qualifying Surviving Spouse | $31,500 |
-| MFS | $15,750 |
-| Head of Household | $23,625 |
-
-Missouri does NOT have a separate personal exemption. The standard deduction is the primary below-the-line deduction.
-
-### Key thresholds
-
-**Key thresholds**
-
-| Item | Value | Source |
+| Missouri income range for the percentage | Deductible percentage of eligible federal liability | Official source |
 | --- | --- | --- |
-| Filing deadline | April 15, 2026 (for TY 2025) | RSMo § 143.511 |
-| Extension | Automatic 6-month with federal extension | RSMo § 143.511 |
-| Estimated tax threshold | $100 expected liability | RSMo § 143.521 |
-| Capital gains subtraction | 100% of net capital gains (effective TY 2025) | RSMo § 143.022 |
+| 25,000 or less | 35% | [143.171.2; annual line 12 uses Missouri AGI](https://revisor.mo.gov/main/OneSection.aspx?section=143.171) |
+| 25,001-50,000 | 25% | [143.171.2](https://revisor.mo.gov/main/OneSection.aspx?section=143.171) |
+| 50,001-100,000 | 15% | [143.171.2](https://revisor.mo.gov/main/OneSection.aspx?section=143.171) |
+| 100,001-125,000 | 5% | [143.171.2](https://revisor.mo.gov/main/OneSection.aspx?section=143.171) |
+| 125,001 or more | 0% | [143.171.2](https://revisor.mo.gov/main/OneSection.aspx?section=143.171) |
 
-### City earnings taxes
+**Deductions and credits.** The annual booklet carries the federal standard deduction when federally standard; when federally itemized, compare allowed Missouri itemization with the state standard deduction unless required to itemize. MO-A Part 2 adjusts federal itemization, including income-tax and other state-specific items; do not subtract both methods or assume independent state itemization when federal standard was claimed. Preserve qualified age/blind/disaster adjustments and the separate 1,400 HOH/QSS state exemption. [Annual lines 14-15 and MO-A Part 2](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [2026 estimate lines 5-6](https://dor.mo.gov/forms/MO-1040ES_2026.pdf).
 
-**City earnings taxes**
+Social Security retirement subtraction requires age 62 or older; qualifying Social Security disability has its own eligibility. Removal of the income phase-out does not make every under-62 survivor benefit automatically exempt. Public/private pension and military retirement deductions also need their worksheets and qualifying facts. Do not conflate state deductions with federal exclusion. [MO-A Part 3](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf).
 
-| City | Rate | Notes |
+Working Family Tax Credit is nonrefundable, limited by remaining Missouri tax, and is 20% of federal EIC **recomputed under the law as of January 1,2021**, subject to qualifying status and current-year federal EIC eligibility. It is not necessarily 20% of the current federal EIC actually received. Use MO-WFTC. Senior/disabled property-tax/rent credit uses MO-PTS with a return or eligible MO-PTC standalone; eligibility, household income, ownership/rent and other claimant rules need separate support. Other credits use MO-TC and approval records. [Annual lines 36-40, MO-A Part 3, MO-PTS/MO-WFTC](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf).
+
+## Deadlines and filing
+
+The ordinary calendar-year filing/payment date is April 15 following the year; the verified 2025 return was due April 15,2026. For 2026 the ordinary date is April 15,2027, subject to official relief and final instructions. A federal filing extension ordinarily extends filing; without one use MO-60 as required. An extension does not extend payment. File MO-1040, MO-A and applicable schedules with required federal attachments through approved e-file or the correct paper address. An amended return uses **MO-1040 marked amended**, with corrected schedules and reason, not a presumed MO-1040X. [Annual booklet, pp.3-5](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf).
+
+2026 individual estimates use MO-1040ES, generally April 15, June 15, September 15, January 15 following, adjusted for weekends/holidays. Amend by the next installment date after a material change. Safe-harbour protection requires timely cumulative installments reaching either 100% of a prior 12-month return that showed liability, or 90% of current tax; qualifying farmers use 66 2/3% and may use the January 15 payment/March 1 filing rule when at least two-thirds of estimated Missouri gross income is farming. Payment at year end alone does not cure earlier underpayment. [2026 MO-1040ES, items 1-9](https://dor.mo.gov/forms/MO-1040ES_2026.pdf).
+
+## Penalties and interest
+
+The annual booklet gives late filing 5% of unpaid tax per month up to 25%, late payment 5%, and calendar 2026 interest 7% annually. Extension and reasonable-cause rules require actual facts; estimate underpayment is a separate MO-2210 computation. Interest crossing January 1 needs that later calendar year's published rate;7% is not asserted for 2027. [Annual booklet, pp.3-4](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [2026 estimates](https://dor.mo.gov/forms/MO-1040ES_2026.pdf).
+
+## Cross-border points
+
+Residents generally report all income with potential MO-CR credit for qualifying other-state income tax. Part-year filers compare resident treatment with MO-CR and nonresident treatment with MO-NRI, using MO-1040 in either case; do not claim both methods for the same taxpayer. A spouse may independently choose the appropriate method. Nonresidents compute tax on all income and then the Missouri income percentage under MO-NRI, rather than applying the brackets only to Missouri wages. Missouri headquarters alone does not make a nonresident's wholly out-of-state remote wages Missouri-source. [Annual booklet, pp.4-5, lines 31-32](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [remote-work resources](https://dor.mo.gov/taxation/business/remote.html).
+
+City earnings taxes in Kansas City and St. Louis remain a separate job: residence, actual work location, business-profit allocation, current rate, returns and refunds need current city-specific support. `mo-payroll` preserves the old city cases as conditional arithmetic and explicitly identifies the unresolved city filing rules. Interstate transport, military spouses, nonresident athletes/entertainers, credits and multi-state businesses need their special rules. Entity filings and elected PTE tax belong to `mo-corporate-tax`; employer withholding/UI to `mo-payroll`; consumer use tax to `mo-sales-tax`.
+
+## Two worked examples that recompute
+
+**Invented sole proprietor, 2026 estimate.** Single resident has FAGI60,000 including eligible Missouri Schedule C profit 50,000 after federal adjustments. Assume no other state adjustments, eligible same-year federal income-tax-liability base 6,000 and allowed standard-deduction input 16,100 supplied by the federal computation. State business subtraction 10,000 gives Missouri AGI50,000, selecting 25%, so federal-tax deduction 1,500. Taxable income 32,400; rate-schedule estimate 263+(32,400-9,436)x 4.7%=1,342.308, about 1,342.31, before credits/payments. This is not a computation of federal SE tax or a final annual tax-table result.
+
+```oa-check
+name: Missouri business subtraction and federal tax percentage
+inputs:
+  fagi: 60000
+  eligible_business: 50000
+  eligible_federal_tax: 6000
+  federal_standard_input: 16100
+steps:
+  - business_subtraction: eligible_business * 0.20
+  - mo_agi: fagi - business_subtraction
+  - federal_deduction: eligible_federal_tax * 0.25
+  - taxable: mo_agi - federal_deduction - federal_standard_input
+  - tax: round(263 + (taxable - 9436) * 0.047, 2)
+expected:
+  business_subtraction: 10000
+  mo_agi: 50000
+  federal_deduction: 1500
+  taxable: 32400
+  tax: 1342.31
+```
+
+**Itemization decision.** Another invented single resident has Missouri AGI80,000, no eligible federal-tax deduction in this simplified case, and federally itemized. Allowed Missouri itemization after MO-A adjustments is 19,000; standard input from the federal computation is 16,100. Itemizing produces taxable income 61,000 and tax 2,686.51 versus taxable 63,900 and tax 2,822.81 with standard, saving 136.30. State facts permit the comparison because federal itemization was used; do not generalize it to federal-standard filers.
+
+```oa-check
+name: Missouri allowed itemization decision
+inputs:
+  mo_agi: 80000
+  allowed_itemized: 19000
+  standard_input: 16100
+steps:
+  - standard_taxable: mo_agi - standard_input
+  - itemized_taxable: mo_agi - allowed_itemized
+  - standard_tax: round(263 + (standard_taxable - 9436) * 0.047, 2)
+  - itemized_tax: round(263 + (itemized_taxable - 9436) * 0.047, 2)
+  - saving: round(standard_tax - itemized_tax, 2)
+expected:
+  standard_taxable: 63900
+  itemized_taxable: 61000
+  standard_tax: 2822.81
+  itemized_tax: 2686.51
+  saving: 136.3
+```
+
+## Ask the client first
+
+1. Tax year, domicile, permanent homes, Missouri days, moves and all other states' income/returns?
+2. Filing status, spouse's separately owned income/losses, federal itemization, age/disability and dependent facts?
+3. FAGI, Missouri-source Schedule C/E-II/F/4835 profit/loss, capital-gain reporting, bonds, refunds and depreciation records?
+4. Actual federal income-tax liability/credit schedules, state deductions, pension/SSA documents and duplicate deductions?
+5. Withholding, dated estimates, prior 12-month liability, credit approvals, property/rent eligibility and city work/residence?
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| Kansas City | 1.0% | On earned income; separate return |
-| St. Louis | 1.0% | On earned income; separate return |
+| 2026 MO-1040ES. Read for 2026 rate chart, spouse allocation, state HOH exemption, estimate threshold/dates/safe harbours. | https://dor.mo.gov/forms/MO-1040ES_2026.pdf | 2026-11-13 |
+| Final 2025 MO-1040 booklet. Read for 2025-2026 filing cycle: residency, MO-A, deductions, credits, forms, filing, payments and penalties. | https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf | 2026-11-13 |
+| 143.121 Missouri AGI. Read for capital-gain commencement, specie and state adjustments; resolves inconsistent FAQ date. | https://revisor.mo.gov/main/OneSection.aspx?section=143.121 | 2026-11-13 |
+| 143.022 business deduction. Read for business-income components, ownership and maximum 20% (in words on the page). | https://revisor.mo.gov/main/OneSection.aspx?section=143.022 | 2026-11-13 |
+| 143.171 federal tax deduction. Read for same-year liability, individual percentages/caps and corporate distinction. | https://revisor.mo.gov/main/OneSection.aspx?section=143.171 | 2026-11-13 |
+| Capital gains FAQ. Read for combined-spouse allocation and entity restrictions; inconsistent commencement answer reconciled. | https://dor.mo.gov/faq/taxation/individual/capital-gains-subtraction.html | 2026-11-13 |
+| Specie FAQ. Read for 2026 gold/silver and prohibition on double individual subtraction. | https://dor.mo.gov/faq/taxation/individual/specie_subtraction.html | 2026-11-13 |
+| Alternative remote work resources. Read for nonresident remote work and MO-CR versus MO-NRI. | https://dor.mo.gov/taxation/business/remote.html | 2026-11-13 |
 
-## Section 3: How this skill works with the federal return
-
-- **Missouri AGI starting point** — Missouri adjusted gross income begins with federal adjusted gross income (AGI) from federal Form 1040, Line 11, then applies Missouri-specific modifications.
-- **Additions (Form MO-A)** — Add back items Missouri does not exclude (e.g., interest on non-Missouri state/municipal bonds).
-- **Subtractions (Form MO-A)** — Subtract items Missouri excludes: 100% of net capital gains (effective TY 2025); Social Security benefits included in federal AGI; Federal income tax deduction (Missouri is one of few states that allows a deduction for federal income tax paid, capped at $5,000 single / $10,000 MFJ); U.S. government bond interest.
-- **Missouri AGI** — Federal AGI + additions − subtractions.
-- **Standard or itemized deduction** — Missouri conforms to federal amounts (with some modifications).
-- **Missouri taxable income** — Missouri AGI − deductions.
-- **Tax** — Apply the eight graduated brackets.
-- **Credits** — Apply applicable credits.
-
-## Section 4: Self-employed specific rules
-
-- **Self-employment income flow** — Self-employment income flows through federal Schedule C → federal AGI → Missouri AGI. No separate Missouri schedule for self-employment income.
-- **Federal SE tax deduction** — Reflected in federal AGI; carries through to Missouri automatically.
-- **Federal income tax deduction** — Missouri allows a deduction for federal income tax paid (including SE tax), capped at $5,000 (single/HoH/MFS) or $10,000 (MFJ). This is a significant benefit.
-- **Capital gains subtraction** — 100% of net capital gains reported on the federal return may be subtracted from Missouri AGI (effective TY 2025). If a sole proprietor sells business assets, the gain may qualify.
-- **Estimated taxes** — Self-employed taxpayers must make quarterly estimated payments (Form MO-1040ES) if expected liability exceeds $100. Due dates: April 15, June 15, September 15, January 15.
-- **Health insurance deduction** — Self-employed health insurance deduction is in federal AGI. No Missouri add-back.
-- **City earnings tax** — If located in Kansas City or St. Louis, self-employment earnings are subject to the 1% city earnings tax (separate filing required).
-
-## Section 5: Tier 1 rules — deterministic
-
-**Tier 1 rules — deterministic**
-
-| Rule ID | Rule | Source |
-| --- | --- | --- |
-| MO-T1-01 | Start with federal AGI (Form 1040, Line 11) | RSMo § 143.121 |
-| MO-T1-02 | Add back interest on non-Missouri state/municipal bonds | RSMo § 143.121 |
-| MO-T1-03 | Subtract federal income tax paid (up to $5,000 single / $10,000 MFJ) | RSMo § 143.171 |
-| MO-T1-04 | Subtract Social Security benefits included in federal AGI (fully exempt) | RSMo § 143.124 |
-| MO-T1-05 | Subtract U.S. government bond interest | RSMo § 143.121 |
-| MO-T1-06 | Subtract 100% of net capital gains (TY 2025+) | RSMo § 143.022 |
-| MO-T1-07 | Apply standard deduction: $15,750 (single), $31,500 (MFJ), $23,625 (HoH) | RSMo § 143.131 |
-| MO-T1-08 | Apply graduated rates: 0% to 4.7% across 8 brackets | RSMo § 143.011 |
-| MO-T1-09 | Missouri Property Tax Credit: refundable credit for seniors/disabled (Form MO-PTC) | RSMo § 135.010 |
-| MO-T1-10 | Missouri Earned Income Credit: percentage of federal EIC (non-refundable) | RSMo § 143.174 |
-
-## Section 6: Tier 2 rules — requires judgment
-
-**Tier 2 rules — requires judgment**
-
-| Rule ID | Rule | Guidance |
-| --- | --- | --- |
-| MO-T2-01 | **Residency determination** — Missouri uses a domicile test. A person domiciled in Missouri is a full-year resident. | If taxpayer has homes in multiple states, flag for professional review. |
-| MO-T2-02 | **Federal tax deduction** — The deduction is for federal tax actually paid (not accrued). Compute using taxes paid during the calendar year, including estimated payments and withholding. | This interacts with federal refunds/balances due in a circular manner. Use prior-year federal tax paid as a proxy. |
-| MO-T2-03 | **Capital gains subtraction** — Applies to net long-term capital gains. Determine which gains qualify (e.g., business asset sales, stock sales). | Ensure net capital gains are correctly computed before applying 100% subtraction. |
-| MO-T2-04 | **Credit for taxes paid to other states (Form MO-CR)** — Non-refundable credit to prevent double taxation. | Requires the other state's return. |
-| MO-T2-05 | **Kansas City / St. Louis earnings tax** — Self-employed persons with business activity in these cities must file separately. | Flag if taxpayer operates in KC or STL. |
-| MO-T2-06 | **Standard vs. itemized deduction** — Missouri allows either; if itemizing, Missouri generally conforms to federal Schedule A with modifications. | Compare both methods; Missouri itemized deductions may differ from federal. |
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| W-2 wages from Missouri employer | MO withholding applies; include on MO-1040 | Most common |
-| Schedule C net profit (sole prop) | Flows through federal AGI → Missouri AGI | Federal tax deduction available |
-| Rental income (Schedule E) | Included in federal AGI → Missouri AGI | MO-source if property in MO |
-| Interest on U.S. government bonds | Subtract from Missouri AGI | RSMo § 143.121 |
-| Interest on non-MO muni bonds | Add back to Missouri AGI | Taxable for MO purposes |
-| Social Security benefits | Subtract from Missouri AGI (fully exempt) | RSMo § 143.124 |
-| Long-term capital gains | Subtract 100% from Missouri AGI (TY 2025+) | RSMo § 143.022 |
-| 1099-NEC freelance income | Flows through Schedule C → federal AGI | Estimated payments likely needed |
-| Federal income tax paid | Deductible up to $5,000 (single) / $10,000 (MFJ) | RSMo § 143.171 |
-
-## Section 8: Form mapping
-
-**Form mapping**
-
-| Missouri form / schedule | What it covers | Federal counterpart |
-| --- | --- | --- |
-| Form MO-1040 | Missouri Individual Income Tax Return | Form 1040 |
-| Form MO-A | Missouri Adjustments (additions/subtractions) | Schedule 1 (Form 1040) |
-| Form MO-CR | Credit for Taxes Paid to Other States | N/A |
-| Form MO-1040ES | Estimated Tax Payment Voucher | Form 1040-ES |
-| Form MO-PTC | Property Tax Credit | N/A |
-| Form MO-1040P | Part-year Resident Return | N/A |
-| Form MO-NRI | Non-Resident Return | N/A |
-| Schedule MO-SI | Self-Employed Tax Credit Schedule | N/A |
-
-## Section 9: Refusal catalogue
-
-**Refusal catalogue**
-
-| ID | Situation | Action |
-| --- | --- | --- |
-| MO-R-01 | Part-year or non-resident return (MO-1040P / MO-NRI) | Refuse — out of scope |
-| MO-R-02 | Corporate income tax (Form MO-1120) | Refuse — out of scope |
-| MO-R-03 | Kansas City or St. Louis earnings tax return | Refuse — separate filing; out of scope |
-| MO-R-04 | Multi-state income apportionment | Refuse — flag for professional review |
-| MO-R-05 | Amended returns (Form MO-1040X) | Refuse — out of scope |
-| MO-R-06 | Tax year other than current | Refuse — rates and thresholds may differ |
-| MO-R-07 | Partnership / S-corp returns (MO-1065 / MO-1120S) | Refuse — out of scope |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: final 2026 annual MO-1040/MO-A/MO-NRI/MO-CR/MO-WFTC/MO-PTS/MO-TC/MO-2210 forms and line mapping, detailed pension/disability/property-credit/other-credit calculations, special military/transport/athlete cases and city earnings-tax computations;2027 interest rate. Federal figures remain owned by federal skills.
