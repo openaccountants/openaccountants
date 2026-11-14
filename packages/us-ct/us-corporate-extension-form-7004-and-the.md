@@ -1,120 +1,213 @@
 ---
 name: us-corporate-extension-form-7004-and-the
-description: How a corporation requests an automatic extension of time to file on Form 7004 and how the section 7502 timely-mailing-is-timely-filing rule fixes the filing date of a mailed Form 7004, for US tax preparers and corporate filers.
+description: How a business entity gets the automatic extension of time to file on Form 7004 for tax year 2026, and how the section 7502 timely mailing rule fixes the filing date of a mailed Form 7004. Covers the 6-month extension (the old 7-month rule for June 30 C corporations ends for tax years beginning in 2026), the 15th day of the 6th month cut-off for foreign and offshore-books entities, the 3-month and 4-month additional extensions, consolidated groups, payment (Form 7004 never extends time to pay), the failure to file and failure to pay additions, registered and certified mail, and IRS-designated private delivery services. For US tax preparers and corporate filers. Federal only.
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-09-03
-drafted_by: OpenAccountants
-approved_by: pending
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: filing-howto
 ---
 
-# Form 7004 corporate extension and the timely mailing is timely filing rule under section 7502 in United States
+# Form 7004 business extension and the section 7502 timely mailing rule, tax year 2026
 
-Form 7004 is the application a business entity files to obtain an automatic extension of time to file certain business income tax, information and other returns; the IRS states the form is used to request an automatic 6-month extension of time to file those returns. Section 7502 of the Internal Revenue Code is the separate rule that decides *when* a mailed Form 7004 counts as filed: if its conditions are met, the document is deemed filed on the date of the postmark stamped on the envelope, even though the IRS receives it after the due date. This Guide covers the extension request itself, the periods and cut-offs the instructions state, and the mailing and proof-of-delivery conditions in section 7502 and Regulations section 301.7502-1. Figures are for tax year 2026. The Form 7004 instructions relied on below are the revision the IRS publishes as Instructions for Form 7004 (12/2025); the statutory and regulatory rules under section 7502 are not stated by year on the pages cited.
+> **Source-cited draft.** Built from the Instructions for Form 7004 (Rev. December 2025), Form 7004, Rev. Proc. 2025-32, the IRS private delivery services page and 26 U.S.C. 6072, 6651 and 7502 and Treas. Reg. 301.7502-1 (govinfo), read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Who this is for
-Entities that must file one of the returns listed on Form 7004 and that need more time to file it, including C corporations, S corporations and partnerships, and the common parent or agent of a consolidated group. The Form 7004 instructions state that only the common parent or agent of a consolidated group can request an extension of time to file the group's consolidated return, and that a list of all members showing name, address and EIN must be attached. It is not for entities seeking more time to **pay**: the instructions state that Form 7004 does not extend the time to pay any tax due. Certain foreign and domestic corporations and certain partnerships entitled to an automatic extension of time to file and pay under Regulations section 1.6081-5 do not need to file Form 7004 to take that automatic extension. Section 7502 applies to documents and payments required to be filed or made within a prescribed period or on or before a prescribed date under the internal revenue laws; the regulation states that section 7502 does not apply to any document or payment deposited with the mail service of any other country.
+**Answer first.** Form 7004 gives an automatic extension of time to **file** (generally 6 months) if it is filed by the original due date of the return, with a proper estimate of the tax. It never extends the time to **pay**: the balance on line 8 is due by the original due date. For tax years beginning in 2026, a C corporation with a June 30 year end gets 6 months, not the 7 months it had before. If a paper Form 7004 is mailed, it counts as filed on the date of the US postmark (or the date recorded by an IRS-designated private delivery service), as long as it was properly addressed, postage prepaid and mailed on or before the due date. Proof of mailing is registered or certified mail or a designated private delivery service.
 
-## Rates, thresholds and deadlines
+## Scope and who this is for
 
-Form 7004 — extension periods, cut-offs and related amounts
+In scope: entities that file a return listed on Form 7004 and need more time to file it, including C corporations (Form 1120), S corporations (Form 1120-S), partnerships (Form 1065), Form 1120-POL filers and the common parent or agent of a consolidated group, for returns of tax year 2026 (filed in 2027). Also the section 7502 rule that decides when a mailed Form 7004 is filed.
 
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/instructions/i7004 |
-| General automatic extension period for time to file | "generally 6 months" | Instructions, "Maximum extension period"; exceptions apply for certain filers of Form 1041 and for C corporations |
-| Deadline to file Form 7004 for a foreign corporation with no US office or place of business (line 2) | "the 15th day of the 6th month following the close of the tax year" | Instructions, Part II, line 2; the entity must file Form 7004 by the due date of the return |
-| Deadline for entities qualifying under Regulations section 1.6081-5 to file (or request an additional extension) and pay any balance due | "the 15th day of the 6th month following the close of the tax year" | Instructions, Part II, line 4; these entities do not need to file Form 7004 to take the automatic extension |
-| Additional extension period requested by checking line 4 — partnerships and S corporations | 3 months | Instructions, Part II, line 4; an extension of time to file, not an extension of time to pay |
-| Additional extension period requested by checking line 4 — C corporations and filers of Form 1120-POL | 4 months | Instructions, Part II, line 4; an extension of time to file, not an extension of time to pay |
-| Short tax year ending anytime in June (corporation) | "treated as if the short tax year ended on June 30" | Instructions, Part II, line 5a |
-| Advance notice before the IRS terminates an automatic extension | "at least 10 days before the termination date given in the notice" | Instructions, "Termination of extension period"; the IRS may terminate the automatic extension at any time by mailing a notice |
-| Late payment penalty rate | "1/2 of 1% of any tax not paid by the due date ... for each month or part of a month that the tax remains unpaid" | Instructions, "Penalty for late payment of tax"; not charged if reasonable cause is shown |
-| Maximum late payment penalty | "cannot exceed 25% of the amount due" | Instructions, "Penalty for late payment of tax" |
-| Rounding to whole dollars | drop amounts under 50 cents; increase amounts from 50 to 99 cents to the next dollar | Instructions, "Rounding off to whole dollars"; if the entity rounds, it must round all amounts |
-| Signature required on Form 7004 | none | Instructions, "Signature": no signature is required on this form |
-| Forms for which Form 7004 cannot be filed electronically | Forms 8612, 8613, 8725, 8831, 8876, 706-GS(D) | Instructions, "How To File" |
-| Forms 708, 8924 and 8928 | paper Form 7004 for tax year 2025; electronic filing of these forms starts in tax year 2026 | Instructions, "What's New" |
+Out of scope, and where it goes:
 
-Section 7502 — timely mailing treated as timely filing and paying
+| Topic | Skill |
+| --- | --- |
+| The C corporation return itself, its tax and its due date in detail | `us-form-1120-c-corp` |
+| The partnership return | `us-form-1065-partnership` |
+| The S corporation return and election | `us-s-corp-election-decision` |
+| Penalty notices, penalty relief (First Time Abate, reasonable cause), payment plans | `us-irs-collections-and-controversy` |
+| Individual extensions (Form 4868), exempt organisations (Form 8868), Form 1041-A, estate and gift tax | not covered; refer |
+| State corporate extensions | the state's own corporate tax skill |
 
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.law.cornell.edu/uscode/text/26/7502 |
-| Date treated as the date of filing or payment for a document or payment delivered by US mail after the due date | "the date of the United States postmark stamped on the cover" | Section 7502(a)(1); the postmark date is deemed to be the date of delivery or the date of payment |
-| Condition on the postmark date | the postmark date falls within the prescribed period or on or before the prescribed date for filing or for making the payment | Section 7502(a)(2)(A) |
-| Condition on deposit in the mail | deposited, within that time, "in the mail in the United States in an envelope or other appropriate wrapper, postage prepaid, properly addressed" to the office with which it must be filed or to which payment must be made | Section 7502(a)(2)(B) |
-| Postmarks not made by the United States Postal Service | apply "only if and to the extent provided by regulations prescribed by the Secretary" | Section 7502(b) |
-| Effect of United States registered mail | registration is "prima facie evidence that the return, claim, statement, or other document was delivered" to the office addressed | Section 7502(c)(1)(A) |
-| Designated delivery services | a reference in section 7502 to the United States mail is treated as including a reference to any designated delivery service | Section 7502(f)(1) |
-| Mailing cut-off for a deposit to which the deposit rule applies | date of mailing on or before "the second day before the prescribed date for making the deposit (including any extension of time granted for making such deposit)" | Section 7502(e)(1) |
-| Deposit amount excluded from the deposit rule | "$20,000 or more by any person who is required to deposit any tax more than once a month" | Section 7502(e)(3) |
+## Ask the client first
 
-Regulations section 301.7502-1 — how the postmark and proof rules operate
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.law.cornell.edu/cfr/text/26/301.7502-1 |
-| Date a document or payment is deemed filed or paid where the section's requirements are met | the date of the postmark stamped on the envelope in which it was mailed | Paragraph (a), General rule; timely postmark means timely even if received after the last date prescribed |
-| Required postmark date where the postmark is made by the US Postal Service | "on or before the last date, or the last day of the period, prescribed for filing the document or making the payment" | Paragraph (c)(1)(iii)(A) |
-| Where the document or payment must be deposited | "deposited within the prescribed time in the mail in the United States with sufficient postage prepaid" | Paragraph (c)(1)(ii); deposit with the domestic mail service of the U.S. Postal Service |
-| Mail deposited with another country's mail service | section 7502 does not apply | Paragraph (c)(1)(ii) |
-| Evidence value of registered or certified mail (documents, not payments) | proof of proper registration, or a properly issued postmarked certified mail sender's receipt, plus proof the envelope was properly addressed, is "prima facie evidence that the document was delivered" | Paragraph (e)(2)(i) |
-| Exclusive means of establishing prima facie evidence of delivery | direct proof of actual delivery; proof of proper use of registered or certified mail; proof of proper use of a duly designated PDS | Paragraph (e)(2)(i); no other evidence of a postmark or of mailing raises a presumption of delivery |
-| Application to the section 6651 monthly penalty computation | section 7502 does not apply in determining whether a failure to file or pay has continued for an additional month or fraction of a month | Paragraph (a), General rule |
-
-Private delivery services designated by the IRS
-
-| What | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.irs.gov/filing/private-delivery-services-pds |
-| Status of the list on this page | "These private delivery services include only the following" | The page states designated PDSs can be used to meet the "timely mailing as timely filing/paying" rule for tax returns and payments; read the current list on the page and use only a service named there |
-| Services named on the page (read the page for the complete list) | UPS Next Day Air Early A.M.; UPS 2nd Day Air A.M. | The page states the private delivery service can tell you how to get written proof of the mailing date |
-| Address to use with a PDS | the submission processing centre street address for your return type | Per https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds — Austin, Kansas City or Ogden, by return type |
+1. **Which return** is being extended, and the entity's tax year end. Is it a short tax year, and for a corporation, does that short year end in June?
+2. **Entity type:** C corporation, S corporation, partnership or Form 1120-POL filer. The additional extension on line 4 is 3 months for partnerships and S corporations and 4 months for C corporations and Form 1120-POL filers.
+3. **Foreign or offshore:** is it a foreign corporation, and if so, does it have an office or place of business in the United States? Does a domestic corporation or partnership keep its books and records outside the United States and Puerto Rico, or have its principal income from US territories (Regulations section 1.6081-5)?
+4. **Consolidated group:** is the filer the common parent or the agent authorised to request the extension for the group?
+5. **Tax position:** the tentative total tax for the year, and the payments and credits already made. Is there a balance that must be paid by the original due date?
+6. **How it will be filed:** e-filed, or mailed? If mailed, on what date and by which service (US mail, registered or certified mail, or a private delivery service)?
 
 ## The method, step by step
 
-1. **Identify the return being extended and its due date.** The Form 7004 instructions direct the entity to file Form 7004 by the due date of the return it is extending, and to use the form code for that return. See https://www.irs.gov/instructions/i7004 and https://www.irs.gov/forms-pubs/about-form-7004.
-2. **Check whether Form 7004 is needed at all.** Entities entitled to the automatic extension of time to file and pay under Regulations section 1.6081-5 — including a foreign corporation that maintains an office or place of business in the United States, and a domestic corporation that transacts its business and keeps its books and records of account outside the United States and Puerto Rico — do not need to file Form 7004 to take that automatic extension, and instead attach a statement to the entity's tax return stating that the entity qualifies. See https://www.irs.gov/instructions/i7004.
-3. **Complete Part I and Part II of Form 7004.** Enter the form code for the return, and complete the Part II boxes that apply: line 2 for a foreign corporation with no US office or place of business, line 4 for the additional extension for entities qualifying under Regulations section 1.6081-5, line 5a and 5b for a short tax year and its reason, and lines 6 to 8 for tentative total tax, total payments and credits, and balance due. See https://www.irs.gov/instructions/i7004 and the form at https://www.irs.gov/pub/irs-pdf/f7004.pdf.
-4. **Attach the consolidated group member list if applicable,** in the format the instructions specify for paper filings. See https://www.irs.gov/instructions/i7004.
-5. **Do not sign the form.** The instructions state that no signature is required on this form. See https://www.irs.gov/instructions/i7004.
-6. **File the form — electronically where possible.** The instructions state Form 7004 can be filed electronically for most returns, with the exceptions in the table above, and direct filers to https://www.irs.gov/e-file-providers/e-filing-form-7004-application-for-automatic-extension-to-file-certain-business-income-tax-information-and-other-returns for details. If not filing electronically, file Form 7004 with the Internal Revenue Service Center at the applicable address for the return shown in "Where To File" in https://www.irs.gov/instructions/i7004.
-7. **Pay the balance due separately and on time.** The instructions state Form 7004 does not extend the time to pay tax, that a corporation or affiliated group filing a consolidated return must remit the unpaid tax liability shown on line 8, that the IRS recommends paying electronically, and that a filer who files Form 7004 electronically can pay by Electronic Funds Withdrawal. Payment options are at https://www.irs.gov/payments; see https://www.irs.gov/instructions/i7004.
-8. **If the Form 7004 is mailed, engineer the postmark.** Under section 7502(a), deposit it in the mail in the United States in a properly addressed, postage-prepaid envelope within the prescribed period, so that the US postmark bears a date on or before the due date; the postmark date then becomes the filing date. See https://www.law.cornell.edu/uscode/text/26/7502 and https://www.law.cornell.edu/cfr/text/26/301.7502-1.
-9. **Buy the proof at the counter.** Use United States registered mail, or certified mail with a postmarked sender's receipt, or a duly designated private delivery service; the regulation states these, with direct proof of actual delivery, are the exclusive means of establishing prima facie evidence of delivery. See https://www.law.cornell.edu/cfr/text/26/301.7502-1 and https://www.irs.gov/filing/private-delivery-services-pds.
-10. **If using a private delivery service, send it to the street address, not the PO box,** for the submission processing centre designated for that return type, and obtain the service's written proof of the mailing date. See https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds and https://www.irs.gov/filing/private-delivery-services-pds.
-11. **Retain the registration, certified mail receipt or PDS proof of mailing date in the engagement file** as the evidence of the filing date. The pages cited do not state a retention period for this proof; do not assume one.
-12. **Watch for a notice of termination.** The IRS may terminate the automatic extension at any time by mailing a notice of termination, with the advance notice period in the table above. See https://www.irs.gov/instructions/i7004.
+### Rates, bands and thresholds
 
-## Ask the client first
-- What return is being extended, and what is the entity's tax year end — including whether it is a short tax year and, for a corporation, whether that short year ends in June?
-- Is the entity a C corporation, an S corporation, a partnership, or a Form 1120-POL filer? The additional extension period on line 4 differs between these.
-- Is the entity a foreign corporation, and if so does it maintain an office or place of business in the United States, or does the entity otherwise qualify under Regulations section 1.6081-5?
-- Is this a consolidated group return, and is the filer the common parent or agent authorised to request the extension for the group?
-- What is the tentative total tax, and what payments and credits are already in place — that is, will there be a balance due that must be paid by the original due date notwithstanding the extension?
-- Will the form be e-filed or mailed, and if mailed, on what date and by what service will it be deposited?
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Automatic extension of time to file, general | 6 months | [Instructions for Form 7004 (Rev. December 2025), Maximum extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Automatic extension, C corporation with a June 30 year end, tax years beginning in 2026 | 6 months (7 months only for tax years beginning before 1 January 2026) | [Instructions for Form 7004 (Rev. December 2025), Maximum extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Automatic extension, estate or trust filing Form 1041 | 5 and a half months | [Instructions for Form 7004 (Rev. December 2025), Maximum extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Additional extension on line 4, partnerships and S corporations | 3 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Additional extension on line 4, C corporations and Form 1120-POL filers | 4 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Advance notice before the IRS terminates an extension | at least 10 days | [Instructions for Form 7004 (Rev. December 2025), Termination of extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Late payment penalty, per month or part month | 0.5% of the unpaid tax (derived: the page prints 1/2 of 1%) | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Late payment penalty, maximum | 25% | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Failure to file addition, per month or part month | 5% of the unpaid tax, reduced by the failure to pay addition for the same month | [26 U.S.C. 6651(a)(1) and (c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |
+| Failure to file addition, maximum | 25% | [26 U.S.C. 6651(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |
+| Minimum failure to file addition, income tax return more than 60 days late, returns required to be filed in 2027 | lesser of USD 535 or 100% of the tax | [Rev. Proc. 2025-32, section 3.52](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Failure to file a partnership or S corporation return, per partner or shareholder per month, returns required to be filed in 2027 | USD 260 | [Rev. Proc. 2025-32, sections 3.55 and 3.56](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Deposit mailing cut-off under the section 7502 deposit rule | on or before the second day before the deposit due date | [26 U.S.C. 7502(e)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7502.htm) |
+| Deposits the section 7502 deposit rule does not cover | USD 20,000 or more, by a person required to deposit more than once a month | [26 U.S.C. 7502(e)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7502.htm) |
+
+None of the Form 7004 periods is indexed. The USD 535 and USD 260 amounts are indexed each year.
+
+### Due dates the extension runs from
+
+| Return | Original due date (calendar year 2026) | Extended due date | Source |
+| --- | --- | --- | --- |
+| Form 1120 (C corporation) | 15 April 2027 (15th day of the 4th month) | 15 October 2027 | [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) |
+| Form 1120-S (S corporation) | 15 March 2027 (15th day of the 3rd month) | 15 September 2027 | [26 U.S.C. 6072(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) |
+| Form 1065 (partnership) | 15 March 2027 | 15 September 2027 | [Instructions for Form 7004](https://www.irs.gov/pub/irs-pdf/i7004.pdf) and the Form 1065 instructions |
+
+A date on a weekend or legal holiday moves to the next business day. Fiscal-year filers count months from their own year end.
+
+### Steps
+
+1. **Identify the return and its due date.** File Form 7004 by the due date of the return being extended, using the form code for that return in Part I. One Form 7004 covers one return. Source: [Instructions for Form 7004](https://www.irs.gov/pub/irs-pdf/i7004.pdf).
+2. **Check whether Form 7004 is needed at all.** An entity entitled to the automatic extension to file and pay under Regulations section 1.6081-5 does not file Form 7004 for it. That covers a partnership keeping its books and records outside the United States and Puerto Rico, a foreign corporation with an office or place of business in the United States, a domestic corporation that transacts its business and keeps its books and records outside the United States and Puerto Rico, and a domestic corporation whose principal income is from US territories. It attaches a statement to its return saying it qualifies, and must file (or ask for more time) and pay by the 15th day of the 6th month after the year end.
+3. **Complete Part II.** Line 2: a foreign corporation with no US office or place of business (it files Form 7004 by the return's due date, the 15th day of the 6th month). Line 3: the common parent of a consolidated group. Line 4: the additional extension for a 1.6081-5 entity that cannot file by the 15th day of the 6th month (3 months or 4 months, see the table). Lines 5a and 5b: short tax year dates and reason; a corporation with a short year ending anytime in June is treated as if it ended on June 30. Lines 6 to 8: tentative total tax, total payments and credits, balance due.
+4. **Consolidated group.** Only the common parent or agent can request the extension for the group's consolidated return; attach a list of every member with name, address and EIN.
+5. **Do not sign.** No signature is required on Form 7004.
+6. **File it, electronically where possible.** Form 7004 can be e-filed for most returns, but not for Forms 8612, 8613, 8725, 8831, 8876 or 706-GS(D). Forms 708, 8924 and 8928 used a paper Form 7004 for tax year 2025; their electronic filing starts in tax year 2026. Paper forms go to the service center in "Where To File" for the return type. Caution from the instructions: if Form 7004 is filed on paper and the return is e-filed, the return may be processed before the extension is granted, which can produce a penalty notice.
+7. **Pay the line 8 balance by the original due date.** Form 7004 does not extend the time to pay. Most entities must pay by electronic funds transfer (EFTPS); an e-filed Form 7004 can pay by Electronic Funds Withdrawal (Form 8878-A). A corporation expecting a net operating loss carryback can reduce the deposit by the expected overpayment if all other prior-year liabilities are paid and Form 1138 is filed with Form 7004. The late payment penalty and interest run on anything paid late; the penalty is not charged if reasonable cause is shown. Round to whole dollars if the entity rounds, and then round every amount.
+8. **If mailed, get the postmark right.** Under section 7502(a), a properly addressed, postage-prepaid envelope deposited in the US mail within the prescribed time is filed on the date of the US postmark. The postmark date must be on or before the due date. Mail deposited with another country's postal service does not qualify. Source: [26 U.S.C. 7502](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7502.htm); [Treas. Reg. 301.7502-1](https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol20/pdf/CFR-2025-title26-vol20-sec301-7502-1.pdf).
+9. **Buy proof at the counter.** The only ways to raise the presumption of delivery are direct proof of actual delivery, registered mail, certified mail with a postmarked sender's receipt, or a duly designated private delivery service (PDS). Registration is prima facie evidence of delivery (section 7502(c)).
+10. **With a PDS, use only a listed service and the street address.** Only the services named on the IRS page qualify (for example UPS Next Day Air Early A.M., FedEx Priority Overnight, DHL Express 9:00; read the page for the full list). Send to the submission processing center street address (Austin, Kansas City or Ogden) for the return type, not a PO box, and get the service's written proof of the mailing date.
+11. **Keep the proof** (registration, certified receipt or PDS record) in the engagement file. The sources read state no retention period; do not assume one.
+12. **Watch for a termination notice.** The IRS may terminate the extension at any time by mailing a notice at least 10 days before the termination date.
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| C corporation, June 30 year end, tax year beginning before 1 January 2026 | 7-month extension (6 months for Form 1120-POL) |
+| C corporation, June 30 year end, tax year beginning in 2026 | 6-month extension |
+| Short tax year ending anytime in June | Treated as ending June 30 |
+| Foreign corporation with no US office (line 2) | File Form 7004 by the return due date, the 15th day of the 6th month |
+| Regulations 1.6081-5 entity | No Form 7004 for the first extension; statement on the return; Form 7004 line 4 only for the additional 3 or 4 months |
+| Form 7004 filed after the return's due date | No extension; failure to file runs from the original due date |
+| Balance not paid by the original due date | Extension still valid if the estimate was proper; late payment penalty (0.5% a month) and interest run on the unpaid part |
+| Form 7004 on paper, return e-filed | The return may be processed before the extension is granted; expect and answer any penalty notice |
+| Mailed from outside the United States | Section 7502 does not apply to foreign postal services; e-file instead |
+| Postage meter or private postmark only | Covered only to the extent the regulations allow; treat as unproven and refer if the date is disputed |
+| Monthly penalty count | Section 7502 does not decide whether a failure continued into another month for the section 6651 computation |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Tentative tax | Do not file a zero estimate without support: the extension depends on a proper estimate; ask for the year-to-date numbers |
+| Year end | Ask; do not assume calendar year for a corporation |
+| Whether the entity is a 1.6081-5 entity | Treat as an ordinary filer and file Form 7004 by the original due date |
+| Mailing method | E-file; if paper is unavoidable, certified mail with a postmarked receipt |
+| Consolidated group authority | Do not file for the group until the common parent or agent is confirmed |
+
+### Red flags to raise with the client
+
+| Flag | Why it matters |
+| --- | --- |
+| Balance due on line 8 not funded by the original due date | Late payment penalty and interest, even with a valid extension |
+| Paper Form 7004 filed close to the due date by ordinary mail | No proof of the filing date if the IRS says it was late |
+| June 30 C corporation planning on 7 months for its 2026 year | Only 6 months for tax years beginning in 2026 |
+| Courier not on the IRS PDS list | The timely mailing rule does not apply |
+| IRS termination notice received | The extended date is replaced by the date in the notice |
+
+## Worked cases
+
+**Case 1, a valid extension with a balance paid late.** A calendar-year C corporation's 2026 tentative tax is USD 80,000; its estimated payments were USD 60,000. It e-files Form 7004 on 12 April 2027 but pays the USD 20,000 balance only when it files the return on 10 July 2027. The return is filed before 15 October 2027, so there is no failure to file addition. The USD 20,000 was paid 3 months (part months count as full) after 15 April 2027: late payment penalty 0.5% x 3 x USD 20,000 = USD 300, plus interest. Source: [Instructions for Form 7004](https://www.irs.gov/pub/irs-pdf/i7004.pdf).
+
+```oa-check
+name: Valid extension, balance paid three months late (2026 return)
+inputs:
+  tentative_tax: 80000
+  payments: 60000
+  months_late: 3
+  ftp_rate: 0.005
+steps:
+  - balance: tentative_tax - payments
+  - ftp_penalty: balance * ftp_rate * min(months_late, 50)
+expected:
+  balance: 20000.00
+  ftp_penalty: 300.00
+```
+
+**Case 2, a decision: what a missing Form 7004 costs.** The same corporation forgets Form 7004 and files the return and pays the USD 20,000 on 10 June 2027, 2 months (part months count) after 15 April 2027. Without the extension: failure to pay 0.5% x 2 x USD 20,000 = USD 200, and failure to file at 5% a month reduced by the 0.5% failure to pay, so 4.5% x 2 x USD 20,000 = USD 1,800, total USD 2,000. The return is not more than 60 days late on these facts, so the USD 535 minimum does not apply; had it been more than 60 days late, that minimum would still be below USD 1,800. With a timely Form 7004: only the USD 200. The extension saves USD 1,800, so always file Form 7004 by the due date when the return will not be ready, even if the tax cannot be paid. Source: [26 U.S.C. 6651(a) and (c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm).
+
+```oa-check
+name: Late return with and without Form 7004 (2026 return)
+inputs:
+  unpaid: 20000
+  months: 2
+steps:
+  - ftp: unpaid * 0.005 * months
+  - ftf: min(unpaid * 0.045 * months, unpaid * 0.25)
+  - total_without_extension: ftp + ftf
+  - total_with_extension: ftp
+  - saving: total_without_extension - total_with_extension
+expected:
+  ftp: 200.00
+  ftf: 1800.00
+  total_without_extension: 2000.00
+  total_with_extension: 200.00
+  saving: 1800.00
+```
 
 ## When to refuse or refer
-- Requests for more time to **pay** tax, instalment agreements, or penalty abatement for late payment — Form 7004 does not extend time to pay, and this Guide does not cover payment relief.
-- Reasonable cause arguments and responses to IRS penalty notices for late filing or late payment.
-- Individual extensions (Form 4868), exempt organisation extensions, estate and gift tax extensions, and the Form 1041 filers for whom the instructions state exceptions to the general extension period apply — none of these are covered here.
-- State corporate extensions of any kind; no state authority page is cited in this Guide.
-- Applications to change an accounting period (Form 1128) or questions about whether the conditions for a change of accounting period have been met.
-- Any case where a return or payment was mailed from outside the United States, or where the only evidence of mailing is an ordinary postage meter, a private postmark, or a courier not named on the IRS designated PDS page — the section 7502 result in those situations turns on rules and evidence outside what the pages cited here state.
-- Any situation where the extension has already been terminated by IRS notice, or where the extension request was filed after the due date of the return.
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-7004-PAY | The client wants more time to pay, a payment plan or penalty abatement | Refer to `us-irs-collections-and-controversy`; Form 7004 does not extend time to pay |
+| R-7004-NOTICE | Reasonable cause arguments or a response to a late-filing or late-payment penalty notice | Refer to `us-irs-collections-and-controversy` |
+| R-7004-OTHER | Individual (Form 4868), exempt organisation (Form 8868), Form 1041-A, estate and gift tax extensions | Out of scope; refer |
+| R-7004-STATE | State corporate extension | Out of scope; use the state skill |
+| R-7004-1128 | Change of accounting period (Form 1128) | Refer |
+| R-7004-MAIL | Mailed from outside the United States, or the only evidence is a postage meter, private postmark or an unlisted courier | Refer: the section 7502 result turns on facts and regulations beyond this skill |
+| R-7004-LATE | Extension already terminated by notice, or Form 7004 filed after the return's due date | Refer: no automatic extension exists |
+
+## Filing and payment
+
+| Action | Channel | Deadline |
+| --- | --- | --- |
+| File Form 7004 | E-file (IRS.gov/Efile7004) or paper to the service center for the return type | Original due date of the return |
+| Pay the line 8 balance | EFTPS, or Electronic Funds Withdrawal with an e-filed Form 7004 | Original due date of the return |
+| File the return | As the return instructions say | Extended due date (6 months later, or the date in a termination notice) |
+| 1.6081-5 entity, additional extension | Form 7004 with line 4 checked | 15th day of the 6th month after the year end |
+
+## Completion checklist
+
+- Return and form code identified; Form 7004 filed by the original due date.
+- 1.6081-5 status checked; statement attached to the return where it applies.
+- June 30 C corporation: 6 months for a tax year beginning in 2026, not 7.
+- Consolidated group: common parent or agent files, member list attached.
+- Tentative tax properly estimated; line 8 balance paid by the original due date.
+- If mailed: US mail properly addressed and postage prepaid, postmark on or before the due date, registered or certified mail, or a listed PDS to the street address.
+- Proof of mailing kept; extended due date and any termination notice calendared.
 
 ## Sources
-- https://www.irs.gov/instructions/i7004 (Form 7004 extension periods, cut-offs, penalties, filing and payment method)
-- https://www.irs.gov/forms-pubs/about-form-7004 (automatic 6-month extension; purpose of the form)
-- https://www.irs.gov/pub/irs-pdf/f7004.pdf (the form itself)
-- https://www.irs.gov/pub/irs-pdf/i7004.pdf (Instructions for Form 7004, Rev. December 2025, print version)
-- https://www.irs.gov/e-file-providers/e-filing-form-7004-application-for-automatic-extension-to-file-certain-business-income-tax-information-and-other-returns (e-filing Form 7004)
-- https://www.irs.gov/payments (payment options)
-- https://www.law.cornell.edu/uscode/text/26/7502 (section 7502 timely mailing treated as timely filing and paying)
-- https://www.law.cornell.edu/cfr/text/26/301.7502-1 (Regulations section 301.7502-1, postmark and proof of delivery rules)
-- https://www.irs.gov/filing/private-delivery-services-pds (designated private delivery services)
-- https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds (PDS street addresses)
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Instructions for Form 7004 (Rev. December 2025). Read for What's New (Forms 708, 8924, 8928), Maximum extension period (6 months, 5 and a half months, the June 30 7-month rule ending for tax years beginning in 2026), the 10-day termination notice, Line 2, Line 4 (3 and 4 months), Line 5a, Line 8 and the late payment penalty. | https://www.irs.gov/pub/irs-pdf/i7004.pdf | 2026-11-13 |
+| Form 7004 (Rev. December 2025). Read for Part I form codes and Part II lines 2 to 8. | https://www.irs.gov/pub/irs-pdf/f7004.pdf | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for section 3.52 (USD 535 minimum, returns required to be filed in 2027) and sections 3.55 and 3.56 (USD 260). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| 26 U.S.C. 6072 (govinfo). Read for (a) the 15th day of the 4th month and (b) the 15th day of the 3rd month. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm | 2026-11-13 |
+| 26 U.S.C. 6651 (govinfo). Read for (a)(1) 5% a month to 25%, (a)(2) 0.5% a month, and (c)(1) the reduction when both apply. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm | 2026-11-13 |
+| 26 U.S.C. 7502 (govinfo). Read for (a) the postmark rule, (b) other postmarks, (c) registered mail, (e) deposits and (f) designated delivery services. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7502.htm | 2026-11-13 |
+| Treas. Reg. 301.7502-1 (govinfo, CFR 2025). Read for (a) general rule, (c)(1) postmark and deposit and the foreign mail exclusion, and (e)(2) the exclusive means of proof. | https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol20/pdf/CFR-2025-title26-vol20-sec301-7502-1.pdf | 2026-11-13 |
+| IRS private delivery services page. Read for the list of designated services (DHL Express, FedEx, UPS products). | https://www.irs.gov/filing/private-delivery-services-pds | 2026-11-13 |
+| IRS PDS street addresses page. Read for the Austin, Kansas City and Ogden street addresses that PDSs must use. | https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds | 2026-11-13 |
+
+Not yet confirmed: no 2026 revision of the Form 7004 instructions was published when read (the December 2025 revision states the rule for tax years beginning in 2026); the Form 1065 due date is taken from the Form 7004 instructions and not re-read in the Form 1065 instructions.

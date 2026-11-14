@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/kw-payroll-social"
   jurisdiction: "KW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Kuwait Payroll and Social Contributions v0.3
+# Kuwait Payroll and Social Contributions v0.4
 
 Tax year 2026.
 
@@ -25,8 +25,6 @@ Employers checking Kuwait payroll. The confirmed income-tax rule covers a natura
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
 | Income tax on a person's own salary | Exempt under art. 8(2), unless the income represents a corporate body's share | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| PIFSS rates, insured salary and due dates | unverified: NON-OPERATIVE HOLD. Do not use the historical rates or ceiling in Sources | 2026 | unverified |
-| Nationality coverage and indemnity | unverified: NON-OPERATIVE HOLD. No zero contribution or gratuity conclusion is authorised | 2026 | unverified |
 
 ## The base
 
@@ -93,4 +91,4 @@ Not yet confirmed: NON-OPERATIVE HOLDS. Social Security Law 61 of 1976 and amend
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

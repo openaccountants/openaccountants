@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/rwanda-payroll"
   jurisdiction: "RW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Rwanda Payroll v0.2
+# Rwanda Payroll v0.4
 
 Tax year 2026.
 
@@ -32,7 +32,6 @@ Employers paying staff in cash or in kind (art 57), including foreign employers 
 | Maternity | 0.3% employer, 0.3% employee of gross | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution |
 | Medical scheme | 7.5% employer, 7.5% employee of basic salary | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution |
 | CBHI | 0.5% of net salary, employee, deducted by employer | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution |
-| Occupational hazards | unverified: 2% employer (old file; no official page opened states it) | 2026 | unverified |
 | RSSB late surcharge | 1.5% a month for the late list, 1.5% for late payment | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions |
 
 ## The base
@@ -155,7 +154,7 @@ Suggested layout (one row per employee per month):
 | K | Employee deductions | `=E+F+G+H+J` |
 | L | Net pay | `=B-K` |
 | M | Pension employer | `=B*6%` |
-| N | Occupational hazards | `=B*2%` |
+| N | Occupational hazards | `=B*R`, where R is the rate RSSB applies to this employer, entered as an input. No default: the rate is not confirmed (see Not yet confirmed) |
 | O | Maternity employer | `=B*0.3%` |
 | P | Medical employer | `=IF(D="Y", C*7.5%, 0)` |
 | Q | Total employer cost | `=B+M+N+O+P` |
@@ -197,10 +196,10 @@ If the engagement lacks key data:
 |---|---|---|---|---|
 | To 31 December 2024 | 6% | 3% | 3% | unverified: old file |
 | 1 January 2025 | 12% | 6% | 6% | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution |
-| 1 January 2027 | 14% | unverified: 7% | unverified: 7% | Order 086/01 sets the total only |
-| 1 January 2028 | 16% | unverified: 8% | unverified: 8% | same |
-| 1 January 2029 | 18% | unverified: 9% | unverified: 9% | same |
-| 1 January 2030 | 20% | unverified: 10% | unverified: 10% | same |
+| 1 January 2027 | 14% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01 sets the total only: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
+| 1 January 2028 | 16% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
+| 1 January 2029 | 18% | split not set by the Order (see Not yet confirmed) | split not set by the Order | same |
+| 1 January 2030 | 20% | split not set by the Order (see Not yet confirmed) | split not set by the Order | same |
 
 PAYE shortcut: rate x gross less 6,000 in the 10% band, 16,000 in the 20% band, 36,000 in the 30% band. It ties out at 100,000 (4,000) and 200,000 (24,000). The 0% band rose from FRW 30,000 to 60,000 under Law 027/2022 (old file, unverified).
 
@@ -213,7 +212,7 @@ CBHI base is gross less PAYE, pension and maternity. Medical is not subtracted. 
 | Gross and basic 150,000, medical | 14,000 | 35,332.75 | 114,667.25 |
 | Gross and basic 500,000, medical | 114,000 | 184,772.50 | 315,227.50 |
 
-Employer cost on gross and basic 150,000, enrolled: 9,000 pension, 3,000 occupational hazards (unverified 2%), 450 maternity, 11,250 medical; total 173,700, or 15.8% on top of gross. Employee social shorthand where basic = gross: 6% + 0.3% + 7.5% + 0.5% = 14.3% as an upper bound, since CBHI is on net.
+Employer cost on gross and basic 150,000, enrolled, before occupational hazards: 9,000 pension, 450 maternity, 11,250 medical; 20,700 on top of gross (13.8%), total 170,700. Occupational hazards is then added at the rate RSSB applies to the employer. For scale only, an assumed example rate of 2% (not a default and not confirmed) would add 3,000. Employee social shorthand where basic = gross: 6% + 0.3% + 7.5% + 0.5% = 14.3% as an upper bound, since CBHI is on net.
 
 Casual labourer paid FRW 80,000 in a month: 15% of 20,000 = FRW 3,000 (art 56). The old file charged 12,000 and missed the 0% slice.
 
@@ -306,23 +305,23 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 027/2022 establishing taxes on income (read: arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-01 |
-| Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
-| Commissioner General Instructions 001/2023, quarterly PAYE and VAT (whole) | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-01 |
-| Presidential Order 086/01 of 12/12/2024, pension rate (whole) | https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf | 2026-11-01 |
-| RSSB, Imisanzu portal home page (whole page) | https://imisanzu.rssb.rw/ | 2026-11-01 |
-| RRA, Calculate PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-01 |
-| RRA, Pay PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/pay-paye | 2026-11-01 |
-| RRA, Declare PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/declare-paye | 2026-11-01 |
-| RRA, pension contribution page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution | 2026-11-01 |
-| RRA, medical scheme page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution | 2026-11-01 |
-| RRA, maternity leave page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution | 2026-11-01 |
-| RRA, CBHI page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution | 2026-11-01 |
-| RRA, declaration and payment of RSSB contributions page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-01 |
-| RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
+| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Commissioner General Instructions 001/2023, quarterly PAYE and VAT: read in full | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-14 |
+| Presidential Order 086/01 of 12/12/2024, pension rate: read in full | https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf | 2026-11-14 |
+| RSSB, Imisanzu portal home page: read in full | https://imisanzu.rssb.rw/ | 2026-11-14 |
+| RRA, Calculate PAYE page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-14 |
+| RRA, Pay PAYE page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/pay-paye | 2026-11-14 |
+| RRA, Declare PAYE page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/declare-paye | 2026-11-14 |
+| RRA, pension contribution page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution | 2026-11-14 |
+| RRA, medical scheme page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution | 2026-11-14 |
+| RRA, maternity leave page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution | 2026-11-14 |
+| RRA, CBHI page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution | 2026-11-14 |
+| RRA, declaration and payment of RSSB contributions page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-14 |
+| RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
-Not yet confirmed: occupational hazards rate 2%; the split of 14% and later pension rates; whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023.
+Not yet confirmed: the occupational hazards rate: no RSSB, RRA or gazette page read on 2026-11-14 states it (the RSSB scheme page and the RRA RSSB pages name the scheme but give no rate; the 2% in the old file, and on the RDB business procedures page https://businessprocedures.rdb.rw/menu/179, which also prints the pre-2025 6% pension and so is stale, is not used), so no rate is applied and the employer gets it from RSSB; the employer and employee split of the 14%, 16%, 18% and 20% pension totals from 2027 (Order 086/01 sets totals only); whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023; the occupational hazards row (old file: 2% employer) was moved out of the rates table on 2026-11-14, and the worked employer cost and column N no longer use it.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rwanda-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rwanda-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `rwanda-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/rwanda-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

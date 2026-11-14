@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sa-freelance-intake"
   jurisdiction: "SA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# SA Freelance Intake v1.3
+# SA Freelance Intake v1.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -62,8 +62,6 @@ Infer applicable facts from documents and ask for remaining facts. Record inappl
 | WHT dividends, rent, loan charges, insurance/reinsurance, technical and consulting services, air tickets or air/sea freight, international telecoms, subject to definitions and exclusions below | 5% | 2026 | same |
 | VAT monthly filing | annual supplies over SAR 40 million | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Submit-VAT-Return-for-Oct-andQ3-2026.aspx |
 | E-invoicing Wave 25 | VAT-liable revenue over SAR 187,500 in any of 2022 to 2025; integrate by 1 February 2027 | 2026 | https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx |
-| VAT registration decision | HOLD pending current threshold and scope verification; no numeric default | 2026 | unverified |
-| VAT voluntary eligibility | HOLD; taxable expenses and non-resident rules also require review | 2026 | unverified |
 
 Apply a domestic rate only after confirming a resident payer or Saudi PE, a payment to a non-resident, a Saudi income source, the precise payment category and any PE connection, exclusion, exemption or documented treaty claim. [ZATCA WHT Guideline, sections 2 to 5](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf). The table is not a rate-selection default. Unknown category means HOLD the calculation, never choose the highest rate. Natural-person payer rules cover activity-related payments, not personal consumption. Exclusions include relevant oil/gas investment dividends and specified telecom network/roaming payments. Interbank loan returns require the specific maximum-90-day and certified-statement conditions; freight definitions exclude inbound shipping to Saudi ports. Payments connected with a recipient's Saudi PE and capital gains need the separate income-tax treatment. Read the category definition and any treaty before the rate, not after.
 
@@ -368,4 +366,4 @@ Not yet confirmed: live Income Tax Law and amendments after the 15 February 2026
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,14 +1,15 @@
 ---
 name: lv-transfer-pricing
 description: "Latvian transfer pricing for tax year 2026 under the distribution-based Corporate Income Tax Law: who counts as a related person (Law on Taxes and Fees, article 1(18)), the arm's length price difference taxed as a deemed profit distribution (CIT Law, article 4(2)(2)(e), base divided by 0.8 and taxed at 20%), the methods and 5% mark-up for low value-adding services (Cabinet Regulation No. 677), and the documentation rules in article 15.2 as amended from 1 January 2026: a controlled transactions report filed above EUR 250,000, a local file above EUR 250,000, a master file above EUR 20,000,000, production deadlines, the penalty of up to 1% capped at EUR 100,000, the EUR 750m country-by-country report, and advance pricing agreements above EUR 1,430,000. Trigger on: Latvia transfer pricing, transfertcenas, kontrolēto darījumu pārskats, Latvian local file, VID transfer pricing penalty. Out of scope: the general CIT computation (lv-corporate-income-tax), individuals (latvia-income-tax), planning (latvia-tax-optimization)."
-version: 0.1
+version: 0.3
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Latvian transfer pricing (tax year 2026)
@@ -48,22 +49,22 @@ Group 4 does not count towards the group 1 to 3 thresholds. It needs a local fil
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | CIT rate on a deemed distribution | 20% of the taxable base | 2026 | CIT Law, art. 3(1): https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
-| Taxable base divisor | Value of the object divided by 0.8 (so tax is 25% of the price difference) | 2026 | CIT Law, art. 4(9); Regulation No. 677, para. 6 |
+| Taxable base divisor | Value of the object divided by 0.8 (so tax is 25% of the price difference) | 2026 | CIT Law, art. 4(9); Regulation No. 677, para. 6; https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums |
 | Related persons, ownership or control test | More than 50% of capital, or a majority of votes (tests c, d, e, h) | 2026 | Law on Taxes and Fees, art. 1(18): https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
-| Related persons, minority holding test | 20% to 50% with no majority of votes; counts for the CIT price adjustment only in a transaction with a related foreign company | 2026 | Law on Taxes and Fees, art. 1(18)(b) |
-| Controlled transactions report (kontrolēto darījumu pārskats), filing threshold | Controlled transactions with groups 1 to 3 above EUR 250,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(3); transitional provision 249 |
-| Local file (vietējā dokumentācija) threshold | Controlled transactions with groups 1 to 3 above EUR 250,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(4)(2) |
-| Master file (globālā dokumentācija) threshold | Controlled transactions with groups 1 to 3 above EUR 20,000,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(4)(1) |
-| Transactions that may be left out of the files as not material | A transaction with a total value of EUR 90,000 or less in the reporting year | 2026 | Law on Taxes and Fees, art. 15.2(11) |
-| Penalty for late or materially deficient documentation | Up to 1% of the controlled transactions that had to be documented, at most EUR 100,000 | 2026 | Law on Taxes and Fees, art. 15.2(14) |
+| Related persons, minority holding test | 20% to 50% with no majority of votes; counts for the CIT price adjustment only in a transaction with a related foreign company | 2026 | Law on Taxes and Fees, art. 1(18)(b); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Controlled transactions report (kontrolēto darījumu pārskats), filing threshold | Controlled transactions with groups 1 to 3 above EUR 250,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(3); transitional provision 249; https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Local file (vietējā dokumentācija) threshold | Controlled transactions with groups 1 to 3 above EUR 250,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(4)(2); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Master file (globālā dokumentācija) threshold | Controlled transactions with groups 1 to 3 above EUR 20,000,000 in the reporting year | Reporting years starting in 2025 onward | Law on Taxes and Fees, art. 15.2(4)(1); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Transactions that may be left out of the files as not material | A transaction with a total value of EUR 90,000 or less in the reporting year | 2026 | Law on Taxes and Fees, art. 15.2(11); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Penalty for late or materially deficient documentation | Up to 1% of the controlled transactions that had to be documented, at most EUR 100,000 | 2026 | Law on Taxes and Fees, art. 15.2(14); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
 | Low value-adding services, simplified mark-up | 5% on the costs attributed to the recipient | 2026 | Regulation No. 677, paras. 18.1 and 18.8: https://likumi.lv/ta/id/295416 |
-| Advance pricing agreement, minimum transaction value | Above EUR 1,430,000 a year with the related foreign company | 2026 | Law on Taxes and Fees, art. 16.1(1) and (1¹) |
+| Advance pricing agreement, minimum transaction value | Above EUR 1,430,000 a year with the related foreign company | 2026 | Law on Taxes and Fees, art. 16.1(1) and (1¹); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
 | Country-by-country report, excluded group | Consolidated group revenue of EUR 750,000,000 or less in the fiscal year before the reporting year | 2026 | Cabinet Regulation No. 397 of 4 July 2017, para. 2.3: https://likumi.lv/ta/id/292196-noteikumi-par-starptautiskas-uznemumu-grupas-parskatu-par-katru-valsti |
-| Penalty for a late or non-compliant country-by-country report | Up to 1% of annual turnover, at most EUR 3,200 | 2026 | Law on Taxes and Fees, art. 32.5(2) |
-| Late payment interest (nokavējuma nauda) | 0.05% of the unpaid tax for each day late | 2026 | Law on Taxes and Fees, art. 29(2) |
-| Penalty on tax understated, found in an audit | 20% of the understated tax if the shortfall is up to 15% of the tax due; 30% if it is more | 2026 | Law on Taxes and Fees, art. 32(4) and (5) |
-| Audit and correction window for transfer pricing | 5 years after the payment deadline (3 years for other matters) | 2026 | Law on Taxes and Fees, arts. 16(1)(6) and 23(1) and (5) |
-| Thresholds before the 2026 rewrite (reporting years starting before 2025) | Local file prepared above EUR 250,000; local file filed above EUR 5,000,000; master file filed above EUR 15,000,000, or above EUR 5,000,000 where net turnover exceeded EUR 50,000,000 | Up to 2024 | Law on Taxes and Fees, art. 15.2(3) and (4), version in force up to 31 December 2025 |
+| Penalty for a late or non-compliant country-by-country report | Up to 1% of annual turnover, at most EUR 3,200 | 2026 | Law on Taxes and Fees, art. 32.5(2); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Late payment interest (nokavējuma nauda) | 0.05% of the unpaid tax for each day late | 2026 | Law on Taxes and Fees, art. 29(2); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Penalty on tax understated, found in an audit | 20% of the understated tax if the shortfall is up to 15% of the tax due; 30% if it is more | 2026 | Law on Taxes and Fees, art. 32(4) and (5); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Audit and correction window for transfer pricing | 5 years after the payment deadline (3 years for other matters) | 2026 | Law on Taxes and Fees, arts. 16(1)(6) and 23(1) and (5); https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam |
+| Thresholds before the 2026 rewrite (reporting years starting before 2025) | Local file prepared above EUR 250,000; local file filed above EUR 5,000,000; master file filed above EUR 15,000,000, or above EUR 5,000,000 where net turnover exceeded EUR 50,000,000 | Up to 2024 | Law on Taxes and Fees, art. 15.2(3) and (4), version in force up to 31 December 2025; https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam?version_date=01.01.2024 |
 
 ## The taxable base
 
@@ -208,11 +209,11 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law on Taxes and Fees (likums "Par nodokļiem un nodevām"), consolidated version in force from 1 January 2026: arts. 1(18), 1(29) to 1(29³), 15(9), 15.2, 16(1)(6), 16.1, 23, 29, 32, 32.5, 33.2, transitional provision 249 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-23 (read from the Internet Archive copy of 18 September 2026; likumi.lv refused direct connections) |
-| Law on Taxes and Fees, art. 15.2 as in force up to 31 December 2025 (the pre-2026 thresholds) | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-24 (Internet Archive copy of 7 September 2025) |
+| Read for the pre-2025 thresholds (EUR 250,000, 5,000,000, 15,000,000 and 50,000,000): Law on Taxes and Fees, art. 15.2(3) and (4), likumi.lv version in force on 1 January 2024 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam?version_date=01.01.2024 | 2026-11-14 |
 | Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), version in force from 1 January 2026: arts. 2, 3, 4, 5(6), 11, 17 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-23 (Internet Archive copy of 4 October 2026) |
 | Cabinet Regulation No. 677 of 14 November 2017, CIT Law application rules, version from 25 February 2021: paras. 3, 6 to 19 | https://likumi.lv/ta/id/295416 | 2026-10-23 (Internet Archive copy of 11 May 2026) |
 | Cabinet Regulation No. 397 of 4 July 2017 on the country-by-country report, version from 7 February 2020: paras. 2.3, 9, 16, 17 | https://likumi.lv/ta/id/292196-noteikumi-par-starptautiskas-uznemumu-grupas-parskatu-par-katru-valsti | 2026-10-23 (Internet Archive copy of 12 August 2024) |
 
 Not yet confirmed: the current Cabinet regulation on the APA procedure and its fee (the 2013 Regulation No. 16 fee of EUR 7,114 ended in 2018 and its successor was not read); the Cabinet regulation setting the detailed content of the master and local files and the simplified documentation; whether Regulation No. 397 was amended after August 2024; the Cabinet list of low-tax and no-tax territories for 2026; VID guidance on how loans and cash pools are measured for the EUR 250,000 threshold; and VID's practice on adjustments in purely domestic related-party transactions. vid.gov.lv and fm.gov.lv refused connections on 2026-10-23, so no VID guidance was read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

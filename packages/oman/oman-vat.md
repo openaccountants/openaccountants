@@ -1,16 +1,17 @@
 ---
 name: oman-vat
 description: "Use this skill to prepare, review or classify transactions for an Oman VAT return, tax year 2026. Oman applies 5% VAT under Royal Decree 121/2020, run by the Tax Authority. Covers registration, rates, statutory 0% categories and a hold on September 2026 lists, blocked input, boxes, deadlines and penalties."
-version: 2.3
+version: 2.4
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Oman VAT v2.3
+# Oman VAT v2.4
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 

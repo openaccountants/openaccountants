@@ -1,65 +1,89 @@
 ---
 name: portugal-einvoice
-description: "Utilize esta skill sempre que lhe forem colocadas questões sobre faturação eletrónica em Portugal em 2026: códigos ATCUD, comunicação mensal dos elementos das faturas (SAF-T(PT) até ao dia 5), código QR, software de faturação certificado pela AT (volume de negócios acima de EUR 50.000, uso de programa informático ou contabilidade organizada), aplicações de faturação da AT, portal e-fatura, faturas em PDF aceites até 31 de dezembro de 2026 e assinatura ou selo eletrónico qualificado a partir de 2027, faturação eletrónica nos contratos públicos (CCP art. 299.º-B, PME obrigadas a partir de 1 de janeiro de 2027), SAF-T da contabilidade (períodos de 2027, entregue em 2028), arquivo por 10 anos e coimas do RGIT. Fora do âmbito: taxas e declaração periódica de IVA (portugal-vat-return), IES e demonstrações financeiras (portugal-financial-statements), lançamentos (portugal-bookkeeping). LEIA SEMPRE esta skill antes de tocar em qualquer trabalho de conformidade de faturação em Portugal. Trigger"
+description: "Utilize esta skill sempre que lhe forem colocadas questões sobre faturação eletrónica em Portugal em 2026, códigos ATCUD, comunicação mensal dos elementos das faturas (SAF-T(PT) até ao dia 5), código QR, software de faturação certificado pela AT (volume de negócios acima de EUR 50.000, uso de programa informático ou contabilidade organizada), aplicações de faturação da AT, portal e-fatura, faturas em PDF aceites até 31 de dezembro de 2026 e assinatura ou selo eletrónico qualificado a partir de 2027, faturação eletrónica nos contratos públicos (CCP art. 299.º-B, PME obrigadas a partir de 1 de janeiro de 2027), SAF-T da contabilidade (períodos de 2027, entregue em 2028), arquivo por 10 anos e coimas do RGIT. Fora do âmbito, taxas e declaração periódica de IVA (portugal-vat-return), IES e demonstrações financeiras (portugal-financial-statements), lançamentos (portugal-bookkeeping). LEIA SEMPRE esta skill antes de tocar em qualquer trabalho de conformidade de faturação em Portugal. Trigger"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-einvoice"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Portugal Einvoice
 
-## Portugal: Faturação Eletrónica (ATCUD / SAF-T(PT) / e-Fatura), Skill v1.1 (2026)
+## Scope
 
-## Rates and thresholds
+This skill is the how-to for invoicing in Portugal in 2026: who needs AT-certified invoicing software, the ATCUD code and QR code, registering document series, the monthly communication of invoice data (e-fatura, SAF-T(PT) by the 5th), PDF invoices until 31 December 2026 and the qualified e-signature or e-seal rule from 2027, B2G e-invoices through Peppol, archiving, and fines.
 
-Todos os valores foram lidos em 30 de outubro de 2026 nos textos publicados pela AT no Portal das Finanças ou no Diário da República. As fontes estão na secção final. Para as taxas de IVA, a skill `portugal-vat-return` manda se houver divergência.
+Who is in: VAT-registered businesses and self-employed people resident or established in mainland Portugal and the autonomous regions. Who is out: what VAT is due and at what rate (`portugal-vat-return`), bookkeeping (`portugal-bookkeeping`), and B2G procurement detail beyond the basics.
 
-### Faturação Eletrónica
-
-- **Software certificado obrigatório**: volume de negócios do ano anterior > €50.000, ou uso de programa informático de faturação, ou contabilidade organizada (basta uma das três) _(DL 28/2019, art. 4.º, n.º 1)_
-- **ATCUD**: obrigatório em todas as faturas e documentos fiscalmente relevantes, seja qual for o meio de emissão _(Portaria 195/2020, art. 4.º, n.º 1)_
-- **Código QR**: obrigatório nos documentos emitidos por programas certificados _(Portaria 195/2020, art. 6.º, n.º 1)_
-- **Comunicação mensal dos elementos das faturas**: até ao dia 5 do mês seguinte ao da emissão _(DL 198/2012, art. 3.º, n.º 2, redação da Lei 12/2022)_
-- **Faturas em PDF**: aceites como faturas eletrónicas até 31 de dezembro de 2026 _(Lei 73-A/2025, art. 95.º, n.º 3)_
-- **A partir de 1 jan 2027**: fatura eletrónica com autenticidade e integridade garantidas, nomeadamente por assinatura eletrónica qualificada, selo eletrónico qualificado ou EDI _(DL 28/2019, art. 12.º, n.º 2)_
-- **B2G (contratos públicos)**: faturas eletrónicas obrigatórias; para os cocontratantes que não sejam PME nem entidades públicas, desde 1 de janeiro de 2021; regime transitório das micro, pequenas e médias empresas e das entidades públicas cocontratantes prorrogado até 31 de dezembro de 2026 _(CCP, art. 299.º-B; DL 111-B/2017, art. 9.º, n.os 3 e 4; Lei 73-A/2025, art. 260.º, n.º 2)_
-- **SAF-T(PT) da contabilidade**: aplica-se aos períodos de 2027 e seguintes, a entregar em 2028 _(Lei 73-A/2025, art. 95.º, n.º 2)_
-- **Emissão da fatura**: até ao 5.º dia útil seguinte ao momento em que o IVA é devido _(CIVA, art. 36.º, n.º 1, al. a))_
-- **Fatura simplificada**: até €1.000 (retalhistas a não sujeitos passivos), até €100 (restantes), ou qualquer valor no regime de isenção do art. 53.º _(CIVA, art. 40.º, n.º 1)_
-- **Arquivo**: 10 anos _(DL 28/2019, art. 19.º, n.º 1; CIVA, art. 52.º, n.º 1)_
-- **Não emissão ou emissão tardia de faturas**: €150 a €3.750 _(RGIT, art. 123.º, n.º 1)_
-- **Falta de software certificado**: €1.500 a €18.750 _(RGIT, art. 128.º, n.º 2)_
-- **Falta ou atraso da comunicação dos elementos das faturas (SAF-T mensal)**: €200 a €10.000, contraordenação grave _(RGIT, art. 117.º, n.º 9)_
-- **Pessoas coletivas**: os limites mínimo e máximo das coimas elevam-se para o dobro _(RGIT, art. 26.º, n.º 4)_
-
-## Secção 1: Referência Rápida
+### Quick reference
 
 **Referência Rápida**
 
 | Campo | Valor |
 | --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
 | Nome do sistema | e-fatura (comunicação dos elementos das faturas à AT) com ATCUD e código QR |
 | Entidade reguladora | Autoridade Tributária e Aduaneira (AT) |
 | Legislação principal | Decreto-Lei 28/2019 (processamento de faturas e arquivo; alterado pelos DL 48/2020 e DL 49/2025); Decreto-Lei 198/2012 (comunicação das faturas); Portaria 195/2020 (código QR e ATCUD); Portaria 363/2010 (certificação de software; os arts. 1.º, 2.º, 8.º e 9.º foram revogados pelo DL 28/2019, art. 44.º, al. i)); Portaria 321-A/2007 (SAF-T(PT)); CIVA arts. 36.º, 40.º e 52.º; CCP art. 299.º-B (contratos públicos); RGIT (coimas) |
 | Regras transitórias de 2026 | Lei 73-A/2025 (Orçamento do Estado para 2026): art. 95.º (PDF até 31 dez 2026; SAF-T da contabilidade a partir dos períodos de 2027) e art. 260.º, n.º 2 (regime transitório B2G das PME até 31 dez 2026) |
 | Estado atual (2026) | ATCUD e código QR em vigor; comunicação mensal dos elementos das faturas até ao dia 5; PDF ainda aceite como fatura eletrónica; B2G obrigatório para grandes empresas e transitório para PME até ao fim de 2026; B2B sem obrigação de troca estruturada |
-| Versão da skill | 1.1 |
+| Versão da skill | 2.0 |
 
-## Secção 2: Âmbito da Obrigação
+## Ask the client first
 
-### Quem Deve Cumprir
+- Did the business have turnover above EUR 50,000 last year, does it use invoicing software, or does it keep organised accounts? Any one makes certified software compulsory.
+- How are invoices issued today: certified software, the AT's free Portal invoicing, or pre-printed books from an authorised printer?
+- Are the customers businesses, consumers, or public bodies (B2G through Peppol)?
+- Does the business send PDF invoices by email? From 1 January 2027 they need a qualified e-signature, e-seal or EDI.
+- Is it a company (fines doubled) or an individual?
+- Has every document series been registered with the AT and given its validation code?
+
+## Rates, bands and thresholds
+
+All figures below were found on 2026-11-14 in the AT's consolidated copies on the Portal das Finanças. For VAT rates, `portugal-vat-return` governs.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Certified invoicing software required if prior-year turnover is above (or the business uses invoicing software, or keeps organised accounts) | EUR 50,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf |
+| ATCUD on every invoice and tax-relevant document | required, whatever the means of issue | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_195_2020.pdf |
+| QR code on documents issued by certified software | required | 2026 | same |
+| Monthly communication of invoice data to the AT | by the 5th of the following month | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf |
+| PDF invoices accepted as e-invoices | until 31 December 2026 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf |
+| Accounting SAF-T(PT) file | applies to 2027 periods, filed from 2028 | 2026 | same |
+| B2G: transitional regime for SMEs and public contractors extended (Lei 73-A/2025 art. 260(2)) | to 31 December 2026 | 2026 | same |
+| From 1 January 2027: e-invoice authenticity and integrity by qualified e-signature, qualified e-seal or EDI | required | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf |
+| Invoice issued by | the 5th working day after the VAT becomes due | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx |
+| Simplified invoice: retailers to non-taxable persons / other supplies, not above | EUR 1,000 / EUR 100 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva40.aspx |
+| Retention of records and invoices | 10 years | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx |
+| Invoice not issued or issued late (RGIT art. 123(1)) | EUR 150 to EUR 3,750 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit123.aspx |
+| No certified software (RGIT art. 128(2)) | EUR 1,500 to EUR 18,750 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit-artigo-128-ordm-ra2021_02.aspx |
+| Invoice data communication missing or late (RGIT art. 117(9), serious offence) | EUR 200 to EUR 10,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx |
+| Companies: minimum and maximum fines doubled (RGIT art. 26(4)) | x 2 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx |
+
+B2G (public contracts): e-invoices are compulsory (CCP art. 299-B); for contractors that are not SMEs or public bodies since 1 January 2021 (DL 111-B/2017 art. 9, n.os 3 and 4, read on the Diário da República consolidated text on 2026-10-30; that page does not open to a script, so the start date was not re-read today).
+
+## The method, step by step
+
+
+1. **Check whether certified software is required.** Turnover above EUR 50,000 in the previous year, use of invoicing software, or organised accounts: any one is enough (DL 28/2019 art. 4(1)). Otherwise the AT's Portal invoicing or authorised printed books may be used.
+2. **Register each series** with the AT before first use and put the validation code into the ATCUD (DL 28/2019 art. 35; Portaria 195/2020).
+3. **Issue the invoice** by the 5th working day after the VAT becomes due (CIVA art. 36(1)(a)), with the mandatory fields, ATCUD and, from certified software, the QR code. A simplified invoice is allowed up to EUR 1,000 for retail sales to non-taxable persons and EUR 100 otherwise (CIVA art. 40).
+4. **Communicate the invoice data** to the AT by the 5th of the following month, in real time, by SAF-T(PT) file or on the Portal (DL 198/2012 art. 3); those obliged to produce SAF-T(PT) cannot use manual entry.
+5. **Send B2G invoices** through Peppol (CIUS-PT); check whether the SME transitional regime still applies after 31 December 2026.
+6. **Plan for 1 January 2027**: PDF invoices stop counting as e-invoices on their own; adopt a qualified e-signature, qualified e-seal or EDI (DL 28/2019 art. 12(2)). The accounting SAF-T(PT) is due for 2027 periods, filed in 2028.
+7. **Archive** everything for 10 years (CIVA art. 52; DL 28/2019 art. 19).
+
+### Âmbito da Obrigação
+
+#### Quem Deve Cumprir
 
 - **B2G (empresa para Estado)**: no âmbito da execução de contratos públicos, os cocontratantes são obrigados a emitir faturas eletrónicas no modelo da norma europeia aprovada pela Comissão Europeia e publicitada no portal dos contratos públicos (CCP, art. 299.º-B, n.os 1 e 3). Os cocontratantes puderam usar outros mecanismos de faturação até 31 de dezembro de 2020 (DL 111-B/2017, art. 9.º, n.º 3), pelo que, desde 1 de janeiro de 2021, a fatura eletrónica é obrigatória para quem não esteja no regime do n.º 4. As micro, pequenas e médias empresas (definidas pela Recomendação 2003/361/CE) e as entidades públicas enquanto cocontratantes beneficiam desse regime transitório (art. 9.º, n.º 4, que na redação consolidada termina a 31 de dezembro de 2025), prorrogado até 31 de dezembro de 2026 (Lei 73-A/2025, art. 260.º, n.º 2). Quem use outros mecanismos dentro destes prazos não pode ser discriminado pelos contraentes públicos (art. 9.º, n.º 5). Os contraentes públicos estão obrigados a receber e processar faturas eletrónicas desde 18 de abril de 2019, ou 18 de abril de 2020 para os que não integrem as alíneas a) e d) do n.º 1 do art. 2.º do CCP (art. 9.º, n.os 1 e 2). Se nada mudar no Orçamento do Estado para 2027, as PME passam a ter de faturar eletronicamente às entidades públicas a partir de 1 de janeiro de 2027. Contratos secretos ou com medidas especiais de segurança estão excluídos (art. 299.º-B, n.º 2).
 - **B2B (empresa para empresa)**: Portugal não impõe a troca de faturas eletrónicas estruturadas entre privados. A conformidade assenta em camadas: (1) meios de processamento autorizados e, quando aplicável, software certificado pela AT (DL 28/2019, arts. 3.º e 4.º); (2) ATCUD em todas as faturas (Portaria 195/2020, art. 4.º); (3) código QR nos documentos de software certificado (Portaria 195/2020, art. 6.º); (4) comunicação dos elementos das faturas à AT até ao dia 5 do mês seguinte (DL 198/2012, art. 3.º). A fatura eletrónica entre privados depende da aceitação do destinatário (DL 28/2019, art. 12.º, n.º 1; CIVA, art. 36.º, n.º 10).
 - **B2C (empresa para consumidor)**: as mesmas regras do B2B. O NIF do consumidor só consta da fatura quando este o pede (CIVA, art. 36.º, n.º 16, e art. 40.º, n.º 3). O consumidor que não deu o NIF pode comunicar a fatura à AT através do código QR ou do ATCUD (CIRS, art. 78.º-B, n.º 3).
 
-### Limiares e Isenções
+#### Limiares e Isenções
 
 - **Sem limiar de volume de negócios para ATCUD e comunicação**: o ATCUD é obrigatório em todas as faturas, por qualquer meio de processamento (Portaria 195/2020, art. 4.º, n.º 1); a comunicação abrange todos os que estejam sujeitos às regras de faturação portuguesas e pratiquem operações sujeitas a IVA (DL 198/2012, art. 3.º, n.º 1).
 - **Software certificado pela AT** (DL 28/2019, art. 4.º, n.º 1): obrigatório para quem tenha sede, estabelecimento estável ou domicílio em Portugal, e para outros sujeitos passivos cuja faturação siga as regras portuguesas (CIVA, art. 35.º-A), sempre que se verifique **qualquer** destas condições: (a) volume de negócios do ano anterior acima de EUR 50 000 (ou anualizado no ano de início); (b) uso de programas informáticos de faturação; (c) contabilidade organizada, obrigatória ou por opção. A AT publica a lista de programas certificados (art. 4.º, n.º 3).
@@ -67,7 +91,7 @@ Todos os valores foram lidos em 30 de outubro de 2026 nos textos publicados pela
 - **Outros meios eletrónicos** (máquinas registadoras, terminais, balanças) só servem para faturas simplificadas (DL 28/2019, art. 4.º, n.º 5).
 - **Faturas simplificadas** (CIVA, art. 40.º, n.º 1): transmissões de bens por retalhistas ou vendedores ambulantes a não sujeitos passivos até EUR 1 000; outras operações até EUR 100; e operações de sujeitos passivos no regime de isenção do art. 53.º. Continuam a exigir ATCUD (Portaria 195/2020, art. 4.º) e, se emitidas por software certificado, código QR (art. 6.º).
 
-### Fases do Calendário
+#### Fases do Calendário
 
 **Fases do Calendário**
 
@@ -86,38 +110,38 @@ Todos os valores foram lidos em 30 de outubro de 2026 nos textos publicados pela
 
 As datas a partir das quais o código QR e o ATCUD passaram a ser exigidos na prática (o texto anterior indicava janeiro de 2022 e janeiro de 2023) resultam de despachos de adiamento que não foram relidos hoje (ver "Not yet confirmed").
 
-## Secção 3: Formato Técnico
+### Formato Técnico
 
-### Normas de Formato da Fatura
+#### Normas de Formato da Fatura
 
 - **B2G**: modelo da norma europeia aprovada pela Comissão Europeia (CCP, art. 299.º-B, n.º 3), ou seja a EN 16931. Em Portugal usa-se a especificação CIUS-PT em XML UBL 2.1, transmitida pela rede Peppol (Peppol BIS Billing 3.0). Os elementos que a fatura B2G tem de conter, quando aplicáveis, constam do art. 299.º-B, n.º 1: identificadores do processo e da fatura, período de faturação, cocontratante, contraente público, entidade beneficiária, representante fiscal, referência do contrato, condições de entrega, instruções de pagamento, ajustamentos e encargos, rubricas e totais.
 - **B2B/B2C**: não há formato XML estruturado obrigatório. As faturas podem ser em papel ou eletrónicas, desde que processadas por um meio autorizado (DL 28/2019, art. 3.º) e com ATCUD e, quando aplicável, código QR. Os dados das faturas são comunicados à AT por SAF-T(PT), em tempo real ou por inserção direta no Portal das Finanças (DL 198/2012, art. 3.º, n.º 1).
 
-### Esquema do SAF-T(PT)
+#### Esquema do SAF-T(PT)
 
 - **Estrutura XML**: definida pela Portaria 321-A/2007 (DL 198/2012, art. 3.º, n.º 1, al. b)).  _(Portaria 321-A/2007)_
 - **SAF-T(PT) de faturação, conteúdo**: Header, Customer, TaxTable, Payments, Supplier, Product, SalesInvoices, MovementOfGoods, WorkingDocuments.
 - **SAF-T(PT) da contabilidade, conteúdo**: Header, Customer, TaxTable, Payments, GeneralLedgerAccounts, Supplier, GeneralLedgerEntries, FixedAssets, Inventory.
 - **Exportação**: os sistemas de faturação ou contabilidade têm de conseguir exportar o ficheiro de auditoria tributária (DL 28/2019, art. 11.º, n.º 5).
 
-### Estrutura do ATCUD
+#### Estrutura do ATCUD
 
 - **Formato** (Portaria 195/2020, arts. 3.º e 4.º): `ATCUD:CódigoValidação-NúmeroSequencial`. O código de validação da série é atribuído pela AT depois da comunicação da série (DL 28/2019, art. 35.º) e tem no mínimo 8 carateres (art. 3.º, n.º 1). O número sequencial é o número do documento dentro da série, a sequência numérica a seguir à barra (/) da identificação do documento (art. 3.º, n.º 3). Exemplo: `ATCUD:TES123TE-4561`.
 - **Onde aparece**: em todas as páginas do documento e, quando há código QR, imediatamente acima dele (art. 4.º, n.º 3).
 - No código QR e no SAF-T(PT) usa-se apenas `TES123TE-4561`, sem o prefixo `ATCUD:` (ver "Not yet confirmed").
 
-### Especificação do Código QR
+#### Especificação do Código QR
 
 - **Conteúdo**: as especificações técnicas são definidas pela AT e publicadas no Portal das Finanças (Portaria 195/2020, art. 5.º). Segundo a especificação da AT, o código QR codifica: NIF do emitente, NIF do adquirente e país do adquirente; tipo, estado e data do documento, identificação única do documento e ATCUD; espaço fiscal, bases tributáveis e IVA por taxa (campos I1 a I8, J1 a J8 e K1 a K8 para PT, PT-AC e PT-MA); total do documento, retenção na fonte e 4 carateres do hash (ver "Not yet confirmed").
 - **Posição**: dentro do corpo do documento, legível em qualquer suporte; em documentos com várias páginas, na primeira ou na última (Portaria 195/2020, art. 6.º, n.os 2 e 3).
 
-### Cadeia de Hash (Assinatura Digital RSA)
+#### Cadeia de Hash (Assinatura Digital RSA)
 
 - **Cadeia de hash**: cada fatura emitida por software certificado inclui uma assinatura RSA que liga cada documento ao anterior, garantindo a inviolabilidade. Os primeiros 4 carateres do hash aparecem na fatura impressa ou em PDF. Os requisitos constam da Portaria 363/2010 e não foram relidos hoje (ver "Not yet confirmed"). Os programas têm de detetar alterações à informação e impedir a continuação do uso do sistema quando a integridade é posta em causa (DL 28/2019, art. 11.º, n.º 2).
 
-## Secção 4: Campos Obrigatórios
+### Campos Obrigatórios
 
-### Campos Exigidos nas Faturas Portuguesas
+#### Campos Exigidos nas Faturas Portuguesas
 
 **Campos Exigidos nas Faturas Portuguesas**
 
@@ -142,7 +166,7 @@ As datas a partir das quais o código QR e o ATCUD passaram a ser exigidos na pr
 
 A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade e denominação, preço e IVA (ou preço com IVA e taxa), NIF do adquirente sujeito passivo e motivo de isenção (CIVA, art. 40.º, n.º 2).
 
-### Campos Adicionais B2G (CIUS-PT / Peppol BIS 3.0)
+#### Campos Adicionais B2G (CIUS-PT / Peppol BIS 3.0)
 
 **Campos Adicionais B2G (CIUS-PT / Peppol BIS 3.0)**
 
@@ -155,9 +179,9 @@ A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade 
 | Profile ID | `cbc:ProfileID` = `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` |
 | Endpoint ID (Peppol) | `cbc:EndpointID` com identificador de esquema |
 
-## Secção 5: Método de Transmissão
+### Método de Transmissão
 
-### Comunicação dos Elementos das Faturas (B2B/B2C)
+#### Comunicação dos Elementos das Faturas (B2B/B2C)
 
 **Comunicação dos Elementos das Faturas (B2B/B2C)** _(DL 198/2012, art. 3.º)_
 
@@ -171,7 +195,7 @@ A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade 
 | Dados por documento | NIF do emitente, número, data, tipo de documento, NIF do adquirente quando inserido, valor tributável, taxas, motivo de isenção, IVA ou Imposto do Selo, menção IVA de caixa, número do certificado do programa, documento de origem, documento retificado, país ou região do imposto e ATCUD (art. 3.º, n.º 4) |
 | Autenticação | Credenciais do Portal das Finanças (ver "Not yet confirmed") |
 
-### Transmissão da Fatura Eletrónica B2G
+#### Transmissão da Fatura Eletrónica B2G
 
 **Transmissão da Fatura Eletrónica B2G**
 
@@ -182,27 +206,27 @@ A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade 
 | Endpoint | Endpoint Peppol do adquirente registado no SMP |
 | Autenticação | Certificados PKI Peppol |
 
-### Fatura Eletrónica B2B a partir de 2027
+#### Fatura Eletrónica B2B a partir de 2027
 
 - Até 31 de dezembro de 2026, uma fatura em PDF é considerada fatura eletrónica para todos os efeitos fiscais (Lei 73-A/2025, art. 95.º, n.º 3).
 - Daí em diante aplica-se só o DL 28/2019, art. 12.º, n.º 2: considera-se garantida a autenticidade da origem e a integridade do conteúdo se for adotado, nomeadamente, um destes procedimentos: (a) assinatura eletrónica qualificada; (b) selo eletrónico qualificado nos termos do Regulamento (UE) 910/2014; (c) sistema EDI com acordo segundo o "Acordo tipo EDI europeu".
 - Se o cliente envia faturas em PDF por email, a partir de 1 de janeiro de 2027 o PDF deixa de valer por si como fatura eletrónica. O cliente precisa de um procedimento que garanta a autenticidade e a integridade; os três que a lei dá como suficientes são a assinatura eletrónica qualificada, o selo eletrónico qualificado e o EDI (a lista do art. 12.º, n.º 2 diz "nomeadamente", ou seja não é fechada). A alternativa é a fatura em papel. O software de faturação tem ainda de garantir validação cronológica, não repúdio, não duplicação e verificação do certificado (DL 28/2019, art. 13.º).
 
-### Registo de Séries
+#### Registo de Séries
 
 - **Registo de Séries**: antes de as usar, cada série de faturas e documentos fiscalmente relevantes é comunicada à AT, por meio de processamento (DL 28/2019, art. 35.º, n.º 1). A AT atribui a cada série um código de validação que integra o ATCUD (art. 35.º, n.º 2). A comunicação indica o identificador da série, o tipo de documento, o início da numeração e a data prevista de início de utilização (Portaria 195/2020, art. 2.º).
 
-## Secção 6: Regras de Validação
+### Regras de Validação
 
-### Validação do Lado da AT (SAF-T)
+#### Validação do Lado da AT (SAF-T)
 
 - **Validação do Lado da AT (SAF-T)**: validação de esquema face ao XSD em vigor do SAF-T(PT); unicidade do ATCUD; integridade da cadeia de hash; validação dos NIF face ao cadastro da AT; consistência das taxas de IVA com o espaço fiscal; numeração sequencial sem lacunas nem duplicados dentro da série; tipos de documento alinhados com a tabela do SAF-T. As regras exatas de validação da AT não foram relidas hoje (ver "Not yet confirmed").
 
-### Verificações Pré-Submissão
+#### Verificações Pré-Submissão
 
 - **Verificações Pré-Submissão**: ATCUD presente e no formato CódigoValidação-NúmeroSequencial; série comunicada e código de validação atribuído; dados do código QR iguais aos da fatura; cadeia de hash ininterrupta; número do certificado do programa válido; documentos anulados registados na base de dados (DL 28/2019, art. 7.º, n.º 5); documentos em modo de treino identificados como tal (art. 7.º, n.º 6); todos os campos obrigatórios preenchidos.
 
-### Motivos Comuns de Rejeição
+#### Motivos Comuns de Rejeição
 
 **Motivos Comuns de Rejeição**
 
@@ -216,9 +240,9 @@ A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade 
 | Não conformidade com o esquema | XML não conforme com o XSD em vigor do SAF-T(PT) |
 | Submissão duplicada | Mesma fatura já comunicada num período anterior |
 
-## Secção 7: Regras de Apuramento
+### Regras de Apuramento
 
-### Taxas de IVA (2026)
+#### Taxas de IVA (2026)
 
 **Taxas de IVA (2026)** _(continente: CIVA, art. 18.º, n.º 1; regiões autónomas: CIVA, art. 18.º, n.º 3, valores conforme `portugal-vat-return`)_
 
@@ -231,19 +255,19 @@ A fatura simplificada tem menos elementos: NIF e nome do fornecedor, quantidade 
 
 A taxa reduzida da Madeira é 4% desde 1 de outubro de 2024 (o texto anterior desta skill indicava 5%), conforme a skill `portugal-vat-return`, que cita o Ofício Circulado 25045/2024 da AT.
 
-### Regras de Arredondamento
+#### Regras de Arredondamento
 
 - **Regras de Arredondamento**: a prática seguida nesta skill é calcular o IVA por linha, arredondar a 2 casas decimais e somar as linhas arredondadas para o total. O SAF-T(PT) exige base tributável e imposto separados por taxa e por espaço fiscal. A regra de arredondamento consta das especificações técnicas da AT, não relidas hoje (ver "Not yet confirmed").
 
-### Tratamento de Faturas Multi-Taxa
+#### Tratamento de Faturas Multi-Taxa
 
 - **Tratamento de Faturas Multi-Taxa**: quando a fatura tem bens ou serviços a taxas diferentes, a quantidade e denominação, o preço e o imposto indicam-se separadamente por taxa (CIVA, art. 36.º, n.º 5, parágrafo final). No código QR, os campos I1 a K8 permitem codificar até 8 combinações de taxa e espaço fiscal (ver "Not yet confirmed").
 
-### Retenção na Fonte
+#### Retenção na Fonte
 
 - **Retenção na Fonte**: quando aplicável (por exemplo, serviços profissionais), a retenção na fonte é indicada separadamente. O código QR tem um campo próprio para o montante retido (ver "Not yet confirmed").
 
-## Secção 8: Requisitos de Arquivo
+### Requisitos de Arquivo
 
 **Requisitos de Arquivo**
 
@@ -260,7 +284,7 @@ A taxa reduzida da Madeira é 4% desde 1 de outubro de 2024 (o texto anterior de
 | Integridade | Mensagens sem código executável ou macros | DL 28/2019, art. 29.º |
 | Faturas com assinatura ou selo qualificado (a partir de 2027) | Arquivadas com a assinatura ou selo intactos e verificáveis | DL 28/2019, arts. 12.º e 28.º |
 
-## Secção 9: Sanções por Incumprimento
+### Sanções por Incumprimento
 
 **Sanções por Incumprimento** _(RGIT; limites para pessoas singulares. Para pessoas coletivas, os limites mínimo e máximo elevam-se para o dobro, art. 26.º, n.º 4)_
 
@@ -281,59 +305,94 @@ O art. 26.º, n.º 1 do RGIT limita as coimas de pessoas coletivas a EUR 165 000
 
 Os fornecedores B2G que não cumpram o art. 299.º-B do CCP arriscam consequências no contrato público (ver "Not yet confirmed").
 
-## Secção 10: Interação com Outras Skills Fiscais
+### Interação com Outras Skills Fiscais
 
-### Comunicação das Faturas e Declaração Periódica de IVA
+#### Comunicação das Faturas e Declaração Periódica de IVA
 
 - **Comunicação das Faturas e Declaração Periódica de IVA**: os dados comunicados mensalmente cruzam com a declaração periódica de IVA (ver `portugal-vat-return`). O pré-preenchimento da declaração a partir do e-fatura não foi relido hoje (ver "Not yet confirmed").
 
-### Deduções dos Consumidores no e-fatura
+#### Deduções dos Consumidores no e-fatura
 
 - **Deduções dos Consumidores no e-fatura**: as faturas com NIF do consumidor comunicadas à AT entram nas deduções à coleta do IRS; as despesas gerais familiares dão 35% com limite de EUR 250 por sujeito passivo (CIRS, art. 78.º-B, n.º 1). O consumidor pode comunicar faturas sem NIF pelo código QR ou pelo ATCUD (art. 78.º-B, n.º 3). Ver `pt-irs-employees-investment`.
 
-### SAF-T(PT) da Contabilidade e IES
+#### SAF-T(PT) da Contabilidade e IES
 
 - **SAF-T(PT) da Contabilidade**: a entrega do ficheiro SAF-T(PT) da contabilidade (Portaria 31/2019) aplica-se aos períodos de 2027 e seguintes, a entregar em 2028 (Lei 73-A/2025, art. 95.º, n.º 2). Para a IES ver `portugal-financial-statements`. A regra antiga de que a AT valida o ficheiro em 10 dias antes da IES não foi confirmada hoje.
 
-### Inventário
+#### Inventário
 
 - **Comunicação do inventário** (DL 198/2012, art. 3.º-A, n.º 1): quem tem contabilidade organizada e está obrigado a inventário comunica à AT, até 31 de janeiro, o inventário do último dia do exercício anterior. Ficam dispensados de o valorizar: todos, no período iniciado em 2025; quem não esteja obrigado a inventário permanente, no período iniciado em 2026 (Lei 73-A/2025, art. 95.º, n.º 1).
 
-### IRC e IRS
+#### IRC e IRS
 
 - **IRC e IRS**: os titulares de rendimentos da Categoria B estão sujeitos às obrigações de faturação, recibo e arquivo do CIVA e do DL 28/2019 (CIRS, art. 118.º, n.º 1, na redação do DL 28/2019); a escrituração e contabilidade em IRC seguem o mesmo decreto-lei (CIRC, art. 124.º, n.º 5). Os dados de faturação suportam o cruzamento com os rendimentos declarados.
 
-### Pagamentos por Conta e Retenção na Fonte
+#### Pagamentos por Conta e Retenção na Fonte
 
 - **Retenção na Fonte**: os dados de retenção na fonte indicados nas faturas cruzam com as declarações dos pagadores. O mecanismo de cruzamento não foi relido hoje.
 
+## Worked cases
+
+### Case 1: a sole trader crosses EUR 50,000 and sends late invoice data
+
+Facts. Rita, a self-employed designer, invoiced EUR 62,000 in 2025 using the Portal's free invoicing. In 2026 she must use certified software (turnover above EUR 50,000). In March 2026 she forgets to communicate February's invoice data by 5 March and is fined.
+
+Working. The communication offence (RGIT art. 117(9)) carries EUR 200 to EUR 10,000. As an individual, the range is not doubled; for a company it would be EUR 400 to EUR 20,000 (RGIT art. 26(4)).
+
+```oa-check
+name: Portugal 2026, certified software test and fine range for late invoice data
+inputs:
+  turnover_2025: 62000
+  software_threshold: 50000
+  fine_min: 200
+  fine_max: 10000
+steps:
+  - over_threshold: turnover_2025 - software_threshold
+  - company_fine_min: fine_min * 2
+  - company_fine_max: fine_max * 2
+expected:
+  over_threshold: 12000.00
+  company_fine_min: 400.00
+  company_fine_max: 20000.00
+```
+
+## When to refuse or refer
+
+- Whether an operation is taxable, exempt or reverse-charged, and at what rate: `portugal-vat-return`.
+- B2G procurement disputes, public contract terms and Peppol access point contracts: refer to a specialist.
+- Software certification itself (Portaria 363/2010 requirements for developers): refer to the software house.
+- A fine already notified by the AT, or a reduction request under RGIT: refer to a contabilista certificado.
+- The Azores and Madeira VAT rates and any regional rule not covered by the national texts: refer.
+
 ## Sources
+
+Rows dated 2026-11-14 were opened that day and the figures this skill takes from them were found in the text. The three Diário da República consolidated pages serve only a script shell, so they keep their earlier read date; every figure they support was also found in the AT copy of the same law.
 
 | Source | URL | Read on |
 |---|---|---|
-| Decreto-Lei 28/2019 (AT consolidated copy, with DL 48/2020 and DL 49/2025): arts. 2, 3, 4, 4-A, 7, 11, 12, 13, 19 to 30, 35, 43, 45 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf | 2026-10-30 |
-| Decreto-Lei 198/2012 (AT consolidated copy, last change DL 85/2022): art. 3 (day 5, channels, data elements), art. 3-A (inventory) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-10-30 |
-| Portaria 195/2020 (QR code and ATCUD) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_195_2020.pdf | 2026-10-30 |
-| Lei 73-A/2025 (State Budget 2026), art. 95 (PDF until 31 Dec 2026, accounting SAF-T from 2027 periods, inventory valuation) and art. 260(2) (B2G SME regime to 31 Dec 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf | 2026-10-30 |
-| Decreto-Lei 111-B/2017 (original DR text): CCP art. 299-B | https://files.diariodarepublica.pt/1s/2017/08/16802/0189402052.pdf | 2026-10-30 |
+| Decreto-Lei 28/2019 (AT consolidated copy, with DL 48/2020 and DL 49/2025): arts. 2, 3, 4, 4-A, 7, 11, 12, 13, 19 to 30, 35, 43, 45 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf | 2026-11-14 |
+| Decreto-Lei 198/2012 (AT consolidated copy, last change DL 85/2022): art. 3 (day 5, channels, data elements), art. 3-A (inventory) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-11-14 |
+| Portaria 195/2020 (QR code and ATCUD) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_195_2020.pdf | 2026-11-14 |
+| Lei 73-A/2025 (State Budget 2026), art. 95 (PDF until 31 Dec 2026, accounting SAF-T from 2027 periods, inventory valuation) and art. 260(2) (B2G SME regime to 31 Dec 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf | 2026-11-14 |
+| Decreto-Lei 111-B/2017 (original DR text): CCP art. 299-B | https://files.diariodarepublica.pt/1s/2017/08/16802/0189402052.pdf | 2026-11-14 |
 | Decreto-Lei 111-B/2017, consolidated (last change 2025-03-10): art. 9 transitional rule, n.os 1 to 5 | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2017-108086636 | 2026-10-30 |
 | Decreto-Lei 28/2019, consolidated on the Diário da República (last change 2025-03-27): arts. 4 and 12 | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2019-119662485 | 2026-10-30 |
 | Lei 73-A/2025 on the Diário da República: arts. 95 and 260 | https://diariodarepublica.pt/dr/detalhe/lei/73-a-2025-993270096 | 2026-10-30 |
-| CIVA art. 36, invoice deadline and content | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx | 2026-10-30 |
-| CIVA art. 40, simplified invoices | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva40.aspx | 2026-10-30 |
-| CIVA art. 52, 10-year retention | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx | 2026-10-30 |
-| CIVA art. 18, mainland VAT rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-30 |
-| CIRS art. 78-B, general family expenses and invoices without NIF | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-10-30 |
-| RGIT art. 26, fines for companies doubled | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-10-30 |
-| RGIT art. 117, late declarations and communications (n.º 9: invoice and inventory communications) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx | 2026-10-30 |
-| RGIT art. 120, no organised accounts or export model | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit120.aspx | 2026-10-30 |
-| RGIT art. 121, accounting not to standards, delays, SAF-T file | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit121.aspx | 2026-10-30 |
-| RGIT art. 123, invoices not issued or not kept | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit123.aspx | 2026-10-30 |
-| RGIT art. 128, certified software | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit-artigo-128-ordm-ra2021_02.aspx | 2026-10-30 |
+| CIVA art. 36, invoice deadline and content | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx | 2026-11-14 |
+| CIVA art. 40, simplified invoices | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva40.aspx | 2026-11-14 |
+| CIVA art. 52, 10-year retention | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx | 2026-11-14 |
+| CIVA art. 18, mainland VAT rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-11-14 |
+| CIRS art. 78-B, general family expenses and invoices without NIF | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-11-14 |
+| RGIT art. 26, fines for companies doubled | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-11-14 |
+| RGIT art. 117, late declarations and communications (n.º 9: invoice and inventory communications) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx | 2026-11-14 |
+| RGIT art. 120, no organised accounts or export model | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit120.aspx | 2026-11-14 |
+| RGIT art. 121, accounting not to standards, delays, SAF-T file | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit121.aspx | 2026-11-14 |
+| RGIT art. 123, invoices not issued or not kept | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit123.aspx | 2026-11-14 |
+| RGIT art. 128, certified software | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit-artigo-128-ordm-ra2021_02.aspx | 2026-11-14 |
 
-Not yet confirmed: whether the 2027 State Budget postpones again the end of PDF invoices, the accounting SAF-T or the B2G SME regime, so check before 1 January 2027 (the proposal, Proposta de Lei 110/XVII/2.ª, would accept PDF invoices until 31 December 2027 and move the accounting SAF-T to periods from 2028, delivered in 2029, according to the Ordem dos Contabilistas Certificados analysis; it is not law on 2026-10-30); the dates from which the QR code (old version: January 2022) and ATCUD (old version: January 2023) became enforceable in practice, which came from postponement despachos not read today; the AT technical specification for the QR code (field list I1 to K8, withholding field, 4-character hash) and the ATCUD form used inside the QR code and SAF-T; the hash-chain and printed-mention requirements of Portaria 363/2010; the CIUS-PT version string (2.1.1) and the Peppol identifiers; the B2G sanctions in public contracts; a fine of EUR 200 to EUR 1,000 per invoice for missing ATCUD or QR code (old version; no source found); AT validation rules and rounding rules for SAF-T(PT); the authentication method for invoice communication; the claim that the accounting SAF-T must be validated by AT within 10 days before the IES; prefilling of the VAT return from e-fatura data; the rules for foreign-currency invoices; the Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today.
+Not yet confirmed: whether the 2027 State Budget postpones again the end of PDF invoices, the accounting SAF-T or the B2G SME regime, so check before 1 January 2027 (the proposal, Proposta de Lei 110/XVII/2.ª, would accept PDF invoices until 31 December 2027 and move the accounting SAF-T to periods from 2028, delivered in 2029, according to the Ordem dos Contabilistas Certificados analysis; it is not law on 2026-10-30); the dates from which the QR code (old version: January 2022) and ATCUD (old version: January 2023) became enforceable in practice, which came from postponement despachos not read today; the AT technical specification for the QR code (field list I1 to K8, withholding field, 4-character hash) and the ATCUD form used inside the QR code and SAF-T; the hash-chain and printed-mention requirements of Portaria 363/2010; the CIUS-PT version string (2.1.1) and the Peppol identifiers; the B2G sanctions in public contracts; a fine of EUR 200 to EUR 1,000 per invoice for missing ATCUD or QR code (old version; no source found); AT validation rules and rounding rules for SAF-T(PT); the authentication method for invoice communication; the claim that the accounting SAF-T must be validated by AT within 10 days before the IES; prefilling of the VAT return from e-fatura data; the rules for foreign-currency invoices; the Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today; the 1 January 2021 B2G start date for large contractors (DL 111-B/2017 art. 9, not re-read today).
 
-## Aviso Legal
+## Disclaimer
 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, Revisor Oficial de Contas, advogado fiscalista ou equivalente licenciado na sua jurisdição) antes de serem entregues ou utilizados como base para qualquer actuação.
 
@@ -341,4 +400,4 @@ A versão mais atualizada desta skill é mantida em [openaccountants.com](https:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/latvia-social-contributions"
   jurisdiction: "LV"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Latvia: state social insurance contributions (2026) v0.2
+# Latvia: state social insurance contributions (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated law On State Social Insurance (SI Law), the Solidarity Tax Law, the Law On Personal Income Tax (PIT Law), the Law On Taxes and Fees (LTF) and State Revenue Service (VID) pages. See Sources for how they were read.
 
@@ -157,8 +157,8 @@ likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 Octob
 
 Not yet confirmed: the Cabinet regulation that splits the reduced rates (pensioners, board members, self-employed, foreign workers) by insurance type (rates taken from the VID table, which says it was published 28 September 2022); Cabinet Regulation No. 656 on the 2026 minimum wage (EUR 780 is from VID pages); whether the employer's minimum contributions on the quarterly gap are at the full 34.09% for a fully insured employee (s. 20.4 says the employer pays from its own funds but the rate split was not confirmed); the Cabinet regulation on the self-employed minimum base under SI Law s. 14(2); how contributions on royalties to a person not registered for business are collected in 2026 (SI Law s. 14(19)); the Cabinet regulation on the solidarity tax refund method; SI Law amendments adopted after 3 October 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `latvia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/latvia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `latvia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/latvia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

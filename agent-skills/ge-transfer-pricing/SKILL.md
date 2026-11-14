@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ge-transfer-pricing"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Georgia transfer pricing, 2026
@@ -40,23 +40,23 @@ Most Georgian companies pay profit tax only when profit leaves the company (see 
 |---|---|---|---|
 | Ownership test for related persons | more than 50%, direct or indirect | 2026 | Tax Code art. 126(2)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Control through funding | loans from and guaranteed by the person over 50% of the book value of total assets | 2026 | Instruction art. 3(d), https://matsne.gov.ge/ka/document/view/2078069 |
-| Profit tax on an adjustment (distributed-profit model) | 15% of adjustment / 0.85 | 2026 | Tax Code arts. 97(10), 98(1), 98^1(4)(b), same Tax Code URL |
-| Profit tax on an adjustment (banks and other annual-profit taxpayers) | 20% of taxable profit | 2026 | Tax Code arts. 98(4), 127(3), same Tax Code URL |
-| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | Tax Code art. 98^2(5), (6), same Tax Code URL |
+| Profit tax on an adjustment (distributed-profit model) | 15% of adjustment / 0.85 | 2026 | Tax Code arts. 97(10), 98(1), 98^1(4)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Profit tax on an adjustment (banks and other annual-profit taxpayers) | 20% of taxable profit | 2026 | Tax Code arts. 98(4), 127(3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | Tax Code art. 98^2(5), (6), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 49 countries (art. 98^2(6) cases) | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
-| Interquartile range | 25th to 75th percentile, both included | 2026 | Instruction art. 2(gh), (q), (sh), same Instruction URL |
-| 25th and 75th percentile positions | 1/4 and 3/4 of (number of results + 1) | 2026 | Instruction art. 2(q), (sh), same Instruction URL |
-| Adjustment point when outside the range | the median, unless facts clearly point to another point | 2026 | Instruction art. 10(3), same Instruction URL |
-| Documentation delivery | within 30 calendar days of a written request | 2026 | Instruction art. 17(1)(b), same Instruction URL |
-| Simplified update of external comparables | every third year, if turnover is under GEL 8,000,000 in the tax year and nothing material changed | 2026 | Instruction art. 17(3), same Instruction URL |
-| Prior years of data that may be considered | the 4 financial years before the year of the transaction | 2026 | Instruction art. 13(b), same Instruction URL |
-| Unilateral advance pricing agreement: longest term | 3 years | 2026 | Instruction art. 22, same Instruction URL |
-| Advance pricing agreement: minimum transaction volume | none since 2021 (the old GEL 50,000,000 floor was removed) | 2026 | Order No 45 of 2 March 2021, art. 1(2)(a), https://matsne.gov.ge/ka/document/view/5114015 |
+| Interquartile range | 25th to 75th percentile, both included | 2026 | Instruction art. 2(gh), (q), (sh), https://matsne.gov.ge/ka/document/view/2078069 |
+| 25th and 75th percentile positions | 1/4 and 3/4 of (number of results + 1) | 2026 | Instruction art. 2(q), (sh), https://matsne.gov.ge/ka/document/view/2078069 |
+| Adjustment point when outside the range | the median, unless facts clearly point to another point | 2026 | Instruction art. 10(3), https://matsne.gov.ge/ka/document/view/2078069 |
+| Documentation delivery | within 30 calendar days of a written request | 2026 | Instruction art. 17(1)(b), https://matsne.gov.ge/ka/document/view/2078069 |
+| Simplified update of external comparables | every third year, if turnover is under GEL 8,000,000 in the tax year and nothing material changed | 2026 | Instruction art. 17(3), https://matsne.gov.ge/ka/document/view/2078069 |
+| Prior years of data that may be considered | the 4 financial years before the year of the transaction | 2026 | Instruction art. 13(b), https://matsne.gov.ge/ka/document/view/2078069 |
+| Unilateral advance pricing agreement: longest term | 3 years | 2026 | Instruction art. 22, https://matsne.gov.ge/ka/document/view/2078069 |
+| Advance pricing agreement: minimum transaction volume | none since 2021 (the old GEL 50 million floor was removed) | 2026 | Order No 45 of 2 March 2021, art. 1(2)(a), https://matsne.gov.ge/ka/document/view/5114015 |
 | Loan treated as capital: criteria needed | at least 3 of the 12 listed, one of them (f) or (g) | 2026 | Instruction art. 14^1(5), added by Order No 331 of 2 October 2024, https://matsne.gov.ge/ka/document/view/6281431 |
-| Country-by-country report: group threshold | consolidated group revenue of EUR 750,000,000 or more in the prior fiscal year | 2026 | Tax Code art. 70^1(3)(b), same Tax Code URL |
-| Country-by-country report: deadline | 12 months after the end of the accounting year | 2026 | Tax Code art. 70^1(1), same Tax Code URL |
-| Late or incomplete country-by-country report | fine of GEL 5,000 | 2026 | Tax Code art. 279^1, same Tax Code URL |
-| Penalty interest on late tax | 0.05% of the unpaid tax per day | 2026 | Tax Code art. 272(4), same Tax Code URL |
+| Country-by-country report: group threshold | consolidated group revenue of EUR 750,000,000 or more in the prior fiscal year | 2026 | Tax Code art. 70^1(3)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Country-by-country report: deadline | 12 months after the end of the accounting year | 2026 | Tax Code art. 70^1(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Late or incomplete country-by-country report | fine of GEL 5,000 | 2026 | Tax Code art. 279^1, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax | 0.05% of the unpaid tax per day | 2026 | Tax Code art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -282,4 +282,4 @@ Not yet confirmed: the consolidated text of the Instruction (matsne shows it onl
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ge-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ge-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ge-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ge-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

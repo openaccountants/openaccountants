@@ -1,13 +1,13 @@
 ---
 name: it-inps-artigiani-commercianti
-description: "Italian INPS pension contributions for artigiani (craft businesses) and commercianti (traders and shopkeepers), tax year 2026, plus a map of the professional pension funds (casse). Covers who must register (owners, family helpers, working SRL members), the 2026 minimum income of EUR 18,808 and the fixed contributions on it, the 24% and 24.48% rates and the extra point above EUR 56,224, the two maximums (pre-1996 and post-1995 insured), maternity, the four fixed instalments and the percentage acconti and saldo with the income tax, the 35% cut for forfettari, the 50% cut for over-65 pensioners, sanzioni civili, Quadro RR section I and F24 codes. Trigger on: contributi INPS artigiani, commercianti, gestione IVS, minimale, contributi fissi, Cassetto previdenziale, AF CF AP CP, Cassa Forense, Inarcassa, CNPADC, ENPAM. Out of scope: gestione separata (it-inps-contributions), employees (italy-payroll), forfettario tax (it-regime-forfettario), income tax (it-income-tax), acconti method (it-est"
+description: "Italian INPS pension contributions for artigiani (craft businesses) and commercianti (traders and shopkeepers), tax year 2026, plus a map of the professional pension funds (casse). Covers who must register (owners, family helpers, working SRL members), the 2026 minimum income of EUR 18,808 and the fixed contributions on it, the 24% and 24.48% rates and the extra point above EUR 56,224, the two maximums (pre-1996 and post-1995 insured), maternity, the four fixed instalments and the percentage acconti and saldo with the income tax, the 35% cut for forfettari, the 50% cut for over-65 pensioners, sanzioni civili, Quadro RR section I and F24 codes. Trigger on contributi INPS artigiani, commercianti, gestione IVS, minimale, contributi fissi, Cassetto previdenziale, AF CF AP CP, Cassa Forense, Inarcassa, CNPADC, ENPAM. Out of scope are gestione separata (it-inps-contributions), employees (italy-payroll), forfettario tax (it-regime-forfettario), income tax (it-income-tax), acconti method (it-e"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/it-inps-artigiani-commercianti"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # INPS contributions for artigiani and commercianti, and the professional funds (Italy, 2026)
@@ -47,22 +47,22 @@ All 2026 figures below are from INPS Circolare n. 14 of 9 February 2026 (https:/
 
 | Item | Artigiani | Commercianti | Tax year | Source |
 |---|---|---|---|---|
-| Contribution rate, owners and family helpers, income up to EUR 56,224 | 24% | 24.48% | 2026 | Circolare 14/2026, para. 1 and 3 |
-| of which: indemnity fund for closing a shop (commercianti only) | n/a | 0.48% | 2026 | Circolare 14/2026, para. 1 (L. 178/2020 art. 1 c. 380) |
-| Rate on income above EUR 56,224 (one extra point) | 25% | 25.48% | 2026 | Circolare 14/2026, para. 3 (D.L. 384/1992 art. 3-ter) |
-| Minimum income (minimale) | EUR 18,808 | EUR 18,808 | 2026 | Circolare 14/2026, para. 2 |
-| Pension contribution on the minimale (yearly) | EUR 4,513.92 | EUR 4,604.20 | 2026 | Circolare 14/2026, para. 2 |
-| Maternity contribution | EUR 0.62 a month (EUR 7.44 a year) | EUR 0.62 a month (EUR 7.44 a year) | 2026 | Circolare 14/2026, para. 1 |
-| Total fixed contribution on the minimale (yearly) | EUR 4,521.36 | EUR 4,611.64 | 2026 | Circolare 14/2026, para. 2 |
-| Monthly fixed contribution, part-year | EUR 376.78 | EUR 384.31 | 2026 | Circolare 14/2026, para. 2 |
-| Maximum income (massimale), insured before 1 January 1996 | EUR 93,707 | EUR 93,707 | 2026 | Circolare 14/2026, para. 4 |
-| Maximum pension contribution, insured before 1996 | EUR 22,864.51 | EUR 23,314.31 | 2026 | Circolare 14/2026, para. 4 |
-| Maximum income, first insured from 1 January 1996 with no earlier contributions | EUR 122,295 (not split by month) | EUR 122,295 | 2026 | Circolare 14/2026, para. 4 (L. 335/1995 art. 2 c. 18) |
-| Maximum pension contribution, insured from 1996 | EUR 30,011.51 | EUR 30,598.53 | 2026 | Circolare 14/2026, para. 4 |
-| Forfettari who opt in: cut on the whole contribution | 35% | 35% | 2026 | L. 190/2014 art. 1 c. 77; Circolare 14/2026, para. 8 |
-| Over-65s already drawing an INPS pension: cut | 50% | 50% | 2026 | L. 449/1997 art. 59 c. 15; Circolare 14/2026, para. 1 |
-| New enrolments during 2025: cut on the pension rate | 50% for 36 months | 50% for 36 months | 2025 to 2028 | L. 207/2024 art. 1 c. 186; INPS news of April 2025 on Circolare 83/2025 |
-| Late payment of saldo and first acconto by up to 30 days | add 0.40% | add 0.40% | 2026 | Circolare 62/2026, para. 3 |
+| Contribution rate, owners and family helpers, income up to EUR 56,224 | 24% | 24.48% | 2026 | Circolare 14/2026, para. 1 and 3, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| of which: indemnity fund for closing a shop (commercianti only) | n/a | 0.48% | 2026 | Circolare 14/2026, para. 1 (L. 178/2020 art. 1 c. 380), https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Rate on income above EUR 56,224 (one extra point) | 25% | 25.48% | 2026 | Circolare 14/2026, para. 3 (D.L. 384/1992 art. 3-ter), https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Minimum income (minimale) | EUR 18,808 | EUR 18,808 | 2026 | Circolare 14/2026, para. 2, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Pension contribution on the minimale (yearly) | EUR 4,513.92 | EUR 4,604.20 | 2026 | Circolare 14/2026, para. 2, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Maternity contribution | EUR 0.62 a month (EUR 7.44 a year) | EUR 0.62 a month (EUR 7.44 a year) | 2026 | Circolare 14/2026, para. 1, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Total fixed contribution on the minimale (yearly) | EUR 4,521.36 | EUR 4,611.64 | 2026 | Circolare 14/2026, para. 2, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Monthly fixed contribution, part-year | EUR 376.78 | EUR 384.31 | 2026 | Circolare 14/2026, para. 2, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Maximum income (massimale), insured before 1 January 1996 | EUR 93,707 | EUR 93,707 | 2026 | Circolare 14/2026, para. 4, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Maximum pension contribution, insured before 1996 | EUR 22,864.51 | EUR 23,314.31 | 2026 | Circolare 14/2026, para. 4, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Maximum income, first insured from 1 January 1996 with no earlier contributions | EUR 122,295 (not split by month) | EUR 122,295 | 2026 | Circolare 14/2026, para. 4 (L. 335/1995 art. 2 c. 18), https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Maximum pension contribution, insured from 1996 | EUR 30,011.51 | EUR 30,598.53 | 2026 | Circolare 14/2026, para. 4, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Forfettari who opt in: cut on the whole contribution | 35% | 35% | 2026 | L. 190/2014 art. 1 c. 77; Circolare 14/2026, para. 8, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 and https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Over-65s already drawing an INPS pension: cut | 50% | 50% | 2026 | L. 449/1997 art. 59 c. 15; Circolare 14/2026, para. 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1997-12-27;449~art59 and https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| New enrolments during 2025: cut on the pension rate | 50% for 36 months | 50% for 36 months | 2025 to 2028 | L. 207/2024 art. 1 c. 186; INPS news of April 2025 on Circolare 83/2025, https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.04.artigiani-e-commercianti-riduzione-contributiva-ai-nuovi-iscritti.html |
+| Late payment of saldo and first acconto by up to 30 days | add 0.40% | add 0.40% | 2026 | Circolare 62/2026, para. 3, https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/05/Circolare_15271/Allegati/16793_Circolare-numero-62-del-27-05-2026.pdf |
 
 **Under-21 helpers.** L. 233/1990 art. 1 c. 2 set a lower rate for helpers under 21. The rates were then raised step by step to 24% for everyone, and INPS says that level was reached in 2025 for helpers aged 21 or under as well (Circolare 38/2025). For 2026 there is one rate for owners and helpers of any age (Circolare 14/2026, para. 1).
 
@@ -70,7 +70,7 @@ All 2026 figures below are from INPS Circolare n. 14 of 9 February 2026 (https:/
 
 **Limits are personal.** The minimale and the massimale apply to each person in the business, not to the business as a whole (Circolare 14/2026, para. 2 and 4). For someone insured before 1996, the minimale and the EUR 93,707 massimale are scaled to the months of activity in a part year. The EUR 122,295 massimale is not scaled (Redditi PF 2026, Fascicolo 2, Quadro RR).
 
-## The taxable base
+## The base
 
 **All business income, same year.** The contribution is worked out on all business income (reddito d'impresa) declared for IRPEF in the year, not only the income from the activity that requires enrolment (D.L. 384/1992 art. 3-bis; Circolare 14/2026, para. 5). The 2026 contribution is based on 2026 income, declared in 2027.
 
@@ -186,7 +186,7 @@ Figures are shown only where read on the fund's own site on 23 October 2026.
 
 **Timing differs by fund.** Cassa Forense: the minimums fall due in the year itself, and the percentage on 2026 income is self-assessed on Mod. 5/2027 and paid in two instalments, 30 September and 31 December 2027 (the 2026 notes give those dates for 2025 income). CNPADC: the minimums are paid in two instalments, normally 31 May and 31 October (for 2026, 1 June and 2 November, per the CNPADC notices); the excess over the minimums is worked out on the previous year's income, declared by 1 December and paid by 20 December (CNPADC "Quanto, quando e come versare i contributi"). Check the fund's own calendar for the others.
 
-## Worked examples
+## Two worked examples that recompute
 
 ### Example 1: commerciante, regime ordinario, EUR 40,000 business income
 
@@ -277,37 +277,36 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| INPS Circolare n. 14 of 9 February 2026, artigiani and commercianti contributions for 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf | 2026-10-22 |
-| INPS Circolare n. 62 of 27 May 2026, Quadro RR, saldo 2025 and acconti 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/05/Circolare_15271/Allegati/16793_Circolare-numero-62-del-27-05-2026.pdf | 2026-10-22 |
-| INPS Circolare n. 38 of 7 February 2025 (under-21 rate reached 24%) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/02/Circolare_14820/Allegati/15892_Circolare-numero-38-del-07-02-2025.pdf | 2026-10-23 |
-| INPS Circolare n. 35 of 19 February 2016 (forfettari, 35% cut, maternity, month credit) | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm | 2026-10-23 |
-| INPS, "Aliquote e contributi artigiani" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49847.aliquote-e-contributi-artigiani.html | 2026-10-23 |
-| INPS, "Aliquote e contributi commercianti" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49849.aliquote-e-contributi-commercianti.html | 2026-10-23 |
-| INPS news, 50% cut for 2025 new enrolments (Circolare 83/2025) | https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.04.artigiani-e-commercianti-riduzione-contributiva-ai-nuovi-iscritti.html | 2026-10-23 |
-| INPS, "Certificato di distacco del lavoratore in paesi Ue" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-10-23 |
-| L. 233/1990 art. 1 (minimale, massimale, helpers' 49%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-02;233~art1 | 2026-10-23 |
-| L. 662/1996 art. 1 c. 203 (who enrols as commerciante) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;662~art1 | 2026-10-23 |
-| L. 443/1985 art. 2 (artisan entrepreneur) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1985-08-08;443~art2 | 2026-10-23 |
-| L. 335/1995 art. 2 (c. 18 massimale, c. 26 gestione separata) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-08-08;335~art2 | 2026-10-23 |
-| L. 190/2014 art. 1 c. 77 to 84 (forfettari INPS regime), as in force on 22 October 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 | 2026-10-23 |
-| L. 388/2000 art. 116 c. 8 and 9 (sanzioni civili), as in force on 22 October 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-22 | 2026-10-23 |
-| Agenzia delle Entrate, Redditi PF 2026 instructions, Fascicolo 2, Quadro RR | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 | 2026-10-23 |
-| Cassa Forense, table of minimum contributions | https://www.cassaforense.it/media/pkxmzmvw/tabella-contributi-minimi.pdf | 2026-10-23 |
-| Cassa Forense, vademecum January 2025 (17% on 2026 income, 3% above the ceiling) | https://www.cassaforense.it/media/4vuhg4fg/vademecum_gennaio-2025.pdf | 2026-10-23 |
-| Cassa Forense, notes to Mod. 5/2026 (payment dates) | https://www.cassaforense.it/media/btuftmyc/note-illustrative-mod5-2026.pdf | 2026-10-23 |
-| CNPADC, "Quanto, quando e come versare i contributi" | https://www.cnpadc.it/la-cassa-per-me/contribuzione/quanto-quando-e-come-versare-i-contributi.html | 2026-10-23 |
-| CNPADC, "Contributo soggettivo" | https://www.cnpadc.it/la-cassa-per-me/contribuzione/contributo-soggettivo.html | 2026-10-23 |
-| Inarcassa, "Contributi per gli iscritti" | https://www.inarcassa.it/articoli/contributi-gli-iscritti | 2026-10-23 |
-| ENPAM, "Contributi di Quota A" | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-di-quota-a/ | 2026-10-23 |
-| ENPAM, "Aliquota intera Quota B" | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-per-la-libera-professione/aliquota-intera-quota-b/ | 2026-10-23 |
-| INPS Circolare n. 98 of 11 September 2026 (reference rate 2.65% from 16 September 2026; sanzioni civili rates) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-10-23 |
-| ECB, key ECB interest rates (main refinancing operations) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
-| INPS, "F24 per artigiani e commercianti" (instalment dates, causali) | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49923.f24-per-artigiani-e-commercianti.html | 2026-10-23 |
-| CNPADC notice, minimum contributions 2026, second instalment due 2 November 2026 | https://www.cnpadc.it/comunicazione/avvisi/contributi-minimi-2026-seconda-rata-scadenza-02/11/2026.html | 2026-10-23 |
-| Regulation (EC) 883/2004 on EUR-Lex | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02004R0883-20190731 | could not be fetched; relied on the INPS page above |
+| INPS Circolare n. 14 of 9 February 2026, artigiani and commercianti contributions for 2026. Read for the 2026 rates (24% and 24.48%), the minimale EUR 18,808, fixed contributions, the massimali EUR 93,707 and EUR 122,295, the maximum contributions and the 0.62 maternity amount | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf | 2026-11-14 |
+| INPS Circolare n. 62 of 27 May 2026, Quadro RR, saldo 2025 and acconti 2026. Read for the 0.40% addition when the saldo and first acconto are paid by 30 July 2026, and the Quadro RR instructions | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/05/Circolare_15271/Allegati/16793_Circolare-numero-62-del-27-05-2026.pdf | 2026-11-14 |
+| INPS Circolare n. 38 of 7 February 2025 (under-21 rate reached 24%). Read for the under-21 helpers reaching the 24% rate in 2025 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/02/Circolare_14820/Allegati/15892_Circolare-numero-38-del-07-02-2025.pdf | 2026-11-14 |
+| INPS Circolare n. 35 of 19 February 2016 (forfettari, 35% cut, maternity, month credit). Read for the forfettari opt-in, the 35% cut, maternity and month crediting | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm | 2026-11-14 |
+| INPS, "Aliquote e contributi artigiani". Read for the artigiani rates page and who pays | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49847.aliquote-e-contributi-artigiani.html | 2026-11-14 |
+| INPS, "Aliquote e contributi commercianti". Read for the commercianti rates page and who pays | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49849.aliquote-e-contributi-commercianti.html | 2026-11-14 |
+| INPS news, 50% cut for 2025 new enrolments (Circolare 83/2025). Read for the 50% cut for those first enrolled in 2025 (Circolare 83/2025) | https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.04.artigiani-e-commercianti-riduzione-contributiva-ai-nuovi-iscritti.html | 2026-11-14 |
+| INPS, "Certificato di distacco del lavoratore in paesi Ue". Read for the A1 posting certificate and how to ask for it | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-11-14 |
+| L. 233/1990 art. 1 (minimale, massimale, helpers' 49%). Read for how the minimale and massimale are built and the helpers rule | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-02;233~art1 | 2026-11-14 |
+| L. 662/1996 art. 1 c. 203 (who enrols as commerciante). Read for who must enrol as a commerciante | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;662~art1 | 2026-11-14 |
+| L. 443/1985 art. 2 (artisan entrepreneur). Read for the definition of the artisan entrepreneur | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1985-08-08;443~art2 | 2026-11-14 |
+| L. 335/1995 art. 2 (c. 18 massimale, c. 26 gestione separata). Read for comma 18 (massimale for those insured from 1996) and comma 26 (gestione separata) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-08-08;335~art2 | 2026-11-14 |
+| L. 190/2014 art. 1 c. 77 to 84 (forfettari INPS regime), as in force on 22 October 2026. Read for commi 77 to 84, the forfettari 35% contribution cut and how to opt in | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 | 2026-11-14 |
+| L. 388/2000 art. 116 c. 8 and 9 (sanzioni civili), as in force on 22 October 2026. Read for commi 8 and 9, the sanzioni civili (reference rate plus 5.5 or 7.5 points, 30% capped at 60%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-22 | 2026-11-14 |
+| Agenzia delle Entrate, Redditi PF 2026 instructions, Fascicolo 2, Quadro RR. Read for Quadro RR and how contributions on the excess are declared; these instructions print the 2025 massimale (euro 120.607), not the 2026 one | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 | 2026-11-14 |
+| Cassa Forense, table of minimum contributions. Read for the 2026 minimums (EUR 2,790 soggettivo, EUR 355 integrativo), the 17% rate and the contribution ceiling | https://www.cassaforense.it/media/pkxmzmvw/tabella-contributi-minimi.pdf | 2026-11-14 |
+| Cassa Forense, vademecum January 2025 (17% on 2026 income, 3% above the ceiling). Read for the rate steps (17% on 2026 income) and the 3% above the ceiling | https://www.cassaforense.it/media/4vuhg4fg/vademecum_gennaio-2025.pdf | 2026-11-14 |
+| Cassa Forense, notes to Mod. 5/2026 (payment dates). Read for the payment dates of the percentage contributions | https://www.cassaforense.it/media/btuftmyc/note-illustrative-mod5-2026.pdf | 2026-11-14 |
+| CNPADC, "Quanto, quando e come versare i contributi". Read for the 2026 minimums (EUR 3,180, EUR 954, maternity EUR 79.09) and the EUR 209,300 ceiling | https://www.cnpadc.it/la-cassa-per-me/contribuzione/quanto-quando-e-come-versare-i-contributi.html | 2026-11-14 |
+| CNPADC, "Contributo soggettivo". Read for the 12% to 100% choice of rate | https://www.cnpadc.it/la-cassa-per-me/contribuzione/contributo-soggettivo.html | 2026-11-14 |
+| Inarcassa, "Contributi per gli iscritti". Read for the 14.5% rate up to EUR 145,550 on 2025 income and the 2026 minimums EUR 2,785 and EUR 850 | https://www.inarcassa.it/articoli/contributi-gli-iscritti | 2026-11-14 |
+| ENPAM, "Contributi di Quota A". Read for the 2026 Quota A amounts by age and the EUR 84.26 maternity contribution | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-di-quota-a/ | 2026-11-14 |
+| ENPAM, "Aliquota intera Quota B". Read for the 19.50% Quota B rate on 2025 income up to EUR 150,000 | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-per-la-libera-professione/aliquota-intera-quota-b/ | 2026-11-14 |
+| INPS Circolare n. 98 of 11 September 2026 (reference rate from 16 September 2026; sanzioni civili rates). Read for the circular page (the text itself is a download that did not open to a script today; the rate is confirmed on the ECB page below) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-11-14 |
+| ECB, key ECB interest rates (main refinancing operations). Read for the main refinancing rate 2.65% from 16 September 2026, 2.40% from 17 June 2026 and 2.15% from 11 June 2025 | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-11-14 |
+| INPS, "F24 per artigiani e commercianti" (instalment dates, causali). Read for the four instalment dates and the F24 causali | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49923.f24-per-artigiani-e-commercianti.html | 2026-11-14 |
+| CNPADC notice, minimum contributions 2026, second instalment due 2 November 2026. Read for the second 2026 instalment due 2 November 2026 | https://www.cnpadc.it/comunicazione/avvisi/contributi-minimi-2026-seconda-rata-scadenza-02/11/2026.html | 2026-11-14 |
 
-Not yet confirmed: (1) whether the acconti on the excess use the current year's minimale and rates applied to the previous year's income (our reading; INPS says only that the two equal acconti are "calcolati sul reddito d'impresa dell'anno precedente"; Example 1 takes the acconti from F24 receipts); (2) the 2027 payment dates under D.Lgs. 33/2025; (3) Inarcassa and ENPAM rates on 2026 income (their sites state rates on 2025 income only), and all rates and minimums of the other funds in the table.
+Not yet confirmed: Regulation (EC) 883/2004 on EUR-Lex (the site refused a script today; the posting rules rest on the INPS distacco page); (1) whether the acconti on the excess use the current year's minimale and rates applied to the previous year's income (our reading; INPS says only that the two equal acconti are "calcolati sul reddito d'impresa dell'anno precedente"; Example 1 takes the acconti from F24 receipts); (2) the 2027 payment dates under D.Lgs. 33/2025; (3) Inarcassa and ENPAM rates on 2026 income (their sites state rates on 2025 income only), and all rates and minimums of the other funds in the table.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-inps-artigiani-commercianti` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-inps-artigiani-commercianti. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-inps-artigiani-commercianti` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-inps-artigiani-commercianti. If neither is available, confirm every figure against the official source pages cited above before relying on it.

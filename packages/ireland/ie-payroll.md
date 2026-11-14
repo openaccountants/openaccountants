@@ -1,17 +1,18 @@
 ---
 name: ie-payroll
 description: "Irish employer payroll for tax year 2026: PAYE Income Tax at 20% and 40% under the Revenue Payroll Notification (RPN), the 2026 standard rate cut-off points (EUR 44,000 single) and tax credits (EUR 2,000 personal, EUR 2,000 employee), USC 2026 bands, PRSI Class A at 4.2% employee to 30 September 2026 and 4.35% from 1 October 2026, employer 9%/11.25% then 9.15%/11.40% above EUR 552 a week, the PRSI Credit, the EUR 14.15 minimum wage, company car BIK and the EUR 1,500 small benefit exemption, auto-enrolment (MyFutureFund) at 1.5% employee and 1.5% employer from 1 January 2026, payroll submissions on or before pay day, payment by the 14th (23rd on ROS), the emergency basis, and the EUR 4,000 penalty and 0.0274% daily interest. Trigger on 'Irish payroll', 'gross to net Ireland', 'RPN', 'payroll submission', 'emergency tax', 'BIK Ireland', 'auto-enrolment', 'MyFutureFund'. Out of scope: USC in depth (ie-usc), self-employed PRSI (ie-prsi-class-s), posted workers and A1 (ie-prsi-cross-border), proprietary directors' returns (ie-income-tax-form11)."
-version: 0.2
+version: 0.3
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Ireland payroll: PAYE, USC, PRSI and auto-enrolment, tax year 2026 (v0.2)
+# Ireland payroll: PAYE, USC, PRSI and auto-enrolment, tax year 2026 (v0.3)
 
 > **Source-cited draft.** Drafted from the Taxes Consolidation Act 1997 Part 42 Chapter 4 (Revenue's Notes for Guidance, Finance Act 2025 edition), Finance Act 2025, the Social Welfare Consolidation Act 2005 s.13 and the Acts that amend it, the National Training Fund Act 2000, the Automatic Enrolment Retirement Savings System Act 2024, and Revenue, Department of Social Protection and Department of Enterprise pages, all read on 2026-10-24. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Irish payroll professional.
 

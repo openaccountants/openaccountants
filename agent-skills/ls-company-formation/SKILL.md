@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ls-company-formation"
   jurisdiction: "LS"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Lesotho Company Formation and Entity Choice v0.2
+# Lesotho Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,8 +31,6 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | Manufacturing licence | M150 small; M3,500 medium to large | M1,000 late renewal | https://lndc.org.ls/knowledge-base/business-registration-and-licensing/ |
 | Business ID | Renewed every 3 years |  | https://lndc.org.ls/knowledge-base/business-registration-and-licensing/ |
 | VAT registration | M2,000,000 a year | See ls-vat-gst | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf |
-| Minimum share capital | unverified | Older skill: none. Companies Act not read | unverified: not opened |
-| Minimum shareholders and directors | unverified | Older skill: one of each. Companies Act not read | unverified: not opened |
 
 ## The base
 
@@ -101,4 +99,4 @@ Not yet confirmed: everything resting on the Companies Act 2011 and Companies Re
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

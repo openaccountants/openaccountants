@@ -1,14 +1,15 @@
 ---
 name: luxembourg-payroll
 description: "Luxembourg payroll for employees for tax year 2026: monthly wage withholding (retenue d'impôt sur les salaires) from the electronic tax card using the ACD monthly scale built on the art. 118 LIR scale (23 bands, 0% to 42%) for tax classes 1, 1a and 2; the employment fund surcharge (7%, or 9% above EUR 150,000 in classes 1 and 1a and EUR 300,000 in class 2); the CIS, CI-CO2 and CISSM credits paid through payroll; CCSS contributions (pension 8.5% + 8.5%, sickness, dependency 1.4% after a quarter-SSM abatement, accident 0.65%, Mutualité des employeurs classes, occupational health); the 1 January and 1 June 2026 parameter sets; withholding and CCSS deadlines and penalties. Trigger on: Luxembourg payroll, gross to net Luxembourg, fiche de retenue, RTS, retenue d'impôt salaires, CCSS cotisations 2026, MDE classe, salaire social minimum 2026. Out of scope: luxembourg-income-tax, luxembourg-social-contributions, lu-cross-border, lu-corporate-tax."
-version: 0.4
+version: 0.5
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Luxembourg payroll: wage withholding and CCSS contributions (2026) v0.3
@@ -41,21 +42,21 @@ This skill covers what the employer computes and pays each month. For the employ
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Income tax scale | 23 bands: 0% to EUR 13,230, then 8% rising to 42% above EUR 234,870 | 2025 and 2026 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf (art. 118) |
-| Class 1a | Scale on income reduced by a quarter of its shortfall to EUR 79,380 | 2026 | LIR art. 120bis, same URL |
-| Class 2 | Twice the tax on half the income (splitting) | 2026 | LIR art. 121, same URL |
-| Monthly withholding, class 1 | 0% to EUR 1,185 a month; 39% band from EUR 4,595 to 9,870 (formula 0.39 x R - 1,052.775); 42% from EUR 19,660 | 2025 and 2026 | https://legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a590/jo (annex, calcul automatisé) |
+| Class 1a | Scale on income reduced by a quarter of its shortfall to EUR 79,380 | 2026 | LIR art. 120bis; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Class 2 | Twice the tax on half the income (splitting) | 2026 | LIR art. 121; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Monthly withholding, class 1 | 0% to EUR 1,185 a month; 39% band from EUR 4,595 to 9,870 (formula 0.39 x R - 1,052.775); 42% from EUR 19,660 | 2025 and 2026 | https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2024/12/20/a590/jo/fr/pdfa/eli-etat-leg-rgd-2024-12-20-a590-jo-fr-pdfa.pdf (annex, calcul automatisé) |
 | Monthly withholding, class 1a | 0% to EUR 2,290 a month; 10% from EUR 2,295; 39% band from EUR 4,405 to 9,870 (formula 0.39 x R - 1,246.23); 42% from EUR 19,660; above R of EUR 12,585 add I x 0.09 - 73.78 instead of 7% | 2025 and 2026 | same URL |
 | Monthly withholding, class 2 | 0% to EUR 2,290 a month; 20% band from EUR 5,280 to 5,655 (formula 0.20 x R - 687.65); 42% from EUR 39,235 | 2025 and 2026 | same URL |
 | Employment fund surcharge | 7% of the tax; 9% above adjusted taxable income of EUR 150,000 (classes 1, 1a) or EUR 300,000 (class 2) | since 2013 | https://impotsdirects.public.lu/fr/az/f/fond_empl.html |
-| Surcharge in the monthly scale | 7% up to monthly R of EUR 12,585 (classes 1 and 1a) or EUR 25,085 (class 2); above that, add I x 0.09 - 77.65 (class 1) or I x 0.09 - 155.30 (class 2) | 2025 and 2026 | https://legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a590/jo (annex, calcul automatisé) |
+| Surcharge in the monthly scale | 7% up to monthly R of EUR 12,585 (classes 1 and 1a) or EUR 25,085 (class 2); above that, add I x 0.09 - 77.65 (class 1) or I x 0.09 - 155.30 (class 2) | 2025 and 2026 | https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2024/12/20/a590/jo/fr/pdfa/eli-etat-leg-rgd-2024-12-20-a590-jo-fr-pdfa.pdf (annex, calcul automatisé) |
 | No valid tax card | Class 1, at least 33% | 2026 | https://guichet.public.lu/fr/entreprises/ressources-humaines/remuneration/fiche-retenue-impot/retenue-impot.html |
-| Lump-sum deductions built into the scale | Expenses EUR 540 a year (art. 107); special expenses EUR 480 a year (art. 113); one twelfth each month (art. 138(2)) | 2026 | LIR, same URL as above |
-| CIS (employee tax credit) | EUR 600 a year on gross EUR 11,266 to 40,000; then 600 - (gross - 40,000) x 0.015; nil from EUR 80,000 | 2026 | LIR art. 154quater |
+| Lump-sum deductions built into the scale | Expenses EUR 540 a year (art. 107); special expenses EUR 480 a year (art. 113); one twelfth each month (art. 138(2)) | 2026 | LIR; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| CIS (employee tax credit) | EUR 600 a year on gross EUR 11,266 to 40,000; then 600 - (gross - 40,000) x 0.015; nil from EUR 80,000 | 2026 | LIR art. 154quater; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | CI-CO2 for employees | EUR 216 a year up to gross EUR 40,000; then 216 - (gross - 40,000) x 0.0054; nil from EUR 80,000 (EUR 192 and 0.0048 in 2025) | 2026 | LIR art. 154quater; https://impotsdirects.public.lu/fr/az/c/credit-impot-salaries/cis2026.html |
-| CIM (single-parent credit, class 1a by art. 119 no. 2 b, on request, paid through payroll) | EUR 3,504 a year below adjusted taxable income of EUR 60,000; 3,504 - (income - 60,000) x 0.0612 up to EUR 105,000; EUR 750 above; reduced by 50% of allowances the child receives above EUR 2,712 a year (family benefits and orphan pensions excluded) | 2026 | LIR art. 154ter |
-| CISSM (minimum wage credit) | EUR 81 a month on monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | 2026 | LIR art. 139quater |
+| CIM (single-parent credit, class 1a by art. 119 no. 2 b, on request, paid through payroll) | EUR 3,504 a year below adjusted taxable income of EUR 60,000; 3,504 - (income - 60,000) x 0.0612 up to EUR 105,000; EUR 750 above; reduced by 50% of allowances the child receives above EUR 2,712 a year (family benefits and orphan pensions excluded) | 2026 | LIR art. 154ter; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| CISSM (minimum wage credit) | EUR 81 a month on monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | 2026 | LIR art. 139quater; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Pension | 8.50% employee, 8.50% employer | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
-| Pension, State share | The State pays one third of pension contributions (art. 239 CSS); the global rate is 25.5% for 2026 to 2032 (art. 238 CSS), so the State pays 8.50% on top. Not an employer cost | 2026 | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 |
+| Pension, State share | The State pays one third of pension contributions (art. 239 CSS); the global rate is 25.5% for 2026 to 2032 (art. 238 CSS), so the State pays 8.50% on top (computed). Not an employer cost | 2026 | https://data.legilux.public.lu/filestore/eli/etat/leg/code/securite_sociale/20260101/fr/pdf/eli-etat-leg-code-securite_sociale-20260101-fr-pdf.pdf |
 | Sickness, benefits in kind | 2.80% employee, 2.80% employer | 2026 | same URL |
 | Sickness, cash benefit surcharge | 0.25% employee, 0.25% employer (only insured persons entitled to cash sickness benefit) | 2026 | same URL |
 | Dependency insurance | 1.40%, employee only, on pay less a quarter of the SSM; no minimum or ceiling | 2026 | same URL |
@@ -65,7 +66,7 @@ This skill covers what the employer computes and pays each month. For the employ
 | Occupational health (STM) | 0.14%, private employers using the multi-sector service | 2026 | same URL |
 | Family benefits | 1.70%, public sector employers only | 2026 | same URL |
 | SSM, unskilled, 18 and over | EUR 2,703.74 a month (1 January 2026); EUR 2,771.33 from 1 June 2026 | 2026 | https://ccss.public.lu/fr/parametres-sociaux.html |
-| Contribution minimum | Equal to the SSM; 80% at 17 to 18 and 75% at 15 to 17: EUR 2,162.99 and EUR 2,027.80 from 1 January 2026, EUR 2,217.06 and EUR 2,078.49 from 1 June 2026 | 2026 | CCSS notices of 16 January and 14 August 2026 |
+| Contribution minimum | Equal to the SSM; 80% at 17 to 18 and 75% at 15 to 17: EUR 2,162.99 and EUR 2,027.80 from 1 January 2026, EUR 2,217.06 and EUR 2,078.49 from 1 June 2026 | 2026 | CCSS notices of 16 January and 14 August 2026; https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf ; https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf |
 | Contribution ceiling (5 x SSM) | EUR 13,518.68 a month (1 January 2026); EUR 13,856.63 from 1 June 2026 | 2026 | https://ccss.public.lu/fr/parametres-sociaux.html; https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf |
 
 The ceiling from 1 June 2026 is **EUR 13,856.63**. The CCSS computes it as five times the unrounded SSM (279.30 x 9.9224 x 5). Five times the rounded SSM gives EUR 13,856.65, which is not the CCSS figure. The same pattern holds in January: 5 x 2,703.74 = 13,518.70, but the CCSS publishes 13,518.68.
@@ -224,7 +225,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | LIR, consolidated text in force on 1 January 2026 (ACD): arts. 107, 110, 113, 118 to 121, 136 to 139quater, 154ter, 154quater | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
-| Règlement grand-ducal of 20 December 2024 publishing the withholding scales (Mémorial A 590 of 24 December 2024): arts. 1 to 4, monthly scale, non-periodic pay rates, automated-calculation formulas; applies from tax year 2025, in force | https://legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a590/jo | 2026-10-23 |
+| Règlement grand-ducal of 20 December 2024 publishing the withholding scales (Mémorial A 590 of 24 December 2024): arts. 1 to 4, monthly scale, non-periodic pay rates, automated-calculation formulas; applies from tax year 2025, in force | https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2024/12/20/a590/jo/fr/pdfa/eli-etat-leg-rgd-2024-12-20-a590-jo-fr-pdfa.pdf | 2026-10-23 |
 | ACD, barèmes de l'impôt (no newer scale than 2025 published) | https://impotsdirects.public.lu/fr/baremes.html | 2026-10-23 |
 | ACD, formulas for automated computation, 2025 scales (informational copy of the Mémorial annex) | https://impotsdirects.public.lu/dam-assets/fr/baremes/bareme-2025-format-excel.xlsx | 2026-10-23 |
 | ACD, calcul d'une rémunération mensuelle nette (worked example at 1 January 2025: EUR 5 rounding, CIS on monthly gross x 12) | https://impotsdirects.public.lu/fr/salpens/calcul_rem.html | 2026-10-23 |
@@ -236,7 +237,7 @@ expected:
 | CCSS, paramètres sociaux (rates 2014 to 2026; SSM, minimum and ceiling from 1 June 2026) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 | CCSS, facturation (statement, 10 days, 0.6% interest) | https://ccss.public.lu/fr/employeurs/secteur-prive/facturation.html | 2026-10-23 |
 | CCSS, engager du personnel (declaration of exit within 8 days) | https://ccss.public.lu/fr/employeurs/secteur-prive/engager-personnel.html | 2026-10-27 |
-| Code de la sécurité sociale, arts. 238 and 239 (pension financing, State share) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
+| Code de la sécurité sociale, arts. 238 and 239 (pension financing, State share) | https://data.legilux.public.lu/filestore/eli/etat/leg/code/securite_sociale/20260101/fr/pdf/eli-etat-leg-code-securite_sociale-20260101-fr-pdf.pdf | 2026-10-27 |
 | CCSS, rémunération (monthly declaration of pay and hours) | https://ccss.public.lu/fr/employeurs/secteur-prive/remuneration.html | 2026-10-23 |
 | Guichet.lu, retenue d'impôt sur les salaires | https://guichet.public.lu/fr/entreprises/ressources-humaines/remuneration/fiche-retenue-impot/retenue-impot.html | 2026-10-23 |
 | Guichet.lu, extrait de compte salaire ou pension | https://guichet.public.lu/fr/entreprises/ressources-humaines/remuneration/fiche-retenue-impot/extrait-compte-salaire-pension.html | 2026-10-23 |
@@ -244,4 +245,4 @@ expected:
 
 Not yet confirmed: the monthly social minimum wage for skilled workers (qualifié, SSM plus 20%) from 1 January and 1 June 2026; the CCSS notices and parameters page publish only the unskilled SSM, and no official 2026 figure for the skilled rate was found. Also whether the 0.6% monthly late-payment interest on the ACD page applies to late withholding payments in the same way as to assessed tax (the page speaks of tax due on an assessment).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

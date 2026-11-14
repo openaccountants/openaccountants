@@ -1,14 +1,15 @@
 ---
 name: lu-cross-border
 description: "Luxembourg cross-border tax for individuals for tax year 2026: tax residence (fiscal domicile or habitual stay, with the six-month rule in § 14 StAnpG); non-residents taxed only on Luxembourg-source income (art. 156 LIR) and their tax classes (art. 157bis); the option to be taxed like a resident (art. 157ter: 90% of world income or under EUR 13,000 of foreign income, with up to 50 treaty-exempt working days counted); frontier workers from France, Belgium and Germany and the 34-day treaty thresholds; social security under Reg. 883/2004 (25%) and the telework framework agreement (under 50%); the impatriate regime (art. 115 no. 13b: 50% of pay exempt, capped at EUR 400,000, for up to eight years); outbound withholding; leaving Luxembourg. Trigger on: frontalier, télétravail 34 jours, non-résident Luxembourg, assimilation 157ter, impatrié, expat regime Luxembourg, moving to or leaving Luxembourg. Out of scope: luxembourg-income-tax, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax, lu-transfer-pricing."
-version: 0.2
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Luxembourg cross-border tax for individuals: residence, non-residents, frontier workers and impatriates (2026)
@@ -56,22 +57,22 @@ Out of scope: companies (see `lu-corporate-tax`), cross-border VAT (`luxembourg-
 | Residence by habitual stay | stay in Luxembourg of more than 6 months; liability then covers the first 6 months too | current | [§ 14(1) StAnpG, Legilux](https://legilux.public.lu/eli/etat/leg/loi/1934/10/16/n2/jo) |
 | Income tax scale | 0% up to EUR 13,230, then 8% rising to 42% above EUR 234,870 (23 bands); taxable income rounded down to a multiple of EUR 50 | 2025 and 2026 | [LIR arts. 118 and 126](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | Employment fund surcharge on income tax | 7%; 9% above adjusted taxable income of EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2) | since 2013 | [ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html) |
-| Tax class of a married non-resident | class 1, unless both spouses ask for the 157ter rate on the withholding card | current | LIR art. 157bis(2) and (3) |
-| Minimum rate on a non-resident's Luxembourg income other than employment and pensions | 15% (7.5% on certain extraordinary income) | current | LIR arts. 157(5) and 157bis(6) |
-| Option to be taxed like a resident | at least 90% of world income taxable in Luxembourg, or foreign net income under EUR 13,000; treaty-exempt pay for up to 50 working days counts as Luxembourg income | current | LIR art. 157ter(1) and (2) |
+| Tax class of a married non-resident | class 1, unless both spouses ask for the 157ter rate on the withholding card | current | LIR art. 157bis(2) and (3); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Minimum rate on a non-resident's Luxembourg income other than employment and pensions | 15% (7.5% on certain extraordinary income) | current | LIR arts. 157(5) and 157bis(6); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Option to be taxed like a resident | at least 90% of world income taxable in Luxembourg, or foreign net income under EUR 13,000; treaty-exempt pay for up to 50 working days counts as Luxembourg income | current | LIR art. 157ter(1) and (2); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Belgian residents: extra assimilation route | more than 50% of the household's professional income taxable in Luxembourg | current | [ACD, Assimilation](https://impotsdirects.public.lu/fr/az/a/assimil.html) (Belgium treaty art. 24 § 4a) |
 | Telework threshold, French residents | 34 days a year, prorated for part-time and part-year contracts | from 2023 | [Circular L.G. – Conv. D.I. n° 61 of 24 June 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-du-directeur-des-contributions-lg-conv-di-n-61-du-24-juin-2026.pdf) |
 | Telework threshold, German residents | 34 days a year, not prorated; activity under 30 minutes in a place is ignored | from 2024 | [Circular L.G. – Conv. D.I. n° 71 of 18 March 2024](https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lg-conv-di-71-du-18-mars-2024.pdf) |
 | Telework threshold, Belgian residents | 34 days a year, not prorated (24 days before 2022) | from 2022 | [ACD note, Belgium tolerance threshold](https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/seuil-de-tolerance-b-03-2023.pdf) |
 | Social security: substantial activity in the residence state | 25% of working time | current | [Guichet.lu, telework](https://guichet.public.lu/fr/citoyens/travail/conditions-travail/teletravail/teletravail.html) |
 | Social security: telework framework agreement | telework from 25% to under 50% of working time, in the residence state only; A1 for up to 3 years | from 1 July 2023 | [CCSS, Accord-cadre sur le télétravail](https://ccss.public.lu/fr/employeurs/secteur-prive/activite-etranger/accord-teletravail.html) |
-| Impatriate exemption | 50% of total gross annual pay, applied to pay up to EUR 400,000 (so at most EUR 200,000 exempt); the part of pay above EUR 400,000 is fully taxable | from 2025 | LIR art. 115 no. 13b |
-| Impatriate minimum fixed pay | EUR 75,000 gross a year | from 2025 | LIR art. 115 no. 13b, condition 4 |
-| Impatriate duration | the year of starting work plus up to 8 following tax years | from 2025 | LIR art. 115 no. 13b |
+| Impatriate exemption | 50% of total gross annual pay, applied to pay up to EUR 400,000 (so at most EUR 200,000 exempt); the part of pay above EUR 400,000 is fully taxable | from 2025 | LIR art. 115 no. 13b; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Impatriate minimum fixed pay | EUR 75,000 gross a year | from 2025 | LIR art. 115 no. 13b, condition 4; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Impatriate duration | the year of starting work plus up to 8 following tax years | from 2025 | LIR art. 115 no. 13b; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Withholding on dividends | 15% of gross; 17.65% of net if the payer bears it | current | [LIR arts. 146 and 148](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf); exemptions in `lu-corporate-tax` |
-| Withholding on directors' fees (tantièmes) | 20% of gross; 25% of the net paid if the payer bears it | current | LIR art. 152, Title 2(3) |
-| Withholding on non-resident artists and professional sportspeople | 10% of receipts; 11.11% if the payer bears it | current | LIR art. 152, Title 1(2) |
-| Withholding on ordinary interest and royalties paid abroad | none under domestic law | current | LIR art. 146 (see `lu-corporate-tax`) |
+| Withholding on directors' fees (tantièmes) | 20% of gross; 25% of the net paid if the payer bears it | current | LIR art. 152, Title 2(3); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Withholding on non-resident artists and professional sportspeople | 10% of receipts; 11.11% if the payer bears it | current | LIR art. 152, Title 1(2); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Withholding on ordinary interest and royalties paid abroad | none under domestic law | current | LIR art. 146 (see `lu-corporate-tax`); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Late filing surcharge | up to 10% of the tax | current | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
 | Late payment interest | 0.6% a month | current | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
 
@@ -242,22 +243,22 @@ expected:
 |---|---|---|
 | LIR, consolidated text in force at 1 January 2026 (ACD, updated 8 May 2026): arts. 2, 3, 6, 38, 100, 113, 115 no. 13b, 118 to 121, 126, 146, 148, 152, 156, 157, 157bis, 157ter | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
 | Steueranpassungsgesetz of 16 October 1934, §§ 13 and 14, Legilux | https://legilux.public.lu/eli/etat/leg/loi/1934/10/16/n2/jo | 2026-10-23 |
-| ACD, Résident / non-résident | https://impotsdirects.public.lu/fr/az/r/resid_nonresid.html | 2026-10-23 |
-| ACD, Séjour habituel | https://impotsdirects.public.lu/fr/az/s/sejour.html | 2026-10-23 |
-| ACD, Assimilation fiscale des contribuables non résidents | https://impotsdirects.public.lu/fr/az/a/assimil.html | 2026-10-23 |
-| ACD, Fonds pour l'emploi | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
-| ACD, treaties in force (France, Belgium, Germany entries) | https://impotsdirects.public.lu/fr/conventions/luxembourg.html | 2026-10-23 |
-| Circular L.G. – Conv. D.I. n° 61 of 24 June 2026, France, 34 days (scanned; read by OCR) | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-du-directeur-des-contributions-lg-conv-di-n-61-du-24-juin-2026.pdf | 2026-10-23 |
-| Avenant to the France-Luxembourg treaty of 7 November 2022 (29 to 34 days) | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/avenant-a-la-convention-lu-fr-34-jours-et-fonction-publique-signe-7-novembre-2022.pdf | 2026-10-23 |
-| Circular L.G. – Conv. D.I. n° 71 of 18 March 2024, Germany protocol of 6 July 2023 | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lg-conv-di-71-du-18-mars-2024.pdf | 2026-10-23 |
-| ACD note, Belgium tolerance threshold (34 days) | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/seuil-de-tolerance-b-03-2023.pdf | 2026-10-23 |
-| ACD, Télétravail (withholding methods) | https://impotsdirects.public.lu/fr/az/t/teletravail.html | 2026-10-23 |
-| CCSS, Accord-cadre sur le télétravail | https://ccss.public.lu/fr/employeurs/secteur-prive/activite-etranger/accord-teletravail.html | 2026-10-23 |
-| Belgian federal social security, signatories of the telework framework agreement | https://socialsecurity.belgium.be/fr/activites-internationales/teletravail-transfrontalier-dans-lue | 2026-10-23 |
-| Guichet.lu, Opter pour le télétravail (25% rule) | https://guichet.public.lu/fr/citoyens/travail/conditions-travail/teletravail/teletravail.html | 2026-10-23 |
-| ACD, late filing surcharge, penalty payment and late interest | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
-| ACD, filing deadlines | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
-| ACD, treaty withholding rates |https://impotsdirects.public.lu/fr/conventions/tx_ret.html | 2026-10-23 |
-| ACD, laws passed in 2025 and 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
+| ACD, Résident / non-résident. Read for the resident and non-resident tests. | https://impotsdirects.public.lu/fr/az/r/resid_nonresid.html | 2026-10-23 |
+| ACD, Séjour habituel. Read for habitual abode. | https://impotsdirects.public.lu/fr/az/s/sejour.html | 2026-10-23 |
+| ACD, Assimilation fiscale des contribuables non résidents. Read for the option for non-residents to be taxed like residents. | https://impotsdirects.public.lu/fr/az/a/assimil.html | 2026-10-23 |
+| ACD, Fonds pour l'emploi. Read for the employment fund surcharge. | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
+| ACD, treaties in force (France, Belgium, Germany entries). Read for which treaties are in force. | https://impotsdirects.public.lu/fr/conventions/luxembourg.html | 2026-10-23 |
+| Circular L.G. – Conv. D.I. n° 61 of 24 June 2026, France, 34 days (scanned; read by OCR). Read for the 34-day rule with France. | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-du-directeur-des-contributions-lg-conv-di-n-61-du-24-juin-2026.pdf | 2026-10-23 |
+| Avenant to the France-Luxembourg treaty of 7 November 2022 (29 to 34 days). Read for the 2022 France amendment. | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/avenant-a-la-convention-lu-fr-34-jours-et-fonction-publique-signe-7-novembre-2022.pdf | 2026-10-23 |
+| Circular L.G. – Conv. D.I. n° 71 of 18 March 2024, Germany protocol of 6 July 2023. Read for the 2023 Germany protocol. | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lg-conv-di-71-du-18-mars-2024.pdf | 2026-10-23 |
+| ACD note, Belgium tolerance threshold (34 days). Read for the 34-day tolerance with Belgium. | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/seuil-de-tolerance-b-03-2023.pdf | 2026-10-23 |
+| ACD, Télétravail (withholding methods). Read for telework withholding. | https://impotsdirects.public.lu/fr/az/t/teletravail.html | 2026-10-23 |
+| CCSS, Accord-cadre sur le télétravail. Read for the telework social security agreement. | https://ccss.public.lu/fr/employeurs/secteur-prive/activite-etranger/accord-teletravail.html | 2026-10-23 |
+| Belgian federal social security, signatories of the telework framework agreement. Read for the signatories of that agreement. | https://socialsecurity.belgium.be/fr/activites-internationales/teletravail-transfrontalier-dans-lue | 2026-10-23 |
+| Guichet.lu, Opter pour le télétravail (25% rule). Read for the 25% telework rule. | https://guichet.public.lu/fr/citoyens/travail/conditions-travail/teletravail/teletravail.html | 2026-10-23 |
+| ACD, late filing surcharge, penalty payment and late interest. Read for the late filing surcharge and late interest. | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
+| ACD, filing deadlines. Read for the filing deadlines. | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
+| ACD, treaty withholding rates. Read for treaty withholding rates. |https://impotsdirects.public.lu/fr/conventions/tx_ret.html | 2026-10-23 |
+| ACD, laws passed in 2025 and 2026. Read for the 2025 and 2026 tax laws. | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
 
 Not yet confirmed: the text of the France and Belgium treaties themselves (the skill relies on the ACD circulars and notes, and the Belgian note dates from March 2023; no later Belgian change was listed on the ACD treaty page); whether France and Luxembourg agreed new conditions from 2025 under art. 3 of the 2022 avenant (the June 2026 circular still applies 34 days and no new avenant is listed); the text of the telework framework agreement itself and whether it was renewed or changed (read through the CCSS page and the Belgian signatory list); the deferral of the art. 38 charge for individuals moving within the EEA (no instalment rule was found in the LIR text read).

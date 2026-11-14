@@ -1,14 +1,15 @@
 ---
 name: estonia-payroll
 description: "Estonian payroll for tax year 2026: running a monthly payroll for employees and board members of an Estonian employer. Covers the 22% withholding income tax, the flat 2026 basic exemption (EUR 700 a month, EUR 776 at pensionable age, no income taper), the 1.6% employee and 0.8% employer unemployment insurance premiums, the 2%, 4% or 6% funded pension (II pillar) contribution, the 33% employer social tax on the EUR 886 monthly minimum base, the order of deductions, fringe benefits at 22/78, the employment register, form TSD and payment by the 10th, interest at 0.06% a day and coercive fines. Trigger on: Estonia payroll, gross to net Estonia, palgaarvestus, netopalk, maksuvaba tulu 2026, TSD lisa 1, kinnipeetav tulumaks, II sammas, töötuskindlustusmakse. Out of scope: estonia-social-contributions (social tax in depth, self-employed FIE), estonia-income-tax (annual return), ee-corporate-income-tax, ee-cross-border (non-resident employees in depth)."
-version: 0.2
+version: 0.3
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Estonia payroll, tax year 2026
@@ -215,21 +216,21 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 40, 41, 42, 43, 48, 54 | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
-| Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9 | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
-| Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42 | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
-| Government Regulation No. 78 of 25.09.2025, unemployment insurance premium rates 2026 to 2029 | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
-| Funded Pensions Act (Kogumispensionide seadus), consolidated, §§ 6, 7, 9, 11, 17² | https://www.riigiteataja.ee/akt/103122024016 | 2026-10-24 |
-| Taxation Act (Maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 25², 25⁸, 91, 115, 117, 153¹ | https://www.riigiteataja.ee/akt/116102026009 | 2026-10-24 |
-| Penal Code (Karistusseadustik), § 47 (fine unit EUR 8) | https://www.riigiteataja.ee/akt/109072026028 | 2026-10-24 |
-| EMTA, Tax rates (2024 to 2026, minimum wage table) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-24 |
-| EMTA, Social tax (2026 minimum base) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax | 2026-10-24 |
-| EMTA, Income tax and basic exemption (birth allowance 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption | 2026-10-24 |
-| EMTA, Non-residents' employment income (basic exemption for EEA residents) | https://www.emta.ee/en/private-client/foreigner-non-resident/non-residents/income-employment | 2026-10-24 |
+| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 40, 41, 42, 43, 48, 54; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
+| Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
+| Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
+| Read for the unemployment insurance premium rates 2026 to 2029: Government Regulation No. 78 of 25.09.2025; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
+| Funded Pensions Act (Kogumispensionide seadus), consolidated, §§ 6, 7, 9, 11, 17²; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/103122024016 | 2026-10-24 |
+| Taxation Act (Maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 25², 25⁸, 91, 115, 117, 153¹; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/116102026009 | 2026-10-24 |
+| Penal Code (Karistusseadustik), § 47 (fine unit EUR 8); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/109072026028 | 2026-10-24 |
+| Read for 2024 to 2026, minimum wage table: EMTA, Tax rates | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-24 |
+| Read for 2026 minimum base: EMTA, Social tax | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax | 2026-10-24 |
+| Read for birth allowance 2026: EMTA, Income tax and basic exemption | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption | 2026-10-24 |
+| Read for basic exemption for EEA residents: EMTA, Non-residents' employment income | https://www.emta.ee/en/private-client/foreigner-non-resident/non-residents/income-employment | 2026-10-24 |
 | EMTA, Contributions to mandatory funded pension | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension | 2026-10-24 |
-| EMTA, Submission of declaration form TSD (data-based TSD from 1 October 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/submission-declaration-form-tsd | 2026-10-24 |
-| Ministry of Finance, Law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
+| Read for data-based TSD from 1 October 2026: EMTA, Submission of declaration form TSD | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/submission-declaration-form-tsd | 2026-10-24 |
+| Read for the law changes in force in 2026: Ministry of Finance news | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
 
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 social tax monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); the pensionable age in 2026 (not stated here); the weekend roll-forward rule in the Taxation Act (taken from EMTA's example, not the Act).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
