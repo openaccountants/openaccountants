@@ -3,13 +3,13 @@ name: de-franchise-tax-and-llc
 description: "Delaware 2026 corporate franchise methods, annual reports, estimates, LLC/LP/GP annual tax, series and default. Distinct from corporate income tax and gross receipts tax."
 jurisdiction: US-DE
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: situation-rules
 category: state-tax
-version: "1.1"
+version: "1.2"
 ---
 
 # Delaware franchise tax and LLC annual tax, 2026
@@ -58,20 +58,20 @@ Further sources: [Division: how to calculate](https://corp.delaware.gov/frtaxcal
 | Item | Amount | Rule | Official source |
 |---|---|--- | --- |
 | Corporation, Authorized Shares method, 5,000 shares or fewer | $175 | Minimum under this method | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| Corporation, 5,001 to 10,000 shares | $250 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| Corporation, 5,001 to 10,000 shares | $250 | | [State source](https://delcode.delaware.gov/title8/c005/index.html); [Division: how to calculate](https://corp.delaware.gov/frtaxcalc/) |
 | Each further 10,000 shares or part of 10,000 | add $85 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Corporation, Assumed Par Value Capital method | $400 per $1,000,000 of assumed par value capital or part of it | Minimum $400 | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Maximum tax, either method | $200,000 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Large Corporate Filer | $250,000 | Fixed amount; criteria below | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Non-stock for-profit corporation (not exempt) | $175 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| Annual report filing fee, non-exempt corporation | $50 | Plus the tax | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| Annual report filing fee, non-exempt corporation | $50 | Plus the tax | [§ 391(a)(18)](https://delcode.delaware.gov/title8/c001/sc18/index.html); [Division: franchise tax](https://corp.delaware.gov/frtax/) |
 | Annual report filing fee, exempt corporation | $25 | No tax | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| Estimated payments required if tax is | $5,000 or more | 40% by 1 June, 20% by 1 September, 20% by 1 December, remainder by 1 March | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| Estimated payments required if tax is | $5,000 or more | Forty percent by 1 June, twenty percent by 1 September, twenty percent by 1 December, remainder by 1 March | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Late report penalty, corporation | $200 | Plus interest | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| LLC, LP and GP annual tax | $400 | Statutory amount from 1 January 2026 (was $300) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
-| Each registered series of an LLC or LP | $100 | From 1 January 2026 (was $75) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
-| Late payment penalty, LLC, LP or GP | $200 | $50 for a registered series | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
-| Interest on late tax, all entities | 1.5% per month or part of a month | On tax and penalty | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| LLC, LP and GP annual tax | $400 | Statutory amount from 1 January 2026 (was $300) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/); [§ 18-1107](https://delcode.delaware.gov/title6/c018/sc11/index.html); [85 Del. Laws c. 273, §§ 9, 16, 23, 45](https://delcode.delaware.gov/sessionlaws/ga153/chp273.shtml) |
+| Each registered series of an LLC or LP | $100 | From 1 January 2026 (was $75) | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/); [§ 18-1107](https://delcode.delaware.gov/title6/c018/sc11/index.html); [85 Del. Laws c. 273, §§ 9, 16, 23, 45](https://delcode.delaware.gov/sessionlaws/ga153/chp273.shtml) |
+| Late payment penalty, LLC, LP or GP | $200 | $50 for a registered series | [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/); [§ 18-1107](https://delcode.delaware.gov/title6/c018/sc11/index.html) |
+| Interest on late tax, all entities | 1.5% per month or part of a month | On tax and penalty | [State source](https://delcode.delaware.gov/title8/c005/index.html); [Division: franchise tax](https://corp.delaware.gov/frtax/); [LLC/LP/GP instructions](https://corp.delaware.gov/alt-entitytaxinstructions/) |
 | Electronic payment (ACH debit) required | over $5,000 | | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 
 
@@ -193,8 +193,8 @@ Every Delaware corporation and LLC must keep a registered office and registered 
 | Situation | Treatment | Source | Official source |
 |---|---|--- | --- |
 | Exactly 5,000 authorized shares | $175 | [frtaxcalc](https://corp.delaware.gov/frtaxcalc/) | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| 5,001 authorized shares | $250 | same | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
-| 10,005 authorized shares | $335: a part block counts as a full $85 block | same | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
+| 5,001 authorized shares | $250 | same | [State source](https://delcode.delaware.gov/title8/c005/index.html); [frtaxcalc](https://corp.delaware.gov/frtaxcalc/) |
+| 10,005 authorized shares | $335: a part block counts as a full $85 block | same | [State source](https://delcode.delaware.gov/title8/c005/index.html); [frtaxcalc](https://corp.delaware.gov/frtaxcalc/) |
 | Assumed par value capital under $1,000,000 | Proportional tax, but not below $400 | [§503](https://delcode.delaware.gov/title8/c005/index.html) | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Class par value above assumed par | That class uses its own par value | same | [State source](https://delcode.delaware.gov/title8/c005/index.html) |
 | Issued shares or assets not reported | Authorized Shares method only | same, §503(b) | [State source](https://delcode.delaware.gov/title8/c005/index.html) |

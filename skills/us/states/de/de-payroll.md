@@ -6,8 +6,8 @@ category: payroll
 domain: tax
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-13
-version: "1.0"
+last_updated: 2026-11-14
+version: "1.1"
 type: situation-rules
 ---
 
@@ -45,8 +45,8 @@ type: situation-rules
 | 2026 UI wage base | $14,500 per covered employee | [State source](https://labor.delaware.gov/divisions/unemployment-insurance/employer-services/) |
 | New employer, including construction | 1.0% basic | [State source](https://labor.delaware.gov/divisions/unemployment-insurance/employer-services/) |
 | 2026 published merit range / delinquent | 0.3%-5.4% /6.3% basic; assigned notice controls | [State source](https://labor.delaware.gov/divisions/unemployment-insurance/employer-services/) |
-| Operations and technology | 0.2% of UI taxable wages, separate billing | [State source](https://labor.delaware.gov/divisions/unemployment-insurance/employer-faqs/) |
-| Training at $14,500 base | 0.11%; semiannual bill | [State source](https://laborfiles.delaware.gov/main/dui/handbook/UI%20Employer%20Handbook.pdf) |
+| Operations and technology | 0.2% of UI taxable wages, separate billing | [State source](https://labor.delaware.gov/divisions/unemployment-insurance/employer-faqs/); [UI Employer Handbook](https://laborfiles.delaware.gov/main/dui/handbook/UI%20Employer%20Handbook.pdf) |
+| Training at $14,500 base | .11% (as the handbook writes it); semiannual bill | [State source](https://laborfiles.delaware.gov/main/dui/handbook/UI%20Employer%20Handbook.pdf) |
 | 2026 withholding lookback thresholds | $6,020 /$33,460 | [State source](https://revenue.delaware.gov/business-tax-forms/lookback-period/) |
 | Withholding deduction/allowance | 2025-2026 filing cycle:$3,250 single/separate, $6,500 joint; $110 allowance | [State source](https://revenue.delaware.gov/employers-guide-withholding-regulations-employers-duties/) |
 | Paid Leave public plan | 0.32% parental+0.40% medical+0.08% care/QE; employee share at most 50% | [State source](https://delcode.delaware.gov/title19/c037/) |
