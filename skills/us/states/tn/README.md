@@ -11,7 +11,7 @@ not_applicable:
 covered_by:
   VAT: tn-sales-tax
   IT-CORP: tn-corporate-tax
-  PR: tn-PR
+  PR: tn-payroll
   SC: tn-payroll
 partial:
   VAT: Specific legacy exemptions/certificates, local rates and filing mechanics remain
@@ -34,7 +34,8 @@ No individual-income skill is required. Franchise/excise and separate gross-rece
 | --- | --- | --- |
 | VAT | `tn-sales-tax` | checked against the law |
 | IT-CORP | `tn-corporate-tax` | checked against the law |
-| PR | `tn-PR` | checked against the law |
+| PR | `tn-payroll` | checked against the law |
+| SC | `tn-payroll` | checked against the law |
 
 ## Official sources
 
