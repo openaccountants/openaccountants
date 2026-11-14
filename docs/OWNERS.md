@@ -1,6 +1,6 @@
 # Owners
 
-Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
+Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works on the US. Change this file by PR.
 
 **Every owner and every writer, human or AI, builds skills to one standard: [docs/skill-template.md](skill-template.md) ("How to write a skill: the standard").** Primary sources only, one independent review before merge, nothing unconfirmed in the skill.
 
@@ -8,11 +8,13 @@ Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the
 
 | Owner | Regions | Jurisdictions | Thin (7 or fewer skills) |
 |---|---|---|---|
-| Jeff Watts | Americas: US federal and states, Canada and provinces, Latin America, Caribbean | 105 | 91 |
-| Ryan Duguid | Asia-Pacific, Africa | 94 | 73 |
-| Michael Cutajar | Europe, Middle East; merges and final review | 67 | 12 |
+| Ryan Duguid | Asia-Pacific (including Australia), sub-Saharan Africa | 88 | 68 |
+| Michael Cutajar | Americas (US, Canada, Latin America, Caribbean), Europe, Middle East, North Africa; merges and final review | 177 | 109 |
 
-Cross-cutting: Ryan owns source reachability, the repo audit and the pentest. Michael owns the website sync, licensing and marketing. Jeff owns the board and issue triage. The GLOBAL, INTL and EU-wide skills are not jurisdictions; Michael maintains them.
+Cross-cutting: Ryan owns source reachability, the repo audit and the pentest. Michael owns the website sync, licensing and marketing. Board and issue triage is open. The GLOBAL, INTL and EU-wide skills are not jurisdictions; Michael maintains them.
+
+
+**Split from 14 November 2026 (Michael):** Michael owns about 70% of the library by skill count (about 1,420 skills, 68%), Ryan about 30% (about 665, 32%). Jeff Watts is no longer an owner; his Americas jurisdictions moved to Michael, and North Africa (DZ, LY, MA, MR, SD, TN) moved from Ryan to Michael with the Middle East. The world standard wave of 14 to 17 November is rewriting files in every region, Ryan's included; Ryan owns his packs after it lands.
 
 ## Roles
 
@@ -34,7 +36,7 @@ CI checks that a skill is well formed. It does not check that a skill is right. 
 | Reviewing accountants | A named, credentialed accountant reviews a country's pack and signs it off as Accountant-reviewed (`tier: 1`). | This is the third test in [GOAL.md](GOAL.md) and the slowest. 33 skills have it today. | Open. One per country; region owners recruit. |
 | Tooling | Builds and maintains the checks: link checker, contradiction gate, provenance required on changed skills, the coverage report and its `partial:` rule. | Every rule we rely on should run without a person remembering it. | Open; the data lead decides what is built first. |
 | Merger and final review | Merges PRs, holds the line on the two quality states and the copy rules. | Humans merge; one person keeps it consistent. | Michael Cutajar. |
-| Board and triage | Keeps the issue board current and routes new issues and contributors. | Contributors need a clear place to start. | Jeff Watts. |
+| Board and triage | Keeps the issue board current and routes new issues and contributors. | Contributors need a clear place to start. | Open. |
 
 To take an open role, comment on the coverage report issue or open a PR changing this table.
 
@@ -139,7 +141,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 - One active writer per country. Before another writer starts, record a handover on the country issue with the topic, branch or PR, unfinished scope and next action. Inactivity or a merged PR alone does not transfer a country.
 - An independent source review does not transfer writing. Keep author and source-reviewer records. An approved accountant publishing their own professional work records their own approval in that same PR; no second accountant is required. The public label is Approved by [name]. A maintenance assignment or AI commit under a person's identity is not professional publication.
 
-This allocation covers only the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific and Africa allocation, Jeff's Americas allocation and Michael's Middle East accountability are unchanged. Caribbean and Middle East drafts in the #514 split are preserved contributions, not a new regional assignment. Assign Jersey or Åland work here before adding it to this table.
+This allocation covers only the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific and sub-Saharan Africa allocation and Michael's Americas, Middle East and North Africa accountability are set in the owner table above (14 November 2026). Caribbean and Middle East drafts in the #514 split are preserved contributions, not a new regional assignment. Assign Jersey or Åland work here before adding it to this table.
 
 ## By jurisdiction
 
@@ -147,111 +149,111 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 
 | Owner | Region | Code | Name | Skills | Reviewed | Stale | Missing domains |
 |---|---|---|---|---|---|---|---|
-| jeff | americas | AG | Antigua And Barbuda | 3 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
-| jeff | americas | AR | Argentina | 8 | 0 | 0 | PR, TP, XB |
-| jeff | americas | AW | Aruba | 3 | 0 | 0 | IT-CORP, VAT, PR, TP, XB |
-| jeff | americas | BB | Barbados | 6 | 0 | 0 | TP, XB |
-| jeff | americas | BL | Saint Barthelemy | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
-| jeff | americas | BM | Bermuda | 7 | 0 | 0 | TP, XB |
-| jeff | americas | BO | Bolivia | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | BR | Brazil | 14 | 0 | 0 | IT-CORP, SC, XB |
-| jeff | americas | BS | Bahamas | 6 | 0 | 0 | TP, XB |
-| jeff | americas | BZ | Belize | 6 | 0 | 0 | TP, XB |
-| jeff | americas | CA | Canada | 51 | 1 | 0 | none |
-| jeff | americas | CA-AB | Alberta (Canada) | 2 | 0 | 0 | IT-CORP, VAT, SC, PR, TP |
-| jeff | americas | CL | Chile | 8 | 0 | 0 | PR, TP, XB |
-| jeff | americas | CO | Colombia | 8 | 0 | 0 | PR, TP, XB |
-| jeff | americas | CR | Costa Rica | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | CU | Cuba | 0 | 0 | 0 | not covered (sanctioned) |
-| jeff | americas | CW | Cura Ao | 6 | 0 | 0 | TP, XB |
-| jeff | americas | DM | Dominica | 4 | 0 | 0 | TP, XB |
-| jeff | americas | DO | Dominican Republic | 22 | 0 | 0 | none |
-| jeff | americas | EC | Ecuador | 8 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | GD | Grenada | 3 | 0 | 0 | IT-IND, IT-CORP, PR, TP, XB |
-| jeff | americas | GF | French Guiana | 2 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | GL | Greenland | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, TP, XB |
-| jeff | americas | GP | Guadeloupe | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | GT | Guatemala | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | GY | Guyana | 6 | 0 | 0 | TP, XB |
-| jeff | americas | HN | Honduras | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | HT | Haiti | 0 | 0 | 0 | not covered (sanctioned) |
-| jeff | americas | JM | Jamaica | 6 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | KN | Saint Kitts And Nevis | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
-| jeff | americas | KY | Cayman Islands | 6 | 0 | 0 | TP, XB |
-| jeff | americas | LC | Saint Lucia | 5 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | MF | Saint Martin | 3 | 0 | 0 | IT-IND, VAT, SC, PR, TP, XB |
-| jeff | americas | MQ | Martinique | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | MS | Montserrat | 3 | 0 | 0 | VAT, TP |
-| jeff | americas | MX | Mexico | 12 | 0 | 0 | IT-CORP, SC, PR, XB |
-| jeff | americas | NI | Nicaragua | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | PA | Panama | 4 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | PE | Peru | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | PM | Saint Pierre And Miquelon | 2 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | PR | Puerto Rico | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | PY | Paraguay | 4 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | SR | Suriname | 6 | 0 | 0 | TP, XB |
-| jeff | americas | SV | El Salvador | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | SX | Sint Maarten | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | TC | Turks And Caicos | 3 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | TT | Trinidad And Tobago | 6 | 0 | 0 | TP, XB |
-| jeff | americas | US | United States (federal) | 103 | 21 | 0 | SC, TP |
-| jeff | americas | US-AK | Alaska (US) | 1 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-AL | Alabama (US) | 4 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-AR | Arkansas (US) | 4 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-AZ | Arizona (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-CA | California (US) | 16 | 0 | 0 | IT-CORP, SC, TP |
-| jeff | americas | US-CO | Colorado (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-CT | Connecticut (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-DC | District of Columbia (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-DE | Delaware (US) | 4 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | US-FL | Florida (US) | 7 | 0 | 0 | SC, PR, TP, XB |
-| jeff | americas | US-GA | Georgia (US) | 10 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-HI | Hawaii (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-IA | Iowa (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-ID | Idaho (US) | 2 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-IL | Illinois (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-IN | Indiana (US) | 3 | 0 | 0 | IT-IND, IT-CORP, SC, TP, XB |
-| jeff | americas | US-KS | Kansas (US) | 7 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-KY | Kentucky (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-LA | Louisiana (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-MA | Massachusetts (US) | 7 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-MD | Maryland (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-ME | Maine (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-MI | Michigan (US) | 9 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-MN | Minnesota (US) | 5 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-MO | Missouri (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-MS | Mississippi (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-MT | Montana (US) | 1 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | US-NC | North Carolina (US) | 7 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-ND | North Dakota (US) | 6 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-NE | Nebraska (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-NH | New Hampshire (US) | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | US-NJ | New Jersey (US) | 5 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-NM | New Mexico (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-NV | Nevada (US) | 5 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-NY | New York (US) | 16 | 0 | 0 | SC, TP |
-| jeff | americas | US-NY-NYC | New York City (US) | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
-| jeff | americas | US-OH | Ohio (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-OK | Oklahoma (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-OR | Oregon (US) | 3 | 0 | 0 | IT-CORP, VAT, SC, TP, XB |
-| jeff | americas | US-PA | Pennsylvania (US) | 5 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-RI | Rhode Island (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-SC | South Carolina (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-SD | South Dakota (US) | 1 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-TN | Tennessee (US) | 1 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-TX | Texas (US) | 8 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-UT | Utah (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-VA | Virginia (US) | 4 | 0 | 0 | SC, TP, XB |
-| jeff | americas | US-VT | Vermont (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-WA | Washington (US) | 5 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-WI | Wisconsin (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
-| jeff | americas | US-WV | West Virginia (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
-| jeff | americas | US-WY | Wyoming (US) | 3 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
-| jeff | americas | UY | Uruguay | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | VC | Saint Vincent And The Grenadines | 3 | 0 | 0 | SC, PR, TP, XB |
-| jeff | americas | VE | Venezuela | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | VG | British Virgin Islands | 6 | 0 | 0 | TP, XB |
-| jeff | americas | VI | Us Virgin Islands | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | AG | Antigua And Barbuda | 3 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
+| michael | americas | AR | Argentina | 8 | 0 | 0 | PR, TP, XB |
+| michael | americas | AW | Aruba | 3 | 0 | 0 | IT-CORP, VAT, PR, TP, XB |
+| michael | americas | BB | Barbados | 6 | 0 | 0 | TP, XB |
+| michael | americas | BL | Saint Barthelemy | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
+| michael | americas | BM | Bermuda | 7 | 0 | 0 | TP, XB |
+| michael | americas | BO | Bolivia | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | BR | Brazil | 14 | 0 | 0 | IT-CORP, SC, XB |
+| michael | americas | BS | Bahamas | 6 | 0 | 0 | TP, XB |
+| michael | americas | BZ | Belize | 6 | 0 | 0 | TP, XB |
+| michael | americas | CA | Canada | 51 | 1 | 0 | none |
+| michael | americas | CA-AB | Alberta (Canada) | 2 | 0 | 0 | IT-CORP, VAT, SC, PR, TP |
+| michael | americas | CL | Chile | 8 | 0 | 0 | PR, TP, XB |
+| michael | americas | CO | Colombia | 8 | 0 | 0 | PR, TP, XB |
+| michael | americas | CR | Costa Rica | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | CU | Cuba | 0 | 0 | 0 | not covered (sanctioned) |
+| michael | americas | CW | Cura Ao | 6 | 0 | 0 | TP, XB |
+| michael | americas | DM | Dominica | 4 | 0 | 0 | TP, XB |
+| michael | americas | DO | Dominican Republic | 22 | 0 | 0 | none |
+| michael | americas | EC | Ecuador | 8 | 0 | 0 | VAT, TP, XB |
+| michael | americas | GD | Grenada | 3 | 0 | 0 | IT-IND, IT-CORP, PR, TP, XB |
+| michael | americas | GF | French Guiana | 2 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | GL | Greenland | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, TP, XB |
+| michael | americas | GP | Guadeloupe | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | GT | Guatemala | 7 | 0 | 0 | VAT, TP, XB |
+| michael | americas | GY | Guyana | 6 | 0 | 0 | TP, XB |
+| michael | americas | HN | Honduras | 7 | 0 | 0 | VAT, TP, XB |
+| michael | americas | HT | Haiti | 0 | 0 | 0 | not covered (sanctioned) |
+| michael | americas | JM | Jamaica | 6 | 0 | 0 | VAT, TP, XB |
+| michael | americas | KN | Saint Kitts And Nevis | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
+| michael | americas | KY | Cayman Islands | 6 | 0 | 0 | TP, XB |
+| michael | americas | LC | Saint Lucia | 5 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | MF | Saint Martin | 3 | 0 | 0 | IT-IND, VAT, SC, PR, TP, XB |
+| michael | americas | MQ | Martinique | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | MS | Montserrat | 3 | 0 | 0 | VAT, TP |
+| michael | americas | MX | Mexico | 12 | 0 | 0 | IT-CORP, SC, PR, XB |
+| michael | americas | NI | Nicaragua | 7 | 0 | 0 | VAT, TP, XB |
+| michael | americas | PA | Panama | 4 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | PE | Peru | 7 | 0 | 0 | VAT, TP, XB |
+| michael | americas | PM | Saint Pierre And Miquelon | 2 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | PR | Puerto Rico | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | PY | Paraguay | 4 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | SR | Suriname | 6 | 0 | 0 | TP, XB |
+| michael | americas | SV | El Salvador | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | SX | Sint Maarten | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | TC | Turks And Caicos | 3 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | TT | Trinidad And Tobago | 6 | 0 | 0 | TP, XB |
+| michael | americas | US | United States (federal) | 103 | 21 | 0 | SC, TP |
+| michael | americas | US-AK | Alaska (US) | 1 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-AL | Alabama (US) | 4 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-AR | Arkansas (US) | 4 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-AZ | Arizona (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-CA | California (US) | 16 | 0 | 0 | IT-CORP, SC, TP |
+| michael | americas | US-CO | Colorado (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-CT | Connecticut (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-DC | District of Columbia (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-DE | Delaware (US) | 4 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | US-FL | Florida (US) | 7 | 0 | 0 | SC, PR, TP, XB |
+| michael | americas | US-GA | Georgia (US) | 10 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-HI | Hawaii (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-IA | Iowa (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-ID | Idaho (US) | 2 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-IL | Illinois (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-IN | Indiana (US) | 3 | 0 | 0 | IT-IND, IT-CORP, SC, TP, XB |
+| michael | americas | US-KS | Kansas (US) | 7 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-KY | Kentucky (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-LA | Louisiana (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-MA | Massachusetts (US) | 7 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-MD | Maryland (US) | 3 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-ME | Maine (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-MI | Michigan (US) | 9 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-MN | Minnesota (US) | 5 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-MO | Missouri (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-MS | Mississippi (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-MT | Montana (US) | 1 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | US-NC | North Carolina (US) | 7 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-ND | North Dakota (US) | 6 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-NE | Nebraska (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-NH | New Hampshire (US) | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | US-NJ | New Jersey (US) | 5 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-NM | New Mexico (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-NV | Nevada (US) | 5 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-NY | New York (US) | 16 | 0 | 0 | SC, TP |
+| michael | americas | US-NY-NYC | New York City (US) | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
+| michael | americas | US-OH | Ohio (US) | 6 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-OK | Oklahoma (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-OR | Oregon (US) | 3 | 0 | 0 | IT-CORP, VAT, SC, TP, XB |
+| michael | americas | US-PA | Pennsylvania (US) | 5 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-RI | Rhode Island (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-SC | South Carolina (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-SD | South Dakota (US) | 1 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-TN | Tennessee (US) | 1 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-TX | Texas (US) | 8 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-UT | Utah (US) | 3 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-VA | Virginia (US) | 4 | 0 | 0 | SC, TP, XB |
+| michael | americas | US-VT | Vermont (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-WA | Washington (US) | 5 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-WI | Wisconsin (US) | 4 | 0 | 0 | IT-CORP, SC, TP, XB |
+| michael | americas | US-WV | West Virginia (US) | 2 | 0 | 0 | IT-CORP, SC, PR, TP, XB |
+| michael | americas | US-WY | Wyoming (US) | 3 | 0 | 0 | IT-IND, IT-CORP, SC, PR, TP, XB |
+| michael | americas | UY | Uruguay | 7 | 0 | 0 | VAT, TP, XB |
+| michael | americas | VC | Saint Vincent And The Grenadines | 3 | 0 | 0 | SC, PR, TP, XB |
+| michael | americas | VE | Venezuela | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | VG | British Virgin Islands | 6 | 0 | 0 | TP, XB |
+| michael | americas | VI | Us Virgin Islands | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
 | michael | europe | AD | Andorra | 8 | 0 | 0 | IT-IND |
 | michael | europe | AL | Albania | 8 | 0 | 0 | none |
 | michael | europe | AM | Armenia | 10 | 0 | 0 | none |
@@ -330,7 +332,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | CM | Cameroon | 4 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | CV | Cape Verde | 6 | 0 | 0 | TP, XB |
 | ryan | africa | DJ | Djibouti | 6 | 0 | 0 | TP, XB |
-| ryan | africa | DZ | Algeria | 4 | 0 | 0 | IT-CORP, TP, XB |
+| michael | africa | DZ | Algeria | 4 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | ER | Eritrea | 6 | 0 | 0 | TP, XB |
 | ryan | africa | ET | Ethiopia | 7 | 0 | 0 | TP, XB |
 | ryan | africa | GA | Gabon | 5 | 0 | 0 | TP, XB |
@@ -343,11 +345,11 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | KM | Comoros | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
 | ryan | africa | LR | Liberia | 6 | 0 | 0 | TP, XB |
 | ryan | africa | LS | Lesotho | 6 | 0 | 0 | TP, XB |
-| ryan | africa | LY | Libya | 0 | 0 | 0 | not covered (sanctioned) |
-| ryan | africa | MA | Morocco | 16 | 0 | 0 | IT-CORP, TP, XB |
+| michael | africa | LY | Libya | 0 | 0 | 0 | not covered (sanctioned) |
+| michael | africa | MA | Morocco | 16 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | MG | Madagascar | 6 | 0 | 0 | TP, XB |
 | ryan | africa | ML | Mali | 6 | 0 | 0 | TP, XB |
-| ryan | africa | MR | Mauritania | 6 | 0 | 0 | TP, XB |
+| michael | africa | MR | Mauritania | 6 | 0 | 0 | TP, XB |
 | ryan | africa | MU | Mauritius | 6 | 0 | 0 | TP, XB |
 | ryan | africa | MW | Malawi | 6 | 0 | 0 | TP, XB |
 | ryan | africa | MZ | Mozambique | 4 | 0 | 0 | IT-CORP, TP, XB |
@@ -357,7 +359,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | RE | Reunion | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
 | ryan | africa | RW | Rwanda | 8 | 0 | 0 | TP, XB |
 | ryan | africa | SC | Seychelles | 5 | 0 | 0 | TP, XB |
-| ryan | africa | SD | Sudan | 0 | 0 | 0 | not covered (sanctioned) |
+| michael | africa | SD | Sudan | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | SH | Saint Helena | 4 | 0 | 0 | IT-CORP, VAT, SC, TP, XB |
 | ryan | africa | SL | Sierra Leone | 6 | 0 | 0 | TP, XB |
 | ryan | africa | SN | Senegal | 7 | 0 | 0 | TP, XB |
@@ -367,7 +369,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | SZ | Eswatini | 6 | 0 | 0 | TP, XB |
 | ryan | africa | TD | Chad | 6 | 0 | 0 | TP, XB |
 | ryan | africa | TG | Togo | 6 | 0 | 0 | TP, XB |
-| ryan | africa | TN | Tunisia | 7 | 0 | 0 | TP, XB |
+| michael | africa | TN | Tunisia | 7 | 0 | 0 | TP, XB |
 | ryan | africa | TZ | Tanzania | 6 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | UG | Uganda | 6 | 0 | 0 | TP, XB |
 | ryan | africa | YT | Mayotte | 2 | 0 | 0 | IT-IND, IT-CORP, SC, TP, XB |

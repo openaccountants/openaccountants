@@ -3,13 +3,13 @@ name: mn-payroll
 description: "Minnesota2026 withholding formula and filings, UI44,000base/assessments/industry rates, Paid Leave premiums, ESST, construction classification and corrected cases."
 jurisdiction: US-MN
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 type: computation
 category: state-tax
-version: "0.2"
+version: "0.3"
 ---
 
 # Minnesota employer withholding, UI and Paid Leave, 2026
@@ -32,7 +32,7 @@ Minnesota employers paying resident or Minnesota-source wages, with state withho
 | UI additional/special assessments | Additional 14% **of UI tax before assessments**; federal-loan assessment 0% | [DEED2026 rates](https://mn.gov/uimn/employers/wages-taxes/tax-rates/); [calculation sheet](https://mn.gov/uimn/assets/quarterly-total-amount-calculated_tcm1068-548928.pdf) |
 | Workforce-development assessment | 0.10% of taxable wages, separate from UI; reimbursing-employer exception | [116L.20](https://www.revisor.mn.gov/statutes/cite/116L.20); [DEED calculation](https://mn.gov/uimn/assets/quarterly-total-amount-calculated_tcm1068-548928.pdf) |
 | Paid Leave regular combined premium | 0.88%; ordinary employer minimum 0.44%, employee maximum 0.44%, subject to lawful wage floor | [DEED2026 designation](https://mn.gov/deed/assets/paid-leave-small-employer-premium-rate-designation-acc_tcm1045-716947.pdf); [268B.14](https://www.revisor.mn.gov/statutes/cite/268B.14) |
-| Eligible small-employer combined premium | 0.66%; employer minimum 0.22%, employee maximum 0.44%; requires designation, not size alone | [DEED designation](https://mn.gov/deed/assets/paid-leave-small-employer-premium-rate-designation-acc_tcm1045-716947.pdf); [268B.14 subd. 5a](https://www.revisor.mn.gov/statutes/cite/268B.14) |
+| Eligible small-employer combined premium | 0.66%; employer minimum 0.22% (derived: 25% of the 0.88% annual rate), employee maximum 0.44%; requires designation, not size alone | [DEED designation](https://mn.gov/deed/assets/paid-leave-small-employer-premium-rate-designation-acc_tcm1045-716947.pdf); [268B.14 subd. 5a](https://www.revisor.mn.gov/statutes/cite/268B.14) |
 | Withholding quarterly-deposit exception | Prior quarter withholding 1,500 or less AND prior quarterly return timely | [Booklet, p.8](https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf) |
 | Annual filing/payment eligibility | Generally prior calendar-year withholding 500 or less; verify assigned status; in-year threshold deposits can still arise | [Booklet, pp.8-9](https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf) |
 | Withholding electronic payment | 10,000 or more in last 12 months endingJune 30, or other specified business-tax/payroll-service trigger | [Booklet, p.8](https://www.revenue.state.mn.us/sites/default/files/2025-12/wh-inst-26.pdf) |
