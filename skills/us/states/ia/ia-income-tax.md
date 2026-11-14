@@ -37,12 +37,12 @@ Individuals with Iowa wages, Schedule C income or other individual income; resid
 
 | Item and condition | Amount | Official source |
 | --- | --- | --- |
-| Regular individual tax, 2026 | three and eight-tenths percent of Iowa taxable income | [422.5(1)(a)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
-| Low-income exemption, under 65: single/MFS; joint/HOH/surviving spouse | nine thousand dollars; thirteen thousand five hundred dollars of specially adjusted net income; spouse/dependent restrictions apply | [422.5(2)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
-| Low-income exemption, age 65 or older: single/MFS; joint/HOH/surviving spouse | twenty-four thousand dollars; thirty-two thousand dollars; one eligible spouse suffices | [422.5(3)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
-| Alternate tax, joint/HOH/surviving spouse above relevant exemption | Compare regular tax with four and three-tenths percent of specially adjusted net income above thirteen thousand five hundred dollars, or thirty-two thousand dollars where eligible; use lower result | [422.5(2)(b), (3)(b)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
+| Regular individual tax, 2026 | 3.8% of Iowa taxable income (in words on the page) | [422.5(1)(a)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
+| Low-income exemption, under 65: single/MFS; joint/HOH/surviving spouse | USD 9,000; USD 13,500 of specially adjusted net income; spouse/dependent restrictions apply (in words on the page) | [422.5(2)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
+| Low-income exemption, age 65 or older: single/MFS; joint/HOH/surviving spouse | USD 24,000; USD 32,000; one eligible spouse suffices (in words on the page) | [422.5(3)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
+| Alternate tax, joint/HOH/surviving spouse above relevant exemption | Compare regular tax with 4.3% of specially adjusted net income above USD 13,500, or USD 32,000 where eligible; use lower result (in words on the page) | [422.5(2)(b), (3)(b)](https://www.legis.iowa.gov/docs/code/2026/422.5.pdf) |
 | Nonrefundable personal exemption credits | USD 40 single/MFS; USD 80 joint/HOH; USD 40 each dependent; additional USD 20 for each qualifying age-65 or blind individual | [422.12(2)(a)](https://www.legis.iowa.gov/docs/code/2026/422.12.pdf) |
-| Estimated-tax statutory trigger, 2026 | Expected Iowa income tax liability of one thousand dollars or more; apply withholding/payment exceptions before deciding installments | [422.16(12)](https://www.legis.iowa.gov/docs/code/2026/422.16.pdf) |
+| Estimated-tax statutory trigger, 2026 | Expected Iowa income tax liability of USD 1,000 or more; apply withholding/payment exceptions before deciding installments (in words on the page) | [422.16(12)](https://www.legis.iowa.gov/docs/code/2026/422.16.pdf) |
 | Nonresident or part-year filing screen, 2025-2026 filing cycle | Iowa-source net income at least USD 1,000, unless below overall filing thresholds; lump-sum tax independently triggers filing | [2025 instructions, Who Must File](https://revenue.iowa.gov/media/4435/download?inline=) |
 
 ### Compute and reconcile the base
