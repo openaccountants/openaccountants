@@ -1,13 +1,14 @@
 ---
 name: it-regime-forfettario
 description: "Italy's regime forfettario (flat-rate regime) for individuals running a business or a profession, tax year 2026, under L. 190/2014 art. 1 commi 54-89. Covers the entry and stay conditions (EUR 85,000 revenue, EUR 20,000 staff costs, the employment-income bar raised to EUR 35,000 for 2025 and 2026, the comma 57 exclusions), the same-year exit above EUR 100,000, the full table of coefficienti di redditivita by ATECO group, the 15% substitute tax and the 5% start-up rate, deduction of INPS contributions, no VAT and the invoice wording, e-invoicing, the EUR 2 stamp duty, the 35% INPS cut for artigiani and commercianti, acconti, Quadro LM, leaving the regime, and penalties. Trigger on: forfettario, forfetario, flat tax partita IVA, imposta sostitutiva 15%, 5% startup, coefficiente di redditivita, Quadro LM, superamento 100.000. Out of scope: regime ordinario (it-income-tax), employees (it-irpef-employees), INPS rates (it-inps-contributions for the gestione separata, it-inps-artigiani-commercianti for artigiani and commercianti), acconti method (it-estimated-tax), VAT returns (italy-vat-return), e-invoice XML (italy-einvoice)."
-version: 0.3
+version: 0.4
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
 # Italy: the regime forfettario (flat-rate regime), tax year 2026
@@ -54,31 +55,31 @@ Related skills, not repeated here:
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Entry: previous-year revenue or fees, annualised, all ATECO codes together | not above EUR 85,000 | 2026 | L. 190/2014 art. 1 c. 54(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
-| Entry: previous-year gross staff and collaborator costs | not above EUR 20,000 | 2026 | c. 54(b), same URL |
-| Same-year exit: receipts in the year above | EUR 100,000 | 2026 | c. 71, same URL |
-| Exclusion: previous-year employment income above (standing figure) | EUR 30,000 | standing | c. 57(d-ter), same URL |
+| Entry: previous-year gross staff and collaborator costs | not above EUR 20,000 | 2026 | c. 54(b), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Same-year exit: receipts in the year above | EUR 100,000 | 2026 | c. 71, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Exclusion: previous-year employment income above (standing figure) | EUR 30,000 | standing | c. 57(d-ter), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
 | The same limit, regime years 2025 and 2026 (tested on 2024 and 2025 employment income) | EUR 35,000 | 2025, 2026 | L. 207/2024 art. 1 c. 12, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 ; extended to 2026 by L. 199/2025 art. 1 c. 27, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 |
-| Non-resident EU/EEA: share of total income earned in Italy | at least 75% | 2026 | c. 57(b), L. 190/2014 URL above |
-| Substitute tax (replaces IRPEF, regional and municipal surcharges, IRAP) | 15% | 2026 | c. 64, L. 190/2014 URL above |
-| Start-up rate, year activity starts and the next four | 5% | 2026 | c. 65, L. 190/2014 URL above |
-| INPS cut for artigiani and commercianti who opt in | 35% off the contributions due | 2026 | c. 77, L. 190/2014 URL above |
-| Deadline to opt in to the INPS cut (businesses already active) | 28 February each year | 2026 | c. 83, L. 190/2014 URL above |
+| Non-resident EU/EEA: share of total income earned in Italy | at least 75% | 2026 | c. 57(b), L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Substitute tax (replaces IRPEF, regional and municipal surcharges, IRAP) | 15% | 2026 | c. 64, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Start-up rate, year activity starts and the next four | 5% | 2026 | c. 65, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| INPS cut for artigiani and commercianti who opt in | 35% off the contributions due | 2026 | c. 77, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
+| Deadline to opt in to the INPS cut (businesses already active) | 28 February each year | 2026 | c. 83, L. 190/2014: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 |
 | Stamp duty on an invoice without VAT above EUR 77.47 | EUR 2 per invoice | 2026 | Agenzia, stamp duty on e-invoices (June 2026), https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
 | Penalty: start-up form silent on the regime, or opt-out not shown in the VAT return | EUR 250 to 2,000 | 2026 | Agenzia, https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/modalita-di-accesso-al-regime |
 
 **Coefficienti di redditivita (L. 190/2014 allegato 4, as replaced by L. 145/2018 allegato 2).** Taxable income = receipts times the coefficient of the activity's ATECO 2007 group.
 
-| No. | Sector group | ATECO 2007 codes | Coefficient |
-|---|---|---|---|
-| 1 | Food and beverage manufacturing | 10-11 | 40% |
-| 2 | Wholesale and retail trade | 45; 46.2 to 46.9; 47.1 to 47.7; 47.9 | 40% |
-| 3 | Street trade in food and drink | 47.81 | 40% |
-| 4 | Street trade in other goods | 47.82-47.89 | 54% |
-| 5 | Construction and real estate | 41-42-43; 68 | 86% |
-| 6 | Trade intermediaries (agents) | 46.1 | 62% |
-| 7 | Accommodation and food service | 55-56 | 40% |
-| 8 | Professional, scientific, technical, health, education, financial and insurance services | 64-65-66; 69-70-71-72-73-74-75; 85; 86-87-88 | 78% |
-| 9 | Other economic activities | 01-02-03; 05-06-07-08-09; 12 to 33; 35; 36-37-38-39; 49-50-51-52-53; 58-59-60-61-62-63; 77-78-79-80-81-82; 84; 90-91-92-93; 94-95-96; 97-98; 99 | 67% |
+| No. | Sector group | ATECO 2007 codes | Coefficient | Source |
+|---|---|---|---|---|
+| 1 | Food and beverage manufacturing | 10-11 | 40% | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 |
+| 2 | Wholesale and retail trade | 45; 46.2 to 46.9; 47.1 to 47.7; 47.9 | 40% | same |
+| 3 | Street trade in food and drink | 47.81 | 40% | same |
+| 4 | Street trade in other goods | 47.82-47.89 | 54% | same |
+| 5 | Construction and real estate | 41-42-43; 68 | 86% | same |
+| 6 | Trade intermediaries (agents) | 46.1 | 62% | same |
+| 7 | Accommodation and food service | 55-56 | 40% | same |
+| 8 | Professional, scientific, technical, health, education, financial and insurance services | 64-65-66; 69-70-71-72-73-74-75; 85; 86-87-88 | 78% | same |
+| 9 | Other economic activities | 01-02-03; 05-06-07-08-09; 12 to 33; 35; 36-37-38-39; 49-50-51-52-53; 58-59-60-61-62-63; 77-78-79-80-81-82; 84; 90-91-92-93; 94-95-96; 97-98; 99 | 67% | same |
 
 Source: the Gazzetta Ufficiale page of L. 145/2018 allegato 2, published by the Agenzia (https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218), and the same table in the Redditi PF 2026 instructions, Fascicolo 3, Quadro LM.
 
