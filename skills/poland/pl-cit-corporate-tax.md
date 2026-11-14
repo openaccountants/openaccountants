@@ -43,21 +43,21 @@ type: computation
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Standard CIT rate | 19% of the tax base | 2026 | [CIT Act art. 19(1)(1)](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554) |
-| Reduced rate, small taxpayers and start-ups | 9% of the base, on income other than capital gains (capital gains stay at 19%) | 2026 | art. 19(1)(2), (1a)-(1e) |
+| Reduced rate, small taxpayers and start-ups | 9% of the base, on income other than capital gains (capital gains stay at 19%) | 2026 | art. 19(1)(2), (1a)-(1e); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Revenue limit for the 9% rate, in the tax year | EUR 2,000,000 at the NBP rate on the first working day of the tax year: PLN 8,431,000 for a calendar year 2026 (EUR 1 = PLN 4.2156 on 2 January 2026). Prorated for a tax year longer or shorter than 12 months, from 2026 | 2026 | art. 19(1)(2)(a)-(b); [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity); [NBP table 001/A/NBP/2026](https://api.nbp.pl/api/exchangerates/rates/a/eur/2026-01-02/?format=json) |
 | Small taxpayer (mały podatnik) limit | Prior-year sales revenue including VAT not above EUR 2,000,000 at the NBP rate on the first working day of October of the prior year: PLN 8,517,000 for 2026 (EUR 1 = PLN 4.2586 on 1 October 2025) | 2026 | art. 4a pkt 10; [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity) |
 | Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank | 30% for a tax year starting in 2026; 26% in the following year; 23% after that | 2026 | art. 19(1)(3) and art. 38aa, added by [Dz.U. 2025 poz. 1658](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658) |
-| Cooperative banks and SKOKs | 27% for a tax year starting in 2026; 23% in the following year; 21% after that | 2026 | art. 19(1)(4) and art. 38ab (as corrected by Dz.U. 2026 poz. 779) |
-| Banks and SKOKs that meet the 9% rate conditions | 17% for a tax year starting in 2026; 13% in the following year; 11% after that | 2026 | art. 19(1)(5) and art. 38ac |
+| Cooperative banks and SKOKs | 27% for a tax year starting in 2026; 23% in the following year; 21% after that | 2026 | art. 19(1)(4) and art. 38ab (as corrected by Dz.U. 2026 poz. 779); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
+| Banks and SKOKs that meet the 9% rate conditions | 17% for a tax year starting in 2026; 13% in the following year; 11% after that | 2026 | art. 19(1)(5) and art. 38ac; https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Estonian CIT (ryczałt od dochodów spółek) | 10% for a small taxpayer or a start-up; 20% otherwise | 2026 | art. 28o(1); [podatki.gov.pl, Estonian CIT rates](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/stawki-i-limity-w-estonskim-cit) |
-| Minimum income tax (podatek minimalny) | 10% of a special base, for companies with a loss or a profitability ratio of 2% or less | applies to 2026 (it was suspended only for 2022 and 2023, art. 38ec) | art. 24ca |
-| Tax on shifted income (podatek od przerzuconych dochodów) | 19% | 2026 | art. 24aa(1) |
-| Interest limitation safe harbour | PLN 3,000,000 a year, or 30% of tax EBITDA if higher | 2026 | art. 15c(1) |
-| Losses | Five tax years; at most 50% of the loss in any one year, or once up to PLN 5,000,000 | 2026 | art. 7(5) |
+| Minimum income tax (podatek minimalny) | 10% of a special base, for companies with a loss or a profitability ratio of 2% or less | applies to 2026 (it was suspended only for 2022 and 2023, art. 38ec) | art. 24ca; https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
+| Tax on shifted income (podatek od przerzuconych dochodów) | 19% | 2026 | art. 24aa(1); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
+| Interest limitation safe harbour | PLN 3,000,000 a year, or 30% of tax EBITDA if higher | 2026 | art. 15c(1); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
+| Losses | Five tax years; at most 50% of the loss in any one year, or once up to PLN 5,000,000 | 2026 | art. 7(5); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | One-off depreciation, small taxpayers and start-ups | Up to EUR 50,000 a year: PLN 213,000 for 2026 | 2026 | art. 16k(7); [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity) |
-| Low-value assets | Initial value up to PLN 10,000 may be expensed at once | 2026 | art. 16f(3) |
+| Low-value assets | Initial value up to PLN 10,000 may be expensed at once | 2026 | art. 16f(3); https://api.sejm.gov.pl/eli/acts/DU/2026/554/text/U/D20260554Lj.pdf |
 | Passenger car value cap for depreciation | PLN 225,000 electric or hydrogen; PLN 150,000 if CO2 below 50 g/km; PLN 100,000 if 50 g/km or more (cars entered in the asset register before 1 January 2026 keep the 2025 caps) | 2026 | art. 16(1)(4); [podatki.gov.pl, CIT rates and limits](https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity) |
-| Tax capital group (PGK) | At least PLN 250,000 average share capital per company; parent holds at least 75% directly | 2026 | art. 1a(2) |
+| Tax capital group (PGK) | At least PLN 250,000 average share capital per company; parent holds at least 75% directly | 2026 | art. 1a(2); https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity |
 | Late payment interest (odsetki za zwłokę) | 10.50% a year (reduced 5.25%) | from 5 March 2026 | [MF notice, M.P. 2026 poz. 269](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269); Tax Ordinance art. 56 |
 | Pillar Two | 15% global and domestic minimum tax for groups with consolidated revenue of at least EUR 750,000,000; in force from 1 January 2025 | 2026 | [Dz.U. 2024 poz. 1685](https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685) |
 
@@ -268,9 +268,6 @@ expected:
 | Read for the points the body cites to it: podatki.gov.pl, CIT forms (CIT-8 (34), CIT-8AB (9), CIT-8E (4), CIT/M) | https://www.podatki.gov.pl/podatki-firmowe/cit/formularze-cit | 2026-11-14 |
 | NBP, EUR mid rate 2 January 2026 (4.2156) and 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2026-01-02/?format=json and https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-22 |
 | NBP base interest rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-22 |
-| Read for Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank: ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658 | 2026-11-14 |
-| Read for Late payment interest (odsetki za zwłokę): ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-11-14 |
-| Read for Pillar Two: ISAP record of the act (title, status and text link) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 | 2026-11-14 |
 
 The ISAP pages (isap.sejm.gov.pl) served a browser check to scripted requests on 2026-10-22, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
