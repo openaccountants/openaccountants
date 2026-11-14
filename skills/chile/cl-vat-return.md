@@ -42,7 +42,7 @@ Linked skills, not repeated here:
 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
-| IVA standard rate | 19% of the taxable base | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=6369 (DL 825 art. 14) |
+| IVA standard rate | 19% of the taxable base | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=6369 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=6369 (DL 825 art. 14) |
 | Exports of goods | Exempt (export recovery under art. 36) | 2026 | same, art. 12 D, art. 36 |
 | Services to non-residents that Customs qualifies as exports | Exempt, with recovery of input IVA | 2026 | same, art. 12 E No. 16, art. 36 |
 | International freight and international passenger tickets | Exempt | 2026 | same, art. 12 E No. 2 |
