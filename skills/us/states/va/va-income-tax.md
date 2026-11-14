@@ -1,10 +1,10 @@
 ---
 name: va-income-tax
 description: Compute Virginia resident individual income tax on Form 760 for tax year 2026 (and 2025 returns still being filed), including sole proprietors and single-member LLC owners. Covers federal AGI as the start, Schedule ADJ additions and subtractions, the $8,750 / $17,500 standard deduction, $930 exemptions, the age deduction, the 2% to 5.75% rate schedule (5.75% over $17,000), the spouse tax adjustment, the low-income and Virginia earned income credits, Schedule OSC, the PTET credit, the December 31, 2025 conformity date and P.L. 119-21 decoupling, estimated tax (more than $1,000 for 2026) and penalties. Trigger on "Virginia income tax", "VA income tax", "Form 760", "Virginia tax brackets", "Virginia standard deduction", "Virginia age deduction". Residents only. Not for US Virgin Islands (see skills/us-virgin-islands).
-version: "1.0"
+version: "1.1"
 jurisdiction: US-VA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -78,9 +78,9 @@ The figures below are grouped by topic, each with its source.
 | Virginia taxable income | Tax | Source |
 | --- | --- | --- |
 | Not over $3,000 | 2% of taxable income | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
-| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
-| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
-| Over $17,000 | $720 plus 5.75% of the excess over $17,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/); [2026 Form 760ES schedule](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf) |
+| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/); [2026 Form 760ES schedule](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf) |
+| Over $17,000 | $720 plus 5.75% of the excess over $17,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/); [2026 Form 760ES schedule](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf) |
 
 Source: Va. Code § 58.1-320 ("Five and three-quarters percent on income in excess of $17,000 for taxable years beginning on and after January 1, 1990"), https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/ , and the rate schedule in the 2025 instructions and 2026 Form 760ES. The official example: taxable income of $90,000 gives $4,917.50, rounded to $4,918.
 
