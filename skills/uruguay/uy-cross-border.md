@@ -1,10 +1,10 @@
 ---
 name: uy-cross-border
 description: "Uruguay cross-border tax for 2026: the non-resident income tax (IRNR, Impuesto a las Rentas de los No Residentes) in Título 8 of the Texto Ordenado 2023 as amended by Ley 20.446, and its regulation Decreto 149/007. Covers who is resident (183 days, centre of interests, companies formed under Uruguayan law), what is Uruguayan-source income (technical services to IRAE payers, digital services, share sales of foreign entities holding Uruguayan assets from 2026), the IRNR rates (12% general, 7% dividends, 25% low or no-tax jurisdictions, reduced rates on local interest), the withholding rates and the gross-up for net payments, exemptions, the duty to appoint a representative, form 1246, and treaty relief under Uruguay's 25 double tax treaties in force. Trigger on: IRNR, no residentes Uruguay, retención IRNR, convenio doble imposición Uruguay, withholding tax Uruguay, royalties paid abroad Uruguay, dividend to foreign parent Uruguay. Out of scope: permanent establishments (IRAE), transfer pricing, residents' foreign income."
-version: 0.1
+version: 0.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: cross-border
 type: computation
 ---
 
-# Uruguay: non-resident income tax (IRNR) and treaties, 2026 v0.1
+# Uruguay: non-resident income tax (IRNR) and treaties, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -215,4 +215,4 @@ expected:
 
 Not yet confirmed: the IRNR rate on foreign-currency interest over one and up to three years (blank in the consolidated text); the DGI list of low or no-tax jurisdictions; the monthly due dates for paying IRNR withholdings and the lines of form 1246; the form and certificate DGI requires to apply a treaty rate at source outside fictitious dividends; the rules of the Programa de Fomento para la Atracción de Personas con Talento Calificado; whether any treaty entered into force after the DGI table of April 2024; the rates in the other 24 treaties.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

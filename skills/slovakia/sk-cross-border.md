@@ -1,7 +1,7 @@
 ---
 name: sk-cross-border
 description: "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% or 10% on individual profit dividends by profit period and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
-version: 0.4
+version: 0.5
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-11-14
@@ -282,4 +282,4 @@ expected:
 
 Not yet confirmed: treaty withholding rates for individual states and the operation of the particular Russian treaty article on the payment date, including any suspension and its Slovak effect. A country-specific treaty reduction is not asserted without that evidence.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

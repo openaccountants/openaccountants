@@ -1,7 +1,7 @@
 ---
 name: croatia-social-contributions
 description: "Croatian mandatory social contributions (doprinosi) for tax year 2026, for employees and the self-employed. Covers pension Pillar I 15% and Pillar II 5% (20% for Pillar I only), the 16.5% health contribution, the 2026 average wage of EUR 1,993 and the bases built on it (minimum EUR 757.34, maximum EUR 11,958 a month and EUR 143,496 a year for pension), the low-wage pension relief (EUR 300 cut up to EUR 700 gross, tapering to EUR 1,300), the first-time trainee and grandfathered first-job reliefs, the fixed monthly bases for sole traders (obrt), freelancers and flat-rate taxpayers, payment deadlines, JOPPD reporting, and fines. Trigger on: doprinosi, Croatia social security, mirovinsko I. stup II. stup, zdravstveno 16.5%, obrt doprinosi 2026, paušalist doprinosi, najviša osnovica 2026, olakšica 700 1300. Out of scope: income tax withholding and gross to net (croatia-payroll), annual income tax (croatia-income-tax), posted workers and treaties (hr-cross-border)."
-version: 0.3
+version: 0.4
 type: computation
 jurisdiction: HR
 tax_year: 2026
@@ -14,7 +14,7 @@ tier: 2
 domain: payroll
 ---
 
-# Croatia social contributions (tax year 2026) v0.3
+# Croatia social contributions (tax year 2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the consolidated Contributions Act in the Tax Administration (Porezna uprava) register and from Narodne novine, read on 23 and 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -187,4 +187,4 @@ expected:
 
 Not yet confirmed: that no amendment to the Contributions Act after NN 152/24, or to the 2026 Order after NN 150/25, applies in 2026 (the Tax Administration register lists none, and the fiskai.hr database lists no amendment to the Order; its 28 March 2026 date is a review date, not a new version); that the Obligations Act art. 29(2) rate for non-commercial relationships (5.40% from 1 July 2026) is the rate the Tax Administration charges on late tax and contributions, since no official text found ties them together (General Tax Act art. 130(1) points to a special regulation only); who must be a Pillar II member (Mandatory Pension Funds Act) was not read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -2,10 +2,10 @@
 name: gg-uk-treaty-employment-and-relief
 description: >
   Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides, mutual-agreement time limits and the published arbitration procedure with an official status discrepancy. Includes domestic treaty-credit and unilateral-relief limits, claim periods and later tax adjustments, with checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
-version: "1.3"
+version: "1.4"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -362,4 +362,4 @@ Additional source read on **28 October 2026**: [Revenue MAP Guidance issue8,12 F
 
 Source-cited draft. A qualified reviewer must establish the taxpayer's facts, domestic law and treaty entitlement before filing, paying or relying on relief.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

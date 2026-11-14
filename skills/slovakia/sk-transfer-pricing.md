@@ -1,7 +1,7 @@
 ---
 name: sk-transfer-pricing
 description: "Use this skill for Slovak transfer pricing (transferové oceňovanie) in tax year 2026. It covers dependent persons (závislá osoba, Income Tax Act § 2(n) to (r), the 25% test), significant controlled transactions (over EUR 10,000, or loans over EUR 50,000 principal), the arm's length adjustment in § 17(5), corresponding adjustments in § 17(6), methods and the median rule in § 18(1), full, basic and shortened documentation under Ministry of Finance guideline MF/012879/2025-724 and who keeps which, Table I of the corporate return, the 15-day deadline to hand documentation over, penalties and late payment interest under the Tax Code, country-by-country reporting (EUR 750 million) and APAs under § 18(4) to (10). Trigger on: transfer pricing Slovakia, transferové oceňovanie, závislá osoba, kontrolovaná transakcia, transferová dokumentácia, APA Slovakia. Out of scope: corporate tax in general (sk-corporate-income-tax), individual income tax (slovakia-pit), VAT (slovakia-vat-return)."
-version: 0.4
+version: 0.5
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ domain: transfer-pricing
 type: situation-rules
 ---
 
-# Slovakia: transfer pricing (2026) v0.4
+# Slovakia: transfer pricing (2026) v0.5
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on Slov-Lex, the guideline from the Ministry of Finance (mfsr.sk) and the return guidance from the Financial Directorate (financnasprava.sk), read on 23 October 2026 and supplemented by the 27 October 2026 primary checks below. It prepares working papers; it is not authority to file or pay.
 
@@ -310,4 +310,4 @@ expected:
 
 Not yet confirmed: whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -2,7 +2,7 @@
 name: fi-property-transfer-tax
 description: >
   Calculate Finnish transfer tax on direct real estate, buildings and housing or real-estate-company shares acquired in 2026. Establish the taxable consideration, property-company debt and ownership percentage before applying the statutory rate. Covers signing versus ownership-transfer deadlines, private and agent-assisted transactions, new construction, foreign buyers, indirect property interests, earnout consideration under the 2026 amendment, corrections, refunds and statutory late-filing sanctions. Trigger on varainsiirtovero, debt-free price, housing shares, property purchase, additional consideration or title registration. Annual real-estate tax is a separate liability, while rental income and disposal gains belong in the individual or corporate income-tax computation.
-version: 0.6
+version: 0.7
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -13,7 +13,7 @@ domain: income-tax
 type: computation
 ---
 
-# Finland property transfer tax v0.6
+# Finland property transfer tax v0.7
 
 ## Who this applies to
 
@@ -158,4 +158,4 @@ Not yet confirmed: none for the ordinary acquisition computation above. Reorgani
 [stock]: https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/
 [late]: https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/if-your-transfer-tax-return-or-your-payment-is-overdue/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
