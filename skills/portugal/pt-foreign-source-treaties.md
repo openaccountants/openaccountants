@@ -44,7 +44,7 @@ The law is the Código do IRS (CIRS), read article by article on the Portal das 
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| IRS bands: up to EUR 8,342 at 12.50%; over 8,342 to 12,587 at 15.70%; over 12,587 to 17,838 at 21.20%; over 17,838 to 23,089 at 24.10%; over 23,089 to 29,397 at 31.10%; over 29,397 to 43,090 at 34.90%; over 43,090 to 46,566 at 43.10%; over 46,566 to 86,634 at 44.60%; over 86,634 at 48.00% | Average rates for the whole band: 12.500%, 13.579%, 15.823%, 17.705%, 20.579%, 25.130%, 26.472%, 34.856% | 2026 | CIRS art. 68(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| IRS bands: up to EUR 8,342 at 12.20%; over 8,342 to 12,587 at 15.20%; over 12,587 to 17,838 at 20.70%; over 17,838 to 23,089 at 23.60%; over 23,089 to 29,397 at 30.60%; over 29,397 to 43,090 at 34.60%; over 43,090 to 46,566 at 43.10%; over 46,566 to 86,634 at 44.60%; over 86,634 at 48.00% | Average rates for the whole band: 12.200%, 13.212%, 15.416%, 17.277%, 20.136%, 24.732%, 26.103%, 34.658% | 2026 | CIRS art. 68(1), wording of Decreto-Lei 212/2026 (effect from 1 January 2026): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% above | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
 | Foreign capital income (dividends, interest) not withheld in Portugal | 28% autonomous rate; the resident may opt to aggregate | 2026 | CIRS art. 72(1)(d) and (13): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Capital income from a payer in a listed low-tax jurisdiction, not withheld | 35% | 2026 | CIRS art. 72(18)(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
@@ -121,9 +121,9 @@ Maria is resident in Portugal for all of 2026. Her only income is a pension from
 
 1. Specific deduction (art. 53): EUR 4,587.09. Taxable income: 24,000 - 4,587.09 = EUR 19,412.91. The pension is declared gross of the foreign tax (art. 22(6)).
 2. Minimum existence (art. 70) does not apply: gross income is above 2.2 x 14 x IAS = EUR 16,543.60 (art. 70(4)(a)).
-3. Tax by band: 19,412.91 is in band 4. Tax = 17,838 x 15.823% + (19,412.91 - 17,838) x 24.10% = 2,822.51 + 379.55 = EUR 3,202.06.
-4. Share of Portuguese tax on the foreign income: all her income is foreign, so EUR 3,202.06.
-5. Credit = lower of 1,800 and 3,202.06 = EUR 1,800. Tax after the credit: EUR 1,402.06, before deductions from the tax such as general family expenses.
+3. Tax by band: 19,412.91 is in band 4. Tax = 17,838 x 15.416% + (19,412.91 - 17,838) x 23.60% = EUR 3,121.58.
+4. Share of Portuguese tax on the foreign income: all her income is foreign, so EUR 3,121.58.
+5. Credit = lower of 1,800 and 3,121.58 = EUR 1,800. Tax after the credit: EUR 1,321.58, before deductions from the tax such as general family expenses.
 
 ```oa-check
 name: PT resident with EUR 24,000 foreign pension, art. 81 credit, 2026 bands
@@ -134,15 +134,15 @@ inputs:
   band3_top: 17838
 steps:
   - taxable: pension - specific_deduction
-  - tax: round(band3_top * 0.15823 + (taxable - band3_top) * 0.241, 2)
+  - tax: round(band3_top * 0.15416 + (taxable - band3_top) * 0.236, 2)
   - pt_share: tax
   - credit: min(foreign_tax, pt_share)
   - tax_after_credit: tax - credit
 expected:
   taxable: 19412.91
-  tax: 3202.06
+  tax: 3121.58
   credit: 1800.00
-  tax_after_credit: 1402.06
+  tax_after_credit: 1321.58
 ```
 
 ### Example 2: foreign dividends with too much tax withheld at source
@@ -177,7 +177,7 @@ expected:
 
 The EUR 4,300 is the total burden if the over-withholding is never recovered (3,000 abroad plus 1,300 in Portugal); with the refund it falls to EUR 2,800.
 
-**The aggregation option.** Suppose the dividends are João's only income and he aggregates them (art. 72(13)). The company is outside the EU and EEA, so art. 40-A does not halve them. Tax at the art. 68 bands on EUR 10,000: 8,342 x 12.50% + (10,000 - 8,342) x 15.70% = 1,042.75 + 260.31 = EUR 1,303.06. Credit = lower of 1,500 (treaty cap) and 1,303.06 = EUR 1,303.06. Portuguese tax due: nil, against EUR 1,300 at 28%. Aggregation also pulls in every other item of Category E he has (art. 22(5)), so compare both routes on all of it.
+**The aggregation option.** Suppose the dividends are João's only income and he aggregates them (art. 72(13)). The company is outside the EU and EEA, so art. 40-A does not halve them. Tax at the art. 68 bands on EUR 10,000: 8,342 x 12.20% + (10,000 - 8,342) x 15.20% = 1,017.72 + 252.02 = EUR 1,269.74. Credit = lower of 1,500 (treaty cap) and 1,269.74 = EUR 1,269.74. Portuguese tax due: nil, against EUR 1,300 at 28%. Aggregation also pulls in every other item of Category E he has (art. 22(5)), so compare both routes on all of it.
 
 ```oa-check
 name: PT resident, EUR 10,000 foreign dividends aggregated at 2026 bands, treaty cap 15%
@@ -185,13 +185,13 @@ inputs:
   dividends: 10000
   band1_top: 8342
 steps:
-  - pt_tax: round(band1_top * 0.125 + (dividends - band1_top) * 0.157, 2)
+  - pt_tax: round(band1_top * 0.122 + (dividends - band1_top) * 0.152, 2)
   - treaty_tax: dividends * 0.15
   - credit: min(treaty_tax, pt_tax)
   - pt_due: pt_tax - credit
 expected:
-  pt_tax: 1303.06
-  credit: 1303.06
+  pt_tax: 1269.74
+  credit: 1269.74
   pt_due: 0.00
 ```
 
@@ -213,7 +213,8 @@ expected:
 | CIRS art. 72, special rates (current; art. 72(10) and (12) revoked by Lei 82/2023) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
 | CIRS art. 72, wording to December 2023 (NHR 10% pension rate, art. 72(12)) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx | 2026-10-23 |
 | EBF art. 58-A, IFICI | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx | 2026-10-23 |
-| CIRS art. 68, 2026 bands (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-22 |
 | CIRS art. 22, aggregation and gross-up of foreign income | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-23 |
 | CIRS art. 40-A, 50% of qualifying dividends on aggregation | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx | 2026-10-23 |
