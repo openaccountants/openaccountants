@@ -1,148 +1,336 @@
 ---
 name: bc-eht
-description: Use this skill for British Columbia Employer Health Tax — replaced MSP premiums in 2019. Different structure from Ontario EHT. Triggers "BC EHT", "British Columbia Employer Health Tax", "BC payroll tax", "EHT BC $1.5M threshold", "eTaxBC EHT". ALWAYS read alongside canada-payroll.
+description: >
+  Calculate, reconcile and prepare British Columbia Employer Health Tax for
+  2026, including BC remuneration, permanent establishments, regular and
+  charitable employers, qualifying locations, associated-group allocations,
+  part-year thresholds, eTaxBC return fields, instalments and final payment.
+  Use for BC EHT, BC payroll health tax, the 1 million exemption, 1.5 million
+  threshold, charity 4.5 million band and eTaxBC Employer Health Tax returns.
+  Read with canada-payroll; Ontario employer health tax uses on-eht.
+version: 1.1
 jurisdiction: CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+category: payroll
 domain: payroll
+type: computation
 ---
 
-# BC Eht
+# British Columbia employer health tax v1.1
 
-## British Columbia — Employer Health Tax (EHT) — Skill v1.0
+## Scope
 
-The BC Employer Health Tax (EHT) is a payroll-based tax imposed on employers under the **Employer Health Tax Act, SBC 2018, c. 42**. It is administered by the BC Ministry of Finance and filed/paid through the **eTaxBC** portal. It replaced the per-employee Medical Services Plan (MSP) premiums that BC eliminated effective January 1, 2020.
+Prepare a calendar-2026 BC Employer Health Tax (EHT) computation, remuneration reconciliation, instalment schedule and eTaxBC return working paper. Amounts are CAD. The BC Ministry of Finance administers this employer-only tax under the Employer Health Tax Act, SBC 2018, chapter 42. It is separate from CRA payroll deductions, workers' compensation and Ontario EHT. This skill is **Built from the law** and **Not yet approved**. [Act sections 1 and 8](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [current overview](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview).
 
-**Important — do not confuse with Ontario EHT.** Ontario's EHT (Employer Health Tax Act, RSO 1990, c. E.11) has a $1,000,000 exemption with a 1.95% top rate and is filed with the Ontario Ministry of Finance. BC's EHT shares the top rate but has different thresholds, a different sliding-scale formula, a different return (eTaxBC), and a different instalment rule. Always confirm the province before computing or filing.
+Use [canada-payroll](../canada-payroll.md) for the payroll run and [on-eht](../ontario/on-eht.md) for Ontario establishments. Do not copy one province's exemption, association test, rate bands or return into the other. This method prepares proposed work; submission, certification, payment and posting require an authorized person's sign-off.
 
-## 1. Quick reference
+## Ask the client first
 
-**Quick reference table**
+1. Which calendar year, legal employer and nine-digit business number? Obtain all CRA payroll-account T4 Summaries and applicable T4/T4A slips, payroll registers, benefits and stock-option records, and the EHT account/assessment history. Confirm authorized eTaxBC access exists; do not ask for passwords in a public working paper.
+2. Where did the employer have actual or deemed permanent establishments, and on which dates? For each worker or officeholder, obtain the reporting/attachment facts, paying establishment and relevant former-employment facts. Employee residence or the CRA withholding province alone does not settle BC EHT.
+3. What ownership, control, partnership or trust relationships existed on December 31? Obtain the entire associated group's BC remuneration, operational days and signed exemption-allocation agreement, not only the entity's own payroll.
+4. Is the employer a statutory charitable or non-profit employer on the relevant year-end or last-BC-establishment date? Obtain legal status and government-entity exclusions. If claiming multiple locations, obtain leases, exclusive-use/occupancy and contiguous-premises facts, and employee attribution records.
+5. What was actual 2025 EHT, the reasonable 2026 estimate, instalments already received, prior-year credits and outstanding notices? Was there an amalgamation, acquisition, bankruptcy, cessation or account closure? Obtain the actual event date and instructions.
 
-| Item | 2025 value |
-| --- | --- |
-| Statute | Employer Health Tax Act, SBC 2018, c. 42 |
-| Administrator | BC Ministry of Finance (Income Taxation Branch) |
-| Filing portal | eTaxBC (https://www.etax.gov.bc.ca) |
-| Annual return due | **March 31** of the year following the calendar year |
-| Exemption threshold (regular employers) | BC remuneration ≤ **$1,000,000** → **fully exempt** |
-| Notch / sliding-scale band | **$1,000,001 – $1,500,000** → graduated up to 2.925% |
-| Flat-rate band | BC remuneration **> $1,500,000** → **1.95%** on **full** payroll |
-| Charities / non-profits exemption | **$1,500,000** per qualifying location |
-| Charities top rate | **1.95%** on full payroll once over the cap, with a separate 2.925% notch band |
-| Instalment trigger | Prior-year EHT **> $2,925** → quarterly instalments required |
-| Instalment due dates | June 15, September 15, December 15, and final balance March 31 |
+Missing facts remain open items. Do not default uncertain remuneration into tax, invent an exemption allocation, assume ordinary charity status or create an instalment obligation from a current projection alone.
 
-## 2. Required inputs + refusal catalogue
+## The method, step by step
 
-### 2.1 Required inputs
+### 1. Determine the employer, BC establishment and employee connection
 
-- **Required inputs list** — To compute and file BC EHT, gather: 1. Total BC remuneration for the calendar year — gross wages, salaries, bonuses, commissions, taxable benefits (T4 Box 14 equivalent), vacation pay, taxable allowances, and employer-paid stock option benefits for employees who report for work at a permanent establishment in BC (or are paid from BC if no PE). 2. Associated-employer group structure — a list of all corporations and entities under common control (within the meaning of s. 256 ITA, applied for EHT purposes) so the $1M exemption can be allocated. 3. Charitable or non-profit status — if applicable, evidence of registration (CRA registered charity number) and a list of qualifying locations. 4. Prior-year EHT liability — to determine whether quarterly instalments are required in the current year. 5. eTaxBC enrolment — the employer's BC EHT account number and eTaxBC logon credentials, or confirmation that registration is still pending.
+Apply the BC Act's own definitions and deeming rules. A permanent establishment includes a fixed place of business; section 4 also deems establishments for registered offices, certain employees/agents, owned or leased premises, substantial machinery/equipment and other stated cases. Reporting for work includes in-person attendance or reasonable attachment. Review duties, work location, hiring, supervision, instructions, records and equipment as relevant. [Act sections 1, 4 and 5](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [BC attachment guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration); [permanent establishments](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/permanent-establishment).
 
-### 2.2 Refusal catalogue — out of scope for v1.0
+For a current employee who reports at a BC establishment at any time in the year, section 3 can include the year's remuneration even where the person also reports elsewhere. The exception is where the commissioner is satisfied that reporting outside BC was for all or substantially all of the year. A worker who reports at no establishment is tested by payment from or through a BC establishment. Former employees have their own last-employment rule. Do not invent a federal Regulation 102 working-days allocation or use residence as the test. [Act sections 1 and 3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [BC remuneration](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration).
 
-- **R-BC-EHT-1** — Stock-option benefits where the §7 ITA timing (exercise vs. acquisition vs. CCPC deferral) is contested.
-- **R-BC-EHT-2** — Cross-border or non-resident employees where the BC permanent establishment test under s. 400 Reg. is in doubt.
-- **R-BC-EHT-3** — Anti-avoidance issues under s. 32 of the EHT Act (the general anti-avoidance rule for EHT).
-- **R-BC-EHT-4** — Audit, reassessment, or objection work — refer to a BC tax lawyer or designated practitioner.
-- **R-BC-EHT-5** — Bankruptcy, receivership, or wind-up year returns where partial-year proration of the exemption is required.
-- **R-BC-EHT-6** — Successor-employer rules where the exemption has already been used by a predecessor in the same calendar year.
+Officeholders, including directors, are within the employee definition; a director's BC residence alone does not determine the EHT allocation. Where a non-resident related employer supplies workers to a BC business, check the complete deemed-employer conditions in section 6. A foreign business is not automatically outside EHT. Hold a disputed establishment, attachment or section-6 conclusion for professional resolution before producing a final liability.
 
-## 3. Rate structure (2024 and later calendar years)
+### 2. Reconcile remuneration once, including taxable benefits correctly
 
-The Employer Health Tax Act, ss. 8–10, sets a three-tier structure for non-charitable employers based on total BC remuneration for the calendar year:
+The starting definition is payments, benefits and allowances included, or deemed included, in employment income under federal Income Tax Act sections 5, 6 or 7, including the corresponding non-resident rule. It is not simply cash wages, a T4 province field or an unadjusted T4 total. [BC Act sections 1 and 2](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [official inclusions and exclusions](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration).
 
-### 3.1 Tier 1 — Fully exempt
+| Payment or adjustment | Treatment to establish | Official source |
+|---|---|---|
+| Salary, wages, bonuses, commissions, taxable allowances, vacation and employer-paid tips | Include taxable employment remuneration in the applicable payment/deemed-payment year; establish BC connection separately | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Group life insurance, taxable stock options, employer RRSP contributions, EPSP/employee trust amounts | Apply actual taxable/deemed amount and timing; no general 25,000 life-insurance threshold. Do not add benefits already counted in T4 income again. | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Private health services plan, registered pension, SUB, deferred profit sharing and retirement compensation arrangements | Apply the stated exclusion for the employer contribution/premium and classify any separate taxable payment correctly | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Retiring allowances/severances, pension/annuity/superannuation to a retired employee, death benefits and dividends | Exclude the properly classified amount; an RRSP rollover is not a condition for excluding a retiring allowance. Separate ordinary wages, vacation and payment in lieu of notice from an actual retiring allowance. | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Expense reimbursement or non-taxable allowance | Establish the underlying facts and federal tax treatment. A label such as allowance or reimbursement is not enough. | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Plan contribution already included as remuneration | Do not count it again when later allocated/paid; reconcile the timing under section 2 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| First Nations/reserve or other disputed statutory exclusion | Obtain the specific status, business, work and situs facts and applicable official exclusion; do not infer it solely from identity or address | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
 
-- **Tier 1 rule** — BC remuneration ≤ $1,000,000 → EHT = $0. No return required if the employer is not registered. Registration is mandatory only once BC remuneration exceeds the threshold (or once instalments are triggered).  _(Employer Health Tax Act, ss. 8–10)_
+For the ordinary employer return, reconcile all T4 Summary line-14 amounts under the same business number to EHT line 100. Deduct qualifying non-BC remuneration at line 110; line 120 is the subtotal. Add only BC remuneration not already included in that total, for example eligible T4A/other-slip amounts, at line 130. Line 190 is line 120 plus line 130. Preserve a worker/payment-level bridge from payroll and slips to these adjustments. A stock-option benefit already in the line-14 total is not added again. [Official return instructions, Step 2](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-employers).
 
-### 3.2 Tier 2 — Notch / sliding scale
+### 3. Select the correct employer schedule and calendar year
 
-- **Tier 2 formula** — BC remuneration between $1,000,001 and $1,500,000. Formula: EHT = 5.85% × (BC remuneration − $1,000,000). This produces an effective rate that rises from 0% at $1,000,000 to 1.95% at $1,500,000, with a marginal rate of 5.85% inside the notch. The marginal rate of 5.85% over the $500,000 notch is the mechanism that delivers the often-quoted 2.925% effective rate at the top of the notch (i.e., $1,500,000 × 1.95% ≈ $29,250, which equals 5.85% × $500,000).  _(Employer Health Tax Act, ss. 8–10)_
+Determine charitable/non-profit status and associated-group status before applying the ordinary table. Use the group or location method below where required. The following ordinary rates apply for 2024 onward, including 2026, to a full-year unassociated regular employer.
 
-### 3.3 Tier 3 — Flat rate
+| Ordinary BC remuneration R | Annual EHT rate and amount | Authority and official source |
+|---|---|---|
+| R at most 1,000,000 | Zero | Act section 10: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview |
+| R greater than 1,000,000 and at most 1,500,000 | 5.85% x (R minus 1,000,000) | Act section 11: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview |
+| R greater than 1,500,000 | 1.95% x all R; no 1,000,000 deduction | Act section 8: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview |
 
-- **Tier 3 formula** — BC remuneration > $1,500,000. Formula: EHT = 1.95% × full BC remuneration (no exemption applied; the exemption is fully phased out at this level).  _(Employer Health Tax Act, ss. 8–10)_
+The 5.85% is the rate on the excess within the notch, not the effective rate on all remuneration. At R of 1,500,000, EHT is 29,250 and the effective rate is **1.95%**. The old 2.925% effective-rate statement was wrong. Cents above a boundary must not be lost by writing the next band as beginning at 1,000,001.
 
-### 3.4 Charity / non-profit schedule (s. 9 of the Act)
+If the employer has a BC establishment for only part of 2026, let D be the number of days with at least one BC establishment. Under section 12, prorate **both** the exemption E = 1,000,000 x D/365 and upper threshold U = 1,500,000 x D/365. Apply zero through E, 5.85% of R minus E through U, and 1.95% of all R above U. Do not prorate payroll itself again or give the full exemption to a new successor. Keep the exact working precision and reconcile to the portal's calculated fields. [Act section 12](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [part-year guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview).
 
-- **Charity/non-profit schedule** — Registered charities and qualifying non-profit employers compute EHT per qualifying location with a higher exemption: BC remuneration ≤ $1,500,000 per location → exempt. BC remuneration $1,500,001 – $4,500,000 per location → 2.925% × (remuneration − $1,500,000). BC remuneration > $4,500,000 per location → 1.95% × full remuneration. Each qualifying location is treated separately. This is the principal structural difference from the regular-employer schedule.  _(s. 9 of the Act)_
+### 4. Apply the associated-employer rules and actual allocation
 
-## 4. Exemption uplift — 2024 budget change
+For 2026, test association on **December 31**, using federal section 256 as modified by BC Act sections 13-16. The BC rules extend to individuals, partnerships and trusts; federal elections or exclusions cannot simply be imported. Charitable/non-profit employers are excluded from ordinary group sharing, but links through a charity can still connect two ordinary employers. Anti-avoidance rules can also deem association. [Act sections 13-16 and 53](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [group guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers).
 
-- **2024 exemption uplift** — The exemption threshold for regular employers was raised from $500,000 to $1,000,000 for the 2024 and later calendar years, and the notch band was extended from $500,001–$1,500,000 to $1,000,001–$1,500,000, as announced in the BC Budget 2024 (Budget and Fiscal Plan 2024/25 – 2026/27, tabled February 22, 2024) and enacted through the Budget Measures Implementation Act, 2024. Effect: many small BC employers that paid EHT in 2023 are fully exempt from 2024 onward. The change does not affect the top-tier 1.95% rate or the $1.5M flat-rate threshold. The charity schedule was not changed by Budget 2024. When preparing a 2024 or 2025 return, do not use pre-2024 thresholds. When preparing a 2023 return (e.g., a late filing or amendment), use the $500,000 exemption and the $500,001 – $1,500,000 notch.  _(BC Budget 2024 (Budget and Fiscal Plan 2024/25 – 2026/27), tabled February 22, 2024; Budget Measures Implementation Act, 2024)_
+Combine BC remuneration for the associated employers and establish group BC-establishment days. For a full-year group:
 
-## 5. Calculation — what counts as BC remuneration
+| Group BC remuneration G | Entity calculation | Official source |
+|---|---|---|
+| G at most 1,000,000 | No tax under section 17 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers |
+| G greater than 1,000,000 and at most 1,500,000 | If section 18 conditions are met, each member pays 5.85% of its remuneration above its valid allocated exemption, or zero if it is within that exemption | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers |
+| G greater than 1,500,000 | Each member pays 1.95% of its own full BC remuneration; the group does not keep the exemption | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers |
 
-- **BC remuneration inclusions** — BC remuneration is defined in s. 1 of the EHT Act and largely tracks the federal T4 reporting concept. It includes: Gross wages, salaries, and commissions paid in the calendar year. Bonuses and incentive pay. Vacation pay, statutory holiday pay, and termination/severance pay (the cash portions; retiring allowances rolled into RRSPs are excluded to the extent excluded for T4 purposes). Taxable benefits reported on T4 — including the standby charge and operating benefit, group term life insurance over $25,000, employer-paid group health premiums treated as taxable, and most non-cash benefits. Employer contributions to an Employee Profit Sharing Plan (EPSP). Stock-option benefits under §7 ITA (timing follows the federal rules). Directors' fees paid to BC-resident directors.  _(s. 1 of the EHT Act)_
-- **BC remuneration exclusions** — It excludes: Pension contributions to a registered pension plan (RPP). Employer contributions to an RRSP that are not taxable to the employee in the year (rare — most employer RRSP contributions are taxable and therefore included). Reimbursements of bona fide business expenses. Most non-taxable allowances (e.g., reasonable per-kilometre motor-vehicle allowances within the CRA prescribed rate). Remuneration paid to employees who do not report for work at a BC permanent establishment and are not paid from a BC PE.  _(s. 1 of the EHT Act)_
-- **Allocation rule** — Allocation rule — when an employee reports for work at PEs in more than one province during the year, allocate remuneration to BC on the same basis as federal Regulation 102 source-deduction allocation: by working days at each PE, or by a reasonable method if multiple PEs are used.  _(federal Regulation 102)_
+Where every member is part-year, section 17/18 uses the days on which **at least one** member had a BC establishment to prorate the group exemption and upper threshold. An individual member's allocation is also limited by its own establishment-day maximum. Allocate no more than the group maximum and no more than each member's statutory maximum. Preserve every member's agreed share and verify the totals.
 
-## 6. Filing — eTaxBC return and instalments
+Section 18's notch relief is conditional on the allocation-agreement requirements. Guidance implements the annual filing through the **Association Summary** and says to retain the written allocation agreement for request rather than attach it to the annual return. Keep that evidence and satisfy the commissioner's required process. Do not replace these steps with a supposed Schedule B or an invented ministerial zero-allocation decision. Nor treat missing agreement as permission to charge 5.85% from dollar one: section 18 relief and section 8's baseline rate are distinct. Resolve an incomplete allocation before finalizing the return. [Act section 18](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [retained agreement](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers); [Association Summary instructions](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-associated-employers).
 
-### 6.1 Annual return
+### 5. Apply the charitable/non-profit schedule and location tests
 
-- **Annual return rules** — The annual EHT return is filed electronically through eTaxBC. There is no paper return for regular employers; charities may file by paper on request. Due date: March 31 of the year following the calendar year (so the 2025 return is due March 31, 2026). Late filing penalty: greater of $100 and 5% of the unpaid balance, plus 1% per full month for up to 12 months (s. 50 of the Act). Interest accrues on unpaid amounts at the BC prescribed rate, compounded daily.  _(s. 50 of the Act)_
+A qualifying employer is a registered charity or an organization described in federal Income Tax Act paragraphs 149(1)(e), (g), (i), (j), (k) or (l), subject to BC Act exclusions including the government reporting entity. Do not reduce non-profit eligibility to paragraph (l) alone. Status is tested on the last day of the year or applicable last BC-establishment day. [Act sections 1, 19 and 24](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042).
 
-### 6.2 Quarterly instalments
+For an eligible employer outside the multiple-qualifying-location division, apply sections 20-22. Where there are at least two qualifying locations, apply sections 23-30 and sum the location liabilities. A qualifying location requires the exclusive right to occupy premises, sole use/occupancy by the employer and the Act's treatment of contiguous premises. Merely having separate addresses or an employee at a place does not establish separate exemptions. Attribute each worker under section 25: primarily reporting location for multiple-location workers, or a reasonable location allocation for a worker reporting nowhere, ensuring all BC remuneration is attributed. Do not freely split one employee's pay to create exemptions.
 
-- **Quarterly instalment rule** — If the prior calendar year's EHT exceeded $2,925, the employer must remit quarterly instalments in the current year. Each instalment equals one-quarter of the lesser of: The prior year's EHT, or An estimate of the current year's EHT (if the employer chooses the current-year estimate method and accepts the risk of a deficiency interest charge). Instalment due dates: Q1: June 15, Q2: September 15, Q3: December 15, Final balance: March 31 with the annual return. An employer below the $2,925 prior-year threshold pays the full liability with the annual return; no instalments are required.
+| Full-year eligible employer, or qualifying location under the multiple-location method | EHT rate and amount | Official source |
+|---|---|---|
+| R at most 1,500,000 | Zero | Act sections 20/27: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| R greater than 1,500,000 and at most 4,500,000 | 2.925% x (R minus 1,500,000) | Act sections 21/28: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| R greater than 4,500,000 | 1.95% x all R | Act sections 8/29: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
 
-### 6.3 Registration
+Under sections 22/30, prorate the 1,500,000 and 4,500,000 thresholds for part-year BC establishment using the prescribed employer BC-establishment days/365. Do not automatically use each location's opening date as a separate proration rule. For multiple locations, sum their resulting tax; do not apply the ordinary 1,000,000 exemption as well. Obtain a ruling where exclusive occupancy, location grouping or attribution is disputed.
 
-- **Registration requirement** — Registration through eTaxBC is required once BC remuneration exceeds the exemption threshold for the year, or once instalments are triggered. Late registration does not waive the obligation to file and pay for the year in which the threshold was first exceeded.
+**Zero tax is not always no return.** A multiple-qualifying-location charity with aggregate BC remuneration above 1,500,000, or the section-30 prorated amount, has the separate registration/return obligation under sections 31/32 even if each location owes zero. The three-location example below deliberately preserves that distinction.
 
-## 7. Charities and non-profits
+### 6. Determine actual instalments and the final balance
 
-- **Charity/non-profit definitions and treatment** — A "qualifying charity" for EHT is a registered charity under s. 248(1) ITA. A "qualifying non-profit" is an entity described in paragraph 149(1)(l) ITA. For these employers: The exemption is $1,500,000 per qualifying location (s. 9 of the EHT Act). A "qualifying location" is a permanent establishment of the charity in BC that has at least one employee reporting for work there in the year. A charity with three BC locations and $2M of remuneration spread across them (say, $700k / $700k / $600k) is fully exempt because each location is under $1.5M. The same charity with $4M at a single location pays EHT on the band $1.5M–$4M at 2.925%, plus the standard rules above $4.5M. This per-location treatment is the principal reason charities are addressed by a separate schedule rather than the regular sliding scale.  _(s. 248(1) ITA; paragraph 149(1)(l) ITA; s. 9 of the EHT Act)_
+The trigger is **2025 EHT greater than 2,925** for 2026 instalments. The Act does not create that obligation merely because the 2026 projection exceeds 2,925. Once triggered, there are three instalments, each at least 25% of the lesser of actual preceding-year tax and reasonably estimated current-year tax. The remaining balance is due with the annual return. An estimate that understates both actual current and prior liabilities can cause deficiency interest. Reconcile payments already made before changing the estimate midyear. [Act sections 41 and 62](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [Regulation section 3](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/268_2018); [payment guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay).
 
-## 8. Multi-employer groups — associated employers
+| 2026 ordinary obligation | Date | Official source |
+|---|---|---|
+| First, second and third instalments, if required | June 15, September 15 and December 15, 2026 | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay |
+| Registration if this is the first required year | December 31, 2026; apply the separate charity condition too | Act section 31: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview |
+| Annual 2026 return and remaining payment | March 31, 2027 | Act sections 32/42: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview |
+| Deadline falling on weekend or BC statutory holiday | Next business day under official filing/payment guidance | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay |
 
-- **Associated employer rules** — Under s. 11 of the EHT Act, associated employers must share a single $1,000,000 exemption for the calendar year. "Associated" is defined by reference to s. 256 ITA (with EHT-specific modifications), so the federal CCPC small-business-deduction sharing concept is the relevant starting point. Mechanics: 1. The associated group files Schedule B (Allocation of Exemption Amount Among Associated Employers) with eTaxBC, allocating the $1,000,000 across members. 2. Any unallocated amount is lost; the allocation cannot exceed $1,000,000 in aggregate. 3. If members fail to file an allocation, the Minister may allocate $0 to each member by default, exposing the entire group to tax from the first dollar of payroll. 4. The notch and flat-rate thresholds are applied to the combined BC remuneration of the group only for purposes of determining which schedule applies; the tax itself is computed entity-by-entity using each member's allocated exemption. For charity groups, each member's per-location $1.5M exemption is not aggregated; the associated-employer rule applies only to the regular-employer schedule.  _(s. 11 of the EHT Act; s. 256 ITA)_
+These ordinary 2026 dates are weekdays. March 31 is the final balance, not a fourth equal instalment. Use eTaxBC or the stated bank/financial-institution method, the correct EHT account and actual received/payment evidence. A CRA payroll remittance does not discharge BC EHT.
 
-## 9. Historical context — replacement of MSP premiums
+### 7. Prepare, approve, file and reconcile the return
 
-Until December 31, 2019, BC funded a significant portion of provincial health care through MSP premiums — a flat per-person monthly premium paid mostly by individuals, with many employers paying the premium as a taxable benefit. The 2018 BC Budget announced a two-step transition: January 1, 2018 — MSP premiums halved. January 1, 2019 — EHT introduced at the rates above (with the original $500k exemption). January 1, 2020 — MSP premiums eliminated entirely. For the 2019 calendar year only, employers paid both half-rate MSP and the new EHT, which is why 2019 transition workpapers often look anomalous on review. From 2020 forward, EHT is the only BC health-care payroll tax. The 2024 exemption uplift to $1,000,000 is the most recent material change.
+Determine the registration/return requirement under sections 31/32 rather than assuming that registration itself proves current tax is payable. Prepare eTaxBC registration when required; arrange authorized account access separately. The law requires electronic returns under section 38; there is no verified charity paper-return exception. [Act sections 31/32/38](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042).
 
-## 10. Worked example — Vancouver tech company, $2,000,000 payroll
+For an ordinary unassociated employer, use the official eTaxBC steps in this order. The associated method adds the Association Summary; use the relevant charity workflow where that division applies. [Ordinary return instructions](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-employers); [associated return instructions](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-associated-employers).
 
-Facts: A Vancouver-based software company, sole BC permanent establishment. Calendar 2025 total BC remuneration: $2,000,000 (T4 Box 14 plus taxable benefits, with stock-option benefits of $150,000 under §7 ITA included). Not associated with any other employer. Not a charity. Prior-year (2024) EHT liability: $9,750 (so instalments are required in 2025).
+1. In the authorized account, select **Employer Health Tax**, then **File Return** for the correct period. Check the default period/due date, amalgamation predecessor/successor, December-31 association, final-year and BC-establishment declarations.
+2. Reconcile BC remuneration at lines 100, 110, 120, 130 and 190 as in Method 2. Do not enter an assumed tax province or add already-included benefits.
+3. Check ordinary exemption-eligibility fields: line 200 days, line 202 upper threshold, line 203 BC remuneration, line 204 exemption limit and line 205 available exemption. For a group, enter all required members, business numbers, remuneration, days and agreed shares in the Association Summary; compare both individual and group maxima.
+4. Reconcile line 300 remuneration, line 310 applied exemption, line 320 taxable remuneration, line 700 rate and line 770 tax. Check the selected branch before relying on portal arithmetic.
+5. Reconcile line 840 instalments received, line 842 prior-year overpayment, line 844 subtotal and line 846 tax due or overpaid. Investigate a missing payment/credit instead of manually deducting it twice. Select permitted carryforward/refund treatment for an overpayment.
+6. Give the complete working paper and unresolved items to the authorized person before certification/submission. Certification identifies the signer's first name, last name and position and requires acceptance of the displayed statement. After authorized submission, retain the confirmation number and filed return; arrange the separately authorized payment and retain its reference/receipt.
+7. Compare the Notice of Assessment with the calculation, account and general ledger. Record any explanation or correction. Preserve an amendment trail and use the actual voluntary-disclosure/waiver/objection route where relevant; do not silently alter an already filed return.
 
-Step 1 — Determine the schedule.
-$2,000,000 > $1,500,000 → Tier 3 (flat-rate band).
+EHT is an employer expense, not an extra employee deduction. Reconcile the tax expense/payable, instalment payments and final balance in the accounts; propose journals/imports for human approval. Official BC guidance states business-income deductibility. Use the employer's applicable income-tax return and accounting policy; do not invent a Canadian corporate-return skill slug or post to a read-only ledger. [BC overview](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview); [canada-bookkeeping](../canada-bookkeeping.md).
 
-Step 2 — Compute the tax.
-EHT = 1.95% × $2,000,000 = $39,000.
+## Boundary and exception table
 
-Step 3 — Instalments.
-Prior-year EHT ($9,750) > $2,925 → quarterly instalments are required. Using the prior-year safe-harbour:
-- June 15, 2025: $2,437.50
-- September 15, 2025: $2,437.50
-- December 15, 2025: $2,437.50
-Total instalments paid by year-end: $7,312.50.
+| Situation | Required treatment | Official source |
+|---|---|---|
+| Uncertain employee, taxable benefit, option timing or former-employee amount | Resolve classification/timing before final computation; no automatically taxable default | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration |
+| Foreign/remote work or disputed BC establishment | Apply BC attachment, deemed establishment/employer and all-substantially-all exception; obtain resolution where disputed | Act sections 1-6: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration |
+| Uncertain ownership, charity status or location eligibility | Obtain evidence; do not manufacture either relief or an inflated liability from missing facts | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers |
+| Association arranged to reduce EHT | Check specific section 16(3)(d) and general section 53 anti-avoidance, not the old section-32 reference | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Bankruptcy, last BC establishment ceases, insolvency or winding up | Check sections 33-40 special returns, notices and distribution certificate; ordinary March 31 may not apply | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Amalgamation, acquisition or successor | Identify the predecessor/successor and dates; prorated/new-employer treatment and ministry instructions need the actual transaction, not an assumed reused exemption | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-employers ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay |
+| Audit, reassessment, objection or disputed coverage | Preserve notice dates and refer the disputed matter to an appropriately experienced practitioner; do not treat this ordinary computation as a resolved appeal | https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay ; https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Old increased-employment credit in the Act | Part 2.1 refers to 2020 base/qualifying periods and a December 31, 2021 application deadline; it is not a 2026 payroll credit | Act sections 30.01/30.06: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
 
-Step 4 — Final balance.
-Filed with the annual return on March 31, 2026:
-Balance owing = $39,000 − $7,312.50 = $31,687.50.
+## Worked cases
 
-Step 5 — Reasonableness check.
-At $2M flat-band payroll the effective rate is 1.95%. Output of $39,000 matches 1.95% × $2,000,000. No reconciliation difference.
+### Case 1. Ordinary full-year boundaries and effective rate
 
-## 11. Conservative defaults
+Assume an unassociated regular employer with a full-year BC establishment and an already reconciled remuneration base. The charity and part-year methods do not apply. Sources: [Act sections 8-12](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042) and [ordinary formulas](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview).
 
-- **Conservative defaults list** — When inputs are ambiguous, apply the following defaults and flag them in the reviewer notes: 1. Permanent establishment — if it is unclear whether an employee's remuneration is BC remuneration, default to including it and flag for review. 2. Stock-option benefits — default to the §7 ITA inclusion year shown on the T4; do not override the federal timing. 3. Associated employers — if the corporate group structure is unclear, default to $0 allocated exemption for the entity being prepared and flag for review. Do not assume an exemption is available without confirming the allocation. 4. Charity status — do not apply the charity schedule unless the entity has confirmed registered-charity or paragraph 149(1)(l) status. Default to the regular schedule. 5. Instalment requirement — if the prior-year liability is not in hand, assume instalments are required if the current-year projection exceeds $2,925. 6. Late registration — if registration was late, compute tax from the first dollar over the threshold and flag the late-filing penalty exposure. 7. 2023 vs. 2024+ thresholds — confirm the calendar year before selecting the exemption amount; never apply the $1,000,000 threshold to a pre-2024 year.
+```oa-check
+name: 2026 BC regular employer exemption and notch boundaries
+inputs:
+  exempt: 1000000
+  middle: 1200000
+  upper: 1500000
+  above: 1500000.01
+steps:
+  - zero: max(0, exempt - 1000000) * 0.0585
+  - middle_tax: round((middle - 1000000) * 0.0585, 2)
+  - upper_tax: round((upper - 1000000) * 0.0585, 2)
+  - upper_effective_percent: upper_tax / upper * 100
+  - above_tax: round(above * 0.0195, 2)
+expected:
+  zero: 0
+  middle_tax: 11700
+  upper_tax: 29250
+  upper_effective_percent: 1.95
+  above_tax: 29250.00
+```
 
-## 12. Sources
+### Case 2. Vancouver employer, two-million base, instalments and final balance
 
-- Employer Health Tax Act, SBC 2018, c. 42 — particularly ss. 1 (definitions), 8 (regular-employer schedule), 9 (charity/non-profit schedule), 10 (notch and flat-rate computation), 11 (associated employers), 32 (anti-avoidance), and 50 (penalties).
-- BC Budget 2024 — Budget and Fiscal Plan 2024/25 – 2026/27, tabled February 22, 2024, announcing the exemption uplift from $500,000 to $1,000,000.
-- Budget Measures Implementation Act, 2024 (SBC 2024) — enacting the threshold change.
-- BC Ministry of Finance — Employer Health Tax guidance pages (gov.bc.ca/employerhealthtax), including the Notice 2024-001 series describing the exemption uplift and rate schedule.
-- eTaxBC — filing portal and registration guidance (etax.gov.bc.ca).
-- Medicare Protection Amendment Act, 2019 — eliminating MSP premiums effective January 1, 2020 (historical context only).
-- Income Tax Act (Canada), s. 256 — associated-corporation rules applied by reference for EHT purposes.
-- Income Tax Act (Canada), s. 248(1) and para. 149(1)(l) — definitions of registered charity and qualifying non-profit, applied by reference.
+The original example is preserved for 2026. All T4 Summary totals under one business number are 2,250,000, including a taxable 150,000 stock-option benefit already counted once. Qualifying non-BC remuneration is 250,000; no additional BC amount is missing from the summaries. The reconciled BC base is 2,000,000. The employer is ordinary, unassociated and full-year. Actual 2025 EHT is 9,750; it chooses the prior-year basis with no credits/refunds. Its three 2026 instalments and March 31, 2027 balance are separate. [Return reconciliation](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-employers); [instalment rules](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay).
 
-Companion skills — always read alongside canada-payroll (federal T4 and source-deduction context) and, where the employer has Ontario PEs as well, the Ontario EHT skill so the two regimes are not conflated.
+```oa-check
+name: 2026 Vancouver payroll EHT and prior-year instalment reconciliation
+inputs:
+  t4_total: 2250000
+  outside_bc: 250000
+  additional_bc: 0
+  prior_tax: 9750
+steps:
+  - bc_base: t4_total - outside_bc + additional_bc
+  - annual_tax: round(bc_base * 0.0195, 2)
+  - instalment: round(prior_tax * 0.25, 2)
+  - three_instalments: instalment * 3
+  - final_balance: annual_tax - three_instalments
+expected:
+  bc_base: 2000000
+  annual_tax: 39000
+  instalment: 2437.50
+  three_instalments: 7312.50
+  final_balance: 31687.50
+```
+
+### Case 3. Charity locations: zero tax still requires filing
+
+Assume actual statutory charity status, full-year BC establishment, three proven qualifying locations and remuneration attributed under section 25: 700,000, 700,000 and 600,000. All three location liabilities are zero. Aggregate remuneration is 2,000,000, so sections 31/32 still require registration and the annual return. A separate eligible single-location charity with 4,000,000 pays 73,125; at 4,500,000 it pays 87,750; above that threshold the full-base branch applies. These are not ordinary-employer calculations. [Act sections 19-32](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042).
+
+```oa-check
+name: 2026 BC charity location tax and aggregate remuneration
+inputs:
+  a: 700000
+  b: 700000
+  c: 600000
+  single: 4000000
+  upper: 4500000
+  above: 5000000
+steps:
+  - aggregate: a + b + c
+  - location_total_tax: max(0, a - 1500000) * 0.02925 + max(0, b - 1500000) * 0.02925 + max(0, c - 1500000) * 0.02925
+  - single_tax: round((single - 1500000) * 0.02925, 2)
+  - upper_tax: round((upper - 1500000) * 0.02925, 2)
+  - above_tax: round(above * 0.0195, 2)
+expected:
+  aggregate: 2000000
+  location_total_tax: 0
+  single_tax: 73125
+  upper_tax: 87750
+  above_tax: 97500
+```
+
+### Case 4. Associated group with a valid allocation
+
+Two ordinary full-year employers, associated on December 31, have BC remuneration of 800,000 and 400,000. The group is in the notch. A valid agreement allocates 700,000 and 300,000, within all statutory limits. Each files its own return and completes the Association Summary. A missing agreement or a group above 1,500,000 would require a different analysis. [Act sections 17-18](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [group guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers).
+
+```oa-check
+name: 2026 BC associated employers valid shared exemption
+inputs:
+  a_pay: 800000
+  b_pay: 400000
+  a_share: 700000
+  b_share: 300000
+steps:
+  - group_pay: a_pay + b_pay
+  - allocated: a_share + b_share
+  - a_tax: round(max(0, a_pay - a_share) * 0.0585, 2)
+  - b_tax: round(max(0, b_pay - b_share) * 0.0585, 2)
+  - group_tax: a_tax + b_tax
+expected:
+  group_pay: 1200000
+  allocated: 1000000
+  a_tax: 5850
+  b_tax: 5850
+  group_tax: 11700
+```
+
+### Case 5. Part-year ordinary employer: prorate both thresholds
+
+An ordinary unassociated employer first has a BC establishment on October 20, 2026 and keeps it through December 31: 73 days. Actual BC remuneration is 250,000. The prorated exemption is 200,000 and upper threshold 300,000, placing it in the notch rather than exempt under the full-year million. [Act section 12](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042).
+
+```oa-check
+name: 2026 BC ordinary employer 73-day establishment
+inputs:
+  days: 73
+  bc_pay: 250000
+steps:
+  - exemption: 1000000 * days / 365
+  - upper: 1500000 * days / 365
+  - tax: round((bc_pay - exemption) * 0.0585, 2)
+expected:
+  exemption: 200000
+  upper: 300000
+  tax: 2925
+```
+
+### Case 6. Late-return penalty is based on unpaid tax, with separate repeat conditions
+
+For an ordinary section-54 late return, assume tax unpaid at the original due date is 10,000 and the earlier filing/assessment endpoint leaves three whole months. The penalty is 800, not a greater-of-100 rule. For a separate section-55 case, assume all three statutory conditions are established: the original late return, failure to comply with the later filing demand and a section-54 penalty in one of the preceding three calendar years. On the same base and three whole months, its enhanced formula gives 1,600. Interest is separate; this example does not apply the repeat formula merely because a previous return was late. [Act sections 54-55](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042).
+
+```oa-check
+name: 2026 BC ordinary and qualifying repeated late-return penalty
+inputs:
+  unpaid: 10000
+  whole_months: 3
+steps:
+  - ordinary: round(unpaid * 0.05 + unpaid * 0.01 * min(whole_months, 12), 2)
+  - qualifying_repeat: round(unpaid * 0.10 + unpaid * 0.02 * min(whole_months, 20), 2)
+expected:
+  ordinary: 800
+  qualifying_repeat: 1600
+```
+
+## Filing and payment
+
+Apply Method 7 and the actual year/account. Keep a checklist for tax liability, separate registration/return duty, instalment trigger, each payment and final return. A multiple-location charity can owe no tax and still have to file. An ordinary employer with no statutory return obligation may follow guidance recommending a nil return to keep an account active where future liability is expected; that recommendation is not a universal statutory obligation for every registered employer. Account closure and loss of the last BC establishment are different events. [Act sections 31-38](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042); [nil/final-return guidance](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay).
+
+| Special event or consequence | Rule and conditions | Official source |
+|---|---|---|
+| Bankruptcy | If the ordinary return rule applies, return for the pre-bankruptcy portion within 90 days; trustee appointment also has its own notice/distribution requirements | Act sections 33, 35, 39 and 40: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Employer ceases to have a BC establishment | Applicable final return within 90 days of cessation, rather than automatically next March 31 | Act section 34: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay |
+| Ordinary late return | Section 54: 5% of tax unpaid at the due date plus 1% of that amount for each whole month, capped at 12 months, ending at the earlier of filing/assessment. No general 100 minimum in this formula. | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Repeat late return | Section 55: 10% plus 2% per whole month up to 20 only if its late-return, later demand-failure and prior-three-year penalty conditions all apply | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Missing required information | Section 56 has a separate 100-per-failure rule; do not import it as the minimum ordinary late-return penalty | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 |
+| Underpaid instalment | Interest uses the statutory actual-current/prior comparison and deficiency period, not a guessed flat penalty | Act section 62: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay |
+| Tax/penalty interest | Use the actual prescribed rate for each relevant period. Interest is calculated daily and compounded monthly, not compounded daily. Review the specific section-67 full-payment-after-notice rule where applicable. | Act sections 63-67: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 ; Regulation section 2: https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/268_2018 |
+
+Do not attach a universal late-filing penalty solely because registration was late. Quantify the actual return/payment failure and keep the notice and payment dates. Waiver, voluntary disclosure, amendment, reassessment and objection require the facts and official process for that case. The ordinary examples do not settle a dispute or override a notice.
+
+## When to refuse or refer
+
+Do not give a final liability where necessary facts or authority remain unresolved: disputed BC attachment/establishment, non-arm's-length foreign supply, stock-option timing, reserve exclusions, charity/location eligibility, association/avoidance, successor treatment or the actual relief/demand conditions. State the missing issue and the effect on the computation. Route a substantive dispute, audit or appeal to an appropriately experienced practitioner. Ordinary part-year/association rules above remain usable when their required facts are established; do not replace them with arbitrary conservative defaults.
+
+For historical work, select the historical year before any formula. EHT started January 1, 2019; MSP premiums were halved from January 1, 2018 and eliminated January 1, 2020, leaving a 2019 overlap. The regular-employer exemption increased to 1,000,000 from 2024, with a 5.85% notch. Through 2023, the ordinary exemption was 500,000 and the notch was 2.925% of excess up to the 1,500,000 upper threshold; above it, 1.95% of full remuneration. Do not label either old rate as a 2026 method. [Historical EHT overview](https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/employer-health-tax-overview-for-2023-and-prior-years); [official MSP transition](https://news.gov.bc.ca/releases/2018FIN0005-000238); [2018 Budget speech](https://bcbudget.gov.bc.ca/2018/aria/budget-speech.htm).
+
+## Sources
+
+Read on **2026-11-13**. The Act and Regulation were downloaded and relevant operative sections read locally; the downloaded consolidations are current to November 10, 2026. Some ministry pages returned 502 or closed the direct connection; their official indexed text was read for the identified sections below. A failed fetch alone is not evidence of a rule. Quotes and old-topic destinations are in the country audit ledger.
+
+| Source | What was read | Read date |
+|---|---|---|
+| https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/18042 | Read for act sections 1-30, 31-42, 53-56, 62-68 and historical-credit definitions/application limit; downloaded operative text, current November 10,2026 | 2026-11-13 |
+| https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/268_2018 | Read for regulation sections 2-3: monthly compounding and prescribed instalment trigger; current November 10,2026 | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview | Read for official indexed ordinary 2024-onward formulas, days/365, business deductibility and 2026 dates; direct fetch failed | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/determining-remuneration | Read for official indexed taxable remuneration, inclusions/exclusions, stock-option treatment and payment timing; direct fetch failed | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration | Read for opened current BC remuneration/reporting/attachment and residence distinction, with official indexed full text | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-remuneration/permanent-establishment | Read for official indexed fixed/deemed establishment definitions, read with actual Act section 4 | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-employers | Read for official indexed declarations, lines 100-846, certification and confirmation instructions | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-associated-employers | Read for official indexed association modifications, proration, agreement retention, individual returns and anti-avoidance | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay/filing-associated-employers | Read for official indexed Association Summary, member shares/days and certification; direct fetch failed | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/eht-file-pay | Read for official indexed prior-year trigger, three instalments/estimate changes, nil/final returns, next-business-day rule, payment and assessment | 2026-11-13 |
+| https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview/employer-health-tax-overview-for-2023-and-prior-years | Read for official indexed pre-2024 exemption/notch/full-base and start date | 2026-11-13 |
+| https://news.gov.bc.ca/releases/2018FIN0005-000238 | Read for opened 2018 official news backgrounder: 2018 half-premiums, 2019 EHT and 2020 MSP abolition | 2026-11-13 |
+| https://bcbudget.gov.bc.ca/2018/aria/budget-speech.htm | Read for opened historical Budget 2018 MSP section, not treated as current tax legislation | 2026-11-13 |
+
+**Not yet confirmed:** the live authenticated 2026 eTaxBC interface was not inspected and may change field presentation; use its current declarations and the official instructions. No current professional approval is claimed. Disputed worker/location/association status, exact assessment interest and complex acquisition/insolvency facts require the actual records and current authority process. Failed standalone charity/registration/form-page attempts are not treated as source reads; the rules stated here rest on the opened Act or identified actual guidance.
