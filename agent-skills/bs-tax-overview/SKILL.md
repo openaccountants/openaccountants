@@ -40,7 +40,7 @@ There is no income tax of any kind: none on individuals, none on company profits
 
 - **VAT** is charged on almost all goods and services supplied or imported for use in The Bahamas.
 - **Business licence tax** is charged on turnover (all business revenue, without deductions), not profit.
-- **NIB** is charged on insurable wages or income up to a ceiling.
+- **NIB** is charged on insurable wages or income up to a ceiling: BSD 810 a week (BSD 3,510 a month) to June 2026, BSD 830 a week (BSD 3,597 a month) from 1 July 2026 (NIB, 2026 biennial adjustments notice).
 - **Real property tax** is charged on the assessed value of property by class.
 - **Stamp duty** applies to instruments under the Stamp Act 2024; from 1 July 2026 a Grand Bahama Port licensee counts as a "business" for it, and the sale of a business is charged on property other than land.
 
@@ -121,6 +121,7 @@ At BSD 1.5 million both owners pay BSD 11,250. From BSD 1 million upwards the tw
 
 | Source | URL | Read on |
 |---|---|---|
+| NIB, 2026 biennial adjustments notice: read for the BSD 830 weekly and BSD 3,597 monthly ceilings from 1 July 2026 | https://www.nib-bahamas.com/uploads/2026_biennial_adjustments_f9ad1d917d.pdf | 2026-11-14 |
 | Bahamas legislation, Acts by year 2026: read for the 2026 tax Acts and to confirm no income, capital gains or inheritance tax Act | https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html | 2026-11-14 |
 | VAT (Amendment) Act 2025: read for the 0%, 5% and 10% rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2025/07/VALUE-ADDED-TAX-AMENDMENT-ACT-2025.pdf | 2026-11-14 |
 | VAT (Amendment) Act 2026: read for the food exemption from 1 April 2026 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0004A/2026-0004A.pdf | 2026-11-14 |
@@ -133,7 +134,7 @@ At BSD 1.5 million both owners pay BSD 11,250. From BSD 1 million upwards the tw
 | Stamp (Amendment) Act 2026: read for the business definition and sale of a business from 1 July 2026 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0018A/2026-0018A.pdf | 2026-11-14 |
 | DIR, What is DMTT FAQ: read for DMTT scope and dates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2026/06/What-is-DMTT-FAQ-1.pdf | 2026-11-14 |
 
-Not yet confirmed: stamp duty rates under the Stamp Act 2024 First Schedule (the text did not extract cleanly); customs duty rates; the 15% DMTT minimum rate figure; any NIB wage ceiling change from July 2026; the first RPT bill year for the 2026 Act changes.
+Not yet confirmed: stamp duty rates under the Stamp Act 2024 First Schedule (the text did not extract cleanly); customs duty rates; the 15% DMTT minimum rate figure; the first RPT bill year for the 2026 Act changes.
 
 ## Today's figures and who stands behind this skill
 

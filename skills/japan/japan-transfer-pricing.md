@@ -1,10 +1,10 @@
 ---
 name: japan-transfer-pricing
 description: Use this skill whenever asked about Japan transfer pricing rules, documentation requirements, or 移転価格税制 compliance. Trigger on phrases like "transfer pricing Japan", "Japanese TP documentation", "移転価格", "master file Japan", "local file Japan", "CbCR Japan", "APA Japan", "Article 66-4 ASMT", "NTA transfer pricing", or any question about intercompany pricing for Japanese entities.
-version: 1.0
+version: 1.1
 jurisdiction: JP
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -12,197 +12,135 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
 domain: transfer-pricing
+type: computation
 ---
 
 # Japan Transfer Pricing
 
-## Section 1 -- Quick Reference
+> **General reference only.** This skill produces working papers for professional review. It has not been approved by an accountant for any particular person, entity, election or filing. Confirm the applicable facts and official forms before filing, paying or taking a position.
 
-**Quick Reference**
+## Scope
 
-| Field | Value |
-| --- | --- |
-| Country | Japan |
-| Tax authority | National Tax Agency (NTA -- 国税庁) |
-| Key TP legislation | Article 66-4, Act on Special Measures concerning Taxation (ASMT -- 租税特別措置法) |
-| Documentation | Articles 66-4 (Local File), 66-4-4 (CbCR), 66-4-5 (Master File) ASMT |
-| Administrative guidance | Commissioner's Directive on the Operation of Transfer Pricing (CDOTP) |
-| OECD member? | Yes |
-| BEPS signatory? | Yes |
-| Effective date (three-tier) | FYs beginning on/after 1 April 2016 (CbCR/Master File); 1 April 2017 (Local File contemporaneous requirement) |
-| Currency | JPY |
-| Documentation language | Japanese or English (Master File/CbCR in English; Local File preferably Japanese) |
-| Skill version | 1.0 |
+2026 Japanese corporate foreign-related-party pricing and documentation under Special Measures Act art.66-4. Prepare a relationship/transaction inventory, functional and comparability analysis, arm's-length computation, documentation obligations and filing handoff. This is not an APA or accountant approval. PE attribution, interest limitations, customs/consumption-tax effects and Pillar Two require separate analyses.
 
-## Section 2 -- Documentation Requirements
+Quick reference: the local-file test is gross transactions with each foreign related party, including services and intangibles, not tangible goods alone. Exactly JPY 5,000,000,000 aggregate transactions or JPY 300,000,000 intangible transactions triggers contemporaneous documentation. Master File/CbCR have a separate consolidated-revenue test. Source: Special Measures Act art.66-4(6)-(7), https://laws.e-gov.go.jp/law/332AC0000000026; NTA FAQ66-72, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf.
 
-### 2.1 Master File (マスターファイル)
+## Ask the client first
 
-**Master File**
+- Entity, fiscal year and direct/indirect ownership/control relationships, including foreign entities and PEs.
+- Counterparty-by-counterparty prior-year gross receipts/payments and intangible components; current year if no prior year.
+- Contracts, actual conduct, functions, assets, risks, cost allocation and segmented accounts.
+- Group ultimate parent, residence, fiscal year, preceding consolidated revenue and reporting-entity/exchange arrangements.
+- Existing local/master files, CbCR/parent notification, APA/MAP, audits and outstanding information requests.
+- Method, tested party, comparables and material transaction/market changes.
 
-| Item | Detail |
-| --- | --- |
-| Required? | Yes, where consolidated group revenue of UPE ≥ JPY 100 billion (≈ EUR 750m) in prior FY |
-| Format | OECD Annex I to Chapter V |
-| Language | Japanese or English |
-| Filing | Electronic submission to competent District Director within 1 year after UPE's FY-end |
-| Penalty for non-submission | Fine up to JPY 300,000 |
+## The method, step by step
 
-### 2.2 Local File (ローカルファイル)
+### Identify covered relationships and price at arm's length
 
-**Local File**
+The statutory foreign-related-party definition includes direct/indirect ownership at least 50% and other prescribed special relationships; do not stop at a direct-shareholding test. Identify sales, purchases, services, loans, guarantees, licences, other intangible rights and actual controlled transactions. If receipts are below or payments above arm's length, art.66-4 can increase Japanese taxable income. Documentation exemption does not exempt the pricing rule. Source: Special Measures Act art.66-4(1), https://laws.e-gov.go.jp/law/332AC0000000026 (50% in words on the page).
 
-| Item | Detail |
-| --- | --- |
-| Required? | Yes -- contemporaneous preparation required where thresholds met |
-| Thresholds for contemporaneous preparation | Transactions ≥ JPY 5 billion (tangible); OR intangible transactions ≥ JPY 300 million |
-| Preparation deadline | By final tax return filing due date |
-| Retention | 7 years |
-| Submission | On request during tax examination; within appointed period |
-| Penalty for non-submission | No monetary penalty, but tax authorities may use estimation (secret comparables) |
+Select the most appropriate method for the transaction and parties' functions/circumstances. CUP compares a properly adjusted uncontrolled price; resale price backs out an arm's-length gross profit from resale; cost plus adds an arm's-length gross profit to the relevant cost. Other authorized methods include transactional net margin and profit-split methods, including residual profit split; valuation of hard-to-value intangibles may require DCF and special statutory analysis. Do not invent a method hierarchy or assume a group's global margin is the Japanese result. Source: Special Measures Act art.66-4(2), https://laws.e-gov.go.jp/law/332AC0000000026; obtain the applicable implementing provisions for a non-basic method before executing it.
 
-### 2.3 Below-Threshold Transactions
+Reconcile contractual form to actual conduct, identify functions/assets/risk control and segment accounts. Record comparable search, adjustments, financial data dates and reasons for rejecting alternatives. Explain each allocation key. Compute actual versus arm's-length profit, map any adjustment to the Japanese tax computation and check treaty corresponding relief/MAP. An example markup below is an assumed benchmark, not a statutory safe harbour.
 
-- **Below-threshold Local File handling** — For transactions below JPY 5 billion / JPY 300 million, contemporaneous Local File preparation is not legally required, but documentation is strongly recommended. Without it, tax authorities can: Use estimated taxation methods; Apply secret comparables
+### Determine the documentation obligations
 
-### 2.4 Country-by-Country Report (CbCR -- 国別報告書)
+| Obligation | Threshold/condition, timing and exception | Official source |
+|---|---|---|
+| Contemporaneous local file | Each foreign related party: preceding-year gross consideration receipts plus payments at least JPY 5,000,000,000 OR intangible consideration at least JPY 300,000,000; all transactions, including services, not just tangibles; use current year where no preceding year ; monetary amounts derived from Japanese 万/億 units | Special Measures Act art.66-4(6)-(7); NTA FAQ66,70-72, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Local-file exemption | Both gross aggregate below JPY 5,000,000,000 AND intangible aggregate below JPY 300,000,000, subject to statutory no-prior-transaction rules; no netting receivables/payables and include APA-covered transactions ; monetary amounts derived from Japanese 万/億 units | same, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Local-file preparation | By the actual final corporate-return due date, including valid extension; keep latest information available at transaction/filing | NTA FAQ66,68; https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Local-file retention | Ordinarily 7 years in Japan; loss-year documents generally 10 years, historical 9-year exception; establish correct period | NTA FAQ66; https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Requested contemporaneous local file | Examiner's appointed day no later than 45 days from request; not a guaranteed grace period | Special Measures Act art.66-4; NTA FAQ85-91, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Other important documents and exempt-transaction equivalent file | Examiner's appointed day no later than 60 days from request; applies also to important underlying/related documents for covered transactions | same, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Master File | Specified multinational group preceding consolidated total revenue at least JPY 100,000,000,000; applicable Japanese constituent entity/PE supplies within 1 year after ultimate-parent year-end; Japanese or English ; monetary amounts derived from Japanese 万/億 units | Special Measures Act art.66-4-5; NTA FAQ1-10,60-65, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| CbCR | Same specified-group revenue boundary; determine ultimate/surrogate parent and any secondary filing obligation or exchange-based relief; English, e-Tax, within 1 year after ultimate-parent year-end | Special Measures Act art.66-4-4; NTA FAQ12-59, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Ultimate-parent notification | Japanese constituent entity/PE in the specified group identifies ultimate/surrogate parent by the last day of the ultimate-parent reporting year; designated joint submission can avoid duplicative notices | NTA FAQ1-10, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
 
-**CbCR**
+The official FAQ expresses the group threshold as 1,000億円; the JPY 100,000,000,000 rendering above is derived by decimal-unit conversion. Do not replace the Japanese statutory threshold with an approximate EUR figure. For shortened parent years and overseas currency thresholds, use the FAQ's special analysis instead of blindly annualising every Japanese figure.
 
-| Item | Detail |
-| --- | --- |
-| Threshold | UPE consolidated revenue ≥ JPY 100 billion (prior FY) |
-| Filing deadline | Within 1 year after UPE's FY-end |
-| Filing method | Electronic (e-Tax) to competent District Director |
-| Notification (NUPE) | Japanese constituent entities must notify the District Director of UPE identity |
-| Notification deadline | By last day of UPE's FY |
-| Penalty for late CbCR | Fine up to JPY 300,000 |
+Prepare the local file in usable form; foreign-language material can require Japanese translation. Master File may be Japanese or English; CbCR is in English. Use e-Tax's multinational reporting procedures and designated forms for group information, not an ordinary attachment labelled TP file. The annual return also discloses relevant foreign-related-party information in the applicable 別表17(4); reconcile it to the transaction inventory. Source: NTA documentation FAQ and Special Measures Act art.66-4.
 
-## Section 3 -- Arm's Length Standard
+### APA, safe-harbour and cross-border boundaries
 
-### 3.1 Definition
+Use NTA pre-filing consultation for an APA; decide unilateral versus treaty-supported bilateral/multilateral treatment with a specialist. The NTA application is 独立企業間価格の算定方法等の確認に関する申出書 (prescribed form), submitted by the first day of the first proposed covered year (if that day is a Sunday, national/general holiday or a day specified in General Tax Enforcement Order art.2(2), submission is allowed by the following day under guidance6-2(2), including the applicable non-business-day extension), with functional, method, financial and critical-assumption evidence. The covered period is in principle 3–5 business years under guidance6-7. Comply with agreed annual reporting and any approved rollback; no outcome or processing-time promise. Source: NTA transfer-pricing administrative guidance chapter6, https://www.nta.go.jp/law/jimu-unei/hojin/010601/05.htm.
 
-- **Arm's length standard definition** — Article 66-4(1) ASMT: Where the price of a transaction between a corporation and a foreign related party differs from the arm's length price, the corporation's taxable income is computed using the arm's length price.  _(Article 66-4(1) ASMT)_
+Japan's official Amount B FAQ says the simplified and streamlined approach is not implemented for the time being. An overseas subsidiary's adoption does not make its margin automatically valid in Japan; retain a traditional Japanese arm's-length analysis and assess double-tax/MAP implications. Source: NTA Amount B FAQ1-5, https://www.nta.go.jp/taxes/shiraberu/kokusai/pdf/0025006-011.pdf. Do not assert that the OECD low-value-service approach is an unconditional Japanese statutory safe harbour.
 
-### 3.2 Accepted Methods
+## Boundary and exception table
 
-**Accepted Methods**
+| Boundary | Action |
+|---|---|
+| Below documentation threshold | Prepare support anyway; requested equivalent documents and the arm's-length rule still apply |
+| Net-settled transactions | Add gross receipts and payments before comparing thresholds; NTA FAQ70, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Management fee labelled service | Determine whether its substance includes an intangible licence/transfer; NTA FAQ71, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Document errors or missing material | Correct by the appointed deadline; inaccurate records may not constitute submission; NTA FAQ87, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| Non-submission | Can trigger estimation and comparable-business inquiries under art.66-4; ordinary tax, additions and interest may follow an adjustment |
+| Master File/CbCR failure ; monetary amounts derived from Japanese 万/億 units | Without justifiable reason, applicable reporting failures can attract a fine up to JPY 300,000; distinguish the statutory offence from automatic late charges; NTA FAQ reporting-penalty discussion, https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf |
+| NUPE/parent notice | Do not assume every late notification has the same JPY 300,000 penalty; obtain the exact operative offence before stating a fine |
 
-| Method | Japanese Term | Accepted |
-| --- | --- | --- |
-| Comparable Uncontrolled Price | 独立価格比準法 (CUP) | Yes |
-| Resale Price Method | 再販売価格基準法 (RPM) | Yes |
-| Cost Plus Method | 原価基準法 (CPM) | Yes |
-| Transactional Net Margin Method | 取引単位営業利益法 (TNMM) | Yes |
-| Profit Split Method | 利益分割法 (PSM) | Yes |
-| Residual Profit Split | 残余利益分割法 | Yes |
-| Discounted Cash Flow | DCF法 | Yes (for hard-to-value intangibles) |
+## Worked cases
 
-### 3.3 Preferred Method
+A hypothetical counterparty receives goods JPY 2,800,000,000, supplies goods/services JPY 1,950,000,000 and receives royalties JPY 300,000,000. Gross aggregate is JPY 5,050,000,000 including the royalty, so the total test triggers. Intangible transactions also meet the boundary exactly. Net cash settlement of JPY 850,000,000 for the goods/services does not change either test.
 
-- **Preferred method principle** — The "most appropriate method" principle applies. Article 66-4(2) provides the methods in order but the NTA applies the best method rule consistent with OECD Guidelines.  _(Article 66-4(2))_
+```oa-check
+name: Gross consideration and exact intangible boundary both trigger local-file preparation
+inputs:
+  receipts: 2800000000
+  payments: 1950000000
+  royalty: 300000000
+steps:
+  - gross_total: receipts + payments + royalty
+  - excess_total: gross_total - 5000000000
+  - intangible_excess: royalty - 300000000
+  - goods_services_net: receipts - payments
+expected:
+  gross_total: 5050000000
+  excess_total: 50000000
+  intangible_excess: 0
+  goods_services_net: 850000000
+```
 
-### 3.4 Estimation by Tax Authorities
+For a hypothetical independently supported cost-plus method, qualifying cost is JPY 100,000,000 and the arm's-length markup is 8%. Appropriate revenue is JPY 108,000,000. Actual related-party revenue is JPY 104,000,000, leaving a JPY 4,000,000 potential upward income adjustment before other relevant facts. This 8% is an example assumption, never a Japanese safe-harbour rate.
 
-- **Estimation by tax authorities** — If taxpayer does not provide Local File documentation within the specified period, tax authorities can: Use secret comparables (data not available to taxpayer); Estimate taxable income to taxpayer's disadvantage
+```oa-check
+name: Cost-plus comparison quantifies potential Japanese income adjustment
+inputs:
+  supported_cost: 100000000
+  assumed_markup_percent: 8
+  actual_revenue: 104000000
+steps:
+  - benchmark_revenue: supported_cost * (1 + assumed_markup_percent / 100)
+  - actual_profit: actual_revenue - supported_cost
+  - benchmark_profit: benchmark_revenue - supported_cost
+  - potential_upward_adjustment: max(benchmark_revenue - actual_revenue, 0)
+expected:
+  benchmark_revenue: 108000000
+  actual_profit: 4000000
+  benchmark_profit: 8000000
+  potential_upward_adjustment: 4000000
+```
 
-## Section 4 -- Filing Obligations
+## When to refuse or refer
 
-**Filing Obligations**
+Do not certify arm's-length pricing from one financial ratio, net transactions to avoid documentation, treat a threshold as tax exemption, or claim an automatic right to the full 45/60-day maximum. Refer missing comparables, intangibles/DCF, restructuring, financing, PE attribution, APA/MAP and conflicting foreign adjustments. Do not use untested secret-comparable rhetoric as a computation method for the taxpayer.
 
-| Obligation | Detail |
-| --- | --- |
-| Local File | Contemporaneous preparation (if thresholds met); submit on request during audit |
-| Master File | Electronic filing within 1 year of UPE FY-end |
-| CbCR | Electronic filing within 1 year of UPE FY-end |
-| NUPE notification | By last day of UPE's FY |
-| Corporate tax return | Annual self-assessment (no separate TP form) |
-| TP-related schedule | Supplementary schedule for related-party transactions (別表17(4)) |
+## Filing and payment
 
-## Section 5 -- Deadlines
+Maintain a local-file index and return-schedule reconciliation; confirm the actual corporate return deadline. Submit parent notification, Master File and CbCR through the applicable e-Tax multinational-information forms, retaining accepted-data receipts. A group parent filing may relieve duplicate local CbCR only when the statutory/exchange conditions actually hold. Respond to each audit request by its appointed date, record corrections and preserve a copy of the submitted evidence.
 
-**Deadlines**
+## Completion checklist
 
-| Item | Deadline |
-| --- | --- |
-| Local File preparation | By final tax return filing due date (2 months after FY-end; extension to 3 months available) |
-| Local File submission on audit | Within period appointed by tax examiner (typically 45-60 days) |
-| Master File submission | Within 1 year after UPE's FY-end |
-| CbCR submission | Within 1 year after UPE's FY-end |
-| NUPE notification | Last day of UPE's FY |
-| Corporate tax return | 2 months after FY-end (extension to 3 months; additional month for e-filing) |
+Relationships and gross flows complete; both thresholds tested per party; method/segmentation/comparables documented; local-file preparation/retention scheduled; group revenue and reporting role established; e-Tax notifications/reports accepted; information-request deadlines and any APA obligations tracked; tax/customs/consumption/interest-limit interactions referred.
 
-## Section 6 -- Penalties
+## Sources
 
-**Penalties**
+| Source | URL | Read on |
+|---|---|---|
+| Special Measures Act; Read for art.66-4 relationship, pricing, documentation exemption and requests; arts.66-4-4 and 66-4-5 reporting | https://laws.e-gov.go.jp/law/332AC0000000026 | 2026-11-14 |
+| NTA documentation FAQ; Read for introductory table; questions1-10,12-19, reporting/penalty sections,60-91 including exact thresholds, retention and deadline exceptions | https://www.nta.go.jp/taxes/shiraberu/kokusai/takokuseki/pdf/04.pdf | 2026-11-14 |
+| NTA TP administrative guidance; Read for chapter6 pre-consultation, application, evidence, critical assumptions and compliance reporting | https://www.nta.go.jp/law/jimu-unei/hojin/010601/05.htm | 2026-11-14 |
+| NTA Amount B FAQ; Read for questions1-5 domestic non-adoption, foreign use and documentation/MAP consequences | https://www.nta.go.jp/taxes/shiraberu/kokusai/pdf/0025006-011.pdf | 2026-11-14 |
 
-| Offence | Penalty |
-| --- | --- |
-| Late/missing Master File submission | Fine up to JPY 300,000 |
-| Late/missing CbCR submission | Fine up to JPY 300,000 |
-| Late/missing NUPE notification | Fine up to JPY 300,000 |
-| Failure to submit Local File on request | No direct monetary penalty; triggers estimation/secret comparables |
-| TP adjustment | Additional tax + interest; no specific TP surcharge but underpayment penalties apply |
-| Concealment/fraud penalties | 35-40% additional tax for deliberate underpayment |
-
-## Section 7 -- Advance Pricing Agreements (APA)
-
-**Advance Pricing Agreements**
-
-| Item | Detail |
-| --- | --- |
-| Availability | Yes (one of the most active APA programs globally) |
-| Types | Unilateral, Bilateral, Multilateral |
-| Governing authority | NTA (Mutual Agreement Division and regional tax offices) |
-| Application | To District Director; pre-filing consultation recommended |
-| Duration | 3-5 years prospective; rollback to prior open years possible |
-| Fees | No application fee |
-| Processing time | Unilateral: 12-24 months; Bilateral: 24-36 months |
-| Annual compliance report | Required |
-| Statistics | Japan processes one of the highest volumes of APAs globally (~130-150/year) |
-
-## Section 8 -- Safe Harbours
-
-- **Safe harbours overview** — Japan does not have broad formal safe harbour rules for transfer pricing.
-
-## Section 8 -- Safe Harbours
-
-**Safe Harbours**
-
-| Area | Detail |
-| --- | --- |
-| Low-value intra-group services | No statutory safe harbour; OECD simplified approach may be applied |
-| Documentation thresholds | Below JPY 5bn/JPY 300m: no mandatory contemporaneous Local File (but documentation recommended) |
-| Small-scale transactions | NTA exercises administrative discretion for immaterial transactions |
-| SSA (Simplified and Streamlined Approach) | Japan has NOT implemented Amount B / SSA as of 2025 |
-
-## Section 9 -- Recent Developments
-
-**Recent Developments**
-
-| Date | Development |
-| --- | --- |
-| 2025 | NTA FAQ on Simplified and Streamlined Approach (SSA): confirms Japan has NOT adopted Amount B |
-| 2024 | Continued high volume of APAs; bilateral APAs with US, UK, China remain active |
-| 2024 | Pillar Two (GloBE) implementation via domestic legislation |
-| 2023 | NTA enhanced focus on digital economy and intangible transactions |
-| 2017 | Contemporaneous Local File requirement introduced (JPY 5bn/300m thresholds) |
-| 2016 | Three-tier documentation (Master File, CbCR) introduced |
-| Ongoing | Active participation in OECD BEPS developments; MAP inventory management |
-
-## Section 10 -- Interaction with Other Skills
-
-**Interaction with Other Skills**
-
-| Related skill | Interaction |
-| --- | --- |
-| japan-bookkeeping | TP documentation builds on J-GAAP/IFRS accounting records |
-| japan-corporate-tax | TP adjustments affect corporation tax (法人税) base |
-| japan-consumption-tax | TP adjustments may affect customs value and consumption tax |
-| Thin capitalisation | Interest limitation rules under Art. 66-5 ASMT interact with TP for loans |
-| CbCR | Used by NTA for risk-based audit selection |
-| PE profit attribution | Related TP methodology applies to permanent establishment profits |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: Precise implementing-rule criteria for DCF/HTVI, TNMM and residual profit split and all loan/thin-cap details; generic 35%-40% concealment penalty; alleged automatic JPY 300,000 late NUPE penalty; unconditional APA duration guarantee, no-fee claim, 12-36-month timelines and 130-150 annual statistics; blanket service safe harbour and immateriality discretion; unsupported dated digital-economy/Pillar Two implementation assertions. These legacy topics are retained as referral boundaries or excluded numerical claims, not usable rates or guaranteed concessions.

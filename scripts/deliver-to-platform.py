@@ -223,8 +223,26 @@ def report(message: str, **fields) -> None:
     print(json.dumps({"message": message, **fields}), flush=True)
 
 
+def send_batch(batch: dict, secret: str, tries: int = 5) -> dict:
+    """Send one batch. A busy platform (HTTP 5xx, dropped connection, timeout) is
+    retried with a growing pause, so a short overload does not fail the batch."""
+    for attempt in range(tries):
+        try:
+            return post(PLATFORM, batch, secret)
+        except urllib.error.HTTPError as error:
+            if error.code < 500 or attempt + 1 == tries:
+                raise
+            report("Platform busy, retrying batch", status=error.code, attempt=attempt + 1)
+        except (urllib.error.URLError, TimeoutError) as error:
+            if attempt + 1 == tries:
+                raise
+            report("Platform unreachable, retrying batch", error=str(error), attempt=attempt + 1)
+        time.sleep(min(30 * (attempt + 1), 120))
+    raise RuntimeError("unreachable")
+
+
 def deliver(batch: dict, secret: str, attempts: int = 20, observed: dict | None = None) -> bool:
-    acknowledgement = post(PLATFORM, batch, secret)
+    acknowledgement = send_batch(batch, secret)
     accepted = acknowledgement.get("accepted")
     if acknowledgement.get("ok") is not True or type(accepted) is not int or accepted != len(batch["paths"]):
         raise ValueError("Platform did not acknowledge every requested path")

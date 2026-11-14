@@ -1,55 +1,90 @@
 ---
 name: kz-return-assembly
-description: "Final orchestrator that assembles the complete Kazakhstan filing package for a Kazakhstan-resident self-employed person (ИП). Trigger on phrases like \"assemble my Kazakhstan return\", \"what do I file in Kazakhstan\", \"Form 910 filing\", \"ИП отчётность Казахстан\". Consumes outputs from kz-simplified-regime or kz-income-tax, kz-social-contributions, and kazakhstan-vat, and produces the filing checklist, forms, and deadlines. Computes nothing itself."
+description: "Kazakhstan 2026 return assembly: reconcile records and calculations, select current forms, document unresolved items and retain submission evidence."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/kz-return-assembly"
   jurisdiction: "KZ"
   tax_year: "2026"
-  last_updated: "2026-06-12"
+  last_updated: "2026-11-14"
 ---
 
-# Kazakhstan Return Assembly — Orchestrator v0.1
+# Kazakhstan return assembly v0.2
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-## What this file is
-The capstone for a Kazakhstan-resident ИП. It sequences the upstream skills, picks the right forms by regime, and produces a single pre-filing package. It does not compute tax — it assembles.
+## Scope
 
-## Section 1 — Which forms apply
+Assembly of a Kazakhstan-resident ИП draft filing package after the upstream computations have been reviewed. It sequences forms and evidence; it does not recalculate income tax, VAT or contributions. Load `kz-freelance-intake` first. The output is a filing checklist and working papers for a qualified accountant, not an assertion that filing occurred.
 
-| Regime | Main tax form | Frequency |
+## Ask the client first
+
+- Accepted current regime/transition dates and taxpayer identity?
+- Reviewed income, social-payment, payroll and VAT computations?
+- Actual reporting periods, prior returns, balances and payment evidence?
+- Current cabinet form/version and authority acceptance messages?
+- Missing evidence, exemptions, extensions or unresolved questions?
+
+## The method, step by step
+
+1. Reconcile the intake package to registration and regime evidence. Route simplified to `kz-simplified-regime`, general-regime ИП to `kz-income-tax`, and eligible non-ИП self-employed cases to the app workflow rather than a Form 910.00 assumption.
+2. Assemble the current income declaration: Form 910.00 for the simplified half-year job; Form 220.00 for general-regime ИП annual business income. The controlling periods/deadlines are arts. 722/727 and 420–421; load their owning skills for the actual calculation/calendar. Forms named here are job identifiers, not a certified current electronic box map.
+3. Add the `kz-social-contributions` schedules and any `kz-payroll` withholding/quarterly Form 200.00 job. Contribution payment schedules remain separate from return deadlines. Confirm regime-specific reporting rather than assuming absence of staff removes every social-reporting obligation.
+4. Add `kazakhstan-vat` and Form 300.00 only where required; imports/non-resident VAT can remain relevant without ordinary registration. Do not combine simplified status with ordinary registered-VAT status without resolving the contradiction.
+5. Cross-check income across forms, contribution bases/caps and any payroll-cost adjustment. Keep prior credits, payments and amendments distinct from current-period liability. Stop if totals do not reconcile.
+6. In the current taxpayer cabinet/e-Salyq channel, select the period and actual form version, transfer the reviewed values, check validation and obtain human authorization/signature for submission. Retain accepted declaration identifier/status, date, payment reference and fund allocations; an upload screen alone is not acceptance. Check amendments and outstanding notices.
+7. Deliver the checklist: regime/status confirmed; eligible income within ceiling; correct income/social/payroll/VAT jobs; contribution caps/exemptions; forms/periods; statutory filing and payment dates from owning skills; accepted submissions and reconciled payments; unresolved items and accountant sign-off.
+
+## Worked cases
+
+Case 1: hypothetical reviewed income tax is KZT 360,000 and separately reviewed social payments KZT 130,050; payments already made against those jobs are KZT 300,000 and KZT 130,050 respectively. Outstanding income tax is KZT 60,000 and social balance is 0. Do not offset fund payments against income tax without a legal transfer.
+
+```oa-check
+name: Separate tax and fund ledgers
+inputs:
+  income_tax: 360000
+  social: 130050
+  income_paid: 300000
+  social_paid: 130050
+steps:
+  - income_balance: income_tax - income_paid
+  - social_balance: social - social_paid
+  - outstanding: income_balance + social_balance
+expected:
+  income_balance: 60000
+  social_balance: 0
+  outstanding: 60000
+```
+
+Case 2: hypothetical VAT output KZT 800,000 and eligible input KZT 500,000 produce KZT 300,000 current net liability; an independently validated earlier credit KZT 100,000 leaves KZT 200,000. An unconfirmed prior credit must be excluded from the payment instruction until reconciled.
+
+```oa-check
+name: VAT balance assembly control
+inputs:
+  output: 800000
+  eligible_input: 500000
+  confirmed_credit: 100000
+steps:
+  - current_net: output - eligible_input
+  - balance: current_net - confirmed_credit
+expected:
+  current_net: 300000
+  balance: 200000
+```
+
+## When to refuse or refer
+
+Refuse to mark the package filed-ready if regime, period, form, acceptance, balances or legal scope is unresolved. Do not file/sign on the user’s behalf in this workflow, invent electronic form fields, use the old flat general-regime rate shortcut or treat all deadlines as the same. Corporate, non-resident, liquidation or other specialist cases require a different package.
+
+## Sources
+
+| Source and operative sections actually read | URL | Read on |
 |---|---|---|
-| Simplified declaration | **Form 910.00** | Half-yearly (by 15 Aug / 15 Feb; pay by 25 Aug / 25 Feb) — verify |
-| General regime (ИП) | **Form 220.00** | Annual (by 31 March following year) — verify |
-| With employees / withholding | **Form 200.00** | Quarterly |
-| VAT-registered | **Form 300.00** | Quarterly |
+| Read for Tax Code arts. 99, 420–421, 444–445, 504–506, 722–727 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
 
-## Section 2 — Assembly order
-1. **Intake** (kz-freelance-intake) → confirm regime, VAT status, residency.
-2. **Tax base** → kz-simplified-regime (4% turnover) **or** kz-income-tax (10% net).
-3. **Social payments** → kz-social-contributions (ОПВ, ОПВР, СО, ВОСМС).
-4. **VAT** → kazakhstan-vat (if registered).
-5. **Reconcile** turnover across forms; confirm МРП-indexed thresholds.
-6. **Submit** via the **e-Salyq / cabinet.salyk.kz** Taxpayer Cabinet with a digital signature (ЭЦП).
-
-## Section 3 — Pre-filing checklist
-- [ ] Regime confirmed (simplified / general)
-- [ ] Turnover within the regime ceiling
-- [ ] Social payments (ОПВ/ОПВР/СО/ВОСМС) computed and within caps
-- [ ] VAT return filed if registered
-- [ ] Correct form (910.00 / 220.00 / 200.00 / 300.00) and deadline
-- [ ] Filed via Taxpayer Cabinet with valid ЭЦП
-
-## Section 10 — Prohibitions
-- NEVER file without confirming the regime and the matching form.
-- NEVER state a deadline as final without verifying the 2026 calendar on cabinet.salyk.kz.
-- NEVER present the package as filed-ready without a qualified accountant's review.
-
-## Disclaimer
-Informational only; not advice. Verify forms and deadlines with the КГД. All outputs must be reviewed and signed off by a qualified Kazakhstan accountant before filing. Maintained at [openaccountants.com](https://www.openaccountants.com).
+Not yet confirmed: Current portal fields/appendix versions and case-specific filing/payment dates until confirmed in the owning skill and accepted form. The old tentative calendar and flat general-regime shorthand are not reused.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kz-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kz-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kz-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kz-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

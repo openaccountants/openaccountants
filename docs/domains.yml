@@ -183,6 +183,7 @@ domains:
       hosts:
         iaasb.org: IAASB, International Standards on Auditing
         ifac.org: IFAC, handbooks of the international standards
+        ifacweb.blob.core.windows.net: IFAC, publication assets linked by the IAASB issuer pages
         pcaobus.org: United States, PCAOB auditing standards
         frc.org.uk: United Kingdom, Financial Reporting Council (ISAs (UK), audit regulator)
         icai.org: India, Institute of Chartered Accountants of India (standards on auditing)
