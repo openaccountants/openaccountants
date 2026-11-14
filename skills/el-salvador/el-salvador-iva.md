@@ -11,7 +11,7 @@ description: >
   (Codigo Tributario art. 162), the buyer's liability for non-domiciled suppliers (art.
   161) and the monthly return within the first 10 working days. Trigger phrases include
   IVA El Salvador, F-07, credito fiscal, CCF, gran contribuyente retencion 1% and DGII.
-version: "1.0"
+version: "3.0"
 jurisdiction: SV
 tax_year: 2026
 last_updated: 2026-11-14
