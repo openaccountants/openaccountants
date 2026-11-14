@@ -1,14 +1,15 @@
 ---
 name: lu-transfer-pricing
 description: "Luxembourg transfer pricing (prix de transfert) for tax year 2026: Luxembourg companies and Luxembourg permanent establishments that deal with associated enterprises. Covers the arm's length rule in art. 56 LIR, the OECD-based comparability rules in art. 56bis, hidden profit distributions (art. 164(3)) and the 15% withholding tax that can follow, documentation on request under § 171(3) of the Abgabenordnung, intra-group financing companies (real presence, 2% after-tax safe harbour), Amount B (circular n° 56/2 – 56bis/2 of 13 April 2026), advance decisions under § 29a AO (fee EUR 3,000 to 10,000), the EUR 750m country-by-country report and its EUR 250,000 fine, MAP, and the EU dispute law of 20 December 2019. Trigger on: prix de transfert Luxembourg, art. 56 LIR, 56bis, distribution cachée, société de financement de groupe, CbC Luxembourg, APA Luxembourg, décision anticipée. Out of scope: lu-corporate-tax (rates, base, filing), luxembourg-income-tax, luxembourg-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Luxembourg transfer pricing (prix de transfert): tax year 2026
@@ -50,11 +51,11 @@ The rule reaches domestic dealings as well as cross-border ones. Art. 56 does no
 | Tax on a primary adjustment, Luxembourg City, income above EUR 200,000 | 23.87% combined: IRC 16% + employment fund contribution 1.12% + ICC 6.75% | 2025 onwards | [ACD, overall tax burden](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html); [LIR art. 174](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | IRC bands (14% up to EUR 175,000; middle band; 16% above EUR 200,000) and ICC multipliers outside Luxembourg City | see [lu-corporate-tax](lu-corporate-tax.md) | 2026 | [ACD, IRC tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html) |
 | Withholding tax on dividends, including other income allotted "in any form" on shares | 15% of the gross amount; 17.65% of the net amount when the payer bears the tax | current | [LIR arts. 97(1) no. 1, 146 and 148](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Withholding exemption for a qualifying corporate shareholder | at least 10% or acquisition price at least EUR 1,200,000, held or committed for 12 months | current | LIR art. 147 no. 2; see [lu-corporate-tax](lu-corporate-tax.md) |
+| Withholding exemption for a qualifying corporate shareholder | at least 10% or acquisition price at least EUR 1,200,000, held or committed for 12 months | current | LIR art. 147 no. 2; see [lu-corporate-tax](lu-corporate-tax.md); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Intra-group financing company, purely intermediary, safe harbour | minimum return of 2% after tax on the financed assets | from 1 January 2017; unchanged at 2026 | [Circular 56/1 – 56bis/1, no. 27](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/circulairelir561-56bis1-27122016.pdf) |
-| Return on equity observed for financing and treasury functions like regulated entities | 10% after tax | as at 27 December 2016 | Circular 56/1 – 56bis/1, no. 24 |
+| Return on equity observed for financing and treasury functions like regulated entities | 10% after tax | as at 27 December 2016 | Circular 56/1 – 56bis/1, no. 24; https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/circulairelir561-56bis1-27122016.pdf |
 | Advance decision (décision anticipée) fee, business taxation | EUR 3,000 to EUR 10,000, set by the ACD by complexity and workload; payable within one month; not refunded | requests from 1 January 2015 | [§ 29a(4) AO, inserted by the law of 19 December 2014](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-257-du-24-decembre-2014.pdf); [grand-ducal regulation of 23 December 2014, arts. 8 to 10](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-264-du-29-decembre-2014.pdf) |
-| Advance decision, maximum validity | 5 tax years | same | § 29a(3) AO |
+| Advance decision, maximum validity | 5 tax years | same | § 29a(3) AO; https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-257-du-24-decembre-2014.pdf |
 | Country-by-country report, group threshold | consolidated group revenue of EUR 750,000,000 or more in the fiscal year before the reporting year | reporting years from 2016 | [Law of 23 December 2016 on CbC reporting, annex, section I, no. 5](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/a280.pdf) |
 | CbC report deadline | 12 months after the last day of the reporting fiscal year | same | same, art. 2 |
 | CbC fine | up to EUR 250,000 | same | same, art. 3(1); amount unchanged by the [law of 27 March 2026, art. 13](https://legilux.public.lu/eli/etat/leg/loi/2026/03/27/a144/jo) |

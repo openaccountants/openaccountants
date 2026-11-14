@@ -1,14 +1,15 @@
 ---
 name: luxembourg-tax-optimization
 description: "Use this skill for lawful tax planning by a Luxembourg resident individual, sole trader or owner of a small company (SARL, SARL-S) for tax year 2026. It covers the sole trader versus company choice (14% / 16% IRC, 7% employment fund contribution, municipal business tax with the EUR 40,000 and EUR 17,500 allowances), paying out profit (15% withholding, 50% dividend exemption), and the reliefs individuals miss: the EUR 4,500 private pension (prévoyance-vieillesse) cap, the EUR 672 cap on interest and insurance premiums, home-savings contracts, employer and self-employed supplementary pensions, the EUR 4,500 extra-professional abatement and the start-up investment credit. It sets the red lines: hidden profit distributions and the anti-abuse rule. Trigger on: reduce tax Luxembourg, SARL or indépendant, SARL-S, third pillar Luxembourg, prévoyance-vieillesse, dépenses spéciales, save tax Luxembourg, tax planning Luxembourg. Out of scope: computing the full tax (luxembourg-income-tax, lu-corporate-tax), payroll (luxembourg-payroll), contributions (luxembourg-social-contributions), non-residents (lu-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: decision
 ---
 
 # Luxembourg Tax Optimization
@@ -41,19 +42,19 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 |---|---|---|---|
 | Personal income tax scale | 0% up to EUR 13,230, rising to 42% above EUR 234,870 (23 bands; see `luxembourg-income-tax`) | 2025 and 2026 | [LIR art. 118, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | Employment fund surcharge, individuals | 7% of the tax; 9% above EUR 150,000 (classes 1, 1a) or EUR 300,000 (class 2) of taxable income | 2026 | [ACD, fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html) |
-| Flat minimum for special expenses | EUR 480, covering arts. 109 no. 1 and 1a, 110 no. 4, 111, 111bis and 111ter; replaced by the actual amount when higher | 2026 | LIR art. 113(1) (same URL) |
-| Interest (not on the own home) plus life, death, accident, invalidity, sickness and liability insurance premiums | EUR 672 a year in total, plus EUR 672 for a spouse taxed jointly and for each child | 2026 | LIR art. 109(1) no. 1a (same URL) |
-| Home-savings contract (épargne-logement) contributions | EUR 1,344 a year if the youngest adult subscriber is 18 to 40 at the start of the year; otherwise EUR 672 (increased for a spouse and each child) | 2026 | LIR art. 111(5) (same URL) |
-| Private pension (prévoyance-vieillesse) contract or Luxembourg PEPP sub-account | EUR 4,500 a year per taxpayer, one cap for both kinds of contract | 2026 (law of 19 December 2025) | LIR arts. 111bis(7) and 111ter(7) (same URL) |
-| Employee's own contributions to an employer supplementary pension scheme | EUR 1,200 a year | 2026 | LIR art. 110 no. 3 (same URL) |
-| Self-employed contributions to an approved supplementary pension scheme | up to 20% of net business income (arts. 10 nos. 1 to 3), on an actuary's certificate | 2026 | LIR art. 110 no. 3a (same URL) |
-| Gifts to approved bodies | up to 20% of total net income and EUR 1,000,000; the excess carries forward to the next two tax years | 2026 | LIR art. 109(1) no. 3 (same URL) |
-| Extra-professional abatement | EUR 4,500 for spouses taxed jointly who both have professional income; EUR 2,250 each if taxed individually | 2026 | LIR art. 129b(1) (same URL) |
-| Investment income taxed by assessment | First EUR 1,500 a year exempt (EUR 3,000 for spouses taxed jointly) | 2026 | LIR art. 115 no. 15 (same URL) |
-| Dividends from a fully taxable resident company (or treaty or EU equivalent) | 50% exempt in the shareholder's hands | 2026 | LIR art. 115 no. 15a (same URL) |
-| Withholding tax on dividends | 15% (17.65% on the net amount if the company bears it); credited against the shareholder's income tax | 2026 | LIR arts. 148(1) and 154(1) no. 2 (same URL) |
-| Start-up investment credit | 20% of the eligible investment in new shares of an innovative start-up (under 5 years old, under 50 staff, balance sheet or turnover up to EUR 10m); at least EUR 10,000 invested in the entity in the year; the part that takes the investor above 30% of the capital is not eligible; credit capped at EUR 100,000 a year | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 617, art. 3) | LIR art. 154quaterdecies (same URL) |
-| Abatement for staying in work after pension rights open | up to EUR 9,000 a year (EUR 750 a month) | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 623) | LIR art. 129g (same URL) |
+| Flat minimum for special expenses | EUR 480, covering arts. 109 no. 1 and 1a, 110 no. 4, 111, 111bis and 111ter; replaced by the actual amount when higher | 2026 | LIR art. 113(1); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Interest (not on the own home) plus life, death, accident, invalidity, sickness and liability insurance premiums | EUR 672 a year in total, plus EUR 672 for a spouse taxed jointly and for each child | 2026 | LIR art. 109(1) no. 1a; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Home-savings contract (épargne-logement) contributions | EUR 1,344 a year if the youngest adult subscriber is 18 to 40 at the start of the year; otherwise EUR 672 (increased for a spouse and each child) | 2026 | LIR art. 111(5); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Private pension (prévoyance-vieillesse) contract or Luxembourg PEPP sub-account | EUR 4,500 a year per taxpayer, one cap for both kinds of contract | 2026 (law of 19 December 2025) | LIR arts. 111bis(7) and 111ter(7); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Employee's own contributions to an employer supplementary pension scheme | EUR 1,200 a year | 2026 | LIR art. 110 no. 3; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Self-employed contributions to an approved supplementary pension scheme | up to 20% of net business income (arts. 10 nos. 1 to 3), on an actuary's certificate | 2026 | LIR art. 110 no. 3a; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Gifts to approved bodies | up to 20% of total net income and EUR 1,000,000; the excess carries forward to the next two tax years | 2026 | LIR art. 109(1) no. 3; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Extra-professional abatement | EUR 4,500 for spouses taxed jointly who both have professional income; EUR 2,250 each if taxed individually | 2026 | LIR art. 129b(1); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Investment income taxed by assessment | First EUR 1,500 a year exempt (EUR 3,000 for spouses taxed jointly) | 2026 | LIR art. 115 no. 15; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Dividends from a fully taxable resident company (or treaty or EU equivalent) | 50% exempt in the shareholder's hands | 2026 | LIR art. 115 no. 15a; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Withholding tax on dividends | 15% (17.65% on the net amount if the company bears it); credited against the shareholder's income tax | 2026 | LIR arts. 148(1) and 154(1) no. 2; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Start-up investment credit | 20% of the eligible investment in new shares of an innovative start-up (under 5 years old, under 50 staff, balance sheet or turnover up to EUR 10m); at least EUR 10,000 invested in the entity in the year; the part that takes the investor above 30% of the capital is not eligible; credit capped at EUR 100,000 a year | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 617, art. 3) | LIR art. 154quaterdecies; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Abatement for staying in work after pension rights open | up to EUR 9,000 a year (EUR 750 a month) | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 623) | LIR art. 129g; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Interest on the owner's own home (deducted against the rental value, not as a special expense) | in full in the year the rental value is first fixed and the next year; then EUR 4,000 a year for four years, EUR 3,000 a year for five years, then EUR 2,000 a year; each cap is increased by its own amount for a spouse taxed jointly and for each child | from tax year 2024 | LIR art. 98(4); grand-ducal regulation of 12 July 1968 as amended, as stated by [ACD, habitation personnelle](https://impotsdirects.public.lu/fr/az/h/habit_pers.html) |
 | IRC, taxable income up to EUR 175,000 | 14% | 2025 onwards | [ACD, IRC tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html) |
 | IRC, EUR 175,000 to 200,000 | EUR 24,500 plus 30% of the income above EUR 175,000 | 2025 onwards | same |
@@ -105,8 +106,8 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 | Individual return (Form 100) | 31 December of the following year; tax year 2026 is due 31 December 2027 | [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
 | Company return (IRC, ICC, net wealth tax) | 31 December of the following year | same |
 | Individual advances | 10 March, 10 June, 10 September, 10 December | LIR art. 135 ([consolidated text](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf)) |
-| PEPP sub-account | The provider gives the client a certificate of the year's payments for the return | LIR art. 111ter(8) (same URL) |
-| Dividend withholding | Declared and paid by the company; see `lu-corporate-tax` | LIR art. 148 (same URL) |
+| PEPP sub-account | The provider gives the client a certificate of the year's payments for the return | LIR art. 111ter(8); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Dividend withholding | Declared and paid by the company; see `lu-corporate-tax` | LIR art. 148; https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 
 Payment dates for companies, ICC advances and the dividend withholding return are in `lu-corporate-tax`.
 
@@ -214,18 +215,18 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | LIR, consolidated text in force on 1 January 2026 (arts. 98, 99, 109, 110, 111, 111bis, 111ter, 113, 115, 118, 126, 129b, 129g, 135, 148, 154, 154quaterdecies, 164) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
-| ACD, IRC tariff from 2025 | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html | 2026-10-23 |
-| ACD, net wealth tax tariff and minimum | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html | 2026-10-23 |
-| ACD, overall tax burden of a company (23.87%) | https://impotsdirects.public.lu/fr/az/c/charg_fisc.html | 2026-10-23 |
-| ACD, calculation of the municipal business tax (EUR 40,000 / 17,500) | https://impotsdirects.public.lu/fr/az/c/calc_comm.html | 2026-10-23 |
-| Guichet.lu, impôt commercial communal (who is outside ICC) | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/impots-divers/impot-commercial-communal.html | 2026-10-23 |
-| ACD, fonds pour l'emploi | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
-| ACD, filing deadlines | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
-| ACD, late filing and late payment | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
-| ACD, own home of the owner (interest limits from tax year 2024) | https://impotsdirects.public.lu/fr/az/h/habit_pers.html | 2026-10-23 |
-| Legilux, law of 19 December 2025, Mémorial A 2025 n° 617 (start-up credit, from tax year 2026) | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a617/jo | 2026-10-23 |
+| ACD, IRC tariff from 2025. Read for the IRC rate and bracket. | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html | 2026-10-23 |
+| ACD, net wealth tax tariff and minimum. Read for the net wealth tax rates and minimum. | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html | 2026-10-23 |
+| ACD, overall tax burden of a company (23.87%). Read for the combined company tax rate. | https://impotsdirects.public.lu/fr/az/c/charg_fisc.html | 2026-10-23 |
+| ACD, calculation of the municipal business tax (EUR 40,000 / 17,500). Read for the municipal business tax allowances. | https://impotsdirects.public.lu/fr/az/c/calc_comm.html | 2026-10-23 |
+| Guichet.lu, impôt commercial communal (who is outside ICC). Read for who is outside municipal business tax. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/impots-divers/impot-commercial-communal.html | 2026-10-23 |
+| ACD, fonds pour l'emploi. Read for the employment fund surcharge. | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
+| ACD, filing deadlines. Read for the filing deadlines. | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
+| ACD, late filing and late payment. Read for the late filing and late payment rules. | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
+| ACD, own home of the owner (interest limits from tax year 2024). Read for the own home interest limits. | https://impotsdirects.public.lu/fr/az/h/habit_pers.html | 2026-10-23 |
+| Legilux, law of 19 December 2025, Mémorial A 2025 n° 617 (start-up credit, from tax year 2026). Read for the start-up investment credit. | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a617/jo | 2026-10-23 |
 | Legilux, law of 19 December 2025, Mémorial A 2025 n° 623 (EUR 4,500 pension cap, art. 129g, from tax year 2026) | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a623/jo | 2026-10-23 |
-| ACD, laws of 2018 (ATAD transposition, law of 21 December 2018) | https://impotsdirects.public.lu/fr/legislation/legi18.html | 2026-10-23 |
-| CCSS, social parameters (2026 rates, minimum and maximum base) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
+| ACD, laws of 2018 (ATAD transposition, law of 21 December 2018). Read for the ATAD rules. | https://impotsdirects.public.lu/fr/legislation/legi18.html | 2026-10-23 |
+| CCSS, social parameters (2026 rates, minimum and maximum base). Read for the 2026 contribution rates and bases. | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 
 Not yet confirmed: the own-home interest limits come from the ACD page; the text of the amended grand-ducal regulation of 12 July 1968 on Legilux was not read; the exact provision of the Steueranpassungsgesetz that holds the anti-abuse rule; when a shareholder-manager of a SARL is insured with the CCSS as self-employed rather than as an employee (see `luxembourg-social-contributions`).
