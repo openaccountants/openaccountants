@@ -62,13 +62,13 @@ Tax year: payroll tax runs 1 April to 31 March; this skill uses the 1 April 2026
 | Employer rate, annual payroll over BMD 1,000,000 (over BMD 250,000 a quarter) | 9.50% | same |
 | Employer rate, all exempt undertakings | 9.75% | same |
 | Employee portion band 1, annual remuneration 0 to 48,000 | 0.25% | same |
-| Employee portion band 2, 48,001 to 96,000 | 7.75% | same |
+| Employee portion band 2, above the first 48,000 up to 96,000 | 7.75% | same |
 | Employee portion band 3, 96,001 to 200,000 | 10.75% | same |
 | Employee portion band 4, 200,001 to 500,000 | 11.50% | same |
 | Employee portion band 5, 500,001 to 1,000,000 | 12.50% | same |
 | Tax cap, remuneration per person per year | BMD 1,000,000; remuneration above it is not taxed | same |
 | Dividend deductible, dividends to persons providing services to local companies not trading on a stock exchange, from 1 April 2026 | BMD 20,000 per person per year; each dividend dollar above it is gross remuneration, up to the cap | same |
-| Bermudian aged 65 or over relief | Remuneration up to BMD 24,000 per tax period (quarter) not taxable; bonuses taxable; relief from the quarter the application is received | same |
+| Bermudian aged 65 or over relief | Remuneration up to BMD 24k per tax period (quarter) not taxable; bonuses taxable; relief from the quarter the application is received | same |
 | Social insurance, employed person over school-leaving age and under 65 | BMD 39.25 employee plus BMD 39.25 employer, BMD 78.50 a week, from 3 August 2026 | [Contribution calendar 2026-27](https://socialinsurance.gov.bm/Portals/0/calendars/Contribution-Calendar-2027.pdf) |
 | Social insurance, employed person over 65 | BMD 39.25 a week, employer only | same |
 | Social insurance, self-employed under 65 | BMD 78.50 a week | same |

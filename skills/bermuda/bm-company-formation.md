@@ -42,7 +42,7 @@ Forming a company under the Bermuda Companies Act 1981 with the Registrar of Com
 
 | Item | Figure and conditions | Official source |
 |---|---|---|
-| Local company Bermudian control (Third Schedule Part I) | At least 60% of voting rights exercisable by Bermudians, and at least 60% each of Bermudian directors and of shares beneficially owned by Bermudians; a licence under s.114A or s.114B can relax this | [Limited companies](https://www.gov.bm/limited-companies) |
+| Local company Bermudian control (Third Schedule Part I) | At least sixty per cent of voting rights exercisable by Bermudians, and not less than sixty per cent each of Bermudian directors and of shares beneficially owned by Bermudians; a licence under s.114A or s.114B can relax this | [Limited companies](https://www.gov.bm/limited-companies) |
 | Beneficial owner test | 25% or more of shares, interests or voting rights, directly or indirectly; or ultimate effective control; or control by other means. If no one qualifies, the senior manager | same |
 | Update the beneficial ownership register | Within 14 days of being notified of a change | same |
 | Name reservation | Not more than three months before the application, for up to three months | same |

@@ -56,8 +56,8 @@ Which skill to load:
 | Stamp duty, conveyance or transfer on sale of Bermuda land, first BMD 100,000 | 2.1% | [Stamp duty](https://www.gov.bm/articles/stamp-duty-tax-legal-transactions) |
 | Stamp duty, next BMD 400,000 (to 500,000) | 3.15% | same |
 | Stamp duty, next BMD 500,000 (to 1,000,000) | 4.20% | same |
-| Stamp duty, next BMD 500,000 (to 1,500,000) | 6.3% | same |
-| Stamp duty, over BMD 1,500,000 | 7.35% | same |
+| Stamp duty, next BMD 500,000 (to BMD 1.5 million) | 6.3% | same |
+| Stamp duty, over BMD 1.5 million | 7.35% | same |
 | Stamp duty, property that is not Bermuda property | 1% | same |
 | Stamp duty, lease up to three years | 1.05% of aggregate rent for the term | same |
 | Stamp duty, lease over three years | 1.05% of aggregate rent for the first three years plus 0.5% of aggregate rent for the remaining period | same |
@@ -65,7 +65,7 @@ Which skill to load:
 | Stamp duty, mortgage refinanced to another institution | No duty on the first BMD 1,000,000; excess at 0.5% | same |
 | Adjudication fee (Tax Commissioner's opinion on duty), from 1 April 2023 | BMD 212 per item | same |
 | Land tax, private dwelling, flat charge | BMD 150, with the band rates on ARV over BMD 22,000 | [Land tax](https://www.gov.bm/land-tax) |
-| Land tax, private dwelling ARV bands | 0.80% (0 to 11,000), 1.80% (11,001 to 22,000), 3.50% (22,001 to 33,000), 6.50% (33,001 to 44,000), 17.00% (44,001 to 90,000), 35.00% (90,001 to 120,000), 55.00% (over 120,000) | same |
+| Land tax, private dwelling ARV bands | 0.80% (0 to 11,000), 1.80% (11,001 to 22,000), 3.50% (22,001 to 33,000), 6.50% (33,001 to 44,000), 17.00% (44,001 to 90,000), 35.00% (90,001 to the next band), 55.00% (120,001 and over) | same |
 | Land tax, commercial property from 1 July 2019 | 9.5%; Economic Empowerment Zone 7%; tourist properties 8.9% | same |
 | Land tax, late payment interest | 7% a year | same |
 | Land tax relief, owner-occupier aged 65 or over | Up to BMD 1,791 a year (including the BMD 150 flat charge), for homes with ARV up to BMD 45,500; tax due on ARV above 45,500 | same |
