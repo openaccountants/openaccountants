@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected warehouse/HDE controls checked on 17 October 2026; actual site, admission, permission and operative event required"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -31,6 +32,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: customs warehouses and HDE
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the importing island, actual premises, operator, goods, customs
 destination, permit, admission and transaction. Temporary storage (RTO),
@@ -46,7 +51,17 @@ outputs/checks. This Tier 2 reference covers selected warehouse/HDE controls,
 not a complete country pack or engagement. Unknown mandatory conditions
 hold the complete financial output package.
 
-## Customs warehouse: operator, premises and goods
+## Ask the client first
+
+1. **Which regime**: a customs warehouse, or a trade-and-services warehouse (HDE), and the permit or admission held.
+2. **The activities**: services, or storage, processing and handling of goods, with annual turnover for each.
+3. **Employment and investment**: permanent full-time BES-resident staff and qualifying investment.
+4. **Stock records**: opening stock, evidenced entries and exits, and physical counts.
+5. **Where goods go on withdrawal**: release for free circulation, export, or another warehouse.
+
+## The method, step by step
+
+### Customs warehouse: operator, premises and goods
 
 DAB 2.99–2.101 distinguish warehouses usable by anyone from those operated
 by a manager. The managing person must be BES-established and obtain the
@@ -71,7 +86,7 @@ storage of excise goods on the chapter-IV rules. Do not infer permission
 for every product from an ordinary-goods warehouse approval.
 [DAB]; [DECREE]; [G-STORE]
 
-## Movement, handling and records
+### Movement, handling and records
 
 Decree 2.44 requires destination-office permission for entry and use of
 the movement document. Customs checks the seal, non-use and goods identity,
@@ -115,7 +130,7 @@ reference distinguishes the decree's administrative and criminal provisions;
 a same-numbered article in the Act is not interchangeable. [DECREE]; [RULES];
 `bq-penalties-corrections`
 
-## Storage term and withdrawal
+### Storage term and withdrawal
 
 Article 2.105 provides the general indefinite-storage position with its
 specified inspector-set destination-term exception. Establish every actual
@@ -132,7 +147,7 @@ import and regularisation measures. Establish the actual decision, calendar
 and exceptions before giving an operational date. This goods rule is
 different from HDE's entity-removal rule below. [DAB]
 
-## HDE: area, activities and admission
+### HDE: area, activities and admission
 
 An HDE requires ministerial establishment and precise site/building
 boundaries under DAB 5.3. Entity admission is a separate inspector decision
@@ -155,12 +170,12 @@ The economic-development condition and each relevant statutory requirement
 must be established; a projected turnover figure alone is insufficient
 evidence of the permit or continuing conditions. [DAB]
 
-| Article 5.4(2) requirement | Stated condition; actual application/admission still required |
-|---|---|
-| Services activity | Annual turnover at least **USD 80,000**, under the specified services branch. |
-| Goods activity | Annual turnover at least **USD 800,000**, under the specified storage/processing/handling branch. The services and goods alternatives are not a single combined-turnover shortcut. |
-| Employment | Permanent full-time work for at least **three BES-resident natural persons**. Do not round a headcount or assume part-time aggregation satisfies this text. |
-| Admission investment | At least **USD 500,000**, such as business buildings, initial fitting-out or other qualifying investment. Establish its actual connection and evidence. |
+| Article 5.4(2) requirement | Stated condition; actual application/admission still required | Source of the figure |
+|---|---|---|
+| Services activity | Annual turnover at least **USD 80,000**, under the specified services branch. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Goods activity | Annual turnover at least **USD 800,000**, under the specified storage/processing/handling branch. The services and goods alternatives are not a single combined-turnover shortcut. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Employment | Permanent full-time work for at least **three BES-resident natural persons**. Do not round a headcount or assume part-time aggregation satisfies this text. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Admission investment | At least **USD 500,000**, such as business buildings, initial fitting-out or other qualifying investment. Establish its actual connection and evidence. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
 
 [DAB]
 
@@ -186,7 +201,7 @@ and legal route matter; do not copy a general remedy/collection term to
 every HDE permission. Retain the actual decision and professional review.
 [DAB]
 
-## Separate tax connections
+### Separate tax connections
 
 B1 5.2(3)(a) excludes an admitted HDE body from the chapter's deemed-European-
 Netherlands residence rule. Paragraph 3(b)'s qualifying holding-company
@@ -226,7 +241,9 @@ That examination is not proof that every other amending or interpretive
 authority has been exhausted. The discrepancy and actual-application hold
 also appear in `bq-personal-import-relief` and `bq-abb`. [CHANGE2026]
 
-## Fictional boundary and stock checks
+## Worked cases
+
+### Fictional boundary and stock checks
 
 These cases stipulate the named ordinary branch and remaining verified
 facts. They test components, not actual admission, tax relief or a bill:
@@ -243,7 +260,49 @@ facts. They test components, not actual admission, tax relief or a bill:
 | A warehouse/HDE address is supplied without the actual permit/admission | Hold regime treatment; do not infer a tax status from the address. |
 | Export/re-import relief is requested using only the mismatched letter pointer | Preserve the source discrepancy and hold the actual treatment; do not select a favourable reading by default. |
 
-## Verification and limits
+### Recomputed cases
+
+**Case 1, stock reconciliation.** Opening stock of 100 units with 20 evidenced exits and no other movements leaves an expected 80. A physical count of 79 shows a difference of 1 to investigate; it is not a tax-free loss.
+
+```oa-check
+name: Warehouse stock reconciliation
+inputs:
+  opening: 100
+  exits: 20
+  physical: 79
+steps:
+  - expected_stock: opening - exits
+  - difference: expected_stock - physical
+expected:
+  expected_stock: 80
+  difference: 1
+```
+
+**Case 2, a decision: services or goods route to HDE admission?** A business with USD 80,000 of annual services turnover meets the services amount floor; the same turnover is far below the USD 800,000 goods floor. The two floors are separate: the shortfall on the goods route is USD 720,000. Employment and the USD 500,000 investment must still be shown.
+
+```oa-check
+name: HDE turnover floors, services against goods
+inputs:
+  turnover: 80000
+steps:
+  - services_margin: turnover - 80000
+  - goods_shortfall: 800000 - turnover
+expected:
+  services_margin: 0
+  goods_shortfall: 720000
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-WH-PERMIT | No actual permit or admission decision | Hold regime treatment; do not infer it from an address |
+| R-BQ-WH-TRANSITION | Pre-existing permits, saved-law cases or mixed activities | Refer: method not established here |
+| R-BQ-WH-EXPORT | Export or re-import relief resting on the mismatched letter pointer | Hold: see `bq-abb` |
+
+## Completion checklist
+
+### Verification and limits
 
 Check actual operator/person, approved premises/goods, permit and admission;
 stock evidence, movement permissions and discharge; permitted handling,
@@ -267,6 +326,21 @@ identifier or bank submission, admission/permit application, declaration,
 payment, engagement workbook, PDF/OCR or practitioner sign-off was used.
 No comprehensive-area credit is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| DECREE. Read for the provisions this skill cites as [DECREE]. | https://wetten.overheid.nl/BWBR0029262/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| TAX-RULES. Read for the provisions this skill cites as [TAX-RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| G-STORE. Read for the provisions this skill cites as [G-STORE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen/opslag-in-een-douane-entrepot | 2026-10-17 |
+| G-HDE. Read for the provisions this skill cites as [G-HDE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen/opslag-in-een-handels--en-dienstentrepot-hde | 2026-10-17 |
+| G-MOVE. Read for the provisions this skill cites as [G-MOVE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/douanebestemmingen/douane-entrepot-of-handels--en-dienstenentrepot-hde | 2026-10-17 |
+| G-INDEX. Read for the provisions this skill cites as [G-INDEX]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen | 2026-10-17 |
+| CHANGE2026. Read for the provisions this skill cites as [CHANGE2026]. | https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html | 2026-10-17 |
+
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [DECREE]: https://wetten.overheid.nl/BWBR0029262/2025-01-01
 [RULES]: https://wetten.overheid.nl/BWBR0029309/2025-01-01
@@ -278,22 +352,4 @@ No comprehensive-area credit is claimed.
 [G-INDEX]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen
 [CHANGE2026]: https://zoek.officielebekendmakingen.nl/stcrt-2026-3708.html
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: transitional admissions and saved-law cases; mixed activities; the export reference letter mismatch; the complete tax bill for goods leaving a warehouse. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

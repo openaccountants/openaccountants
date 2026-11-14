@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Inheritance/gift scope checked on 17 October 2026; this is not a tax-rate or estate-administration calculation"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
+domain: estate-wealth-tax
 depends_on:
   - workflow-base
   - bq-transfer-tax
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: inheritance and gifts
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 The former Antillean succession tax was not continued as a general tax on
 new BES events after the transition period. That does not establish that a
@@ -41,7 +46,24 @@ domain outputs/checks. Unknown mandatory legal conditions hold the complete
 financial output package. This Tier 2 guide establishes selected scope tests;
 it does not complete an estate, gift return or country pack.
 
-## Former succession tax and saved liabilities
+## Ask the client first
+
+1. **Is it a death or a gift**, and its date.
+2. **The deceased's or donor's nationality** and residence history, especially any residence in the European Netherlands and when it ended.
+3. **Whether the donor is a legal person**, and where it is established.
+4. **What is transferred**, including any BES property right or registered ship.
+5. **Any liability that arose before 10 October 2010** under the former Antillean succession tax.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Source |
+|---|---|---|
+| European Netherlands deemed residence, Dutch national who lived there (death or gift) | Ten years after leaving | SW, article 3(1): https://wetten.overheid.nl/BWBR0002226/2026-01-01 |
+| European Netherlands deemed residence, any donor who lived there (gift only) | One year after leaving | SW, article 3(2): https://wetten.overheid.nl/BWBR0002226/2026-01-01 |
+
+### Former succession tax and saved liabilities
 
 Wet geldstelsel BES article 13b(1)(g) names the
 **Successiebelastingverordening 1908**. Paragraphs 1–3 preserve specified
@@ -65,7 +87,7 @@ do not apply a current-event scope result to an old estate, existing legal
 relationship or unresolved historic assessment. Those cases require their
 saved instruments, dates and procedural branch. [MONEY]
 
-## European Netherlands residence tests
+### European Netherlands residence tests
 
 Successiewet 1956 article 1(1) charges inheritance by reference to a deceased
 person resident in Netherlands at death and gifts by reference to the donor
@@ -103,7 +125,7 @@ disputed residence, changes in nationality and complex legal instruments
 remain held here rather than resolved by rounding years of absence. [ESTATE];
 [GIFT]; [SW]
 
-## Separate BES and foreign charges
+### Separate BES and foreign charges
 
 An inherited or gifted BES property interest still requires the transfer-tax
 analysis, including the actual acquisition, partition or death-related
@@ -124,7 +146,9 @@ not proof of estate relief. Actual treaty/unilateral estate relief and any
 credit, deduction or exemption computation remain open. [BRN, article 2][BRN];
 [ESTATE]
 
-## Fictional classification cases
+## Worked cases
+
+### Fictional classification cases
 
 The following cases stipulate the stated facts, no special article 2 posting
 and no other residence fiction unless mentioned. They test individual scope
@@ -149,7 +173,51 @@ tax's separate result. The responsible practitioner retains identities,
 original civil instruments, tax identifiers and bank details outside the
 agent. Do not collect or submit those documents or details here.
 
-## Verification and completion limits
+### Recomputed cases
+
+**Case 1, a Dutch national eight years after leaving.** A Dutch national who left the European Netherlands for Bonaire in 2018 dies in 2026: eight years have passed, inside the ten-year branch, so the European Netherlands inheritance connection applies (first row of the table above). Someone who left in 2015 is eleven years out and outside it.
+
+```oa-check
+name: Ten-year deemed residence test, 2026 death
+inputs:
+  event_year: 2026
+  left_a: 2018
+  left_b: 2015
+steps:
+  - years_a: event_year - left_a
+  - years_b: event_year - left_b
+  - inside_a: 10 - years_a
+  - outside_b: years_b - 10
+expected:
+  years_a: 8
+  years_b: 11
+  inside_a: 2
+  outside_b: 1
+```
+
+**Case 2, a decision: give now or later?** A non-Dutch donor moved from the European Netherlands to Saba six months ago. A gift now falls inside the one-year gift branch; waiting until a full year has passed takes the gift outside it. On these facts the donor would wait about six more months (derived).
+
+```oa-check
+name: One-year gift branch, months remaining
+inputs:
+  months_since_move: 6
+steps:
+  - months_to_wait: 12 - months_since_move
+expected:
+  months_to_wait: 6
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-IG-NL | A European Netherlands inheritance or gift tax liability arises | Refer: rates, exemptions and the return belong to European Netherlands law |
+| R-BQ-IG-SAVED | A pre-transition succession-tax liability may survive | Refer: saved-law analysis needed |
+| R-BQ-IG-CIVIL | Civil-law qualification of the estate or gift is unclear | Refer to a notary |
+
+## Completion checklist
+
+### Verification and completion limits
 
 Check the deceased/donor rather than only the recipient; actual and deemed
 residence; ten-year versus one-year scope; gift versus death; individual
@@ -166,6 +234,21 @@ No complete civil-law, estate valuation, tariff/exemption, foreign relief,
 historic-law or filing review was performed. No private estate, actual
 engagement workbook, submission or practitioner sign-off was used.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| MONEY. Read for the provisions this skill cites as [MONEY]. | https://wetten.overheid.nl/BWBR0028551/2012-07-01 | 2026-10-17 |
+| START. Read for the provisions this skill cites as [START]. | https://zoek.officielebekendmakingen.nl/stb-2010-848.html | 2026-10-17 |
+| LETTER. Read for the provisions this skill cites as [LETTER]. | https://zoek.officielebekendmakingen.nl/kst-32893-7.html | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| FIN. Read for the provisions this skill cites as [FIN]. | https://wetten.overheid.nl/BWBR0028151/2023-01-01 | 2026-10-17 |
+| SW. Read for the provisions this skill cites as [SW]. | https://wetten.overheid.nl/BWBR0002226/2026-01-01 | 2026-10-17 |
+| AWR. Read for the provisions this skill cites as [AWR]. | https://wetten.overheid.nl/BWBR0002320/2026-10-01 | 2026-10-17 |
+| BRN. Read for the provisions this skill cites as [BRN]. | https://wetten.overheid.nl/BWBR0029675/2025-01-01 | 2026-10-17 |
+| ESTATE. Read for the provisions this skill cites as [ESTATE]. | https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/ik-heb-een-erfenis-uit-het-buitenland-waar-betaal-ik-erfbelasting | 2026-10-17 |
+| GIFT. Read for the provisions this skill cites as [GIFT]. | https://www.belastingdienst.nl/wps/wcm/connect/nl/schenken/content/ik-krijg-een-schenking-uit-het-buitenland-moet-ik-aangifte-schenkbelasting-doen | 2026-10-17 |
+
 [MONEY]: https://wetten.overheid.nl/BWBR0028551/2012-07-01
 [START]: https://zoek.officielebekendmakingen.nl/stb-2010-848.html
 [LETTER]: https://zoek.officielebekendmakingen.nl/kst-32893-7.html
@@ -177,22 +260,4 @@ engagement workbook, submission or practitioner sign-off was used.
 [ESTATE]: https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/content/ik-heb-een-erfenis-uit-het-buitenland-waar-betaal-ik-erfbelasting
 [GIFT]: https://www.belastingdienst.nl/wps/wcm/connect/nl/schenken/content/ik-krijg-een-schenking-uit-het-buitenland-moet-ik-aangifte-schenkbelasting-doen
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: estate valuation, exemptions and rates under European Netherlands law (outside this skill); foreign relief; forms; whether the one-year period ends exactly twelve months after departure or on the following day. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

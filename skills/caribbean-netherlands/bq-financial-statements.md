@@ -16,15 +16,20 @@ category: financial-statements
 tax_year: 2026
 tax_year_notes: "2026 company-reporting reference; framework and financial-year applicability must be established separately"
 tier: 2
-last_updated: 2026-10-17
-version: 0.3
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.4
+type: situation-rules
+domain: financial-statements
 depends_on:
   - workflow-base
   - financial-statements-workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: company reporting in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Determine the legal form, articles, financial year and applicable reporting
 framework before preparing accounts. Ordinary NV/BV accounts, the large-NV
@@ -43,7 +48,7 @@ Combine regime/framework confirmation with the universal profile round trip.
 The domain's later adjustment checkpoint confirms supporting facts and estimate
 inputs; it cannot waive a required entry or an unresolved source condition.
 
-## Scope, period and completion conditions
+### Scope, period and completion conditions
 
 This guide covers selected Book 2 accounts, examination, approval, inspection
 and retention duties for NVs and BVs, with routing notes for other legal
@@ -91,16 +96,43 @@ conditions before using this reference to prepare engagement statements.
 These twelve slots are not all operationally complete. No unknown law, policy,
 amount or disclosure can be supplied through a factual default.
 
-## Statutory 2026 regimes, amounts and periods
+## Ask the client first
+
+1. **The legal form** (NV, BV, association, cooperative) and the financial year end.
+2. **For an NV, the large-company facts**: workforce around the balance date, balance-sheet assets and annual net turnover.
+3. **Whether the articles opt into** the IASB regime (articles 120 to 122, and 123 to 124).
+4. **Group position**: is the company consolidated by a parent that could give the article 123 undertaking, and do all shareholders consent?
+5. **Dates**: when the accounts were prepared, approved and made available.
+
+### Defaults, questions and reviewer thresholds
+
+| Missing item | Treatment | Alternative and disclosure |
+|---|---|---|
+| Legal form, year, articles, threshold evidence or sector status | Needs Input; no factual default | Obtain the evidence before selecting a regime |
+| Framework, standard version, policy, tax base or disclosure rule | Needs Input as a source condition | Verify applicable authority; a higher expense or liability cannot establish unknown law |
+| Ledger, asset estimate, tax amount, group consent or expert evidence | Needs Input; no factual default | Reconcile source records and obtain the responsible professional's evidence |
+| Currency, rounding, filing procedure or calendar adjustment | Needs Input for the dependent output | Retain source precision and obtain the actual method or instruction |
+
+This version permits no substantive factual defaults. Essential questions must
+be resolved at any impact; the configured question threshold is USD 0 if a
+later verified companion expressly introduces a default. Reviewer attention
+starts at USD 0 for every adjustment, regime boundary, exemption, source hold
+and nil result. These settings are workflow controls, not statutory materiality.
+They do not replace accounting materiality judgements. Preserve universal
+grouping and its ten-question ceiling.
+
+## The method, step by step
+
+### Statutory 2026 regimes, amounts and periods
 
 The statute's NV test is cumulative. All of the following must hold under
 article 119(2); a two-out-of-three test is incorrect. [J2]
 
-| Large-NV condition | Statutory test |
-|---|---|
-| Workforce | At some time within one month before or after the balance date, at least 20 workers together making at least 20 labour days, working in BES, Curaçao or Sint Maarten through the company, a group company, an employment agency or similar institution |
-| Assets | More than USD 2.8 million, or its equivalent in other currency, on the balance sheet prepared under article 120(3) |
-| Annual net turnover | More than USD 5.6 million, or its equivalent in other currency, calculated under article 120(3) |
+| Large-NV condition | Statutory test | Source of the figure |
+|---|---|---|
+| Workforce | At some time within one month before or after the balance date, at least 20 workers together making at least 20 labour days, working in BES, Curaçao or Sint Maarten through the company, a group company, an employment agency or similar institution | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Assets | More than USD 2.8 million, or its equivalent in other currency, on the balance sheet prepared under article 120(3) | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Annual net turnover | More than USD 5.6 million, or its equivalent in other currency, calculated under article 120(3) | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
 
 Equality with either monetary boundary fails that condition. Do not substitute
 European Netherlands, EU micro/small/medium or two-year tests for the displayed
@@ -143,9 +175,9 @@ specified supervisor/expert conditions apply. Article 94 covers cooperative
 and mutual accounts, with its own articles-based opt-in. Do not apply NV/BV
 approval or audit rules to these forms without completing their analysis. [J2]
 
-## Preparation, examination and publication rules
+### Preparation, examination and publication rules
 
-### Establish the regime and framework first
+#### Establish the regime and framework first
 
 1. Read the actual deed/articles, year-end and any amendments. The calendar
    year is the default only where the articles designate no other financial
@@ -164,7 +196,7 @@ approval or audit rules to these forms without completing their analysis. [J2]
    that framework and period. Hold unresolved recognition, measurement, tax or
    source conditions before constructing the engagement output package.
 
-### Prepare the accounts, report and expert evidence
+#### Prepare the accounts, report and expert evidence
 
 Under article 120, prepare the accounts and annual report in the articles'
 language unless the general meeting has decided otherwise beforehand. Add
@@ -190,7 +222,7 @@ Verify the actual person's entitlement; a generic accountant title does not
 establish eligibility. Attach the written statement before meeting approval.
 [J2, article 121]
 
-### Distinguish office availability, registry notice and deposit
+#### Distinguish office availability, registry notice and deposit
 
 Article 122 normally requires a full accounts copy, dated with approval, to be
 available to interested parties at the company office within eight days of
@@ -206,7 +238,7 @@ additional conditions. The [Commercial Register Decree, article 23][R1]
 confirms the notice and applicable group-declaration duties. These are not a
 universal annual-accounts deposit rule for every BES entity. [J2, article 122]
 
-### Check every group-relief condition separately
+#### Check every group-relief condition separately
 
 Article 123 relief from article 122 requires qualifying consolidation under
 article 120(3), the specified written joint-liability undertaking, deposit of
@@ -229,12 +261,12 @@ and a different tax-retention period do not shorten that duty. Late or
 misleading accounts can engage articles 125–126 and other provisions; no
 complete penalty calculation or litigation deadline advice is provided here.
 
-## Selected framework controls
+### Selected framework controls
 
 Apply these points only after establishing the relevant framework. They do
 not supply its complete standards or an IFRS compliance conclusion.
 
-### Statement set, presentation and notes
+#### Statement set, presentation and notes
 
 The [IAS 1 overview][A1] identifies financial position, profit or loss and
 other comprehensive income (OCI), changes in equity, cash flows, notes and
@@ -264,7 +296,7 @@ USD on every BES company's statements. Retain source precision and establish
 conversion and display conventions; tax-return whole-dollar rules are not
 financial-statement rounding rules.
 
-### Depreciation and tax allocation
+#### Depreciation and tax allocation
 
 Verify each asset's applicable recognition, component, useful-life, residual,
 method and timing rules before posting depreciation. This reference supplies
@@ -290,7 +322,7 @@ location. This selected historical quotation does not establish every current
 tax rule or the paper's disputed instrument treatments. Hold the engagement
 entry until the applicable current authority and facts are verified.
 
-### Going concern
+#### Going concern
 
 The [IFRS Foundation's 2025 educational material][A9] explains the IAS 1
 assessment using all available future information, looking at least twelve
@@ -300,7 +332,7 @@ close-call judgements. If going concern is inappropriate, disclose the basis
 used and reasons; IAS 1 does not itself prescribe a replacement basis. Separate
 audit-standard or local-law requirements need their own applicability check.
 
-## Trial-balance mapping and output additions
+### Trial-balance mapping and output additions
 
 Map each actual ledger account to a justified statement line, note and
 recognition location. An account description cannot establish the applicable
@@ -340,7 +372,9 @@ approval, availability, notification, tax-return and sector duties in the filing
 checklist. Current procedure and calendar mapping must precede actual filing
 dates or field values.
 
-## Hypothetical component positions
+## Worked cases
+
+### Hypothetical component positions
 
 These 2026 positions stipulate the relevant facts and authority. They do not
 constitute complete financial statements, tax computations or audit opinions.
@@ -397,24 +431,48 @@ Amounts are USD unless stated otherwise.
    that charge by 2,500. These are stipulated established amounts, not rates
    or a BES levy-scope decision. [A8]
 
-## Defaults, questions and reviewer thresholds
+### Recomputed cases
 
-| Missing item | Treatment | Alternative and disclosure |
-|---|---|---|
-| Legal form, year, articles, threshold evidence or sector status | Needs Input; no factual default | Obtain the evidence before selecting a regime |
-| Framework, standard version, policy, tax base or disclosure rule | Needs Input as a source condition | Verify applicable authority; a higher expense or liability cannot establish unknown law |
-| Ledger, asset estimate, tax amount, group consent or expert evidence | Needs Input; no factual default | Reconcile source records and obtain the responsible professional's evidence |
-| Currency, rounding, filing procedure or calendar adjustment | Needs Input for the dependent output | Retain source precision and obtain the actual method or instruction |
+**Case 1, the strict large-NV boundaries.** An NV meeting the workforce test with assets of exactly USD 2,800,000 fails the assets condition (it must be more); at USD 2,800,001 it passes. Turnover of USD 5,700,000 passes (more than USD 5,600,000). The test is cumulative (example 1 above).
 
-This version permits no substantive factual defaults. Essential questions must
-be resolved at any impact; the configured question threshold is USD 0 if a
-later verified companion expressly introduces a default. Reviewer attention
-starts at USD 0 for every adjustment, regime boundary, exemption, source hold
-and nil result. These settings are workflow controls, not statutory materiality.
-They do not replace accounting materiality judgements. Preserve universal
-grouping and its ten-question ceiling.
+```oa-check
+name: Large-NV test margins over the boundaries
+inputs:
+  assets_at_boundary: 2800000
+  assets_plus_one: 2800001
+  turnover: 5700000
+steps:
+  - assets_margin_at_boundary: assets_at_boundary - 2800000
+  - assets_margin_plus_one: assets_plus_one - 2800000
+  - turnover_margin: turnover - 5600000
+expected:
+  assets_margin_at_boundary: 0
+  assets_margin_plus_one: 1
+  turnover_margin: 100000
+```
 
-## Topical refusal catalogue
+**Case 2, a decision: can the group claim audit relief?** Three of four shareholders consent in writing: 75%, not every shareholder, so article 124's extra condition fails even though article 123 is met. Separately, a depreciation charge of USD 10,000 splits into USD 6,000 expensed and USD 4,000 capitalised; deducting all USD 10,000 from profit misstates it by USD 4,000 (example 6).
+
+```oa-check
+name: Shareholder consent share, and depreciation split
+inputs:
+  consenting: 3
+  shareholders: 4
+  depreciation: 10000
+  expensed: 6000
+steps:
+  - consent_pct: consenting / shareholders * 100
+  - missing_consents: shareholders - consenting
+  - capitalised: depreciation - expensed
+expected:
+  consent_pct: 75
+  missing_consents: 1
+  capitalised: 4000
+```
+
+## When to refuse or refer
+
+### Topical refusal catalogue
 
 Apply the universal prohibitions and these exact messages. Needs Input is an
 evidence state, not a refusal. A refusal stops before partial engagement output.
@@ -433,7 +491,9 @@ expert engagement, approvals, publication events and reviewer role. Keep actual
 identity documents, tax identifiers, bank details and authentication material
 with the professional, outside agent inputs and outputs.
 
-## Review Checklist Items
+## Completion checklist
+
+### Review Checklist Items
 
 - Verify the legal form, period, articles, sector and every cumulative large-NV condition.
 - Establish BV/smaller-NV opt-in and any justified alternative framework.
@@ -450,27 +510,44 @@ with the professional, outside agent inputs and outputs.
 - Identify currency and presentation scale; preserve precision and resolve conversion methods.
 - Retain all universal/domain outputs, recalculation, applicable records and professional sign-off.
 
-## Primary source library
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| J1. Read for: Book 2, 1 January 2026 snapshot, valid through 30 June. | https://wetten.overheid.nl/BWBR0028744/?g=2026-01-01 | 2026-10-16 |
+| J2. Read for: Burgerlijk Wetboek BES Book 2, from 1 July 2026, articles 15, 89, 94, 116–126 and 216–219. | https://wetten.overheid.nl/BWBR0028744/2026-07-01 | 2026-10-16 |
+| H1. Read for: Staatsblad 2019/107, articles II, IV and V. | https://zoek.officielebekendmakingen.nl/stb-2019-107.html | 2026-10-16 |
+| H2. Read for: Staatsblad 2019/149, principal commencement on 1 July 2019. | https://zoek.officielebekendmakingen.nl/stb-2019-149.html | 2026-10-16 |
+| M1. Read for: Article 119 official information, threshold history and delegated-regulation metadata. | https://wetten.overheid.nl/BWBR0028744/2026-07-01/0/Boek2/Titeldeel5/Afdeling4/Artikel119/informatie | 2026-10-16 |
+| R1. Read for: Handelsregisterbesluit 2009 BES, article 23; operative version from 1 January 2022. | https://wetten.overheid.nl/BWBR0028479/2022-01-01 | 2026-10-16 |
+| A1. Read for: IFRS Foundation: IAS 1 overview, selected statement-set and compliance paragraphs. | https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements.html/ | 2026-10-16 |
+| A2. Read for: IFRS Foundation: IFRS 18 overview, effective date and early application. | https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/ | 2026-10-16 |
+| A3. Read for: IASB: IFRS 18 reference material, April 2024, pages 14, 16–20 and 29; selected IAS 1 concordance and markup, not a full operative edition. | https://www.ifrs.org/content/dam/ifrs/project/primary-financial-statements/ifrs-standard/reference-material-for-ifrs18.pdf | 2026-10-16 |
+| A4. Read for: IASB policy disclosure amendment announcement, 12 February 2021, effective for periods beginning on or after 1 January 2023. | https://www.ifrs.org/news-and-events/news/2021/02/iasb-amends-ifrs-standards-accounting-policy-disclosures-accounting-policies-accounting-estimates/ | 2026-10-16 |
+| A5. Read for: IFRS Foundation: IAS 21 overview, functional and presentation currency. | https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/ | 2026-10-16 |
+| A6. Read for: IFRIC staff paper AP3, January 2015, pages 5–7 quoting IAS 16.43 and .48–.49 only; staff analysis and testing-proceeds discussion are not operative authority. | https://www.ifrs.org/content/dam/ifrs/meetings/2015/january/ifrs-ic/ias-16-property-plant-and-equipment/ap3-accounting-for-proceeds-and-costs-of-testing-ppe.pdf | 2026-10-16 |
+| A7. Read for: IFRS Foundation: IAS 12 overview, tax scope and selected recognition/measurement summary. | https://www.ifrs.org/issued-standards/list-of-standards/ias-12-income-taxes/ | 2026-10-16 |
+| A8. Read for: IFRIC staff paper AP8, November 2015, pages 4–5 quoting IAS 12.58 and .61A only; no adoption of its disputed treatments or proposals. | https://www.ifrs.org/content/dam/ifrs/meetings/2015/november/ifrs-ic/ias-12-income-taxes/ap8-tax-consequences-of-interest-payments.pdf | 2026-10-16 |
+| A9. Read for: IFRS Foundation: going-concern educational material, May 2025, pages 1–4, IAS 1.25–.26 and IAS 10.14 discussion; it does not amend standards. | https://www.ifrs.org/content/dam/ifrs/supporting-implementation/educational-materials/going-concern-2025.pdf | 2026-10-16 |
+
+### Primary source library
 
 Sources were inspected on 16 October 2026. Public IFRS summaries and identified
 historical quotations support the bounded points stated above; they do not
 certify complete current standard coverage or an entity's compliance.
 
-- **J1:** [Book 2, 1 January 2026 snapshot][J1], valid through 30 June.
-- **J2:** [Burgerlijk Wetboek BES Book 2, from 1 July 2026][J2], articles 15, 89, 94, 116–126 and 216–219.
-- **H1:** [Staatsblad 2019/107][H1], articles II, IV and V.
-- **H2:** [Staatsblad 2019/149][H2], principal commencement on 1 July 2019.
-- **M1:** [Article 119 official information][M1], threshold history and delegated-regulation metadata.
-- **R1:** [Handelsregisterbesluit 2009 BES][R1], article 23; operative version from 1 January 2022.
-- **A1:** [IFRS Foundation: IAS 1 overview][A1], selected statement-set and compliance paragraphs.
-- **A2:** [IFRS Foundation: IFRS 18 overview][A2], effective date and early application.
-- **A3:** [IASB: IFRS 18 reference material, April 2024][A3], pages 14, 16–20 and 29; selected IAS 1 concordance and markup, not a full operative edition.
-- **A4:** [IASB policy disclosure amendment announcement, 12 February 2021][A4], effective for periods beginning on or after 1 January 2023.
-- **A5:** [IFRS Foundation: IAS 21 overview][A5], functional and presentation currency.
-- **A6:** [IFRIC staff paper AP3, January 2015][A6], pages 5–7 quoting IAS 16.43 and .48–.49 only; staff analysis and testing-proceeds discussion are not operative authority.
-- **A7:** [IFRS Foundation: IAS 12 overview][A7], tax scope and selected recognition/measurement summary.
-- **A8:** [IFRIC staff paper AP8, November 2015][A8], pages 4–5 quoting IAS 12.58 and .61A only; no adoption of its disputed treatments or proposals.
-- **A9:** [IFRS Foundation: going-concern educational material, May 2025][A9], pages 1–4, IAS 1.25–.26 and IAS 10.14 discussion; it does not amend standards.
+### Revision and assurance
+
+Version 0.3, 17 October 2026: adds ordinary NV/BV inspection rights and aligns
+confirmation checkpoints with the shared contracts. Version 0.2 added shareholder inspection and meeting-submission
+timing under article 120 and aligns depreciation reconciliation with the shared
+workflow. Retains seven hypothetical positions. Mandatory domain, framework
+and operational conditions remain open; no country-complete or
+accountant-reviewed status is claimed.
+
+This guide supports professional review and does not constitute tax, legal or
+financial advice. The reviewer verifies the sources, framework, accounts,
+examination, filing and final treatment before reliance.
 
 [J1]: https://wetten.overheid.nl/BWBR0028744/?g=2026-01-01
 [J2]: https://wetten.overheid.nl/BWBR0028744/2026-07-01
@@ -488,35 +565,4 @@ certify complete current standard coverage or an entity's compliance.
 [A8]: https://www.ifrs.org/content/dam/ifrs/meetings/2015/november/ifrs-ic/ias-12-income-taxes/ap8-tax-consequences-of-interest-payments.pdf
 [A9]: https://www.ifrs.org/content/dam/ifrs/supporting-implementation/educational-materials/going-concern-2025.pdf
 
-## Revision and assurance
-
-Version 0.3, 17 October 2026: adds ordinary NV/BV inspection rights and aligns
-confirmation checkpoints with the shared contracts. Version 0.2 added shareholder inspection and meeting-submission
-timing under article 120 and aligns depreciation reconciliation with the shared
-workflow. Retains seven hypothetical positions. Mandatory domain, framework
-and operational conditions remain open; no country-complete or
-accountant-reviewed status is claimed.
-
-This guide supports professional review and does not constitute tax, legal or
-financial advice. The reviewer verifies the sources, framework, accounts,
-examination, filing and final treatment before reliance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: complete framework policies and disclosures for ordinary socially accepted norms; filing procedures with the Chamber of Commerce; local tax calculations inside the accounts; sector rules that may require an audit. Sources were read by Ryan Duguid on 2026-10-16 and not re-opened on import.

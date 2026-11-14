@@ -16,14 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 national procedure; tax-specific periods, decisions and transitional rules established separately"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: filing-howto
+domain: income-tax
 depends_on:
   - workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: national tax compliance in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Identify the tax, taxpayer/withholding agent, requested period, decision and
 procedural event before selecting a deadline or remedy. A return period, payment
@@ -37,7 +42,17 @@ general procedure and conditional components. It does not certify every country
 slot, a complete controversy strategy or a live filing. Unknown mandatory
 conditions hold the complete financial output package.
 
-## Registration, records and the authority
+## Ask the client first
+
+1. **Which tax and period** the notice or return concerns.
+2. **The documents received**: an invitation to file, a provisional or final assessment, a reminder, with the date on each.
+3. **Whether the return was filed and when**, and any extension granted.
+4. **Payments made**, with dates and the references used.
+5. **Whether the client disagrees** with an assessment (objection) or cannot pay (payment relief).
+
+## The method, step by step
+
+### Registration, records and the authority
 
 Belastingwet BES distinguishes the inspector's assessment role from the
 receiver's collection role. The assessment notice records the liability and
@@ -72,7 +87,7 @@ inspector can grant an extension. Use `bq-financial-statements` for its complete
 reporting conditions; tax submission is separate from preparing, adopting or
 publishing accounts under company law. [B1]
 
-## Returns and assessments
+### Returns and assessments
 
 The inspector may invite a person believed liable or obliged to withhold to
 file; a person requesting an invitation is entitled to one under article 8.3.
@@ -110,55 +125,7 @@ are not a generic permission to reopen every year. Actual time-bar conclusions,
 correction duties, penalties and exceptional assessments require their full
 applicable branch and are held here. [B1]
 
-## Assessment payment and deadline extensions
-
-Article 8.43 supplies these collection terms for assessments. They are separate
-from article 8.11's remittance-on-return rules. [B1]
-
-| Assessment | Collection term |
-|---|---|
-| Ordinary assessment | Two months after notice date. |
-| Provisional assessment dated before 1 November of the relevant tax year | Equal instalments in the months remaining after the notice month, each due on that month's last day. |
-| Additional or unpaid-remittance assessment | One month after notice date. |
-
-Article 8.43(4) expressly excludes the General Time Limits Act from those
-terms. A Sunday therefore does not itself move an article 8.43 payment date
-to Monday. Accelerated collection under article 8.52 and an actual relief
-decision also require separate treatment. [B1]
-
-The General Time Limits Act applies in BES through article 5a. Where applicable,
-article 1 moves an ending Saturday, Sunday or recognised holiday to the next
-eligible day. Article 2 has a separate minimum-working-days rule for terms of
-at least three days. Article 4 excludes its specified long, hourly and other
-terms, including terms exceeding three months; it is not a universal extension
-for every reporting or response period. Article 5 addresses terms in general
-administrative orders. Check the source establishing the particular term and
-any express exclusion first. [ATW]
-
-The Act lists recognised holidays and equates Good Friday. Its delegated order
-additionally designates **2 January and 15 May 2026**, with separate future-year
-dates. Do not substitute a general employment-holiday list, treat every local
-holiday as an ATW holiday, or carry the 2026 extra days into another year.
-[ATW, articles 1–5a][ATW]; [EXTRA]
-
-These fictional calendar components stipulate a valid ordinary assessment with
-the displayed notice date, no accelerated collection or relief, a standard
-two-calendar-month objection term and no unusual service/admissibility issue.
-They compare the ordinary candidate dates with the stated statutory extension;
-they do not certify a real notice, filing receipt or complete calendar. [B1]; [ATW]; [EXTRA]
-
-| Notice date | Ordinary two-month candidate | Article 8.43 payment date | Objection component after applicable ATW extension |
-|---|---|---|---|
-| 1 January 2026 | 1 March 2026, Sunday | 1 March | 2 March, Monday |
-| 15 March 2026 | 15 May 2026, designated extra day | 15 May | 18 May, Monday, after the weekend |
-
-For a separate stipulated USD 1,200 provisional assessment dated 10 September
-2026 in that tax year, three equal USD 400 instalments fall on 31 October,
-30 November and 31 December. Article 8.43 excludes the general weekend extension
-even though 31 October is Saturday. Establish the actual year, notice and any
-special decision before applying this pattern. [B1]
-
-## Objection, court appeal and enforcement opposition
+### Objection, court appeal and enforcement opposition
 
 Use `bq-penalties-corrections` for selected administrative-penalty ceilings,
 current policy and correction/reduction routes. An actual culpability finding
@@ -205,7 +172,7 @@ restoration of defects and actual litigation require their complete applicable
 sources and professional handling. This reference does not calculate a real
 litigation deadline or submit a document. [B1]
 
-### Public payment-relief page and the statutory route
+#### Public payment-relief page and the statutory route
 
 The personal payment-relief page describes a ten-day appeal to the director
 after refusal and an eight-week response. Current articles 8.41a, 8.57(2) and
@@ -217,7 +184,7 @@ prompt professional clarification; do not assume that relying on a longer
 period protects every potentially relevant step. This guide holds that actual
 conflict rather than resolving it from the web summary alone. [B1]; [RULES]; [G-RELIEF]
 
-## Payment relief, set-off and allocation
+### Payment relief, set-off and allocation
 
 Article 8.57 permits payment relief under the delegated rules and continues
 collection interest during relief. Implementing regulation articles 8.10–8.18
@@ -282,7 +249,7 @@ A bank debit without the authority's allocation does not establish that the
 oldest principal was fully discharged. Keep costs, interest, penalties and
 principal visible and avoid recording the same settlement twice.
 
-## Interest: current statute and older policy
+### Interest: current statute and older policy
 
 Article 8.44 provides simple collection interest at **6% a year**, a USD 1
 minimum and upward rounding to a multiple of USD 0.50. Its current period
@@ -312,7 +279,102 @@ threshold or apply refund interest automatically where taxpayer-caused delay
 is excluded by paragraph 4. Actual amounts retain the method/source hold above.
 [B1]
 
-## Completion conditions and self-checks
+## Worked cases
+
+### Recomputed cases
+
+**Case 1, allocation of a part payment.** With collection costs USD 30, interest USD 20, a penalty USD 50, older principal USD 750 and newer principal USD 1,000, a payment of USD 600 is allocated in the article 8.40 order: costs, interest, penalty, then the oldest principal (USD 500), leaving USD 250 of the older principal unpaid (table above).
+
+```oa-check
+name: Article 8.40 allocation of a USD 600 payment
+inputs:
+  payment: 600
+  costs: 30
+  interest: 20
+  penalty: 50
+  older_principal: 750
+steps:
+  - to_older: min(payment - costs - interest - penalty, older_principal)
+  - older_remaining: older_principal - to_older
+expected:
+  to_older: 500
+  older_remaining: 250
+```
+
+**Case 2, a decision: pay in instalments as the statute sets?** A provisional assessment of USD 1,200 dated 10 September 2026 is payable in three equal instalments of USD 400 on 31 October, 30 November and 31 December 2026. The general weekend extension does not apply under article 8.43, so 31 October (a Saturday) stays the due date.
+
+```oa-check
+name: Provisional assessment in three instalments (2026)
+inputs:
+  assessment: 1200
+  instalments: 3
+steps:
+  - each: assessment / instalments
+expected:
+  each: 400
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-TC-INTEREST | Collection interest must be computed | Refer: the current statutory method is not settled against the older policy |
+| R-BQ-TC-COURT | Appeal beyond first instance, or enforcement opposition | Refer to a lawyer |
+| R-BQ-TC-LATE | Late filings with penalty exposure | Refer to `bq-penalties-corrections` |
+
+## Filing and payment
+
+### Assessment payment and deadline extensions
+
+Article 8.43 supplies these collection terms for assessments. They are separate
+from article 8.11's remittance-on-return rules. [B1]
+
+| Assessment | Collection term |
+|---|---|
+| Ordinary assessment | Two months after notice date. |
+| Provisional assessment dated before 1 November of the relevant tax year | Equal instalments in the months remaining after the notice month, each due on that month's last day. |
+| Additional or unpaid-remittance assessment | One month after notice date. |
+
+Article 8.43(4) expressly excludes the General Time Limits Act from those
+terms. A Sunday therefore does not itself move an article 8.43 payment date
+to Monday. Accelerated collection under article 8.52 and an actual relief
+decision also require separate treatment. [B1]
+
+The General Time Limits Act applies in BES through article 5a. Where applicable,
+article 1 moves an ending Saturday, Sunday or recognised holiday to the next
+eligible day. Article 2 has a separate minimum-working-days rule for terms of
+at least three days. Article 4 excludes its specified long, hourly and other
+terms, including terms exceeding three months; it is not a universal extension
+for every reporting or response period. Article 5 addresses terms in general
+administrative orders. Check the source establishing the particular term and
+any express exclusion first. [ATW]
+
+The Act lists recognised holidays and equates Good Friday. Its delegated order
+additionally designates **2 January and 15 May 2026**, with separate future-year
+dates. Do not substitute a general employment-holiday list, treat every local
+holiday as an ATW holiday, or carry the 2026 extra days into another year.
+[ATW, articles 1–5a][ATW]; [EXTRA]
+
+These fictional calendar components stipulate a valid ordinary assessment with
+the displayed notice date, no accelerated collection or relief, a standard
+two-calendar-month objection term and no unusual service/admissibility issue.
+They compare the ordinary candidate dates with the stated statutory extension;
+they do not certify a real notice, filing receipt or complete calendar. [B1]; [ATW]; [EXTRA]
+
+| Notice date | Ordinary two-month candidate | Article 8.43 payment date | Objection component after applicable ATW extension |
+|---|---|---|---|
+| 1 January 2026 | 1 March 2026, Sunday | 1 March | 2 March, Monday |
+| 15 March 2026 | 15 May 2026, designated extra day | 15 May | 18 May, Monday, after the weekend |
+
+For a separate stipulated USD 1,200 provisional assessment dated 10 September
+2026 in that tax year, three equal USD 400 instalments fall on 31 October,
+30 November and 31 December. Article 8.43 excludes the general weekend extension
+even though 31 October is Saturday. Establish the actual year, notice and any
+special decision before applying this pattern. [B1]
+
+## Completion checklist
+
+### Completion conditions and self-checks
 
 No missing-fact default is authorised. Unknown tax, decision, service event,
 period, exception, source, eligibility, payment allocation or method remains
@@ -335,7 +397,22 @@ all universal/domain outputs. Obtain professional review. No real taxpayer,
 court filing, payment, portal or engagement workbook was tested. This guide
 does not establish comprehensive country coverage.
 
-## Primary sources and read scope
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| B-JAN. Read for the provisions this skill cites as [B-JAN]. | https://wetten.overheid.nl/BWBR0029244/2026-01-01 | 2026-10-17 |
+| B-FEB. Read for the provisions this skill cites as [B-FEB]. | https://wetten.overheid.nl/BWBR0029244/2026-02-21 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| POLICY. Read for the provisions this skill cites as [POLICY]. | https://wetten.overheid.nl/BWBR0040762/2018-03-29 | 2026-10-17 |
+| ATW. Read for the provisions this skill cites as [ATW]. | https://wetten.overheid.nl/BWBR0002448/2010-10-10 | 2026-10-17 |
+| EXTRA. Read for the provisions this skill cites as [EXTRA]. | https://wetten.overheid.nl/BWBR0051300/2025-07-22 | 2026-10-17 |
+| CHANGE. Read for the provisions this skill cites as [CHANGE]. | https://zoek.officielebekendmakingen.nl/stb-2019-510.html | 2026-10-17 |
+| G-OBJECT. Read for the provisions this skill cites as [G-OBJECT]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/bezwaar-en-beroep-belastingdienst | 2026-10-17 |
+| G-RELIEF. Read for the provisions this skill cites as [G-RELIEF]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/invordering-particulieren/als-u-niet-kunt-betalen | 2026-10-17 |
+
+### Primary sources and read scope
 
 Read on 17 October 2026. Fifty selected national-law articles were compared
 across the [January][B-JAN], [February][B-FEB] and [April][B1] 2026 versions and
@@ -363,22 +440,4 @@ are retained; extraction or a citation alone does not establish applicability.
 [G-OBJECT]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-bedrijven/bezwaar-en-beroep-belastingdienst
 [G-RELIEF]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/invordering-particulieren/als-u-niet-kunt-betalen
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the current method for collection interest (statute against older policy); interactions between payment relief and set-off; special collection cases; the actual return and notice forms. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Customs valuation checked on 17 October 2026; actual acceptance, import and debt dates established separately"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: computation
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: customs valuation
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Determine the actual island, goods, customs destination, declarant, import
 event, valuation method and applicable version before calculating an import
@@ -42,7 +47,24 @@ outputs/checks. This Tier 2 reference covers valuation and charge separation;
 it does not complete customs clearance, an actual return or a country pack.
 Unknown mandatory conditions hold the complete financial output package.
 
-## Price is the start of a method
+## Ask the client first
+
+1. **The export-sale price** and whether buyer and seller are connected.
+2. **Costs not in the price**: packing, freight and insurance to the point of entry, assists, royalties and licence fees.
+3. **Costs in the price that are excluded**, such as separately invoiced post-import installation or transport after arrival.
+4. **The invoice currency** and the date the customs debt arises (for the official exchange rate).
+5. **The island of import**, for the ABB rate and any excise.
+
+## The method, step by step
+
+### Key figures, 2026
+
+| Item | Figure | Source |
+|---|---|---|
+| Import duty (invoerrecht) tariff | Nil (statutory nil tariff); other import charges and formalities still apply | DAB: https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| ABB on an ordinary import | 8% on Bonaire; 6% on Saba and Sint Eustatius, on customs value plus the article 6.18 additions | B1, articles 6.18 to 6.19a: https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
+
+### Price is the start of a method
 
 Article 3.7 normally values goods when the customs declaration is accepted.
 Article 3.14 supplies an ordered hierarchy:
@@ -77,7 +99,7 @@ price influence or the stated closely approximating values, with the required
 adjustments and evidence. Keep the customs analysis separate from a generic
 transfer-pricing conclusion. [DAB]
 
-## Transaction-value adjustments
+### Transaction-value adjustments
 
 Add only qualifying amounts not already included in the price. Article
 3.18 requires objective, quantifiable data and addresses inspector decisions
@@ -112,7 +134,7 @@ buyer-owned transport, zero cash paid does not alone mean zero freight in
 customs value. A claimed deduction with no required separation or proof
 remains held. [DAB]
 
-## Alternative methods and evidence
+### Alternative methods and evidence
 
 | Method | Rule to preserve |
 |---|---|
@@ -131,7 +153,7 @@ does not eliminate the underlying valuation or every customs declaration.
 Actual documents, notices, authorised representation, clearance and remedies
 need their complete procedural branch. [DAB]
 
-## Foreign currency, duty rounding and ABB
+### Foreign currency, duty rounding and ABB
 
 Article 3.12 supplies the official-rate date and fallback sequence, including
 its separately specified publication/currency branches and revaluation rule.
@@ -164,7 +186,7 @@ Use the actual vehicle definitions, statutory tariff and exceptions through
 traveller-baggage freight statement likewise does not replace the special
 relief and valuation rules for an actual traveller. [AUTH]; [B1]
 
-### Fictional component reconciliation
+#### Fictional component reconciliation
 
 Assume a Bonaire taxable import, an acceptable export-sale transaction value,
 USD inputs, all stated additions qualifying and separately established,
@@ -194,7 +216,60 @@ do not automatically invalidate the price, and a no-sale gift does not
 justify a fictitious zero. These are classification controls, not actual
 case findings. [DAB]
 
-## Verification and limits
+## Worked cases
+
+### Recomputed cases
+
+**Case 1, building the customs value and the import charges.** An export-sale price of USD 1,000 plus packing USD 40, freight USD 100, insurance USD 10 and an assist USD 50 gives a customs value of USD 1,200. Import duty is nil. With independently established excise of USD 100, the Bonaire ABB base is USD 1,300 and ABB at 8% is USD 104; the three charges total USD 204 (reconciliation above).
+
+```oa-check
+name: Bonaire import, customs value to ABB (2026)
+inputs:
+  price: 1000
+  packing: 40
+  freight: 100
+  insurance: 10
+  assist: 50
+  excise: 100
+steps:
+  - customs_value: price + packing + freight + insurance + assist
+  - abb_base: customs_value + 0 + excise
+  - abb: abb_base * 0.08
+  - total_charges: 0 + excise + abb
+expected:
+  customs_value: 1200
+  abb_base: 1300
+  abb: 104
+  total_charges: 204
+```
+
+**Case 2, a decision: is installation in the value?** If the invoice also shows a separately evidenced post-import installation charge of USD 200, it is excluded under article 3.19 and ABB stays USD 104. If the charge is not separated on the invoice, the exclusion is not established: on a USD 1,400 customs value the ABB would be USD 120 (derived, assuming the same additions).
+
+```oa-check
+name: Separated against unseparated installation charge (2026)
+inputs:
+  customs_value: 1200
+  installation: 200
+  excise: 100
+steps:
+  - abb_separated: (customs_value + excise) * 0.08
+  - abb_unseparated: (customs_value + installation + excise) * 0.08
+expected:
+  abb_separated: 104
+  abb_unseparated: 120
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-CV-METHOD | No acceptable transaction value; an alternative method is needed | Refer: the fallback methods need evidence this skill cannot supply |
+| R-BQ-CV-FX | The statutory exchange rate cannot be established | Hold the result; do not use a card or web rate |
+| R-BQ-CV-CLASS | Tariff classification or an exemption is disputed | Refer to `bq-customs-clearance` and `bq-personal-import-relief` |
+
+## Completion checklist
+
+### Verification and limits
 
 Check island, goods, destination and event; method order and conditions;
 actual direct/indirect price; related-party evidence; every addition and
@@ -214,26 +289,16 @@ No private invoice, identity/tax number, bank details, submission, engagement
 workbook or practitioner sign-off was used. No comprehensive-area credit
 is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| AUTH. Read for the provisions this skill cites as [AUTH]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/invoerbelastingen-particulieren | 2026-10-17 |
+
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
 [AUTH]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/invoerbelastingen-particulieren
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the official exchange-rate publication for a live conversion; customs value rounding beyond article 3.5's import duty rules; tariff classification; the declaration forms. The authority page repeats an unqualified 25% vehicle ABB sentence alongside the progressive Saba and Sint Eustatius table; `bq-abb` follows the statute. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

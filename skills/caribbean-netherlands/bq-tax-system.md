@@ -15,14 +15,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "System-scope reference checked on 17 October 2026; establish the version applicable to each event"
 tier: 2
-last_updated: 2026-10-17
-version: 0.7
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.8
+type: router
+domain: income-tax
 depends_on:
   - workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: tax-system scope
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Identify the island, person or entity, activity, asset, event date and legal
 instrument before selecting a tax table. The catalogue label BQ groups three
@@ -32,7 +37,16 @@ Preserve source gates, confirmed profile, refusals, four universal outputs
 and all domain outputs/checks. This Tier 2 reference does not establish a
 complete country pack or a complete financial output package.
 
-## Territory, residence and money
+## Ask the client first
+
+1. **Which island**: Bonaire, Sint Eustatius or Saba (island ordinances differ).
+2. **Who**: an individual, an entity, an employer, an importer or a property holder, and whether resident or established in BES.
+3. **What happened**: income earned, a distribution, a supply or import, a property held or bought, a prize, a death or gift.
+4. **When**: the date of the event and the tax period.
+
+## The method, step by step
+
+### Territory, residence and money
 
 Belastingwet BES articles 1.1–1.3 apply the defined BES taxes to Bonaire,
 Sint Eustatius and Saba. The definition includes the specified seabed,
@@ -56,7 +70,7 @@ not prescribe every tax's rounding or a conversion rate for foreign receipts.
 Keep source currency, valuation date, applicable conversion method and
 statutory rounding separate. [MONEY, articles 1–2][MONEY]
 
-## National taxes and companion references
+### National taxes and companion references
 
 Article 1.2 lists property tax, distribution tax, general expenditure tax
 (ABB), transfer tax and gambling tax. Article 1.3's defined BES taxes also
@@ -89,7 +103,7 @@ events. Establish the actual assessment year, accounting period and event
 before using a companion's deadline. [FIN, article 43][FIN];
 `bq-gambling-tax`; `bq-tax-compliance`
 
-## Island taxing powers and actual ordinances
+### Island taxing powers and actual ordinances
 
 FinBES article 40 requires an island ordinance to introduce, amend or abolish
 an island tax. Article 41 requires the relevant taxpayer, object, event, base,
@@ -127,7 +141,9 @@ adaptations. Do not copy national filing, collection or remedy instructions
 without reading those provisions and the actual ordinance. Actual local
 deadline and form mapping remains held. [FIN, articles 67 and 69][FIN]
 
-## Transition and classification cases
+## Worked cases
+
+### Transition and classification cases
 
 Wet geldstelsel BES article 13b preserves specified pre-transition rights,
 obligations and legal relationships. Its temporary continuation of the old
@@ -155,7 +171,56 @@ period; tax principal versus asset value; and saved versus new liabilities.
 Unknown mandatory conditions remain Needs Input or a hold under the loaded
 workflow. A blank tax cell is not affirmative evidence of an absent tax.
 
-## Primary sources and limits
+### Recomputed cases
+
+**Case 1, island additions are a share of the national tax.** National property tax is USD 1,000 and a valid ordinance (stipulated) imposes additions of 20% of that principal: the addition is USD 200 and the total USD 1,200. The 20% is fictional.
+
+```oa-check
+name: Island additions as a percentage of the national principal
+inputs:
+  national_tax: 1000
+  addition_pct: 20
+steps:
+  - addition: pct(national_tax, addition_pct)
+  - total: national_tax + addition
+expected:
+  addition: 200
+  total: 1200
+```
+
+**Case 2, a decision: apply the percentage to the tax or to the value?** If the same stipulated 20% were wrongly applied to a property value of USD 200,000, the result would be USD 40,000, two hundred times the correct addition. Article 50 FinBES ties the additions to the tax principal.
+
+```oa-check
+name: Additions wrongly applied to property value
+inputs:
+  value: 200000
+  correct_addition: 200
+steps:
+  - wrong_addition: pct(value, 20)
+  - multiple: wrong_addition / correct_addition
+expected:
+  wrong_addition: 40000
+  multiple: 200
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-SYS-ISLAND | An island tax is needed and the island's own ordinance and tariff are not supplied | Refer: do not copy another island's rate |
+| R-BQ-SYS-OTHER | Curacao, Aruba or Sint Maarten, or European Netherlands tax | Refer: these are not BES; load that jurisdiction's skills |
+| R-BQ-SYS-SAVED | A liability that may have arisen before 1 January 2011 | Refer: saved-law analysis |
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for Belastingwet BES articles 1.1 to 1.5: territory, the defined BES taxes, residence and establishment. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| MONEY. Read for Wet geldstelsel BES articles 1 to 2 (US dollar) and 13a to 13b (transition and saved liabilities). | https://wetten.overheid.nl/BWBR0028551/2012-07-01 | 2026-10-17 |
+| FIN. Read for Wet financien openbare lichamen BES (FinBES) articles 40 to 65, 67 and 69: island taxing powers. | https://wetten.overheid.nl/BWBR0028151/2023-01-01 | 2026-10-17 |
+| START. Read for the commencement decree, Stb. 2010, 848, and its explanatory note, read in full. | https://zoek.officielebekendmakingen.nl/stb-2010-848.html | 2026-10-17 |
+
+### Primary sources and limits
 
 Checked on 17 October 2026: Belastingwet BES articles 1.1–1.5; the currency
 law's articles 1–2 and 13a–13b; FinBES articles 40–65, 67 and 69; and the
@@ -174,22 +239,4 @@ practitioner sign-off was used.
 [FIN]: https://wetten.overheid.nl/BWBR0028151/2023-01-01
 [START]: https://zoek.officielebekendmakingen.nl/stb-2010-848.html
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: island ordinances and tariffs other than those in the companion skills; customs and excise detail beyond the companions; live authority routing and forms. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

@@ -15,9 +15,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected administrative penalties and correction controls checked on 17 October 2026; actual conduct, decision and applicable period required"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: computation
+domain: income-tax
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -26,6 +27,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: penalties and corrections
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the tax, obligation, period, person, conduct, amount, actual
 notification, correction and prior decisions. Keep tax, interest, costs
@@ -41,7 +46,17 @@ financial output package. This Tier 2 reference supplies selected controls
 and conditional components, not a complete controversy strategy or country
 pack.
 
-## Statute, policy and the actual decision
+## Ask the client first
+
+1. **Which obligation was missed**: filing a return, paying or remitting tax, information duties, annual accounts, or a customs duty.
+2. **Whether it is a first or a repeated default**, and dates of earlier defaults.
+3. **The conduct alleged**: ordinary default, gross negligence, intent or fraud.
+4. **The tax or duty base** the penalty is computed on.
+5. **Whether a voluntary correction was made before any investigation**, its amount and the previous net payment.
+
+## The method, step by step
+
+### Statute, policy and the actual decision
 
 The current penalty policy defines its scope by administrative fines the
 inspector can impose under Belastingwet BES chapter VIII for the specified
@@ -64,15 +79,15 @@ delegated case must be established before inferring that duty or fine.
 A voluntary-correction policy is not proof that every error has the same
 mandatory supplement deadline or form. That mapping remains held here. [B1]
 
-## General tax defaults
+### General tax defaults
 
-| Obligation and statute | Statutory control | Current policy, subject to its conditions |
-|---|---|---|
-| Assessment-based return, 8.22(1) | Maximum USD 1,400; the statutory reminder/return term matters. | Article 3 ordinarily specifies USD 140 only where the set term and reminder were not complied with. Exceptional systematic default can attract the statutory maximum. Its article-41B nil/negative-assessment exception must itself be established. |
-| Payment/remittance-on-return filing, 8.22(2)–(3) | Maximum USD 1,400; filing penalty power expires one year after the relevant filing term. | Article 4: no fine for the first default; USD 100 for a second/further default within 24 months after the preceding one. Exceptional systematic default is a separate maximum case. |
-| Unpaid, partly unpaid or late remittance, 8.23 | Maximum USD 5,600, with the specified assessment and five-year calendar-year-end power rules. | Article 5 ordinarily uses 5% of the relevant unpaid/late-paid amount, minimum USD 100, capped by the statute. Article 6 instead uses 15%, minimum USD 200, where payment default results from under-declaration. |
-| Employee/non-employee information, 8.24 | Maximum USD 2,800; power expires one year after the required information term. | Article 6a: first default is 10% of that maximum; second/further default may reach the statutory maximum. |
-| Required annual accounts, 8.24a | Maximum USD 14,000; power expires one year after the required submission term. | Article 6b: first default is 10% of that maximum; second/further default may reach the statutory maximum. |
+| Obligation and statute | Statutory control | Current policy, subject to its conditions | Source of the figure |
+|---|---|---|---|
+| Assessment-based return, 8.22(1) | Maximum USD 1,400; the statutory reminder/return term matters. | Article 3 ordinarily specifies USD 140 only where the set term and reminder were not complied with. Exceptional systematic default can attract the statutory maximum. Its article-41B nil/negative-assessment exception must itself be established. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 ; https://wetten.overheid.nl/BWBR0037210/2024-01-01 |
+| Payment/remittance-on-return filing, 8.22(2)–(3) | Maximum USD 1,400; filing penalty power expires one year after the relevant filing term. | Article 4: no fine for the first default; USD 100 for a second/further default within 24 months after the preceding one. Exceptional systematic default is a separate maximum case. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 ; https://wetten.overheid.nl/BWBR0037210/2024-01-01 |
+| Unpaid, partly unpaid or late remittance, 8.23 | Maximum USD 5,600, with the specified assessment and five-year calendar-year-end power rules. | Article 5 ordinarily uses 5% of the relevant unpaid/late-paid amount, minimum USD 100, capped by the statute. Article 6 instead uses 15%, minimum USD 200, where payment default results from under-declaration. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 ; https://wetten.overheid.nl/BWBR0037210/2024-01-01 |
+| Employee/non-employee information, 8.24 | Maximum USD 2,800; power expires one year after the required information term. | Article 6a: first default is 10% of that maximum; second/further default may reach the statutory maximum. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 ; https://wetten.overheid.nl/BWBR0037210/2024-01-01 |
+| Required annual accounts, 8.24a | Maximum USD 14,000; power expires one year after the required submission term. | Article 6b: first default is 10% of that maximum; second/further default may reach the statutory maximum. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 ; https://wetten.overheid.nl/BWBR0037210/2024-01-01 |
 
 [B1]; [POLICY]
 
@@ -84,7 +99,7 @@ reminders, granted extensions, due dates, receipts, allocation and the
 authority's separate penalty decision. Special tax periods, exceptions
 and statutory cross-references require their actual branch. [B1]
 
-## Intent, gross negligence and repeated conduct
+### Intent, gross negligence and repeated conduct
 
 B1 8.24b concerns specified assessment-return failures attributable to
 intent or gross negligence, 8.25 concerns under-assessment, and 8.26
@@ -117,7 +132,7 @@ amounts without the required credit. Article 8.34 separately governs
 criminal-judgment concurrence, absence of attributable intent/gross
 negligence and substitution by a lower default fine. [B1]
 
-## Voluntary correction and other reduction routes
+### Voluntary correction and other reduction routes
 
 Article 8.33 requires correct, complete disclosure before the person knows
 or should reasonably suspect that the inspector knows or will know of
@@ -157,7 +172,7 @@ tax year. Paragraph 4 has a specified evidential burden where the return
 or named information duties were not fulfilled. Do not replace a timely
 objection or a customs refund request with this longer route. [B1]
 
-## Notice, evidence and safeguards
+### Notice, evidence and safeguards
 
 For a general tax offence fine, 8.27 requires advance grounds and at least
 two weeks to contest them; its paragraph 3 addresses the effect of failure
@@ -181,20 +196,20 @@ Article 8.37 extends the section to other legally liable persons. Keep
 actual decisions and credits distinct from calculating a possible reduction.
 [B1]
 
-## Customs administrative penalties
+### Customs administrative penalties
 
 DAB 2.107–2.112 prescribe separate defaults for entry, temporary storage,
 temporary/transit completion, shortages, outgoing formalities and specified
 incorrect declarations, each with a USD 140 ceiling and its own responsible
 persons. Nil duty does not remove every formal-declaration default. [DAB]
 
-| DAB branch | Stated ceiling/floor controls; actual conditions still required |
-|---|---|
-| 2.113(1), incorrect declaration reducing duty | Up to 25% of the duty/additional duty, increasing by 25 percentage points on each repetition, up to 100%. Do not invent a repetition period from another paragraph or tax policy. |
-| 2.113(2), culpable conduct leading to the specified post-assessed debt | Up to 100% of that debt, capped at USD 5,600. |
-| 2.113(3), specified debt attributable to intent/gross negligence | Up to 200% of the debt, minimum USD 140, subject to paragraph 5's USD 14,000 ceiling. |
-| 2.113(4)–(5), fraudulent acts or the specified previous paragraph-3 fine less than two years earlier | Percentage increases to 300%, minimum USD 560, maximum USD 14,000. |
-| 2.114, specified information, assistance, identification, permission and other duties | Default ceiling USD 140; intent/gross-negligence offence ceiling USD 2,800. |
+| DAB branch | Stated ceiling/floor controls; actual conditions still required | Source of the figure |
+|---|---|---|
+| 2.113(1), incorrect declaration reducing duty | Up to 25% of the duty/additional duty, increasing by 25 percentage points on each repetition, up to 100%. Do not invent a repetition period from another paragraph or tax policy. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| 2.113(2), culpable conduct leading to the specified post-assessed debt | Up to 100% of that debt, capped at USD 5,600. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| 2.113(3), specified debt attributable to intent/gross negligence | Up to 200% of the debt, minimum USD 140, subject to paragraph 5's USD 14,000 ceiling. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| 2.113(4)–(5), fraudulent acts or the specified previous paragraph-3 fine less than two years earlier | Percentage increases to 300%, minimum USD 560, maximum USD 14,000. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| 2.114, specified information, assistance, identification, permission and other duties | Default ceiling USD 140; intent/gross-negligence offence ceiling USD 2,800. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
 
 [DAB]
 
@@ -232,7 +247,9 @@ do not apply it automatically to a general tax fine. A request for remission
 under 2.125 is not a grant. Remedies and collection follow the actual branch
 in `bq-customs-debt-remedies`. [DAB]
 
-## Fictional monetary components
+## Worked cases
+
+### Fictional monetary components
 
 These cases stipulate a valid applicable branch, positive established base,
 the required conduct/culpability and remaining facts, with no exceptional
@@ -255,7 +272,50 @@ the existence of an actual offence, an imposed fine or a full tax bill:
 | DAB 2.113(4), base 50, stated upper-rate component | 300% gives 150; minimum makes that component **560**, within the cap. |
 | DAB 2.113(3), base 10,000, stated upper-rate component | 200% gives 20,000; ceiling makes that component **14,000**. |
 
-## Verification and limits
+### Recomputed cases
+
+**Case 1, payment default with the minimum and the cap.** Under policy article 5 the component is 5% of the late-paid amount, minimum USD 100, capped by the statutory USD 5,600. On USD 1,000 the 5% is USD 50, so the minimum gives USD 100. On USD 200,000 the 5% is USD 10,000, so the cap gives USD 5,600.
+
+```oa-check
+name: Policy-5 payment default, minimum and cap
+inputs:
+  small_base: 1000
+  large_base: 200000
+steps:
+  - small: min(max(small_base * 0.05, 100), 5600)
+  - large: min(max(large_base * 0.05, 100), 5600)
+expected:
+  small: 100
+  large: 5600
+```
+
+**Case 2, a decision: gross negligence or intent?** On a base of USD 10,000 under policy article 7 the component is USD 2,500 for gross negligence and USD 5,000 for intent. For customs (DAB 2.113(3)) on a debt of USD 10,000, 200% gives USD 20,000 but the ceiling is USD 14,000.
+
+```oa-check
+name: Gross negligence against intent, and the customs ceiling
+inputs:
+  base: 10000
+steps:
+  - gross_negligence: base * 0.25
+  - intent: base * 0.50
+  - customs_upper: min(base * 2, 14000)
+expected:
+  gross_negligence: 2500
+  intent: 5000
+  customs_upper: 14000
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-PEN-CRIMINAL | Criminal proceedings, or a risk of them | Refer to a lawyer immediately |
+| R-BQ-PEN-CULPABILITY | Gross negligence or intent is disputed | Refer: the facts decide the branch |
+| R-BQ-PEN-LIVE | Filing a live correction or objection for the client | Refer: no submission is made from this skill |
+
+## Completion checklist
+
+### Verification and limits
 
 Check the specific obligation, person and conduct; source hierarchy and
 tax/customs branch; reminders and service; actual base and culpability;
@@ -279,6 +339,18 @@ not completed. No private case, identity/tax identifier or bank submission,
 correction filing, payment, engagement workbook or practitioner sign-off
 was used. No comprehensive-area credit is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| DECREE. Read for the provisions this skill cites as [DECREE]. | https://wetten.overheid.nl/BWBR0029262/2025-01-01 | 2026-10-17 |
+| POLICY. Read for the provisions this skill cites as [POLICY]. | https://wetten.overheid.nl/BWBR0037210/2024-01-01 | 2026-10-17 |
+| ORIGINAL. Read for the provisions this skill cites as [ORIGINAL]. | https://zoek.officielebekendmakingen.nl/stcrt-2015-41005.html | 2026-10-17 |
+| CHANGE. Read for the provisions this skill cites as [CHANGE]. | https://zoek.officielebekendmakingen.nl/stcrt-2023-32017.html | 2026-10-17 |
+
 [B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [RULES]: https://wetten.overheid.nl/BWBR0029309/2025-01-01
@@ -287,22 +359,4 @@ was used. No comprehensive-area credit is claimed.
 [ORIGINAL]: https://zoek.officielebekendmakingen.nl/stcrt-2015-41005.html
 [CHANGE]: https://zoek.officielebekendmakingen.nl/stcrt-2023-32017.html
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the actual culpability finding in a given case; disputed mapping of policy articles to statutory branches; mandatory correction delegation; criminal proceedings. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

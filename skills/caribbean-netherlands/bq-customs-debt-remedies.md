@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected customs debt and remedy controls checked on 17 October 2026; actual events, charge and operative exceptions required"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: filing-howto
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -28,6 +29,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: customs debt and remedies
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Identify the island, goods, customs destination, person, representation,
 charge, event, decision and evidenced notification before selecting a debt
@@ -41,7 +46,17 @@ outputs/checks. This Tier 2 reference supplies selected statutory controls,
 not a complete controversy strategy or country pack. Unknown mandatory
 conditions hold the complete financial output package.
 
-## Choose the charge and procedural branch
+## Ask the client first
+
+1. **What went wrong**: an import, storage, movement or relief condition that failed, and the date of the event.
+2. **The decision or notice received**: a payment invitation, post-assessment or penalty decision, with how and when it was delivered.
+3. **Who the statutory debtor is** (declarant, representative, holder of the goods).
+4. **Security or monthly credit arrangements** in place, with the permit.
+5. **Whether an objection or refund request has been filed**, and when.
+
+## The method, step by step
+
+### Choose the charge and procedural branch
 
 Belastingwet BES article 6.21(1) applies customs legislation correspondingly
 to levying and collecting import ABB. DAB article 4.5(1) applies the Act's
@@ -58,7 +73,7 @@ Read `bq-customs-clearance` for acceptance, release and document discharge.
 Do not substitute the general fifteen-day domestic remittance rule for
 the actual customs branch. [G-IMPORT]; [DAB, articles 2.38 and 2.78][DAB]
 
-## Debt event, person and evidence
+### Debt event, person and evidence
 
 | Branch | Event and person to establish |
 |---|---|
@@ -102,55 +117,7 @@ register: case reference, declaration/document, event, debt branch, person,
 amount by charge, decision, service evidence, payment/security allocation
 and unresolved source or fact. No identity or filing submission is made here.
 
-## Assessment, payment and credit
-
-Articles 2.75–2.77 separate provisional determination, control adjustments
-and post-assessment. A 2.76 post-assessment generally has five years from
-the debt event, incorrect goods-account credit or refund. Its criminal-act
-exception permits later assessment where that act prevented correct
-determination. This is not an unconditional five-year write-off. The
-applicable bases/rates follow the relevant debt event. [DAB]
-
-Article 2.76(4) excludes post-assessment where the import-duty amount to be
-recovered is **less than USD 8**. Article 2.78(8) separately disapplies its
-paragraphs 5 and 6 where the customs debt is below USD 8. Keep their objects
-and effects distinct; neither is a universal tax-free import value or a
-blanket cancellation of costs, penalties or another charge. [DAB]
-
-The payment invitation uses an assessment notice. Regulation 2.73 requires
-the debtor's identifying details, decision reference/date, amount of duty,
-interest, costs or penalty, and an objection clause. A combined notice can
-contain several amounts. Retain distinct charge and service records.
-[DAB, article 2.78][DAB]; [RULES]
-
-| Article 2.78(5) branch | Statutory payment term |
-|---|---|
-| Amount communicated on the declaration or under 2.75(2) | No later than ten days after the communication. |
-| Post-assessment | No later than ten days after the decision is delivered by registered letter or against dated receipt. |
-| Receiver grants payment deferral | Within the actual granted term. A request is not a grant. |
-| Administrative penalty imposed by separate decision | No later than ten days after delivery by registered letter or against dated receipt. |
-
-[DAB]
-
-Unpaid debt/penalty can be recovered against security under paragraph 6;
-unpaid ordinary 2.69 debt has paragraph 7's post-assessment rule. Article
-2.80 incorporates Belastingwet chapter VIII, title 5 for collection unless
-otherwise provided. Establish every applicable exception, service event,
-calendar and actual relief decision before producing dates or interest.
-`bq-tax-compliance` records unresolved general collection methods; this
-reference does not settle them by copying an ordinary assessment deadline.
-[DAB]
-
-Article 2.79 allows the receiver, on written request, to permit payment of
-the month's amount within eight days after month-end. The debtor must be
-BES-established, have continuing security and receive a permit; additional
-conditions may apply. The authority requests business-register evidence,
-expected declarations and credit amounts by import tax, and explains the
-agreed credit/security amounts. A consolidated account is not itself the
-permit, and awaiting its arrival does not establish an extended deadline.
-[DAB]; [G-IMPORT]
-
-## Security amount, form and release
+### Security amount, form and release
 
 Under articles 2.88–2.91, the actual or potential debtor provides security
 by the inspector's term. The inspector requires only one security for the
@@ -183,7 +150,7 @@ release of collateral and return of an excise guarantee are different
 ledger events. Apply `bq-excise` to its separate warehouse/stamp security.
 [DAB]; [RULES, article 2.41][RULES]
 
-## Decisions, objections and first-instance appeal
+### Decisions, objections and first-instance appeal
 
 Article 2.84 generally requires a reasoned decision within nine months of
 a written request containing the necessary evidence. A request to put an
@@ -225,7 +192,7 @@ not relabelled as a universal objection rule. Enforcement opposition,
 seizure complaints and higher appeals are separate branches requiring
 their own procedure and deadlines. [DAB]; [B1]
 
-## Refund request and its separate entitlement
+### Refund request and its separate entitlement
 
 DAB 3.144 includes repayment of paid duty and remission of charged but
 unpaid duty. Article 3.145 generally requires a written request to the
@@ -262,7 +229,9 @@ decision, credit/payment and resulting ledger once each. Import excise
 and domestic release/stamp refunds retain their own `bq-excise` branches.
 [TAX-RULES]; [B1]; [DAB]
 
-## Fictional boundary checks and completion
+## Worked cases
+
+### Fictional boundary checks and completion
 
 These stipulated components test the stated rule, not actual debt,
 eligibility, accepted collateral or a complete filing calendar:
@@ -286,7 +255,108 @@ ground-specific refund proof; and single use of each payment/credit.
 Unknown mandatory conditions remain Needs Input or holds with every
 universal/domain output and professional-review question.
 
-## Primary sources and limits
+### Recomputed cases
+
+**Case 1, security value for a continuing guarantee.** A continuing security of USD 1,000 given as a mortgage must be covered at 150% of value (USD 1,500); as a pledge at 125% (USD 1,250).
+
+```oa-check
+name: Mortgage and pledge value for USD 1,000 continuing security
+inputs:
+  security: 1000
+steps:
+  - mortgage_value: security * 1.50
+  - pledge_value: security * 1.25
+expected:
+  mortgage_value: 1500
+  pledge_value: 1250
+```
+
+**Case 2, a decision at the USD 8 thresholds.** A post-assessment of duty of USD 7.99 is below the article 2.76(4) amount threshold; USD 8 is not excluded on that ground. The same USD 8 line applies to a refund under article 3.146: USD 7.99 is excluded, USD 8 is not. Both are amount tests only.
+
+```oa-check
+name: USD 8 threshold, below and at
+inputs:
+  threshold: 8
+  low: 7.99
+  at: 8
+steps:
+  - low_below: threshold - low
+  - at_below: threshold - at
+expected:
+  low_below: 0.01
+  at_below: 0
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-CD-SERVICE | The date or method of service of the decision is disputed | Refer: the objection clock depends on it |
+| R-BQ-CD-APPEAL | Higher appeal beyond the first-instance court | Refer to a lawyer |
+| R-BQ-CD-COLLECT | Enforcement or collection methods against the debtor | Refer: not covered |
+
+## Filing and payment
+
+### Assessment, payment and credit
+
+Articles 2.75–2.77 separate provisional determination, control adjustments
+and post-assessment. A 2.76 post-assessment generally has five years from
+the debt event, incorrect goods-account credit or refund. Its criminal-act
+exception permits later assessment where that act prevented correct
+determination. This is not an unconditional five-year write-off. The
+applicable bases/rates follow the relevant debt event. [DAB]
+
+Article 2.76(4) excludes post-assessment where the import-duty amount to be
+recovered is **less than USD 8**. Article 2.78(8) separately disapplies its
+paragraphs 5 and 6 where the customs debt is below USD 8. Keep their objects
+and effects distinct; neither is a universal tax-free import value or a
+blanket cancellation of costs, penalties or another charge. [DAB]
+
+The payment invitation uses an assessment notice. Regulation 2.73 requires
+the debtor's identifying details, decision reference/date, amount of duty,
+interest, costs or penalty, and an objection clause. A combined notice can
+contain several amounts. Retain distinct charge and service records.
+[DAB, article 2.78][DAB]; [RULES]
+
+| Article 2.78(5) branch | Statutory payment term | Source of the figure |
+|---|---|---|
+| Amount communicated on the declaration or under 2.75(2) | No later than ten days after the communication. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Post-assessment | No later than ten days after the decision is delivered by registered letter or against dated receipt. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Receiver grants payment deferral | Within the actual granted term. A request is not a grant. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Administrative penalty imposed by separate decision | No later than ten days after delivery by registered letter or against dated receipt. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+
+[DAB]
+
+Unpaid debt/penalty can be recovered against security under paragraph 6;
+unpaid ordinary 2.69 debt has paragraph 7's post-assessment rule. Article
+2.80 incorporates Belastingwet chapter VIII, title 5 for collection unless
+otherwise provided. Establish every applicable exception, service event,
+calendar and actual relief decision before producing dates or interest.
+`bq-tax-compliance` records unresolved general collection methods; this
+reference does not settle them by copying an ordinary assessment deadline.
+[DAB]
+
+Article 2.79 allows the receiver, on written request, to permit payment of
+the month's amount within eight days after month-end. The debtor must be
+BES-established, have continuing security and receive a permit; additional
+conditions may apply. The authority requests business-register evidence,
+expected declarations and credit amounts by import tax, and explains the
+agreed credit/security amounts. A consolidated account is not itself the
+permit, and awaiting its arrival does not establish an extended deadline.
+[DAB]; [G-IMPORT]
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| TAX-RULES. Read for the provisions this skill cites as [TAX-RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| G-OBJECT. Read for the provisions this skill cites as [G-OBJECT]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/bezwaar-en-beroep-douane | 2026-10-17 |
+| G-IMPORT. Read for the provisions this skill cites as [G-IMPORT]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/douanebestemmingen/invoer | 2026-10-17 |
+
+### Primary sources and limits
 
 Read on 17 October 2026: DAB 2.51–2.97 including 2.70a, 3.144–3.154,
 4.3–4.5 and 4.48; regulation 2.40–2.41 and 2.73–2.74; B1 6.21 and
@@ -311,22 +381,4 @@ is claimed.
 [G-OBJECT]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/bezwaar-en-beroep-douane
 [G-IMPORT]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/douanebestemmingen/invoer
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: actual liability for a given event, disputed service of decisions, the mapping of special refund grounds, collection methods and appeals beyond first instance. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

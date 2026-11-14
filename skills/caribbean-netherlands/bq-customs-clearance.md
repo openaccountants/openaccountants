@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Ordinary customs-clearance controls checked on 17 October 2026; actual office hours, permissions and event dates required"
 tier: 2
-last_updated: 2026-10-17
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
+type: filing-howto
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -27,6 +28,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: customs clearance
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish island, goods, conveyance, person, representation, arrival,
 customs destination and actual permissions before selecting a procedure.
@@ -42,7 +47,17 @@ outputs/checks. This Tier 2 reference covers selected ordinary commercial
 clearance controls. Unknown mandatory conditions hold the complete financial
 output package; no complete engagement or country pack is certified.
 
-## Person, authority and documents
+## Ask the client first
+
+1. **How the goods arrive**: by sea or air, voyage or flight duration, and the arrival date and time.
+2. **Who declares**: the importer, or an authorised representative, and their permissions.
+3. **Where the goods are stored before release** (a temporary storage facility, RTO) and since when.
+4. **Which documents are complete** and which are missing at declaration.
+5. **Whether the goods are a personal consignment** or a commercial one.
+
+## The method, step by step
+
+### Person, authority and documents
 
 A declarant must be able to present the goods and required documents.
 Article 2.27 normally requires BES residence/establishment, with specified
@@ -77,7 +92,7 @@ the current client, every supported procedure or an actual user's access.
 No software, authorisation form or account was installed or submitted here.
 [RULES]; [ONLINE]; [DECL]
 
-## Keep the clocks separate
+### Keep the clocks separate
 
 The following rules concern ordinary commercial craft/consignments outside
 the special exceptions. Establish the actual office calendar, local time,
@@ -113,7 +128,7 @@ from those provisions. Hold actual special-craft treatment for authoritative
 clarification rather than applying the commercial table or assuming no
 notice. [RULES]; [PRE]
 
-## Temporary storage, unloading and release
+### Temporary storage, unloading and release
 
 Unloading requires the prescribed place/time, permission and supervision,
 with the specific emergency rule and notification. An unloading permission's
@@ -139,7 +154,7 @@ selection or an invoice marked paid does not establish every condition or
 an unconditional right to remove goods. Post-release control remains possible
 under article 2.45. [DAB]; [ONLINE]
 
-## Incomplete declarations, correction and document discharge
+### Incomplete declarations, correction and document discharge
 
 An incomplete or simplified declaration requires inspector permission and
 security. Decree article 2.11 requires minimum identity/description/value
@@ -171,7 +186,81 @@ partial discharge. Proof of a transport booking is not proof of discharge.
 Actual debt, recovery and remedies require their complete separate branch.
 [DAB]; [DECREE]
 
-## Fees, receipts and declaration codes
+## Worked cases
+
+### Fictional control cases
+
+These cases stipulate ordinary commercial scope, no special exemption,
+established permissions and the stated calendar/billing facts where needed.
+They test procedural components, not actual clearances. [DAB]; [DECREE]; [RULES]
+
+- A 30-hour sea voyage uses the 24-hour pre-arrival lead time. A three-hour
+  sea voyage and a four-hour flight require notice no later than departure.
+- Filing the entry declaration does not also establish the destination
+  declaration or permission to remove goods. Its six-hour clock and the
+  ordinary 48-hour destination clock have different starting events.
+- Moving stock to a second RTO does not restart its 21 days. An approved
+  30-day total does not grant another 30 days after the ordinary term.
+- An accepted incomplete declaration does not authorise indefinite missing
+  documents or change its original acceptance date merely on replacement.
+- An amendment requested after announced control cannot use decree 2.9;
+  later remedies must be established rather than invented.
+- Goods present after document expiry require the revival route and its
+  conditions, rather than a retrospective automatic extension.
+- Qualifying government storage of 1.01 cubic metres for one complete
+  chargeable billing day and part of another uses two cubic metres and two
+  days: **2 × 2 × 20 = USD 80**. Actual billing-day definition is stipulated.
+- A qualifying 60-minute official operation, with travel separately excluded
+  and established third-party charges of 7, produces **2 × 10 + 7 = USD 27**.
+  It does not establish a fee for ordinary work outside the listed categories.
+- A personal consignment qualifying for the oral form at 1,500 does not
+  thereby qualify for a 1,500 tax exemption.
+
+### Recomputed cases
+
+**Case 1, government storage fee.** Qualifying government storage of 1.01 cubic metres for one complete chargeable day and part of another counts as two cubic metres and two days at USD 20: USD 80.
+
+```oa-check
+name: Government storage fee, part units rounded up
+inputs:
+  cubic_metres: 1.01
+  days: 1.5
+  rate: 20
+steps:
+  - billed_m3: ceil(cubic_metres)
+  - billed_days: ceil(days)
+  - fee: billed_m3 * billed_days * rate
+expected:
+  billed_m3: 2
+  billed_days: 2
+  fee: 80
+```
+
+**Case 2, official operation fee.** A qualifying 60-minute official operation with travel excluded is charged as two half-hours at USD 10, plus established third-party charges of USD 7: USD 27.
+
+```oa-check
+name: Official operation fee with third-party charges
+inputs:
+  units: 2
+  unit_fee: 10
+  third_party: 7
+steps:
+  - fee: units * unit_fee + third_party
+expected:
+  fee: 27
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-CC-SPECIAL | Special craft, restricted or prohibited goods | Refer to the Belastingdienst Caribisch Nederland customs desk |
+| R-BQ-CC-DEBT | A customs debt, penalty or appeal has arisen | Refer to `bq-customs-debt-remedies` |
+| R-BQ-CC-CODES | Actual declaration codes and form fields are needed | Refer: code mapping is not confirmed |
+
+## Filing and payment
+
+### Fees, receipts and declaration codes
 
 Customs service costs arise in the specific decree article 2.1 categories,
 such as requested work outside normal hours/places, specified information
@@ -206,35 +295,9 @@ traveller-accompanied other goods up to **USD 1,000**, subject to the inspector'
 written filing. These concern declaration form, not tax-free allowances.
 Special postal/gift and traveller relief is not completed here. [RULES]
 
-## Fictional control cases
+## Completion checklist
 
-These cases stipulate ordinary commercial scope, no special exemption,
-established permissions and the stated calendar/billing facts where needed.
-They test procedural components, not actual clearances. [DAB]; [DECREE]; [RULES]
-
-- A 30-hour sea voyage uses the 24-hour pre-arrival lead time. A three-hour
-  sea voyage and a four-hour flight require notice no later than departure.
-- Filing the entry declaration does not also establish the destination
-  declaration or permission to remove goods. Its six-hour clock and the
-  ordinary 48-hour destination clock have different starting events.
-- Moving stock to a second RTO does not restart its 21 days. An approved
-  30-day total does not grant another 30 days after the ordinary term.
-- An accepted incomplete declaration does not authorise indefinite missing
-  documents or change its original acceptance date merely on replacement.
-- An amendment requested after announced control cannot use decree 2.9;
-  later remedies must be established rather than invented.
-- Goods present after document expiry require the revival route and its
-  conditions, rather than a retrospective automatic extension.
-- Qualifying government storage of 1.01 cubic metres for one complete
-  chargeable billing day and part of another uses two cubic metres and two
-  days: **2 × 2 × 20 = USD 80**. Actual billing-day definition is stipulated.
-- A qualifying 60-minute official operation, with travel separately excluded
-  and established third-party charges of 7, produces **2 × 10 + 7 = USD 27**.
-  It does not establish a fee for ordinary work outside the listed categories.
-- A personal consignment qualifying for the oral form at 1,500 does not
-  thereby qualify for a 1,500 tax exemption.
-
-## Verification and limits
+### Verification and limits
 
 Check the responsible person and actual authority; route and craft scope;
 notice/arrival/declaration clocks; actual office calendar; permitted storage
@@ -255,6 +318,19 @@ outside the agent. No submission, registration, payment, licence, actual
 engagement workbook or practitioner sign-off was used. No comprehensive-area
 credit is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| DECREE. Read for the provisions this skill cites as [DECREE]. | https://wetten.overheid.nl/BWBR0029262/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| PRE. Read for the provisions this skill cites as [PRE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/binnenbrengen-en-lossing-van-goederen/pre-arrivalmelding | 2026-10-17 |
+| ENTRY. Read for the provisions this skill cites as [ENTRY]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/binnenbrengen-en-lossing-van-goederen/verklaring-tot-inklaring | 2026-10-17 |
+| DECL. Read for the provisions this skill cites as [DECL]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/douaneaangiften | 2026-10-17 |
+| ONLINE. Read for the provisions this skill cites as [ONLINE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/online-aangifte-douane | 2026-10-17 |
+| STORE. Read for the provisions this skill cites as [STORE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen/opslag-in-een-ruimte-voor-tijdelijke-opslag-rto | 2026-10-17 |
+
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [DECREE]: https://wetten.overheid.nl/BWBR0029262/2025-01-01
 [RULES]: https://wetten.overheid.nl/BWBR0029309/2025-01-01
@@ -264,22 +340,4 @@ credit is claimed.
 [ONLINE]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/online-aangifte-douane
 [STORE]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-bedrijven/invoer-doorvoer-en-uitvoer/opslag-van-goederen/opslag-in-een-ruimte-voor-tijdelijke-opslag-rto
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: actual office hours and their effect on the clocks; the definition of a chargeable billing day (stipulated in the cases); declaration code and form-field mapping; the restricted-goods regimes. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

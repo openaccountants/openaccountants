@@ -16,9 +16,10 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected personal-import relief checked on 17 October 2026; actual event, island, goods and operative conditions required"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: situation-rules
+domain: vat-gst
 depends_on:
   - workflow-base
   - bq-tax-system
@@ -29,6 +30,10 @@ depends_on:
 ---
 
 # Bonaire, Sint Eustatius and Saba: personal-import relief
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Identify the importing island, person, goods, purpose, route, relevant
 residence, event dates, value basis, quantities and permissions. An import
@@ -42,7 +47,17 @@ outputs/checks. This Tier 2 reference covers selected personal-import
 reliefs. Unknown mandatory conditions hold the complete financial output
 package; no country pack or complete engagement is certified.
 
-## Legal route, territory and permission
+## Ask the client first
+
+1. **Which relief is claimed**: moving a household, inherited goods, student goods, a postal consignment, a private gift, or traveller's baggage.
+2. **The person**: where they normally live, age (the under-15 and under-18 limits), and whether they are crew.
+3. **The goods**: value of each item, quantities of alcohol and tobacco, and for a vehicle how long it was owned and used before moving.
+4. **The timing**: date of arrival, death date and possession date for inherited goods, and any permit already granted.
+5. **Whether anything was paid** for a "gift".
+
+## The method, step by step
+
+### Legal route, territory and permission
 
 B1 article 6.20(1)(b) delegates ABB relief for imports entitled to duty
 relief. Regulation 3.15 applies chapter-III duty exemptions correspondingly,
@@ -91,7 +106,7 @@ can be put in writing on request. Articles 3.28–3.31 add identity, goods
 accounts/security, permitted changes/destruction, withdrawal and compliance
 conditions. A permit application alone does not establish relief. [DAB]
 
-## Moving a household
+### Moving a household
 
 Article 3.32 concerns natural persons transferring normal residence to a
 BES island. Ordinary personal goods must have been possessed for at least
@@ -123,7 +138,7 @@ This clock does not start from the move, vessel departure or a later sale.
 Use `bq-customs-debt-remedies` for failed conditions and evidence/remedy
 controls. [DAB]
 
-## Inherited goods and students
+### Inherited goods and students
 
 Article 3.36 covers personal goods inherited by a natural person normally
 resident on the islands, and goods inherited **by testament** by an
@@ -150,12 +165,12 @@ apply correspondingly. The permit/goods conditions remain necessary and
 the excise list does not automatically adopt this student branch.
 [DAB]; [RULES]
 
-## Post and unpaid private gifts
+### Post and unpaid private gifts
 
-| Branch | Value and substantive conditions |
-|---|---|
-| Negligible-value post, 3.41–3.42 | Direct letter-post or postal-package consignments to a person on an island, total goods value no more than **USD 28**. Alcohol and tobacco are excluded. No relief permit is required. Do not turn the postal route into a general exemption for every courier or commercial shipment. |
-| Private-to-private gift, 3.43–3.44 | Occasional consignment containing only personal goods, sent without any payment by the recipient, total value no more than **USD 70**, including the listed alcohol/tobacco value. No relief permit is required. A purchase, reimbursement or routine commercial supply does not meet the unpaid/occasional conditions merely because the sender writes “gift”. |
+| Branch | Value and substantive conditions | Source of the figure |
+|---|---|---|
+| Negligible-value post, 3.41–3.42 | Direct letter-post or postal-package consignments to a person on an island, total goods value no more than **USD 28**. Alcohol and tobacco are excluded. No relief permit is required. Do not turn the postal route into a general exemption for every courier or commercial shipment. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Private-to-private gift, 3.43–3.44 | Occasional consignment containing only personal goods, sent without any payment by the recipient, total value no more than **USD 70**, including the listed alcohol/tobacco value. No relief permit is required. A purchase, reimbursement or routine commercial supply does not meet the unpaid/occasional conditions merely because the sender writes “gift”. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
 
 [DAB]
 
@@ -179,7 +194,7 @@ The total USD 70 condition still includes those goods. A quantity limit
 does not independently exempt a higher-value consignment; the gift rule
 does not create the traveller's separate beer allowance. [DAB]
 
-## Travellers' baggage
+### Travellers' baggage
 
 Articles 3.45–3.47 require occasional personal goods in baggage presented
 on arrival, or later presented baggage registered as accompanying baggage
@@ -195,11 +210,11 @@ within the available allowance can qualify; the value of an individual
 good cannot be split. Do not deduct USD 500 from every expensive item or
 pool portions of travellers' allowances to split one item. [DAB]; [G-TRAVEL]
 
-| Article 3.45(2) group | Traveller quantity, subject to all conditions |
-|---|---|
-| Tobacco alternatives | 200 cigarettes, 50 cigarillos of at most 3 grams, 25 cigars, or 125 grams smoking tobacco; alternatively a proportional assortment. These are alternatives, not cumulative full allowances. |
-| Spirits/other specified alcohol alternatives | One litre of the specified over-22%-volume spirits/alcohol group, or one litre of the specified at-most-22%/sparkling/fortified group, or a proportional assortment. |
-| Additional specified drinks | Two litres still wine and eight litres beer. |
+| Article 3.45(2) group | Traveller quantity, subject to all conditions | Source of the figure |
+|---|---|---|
+| Tobacco alternatives | 200 cigarettes, 50 cigarillos of at most 3 grams, 25 cigars, or 125 grams smoking tobacco; alternatively a proportional assortment. These are alternatives, not cumulative full allowances. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Spirits/other specified alcohol alternatives | One litre of the specified over-22%-volume spirits/alcohol group, or one litre of the specified at-most-22%/sparkling/fortified group, or a proportional assortment. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
+| Additional specified drinks | Two litres still wine and eight litres beer. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 |
 
 [DAB]
 
@@ -216,7 +231,9 @@ oral. That does not turn the separate oral-declaration form threshold in
 `bq-customs-clearance` into a tax allowance. Preserve declaration and
 inspection obligations where the relief conditions are not met. [DAB]
 
-## Fictional boundary checks
+## Worked cases
+
+### Fictional boundary checks
 
 These cases stipulate verified legal value bases, ordinary qualifying
 goods, route and remaining conditions unless a missing condition is the
@@ -238,7 +255,52 @@ point being tested. They determine components, not an actual tax bill:
 | Inherited goods received later than the death date | Establish the possession event for 3.36's one-year declaration term; do not start it from death alone. |
 | Student goods with no enrolment proof | Hold the student route; do not infer the required institution/course or excise relief. |
 
-## Verification and limits
+### Recomputed cases
+
+**Case 1, mixed tobacco in an adult traveller's baggage.** 100 cigarettes use half of the 200 allowance and 25 cigarillos half of the 50 allowance: 100/200 + 25/50 = 1, exactly the full alternative allowance. An international crew member's cigarette quantity is half: 200/2 = 100.
+
+```oa-check
+name: Proportional tobacco allowance, traveller and crew
+inputs:
+  cigarettes: 100
+  cigarillos: 25
+steps:
+  - used_share: cigarettes / 200 + cigarillos / 50
+  - crew_cigarettes: 200 / 2
+expected:
+  used_share: 1
+  crew_cigarettes: 100
+```
+
+**Case 2, a decision: which item fills the USD 500 traveller allowance?** An adult brings two items worth USD 300 and USD 250. Choosing the USD 300 item leaves USD 200 of allowance; the USD 250 item cannot be split to use it, so the whole USD 250 item is outside relief. A single indivisible camera at USD 520 gets no USD 500 portion relieved.
+
+```oa-check
+name: Traveller allowance with indivisible items
+inputs:
+  allowance: 500
+  item_a: 300
+  item_b: 250
+steps:
+  - left_after_a: allowance - item_a
+  - taxable_value: item_b
+  - naive_excess_only: item_a + item_b - allowance
+expected:
+  left_after_a: 200
+  taxable_value: 250
+  naive_excess_only: 50
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+|---|---|---|
+| R-BQ-PIR-PERMIT | Household or inherited-goods relief without the required permit | Hold: the relief needs the inspector's grant |
+| R-BQ-PIR-VALUE | The item's value or classification is disputed | Refer to `bq-customs-valuation` |
+| R-BQ-PIR-OTHER | A relief regime not listed here (diplomatic, military, charitable) | Refer: other regimes are not covered |
+
+## Completion checklist
+
+### Verification and limits
 
 Check charge and relief branch, importing island, normal residence,
 person/use, age, value method, indivisible items, quantity alternatives,
@@ -262,6 +324,18 @@ No PDF/OCR, private taxpayer records, identity/tax identifier or bank
 submission, application, import declaration, payment, engagement workbook
 or practitioner sign-off was used. No comprehensive-area credit is claimed.
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DAB. Read for the provisions this skill cites as [DAB]. | https://wetten.overheid.nl/BWBR0029236/2025-01-01 | 2026-10-17 |
+| RULES. Read for the provisions this skill cites as [RULES]. | https://wetten.overheid.nl/BWBR0029309/2025-01-01 | 2026-10-17 |
+| B1. Read for the provisions this skill cites as [B1]. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-17 |
+| TAX-RULES. Read for the provisions this skill cites as [TAX-RULES]. | https://wetten.overheid.nl/BWBR0029332/2025-01-01 | 2026-10-17 |
+| G-TRAVEL. Read for the provisions this skill cites as [G-TRAVEL]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/reizigersbagage/reizigersvrijstelling | 2026-10-17 |
+| G-MOVE. Read for the provisions this skill cites as [G-MOVE]. | https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/verhuizen/verhuizen-naar-caribisch-nederland | 2026-10-17 |
+| G-GIFT. Read for the provisions this skill cites as [G-GIFT]. | https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/abb-algemene-bestedingsbelasting-particulieren/familielid-kennis-heeft-goederen-toegezonden | 2026-10-17 |
+
 [DAB]: https://wetten.overheid.nl/BWBR0029236/2025-01-01
 [RULES]: https://wetten.overheid.nl/BWBR0029309/2025-01-01
 [B1]: https://wetten.overheid.nl/BWBR0029244/2026-04-11
@@ -270,22 +344,4 @@ or practitioner sign-off was used. No comprehensive-area credit is claimed.
 [G-MOVE]: https://www.belastingdienst-cn.nl/onderwerpen/douanezaken-particulieren/verhuizen/verhuizen-naar-caribisch-nederland
 [G-GIFT]: https://www.belastingdienst-cn.nl/onderwerpen/belastingzaken-particulieren/abb-algemene-bestedingsbelasting-particulieren/familielid-kennis-heeft-goederen-toegezonden
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: valuation of personal goods; classification disputes; the forms for permits and declarations; relief regimes other than those listed. Sources were read by Ryan Duguid on 2026-10-17 and not re-opened on import.

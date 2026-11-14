@@ -16,15 +16,20 @@ category: formation
 tax_year: 2026
 tax_year_notes: "2026 formation reference; selected NV/BV rules compared across the July consolidation change"
 tier: 2
-last_updated: 2026-10-17
-version: 0.2
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.3
+type: filing-howto
+domain: formation
 depends_on:
   - workflow-base
   - company-formation-workflow-base
 ---
 
 # Bonaire, Sint Eustatius and Saba: company formation in 2026
+
+> **Built from the law. Not yet approved.** Written by Ryan Duguid and imported from his fork; conformed to the OpenAccountants standard by Claude. Not reviewed by an accountant. All outputs must be reviewed by a qualified tax professional before filing or payment. Tax year 2026. Currency: US dollars (USD).
+
+## Scope
 
 Establish the island, legal form, planned activities and requested date before
 preparing formation advice. Incorporation, commercial registration, permission
@@ -40,7 +45,7 @@ then retain the separate entity choice before the registration checklist.
 Preserve the domain's five outputs and ten checks as well. Reference examples below do not constitute an engagement
 recommendation, a complete registration checklist or a filing.
 
-## Scope, period and completion conditions
+### Scope, period and completion conditions
 
 The detailed rules cover ordinary *naamloze vennootschap* (NV, public limited
 company) and *besloten vennootschap* (BV, private limited company) incorporation,
@@ -82,7 +87,34 @@ formation package; they are not permissions to fill cells with estimates.
 | Consumption tax | ABB is separate from European Netherlands VAT; the USD 32,000 relief limit is not a general registration threshold |
 | Audit | Ordinary, large-NV and opted-in regimes below; sector requirements and any claimed group exemption need separate verification |
 
-## Legal forms and entity routing
+## Ask the client first
+
+1. **Which island** the business will operate on: establishment permits and fees differ (Bonaire and Sint Eustatius tariffs are covered; no complete Saba tariff is verified).
+2. **The legal form**: NV, BV, or another form, and the founders.
+3. **What is contributed**: cash, assets in kind (with valuation) and liabilities taken over, and any deferred contributions.
+4. **Intended nominal capital**, if any, and the share structure.
+5. **The number of directors** and the date activities will start.
+6. **Expected turnover**, to route the ABB questions to `bq-abb`.
+
+### Defaults, questions and reviewer thresholds
+
+| Missing item | Treatment | Alternative and disclosure |
+|---|---|---|
+| Island, date, form, purpose, ownership or actual activity | Needs Input; no factual default | Obtain the fact before selecting a legal or registration route |
+| Deed, contribution value, nominal capital or call terms | Needs Input; no factual default | The notary verifies the instrument and valuation; do not assume a statutory test passes |
+| Tax status, local exemption, immigration or sector permission | Needs Input as applicable fact and source conditions | Obtain the operative authority and decision; a higher-cost assumption cannot establish unknown law |
+| Fees, annual charge, procedure or time estimate | Needs Input; no factual default | Obtain the current schedule, assessment or labelled provider quote; do not insert zero |
+
+No substantive factual default is permitted. Essential questions remain
+necessary at any cash impact. The configured question threshold is USD 0 if a
+later verified companion expressly introduces a default. Reviewer attention
+also starts at USD 0: flag every contribution, fee, classification, permission
+and source hold, including nil outcomes. These are workflow settings, not
+statutory thresholds. Apply universal grouping and its ten-question ceiling.
+
+## The method, step by step
+
+### Legal forms and entity routing
 
 Book 2 recognises associations, cooperatives, mutual insurers, NVs, BVs,
 foundations and private fund foundations. Its general legal-person rule normally
@@ -111,30 +143,30 @@ Resolve the full residence, substance, activity and ownership conditions before
 comparing tax costs. Do not apply a generic zero corporate-profit rate or a
 European Netherlands rate to every BES company. [T1, articles 1.5 and 5.1–5.2]
 
-## Selected 2026 amounts and time limits
+### Selected 2026 amounts and time limits
 
 Licence charges are component costs, not total incorporation prices. Amounts
 are US dollars (USD). Unknown costs remain Needs Input, never zero.
 
-| Item | Rule or amount | Primary authority |
-|---|---|---|
-| NV/BV initial shares | At least one fully voting share participating in profit, or one fully voting share and one profit-participating share | J2, articles 100(2), 200(2) |
-| Cash-only opening equity | Founders declare non-negative equity; take nominal capital into account where present | J2, articles 101, 201 |
-| In-kind opening equity | All founders sign an opening balance showing non-negative equity; nominal capital remains relevant | Same articles |
-| Deferred contribution | Exclude the claim in the specified statutory equity calculation unless unconditionally due before one year after issue | J2, articles 107(3), 207(3) |
-| Initial business registration | Within one week after activities start | R1, article 8(1) |
-| Other prescribed register notifications | Within one week after the triggering fact, unless delegated rules provide otherwise | R1, article 8(2) |
-| Establishment decision | Eight weeks; specified written extension of at most eight weeks | L1, article 4a |
-| Late-decision licence | Effective on the third day after the decision period expires; later conditions remain possible | L1, articles 4b–4c |
-| Bonaire establishment application | USD 140, plus applicable foreign-inquiry costs | F1, tariff 10.1–10.2 |
-| Statia business application | USD 300 | F2, tariff 11.1 |
-| Statia director application | USD 200 for a sole director; USD 250 per director where more than one | F2, tariff 11.1.1–11.1.2 |
-| Statia annual licence charge | USD 100 for each licence specified by tariff 11.2's reference to item 11.1, from the calendar year after grant | F2, tariff 11.2; verify the particular licence charged |
-| Statia business-object expansion request | USD 250 | F2, tariff 11.3 |
-| Ordinary NV/BV accounts preparation | Eight months after year end; meeting may extend by up to six months for special circumstances | J2, articles 116, 216 |
-| Large NV, or relevant articles-based opt-in | Six-month preparation regime and qualified external examination, subject to the statutory conditions | J2, articles 119–124, 219 |
-| Legal-person accounting retention | Ten years | J2, article 15(3) |
-| ABB small entrepreneur relief | USD 32,000 annual qualifying turnover or less; eligibility, request and decision conditions apply | T1, article 6.22; read `bq-abb` |
+| Item | Rule or amount | Primary authority | Source of the figure |
+|---|---|---|---|
+| NV/BV initial shares | At least one fully voting share participating in profit, or one fully voting share and one profit-participating share | J2, articles 100(2), 200(2) | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Cash-only opening equity | Founders declare non-negative equity; take nominal capital into account where present | J2, articles 101, 201 | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| In-kind opening equity | All founders sign an opening balance showing non-negative equity; nominal capital remains relevant | Same articles | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Deferred contribution | Exclude the claim in the specified statutory equity calculation unless unconditionally due before one year after issue | J2, articles 107(3), 207(3) | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Initial business registration | Within one week after activities start | R1, article 8(1) | https://wetten.overheid.nl/BWBR0028503/2022-03-02 |
+| Other prescribed register notifications | Within one week after the triggering fact, unless delegated rules provide otherwise | R1, article 8(2) | https://wetten.overheid.nl/BWBR0028503/2022-03-02 |
+| Establishment decision | Eight weeks; specified written extension of at most eight weeks | L1, article 4a | https://wetten.overheid.nl/BWBR0028164/2019-01-01 |
+| Late-decision licence | Effective on the third day after the decision period expires; later conditions remain possible | L1, articles 4b–4c | https://wetten.overheid.nl/BWBR0028164/2019-01-01 |
+| Bonaire establishment application | USD 140, plus applicable foreign-inquiry costs | F1, tariff 10.1–10.2 | https://lokaleregelgeving.overheid.nl/CVDR697036 |
+| Statia business application | USD 300 | F2, tariff 11.1 | https://lokaleregelgeving.overheid.nl/CVDR743007 |
+| Statia director application | USD 200 for a sole director; USD 250 per director where more than one | F2, tariff 11.1.1–11.1.2 | https://lokaleregelgeving.overheid.nl/CVDR743007 |
+| Statia annual licence charge | USD 100 for each licence specified by tariff 11.2's reference to item 11.1, from the calendar year after grant | F2, tariff 11.2; verify the particular licence charged | https://lokaleregelgeving.overheid.nl/CVDR743007 |
+| Statia business-object expansion request | USD 250 | F2, tariff 11.3 | https://lokaleregelgeving.overheid.nl/CVDR743007 |
+| Ordinary NV/BV accounts preparation | Eight months after year end; meeting may extend by up to six months for special circumstances | J2, articles 116, 216 | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Large NV, or relevant articles-based opt-in | Six-month preparation regime and qualified external examination, subject to the statutory conditions | J2, articles 119–124, 219 | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| Legal-person accounting retention | Ten years | J2, article 15(3) | https://wetten.overheid.nl/BWBR0028744/2026-07-01 |
+| ABB small entrepreneur relief | USD 32,000 annual qualifying turnover or less; eligibility, request and decision conditions apply | T1, article 6.22; read `bq-abb` | https://wetten.overheid.nl/BWBR0029244/2026-04-11 |
 
 No complete 2026 Saba dollar tariff is verified here. The indexed legacy tariff
 retains former-currency references; its raw figures cannot be relabelled USD.
@@ -142,9 +174,9 @@ Obtain the operative currency and amendment chain and the applicable assessment.
 No universal separate Bonaire director-licence charge is established by the
 inspected tariff chapter.
 
-## Formation and registration rules
+### Formation and registration rules
 
-### Establish the constitution and contributions
+#### Establish the constitution and contributions
 
 Use a notary practising in BES. The notarial instrument includes the articles
 and initial officers. Founders choose a language the notary understands; a
@@ -174,7 +206,7 @@ article 6. Do not assume the later company's existence removes the actor's
 exposure. Post-formation share transfers, bearer-share transitions,
 restructurings and distributions require their complete applicable provisions.
 
-### Separate registration from permission to operate
+#### Separate registration from permission to operate
 
 Register island businesses and branches at the competent Chamber. NVs, BVs,
 cooperatives, mutuals, foundations, private fund foundations and fully capable
@@ -213,7 +245,7 @@ required licence can lead to closure and article 10 penalties; a complete
 penalty assessment needs the applicable offence and enforcement rules.
 [L1, articles 5–8, 10–11 and 15]
 
-### Track every registration stream
+#### Track every registration stream
 
 | Stream | Authority and reference procedure | Evidence needed for the engagement checklist |
 |---|---|---|
@@ -232,7 +264,7 @@ not a universal statutory deadline. [Statia guidance][G3] directs applicants
 through Chamber registration and the licensing unit. Verify current form and
 document requirements without submitting an application during research.
 
-### Check officers, ownership and continuing obligations
+#### Check officers, ownership and continuing obligations
 
 Book 2 normally requires a board; a shareholder-managed BV is a specified
 exception. Representation, conflicts, temporary vacancies and duties depend on
@@ -286,7 +318,35 @@ Do not turn a preparation deadline into a universal Chamber accounts-filing
 deadline, or treat the general seven-year tax record rule as permission to
 destroy records still required by company law. [J2; R1, articles 7–8]
 
-## Hypothetical component positions
+### Output and intake additions
+
+Preserve the four universal outputs: recalculated working paper, reviewer
+brief, action list and review checklist. Add all five formation components:
+entity comparison, registration checklist, cost breakdown, first-year calendar
+and formation reviewer brief. They may share files if each is identifiable.
+An unresolved mandatory cost or comparison condition holds the complete
+package; it does not justify an invented recommendation or partial total.
+
+Map the universal transaction columns to the contribution and cost schedules.
+Add stable redacted references, island, legal form, owner/permission role,
+authority, source pinpoint, event date, dependency, valuation or quote basis,
+precision amount, currency, statutory-versus-estimated status and receipt
+status. Distinguish capital invested from formation expense and annual cost.
+The calendar states each obligation's actor, trigger, applicable deadline rule,
+professional involvement and verified penalty or outstanding penalty source.
+
+Infer and confirm the profile from redacted records before asking intake
+questions. Establish the formation purpose; island and target date; compatible
+forms and owner count; activities and location; ownership/control; risk and
+funding needs; contribution and nominal-capital terms; employees; foreign work
+or residence; tax-status decisions; existing permissions; and the notary and
+reviewer's roles. Keep identity documents, actual tax identifiers, bank details
+and authentication material with the professional. Preserve the domain's
+confirmation of the selected entity before its registration workflow.
+
+## Worked cases
+
+### Hypothetical component positions
 
 These 2026 examples stipulate the facts and applicable provisions. They are
 selected legal and arithmetic positions, not complete formation advice.
@@ -330,23 +390,43 @@ selected legal and arithmetic positions, not complete formation advice.
    the applicable tax/relief position and use `bq-abb`; do not mark the BV
    exempt or outside tax registration merely from expected turnover.
 
-## Defaults, questions and reviewer thresholds
+### Recomputed cases
 
-| Missing item | Treatment | Alternative and disclosure |
-|---|---|---|
-| Island, date, form, purpose, ownership or actual activity | Needs Input; no factual default | Obtain the fact before selecting a legal or registration route |
-| Deed, contribution value, nominal capital or call terms | Needs Input; no factual default | The notary verifies the instrument and valuation; do not assume a statutory test passes |
-| Tax status, local exemption, immigration or sector permission | Needs Input as applicable fact and source conditions | Obtain the operative authority and decision; a higher-cost assumption cannot establish unknown law |
-| Fees, annual charge, procedure or time estimate | Needs Input; no factual default | Obtain the current schedule, assessment or labelled provider quote; do not insert zero |
+**Case 1, Sint Eustatius application fees.** A business application costs USD 300 and a sole-director application USD 200: USD 500. With two directors at USD 250 each the total is USD 800, USD 300 more (example 4 above).
 
-No substantive factual default is permitted. Essential questions remain
-necessary at any cash impact. The configured question threshold is USD 0 if a
-later verified companion expressly introduces a default. Reviewer attention
-also starts at USD 0: flag every contribution, fee, classification, permission
-and source hold, including nil outcomes. These are workflow settings, not
-statutory thresholds. Apply universal grouping and its ten-question ceiling.
+```oa-check
+name: Sint Eustatius business and director application fees
+inputs:
+  business_fee: 300
+steps:
+  - sole_director_total: business_fee + 200
+  - two_director_total: business_fee + 2 * 250
+  - difference: two_director_total - sole_director_total
+expected:
+  sole_director_total: 500
+  two_director_total: 800
+  difference: 300
+```
 
-## Topical refusal catalogue
+**Case 2, a decision: how much nominal capital can the in-kind contribution carry?** Assets worth USD 8,000 with assumed liabilities of USD 1,000 give opening equity of USD 7,000. An intended nominal capital of USD 8,000 exceeds it by USD 1,000 and fails articles 101 and 201; nominal capital of USD 7,000 or less passes (example 2).
+
+```oa-check
+name: In-kind contribution against intended nominal capital
+inputs:
+  assets: 8000
+  liabilities: 1000
+  nominal_capital: 8000
+steps:
+  - opening_equity: assets - liabilities
+  - shortfall: nominal_capital - opening_equity
+expected:
+  opening_equity: 7000
+  shortfall: 1000
+```
+
+## When to refuse or refer
+
+### Topical refusal catalogue
 
 Needs Input records missing evidence; it is not itself a refusal. Apply the
 universal prohibitions and the following exact messages before partial output.
@@ -357,33 +437,9 @@ universal prohibitions and the following exact messages before partial output.
 | R-BQ-FORM-OPERATIONAL | Complete entity selection or formation package requested while a mandatory domain slot or completion condition is open | This formation reference does not yet support a complete operational package. Resolve the catalogue, source and registration conditions with the professional reviewer before preparing the full formation advice. |
 | R-BQ-FORM-AMBIGUITY | More than ten grouped factual questions are required | This formation engagement needs more than ten grouped factual questions. Resolve the source records with the professional reviewer before restarting the workflow. |
 
-## Output and intake additions
+## Completion checklist
 
-Preserve the four universal outputs: recalculated working paper, reviewer
-brief, action list and review checklist. Add all five formation components:
-entity comparison, registration checklist, cost breakdown, first-year calendar
-and formation reviewer brief. They may share files if each is identifiable.
-An unresolved mandatory cost or comparison condition holds the complete
-package; it does not justify an invented recommendation or partial total.
-
-Map the universal transaction columns to the contribution and cost schedules.
-Add stable redacted references, island, legal form, owner/permission role,
-authority, source pinpoint, event date, dependency, valuation or quote basis,
-precision amount, currency, statutory-versus-estimated status and receipt
-status. Distinguish capital invested from formation expense and annual cost.
-The calendar states each obligation's actor, trigger, applicable deadline rule,
-professional involvement and verified penalty or outstanding penalty source.
-
-Infer and confirm the profile from redacted records before asking intake
-questions. Establish the formation purpose; island and target date; compatible
-forms and owner count; activities and location; ownership/control; risk and
-funding needs; contribution and nominal-capital terms; employees; foreign work
-or residence; tax-status decisions; existing permissions; and the notary and
-reviewer's roles. Keep identity documents, actual tax identifiers, bank details
-and authentication material with the professional. Preserve the domain's
-confirmation of the selected entity before its registration workflow.
-
-## Review Checklist Items
+### Review Checklist Items
 
 - Verify the operative period and distinguish incorporation, registration and permission to operate.
 - Account for every compatible legal form and every domain comparison dimension before recommending one.
@@ -397,31 +453,47 @@ confirmation of the selected entity before its registration workflow.
 - Include ordinary NV/BV two-year inspection rights separately from public availability and ten-year retention.
 - Reconcile all contribution and cost components, every required output and the professional sign-off.
 
-## Primary source library
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| J1. Read for: Burgerlijk Wetboek BES Book 2, 1 January 2026 snapshot, valid through 30 June 2026. | https://wetten.overheid.nl/BWBR0028744/?g=2026-01-01 | 2026-10-16 |
+| J2. Read for: Book 2, consolidation from 1 July 2026, cited legal-person, formation, capital, register and accounts provisions. | https://wetten.overheid.nl/BWBR0028744/2026-07-01 | 2026-10-16 |
+| H1. Read for: Staatsblad 2019/107, articles II, IV and V, bearer-share amendments and delayed deletion. | https://zoek.officielebekendmakingen.nl/stb-2019-107.html | 2026-10-16 |
+| H2. Read for: Staatsblad 2019/149, sole article, principal commencement on 1 July 2019. | https://zoek.officielebekendmakingen.nl/stb-2019-149.html | 2026-10-16 |
+| R1. Read for: Handelsregisterwet 2009 BES, articles 3–8, registration scope, actors and notifications. | https://wetten.overheid.nl/BWBR0028503/2022-03-02 | 2026-10-16 |
+| L1. Read for: Wet vestiging bedrijven BES, cited scope, exemption, application and enforcement provisions. | https://wetten.overheid.nl/BWBR0028164/2019-01-01 | 2026-10-16 |
+| L2. Read for: Article 5 official amendment information, drafting-error and amendment history. | https://wetten.overheid.nl/BWBR0028164/2019-01-01/0/Artikel5/informatie | 2026-10-16 |
+| L3. Read for: Staatsblad 2012/31, sole article, exclusion of the defective article LXXXVI amendment from commencement. | https://zoek.officielebekendmakingen.nl/stb-2012-31.html | 2026-10-16 |
+| F1. Read for: Bonaire Retributie- en legesverordening, tariff 10.1–10.2, operative version from 1 January 2024. | https://lokaleregelgeving.overheid.nl/CVDR697036 | 2026-10-16 |
+| F2. Read for: Legesverordening Sint Eustatius 2021, tariff 11.1–11.3, operative version from 1 January 2021. | https://lokaleregelgeving.overheid.nl/CVDR743007 | 2026-10-16 |
+| T1. Read for: Belastingwet BES, articles 1.5, 5.1–5.2 and 6.22; read the retrospective threshold chain in `bq-abb`. | https://wetten.overheid.nl/BWBR0029244/2026-04-11 | 2026-10-16 |
+| G1. Read for: BCN: registering a starting business, undated current starter and employer guidance. | https://english.belastingdienst-cn.nl/topics/tax-business/starting-entrepreneurs/registering-with-the-tax-and-customs-administration | 2026-10-16 |
+| G2. Read for: Bonaire: establishment permission application, undated current application guidance. | https://bonairegov.com/ondernemen/vestigingsvergunning-aanvragen | 2026-10-16 |
+| G3. Read for: Statia: business-permit application process, undated current licensing-unit guidance. | https://www.statiagovernment.com/residents-visitors/permits-licences/business-permit/business-permit-application-process | 2026-10-16 |
+| I1. Read for: Circulaire toelating en uitzetting BES, chapter 5, self-employed and director residence policy; verify individual exceptions. | https://wetten.overheid.nl/BWBR0028837/2026-01-01 | 2026-10-16 |
+| I2. Read for: Besluit uitvoering Wet arbeid vreemdelingen BES, article 8(1)(d), director-permission work exception. | https://wetten.overheid.nl/BWBR0028231/2024-01-01 | 2026-10-16 |
+| U1. Read for: Wwft BES, articles 2.2–2.3 and 2.13, covered-provider due diligence and records. | https://wetten.overheid.nl/BWBR0030824/2025-01-01 | 2026-10-16 |
+| U2. Read for: Minister's letter, 13 February 2026, published 18 March, draft status. | https://zoek.officielebekendmakingen.nl/kst-31477-124.html | 2026-10-16 |
+| U3. Read for: Draft explanatory note, page 30, section 7.1.6; government status statement, not an enacted new filing rule. | https://zoek.officielebekendmakingen.nl/blg-1239841.pdf | 2026-10-16 |
+
+### Primary source library
 
 Sources were inspected on 16 October 2026. Statutes and operative local rules
 govern; current administrative guidance supports only its stated procedure.
 Unexamined cross-references and later amendments remain source conditions.
 
-- **J1:** [Burgerlijk Wetboek BES Book 2, 1 January 2026 snapshot][J1], valid through 30 June 2026.
-- **J2:** [Book 2, consolidation from 1 July 2026][J2], cited legal-person, formation, capital, register and accounts provisions.
-- **H1:** [Staatsblad 2019/107][H1], articles II, IV and V, bearer-share amendments and delayed deletion.
-- **H2:** [Staatsblad 2019/149][H2], sole article, principal commencement on 1 July 2019.
-- **R1:** [Handelsregisterwet 2009 BES][R1], articles 3–8, registration scope, actors and notifications.
-- **L1:** [Wet vestiging bedrijven BES][L1], cited scope, exemption, application and enforcement provisions.
-- **L2:** [Article 5 official amendment information][L2], drafting-error and amendment history.
-- **L3:** [Staatsblad 2012/31][L3], sole article, exclusion of the defective article LXXXVI amendment from commencement.
-- **F1:** [Bonaire Retributie- en legesverordening][F1], tariff 10.1–10.2, operative version from 1 January 2024.
-- **F2:** [Legesverordening Sint Eustatius 2021][F2], tariff 11.1–11.3, operative version from 1 January 2021.
-- **T1:** [Belastingwet BES][T1], articles 1.5, 5.1–5.2 and 6.22; read the retrospective threshold chain in `bq-abb`.
-- **G1:** [BCN: registering a starting business][G1], undated current starter and employer guidance.
-- **G2:** [Bonaire: establishment permission application][G2], undated current application guidance.
-- **G3:** [Statia: business-permit application process][G3], undated current licensing-unit guidance.
-- **I1:** [Circulaire toelating en uitzetting BES][I1], chapter 5, self-employed and director residence policy; verify individual exceptions.
-- **I2:** [Besluit uitvoering Wet arbeid vreemdelingen BES][I2], article 8(1)(d), director-permission work exception.
-- **U1:** [Wwft BES][U1], articles 2.2–2.3 and 2.13, covered-provider due diligence and records.
-- **U2:** [Minister's letter, 13 February 2026][U2], published 18 March, draft status.
-- **U3:** [Draft explanatory note][U3], page 30, section 7.1.6; government status statement, not an enacted new filing rule.
+### Revision and assurance
+
+Version 0.2, 17 October 2026: adds ordinary NV/BV inspection rights and reconciles
+situation and entity-choice checkpoints. Version 0.1 introduced selected 2026 NV/BV formation, capital,
+registration, licensing and ownership-record reference, with six hypothetical
+positions. Mandatory domain and operational conditions remain open; no
+country-complete or accountant-reviewed status is claimed.
+
+This guide supports professional review and does not constitute tax, legal or
+financial advice. The professional verifies the constitution, permissions,
+filings and final recommendation against the facts and operative sources.
 
 [J1]: https://wetten.overheid.nl/BWBR0028744/?g=2026-01-01
 [J2]: https://wetten.overheid.nl/BWBR0028744/2026-07-01
@@ -443,34 +515,4 @@ Unexamined cross-references and later amendments remain source conditions.
 [U2]: https://zoek.officielebekendmakingen.nl/kst-31477-124.html
 [U3]: https://zoek.officielebekendmakingen.nl/blg-1239841.pdf
 
-## Revision and assurance
-
-Version 0.2, 17 October 2026: adds ordinary NV/BV inspection rights and reconciles
-situation and entity-choice checkpoints. Version 0.1 introduced selected 2026 NV/BV formation, capital,
-registration, licensing and ownership-record reference, with six hypothetical
-positions. Mandatory domain and operational conditions remain open; no
-country-complete or accountant-reviewed status is claimed.
-
-This guide supports professional review and does not constitute tax, legal or
-financial advice. The professional verifies the constitution, permissions,
-filings and final recommendation against the facts and operative sources.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the complete catalogue of entity types; a complete 2026 Saba fee tariff in US dollars (the indexed legacy tariff still uses former-currency figures); officer and director rules beyond those cited; registration streams other than the Chamber of Commerce register. Sources were read by Ryan Duguid on 2026-10-16 and not re-opened on import.
