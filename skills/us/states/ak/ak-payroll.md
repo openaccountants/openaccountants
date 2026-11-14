@@ -1,7 +1,7 @@
 ---
 name: ak-payroll
 description: "Compute Alaska 2026 unemployment insurance with employee withholding, the 54,200 dollar wage base, assigned employer rates, coverage exceptions and TQ01 quarterly reporting. Trigger on Alaska payroll, Alaska withholding, Alaska SUI, Employment Security Tax, UI employee deductions and myAlaska."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-AK
 category: state-tax
 tax_year: 2026
@@ -19,7 +19,7 @@ type: computation
 
 ## Scope
 
-Ordinary contributory Alaska employers for calendar 2026: state income-tax withholding status, UI coverage, employee deductions, employer contribution and quarterly filing. Federal income withholding, FICA and FUTA belong to `us-payroll`. Reimbursable public/nonprofit/tribal arrangements, disputed employment localization and workers' compensation are separate matters.
+Ordinary contributory Alaska employers for calendar 2026: state income-tax withholding status, UI coverage, employee deductions, employer contribution and quarterly filing. Federal income withholding, FICA and FUTA belong to `us-form-941-940-payroll`. Reimbursable public/nonprofit/tribal arrangements, disputed employment localization and workers' compensation are separate matters.
 
 ## Ask the client first
 

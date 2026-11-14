@@ -29,7 +29,7 @@ Alaska has no individual income tax or income-tax employee withholding. It has c
 | Corporate income tax | `ak-corporate-tax.md` | Ordinary graduated tax, state base/group/factor method and filing/payment workflow; final 2026 forms and later law are unconfirmed; 2025 instructions expressly labelled 2025-2026 filing cycle |
 | Payroll withholding and UI | `ak-payroll.md` | No income-tax withholding; 2026 employee/employer UI, coverage, wage base and TQ01; actual employer notice and special coverage must be established |
 
-Load only the relevant skills and their stated dependencies. `ak-sales-tax` requires `us-sales-tax`. Federal wages, self-employment and corporate computations remain with the relevant federal skills, including `us-payroll` and `us-form-1120-c-corp`.
+Load only the relevant skills and their stated dependencies. `ak-sales-tax` requires `us-sales-tax`. Federal wages, self-employment and corporate computations remain with the relevant federal skills, including `us-form-941-940-payroll` and `us-form-1120-c-corp`.
 
 The existing local-sales skill is preserved because Alaska was already repaired this week. Its local administrator citations and worked municipal cases are not new state-host citations in this PR. DCRA corroborates the local-only structure and variable municipal bases/exemptions, but its dated page does not independently establish every 2026 local rate or remote-seller threshold. No local figures have been added here.
 
