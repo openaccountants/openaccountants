@@ -1008,6 +1008,13 @@
     "dir": "skills/niger"
   },
   {
+    "code": "NF",
+    "name": "Norfolk Island",
+    "region": "apac",
+    "owner": "ryan",
+    "dir": "skills/norfolk-island"
+  },
+  {
     "code": "NG",
     "name": "Nigeria",
     "region": "africa",
