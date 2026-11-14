@@ -663,7 +663,6 @@ The author (Ryan Duguid) checked every source on 14 November 2026. The conformer
 Author's source note, kept as written: Sources were checked on 14 November 2026. 'Latest' statute links can change; retain the consolidation, amendment/application and period evidence used. XRB compilations and the 2026 amendment have distinct effective/application conditions described above.
 
 
-<!-- openaccountants-cta-block -->
 
 ---
 

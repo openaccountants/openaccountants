@@ -593,7 +593,6 @@ The 2026 form's 2 pages were read natively without OCR and visually checked. Fon
 - Selected commencement/application provisions in the 2024 multinational-tax, 2026 compliance, 2023 platform-economy and 2025 remedial Acts. No source below establishes every later amendment or every special branch.
 
 
-<!-- openaccountants-cta-block -->
 
 ---
 

@@ -476,6 +476,5 @@ Not yet confirmed: the box mapping and every page reference are the 2026 IR4 and
 
 This source-cited draft produces conditional working papers for an appropriately qualified New Zealand tax practitioner. Verify law, source conditions, facts and all required schedules for the actual period before relying on a figure or filing. No live return, spreadsheet artifact, LLM upload or practitioner sign-off has been tested or obtained.
 
-<!-- openaccountants-cta-block -->
 
 ---
