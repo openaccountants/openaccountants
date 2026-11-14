@@ -12,10 +12,11 @@ description: >
   "Greek island VAT". Out of scope: e-invoicing and myDATA transmission (greece-einvoice), company
   set-up (gr-company-formation), income tax (gr-income-tax), the country overview (gr-tax-overview),
   cross-border income (gr-cross-border). gr-vat-return points here.
-version: 2.2
+version: 2.3
+type: filing-howto
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -43,19 +44,19 @@ Load this skill with eu-vat-directive (EU rules) and vat-workflow-base (the retu
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate | 24% | 2026 | VAT Code art. 26(1): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
-| Reduced rate, goods and services in Annex III | 13% (for example hotel stays, passenger transport, restaurants and cafés except drinks, water supply) | 2026 | art. 26(1) and Annex III: same URL |
-| Lower rate where Annex III says so | 6% (for example books, medicines for human use, electricity and natural gas, theatre and cinema tickets) | 2026 | art. 26(1) and Annex III: same URL |
-| Lowest rate where Annex III says so | 4% (works to remove architectural barriers for people with disabilities, Annex III B.14) | 2026 | art. 26(1) and Annex III: same URL |
-| Island reduction, automatic | Rates cut by 30% on the islands of the North Aegean Region, Samothrace and the Dodecanese with a population of up to 20,000 at the latest census: 24% to 17%, 13% to 9%, 6% to 4%, 4% to 3% | From 1.1.2026 (ν. 5246/2025 arts. 11 and 47(5)) | art. 26(4A), (5), (6): same URL; ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025): https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf |
-| Island reduction, by ministerial decision | Rates cut by 30% on Lesvos, Kos, Samos and Chios while a migrant reception centre operates there. The decision in force is Α.1150/2021 (ΦΕΚ Β' 2828), so the cut applies on these four islands in 2026. Leros was taken out of art. 26(4) from 1.1.2026 and now gets the cut under art. 26(4A) | 2026 | art. 26(4): same URL; AADE circular Ε.2113/2025, point 1: https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf |
-| Islands that get the reduction | Only those in the annex to AADE circular Ε.2113/2025 (built from ELSTAT census data). Main islands: Agathonisi, Agios Efstratios, Astypalaia, Ikaria, Kalymnos, Karpathos, Kasos, Kos, Leipsoi, Leros, Lesvos, Limnos, Megisti, Nisyros, Oinousses, Patmos, Samothrace, Samos, Symi, Tilos, Fournoi, Chalki, Chios, Psara, plus the islets listed there. Rhodes is not on the list | 2026 | Ε.2113/2025, point 2 and annex: same URL |
-| Island reduction does not apply | Tobacco products and means of transport | 2026 | art. 26(4B): same URL |
-| Small business exemption, Greek turnover | EUR 10,000 (previous and current year) | From 1.1.2025 | art. 44α(1): same URL |
-| EU SME scheme, Union turnover | EUR 100,000 (previous and current year) | From 1.1.2025 | arts. 44β(1), 44δ(2): same URL |
-| EU distance sales and e-services threshold | EUR 10,000 a year, all member states together | 2026 | art. 19(1): same URL |
-| Net VAT payable carried forward instead of paid | Up to EUR 30 | 2026 | art. 43(6): same URL |
-| Two interest-free instalments allowed | Tax due over EUR 100 on a return filed on time | 2026 | art. 43(6): same URL |
-| VAT on exempt use deducted in full anyway | Up to EUR 30 a year | 2026 | art. 36(8): same URL |
+| Reduced rate, goods and services in Annex III | 13% (for example hotel stays, passenger transport, restaurants and cafés except drinks, water supply) | 2026 | art. 26(1) and Annex III: https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Lower rate where Annex III says so | 6% (for example books, medicines for human use, electricity and natural gas, theatre and cinema tickets) | 2026 | art. 26(1) and Annex III: https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Lowest rate where Annex III says so | 4% (works to remove architectural barriers for people with disabilities, Annex III B.14) | 2026 | art. 26(1) and Annex III: https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Island reduction, automatic | Rates cut by 30% on the islands of the North Aegean Region, Samothrace and the Dodecanese with a population of up to 20,000 at the latest census: 24% to 17%, 13% to 9%, 6% to 4%, 4% to 3% | From 1.1.2026 (ν. 5246/2025 arts. 11 and 47(5)) | art. 26(4A), (5), (6): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf; ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025): https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf |
+| Island reduction, by ministerial decision | Rates cut by 30% on Lesvos, Kos, Samos and Chios while a migrant reception centre operates there. The decision in force is Α.1150/2021 (ΦΕΚ Β' 2828), so the cut applies on these four islands in 2026. Leros was taken out of art. 26(4) from 1.1.2026 and now gets the cut under art. 26(4A) | 2026 | art. 26(4): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf; AADE circular Ε.2113/2025, point 1: https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf |
+| Islands that get the reduction | Only those in the annex to AADE circular Ε.2113/2025 (built from ELSTAT census data). Main islands: Agathonisi, Agios Efstratios, Astypalaia, Ikaria, Kalymnos, Karpathos, Kasos, Kos, Leipsoi, Leros, Lesvos, Limnos, Megisti, Nisyros, Oinousses, Patmos, Samothrace, Samos, Symi, Tilos, Fournoi, Chalki, Chios, Psara, plus the islets listed there. Rhodes is not on the list | 2026 | Ε.2113/2025, point 2 and annex: https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Island reduction does not apply | Tobacco products and means of transport | 2026 | art. 26(4B): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Small business exemption, Greek turnover | EUR 10,000 (previous and current year) | From 1.1.2025 | art. 44α(1): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| EU SME scheme, Union turnover | EUR 100,000 (previous and current year) | From 1.1.2025 | arts. 44β(1), 44δ(2): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| EU distance sales and e-services threshold | EUR 10,000 a year, all member states together | 2026 | art. 19(1): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Net VAT payable carried forward instead of paid | Up to EUR 30 | 2026 | art. 43(6): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Two interest-free instalments allowed | Tax due over EUR 100 on a return filed on time | 2026 | art. 43(6): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| VAT on exempt use deducted in full anyway | Up to EUR 30 a year | 2026 | art. 36(8): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
 
 Rounding on islands: the reduced rate is rounded to the nearest whole number, with 0.5 rounded up (art. 26(6)). So 6% x 0.7 = 4.2% gives 4%, and 4% x 0.7 = 2.8% gives 3%. The reduction covers goods that, when the tax becomes chargeable, (βα) are on those islands and are supplied by a taxable person established there, (ββ) are sold from anywhere in Greece to a taxable person or a non-taxable legal person established there, (βγ) are acquired from another member state by such a person established there, or (βδ) are imported into those islands (art. 26(4)(β), applied to the art. 26(4A) islands by art. 26(4A)). It also covers services physically performed there by a business established there (art. 26(5)). A permanent island branch counts as being established there. A mainland seller delivering to a private consumer on an island charges the normal rate (Ε.2113/2025, point 5, examples 2 and 6).
 
