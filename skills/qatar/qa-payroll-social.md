@@ -256,4 +256,4 @@ require separate current authority decisions and are outside this Guide's scope.
 Source-cited draft. A qualified Qatar professional must review the employee
 coverage, records and applicable scheme before remittance or acting.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -329,4 +329,4 @@ General reference only. This source-cited draft is not a filing or a professiona
 attestation. A qualified Qatar tax professional must review the taxpayer's facts,
 supporting documents and applicable law before filing or taking a tax position.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
