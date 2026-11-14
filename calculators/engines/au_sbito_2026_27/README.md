@@ -2,9 +2,9 @@
 
 Australia 2026-27 small business income tax offset for an individual resident: 16% of the tax on net small business income, capped at $1,000, aggregated turnover under $5m.
 
-Jurisdiction AU. Tax year 2026-27. Engine version 1.2.0.
+Jurisdiction AU. Tax year 2026-27. Engine version 1.4.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-sbito-2026-27.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-sbito-2026-27.ts` in the OpenAccountants platform at commit `c2e3c2b9`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -29,7 +29,7 @@ import { run } from "./calculators/engines/au_sbito_2026_27/index.mjs";
 console.log(JSON.stringify(run({"taxable_income":50000,"net_small_business_income":20000,"aggregated_turnover":100000,"tax_year":"2026-27"}), null, 2));
 ```
 
-To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("au_sbito_2026_27", "1.2.0", facts, run(facts))` equals the `receipt.id` it returned.
+To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("au_sbito_2026_27", "1.4.0", facts, run(facts))` equals the `receipt.id` it returned.
 
 ## Inputs
 
@@ -87,4 +87,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `c2e3c2b9` (OpenAccountants platform, `src/lib/engines`).
