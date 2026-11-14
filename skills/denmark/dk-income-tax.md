@@ -1,16 +1,17 @@
 ---
 name: dk-income-tax
 description: "Danish personal income tax for income year 2026, for residents who are employees or self-employed (selvstændig erhvervsdrivende). Covers AM-bidrag at 8% and the under-18 rule, bundskat 12.01%, kommuneskat and kirkeskat (2026 averages), the new 2026 bands from the personal tax reform: mellemskat 7.5% over DKK 641,200, topskat 7.5% over DKK 777,900 and toptopskat 5% over DKK 2,592,700, personfradrag DKK 54,100, beskæftigelsesfradrag, jobfradrag, senior and single-parent allowances, skatteloft 44.57% and 42%, share income at 27% and 42% over DKK 79,400, business deductions, depreciation, private car, virksomhedsordningen and kapitalafkastordningen, B-skat, årsopgørelse, the 1 July deadline, restskat and skattetillæg. Trigger on: Danish income tax, topskat 2026, mellemskat, toptopskat, AM-bidrag, personfradrag, beskæftigelsesfradrag, B-skat, årsopgørelse, restskat, self-employed tax Denmark. Out of scope: companies (dk-corporate-tax), share and property gains in depth (dk-capital-gains), non-residents and treaties (dk-cross-border), payroll withholding (dk-payroll), ATP and other contributions (dk-social-contributions), VAT (denmark-vat-return)."
-version: 2.2
+version: 2.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Denmark: personal income tax, income year 2026

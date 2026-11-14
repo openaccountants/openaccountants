@@ -1,14 +1,15 @@
 ---
 name: dk-payroll
 description: "Use this skill to run Danish payroll for 2026: registering as an employer on virk.dk, the monthly eIndkomst report and its 2026 deadlines (the 10th of the next month for small and medium employers, the last banking day of the month for large ones), the eSkattekort (hovedkort, bikort, frikort) and the forskudsopgørelse behind it, the withholding order (ATP, then 8% AM-bidrag, then A-skat at the trækprocent after the monthly fradrag), ATP of DKK 99 employee and DKK 198 employer a month, holiday pay under the Holiday Act (ferietillæg 1%, feriegodtgørelse 12.5%, FerieKonto), free car and free phone, payslips and penalties. Trigger phrases: lønkørsel, A-skat, am-bidrag, trækprocent, skattekort, eIndkomst, feriepenge, fri bil, Danish payroll. Out of scope: the employee's own tax computation (dk-income-tax), employer social contributions and Samlet Betaling (dk-social-contributions), self-employed B-tax (dk-income-tax), company tax (dk-corporate-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Denmark payroll: withholding, eIndkomst and holiday pay (2026)

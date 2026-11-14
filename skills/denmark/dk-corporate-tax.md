@@ -1,17 +1,18 @@
 ---
 name: dk-corporate-tax
 description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (denmark-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.2
+# Denmark: corporate income tax (selskabsskat) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 

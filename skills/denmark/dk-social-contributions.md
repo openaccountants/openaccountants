@@ -1,17 +1,18 @@
 ---
 name: dk-social-contributions
 description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, denmark-vat-return. Payroll withholding of A-skat is not covered."
-version: 0.2
+version: 0.3
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.2
+# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's or employer's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Denmark.
 
