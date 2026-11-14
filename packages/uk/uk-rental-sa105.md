@@ -1,16 +1,17 @@
 ---
 name: uk-rental-sa105
 description: Use this skill whenever asked about UK property income or rental income for individuals. Trigger on phrases like "SA105", "rental income UK", "property income", "buy-to-let", "letting income", "landlord tax UK", "rent-a-room", "mortgage interest relief", "Section 24", "property allowance", "non-resident landlord scheme", "NRLS", "furnished holiday let", "FHL abolished", "FHL abolition", "repairs deduction", "letting agent fees", "property expenses", "UK property pages", "April 2026 property tax", "property income hike", "MTD ITSA landlord", or any question about computing, filing, or reporting UK property income on a Self Assessment tax return. Covers SA105 form structure, allowable expenses, mortgage interest restriction, Rent-a-Room relief, property income allowance, non-resident landlord scheme, the abolition of FHL rules, and the April 2026 property income rate change announced at Autumn Budget 2025. ALWAYS read this skill before touching any UK rental income work.
-version: 1.2
+version: 1.3
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - uk-income-tax-sa100
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # UK property income on the SA105 pages

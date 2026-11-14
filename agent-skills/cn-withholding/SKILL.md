@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cn-withholding"
   jurisdiction: "CN"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # China withholding: payroll, individual fees, non-resident enterprises and imported services
@@ -28,24 +28,24 @@ All figures are CNY unless an example expressly assumes a currency conversion.
 | Dividends, interest, rent, royalties in that scope |Gross income base, subject to the actual rule, exemptions and treaty; no assumed service-cost deduction | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 19; [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §3 |
 | Property transfer |Gain: income less net property value; actual records and special indirect-transfer rules | [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 19; [STA 2017 No.37](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html) §3; [STA 2015 No.7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html) |
 | Resident salary monthly basic reduction |5000 per month in cumulative payroll calculation, with eligible additional/special deductions and any applicable special collection measures | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 6; `cn-iit` |
-| Resident labour/author/royalty fees |Per receipt: up to 4000, deduct 800; above 4000, deduct 20%. Author's income amount then×70% | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8 |
-| Resident labour-fee withholding |20% to 20000;30%/quick deduction 2000 above 20000 to 50000;40%/7000 above 50000 | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8/attached table 2 |
-| Resident author/royalty withholding |20% of the respective income amount; author's fee is **not** a universal 14% of gross | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8 |
+| Resident labour/author/royalty fees |Per receipt: up to 4000, deduct 800; above 4000, deduct 20%. Author's income amount then×70% (the law prints these in words, 百分之二十 and 百分之七十; derived from that text) | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8; [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 6 |
+| Resident labour-fee withholding |20% to 20000;30%/quick deduction 2000 above 20000 to 50000;40%/7000 above 50000 | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8/attached table 2; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 2 |
+| Resident author/royalty withholding |20% of the respective income amount; author's fee is **not** a universal 14% of gross (computed: 70% × 20%) | [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 8 |
 | Individual interest/dividend/bonus classified income |20%, subject to specifically verified exemptions/reliefs | [IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html) art. 3; [STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 10 |
 | Public-market listed-share dividends: holding≤1 month |Full base×20% | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
-| Holding>1 month and≤1 year |50% base×20%=10% effective | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
+| Holding>1 month and≤1 year |50% base×20%=10% effective (computed) | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
 | Holding>1 year |Temporary exemption, within the notice's actual scope | [Caishui 2015 No.101](https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html) §1 |
 | Ordinary qualifying imported royalty/service consumed in China |6% VAT category for the stated example; classification/territoriality and collection method must be confirmed | [2026 VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) arts. 3–4,10,15; [2026 VAT Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) art. 4 |
 
 | Cumulative resident salary taxable base |Rate|Quick deduction|Official source|
 | --- | --- | --- | --- |
-| Up to 36000 |3%|0|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 36000 to 144000 |10%|2520|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 144000 to 300000 |20%|16920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 300000 to 420000 |25%|31920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 420000 to 660000 |30%|52920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 660000 to 960000 |35%|85920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
-| Over 960000 |45%|181920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html),table 1|
+| Up to 36000 |3%|0|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 36000 to 144000 |10%|2520|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 144000 to 300000 |20%|16920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 300000 to 420000 |25%|31920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 420000 to 660000 |30%|52920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 660000 to 960000 |35%|85920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
+| Over 960000 |45%|181920|[STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html), table 1; [Foshan Tax Bureau rate tables](https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml) table 1|
 
 The individual wage table is cumulative annual withholding, not a monthly non-resident table. Non-resident wages deduct 5000 monthly and use the separate monthly table; non-resident labour/author/royalty income uses the corresponding income amount and that table. The foreign workday allocation,90/183-day or treaty conditions and annual residence change are addressed in `cn-iit`; do not blindly apply cumulative resident deductions ([STA 2018 No.61 withholding measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html) art. 9).
 
@@ -172,22 +172,22 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| EIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-10-29 |
-| EIT Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-10-29 |
-| IIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-10-29 |
-| STA 2018 No.61 withholding measures | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html | 2026-10-29 |
-| STA 2017 No.37 | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html | 2026-10-29 |
-| Treaty measures 2019 No. 35 Arts. 3,7–9,11 | https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml | 2026-10-29 |
-| STA 2018 No.9 beneficial-owner rules | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194781/content.html | 2026-10-29 |
-| Caishui 2015 No.101 | https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html | 2026-10-29 |
-| STA 2015 No.7 | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html | 2026-10-29 |
-| MOF/STA 2021 No.28 | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5194989/content.html | 2026-10-29 |
-| Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
-| 2026 VAT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html | 2026-10-29 |
-| 2026 VAT Implementation Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html | 2026-10-29 |
+| EIT Law. Read for Who this applies to, Rates, bands and thresholds, Deadlines and filing | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-11-14 |
+| EIT Regulations. Read for Rates, bands and thresholds | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-11-14 |
+| IIT Law. Read for Who this applies to, Rates, bands and thresholds, Resident individual payments | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-14 |
+| STA 2018 No.61 withholding measures. Read for Rates, bands and thresholds, Resident individual payments, Deadlines and filing | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html | 2026-11-14 |
+| STA 2017 No.37. Read for Rates, bands and thresholds, Non-resident enterprise income, Deadlines and filing | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html | 2026-11-14 |
+| Treaty measures 2019 No. 35 Arts. 3,7–9,11. Read for Deadlines and filing, Cross-border points | https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml | 2026-11-14 |
+| STA 2018 No.9 beneficial-owner rules. Read for Cross-border points | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194781/content.html | 2026-11-14 |
+| Caishui 2015 No.101. Read for Rates, bands and thresholds, Resident individual payments, Other original scenarios retained with their boundaries | https://www.chinatax.gov.cn/n810341/n810755/c1797427/content.html | 2026-11-14 |
+| STA 2015 No.7. Read for Rates, bands and thresholds, Cross-border points | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1465977/201502/c1676726/content.html | 2026-11-14 |
+| MOF/STA 2021 No.28. Read for Imported services and intangibles, Two worked examples that recompute | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5194989/content.html | 2026-11-14 |
+| Tax Collection Administration Law. Read for Penalties and interest | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
+| 2026 VAT Law. Read for Who this applies to, Rates, bands and thresholds, Imported services and intangibles | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html | 2026-11-14 |
+| 2026 VAT Implementation Regulations. Read for Rates, bands and thresholds, Imported services and intangibles | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html | 2026-11-14 |
 
-| Additional operative source | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-10-29 |
-| Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-29 |
+| Foshan Tax Bureau IIT rate and withholding tables (个人所得税税率表). Read for the IIT rate tables | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-11-14 |
+| 中华人民共和国税收征收管理法实施细则. Read for Deadlines and filing | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-11-14 |
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
@@ -195,4 +195,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-withholding` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-withholding. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-withholding` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-withholding. If neither is available, confirm every figure against the official source pages cited above before relying on it.

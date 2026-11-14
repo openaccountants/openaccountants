@@ -1,16 +1,17 @@
 ---
 name: om-corporate-income-tax
 description: "Corporate income tax for Oman, tax year 2026: 15%, 3% and 55% rates, withholding on non-residents, losses, depreciation, returns, portal services and penalties, from the Income Tax Law and Tax Authority FAQs."
-version: 1.3
+version: 1.4
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Oman Corporate Income Tax v1.3
+# Oman Corporate Income Tax v1.4
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
