@@ -41,9 +41,9 @@ Employers in Vietnam and their employees in 2026: compulsory social insurance (B
 | Employer social insurance, sickness and maternity fund | 3% | Art. 34(1)(a) | same |
 | Employer social insurance, retirement and survivorship fund | 14% | Art. 34(1)(b) | same |
 | Social insurance salary floor and cap | Floor = reference level; cap = 20 times the reference level at the time of payment | Art. 31(1)(đ); while the base salary exists the reference level equals it | same |
-| Reference level (base salary) and cap, 1 January to 30 June 2026 | VND 2,340,000; cap VND 46,800,000 a month | 20 times 2,340,000 | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm |
-| Reference level and cap from 1 July 2026 | VND 2,530,000; cap VND 50,600,000 a month | Decree 161/2026; 20 times 2,530,000 | same |
-| Health insurance | 4.5% of the social insurance salary: employer two thirds (3%), employee one third (1.5%) | Decree 188/2025 | https://xaydungchinhsach.chinhphu.vn/nghi-dinh-188-2025-nd-cp-quy-dinh-moi-ve-doi-tuong-muc-dong-muc-ho-tro-dong-bao-hiem-y-te-119250711175642187.htm |
+| Reference level (base salary) and cap, 1 January to 30 June 2026 | VND 2,340,000 (Decree 73/2024, from 1 July 2024); cap VND 46,800,000 a month | Cap computed: 20 times 2,340,000 | Nghe An provincial portal on Decree 73/2024: https://hcc.nghean.gov.vn/tin-tong-hop/chinh-phu-quy-dinh-muc-luong-co-so-va-che-do-tien-thuong-moi-voi-can-bo-cong-chuc-vien-chuc-luc-luong-vu-trang-1429.html |
+| Reference level and cap from 1 July 2026 | VND 2,530,000; cap VND 50,600,000 a month | Decree 161/2026; 20 times 2,530,000 | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm |
+| Health insurance | 4.5% of the social insurance salary: employer two thirds, employee one third (3% and 1.5%, computed from the 4.5%) | Decree 188/2025 | https://xaydungchinhsach.chinhphu.vn/nghi-dinh-188-2025-nd-cp-quy-dinh-moi-ve-doi-tuong-muc-dong-muc-ho-tro-dong-bao-hiem-y-te-119250711175642187.htm |
 | Unemployment insurance | Employee up to 1% of monthly pay; employer up to 1% of the payroll of participating staff | Employment Law 74/2025/QH15, from 1 January 2026; the 1% in practice is set by Decree 374/2025 | https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-dong-bao-hiem-that-nghiep-119250711175950882.htm |
 | Regional minimum wage 2026, Region I | VND 5,310,000 a month | Decree 293/2025, from 1 January 2026 | https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-293-2025-nd-cp-quy-dinh-muc-luong-toi-thieu-doi-voi-nguoi-lao-dong-lam-viec-theo-hop-dong-lao-dong-119251110172808433.htm |
 | Region II | VND 4,730,000 | same | same |
@@ -136,6 +136,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| Nghe An provincial government portal: read for Decree 73/2024, base salary 2.340.000 dong a month from 1 July 2024 | https://hcc.nghean.gov.vn/tin-tong-hop/chinh-phu-quy-dinh-muc-luong-co-so-va-che-do-tien-thuong-moi-voi-can-bo-cong-chuc-vien-chuc-luc-luong-vu-trang-1429.html | 2026-11-14 |
 | Read for the consolidated Social Insurance Law 41/2024/QH15 (VBHN 19/VBHN-VPQH, February 2026): Art. 31 contribution salary floor and cap, Art. 32 rates, Art. 33 employee 8%, Art. 34 employer 3% and 14% and payment deadlines | https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/5/468972-1772691642_v1_1772691941_signed.pdf | 2026-11-14 |
 | Read for the base salary rise to VND 2,530,000 from 1 July 2026 (Decree 161/2026) and the cap of 50,600,000 | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm | 2026-11-14 |
 | Read for Decree 188/2025 health insurance rate of 4.5%, two thirds employer and one third employee | https://xaydungchinhsach.chinhphu.vn/nghi-dinh-188-2025-nd-cp-quy-dinh-moi-ve-doi-tuong-muc-dong-muc-ho-tro-dong-bao-hiem-y-te-119250711175642187.htm | 2026-11-14 |
