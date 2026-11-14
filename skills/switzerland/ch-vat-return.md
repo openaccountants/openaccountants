@@ -1,17 +1,18 @@
 ---
 name: ch-vat-return
 description: "Preparing and filing the Swiss VAT return (MWST-Abrechnung, decompte TVA) for tax year 2026. Covers who files (CHF 100,000 worldwide turnover test, foreign businesses, electronic platforms since 1 January 2025), the 8.1%, 2.6% and 3.8% rates, output tax, reverse charge on services from abroad (Bezugsteuer) and input tax, the effective method, the net tax rate method (Saldosteuersatz, CHF 5,024,000 and CHF 108,000 caps) and the flat tax rate method (Pauschalsteuersatz), quarterly, half-yearly, monthly and the new annual settlement with ESTV instalments, the 60-day filing and payment deadline, corrections, default interest of 4.0% and penalties. Trigger on: Swiss VAT return, MWST Abrechnung, Saldosteuersatz, Pauschalsteuersatz, jährliche Abrechnung, Bezugsteuer, Verzugszins MWST. Out of scope: wider VAT topics in switzerland-vat; income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax); ch-cross-border; switzerland-crypto-tax."
-version: 2.2
+version: 2.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Swiss VAT return (MWST-Abrechnung), tax year 2026 v2.2
+# Swiss VAT return (MWST-Abrechnung), tax year 2026 v2.3
 
 > **Source-cited draft: not reviewed by an accountant.** General tax reference for AI-assisted work. Do not file, pay or take a position on it without review by a qualified professional in Switzerland.
 
@@ -157,13 +158,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-26 |
-| MWSTV, VAT Ordinance, SR 641.201 (version of 1 January 2025) | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-26 |
-| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026) | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-26 |
-| ESTV, VAT rates | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-10-26 |
-| ESTV, net tax rates and flat tax rates | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-10-26 |
-| ESTV, paying VAT | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-26 |
+| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025): read for the articles this Guide cites (registration, periods, settlement methods, interest) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-26 |
+| MWSTV, VAT Ordinance, SR 641.201 (version of 1 January 2025): read for the articles this Guide cites | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-26 |
+| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026): read for the 2026 late-payment and refund interest rates | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-26 |
+| ESTV, VAT rates in Switzerland: read for the 8.1% standard, 2.6% reduced and 3.8% accommodation rates | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-11-14 |
+| ESTV, net tax rates and flat tax rates: read for the CHF 5.024 million turnover and CHF 108,000 tax limits of the net tax rate method | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-11-14 |
+| ESTV, paying VAT: read for the 60-day filing and payment deadline and the default and refund interest rules | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-11-14 |
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form, so amounts are not mapped to boxes; the list of industries per net tax rate and the individual flat tax rates; the fine amount under Art. 98; the day-count basis for default interest; the changes in the MWSTV version in force from 1 January 2027 (not read; this skill uses the 2025 version for 2026); Liechtenstein treatment.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

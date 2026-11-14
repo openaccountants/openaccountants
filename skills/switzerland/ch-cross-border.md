@@ -1,13 +1,14 @@
 ---
 name: ch-cross-border
 description: "Switzerland cross-border tax hub for 2026: when a person or company becomes or stops being taxable in Switzerland. Covers the residence tests for individuals (DBG art. 3: domicile, or a stay of 30 days with work or 90 days without) and companies (seat or effective management), arriving (lump-sum taxation under DBG art. 14, tax at source for foreign employees and the subsequent ordinary assessment from 2021), leaving (no exit tax for individuals; hidden reserves and 35% withholding tax when a company moves abroad), non-residents with Swiss income (employment, board fees, mortgage interest, pensions), the 35% Verrechnungssteuer and treaty refunds, and EU social security coordination. Calendar tax year. Trigger on: moving to Switzerland, leaving Switzerland, non-resident, expat, Quellensteuer, NOV, Pauschalbesteuerung, exit tax, Verrechnungssteuer refund, Grenzgänger. Out of scope: ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax, ch-lump-sum (detail), ch-ahv-iv, germany-to-switzerland-cross-border-tax."
-version: 0.2
+version: 0.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: cross-border
 ---
 
@@ -42,25 +43,25 @@ There is no split-year concept in the UK sense. Liability starts on the day domi
 
 | Item | Figure | Tax year | Source |
 |---|---|---|---|
-| Residence by stay, with gainful activity | 30 days | 2026 | [DBG art. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Residence by stay, without gainful activity | 90 days | 2026 | [DBG art. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Lump-sum taxation: federal minimum tax base | CHF 435,000 (or 7 times annual rent or rental value, if higher) | 2026 (from 1 Jan 2026) | [DBG art. 14 para. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Lump-sum taxation: gap needed after earlier Swiss residence | 10 years | 2026 | [DBG art. 14 para. 1](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Tax at source: mandatory subsequent ordinary assessment (NOV) | Gross employment income of at least CHF 120,000 in a tax year | 2026 | [QStV art. 9](https://www.fedlex.admin.ch/eli/cc/2018/274/de) |
-| Zurich: other NOV triggers | Taxable assets of CHF 80,000 (single) or CHF 160,000 (married); other income of CHF 3,000 | 2026 | [Kantonales Steueramt Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html) |
-| Quasi-resident non-resident: NOV on request | At least 90% of worldwide gross income taxed in Switzerland | 2026 | [QStV art. 14](https://www.fedlex.admin.ch/eli/cc/2018/274/de) |
-| Federal tax at source on board fees paid to non-residents | 5% of gross | 2026 | [DBG art. 93](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Federal tax at source on mortgage-secured interest paid to non-residents | 3% of gross | 2026 | [DBG art. 94](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Federal tax at source on Swiss pensions (public or occupational) paid abroad | 1% of gross for annuities | 2026 | [DBG art. 95 and 96](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Federal tax at source on blocked employee options, holder now abroad | 11.5% of the benefit | 2026 | [DBG art. 97a](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Non-resident artists, athletes, speakers (federal) | 0.8% to 7% of daily income, by band | 2026 | [DBG art. 92](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Verrechnungssteuer on dividends and on bond and bank interest | 35% | 2026 | [VStG art. 13](https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de) |
-| Verrechnungssteuer on life annuities and pensions; other insurance benefits | 15%; 8% | 2026 | [VStG art. 13](https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de) |
-| Treaty example: Swiss dividend to a German resident (portfolio) | 15% maximum Swiss tax; 0% for a German company holding 10% or more for 365 days | 2026 | [DBA CH-DE art. 10](https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de) |
-| Treaty example: Swiss interest to a German resident | Taxed only in Germany (refund of the 35%) | 2026 | [DBA CH-DE art. 11](https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de) |
-| Royalties and service fees paid abroad | No Swiss withholding tax: not in the VStG list of taxable income | 2026 | [VStG art. 4](https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de) |
-| Exit tax on individuals | None: private capital gains are tax free | 2026 | [DBG art. 16 para. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Company leaving: untaxed hidden reserves | Taxed at the ordinary profit tax rate (federal 8.5% of net profit) | 2026 | [DBG art. 61b, 68, 80](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Residence by stay, with gainful activity | 30 days | 2026 | [DBG art. 3](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Residence by stay, without gainful activity | 90 days | 2026 | [DBG art. 3](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Lump-sum taxation: federal minimum tax base | CHF 435,000 (or 7 times annual rent or rental value, if higher) | 2026 (from 1 Jan 2026) | [DBG art. 14 para. 3](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Lump-sum taxation: gap needed after earlier Swiss residence | 10 years | 2026 | [DBG art. 14 para. 1](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Tax at source: mandatory subsequent ordinary assessment (NOV) | Gross employment income of at least CHF 120,000 in a tax year | 2026 | [QStV art. 9](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/html/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-html.html) |
+| Zurich: other NOV triggers | Taxable assets of CHF 80'000 (single) or CHF 160'000 (married); other income of CHF 3'000 | 2026 | [Kantonales Steueramt Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html) |
+| Quasi-resident non-resident: NOV on request | At least 90% of worldwide gross income taxed in Switzerland | 2026 | [QStV art. 14](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/html/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-html.html) |
+| Federal tax at source on board fees paid to non-residents | 5% of gross | 2026 | [DBG art. 93](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Federal tax at source on mortgage-secured interest paid to non-residents | 3% of gross | 2026 | [DBG art. 94](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Federal tax at source on Swiss pensions (public or occupational) paid abroad | 1% of gross for annuities | 2026 | [DBG art. 95 and 96](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Federal tax at source on blocked employee options, holder now abroad | 11.5% of the benefit | 2026 | [DBG art. 97a](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Non-resident artists, athletes, speakers (federal) | 0.8% to 7% of daily income, by band | 2026 | [DBG art. 92](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Verrechnungssteuer on dividends and on bond and bank interest | 35% | 2026 | [VStG art. 13](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1966/371_385_384/20250101/de/html/fedlex-data-admin-ch-eli-cc-1966-371_385_384-20250101-de-html.html) |
+| Verrechnungssteuer on life annuities and pensions; other insurance benefits | 15%; 8% | 2026 | [VStG art. 13](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1966/371_385_384/20250101/de/html/fedlex-data-admin-ch-eli-cc-1966-371_385_384-20250101-de-html.html) |
+| Treaty example: Swiss dividend to a German resident (portfolio) | 15% maximum Swiss tax; 0% for a German company holding 10% or more for 365 days | 2026 | [DBA CH-DE art. 10](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1972/3075_3128_2910/20251127/de/html/fedlex-data-admin-ch-eli-cc-1972-3075_3128_2910-20251127-de-html.html) |
+| Treaty example: Swiss interest to a German resident | Taxed only in Germany (refund of the 35%) | 2026 | [DBA CH-DE art. 11](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1972/3075_3128_2910/20251127/de/html/fedlex-data-admin-ch-eli-cc-1972-3075_3128_2910-20251127-de-html.html) |
+| Royalties and service fees paid abroad | No Swiss withholding tax: not in the VStG list of taxable income | 2026 | [VStG art. 4](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1966/371_385_384/20250101/de/html/fedlex-data-admin-ch-eli-cc-1966-371_385_384-20250101-de-html.html) |
+| Exit tax on individuals | None: private capital gains are tax free | 2026 | [DBG art. 16 para. 3](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
+| Company leaving: untaxed hidden reserves | Taxed at the ordinary profit tax rate (federal 8.5% of net profit) | 2026 | [DBG art. 61b, 68, 80](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html) |
 | Late payment interest, federal taxes and Verrechnungssteuer | 4.0% | 2026 (unchanged for 2027) | [ESTV 2026](https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI); [ESTV 2027](https://www.estv.admin.ch/de/newnsb/bCxrY5LSQCuF) |
 
 Cantonal and communal tax at source is added to the federal rates above, using the tariff of the competent canton. The ESTV publishes the cantonal tariffs as files for payroll software; readable tariffs are on each canton's site ([ESTV: Quellensteuer](https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html)).
@@ -202,22 +203,23 @@ If he were a German company holding 10% or more for 365 days, the Swiss tax on t
 
 ## Sources
 
-Read on 2026-10-22:
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| DBG, SR 642.11, consolidated version of 2 September 2026 | Read for arts 3 (30 and 90 days), 14 (lump sum, CHF 435,000, ten-year gap), 16.3, 40, 68 (8.5%), 83 to 101 incl. 92 (0.8% to 7%), 93 (5%), 94 (3%), 95 and 96 (1%), 97a (11.5%) | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260902/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260902-de-html.html | 2026-11-14 |
+| DBG, consolidated version of 1 January 2025 | Read for art 14 para 3 let a (CHF 421,700, the 2023 to 2025 figure) | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20250101/de/html/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20250101-de-html.html | 2026-11-14 |
+| Quellensteuerverordnung (QStV), SR 642.118.2, version of 10 January 2025 | Read for arts 9 (CHF 120,000) and 14 (90% quasi-residence) | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/html/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-html.html | 2026-11-14 |
+| Verrechnungssteuergesetz (VStG), SR 642.21, version of 1 January 2025 | Read for arts 4 and 13 (35%, 15%, 8%) | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1966/371_385_384/20250101/de/html/fedlex-data-admin-ch-eli-cc-1966-371_385_384-20250101-de-html.html | 2026-11-14 |
+| DBA CH-DE, SR 0.672.913.62, version of 27 November 2025 | Read for arts 4, 10 (15%, 10% for 365 days), 11, 16 | https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1972/3075_3128_2910/20251127/de/html/fedlex-data-admin-ch-eli-cc-1972-3075_3128_2910-20251127-de-html.html | 2026-11-14 |
+| ESTV, Verzugs- und Vergütungszinssätze ab 2026 | Read for the 4.0% late payment rate from 2026 | https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI | 2026-11-14 |
+| ESTV, no change to the interest rates for 2027 | Read for the 2027 rates unchanged (updated 5 Nov 2026) | https://www.estv.admin.ch/de/newnsb/bCxrY5LSQCuF | 2026-11-14 |
+| ESTV, Schweizerische Quellensteuer | Read for the cantonal tariff files and the tax-at-source overview | https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html | 2026-11-14 |
+| ESTV, Germany (Verrechnungssteuer refund) | Read for form 85 and the eF85 online route | https://www.estv.admin.ch/en/germany | 2026-11-14 |
+| EFD, Besteuerung nach dem Aufwand | Read for the cantons that abolished lump-sum taxation | https://www.efd.admin.ch/de/besteuerung-aufwand | 2026-11-14 |
+| BSV, social security agreements | Read for the list of agreements and the EU and EFTA coordination | https://www.bsv.admin.ch/en/social-security-agreements | 2026-11-14 |
+| BSV, Merkblatt Entsendung Schweiz-EU | Read for posting rules between Switzerland and the EU | https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf | 2026-11-14 |
+| Kantonales Steueramt Zürich, Quellensteuerpflichtige Personen | Read for the NOV triggers CHF 120'000, CHF 80'000 / 160'000 assets, CHF 3'000 other income | https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html | 2026-11-14 |
+| Kantonales Steueramt Zürich, ZStB Nr. 133.1 | Read for the 31 March 2027 filing date and "mehr als Fr. 120'000" | https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html | 2026-11-14 |
+| Kantonale Steuerverwaltung Appenzell Innerrhoden, Merkblatt Besteuerung nach dem Aufwand | Not read today: the link returned 404 on 14 Nov 2026; the statement that AI keeps the regime rests on the EFD page above | https://ai.ch/themen/steuern/publikationen/merkblaetter-gueltig-ab-2024/besteuerung-nach-dem-aufwand/download | 2026-11-14 |
 
-- Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, version in force 2 September 2026, art. 3 to 8, 14, 16, 40, 50 to 52, 61a, 61b, 68, 80, 83 to 101, 107, 163, 164, 174, 175, 187: https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de
-- DBG, version in force 1 January 2025 (art. 14 para. 3 let. a: CHF 421,700 under the EFD ordinance of 16 September 2022): https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/20250101/de
-- Quellensteuerverordnung (QStV), SR 642.118.2, version of 10 January 2025 (still current for 2026), art. 9, 10, 12, 14: https://www.fedlex.admin.ch/eli/cc/2018/274/de
-- Bundesgesetz über die Verrechnungssteuer (VStG), SR 642.21, art. 4, 13, 22, 23, 32: https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de
-- Abkommen Schweiz-Deutschland zur Vermeidung der Doppelbesteuerung (DBA CH-DE), SR 0.672.913.62, version of 27 November 2025, art. 4, 10, 11, 16: https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de
-- ESTV, Verzugs- und Vergütungszinssätze ab 2026: https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI
-- ESTV, no change to the interest rates for 2027 (22 September 2026): https://www.estv.admin.ch/de/newnsb/bCxrY5LSQCuF
-- ESTV, Schweizerische Quellensteuer: https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html
-- ESTV, Germany (Verrechnungssteuer refund, form 85): https://www.estv.admin.ch/en/germany
-- EFD, Besteuerung nach dem Aufwand: https://www.efd.admin.ch/de/besteuerung-aufwand
-- BSV, Social security agreements: https://www.bsv.admin.ch/en/social-security-agreements
-- Kantonale Steuerverwaltung Appenzell Innerrhoden, Merkblatt Besteuerung nach dem Aufwand (valid from 2024): https://ai.ch/themen/steuern/publikationen/merkblaetter-gueltig-ab-2024/besteuerung-nach-dem-aufwand/download
-- BSV, Merkblatt Entsendung Schweiz-EU: https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf
-- Kantonales Steueramt Zürich, Quellensteuerpflichtige Personen: https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html
-- Kantonales Steueramt Zürich, Zürcher Steuerbuch Nr. 133.1 (filing notice): https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html
+Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); the capped rates in the French, Italian and Austrian frontier-worker arrangements. The Appenzell Innerrhoden lump-sum notice (404 on 14 Nov 2026).
 
-Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); the capped rates in the French, Italian and Austrian frontier-worker arrangements.

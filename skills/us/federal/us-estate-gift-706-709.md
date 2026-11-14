@@ -1,10 +1,10 @@
 ---
 name: us-estate-gift-706-709
 description: Work out the US federal estate, gift and generation-skipping transfer tax for 2026 on Form 706 (estate) and Form 709 (gift), for US citizens and residents. 2026 figures from Rev. Proc. 2025-32 and the 2026 Form 706 instructions, including the USD 15,000,000 basic exclusion amount and GST exemption set by section 70106 of Public Law 119-21 (no 2026 sunset), the 40% top rate, the USD 5,945,800 basic credit, the USD 19,000 annual exclusion, the USD 194,000 non-citizen spouse exclusion, gift splitting, portability and DSUE with the Rev. Proc. 2022-32 five-year relief, direct tuition and medical payments, the 529 five-year election, alternate valuation, special use valuation, section 6166 installments, the marital and charitable deductions, QDOTs, basis at death and by gift, and the anti-clawback rule. Trigger on "estate tax", "gift tax", "Form 706", "Form 709", "portability", "DSUE", "lifetime exemption", "annual exclusion", "GST tax", "gift splitting". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
@@ -64,7 +64,7 @@ Audience: a Circular 230 practitioner drafting a return or a planning memo. The 
 | GST exemption, 2026 (section 2631(c)) | USD 15,000,000 | [Rev. Proc. 2025-32, section 3.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Basic credit amount (tentative tax on USD 15,000,000), decedents dying in 2026 | USD 5,945,800 | [Instructions for Form 706 (Rev. July 2026), What's New](https://www.irs.gov/pub/irs-pdf/i706.pdf) |
 | Unified rate schedule (section 2001(c)): 18% on the first USD 10,000 rising to 40% over USD 1,000,000; the tax on USD 1,000,000 is USD 345,800 | 40% top rate | [Instructions for Form 706 (Rev. July 2026), Table A](https://www.irs.gov/pub/irs-pdf/i706.pdf) |
-| GST tax rate: the maximum estate tax rate times the inclusion ratio (section 2641) | 40% times inclusion ratio | [26 U.S.C. 2641](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleB-chap13-subchapE-sec2641.htm) |
+| GST tax rate: the maximum estate tax rate times the inclusion ratio (section 2641) | 40% times inclusion ratio | [26 U.S.C. 2641](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleB-chap13-subchapE-sec2641.htm); 40% top rate: [26 U.S.C. 2001(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleB-chap11-subchapA-partI-sec2001.htm) |
 | Annual exclusion per donee, present interests (section 2503(b)) | USD 19,000 | [Rev. Proc. 2025-32, section 4.42(1)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Annual exclusion for gifts to a spouse who is not a US citizen (section 2523(i)(2)) | USD 194,000 | [Rev. Proc. 2025-32, section 4.42(2)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
 | Ceiling on the reduction in value from special use valuation (section 2032A) | USD 1,460,000 | [Rev. Proc. 2025-32, section 4.41](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |

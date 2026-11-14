@@ -1,10 +1,10 @@
 ---
 name: us-state-formation-matrix
 description: Where to form a US LLC or corporation, and what each state charges, for 2026. Gives the choice-of-state method (home state against Delaware, Wyoming or Nevada), when an entity must register as a foreign entity in another state and what it costs not to, the confirmed 2026 formation, annual report and minimum tax figures for California, Delaware, Florida, Georgia, Nevada, New York, Texas and Wyoming, and a row for every state and DC linked to that state's business filing office. Also covers series LLCs, professional entities (PLLC and PC), New York LLC publication, and beneficial ownership reporting after FinCEN's 2026 final rule exempting US companies. Trigger on "where should I form my LLC", "Delaware or Wyoming", "LLC filing fee", "annual report fee", "foreign qualification", "California 800", "BOI report". Tax treatment of the entity is in us-s-corp-election-decision and the entity return skills.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -110,7 +110,7 @@ Confirmed 2026 figures are given only for the states named. For the rest, read t
 | South Carolina | Not confirmed for 2026: read the fee schedule on the state's site | [South Carolina Secretary of State, business](https://sos.sc.gov/online-filings) |
 | South Dakota | Not confirmed for 2026: read the fee schedule on the state's site | [South Dakota Secretary of State, business](https://sdsos.gov/business-services/default.aspx) |
 | Tennessee | Not confirmed for 2026: read the fee schedule on the state's site | [Tennessee Secretary of State, business](https://sos.tn.gov/businesses) |
-| Texas | LLC and corporation certificate of formation USD 300; foreign LLC or corporation registration USD 750; franchise tax no tax due threshold USD 2,650,000 for 2026 and 2027 reports; Public Information Report every year by 15 May. See `tx-formation`, `tx-franchise-tax` ([fees](https://statutes.capitol.texas.gov/Docs/BO/htm/BO.4.htm)) | [Texas Secretary of State, business](https://www.sos.state.tx.us/corp/index.shtml) |
+| Texas | LLC and corporation certificate of formation USD 300; foreign LLC or corporation registration USD 750; franchise tax no tax due threshold USD 2,650,000 for 2026 and 2027 reports; Public Information Report every year by 15 May. See `tx-formation`, `tx-franchise-tax` ([fees](https://statutes.capitol.texas.gov/Docs/BO/htm/BO.4.htm); [no tax due threshold](https://comptroller.texas.gov/taxes/franchise/)) | [Texas Secretary of State, business](https://www.sos.state.tx.us/corp/index.shtml) |
 | Utah | Not confirmed for 2026: read the fee schedule on the state's site | [Utah Division of Corporations](https://corporations.utah.gov/) |
 | Vermont | Not confirmed for 2026: read the fee schedule on the state's site | [Vermont Secretary of State, corporations](https://sos.vermont.gov/) |
 | Virginia | Not confirmed for 2026: read the fee schedule on the state's site | [Virginia State Corporation Commission, clerk's office](https://www.scc.virginia.gov/pages/Clerk-s-Office) |

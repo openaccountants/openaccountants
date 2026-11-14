@@ -1,10 +1,10 @@
 ---
 name: us-r-and-d-section-174-and-41
 description: US federal research costs for tax year 2026 after the One Big Beautiful Bill Act. Section 174A lets domestic research or experimental expenditures be deducted when paid or incurred (or amortized over not less than 60 months by election) for tax years beginning after 31 December 2024; foreign research stays on 15-year amortization under section 174; the transition choices for 2022 to 2024 domestic balances under Rev. Proc. 2025-28; the section 41 credit (regular 20 percent, alternative simplified 14 percent or 6 percent, contract research at 65 percent, the four-part test, internal-use software); section 280C(c) coordination with the 79 percent reduced-credit election; and the section 41(h) payroll tax election for qualified small businesses up to USD 500,000 on Form 8974. Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -135,7 +135,7 @@ Excluded, even if the four parts are met: research after commercial production b
 | Condition | Rule | Source |
 |---|---|---|
 | Who qualifies | Gross receipts under §448(c)(3) of less than $5,000,000 for the year, and no gross receipts in any year before the 5-taxable-year period ending with that year. For an individual, count all trades or businesses. Tax-exempt organizations are excluded | [§41(h)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
-| Amount | The least of: the amount elected (at most $500,000 for tax years beginning after 2022), the year's credit, or, for a business other than a partnership or S corporation, the general business credit carryforward from that year | [§41(h)(2), (4)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
+| Amount | The least of: the amount elected (at most $500,000 for tax years beginning after 2022, derived: $250,000 plus the $250,000 increase), the year's credit, or, for a business other than a partnership or S corporation, the general business credit carryforward from that year | [§41(h)(2), (4)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
 | How many years | Not allowed if elections were already made for 5 or more preceding tax years | [§41(h)(4)(B)(ii)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
 | When and how | Form 6765 Section D on or before the due date, including extensions, of the original return. Not on an amended return. Made at entity level for partnerships and S corporations. Revocable only with IRS consent | [IRS QSB payroll credit](https://www.irs.gov/businesses/small-businesses-self-employed/qualified-small-business-payroll-tax-credit-for-increasing-research-activities) |
 | Using it | Starting with the first calendar quarter that begins after the income tax return is filed: first against the employer share of social security tax, up to $250,000 per quarter, then the employer share of Medicare tax, with any balance carried to the next quarter. Claim on Form 8974 attached to Form 941 (or 943/944) | [Form 8974 instructions](https://www.irs.gov/instructions/i8974) |
@@ -147,8 +147,8 @@ Excluded, even if the four parts are met: research after commercial production b
 | Domestic R&E current deduction; §174A(c) election of not less than 60 months | Tax years beginning after 31 Dec 2024, including 2026 | [§174A](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 | Foreign R&E amortization, 15 years from mid-year | 2025 and 2026 | [§174](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec174.htm) |
 | ASC 14%, or 6%; regular credit 20% | 2025 and 2026 | [§41](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
-| Reduced credit: rate 21%, so 79% of the credit | 2025 and 2026 | [§11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm); [Form 6765 instructions](https://www.irs.gov/pub/irs-pdf/i6765.pdf) |
-| Payroll election up to $500,000; QSB receipts under $5,000,000 | Tax years beginning after 2022 | [§41(h)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
+| Reduced credit: rate 21%, so 79% of the credit (derived: 100% less 21%) | 2025 and 2026 | [§11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm); [Form 6765 instructions](https://www.irs.gov/pub/irs-pdf/i6765.pdf) |
+| Payroll election up to $500,000 (derived: $250,000 plus the $250,000 increase); QSB receipts under $5,000,000 | Tax years beginning after 2022 | [§41(h)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec41.htm) |
 | Retroactive small-business test: $31,000,000 | Tested for the first year beginning in 2025 only | [Rev. Proc. 2025-28](https://www.irs.gov/pub/irs-drop/rp-25-28.pdf) |
 | Form 6765 Section G required unless an exception applies (group QREs of $1.5 million or less, average annual gross receipts for the prior three tax years of $50 million or less, and the credit is on an original return; or a QSB claiming the payroll credit) | Tax years beginning after 2025 | [Form 6765 instructions](https://www.irs.gov/pub/irs-pdf/i6765.pdf) |
 
