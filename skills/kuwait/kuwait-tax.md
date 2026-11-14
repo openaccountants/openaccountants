@@ -34,7 +34,7 @@ Minimum input: a bank statement from NBK, KFH, Gulf Bank, Burgan Bank, Al Ahli U
 | DMTT | 15% effective minimum; EUR 750m consolidated revenue in two of four prior periods, subject to entity exclusions; periods from 1 January 2025, not a flat profit tax | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
 | Personal income tax | Own trade/work income exempt unless it represents a corporate body's share (reg. art. 8(2)) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Retention | 5% of contract or each payment for in-scope ordinary-tax payers/payees, until MOF release (reg. arts. 37 to 39); DMTT public-circular carve-out is separately scoped in corporate Guide | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| Late filing | 1% per 30 days or part (reg. art. 34). No 50% cap appears in the text | 2026 | same |
+| Late filing | 1% per 30 days or part (reg. art. 34). No cap on the total appears in the text | 2026 | same |
 
 ## The base
 
