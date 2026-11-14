@@ -195,7 +195,7 @@ The person estimates the current income (section 406(3)) and may increase or red
 
 #### 4.2 Assessing Officer's order (Tier 2)
 
-Where a person has already been assessed by regular assessment, the Assessing Officer may order advance tax on a "specified sum" (section 407(1)). The order may be passed no later than the last day of February of the financial year (section 407(2)). If the person estimates a lower figure, they send an intimation in Form No. 152 (section 407(8); Income-tax Rules, 2026, rule 223) and pay on their own estimate. If they estimate a higher figure, they pay the higher amount (section 407(9)). Failing to pay under the order, or failing to send Form No. 152 before an unpaid instalment falls due, makes the person an "assessee in default" (section 409), with penalty exposure under section 412. Flag for the reviewer.
+Where a person has already been assessed by regular assessment, the Assessing Officer may order advance tax on a "specified sum" (section 407(1)). The order may be passed no later than the last day of February of the financial year (section 407(2)). If the person estimates a lower figure, they send an intimation in Form No. 152 (section 407(8); Income-tax Rules, 2026, rule 223) and pay on their own estimate. If they estimate a higher figure, they pay the higher amount (section 407(9)). Failing to pay under the order, or failing to send Form No. 152 on or before the date an unpaid instalment falls due, makes the person an "assessee in default" (section 409), with penalty exposure under section 412. Flag for the reviewer.
 
 #### 4.3 Interest under section 424: default in payment (Tier 1)
 
