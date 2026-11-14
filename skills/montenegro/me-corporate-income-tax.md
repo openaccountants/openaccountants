@@ -1,11 +1,12 @@
 ---
 name: me-corporate-income-tax
 description: "Montenegro corporate profit tax (porez na dobit pravnih lica) for tax year 2026. Covers who pays (resident companies on worldwide profit, non-residents on profit of a Montenegrin permanent establishment), the progressive rates of 9% up to EUR 100,000, 12% up to EUR 1,500,000 and 15% above, the move from accounting profit to taxable profit, disallowed and capped costs (donations 3.5%, entertainment 1%, memberships 0.1% of revenue), salaries deductible when paid, bad debts, tax depreciation in five groups (2.5% to 30%), capital gains, five-year loss carry-forward, the new-company incentive, withholding tax at 15% (30% for listed territories), the PD return and payment three months after year end, fines, late-payment interest and limitation periods. Trigger phrases: porez na dobit, PD prijava, Montenegro corporate tax, d.o.o. tax Montenegro, amortizacija OA. Related skills: me-cross-border, me-transfer-pricing, montenegro-income-tax."
-version: 0.2
+version: 0.3
+type: computation
 category: international
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -29,33 +30,33 @@ This skill computes the corporate profit tax of a company for a 2026 tax period.
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Profit up to EUR 100,000.00 | 9% | 2026 | [CPTL art. 28(2)(1)][law] |
-| Profit EUR 100,000.01 to EUR 1,500,000.00 | EUR 9,000 + 12% of the excess over EUR 100,000 | 2026 | [CPTL art. 28(2)(2)][law] |
-| Profit above EUR 1,500,000.00 | EUR 177,000 + 15% of the excess over EUR 1,500,000 | 2026 | [CPTL art. 28(2)(3)][law] |
-| Donations for health, social, educational, scientific, religious, cultural, sports, humanitarian, environmental and civil-society purposes | deductible up to 3.5% of total revenue | 2026 | [CPTL art. 14(1)][law] |
-| Donations to national sports federations | deductible up to 5% of total revenue | 2026 | [CPTL art. 14(2)][law] |
-| Entertainment (reprezentacija) | deductible up to 1% of total revenue | 2026 | [CPTL art. 15][law] |
-| Membership fees to chambers and associations | deductible up to 0.1% of total revenue; fees fixed by law in full | 2026 | [CPTL art. 16][law] |
-| Bad debt write-off | receivable older than 365 days, plus other conditions | 2026 | [CPTL art. 17(1)][law] |
-| Bad debt impairment | at least 60 days past due at the end of the tax period | 2026 | [CPTL art. 17(4)][law] |
-| Depreciable fixed asset | useful life over one year and value over EUR 300 (not land or works of art) | 2026 | [CPTL art. 13(2)][law]; [Rulebook art. 2][dep] |
-| Depreciation group I (buildings and other immovables) | 2.5%, straight line, asset by asset | 2026 | [CPTL art. 13(3)-(4)][law]; [Rulebook arts. 4-5][dep] |
-| Depreciation groups II / III / IV / V | 10% / 15% / 20% / 30%, declining balance on the group pool | 2026 | [CPTL art. 13(3), (5)][law]; [Rulebook arts. 4, 6][dep] |
-| Small pool balance written off | closing group balance under EUR 1,000 | 2026 | [Rulebook art. 9][dep] |
-| Repairs to group II to V assets | expensed up to 5% of the group balance; the excess is added to the pool | 2026 | [Rulebook art. 10][dep] |
-| Business losses carried forward | no more than 5 years | 2026 | [CPTL art. 25(1)][law] |
-| Capital losses carried forward | against capital gains of the next 5 years | 2026 | [CPTL art. 22(6)][law] |
-| New company in an underdeveloped municipality | tax reduced by 100% for the first 8 years, total relief capped at EUR 200,000 | 2026 | [CPTL art. 31(1), (4)][law] |
-| Reinvestment in agriculture | tax reduced by the amount invested, capped at EUR 300,000 over 3 years | 2026 | [CPTL art. 31d][law] |
-| Tax consolidation of a group | parent controls at least 75% of each subsidiary; applies for at least 5 years | 2026 | [CPTL arts. 35(1), 37(1)][law] |
-| Withholding tax on dividends to legal persons, and on interest, royalties, capital gains, rent, consulting, market research and audit fees to non-resident legal persons | 15% of the gross amount | 2026 | [CPTL art. 29(1), (4)][law] |
-| Withholding tax for a non-resident from a listed low-tax territory | 30% of the gross amount | 2026 | [CPTL art. 29(5)-(7), (10)][law]; [Ministry list][list] |
-| Withholding on loans to individuals (except non-related individuals up to EUR 5,000 a year) | 15% of the gross amount | 2026 | [CPTL art. 28a(1)-(2)][law] |
-| Non-resident capital gains and rent not withheld by the payer | 15%, own return within 30 days | 2026 | [CPTL art. 29c][law] |
-| Fines for CPTL offences | legal person EUR 1,000 to 20,000; responsible person EUR 500 to 2,000 | 2026 | [CPTL art. 42a][law] |
-| Late-payment interest, 1 January to 17 July 2026 | 0.03% a day | 2026 | [TAL art. 95(1), text before 104/26][tal-old] |
-| Late-payment interest, 18 July to 31 December 2026 | 5.4% a year (ECB main refinancing rate + 3 points, set each half-year) | 2026 | [TAL art. 95(1)-(5)][tal]; [104/26 TAL arts. 20, 26][tal-amend]; [Tax Administration decision of 24 July 2026][kamata] |
-| Limitation periods | 5 years to assess, 5 years to collect, 10 years absolute | 2026 | [TAL arts. 100, 101, 103][tal] |
+| Profit up to EUR 100,000.00 | 9% | 2026 | [CPTL art. 28(2)(1)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Profit EUR 100,000.01 to EUR 1,500,000.00 | EUR 9,000 + 12% of the excess over EUR 100,000 | 2026 | [CPTL art. 28(2)(2)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Profit above EUR 1,500,000.00 | EUR 177,000 + 15% of the excess over EUR 1,500,000 | 2026 | [CPTL art. 28(2)(3)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Donations for health, social, educational, scientific, religious, cultural, sports, humanitarian, environmental and civil-society purposes | deductible up to 3.5% of total revenue | 2026 | [CPTL art. 14(1)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Donations to national sports federations | deductible up to 5% of total revenue | 2026 | [CPTL art. 14(2)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Entertainment (reprezentacija) | deductible up to 1% of total revenue | 2026 | [CPTL art. 15](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Membership fees to chambers and associations | deductible up to 0.1% of total revenue; fees fixed by law in full | 2026 | [CPTL art. 16](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Bad debt write-off | receivable older than 365 days, plus other conditions | 2026 | [CPTL art. 17(1)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Bad debt impairment | at least 60 days past due at the end of the tax period | 2026 | [CPTL art. 17(4)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Depreciable fixed asset | useful life over one year and value over EUR 300 (not land or works of art) | 2026 | [CPTL art. 13(2)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0); [Rulebook art. 2](https://wapi.gov.me/download/17fea3fc-8c45-434d-b0a2-9a251c3729da?version=1.0) |
+| Depreciation group I (buildings and other immovables) | 2.5%, straight line, asset by asset | 2026 | [CPTL art. 13(3)-(4)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0); [Rulebook arts. 4-5](https://wapi.gov.me/download/17fea3fc-8c45-434d-b0a2-9a251c3729da?version=1.0) |
+| Depreciation groups II / III / IV / V | 10% / 15% / 20% / 30%, declining balance on the group pool | 2026 | [CPTL art. 13(3), (5)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0); [Rulebook arts. 4, 6](https://wapi.gov.me/download/17fea3fc-8c45-434d-b0a2-9a251c3729da?version=1.0) |
+| Small pool balance written off | closing group balance under EUR 1,000 | 2026 | [Rulebook art. 9](https://wapi.gov.me/download/17fea3fc-8c45-434d-b0a2-9a251c3729da?version=1.0) |
+| Repairs to group II to V assets | expensed up to 5% of the group balance; the excess is added to the pool | 2026 | [Rulebook art. 10](https://wapi.gov.me/download/17fea3fc-8c45-434d-b0a2-9a251c3729da?version=1.0) |
+| Business losses carried forward | no more than 5 years | 2026 | [CPTL art. 25(1)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Capital losses carried forward | against capital gains of the next 5 years | 2026 | [CPTL art. 22(6)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| New company in an underdeveloped municipality | tax reduced by 100% for the first 8 years, total relief capped at EUR 200,000 | 2026 | [CPTL art. 31(1), (4)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Reinvestment in agriculture | tax reduced by the amount invested, capped at EUR 300,000 over 3 years | 2026 | [CPTL art. 31d](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Tax consolidation of a group | parent controls at least 75% of each subsidiary; applies for at least 5 years | 2026 | [CPTL arts. 35(1), 37(1)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Withholding tax on dividends to legal persons, and on interest, royalties, capital gains, rent, consulting, market research and audit fees to non-resident legal persons | 15% of the gross amount | 2026 | [CPTL art. 29(1), (4)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Withholding tax for a non-resident from a listed low-tax territory | 30% of the gross amount | 2026 | [CPTL art. 29(5)-(7), (10)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0); [Ministry list](https://wapi.gov.me/download/10ea79a6-8f36-463d-ab8c-b88ab655b61c?version=1.0) |
+| Withholding on loans to individuals (except non-related individuals up to EUR 5,000 a year) | 15% of the gross amount | 2026 | [CPTL art. 28a(1)-(2)](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Non-resident capital gains and rent not withheld by the payer | 15%, own return within 30 days | 2026 | [CPTL art. 29c](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Fines for CPTL offences | legal person EUR 1,000 to 20,000; responsible person EUR 500 to 2,000 | 2026 | [CPTL art. 42a](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) |
+| Late-payment interest, 1 January to 17 July 2026 | 0.03% a day | 2026 | [TAL art. 95(1), text before 104/26](https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0) |
+| Late-payment interest, 18 July to 31 December 2026 | 5.4% a year (ECB main refinancing rate + 3 points, set each half-year) | 2026 | [TAL art. 95(1)-(5)](https://wapi.gov.me/download/8e3ee8d0-f10c-453a-90ad-6439ac07aca2?version=1.0); [104/26 TAL arts. 20, 26](https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0); [Tax Administration decision of 24 July 2026](https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0) |
+| Limitation periods | 5 years to assess, 5 years to collect, 10 years absolute | 2026 | [TAL arts. 100, 101, 103](https://wapi.gov.me/download/8e3ee8d0-f10c-453a-90ad-6439ac07aca2?version=1.0) |
 
 Article 28 writes the upper bands as "12% on the amount over 100,000.01" and "15% on the amount over 1,500,000.01". The fixed amounts (9,000 and 177,000) match whole-euro boundaries, so this skill computes the bands at EUR 100,000 and EUR 1,500,000; the difference is a fraction of a cent.
 
