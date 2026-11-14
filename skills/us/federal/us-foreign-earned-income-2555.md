@@ -1,10 +1,10 @@
 ---
 name: us-foreign-earned-income-2555
 description: Work out a US citizen's or green card holder's 2026 foreign earned income exclusion and foreign housing exclusion or deduction on Form 2555, and decide between the exclusion, the foreign tax credit, or both. Covers the tax home test, the bona fide residence and physical presence (330 full days) tests, the 2026 maximum exclusion of USD 132,900, the housing base of USD 21,264 and the general housing limit of USD 39,870 with the Notice 2026-25 city limits, the stacking rule, the credits the election blocks, the revocation bar, self-employment tax and totalization, and the June 15 extension for people abroad. Trigger on "FEIE", "Form 2555", "foreign earned income exclusion", "housing exclusion", "physical presence test", "bona fide residence", "expat US tax", "FEIE or foreign tax credit". Load us-foreign-tax-credit-1116 for the credit itself. Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border

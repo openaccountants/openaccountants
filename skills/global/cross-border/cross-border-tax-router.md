@@ -50,7 +50,7 @@ Why a router exists. Within one country the rules fit together. Across borders t
 
 | Basis a country may tax on | Typical trigger | Where to route |
 | --- | --- | --- |
-| Citizenship (worldwide, wherever the person lives) | Being a citizen of that country (a passport is not the test) | The United States: `us-citizen-moving-abroad-tax`, `us-foreign-earned-income-2555`, `us-foreign-tax-credit-1116` |
+| Citizenship (worldwide, wherever the person lives) | Being a citizen of that country (a passport is not the test) | The United States: `us-citizen-moving-abroad-tax`, `us-feie-ftc` |
 | Tax residence (worldwide while resident) | Days present, a home, ties, centre of interests, each under that country's own test | `us-tax-residency`, `uk-statutory-residence-test`, `ca-tax-residency`, `in-tax-residency`, `sg-tax-residency`, `za-tax-residency`, `nz-tax-residency`, `au-tax-residency-2`, `ae-tax-residency` |
 | Domicile or a special regime for newcomers | Domicile, or a time-limited regime for new arrivals | `mt-non-dom`, `ie-non-dom`, `cy-non-dom`; for the UK from 6 April 2025, `uk-non-dom` |
 | Source (that country's income only) | Income arising there, property there, a business presence there | The country Guide for the source country; `us-nonresident-cgt`; `permanent-establishment-risk` |
@@ -77,9 +77,9 @@ Do not go past Step 0 until citizenship, current residence in each country, and 
 
 | Signal in the facts | Topic Skill |
 | --- | --- |
-| US citizen or green card holder living or working abroad; foreign salary; foreign taxes paid | `us-foreign-earned-income-2555` or `us-foreign-tax-credit-1116` |
+| US citizen or green card holder living or working abroad; foreign salary; foreign taxes paid | `us-feie-ftc`, then `us-foreign-earned-income-2555` or `us-foreign-tax-credit-1116` |
 | US person with foreign bank, brokerage or pension accounts | `us-fbar-fatca-reporting`, `us-fbar-and-fatca-8938` |
-| US person owning a large stake in a foreign company; a foreign company with US owners | `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
+| US person owning a large stake in a foreign company; a foreign company with US owners | `us-cfc-gilti`, `us-form-5471-cfc-information` |
 | US person who is a grantor, owner or beneficiary of a foreign trust; gifts or inheritances from non-US persons | `us-foreign-trust-reporting` |
 | US citizen or long-term green card holder giving up US status | `us-expatriation-exit-tax` |
 | Non-citizen who may be a US resident, or who arrives or leaves the US mid-year | `us-tax-residency` |
@@ -142,7 +142,7 @@ When two or more steps apply, test them in the order the events occur and the ta
 | A green card holder who becomes treaty resident elsewhere | Test the treaty tie-breaker and the expatriation rules together, before the return is filed | If a treaty tie-breaker treats the person as a non-resident alien, this can in certain instances trigger the section 877A expatriation tax ([IRS Publication 519](https://www.irs.gov/publications/p519)). The IRS says a long-term resident (section 7701(b)(6)) stops being a lawful permanent resident for this purpose if the individual "commences to be treated as a resident of a foreign country under the provisions of a tax treaty", "does not waive the benefits of the treaty" and "notifies the IRS of such treatment on Forms 8833 and 8854" ([IRS: expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax)). A green card holder who is not a long-term resident is outside this rule. Route to `us-tax-residency` and `us-expatriation-exit-tax`. |
 | Foreign trust distribution or sale | Characterise the trust (grantor or non-grantor) first, then the distribution | Who is taxed on the trust's income depends on that first answer. Route to `us-foreign-trust-reporting`. |
 | Expatriation in play | Run the covered expatriate and exit tax test before planning any later sale | The expatriation rules in sections 877 and 877A apply to US citizens who renounce and to long-term residents who end their US resident status; whether exit tax is due turns on further tests ([IRS: expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax)). Route to `us-expatriation-exit-tax`. |
-| Controlled foreign company income plus a later distribution | The shareholder's inclusion first, then the distribution | Avoids counting the same income twice. Route to `us-gilti-fdii-beat`. |
+| Controlled foreign company income plus a later distribution | The shareholder's inclusion first, then the distribution | Avoids counting the same income twice. Route to `us-cfc-gilti`. |
 
 State the order to the person before anything is computed:
 

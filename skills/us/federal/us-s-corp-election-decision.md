@@ -1,10 +1,10 @@
 ---
 name: us-s-corp-election-decision
 description: Decide whether a US sole proprietor or single-member LLC should elect S corporation status (Form 2553, 26 U.S.C. 1362) for 2026 or 2027. Covers who can elect, reasonable compensation and the IRS power to recharacterize distributions as wages, the payroll tax saved (self-employment tax against FICA on salary only, with the 2026 Social Security wage base of $184,500), the added costs, the QBI deduction interaction under section 199A (salary is not QBI, but it is W-2 wages), other wages above the wage base, the Form 2553 deadline (2 months and 15 days, so 16 March 2026 for a calendar-year 2026 election and 15 March 2027 for 2027), late-election relief under Rev. Proc. 2013-30, revocation and the five-year bar, and state entity-level taxes flagged to the state skills. Trigger on "should I elect S corp", "S corp election", "Form 2553", "LLC taxed as S corp", "reasonable salary", "save self-employment tax", "late S election", "Rev. Proc. 2013-30". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax

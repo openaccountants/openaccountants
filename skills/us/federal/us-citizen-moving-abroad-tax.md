@@ -1,10 +1,10 @@
 ---
 name: us-citizen-moving-abroad-tax
 description: Plan the US federal tax side of a US citizen or green card holder moving abroad in 2026, and route each issue to the skill that computes it. Covers worldwide taxation by citizenship, the choice between the foreign earned income exclusion (USD 132,900 for 2026, 330 full days or bona fide residence) and the foreign tax credit by destination (zero-tax Gulf against high-tax Europe), the reporting web (FBAR, Form 8938, Form 5471, Form 8621, Forms 3520), the PFIC and foreign company traps, self-employment tax and totalization agreements, states that keep taxing leavers, retirement accounts abroad, and renunciation with the section 877A exit tax (covered expatriate threshold USD 211,000, exclusion USD 910,000 for 2026). Trigger on "moving abroad", "American expat taxes", "US citizen living abroad", "FEIE or foreign tax credit", "Dubai US tax", "renounce US citizenship", "exit tax", "accidental American". Federal only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
