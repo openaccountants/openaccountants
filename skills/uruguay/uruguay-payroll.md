@@ -1,10 +1,10 @@
 ---
 name: uruguay-payroll
 description: "Uruguay payroll for employers, tax year 2026: the monthly gross-to-net for a private-sector employee and the employer's cost. Covers BPS contributions (jubilatorio 15% employee and 7.5% employer, FONASA 3% to 8% employee by income and family and 5% employer, FRL 0.10% each side, FGCL 0.025% employer), the 2026 contribution ceilings (UYU 288,836 from February 2026) under Ley 16.713 and the Ley 20.130 pension reform, the employer's monthly IRPF withholding under Decreto 148/007 (monthly scale in BPC at UYU 6,864, the 6% gross-up above 10 BPC, the 14% or 8% deduction credit, form 3100), aguinaldo and salario vacacional, the year-end ajuste anual, the BPS nómina calendar, the 2026 minimum wage and BPS late-payment fines. Trigger on: nómina Uruguay, sueldo líquido, aportes BPS, montepío, FONASA, FRL, retención IRPF, formulario 3100, ajuste anual, aguinaldo, tope de cotización, Uruguay payroll 2026. Out of scope: domestic, rural and construction workers, public bodies, the employee's own IRPF return."
-version: 0.2
+version: 0.3
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -14,7 +14,7 @@ domain: payroll
 type: computation
 ---
 
-# Uruguay payroll for 2026 v0.2
+# Uruguay payroll for 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -280,4 +280,4 @@ expected:
 
 Not yet confirmed: the two-instalment payment dates of the aguinaldo (June and December), which sit in a later law not read; whether the 6% gross-up also applies in the December ajuste anual; how deductions attached to the aguinaldo are credited; the CCM amount per worker; the BSE work-accident insurance premium, which BPS does not collect and which varies by activity; the employer rates of public bodies and of servicios bonificados; whether a worker outside the AFAP regime has any contribution ceiling; the socio vitalicio FONASA rates (the BPS table shows an inconsistent row for "sin cónyuge con hijos"); the annual limit for the art. 64 bis exclusion; the DGI form used by employers outside BPS (art. 68); the 2027 BPS calendar.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

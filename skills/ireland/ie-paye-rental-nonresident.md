@@ -1,7 +1,7 @@
 ---
 name: ie-paye-rental-nonresident
 description: "Irish income tax for 2026 in three cases the Form 11 skill does not walk through. PAYE workers with side income: when Form 12 in myAccount is enough and when they must file Form 11 (taxable non-PAYE income over EUR 5,000 or gross over EUR 30,000), and the four-year rule. Case V rental income: section 97 deductions, 100% mortgage interest with the RTB condition, wear and tear at 12.5% over 8 years, pre-letting expenses, RPRIR (EUR 1,000 for 2026), losses, USC and PRSI on rent. Non-residents: what section 18 taxes, section 1032 credits and the 75% test, 20% landlord withholding (NLWT). Trigger on: Form 12, PAYE side income, rental income Ireland, Case V, RPRIR, non-resident landlord, NLWT. Out of scope: ie-income-tax-form11, ie-usc, ie-cgt, ie-cross-border, ie-foreign-tax-and-withholding."
-version: 0.2
+version: 0.3
 jurisdiction: IE
 tax_year: 2026
 last_updated: 2026-11-14
@@ -267,4 +267,4 @@ expected:
 
 Not yet confirmed: (1) whether a non-resident gets the full standard rate band or a share of it (Revenue's section 1032 examples stay within the band, so Example 2 is not affected); (2) whether the EUR 13,000 USC exemption for a non-resident is tested on Irish income only; (3) the ROS pay-and-file date for 2026 returns, announced each year; (4) changes announced in Budget 2027 on 6 October 2026 are not reflected; they are for 2027 onwards and the Finance Bill is not yet enacted; (5) which treaties cover USC.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

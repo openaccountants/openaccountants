@@ -1,7 +1,7 @@
 ---
 name: uruguay-income-tax
 description: "Uruguay personal income tax (IRPF, Impuesto a la Renta de las Personas Físicas) for tax year 2026 under Título 7 of the Texto Ordenado 2023 as amended by Ley 20.446 of 16 December 2025. Covers residence (183 days, centre of interests), the dual system, Categoría II labour income on the 0% to 36% scale in BPC (BPC 2026 UYU 6,864, Decreto 11/026), the aguinaldo and salario vacacional rate, the family-unit (núcleo familiar) scales, the deduction credit at 14% or 8%, the 20 BPC child deduction, the mortgage and rent credits, the 30% expense deduction for independent work, Categoría I capital income at 12%, 7% and the reduced interest rates, foreign capital income taxed from 1 January 2026, filing on forms 1101, 1102 and 1103, the five balance instalments and DGI penalties. Trigger on: IRPF 2026, franjas IRPF, deducciones IRPF, declaración jurada IRPF, núcleo familiar, rentas del exterior, Uruguay income tax. Out of scope: payroll withholding and BPS contributions, IRAE, IRNR, IASS."
-version: 0.3
+version: 0.4
 jurisdiction: UY
 tax_year: 2026
 last_updated: 2026-11-14
@@ -14,7 +14,7 @@ domain: income-tax
 type: computation
 ---
 
-# Uruguay: personal income tax (IRPF) for 2026 v0.3
+# Uruguay: personal income tax (IRPF) for 2026 v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -258,4 +258,4 @@ expected:
 
 Not yet confirmed: the art. 37 A) rate for foreign-currency interest over one and up to three years (blank in the consolidated text); the monthly recargo rate for 2026; how the 180 BPC deduction-rate test and the deductions apply to a núcleo familiar return; whether a deduction credit larger than the tax is lost; which SMN figure (January or July) the 12 SMN test uses in a year with two values; the filing calendar for 2026 income (2027 campaign); monotributo and the unipersonal minimum base, which sit in BPS rules not read for this skill; the employer withholding mechanics in Decreto 148/007, left to uruguay-payroll.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

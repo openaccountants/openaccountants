@@ -2,7 +2,7 @@
 name: gg-gst-transition
 description: >
   Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft separates the current absence of domestic VAT/GST from existing customs and excise duties, and preserves the future-GST planning work. The added current-scope analysis has received independent source review. Future charging and operational legislation remains outstanding; no current GST liability is inferred from the approved plan.
-version: 0.5
+version: 0.6
 jurisdiction: GG
 tax_year: 2026
 last_updated: 2026-11-14
@@ -123,4 +123,4 @@ Not yet confirmed: the GST registration and turnover threshold (no enacted figur
 
 General reference and planning material only. A qualified professional must verify the applicable law, commencement and facts before filing, paying or acting on this draft.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

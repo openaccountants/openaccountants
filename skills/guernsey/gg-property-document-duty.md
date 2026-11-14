@@ -2,10 +2,10 @@
 name: gg-property-document-duty
 description: >
   Prepare Guernsey property document-duty working papers for 2026 conveyances, including graduated rates, the repealed additional-property surcharge, conditional downsizing relief and transaction evidence. Use for document duty, property purchase costs, realty versus personalty and the 2025 surcharge transition. This source-cited draft covers the island of Guernsey and does not extend these rates to Alderney or Sark. It supplies recomputable examples using established chargeable realty values, not a valuation opinion. The new statutory extension supplies ordinary charging/valuation, named exemption gates, indirect-transfer self-assessment/payment and appeal methods, checked in the fresh whole-pack review. Complex valuations, relief claim administration and title advice remain separate requirements. Retain the transaction date, official source version and advocate's classification before relying on a calculation.
-version: 0.6
+version: 0.7
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -197,4 +197,4 @@ Original source receipts and scoped independent review are preserved. Not yet co
 
 General tax and accounting reference material. A qualified local professional must verify the current law, transaction facts and filing/payment requirements before anyone acts. No professional attestation is claimed.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

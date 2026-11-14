@@ -1,7 +1,7 @@
 ---
 name: mc-corporate-income-tax
 description: "Monaco business profits tax working paper for 2026, covering industrial and commercial enterprises, the inclusive foreign turnover boundary, separate rights income scope, ordinary rate, losses, conditional new activity relief, advances, filing deadlines and statutory sanctions. Use for Monaco corporate income tax, ISB, foreign turnover, loss carryforward and tax instalment questions. Computes the executive remuneration ceiling, financing restrictions, participation deduction and ordinary accounting to tax adjustments. Includes loss carryback, disposals, reinvestment, cessation and filing controls. Source cited draft awaiting a named Monaco professional review."
-version: 1.4
+version: 1.5
 jurisdiction: MC
 tax_year: 2026
 last_updated: 2026-11-14
@@ -136,4 +136,4 @@ expected:
 
 **Not yet confirmed:** specialised sector, multinational minimum-tax and tax-credit calculations. Retain the effective-date shareholder-interest calculation and DSF form version used. The ordinary statutory methods and filing obligations above are established; this research did not access a taxpayer account.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

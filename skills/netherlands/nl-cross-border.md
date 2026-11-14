@@ -1,17 +1,18 @@
 ---
 name: nl-cross-border
 description: "Hub skill for crossing the Dutch border in tax year 2026. Covers tax residence for individuals (facts and circumstances, AWR art. 4) and companies (seat by circumstances plus the incorporation fiction in Wet Vpb art. 2(5)); arriving under the expat scheme (30% ruling) with the 2026 salary norm and the fall to 27% from 2027; non-residents taxed on Dutch box 1, box 2 and box 3 income and qualifying non-resident status; leaving, with the protective assessment (conserverende aanslag) on box 2 shares and pensions; the M return for the migration year; 15% dividend tax and the conditional withholding tax at 25.8% on payments to low-tax jurisdictions; treaty relief. Trigger on: moving to the Netherlands, leaving the Netherlands, emigrating, non-resident, expat, exit tax, conserverende aanslag, M-formulier, digital nomad, bronbelasting. Out of scope: 30% ruling detail (nl-30-percent-ruling), payroll (nl-payroll-tax), corporate tax (nl-corporate-tax), resident income tax (nl-income-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Netherlands: cross-border tax for people and companies (2026) v0.3
+# Netherlands: cross-border tax for people and companies (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from wetten.overheid.nl or belastingdienst.nl, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -51,7 +52,7 @@ Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026
 | Box 3 tax-free allowance (heffingvrij vermogen) | €59,357 | [Wet IB 2001 art. 5.5](https://wetten.overheid.nl/BWBR0011353/) |
 | Expat scheme, maximum tax-free allowance | 30% of wage including the allowance in 2025 and 2026; 27% from 1 January 2027 (30% kept for rulings applied by the last 2023 pay period) | [Handboek Loonheffingen 2026 §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) |
 | Expat scheme, salary norm (wage excluding allowance must be more than) | €48,013; €36,497 if under 30 with a qualifying master's | [Belastingdienst expat scheme](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility); Handboek 2026 |
-| Expat scheme, salary norm announced for 2027 | €51,899 (before indexation, not final) | Handboek 2026 |
+| Expat scheme, salary norm announced for 2027 | €51,899 (before indexation, not final) | Handboek 2026; https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf |
 | Expat scheme, cap | €78,600 a year (30% of a €262,000 base) | [Belastingdienst expat scheme](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility) |
 | Corporate tax (Vpb) | 19% to €200,000; 25.8% above | [Wet Vpb 1969 art. 22](https://wetten.overheid.nl/BWBR0002672/) |
 | Dividend tax (dividendbelasting) | 15% of the distribution | [Wet DB 1965 art. 5](https://wetten.overheid.nl/BWBR0002515/) |

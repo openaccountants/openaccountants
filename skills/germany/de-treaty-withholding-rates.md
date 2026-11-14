@@ -1,14 +1,15 @@
 ---
 name: de-treaty-withholding-rates
 description: "Use this skill when a German company, bank or licensee pays dividends, interest or royalties to a person outside Germany, tax year 2026. Covers the domestic withholding (Kapitalertragsteuer 25% plus 5.5% solidarity surcharge, 26.375% in all; § 50a 15% on royalties), the treaty limits for Germany's main partners (Austria, Switzerland, Netherlands, France, Italy, Spain, UK, Ireland, Luxembourg, US, Poland, Czech Republic) read from the treaty texts, the exemption certificate and refund at the BZSt (§ 50c EStG), the EU Parent-Subsidiary exemption (§ 43b), the Interest and Royalties exemption (§ 50g), the two-fifths refund for foreign companies (§ 44a(9)) and the anti-treaty-shopping rule (§ 50d(3)). Trigger on: Quellensteuer Deutschland, Kapitalertragsteuer Erstattung, Freistellungsbescheinigung, § 50c, § 43b, § 50g, § 50d Abs. 3, DBA Quellensteuersatz, German withholding tax rate treaty. Out of scope: assessing non-residents (de-non-resident-tax), foreign tax on a German resident's income (de-capital-gains), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-version: 0.5
+version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: computation
 ---
 
 # Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026
@@ -41,10 +42,10 @@ Which income is caught:
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Kapitalertragsteuer on dividends and profit-dependent interest | 25% of gross | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html |
-| Solidarity surcharge on Kapitalertragsteuer and § 50a tax | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |
+| Solidarity surcharge on Kapitalertragsteuer and § 50a tax | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html (§ 4; base in § 3) |
 | Total withheld on a dividend | 26.375% of gross | 2026 | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html |
 | Foreign company without treaty or directive relief | Refund of two fifths of the Kapitalertragsteuer withheld and of the surcharge on it | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)); BZSt refund page (surcharge) |
-| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |
+| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all, computed) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)); https://www.gesetze-im-internet.de/solzg_1995/__4.html (SolZG § 4) |
 | Small royalties under a treaty that bars German tax | No withholding if royalties from that payer in the year stay at or below EUR 10,000; the return is still filed | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |
 | Exemption certificate | Valid for at most five years, from the day the application reaches the BZSt; for treaty relief on dividends only for a company that is subject to tax at home without exemption and holds at least 10% of the nominal capital directly | 2026 | Same, § 50c(2) sentences 4, 5 |
 | Refund deadline | Four years from the end of the year of receipt; not before one year after payment, nor before a longer treaty period | 2026 | Same, § 50c(3) sentence 2 |
@@ -219,31 +220,33 @@ expected:
 
 Selected operative clauses actually read on 29 October 2026: treaty covered/later-tax clauses for the labelled Italy/US/Czech interpretation; full § 43b/Anlage 2 and § 50g(3)/(6) population gates; § 50j; § 50c(3) and actual BZSt remittance condition. Italian art. 2(4) was also visually compared with physical page 3 of the retained official scan. Exact quotes/identities/native scopes remain in the accompanying writer source ledger; no portal execution is claimed.
 
+The BMF treaty texts, one per country, are linked on each row of the treaty table above and were read 2026-10-23 (arts. 10 to 12 and protocols as named on each row).
+
 | Source | URL | Read on |
 |---|---|---|
+| SolzG § 4, read for the 5.5% surcharge rate | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-14 |
 | EStG § 43 (income subject to Kapitalertragsteuer) | https://www.gesetze-im-internet.de/estg/__43.html | 2026-10-23 |
-| EStG § 43a (25% rate) | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-10-23 |
-| EStG § 43b (EU parent companies) | https://www.gesetze-im-internet.de/estg/__43b.html | 2026-10-23 |
+| EStG § 43a, read for the 25% rate | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-11-14 |
+| EStG § 43b, read for the 10% direct holding and 12 months | https://www.gesetze-im-internet.de/estg/__43b.html | 2026-11-14 |
 | EStG § 44 (when tax arises, remittance, liability) | https://www.gesetze-im-internet.de/estg/__44.html | 2026-10-23 |
-| EStG § 44a(9) (two-fifths refund) | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-10-23 |
+| EStG § 44a(9), read for the two-fifths refund | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-11-14 |
 | EStG § 49 (German-source income) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |
-| EStG § 50a (15% on royalties, quarterly return) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-10-23 |
-| EStG § 50c (exemption certificate, refund, interest) | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-23 |
+| EStG § 50a, read for the 15% rate (§ 50a(2)) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-11-14 |
+| EStG § 50c, read for the EUR 10,000 small-royalty rule, the five-year certificate and the four-year refund deadline | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-11-14 |
 | EStG § 50d (anti-treaty-shopping, § 50d(3)) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |
-| EStG § 50g (interest and royalties between EU companies) | https://www.gesetze-im-internet.de/estg/__50g.html | 2026-10-23 |
+| EStG § 50g, read for the 25% associated-company test | https://www.gesetze-im-internet.de/estg/__50g.html | 2026-11-14 |
 | EStG Anlage 3 (company forms and taxes for § 50g) | https://www.gesetze-im-internet.de/estg/anlage_3.html | 2026-10-23 |
-| SolzG § 3 (surcharge base) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
+| SolzG § 3, read for the surcharge base | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-11-14 |
 | AO §§ 152, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-23 |
-| BZSt, refund procedure § 50c(3) and § 44a(9) (26.375%, deadline, over 20 months) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html | 2026-10-23 |
+| BZSt refund procedure, read for the 26.375% total and the refund route | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html | 2026-11-14 |
 | BZSt, exemption procedure § 50c(2) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html | 2026-10-23 |
 | BZSt online portal, refund application form | https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/erstattung_abzugsteuer_kapitalertraege_50c_estg.html | 2026-10-23 |
 | BZSt, Abzugsteuern nach § 50a (StAbwG, new form from 7 December 2026) | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |
-| BMF treaty texts, one per country | See the table under "Treaty limits" | 2026-10-23 |
-| EStG § 50j (45-day holding for treaty rates below 15%) | https://www.gesetze-im-internet.de/estg/__50j.html | 2026-10-23 |
+| EStG § 50j, read for the 45-day holding rule | https://www.gesetze-im-internet.de/estg/__50j.html | 2026-11-14 |
 | BMF letter of 7 January 2026, treaties in force on 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
 | GOV.UK, 2010 UK-Germany convention as amended by the 2021 protocol (cross-check of the UK row) | https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force | 2026-10-23 |
 | Fedlex, Germany-Switzerland treaty (cross-check of the Swiss row) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |
 
 The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.
 
-Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).
+Not yet confirmed: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).
