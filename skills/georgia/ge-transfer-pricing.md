@@ -53,7 +53,7 @@ Most Georgian companies pay profit tax only when profit leaves the company (see 
 | Simplified update of external comparables | every third year, if turnover is under GEL 8,000,000 in the tax year and nothing material changed | 2026 | Instruction art. 17(3), https://matsne.gov.ge/ka/document/view/2078069 |
 | Prior years of data that may be considered | the 4 financial years before the year of the transaction | 2026 | Instruction art. 13(b), https://matsne.gov.ge/ka/document/view/2078069 |
 | Unilateral advance pricing agreement: longest term | 3 years | 2026 | Instruction art. 22, https://matsne.gov.ge/ka/document/view/2078069 |
-| Advance pricing agreement: minimum transaction volume | none since 2021 (the old GEL 50,000,000 floor was removed) | 2026 | Order No 45 of 2 March 2021, art. 1(2)(a), https://matsne.gov.ge/ka/document/view/5114015 |
+| Advance pricing agreement: minimum transaction volume | none since 2021 (the old GEL 50 million floor was removed) | 2026 | Order No 45 of 2 March 2021, art. 1(2)(a), https://matsne.gov.ge/ka/document/view/5114015 |
 | Loan treated as capital: criteria needed | at least 3 of the 12 listed, one of them (f) or (g) | 2026 | Instruction art. 14^1(5), added by Order No 331 of 2 October 2024, https://matsne.gov.ge/ka/document/view/6281431 |
 | Country-by-country report: group threshold | consolidated group revenue of EUR 750,000,000 or more in the prior fiscal year | 2026 | Tax Code art. 70^1(3)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Country-by-country report: deadline | 12 months after the end of the accounting year | 2026 | Tax Code art. 70^1(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
