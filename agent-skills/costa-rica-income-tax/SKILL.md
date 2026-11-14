@@ -158,7 +158,9 @@ expected:
 | Read for Hacienda, Infracciones y sanciones administrativas mas relevantes (2026): arts. 78, 79, 80 and reductions | https://www.hacienda.go.cr/docs/InfraccionesYSancionesAdministrativasMasRelevantes.pdf | 2026-11-14 |
 | Read for Hacienda notice CP-11-2026: forms 101, 102, 103, deadline 16 March 2026 for period 2025, payment channels, pagos parciales | https://www.hacienda.go.cr/docs/CP11-2026.pdf | 2026-11-14 |
 
-Not yet confirmed: the general corporate rate (30% in the old file) on an official page read today; the Ley 10667 25% standard deduction for professionals that the old file reported from 2026; capital income and gains rates; remittance tax rates; pagos parciales rules and dates; the 2027 filing date for period 2026; late payment interest.
+The general corporate rate is 30% of renta neta for a legal person whose renta bruta exceeds CRC 119,174,000 (Ley 7092 art. 15 a), https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=10969&param2=148972&param3=1, read 2026-11-14); the company method is in [costa-rica-corporate-income-tax](costa-rica-corporate-income-tax.md).
+
+Not yet confirmed: the Ley 10667 25% standard deduction for professionals that the old file reported from 2026; capital income and gains rates; remittance tax rates; pagos parciales rules and dates; the 2027 filing date for period 2026; late payment interest.
 
 ## Today's figures and who stands behind this skill
 
